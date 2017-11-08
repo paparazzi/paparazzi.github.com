@@ -6,6 +6,7 @@ var uart_8c =
     [ "uart_check_free_space", "uart_8c.html#a8ecf8dd4bd5a9ca6403d5612dd505f41", null ],
     [ "uart_getch", "uart_8c.html#afa153121a413694044ed9a969b771512", null ],
     [ "uart_periph_init", "uart_8c.html#a43baf084a9bcc968ef00790e25becbb7", null ],
+    [ "uart_periph_invert_data_logic", "uart_8c.html#ad6430a7fdc6553a4696a873cc5ff3507", null ],
     [ "uart_put_buffer", "uart_8c.html#a70569087d789605493bce97141e1664f", null ],
     [ "uart_send_message", "uart_8c.html#a28a378d8f12e11fc3f4dac7eb9252d6e", null ]
 ];

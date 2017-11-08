@@ -1,7 +1,8 @@
 var searchData=
 [
   ['baroboard',['BaroBoard',['../lisa__l_2baro__board_8c.html#structBaroBoard',1,'']]],
-  ['bebopfrontcamera_5ft',['bebopfrontcamera_t',['../bebop__front__camera_8h.html#structbebopfrontcamera__t',1,'']]],
+  ['batmonbal',['BatMonBal',['../battery__monitor_8h.html#structBatMonBal',1,'']]],
+  ['batmonbus',['BatMonBus',['../battery__monitor_8h.html#structBatMonBus',1,'']]],
   ['bluegiga_5fperiph',['bluegiga_periph',['../bluegiga_8h.html#structbluegiga__periph',1,'']]],
   ['bmp085',['Bmp085',['../bmp085_8h.html#structBmp085',1,'']]],
   ['bmp085calib',['Bmp085Calib',['../bmp085_8h.html#structBmp085Calib',1,'']]],

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -150,21 +150,12 @@ $(document).ready(function(){initNavTree('globals_q.html','');});
 <div class="textblock">Here is a list of all functions, variables, defines, enums, and typedefs with links to the files they belong to:</div>
 
 <h3><a class="anchor" id="index_q"></a>- q -</h3><ul>
-<li>Q
-: <a class="el" href="hf__float_8c.html#acbcee443d6d55cb8600b3f240f5cf907">hf_float.c</a>
-</li>
-<li>Q311
-: <a class="el" href="libisp_8c.html#ac6bef058edef9d016b5226c7a855f833">libisp.c</a>
-</li>
 <li>Q_kal
 : <a class="el" href="obstacle__avoidance_8c.html#a456b669cdbf6c920ac193715dcecacbb">obstacle_avoidance.c</a>
 </li>
 <li>Qbiasbias
 : <a class="el" href="vf__extended__float_8c.html#a70f5ca9eb3931cae7b39b297ec278141">vf_extended_float.c</a>
 , <a class="el" href="vf__float_8c.html#a70f5ca9eb3931cae7b39b297ec278141">vf_float.c</a>
-</li>
-<li>Qdotdot
-: <a class="el" href="hf__float_8c.html#aa7facea39e2bfbe72b681d4233ecd448">hf_float.c</a>
 </li>
 <li>qdr_a
 : <a class="el" href="nav__smooth_8c.html#ae786a20d0336486a81e9f23100179645">nav_smooth.c</a>
@@ -174,6 +165,9 @@ $(document).ready(function(){initNavTree('globals_q.html','');});
 </li>
 <li>Qoffoff
 : <a class="el" href="vf__extended__float_8c.html#a4a8d9b629f50078fdc06fbc3b5a535f8">vf_extended_float.c</a>
+</li>
+<li>qr()
+: <a class="el" href="UKF__Wind__Estimator_8c.html#ab9fd07eef78a8a550bcd859339c5f401">UKF_Wind_Estimator.c</a>
 </li>
 <li>qr_code_spi_data_available
 : <a class="el" href="qr__code__spi__link_8c.html#aea48d29c373adbfe28f95b262989b524">qr_code_spi_link.c</a>
@@ -192,8 +186,22 @@ $(document).ready(function(){initNavTree('globals_q.html','');});
 <li>qr_code_spi_link_transaction
 : <a class="el" href="qr__code__spi__link_8c.html#ab768791ca590a71b1960034eac3d68bb">qr_code_spi_link.c</a>
 </li>
+<li>qr_e()
+: <a class="el" href="UKF__Wind__Estimator_8c.html#ab4ab517d47da4d5ce174742384ae56cd">UKF_Wind_Estimator.c</a>
+</li>
+<li>qr_solve()
+: <a class="el" href="qr__solve_8c.html#a90d5a7f0475008f757334c945452b340">qr_solve.c</a>
+, <a class="el" href="qr__solve_8h.html#a90d5a7f0475008f757334c945452b340">qr_solve.h</a>
+</li>
+<li>qr_solve_wrapper()
+: <a class="el" href="wls__alloc_8c.html#ae96dd388138c3a7830cafe5eec5a0708">wls_alloc.c</a>
+, <a class="el" href="wls__alloc_8h.html#ae96dd388138c3a7830cafe5eec5a0708">wls_alloc.h</a>
+</li>
 <li>QRCODE_DRAW_RECTANGLE
 : <a class="el" href="qr__code_8c.html#a3b2d68f061b35c19ad3433658e4cecaa">qr_code.c</a>
+</li>
+<li>QRCODE_FPS
+: <a class="el" href="qr__code_8c.html#a8dac2ca1a7472c7f3bdad5f998ba8b54">qr_code.c</a>
 </li>
 <li>qrcode_init()
 : <a class="el" href="qr__code_8c.html#ac2cd906083090c455a8cf7bb2b491dee">qr_code.c</a>
@@ -230,6 +238,9 @@ $(document).ready(function(){initNavTree('globals_q.html','');});
 <li>QUAT_DIFF
 : <a class="el" href="group__math__algebra__generic.html#ga7123b22efe3d8c9eef35e9f438c0dc0e">pprz_algebra.h</a>
 </li>
+<li>QUAT_DOT_PRODUCT
+: <a class="el" href="group__math__algebra__generic.html#ga66a0f3345d47c0084ae62cd46fb3ecfb">pprz_algebra.h</a>
+</li>
 <li>QUAT_EXPLEMENTARY
 : <a class="el" href="group__math__algebra__generic.html#gab35c5050dc3533764d0712e04a8407b3">pprz_algebra.h</a>
 </li>
@@ -240,16 +251,16 @@ $(document).ready(function(){initNavTree('globals_q.html','');});
 : <a class="el" href="group__math__algebra__generic.html#gacabf07308219485006f3fc3921f0e088">pprz_algebra.h</a>
 </li>
 <li>quat_from_earth_cmd_f()
-: <a class="el" href="stabilization__attitude__quat__transformations_8c.html#a875d6ee5cde39474c4ce13dd340cb262">stabilization_attitude_quat_transformations.c</a>
-, <a class="el" href="stabilization__attitude__quat__transformations_8h.html#a875d6ee5cde39474c4ce13dd340cb262">stabilization_attitude_quat_transformations.h</a>
+: <a class="el" href="stabilization__attitude__quat__transformations_8h.html#a875d6ee5cde39474c4ce13dd340cb262">stabilization_attitude_quat_transformations.h</a>
+, <a class="el" href="stabilization__attitude__quat__transformations_8c.html#a875d6ee5cde39474c4ce13dd340cb262">stabilization_attitude_quat_transformations.c</a>
 </li>
 <li>quat_from_earth_cmd_i()
-: <a class="el" href="stabilization__attitude__quat__transformations_8h.html#acfb3bfa8af4aebad848717cd26aa78ee">stabilization_attitude_quat_transformations.h</a>
-, <a class="el" href="stabilization__attitude__quat__transformations_8c.html#acfb3bfa8af4aebad848717cd26aa78ee">stabilization_attitude_quat_transformations.c</a>
+: <a class="el" href="stabilization__attitude__quat__transformations_8c.html#acfb3bfa8af4aebad848717cd26aa78ee">stabilization_attitude_quat_transformations.c</a>
+, <a class="el" href="stabilization__attitude__quat__transformations_8h.html#acfb3bfa8af4aebad848717cd26aa78ee">stabilization_attitude_quat_transformations.h</a>
 </li>
 <li>quat_from_rpy_cmd_f()
-: <a class="el" href="stabilization__attitude__quat__transformations_8h.html#a10ec980ce6bc935ea53ec3bfca04fe3d">stabilization_attitude_quat_transformations.h</a>
-, <a class="el" href="stabilization__attitude__quat__transformations_8c.html#a10ec980ce6bc935ea53ec3bfca04fe3d">stabilization_attitude_quat_transformations.c</a>
+: <a class="el" href="stabilization__attitude__quat__transformations_8c.html#a10ec980ce6bc935ea53ec3bfca04fe3d">stabilization_attitude_quat_transformations.c</a>
+, <a class="el" href="stabilization__attitude__quat__transformations_8h.html#a10ec980ce6bc935ea53ec3bfca04fe3d">stabilization_attitude_quat_transformations.h</a>
 </li>
 <li>quat_from_rpy_cmd_i()
 : <a class="el" href="stabilization__attitude__quat__transformations_8h.html#a781fdef7edec84ea09c1faf34d1316e8">stabilization_attitude_quat_transformations.h</a>
@@ -270,7 +281,7 @@ $(document).ready(function(){initNavTree('globals_q.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Oct 1 2016 14:02:45 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:03:16 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

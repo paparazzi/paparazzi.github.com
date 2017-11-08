@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -107,6 +107,7 @@ $(document).ready(function(){initNavTree('sdlog__chibios_8c.html','');});
 <div class="header">
   <div class="summary">
 <a href="#define-members">Macros</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
@@ -120,7 +121,9 @@ $(document).ready(function(){initNavTree('sdlog__chibios_8c.html','');});
 <code>#include &quot;<a class="el" href="sdlog__chibios_8h_source.html">modules/loggers/sdlog_chibios.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="tlsf__malloc_8h_source.html">modules/tlsf/tlsf_malloc.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="adc_8h_source.html">mcu_periph/adc.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mcu_8h_source.html">mcu.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="led_8h_source.html">led.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="telemetry_8h_source.html">subsystems/datalink/telemetry.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for sdlog_chibios.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -128,7 +131,7 @@ $(document).ready(function(){initNavTree('sdlog__chibios_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="sdlog__chibios_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2loggers_2sdlog__chibios_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2loggers_2sdlog__chibios_8c" id="sw_2airborne_2modules_2loggers_2sdlog__chibios_8c">
-<area shape="rect" id="node4" href="sdLog_8h.html" title="modules/loggers/sdlog\l_chibios/sdLog.h" alt="" coords="460,184,626,225"/><area shape="rect" id="node8" href="usbStorage_8h.html" title="modules/loggers/sdlog\l_chibios/usbStorage.h" alt="" coords="32,95,198,136"/><area shape="rect" id="node9" href="sdlog__chibios_8h.html" title="modules/loggers/sdlog\l_chibios.h" alt="" coords="581,95,748,136"/><area shape="rect" id="node11" href="tlsf__malloc_8h.html" title="Dynamic memory allocation based on TLSF library. " alt="" coords="223,102,407,129"/><area shape="rect" id="node13" href="adc_8h.html" title="arch independent ADC (Analog to Digital Converter) API " alt="" coords="884,102,1020,129"/><area shape="rect" id="node16" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API " alt="" coords="1135,102,1188,129"/><area shape="rect" id="node12" href="tlsf__malloc__arch_8h.html" title="Dynamic memory allocation based on TLSF library. " alt="" coords="212,184,384,225"/><area shape="rect" id="node14" href="inttypes_8h.html" title="inttypes.h" alt="" coords="910,191,995,218"/></map>
+<area shape="rect" id="node4" href="sdLog_8h.html" title="modules/loggers/sdlog\l_chibios/sdLog.h" alt="" coords="387,363,554,404"/><area shape="rect" id="node8" href="usbStorage_8h.html" title="modules/loggers/sdlog\l_chibios/usbStorage.h" alt="" coords="32,95,199,136"/><area shape="rect" id="node9" href="sdlog__chibios_8h.html" title="modules/loggers/sdlog\l_chibios.h" alt="" coords="508,273,675,315"/><area shape="rect" id="node11" href="tlsf__malloc_8h.html" title="Dynamic memory allocation based on TLSF library. " alt="" coords="224,102,408,129"/><area shape="rect" id="node14" href="adc_8h.html" title="arch independent ADC (Analog to Digital Converter) API " alt="" coords="1190,102,1326,129"/><area shape="rect" id="node17" href="mcu_8h.html" title="Arch independent mcu ( Micro Controller Unit ) utilities. " alt="" coords="1398,102,1460,129"/><area shape="rect" id="node19" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API " alt="" coords="1577,102,1630,129"/><area shape="rect" id="node21" href="telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code). " alt="" coords="687,95,840,136"/><area shape="rect" id="node12" href="tlsf__malloc__arch_8h.html" title="Dynamic memory allocation based on TLSF library. " alt="" coords="198,184,370,225"/><area shape="rect" id="node13" href="ram__arch_8h.html" title="Specific RAM section for DMA usage on F7. " alt="" coords="180,281,355,307"/><area shape="rect" id="node15" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1740,281,1825,307"/><area shape="rect" id="node22" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="750,370,889,397"/><area shape="rect" id="node25" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="900,184,1054,225"/><area shape="rect" id="node29" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="1196,273,1350,315"/><area shape="rect" id="node31" href="pprz__dl_8h.html" title="Datalink using PPRZ protocol. " alt="" coords="979,281,1172,307"/></map>
 </div>
 </div>
 <p><a href="sdlog__chibios_8c_source.html">Go to the source code of this file.</a></p>
@@ -137,8 +140,21 @@ $(document).ready(function(){initNavTree('sdlog__chibios_8c.html','');});
 Macros</h2></td></tr>
 <tr class="memitem:abb202e6b58d213508879a54bf05251bb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdlog__chibios_8c.html#abb202e6b58d213508879a54bf05251bb">SDLOG_START_DELAY</a>&#160;&#160;&#160;30</td></tr>
 <tr class="separator:abb202e6b58d213508879a54bf05251bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a936f5a74e8b8aa15309464eb51b1c1f4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdlog__chibios_8c.html#a936f5a74e8b8aa15309464eb51b1c1f4">SDLOG_AUTO_FLUSH_PERIOD</a>&#160;&#160;&#160;10</td></tr>
+<tr class="separator:a936f5a74e8b8aa15309464eb51b1c1f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad046b524185790197e59a701e851d8d6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdlog__chibios_8c.html#ad046b524185790197e59a701e851d8d6">SDLOG_CONTIGUOUS_STORAGE_MEM</a>&#160;&#160;&#160;50</td></tr>
+<tr class="separator:ad046b524185790197e59a701e851d8d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03d90924160b7c7b2c069eb0b22764f2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdlog__chibios_8c.html#a03d90924160b7c7b2c069eb0b22764f2">DefaultAdcOfVoltage</a>(voltage)&#160;&#160;&#160;((<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>) (voltage/(<a class="el" href="yapa__2_80_8h.html#a94fa241ceca04635f282e09bdd829f5f">DefaultVoltageOfAdc</a>(1))))</td></tr>
 <tr class="separator:a03d90924160b7c7b2c069eb0b22764f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a7b1472d57861c1c16e0394cd0f614182"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="sdlog__chibios_8c.html#a7b1472d57861c1c16e0394cd0f614182a060be51fe340345e4c5e874c66a8ab7d">SDLOG_STOPPED</a> = 0, 
+<a class="el" href="sdlog__chibios_8c.html#a7b1472d57861c1c16e0394cd0f614182aac75dfc7d71920a93685e43473618e89">SDLOG_RUNNING</a>, 
+<a class="el" href="sdlog__chibios_8c.html#a7b1472d57861c1c16e0394cd0f614182a08a31ba2db7b38b09104ea752c3dbdf6">SDLOG_ERROR</a>
+ }</td></tr>
+<tr class="memdesc:a7b1472d57861c1c16e0394cd0f614182"><td class="mdescLeft">&#160;</td><td class="mdescRight">sdlog status  <a href="sdlog__chibios_8c.html#a7b1472d57861c1c16e0394cd0f614182">More...</a><br /></td></tr>
+<tr class="separator:a7b1472d57861c1c16e0394cd0f614182"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -152,8 +168,8 @@ Functions</h2></td></tr>
 <tr class="separator:aee744de53d121395ef522cef118be731"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8339bbd0c34af9283f61af04b1946f74"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdlog__chibios_8c.html#a8339bbd0c34af9283f61af04b1946f74">powerOutageIsr</a> (void)</td></tr>
 <tr class="separator:a8339bbd0c34af9283f61af04b1946f74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea44c072feca7ef3af28a4b1f2e58ec0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdlog__chibios_8c.html#aea44c072feca7ef3af28a4b1f2e58ec0">systemDeepSleep</a> (void)</td></tr>
-<tr class="separator:aea44c072feca7ef3af28a4b1f2e58ec0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5718683acb8a55505ba1c50c48028102"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdlog__chibios_8c.html#a5718683acb8a55505ba1c50c48028102">send_sdlog_status</a> (struct transport_tx *trans, struct link_device *<a class="el" href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a>)</td></tr>
+<tr class="separator:a5718683acb8a55505ba1c50c48028102"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e0212194e97b3ce260678d968a368e9"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdlog__chibios_8c.html#a6e0212194e97b3ce260678d968a368e9">sdlog_check_free_space</a> (struct <a class="el" href="sdlog__chibios_8h.html#structchibios__sdlog">chibios_sdlog</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, long *<a class="el" href="bat__voltage__ardrone2_8c.html#a6f8059414f0228f0256115e024eeed4b">fd</a>, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> len)</td></tr>
 <tr class="separator:a6e0212194e97b3ce260678d968a368e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa260ab24a61a46e8e9b30e3203f7e9e9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdlog__chibios_8c.html#aa260ab24a61a46e8e9b30e3203f7e9e9">sdlog_transmit</a> (struct <a class="el" href="sdlog__chibios_8h.html#structchibios__sdlog">chibios_sdlog</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, long <a class="el" href="bat__voltage__ardrone2_8c.html#a6f8059414f0228f0256115e024eeed4b">fd</a>, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="el" href="nps__fdm__crrcsim_8c.html#a71809484a26cd96c6abe839a0a8a289d">byte</a>)</td></tr>
@@ -169,8 +185,8 @@ Functions</h2></td></tr>
 <tr class="separator:ad094fe3bc7f2da71d85d09484e25bfe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeeba7682db35a9becddc07935f5d256a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdlog__chibios_8c.html#aeeba7682db35a9becddc07935f5d256a">sdlog_chibios_init</a> (void)</td></tr>
 <tr class="separator:aeeba7682db35a9becddc07935f5d256a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a468073a8575335ab6b2d8291548e78ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdlog__chibios_8c.html#a468073a8575335ab6b2d8291548e78ff">sdlog_chibios_finish</a> (bool flush)</td></tr>
-<tr class="separator:a468073a8575335ab6b2d8291548e78ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f9b049b6368d8306e16bad97dd30b91"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdlog__chibios_8c.html#a9f9b049b6368d8306e16bad97dd30b91">sdlog_chibios_finish</a> (const bool flush)</td></tr>
+<tr class="separator:a9f9b049b6368d8306e16bad97dd30b91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -184,12 +200,15 @@ Variables</h2></td></tr>
 <tr class="separator:a7d247e5ccfb8b9a4bb1eb4fe13c8fd53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1f82d465033fcb9e099049cb9bdc785"><td class="memItemLeft" align="right" valign="top">event_listener_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdlog__chibios_8c.html#aa1f82d465033fcb9e099049cb9bdc785">powerOutageListener</a></td></tr>
 <tr class="separator:aa1f82d465033fcb9e099049cb9bdc785"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad116324820ef24ee1595a44cacb96b71"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdlog__chibios_8c.html#ad116324820ef24ee1595a44cacb96b71">sdOk</a> = false</td></tr>
+<tr class="memitem:ad116324820ef24ee1595a44cacb96b71"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdlog__chibios_8c.html#ad116324820ef24ee1595a44cacb96b71">sdOk</a> = <a class="el" href="rtwtypes_8h.html#a65e9886d74aaee76545e83dd09011727">false</a></td></tr>
 <tr class="separator:ad116324820ef24ee1595a44cacb96b71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa98230ec7c62b75b008363356fdefb4d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sdLog_8h.html#a5af0a3873249752407b6c26c77c9a46d">FileDes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdlog__chibios_8c.html#aa98230ec7c62b75b008363356fdefb4d">pprzLogFile</a> = -1</td></tr>
 <tr class="separator:aa98230ec7c62b75b008363356fdefb4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d6d6039a7d735ec71df91793397de63"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="sdlog__chibios_8h.html#structchibios__sdlog">chibios_sdlog</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdlog__chibios_8c.html#a6d6d6039a7d735ec71df91793397de63">chibios_sdlog</a></td></tr>
 <tr class="separator:a6d6d6039a7d735ec71df91793397de63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c3afd81cc9fc26d2fc935dfe3b8a424"><td class="memItemLeft" align="right" valign="top">static enum  { ... } &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdlog__chibios_8c.html#a0c3afd81cc9fc26d2fc935dfe3b8a424">chibios_sdlog_status</a></td></tr>
+<tr class="memdesc:a0c3afd81cc9fc26d2fc935dfe3b8a424"><td class="mdescLeft">&#160;</td><td class="mdescRight">sdlog status  <a href="#a0c3afd81cc9fc26d2fc935dfe3b8a424">More...</a><br /></td></tr>
+<tr class="separator:a0c3afd81cc9fc26d2fc935dfe3b8a424"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="a03d90924160b7c7b2c069eb0b22764f2"></a>
@@ -206,7 +225,39 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00053">53</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p>Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00063">63</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a936f5a74e8b8aa15309464eb51b1c1f4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SDLOG_AUTO_FLUSH_PERIOD&#160;&#160;&#160;10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00051">51</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+
+<p>Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00198">thd_startlog()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad046b524185790197e59a701e851d8d6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SDLOG_CONTIGUOUS_STORAGE_MEM&#160;&#160;&#160;50</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00056">56</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+
+<p>Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00198">thd_startlog()</a>.</p>
 
 </div>
 </div>
@@ -220,9 +271,34 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00045">45</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p>Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00046">46</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
-<p>Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00161">thd_startlog()</a>.</p>
+<p>Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00198">thd_startlog()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a class="anchor" id="a7b1472d57861c1c16e0394cd0f614182"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>sdlog status </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a7b1472d57861c1c16e0394cd0f614182a060be51fe340345e4c5e874c66a8ab7d"></a>SDLOG_STOPPED&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a7b1472d57861c1c16e0394cd0f614182aac75dfc7d71920a93685e43473618e89"></a>SDLOG_RUNNING&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a7b1472d57861c1c16e0394cd0f614182a08a31ba2db7b38b09104ea752c3dbdf6"></a>SDLOG_ERROR&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+<p>Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00097">97</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
 </div>
 </div>
@@ -253,11 +329,11 @@ Variables</h2></td></tr>
 
 <p>init <a class="el" href="sdlog__chibios_8h.html#structchibios__sdlog" title="chibios_sdlog structure ">chibios_sdlog</a> structure </p>
 
-<p>Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00123">123</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p>Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00151">151</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
-<p>References <a class="el" href="sdlog__chibios_8h_source.html#l00058">chibios_sdlog::device</a>, <a class="el" href="sdlog__chibios_8h_source.html#l00056">chibios_sdlog::file</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00121">null_function()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00088">sdlog_check_free_space()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00115">sdlog_send()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00100">sdlog_transmit()</a>, and <a class="el" href="sdlog__chibios_8c_source.html#l00108">sdlog_transmit_buffer()</a>.</p>
+<p>References <a class="el" href="sdlog__chibios_8h_source.html#l00057">chibios_sdlog::device</a>, <a class="el" href="sdlog__chibios_8h_source.html#l00055">chibios_sdlog::file</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00149">null_function()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00116">sdlog_check_free_space()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00143">sdlog_send()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00128">sdlog_transmit()</a>, and <a class="el" href="sdlog__chibios_8c_source.html#l00136">sdlog_transmit_buffer()</a>.</p>
 
-<p>Referenced by <a class="el" href="flight__recorder_8c_source.html#l00052">flight_recorder_init()</a>, and <a class="el" href="sdlog__chibios_8c_source.html#l00161">thd_startlog()</a>.</p>
+<p>Referenced by <a class="el" href="flight__recorder_8c_source.html#l00052">flight_recorder_init()</a>, and <a class="el" href="sdlog__chibios_8c_source.html#l00198">thd_startlog()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -305,9 +381,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00121">121</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p>Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00149">149</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
-<p>Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00123">chibios_sdlog_init()</a>.</p>
+<p>Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00151">chibios_sdlog_init()</a>.</p>
 
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -344,9 +420,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00253">253</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p>Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00306">306</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
-<p>Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00231">thd_bat_survey()</a>.</p>
+<p>Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00284">thd_bat_survey()</a>.</p>
 
 <p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -399,11 +475,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00088">88</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p>Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00116">116</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
-<p>References <a class="el" href="sdLog_8h_source.html#l00086">SDLOG_OK</a>.</p>
+<p>References <a class="el" href="sdLog_8h_source.html#l00108">SDLOG_OK</a>.</p>
 
-<p>Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00123">chibios_sdlog_init()</a>.</p>
+<p>Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00151">chibios_sdlog_init()</a>.</p>
 
 <p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -418,33 +494,33 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a468073a8575335ab6b2d8291548e78ff"></a>
+<a class="anchor" id="a9f9b049b6368d8306e16bad97dd30b91"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void sdlog_chibios_finish </td>
           <td>(</td>
-          <td class="paramtype">bool&#160;</td>
+          <td class="paramtype">const bool&#160;</td>
           <td class="paramname"><em>flush</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00149">149</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p>Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00182">182</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
-<p>References <a class="el" href="sdLog_8c_source.html#l00224">sdLogFinish()</a>.</p>
+<p>References <a class="el" href="sdlog__chibios_8c.html#a0c3afd81cc9fc26d2fc935dfe3b8a424">chibios_sdlog_status</a>, <a class="el" href="sim_2led__hw_8c_source.html#l00004">led_disable</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00098">SDLOG_STOPPED</a>, and <a class="el" href="sdLog_8c_source.html#l00253">sdLogFinish()</a>.</p>
 
-<p>Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00231">thd_bat_survey()</a>, and <a class="el" href="usbStorage_8c_source.html#l00269">thdUsbStorage()</a>.</p>
+<p>Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00284">thd_bat_survey()</a>, and <a class="el" href="usbStorage_8c_source.html#l00096">thdUsbStorage()</a>.</p>
 
 <p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="sdlog__chibios_8c_a468073a8575335ab6b2d8291548e78ff_cgraph.png" border="0" usemap="#sdlog__chibios_8c_a468073a8575335ab6b2d8291548e78ff_cgraph" alt=""/></div>
-<map name="sdlog__chibios_8c_a468073a8575335ab6b2d8291548e78ff_cgraph" id="sdlog__chibios_8c_a468073a8575335ab6b2d8291548e78ff_cgraph">
+<div class="center"><img src="sdlog__chibios_8c_a9f9b049b6368d8306e16bad97dd30b91_cgraph.png" border="0" usemap="#sdlog__chibios_8c_a9f9b049b6368d8306e16bad97dd30b91_cgraph" alt=""/></div>
+<map name="sdlog__chibios_8c_a9f9b049b6368d8306e16bad97dd30b91_cgraph" id="sdlog__chibios_8c_a9f9b049b6368d8306e16bad97dd30b91_cgraph">
 <area shape="rect" id="node2" href="sdLog_8c.html#a03326adcb90b1cc07d684a6abaff2051" title="unmount filesystem " alt="" coords="200,5,295,32"/></map>
 </div>
 </p>
@@ -454,8 +530,8 @@ Variables</h2></td></tr>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="sdlog__chibios_8c_a468073a8575335ab6b2d8291548e78ff_icgraph.png" border="0" usemap="#sdlog__chibios_8c_a468073a8575335ab6b2d8291548e78ff_icgraph" alt=""/></div>
-<map name="sdlog__chibios_8c_a468073a8575335ab6b2d8291548e78ff_icgraph" id="sdlog__chibios_8c_a468073a8575335ab6b2d8291548e78ff_icgraph">
+<div class="center"><img src="sdlog__chibios_8c_a9f9b049b6368d8306e16bad97dd30b91_icgraph.png" border="0" usemap="#sdlog__chibios_8c_a9f9b049b6368d8306e16bad97dd30b91_icgraph" alt=""/></div>
+<map name="sdlog__chibios_8c_a9f9b049b6368d8306e16bad97dd30b91_icgraph" id="sdlog__chibios_8c_a9f9b049b6368d8306e16bad97dd30b91_icgraph">
 <area shape="rect" id="node2" href="sdlog__chibios_8c.html#aee744de53d121395ef522cef118be731" title="thd_bat_survey" alt="" coords="200,5,320,32"/><area shape="rect" id="node5" href="usbStorage_8c.html#a03e36a472f457f472fc7031d798eac45" title="thdUsbStorage" alt="" coords="201,56,319,83"/><area shape="rect" id="node3" href="sdlog__chibios_8c.html#a7cf4c749454b496e749b47e614750109" title="thd_startlog" alt="" coords="403,5,502,32"/><area shape="rect" id="node4" href="sdlog__chibios_8h.html#aeeba7682db35a9becddc07935f5d256a" title="sdlog_chibios_init" alt="" coords="585,31,719,57"/><area shape="rect" id="node6" href="usbStorage_8h.html#a12081a3972cd8a738a527d104c647665" title="usbStorageStartPolling" alt="" coords="368,56,537,83"/></map>
 </div>
 </p>
@@ -476,9 +552,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00138">138</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p>Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00166">166</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
-<p>References <a class="el" href="sdlog__chibios_8c_source.html#l00161">thd_startlog()</a>, and <a class="el" href="usbStorage_8c_source.html#l00242">usbStorageStartPolling()</a>.</p>
+<p>References <a class="el" href="sdlog__chibios_8c.html#a0c3afd81cc9fc26d2fc935dfe3b8a424">chibios_sdlog_status</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="telemetry_8c_source.html#l00046">register_periodic_telemetry()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00098">SDLOG_STOPPED</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00105">send_sdlog_status()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00198">thd_startlog()</a>, and <a class="el" href="usbStorage_8c_source.html#l00070">usbStorageStartPolling()</a>.</p>
 
 <p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -487,7 +563,7 @@ Variables</h2></td></tr>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="sdlog__chibios_8c_aeeba7682db35a9becddc07935f5d256a_cgraph.png" border="0" usemap="#sdlog__chibios_8c_aeeba7682db35a9becddc07935f5d256a_cgraph" alt=""/></div>
 <map name="sdlog__chibios_8c_aeeba7682db35a9becddc07935f5d256a_cgraph" id="sdlog__chibios_8c_aeeba7682db35a9becddc07935f5d256a_cgraph">
-<area shape="rect" id="node2" href="sdlog__chibios_8c.html#a7cf4c749454b496e749b47e614750109" title="thd_startlog" alt="" coords="222,385,321,412"/><area shape="rect" id="node20" href="usbStorage_8c.html#a12081a3972cd8a738a527d104c647665" title="usbStorageStartPolling" alt="" coords="187,512,356,539"/><area shape="rect" id="node3" href="usbStorage_8c.html#a5d838dcbf84e935691629f3a533ac82d" title="usbStorageIsItRunning" alt="" coords="453,411,617,437"/><area shape="rect" id="node4" href="sdlog__chibios_8c.html#ad094fe3bc7f2da71d85d09484e25bfe6" title="init chibios_sdlog structure " alt="" coords="469,132,602,159"/><area shape="rect" id="node10" href="sdLog_8c.html#a598888320386c21f975d32d68f29bcf3" title="initialise sdLog " alt="" coords="496,461,575,488"/><area shape="rect" id="node14" href="sdLog_8c.html#a0feebb43817c3a4d97e34f991012932c" title="remove spurious log file left on sd " alt="" coords="464,360,607,387"/><area shape="rect" id="node15" href="sdlog__chibios_8c.html#aee744de53d121395ef522cef118be731" title="thd_bat_survey" alt="" coords="475,309,595,336"/><area shape="rect" id="node5" href="sdlog__chibios_8c.html#a1c0b1440f370ee93f605fcdcd6c98dca" title="null_function" alt="" coords="755,107,857,133"/><area shape="rect" id="node6" href="sdlog__chibios_8c.html#a6e0212194e97b3ce260678d968a368e9" title="sdlog_check_free_space" alt="" coords="717,157,895,184"/><area shape="rect" id="node7" href="sdlog__chibios_8c.html#a0cbad7189fd56c4cf283bd9609efa119" title="sdlog_send" alt="" coords="759,208,853,235"/><area shape="rect" id="node8" href="sdlog__chibios_8c.html#aa260ab24a61a46e8e9b30e3203f7e9e9" title="sdlog_transmit" alt="" coords="747,5,865,32"/><area shape="rect" id="node9" href="sdlog__chibios_8c.html#aebcb13d7628135e3381399568c2cf421" title="sdlog_transmit_buffer" alt="" coords="725,56,887,83"/><area shape="rect" id="node11" href="msg__queue_8c.html#a8cbe13f6801caa6bd92498e5772eb3df" title="initialise MsgQueue " alt="" coords="748,360,864,387"/><area shape="rect" id="node12" href="sdio__arch_8c.html#a55d0f878fb169bbdd445d86648ee562b" title="Connect a SD card on SDIO peripheral. " alt="" coords="753,563,859,589"/><area shape="rect" id="node13" href="sdio__arch_8c.html#a1aaca4bd6a01a576869aa133f5fe0877" title="Disconnect a SD card on SDIO peripheral. " alt="" coords="744,461,868,488"/><area shape="rect" id="node16" href="sdlog__chibios_8c.html#a8339bbd0c34af9283f61af04b1946f74" title="powerOutageIsr" alt="" coords="745,259,867,285"/><area shape="rect" id="node17" href="sdlog__chibios_8c.html#a468073a8575335ab6b2d8291548e78ff" title="sdlog_chibios_finish" alt="" coords="733,411,879,437"/><area shape="rect" id="node19" href="sdlog__chibios_8c.html#aea44c072feca7ef3af28a4b1f2e58ec0" title="systemDeepSleep" alt="" coords="737,309,875,336"/><area shape="rect" id="node18" href="sdLog_8c.html#a03326adcb90b1cc07d684a6abaff2051" title="unmount filesystem " alt="" coords="979,411,1074,437"/><area shape="rect" id="node21" href="usbStorage_8c.html#a76223dcfd4ec71d2e2a9abd70d60fefe" title="populateSerialNumberDescriptorData" alt="" coords="404,512,667,539"/><area shape="rect" id="node23" href="usbStorage_8c.html#a03e36a472f457f472fc7031d798eac45" title="thdUsbStorage" alt="" coords="476,588,595,615"/><area shape="rect" id="node22" href="usbStorage_8c.html#a72b33e289c98917b12b4b90071fefeb0" title="nibbleToHex" alt="" coords="757,512,855,539"/><area shape="rect" id="node24" href="usb__msd_8c.html#a9030d48fbe74f8689d41984bd08edf51" title="Initializse a USB mass storage driver. " alt="" coords="771,781,841,808"/><area shape="rect" id="node25" href="usb__msd_8c.html#a7889b266f8bf0e0063afd3546cd02439" title="Starts a USB mass storage driver. " alt="" coords="765,613,847,640"/><area shape="rect" id="node43" href="main__chibios_8c.html#ab187dc37cfd9ba19180b8d99905dd2e3" title="Terminate all autopilot threads Wait until proper stop. " alt="" coords="715,665,897,706"/><area shape="rect" id="node44" href="usb__msd_8c.html#aaa1c1d04bba912b3ae2b6806f8ed4fdc" title="Stops a USB mass storage driver. " alt="" coords="766,731,846,757"/><area shape="rect" id="node26" href="usb__msd_8c.html#afae8af1112e8706a2abac1033b431d1a" title="mass_storage_thread" alt="" coords="945,613,1108,640"/><area shape="rect" id="node27" href="usb__msd_8c.html#a3b8762ec274b71960bc00505e3668ed5" title="Wait until the end&#45;point interrupt handler has been called. " alt="" coords="1658,744,1786,771"/><area shape="rect" id="node28" href="usb__msd_8c.html#aa1850fad33df3daf4aee4757e87be5b3" title="Waits for a new command block. " alt="" coords="1166,547,1345,589"/><area shape="rect" id="node30" href="usb__msd_8c.html#aae86072280e1c9c74809a1657712bc8b" title="Reads a newly received command block. " alt="" coords="1156,984,1355,1011"/><area shape="rect" id="node29" href="usb__msd_8c.html#a9f5b2ca0047c96b2b13cb1d89ba3fc73" title="Starts receiving data. " alt="" coords="1652,604,1792,631"/><area shape="rect" id="node31" href="usb__msd_8c.html#a48c18c077f1b99cd4f0530f8b02007fc" title="Processes an INQUIRY SCSI command. " alt="" coords="1407,1160,1593,1187"/><area shape="rect" id="node32" href="usb__msd_8c.html#a0074e59868c631d2f665ee9d32e316cd" title="Starts sending data. " alt="" coords="1648,984,1796,1011"/><area shape="rect" id="node33" href="usb__msd_8c.html#a9eccc1c15eed8fd3b53c7692c2b359b1" title="Changes the SCSI sense information. " alt="" coords="1645,1219,1799,1245"/><area shape="rect" id="node34" href="usb__msd_8c.html#adcf34e8664fce2f0676aa631a73e53f3" title="Processes a REQUEST_SENSE SCSI command. " alt="" coords="1403,846,1597,887"/><area shape="rect" id="node35" href="usb__msd_8c.html#a8ebbd37f54610b397906cd1166e978b3" title="Processes a READ_CAPACITY_10 SCSI command. " alt="" coords="1413,911,1587,953"/><area shape="rect" id="node37" href="usb__msd_8c.html#a7da9e934287148f0383b353ea8418318" title="Processes a READ_WRITE_10 SCSI command. " alt="" coords="1413,781,1587,822"/><area shape="rect" id="node38" href="usb__msd_8c.html#adde97b16d8281aeca3a016ce27fd4c24" title="Processes a SEND_DIAGNOSTIC SCSI command. " alt="" coords="1412,1329,1588,1370"/><area shape="rect" id="node39" href="usb__msd_8c.html#a751915d3ec433652970157ec1602eab4" title="Processes a MODE_SENSE_6 SCSI command. " alt="" coords="1409,1094,1591,1135"/><area shape="rect" id="node40" href="usb__msd_8c.html#a9af0f1fa6a97cdd8d2c117fc7671aea0" title="Processes a START_STOP_UNIT SCSI command. " alt="" coords="1413,715,1587,757"/><area shape="rect" id="node41" href="usb__msd_8c.html#accb6f6c3de04140ad134fa859874f48e" title="Processes a READ_FORMAT_CAPACITIES SCSI command. " alt="" coords="1413,977,1587,1018"/><area shape="rect" id="node42" href="usb__msd_8c.html#ad782b2c1e3b1a66863b39eab0a301b2d" title="Processes a TEST_UNIT_READY SCSI command. " alt="" coords="1415,1211,1585,1253"/><area shape="rect" id="node36" href="usb__msd_8c.html#ae2d5c206793602ef8f26918ea71e2194" title="Byte&#45;swap a 32 bits unsigned integer. " alt="" coords="1671,919,1773,945"/></map>
+<area shape="rect" id="node2" href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function. " alt="" coords="187,132,384,159"/><area shape="rect" id="node3" href="sdlog__chibios_8c.html#a5718683acb8a55505ba1c50c48028102" title="send_sdlog_status" alt="" coords="215,183,356,209"/><area shape="rect" id="node4" href="sdlog__chibios_8c.html#a7cf4c749454b496e749b47e614750109" title="thd_startlog" alt="" coords="236,233,335,260"/><area shape="rect" id="node24" href="usbStorage_8c.html#a12081a3972cd8a738a527d104c647665" title="usbStorageStartPolling" alt="" coords="201,411,370,437"/><area shape="rect" id="node5" href="usbStorage_8c.html#a5d838dcbf84e935691629f3a533ac82d" title="usbStorageIsItRunning" alt="" coords="432,132,596,159"/><area shape="rect" id="node6" href="sdlog__chibios_8c.html#ad094fe3bc7f2da71d85d09484e25bfe6" title="init chibios_sdlog structure " alt="" coords="447,183,581,209"/><area shape="rect" id="node12" href="sdLog_8c.html#a598888320386c21f975d32d68f29bcf3" title="initialise sdLog " alt="" coords="475,284,553,311"/><area shape="rect" id="node16" href="sdLog_8c.html#a0feebb43817c3a4d97e34f991012932c" title="remove spurious log file left on sd " alt="" coords="443,81,585,108"/><area shape="rect" id="node17" href="sdlog__chibios_8c.html#aee744de53d121395ef522cef118be731" title="thd_bat_survey" alt="" coords="454,436,574,463"/><area shape="rect" id="node7" href="sdlog__chibios_8c.html#a1c0b1440f370ee93f605fcdcd6c98dca" title="null_function" alt="" coords="696,56,799,83"/><area shape="rect" id="node8" href="sdlog__chibios_8c.html#a6e0212194e97b3ce260678d968a368e9" title="sdlog_check_free_space" alt="" coords="659,107,836,133"/><area shape="rect" id="node9" href="sdlog__chibios_8c.html#a0cbad7189fd56c4cf283bd9609efa119" title="sdlog_send" alt="" coords="700,157,795,184"/><area shape="rect" id="node10" href="sdlog__chibios_8c.html#aa260ab24a61a46e8e9b30e3203f7e9e9" title="sdlog_transmit" alt="" coords="689,208,806,235"/><area shape="rect" id="node11" href="sdlog__chibios_8c.html#aebcb13d7628135e3381399568c2cf421" title="sdlog_transmit_buffer" alt="" coords="667,5,828,32"/><area shape="rect" id="node13" href="msg__queue_8c.html#a8cbe13f6801caa6bd92498e5772eb3df" title="initialise MsgQueue " alt="" coords="689,259,805,285"/><area shape="rect" id="node14" href="sdio__arch_8c.html#a55d0f878fb169bbdd445d86648ee562b" title="Connect a SD card on SDIO peripheral. " alt="" coords="694,360,801,387"/><area shape="rect" id="node15" href="sdio__arch_8c.html#a1aaca4bd6a01a576869aa133f5fe0877" title="Disconnect a SD card on SDIO peripheral. " alt="" coords="685,309,809,336"/><area shape="rect" id="node18" href="sdlog__chibios_8c.html#a8339bbd0c34af9283f61af04b1946f74" title="powerOutageIsr" alt="" coords="686,461,809,488"/><area shape="rect" id="node19" href="sdlog__chibios_8c.html#a9f9b049b6368d8306e16bad97dd30b91" title="sdlog_chibios_finish" alt="" coords="674,512,821,539"/><area shape="rect" id="node21" href="chibios_2mcu__arch_8h.html#a1296057f718ade4eeb9674b9c3550cb8" title="Put MCU into deep sleep mode. " alt="" coords="682,411,813,437"/><area shape="rect" id="node20" href="sdLog_8c.html#a03326adcb90b1cc07d684a6abaff2051" title="unmount filesystem " alt="" coords="903,512,998,539"/><area shape="rect" id="node22" href="stm32_2mcu__periph_2i2c__arch_8c.html#a6b9c651bba2afc97b6578902bae95012" title="__disable_irq" alt="" coords="899,385,1003,412"/><area shape="rect" id="node23" href="stm32_2mcu__periph_2i2c__arch_8c.html#a5e587d51e0e0c291bb20ef0f9b5e8e76" title="__enable_irq" alt="" coords="899,436,1002,463"/><area shape="rect" id="node25" href="usbStorage_8c.html#a03e36a472f457f472fc7031d798eac45" title="thdUsbStorage" alt="" coords="455,588,573,615"/><area shape="rect" id="node26" href="usb__msd_8c.html#a2c07ac4c24d02f56c726c38477e98b01" title="init_msd_driver" alt="" coords="688,613,807,640"/><area shape="rect" id="node46" href="usb__msd_8c.html#a9ad360964cf29c17ffda4847ea88c2f3" title="register connected event source in local event mask " alt="" coords="644,664,851,691"/><area shape="rect" id="node47" href="fixedwing_2main__chibios_8c.html#ab187dc37cfd9ba19180b8d99905dd2e3" title="Terminate all autopilot threads Wait until proper stop. " alt="" coords="656,715,839,757"/><area shape="rect" id="node48" href="usb__msd_8c.html#af6995e11a18decb9478ad798000d60ca" title="deinit_msd_driver" alt="" coords="680,781,815,808"/><area shape="rect" id="node50" href="chibios_2mcu__arch_8h.html#a862afc1b2c4b85e2cf3236b9245e5f56" title="Request a software reset of the MCU. " alt="" coords="702,563,793,589"/><area shape="rect" id="node27" href="usb__msd_8c.html#a9030d48fbe74f8689d41984bd08edf51" title="Initializse a USB mass storage driver. " alt="" coords="916,588,985,615"/><area shape="rect" id="node29" href="usb__msd_8c.html#a7889b266f8bf0e0063afd3546cd02439" title="Starts a USB mass storage driver. " alt="" coords="909,639,992,665"/><area shape="rect" id="node28" href="usb__msd_8c.html#a218498e8fe29b8470ad71b25f61ca783" title="debug_snd_evt_i" alt="" coords="1067,588,1197,615"/><area shape="rect" id="node30" href="usb__msd_8c.html#afae8af1112e8706a2abac1033b431d1a" title="Mass storage thread that processes commands. " alt="" coords="1051,639,1213,665"/><area shape="rect" id="node31" href="usb__msd_8c.html#a3b8762ec274b71960bc00505e3668ed5" title="Wait until the end&#45;point interrupt handler has been called. " alt="" coords="1763,580,1891,607"/><area shape="rect" id="node33" href="usb__msd_8c.html#a9eccc1c15eed8fd3b53c7692c2b359b1" title="Changes the SCSI sense information. " alt="" coords="1751,804,1904,831"/><area shape="rect" id="node34" href="usb__msd_8c.html#aa1850fad33df3daf4aee4757e87be5b3" title="Waits for a new command block. " alt="" coords="1516,1155,1695,1197"/><area shape="rect" id="node37" href="usb__msd_8c.html#aae86072280e1c9c74809a1657712bc8b" title="Reads a newly received command block. " alt="" coords="1261,784,1460,811"/><area shape="rect" id="node32" href="usb__msd_8c.html#a24a678ea6bcd105c46f97ccc813d146b" title="debug_snd_evt_inl" alt="" coords="1952,580,2092,607"/><area shape="rect" id="node35" href="usb__msd_8c.html#ad07c9360f29e619d5e4d4e9e4b28cb3d" title="debug_snd_evt_nl" alt="" coords="1759,1003,1896,1029"/><area shape="rect" id="node36" href="usb__msd_8c.html#a9f5b2ca0047c96b2b13cb1d89ba3fc73" title="Starts receiving data. " alt="" coords="1757,895,1897,921"/><area shape="rect" id="node38" href="usb__msd_8c.html#ad782b2c1e3b1a66863b39eab0a301b2d" title="Processes a TEST_UNIT_READY SCSI command. " alt="" coords="1520,907,1691,949"/><area shape="rect" id="node39" href="usb__msd_8c.html#a48c18c077f1b99cd4f0530f8b02007fc" title="Processes an INQUIRY SCSI command. " alt="" coords="1512,973,1699,1000"/><area shape="rect" id="node40" href="usb__msd_8c.html#adcf34e8664fce2f0676aa631a73e53f3" title="Processes a REQUEST_SENSE SCSI command. " alt="" coords="1508,543,1703,585"/><area shape="rect" id="node41" href="usb__msd_8c.html#a8ebbd37f54610b397906cd1166e978b3" title="Processes a READ_CAPACITY_10 SCSI command. " alt="" coords="1518,1025,1693,1066"/><area shape="rect" id="node42" href="usb__msd_8c.html#a7da9e934287148f0383b353ea8418318" title="Processes a READ_WRITE_10 SCSI command. " alt="" coords="1518,842,1693,883"/><area shape="rect" id="node43" href="usb__msd_8c.html#adde97b16d8281aeca3a016ce27fd4c24" title="Processes a SEND_DIAGNOSTIC SCSI command. " alt="" coords="1517,711,1693,753"/><area shape="rect" id="node44" href="usb__msd_8c.html#a751915d3ec433652970157ec1602eab4" title="Processes a MODE_SENSE_6 SCSI command. " alt="" coords="1514,1090,1697,1131"/><area shape="rect" id="node45" href="usb__msd_8c.html#a9af0f1fa6a97cdd8d2c117fc7671aea0" title="Processes a START_STOP_UNIT SCSI command. " alt="" coords="1518,777,1693,818"/><area shape="rect" id="node49" href="usb__msd_8c.html#aaa1c1d04bba912b3ae2b6806f8ed4fdc" title="Stops a USB mass storage driver. " alt="" coords="911,781,991,808"/></map>
 </div>
 </p>
 
@@ -525,11 +601,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00115">115</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p>Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00143">143</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
-<p>References <a class="el" href="sdlog__chibios_8h_source.html#l00056">chibios_sdlog::file</a>.</p>
+<p>References <a class="el" href="sdlog__chibios_8h_source.html#l00055">chibios_sdlog::file</a>.</p>
 
-<p>Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00123">chibios_sdlog_init()</a>.</p>
+<p>Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00151">chibios_sdlog_init()</a>.</p>
 
 <p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -582,11 +658,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00100">100</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p>Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00128">128</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
 <p>References <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00074">byte</a>.</p>
 
-<p>Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00123">chibios_sdlog_init()</a>.</p>
+<p>Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00151">chibios_sdlog_init()</a>.</p>
 
 <p><div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -645,9 +721,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00108">108</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p>Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00136">136</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
-<p>Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00123">chibios_sdlog_init()</a>.</p>
+<p>Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00151">chibios_sdlog_init()</a>.</p>
 
 <p><div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -662,7 +738,7 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aea44c072feca7ef3af28a4b1f2e58ec0"></a>
+<a class="anchor" id="a5718683acb8a55505ba1c50c48028102"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -670,11 +746,21 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void systemDeepSleep </td>
+          <td class="memname">static void send_sdlog_status </td>
           <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">struct transport_tx *&#160;</td>
+          <td class="paramname"><em>trans</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">struct link_device *&#160;</td>
+          <td class="paramname"><em>dev</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -684,20 +770,20 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00259">259</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p>Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00105">105</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
-<p>References <a class="el" href="LPC21xx_8h_source.html#l00394">SCB</a>.</p>
+<p>References <a class="el" href="sdlog__chibios_8c.html#a0c3afd81cc9fc26d2fc935dfe3b8a424">chibios_sdlog_status</a>.</p>
 
-<p>Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00231">thd_bat_survey()</a>.</p>
+<p>Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00166">sdlog_chibios_init()</a>.</p>
 
 <p><div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-12-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="sdlog__chibios_8c_aea44c072feca7ef3af28a4b1f2e58ec0_icgraph.png" border="0" usemap="#sdlog__chibios_8c_aea44c072feca7ef3af28a4b1f2e58ec0_icgraph" alt=""/></div>
-<map name="sdlog__chibios_8c_aea44c072feca7ef3af28a4b1f2e58ec0_icgraph" id="sdlog__chibios_8c_aea44c072feca7ef3af28a4b1f2e58ec0_icgraph">
-<area shape="rect" id="node2" href="sdlog__chibios_8c.html#aee744de53d121395ef522cef118be731" title="thd_bat_survey" alt="" coords="192,5,312,32"/><area shape="rect" id="node3" href="sdlog__chibios_8c.html#a7cf4c749454b496e749b47e614750109" title="thd_startlog" alt="" coords="360,5,459,32"/><area shape="rect" id="node4" href="sdlog__chibios_8h.html#aeeba7682db35a9becddc07935f5d256a" title="sdlog_chibios_init" alt="" coords="507,5,640,32"/></map>
+<div class="center"><img src="sdlog__chibios_8c_a5718683acb8a55505ba1c50c48028102_icgraph.png" border="0" usemap="#sdlog__chibios_8c_a5718683acb8a55505ba1c50c48028102_icgraph" alt=""/></div>
+<map name="sdlog__chibios_8c_a5718683acb8a55505ba1c50c48028102_icgraph" id="sdlog__chibios_8c_a5718683acb8a55505ba1c50c48028102_icgraph">
+<area shape="rect" id="node2" href="sdlog__chibios_8h.html#aeeba7682db35a9becddc07935f5d256a" title="sdlog_chibios_init" alt="" coords="195,5,328,32"/></map>
 </div>
 </p>
 
@@ -725,11 +811,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00231">231</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p>Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00284">284</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
-<p>References <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00755">AD1_4_CHANNEL</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00253">powerOutageIsr()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00149">sdlog_chibios_finish()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00259">systemDeepSleep()</a>, and <a class="el" href="sdlog__chibios_8c_source.html#l00054">V_ALERT</a>.</p>
+<p>References <a class="el" href="chibios_2mcu__arch_8h_source.html#l00055">mcu_deep_sleep()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00306">powerOutageIsr()</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l01040">SDLOG_BAT_ADC</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l01041">SDLOG_BAT_CHAN</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00182">sdlog_chibios_finish()</a>, and <a class="el" href="sdlog__chibios_8c_source.html#l00064">V_ALERT</a>.</p>
 
-<p>Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00161">thd_startlog()</a>.</p>
+<p>Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00198">thd_startlog()</a>.</p>
 
 <p><div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -738,7 +824,7 @@ Variables</h2></td></tr>
 <div id="dynsection-13-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="sdlog__chibios_8c_aee744de53d121395ef522cef118be731_cgraph.png" border="0" usemap="#sdlog__chibios_8c_aee744de53d121395ef522cef118be731_cgraph" alt=""/></div>
 <map name="sdlog__chibios_8c_aee744de53d121395ef522cef118be731_cgraph" id="sdlog__chibios_8c_aee744de53d121395ef522cef118be731_cgraph">
-<area shape="rect" id="node2" href="sdlog__chibios_8c.html#a8339bbd0c34af9283f61af04b1946f74" title="powerOutageIsr" alt="" coords="185,5,308,32"/><area shape="rect" id="node3" href="sdlog__chibios_8c.html#a468073a8575335ab6b2d8291548e78ff" title="sdlog_chibios_finish" alt="" coords="173,56,320,83"/><area shape="rect" id="node5" href="sdlog__chibios_8c.html#aea44c072feca7ef3af28a4b1f2e58ec0" title="systemDeepSleep" alt="" coords="177,107,316,133"/><area shape="rect" id="node4" href="sdLog_8c.html#a03326adcb90b1cc07d684a6abaff2051" title="unmount filesystem " alt="" coords="368,56,463,83"/></map>
+<area shape="rect" id="node2" href="chibios_2mcu__arch_8h.html#a1296057f718ade4eeb9674b9c3550cb8" title="Put MCU into deep sleep mode. " alt="" coords="181,31,312,57"/><area shape="rect" id="node5" href="sdlog__chibios_8c.html#a8339bbd0c34af9283f61af04b1946f74" title="powerOutageIsr" alt="" coords="185,81,308,108"/><area shape="rect" id="node6" href="sdlog__chibios_8c.html#a9f9b049b6368d8306e16bad97dd30b91" title="sdlog_chibios_finish" alt="" coords="173,132,320,159"/><area shape="rect" id="node3" href="stm32_2mcu__periph_2i2c__arch_8c.html#a6b9c651bba2afc97b6578902bae95012" title="__disable_irq" alt="" coords="368,5,472,32"/><area shape="rect" id="node4" href="stm32_2mcu__periph_2i2c__arch_8c.html#a5e587d51e0e0c291bb20ef0f9b5e8e76" title="__enable_irq" alt="" coords="369,56,471,83"/><area shape="rect" id="node7" href="sdLog_8c.html#a03326adcb90b1cc07d684a6abaff2051" title="unmount filesystem " alt="" coords="373,132,467,159"/></map>
 </div>
 </p>
 
@@ -777,11 +863,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00161">161</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p>Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00198">198</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
-<p>References <a class="el" href="sdlog__chibios_8c_source.html#l00123">chibios_sdlog_init()</a>, <a class="el" href="gps_8c_source.html#l00075">gps</a>, <a class="el" href="chibios_2led__hw_8h_source.html#l00051">LED_TOGGLE</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00056">PPRZ_LOG_DIR</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00055">PPRZ_LOG_NAME</a>, <a class="el" href="sdLog_8c_source.html#l00708">removeEmptyLogs()</a>, <a class="el" href="sdLog_8h_source.html#l00086">SDLOG_OK</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00045">SDLOG_START_DELAY</a>, <a class="el" href="sdLog_8c_source.html#l00166">sdLogInit()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00074">sdOk</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00231">thd_bat_survey()</a>, <a class="el" href="gps_8h_source.html#l00101">GpsState::tow</a>, <a class="el" href="usbStorage_8c_source.html#l00339">usbStorageIsItRunning()</a>, and <a class="el" href="gps_8h_source.html#l00100">GpsState::week</a>.</p>
+<p>References <a class="el" href="sdlog__chibios_8c_source.html#l00151">chibios_sdlog_init()</a>, <a class="el" href="sdlog__chibios_8c.html#a0c3afd81cc9fc26d2fc935dfe3b8a424">chibios_sdlog_status</a>, <a class="el" href="gps_8c_source.html#l00075">gps</a>, <a class="el" href="chibios_2led__hw_8h_source.html#l00052">LED_TOGGLE</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00066">PPRZ_LOG_DIR</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00065">PPRZ_LOG_NAME</a>, <a class="el" href="sdLog_8c_source.html#l00783">removeEmptyLogs()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00051">SDLOG_AUTO_FLUSH_PERIOD</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00056">SDLOG_CONTIGUOUS_STORAGE_MEM</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00100">SDLOG_ERROR</a>, <a class="el" href="sdLog_8h_source.html#l00108">SDLOG_OK</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00099">SDLOG_RUNNING</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00046">SDLOG_START_DELAY</a>, <a class="el" href="sdLog_8c_source.html#l00193">sdLogInit()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00083">sdOk</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00284">thd_bat_survey()</a>, <a class="el" href="gps_8h_source.html#l00101">GpsState::tow</a>, <a class="el" href="usbStorage_8c_source.html#l00149">usbStorageIsItRunning()</a>, and <a class="el" href="gps_8h_source.html#l00100">GpsState::week</a>.</p>
 
-<p>Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00138">sdlog_chibios_init()</a>.</p>
+<p>Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00166">sdlog_chibios_init()</a>.</p>
 
 <p><div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -790,7 +876,7 @@ Variables</h2></td></tr>
 <div id="dynsection-15-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="sdlog__chibios_8c_a7cf4c749454b496e749b47e614750109_cgraph.png" border="0" usemap="#sdlog__chibios_8c_a7cf4c749454b496e749b47e614750109_cgraph" alt=""/></div>
 <map name="sdlog__chibios_8c_a7cf4c749454b496e749b47e614750109_cgraph" id="sdlog__chibios_8c_a7cf4c749454b496e749b47e614750109_cgraph">
-<area shape="rect" id="node2" href="sdlog__chibios_8c.html#ad094fe3bc7f2da71d85d09484e25bfe6" title="init chibios_sdlog structure " alt="" coords="167,132,301,159"/><area shape="rect" id="node8" href="sdLog_8c.html#a0feebb43817c3a4d97e34f991012932c" title="remove spurious log file left on sd " alt="" coords="163,284,305,311"/><area shape="rect" id="node9" href="sdLog_8c.html#a598888320386c21f975d32d68f29bcf3" title="initialise sdLog " alt="" coords="195,335,273,361"/><area shape="rect" id="node13" href="sdlog__chibios_8c.html#aee744de53d121395ef522cef118be731" title="thd_bat_survey" alt="" coords="174,411,294,437"/><area shape="rect" id="node18" href="usbStorage_8c.html#a5d838dcbf84e935691629f3a533ac82d" title="usbStorageIsItRunning" alt="" coords="152,461,316,488"/><area shape="rect" id="node3" href="sdlog__chibios_8c.html#a1c0b1440f370ee93f605fcdcd6c98dca" title="null_function" alt="" coords="401,5,504,32"/><area shape="rect" id="node4" href="sdlog__chibios_8c.html#a6e0212194e97b3ce260678d968a368e9" title="sdlog_check_free_space" alt="" coords="364,56,541,83"/><area shape="rect" id="node5" href="sdlog__chibios_8c.html#a0cbad7189fd56c4cf283bd9609efa119" title="sdlog_send" alt="" coords="405,107,500,133"/><area shape="rect" id="node6" href="sdlog__chibios_8c.html#aa260ab24a61a46e8e9b30e3203f7e9e9" title="sdlog_transmit" alt="" coords="394,157,511,184"/><area shape="rect" id="node7" href="sdlog__chibios_8c.html#aebcb13d7628135e3381399568c2cf421" title="sdlog_transmit_buffer" alt="" coords="372,208,533,235"/><area shape="rect" id="node10" href="msg__queue_8c.html#a8cbe13f6801caa6bd92498e5772eb3df" title="initialise MsgQueue " alt="" coords="395,259,511,285"/><area shape="rect" id="node11" href="sdio__arch_8c.html#a55d0f878fb169bbdd445d86648ee562b" title="Connect a SD card on SDIO peripheral. " alt="" coords="399,309,506,336"/><area shape="rect" id="node12" href="sdio__arch_8c.html#a1aaca4bd6a01a576869aa133f5fe0877" title="Disconnect a SD card on SDIO peripheral. " alt="" coords="391,360,515,387"/><area shape="rect" id="node14" href="sdlog__chibios_8c.html#a8339bbd0c34af9283f61af04b1946f74" title="powerOutageIsr" alt="" coords="391,411,514,437"/><area shape="rect" id="node15" href="sdlog__chibios_8c.html#a468073a8575335ab6b2d8291548e78ff" title="sdlog_chibios_finish" alt="" coords="379,461,526,488"/><area shape="rect" id="node17" href="sdlog__chibios_8c.html#aea44c072feca7ef3af28a4b1f2e58ec0" title="systemDeepSleep" alt="" coords="383,512,522,539"/><area shape="rect" id="node16" href="sdLog_8c.html#a03326adcb90b1cc07d684a6abaff2051" title="unmount filesystem " alt="" coords="589,461,684,488"/></map>
+<area shape="rect" id="node2" href="sdlog__chibios_8c.html#ad094fe3bc7f2da71d85d09484e25bfe6" title="init chibios_sdlog structure " alt="" coords="167,132,301,159"/><area shape="rect" id="node8" href="sdLog_8c.html#a0feebb43817c3a4d97e34f991012932c" title="remove spurious log file left on sd " alt="" coords="163,284,305,311"/><area shape="rect" id="node9" href="sdLog_8c.html#a598888320386c21f975d32d68f29bcf3" title="initialise sdLog " alt="" coords="195,335,273,361"/><area shape="rect" id="node13" href="sdlog__chibios_8c.html#aee744de53d121395ef522cef118be731" title="thd_bat_survey" alt="" coords="174,411,294,437"/><area shape="rect" id="node20" href="usbStorage_8c.html#a5d838dcbf84e935691629f3a533ac82d" title="usbStorageIsItRunning" alt="" coords="152,461,316,488"/><area shape="rect" id="node3" href="sdlog__chibios_8c.html#a1c0b1440f370ee93f605fcdcd6c98dca" title="null_function" alt="" coords="401,5,504,32"/><area shape="rect" id="node4" href="sdlog__chibios_8c.html#a6e0212194e97b3ce260678d968a368e9" title="sdlog_check_free_space" alt="" coords="364,56,541,83"/><area shape="rect" id="node5" href="sdlog__chibios_8c.html#a0cbad7189fd56c4cf283bd9609efa119" title="sdlog_send" alt="" coords="405,107,500,133"/><area shape="rect" id="node6" href="sdlog__chibios_8c.html#aa260ab24a61a46e8e9b30e3203f7e9e9" title="sdlog_transmit" alt="" coords="394,157,511,184"/><area shape="rect" id="node7" href="sdlog__chibios_8c.html#aebcb13d7628135e3381399568c2cf421" title="sdlog_transmit_buffer" alt="" coords="372,208,533,235"/><area shape="rect" id="node10" href="msg__queue_8c.html#a8cbe13f6801caa6bd92498e5772eb3df" title="initialise MsgQueue " alt="" coords="395,259,511,285"/><area shape="rect" id="node11" href="sdio__arch_8c.html#a55d0f878fb169bbdd445d86648ee562b" title="Connect a SD card on SDIO peripheral. " alt="" coords="399,309,506,336"/><area shape="rect" id="node12" href="sdio__arch_8c.html#a1aaca4bd6a01a576869aa133f5fe0877" title="Disconnect a SD card on SDIO peripheral. " alt="" coords="391,360,515,387"/><area shape="rect" id="node14" href="chibios_2mcu__arch_8h.html#a1296057f718ade4eeb9674b9c3550cb8" title="Put MCU into deep sleep mode. " alt="" coords="387,411,518,437"/><area shape="rect" id="node17" href="sdlog__chibios_8c.html#a8339bbd0c34af9283f61af04b1946f74" title="powerOutageIsr" alt="" coords="391,461,514,488"/><area shape="rect" id="node18" href="sdlog__chibios_8c.html#a9f9b049b6368d8306e16bad97dd30b91" title="sdlog_chibios_finish" alt="" coords="379,512,526,539"/><area shape="rect" id="node15" href="stm32_2mcu__periph_2i2c__arch_8c.html#a6b9c651bba2afc97b6578902bae95012" title="__disable_irq" alt="" coords="589,385,693,412"/><area shape="rect" id="node16" href="stm32_2mcu__periph_2i2c__arch_8c.html#a5e587d51e0e0c291bb20ef0f9b5e8e76" title="__enable_irq" alt="" coords="590,436,693,463"/><area shape="rect" id="node19" href="sdLog_8c.html#a03326adcb90b1cc07d684a6abaff2051" title="unmount filesystem " alt="" coords="594,512,689,539"/></map>
 </div>
 </p>
 
@@ -886,7 +972,23 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00078">78</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p>Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00087">87</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0c3afd81cc9fc26d2fc935dfe3b8a424"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum { ... }   chibios_sdlog_status</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>sdlog status </p>
+
+<p>Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00182">sdlog_chibios_finish()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00166">sdlog_chibios_init()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00105">send_sdlog_status()</a>, and <a class="el" href="sdlog__chibios_8c_source.html#l00198">thd_startlog()</a>.</p>
 
 </div>
 </div>
@@ -900,7 +1002,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00072">72</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p>Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00081">81</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
 </div>
 </div>
@@ -914,7 +1016,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00071">71</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p>Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00080">80</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
 </div>
 </div>
@@ -936,9 +1038,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00056">56</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p>Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00066">66</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
-<p>Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00161">thd_startlog()</a>.</p>
+<p>Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00198">thd_startlog()</a>.</p>
 
 </div>
 </div>
@@ -960,9 +1062,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00055">55</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p>Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00065">65</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
-<p>Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00161">thd_startlog()</a>.</p>
+<p>Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00198">thd_startlog()</a>.</p>
 
 </div>
 </div>
@@ -976,9 +1078,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00076">76</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p>Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00085">85</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
-<p>Referenced by <a class="el" href="airspeed__ets_8c_source.html#l00158">airspeed_ets_read_event()</a>, <a class="el" href="aoa__pwm_8c_source.html#l00111">aoa_pwm_update()</a>, <a class="el" href="apogee_2baro__board_8c_source.html#l00112">apogee_baro_event()</a>, <a class="el" href="gps__ubx_8c_source.html#l00192">gps_ubx_parse()</a>, <a class="el" href="humid__sht_8c_source.html#l00316">humid_sht_periodic()</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00322">ins_float_invariant_propagate()</a>, <a class="el" href="meteo__stick_8c_source.html#l00286">meteo_stick_periodic()</a>, <a class="el" href="meteo__france__DAQ_8c_source.html#l00091">mf_daq_send_report()</a>, <a class="el" href="mf__ptu_8c_source.html#l00095">mf_ptu_periodic()</a>, and <a class="el" href="temp__temod_8c_source.html#l00072">temod_event()</a>.</p>
+<p>Referenced by <a class="el" href="airspeed__ets_8c_source.html#l00158">airspeed_ets_read_event()</a>, <a class="el" href="aoa__pwm_8c_source.html#l00166">aoa_pwm_update()</a>, <a class="el" href="apogee_2baro__board_8c_source.html#l00112">apogee_baro_event()</a>, <a class="el" href="gps__ubx_8c_source.html#l00305">gps_ubx_parse()</a>, <a class="el" href="humid__sht_8c_source.html#l00316">humid_sht_periodic()</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00321">ins_float_invariant_propagate()</a>, <a class="el" href="meteo__stick_8c_source.html#l00286">meteo_stick_periodic()</a>, <a class="el" href="meteo__france__DAQ_8c_source.html#l00092">mf_daq_send_report()</a>, <a class="el" href="mf__ptu_8c_source.html#l00095">mf_ptu_periodic()</a>, <a class="el" href="temp__temod_8c_source.html#l00074">temod_event()</a>, <a class="el" href="wind__estimator_8c_source.html#l00465">wind_estimator_init()</a>, and <a class="el" href="wind__estimator_8c_source.html#l00206">wind_estimator_step()</a>.</p>
 
 </div>
 </div>
@@ -987,14 +1089,14 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool sdOk = false</td>
+          <td class="memname">bool sdOk = <a class="el" href="rtwtypes_8h.html#a65e9886d74aaee76545e83dd09011727">false</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00074">74</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p>Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00083">83</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
-<p>Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00161">thd_startlog()</a>.</p>
+<p>Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00198">thd_startlog()</a>.</p>
 
 </div>
 </div>
@@ -1016,9 +1118,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00054">54</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
+<p>Definition at line <a class="el" href="sdlog__chibios_8c_source.html#l00064">64</a> of file <a class="el" href="sdlog__chibios_8c_source.html">sdlog_chibios.c</a>.</p>
 
-<p>Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00231">thd_bat_survey()</a>.</p>
+<p>Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00284">thd_bat_survey()</a>.</p>
 
 </div>
 </div>
@@ -1028,7 +1130,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_cbf4be70f5fb954ea1d2a546dd70b40e.html">loggers</a></li><li class="navelem"><a class="el" href="sdlog__chibios_8c.html">sdlog_chibios.c</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:02:00 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:02:27 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

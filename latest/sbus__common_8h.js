@@ -17,5 +17,5 @@ var sbus__common_8h =
     [ "USEC_OF_RC_PPM_TICKS", "sbus__common_8h.html#a962b9942b2dfacf94028a3c538341b4e", null ],
     [ "radio_control_impl_event", "sbus__common_8h.html#a760dbd4fa3f62cc43524fc420c2a9e5f", null ],
     [ "sbus_common_decode_event", "sbus__common_8h.html#ae8a17057cacb6e3b645d16793db3e21f", null ],
-    [ "sbus_common_init", "sbus__common_8h.html#a570ae07fc737620d66fcd4ef3bbf22fd", null ]
+    [ "sbus_common_init", "sbus__common_8h.html#a6dc25f3e917b3b706f27972cb0592272", null ]
 ];

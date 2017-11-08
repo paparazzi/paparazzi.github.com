@@ -1,7 +1,5 @@
 var imu__apogee_8c =
 [
-    [ "APOGEE_ACCEL_RANGE", "imu__apogee_8c.html#afff4a758f055126720cafb4f1be1c956", null ],
-    [ "APOGEE_GYRO_RANGE", "imu__apogee_8c.html#ab3023c8e310c1587bcb135e7e55b24db", null ],
     [ "APOGEE_LOWPASS_FILTER", "imu__apogee_8c.html#a839d39e78b58073f7c985a55fceda1e4", null ],
     [ "APOGEE_SMPLRT_DIV", "imu__apogee_8c.html#a31a5ac940bea487cf5608391f957c5bc", null ],
     [ "IMU_APOGEE_CHAN_X", "imu__apogee_8c.html#a3393a9d95aad086bcf228b54c4981381", null ],

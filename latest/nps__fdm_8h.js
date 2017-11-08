@@ -3,6 +3,7 @@ var nps__fdm_8h =
     [ "NpsFdm", "nps__fdm_8h.html#structNpsFdm", [
       [ "agl", "nps__fdm_8h.html#a76c1ee153b0cb6239a3016a5e9d2b660", null ],
       [ "airspeed", "nps__fdm_8h.html#a53ecaa8442cbd8d50152cde7883e3cfa", null ],
+      [ "aoa", "nps__fdm_8h.html#a0ba36b2cc1255eb1f05991c12f1e8494", null ],
       [ "body_accel", "nps__fdm_8h.html#acb00e6b2e27bd46260909398f29f4b68", null ],
       [ "body_ecef_accel", "nps__fdm_8h.html#aaa8d418779373ac856dc78134f800b47", null ],
       [ "body_ecef_rotaccel", "nps__fdm_8h.html#ab1a553965e81453fd028866f9b93f47f", null ],
@@ -46,6 +47,7 @@ var nps__fdm_8h =
       [ "right_aileron", "nps__fdm_8h.html#ab311b3fa6a4b4e9e4b5a77677f4401a4", null ],
       [ "rpm", "nps__fdm_8h.html#ab52534a13ea16399eaeb5bdf4ed30d39", null ],
       [ "rudder", "nps__fdm_8h.html#a02895a89b70e21ec7b062d3cd4175f85", null ],
+      [ "sideslip", "nps__fdm_8h.html#abea95297c349d8c657a1e594a12df77d", null ],
       [ "temperature", "nps__fdm_8h.html#aaf1eb5f1b23522ab9f0d416d38998b6e", null ],
       [ "time", "nps__fdm_8h.html#a082d9c882157036983d79018c46b609b", null ],
       [ "total_pressure", "nps__fdm_8h.html#a349739c98f2ade7c8d43aa4b0df67273", null ],

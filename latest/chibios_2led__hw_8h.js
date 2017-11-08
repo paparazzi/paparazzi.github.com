@@ -2,6 +2,7 @@ var chibios_2led__hw_8h =
 [
     [ "_LED_GPIO", "chibios_2led__hw_8h.html#a106dcadbe0823622d2c9e092922bda08", null ],
     [ "_LED_GPIO_PIN", "chibios_2led__hw_8h.html#a250609302c796fc6adc27af47dac4519", null ],
+    [ "LED_DISABLE", "chibios_2led__hw_8h.html#a8883d7ef721064fc83a6817add5ad3a9", null ],
     [ "LED_GPIO", "chibios_2led__hw_8h.html#aa9479a9a1c2367d23cb3df268c826148", null ],
     [ "LED_GPIO_PIN", "chibios_2led__hw_8h.html#a4d7921db6e6c86209040251b71b25f84", null ],
     [ "LED_INIT", "chibios_2led__hw_8h.html#a49b662104f8fa2b8fa86ea80e94c3d6b", null ],

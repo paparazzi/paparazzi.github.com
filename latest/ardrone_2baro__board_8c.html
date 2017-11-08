@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -193,7 +193,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ardrone_2baro__board_8c_source.html#l00092">92</a> of file <a class="el" href="ardrone_2baro__board_8c_source.html">baro_board.c</a>.</p>
 
-<p>References <a class="el" href="ardrone_2baro__board_8c_source.html#l00058">baro_apply_calibration()</a>, <a class="el" href="ardrone_2baro__board_8c_source.html#l00084">baro_apply_calibration_temp()</a>, <a class="el" href="navdata_8h_source.html#l00129">navdata_t::baro_available</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00033">BARO_BOARD_SENDER_ID</a>, <a class="el" href="navdata_8h_source.html#l00128">navdata_t::baro_calibrated</a>, <a class="el" href="navdata_8h_source.html#l00125">navdata_t::measure</a>, <a class="el" href="navdata_8c_source.html#l00059">navdata</a>, <a class="el" href="navdata_8h_source.html#l00075">navdata_measure_t::pressure</a>, <a class="el" href="navdata_8h_source.html#l00076">navdata_measure_t::temperature_pressure</a>, and <a class="el" href="median__filter_8h_source.html#l00051">update_median_filter()</a>.</p>
+<p>References <a class="el" href="ardrone_2baro__board_8c_source.html#l00058">baro_apply_calibration()</a>, <a class="el" href="ardrone_2baro__board_8c_source.html#l00084">baro_apply_calibration_temp()</a>, <a class="el" href="navdata_8h_source.html#l00129">navdata_t::baro_available</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00033">BARO_BOARD_SENDER_ID</a>, <a class="el" href="navdata_8h_source.html#l00128">navdata_t::baro_calibrated</a>, <a class="el" href="navdata_8h_source.html#l00125">navdata_t::measure</a>, <a class="el" href="navdata_8c_source.html#l00059">navdata</a>, <a class="el" href="navdata_8h_source.html#l00075">navdata_measure_t::pressure</a>, <a class="el" href="navdata_8h_source.html#l00076">navdata_measure_t::temperature_pressure</a>, and <a class="el" href="median__filter_8h_source.html#l00062">update_median_filter_i()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -202,7 +202,7 @@ Functions</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ardrone_2baro__board_8c_a931fb2c09c5110447836986b03ac6c32_cgraph.png" border="0" usemap="#ardrone_2baro__board_8c_a931fb2c09c5110447836986b03ac6c32_cgraph" alt=""/></div>
 <map name="ardrone_2baro__board_8c_a931fb2c09c5110447836986b03ac6c32_cgraph" id="ardrone_2baro__board_8c_a931fb2c09c5110447836986b03ac6c32_cgraph">
-<area shape="rect" id="node2" href="ardrone_2baro__board_8c.html#a324cbe14bc8cfd2eb549bdd524dfb56d" title="Apply temperature and sensor calibration to get pressure in Pa. " alt="" coords="225,5,390,32"/><area shape="rect" id="node3" href="ardrone_2baro__board_8c.html#a84855eebddeb9c1cbdad203028037fe8" title="Apply temperature calibration. " alt="" coords="204,56,411,83"/><area shape="rect" id="node4" href="median__filter_8h.html#aee74cc51a39b22672908e6b0232b056f" title="update_median_filter" alt="" coords="229,107,386,133"/></map>
+<area shape="rect" id="node2" href="ardrone_2baro__board_8c.html#a324cbe14bc8cfd2eb549bdd524dfb56d" title="Apply temperature and sensor calibration to get pressure in Pa. " alt="" coords="225,5,390,32"/><area shape="rect" id="node3" href="ardrone_2baro__board_8c.html#a84855eebddeb9c1cbdad203028037fe8" title="Apply temperature calibration. " alt="" coords="204,56,411,83"/><area shape="rect" id="node4" href="median__filter_8h.html#a93ba7fc73a838bfdb0a9a36681c824fc" title="update_median_filter_i" alt="" coords="224,107,391,133"/><area shape="rect" id="node5" href="median__filter_8h.html#a4b24eae146e241b005063b4a44e7a511" title="get_median_filter_i" alt="" coords="459,107,601,133"/></map>
 </div>
 </p>
 
@@ -324,7 +324,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ardrone_2baro__board_8c_source.html#l00044">44</a> of file <a class="el" href="ardrone_2baro__board_8c_source.html">baro_board.c</a>.</p>
 
-<p>References <a class="el" href="median__filter_8h_source.html#l00041">init_median_filter()</a>.</p>
+<p>References <a class="el" href="median__filter_8h_source.html#l00043">init_median_filter_i()</a>, and <a class="el" href="median__filter_8h_source.html#l00028">MEDIAN_DEFAULT_SIZE</a>.</p>
 
 <p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -333,7 +333,7 @@ Functions</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ardrone_2baro__board_8c_a9b25546908842f1d38fc56e438d46e21_cgraph.png" border="0" usemap="#ardrone_2baro__board_8c_a9b25546908842f1d38fc56e438d46e21_cgraph" alt=""/></div>
 <map name="ardrone_2baro__board_8c_a9b25546908842f1d38fc56e438d46e21_cgraph" id="ardrone_2baro__board_8c_a9b25546908842f1d38fc56e438d46e21_cgraph">
-<area shape="rect" id="node2" href="median__filter_8h.html#ad880c294f1bee96a283cf9c9511658a3" title="init_median_filter" alt="" coords="131,5,261,32"/></map>
+<area shape="rect" id="node2" href="median__filter_8h.html#a1a8fedd54d66986e087c7e4e4349443f" title="init_median_filter_i" alt="" coords="131,5,272,32"/></map>
 </div>
 </p>
 
@@ -363,7 +363,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e030268cd18297cf6282390f76bfcf7f.html">boards</a></li><li class="navelem"><a class="el" href="dir_93997fa94db05292d114fcb1dd488916.html">ardrone</a></li><li class="navelem"><a class="el" href="ardrone_2baro__board_8c.html">baro_board.c</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:01:40 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:01:59 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

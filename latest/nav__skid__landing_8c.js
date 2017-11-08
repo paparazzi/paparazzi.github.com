@@ -12,7 +12,7 @@ var nav__skid__landing_8c =
     [ "distance_equation", "nav__skid__landing_8c.html#aaa563d267379243565db9b6c74f45a64", null ],
     [ "nav_skid_landing_glide", "nav__skid__landing_8c.html#a86a7be4e82f2b11c0232b41222a7638a", null ],
     [ "nav_skid_landing_run", "nav__skid__landing_8c.html#a1da9c6326a3875826fe10de3b880f04c", null ],
-    [ "nav_skid_landing_setup", "nav__skid__landing_8c.html#ab4a68653d24748253f17816f1dfd3132", null ],
+    [ "nav_skid_landing_setup", "nav__skid__landing_8c.html#a2aae2c09e6529ffb6a38e840d38d86d2", null ],
     [ "approach_quadrant", "nav__skid__landing_8c.html#ae36798214a157abcd751f80eab4a794d", null ],
     [ "aw_waypoint", "nav__skid__landing_8c.html#a5f71dce3855843698c6a7bdb5228aff9", null ],
     [ "final_land_altitude", "nav__skid__landing_8c.html#a25d58852927042ae28a825c2fafc04af", null ],

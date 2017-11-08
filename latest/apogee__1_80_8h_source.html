@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -474,7 +474,7 @@ $(document).ready(function(){initNavTree('apogee__1_80_8h_source.html','');});
 <div class="line"><a name="l00363"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a8838c57ad3a67b5371963cb31183f0d3">  363</a></span>&#160;<span class="preprocessor">#define PWM_INPUT1_CHANNEL_PERIOD TIM_IC1</span></div>
 <div class="line"><a name="l00364"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#ab532f788b8d3b9945d3c85bda5cd7582">  364</a></span>&#160;<span class="preprocessor">#define PWM_INPUT1_CHANNEL_DUTY   TIM_IC2</span></div>
 <div class="line"><a name="l00365"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a1e4dda23f41648a28d0e628d151fd0be">  365</a></span>&#160;<span class="preprocessor">#define PWM_INPUT1_TIMER_INPUT    TIM_IC_IN_TI1</span></div>
-<div class="line"><a name="l00366"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a7ae25aa665012615939294aa32fb9512">  366</a></span>&#160;<span class="preprocessor">#define PWM_INPUT1_SLAVE_TRIG     TIM_SMCR_TS_IT1FP1</span></div>
+<div class="line"><a name="l00366"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a7ae25aa665012615939294aa32fb9512">  366</a></span>&#160;<span class="preprocessor">#define PWM_INPUT1_SLAVE_TRIG     TIM_SMCR_TS_TI1FP1</span></div>
 <div class="line"><a name="l00367"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#ab6eab5b8428b7c6b23edb8d599974485">  367</a></span>&#160;<span class="preprocessor">#define PWM_INPUT1_IRQ            NVIC_TIM1_CC_IRQ</span></div>
 <div class="line"><a name="l00368"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#adc531387649423a46452300dd2cb530f">  368</a></span>&#160;<span class="preprocessor">#define PWM_INPUT1_IRQ2           NVIC_TIM1_UP_TIM10_IRQ</span></div>
 <div class="line"><a name="l00369"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#acfa7ab553a4e786fe58337136a5e628e">  369</a></span>&#160;<span class="preprocessor">#define PWM_INPUT1_CC_IE          (TIM_DIER_CC1IE | TIM_DIER_CC2IE)</span></div>
@@ -497,7 +497,7 @@ $(document).ready(function(){initNavTree('apogee__1_80_8h_source.html','');});
 <div class="line"><a name="l00386"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#aedd96df2e92a495b064752d501423656">  386</a></span>&#160;<span class="preprocessor">#define PWM_INPUT2_CHANNEL_PERIOD TIM_IC1</span></div>
 <div class="line"><a name="l00387"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#ac238fe8096bda1b11594f9cf70fe3b5d">  387</a></span>&#160;<span class="preprocessor">#define PWM_INPUT2_CHANNEL_DUTY   TIM_IC2</span></div>
 <div class="line"><a name="l00388"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#aeeaaf5dc4630f383ef772f5f05ec256d">  388</a></span>&#160;<span class="preprocessor">#define PWM_INPUT2_TIMER_INPUT    TIM_IC_IN_TI1</span></div>
-<div class="line"><a name="l00389"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a4e6612fa4fa8cc1698e656005d2de2ff">  389</a></span>&#160;<span class="preprocessor">#define PWM_INPUT2_SLAVE_TRIG     TIM_SMCR_TS_IT1FP1</span></div>
+<div class="line"><a name="l00389"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a4e6612fa4fa8cc1698e656005d2de2ff">  389</a></span>&#160;<span class="preprocessor">#define PWM_INPUT2_SLAVE_TRIG     TIM_SMCR_TS_TI1FP1</span></div>
 <div class="line"><a name="l00390"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a014d43e3328cc28c16e39491152058b4">  390</a></span>&#160;<span class="preprocessor">#define PWM_INPUT2_IRQ            NVIC_TIM1_BRK_TIM9_IRQ</span></div>
 <div class="line"><a name="l00391"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a482acded9a8cbb84c375d12b83ae51db">  391</a></span>&#160;<span class="preprocessor">#define PWM_INPUT2_CC_IE          (TIM_DIER_CC3IE | TIM_DIER_CC4IE)</span></div>
 <div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;<span class="preprocessor">#ifdef USE_PWM_INPUT2</span></div>
@@ -567,7 +567,7 @@ $(document).ready(function(){initNavTree('apogee__1_80_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e030268cd18297cf6282390f76bfcf7f.html">boards</a></li><li class="navelem"><a class="el" href="apogee__1_80_8h.html">apogee_1.0.h</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:01:15 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:01:29 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

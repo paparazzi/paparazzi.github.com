@@ -9,6 +9,8 @@ var dir_5e9153041680afc3c016fd52fa730b56 =
     [ "modules", "dir_c2abcdd6ccb39c3582929c0e3f5651c2.html", "dir_c2abcdd6ccb39c3582929c0e3f5651c2" ],
     [ "peripherals", "dir_0a48ba2c0a76794adfddddc873522f67.html", "dir_0a48ba2c0a76794adfddddc873522f67" ],
     [ "subsystems", "dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html", "dir_12d6ec7aac5a4a9b8cee17e35022d7c7" ],
+    [ "autopilot.c", "autopilot_8c.html", "autopilot_8c" ],
+    [ "autopilot.h", "autopilot_8h.html", "autopilot_8h" ],
     [ "inter_mcu.c", "inter__mcu_8c.html", "inter__mcu_8c" ],
     [ "inter_mcu.h", "inter__mcu_8h.html", null ],
     [ "led.h", "led_8h.html", "led_8h" ],
@@ -25,8 +27,6 @@ var dir_5e9153041680afc3c016fd52fa730b56 =
     [ "pprz_debug.c", "pprz__debug_8c.html", null ],
     [ "pprz_debug.h", "pprz__debug_8h.html", "pprz__debug_8h" ],
     [ "pprz_mutex.h", "pprz__mutex_8h.html", "pprz__mutex_8h" ],
-    [ "rc_settings.c", "rc__settings_8c.html", "rc__settings_8c" ],
-    [ "rc_settings.h", "rc__settings_8h.html", "rc__settings_8h" ],
     [ "state.c", "state_8c.html", "state_8c" ],
     [ "state.h", "state_8h.html", "state_8h" ]
 ];

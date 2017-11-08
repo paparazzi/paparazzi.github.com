@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -175,7 +175,9 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="separator:a692b0f0e24d84c328657634259b6cc2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c80c4a2f81c27265b0e196af3453adc"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="intermcu_8h.html#a4c80c4a2f81c27265b0e196af3453adc">intermcu_cmd_status</a> { <a class="el" href="intermcu_8h.html#a4c80c4a2f81c27265b0e196af3453adca21da74cd6f28c15050aa7d4b0171523c">INTERMCU_CMD_MOTORS_ON</a>, 
-<a class="el" href="intermcu_8h.html#a4c80c4a2f81c27265b0e196af3453adca234d69409b088a1331577ab51424e1e3">INTERMCU_CMD_DISARM</a>
+<a class="el" href="intermcu_8h.html#a4c80c4a2f81c27265b0e196af3453adca234d69409b088a1331577ab51424e1e3">INTERMCU_CMD_DISARM</a>, 
+<a class="el" href="intermcu_8h.html#a4c80c4a2f81c27265b0e196af3453adca6ff8c793f6114259916ae64bed152628">INTERMCU_CMD_TIPPROPS</a>, 
+<a class="el" href="intermcu_8h.html#a4c80c4a2f81c27265b0e196af3453adcacf16e9d5dd680ca590cb73e7523d7eb1">INTERMCU_CMD_FAILSAFE</a>
  }</td></tr>
 <tr class="separator:a4c80c4a2f81c27265b0e196af3453adc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -206,7 +208,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p>Definition at line <a class="el" href="intermcu_8h_source.html#l00068">68</a> of file <a class="el" href="intermcu_8h_source.html">intermcu.h</a>.</p>
+<p>Definition at line <a class="el" href="intermcu_8h_source.html#l00070">70</a> of file <a class="el" href="intermcu_8h_source.html">intermcu.h</a>.</p>
 </div><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Collaboration diagram for intermcu_t:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -277,7 +279,7 @@ Transport over communication line (PPRZ) </td></tr>
 
 <p>Definition at line <a class="el" href="intermcu_8h_source.html#l00034">34</a> of file <a class="el" href="intermcu_8h_source.html">intermcu.h</a>.</p>
 
-<p>Referenced by <a class="el" href="intermcu__ap_8c_source.html#l00109">intermcu_send_spektrum_bind()</a>, <a class="el" href="intermcu__ap_8c_source.html#l00091">intermcu_set_actuators()</a>, and <a class="el" href="telemetry__intermcu__ap_8c_source.html#l00103">telemetry_intermcu_send_message()</a>.</p>
+<p>Referenced by <a class="el" href="intermcu__ap_8c_source.html#l00129">intermcu_send_spektrum_bind()</a>, <a class="el" href="intermcu__ap_8c_source.html#l00111">intermcu_set_actuators()</a>, and <a class="el" href="telemetry__intermcu__ap_8c_source.html#l00100">telemetry_intermcu_send_message()</a>.</p>
 
 </div>
 </div>
@@ -295,9 +297,9 @@ Transport over communication line (PPRZ) </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="intermcu_8h_source.html#l00064">64</a> of file <a class="el" href="intermcu_8h_source.html">intermcu.h</a>.</p>
+<p>Definition at line <a class="el" href="intermcu_8h_source.html#l00066">66</a> of file <a class="el" href="intermcu_8h_source.html">intermcu.h</a>.</p>
 
-<p>Referenced by <a class="el" href="intermcu__fbw_8c_source.html#l00130">intermcu_parse_msg()</a>, and <a class="el" href="opa__controller__fbw_8c_source.html#l00065">opa_controller_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="intermcu__fbw_8c_source.html#l00148">intermcu_parse_msg()</a>, and <a class="el" href="opa__controller__fbw_8c_source.html#l00065">opa_controller_periodic()</a>.</p>
 
 </div>
 </div>
@@ -313,7 +315,7 @@ Transport over communication line (PPRZ) </td></tr>
 
 <p>Definition at line <a class="el" href="intermcu_8h_source.html#l00035">35</a> of file <a class="el" href="intermcu_8h_source.html">intermcu.h</a>.</p>
 
-<p>Referenced by <a class="el" href="intermcu__fbw_8c_source.html#l00088">intermcu_on_rc_frame()</a>, and <a class="el" href="intermcu__fbw_8c_source.html#l00121">intermcu_send_status()</a>.</p>
+<p>Referenced by <a class="el" href="intermcu__fbw_8c_source.html#l00227">gps_cb()</a>, <a class="el" href="intermcu__fbw_8c_source.html#l00106">intermcu_on_rc_frame()</a>, <a class="el" href="intermcu__fbw_8c_source.html#l00139">intermcu_send_status()</a>, and <a class="el" href="telemetry__intermcu__fbw_8c_source.html#l00070">telemetry_intermcu_event()</a>.</p>
 
 </div>
 </div>
@@ -331,9 +333,9 @@ Transport over communication line (PPRZ) </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="intermcu_8h_source.html#l00065">65</a> of file <a class="el" href="intermcu_8h_source.html">intermcu.h</a>.</p>
+<p>Definition at line <a class="el" href="intermcu_8h_source.html#l00067">67</a> of file <a class="el" href="intermcu_8h_source.html">intermcu.h</a>.</p>
 
-<p>Referenced by <a class="el" href="intermcu__fbw_8c_source.html#l00130">intermcu_parse_msg()</a>, and <a class="el" href="opa__controller__fbw_8c_source.html#l00065">opa_controller_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="intermcu__fbw_8c_source.html#l00148">intermcu_parse_msg()</a>, and <a class="el" href="opa__controller__fbw_8c_source.html#l00065">opa_controller_periodic()</a>.</p>
 
 </div>
 </div>
@@ -349,7 +351,7 @@ Transport over communication line (PPRZ) </td></tr>
 
 <p>Definition at line <a class="el" href="intermcu_8h_source.html#l00038">38</a> of file <a class="el" href="intermcu_8h_source.html">intermcu.h</a>.</p>
 
-<p>Referenced by <a class="el" href="intermcu__ap_8c_source.html#l00074">intermcu_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="intermcu__ap_8c_source.html#l00090">intermcu_periodic()</a>.</p>
 
 </div>
 </div>
@@ -367,9 +369,9 @@ Transport over communication line (PPRZ) </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="intermcu_8h_source.html#l00063">63</a> of file <a class="el" href="intermcu_8h_source.html">intermcu.h</a>.</p>
+<p>Definition at line <a class="el" href="intermcu_8h_source.html#l00065">65</a> of file <a class="el" href="intermcu_8h_source.html">intermcu.h</a>.</p>
 
-<p>Referenced by <a class="el" href="intermcu__ap_8c_source.html#l00091">intermcu_set_actuators()</a>, and <a class="el" href="opa__controller__ap_8c_source.html#l00034">opa_controller_ap_disarm()</a>.</p>
+<p>Referenced by <a class="el" href="intermcu__ap_8c_source.html#l00111">intermcu_set_actuators()</a>, and <a class="el" href="opa__controller__ap_8c_source.html#l00034">opa_controller_ap_disarm()</a>.</p>
 
 </div>
 </div>
@@ -389,6 +391,12 @@ Transport over communication line (PPRZ) </td></tr>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a4c80c4a2f81c27265b0e196af3453adca234d69409b088a1331577ab51424e1e3"></a>INTERMCU_CMD_DISARM&#160;</td><td class="fielddoc">
 <p>Whether or not to dis-arm the FBW. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a4c80c4a2f81c27265b0e196af3453adca6ff8c793f6114259916ae64bed152628"></a>INTERMCU_CMD_TIPPROPS&#160;</td><td class="fielddoc">
+<p>Enable tip props. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a4c80c4a2f81c27265b0e196af3453adcacf16e9d5dd680ca590cb73e7523d7eb1"></a>INTERMCU_CMD_FAILSAFE&#160;</td><td class="fielddoc">
+<p>Set FBW in failsafe mode. </p>
 </td></tr>
 </table>
 
@@ -455,11 +463,11 @@ Transport over communication line (PPRZ) </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="intermcu__ap_8c_source.html#l00064">64</a> of file <a class="el" href="intermcu__ap_8c_source.html">intermcu_ap.c</a>.</p>
+<p>Definition at line <a class="el" href="intermcu__ap_8c_source.html#l00071">71</a> of file <a class="el" href="intermcu__ap_8c_source.html">intermcu_ap.c</a>.</p>
 
-<p>References <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="telemetry_8c_source.html#l00046">register_periodic_telemetry()</a>, <a class="el" href="intermcu__ap_8c_source.html#l00055">send_status()</a>, <a class="el" href="sys__time_8c_source.html#l00043">sys_time_register_timer()</a>, and <a class="el" href="intermcu_8h_source.html#l00070">intermcu_t::transport</a>.</p>
+<p>References <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="intermcu__fbw_8c_source.html#l00227">gps_cb()</a>, <a class="el" href="gps_8h_source.html#l00037">GPS_FIX_NONE</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00201">GPS_IMCU_ID</a>, <a class="el" href="intermcu__fbw_8c_source.html#l00074">IMCU_GPS_ID</a>, <a class="el" href="telemetry_8c_source.html#l00046">register_periodic_telemetry()</a>, <a class="el" href="intermcu__ap_8c_source.html#l00062">send_status()</a>, <a class="el" href="sys__time_8c_source.html#l00043">sys_time_register_timer()</a>, and <a class="el" href="intermcu_8h_source.html#l00072">intermcu_t::transport</a>.</p>
 
-<p>Referenced by <a class="el" href="rotorcraft_2main_8c_source.html#l00158">main_init()</a>.</p>
+<p>Referenced by <a class="el" href="rotorcraft_2main__ap_8c_source.html#l00116">main_init()</a>.</p>
 
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -468,7 +476,7 @@ Transport over communication line (PPRZ) </td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="intermcu_8h_af5ff84589199efa9195c642a64024b40_cgraph.png" border="0" usemap="#intermcu_8h_af5ff84589199efa9195c642a64024b40_cgraph" alt=""/></div>
 <map name="intermcu_8h_af5ff84589199efa9195c642a64024b40_cgraph" id="intermcu_8h_af5ff84589199efa9195c642a64024b40_cgraph">
-<area shape="rect" id="node2" href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function. " alt="" coords="159,5,356,32"/><area shape="rect" id="node3" href="intermcu__ap_8c.html#a261bd78437dcd415525d72019aac4a89" title="send_status" alt="" coords="207,56,307,83"/><area shape="rect" id="node4" href="sys__time_8c.html#a3ababed8b6819006aaf919a663efe8cd" title="Register a new system timer. " alt="" coords="169,107,345,133"/><area shape="rect" id="node5" href="sys__time_8h.html#a2894f16d75a4d3c6ad1449d7bba85406" title="sys_time_ticks_of_sec" alt="" coords="404,107,567,133"/></map>
+<area shape="rect" id="node2" href="intermcu__fbw_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title="gps_cb" alt="" coords="224,5,291,32"/><area shape="rect" id="node3" href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function. " alt="" coords="159,56,356,83"/><area shape="rect" id="node4" href="intermcu__ap_8c.html#a261bd78437dcd415525d72019aac4a89" title="send_status" alt="" coords="207,107,307,133"/><area shape="rect" id="node5" href="sys__time_8c.html#a3ababed8b6819006aaf919a663efe8cd" title="Register a new system timer. " alt="" coords="169,157,345,184"/><area shape="rect" id="node6" href="sys__time_8h.html#a2894f16d75a4d3c6ad1449d7bba85406" title="sys_time_ticks_of_sec" alt="" coords="404,157,567,184"/></map>
 </div>
 </p>
 
@@ -479,7 +487,7 @@ Transport over communication line (PPRZ) </td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="intermcu_8h_af5ff84589199efa9195c642a64024b40_icgraph.png" border="0" usemap="#intermcu_8h_af5ff84589199efa9195c642a64024b40_icgraph" alt=""/></div>
 <map name="intermcu_8h_af5ff84589199efa9195c642a64024b40_icgraph" id="intermcu_8h_af5ff84589199efa9195c642a64024b40_icgraph">
-<area shape="rect" id="node2" href="rotorcraft_2main__fbw_8h.html#a092df25ac46a6a4ca72c023d8821f9b2" title="Main initialization. " alt="" coords="159,5,239,32"/><area shape="rect" id="node3" href="rotorcraft_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="287,5,341,32"/></map>
+<area shape="rect" id="node2" href="rotorcraft_2main__fbw_8h.html#a3719465edd56d2b587a6b340f29e4f90" title="Main initialization. " alt="" coords="159,5,239,32"/></map>
 </div>
 </p>
 
@@ -499,20 +507,31 @@ Transport over communication line (PPRZ) </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="intermcu__ap_8c_source.html#l00074">74</a> of file <a class="el" href="intermcu__ap_8c_source.html">intermcu_ap.c</a>.</p>
+<p>Definition at line <a class="el" href="intermcu__ap_8c_source.html#l00090">90</a> of file <a class="el" href="intermcu__ap_8c_source.html">intermcu_ap.c</a>.</p>
 
-<p>References <a class="el" href="intermcu_8h_source.html#l00046">INTERMCU_LOST</a>, <a class="el" href="intermcu_8h_source.html#l00038">INTERMCU_LOST_CNT</a>, <a class="el" href="intermcu_8h_source.html#l00071">intermcu_t::status</a>, and <a class="el" href="intermcu_8h_source.html#l00072">intermcu_t::time_since_last_frame</a>.</p>
+<p>References <a class="el" href="gps_8c_source.html#l00270">gps_periodic_check()</a>, <a class="el" href="intermcu_8h_source.html#l00046">INTERMCU_LOST</a>, <a class="el" href="intermcu_8h_source.html#l00038">INTERMCU_LOST_CNT</a>, <a class="el" href="intermcu_8h_source.html#l00073">intermcu_t::status</a>, and <a class="el" href="intermcu_8h_source.html#l00074">intermcu_t::time_since_last_frame</a>.</p>
 
-<p>Referenced by <a class="el" href="rotorcraft_2main__fbw_8c_source.html#l00188">main_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="rotorcraft_2main__ap_8c_source.html#l00235">main_periodic()</a>.</p>
 
 <p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="intermcu_8h_a0bb20e4869889dcee9e118f83957f92a_cgraph.png" border="0" usemap="#intermcu_8h_a0bb20e4869889dcee9e118f83957f92a_cgraph" alt=""/></div>
+<map name="intermcu_8h_a0bb20e4869889dcee9e118f83957f92a_cgraph" id="intermcu_8h_a0bb20e4869889dcee9e118f83957f92a_cgraph">
+<area shape="rect" id="node2" href="gps_8c.html#ae631bcedc95daefc88cba7e639b38f19" title="Periodic GPS check. " alt="" coords="189,5,336,32"/></map>
+</div>
+</p>
+
+<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="intermcu_8h_a0bb20e4869889dcee9e118f83957f92a_icgraph.png" border="0" usemap="#intermcu_8h_a0bb20e4869889dcee9e118f83957f92a_icgraph" alt=""/></div>
 <map name="intermcu_8h_a0bb20e4869889dcee9e118f83957f92a_icgraph" id="intermcu_8h_a0bb20e4869889dcee9e118f83957f92a_icgraph">
-<area shape="rect" id="node2" href="rotorcraft_2main__fbw_8c.html#a4fee35a9ab2c517bde9f598c265222b0" title="main_periodic" alt="" coords="189,5,300,32"/><area shape="rect" id="node3" href="rotorcraft_2main__fbw_8c.html#acfa2a521a46d9beb8a3fa77bb0c9e407" title="handle_periodic_tasks" alt="" coords="348,5,511,32"/><area shape="rect" id="node4" href="rotorcraft_2main__fbw_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Real main function handling initialization, periodic&#45; and event functions. " alt="" coords="559,5,613,32"/></map>
+<area shape="rect" id="node2" href="rotorcraft_2main__fbw_8h.html#a81249e4ef19b8766982a6fe272d89bae" title="main_periodic" alt="" coords="189,5,300,32"/><area shape="rect" id="node3" href="rotorcraft_2main__fbw_8h.html#ab79bb049ce85bf2ed3a75c6b12c02bcb" title="handle_periodic_tasks" alt="" coords="348,5,511,32"/></map>
 </div>
 </p>
 
@@ -531,7 +550,7 @@ Transport over communication line (PPRZ) </td></tr>
 
 <p>Definition at line <a class="el" href="intermcu__ap_8c_source.html#l00041">41</a> of file <a class="el" href="intermcu__ap_8c_source.html">intermcu_ap.c</a>.</p>
 
-<p>Referenced by <a class="el" href="rotorcraft_2main__fbw_8c_source.html#l00244">fbw_on_rc_frame()</a>, <a class="el" href="rotorcraft_2main__fbw_8c_source.html#l00152">fbw_safety_check()</a>, <a class="el" href="rotorcraft_2main__fbw_8c_source.html#l00188">main_periodic()</a>, <a class="el" href="opa__controller__ap_8c_source.html#l00048">opa_controller_periodic()</a>, and <a class="el" href="telemetry__intermcu__ap_8c_source.html#l00103">telemetry_intermcu_send_message()</a>.</p>
+<p>Referenced by <a class="el" href="rotorcraft_2main__fbw_8c_source.html#l00231">fbw_on_rc_frame()</a>, <a class="el" href="rotorcraft_2main__fbw_8c_source.html#l00139">fbw_safety_check()</a>, <a class="el" href="rotorcraft_2main__fbw_8c_source.html#l00175">main_periodic()</a>, <a class="el" href="opa__controller__ap_8c_source.html#l00048">opa_controller_periodic()</a>, <a class="el" href="telemetry__intermcu__fbw_8c_source.html#l00070">telemetry_intermcu_event()</a>, and <a class="el" href="telemetry__intermcu__ap_8c_source.html#l00100">telemetry_intermcu_send_message()</a>.</p>
 
 </div>
 </div>
@@ -541,7 +560,7 @@ Transport over communication line (PPRZ) </td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="intermcu_8h.html">intermcu.h</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:02:14 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:02:43 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

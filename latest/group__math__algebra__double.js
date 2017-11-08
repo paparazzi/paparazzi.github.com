@@ -50,6 +50,7 @@ var group__math__algebra__double =
     [ "double_rmat_of_eulers", "group__math__algebra__double.html#ga34c8c13c374e63e2a2d73bb7ae77dbd0", null ],
     [ "double_rmat_of_eulers_321", "group__math__algebra__double.html#ga8f4ac8fb23be425a0301fc922b3c2644", null ],
     [ "double_rmat_of_quat", "group__math__algebra__double.html#gaf9ed28addc83df34dd7855eed36d7163", null ],
+    [ "double_rmat_transp_vmult", "group__math__algebra__double.html#gabfe53cd3e22461cf03d3b6d196e6f99f", null ],
     [ "double_rmat_vmult", "group__math__algebra__double.html#ga41f40d50897efb7e9fca2c383f23b53e", null ],
     [ "double_vect3_norm", "group__math__algebra__double.html#gae5087aa382f54a889f1786194651a2b6", null ],
     [ "double_vect3_normalize", "group__math__algebra__double.html#ga534b127a8508dc0c012db8db9378af0d", null ]

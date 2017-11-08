@@ -1,5 +1,6 @@
 var dir_29343b6f5fcd4b75a5dfbb985ff56864 =
 [
+    [ "qr_solve", "dir_879cab577fd2f9083eff958fc2dd0263.html", "dir_879cab577fd2f9083eff958fc2dd0263" ],
     [ "pprz_algebra.h", "pprz__algebra_8h.html", "pprz__algebra_8h" ],
     [ "pprz_algebra_double.c", "pprz__algebra__double_8c.html", "pprz__algebra__double_8c" ],
     [ "pprz_algebra_double.h", "pprz__algebra__double_8h.html", "pprz__algebra__double_8h" ],
@@ -27,6 +28,7 @@ var dir_29343b6f5fcd4b75a5dfbb985ff56864 =
     [ "pprz_polyfit_float.h", "pprz__polyfit__float_8h.html", "pprz__polyfit__float_8h" ],
     [ "pprz_rk_float.h", "pprz__rk__float_8h.html", "pprz__rk__float_8h" ],
     [ "pprz_simple_matrix.h", "pprz__simple__matrix_8h.html", "pprz__simple__matrix_8h" ],
+    [ "pprz_stat.c", "pprz__stat_8c.html", "pprz__stat_8c" ],
     [ "pprz_stat.h", "pprz__stat_8h.html", "pprz__stat_8h" ],
     [ "pprz_trig_int.c", "pprz__trig__int_8c.html", "pprz__trig__int_8c" ],
     [ "pprz_trig_int.h", "pprz__trig__int_8h.html", "pprz__trig__int_8h" ]

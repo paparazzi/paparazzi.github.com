@@ -1,11 +1,18 @@
 var orange__avoider_8c =
 [
+    [ "ORANGE_AVOIDER_VERBOSE", "orange__avoider_8c.html#af115de1f0ff11c264ed97e821b2b468e", null ],
+    [ "PRINT", "orange__avoider_8c.html#aee52c6162d4b084290ed778856a1ded4", null ],
+    [ "VERBOSE_PRINT", "orange__avoider_8c.html#a01535af7e50005fd099fe06f94865e54", null ],
+    [ "calculateForwards", "orange__avoider_8c.html#a4e5570532574857283bde2f3437c5375", null ],
     [ "chooseRandomIncrementAvoidance", "orange__avoider_8c.html#ac55d6c1ab8e8ddf0e79a28c68a396218", null ],
-    [ "increase_nav_heading", "orange__avoider_8c.html#aa6d48f8b8250445377a818bcaacf078a", null ],
-    [ "moveWaypointForwards", "orange__avoider_8c.html#afab2a221b46b38a8ad645bdff564c4fc", null ],
+    [ "increase_nav_heading", "orange__avoider_8c.html#ab90ef5d5cb3a3b87eb0851792fdfc682", null ],
+    [ "moveWaypoint", "orange__avoider_8c.html#ab9e9ec09110cd9cd8a03cb04532db57a", null ],
+    [ "moveWaypointForward", "orange__avoider_8c.html#a72ecd5c8947f92bac5d0c6967dbec35b", null ],
     [ "orange_avoider_init", "orange__avoider_8c.html#af9deacb2a917c564aa2321655d459ceb", null ],
     [ "orange_avoider_periodic", "orange__avoider_8c.html#a518e130cd4210428c9772cb104c78731", null ],
-    [ "incrementForAvoidance", "orange__avoider_8c.html#a295c960ec4ffa6bcf14475d4bf6c7db8", null ],
+    [ "incrementForAvoidance", "orange__avoider_8c.html#abdbc6db3f82c39dd7137e6d0d0614f30", null ],
+    [ "maxDistance", "orange__avoider_8c.html#af22920f041b5db58118ffb07b37e9a25", null ],
     [ "safeToGoForwards", "orange__avoider_8c.html#a18affac4ddcca42c8462155a4e9fba1a", null ],
+    [ "trajectoryConfidence", "orange__avoider_8c.html#a337f54ebc2ec76b14365163bc7f5f7e5", null ],
     [ "tresholdColorCount", "orange__avoider_8c.html#aad479a8c248d47e48397860a33677d2a", null ]
 ];

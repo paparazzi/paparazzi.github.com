@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -130,6 +130,11 @@ Configure Options</h2>
 <li><b>name:</b> <code>SDLOGGER_DIRECT_CONTROL_SWITCH</code> <b>value:</b> <em>RADIO_AUX2</em></li>
 <li><b>name:</b> <code>LOGGER_LED</code> <b>value:</b> <em>none</em></li>
 </ul>
+<h1><a class="anchor" id="autoloads__logger_sd_spi_direct"></a>
+Auto-loaded modules</h1>
+<p>The following modules are automatically loaded (just as if you had added them in the airframe file)</p><ul>
+<li><a class="el" href="module__pprzlog.html">pprzlog module</a> </li>
+</ul>
 <h1><a class="anchor" id="functions__logger_sd_spi_direct"></a>
 Module functions</h1>
 <h2><a class="anchor" id="init_functions"></a>
@@ -208,6 +213,7 @@ Raw logger_sd_spi_direct.xml file:</h2>
 <div class="line">      &lt;/dl_settings&gt;</div>
 <div class="line">    &lt;/dl_settings&gt;</div>
 <div class="line">  &lt;/settings&gt;</div>
+<div class="line">  &lt;autoload name=&quot;pprzlog&quot;/&gt;</div>
 <div class="line">  &lt;header&gt;</div>
 <div class="line">    &lt;file name=&quot;sdlogger_spi_direct.h&quot;/&gt;</div>
 <div class="line">  &lt;/header&gt;</div>
@@ -221,7 +227,6 @@ Raw logger_sd_spi_direct.xml file:</h2>
 <div class="line">    &lt;configure name=&quot;LOGGER_LED&quot; default=&quot;none&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;LOGGER_LED&quot; value=&quot;$(LOGGER_LED)&quot; cond=&quot;ifneq ($(LOGGER_LED),none)&quot;/&gt;</div>
 <div class="line">    &lt;raw&gt;</div>
-<div class="line">        include $(CFG_SHARED)/sdlog.makefile</div>
 <div class="line">        include $(CFG_SHARED)/spi_master.makefile</div>
 <div class="line">    &lt;/raw&gt;</div>
 <div class="line"></div>
@@ -241,7 +246,7 @@ Raw logger_sd_spi_direct.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:02:19 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:02:50 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

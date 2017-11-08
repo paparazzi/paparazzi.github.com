@@ -2,6 +2,7 @@ var stm32_2led__hw_8h =
 [
     [ "_LED_EVAL", "stm32_2led__hw_8h.html#a5f0b98407430e3501fbb04d8c5c0c23d", null ],
     [ "LED_AFIO_REMAP", "stm32_2led__hw_8h.html#a81e459105e8418270a7bdff11dd6bc2f", null ],
+    [ "LED_DISABLE", "stm32_2led__hw_8h.html#a8883d7ef721064fc83a6817add5ad3a9", null ],
     [ "LED_GPIO", "stm32_2led__hw_8h.html#aa9479a9a1c2367d23cb3df268c826148", null ],
     [ "LED_GPIO_OFF", "stm32_2led__hw_8h.html#a710cbc02188af37e912d3c7e6610b641", null ],
     [ "LED_GPIO_ON", "stm32_2led__hw_8h.html#a62add46860282156818b02c2f31e22a7", null ],

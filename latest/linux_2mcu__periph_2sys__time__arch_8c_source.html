@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -251,9 +251,46 @@ $(document).ready(function(){initNavTree('linux_2mcu__periph_2sys__time__arch_8c
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    }</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;  }</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;}</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
+<div class="line"><a name="l00153"></a><span class="lineno"><a class="line" href="linux_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb">  153</a></span>&#160;<a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> <a class="code" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb">get_sys_time_usec</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;{</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  <span class="comment">/* get current time */</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  <span class="keyword">struct </span>timespec now;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  clock_gettime(CLOCK_MONOTONIC, &amp;now);</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  <span class="comment">/* time difference to startup */</span></div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  time_t d_sec = now.tv_sec - <a class="code" href="linux_2mcu__periph_2sys__time__arch_8c.html#a5beef6b18348610eb70fe7f7db46d6f0">startup_time</a>.tv_sec;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  <span class="keywordtype">long</span> d_nsec = now.tv_nsec - <a class="code" href="linux_2mcu__periph_2sys__time__arch_8c.html#a5beef6b18348610eb70fe7f7db46d6f0">startup_time</a>.tv_nsec;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;  <span class="comment">/* wrap if negative nanoseconds */</span></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  <span class="keywordflow">if</span> (d_nsec &lt; 0) {</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    d_sec -= 1;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    d_nsec += 1000000000L;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  }</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  <span class="keywordflow">return</span> d_sec * 1000000 + d_nsec/1000;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;}</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
+<div class="line"><a name="l00175"></a><span class="lineno"><a class="line" href="linux_2mcu__periph_2sys__time__arch_8c.html#ad3cb294b0d1d74dfb511534b36a17960">  175</a></span>&#160;<a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> <a class="code" href="chibios_2mcu__periph_2sys__time__arch_8c.html#ad3cb294b0d1d74dfb511534b36a17960">get_sys_time_msec</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;{</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  <span class="comment">/* get current time */</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;  <span class="keyword">struct </span>timespec now;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;  clock_gettime(CLOCK_MONOTONIC, &amp;now);</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;  <span class="comment">/* time difference to startup */</span></div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  time_t d_sec = now.tv_sec - <a class="code" href="linux_2mcu__periph_2sys__time__arch_8c.html#a5beef6b18348610eb70fe7f7db46d6f0">startup_time</a>.tv_sec;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  <span class="keywordtype">long</span> d_nsec = now.tv_nsec - <a class="code" href="linux_2mcu__periph_2sys__time__arch_8c.html#a5beef6b18348610eb70fe7f7db46d6f0">startup_time</a>.tv_nsec;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  <span class="comment">/* wrap if negative nanoseconds */</span></div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;  <span class="keywordflow">if</span> (d_nsec &lt; 0) {</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    d_sec -= 1;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    d_nsec += 1000000000L;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  }</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  <span class="keywordflow">return</span> d_sec * 1000 + d_nsec/1000000;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;}</div>
 <div class="ttc" id="linux_2mcu__periph_2sys__time__arch_8c_html_a69effd654e3a455f2f0bba7b270eab48"><div class="ttname"><a href="linux_2mcu__periph_2sys__time__arch_8c.html#a69effd654e3a455f2f0bba7b270eab48">sys_tick_handler</a></div><div class="ttdeci">static void sys_tick_handler(void)</div><div class="ttdef"><b>Definition:</b> <a href="linux_2mcu__periph_2sys__time__arch_8c_source.html#l00108">sys_time_arch.c:108</a></div></div>
 <div class="ttc" id="sys__time_8h_html_ab9fdc67ec3fff3769bebcd04e7ee86c2"><div class="ttname"><a href="sys__time_8h.html#ab9fdc67ec3fff3769bebcd04e7ee86c2">cpu_ticks_of_nsec</a></div><div class="ttdeci">static uint32_t cpu_ticks_of_nsec(uint32_t nsec)</div><div class="ttdef"><b>Definition:</b> <a href="sys__time_8h_source.html#l00188">sys_time.h:188</a></div></div>
 <div class="ttc" id="sys__time_8h_html_a8a4f7ef3bbea802072d4f4b618aae996"><div class="ttname"><a href="sys__time_8h.html#a8a4f7ef3bbea802072d4f4b618aae996">sys_time::resolution</a></div><div class="ttdeci">float resolution</div><div class="ttdoc">sys_time_timer resolution in seconds </div><div class="ttdef"><b>Definition:</b> <a href="sys__time_8h_source.html#l00077">sys_time.h:77</a></div></div>
+<div class="ttc" id="chibios_2mcu__periph_2sys__time__arch_8c_html_ad3cb294b0d1d74dfb511534b36a17960"><div class="ttname"><a href="chibios_2mcu__periph_2sys__time__arch_8c.html#ad3cb294b0d1d74dfb511534b36a17960">get_sys_time_msec</a></div><div class="ttdeci">uint32_t get_sys_time_msec(void)</div><div class="ttdoc">Get the time in milliseconds since startup. </div><div class="ttdef"><b>Definition:</b> <a href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00078">sys_time_arch.c:78</a></div></div>
 <div class="ttc" id="sys__time_8h_html_a3c72a20e3a9db56e14d54c8c7cbac0f3"><div class="ttname"><a href="sys__time_8h.html#a3c72a20e3a9db56e14d54c8c7cbac0f3">sys_time::cpu_ticks_per_sec</a></div><div class="ttdeci">uint32_t cpu_ticks_per_sec</div><div class="ttdoc">cpu ticks per second </div><div class="ttdef"><b>Definition:</b> <a href="sys__time_8h_source.html#l00080">sys_time.h:80</a></div></div>
 <div class="ttc" id="linux_2mcu__periph_2sys__time__arch_8c_html_aeebc5d5fb02a87260cedd423fb3cc039"><div class="ttname"><a href="linux_2mcu__periph_2sys__time__arch_8c.html#aeebc5d5fb02a87260cedd423fb3cc039">NSEC_OF_SEC</a></div><div class="ttdeci">#define NSEC_OF_SEC(sec)</div><div class="ttdef"><b>Definition:</b> <a href="linux_2mcu__periph_2sys__time__arch_8c_source.html#l00048">sys_time_arch.c:48</a></div></div>
 <div class="ttc" id="linux_2mcu__periph_2sys__time__arch_8c_html_a2e9913da251a9ce6c35f3a8a5b3ca23e"><div class="ttname"><a href="linux_2mcu__periph_2sys__time__arch_8c.html#a2e9913da251a9ce6c35f3a8a5b3ca23e">sys_time_thread_main</a></div><div class="ttdeci">void * sys_time_thread_main(void *data)</div><div class="ttdef"><b>Definition:</b> <a href="linux_2mcu__periph_2sys__time__arch_8c_source.html#l00050">sys_time_arch.c:50</a></div></div>
@@ -266,7 +303,7 @@ $(document).ready(function(){initNavTree('linux_2mcu__periph_2sys__time__arch_8c
 <div class="ttc" id="types_8h_html_a06896e8c53f721507066c079052171f8"><div class="ttname"><a href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a></div><div class="ttdeci">unsigned long uint32_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00018">types.h:18</a></div></div>
 <div class="ttc" id="sys__time_8h_html_abbf23b4993e74efe48aef5d7c8bfe0dd"><div class="ttname"><a href="sys__time_8h.html#abbf23b4993e74efe48aef5d7c8bfe0dd">sys_time_timer::end_time</a></div><div class="ttdeci">uint32_t end_time</div><div class="ttdoc">in SYS_TIME_TICKS </div><div class="ttdef"><b>Definition:</b> <a href="sys__time_8h_source.html#l00067">sys_time.h:67</a></div></div>
 <div class="ttc" id="sys__time_8h_html_a8654f589772b3eef22ab59594c97e513"><div class="ttname"><a href="sys__time_8h.html#a8654f589772b3eef22ab59594c97e513">sys_time::nb_sec_rem</a></div><div class="ttdeci">volatile uint32_t nb_sec_rem</div><div class="ttdoc">remainder of seconds since startup in CPU_TICKS </div><div class="ttdef"><b>Definition:</b> <a href="sys__time_8h_source.html#l00073">sys_time.h:73</a></div></div>
-<div class="ttc" id="chibios_2led__hw_8h_html_afd0bf6b0eebb00641365dc389a9fc449"><div class="ttname"><a href="chibios_2led__hw_8h.html#afd0bf6b0eebb00641365dc389a9fc449">LED_TOGGLE</a></div><div class="ttdeci">#define LED_TOGGLE(i)</div><div class="ttdef"><b>Definition:</b> <a href="chibios_2led__hw_8h_source.html#l00051">led_hw.h:51</a></div></div>
+<div class="ttc" id="chibios_2led__hw_8h_html_afd0bf6b0eebb00641365dc389a9fc449"><div class="ttname"><a href="chibios_2led__hw_8h.html#afd0bf6b0eebb00641365dc389a9fc449">LED_TOGGLE</a></div><div class="ttdeci">#define LED_TOGGLE(i)</div><div class="ttdef"><b>Definition:</b> <a href="chibios_2led__hw_8h_source.html#l00052">led_hw.h:52</a></div></div>
 <div class="ttc" id="sys__time_8h_html_ac9099131f9a2e477427758d79e220544"><div class="ttname"><a href="sys__time_8h.html#ac9099131f9a2e477427758d79e220544">sys_time::timer</a></div><div class="ttdeci">struct sys_time_timer timer[SYS_TIME_NB_TIMER]</div><div class="ttdef"><b>Definition:</b> <a href="sys__time_8h_source.html#l00075">sys_time.h:75</a></div></div>
 <div class="ttc" id="sys__time_8h_html_a2894f16d75a4d3c6ad1449d7bba85406"><div class="ttname"><a href="sys__time_8h.html#a2894f16d75a4d3c6ad1449d7bba85406">sys_time_ticks_of_sec</a></div><div class="ttdeci">static uint32_t sys_time_ticks_of_sec(float seconds)</div><div class="ttdef"><b>Definition:</b> <a href="sys__time_8h_source.html#l00138">sys_time.h:138</a></div></div>
 <div class="ttc" id="sys__time_8h_html_a2e86fdabba99a0ac8f6409e0d1e694a3"><div class="ttname"><a href="sys__time_8h.html#a2e86fdabba99a0ac8f6409e0d1e694a3">sys_time::nb_sec</a></div><div class="ttdeci">volatile uint32_t nb_sec</div><div class="ttdoc">full seconds since startup </div><div class="ttdef"><b>Definition:</b> <a href="sys__time_8h_source.html#l00072">sys_time.h:72</a></div></div>
@@ -278,6 +315,7 @@ $(document).ready(function(){initNavTree('linux_2mcu__periph_2sys__time__arch_8c
 <div class="ttc" id="sys__time_8h_html_ab5a17fcb1104999c805fb6f555b15b19"><div class="ttname"><a href="sys__time_8h.html#ab5a17fcb1104999c805fb6f555b15b19">SYS_TIME_NB_TIMER</a></div><div class="ttdeci">#define SYS_TIME_NB_TIMER</div><div class="ttdef"><b>Definition:</b> <a href="sys__time_8h_source.html#l00040">sys_time.h:40</a></div></div>
 <div class="ttc" id="rt__priority_8h_html_a714c7483d11b82772f9184258793e5a1"><div class="ttname"><a href="rt__priority_8h.html#a714c7483d11b82772f9184258793e5a1">get_rt_prio</a></div><div class="ttdeci">static int get_rt_prio(int prio)</div><div class="ttdef"><b>Definition:</b> <a href="rt__priority_8h_source.html#l00032">rt_priority.h:32</a></div></div>
 <div class="ttc" id="sys__time_8h_html_a3fe39118ebee61c56c1e065f5426b14d"><div class="ttname"><a href="sys__time_8h.html#a3fe39118ebee61c56c1e065f5426b14d">sys_time_timer::duration</a></div><div class="ttdeci">uint32_t duration</div><div class="ttdoc">in SYS_TIME_TICKS </div><div class="ttdef"><b>Definition:</b> <a href="sys__time_8h_source.html#l00068">sys_time.h:68</a></div></div>
+<div class="ttc" id="chibios_2mcu__periph_2sys__time__arch_8c_html_a7ddfef1f78a56c6b4c4c536b5d670bfb"><div class="ttname"><a href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb">get_sys_time_usec</a></div><div class="ttdeci">uint32_t get_sys_time_usec(void)</div><div class="ttdoc">Get the time in microseconds since startup. </div><div class="ttdef"><b>Definition:</b> <a href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00068">sys_time_arch.c:68</a></div></div>
 <div class="ttc" id="sys__time_8h_html_a46ccccbd8fdf3b1c359475fd05bebd0b"><div class="ttname"><a href="sys__time_8h.html#a46ccccbd8fdf3b1c359475fd05bebd0b">sys_time_ticks_of_usec</a></div><div class="ttdeci">static uint32_t sys_time_ticks_of_usec(uint32_t usec)</div><div class="ttdef"><b>Definition:</b> <a href="sys__time_8h_source.html#l00148">sys_time.h:148</a></div></div>
 <div class="ttc" id="chibios_2mcu__periph_2sys__time__arch_8c_html_a9b31c2feb846b96205ae20ea6883e1c4"><div class="ttname"><a href="chibios_2mcu__periph_2sys__time__arch_8c.html#a9b31c2feb846b96205ae20ea6883e1c4">sys_time_arch_init</a></div><div class="ttdeci">void sys_time_arch_init(void)</div><div class="ttdef"><b>Definition:</b> <a href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00049">sys_time_arch.c:49</a></div></div>
 <div class="ttc" id="sys__time_8h_html_a6afb6a9b84be1fe714c946b509585de9"><div class="ttname"><a href="sys__time_8h.html#a6afb6a9b84be1fe714c946b509585de9">sys_time::resolution_cpu_ticks</a></div><div class="ttdeci">uint32_t resolution_cpu_ticks</div><div class="ttdoc">sys_time_timer resolution in cpu ticks </div><div class="ttdef"><b>Definition:</b> <a href="sys__time_8h_source.html#l00079">sys_time.h:79</a></div></div>
@@ -288,7 +326,7 @@ $(document).ready(function(){initNavTree('linux_2mcu__periph_2sys__time__arch_8c
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_92fbf38b8c893a0928a3445a75d0ac01.html">linux</a></li><li class="navelem"><a class="el" href="dir_7cedabfb4d36d0fdf06823c7fd9084fc.html">mcu_periph</a></li><li class="navelem"><a class="el" href="linux_2mcu__periph_2sys__time__arch_8c.html">sys_time_arch.c</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:01:12 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:01:26 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -1,5 +1,6 @@
 var gps__ubx_8c =
 [
+    [ "DEBUG_PRINT", "gps__ubx_8c.html#a88edd2aa4feabff4af21a997d5d8aa23", null ],
     [ "GOT_CHECKSUM1", "gps__ubx_8c.html#a7a53eb7b7d725c83beee8dd21cb9f74f", null ],
     [ "GOT_CLASS", "gps__ubx_8c.html#a0073d28934a77070d07747d2944936e1", null ],
     [ "GOT_ID", "gps__ubx_8c.html#a8856577ec0bb8d2ded56dcbf465ebf84", null ],
@@ -15,9 +16,13 @@ var gps__ubx_8c =
     [ "GPS_UBX_ERR_OVERRUN", "gps__ubx_8c.html#a31567a4e7127d2caff45ae4a3c8f57b3", null ],
     [ "GPS_UBX_ERR_UNEXPECTED", "gps__ubx_8c.html#a2a445739849feb8372c804feacf01ee5", null ],
     [ "gps_ubx_ucenter_event", "gps__ubx_8c.html#ab05acbd0da9a2284e41c534e29ae87ca", null ],
+    [ "NAV_RELPOSNED_VERSION", "gps__ubx_8c.html#a446fa8e320404688cbf1d37b6acd3ac3", null ],
+    [ "RXM_RTCM_VERSION", "gps__ubx_8c.html#a7f011feaf5d047fb4deafb4e04a23e81", null ],
     [ "UNINIT", "gps__ubx_8c.html#a7668dedbc74a47bde384b2b911379073", null ],
+    [ "USE_GPS_UBX_RTCM", "gps__ubx_8c.html#a27b826b3932ddf870f82247aa5761b5d", null ],
     [ "UTM_HEM_NORTH", "gps__ubx_8c.html#a81b821d6b2b90cd4dd34b36833f667a7", null ],
     [ "UTM_HEM_SOUTH", "gps__ubx_8c.html#a32e3449d116d85cc44da6f9fbd9ff871", null ],
+    [ "gps_ublox_write", "gps__ubx_8c.html#a5e37a79ea44f9e7ab1428c5096047794", null ],
     [ "gps_ubx_event", "gps__ubx_8c.html#a8384aab04d3a0e824cf5a71403515730", null ],
     [ "gps_ubx_init", "gps__ubx_8c.html#ab186501d688a68a9911c601caf4d853c", null ],
     [ "gps_ubx_msg", "gps__ubx_8c.html#ab3be7fdb9eae93ba80f43b848cdb7416", null ],
@@ -29,5 +34,6 @@ var gps__ubx_8c =
     [ "ubx_send_cfg_rst", "gps__ubx_8c.html#a550add37b4f40e19d00421d0b6bceb3c", null ],
     [ "ubx_trailer", "gps__ubx_8c.html#a11d12878703b9c555fc19e5137a308e4", null ],
     [ "gps_ubx", "gps__ubx_8c.html#a2b88e29de56e1f30ae0447c5488b4e66", null ],
-    [ "gps_ubx_time_sync", "gps__ubx_8c.html#adbb7f9a44a3c5e3ca7d7fe69079091ba", null ]
+    [ "gps_ubx_time_sync", "gps__ubx_8c.html#adbb7f9a44a3c5e3ca7d7fe69079091ba", null ],
+    [ "safeToInject", "gps__ubx_8c.html#a826e9b898596e13a7e4bba559254fee4", null ]
 ];

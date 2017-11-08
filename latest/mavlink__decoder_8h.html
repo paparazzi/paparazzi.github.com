@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -200,7 +200,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a11c509459ed3de2c4812ca163b095cb3"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mavlink__decoder_8h.html#a11c509459ed3de2c4812ca163b095cb3">mavlink_crc_calculate</a> (const <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *pBuffer, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> length)</td></tr>
 <tr class="memdesc:a11c509459ed3de2c4812ca163b095cb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the X.25 checksum on a byte buffer.  <a href="#a11c509459ed3de2c4812ca163b095cb3">More...</a><br /></td></tr>
 <tr class="separator:a11c509459ed3de2c4812ca163b095cb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25eeab8c2d4bf1615309f5c913d956ab"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mavlink__decoder_8h.html#a25eeab8c2d4bf1615309f5c913d956ab">mavlink_register_msg</a> (struct <a class="el" href="mavlink__decoder_8h.html#structmavlink__transport">mavlink_transport</a> *t, struct <a class="el" href="structmavlink__msg__req.html">mavlink_msg_req</a> *<a class="el" href="px4flow_8c.html#a11dd1089b4ce30528383cfa24a3c6c23">req</a>)</td></tr>
+<tr class="memitem:a25eeab8c2d4bf1615309f5c913d956ab"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mavlink__decoder_8h.html#a25eeab8c2d4bf1615309f5c913d956ab">mavlink_register_msg</a> (struct <a class="el" href="mavlink__decoder_8h.html#structmavlink__transport">mavlink_transport</a> *t, struct <a class="el" href="structmavlink__msg__req.html">mavlink_msg_req</a> *req)</td></tr>
 <tr class="memdesc:a25eeab8c2d4bf1615309f5c913d956ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a callback for a mavlink message.  <a href="#a25eeab8c2d4bf1615309f5c913d956ab">More...</a><br /></td></tr>
 <tr class="separator:a25eeab8c2d4bf1615309f5c913d956ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57cda9459960272cbca0c1e75879bf15"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mavlink__decoder_8h.html#a57cda9459960272cbca0c1e75879bf15">parse_mavlink</a> (struct <a class="el" href="mavlink__decoder_8h.html#structmavlink__transport">mavlink_transport</a> *t, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> c)</td></tr>
@@ -787,9 +787,9 @@ trans</td>
 
 <p>Definition at line <a class="el" href="mavlink__decoder_8h_source.html#l00163">163</a> of file <a class="el" href="mavlink__decoder_8h_source.html">mavlink_decoder.h</a>.</p>
 
-<p>References <a class="el" href="mavlink__decoder_8h_source.html#l00135">mavlink_msg_req::next</a>, <a class="el" href="px4flow_8c_source.html#l00046">req</a>, and <a class="el" href="mavlink__decoder_8h_source.html#l00148">mavlink_transport::req</a>.</p>
+<p>References <a class="el" href="mavlink__decoder_8h_source.html#l00135">mavlink_msg_req::next</a>, and <a class="el" href="mavlink__decoder_8h_source.html#l00148">mavlink_transport::req</a>.</p>
 
-<p>Referenced by <a class="el" href="px4flow_8c_source.html#l00069">px4flow_init()</a>.</p>
+<p>Referenced by <a class="el" href="px4flow_8c_source.html#l00132">px4flow_init()</a>.</p>
 
 <p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -897,7 +897,7 @@ trans</td>
 
 <p>Definition at line <a class="el" href="mavlink__decoder_8c_source.html#l00029">29</a> of file <a class="el" href="mavlink__decoder_8c_source.html">mavlink_decoder.c</a>.</p>
 
-<p>Referenced by <a class="el" href="px4flow_8c_source.html#l00069">px4flow_init()</a>.</p>
+<p>Referenced by <a class="el" href="px4flow_8c_source.html#l00132">px4flow_init()</a>.</p>
 
 </div>
 </div>
@@ -907,7 +907,7 @@ trans</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_164c7aa663179b26059278e7f36078da.html">datalink</a></li><li class="navelem"><a class="el" href="mavlink__decoder_8h.html">mavlink_decoder.h</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:01:56 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:02:23 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

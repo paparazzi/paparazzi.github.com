@@ -1,5 +1,6 @@
 var video__usb__logger_8c =
 [
+    [ "VIDEO_USB_LOGGER_FPS", "video__usb__logger_8c.html#a513b43b4ffa70d39abed0047e7cc0e26", null ],
     [ "VIDEO_USB_LOGGER_PATH", "video__usb__logger_8c.html#ae0fbd2e4ce40e8a6163ffb91f53305c1", null ],
     [ "log_image", "video__usb__logger_8c.html#aca46474177c731189d75297b63fe71f4", null ],
     [ "save_shot_on_disk", "video__usb__logger_8c.html#abc8ecf0e87a6e3a49488238acc2ceee8", null ],

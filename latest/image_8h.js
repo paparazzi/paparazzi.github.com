@@ -4,6 +4,7 @@ var image_8h =
       [ "buf", "image_8h.html#a4af7d619f8367a3e68fbfad265546011", null ],
       [ "buf_idx", "image_8h.html#a9e1f174887c55e2810ce31dc7d6054b4", null ],
       [ "buf_size", "image_8h.html#a42e8d87861c2a899bd4090bacf58c9dd", null ],
+      [ "eulers", "image_8h.html#ab2ca2505bfc4164cb2ac8aa416fc522a", null ],
       [ "h", "image_8h.html#a8bcdc857e2b3c08194113808ca2af345", null ],
       [ "pprz_ts", "image_8h.html#a59340de20e4637957464e787b2c885ba", null ],
       [ "ts", "image_8h.html#a066ca30b1a6a8b33a24e79ed3d95d292", null ],
@@ -11,8 +12,11 @@ var image_8h =
       [ "w", "image_8h.html#aa3c13c99294ff126c4c019d5e799253e", null ]
     ] ],
     [ "point_t", "image_8h.html#structpoint__t", [
+      [ "count", "image_8h.html#aaa4259997b28b4d757f7bf42928e4ca6", null ],
       [ "x", "image_8h.html#a53790d3f42a710902f3dd1c21f7fcb38", null ],
-      [ "y", "image_8h.html#a80f418915de01685d364a9ce7038eae7", null ]
+      [ "x_sub", "image_8h.html#a4af89eca3b3cdd34b596623afee81ab9", null ],
+      [ "y", "image_8h.html#a80f418915de01685d364a9ce7038eae7", null ],
+      [ "y_sub", "image_8h.html#ae19dda5d9d7e48819560118bc96f622c", null ]
     ] ],
     [ "flow_t", "image_8h.html#structflow__t", [
       [ "flow_x", "image_8h.html#aab8ebddbe3203e4c019f47339e5e305c", null ],
@@ -41,7 +45,9 @@ var image_8h =
     [ "image_create", "image_8h.html#ab5cc0250c461b9d2f043e4884f6b9a53", null ],
     [ "image_difference", "image_8h.html#a946e57aea5ff8c79adee46cb2c72dd80", null ],
     [ "image_draw_line", "image_8h.html#a40fe37e1ba3df58796c2aa29e04e8567", null ],
+    [ "image_draw_line_color", "image_8h.html#a39d2c18c82e89a7ff9b2423a7cdc9366", null ],
     [ "image_free", "image_8h.html#aa09d6434519478ba26eab12a96d600ba", null ],
+    [ "image_gradient_pixel", "image_8h.html#a1cbeeba8965707f0e5e9cb1e256c70c5", null ],
     [ "image_gradients", "image_8h.html#a5b47fdb25a4d3b575a1a1e1960d5f5e3", null ],
     [ "image_multiply", "image_8h.html#afc5615de31e098e68a4d2e3b4b686a1b", null ],
     [ "image_show_flow", "image_8h.html#a94dcb784f31e65bdc562452321371a5f", null ],
@@ -51,6 +57,6 @@ var image_8h =
     [ "image_to_grayscale", "image_8h.html#a74a32006a620503a7ca62e5b2a86abd1", null ],
     [ "image_yuv422_colorfilt", "image_8h.html#aa5bba6b2f386abf2ac701492f6a48bc9", null ],
     [ "image_yuv422_downsample", "image_8h.html#a1504ec67c03ccbac95d53463d1000311", null ],
-    [ "pyramid_build", "image_8h.html#a87a13668c49abc1ee09544ba322d4ae0", null ],
+    [ "pyramid_build", "image_8h.html#a6656ee75c4f8c05dbebbab3fae1b332a", null ],
     [ "pyramid_next_level", "image_8h.html#a038faec3786d8baa2e38c7672129e276", null ]
 ];

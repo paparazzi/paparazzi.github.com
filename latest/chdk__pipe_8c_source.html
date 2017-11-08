@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -160,7 +160,7 @@ $(document).ready(function(){initNavTree('chdk__pipe_8c_source.html','');});
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="comment">/* Check if SHELL is started */</span></div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="chdk__pipe_8c.html#a2e76ced5cf617936f8a4a32377a123ac">popen2</a>(<a class="code" href="chdk__pipe_8c.html#a0db8a9b5ad5a66e4adc36d0ba68735c8">SHELL</a>, &amp;<a class="code" href="chdk__pipe_8c.html#abc8a6399186a2b36969c3794139afaad">fi</a>, &amp;<a class="code" href="chdk__pipe_8c.html#a67a6bf1b649a09da4a2df5ed5b83b67f">fo</a>) &lt;= 0) {</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    perror(<span class="stringliteral">&quot;Can&#39;t start SHELL&quot;</span>);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    exit(1);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="kremlib_8h.html#a2c0fc8fb2a170824c3e134b3e7a4a1e9">exit</a>(1);</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  }</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <a class="code" href="chdk__pipe_8c.html#a2f34a673c57aed8f653b7b2484c5fd82">wait_for_cmd</a>(10);</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
@@ -246,7 +246,7 @@ $(document).ready(function(){initNavTree('chdk__pipe_8c_source.html','');});
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    execl(<span class="stringliteral">&quot;/bin/sh&quot;</span>, <span class="stringliteral">&quot;sh&quot;</span>, <span class="stringliteral">&quot;-c&quot;</span>, command, NULL);</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    perror(<span class="stringliteral">&quot;execl&quot;</span>);</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    exit(1);</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <a class="code" href="kremlib_8h.html#a2c0fc8fb2a170824c3e134b3e7a4a1e9">exit</a>(1);</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  }</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  <span class="keywordflow">if</span> (infp == NULL) {</div>
@@ -266,6 +266,7 @@ $(document).ready(function(){initNavTree('chdk__pipe_8c_source.html','');});
 <div class="ttc" id="chdk__pipe_8c_html_ada74e7db007a68e763f20c17f2985356"><div class="ttname"><a href="chdk__pipe_8c.html#ada74e7db007a68e763f20c17f2985356">READ</a></div><div class="ttdeci">#define READ</div><div class="ttdef"><b>Definition:</b> <a href="chdk__pipe_8c_source.html#l00015">chdk_pipe.c:15</a></div></div>
 <div class="ttc" id="chdk__pipe_8c_html_af68f1c8cecaf1d585987112f45ffb6dc"><div class="ttname"><a href="chdk__pipe_8c.html#af68f1c8cecaf1d585987112f45ffb6dc">chdk_pipe_deinit</a></div><div class="ttdeci">void chdk_pipe_deinit(void)</div><div class="ttdoc">Deinitialize CHDK pipe. </div><div class="ttdef"><b>Definition:</b> <a href="chdk__pipe_8c_source.html#l00079">chdk_pipe.c:79</a></div></div>
 <div class="ttc" id="chdk__pipe_8h_html"><div class="ttname"><a href="chdk__pipe_8h.html">chdk_pipe.h</a></div></div>
+<div class="ttc" id="kremlib_8h_html_a2c0fc8fb2a170824c3e134b3e7a4a1e9"><div class="ttname"><a href="kremlib_8h.html#a2c0fc8fb2a170824c3e134b3e7a4a1e9">exit</a></div><div class="ttdeci">#define exit(_x)</div><div class="ttdef"><b>Definition:</b> <a href="kremlib_8h_source.html#l00243">kremlib.h:243</a></div></div>
 <div class="ttc" id="chdk__pipe_8c_html_adb412201e90d78c603b34f212f5a0b13"><div class="ttname"><a href="chdk__pipe_8c.html#adb412201e90d78c603b34f212f5a0b13">wait_for_img</a></div><div class="ttdeci">static void wait_for_img(char *filename, int timeout)</div><div class="ttdoc">Wait for the image to be available TODO: add timeout. </div><div class="ttdef"><b>Definition:</b> <a href="chdk__pipe_8c_source.html#l00102">chdk_pipe.c:102</a></div></div>
 <div class="ttc" id="chdk__pipe_8c_html_a2e76ced5cf617936f8a4a32377a123ac"><div class="ttname"><a href="chdk__pipe_8c.html#a2e76ced5cf617936f8a4a32377a123ac">popen2</a></div><div class="ttdeci">static pid_t popen2(const char *command, int *infp, int *outfp)</div><div class="ttdoc">Open a process with stdin and stdout. </div><div class="ttdef"><b>Definition:</b> <a href="chdk__pipe_8c_source.html#l00137">chdk_pipe.c:137</a></div></div>
 <div class="ttc" id="chdk__pipe_8c_html_a0db8a9b5ad5a66e4adc36d0ba68735c8"><div class="ttname"><a href="chdk__pipe_8c.html#a0db8a9b5ad5a66e4adc36d0ba68735c8">SHELL</a></div><div class="ttdeci">#define SHELL</div><div class="ttdef"><b>Definition:</b> <a href="chdk__pipe_8c_source.html#l00018">chdk_pipe.c:18</a></div></div>
@@ -282,7 +283,7 @@ $(document).ready(function(){initNavTree('chdk__pipe_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_9cd42eb44f1e76fa7c8c7cd9c9a53863.html">digital_cam</a></li><li class="navelem"><a class="el" href="dir_8d52ef0129d8a0d69e51e902d77cc0c9.html">catia</a></li><li class="navelem"><a class="el" href="chdk__pipe_8c.html">chdk_pipe.c</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:01:23 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:01:40 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -25,6 +25,6 @@ var nav__cube_8h =
     [ "nav_cube_SetSizeY", "nav__cube_8h.html#a77397a3774d20390bf36852f00836050", null ],
     [ "nav_cube_SetSizeZ", "nav__cube_8h.html#a5904cffa3e764f58bc55f6b024e616ef", null ],
     [ "nav_cube_run", "nav__cube_8h.html#a23cc3e8c63a992b5f8ab9ea8c1d026c5", null ],
-    [ "nav_cube_setup", "nav__cube_8h.html#a8c3f1e1037120b161a559b5228a08b6f", null ],
+    [ "nav_cube_setup", "nav__cube_8h.html#a8a2a2c79a078dfe8c314e3505a31e0b2", null ],
     [ "nav_cube", "nav__cube_8h.html#a1053eb993f28faa6154ed98338d86ae0", null ]
 ];

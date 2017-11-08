@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -79,6 +79,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow3" class="tabs2">
     <ul class="tablist">
       <li class="current"><a href="functions.html"><span>All</span></a></li>
+      <li><a href="functions_func.html"><span>Functions</span></a></li>
       <li><a href="functions_vars.html"><span>Variables</span></a></li>
     </ul>
   </div>
@@ -147,12 +148,12 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 
 <h3><a class="anchor" id="index_g"></a>- g -</h3><ul>
 <li>g1
-: <a class="el" href="stabilization__indi_8h.html#ad855728941014914e87de5b636ad1a7b">IndiEstimation</a>
-, <a class="el" href="stabilization__indi_8h.html#aa2fe003618b3cfe72fb27e370b7ac6df">IndiVariables</a>
+: <a class="el" href="stabilization__indi__simple_8h.html#ad855728941014914e87de5b636ad1a7b">IndiEstimation</a>
+, <a class="el" href="stabilization__indi__simple_8h.html#aa2fe003618b3cfe72fb27e370b7ac6df">IndiVariables</a>
 </li>
 <li>g2
-: <a class="el" href="stabilization__indi_8h.html#a04ea973ca2a45b258cb28f028b9d2913">IndiEstimation</a>
-, <a class="el" href="stabilization__indi_8h.html#abd520cccf7a02ac228329fc554c67fa2">IndiVariables</a>
+: <a class="el" href="stabilization__indi__simple_8h.html#a04ea973ca2a45b258cb28f028b9d2913">IndiEstimation</a>
+, <a class="el" href="stabilization__indi__simple_8h.html#abd520cccf7a02ac228329fc554c67fa2">IndiVariables</a>
 </li>
 <li>gain
 : <a class="el" href="ads1220_8h.html#a8dd28597a736ef35478e8c4bfe7b6d34">Ads1220Config</a>
@@ -173,7 +174,7 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 </li>
 <li>gains
 : <a class="el" href="ahrs__float__invariant_8h.html#ab519c5370ae87809e408a087ee457c07">AhrsFloatInv</a>
-, <a class="el" href="guidance__h_8h.html#a556a1701ca546e04b4dc36a2d0694b62">HorizontalGuidance</a>
+, <a class="el" href="rotorcraft_2guidance_2guidance__h_8h.html#a556a1701ca546e04b4dc36a2d0694b62">HorizontalGuidance</a>
 , <a class="el" href="ins__float__invariant_8h.html#a4d4ffb3237722e8857fa3ef83fc81816">InsFloatInv</a>
 </li>
 <li>gam_sensor_id
@@ -181,6 +182,16 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 </li>
 <li>gamma_corrector
 : <a class="el" href="libisp_8c.html#ad08537cc3fc235615c3240408dc9ed4f">avi_isp_offsets</a>
+, <a class="el" href="libisp_8h.html#aaafc30868139cfec3d89327714eafd5b">libisp_config</a>
+</li>
+<li>gc_bv_lut
+: <a class="el" href="libisp_8h.html#a61a015045883beae4fd081ff32654acf">libisp_config</a>
+</li>
+<li>gc_gu_lut
+: <a class="el" href="libisp_8h.html#a0c449a50a7c3628b637ce661472dd82a">libisp_config</a>
+</li>
+<li>gc_ry_lut
+: <a class="el" href="libisp_8h.html#a20a209b2b0998aaa33a94593388b97e4">libisp_config</a>
 </li>
 <li>gCalStatus
 : <a class="el" href="imu__chimu_8h.html#aef84e707b8e8fbf399dbdbc3fdd4e903">CHIMU_PARSER_DATA</a>
@@ -221,8 +232,17 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <li>general_error_number
 : <a class="el" href="hott__gam_8h.html#ae9ccfa76e27a105f88ef2b4468d80826">HOTT_GAM_MSG</a>
 </li>
+<li>get_points()
+: <a class="el" href="classmesonh_1_1mesonh__atmosphere_1_1MesoNHAtmosphere.html#ae5f06aa0528197094a4804c8d74ea7d8">mesonh.mesonh_atmosphere.MesoNHAtmosphere</a>
+</li>
+<li>get_wind()
+: <a class="el" href="classmesonh_1_1mesonh__atmosphere_1_1MesoNHAtmosphere.html#ac31674ede2483a64cb5ba2e71d3ab20c">mesonh.mesonh_atmosphere.MesoNHAtmosphere</a>
+</li>
 <li>gibbs_cor
 : <a class="el" href="ahrs__float__mlkf_8h.html#a8b9b8f512d62e94fa204d788467406e3">AhrsMlkf</a>
+</li>
+<li>gnssFixOK
+: <a class="el" href="gps_8h.html#a36f2e6dddae1df1155683822e73c3d4d">GpsRelposNED</a>
 </li>
 <li>got_first_img
 : <a class="el" href="opticflow__calculator_8h.html#a50177a5e749edc0bdc8ea6a33fee44ac">opticflow_t</a>
@@ -244,6 +264,12 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <li>gps_course_valid
 : <a class="el" href="ahrs__float__dcm_8h.html#a0e92ccb86ece01180a52a4cd7da0860a">AhrsFloatDCM</a>
 </li>
+<li>gps_dw1000
+: <a class="el" href="dw1000__arduino_8c.html#a744f287a99afe59400c50903e02e0f38">DW1000</a>
+</li>
+<li>gps_fix
+: <a class="el" href="vn200__serial_8h.html#a9bacb260e38befb1008eae59075a4cd8">VNData</a>
+</li>
 <li>gps_nb_ovrn
 : <a class="el" href="gps__nmea_8h.html#a9c077c9ee13244ae940a4c4b1a8b7b3d">GpsNmea</a>
 </li>
@@ -261,8 +287,17 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 : <a class="el" href="avi__isp__green__imbalance_8h.html#ac1eacc535d9c87e2e6edc6b3ce033e45">avi_isp_green_imbalance_green_blue_coeff_mem_regs</a>
 , <a class="el" href="avi__isp__lens__shading__correction_8h.html#a5a423c57abf50d7a9fc3802f8f5c3c2a">avi_isp_lens_shading_correction_green_coeff_mem_regs</a>
 </li>
+<li>green_imbalance
+: <a class="el" href="libisp_8h.html#ab5375c71f36ddb0b933a8490b399f64d">libisp_config</a>
+</li>
 <li>green_variation
 : <a class="el" href="avi__isp__chromatic__aberration_8h.html#afe88ee52b3d3c02981a5d4863dd20593">avi_isp_chromatic_aberration_regs</a>
+</li>
+<li>grid_coordinates
+: <a class="el" href="classmesonh_1_1mesonh__atmosphere_1_1MesoNHAtmosphere.html#a96c98f0264f176123e4a969fd0f0562e">mesonh.mesonh_atmosphere.MesoNHAtmosphere</a>
+</li>
+<li>grid_shape
+: <a class="el" href="classmesonh_1_1mesonh__atmosphere_1_1MesoNHAtmosphere.html#ab4bbf3fd91625dd8ed1cc10b35e0d7d0">mesonh.mesonh_atmosphere.MesoNHAtmosphere</a>
 </li>
 <li>grid_x
 : <a class="el" href="nav__cube_8h.html#a96eda6e13ea2cc1e1763745892c20569">NavCube</a>
@@ -270,8 +305,19 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <li>grid_z
 : <a class="el" href="nav__cube_8h.html#ad7637c9fa919586f3ff632e0ce9354a7">NavCube</a>
 </li>
+<li>grim_gb
+: <a class="el" href="libisp_8h.html#aca12d83f56fae57a1d380c61ef385972">libisp_config</a>
+</li>
+<li>grim_gr
+: <a class="el" href="libisp_8h.html#a228b5300e977a0897d8db230a5147713">libisp_config</a>
+</li>
+<li>ground_detected
+: <a class="el" href="autopilot_8h.html#a1154041b9d6cf2833d5e8748b66ab8e2">pprz_autopilot</a>
+</li>
 <li>ground_distance
 : <a class="el" href="px4flow_8h.html#ae08cffa1b3ed301abd6e606e0894c666">mavlink_optical_flow</a>
+, <a class="el" href="px4flow__i2c_8h.html#a5976e01854543a1db5a101b39dc548ec">px4flow_i2c_frame</a>
+, <a class="el" href="px4flow__i2c_8h.html#ac5cf1a6fab8c04ff076cdc427de0c3e2">px4flow_i2c_integral_frame</a>
 </li>
 <li>ground_elev
 : <a class="el" href="flight__gear_8h.html#a65672b13c87b4306e8f6ac3c48017e3e">FGNetGUI</a>
@@ -291,9 +337,9 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 </li>
 <li>gyro
 : <a class="el" href="imu_8h.html#a556257d57db669a3e42ccc6c77fff286">Imu</a>
-, <a class="el" href="ins__vectornav_8h.html#a31ea5388afec23377cf9f850318198fe">InsVectornav</a>
 , <a class="el" href="nps__sensors_8h.html#a929f8abd6a1e3687face120f264446b0">NpsSensors</a>
 , <a class="el" href="vi_8h.html#aa6d86a777c2f00a72daa264ddf72b225">Vi_imu_info</a>
+, <a class="el" href="vn200__serial_8h.html#a26d59543531b155dda794d0ccb5acb62">VNData</a>
 , <a class="el" href="xsens700_8h.html#ad419068bd3332868a11887b7890ecf98">Xsens</a>
 </li>
 <li>gyro_available
@@ -308,7 +354,8 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 , <a class="el" href="ahrs__float__mlkf_8h.html#a967f441178e1c3a26174b0cbca4fe738">AhrsMlkf</a>
 </li>
 <li>gyro_i
-: <a class="el" href="ins__vectornav_8h.html#aad15e0a8c03018d0ed07959d79d7d32c">InsVectornav</a>
+: <a class="el" href="ahrs__vectornav_8h.html#add5089c6474b186d122e7aa2839d0cc0">AhrsVectornav</a>
+, <a class="el" href="ins__vectornav_8h.html#aad15e0a8c03018d0ed07959d79d7d32c">InsVectornav</a>
 </li>
 <li>gyro_itg
 : <a class="el" href="imu__aspirin_8h.html#a7a313abc3125cdc8289b06c24ad6b3df">ImuAspirin</a>
@@ -342,6 +389,10 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <li>gyro_range
 : <a class="el" href="mpu60x0_8h.html#aefe120b6f39e8491c118cd03359210ce">Mpu60x0Config</a>
 , <a class="el" href="mpu9250_8h.html#a6d5fe6ab403c651cef753c1409fc016d">Mpu9250Config</a>
+, <a class="el" href="px4flow__i2c_8h.html#ae0634b64c909c20edb3e3991f749eaea">px4flow_i2c_frame</a>
+</li>
+<li>gyro_temperature
+: <a class="el" href="px4flow__i2c_8h.html#a11332857ea1e6affef42b7f128198452">px4flow_i2c_integral_frame</a>
 </li>
 <li>gyro_unscaled
 : <a class="el" href="imu_8h.html#a65a1e2b593c19ba1254060fd9a2f5b75">Imu</a>
@@ -349,13 +400,31 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <li>gyro_valid
 : <a class="el" href="imu__aspirin_8h.html#a72b1ee3d51c788c6ef8e78118040e343">ImuAspirin</a>
 </li>
+<li>gyro_x_rate
+: <a class="el" href="px4flow__i2c_8h.html#a36264b4d7fb1cd43390c55670fb99b21">px4flow_i2c_frame</a>
+</li>
+<li>gyro_x_rate_integral
+: <a class="el" href="px4flow__i2c_8h.html#a7a91f36afe958e5c634ce7c9fb867327">px4flow_i2c_integral_frame</a>
+</li>
+<li>gyro_y_rate
+: <a class="el" href="px4flow__i2c_8h.html#a91de40e81dc9ebb92c0f75448a7f156d">px4flow_i2c_frame</a>
+</li>
+<li>gyro_y_rate_integral
+: <a class="el" href="px4flow__i2c_8h.html#a28d63be865e860289db7cf18bb32dff3">px4flow_i2c_integral_frame</a>
+</li>
+<li>gyro_z_rate
+: <a class="el" href="px4flow__i2c_8h.html#abc220483e0a219a7787290541d1a0289">px4flow_i2c_frame</a>
+</li>
+<li>gyro_z_rate_integral
+: <a class="el" href="px4flow__i2c_8h.html#ab3850b285a0979024510ebc5582ba146">px4flow_i2c_integral_frame</a>
+</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Oct 1 2016 14:02:42 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:03:13 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

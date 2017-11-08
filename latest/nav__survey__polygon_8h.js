@@ -30,5 +30,5 @@ var nav__survey__polygon_8h =
       [ "TURN2", "nav__survey__polygon_8h.html#aa9c58cb0ccc605869d75547268f59fa6a8aa67eaa68851f8edef1766d1964383c", null ]
     ] ],
     [ "nav_survey_polygon_run", "nav__survey__polygon_8h.html#ae202d8219e79766dae10f379448f29f8", null ],
-    [ "nav_survey_polygon_setup", "nav__survey__polygon_8h.html#a3f096be845ba726c8096c7da859b58df", null ]
+    [ "nav_survey_polygon_setup", "nav__survey__polygon_8h.html#a4de836f9b285203e33613a08f58ae26b", null ]
 ];

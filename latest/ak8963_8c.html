@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -200,7 +200,7 @@ Functions</h2></td></tr>
 
 <p>References <a class="el" href="ak8963__regs_8h_source.html#l00037">AK8963_CNTL1_CM_2</a>, <a class="el" href="ak8963__regs_8h_source.html#l00053">AK8963_REG_CNTL1</a>, <a class="el" href="ak8963__regs_8h_source.html#l00054">AK8963_REG_CNTL2</a>, <a class="el" href="ak8963_8h_source.html#l00041">AK_CONF_MODE</a>, <a class="el" href="ak8963_8h_source.html#l00040">AK_CONF_UNINIT</a>, <a class="el" href="i2c_8h_source.html#l00122">i2c_transaction::buf</a>, <a class="el" href="ak8963_8h_source.html#l00054">Ak8963::i2c_p</a>, <a class="el" href="ak8963_8h_source.html#l00055">Ak8963::i2c_trans</a>, <a class="el" href="i2c_8c_source.html#l00258">i2c_transmit()</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="i2c_8h_source.html#l00058">I2CTransFailed</a>, <a class="el" href="i2c_8h_source.html#l00057">I2CTransSuccess</a>, <a class="el" href="ak8963_8h_source.html#l00059">Ak8963::init_status</a>, <a class="el" href="ak8963_8h_source.html#l00056">Ak8963::initialized</a>, <a class="el" href="i2c_8h_source.html#l00104">i2c_transaction::slave_addr</a>, and <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>.</p>
 
-<p>Referenced by <a class="el" href="ak8963_8h_source.html#l00075">ak8963_periodic()</a>, and <a class="el" href="mpu9250__i2c_8c_source.html#l00154">imu_mpu9250_configure_mag_slave()</a>.</p>
+<p>Referenced by <a class="el" href="ak8963_8h_source.html#l00075">ak8963_periodic()</a>, and <a class="el" href="mpu9250__i2c_8c_source.html#l00161">imu_mpu9250_configure_mag_slave()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -220,7 +220,7 @@ Functions</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ak8963_8c_a107fc3165a9b7b31132e929df9098dd7_icgraph.png" border="0" usemap="#ak8963_8c_a107fc3165a9b7b31132e929df9098dd7_icgraph" alt=""/></div>
 <map name="ak8963_8c_a107fc3165a9b7b31132e929df9098dd7_icgraph" id="ak8963_8c_a107fc3165a9b7b31132e929df9098dd7_icgraph">
-<area shape="rect" id="node2" href="ak8963_8h.html#ade0f3265df5fdf2c6bcd81c1f44ab48c" title="convenience function: read or start configuration if not already initialized " alt="" coords="215,5,341,32"/><area shape="rect" id="node4" href="mpu9250__i2c_8c.html#a340bd2b875f16e9d9769e8b3a7922ad6" title="callback function to configure ak8963 mag " alt="" coords="188,57,368,98"/><area shape="rect" id="node3" href="imu__bebop_8h.html#aa2e0dd97234c855b85f5cbf27b27f58e" title="Handle all the periodic tasks of the Navstik IMU components. " alt="" coords="416,5,567,32"/><area shape="rect" id="node5" href="mpu9250__i2c_8h.html#a967fa8a6c8aa8f969b3e7fb17221658c" title="mpu9250_i2c_init" alt="" coords="424,64,559,91"/><area shape="rect" id="node6" href="imu__mpu9250__spi_8h.html#a9a9bb6c468d388d1688b2b35e94633d3" title="imu_mpu9250_init" alt="" coords="615,64,755,91"/></map>
+<area shape="rect" id="node2" href="ak8963_8h.html#ade0f3265df5fdf2c6bcd81c1f44ab48c" title="convenience function: read or start configuration if not already initialized " alt="" coords="215,52,341,79"/><area shape="rect" id="node5" href="mpu9250__i2c_8c.html#a340bd2b875f16e9d9769e8b3a7922ad6" title="callback function to configure ak8963 mag " alt="" coords="188,103,368,145"/><area shape="rect" id="node3" href="imu__bebop_8h.html#aa2e0dd97234c855b85f5cbf27b27f58e" title="Handle all the periodic tasks of the Navstik IMU components. " alt="" coords="416,5,567,32"/><area shape="rect" id="node4" href="imu__disco_8h.html#a3de4a9ec4a88b3f1a17e0dc966e5e73c" title="Handle all the periodic tasks of the Disco IMU components. " alt="" coords="420,56,563,83"/><area shape="rect" id="node6" href="mpu9250__i2c_8h.html#a967fa8a6c8aa8f969b3e7fb17221658c" title="mpu9250_i2c_init" alt="" coords="424,111,559,137"/><area shape="rect" id="node7" href="imu__mpu9250__spi_8h.html#a9a9bb6c468d388d1688b2b35e94633d3" title="imu_mpu9250_init" alt="" coords="615,111,755,137"/></map>
 </div>
 </p>
 
@@ -242,9 +242,9 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ak8963_8c_source.html#l00095">95</a> of file <a class="el" href="ak8963_8c_source.html">ak8963.c</a>.</p>
 
-<p>References <a class="el" href="ak8963__regs_8h_source.html#l00046">AK8963_REG_HXL</a>, <a class="el" href="ak8963__regs_8h_source.html#l00052">AK8963_REG_ST2</a>, <a class="el" href="ak8963_8h_source.html#l00047">AK_STATUS_IDLE</a>, <a class="el" href="ak8963_8h_source.html#l00048">AK_STATUS_READ</a>, <a class="el" href="i2c_8h_source.html#l00122">i2c_transaction::buf</a>, <a class="el" href="ak8963_8h.html#a47513ba114346da3382bedf3e7f8222f">Ak8963::data</a>, <a class="el" href="ak8963_8h_source.html#l00061">Ak8963::data_available</a>, <a class="el" href="ak8963_8h_source.html#l00054">Ak8963::i2c_p</a>, <a class="el" href="ak8963_8h_source.html#l00055">Ak8963::i2c_trans</a>, <a class="el" href="i2c_8c_source.html#l00278">i2c_transceive()</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="i2c_8h_source.html#l00058">I2CTransFailed</a>, <a class="el" href="i2c_8h_source.html#l00057">I2CTransSuccess</a>, <a class="el" href="ak8963_8h_source.html#l00056">Ak8963::initialized</a>, <a class="el" href="ak8963_8c_source.html#l00094">Int16FromBuf</a>, <a class="el" href="i2c_8h_source.html#l00104">i2c_transaction::slave_addr</a>, <a class="el" href="ak8963_8h_source.html#l00058">Ak8963::status</a>, and <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>.</p>
+<p>References <a class="el" href="ak8963__regs_8h_source.html#l00046">AK8963_REG_HXL</a>, <a class="el" href="ak8963__regs_8h_source.html#l00052">AK8963_REG_ST2</a>, <a class="el" href="ak8963_8h_source.html#l00047">AK_STATUS_IDLE</a>, <a class="el" href="ak8963_8h_source.html#l00048">AK_STATUS_READ</a>, <a class="el" href="i2c_8h_source.html#l00122">i2c_transaction::buf</a>, <a class="el" href="ak8963_8h.html#af3309bcd566e8e946c8313d59fd7034f">Ak8963::data</a>, <a class="el" href="ak8963_8h_source.html#l00061">Ak8963::data_available</a>, <a class="el" href="ak8963_8h_source.html#l00054">Ak8963::i2c_p</a>, <a class="el" href="ak8963_8h_source.html#l00055">Ak8963::i2c_trans</a>, <a class="el" href="i2c_8c_source.html#l00278">i2c_transceive()</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="i2c_8h_source.html#l00058">I2CTransFailed</a>, <a class="el" href="i2c_8h_source.html#l00057">I2CTransSuccess</a>, <a class="el" href="ak8963_8h_source.html#l00056">Ak8963::initialized</a>, <a class="el" href="ak8963_8c_source.html#l00094">Int16FromBuf</a>, <a class="el" href="i2c_8h_source.html#l00104">i2c_transaction::slave_addr</a>, <a class="el" href="ak8963_8h_source.html#l00058">Ak8963::status</a>, and <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>.</p>
 
-<p>Referenced by <a class="el" href="imu__bebop_8c_source.html#l00120">imu_bebop_event()</a>, and <a class="el" href="mpu9250__i2c_8c_source.html#l00101">mpu9250_i2c_event()</a>.</p>
+<p>Referenced by <a class="el" href="imu__bebop_8c_source.html#l00112">imu_bebop_event()</a>, <a class="el" href="imu__disco_8c_source.html#l00091">imu_disco_event()</a>, and <a class="el" href="mpu9250__i2c_8c_source.html#l00106">mpu9250_i2c_event()</a>.</p>
 
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -264,7 +264,7 @@ Functions</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ak8963_8c_a0316e3a43049d9356e6581384be3e0ae_icgraph.png" border="0" usemap="#ak8963_8c_a0316e3a43049d9356e6581384be3e0ae_icgraph" alt=""/></div>
 <map name="ak8963_8c_a0316e3a43049d9356e6581384be3e0ae_icgraph" id="ak8963_8c_a0316e3a43049d9356e6581384be3e0ae_icgraph">
-<area shape="rect" id="node2" href="imu__bebop_8h.html#abf59a3c40b631f23435da34574ce0197" title="Handle all the events of the Navstik IMU components. " alt="" coords="173,5,309,32"/><area shape="rect" id="node3" href="mpu9250__i2c_8h.html#a0dae39bc87a61581cbe1e8a8a3138c0f" title="mpu9250_i2c_event" alt="" coords="165,56,316,83"/><area shape="rect" id="node4" href="imu__mpu9250__spi_8h.html#af140d4e8a775be026073e67fd3080aa2" title="imu_mpu9250_event" alt="" coords="364,56,521,83"/></map>
+<area shape="rect" id="node2" href="imu__bebop_8h.html#abf59a3c40b631f23435da34574ce0197" title="Handle all the events of the Navstik IMU components. " alt="" coords="173,5,309,32"/><area shape="rect" id="node3" href="imu__disco_8h.html#af4556078aa1856220d57e9f6d92c6e28" title="Handle all the events of the Disco IMU components. " alt="" coords="176,56,305,83"/><area shape="rect" id="node4" href="mpu9250__i2c_8h.html#a0dae39bc87a61581cbe1e8a8a3138c0f" title="mpu9250_i2c_event" alt="" coords="165,107,316,133"/><area shape="rect" id="node5" href="imu__mpu9250__spi_8h.html#af140d4e8a775be026073e67fd3080aa2" title="imu_mpu9250_event" alt="" coords="364,107,521,133"/></map>
 </div>
 </p>
 
@@ -306,7 +306,7 @@ Functions</h2></td></tr>
 
 <p>References <a class="el" href="ak8963_8h_source.html#l00040">AK_CONF_UNINIT</a>, <a class="el" href="ak8963_8h_source.html#l00061">Ak8963::data_available</a>, <a class="el" href="ak8963_8h_source.html#l00054">Ak8963::i2c_p</a>, <a class="el" href="ak8963_8h_source.html#l00055">Ak8963::i2c_trans</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="ak8963_8h_source.html#l00059">Ak8963::init_status</a>, <a class="el" href="ak8963_8h_source.html#l00056">Ak8963::initialized</a>, <a class="el" href="i2c_8h_source.html#l00104">i2c_transaction::slave_addr</a>, and <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>.</p>
 
-<p>Referenced by <a class="el" href="imu__bebop_8c_source.html#l00081">imu_bebop_init()</a>, and <a class="el" href="mpu9250__i2c_8c_source.html#l00033">mpu9250_i2c_init()</a>.</p>
+<p>Referenced by <a class="el" href="imu__bebop_8c_source.html#l00074">imu_bebop_init()</a>, <a class="el" href="imu__disco_8c_source.html#l00061">imu_disco_init()</a>, and <a class="el" href="mpu9250__i2c_8c_source.html#l00033">mpu9250_i2c_init()</a>.</p>
 
 <p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -315,7 +315,7 @@ Functions</h2></td></tr>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ak8963_8c_adb7f10e2449b9ef0f5c1ffc25cbd43a3_icgraph.png" border="0" usemap="#ak8963_8c_adb7f10e2449b9ef0f5c1ffc25cbd43a3_icgraph" alt=""/></div>
 <map name="ak8963_8c_adb7f10e2449b9ef0f5c1ffc25cbd43a3_icgraph" id="ak8963_8c_adb7f10e2449b9ef0f5c1ffc25cbd43a3_icgraph">
-<area shape="rect" id="node2" href="imu__bebop_8h.html#aa31cb19c5b495495b851bd6ff07d2c36" title="Navstik IMU initializtion of the MPU&#45;60x0 and HMC58xx. " alt="" coords="156,5,275,32"/><area shape="rect" id="node3" href="mpu9250__i2c_8h.html#a967fa8a6c8aa8f969b3e7fb17221658c" title="mpu9250_i2c_init" alt="" coords="148,56,283,83"/><area shape="rect" id="node4" href="imu__mpu9250__spi_8h.html#a9a9bb6c468d388d1688b2b35e94633d3" title="imu_mpu9250_init" alt="" coords="331,56,471,83"/></map>
+<area shape="rect" id="node2" href="imu__bebop_8h.html#aa31cb19c5b495495b851bd6ff07d2c36" title="Navstik IMU initializtion of the MPU&#45;60x0 and HMC58xx. " alt="" coords="156,5,275,32"/><area shape="rect" id="node3" href="imu__disco_8h.html#acdf0aceff7f01198770c0218f742ab30" title="Disco IMU initializtion of the MPU&#45;60x0 and HMC58xx. " alt="" coords="159,56,271,83"/><area shape="rect" id="node4" href="mpu9250__i2c_8h.html#a967fa8a6c8aa8f969b3e7fb17221658c" title="mpu9250_i2c_init" alt="" coords="148,107,283,133"/><area shape="rect" id="node5" href="imu__mpu9250__spi_8h.html#a9a9bb6c468d388d1688b2b35e94633d3" title="imu_mpu9250_init" alt="" coords="331,107,471,133"/></map>
 </div>
 </p>
 
@@ -339,7 +339,7 @@ Functions</h2></td></tr>
 
 <p>References <a class="el" href="ak8963__regs_8h_source.html#l00045">AK8963_REG_ST1</a>, <a class="el" href="ak8963_8h_source.html#l00047">AK_STATUS_IDLE</a>, <a class="el" href="i2c_8h_source.html#l00122">i2c_transaction::buf</a>, <a class="el" href="ak8963_8h_source.html#l00054">Ak8963::i2c_p</a>, <a class="el" href="ak8963_8h_source.html#l00055">Ak8963::i2c_trans</a>, <a class="el" href="i2c_8c_source.html#l00278">i2c_transceive()</a>, <a class="el" href="i2c_8h_source.html#l00104">i2c_transaction::slave_addr</a>, and <a class="el" href="ak8963_8h_source.html#l00058">Ak8963::status</a>.</p>
 
-<p>Referenced by <a class="el" href="ak8963_8h_source.html#l00075">ak8963_periodic()</a>, and <a class="el" href="mpu9250__i2c_8c_source.html#l00084">mpu9250_i2c_read()</a>.</p>
+<p>Referenced by <a class="el" href="ak8963_8h_source.html#l00075">ak8963_periodic()</a>, and <a class="el" href="mpu9250__i2c_8c_source.html#l00087">mpu9250_i2c_read()</a>.</p>
 
 <p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -359,7 +359,7 @@ Functions</h2></td></tr>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ak8963_8c_adfac2f0ad8cc1dd43748e5a850139c0c_icgraph.png" border="0" usemap="#ak8963_8c_adfac2f0ad8cc1dd43748e5a850139c0c_icgraph" alt=""/></div>
 <map name="ak8963_8c_adfac2f0ad8cc1dd43748e5a850139c0c_icgraph" id="ak8963_8c_adfac2f0ad8cc1dd43748e5a850139c0c_icgraph">
-<area shape="rect" id="node2" href="ak8963_8h.html#ade0f3265df5fdf2c6bcd81c1f44ab48c" title="convenience function: read or start configuration if not already initialized " alt="" coords="167,5,294,32"/><area shape="rect" id="node4" href="mpu9250__i2c_8h.html#a64969bf12980c6f6a338452f2552fc91" title="mpu9250_i2c_read" alt="" coords="159,56,303,83"/><area shape="rect" id="node3" href="imu__bebop_8h.html#aa2e0dd97234c855b85f5cbf27b27f58e" title="Handle all the periodic tasks of the Navstik IMU components. " alt="" coords="358,5,509,32"/><area shape="rect" id="node5" href="mpu9250__i2c_8h.html#a9186a17bab6df9561bd3f4bb088fa99e" title="convenience function: read or start configuration if not already initialized " alt="" coords="351,56,516,83"/><area shape="rect" id="node6" href="imu__mpu9250__spi_8h.html#a38ba54b488a6adbea2dfb5a060d5d8b5" title="imu_mpu9250_periodic" alt="" coords="564,56,735,83"/></map>
+<area shape="rect" id="node2" href="ak8963_8h.html#ade0f3265df5fdf2c6bcd81c1f44ab48c" title="convenience function: read or start configuration if not already initialized " alt="" coords="167,56,294,83"/><area shape="rect" id="node5" href="mpu9250__i2c_8h.html#a64969bf12980c6f6a338452f2552fc91" title="mpu9250_i2c_read" alt="" coords="159,107,303,133"/><area shape="rect" id="node3" href="imu__bebop_8h.html#aa2e0dd97234c855b85f5cbf27b27f58e" title="Handle all the periodic tasks of the Navstik IMU components. " alt="" coords="358,5,509,32"/><area shape="rect" id="node4" href="imu__disco_8h.html#a3de4a9ec4a88b3f1a17e0dc966e5e73c" title="Handle all the periodic tasks of the Disco IMU components. " alt="" coords="362,56,505,83"/><area shape="rect" id="node6" href="mpu9250__i2c_8h.html#a9186a17bab6df9561bd3f4bb088fa99e" title="convenience function: read or start configuration if not already initialized " alt="" coords="351,107,516,133"/><area shape="rect" id="node7" href="imu__mpu9250__spi_8h.html#a38ba54b488a6adbea2dfb5a060d5d8b5" title="imu_mpu9250_periodic" alt="" coords="564,107,735,133"/></map>
 </div>
 </p>
 
@@ -371,7 +371,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_0a48ba2c0a76794adfddddc873522f67.html">peripherals</a></li><li class="navelem"><a class="el" href="ak8963_8c.html">ak8963.c</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:02:06 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:02:34 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

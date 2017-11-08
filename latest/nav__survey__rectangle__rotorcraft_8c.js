@@ -10,7 +10,7 @@ var nav__survey__rectangle__rotorcraft_8c =
     [ "USE_INTERLEAVE", "nav__survey__rectangle__rotorcraft_8c.html#a732daf603edc2a984194a89810e0618e", null ],
     [ "nav_survey_rectangle_rotorcraft_init", "nav__survey__rectangle__rotorcraft_8c.html#a6602df80fb8595459602f8749b5a396d", null ],
     [ "nav_survey_rectangle_rotorcraft_run", "nav__survey__rectangle__rotorcraft_8c.html#a8173c6411f3da20648716f4377a92cca", null ],
-    [ "nav_survey_rectangle_rotorcraft_setup", "nav__survey__rectangle__rotorcraft_8c.html#aa3e5006aeb4d1d9dd328bb05b20a58d0", null ],
+    [ "nav_survey_rectangle_rotorcraft_setup", "nav__survey__rectangle__rotorcraft_8c.html#a00c84b20805b0274458a3e3c45086320", null ],
     [ "send_survey", "nav__survey__rectangle__rotorcraft_8c.html#a2de3ce76b73702589b955325a4684479", null ],
     [ "interleave", "nav__survey__rectangle__rotorcraft_8c.html#a955e0ea38fdf2cad6dbce624c7fc22a3", null ],
     [ "nav_in_circle", "nav__survey__rectangle__rotorcraft_8c.html#a9952b3bb5779d0daebdcc73d03798c1f", null ],

@@ -16,7 +16,6 @@ var nps__fdm__jsbsim_8cpp =
     [ "PascalOfPsf", "nps__fdm__jsbsim_8cpp.html#a94155297cb6b91686d2633387248d665", null ],
     [ "check_for_nan", "nps__fdm__jsbsim_8cpp.html#aa8d531348a8fbe30accc30952915a90d", null ],
     [ "feed_jsbsim", "nps__fdm__jsbsim_8cpp.html#ac3f41f22e543ac14794eecd306681e76", null ],
-    [ "feed_jsbsim", "nps__fdm__jsbsim_8cpp.html#a44420470304d72002121021205e3542c", null ],
     [ "fetch_state", "nps__fdm__jsbsim_8cpp.html#a2d617cee29889c9d6592f9978dfa8a31", null ],
     [ "init_jsbsim", "nps__fdm__jsbsim_8cpp.html#a22e629dc0a3ec62417e2a4e820d85244", null ],
     [ "init_ltp", "nps__fdm__jsbsim_8cpp.html#a3836be75ba868b34cd08503e2f242ab5", null ],

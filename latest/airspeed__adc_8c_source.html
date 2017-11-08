@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -199,7 +199,7 @@ $(document).ready(function(){initNavTree('airspeed__adc_8c_source.html','');});
 <div class="ttc" id="adc_8h_html_aceea4ff785000051676babf3e5f25287"><div class="ttname"><a href="adc_8h.html#aceea4ff785000051676babf3e5f25287">adc_buf::av_nb_sample</a></div><div class="ttdeci">uint8_t av_nb_sample</div><div class="ttdef"><b>Definition:</b> <a href="adc_8h_source.html#l00057">adc.h:57</a></div></div>
 <div class="ttc" id="airspeed__adc_8h_html"><div class="ttname"><a href="airspeed__adc_8h.html">airspeed_adc.h</a></div><div class="ttdoc">Read an airspeed or differential pressure sensor via onboard ADC. </div></div>
 <div class="ttc" id="airspeed__adc_8c_html_ab0e44bb7e2be106b0e9bfee8a53d9b09"><div class="ttname"><a href="airspeed__adc_8c.html#ab0e44bb7e2be106b0e9bfee8a53d9b09">airspeed_adc_update</a></div><div class="ttdeci">void airspeed_adc_update(void)</div><div class="ttdef"><b>Definition:</b> <a href="airspeed__adc_8c_source.html#l00072">airspeed_adc.c:72</a></div></div>
-<div class="ttc" id="chibios_2mcu__periph_2adc__arch_8c_html_a289883844d6749adab1cee5aabe41824"><div class="ttname"><a href="chibios_2mcu__periph_2adc__arch_8c.html#a289883844d6749adab1cee5aabe41824">adc_buf_channel</a></div><div class="ttdeci">void adc_buf_channel(uint8_t adc_channel, struct adc_buf *s, uint8_t av_nb_sample)</div><div class="ttdoc">Link between ChibiOS ADC drivers and Paparazzi adc_buffers. </div><div class="ttdef"><b>Definition:</b> <a href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00265">adc_arch.c:265</a></div></div>
+<div class="ttc" id="chibios_2mcu__periph_2adc__arch_8c_html_a289883844d6749adab1cee5aabe41824"><div class="ttname"><a href="chibios_2mcu__periph_2adc__arch_8c.html#a289883844d6749adab1cee5aabe41824">adc_buf_channel</a></div><div class="ttdeci">void adc_buf_channel(uint8_t adc_channel, struct adc_buf *s, uint8_t av_nb_sample)</div><div class="ttdoc">Link between ChibiOS ADC drivers and Paparazzi adc_buffers. </div><div class="ttdef"><b>Definition:</b> <a href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00281">adc_arch.c:281</a></div></div>
 <div class="ttc" id="adc_8h_html_a0adbcdd2a1f78f3746dad3be8936ed5b"><div class="ttname"><a href="adc_8h.html#a0adbcdd2a1f78f3746dad3be8936ed5b">adc_buf::sum</a></div><div class="ttdeci">uint32_t sum</div><div class="ttdef"><b>Definition:</b> <a href="adc_8h_source.html#l00054">adc.h:54</a></div></div>
 <div class="ttc" id="adc_8h_html"><div class="ttname"><a href="adc_8h.html">adc.h</a></div><div class="ttdoc">arch independent ADC (Analog to Digital Converter) API </div></div>
 <div class="ttc" id="airspeed__adc_8c_html_afa4a95f4df116ecb7c849a98d941d24d"><div class="ttname"><a href="airspeed__adc_8c.html#afa4a95f4df116ecb7c849a98d941d24d">airspeed_adc_init</a></div><div class="ttdeci">void airspeed_adc_init(void)</div><div class="ttdef"><b>Definition:</b> <a href="airspeed__adc_8c_source.html#l00057">airspeed_adc.c:57</a></div></div>
@@ -215,7 +215,7 @@ $(document).ready(function(){initNavTree('airspeed__adc_8c_source.html','');});
 <div class="ttc" id="airspeed__adc_8h_html_a758403f5daa7da25cab5832858c535c0"><div class="ttname"><a href="airspeed__adc_8h.html#a758403f5daa7da25cab5832858c535c0">AirspeedAdc::scale</a></div><div class="ttdeci">float scale</div><div class="ttdoc">used as quadratic scale if AIRSPEED_ADC_QUADRATIC_SCALE, otherwise linear </div><div class="ttdef"><b>Definition:</b> <a href="airspeed__adc_8h_source.html#l00034">airspeed_adc.h:34</a></div></div>
 <div class="ttc" id="airspeed__adc_8h_html_a9afdfe7bd1d7dd87b862b6980f329681"><div class="ttname"><a href="airspeed__adc_8h.html#a9afdfe7bd1d7dd87b862b6980f329681">AirspeedAdc::offset</a></div><div class="ttdeci">uint16_t offset</div><div class="ttdef"><b>Definition:</b> <a href="airspeed__adc_8h_source.html#l00033">airspeed_adc.h:33</a></div></div>
 <div class="ttc" id="state_8h_html"><div class="ttname"><a href="state_8h.html">state.h</a></div><div class="ttdoc">API to get/set the generic vehicle states. </div></div>
-<div class="ttc" id="group__state__wind__airspeed_html_ga2ede5795eaec38206e25b8850ee40f63"><div class="ttname"><a href="group__state__wind__airspeed.html#ga2ede5795eaec38206e25b8850ee40f63">stateSetAirspeed_f</a></div><div class="ttdeci">static void stateSetAirspeed_f(float airspeed)</div><div class="ttdoc">Set airspeed (float). </div><div class="ttdef"><b>Definition:</b> <a href="state_8h_source.html#l01291">state.h:1291</a></div></div>
+<div class="ttc" id="group__state__wind__airspeed_html_ga2ede5795eaec38206e25b8850ee40f63"><div class="ttname"><a href="group__state__wind__airspeed.html#ga2ede5795eaec38206e25b8850ee40f63">stateSetAirspeed_f</a></div><div class="ttdeci">static void stateSetAirspeed_f(float airspeed)</div><div class="ttdoc">Set airspeed (float). </div><div class="ttdef"><b>Definition:</b> <a href="state_8h_source.html#l01309">state.h:1309</a></div></div>
 <div class="ttc" id="airspeed__adc_8c_html_afc95f2b1180c25a5724cc02a21737d4b"><div class="ttname"><a href="airspeed__adc_8c.html#afc95f2b1180c25a5724cc02a21737d4b">USE_AIRSPEED_ADC</a></div><div class="ttdeci">#define USE_AIRSPEED_ADC</div><div class="ttdef"><b>Definition:</b> <a href="airspeed__adc_8c_source.html#l00033">airspeed_adc.c:33</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -223,7 +223,7 @@ $(document).ready(function(){initNavTree('airspeed__adc_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_2f48bbb566df394f79dcf8fe0631584a.html">sensors</a></li><li class="navelem"><a class="el" href="airspeed__adc_8c.html">airspeed_adc.c</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:01:28 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:01:45 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

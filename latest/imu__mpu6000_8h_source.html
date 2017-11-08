@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -137,31 +137,63 @@ $(document).ready(function(){initNavTree('imu__mpu6000_8h_source.html','');});
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;generated/airframe.h&quot;</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="imu_8h.html">subsystems/imu.h</a>&quot;</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="imu__mpu60x0__defaults_8h.html">subsystems/imu/imu_mpu60x0_defaults.h</a>&quot;</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mpu60x0__spi_8h.html">peripherals/mpu60x0_spi.h</a>&quot;</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="imu__mpu6000_8h.html">   38</a></span>&#160;<span class="keyword">struct </span><a class="code" href="imu__mpu6000_8h.html#structImuMpu6000">ImuMpu6000</a> {</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="imu__mpu6000_8h.html#a26900278f34fb5c6605b8738bd9ec289">   39</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="mpu60x0__spi_8h.html#structMpu60x0__Spi">Mpu60x0_Spi</a> <a class="code" href="imu__mpu6000_8h.html#a26900278f34fb5c6605b8738bd9ec289">mpu</a>;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;};</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">extern</span> <span class="keyword">struct </span><a class="code" href="imu__mpu6000_8h.html#structImuMpu6000">ImuMpu6000</a> <a class="code" href="imu__mpu6000_8h.html#a14f4824721832ff67a688b6a92e78ff4">imu_mpu_spi</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mpu60x0__spi_8h.html">peripherals/mpu60x0_spi.h</a>&quot;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#ifndef IMU_MPU_GYRO_RANGE</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="imu__mpu6000_8h.html#a26e4ccd24281fa404cf1959858ca10bf">   37</a></span>&#160;<span class="preprocessor">#define IMU_MPU_GYRO_RANGE MPU60X0_GYRO_RANGE_2000</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#ifndef IMU_MPU_ACCEL_RANGE</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="imu__mpu6000_8h.html#a7c0229d06494ef4074857d8ed4f277e1">   41</a></span>&#160;<span class="preprocessor">#define IMU_MPU_ACCEL_RANGE MPU60X0_ACCEL_RANGE_16G</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="imu__mpu6000_8h.html#abcd8e3da368d4b35f99d0221308ae250">imu_mpu_spi_init</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="imu__mpu6000_8h.html#a45f9260628aea5e402f373fa453d37b0">imu_mpu_spi_periodic</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="imu__mpu6000_8h.html#adeded9c36c67ea0bb8d9711c9992dea0">imu_mpu_spi_event</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* IMU_MPU6000_H */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="imu__mpu60x0__defaults_8h_html"><div class="ttname"><a href="imu__mpu60x0__defaults_8h.html">imu_mpu60x0_defaults.h</a></div><div class="ttdoc">Default sensitivity definitions for an IMU using the MPU60x0. </div></div>
-<div class="ttc" id="imu__mpu6000_8h_html_a45f9260628aea5e402f373fa453d37b0"><div class="ttname"><a href="imu__mpu6000_8h.html#a45f9260628aea5e402f373fa453d37b0">imu_mpu_spi_periodic</a></div><div class="ttdeci">void imu_mpu_spi_periodic(void)</div><div class="ttdef"><b>Definition:</b> <a href="imu__mpu6000_8c_source.html#l00083">imu_mpu6000.c:83</a></div></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">// Set default sensitivity based on range if needed</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#if !defined IMU_GYRO_P_SENS &amp; !defined IMU_GYRO_Q_SENS &amp; !defined IMU_GYRO_R_SENS</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="imu__mpu6000_8h.html#ad08f71586fceaa57ea361681bb6543b7">   46</a></span>&#160;<span class="preprocessor">#define IMU_GYRO_P_SENS MPU60X0_GYRO_SENS[IMU_MPU_GYRO_RANGE]</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="imu__mpu6000_8h.html#aa59c24839f4a36f23c98da339dea1224">   47</a></span>&#160;<span class="preprocessor">#define IMU_GYRO_P_SENS_NUM MPU60X0_GYRO_SENS_FRAC[IMU_MPU_GYRO_RANGE][0]</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="imu__mpu6000_8h.html#a2644576e539bd38bf5d323809e3fd737">   48</a></span>&#160;<span class="preprocessor">#define IMU_GYRO_P_SENS_DEN MPU60X0_GYRO_SENS_FRAC[IMU_MPU_GYRO_RANGE][1]</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="imu__mpu6000_8h.html#a5ed19364e701726bf4eb06eea5da9acf">   49</a></span>&#160;<span class="preprocessor">#define IMU_GYRO_Q_SENS MPU60X0_GYRO_SENS[IMU_MPU_GYRO_RANGE]</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="imu__mpu6000_8h.html#a3c4d85605fa8be77fbc356b66c19f509">   50</a></span>&#160;<span class="preprocessor">#define IMU_GYRO_Q_SENS_NUM MPU60X0_GYRO_SENS_FRAC[IMU_MPU_GYRO_RANGE][0]</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="imu__mpu6000_8h.html#aaa4f4a11cc02f0d8aef1e8d97a15746f">   51</a></span>&#160;<span class="preprocessor">#define IMU_GYRO_Q_SENS_DEN MPU60X0_GYRO_SENS_FRAC[IMU_MPU_GYRO_RANGE][1]</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="imu__mpu6000_8h.html#af57decce9e96b0726832a410273223f3">   52</a></span>&#160;<span class="preprocessor">#define IMU_GYRO_R_SENS MPU60X0_GYRO_SENS[IMU_MPU_GYRO_RANGE]</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="imu__mpu6000_8h.html#a6f808c71190e714287442af3bb7008b3">   53</a></span>&#160;<span class="preprocessor">#define IMU_GYRO_R_SENS_NUM MPU60X0_GYRO_SENS_FRAC[IMU_MPU_GYRO_RANGE][0]</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="imu__mpu6000_8h.html#aecb2f43265d239ba7661dfcc8523123e">   54</a></span>&#160;<span class="preprocessor">#define IMU_GYRO_R_SENS_DEN MPU60X0_GYRO_SENS_FRAC[IMU_MPU_GYRO_RANGE][1]</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">// Set default sensitivity based on range if needed</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#if !defined IMU_ACCEL_X_SENS &amp; !defined IMU_ACCEL_Y_SENS &amp; !defined IMU_ACCEL_Z_SENS</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="imu__mpu6000_8h.html#a8ac88fc00cde506229b92c6a1e2c3122">   59</a></span>&#160;<span class="preprocessor">#define IMU_ACCEL_X_SENS MPU60X0_ACCEL_SENS[IMU_MPU_ACCEL_RANGE]</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="imu__mpu6000_8h.html#ada91099469f16df2d8aeafa82d365c4b">   60</a></span>&#160;<span class="preprocessor">#define IMU_ACCEL_X_SENS_NUM MPU60X0_ACCEL_SENS_FRAC[IMU_MPU_ACCEL_RANGE][0]</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="imu__mpu6000_8h.html#a8acf299c1bfb2daa92b1894556ca50ad">   61</a></span>&#160;<span class="preprocessor">#define IMU_ACCEL_X_SENS_DEN MPU60X0_ACCEL_SENS_FRAC[IMU_MPU_ACCEL_RANGE][1]</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="imu__mpu6000_8h.html#a3bb03278fbd9117e876b24e1b78a61c5">   62</a></span>&#160;<span class="preprocessor">#define IMU_ACCEL_Y_SENS MPU60X0_ACCEL_SENS[IMU_MPU_ACCEL_RANGE]</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="imu__mpu6000_8h.html#a4afc2b22683312436f746d69fc451bb1">   63</a></span>&#160;<span class="preprocessor">#define IMU_ACCEL_Y_SENS_NUM MPU60X0_ACCEL_SENS_FRAC[IMU_MPU_ACCEL_RANGE][0]</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="imu__mpu6000_8h.html#a60e8f1f35a15a535130669093e80e858">   64</a></span>&#160;<span class="preprocessor">#define IMU_ACCEL_Y_SENS_DEN MPU60X0_ACCEL_SENS_FRAC[IMU_MPU_ACCEL_RANGE][1]</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="imu__mpu6000_8h.html#ad48a5b859139ea2355c40f5abf5aa8aa">   65</a></span>&#160;<span class="preprocessor">#define IMU_ACCEL_Z_SENS MPU60X0_ACCEL_SENS[IMU_MPU_ACCEL_RANGE]</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="imu__mpu6000_8h.html#afd17b3bbedb8e03a9a4f27d21b8d507e">   66</a></span>&#160;<span class="preprocessor">#define IMU_ACCEL_Z_SENS_NUM MPU60X0_ACCEL_SENS_FRAC[IMU_MPU_ACCEL_RANGE][0]</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="imu__mpu6000_8h.html#ae62fbd99f815974f80f911bfa1b1d514">   67</a></span>&#160;<span class="preprocessor">#define IMU_ACCEL_Z_SENS_DEN MPU60X0_ACCEL_SENS_FRAC[IMU_MPU_ACCEL_RANGE][1]</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="imu__mpu6000_8h.html">   71</a></span>&#160;<span class="keyword">struct </span><a class="code" href="imu__mpu6000_8h.html#structImuMpu6000">ImuMpu6000</a> {</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="imu__mpu6000_8h.html#a26900278f34fb5c6605b8738bd9ec289">   72</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="mpu60x0__spi_8h.html#structMpu60x0__Spi">Mpu60x0_Spi</a> <a class="code" href="imu__mpu6000_8h.html#a26900278f34fb5c6605b8738bd9ec289">mpu</a>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;};</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">extern</span> <span class="keyword">struct </span><a class="code" href="imu__mpu6000_8h.html#structImuMpu6000">ImuMpu6000</a> <a class="code" href="imu__mpu6000_8h.html#a14f4824721832ff67a688b6a92e78ff4">imu_mpu_spi</a>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="imu__mpu6000_8h.html#abcd8e3da368d4b35f99d0221308ae250">imu_mpu_spi_init</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="imu__mpu6000_8h.html#a45f9260628aea5e402f373fa453d37b0">imu_mpu_spi_periodic</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="imu__mpu6000_8h.html#adeded9c36c67ea0bb8d9711c9992dea0">imu_mpu_spi_event</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* IMU_MPU6000_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="imu__mpu6000_8h_html_a45f9260628aea5e402f373fa453d37b0"><div class="ttname"><a href="imu__mpu6000_8h.html#a45f9260628aea5e402f373fa453d37b0">imu_mpu_spi_periodic</a></div><div class="ttdeci">void imu_mpu_spi_periodic(void)</div><div class="ttdef"><b>Definition:</b> <a href="imu__mpu6000_8c_source.html#l00076">imu_mpu6000.c:76</a></div></div>
 <div class="ttc" id="mpu60x0__spi_8h_html_structMpu60x0__Spi"><div class="ttname"><a href="mpu60x0__spi_8h.html#structMpu60x0__Spi">Mpu60x0_Spi</a></div><div class="ttdef"><b>Definition:</b> <a href="mpu60x0__spi_8h_source.html#l00051">mpu60x0_spi.h:51</a></div></div>
-<div class="ttc" id="imu__mpu6000_8h_html_a14f4824721832ff67a688b6a92e78ff4"><div class="ttname"><a href="imu__mpu6000_8h.html#a14f4824721832ff67a688b6a92e78ff4">imu_mpu_spi</a></div><div class="ttdeci">struct ImuMpu6000 imu_mpu_spi</div><div class="ttdef"><b>Definition:</b> <a href="imu__mpu6000_8c_source.html#l00070">imu_mpu6000.c:70</a></div></div>
-<div class="ttc" id="imu__mpu6000_8h_html_adeded9c36c67ea0bb8d9711c9992dea0"><div class="ttname"><a href="imu__mpu6000_8h.html#adeded9c36c67ea0bb8d9711c9992dea0">imu_mpu_spi_event</a></div><div class="ttdeci">void imu_mpu_spi_event(void)</div><div class="ttdef"><b>Definition:</b> <a href="imu__mpu6000_8c_source.html#l00088">imu_mpu6000.c:88</a></div></div>
-<div class="ttc" id="imu__mpu6000_8h_html_abcd8e3da368d4b35f99d0221308ae250"><div class="ttname"><a href="imu__mpu6000_8h.html#abcd8e3da368d4b35f99d0221308ae250">imu_mpu_spi_init</a></div><div class="ttdeci">void imu_mpu_spi_init(void)</div><div class="ttdef"><b>Definition:</b> <a href="imu__mpu6000_8c_source.html#l00072">imu_mpu6000.c:72</a></div></div>
-<div class="ttc" id="imu__mpu6000_8h_html_structImuMpu6000"><div class="ttname"><a href="imu__mpu6000_8h.html#structImuMpu6000">ImuMpu6000</a></div><div class="ttdef"><b>Definition:</b> <a href="imu__mpu6000_8h_source.html#l00038">imu_mpu6000.h:38</a></div></div>
+<div class="ttc" id="imu__mpu6000_8h_html_a14f4824721832ff67a688b6a92e78ff4"><div class="ttname"><a href="imu__mpu6000_8h.html#a14f4824721832ff67a688b6a92e78ff4">imu_mpu_spi</a></div><div class="ttdeci">struct ImuMpu6000 imu_mpu_spi</div><div class="ttdef"><b>Definition:</b> <a href="imu__mpu6000_8c_source.html#l00063">imu_mpu6000.c:63</a></div></div>
+<div class="ttc" id="imu__mpu6000_8h_html_adeded9c36c67ea0bb8d9711c9992dea0"><div class="ttname"><a href="imu__mpu6000_8h.html#adeded9c36c67ea0bb8d9711c9992dea0">imu_mpu_spi_event</a></div><div class="ttdeci">void imu_mpu_spi_event(void)</div><div class="ttdef"><b>Definition:</b> <a href="imu__mpu6000_8c_source.html#l00081">imu_mpu6000.c:81</a></div></div>
+<div class="ttc" id="imu__mpu6000_8h_html_abcd8e3da368d4b35f99d0221308ae250"><div class="ttname"><a href="imu__mpu6000_8h.html#abcd8e3da368d4b35f99d0221308ae250">imu_mpu_spi_init</a></div><div class="ttdeci">void imu_mpu_spi_init(void)</div><div class="ttdef"><b>Definition:</b> <a href="imu__mpu6000_8c_source.html#l00065">imu_mpu6000.c:65</a></div></div>
+<div class="ttc" id="imu__mpu6000_8h_html_structImuMpu6000"><div class="ttname"><a href="imu__mpu6000_8h.html#structImuMpu6000">ImuMpu6000</a></div><div class="ttdef"><b>Definition:</b> <a href="imu__mpu6000_8h_source.html#l00071">imu_mpu6000.h:71</a></div></div>
 <div class="ttc" id="imu_8h_html"><div class="ttname"><a href="imu_8h.html">imu.h</a></div><div class="ttdoc">Inertial Measurement Unit interface. </div></div>
 <div class="ttc" id="std_8h_html"><div class="ttname"><a href="std_8h.html">std.h</a></div></div>
-<div class="ttc" id="imu__mpu6000_8h_html_a26900278f34fb5c6605b8738bd9ec289"><div class="ttname"><a href="imu__mpu6000_8h.html#a26900278f34fb5c6605b8738bd9ec289">ImuMpu6000::mpu</a></div><div class="ttdeci">struct Mpu60x0_Spi mpu</div><div class="ttdef"><b>Definition:</b> <a href="imu__mpu6000_8h_source.html#l00039">imu_mpu6000.h:39</a></div></div>
+<div class="ttc" id="imu__mpu6000_8h_html_a26900278f34fb5c6605b8738bd9ec289"><div class="ttname"><a href="imu__mpu6000_8h.html#a26900278f34fb5c6605b8738bd9ec289">ImuMpu6000::mpu</a></div><div class="ttdeci">struct Mpu60x0_Spi mpu</div><div class="ttdef"><b>Definition:</b> <a href="imu__mpu6000_8h_source.html#l00072">imu_mpu6000.h:72</a></div></div>
 <div class="ttc" id="mpu60x0__spi_8h_html"><div class="ttname"><a href="mpu60x0__spi_8h.html">mpu60x0_spi.h</a></div><div class="ttdoc">Driver for the MPU-60X0 using SPI. </div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -169,7 +201,7 @@ $(document).ready(function(){initNavTree('imu__mpu6000_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_8b2fa0708e2db44c1b91938af97bac44.html">imu</a></li><li class="navelem"><a class="el" href="imu__mpu6000_8h.html">imu_mpu6000.h</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:01:33 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:01:51 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

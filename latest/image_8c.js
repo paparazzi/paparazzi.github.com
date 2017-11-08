@@ -6,7 +6,9 @@ var image_8c =
     [ "image_create", "image_8c.html#ab5cc0250c461b9d2f043e4884f6b9a53", null ],
     [ "image_difference", "image_8c.html#a946e57aea5ff8c79adee46cb2c72dd80", null ],
     [ "image_draw_line", "image_8c.html#a40fe37e1ba3df58796c2aa29e04e8567", null ],
+    [ "image_draw_line_color", "image_8c.html#a39d2c18c82e89a7ff9b2423a7cdc9366", null ],
     [ "image_free", "image_8c.html#aa09d6434519478ba26eab12a96d600ba", null ],
+    [ "image_gradient_pixel", "image_8c.html#a1cbeeba8965707f0e5e9cb1e256c70c5", null ],
     [ "image_gradients", "image_8c.html#a5b47fdb25a4d3b575a1a1e1960d5f5e3", null ],
     [ "image_multiply", "image_8c.html#afc5615de31e098e68a4d2e3b4b686a1b", null ],
     [ "image_show_flow", "image_8c.html#a94dcb784f31e65bdc562452321371a5f", null ],
@@ -16,6 +18,6 @@ var image_8c =
     [ "image_to_grayscale", "image_8c.html#a74a32006a620503a7ca62e5b2a86abd1", null ],
     [ "image_yuv422_colorfilt", "image_8c.html#aa5bba6b2f386abf2ac701492f6a48bc9", null ],
     [ "image_yuv422_downsample", "image_8c.html#a1504ec67c03ccbac95d53463d1000311", null ],
-    [ "pyramid_build", "image_8c.html#a87a13668c49abc1ee09544ba322d4ae0", null ],
+    [ "pyramid_build", "image_8c.html#a6656ee75c4f8c05dbebbab3fae1b332a", null ],
     [ "pyramid_next_level", "image_8c.html#a038faec3786d8baa2e38c7672129e276", null ]
 ];

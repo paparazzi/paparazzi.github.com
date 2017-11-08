@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -139,7 +139,7 @@ $(document).ready(function(){initNavTree('vi_8h_source.html','');});
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="std_8h.html">std.h</a>&quot;</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pprz__algebra__int_8h.html">math/pprz_algebra_int.h</a>&quot;</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="rotorcraft_2autopilot_8h.html">firmwares/rotorcraft/autopilot.h</a>&quot;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="autopilot_8h.html">autopilot.h</a>&quot;</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="stabilization_8h.html">firmwares/rotorcraft/stabilization.h</a>&quot;</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="guidance_8h.html">firmwares/rotorcraft/guidance.h</a>&quot;</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="navigation_8h.html">firmwares/rotorcraft/navigation.h</a>&quot;</span></div>
@@ -175,12 +175,12 @@ $(document).ready(function(){initNavTree('vi_8h_source.html','');});
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">struct </span><a class="code" href="group__math__algebra__int.html#structInt32Eulers">Int32Eulers</a> attitude;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">struct </span><a class="code" href="group__math__algebra__int.html#structInt32Vect3">Int32Vect3</a> speed; <span class="comment">//FIXME Warning z is heading rate</span></div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">struct </span><a class="code" href="group__math__algebra__int.html#structInt32Vect3">Int32Vect3</a> pos; <span class="comment">//FIXME Warning z is heading</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  } <a class="code" href="vi_8h.html#a3414e073730bc3a3d9af573b9ac26505">h_sp</a>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  } <a class="code" href="vi_8h.html#a3a3ffcacc9fabd63d14b03f8ce6c5a4c">h_sp</a>;</div>
 <div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="vi_8h.html">   68</a></span>&#160;  <span class="keyword">union </span>{</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> direct;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> climb;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> height;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  } <a class="code" href="vi_8h.html#a48952c7168ab1ee542d6f12589c70f1a">v_sp</a>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  } <a class="code" href="vi_8h.html#a3e49bc5063f03b187bbcbe0844e06b7a">v_sp</a>;</div>
 <div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="vi_8h.html#a162939a96b3aa3f484ac56972b3ed848">   73</a></span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="vi_8h.html#a162939a96b3aa3f484ac56972b3ed848">h_mode</a>;</div>
 <div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="vi_8h.html#a674114cf71c612f56690f88da76d7e21">   74</a></span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="vi_8h.html#a674114cf71c612f56690f88da76d7e21">v_mode</a>;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;};</div>
@@ -221,15 +221,14 @@ $(document).ready(function(){initNavTree('vi_8h_source.html','');});
 <div class="ttc" id="vi_8h_html_ab702300a590e9e8e881ab73eafa6e1f8"><div class="ttname"><a href="vi_8h.html#ab702300a590e9e8e881ab73eafa6e1f8">Vi_gps_info::pos</a></div><div class="ttdeci">struct Int32Vect3 pos</div><div class="ttdef"><b>Definition:</b> <a href="vi_8h_source.html#l00043">vi.h:43</a></div></div>
 <div class="ttc" id="vi_8h_html_a2174470bb84a5171bd9c0373bb1f06cf"><div class="ttname"><a href="vi_8h.html#a2174470bb84a5171bd9c0373bb1f06cf">Vi_gps_info::speed</a></div><div class="ttdeci">struct Int16Vect3 speed</div><div class="ttdef"><b>Definition:</b> <a href="vi_8h_source.html#l00044">vi.h:44</a></div></div>
 <div class="ttc" id="vi_8h_html_a4dff3e5cadc38f5e2b40b4684dd3c6d0"><div class="ttname"><a href="vi_8h.html#a4dff3e5cadc38f5e2b40b4684dd3c6d0">vi_impl_periodic</a></div><div class="ttdeci">void vi_impl_periodic(void)</div><div class="ttdef"><b>Definition:</b> <a href="vi__datalink_8c_source.html#l00028">vi_datalink.c:28</a></div></div>
+<div class="ttc" id="vi_8h_html_a3a3ffcacc9fabd63d14b03f8ce6c5a4c"><div class="ttname"><a href="vi_8h.html#a3a3ffcacc9fabd63d14b03f8ce6c5a4c">Vi_command::h_sp</a></div><div class="ttdeci">union Vi_command::@291 h_sp</div></div>
 <div class="ttc" id="navigation_8h_html"><div class="ttname"><a href="navigation_8h.html">navigation.h</a></div><div class="ttdoc">Rotorcraft navigation functions. </div></div>
 <div class="ttc" id="vi_8h_html_structVehicleInterface"><div class="ttname"><a href="vi_8h.html#structVehicleInterface">VehicleInterface</a></div><div class="ttdef"><b>Definition:</b> <a href="vi_8h_source.html#l00077">vi.h:77</a></div></div>
 <div class="ttc" id="vi_8h_html_a0e05949840bd7c88ec8d003230527932"><div class="ttname"><a href="vi_8h.html#a0e05949840bd7c88ec8d003230527932">vi_notify_mag_available</a></div><div class="ttdeci">void vi_notify_mag_available(void)</div></div>
 <div class="ttc" id="vi_8h_html_ad039a7a58d57d531b8993fd821475a94"><div class="ttname"><a href="vi_8h.html#ad039a7a58d57d531b8993fd821475a94">vi_notify_gps_available</a></div><div class="ttdeci">void vi_notify_gps_available(void)</div></div>
-<div class="ttc" id="vi_8h_html_a3414e073730bc3a3d9af573b9ac26505"><div class="ttname"><a href="vi_8h.html#a3414e073730bc3a3d9af573b9ac26505">Vi_command::h_sp</a></div><div class="ttdeci">union Vi_command::@289 h_sp</div></div>
 <div class="ttc" id="group__math__algebra__int_html_structInt16Vect3"><div class="ttname"><a href="group__math__algebra__int.html#structInt16Vect3">Int16Vect3</a></div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__int_8h_source.html#l00062">pprz_algebra_int.h:62</a></div></div>
 <div class="ttc" id="vi_8h_html_ae820aa2c5fb42815b8e60029c0ace3fa"><div class="ttname"><a href="vi_8h.html#ae820aa2c5fb42815b8e60029c0ace3fa">Vi_imu_info::accel</a></div><div class="ttdeci">struct Int16Vect3 accel</div><div class="ttdef"><b>Definition:</b> <a href="vi_8h_source.html#l00038">vi.h:38</a></div></div>
 <div class="ttc" id="vi_8h_html_ad561aa0f6e51fcc56e7379bd73806823"><div class="ttname"><a href="vi_8h.html#ad561aa0f6e51fcc56e7379bd73806823">VehicleInterface::info</a></div><div class="ttdeci">struct Vi_info info</div><div class="ttdef"><b>Definition:</b> <a href="vi_8h_source.html#l00081">vi.h:81</a></div></div>
-<div class="ttc" id="rotorcraft_2autopilot_8h_html"><div class="ttname"><a href="rotorcraft_2autopilot_8h.html">autopilot.h</a></div><div class="ttdoc">Autopilot modes. </div></div>
 <div class="ttc" id="guidance_8h_html"><div class="ttname"><a href="guidance_8h.html">guidance.h</a></div></div>
 <div class="ttc" id="vi_8h_html_a26e03024ed8fa0fb35399e3f8ad85def"><div class="ttname"><a href="vi_8h.html#a26e03024ed8fa0fb35399e3f8ad85def">Vi_gps_info::fix</a></div><div class="ttdeci">uint8_t fix</div><div class="ttdef"><b>Definition:</b> <a href="vi_8h_source.html#l00047">vi.h:47</a></div></div>
 <div class="ttc" id="group__math__algebra__int_html_structInt16Eulers"><div class="ttname"><a href="group__math__algebra__int.html#structInt16Eulers">Int16Eulers</a></div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__int_8h_source.html#l00137">pprz_algebra_int.h:137</a></div></div>
@@ -254,12 +253,13 @@ $(document).ready(function(){initNavTree('vi_8h_source.html','');});
 <div class="ttc" id="std_8h_html"><div class="ttname"><a href="std_8h.html">std.h</a></div></div>
 <div class="ttc" id="vi_8h_html_a8506365ba62fbde59e0d8c97a2bf7523"><div class="ttname"><a href="vi_8h.html#a8506365ba62fbde59e0d8c97a2bf7523">Vi_info::ahrs</a></div><div class="ttdeci">struct Vi_ahrs_info ahrs</div><div class="ttdef"><b>Definition:</b> <a href="vi_8h_source.html#l00058">vi.h:58</a></div></div>
 <div class="ttc" id="types_8h_html_a2ba621978a511250f7250fb10e05ffbe"><div class="ttname"><a href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a></div><div class="ttdeci">signed long int32_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00019">types.h:19</a></div></div>
-<div class="ttc" id="vi_8h_html_a48952c7168ab1ee542d6f12589c70f1a"><div class="ttname"><a href="vi_8h.html#a48952c7168ab1ee542d6f12589c70f1a">Vi_command::v_sp</a></div><div class="ttdeci">union Vi_command::@290 v_sp</div></div>
+<div class="ttc" id="autopilot_8h_html"><div class="ttname"><a href="autopilot_8h.html">autopilot.h</a></div><div class="ttdoc">Core autopilot interface common to all firmwares. </div></div>
 <div class="ttc" id="types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00014">types.h:14</a></div></div>
 <div class="ttc" id="vi_8h_html_a9029d0375622149abe074871ba771ed9"><div class="ttname"><a href="vi_8h.html#a9029d0375622149abe074871ba771ed9">vi_notify_baro_abs_available</a></div><div class="ttdeci">void vi_notify_baro_abs_available(void)</div></div>
 <div class="ttc" id="vi_8h_html_a7f72ee067479504eedf58fbc154e7f96"><div class="ttname"><a href="vi_8h.html#a7f72ee067479504eedf58fbc154e7f96">Vi_info::imu</a></div><div class="ttdeci">struct Vi_imu_info imu</div><div class="ttdef"><b>Definition:</b> <a href="vi_8h_source.html#l00056">vi.h:56</a></div></div>
 <div class="ttc" id="stabilization_8h_html"><div class="ttname"><a href="stabilization_8h.html">stabilization.h</a></div><div class="ttdoc">General stabilization interface for rotorcrafts. </div></div>
 <div class="ttc" id="vi_8h_html_a1bfd15310f8c8127120cad9efcdb05ed"><div class="ttname"><a href="vi_8h.html#a1bfd15310f8c8127120cad9efcdb05ed">VehicleInterface::last_msg</a></div><div class="ttdeci">uint8_t last_msg</div><div class="ttdef"><b>Definition:</b> <a href="vi_8h_source.html#l00080">vi.h:80</a></div></div>
+<div class="ttc" id="vi_8h_html_a3e49bc5063f03b187bbcbe0844e06b7a"><div class="ttname"><a href="vi_8h.html#a3e49bc5063f03b187bbcbe0844e06b7a">Vi_command::v_sp</a></div><div class="ttdeci">union Vi_command::@292 v_sp</div></div>
 <div class="ttc" id="vi_8h_html_ae5e1984ed0188c09d9bd0d0a39f281c3"><div class="ttname"><a href="vi_8h.html#ae5e1984ed0188c09d9bd0d0a39f281c3">vi_notify_imu_available</a></div><div class="ttdeci">void vi_notify_imu_available(void)</div></div>
 <div class="ttc" id="vi_8h_html_a66c48ea7afc8ba945d04e182efa49641"><div class="ttname"><a href="vi_8h.html#a66c48ea7afc8ba945d04e182efa49641">Vi_ahrs_info::rate</a></div><div class="ttdeci">struct Int16Eulers rate</div><div class="ttdef"><b>Definition:</b> <a href="vi_8h_source.html#l00052">vi.h:52</a></div></div>
 <div class="ttc" id="vi_8h_html_a69fde2065c05cc8523ed0c68a5787d83"><div class="ttname"><a href="vi_8h.html#a69fde2065c05cc8523ed0c68a5787d83">Vi_gps_info::pacc</a></div><div class="ttdeci">int32_t pacc</div><div class="ttdef"><b>Definition:</b> <a href="vi_8h_source.html#l00045">vi.h:45</a></div></div>
@@ -277,7 +277,7 @@ $(document).ready(function(){initNavTree('vi_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_372c0c9a1fec4794716fe8f0e2a7607d.html">vehicle_interface</a></li><li class="navelem"><a class="el" href="vi_8h.html">vi.h</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:01:29 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:01:46 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

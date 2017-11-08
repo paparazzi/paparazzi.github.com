@@ -10,8 +10,8 @@ var mt9f002_8h_structmt9f002__t =
     [ "input_clk_freq", "mt9f002_8h.html#a2750b71dc644a3f4ffab3534aafb9601", null ],
     [ "interface", "mt9f002_8h.html#a17ebb3099a3de005f62a4b4cfe4e58e4", null ],
     [ "line_length", "mt9f002_8h.html#ae88bd11f2d24f797421d71aa6655e29e", null ],
-    [ "offset_x", "mt9f002_8h.html#a3026cda87b2f3c9d79319133fab3e16a", null ],
-    [ "offset_y", "mt9f002_8h.html#a9011d838040bbcba7739fa66a249d2f4", null ],
+    [ "offset_x", "mt9f002_8h.html#a897c00ed679e03d3c88b6072ff8d2d17", null ],
+    [ "offset_y", "mt9f002_8h.html#a96ba78b97791d5dd4b48fd93e884c5df", null ],
     [ "op_pix_clk", "mt9f002_8h.html#a83b59364561430793cb7e5636ad8d94a", null ],
     [ "op_pix_clk_div", "mt9f002_8h.html#a1bf36fd79c5000761030e9abc9fb8e90", null ],
     [ "op_sys_clk_div", "mt9f002_8h.html#a0494d381eb2ab94b828ed9276ab87f41", null ],
@@ -31,5 +31,7 @@ var mt9f002_8h_structmt9f002__t =
     [ "target_fps", "mt9f002_8h.html#a47943ee02f8622898098ea08c06a1deb", null ],
     [ "vt_pix_clk", "mt9f002_8h.html#a5383a4355bbfe8a467cf06656dc75b79", null ],
     [ "vt_pix_clk_div", "mt9f002_8h.html#aafb5ec89e6247a97c9a9df1add7aaeec", null ],
-    [ "vt_sys_clk_div", "mt9f002_8h.html#a98203edac8ef72fdc8eac755024411b1", null ]
+    [ "vt_sys_clk_div", "mt9f002_8h.html#a98203edac8ef72fdc8eac755024411b1", null ],
+    [ "x_odd_inc", "mt9f002_8h.html#a230dd4d003b6a64ff1351fac054f0f17", null ],
+    [ "y_odd_inc", "mt9f002_8h.html#a92b2ef17c169985bba2ccbbf740f22e1", null ]
 ];

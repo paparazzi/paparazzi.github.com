@@ -18,6 +18,7 @@ var group__state__acceleration =
     [ "stateSetAccelNed_f", "group__state__acceleration.html#ga27b8f24af6ddce14389efaa5ec119967", null ],
     [ "stateSetAccelNed_i", "group__state__acceleration.html#ga44bccfd32b2928abef6b08c4f867c1be", null ],
     [ "accel_status", "group__state__acceleration.html#ga42a40deda3336374ca2d3322c9e176d9", null ],
+    [ "body_accel_i", "group__state__acceleration.html#ga15cfb41478e4b2e0105ab085d0711b9f", null ],
     [ "ecef_accel_f", "group__state__acceleration.html#ga142268eef832ae8363e8e1cab5a5fbdb", null ],
     [ "ecef_accel_i", "group__state__acceleration.html#ga56aa0e4e92547774a3848788833e383f", null ],
     [ "ned_accel_f", "group__state__acceleration.html#gad202fd9719da10eb69fe7b37a77523ff", null ],

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -172,6 +172,9 @@ $(document).ready(function(){initNavTree('globals_w.html','');});
 <li>W5100_DRDY_GPIO_PIN
 : <a class="el" href="w5100_8c.html#aa35df547875649ddf4f6cd0aa7a01121">w5100.c</a>
 </li>
+<li>w5100_event()
+: <a class="el" href="w5100_8h.html#a7266971e7bc00efad150ab73bbfc8c29">w5100.h</a>
+</li>
 <li>w5100_get()
 : <a class="el" href="w5100_8c.html#adc92dea40c158d4eb47238bb053ef8b1">w5100.c</a>
 </li>
@@ -189,8 +192,8 @@ $(document).ready(function(){initNavTree('globals_w.html','');});
 : <a class="el" href="w5100_8c.html#a455780f8178c7ad9c93bb668b60724fb">w5100.c</a>
 </li>
 <li>w5100_receive()
-: <a class="el" href="w5100_8h.html#abf3016ffe8faf50c1bf56f6f21ceb261">w5100.h</a>
-, <a class="el" href="w5100_8c.html#abf3016ffe8faf50c1bf56f6f21ceb261">w5100.c</a>
+: <a class="el" href="w5100_8c.html#abf3016ffe8faf50c1bf56f6f21ceb261">w5100.c</a>
+, <a class="el" href="w5100_8h.html#abf3016ffe8faf50c1bf56f6f21ceb261">w5100.h</a>
 </li>
 <li>w5100_rx_buf
 : <a class="el" href="w5100_8c.html#aaf8c4df492a46538b29a1787dd03abe9">w5100.c</a>
@@ -241,9 +244,6 @@ $(document).ready(function(){initNavTree('globals_w.html','');});
 </li>
 <li>W5100_TX_BUFFER_SIZE
 : <a class="el" href="w5100_8h.html#a0c5eb0f23b68f787843e4f74561d7bb2">w5100.h</a>
-</li>
-<li>W5100CheckAndParse
-: <a class="el" href="w5100_8h.html#ae42957e4c5c290503a90b1e8ea4c6220">w5100.h</a>
 </li>
 <li>W5100Status
 : <a class="el" href="w5100_8h.html#a1b86a774f206095259ed0b6034d24c60">w5100.h</a>
@@ -385,8 +385,8 @@ $(document).ready(function(){initNavTree('globals_w.html','');});
 , <a class="el" href="subsystems_2navigation_2waypoints_8h.html#a2c2d759f6328c40f66c4cc162da266bb">waypoints.h</a>
 </li>
 <li>WaypointX
-: <a class="el" href="subsystems_2navigation_2waypoints_8h.html#a2d51bcd8e90e2dea91009f895a452a22">waypoints.h</a>
-, <a class="el" href="common__nav_8h.html#a2d51bcd8e90e2dea91009f895a452a22">common_nav.h</a>
+: <a class="el" href="common__nav_8h.html#a2d51bcd8e90e2dea91009f895a452a22">common_nav.h</a>
+, <a class="el" href="subsystems_2navigation_2waypoints_8h.html#a2d51bcd8e90e2dea91009f895a452a22">waypoints.h</a>
 </li>
 <li>WaypointY
 : <a class="el" href="common__nav_8h.html#a983349c9ccc3f390fafe929d3c9fdd16">common_nav.h</a>
@@ -417,6 +417,39 @@ $(document).ready(function(){initNavTree('globals_w.html','');});
 : <a class="el" href="nav__survey__rectangle__rotorcraft_8h.html#aa8ad239dd32b3708375201570614abc5a59170bf407047306fe861eff5b52a4b9">nav_survey_rectangle_rotorcraft.h</a>
 , <a class="el" href="nav__survey__rectangle_8h.html#aa8ad239dd32b3708375201570614abc5a59170bf407047306fe861eff5b52a4b9">nav_survey_rectangle.h</a>
 </li>
+<li>WE_UKF_ALPHA
+: <a class="el" href="wind__estimator_8c.html#ad03bfc6992df01635b9e7b0f64144779">wind_estimator.c</a>
+</li>
+<li>WE_UKF_BETA
+: <a class="el" href="wind__estimator_8c.html#ad526e7cf6b003e5a0f09e397d2621a59">wind_estimator.c</a>
+</li>
+<li>WE_UKF_KI
+: <a class="el" href="wind__estimator_8c.html#a4a6369c9531e51c676f574118a63732b">wind_estimator.c</a>
+</li>
+<li>WE_UKF_P0
+: <a class="el" href="wind__estimator_8c.html#aa6692b10c033cc7e7cea920ac9588ce4">wind_estimator.c</a>
+</li>
+<li>WE_UKF_Q_VA
+: <a class="el" href="wind__estimator_8c.html#a45ac2c97d21d24fe1ae30934694204ef">wind_estimator.c</a>
+</li>
+<li>WE_UKF_Q_VA_SCALE
+: <a class="el" href="wind__estimator_8c.html#acb5d81d63606c60819f0a9d49d9254b1">wind_estimator.c</a>
+</li>
+<li>WE_UKF_Q_WIND
+: <a class="el" href="wind__estimator_8c.html#a7fd04dc3e94883737b7861ead42b87a5">wind_estimator.c</a>
+</li>
+<li>WE_UKF_R_AOA
+: <a class="el" href="wind__estimator_8c.html#a4c6d6b145bad46065332796c46be60e1">wind_estimator.c</a>
+</li>
+<li>WE_UKF_R_GS
+: <a class="el" href="wind__estimator_8c.html#afe5ad97c48defa2cbe70c2aa8ebfe2c0">wind_estimator.c</a>
+</li>
+<li>WE_UKF_R_SSA
+: <a class="el" href="wind__estimator_8c.html#a34a4bbfaaf4ecab48d45db88f3d122a0">wind_estimator.c</a>
+</li>
+<li>WE_UKF_R_VA
+: <a class="el" href="wind__estimator_8c.html#abf7bf11f3a1e04f899cffcde1c8812bb">wind_estimator.c</a>
+</li>
 <li>webcam
 : <a class="el" href="pc__sim_8h.html#abca45270f4f2c3b3f7e4cfbed49cc288">pc_sim.h</a>
 </li>
@@ -438,21 +471,68 @@ $(document).ready(function(){initNavTree('globals_w.html','');});
 <li>wind_estimate_high_res
 : <a class="el" href="guidance__hybrid_8c.html#ab507737a4a37f88df7b25bf7f923ad66">guidance_hybrid.c</a>
 </li>
+<li>wind_estimator
+: <a class="el" href="wind__estimator_8c.html#aaed8a383171cc0d9cd357c48fd73177c">wind_estimator.c</a>
+, <a class="el" href="wind__estimator_8h.html#aaed8a383171cc0d9cd357c48fd73177c">wind_estimator.h</a>
+</li>
+<li>wind_estimator_event()
+: <a class="el" href="wind__estimator_8h.html#af175c7aace58699751294cb06ccfa87b">wind_estimator.h</a>
+, <a class="el" href="wind__estimator_8c.html#af175c7aace58699751294cb06ccfa87b">wind_estimator.c</a>
+</li>
+<li>wind_estimator_init()
+: <a class="el" href="wind__estimator_8c.html#aeba75f12b0ae0a57b4269345a348e779">wind_estimator.c</a>
+, <a class="el" href="wind__estimator_8h.html#aeba75f12b0ae0a57b4269345a348e779">wind_estimator.h</a>
+</li>
+<li>wind_estimator_periodic()
+: <a class="el" href="wind__estimator_8c.html#a0a4f52d63873704d3581f69f44d71751">wind_estimator.c</a>
+, <a class="el" href="wind__estimator_8h.html#a0a4f52d63873704d3581f69f44d71751">wind_estimator.h</a>
+</li>
+<li>wind_estimator_Set_Q_VA()
+: <a class="el" href="wind__estimator_8c.html#aac1ea98dc22f8393cbf47f52b93ee575">wind_estimator.c</a>
+, <a class="el" href="wind__estimator_8h.html#aac1ea98dc22f8393cbf47f52b93ee575">wind_estimator.h</a>
+</li>
+<li>wind_estimator_Set_Q_VA_SCALE()
+: <a class="el" href="wind__estimator_8c.html#a522a42367833ed2b89d93db1a65c60a0">wind_estimator.c</a>
+, <a class="el" href="wind__estimator_8h.html#a522a42367833ed2b89d93db1a65c60a0">wind_estimator.h</a>
+</li>
+<li>wind_estimator_Set_Q_WIND()
+: <a class="el" href="wind__estimator_8c.html#a1929777051168286cce7032efbbe3162">wind_estimator.c</a>
+, <a class="el" href="wind__estimator_8h.html#a1929777051168286cce7032efbbe3162">wind_estimator.h</a>
+</li>
+<li>wind_estimator_Set_R_AOA()
+: <a class="el" href="wind__estimator_8c.html#a2c5c69e32a4d868eeb83d3e0febfc963">wind_estimator.c</a>
+, <a class="el" href="wind__estimator_8h.html#a2c5c69e32a4d868eeb83d3e0febfc963">wind_estimator.h</a>
+</li>
+<li>wind_estimator_Set_R_GS()
+: <a class="el" href="wind__estimator_8c.html#a7ee1b91b8335e5199e54cee9e6cb6bb7">wind_estimator.c</a>
+, <a class="el" href="wind__estimator_8h.html#a7ee1b91b8335e5199e54cee9e6cb6bb7">wind_estimator.h</a>
+</li>
+<li>wind_estimator_Set_R_SSA()
+: <a class="el" href="wind__estimator_8c.html#a6d738b207e828d54537e1ea30e75dbec">wind_estimator.c</a>
+, <a class="el" href="wind__estimator_8h.html#a6d738b207e828d54537e1ea30e75dbec">wind_estimator.h</a>
+</li>
+<li>wind_estimator_Set_R_VA()
+: <a class="el" href="wind__estimator_8h.html#a76abfd1db477f1492273deec4c8233ad">wind_estimator.h</a>
+, <a class="el" href="wind__estimator_8c.html#a76abfd1db477f1492273deec4c8233ad">wind_estimator.c</a>
+</li>
+<li>wind_estimator_step()
+: <a class="el" href="wind__estimator_8c.html#a9625948d6ba7c62cb2603ce28bfb5d56">wind_estimator.c</a>
+</li>
 <li>wind_gain
 : <a class="el" href="guidance__hybrid_8c.html#acc12829cc39cbdac5970322ba4bf0320">guidance_hybrid.c</a>
 , <a class="el" href="guidance__hybrid_8h.html#acc12829cc39cbdac5970322ba4bf0320">guidance_hybrid.h</a>
 </li>
 <li>wind_gfi_event()
-: <a class="el" href="wind__gfi_8c.html#a14f55e8dba7acc117480142381ac2b14">wind_gfi.c</a>
-, <a class="el" href="wind__gfi_8h.html#a14f55e8dba7acc117480142381ac2b14">wind_gfi.h</a>
+: <a class="el" href="wind__gfi_8h.html#a14f55e8dba7acc117480142381ac2b14">wind_gfi.h</a>
+, <a class="el" href="wind__gfi_8c.html#a14f55e8dba7acc117480142381ac2b14">wind_gfi.c</a>
 </li>
 <li>wind_gfi_init()
-: <a class="el" href="wind__gfi_8h.html#a9512180037f049d24e88b577056e2af5">wind_gfi.h</a>
-, <a class="el" href="wind__gfi_8c.html#a9512180037f049d24e88b577056e2af5">wind_gfi.c</a>
+: <a class="el" href="wind__gfi_8c.html#a9512180037f049d24e88b577056e2af5">wind_gfi.c</a>
+, <a class="el" href="wind__gfi_8h.html#a9512180037f049d24e88b577056e2af5">wind_gfi.h</a>
 </li>
 <li>wind_gfi_periodic()
-: <a class="el" href="wind__gfi_8c.html#a01df5bb8d91c672814726797d2ac05e5">wind_gfi.c</a>
-, <a class="el" href="wind__gfi_8h.html#a01df5bb8d91c672814726797d2ac05e5">wind_gfi.h</a>
+: <a class="el" href="wind__gfi_8h.html#a01df5bb8d91c672814726797d2ac05e5">wind_gfi.h</a>
+, <a class="el" href="wind__gfi_8c.html#a01df5bb8d91c672814726797d2ac05e5">wind_gfi.c</a>
 </li>
 <li>window_enabled
 : <a class="el" href="cv__blob__locator_8c.html#a5a024cd10893bb257884de34514e54ab">cv_blob_locator.c</a>
@@ -466,6 +546,28 @@ $(document).ready(function(){initNavTree('globals_w.html','');});
 <li>windturbine_periodic()
 : <a class="el" href="windturbine_8h.html#a44b819ec52bc8f9fe212c89113e2b835">windturbine.h</a>
 , <a class="el" href="windturbine_8c.html#a44b819ec52bc8f9fe212c89113e2b835">windturbine.c</a>
+</li>
+<li>WING_POS_DOWN_THRESH
+: <a class="el" href="glide__wing__lock_8c.html#ac8aeb305f0c7abfa9b418edb2448db24">glide_wing_lock.c</a>
+</li>
+<li>WING_POS_LOCK_MAX_THRESH
+: <a class="el" href="glide__wing__lock_8c.html#acb27f86ae3e5cb7cad3669b0b3cc7501">glide_wing_lock.c</a>
+</li>
+<li>WING_POS_LOCK_MIN_THRESH
+: <a class="el" href="glide__wing__lock_8c.html#a14bf7a1cf2995c9a0c27fbff4fa628e2">glide_wing_lock.c</a>
+</li>
+<li>WING_POS_LOCK_SWITCH
+: <a class="el" href="glide__wing__lock_8c.html#ad35711a0d70379899d223cc341c59ca3">glide_wing_lock.c</a>
+</li>
+<li>WING_POS_NOMINAL_THRUST
+: <a class="el" href="glide__wing__lock_8c.html#aad3170b4005943ff924e12ac87530c4f">glide_wing_lock.c</a>
+</li>
+<li>wls_alloc()
+: <a class="el" href="wls__alloc_8c.html#ab835ef4e4c3f872177ddb0dbc4e9eb45">wls_alloc.c</a>
+, <a class="el" href="wls__alloc_8h.html#a05bd41ae464753af8d7647e4543dc47b">wls_alloc.h</a>
+</li>
+<li>WLS_VERBOSE
+: <a class="el" href="wls__alloc_8c.html#a29c662bf90acd6a86c4c37c670018e2f">wls_alloc.c</a>
 </li>
 <li>WMM2015_FRAC
 : <a class="el" href="group__math__geodetic__wmm.html#gaff1ae2e3ec5aff1f63189e3ce6a9e6dc">pprz_geodetic_wmm2015.h</a>
@@ -507,13 +609,12 @@ $(document).ready(function(){initNavTree('globals_w.html','');});
 : <a class="el" href="exif__module_8c.html#a5e636f6bee9bd1ab6d04ec780509dca5">exif_module.c</a>
 , <a class="el" href="exif__module_8h.html#a5e636f6bee9bd1ab6d04ec780509dca5">exif_module.h</a>
 </li>
-<li>write_reg()
-: <a class="el" href="mt9f002_8c.html#ab00cad0726a874bbfacc6481624e7463">mt9f002.c</a>
-, <a class="el" href="mt9v117_8c.html#a930a08d54ce09662cbac826ff7a052bf">mt9v117.c</a>
+<li>write_file()
+: <a class="el" href="pwm__sysfs_8c.html#ad00f6141458677eb0aaee87f85c7954d">pwm_sysfs.c</a>
 </li>
-<li>write_serial_rot()
-: <a class="el" href="state2camera_8h.html#a6962b193c7b3c3a2c020d777cbc49aff">state2camera.h</a>
-, <a class="el" href="state2camera_8c.html#afbfddebf3fbf3a59f88205f65f79c76c">state2camera.c</a>
+<li>write_reg()
+: <a class="el" href="mt9v117_8c.html#a930a08d54ce09662cbac826ff7a052bf">mt9v117.c</a>
+, <a class="el" href="mt9f002_8c.html#ab00cad0726a874bbfacc6481624e7463">mt9f002.c</a>
 </li>
 <li>write_sysfs_int()
 : <a class="el" href="linux_2mcu__periph_2adc__arch_8c.html#ad3e249549a50a2d6c16d1bb1ab3be7e9">adc_arch.c</a>
@@ -523,10 +624,6 @@ $(document).ready(function(){initNavTree('globals_w.html','');});
 </li>
 <li>writel
 : <a class="el" href="libisp_8c.html#a9b78127e4ff19f19c9fb86d66e3c4ee1">libisp.c</a>
-</li>
-<li>WritePart()
-: <a class="el" href="stereoprotocol_8c.html#a9c5cab2d1b06309028a56504c1062079">stereoprotocol.c</a>
-, <a class="el" href="stereoprotocol_8h.html#abee6ddef00bd9217217b890f97777fdf">stereoprotocol.h</a>
 </li>
 <li>writePCAP01_firmware()
 : <a class="el" href="humid__pcap01_8h.html#a7ec863182ab246920078b78e17003bd4">humid_pcap01.h</a>
@@ -541,7 +638,7 @@ $(document).ready(function(){initNavTree('globals_w.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Oct 1 2016 14:02:45 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:03:16 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

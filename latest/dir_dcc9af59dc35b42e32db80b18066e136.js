@@ -1,5 +1,6 @@
 var dir_dcc9af59dc35b42e32db80b18066e136 =
 [
+    [ "lib_ukf_wind_estimator", "dir_52cf33ca6ff4e1b7a3968aed8ced90c8.html", "dir_52cf33ca6ff4e1b7a3968aed8ced90c8" ],
     [ "charge_sens.c", "charge__sens_8c.html", "charge__sens_8c" ],
     [ "charge_sens.h", "charge__sens_8h.html", "charge__sens_8h" ],
     [ "dust_gp2y.c", "dust__gp2y_8c.html", "dust__gp2y_8c" ],
@@ -18,6 +19,8 @@ var dir_dcc9af59dc35b42e32db80b18066e136 =
     [ "humid_sht.h", "humid__sht_8h.html", "humid__sht_8h" ],
     [ "humid_sht_i2c.c", "humid__sht__i2c_8c.html", "humid__sht__i2c_8c" ],
     [ "humid_sht_i2c.h", "humid__sht__i2c_8h.html", "humid__sht__i2c_8h" ],
+    [ "humid_sht_uart.c", "humid__sht__uart_8c.html", "humid__sht__uart_8c" ],
+    [ "humid_sht_uart.h", "humid__sht__uart_8h.html", "humid__sht__uart_8h" ],
     [ "ir_mlx.c", "ir__mlx_8c.html", "ir__mlx_8c" ],
     [ "ir_mlx.h", "ir__mlx_8h.html", "ir__mlx_8h" ],
     [ "light_solar.c", "light__solar_8c.html", "light__solar_8c" ],
@@ -40,6 +43,8 @@ var dir_dcc9af59dc35b42e32db80b18066e136 =
     [ "temp_temod.h", "temp__temod_8h.html", "temp__temod_8h" ],
     [ "temp_tmp102.c", "temp__tmp102_8c.html", "temp__tmp102_8c" ],
     [ "temp_tmp102.h", "temp__tmp102_8h.html", "temp__tmp102_8h" ],
+    [ "wind_estimator.c", "wind__estimator_8c.html", "wind__estimator_8c" ],
+    [ "wind_estimator.h", "wind__estimator_8h.html", "wind__estimator_8h" ],
     [ "wind_gfi.c", "wind__gfi_8c.html", "wind__gfi_8c" ],
     [ "wind_gfi.h", "wind__gfi_8h.html", "wind__gfi_8h" ],
     [ "windturbine.c", "windturbine_8c.html", "windturbine_8c" ],

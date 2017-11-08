@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -132,7 +132,7 @@ $(document).ready(function(){initNavTree('stabilization__attitude__quat__transfo
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__attitude__quat__transformations_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2firmwares_2rotorcraft_2stabilization_2stabilization__attitude__quat__transformations_8hdep" alt=""/></div>
 <map name="sw_2airborne_2firmwares_2rotorcraft_2stabilization_2stabilization__attitude__quat__transformations_8hdep" id="sw_2airborne_2firmwares_2rotorcraft_2stabilization_2stabilization__attitude__quat__transformations_8hdep">
-<area shape="rect" id="node2" href="stabilization__attitude__heli__indi_8c.html" title="Helicopter quaternion INDI attitude stabilization. " alt="" coords="5,124,172,195"/><area shape="rect" id="node3" href="stabilization__attitude__quat__float_8c.html" title="Quaternion attitude stabilization (floating point). " alt="" coords="196,124,363,195"/><area shape="rect" id="node4" href="stabilization__attitude__quat__int_8c.html" title="Rotorcraft quaternion attitude stabilization. " alt="" coords="387,124,553,195"/><area shape="rect" id="node5" href="stabilization__attitude__quat__transformations_8c.html" title="Quaternion transformation functions. " alt="" coords="578,124,757,195"/><area shape="rect" id="node6" href="stabilization__indi_8c.html" title="sw/airborne/firmwares\l/rotorcraft/stabilization\l/stabilization_indi.c" alt="" coords="781,131,948,187"/></map>
+<area shape="rect" id="node2" href="stabilization__attitude__heli__indi_8c.html" title="Helicopter quaternion INDI attitude stabilization. " alt="" coords="5,124,172,195"/><area shape="rect" id="node3" href="stabilization__attitude__quat__float_8c.html" title="Quaternion attitude stabilization (floating point). " alt="" coords="196,124,363,195"/><area shape="rect" id="node4" href="stabilization__attitude__quat__int_8c.html" title="Rotorcraft quaternion attitude stabilization. " alt="" coords="387,124,553,195"/><area shape="rect" id="node5" href="stabilization__attitude__quat__transformations_8c.html" title="Quaternion transformation functions. " alt="" coords="578,124,757,195"/><area shape="rect" id="node6" href="stabilization__indi_8c.html" title="sw/airborne/firmwares\l/rotorcraft/stabilization\l/stabilization_indi.c" alt="" coords="781,131,948,187"/><area shape="rect" id="node7" href="stabilization__indi__simple_8c.html" title="sw/airborne/firmwares\l/rotorcraft/stabilization\l/stabilization_indi_simple.c" alt="" coords="972,131,1163,187"/></map>
 </div>
 </div>
 <p><a href="stabilization__attitude__quat__transformations_8h_source.html">Go to the source code of this file.</a></p>
@@ -182,11 +182,11 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000012">Todo:</a></b></dt><dd>optimize yaw angle calculation </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000018">Todo:</a></b></dt><dd>optimize yaw angle calculation </dd></dl>
 
 <p>Definition at line <a class="el" href="stabilization__attitude__quat__transformations_8c_source.html#l00063">63</a> of file <a class="el" href="stabilization__attitude__quat__transformations_8c_source.html">stabilization_attitude_quat_transformations.c</a>.</p>
 
-<p>References <a class="el" href="pprz__algebra__float_8c_source.html#l00300">float_quat_comp()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00354">float_quat_normalize()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00480">float_quat_of_orientation_vect()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00370">float_quat_wrap_shortest()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00216">float_rmat_of_quat()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00150">FLOAT_VECT3_NORM</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00078">FloatRMat::m</a>, <a class="el" href="pprz__algebra_8h_source.html#l00516">QUAT_ASSIGN</a>, <a class="el" href="pprz__algebra_8h_source.html#l00124">VECT3_ASSIGN</a>, <a class="el" href="pprz__algebra_8h_source.html#l00243">VECT3_CROSS_PRODUCT</a>, <a class="el" href="pprz__algebra_8h_source.html#l00181">VECT3_DIFF</a>, <a class="el" href="pprz__algebra_8h_source.html#l00249">VECT3_DOT_PRODUCT</a>, <a class="el" href="pprz__algebra_8h_source.html#l00188">VECT3_SMUL</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00050">FloatVect2::x</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00051">FloatVect2::y</a>.</p>
+<p>References <a class="el" href="pprz__algebra__float_8c_source.html#l00320">float_quat_comp()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00366">float_quat_normalize()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00533">float_quat_of_orientation_vect()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00382">float_quat_wrap_shortest()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00236">float_rmat_of_quat()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00150">FLOAT_VECT3_NORM</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00078">FloatRMat::m</a>, <a class="el" href="pprz__algebra_8h_source.html#l00527">QUAT_ASSIGN</a>, <a class="el" href="pprz__algebra_8h_source.html#l00124">VECT3_ASSIGN</a>, <a class="el" href="pprz__algebra_8h_source.html#l00243">VECT3_CROSS_PRODUCT</a>, <a class="el" href="pprz__algebra_8h_source.html#l00181">VECT3_DIFF</a>, <a class="el" href="pprz__algebra_8h_source.html#l00249">VECT3_DOT_PRODUCT</a>, <a class="el" href="pprz__algebra_8h_source.html#l00188">VECT3_SMUL</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00050">FloatVect2::x</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00051">FloatVect2::y</a>.</p>
 
 <p>Referenced by <a class="el" href="stabilization__attitude__quat__transformations_8c_source.html#l00048">quat_from_earth_cmd_i()</a>, and <a class="el" href="stabilization__attitude__quat__float_8c_source.html#l00218">stabilization_attitude_set_earth_cmd_i()</a>.</p>
 
@@ -208,7 +208,7 @@ Functions</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__attitude__quat__transformations_8h_a875d6ee5cde39474c4ce13dd340cb262_icgraph.png" border="0" usemap="#stabilization__attitude__quat__transformations_8h_a875d6ee5cde39474c4ce13dd340cb262_icgraph" alt=""/></div>
 <map name="stabilization__attitude__quat__transformations_8h_a875d6ee5cde39474c4ce13dd340cb262_icgraph" id="stabilization__attitude__quat__transformations_8h_a875d6ee5cde39474c4ce13dd340cb262_icgraph">
-<area shape="rect" id="node2" href="stabilization__attitude__quat__transformations_8h.html#acfb3bfa8af4aebad848717cd26aa78ee" title="quat_from_earth_cmd_i" alt="" coords="228,46,403,73"/><area shape="rect" id="node6" href="stabilization__attitude__quat__float_8c.html#ada3ef183c206d08fd0a902adc118f542" title="stabilization_attitude\l_set_earth_cmd_i" alt="" coords="238,97,393,139"/><area shape="rect" id="node3" href="stabilization__attitude__heli__indi_8c.html#ada3ef183c206d08fd0a902adc118f542" title="stabilization_attitude\l_set_earth_cmd_i" alt="" coords="451,5,605,47"/><area shape="rect" id="node4" href="stabilization__indi_8h.html#a487bd4ac66f844d9d1adfb696f950604" title="stabilization_indi\l_set_earth_cmd_i" alt="" coords="461,71,595,112"/><area shape="rect" id="node5" href="stabilization__attitude__quat__indi_8c.html#ada3ef183c206d08fd0a902adc118f542" title="stabilization_attitude\l_set_earth_cmd_i" alt="" coords="653,71,808,112"/></map>
+<area shape="rect" id="node2" href="stabilization__attitude__quat__transformations_8h.html#acfb3bfa8af4aebad848717cd26aa78ee" title="quat_from_earth_cmd_i" alt="" coords="228,46,403,73"/><area shape="rect" id="node6" href="stabilization__attitude__quat__float_8c.html#ada3ef183c206d08fd0a902adc118f542" title="stabilization_attitude\l_set_earth_cmd_i" alt="" coords="238,97,393,139"/><area shape="rect" id="node3" href="stabilization__attitude__heli__indi_8c.html#ada3ef183c206d08fd0a902adc118f542" title="stabilization_attitude\l_set_earth_cmd_i" alt="" coords="451,5,605,47"/><area shape="rect" id="node4" href="stabilization__indi__simple_8h.html#a487bd4ac66f844d9d1adfb696f950604" title="Set attitude setpoint from command in earth axes. " alt="" coords="461,71,595,112"/><area shape="rect" id="node5" href="stabilization__attitude__quat__indi_8c.html#ada3ef183c206d08fd0a902adc118f542" title="stabilization_attitude\l_set_earth_cmd_i" alt="" coords="653,71,808,112"/></map>
 </div>
 </p>
 
@@ -246,9 +246,9 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="stabilization__attitude__quat__transformations_8c_source.html#l00048">48</a> of file <a class="el" href="stabilization__attitude__quat__transformations_8c_source.html">stabilization_attitude_quat_transformations.c</a>.</p>
 
-<p>References <a class="el" href="pprz__algebra__int_8h_source.html#l00211">ANGLE_FLOAT_OF_BFP</a>, <a class="el" href="pprz__algebra_8h_source.html#l00685">QUAT_BFP_OF_REAL</a>, <a class="el" href="stabilization__attitude__quat__transformations_8c_source.html#l00063">quat_from_earth_cmd_f()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00050">FloatVect2::x</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00084">Int32Vect2::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00051">FloatVect2::y</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00085">Int32Vect2::y</a>.</p>
+<p>References <a class="el" href="pprz__algebra__int_8h_source.html#l00211">ANGLE_FLOAT_OF_BFP</a>, <a class="el" href="pprz__algebra_8h_source.html#l00699">QUAT_BFP_OF_REAL</a>, <a class="el" href="stabilization__attitude__quat__transformations_8c_source.html#l00063">quat_from_earth_cmd_f()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00050">FloatVect2::x</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00084">Int32Vect2::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00051">FloatVect2::y</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00085">Int32Vect2::y</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__attitude__heli__indi_8c_source.html#l00589">stabilization_attitude_set_earth_cmd_i()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00191">stabilization_indi_set_earth_cmd_i()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__attitude__heli__indi_8c_source.html#l00589">stabilization_attitude_set_earth_cmd_i()</a>, and <a class="el" href="stabilization__indi_8c_source.html#l00320">stabilization_indi_set_earth_cmd_i()</a>.</p>
 
 <p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -268,7 +268,7 @@ Functions</h2></td></tr>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__attitude__quat__transformations_8h_acfb3bfa8af4aebad848717cd26aa78ee_icgraph.png" border="0" usemap="#stabilization__attitude__quat__transformations_8h_acfb3bfa8af4aebad848717cd26aa78ee_icgraph" alt=""/></div>
 <map name="stabilization__attitude__quat__transformations_8h_acfb3bfa8af4aebad848717cd26aa78ee_icgraph" id="stabilization__attitude__quat__transformations_8h_acfb3bfa8af4aebad848717cd26aa78ee_icgraph">
-<area shape="rect" id="node2" href="stabilization__attitude__heli__indi_8c.html#ada3ef183c206d08fd0a902adc118f542" title="stabilization_attitude\l_set_earth_cmd_i" alt="" coords="228,5,383,47"/><area shape="rect" id="node3" href="stabilization__indi_8h.html#a487bd4ac66f844d9d1adfb696f950604" title="stabilization_indi\l_set_earth_cmd_i" alt="" coords="238,71,373,112"/><area shape="rect" id="node4" href="stabilization__attitude__quat__indi_8c.html#ada3ef183c206d08fd0a902adc118f542" title="stabilization_attitude\l_set_earth_cmd_i" alt="" coords="431,71,585,112"/></map>
+<area shape="rect" id="node2" href="stabilization__attitude__heli__indi_8c.html#ada3ef183c206d08fd0a902adc118f542" title="stabilization_attitude\l_set_earth_cmd_i" alt="" coords="228,5,383,47"/><area shape="rect" id="node3" href="stabilization__indi__simple_8h.html#a487bd4ac66f844d9d1adfb696f950604" title="Set attitude setpoint from command in earth axes. " alt="" coords="238,71,373,112"/><area shape="rect" id="node4" href="stabilization__attitude__quat__indi_8c.html#ada3ef183c206d08fd0a902adc118f542" title="stabilization_attitude\l_set_earth_cmd_i" alt="" coords="431,71,585,112"/></map>
 </div>
 </p>
 
@@ -300,7 +300,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="stabilization__attitude__quat__transformations_8c_source.html#l00037">37</a> of file <a class="el" href="stabilization__attitude__quat__transformations_8c_source.html">stabilization_attitude_quat_transformations.c</a>.</p>
 
-<p>References <a class="el" href="pprz__algebra__float_8c_source.html#l00480">float_quat_of_orientation_vect()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00085">FloatEulers::phi</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00087">FloatEulers::psi</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00086">FloatEulers::theta</a>.</p>
+<p>References <a class="el" href="pprz__algebra__float_8c_source.html#l00533">float_quat_of_orientation_vect()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00085">FloatEulers::phi</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00087">FloatEulers::psi</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00086">FloatEulers::theta</a>.</p>
 
 <p>Referenced by <a class="el" href="stabilization__attitude__quat__transformations_8c_source.html#l00028">quat_from_rpy_cmd_i()</a>.</p>
 
@@ -322,7 +322,7 @@ Functions</h2></td></tr>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__attitude__quat__transformations_8h_a10ec980ce6bc935ea53ec3bfca04fe3d_icgraph.png" border="0" usemap="#stabilization__attitude__quat__transformations_8h_a10ec980ce6bc935ea53ec3bfca04fe3d_icgraph" alt=""/></div>
 <map name="stabilization__attitude__quat__transformations_8h_a10ec980ce6bc935ea53ec3bfca04fe3d_icgraph" id="stabilization__attitude__quat__transformations_8h_a10ec980ce6bc935ea53ec3bfca04fe3d_icgraph">
-<area shape="rect" id="node2" href="stabilization__attitude__quat__transformations_8h.html#a781fdef7edec84ea09c1faf34d1316e8" title="quat_from_rpy_cmd_i" alt="" coords="215,13,375,39"/><area shape="rect" id="node3" href="stabilization__indi_8h.html#aac24f92be2dd7af42e3e7906a1324fe9" title="stabilization_indi\l_set_rpy_setpoint_i" alt="" coords="423,5,568,47"/><area shape="rect" id="node4" href="stabilization__attitude__quat__indi_8c.html#ac064607f64988793cadfe5ed346b269f" title="stabilization_attitude\l_set_rpy_setpoint_i" alt="" coords="616,5,771,47"/></map>
+<area shape="rect" id="node2" href="stabilization__attitude__quat__transformations_8h.html#a781fdef7edec84ea09c1faf34d1316e8" title="quat_from_rpy_cmd_i" alt="" coords="215,5,375,32"/></map>
 </div>
 </p>
 
@@ -354,9 +354,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="stabilization__attitude__quat__transformations_8c_source.html#l00028">28</a> of file <a class="el" href="stabilization__attitude__quat__transformations_8c_source.html">stabilization_attitude_quat_transformations.c</a>.</p>
 
-<p>References <a class="el" href="pprz__algebra_8h_source.html#l00642">EULERS_FLOAT_OF_BFP</a>, <a class="el" href="pprz__algebra_8h_source.html#l00685">QUAT_BFP_OF_REAL</a>, and <a class="el" href="stabilization__attitude__quat__transformations_8c_source.html#l00037">quat_from_rpy_cmd_f()</a>.</p>
-
-<p>Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00183">stabilization_indi_set_rpy_setpoint_i()</a>.</p>
+<p>References <a class="el" href="pprz__algebra_8h_source.html#l00656">EULERS_FLOAT_OF_BFP</a>, <a class="el" href="pprz__algebra_8h_source.html#l00699">QUAT_BFP_OF_REAL</a>, and <a class="el" href="stabilization__attitude__quat__transformations_8c_source.html#l00037">quat_from_rpy_cmd_f()</a>.</p>
 
 <p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -369,17 +367,6 @@ Functions</h2></td></tr>
 </div>
 </p>
 
-<p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="stabilization__attitude__quat__transformations_8h_a781fdef7edec84ea09c1faf34d1316e8_icgraph.png" border="0" usemap="#stabilization__attitude__quat__transformations_8h_a781fdef7edec84ea09c1faf34d1316e8_icgraph" alt=""/></div>
-<map name="stabilization__attitude__quat__transformations_8h_a781fdef7edec84ea09c1faf34d1316e8_icgraph" id="stabilization__attitude__quat__transformations_8h_a781fdef7edec84ea09c1faf34d1316e8_icgraph">
-<area shape="rect" id="node2" href="stabilization__indi_8h.html#aac24f92be2dd7af42e3e7906a1324fe9" title="stabilization_indi\l_set_rpy_setpoint_i" alt="" coords="213,5,359,47"/><area shape="rect" id="node3" href="stabilization__attitude__quat__indi_8c.html#ac064607f64988793cadfe5ed346b269f" title="stabilization_attitude\l_set_rpy_setpoint_i" alt="" coords="407,5,561,47"/></map>
-</div>
-</p>
-
 </div>
 </div>
 </div><!-- contents -->
@@ -388,7 +375,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_e37d355c72eb7c8e5b43c34bdea5a24b.html">rotorcraft</a></li><li class="navelem"><a class="el" href="dir_d1b81cc433edb6118e3c3e3bc7700be0.html">stabilization</a></li><li class="navelem"><a class="el" href="stabilization__attitude__quat__transformations_8h.html">stabilization_attitude_quat_transformations.h</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:01:49 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:02:11 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -7,6 +7,8 @@ var dir_12fb52dac4e3837dec02c6544f4d82f8 =
     [ "alt_filter.h", "alt__filter_8h.html", "alt__filter_8h" ],
     [ "imu_chimu.c", "imu__chimu_8c.html", "imu__chimu_8c" ],
     [ "imu_chimu.h", "imu__chimu_8h.html", "imu__chimu_8h" ],
+    [ "imu_temp_ctrl.c", "imu__temp__ctrl_8c.html", "imu__temp__ctrl_8c" ],
+    [ "imu_temp_ctrl.h", "imu__temp__ctrl_8h.html", "imu__temp__ctrl_8h" ],
     [ "imu_xsens.c", "imu__xsens_8c.html", "imu__xsens_8c" ],
     [ "imu_xsens.h", "imu__xsens_8h.html", "imu__xsens_8h" ],
     [ "ins_arduimu.c", "modules_2ins_2ins__arduimu_8c.html", "modules_2ins_2ins__arduimu_8c" ],

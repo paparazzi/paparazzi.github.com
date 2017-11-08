@@ -4,6 +4,8 @@ var imu__drotek__10dof__v2_8h =
       [ "hmc", "imu__drotek__10dof__v2_8h.html#a6f03fbaaa3f948fc563e18a4eb962e86", null ],
       [ "mpu", "imu__drotek__10dof__v2_8h.html#acb1e3fe77292b3a5b75aab732f13c853", null ]
     ] ],
+    [ "DROTEK_2_ACCEL_RANGE", "imu__drotek__10dof__v2_8h.html#a1c3ca37cded23ef693d12ba3d75bae82", null ],
+    [ "DROTEK_2_GYRO_RANGE", "imu__drotek__10dof__v2_8h.html#a1de887123c1fabb4c456d20ed1ce4261", null ],
     [ "IMU_ACCEL_X_SENS", "imu__drotek__10dof__v2_8h.html#a8ac88fc00cde506229b92c6a1e2c3122", null ],
     [ "IMU_ACCEL_X_SENS_DEN", "imu__drotek__10dof__v2_8h.html#a8acf299c1bfb2daa92b1894556ca50ad", null ],
     [ "IMU_ACCEL_X_SENS_NUM", "imu__drotek__10dof__v2_8h.html#ada91099469f16df2d8aeafa82d365c4b", null ],

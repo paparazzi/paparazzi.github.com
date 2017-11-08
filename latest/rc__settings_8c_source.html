@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>Paparazzi UAS: sw/airborne/rc_settings.c Source File</title>
+<title>Paparazzi UAS: sw/airborne/modules/settings/rc_settings.c Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -135,8 +135,8 @@ $(document).ready(function(){initNavTree('rc__settings_8c_source.html','');});
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="inttypes_8h.html">inttypes.h</a>&gt;</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;generated/radio.h&quot;</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="rc__settings_8h.html">rc_settings.h</a>&quot;</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;autopilot.h&quot;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="rc__settings_8h.html">modules/settings/rc_settings.h</a>&quot;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="autopilot_8h.html">autopilot.h</a>&quot;</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="nav_8h.html">firmwares/fixedwing/nav.h</a>&quot;</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="infrared_8h.html">subsystems/sensors/infrared.h</a>&quot;</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="inter__mcu_8h.html">inter_mcu.h</a>&quot;</span></div>
@@ -168,6 +168,7 @@ $(document).ready(function(){initNavTree('rc__settings_8c_source.html','');});
 <div class="ttc" id="rc__settings_8c_html_a70dfba35cc80c7b5f4da8c2f4aa18181"><div class="ttname"><a href="rc__settings_8c.html#a70dfba35cc80c7b5f4da8c2f4aa18181">rc_settings</a></div><div class="ttdeci">void rc_settings(bool mode_changed)</div><div class="ttdoc">Includes generated code from tuning_rc.xml. </div><div class="ttdef"><b>Definition:</b> <a href="rc__settings_8c_source.html#l00049">rc_settings.c:49</a></div></div>
 <div class="ttc" id="rc__settings_8c_html_a44c7519d24a1210b4195b65831c08f23"><div class="ttname"><a href="rc__settings_8c.html#a44c7519d24a1210b4195b65831c08f23">slider_1_val</a></div><div class="ttdeci">float slider_1_val</div><div class="ttdef"><b>Definition:</b> <a href="rc__settings_8c_source.html#l00035">rc_settings.c:35</a></div></div>
 <div class="ttc" id="inttypes_8h_html"><div class="ttname"><a href="inttypes_8h.html">inttypes.h</a></div></div>
+<div class="ttc" id="autopilot_8h_html"><div class="ttname"><a href="autopilot_8h.html">autopilot.h</a></div><div class="ttdoc">Core autopilot interface common to all firmwares. </div></div>
 <div class="ttc" id="types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00014">types.h:14</a></div></div>
 <div class="ttc" id="rc__settings_8c_html_a909a5b6579e0b5302fd1847650a3219d"><div class="ttname"><a href="rc__settings_8c.html#a909a5b6579e0b5302fd1847650a3219d">slider_2_val</a></div><div class="ttdeci">float slider_2_val</div><div class="ttdef"><b>Definition:</b> <a href="rc__settings_8c_source.html#l00035">rc_settings.c:35</a></div></div>
 <div class="ttc" id="nav_8h_html"><div class="ttname"><a href="nav_8h.html">nav.h</a></div><div class="ttdoc">Fixedwing Navigation library. </div></div>
@@ -176,8 +177,8 @@ $(document).ready(function(){initNavTree('rc__settings_8c_source.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="rc__settings_8c.html">rc_settings.c</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:01:30 for Paparazzi UAS by
+    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_0ffb72b393f856c1d135a16a5bad050f.html">settings</a></li><li class="navelem"><a class="el" href="rc__settings_8c.html">rc_settings.c</a></li>
+    <li class="footer">Generated on Wed Nov 8 2017 10:01:46 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

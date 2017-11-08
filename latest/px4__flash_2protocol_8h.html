@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -231,9 +231,9 @@ Macros</h2></td></tr>
 <tr class="separator:af6db3a645efeefcca3a10ff1a32e0c8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a178ccd14f02c958b129586b2d1169178"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#a178ccd14f02c958b129586b2d1169178">PX4IO_P_STATUS_ALARMS_TEMPERATURE</a>&#160;&#160;&#160;(1 &lt;&lt; 1) /* board temperature is high */</td></tr>
 <tr class="separator:a178ccd14f02c958b129586b2d1169178"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a812b0e517685b8904594c70050a29415"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#a812b0e517685b8904594c70050a29415">PX4IO_P_STATUS_ALARMS_SERVO_CURRENT</a>&#160;&#160;&#160;(1 &lt;&lt; 2) /* [1] servo <a class="el" href="fixedwing_2autopilot_8h.html#ae6a404c4d3d4da15402e4a8629e7e272">current</a> limit was exceeded */</td></tr>
+<tr class="memitem:a812b0e517685b8904594c70050a29415"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#a812b0e517685b8904594c70050a29415">PX4IO_P_STATUS_ALARMS_SERVO_CURRENT</a>&#160;&#160;&#160;(1 &lt;&lt; 2) /* [1] servo <a class="el" href="fixedwing_2autopilot__firmware_8h.html#ae6a404c4d3d4da15402e4a8629e7e272">current</a> limit was exceeded */</td></tr>
 <tr class="separator:a812b0e517685b8904594c70050a29415"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c84d9b111ed89f29865e8851da13778"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#a0c84d9b111ed89f29865e8851da13778">PX4IO_P_STATUS_ALARMS_ACC_CURRENT</a>&#160;&#160;&#160;(1 &lt;&lt; 3) /* [1] accessory <a class="el" href="fixedwing_2autopilot_8h.html#ae6a404c4d3d4da15402e4a8629e7e272">current</a> limit was exceeded */</td></tr>
+<tr class="memitem:a0c84d9b111ed89f29865e8851da13778"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#a0c84d9b111ed89f29865e8851da13778">PX4IO_P_STATUS_ALARMS_ACC_CURRENT</a>&#160;&#160;&#160;(1 &lt;&lt; 3) /* [1] accessory <a class="el" href="fixedwing_2autopilot__firmware_8h.html#ae6a404c4d3d4da15402e4a8629e7e272">current</a> limit was exceeded */</td></tr>
 <tr class="separator:a0c84d9b111ed89f29865e8851da13778"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34db300d7174592567fbf89cbce30d51"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#a34db300d7174592567fbf89cbce30d51">PX4IO_P_STATUS_ALARMS_FMU_LOST</a>&#160;&#160;&#160;(1 &lt;&lt; 4) /* timed out waiting for controls from FMU */</td></tr>
 <tr class="separator:a34db300d7174592567fbf89cbce30d51"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -245,7 +245,7 @@ Macros</h2></td></tr>
 <tr class="separator:aa2dcbb34e355f9ea0e5c3d082fb8d719"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a48acd59a573b52546f7ef60bb54b38"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#a6a48acd59a573b52546f7ef60bb54b38">PX4IO_P_STATUS_VBATT</a>&#160;&#160;&#160;4 /* [1] battery voltage in mV */</td></tr>
 <tr class="separator:a6a48acd59a573b52546f7ef60bb54b38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d804062f60144969e6a64f5df5e6a9e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#a8d804062f60144969e6a64f5df5e6a9e">PX4IO_P_STATUS_IBATT</a>&#160;&#160;&#160;5 /* [1] battery <a class="el" href="fixedwing_2autopilot_8h.html#ae6a404c4d3d4da15402e4a8629e7e272">current</a> (raw ADC) */</td></tr>
+<tr class="memitem:a8d804062f60144969e6a64f5df5e6a9e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#a8d804062f60144969e6a64f5df5e6a9e">PX4IO_P_STATUS_IBATT</a>&#160;&#160;&#160;5 /* [1] battery <a class="el" href="fixedwing_2autopilot__firmware_8h.html#ae6a404c4d3d4da15402e4a8629e7e272">current</a> (raw ADC) */</td></tr>
 <tr class="separator:a8d804062f60144969e6a64f5df5e6a9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16d29b5bfcccf263fcbd4cf6960e3bed"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#a16d29b5bfcccf263fcbd4cf6960e3bed">PX4IO_P_STATUS_VSERVO</a>&#160;&#160;&#160;6 /* [2] servo rail voltage in mV */</td></tr>
 <tr class="separator:a16d29b5bfcccf263fcbd4cf6960e3bed"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -276,9 +276,9 @@ Macros</h2></td></tr>
 <tr class="separator:a2af583297bcf06664ea6982f7522b2a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad018df2fd148cc64447a1ef96937c47a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#ad018df2fd148cc64447a1ef96937c47a">PX4IO_P_RAW_RC_FLAGS_FRAME_DROP</a>&#160;&#160;&#160;(1 &lt;&lt; 0) /* single frame drop */</td></tr>
 <tr class="separator:ad018df2fd148cc64447a1ef96937c47a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76667a4f9aee36be0f6982c97fee2184"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#a76667a4f9aee36be0f6982c97fee2184">PX4IO_P_RAW_RC_FLAGS_FAILSAFE</a>&#160;&#160;&#160;(1 &lt;&lt; 1) /* receiver is in failsafe mode */</td></tr>
+<tr class="memitem:a76667a4f9aee36be0f6982c97fee2184"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#a76667a4f9aee36be0f6982c97fee2184">PX4IO_P_RAW_RC_FLAGS_FAILSAFE</a>&#160;&#160;&#160;(1 &lt;&lt; 1) /* receiver is in failsafe <a class="el" href="sonar__bebop_8c.html#a37e90f5e3bd99fac2021fb3a326607d4">mode</a> */</td></tr>
 <tr class="separator:a76667a4f9aee36be0f6982c97fee2184"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d6004d7c3959118ffc9bba03eed7019"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#a8d6004d7c3959118ffc9bba03eed7019">PX4IO_P_RAW_RC_FLAGS_RC_DSM11</a>&#160;&#160;&#160;(1 &lt;&lt; 2) /* DSM decoding is 11 bit mode */</td></tr>
+<tr class="memitem:a8d6004d7c3959118ffc9bba03eed7019"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#a8d6004d7c3959118ffc9bba03eed7019">PX4IO_P_RAW_RC_FLAGS_RC_DSM11</a>&#160;&#160;&#160;(1 &lt;&lt; 2) /* DSM decoding is 11 bit <a class="el" href="sonar__bebop_8c.html#a37e90f5e3bd99fac2021fb3a326607d4">mode</a> */</td></tr>
 <tr class="separator:a8d6004d7c3959118ffc9bba03eed7019"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab566b637a90fe4033dae26373945aff4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#ab566b637a90fe4033dae26373945aff4">PX4IO_P_RAW_RC_FLAGS_MAPPING_OK</a>&#160;&#160;&#160;(1 &lt;&lt; 3) /* Channel mapping is ok */</td></tr>
 <tr class="separator:ab566b637a90fe4033dae26373945aff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -328,7 +328,7 @@ Macros</h2></td></tr>
 <tr class="separator:a02e5d1c5ee50a7e22539232229cfd5c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28c80c9cdb085ea35baad67ec23c5802"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#a28c80c9cdb085ea35baad67ec23c5802">PX4IO_P_SETUP_ARMING_FMU_ARMED</a>&#160;&#160;&#160;(1 &lt;&lt; 1) /* FMU is already armed */</td></tr>
 <tr class="separator:a28c80c9cdb085ea35baad67ec23c5802"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e0355fc30cd3bb4f3436cdd954c5116"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#a1e0355fc30cd3bb4f3436cdd954c5116">PX4IO_P_SETUP_ARMING_MANUAL_OVERRIDE_OK</a>&#160;&#160;&#160;(1 &lt;&lt; 2) /* OK to switch to manual override via override RC <a class="el" href="stm32_2subsystems_2imu_2imu__crista__arch_8c.html#a4b613adf1dc9edfbc9951cf9b86ec2e3">channel</a> */</td></tr>
+<tr class="memitem:a1e0355fc30cd3bb4f3436cdd954c5116"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#a1e0355fc30cd3bb4f3436cdd954c5116">PX4IO_P_SETUP_ARMING_MANUAL_OVERRIDE_OK</a>&#160;&#160;&#160;(1 &lt;&lt; 2) /* OK to switch to manual override via override RC <a class="el" href="ADS8344_8c.html#a715f5cb061d11eb75981741eda4dafcd">channel</a> */</td></tr>
 <tr class="separator:a1e0355fc30cd3bb4f3436cdd954c5116"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a830cd23c0fd0ab9dcadff82e58a504d2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#a830cd23c0fd0ab9dcadff82e58a504d2">PX4IO_P_SETUP_ARMING_FAILSAFE_CUSTOM</a>&#160;&#160;&#160;(1 &lt;&lt; 3) /* use custom failsafe values, not 0 values of mixer */</td></tr>
 <tr class="separator:a830cd23c0fd0ab9dcadff82e58a504d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -344,7 +344,7 @@ Macros</h2></td></tr>
 <tr class="separator:aca4c087c89c9b6265d45d9ae9ec6b408"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5496f8b6f735a82372a882c702a9783f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#a5496f8b6f735a82372a882c702a9783f">PX4IO_P_SETUP_ARMING_TERMINATION_FAILSAFE</a>&#160;&#160;&#160;(1 &lt;&lt; 9) /* If set, the system will never return from a failsafe, but remain in failsafe once triggered. */</td></tr>
 <tr class="separator:a5496f8b6f735a82372a882c702a9783f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa178f6b4e49bf420b23a8161bd3a1f2a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#aa178f6b4e49bf420b23a8161bd3a1f2a">PX4IO_P_SETUP_ARMING_OVERRIDE_IMMEDIATE</a>&#160;&#160;&#160;(1 &lt;&lt; 10) /* If set then on FMU failure override is immediate. Othewise it waits for the mode switch to go past the override thrshold */</td></tr>
+<tr class="memitem:aa178f6b4e49bf420b23a8161bd3a1f2a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#aa178f6b4e49bf420b23a8161bd3a1f2a">PX4IO_P_SETUP_ARMING_OVERRIDE_IMMEDIATE</a>&#160;&#160;&#160;(1 &lt;&lt; 10) /* If set then on FMU failure override is immediate. Othewise it waits for the <a class="el" href="sonar__bebop_8c.html#a37e90f5e3bd99fac2021fb3a326607d4">mode</a> switch to go past the override thrshold */</td></tr>
 <tr class="separator:aa178f6b4e49bf420b23a8161bd3a1f2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad81dfcb47b8bd7f15ec7384071c4506d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#ad81dfcb47b8bd7f15ec7384071c4506d">PX4IO_P_SETUP_PWM_RATES</a>&#160;&#160;&#160;2 /* bitmask, 0 = low rate, 1 = high rate */</td></tr>
 <tr class="separator:ad81dfcb47b8bd7f15ec7384071c4506d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -508,16 +508,16 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:aab4d131ba129f519b9e2bd349dc19e3a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="px4__flash_2protocol_8h.html#aab4d131ba129f519b9e2bd349dc19e3aacd0be2ab890f11bd03ef8820861b54af">dsm_bind_power_down</a> = 0, 
-<a class="el" href="px4__flash_2protocol_8h.html#aab4d131ba129f519b9e2bd349dc19e3aa47721f970fade779b2775fbcee17e833">dsm_bind_power_up</a>, 
-<a class="el" href="px4__flash_2protocol_8h.html#aab4d131ba129f519b9e2bd349dc19e3aa8639e825e90551222744b3f4f645a721">dsm_bind_set_rx_out</a>, 
-<a class="el" href="px4__flash_2protocol_8h.html#aab4d131ba129f519b9e2bd349dc19e3aa0c614985bee2ec5b6f6b7dd58dc70dd5">dsm_bind_send_pulses</a>, 
+<tr class="memitem:a52d62f1e780113658227de8a9e4c201e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="px4__flash_2protocol_8h.html#a52d62f1e780113658227de8a9e4c201eacd0be2ab890f11bd03ef8820861b54af">dsm_bind_power_down</a> = 0, 
+<a class="el" href="px4__flash_2protocol_8h.html#a52d62f1e780113658227de8a9e4c201ea47721f970fade779b2775fbcee17e833">dsm_bind_power_up</a>, 
+<a class="el" href="px4__flash_2protocol_8h.html#a52d62f1e780113658227de8a9e4c201ea8639e825e90551222744b3f4f645a721">dsm_bind_set_rx_out</a>, 
+<a class="el" href="px4__flash_2protocol_8h.html#a52d62f1e780113658227de8a9e4c201ea0c614985bee2ec5b6f6b7dd58dc70dd5">dsm_bind_send_pulses</a>, 
 <br />
-&#160;&#160;<a class="el" href="px4__flash_2protocol_8h.html#aab4d131ba129f519b9e2bd349dc19e3aafd99415839ad8ab6ece72a524c8f7b93">dsm_bind_reinit_uart</a>
+&#160;&#160;<a class="el" href="px4__flash_2protocol_8h.html#a52d62f1e780113658227de8a9e4c201eafd99415839ad8ab6ece72a524c8f7b93">dsm_bind_reinit_uart</a>
 <br />
  }</td></tr>
-<tr class="separator:aab4d131ba129f519b9e2bd349dc19e3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a52d62f1e780113658227de8a9e4c201e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -775,7 +775,7 @@ regs[<a class="el" href="px4__flash_2protocol_8h.html#a0037b43d3693c0d8d3c5df6c3
 
 <p>Definition at line <a class="el" href="px4__flash_2protocol_8h_source.html#l00331">331</a> of file <a class="el" href="px4__flash_2protocol_8h_source.html">protocol.h</a>.</p>
 
-<p>Referenced by <a class="el" href="px4__flash_8c_source.html#l00075">px4flash_event()</a>.</p>
+<p>Referenced by <a class="el" href="px4__flash_8c_source.html#l00079">px4flash_event()</a>.</p>
 
 </div>
 </div>
@@ -1248,7 +1248,7 @@ regs[<a class="el" href="px4__flash_2protocol_8h.html#a0037b43d3693c0d8d3c5df6c3
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define PX4IO_P_RAW_RC_FLAGS_FAILSAFE&#160;&#160;&#160;(1 &lt;&lt; 1) /* receiver is in failsafe mode */</td>
+          <td class="memname">#define PX4IO_P_RAW_RC_FLAGS_FAILSAFE&#160;&#160;&#160;(1 &lt;&lt; 1) /* receiver is in failsafe <a class="el" href="sonar__bebop_8c.html#a37e90f5e3bd99fac2021fb3a326607d4">mode</a> */</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1290,7 +1290,7 @@ regs[<a class="el" href="px4__flash_2protocol_8h.html#a0037b43d3693c0d8d3c5df6c3
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define PX4IO_P_RAW_RC_FLAGS_RC_DSM11&#160;&#160;&#160;(1 &lt;&lt; 2) /* DSM decoding is 11 bit mode */</td>
+          <td class="memname">#define PX4IO_P_RAW_RC_FLAGS_RC_DSM11&#160;&#160;&#160;(1 &lt;&lt; 2) /* DSM decoding is 11 bit <a class="el" href="sonar__bebop_8c.html#a37e90f5e3bd99fac2021fb3a326607d4">mode</a> */</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1644,7 +1644,7 @@ regs[<a class="el" href="px4__flash_2protocol_8h.html#a0037b43d3693c0d8d3c5df6c3
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define PX4IO_P_SETUP_ARMING_MANUAL_OVERRIDE_OK&#160;&#160;&#160;(1 &lt;&lt; 2) /* OK to switch to manual override via override RC <a class="el" href="stm32_2subsystems_2imu_2imu__crista__arch_8c.html#a4b613adf1dc9edfbc9951cf9b86ec2e3">channel</a> */</td>
+          <td class="memname">#define PX4IO_P_SETUP_ARMING_MANUAL_OVERRIDE_OK&#160;&#160;&#160;(1 &lt;&lt; 2) /* OK to switch to manual override via override RC <a class="el" href="ADS8344_8c.html#a715f5cb061d11eb75981741eda4dafcd">channel</a> */</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1658,7 +1658,7 @@ regs[<a class="el" href="px4__flash_2protocol_8h.html#a0037b43d3693c0d8d3c5df6c3
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define PX4IO_P_SETUP_ARMING_OVERRIDE_IMMEDIATE&#160;&#160;&#160;(1 &lt;&lt; 10) /* If set then on FMU failure override is immediate. Othewise it waits for the mode switch to go past the override thrshold */</td>
+          <td class="memname">#define PX4IO_P_SETUP_ARMING_OVERRIDE_IMMEDIATE&#160;&#160;&#160;(1 &lt;&lt; 10) /* If set then on FMU failure override is immediate. Othewise it waits for the <a class="el" href="sonar__bebop_8c.html#a37e90f5e3bd99fac2021fb3a326607d4">mode</a> switch to go past the override thrshold */</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1918,7 +1918,7 @@ regs[<a class="el" href="px4__flash_2protocol_8h.html#a0037b43d3693c0d8d3c5df6c3
 
 <p>Definition at line <a class="el" href="px4__flash_2protocol_8h_source.html#l00224">224</a> of file <a class="el" href="px4__flash_2protocol_8h_source.html">protocol.h</a>.</p>
 
-<p>Referenced by <a class="el" href="px4__flash_8c_source.html#l00075">px4flash_event()</a>.</p>
+<p>Referenced by <a class="el" href="px4__flash_8c_source.html#l00079">px4flash_event()</a>.</p>
 
 </div>
 </div>
@@ -2045,7 +2045,7 @@ regs[<a class="el" href="px4__flash_2protocol_8h.html#a0037b43d3693c0d8d3c5df6c3
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define PX4IO_P_STATUS_ALARMS_ACC_CURRENT&#160;&#160;&#160;(1 &lt;&lt; 3) /* [1] accessory <a class="el" href="fixedwing_2autopilot_8h.html#ae6a404c4d3d4da15402e4a8629e7e272">current</a> limit was exceeded */</td>
+          <td class="memname">#define PX4IO_P_STATUS_ALARMS_ACC_CURRENT&#160;&#160;&#160;(1 &lt;&lt; 3) /* [1] accessory <a class="el" href="fixedwing_2autopilot__firmware_8h.html#ae6a404c4d3d4da15402e4a8629e7e272">current</a> limit was exceeded */</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2101,7 +2101,7 @@ regs[<a class="el" href="px4__flash_2protocol_8h.html#a0037b43d3693c0d8d3c5df6c3
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define PX4IO_P_STATUS_ALARMS_SERVO_CURRENT&#160;&#160;&#160;(1 &lt;&lt; 2) /* [1] servo <a class="el" href="fixedwing_2autopilot_8h.html#ae6a404c4d3d4da15402e4a8629e7e272">current</a> limit was exceeded */</td>
+          <td class="memname">#define PX4IO_P_STATUS_ALARMS_SERVO_CURRENT&#160;&#160;&#160;(1 &lt;&lt; 2) /* [1] servo <a class="el" href="fixedwing_2autopilot__firmware_8h.html#ae6a404c4d3d4da15402e4a8629e7e272">current</a> limit was exceeded */</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2423,7 +2423,7 @@ regs[<a class="el" href="px4__flash_2protocol_8h.html#a0037b43d3693c0d8d3c5df6c3
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define PX4IO_P_STATUS_IBATT&#160;&#160;&#160;5 /* [1] battery <a class="el" href="fixedwing_2autopilot_8h.html#ae6a404c4d3d4da15402e4a8629e7e272">current</a> (raw ADC) */</td>
+          <td class="memname">#define PX4IO_P_STATUS_IBATT&#160;&#160;&#160;5 /* [1] battery <a class="el" href="fixedwing_2autopilot__firmware_8h.html#ae6a404c4d3d4da15402e4a8629e7e272">current</a> (raw ADC) */</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2816,7 +2816,7 @@ regs[<a class="el" href="px4__flash_2protocol_8h.html#a0037b43d3693c0d8d3c5df6c3
 
 <p>Definition at line <a class="el" href="px4__flash_2protocol_8h_source.html#l00177">177</a> of file <a class="el" href="px4__flash_2protocol_8h_source.html">protocol.h</a>.</p>
 
-<p>Referenced by <a class="el" href="px4__flash_8c_source.html#l00075">px4flash_event()</a>.</p>
+<p>Referenced by <a class="el" href="px4__flash_8c_source.html#l00079">px4flash_event()</a>.</p>
 
 </div>
 </div>
@@ -2904,7 +2904,7 @@ regs[<a class="el" href="px4__flash_2protocol_8h.html#a0037b43d3693c0d8d3c5df6c3
 
 <p>Definition at line <a class="el" href="px4__flash_2protocol_8h_source.html#l00225">225</a> of file <a class="el" href="px4__flash_2protocol_8h_source.html">protocol.h</a>.</p>
 
-<p>Referenced by <a class="el" href="px4__flash_8c_source.html#l00075">px4flash_event()</a>.</p>
+<p>Referenced by <a class="el" href="px4__flash_8c_source.html#l00079">px4flash_event()</a>.</p>
 
 </div>
 </div>
@@ -2963,7 +2963,7 @@ regs[<a class="el" href="px4__flash_2protocol_8h.html#a0037b43d3693c0d8d3c5df6c3
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a class="anchor" id="aab4d131ba129f519b9e2bd349dc19e3a"></a>
+<a class="anchor" id="a52d62f1e780113658227de8a9e4c201e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -2973,15 +2973,15 @@ regs[<a class="el" href="px4__flash_2protocol_8h.html#a0037b43d3693c0d8d3c5df6c3
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="aab4d131ba129f519b9e2bd349dc19e3aacd0be2ab890f11bd03ef8820861b54af"></a>dsm_bind_power_down&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a52d62f1e780113658227de8a9e4c201eacd0be2ab890f11bd03ef8820861b54af"></a>dsm_bind_power_down&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="aab4d131ba129f519b9e2bd349dc19e3aa47721f970fade779b2775fbcee17e833"></a>dsm_bind_power_up&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a52d62f1e780113658227de8a9e4c201ea47721f970fade779b2775fbcee17e833"></a>dsm_bind_power_up&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="aab4d131ba129f519b9e2bd349dc19e3aa8639e825e90551222744b3f4f645a721"></a>dsm_bind_set_rx_out&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a52d62f1e780113658227de8a9e4c201ea8639e825e90551222744b3f4f645a721"></a>dsm_bind_set_rx_out&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="aab4d131ba129f519b9e2bd349dc19e3aa0c614985bee2ec5b6f6b7dd58dc70dd5"></a>dsm_bind_send_pulses&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a52d62f1e780113658227de8a9e4c201ea0c614985bee2ec5b6f6b7dd58dc70dd5"></a>dsm_bind_send_pulses&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="aab4d131ba129f519b9e2bd349dc19e3aafd99415839ad8ab6ece72a524c8f7b93"></a>dsm_bind_reinit_uart&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a52d62f1e780113658227de8a9e4c201eafd99415839ad8ab6ece72a524c8f7b93"></a>dsm_bind_reinit_uart&#160;</td><td class="fielddoc">
 </td></tr>
 </table>
 
@@ -3016,7 +3016,7 @@ regs[<a class="el" href="px4__flash_2protocol_8h.html#a0037b43d3693c0d8d3c5df6c3
 
 <p>References <a class="el" href="px4__flash_2protocol_8h_source.html#l00342">crc8_tab</a>, <a class="el" href="ins__alt__float_8c_source.html#l00268">p</a>, <a class="el" href="px4__flash_2protocol_8h_source.html#l00338">PKT_COUNT</a>, and <a class="el" href="px4__flash_2protocol_8h_source.html#l00325">IOPacket::regs</a>.</p>
 
-<p>Referenced by <a class="el" href="px4__flash_8c_source.html#l00075">px4flash_event()</a>.</p>
+<p>Referenced by <a class="el" href="px4__flash_8c_source.html#l00079">px4flash_event()</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -3062,7 +3062,7 @@ regs[<a class="el" href="px4__flash_2protocol_8h.html#a0037b43d3693c0d8d3c5df6c3
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_7d07a2235bf732e635d4183f1ff4bace.html">px4_flash</a></li><li class="navelem"><a class="el" href="px4__flash_2protocol_8h.html">protocol.h</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:01:57 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:02:24 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

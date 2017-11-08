@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -172,26 +172,23 @@ $(document).ready(function(){initNavTree('sim__gps_8c_source.html','');});
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <a class="code" href="gps_8c.html#a5cf954024f8e0433b21db7439c5bee9d">gps</a>.<a class="code" href="gps_8h.html#a796d3d22856c1865abb3256a64e5b6de">pdop</a> = <a class="code" href="gps_8c.html#a5cf954024f8e0433b21db7439c5bee9d">gps</a>.<a class="code" href="gps_8h.html#a2cad112343a238676da447e83d46f4be">sacc</a> = <a class="code" href="gps_8c.html#a5cf954024f8e0433b21db7439c5bee9d">gps</a>.<a class="code" href="gps_8h.html#aa0194e37ba0420998970bfe318d74a35">pacc</a> = 500 + 200 * sin(time / 100.);</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <a class="code" href="gps_8c.html#a5cf954024f8e0433b21db7439c5bee9d">gps</a>.<a class="code" href="gps_8h.html#af6d2ba472d4430528868fd65b9d0c59c">num_sv</a> = 7;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="comment">//gps_verbose_downlink = !launch;</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="comment">//gps_downlink();</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <a class="code" href="gps__sim_8c.html#a9b24214fcb576b1bd7832dccaaa3f430">gps_sim_publish</a>();</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <a class="code" href="gps__sim_8c.html#a9b24214fcb576b1bd7832dccaaa3f430">gps_sim_publish</a>();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordflow">return</span> Val_unit;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordflow">return</span> Val_unit;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">/* Second binding required because number of args &gt; 5 */</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="sim__gps_8c.html#a7e916af45c0d2dea26e3e5faff0bd3e5">   75</a></span>&#160;value <a class="code" href="sim__gps_8c.html#a7e916af45c0d2dea26e3e5faff0bd3e5">sim_use_gps_pos_bytecode</a>(value *a, <span class="keywordtype">int</span> argn)</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;{</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  assert(argn == 11);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="sim__gps_8c.html#a07f63734731109c0ed43e4f4dbcb98f2">sim_use_gps_pos</a>(a[0], a[1], a[2], a[3], a[4], a[5], a[6], a[7], a[8], a[9], a[10]);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="sim__gps_8c.html#a05f70ae561aee3dbb2745771d44bf422">   81</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="sim__gps_8c.html#a05f70ae561aee3dbb2745771d44bf422">ubxsend_cfg_rst</a>(<a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> a __attribute__((unused)), <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> b __attribute__((unused)))</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;{</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">/* Second binding required because number of args &gt; 5 */</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="sim__gps_8c.html#a7e916af45c0d2dea26e3e5faff0bd3e5">   72</a></span>&#160;value <a class="code" href="sim__gps_8c.html#a7e916af45c0d2dea26e3e5faff0bd3e5">sim_use_gps_pos_bytecode</a>(value *a, <span class="keywordtype">int</span> argn)</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;{</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  assert(argn == 11);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="sim__gps_8c.html#a07f63734731109c0ed43e4f4dbcb98f2">sim_use_gps_pos</a>(a[0], a[1], a[2], a[3], a[4], a[5], a[6], a[7], a[8], a[9], a[10]);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="sim__gps_8c.html#a05f70ae561aee3dbb2745771d44bf422">   78</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="sim__gps_8c.html#a05f70ae561aee3dbb2745771d44bf422">ubxsend_cfg_rst</a>(<a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> a __attribute__((unused)), <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> b __attribute__((unused)))</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;{</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
 <div class="ttc" id="gps_8h_html_a0f082bb982115960077c5c4f8cab9653"><div class="ttname"><a href="gps_8h.html#a0f082bb982115960077c5c4f8cab9653">SVinfo::qi</a></div><div class="ttdeci">uint8_t qi</div><div class="ttdoc">quality bitfield (GPS receiver specific) </div><div class="ttdef"><b>Definition:</b> <a href="gps_8h_source.html#l00074">gps.h:74</a></div></div>
 <div class="ttc" id="types_8h_html_a273cf69d639a59973b6019625df33e30"><div class="ttname"><a href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></div><div class="ttdeci">unsigned short uint16_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00016">types.h:16</a></div></div>
 <div class="ttc" id="group__math__geodetic__int_html_af50ae798f5164c2e68d0ed0129d5d6dc"><div class="ttname"><a href="group__math__geodetic__int.html#af50ae798f5164c2e68d0ed0129d5d6dc">UtmCoor_i::north</a></div><div class="ttdeci">int32_t north</div><div class="ttdoc">in centimeters </div><div class="ttdef"><b>Definition:</b> <a href="pprz__geodetic__int_8h_source.html#l00087">pprz_geodetic_int.h:87</a></div></div>
@@ -214,7 +211,7 @@ $(document).ready(function(){initNavTree('sim__gps_8c_source.html','');});
 <div class="ttc" id="pprz__geodetic__float_8h_html"><div class="ttname"><a href="pprz__geodetic__float_8h.html">pprz_geodetic_float.h</a></div><div class="ttdoc">Paparazzi floating point math for geodetic calculations. </div></div>
 <div class="ttc" id="gps_8h_html_ae8fb92d17057871cd091ad4bc190c56f"><div class="ttname"><a href="gps_8h.html#ae8fb92d17057871cd091ad4bc190c56f">GPS_VALID_COURSE_BIT</a></div><div class="ttdeci">#define GPS_VALID_COURSE_BIT</div><div class="ttdef"><b>Definition:</b> <a href="gps_8h_source.html#l00054">gps.h:54</a></div></div>
 <div class="ttc" id="pprz__geodetic__float_8h_html_structLlaCoor__f"><div class="ttname"><a href="pprz__geodetic__float_8h.html#structLlaCoor__f">LlaCoor_f</a></div><div class="ttdoc">vector in Latitude, Longitude and Altitude </div><div class="ttdef"><b>Definition:</b> <a href="pprz__geodetic__float_8h_source.html#l00054">pprz_geodetic_float.h:54</a></div></div>
-<div class="ttc" id="sim__gps_8c_html_a7e916af45c0d2dea26e3e5faff0bd3e5"><div class="ttname"><a href="sim__gps_8c.html#a7e916af45c0d2dea26e3e5faff0bd3e5">sim_use_gps_pos_bytecode</a></div><div class="ttdeci">value sim_use_gps_pos_bytecode(value *a, int argn)</div><div class="ttdef"><b>Definition:</b> <a href="sim__gps_8c_source.html#l00075">sim_gps.c:75</a></div></div>
+<div class="ttc" id="sim__gps_8c_html_a7e916af45c0d2dea26e3e5faff0bd3e5"><div class="ttname"><a href="sim__gps_8c.html#a7e916af45c0d2dea26e3e5faff0bd3e5">sim_use_gps_pos_bytecode</a></div><div class="ttdeci">value sim_use_gps_pos_bytecode(value *a, int argn)</div><div class="ttdef"><b>Definition:</b> <a href="sim__gps_8c_source.html#l00072">sim_gps.c:72</a></div></div>
 <div class="ttc" id="gps_8h_html_a10af95f7fdab3171a789866838b0c8c3"><div class="ttname"><a href="gps_8h.html#a10af95f7fdab3171a789866838b0c8c3">GpsState::hmsl</a></div><div class="ttdeci">int32_t hmsl</div><div class="ttdoc">height above mean sea level (MSL) in mm </div><div class="ttdef"><b>Definition:</b> <a href="gps_8h_source.html#l00088">gps.h:88</a></div></div>
 <div class="ttc" id="gps_8h_html_a45a257f1d4283019da07e927683e70a1"><div class="ttname"><a href="gps_8h.html#a45a257f1d4283019da07e927683e70a1">SVinfo::cno</a></div><div class="ttdeci">uint8_t cno</div><div class="ttdoc">Carrier to Noise Ratio (Signal Strength) in dbHz. </div><div class="ttdef"><b>Definition:</b> <a href="gps_8h_source.html#l00075">gps.h:75</a></div></div>
 <div class="ttc" id="gps_8h_html_a0568d6804839a44b26cd61ffd86046ad"><div class="ttname"><a href="gps_8h.html#a0568d6804839a44b26cd61ffd86046ad">GpsState::tow</a></div><div class="ttdeci">uint32_t tow</div><div class="ttdoc">GPS time of week in ms. </div><div class="ttdef"><b>Definition:</b> <a href="gps_8h_source.html#l00101">gps.h:101</a></div></div>
@@ -237,7 +234,7 @@ $(document).ready(function(){initNavTree('sim__gps_8c_source.html','');});
 <div class="ttc" id="gps_8h_html_af6d2ba472d4430528868fd65b9d0c59c"><div class="ttname"><a href="gps_8h.html#af6d2ba472d4430528868fd65b9d0c59c">GpsState::num_sv</a></div><div class="ttdeci">uint8_t num_sv</div><div class="ttdoc">number of sat in fix </div><div class="ttdef"><b>Definition:</b> <a href="gps_8h_source.html#l00098">gps.h:98</a></div></div>
 <div class="ttc" id="gps_8h_html_aa2ab49f1a4a8aae71b3929e2c8aad7ba"><div class="ttname"><a href="gps_8h.html#aa2ab49f1a4a8aae71b3929e2c8aad7ba">GpsState::gspeed</a></div><div class="ttdeci">uint16_t gspeed</div><div class="ttdoc">norm of 2d ground speed in cm/s </div><div class="ttdef"><b>Definition:</b> <a href="gps_8h_source.html#l00091">gps.h:91</a></div></div>
 <div class="ttc" id="pprz__geodetic__float_8h_html_ace542562586741aeb022a5a57c30dea5"><div class="ttname"><a href="pprz__geodetic__float_8h.html#ace542562586741aeb022a5a57c30dea5">LlaCoor_f::lat</a></div><div class="ttdeci">float lat</div><div class="ttdoc">in radians </div><div class="ttdef"><b>Definition:</b> <a href="pprz__geodetic__float_8h_source.html#l00055">pprz_geodetic_float.h:55</a></div></div>
-<div class="ttc" id="sim__gps_8c_html_a05f70ae561aee3dbb2745771d44bf422"><div class="ttname"><a href="sim__gps_8c.html#a05f70ae561aee3dbb2745771d44bf422">ubxsend_cfg_rst</a></div><div class="ttdeci">void ubxsend_cfg_rst(uint16_t a, uint8_t b)</div><div class="ttdef"><b>Definition:</b> <a href="sim__gps_8c_source.html#l00081">sim_gps.c:81</a></div></div>
+<div class="ttc" id="sim__gps_8c_html_a05f70ae561aee3dbb2745771d44bf422"><div class="ttname"><a href="sim__gps_8c.html#a05f70ae561aee3dbb2745771d44bf422">ubxsend_cfg_rst</a></div><div class="ttdeci">void ubxsend_cfg_rst(uint16_t a, uint8_t b)</div><div class="ttdef"><b>Definition:</b> <a href="sim__gps_8c_source.html#l00078">sim_gps.c:78</a></div></div>
 <div class="ttc" id="gps_8h_html_a298552f8926fd925f8c94bbeeca1dc5c"><div class="ttname"><a href="gps_8h.html#a298552f8926fd925f8c94bbeeca1dc5c">GpsState::lla_pos</a></div><div class="ttdeci">struct LlaCoor_i lla_pos</div><div class="ttdoc">position in LLA (lat,lon: deg*1e7; alt: mm over ellipsoid) </div><div class="ttdef"><b>Definition:</b> <a href="gps_8h_source.html#l00086">gps.h:86</a></div></div>
 <div class="ttc" id="gps_8h_html_afeffb02bdd18d27a87e96bb77175168f"><div class="ttname"><a href="gps_8h.html#afeffb02bdd18d27a87e96bb77175168f">GpsState::fix</a></div><div class="ttdeci">uint8_t fix</div><div class="ttdoc">status of fix </div><div class="ttdef"><b>Definition:</b> <a href="gps_8h_source.html#l00099">gps.h:99</a></div></div>
 <div class="ttc" id="gps_8h_html_af31d3878b9af5c7c81cc659483a0ade2"><div class="ttname"><a href="gps_8h.html#af31d3878b9af5c7c81cc659483a0ade2">GPS_VALID_POS_UTM_BIT</a></div><div class="ttdeci">#define GPS_VALID_POS_UTM_BIT</div><div class="ttdef"><b>Definition:</b> <a href="gps_8h_source.html#l00050">gps.h:50</a></div></div>
@@ -249,7 +246,7 @@ $(document).ready(function(){initNavTree('sim__gps_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_c87a6d12365ead88e0b90ddbc1b3c9bb.html">sim</a></li><li class="navelem"><a class="el" href="sim__gps_8c.html">sim_gps.c</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:01:14 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:01:28 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

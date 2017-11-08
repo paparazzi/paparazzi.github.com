@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -119,15 +119,15 @@ $(document).ready(function(){initNavTree('follow__me_8h.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="follow__me_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2modules_2stereocam_2stereocam__follow__me_2follow__me_8hdep" alt=""/></div>
 <map name="sw_2airborne_2modules_2stereocam_2stereocam__follow__me_2follow__me_8hdep" id="sw_2airborne_2modules_2stereocam_2stereocam__follow__me_2follow__me_8hdep">
-<area shape="rect" id="node2" href="follow__me_8c.html" title="sw/airborne/modules\l/stereocam/stereocam\l_follow_me/follow_me.c" alt="" coords="5,109,176,165"/></map>
+<area shape="rect" id="node2" href="stereocam_8c.html" title="interface to TU Delft serial stereocam Include stereocam.xml to your airframe file. " alt="" coords="5,117,184,158"/><area shape="rect" id="node3" href="follow__me_8c.html" title="sw/airborne/modules\l/stereocam/stereocam\l_follow_me/follow_me.c" alt="" coords="208,109,379,165"/></map>
 </div>
 </div>
 <p><a href="follow__me_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a5c3112293f2a4d98f2ddb0d937011a36"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="follow__me_8h.html#a5c3112293f2a4d98f2ddb0d937011a36">follow_me_periodic</a> (void)</td></tr>
-<tr class="separator:a5c3112293f2a4d98f2ddb0d937011a36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86b645981e64487edee42fa1bf3bc848"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="follow__me_8h.html#a86b645981e64487edee42fa1bf3bc848">follow_me</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> headingToFollow, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> heightObject, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> distanceToObject)</td></tr>
+<tr class="separator:a86b645981e64487edee42fa1bf3bc848"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -143,32 +143,61 @@ Variables</h2></td></tr>
 
 <p>Definition in file <a class="el" href="follow__me_8h_source.html">follow_me.h</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a5c3112293f2a4d98f2ddb0d937011a36"></a>
+<a class="anchor" id="a86b645981e64487edee42fa1bf3bc848"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void follow_me_periodic </td>
+          <td class="memname">void follow_me </td>
           <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>headingToFollow</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>heightObject</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>distanceToObject</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="follow__me_8c_source.html#l00069">69</a> of file <a class="el" href="follow__me_8c_source.html">follow_me.c</a>.</p>
+<p>Definition at line <a class="el" href="follow__me_8c_source.html#l00062">62</a> of file <a class="el" href="follow__me_8c_source.html">follow_me.c</a>.</p>
 
-<p>References <a class="el" href="follow__me_8c_source.html#l00028">CENTER_IMAGE_HOR</a>, <a class="el" href="follow__me_8c_source.html#l00045">changeRollYawPhase()</a>, <a class="el" href="stereocam_8h_source.html#l00034">uint8array::data</a>, <a class="el" href="follow__me_8c_source.html#l00041">distanceToObject</a>, <a class="el" href="stereocam_8h_source.html#l00035">uint8array::fresh</a>, <a class="el" href="follow__me_8c_source.html#l00027">HEADING_CHANGE_PER_MEASUREMENT</a>, <a class="el" href="follow__me_8c_source.html#l00038">heightGain</a>, <a class="el" href="follow__me_8c_source.html#l00042">heightObject</a>, <a class="el" href="follow__me_8c_source.html#l00065">increase_nav_heading()</a>, <a class="el" href="follow__me_8c_source.html#l00035">isRollPhase</a>, <a class="el" href="follow__me_8c_source.html#l00036">isYawPhase</a>, <a class="el" href="follow__me_8c_source.html#l00029">MAXIMUM_ALTITUDE_FOLLOWING</a>, <a class="el" href="follow__me_8c_source.html#l00030">MINIMUM_ALTITUDE_FOLLOWING</a>, <a class="el" href="navigation_8c_source.html#l00084">nav_heading</a>, <a class="el" href="navigation_8c_source.html#l00468">nav_is_in_flight()</a>, <a class="el" href="follow__me_8c_source.html#l00037">phaseCounter</a>, <a class="el" href="follow__me_8c_source.html#l00031">ref_pitch</a>, <a class="el" href="follow__me_8c_source.html#l00032">ref_roll</a>, <a class="el" href="follow__me_8c_source.html#l00033">selfie_alt</a>, <a class="el" href="stereocam_8c_source.html#l00057">stereocam_data</a>, <a class="el" href="follow__me_8c_source.html#l00023">STEREOCAM_FOLLOW_ME_USE_OPTITRACK</a>, and <a class="el" href="subsystems_2navigation_2waypoints_8c_source.html#l00160">waypoint_set_alt()</a>.</p>
+<p>References <a class="el" href="follow__me_8c_source.html#l00027">CENTER_IMAGE_HOR</a>, <a class="el" href="follow__me_8c_source.html#l00035">changeRollYawPhase()</a>, <a class="el" href="follow__me_8c_source.html#l00026">HEADING_CHANGE_PER_MEASUREMENT</a>, <a class="el" href="follow__me_8c_source.html#l00057">increase_nav_heading()</a>, <a class="el" href="follow__me_8c_source.html#l00028">MAXIMUM_ALTITUDE_FOLLOWING</a>, <a class="el" href="follow__me_8c_source.html#l00029">MINIMUM_ALTITUDE_FOLLOWING</a>, <a class="el" href="navigation_8c_source.html#l00104">nav_heading</a>, <a class="el" href="navigation_8c_source.html#l00415">nav_is_in_flight()</a>, <a class="el" href="follow__me_8c_source.html#l00031">ref_pitch</a>, <a class="el" href="follow__me_8c_source.html#l00032">ref_roll</a>, <a class="el" href="follow__me_8c_source.html#l00033">selfie_alt</a>, <a class="el" href="follow__me_8c_source.html#l00023">STEREOCAM_FOLLOW_ME_USE_OPTITRACK</a>, and <a class="el" href="subsystems_2navigation_2waypoints_8c_source.html#l00160">waypoint_set_alt()</a>.</p>
+
+<p>Referenced by <a class="el" href="stereocam_8c_source.html#l00112">stereocam_parse_msg()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="follow__me_8h_a5c3112293f2a4d98f2ddb0d937011a36_cgraph.png" border="0" usemap="#follow__me_8h_a5c3112293f2a4d98f2ddb0d937011a36_cgraph" alt=""/></div>
-<map name="follow__me_8h_a5c3112293f2a4d98f2ddb0d937011a36_cgraph" id="follow__me_8h_a5c3112293f2a4d98f2ddb0d937011a36_cgraph">
-<area shape="rect" id="node2" href="follow__me_8c.html#a744e57dd58bee7c2a3f652c15e62550b" title="changeRollYawPhase" alt="" coords="203,5,353,32"/><area shape="rect" id="node3" href="follow__me_8c.html#aa6d48f8b8250445377a818bcaacf078a" title="Increases the NAV heading. " alt="" coords="196,56,360,83"/><area shape="rect" id="node4" href="navigation_8c.html#a46063efd4dae5efe23d6c018af1917d1" title="nav_is_in_flight" alt="" coords="219,107,337,133"/><area shape="rect" id="node5" href="subsystems_2navigation_2waypoints_8c.html#af3ed05c8671f668d9b6ef54d13d9c8b7" title="Set altitude of waypoint in meters (above reference) " alt="" coords="214,157,342,184"/><area shape="rect" id="node6" href="subsystems_2navigation_2waypoints_8c.html#a10acece8582506367e9e9df3694bf31b" title="update global LLA coordinates from its ENU coordinates " alt="" coords="408,157,549,184"/><area shape="rect" id="node7" href="group__math__geodetic__int.html#gaaeff7441301129ca712e828b9b4f474e" title="Convert a local ENU position to ECEF. " alt="" coords="597,132,736,159"/><area shape="rect" id="node9" href="group__math__geodetic__int.html#gaea47a32071c2427f895fcb1df32c4e23" title="Convert a ECEF to LLA. " alt="" coords="617,183,716,209"/><area shape="rect" id="node8" href="group__math__geodetic__int.html#gaabe6e63048c95afdffdd4a581dc5f2b8" title="Rotate a vector from ENU to ECEF. " alt="" coords="784,132,927,159"/><area shape="rect" id="node10" href="pprz__geodetic__float_8c.html#adecd186d51b41b09f0cad928c0d2f68e" title="lla_of_ecef_f" alt="" coords="805,183,905,209"/><area shape="rect" id="node11" href="group__math__geodetic__double.html#ga9d3464ccabcd97db9fb4e1c7d25dfe16" title="lla_of_ecef_d" alt="" coords="803,233,907,260"/></map>
+<div class="center"><img src="follow__me_8h_a86b645981e64487edee42fa1bf3bc848_cgraph.png" border="0" usemap="#follow__me_8h_a86b645981e64487edee42fa1bf3bc848_cgraph" alt=""/></div>
+<map name="follow__me_8h_a86b645981e64487edee42fa1bf3bc848_cgraph" id="follow__me_8h_a86b645981e64487edee42fa1bf3bc848_cgraph">
+<area shape="rect" id="node2" href="follow__me_8c.html#a807a6df05b0e6e375ccd7fa2dbc97fff" title="changeRollYawPhase" alt="" coords="145,5,296,32"/><area shape="rect" id="node3" href="follow__me_8c.html#ae1a9c8254b1c7c3d26e1545b937ed3da" title="increase_nav_heading" alt="" coords="139,56,303,83"/><area shape="rect" id="node4" href="navigation_8c.html#a46063efd4dae5efe23d6c018af1917d1" title="nav_is_in_flight" alt="" coords="161,107,280,133"/><area shape="rect" id="node6" href="subsystems_2navigation_2waypoints_8c.html#af3ed05c8671f668d9b6ef54d13d9c8b7" title="Set altitude of waypoint in meters (above reference) " alt="" coords="157,157,285,184"/><area shape="rect" id="node5" href="autopilot_8c.html#aa0968d46fbee148348a7e062afac69a6" title="get in_flight flag " alt="" coords="354,107,489,133"/><area shape="rect" id="node7" href="subsystems_2navigation_2waypoints_8c.html#a10acece8582506367e9e9df3694bf31b" title="update global LLA coordinates from its ENU coordinates " alt="" coords="351,157,492,184"/><area shape="rect" id="node8" href="group__math__geodetic__int.html#gaaeff7441301129ca712e828b9b4f474e" title="Convert a local ENU position to ECEF. " alt="" coords="540,132,679,159"/><area shape="rect" id="node10" href="group__math__geodetic__int.html#gaea47a32071c2427f895fcb1df32c4e23" title="Convert a ECEF to LLA. " alt="" coords="560,183,659,209"/><area shape="rect" id="node9" href="group__math__geodetic__int.html#gaabe6e63048c95afdffdd4a581dc5f2b8" title="Rotate a vector from ENU to ECEF. " alt="" coords="727,132,869,159"/><area shape="rect" id="node11" href="pprz__geodetic__float_8c.html#adecd186d51b41b09f0cad928c0d2f68e" title="lla_of_ecef_f" alt="" coords="748,183,848,209"/><area shape="rect" id="node12" href="group__math__geodetic__double.html#ga9d3464ccabcd97db9fb4e1c7d25dfe16" title="lla_of_ecef_d" alt="" coords="746,233,850,260"/></map>
+</div>
+</p>
+
+<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="follow__me_8h_a86b645981e64487edee42fa1bf3bc848_icgraph.png" border="0" usemap="#follow__me_8h_a86b645981e64487edee42fa1bf3bc848_icgraph" alt=""/></div>
+<map name="follow__me_8h_a86b645981e64487edee42fa1bf3bc848_icgraph" id="follow__me_8h_a86b645981e64487edee42fa1bf3bc848_icgraph">
+<area shape="rect" id="node2" href="stereocam_8c.html#a94fa0136a9ee836602da3816c515ed1f" title="stereocam_parse_msg" alt="" coords="139,5,308,32"/><area shape="rect" id="node3" href="stereocam_8h.html#a95bf6b29adccc637ae2d86539a211d28" title="stereocam_event" alt="" coords="356,5,491,32"/></map>
 </div>
 </p>
 
@@ -187,7 +216,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="guidance__OA_8c_source.html#l00103">103</a> of file <a class="el" href="guidance__OA_8c_source.html">guidance_OA.c</a>.</p>
 
-<p>Referenced by <a class="el" href="obstacle__avoidance_8c_source.html#l01032">CN_escape_velocity()</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00506">CN_potential_velocity()</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00777">CN_vector_escape_velocity()</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00590">CN_vector_velocity()</a>, <a class="el" href="follow__me_8c_source.html#l00069">follow_me_periodic()</a>, <a class="el" href="guidance__OA_8c_source.html#l00189">OA_update()</a>, and <a class="el" href="obstacle__avoidance_8c_source.html#l00357">pingpong_euler()</a>.</p>
+<p>Referenced by <a class="el" href="obstacle__avoidance_8c_source.html#l01032">CN_escape_velocity()</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00506">CN_potential_velocity()</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00777">CN_vector_escape_velocity()</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00590">CN_vector_velocity()</a>, <a class="el" href="follow__me_8c_source.html#l00062">follow_me()</a>, <a class="el" href="guidance__OA_8c_source.html#l00189">OA_update()</a>, and <a class="el" href="obstacle__avoidance_8c_source.html#l00357">pingpong_euler()</a>.</p>
 
 </div>
 </div>
@@ -203,7 +232,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="guidance__OA_8c_source.html#l00104">104</a> of file <a class="el" href="guidance__OA_8c_source.html">guidance_OA.c</a>.</p>
 
-<p>Referenced by <a class="el" href="obstacle__avoidance_8c_source.html#l01032">CN_escape_velocity()</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00777">CN_vector_escape_velocity()</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00590">CN_vector_velocity()</a>, <a class="el" href="follow__me_8c_source.html#l00069">follow_me_periodic()</a>, <a class="el" href="guidance__OA_8c_source.html#l00189">OA_update()</a>, and <a class="el" href="obstacle__avoidance_8c_source.html#l00357">pingpong_euler()</a>.</p>
+<p>Referenced by <a class="el" href="obstacle__avoidance_8c_source.html#l01032">CN_escape_velocity()</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00777">CN_vector_escape_velocity()</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00590">CN_vector_velocity()</a>, <a class="el" href="follow__me_8c_source.html#l00062">follow_me()</a>, <a class="el" href="guidance__OA_8c_source.html#l00189">OA_update()</a>, and <a class="el" href="obstacle__avoidance_8c_source.html#l00357">pingpong_euler()</a>.</p>
 
 </div>
 </div>
@@ -219,7 +248,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="follow__me_8c_source.html#l00033">33</a> of file <a class="el" href="follow__me_8c_source.html">follow_me.c</a>.</p>
 
-<p>Referenced by <a class="el" href="follow__me_8c_source.html#l00069">follow_me_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="follow__me_8c_source.html#l00062">follow_me()</a>.</p>
 
 </div>
 </div>
@@ -229,7 +258,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_3df9ff4d3eb13d31d58a513ba3c4e4bb.html">stereocam</a></li><li class="navelem"><a class="el" href="dir_ec7640edce12f2ff088305425ab2b433.html">stereocam_follow_me</a></li><li class="navelem"><a class="el" href="follow__me_8h.html">follow_me.h</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:02:05 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:02:33 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

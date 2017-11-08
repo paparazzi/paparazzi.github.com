@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -145,7 +145,7 @@ $(document).ready(function(){initNavTree('linux_2subsystems_2settings__arch_8c_s
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    fclose(file);</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  }</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  printf(<span class="stringliteral">&quot;Could not open settings file %s to write!\n&quot;</span>, <a class="code" href="linux_2subsystems_2settings__arch_8c.html#aa464715701670e7dd8ad2bb4d2b11f46">PERSISTENT_SETTINGS_FILE</a>);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <a class="code" href="kremlib_8h.html#a3cb9f0894fab1c8fbb0753c9c7c2a8d9">printf</a>(<span class="stringliteral">&quot;Could not open settings file %s to write!\n&quot;</span>, <a class="code" href="linux_2subsystems_2settings__arch_8c.html#aa464715701670e7dd8ad2bb4d2b11f46">PERSISTENT_SETTINGS_FILE</a>);</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordflow">return</span> -1;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
@@ -153,13 +153,13 @@ $(document).ready(function(){initNavTree('linux_2subsystems_2settings__arch_8c_s
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  FILE *file= fopen(<a class="code" href="linux_2subsystems_2settings__arch_8c.html#aa464715701670e7dd8ad2bb4d2b11f46">PERSISTENT_SETTINGS_FILE</a>, <span class="stringliteral">&quot;rb&quot;</span>);</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordflow">if</span> (file == NULL) {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    printf(<span class="stringliteral">&quot;Could not open settings file %s to read!\n&quot;</span>, <a class="code" href="linux_2subsystems_2settings__arch_8c.html#aa464715701670e7dd8ad2bb4d2b11f46">PERSISTENT_SETTINGS_FILE</a>);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="kremlib_8h.html#a3cb9f0894fab1c8fbb0753c9c7c2a8d9">printf</a>(<span class="stringliteral">&quot;Could not open settings file %s to read!\n&quot;</span>, <a class="code" href="linux_2subsystems_2settings__arch_8c.html#aa464715701670e7dd8ad2bb4d2b11f46">PERSISTENT_SETTINGS_FILE</a>);</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">return</span> -1;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  }</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="comment">/* check if binary file size matches requested struct size */</span></div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  fseek(file, 0, SEEK_END);</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordflow">if</span> (ftell(file) != size) {</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    printf(<span class="stringliteral">&quot;Settings file %s size does not match, deleting it!\n&quot;</span>, <a class="code" href="linux_2subsystems_2settings__arch_8c.html#aa464715701670e7dd8ad2bb4d2b11f46">PERSISTENT_SETTINGS_FILE</a>);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="kremlib_8h.html#a3cb9f0894fab1c8fbb0753c9c7c2a8d9">printf</a>(<span class="stringliteral">&quot;Settings file %s size does not match, deleting it!\n&quot;</span>, <a class="code" href="linux_2subsystems_2settings__arch_8c.html#aa464715701670e7dd8ad2bb4d2b11f46">PERSISTENT_SETTINGS_FILE</a>);</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    fclose(file);</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">remove</span>(<a class="code" href="linux_2subsystems_2settings__arch_8c.html#aa464715701670e7dd8ad2bb4d2b11f46">PERSISTENT_SETTINGS_FILE</a>);</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">return</span> -1;</div>
@@ -167,7 +167,7 @@ $(document).ready(function(){initNavTree('linux_2subsystems_2settings__arch_8c_s
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  fseek(file, 0, SEEK_SET);</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordtype">int</span> bytes_read = fread(ptr, size, 1, file);</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordflow">if</span> (bytes_read != size) {</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    printf(<span class="stringliteral">&quot;Could only read %d of %d bytes from %s!\n&quot;</span>, bytes_read, size,</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="kremlib_8h.html#a3cb9f0894fab1c8fbb0753c9c7c2a8d9">printf</a>(<span class="stringliteral">&quot;Could only read %d of %d bytes from %s!\n&quot;</span>, bytes_read, size,</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;           <a class="code" href="linux_2subsystems_2settings__arch_8c.html#aa464715701670e7dd8ad2bb4d2b11f46">PERSISTENT_SETTINGS_FILE</a>);</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  }</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  fclose(file);</div>
@@ -184,6 +184,7 @@ $(document).ready(function(){initNavTree('linux_2subsystems_2settings__arch_8c_s
 <div class="ttc" id="types_8h_html_a2ba621978a511250f7250fb10e05ffbe"><div class="ttname"><a href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a></div><div class="ttdeci">signed long int32_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00019">types.h:19</a></div></div>
 <div class="ttc" id="settings_8h_html"><div class="ttname"><a href="settings_8h.html">settings.h</a></div><div class="ttdoc">Persistent settings interface. </div></div>
 <div class="ttc" id="linux_2subsystems_2settings__arch_8c_html_aa464715701670e7dd8ad2bb4d2b11f46"><div class="ttname"><a href="linux_2subsystems_2settings__arch_8c.html#aa464715701670e7dd8ad2bb4d2b11f46">PERSISTENT_SETTINGS_FILE</a></div><div class="ttdeci">#define PERSISTENT_SETTINGS_FILE</div><div class="ttdoc">Default file used to store persistent settings. </div><div class="ttdef"><b>Definition:</b> <a href="linux_2subsystems_2settings__arch_8c_source.html#l00034">settings_arch.c:34</a></div></div>
+<div class="ttc" id="kremlib_8h_html_a3cb9f0894fab1c8fbb0753c9c7c2a8d9"><div class="ttname"><a href="kremlib_8h.html#a3cb9f0894fab1c8fbb0753c9c7c2a8d9">printf</a></div><div class="ttdeci">#define printf</div><div class="ttdef"><b>Definition:</b> <a href="kremlib_8h_source.html#l00242">kremlib.h:242</a></div></div>
 <div class="ttc" id="linux_2subsystems_2settings__arch_8c_html_a96bbf08af032ab9c1e7c15c66eb2d513"><div class="ttname"><a href="linux_2subsystems_2settings__arch_8c.html#a96bbf08af032ab9c1e7c15c66eb2d513">persistent_clear</a></div><div class="ttdeci">int32_t persistent_clear(void)</div><div class="ttdef"><b>Definition:</b> <a href="linux_2subsystems_2settings__arch_8c_source.html#l00074">settings_arch.c:74</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -191,7 +192,7 @@ $(document).ready(function(){initNavTree('linux_2subsystems_2settings__arch_8c_s
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_92fbf38b8c893a0928a3445a75d0ac01.html">linux</a></li><li class="navelem"><a class="el" href="dir_aded1301b6ec9c30cbacafc9cff45e55.html">subsystems</a></li><li class="navelem"><a class="el" href="linux_2subsystems_2settings__arch_8c.html">settings_arch.c</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:01:13 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:01:27 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

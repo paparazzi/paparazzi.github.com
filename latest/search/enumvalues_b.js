@@ -161,6 +161,7 @@ var searchData=
   ['ms5611_5fstatus_5freset',['MS5611_STATUS_RESET',['../ms5611_8h.html#aeabcd6fb6c9a54ba10c34130f71f855ba9c8fb120253bf76a1ead2e6c6c10835e',1,'ms5611.h']]],
   ['ms5611_5fstatus_5freset_5fok',['MS5611_STATUS_RESET_OK',['../ms5611_8h.html#aeabcd6fb6c9a54ba10c34130f71f855bacbd33eb00f82a8caaa76a6e77390325d',1,'ms5611.h']]],
   ['ms5611_5fstatus_5funinit',['MS5611_STATUS_UNINIT',['../ms5611_8h.html#aeabcd6fb6c9a54ba10c34130f71f855bad80b7547e536d830370c7cf96a6cb84d',1,'ms5611.h']]],
+  ['msd_5fbot_5freset',['MSD_BOT_RESET',['../usb__msd_8h.html#af8cb4deefd2af9bde489fe8598e8aa96aed2697882eba38d731d53035c04b8f9e',1,'usb_msd.h']]],
   ['msd_5fejected',['MSD_EJECTED',['../usb__msd_8h.html#af8cb4deefd2af9bde489fe8598e8aa96aeba289dd2b410160fd64bd295a1dff96',1,'usb_msd.h']]],
   ['msd_5fidle',['MSD_IDLE',['../usb__msd_8h.html#af8cb4deefd2af9bde489fe8598e8aa96ab2dbda3078000a12ac7081c970d450c0',1,'usb_msd.h']]],
   ['msd_5fread_5fcommand_5fblock',['MSD_READ_COMMAND_BLOCK',['../usb__msd_8h.html#af8cb4deefd2af9bde489fe8598e8aa96a98979b5270ac73b425a1e8cb61756517',1,'usb_msd.h']]],

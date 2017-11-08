@@ -18,7 +18,8 @@ var nps__radio__control_8h =
     [ "NpsRadioControlType", "nps__radio__control_8h.html#a4185eb844c2becceef5585bb0175544a", [
       [ "SCRIPT", "nps__radio__control_8h.html#a4185eb844c2becceef5585bb0175544aa65154c0ec97cb74cba7359ca02c4ab54", null ],
       [ "JOYSTICK", "nps__radio__control_8h.html#a4185eb844c2becceef5585bb0175544aa9cdb4c7b3f2d3cd904160e767d3a4a2c", null ],
-      [ "SPEKTRUM", "nps__radio__control_8h.html#a4185eb844c2becceef5585bb0175544aa3b0361d7c922463802f9a82f455e5c59", null ]
+      [ "SPEKTRUM", "nps__radio__control_8h.html#a4185eb844c2becceef5585bb0175544aa3b0361d7c922463802f9a82f455e5c59", null ],
+      [ "NORC", "nps__radio__control_8h.html#a4185eb844c2becceef5585bb0175544aad08e86eded6925a3b5aab67e6ab63aff", null ]
     ] ],
     [ "nps_radio_control_available", "nps__radio__control_8h.html#a2a652ae30e8858d65f3e811509a795dd", null ],
     [ "nps_radio_control_init", "nps__radio__control_8h.html#a1028b3dc0a115b1c2cbfbf478d60c1c7", null ],

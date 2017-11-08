@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -79,6 +79,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow3" class="tabs2">
     <ul class="tablist">
       <li><a href="functions.html"><span>All</span></a></li>
+      <li><a href="functions_func.html"><span>Functions</span></a></li>
       <li class="current"><a href="functions_vars.html"><span>Variables</span></a></li>
     </ul>
   </div>
@@ -147,7 +148,8 @@ $(document).ready(function(){initNavTree('functions_vars_o.html','');});
 
 <h3><a class="anchor" id="index_o"></a>- o -</h3><ul>
 <li>o
-: <a class="el" href="ins__float__invariant_8h.html#a16ef8ac18396c52fca1ce7305179d43a">inv_gains</a>
+: <a class="el" href="high__pass__filter_8h.html#ad175b8ab88e0884c98ca0b63b07a5385">FourthOrderHighPass</a>
+, <a class="el" href="ins__float__invariant_8h.html#a16ef8ac18396c52fca1ce7305179d43a">inv_gains</a>
 , <a class="el" href="low__pass__filter_8h.html#a12f9c51730cdf64e838a304a1a870fb0">SecondOrderLowPass</a>
 , <a class="el" href="low__pass__filter_8h.html#a9435809cb2d50886dfb16158ccdb4e02">SecondOrderLowPass_int</a>
 </li>
@@ -156,6 +158,9 @@ $(document).ready(function(){initNavTree('functions_vars_o.html','');});
 </li>
 <li>OE
 : <a class="el" href="ins__float__invariant_8h.html#a4e5bb7b8dd42839dbd1a71b9b8f47fc8">inv_correction_gains</a>
+</li>
+<li>off
+: <a class="el" href="gvf__sin_8h.html#a0feb01dd3badf16827570d1d2a5e0eaf">gvf_s_par</a>
 </li>
 <li>offset
 : <a class="el" href="airspeed__adc_8h.html#a9afdfe7bd1d7dd87b862b6980f329681">AirspeedAdc</a>
@@ -166,9 +171,12 @@ $(document).ready(function(){initNavTree('functions_vars_o.html','');});
 , <a class="el" href="jpeg_8c.html#afc7271476f6fe399362809d8a1a4191e">JPEG_ENCODER_STRUCTURE</a>
 , <a class="el" href="nav__cube_8h.html#a824830bfb26bf1c0d17d824067f82ef5">NavCube</a>
 , <a class="el" href="nps__sensor__airspeed_8h.html#a301800433e17a217de94783b572e9b01">NpsSensorAirspeed</a>
+, <a class="el" href="nps__sensor__aoa_8h.html#a6d75cb54d04c9450fae8674b674de0d0">NpsSensorAngleOfAttack</a>
+, <a class="el" href="nps__sensor__sideslip_8h.html#a8ba6b5576c34a7f05ac73e80c8299cba">NpsSensorSideSlip</a>
 , <a class="el" href="nps__sensor__sonar_8h.html#a82672e101d916cefff3a310103554a57">NpsSensorSonar</a>
 , <a class="el" href="sonar__adc_8h.html#a1573024bf2c354bfc4a4953bb59185f3">SonarAdc</a>
 , <a class="el" href="sonar__bebop_8h.html#aeedc1376a4d995275b5d6d266f210c98">SonarBebop</a>
+, <a class="el" href="teraranger__one_8h.html#a1d64491879a8c3cefacbbbf772f5d278">TeraRanger</a>
 , <a class="el" href="vf__extended__float_8h.html#a73a1a8d29e2f79b6c8fa96639f726dac">VffExtended</a>
 </li>
 <li>offset_bv
@@ -185,7 +193,7 @@ $(document).ready(function(){initNavTree('functions_vars_o.html','');});
 </li>
 <li>offset_x
 : <a class="el" href="avi__isp__drop_8h.html#af924a9e681f238ee45a243f7527a56aa">avi_isp_drop_regs</a>
-, <a class="el" href="mt9f002_8h.html#a3026cda87b2f3c9d79319133fab3e16a">mt9f002_t</a>
+, <a class="el" href="mt9f002_8h.html#a897c00ed679e03d3c88b6072ff8d2d17">mt9f002_t</a>
 </li>
 <li>offset_x_y
 : <a class="el" href="avi__isp__green__imbalance_8h.html#a8471b95191ea7bb72123cbd94c673303">avi_isp_green_imbalance_regs</a>
@@ -193,7 +201,7 @@ $(document).ready(function(){initNavTree('functions_vars_o.html','');});
 </li>
 <li>offset_y
 : <a class="el" href="avi__isp__drop_8h.html#ac82b8264aac6b920f9b860b48643a4a1">avi_isp_drop_regs</a>
-, <a class="el" href="mt9f002_8h.html#a9011d838040bbcba7739fa66a249d2f4">mt9f002_t</a>
+, <a class="el" href="mt9f002_8h.html#a96ba78b97791d5dd4b48fd93e884c5df">mt9f002_t</a>
 </li>
 <li>offsets
 : <a class="el" href="libisp_8h.html#ab51f6106e26cfbd99134ff27990d437e">libisp_context</a>
@@ -211,20 +219,10 @@ $(document).ready(function(){initNavTree('functions_vars_o.html','');});
 : <a class="el" href="delayed__first__order__lowpass__filter_8h.html#a6f5abda401bc930c98e5a00bca9fe0a7">delayed_first_order_lowpass_filter_t</a>
 , <a class="el" href="stabilization__attitude__ref__quat__float_8h.html#a1b8c9c1d343788025150fb25ab3caa65">FloatRefModel</a>
 , <a class="el" href="guidance__h__ref_8h.html#a9ff1584e71e8d18aa5e930f0e2cab1e6">GuidanceHRef</a>
-, <a class="el" href="stabilization__indi_8h.html#a205e4bf9fa461e8d34d0fc67eb684798">IndiFilter</a>
 , <a class="el" href="stabilization__attitude__ref__quat__int_8h.html#a4eeccd9c23f08694a91184c9d962a980">IntRefModel</a>
-</li>
-<li>omega2
-: <a class="el" href="stabilization__indi_8h.html#a2430d98023b52d01e7b7890bf25b54b9">IndiFilter</a>
-</li>
-<li>omega2_r
-: <a class="el" href="stabilization__indi_8h.html#adee46c8e4a5ecaa1a4192e4f29c480e7">IndiFilter</a>
 </li>
 <li>omega_2
 : <a class="el" href="guidance__h__ref_8h.html#a37abc585a9915aba24c7172198ca56ec">GuidanceHRef</a>
-</li>
-<li>omega_r
-: <a class="el" href="stabilization__indi_8h.html#aa3f1aa9096c26ba2663d47a6d8092399">IndiFilter</a>
 </li>
 <li>on_ground
 : <a class="el" href="nps__fdm_8h.html#af0b017d6423c79f4bef5cd1bc7d66c1a">NpsFdm</a>
@@ -249,6 +247,9 @@ $(document).ready(function(){initNavTree('functions_vars_o.html','');});
 </li>
 <li>out_idx
 : <a class="el" href="esc32_8c.html#a0d767953cdec4771359effaa51464f84">esc32_private</a>
+</li>
+<li>outer_limit
+: <a class="el" href="range__forcefield_8h.html#ac0c6cd2d43660ccced3313a227a56a1e">range_forcefield_param_t</a>
 </li>
 <li>output_buf
 : <a class="el" href="cyrf6936_8h.html#ace1deff46f4385f20a6f3d24fbb5f72a">Cyrf6936</a>
@@ -277,6 +278,9 @@ $(document).ready(function(){initNavTree('functions_vars_o.html','');});
 <li>over_under_cnt
 : <a class="el" href="group__i2c.html#a872cdd33256c33ad0a4ec29b5ff2ac85">i2c_errors</a>
 </li>
+<li>overrcurrent
+: <a class="el" href="boards_2disco_2actuators_8c.html#ac425e94b9d19eaff36a741bbc24b3b62">disco_bldc_obs</a>
+</li>
 <li>override_enabled
 : <a class="el" href="motor__mixing_8h.html#af3d7567d0ca74f734e5c4e148d5c9b65">MotorMixing</a>
 </li>
@@ -292,7 +296,7 @@ $(document).ready(function(){initNavTree('functions_vars_o.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Oct 1 2016 14:02:43 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:03:14 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -29,5 +29,5 @@ var nav__survey__zamboni_8h =
       [ "Z_TURN2", "nav__survey__zamboni_8h.html#ad76f36783f4d511a4683cc515585bbe9a74503b8dcdc27558f72c62b97866ea69", null ]
     ] ],
     [ "nav_survey_zamboni_run", "nav__survey__zamboni_8h.html#a19f80130e80d72be86859190c8246b73", null ],
-    [ "nav_survey_zamboni_setup", "nav__survey__zamboni_8h.html#a7366c16d8708e918160bd345f532b7b2", null ]
+    [ "nav_survey_zamboni_setup", "nav__survey__zamboni_8h.html#a802a31412a76b5a8d8b0f7429393260a", null ]
 ];

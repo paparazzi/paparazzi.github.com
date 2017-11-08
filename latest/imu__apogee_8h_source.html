@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -154,78 +154,85 @@ $(document).ready(function(){initNavTree('imu__apogee_8h_source.html','');});
 <div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="imu__apogee_8h.html#ad8bdd9e68ab45b4ec5950f2e718d8f6c">   51</a></span>&#160;<span class="preprocessor">#define IMU_ACCEL_Z_SIGN  1</span></div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#if !defined IMU_GYRO_P_SENS &amp; !defined IMU_GYRO_Q_SENS &amp; !defined IMU_GYRO_R_SENS</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">// FIXME</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="imu__apogee_8h.html#ad08f71586fceaa57ea361681bb6543b7">   61</a></span>&#160;<span class="preprocessor">#define IMU_GYRO_P_SENS 2.17953</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="imu__apogee_8h.html#aa59c24839f4a36f23c98da339dea1224">   62</a></span>&#160;<span class="preprocessor">#define IMU_GYRO_P_SENS_NUM 18271</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="imu__apogee_8h.html#a2644576e539bd38bf5d323809e3fd737">   63</a></span>&#160;<span class="preprocessor">#define IMU_GYRO_P_SENS_DEN 8383</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="imu__apogee_8h.html#a5ed19364e701726bf4eb06eea5da9acf">   64</a></span>&#160;<span class="preprocessor">#define IMU_GYRO_Q_SENS 2.17953</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="imu__apogee_8h.html#a3c4d85605fa8be77fbc356b66c19f509">   65</a></span>&#160;<span class="preprocessor">#define IMU_GYRO_Q_SENS_NUM 18271</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="imu__apogee_8h.html#aaa4f4a11cc02f0d8aef1e8d97a15746f">   66</a></span>&#160;<span class="preprocessor">#define IMU_GYRO_Q_SENS_DEN 8383</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="imu__apogee_8h.html#af57decce9e96b0726832a410273223f3">   67</a></span>&#160;<span class="preprocessor">#define IMU_GYRO_R_SENS 2.17953</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="imu__apogee_8h.html#a6f808c71190e714287442af3bb7008b3">   68</a></span>&#160;<span class="preprocessor">#define IMU_GYRO_R_SENS_NUM 18271</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="imu__apogee_8h.html#aecb2f43265d239ba7661dfcc8523123e">   69</a></span>&#160;<span class="preprocessor">#define IMU_GYRO_R_SENS_DEN 8383</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#if !defined IMU_GYRO_P_NEUTRAL &amp; !defined IMU_GYRO_Q_NEUTRAL &amp; !defined IMU_GYRO_R_NEUTRAL</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="imu__apogee_8h.html#a7c36ae4fa7593bdd81a2eac2a763452e">   72</a></span>&#160;<span class="preprocessor">#define IMU_GYRO_P_NEUTRAL 0</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="imu__apogee_8h.html#af3381e8cf000efbb86c6a4667449faf9">   73</a></span>&#160;<span class="preprocessor">#define IMU_GYRO_Q_NEUTRAL 0</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="imu__apogee_8h.html#adb9273d5a997fde171fc41b58191f597">   74</a></span>&#160;<span class="preprocessor">#define IMU_GYRO_R_NEUTRAL 0</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#if !defined IMU_ACCEL_X_SENS &amp; !defined IMU_ACCEL_Y_SENS &amp; !defined IMU_ACCEL_Z_SENS</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment">// FIXME</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="imu__apogee_8h.html#a8ac88fc00cde506229b92c6a1e2c3122">   84</a></span>&#160;<span class="preprocessor">#define IMU_ACCEL_X_SENS 2.4525</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="imu__apogee_8h.html#ada91099469f16df2d8aeafa82d365c4b">   85</a></span>&#160;<span class="preprocessor">#define IMU_ACCEL_X_SENS_NUM 981</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="imu__apogee_8h.html#a8acf299c1bfb2daa92b1894556ca50ad">   86</a></span>&#160;<span class="preprocessor">#define IMU_ACCEL_X_SENS_DEN 400</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="imu__apogee_8h.html#a3bb03278fbd9117e876b24e1b78a61c5">   87</a></span>&#160;<span class="preprocessor">#define IMU_ACCEL_Y_SENS 2.4525</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="imu__apogee_8h.html#a4afc2b22683312436f746d69fc451bb1">   88</a></span>&#160;<span class="preprocessor">#define IMU_ACCEL_Y_SENS_NUM 981</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="imu__apogee_8h.html#a60e8f1f35a15a535130669093e80e858">   89</a></span>&#160;<span class="preprocessor">#define IMU_ACCEL_Y_SENS_DEN 400</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="imu__apogee_8h.html#ad48a5b859139ea2355c40f5abf5aa8aa">   90</a></span>&#160;<span class="preprocessor">#define IMU_ACCEL_Z_SENS 2.4525</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="imu__apogee_8h.html#afd17b3bbedb8e03a9a4f27d21b8d507e">   91</a></span>&#160;<span class="preprocessor">#define IMU_ACCEL_Z_SENS_NUM 981</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="imu__apogee_8h.html#ae62fbd99f815974f80f911bfa1b1d514">   92</a></span>&#160;<span class="preprocessor">#define IMU_ACCEL_Z_SENS_DEN 400</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor">#if !defined IMU_ACCEL_X_NEUTRAL &amp; !defined IMU_ACCEL_Y_NEUTRAL &amp; !defined IMU_ACCEL_Z_NEUTRAL</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="imu__apogee_8h.html#a01dac8935d4166bc144b115219cddbc4">   95</a></span>&#160;<span class="preprocessor">#define IMU_ACCEL_X_NEUTRAL 0</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="imu__apogee_8h.html#a199acc0383b0e1d7e3841bc3297cc0fb">   96</a></span>&#160;<span class="preprocessor">#define IMU_ACCEL_Y_NEUTRAL 0</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="imu__apogee_8h.html#a2b487e2376edc35048f5d78cd4968221">   97</a></span>&#160;<span class="preprocessor">#define IMU_ACCEL_Z_NEUTRAL 0</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
-<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="imu__apogee_8h.html">  100</a></span>&#160;<span class="keyword">struct </span><a class="code" href="imu__apogee_8h.html#structImuApogee">ImuApogee</a> {</div>
-<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="imu__apogee_8h.html#af336a924ca29eddfb18fd75358fc210f">  101</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="mpu60x0__i2c_8h.html#structMpu60x0__I2c">Mpu60x0_I2c</a> <a class="code" href="imu__apogee_8h.html#af336a924ca29eddfb18fd75358fc210f">mpu</a>;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">#if APOGEE_USE_MPU9150</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keyword">struct </span><a class="code" href="ak8975_8h.html#structAk8975">Ak8975</a> ak;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;};</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#ifndef APOGEE_GYRO_RANGE</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="imu__apogee_8h.html#ab3023c8e310c1587bcb135e7e55b24db">   55</a></span>&#160;<span class="preprocessor">#define APOGEE_GYRO_RANGE MPU60X0_GYRO_RANGE_1000</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#ifndef APOGEE_ACCEL_RANGE</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="imu__apogee_8h.html#afff4a758f055126720cafb4f1be1c956">   58</a></span>&#160;<span class="preprocessor">#define APOGEE_ACCEL_RANGE MPU60X0_ACCEL_RANGE_8G</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">// Set default sensitivity based on range if needed</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#if !defined IMU_GYRO_P_SENS &amp; !defined IMU_GYRO_Q_SENS &amp; !defined IMU_GYRO_R_SENS</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="imu__apogee_8h.html#ad08f71586fceaa57ea361681bb6543b7">   63</a></span>&#160;<span class="preprocessor">#define IMU_GYRO_P_SENS MPU60X0_GYRO_SENS[APOGEE_GYRO_RANGE]</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="imu__apogee_8h.html#aa59c24839f4a36f23c98da339dea1224">   64</a></span>&#160;<span class="preprocessor">#define IMU_GYRO_P_SENS_NUM MPU60X0_GYRO_SENS_FRAC[APOGEE_GYRO_RANGE][0]</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="imu__apogee_8h.html#a2644576e539bd38bf5d323809e3fd737">   65</a></span>&#160;<span class="preprocessor">#define IMU_GYRO_P_SENS_DEN MPU60X0_GYRO_SENS_FRAC[APOGEE_GYRO_RANGE][1]</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="imu__apogee_8h.html#a5ed19364e701726bf4eb06eea5da9acf">   66</a></span>&#160;<span class="preprocessor">#define IMU_GYRO_Q_SENS MPU60X0_GYRO_SENS[APOGEE_GYRO_RANGE]</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="imu__apogee_8h.html#a3c4d85605fa8be77fbc356b66c19f509">   67</a></span>&#160;<span class="preprocessor">#define IMU_GYRO_Q_SENS_NUM MPU60X0_GYRO_SENS_FRAC[APOGEE_GYRO_RANGE][0]</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="imu__apogee_8h.html#aaa4f4a11cc02f0d8aef1e8d97a15746f">   68</a></span>&#160;<span class="preprocessor">#define IMU_GYRO_Q_SENS_DEN MPU60X0_GYRO_SENS_FRAC[APOGEE_GYRO_RANGE][1]</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="imu__apogee_8h.html#af57decce9e96b0726832a410273223f3">   69</a></span>&#160;<span class="preprocessor">#define IMU_GYRO_R_SENS MPU60X0_GYRO_SENS[APOGEE_GYRO_RANGE]</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="imu__apogee_8h.html#a6f808c71190e714287442af3bb7008b3">   70</a></span>&#160;<span class="preprocessor">#define IMU_GYRO_R_SENS_NUM MPU60X0_GYRO_SENS_FRAC[APOGEE_GYRO_RANGE][0]</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="imu__apogee_8h.html#aecb2f43265d239ba7661dfcc8523123e">   71</a></span>&#160;<span class="preprocessor">#define IMU_GYRO_R_SENS_DEN MPU60X0_GYRO_SENS_FRAC[APOGEE_GYRO_RANGE][1]</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#if !defined IMU_GYRO_P_NEUTRAL &amp; !defined IMU_GYRO_Q_NEUTRAL &amp; !defined IMU_GYRO_R_NEUTRAL</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="imu__apogee_8h.html#a7c36ae4fa7593bdd81a2eac2a763452e">   74</a></span>&#160;<span class="preprocessor">#define IMU_GYRO_P_NEUTRAL 0</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="imu__apogee_8h.html#af3381e8cf000efbb86c6a4667449faf9">   75</a></span>&#160;<span class="preprocessor">#define IMU_GYRO_Q_NEUTRAL 0</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="imu__apogee_8h.html#adb9273d5a997fde171fc41b58191f597">   76</a></span>&#160;<span class="preprocessor">#define IMU_GYRO_R_NEUTRAL 0</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">// Set default sensitivity based on range if needed</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#if !defined IMU_ACCEL_X_SENS &amp; !defined IMU_ACCEL_Y_SENS &amp; !defined IMU_ACCEL_Z_SENS</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="imu__apogee_8h.html#a8ac88fc00cde506229b92c6a1e2c3122">   82</a></span>&#160;<span class="preprocessor">#define IMU_ACCEL_X_SENS MPU60X0_ACCEL_SENS[APOGEE_ACCEL_RANGE]</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="imu__apogee_8h.html#ada91099469f16df2d8aeafa82d365c4b">   83</a></span>&#160;<span class="preprocessor">#define IMU_ACCEL_X_SENS_NUM MPU60X0_ACCEL_SENS_FRAC[APOGEE_ACCEL_RANGE][0]</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="imu__apogee_8h.html#a8acf299c1bfb2daa92b1894556ca50ad">   84</a></span>&#160;<span class="preprocessor">#define IMU_ACCEL_X_SENS_DEN MPU60X0_ACCEL_SENS_FRAC[APOGEE_ACCEL_RANGE][1]</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="imu__apogee_8h.html#a3bb03278fbd9117e876b24e1b78a61c5">   85</a></span>&#160;<span class="preprocessor">#define IMU_ACCEL_Y_SENS MPU60X0_ACCEL_SENS[APOGEE_ACCEL_RANGE]</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="imu__apogee_8h.html#a4afc2b22683312436f746d69fc451bb1">   86</a></span>&#160;<span class="preprocessor">#define IMU_ACCEL_Y_SENS_NUM MPU60X0_ACCEL_SENS_FRAC[APOGEE_ACCEL_RANGE][0]</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="imu__apogee_8h.html#a60e8f1f35a15a535130669093e80e858">   87</a></span>&#160;<span class="preprocessor">#define IMU_ACCEL_Y_SENS_DEN MPU60X0_ACCEL_SENS_FRAC[APOGEE_ACCEL_RANGE][1]</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="imu__apogee_8h.html#ad48a5b859139ea2355c40f5abf5aa8aa">   88</a></span>&#160;<span class="preprocessor">#define IMU_ACCEL_Z_SENS MPU60X0_ACCEL_SENS[APOGEE_ACCEL_RANGE]</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="imu__apogee_8h.html#afd17b3bbedb8e03a9a4f27d21b8d507e">   89</a></span>&#160;<span class="preprocessor">#define IMU_ACCEL_Z_SENS_NUM MPU60X0_ACCEL_SENS_FRAC[APOGEE_ACCEL_RANGE][0]</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="imu__apogee_8h.html#ae62fbd99f815974f80f911bfa1b1d514">   90</a></span>&#160;<span class="preprocessor">#define IMU_ACCEL_Z_SENS_DEN MPU60X0_ACCEL_SENS_FRAC[APOGEE_ACCEL_RANGE][1]</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">#if !defined IMU_ACCEL_X_NEUTRAL &amp; !defined IMU_ACCEL_Y_NEUTRAL &amp; !defined IMU_ACCEL_Z_NEUTRAL</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="imu__apogee_8h.html#a01dac8935d4166bc144b115219cddbc4">   93</a></span>&#160;<span class="preprocessor">#define IMU_ACCEL_X_NEUTRAL 0</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="imu__apogee_8h.html#a199acc0383b0e1d7e3841bc3297cc0fb">   94</a></span>&#160;<span class="preprocessor">#define IMU_ACCEL_Y_NEUTRAL 0</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="imu__apogee_8h.html#a2b487e2376edc35048f5d78cd4968221">   95</a></span>&#160;<span class="preprocessor">#define IMU_ACCEL_Z_NEUTRAL 0</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="imu__apogee_8h.html">   98</a></span>&#160;<span class="keyword">struct </span><a class="code" href="imu__apogee_8h.html#structImuApogee">ImuApogee</a> {</div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="imu__apogee_8h.html#af336a924ca29eddfb18fd75358fc210f">   99</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="mpu60x0__i2c_8h.html#structMpu60x0__I2c">Mpu60x0_I2c</a> <a class="code" href="imu__apogee_8h.html#af336a924ca29eddfb18fd75358fc210f">mpu</a>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">#if APOGEE_USE_MPU9150</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="keyword">struct </span><a class="code" href="ak8975_8h.html#structAk8975">Ak8975</a> ak;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;};</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="keyword">extern</span> <span class="keyword">struct </span><a class="code" href="imu__apogee_8h.html#structImuApogee">ImuApogee</a> <a class="code" href="imu__apogee_8h.html#a195fd58b3335b4b91593e2c7d1bdb6fb">imu_apogee</a>;</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="keyword">extern</span> <span class="keyword">struct </span><a class="code" href="imu__apogee_8h.html#structImuApogee">ImuApogee</a> <a class="code" href="imu__apogee_8h.html#a195fd58b3335b4b91593e2c7d1bdb6fb">imu_apogee</a>;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="imu__apogee_8h.html#a5ddbbf57488228a97e3d607bac33d837">imu_apogee_init</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="imu__apogee_8h.html#a43abac81ed29891c48ad37a910562844">imu_apogee_periodic</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="imu__apogee_8h.html#a60395d55d1c3bbb3773a3bc79f210884">imu_apogee_event</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="imu__apogee_8h.html#a1262a50ea34da37d89d68b295310a0fd">imu_apogee_downlink_raw</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="preprocessor">#endif // IMU_APOGEE_H</span></div>
-<div class="ttc" id="imu__apogee_8h_html_af336a924ca29eddfb18fd75358fc210f"><div class="ttname"><a href="imu__apogee_8h.html#af336a924ca29eddfb18fd75358fc210f">ImuApogee::mpu</a></div><div class="ttdeci">struct Mpu60x0_I2c mpu</div><div class="ttdef"><b>Definition:</b> <a href="imu__apogee_8h_source.html#l00101">imu_apogee.h:101</a></div></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="imu__apogee_8h.html#a5ddbbf57488228a97e3d607bac33d837">imu_apogee_init</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="imu__apogee_8h.html#a43abac81ed29891c48ad37a910562844">imu_apogee_periodic</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="imu__apogee_8h.html#a60395d55d1c3bbb3773a3bc79f210884">imu_apogee_event</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="imu__apogee_8h.html#a1262a50ea34da37d89d68b295310a0fd">imu_apogee_downlink_raw</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="preprocessor">#endif // IMU_APOGEE_H</span></div>
+<div class="ttc" id="imu__apogee_8h_html_af336a924ca29eddfb18fd75358fc210f"><div class="ttname"><a href="imu__apogee_8h.html#af336a924ca29eddfb18fd75358fc210f">ImuApogee::mpu</a></div><div class="ttdeci">struct Mpu60x0_I2c mpu</div><div class="ttdef"><b>Definition:</b> <a href="imu__apogee_8h_source.html#l00099">imu_apogee.h:99</a></div></div>
 <div class="ttc" id="mpu60x0__i2c_8h_html_structMpu60x0__I2c"><div class="ttname"><a href="mpu60x0__i2c_8h.html#structMpu60x0__I2c">Mpu60x0_I2c</a></div><div class="ttdef"><b>Definition:</b> <a href="mpu60x0__i2c_8h_source.html#l00054">mpu60x0_i2c.h:54</a></div></div>
-<div class="ttc" id="imu__apogee_8h_html_a1262a50ea34da37d89d68b295310a0fd"><div class="ttname"><a href="imu__apogee_8h.html#a1262a50ea34da37d89d68b295310a0fd">imu_apogee_downlink_raw</a></div><div class="ttdeci">void imu_apogee_downlink_raw(void)</div><div class="ttdef"><b>Definition:</b> <a href="imu__apogee_8c_source.html#l00136">imu_apogee.c:136</a></div></div>
+<div class="ttc" id="imu__apogee_8h_html_a1262a50ea34da37d89d68b295310a0fd"><div class="ttname"><a href="imu__apogee_8h.html#a1262a50ea34da37d89d68b295310a0fd">imu_apogee_downlink_raw</a></div><div class="ttdeci">void imu_apogee_downlink_raw(void)</div><div class="ttdef"><b>Definition:</b> <a href="imu__apogee_8c_source.html#l00129">imu_apogee.c:129</a></div></div>
 <div class="ttc" id="ak8975_8h_html_structAk8975"><div class="ttname"><a href="ak8975_8h.html#structAk8975">Ak8975</a></div><div class="ttdef"><b>Definition:</b> <a href="ak8975_8h_source.html#l00059">ak8975.h:59</a></div></div>
-<div class="ttc" id="imu__apogee_8h_html_a43abac81ed29891c48ad37a910562844"><div class="ttname"><a href="imu__apogee_8h.html#a43abac81ed29891c48ad37a910562844">imu_apogee_periodic</a></div><div class="ttdeci">void imu_apogee_periodic(void)</div><div class="ttdef"><b>Definition:</b> <a href="imu__apogee_8c_source.html#l00123">imu_apogee.c:123</a></div></div>
-<div class="ttc" id="imu__apogee_8h_html_a60395d55d1c3bbb3773a3bc79f210884"><div class="ttname"><a href="imu__apogee_8h.html#a60395d55d1c3bbb3773a3bc79f210884">imu_apogee_event</a></div><div class="ttdeci">void imu_apogee_event(void)</div><div class="ttdef"><b>Definition:</b> <a href="imu__apogee_8c_source.html#l00145">imu_apogee.c:145</a></div></div>
-<div class="ttc" id="imu__apogee_8h_html_structImuApogee"><div class="ttname"><a href="imu__apogee_8h.html#structImuApogee">ImuApogee</a></div><div class="ttdef"><b>Definition:</b> <a href="imu__apogee_8h_source.html#l00100">imu_apogee.h:100</a></div></div>
+<div class="ttc" id="imu__apogee_8h_html_a43abac81ed29891c48ad37a910562844"><div class="ttname"><a href="imu__apogee_8h.html#a43abac81ed29891c48ad37a910562844">imu_apogee_periodic</a></div><div class="ttdeci">void imu_apogee_periodic(void)</div><div class="ttdef"><b>Definition:</b> <a href="imu__apogee_8c_source.html#l00116">imu_apogee.c:116</a></div></div>
+<div class="ttc" id="imu__apogee_8h_html_a60395d55d1c3bbb3773a3bc79f210884"><div class="ttname"><a href="imu__apogee_8h.html#a60395d55d1c3bbb3773a3bc79f210884">imu_apogee_event</a></div><div class="ttdeci">void imu_apogee_event(void)</div><div class="ttdef"><b>Definition:</b> <a href="imu__apogee_8c_source.html#l00138">imu_apogee.c:138</a></div></div>
+<div class="ttc" id="imu__apogee_8h_html_structImuApogee"><div class="ttname"><a href="imu__apogee_8h.html#structImuApogee">ImuApogee</a></div><div class="ttdef"><b>Definition:</b> <a href="imu__apogee_8h_source.html#l00098">imu_apogee.h:98</a></div></div>
 <div class="ttc" id="imu_8h_html"><div class="ttname"><a href="imu_8h.html">imu.h</a></div><div class="ttdoc">Inertial Measurement Unit interface. </div></div>
 <div class="ttc" id="std_8h_html"><div class="ttname"><a href="std_8h.html">std.h</a></div></div>
 <div class="ttc" id="mpu60x0__i2c_8h_html"><div class="ttname"><a href="mpu60x0__i2c_8h.html">mpu60x0_i2c.h</a></div><div class="ttdoc">Driver for the MPU-60X0 using I2C. </div></div>
 <div class="ttc" id="ak8975_8h_html"><div class="ttname"><a href="ak8975_8h.html">ak8975.h</a></div><div class="ttdoc">Driver for the AKM AK8975 magnetometer. </div></div>
-<div class="ttc" id="imu__apogee_8h_html_a5ddbbf57488228a97e3d607bac33d837"><div class="ttname"><a href="imu__apogee_8h.html#a5ddbbf57488228a97e3d607bac33d837">imu_apogee_init</a></div><div class="ttdeci">void imu_apogee_init(void)</div><div class="ttdef"><b>Definition:</b> <a href="imu__apogee_8c_source.html#l00101">imu_apogee.c:101</a></div></div>
-<div class="ttc" id="imu__apogee_8h_html_a195fd58b3335b4b91593e2c7d1bdb6fb"><div class="ttname"><a href="imu__apogee_8h.html#a195fd58b3335b4b91593e2c7d1bdb6fb">imu_apogee</a></div><div class="ttdeci">struct ImuApogee imu_apogee</div><div class="ttdef"><b>Definition:</b> <a href="imu__apogee_8c_source.html#l00092">imu_apogee.c:92</a></div></div>
+<div class="ttc" id="imu__apogee_8h_html_a5ddbbf57488228a97e3d607bac33d837"><div class="ttname"><a href="imu__apogee_8h.html#a5ddbbf57488228a97e3d607bac33d837">imu_apogee_init</a></div><div class="ttdeci">void imu_apogee_init(void)</div><div class="ttdef"><b>Definition:</b> <a href="imu__apogee_8c_source.html#l00094">imu_apogee.c:94</a></div></div>
+<div class="ttc" id="imu__apogee_8h_html_a195fd58b3335b4b91593e2c7d1bdb6fb"><div class="ttname"><a href="imu__apogee_8h.html#a195fd58b3335b4b91593e2c7d1bdb6fb">imu_apogee</a></div><div class="ttdeci">struct ImuApogee imu_apogee</div><div class="ttdef"><b>Definition:</b> <a href="imu__apogee_8c_source.html#l00085">imu_apogee.c:85</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e030268cd18297cf6282390f76bfcf7f.html">boards</a></li><li class="navelem"><a class="el" href="dir_906fcced062b34dea0e143ec53b4cca3.html">apogee</a></li><li class="navelem"><a class="el" href="imu__apogee_8h.html">imu_apogee.h</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:01:15 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:01:29 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

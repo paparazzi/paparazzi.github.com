@@ -14,6 +14,7 @@ var guidance__v__n_8c =
     [ "V_CTL_THROTTLE_SLEW", "guidance__v__n_8c.html#abce76ecdbe377a7dee4611131b720a66", null ],
     [ "v_ctl_altitude_loop", "guidance__v__n_8c.html#ab78a678ff1021823256d747800db3140", null ],
     [ "v_ctl_climb_loop", "guidance__v__n_8c.html#a38f0bbceda8812281fc650c2c1aac6c8", null ],
+    [ "v_ctl_guidance_loop", "guidance__v__n_8c.html#a7fe0d6e838155d9c38c8cf8a8413cf21", null ],
     [ "v_ctl_init", "guidance__v__n_8c.html#ac48c5fff2d5aca1dd1fc58622709d7eb", null ],
     [ "v_ctl_set_pitch", "guidance__v__n_8c.html#a1e3fd0609be4d63ccd94d995a0db097a", null ],
     [ "v_ctl_set_throttle", "guidance__v__n_8c.html#a4fe67185d9a0b7efc737fdd778393285", null ],

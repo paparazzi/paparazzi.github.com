@@ -1,51 +1,36 @@
 <map id="int32_quat_of_eulers" name="int32_quat_of_eulers">
-<area shape="rect" id="node2" href="$stabilization__attitude__ref__quat__int_8h.html#a43134b9502b1b59a68e214221e011fb8" title="attitude_ref_quat_int\l_enter" alt="" coords="210,517,365,558"/>
-<area shape="rect" id="node23" href="$group__math__orientation__representation.html#gaa411e2093feec3fef9e18c4a52b74c38" title="orientationCalcQuat_i" alt="" coords="208,681,367,708"/>
-<area shape="rect" id="node50" href="$stabilization__attitude__heli__indi_8c.html#ac064607f64988793cadfe5ed346b269f" title="stabilization_attitude\l_set_rpy_setpoint_i" alt="" coords="210,733,365,774"/>
-<area shape="rect" id="node3" href="$stabilization__attitude__quat__int_8c.html#a23f862ca823e6fd23fc9c111178be077" title="stabilization_attitude\l_enter" alt="" coords="415,319,569,361"/>
-<area shape="rect" id="node4" href="$guidance__h_8h.html#a2903786227eb11507928f99870099225" title="guidance_h_mode_changed" alt="" coords="617,301,819,328"/>
-<area shape="rect" id="node5" href="$rotorcraft_2autopilot_8h.html#a3aaa2cf16ee3b25e8fca9bbd1d579d64" title="autopilot_set_mode" alt="" coords="889,212,1038,239"/>
-<area shape="rect" id="node6" href="$rotorcraft_2autopilot_8c.html#a9d3557653abfc3d4c428724b249f6d5e" title="Autopilot inititalization. " alt="" coords="1371,325,1475,352"/>
-<area shape="rect" id="node7" href="$rotorcraft_2autopilot_8h.html#a7339f5741706cb9c2e2186b1174cc770" title="Get autopilot mode from two 2way switches. " alt="" coords="1126,5,1291,32"/>
-<area shape="rect" id="node10" href="$rotorcraft_2autopilot_8h.html#a1914661233fbbed6c2ee653b99757652" title="autopilot_periodic" alt="" coords="1536,224,1671,251"/>
-<area shape="rect" id="node16" href="$rotorcraft_2autopilot_8h.html#a651a9f8c5088099dad4861cedcb3b956" title="AP mode setting handler. " alt="" coords="1113,56,1305,83"/>
-<area shape="rect" id="node17" href="$main_8h.html#a6266a73fe8c0512f1de72cea96e5110b" title="failsafe_check" alt="" coords="1153,107,1264,133"/>
-<area shape="rect" id="node19" href="$guidance__flip_8h.html#a341f66aaa1a6e736e980ae5cccb3c0f5" title="guidance_flip_run" alt="" coords="1142,224,1275,251"/>
-<area shape="rect" id="node21" href="$mavlink_8c.html#a92b02fdeb899791573ef52506deb653c" title="mavlink_common_message\l_handler" alt="" coords="1108,158,1309,199"/>
-<area shape="rect" id="node8" href="$rotorcraft_2main__fbw_8h.html#a542234de10fcdadb4184efcd9c7d0d04" title="main_event" alt="" coords="1374,7,1471,33"/>
-<area shape="rect" id="node9" href="$rotorcraft_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1576,59,1631,85"/>
-<area shape="rect" id="node11" href="$rotorcraft_2main__fbw_8h.html#a4fee35a9ab2c517bde9f598c265222b0" title="main_periodic" alt="" coords="1719,196,1829,223"/>
-<area shape="rect" id="node12" href="$rotorcraft_2main__fbw_8h.html#acfa2a521a46d9beb8a3fa77bb0c9e407" title="handle_periodic_tasks" alt="" coords="1877,140,2040,167"/>
-<area shape="rect" id="node13" href="$fixedwing_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="2146,89,2201,116"/>
-<area shape="rect" id="node14" href="$nps__autopilot__fixedwing_8c.html#a12870aaa609d4860004be3cec4c8cf2a" title="nps_autopilot_run_step" alt="" coords="2088,140,2259,167"/>
-<area shape="rect" id="node15" href="$main__chibios_8c.html#a1bd1ec0fdc597d88ee659889cda25c0a" title="thd_ap" alt="" coords="2140,191,2207,217"/>
-<area shape="rect" id="node18" href="$rotorcraft_2main__fbw_8h.html#a092df25ac46a6a4ca72c023d8821f9b2" title="Main initialization. " alt="" coords="1383,59,1463,85"/>
-<area shape="rect" id="node20" href="$guidance__h_8h.html#afff2f6a359638c74d5d1051c3edfa554" title="guidance_h_run" alt="" coords="1361,224,1484,251"/>
-<area shape="rect" id="node22" href="$mavlink_8h.html#aca06c0aea877a0d9c57a5e16cee711d7" title="Event MAVLink calls. " alt="" coords="1365,165,1480,192"/>
-<area shape="rect" id="node24" href="$group__math__orientation__representation.html#ga86b153b2106a638cef8e314125c47306" title="Get vehicle body attitude quaternion (int). " alt="" coords="415,731,569,757"/>
-<area shape="rect" id="node25" href="$ahrs__int__cmpl__quat_8h.html#a954df43f45ac2f8c6e59319c25ce607a" title="Hard reset yaw to a heading. " alt="" coords="627,815,809,841"/>
-<area shape="rect" id="node29" href="$ahrs__int__cmpl__quat_8h.html#af4f86e2321466fd50aae62120f20eae4" title="ahrs_icq_set_body_to\l_imu_quat" alt="" coords="638,749,798,790"/>
-<area shape="rect" id="node32" href="$ahrs__int__cmpl__quat_8h.html#a7fb1fae4a1f5b6b1a12173486312b73d" title="Update yaw based on a heading measurement. " alt="" coords="625,865,811,892"/>
-<area shape="rect" id="node33" href="$ahrs__int__cmpl__quat__wrapper_8c.html#abea8ede7c8ebc5179487d3464ab513bb" title="Rotate angles and rates from imu to body frame and set state. " alt="" coords="867,697,1060,724"/>
-<area shape="rect" id="node38" href="$group__state__attitude.html#ga28e5de0a4822cabcfe8350e2343111ce" title="Get vehicle body attitude quaternion (int). " alt="" coords="623,440,813,467"/>
-<area shape="rect" id="node26" href="$ahrs__int__cmpl__quat_8h.html#a75015adf5b7c98bd9eb6b588850d8449" title="ahrs_icq_update_gps" alt="" coords="885,865,1042,892"/>
-<area shape="rect" id="node27" href="$ahrs__int__cmpl__quat__wrapper_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title="gps_cb" alt="" coords="1175,883,1242,909"/>
-<area shape="rect" id="node28" href="$ahrs__int__cmpl__quat__wrapper_8h.html#af71a2cd8d6fabc9373e99e2aeddbbb89" title="ahrs_icq_register" alt="" coords="1357,731,1488,757"/>
-<area shape="rect" id="node30" href="$ahrs__int__cmpl__quat_8h.html#a8e3ef1cad28d70b692c4fce45d291ae8" title="ahrs_icq_set_body_to_imu" alt="" coords="868,807,1059,833"/>
-<area shape="rect" id="node31" href="$ahrs__int__cmpl__quat__wrapper_8c.html#ab5f6300c213088a4ea0598baafb5e736" title="body_to_imu_cb" alt="" coords="900,756,1027,783"/>
-<area shape="rect" id="node34" href="$ahrs__int__cmpl__quat__wrapper_8c.html#aacd6b1869f263f90a6f1fbe777a87793" title="accel_cb" alt="" coords="1170,731,1247,757"/>
-<area shape="rect" id="node35" href="$ahrs__int__cmpl__quat__wrapper_8c.html#abb508f672663ab1485eae5b9e1799f21" title="aligner_cb" alt="" coords="1165,781,1252,808"/>
-<area shape="rect" id="node36" href="$ahrs__int__cmpl__quat__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title="gyro_cb" alt="" coords="1173,629,1245,656"/>
-<area shape="rect" id="node37" href="$ahrs__int__cmpl__quat__wrapper_8c.html#a49cc1e545848b85016af530049991c02" title="mag_cb" alt="" coords="1172,680,1245,707"/>
-<area shape="rect" id="node39" href="$file__logger_8h.html#a0a108be83e6a060666234d7b46a36907" title="Log the values to a csv file. " alt="" coords="891,339,1035,365"/>
-<area shape="rect" id="node40" href="$ins__int_8h.html#a54df8c17ccf7a20d6ca09ad0b8f45db3" title="ins_int_update_gps" alt="" coords="891,389,1036,416"/>
-<area shape="rect" id="node43" href="$stabilization__attitude__quat__int_8c.html#a0b0a909dbd9646ea76aa4e91b1e52474" title="send_ahrs_ref_quat" alt="" coords="889,440,1037,467"/>
-<area shape="rect" id="node45" href="$ahrs__int__cmpl__quat__wrapper_8c.html#a8c9c14edf7f1235080779f6d894be78d" title="send_quat" alt="" coords="919,560,1008,587"/>
-<area shape="rect" id="node46" href="$stabilization__attitude__heli__indi_8c.html#add1138c9aae1adaafdb42ddf2f0c039a" title="stabilization_attitude_run" alt="" coords="872,288,1055,315"/>
-<area shape="rect" id="node47" href="$stabilization__indi_8h.html#a1bd35992373c5eed91852cc9f20680b0" title="stabilization_indi_run" alt="" coords="886,491,1041,517"/>
-<area shape="rect" id="node41" href="$ins__int_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title="gps_cb" alt="" coords="1175,376,1242,403"/>
-<area shape="rect" id="node42" href="$ins__int_8h.html#a6f47e4e65f9697a961c3bef79e9029e4" title="ins_int_init" alt="" coords="1378,376,1467,403"/>
-<area shape="rect" id="node44" href="$stabilization__attitude__quat__int_8c.html#a03d27593d891182c04fc5337766733d1" title="stabilization_attitude_init " alt="" coords="1118,427,1299,453"/>
-<area shape="rect" id="node48" href="$stabilization__attitude__quat__indi_8c.html#a18a45e70bf2fae908ece863a764f777b" title="stabilization_attitude_run" alt="" coords="1117,477,1300,504"/>
-<area shape="rect" id="node49" href="$stabilization__rate__indi_8c.html#acfa2e0820b52aea2dce670dd9295b540" title="stabilization_rate_run" alt="" coords="1129,528,1288,555"/>
+<area shape="rect" id="node2" href="$stabilization__attitude__ref__quat__int_8h.html#a43134b9502b1b59a68e214221e011fb8" title="attitude_ref_quat_int\l_enter" alt="" coords="210,253,365,294"/>
+<area shape="rect" id="node6" href="$group__math__orientation__representation.html#gaa411e2093feec3fef9e18c4a52b74c38" title="orientationCalcQuat_i" alt="" coords="208,319,367,345"/>
+<area shape="rect" id="node33" href="$stabilization__attitude__heli__indi_8c.html#ac064607f64988793cadfe5ed346b269f" title="stabilization_attitude\l_set_rpy_setpoint_i" alt="" coords="210,370,365,411"/>
+<area shape="rect" id="node34" href="$stabilization__indi__simple_8h.html#aac24f92be2dd7af42e3e7906a1324fe9" title="Set attitude quaternion setpoint from rpy. " alt="" coords="215,435,360,477"/>
+<area shape="rect" id="node3" href="$stabilization__attitude__quat__int_8c.html#a23f862ca823e6fd23fc9c111178be077" title="stabilization_attitude\l_enter" alt="" coords="415,237,569,278"/>
+<area shape="rect" id="node4" href="$rotorcraft_2guidance_2guidance__h_8h.html#a2903786227eb11507928f99870099225" title="guidance_h_mode_changed" alt="" coords="617,81,819,108"/>
+<area shape="rect" id="node5" href="$rotorcraft_2autopilot__static_8c.html#af7eb08dcaaeb9f55fe1b77230b0e78c3" title="autopilot_static_set_mode" alt="" coords="868,5,1059,32"/>
+<area shape="rect" id="node7" href="$group__math__orientation__representation.html#ga86b153b2106a638cef8e314125c47306" title="Get vehicle body attitude quaternion (int). " alt="" coords="415,335,569,361"/>
+<area shape="rect" id="node8" href="$ahrs__int__cmpl__quat_8h.html#a954df43f45ac2f8c6e59319c25ce607a" title="Hard reset yaw to a heading. " alt="" coords="627,309,809,336"/>
+<area shape="rect" id="node12" href="$ahrs__int__cmpl__quat_8h.html#af4f86e2321466fd50aae62120f20eae4" title="ahrs_icq_set_body_to\l_imu_quat" alt="" coords="638,411,798,453"/>
+<area shape="rect" id="node15" href="$ahrs__int__cmpl__quat_8h.html#a7fb1fae4a1f5b6b1a12173486312b73d" title="Update yaw based on a heading measurement. " alt="" coords="625,360,811,387"/>
+<area shape="rect" id="node16" href="$ahrs__int__cmpl__quat__wrapper_8c.html#abea8ede7c8ebc5179487d3464ab513bb" title="Rotate angles and rates from imu to body frame and set state. " alt="" coords="867,512,1060,539"/>
+<area shape="rect" id="node21" href="$group__state__attitude.html#ga28e5de0a4822cabcfe8350e2343111ce" title="Get vehicle body attitude quaternion (int). " alt="" coords="623,208,813,235"/>
+<area shape="rect" id="node9" href="$ahrs__int__cmpl__quat_8h.html#a75015adf5b7c98bd9eb6b588850d8449" title="ahrs_icq_update_gps" alt="" coords="885,360,1042,387"/>
+<area shape="rect" id="node10" href="$ahrs__int__cmpl__quat__wrapper_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title="gps_cb" alt="" coords="1166,360,1233,387"/>
+<area shape="rect" id="node11" href="$ahrs__int__cmpl__quat__wrapper_8h.html#af71a2cd8d6fabc9373e99e2aeddbbb89" title="ahrs_icq_register" alt="" coords="1339,461,1469,488"/>
+<area shape="rect" id="node13" href="$ahrs__int__cmpl__quat_8h.html#a8e3ef1cad28d70b692c4fce45d291ae8" title="ahrs_icq_set_body_to_imu" alt="" coords="868,461,1059,488"/>
+<area shape="rect" id="node14" href="$ahrs__int__cmpl__quat__wrapper_8c.html#ab5f6300c213088a4ea0598baafb5e736" title="body_to_imu_cb" alt="" coords="1136,411,1263,437"/>
+<area shape="rect" id="node17" href="$ahrs__int__cmpl__quat__wrapper_8c.html#aacd6b1869f263f90a6f1fbe777a87793" title="accel_cb" alt="" coords="1161,563,1238,589"/>
+<area shape="rect" id="node18" href="$ahrs__int__cmpl__quat__wrapper_8c.html#abb508f672663ab1485eae5b9e1799f21" title="aligner_cb" alt="" coords="1156,613,1243,640"/>
+<area shape="rect" id="node19" href="$ahrs__int__cmpl__quat__wrapper_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title="gyro_cb" alt="" coords="1163,461,1235,488"/>
+<area shape="rect" id="node20" href="$ahrs__int__cmpl__quat__wrapper_8c.html#a49cc1e545848b85016af530049991c02" title="mag_cb" alt="" coords="1163,512,1236,539"/>
+<area shape="rect" id="node22" href="$file__logger_8h.html#a0a108be83e6a060666234d7b46a36907" title="Log the values to a csv file. " alt="" coords="891,309,1035,336"/>
+<area shape="rect" id="node23" href="$ins__int_8h.html#a54df8c17ccf7a20d6ca09ad0b8f45db3" title="ins_int_update_gps" alt="" coords="891,56,1036,83"/>
+<area shape="rect" id="node26" href="$stabilization__attitude__quat__int_8c.html#a0b0a909dbd9646ea76aa4e91b1e52474" title="send_ahrs_ref_quat" alt="" coords="889,107,1037,133"/>
+<area shape="rect" id="node28" href="$ahrs__int__cmpl__quat__wrapper_8c.html#a8c9c14edf7f1235080779f6d894be78d" title="send_quat" alt="" coords="919,157,1008,184"/>
+<area shape="rect" id="node29" href="$stabilization__attitude__heli__indi_8c.html#add1138c9aae1adaafdb42ddf2f0c039a" title="stabilization_attitude_run" alt="" coords="872,208,1055,235"/>
+<area shape="rect" id="node30" href="$stabilization__indi__simple_8h.html#a1bd35992373c5eed91852cc9f20680b0" title="runs stabilization indi " alt="" coords="886,259,1041,285"/>
+<area shape="rect" id="node24" href="$ins__int_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title="gps_cb" alt="" coords="1166,56,1233,83"/>
+<area shape="rect" id="node25" href="$ins__int_8h.html#a6f47e4e65f9697a961c3bef79e9029e4" title="ins_int_init" alt="" coords="1359,56,1449,83"/>
+<area shape="rect" id="node27" href="$stabilization__attitude__quat__int_8c.html#a03d27593d891182c04fc5337766733d1" title="stabilization_attitude_init " alt="" coords="1109,107,1290,133"/>
+<area shape="rect" id="node31" href="$stabilization__attitude__quat__indi_8c.html#add1138c9aae1adaafdb42ddf2f0c039a" title="stabilization_attitude_run" alt="" coords="1108,296,1291,323"/>
+<area shape="rect" id="node32" href="$stabilization__rate__indi_8c.html#acfa2e0820b52aea2dce670dd9295b540" title="stabilization_rate_run" alt="" coords="1120,245,1279,272"/>
+<area shape="rect" id="node35" href="$stabilization__attitude__quat__indi_8c.html#ac064607f64988793cadfe5ed346b269f" title="stabilization_attitude\l_set_rpy_setpoint_i" alt="" coords="415,435,569,477"/>
 </map>

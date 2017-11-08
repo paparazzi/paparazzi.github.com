@@ -15,8 +15,8 @@ var dir_8b2fa0708e2db44c1b91938af97bac44 =
     [ "imu_b2.h", "imu__b2_8h.html", "imu__b2_8h" ],
     [ "imu_bebop.c", "imu__bebop_8c.html", "imu__bebop_8c" ],
     [ "imu_bebop.h", "imu__bebop_8h.html", "imu__bebop_8h" ],
-    [ "imu_crista.c", "imu__crista_8c.html", "imu__crista_8c" ],
-    [ "imu_crista.h", "imu__crista_8h.html", "imu__crista_8h" ],
+    [ "imu_disco.c", "imu__disco_8c.html", "imu__disco_8c" ],
+    [ "imu_disco.h", "imu__disco_8h.html", "imu__disco_8h" ],
     [ "imu_drotek_10dof_v2.c", "imu__drotek__10dof__v2_8c.html", "imu__drotek__10dof__v2_8c" ],
     [ "imu_drotek_10dof_v2.h", "imu__drotek__10dof__v2_8h.html", "imu__drotek__10dof__v2_8h" ],
     [ "imu_gl1.c", "imu__gl1_8c.html", "imu__gl1_8c" ],
@@ -26,7 +26,6 @@ var dir_8b2fa0708e2db44c1b91938af97bac44 =
     [ "imu_mpu6000.h", "imu__mpu6000_8h.html", "imu__mpu6000_8h" ],
     [ "imu_mpu6000_hmc5883.c", "imu__mpu6000__hmc5883_8c.html", "imu__mpu6000__hmc5883_8c" ],
     [ "imu_mpu6000_hmc5883.h", "imu__mpu6000__hmc5883_8h.html", "imu__mpu6000__hmc5883_8h" ],
-    [ "imu_mpu60x0_defaults.h", "imu__mpu60x0__defaults_8h.html", "imu__mpu60x0__defaults_8h" ],
     [ "imu_mpu60x0_i2c.c", "imu__mpu60x0__i2c_8c.html", "imu__mpu60x0__i2c_8c" ],
     [ "imu_mpu60x0_i2c.h", "imu__mpu60x0__i2c_8h.html", "imu__mpu60x0__i2c_8h" ],
     [ "imu_mpu9250_i2c.c", "imu__mpu9250__i2c_8c.html", "imu__mpu9250__i2c_8c" ],
@@ -44,6 +43,8 @@ var dir_8b2fa0708e2db44c1b91938af97bac44 =
     [ "imu_px4fmu.h", "imu__px4fmu_8h.html", "imu__px4fmu_8h" ],
     [ "imu_px4fmu_v2.4.c", "imu__px4fmu__v2_84_8c.html", "imu__px4fmu__v2_84_8c" ],
     [ "imu_px4fmu_v2.4.h", "imu__px4fmu__v2_84_8h.html", "imu__px4fmu__v2_84_8h" ],
+    [ "imu_swing.c", "imu__swing_8c.html", "imu__swing_8c" ],
+    [ "imu_swing.h", "imu__swing_8h.html", "imu__swing_8h" ],
     [ "imu_um6.c", "imu__um6_8c.html", "imu__um6_8c" ],
     [ "imu_um6.h", "imu__um6_8h.html", "imu__um6_8h" ]
 ];

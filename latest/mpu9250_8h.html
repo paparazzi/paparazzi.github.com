@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -110,7 +110,8 @@ $(document).ready(function(){initNavTree('mpu9250_8h.html','');});
 <a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">mpu9250.h File Reference</div>  </div>
 </div><!--header-->
@@ -173,6 +174,56 @@ Macros</h2></td></tr>
 <tr class="separator:a6ff69bee72b3c2a1df4c6f131acd21aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86533d677bbb1562223508b115f29f86"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mpu9250_8h.html#a86533d677bbb1562223508b115f29f86">MPU9250_I2C_NB_SLAVES</a>&#160;&#160;&#160;5</td></tr>
 <tr class="separator:a86533d677bbb1562223508b115f29f86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbf8a3c8af0cd1cf009f0271ab5ad6fb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mpu9250_8h.html#afbf8a3c8af0cd1cf009f0271ab5ad6fb">MPU9250_GYRO_SENS_250</a>&#160;&#160;&#160;0.544883</td></tr>
+<tr class="memdesc:afbf8a3c8af0cd1cf009f0271ab5ad6fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">default gyro sensitivy from the datasheet sens = 1/ [LSB/(deg/s)] * pi/180 * 2^INT32_RATE_FRAC ex: MPU with 1000 deg/s has 32.8 LSB/(deg/s) sens = 1/32.8 * pi/180 * 4096 = 2.17953  <a href="#afbf8a3c8af0cd1cf009f0271ab5ad6fb">More...</a><br /></td></tr>
+<tr class="separator:afbf8a3c8af0cd1cf009f0271ab5ad6fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d87a84eaf5f8e558a4ca19c9cd0c2d2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mpu9250_8h.html#a7d87a84eaf5f8e558a4ca19c9cd0c2d2">MPU9250_GYRO_SENS_250_NUM</a>&#160;&#160;&#160;19327</td></tr>
+<tr class="separator:a7d87a84eaf5f8e558a4ca19c9cd0c2d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab786578769ecf6e483f33f73366c460c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mpu9250_8h.html#ab786578769ecf6e483f33f73366c460c">MPU9250_GYRO_SENS_250_DEN</a>&#160;&#160;&#160;35470</td></tr>
+<tr class="separator:ab786578769ecf6e483f33f73366c460c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ca23fcda506386470212925a40ec5c5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mpu9250_8h.html#a0ca23fcda506386470212925a40ec5c5">MPU9250_GYRO_SENS_500</a>&#160;&#160;&#160;1.08977</td></tr>
+<tr class="separator:a0ca23fcda506386470212925a40ec5c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4340716705b188fa149d2ecefbbff189"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mpu9250_8h.html#a4340716705b188fa149d2ecefbbff189">MPU9250_GYRO_SENS_500_NUM</a>&#160;&#160;&#160;57663</td></tr>
+<tr class="separator:a4340716705b188fa149d2ecefbbff189"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd9c0b0faae06bbb09e301c2da0201ab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mpu9250_8h.html#afd9c0b0faae06bbb09e301c2da0201ab">MPU9250_GYRO_SENS_500_DEN</a>&#160;&#160;&#160;52913</td></tr>
+<tr class="separator:afd9c0b0faae06bbb09e301c2da0201ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a641b32d77dd94713f9797df0b5c3d4ad"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mpu9250_8h.html#a641b32d77dd94713f9797df0b5c3d4ad">MPU9250_GYRO_SENS_1000</a>&#160;&#160;&#160;2.17953</td></tr>
+<tr class="separator:a641b32d77dd94713f9797df0b5c3d4ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24b986c2757f1e45364444e8d4f2caf6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mpu9250_8h.html#a24b986c2757f1e45364444e8d4f2caf6">MPU9250_GYRO_SENS_1000_NUM</a>&#160;&#160;&#160;18271</td></tr>
+<tr class="separator:a24b986c2757f1e45364444e8d4f2caf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb403f04eefc8206635184c9b9656ba2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mpu9250_8h.html#abb403f04eefc8206635184c9b9656ba2">MPU9250_GYRO_SENS_1000_DEN</a>&#160;&#160;&#160;8383</td></tr>
+<tr class="separator:abb403f04eefc8206635184c9b9656ba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dfe2b95a6a9ed6d47000e6843a71be9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mpu9250_8h.html#a0dfe2b95a6a9ed6d47000e6843a71be9">MPU9250_GYRO_SENS_2000</a>&#160;&#160;&#160;4.35906</td></tr>
+<tr class="separator:a0dfe2b95a6a9ed6d47000e6843a71be9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e95d74b3194817b15d30ad3d575a1b4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mpu9250_8h.html#a3e95d74b3194817b15d30ad3d575a1b4">MPU9250_GYRO_SENS_2000_NUM</a>&#160;&#160;&#160;36542</td></tr>
+<tr class="separator:a3e95d74b3194817b15d30ad3d575a1b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41d02e227684487a79726c45d708971f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mpu9250_8h.html#a41d02e227684487a79726c45d708971f">MPU9250_GYRO_SENS_2000_DEN</a>&#160;&#160;&#160;8383</td></tr>
+<tr class="separator:a41d02e227684487a79726c45d708971f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0507a49cf369a441bed39a527d3f9c8f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mpu9250_8h.html#a0507a49cf369a441bed39a527d3f9c8f">MPU9250_ACCEL_SENS_2G</a>&#160;&#160;&#160;0.613125</td></tr>
+<tr class="memdesc:a0507a49cf369a441bed39a527d3f9c8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">default accel sensitivy from the datasheet sens = 9.81 [m/s^2] / [LSB/g] * 2^INT32_ACCEL_FRAC ex: MPU with 8g has 4096 LSB/g sens = 9.81 [m/s^2] / 4096 [LSB/g] * 2^INT32_ACCEL_FRAC = 2.4525  <a href="#a0507a49cf369a441bed39a527d3f9c8f">More...</a><br /></td></tr>
+<tr class="separator:a0507a49cf369a441bed39a527d3f9c8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a947018236f165d4f1cf5cc8d1319b273"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mpu9250_8h.html#a947018236f165d4f1cf5cc8d1319b273">MPU9250_ACCEL_SENS_2G_NUM</a>&#160;&#160;&#160;981</td></tr>
+<tr class="separator:a947018236f165d4f1cf5cc8d1319b273"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b146708cf44ce7503e0a156de6e6d7d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mpu9250_8h.html#a9b146708cf44ce7503e0a156de6e6d7d">MPU9250_ACCEL_SENS_2G_DEN</a>&#160;&#160;&#160;1600</td></tr>
+<tr class="separator:a9b146708cf44ce7503e0a156de6e6d7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8c4690238dc3ae8ac8c1ef80cd1b45a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mpu9250_8h.html#ac8c4690238dc3ae8ac8c1ef80cd1b45a">MPU9250_ACCEL_SENS_4G</a>&#160;&#160;&#160;1.22625</td></tr>
+<tr class="separator:ac8c4690238dc3ae8ac8c1ef80cd1b45a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedd64352834567b95967daf39014b0f5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mpu9250_8h.html#aedd64352834567b95967daf39014b0f5">MPU9250_ACCEL_SENS_4G_NUM</a>&#160;&#160;&#160;981</td></tr>
+<tr class="separator:aedd64352834567b95967daf39014b0f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6965897a57a810a44d74cb89e7d1aa12"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mpu9250_8h.html#a6965897a57a810a44d74cb89e7d1aa12">MPU9250_ACCEL_SENS_4G_DEN</a>&#160;&#160;&#160;800</td></tr>
+<tr class="separator:a6965897a57a810a44d74cb89e7d1aa12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9cba5fc4d6776395de50717feb64f51"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mpu9250_8h.html#ad9cba5fc4d6776395de50717feb64f51">MPU9250_ACCEL_SENS_8G</a>&#160;&#160;&#160;2.4525</td></tr>
+<tr class="separator:ad9cba5fc4d6776395de50717feb64f51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf3ac7455746dc4c12a63650a9f1299b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mpu9250_8h.html#adf3ac7455746dc4c12a63650a9f1299b">MPU9250_ACCEL_SENS_8G_NUM</a>&#160;&#160;&#160;981</td></tr>
+<tr class="separator:adf3ac7455746dc4c12a63650a9f1299b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5948e42193cb2e66e568061094b8bf30"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mpu9250_8h.html#a5948e42193cb2e66e568061094b8bf30">MPU9250_ACCEL_SENS_8G_DEN</a>&#160;&#160;&#160;400</td></tr>
+<tr class="separator:a5948e42193cb2e66e568061094b8bf30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23f4442ba36cca33bfb499545d68c293"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mpu9250_8h.html#a23f4442ba36cca33bfb499545d68c293">MPU9250_ACCEL_SENS_16G</a>&#160;&#160;&#160;4.905</td></tr>
+<tr class="separator:a23f4442ba36cca33bfb499545d68c293"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa61f98a525cb4072884f8bf9cc0167fc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mpu9250_8h.html#aa61f98a525cb4072884f8bf9cc0167fc">MPU9250_ACCEL_SENS_16G_NUM</a>&#160;&#160;&#160;981</td></tr>
+<tr class="separator:aa61f98a525cb4072884f8bf9cc0167fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae11d6ec9cc7a8b079614e3f1d632c434"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mpu9250_8h.html#ae11d6ec9cc7a8b079614e3f1d632c434">MPU9250_ACCEL_SENS_16G_DEN</a>&#160;&#160;&#160;200</td></tr>
+<tr class="separator:ae11d6ec9cc7a8b079614e3f1d632c434"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -214,6 +265,17 @@ Functions</h2></td></tr>
 <tr class="memitem:ad8c9bdb9e4d73f97f5b3daceb9e6e31b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mpu9250_8h.html#ad8c9bdb9e4d73f97f5b3daceb9e6e31b">mpu9250_configure_i2c_slaves</a> (<a class="el" href="mpu9250_8h.html#a62c163eaf8e2918e26d119173cb0f7ee">Mpu9250ConfigSet</a> mpu_set, void *mpu)</td></tr>
 <tr class="memdesc:ad8c9bdb9e4d73f97f5b3daceb9e6e31b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure I2C slaves of the MPU.  <a href="#ad8c9bdb9e4d73f97f5b3daceb9e6e31b">More...</a><br /></td></tr>
 <tr class="separator:ad8c9bdb9e4d73f97f5b3daceb9e6e31b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a67ca0e1d73649dcfa1efd8fe39737400"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mpu9250_8h.html#a67ca0e1d73649dcfa1efd8fe39737400">MPU9250_GYRO_SENS</a> [4]</td></tr>
+<tr class="separator:a67ca0e1d73649dcfa1efd8fe39737400"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad87c96ac74a96fe8d27ddb025b47751"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mpu9250_8h.html#aad87c96ac74a96fe8d27ddb025b47751">MPU9250_GYRO_SENS_FRAC</a> [4][2]</td></tr>
+<tr class="separator:aad87c96ac74a96fe8d27ddb025b47751"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fa3719b5d2ad4f0c9dcf6f7fd005cab"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mpu9250_8h.html#a9fa3719b5d2ad4f0c9dcf6f7fd005cab">MPU9250_ACCEL_SENS</a> [4]</td></tr>
+<tr class="separator:a9fa3719b5d2ad4f0c9dcf6f7fd005cab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4baa1f9b32c4c697569e3260103dd43b"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mpu9250_8h.html#a4baa1f9b32c4c697569e3260103dd43b">MPU9250_ACCEL_SENS_FRAC</a> [4][2]</td></tr>
+<tr class="separator:a4baa1f9b32c4c697569e3260103dd43b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>MPU-60X0 driver common interface (I2C and SPI). </p>
@@ -230,7 +292,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p>Definition at line <a class="el" href="mpu9250_8h_source.html#l00076">76</a> of file <a class="el" href="mpu9250_8h_source.html">mpu9250.h</a>.</p>
+<p>Definition at line <a class="el" href="mpu9250_8h_source.html#l00122">122</a> of file <a class="el" href="mpu9250_8h_source.html">mpu9250.h</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
@@ -253,7 +315,7 @@ configure</td>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p>Definition at line <a class="el" href="mpu9250_8h_source.html#l00080">80</a> of file <a class="el" href="mpu9250_8h_source.html">mpu9250.h</a>.</p>
+<p>Definition at line <a class="el" href="mpu9250_8h_source.html#l00126">126</a> of file <a class="el" href="mpu9250_8h_source.html">mpu9250.h</a>.</p>
 </div><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Collaboration diagram for Mpu9250Config:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -367,6 +429,176 @@ Sample rate divider. </td></tr>
 </div>
 </div>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="a23f4442ba36cca33bfb499545d68c293"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MPU9250_ACCEL_SENS_16G&#160;&#160;&#160;4.905</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="mpu9250_8h_source.html#l00092">92</a> of file <a class="el" href="mpu9250_8h_source.html">mpu9250.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae11d6ec9cc7a8b079614e3f1d632c434"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MPU9250_ACCEL_SENS_16G_DEN&#160;&#160;&#160;200</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="mpu9250_8h_source.html#l00094">94</a> of file <a class="el" href="mpu9250_8h_source.html">mpu9250.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa61f98a525cb4072884f8bf9cc0167fc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MPU9250_ACCEL_SENS_16G_NUM&#160;&#160;&#160;981</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="mpu9250_8h_source.html#l00093">93</a> of file <a class="el" href="mpu9250_8h_source.html">mpu9250.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0507a49cf369a441bed39a527d3f9c8f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MPU9250_ACCEL_SENS_2G&#160;&#160;&#160;0.613125</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>default accel sensitivy from the datasheet sens = 9.81 [m/s^2] / [LSB/g] * 2^INT32_ACCEL_FRAC ex: MPU with 8g has 4096 LSB/g sens = 9.81 [m/s^2] / 4096 [LSB/g] * 2^INT32_ACCEL_FRAC = 2.4525 </p>
+
+<p>Definition at line <a class="el" href="mpu9250_8h_source.html#l00083">83</a> of file <a class="el" href="mpu9250_8h_source.html">mpu9250.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9b146708cf44ce7503e0a156de6e6d7d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MPU9250_ACCEL_SENS_2G_DEN&#160;&#160;&#160;1600</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="mpu9250_8h_source.html#l00085">85</a> of file <a class="el" href="mpu9250_8h_source.html">mpu9250.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a947018236f165d4f1cf5cc8d1319b273"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MPU9250_ACCEL_SENS_2G_NUM&#160;&#160;&#160;981</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="mpu9250_8h_source.html#l00084">84</a> of file <a class="el" href="mpu9250_8h_source.html">mpu9250.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac8c4690238dc3ae8ac8c1ef80cd1b45a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MPU9250_ACCEL_SENS_4G&#160;&#160;&#160;1.22625</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="mpu9250_8h_source.html#l00086">86</a> of file <a class="el" href="mpu9250_8h_source.html">mpu9250.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6965897a57a810a44d74cb89e7d1aa12"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MPU9250_ACCEL_SENS_4G_DEN&#160;&#160;&#160;800</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="mpu9250_8h_source.html#l00088">88</a> of file <a class="el" href="mpu9250_8h_source.html">mpu9250.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aedd64352834567b95967daf39014b0f5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MPU9250_ACCEL_SENS_4G_NUM&#160;&#160;&#160;981</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="mpu9250_8h_source.html#l00087">87</a> of file <a class="el" href="mpu9250_8h_source.html">mpu9250.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad9cba5fc4d6776395de50717feb64f51"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MPU9250_ACCEL_SENS_8G&#160;&#160;&#160;2.4525</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="mpu9250_8h_source.html#l00089">89</a> of file <a class="el" href="mpu9250_8h_source.html">mpu9250.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5948e42193cb2e66e568061094b8bf30"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MPU9250_ACCEL_SENS_8G_DEN&#160;&#160;&#160;400</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="mpu9250_8h_source.html#l00091">91</a> of file <a class="el" href="mpu9250_8h_source.html">mpu9250.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adf3ac7455746dc4c12a63650a9f1299b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MPU9250_ACCEL_SENS_8G_NUM&#160;&#160;&#160;981</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="mpu9250_8h_source.html#l00090">90</a> of file <a class="el" href="mpu9250_8h_source.html">mpu9250.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a3222bed0929b90cf347dd57ed249f345"></a>
 <div class="memitem">
 <div class="memproto">
@@ -381,7 +613,7 @@ Sample rate divider. </td></tr>
 
 <p>Definition at line <a class="el" href="mpu9250_8h_source.html#l00040">40</a> of file <a class="el" href="mpu9250_8h_source.html">mpu9250.h</a>.</p>
 
-<p>Referenced by <a class="el" href="mpu9250_8c_source.html#l00032">mpu9250_set_default_config()</a>.</p>
+<p>Referenced by <a class="el" href="mpu9250_8c_source.html#l00060">mpu9250_set_default_config()</a>.</p>
 
 </div>
 </div>
@@ -399,7 +631,7 @@ Sample rate divider. </td></tr>
 
 <p>Definition at line <a class="el" href="mpu9250_8h_source.html#l00048">48</a> of file <a class="el" href="mpu9250_8h_source.html">mpu9250.h</a>.</p>
 
-<p>Referenced by <a class="el" href="mpu9250_8c_source.html#l00032">mpu9250_set_default_config()</a>.</p>
+<p>Referenced by <a class="el" href="mpu9250_8c_source.html#l00060">mpu9250_set_default_config()</a>.</p>
 
 </div>
 </div>
@@ -417,7 +649,7 @@ Sample rate divider. </td></tr>
 
 <p>Definition at line <a class="el" href="mpu9250_8h_source.html#l00042">42</a> of file <a class="el" href="mpu9250_8h_source.html">mpu9250.h</a>.</p>
 
-<p>Referenced by <a class="el" href="mpu9250_8c_source.html#l00032">mpu9250_set_default_config()</a>.</p>
+<p>Referenced by <a class="el" href="mpu9250_8c_source.html#l00060">mpu9250_set_default_config()</a>.</p>
 
 </div>
 </div>
@@ -435,7 +667,7 @@ Sample rate divider. </td></tr>
 
 <p>Definition at line <a class="el" href="mpu9250_8h_source.html#l00044">44</a> of file <a class="el" href="mpu9250_8h_source.html">mpu9250.h</a>.</p>
 
-<p>Referenced by <a class="el" href="mpu9250_8c_source.html#l00032">mpu9250_set_default_config()</a>.</p>
+<p>Referenced by <a class="el" href="mpu9250_8c_source.html#l00060">mpu9250_set_default_config()</a>.</p>
 
 </div>
 </div>
@@ -453,7 +685,7 @@ Sample rate divider. </td></tr>
 
 <p>Definition at line <a class="el" href="mpu9250_8h_source.html#l00038">38</a> of file <a class="el" href="mpu9250_8h_source.html">mpu9250.h</a>.</p>
 
-<p>Referenced by <a class="el" href="mpu9250_8c_source.html#l00032">mpu9250_set_default_config()</a>.</p>
+<p>Referenced by <a class="el" href="mpu9250_8c_source.html#l00060">mpu9250_set_default_config()</a>.</p>
 
 </div>
 </div>
@@ -487,7 +719,177 @@ Sample rate divider. </td></tr>
 
 <p>Definition at line <a class="el" href="mpu9250_8h_source.html#l00036">36</a> of file <a class="el" href="mpu9250_8h_source.html">mpu9250.h</a>.</p>
 
-<p>Referenced by <a class="el" href="mpu9250_8c_source.html#l00032">mpu9250_set_default_config()</a>.</p>
+<p>Referenced by <a class="el" href="mpu9250_8c_source.html#l00060">mpu9250_set_default_config()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a641b32d77dd94713f9797df0b5c3d4ad"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MPU9250_GYRO_SENS_1000&#160;&#160;&#160;2.17953</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="mpu9250_8h_source.html#l00066">66</a> of file <a class="el" href="mpu9250_8h_source.html">mpu9250.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abb403f04eefc8206635184c9b9656ba2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MPU9250_GYRO_SENS_1000_DEN&#160;&#160;&#160;8383</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="mpu9250_8h_source.html#l00068">68</a> of file <a class="el" href="mpu9250_8h_source.html">mpu9250.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a24b986c2757f1e45364444e8d4f2caf6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MPU9250_GYRO_SENS_1000_NUM&#160;&#160;&#160;18271</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="mpu9250_8h_source.html#l00067">67</a> of file <a class="el" href="mpu9250_8h_source.html">mpu9250.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0dfe2b95a6a9ed6d47000e6843a71be9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MPU9250_GYRO_SENS_2000&#160;&#160;&#160;4.35906</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="mpu9250_8h_source.html#l00069">69</a> of file <a class="el" href="mpu9250_8h_source.html">mpu9250.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a41d02e227684487a79726c45d708971f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MPU9250_GYRO_SENS_2000_DEN&#160;&#160;&#160;8383</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="mpu9250_8h_source.html#l00071">71</a> of file <a class="el" href="mpu9250_8h_source.html">mpu9250.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3e95d74b3194817b15d30ad3d575a1b4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MPU9250_GYRO_SENS_2000_NUM&#160;&#160;&#160;36542</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="mpu9250_8h_source.html#l00070">70</a> of file <a class="el" href="mpu9250_8h_source.html">mpu9250.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afbf8a3c8af0cd1cf009f0271ab5ad6fb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MPU9250_GYRO_SENS_250&#160;&#160;&#160;0.544883</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>default gyro sensitivy from the datasheet sens = 1/ [LSB/(deg/s)] * pi/180 * 2^INT32_RATE_FRAC ex: MPU with 1000 deg/s has 32.8 LSB/(deg/s) sens = 1/32.8 * pi/180 * 4096 = 2.17953 </p>
+
+<p>Definition at line <a class="el" href="mpu9250_8h_source.html#l00060">60</a> of file <a class="el" href="mpu9250_8h_source.html">mpu9250.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab786578769ecf6e483f33f73366c460c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MPU9250_GYRO_SENS_250_DEN&#160;&#160;&#160;35470</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="mpu9250_8h_source.html#l00062">62</a> of file <a class="el" href="mpu9250_8h_source.html">mpu9250.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7d87a84eaf5f8e558a4ca19c9cd0c2d2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MPU9250_GYRO_SENS_250_NUM&#160;&#160;&#160;19327</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="mpu9250_8h_source.html#l00061">61</a> of file <a class="el" href="mpu9250_8h_source.html">mpu9250.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0ca23fcda506386470212925a40ec5c5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MPU9250_GYRO_SENS_500&#160;&#160;&#160;1.08977</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="mpu9250_8h_source.html#l00063">63</a> of file <a class="el" href="mpu9250_8h_source.html">mpu9250.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afd9c0b0faae06bbb09e301c2da0201ab"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MPU9250_GYRO_SENS_500_DEN&#160;&#160;&#160;52913</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="mpu9250_8h_source.html#l00065">65</a> of file <a class="el" href="mpu9250_8h_source.html">mpu9250.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4340716705b188fa149d2ecefbbff189"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MPU9250_GYRO_SENS_500_NUM&#160;&#160;&#160;57663</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="mpu9250_8h_source.html#l00064">64</a> of file <a class="el" href="mpu9250_8h_source.html">mpu9250.h</a>.</p>
 
 </div>
 </div>
@@ -503,7 +905,7 @@ Sample rate divider. </td></tr>
 
 <p>Definition at line <a class="el" href="mpu9250_8h_source.html#l00052">52</a> of file <a class="el" href="mpu9250_8h_source.html">mpu9250.h</a>.</p>
 
-<p>Referenced by <a class="el" href="mpu9250__i2c_8c_source.html#l00167">mpu9250_configure_i2c_slaves()</a>.</p>
+<p>Referenced by <a class="el" href="mpu9250__i2c_8c_source.html#l00174">mpu9250_configure_i2c_slaves()</a>.</p>
 
 </div>
 </div>
@@ -520,7 +922,7 @@ Sample rate divider. </td></tr>
 
 <p>Configuration function prototype. </p>
 
-<p>Definition at line <a class="el" href="mpu9250_8h_source.html#l00071">71</a> of file <a class="el" href="mpu9250_8h_source.html">mpu9250.h</a>.</p>
+<p>Definition at line <a class="el" href="mpu9250_8h_source.html#l00117">117</a> of file <a class="el" href="mpu9250_8h_source.html">mpu9250.h</a>.</p>
 
 </div>
 </div>
@@ -536,7 +938,7 @@ Sample rate divider. </td></tr>
 
 <p>function prototype for configuration of a single I2C slave </p>
 
-<p>Definition at line <a class="el" href="mpu9250_8h_source.html#l00074">74</a> of file <a class="el" href="mpu9250_8h_source.html">mpu9250.h</a>.</p>
+<p>Definition at line <a class="el" href="mpu9250_8h_source.html#l00120">120</a> of file <a class="el" href="mpu9250_8h_source.html">mpu9250.h</a>.</p>
 
 </div>
 </div>
@@ -577,7 +979,7 @@ Sample rate divider. </td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="mpu9250_8h_source.html#l00055">55</a> of file <a class="el" href="mpu9250_8h_source.html">mpu9250.h</a>.</p>
+<p>Definition at line <a class="el" href="mpu9250_8h_source.html#l00101">101</a> of file <a class="el" href="mpu9250_8h_source.html">mpu9250.h</a>.</p>
 
 </div>
 </div>
@@ -617,11 +1019,11 @@ Sample rate divider. </td></tr>
 <dl class="section return"><dt>Returns</dt><dd>TRUE when all slaves are configured</dd></dl>
 <p>Configure I2C slaves of the MPU. </p>
 
-<p>Definition at line <a class="el" href="mpu9250__i2c_8c_source.html#l00167">167</a> of file <a class="el" href="mpu9250__i2c_8c_source.html">mpu9250_i2c.c</a>.</p>
+<p>Definition at line <a class="el" href="mpu9250__i2c_8c_source.html#l00174">174</a> of file <a class="el" href="mpu9250__i2c_8c_source.html">mpu9250_i2c.c</a>.</p>
 
-<p>References <a class="el" href="mpu9250__spi_8h_source.html#l00066">Mpu9250_Spi::config</a>, <a class="el" href="mpu9250__i2c_8h_source.html#l00068">Mpu9250_I2c::config</a>, <a class="el" href="mpu9250_8h_source.html#l00077">Mpu9250I2cSlave::configure</a>, <a class="el" href="mpu9250_8h_source.html#l00095">Mpu9250Config::i2c_bypass</a>, <a class="el" href="mpu9250_8h_source.html#l00100">Mpu9250Config::i2c_mst_clk</a>, <a class="el" href="mpu9250_8h_source.html#l00101">Mpu9250Config::i2c_mst_delay</a>, <a class="el" href="mpu9250__i2c_8h_source.html#l00052">MPU9250_I2C_CONF_DONE</a>, <a class="el" href="mpu9250__i2c_8h_source.html#l00047">MPU9250_I2C_CONF_I2C_BYPASS_DIS</a>, <a class="el" href="mpu9250__i2c_8h_source.html#l00045">MPU9250_I2C_CONF_I2C_BYPASS_EN</a>, <a class="el" href="mpu9250__i2c_8h_source.html#l00048">MPU9250_I2C_CONF_I2C_MST_CLK</a>, <a class="el" href="mpu9250__i2c_8h_source.html#l00049">MPU9250_I2C_CONF_I2C_MST_DELAY</a>, <a class="el" href="mpu9250__i2c_8h_source.html#l00044">MPU9250_I2C_CONF_I2C_MST_DIS</a>, <a class="el" href="mpu9250__i2c_8h_source.html#l00051">MPU9250_I2C_CONF_I2C_MST_EN</a>, <a class="el" href="mpu9250__i2c_8h_source.html#l00050">MPU9250_I2C_CONF_I2C_SMPLRT</a>, <a class="el" href="mpu9250__i2c_8h_source.html#l00046">MPU9250_I2C_CONF_SLAVES_CONFIGURE</a>, <a class="el" href="mpu9250__i2c_8h_source.html#l00043">MPU9250_I2C_CONF_UNINIT</a>, <a class="el" href="mpu9250__regs_8h_source.html#l00130">MPU9250_I2C_IF_DIS</a>, <a class="el" href="mpu9250__regs_8h_source.html#l00131">MPU9250_I2C_MST_EN</a>, <a class="el" href="mpu9250_8h_source.html#l00052">MPU9250_I2C_NB_SLAVES</a>, <a class="el" href="mpu9250__regs_8h_source.html#l00060">MPU9250_REG_I2C_MST_CTRL</a>, <a class="el" href="mpu9250__regs_8h_source.html#l00062">MPU9250_REG_I2C_MST_DELAY</a>, <a class="el" href="mpu9250__regs_8h_source.html#l00087">MPU9250_REG_I2C_SLV4_CTRL</a>, <a class="el" href="mpu9250__regs_8h_source.html#l00091">MPU9250_REG_INT_PIN_CFG</a>, <a class="el" href="mpu9250__regs_8h_source.html#l00041">MPU9250_REG_USER_CTRL</a>, <a class="el" href="mpu9250__spi_8h_source.html#l00048">MPU9250_SPI_CONF_DONE</a>, <a class="el" href="mpu9250__spi_8h_source.html#l00044">MPU9250_SPI_CONF_I2C_MST_CLK</a>, <a class="el" href="mpu9250__spi_8h_source.html#l00045">MPU9250_SPI_CONF_I2C_MST_DELAY</a>, <a class="el" href="mpu9250__spi_8h_source.html#l00046">MPU9250_SPI_CONF_I2C_MST_EN</a>, <a class="el" href="mpu9250__spi_8h_source.html#l00047">MPU9250_SPI_CONF_SLAVES_CONFIGURE</a>, <a class="el" href="mpu9250__spi_8h_source.html#l00043">MPU9250_SPI_CONF_UNINIT</a>, <a class="el" href="mpu9250_8h_source.html#l00098">Mpu9250Config::nb_slave_init</a>, <a class="el" href="mpu9250_8h_source.html#l00097">Mpu9250Config::nb_slaves</a>, <a class="el" href="mpu9250__spi_8h_source.html#l00067">Mpu9250_Spi::slave_init_status</a>, <a class="el" href="mpu9250__i2c_8h_source.html#l00069">Mpu9250_I2c::slave_init_status</a>, and <a class="el" href="mpu9250_8h_source.html#l00099">Mpu9250Config::slaves</a>.</p>
+<p>References <a class="el" href="mpu9250__spi_8h_source.html#l00066">Mpu9250_Spi::config</a>, <a class="el" href="mpu9250__i2c_8h_source.html#l00072">Mpu9250_I2c::config</a>, <a class="el" href="mpu9250_8h_source.html#l00123">Mpu9250I2cSlave::configure</a>, <a class="el" href="mpu9250_8h_source.html#l00141">Mpu9250Config::i2c_bypass</a>, <a class="el" href="mpu9250_8h_source.html#l00146">Mpu9250Config::i2c_mst_clk</a>, <a class="el" href="mpu9250_8h_source.html#l00147">Mpu9250Config::i2c_mst_delay</a>, <a class="el" href="mpu9250__i2c_8h_source.html#l00056">MPU9250_I2C_CONF_DONE</a>, <a class="el" href="mpu9250__i2c_8h_source.html#l00051">MPU9250_I2C_CONF_I2C_BYPASS_DIS</a>, <a class="el" href="mpu9250__i2c_8h_source.html#l00049">MPU9250_I2C_CONF_I2C_BYPASS_EN</a>, <a class="el" href="mpu9250__i2c_8h_source.html#l00052">MPU9250_I2C_CONF_I2C_MST_CLK</a>, <a class="el" href="mpu9250__i2c_8h_source.html#l00053">MPU9250_I2C_CONF_I2C_MST_DELAY</a>, <a class="el" href="mpu9250__i2c_8h_source.html#l00048">MPU9250_I2C_CONF_I2C_MST_DIS</a>, <a class="el" href="mpu9250__i2c_8h_source.html#l00055">MPU9250_I2C_CONF_I2C_MST_EN</a>, <a class="el" href="mpu9250__i2c_8h_source.html#l00054">MPU9250_I2C_CONF_I2C_SMPLRT</a>, <a class="el" href="mpu9250__i2c_8h_source.html#l00050">MPU9250_I2C_CONF_SLAVES_CONFIGURE</a>, <a class="el" href="mpu9250__i2c_8h_source.html#l00047">MPU9250_I2C_CONF_UNINIT</a>, <a class="el" href="mpu9250__regs_8h_source.html#l00130">MPU9250_I2C_IF_DIS</a>, <a class="el" href="mpu9250__regs_8h_source.html#l00131">MPU9250_I2C_MST_EN</a>, <a class="el" href="mpu9250_8h_source.html#l00052">MPU9250_I2C_NB_SLAVES</a>, <a class="el" href="mpu9250__regs_8h_source.html#l00060">MPU9250_REG_I2C_MST_CTRL</a>, <a class="el" href="mpu9250__regs_8h_source.html#l00062">MPU9250_REG_I2C_MST_DELAY</a>, <a class="el" href="mpu9250__regs_8h_source.html#l00087">MPU9250_REG_I2C_SLV4_CTRL</a>, <a class="el" href="mpu9250__regs_8h_source.html#l00091">MPU9250_REG_INT_PIN_CFG</a>, <a class="el" href="mpu9250__regs_8h_source.html#l00041">MPU9250_REG_USER_CTRL</a>, <a class="el" href="mpu9250__spi_8h_source.html#l00048">MPU9250_SPI_CONF_DONE</a>, <a class="el" href="mpu9250__spi_8h_source.html#l00044">MPU9250_SPI_CONF_I2C_MST_CLK</a>, <a class="el" href="mpu9250__spi_8h_source.html#l00045">MPU9250_SPI_CONF_I2C_MST_DELAY</a>, <a class="el" href="mpu9250__spi_8h_source.html#l00046">MPU9250_SPI_CONF_I2C_MST_EN</a>, <a class="el" href="mpu9250__spi_8h_source.html#l00047">MPU9250_SPI_CONF_SLAVES_CONFIGURE</a>, <a class="el" href="mpu9250__spi_8h_source.html#l00043">MPU9250_SPI_CONF_UNINIT</a>, <a class="el" href="mpu9250_8h_source.html#l00144">Mpu9250Config::nb_slave_init</a>, <a class="el" href="mpu9250_8h_source.html#l00143">Mpu9250Config::nb_slaves</a>, <a class="el" href="mpu9250__spi_8h_source.html#l00067">Mpu9250_Spi::slave_init_status</a>, <a class="el" href="mpu9250__i2c_8h_source.html#l00073">Mpu9250_I2c::slave_init_status</a>, and <a class="el" href="mpu9250_8h_source.html#l00145">Mpu9250Config::slaves</a>.</p>
 
-<p>Referenced by <a class="el" href="mpu9250_8c_source.html#l00053">mpu9250_send_config()</a>.</p>
+<p>Referenced by <a class="el" href="mpu9250_8c_source.html#l00081">mpu9250_send_config()</a>.</p>
 
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -668,11 +1070,11 @@ Sample rate divider. </td></tr>
 
 <p>Configuration sequence called once before normal use. </p>
 
-<p>Definition at line <a class="el" href="mpu9250_8c_source.html#l00053">53</a> of file <a class="el" href="mpu9250_8c_source.html">mpu9250.c</a>.</p>
+<p>Definition at line <a class="el" href="mpu9250_8c_source.html#l00081">81</a> of file <a class="el" href="mpu9250_8c_source.html">mpu9250.c</a>.</p>
 
-<p>References <a class="el" href="mpu9250_8h_source.html#l00085">Mpu9250Config::accel_range</a>, <a class="el" href="mpu9250_8h_source.html#l00087">Mpu9250Config::clk_sel</a>, <a class="el" href="mpu9250_8h_source.html#l00082">Mpu9250Config::dlpf_accel_cfg</a>, <a class="el" href="mpu9250_8h_source.html#l00083">Mpu9250Config::dlpf_gyro_cfg</a>, <a class="el" href="mpu9250_8h_source.html#l00086">Mpu9250Config::drdy_int_enable</a>, <a class="el" href="mpu9250_8h_source.html#l00084">Mpu9250Config::gyro_range</a>, <a class="el" href="mpu9250_8h_source.html#l00089">Mpu9250Config::init_status</a>, <a class="el" href="mpu9250_8h_source.html#l00090">Mpu9250Config::initialized</a>, <a class="el" href="mpu9250_8h_source.html#l00064">MPU9250_CONF_ACCEL</a>, <a class="el" href="mpu9250_8h_source.html#l00061">MPU9250_CONF_DLPF_ACCEL</a>, <a class="el" href="mpu9250_8h_source.html#l00062">MPU9250_CONF_DLPF_GYRO</a>, <a class="el" href="mpu9250_8h_source.html#l00067">MPU9250_CONF_DONE</a>, <a class="el" href="mpu9250_8h_source.html#l00063">MPU9250_CONF_GYRO</a>, <a class="el" href="mpu9250_8h_source.html#l00065">MPU9250_CONF_I2C_SLAVES</a>, <a class="el" href="mpu9250_8h_source.html#l00066">MPU9250_CONF_INT_ENABLE</a>, <a class="el" href="mpu9250_8h_source.html#l00059">MPU9250_CONF_PWR</a>, <a class="el" href="mpu9250_8h_source.html#l00057">MPU9250_CONF_RESET</a>, <a class="el" href="mpu9250_8h_source.html#l00060">MPU9250_CONF_SD</a>, <a class="el" href="mpu9250_8h_source.html#l00058">MPU9250_CONF_USER_RESET</a>, <a class="el" href="mpu9250__i2c_8c_source.html#l00167">mpu9250_configure_i2c_slaves()</a>, <a class="el" href="mpu9250__regs_8h_source.html#l00129">MPU9250_FIFO_RESET</a>, <a class="el" href="mpu9250__regs_8h_source.html#l00128">MPU9250_I2C_MST_RESET</a>, <a class="el" href="mpu9250__regs_8h_source.html#l00055">MPU9250_REG_ACCEL_CONFIG</a>, <a class="el" href="mpu9250__regs_8h_source.html#l00056">MPU9250_REG_ACCEL_CONFIG_2</a>, <a class="el" href="mpu9250__regs_8h_source.html#l00053">MPU9250_REG_CONFIG</a>, <a class="el" href="mpu9250__regs_8h_source.html#l00054">MPU9250_REG_GYRO_CONFIG</a>, <a class="el" href="mpu9250__regs_8h_source.html#l00092">MPU9250_REG_INT_ENABLE</a>, <a class="el" href="mpu9250__regs_8h_source.html#l00042">MPU9250_REG_PWR_MGMT_1</a>, <a class="el" href="mpu9250__regs_8h_source.html#l00052">MPU9250_REG_SMPLRT_DIV</a>, <a class="el" href="mpu9250__regs_8h_source.html#l00041">MPU9250_REG_USER_CTRL</a>, <a class="el" href="mpu9250__regs_8h_source.html#l00127">MPU9250_SIG_COND_RESET</a>, <a class="el" href="mpu9250_8h_source.html#l00097">Mpu9250Config::nb_slaves</a>, and <a class="el" href="mpu9250_8h_source.html#l00081">Mpu9250Config::smplrt_div</a>.</p>
+<p>References <a class="el" href="mpu9250_8h_source.html#l00131">Mpu9250Config::accel_range</a>, <a class="el" href="mpu9250_8h_source.html#l00133">Mpu9250Config::clk_sel</a>, <a class="el" href="mpu9250_8h_source.html#l00128">Mpu9250Config::dlpf_accel_cfg</a>, <a class="el" href="mpu9250_8h_source.html#l00129">Mpu9250Config::dlpf_gyro_cfg</a>, <a class="el" href="mpu9250_8h_source.html#l00132">Mpu9250Config::drdy_int_enable</a>, <a class="el" href="mpu9250_8h_source.html#l00130">Mpu9250Config::gyro_range</a>, <a class="el" href="mpu9250_8h_source.html#l00135">Mpu9250Config::init_status</a>, <a class="el" href="mpu9250_8h_source.html#l00136">Mpu9250Config::initialized</a>, <a class="el" href="mpu9250_8h_source.html#l00110">MPU9250_CONF_ACCEL</a>, <a class="el" href="mpu9250_8h_source.html#l00107">MPU9250_CONF_DLPF_ACCEL</a>, <a class="el" href="mpu9250_8h_source.html#l00108">MPU9250_CONF_DLPF_GYRO</a>, <a class="el" href="mpu9250_8h_source.html#l00113">MPU9250_CONF_DONE</a>, <a class="el" href="mpu9250_8h_source.html#l00109">MPU9250_CONF_GYRO</a>, <a class="el" href="mpu9250_8h_source.html#l00111">MPU9250_CONF_I2C_SLAVES</a>, <a class="el" href="mpu9250_8h_source.html#l00112">MPU9250_CONF_INT_ENABLE</a>, <a class="el" href="mpu9250_8h_source.html#l00105">MPU9250_CONF_PWR</a>, <a class="el" href="mpu9250_8h_source.html#l00103">MPU9250_CONF_RESET</a>, <a class="el" href="mpu9250_8h_source.html#l00106">MPU9250_CONF_SD</a>, <a class="el" href="mpu9250_8h_source.html#l00104">MPU9250_CONF_USER_RESET</a>, <a class="el" href="mpu9250__i2c_8c_source.html#l00174">mpu9250_configure_i2c_slaves()</a>, <a class="el" href="mpu9250__regs_8h_source.html#l00129">MPU9250_FIFO_RESET</a>, <a class="el" href="mpu9250__regs_8h_source.html#l00128">MPU9250_I2C_MST_RESET</a>, <a class="el" href="mpu9250__regs_8h_source.html#l00055">MPU9250_REG_ACCEL_CONFIG</a>, <a class="el" href="mpu9250__regs_8h_source.html#l00056">MPU9250_REG_ACCEL_CONFIG_2</a>, <a class="el" href="mpu9250__regs_8h_source.html#l00053">MPU9250_REG_CONFIG</a>, <a class="el" href="mpu9250__regs_8h_source.html#l00054">MPU9250_REG_GYRO_CONFIG</a>, <a class="el" href="mpu9250__regs_8h_source.html#l00092">MPU9250_REG_INT_ENABLE</a>, <a class="el" href="mpu9250__regs_8h_source.html#l00042">MPU9250_REG_PWR_MGMT_1</a>, <a class="el" href="mpu9250__regs_8h_source.html#l00052">MPU9250_REG_SMPLRT_DIV</a>, <a class="el" href="mpu9250__regs_8h_source.html#l00041">MPU9250_REG_USER_CTRL</a>, <a class="el" href="mpu9250__regs_8h_source.html#l00127">MPU9250_SIG_COND_RESET</a>, <a class="el" href="mpu9250_8h_source.html#l00143">Mpu9250Config::nb_slaves</a>, and <a class="el" href="mpu9250_8h_source.html#l00127">Mpu9250Config::smplrt_div</a>.</p>
 
-<p>Referenced by <a class="el" href="mpu9250__i2c_8c_source.html#l00101">mpu9250_i2c_event()</a>, <a class="el" href="mpu9250__i2c_8c_source.html#l00074">mpu9250_i2c_start_configure()</a>, <a class="el" href="mpu9250__spi_8c_source.html#l00100">mpu9250_spi_event()</a>, and <a class="el" href="mpu9250__spi_8c_source.html#l00077">mpu9250_spi_start_configure()</a>.</p>
+<p>Referenced by <a class="el" href="mpu9250__i2c_8c_source.html#l00106">mpu9250_i2c_event()</a>, <a class="el" href="mpu9250__i2c_8c_source.html#l00077">mpu9250_i2c_start_configure()</a>, <a class="el" href="mpu9250__spi_8c_source.html#l00109">mpu9250_spi_event()</a>, and <a class="el" href="mpu9250__spi_8c_source.html#l00077">mpu9250_spi_start_configure()</a>.</p>
 
 <p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -712,9 +1114,9 @@ Sample rate divider. </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mpu9250_8c_source.html#l00032">32</a> of file <a class="el" href="mpu9250_8c_source.html">mpu9250.c</a>.</p>
+<p>Definition at line <a class="el" href="mpu9250_8c_source.html#l00060">60</a> of file <a class="el" href="mpu9250_8c_source.html">mpu9250.c</a>.</p>
 
-<p>References <a class="el" href="mpu9250_8h_source.html#l00085">Mpu9250Config::accel_range</a>, <a class="el" href="mpu9250_8h_source.html#l00087">Mpu9250Config::clk_sel</a>, <a class="el" href="mpu9250_8h_source.html#l00082">Mpu9250Config::dlpf_accel_cfg</a>, <a class="el" href="mpu9250_8h_source.html#l00083">Mpu9250Config::dlpf_gyro_cfg</a>, <a class="el" href="mpu9250_8h_source.html#l00086">Mpu9250Config::drdy_int_enable</a>, <a class="el" href="mpu9250_8h_source.html#l00084">Mpu9250Config::gyro_range</a>, <a class="el" href="mpu9250_8h_source.html#l00095">Mpu9250Config::i2c_bypass</a>, <a class="el" href="mpu9250_8h_source.html#l00040">MPU9250_DEFAULT_AFS_SEL</a>, <a class="el" href="mpu9250_8h_source.html#l00048">MPU9250_DEFAULT_CLK_SEL</a>, <a class="el" href="mpu9250_8h_source.html#l00042">MPU9250_DEFAULT_DLPF_ACCEL_CFG</a>, <a class="el" href="mpu9250_8h_source.html#l00044">MPU9250_DEFAULT_DLPF_GYRO_CFG</a>, <a class="el" href="mpu9250_8h_source.html#l00038">MPU9250_DEFAULT_FS_SEL</a>, <a class="el" href="mpu9250_8h_source.html#l00036">MPU9250_DEFAULT_SMPLRT_DIV</a>, <a class="el" href="mpu9250_8h_source.html#l00088">Mpu9250Config::nb_bytes</a>, <a class="el" href="mpu9250_8h_source.html#l00098">Mpu9250Config::nb_slave_init</a>, <a class="el" href="mpu9250_8h_source.html#l00097">Mpu9250Config::nb_slaves</a>, and <a class="el" href="mpu9250_8h_source.html#l00081">Mpu9250Config::smplrt_div</a>.</p>
+<p>References <a class="el" href="mpu9250_8h_source.html#l00131">Mpu9250Config::accel_range</a>, <a class="el" href="mpu9250_8h_source.html#l00133">Mpu9250Config::clk_sel</a>, <a class="el" href="mpu9250_8h_source.html#l00128">Mpu9250Config::dlpf_accel_cfg</a>, <a class="el" href="mpu9250_8h_source.html#l00129">Mpu9250Config::dlpf_gyro_cfg</a>, <a class="el" href="mpu9250_8h_source.html#l00132">Mpu9250Config::drdy_int_enable</a>, <a class="el" href="mpu9250_8h_source.html#l00130">Mpu9250Config::gyro_range</a>, <a class="el" href="mpu9250_8h_source.html#l00141">Mpu9250Config::i2c_bypass</a>, <a class="el" href="mpu9250_8h_source.html#l00040">MPU9250_DEFAULT_AFS_SEL</a>, <a class="el" href="mpu9250_8h_source.html#l00048">MPU9250_DEFAULT_CLK_SEL</a>, <a class="el" href="mpu9250_8h_source.html#l00042">MPU9250_DEFAULT_DLPF_ACCEL_CFG</a>, <a class="el" href="mpu9250_8h_source.html#l00044">MPU9250_DEFAULT_DLPF_GYRO_CFG</a>, <a class="el" href="mpu9250_8h_source.html#l00038">MPU9250_DEFAULT_FS_SEL</a>, <a class="el" href="mpu9250_8h_source.html#l00036">MPU9250_DEFAULT_SMPLRT_DIV</a>, <a class="el" href="mpu9250_8h_source.html#l00134">Mpu9250Config::nb_bytes</a>, <a class="el" href="mpu9250_8h_source.html#l00144">Mpu9250Config::nb_slave_init</a>, <a class="el" href="mpu9250_8h_source.html#l00143">Mpu9250Config::nb_slaves</a>, and <a class="el" href="mpu9250_8h_source.html#l00127">Mpu9250Config::smplrt_div</a>.</p>
 
 <p>Referenced by <a class="el" href="mpu9250__i2c_8c_source.html#l00033">mpu9250_i2c_init()</a>, and <a class="el" href="mpu9250__spi_8c_source.html#l00031">mpu9250_spi_init()</a>.</p>
 
@@ -731,13 +1133,70 @@ Sample rate divider. </td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a class="anchor" id="a9fa3719b5d2ad4f0c9dcf6f7fd005cab"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float MPU9250_ACCEL_SENS[4]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="mpu9250_8c_source.html#l00046">46</a> of file <a class="el" href="mpu9250_8c_source.html">mpu9250.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4baa1f9b32c4c697569e3260103dd43b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> MPU9250_ACCEL_SENS_FRAC[4][2]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="mpu9250_8c_source.html#l00053">53</a> of file <a class="el" href="mpu9250_8c_source.html">mpu9250.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a67ca0e1d73649dcfa1efd8fe39737400"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float MPU9250_GYRO_SENS[4]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="mpu9250_8c_source.html#l00032">32</a> of file <a class="el" href="mpu9250_8c_source.html">mpu9250.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aad87c96ac74a96fe8d27ddb025b47751"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> MPU9250_GYRO_SENS_FRAC[4][2]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="mpu9250_8c_source.html#l00039">39</a> of file <a class="el" href="mpu9250_8c_source.html">mpu9250.c</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_0a48ba2c0a76794adfddddc873522f67.html">peripherals</a></li><li class="navelem"><a class="el" href="mpu9250_8h.html">mpu9250.h</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:02:07 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:02:36 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

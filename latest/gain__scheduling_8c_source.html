@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -214,7 +214,7 @@ $(document).ready(function(){initNavTree('gain__scheduling_8c_source.html','');}
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                                      <a class="code" href="gain__scheduling_8c.html#a2ab591935b79bb58b5bf167a4ac82e5f">SCHEDULING_VARIABLE_FRAC</a>) - <a class="code" href="gain__scheduling_8c.html#a3f55d71dfb3b7469a5986e5e8487b7af">scheduling_points</a>[section - 1]) / (<a class="code" href="gain__scheduling_8c.html#a3f55d71dfb3b7469a5986e5e8487b7af">scheduling_points</a>[section] -</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                                          <a class="code" href="gain__scheduling_8c.html#a3f55d71dfb3b7469a5986e5e8487b7af">scheduling_points</a>[section - 1]), <a class="code" href="gain__scheduling_8c.html#a6607c5031785ec6ba8573364fc40cc6f">INT32_RATIO_FRAC</a>);</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <a class="code" href="types_8h.html#adec1df1b8b51cb32b77e5b86fff46471">int64_t</a> g1, g2, gbl;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <a class="code" href="types_8h.html#adec1df1b8b51cb32b77e5b86fff46471">int64_t</a> <a class="code" href="stabilization__indi_8c.html#a984b5b97d4a27ce4d6d05afc57953fc0">g1</a>, <a class="code" href="stabilization__indi_8c.html#a842920928562e12dfdaf63e66b726df4">g2</a>, gbl;</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="comment">//Loop through the gains and interpolate</span></div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordflow">for</span> (<a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> <a class="code" href="stabilization__attitude__common__int_8h.html#a9b6f3fd15b242cec0359c2d1b2ffd669">i</a> = 0; <a class="code" href="stabilization__attitude__common__int_8h.html#a9b6f3fd15b242cec0359c2d1b2ffd669">i</a> &lt; (<span class="keyword">sizeof</span>(<span class="keyword">struct </span><a class="code" href="stabilization__attitude__common__int_8h.html#structInt32AttitudeGains">Int32AttitudeGains</a>) / sizeof(int32_t)); <a class="code" href="stabilization__attitude__common__int_8h.html#a9b6f3fd15b242cec0359c2d1b2ffd669">i</a>++) {</div>
@@ -223,7 +223,7 @@ $(document).ready(function(){initNavTree('gain__scheduling_8c_source.html','');}
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;      g2 = *(((int32_t *) gb) + <a class="code" href="stabilization__attitude__common__int_8h.html#a9b6f3fd15b242cec0359c2d1b2ffd669">i</a>);</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;      g2 *= ratio;</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;      gbl = (g1 + g2) &gt;&gt; <a class="code" href="gain__scheduling_8c.html#a6607c5031785ec6ba8573364fc40cc6f">INT32_RATIO_FRAC</a>;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;      gbl = (g1 + <a class="code" href="stabilization__indi_8c.html#a842920928562e12dfdaf63e66b726df4">g2</a>) &gt;&gt; <a class="code" href="gain__scheduling_8c.html#a6607c5031785ec6ba8573364fc40cc6f">INT32_RATIO_FRAC</a>;</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;      *(((int32_t *) gblend) + <a class="code" href="stabilization__attitude__common__int_8h.html#a9b6f3fd15b242cec0359c2d1b2ffd669">i</a>) = (int32_t) gbl;</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    }</div>
@@ -253,6 +253,8 @@ $(document).ready(function(){initNavTree('gain__scheduling_8c_source.html','');}
 <div class="ttc" id="stabilization__attitude__common__int_8h_html_structInt32AttitudeGains"><div class="ttname"><a href="stabilization__attitude__common__int_8h.html#structInt32AttitudeGains">Int32AttitudeGains</a></div><div class="ttdef"><b>Definition:</b> <a href="stabilization__attitude__common__int_8h_source.html#l00035">stabilization_attitude_common_int.h:35</a></div></div>
 <div class="ttc" id="types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00014">types.h:14</a></div></div>
 <div class="ttc" id="stabilization__attitude__common__int_8h_html_a9b6f3fd15b242cec0359c2d1b2ffd669"><div class="ttname"><a href="stabilization__attitude__common__int_8h.html#a9b6f3fd15b242cec0359c2d1b2ffd669">Int32AttitudeGains::i</a></div><div class="ttdeci">struct Int32Vect3 i</div><div class="ttdef"><b>Definition:</b> <a href="stabilization__attitude__common__int_8h_source.html#l00039">stabilization_attitude_common_int.h:39</a></div></div>
+<div class="ttc" id="stabilization__indi_8c_html_a842920928562e12dfdaf63e66b726df4"><div class="ttname"><a href="stabilization__indi_8c.html#a842920928562e12dfdaf63e66b726df4">g2</a></div><div class="ttdeci">float g2[INDI_NUM_ACT]</div><div class="ttdef"><b>Definition:</b> <a href="stabilization__indi_8c_source.html#l00154">stabilization_indi.c:154</a></div></div>
+<div class="ttc" id="stabilization__indi_8c_html_a984b5b97d4a27ce4d6d05afc57953fc0"><div class="ttname"><a href="stabilization__indi_8c.html#a984b5b97d4a27ce4d6d05afc57953fc0">g1</a></div><div class="ttdeci">float g1[INDI_OUTPUTS][INDI_NUM_ACT]</div><div class="ttdef"><b>Definition:</b> <a href="stabilization__indi_8c_source.html#l00155">stabilization_indi.c:155</a></div></div>
 <div class="ttc" id="gain__scheduling_8c_html_a5b3f2ec9266c8b0bd6d859d5c9790492"><div class="ttname"><a href="gain__scheduling_8c.html#a5b3f2ec9266c8b0bd6d859d5c9790492">gainlibrary</a></div><div class="ttdeci">struct Int32AttitudeGains gainlibrary[NUMBER_OF_GAINSETS]</div><div class="ttdef"><b>Definition:</b> <a href="gain__scheduling_8c_source.html#l00043">gain_scheduling.c:43</a></div></div>
 <div class="ttc" id="pprz__algebra__int_8h_html"><div class="ttname"><a href="pprz__algebra__int_8h.html">pprz_algebra_int.h</a></div><div class="ttdoc">Paparazzi fixed point algebra. </div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -261,7 +263,7 @@ $(document).ready(function(){initNavTree('gain__scheduling_8c_source.html','');}
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_94757629c544be2d6d24b01569be56e6.html">ctrl</a></li><li class="navelem"><a class="el" href="gain__scheduling_8c.html">gain_scheduling.c</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:01:23 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:01:38 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -117,7 +117,7 @@ $(document).ready(function(){initNavTree('pc__sim_8h.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:aa7699f41fbe105c8f5061cc48a5f6307"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pc__sim_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">DEFAULT_ACTUATORS</a>&#160;&#160;&#160;&quot;subsystems/actuators/actuators_4017.h&quot;</td></tr>
+<tr class="memitem:aa7699f41fbe105c8f5061cc48a5f6307"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pc__sim_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">DEFAULT_ACTUATORS</a>&#160;&#160;&#160;&quot;subsystems/actuators/<a class="el" href="UKF__Wind__Estimator_8c.html#a1b540e52aff26922bc43ff126fa35270">actuators_4017.h</a>&quot;</td></tr>
 <tr class="separator:aa7699f41fbe105c8f5061cc48a5f6307"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fc5f96f074d833b909fd75c92b7d2d0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pc__sim_8h.html#a3fc5f96f074d833b909fd75c92b7d2d0">ActuatorDefaultSet</a>(_x, _y)&#160;&#160;&#160;<a class="el" href="sim_2subsystems_2actuators_2servos__4017__hw_8h.html#a64095b6c66da022e3993864d9585365a">Actuator4017Set</a>(_x,_y)</td></tr>
 <tr class="separator:a3fc5f96f074d833b909fd75c92b7d2d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -134,6 +134,11 @@ Macros</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:abca45270f4f2c3b3f7e4cfbed49cc288"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="video__device_8h.html#structvideo__config__t">video_config_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pc__sim_8h.html#abca45270f4f2c3b3f7e4cfbed49cc288">webcam</a></td></tr>
 <tr class="separator:abca45270f4f2c3b3f7e4cfbed49cc288"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe211b229633c3f39cbfb50c5765b4b4"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="video__device_8h.html#structvideo__config__t">video_config_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pc__sim_8h.html#abe211b229633c3f39cbfb50c5765b4b4">front_camera</a></td></tr>
+<tr class="memdesc:abe211b229633c3f39cbfb50c5765b4b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Video thread dummy for simulation.  <a href="#abe211b229633c3f39cbfb50c5765b4b4">More...</a><br /></td></tr>
+<tr class="separator:abe211b229633c3f39cbfb50c5765b4b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebe228d13ad2e4e0c8528d945ad76a82"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="video__device_8h.html#structvideo__config__t">video_config_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pc__sim_8h.html#aebe228d13ad2e4e0c8528d945ad76a82">bottom_camera</a></td></tr>
+<tr class="separator:aebe228d13ad2e4e0c8528d945ad76a82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="a3fc5f96f074d833b909fd75c92b7d2d0"></a>
@@ -203,7 +208,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define DEFAULT_ACTUATORS&#160;&#160;&#160;&quot;subsystems/actuators/actuators_4017.h&quot;</td>
+          <td class="memname">#define DEFAULT_ACTUATORS&#160;&#160;&#160;&quot;subsystems/actuators/<a class="el" href="UKF__Wind__Estimator_8c.html#a1b540e52aff26922bc43ff126fa35270">actuators_4017.h</a>&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -245,6 +250,39 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
+<a class="anchor" id="aebe228d13ad2e4e0c8528d945ad76a82"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="video__device_8h.html#structvideo__config__t">video_config_t</a> bottom_camera</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ardrone_2board_8c_source.html#l00068">68</a> of file <a class="el" href="ardrone_2board_8c_source.html">board.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abe211b229633c3f39cbfb50c5765b4b4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="video__device_8h.html#structvideo__config__t">video_config_t</a> front_camera</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Video thread dummy for simulation. </p>
+<ul>
+<li>Keeps track of added devices, which can be referenced by simulation code such as in simulator/nps/fdm_gazebo.c. </li>
+</ul>
+
+<p>Definition at line <a class="el" href="ardrone_2board_8c_source.html#l00043">43</a> of file <a class="el" href="ardrone_2board_8c_source.html">board.c</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="abca45270f4f2c3b3f7e4cfbed49cc288"></a>
 <div class="memitem">
 <div class="memproto">
@@ -263,7 +301,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e030268cd18297cf6282390f76bfcf7f.html">boards</a></li><li class="navelem"><a class="el" href="pc__sim_8h.html">pc_sim.h</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:01:44 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:02:05 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

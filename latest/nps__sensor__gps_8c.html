@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -112,6 +112,7 @@ $(document).ready(function(){initNavTree('nps__sensor__gps_8c.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="nps__sensor__gps_8h_source.html">nps_sensor_gps.h</a>&quot;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &quot;generated/airframe.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="nps__fdm_8h_source.html">nps_fdm.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="nps__random_8h_source.html">nps_random.h</a>&quot;</code><br />
@@ -124,7 +125,7 @@ $(document).ready(function(){initNavTree('nps__sensor__gps_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nps__sensor__gps_8c__incl.png" border="0" usemap="#sw_2simulator_2nps_2nps__sensor__gps_8c" alt=""/></div>
 <map name="sw_2simulator_2nps_2nps__sensor__gps_8c" id="sw_2simulator_2nps_2nps__sensor__gps_8c">
-<area shape="rect" id="node2" href="nps__sensor__gps_8h.html" title="nps_sensor_gps.h" alt="" coords="354,95,491,121"/><area shape="rect" id="node15" href="nps__fdm_8h.html" title="nps_fdm.h" alt="" coords="738,95,827,121"/><area shape="rect" id="node18" href="nps__random_8h.html" title="nps_random.h" alt="" coords="627,177,741,203"/><area shape="rect" id="node19" href="nps__sensors__utils_8h.html" title="nps_sensors_utils.h" alt="" coords="516,95,663,121"/><area shape="rect" id="node4" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="297,408,452,435"/><area shape="rect" id="node8" href="pprz__algebra__double_8h.html" title="Paparazzi double precision floating point algebra. " alt="" coords="487,259,692,285"/><area shape="rect" id="node9" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="135,333,287,360"/><area shape="rect" id="node12" href="pprz__geodetic__double_8h.html" title="Paparazzi double&#45;precision floating point math for geodetic calculations. " alt="" coords="817,169,967,211"/><area shape="rect" id="node13" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="830,259,954,285"/><area shape="rect" id="node16" href="flight__gear_8h.html" title="../flight_gear.h" alt="" coords="1043,177,1155,203"/></map>
+<area shape="rect" id="node2" href="nps__sensor__gps_8h.html" title="nps_sensor_gps.h" alt="" coords="354,95,491,121"/><area shape="rect" id="node16" href="nps__fdm_8h.html" title="nps_fdm.h" alt="" coords="738,95,827,121"/><area shape="rect" id="node19" href="nps__random_8h.html" title="nps_random.h" alt="" coords="627,177,741,203"/><area shape="rect" id="node20" href="nps__sensors__utils_8h.html" title="nps_sensors_utils.h" alt="" coords="516,95,663,121"/><area shape="rect" id="node4" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="297,408,452,435"/><area shape="rect" id="node8" href="pprz__algebra__double_8h.html" title="Paparazzi double precision floating point algebra. " alt="" coords="487,259,692,285"/><area shape="rect" id="node9" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="135,333,287,360"/><area shape="rect" id="node12" href="pprz__geodetic__double_8h.html" title="Paparazzi double&#45;precision floating point math for geodetic calculations. " alt="" coords="817,169,967,211"/><area shape="rect" id="node13" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="830,259,954,285"/><area shape="rect" id="node17" href="flight__gear_8h.html" title="../flight_gear.h" alt="" coords="1043,177,1155,203"/></map>
 </div>
 </div>
 <p><a href="nps__sensor__gps_8c_source.html">Go to the source code of this file.</a></p>
@@ -174,7 +175,7 @@ Functions</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nps__sensor__gps_8c_a40c4a8c2522582017498b101e5d476ef_icgraph.png" border="0" usemap="#nps__sensor__gps_8c_a40c4a8c2522582017498b101e5d476ef_icgraph" alt=""/></div>
 <map name="nps__sensor__gps_8c_a40c4a8c2522582017498b101e5d476ef_icgraph" id="nps__sensor__gps_8c_a40c4a8c2522582017498b101e5d476ef_icgraph">
-<area shape="rect" id="node2" href="nps__sensors_8h.html#a09b47018a69d874a1e3d3876e04f8a8f" title="nps_sensors_init" alt="" coords="204,5,332,32"/><area shape="rect" id="node3" href="nps__main_8c.html#af28efef10cede3b66825b2dc2e4e7705" title="nps_main_init" alt="" coords="380,5,491,32"/><area shape="rect" id="node4" href="nps__main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="539,5,593,32"/></map>
+<area shape="rect" id="node2" href="nps__sensors_8h.html#a09b47018a69d874a1e3d3876e04f8a8f" title="nps_sensors_init" alt="" coords="204,5,332,32"/><area shape="rect" id="node3" href="nps__main__common_8c.html#a92aad3720fb482042b695d66e633699a" title="nps_main_init" alt="" coords="380,5,491,32"/><area shape="rect" id="node4" href="nps__main__hitl_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="539,5,593,32"/></map>
 </div>
 </p>
 
@@ -208,7 +209,7 @@ Functions</h2></td></tr>
 
 <p>References <a class="el" href="nps__sensor__gps_8h_source.html#l00030">NpsSensorGps::data_available</a>, <a class="el" href="nps__random_8c_source.html#l00034">double_vect3_add_gaussian_noise()</a>, <a class="el" href="nps__random_8c_source.html#l00065">double_vect3_update_random_walk()</a>, <a class="el" href="nps__fdm_8h_source.html#l00064">NpsFdm::ecef_ecef_vel</a>, <a class="el" href="nps__sensor__gps_8h_source.html#l00014">NpsSensorGps::ecef_pos</a>, <a class="el" href="nps__fdm_8h_source.html#l00053">NpsFdm::ecef_pos</a>, <a class="el" href="nps__sensor__gps_8h_source.html#l00015">NpsSensorGps::ecef_vel</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00084">fdm</a>, <a class="el" href="nps__sensor__gps_8h_source.html#l00017">NpsSensorGps::hmsl</a>, <a class="el" href="nps__fdm_8h_source.html#l00056">NpsFdm::hmsl</a>, <a class="el" href="nps__sensor__gps_8h_source.html#l00025">NpsSensorGps::hmsl_history</a>, <a class="el" href="nps__sensor__gps_8h_source.html#l00027">NpsSensorGps::lla_history</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00083">lla_of_ecef_d()</a>, <a class="el" href="nps__sensor__gps_8h_source.html#l00016">NpsSensorGps::lla_pos</a>, <a class="el" href="nps__sensor__gps_8h_source.html#l00029">NpsSensorGps::next_update</a>, <a class="el" href="nps__sensor__gps_8h_source.html#l00020">NpsSensorGps::pos_bias_initial</a>, <a class="el" href="nps__sensor__gps_8h_source.html#l00021">NpsSensorGps::pos_bias_random_walk_std_dev</a>, <a class="el" href="nps__sensor__gps_8h_source.html#l00022">NpsSensorGps::pos_bias_random_walk_value</a>, <a class="el" href="nps__sensor__gps_8h_source.html#l00026">NpsSensorGps::pos_history</a>, <a class="el" href="nps__sensor__gps_8h_source.html#l00023">NpsSensorGps::pos_latency</a>, <a class="el" href="nps__sensor__gps_8h_source.html#l00018">NpsSensorGps::pos_noise_std_dev</a>, <a class="el" href="nps__sensor__gps_8h_source.html#l00028">NpsSensorGps::speed_history</a>, <a class="el" href="nps__sensor__gps_8h_source.html#l00024">NpsSensorGps::speed_latency</a>, <a class="el" href="nps__sensor__gps_8h_source.html#l00019">NpsSensorGps::speed_noise_std_dev</a>, <a class="el" href="std_8h_source.html#l00004">TRUE</a>, <a class="el" href="nps__sensors__utils_8c_source.html#l00006">UpdateSensorLatency()</a>, <a class="el" href="nps__sensors__utils_8c_source.html#l00027">UpdateSensorLatency_Single()</a>, <a class="el" href="pprz__algebra_8h_source.html#l00146">VECT3_ADD</a>, and <a class="el" href="pprz__algebra_8h_source.html#l00139">VECT3_COPY</a>.</p>
 
-<p>Referenced by <a class="el" href="nps__sensors_8c_source.html#l00027">nps_sensors_run_step()</a>.</p>
+<p>Referenced by <a class="el" href="nps__sensors_8c_source.html#l00028">nps_sensors_run_step()</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -228,7 +229,7 @@ Functions</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nps__sensor__gps_8c_a8b6a7e5d571ffcdd482b49cef2e2efe4_icgraph.png" border="0" usemap="#nps__sensor__gps_8c_a8b6a7e5d571ffcdd482b49cef2e2efe4_icgraph" alt=""/></div>
 <map name="nps__sensor__gps_8c_a8b6a7e5d571ffcdd482b49cef2e2efe4_icgraph" id="nps__sensor__gps_8c_a8b6a7e5d571ffcdd482b49cef2e2efe4_icgraph">
-<area shape="rect" id="node2" href="nps__sensors_8h.html#acce77f76dcc7946ef7dfd9a522b47b63" title="nps_sensors_run_step" alt="" coords="241,5,407,32"/><area shape="rect" id="node3" href="nps__main_8c.html#aadf8f025045c7e712a46040d80e3b92f" title="nps_main_run_sim_step" alt="" coords="455,5,632,32"/><area shape="rect" id="node4" href="nps__main_8c.html#ae831d78cf0d072e1bf594160b977eeb9" title="nps_main_periodic" alt="" coords="680,5,821,32"/><area shape="rect" id="node5" href="nps__main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="869,5,924,32"/></map>
+<area shape="rect" id="node2" href="nps__sensors_8h.html#acce77f76dcc7946ef7dfd9a522b47b63" title="nps_sensors_run_step" alt="" coords="241,5,407,32"/><area shape="rect" id="node3" href="nps__main__hitl_8c.html#a9a080385e191a932860731e6f511c775" title="nps_main_run_sim_step" alt="" coords="455,5,632,32"/><area shape="rect" id="node4" href="nps__main__hitl_8c.html#afa201657c19f3eac2d07487bb11a261d" title="nps_main_loop" alt="" coords="680,5,799,32"/><area shape="rect" id="node5" href="nps__main__hitl_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="847,5,901,32"/></map>
 </div>
 </p>
 
@@ -240,7 +241,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_57152efd0242905f7c5d6768e6b65e41.html">simulator</a></li><li class="navelem"><a class="el" href="dir_19bdda89d6219119fa616a46fa62e86b.html">nps</a></li><li class="navelem"><a class="el" href="nps__sensor__gps_8c.html">nps_sensor_gps.c</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:02:16 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:02:45 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

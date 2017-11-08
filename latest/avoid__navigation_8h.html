@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -153,7 +153,6 @@ Functions</h2></td></tr>
 <tr class="memitem:afbb250f65364e84c51f0df86da67eb05"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="avoid__navigation_8h.html#afbb250f65364e84c51f0df86da67eb05">run_avoid_navigation_onvision</a> (void)</td></tr>
 <tr class="separator:afbb250f65364e84c51f0df86da67eb05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6d48f8b8250445377a818bcaacf078a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="avoid__navigation_8h.html#aa6d48f8b8250445377a818bcaacf078a">increase_nav_heading</a> (<a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> *<a class="el" href="ahrs__infrared_8c.html#ac5682e48513a771560df50e3b213e61a">heading</a>, <a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> increment)</td></tr>
-<tr class="memdesc:aa6d48f8b8250445377a818bcaacf078a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increases the NAV heading.  <a href="#aa6d48f8b8250445377a818bcaacf078a">More...</a><br /></td></tr>
 <tr class="separator:aa6d48f8b8250445377a818bcaacf078a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
@@ -221,7 +220,7 @@ timeout</td>
 
 <p>Definition at line <a class="el" href="avoid__navigation_8h_source.html#l00038">38</a> of file <a class="el" href="avoid__navigation_8h_source.html">avoid_navigation.h</a>.</p>
 
-<p>Referenced by <a class="el" href="avoid__navigation_8c_source.html#l00068">run_avoid_navigation_onvision()</a>.</p>
+<p>Referenced by <a class="el" href="avoid__navigation_8c_source.html#l00065">run_avoid_navigation_onvision()</a>.</p>
 
 </div>
 </div>
@@ -250,25 +249,7 @@ timeout</td>
       </table>
 </div><div class="memdoc">
 
-<p>Increases the NAV heading. </p>
-<p>Assumes heading is an INT32_ANGLE. It is bound in this function. </p>
-
-<p>Definition at line <a class="el" href="orange__avoider_8c_source.html#l00051">51</a> of file <a class="el" href="orange__avoider_8c_source.html">orange_avoider.c</a>.</p>
-
-<p>References <a class="el" href="pprz__algebra__int_8h_source.html#l00126">INT32_ANGLE_NORMALIZE</a>.</p>
-
-<p>Referenced by <a class="el" href="follow__me_8c_source.html#l00069">follow_me_periodic()</a>.</p>
-
-<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="avoid__navigation_8h_aa6d48f8b8250445377a818bcaacf078a_icgraph.png" border="0" usemap="#avoid__navigation_8h_aa6d48f8b8250445377a818bcaacf078a_icgraph" alt=""/></div>
-<map name="avoid__navigation_8h_aa6d48f8b8250445377a818bcaacf078a_icgraph" id="avoid__navigation_8h_aa6d48f8b8250445377a818bcaacf078a_icgraph">
-<area shape="rect" id="node2" href="follow__me_8h.html#a5c3112293f2a4d98f2ddb0d937011a36" title="follow_me_periodic" alt="" coords="217,5,360,32"/></map>
-</div>
-</p>
+<p>Definition at line <a class="el" href="avoid__navigation_8c_source.html#l00117">117</a> of file <a class="el" href="avoid__navigation_8c_source.html">avoid_navigation.c</a>.</p>
 
 </div>
 </div>
@@ -286,17 +267,17 @@ timeout</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="avoid__navigation_8c_source.html#l00061">61</a> of file <a class="el" href="avoid__navigation_8c_source.html">avoid_navigation.c</a>.</p>
+<p>Definition at line <a class="el" href="avoid__navigation_8c_source.html#l00058">58</a> of file <a class="el" href="avoid__navigation_8c_source.html">avoid_navigation.c</a>.</p>
 
-<p>References <a class="el" href="avoid__navigation_8c_source.html#l00056">avoid_navigation_data</a>, and <a class="el" href="stereocam__droplet_8c_source.html#l00070">AvoidNavigationStruct::mode</a>.</p>
+<p>References <a class="el" href="avoid__navigation_8c_source.html#l00053">avoid_navigation_data</a>, and <a class="el" href="stereocam__droplet_8c_source.html#l00070">AvoidNavigationStruct::mode</a>.</p>
 
 <p>Referenced by <a class="el" href="stereo__avoid_8c_source.html#l00042">stereo_avoid_init()</a>.</p>
 
-<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="avoid__navigation_8h_a17913a42379cc69477b783c9d0d9c68e_icgraph.png" border="0" usemap="#avoid__navigation_8h_a17913a42379cc69477b783c9d0d9c68e_icgraph" alt=""/></div>
 <map name="avoid__navigation_8h_a17913a42379cc69477b783c9d0d9c68e_icgraph" id="avoid__navigation_8h_a17913a42379cc69477b783c9d0d9c68e_icgraph">
 <area shape="rect" id="node2" href="stereo__avoid_8h.html#a32002f88a598eedf006da5c0e50aee2b" title="stereo_avoid_init" alt="" coords="208,5,339,32"/></map>
@@ -319,28 +300,28 @@ timeout</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="avoid__navigation_8c_source.html#l00068">68</a> of file <a class="el" href="avoid__navigation_8c_source.html">avoid_navigation.c</a>.</p>
+<p>Definition at line <a class="el" href="avoid__navigation_8c_source.html#l00065">65</a> of file <a class="el" href="avoid__navigation_8c_source.html">avoid_navigation.c</a>.</p>
 
-<p>References <a class="el" href="pprz__algebra__int_8h_source.html#l00211">ANGLE_FLOAT_OF_BFP</a>, <a class="el" href="avoid__navigation_8c_source.html#l00056">avoid_navigation_data</a>, <a class="el" href="avoid__navigation_8c_source.html#l00058">counter</a>, <a class="el" href="stereocam_8h_source.html#l00034">uint8array::data</a>, <a class="el" href="downlink_8h_source.html#l00084">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00088">DefaultDevice</a>, <a class="el" href="stereocam__droplet_8c_source.html#l00070">AvoidNavigationStruct::mode</a>, <a class="el" href="navigation_8c_source.html#l00084">nav_heading</a>, <a class="el" href="avoid__navigation_8h_source.html#l00038">NAV_LINE_AVOID_SEGMENT_LENGTH</a>, <a class="el" href="avoid__navigation_8c_source.html#l00057">obstacle_detected</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00216">POS_BFP_OF_REAL</a>, <a class="el" href="state_8h_source.html#l00668">stateGetPositionEnu_i()</a>, <a class="el" href="stereocam__droplet_8c_source.html#l00071">AvoidNavigationStruct::stereo_bin</a>, <a class="el" href="stereocam_8c_source.html#l00057">stereocam_data</a>, <a class="el" href="subsystems_2navigation_2waypoints_8c_source.html#l00138">waypoint_set_xy_i()</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00078">EnuCoor_i::x</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00079">EnuCoor_i::y</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00080">EnuCoor_i::z</a>.</p>
+<p>References <a class="el" href="pprz__algebra__int_8h_source.html#l00211">ANGLE_FLOAT_OF_BFP</a>, <a class="el" href="avoid__navigation_8c_source.html#l00053">avoid_navigation_data</a>, <a class="el" href="avoid__navigation_8c_source.html#l00055">counter</a>, <a class="el" href="downlink_8h_source.html#l00042">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00046">DefaultDevice</a>, <a class="el" href="stereocam__droplet_8c_source.html#l00070">AvoidNavigationStruct::mode</a>, <a class="el" href="navigation_8c_source.html#l00104">nav_heading</a>, <a class="el" href="avoid__navigation_8h_source.html#l00038">NAV_LINE_AVOID_SEGMENT_LENGTH</a>, <a class="el" href="avoid__navigation_8c_source.html#l00054">obstacle_detected</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00216">POS_BFP_OF_REAL</a>, <a class="el" href="state_8h_source.html#l00674">stateGetPositionEnu_i()</a>, <a class="el" href="stereocam__droplet_8c_source.html#l00071">AvoidNavigationStruct::stereo_bin</a>, <a class="el" href="subsystems_2navigation_2waypoints_8c_source.html#l00138">waypoint_set_xy_i()</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00078">EnuCoor_i::x</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00079">EnuCoor_i::y</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00080">EnuCoor_i::z</a>.</p>
 
 <p>Referenced by <a class="el" href="stereo__avoid_8c_source.html#l00049">stereo_avoid_run()</a>.</p>
 
-<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="avoid__navigation_8h_afbb250f65364e84c51f0df86da67eb05_cgraph.png" border="0" usemap="#avoid__navigation_8h_afbb250f65364e84c51f0df86da67eb05_cgraph" alt=""/></div>
 <map name="avoid__navigation_8h_afbb250f65364e84c51f0df86da67eb05_cgraph" id="avoid__navigation_8h_afbb250f65364e84c51f0df86da67eb05_cgraph">
 <area shape="rect" id="node2" href="group__state__position.html#gaf326b26862d91ded4ee4e856a511df47" title="Get position in local ENU coordinates (int). " alt="" coords="211,193,373,220"/><area shape="rect" id="node14" href="subsystems_2navigation_2waypoints_8c.html#a6458406c3ff4259882fa0b93991f3c1e" title="Set only local XY coordinates of waypoint without update altitude. " alt="" coords="224,281,360,308"/><area shape="rect" id="node3" href="group__state__position.html#gaf61c3a86bc000852a2d27d5727ceaa91" title="stateCalcPositionEnu_i" alt="" coords="421,148,588,175"/><area shape="rect" id="node4" href="group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU. " alt="" coords="837,123,976,149"/><area shape="rect" id="node6" href="pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title="enu_of_ecef_point_f" alt="" coords="636,17,785,44"/><area shape="rect" id="node7" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title="ecef_of_lla_f" alt="" coords="1052,224,1152,251"/><area shape="rect" id="node8" href="group__math__geodetic__int.html#gae42bb4930966f1c362524f95bb5d7d6e" title="Convert a point from LLA to local ENU. " alt="" coords="647,173,774,200"/><area shape="rect" id="node11" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="661,68,760,95"/><area shape="rect" id="node5" href="group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU. " alt="" coords="1028,123,1176,149"/><area shape="rect" id="node9" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF. " alt="" coords="857,173,956,200"/><area shape="rect" id="node10" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title="ecef_of_lla_d" alt="" coords="1050,173,1154,200"/><area shape="rect" id="node12" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="833,5,980,32"/><area shape="rect" id="node13" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="839,57,975,98"/><area shape="rect" id="node15" href="subsystems_2navigation_2waypoints_8c.html#a10acece8582506367e9e9df3694bf31b" title="update global LLA coordinates from its ENU coordinates " alt="" coords="434,300,575,327"/><area shape="rect" id="node16" href="group__math__geodetic__int.html#gaaeff7441301129ca712e828b9b4f474e" title="Convert a local ENU position to ECEF. " alt="" coords="641,363,780,389"/><area shape="rect" id="node18" href="group__math__geodetic__int.html#gaea47a32071c2427f895fcb1df32c4e23" title="Convert a ECEF to LLA. " alt="" coords="661,300,760,327"/><area shape="rect" id="node17" href="group__math__geodetic__int.html#gaabe6e63048c95afdffdd4a581dc5f2b8" title="Rotate a vector from ENU to ECEF. " alt="" coords="835,376,978,403"/><area shape="rect" id="node19" href="pprz__geodetic__float_8c.html#adecd186d51b41b09f0cad928c0d2f68e" title="lla_of_ecef_f" alt="" coords="857,275,957,301"/><area shape="rect" id="node20" href="group__math__geodetic__double.html#ga9d3464ccabcd97db9fb4e1c7d25dfe16" title="lla_of_ecef_d" alt="" coords="855,325,959,352"/></map>
 </div>
 </p>
 
-<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="avoid__navigation_8h_afbb250f65364e84c51f0df86da67eb05_icgraph.png" border="0" usemap="#avoid__navigation_8h_afbb250f65364e84c51f0df86da67eb05_icgraph" alt=""/></div>
 <map name="avoid__navigation_8h_afbb250f65364e84c51f0df86da67eb05_icgraph" id="avoid__navigation_8h_afbb250f65364e84c51f0df86da67eb05_icgraph">
 <area shape="rect" id="node2" href="stereo__avoid_8h.html#ace7b98c58ff30c23353ae3d546f69475" title="stereo_avoid_run" alt="" coords="211,13,343,39"/></map>
@@ -364,7 +345,7 @@ timeout</td>
 
 <p>Definition at line <a class="el" href="stereocam__droplet_8c_source.html#l00075">75</a> of file <a class="el" href="stereocam__droplet_8c_source.html">stereocam_droplet.c</a>.</p>
 
-<p>Referenced by <a class="el" href="avoid__navigation_8c_source.html#l00061">init_avoid_navigation()</a>, <a class="el" href="avoid__navigation_8c_source.html#l00068">run_avoid_navigation_onvision()</a>, <a class="el" href="stereo__avoid__sim_8c_source.html#l00035">stereo_avoid_init()</a>, <a class="el" href="stereo__avoid__sim_8c_source.html#l00053">stereo_avoid_run()</a>, <a class="el" href="stereocam__droplet_8c_source.html#l00084">stereo_parse()</a>, <a class="el" href="stereocam__droplet_8c_source.html#l00092">stereocam_droplet_init()</a>, and <a class="el" href="stereocam__droplet_8c_source.html#l00098">stereocam_droplet_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="avoid__navigation_8c_source.html#l00058">init_avoid_navigation()</a>, <a class="el" href="avoid__navigation_8c_source.html#l00065">run_avoid_navigation_onvision()</a>, <a class="el" href="stereo__avoid__sim_8c_source.html#l00035">stereo_avoid_init()</a>, <a class="el" href="stereo__avoid__sim_8c_source.html#l00053">stereo_avoid_run()</a>, <a class="el" href="stereocam__droplet_8c_source.html#l00084">stereo_parse()</a>, <a class="el" href="stereocam__droplet_8c_source.html#l00092">stereocam_droplet_init()</a>, and <a class="el" href="stereocam__droplet_8c_source.html#l00098">stereocam_droplet_periodic()</a>.</p>
 
 </div>
 </div>
@@ -378,9 +359,9 @@ timeout</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="avoid__navigation_8c_source.html#l00057">57</a> of file <a class="el" href="avoid__navigation_8c_source.html">avoid_navigation.c</a>.</p>
+<p>Definition at line <a class="el" href="avoid__navigation_8c_source.html#l00054">54</a> of file <a class="el" href="avoid__navigation_8c_source.html">avoid_navigation.c</a>.</p>
 
-<p>Referenced by <a class="el" href="avoid__navigation_8c_source.html#l00068">run_avoid_navigation_onvision()</a>, and <a class="el" href="stereocam__droplet_8c_source.html#l00098">stereocam_droplet_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="avoid__navigation_8c_source.html#l00065">run_avoid_navigation_onvision()</a>, and <a class="el" href="stereocam__droplet_8c_source.html#l00098">stereocam_droplet_periodic()</a>.</p>
 
 </div>
 </div>
@@ -390,7 +371,7 @@ timeout</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_3df9ff4d3eb13d31d58a513ba3c4e4bb.html">stereocam</a></li><li class="navelem"><a class="el" href="dir_227931f8886fc6a6dfaec1c2d3d7d81a.html">nav_line_avoid</a></li><li class="navelem"><a class="el" href="avoid__navigation_8h.html">avoid_navigation.h</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:02:05 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:02:33 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

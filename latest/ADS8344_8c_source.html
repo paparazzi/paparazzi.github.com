@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -146,8 +146,8 @@ $(document).ready(function(){initNavTree('ADS8344_8c_source.html','');});
 <div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="ADS8344_8c.html#a3c7550edc886553fe543850409648513">   35</a></span>&#160;<span class="preprocessor">#define ADS8344Select()   SetBit(ADS8344_SS_IOCLR,ADS8344_SS_PIN)</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="ADS8344_8c.html#aa9817622c338285730aca3a5c84c289c">   36</a></span>&#160;<span class="preprocessor">#define ADS8344Unselect() SetBit(ADS8344_SS_IOSET,ADS8344_SS_PIN)</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="imu__crista_8h.html#a4d60bb82c8eb3663ce0b84a8523eae67">   38</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="ADS8344_8c.html#a5ed4272543ec6099b728fb5f511e5353">ADS8344_available</a>;</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="imu__crista_8h.html#ac6ac4cf39e0261a374f018284e08bf35">   39</a></span>&#160;<a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> <a class="code" href="ADS8344_8c.html#a7c6b29728c370927c9a96191b45b1d34">ADS8344_values</a>[<a class="code" href="ADS8344_8h.html#a4559069a0477805f310137e5a551b7a0">NB_CHANNELS</a>];</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="ADS8344_8h.html#a5ed4272543ec6099b728fb5f511e5353">   38</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="ADS8344_8c.html#a5ed4272543ec6099b728fb5f511e5353">ADS8344_available</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="ADS8344_8h.html#a7c6b29728c370927c9a96191b45b1d34">   39</a></span>&#160;<a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> <a class="code" href="ADS8344_8c.html#a7c6b29728c370927c9a96191b45b1d34">ADS8344_values</a>[<a class="code" href="ADS8344_8h.html#a4559069a0477805f310137e5a551b7a0">NB_CHANNELS</a>];</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
 <div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="ADS8344_8c.html#a4e7bf0c205872c6db180b06792a62118">   41</a></span>&#160;<span class="preprocessor">#define POWER_MODE (1 &lt;&lt; 1 | 1)</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="ADS8344_8c.html#a87866f9987fb38ca70a19a737bbd0628">   42</a></span>&#160;<span class="preprocessor">#define SGL_DIF 1 // Single ended</span></div>
@@ -240,7 +240,7 @@ $(document).ready(function(){initNavTree('ADS8344_8c_source.html','');});
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  <a class="code" href="LPC21xx_8h.html#a918b22d1e41ed7c1cf61a0dacd368c6c">SSPDR</a> = 0;</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;}</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
-<div class="line"><a name="l00132"></a><span class="lineno"><a class="line" href="stm32_2subsystems_2imu_2imu__crista__arch_8h.html#a998b4ce1e557d7dd9256f33a85c1ec37">  132</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="ADS8344_8c.html#a998b4ce1e557d7dd9256f33a85c1ec37">ADS8344_start</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00132"></a><span class="lineno"><a class="line" href="ADS8344_8h.html#a998b4ce1e557d7dd9256f33a85c1ec37">  132</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="ADS8344_8c.html#a998b4ce1e557d7dd9256f33a85c1ec37">ADS8344_start</a>(<span class="keywordtype">void</span>)</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;{</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  <a class="code" href="ADS8344_8c.html#a3c7550edc886553fe543850409648513">ADS8344Select</a>();</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  <a class="code" href="lpc21_2mcu__periph_2spi__arch_8c.html#a4c328147d259ed459aa71ba246bbf1cf">SpiClearRti</a>();</div>
@@ -291,7 +291,7 @@ $(document).ready(function(){initNavTree('ADS8344_8c_source.html','');});
 <div class="ttc" id="ADS8344_8c_html_a1b86bef3b41329103786dcfeb683f733"><div class="ttname"><a href="ADS8344_8c.html#a1b86bef3b41329103786dcfeb683f733">ADS8344_SS_IODIR</a></div><div class="ttdeci">#define ADS8344_SS_IODIR</div><div class="ttdef"><b>Definition:</b> <a href="ADS8344_8c_source.html#l00030">ADS8344.c:30</a></div></div>
 <div class="ttc" id="ADS8344_8c_html_a4e7bf0c205872c6db180b06792a62118"><div class="ttname"><a href="ADS8344_8c.html#a4e7bf0c205872c6db180b06792a62118">POWER_MODE</a></div><div class="ttdeci">#define POWER_MODE</div><div class="ttdef"><b>Definition:</b> <a href="ADS8344_8c_source.html#l00041">ADS8344.c:41</a></div></div>
 <div class="ttc" id="armVIC_8h_html"><div class="ttname"><a href="armVIC_8h.html">armVIC.h</a></div></div>
-<div class="ttc" id="chibios_2led__hw_8h_html_afd0bf6b0eebb00641365dc389a9fc449"><div class="ttname"><a href="chibios_2led__hw_8h.html#afd0bf6b0eebb00641365dc389a9fc449">LED_TOGGLE</a></div><div class="ttdeci">#define LED_TOGGLE(i)</div><div class="ttdef"><b>Definition:</b> <a href="chibios_2led__hw_8h_source.html#l00051">led_hw.h:51</a></div></div>
+<div class="ttc" id="chibios_2led__hw_8h_html_afd0bf6b0eebb00641365dc389a9fc449"><div class="ttname"><a href="chibios_2led__hw_8h.html#afd0bf6b0eebb00641365dc389a9fc449">LED_TOGGLE</a></div><div class="ttdeci">#define LED_TOGGLE(i)</div><div class="ttdef"><b>Definition:</b> <a href="chibios_2led__hw_8h_source.html#l00052">led_hw.h:52</a></div></div>
 <div class="ttc" id="ADS8344_8c_html_a3f17d7c8cdacbbfc2ee4cb8609fdb83a"><div class="ttname"><a href="ADS8344_8c.html#a3f17d7c8cdacbbfc2ee4cb8609fdb83a">send_request</a></div><div class="ttdeci">static void send_request(void)</div><div class="ttdef"><b>Definition:</b> <a href="ADS8344_8c_source.html#l00122">ADS8344.c:122</a></div></div>
 <div class="ttc" id="lpcVIC_8h_html_a20f163f17339eb92d567986cfd657ad6"><div class="ttname"><a href="lpcVIC_8h.html#a20f163f17339eb92d567986cfd657ad6">VIC_BIT</a></div><div class="ttdeci">#define VIC_BIT(chan)</div><div class="ttdef"><b>Definition:</b> <a href="lpcVIC_8h_source.html#l00105">lpcVIC.h:105</a></div></div>
 <div class="ttc" id="ADS8344_8h_html"><div class="ttname"><a href="ADS8344_8h.html">ADS8344.h</a></div></div>
@@ -322,7 +322,7 @@ $(document).ready(function(){initNavTree('ADS8344_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_3f7617cb4a5e4fe5cc816b7b3bbdea3a.html">lpc21</a></li><li class="navelem"><a class="el" href="ADS8344_8c.html">ADS8344.c</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:01:13 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:01:27 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

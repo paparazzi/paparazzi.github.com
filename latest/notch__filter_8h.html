@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -144,13 +144,13 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a9f102b18d534f8383077cd7dc257766a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="notch__filter_8h.html#a9f102b18d534f8383077cd7dc257766a">notch_filter_set_sampling_frequency</a> (struct <a class="el" href="notch__filter_8h.html#structSecondOrderNotchFilter">SecondOrderNotchFilter</a> *filter, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> <a class="el" href="stereocam_8c.html#a3687a13ca455728ecb41e28f9ce39d87">frequency</a>)</td></tr>
+<tr class="memitem:a9f102b18d534f8383077cd7dc257766a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="notch__filter_8h.html#a9f102b18d534f8383077cd7dc257766a">notch_filter_set_sampling_frequency</a> (struct <a class="el" href="notch__filter_8h.html#structSecondOrderNotchFilter">SecondOrderNotchFilter</a> *filter, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> frequency)</td></tr>
 <tr class="memdesc:a9f102b18d534f8383077cd7dc257766a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set sampling frequency of the notch filter.  <a href="#a9f102b18d534f8383077cd7dc257766a">More...</a><br /></td></tr>
 <tr class="separator:a9f102b18d534f8383077cd7dc257766a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0a68017635e730c83735978e2bf859a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="notch__filter_8h.html#af0a68017635e730c83735978e2bf859a">notch_filter_set_bandwidth</a> (struct <a class="el" href="notch__filter_8h.html#structSecondOrderNotchFilter">SecondOrderNotchFilter</a> *filter, float bandwidth)</td></tr>
 <tr class="memdesc:af0a68017635e730c83735978e2bf859a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set bandwidth of the notch filter.  <a href="#af0a68017635e730c83735978e2bf859a">More...</a><br /></td></tr>
 <tr class="separator:af0a68017635e730c83735978e2bf859a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab052430d9c7810e7aa7f4172abeedd66"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="notch__filter_8h.html#ab052430d9c7810e7aa7f4172abeedd66">notch_filter_set_filter_frequency</a> (struct <a class="el" href="notch__filter_8h.html#structSecondOrderNotchFilter">SecondOrderNotchFilter</a> *filter, float <a class="el" href="stereocam_8c.html#a3687a13ca455728ecb41e28f9ce39d87">frequency</a>)</td></tr>
+<tr class="memitem:ab052430d9c7810e7aa7f4172abeedd66"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="notch__filter_8h.html#ab052430d9c7810e7aa7f4172abeedd66">notch_filter_set_filter_frequency</a> (struct <a class="el" href="notch__filter_8h.html#structSecondOrderNotchFilter">SecondOrderNotchFilter</a> *filter, float frequency)</td></tr>
 <tr class="memdesc:ab052430d9c7810e7aa7f4172abeedd66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set notch filter frequency in Hz.  <a href="#ab052430d9c7810e7aa7f4172abeedd66">More...</a><br /></td></tr>
 <tr class="separator:ab052430d9c7810e7aa7f4172abeedd66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93e78a6198d2f1c1221c2a006e2b5dd7"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="notch__filter_8h.html#a93e78a6198d2f1c1221c2a006e2b5dd7">notch_filter_update</a> (struct <a class="el" href="notch__filter_8h.html#structSecondOrderNotchFilter">SecondOrderNotchFilter</a> *filter, <a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> *input_signal, <a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> *output_signal)</td></tr>
@@ -470,7 +470,7 @@ yn2</td>
 
 <p>Definition at line <a class="el" href="notch__filter_8h_source.html#l00046">46</a> of file <a class="el" href="notch__filter_8h_source.html">notch_filter.h</a>.</p>
 
-<p>References <a class="el" href="stereocam_8c_source.html#l00048">frequency</a>, and <a class="el" href="notch__filter_8h_source.html#l00033">SecondOrderNotchFilter::Ts</a>.</p>
+<p>References <a class="el" href="notch__filter_8h_source.html#l00033">SecondOrderNotchFilter::Ts</a>.</p>
 
 <p>Referenced by <a class="el" href="notch__filter_8h_source.html#l00101">notch_filter_init()</a>.</p>
 
@@ -560,7 +560,7 @@ yn2</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_1444106569909aede49a887d28257b90.html">filters</a></li><li class="navelem"><a class="el" href="notch__filter_8h.html">notch_filter.h</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:01:44 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:02:06 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

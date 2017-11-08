@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -174,8 +174,8 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a8c3f1e1037120b161a559b5228a08b6f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nav__cube_8h.html#a8c3f1e1037120b161a559b5228a08b6f">nav_cube_setup</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> turb, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> tb, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> te)</td></tr>
-<tr class="separator:a8c3f1e1037120b161a559b5228a08b6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a2a2c79a078dfe8c314e3505a31e0b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nav__cube_8h.html#a8a2a2c79a078dfe8c314e3505a31e0b2">nav_cube_setup</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> turb, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> tb, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> te)</td></tr>
+<tr class="separator:a8a2a2c79a078dfe8c314e3505a31e0b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23cc3e8c63a992b5f8ab9ea8c1d026c5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nav__cube_8h.html#a23cc3e8c63a992b5f8ab9ea8c1d026c5">nav_cube_run</a> (<a class="el" href="types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> j, <a class="el" href="types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> i, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> dest_b, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> dest_e, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> src_b, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> src_e)</td></tr>
 <tr class="separator:a23cc3e8c63a992b5f8ab9ea8c1d026c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -604,18 +604,18 @@ size of the cube. <p>x: perpendicular to flight dir, y: in flight dir, z: height
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="nav__cube_8c_source.html#l00144">144</a> of file <a class="el" href="nav__cube_8c_source.html">nav_cube.c</a>.</p>
+<p>Definition at line <a class="el" href="nav__cube_8c_source.html#l00142">142</a> of file <a class="el" href="nav__cube_8c_source.html">nav_cube.c</a>.</p>
 
 <p>References <a class="el" href="common__nav_8h_source.html#l00042">point::a</a>, <a class="el" href="nav__cube_8h_source.html#l00115">NavCube::grid_z</a>, <a class="el" href="common__nav_8c_source.html#l00040">ground_alt</a>, <a class="el" href="nav__cube_8c_source.html#l00037">nav_cube</a>, <a class="el" href="nav__cube_8h_source.html#l00119">NavCube::nline_x</a>, <a class="el" href="nav__cube_8h_source.html#l00120">NavCube::nline_z</a>, <a class="el" href="common__nav_8c_source.html#l00038">waypoints</a>, <a class="el" href="common__nav_8h_source.html#l00040">point::x</a>, and <a class="el" href="common__nav_8h_source.html#l00041">point::y</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a8c3f1e1037120b161a559b5228a08b6f"></a>
+<a class="anchor" id="a8a2a2c79a078dfe8c314e3505a31e0b2"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool nav_cube_setup </td>
+          <td class="memname">void nav_cube_setup </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
           <td class="paramname"><em>turb</em>, </td>
@@ -659,7 +659,7 @@ size of the cube. <p>x: perpendicular to flight dir, y: in flight dir, z: height
 
 <p>Definition at line <a class="el" href="nav__cube_8c_source.html#l00037">37</a> of file <a class="el" href="nav__cube_8c_source.html">nav_cube.c</a>.</p>
 
-<p>Referenced by <a class="el" href="nav__cube_8c_source.html#l00144">nav_cube_run()</a>, and <a class="el" href="nav__cube_8c_source.html#l00039">nav_cube_setup()</a>.</p>
+<p>Referenced by <a class="el" href="nav__cube_8c_source.html#l00142">nav_cube_run()</a>, and <a class="el" href="nav__cube_8c_source.html#l00039">nav_cube_setup()</a>.</p>
 
 </div>
 </div>
@@ -669,7 +669,7 @@ size of the cube. <p>x: perpendicular to flight dir, y: in flight dir, z: height
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_984e899df90dd104b2eabcdbb76ec71f.html">nav</a></li><li class="navelem"><a class="el" href="nav__cube_8h.html">nav_cube.h</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:02:02 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:02:30 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -2,6 +2,7 @@ var apogee_2chibios_2v1_80_2mcuconf_8h =
 [
     [ "SDLOG_ALL_BUFFERS_SIZE", "apogee_2chibios_2v1_80_2mcuconf_8h.html#abf3ea4f6b58f67f72d53c6f7e35d76f0", null ],
     [ "SDLOG_MAX_MESSAGE_LEN", "apogee_2chibios_2v1_80_2mcuconf_8h.html#a44f10bdd155d7e6d76a21b00bc10e6a4", null ],
+    [ "SDLOG_NUM_FILES", "apogee_2chibios_2v1_80_2mcuconf_8h.html#abfa7a6086a22ce269b39b1a7cd3ca4a1", null ],
     [ "SDLOG_QUEUE_BUCKETS", "apogee_2chibios_2v1_80_2mcuconf_8h.html#ab773feef7e8e53c9239138d7c8ca6345", null ],
     [ "STM32_ADC_ADC1_DMA_IRQ_PRIORITY", "apogee_2chibios_2v1_80_2mcuconf_8h.html#a19080c8c395ae24df995fa57a2291465", null ],
     [ "STM32_ADC_ADC1_DMA_PRIORITY", "apogee_2chibios_2v1_80_2mcuconf_8h.html#ad19de93466026d8b03a895cae792bce9", null ],
@@ -225,6 +226,5 @@ var apogee_2chibios_2v1_80_2mcuconf_8h =
     [ "STM32_USB_OTGFIFO_FILL_BASEPRI", "apogee_2chibios_2v1_80_2mcuconf_8h.html#a9ccd82d55af1633658db54858378c277", null ],
     [ "STM32_USB_USE_OTG1", "apogee_2chibios_2v1_80_2mcuconf_8h.html#ac7d6b8123d2eacf524927fc68f70baa1", null ],
     [ "STM32_USB_USE_OTG2", "apogee_2chibios_2v1_80_2mcuconf_8h.html#a56a0c40fe1260ca2265cc01d42668ca7", null ],
-    [ "STM32_USE_REVISION_A_FIX", "apogee_2chibios_2v1_80_2mcuconf_8h.html#ac1e6c000166aa17097273030c190e27b", null ],
     [ "STM32F4xx_MCUCONF", "apogee_2chibios_2v1_80_2mcuconf_8h.html#a6c41ac9534659a9a1d50d6772bdb7c91", null ]
 ];

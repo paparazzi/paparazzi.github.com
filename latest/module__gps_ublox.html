@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -188,7 +188,7 @@ Raw gps_ublox.xml file:</h2>
 <div class="line">  &lt;init fun=&quot;gps_ubx_init()&quot;/&gt;</div>
 <div class="line">  &lt;periodic fun=&quot;gps_ubx_periodic_check()&quot; freq=&quot;1.&quot; autorun=&quot;TRUE&quot;/&gt;</div>
 <div class="line">  &lt;event fun=&quot;gps_ubx_event()&quot;/&gt;</div>
-<div class="line">  &lt;makefile target=&quot;ap&quot;&gt;</div>
+<div class="line">  &lt;makefile target=&quot;ap|fbw&quot;&gt;</div>
 <div class="line">    &lt;configure name=&quot;UBX_GPS_PORT&quot; default=&quot;$(GPS_PORT)&quot; case=&quot;upper|lower&quot;/&gt;</div>
 <div class="line">    &lt;configure name=&quot;UBX_GPS_BAUD&quot; default=&quot;$(GPS_BAUD)&quot;/&gt;</div>
 <div class="line"></div>
@@ -201,17 +201,20 @@ Raw gps_ublox.xml file:</h2>
 <div class="line">      ifdef SECONDARY_GPS</div>
 <div class="line">      ifneq (,$(findstring $(SECONDARY_GPS), ublox))</div>
 <div class="line">      # this is the secondary GPS</div>
-<div class="line">      ap.CFLAGS += -DGPS_SECONDARY_TYPE_H=\&quot;subsystems/gps/gps_ubx.h\&quot;</div>
-<div class="line">      ap.CFLAGS += -DSECONDARY_GPS=GPS_UBX</div>
+<div class="line">      $(TARGET).CFLAGS += -DGPS_SECONDARY_TYPE_H=\&quot;subsystems/gps/gps_ubx.h\&quot;</div>
+<div class="line">      $(TARGET).CFLAGS += -DSECONDARY_GPS=GPS_UBX</div>
 <div class="line">      else</div>
-<div class="line">      ap.CFLAGS += -DGPS_TYPE_H=\&quot;subsystems/gps/gps_ubx.h\&quot;</div>
-<div class="line">      ap.CFLAGS += -DPRIMARY_GPS=GPS_UBX</div>
+<div class="line">      $(TARGET).CFLAGS += -DGPS_TYPE_H=\&quot;subsystems/gps/gps_ubx.h\&quot;</div>
+<div class="line">      $(TARGET).CFLAGS += -DPRIMARY_GPS=GPS_UBX</div>
 <div class="line">      endif</div>
 <div class="line">      else</div>
 <div class="line">      # plain old single GPS usage</div>
-<div class="line">      ap.CFLAGS += -DGPS_TYPE_H=\&quot;subsystems/gps/gps_ubx.h\&quot;</div>
+<div class="line">      $(TARGET).CFLAGS += -DGPS_TYPE_H=\&quot;subsystems/gps/gps_ubx.h\&quot;</div>
 <div class="line">      endif</div>
 <div class="line">    &lt;/raw&gt;</div>
+<div class="line">  &lt;/makefile&gt;</div>
+<div class="line">  &lt;makefile target=&quot;fbw&quot;&gt;</div>
+<div class="line">    &lt;define name=&quot;USE_GPS&quot;/&gt;</div>
 <div class="line">  &lt;/makefile&gt;</div>
 <div class="line">&lt;/module&gt;</div>
 <div class="line"></div>
@@ -221,7 +224,7 @@ Raw gps_ublox.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:02:18 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:02:46 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

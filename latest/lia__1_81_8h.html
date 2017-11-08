@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -242,7 +242,7 @@ Macros</h2></td></tr>
 <tr class="separator:a77f96756967cdac7e3fc59fda8933f36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa85d3ec12dfcdd90bc965435b500b642"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lia__1_81_8h.html#aa85d3ec12dfcdd90bc965435b500b642">LED_12_AFIO_REMAP</a>&#160;&#160;&#160;((void)0)</td></tr>
 <tr class="separator:aa85d3ec12dfcdd90bc965435b500b642"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7699f41fbe105c8f5061cc48a5f6307"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lia__1_81_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">DEFAULT_ACTUATORS</a>&#160;&#160;&#160;&quot;subsystems/actuators/actuators_pwm.h&quot;</td></tr>
+<tr class="memitem:aa7699f41fbe105c8f5061cc48a5f6307"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lia__1_81_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">DEFAULT_ACTUATORS</a>&#160;&#160;&#160;&quot;subsystems/actuators/<a class="el" href="UKF__Wind__Estimator_8c.html#a1b540e52aff26922bc43ff126fa35270">actuators_pwm.h</a>&quot;</td></tr>
 <tr class="separator:aa7699f41fbe105c8f5061cc48a5f6307"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fc5f96f074d833b909fd75c92b7d2d0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lia__1_81_8h.html#a3fc5f96f074d833b909fd75c92b7d2d0">ActuatorDefaultSet</a>(_x, _y)&#160;&#160;&#160;<a class="el" href="stm32_2subsystems_2actuators_2actuators__pwm__arch_8h.html#a3e02a20951a8d18ade2922fd0c3fac1f">ActuatorPwmSet</a>(_x,_y)</td></tr>
 <tr class="separator:a3fc5f96f074d833b909fd75c92b7d2d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -252,7 +252,7 @@ Macros</h2></td></tr>
 <tr class="separator:a0ceadf6a913477832e04b0cb7cd17210"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94fa241ceca04635f282e09bdd829f5f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lia__1_81_8h.html#a94fa241ceca04635f282e09bdd829f5f">DefaultVoltageOfAdc</a>(adc)&#160;&#160;&#160;(0.0045*adc)</td></tr>
 <tr class="separator:a94fa241ceca04635f282e09bdd829f5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f7278cf218a92fa0a1514dea823cd9d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lia__1_81_8h.html#a3f7278cf218a92fa0a1514dea823cd9d">USE_BARO_BOARD</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memitem:a3f7278cf218a92fa0a1514dea823cd9d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lia__1_81_8h.html#a3f7278cf218a92fa0a1514dea823cd9d">USE_BARO_BOARD</a>&#160;&#160;&#160;1</td></tr>
 <tr class="separator:a3f7278cf218a92fa0a1514dea823cd9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -351,7 +351,7 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define DEFAULT_ACTUATORS&#160;&#160;&#160;&quot;subsystems/actuators/actuators_pwm.h&quot;</td>
+          <td class="memname">#define DEFAULT_ACTUATORS&#160;&#160;&#160;&quot;subsystems/actuators/<a class="el" href="UKF__Wind__Estimator_8c.html#a1b540e52aff26922bc43ff126fa35270">actuators_pwm.h</a>&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1101,7 +1101,7 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define USE_BARO_BOARD&#160;&#160;&#160;0</td>
+          <td class="memname">#define USE_BARO_BOARD&#160;&#160;&#160;1</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1186,7 +1186,7 @@ Macros</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e030268cd18297cf6282390f76bfcf7f.html">boards</a></li><li class="navelem"><a class="el" href="lia__1_81_8h.html">lia_1.1.h</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:01:43 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:02:04 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

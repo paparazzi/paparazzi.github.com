@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -119,16 +119,17 @@ Example for airframe file</h1>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;  &lt;define name=&quot;AHRS_MAG_UPDATE_ALL_AXES&quot; value=&quot;FALSE|TRUE&quot; /&gt;</div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;  &lt;define name=&quot;AHRS_USE_GPS_HEADING&quot; value=&quot;FALSE|TRUE&quot; /&gt;</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;  &lt;define name=&quot;AHRS_GRAVITY_UPDATE_COORDINATED_TURN&quot; value=&quot;FALSE|TRUE&quot; /&gt;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;  &lt;define name=&quot;AHRS_PROPAGATE_LOW_PASS_RATES&quot; /&gt;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;  &lt;define name=&quot;AHRS_BIAS_UPDATE_HEADING_THRESHOLD&quot; value=&quot;5.0&quot; /&gt;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;  &lt;define name=&quot;AHRS_HEADING_UPDATE_GPS_MIN_SPEED&quot; value=&quot;5.0&quot; /&gt;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  &lt;define name=&quot;AHRS_GRAVITY_HEURISTIC_FACTOR&quot; value=&quot;30&quot; /&gt;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  &lt;define name=&quot;AHRS_ICQ_IMU_ID&quot; value=&quot;ABI_BROADCAST&quot; /&gt;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  &lt;define name=&quot;AHRS_ICQ_MAG_ID&quot; value=&quot;ABI_BROADCAST&quot; /&gt;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  &lt;define name=&quot;AHRS_ICQ_GPS_ID&quot; value=&quot;GPS_MULTI_ID&quot; /&gt;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  &lt;configure name=&quot;USE_MAGNETOMETER&quot; value=&quot;TRUE&quot; /&gt;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  &lt;configure name=&quot;AHRS_ALIGNER_LED&quot; value=&quot;1&quot; /&gt;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;&lt;/module&gt;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;  &lt;define name=&quot;AHRS_GPS_SPEED_IN_NEGATIVE_Z_DIRECTION&quot; value=&quot;FALSE|TRUE&quot; /&gt;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;  &lt;define name=&quot;AHRS_PROPAGATE_LOW_PASS_RATES&quot; /&gt;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;  &lt;define name=&quot;AHRS_BIAS_UPDATE_HEADING_THRESHOLD&quot; value=&quot;5.0&quot; /&gt;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  &lt;define name=&quot;AHRS_HEADING_UPDATE_GPS_MIN_SPEED&quot; value=&quot;5.0&quot; /&gt;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  &lt;define name=&quot;AHRS_GRAVITY_HEURISTIC_FACTOR&quot; value=&quot;30&quot; /&gt;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  &lt;define name=&quot;AHRS_ICQ_IMU_ID&quot; value=&quot;ABI_BROADCAST&quot; /&gt;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  &lt;define name=&quot;AHRS_ICQ_MAG_ID&quot; value=&quot;ABI_BROADCAST&quot; /&gt;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  &lt;define name=&quot;AHRS_ICQ_GPS_ID&quot; value=&quot;GPS_MULTI_ID&quot; /&gt;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  &lt;configure name=&quot;USE_MAGNETOMETER&quot; value=&quot;TRUE&quot; /&gt;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  &lt;configure name=&quot;AHRS_ALIGNER_LED&quot; value=&quot;1&quot; /&gt;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;&lt;/module&gt;</div>
 </div><!-- fragment --> <h1><a class="anchor" id="configuration__ahrs_int_cmpl_quat"></a>
 Module configuration options</h1>
 <h2><a class="anchor" id="configure"></a>
@@ -148,6 +149,8 @@ Define Options</h2>
  Description: Use GPS course to update heading</li>
 <li><b>name:</b> <code>AHRS_GRAVITY_UPDATE_COORDINATED_TURN</code> <b>value:</b> <em>FALSE|TRUE</em> <br />
  Description: Compensation of centrifugal force via GPS speed (to fly in circles with a fixedwing)</li>
+<li><b>name:</b> <code>AHRS_GPS_SPEED_IN_NEGATIVE_Z_DIRECTION</code> <b>value:</b> <em>FALSE|TRUE</em> <br />
+ Description: AHRS_GRAVITY_UPDATE_COORDINATED_TURN assumes the GPS speed is in the X axis direction. Quadshot, DelftaCopter and other hybrids can have the GPS speed in the negative Z direction</li>
 <li><b>name:</b> <code>AHRS_PROPAGATE_LOW_PASS_RATES</code> <b>value:</b> <em>None</em> <br />
  Description: apply a low pass filter on rotational velocity</li>
 <li><b>name:</b> <code>AHRS_BIAS_UPDATE_HEADING_THRESHOLD</code> <b>value:</b> <em>5.0</em> <br />
@@ -213,6 +216,7 @@ Raw ahrs_int_cmpl_quat.xml file:</h2>
 <div class="line">    &lt;define name=&quot;AHRS_MAG_UPDATE_ALL_AXES&quot; value=&quot;FALSE|TRUE&quot; description=&quot;Use magnetometer to update all axes and not only yaw&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;AHRS_USE_GPS_HEADING&quot; value=&quot;FALSE|TRUE&quot; description=&quot;Use GPS course to update heading&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;AHRS_GRAVITY_UPDATE_COORDINATED_TURN&quot; value=&quot;FALSE|TRUE&quot; description=&quot;Compensation of centrifugal force via GPS speed (to fly in circles with a fixedwing)&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;AHRS_GPS_SPEED_IN_NEGATIVE_Z_DIRECTION&quot; value=&quot;FALSE|TRUE&quot; description=&quot;AHRS_GRAVITY_UPDATE_COORDINATED_TURN assumes the GPS speed is in the X axis direction. Quadshot, DelftaCopter and other hybrids can have the GPS speed in the negative Z direction&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;AHRS_PROPAGATE_LOW_PASS_RATES&quot; description=&quot;apply a low pass filter on rotational velocity&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;AHRS_BIAS_UPDATE_HEADING_THRESHOLD&quot; value=&quot;5.0&quot; description=&quot;don&#39;t update gyro bias if heading deviation is above this threshold in degrees&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;AHRS_HEADING_UPDATE_GPS_MIN_SPEED&quot; value=&quot;5.0&quot; description=&quot;Don&#39;t update heading from GPS course if GPS ground speed is below is this threshold in m/s&quot;/&gt;</div>
@@ -246,10 +250,9 @@ Raw ahrs_int_cmpl_quat.xml file:</h2>
 <div class="line">  &lt;/makefile&gt;</div>
 <div class="line">  &lt;makefile target=&quot;!sim|fbw&quot;&gt;</div>
 <div class="line">    &lt;configure name=&quot;USE_MAGNETOMETER&quot; default=&quot;1&quot;/&gt;</div>
-<div class="line">    &lt;configure name=&quot;AHRS_ALIGNER_LED&quot; default=&quot;none&quot;/&gt;</div>
 <div class="line"></div>
 <div class="line">    &lt;define name=&quot;USE_MAGNETOMETER&quot; cond=&quot;ifeq (,$(findstring $(USE_MAGNETOMETER),0 FALSE))&quot;/&gt;</div>
-<div class="line">    &lt;define name=&quot;AHRS_ALINGER_LED&quot; value=&quot;$(AHRS_ALIGNER_LED)&quot; cond=&quot;ifneq ($(AHRS_ALIGNER_LED),none)&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;AHRS_ALIGNER_LED&quot; value=&quot;$(AHRS_ALIGNER_LED)&quot; cond=&quot;ifneq ($(AHRS_ALIGNER_LED),none)&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;USE_AHRS&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;USE_AHRS_ALIGNER&quot;/&gt;</div>
 <div class="line"></div>
@@ -281,7 +284,7 @@ Raw ahrs_int_cmpl_quat.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:02:17 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:02:46 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

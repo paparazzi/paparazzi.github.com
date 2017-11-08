@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -155,19 +155,21 @@ $(document).ready(function(){initNavTree('globals_defs_b.html','');});
 , <a class="el" href="ins__float__invariant_8c.html#a111da81ae5883147168bbb8366377b10">ins_float_invariant.c</a>
 </li>
 <li>B100000
-: <a class="el" href="lpc21_2mcu__periph_2uart__arch_8h.html#a82fce4c6435c1524dd934d40c26330bf">uart_arch.h</a>
+: <a class="el" href="linux_2mcu__periph_2uart__arch_8h.html#a82fce4c6435c1524dd934d40c26330bf">uart_arch.h</a>
+, <a class="el" href="serial__port_8c.html#a82fce4c6435c1524dd934d40c26330bf">serial_port.c</a>
+, <a class="el" href="chibios_2mcu__periph_2uart__arch_8h.html#a82fce4c6435c1524dd934d40c26330bf">uart_arch.h</a>
 </li>
 <li>B115200
-: <a class="el" href="stm32_2mcu__periph_2uart__arch_8h.html#aef3a1340ea0fba1573691a9e74a43d11">uart_arch.h</a>
+: <a class="el" href="chibios_2mcu__periph_2uart__arch_8h.html#aef3a1340ea0fba1573691a9e74a43d11">uart_arch.h</a>
 </li>
 <li>B1200
 : <a class="el" href="chibios_2mcu__periph_2uart__arch_8h.html#a36fdf3b468aa37c932c5feb0f3a9d7d7">uart_arch.h</a>
 </li>
 <li>B1500000
-: <a class="el" href="chibios_2mcu__periph_2uart__arch_8h.html#a9ea600f5048d4b2b1dfa1249521701bd">uart_arch.h</a>
+: <a class="el" href="stm32_2mcu__periph_2uart__arch_8h.html#a9ea600f5048d4b2b1dfa1249521701bd">uart_arch.h</a>
 </li>
 <li>B19200
-: <a class="el" href="stm32_2mcu__periph_2uart__arch_8h.html#ae9baab0dacc8d414681e1cb5c354a058">uart_arch.h</a>
+: <a class="el" href="chibios_2mcu__periph_2uart__arch_8h.html#ae9baab0dacc8d414681e1cb5c354a058">uart_arch.h</a>
 </li>
 <li>B230400
 : <a class="el" href="chibios_2mcu__periph_2uart__arch_8h.html#aa0a8a3b09c593c7be5bfbbeb09f14d76">uart_arch.h</a>
@@ -398,7 +400,7 @@ $(document).ready(function(){initNavTree('globals_defs_b.html','');});
 : <a class="el" href="abi__sender__ids_8h.html#a2d896d0e33c22364c608d78c7ed335a0">abi_sender_ids.h</a>
 </li>
 <li>BARO_PERIODIC_FREQUENCY
-: <a class="el" href="rotorcraft_2main_8c.html#a124e8be962a54f3f7a0957fa34ec5876">main.c</a>
+: <a class="el" href="rotorcraft_2main__ap_8c.html#a124e8be962a54f3f7a0957fa34ec5876">main_ap.c</a>
 </li>
 <li>BARO_SCP_IDLE
 : <a class="el" href="baro__scp__i2c_8h.html#a4a5962e918a5fc89f6f1092e261095d6">baro_scp_i2c.h</a>
@@ -434,16 +436,13 @@ $(document).ready(function(){initNavTree('globals_defs_b.html','');});
 : <a class="el" href="baro__ets_8h.html#a8593684bb1be9bea4a2541091926e973">baro_ets.h</a>
 </li>
 <li>BaroEvent
-: <a class="el" href="krooz_2baro__board_8h.html#a430d0a6a2030a6b9f31c8a1a04846781">baro_board.h</a>
+: <a class="el" href="apogee_2baro__board_8h.html#a430d0a6a2030a6b9f31c8a1a04846781">baro_board.h</a>
 </li>
 <li>BaroHcaEvent
 : <a class="el" href="baro__hca_8h.html#af603ee116d61a972761b23bd5f947644">baro_hca.h</a>
 </li>
 <li>BaroMpl3115Update
 : <a class="el" href="baro__mpl3115_8h.html#a25b2a4f3b601993f607ee8912810b3b6">baro_mpl3115.h</a>
-</li>
-<li>BASELINE_STEREO_MM
-: <a class="el" href="stereocam_8c.html#a170af810fb4c65c860b26a69005db51d">stereocam.c</a>
 </li>
 <li>BAT_CHECKER_DELAY
 : <a class="el" href="electrical_8c.html#a122d018ddd148a99f19e44723b6c7c49">electrical.c</a>
@@ -454,28 +453,74 @@ $(document).ready(function(){initNavTree('globals_defs_b.html','');});
 <li>BAT_CHECKER_GPIO_ON
 : <a class="el" href="bat__checker_8c.html#aa6bb70d0af4d6d039ce8cd3002c090a6">bat_checker.c</a>
 </li>
+<li>BATTERY_CELLS_NB
+: <a class="el" href="battery__monitor_8h.html#a52a791369967cd1e25e524740f51e2d9">battery_monitor.h</a>
+</li>
+<li>BATTERY_MONITOR_BIT_RES
+: <a class="el" href="battery__monitor_8h.html#a3a678cafb01f477c7360da2ccaa9ef36">battery_monitor.h</a>
+</li>
+<li>BATTERY_MONITOR_BUS_CURRENT_CHANNEL
+: <a class="el" href="battery__monitor_8h.html#a489ae835154cbf46966bd0048ccc9e5b">battery_monitor.h</a>
+</li>
+<li>BATTERY_MONITOR_BUS_VOLTAGE_CHANNEL
+: <a class="el" href="battery__monitor_8h.html#a1cfd0986c901fb7aef2b20abbfb2d8e9">battery_monitor.h</a>
+</li>
+<li>BATTERY_MONITOR_CURRENT_OFFSET
+: <a class="el" href="battery__monitor_8h.html#a5f95e800bad5a87cecabab7e887d9bac">battery_monitor.h</a>
+</li>
+<li>BATTERY_MONITOR_CURRENT_SENSITIVITY
+: <a class="el" href="battery__monitor_8h.html#a509a78692f51a99f7df6c4625310da4d">battery_monitor.h</a>
+</li>
+<li>BATTERY_MONITOR_TEMP_OFFSET
+: <a class="el" href="battery__monitor_8h.html#a6aa20a577a61328b6ea02f796b0c115b">battery_monitor.h</a>
+</li>
+<li>BATTERY_MONITOR_TEMP_SENSITIVITY
+: <a class="el" href="battery__monitor_8h.html#a84e49ac68e876e206bbbc3251c790868">battery_monitor.h</a>
+</li>
+<li>BATTERY_MONITOR_VREF
+: <a class="el" href="battery__monitor_8h.html#a5b44199c4bd8f1526ddf9d25744682df">battery_monitor.h</a>
+</li>
+<li>BATTERY_MONITOR_VREF_MULT
+: <a class="el" href="battery__monitor_8h.html#ac1324bcc8a389ea0e3d9390e118c2c4c">battery_monitor.h</a>
+</li>
+<li>BAYERSTATS_STATX
+: <a class="el" href="libisp_8h.html#ad11ca5e1b8902cd912811f930f0b6b61">libisp.h</a>
+</li>
+<li>BAYERSTATS_STATY
+: <a class="el" href="libisp_8h.html#aacc06d63590a670cb880d5191b41e70b">libisp.h</a>
+</li>
 <li>BB_MS5611_SLAVE_ADDR
 : <a class="el" href="baro__board__ms5611__i2c_8c.html#abd7fdff82b87848ef3a165026d497cd4">baro_board_ms5611_i2c.c</a>
 </li>
 <li>BB_MS5611_TYPE_MS5607
-: <a class="el" href="baro__board__ms5611__i2c_8c.html#a4ff576c8f1aeccfcbe960067683f487b">baro_board_ms5611_i2c.c</a>
+: <a class="el" href="disco_2baro__board_8h.html#a4ff576c8f1aeccfcbe960067683f487b">baro_board.h</a>
+, <a class="el" href="baro__board__ms5611__i2c_8c.html#a4ff576c8f1aeccfcbe960067683f487b">baro_board_ms5611_i2c.c</a>
 , <a class="el" href="baro__board__ms5611__spi_8c.html#a4ff576c8f1aeccfcbe960067683f487b">baro_board_ms5611_spi.c</a>
 , <a class="el" href="bebop_2baro__board_8h.html#a4ff576c8f1aeccfcbe960067683f487b">baro_board.h</a>
 </li>
+<li>be32toh
+: <a class="el" href="kremlib_8h.html#a6acac399720b3a57d9050420aa0aac41">kremlib.h</a>
+</li>
+<li>be64toh
+: <a class="el" href="kremlib_8h.html#af94eb043f5be14b4f260fb9b4c89ca2e">kremlib.h</a>
+</li>
 <li>BEBOP_ACCEL_RANGE
-: <a class="el" href="imu__bebop_8c.html#a70a016cc48bdbc25cbe6efbf5c26b7d1">imu_bebop.c</a>
+: <a class="el" href="imu__bebop_8h.html#a70a016cc48bdbc25cbe6efbf5c26b7d1">imu_bebop.h</a>
 </li>
-<li>BEBOP_FRONT_CAMERA_HEIGHT
-: <a class="el" href="bebop__front__camera_8c.html#a0095ed049c3782575c71926b2ec69857">bebop_front_camera.c</a>
+<li>BEBOP_AUTO_EXPOSURE
+: <a class="el" href="bebop__ae__awb_8c.html#a22ccf03b85fe69f13df21a4c7b1006dc">bebop_ae_awb.c</a>
 </li>
-<li>BEBOP_FRONT_CAMERA_SHOT_PATH
-: <a class="el" href="bebop__front__camera_8c.html#aafdc987a9fca16542b96e7253583f5cd">bebop_front_camera.c</a>
+<li>BEBOP_AUTO_WHITE_BALANCE
+: <a class="el" href="bebop__ae__awb_8c.html#a63d09bf64e982cb48cc90e09a1a8c42b">bebop_ae_awb.c</a>
 </li>
-<li>BEBOP_FRONT_CAMERA_WIDTH
-: <a class="el" href="bebop__front__camera_8c.html#a853f5c14c20dd212d35af307c989936a">bebop_front_camera.c</a>
+<li>BEBOP_AWB_MAX_GAIN
+: <a class="el" href="bebop__ae__awb_8c.html#a1962415dd14a4079fc9ebcc2f26b61fc">bebop_ae_awb.c</a>
+</li>
+<li>BEBOP_AWB_MIN_GAIN
+: <a class="el" href="bebop__ae__awb_8c.html#a3960593410df04cc79e7eff7706c77a3">bebop_ae_awb.c</a>
 </li>
 <li>BEBOP_GYRO_RANGE
-: <a class="el" href="imu__bebop_8c.html#aa841c1a66da7ff3edb957875907ddc07">imu_bebop.c</a>
+: <a class="el" href="imu__bebop_8h.html#aa841c1a66da7ff3edb957875907ddc07">imu_bebop.h</a>
 </li>
 <li>BEBOP_MAG_I2C_DEV
 : <a class="el" href="imu__bebop_8c.html#a565995deb417f4592913f9647af3dc4a">imu_bebop.c</a>
@@ -512,6 +557,9 @@ $(document).ready(function(){initNavTree('globals_defs_b.html','');});
 </li>
 <li>BLINK_MIN
 : <a class="el" href="usb__tunnel_8c.html#ad8468070a9db37b05ec8c5cadfbfc733">usb_tunnel.c</a>
+</li>
+<li>BLOB_LOCATOR_FPS
+: <a class="el" href="cv__blob__locator_8c.html#a8b645bd36faa1b2560ee203fd6858576">cv_blob_locator.c</a>
 </li>
 <li>Block
 : <a class="el" href="common__flight__plan_8h.html#a3e749f8fe41a97ef62de0dd622dbe3e9">common_flight_plan.h</a>
@@ -624,8 +672,15 @@ $(document).ready(function(){initNavTree('globals_defs_b.html','');});
 <li>BOARD_BEBOP
 : <a class="el" href="bebop_8h.html#a318522acd53f9093b0b51553ac2cd96c">bebop.h</a>
 </li>
+<li>BOARD_CHIMERA
+: <a class="el" href="chimera_2chibios_2v1_80_2board_8h.html#a380bee891ec2d53ab42ee637b0d9aa47">board.h</a>
+, <a class="el" href="chimera_8h.html#a380bee891ec2d53ab42ee637b0d9aa47">chimera.h</a>
+</li>
 <li>BOARD_CJMCU
 : <a class="el" href="cjmcu_8h.html#ac0317b07ed4e221518a953468e8595df">cjmcu.h</a>
+</li>
+<li>BOARD_DISCO
+: <a class="el" href="disco_8h.html#a0bd4697e31b2ceddbb7f20f7c3928f77">disco.h</a>
 </li>
 <li>BOARD_ELLE0
 : <a class="el" href="elle0__common_8h.html#a090abba46e4f2f928311741c330230a3">elle0_common.h</a>
@@ -635,6 +690,9 @@ $(document).ready(function(){initNavTree('globals_defs_b.html','');});
 </li>
 <li>BOARD_LIA
 : <a class="el" href="lia__1_81_8h.html#ab2f1a41d03451c3a9d4882f7e791db7c">lia_1.1.h</a>
+</li>
+<li>BOARD_LIA_STM32F105RC
+: <a class="el" href="lia_2chibios_2v1_81_2board_8h.html#aea0fdd84de1bf0f6a332cb07eac8e052">board.h</a>
 </li>
 <li>BOARD_LISA_L
 : <a class="el" href="lisa__l__1_80_8h.html#a5dd43bf9103c4a464e35816ecda290ac">lisa_l_1.0.h</a>
@@ -651,7 +709,7 @@ $(document).ready(function(){initNavTree('globals_defs_b.html','');});
 : <a class="el" href="lisa__s__1_80_8h.html#a09c38bb059efc5446b99a7160bb92254">lisa_s_1.0.h</a>
 </li>
 <li>BOARD_NAME
-: <a class="el" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a02581754b212d533d96cde56c8145c9b">board.h</a>
+: <a class="el" href="chimera_2chibios_2v1_80_2board_8h.html#a02581754b212d533d96cde56c8145c9b">board.h</a>
 </li>
 <li>BOARD_NAZE32
 : <a class="el" href="naze32__common_8h.html#aa154494d57f96a56b05a33d4af8ea132">naze32_common.h</a>
@@ -667,6 +725,10 @@ $(document).ready(function(){initNavTree('globals_defs_b.html','');});
 </li>
 <li>BOARD_PX4FMU_v2
 : <a class="el" href="px4fmu__2_84_8h.html#a1d9414f7945382146f40ebd4f406b373">px4fmu_2.4.h</a>
+, <a class="el" href="px4fmu_2chibios_2v2_84_2board_8h.html#a1d9414f7945382146f40ebd4f406b373">board.h</a>
+</li>
+<li>BOARD_PX4FMU_V4
+: <a class="el" href="px4fmu__4_80_8h.html#a726d74adb2ac8c58c975fb1ff6322ea1">px4fmu_4.0.h</a>
 </li>
 <li>BOARD_PX4IO
 : <a class="el" href="px4io__2_84_8h.html#af24802e171a70620b99d49b366dcb500">px4io_2.4.h</a>
@@ -677,11 +739,23 @@ $(document).ready(function(){initNavTree('globals_defs_b.html','');});
 <li>BOARD_ST_APOGEE
 : <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a8691cdd89bd658b2d24a3adbd4d61b59">board.h</a>
 </li>
+<li>BOARD_ST_STM32373C_XVERT
+: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#a0308d86678f4f22813b1071174530641">board.h</a>
+</li>
+<li>BOARD_ST_STM32F3_DISCOVERY
+: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a562f661426f4df26f62ddf1d9d799b21">board.h</a>
+</li>
+<li>BOARD_ST_STM32F4_ECU
+: <a class="el" href="vms__ecu_2chibios_2v1_80_2board_8h.html#a861760e8fe95d0e4f360d53c2956fdd9">board.h</a>
+</li>
 <li>BOARD_ST_STM32F4_LISA
 : <a class="el" href="lisa__mx_2chibios_2v2_81_2board_8h.html#ab07241acda4581e4445d8c3ed1903c4e">board.h</a>
 </li>
 <li>BOARD_STM32F4_DISCOVERY
 : <a class="el" href="stm32f4__discovery_8h.html#a31e89368715b7c18ef4f4dfb6cf5f0ba">stm32f4_discovery.h</a>
+</li>
+<li>BOARD_SWING
+: <a class="el" href="swing_8h.html#a76ebf5bbee85d331327408c3da20838a">swing.h</a>
 </li>
 <li>BOOZ_ANALOG_BARO_THRESHOLD
 : <a class="el" href="booz_2baro__board_8c.html#a67c9aca109fecabd8d15c3ac9cc8dae7">baro_board.c</a>
@@ -706,9 +780,6 @@ $(document).ready(function(){initNavTree('globals_defs_b.html','');});
 </li>
 <li>BOUND
 : <a class="el" href="lpc21_2subsystems_2settings__arch_8c.html#aa3d3687532e25854c63dca906abf1032">settings_arch.c</a>
-</li>
-<li>BRANDSPUNTSAFSTAND_STEREO
-: <a class="el" href="stereocam_8c.html#a856a2722693b2dbaa015e5e291bb5c67">stereocam.c</a>
 </li>
 <li>bswap_16
 : <a class="el" href="hmc5843_8c.html#ad409605fabe125b1d222acb94a3f480f">hmc5843.c</a>
@@ -779,7 +850,7 @@ $(document).ready(function(){initNavTree('globals_defs_b.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Oct 1 2016 14:02:46 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:03:17 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

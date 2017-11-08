@@ -13,10 +13,8 @@ var px4__flash_8c =
     [ "PROTO_LOAD_ADDRESS", "px4__flash_8c.html#adbcafe4f875584ae17185c5e00e47466", null ],
     [ "PROTO_OK", "px4__flash_8c.html#a995e6f9cd68af5b43ba60da0492cdde0", null ],
     [ "PROTO_PROG_MULTI", "px4__flash_8c.html#a66b8a8e2bebaa8695e17140cf8175a8a", null ],
-    [ "PX4IO_PORT", "px4__flash_8c.html#a7e5856d8368f8aec19b2e3f1668893be", null ],
     [ "px4flash_event", "px4__flash_8c.html#a5bbeb4ac8fb18641568992822ee3ba00", null ],
     [ "px4flash_init", "px4__flash_8c.html#aa33eada7e40b74bfe0461783b95b52c5", null ],
-    [ "px4iobl_tid", "px4__flash_8c.html#a4c18aacc94ac05beba6e21a245f58b0e", null ],
     [ "px4ioRebootTimeout", "px4__flash_8c.html#a8ec4db105e08788ed95ae45283a87771", null ],
     [ "setToBootloaderMode", "px4__flash_8c.html#ad8d5a1eb1c3be3671ba892b0ad62e94b", null ]
 ];

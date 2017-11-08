@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -299,7 +299,7 @@ vsupply</td>
 
 <p>Definition at line <a class="el" href="intermcu__ap_8h_source.html#l00044">44</a> of file <a class="el" href="intermcu__ap_8h_source.html">intermcu_ap.h</a>.</p>
 
-<p>Referenced by <a class="el" href="rotorcraft_2autopilot_8c_source.html#l00250">send_rotorcraft_rc()</a>.</p>
+<p>Referenced by <a class="el" href="rotorcraft_2main__fbw_8c_source.html#l00231">fbw_on_rc_frame()</a>, <a class="el" href="intermcu__fbw_8c_source.html#l00106">intermcu_on_rc_frame()</a>, and <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00159">send_rotorcraft_rc()</a>.</p>
 
 </div>
 </div>
@@ -388,11 +388,11 @@ vsupply</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="intermcu__ap_8c_source.html#l00109">109</a> of file <a class="el" href="intermcu__ap_8c_source.html">intermcu_ap.c</a>.</p>
+<p>Definition at line <a class="el" href="intermcu__ap_8c_source.html#l00129">129</a> of file <a class="el" href="intermcu__ap_8c_source.html">intermcu_ap.c</a>.</p>
 
-<p>References <a class="el" href="intermcu_8h_source.html#l00069">intermcu_t::device</a>, <a class="el" href="intermcu_8h_source.html#l00073">intermcu_t::enabled</a>, <a class="el" href="intermcu_8h_source.html#l00034">INTERMCU_AP</a>, and <a class="el" href="intermcu_8h_source.html#l00070">intermcu_t::transport</a>.</p>
+<p>References <a class="el" href="intermcu_8h_source.html#l00071">intermcu_t::device</a>, <a class="el" href="intermcu_8h_source.html#l00075">intermcu_t::enabled</a>, <a class="el" href="intermcu_8h_source.html#l00034">INTERMCU_AP</a>, and <a class="el" href="intermcu_8h_source.html#l00072">intermcu_t::transport</a>.</p>
 
-<p>Referenced by <a class="el" href="spektrum__soft__bind__ap_8c_source.html#l00033">spektrum_soft_bind_click()</a>.</p>
+<p>Referenced by <a class="el" href="spektrum__soft__bind__ap_8c_source.html#l00041">spektrum_soft_bind_click()</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -401,7 +401,7 @@ vsupply</td>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="intermcu__ap_8h_a609bd43c94c68e55513f2c65cf8447cd_icgraph.png" border="0" usemap="#intermcu__ap_8h_a609bd43c94c68e55513f2c65cf8447cd_icgraph" alt=""/></div>
 <map name="intermcu__ap_8h_a609bd43c94c68e55513f2c65cf8447cd_icgraph" id="intermcu__ap_8h_a609bd43c94c68e55513f2c65cf8447cd_icgraph">
-<area shape="rect" id="node2" href="spektrum__soft__bind__ap_8h.html#a51619bd929b3039334a26565e7c851c1" title="spektrum_soft_bind\l_click" alt="" coords="272,5,420,47"/></map>
+<area shape="rect" id="node2" href="spektrum__soft__bind__ap_8h.html#a889f76b35754b2bc328b5cf5ee10f731" title="spektrum_soft_bind\l_click" alt="" coords="272,5,420,47"/></map>
 </div>
 </p>
 
@@ -431,20 +431,31 @@ vsupply</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="intermcu__ap_8c_source.html#l00091">91</a> of file <a class="el" href="intermcu__ap_8c_source.html">intermcu_ap.c</a>.</p>
+<p>Definition at line <a class="el" href="intermcu__ap_8c_source.html#l00111">111</a> of file <a class="el" href="intermcu__ap_8c_source.html">intermcu_ap.c</a>.</p>
 
-<p>References <a class="el" href="rotorcraft_2autopilot_8c_source.html#l00076">autopilot_motors_on</a>, <a class="el" href="intermcu_8h_source.html#l00075">intermcu_t::cmd_status</a>, <a class="el" href="intermcu_8h_source.html#l00069">intermcu_t::device</a>, <a class="el" href="intermcu_8h_source.html#l00073">intermcu_t::enabled</a>, <a class="el" href="intermcu_8h_source.html#l00034">INTERMCU_AP</a>, <a class="el" href="intermcu_8h_source.html#l00058">INTERMCU_CMD_MOTORS_ON</a>, <a class="el" href="intermcu_8h_source.html#l00063">INTERMCU_SET_CMD_STATUS</a>, and <a class="el" href="intermcu_8h_source.html#l00070">intermcu_t::transport</a>.</p>
+<p>References <a class="el" href="autopilot_8c_source.html#l00207">autopilot_get_motors_on()</a>, <a class="el" href="intermcu_8h_source.html#l00077">intermcu_t::cmd_status</a>, <a class="el" href="intermcu_8h_source.html#l00071">intermcu_t::device</a>, <a class="el" href="intermcu_8h_source.html#l00075">intermcu_t::enabled</a>, <a class="el" href="intermcu_8h_source.html#l00034">INTERMCU_AP</a>, <a class="el" href="intermcu_8h_source.html#l00058">INTERMCU_CMD_MOTORS_ON</a>, <a class="el" href="intermcu_8h_source.html#l00065">INTERMCU_SET_CMD_STATUS</a>, and <a class="el" href="intermcu_8h_source.html#l00072">intermcu_t::transport</a>.</p>
 
-<p>Referenced by <a class="el" href="rotorcraft_2main_8c_source.html#l00259">main_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="rotorcraft_2main__ap_8c_source.html#l00235">main_periodic()</a>.</p>
 
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="intermcu__ap_8h_ac22ebae188091108a7882dfebceb1c6c_cgraph.png" border="0" usemap="#intermcu__ap_8h_ac22ebae188091108a7882dfebceb1c6c_cgraph" alt=""/></div>
+<map name="intermcu__ap_8h_ac22ebae188091108a7882dfebceb1c6c_cgraph" id="intermcu__ap_8h_ac22ebae188091108a7882dfebceb1c6c_cgraph">
+<area shape="rect" id="node2" href="autopilot_8c.html#a6b52f0f9cd2cbf420a77029513ea6f35" title="get motors status " alt="" coords="228,5,411,32"/></map>
+</div>
+</p>
+
+<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="intermcu__ap_8h_ac22ebae188091108a7882dfebceb1c6c_icgraph.png" border="0" usemap="#intermcu__ap_8h_ac22ebae188091108a7882dfebceb1c6c_icgraph" alt=""/></div>
 <map name="intermcu__ap_8h_ac22ebae188091108a7882dfebceb1c6c_icgraph" id="intermcu__ap_8h_ac22ebae188091108a7882dfebceb1c6c_icgraph">
-<area shape="rect" id="node2" href="rotorcraft_2main__fbw_8h.html#a4fee35a9ab2c517bde9f598c265222b0" title="main_periodic" alt="" coords="228,81,339,108"/><area shape="rect" id="node3" href="rotorcraft_2main__fbw_8h.html#acfa2a521a46d9beb8a3fa77bb0c9e407" title="handle_periodic_tasks" alt="" coords="387,81,549,108"/><area shape="rect" id="node4" href="fixedwing_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="655,5,710,32"/><area shape="rect" id="node5" href="nps__autopilot__fixedwing_8c.html#a12870aaa609d4860004be3cec4c8cf2a" title="nps_autopilot_run_step" alt="" coords="597,56,768,83"/><area shape="rect" id="node6" href="main__chibios_8c.html#a1bd1ec0fdc597d88ee659889cda25c0a" title="thd_ap" alt="" coords="649,107,716,133"/><area shape="rect" id="node8" href="main__chibios_8c.html#a4042bcab9578175e00c82adcc2b251f8" title="thd_fbw" alt="" coords="647,157,718,184"/><area shape="rect" id="node7" href="main__chibios_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Main function. " alt="" coords="816,132,871,159"/></map>
+<area shape="rect" id="node2" href="rotorcraft_2main__fbw_8h.html#a81249e4ef19b8766982a6fe272d89bae" title="main_periodic" alt="" coords="228,5,339,32"/><area shape="rect" id="node3" href="rotorcraft_2main__fbw_8h.html#ab79bb049ce85bf2ed3a75c6b12c02bcb" title="handle_periodic_tasks" alt="" coords="387,5,549,32"/></map>
 </div>
 </p>
 
@@ -464,17 +475,17 @@ vsupply</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="intermcu__ap_8c_source.html#l00085">85</a> of file <a class="el" href="intermcu__ap_8c_source.html">intermcu_ap.c</a>.</p>
+<p>Definition at line <a class="el" href="intermcu__ap_8c_source.html#l00105">105</a> of file <a class="el" href="intermcu__ap_8c_source.html">intermcu_ap.c</a>.</p>
 
-<p>References <a class="el" href="intermcu_8h_source.html#l00073">intermcu_t::enabled</a>.</p>
+<p>References <a class="el" href="intermcu_8h_source.html#l00075">intermcu_t::enabled</a>.</p>
 
-<p>Referenced by <a class="el" href="px4__flash_8c_source.html#l00075">px4flash_event()</a>.</p>
+<p>Referenced by <a class="el" href="px4__flash_8c_source.html#l00079">px4flash_event()</a>.</p>
 
-<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="intermcu__ap_8h_a93c1caa54aaade98a45ffc18f7406a6f_icgraph.png" border="0" usemap="#intermcu__ap_8h_a93c1caa54aaade98a45ffc18f7406a6f_icgraph" alt=""/></div>
 <map name="intermcu__ap_8h_a93c1caa54aaade98a45ffc18f7406a6f_icgraph" id="intermcu__ap_8h_a93c1caa54aaade98a45ffc18f7406a6f_icgraph">
 <area shape="rect" id="node2" href="px4__flash_8h.html#a5bbeb4ac8fb18641568992822ee3ba00" title="px4flash_event" alt="" coords="217,5,336,32"/></map>
@@ -497,18 +508,18 @@ vsupply</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="intermcu__ap_8c_source.html#l00154">154</a> of file <a class="el" href="intermcu__ap_8c_source.html">intermcu_ap.c</a>.</p>
+<p>Definition at line <a class="el" href="intermcu__ap_8c_source.html#l00224">224</a> of file <a class="el" href="intermcu__ap_8c_source.html">intermcu_ap.c</a>.</p>
 
-<p>References <a class="el" href="intermcu_8h_source.html#l00069">intermcu_t::device</a>, <a class="el" href="intermcu_8h_source.html#l00073">intermcu_t::enabled</a>, <a class="el" href="intermcu__ap_8c_source.html#l00046">imcu_msg_buf</a>, <a class="el" href="intermcu__ap_8c_source.html#l00118">intermcu_parse_msg()</a>, <a class="el" href="intermcu_8h_source.html#l00074">intermcu_t::msg_available</a>, and <a class="el" href="intermcu_8h_source.html#l00070">intermcu_t::transport</a>.</p>
+<p>References <a class="el" href="intermcu_8h_source.html#l00071">intermcu_t::device</a>, <a class="el" href="intermcu_8h_source.html#l00075">intermcu_t::enabled</a>, <a class="el" href="intermcu__ap_8c_source.html#l00046">imcu_msg_buf</a>, <a class="el" href="intermcu__ap_8c_source.html#l00138">intermcu_parse_msg()</a>, <a class="el" href="intermcu_8h_source.html#l00076">intermcu_t::msg_available</a>, and <a class="el" href="intermcu_8h_source.html#l00072">intermcu_t::transport</a>.</p>
 
-<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="intermcu__ap_8h_af92639a882c9a02ecc422e3ba96c1274_cgraph.png" border="0" usemap="#intermcu__ap_8h_af92639a882c9a02ecc422e3ba96c1274_cgraph" alt=""/></div>
 <map name="intermcu__ap_8h_af92639a882c9a02ecc422e3ba96c1274_cgraph" id="intermcu__ap_8h_af92639a882c9a02ecc422e3ba96c1274_cgraph">
-<area shape="rect" id="node2" href="intermcu__ap_8c.html#a604cff1ebc93899fae5ce75bc77ae7e9" title="intermcu_parse_msg" alt="" coords="192,5,349,32"/></map>
+<area shape="rect" id="node2" href="intermcu__ap_8c.html#a604cff1ebc93899fae5ce75bc77ae7e9" title="intermcu_parse_msg" alt="" coords="192,35,349,61"/><area shape="rect" id="node3" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup. " alt="" coords="399,5,543,32"/><area shape="rect" id="node4" href="telemetry__intermcu_8h.html#a494e042e37d2bc36b74cc155e444e137" title="telemetry_intermcu\l_on_msg" alt="" coords="397,57,545,98"/><area shape="rect" id="node5" href="setup__actuators_8c.html#a8622e4eaf1529d8c64af55c0d05dadbe" title="Should be called when chars are available in dl_buffer. " alt="" coords="612,35,723,61"/><area shape="rect" id="node6" href="telemetry__intermcu__fbw_8c.html#a2229202b9a637f3bd439342f9c76b44a" title="telemetry_intermcu\l_repack" alt="" coords="593,86,741,127"/></map>
 </div>
 </p>
 
@@ -520,7 +531,7 @@ vsupply</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_20e4859fd0a482048af55ed36cbc5ed3.html">intermcu</a></li><li class="navelem"><a class="el" href="intermcu__ap_8h.html">intermcu_ap.h</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:02:14 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:02:43 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

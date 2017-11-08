@@ -6,7 +6,7 @@ var nav__flower_8c =
       [ "Circle", "nav__flower_8c.html#ab3972f7766a79f22a1ed10c84e294551ad3ce82743a8255ccd69f5b67d257c489", null ]
     ] ],
     [ "nav_flower_run", "nav__flower_8c.html#a6d71597b4b26b2c8f393f9621972e463", null ],
-    [ "nav_flower_setup", "nav__flower_8c.html#a8e5be64c085b4e025f29342cce374f09", null ],
+    [ "nav_flower_setup", "nav__flower_8c.html#a09c7108cea4e529bb7f83d0850d312cc", null ],
     [ "Center", "nav__flower_8c.html#a688461f77762ad7bc85685537182f73c", null ],
     [ "CFlowerStatus", "nav__flower_8c.html#a2775e7004e7029fd9494780202041322", null ],
     [ "CircleX", "nav__flower_8c.html#a55fc24033aca1f53a853e7462a098bed", null ],

@@ -1,7 +1,5 @@
 var imu__mpu60x0__i2c_8c =
 [
-    [ "IMU_MPU60X0_ACCEL_RANGE", "imu__mpu60x0__i2c_8c.html#a780de73decca5f6396ad4d57b34ead78", null ],
-    [ "IMU_MPU60X0_GYRO_RANGE", "imu__mpu60x0__i2c_8c.html#ab420cb957cbc75c8b66d4010d20fa054", null ],
     [ "IMU_MPU60X0_I2C_ADDR", "imu__mpu60x0__i2c_8c.html#a6ef56483ca23c6683a59ace0472ace4c", null ],
     [ "imu_mpu_i2c_event", "imu__mpu60x0__i2c_8c.html#ad17d2b5d68bee1716b36c12a01cb1b31", null ],
     [ "imu_mpu_i2c_init", "imu__mpu60x0__i2c_8c.html#a06d943f6ded5d400bb6cbb7dec54d00f", null ],

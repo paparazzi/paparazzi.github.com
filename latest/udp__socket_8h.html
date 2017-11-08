@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -133,7 +133,7 @@ $(document).ready(function(){initNavTree('udp__socket_8h.html','');});
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="udp__socket_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2arch_2linux_2udp__socket_8hdep" alt=""/></div>
 <map name="sw_2airborne_2arch_2linux_2udp__socket_8hdep" id="sw_2airborne_2arch_2linux_2udp__socket_8hdep">
-<area shape="rect" id="node2" href="linux_2mcu__periph_2udp__arch_8c.html" title="linux UDP handling " alt="" coords="5,303,180,344"/><area shape="rect" id="node3" href="linux_2mcu__periph_2udp__arch_8h.html" title="linux UDP handling " alt="" coords="403,303,579,344"/><area shape="rect" id="node4" href="udp__socket_8c.html" title="Easily create and use UDP sockets. " alt="" coords="579,102,739,143"/><area shape="rect" id="node5" href="sim_2mcu__periph_2udp__arch_8c.html" title="sw/airborne/arch/sim\l/mcu_periph/udp_arch.c" alt="" coords="604,303,779,344"/><area shape="rect" id="node6" href="sim_2mcu__periph_2udp__arch_8h.html" title="sw/airborne/arch/sim\l/mcu_periph/udp_arch.h" alt="" coords="278,102,454,143"/><area shape="rect" id="node9" href="rtp_8h.html" title="Encodes a vide stream with RTP (JPEG) " alt="" coords="814,95,969,151"/><area shape="rect" id="node10" href="bebop__front__camera_8c.html" title="sw/airborne/modules\l/computer_vision/bebop\l_front_camera.c" alt="" coords="597,199,772,255"/><area shape="rect" id="node13" href="viewvideo_8c.html" title="Get live images from a RTP/UDP stream and save pictures on internal memory. " alt="" coords="1191,206,1397,247"/><area shape="rect" id="node7" href="udp_8h.html" title="arch independent UDP API " alt="" coords="279,206,453,247"/><area shape="rect" id="node8" href="udp_8c.html" title="arch independent UDP API " alt="" coords="204,303,379,344"/><area shape="rect" id="node11" href="rtp_8c.html" title="Encodes a vide stream with RTP (JPEG) " alt="" coords="797,199,951,255"/><area shape="rect" id="node12" href="opticflow__module_8c.html" title="optical&#45;flow based hovering for Parrot AR.Drone 2.0 " alt="" coords="976,199,1167,255"/></map>
+<area shape="rect" id="node2" href="linux_2mcu__periph_2udp__arch_8c.html" title="linux UDP handling " alt="" coords="5,303,180,344"/><area shape="rect" id="node3" href="linux_2mcu__periph_2udp__arch_8h.html" title="linux UDP handling " alt="" coords="403,303,579,344"/><area shape="rect" id="node4" href="udp__socket_8c.html" title="Easily create and use UDP sockets. " alt="" coords="579,102,739,143"/><area shape="rect" id="node5" href="sim_2mcu__periph_2udp__arch_8c.html" title="sw/airborne/arch/sim\l/mcu_periph/udp_arch.c" alt="" coords="604,303,779,344"/><area shape="rect" id="node6" href="sim_2mcu__periph_2udp__arch_8h.html" title="sw/airborne/arch/sim\l/mcu_periph/udp_arch.h" alt="" coords="278,102,454,143"/><area shape="rect" id="node9" href="rtp_8h.html" title="Encodes a video stream with RTP Format 26 (Motion JPEG) " alt="" coords="779,95,934,151"/><area shape="rect" id="node12" href="viewvideo_8c.html" title="Get live images from a RTP/UDP stream and save pictures on internal memory. " alt="" coords="975,206,1181,247"/><area shape="rect" id="node7" href="udp_8h.html" title="arch independent UDP API " alt="" coords="279,206,453,247"/><area shape="rect" id="node8" href="udp_8c.html" title="arch independent UDP API " alt="" coords="204,303,379,344"/><area shape="rect" id="node10" href="rtp_8c.html" title="Encodes a vide stream with RTP (JPEG) " alt="" coords="795,199,950,255"/><area shape="rect" id="node11" href="opticflow__module_8c.html" title="Optical&#45;flow estimation module. " alt="" coords="580,199,771,255"/></map>
 </div>
 </div>
 <p><a href="udp__socket_8h_source.html">Go to the source code of this file.</a></p>
@@ -164,6 +164,8 @@ Functions</h2></td></tr>
 <tr class="separator:a1560495c418050e312f4564343a514c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a880fa97951db20259b4529699893301e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp__socket_8h.html#a880fa97951db20259b4529699893301e">udp_socket_set_recvbuf</a> (struct <a class="el" href="udp__socket_8h.html#structUdpSocket">UdpSocket</a> *sock, int buf_size)</td></tr>
 <tr class="separator:a880fa97951db20259b4529699893301e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a968ba5df87b2dece7b826a87bb7752f0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp__socket_8h.html#a968ba5df87b2dece7b826a87bb7752f0">udp_socket_set_sendbuf</a> (struct <a class="el" href="udp__socket_8h.html#structUdpSocket">UdpSocket</a> *sock, int buf_size)</td></tr>
+<tr class="separator:a968ba5df87b2dece7b826a87bb7752f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Easily create and use UDP sockets. </p>
@@ -287,7 +289,7 @@ sockfd</td>
 
 <p>References <a class="el" href="udp__socket_8h_source.html#l00036">UdpSocket::addr_in</a>, <a class="el" href="udp__socket_8h_source.html#l00037">UdpSocket::addr_out</a>, and <a class="el" href="udp__socket_8h_source.html#l00035">UdpSocket::sockfd</a>.</p>
 
-<p>Referenced by <a class="el" href="bebop__front__camera_8c_source.html#l00081">bebop_front_camera_thread()</a>, <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html#l00069">udp_arch_periph_init()</a>, and <a class="el" href="viewvideo_8c_source.html#l00213">viewvideo_init()</a>.</p>
+<p>Referenced by <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html#l00069">udp_arch_periph_init()</a>, and <a class="el" href="viewvideo_8c_source.html#l00208">viewvideo_init()</a>.</p>
 
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -296,7 +298,7 @@ sockfd</td>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="udp__socket_8h_a8904d535adc73468cfa9e57a71f6de72_icgraph.png" border="0" usemap="#udp__socket_8h_a8904d535adc73468cfa9e57a71f6de72_icgraph" alt=""/></div>
 <map name="udp__socket_8h_a8904d535adc73468cfa9e57a71f6de72_icgraph" id="udp__socket_8h_a8904d535adc73468cfa9e57a71f6de72_icgraph">
-<area shape="rect" id="node2" href="bebop__front__camera_8c.html#a63cb60d57fb10579691954003dc4491e" title="Handles all the video streaming and saving of the image shots This is a sepereate thread..." alt="" coords="196,5,351,47"/><area shape="rect" id="node4" href="udp_8h.html#a26342423a340c1420dbb8081d9fdd407" title="Initialize the UDP peripheral. " alt="" coords="196,71,351,98"/><area shape="rect" id="node6" href="viewvideo_8h.html#a8479777ac5ff98cdf58349e741f04005" title="Initialize the view video. " alt="" coords="219,122,328,149"/><area shape="rect" id="node3" href="bebop__front__camera_8h.html#a179ce25d44bf966f12b86e3a96654161" title="Start with streaming. " alt="" coords="399,5,553,47"/><area shape="rect" id="node5" href="udp_8h.html#a1f1d82b302692d0e1c6b01db1b03f6ea" title="Initialize the UDP peripheral. " alt="" coords="417,71,535,98"/></map>
+<area shape="rect" id="node2" href="udp_8h.html#a26342423a340c1420dbb8081d9fdd407" title="Initialize the UDP peripheral. " alt="" coords="196,5,351,32"/><area shape="rect" id="node4" href="viewvideo_8h.html#a8479777ac5ff98cdf58349e741f04005" title="Initialize the view video. " alt="" coords="219,56,328,83"/><area shape="rect" id="node3" href="udp_8h.html#a1f1d82b302692d0e1c6b01db1b03f6ea" title="Initialize the UDP peripheral. " alt="" coords="399,5,517,32"/></map>
 </div>
 </p>
 
@@ -353,7 +355,7 @@ sockfd</td>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>number of bytes received (-1 on error) </dd></dl>
 
-<p>Definition at line <a class="el" href="udp__socket_8c_source.html#l00184">184</a> of file <a class="el" href="udp__socket_8c_source.html">udp_socket.c</a>.</p>
+<p>Definition at line <a class="el" href="udp__socket_8c_source.html#l00185">185</a> of file <a class="el" href="udp__socket_8c_source.html">udp_socket.c</a>.</p>
 
 <p>References <a class="el" href="udp__socket_8h_source.html#l00036">UdpSocket::addr_in</a>, and <a class="el" href="udp__socket_8h_source.html#l00035">UdpSocket::sockfd</a>.</p>
 
@@ -409,7 +411,7 @@ sockfd</td>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>number of bytes received (-1 on error) </dd></dl>
 
-<p>Definition at line <a class="el" href="udp__socket_8c_source.html#l00159">159</a> of file <a class="el" href="udp__socket_8c_source.html">udp_socket.c</a>.</p>
+<p>Definition at line <a class="el" href="udp__socket_8c_source.html#l00160">160</a> of file <a class="el" href="udp__socket_8c_source.html">udp_socket.c</a>.</p>
 
 <p>References <a class="el" href="udp__socket_8h_source.html#l00036">UdpSocket::addr_in</a>, <a class="el" href="udp__socket_8h_source.html#l00035">UdpSocket::sockfd</a>, <a class="el" href="udp__socket_8c_source.html#l00037">TRACE</a>, and <a class="el" href="udp__socket_8c_source.html#l00038">TRACE_ERROR</a>.</p>
 
@@ -456,7 +458,7 @@ sockfd</td>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>number of bytes sent (-1 on error) </dd></dl>
 
-<p>Definition at line <a class="el" href="udp__socket_8c_source.html#l00119">119</a> of file <a class="el" href="udp__socket_8c_source.html">udp_socket.c</a>.</p>
+<p>Definition at line <a class="el" href="udp__socket_8c_source.html#l00120">120</a> of file <a class="el" href="udp__socket_8c_source.html">udp_socket.c</a>.</p>
 
 <p>References <a class="el" href="udp__socket_8h_source.html#l00037">UdpSocket::addr_out</a>, <a class="el" href="udp__socket_8h_source.html#l00035">UdpSocket::sockfd</a>, <a class="el" href="udp__socket_8c_source.html#l00037">TRACE</a>, and <a class="el" href="udp__socket_8c_source.html#l00038">TRACE_ERROR</a>.</p>
 
@@ -503,11 +505,11 @@ sockfd</td>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>number of bytes sent (-1 on error) </dd></dl>
 
-<p>Definition at line <a class="el" href="udp__socket_8c_source.html#l00140">140</a> of file <a class="el" href="udp__socket_8c_source.html">udp_socket.c</a>.</p>
+<p>Definition at line <a class="el" href="udp__socket_8c_source.html#l00141">141</a> of file <a class="el" href="udp__socket_8c_source.html">udp_socket.c</a>.</p>
 
 <p>References <a class="el" href="udp__socket_8h_source.html#l00037">UdpSocket::addr_out</a>, and <a class="el" href="udp__socket_8h_source.html#l00035">UdpSocket::sockfd</a>.</p>
 
-<p>Referenced by <a class="el" href="rtp_8c_source.html#l00158">rtp_packet_send()</a>.</p>
+<p>Referenced by <a class="el" href="rtp_8c_source.html#l00177">rtp_packet_send()</a>.</p>
 
 <p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -516,7 +518,7 @@ sockfd</td>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="udp__socket_8h_a2c3da4bd5d683ae6c844649fac79f13d_icgraph.png" border="0" usemap="#udp__socket_8h_a2c3da4bd5d683ae6c844649fac79f13d_icgraph" alt=""/></div>
 <map name="udp__socket_8h_a2c3da4bd5d683ae6c844649fac79f13d_icgraph" id="udp__socket_8h_a2c3da4bd5d683ae6c844649fac79f13d_icgraph">
-<area shape="rect" id="node2" href="rtp_8c.html#a7b661ee336df15cbee60fda1d7263247" title="rtp_packet_send" alt="" coords="248,31,376,57"/><area shape="rect" id="node3" href="rtp_8h.html#a6c9aa998b02c9ff5099bb3fc6bbc2b5e" title="Send a test RTP frame. " alt="" coords="427,5,544,32"/><area shape="rect" id="node4" href="rtp_8h.html#ab810dc7d46e209624e4edd330edb7bf7" title="Send an RTP frame. " alt="" coords="424,56,547,83"/><area shape="rect" id="node5" href="bebop__front__camera_8c.html#a63cb60d57fb10579691954003dc4491e" title="Handles all the video streaming and saving of the image shots This is a sepereate thread..." alt="" coords="595,19,749,61"/><area shape="rect" id="node7" href="viewvideo_8c.html#aaa64c7de292e7ac10b442216cc49dcab" title="Handles all the video streaming and saving of the image shots This is a sepereate thread..." alt="" coords="601,85,743,112"/><area shape="rect" id="node6" href="bebop__front__camera_8h.html#a179ce25d44bf966f12b86e3a96654161" title="Start with streaming. " alt="" coords="797,19,952,61"/><area shape="rect" id="node8" href="viewvideo_8h.html#a8479777ac5ff98cdf58349e741f04005" title="Initialize the view video. " alt="" coords="820,85,929,112"/></map>
+<area shape="rect" id="node2" href="rtp_8c.html#aedd2d69861650f90d27683d366946e03" title="rtp_packet_send" alt="" coords="248,31,376,57"/><area shape="rect" id="node3" href="rtp_8h.html#a6c9aa998b02c9ff5099bb3fc6bbc2b5e" title="Send a test RTP frame. " alt="" coords="427,5,544,32"/><area shape="rect" id="node4" href="rtp_8h.html#a31d0efc8803ccbb83cb0b713e69ff16f" title="Send an RTP frame. " alt="" coords="424,56,547,83"/><area shape="rect" id="node5" href="viewvideo_8c.html#a0df1e7fcdd4897477c64c18bb5bce697" title="Handles all the video streaming and saving of the image shots This is a separate thread, so it needs to be thread safe! " alt="" coords="595,56,736,83"/></map>
 </div>
 </p>
 
@@ -546,7 +548,37 @@ sockfd</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="udp__socket_8c_source.html#l00203">203</a> of file <a class="el" href="udp__socket_8c_source.html">udp_socket.c</a>.</p>
+<p>Definition at line <a class="el" href="udp__socket_8c_source.html#l00205">205</a> of file <a class="el" href="udp__socket_8c_source.html">udp_socket.c</a>.</p>
+
+<p>References <a class="el" href="udp__socket_8h_source.html#l00035">UdpSocket::sockfd</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a968ba5df87b2dece7b826a87bb7752f0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int udp_socket_set_sendbuf </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="udp__socket_8h.html#structUdpSocket">UdpSocket</a> *&#160;</td>
+          <td class="paramname"><em>sock</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>buf_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="udp__socket_8c_source.html#l00220">220</a> of file <a class="el" href="udp__socket_8c_source.html">udp_socket.c</a>.</p>
 
 <p>References <a class="el" href="udp__socket_8h_source.html#l00035">UdpSocket::sockfd</a>.</p>
 
@@ -576,7 +608,7 @@ sockfd</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="udp__socket_8c_source.html#l00193">193</a> of file <a class="el" href="udp__socket_8c_source.html">udp_socket.c</a>.</p>
+<p>Definition at line <a class="el" href="udp__socket_8c_source.html#l00194">194</a> of file <a class="el" href="udp__socket_8c_source.html">udp_socket.c</a>.</p>
 
 <p>References <a class="el" href="udp__socket_8h_source.html#l00035">UdpSocket::sockfd</a>.</p>
 
@@ -588,7 +620,7 @@ sockfd</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_92fbf38b8c893a0928a3445a75d0ac01.html">linux</a></li><li class="navelem"><a class="el" href="udp__socket_8h.html">udp_socket.h</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:01:38 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:01:56 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

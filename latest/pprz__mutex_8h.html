@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -114,7 +114,16 @@ $(document).ready(function(){initNavTree('pprz__mutex_8h.html','');});
 
 <p>Utility functions and macros to abstract some RTOS functionalities such as mutexes.  
 <a href="#details">More...</a></p>
-
+<div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="pprz__mutex_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2pprz__mutex_8hdep" alt=""/></div>
+<map name="sw_2airborne_2pprz__mutex_8hdep" id="sw_2airborne_2pprz__mutex_8hdep">
+<area shape="rect" id="node2" href="copilot_8h.html" title="Mission Computer module, interfacing the mission computer (also known as Copilot), based losely on ISaAC: The Intelligent Safety and Airworthiness Co&#45;Pilot module Based on paper &quot;A Payload Verification and Management Framework &#160;for Small UAV&#45;based Personal Remote Sensing Systems&quot; by Cal Coopmans and Chris Coffin. " alt="" coords="247,80,402,121"/><area shape="rect" id="node3" href="copilot__common_8c.html" title="Mission Computer module, interfacing the mission computer (also known as Copilot), based losely on ISaAC: The Intelligent Safety and Airworthiness Co&#45;Pilot module Based on paper &quot;A Payload Verification and Management Framework &#160;for Small UAV&#45;based Personal Remote Sensing Systems&quot; by Cal Coopmans and Chris Coffin. " alt="" coords="5,169,201,211"/><area shape="rect" id="node4" href="copilot__fixedwing_8c.html" title="Mission Computer module, interfacing the mission computer (also known as Copilot), based losely on ISaAC: The Intelligent Safety and Airworthiness Co&#45;Pilot module Based on paper &quot;A Payload Verification and Management Framework &#160;for Small UAV&#45;based Personal Remote Sensing Systems&quot; by Cal Coopmans and Chris Coffin. " alt="" coords="226,169,423,211"/><area shape="rect" id="node5" href="copilot__rotorcraft_8c.html" title="Mission Computer module, interfacing the mission computer (also known as Copilot), based losely on ISaAC: The Intelligent Safety and Airworthiness Co&#45;Pilot module Based on paper &quot;A Payload Verification and Management Framework &#160;for Small UAV&#45;based Personal Remote Sensing Systems&quot; by Cal Coopmans and Chris Coffin. " alt="" coords="448,169,647,211"/></map>
+</div>
+</div>
 <p><a href="pprz__mutex_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -187,6 +196,8 @@ Macros</h2></td></tr>
 
 <p>Definition at line <a class="el" href="pprz__mutex_8h_source.html#l00045">45</a> of file <a class="el" href="pprz__mutex_8h_source.html">pprz_mutex.h</a>.</p>
 
+<p>Referenced by <a class="el" href="copilot__common_8c_source.html#l00060">copilot_init()</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a41a7bd0affd9ccbfb6187b0f20d838f1"></a>
@@ -205,7 +216,7 @@ Macros</h2></td></tr>
 
 <p>Definition at line <a class="el" href="pprz__mutex_8h_source.html#l00046">46</a> of file <a class="el" href="pprz__mutex_8h_source.html">pprz_mutex.h</a>.</p>
 
-<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00554">attitude_loop()</a>, <a class="el" href="main__ap_8c_source.html#l00360">copy_from_to_fbw()</a>, <a class="el" href="main__ap_8c_source.html#l00174">init_ap()</a>, <a class="el" href="main__ap_8c_source.html#l00381">telecommand_task()</a>, and <a class="el" href="point_8c_source.html#l00164">vPoint()</a>.</p>
+<p>Referenced by <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00272">attitude_loop()</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00112">autopilot_static_on_rc_frame()</a>, <a class="el" href="copilot__common_8c_source.html#l00159">copilot_parse_cam_payload_dl()</a>, <a class="el" href="copilot__common_8c_source.html#l00139">copilot_parse_cam_snapshot_dl()</a>, <a class="el" href="copilot__common_8c_source.html#l00177">copilot_parse_copilot_status_dl()</a>, <a class="el" href="copilot__common_8c_source.html#l00076">copilot_periodic()</a>, <a class="el" href="fixedwing_2autopilot__generated_8c_source.html#l00090">copy_from_to_fbw()</a>, <a class="el" href="fixedwing_2main__ap_8c_source.html#l00149">init_ap()</a>, and <a class="el" href="point_8c_source.html#l00164">vPoint()</a>.</p>
 
 </div>
 </div>
@@ -225,7 +236,7 @@ Macros</h2></td></tr>
 
 <p>Definition at line <a class="el" href="pprz__mutex_8h_source.html#l00047">47</a> of file <a class="el" href="pprz__mutex_8h_source.html">pprz_mutex.h</a>.</p>
 
-<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00554">attitude_loop()</a>, <a class="el" href="main__ap_8c_source.html#l00360">copy_from_to_fbw()</a>, <a class="el" href="main__ap_8c_source.html#l00174">init_ap()</a>, <a class="el" href="main__ap_8c_source.html#l00381">telecommand_task()</a>, and <a class="el" href="point_8c_source.html#l00164">vPoint()</a>.</p>
+<p>Referenced by <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00272">attitude_loop()</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00112">autopilot_static_on_rc_frame()</a>, <a class="el" href="copilot__common_8c_source.html#l00159">copilot_parse_cam_payload_dl()</a>, <a class="el" href="copilot__common_8c_source.html#l00139">copilot_parse_cam_snapshot_dl()</a>, <a class="el" href="copilot__common_8c_source.html#l00177">copilot_parse_copilot_status_dl()</a>, <a class="el" href="copilot__common_8c_source.html#l00076">copilot_periodic()</a>, <a class="el" href="fixedwing_2autopilot__generated_8c_source.html#l00090">copy_from_to_fbw()</a>, <a class="el" href="fixedwing_2main__ap_8c_source.html#l00149">init_ap()</a>, and <a class="el" href="point_8c_source.html#l00164">vPoint()</a>.</p>
 
 </div>
 </div>
@@ -235,7 +246,7 @@ Macros</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="pprz__mutex_8h.html">pprz_mutex.h</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:02:08 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:02:37 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

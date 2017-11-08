@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -120,6 +120,7 @@ $(document).ready(function(){initNavTree('chibios_2mcu__periph_2adc__arch_8c.htm
 <code>#include &quot;<a class="el" href="gpio_8h_source.html">mcu_periph/gpio.h</a>&quot;</code><br />
 <code>#include &quot;hal.h&quot;</code><br />
 <code>#include &quot;std.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="ram__arch_8h_source.html">mcu_periph/ram_arch.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for adc_arch.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -127,7 +128,7 @@ $(document).ready(function(){initNavTree('chibios_2mcu__periph_2adc__arch_8c.htm
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="chibios_2mcu__periph_2adc__arch_8c__incl.png" border="0" usemap="#sw_2airborne_2arch_2chibios_2mcu__periph_2adc__arch_8c" alt=""/></div>
 <map name="sw_2airborne_2arch_2chibios_2mcu__periph_2adc__arch_8c" id="sw_2airborne_2arch_2chibios_2mcu__periph_2adc__arch_8c">
-<area shape="rect" id="node2" href="adc_8h.html" title="arch independent ADC (Analog to Digital Converter) API " alt="" coords="132,95,268,121"/><area shape="rect" id="node5" href="gpio_8h.html" title="Some architecture independent helper functions for GPIOs. " alt="" coords="359,95,499,121"/><area shape="rect" id="node3" href="inttypes_8h.html" title="inttypes.h" alt="" coords="5,169,91,196"/></map>
+<area shape="rect" id="node2" href="adc_8h.html" title="arch independent ADC (Analog to Digital Converter) API " alt="" coords="132,95,268,121"/><area shape="rect" id="node5" href="gpio_8h.html" title="Some architecture independent helper functions for GPIOs. " alt="" coords="359,95,499,121"/><area shape="rect" id="node9" href="ram__arch_8h.html" title="Specific RAM section for DMA usage on F7. " alt="" coords="602,95,777,121"/><area shape="rect" id="node3" href="inttypes_8h.html" title="inttypes.h" alt="" coords="5,169,91,196"/></map>
 </div>
 </div>
 <p><a href="chibios_2mcu__periph_2adc__arch_8c_source.html">Go to the source code of this file.</a></p>
@@ -141,7 +142,9 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ab20565c2f3d25af97a62849647c4cd71"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chibios_2mcu__periph_2adc__arch_8c.html#ab20565c2f3d25af97a62849647c4cd71">adc_regular_sequence</a> (<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> *sqr1, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> *sqr2, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> *sqr3, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> length, const <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="el" href="stm32_2subsystems_2imu_2imu__crista__arch_8c.html#a4b613adf1dc9edfbc9951cf9b86ec2e3">channel</a>[])</td></tr>
+<tr class="memitem:a9ca94b04798d83640f0b79ea81fe46a9"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chibios_2mcu__periph_2adc__arch_8c.html#a9ca94b04798d83640f0b79ea81fe46a9">IN_DMA_SECTION</a> (adcsample_t adc_samples[<a class="el" href="chibios_2mcu__periph_2adc__arch_8h.html#ada9f09bbee2e15c2069f4c25ec74bed8">ADC_NUM_CHANNELS</a> *<a class="el" href="chibios_2mcu__periph_2adc__arch_8c.html#a6e829897b1929e18c1413dd484408d4a">ADC_BUF_DEPTH</a>])</td></tr>
+<tr class="separator:a9ca94b04798d83640f0b79ea81fe46a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab20565c2f3d25af97a62849647c4cd71"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chibios_2mcu__periph_2adc__arch_8c.html#ab20565c2f3d25af97a62849647c4cd71">adc_regular_sequence</a> (<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> *sqr1, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> *sqr2, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> *sqr3, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> length, const <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="el" href="ADS8344_8c.html#a715f5cb061d11eb75981741eda4dafcd">channel</a>[])</td></tr>
 <tr class="separator:ab20565c2f3d25af97a62849647c4cd71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4fef74b6c7509b76877e940657b2603"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chibios_2mcu__periph_2adc__arch_8c.html#aa4fef74b6c7509b76877e940657b2603">adc_sample_time_on_all_channels</a> (<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> *smpr1, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> *smpr2, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> time)</td></tr>
 <tr class="separator:aa4fef74b6c7509b76877e940657b2603"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -167,8 +170,6 @@ Variables</h2></td></tr>
 <tr class="separator:afd39363b0bc5b73c6cb4b0d0cc484d90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae518ea232632d8202116d5981e6c7be8"><td class="memItemLeft" align="right" valign="top">ADCDriver *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chibios_2mcu__periph_2adc__arch_8c.html#ae518ea232632d8202116d5981e6c7be8">adcp_err</a> = NULL</td></tr>
 <tr class="separator:ae518ea232632d8202116d5981e6c7be8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b25e8740ad658dcda81a939f89da843"><td class="memItemLeft" align="right" valign="top">static adcsample_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chibios_2mcu__periph_2adc__arch_8c.html#a6b25e8740ad658dcda81a939f89da843">adc_samples</a> [<a class="el" href="chibios_2mcu__periph_2adc__arch_8h.html#ada9f09bbee2e15c2069f4c25ec74bed8">ADC_NUM_CHANNELS</a> *<a class="el" href="chibios_2mcu__periph_2adc__arch_8c.html#a6e829897b1929e18c1413dd484408d4a">ADC_BUF_DEPTH</a>]</td></tr>
-<tr class="separator:a6b25e8740ad658dcda81a939f89da843"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a235d7be89fd1bddc533d5cb64bf0a839"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="adc_8h.html#structadc__buf">adc_buf</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chibios_2mcu__periph_2adc__arch_8c.html#a235d7be89fd1bddc533d5cb64bf0a839">adc1_buffers</a> [<a class="el" href="chibios_2mcu__periph_2adc__arch_8h.html#ada9f09bbee2e15c2069f4c25ec74bed8">ADC_NUM_CHANNELS</a>]</td></tr>
 <tr class="separator:a235d7be89fd1bddc533d5cb64bf0a839"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48348066f5ca0fe6ddf05e233559e513"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chibios_2mcu__periph_2adc__arch_8c.html#a48348066f5ca0fe6ddf05e233559e513">adc1_sum_tmp</a> [<a class="el" href="chibios_2mcu__periph_2adc__arch_8h.html#ada9f09bbee2e15c2069f4c25ec74bed8">ADC_NUM_CHANNELS</a>]</td></tr>
@@ -199,9 +200,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00128">128</a> of file <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html">adc_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00144">144</a> of file <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html">adc_arch.c</a>.</p>
 
-<p>Referenced by <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00286">adc_init()</a>.</p>
+<p>Referenced by <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00304">adc_init()</a>.</p>
 
 </div>
 </div>
@@ -215,7 +216,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00066">66</a> of file <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html">adc_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00064">64</a> of file <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html">adc_arch.c</a>.</p>
 
 </div>
 </div>
@@ -262,11 +263,11 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00208">208</a> of file <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html">adc_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00224">224</a> of file <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html">adc_arch.c</a>.</p>
 
-<p>References <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00135">adc1_samples_tmp</a>, <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00134">adc1_sum_tmp</a>, <a class="el" href="chibios_2mcu__periph_2adc__arch_8h_source.html#l00093">ADC_NUM_CHANNELS</a>, <a class="el" href="adc_8h_source.html#l00057">adc_buf::av_nb_sample</a>, <a class="el" href="ADS8344_8c_source.html#l00080">channel</a>, and <a class="el" href="adc_8h_source.html#l00054">adc_buf::sum</a>.</p>
+<p>References <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00151">adc1_samples_tmp</a>, <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00150">adc1_sum_tmp</a>, <a class="el" href="chibios_2mcu__periph_2adc__arch_8h_source.html#l00093">ADC_NUM_CHANNELS</a>, <a class="el" href="adc_8h_source.html#l00057">adc_buf::av_nb_sample</a>, <a class="el" href="ADS8344_8c_source.html#l00080">channel</a>, and <a class="el" href="adc_8h_source.html#l00054">adc_buf::sum</a>.</p>
 
-<p>Referenced by <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00286">adc_init()</a>.</p>
+<p>Referenced by <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00304">adc_init()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -275,7 +276,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="chibios_2mcu__periph_2adc__arch_8c_a0c618f185daded30a24ca6ca8a5b9f90_icgraph.png" border="0" usemap="#chibios_2mcu__periph_2adc__arch_8c_a0c618f185daded30a24ca6ca8a5b9f90_icgraph" alt=""/></div>
 <map name="chibios_2mcu__periph_2adc__arch_8c_a0c618f185daded30a24ca6ca8a5b9f90_icgraph" id="chibios_2mcu__periph_2adc__arch_8c_a0c618f185daded30a24ca6ca8a5b9f90_icgraph">
-<area shape="rect" id="node2" href="adc_8h.html#a2b815e6730e8723a6d1d06d9ef8f31c0" title="Starts conversions. " alt="" coords="157,56,228,83"/><area shape="rect" id="node3" href="group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b" title="Microcontroller peripherals initialization. " alt="" coords="276,56,352,83"/><area shape="rect" id="node4" href="lpc21_2uart__tunnel_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="413,5,467,32"/><area shape="rect" id="node5" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="400,56,480,83"/><area shape="rect" id="node10" href="fixedwing_2main__fbw_8h.html#ad86b7fe577a2414df2c7a5a9222aa45a" title="init_fbw" alt="" coords="405,107,475,133"/><area shape="rect" id="node6" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="568,5,623,32"/><area shape="rect" id="node7" href="nps__autopilot__rotorcraft_8c.html#a3348493e992edd2442581c1d09446b4b" title="nps_autopilot_init" alt="" coords="528,56,663,83"/><area shape="rect" id="node8" href="nps__main_8c.html#af28efef10cede3b66825b2dc2e4e7705" title="nps_main_init" alt="" coords="711,56,821,83"/><area shape="rect" id="node9" href="nps__main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="869,56,924,83"/><area shape="rect" id="node11" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="560,107,631,133"/></map>
+<area shape="rect" id="node2" href="adc_8h.html#a2b815e6730e8723a6d1d06d9ef8f31c0" title="Starts conversions. " alt="" coords="157,56,228,83"/><area shape="rect" id="node3" href="group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b" title="Microcontroller peripherals initialization. " alt="" coords="276,56,352,83"/><area shape="rect" id="node4" href="lpc21_2uart__tunnel_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="413,5,467,32"/><area shape="rect" id="node5" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="400,56,480,83"/><area shape="rect" id="node9" href="fixedwing_2main__fbw_8h.html#ad86b7fe577a2414df2c7a5a9222aa45a" title="init_fbw" alt="" coords="405,107,475,133"/><area shape="rect" id="node6" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="568,5,623,32"/><area shape="rect" id="node7" href="nps__autopilot__rotorcraft_8c.html#a3348493e992edd2442581c1d09446b4b" title="nps_autopilot_init" alt="" coords="528,56,663,83"/><area shape="rect" id="node8" href="nps__main__hitl_8c.html#a72ef549ee35deec8c017e83d9de38f66" title="nps_radio_and_autopilot_init" alt="" coords="711,56,915,83"/><area shape="rect" id="node10" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="560,107,631,133"/></map>
 </div>
 </p>
 
@@ -314,9 +315,9 @@ Variables</h2></td></tr>
 <p>Link between ChibiOS ADC drivers and Paparazzi adc_buffers. </p>
 <p>Registers a buffer to be used to store the specified converted channel Usage: </p>
 
-<p>Definition at line <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00265">265</a> of file <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html">adc_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00281">281</a> of file <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html">adc_arch.c</a>.</p>
 
-<p>Referenced by <a class="el" href="adc__generic_8c_source.html#l00077">adc_generic_init()</a>, <a class="el" href="airspeed__adc_8c_source.html#l00057">airspeed_adc_init()</a>, <a class="el" href="aoa__adc_8c_source.html#l00066">aoa_adc_init()</a>, <a class="el" href="booz_2baro__board_8c_source.html#l00065">baro_init()</a>, <a class="el" href="electrical_8c_source.html#l00099">electrical_init()</a>, <a class="el" href="enose_8c_source.html#l00025">enose_init()</a>, <a class="el" href="humid__hih_8c_source.html#l00053">humid_hih_init()</a>, <a class="el" href="imu__analog_8c_source.html#l00030">imu_analog_init()</a>, <a class="el" href="infrared__adc_8c_source.html#l00071">infrared_adc_init()</a>, <a class="el" href="light__solar_8c_source.html#l00054">light_solar_init()</a>, <a class="el" href="light__temt_8c_source.html#l00049">light_temt_init()</a>, <a class="el" href="mf__ptu_8c_source.html#l00076">mf_ptu_init()</a>, <a class="el" href="sonar__adc_8c_source.html#l00056">sonar_adc_init()</a>, <a class="el" href="temp__adc_8c_source.html#l00115">temp_adc_init()</a>, and <a class="el" href="temp__tcouple__adc_8c_source.html#l00056">temp_tcouple_adc_init()</a>.</p>
+<p>Referenced by <a class="el" href="adc__generic_8c_source.html#l00077">adc_generic_init()</a>, <a class="el" href="airspeed__adc_8c_source.html#l00057">airspeed_adc_init()</a>, <a class="el" href="aoa__adc_8c_source.html#l00066">aoa_adc_init()</a>, <a class="el" href="booz_2baro__board_8c_source.html#l00065">baro_init()</a>, <a class="el" href="electrical_8c_source.html#l00099">electrical_init()</a>, <a class="el" href="enose_8c_source.html#l00025">enose_init()</a>, <a class="el" href="glide__wing__lock_8c_source.html#l00058">glide_wing_lock_init()</a>, <a class="el" href="humid__hih_8c_source.html#l00053">humid_hih_init()</a>, <a class="el" href="imu__analog_8c_source.html#l00030">imu_analog_init()</a>, <a class="el" href="infrared__adc_8c_source.html#l00071">infrared_adc_init()</a>, <a class="el" href="light__solar_8c_source.html#l00054">light_solar_init()</a>, <a class="el" href="light__temt_8c_source.html#l00049">light_temt_init()</a>, <a class="el" href="mf__ptu_8c_source.html#l00076">mf_ptu_init()</a>, <a class="el" href="sonar__adc_8c_source.html#l00056">sonar_adc_init()</a>, <a class="el" href="temp__adc_8c_source.html#l00129">temp_adc_init()</a>, <a class="el" href="temp__tcouple__adc_8c_source.html#l00056">temp_tcouple_adc_init()</a>, and <a class="el" href="vms__ecu__demo_8c_source.html#l00190">vms_ecu_demo_init()</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -325,7 +326,7 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="chibios_2mcu__periph_2adc__arch_8c_a289883844d6749adab1cee5aabe41824_icgraph.png" border="0" usemap="#chibios_2mcu__periph_2adc__arch_8c_a289883844d6749adab1cee5aabe41824_icgraph" alt=""/></div>
 <map name="chibios_2mcu__periph_2adc__arch_8c_a289883844d6749adab1cee5aabe41824_icgraph" id="chibios_2mcu__periph_2adc__arch_8c_a289883844d6749adab1cee5aabe41824_icgraph">
-<area shape="rect" id="node2" href="adc__generic_8c.html#a5d3cd37fdd77f995b25ed0837831e829" title="adc_generic_init" alt="" coords="203,5,329,32"/><area shape="rect" id="node3" href="airspeed__adc_8h.html#afa4a95f4df116ecb7c849a98d941d24d" title="airspeed_adc_init" alt="" coords="199,56,333,83"/><area shape="rect" id="node4" href="aoa__adc_8h.html#a32183c1b867389ea1b510c6a9bb6bb52" title="aoa_adc_init" alt="" coords="215,107,317,133"/><area shape="rect" id="node5" href="booz_2baro__board_8c.html#a9b25546908842f1d38fc56e438d46e21" title="baro_init" alt="" coords="227,157,305,184"/><area shape="rect" id="node6" href="electrical_8h.html#ac5e9a56281268bdf6ddec2143b25f16a" title="electrical_init" alt="" coords="213,208,319,235"/><area shape="rect" id="node11" href="enose_8c.html#a1c7e3e1d0fe5a0d5e5fe1364b1f2a100" title="enose_init" alt="" coords="223,259,309,285"/><area shape="rect" id="node12" href="humid__hih_8h.html#acb068afb2e3c2f0e3c6c1a7c3abeaddf" title="humid_hih_init" alt="" coords="209,309,323,336"/><area shape="rect" id="node13" href="imu__analog_8h.html#af0e5df5bbb77b49b8638056f6d101279" title="imu_analog_init" alt="" coords="205,360,327,387"/><area shape="rect" id="node14" href="subsystems_2sensors_2infrared__adc_8h.html#afd9b914e78df4722702ab0113752a2b0" title="Initialisation of ir. " alt="" coords="203,411,329,437"/><area shape="rect" id="node16" href="light__solar_8h.html#ac0e039b9f8ad2272b10b4129733d1114" title="light_solar_init" alt="" coords="209,461,323,488"/><area shape="rect" id="node17" href="light__temt_8h.html#a0cdfdd43940fde9fe395ea50cbacd148" title="light_temt_init" alt="" coords="209,512,323,539"/><area shape="rect" id="node18" href="mf__ptu_8h.html#a0f4e02c4cf993d86c38de1bebc67fcd5" title="Data acquisition module for Meteo France PTU board. " alt="" coords="219,563,313,589"/><area shape="rect" id="node19" href="sonar__adc_8h.html#a466b5be82e90d99245cf4be834f64c98" title="sonar_adc_init" alt="" coords="209,613,323,640"/><area shape="rect" id="node20" href="temp__adc_8h.html#a266db1bf5ea82dcb94e97eb562c18473" title="Temperature ADC initialize channels. " alt="" coords="210,664,322,691"/><area shape="rect" id="node21" href="temp__tcouple__adc_8h.html#ad9927446cc531cf79cbd60506e2b715c" title="temp_tcouple_adc_init" alt="" coords="183,715,349,741"/><area shape="rect" id="node7" href="rotorcraft_2main__fbw_8h.html#a092df25ac46a6a4ca72c023d8821f9b2" title="Main initialization. " alt="" coords="406,183,486,209"/><area shape="rect" id="node9" href="fixedwing_2main__fbw_8h.html#ad86b7fe577a2414df2c7a5a9222aa45a" title="init_fbw" alt="" coords="411,233,481,260"/><area shape="rect" id="node8" href="rotorcraft_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="551,183,605,209"/><area shape="rect" id="node10" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="543,233,613,260"/><area shape="rect" id="node15" href="infrared__adc_8c.html#a914de0b4811e25ca619529374d7fe3ba" title="infrared_init" alt="" coords="397,411,495,437"/></map>
+<area shape="rect" id="node2" href="adc__generic_8c.html#a5d3cd37fdd77f995b25ed0837831e829" title="adc_generic_init" alt="" coords="203,5,329,32"/><area shape="rect" id="node3" href="airspeed__adc_8h.html#afa4a95f4df116ecb7c849a98d941d24d" title="airspeed_adc_init" alt="" coords="199,56,333,83"/><area shape="rect" id="node4" href="aoa__adc_8h.html#a32183c1b867389ea1b510c6a9bb6bb52" title="aoa_adc_init" alt="" coords="215,107,317,133"/><area shape="rect" id="node5" href="booz_2baro__board_8c.html#a9b25546908842f1d38fc56e438d46e21" title="baro_init" alt="" coords="227,157,305,184"/><area shape="rect" id="node6" href="electrical_8h.html#ac5e9a56281268bdf6ddec2143b25f16a" title="electrical_init" alt="" coords="213,208,319,235"/><area shape="rect" id="node10" href="enose_8c.html#a1c7e3e1d0fe5a0d5e5fe1364b1f2a100" title="enose_init" alt="" coords="223,259,309,285"/><area shape="rect" id="node11" href="glide__wing__lock_8h.html#a4bc143fe844932b1a873e9d6b9ed5009" title="glide_wing_lock_init" alt="" coords="193,309,339,336"/><area shape="rect" id="node12" href="humid__hih_8h.html#acb068afb2e3c2f0e3c6c1a7c3abeaddf" title="humid_hih_init" alt="" coords="209,360,323,387"/><area shape="rect" id="node13" href="imu__analog_8h.html#af0e5df5bbb77b49b8638056f6d101279" title="imu_analog_init" alt="" coords="205,411,327,437"/><area shape="rect" id="node14" href="subsystems_2sensors_2infrared__adc_8h.html#afd9b914e78df4722702ab0113752a2b0" title="Initialisation of ir. " alt="" coords="203,461,329,488"/><area shape="rect" id="node16" href="light__solar_8h.html#ac0e039b9f8ad2272b10b4129733d1114" title="light_solar_init" alt="" coords="209,512,323,539"/><area shape="rect" id="node17" href="light__temt_8h.html#a0cdfdd43940fde9fe395ea50cbacd148" title="light_temt_init" alt="" coords="209,563,323,589"/><area shape="rect" id="node18" href="mf__ptu_8h.html#a0f4e02c4cf993d86c38de1bebc67fcd5" title="Data acquisition module for Meteo France PTU board. " alt="" coords="219,613,313,640"/><area shape="rect" id="node19" href="sonar__adc_8h.html#a466b5be82e90d99245cf4be834f64c98" title="sonar_adc_init" alt="" coords="209,664,323,691"/><area shape="rect" id="node20" href="temp__adc_8h.html#a266db1bf5ea82dcb94e97eb562c18473" title="Temperature ADC initialize channels. " alt="" coords="210,715,322,741"/><area shape="rect" id="node21" href="temp__tcouple__adc_8h.html#ad9927446cc531cf79cbd60506e2b715c" title="temp_tcouple_adc_init" alt="" coords="183,765,349,792"/><area shape="rect" id="node22" href="vms__ecu__demo_8h.html#a3c135b83d60db6b6b05aafa7de945095" title="vms_ecu_demo_init" alt="" coords="191,816,341,843"/><area shape="rect" id="node7" href="rotorcraft_2main__fbw_8h.html#a3719465edd56d2b587a6b340f29e4f90" title="Main initialization. " alt="" coords="406,183,486,209"/><area shape="rect" id="node8" href="fixedwing_2main__fbw_8h.html#ad86b7fe577a2414df2c7a5a9222aa45a" title="init_fbw" alt="" coords="411,233,481,260"/><area shape="rect" id="node9" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="543,233,613,260"/><area shape="rect" id="node15" href="infrared__adc_8c.html#a914de0b4811e25ca619529374d7fe3ba" title="infrared_init" alt="" coords="397,461,495,488"/></map>
 </div>
 </p>
 
@@ -349,7 +350,7 @@ Variables</h2></td></tr>
 <p>Starts conversions.</p>
 <p>Initialize ADC drivers, buffers and start conversion in the background </p>
 
-<p>Definition at line <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00286">286</a> of file <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html">adc_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00304">304</a> of file <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html">adc_arch.c</a>.</p>
 
 <p>Referenced by <a class="el" href="mcu_8c_source.html#l00076">mcu_init()</a>.</p>
 
@@ -360,7 +361,7 @@ Variables</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="chibios_2mcu__periph_2adc__arch_8c_a2b815e6730e8723a6d1d06d9ef8f31c0_icgraph.png" border="0" usemap="#chibios_2mcu__periph_2adc__arch_8c_a2b815e6730e8723a6d1d06d9ef8f31c0_icgraph" alt=""/></div>
 <map name="chibios_2mcu__periph_2adc__arch_8c_a2b815e6730e8723a6d1d06d9ef8f31c0_icgraph" id="chibios_2mcu__periph_2adc__arch_8c_a2b815e6730e8723a6d1d06d9ef8f31c0_icgraph">
-<area shape="rect" id="node2" href="group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b" title="Microcontroller peripherals initialization. " alt="" coords="124,56,200,83"/><area shape="rect" id="node3" href="lpc21_2uart__tunnel_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="261,5,315,32"/><area shape="rect" id="node4" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="248,56,328,83"/><area shape="rect" id="node9" href="fixedwing_2main__fbw_8h.html#ad86b7fe577a2414df2c7a5a9222aa45a" title="init_fbw" alt="" coords="253,107,323,133"/><area shape="rect" id="node5" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="416,5,471,32"/><area shape="rect" id="node6" href="nps__autopilot__rotorcraft_8c.html#a3348493e992edd2442581c1d09446b4b" title="nps_autopilot_init" alt="" coords="376,56,511,83"/><area shape="rect" id="node7" href="nps__main_8c.html#af28efef10cede3b66825b2dc2e4e7705" title="nps_main_init" alt="" coords="559,56,669,83"/><area shape="rect" id="node8" href="nps__main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="717,56,772,83"/><area shape="rect" id="node10" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="408,107,479,133"/></map>
+<area shape="rect" id="node2" href="group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b" title="Microcontroller peripherals initialization. " alt="" coords="124,56,200,83"/><area shape="rect" id="node3" href="lpc21_2uart__tunnel_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="261,5,315,32"/><area shape="rect" id="node4" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="248,56,328,83"/><area shape="rect" id="node8" href="fixedwing_2main__fbw_8h.html#ad86b7fe577a2414df2c7a5a9222aa45a" title="init_fbw" alt="" coords="253,107,323,133"/><area shape="rect" id="node5" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="416,5,471,32"/><area shape="rect" id="node6" href="nps__autopilot__rotorcraft_8c.html#a3348493e992edd2442581c1d09446b4b" title="nps_autopilot_init" alt="" coords="376,56,511,83"/><area shape="rect" id="node7" href="nps__main__hitl_8c.html#a72ef549ee35deec8c017e83d9de38f66" title="nps_radio_and_autopilot_init" alt="" coords="559,56,763,83"/><area shape="rect" id="node9" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="408,107,479,133"/></map>
 </div>
 </p>
 
@@ -416,9 +417,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00155">155</a> of file <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html">adc_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00171">171</a> of file <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html">adc_arch.c</a>.</p>
 
-<p>Referenced by <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00286">adc_init()</a>.</p>
+<p>Referenced by <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00304">adc_init()</a>.</p>
 
 <p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -427,7 +428,7 @@ Variables</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="chibios_2mcu__periph_2adc__arch_8c_ab20565c2f3d25af97a62849647c4cd71_icgraph.png" border="0" usemap="#chibios_2mcu__periph_2adc__arch_8c_ab20565c2f3d25af97a62849647c4cd71_icgraph" alt=""/></div>
 <map name="chibios_2mcu__periph_2adc__arch_8c_ab20565c2f3d25af97a62849647c4cd71_icgraph" id="chibios_2mcu__periph_2adc__arch_8c_ab20565c2f3d25af97a62849647c4cd71_icgraph">
-<area shape="rect" id="node2" href="adc_8h.html#a2b815e6730e8723a6d1d06d9ef8f31c0" title="Starts conversions. " alt="" coords="220,56,291,83"/><area shape="rect" id="node3" href="group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b" title="Microcontroller peripherals initialization. " alt="" coords="339,56,415,83"/><area shape="rect" id="node4" href="lpc21_2uart__tunnel_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="475,5,530,32"/><area shape="rect" id="node5" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="463,56,543,83"/><area shape="rect" id="node10" href="fixedwing_2main__fbw_8h.html#ad86b7fe577a2414df2c7a5a9222aa45a" title="init_fbw" alt="" coords="468,107,537,133"/><area shape="rect" id="node6" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="631,5,685,32"/><area shape="rect" id="node7" href="nps__autopilot__rotorcraft_8c.html#a3348493e992edd2442581c1d09446b4b" title="nps_autopilot_init" alt="" coords="591,56,725,83"/><area shape="rect" id="node8" href="nps__main_8c.html#af28efef10cede3b66825b2dc2e4e7705" title="nps_main_init" alt="" coords="773,56,884,83"/><area shape="rect" id="node9" href="nps__main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="932,56,987,83"/><area shape="rect" id="node11" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="623,107,693,133"/></map>
+<area shape="rect" id="node2" href="adc_8h.html#a2b815e6730e8723a6d1d06d9ef8f31c0" title="Starts conversions. " alt="" coords="220,56,291,83"/><area shape="rect" id="node3" href="group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b" title="Microcontroller peripherals initialization. " alt="" coords="339,56,415,83"/><area shape="rect" id="node4" href="lpc21_2uart__tunnel_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="475,5,530,32"/><area shape="rect" id="node5" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="463,56,543,83"/><area shape="rect" id="node9" href="fixedwing_2main__fbw_8h.html#ad86b7fe577a2414df2c7a5a9222aa45a" title="init_fbw" alt="" coords="468,107,537,133"/><area shape="rect" id="node6" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="631,5,685,32"/><area shape="rect" id="node7" href="nps__autopilot__rotorcraft_8c.html#a3348493e992edd2442581c1d09446b4b" title="nps_autopilot_init" alt="" coords="591,56,725,83"/><area shape="rect" id="node8" href="nps__main__hitl_8c.html#a72ef549ee35deec8c017e83d9de38f66" title="nps_radio_and_autopilot_init" alt="" coords="773,56,977,83"/><area shape="rect" id="node10" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="623,107,693,133"/></map>
 </div>
 </p>
 
@@ -471,9 +472,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00179">179</a> of file <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html">adc_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00195">195</a> of file <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html">adc_arch.c</a>.</p>
 
-<p>Referenced by <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00286">adc_init()</a>.</p>
+<p>Referenced by <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00304">adc_init()</a>.</p>
 
 <p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -482,7 +483,7 @@ Variables</h2></td></tr>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="chibios_2mcu__periph_2adc__arch_8c_aa4fef74b6c7509b76877e940657b2603_icgraph.png" border="0" usemap="#chibios_2mcu__periph_2adc__arch_8c_aa4fef74b6c7509b76877e940657b2603_icgraph" alt=""/></div>
 <map name="chibios_2mcu__periph_2adc__arch_8c_aa4fef74b6c7509b76877e940657b2603_icgraph" id="chibios_2mcu__periph_2adc__arch_8c_aa4fef74b6c7509b76877e940657b2603_icgraph">
-<area shape="rect" id="node2" href="adc_8h.html#a2b815e6730e8723a6d1d06d9ef8f31c0" title="Starts conversions. " alt="" coords="212,56,283,83"/><area shape="rect" id="node3" href="group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b" title="Microcontroller peripherals initialization. " alt="" coords="331,56,407,83"/><area shape="rect" id="node4" href="lpc21_2uart__tunnel_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="467,5,522,32"/><area shape="rect" id="node5" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="455,56,535,83"/><area shape="rect" id="node10" href="fixedwing_2main__fbw_8h.html#ad86b7fe577a2414df2c7a5a9222aa45a" title="init_fbw" alt="" coords="460,107,529,133"/><area shape="rect" id="node6" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="623,5,677,32"/><area shape="rect" id="node7" href="nps__autopilot__rotorcraft_8c.html#a3348493e992edd2442581c1d09446b4b" title="nps_autopilot_init" alt="" coords="583,56,717,83"/><area shape="rect" id="node8" href="nps__main_8c.html#af28efef10cede3b66825b2dc2e4e7705" title="nps_main_init" alt="" coords="765,56,876,83"/><area shape="rect" id="node9" href="nps__main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="924,56,979,83"/><area shape="rect" id="node11" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="615,107,685,133"/></map>
+<area shape="rect" id="node2" href="adc_8h.html#a2b815e6730e8723a6d1d06d9ef8f31c0" title="Starts conversions. " alt="" coords="212,56,283,83"/><area shape="rect" id="node3" href="group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b" title="Microcontroller peripherals initialization. " alt="" coords="331,56,407,83"/><area shape="rect" id="node4" href="lpc21_2uart__tunnel_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="467,5,522,32"/><area shape="rect" id="node5" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="455,56,535,83"/><area shape="rect" id="node9" href="fixedwing_2main__fbw_8h.html#ad86b7fe577a2414df2c7a5a9222aa45a" title="init_fbw" alt="" coords="460,107,529,133"/><area shape="rect" id="node6" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="623,5,677,32"/><area shape="rect" id="node7" href="nps__autopilot__rotorcraft_8c.html#a3348493e992edd2442581c1d09446b4b" title="nps_autopilot_init" alt="" coords="583,56,717,83"/><area shape="rect" id="node8" href="nps__main__hitl_8c.html#a72ef549ee35deec8c017e83d9de38f66" title="nps_radio_and_autopilot_init" alt="" coords="765,56,969,83"/><area shape="rect" id="node10" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="615,107,685,133"/></map>
 </div>
 </p>
 
@@ -523,11 +524,11 @@ Variables</h2></td></tr>
 <p>Adc error callback. </p>
 <p>Fired if DMA error happens or ADC overflows </p>
 
-<p>Definition at line <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00254">254</a> of file <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html">adc_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00270">270</a> of file <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html">adc_arch.c</a>.</p>
 
-<p>References <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00122">adc_error_flag</a>, and <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00123">adcp_err</a>.</p>
+<p>References <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00138">adc_error_flag</a>, and <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00139">adcp_err</a>.</p>
 
-<p>Referenced by <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00286">adc_init()</a>.</p>
+<p>Referenced by <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00304">adc_init()</a>.</p>
 
 <p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -536,9 +537,33 @@ Variables</h2></td></tr>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="chibios_2mcu__periph_2adc__arch_8c_ab33213b168f1b881ddc092b70d45e130_icgraph.png" border="0" usemap="#chibios_2mcu__periph_2adc__arch_8c_ab33213b168f1b881ddc092b70d45e130_icgraph" alt=""/></div>
 <map name="chibios_2mcu__periph_2adc__arch_8c_ab33213b168f1b881ddc092b70d45e130_icgraph" id="chibios_2mcu__periph_2adc__arch_8c_ab33213b168f1b881ddc092b70d45e130_icgraph">
-<area shape="rect" id="node2" href="adc_8h.html#a2b815e6730e8723a6d1d06d9ef8f31c0" title="Starts conversions. " alt="" coords="180,56,251,83"/><area shape="rect" id="node3" href="group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b" title="Microcontroller peripherals initialization. " alt="" coords="299,56,375,83"/><area shape="rect" id="node4" href="lpc21_2uart__tunnel_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="435,5,490,32"/><area shape="rect" id="node5" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="423,56,503,83"/><area shape="rect" id="node10" href="fixedwing_2main__fbw_8h.html#ad86b7fe577a2414df2c7a5a9222aa45a" title="init_fbw" alt="" coords="428,107,497,133"/><area shape="rect" id="node6" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="591,5,645,32"/><area shape="rect" id="node7" href="nps__autopilot__rotorcraft_8c.html#a3348493e992edd2442581c1d09446b4b" title="nps_autopilot_init" alt="" coords="551,56,685,83"/><area shape="rect" id="node8" href="nps__main_8c.html#af28efef10cede3b66825b2dc2e4e7705" title="nps_main_init" alt="" coords="733,56,844,83"/><area shape="rect" id="node9" href="nps__main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="892,56,947,83"/><area shape="rect" id="node11" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="583,107,653,133"/></map>
+<area shape="rect" id="node2" href="adc_8h.html#a2b815e6730e8723a6d1d06d9ef8f31c0" title="Starts conversions. " alt="" coords="180,56,251,83"/><area shape="rect" id="node3" href="group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b" title="Microcontroller peripherals initialization. " alt="" coords="299,56,375,83"/><area shape="rect" id="node4" href="lpc21_2uart__tunnel_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="435,5,490,32"/><area shape="rect" id="node5" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="423,56,503,83"/><area shape="rect" id="node9" href="fixedwing_2main__fbw_8h.html#ad86b7fe577a2414df2c7a5a9222aa45a" title="init_fbw" alt="" coords="428,107,497,133"/><area shape="rect" id="node6" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="591,5,645,32"/><area shape="rect" id="node7" href="nps__autopilot__rotorcraft_8c.html#a3348493e992edd2442581c1d09446b4b" title="nps_autopilot_init" alt="" coords="551,56,685,83"/><area shape="rect" id="node8" href="nps__main__hitl_8c.html#a72ef549ee35deec8c017e83d9de38f66" title="nps_radio_and_autopilot_init" alt="" coords="733,56,937,83"/><area shape="rect" id="node10" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="583,107,653,133"/></map>
 </div>
 </p>
+
+</div>
+</div>
+<a class="anchor" id="a9ca94b04798d83640f0b79ea81fe46a9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static IN_DMA_SECTION </td>
+          <td>(</td>
+          <td class="paramtype">adcsample_t&#160;</td>
+          <td class="paramname"><em>adc_samples</em>[ADC_NUM_CHANNELS *ADC_BUF_DEPTH]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -561,7 +586,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00133">133</a> of file <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html">adc_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00149">149</a> of file <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html">adc_arch.c</a>.</p>
 
 </div>
 </div>
@@ -583,9 +608,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00135">135</a> of file <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html">adc_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00151">151</a> of file <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html">adc_arch.c</a>.</p>
 
-<p>Referenced by <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00208">adc1callback()</a>.</p>
+<p>Referenced by <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00224">adc1callback()</a>.</p>
 
 </div>
 </div>
@@ -607,9 +632,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00134">134</a> of file <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html">adc_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00150">150</a> of file <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html">adc_arch.c</a>.</p>
 
-<p>Referenced by <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00208">adc1callback()</a>.</p>
+<p>Referenced by <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00224">adc1callback()</a>.</p>
 
 </div>
 </div>
@@ -633,9 +658,9 @@ Variables</h2></td></tr>
 
 <p>#endif </p>
 
-<p>Definition at line <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00071">71</a> of file <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html">adc_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00087">87</a> of file <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html">adc_arch.c</a>.</p>
 
-<p>Referenced by <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00286">adc_init()</a>.</p>
+<p>Referenced by <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00304">adc_init()</a>.</p>
 
 </div>
 </div>
@@ -649,33 +674,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00122">122</a> of file <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html">adc_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00138">138</a> of file <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html">adc_arch.c</a>.</p>
 
-<p>Referenced by <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00254">adcerrorcallback()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a6b25e8740ad658dcda81a939f89da843"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">adcsample_t adc_samples[<a class="el" href="chibios_2mcu__periph_2adc__arch_8h.html#ada9f09bbee2e15c2069f4c25ec74bed8">ADC_NUM_CHANNELS</a> *<a class="el" href="chibios_2mcu__periph_2adc__arch_8c.html#a6e829897b1929e18c1413dd484408d4a">ADC_BUF_DEPTH</a>]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00130">130</a> of file <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html">adc_arch.c</a>.</p>
-
-<p>Referenced by <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00286">adc_init()</a>.</p>
+<p>Referenced by <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00270">adcerrorcallback()</a>.</p>
 
 </div>
 </div>
@@ -699,9 +700,9 @@ Variables</h2></td></tr>
 
 <p>Configuration structure must be global. </p>
 
-<p>Definition at line <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00279">279</a> of file <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html">adc_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00297">297</a> of file <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html">adc_arch.c</a>.</p>
 
-<p>Referenced by <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00286">adc_init()</a>.</p>
+<p>Referenced by <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00304">adc_init()</a>.</p>
 
 </div>
 </div>
@@ -715,9 +716,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00123">123</a> of file <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html">adc_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00139">139</a> of file <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html">adc_arch.c</a>.</p>
 
-<p>Referenced by <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00254">adcerrorcallback()</a>.</p>
+<p>Referenced by <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00270">adcerrorcallback()</a>.</p>
 
 </div>
 </div>
@@ -727,7 +728,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_975986b9e0eb299e77243bf822f828ce.html">chibios</a></li><li class="navelem"><a class="el" href="dir_b82140776176b28f52d7ab660bc0e8ab.html">mcu_periph</a></li><li class="navelem"><a class="el" href="chibios_2mcu__periph_2adc__arch_8c.html">adc_arch.c</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:01:36 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:01:54 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -1,5 +1,6 @@
 var stm32_2mcu__periph_2gpio__arch_8h =
 [
+    [ "gpio_port_t", "stm32_2mcu__periph_2gpio__arch_8h.html#a0b1ea4c5dcb8c89237166d2e62be42de", null ],
     [ "gpio_enable_clock", "stm32_2mcu__periph_2gpio__arch_8h.html#a457a82963882d55568983cedd74c5ff2", null ],
     [ "gpio_setup_input", "stm32_2mcu__periph_2gpio__arch_8h.html#adf5626a74ea3720f4e640a960f5c947a", null ],
     [ "gpio_setup_input_pulldown", "stm32_2mcu__periph_2gpio__arch_8h.html#a2175656fe685e7547dddaedefbfe133b", null ],

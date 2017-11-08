@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -149,9 +149,9 @@ C. De Wagter A simple module showing what you can do with opencv on the bebop. <
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="cv__opencvdemo_8c_source.html#l00047">47</a> of file <a class="el" href="cv__opencvdemo_8c_source.html">cv_opencvdemo.c</a>.</p>
+<p>Definition at line <a class="el" href="cv__opencvdemo_8c_source.html#l00050">50</a> of file <a class="el" href="cv__opencvdemo_8c_source.html">cv_opencvdemo.c</a>.</p>
 
-<p>References <a class="el" href="cv_8c_source.html#l00045">cv_add_to_device()</a>, and <a class="el" href="cv__opencvdemo_8c_source.html#l00033">opencv_func()</a>.</p>
+<p>References <a class="el" href="cv_8c_source.html#l00046">cv_add_to_device()</a>, <a class="el" href="cv__opencvdemo_8c_source.html#l00037">opencv_func()</a>, and <a class="el" href="cv__opencvdemo_8c_source.html#l00031">OPENCVDEMO_FPS</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -160,7 +160,7 @@ C. De Wagter A simple module showing what you can do with opencv on the bebop. <
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="cv__opencvdemo_8h_ad6b89073e490f7f45751cf66f4b97c4b_cgraph.png" border="0" usemap="#cv__opencvdemo_8h_ad6b89073e490f7f45751cf66f4b97c4b_cgraph" alt=""/></div>
 <map name="cv__opencvdemo_8h_ad6b89073e490f7f45751cf66f4b97c4b_cgraph" id="cv__opencvdemo_8h_ad6b89073e490f7f45751cf66f4b97c4b_cgraph">
-<area shape="rect" id="node2" href="cv_8c.html#ada9827c953db23005383fa57f742e994" title="cv_add_to_device" alt="" coords="184,59,319,85"/><area shape="rect" id="node7" href="cv__opencvdemo_8c.html#a5effea43b9cdfb2509b018a4d31da0f2" title="opencv_func" alt="" coords="200,111,303,137"/><area shape="rect" id="node3" href="cv_8h.html#a9e0afd727457cecc0e207aa03c4d48a5" title="add_video_device" alt="" coords="367,57,501,84"/><area shape="rect" id="node4" href="video__thread_8c.html#acc71ed66abdc3fa0cecd95cc408c670e" title="initialize_camera" alt="" coords="558,56,687,83"/><area shape="rect" id="node5" href="v4l2_8c.html#a3798643b3e99cd32ef724fc928d92e51" title="Initialize a V4L2 subdevice. " alt="" coords="755,5,881,32"/><area shape="rect" id="node6" href="v4l2_8c.html#a1f683e79a4639d4e189f059f6c4ae268" title="Initialize a V4L2(Video for Linux 2) device. " alt="" coords="781,56,855,83"/><area shape="rect" id="node8" href="opencv__example_8cpp.html#a6e9d13abcf561943ebba60b0b5f43565" title="opencv_example" alt="" coords="369,111,499,137"/><area shape="rect" id="node9" href="opencv__image__functions_8cpp.html#a8a2863d725e738371ce5da4c94b37bc6" title="colorrgb_opencv_to\l_yuv422" alt="" coords="549,107,696,149"/><area shape="rect" id="node10" href="opencv__image__functions_8cpp.html#a003b51cf5281baaf8d7ffdf532d2526a" title="coloryuv_opencv_to\l_yuv422" alt="" coords="744,107,892,149"/></map>
+<area shape="rect" id="node2" href="cv_8c.html#aee4ecc7b59c1526a024f91a46a34ff45" title="cv_add_to_device" alt="" coords="184,59,319,85"/><area shape="rect" id="node7" href="cv__opencvdemo_8c.html#a5effea43b9cdfb2509b018a4d31da0f2" title="opencv_func" alt="" coords="200,111,303,137"/><area shape="rect" id="node3" href="cv_8h.html#a9e0afd727457cecc0e207aa03c4d48a5" title="Keep track of video devices added by modules. " alt="" coords="367,57,501,84"/><area shape="rect" id="node4" href="video__thread_8c.html#acc71ed66abdc3fa0cecd95cc408c670e" title="initialize_camera" alt="" coords="558,56,687,83"/><area shape="rect" id="node5" href="v4l2_8c.html#a3798643b3e99cd32ef724fc928d92e51" title="Initialize a V4L2 subdevice. " alt="" coords="755,5,881,32"/><area shape="rect" id="node6" href="v4l2_8c.html#a1f683e79a4639d4e189f059f6c4ae268" title="Initialize a V4L2(Video for Linux 2) device. " alt="" coords="781,56,855,83"/><area shape="rect" id="node8" href="opencv__example_8cpp.html#a6e9d13abcf561943ebba60b0b5f43565" title="opencv_example" alt="" coords="369,111,499,137"/><area shape="rect" id="node9" href="opencv__image__functions_8cpp.html#a8a2863d725e738371ce5da4c94b37bc6" title="colorrgb_opencv_to\l_yuv422" alt="" coords="549,107,696,149"/><area shape="rect" id="node10" href="opencv__image__functions_8cpp.html#a003b51cf5281baaf8d7ffdf532d2526a" title="coloryuv_opencv_to\l_yuv422" alt="" coords="744,107,892,149"/></map>
 </div>
 </p>
 
@@ -172,7 +172,7 @@ C. De Wagter A simple module showing what you can do with opencv on the bebop. <
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_304e79c9f5d09ea65a2f55aafb6a6b9d.html">computer_vision</a></li><li class="navelem"><a class="el" href="cv__opencvdemo_8h.html">cv_opencvdemo.h</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:01:53 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:02:16 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

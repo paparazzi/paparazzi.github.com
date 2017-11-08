@@ -1,5 +1,7 @@
 var colorfilter_8c =
 [
+    [ "COLORFILTER_FPS", "colorfilter_8c.html#a5a295f1f80434acb03d99955a6b7613c", null ],
+    [ "COLORFILTER_SEND_OBSTACLE", "colorfilter_8c.html#a39d36b2017d849527027efde107473cc", null ],
     [ "colorfilter_func", "colorfilter_8c.html#a4f6ce70f175c9d88381bbcc472ccc264", null ],
     [ "colorfilter_init", "colorfilter_8c.html#ab8b6b333c3f84d7497aef5629a2e4453", null ],
     [ "color_cb_max", "colorfilter_8c.html#a028a785eb4e92e36a242baac2c592b6b", null ],

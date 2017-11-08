@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>Paparazzi UAS: sw/airborne/modules/servo_switch/auto1_commands.c File Reference</title>
+<title>Paparazzi UAS: sw/airborne/modules/switching/auto1_commands.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -113,16 +113,16 @@ $(document).ready(function(){initNavTree('auto1__commands_8c.html','');});
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="auto1__commands_8h_source.html">auto1_commands.h</a>&quot;</code><br />
 <code>#include &quot;generated/airframe.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="fixedwing_2autopilot_8h_source.html">firmwares/fixedwing/autopilot.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="autopilot_8h_source.html">autopilot.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="inter__mcu_8h_source.html">inter_mcu.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for auto1_commands.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="auto1__commands_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2servo__switch_2auto1__commands_8c" alt=""/></div>
-<map name="sw_2airborne_2modules_2servo__switch_2auto1__commands_8c" id="sw_2airborne_2modules_2servo__switch_2auto1__commands_8c">
-<area shape="rect" id="node2" href="auto1__commands_8h.html" title="Enable AUTO1 commands flaps and hatch from RC. " alt="" coords="5,117,156,143"/><area shape="rect" id="node4" href="fixedwing_2autopilot_8h.html" title="Fixedwing autopilot modes. " alt="" coords="231,109,378,151"/><area shape="rect" id="node10" href="inter__mcu_8h.html" title="Communication between fbw and ap processes. " alt="" coords="402,117,501,143"/><area shape="rect" id="node5" href="inttypes_8h.html" title="inttypes.h" alt="" coords="214,273,299,300"/><area shape="rect" id="node7" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="257,199,353,225"/><area shape="rect" id="node8" href="settings_8h.html" title="Persistent settings interface. " alt="" coords="428,199,595,225"/></map>
+<div class="center"><img src="auto1__commands_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2switching_2auto1__commands_8c" alt=""/></div>
+<map name="sw_2airborne_2modules_2switching_2auto1__commands_8c" id="sw_2airborne_2modules_2switching_2auto1__commands_8c">
+<area shape="rect" id="node2" href="auto1__commands_8h.html" title="Enable AUTO1 commands flaps and hatch from RC. " alt="" coords="223,95,373,121"/><area shape="rect" id="node4" href="autopilot_8h.html" title="Core autopilot interface common to all firmwares. " alt="" coords="449,95,539,121"/><area shape="rect" id="node25" href="inter__mcu_8h.html" title="Communication between fbw and ap processes. " alt="" coords="563,95,662,121"/><area shape="rect" id="node6" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="719,169,815,196"/><area shape="rect" id="node8" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="1154,169,1221,196"/><area shape="rect" id="node7" href="inttypes_8h.html" title="inttypes.h" alt="" coords="719,251,805,278"/><area shape="rect" id="node9" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="1131,333,1310,360"/><area shape="rect" id="node15" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="1388,333,1579,360"/><area shape="rect" id="node18" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="1055,244,1205,285"/><area shape="rect" id="node20" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="880,244,1031,285"/><area shape="rect" id="node21" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="1281,244,1445,285"/><area shape="rect" id="node10" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="1385,408,1539,435"/><area shape="rect" id="node13" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="1159,408,1309,435"/><area shape="rect" id="node19" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="931,333,1055,360"/></map>
 </div>
 </div>
 <p><a href="auto1__commands_8c_source.html">Go to the source code of this file.</a></p>
@@ -149,7 +149,18 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="auto1__commands_8c_source.html#l00028">28</a> of file <a class="el" href="auto1__commands_8c_source.html">auto1_commands.c</a>.</p>
 
-<p>References <a class="el" href="fixedwing_2autopilot_8c_source.html#l00041">pprz_mode</a>, and <a class="el" href="fixedwing_2autopilot_8h_source.html#l00051">PPRZ_MODE_AUTO1</a>.</p>
+<p>References <a class="el" href="fixedwing_2autopilot__static_8h_source.html#l00037">AP_MODE_AUTO1</a>, <a class="el" href="autopilot_8c_source.html#l00179">autopilot_get_mode()</a>, <a class="el" href="sim_2subsystems_2radio__control_2spektrum__arch_8h_source.html#l00048">RADIO_AUX1</a>, <a class="el" href="sim_2subsystems_2radio__control_2spektrum__arch_8h_source.html#l00049">RADIO_AUX2</a>, <a class="el" href="sim_2subsystems_2radio__control_2spektrum__arch_8h_source.html#l00050">RADIO_AUX3</a>, <a class="el" href="sim_2subsystems_2radio__control_2spektrum__arch_8h_source.html#l00051">RADIO_AUX4</a>, <a class="el" href="sim_2subsystems_2radio__control_2spektrum__arch_8h_source.html#l00052">RADIO_AUX5</a>, <a class="el" href="sim_2subsystems_2radio__control_2spektrum__arch_8h_source.html#l00053">RADIO_AUX6</a>, <a class="el" href="sim_2subsystems_2radio__control_2spektrum__arch_8h_source.html#l00054">RADIO_AUX7</a>, <a class="el" href="sim_2subsystems_2radio__control_2spektrum__arch_8h_source.html#l00047">RADIO_FLAP</a>, and <a class="el" href="sim_2subsystems_2radio__control_2spektrum__arch_8h_source.html#l00046">RADIO_GEAR</a>.</p>
+
+<p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="auto1__commands_8c_aaa4ab58fd3d0ae4cce65e11d5c9c7a5f_cgraph.png" border="0" usemap="#auto1__commands_8c_aaa4ab58fd3d0ae4cce65e11d5c9c7a5f_cgraph" alt=""/></div>
+<map name="auto1__commands_8c_aaa4ab58fd3d0ae4cce65e11d5c9c7a5f_cgraph" id="auto1__commands_8c_aaa4ab58fd3d0ae4cce65e11d5c9c7a5f_cgraph">
+<area shape="rect" id="node2" href="autopilot_8c.html#a23af2ac2d4bcb9b71c869a409de61cc4" title="get autopilot mode " alt="" coords="248,5,399,32"/></map>
+</div>
+</p>
 
 </div>
 </div>
@@ -158,8 +169,8 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_55eebefe33cb2d47e888e33b78ad8bcf.html">servo_switch</a></li><li class="navelem"><a class="el" href="auto1__commands_8c.html">auto1_commands.c</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:02:05 for Paparazzi UAS by
+    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_48e2729a7857fbd238afa6214b1fc763.html">switching</a></li><li class="navelem"><a class="el" href="auto1__commands_8c.html">auto1_commands.c</a></li>
+    <li class="footer">Generated on Wed Nov 8 2017 10:02:33 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

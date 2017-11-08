@@ -32,6 +32,7 @@ var uart_8h =
     [ "uart_check_free_space", "uart_8h.html#a0e5faeb6fba6c9662707c445a2e27652", null ],
     [ "uart_getch", "uart_8h.html#adb9a60ec94a31a08e6454ccf64f24039", null ],
     [ "uart_periph_init", "uart_8h.html#a43baf084a9bcc968ef00790e25becbb7", null ],
+    [ "uart_periph_invert_data_logic", "uart_8h.html#a495eeb8e49294a839ad8236f5d0de1dc", null ],
     [ "uart_periph_set_baudrate", "uart_8h.html#a3eff2a82ddc632e5626c04ad4e717e3b", null ],
     [ "uart_periph_set_bits_stop_parity", "uart_8h.html#a0cdaf8266fcef9b52d422621b36413d6", null ],
     [ "uart_periph_set_mode", "uart_8h.html#a39c8427d611bb45f1d3ba4e5ecc6654e", null ],

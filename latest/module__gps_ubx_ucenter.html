@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -118,7 +118,8 @@ Example for airframe file</h1>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;  &lt;define name=&quot;GPS_UBX_UCENTER_RATE&quot; value=&quot;250&quot; /&gt;</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;  &lt;define name=&quot;GPS_UBX_NAV5_DYNAMICS&quot; value=&quot;NAV5_DYN_PORTABLE|NAV5_DYN_FIXED|NAV5_DYN_STATIONARY|NAV5_DYN_PEDESTRIAN|NAV5_DYN_AUTOMOTIVE|NAV5_DYN_SEA|NAV5_DYN_AIRBORNE_1G|NAV5_DYN_AIRBORNE_2G|NAV5_DYN_AIRBORNE_4G&quot; /&gt;</div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;  &lt;define name=&quot;USE_GPS_UBX_RXM_RAW&quot; /&gt;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;&lt;/module&gt;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;  &lt;define name=&quot;GPS_UBX_ENABLE_NMEA_DATA_MASK&quot; value=&quot;0x00|0xff&quot; /&gt;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;&lt;/module&gt;</div>
 </div><!-- fragment --> <h1><a class="anchor" id="configuration__gps_ubx_ucenter"></a>
 Module configuration options</h1>
 <h2><a class="anchor" id="define"></a>
@@ -130,6 +131,8 @@ Define Options</h2>
  Description: Dynamic model used by ublox GPS filter. Default:NAV5_DYN_AIRBORNE_2G</li>
 <li><b>name:</b> <code>USE_GPS_UBX_RXM_RAW</code> <b>value:</b> <em>None</em> <br />
  Description: Activate raw measurments (only available on U-Blox T versions)</li>
+<li><b>name:</b> <code>GPS_UBX_ENABLE_NMEA_DATA_MASK</code> <b>value:</b> <em>0x00|0xff</em> <br />
+ Description: NMEA is disabled by default (0x00). To enable NMEA and UBX, set MASK to 0xff.</li>
 </ul>
 <h1><a class="anchor" id="dependencies__gps_ubx_ucenter"></a>
 Dependencies</h1>
@@ -174,7 +177,7 @@ Source Files</h2>
 Raw gps_ubx_ucenter.xml file:</h2>
 <div class="fragment"><div class="line">&lt;!DOCTYPE module SYSTEM &quot;module.dtd&quot;&gt;</div>
 <div class="line"></div>
-<div class="line">&lt;module name=&quot;gps_ubx&quot; dir=&quot;gps&quot;&gt;</div>
+<div class="line">&lt;module name=&quot;gps_ubx_ucenter&quot; dir=&quot;gps&quot;&gt;</div>
 <div class="line">  &lt;doc&gt;</div>
 <div class="line">    &lt;description&gt;</div>
 <div class="line">Ublox GPS autoconfiguration.</div>
@@ -191,6 +194,7 @@ Raw gps_ubx_ucenter.xml file:</h2>
 <div class="line">            value=&quot;NAV5_DYN_PORTABLE|NAV5_DYN_FIXED|NAV5_DYN_STATIONARY|NAV5_DYN_PEDESTRIAN|NAV5_DYN_AUTOMOTIVE|NAV5_DYN_SEA|NAV5_DYN_AIRBORNE_1G|NAV5_DYN_AIRBORNE_2G|NAV5_DYN_AIRBORNE_4G&quot;</div>
 <div class="line">            description=&quot;Dynamic model used by ublox GPS filter. Default:NAV5_DYN_AIRBORNE_2G&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;USE_GPS_UBX_RXM_RAW&quot; description=&quot;Activate raw measurments (only available on U-Blox T versions)&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;GPS_UBX_ENABLE_NMEA_DATA_MASK&quot; value=&quot;0x00|0xff&quot; description=&quot;NMEA is disabled by default (0x00). To enable NMEA and UBX, set MASK to 0xff.&quot;/&gt;</div>
 <div class="line">  &lt;/doc&gt;</div>
 <div class="line"></div>
 <div class="line">  &lt;settings&gt;</div>
@@ -213,7 +217,7 @@ Raw gps_ubx_ucenter.xml file:</h2>
 <div class="line">  &lt;/header&gt;</div>
 <div class="line">  &lt;init fun=&quot;gps_ubx_ucenter_init()&quot;/&gt;</div>
 <div class="line">  &lt;periodic fun=&quot;gps_ubx_ucenter_periodic()&quot; start=&quot;gps_ubx_ucenter_init()&quot; freq=&quot;4.&quot; autorun=&quot;TRUE&quot;/&gt;</div>
-<div class="line">  &lt;makefile target=&quot;ap&quot;&gt;</div>
+<div class="line">  &lt;makefile target=&quot;ap|fbw&quot;&gt;</div>
 <div class="line">    &lt;file name=&quot;gps_ubx_ucenter.c&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;GPS_UBX_UCENTER&quot;/&gt;</div>
 <div class="line">  &lt;/makefile&gt;</div>
@@ -226,7 +230,7 @@ Raw gps_ubx_ucenter.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:02:18 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:02:48 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

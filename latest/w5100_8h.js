@@ -17,7 +17,6 @@ var w5100_8h =
     [ "W5100_BUFFER_NUM", "w5100_8h.html#ac8228007507bc3d4724a8ad3a9ba91b3", null ],
     [ "W5100_RX_BUFFER_SIZE", "w5100_8h.html#a69f74830d4721e548a692322b86ccf54", null ],
     [ "W5100_TX_BUFFER_SIZE", "w5100_8h.html#a0c5eb0f23b68f787843e4f74561d7bb2", null ],
-    [ "W5100CheckAndParse", "w5100_8h.html#ae42957e4c5c290503a90b1e8ea4c6220", null ],
     [ "W5100Status", "w5100_8h.html#a1b86a774f206095259ed0b6034d24c60", [
       [ "W5100StatusUninit", "w5100_8h.html#a1b86a774f206095259ed0b6034d24c60add68bba90146d71b9a76a2bafdc99aa8", null ],
       [ "W5100StatusIdle", "w5100_8h.html#a1b86a774f206095259ed0b6034d24c60a6a38ad46c46871635bc8259ced43cac2", null ],
@@ -25,6 +24,7 @@ var w5100_8h =
     ] ],
     [ "w5100_ch_available", "w5100_8h.html#aa03fab8432b75178c2d37da11f8444f3", null ],
     [ "w5100_check_and_parse", "w5100_8h.html#afdd593c03d1555eeaeb9252463c6d8e4", null ],
+    [ "w5100_event", "w5100_8h.html#a7266971e7bc00efad150ab73bbfc8c29", null ],
     [ "w5100_init", "w5100_8h.html#a3a4ec6731e43710788d3e51f7749259c", null ],
     [ "w5100_read_buffer", "w5100_8h.html#a2ae213a79bee0946b566b34f16fa543c", null ],
     [ "w5100_receive", "w5100_8h.html#abf3016ffe8faf50c1bf56f6f21ceb261", null ],

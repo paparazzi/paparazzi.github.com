@@ -19,7 +19,6 @@ var sim__ap_8c =
     [ "gps_nb_ovrn", "sim__ap_8c.html#af998d186c77bb7530e38d3fd4e7eee2a", null ],
     [ "inflight_calib_mode", "sim__ap_8c.html#a95020ddbde5c388f5bee16293e28dbf3", null ],
     [ "ir_estim_mode", "sim__ap_8c.html#a6f93a5bd7f409f85e455deb40b9e7b44", null ],
-    [ "launch", "sim__ap_8c.html#a970273b8dbea201391088dc6f3a5a401", null ],
     [ "link_fbw_fbw_nb_err", "sim__ap_8c.html#a217e6264f30030ff96c6488719497c3e", null ],
     [ "link_fbw_nb_err", "sim__ap_8c.html#ac3614ddc1d6b6d3c72f8088bcf8aede4", null ],
     [ "rc_event_1", "sim__ap_8c.html#a5adf6b3ac97d78509216e9495f1131fc", null ],

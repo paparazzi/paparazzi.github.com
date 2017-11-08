@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -182,10 +182,9 @@ $(document).ready(function(){initNavTree('actuators__shared__arch_8h_source.html
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="actuators__shared__arch_8h.html#a5845163f5b2bb32af33d32280b7c40be">actuators_pwm_arch_channel_init</a>(<a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> timer_peripheral, <span class="keyword">enum</span> tim_oc_id oc_id);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="actuators__shared__arch_8h.html#af427e4bd9cbac365246675a3dab8e548">set_servo_timer</a>(<a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> <a class="code" href="subsystems_2datalink_2superbitrf_8h.html#a6f73a08fb0dcddf86f801eca32b4dd11">timer</a>, <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> period, <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> channels_mask);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="actuators__shared__arch_8h.html#af427e4bd9cbac365246675a3dab8e548">set_servo_timer</a>(<a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> timer, <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> period, <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> channels_mask);</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* ACTUATORS_PWM_SHARED_ARCH_H */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="subsystems_2datalink_2superbitrf_8h_html_a6f73a08fb0dcddf86f801eca32b4dd11"><div class="ttname"><a href="subsystems_2datalink_2superbitrf_8h.html#a6f73a08fb0dcddf86f801eca32b4dd11">SuperbitRF::timer</a></div><div class="ttdeci">uint32_t timer</div><div class="ttdoc">The timer in microseconds. </div><div class="ttdef"><b>Definition:</b> <a href="subsystems_2datalink_2superbitrf_8h_source.html#l00080">superbitrf.h:80</a></div></div>
 <div class="ttc" id="types_8h_html_a06896e8c53f721507066c079052171f8"><div class="ttname"><a href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a></div><div class="ttdeci">unsigned long uint32_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00018">types.h:18</a></div></div>
 <div class="ttc" id="std_8h_html"><div class="ttname"><a href="std_8h.html">std.h</a></div></div>
 <div class="ttc" id="types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00014">types.h:14</a></div></div>
@@ -197,7 +196,7 @@ $(document).ready(function(){initNavTree('actuators__shared__arch_8h_source.html
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_ebfa5059daba0d85a68f1520147b1a51.html">stm32</a></li><li class="navelem"><a class="el" href="dir_71548ae744da26ac2c7ca213b679dc43.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_25ba966e11d2062039182252e5025889.html">actuators</a></li><li class="navelem"><a class="el" href="actuators__shared__arch_8h.html">actuators_shared_arch.h</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:01:15 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:01:28 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

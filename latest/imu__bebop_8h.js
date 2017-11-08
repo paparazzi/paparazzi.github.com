@@ -4,6 +4,8 @@ var imu__bebop_8h =
       [ "ak", "imu__bebop_8h.html#ae2c1b9ecb71e9207e031dcf67278278e", null ],
       [ "mpu", "imu__bebop_8h.html#af6183a8c87b33c445406c3d18f6e30ed", null ]
     ] ],
+    [ "BEBOP_ACCEL_RANGE", "imu__bebop_8h.html#a70a016cc48bdbc25cbe6efbf5c26b7d1", null ],
+    [ "BEBOP_GYRO_RANGE", "imu__bebop_8h.html#aa841c1a66da7ff3edb957875907ddc07", null ],
     [ "IMU_ACCEL_X_SENS", "imu__bebop_8h.html#a8ac88fc00cde506229b92c6a1e2c3122", null ],
     [ "IMU_ACCEL_X_SENS_DEN", "imu__bebop_8h.html#a8acf299c1bfb2daa92b1894556ca50ad", null ],
     [ "IMU_ACCEL_X_SENS_NUM", "imu__bebop_8h.html#ada91099469f16df2d8aeafa82d365c4b", null ],

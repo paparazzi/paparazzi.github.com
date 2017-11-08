@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -168,6 +168,9 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 <li>MAC_USE_ZERO_COPY
 : <a class="el" href="group__HAL__CONF.html#gad763d9426413cf2fe3922ebb8578bc59">halconf.h</a>
 </li>
+<li>made_table
+: <a class="el" href="actuators__xvert_8c.html#a9516f6e65064bf13966eee7076ac1fca">actuators_xvert.c</a>
+</li>
 <li>MAG_BFP_OF_REAL
 : <a class="el" href="group__math__algebra__int.html#ga7a246ed59b41685b79922379c91f5f08">pprz_algebra_int.h</a>
 </li>
@@ -175,20 +178,75 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 : <a class="el" href="group__math__geodetic__wmm.html#ga1b31a452ada68c619861da2143d4998e">pprz_geodetic_wmm2015.c</a>
 , <a class="el" href="group__math__geodetic__wmm.html#ga1b31a452ada68c619861da2143d4998e">pprz_geodetic_wmm2015.h</a>
 </li>
+<li>mag_calib
+: <a class="el" href="mag__calib__ukf_8c.html#ab4eb0696bdb4f59b3a212791a759af84">mag_calib_ukf.c</a>
+</li>
+<li>mag_calib_hotstart_read()
+: <a class="el" href="mag__calib__ukf_8c.html#a6fa73d1e2e95e68a541d76fb4f44f98c">mag_calib_ukf.c</a>
+, <a class="el" href="mag__calib__ukf_8h.html#a6fa73d1e2e95e68a541d76fb4f44f98c">mag_calib_ukf.h</a>
+</li>
+<li>mag_calib_hotstart_write()
+: <a class="el" href="mag__calib__ukf_8c.html#af831c65cede764ed6962979a23577585">mag_calib_ukf.c</a>
+, <a class="el" href="mag__calib__ukf_8h.html#af831c65cede764ed6962979a23577585">mag_calib_ukf.h</a>
+</li>
+<li>mag_calib_send_state()
+: <a class="el" href="mag__calib__ukf_8c.html#a1162353bd0b8570f7ee7f0f45e845d09">mag_calib_ukf.c</a>
+, <a class="el" href="mag__calib__ukf_8h.html#a1162353bd0b8570f7ee7f0f45e845d09">mag_calib_ukf.h</a>
+</li>
+<li>MAG_CALIB_UKF_ABI_BIND_ID
+: <a class="el" href="mag__calib__ukf_8c.html#a78d16e24fdce0e0b88683a58a85a7cc5">mag_calib_ukf.c</a>
+</li>
+<li>MAG_CALIB_UKF_HOTSTART
+: <a class="el" href="mag__calib__ukf_8c.html#a92478ddcbe1c2f188175042d0618d09b">mag_calib_ukf.c</a>
+</li>
+<li>MAG_CALIB_UKF_HOTSTART_SAVE_FILE
+: <a class="el" href="mag__calib__ukf_8c.html#a40d5e0e727a3a460bf274b9104570e4b">mag_calib_ukf.c</a>
+</li>
+<li>MAG_CALIB_UKF_ID
+: <a class="el" href="abi__sender__ids_8h.html#ae841f83efe6d9e822cc5379df3a8a050">abi_sender_ids.h</a>
+</li>
+<li>mag_calib_ukf_init()
+: <a class="el" href="mag__calib__ukf_8c.html#a0398977c266b1abac931ff429ee2ffb8">mag_calib_ukf.c</a>
+, <a class="el" href="mag__calib__ukf_8h.html#a0398977c266b1abac931ff429ee2ffb8">mag_calib_ukf.h</a>
+</li>
+<li>MAG_CALIB_UKF_NOISE_RMS
+: <a class="el" href="mag__calib__ukf_8c.html#aaf0fe3b526607344d16b88fde3a5fc5e">mag_calib_ukf.c</a>
+</li>
+<li>MAG_CALIB_UKF_NORM
+: <a class="el" href="mag__calib__ukf_8c.html#af9a0eaa30199a9ab76623d8f99084f17">mag_calib_ukf.c</a>
+</li>
+<li>mag_calib_ukf_reset_state
+: <a class="el" href="mag__calib__ukf_8c.html#a758369f2c49aebbf606a85ef5d4e78ff">mag_calib_ukf.c</a>
+, <a class="el" href="mag__calib__ukf_8h.html#a758369f2c49aebbf606a85ef5d4e78ff">mag_calib_ukf.h</a>
+</li>
+<li>mag_calib_ukf_run()
+: <a class="el" href="mag__calib__ukf_8c.html#ae7d76e150aae78dee055b5155d7c5af0">mag_calib_ukf.c</a>
+</li>
+<li>mag_calib_ukf_send_state
+: <a class="el" href="mag__calib__ukf_8c.html#a2d3cad7740a5a10f8c03bdfbbe0be047">mag_calib_ukf.c</a>
+, <a class="el" href="mag__calib__ukf_8h.html#a2d3cad7740a5a10f8c03bdfbbe0be047">mag_calib_ukf.h</a>
+</li>
+<li>MAG_CALIB_UKF_VERBOSE
+: <a class="el" href="mag__calib__ukf_8c.html#a7df8de138003cb2b3a6a47eabb77bfff">mag_calib_ukf.c</a>
+</li>
+<li>mag_calib_update_field()
+: <a class="el" href="mag__calib__ukf_8c.html#a65dbf03314c2cc49a8657a02cb7db8b3">mag_calib_ukf.c</a>
+</li>
 <li>mag_cb()
-: <a class="el" href="ins__float__invariant__wrapper_8c.html#a49cc1e545848b85016af530049991c02">ins_float_invariant_wrapper.c</a>
-, <a class="el" href="ahrs__float__cmpl__wrapper_8c.html#a49cc1e545848b85016af530049991c02">ahrs_float_cmpl_wrapper.c</a>
+: <a class="el" href="ahrs__float__cmpl__wrapper_8c.html#a49cc1e545848b85016af530049991c02">ahrs_float_cmpl_wrapper.c</a>
 , <a class="el" href="ahrs__float__dcm__wrapper_8c.html#a49cc1e545848b85016af530049991c02">ahrs_float_dcm_wrapper.c</a>
 , <a class="el" href="ahrs__float__invariant__wrapper_8c.html#a49cc1e545848b85016af530049991c02">ahrs_float_invariant_wrapper.c</a>
 , <a class="el" href="ahrs__float__mlkf__wrapper_8c.html#a49cc1e545848b85016af530049991c02">ahrs_float_mlkf_wrapper.c</a>
 , <a class="el" href="ahrs__int__cmpl__euler__wrapper_8c.html#a49cc1e545848b85016af530049991c02">ahrs_int_cmpl_euler_wrapper.c</a>
 , <a class="el" href="ahrs__int__cmpl__quat__wrapper_8c.html#a49cc1e545848b85016af530049991c02">ahrs_int_cmpl_quat_wrapper.c</a>
+, <a class="el" href="ins__float__invariant__wrapper_8c.html#a49cc1e545848b85016af530049991c02">ins_float_invariant_wrapper.c</a>
 </li>
 <li>mag_eoc()
 : <a class="el" href="stm32_2peripherals_2hmc5843__arch_8h.html#acd369327ebe1b867cebf4b3dc17bd37d">hmc5843_arch.h</a>
 </li>
 <li>mag_ev
-: <a class="el" href="ahrs__float__cmpl__wrapper_8c.html#a44d506760598e8c18e5da6e52dfc6b0d">ahrs_float_cmpl_wrapper.c</a>
+: <a class="el" href="mag__calib__ukf_8c.html#a44d506760598e8c18e5da6e52dfc6b0d">mag_calib_ukf.c</a>
+, <a class="el" href="ahrs__float__cmpl__wrapper_8c.html#a44d506760598e8c18e5da6e52dfc6b0d">ahrs_float_cmpl_wrapper.c</a>
 , <a class="el" href="ahrs__float__dcm__wrapper_8c.html#a44d506760598e8c18e5da6e52dfc6b0d">ahrs_float_dcm_wrapper.c</a>
 , <a class="el" href="ahrs__float__invariant__wrapper_8c.html#a44d506760598e8c18e5da6e52dfc6b0d">ahrs_float_invariant_wrapper.c</a>
 , <a class="el" href="ahrs__float__mlkf__wrapper_8c.html#a44d506760598e8c18e5da6e52dfc6b0d">ahrs_float_mlkf_wrapper.c</a>
@@ -280,10 +338,14 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 : <a class="el" href="group__math__algebra__generic.html#ga0e824674ba257f0d7023879446a14f89">pprz_algebra.h</a>
 </li>
 <li>main()
-: <a class="el" href="fixedwing_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main.c</a>
-, <a class="el" href="main__chibios_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main_chibios.c</a>
+: <a class="el" href="lpc21_2uart__tunnel_8c.html#a3c04138a5bfe5d72780bb7e82a18e627">uart_tunnel.c</a>
+, <a class="el" href="test__bswap_8c.html#a840291bc02cba5474a4cb46a9b9566fe">test_bswap.c</a>
+, <a class="el" href="stm32_2uart__tunnel_8c.html#a840291bc02cba5474a4cb46a9b9566fe">uart_tunnel.c</a>
+, <a class="el" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe">demo_ahrs_actuators.c</a>
+, <a class="el" href="fixedwing_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main.c</a>
+, <a class="el" href="fixedwing_2main__chibios_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main_chibios.c</a>
 , <a class="el" href="rotorcraft_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main.c</a>
-, <a class="el" href="rotorcraft_2main__fbw_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main_fbw.c</a>
+, <a class="el" href="rotorcraft_2main__chibios_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main_chibios.c</a>
 , <a class="el" href="setup__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe">setup_actuators.c</a>
 , <a class="el" href="usb__tunnel_8c.html#a840291bc02cba5474a4cb46a9b9566fe">usb_tunnel.c</a>
 , <a class="el" href="main__demo1_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main_demo1.c</a>
@@ -293,22 +355,20 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 , <a class="el" href="main__demo5_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main_demo5.c</a>
 , <a class="el" href="main__demo6_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main_demo6.c</a>
 , <a class="el" href="catia_8c.html#a0ddf1224851353fc92bfbff6f499fa97">catia.c</a>
-, <a class="el" href="nps__main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627">nps_main.c</a>
+, <a class="el" href="nps__main__hitl_8c.html#a3c04138a5bfe5d72780bb7e82a18e627">nps_main_hitl.c</a>
+, <a class="el" href="nps__main__sitl_8c.html#a3c04138a5bfe5d72780bb7e82a18e627">nps_main_sitl.c</a>
 , <a class="el" href="ttx2scilab_8c.html#a2b73dacbe8f6414486485d16711e4c19">ttx2scilab.c</a>
-, <a class="el" href="lpc21_2uart__tunnel_8c.html#a3c04138a5bfe5d72780bb7e82a18e627">uart_tunnel.c</a>
-, <a class="el" href="test__bswap_8c.html#a840291bc02cba5474a4cb46a9b9566fe">test_bswap.c</a>
-, <a class="el" href="stm32_2uart__tunnel_8c.html#a840291bc02cba5474a4cb46a9b9566fe">uart_tunnel.c</a>
-, <a class="el" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe">demo_ahrs_actuators.c</a>
 </li>
 <li>main_dl_parse_msg()
 : <a class="el" href="main__demo5_8c.html#a326e107988cb0bccda2b9a844b6a942f">main_demo5.c</a>
 </li>
 <li>main_event()
 : <a class="el" href="stm32_2uart__tunnel_8c.html#a319a645047f275499aa30b0bc08c6e10">uart_tunnel.c</a>
-, <a class="el" href="rotorcraft_2main_8c.html#a319a645047f275499aa30b0bc08c6e10">main.c</a>
-, <a class="el" href="main_8h.html#a542234de10fcdadb4184efcd9c7d0d04">main.h</a>
-, <a class="el" href="rotorcraft_2main__fbw_8c.html#a542234de10fcdadb4184efcd9c7d0d04">main_fbw.c</a>
-, <a class="el" href="rotorcraft_2main__fbw_8h.html#a542234de10fcdadb4184efcd9c7d0d04">main_fbw.h</a>
+, <a class="el" href="main_8h.html#a319a645047f275499aa30b0bc08c6e10">main.h</a>
+, <a class="el" href="rotorcraft_2main__ap_8c.html#ad0fb4f12833cb2f0b4c69fa317ea24d9">main_ap.c</a>
+, <a class="el" href="rotorcraft_2main__ap_8h.html#ad0fb4f12833cb2f0b4c69fa317ea24d9">main_ap.h</a>
+, <a class="el" href="rotorcraft_2main__fbw_8c.html#ad0fb4f12833cb2f0b4c69fa317ea24d9">main_fbw.c</a>
+, <a class="el" href="rotorcraft_2main__fbw_8h.html#ad0fb4f12833cb2f0b4c69fa317ea24d9">main_fbw.h</a>
 , <a class="el" href="setup__actuators_8c.html#a319a645047f275499aa30b0bc08c6e10">setup_actuators.c</a>
 </li>
 <li>main_event_task()
@@ -317,10 +377,11 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 </li>
 <li>main_init()
 : <a class="el" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1">demo_ahrs_actuators.c</a>
-, <a class="el" href="rotorcraft_2main_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1">main.c</a>
-, <a class="el" href="main_8h.html#a092df25ac46a6a4ca72c023d8821f9b2">main.h</a>
-, <a class="el" href="rotorcraft_2main__fbw_8c.html#a092df25ac46a6a4ca72c023d8821f9b2">main_fbw.c</a>
-, <a class="el" href="rotorcraft_2main__fbw_8h.html#a092df25ac46a6a4ca72c023d8821f9b2">main_fbw.h</a>
+, <a class="el" href="main_8h.html#afaa8374e20b79aaf7cfcea5ad9467ab1">main.h</a>
+, <a class="el" href="rotorcraft_2main__ap_8c.html#a3719465edd56d2b587a6b340f29e4f90">main_ap.c</a>
+, <a class="el" href="rotorcraft_2main__ap_8h.html#a3719465edd56d2b587a6b340f29e4f90">main_ap.h</a>
+, <a class="el" href="rotorcraft_2main__fbw_8c.html#a3719465edd56d2b587a6b340f29e4f90">main_fbw.c</a>
+, <a class="el" href="rotorcraft_2main__fbw_8h.html#a3719465edd56d2b587a6b340f29e4f90">main_fbw.h</a>
 , <a class="el" href="setup__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1">setup_actuators.c</a>
 , <a class="el" href="main__demo2_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1">main_demo2.c</a>
 , <a class="el" href="main__demo3_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1">main_demo3.c</a>
@@ -332,12 +393,13 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 : <a class="el" href="usb__msc__hw_8h.html#a5cd758fb54c645f5937880d23af9999d">usb_msc_hw.h</a>
 </li>
 <li>main_periodic()
-: <a class="el" href="stm32_2uart__tunnel_8c.html#a433218491d8e51ae032540c2c00d263f">uart_tunnel.c</a>
-, <a class="el" href="rotorcraft_2main_8c.html#a433218491d8e51ae032540c2c00d263f">main.c</a>
-, <a class="el" href="main_8h.html#a4fee35a9ab2c517bde9f598c265222b0">main.h</a>
-, <a class="el" href="rotorcraft_2main__fbw_8c.html#a4fee35a9ab2c517bde9f598c265222b0">main_fbw.c</a>
-, <a class="el" href="rotorcraft_2main__fbw_8h.html#a4fee35a9ab2c517bde9f598c265222b0">main_fbw.h</a>
+: <a class="el" href="main_8h.html#a433218491d8e51ae032540c2c00d263f">main.h</a>
+, <a class="el" href="rotorcraft_2main__ap_8c.html#a81249e4ef19b8766982a6fe272d89bae">main_ap.c</a>
+, <a class="el" href="rotorcraft_2main__ap_8h.html#a81249e4ef19b8766982a6fe272d89bae">main_ap.h</a>
+, <a class="el" href="rotorcraft_2main__fbw_8c.html#a81249e4ef19b8766982a6fe272d89bae">main_fbw.c</a>
+, <a class="el" href="rotorcraft_2main__fbw_8h.html#a81249e4ef19b8766982a6fe272d89bae">main_fbw.h</a>
 , <a class="el" href="setup__actuators_8c.html#a433218491d8e51ae032540c2c00d263f">setup_actuators.c</a>
+, <a class="el" href="stm32_2uart__tunnel_8c.html#a433218491d8e51ae032540c2c00d263f">uart_tunnel.c</a>
 </li>
 <li>main_periodic_task()
 : <a class="el" href="demo__ahrs__actuators_8c.html#a791eaf74023b4de8d10fbfe0de040ed8">demo_ahrs_actuators.c</a>
@@ -348,7 +410,7 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 , <a class="el" href="main__demo6_8c.html#a791eaf74023b4de8d10fbfe0de040ed8">main_demo6.c</a>
 </li>
 <li>main_periodic_tid
-: <a class="el" href="rotorcraft_2main_8c.html#a2e4708ec775c7d180386cce571ee9e69">main.c</a>
+: <a class="el" href="rotorcraft_2main__ap_8c.html#a2e4708ec775c7d180386cce571ee9e69">main_ap.c</a>
 , <a class="el" href="rotorcraft_2main__fbw_8c.html#a2e4708ec775c7d180386cce571ee9e69">main_fbw.c</a>
 </li>
 <li>MAIN_PWR
@@ -386,6 +448,9 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 </li>
 <li>MAMTIM_CYCLES
 : <a class="el" href="lpcSCB_8h.html#a788cf8ede1236602a316bf2e106414f3">lpcSCB.h</a>
+</li>
+<li>manage_flow_features()
+: <a class="el" href="opticflow__calculator_8c.html#a096dc77deb46fbfcc36e72bc8eb24784">opticflow_calculator.c</a>
 </li>
 <li>MarcheAleaAccelerometre
 : <a class="el" href="alt__filter_8c.html#a7f19e63b056b13da0338400111c3ce28">alt_filter.c</a>
@@ -449,6 +514,9 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 <li>MAT33_INV
 : <a class="el" href="group__math__algebra__generic.html#ga8470f9f331a883ac9bf5a10f95eaf8fd">pprz_algebra.h</a>
 </li>
+<li>MAT33_MULT_SCALAR
+: <a class="el" href="group__math__algebra__generic.html#ga53dacbecfa7b1c7adcf330436f0cb323">pprz_algebra.h</a>
+</li>
 <li>MAT33_ROW_VECT3_SMUL
 : <a class="el" href="group__math__algebra__generic.html#gabe8212f08f915234f4c2ed1d362c140b">pprz_algebra.h</a>
 </li>
@@ -457,6 +525,9 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 </li>
 <li>MAT33_VECT3_TRANSP_MUL
 : <a class="el" href="group__math__algebra__generic.html#ga347df966f27dace81b154c97456482dd">pprz_algebra.h</a>
+</li>
+<li>MAT_EL
+: <a class="el" href="wind__estimator_8c.html#a2c87f0af13dab41b9fb0bae1edf1aa2b">wind_estimator.c</a>
 </li>
 <li>MAT_INV33
 : <a class="el" href="pprz__simple__matrix_8h.html#ae7a13444cdd63ef7b4f6e246dc46ab6e">pprz_simple_matrix.h</a>
@@ -555,11 +626,14 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 <li>MAVLINK_MSG_ID_IDX
 : <a class="el" href="mavlink__decoder_8h.html#ae60c0b279104535660bdc757c98fac98">mavlink_decoder.h</a>
 </li>
-<li>MAVLINK_OPTICAL_FLOW_LEN
-: <a class="el" href="px4flow_8c.html#a0dd1d70f174d73ec6956c6d13ff83f81">px4flow.c</a>
-</li>
 <li>MAVLINK_OPTICAL_FLOW_MSG_ID
 : <a class="el" href="px4flow_8c.html#a0947fd491d8428ecb769f623f69b83ce">px4flow.c</a>
+</li>
+<li>MAVLINK_OPTICAL_FLOW_RAD_MSG_ID
+: <a class="el" href="px4flow_8c.html#a5dc864f29c1422c9b5308ad05a9f06da">px4flow.c</a>
+</li>
+<li>MAVLINK_OPTICAL_HEARTBEAT_MSG_ID
+: <a class="el" href="px4flow_8c.html#a62adfe2bfbeda64d6cdcfc604e076307">px4flow.c</a>
 </li>
 <li>mavlink_param_names
 : <a class="el" href="mavlink_8c.html#a23cc6497bc0674de3d63d2502ab33c90">mavlink.c</a>
@@ -714,8 +788,7 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 , <a class="el" href="common__flight__plan_8h.html#a56957c78144b268fbcdbf7d9fb5acafe">common_flight_plan.h</a>
 </li>
 <li>MAX
-: <a class="el" href="mt9f002_8c.html#aacc3ee1a7f283f8ef65cea31f4436a95">mt9f002.c</a>
-, <a class="el" href="sdLog_8c.html#aacc3ee1a7f283f8ef65cea31f4436a95">sdLog.c</a>
+: <a class="el" href="sdLog_8c.html#aacc3ee1a7f283f8ef65cea31f4436a95">sdLog.c</a>
 </li>
 <li>max11040_buf_in
 : <a class="el" href="max11040_8c.html#a7406f7fffb5ca06e68e13b5ec94e72f8">max11040.c</a>
@@ -954,12 +1027,15 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 <li>max7456_trans
 : <a class="el" href="max7456_8c.html#a81da927f13f840f041a3315da1851753">max7456.c</a>
 </li>
-<li>max_airspeed
-: <a class="el" href="guidance__hybrid_8c.html#a8272b2bcae7d65113297afe886600fc8">guidance_hybrid.c</a>
-, <a class="el" href="guidance__hybrid_8h.html#a8272b2bcae7d65113297afe886600fc8">guidance_hybrid.h</a>
+<li>MAX_AGENTS
+: <a class="el" href="act__fast_8c.html#ad5f4333e86d78ab9c593c0a032a67eec">act_fast.c</a>
 </li>
 <li>MAX_AIRSPEED
 : <a class="el" href="guidance__hybrid_8c.html#a2f33a76a9b4666dd67e1640c684b7956">guidance_hybrid.c</a>
+</li>
+<li>max_airspeed
+: <a class="el" href="guidance__hybrid_8c.html#a8272b2bcae7d65113297afe886600fc8">guidance_hybrid.c</a>
+, <a class="el" href="guidance__hybrid_8h.html#a8272b2bcae7d65113297afe886600fc8">guidance_hybrid.h</a>
 </li>
 <li>MAX_AV_NB_SAMPLE
 : <a class="el" href="adc_8h.html#a66ebc63de71cc36b02ef080d9e990bac">adc.h</a>
@@ -1000,14 +1076,29 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 <li>MAX_HEIGHT_CARROT
 : <a class="el" href="nav_8c.html#a34e95d63fe245178d74b11e75a53811d">nav.c</a>
 </li>
+<li>MAX_HIST_Y
+: <a class="el" href="bebop__ae__awb_8c.html#a917db800e8019a01fb0c02956ad5bd26">bebop_ae_awb.c</a>
+</li>
 <li>MAX_HORIZON
 : <a class="el" href="edge__flow_8h.html#acd2ed30b51ff0e87b3ab3e5ca60b0552">edge_flow.h</a>
 </li>
 <li>MAX_IMAGE_BUFFERS
 : <a class="el" href="catia_8c.html#a7e3ad46319df282f4f816abba1dc3c18">catia.c</a>
 </li>
+<li>MAX_int16_T
+: <a class="el" href="rtwtypes_8h.html#a2aa4d5510e52efd157ad1cd2c7635b48">rtwtypes.h</a>
+</li>
+<li>MAX_int32_T
+: <a class="el" href="rtwtypes_8h.html#a4e3b5c01e2881b076e36c72b5966cb55">rtwtypes.h</a>
+</li>
+<li>MAX_int8_T
+: <a class="el" href="rtwtypes_8h.html#afc0fac7fa072abb8fc3da29d89a5a250">rtwtypes.h</a>
+</li>
 <li>MAX_LINES_X
 : <a class="el" href="nav__cube_8c.html#a4b68381ec1530ae49c1149b5948ec1b5">nav_cube.c</a>
+</li>
+<li>MAX_MEDIAN_DATASIZE
+: <a class="el" href="median__filter_8h.html#aa15766e94ec3e4f43219b9884d7307ed">median_filter.h</a>
 </li>
 <li>MAX_PACKET_SIZE
 : <a class="el" href="usb__msc__hw_8c.html#a879456c3b8e2853f7044d764e9c180d4">usb_msc_hw.c</a>
@@ -1018,7 +1109,7 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 : <a class="el" href="esc32_8h.html#a7d7ff77147834c43663d3dfd1f263610a8b8f12be674db5ff7cf0f312e0286580">esc32.h</a>
 </li>
 <li>MAX_POS_ERR
-: <a class="el" href="guidance__h_8c.html#a6bfc5d39a496e8a2ddbf5448dd610916">guidance_h.c</a>
+: <a class="el" href="rotorcraft_2guidance_2guidance__h_8c.html#a6bfc5d39a496e8a2ddbf5448dd610916">guidance_h.c</a>
 </li>
 <li>MAX_PPRZ
 : <a class="el" href="paparazzi_8h.html#a54d332726575cca5fb2774bfcfbe36a9">paparazzi.h</a>
@@ -1030,7 +1121,7 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 : <a class="el" href="chemotaxis_8c.html#a7b18b821e397ef6bf1502bc41462d630">chemotaxis.c</a>
 </li>
 <li>MAX_SPEED_ERR
-: <a class="el" href="guidance__h_8c.html#a35d427821ffd914d9272e28e33d9e298">guidance_h.c</a>
+: <a class="el" href="rotorcraft_2guidance_2guidance__h_8c.html#a35d427821ffd914d9272e28e33d9e298">guidance_h.c</a>
 </li>
 <li>MAX_SPEKTRUM_CHANNELS
 : <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a4ae5e88ff6bbc703b52683feea2482ff">spektrum_arch.c</a>
@@ -1050,6 +1141,15 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 : <a class="el" href="guidance__hybrid_8c.html#ad9f1381a66a7da4dc0919aa3ae6b59cd">guidance_hybrid.c</a>
 , <a class="el" href="guidance__hybrid_8h.html#ad9f1381a66a7da4dc0919aa3ae6b59cd">guidance_hybrid.h</a>
 </li>
+<li>MAX_uint16_T
+: <a class="el" href="rtwtypes_8h.html#a5f69d019adce227ecfb104b7139aa52a">rtwtypes.h</a>
+</li>
+<li>MAX_uint32_T
+: <a class="el" href="rtwtypes_8h.html#af3b12d911332c30bc150743e1196660a">rtwtypes.h</a>
+</li>
+<li>MAX_uint8_T
+: <a class="el" href="rtwtypes_8h.html#a8041c00ac8c3fa3586faec62da663985">rtwtypes.h</a>
+</li>
 <li>MAX_WIND_ON_FINAL
 : <a class="el" href="nav__gls_8c.html#acbb1f2d19b1f05996926253084be1e4e">nav_gls.c</a>
 </li>
@@ -1064,6 +1164,9 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 </li>
 <li>MAXDEG
 : <a class="el" href="group__math__geodetic__wmm.html#ga8521f0d9a069c55226a07fc055408eed">pprz_geodetic_wmm2015.h</a>
+</li>
+<li>maxDistance
+: <a class="el" href="orange__avoider_8c.html#af22920f041b5db58118ffb07b37e9a25">orange_avoider.c</a>
 </li>
 <li>MaxFloat
 : <a class="el" href="nav__survey__poly__osam_8c.html#a75197b2a5458093f02e396c7429f64ad">nav_survey_poly_osam.c</a>
@@ -1145,14 +1248,14 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 : <a class="el" href="mcp355x_8c.html#a6e0a43bb500fd96a3ae569f60b794a59">mcp355x.c</a>
 </li>
 <li>mcu1_ppm_cpt
-: <a class="el" href="main__ap_8c.html#a53d30b2d883a7ba04909609a620eca9d">main_ap.c</a>
+: <a class="el" href="fixedwing_2autopilot__static_8c.html#a53d30b2d883a7ba04909609a620eca9d">autopilot_static.c</a>
 </li>
 <li>mcu1_status
-: <a class="el" href="fixedwing_2autopilot_8c.html#a4b46ee9ade673c44f54f4ad3497c16b9">autopilot.c</a>
-, <a class="el" href="fixedwing_2autopilot_8h.html#a4b46ee9ade673c44f54f4ad3497c16b9">autopilot.h</a>
+: <a class="el" href="fixedwing_2autopilot__firmware_8c.html#a4b46ee9ade673c44f54f4ad3497c16b9">autopilot_firmware.c</a>
+, <a class="el" href="fixedwing_2autopilot__firmware_8h.html#a4b46ee9ade673c44f54f4ad3497c16b9">autopilot_firmware.h</a>
 </li>
 <li>mcu1_status_update()
-: <a class="el" href="main__ap_8c.html#a32617d43a5d19758585b961a4ac30b61">main_ap.c</a>
+: <a class="el" href="fixedwing_2autopilot__static_8c.html#a32617d43a5d19758585b961a4ac30b61">autopilot_static.c</a>
 </li>
 <li>mcu_arch_init()
 : <a class="el" href="chibios_2mcu__arch_8c.html#a87671303c7d4a9264b1ffbb07e87f454">mcu_arch.c</a>
@@ -1165,6 +1268,9 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 , <a class="el" href="sim_2mcu__arch_8h.html#a87671303c7d4a9264b1ffbb07e87f454">mcu_arch.h</a>
 , <a class="el" href="stm32_2mcu__arch_8c.html#a87671303c7d4a9264b1ffbb07e87f454">mcu_arch.c</a>
 , <a class="el" href="stm32_2mcu__arch_8h.html#a87671303c7d4a9264b1ffbb07e87f454">mcu_arch.h</a>
+</li>
+<li>mcu_deep_sleep()
+: <a class="el" href="chibios_2mcu__arch_8h.html#a1296057f718ade4eeb9674b9c3550cb8">mcu_arch.h</a>
 </li>
 <li>mcu_event()
 : <a class="el" href="group__mcu__periph.html#gaf44fd3e4d3d56943e4d0e89100974b07">mcu.c</a>
@@ -1192,8 +1298,16 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 <li>MCU_PWR_PIN
 : <a class="el" href="opa__ftd__1_80_8h.html#ac1d56d55e0b6a380bd186c8dc15598d1">opa_ftd_1.0.h</a>
 </li>
-<li>MCU_RESTART
-: <a class="el" href="usbStorage_8c.html#a0a630aa1e5bf93500e64d5837a56d9ad">usbStorage.c</a>
+<li>mcu_reset()
+: <a class="el" href="chibios_2mcu__arch_8h.html#a862afc1b2c4b85e2cf3236b9245e5f56">mcu_arch.h</a>
+</li>
+<li>mean_f()
+: <a class="el" href="pprz__stat_8c.html#adea85d32f16991e739b2cea3b3ec427e">pprz_stat.c</a>
+, <a class="el" href="pprz__stat_8h.html#a7c4d41545675c0f746d1100d435ffe8f">pprz_stat.h</a>
+</li>
+<li>mean_i()
+: <a class="el" href="pprz__stat_8c.html#a9ea37190b84005b38d22358e2d2c3a74">pprz_stat.c</a>
+, <a class="el" href="pprz__stat_8h.html#a9ea37190b84005b38d22358e2d2c3a74">pprz_stat.h</a>
 </li>
 <li>MEASURE_HUMI
 : <a class="el" href="humid__sht_8c.html#a0e0a75788c3da083fa6f85e0f03dd72d">humid_sht.c</a>
@@ -1203,6 +1317,7 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 </li>
 <li>measurement_lowpass_filters
 : <a class="el" href="stabilization__attitude__heli__indi_8c.html#a5dd9caeb5d15e40ddb2e3be637e74396">stabilization_attitude_heli_indi.c</a>
+, <a class="el" href="stabilization__indi_8c.html#a7e036da0df750a9e226b1b76460e816a">stabilization_indi.c</a>
 </li>
 <li>measurement_notchfilter
 : <a class="el" href="stabilization__attitude__heli__indi_8c.html#a95cdb19b34f14f20606bf0d552c4e550">stabilization_attitude_heli_indi.c</a>
@@ -1210,12 +1325,15 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 <li>MECH
 : <a class="el" href="swashplate__mixing_8h.html#a43786ec35371a626a36b94a96bdcde31">swashplate_mixing.h</a>
 </li>
-<li>MEDIAN_DATASIZE
-: <a class="el" href="median__filter_8h.html#a4f52b0a25ccf4d3d7a6451717c3e9bba">median_filter.h</a>
+<li>MEDIAN_DEFAULT_SIZE
+: <a class="el" href="median__filter_8h.html#ab20cb9f63d64a489895bea9f083b4aef">median_filter.h</a>
 </li>
 <li>median_mag
 : <a class="el" href="imu__krooz_8c.html#a3ebe1184eef94844a9c6fe5d2d8d41c6">imu_krooz.c</a>
 , <a class="el" href="imu__krooz__memsic_8c.html#a3ebe1184eef94844a9c6fe5d2d8d41c6">imu_krooz_memsic.c</a>
+</li>
+<li>medianfilter
+: <a class="el" href="stereocam_8c.html#a77170a112e1ef6de97a3388c584a2c1b">stereocam.c</a>
 </li>
 <li>memcpy_from_registers()
 : <a class="el" href="libisp_8c.html#a5aa17de6a9ce0c8fba07cfeffcc1055f">libisp.c</a>
@@ -1304,7 +1422,8 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 : <a class="el" href="modules_2ins_2ins__arduimu_8c.html#a34aac752f53ee8f187ec72761ae6698b">ins_arduimu.c</a>
 </li>
 <li>MetBuffer
-: <a class="el" href="met__module_8h.html#a38c8b0c5097cc73e235f57b6e207dacc">met_module.h</a>
+: <a class="el" href="humid__sht__uart_8h.html#a38c8b0c5097cc73e235f57b6e207dacc">humid_sht_uart.h</a>
+, <a class="el" href="met__module_8h.html#a38c8b0c5097cc73e235f57b6e207dacc">met_module.h</a>
 </li>
 <li>meteo_france_DAQ_SetPower
 : <a class="el" href="meteo__france__DAQ_8h.html#ab48ec8b93a0e3942488cf9e1ebd8f812">meteo_france_DAQ.h</a>
@@ -1332,25 +1451,32 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 : <a class="el" href="nps__fdm__jsbsim_8cpp.html#ae57c01310b61537f760496c6c18cda82">nps_fdm_jsbsim.cpp</a>
 </li>
 <li>MetGetch
-: <a class="el" href="met__module_8h.html#ab6279ed04caea16ab6ab0eb0f3a53cf1">met_module.h</a>
+: <a class="el" href="humid__sht__uart_8h.html#ab6279ed04caea16ab6ab0eb0f3a53cf1">humid_sht_uart.h</a>
+, <a class="el" href="met__module_8h.html#ab6279ed04caea16ab6ab0eb0f3a53cf1">met_module.h</a>
 </li>
 <li>MetLinkDevice
-: <a class="el" href="met__module_8h.html#a129256c086df2eae709892c77338017a">met_module.h</a>
+: <a class="el" href="humid__sht__uart_8h.html#a129256c086df2eae709892c77338017a">humid_sht_uart.h</a>
+, <a class="el" href="met__module_8h.html#a129256c086df2eae709892c77338017a">met_module.h</a>
 </li>
 <li>MetSend
-: <a class="el" href="met__module_8h.html#aa4ce83df68841849008efac36a05e478">met_module.h</a>
+: <a class="el" href="humid__sht__uart_8h.html#aa4ce83df68841849008efac36a05e478">humid_sht_uart.h</a>
+, <a class="el" href="met__module_8h.html#aa4ce83df68841849008efac36a05e478">met_module.h</a>
 </li>
 <li>MetSend1
-: <a class="el" href="met__module_8h.html#ac8da7d57fd856850000c369aae9761a9">met_module.h</a>
+: <a class="el" href="humid__sht__uart_8h.html#ac8da7d57fd856850000c369aae9761a9">humid_sht_uart.h</a>
+, <a class="el" href="met__module_8h.html#ac8da7d57fd856850000c369aae9761a9">met_module.h</a>
 </li>
 <li>MetUartRunning
-: <a class="el" href="met__module_8h.html#a8c80d4c735b00cea3fa682112f517579">met_module.h</a>
+: <a class="el" href="humid__sht__uart_8h.html#a8c80d4c735b00cea3fa682112f517579">humid_sht_uart.h</a>
+, <a class="el" href="met__module_8h.html#a8c80d4c735b00cea3fa682112f517579">met_module.h</a>
 </li>
 <li>MetUartSend1
-: <a class="el" href="met__module_8h.html#ac7eb0f3d418e9837ff5ee1fad3b91af6">met_module.h</a>
+: <a class="el" href="humid__sht__uart_8h.html#ac7eb0f3d418e9837ff5ee1fad3b91af6">humid_sht_uart.h</a>
+, <a class="el" href="met__module_8h.html#ac7eb0f3d418e9837ff5ee1fad3b91af6">met_module.h</a>
 </li>
 <li>MetUartSetBaudrate
-: <a class="el" href="met__module_8h.html#aa337ffbe8cf37b9f56824c1fe9037641">met_module.h</a>
+: <a class="el" href="humid__sht__uart_8h.html#aa337ffbe8cf37b9f56824c1fe9037641">humid_sht_uart.h</a>
+, <a class="el" href="met__module_8h.html#aa337ffbe8cf37b9f56824c1fe9037641">met_module.h</a>
 </li>
 <li>mf_daq
 : <a class="el" href="meteo__france__DAQ_8c.html#ac6480b94865f30f33996f7cb72a45554">meteo_france_DAQ.c</a>
@@ -1416,14 +1542,15 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 </li>
 <li>MilliAmpereOfAdc
 : <a class="el" href="px4fmu__2_84_8h.html#a4d130fa14265d4aefded214285df4915">px4fmu_2.4.h</a>
+, <a class="el" href="px4fmu__4_80_8h.html#a4d130fa14265d4aefded214285df4915">px4fmu_4.0.h</a>
 , <a class="el" href="electrical_8c.html#a4d130fa14265d4aefded214285df4915">electrical.c</a>
-</li>
-<li>MIN
-: <a class="el" href="sdLog_8c.html#a74e75242132eaabbc1c512488a135926">sdLog.c</a>
 </li>
 <li>Min
 : <a class="el" href="rotorcraft_2main__fbw_8c.html#a202767af7f06cef8e1c69d9771f157c3">main_fbw.c</a>
 , <a class="el" href="common__flight__plan_8h.html#a202767af7f06cef8e1c69d9771f157c3">common_flight_plan.h</a>
+</li>
+<li>MIN
+: <a class="el" href="sdLog_8c.html#a74e75242132eaabbc1c512488a135926">sdLog.c</a>
 </li>
 <li>MIN_ARMING_TRIG
 : <a class="el" href="opa__controller__fbw_8c.html#ac1731ef682faababe7582977463d3b3e">opa_controller_fbw.c</a>
@@ -1431,11 +1558,11 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 <li>MIN_BAT_LEVEL
 : <a class="el" href="electrical_8c.html#ae718155e6e9f20accaa19604a341f982">electrical.c</a>
 </li>
-<li>min_dt
-: <a class="el" href="nps__fdm__jsbsim_8cpp.html#ae49678f071a14ba8759ee235e748987e">nps_fdm_jsbsim.cpp</a>
-</li>
 <li>MIN_DT
 : <a class="el" href="nps__fdm__jsbsim_8cpp.html#a4cc2cf474974fa0f2e5af1774528c73d">nps_fdm_jsbsim.cpp</a>
+</li>
+<li>min_dt
+: <a class="el" href="nps__fdm__jsbsim_8cpp.html#ae49678f071a14ba8759ee235e748987e">nps_fdm_jsbsim.cpp</a>
 </li>
 <li>MIN_DX
 : <a class="el" href="nav_8c.html#a17976ef29f2f34221836e877f4712d19">nav.c</a>
@@ -1445,6 +1572,15 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 </li>
 <li>MIN_HEIGHT_CARROT
 : <a class="el" href="nav_8c.html#aa39efd810919cc75b7892bd6e6e37b44">nav.c</a>
+</li>
+<li>MIN_int16_T
+: <a class="el" href="rtwtypes_8h.html#a6af1fb7c9084add0122589e8578f00ce">rtwtypes.h</a>
+</li>
+<li>MIN_int32_T
+: <a class="el" href="rtwtypes_8h.html#a1991e25fc2c03e1bf55b4abe570317bd">rtwtypes.h</a>
+</li>
+<li>MIN_int8_T
+: <a class="el" href="rtwtypes_8h.html#af171ef95a0a296c4a6191c4fa9a6b188">rtwtypes.h</a>
 </li>
 <li>MIN_PERIOD
 : <a class="el" href="esc32_8h.html#a7d7ff77147834c43663d3dfd1f263610af2c8ed8c40c2686b16f335a7c134981b">esc32.h</a>
@@ -1456,7 +1592,7 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 : <a class="el" href="linear__flow__fit_8c.html#a771fae639233fefeb98727f47e6a0b53">linear_flow_fit.c</a>
 </li>
 <li>MIN_SPEED_FOR_TAKEOFF
-: <a class="el" href="main__ap_8c.html#af7a652e72bf6906c11f8c5c1442359e1">main_ap.c</a>
+: <a class="el" href="fixedwing_2main__ap_8c.html#af7a652e72bf6906c11f8c5c1442359e1">main_ap.c</a>
 </li>
 <li>min_time_event
 : <a class="el" href="sys__mon_8c.html#aafefcdcd9d13d49795c6403bc19b19f9">sys_mon.c</a>
@@ -1730,11 +1866,14 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 <li>MmUnselect
 : <a class="el" href="mag__micromag__fw__hw_8h.html#a74bd3bcf9c09982e320e3061ec2d645c">mag_micromag_fw_hw.h</a>
 </li>
+<li>mode
+: <a class="el" href="sonar__bebop_8c.html#a37e90f5e3bd99fac2021fb3a326607d4">sonar_bebop.c</a>
+</li>
 <li>MODE_AUTO1
-: <a class="el" href="rotorcraft_2autopilot_8h.html#a34a5f79db5ce56dc453dc23e9cbcb49e">autopilot.h</a>
+: <a class="el" href="rotorcraft_2autopilot__static_8h.html#a34a5f79db5ce56dc453dc23e9cbcb49e">autopilot_static.h</a>
 </li>
 <li>MODE_AUTO2
-: <a class="el" href="rotorcraft_2autopilot_8h.html#a08f66aa60f30903c4240dac601ab555a">autopilot.h</a>
+: <a class="el" href="rotorcraft_2autopilot__static_8h.html#a08f66aa60f30903c4240dac601ab555a">autopilot_static.h</a>
 </li>
 <li>MODE_BRIGHT
 : <a class="el" href="detect__window_8h.html#a1e6b1b95eae98142b5d2e20943aebcad">detect_window.h</a>
@@ -1743,10 +1882,10 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 : <a class="el" href="detect__window_8h.html#a4b7a2384ead30d43caff63b6a873cf00">detect_window.h</a>
 </li>
 <li>MODE_MANUAL
-: <a class="el" href="rotorcraft_2autopilot_8h.html#ab3d62edb632309d9a423661747cdb73b">autopilot.h</a>
+: <a class="el" href="rotorcraft_2autopilot__static_8h.html#ab3d62edb632309d9a423661747cdb73b">autopilot_static.h</a>
 </li>
 <li>MODE_STARTUP
-: <a class="el" href="rotorcraft_2autopilot_8c.html#a8acaa9de6b3827bbaf3d64c1917d56f6">autopilot.c</a>
+: <a class="el" href="rotorcraft_2autopilot__static_8c.html#a8acaa9de6b3827bbaf3d64c1917d56f6">autopilot_static.c</a>
 </li>
 <li>MODE_SWITCH_AUTO1
 : <a class="el" href="nps__radio__control_8h.html#a82def3d691173a9c586ef6aab8b7e45d">nps_radio_control.h</a>
@@ -1757,39 +1896,38 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 <li>MODE_SWITCH_MANUAL
 : <a class="el" href="nps__radio__control_8h.html#a3b318a2b61335953b6e6f88b464f7436">nps_radio_control.h</a>
 </li>
+<li>model
+: <a class="el" href="nps__fdm__gazebo_8cpp.html#aa3afc60443fb73f1351bc3830fc56686">nps_fdm_gazebo.cpp</a>
+</li>
 <li>modem_parse()
 : <a class="el" href="fbw__datalink_8c.html#a0501b8e34009f316b8619c5267f2926d">fbw_datalink.c</a>
 </li>
 <li>ModemLinkDevice
 : <a class="el" href="fbw__datalink_8c.html#a7e4ab3a42760e195bedf3889e8155c2c">fbw_datalink.c</a>
 </li>
-<li>ModeUpdate
-: <a class="el" href="fixedwing_2autopilot_8h.html#a1bf7cecdbe3f008fdb8dd8404c4e510f">autopilot.h</a>
-</li>
 <li>MODULES_C
 : <a class="el" href="sim__ap_8c.html#ac3c586d9cc5d614d34061b3844a1e45b">sim_ap.c</a>
 , <a class="el" href="demo__ahrs__actuators_8c.html#ac3c586d9cc5d614d34061b3844a1e45b">demo_ahrs_actuators.c</a>
-, <a class="el" href="main__ap_8c.html#ac3c586d9cc5d614d34061b3844a1e45b">main_ap.c</a>
-, <a class="el" href="rotorcraft_2main_8c.html#ac3c586d9cc5d614d34061b3844a1e45b">main.c</a>
+, <a class="el" href="fixedwing_2main__ap_8c.html#ac3c586d9cc5d614d34061b3844a1e45b">main_ap.c</a>
 , <a class="el" href="rotorcraft_2main__fbw_8c.html#ac3c586d9cc5d614d34061b3844a1e45b">main_fbw.c</a>
+, <a class="el" href="setup__actuators_8c.html#ac3c586d9cc5d614d34061b3844a1e45b">setup_actuators.c</a>
 </li>
 <li>MODULES_DATALINK_C
 : <a class="el" href="datalink_8c.html#abfcb795f0df1bc44a2fc9e4ef8a51c39">datalink.c</a>
 </li>
 <li>modules_tid
-: <a class="el" href="main__ap_8c.html#ad22206414845137916e0ed83054bdfc8">main_ap.c</a>
-, <a class="el" href="rotorcraft_2main_8c.html#ad22206414845137916e0ed83054bdfc8">main.c</a>
+: <a class="el" href="fixedwing_2main__ap_8c.html#ad22206414845137916e0ed83054bdfc8">main_ap.c</a>
 , <a class="el" href="rotorcraft_2main__fbw_8c.html#ad22206414845137916e0ed83054bdfc8">main_fbw.c</a>
 </li>
 <li>MOfMM
 : <a class="el" href="fixedwing__datalink_8c.html#a487d697d5106a819fe3bfe1b84a96bd1">fixedwing_datalink.c</a>
 </li>
 <li>monitor_task()
-: <a class="el" href="main__ap_8c.html#a7eac6acc6dec1056989fbbc5d65b85b9">main_ap.c</a>
-, <a class="el" href="main__ap_8h.html#a7eac6acc6dec1056989fbbc5d65b85b9">main_ap.h</a>
+: <a class="el" href="fixedwing_2main__ap_8c.html#a7eac6acc6dec1056989fbbc5d65b85b9">main_ap.c</a>
+, <a class="el" href="fixedwing_2main__ap_8h.html#a7eac6acc6dec1056989fbbc5d65b85b9">main_ap.h</a>
 </li>
 <li>monitor_tid
-: <a class="el" href="main__ap_8c.html#a1cefad60c98eeae5ce7826c1efd8f700">main_ap.c</a>
+: <a class="el" href="fixedwing_2main__ap_8c.html#a1cefad60c98eeae5ce7826c1efd8f700">main_ap.c</a>
 </li>
 <li>MORA_BUFFER_EMPTY
 : <a class="el" href="digital__cam_2catia_2protocol_8h.html#a69493bda4cae30f373f8a7293c94a8e6">protocol.h</a>
@@ -1907,9 +2045,13 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 <li>MOTOR_YAW_SIGN
 : <a class="el" href="motor__mixing__types_8h.html#afab49a83c7c75338e61f7fd6503e0c0c">motor_mixing_types.h</a>
 </li>
-<li>moveWaypointForwards()
-: <a class="el" href="orange__avoider_8c.html#afab2a221b46b38a8ad645bdff564c4fc">orange_avoider.c</a>
-, <a class="el" href="orange__avoider_8h.html#afab2a221b46b38a8ad645bdff564c4fc">orange_avoider.h</a>
+<li>moveWaypoint()
+: <a class="el" href="orange__avoider_8c.html#ab9e9ec09110cd9cd8a03cb04532db57a">orange_avoider.c</a>
+, <a class="el" href="orange__avoider_8h.html#ab9e9ec09110cd9cd8a03cb04532db57a">orange_avoider.h</a>
+</li>
+<li>moveWaypointForward()
+: <a class="el" href="orange__avoider_8c.html#a72ecd5c8947f92bac5d0c6967dbec35b">orange_avoider.c</a>
+, <a class="el" href="orange__avoider_8h.html#a72ecd5c8947f92bac5d0c6967dbec35b">orange_avoider.h</a>
 </li>
 <li>mp_msg_buf
 : <a class="el" href="mag__pitot__uart_8c.html#a53df6fa7b781a9f4acac22ee4ca711dc">mag_pitot_uart.c</a>
@@ -2085,6 +2227,50 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 <li>MPU60X0_ACCEL_RANGE_8G
 : <a class="el" href="mpu60x0__regs_8h.html#aa0e4bc4500df7264d9752fdf9bcb6727a2505c2f21961d322b33d0668ab365a41">mpu60x0_regs.h</a>
 </li>
+<li>MPU60X0_ACCEL_SENS
+: <a class="el" href="mpu60x0_8c.html#a5faf20d4d4647a961a86c83736c6ea87">mpu60x0.c</a>
+, <a class="el" href="mpu60x0_8h.html#a5faf20d4d4647a961a86c83736c6ea87">mpu60x0.h</a>
+</li>
+<li>MPU60X0_ACCEL_SENS_16G
+: <a class="el" href="mpu60x0_8h.html#a3c00ad8b06938bcae50b0fa9848e6fdb">mpu60x0.h</a>
+</li>
+<li>MPU60X0_ACCEL_SENS_16G_DEN
+: <a class="el" href="mpu60x0_8h.html#a8ee617830df6e64e3f89e155294f8d14">mpu60x0.h</a>
+</li>
+<li>MPU60X0_ACCEL_SENS_16G_NUM
+: <a class="el" href="mpu60x0_8h.html#a4621538fd7b39ea4de0be893f160c1fd">mpu60x0.h</a>
+</li>
+<li>MPU60X0_ACCEL_SENS_2G
+: <a class="el" href="mpu60x0_8h.html#a95962cd2bb4fe8f2faadc2149fdee9bc">mpu60x0.h</a>
+</li>
+<li>MPU60X0_ACCEL_SENS_2G_DEN
+: <a class="el" href="mpu60x0_8h.html#abcf3497ae43053ca3254559e130bddb9">mpu60x0.h</a>
+</li>
+<li>MPU60X0_ACCEL_SENS_2G_NUM
+: <a class="el" href="mpu60x0_8h.html#ac82c22100c7f2e9d81ff6fe1d479c5ee">mpu60x0.h</a>
+</li>
+<li>MPU60X0_ACCEL_SENS_4G
+: <a class="el" href="mpu60x0_8h.html#ad155a9790c8d380954558466e9008c51">mpu60x0.h</a>
+</li>
+<li>MPU60X0_ACCEL_SENS_4G_DEN
+: <a class="el" href="mpu60x0_8h.html#a6bb010e0d2d01f7ca70c520365cd3dbf">mpu60x0.h</a>
+</li>
+<li>MPU60X0_ACCEL_SENS_4G_NUM
+: <a class="el" href="mpu60x0_8h.html#a476fa73126f5a8b6e9bcb434919c7a85">mpu60x0.h</a>
+</li>
+<li>MPU60X0_ACCEL_SENS_8G
+: <a class="el" href="mpu60x0_8h.html#a88f30398c46fb5fbca00d6571f79a17f">mpu60x0.h</a>
+</li>
+<li>MPU60X0_ACCEL_SENS_8G_DEN
+: <a class="el" href="mpu60x0_8h.html#a1d36217abbbeb8a169e280e317d8e151">mpu60x0.h</a>
+</li>
+<li>MPU60X0_ACCEL_SENS_8G_NUM
+: <a class="el" href="mpu60x0_8h.html#a259b1923133e77ab50f01fb53823a3f8">mpu60x0.h</a>
+</li>
+<li>MPU60X0_ACCEL_SENS_FRAC
+: <a class="el" href="mpu60x0_8c.html#af8324d9ab43e97c55d032714aa6531eb">mpu60x0.c</a>
+, <a class="el" href="mpu60x0_8h.html#af8324d9ab43e97c55d032714aa6531eb">mpu60x0.h</a>
+</li>
 <li>MPU60X0_ADDR
 : <a class="el" href="mpu60x0__regs_8h.html#a90ef447074cb5203d9e9556e89f39cca">mpu60x0_regs.h</a>
 </li>
@@ -2198,6 +2384,50 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 </li>
 <li>MPU60X0_GYRO_RANGE_500
 : <a class="el" href="mpu60x0__regs_8h.html#a2e2d6291fc6683bc150bdf4ce96462e7a67d78d4162c2dbc6ec1602dec54801e9">mpu60x0_regs.h</a>
+</li>
+<li>MPU60X0_GYRO_SENS
+: <a class="el" href="mpu60x0_8c.html#a731333059efe16260d5653802cab72f0">mpu60x0.c</a>
+, <a class="el" href="mpu60x0_8h.html#a731333059efe16260d5653802cab72f0">mpu60x0.h</a>
+</li>
+<li>MPU60X0_GYRO_SENS_1000
+: <a class="el" href="mpu60x0_8h.html#a9991339af4f5b9c1bfc6965178419d6a">mpu60x0.h</a>
+</li>
+<li>MPU60X0_GYRO_SENS_1000_DEN
+: <a class="el" href="mpu60x0_8h.html#ab9b167e4382ec26781ef3f3edc726f69">mpu60x0.h</a>
+</li>
+<li>MPU60X0_GYRO_SENS_1000_NUM
+: <a class="el" href="mpu60x0_8h.html#a477d2b5e4249357133523d6e1e5dc70b">mpu60x0.h</a>
+</li>
+<li>MPU60X0_GYRO_SENS_2000
+: <a class="el" href="mpu60x0_8h.html#a277ad8fc4e5e3e5c143d29d7bcc094e3">mpu60x0.h</a>
+</li>
+<li>MPU60X0_GYRO_SENS_2000_DEN
+: <a class="el" href="mpu60x0_8h.html#a6c3aefe4ceb245ae9342b5935322d401">mpu60x0.h</a>
+</li>
+<li>MPU60X0_GYRO_SENS_2000_NUM
+: <a class="el" href="mpu60x0_8h.html#a9c86d7f6baf6ea1031091c9682975456">mpu60x0.h</a>
+</li>
+<li>MPU60X0_GYRO_SENS_250
+: <a class="el" href="mpu60x0_8h.html#a71c5d4530ae6c1a9282b6c8f3e5b124b">mpu60x0.h</a>
+</li>
+<li>MPU60X0_GYRO_SENS_250_DEN
+: <a class="el" href="mpu60x0_8h.html#aba368c96bff9ef88bc1639a03ee2ffd4">mpu60x0.h</a>
+</li>
+<li>MPU60X0_GYRO_SENS_250_NUM
+: <a class="el" href="mpu60x0_8h.html#a7d1db7e8c9fbc3fd83a922f67e1be785">mpu60x0.h</a>
+</li>
+<li>MPU60X0_GYRO_SENS_500
+: <a class="el" href="mpu60x0_8h.html#a7eb3e4d8a5389cdc2e447dc4303d8622">mpu60x0.h</a>
+</li>
+<li>MPU60X0_GYRO_SENS_500_DEN
+: <a class="el" href="mpu60x0_8h.html#a769dffcec31e8a9eaae1aed12b1ceeb7">mpu60x0.h</a>
+</li>
+<li>MPU60X0_GYRO_SENS_500_NUM
+: <a class="el" href="mpu60x0_8h.html#aedde6299df08f8a6d53675a312542769">mpu60x0.h</a>
+</li>
+<li>MPU60X0_GYRO_SENS_FRAC
+: <a class="el" href="mpu60x0_8c.html#a0403d9735a341e9e30456966783ca6f0">mpu60x0.c</a>
+, <a class="el" href="mpu60x0_8h.html#a0403d9735a341e9e30456966783ca6f0">mpu60x0.h</a>
 </li>
 <li>MPU60X0_I2C_BYPASS_EN
 : <a class="el" href="mpu60x0__regs_8h.html#a16faff60e45ae0ec22f2913a375f5959">mpu60x0_regs.h</a>
@@ -2579,6 +2809,50 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 <li>MPU9250_ACCEL_RANGE_8G
 : <a class="el" href="mpu9250__regs_8h.html#a8c42d537c7844b3e093c7bc92414373ea9fb01218a438a445081336ea7496da89">mpu9250_regs.h</a>
 </li>
+<li>MPU9250_ACCEL_SENS
+: <a class="el" href="mpu9250_8c.html#a9fa3719b5d2ad4f0c9dcf6f7fd005cab">mpu9250.c</a>
+, <a class="el" href="mpu9250_8h.html#a9fa3719b5d2ad4f0c9dcf6f7fd005cab">mpu9250.h</a>
+</li>
+<li>MPU9250_ACCEL_SENS_16G
+: <a class="el" href="mpu9250_8h.html#a23f4442ba36cca33bfb499545d68c293">mpu9250.h</a>
+</li>
+<li>MPU9250_ACCEL_SENS_16G_DEN
+: <a class="el" href="mpu9250_8h.html#ae11d6ec9cc7a8b079614e3f1d632c434">mpu9250.h</a>
+</li>
+<li>MPU9250_ACCEL_SENS_16G_NUM
+: <a class="el" href="mpu9250_8h.html#aa61f98a525cb4072884f8bf9cc0167fc">mpu9250.h</a>
+</li>
+<li>MPU9250_ACCEL_SENS_2G
+: <a class="el" href="mpu9250_8h.html#a0507a49cf369a441bed39a527d3f9c8f">mpu9250.h</a>
+</li>
+<li>MPU9250_ACCEL_SENS_2G_DEN
+: <a class="el" href="mpu9250_8h.html#a9b146708cf44ce7503e0a156de6e6d7d">mpu9250.h</a>
+</li>
+<li>MPU9250_ACCEL_SENS_2G_NUM
+: <a class="el" href="mpu9250_8h.html#a947018236f165d4f1cf5cc8d1319b273">mpu9250.h</a>
+</li>
+<li>MPU9250_ACCEL_SENS_4G
+: <a class="el" href="mpu9250_8h.html#ac8c4690238dc3ae8ac8c1ef80cd1b45a">mpu9250.h</a>
+</li>
+<li>MPU9250_ACCEL_SENS_4G_DEN
+: <a class="el" href="mpu9250_8h.html#a6965897a57a810a44d74cb89e7d1aa12">mpu9250.h</a>
+</li>
+<li>MPU9250_ACCEL_SENS_4G_NUM
+: <a class="el" href="mpu9250_8h.html#aedd64352834567b95967daf39014b0f5">mpu9250.h</a>
+</li>
+<li>MPU9250_ACCEL_SENS_8G
+: <a class="el" href="mpu9250_8h.html#ad9cba5fc4d6776395de50717feb64f51">mpu9250.h</a>
+</li>
+<li>MPU9250_ACCEL_SENS_8G_DEN
+: <a class="el" href="mpu9250_8h.html#a5948e42193cb2e66e568061094b8bf30">mpu9250.h</a>
+</li>
+<li>MPU9250_ACCEL_SENS_8G_NUM
+: <a class="el" href="mpu9250_8h.html#adf3ac7455746dc4c12a63650a9f1299b">mpu9250.h</a>
+</li>
+<li>MPU9250_ACCEL_SENS_FRAC
+: <a class="el" href="mpu9250_8c.html#a4baa1f9b32c4c697569e3260103dd43b">mpu9250.c</a>
+, <a class="el" href="mpu9250_8h.html#a4baa1f9b32c4c697569e3260103dd43b">mpu9250.h</a>
+</li>
 <li>MPU9250_ADDR
 : <a class="el" href="mpu9250__regs_8h.html#ac93b599d4f074c20da9a3638d5f20d90">mpu9250_regs.h</a>
 </li>
@@ -2719,6 +2993,50 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 </li>
 <li>MPU9250_GYRO_RANGE_500
 : <a class="el" href="mpu9250__regs_8h.html#a3a2e93ff1aeb835f389cca96026f93bea884ab4b9752e69067061604433199380">mpu9250_regs.h</a>
+</li>
+<li>MPU9250_GYRO_SENS
+: <a class="el" href="mpu9250_8c.html#a67ca0e1d73649dcfa1efd8fe39737400">mpu9250.c</a>
+, <a class="el" href="mpu9250_8h.html#a67ca0e1d73649dcfa1efd8fe39737400">mpu9250.h</a>
+</li>
+<li>MPU9250_GYRO_SENS_1000
+: <a class="el" href="mpu9250_8h.html#a641b32d77dd94713f9797df0b5c3d4ad">mpu9250.h</a>
+</li>
+<li>MPU9250_GYRO_SENS_1000_DEN
+: <a class="el" href="mpu9250_8h.html#abb403f04eefc8206635184c9b9656ba2">mpu9250.h</a>
+</li>
+<li>MPU9250_GYRO_SENS_1000_NUM
+: <a class="el" href="mpu9250_8h.html#a24b986c2757f1e45364444e8d4f2caf6">mpu9250.h</a>
+</li>
+<li>MPU9250_GYRO_SENS_2000
+: <a class="el" href="mpu9250_8h.html#a0dfe2b95a6a9ed6d47000e6843a71be9">mpu9250.h</a>
+</li>
+<li>MPU9250_GYRO_SENS_2000_DEN
+: <a class="el" href="mpu9250_8h.html#a41d02e227684487a79726c45d708971f">mpu9250.h</a>
+</li>
+<li>MPU9250_GYRO_SENS_2000_NUM
+: <a class="el" href="mpu9250_8h.html#a3e95d74b3194817b15d30ad3d575a1b4">mpu9250.h</a>
+</li>
+<li>MPU9250_GYRO_SENS_250
+: <a class="el" href="mpu9250_8h.html#afbf8a3c8af0cd1cf009f0271ab5ad6fb">mpu9250.h</a>
+</li>
+<li>MPU9250_GYRO_SENS_250_DEN
+: <a class="el" href="mpu9250_8h.html#ab786578769ecf6e483f33f73366c460c">mpu9250.h</a>
+</li>
+<li>MPU9250_GYRO_SENS_250_NUM
+: <a class="el" href="mpu9250_8h.html#a7d87a84eaf5f8e558a4ca19c9cd0c2d2">mpu9250.h</a>
+</li>
+<li>MPU9250_GYRO_SENS_500
+: <a class="el" href="mpu9250_8h.html#a0ca23fcda506386470212925a40ec5c5">mpu9250.h</a>
+</li>
+<li>MPU9250_GYRO_SENS_500_DEN
+: <a class="el" href="mpu9250_8h.html#afd9c0b0faae06bbb09e301c2da0201ab">mpu9250.h</a>
+</li>
+<li>MPU9250_GYRO_SENS_500_NUM
+: <a class="el" href="mpu9250_8h.html#a4340716705b188fa149d2ecefbbff189">mpu9250.h</a>
+</li>
+<li>MPU9250_GYRO_SENS_FRAC
+: <a class="el" href="mpu9250_8c.html#aad87c96ac74a96fe8d27ddb025b47751">mpu9250.c</a>
+, <a class="el" href="mpu9250_8h.html#aad87c96ac74a96fe8d27ddb025b47751">mpu9250.h</a>
 </li>
 <li>MPU9250_I2C_BYPASS_EN
 : <a class="el" href="mpu9250__regs_8h.html#a70502d50df4c36071aa82b9537c562b3">mpu9250_regs.h</a>
@@ -3107,16 +3425,19 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 : <a class="el" href="imu__aspirin__2__spi_8c.html#a7223761de0cabf70ad3961ac1764d621">imu_aspirin_2_spi.c</a>
 , <a class="el" href="imu__mpu9250__spi_8c.html#a7223761de0cabf70ad3961ac1764d621">imu_mpu9250_spi.c</a>
 </li>
+<li>mrdivide()
+: <a class="el" href="UKF__Wind__Estimator_8c.html#a29ad0023311f9e9ebad58b94cfa5beff">UKF_Wind_Estimator.c</a>
+</li>
 <li>MS
 : <a class="el" href="LPC21xx_8h.html#ab9e061e05d689a5769936b213022102f">LPC21xx.h</a>
 </li>
 <li>ms2100
-: <a class="el" href="ms2100_8h.html#a030d0b0b09d4acb5b2bc5d4d53c9d546">ms2100.h</a>
-, <a class="el" href="ms2100_8c.html#a030d0b0b09d4acb5b2bc5d4d53c9d546">ms2100.c</a>
+: <a class="el" href="ms2100_8c.html#a030d0b0b09d4acb5b2bc5d4d53c9d546">ms2100.c</a>
+, <a class="el" href="ms2100_8h.html#a030d0b0b09d4acb5b2bc5d4d53c9d546">ms2100.h</a>
 </li>
 <li>ms2100_arch_init()
-: <a class="el" href="lpc21_2peripherals_2ms2100__arch_8c.html#a6c42c614481a60c538d48f9ceef25132">ms2100_arch.c</a>
-, <a class="el" href="ms2100_8h.html#a6c42c614481a60c538d48f9ceef25132">ms2100.h</a>
+: <a class="el" href="ms2100_8h.html#a6c42c614481a60c538d48f9ceef25132">ms2100.h</a>
+, <a class="el" href="lpc21_2peripherals_2ms2100__arch_8c.html#a6c42c614481a60c538d48f9ceef25132">ms2100_arch.c</a>
 </li>
 <li>MS2100_DATA_AVAILABLE
 : <a class="el" href="ms2100_8h.html#a0c113d47eb67dc9e6881cb9b4c8bca65a2f91bf5136f15a5c530150b977150769">ms2100.h</a>
@@ -3202,11 +3523,11 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 <li>Ms2100HasEOC
 : <a class="el" href="stm32_2peripherals_2ms2100__arch_8h.html#a0cf9a8222937cd9036b0872730a2f036">ms2100_arch.h</a>
 </li>
-<li>Ms2100Reset()
-: <a class="el" href="stm32_2peripherals_2ms2100__arch_8h.html#aa7c46e00e26b35b2215ef9b1e68c5793">ms2100_arch.h</a>
+<li>Ms2100Reset
+: <a class="el" href="lpc21_2peripherals_2ms2100__arch_8h.html#ae09cc3bfbac5bb19b7a8c3efd1ca3c80">ms2100_arch.h</a>
 </li>
-<li>Ms2100Set
-: <a class="el" href="lpc21_2peripherals_2ms2100__arch_8h.html#a6a69f6973e6b5865b4d1bdfa51ab5fdf">ms2100_arch.h</a>
+<li>Ms2100Set()
+: <a class="el" href="stm32_2peripherals_2ms2100__arch_8h.html#a08541890cc5142626b13054da3d7c804">ms2100_arch.h</a>
 </li>
 <li>Ms2100Status
 : <a class="el" href="ms2100_8h.html#a0c113d47eb67dc9e6881cb9b4c8bca65">ms2100.h</a>
@@ -3231,16 +3552,16 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 : <a class="el" href="airspeed__ms45xx__i2c_8c.html#a3723de8b0fa913e00bb51cf175fbc10c">airspeed_ms45xx_i2c.c</a>
 </li>
 <li>ms45xx_i2c_event()
-: <a class="el" href="airspeed__ms45xx__i2c_8h.html#a2c6e14442d63a2b169a79f88cbcc4fca">airspeed_ms45xx_i2c.h</a>
-, <a class="el" href="airspeed__ms45xx__i2c_8c.html#a2c6e14442d63a2b169a79f88cbcc4fca">airspeed_ms45xx_i2c.c</a>
+: <a class="el" href="airspeed__ms45xx__i2c_8c.html#a2c6e14442d63a2b169a79f88cbcc4fca">airspeed_ms45xx_i2c.c</a>
+, <a class="el" href="airspeed__ms45xx__i2c_8h.html#a2c6e14442d63a2b169a79f88cbcc4fca">airspeed_ms45xx_i2c.h</a>
 </li>
 <li>ms45xx_i2c_init()
 : <a class="el" href="airspeed__ms45xx__i2c_8c.html#af05005cff9e18aa174b71a18abeb8e3b">airspeed_ms45xx_i2c.c</a>
 , <a class="el" href="airspeed__ms45xx__i2c_8h.html#af05005cff9e18aa174b71a18abeb8e3b">airspeed_ms45xx_i2c.h</a>
 </li>
 <li>ms45xx_i2c_periodic()
-: <a class="el" href="airspeed__ms45xx__i2c_8h.html#a32f8ba9f6cf28676fc2b3135a477b543">airspeed_ms45xx_i2c.h</a>
-, <a class="el" href="airspeed__ms45xx__i2c_8c.html#a32f8ba9f6cf28676fc2b3135a477b543">airspeed_ms45xx_i2c.c</a>
+: <a class="el" href="airspeed__ms45xx__i2c_8c.html#a32f8ba9f6cf28676fc2b3135a477b543">airspeed_ms45xx_i2c.c</a>
+, <a class="el" href="airspeed__ms45xx__i2c_8h.html#a32f8ba9f6cf28676fc2b3135a477b543">airspeed_ms45xx_i2c.h</a>
 </li>
 <li>MS45XX_LOWPASS_TAU
 : <a class="el" href="airspeed__ms45xx__i2c_8c.html#a0e66f9da0ae757d8312ddc3e12e2b78d">airspeed_ms45xx_i2c.c</a>
@@ -3270,8 +3591,8 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 : <a class="el" href="baro__MS5534A_8c.html#a28e4122f4d4db75a05f3c4d7a273d91e">baro_MS5534A.c</a>
 </li>
 <li>ms5607_calc()
-: <a class="el" href="ms5611_8c.html#a6dea78d3cbdf03549f9d15b920089ff1">ms5611.c</a>
-, <a class="el" href="ms5611_8h.html#a6dea78d3cbdf03549f9d15b920089ff1">ms5611.h</a>
+: <a class="el" href="ms5611_8h.html#a6dea78d3cbdf03549f9d15b920089ff1">ms5611.h</a>
+, <a class="el" href="ms5611_8c.html#a6dea78d3cbdf03549f9d15b920089ff1">ms5611.c</a>
 </li>
 <li>MS5611_ADC_READ
 : <a class="el" href="ms5611__regs_8h.html#a28748aae8d11dbcb2f65b5eda5eb02c4">ms5611_regs.h</a>
@@ -3288,8 +3609,8 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 , <a class="el" href="ms5611__i2c_8h.html#a14e55ee13fb38c32b8c0bb6146695ca9">ms5611_i2c.h</a>
 </li>
 <li>ms5611_i2c_init()
-: <a class="el" href="ms5611__i2c_8c.html#a17e23c3602297d6edbf19ad6d4bc1d8e">ms5611_i2c.c</a>
-, <a class="el" href="ms5611__i2c_8h.html#a17e23c3602297d6edbf19ad6d4bc1d8e">ms5611_i2c.h</a>
+: <a class="el" href="ms5611__i2c_8h.html#a17e23c3602297d6edbf19ad6d4bc1d8e">ms5611_i2c.h</a>
+, <a class="el" href="ms5611__i2c_8c.html#a17e23c3602297d6edbf19ad6d4bc1d8e">ms5611_i2c.c</a>
 </li>
 <li>ms5611_i2c_periodic()
 : <a class="el" href="ms5611__i2c_8h.html#a6414dbf9e064f7a370447b1002eaa7b9">ms5611_i2c.h</a>
@@ -3308,8 +3629,8 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 : <a class="el" href="ms5611__regs_8h.html#a9184b9d8e57b8b0a14d9f296ae70a570">ms5611_regs.h</a>
 </li>
 <li>ms5611_i2c_start_configure()
-: <a class="el" href="ms5611__i2c_8c.html#aede904dca434d648c441a0f51d9850af">ms5611_i2c.c</a>
-, <a class="el" href="ms5611__i2c_8h.html#aede904dca434d648c441a0f51d9850af">ms5611_i2c.h</a>
+: <a class="el" href="ms5611__i2c_8h.html#aede904dca434d648c441a0f51d9850af">ms5611_i2c.h</a>
+, <a class="el" href="ms5611__i2c_8c.html#aede904dca434d648c441a0f51d9850af">ms5611_i2c.c</a>
 </li>
 <li>ms5611_i2c_start_conversion()
 : <a class="el" href="ms5611__i2c_8c.html#aa7ea4f69e5b5ff916ac4571219d829e1">ms5611_i2c.c</a>
@@ -3331,8 +3652,8 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 : <a class="el" href="ms5611__regs_8h.html#a594b916e08c5de9857e8e847b719987b">ms5611_regs.h</a>
 </li>
 <li>ms5611_prom_crc_ok()
-: <a class="el" href="ms5611_8h.html#aadeaf57da29112210a74857311975e0a">ms5611.h</a>
-, <a class="el" href="ms5611_8c.html#aadeaf57da29112210a74857311975e0a">ms5611.c</a>
+: <a class="el" href="ms5611_8c.html#aadeaf57da29112210a74857311975e0a">ms5611.c</a>
+, <a class="el" href="ms5611_8h.html#aadeaf57da29112210a74857311975e0a">ms5611.h</a>
 </li>
 <li>MS5611_PROM_READ
 : <a class="el" href="ms5611__regs_8h.html#ad807836603b80bcc5fe4d518d2a9e86b">ms5611_regs.h</a>
@@ -3396,8 +3717,8 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 , <a class="el" href="ms5611__spi_8h.html#a7b23274ad291a9e686044d66f378d91d">ms5611_spi.h</a>
 </li>
 <li>ms5611_spi_init()
-: <a class="el" href="ms5611__spi_8c.html#ac102daf0219645404f2d06f2d2e49f2d">ms5611_spi.c</a>
-, <a class="el" href="ms5611__spi_8h.html#a440b24ebb33eae9b2d964542ab03792a">ms5611_spi.h</a>
+: <a class="el" href="ms5611__spi_8h.html#a440b24ebb33eae9b2d964542ab03792a">ms5611_spi.h</a>
+, <a class="el" href="ms5611__spi_8c.html#ac102daf0219645404f2d06f2d2e49f2d">ms5611_spi.c</a>
 </li>
 <li>ms5611_spi_periodic()
 : <a class="el" href="ms5611__spi_8h.html#a950b89b21f5e7b97df350ec56ed1bdc9">ms5611_spi.h</a>
@@ -3414,8 +3735,8 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 , <a class="el" href="ms5611__spi_8h.html#a23682a3c5d36bc1c95f61b80ab101b53">ms5611_spi.h</a>
 </li>
 <li>ms5611_spi_start_conversion()
-: <a class="el" href="ms5611__spi_8c.html#a82e1cf6372b20fbfd4ec58f4cc8e58b9">ms5611_spi.c</a>
-, <a class="el" href="ms5611__spi_8h.html#a82e1cf6372b20fbfd4ec58f4cc8e58b9">ms5611_spi.h</a>
+: <a class="el" href="ms5611__spi_8h.html#a82e1cf6372b20fbfd4ec58f4cc8e58b9">ms5611_spi.h</a>
+, <a class="el" href="ms5611__spi_8c.html#a82e1cf6372b20fbfd4ec58f4cc8e58b9">ms5611_spi.c</a>
 </li>
 <li>MS5611_START_CONV_D1
 : <a class="el" href="ms5611__regs_8h.html#a1d497475691f33aee46953d0fc3003e4">ms5611_regs.h</a>
@@ -3489,6 +3810,9 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 <li>MS_TEMPERATURE_SCALE
 : <a class="el" href="meteo__stick_8c.html#a19022073d490f171b7aea364433962dd">meteo_stick.c</a>
 </li>
+<li>MSD_BOT_RESET
+: <a class="el" href="usb__msd_8h.html#af8cb4deefd2af9bde489fe8598e8aa96aed2697882eba38d731d53035c04b8f9e">usb_msd.h</a>
+</li>
 <li>MSD_CBW_SIGNATURE
 : <a class="el" href="usb__msd_8c.html#a68b7dd45dbcddc5a5c4c82ddbd18c389">usb_msd.c</a>
 </li>
@@ -3516,11 +3840,19 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 <li>MSD_IDLE
 : <a class="el" href="usb__msd_8h.html#af8cb4deefd2af9bde489fe8598e8aa96ab2dbda3078000a12ac7081c970d450c0">usb_msd.h</a>
 </li>
+<li>msd_read_command_block()
+: <a class="el" href="usb__msd_8c.html#aae86072280e1c9c74809a1657712bc8b">usb_msd.c</a>
+</li>
 <li>MSD_READ_COMMAND_BLOCK
 : <a class="el" href="usb__msd_8h.html#af8cb4deefd2af9bde489fe8598e8aa96a98979b5270ac73b425a1e8cb61756517">usb_msd.h</a>
 </li>
-<li>msd_read_command_block()
-: <a class="el" href="usb__msd_8c.html#aae86072280e1c9c74809a1657712bc8b">usb_msd.c</a>
+<li>msd_register_evt_connected()
+: <a class="el" href="usb__msd_8c.html#a9ad360964cf29c17ffda4847ea88c2f3">usb_msd.c</a>
+, <a class="el" href="usb__msd_8h.html#a9ad360964cf29c17ffda4847ea88c2f3">usb_msd.h</a>
+</li>
+<li>msd_register_evt_ejected()
+: <a class="el" href="usb__msd_8h.html#a9b7ba2e93ad133f1b82f60ecf459eb8f">usb_msd.h</a>
+, <a class="el" href="usb__msd_8c.html#a9b7ba2e93ad133f1b82f60ecf459eb8f">usb_msd.c</a>
 </li>
 <li>MSD_REQ_RESET
 : <a class="el" href="usb__msd_8c.html#a214606afcf973f5a63a8dbc932d09f54">usb_msd.c</a>
@@ -3671,9 +4003,6 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 <li>MSG11_SERIALNUMBER
 : <a class="el" href="imu__chimu_8h.html#a7f375da7f5dff0107dcfd3590ca8fbbc">imu_chimu.h</a>
 </li>
-<li>msg_buf
-: <a class="el" href="stereocam_8c.html#a44ae0c3f99d596f974f2069ddb4624da">stereocam.c</a>
-</li>
 <li>MSG_INTERMCU_COMMAND
 : <a class="el" href="link__mcu__usart_8c.html#afcd2324925c3c00ec94e426b12f7f80c">link_mcu_usart.c</a>
 </li>
@@ -3729,8 +4058,8 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 : <a class="el" href="link__mcu__can_8c.html#a9415c5832bef0e5797ec1f269816c146">link_mcu_can.c</a>
 </li>
 <li>MSG_INTERMCU_TRIM_ID
-: <a class="el" href="link__mcu__usart_8c.html#ada7beaa167ba12de28e6dfb407bd1866">link_mcu_usart.c</a>
-, <a class="el" href="link__mcu__can_8c.html#ada7beaa167ba12de28e6dfb407bd1866">link_mcu_can.c</a>
+: <a class="el" href="link__mcu__can_8c.html#ada7beaa167ba12de28e6dfb407bd1866">link_mcu_can.c</a>
+, <a class="el" href="link__mcu__usart_8c.html#ada7beaa167ba12de28e6dfb407bd1866">link_mcu_usart.c</a>
 </li>
 <li>MSG_INTERMCU_TRIM_PITCH
 : <a class="el" href="link__mcu__usart_8c.html#a50535edb3f11e24c054ca920f1e3ed2d">link_mcu_usart.c</a>
@@ -3739,17 +4068,12 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 : <a class="el" href="link__mcu__usart_8c.html#a57e939081e071743a2d3bb0d463e7137">link_mcu_usart.c</a>
 </li>
 <li>MSG_SIZE
-: <a class="el" href="datalink_8h.html#ad4d025ecf1bdbf8b244ca688df8e478d">datalink.h</a>
-, <a class="el" href="main__demo5_8c.html#ad4d025ecf1bdbf8b244ca688df8e478d">main_demo5.c</a>
+: <a class="el" href="main__demo5_8c.html#ad4d025ecf1bdbf8b244ca688df8e478d">main_demo5.c</a>
+, <a class="el" href="telemetry__intermcu__fbw_8c.html#ad4d025ecf1bdbf8b244ca688df8e478d">telemetry_intermcu_fbw.c</a>
+, <a class="el" href="datalink_8h.html#ad4d025ecf1bdbf8b244ca688df8e478d">datalink.h</a>
 </li>
-<li>msg_start
-: <a class="el" href="stereocam_8c.html#a7f0e6aa046f6a321e6d63481fa929409">stereocam.c</a>
-</li>
-<li>msgProperties
-: <a class="el" href="stereocam_8c.html#a99034f4da78d076818e55297065e02dc">stereocam.c</a>
-</li>
-<li>MsgProperties
-: <a class="el" href="stereoprotocol_8h.html#a7e2adaa9389908c16bb5616177a99bef">stereoprotocol.h</a>
+<li>msg_state_init()
+: <a class="el" href="rtcm3_8h.html#a61da617a08d427491b859378ad5ff359">rtcm3.h</a>
 </li>
 <li>MSGQ_HEAP
 : <a class="el" href="msg__queue_8c.html#afe3984fe4fa160d5aa65e531e83e5b04">msg_queue.c</a>
@@ -3777,8 +4101,8 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 , <a class="el" href="msg__queue_8h.html#a0f51e84b25a2e05a3b905dcf826c4446">msg_queue.h</a>
 </li>
 <li>msgqueue_is_full()
-: <a class="el" href="msg__queue_8h.html#a7ae94858e7c233420b3b35b1d6c0226e">msg_queue.h</a>
-, <a class="el" href="msg__queue_8c.html#a7ae94858e7c233420b3b35b1d6c0226e">msg_queue.c</a>
+: <a class="el" href="msg__queue_8c.html#a7ae94858e7c233420b3b35b1d6c0226e">msg_queue.c</a>
+, <a class="el" href="msg__queue_8h.html#a7ae94858e7c233420b3b35b1d6c0226e">msg_queue.h</a>
 </li>
 <li>MsgQueue_MAILBOX_FAIL
 : <a class="el" href="msg__queue_8h.html#af21955713d9e8a8e5ffcb337a33dfefca733968b6a2941fbf84cc350143eafab1">msg_queue.h</a>
@@ -3826,6 +4150,11 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 </li>
 <li>MsgQueueUrgency
 : <a class="el" href="msg__queue_8h.html#a515d85b3345a7403ee1c9f4b8b5769fc">msg_queue.h</a>
+</li>
+<li>mt9f002
+: <a class="el" href="bebop_2board_8c.html#a0a67664fafa1d9cbcc7deaa1352d1673">board.c</a>
+, <a class="el" href="bebop_8h.html#a0a67664fafa1d9cbcc7deaa1352d1673">bebop.h</a>
+, <a class="el" href="disco_8h.html#a0a67664fafa1d9cbcc7deaa1352d1673">disco.h</a>
 </li>
 <li>MT9F002_ADDRESS
 : <a class="el" href="mt9f002__regs_8h.html#a85bdf24d1dbc1602a80a236cb32aad56">mt9f002_regs.h</a>
@@ -4166,8 +4495,20 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 <li>MT9F002_FRAME_STATUS
 : <a class="el" href="mt9f002__regs_8h.html#a4a4901f17554f2134134b8a5bebeedfe">mt9f002_regs.h</a>
 </li>
+<li>MT9F002_GAIN_BLUE
+: <a class="el" href="mt9f002_8h.html#a466d69f137a93cc65d2641745540e406">mt9f002.h</a>
+</li>
+<li>MT9F002_GAIN_GREEN1
+: <a class="el" href="mt9f002_8h.html#a4f4f8fef7b9de9965fc67ba45de9132f">mt9f002.h</a>
+</li>
+<li>MT9F002_GAIN_GREEN2
+: <a class="el" href="mt9f002_8h.html#ae1aae2e9df487ec2104cb5ad99e16086">mt9f002.h</a>
+</li>
 <li>MT9F002_GAIN_MODE
 : <a class="el" href="mt9f002__regs_8h.html#a8dfc248219c530aa502e87d76d830fae">mt9f002_regs.h</a>
+</li>
+<li>MT9F002_GAIN_RED
+: <a class="el" href="mt9f002_8h.html#a21cd4a0a3c0d44a09a4cf5b5c5a4b245">mt9f002.h</a>
 </li>
 <li>MT9F002_GLOBAL_FLASH_START
 : <a class="el" href="mt9f002__regs_8h.html#ac6551c3cdd452ebc43b4cfdb5ecd8666">mt9f002_regs.h</a>
@@ -4208,9 +4549,6 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 <li>MT9F002_GROUPED_PARAMETER_HOLD_
 : <a class="el" href="mt9f002__regs_8h.html#a2c3cbb61c075756bad5bfd4170d7e447">mt9f002_regs.h</a>
 </li>
-<li>MT9F002_HEIGHT
-: <a class="el" href="bebop__front__camera_8c.html#a4b6c30293e8a67eaa8997684a8ccd0fe">bebop_front_camera.c</a>
-</li>
 <li>MT9F002_HiSPi
 : <a class="el" href="mt9f002_8h.html#a7686a67ecb9cf4abb437377dbd28a318a703b05f00330a001a7537a83c423ffee">mt9f002.h</a>
 </li>
@@ -4249,10 +4587,10 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 , <a class="el" href="mt9f002_8h.html#a8f43c3ad8d5ff841d1203ab6c760c8f0">mt9f002.h</a>
 </li>
 <li>MT9F002_INITIAL_OFFSET_X
-: <a class="el" href="bebop_8h.html#acac12807427e406cd1ece5a24d82a4af">bebop.h</a>
+: <a class="el" href="mt9f002_8h.html#acac12807427e406cd1ece5a24d82a4af">mt9f002.h</a>
 </li>
 <li>MT9F002_INITIAL_OFFSET_Y
-: <a class="el" href="bebop_8h.html#a45d4b9a2e3db000aea95ff7206cf9dd2">bebop.h</a>
+: <a class="el" href="mt9f002_8h.html#a45d4b9a2e3db000aea95ff7206cf9dd2">mt9f002.h</a>
 </li>
 <li>MT9F002_INTEGRATION_TIME_CAPABILITY
 : <a class="el" href="mt9f002__regs_8h.html#aff9a602522fe59a7b41120308ecb94ba">mt9f002_regs.h</a>
@@ -4317,6 +4655,9 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 <li>MT9F002_MAX_FRAME_LENGTH_LINES
 : <a class="el" href="mt9f002__regs_8h.html#aac3b4cf6acc023ed4d824cb31904b31f">mt9f002_regs.h</a>
 </li>
+<li>MT9F002_MAX_HEIGHT
+: <a class="el" href="mt9f002_8c.html#a448ff9fbb2a455f03ac8b626709da3d2">mt9f002.c</a>
+</li>
 <li>MT9F002_MAX_LINE_LENGTH_PCK
 : <a class="el" href="mt9f002__regs_8h.html#a8f4ff0d899d39c0907d88726ccef0a37">mt9f002_regs.h</a>
 </li>
@@ -4358,6 +4699,9 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 </li>
 <li>MT9F002_MAX_VT_SYS_CLK_FREQ_MHZ
 : <a class="el" href="mt9f002__regs_8h.html#a1cbd0ecf77ec4a6c44885d52b984a1ed">mt9f002_regs.h</a>
+</li>
+<li>MT9F002_MAX_WIDTH
+: <a class="el" href="mt9f002_8c.html#a7501b3b7a2174d9eaca9af8db3cf7904">mt9f002.c</a>
 </li>
 <li>MT9F002_MFR_3176
 : <a class="el" href="mt9f002__regs_8h.html#adc6faee264012cbeaf15413589a67ba7">mt9f002_regs.h</a>
@@ -5182,13 +5526,13 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 : <a class="el" href="mt9f002__regs_8h.html#a5980b67e7c7c5d4c37c3664f510c1e82">mt9f002_regs.h</a>
 </li>
 <li>MT9F002_OUTPUT_HEIGHT
-: <a class="el" href="bebop_8h.html#af738314f879d0dd6fac0bd053436552d">bebop.h</a>
+: <a class="el" href="mt9f002_8h.html#af738314f879d0dd6fac0bd053436552d">mt9f002.h</a>
 </li>
 <li>MT9F002_OUTPUT_SCALER
-: <a class="el" href="bebop_8h.html#a2b2cbbddc6c1dfb253f088dbf488b365">bebop.h</a>
+: <a class="el" href="mt9f002_8h.html#a2b2cbbddc6c1dfb253f088dbf488b365">mt9f002.h</a>
 </li>
 <li>MT9F002_OUTPUT_WIDTH
-: <a class="el" href="bebop_8h.html#aa07cb6d07e92685aee810db11e33c927">bebop.h</a>
+: <a class="el" href="mt9f002_8h.html#aa07cb6d07e92685aee810db11e33c927">mt9f002.h</a>
 </li>
 <li>MT9F002_P_BL_P0Q0
 : <a class="el" href="mt9f002__regs_8h.html#a432aeb14e0f17e4550af71708c0c43b0">mt9f002_regs.h</a>
@@ -5602,13 +5946,19 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 : <a class="el" href="mt9f002_8c.html#a36bbdbfc466a49d592b591d9d6a35b5f">mt9f002.c</a>
 </li>
 <li>mt9f002_set_exposure()
-: <a class="el" href="mt9f002_8c.html#ad579ad98e5153f6e59ce3f1e85129fcc">mt9f002.c</a>
+: <a class="el" href="mt9f002_8h.html#abcc9f0f2484aa96a4c1cef0c563fd62e">mt9f002.h</a>
+, <a class="el" href="mt9f002_8c.html#abcc9f0f2484aa96a4c1cef0c563fd62e">mt9f002.c</a>
 </li>
 <li>mt9f002_set_gains()
-: <a class="el" href="mt9f002_8c.html#a9e82e877cf7a7dc77829c3c4da4fe6a3">mt9f002.c</a>
+: <a class="el" href="mt9f002_8c.html#a2b19e806c9c4331da2e4730dd6592e38">mt9f002.c</a>
+, <a class="el" href="mt9f002_8h.html#a2b19e806c9c4331da2e4730dd6592e38">mt9f002.h</a>
 </li>
 <li>mt9f002_set_pll()
 : <a class="el" href="mt9f002_8c.html#a938725d4136403996410307333abe9f7">mt9f002.c</a>
+</li>
+<li>mt9f002_set_resolution()
+: <a class="el" href="mt9f002_8c.html#ab56af0c2b794989ad4e1c4e112784588">mt9f002.c</a>
+, <a class="el" href="mt9f002_8h.html#ab56af0c2b794989ad4e1c4e112784588">mt9f002.h</a>
 </li>
 <li>MT9F002_SMIA_TEST
 : <a class="el" href="mt9f002__regs_8h.html#a8eb361accbca6ecbac7b8c80c413994c">mt9f002_regs.h</a>
@@ -5629,10 +5979,10 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 : <a class="el" href="mt9f002__regs_8h.html#aed74d90fda5a85abef6b985e26d4086d">mt9f002_regs.h</a>
 </li>
 <li>MT9F002_TARGET_EXPOSURE
-: <a class="el" href="bebop_8h.html#aa3897e0ce7677738bb76b45dbfd9dcf7">bebop.h</a>
+: <a class="el" href="mt9f002_8h.html#aa3897e0ce7677738bb76b45dbfd9dcf7">mt9f002.h</a>
 </li>
 <li>MT9F002_TARGET_FPS
-: <a class="el" href="bebop_8h.html#af4f307c3a502c7aadb224c7ff9f85a00">bebop.h</a>
+: <a class="el" href="mt9f002_8h.html#af4f307c3a502c7aadb224c7ff9f85a00">mt9f002.h</a>
 </li>
 <li>MT9F002_TEST_DATA_BLUE
 : <a class="el" href="mt9f002__regs_8h.html#a843946b413c6de4c61bbbb6d221d7adc">mt9f002_regs.h</a>
@@ -5685,9 +6035,6 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 <li>MT9F002_VT_SYS_CLK_DIV
 : <a class="el" href="mt9f002__regs_8h.html#a9965ae09ad2442221b07d51de194d8f7">mt9f002_regs.h</a>
 </li>
-<li>MT9F002_WIDTH
-: <a class="el" href="bebop__front__camera_8c.html#ab4eaa422b28d30cf4442cfc600bc595e">bebop_front_camera.c</a>
-</li>
 <li>MT9F002_X_ADDR_END
 : <a class="el" href="mt9f002__regs_8h.html#a69cf7a3abfe32144d9161b1077f00320">mt9f002_regs.h</a>
 </li>
@@ -5717,6 +6064,9 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 </li>
 <li>MT9F002_X_ODD_INC_
 : <a class="el" href="mt9f002__regs_8h.html#ae589d5099b040dec255083423bee597b">mt9f002_regs.h</a>
+</li>
+<li>MT9F002_X_ODD_INC_VAL
+: <a class="el" href="mt9f002_8h.html#a33624b48a483e36d6b8815170d60529c">mt9f002.h</a>
 </li>
 <li>MT9F002_X_OUTPUT_SIZE
 : <a class="el" href="mt9f002__regs_8h.html#a31d8561be863b98ba00f51e03ffab219">mt9f002_regs.h</a>
@@ -5750,6 +6100,9 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 </li>
 <li>MT9F002_Y_ODD_INC_
 : <a class="el" href="mt9f002__regs_8h.html#a5786093032e674cdfda28f289cf82c5f">mt9f002_regs.h</a>
+</li>
+<li>MT9F002_Y_ODD_INC_VAL
+: <a class="el" href="mt9f002_8h.html#aeff5551b0efe0b0fbd7d30f6a89ad0ef">mt9f002.h</a>
 </li>
 <li>MT9F002_Y_OUTPUT_SIZE
 : <a class="el" href="mt9f002__regs_8h.html#af409470f4e7f9eceb3986bf7c06c9e3e">mt9f002_regs.h</a>
@@ -5965,8 +6318,8 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 : <a class="el" href="mt9v117_8c.html#ab5e11208a0a26679e535aaef6e6043ad">mt9v117.c</a>
 </li>
 <li>mt9v117_init()
-: <a class="el" href="mt9v117_8h.html#aa6ecb42ade7b40f50bc3cf8f306583a7">mt9v117.h</a>
-, <a class="el" href="mt9v117_8c.html#aa6ecb42ade7b40f50bc3cf8f306583a7">mt9v117.c</a>
+: <a class="el" href="mt9v117_8c.html#aa6ecb42ade7b40f50bc3cf8f306583a7">mt9v117.c</a>
+, <a class="el" href="mt9v117_8h.html#aa6ecb42ade7b40f50bc3cf8f306583a7">mt9v117.h</a>
 </li>
 <li>MT9V117_LOGICAL_ADDRESS_ACCESS
 : <a class="el" href="mt9v117__regs_8h.html#a5454a142e4b7dd55999366904ce75102">mt9v117_regs.h</a>
@@ -6062,8 +6415,8 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 : <a class="el" href="meteo__stick__calib_8h.html#a000cea9729040e12b6a515c57b08d1e2a235989ec0173b8b5afacba1ec55dbdd5">meteo_stick_calib.h</a>
 </li>
 <li>mtostk_get_calibrated_value()
-: <a class="el" href="meteo__stick__calib_8h.html#af16afd09b27900d3cda26d5fa578ee68">meteo_stick_calib.h</a>
-, <a class="el" href="meteo__stick__calib_8c.html#af16afd09b27900d3cda26d5fa578ee68">meteo_stick_calib.c</a>
+: <a class="el" href="meteo__stick__calib_8c.html#af16afd09b27900d3cda26d5fa578ee68">meteo_stick_calib.c</a>
+, <a class="el" href="meteo__stick__calib_8h.html#af16afd09b27900d3cda26d5fa578ee68">meteo_stick_calib.h</a>
 </li>
 <li>MTOSTK_HUMIDITY
 : <a class="el" href="meteo__stick__calib_8h.html#a000cea9729040e12b6a515c57b08d1e2ac14ccc9fb90d4c5dfd218421b48d1438">meteo_stick_calib.h</a>
@@ -6108,6 +6461,12 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 <li>MTOSTK_TEMP
 : <a class="el" href="meteo__stick__calib_8h.html#a000cea9729040e12b6a515c57b08d1e2a63eedfe1d471708f0873f15f357c1f2f">meteo_stick_calib.h</a>
 </li>
+<li>mu1
+: <a class="el" href="stabilization__indi_8c.html#a50a59a3b98a91407f8977476c536ad5c">stabilization_indi.c</a>
+</li>
+<li>mu2
+: <a class="el" href="stabilization__indi_8c.html#a8d40a3641e3c554e472f17e19dbf965d">stabilization_indi.c</a>
+</li>
 <li>MULTI_GPS_MODE
 : <a class="el" href="gps_8h.html#a397c5f9c39e3335eb3b77927925841ec">gps.h</a>
 </li>
@@ -6119,7 +6478,8 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 : <a class="el" href="catia_8c.html#a61d8a205b71d88c28835fa36cfb254ac">catia.c</a>
 </li>
 <li>MUTEX_DECL()
-: <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c.html#ae4645504922c7d36a7f2171691ba26eb">sys_time_arch.c</a>
+: <a class="el" href="wind__estimator_8c.html#a296f346fc4344c960544819b42e89dfe">wind_estimator.c</a>
+, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c.html#ae4645504922c7d36a7f2171691ba26eb">sys_time_arch.c</a>
 </li>
 <li>MY_ASSERT
 : <a class="el" href="pprz__debug_8h.html#a78ad58d87261accf641b594aed279329">pprz_debug.h</a>
@@ -6146,7 +6506,7 @@ $(document).ready(function(){initNavTree('globals_m.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Oct 1 2016 14:02:44 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:03:16 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

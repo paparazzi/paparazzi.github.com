@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -149,16 +149,16 @@ $(document).ready(function(){initNavTree('pprz__polyfit__float_8c_source.html','
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="comment">// and a table of element T_i = sum_{k=0,n-1} x_k^i*y_k of dimension p+1</span></div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="comment">// make it a matrix for later use</span></div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keywordtype">float</span> _T[p + 1][1];</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <a class="code" href="group__math__algebra__float.html#gac67543d46e5f9c4ec4dc596026f6998d">MAKE_MATRIX_PTR</a>(T, _T, p + 1);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <a class="code" href="group__math__algebra__float.html#ga9a4f92b5522ef528fb5a9d97e5081deb">float_mat_zero</a>(T, p + 1, 1);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <a class="code" href="group__math__algebra__float.html#gac67543d46e5f9c4ec4dc596026f6998d">MAKE_MATRIX_PTR</a>(<a class="code" href="namespacemesonh_1_1mesonh__atmosphere.html#a80e66a1b49e69510ec8e34d53bcb5fde">T</a>, _T, p + 1);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <a class="code" href="group__math__algebra__float.html#ga9a4f92b5522ef528fb5a9d97e5081deb">float_mat_zero</a>(<a class="code" href="namespacemesonh_1_1mesonh__atmosphere.html#a80e66a1b49e69510ec8e34d53bcb5fde">T</a>, p + 1, 1);</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  S[0] = n; <span class="comment">// S_0 is always the number of input measurements</span></div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keywordflow">for</span> (k = 0; k &lt; n; k++) {</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">float</span> x_tmp = x[k];</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    T[0][0] += y[k];</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <a class="code" href="namespacemesonh_1_1mesonh__atmosphere.html#a80e66a1b49e69510ec8e34d53bcb5fde">T</a>[0][0] += y[k];</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordflow">for</span> (i = 1; i &lt; 2 * p + 1; i++) {</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      S[i] += x_tmp; <span class="comment">// add element to S_i</span></div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;      <span class="keywordflow">if</span> (i &lt; p + 1) {</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        T[i][0] += x_tmp * y[k];  <span class="comment">// add element to T_i if i &lt; p+1</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <a class="code" href="namespacemesonh_1_1mesonh__atmosphere.html#a80e66a1b49e69510ec8e34d53bcb5fde">T</a>[i][0] += x_tmp * y[k];  <span class="comment">// add element to T_i if i &lt; p+1</span></div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      }</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;      x_tmp *= x[k]; <span class="comment">// multiply x_tmp by current value of x</span></div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    }</div>
@@ -179,7 +179,7 @@ $(document).ready(function(){initNavTree('pprz__polyfit__float_8c_source.html','
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <a class="code" href="pprz__matrix__decomp__float_8c.html#a9ef015d22c1f50265978a23b21d13e8a">pprz_svd_float</a>(XtX, w, v, p + 1, p + 1);</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <span class="keywordtype">float</span> _c[p + 1][1];</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <a class="code" href="group__math__algebra__float.html#gac67543d46e5f9c4ec4dc596026f6998d">MAKE_MATRIX_PTR</a>(c_tmp, _c, p + 1);</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <a class="code" href="pprz__matrix__decomp__float_8c.html#a232890252a145ccc1a0dd849bf13cb67">pprz_svd_solve_float</a>(c_tmp, XtX, w, v, T, p + 1, p + 1, 1);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <a class="code" href="pprz__matrix__decomp__float_8c.html#a232890252a145ccc1a0dd849bf13cb67">pprz_svd_solve_float</a>(c_tmp, XtX, w, v, <a class="code" href="namespacemesonh_1_1mesonh__atmosphere.html#a80e66a1b49e69510ec8e34d53bcb5fde">T</a>, p + 1, p + 1, 1);</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <span class="comment">// set output vector</span></div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <span class="keywordflow">for</span> (i = 0; i &lt; p + 1; i++) {</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    c[i] = c_tmp[i][0];</div>
@@ -188,11 +188,12 @@ $(document).ready(function(){initNavTree('pprz__polyfit__float_8c_source.html','
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;}</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
-<div class="ttc" id="group__math__algebra__float_html_gac67543d46e5f9c4ec4dc596026f6998d"><div class="ttname"><a href="group__math__algebra__float.html#gac67543d46e5f9c4ec4dc596026f6998d">MAKE_MATRIX_PTR</a></div><div class="ttdeci">#define MAKE_MATRIX_PTR(_ptr, _mat, _rows)</div><div class="ttdoc">Make a pointer to a matrix of _rows lines. </div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__float_8h_source.html#l00586">pprz_algebra_float.h:586</a></div></div>
+<div class="ttc" id="group__math__algebra__float_html_gac67543d46e5f9c4ec4dc596026f6998d"><div class="ttname"><a href="group__math__algebra__float.html#gac67543d46e5f9c4ec4dc596026f6998d">MAKE_MATRIX_PTR</a></div><div class="ttdeci">#define MAKE_MATRIX_PTR(_ptr, _mat, _rows)</div><div class="ttdoc">Make a pointer to a matrix of _rows lines. </div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__float_8h_source.html#l00616">pprz_algebra_float.h:616</a></div></div>
+<div class="ttc" id="namespacemesonh_1_1mesonh__atmosphere_html_a80e66a1b49e69510ec8e34d53bcb5fde"><div class="ttname"><a href="namespacemesonh_1_1mesonh__atmosphere.html#a80e66a1b49e69510ec8e34d53bcb5fde">mesonh.mesonh_atmosphere.T</a></div><div class="ttdeci">int T</div><div class="ttdef"><b>Definition:</b> <a href="mesonh__atmosphere_8py_source.html#l00046">mesonh_atmosphere.py:46</a></div></div>
 <div class="ttc" id="pprz__algebra__float_8h_html"><div class="ttname"><a href="pprz__algebra__float_8h.html">pprz_algebra_float.h</a></div><div class="ttdoc">Paparazzi floating point algebra. </div></div>
-<div class="ttc" id="group__math__algebra__float_html_ga132a789820c2d2610906e87120af9d18"><div class="ttname"><a href="group__math__algebra__float.html#ga132a789820c2d2610906e87120af9d18">float_vect_zero</a></div><div class="ttdeci">static void float_vect_zero(float *a, const int n)</div><div class="ttdoc">a = 0 </div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__float_8h_source.html#l00506">pprz_algebra_float.h:506</a></div></div>
+<div class="ttc" id="group__math__algebra__float_html_ga132a789820c2d2610906e87120af9d18"><div class="ttname"><a href="group__math__algebra__float.html#ga132a789820c2d2610906e87120af9d18">float_vect_zero</a></div><div class="ttdeci">static void float_vect_zero(float *a, const int n)</div><div class="ttdoc">a = 0 </div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__float_8h_source.html#l00520">pprz_algebra_float.h:520</a></div></div>
 <div class="ttc" id="pprz__polyfit__float_8c_html_abfdb5a4da651dc25d7361010d48ea2fa"><div class="ttname"><a href="pprz__polyfit__float_8c.html#abfdb5a4da651dc25d7361010d48ea2fa">pprz_polyfit_float</a></div><div class="ttdeci">void pprz_polyfit_float(float *x, float *y, int n, int p, float *c)</div><div class="ttdoc">Polynomial regression. </div><div class="ttdef"><b>Definition:</b> <a href="pprz__polyfit__float_8c_source.html#l00063">pprz_polyfit_float.c:63</a></div></div>
-<div class="ttc" id="group__math__algebra__float_html_ga9a4f92b5522ef528fb5a9d97e5081deb"><div class="ttname"><a href="group__math__algebra__float.html#ga9a4f92b5522ef528fb5a9d97e5081deb">float_mat_zero</a></div><div class="ttdeci">static void float_mat_zero(float **a, int m, int n)</div><div class="ttdoc">a = 0 </div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__float_8h_source.html#l00594">pprz_algebra_float.h:594</a></div></div>
+<div class="ttc" id="group__math__algebra__float_html_ga9a4f92b5522ef528fb5a9d97e5081deb"><div class="ttname"><a href="group__math__algebra__float.html#ga9a4f92b5522ef528fb5a9d97e5081deb">float_mat_zero</a></div><div class="ttdeci">static void float_mat_zero(float **a, int m, int n)</div><div class="ttdoc">a = 0 </div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__float_8h_source.html#l00626">pprz_algebra_float.h:626</a></div></div>
 <div class="ttc" id="pprz__matrix__decomp__float_8c_html_a232890252a145ccc1a0dd849bf13cb67"><div class="ttname"><a href="pprz__matrix__decomp__float_8c.html#a232890252a145ccc1a0dd849bf13cb67">pprz_svd_solve_float</a></div><div class="ttdeci">void pprz_svd_solve_float(float **x, float **u, float *w, float **v, float **b, int m, int n, int l)</div><div class="ttdoc">SVD based linear solver. </div><div class="ttdef"><b>Definition:</b> <a href="pprz__matrix__decomp__float_8c_source.html#l00446">pprz_matrix_decomp_float.c:446</a></div></div>
 <div class="ttc" id="pprz__matrix__decomp__float_8h_html"><div class="ttname"><a href="pprz__matrix__decomp__float_8h.html">pprz_matrix_decomp_float.h</a></div><div class="ttdoc">Matrix decompositions in floating point. </div></div>
 <div class="ttc" id="pprz__polyfit__float_8h_html"><div class="ttname"><a href="pprz__polyfit__float_8h.html">pprz_polyfit_float.h</a></div><div class="ttdoc">Polynomial regression. </div></div>
@@ -204,7 +205,7 @@ $(document).ready(function(){initNavTree('pprz__polyfit__float_8c_source.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_29343b6f5fcd4b75a5dfbb985ff56864.html">math</a></li><li class="navelem"><a class="el" href="pprz__polyfit__float_8c.html">pprz_polyfit_float.c</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:01:20 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:01:34 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -11,6 +11,7 @@ var ahrs_8h =
     [ "AHRS_COMP_ID_IR", "ahrs_8h.html#a79fedb02151669711a29673ad05b7c25", null ],
     [ "AHRS_COMP_ID_MLKF", "ahrs_8h.html#a24e3083873a4d8d42003ad5d85bc3313", null ],
     [ "AHRS_COMP_ID_NONE", "ahrs_8h.html#a9c78aeef8865b35bc9a437b54e12dfe9", null ],
+    [ "AHRS_COMP_ID_VECTORNAV", "ahrs_8h.html#a81b520c4344d0bb4d1534c79c72cf21f", null ],
     [ "AhrsEnableOutput", "ahrs_8h.html#aeef6d907962b150f0f9183abba07aa8e", null ],
     [ "ahrs_init", "ahrs_8h.html#aa3721663c9df7c7af5613486a3566afb", null ],
     [ "ahrs_register_impl", "ahrs_8h.html#a3d1e9af59a49b4a13e84adbb37d0efec", null ],

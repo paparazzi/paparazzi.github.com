@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -136,7 +136,7 @@ $(document).ready(function(){initNavTree('viewvideo_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="viewvideo_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2computer__vision_2viewvideo_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2computer__vision_2viewvideo_8c" id="sw_2airborne_2modules_2computer__vision_2viewvideo_8c">
-<area shape="rect" id="node2" href="viewvideo_8h.html" title="Get live images from a RTP/UDP stream and save pictures on internal memory. " alt="" coords="784,244,971,285"/><area shape="rect" id="node4" href="cv_8h.html" title="Computer vision framework for onboard processing. " alt="" coords="239,95,454,121"/><area shape="rect" id="node9" href="image_8h.html" title="Image helper functions like resizing, color filter, converters... " alt="" coords="472,244,659,285"/><area shape="rect" id="node17" href="jpeg_8h.html" title="Encode images with the use of the JPEG encoding. " alt="" coords="603,169,744,196"/><area shape="rect" id="node18" href="rtp_8h.html" title="Encodes a vide stream with RTP (JPEG) " alt="" coords="974,169,1106,196"/><area shape="rect" id="node19" href="udp__socket_8h.html" title="Easily create and use UDP sockets. " alt="" coords="995,251,1101,278"/><area shape="rect" id="node6" href="video__device_8h.html" title="peripherals/video_device.h" alt="" coords="29,169,219,196"/><area shape="rect" id="node8" href="inttypes_8h.html" title="inttypes.h" alt="" coords="163,251,248,278"/></map>
+<area shape="rect" id="node2" href="viewvideo_8h.html" title="Get live images from a RTP/UDP stream and save pictures on internal memory. " alt="" coords="5,333,192,375"/><area shape="rect" id="node4" href="cv_8h.html" title="Computer vision framework for onboard processing. " alt="" coords="817,95,1031,121"/><area shape="rect" id="node9" href="image_8h.html" title="Image helper functions like resizing, color filter, converters... " alt="" coords="520,244,707,285"/><area shape="rect" id="node28" href="jpeg_8h.html" title="Encode images with the use of the JPEG encoding. " alt="" coords="435,169,576,196"/><area shape="rect" id="node29" href="rtp_8h.html" title="Encodes a video stream with RTP Format 26 (Motion JPEG) " alt="" coords="278,169,410,196"/><area shape="rect" id="node30" href="udp__socket_8h.html" title="Easily create and use UDP sockets. " alt="" coords="236,251,343,278"/><area shape="rect" id="node6" href="video__device_8h.html" title="peripherals/video_device.h" alt="" coords="851,169,1042,196"/><area shape="rect" id="node8" href="inttypes_8h.html" title="inttypes.h" alt="" coords="968,251,1053,278"/><area shape="rect" id="node11" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="913,341,980,367"/><area shape="rect" id="node12" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="941,512,1120,539"/><area shape="rect" id="node18" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="1283,512,1474,539"/><area shape="rect" id="node21" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="829,423,979,464"/><area shape="rect" id="node23" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="654,423,805,464"/><area shape="rect" id="node24" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="1055,423,1219,464"/><area shape="rect" id="node13" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="1109,587,1264,613"/><area shape="rect" id="node16" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="843,587,994,613"/><area shape="rect" id="node22" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="691,512,815,539"/></map>
 </div>
 </div>
 <p><a href="viewvideo_8c_source.html">Go to the source code of this file.</a></p>
@@ -147,11 +147,7 @@ Macros</h2></td></tr>
 <tr class="separator:a7be96404c0964c92f49f092c0d13634e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e90f0654fb109ed5126ce59fbdb5de3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewvideo_8c.html#a8e90f0654fb109ed5126ce59fbdb5de3">VIEWVIDEO_QUALITY_FACTOR</a>&#160;&#160;&#160;50</td></tr>
 <tr class="separator:a8e90f0654fb109ed5126ce59fbdb5de3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a769ad673bc2a1bc72bdf96081f4196b9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewvideo_8c.html#a769ad673bc2a1bc72bdf96081f4196b9">VIEWVIDEO_RTP_TIME_INC</a>&#160;&#160;&#160;0</td></tr>
-<tr class="separator:a769ad673bc2a1bc72bdf96081f4196b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2fca398e492adfafd1cd75def2ea9155"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewvideo_8c.html#a2fca398e492adfafd1cd75def2ea9155">VIEWVIDEO_SHOT_PATH</a>&#160;&#160;&#160;/data/video/images</td></tr>
-<tr class="separator:a2fca398e492adfafd1cd75def2ea9155"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5bc53c462010c8d8a9198b0177a87f7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewvideo_8c.html#af5bc53c462010c8d8a9198b0177a87f7">VIEWVIDEO_FPS</a>&#160;&#160;&#160;10</td></tr>
+<tr class="memitem:af5bc53c462010c8d8a9198b0177a87f7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewvideo_8c.html#af5bc53c462010c8d8a9198b0177a87f7">VIEWVIDEO_FPS</a>&#160;&#160;&#160;5</td></tr>
 <tr class="separator:af5bc53c462010c8d8a9198b0177a87f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e885fbf76b284dd4286dfcd4512e422"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewvideo_8c.html#a5e885fbf76b284dd4286dfcd4512e422">VIEWVIDEO_NICE_LEVEL</a>&#160;&#160;&#160;5</td></tr>
 <tr class="separator:a5e885fbf76b284dd4286dfcd4512e422"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -162,17 +158,19 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aaa64c7de292e7ac10b442216cc49dcab"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="image_8h.html#structimage__t">image_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewvideo_8c.html#aaa64c7de292e7ac10b442216cc49dcab">viewvideo_function</a> (struct <a class="el" href="image_8h.html#structimage__t">image_t</a> *img)</td></tr>
-<tr class="memdesc:aaa64c7de292e7ac10b442216cc49dcab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles all the video streaming and saving of the image shots This is a sepereate thread, so it needs to be thread safe!  <a href="#aaa64c7de292e7ac10b442216cc49dcab">More...</a><br /></td></tr>
-<tr class="separator:aaa64c7de292e7ac10b442216cc49dcab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0df1e7fcdd4897477c64c18bb5bce697"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="image_8h.html#structimage__t">image_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewvideo_8c.html#a0df1e7fcdd4897477c64c18bb5bce697">viewvideo_function</a> (struct <a class="el" href="udp__socket_8h.html#structUdpSocket">UdpSocket</a> *viewvideo_socket, struct <a class="el" href="image_8h.html#structimage__t">image_t</a> *img, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *rtp_packet_nr, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> *rtp_frame_time)</td></tr>
+<tr class="memdesc:a0df1e7fcdd4897477c64c18bb5bce697"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles all the video streaming and saving of the image shots This is a separate thread, so it needs to be thread safe!  <a href="#a0df1e7fcdd4897477c64c18bb5bce697">More...</a><br /></td></tr>
+<tr class="separator:a0df1e7fcdd4897477c64c18bb5bce697"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8479777ac5ff98cdf58349e741f04005"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewvideo_8c.html#a8479777ac5ff98cdf58349e741f04005">viewvideo_init</a> (void)</td></tr>
 <tr class="memdesc:a8479777ac5ff98cdf58349e741f04005"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the view video.  <a href="#a8479777ac5ff98cdf58349e741f04005">More...</a><br /></td></tr>
 <tr class="separator:a8479777ac5ff98cdf58349e741f04005"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a192493a4796af4cc04319b183eaed146"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="udp__socket_8h.html#structUdpSocket">UdpSocket</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewvideo_8c.html#a192493a4796af4cc04319b183eaed146">video_sock</a></td></tr>
-<tr class="separator:a192493a4796af4cc04319b183eaed146"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a8f0dd21f9cb715ba01d49a8d19e48c"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="udp__socket_8h.html#structUdpSocket">UdpSocket</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewvideo_8c.html#a0a8f0dd21f9cb715ba01d49a8d19e48c">video_sock1</a></td></tr>
+<tr class="separator:a0a8f0dd21f9cb715ba01d49a8d19e48c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4dd851e185f02755f2e2054e7a4edad"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="udp__socket_8h.html#structUdpSocket">UdpSocket</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewvideo_8c.html#aa4dd851e185f02755f2e2054e7a4edad">video_sock2</a></td></tr>
+<tr class="separator:aa4dd851e185f02755f2e2054e7a4edad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d4abc2b0fbf3c67f2ddb3eb8b6d5c74"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="viewvideo_8h.html#structviewvideo__t">viewvideo_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewvideo_8c.html#a5d4abc2b0fbf3c67f2ddb3eb8b6d5c74">viewvideo</a></td></tr>
 <tr class="separator:a5d4abc2b0fbf3c67f2ddb3eb8b6d5c74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -192,7 +190,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="viewvideo_8c_source.html#l00054">54</a> of file <a class="el" href="viewvideo_8c_source.html">viewvideo.c</a>.</p>
+<p>Definition at line <a class="el" href="viewvideo_8c_source.html#l00053">53</a> of file <a class="el" href="viewvideo_8c_source.html">viewvideo.c</a>.</p>
 
 </div>
 </div>
@@ -201,14 +199,14 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define VIEWVIDEO_FPS&#160;&#160;&#160;10</td>
+          <td class="memname">#define VIEWVIDEO_FPS&#160;&#160;&#160;5</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="viewvideo_8c_source.html#l00082">82</a> of file <a class="el" href="viewvideo_8c_source.html">viewvideo.c</a>.</p>
+<p>Definition at line <a class="el" href="viewvideo_8c_source.html#l00065">65</a> of file <a class="el" href="viewvideo_8c_source.html">viewvideo.c</a>.</p>
 
-<p>Referenced by <a class="el" href="viewvideo_8c_source.html#l00213">viewvideo_init()</a>.</p>
+<p>Referenced by <a class="el" href="viewvideo_8c_source.html#l00113">viewvideo_function()</a>, and <a class="el" href="viewvideo_8c_source.html#l00208">viewvideo_init()</a>.</p>
 
 </div>
 </div>
@@ -222,9 +220,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="viewvideo_8c_source.html#l00088">88</a> of file <a class="el" href="viewvideo_8c_source.html">viewvideo.c</a>.</p>
+<p>Definition at line <a class="el" href="viewvideo_8c_source.html#l00071">71</a> of file <a class="el" href="viewvideo_8c_source.html">viewvideo.c</a>.</p>
 
-<p>Referenced by <a class="el" href="viewvideo_8c_source.html#l00213">viewvideo_init()</a>.</p>
+<p>Referenced by <a class="el" href="viewvideo_8c_source.html#l00208">viewvideo_init()</a>.</p>
 
 </div>
 </div>
@@ -238,41 +236,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="viewvideo_8c_source.html#l00060">60</a> of file <a class="el" href="viewvideo_8c_source.html">viewvideo.c</a>.</p>
+<p>Definition at line <a class="el" href="viewvideo_8c_source.html#l00059">59</a> of file <a class="el" href="viewvideo_8c_source.html">viewvideo.c</a>.</p>
 
-<p>Referenced by <a class="el" href="viewvideo_8c_source.html#l00129">viewvideo_function()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a769ad673bc2a1bc72bdf96081f4196b9"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define VIEWVIDEO_RTP_TIME_INC&#160;&#160;&#160;0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="viewvideo_8c_source.html#l00066">66</a> of file <a class="el" href="viewvideo_8c_source.html">viewvideo.c</a>.</p>
-
-<p>Referenced by <a class="el" href="viewvideo_8c_source.html#l00129">viewvideo_function()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a2fca398e492adfafd1cd75def2ea9155"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define VIEWVIDEO_SHOT_PATH&#160;&#160;&#160;/data/video/images</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="viewvideo_8c_source.html#l00075">75</a> of file <a class="el" href="viewvideo_8c_source.html">viewvideo.c</a>.</p>
-
-<p>Referenced by <a class="el" href="viewvideo_8c_source.html#l00213">viewvideo_init()</a>.</p>
+<p>Referenced by <a class="el" href="viewvideo_8c_source.html#l00113">viewvideo_function()</a>.</p>
 
 </div>
 </div>
@@ -286,9 +252,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="viewvideo_8c_source.html#l00094">94</a> of file <a class="el" href="viewvideo_8c_source.html">viewvideo.c</a>.</p>
+<p>Definition at line <a class="el" href="viewvideo_8c_source.html#l00077">77</a> of file <a class="el" href="viewvideo_8c_source.html">viewvideo.c</a>.</p>
 
-<p>Referenced by <a class="el" href="viewvideo_8c_source.html#l00129">viewvideo_function()</a>.</p>
+<p>Referenced by <a class="el" href="viewvideo_8c_source.html#l00113">viewvideo_function()</a>.</p>
 
 </div>
 </div>
@@ -302,52 +268,69 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="viewvideo_8c_source.html#l00098">98</a> of file <a class="el" href="viewvideo_8c_source.html">viewvideo.c</a>.</p>
+<p>Definition at line <a class="el" href="viewvideo_8c_source.html#l00081">81</a> of file <a class="el" href="viewvideo_8c_source.html">viewvideo.c</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="aaa64c7de292e7ac10b442216cc49dcab"></a>
+<a class="anchor" id="a0df1e7fcdd4897477c64c18bb5bce697"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">struct <a class="el" href="image_8h.html#structimage__t">image_t</a> * viewvideo_function </td>
+          <td class="memname">static struct <a class="el" href="image_8h.html#structimage__t">image_t</a>* viewvideo_function </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="image_8h.html#structimage__t">image_t</a> *&#160;</td>
-          <td class="paramname"><em>img</em></td><td>)</td>
+          <td class="paramtype">struct <a class="el" href="udp__socket_8h.html#structUdpSocket">UdpSocket</a> *&#160;</td>
+          <td class="paramname"><em>viewvideo_socket</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">struct <a class="el" href="image_8h.html#structimage__t">image_t</a> *&#160;</td>
+          <td class="paramname"><em>img</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *&#160;</td>
+          <td class="paramname"><em>rtp_packet_nr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> *&#160;</td>
+          <td class="paramname"><em>rtp_frame_time</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Handles all the video streaming and saving of the image shots This is a sepereate thread, so it needs to be thread safe! </p>
+<p>Handles all the video streaming and saving of the image shots This is a separate thread, so it needs to be thread safe! </p>
 
-<p>Definition at line <a class="el" href="viewvideo_8c_source.html#l00129">129</a> of file <a class="el" href="viewvideo_8c_source.html">viewvideo.c</a>.</p>
+<p>Definition at line <a class="el" href="viewvideo_8c_source.html#l00113">113</a> of file <a class="el" href="viewvideo_8c_source.html">viewvideo.c</a>.</p>
 
-<p>References <a class="el" href="image_8h_source.html#l00051">image_t::buf</a>, <a class="el" href="image_8h_source.html#l00050">image_t::buf_size</a>, <a class="el" href="viewvideo_8h_source.html#l00040">viewvideo_t::downsize_factor</a>, <a class="el" href="image_8h_source.html#l00045">image_t::h</a>, <a class="el" href="image_8c_source.html#l00038">image_create()</a>, <a class="el" href="image_8c_source.html#l00063">image_free()</a>, <a class="el" href="image_8h_source.html#l00037">IMAGE_JPEG</a>, <a class="el" href="image_8h_source.html#l00035">IMAGE_YUV422</a>, <a class="el" href="image_8c_source.html#l00213">image_yuv422_downsample()</a>, <a class="el" href="viewvideo_8h_source.html#l00039">viewvideo_t::is_streaming</a>, <a class="el" href="jpeg_8c_source.html#l00408">jpeg_encode_image()</a>, <a class="el" href="rtp_8c_source.html#l00097">rtp_frame_send()</a>, <a class="el" href="viewvideo_8h_source.html#l00042">viewvideo_t::use_rtp</a>, <a class="el" href="viewvideo_8c_source.html#l00105">video_sock</a>, <a class="el" href="viewvideo_8c_source.html#l00115">viewvideo</a>, <a class="el" href="viewvideo_8c_source.html#l00060">VIEWVIDEO_QUALITY_FACTOR</a>, <a class="el" href="viewvideo_8c_source.html#l00066">VIEWVIDEO_RTP_TIME_INC</a>, <a class="el" href="viewvideo_8c_source.html#l00094">VIEWVIDEO_USE_NETCAT</a>, and <a class="el" href="image_8h_source.html#l00044">image_t::w</a>.</p>
-
-<p>Referenced by <a class="el" href="viewvideo_8c_source.html#l00213">viewvideo_init()</a>.</p>
+<p>References <a class="el" href="image_8h_source.html#l00053">image_t::buf</a>, <a class="el" href="image_8h_source.html#l00052">image_t::buf_size</a>, <a class="el" href="viewvideo_8h_source.html#l00040">viewvideo_t::downsize_factor</a>, <a class="el" href="kremlib_8h_source.html#l00243">exit</a>, <a class="el" href="image_8h_source.html#l00046">image_t::h</a>, <a class="el" href="image_8c_source.html#l00038">image_create()</a>, <a class="el" href="image_8c_source.html#l00063">image_free()</a>, <a class="el" href="image_8h_source.html#l00038">IMAGE_JPEG</a>, <a class="el" href="image_8h_source.html#l00036">IMAGE_YUV422</a>, <a class="el" href="image_8c_source.html#l00215">image_yuv422_downsample()</a>, <a class="el" href="viewvideo_8h_source.html#l00039">viewvideo_t::is_streaming</a>, <a class="el" href="jpeg_8c_source.html#l00408">jpeg_encode_image()</a>, <a class="el" href="kremlib_8h_source.html#l00242">printf</a>, <a class="el" href="rtp_8c_source.html#l00127">rtp_frame_send()</a>, <a class="el" href="viewvideo_8h_source.html#l00042">viewvideo_t::use_rtp</a>, <a class="el" href="viewvideo_8c_source.html#l00100">viewvideo</a>, <a class="el" href="viewvideo_8c_source.html#l00065">VIEWVIDEO_FPS</a>, <a class="el" href="viewvideo_8c_source.html#l00059">VIEWVIDEO_QUALITY_FACTOR</a>, <a class="el" href="viewvideo_8c_source.html#l00077">VIEWVIDEO_USE_NETCAT</a>, and <a class="el" href="image_8h_source.html#l00045">image_t::w</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="viewvideo_8c_aaa64c7de292e7ac10b442216cc49dcab_cgraph.png" border="0" usemap="#viewvideo_8c_aaa64c7de292e7ac10b442216cc49dcab_cgraph" alt=""/></div>
-<map name="viewvideo_8c_aaa64c7de292e7ac10b442216cc49dcab_cgraph" id="viewvideo_8c_aaa64c7de292e7ac10b442216cc49dcab_cgraph">
-<area shape="rect" id="node2" href="image_8c.html#ab5cc0250c461b9d2f043e4884f6b9a53" title="Create a new image. " alt="" coords="241,68,351,95"/><area shape="rect" id="node3" href="image_8c.html#aa09d6434519478ba26eab12a96d600ba" title="Free the image. " alt="" coords="249,119,343,145"/><area shape="rect" id="node4" href="image_8c.html#a1504ec67c03ccbac95d53463d1000311" title="Simplified high&#45;speed low CPU downsample function without averaging downsample factor must be 1..." alt="" coords="195,169,397,196"/><area shape="rect" id="node5" href="jpeg_8c.html#ac1a4731c71f3529891f1750260db2626" title="Encode an YUV422 image. " alt="" coords="221,220,371,247"/><area shape="rect" id="node17" href="rtp_8c.html#ab810dc7d46e209624e4edd330edb7bf7" title="Send an RTP frame. " alt="" coords="235,321,357,348"/><area shape="rect" id="node6" href="jpeg_8c.html#a817a4e96b0d0c0e1251e2db08467c2a1" title="jpeg_close_bitstream" alt="" coords="445,68,604,95"/><area shape="rect" id="node7" href="jpeg_8c.html#aa65677a00f264d53b744f64b386139e1" title="jpeg_encodeMCU" alt="" coords="458,119,591,145"/><area shape="rect" id="node12" href="jpeg_8c.html#a688433e5f55000ae893f2d5c29097691" title="jpeg_initialization" alt="" coords="459,195,590,221"/><area shape="rect" id="node15" href="jpeg_8c.html#a0908916b4be15d17fa2ad6e441b633f1" title="jpeg_write_markers" alt="" coords="451,245,598,272"/><area shape="rect" id="node16" href="jpeg_8c.html#a8a9557560cb4c8d4e60756e99b5a5f13" title="MakeTables" alt="" coords="477,296,572,323"/><area shape="rect" id="node8" href="jpeg_8c.html#a5b96ae28e2300858e6af3061ac8f96b9" title="jpeg_DCT" alt="" coords="708,5,791,32"/><area shape="rect" id="node9" href="jpeg_8c.html#a20c1f652043de7bc8171be6591bd3480" title="jpeg_huffman" alt="" coords="695,56,804,83"/><area shape="rect" id="node10" href="jpeg_8c.html#a1b9aa7581d09ec6412a14ec76334667c" title="jpeg_levelshift" alt="" coords="693,107,805,133"/><area shape="rect" id="node11" href="jpeg_8c.html#a185e0318b222708896d55e8d98c0576b" title="jpeg_quantization" alt="" coords="682,157,817,184"/><area shape="rect" id="node13" href="jpeg_8c.html#a496e270428d382bcbda831334590eaf6" title="jpeg_read_400_format" alt="" coords="666,208,833,235"/><area shape="rect" id="node14" href="jpeg_8c.html#a206021dc908d46e0a1d72ed9c40b10e9" title="jpeg_read_422_format" alt="" coords="666,259,833,285"/><area shape="rect" id="node18" href="rtp_8c.html#a7b661ee336df15cbee60fda1d7263247" title="rtp_packet_send" alt="" coords="461,347,589,373"/><area shape="rect" id="node19" href="udp__socket_8c.html#a2c3da4bd5d683ae6c844649fac79f13d" title="Send a packet from buffer, non&#45;blocking. " alt="" coords="652,347,847,373"/></map>
-</div>
-</p>
-
-<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="viewvideo_8c_aaa64c7de292e7ac10b442216cc49dcab_icgraph.png" border="0" usemap="#viewvideo_8c_aaa64c7de292e7ac10b442216cc49dcab_icgraph" alt=""/></div>
-<map name="viewvideo_8c_aaa64c7de292e7ac10b442216cc49dcab_icgraph" id="viewvideo_8c_aaa64c7de292e7ac10b442216cc49dcab_icgraph">
-<area shape="rect" id="node2" href="viewvideo_8h.html#a8479777ac5ff98cdf58349e741f04005" title="Initialize the view video. " alt="" coords="195,5,304,32"/></map>
+<div class="center"><img src="viewvideo_8c_a0df1e7fcdd4897477c64c18bb5bce697_cgraph.png" border="0" usemap="#viewvideo_8c_a0df1e7fcdd4897477c64c18bb5bce697_cgraph" alt=""/></div>
+<map name="viewvideo_8c_a0df1e7fcdd4897477c64c18bb5bce697_cgraph" id="viewvideo_8c_a0df1e7fcdd4897477c64c18bb5bce697_cgraph">
+<area shape="rect" id="node2" href="image_8c.html#ab5cc0250c461b9d2f043e4884f6b9a53" title="Create a new image. " alt="" coords="241,68,351,95"/><area shape="rect" id="node3" href="image_8c.html#aa09d6434519478ba26eab12a96d600ba" title="Free the image. " alt="" coords="249,119,343,145"/><area shape="rect" id="node4" href="image_8c.html#a1504ec67c03ccbac95d53463d1000311" title="Simplified high&#45;speed low CPU downsample function without averaging downsample factor must be 1..." alt="" coords="195,169,397,196"/><area shape="rect" id="node5" href="jpeg_8c.html#ac1a4731c71f3529891f1750260db2626" title="Encode an YUV422 image. " alt="" coords="221,220,371,247"/><area shape="rect" id="node17" href="rtp_8c.html#a31d0efc8803ccbb83cb0b713e69ff16f" title="Send an RTP frame. " alt="" coords="235,321,357,348"/><area shape="rect" id="node6" href="jpeg_8c.html#a817a4e96b0d0c0e1251e2db08467c2a1" title="jpeg_close_bitstream" alt="" coords="445,68,604,95"/><area shape="rect" id="node7" href="jpeg_8c.html#aa65677a00f264d53b744f64b386139e1" title="jpeg_encodeMCU" alt="" coords="458,119,591,145"/><area shape="rect" id="node12" href="jpeg_8c.html#a688433e5f55000ae893f2d5c29097691" title="jpeg_initialization" alt="" coords="459,195,590,221"/><area shape="rect" id="node15" href="jpeg_8c.html#a0908916b4be15d17fa2ad6e441b633f1" title="jpeg_write_markers" alt="" coords="451,245,598,272"/><area shape="rect" id="node16" href="jpeg_8c.html#a8a9557560cb4c8d4e60756e99b5a5f13" title="MakeTables" alt="" coords="477,296,572,323"/><area shape="rect" id="node8" href="jpeg_8c.html#a5b96ae28e2300858e6af3061ac8f96b9" title="jpeg_DCT" alt="" coords="708,5,791,32"/><area shape="rect" id="node9" href="jpeg_8c.html#a20c1f652043de7bc8171be6591bd3480" title="jpeg_huffman" alt="" coords="695,56,804,83"/><area shape="rect" id="node10" href="jpeg_8c.html#a1b9aa7581d09ec6412a14ec76334667c" title="jpeg_levelshift" alt="" coords="693,107,805,133"/><area shape="rect" id="node11" href="jpeg_8c.html#a185e0318b222708896d55e8d98c0576b" title="jpeg_quantization" alt="" coords="682,157,817,184"/><area shape="rect" id="node13" href="jpeg_8c.html#a496e270428d382bcbda831334590eaf6" title="jpeg_read_400_format" alt="" coords="666,208,833,235"/><area shape="rect" id="node14" href="jpeg_8c.html#a206021dc908d46e0a1d72ed9c40b10e9" title="jpeg_read_422_format" alt="" coords="666,259,833,285"/><area shape="rect" id="node18" href="rtp_8c.html#aedd2d69861650f90d27683d366946e03" title="rtp_packet_send" alt="" coords="461,347,589,373"/><area shape="rect" id="node19" href="udp__socket_8c.html#a2c3da4bd5d683ae6c844649fac79f13d" title="Send a packet from buffer, non&#45;blocking. " alt="" coords="652,347,847,373"/></map>
 </div>
 </p>
 
@@ -369,24 +352,53 @@ Variables</h2></td></tr>
 
 <p>Initialize the view video. </p>
 
-<p>Definition at line <a class="el" href="viewvideo_8c_source.html#l00213">213</a> of file <a class="el" href="viewvideo_8c_source.html">viewvideo.c</a>.</p>
+<p>Definition at line <a class="el" href="viewvideo_8c_source.html#l00208">208</a> of file <a class="el" href="viewvideo_8c_source.html">viewvideo.c</a>.</p>
+
+<p>References <a class="el" href="cv_8c_source.html#l00082">cv_add_to_device_async()</a>, <a class="el" href="viewvideo_8h_source.html#l00039">viewvideo_t::is_streaming</a>, <a class="el" href="kremlib_8h_source.html#l00242">printf</a>, <a class="el" href="udp__socket_8c_source.html#l00049">udp_socket_create()</a>, <a class="el" href="viewvideo_8c_source.html#l00088">video_sock1</a>, <a class="el" href="viewvideo_8c_source.html#l00089">video_sock2</a>, <a class="el" href="viewvideo_8c_source.html#l00100">viewvideo</a>, <a class="el" href="viewvideo_8c_source.html#l00065">VIEWVIDEO_FPS</a>, and <a class="el" href="viewvideo_8c_source.html#l00071">VIEWVIDEO_NICE_LEVEL</a>.</p>
+
+<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="viewvideo_8c_a8479777ac5ff98cdf58349e741f04005_cgraph.png" border="0" usemap="#viewvideo_8c_a8479777ac5ff98cdf58349e741f04005_cgraph" alt=""/></div>
+<map name="viewvideo_8c_a8479777ac5ff98cdf58349e741f04005_cgraph" id="viewvideo_8c_a8479777ac5ff98cdf58349e741f04005_cgraph">
+<area shape="rect" id="node2" href="cv_8c.html#a14d4ab03a3db0de4144a4c497c4b8149" title="cv_add_to_device_async" alt="" coords="163,56,341,83"/><area shape="rect" id="node10" href="udp__socket_8c.html#a8904d535adc73468cfa9e57a71f6de72" title="Create UDP socket and bind it. " alt="" coords="181,107,323,133"/><area shape="rect" id="node3" href="cv_8c.html#aee4ecc7b59c1526a024f91a46a34ff45" title="cv_add_to_device" alt="" coords="389,31,524,57"/><area shape="rect" id="node8" href="cv_8c.html#a13a0fca79c7d85448a2fa4bbab340b52" title="cv_async_thread" alt="" coords="392,81,521,108"/><area shape="rect" id="node4" href="cv_8h.html#a9e0afd727457cecc0e207aa03c4d48a5" title="Keep track of video devices added by modules. " alt="" coords="572,31,707,57"/><area shape="rect" id="node5" href="video__thread_8c.html#acc71ed66abdc3fa0cecd95cc408c670e" title="initialize_camera" alt="" coords="755,31,884,57"/><area shape="rect" id="node6" href="v4l2_8c.html#a1f683e79a4639d4e189f059f6c4ae268" title="Initialize a V4L2(Video for Linux 2) device. " alt="" coords="958,5,1033,32"/><area shape="rect" id="node7" href="v4l2_8c.html#a3798643b3e99cd32ef724fc928d92e51" title="Initialize a V4L2 subdevice. " alt="" coords="932,56,1059,83"/><area shape="rect" id="node9" href="rt__priority_8h.html#ad24a15cd8740f6a59aa1a3fd3f8c74bb" title="set_nice_level" alt="" coords="584,81,695,108"/></map>
+</div>
+</p>
 
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a class="anchor" id="a192493a4796af4cc04319b183eaed146"></a>
+<a class="anchor" id="a0a8f0dd21f9cb715ba01d49a8d19e48c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct <a class="el" href="udp__socket_8h.html#structUdpSocket">UdpSocket</a> video_sock</td>
+          <td class="memname">struct <a class="el" href="udp__socket_8h.html#structUdpSocket">UdpSocket</a> video_sock1</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="viewvideo_8c_source.html#l00105">105</a> of file <a class="el" href="viewvideo_8c_source.html">viewvideo.c</a>.</p>
+<p>Definition at line <a class="el" href="viewvideo_8c_source.html#l00088">88</a> of file <a class="el" href="viewvideo_8c_source.html">viewvideo.c</a>.</p>
 
-<p>Referenced by <a class="el" href="viewvideo_8c_source.html#l00129">viewvideo_function()</a>, and <a class="el" href="viewvideo_8c_source.html#l00213">viewvideo_init()</a>.</p>
+<p>Referenced by <a class="el" href="viewvideo_8c_source.html#l00208">viewvideo_init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa4dd851e185f02755f2e2054e7a4edad"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="udp__socket_8h.html#structUdpSocket">UdpSocket</a> video_sock2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="viewvideo_8c_source.html#l00089">89</a> of file <a class="el" href="viewvideo_8c_source.html">viewvideo.c</a>.</p>
+
+<p>Referenced by <a class="el" href="viewvideo_8c_source.html#l00208">viewvideo_init()</a>.</p>
 
 </div>
 </div>
@@ -407,14 +419,14 @@ Variables</h2></td></tr>
 <div class="line">  .use_rtp = <a class="code" href="viewvideo_8c.html#a620cd99a6d07e8129ed89b517aaca1f0">VIEWVIDEO_USE_RTP</a>,</div>
 <div class="line"></div>
 <div class="line">}</div>
-<div class="ttc" id="viewvideo_8c_html_a8e90f0654fb109ed5126ce59fbdb5de3"><div class="ttname"><a href="viewvideo_8c.html#a8e90f0654fb109ed5126ce59fbdb5de3">VIEWVIDEO_QUALITY_FACTOR</a></div><div class="ttdeci">#define VIEWVIDEO_QUALITY_FACTOR</div><div class="ttdef"><b>Definition:</b> <a href="viewvideo_8c_source.html#l00060">viewvideo.c:60</a></div></div>
-<div class="ttc" id="viewvideo_8c_html_a7be96404c0964c92f49f092c0d13634e"><div class="ttname"><a href="viewvideo_8c.html#a7be96404c0964c92f49f092c0d13634e">VIEWVIDEO_DOWNSIZE_FACTOR</a></div><div class="ttdeci">#define VIEWVIDEO_DOWNSIZE_FACTOR</div><div class="ttdef"><b>Definition:</b> <a href="viewvideo_8c_source.html#l00054">viewvideo.c:54</a></div></div>
+<div class="ttc" id="viewvideo_8c_html_a8e90f0654fb109ed5126ce59fbdb5de3"><div class="ttname"><a href="viewvideo_8c.html#a8e90f0654fb109ed5126ce59fbdb5de3">VIEWVIDEO_QUALITY_FACTOR</a></div><div class="ttdeci">#define VIEWVIDEO_QUALITY_FACTOR</div><div class="ttdef"><b>Definition:</b> <a href="viewvideo_8c_source.html#l00059">viewvideo.c:59</a></div></div>
+<div class="ttc" id="viewvideo_8c_html_a7be96404c0964c92f49f092c0d13634e"><div class="ttname"><a href="viewvideo_8c.html#a7be96404c0964c92f49f092c0d13634e">VIEWVIDEO_DOWNSIZE_FACTOR</a></div><div class="ttdeci">#define VIEWVIDEO_DOWNSIZE_FACTOR</div><div class="ttdef"><b>Definition:</b> <a href="viewvideo_8c_source.html#l00053">viewvideo.c:53</a></div></div>
 <div class="ttc" id="std_8h_html_aa93f0eb578d23995850d61f7d61c55c1"><div class="ttname"><a href="std_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></div><div class="ttdeci">#define FALSE</div><div class="ttdef"><b>Definition:</b> <a href="std_8h_source.html#l00005">std.h:5</a></div></div>
-<div class="ttc" id="viewvideo_8c_html_a620cd99a6d07e8129ed89b517aaca1f0"><div class="ttname"><a href="viewvideo_8c.html#a620cd99a6d07e8129ed89b517aaca1f0">VIEWVIDEO_USE_RTP</a></div><div class="ttdeci">#define VIEWVIDEO_USE_RTP</div><div class="ttdef"><b>Definition:</b> <a href="viewvideo_8c_source.html#l00098">viewvideo.c:98</a></div></div>
+<div class="ttc" id="viewvideo_8c_html_a620cd99a6d07e8129ed89b517aaca1f0"><div class="ttname"><a href="viewvideo_8c.html#a620cd99a6d07e8129ed89b517aaca1f0">VIEWVIDEO_USE_RTP</a></div><div class="ttdeci">#define VIEWVIDEO_USE_RTP</div><div class="ttdef"><b>Definition:</b> <a href="viewvideo_8c_source.html#l00081">viewvideo.c:81</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="viewvideo_8c_source.html#l00115">115</a> of file <a class="el" href="viewvideo_8c_source.html">viewvideo.c</a>.</p>
+<p>Definition at line <a class="el" href="viewvideo_8c_source.html#l00100">100</a> of file <a class="el" href="viewvideo_8c_source.html">viewvideo.c</a>.</p>
 
-<p>Referenced by <a class="el" href="viewvideo_8c_source.html#l00129">viewvideo_function()</a>, and <a class="el" href="viewvideo_8c_source.html#l00213">viewvideo_init()</a>.</p>
+<p>Referenced by <a class="el" href="viewvideo_8c_source.html#l00113">viewvideo_function()</a>, and <a class="el" href="viewvideo_8c_source.html#l00208">viewvideo_init()</a>.</p>
 
 </div>
 </div>
@@ -424,7 +436,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_304e79c9f5d09ea65a2f55aafb6a6b9d.html">computer_vision</a></li><li class="navelem"><a class="el" href="viewvideo_8c.html">viewvideo.c</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:01:56 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:02:19 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

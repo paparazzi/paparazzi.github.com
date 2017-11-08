@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -167,7 +167,7 @@ Functions</h2></td></tr>
 <tr class="separator:a14ec031da793cb08aa5e3e3b5d551431"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adfd6ebb4b8039e06d214b227db30e3b2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2usb__ser__hw_8c.html#adfd6ebb4b8039e06d214b227db30e3b2">fifo_free</a> (<a class="el" href="stm32_2usb__ser__hw_8c.html#structfifo__t">fifo_t</a> *fifo)</td></tr>
 <tr class="separator:adfd6ebb4b8039e06d214b227db30e3b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab57b1e209da0ee69459b28fbd55cda72"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2usb__ser__hw_8c.html#ab57b1e209da0ee69459b28fbd55cda72">cdcacm_control_request</a> (usbd_device *usbd_dev, struct usb_setup_data *<a class="el" href="px4flow_8c.html#a11dd1089b4ce30528383cfa24a3c6c23">req</a>, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> **buf, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *len, void(**complete)(usbd_device *usbd_dev, struct usb_setup_data *<a class="el" href="px4flow_8c.html#a11dd1089b4ce30528383cfa24a3c6c23">req</a>))</td></tr>
+<tr class="memitem:ab57b1e209da0ee69459b28fbd55cda72"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2usb__ser__hw_8c.html#ab57b1e209da0ee69459b28fbd55cda72">cdcacm_control_request</a> (usbd_device *usbd_dev, struct usb_setup_data *req, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> **buf, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *len, void(**complete)(usbd_device *usbd_dev, struct usb_setup_data *req))</td></tr>
 <tr class="memdesc:ab57b1e209da0ee69459b28fbd55cda72"><td class="mdescLeft">&#160;</td><td class="mdescRight">CDC device control request (from libopencm3 examples)  <a href="#ab57b1e209da0ee69459b28fbd55cda72">More...</a><br /></td></tr>
 <tr class="separator:ab57b1e209da0ee69459b28fbd55cda72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92b52c04437daf50f42cc4463688e8e0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2usb__ser__hw_8c.html#a92b52c04437daf50f42cc4463688e8e0">cdcacm_data_rx_cb</a> (usbd_device *usbd_dev, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> ep)</td></tr>
@@ -392,7 +392,7 @@ tail</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">void(**)(usbd_device *usbd_dev, struct usb_setup_data *<a class="el" href="px4flow_8c.html#a11dd1089b4ce30528383cfa24a3c6c23">req</a>)&#160;</td>
+          <td class="paramtype">void(**)(usbd_device *usbd_dev, struct usb_setup_data *req)&#160;</td>
           <td class="paramname"><em>complete</em>&#160;</td>
         </tr>
         <tr>
@@ -1502,7 +1502,7 @@ tail</td>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00199">199</a> of file <a class="el" href="stm32_2usb__ser__hw_8c_source.html">usb_ser_hw.c</a>.</p>
 
-<p>Referenced by <a class="el" href="usb__msd_8c_source.html#l00820">msdStart()</a>.</p>
+<p>Referenced by <a class="el" href="usb__msd_8c_source.html#l00855">msdStart()</a>.</p>
 
 </div>
 </div>
@@ -1619,7 +1619,7 @@ tail</td>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00073">73</a> of file <a class="el" href="stm32_2usb__ser__hw_8c_source.html">usb_ser_hw.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__mtk_8c_source.html#l00123">gps_mtk_event()</a>, <a class="el" href="gps__nmea_8c_source.html#l00078">gps_nmea_event()</a>, <a class="el" href="gps__sirf_8c_source.html#l00287">gps_sirf_event()</a>, <a class="el" href="gps__skytraq_8c_source.html#l00115">gps_skytraq_event()</a>, <a class="el" href="gps__ubx_8c_source.html#l00070">gps_ubx_event()</a>, <a class="el" href="ins__module_8h_source.html#l00089">ins_event_check_and_handle()</a>, <a class="el" href="ahrs__chimu__spi_8c_source.html#l00107">parse_ins_msg()</a>, <a class="el" href="i2c_8c_source.html#l00209">send_i2c_err()</a>, <a class="el" href="uart_8c_source.html#l00181">send_uart_err()</a>, <a class="el" href="v4l2_8c_source.html#l00056">v4l2_capture_thread()</a>, <a class="el" href="v4l2_8c_source.html#l00183">v4l2_init()</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00542">VCOM_init()</a>, and <a class="el" href="xsens__common_8c_source.html#l00044">xsens_event()</a>.</p>
+<p>Referenced by <a class="el" href="datalink_8c_source.html#l00056">dl_parse_msg()</a>, <a class="el" href="fixedwing__datalink_8c_source.html#l00063">firmware_parse_msg()</a>, <a class="el" href="gps__mtk_8c_source.html#l00123">gps_mtk_event()</a>, <a class="el" href="gps__nmea_8c_source.html#l00078">gps_nmea_event()</a>, <a class="el" href="gps__sirf_8c_source.html#l00287">gps_sirf_event()</a>, <a class="el" href="gps__skytraq_8c_source.html#l00115">gps_skytraq_event()</a>, <a class="el" href="gps__ubx_8c_source.html#l00109">gps_ubx_event()</a>, <a class="el" href="ins__module_8h_source.html#l00089">ins_event_check_and_handle()</a>, <a class="el" href="ahrs__chimu__spi_8c_source.html#l00107">parse_ins_msg()</a>, <a class="el" href="fixedwing_2autopilot__firmware_8c_source.html#l00110">send_airspeed()</a>, <a class="el" href="gps_8c_source.html#l00131">send_gps()</a>, <a class="el" href="gps_8c_source.html#l00182">send_gps_int()</a>, <a class="el" href="gps_8c_source.html#l00210">send_gps_lla()</a>, <a class="el" href="i2c_8c_source.html#l00209">send_i2c_err()</a>, <a class="el" href="uart_8c_source.html#l00181">send_uart_err()</a>, <a class="el" href="v4l2_8c_source.html#l00056">v4l2_capture_thread()</a>, <a class="el" href="v4l2_8c_source.html#l00183">v4l2_init()</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00542">VCOM_init()</a>, and <a class="el" href="xsens__common_8c_source.html#l00044">xsens_event()</a>.</p>
 
 </div>
 </div>
@@ -1885,7 +1885,7 @@ tail</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_ebfa5059daba0d85a68f1520147b1a51.html">stm32</a></li><li class="navelem"><a class="el" href="stm32_2usb__ser__hw_8c.html">usb_ser_hw.c</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:01:39 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:01:58 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

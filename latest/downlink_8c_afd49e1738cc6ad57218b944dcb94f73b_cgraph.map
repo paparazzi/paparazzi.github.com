@@ -1,51 +1,5 @@
 <map id="downlink_init" name="downlink_init">
-<area shape="rect" id="node2" href="$bluegiga_8c.html#ac8a60ccee96fbe718a27b6194f3f14e0" title="bluegiga_init" alt="" coords="177,317,279,344"/>
-<area shape="rect" id="node14" href="$telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function. " alt="" coords="348,520,545,546"/>
-<area shape="rect" id="node22" href="$chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup. " alt="" coords="156,1077,300,1104"/>
-<area shape="rect" id="node24" href="$downlink_8c.html#af23b2b19aabf230dd8e4bb719c3d4f34" title="send_downlink" alt="" coords="171,114,285,141"/>
-<area shape="rect" id="node25" href="$chibios_2mcu__periph_2sys__time__arch_8c.html#a74db3eed857f9c53bb67db256c12bc83" title="sys_time_usleep(uint32_t us) " alt="" coords="383,621,511,648"/>
-<area shape="rect" id="node26" href="$w5100_8c.html#a3a4ec6731e43710788d3e51f7749259c" title="w5100_init" alt="" coords="183,849,273,876"/>
-<area shape="rect" id="node3" href="$bluegiga_8c.html#a9b6278c5129408fea7fcd6ef782bb566" title="dev_char_available" alt="" coords="375,368,518,394"/>
-<area shape="rect" id="node5" href="$bluegiga_8c.html#a6b1814c6ad9bd32562deee5d34cc055c" title="dev_check_free_space" alt="" coords="814,160,981,186"/>
-<area shape="rect" id="node6" href="$bluegiga_8c.html#a243da754633510e42d0762bd0eb2eca9" title="dev_get_byte" alt="" coords="623,13,731,40"/>
-<area shape="rect" id="node8" href="$bluegiga_8c.html#a44add6bb2cff1278a1da37ac9472d591" title="dev_put_buffer" alt="" coords="388,216,505,242"/>
-<area shape="rect" id="node10" href="$bluegiga_8c.html#a13052301335c3989051f9d805f5a76e5" title="dev_put_byte" alt="" coords="393,165,501,192"/>
-<area shape="rect" id="node11" href="$bluegiga_8c.html#a3a1339a23fa9e17daff004ac656eba06" title="dev_send_message" alt="" coords="372,266,521,293"/>
-<area shape="rect" id="node12" href="$chibios_2mcu__periph_2gpio__arch_8h.html#a0da8ef247730680b4ffa595d11069051" title="Set a gpio output to high level. " alt="" coords="859,469,935,496"/>
-<area shape="rect" id="node13" href="$chibios_2mcu__periph_2gpio__arch_8c.html#a614c4a447f1e43381d92c682ac3b953f" title="Setup one or more pins of the given GPIO port as outputs. " alt="" coords="376,570,517,597"/>
-<area shape="rect" id="node15" href="$bluegiga_8c.html#a165b54a5aa12b2f3b4870838bdcd40e9" title="send_bluegiga" alt="" coords="389,64,504,90"/>
-<area shape="rect" id="node18" href="$group__spi.html#gad2b96673b774298d3bd908e84ceb37c8" title="Register one (and only one) transaction to use spi as slave. " alt="" coords="829,317,965,344"/>
-<area shape="rect" id="node19" href="$bluegiga_8c.html#a81dec5456e47bf1870486a85600c7e1c" title="trans_cb" alt="" coords="408,418,485,445"/>
-<area shape="rect" id="node4" href="$bluegiga_8c.html#a66315eb7fa09606080b4f65f0ab0149b" title="bluegiga_ch_available" alt="" coords="597,368,758,394"/>
-<area shape="rect" id="node7" href="$bluegiga_8c.html#ad59d5db2be5ea429bc32bddfab4f39f3" title="bluegiga_increment_buf" alt="" coords="1033,296,1208,322"/>
-<area shape="rect" id="node9" href="$bluegiga_8c.html#abe358f767725314dab7b28a59e51989c" title="bluegiga_transmit" alt="" coords="609,190,746,217"/>
-<area shape="rect" id="node16" href="$chibios_2mcu__periph_2sys__time__arch_8c.html#ad3cb294b0d1d74dfb511534b36a17960" title="get_sys_time_msec" alt="" coords="603,64,752,90"/>
-<area shape="rect" id="node17" href="$sys__time_8h.html#ab67b78f01783839deb76623ff83981dd" title="msec_of_sys_time_ticks" alt="" coords="809,64,985,90"/>
-<area shape="rect" id="node20" href="$bluegiga_8c.html#a50a0f979fdb5e8cb70090c6de5f203ac" title="bluegiga_receive" alt="" coords="613,418,742,445"/>
-<area shape="rect" id="node21" href="$bluegiga_8c.html#a916d36665c2e3144ac83612875e5af59" title="bluegiga_load_tx" alt="" coords="833,368,962,394"/>
-<area shape="rect" id="node23" href="$sys__time_8h.html#adb22f2652f04908fbc644c7274bf7273" title="usec_of_sys_time_ticks" alt="" coords="361,1229,532,1256"/>
-<area shape="rect" id="node27" href="$chibios_2mcu__periph_2gpio__arch_8h.html#a302a5c9e7203669d0b9db8a2952fe009" title="Clear a gpio output to low level. " alt="" coords="403,1128,490,1154"/>
-<area shape="rect" id="node28" href="$w5100_8c.html#acf688d7d46d5a20eb893df94ba4b2f5c" title="w5100_set" alt="" coords="1075,849,1166,876"/>
-<area shape="rect" id="node30" href="$w5100_8c.html#a0e5e1246b804cc518d06492f384ae50d" title="w5100_set_buffer" alt="" coords="830,824,965,850"/>
-<area shape="rect" id="node31" href="$w5100_8c.html#ad88334d2cf04bfaad89b0f8a4c5239a4" title="configure_socket" alt="" coords="381,824,512,850"/>
-<area shape="rect" id="node34" href="$w5100_8c.html#a838b127385e9ee32c6e20446acb6bbe6" title="true_function" alt="" coords="393,925,500,952"/>
-<area shape="rect" id="node35" href="$w5100_8c.html#aa0cc165275748f62632f87f8c0b27f29" title="dev_transmit" alt="" coords="624,1128,731,1154"/>
-<area shape="rect" id="node37" href="$w5100_8c.html#accbacb6bd3fc90a42ef1a428d15346d7" title="dev_transmit_buffer" alt="" coords="371,1178,522,1205"/>
-<area shape="rect" id="node39" href="$w5100_8c.html#ae0220ed6f4f83a3e5468912071278434" title="dev_send" alt="" coords="405,874,488,901"/>
-<area shape="rect" id="node44" href="$w5100_8c.html#ac607c7e302a7a46608bf2c3897940f09" title="dev_char_available" alt="" coords="375,1026,518,1053"/>
-<area shape="rect" id="node47" href="$w5100_8c.html#ab67a98be34d00c997637455e114f8ce3" title="dev_getch" alt="" coords="403,976,491,1002"/>
-<area shape="rect" id="node29" href="$group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction. " alt="" coords="1569,894,1660,921"/>
-<area shape="rect" id="node32" href="$w5100_8c.html#abade1f8840f1a6de842036d8868706a8" title="w5100_close_socket" alt="" coords="601,925,753,952"/>
-<area shape="rect" id="node33" href="$w5100_8c.html#add4fef731325e39e35816a0372d6e9c6" title="w5100_sock_set" alt="" coords="834,874,961,901"/>
-<area shape="rect" id="node36" href="$w5100_8c.html#a38d417bb07a2d9eeebe11b6009cd710d" title="w5100_transmit" alt="" coords="835,1178,959,1205"/>
-<area shape="rect" id="node38" href="$w5100_8c.html#a77460efc9e8d331b3351e70179fa30f1" title="w5100_transmit_buffer" alt="" coords="593,1178,761,1205"/>
-<area shape="rect" id="node40" href="$w5100_8c.html#ac5b78f6ff9ae6c8cd4a286b9b45f7d5e" title="w5100_send" alt="" coords="627,976,728,1002"/>
-<area shape="rect" id="node41" href="$w5100_8c.html#ac3249d8a1bb38835870a1fc6a8c61524" title="w5100_sock_get16" alt="" coords="1049,1052,1192,1078"/>
-<area shape="rect" id="node42" href="$w5100_8c.html#aa329ee90cfec600285df9d7382a2c623" title="w5100_sock_get" alt="" coords="1256,925,1383,952"/>
-<area shape="rect" id="node43" href="$w5100_8c.html#adc92dea40c158d4eb47238bb053ef8b1" title="w5100_get" alt="" coords="1431,925,1521,952"/>
-<area shape="rect" id="node45" href="$w5100_8c.html#ac632aa6104b3c8d579acb573956febf3" title="w5100_ch_available" alt="" coords="603,1077,751,1104"/>
-<area shape="rect" id="node46" href="$w5100_8c.html#a834e87b2f3c3cd190eee04e2c9162d92" title="w5100_rx_size" alt="" coords="840,1128,955,1154"/>
-<area shape="rect" id="node48" href="$w5100_8c.html#abf3016ffe8faf50c1bf56f6f21ceb261" title="w5100_receive" alt="" coords="619,1026,735,1053"/>
-<area shape="rect" id="node49" href="$w5100_8c.html#a455780f8178c7ad9c93bb668b60724fb" title="w5100_read_data" alt="" coords="830,976,965,1002"/>
-<area shape="rect" id="node50" href="$w5100_8c.html#aa07a01f5b03c499e6bbcc4edcd14c301" title="w5100_read" alt="" coords="1270,976,1369,1002"/>
+<area shape="rect" id="node2" href="$telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function. " alt="" coords="156,5,353,32"/>
+<area shape="rect" id="node3" href="$downlink_8c.html#af23b2b19aabf230dd8e4bb719c3d4f34" title="send_downlink" alt="" coords="197,56,312,83"/>
+<area shape="rect" id="node4" href="$chibios_2mcu__periph_2sys__time__arch_8c.html#ad3cb294b0d1d74dfb511534b36a17960" title="Get the time in milliseconds since startup. " alt="" coords="401,56,551,83"/>
 </map>

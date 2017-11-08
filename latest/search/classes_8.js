@@ -1,6 +1,10 @@
 var searchData=
 [
   ['hackhd',['HackHD',['../hackhd_8h.html#structHackHD',1,'']]],
+  ['hacl_5fimpl_5fchacha20_5flog_5ft_5f',['Hacl_Impl_Chacha20_log_t_',['../Chacha20_8h.html#structHacl__Impl__Chacha20__log__t__',1,'']]],
+  ['hacl_5fimpl_5fchacha20_5fvec128_5flog_5ft_5f',['Hacl_Impl_Chacha20_Vec128_log_t_',['../Chacha20__Vec128_8h.html#structHacl__Impl__Chacha20__Vec128__log__t__',1,'']]],
+  ['hacl_5fimpl_5fpoly1305_5f64_5fstate_5fpoly1305_5fstate',['Hacl_Impl_Poly1305_64_State_poly1305_state',['../Poly1305__64_8h.html#structHacl__Impl__Poly1305__64__State__poly1305__state',1,'']]],
+  ['hacl_5fimpl_5fsalsa20_5flog_5ft_5f',['Hacl_Impl_Salsa20_log_t_',['../Salsa20_8h.html#structHacl__Impl__Salsa20__log__t__',1,'']]],
   ['hctladaptref',['HCtlAdaptRef',['../stabilization__adaptive_8c.html#structHCtlAdaptRef',1,'']]],
   ['heliindigains',['HeliIndiGains',['../stabilization__attitude__heli__indi_8h.html#structHeliIndiGains',1,'']]],
   ['hfilterfloat',['HfilterFloat',['../hf__float_8h.html#structHfilterFloat',1,'']]],
@@ -10,10 +14,10 @@ var searchData=
   ['hmc58xx',['Hmc58xx',['../hmc58xx_8h.html#structHmc58xx',1,'']]],
   ['hmc58xx_2edata',['Hmc58xx.data',['../hmc58xx_8h.html#unionHmc58xx_8data',1,'']]],
   ['hmc58xxconfig',['Hmc58xxConfig',['../hmc58xx_8h.html#structHmc58xxConfig',1,'']]],
-  ['horizontalguidance',['HorizontalGuidance',['../guidance__h_8h.html#structHorizontalGuidance',1,'']]],
-  ['horizontalguidancegains',['HorizontalGuidanceGains',['../guidance__h_8h.html#structHorizontalGuidanceGains',1,'']]],
-  ['horizontalguidancereference',['HorizontalGuidanceReference',['../guidance__h_8h.html#structHorizontalGuidanceReference',1,'']]],
-  ['horizontalguidancesetpoint',['HorizontalGuidanceSetpoint',['../guidance__h_8h.html#structHorizontalGuidanceSetpoint',1,'']]],
+  ['horizontalguidance',['HorizontalGuidance',['../rotorcraft_2guidance_2guidance__h_8h.html#structHorizontalGuidance',1,'']]],
+  ['horizontalguidancegains',['HorizontalGuidanceGains',['../rotorcraft_2guidance_2guidance__h_8h.html#structHorizontalGuidanceGains',1,'']]],
+  ['horizontalguidancereference',['HorizontalGuidanceReference',['../rotorcraft_2guidance_2guidance__h_8h.html#structHorizontalGuidanceReference',1,'']]],
+  ['horizontalguidancesetpoint',['HorizontalGuidanceSetpoint',['../rotorcraft_2guidance_2guidance__h_8h.html#structHorizontalGuidanceSetpoint',1,'']]],
   ['hott_5feam_5fmsg',['HOTT_EAM_MSG',['../hott__eam_8h.html#structHOTT__EAM__MSG',1,'']]],
   ['hott_5fgam_5fmsg',['HOTT_GAM_MSG',['../hott__gam_8h.html#structHOTT__GAM__MSG',1,'']]]
 ];

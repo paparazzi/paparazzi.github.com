@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -106,7 +106,6 @@ $(document).ready(function(){initNavTree('imu__mpu6000_8c.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
@@ -131,13 +130,6 @@ $(document).ready(function(){initNavTree('imu__mpu6000_8c.html','');});
 </div>
 <p><a href="imu__mpu6000_8c_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a26e4ccd24281fa404cf1959858ca10bf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__mpu6000_8c.html#a26e4ccd24281fa404cf1959858ca10bf">IMU_MPU_GYRO_RANGE</a>&#160;&#160;&#160;<a class="el" href="mpu60x0__regs_8h.html#a2e2d6291fc6683bc150bdf4ce96462e7a2e5cd594e294fde972b58c938f3b7ed5">MPU60X0_GYRO_RANGE_2000</a></td></tr>
-<tr class="separator:a26e4ccd24281fa404cf1959858ca10bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c0229d06494ef4074857d8ed4f277e1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__mpu6000_8c.html#a7c0229d06494ef4074857d8ed4f277e1">IMU_MPU_ACCEL_RANGE</a>&#160;&#160;&#160;<a class="el" href="mpu60x0__regs_8h.html#aa0e4bc4500df7264d9752fdf9bcb6727adf49c73ba46abd9e6181f1e970ec33b5">MPU60X0_ACCEL_RANGE_16G</a></td></tr>
-<tr class="separator:a7c0229d06494ef4074857d8ed4f277e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:abcd8e3da368d4b35f99d0221308ae250"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__mpu6000_8c.html#abcd8e3da368d4b35f99d0221308ae250">imu_mpu_spi_init</a> (void)</td></tr>
@@ -156,40 +148,7 @@ Variables</h2></td></tr>
 <div class="textblock"><p>Driver for IMU with only MPU6000 via SPI. </p>
 
 <p>Definition in file <a class="el" href="imu__mpu6000_8c_source.html">imu_mpu6000.c</a>.</p>
-</div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="a7c0229d06494ef4074857d8ed4f277e1"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMU_MPU_ACCEL_RANGE&#160;&#160;&#160;<a class="el" href="mpu60x0__regs_8h.html#aa0e4bc4500df7264d9752fdf9bcb6727adf49c73ba46abd9e6181f1e970ec33b5">MPU60X0_ACCEL_RANGE_16G</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="imu__mpu6000_8c_source.html#l00065">65</a> of file <a class="el" href="imu__mpu6000_8c_source.html">imu_mpu6000.c</a>.</p>
-
-<p>Referenced by <a class="el" href="imu__mpu6000_8c_source.html#l00072">imu_mpu_spi_init()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a26e4ccd24281fa404cf1959858ca10bf"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMU_MPU_GYRO_RANGE&#160;&#160;&#160;<a class="el" href="mpu60x0__regs_8h.html#a2e2d6291fc6683bc150bdf4ce96462e7a2e5cd594e294fde972b58c938f3b7ed5">MPU60X0_GYRO_RANGE_2000</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="imu__mpu6000_8c_source.html#l00060">60</a> of file <a class="el" href="imu__mpu6000_8c_source.html">imu_mpu6000.c</a>.</p>
-
-<p>Referenced by <a class="el" href="imu__mpu6000_8c_source.html#l00072">imu_mpu_spi_init()</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="adeded9c36c67ea0bb8d9711c9992dea0"></a>
 <div class="memitem">
 <div class="memproto">
@@ -204,9 +163,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="imu__mpu6000_8c_source.html#l00088">88</a> of file <a class="el" href="imu__mpu6000_8c_source.html">imu_mpu6000.c</a>.</p>
+<p>Definition at line <a class="el" href="imu__mpu6000_8c_source.html#l00081">81</a> of file <a class="el" href="imu__mpu6000_8c_source.html">imu_mpu6000.c</a>.</p>
 
-<p>References <a class="el" href="imu_8h_source.html#l00039">Imu::accel</a>, <a class="el" href="imu_8h_source.html#l00047">Imu::accel_unscaled</a>, <a class="el" href="mpu60x0__spi_8h.html#a9c37188f064aff2f6b32b6f4df55043e">Mpu60x0_Spi::data_accel</a>, <a class="el" href="mpu60x0__spi_8h_source.html#l00056">Mpu60x0_Spi::data_available</a>, <a class="el" href="mpu60x0__spi_8h.html#a49d47442f2e632539f988f12f30bdbb3">Mpu60x0_Spi::data_rates</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00068">get_sys_time_usec()</a>, <a class="el" href="imu_8h_source.html#l00038">Imu::gyro</a>, <a class="el" href="imu_8h_source.html#l00046">Imu::gyro_unscaled</a>, <a class="el" href="imu_8c_source.html#l00108">imu</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00213">IMU_MPU6000_ID</a>, <a class="el" href="imu__mpu6000_8c_source.html#l00070">imu_mpu_spi</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00350">imu_scale_accel()</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00349">imu_scale_gyro()</a>, <a class="el" href="imu__mpu6000_8h_source.html#l00039">ImuMpu6000::mpu</a>, <a class="el" href="mpu60x0__spi_8c_source.html#l00110">mpu60x0_spi_event()</a>, <a class="el" href="pprz__algebra_8h_source.html#l00336">RATES_COPY</a>, and <a class="el" href="pprz__algebra_8h_source.html#l00139">VECT3_COPY</a>.</p>
+<p>References <a class="el" href="imu_8h_source.html#l00039">Imu::accel</a>, <a class="el" href="imu_8h_source.html#l00047">Imu::accel_unscaled</a>, <a class="el" href="mpu60x0__spi_8h.html#af397affe37b51ee0da677b503ef8e513">Mpu60x0_Spi::data_accel</a>, <a class="el" href="mpu60x0__spi_8h_source.html#l00056">Mpu60x0_Spi::data_available</a>, <a class="el" href="mpu60x0__spi_8h.html#ab8a10b55b7da9921f5084df35ce19ef9">Mpu60x0_Spi::data_rates</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00068">get_sys_time_usec()</a>, <a class="el" href="imu_8h_source.html#l00038">Imu::gyro</a>, <a class="el" href="imu_8h_source.html#l00046">Imu::gyro_unscaled</a>, <a class="el" href="imu_8c_source.html#l00108">imu</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00244">IMU_MPU6000_ID</a>, <a class="el" href="imu__mpu6000_8c_source.html#l00063">imu_mpu_spi</a>, <a class="el" href="imu__vectornav_8c_source.html#l00044">imu_scale_accel()</a>, <a class="el" href="imu__vectornav_8c_source.html#l00043">imu_scale_gyro()</a>, <a class="el" href="imu__mpu6000_8h_source.html#l00072">ImuMpu6000::mpu</a>, <a class="el" href="mpu60x0__spi_8c_source.html#l00110">mpu60x0_spi_event()</a>, <a class="el" href="pprz__algebra_8h_source.html#l00336">RATES_COPY</a>, and <a class="el" href="pprz__algebra_8h_source.html#l00139">VECT3_COPY</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -215,7 +174,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="imu__mpu6000_8c_adeded9c36c67ea0bb8d9711c9992dea0_cgraph.png" border="0" usemap="#imu__mpu6000_8c_adeded9c36c67ea0bb8d9711c9992dea0_cgraph" alt=""/></div>
 <map name="imu__mpu6000_8c_adeded9c36c67ea0bb8d9711c9992dea0_cgraph" id="imu__mpu6000_8c_adeded9c36c67ea0bb8d9711c9992dea0_cgraph">
-<area shape="rect" id="node2" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup. " alt="" coords="207,5,351,32"/><area shape="rect" id="node4" href="ahrs__gx3_8c.html#a34a2e1e2b450191b8ab1e849239810b2" title="imu_scale_accel" alt="" coords="216,56,343,83"/><area shape="rect" id="node5" href="ahrs__gx3_8c.html#a8d63b0a61c8ffe88dd15b40843b1ae1d" title="imu_scale_gyro" alt="" coords="219,107,340,133"/><area shape="rect" id="node6" href="mpu60x0__spi_8c.html#a352dbef3019f057741cf1494e4b6f36d" title="mpu60x0_spi_event" alt="" coords="204,157,355,184"/><area shape="rect" id="node3" href="sys__time_8h.html#adb22f2652f04908fbc644c7274bf7273" title="usec_of_sys_time_ticks" alt="" coords="413,5,584,32"/><area shape="rect" id="node7" href="mpu60x0_8c.html#a564470aa2f16b3f6665b99d9141f9ae7" title="Configuration sequence called once before normal use. " alt="" coords="416,131,581,157"/><area shape="rect" id="node9" href="mpu60x0__spi_8c.html#af1fb9f28813ab2ad3e7f89298ca708c8" title="mpu60x0_spi_write_to_reg" alt="" coords="403,184,595,211"/><area shape="rect" id="node8" href="mpu60x0_8h.html#aedbe7307e6e7f522300178dd964c2f3b" title="Configure I2C slaves of the MPU. " alt="" coords="643,122,816,163"/><area shape="rect" id="node10" href="group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction. " alt="" coords="684,188,775,215"/></map>
+<area shape="rect" id="node2" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup. " alt="" coords="207,5,351,32"/><area shape="rect" id="node3" href="imu__vectornav_8c.html#a34a2e1e2b450191b8ab1e849239810b2" title="imu_scale_accel" alt="" coords="216,56,343,83"/><area shape="rect" id="node4" href="imu__vectornav_8c.html#a8d63b0a61c8ffe88dd15b40843b1ae1d" title="imu_scale_gyro" alt="" coords="219,107,340,133"/><area shape="rect" id="node5" href="mpu60x0__spi_8c.html#a352dbef3019f057741cf1494e4b6f36d" title="mpu60x0_spi_event" alt="" coords="204,157,355,184"/><area shape="rect" id="node6" href="mpu60x0_8c.html#a564470aa2f16b3f6665b99d9141f9ae7" title="Configuration sequence called once before normal use. " alt="" coords="416,131,581,157"/><area shape="rect" id="node8" href="mpu60x0__spi_8c.html#af1fb9f28813ab2ad3e7f89298ca708c8" title="mpu60x0_spi_write_to_reg" alt="" coords="403,183,595,209"/><area shape="rect" id="node7" href="mpu60x0_8h.html#aedbe7307e6e7f522300178dd964c2f3b" title="Configure I2C slaves of the MPU. " alt="" coords="643,121,816,162"/><area shape="rect" id="node9" href="group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction. " alt="" coords="684,187,775,213"/></map>
 </div>
 </p>
 
@@ -235,9 +194,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="imu__mpu6000_8c_source.html#l00072">72</a> of file <a class="el" href="imu__mpu6000_8c_source.html">imu_mpu6000.c</a>.</p>
+<p>Definition at line <a class="el" href="imu__mpu6000_8c_source.html#l00065">65</a> of file <a class="el" href="imu__mpu6000_8c_source.html">imu_mpu6000.c</a>.</p>
 
-<p>References <a class="el" href="mpu60x0_8h_source.html#l00082">Mpu60x0Config::accel_range</a>, <a class="el" href="mpu60x0__spi_8h_source.html#l00067">Mpu60x0_Spi::config</a>, <a class="el" href="mpu60x0_8h_source.html#l00080">Mpu60x0Config::dlpf_cfg</a>, <a class="el" href="mpu60x0_8h_source.html#l00081">Mpu60x0Config::gyro_range</a>, <a class="el" href="imu__mpu6000_8c_source.html#l00065">IMU_MPU_ACCEL_RANGE</a>, <a class="el" href="imu__mpu6000_8c_source.html#l00060">IMU_MPU_GYRO_RANGE</a>, <a class="el" href="imu__mpu6000_8h_source.html#l00039">ImuMpu6000::mpu</a>, <a class="el" href="mpu60x0__spi_8c_source.html#l00031">mpu60x0_spi_init()</a>, and <a class="el" href="mpu60x0_8h_source.html#l00079">Mpu60x0Config::smplrt_div</a>.</p>
+<p>References <a class="el" href="mpu60x0_8h_source.html#l00128">Mpu60x0Config::accel_range</a>, <a class="el" href="mpu60x0__spi_8h_source.html#l00067">Mpu60x0_Spi::config</a>, <a class="el" href="mpu60x0_8h_source.html#l00126">Mpu60x0Config::dlpf_cfg</a>, <a class="el" href="mpu60x0_8h_source.html#l00127">Mpu60x0Config::gyro_range</a>, <a class="el" href="imu__mpu6000_8h_source.html#l00041">IMU_MPU_ACCEL_RANGE</a>, <a class="el" href="imu__mpu6000_8h_source.html#l00037">IMU_MPU_GYRO_RANGE</a>, <a class="el" href="imu__mpu6000_8h_source.html#l00072">ImuMpu6000::mpu</a>, <a class="el" href="mpu60x0__spi_8c_source.html#l00031">mpu60x0_spi_init()</a>, and <a class="el" href="mpu60x0_8h_source.html#l00125">Mpu60x0Config::smplrt_div</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -266,9 +225,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="imu__mpu6000_8c_source.html#l00083">83</a> of file <a class="el" href="imu__mpu6000_8c_source.html">imu_mpu6000.c</a>.</p>
+<p>Definition at line <a class="el" href="imu__mpu6000_8c_source.html#l00076">76</a> of file <a class="el" href="imu__mpu6000_8c_source.html">imu_mpu6000.c</a>.</p>
 
-<p>References <a class="el" href="imu__mpu6000_8c_source.html#l00070">imu_mpu_spi</a>, <a class="el" href="imu__mpu6000_8h_source.html#l00039">ImuMpu6000::mpu</a>, and <a class="el" href="mpu60x0__spi_8h_source.html#l00078">mpu60x0_spi_periodic()</a>.</p>
+<p>References <a class="el" href="imu__mpu6000_8c_source.html#l00063">imu_mpu_spi</a>, <a class="el" href="imu__mpu6000_8h_source.html#l00072">ImuMpu6000::mpu</a>, and <a class="el" href="mpu60x0__spi_8h_source.html#l00078">mpu60x0_spi_periodic()</a>.</p>
 
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -294,9 +253,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="imu__mpu6000_8c_source.html#l00070">70</a> of file <a class="el" href="imu__mpu6000_8c_source.html">imu_mpu6000.c</a>.</p>
+<p>Definition at line <a class="el" href="imu__mpu6000_8c_source.html#l00063">63</a> of file <a class="el" href="imu__mpu6000_8c_source.html">imu_mpu6000.c</a>.</p>
 
-<p>Referenced by <a class="el" href="imu__mpu6000_8c_source.html#l00088">imu_mpu_spi_event()</a>, and <a class="el" href="imu__mpu6000_8c_source.html#l00083">imu_mpu_spi_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="imu__mpu6000_8c_source.html#l00081">imu_mpu_spi_event()</a>, and <a class="el" href="imu__mpu6000_8c_source.html#l00076">imu_mpu_spi_periodic()</a>.</p>
 
 </div>
 </div>
@@ -306,7 +265,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_8b2fa0708e2db44c1b91938af97bac44.html">imu</a></li><li class="navelem"><a class="el" href="imu__mpu6000_8c.html">imu_mpu6000.c</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:02:13 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:02:41 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -113,10 +113,11 @@ $(document).ready(function(){initNavTree('size__divergence_8c.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p>Calculate divergence from flow vectors by looking at line sizes beteween the points.  
+<p>Calculate divergence from flow vectors by looking at line sizes between the points.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="size__divergence_8h_source.html">size_divergence.h</a>&quot;</code><br />
 <code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="pprz__stat_8h_source.html">math/pprz_stat.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for size_divergence.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -124,7 +125,7 @@ $(document).ready(function(){initNavTree('size__divergence_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="size__divergence_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2computer__vision_2opticflow_2size__divergence_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2computer__vision_2opticflow_2size__divergence_8c" id="sw_2airborne_2modules_2computer__vision_2opticflow_2size__divergence_8c">
-<area shape="rect" id="node2" href="size__divergence_8h.html" title="Calculate divergence from flow vectors by looking at line sizes beteween the points. " alt="" coords="13,109,149,136"/><area shape="rect" id="node3" href="image_8h.html" title="Image helper functions like resizing, color filter, converters... " alt="" coords="15,184,147,211"/></map>
+<area shape="rect" id="node2" href="size__divergence_8h.html" title="Calculate divergence from flow vectors by looking at line sizes beteween the points. " alt="" coords="449,109,585,136"/><area shape="rect" id="node20" href="pprz__stat_8h.html" title="Statistics functions. " alt="" coords="147,184,279,211"/><area shape="rect" id="node3" href="image_8h.html" title="Image helper functions like resizing, color filter, converters... " alt="" coords="451,184,583,211"/><area shape="rect" id="node6" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="484,259,551,285"/><area shape="rect" id="node7" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="488,423,667,449"/><area shape="rect" id="node13" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="691,423,882,449"/><area shape="rect" id="node16" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="269,333,419,375"/><area shape="rect" id="node18" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="94,333,245,375"/><area shape="rect" id="node19" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="495,333,659,375"/><area shape="rect" id="node8" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="677,497,832,524"/><area shape="rect" id="node11" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="502,497,653,524"/><area shape="rect" id="node17" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="150,423,274,449"/></map>
 </div>
 </div>
 <p><a href="size__divergence_8c_source.html">Go to the source code of this file.</a></p>
@@ -139,12 +140,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a5bd0d30766d4538c9b64fccc7826b12a"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="size__divergence_8c.html#a5bd0d30766d4538c9b64fccc7826b12a">get_size_divergence</a> (struct <a class="el" href="image_8h.html#structflow__t">flow_t</a> *vectors, int count, int n_samples)</td></tr>
 <tr class="memdesc:a5bd0d30766d4538c9b64fccc7826b12a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get divergence from optical flow vectors based on line sizes between corners.  <a href="#a5bd0d30766d4538c9b64fccc7826b12a">More...</a><br /></td></tr>
 <tr class="separator:a5bd0d30766d4538c9b64fccc7826b12a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae48ba4f34bd6f955e2c21ffbe7baea08"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="size__divergence_8c.html#ae48ba4f34bd6f955e2c21ffbe7baea08">get_mean</a> (float *numbers, int n_elements)</td></tr>
-<tr class="memdesc:ae48ba4f34bd6f955e2c21ffbe7baea08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the sample mean of a vector of floats.  <a href="#ae48ba4f34bd6f955e2c21ffbe7baea08">More...</a><br /></td></tr>
-<tr class="separator:ae48ba4f34bd6f955e2c21ffbe7baea08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Calculate divergence from flow vectors by looking at line sizes beteween the points. </p>
+<div class="textblock"><p>Calculate divergence from flow vectors by looking at line sizes between the points. </p>
 <p>Uses optical flow vectors as determined with a corner tracker and Lucas Kanade to estimate divergence. </p>
 
 <p>Definition in file <a class="el" href="size__divergence_8c_source.html">size_divergence.c</a>.</p>
@@ -159,64 +157,13 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="size__divergence_8c_source.html#l00035">35</a> of file <a class="el" href="size__divergence_8c_source.html">size_divergence.c</a>.</p>
+<p>Definition at line <a class="el" href="size__divergence_8c_source.html#l00037">37</a> of file <a class="el" href="size__divergence_8c_source.html">size_divergence.c</a>.</p>
 
-<p>Referenced by <a class="el" href="size__divergence_8c_source.html#l00044">get_size_divergence()</a>.</p>
+<p>Referenced by <a class="el" href="size__divergence_8c_source.html#l00046">get_size_divergence()</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="ae48ba4f34bd6f955e2c21ffbe7baea08"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float get_mean </td>
-          <td>(</td>
-          <td class="paramtype">float *&#160;</td>
-          <td class="paramname"><em>numbers</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>n_elements</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the sample mean of a vector of floats. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">numbers</td><td>Vector of numbers </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">n_elements</td><td>Number of elements </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>mean </dd></dl>
-
-<p>Definition at line <a class="el" href="size__divergence_8c_source.html#l00136">136</a> of file <a class="el" href="size__divergence_8c_source.html">size_divergence.c</a>.</p>
-
-<p>Referenced by <a class="el" href="size__divergence_8c_source.html#l00044">get_size_divergence()</a>.</p>
-
-<p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="size__divergence_8c_ae48ba4f34bd6f955e2c21ffbe7baea08_icgraph.png" border="0" usemap="#size__divergence_8c_ae48ba4f34bd6f955e2c21ffbe7baea08_icgraph" alt=""/></div>
-<map name="size__divergence_8c_ae48ba4f34bd6f955e2c21ffbe7baea08_icgraph" id="size__divergence_8c_ae48ba4f34bd6f955e2c21ffbe7baea08_icgraph">
-<area shape="rect" id="node2" href="size__divergence_8h.html#a5bd0d30766d4538c9b64fccc7826b12a" title="Get divergence from optical flow vectors based on line sizes between corners. " alt="" coords="140,5,292,32"/><area shape="rect" id="node3" href="opticflow__calculator_8h.html#ab394463bc481d71e14ae92b730c1bad0" title="Run the optical flow with fast9 and lukaskanade on a new image frame. " alt="" coords="340,5,520,32"/><area shape="rect" id="node4" href="opticflow__calculator_8h.html#aee6bfa400248db0fad131de276c15783" title="Run the optical flow on a new image frame. " alt="" coords="568,5,723,32"/><area shape="rect" id="node5" href="opticflow__module_8c.html#a36b69a7ec255d2d20bb31b6d13e3e567" title="The main optical flow calculation thread. " alt="" coords="771,5,935,32"/><area shape="rect" id="node6" href="opticflow__module_8h.html#a6026660ee86fbb1f72bada581386e6d9" title="Initialize the optical flow module for the bottom camera. " alt="" coords="983,5,1141,32"/></map>
-</div>
-</p>
-
-</div>
-</div>
 <a class="anchor" id="a5bd0d30766d4538c9b64fccc7826b12a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -258,31 +205,31 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>divergence </dd></dl>
 
-<p>Definition at line <a class="el" href="size__divergence_8c_source.html#l00044">44</a> of file <a class="el" href="size__divergence_8c_source.html">size_divergence.c</a>.</p>
+<p>Definition at line <a class="el" href="size__divergence_8c_source.html#l00046">46</a> of file <a class="el" href="size__divergence_8c_source.html">size_divergence.c</a>.</p>
 
-<p>References <a class="el" href="image_8h_source.html#l00063">flow_t::flow_x</a>, <a class="el" href="image_8h_source.html#l00064">flow_t::flow_y</a>, <a class="el" href="size__divergence_8c_source.html#l00136">get_mean()</a>, <a class="el" href="size__divergence_8c_source.html#l00035">NO_DIV</a>, <a class="el" href="image_8h_source.html#l00062">flow_t::pos</a>, <a class="el" href="image_8h_source.html#l00056">point_t::x</a>, and <a class="el" href="image_8h_source.html#l00057">point_t::y</a>.</p>
+<p>References <a class="el" href="image_8h_source.html#l00060">point_t::count</a>, <a class="el" href="pprz__geodetic__utm_8h_source.html#l00040">E</a>, <a class="el" href="image_8h_source.html#l00068">flow_t::flow_x</a>, <a class="el" href="image_8h_source.html#l00069">flow_t::flow_y</a>, <a class="el" href="pprz__stat_8c_source.html#l00115">mean_f()</a>, <a class="el" href="size__divergence_8c_source.html#l00037">NO_DIV</a>, <a class="el" href="image_8h_source.html#l00067">flow_t::pos</a>, <a class="el" href="image_8h_source.html#l00058">point_t::x</a>, and <a class="el" href="image_8h_source.html#l00059">point_t::y</a>.</p>
 
-<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00246">calc_fast9_lukas_kanade()</a>.</p>
+<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00298">calc_fast9_lukas_kanade()</a>.</p>
 
-<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="size__divergence_8c_a5bd0d30766d4538c9b64fccc7826b12a_cgraph.png" border="0" usemap="#size__divergence_8c_a5bd0d30766d4538c9b64fccc7826b12a_cgraph" alt=""/></div>
 <map name="size__divergence_8c_a5bd0d30766d4538c9b64fccc7826b12a_cgraph" id="size__divergence_8c_a5bd0d30766d4538c9b64fccc7826b12a_cgraph">
-<area shape="rect" id="node2" href="size__divergence_8c.html#ae48ba4f34bd6f955e2c21ffbe7baea08" title="Get the sample mean of a vector of floats. " alt="" coords="205,5,292,32"/></map>
+<area shape="rect" id="node2" href="pprz__stat_8c.html#adea85d32f16991e739b2cea3b3ec427e" title="Compute the mean value of an array (float) " alt="" coords="205,5,276,32"/><area shape="rect" id="node3" href="pprz__stat_8c.html#a234aff5aa9b0f7e40ac863e2b60d6365" title="Compute the sum array elements (float) " alt="" coords="324,5,385,32"/></map>
 </div>
 </p>
 
-<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="size__divergence_8c_a5bd0d30766d4538c9b64fccc7826b12a_icgraph.png" border="0" usemap="#size__divergence_8c_a5bd0d30766d4538c9b64fccc7826b12a_icgraph" alt=""/></div>
 <map name="size__divergence_8c_a5bd0d30766d4538c9b64fccc7826b12a_icgraph" id="size__divergence_8c_a5bd0d30766d4538c9b64fccc7826b12a_icgraph">
-<area shape="rect" id="node2" href="opticflow__calculator_8h.html#ab394463bc481d71e14ae92b730c1bad0" title="Run the optical flow with fast9 and lukaskanade on a new image frame. " alt="" coords="205,5,385,32"/><area shape="rect" id="node3" href="opticflow__calculator_8h.html#aee6bfa400248db0fad131de276c15783" title="Run the optical flow on a new image frame. " alt="" coords="433,5,588,32"/><area shape="rect" id="node4" href="opticflow__module_8c.html#a36b69a7ec255d2d20bb31b6d13e3e567" title="The main optical flow calculation thread. " alt="" coords="636,5,800,32"/><area shape="rect" id="node5" href="opticflow__module_8h.html#a6026660ee86fbb1f72bada581386e6d9" title="Initialize the optical flow module for the bottom camera. " alt="" coords="848,5,1007,32"/></map>
+<area shape="rect" id="node2" href="opticflow__calculator_8h.html#a3edff14cc7f95b5202ba6841a12dfed3" title="Run the optical flow with fast9 and lukaskanade on a new image frame. " alt="" coords="205,5,385,32"/><area shape="rect" id="node3" href="opticflow__calculator_8h.html#a89e51af8fe5a0f534193635d181a2086" title="Run the optical flow on a new image frame. " alt="" coords="433,5,588,32"/><area shape="rect" id="node4" href="opticflow__module_8c.html#a36b69a7ec255d2d20bb31b6d13e3e567" title="The main optical flow calculation thread. " alt="" coords="636,5,800,32"/><area shape="rect" id="node5" href="opticflow__module_8h.html#a6026660ee86fbb1f72bada581386e6d9" title="Initialize the optical flow module for the bottom camera. " alt="" coords="848,5,1007,32"/></map>
 </div>
 </p>
 
@@ -294,7 +241,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_304e79c9f5d09ea65a2f55aafb6a6b9d.html">computer_vision</a></li><li class="navelem"><a class="el" href="dir_737909cdc08fae475c12e10cc4efa3fe.html">opticflow</a></li><li class="navelem"><a class="el" href="size__divergence_8c.html">size_divergence.c</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:01:55 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:02:18 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

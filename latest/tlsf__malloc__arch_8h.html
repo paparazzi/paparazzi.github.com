@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -116,6 +116,7 @@ $(document).ready(function(){initNavTree('tlsf__malloc__arch_8h.html','');});
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;ch.h&gt;</code><br />
 <code>#include &lt;hal.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="ram__arch_8h_source.html">mcu_periph/ram_arch.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for tlsf_malloc_arch.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -123,7 +124,7 @@ $(document).ready(function(){initNavTree('tlsf__malloc__arch_8h.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="tlsf__malloc__arch_8h__incl.png" border="0" usemap="#sw_2airborne_2arch_2chibios_2modules_2tlsf_2tlsf__malloc__arch_8h" alt=""/></div>
 <map name="sw_2airborne_2arch_2chibios_2modules_2tlsf_2tlsf__malloc__arch_8h" id="sw_2airborne_2arch_2chibios_2modules_2tlsf_2tlsf__malloc__arch_8h">
-</map>
+<area shape="rect" id="node4" href="ram__arch_8h.html" title="Specific RAM section for DMA usage on F7. " alt="" coords="168,95,343,121"/></map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
@@ -143,7 +144,7 @@ Macros</h2></td></tr>
 <tr class="separator:accd82debd43b6bdbc664b5f131935e27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5469e2bdc9eab3e57961eedc76df317"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tlsf__malloc__arch_8h.html#aa5469e2bdc9eab3e57961eedc76df317">HEAP_CCM_SIZE</a>&#160;&#160;&#160;16384</td></tr>
 <tr class="separator:aa5469e2bdc9eab3e57961eedc76df317"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c8de4e4f657606fe2778a30416ed536"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tlsf__malloc__arch_8h.html#a8c8de4e4f657606fe2778a30416ed536">HEAP_CCM_SECTION</a>&#160;&#160;&#160;NODMA_SECTION</td></tr>
+<tr class="memitem:a8c8de4e4f657606fe2778a30416ed536"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tlsf__malloc__arch_8h.html#a8c8de4e4f657606fe2778a30416ed536">HEAP_CCM_SECTION</a>&#160;&#160;&#160;FAST_SECTION</td></tr>
 <tr class="separator:a8c8de4e4f657606fe2778a30416ed536"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78ac5dd228d7ef8d18bbecaf513355b2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tlsf__malloc__arch_8h.html#a78ac5dd228d7ef8d18bbecaf513355b2">HEAP_DEFAULT</a>&#160;&#160;&#160;<a class="el" href="tlsf__malloc__arch_8h.html#accd82debd43b6bdbc664b5f131935e27">HEAP_CCM</a></td></tr>
 <tr class="separator:a78ac5dd228d7ef8d18bbecaf513355b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -163,7 +164,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tlsf__malloc__arch_8h_source.html#l00043">43</a> of file <a class="el" href="tlsf__malloc__arch_8h_source.html">tlsf_malloc_arch.h</a>.</p>
+<p>Definition at line <a class="el" href="tlsf__malloc__arch_8h_source.html#l00035">35</a> of file <a class="el" href="tlsf__malloc__arch_8h_source.html">tlsf_malloc_arch.h</a>.</p>
 
 </div>
 </div>
@@ -172,12 +173,12 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define HEAP_CCM_SECTION&#160;&#160;&#160;NODMA_SECTION</td>
+          <td class="memname">#define HEAP_CCM_SECTION&#160;&#160;&#160;FAST_SECTION</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tlsf__malloc__arch_8h_source.html#l00045">45</a> of file <a class="el" href="tlsf__malloc__arch_8h_source.html">tlsf_malloc_arch.h</a>.</p>
+<p>Definition at line <a class="el" href="tlsf__malloc__arch_8h_source.html#l00042">42</a> of file <a class="el" href="tlsf__malloc__arch_8h_source.html">tlsf_malloc_arch.h</a>.</p>
 
 </div>
 </div>
@@ -191,7 +192,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tlsf__malloc__arch_8h_source.html#l00044">44</a> of file <a class="el" href="tlsf__malloc__arch_8h_source.html">tlsf_malloc_arch.h</a>.</p>
+<p>Definition at line <a class="el" href="tlsf__malloc__arch_8h_source.html#l00040">40</a> of file <a class="el" href="tlsf__malloc__arch_8h_source.html">tlsf_malloc_arch.h</a>.</p>
 
 <p>Referenced by <a class="el" href="tlsf__malloc__arch_8c_source.html#l00074">tlsf_init_heaps()</a>.</p>
 
@@ -207,9 +208,9 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tlsf__malloc__arch_8h_source.html#l00047">47</a> of file <a class="el" href="tlsf__malloc__arch_8h_source.html">tlsf_malloc_arch.h</a>.</p>
+<p>Definition at line <a class="el" href="tlsf__malloc__arch_8h_source.html#l00044">44</a> of file <a class="el" href="tlsf__malloc__arch_8h_source.html">tlsf_malloc_arch.h</a>.</p>
 
-<p>Referenced by <a class="el" href="sdLog_8c_source.html#l00166">sdLogInit()</a>.</p>
+<p>Referenced by <a class="el" href="sdLog_8c_source.html#l00193">sdLogInit()</a>.</p>
 
 </div>
 </div>
@@ -219,7 +220,7 @@ Macros</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_975986b9e0eb299e77243bf822f828ce.html">chibios</a></li><li class="navelem"><a class="el" href="dir_b90ea24ba107b1eee04b94e35b69f47b.html">modules</a></li><li class="navelem"><a class="el" href="dir_126cc01af961383a78dcf7fda37fe177.html">tlsf</a></li><li class="navelem"><a class="el" href="tlsf__malloc__arch_8h.html">tlsf_malloc_arch.h</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:01:37 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:01:56 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -1,7 +1,6 @@
 var imu__krooz__memsic_8c =
 [
     [ "KROOZ_ACCEL_RANGE", "imu__krooz__memsic_8c.html#ac584ca3c17a3857a85a0df6129978174", null ],
-    [ "KROOZ_GYRO_RANGE", "imu__krooz__memsic_8c.html#a5e948c7205e36cd1be3651cefe4415fc", null ],
     [ "KROOZ_LOWPASS_FILTER", "imu__krooz__memsic_8c.html#a1d0791520b36b0439d8f9338ec9b134f", null ],
     [ "KROOZ_SMPLRT_DIV", "imu__krooz__memsic_8c.html#a03318bf67ecbc7081cd19cc8d6d81adf", null ],
     [ "imu_krooz_event", "imu__krooz__memsic_8c.html#ac3e0837f6fda31fca37cf6d6cd1e39dd", null ],

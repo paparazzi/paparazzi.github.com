@@ -3,6 +3,7 @@ var ins__int_8c =
     [ "INS_INT_BARO_ID", "ins__int_8c.html#ac64556588d053a2db955f58e321495d0", null ],
     [ "INS_INT_GPS_ID", "ins__int_8c.html#a3c97e2851668770d5ade8ed7e8b395c6", null ],
     [ "INS_INT_IMU_ID", "ins__int_8c.html#a029fa564aff5afe5e8912f97fa4d1e9e", null ],
+    [ "INS_INT_POS_ID", "ins__int_8c.html#aadedfaca75324d7bf07324b44269df20", null ],
     [ "INS_INT_VEL_ID", "ins__int_8c.html#a85c53caa26cd0b9065282806ab436248", null ],
     [ "INS_MAX_PROPAGATION_STEPS", "ins__int_8c.html#a8d58942cf50ae5c055b4ab074d778d8a", null ],
     [ "INS_VFF_R_GPS", "ins__int_8c.html#aebf7f4ccc7178584470b5d54e9e83f92", null ],
@@ -18,6 +19,7 @@ var ins__int_8c =
     [ "ins_reset_altitude_ref", "ins__int_8c.html#aa389e650ab7aa5a7f4650afde6358d86", null ],
     [ "ins_reset_local_origin", "ins__int_8c.html#a14cb66a86c67d8b9216a8c12f58c311b", null ],
     [ "ins_update_from_vff", "ins__int_8c.html#a1c58640eca6d3495200de79b4daf134c", null ],
+    [ "pos_est_cb", "ins__int_8c.html#a6a61aa1ad8d97b329c073c9ee330be9f", null ],
     [ "send_ins", "ins__int_8c.html#a2ba079af519dd03472aa3e6019b3a91f", null ],
     [ "send_ins_ref", "ins__int_8c.html#a6f4ee4900038e15bf441a679acfa913a", null ],
     [ "send_ins_z", "ins__int_8c.html#a779c8daa5c837af54a2a999a8e3cae24", null ],
@@ -26,5 +28,6 @@ var ins__int_8c =
     [ "baro_ev", "ins__int_8c.html#a7e2e4e9787ce7895e880fe4eb5dc0702", null ],
     [ "gps_ev", "ins__int_8c.html#af8c616627ecbb4860e359944c97dc718", null ],
     [ "ins_int", "ins__int_8c.html#a01b85d3295bc283aac03af14d8e481de", null ],
+    [ "pos_est_ev", "ins__int_8c.html#a38c4c392b7fffcb65556c85643c63d06", null ],
     [ "vel_est_ev", "ins__int_8c.html#a8fb4043a3bc3293ea248889a5f99a1ff", null ]
 ];

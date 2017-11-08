@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -112,25 +112,21 @@ $(document).ready(function(){initNavTree('nps__flightgear_8h_source.html','');})
 <a href="nps__flightgear_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef NPS_FLIGHTGEAR_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define NPS_FLIGHTGEAR_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="nps__flightgear_8h.html#a3798773d8563d36ad60ab2314a3c6feb">nps_flightgear_init</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* host,  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> port, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> port_in, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> time_offset);</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="nps__flightgear_8h.html#a3f047414925d59e484a23b8554d0eb76">nps_flightgear_send</a>();</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="nps__flightgear_8h.html#acf9f21992f9078324776a38827913861">nps_flightgear_send_fdm</a>();</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="nps__flightgear_8h.html#ad7f7ce185232a8688e042d811921e3c1">nps_flightgear_receive</a>();</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* NPS_FLIGHTGEAR_H */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="nps__flightgear_8h_html_a3f047414925d59e484a23b8554d0eb76"><div class="ttname"><a href="nps__flightgear_8h.html#a3f047414925d59e484a23b8554d0eb76">nps_flightgear_send</a></div><div class="ttdeci">void nps_flightgear_send()</div><div class="ttdoc">Send FlightGear GUI packet For visualization of airplane position and attitude only start fgfs with â€...</div><div class="ttdef"><b>Definition:</b> <a href="nps__flightgear_8c_source.html#l00172">nps_flightgear.c:172</a></div></div>
-<div class="ttc" id="nps__flightgear_8h_html_ad7f7ce185232a8688e042d811921e3c1"><div class="ttname"><a href="nps__flightgear_8h.html#ad7f7ce185232a8688e042d811921e3c1">nps_flightgear_receive</a></div><div class="ttdeci">void nps_flightgear_receive()</div><div class="ttdoc">Receive Flight Gear environment messages. </div><div class="ttdef"><b>Definition:</b> <a href="nps__flightgear_8c_source.html#l00224">nps_flightgear.c:224</a></div></div>
-<div class="ttc" id="nps__flightgear_8h_html_a3798773d8563d36ad60ab2314a3c6feb"><div class="ttname"><a href="nps__flightgear_8h.html#a3798773d8563d36ad60ab2314a3c6feb">nps_flightgear_init</a></div><div class="ttdeci">void nps_flightgear_init(const char *host, unsigned int port, unsigned int port_in, unsigned int time_offset)</div><div class="ttdef"><b>Definition:</b> <a href="nps__flightgear_8c_source.html#l00048">nps_flightgear.c:48</a></div></div>
-<div class="ttc" id="nps__flightgear_8h_html_acf9f21992f9078324776a38827913861"><div class="ttname"><a href="nps__flightgear_8h.html#acf9f21992f9078324776a38827913861">nps_flightgear_send_fdm</a></div><div class="ttdeci">void nps_flightgear_send_fdm()</div><div class="ttdoc">Send FlightGear FDM packet For visualization with moving surfaces (elevator, propeller etc)...</div><div class="ttdef"><b>Definition:</b> <a href="nps__flightgear_8c_source.html#l00108">nps_flightgear.c:108</a></div></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="nps__flightgear_8h.html#a3798773d8563d36ad60ab2314a3c6feb">nps_flightgear_init</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* host,  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> port, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> port_in, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> time_offset);</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="nps__flightgear_8h.html#a33c7a87ace952fc7cf307301840ea72d">nps_flightgear_send</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="nps__flightgear_8h.html#abaad453431e1fcbe9da597d2389250b8">nps_flightgear_send_fdm</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* NPS_FLIGHTGEAR_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="nps__flightgear_8h_html_a33c7a87ace952fc7cf307301840ea72d"><div class="ttname"><a href="nps__flightgear_8h.html#a33c7a87ace952fc7cf307301840ea72d">nps_flightgear_send</a></div><div class="ttdeci">void nps_flightgear_send(void)</div><div class="ttdoc">Send FlightGear GUI packet For visualization of airplane position and attitude only start fgfs with â€...</div><div class="ttdef"><b>Definition:</b> <a href="nps__flightgear_8c_source.html#l00179">nps_flightgear.c:179</a></div></div>
+<div class="ttc" id="nps__flightgear_8h_html_abaad453431e1fcbe9da597d2389250b8"><div class="ttname"><a href="nps__flightgear_8h.html#abaad453431e1fcbe9da597d2389250b8">nps_flightgear_send_fdm</a></div><div class="ttdeci">void nps_flightgear_send_fdm(void)</div><div class="ttdoc">Send FlightGear FDM packet For visualization with moving surfaces (elevator, propeller etc)...</div><div class="ttdef"><b>Definition:</b> <a href="nps__flightgear_8c_source.html#l00115">nps_flightgear.c:115</a></div></div>
+<div class="ttc" id="nps__flightgear_8h_html_a3798773d8563d36ad60ab2314a3c6feb"><div class="ttname"><a href="nps__flightgear_8h.html#a3798773d8563d36ad60ab2314a3c6feb">nps_flightgear_init</a></div><div class="ttdeci">void nps_flightgear_init(const char *host, unsigned int port, unsigned int port_in, unsigned int time_offset)</div><div class="ttdef"><b>Definition:</b> <a href="nps__flightgear_8c_source.html#l00052">nps_flightgear.c:52</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_57152efd0242905f7c5d6768e6b65e41.html">simulator</a></li><li class="navelem"><a class="el" href="dir_19bdda89d6219119fa616a46fa62e86b.html">nps</a></li><li class="navelem"><a class="el" href="nps__flightgear_8h.html">nps_flightgear.h</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:01:35 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:01:53 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -1,0 +1,24 @@
+<map id="autopilot_guided_move_ned" name="autopilot_guided_move_ned">
+<area shape="rect" id="node2" href="$autopilot_8c.html#a23af2ac2d4bcb9b71c869a409de61cc4" title="get autopilot mode " alt="" coords="279,94,430,121"/>
+<area shape="rect" id="node3" href="$rotorcraft_2guidance_2guidance__h_8c.html#a326822b3cfdaaf76105134072212346c" title="Set heading setpoint in GUIDED mode. " alt="" coords="269,145,441,187"/>
+<area shape="rect" id="node4" href="$rotorcraft_2guidance_2guidance__h_8c.html#a21a4387750aad0a127dfa928b8557a90" title="Set horizontal velocity setpoint in GUIDED mode. " alt="" coords="256,211,453,238"/>
+<area shape="rect" id="node5" href="$rotorcraft_2guidance_2guidance__v_8c.html#acac5c328b4af288851a9ede4552381f8" title="Set z velocity setpoint in GUIDED mode. " alt="" coords="259,262,451,289"/>
+<area shape="rect" id="node6" href="$group__state__position.html#gaf9a3b3ed4f6a011ae65d49d78bf4aa25" title="Get position in local NED coordinates (int). " alt="" coords="501,230,665,257"/>
+<area shape="rect" id="node20" href="$group__state__velocity.html#gaed641b0c36e2ad2407a97be88ec2506c" title="Get ground speed in local NED coordinates (int). " alt="" coords="506,293,661,319"/>
+<area shape="rect" id="node7" href="$group__state__position.html#gac60dff329c00697fc9fcc459406293c9" title="stateCalcPositionNed_i" alt="" coords="713,198,881,225"/>
+<area shape="rect" id="node8" href="$group__math__geodetic__int.html#ga55c109fccf11d3699553122869dfd38b" title="Convert a ECEF position to local NED. " alt="" coords="1132,173,1271,199"/>
+<area shape="rect" id="node11" href="$pprz__geodetic__float_8c.html#a3045a5a383aa4ebf5b8a9763773b9b6d" title="ned_of_ecef_point_f" alt="" coords="929,122,1079,149"/>
+<area shape="rect" id="node13" href="$pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title="ecef_of_lla_f" alt="" coords="1343,274,1443,301"/>
+<area shape="rect" id="node14" href="$group__math__geodetic__int.html#ga196c47e1d20669076a358d0f4317e093" title="Convert a point from LLA to local NED. " alt="" coords="941,223,1067,250"/>
+<area shape="rect" id="node17" href="$pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="955,71,1053,98"/>
+<area shape="rect" id="node9" href="$group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU. " alt="" coords="1324,173,1463,199"/>
+<area shape="rect" id="node10" href="$group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU. " alt="" coords="1511,173,1659,199"/>
+<area shape="rect" id="node12" href="$pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title="enu_of_ecef_point_f" alt="" coords="1127,122,1276,149"/>
+<area shape="rect" id="node15" href="$group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF. " alt="" coords="1152,223,1251,250"/>
+<area shape="rect" id="node16" href="$group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title="ecef_of_lla_d" alt="" coords="1341,223,1445,250"/>
+<area shape="rect" id="node18" href="$pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="1128,71,1275,98"/>
+<area shape="rect" id="node19" href="$pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="1133,5,1269,47"/>
+<area shape="rect" id="node21" href="$group__state__velocity.html#gaefc74e9c1a2033ec07959a2fde629bd5" title="stateCalcSpeedNed_i" alt="" coords="718,318,877,345"/>
+<area shape="rect" id="node22" href="$group__math__geodetic__int.html#gab4eda479f4c01e96082d8a352f16cfea" title="Rotate a vector from ECEF to NED. " alt="" coords="933,325,1075,351"/>
+<area shape="rect" id="node23" href="$group__math__geodetic__int.html#gaf0ee62cd162ca87bc294be6cfd107986" title="Rotate a vector from ECEF to ENU. " alt="" coords="1130,325,1273,351"/>
+</map>

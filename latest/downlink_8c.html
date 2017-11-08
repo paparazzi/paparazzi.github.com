@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -116,7 +116,6 @@ $(document).ready(function(){initNavTree('downlink_8c.html','');});
 <p>Common code for AP and FBW telemetry.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="downlink_8h_source.html">subsystems/datalink/downlink.h</a>&quot;</code><br />
-<code>#include &quot;generated/airframe.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="datalink_8h_source.html">subsystems/datalink/datalink.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="telemetry_8h_source.html">subsystems/datalink/telemetry.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="sys__time_8h_source.html">mcu_periph/sys_time.h</a>&quot;</code><br />
@@ -127,7 +126,7 @@ $(document).ready(function(){initNavTree('downlink_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="downlink_8c__incl.png" border="0" usemap="#sw_2airborne_2subsystems_2datalink_2downlink_8c" alt=""/></div>
 <map name="sw_2airborne_2subsystems_2datalink_2downlink_8c" id="sw_2airborne_2subsystems_2datalink_2downlink_8c">
-<area shape="rect" id="node2" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="437,184,591,225"/><area shape="rect" id="node7" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="188,273,341,315"/><area shape="rect" id="node13" href="telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code). " alt="" coords="609,95,763,136"/><area shape="rect" id="node15" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="1105,191,1275,218"/><area shape="rect" id="node3" href="inttypes_8h.html" title="inttypes.h" alt="" coords="889,281,974,307"/><area shape="rect" id="node10" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="726,281,865,307"/></map>
+<area shape="rect" id="node2" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="1024,184,1177,225"/><area shape="rect" id="node7" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="1351,273,1504,315"/><area shape="rect" id="node15" href="telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code). " alt="" coords="1465,95,1619,136"/><area shape="rect" id="node17" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="301,191,471,218"/><area shape="rect" id="node3" href="inttypes_8h.html" title="inttypes.h" alt="" coords="481,281,566,307"/><area shape="rect" id="node10" href="pprz__dl_8h.html" title="Datalink using PPRZ protocol. " alt="" coords="1133,281,1327,307"/><area shape="rect" id="node12" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="1579,363,1718,389"/></map>
 </div>
 </div>
 <p><a href="downlink_8c_source.html">Go to the source code of this file.</a></p>
@@ -167,11 +166,11 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="downlink_8c_source.html#l00086">86</a> of file <a class="el" href="downlink_8c_source.html">downlink.c</a>.</p>
+<p>Definition at line <a class="el" href="downlink_8c_source.html#l00067">67</a> of file <a class="el" href="downlink_8c_source.html">downlink.c</a>.</p>
 
-<p>References <a class="el" href="datalink_8h_source.html#l00048">BLUEGIGA</a>, <a class="el" href="bluegiga_8c_source.html#l00148">bluegiga_init()</a>, <a class="el" href="bluegiga_8c_source.html#l00061">bluegiga_p</a>, <a class="el" href="sim__ap_8c_source.html#l00043">datalink_nb_msgs</a>, <a class="el" href="downlink_8h_source.html#l00088">DefaultDevice</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00068">get_sys_time_usec()</a>, <a class="el" href="datalink_8h_source.html#l00044">PPRZ</a>, <a class="el" href="telemetry_8c_source.html#l00046">register_periodic_telemetry()</a>, <a class="el" href="downlink_8c_source.html#l00062">send_downlink()</a>, <a class="el" href="datalink_8h_source.html#l00046">SUPERBITRF</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00095">sys_time_usleep()</a>, <a class="el" href="datalink_8h_source.html#l00047">W5100</a>, and <a class="el" href="w5100_8c_source.html#l00184">w5100_init()</a>.</p>
+<p>References <a class="el" href="sim__ap_8c_source.html#l00042">datalink_nb_msgs</a>, <a class="el" href="downlink_8h_source.html#l00046">DefaultDevice</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="telemetry_8c_source.html#l00046">register_periodic_telemetry()</a>, and <a class="el" href="downlink_8c_source.html#l00043">send_downlink()</a>.</p>
 
-<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00174">init_ap()</a>, <a class="el" href="main__chibios_8c_source.html#l00073">main()</a>, and <a class="el" href="demo__ahrs__actuators_8c_source.html#l00088">main_init()</a>.</p>
+<p>Referenced by <a class="el" href="fixedwing_2main__ap_8c_source.html#l00149">init_ap()</a>, <a class="el" href="fixedwing_2main__chibios_8c_source.html#l00073">main()</a>, and <a class="el" href="demo__ahrs__actuators_8c_source.html#l00087">main_init()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -180,7 +179,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="downlink_8c_afd49e1738cc6ad57218b944dcb94f73b_cgraph.png" border="0" usemap="#downlink_8c_afd49e1738cc6ad57218b944dcb94f73b_cgraph" alt=""/></div>
 <map name="downlink_8c_afd49e1738cc6ad57218b944dcb94f73b_cgraph" id="downlink_8c_afd49e1738cc6ad57218b944dcb94f73b_cgraph">
-<area shape="rect" id="node2" href="bluegiga_8c.html#ac8a60ccee96fbe718a27b6194f3f14e0" title="bluegiga_init" alt="" coords="177,317,279,344"/><area shape="rect" id="node14" href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function. " alt="" coords="348,520,545,546"/><area shape="rect" id="node22" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup. " alt="" coords="156,1077,300,1104"/><area shape="rect" id="node24" href="downlink_8c.html#af23b2b19aabf230dd8e4bb719c3d4f34" title="send_downlink" alt="" coords="171,114,285,141"/><area shape="rect" id="node25" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a74db3eed857f9c53bb67db256c12bc83" title="sys_time_usleep(uint32_t us) " alt="" coords="383,621,511,648"/><area shape="rect" id="node26" href="w5100_8c.html#a3a4ec6731e43710788d3e51f7749259c" title="w5100_init" alt="" coords="183,849,273,876"/><area shape="rect" id="node3" href="bluegiga_8c.html#a9b6278c5129408fea7fcd6ef782bb566" title="dev_char_available" alt="" coords="375,368,518,394"/><area shape="rect" id="node5" href="bluegiga_8c.html#a6b1814c6ad9bd32562deee5d34cc055c" title="dev_check_free_space" alt="" coords="814,160,981,186"/><area shape="rect" id="node6" href="bluegiga_8c.html#a243da754633510e42d0762bd0eb2eca9" title="dev_get_byte" alt="" coords="623,13,731,40"/><area shape="rect" id="node8" href="bluegiga_8c.html#a44add6bb2cff1278a1da37ac9472d591" title="dev_put_buffer" alt="" coords="388,216,505,242"/><area shape="rect" id="node10" href="bluegiga_8c.html#a13052301335c3989051f9d805f5a76e5" title="dev_put_byte" alt="" coords="393,165,501,192"/><area shape="rect" id="node11" href="bluegiga_8c.html#a3a1339a23fa9e17daff004ac656eba06" title="dev_send_message" alt="" coords="372,266,521,293"/><area shape="rect" id="node12" href="chibios_2mcu__periph_2gpio__arch_8h.html#a0da8ef247730680b4ffa595d11069051" title="Set a gpio output to high level. " alt="" coords="859,469,935,496"/><area shape="rect" id="node13" href="chibios_2mcu__periph_2gpio__arch_8c.html#a614c4a447f1e43381d92c682ac3b953f" title="Setup one or more pins of the given GPIO port as outputs. " alt="" coords="376,570,517,597"/><area shape="rect" id="node15" href="bluegiga_8c.html#a165b54a5aa12b2f3b4870838bdcd40e9" title="send_bluegiga" alt="" coords="389,64,504,90"/><area shape="rect" id="node18" href="group__spi.html#gad2b96673b774298d3bd908e84ceb37c8" title="Register one (and only one) transaction to use spi as slave. " alt="" coords="829,317,965,344"/><area shape="rect" id="node19" href="bluegiga_8c.html#a81dec5456e47bf1870486a85600c7e1c" title="trans_cb" alt="" coords="408,418,485,445"/><area shape="rect" id="node4" href="bluegiga_8c.html#a66315eb7fa09606080b4f65f0ab0149b" title="bluegiga_ch_available" alt="" coords="597,368,758,394"/><area shape="rect" id="node7" href="bluegiga_8c.html#ad59d5db2be5ea429bc32bddfab4f39f3" title="bluegiga_increment_buf" alt="" coords="1033,296,1208,322"/><area shape="rect" id="node9" href="bluegiga_8c.html#abe358f767725314dab7b28a59e51989c" title="bluegiga_transmit" alt="" coords="609,190,746,217"/><area shape="rect" id="node16" href="chibios_2mcu__periph_2sys__time__arch_8c.html#ad3cb294b0d1d74dfb511534b36a17960" title="get_sys_time_msec" alt="" coords="603,64,752,90"/><area shape="rect" id="node17" href="sys__time_8h.html#ab67b78f01783839deb76623ff83981dd" title="msec_of_sys_time_ticks" alt="" coords="809,64,985,90"/><area shape="rect" id="node20" href="bluegiga_8c.html#a50a0f979fdb5e8cb70090c6de5f203ac" title="bluegiga_receive" alt="" coords="613,418,742,445"/><area shape="rect" id="node21" href="bluegiga_8c.html#a916d36665c2e3144ac83612875e5af59" title="bluegiga_load_tx" alt="" coords="833,368,962,394"/><area shape="rect" id="node23" href="sys__time_8h.html#adb22f2652f04908fbc644c7274bf7273" title="usec_of_sys_time_ticks" alt="" coords="361,1229,532,1256"/><area shape="rect" id="node27" href="chibios_2mcu__periph_2gpio__arch_8h.html#a302a5c9e7203669d0b9db8a2952fe009" title="Clear a gpio output to low level. " alt="" coords="403,1128,490,1154"/><area shape="rect" id="node28" href="w5100_8c.html#acf688d7d46d5a20eb893df94ba4b2f5c" title="w5100_set" alt="" coords="1075,849,1166,876"/><area shape="rect" id="node30" href="w5100_8c.html#a0e5e1246b804cc518d06492f384ae50d" title="w5100_set_buffer" alt="" coords="830,824,965,850"/><area shape="rect" id="node31" href="w5100_8c.html#ad88334d2cf04bfaad89b0f8a4c5239a4" title="configure_socket" alt="" coords="381,824,512,850"/><area shape="rect" id="node34" href="w5100_8c.html#a838b127385e9ee32c6e20446acb6bbe6" title="true_function" alt="" coords="393,925,500,952"/><area shape="rect" id="node35" href="w5100_8c.html#aa0cc165275748f62632f87f8c0b27f29" title="dev_transmit" alt="" coords="624,1128,731,1154"/><area shape="rect" id="node37" href="w5100_8c.html#accbacb6bd3fc90a42ef1a428d15346d7" title="dev_transmit_buffer" alt="" coords="371,1178,522,1205"/><area shape="rect" id="node39" href="w5100_8c.html#ae0220ed6f4f83a3e5468912071278434" title="dev_send" alt="" coords="405,874,488,901"/><area shape="rect" id="node44" href="w5100_8c.html#ac607c7e302a7a46608bf2c3897940f09" title="dev_char_available" alt="" coords="375,1026,518,1053"/><area shape="rect" id="node47" href="w5100_8c.html#ab67a98be34d00c997637455e114f8ce3" title="dev_getch" alt="" coords="403,976,491,1002"/><area shape="rect" id="node29" href="group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction. " alt="" coords="1569,894,1660,921"/><area shape="rect" id="node32" href="w5100_8c.html#abade1f8840f1a6de842036d8868706a8" title="w5100_close_socket" alt="" coords="601,925,753,952"/><area shape="rect" id="node33" href="w5100_8c.html#add4fef731325e39e35816a0372d6e9c6" title="w5100_sock_set" alt="" coords="834,874,961,901"/><area shape="rect" id="node36" href="w5100_8c.html#a38d417bb07a2d9eeebe11b6009cd710d" title="w5100_transmit" alt="" coords="835,1178,959,1205"/><area shape="rect" id="node38" href="w5100_8c.html#a77460efc9e8d331b3351e70179fa30f1" title="w5100_transmit_buffer" alt="" coords="593,1178,761,1205"/><area shape="rect" id="node40" href="w5100_8c.html#ac5b78f6ff9ae6c8cd4a286b9b45f7d5e" title="w5100_send" alt="" coords="627,976,728,1002"/><area shape="rect" id="node41" href="w5100_8c.html#ac3249d8a1bb38835870a1fc6a8c61524" title="w5100_sock_get16" alt="" coords="1049,1052,1192,1078"/><area shape="rect" id="node42" href="w5100_8c.html#aa329ee90cfec600285df9d7382a2c623" title="w5100_sock_get" alt="" coords="1256,925,1383,952"/><area shape="rect" id="node43" href="w5100_8c.html#adc92dea40c158d4eb47238bb053ef8b1" title="w5100_get" alt="" coords="1431,925,1521,952"/><area shape="rect" id="node45" href="w5100_8c.html#ac632aa6104b3c8d579acb573956febf3" title="w5100_ch_available" alt="" coords="603,1077,751,1104"/><area shape="rect" id="node46" href="w5100_8c.html#a834e87b2f3c3cd190eee04e2c9162d92" title="w5100_rx_size" alt="" coords="840,1128,955,1154"/><area shape="rect" id="node48" href="w5100_8c.html#abf3016ffe8faf50c1bf56f6f21ceb261" title="w5100_receive" alt="" coords="619,1026,735,1053"/><area shape="rect" id="node49" href="w5100_8c.html#a455780f8178c7ad9c93bb668b60724fb" title="w5100_read_data" alt="" coords="830,976,965,1002"/><area shape="rect" id="node50" href="w5100_8c.html#aa07a01f5b03c499e6bbcc4edcd14c301" title="w5100_read" alt="" coords="1270,976,1369,1002"/></map>
+<area shape="rect" id="node2" href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function. " alt="" coords="156,5,353,32"/><area shape="rect" id="node3" href="downlink_8c.html#af23b2b19aabf230dd8e4bb719c3d4f34" title="send_downlink" alt="" coords="197,56,312,83"/><area shape="rect" id="node4" href="chibios_2mcu__periph_2sys__time__arch_8c.html#ad3cb294b0d1d74dfb511534b36a17960" title="Get the time in milliseconds since startup. " alt="" coords="401,56,551,83"/></map>
 </div>
 </p>
 
@@ -191,7 +190,7 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="downlink_8c_afd49e1738cc6ad57218b944dcb94f73b_icgraph.png" border="0" usemap="#downlink_8c_afd49e1738cc6ad57218b944dcb94f73b_icgraph" alt=""/></div>
 <map name="downlink_8c_afd49e1738cc6ad57218b944dcb94f73b_icgraph" id="downlink_8c_afd49e1738cc6ad57218b944dcb94f73b_icgraph">
-<area shape="rect" id="node2" href="main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="164,5,228,32"/><area shape="rect" id="node4" href="main__chibios_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Main function. " alt="" coords="169,56,223,83"/><area shape="rect" id="node5" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="156,107,236,133"/><area shape="rect" id="node3" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="316,5,387,32"/><area shape="rect" id="node6" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="324,81,379,108"/><area shape="rect" id="node7" href="nps__autopilot__rotorcraft_8c.html#a3348493e992edd2442581c1d09446b4b" title="nps_autopilot_init" alt="" coords="284,132,419,159"/><area shape="rect" id="node8" href="nps__main_8c.html#af28efef10cede3b66825b2dc2e4e7705" title="nps_main_init" alt="" coords="467,132,577,159"/><area shape="rect" id="node9" href="nps__main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="625,132,680,159"/></map>
+<area shape="rect" id="node2" href="fixedwing_2main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="164,5,228,32"/><area shape="rect" id="node4" href="fixedwing_2main__chibios_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Main function. " alt="" coords="169,56,223,83"/><area shape="rect" id="node5" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="156,107,236,133"/><area shape="rect" id="node3" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="316,5,387,32"/><area shape="rect" id="node6" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="324,81,379,108"/><area shape="rect" id="node7" href="nps__autopilot__rotorcraft_8c.html#a3348493e992edd2442581c1d09446b4b" title="nps_autopilot_init" alt="" coords="284,132,419,159"/><area shape="rect" id="node8" href="nps__main__hitl_8c.html#a72ef549ee35deec8c017e83d9de38f66" title="nps_radio_and_autopilot_init" alt="" coords="467,132,671,159"/></map>
 </div>
 </p>
 
@@ -229,11 +228,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="downlink_8c_source.html#l00062">62</a> of file <a class="el" href="downlink_8c_source.html">downlink.c</a>.</p>
+<p>Definition at line <a class="el" href="downlink_8c_source.html#l00043">43</a> of file <a class="el" href="downlink_8c_source.html">downlink.c</a>.</p>
 
-<p>References <a class="el" href="sim__ap_8c_source.html#l00043">datalink_nb_msgs</a>, <a class="el" href="sim__ap_8c_source.html#l00042">datalink_time</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00078">get_sys_time_msec()</a>, <a class="el" href="downlink_8c_source.html#l00058">last_down_nb_bytes</a>, <a class="el" href="downlink_8c_source.html#l00060">last_ts</a>, and <a class="el" href="downlink_8c_source.html#l00059">last_up_nb_msgs</a>.</p>
+<p>References <a class="el" href="sim__ap_8c_source.html#l00042">datalink_nb_msgs</a>, <a class="el" href="sim__ap_8c_source.html#l00041">datalink_time</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00078">get_sys_time_msec()</a>, <a class="el" href="downlink_8c_source.html#l00039">last_down_nb_bytes</a>, <a class="el" href="downlink_8c_source.html#l00041">last_ts</a>, and <a class="el" href="downlink_8c_source.html#l00040">last_up_nb_msgs</a>.</p>
 
-<p>Referenced by <a class="el" href="downlink_8c_source.html#l00086">downlink_init()</a>.</p>
+<p>Referenced by <a class="el" href="downlink_8c_source.html#l00067">downlink_init()</a>.</p>
 
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -242,7 +241,7 @@ Variables</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="downlink_8c_af23b2b19aabf230dd8e4bb719c3d4f34_cgraph.png" border="0" usemap="#downlink_8c_af23b2b19aabf230dd8e4bb719c3d4f34_cgraph" alt=""/></div>
 <map name="downlink_8c_af23b2b19aabf230dd8e4bb719c3d4f34_cgraph" id="downlink_8c_af23b2b19aabf230dd8e4bb719c3d4f34_cgraph">
-<area shape="rect" id="node2" href="chibios_2mcu__periph_2sys__time__arch_8c.html#ad3cb294b0d1d74dfb511534b36a17960" title="get_sys_time_msec" alt="" coords="168,5,317,32"/><area shape="rect" id="node3" href="sys__time_8h.html#ab67b78f01783839deb76623ff83981dd" title="msec_of_sys_time_ticks" alt="" coords="365,5,541,32"/></map>
+<area shape="rect" id="node2" href="chibios_2mcu__periph_2sys__time__arch_8c.html#ad3cb294b0d1d74dfb511534b36a17960" title="Get the time in milliseconds since startup. " alt="" coords="168,5,317,32"/></map>
 </div>
 </p>
 
@@ -253,7 +252,7 @@ Variables</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="downlink_8c_af23b2b19aabf230dd8e4bb719c3d4f34_icgraph.png" border="0" usemap="#downlink_8c_af23b2b19aabf230dd8e4bb719c3d4f34_icgraph" alt=""/></div>
 <map name="downlink_8c_af23b2b19aabf230dd8e4bb719c3d4f34_icgraph" id="downlink_8c_af23b2b19aabf230dd8e4bb719c3d4f34_icgraph">
-<area shape="rect" id="node2" href="downlink_8h.html#afd49e1738cc6ad57218b944dcb94f73b" title="downlink_init" alt="" coords="168,107,271,133"/><area shape="rect" id="node3" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="319,56,399,83"/><area shape="rect" id="node8" href="main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="327,107,391,133"/><area shape="rect" id="node10" href="main__chibios_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Main function. " alt="" coords="331,157,386,184"/><area shape="rect" id="node4" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="487,5,541,32"/><area shape="rect" id="node5" href="nps__autopilot__rotorcraft_8c.html#a3348493e992edd2442581c1d09446b4b" title="nps_autopilot_init" alt="" coords="447,56,581,83"/><area shape="rect" id="node6" href="nps__main_8c.html#af28efef10cede3b66825b2dc2e4e7705" title="nps_main_init" alt="" coords="629,56,740,83"/><area shape="rect" id="node7" href="nps__main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="788,56,843,83"/><area shape="rect" id="node9" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="479,107,549,133"/></map>
+<area shape="rect" id="node2" href="downlink_8h.html#afd49e1738cc6ad57218b944dcb94f73b" title="downlink_init" alt="" coords="168,107,271,133"/><area shape="rect" id="node3" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="319,56,399,83"/><area shape="rect" id="node7" href="fixedwing_2main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="327,107,391,133"/><area shape="rect" id="node9" href="fixedwing_2main__chibios_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Main function. " alt="" coords="331,157,386,184"/><area shape="rect" id="node4" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="487,5,541,32"/><area shape="rect" id="node5" href="nps__autopilot__rotorcraft_8c.html#a3348493e992edd2442581c1d09446b4b" title="nps_autopilot_init" alt="" coords="447,56,581,83"/><area shape="rect" id="node6" href="nps__main__hitl_8c.html#a72ef549ee35deec8c017e83d9de38f66" title="nps_radio_and_autopilot_init" alt="" coords="629,56,833,83"/><area shape="rect" id="node8" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="479,107,549,133"/></map>
 </div>
 </p>
 
@@ -278,9 +277,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="downlink_8c_source.html#l00058">58</a> of file <a class="el" href="downlink_8c_source.html">downlink.c</a>.</p>
+<p>Definition at line <a class="el" href="downlink_8c_source.html#l00039">39</a> of file <a class="el" href="downlink_8c_source.html">downlink.c</a>.</p>
 
-<p>Referenced by <a class="el" href="downlink_8c_source.html#l00062">send_downlink()</a>.</p>
+<p>Referenced by <a class="el" href="downlink_8c_source.html#l00043">send_downlink()</a>.</p>
 
 </div>
 </div>
@@ -302,9 +301,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="downlink_8c_source.html#l00060">60</a> of file <a class="el" href="downlink_8c_source.html">downlink.c</a>.</p>
+<p>Definition at line <a class="el" href="downlink_8c_source.html#l00041">41</a> of file <a class="el" href="downlink_8c_source.html">downlink.c</a>.</p>
 
-<p>Referenced by <a class="el" href="downlink_8c_source.html#l00062">send_downlink()</a>.</p>
+<p>Referenced by <a class="el" href="downlink_8c_source.html#l00043">send_downlink()</a>.</p>
 
 </div>
 </div>
@@ -326,9 +325,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="downlink_8c_source.html#l00059">59</a> of file <a class="el" href="downlink_8c_source.html">downlink.c</a>.</p>
+<p>Definition at line <a class="el" href="downlink_8c_source.html#l00040">40</a> of file <a class="el" href="downlink_8c_source.html">downlink.c</a>.</p>
 
-<p>Referenced by <a class="el" href="downlink_8c_source.html#l00062">send_downlink()</a>.</p>
+<p>Referenced by <a class="el" href="downlink_8c_source.html#l00043">send_downlink()</a>.</p>
 
 </div>
 </div>
@@ -338,7 +337,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_6567a5a7be991f15b7628b3b0eb084bd.html">datalink</a></li><li class="navelem"><a class="el" href="downlink_8c.html">downlink.c</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:02:11 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:02:39 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

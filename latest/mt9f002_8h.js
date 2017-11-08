@@ -11,8 +11,8 @@ var mt9f002_8h =
       [ "input_clk_freq", "mt9f002_8h.html#a2750b71dc644a3f4ffab3534aafb9601", null ],
       [ "interface", "mt9f002_8h.html#a17ebb3099a3de005f62a4b4cfe4e58e4", null ],
       [ "line_length", "mt9f002_8h.html#ae88bd11f2d24f797421d71aa6655e29e", null ],
-      [ "offset_x", "mt9f002_8h.html#a3026cda87b2f3c9d79319133fab3e16a", null ],
-      [ "offset_y", "mt9f002_8h.html#a9011d838040bbcba7739fa66a249d2f4", null ],
+      [ "offset_x", "mt9f002_8h.html#a897c00ed679e03d3c88b6072ff8d2d17", null ],
+      [ "offset_y", "mt9f002_8h.html#a96ba78b97791d5dd4b48fd93e884c5df", null ],
       [ "op_pix_clk", "mt9f002_8h.html#a83b59364561430793cb7e5636ad8d94a", null ],
       [ "op_pix_clk_div", "mt9f002_8h.html#a1bf36fd79c5000761030e9abc9fb8e90", null ],
       [ "op_sys_clk_div", "mt9f002_8h.html#a0494d381eb2ab94b828ed9276ab87f41", null ],
@@ -32,12 +32,30 @@ var mt9f002_8h =
       [ "target_fps", "mt9f002_8h.html#a47943ee02f8622898098ea08c06a1deb", null ],
       [ "vt_pix_clk", "mt9f002_8h.html#a5383a4355bbfe8a467cf06656dc75b79", null ],
       [ "vt_pix_clk_div", "mt9f002_8h.html#aafb5ec89e6247a97c9a9df1add7aaeec", null ],
-      [ "vt_sys_clk_div", "mt9f002_8h.html#a98203edac8ef72fdc8eac755024411b1", null ]
+      [ "vt_sys_clk_div", "mt9f002_8h.html#a98203edac8ef72fdc8eac755024411b1", null ],
+      [ "x_odd_inc", "mt9f002_8h.html#a230dd4d003b6a64ff1351fac054f0f17", null ],
+      [ "y_odd_inc", "mt9f002_8h.html#a92b2ef17c169985bba2ccbbf740f22e1", null ]
     ] ],
+    [ "MT9F002_GAIN_BLUE", "mt9f002_8h.html#a466d69f137a93cc65d2641745540e406", null ],
+    [ "MT9F002_GAIN_GREEN1", "mt9f002_8h.html#a4f4f8fef7b9de9965fc67ba45de9132f", null ],
+    [ "MT9F002_GAIN_GREEN2", "mt9f002_8h.html#ae1aae2e9df487ec2104cb5ad99e16086", null ],
+    [ "MT9F002_GAIN_RED", "mt9f002_8h.html#a21cd4a0a3c0d44a09a4cf5b5c5a4b245", null ],
+    [ "MT9F002_INITIAL_OFFSET_X", "mt9f002_8h.html#acac12807427e406cd1ece5a24d82a4af", null ],
+    [ "MT9F002_INITIAL_OFFSET_Y", "mt9f002_8h.html#a45d4b9a2e3db000aea95ff7206cf9dd2", null ],
+    [ "MT9F002_OUTPUT_HEIGHT", "mt9f002_8h.html#af738314f879d0dd6fac0bd053436552d", null ],
+    [ "MT9F002_OUTPUT_SCALER", "mt9f002_8h.html#a2b2cbbddc6c1dfb253f088dbf488b365", null ],
+    [ "MT9F002_OUTPUT_WIDTH", "mt9f002_8h.html#aa07cb6d07e92685aee810db11e33c927", null ],
+    [ "MT9F002_TARGET_EXPOSURE", "mt9f002_8h.html#aa3897e0ce7677738bb76b45dbfd9dcf7", null ],
+    [ "MT9F002_TARGET_FPS", "mt9f002_8h.html#af4f307c3a502c7aadb224c7ff9f85a00", null ],
+    [ "MT9F002_X_ODD_INC_VAL", "mt9f002_8h.html#a33624b48a483e36d6b8815170d60529c", null ],
+    [ "MT9F002_Y_ODD_INC_VAL", "mt9f002_8h.html#aeff5551b0efe0b0fbd7d30f6a89ad0ef", null ],
     [ "mt9f002_interface", "mt9f002_8h.html#a7686a67ecb9cf4abb437377dbd28a318", [
       [ "MT9F002_MIPI", "mt9f002_8h.html#a7686a67ecb9cf4abb437377dbd28a318af74d7bc20fca9c7455d1d66bb56b1560", null ],
       [ "MT9F002_HiSPi", "mt9f002_8h.html#a7686a67ecb9cf4abb437377dbd28a318a703b05f00330a001a7537a83c423ffee", null ],
       [ "MT9F002_PARALLEL", "mt9f002_8h.html#a7686a67ecb9cf4abb437377dbd28a318a082b88211aa5a808528274d225f168e1", null ]
     ] ],
-    [ "mt9f002_init", "mt9f002_8h.html#a8f43c3ad8d5ff841d1203ab6c760c8f0", null ]
+    [ "mt9f002_init", "mt9f002_8h.html#a8f43c3ad8d5ff841d1203ab6c760c8f0", null ],
+    [ "mt9f002_set_exposure", "mt9f002_8h.html#abcc9f0f2484aa96a4c1cef0c563fd62e", null ],
+    [ "mt9f002_set_gains", "mt9f002_8h.html#a2b19e806c9c4331da2e4730dd6592e38", null ],
+    [ "mt9f002_set_resolution", "mt9f002_8h.html#ab56af0c2b794989ad4e1c4e112784588", null ]
 ];

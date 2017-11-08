@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -136,8 +136,6 @@ $(document).ready(function(){initNavTree('px4__flash_8c.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a7e5856d8368f8aec19b2e3f1668893be"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_8c.html#a7e5856d8368f8aec19b2e3f1668893be">PX4IO_PORT</a>&#160;&#160;&#160;(&amp;((PX4IO_UART).device))</td></tr>
-<tr class="separator:a7e5856d8368f8aec19b2e3f1668893be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8f8df18c1e0be3a351008bcac83602a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_8c.html#af8f8df18c1e0be3a351008bcac83602a">FLASH_PORT</a>&#160;&#160;&#160;(&amp;((FLASH_UART).device))</td></tr>
 <tr class="separator:af8f8df18c1e0be3a351008bcac83602a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec8621c4a3bd41511fc7ad1ba09f9d87"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_8c.html#aec8621c4a3bd41511fc7ad1ba09f9d87">PROTO_INSYNC</a>&#160;&#160;&#160;0x12</td></tr>
@@ -186,9 +184,6 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a4c18aacc94ac05beba6e21a245f58b0e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sys__time_8h.html#afd62afa1c6cefa443f9c9f6aa1e03dae">tid_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_8c.html#a4c18aacc94ac05beba6e21a245f58b0e">px4iobl_tid</a></td></tr>
-<tr class="memdesc:a4c18aacc94ac05beba6e21a245f58b0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">id for time out of the px4 bootloader reset  <a href="#a4c18aacc94ac05beba6e21a245f58b0e">More...</a><br /></td></tr>
-<tr class="separator:a4c18aacc94ac05beba6e21a245f58b0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8d5a1eb1c3be3671ba892b0ad62e94b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_8c.html#ad8d5a1eb1c3be3671ba892b0ad62e94b">setToBootloaderMode</a></td></tr>
 <tr class="separator:ad8d5a1eb1c3be3671ba892b0ad62e94b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ec4db105e08788ed95ae45283a87771"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_8c.html#a8ec4db105e08788ed95ae45283a87771">px4ioRebootTimeout</a></td></tr>
@@ -209,9 +204,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="px4__flash_8c_source.html#l00046">46</a> of file <a class="el" href="px4__flash_8c_source.html">px4_flash.c</a>.</p>
+<p>Definition at line <a class="el" href="px4__flash_8c_source.html#l00047">47</a> of file <a class="el" href="px4__flash_8c_source.html">px4_flash.c</a>.</p>
 
-<p>Referenced by <a class="el" href="px4__flash_8c_source.html#l00075">px4flash_event()</a>.</p>
+<p>Referenced by <a class="el" href="px4__flash_8c_source.html#l00079">px4flash_event()</a>.</p>
 
 </div>
 </div>
@@ -227,7 +222,7 @@ Variables</h2></td></tr>
 
 <p>boot the application </p>
 
-<p>Definition at line <a class="el" href="px4__flash_8c_source.html#l00063">63</a> of file <a class="el" href="px4__flash_8c_source.html">px4_flash.c</a>.</p>
+<p>Definition at line <a class="el" href="px4__flash_8c_source.html#l00065">65</a> of file <a class="el" href="px4__flash_8c_source.html">px4_flash.c</a>.</p>
 
 </div>
 </div>
@@ -243,7 +238,7 @@ Variables</h2></td></tr>
 
 <p>erase program area and reset program address </p>
 
-<p>Definition at line <a class="el" href="px4__flash_8c_source.html#l00059">59</a> of file <a class="el" href="px4__flash_8c_source.html">px4_flash.c</a>.</p>
+<p>Definition at line <a class="el" href="px4__flash_8c_source.html#l00061">61</a> of file <a class="el" href="px4__flash_8c_source.html">px4_flash.c</a>.</p>
 
 </div>
 </div>
@@ -259,9 +254,9 @@ Variables</h2></td></tr>
 
 <p>end of command </p>
 
-<p>Definition at line <a class="el" href="px4__flash_8c_source.html#l00051">51</a> of file <a class="el" href="px4__flash_8c_source.html">px4_flash.c</a>.</p>
+<p>Definition at line <a class="el" href="px4__flash_8c_source.html#l00053">53</a> of file <a class="el" href="px4__flash_8c_source.html">px4_flash.c</a>.</p>
 
-<p>Referenced by <a class="el" href="px4__flash_8c_source.html#l00075">px4flash_event()</a>.</p>
+<p>Referenced by <a class="el" href="px4__flash_8c_source.html#l00079">px4flash_event()</a>.</p>
 
 </div>
 </div>
@@ -277,7 +272,7 @@ Variables</h2></td></tr>
 
 <p>INSYNC/FAILED - 'fail' response. </p>
 
-<p>Definition at line <a class="el" href="px4__flash_8c_source.html#l00054">54</a> of file <a class="el" href="px4__flash_8c_source.html">px4_flash.c</a>.</p>
+<p>Definition at line <a class="el" href="px4__flash_8c_source.html#l00056">56</a> of file <a class="el" href="px4__flash_8c_source.html">px4_flash.c</a>.</p>
 
 </div>
 </div>
@@ -293,7 +288,7 @@ Variables</h2></td></tr>
 
 <p>compute &amp; return a CRC </p>
 
-<p>Definition at line <a class="el" href="px4__flash_8c_source.html#l00062">62</a> of file <a class="el" href="px4__flash_8c_source.html">px4_flash.c</a>.</p>
+<p>Definition at line <a class="el" href="px4__flash_8c_source.html#l00064">64</a> of file <a class="el" href="px4__flash_8c_source.html">px4_flash.c</a>.</p>
 
 </div>
 </div>
@@ -309,7 +304,7 @@ Variables</h2></td></tr>
 
 <p>get device ID bytes </p>
 
-<p>Definition at line <a class="el" href="px4__flash_8c_source.html#l00058">58</a> of file <a class="el" href="px4__flash_8c_source.html">px4_flash.c</a>.</p>
+<p>Definition at line <a class="el" href="px4__flash_8c_source.html#l00060">60</a> of file <a class="el" href="px4__flash_8c_source.html">px4_flash.c</a>.</p>
 
 </div>
 </div>
@@ -325,9 +320,9 @@ Variables</h2></td></tr>
 
 <p>NOP for re-establishing sync. </p>
 
-<p>Definition at line <a class="el" href="px4__flash_8c_source.html#l00057">57</a> of file <a class="el" href="px4__flash_8c_source.html">px4_flash.c</a>.</p>
+<p>Definition at line <a class="el" href="px4__flash_8c_source.html#l00059">59</a> of file <a class="el" href="px4__flash_8c_source.html">px4_flash.c</a>.</p>
 
-<p>Referenced by <a class="el" href="px4__flash_8c_source.html#l00075">px4flash_event()</a>.</p>
+<p>Referenced by <a class="el" href="px4__flash_8c_source.html#l00079">px4flash_event()</a>.</p>
 
 </div>
 </div>
@@ -343,9 +338,9 @@ Variables</h2></td></tr>
 
 <p>'in sync' byte sent before status </p>
 
-<p>Definition at line <a class="el" href="px4__flash_8c_source.html#l00050">50</a> of file <a class="el" href="px4__flash_8c_source.html">px4_flash.c</a>.</p>
+<p>Definition at line <a class="el" href="px4__flash_8c_source.html#l00052">52</a> of file <a class="el" href="px4__flash_8c_source.html">px4_flash.c</a>.</p>
 
-<p>Referenced by <a class="el" href="px4__flash_8c_source.html#l00075">px4flash_event()</a>.</p>
+<p>Referenced by <a class="el" href="px4__flash_8c_source.html#l00079">px4flash_event()</a>.</p>
 
 </div>
 </div>
@@ -361,7 +356,7 @@ Variables</h2></td></tr>
 
 <p>INSYNC/INVALID - 'invalid' response for bad commands. </p>
 
-<p>Definition at line <a class="el" href="px4__flash_8c_source.html#l00055">55</a> of file <a class="el" href="px4__flash_8c_source.html">px4_flash.c</a>.</p>
+<p>Definition at line <a class="el" href="px4__flash_8c_source.html#l00057">57</a> of file <a class="el" href="px4__flash_8c_source.html">px4_flash.c</a>.</p>
 
 </div>
 </div>
@@ -377,7 +372,7 @@ Variables</h2></td></tr>
 
 <p>set next programming address </p>
 
-<p>Definition at line <a class="el" href="px4__flash_8c_source.html#l00060">60</a> of file <a class="el" href="px4__flash_8c_source.html">px4_flash.c</a>.</p>
+<p>Definition at line <a class="el" href="px4__flash_8c_source.html#l00062">62</a> of file <a class="el" href="px4__flash_8c_source.html">px4_flash.c</a>.</p>
 
 </div>
 </div>
@@ -393,7 +388,7 @@ Variables</h2></td></tr>
 
 <p>INSYNC/OK - 'ok' response. </p>
 
-<p>Definition at line <a class="el" href="px4__flash_8c_source.html#l00053">53</a> of file <a class="el" href="px4__flash_8c_source.html">px4_flash.c</a>.</p>
+<p>Definition at line <a class="el" href="px4__flash_8c_source.html#l00055">55</a> of file <a class="el" href="px4__flash_8c_source.html">px4_flash.c</a>.</p>
 
 </div>
 </div>
@@ -409,23 +404,7 @@ Variables</h2></td></tr>
 
 <p>write bytes at program address and increment </p>
 
-<p>Definition at line <a class="el" href="px4__flash_8c_source.html#l00061">61</a> of file <a class="el" href="px4__flash_8c_source.html">px4_flash.c</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a7e5856d8368f8aec19b2e3f1668893be"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PX4IO_PORT&#160;&#160;&#160;(&amp;((PX4IO_UART).device))</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="px4__flash_8c_source.html#l00045">45</a> of file <a class="el" href="px4__flash_8c_source.html">px4_flash.c</a>.</p>
-
-<p>Referenced by <a class="el" href="px4__flash_8c_source.html#l00075">px4flash_event()</a>.</p>
+<p>Definition at line <a class="el" href="px4__flash_8c_source.html#l00063">63</a> of file <a class="el" href="px4__flash_8c_source.html">px4_flash.c</a>.</p>
 
 </div>
 </div>
@@ -444,9 +423,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="px4__flash_8c_source.html#l00075">75</a> of file <a class="el" href="px4__flash_8c_source.html">px4_flash.c</a>.</p>
+<p>Definition at line <a class="el" href="px4__flash_8c_source.html#l00079">79</a> of file <a class="el" href="px4__flash_8c_source.html">px4_flash.c</a>.</p>
 
-<p>References <a class="el" href="chibios_2mcu__periph_2uart__arch_8h_source.html#l00048">B115200</a>, <a class="el" href="chibios_2mcu__periph_2uart__arch_8h_source.html#l00049">B230400</a>, <a class="el" href="px4__flash_2protocol_8h_source.html#l00321">IOPacket::count_code</a>, <a class="el" href="px4__flash_2protocol_8h_source.html#l00322">IOPacket::crc</a>, <a class="el" href="px4__flash_2protocol_8h_source.html#l00379">crc_packet()</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="px4__flash_8c_source.html#l00046">FLASH_PORT</a>, <a class="el" href="intermcu__ap_8c_source.html#l00085">intermcu_set_enabled()</a>, <a class="el" href="px4__flash_2protocol_8h_source.html#l00324">IOPacket::offset</a>, <a class="el" href="ins__alt__float_8c_source.html#l00268">p</a>, <a class="el" href="px4__flash_2protocol_8h_source.html#l00323">IOPacket::page</a>, <a class="el" href="px4__flash_2protocol_8h_source.html#l00331">PKT_CODE_SUCCESS</a>, <a class="el" href="px4__flash_8c_source.html#l00051">PROTO_EOC</a>, <a class="el" href="px4__flash_8c_source.html#l00057">PROTO_GET_SYNC</a>, <a class="el" href="px4__flash_8c_source.html#l00050">PROTO_INSYNC</a>, <a class="el" href="px4__flash_2protocol_8h_source.html#l00224">PX4IO_P_SETUP_REBOOT_BL</a>, <a class="el" href="px4__flash_2protocol_8h_source.html#l00177">PX4IO_PAGE_SETUP</a>, <a class="el" href="px4__flash_8c_source.html#l00045">PX4IO_PORT</a>, <a class="el" href="px4__flash_2protocol_8h_source.html#l00225">PX4IO_REBOOT_BL_MAGIC</a>, <a class="el" href="px4__flash_8c_source.html#l00042">px4iobl_tid</a>, <a class="el" href="px4__flash_8c_source.html#l00066">px4ioRebootTimeout</a>, <a class="el" href="px4__flash_2protocol_8h_source.html#l00325">IOPacket::regs</a>, <a class="el" href="px4__flash_8c_source.html#l00065">setToBootloaderMode</a>, <a class="el" href="state_8c_source.html#l00036">state</a>, <a class="el" href="sys__time_8c_source.html#l00060">sys_time_cancel_timer()</a>, <a class="el" href="sys__time_8h_source.html#l00114">sys_time_check_and_ack_timer()</a>, <a class="el" href="sys__time_8c_source.html#l00043">sys_time_register_timer()</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00095">sys_time_usleep()</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00078">target</a>, <a class="el" href="std_8h_source.html#l00004">TRUE</a>, and <a class="el" href="chibios_2mcu__periph_2uart__arch_8c_source.html#l00838">uart_periph_set_baudrate()</a>.</p>
+<p>References <a class="el" href="chibios_2mcu__periph_2uart__arch_8h_source.html#l00048">B115200</a>, <a class="el" href="chibios_2mcu__periph_2uart__arch_8h_source.html#l00049">B230400</a>, <a class="el" href="px4__flash_2protocol_8h_source.html#l00321">IOPacket::count_code</a>, <a class="el" href="px4__flash_2protocol_8h_source.html#l00322">IOPacket::crc</a>, <a class="el" href="px4__flash_2protocol_8h_source.html#l00379">crc_packet()</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="px4__flash_8c_source.html#l00047">FLASH_PORT</a>, <a class="el" href="intermcu__ap_8c_source.html#l00105">intermcu_set_enabled()</a>, <a class="el" href="px4__flash_2protocol_8h_source.html#l00324">IOPacket::offset</a>, <a class="el" href="ins__alt__float_8c_source.html#l00268">p</a>, <a class="el" href="px4__flash_2protocol_8h_source.html#l00323">IOPacket::page</a>, <a class="el" href="px4__flash_2protocol_8h_source.html#l00331">PKT_CODE_SUCCESS</a>, <a class="el" href="px4__flash_8c_source.html#l00053">PROTO_EOC</a>, <a class="el" href="px4__flash_8c_source.html#l00059">PROTO_GET_SYNC</a>, <a class="el" href="px4__flash_8c_source.html#l00052">PROTO_INSYNC</a>, <a class="el" href="px4__flash_2protocol_8h_source.html#l00224">PX4IO_P_SETUP_REBOOT_BL</a>, <a class="el" href="px4__flash_2protocol_8h_source.html#l00177">PX4IO_PAGE_SETUP</a>, <a class="el" href="px4__flash_2protocol_8h_source.html#l00225">PX4IO_REBOOT_BL_MAGIC</a>, <a class="el" href="px4__flash_8c_source.html#l00068">px4ioRebootTimeout</a>, <a class="el" href="px4__flash_2protocol_8h_source.html#l00325">IOPacket::regs</a>, <a class="el" href="px4__flash_8c_source.html#l00067">setToBootloaderMode</a>, <a class="el" href="state_8c_source.html#l00036">state</a>, <a class="el" href="sys__time_8c_source.html#l00060">sys_time_cancel_timer()</a>, <a class="el" href="sys__time_8h_source.html#l00114">sys_time_check_and_ack_timer()</a>, <a class="el" href="sys__time_8c_source.html#l00043">sys_time_register_timer()</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00095">sys_time_usleep()</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00078">target</a>, <a class="el" href="std_8h_source.html#l00004">TRUE</a>, and <a class="el" href="chibios_2mcu__periph_2uart__arch_8c_source.html#l00856">uart_periph_set_baudrate()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -475,9 +454,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="px4__flash_8c_source.html#l00068">68</a> of file <a class="el" href="px4__flash_8c_source.html">px4_flash.c</a>.</p>
+<p>Definition at line <a class="el" href="px4__flash_8c_source.html#l00070">70</a> of file <a class="el" href="px4__flash_8c_source.html">px4_flash.c</a>.</p>
 
-<p>References <a class="el" href="px4__flash_8c_source.html#l00042">px4iobl_tid</a>, <a class="el" href="px4__flash_8c_source.html#l00066">px4ioRebootTimeout</a>, <a class="el" href="px4__flash_8c_source.html#l00065">setToBootloaderMode</a>, and <a class="el" href="sys__time_8c_source.html#l00043">sys_time_register_timer()</a>.</p>
+<p>References <a class="el" href="px4__flash_8c_source.html#l00068">px4ioRebootTimeout</a>, <a class="el" href="px4__flash_8c_source.html#l00067">setToBootloaderMode</a>, and <a class="el" href="sys__time_8c_source.html#l00043">sys_time_register_timer()</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -493,24 +472,6 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a class="anchor" id="a4c18aacc94ac05beba6e21a245f58b0e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="sys__time_8h.html#afd62afa1c6cefa443f9c9f6aa1e03dae">tid_t</a> px4iobl_tid</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>id for time out of the px4 bootloader reset </p>
-
-<p>Definition at line <a class="el" href="px4__flash_8c_source.html#l00042">42</a> of file <a class="el" href="px4__flash_8c_source.html">px4_flash.c</a>.</p>
-
-<p>Referenced by <a class="el" href="px4__flash_8c_source.html#l00075">px4flash_event()</a>, and <a class="el" href="px4__flash_8c_source.html#l00068">px4flash_init()</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="a8ec4db105e08788ed95ae45283a87771"></a>
 <div class="memitem">
 <div class="memproto">
@@ -521,9 +482,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="px4__flash_8c_source.html#l00066">66</a> of file <a class="el" href="px4__flash_8c_source.html">px4_flash.c</a>.</p>
+<p>Definition at line <a class="el" href="px4__flash_8c_source.html#l00068">68</a> of file <a class="el" href="px4__flash_8c_source.html">px4_flash.c</a>.</p>
 
-<p>Referenced by <a class="el" href="px4__flash_8c_source.html#l00075">px4flash_event()</a>, and <a class="el" href="px4__flash_8c_source.html#l00068">px4flash_init()</a>.</p>
+<p>Referenced by <a class="el" href="px4__flash_8c_source.html#l00079">px4flash_event()</a>, and <a class="el" href="px4__flash_8c_source.html#l00070">px4flash_init()</a>.</p>
 
 </div>
 </div>
@@ -537,9 +498,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="px4__flash_8c_source.html#l00065">65</a> of file <a class="el" href="px4__flash_8c_source.html">px4_flash.c</a>.</p>
+<p>Definition at line <a class="el" href="px4__flash_8c_source.html#l00067">67</a> of file <a class="el" href="px4__flash_8c_source.html">px4_flash.c</a>.</p>
 
-<p>Referenced by <a class="el" href="px4__flash_8c_source.html#l00075">px4flash_event()</a>, and <a class="el" href="px4__flash_8c_source.html#l00068">px4flash_init()</a>.</p>
+<p>Referenced by <a class="el" href="px4__flash_8c_source.html#l00079">px4flash_event()</a>, and <a class="el" href="px4__flash_8c_source.html#l00070">px4flash_init()</a>.</p>
 
 </div>
 </div>
@@ -549,7 +510,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_7d07a2235bf732e635d4183f1ff4bace.html">px4_flash</a></li><li class="navelem"><a class="el" href="px4__flash_8c.html">px4_flash.c</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:02:03 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:02:32 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -108,9 +108,32 @@ $(document).ready(function(){initNavTree('module__logger_sd_chibios.html','');})
 <p>Based on ChibiOS HAL and Threads. If board allows it (ex: Apogee), the log file is automatically closed on power down. Files are written on a FAT file system using the FatFS library and can be accessed by using the autopilot as a mass storage (plug USB while the board is running).</p>
 <h1><a class="anchor" id="module_load_example__logger_sd_chibios"></a>
 Example for airframe file</h1>
-<p>Add to your firmware section: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;module name=&quot;tlsf&quot;/&gt;</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;&lt;module name=&quot;logger_sd_chibios&quot;/&gt;</div>
-</div><!-- fragment --> <h1><a class="anchor" id="dependencies__logger_sd_chibios"></a>
+<p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;module name=&quot;tlsf&quot;/&gt;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;&lt;module name=&quot;logger_sd_chibios&quot;&gt;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;  &lt;define name=&quot;SDLOG_START_DELAY&quot; unit=&quot;s&quot; value=&quot;30&quot; /&gt;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;  &lt;define name=&quot;SDLOG_AUTO_FLUSH_PERIOD&quot; unit=&quot;s&quot; value=&quot;10&quot; /&gt;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;  &lt;define name=&quot;SDLOG_CONTIGUOUS_STORAGE_MEM&quot; unit=&quot;Mo&quot; value=&quot;50&quot; /&gt;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;  &lt;configure name=&quot;SDLOG_LED&quot; value=&quot;none|num&quot; /&gt;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;&lt;/module&gt;</div>
+</div><!-- fragment --> <h1><a class="anchor" id="configuration__logger_sd_chibios"></a>
+Module configuration options</h1>
+<h2><a class="anchor" id="configure"></a>
+Configure Options</h2>
+<ul>
+<li><b>name:</b> <code>SDLOG_LED</code> <b>value:</b> <em>none|num</em> <br />
+ Description: LED number or 'none' to disable. Default: none</li>
+</ul>
+<h2><a class="anchor" id="define"></a>
+Define Options</h2>
+<ul>
+<li><b>name:</b> <code>SDLOG_START_DELAY</code> <b>value:</b> <em>30</em> <br />
+ Description: Set the delay in seconds before starting the logger. This delay can be used to get plug USB cable and get data without starting a new log. Default: 30s</li>
+<li><b>name:</b> <code>SDLOG_AUTO_FLUSH_PERIOD</code> <b>value:</b> <em>10</em> <br />
+ Description: Data flush period. Shorter period may decrease performances. Default: 10s</li>
+<li><b>name:</b> <code>SDLOG_CONTIGUOUS_STORAGE_MEM</code> <b>value:</b> <em>50</em> <br />
+ Description: Try to reserve a given contiguous mass storage memory. Default: 50Mo</li>
+</ul>
+<h1><a class="anchor" id="dependencies__logger_sd_chibios"></a>
 Dependencies</h1>
 <ul>
 <li><a class="el" href="module__tlsf.html">tlsf module</a> </li>
@@ -156,6 +179,10 @@ Raw logger_sd_chibios.xml file:</h2>
 <div class="line">      Files are written on a FAT file system using the FatFS library and can be accessed</div>
 <div class="line">      by using the autopilot as a mass storage (plug USB while the board is running).</div>
 <div class="line">    &lt;/description&gt;</div>
+<div class="line">    &lt;configure name=&quot;SDLOG_LED&quot; value=&quot;none|num&quot; description=&quot;LED number or &#39;none&#39; to disable. Default: none&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;SDLOG_START_DELAY&quot; value=&quot;30&quot; unit=&quot;s&quot; description=&quot;Set the delay in seconds before starting the logger. This delay can be used to get plug USB cable and get data without starting a new log. Default: 30s&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;SDLOG_AUTO_FLUSH_PERIOD&quot; value=&quot;10&quot; unit=&quot;s&quot; description=&quot;Data flush period. Shorter period may decrease performances. Default: 10s&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;SDLOG_CONTIGUOUS_STORAGE_MEM&quot; value=&quot;50&quot; unit=&quot;Mo&quot; description=&quot;Try to reserve a given contiguous mass storage memory. Default: 50Mo&quot;/&gt;</div>
 <div class="line">  &lt;/doc&gt;</div>
 <div class="line">  &lt;depends&gt;tlsf&lt;/depends&gt;</div>
 <div class="line">  &lt;header&gt;</div>
@@ -163,6 +190,8 @@ Raw logger_sd_chibios.xml file:</h2>
 <div class="line">  &lt;/header&gt;</div>
 <div class="line">  &lt;init fun=&quot;sdlog_chibios_init()&quot;/&gt;</div>
 <div class="line">  &lt;makefile target=&quot;ap&quot;&gt;</div>
+<div class="line">    &lt;configure name=&quot;SDLOG_LED&quot; default=&quot;none&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;SDLOG_LED&quot; value=&quot;$(SDLOG_LED)&quot; cond=&quot;ifneq ($(SDLOG_LED),none)&quot;/&gt;</div>
 <div class="line">    &lt;file name=&quot;sdlog_chibios.c&quot;/&gt;</div>
 <div class="line">    &lt;file name=&quot;sdlog_chibios/sdLog.c&quot;/&gt;</div>
 <div class="line">    &lt;file name=&quot;sdlog_chibios/msg_queue.c&quot;/&gt;</div>
@@ -183,7 +212,7 @@ Raw logger_sd_chibios.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:02:17 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:02:47 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

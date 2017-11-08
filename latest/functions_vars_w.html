@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -79,6 +79,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow3" class="tabs2">
     <ul class="tablist">
       <li><a href="functions.html"><span>All</span></a></li>
+      <li><a href="functions_func.html"><span>Functions</span></a></li>
       <li class="current"><a href="functions_vars.html"><span>Variables</span></a></li>
     </ul>
   </div>
@@ -149,6 +150,7 @@ $(document).ready(function(){initNavTree('functions_vars_w.html','');});
 <li>w
 : <a class="el" href="cv__georeference_8h.html#a8c620e03636b94de326ec55f61088a5a">camera_frame_t</a>
 , <a class="el" href="image_8h.html#a397b7e5419f710b909f7dfeac04bd810">crop_t</a>
+, <a class="el" href="gvf__sin_8h.html#afd6f9f8d09830516604b3c0f30b57d8e">gvf_s_par</a>
 , <a class="el" href="image_8h.html#aa3c13c99294ff126c4c019d5e799253e">image_t</a>
 , <a class="el" href="image_8h.html#af715f74ca485995f0f4d0f40020ac81a">img_size_t</a>
 </li>
@@ -193,12 +195,10 @@ $(document).ready(function(){initNavTree('functions_vars_w.html','');});
 : <a class="el" href="ahrs__float__cmpl_8h.html#af2d9ec5066722cce1ff9abc14cc73cac">AhrsFloatCmpl</a>
 , <a class="el" href="ahrs__int__cmpl__quat_8h.html#a7d8414d7f832599c0384544c9e7c8bae">AhrsIntCmplQuat</a>
 </li>
-<li>width
-: <a class="el" href="stereoprotocol_8h.html#af7a9f1e73be477d00be40422fffb2b99">MsgProperties</a>
-</li>
 <li>wind
 : <a class="el" href="nps__atmosphere_8h.html#a6f6c4178b93a7932df1ac610aeba58f2">NpsAtmosphere</a>
 , <a class="el" href="nps__fdm_8h.html#ad44d2d683ca1e135085467cd51fc3dec">NpsFdm</a>
+, <a class="el" href="wind__estimator_8h.html#a2ffe4f4db770b033adba58c93cf6dc27">WindEstimator</a>
 </li>
 <li>wind_air_status
 : <a class="el" href="group__state__wind__airspeed.html#ga4fc58d1ad5b89c1cacf4dd22d2f5864d">State</a>
@@ -237,7 +237,8 @@ $(document).ready(function(){initNavTree('functions_vars_w.html','');});
 : <a class="el" href="avi__isp__statistics__yuv_8h.html#ac26c7f4a347f27c79114771479c34515">avi_isp_statistics_yuv_regs</a>
 </li>
 <li>window_size
-: <a class="el" href="opticflow__calculator_8h.html#ace971c356385c5fc287dfdb6874743ee">opticflow_t</a>
+: <a class="el" href="optical__flow__landing_8h.html#af7c6460e2b21557f1ceebb1d5e0c7702">OpticalFlowLanding</a>
+, <a class="el" href="opticflow__calculator_8h.html#ace971c356385c5fc287dfdb6874743ee">opticflow_t</a>
 </li>
 <li>window_x
 : <a class="el" href="avi__isp__statistics__bayer_8h.html#ae0e5fbf2483d8d217b84d6928ae7b706">avi_isp_statistics_bayer_regs</a>
@@ -246,10 +247,10 @@ $(document).ready(function(){initNavTree('functions_vars_w.html','');});
 : <a class="el" href="avi__isp__statistics__bayer_8h.html#a163a67a92da722276a33622488d217ba">avi_isp_statistics_bayer_regs</a>
 </li>
 <li>windspeed_f
-: <a class="el" href="group__state__wind__airspeed.html#ga2c09d46bf7e3276b0c9d8e9c24c7d12e">State</a>
+: <a class="el" href="group__state__wind__airspeed.html#ga63d584904c1f1e09d748715477cca088">State</a>
 </li>
 <li>windspeed_i
-: <a class="el" href="group__state__wind__airspeed.html#ga7a7518b0d7720fb8e5dc8b5d4d7ecfa6">State</a>
+: <a class="el" href="group__state__wind__airspeed.html#gaedf271adfcbf5e08599b1f77b2738100">State</a>
 </li>
 <li>word
 : <a class="el" href="i2c__smbus_8h.html#adcbf2a0d0c112b6a77b35b3125f15e77">i2c_smbus_data</a>
@@ -266,7 +267,7 @@ $(document).ready(function(){initNavTree('functions_vars_w.html','');});
 : <a class="el" href="flight__gear_8h.html#a555186bc9841b5c368dd0c19d04183c8">FGNetFDM</a>
 </li>
 <li>wp
-: <a class="el" href="mission__common_8h.html#a2f32a38a71ceac64a93397bd2f7704e0">_mission_wp</a>
+: <a class="el" href="mission__common_8h.html#ae32d4778f0a66857d84fcddf40fbca9d">_mission_wp</a>
 </li>
 <li>wp_center
 : <a class="el" href="nav__survey__zamboni_8h.html#a13149b454c2278d30f522398015494a2">ZamboniSurvey</a>
@@ -286,7 +287,7 @@ $(document).ready(function(){initNavTree('functions_vars_w.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Oct 1 2016 14:02:43 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:03:14 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -117,7 +117,7 @@ $(document).ready(function(){initNavTree('autopilot__arming__yaw_8h.html','');})
 
 <p>Arm the motors by with max yaw stick.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="autopilot__rc__helpers_8h_source.html">autopilot_rc_helpers.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="rotorcraft_2autopilot__rc__helpers_8h_source.html">autopilot_rc_helpers.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for autopilot_arming_yaw.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -125,7 +125,7 @@ $(document).ready(function(){initNavTree('autopilot__arming__yaw_8h.html','');})
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="autopilot__arming__yaw_8h__incl.png" border="0" usemap="#sw_2airborne_2firmwares_2rotorcraft_2autopilot__arming__yaw_8h" alt=""/></div>
 <map name="sw_2airborne_2firmwares_2rotorcraft_2autopilot__arming__yaw_8h" id="sw_2airborne_2firmwares_2rotorcraft_2autopilot__arming__yaw_8h">
-<area shape="rect" id="node2" href="autopilot__rc__helpers_8h.html" title="Some helper functions to check RC sticks. " alt="" coords="71,109,234,136"/><area shape="rect" id="node4" href="radio__control_8h.html" title="subsystems/radio_control.h" alt="" coords="121,184,320,211"/><area shape="rect" id="node5" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API " alt="" coords="189,259,242,285"/><area shape="rect" id="node7" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="266,259,362,285"/><area shape="rect" id="node8" href="inttypes_8h.html" title="inttypes.h" alt="" coords="274,333,359,360"/></map>
+<area shape="rect" id="node2" href="rotorcraft_2autopilot__rc__helpers_8h.html" title="Some helper functions to check RC sticks. " alt="" coords="71,109,234,136"/><area shape="rect" id="node4" href="radio__control_8h.html" title="subsystems/radio_control.h" alt="" coords="121,184,320,211"/><area shape="rect" id="node5" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API " alt="" coords="189,259,242,285"/><area shape="rect" id="node7" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="266,259,362,285"/><area shape="rect" id="node8" href="inttypes_8h.html" title="inttypes.h" alt="" coords="274,333,359,360"/></map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
@@ -134,7 +134,7 @@ $(document).ready(function(){initNavTree('autopilot__arming__yaw_8h.html','');})
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="autopilot__arming__yaw_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2firmwares_2rotorcraft_2autopilot__arming__yaw_8hdep" alt=""/></div>
 <map name="sw_2airborne_2firmwares_2rotorcraft_2autopilot__arming__yaw_8hdep" id="sw_2airborne_2firmwares_2rotorcraft_2autopilot__arming__yaw_8hdep">
-<area shape="rect" id="node2" href="rotorcraft_2autopilot_8c.html" title="Autopilot. " alt="" coords="5,109,167,151"/></map>
+<area shape="rect" id="node2" href="rotorcraft_2autopilot__generated_8c.html" title="Generated autopilot implementation. " alt="" coords="5,109,167,165"/><area shape="rect" id="node3" href="rotorcraft_2autopilot__static_8c.html" title="Static autopilot implementation. " alt="" coords="191,109,352,165"/></map>
 </div>
 </div>
 <p><a href="autopilot__arming__yaw_8h_source.html">Go to the source code of this file.</a></p>
@@ -284,7 +284,18 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="autopilot__arming__yaw_8h_source.html#l00083">83</a> of file <a class="el" href="autopilot__arming__yaw_8h_source.html">autopilot_arming_yaw.h</a>.</p>
 
-<p>References <a class="el" href="rotorcraft_2autopilot_8h_source.html#l00036">AP_MODE_KILL</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00056">autopilot_check_motor_status</a>, <a class="el" href="rotorcraft_2autopilot_8c_source.html#l00069">autopilot_mode</a>, <a class="el" href="rotorcraft_2autopilot_8c_source.html#l00076">autopilot_motors_on</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00055">autopilot_motors_on_counter</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00039">MOTOR_ARMING_DELAY</a>, <a class="el" href="autopilot__rc__helpers_8h_source.html#l00048">PITCH_STICK_CENTERED</a>, <a class="el" href="autopilot__rc__helpers_8h_source.html#l00051">ROLL_STICK_CENTERED</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00044">STATUS_INITIALISE_RC</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00048">STATUS_M_OFF_STICK_PUSHED</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00051">STATUS_M_ON_STICK_PUSHED</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00045">STATUS_MOTORS_AUTOMATICALLY_OFF</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00046">STATUS_MOTORS_AUTOMATICALLY_OFF_SAFETY_WAIT</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00047">STATUS_MOTORS_OFF</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00050">STATUS_MOTORS_ON</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00049">STATUS_START_MOTORS</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00052">STATUS_STOP_MOTORS</a>, <a class="el" href="autopilot__rc__helpers_8h_source.html#l00040">THROTTLE_STICK_DOWN</a>, <a class="el" href="autopilot__rc__helpers_8h_source.html#l00045">YAW_STICK_CENTERED</a>, and <a class="el" href="autopilot__rc__helpers_8h_source.html#l00042">YAW_STICK_PUSHED</a>.</p>
+<p>References <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00035">AP_MODE_KILL</a>, <a class="el" href="autopilot_8c_source.html#l00050">autopilot</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00056">autopilot_check_motor_status</a>, <a class="el" href="autopilot_8c_source.html#l00179">autopilot_get_mode()</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00055">autopilot_motors_on_counter</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00039">MOTOR_ARMING_DELAY</a>, <a class="el" href="autopilot_8h_source.html#l00062">pprz_autopilot::motors_on</a>, <a class="el" href="rotorcraft_2autopilot__rc__helpers_8h_source.html#l00048">PITCH_STICK_CENTERED</a>, <a class="el" href="rotorcraft_2autopilot__rc__helpers_8h_source.html#l00051">ROLL_STICK_CENTERED</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00044">STATUS_INITIALISE_RC</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00048">STATUS_M_OFF_STICK_PUSHED</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00051">STATUS_M_ON_STICK_PUSHED</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00045">STATUS_MOTORS_AUTOMATICALLY_OFF</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00046">STATUS_MOTORS_AUTOMATICALLY_OFF_SAFETY_WAIT</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00047">STATUS_MOTORS_OFF</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00050">STATUS_MOTORS_ON</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00049">STATUS_START_MOTORS</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00052">STATUS_STOP_MOTORS</a>, <a class="el" href="rotorcraft_2autopilot__rc__helpers_8h_source.html#l00040">THROTTLE_STICK_DOWN</a>, <a class="el" href="rotorcraft_2autopilot__rc__helpers_8h_source.html#l00045">YAW_STICK_CENTERED</a>, and <a class="el" href="rotorcraft_2autopilot__rc__helpers_8h_source.html#l00042">YAW_STICK_PUSHED</a>.</p>
+
+<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="autopilot__arming__yaw_8h_abbbe9ccad851ff6d7ef88e298059b6ce_cgraph.png" border="0" usemap="#autopilot__arming__yaw_8h_abbbe9ccad851ff6d7ef88e298059b6ce_cgraph" alt=""/></div>
+<map name="autopilot__arming__yaw_8h_abbbe9ccad851ff6d7ef88e298059b6ce_cgraph" id="autopilot__arming__yaw_8h_abbbe9ccad851ff6d7ef88e298059b6ce_cgraph">
+<area shape="rect" id="node2" href="autopilot_8c.html#a23af2ac2d4bcb9b71c869a409de61cc4" title="get autopilot mode " alt="" coords="228,13,379,39"/></map>
+</div>
+</p>
 
 </div>
 </div>
@@ -385,7 +396,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_e37d355c72eb7c8e5b43c34bdea5a24b.html">rotorcraft</a></li><li class="navelem"><a class="el" href="autopilot__arming__yaw_8h.html">autopilot_arming_yaw.h</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:01:48 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:02:10 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -26,6 +26,8 @@ var imu__mpu9250__i2c_8h =
     [ "IMU_GYRO_R_SENS", "imu__mpu9250__i2c_8h.html#af57decce9e96b0726832a410273223f3", null ],
     [ "IMU_GYRO_R_SENS_DEN", "imu__mpu9250__i2c_8h.html#aecb2f43265d239ba7661dfcc8523123e", null ],
     [ "IMU_GYRO_R_SENS_NUM", "imu__mpu9250__i2c_8h.html#a6f808c71190e714287442af3bb7008b3", null ],
+    [ "IMU_MPU9250_ACCEL_RANGE", "imu__mpu9250__i2c_8h.html#a90aacc40f0d502a3eec9543a11ab7097", null ],
+    [ "IMU_MPU9250_GYRO_RANGE", "imu__mpu9250__i2c_8h.html#ae8ae2399802e067989db8cb63a543ba2", null ],
     [ "imu_mpu9250_event", "imu__mpu9250__i2c_8h.html#af140d4e8a775be026073e67fd3080aa2", null ],
     [ "imu_mpu9250_init", "imu__mpu9250__i2c_8h.html#a9a9bb6c468d388d1688b2b35e94633d3", null ],
     [ "imu_mpu9250_periodic", "imu__mpu9250__i2c_8h.html#a38ba54b488a6adbea2dfb5a060d5d8b5", null ],

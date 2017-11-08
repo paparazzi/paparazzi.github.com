@@ -8,12 +8,12 @@ var chibios_2mcu__periph_2adc__arch_8c =
     [ "adc_regular_sequence", "chibios_2mcu__periph_2adc__arch_8c.html#ab20565c2f3d25af97a62849647c4cd71", null ],
     [ "adc_sample_time_on_all_channels", "chibios_2mcu__periph_2adc__arch_8c.html#aa4fef74b6c7509b76877e940657b2603", null ],
     [ "adcerrorcallback", "chibios_2mcu__periph_2adc__arch_8c.html#ab33213b168f1b881ddc092b70d45e130", null ],
+    [ "IN_DMA_SECTION", "chibios_2mcu__periph_2adc__arch_8c.html#a9ca94b04798d83640f0b79ea81fe46a9", null ],
     [ "adc1_buffers", "chibios_2mcu__periph_2adc__arch_8c.html#a235d7be89fd1bddc533d5cb64bf0a839", null ],
     [ "adc1_samples_tmp", "chibios_2mcu__periph_2adc__arch_8c.html#a99a4c90a514730666d9bdd5c36832756", null ],
     [ "adc1_sum_tmp", "chibios_2mcu__periph_2adc__arch_8c.html#a48348066f5ca0fe6ddf05e233559e513", null ],
     [ "adc_channel_map", "chibios_2mcu__periph_2adc__arch_8c.html#acee546d2b3b7908820ea25216782402b", null ],
     [ "adc_error_flag", "chibios_2mcu__periph_2adc__arch_8c.html#afd39363b0bc5b73c6cb4b0d0cc484d90", null ],
-    [ "adc_samples", "chibios_2mcu__periph_2adc__arch_8c.html#a6b25e8740ad658dcda81a939f89da843", null ],
     [ "adcgrpcfg", "chibios_2mcu__periph_2adc__arch_8c.html#a2a781bb82a68e5872fbd38fda51f0edb", null ],
     [ "adcp_err", "chibios_2mcu__periph_2adc__arch_8c.html#ae518ea232632d8202116d5981e6c7be8", null ]
 ];

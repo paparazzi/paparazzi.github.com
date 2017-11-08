@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -127,7 +127,7 @@ $(document).ready(function(){initNavTree('vf__float_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="vf__float_8c__incl.png" border="0" usemap="#sw_2airborne_2subsystems_2ins_2vf__float_8c" alt=""/></div>
 <map name="sw_2airborne_2subsystems_2ins_2vf__float_8c" id="sw_2airborne_2subsystems_2ins_2vf__float_8c">
-<area shape="rect" id="node2" href="vf__float_8h.html" title="Vertical filter (in float) estimating altitude, velocity and accel bias. " alt="" coords="5,102,188,129"/><area shape="rect" id="node5" href="telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code). " alt="" coords="923,95,1076,136"/><area shape="rect" id="node6" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="1146,281,1285,307"/><area shape="rect" id="node10" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="751,184,904,225"/><area shape="rect" id="node11" href="inttypes_8h.html" title="inttypes.h" alt="" coords="802,281,887,307"/><area shape="rect" id="node14" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="447,273,600,315"/></map>
+<area shape="rect" id="node2" href="vf__float_8h.html" title="Vertical filter (in float) estimating altitude, velocity and accel bias. " alt="" coords="5,102,188,129"/><area shape="rect" id="node5" href="telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code). " alt="" coords="696,95,849,136"/><area shape="rect" id="node6" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="935,363,1074,389"/><area shape="rect" id="node10" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="696,184,849,225"/><area shape="rect" id="node11" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1071,281,1157,307"/><area shape="rect" id="node14" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="499,273,652,315"/><area shape="rect" id="node16" href="pprz__dl_8h.html" title="Datalink using PPRZ protocol. " alt="" coords="676,281,869,307"/></map>
 </div>
 </div>
 <p><a href="vf__float_8c_source.html">Go to the source code of this file.</a></p>
@@ -154,7 +154,7 @@ Functions</h2></td></tr>
 <tr class="separator:a2358072559748851df8c44c975c43ebb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29db6a6034952b28118ae9ea1ec00ca4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vf__float_8c.html#a29db6a6034952b28118ae9ea1ec00ca4">vff_init</a> (float init_z, float init_zdot, float init_bias)</td></tr>
 <tr class="separator:a29db6a6034952b28118ae9ea1ec00ca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa41dcb159a3384aadce98d6f89e82eca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vf__float_8c.html#aa41dcb159a3384aadce98d6f89e82eca">vff_propagate</a> (float accel, float <a class="el" href="optical__flow__landing_8c.html#a778e38aa889751afffa2dea6b803e67a">dt</a>)</td></tr>
+<tr class="memitem:aa41dcb159a3384aadce98d6f89e82eca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vf__float_8c.html#aa41dcb159a3384aadce98d6f89e82eca">vff_propagate</a> (float accel, float dt)</td></tr>
 <tr class="memdesc:aa41dcb159a3384aadce98d6f89e82eca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Propagate the filter in time.  <a href="#aa41dcb159a3384aadce98d6f89e82eca">More...</a><br /></td></tr>
 <tr class="separator:aa41dcb159a3384aadce98d6f89e82eca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafd7012999c4a5c623b6b6f311ec595a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vf__float_8c.html#aafd7012999c4a5c623b6b6f311ec595a">update_z_conf</a> (float z_meas, float conf)</td></tr>
@@ -533,7 +533,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="vf__float_8c_source.html#l00108">108</a> of file <a class="el" href="vf__float_8c_source.html">vf_float.c</a>.</p>
 
-<p>References <a class="el" href="vf__float_8h_source.html#l00037">Vff::bias</a>, <a class="el" href="vf__extended__float_8h_source.html#l00039">VffExtended::bias</a>, <a class="el" href="downlink_8h_source.html#l00084">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00088">DefaultDevice</a>, <a class="el" href="optical__flow__landing_8c_source.html#l00044">dt</a>, <a class="el" href="vf__float_8h_source.html#l00040">Vff::P</a>, <a class="el" href="vf__extended__float_8h_source.html#l00046">VffExtended::P</a>, <a class="el" href="vf__extended__float_8c_source.html#l00060">Qbiasbias</a>, <a class="el" href="vf__extended__float_8c_source.html#l00061">Qoffoff</a>, <a class="el" href="vf__extended__float_8c_source.html#l00071">send_vffe()</a>, <a class="el" href="vf__extended__float_8c_source.html#l00066">vff</a>, <a class="el" href="vf__float_8c_source.html#l00042">VFF_ACCEL_NOISE</a>, <a class="el" href="vf__extended__float_8c_source.html#l00057">VFF_EXTENDED_ACCEL_NOISE</a>, <a class="el" href="vf__float_8h_source.html#l00035">Vff::z</a>, <a class="el" href="vf__extended__float_8h_source.html#l00037">VffExtended::z</a>, <a class="el" href="vf__float_8h_source.html#l00036">Vff::zdot</a>, <a class="el" href="vf__extended__float_8h_source.html#l00038">VffExtended::zdot</a>, <a class="el" href="vf__float_8h_source.html#l00038">Vff::zdotdot</a>, and <a class="el" href="vf__extended__float_8h_source.html#l00042">VffExtended::zdotdot</a>.</p>
+<p>References <a class="el" href="vf__extended__float_8h_source.html#l00048">VffExtended::accel_noise</a>, <a class="el" href="vf__float_8h_source.html#l00037">Vff::bias</a>, <a class="el" href="vf__extended__float_8h_source.html#l00039">VffExtended::bias</a>, <a class="el" href="downlink_8h_source.html#l00042">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00046">DefaultDevice</a>, <a class="el" href="vf__float_8h_source.html#l00040">Vff::P</a>, <a class="el" href="vf__extended__float_8h_source.html#l00046">VffExtended::P</a>, <a class="el" href="vf__extended__float_8c_source.html#l00060">Qbiasbias</a>, <a class="el" href="vf__extended__float_8c_source.html#l00061">Qoffoff</a>, <a class="el" href="vf__extended__float_8c_source.html#l00071">send_vffe()</a>, <a class="el" href="vf__extended__float_8c_source.html#l00066">vff</a>, <a class="el" href="vf__float_8c_source.html#l00042">VFF_ACCEL_NOISE</a>, <a class="el" href="vf__float_8h_source.html#l00035">Vff::z</a>, <a class="el" href="vf__extended__float_8h_source.html#l00037">VffExtended::z</a>, <a class="el" href="vf__float_8h_source.html#l00036">Vff::zdot</a>, <a class="el" href="vf__extended__float_8h_source.html#l00038">VffExtended::zdot</a>, <a class="el" href="vf__float_8h_source.html#l00038">Vff::zdotdot</a>, and <a class="el" href="vf__extended__float_8h_source.html#l00042">VffExtended::zdotdot</a>.</p>
 
 <p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -597,7 +597,7 @@ Variables</h2></td></tr>
 
 <p>References <a class="el" href="vf__float_8c_source.html#l00153">update_z_conf()</a>, and <a class="el" href="vf__float_8c_source.html#l00047">VFF_MEAS_NOISE</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__int_8c_source.html#l00316">baro_cb()</a>.</p>
+<p>Referenced by <a class="el" href="ins__int_8c_source.html#l00331">baro_cb()</a>.</p>
 
 <p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -649,7 +649,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="vf__float_8c_source.html#l00247">247</a> of file <a class="el" href="vf__float_8c_source.html">vf_float.c</a>.</p>
 
-<p>References <a class="el" href="vf__extended__float_8c_source.html#l00369">update_vz_conf()</a>.</p>
+<p>References <a class="el" href="vf__extended__float_8c_source.html#l00374">update_vz_conf()</a>.</p>
 
 <p><div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -690,7 +690,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="vf__float_8c_source.html#l00194">194</a> of file <a class="el" href="vf__float_8c_source.html">vf_float.c</a>.</p>
 
-<p>References <a class="el" href="vf__extended__float_8c_source.html#l00240">update_alt_conf()</a>, and <a class="el" href="vf__float_8c_source.html#l00153">update_z_conf()</a>.</p>
+<p>References <a class="el" href="vf__extended__float_8c_source.html#l00245">update_alt_conf()</a>, and <a class="el" href="vf__float_8c_source.html#l00153">update_z_conf()</a>.</p>
 
 <p><div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -728,7 +728,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_800f0b451dc44a2b86d16d857cea778d.html">ins</a></li><li class="navelem"><a class="el" href="vf__float_8c.html">vf_float.c</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:02:14 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:02:43 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

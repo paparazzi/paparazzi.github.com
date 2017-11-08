@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -133,7 +133,7 @@ $(document).ready(function(){initNavTree('hott__gam_8h_source.html','');});
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#ifndef HOTT_GAM_H</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#define HOTT_GAM_H</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;autopilot.h&quot;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="autopilot_8h.html">autopilot.h</a>&quot;</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">//Graupner #33611 General Air Module</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="hott__gam_8h.html#a221244730e4f96c650f744645a79b43a">   33</a></span>&#160;<span class="preprocessor">#define HOTT_TELEMETRY_GAM_SENSOR_ID  0x8D</span></div>
@@ -251,7 +251,7 @@ $(document).ready(function(){initNavTree('hott__gam_8h_source.html','');});
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;  hott_gam_msg-&gt;<a class="code" href="hott__gam_8h.html#ae3e90761c8956daff735f64534ddf3ad">speed_L</a> = 10;</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  <span class="comment">//display ON when motors are armed</span></div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="rotorcraft_2autopilot_8c.html#a54cc031e8ec2149a161a3b14b0bd346c">autopilot_motors_on</a>) {</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="autopilot_8c.html#a6b52f0f9cd2cbf420a77029513ea6f35">autopilot_get_motors_on</a>()) {</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    hott_gam_msg-&gt;<a class="code" href="hott__gam_8h.html#ad61552d7dd008dfbf3da63e46bbb94d4">alarm_invers2</a> |= 0x80;</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    hott_gam_msg-&gt;<a class="code" href="hott__gam_8h.html#ad61552d7dd008dfbf3da63e46bbb94d4">alarm_invers2</a> &amp;= 0x7f;</div>
@@ -263,6 +263,7 @@ $(document).ready(function(){initNavTree('hott__gam_8h_source.html','');});
 <div class="ttc" id="hott__gam_8h_html_ae9ccfa76e27a105f88ef2b4468d80826"><div class="ttname"><a href="hott__gam_8h.html#ae9ccfa76e27a105f88ef2b4468d80826">HOTT_GAM_MSG::general_error_number</a></div><div class="ttdeci">int8_t general_error_number</div><div class="ttdef"><b>Definition:</b> <a href="hott__gam_8h_source.html#l00118">hott_gam.h:118</a></div></div>
 <div class="ttc" id="hott__gam_8h_html_a19a71715f8aeabc745a60155630615f8"><div class="ttname"><a href="hott__gam_8h.html#a19a71715f8aeabc745a60155630615f8">HOTT_GAM_MSG::pressure</a></div><div class="ttdeci">int8_t pressure</div><div class="ttdef"><b>Definition:</b> <a href="hott__gam_8h_source.html#l00119">hott_gam.h:119</a></div></div>
 <div class="ttc" id="hott__gam_8h_html_af74712bb1835f15936ee45d4582e67b8"><div class="ttname"><a href="hott__gam_8h.html#af74712bb1835f15936ee45d4582e67b8">HOTT_GAM_MSG::batt_cap_L</a></div><div class="ttdeci">int8_t batt_cap_L</div><div class="ttdef"><b>Definition:</b> <a href="hott__gam_8h_source.html#l00110">hott_gam.h:110</a></div></div>
+<div class="ttc" id="autopilot_8c_html_a6b52f0f9cd2cbf420a77029513ea6f35"><div class="ttname"><a href="autopilot_8c.html#a6b52f0f9cd2cbf420a77029513ea6f35">autopilot_get_motors_on</a></div><div class="ttdeci">bool autopilot_get_motors_on(void)</div><div class="ttdoc">get motors status </div><div class="ttdef"><b>Definition:</b> <a href="autopilot_8c_source.html#l00207">autopilot.c:207</a></div></div>
 <div class="ttc" id="hott__gam_8h_html_aca4ce1e715ece71fd2972af2483a355d"><div class="ttname"><a href="hott__gam_8h.html#aca4ce1e715ece71fd2972af2483a355d">HOTT_GAM_MSG::climbrate_H</a></div><div class="ttdeci">int8_t climbrate_H</div><div class="ttdef"><b>Definition:</b> <a href="hott__gam_8h_source.html#l00104">hott_gam.h:104</a></div></div>
 <div class="ttc" id="hott__gam_8h_html_a2b24b07cffa6fddd7404a9ec22c3eaeb"><div class="ttname"><a href="hott__gam_8h.html#a2b24b07cffa6fddd7404a9ec22c3eaeb">HOTT_GAM_MSG::current_H</a></div><div class="ttdeci">int8_t current_H</div><div class="ttdef"><b>Definition:</b> <a href="hott__gam_8h_source.html#l00107">hott_gam.h:107</a></div></div>
 <div class="ttc" id="hott__gam_8h_html_aae69b718e6a943b30de3a32d5ec5033d"><div class="ttname"><a href="hott__gam_8h.html#aae69b718e6a943b30de3a32d5ec5033d">HOTT_GAM_MSG::batt_cap_H</a></div><div class="ttdeci">int8_t batt_cap_H</div><div class="ttdef"><b>Definition:</b> <a href="hott__gam_8h_source.html#l00111">hott_gam.h:111</a></div></div>
@@ -270,7 +271,6 @@ $(document).ready(function(){initNavTree('hott__gam_8h_source.html','');});
 <div class="ttc" id="hott__gam_8h_html_a2a0d6a13c50e0544aed177075f6b9298"><div class="ttname"><a href="hott__gam_8h.html#a2a0d6a13c50e0544aed177075f6b9298">HOTT_GAM_MSG::cell5</a></div><div class="ttdeci">int8_t cell5</div><div class="ttdef"><b>Definition:</b> <a href="hott__gam_8h_source.html#l00087">hott_gam.h:87</a></div></div>
 <div class="ttc" id="hott__gam_8h_html_a221244730e4f96c650f744645a79b43a"><div class="ttname"><a href="hott__gam_8h.html#a221244730e4f96c650f744645a79b43a">HOTT_TELEMETRY_GAM_SENSOR_ID</a></div><div class="ttdeci">#define HOTT_TELEMETRY_GAM_SENSOR_ID</div><div class="ttdef"><b>Definition:</b> <a href="hott__gam_8h_source.html#l00033">hott_gam.h:33</a></div></div>
 <div class="ttc" id="hott__gam_8h_html_a72488f40d845bd2ac9dd4d6560d4c3e8"><div class="ttname"><a href="hott__gam_8h.html#a72488f40d845bd2ac9dd4d6560d4c3e8">hott_init_gam_msg</a></div><div class="ttdeci">static void hott_init_gam_msg(struct HOTT_GAM_MSG *hott_gam_msg)</div><div class="ttdef"><b>Definition:</b> <a href="hott__gam_8h_source.html#l00125">hott_gam.h:125</a></div></div>
-<div class="ttc" id="rotorcraft_2autopilot_8c_html_a54cc031e8ec2149a161a3b14b0bd346c"><div class="ttname"><a href="rotorcraft_2autopilot_8c.html#a54cc031e8ec2149a161a3b14b0bd346c">autopilot_motors_on</a></div><div class="ttdeci">bool autopilot_motors_on</div><div class="ttdef"><b>Definition:</b> <a href="rotorcraft_2autopilot_8c_source.html#l00076">autopilot.c:76</a></div></div>
 <div class="ttc" id="hott__gam_8h_html_ac90cf6a69d534e224381c8b1f02daeaf"><div class="ttname"><a href="hott__gam_8h.html#ac90cf6a69d534e224381c8b1f02daeaf">HOTT_GAM_MSG::start_byte</a></div><div class="ttdeci">int8_t start_byte</div><div class="ttdef"><b>Definition:</b> <a href="hott__gam_8h_source.html#l00036">hott_gam.h:36</a></div></div>
 <div class="ttc" id="hott__gam_8h_html_a2ae3167d6e4e1536424e71f44805f187"><div class="ttname"><a href="hott__gam_8h.html#a2ae3167d6e4e1536424e71f44805f187">HOTT_GAM_MSG::batt1_H</a></div><div class="ttdeci">int8_t batt1_H</div><div class="ttdef"><b>Definition:</b> <a href="hott__gam_8h_source.html#l00090">hott_gam.h:90</a></div></div>
 <div class="ttc" id="hott__gam_8h_html_aa88d991678ea676294642f4d2df101cb"><div class="ttname"><a href="hott__gam_8h.html#aa88d991678ea676294642f4d2df101cb">HOTT_GAM_MSG::min_cell_volt_num</a></div><div class="ttdeci">int8_t min_cell_volt_num</div><div class="ttdef"><b>Definition:</b> <a href="hott__gam_8h_source.html#l00115">hott_gam.h:115</a></div></div>
@@ -287,6 +287,7 @@ $(document).ready(function(){initNavTree('hott__gam_8h_source.html','');});
 <div class="ttc" id="hott__gam_8h_html_ad79dbb1ff20b2de1250124ceddee7ff0"><div class="ttname"><a href="hott__gam_8h.html#ad79dbb1ff20b2de1250124ceddee7ff0">HOTT_GAM_MSG::rpm_L</a></div><div class="ttdeci">int8_t rpm_L</div><div class="ttdef"><b>Definition:</b> <a href="hott__gam_8h_source.html#l00099">hott_gam.h:99</a></div></div>
 <div class="ttc" id="hott__gam_8h_html_ae3e90761c8956daff735f64534ddf3ad"><div class="ttname"><a href="hott__gam_8h.html#ae3e90761c8956daff735f64534ddf3ad">HOTT_GAM_MSG::speed_L</a></div><div class="ttdeci">int8_t speed_L</div><div class="ttdef"><b>Definition:</b> <a href="hott__gam_8h_source.html#l00112">hott_gam.h:112</a></div></div>
 <div class="ttc" id="hott__gam_8h_html_a8b60be3f3c06a394281ffd4ae32121a1"><div class="ttname"><a href="hott__gam_8h.html#a8b60be3f3c06a394281ffd4ae32121a1">HOTT_GAM_MSG::rpm2_L</a></div><div class="ttdeci">int8_t rpm2_L</div><div class="ttdef"><b>Definition:</b> <a href="hott__gam_8h_source.html#l00116">hott_gam.h:116</a></div></div>
+<div class="ttc" id="autopilot_8h_html"><div class="ttname"><a href="autopilot_8h.html">autopilot.h</a></div><div class="ttdoc">Core autopilot interface common to all firmwares. </div></div>
 <div class="ttc" id="hott__gam_8h_html_ad3e5dac35c2dd832eef43377906a3ee1"><div class="ttname"><a href="hott__gam_8h.html#ad3e5dac35c2dd832eef43377906a3ee1">HOTT_GAM_MSG::sensor_id</a></div><div class="ttdeci">int8_t sensor_id</div><div class="ttdef"><b>Definition:</b> <a href="hott__gam_8h_source.html#l00061">hott_gam.h:61</a></div></div>
 <div class="ttc" id="hott__gam_8h_html_a9c19628a3f8cb36353210989d2ca6be9"><div class="ttname"><a href="hott__gam_8h.html#a9c19628a3f8cb36353210989d2ca6be9">HOTT_GAM_MSG::min_cell_volt</a></div><div class="ttdeci">int8_t min_cell_volt</div><div class="ttdef"><b>Definition:</b> <a href="hott__gam_8h_source.html#l00114">hott_gam.h:114</a></div></div>
 <div class="ttc" id="hott__gam_8h_html_a628de8202cae5b484af1cbe3f7280a28"><div class="ttname"><a href="hott__gam_8h.html#a628de8202cae5b484af1cbe3f7280a28">HOTT_GAM_MSG::rpm_H</a></div><div class="ttdeci">int8_t rpm_H</div><div class="ttdef"><b>Definition:</b> <a href="hott__gam_8h_source.html#l00100">hott_gam.h:100</a></div></div>
@@ -315,7 +316,7 @@ $(document).ready(function(){initNavTree('hott__gam_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_e036258a99ba9172525cede17bed32d4.html">hott</a></li><li class="navelem"><a class="el" href="hott__gam_8h.html">hott_gam.h</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:01:24 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:01:41 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -1,7 +1,10 @@
 var searchData=
 [
+  ['laser_5frange_5farray_20module',['laser_range_array module',['../module__laser_range_array.html',1,'onboard_modules']]],
   ['lcd_5fdogm_20module',['lcd_dogm module',['../module__lcd_dogm.html',1,'onboard_modules']]],
   ['led_5fsafety_5fstatus_20module',['led_safety_status module',['../module__led_safety_status.html',1,'onboard_modules']]],
+  ['lidar_5flite_20module',['lidar_lite module',['../module__lidar_lite.html',1,'onboard_modules']]],
+  ['lidar_5fsf11_20module',['lidar_sf11 module',['../module__lidar_sf11.html',1,'onboard_modules']]],
   ['light_20module',['light module',['../module__light.html',1,'onboard_modules']]],
   ['light_5fsolar_20module',['light_solar module',['../module__light_solar.html',1,'onboard_modules']]],
   ['light_5ftemt_20module',['light_temt module',['../module__light_temt.html',1,'onboard_modules']]],

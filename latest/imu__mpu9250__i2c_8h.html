@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -140,43 +140,45 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ad08f71586fceaa57ea361681bb6543b7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__mpu9250__i2c_8h.html#ad08f71586fceaa57ea361681bb6543b7">IMU_GYRO_P_SENS</a>&#160;&#160;&#160;2.17953</td></tr>
-<tr class="memdesc:ad08f71586fceaa57ea361681bb6543b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">default gyro sensitivy and neutral from the datasheet MPU with 1000 deg/s has 32.8 LSB/(deg/s) sens = 1/32.8 * pi/180 * 2^INT32_RATE_FRAC sens = 1/32.8 * pi/180 * 4096 = 2.17953 I  <a href="#ad08f71586fceaa57ea361681bb6543b7">More...</a><br /></td></tr>
+<tr class="memitem:ae8ae2399802e067989db8cb63a543ba2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__mpu9250__i2c_8h.html#ae8ae2399802e067989db8cb63a543ba2">IMU_MPU9250_GYRO_RANGE</a>&#160;&#160;&#160;<a class="el" href="mpu9250__regs_8h.html#a3a2e93ff1aeb835f389cca96026f93bea4b6906bab48c905716509eb0fc88a9f0">MPU9250_GYRO_RANGE_1000</a></td></tr>
+<tr class="separator:ae8ae2399802e067989db8cb63a543ba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90aacc40f0d502a3eec9543a11ab7097"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__mpu9250__i2c_8h.html#a90aacc40f0d502a3eec9543a11ab7097">IMU_MPU9250_ACCEL_RANGE</a>&#160;&#160;&#160;<a class="el" href="mpu9250__regs_8h.html#a8c42d537c7844b3e093c7bc92414373ea9fb01218a438a445081336ea7496da89">MPU9250_ACCEL_RANGE_8G</a></td></tr>
+<tr class="separator:a90aacc40f0d502a3eec9543a11ab7097"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad08f71586fceaa57ea361681bb6543b7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__mpu9250__i2c_8h.html#ad08f71586fceaa57ea361681bb6543b7">IMU_GYRO_P_SENS</a>&#160;&#160;&#160;<a class="el" href="mpu9250_8h.html#a67ca0e1d73649dcfa1efd8fe39737400">MPU9250_GYRO_SENS</a>[<a class="el" href="imu__mpu9250__spi_8h.html#ae8ae2399802e067989db8cb63a543ba2">IMU_MPU9250_GYRO_RANGE</a>]</td></tr>
 <tr class="separator:ad08f71586fceaa57ea361681bb6543b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa59c24839f4a36f23c98da339dea1224"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__mpu9250__i2c_8h.html#aa59c24839f4a36f23c98da339dea1224">IMU_GYRO_P_SENS_NUM</a>&#160;&#160;&#160;18271</td></tr>
+<tr class="memitem:aa59c24839f4a36f23c98da339dea1224"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__mpu9250__i2c_8h.html#aa59c24839f4a36f23c98da339dea1224">IMU_GYRO_P_SENS_NUM</a>&#160;&#160;&#160;<a class="el" href="mpu9250_8h.html#aad87c96ac74a96fe8d27ddb025b47751">MPU9250_GYRO_SENS_FRAC</a>[<a class="el" href="imu__mpu9250__spi_8h.html#ae8ae2399802e067989db8cb63a543ba2">IMU_MPU9250_GYRO_RANGE</a>][0]</td></tr>
 <tr class="separator:aa59c24839f4a36f23c98da339dea1224"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2644576e539bd38bf5d323809e3fd737"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__mpu9250__i2c_8h.html#a2644576e539bd38bf5d323809e3fd737">IMU_GYRO_P_SENS_DEN</a>&#160;&#160;&#160;8383</td></tr>
+<tr class="memitem:a2644576e539bd38bf5d323809e3fd737"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__mpu9250__i2c_8h.html#a2644576e539bd38bf5d323809e3fd737">IMU_GYRO_P_SENS_DEN</a>&#160;&#160;&#160;<a class="el" href="mpu9250_8h.html#aad87c96ac74a96fe8d27ddb025b47751">MPU9250_GYRO_SENS_FRAC</a>[<a class="el" href="imu__mpu9250__spi_8h.html#ae8ae2399802e067989db8cb63a543ba2">IMU_MPU9250_GYRO_RANGE</a>][1]</td></tr>
 <tr class="separator:a2644576e539bd38bf5d323809e3fd737"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ed19364e701726bf4eb06eea5da9acf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__mpu9250__i2c_8h.html#a5ed19364e701726bf4eb06eea5da9acf">IMU_GYRO_Q_SENS</a>&#160;&#160;&#160;2.17953</td></tr>
+<tr class="memitem:a5ed19364e701726bf4eb06eea5da9acf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__mpu9250__i2c_8h.html#a5ed19364e701726bf4eb06eea5da9acf">IMU_GYRO_Q_SENS</a>&#160;&#160;&#160;<a class="el" href="mpu9250_8h.html#a67ca0e1d73649dcfa1efd8fe39737400">MPU9250_GYRO_SENS</a>[<a class="el" href="imu__mpu9250__spi_8h.html#ae8ae2399802e067989db8cb63a543ba2">IMU_MPU9250_GYRO_RANGE</a>]</td></tr>
 <tr class="separator:a5ed19364e701726bf4eb06eea5da9acf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c4d85605fa8be77fbc356b66c19f509"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__mpu9250__i2c_8h.html#a3c4d85605fa8be77fbc356b66c19f509">IMU_GYRO_Q_SENS_NUM</a>&#160;&#160;&#160;18271</td></tr>
+<tr class="memitem:a3c4d85605fa8be77fbc356b66c19f509"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__mpu9250__i2c_8h.html#a3c4d85605fa8be77fbc356b66c19f509">IMU_GYRO_Q_SENS_NUM</a>&#160;&#160;&#160;<a class="el" href="mpu9250_8h.html#aad87c96ac74a96fe8d27ddb025b47751">MPU9250_GYRO_SENS_FRAC</a>[<a class="el" href="imu__mpu9250__spi_8h.html#ae8ae2399802e067989db8cb63a543ba2">IMU_MPU9250_GYRO_RANGE</a>][0]</td></tr>
 <tr class="separator:a3c4d85605fa8be77fbc356b66c19f509"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa4f4a11cc02f0d8aef1e8d97a15746f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__mpu9250__i2c_8h.html#aaa4f4a11cc02f0d8aef1e8d97a15746f">IMU_GYRO_Q_SENS_DEN</a>&#160;&#160;&#160;8383</td></tr>
+<tr class="memitem:aaa4f4a11cc02f0d8aef1e8d97a15746f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__mpu9250__i2c_8h.html#aaa4f4a11cc02f0d8aef1e8d97a15746f">IMU_GYRO_Q_SENS_DEN</a>&#160;&#160;&#160;<a class="el" href="mpu9250_8h.html#aad87c96ac74a96fe8d27ddb025b47751">MPU9250_GYRO_SENS_FRAC</a>[<a class="el" href="imu__mpu9250__spi_8h.html#ae8ae2399802e067989db8cb63a543ba2">IMU_MPU9250_GYRO_RANGE</a>][1]</td></tr>
 <tr class="separator:aaa4f4a11cc02f0d8aef1e8d97a15746f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af57decce9e96b0726832a410273223f3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__mpu9250__i2c_8h.html#af57decce9e96b0726832a410273223f3">IMU_GYRO_R_SENS</a>&#160;&#160;&#160;2.17953</td></tr>
+<tr class="memitem:af57decce9e96b0726832a410273223f3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__mpu9250__i2c_8h.html#af57decce9e96b0726832a410273223f3">IMU_GYRO_R_SENS</a>&#160;&#160;&#160;<a class="el" href="mpu9250_8h.html#a67ca0e1d73649dcfa1efd8fe39737400">MPU9250_GYRO_SENS</a>[<a class="el" href="imu__mpu9250__spi_8h.html#ae8ae2399802e067989db8cb63a543ba2">IMU_MPU9250_GYRO_RANGE</a>]</td></tr>
 <tr class="separator:af57decce9e96b0726832a410273223f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f808c71190e714287442af3bb7008b3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__mpu9250__i2c_8h.html#a6f808c71190e714287442af3bb7008b3">IMU_GYRO_R_SENS_NUM</a>&#160;&#160;&#160;18271</td></tr>
+<tr class="memitem:a6f808c71190e714287442af3bb7008b3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__mpu9250__i2c_8h.html#a6f808c71190e714287442af3bb7008b3">IMU_GYRO_R_SENS_NUM</a>&#160;&#160;&#160;<a class="el" href="mpu9250_8h.html#aad87c96ac74a96fe8d27ddb025b47751">MPU9250_GYRO_SENS_FRAC</a>[<a class="el" href="imu__mpu9250__spi_8h.html#ae8ae2399802e067989db8cb63a543ba2">IMU_MPU9250_GYRO_RANGE</a>][0]</td></tr>
 <tr class="separator:a6f808c71190e714287442af3bb7008b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aecb2f43265d239ba7661dfcc8523123e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__mpu9250__i2c_8h.html#aecb2f43265d239ba7661dfcc8523123e">IMU_GYRO_R_SENS_DEN</a>&#160;&#160;&#160;8383</td></tr>
+<tr class="memitem:aecb2f43265d239ba7661dfcc8523123e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__mpu9250__i2c_8h.html#aecb2f43265d239ba7661dfcc8523123e">IMU_GYRO_R_SENS_DEN</a>&#160;&#160;&#160;<a class="el" href="mpu9250_8h.html#aad87c96ac74a96fe8d27ddb025b47751">MPU9250_GYRO_SENS_FRAC</a>[<a class="el" href="imu__mpu9250__spi_8h.html#ae8ae2399802e067989db8cb63a543ba2">IMU_MPU9250_GYRO_RANGE</a>][1]</td></tr>
 <tr class="separator:aecb2f43265d239ba7661dfcc8523123e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ac88fc00cde506229b92c6a1e2c3122"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__mpu9250__i2c_8h.html#a8ac88fc00cde506229b92c6a1e2c3122">IMU_ACCEL_X_SENS</a>&#160;&#160;&#160;2.4525</td></tr>
-<tr class="memdesc:a8ac88fc00cde506229b92c6a1e2c3122"><td class="mdescLeft">&#160;</td><td class="mdescRight">default accel sensitivy from the datasheet MPU with 8g has 4096 LSB/g sens = 9.81 [m/s^2] / 4096 [LSB/g] * 2^INT32_ACCEL_FRAC = 2.4525  <a href="#a8ac88fc00cde506229b92c6a1e2c3122">More...</a><br /></td></tr>
+<tr class="memitem:a8ac88fc00cde506229b92c6a1e2c3122"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__mpu9250__i2c_8h.html#a8ac88fc00cde506229b92c6a1e2c3122">IMU_ACCEL_X_SENS</a>&#160;&#160;&#160;<a class="el" href="mpu9250_8h.html#a9fa3719b5d2ad4f0c9dcf6f7fd005cab">MPU9250_ACCEL_SENS</a>[<a class="el" href="imu__mpu9250__spi_8h.html#a90aacc40f0d502a3eec9543a11ab7097">IMU_MPU9250_ACCEL_RANGE</a>]</td></tr>
 <tr class="separator:a8ac88fc00cde506229b92c6a1e2c3122"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada91099469f16df2d8aeafa82d365c4b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__mpu9250__i2c_8h.html#ada91099469f16df2d8aeafa82d365c4b">IMU_ACCEL_X_SENS_NUM</a>&#160;&#160;&#160;981</td></tr>
+<tr class="memitem:ada91099469f16df2d8aeafa82d365c4b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__mpu9250__i2c_8h.html#ada91099469f16df2d8aeafa82d365c4b">IMU_ACCEL_X_SENS_NUM</a>&#160;&#160;&#160;<a class="el" href="mpu9250_8h.html#a4baa1f9b32c4c697569e3260103dd43b">MPU9250_ACCEL_SENS_FRAC</a>[<a class="el" href="imu__mpu9250__spi_8h.html#a90aacc40f0d502a3eec9543a11ab7097">IMU_MPU9250_ACCEL_RANGE</a>][0]</td></tr>
 <tr class="separator:ada91099469f16df2d8aeafa82d365c4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8acf299c1bfb2daa92b1894556ca50ad"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__mpu9250__i2c_8h.html#a8acf299c1bfb2daa92b1894556ca50ad">IMU_ACCEL_X_SENS_DEN</a>&#160;&#160;&#160;400</td></tr>
+<tr class="memitem:a8acf299c1bfb2daa92b1894556ca50ad"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__mpu9250__i2c_8h.html#a8acf299c1bfb2daa92b1894556ca50ad">IMU_ACCEL_X_SENS_DEN</a>&#160;&#160;&#160;<a class="el" href="mpu9250_8h.html#a4baa1f9b32c4c697569e3260103dd43b">MPU9250_ACCEL_SENS_FRAC</a>[<a class="el" href="imu__mpu9250__spi_8h.html#a90aacc40f0d502a3eec9543a11ab7097">IMU_MPU9250_ACCEL_RANGE</a>][1]</td></tr>
 <tr class="separator:a8acf299c1bfb2daa92b1894556ca50ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3bb03278fbd9117e876b24e1b78a61c5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__mpu9250__i2c_8h.html#a3bb03278fbd9117e876b24e1b78a61c5">IMU_ACCEL_Y_SENS</a>&#160;&#160;&#160;2.4525</td></tr>
+<tr class="memitem:a3bb03278fbd9117e876b24e1b78a61c5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__mpu9250__i2c_8h.html#a3bb03278fbd9117e876b24e1b78a61c5">IMU_ACCEL_Y_SENS</a>&#160;&#160;&#160;<a class="el" href="mpu9250_8h.html#a9fa3719b5d2ad4f0c9dcf6f7fd005cab">MPU9250_ACCEL_SENS</a>[<a class="el" href="imu__mpu9250__spi_8h.html#a90aacc40f0d502a3eec9543a11ab7097">IMU_MPU9250_ACCEL_RANGE</a>]</td></tr>
 <tr class="separator:a3bb03278fbd9117e876b24e1b78a61c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4afc2b22683312436f746d69fc451bb1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__mpu9250__i2c_8h.html#a4afc2b22683312436f746d69fc451bb1">IMU_ACCEL_Y_SENS_NUM</a>&#160;&#160;&#160;981</td></tr>
+<tr class="memitem:a4afc2b22683312436f746d69fc451bb1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__mpu9250__i2c_8h.html#a4afc2b22683312436f746d69fc451bb1">IMU_ACCEL_Y_SENS_NUM</a>&#160;&#160;&#160;<a class="el" href="mpu9250_8h.html#a4baa1f9b32c4c697569e3260103dd43b">MPU9250_ACCEL_SENS_FRAC</a>[<a class="el" href="imu__mpu9250__spi_8h.html#a90aacc40f0d502a3eec9543a11ab7097">IMU_MPU9250_ACCEL_RANGE</a>][0]</td></tr>
 <tr class="separator:a4afc2b22683312436f746d69fc451bb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60e8f1f35a15a535130669093e80e858"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__mpu9250__i2c_8h.html#a60e8f1f35a15a535130669093e80e858">IMU_ACCEL_Y_SENS_DEN</a>&#160;&#160;&#160;400</td></tr>
+<tr class="memitem:a60e8f1f35a15a535130669093e80e858"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__mpu9250__i2c_8h.html#a60e8f1f35a15a535130669093e80e858">IMU_ACCEL_Y_SENS_DEN</a>&#160;&#160;&#160;<a class="el" href="mpu9250_8h.html#a4baa1f9b32c4c697569e3260103dd43b">MPU9250_ACCEL_SENS_FRAC</a>[<a class="el" href="imu__mpu9250__spi_8h.html#a90aacc40f0d502a3eec9543a11ab7097">IMU_MPU9250_ACCEL_RANGE</a>][1]</td></tr>
 <tr class="separator:a60e8f1f35a15a535130669093e80e858"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad48a5b859139ea2355c40f5abf5aa8aa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__mpu9250__i2c_8h.html#ad48a5b859139ea2355c40f5abf5aa8aa">IMU_ACCEL_Z_SENS</a>&#160;&#160;&#160;2.4525</td></tr>
+<tr class="memitem:ad48a5b859139ea2355c40f5abf5aa8aa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__mpu9250__i2c_8h.html#ad48a5b859139ea2355c40f5abf5aa8aa">IMU_ACCEL_Z_SENS</a>&#160;&#160;&#160;<a class="el" href="mpu9250_8h.html#a9fa3719b5d2ad4f0c9dcf6f7fd005cab">MPU9250_ACCEL_SENS</a>[<a class="el" href="imu__mpu9250__spi_8h.html#a90aacc40f0d502a3eec9543a11ab7097">IMU_MPU9250_ACCEL_RANGE</a>]</td></tr>
 <tr class="separator:ad48a5b859139ea2355c40f5abf5aa8aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd17b3bbedb8e03a9a4f27d21b8d507e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__mpu9250__i2c_8h.html#afd17b3bbedb8e03a9a4f27d21b8d507e">IMU_ACCEL_Z_SENS_NUM</a>&#160;&#160;&#160;981</td></tr>
+<tr class="memitem:afd17b3bbedb8e03a9a4f27d21b8d507e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__mpu9250__i2c_8h.html#afd17b3bbedb8e03a9a4f27d21b8d507e">IMU_ACCEL_Z_SENS_NUM</a>&#160;&#160;&#160;<a class="el" href="mpu9250_8h.html#a4baa1f9b32c4c697569e3260103dd43b">MPU9250_ACCEL_SENS_FRAC</a>[<a class="el" href="imu__mpu9250__spi_8h.html#a90aacc40f0d502a3eec9543a11ab7097">IMU_MPU9250_ACCEL_RANGE</a>][0]</td></tr>
 <tr class="separator:afd17b3bbedb8e03a9a4f27d21b8d507e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae62fbd99f815974f80f911bfa1b1d514"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__mpu9250__i2c_8h.html#ae62fbd99f815974f80f911bfa1b1d514">IMU_ACCEL_Z_SENS_DEN</a>&#160;&#160;&#160;400</td></tr>
+<tr class="memitem:ae62fbd99f815974f80f911bfa1b1d514"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imu__mpu9250__i2c_8h.html#ae62fbd99f815974f80f911bfa1b1d514">IMU_ACCEL_Z_SENS_DEN</a>&#160;&#160;&#160;<a class="el" href="mpu9250_8h.html#a4baa1f9b32c4c697569e3260103dd43b">MPU9250_ACCEL_SENS_FRAC</a>[<a class="el" href="imu__mpu9250__spi_8h.html#a90aacc40f0d502a3eec9543a11ab7097">IMU_MPU9250_ACCEL_RANGE</a>][1]</td></tr>
 <tr class="separator:ae62fbd99f815974f80f911bfa1b1d514"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -208,7 +210,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p>Definition at line <a class="el" href="imu__mpu9250__i2c_8h_source.html#l00074">74</a> of file <a class="el" href="imu__mpu9250__i2c_8h_source.html">imu_mpu9250_i2c.h</a>.</p>
+<p>Definition at line <a class="el" href="imu__mpu9250__i2c_8h_source.html#l00073">73</a> of file <a class="el" href="imu__mpu9250__i2c_8h_source.html">imu_mpu9250_i2c.h</a>.</p>
 </div><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for ImuMpu9250:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -266,14 +268,12 @@ wait_slave4_tx_buf[1]</td>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define IMU_ACCEL_X_SENS&#160;&#160;&#160;2.4525</td>
+          <td class="memname">#define IMU_ACCEL_X_SENS&#160;&#160;&#160;<a class="el" href="mpu9250_8h.html#a9fa3719b5d2ad4f0c9dcf6f7fd005cab">MPU9250_ACCEL_SENS</a>[<a class="el" href="imu__mpu9250__spi_8h.html#a90aacc40f0d502a3eec9543a11ab7097">IMU_MPU9250_ACCEL_RANGE</a>]</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>default accel sensitivy from the datasheet MPU with 8g has 4096 LSB/g sens = 9.81 [m/s^2] / 4096 [LSB/g] * 2^INT32_ACCEL_FRAC = 2.4525 </p>
-
-<p>Definition at line <a class="el" href="imu__mpu9250__i2c_8h_source.html#l00062">62</a> of file <a class="el" href="imu__mpu9250__i2c_8h_source.html">imu_mpu9250_i2c.h</a>.</p>
+<p>Definition at line <a class="el" href="imu__mpu9250__i2c_8h_source.html#l00061">61</a> of file <a class="el" href="imu__mpu9250__i2c_8h_source.html">imu_mpu9250_i2c.h</a>.</p>
 
 </div>
 </div>
@@ -282,21 +282,7 @@ wait_slave4_tx_buf[1]</td>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define IMU_ACCEL_X_SENS_DEN&#160;&#160;&#160;400</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="imu__mpu9250__i2c_8h_source.html#l00064">64</a> of file <a class="el" href="imu__mpu9250__i2c_8h_source.html">imu_mpu9250_i2c.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ada91099469f16df2d8aeafa82d365c4b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMU_ACCEL_X_SENS_NUM&#160;&#160;&#160;981</td>
+          <td class="memname">#define IMU_ACCEL_X_SENS_DEN&#160;&#160;&#160;<a class="el" href="mpu9250_8h.html#a4baa1f9b32c4c697569e3260103dd43b">MPU9250_ACCEL_SENS_FRAC</a>[<a class="el" href="imu__mpu9250__spi_8h.html#a90aacc40f0d502a3eec9543a11ab7097">IMU_MPU9250_ACCEL_RANGE</a>][1]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -305,17 +291,31 @@ wait_slave4_tx_buf[1]</td>
 
 </div>
 </div>
+<a class="anchor" id="ada91099469f16df2d8aeafa82d365c4b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IMU_ACCEL_X_SENS_NUM&#160;&#160;&#160;<a class="el" href="mpu9250_8h.html#a4baa1f9b32c4c697569e3260103dd43b">MPU9250_ACCEL_SENS_FRAC</a>[<a class="el" href="imu__mpu9250__spi_8h.html#a90aacc40f0d502a3eec9543a11ab7097">IMU_MPU9250_ACCEL_RANGE</a>][0]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="imu__mpu9250__i2c_8h_source.html#l00062">62</a> of file <a class="el" href="imu__mpu9250__i2c_8h_source.html">imu_mpu9250_i2c.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a3bb03278fbd9117e876b24e1b78a61c5"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define IMU_ACCEL_Y_SENS&#160;&#160;&#160;2.4525</td>
+          <td class="memname">#define IMU_ACCEL_Y_SENS&#160;&#160;&#160;<a class="el" href="mpu9250_8h.html#a9fa3719b5d2ad4f0c9dcf6f7fd005cab">MPU9250_ACCEL_SENS</a>[<a class="el" href="imu__mpu9250__spi_8h.html#a90aacc40f0d502a3eec9543a11ab7097">IMU_MPU9250_ACCEL_RANGE</a>]</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="imu__mpu9250__i2c_8h_source.html#l00065">65</a> of file <a class="el" href="imu__mpu9250__i2c_8h_source.html">imu_mpu9250_i2c.h</a>.</p>
+<p>Definition at line <a class="el" href="imu__mpu9250__i2c_8h_source.html#l00064">64</a> of file <a class="el" href="imu__mpu9250__i2c_8h_source.html">imu_mpu9250_i2c.h</a>.</p>
 
 </div>
 </div>
@@ -324,21 +324,7 @@ wait_slave4_tx_buf[1]</td>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define IMU_ACCEL_Y_SENS_DEN&#160;&#160;&#160;400</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="imu__mpu9250__i2c_8h_source.html#l00067">67</a> of file <a class="el" href="imu__mpu9250__i2c_8h_source.html">imu_mpu9250_i2c.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a4afc2b22683312436f746d69fc451bb1"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMU_ACCEL_Y_SENS_NUM&#160;&#160;&#160;981</td>
+          <td class="memname">#define IMU_ACCEL_Y_SENS_DEN&#160;&#160;&#160;<a class="el" href="mpu9250_8h.html#a4baa1f9b32c4c697569e3260103dd43b">MPU9250_ACCEL_SENS_FRAC</a>[<a class="el" href="imu__mpu9250__spi_8h.html#a90aacc40f0d502a3eec9543a11ab7097">IMU_MPU9250_ACCEL_RANGE</a>][1]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -347,17 +333,31 @@ wait_slave4_tx_buf[1]</td>
 
 </div>
 </div>
+<a class="anchor" id="a4afc2b22683312436f746d69fc451bb1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IMU_ACCEL_Y_SENS_NUM&#160;&#160;&#160;<a class="el" href="mpu9250_8h.html#a4baa1f9b32c4c697569e3260103dd43b">MPU9250_ACCEL_SENS_FRAC</a>[<a class="el" href="imu__mpu9250__spi_8h.html#a90aacc40f0d502a3eec9543a11ab7097">IMU_MPU9250_ACCEL_RANGE</a>][0]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="imu__mpu9250__i2c_8h_source.html#l00065">65</a> of file <a class="el" href="imu__mpu9250__i2c_8h_source.html">imu_mpu9250_i2c.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ad48a5b859139ea2355c40f5abf5aa8aa"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define IMU_ACCEL_Z_SENS&#160;&#160;&#160;2.4525</td>
+          <td class="memname">#define IMU_ACCEL_Z_SENS&#160;&#160;&#160;<a class="el" href="mpu9250_8h.html#a9fa3719b5d2ad4f0c9dcf6f7fd005cab">MPU9250_ACCEL_SENS</a>[<a class="el" href="imu__mpu9250__spi_8h.html#a90aacc40f0d502a3eec9543a11ab7097">IMU_MPU9250_ACCEL_RANGE</a>]</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="imu__mpu9250__i2c_8h_source.html#l00068">68</a> of file <a class="el" href="imu__mpu9250__i2c_8h_source.html">imu_mpu9250_i2c.h</a>.</p>
+<p>Definition at line <a class="el" href="imu__mpu9250__i2c_8h_source.html#l00067">67</a> of file <a class="el" href="imu__mpu9250__i2c_8h_source.html">imu_mpu9250_i2c.h</a>.</p>
 
 </div>
 </div>
@@ -366,21 +366,7 @@ wait_slave4_tx_buf[1]</td>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define IMU_ACCEL_Z_SENS_DEN&#160;&#160;&#160;400</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="imu__mpu9250__i2c_8h_source.html#l00070">70</a> of file <a class="el" href="imu__mpu9250__i2c_8h_source.html">imu_mpu9250_i2c.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="afd17b3bbedb8e03a9a4f27d21b8d507e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMU_ACCEL_Z_SENS_NUM&#160;&#160;&#160;981</td>
+          <td class="memname">#define IMU_ACCEL_Z_SENS_DEN&#160;&#160;&#160;<a class="el" href="mpu9250_8h.html#a4baa1f9b32c4c697569e3260103dd43b">MPU9250_ACCEL_SENS_FRAC</a>[<a class="el" href="imu__mpu9250__spi_8h.html#a90aacc40f0d502a3eec9543a11ab7097">IMU_MPU9250_ACCEL_RANGE</a>][1]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -389,56 +375,26 @@ wait_slave4_tx_buf[1]</td>
 
 </div>
 </div>
+<a class="anchor" id="afd17b3bbedb8e03a9a4f27d21b8d507e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IMU_ACCEL_Z_SENS_NUM&#160;&#160;&#160;<a class="el" href="mpu9250_8h.html#a4baa1f9b32c4c697569e3260103dd43b">MPU9250_ACCEL_SENS_FRAC</a>[<a class="el" href="imu__mpu9250__spi_8h.html#a90aacc40f0d502a3eec9543a11ab7097">IMU_MPU9250_ACCEL_RANGE</a>][0]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="imu__mpu9250__i2c_8h_source.html#l00068">68</a> of file <a class="el" href="imu__mpu9250__i2c_8h_source.html">imu_mpu9250_i2c.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ad08f71586fceaa57ea361681bb6543b7"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define IMU_GYRO_P_SENS&#160;&#160;&#160;2.17953</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>default gyro sensitivy and neutral from the datasheet MPU with 1000 deg/s has 32.8 LSB/(deg/s) sens = 1/32.8 * pi/180 * 2^INT32_RATE_FRAC sens = 1/32.8 * pi/180 * 4096 = 2.17953 I </p>
-
-<p>Definition at line <a class="el" href="imu__mpu9250__i2c_8h_source.html#l00045">45</a> of file <a class="el" href="imu__mpu9250__i2c_8h_source.html">imu_mpu9250_i2c.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a2644576e539bd38bf5d323809e3fd737"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMU_GYRO_P_SENS_DEN&#160;&#160;&#160;8383</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="imu__mpu9250__i2c_8h_source.html#l00047">47</a> of file <a class="el" href="imu__mpu9250__i2c_8h_source.html">imu_mpu9250_i2c.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aa59c24839f4a36f23c98da339dea1224"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMU_GYRO_P_SENS_NUM&#160;&#160;&#160;18271</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="imu__mpu9250__i2c_8h_source.html#l00046">46</a> of file <a class="el" href="imu__mpu9250__i2c_8h_source.html">imu_mpu9250_i2c.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a5ed19364e701726bf4eb06eea5da9acf"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IMU_GYRO_Q_SENS&#160;&#160;&#160;2.17953</td>
+          <td class="memname">#define IMU_GYRO_P_SENS&#160;&#160;&#160;<a class="el" href="mpu9250_8h.html#a67ca0e1d73649dcfa1efd8fe39737400">MPU9250_GYRO_SENS</a>[<a class="el" href="imu__mpu9250__spi_8h.html#ae8ae2399802e067989db8cb63a543ba2">IMU_MPU9250_GYRO_RANGE</a>]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -447,12 +403,12 @@ wait_slave4_tx_buf[1]</td>
 
 </div>
 </div>
-<a class="anchor" id="aaa4f4a11cc02f0d8aef1e8d97a15746f"></a>
+<a class="anchor" id="a2644576e539bd38bf5d323809e3fd737"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define IMU_GYRO_Q_SENS_DEN&#160;&#160;&#160;8383</td>
+          <td class="memname">#define IMU_GYRO_P_SENS_DEN&#160;&#160;&#160;<a class="el" href="mpu9250_8h.html#aad87c96ac74a96fe8d27ddb025b47751">MPU9250_GYRO_SENS_FRAC</a>[<a class="el" href="imu__mpu9250__spi_8h.html#ae8ae2399802e067989db8cb63a543ba2">IMU_MPU9250_GYRO_RANGE</a>][1]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -461,12 +417,12 @@ wait_slave4_tx_buf[1]</td>
 
 </div>
 </div>
-<a class="anchor" id="a3c4d85605fa8be77fbc356b66c19f509"></a>
+<a class="anchor" id="aa59c24839f4a36f23c98da339dea1224"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define IMU_GYRO_Q_SENS_NUM&#160;&#160;&#160;18271</td>
+          <td class="memname">#define IMU_GYRO_P_SENS_NUM&#160;&#160;&#160;<a class="el" href="mpu9250_8h.html#aad87c96ac74a96fe8d27ddb025b47751">MPU9250_GYRO_SENS_FRAC</a>[<a class="el" href="imu__mpu9250__spi_8h.html#ae8ae2399802e067989db8cb63a543ba2">IMU_MPU9250_GYRO_RANGE</a>][0]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -475,12 +431,12 @@ wait_slave4_tx_buf[1]</td>
 
 </div>
 </div>
-<a class="anchor" id="af57decce9e96b0726832a410273223f3"></a>
+<a class="anchor" id="a5ed19364e701726bf4eb06eea5da9acf"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define IMU_GYRO_R_SENS&#160;&#160;&#160;2.17953</td>
+          <td class="memname">#define IMU_GYRO_Q_SENS&#160;&#160;&#160;<a class="el" href="mpu9250_8h.html#a67ca0e1d73649dcfa1efd8fe39737400">MPU9250_GYRO_SENS</a>[<a class="el" href="imu__mpu9250__spi_8h.html#ae8ae2399802e067989db8cb63a543ba2">IMU_MPU9250_GYRO_RANGE</a>]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -489,12 +445,12 @@ wait_slave4_tx_buf[1]</td>
 
 </div>
 </div>
-<a class="anchor" id="aecb2f43265d239ba7661dfcc8523123e"></a>
+<a class="anchor" id="aaa4f4a11cc02f0d8aef1e8d97a15746f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define IMU_GYRO_R_SENS_DEN&#160;&#160;&#160;8383</td>
+          <td class="memname">#define IMU_GYRO_Q_SENS_DEN&#160;&#160;&#160;<a class="el" href="mpu9250_8h.html#aad87c96ac74a96fe8d27ddb025b47751">MPU9250_GYRO_SENS_FRAC</a>[<a class="el" href="imu__mpu9250__spi_8h.html#ae8ae2399802e067989db8cb63a543ba2">IMU_MPU9250_GYRO_RANGE</a>][1]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -503,17 +459,91 @@ wait_slave4_tx_buf[1]</td>
 
 </div>
 </div>
-<a class="anchor" id="a6f808c71190e714287442af3bb7008b3"></a>
+<a class="anchor" id="a3c4d85605fa8be77fbc356b66c19f509"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define IMU_GYRO_R_SENS_NUM&#160;&#160;&#160;18271</td>
+          <td class="memname">#define IMU_GYRO_Q_SENS_NUM&#160;&#160;&#160;<a class="el" href="mpu9250_8h.html#aad87c96ac74a96fe8d27ddb025b47751">MPU9250_GYRO_SENS_FRAC</a>[<a class="el" href="imu__mpu9250__spi_8h.html#ae8ae2399802e067989db8cb63a543ba2">IMU_MPU9250_GYRO_RANGE</a>][0]</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="imu__mpu9250__i2c_8h_source.html#l00052">52</a> of file <a class="el" href="imu__mpu9250__i2c_8h_source.html">imu_mpu9250_i2c.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af57decce9e96b0726832a410273223f3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IMU_GYRO_R_SENS&#160;&#160;&#160;<a class="el" href="mpu9250_8h.html#a67ca0e1d73649dcfa1efd8fe39737400">MPU9250_GYRO_SENS</a>[<a class="el" href="imu__mpu9250__spi_8h.html#ae8ae2399802e067989db8cb63a543ba2">IMU_MPU9250_GYRO_RANGE</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="imu__mpu9250__i2c_8h_source.html#l00054">54</a> of file <a class="el" href="imu__mpu9250__i2c_8h_source.html">imu_mpu9250_i2c.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aecb2f43265d239ba7661dfcc8523123e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IMU_GYRO_R_SENS_DEN&#160;&#160;&#160;<a class="el" href="mpu9250_8h.html#aad87c96ac74a96fe8d27ddb025b47751">MPU9250_GYRO_SENS_FRAC</a>[<a class="el" href="imu__mpu9250__spi_8h.html#ae8ae2399802e067989db8cb63a543ba2">IMU_MPU9250_GYRO_RANGE</a>][1]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="imu__mpu9250__i2c_8h_source.html#l00056">56</a> of file <a class="el" href="imu__mpu9250__i2c_8h_source.html">imu_mpu9250_i2c.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6f808c71190e714287442af3bb7008b3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IMU_GYRO_R_SENS_NUM&#160;&#160;&#160;<a class="el" href="mpu9250_8h.html#aad87c96ac74a96fe8d27ddb025b47751">MPU9250_GYRO_SENS_FRAC</a>[<a class="el" href="imu__mpu9250__spi_8h.html#ae8ae2399802e067989db8cb63a543ba2">IMU_MPU9250_GYRO_RANGE</a>][0]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="imu__mpu9250__i2c_8h_source.html#l00055">55</a> of file <a class="el" href="imu__mpu9250__i2c_8h_source.html">imu_mpu9250_i2c.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a90aacc40f0d502a3eec9543a11ab7097"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IMU_MPU9250_ACCEL_RANGE&#160;&#160;&#160;<a class="el" href="mpu9250__regs_8h.html#a8c42d537c7844b3e093c7bc92414373ea9fb01218a438a445081336ea7496da89">MPU9250_ACCEL_RANGE_8G</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="imu__mpu9250__i2c_8h_source.html#l00043">43</a> of file <a class="el" href="imu__mpu9250__i2c_8h_source.html">imu_mpu9250_i2c.h</a>.</p>
+
+<p>Referenced by <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00102">imu_mpu9250_init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae8ae2399802e067989db8cb63a543ba2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IMU_MPU9250_GYRO_RANGE&#160;&#160;&#160;<a class="el" href="mpu9250__regs_8h.html#a3a2e93ff1aeb835f389cca96026f93bea4b6906bab48c905716509eb0fc88a9f0">MPU9250_GYRO_RANGE_1000</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="imu__mpu9250__i2c_8h_source.html#l00039">39</a> of file <a class="el" href="imu__mpu9250__i2c_8h_source.html">imu_mpu9250_i2c.h</a>.</p>
+
+<p>Referenced by <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00102">imu_mpu9250_init()</a>.</p>
 
 </div>
 </div>
@@ -583,7 +613,7 @@ wait_slave4_tx_buf[1]</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00094">94</a> of file <a class="el" href="imu__mpu9250__i2c_8c_source.html">imu_mpu9250_i2c.c</a>.</p>
+<p>Definition at line <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00100">100</a> of file <a class="el" href="imu__mpu9250__i2c_8c_source.html">imu_mpu9250_i2c.c</a>.</p>
 
 </div>
 </div>
@@ -593,7 +623,7 @@ wait_slave4_tx_buf[1]</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_8b2fa0708e2db44c1b91938af97bac44.html">imu</a></li><li class="navelem"><a class="el" href="imu__mpu9250__i2c_8h.html">imu_mpu9250_i2c.h</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:02:13 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:02:41 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

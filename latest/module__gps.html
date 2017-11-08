@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -109,8 +109,9 @@ $(document).ready(function(){initNavTree('module__gps.html','');});
 <h1><a class="anchor" id="module_load_example__gps"></a>
 Example for airframe file</h1>
 <p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;module name=&quot;gps&quot;&gt;</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;  &lt;configure name=&quot;GPS_LED&quot; value=&quot;2&quot; /&gt;</div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;&lt;/module&gt;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;  &lt;define name=&quot;GPS_POS_BROADCAST&quot; value=&quot;FALSE|TRUE&quot; /&gt;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;  &lt;configure name=&quot;GPS_LED&quot; value=&quot;2&quot; /&gt;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;&lt;/module&gt;</div>
 </div><!-- fragment --> <h1><a class="anchor" id="configuration__gps"></a>
 Module configuration options</h1>
 <h2><a class="anchor" id="configure"></a>
@@ -118,6 +119,12 @@ Configure Options</h2>
 <ul>
 <li><b>name:</b> <code>GPS_LED</code> <b>value:</b> <em>2</em> <br />
  Description: LED number to indicate fix or none</li>
+</ul>
+<h2><a class="anchor" id="define"></a>
+Define Options</h2>
+<ul>
+<li><b>name:</b> <code>GPS_POS_BROADCAST</code> <b>value:</b> <em>FALSE|TRUE</em> <br />
+ Description: Broadcast GPS position instead of sending it to the ground station only. This requires to use PPRZLINK version 2 and a capable modem</li>
 </ul>
 <h1><a class="anchor" id="functions__gps"></a>
 Module functions</h1>
@@ -152,6 +159,7 @@ Raw gps.xml file:</h2>
 <div class="line">      Still requires at least one module providing the actual GPS implementation.</div>
 <div class="line">    &lt;/description&gt;</div>
 <div class="line">    &lt;configure name=&quot;GPS_LED&quot; value=&quot;2&quot; description=&quot;LED number to indicate fix or none&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;GPS_POS_BROADCAST&quot; value=&quot;FALSE|TRUE&quot; description=&quot;Broadcast GPS position instead of sending it to the ground station only. This requires to use PPRZLINK version 2 and a capable modem&quot;/&gt;</div>
 <div class="line">  &lt;/doc&gt;</div>
 <div class="line"></div>
 <div class="line">  &lt;settings&gt;</div>
@@ -186,7 +194,7 @@ Raw gps.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:02:17 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:02:48 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -110,7 +110,8 @@ Example for airframe file</h1>
 <p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;module name=&quot;video_thread&quot;/&gt;</div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;&lt;module name=&quot;cv_colorfilter&quot;&gt;</div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;  &lt;define name=&quot;COLORFILTER_CAMERA&quot; value=&quot;front_camera|bottom_camera&quot; /&gt;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;&lt;/module&gt;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;  &lt;define name=&quot;COLORFILTER_FPS&quot; value=&quot;0&quot; /&gt;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;&lt;/module&gt;</div>
 </div><!-- fragment --> <h1><a class="anchor" id="configuration__cv_colorfilter"></a>
 Module configuration options</h1>
 <h2><a class="anchor" id="define"></a>
@@ -118,6 +119,8 @@ Define Options</h2>
 <ul>
 <li><b>name:</b> <code>COLORFILTER_CAMERA</code> <b>value:</b> <em>front_camera|bottom_camera</em> <br />
  Description: Video device to use</li>
+<li><b>name:</b> <code>COLORFILTER_FPS</code> <b>value:</b> <em>0</em> <br />
+ Description: The (maximum) frequency to run the calculations at. If zero, it will max out at the camera frame rate</li>
 </ul>
 <h1><a class="anchor" id="dependencies__cv_colorfilter"></a>
 Dependencies</h1>
@@ -153,6 +156,7 @@ Raw cv_colorfilter.xml file:</h2>
 <div class="line">  &lt;doc&gt;</div>
 <div class="line">    &lt;description&gt;ColorFilter&lt;/description&gt;</div>
 <div class="line">    &lt;define name=&quot;COLORFILTER_CAMERA&quot; value=&quot;front_camera|bottom_camera&quot; description=&quot;Video device to use&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;COLORFILTER_FPS&quot; value=&quot;0&quot; description=&quot;The (maximum) frequency to run the calculations at. If zero, it will max out at the camera frame rate&quot;/&gt;</div>
 <div class="line">  &lt;/doc&gt;</div>
 <div class="line"></div>
 <div class="line">  &lt;settings&gt;</div>
@@ -176,7 +180,7 @@ Raw cv_colorfilter.xml file:</h2>
 <div class="line">  &lt;/header&gt;</div>
 <div class="line"></div>
 <div class="line">  &lt;init fun=&quot;colorfilter_init()&quot;/&gt;</div>
-<div class="line">  &lt;makefile target=&quot;ap&quot;&gt;</div>
+<div class="line">  &lt;makefile target=&quot;ap|nps&quot;&gt;</div>
 <div class="line">    &lt;file name=&quot;colorfilter.c&quot;/&gt;</div>
 <div class="line">  &lt;/makefile&gt;</div>
 <div class="line">&lt;/module&gt;</div>
@@ -187,7 +191,7 @@ Raw cv_colorfilter.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:02:19 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:02:49 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

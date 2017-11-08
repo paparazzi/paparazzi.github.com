@@ -16,6 +16,8 @@ var dir_cbf4be70f5fb954ea1d2a546dd70b40e =
     [ "logger_uart_parse.py", "logger__uart__parse_8py.html", null ],
     [ "openlog.c", "openlog_8c.html", "openlog_8c" ],
     [ "openlog.h", "openlog_8h.html", "openlog_8h" ],
+    [ "pprzlog_tp.c", "pprzlog__tp_8c.html", "pprzlog__tp_8c" ],
+    [ "pprzlog_tp.h", "pprzlog__tp_8h.html", "pprzlog__tp_8h" ],
     [ "sdlog_chibios.c", "sdlog__chibios_8c.html", "sdlog__chibios_8c" ],
     [ "sdlog_chibios.h", "sdlog__chibios_8h.html", "sdlog__chibios_8h" ],
     [ "sdlogger_spi_direct.c", "sdlogger__spi__direct_8c.html", "sdlogger__spi__direct_8c" ],

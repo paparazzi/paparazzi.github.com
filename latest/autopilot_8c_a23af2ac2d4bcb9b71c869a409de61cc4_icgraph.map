@@ -1,0 +1,51 @@
+<map id="autopilot_get_mode" name="autopilot_get_mode">
+<area shape="rect" id="node2" href="$fixedwing_2autopilot__static_8h.html#a315546d9034361bbc6970b3792dc8b67" title="attitude_loop" alt="" coords="745,1007,851,1034"/>
+<area shape="rect" id="node6" href="$autopilot__arming__switch_8h.html#abbbe9ccad851ff6d7ef88e298059b6ce" title="State machine to check if motors should be turned ON or OFF using the kill switch. " alt="" coords="214,71,389,112"/>
+<area shape="rect" id="node9" href="$autopilot__arming__switch_8h.html#a644c6a09c2081595c4dbc608fd7ed163" title="autopilot_arming_set" alt="" coords="223,209,380,235"/>
+<area shape="rect" id="node12" href="$autopilot__guided_8h.html#acb5ff8d624f7583075e58303f46b9890" title="Set position and heading setpoints wrt. " alt="" coords="466,384,630,425"/>
+<area shape="rect" id="node13" href="$mavlink_8c.html#a92b02fdeb899791573ef52506deb653c" title="mavlink_common_message\l_handler" alt="" coords="697,384,899,425"/>
+<area shape="rect" id="node15" href="$autopilot__guided_8h.html#ae4f59fae723f5116a979c7c5b923c180" title="Set position and heading setpoints in GUIDED mode. " alt="" coords="204,339,399,366"/>
+<area shape="rect" id="node16" href="$autopilot__guided_8h.html#a32b83e461c091c64ffa38e4f08f6a312" title="Set position and heading setpoints wrt. " alt="" coords="466,267,630,308"/>
+<area shape="rect" id="node17" href="$autopilot__guided_8h.html#a113a26863eee267edc78f72876ec8f69" title="Set velocity and heading setpoints in GUIDED mode. " alt="" coords="447,450,649,477"/>
+<area shape="rect" id="node18" href="$autopilot__guided_8h.html#a07ce763874e77faf62f5c9506bdad43d" title="Set guided setpoints using flag mask in GUIDED mode. " alt="" coords="211,602,391,629"/>
+<area shape="rect" id="node20" href="$rotorcraft_2autopilot__static_8h.html#af48775939dfa2cf7533658fb85851a35" title="Function to be called when a message from FBW is available. " alt="" coords="477,1067,619,1108"/>
+<area shape="rect" id="node22" href="$cam_8h.html#a1ac78decc31cdd4c6b7584a8bf42d315" title="For CAM_MODE_AC_TARGET mode. " alt="" coords="248,703,355,730"/>
+<area shape="rect" id="node23" href="$rotorcraft_2main__ap_8h.html#a9b33ef8d06e683b2dac822bdf94cd1a8" title="failsafe_check" alt="" coords="246,653,357,679"/>
+<area shape="rect" id="node26" href="$generic__com_8h.html#aa0f6db51f359937bdb56324a3b647175" title="generic_com_periodic" alt="" coords="221,805,382,831"/>
+<area shape="rect" id="node27" href="$guidance__flip_8h.html#a896a483b1034357b2911e72d625ff8fd" title="guidance_flip_enter" alt="" coords="228,855,375,882"/>
+<area shape="rect" id="node29" href="$gvf_8h.html#abb4d98f4686f18ac9111291ba7afda77" title="gvf_control_2D" alt="" coords="243,906,360,933"/>
+<area shape="rect" id="node33" href="$stabilization__adaptive_8c.html#a10c9851e192217d5a4e7b6dc98e16c2d" title="h_ctl_pitch_loop" alt="" coords="239,1007,363,1034"/>
+<area shape="rect" id="node35" href="$stabilization__adaptive_8c.html#a56e08c7c847634b91bec39dc929ade80" title="h_ctl_roll_loop" alt="" coords="245,957,357,983"/>
+<area shape="rect" id="node36" href="$rotorcraft_2main__fbw_8h.html#a81249e4ef19b8766982a6fe272d89bae" title="main_periodic" alt="" coords="246,754,357,781"/>
+<area shape="rect" id="node37" href="$mavlink_8c.html#ae98ab788a5e6674a7e1895edc0b898b1" title="Send a heartbeat. " alt="" coords="212,1159,391,1186"/>
+<area shape="rect" id="node40" href="$fixedwing_2autopilot__static_8h.html#a79f823520ea0823e20084686978281e6" title="Control loops FIXME should be somewhere else. " alt="" coords="240,1362,363,1389"/>
+<area shape="rect" id="node42" href="$navigation_8h.html#abb5b5b70fd1fe437f42847bb103aa952" title="NavKillThrottle" alt="" coords="245,1210,358,1237"/>
+<area shape="rect" id="node43" href="$navigation_8h.html#abf64106cb814fd5078fba37a4bc6bc65" title="NavResurrect" alt="" coords="248,1261,355,1287"/>
+<area shape="rect" id="node44" href="$auto1__commands_8h.html#aaa4ab58fd3d0ae4cce65e11d5c9c7a5f" title="periodic_auto1_commands" alt="" coords="204,1311,399,1338"/>
+<area shape="rect" id="node45" href="$fixedwing_2autopilot__static_8c.html#a83e52893d778a46aeda1b3c09ffd0656" title="Update paparazzi mode. " alt="" coords="228,1058,375,1085"/>
+<area shape="rect" id="node46" href="$guidance__opticflow__hover_8c.html#aef79617b4190e7235eed5f6653a296ad" title="Update the controls on a new VELOCITY_ESTIMATE ABI message. " alt="" coords="221,1413,381,1455"/>
+<area shape="rect" id="node47" href="$takeoff__detect_8h.html#a06e2c8e9dfe36613c4773f5c01303b0a" title="Periodic call. " alt="" coords="216,1479,387,1506"/>
+<area shape="rect" id="node48" href="$guidance__v__n_8c.html#a1e3fd0609be4d63ccd94d995a0db097a" title="v_ctl_set_pitch" alt="" coords="243,1530,359,1557"/>
+<area shape="rect" id="node49" href="$guidance__v__n_8c.html#a4fe67185d9a0b7efc737fdd778393285" title="v_ctl_set_throttle" alt="" coords="235,1581,367,1607"/>
+<area shape="rect" id="node50" href="$point_8h.html#a3317a3a368f54d6c89acfbbaa49b4ed2" title="vPoint" alt="" coords="271,1631,332,1658"/>
+<area shape="rect" id="node3" href="$sim__ap_8c.html#a4f982dacbb35ccfc3e0fcaa64156a2a0" title="sim_periodic_task" alt="" coords="972,1033,1108,1059"/>
+<area shape="rect" id="node4" href="$rotorcraft_2autopilot__static_8h.html#a81ff7c3a0611cb76bfbd35fc817070d6" title="autopilot_static_periodic" alt="" coords="951,982,1129,1009"/>
+<area shape="rect" id="node5" href="$fixedwing_2main__ap_8h.html#a43fd973b44bcc2c2583cf8287048212f" title="handle_periodic_tasks_ap" alt="" coords="947,1223,1133,1250"/>
+<area shape="rect" id="node7" href="$rotorcraft_2autopilot__generated_8c.html#aaebd02adde63c5f836bea4ec5fabe997" title="autopilot_generated\l_on_rc_frame" alt="" coords="473,71,623,112"/>
+<area shape="rect" id="node8" href="$rotorcraft_2autopilot__static_8c.html#af48775939dfa2cf7533658fb85851a35" title="Function to be called when a message from FBW is available. " alt="" coords="477,5,619,47"/>
+<area shape="rect" id="node10" href="$rotorcraft_2autopilot__generated_8c.html#ae22ba131f3568b0ef1e9b5b57bdf74ab" title="autopilot_generated\l_set_motors_on" alt="" coords="473,201,623,243"/>
+<area shape="rect" id="node11" href="$rotorcraft_2autopilot__static_8c.html#abfbb0a41b76eefca4b0df8297b2569c8" title="autopilot_static_set\l_motors_on" alt="" coords="475,136,621,177"/>
+<area shape="rect" id="node14" href="$mavlink_8h.html#aca06c0aea877a0d9c57a5e16cee711d7" title="Event MAVLink calls. " alt="" coords="983,391,1097,418"/>
+<area shape="rect" id="node19" href="$rotorcraft__datalink_8c.html#a6177292a373940f6e01bc4251374cd2c" title="Firmware specfic msg handler. " alt="" coords="471,602,625,629"/>
+<area shape="rect" id="node21" href="$autopilot_8h.html#a7339f5741706cb9c2e2186b1174cc770" title="Autopilot RC input event hadler. " alt="" coords="715,1074,881,1101"/>
+<area shape="rect" id="node24" href="$rotorcraft_2main__fbw_8h.html#a3719465edd56d2b587a6b340f29e4f90" title="Main initialization. " alt="" coords="508,653,588,679"/>
+<area shape="rect" id="node25" href="$rotorcraft_2main__fbw_8h.html#ab79bb049ce85bf2ed3a75c6b12c02bcb" title="handle_periodic_tasks" alt="" coords="467,729,629,755"/>
+<area shape="rect" id="node28" href="$rotorcraft_2guidance_2guidance__h_8h.html#a2903786227eb11507928f99870099225" title="guidance_h_mode_changed" alt="" coords="447,805,649,831"/>
+<area shape="rect" id="node30" href="$gvf_8c.html#aca22fe13ba4f5c352bb27b001010c43f" title="gvf_line" alt="" coords="513,957,583,983"/>
+<area shape="rect" id="node31" href="$gvf_8h.html#ad4ac74c3e1ae77e925a16e7f6ca93c34" title="gvf_ellipse_XY" alt="" coords="493,855,603,882"/>
+<area shape="rect" id="node32" href="$gvf_8h.html#a9af1a61d98cb2c59282573ecadeb364d" title="gvf_sin_XY_alpha" alt="" coords="483,906,613,933"/>
+<area shape="rect" id="node34" href="$fixedwing_2stabilization_2stabilization__attitude_8h.html#a86f0d47644538be1345aab19c7dc3de4" title="h_ctl_attitude_loop" alt="" coords="477,1007,619,1034"/>
+<area shape="rect" id="node38" href="$mavlink_8h.html#acc676450794df9b4b50dc6b12995b7a1" title="Module functions. " alt="" coords="499,1193,597,1219"/>
+<area shape="rect" id="node39" href="$mavlink_8h.html#a45dcaed78c022158e7dcfb92813f191c" title="Periodic MAVLink calls. " alt="" coords="484,1142,612,1169"/>
+<area shape="rect" id="node41" href="$sim__ap_8c.html#a8c0970e9878d0e3e3e6c5d6ff0741d4f" title="sim_nav_task" alt="" coords="493,1311,603,1338"/>
+</map>

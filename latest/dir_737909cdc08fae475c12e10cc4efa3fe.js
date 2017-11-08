@@ -13,16 +13,8 @@ var dir_737909cdc08fae475c12e10cc4efa3fe =
         [ "noise_measurement", "inter__thread__data_8h.html#a809ee7023708f7ce78acd5b41a992f7e", null ],
         [ "surface_roughness", "inter__thread__data_8h.html#a41985cf7c24360c8291ad1f97326816e", null ],
         [ "tracked_cnt", "inter__thread__data_8h.html#a451290f73f9cf01beab8681f70d6ab39", null ],
-        [ "vel_body_x", "inter__thread__data_8h.html#a70e6b2e916c219f0b44019d5e9be9828", null ],
-        [ "vel_body_y", "inter__thread__data_8h.html#ae4ab1916dcc12aa4f2050473e6aae38d", null ],
-        [ "vel_x", "inter__thread__data_8h.html#a7c074dfb5c43f9fdf569ac5cc6e4bf84", null ],
-        [ "vel_y", "inter__thread__data_8h.html#ac464e79cb76ab3a83edc99fd914811cb", null ]
-      ] ],
-      [ "opticflow_state_t", "inter__thread__data_8h.html#structopticflow__state__t", [
-        [ "accel_imu_meas", "inter__thread__data_8h.html#abac22a985b0ca572aabda0e4d9239c94", null ],
-        [ "agl", "inter__thread__data_8h.html#a10655044c886afdd097767b8d85d3079", null ],
-        [ "imu_to_body_quat", "inter__thread__data_8h.html#af65952a69836c1dc4352c956e5de45e6", null ],
-        [ "rates", "inter__thread__data_8h.html#a8e80c342e31d4bcc458ce298057e1925", null ]
+        [ "vel_body", "inter__thread__data_8h.html#a88ce0e0601aabf3cd0c7bd46aa5e84e1", null ],
+        [ "vel_cam", "inter__thread__data_8h.html#ad1e55d0c93a8d49b789c09bda5e8f583", null ]
       ] ]
     ] ],
     [ "linear_flow_fit.c", "linear__flow__fit_8c.html", "linear__flow__fit_8c" ],

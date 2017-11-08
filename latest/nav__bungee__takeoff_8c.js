@@ -12,7 +12,7 @@ var nav__bungee__takeoff_8c =
     ] ],
     [ "compute_points_from_bungee", "nav__bungee__takeoff_8c.html#a2f53e9b3f76ff0a80bf595380900e71a", null ],
     [ "nav_bungee_takeoff_run", "nav__bungee__takeoff_8c.html#a22d08b651b3b72cf70e44c2d9b14b6f3", null ],
-    [ "nav_bungee_takeoff_setup", "nav__bungee__takeoff_8c.html#a23bc80f3ee563abbea8f47b17164ac40", null ],
+    [ "nav_bungee_takeoff_setup", "nav__bungee__takeoff_8c.html#a81fb1ff1aa94a36356fd9ed6e2c72c61", null ],
     [ "bungee_point", "nav__bungee__takeoff_8c.html#abab4c4d2267c6dae376d760a7ae658e0", null ],
     [ "CTakeoffStatus", "nav__bungee__takeoff_8c.html#ab496f035eec714cd74c7ab5315ef1dd9", null ],
     [ "init_point", "nav__bungee__takeoff_8c.html#a944276a739ae332f4d1135be7b97c04e", null ],

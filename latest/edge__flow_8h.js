@@ -1,8 +1,8 @@
 var edge__flow_8h =
 [
     [ "edge_hist_t", "edge__flow_8h.html#structedge__hist__t", [
+      [ "eulers", "edge__flow_8h.html#a3b0dd7aaaa5693e971062d56410f4e22", null ],
       [ "frame_time", "edge__flow_8h.html#a6ec9fb8f5054f41182e57e4e1e912d74", null ],
-      [ "rates", "edge__flow_8h.html#aef4e82c71d77eb9007386e18e855ece1", null ],
       [ "x", "edge__flow_8h.html#a57ced55bf39a5c9e3c888ad808f35a61", null ],
       [ "y", "edge__flow_8h.html#aa2869f3b7c21f595e2e1f87ee4a123f3", null ]
     ] ],
@@ -25,7 +25,7 @@ var edge__flow_8h =
     [ "calculate_edge_displacement", "edge__flow_8h.html#a362f7ce14089a9e1bf93464ef5731714", null ],
     [ "calculate_edge_histogram", "edge__flow_8h.html#a3dacd96582561f6f436df853e4ce0d63", null ],
     [ "draw_edgeflow_img", "edge__flow_8h.html#a3b033920386bfd9bd702b743b16d6339", null ],
-    [ "getAmountPeaks", "edge__flow_8h.html#a040c567b4e65962923b87d4fe0c09a22", null ],
+    [ "getAmountPeaks", "edge__flow_8h.html#addd84ce0622190f3738440b778d87601", null ],
     [ "getMinimum", "edge__flow_8h.html#a24125fbc0c941963c0e3a2ab55a97e6e", null ],
     [ "line_fit", "edge__flow_8h.html#a57885c6d0cf61ad61c6e6113b2573c88", null ],
     [ "timeval_diff2", "edge__flow_8h.html#ad1d1a9f908fa4e96f28ccbe968f356e8", null ]

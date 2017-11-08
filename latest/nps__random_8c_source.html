@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -173,7 +173,7 @@ $(document).ready(function(){initNavTree('nps__random_8c_source.html','');});
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="nps__random_8h.html#a2899511452cb10727332aa484282f2ee">   65</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="nps__random_8c.html#a2899511452cb10727332aa484282f2ee">double_vect3_update_random_walk</a>(<span class="keyword">struct</span> <a class="code" href="group__math__algebra__double.html#structDoubleVect3">DoubleVect3</a> *rw, <span class="keyword">struct</span> <a class="code" href="group__math__algebra__double.html#structDoubleVect3">DoubleVect3</a> *std_dev, <span class="keywordtype">double</span> <a class="code" href="optical__flow__landing_8c.html#a778e38aa889751afffa2dea6b803e67a">dt</a>, <span class="keywordtype">double</span> thau)</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="nps__random_8h.html#a2899511452cb10727332aa484282f2ee">   65</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="nps__random_8c.html#a2899511452cb10727332aa484282f2ee">double_vect3_update_random_walk</a>(<span class="keyword">struct</span> <a class="code" href="group__math__algebra__double.html#structDoubleVect3">DoubleVect3</a> *rw, <span class="keyword">struct</span> <a class="code" href="group__math__algebra__double.html#structDoubleVect3">DoubleVect3</a> *std_dev, <span class="keywordtype">double</span> dt, <span class="keywordtype">double</span> thau)</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;{</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keyword">struct </span><a class="code" href="group__math__algebra__double.html#structDoubleVect3">DoubleVect3</a> drw;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <a class="code" href="nps__random_8c.html#a0f9e2b323ca2a785aa76dbd6e2d3003e">double_vect3_get_gaussian_noise</a>(&amp;drw, std_dev);</div>
@@ -404,7 +404,6 @@ $(document).ready(function(){initNavTree('nps__random_8c_source.html','');});
 <div class="ttc" id="group__math__algebra__double_html_a6e75853abc1bc1b6f125b1dbc7fc53ae"><div class="ttname"><a href="group__math__algebra__double.html#a6e75853abc1bc1b6f125b1dbc7fc53ae">DoubleVect3::z</a></div><div class="ttdeci">double z</div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__double_8h_source.html#l00049">pprz_algebra_double.h:49</a></div></div>
 <div class="ttc" id="group__math__algebra__float_html_a75e3090314c4ad6edf12f7c08d9c5c0a"><div class="ttname"><a href="group__math__algebra__float.html#a75e3090314c4ad6edf12f7c08d9c5c0a">FloatRates::r</a></div><div class="ttdeci">float r</div><div class="ttdoc">in rad/s </div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__float_8h_source.html#l00096">pprz_algebra_float.h:96</a></div></div>
 <div class="ttc" id="nps__random_8c_html_a2899511452cb10727332aa484282f2ee"><div class="ttname"><a href="nps__random_8c.html#a2899511452cb10727332aa484282f2ee">double_vect3_update_random_walk</a></div><div class="ttdeci">void double_vect3_update_random_walk(struct DoubleVect3 *rw, struct DoubleVect3 *std_dev, double dt, double thau)</div><div class="ttdef"><b>Definition:</b> <a href="nps__random_8c_source.html#l00065">nps_random.c:65</a></div></div>
-<div class="ttc" id="optical__flow__landing_8c_html_a778e38aa889751afffa2dea6b803e67a"><div class="ttname"><a href="optical__flow__landing_8c.html#a778e38aa889751afffa2dea6b803e67a">dt</a></div><div class="ttdeci">float dt</div><div class="ttdef"><b>Definition:</b> <a href="optical__flow__landing_8c_source.html#l00044">optical_flow_landing.c:44</a></div></div>
 <div class="ttc" id="nps__random_8c_html_a127dc92d56f5f6d95077f58a96a63c8c"><div class="ttname"><a href="nps__random_8c.html#a127dc92d56f5f6d95077f58a96a63c8c">double_vect3_add_gaussian_noise</a></div><div class="ttdeci">void double_vect3_add_gaussian_noise(struct DoubleVect3 *vect, struct DoubleVect3 *std_dev)</div><div class="ttdef"><b>Definition:</b> <a href="nps__random_8c_source.html#l00034">nps_random.c:34</a></div></div>
 <div class="ttc" id="group__math__algebra__float_html_a128ab43f390d2a0ff80fe4bef003061a"><div class="ttname"><a href="group__math__algebra__float.html#a128ab43f390d2a0ff80fe4bef003061a">FloatRates::q</a></div><div class="ttdeci">float q</div><div class="ttdoc">in rad/s </div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__float_8h_source.html#l00095">pprz_algebra_float.h:95</a></div></div>
 <div class="ttc" id="group__math__algebra__float_html_a4bc81b8dfc82c389671683596d4ad15e"><div class="ttname"><a href="group__math__algebra__float.html#a4bc81b8dfc82c389671683596d4ad15e">FloatRates::p</a></div><div class="ttdeci">float p</div><div class="ttdoc">in rad/s </div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__float_8h_source.html#l00094">pprz_algebra_float.h:94</a></div></div>
@@ -427,7 +426,7 @@ $(document).ready(function(){initNavTree('nps__random_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_57152efd0242905f7c5d6768e6b65e41.html">simulator</a></li><li class="navelem"><a class="el" href="dir_19bdda89d6219119fa616a46fa62e86b.html">nps</a></li><li class="navelem"><a class="el" href="nps__random_8c.html">nps_random.c</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:01:35 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:01:53 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -122,7 +122,7 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html','');});
 <li class="level2"><a href="#DESIRED">DESIRED (ID 16)</a></li>
 <li class="level2"><a href="#GPS_SOL">GPS_SOL (ID 17)</a></li>
 <li class="level2"><a href="#ADC_GENERIC">ADC_GENERIC (ID 18)</a></li>
-<li class="level2"><a href="#TEST_FORMAT">TEST_FORMAT (ID 19)</a></li>
+<li class="level2"><a href="#ECU">ECU (ID 19)</a></li>
 <li class="level2"><a href="#CAM">CAM (ID 20)</a></li>
 <li class="level2"><a href="#CIRCLE">CIRCLE (ID 21)</a></li>
 <li class="level2"><a href="#SEGMENT">SEGMENT (ID 22)</a></li>
@@ -141,30 +141,22 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html','');});
 <li class="level2"><a href="#WP_MOVED">WP_MOVED (ID 35)</a></li>
 <li class="level2"><a href="#MKK">MKK (ID 36)</a></li>
 <li class="level2"><a href="#ENERGY">ENERGY (ID 37)</a></li>
-<li class="level2"><a href="#BARO_BMP85_CALIB">BARO_BMP85_CALIB (ID 38)</a></li>
-<li class="level2"><a href="#BARO_BMP85">BARO_BMP85 (ID 39)</a></li>
-<li class="level2"><a href="#SPEED_LOOP">SPEED_LOOP (ID 40)</a></li>
 <li class="level2"><a href="#ALT_KALMAN">ALT_KALMAN (ID 41)</a></li>
 <li class="level2"><a href="#ESTIMATOR">ESTIMATOR (ID 42)</a></li>
 <li class="level2"><a href="#TUNE_ROLL">TUNE_ROLL (ID 43)</a></li>
 <li class="level2"><a href="#BARO_MS5534A">BARO_MS5534A (ID 44)</a></li>
-<li class="level2"><a href="#PRESSURE">PRESSURE (ID 45)</a></li>
 <li class="level2"><a href="#BARO_WORDS">BARO_WORDS (ID 46)</a></li>
 <li class="level2"><a href="#WP_MOVED_LLA">WP_MOVED_LLA (ID 47)</a></li>
-<li class="level2"><a href="#CHRONO">CHRONO (ID 48)</a></li>
 <li class="level2"><a href="#WP_MOVED_ENU">WP_MOVED_ENU (ID 49)</a></li>
 <li class="level2"><a href="#WINDTURBINE_STATUS_">WINDTURBINE_STATUS_ (ID 50)</a></li>
 <li class="level2"><a href="#RC_3CH_">RC_3CH_ (ID 51)</a></li>
 <li class="level2"><a href="#MPPT">MPPT (ID 52)</a></li>
 <li class="level2"><a href="#DEBUG_IR_I2C">DEBUG_IR_I2C (ID 53)</a></li>
 <li class="level2"><a href="#AIRSPEED">AIRSPEED (ID 54)</a></li>
-<li class="level2"><a href="#XSENS">XSENS (ID 55)</a></li>
 <li class="level2"><a href="#BARO_ETS">BARO_ETS (ID 56)</a></li>
 <li class="level2"><a href="#AIRSPEED_ETS">AIRSPEED_ETS (ID 57)</a></li>
-<li class="level2"><a href="#PBN">PBN (ID 58)</a></li>
 <li class="level2"><a href="#GPS_LLA">GPS_LLA (ID 59)</a></li>
 <li class="level2"><a href="#H_CTL_A">H_CTL_A (ID 60)</a></li>
-<li class="level2"><a href="#TURB_PRESSURE_RAW">TURB_PRESSURE_RAW (ID 61)</a></li>
 <li class="level2"><a href="#TURB_PRESSURE_VOLTAGE">TURB_PRESSURE_VOLTAGE (ID 62)</a></li>
 <li class="level2"><a href="#CAM_POINT">CAM_POINT (ID 63)</a></li>
 <li class="level2"><a href="#DC_INFO">DC_INFO (ID 64)</a></li>
@@ -174,15 +166,11 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html','');});
 <li class="level2"><a href="#MPL3115_BARO">MPL3115_BARO (ID 68)</a></li>
 <li class="level2"><a href="#AOA">AOA (ID 69)</a></li>
 <li class="level2"><a href="#XTEND_RSSI">XTEND_RSSI (ID 70)</a></li>
+<li class="level2"><a href="#GVF">GVF (ID 71)</a></li>
 <li class="level2"><a href="#SUPERBITRF">SUPERBITRF (ID 72)</a></li>
 <li class="level2"><a href="#GX3_INFO">GX3_INFO (ID 73)</a></li>
-<li class="level2"><a href="#EXPLAIN">EXPLAIN (ID 74)</a></li>
-<li class="level2"><a href="#VIDEO_TELEMETRY">VIDEO_TELEMETRY (ID 75)</a></li>
-<li class="level2"><a href="#VF_UPDATE">VF_UPDATE (ID 76)</a></li>
-<li class="level2"><a href="#VF_PREDICT">VF_PREDICT (ID 77)</a></li>
 <li class="level2"><a href="#INV_FILTER">INV_FILTER (ID 78)</a></li>
 <li class="level2"><a href="#MISSION_STATUS">MISSION_STATUS (ID 79)</a></li>
-<li class="level2"><a href="#CROSS_TRACK_ERROR">CROSS_TRACK_ERROR (ID 80)</a></li>
 <li class="level2"><a href="#GENERIC_COM">GENERIC_COM (ID 81)</a></li>
 <li class="level2"><a href="#FORMATION_SLOT_TM">FORMATION_SLOT_TM (ID 82)</a></li>
 <li class="level2"><a href="#FORMATION_STATUS_TM">FORMATION_STATUS_TM (ID 83)</a></li>
@@ -194,10 +182,8 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html','');});
 <li class="level2"><a href="#SHT_STATUS">SHT_STATUS (ID 89)</a></li>
 <li class="level2"><a href="#ENOSE_STATUS">ENOSE_STATUS (ID 90)</a></li>
 <li class="level2"><a href="#DPICCO_STATUS">DPICCO_STATUS (ID 91)</a></li>
-<li class="level2"><a href="#ANTENNA_DEBUG">ANTENNA_DEBUG (ID 92)</a></li>
-<li class="level2"><a href="#ANTENNA_STATUS">ANTENNA_STATUS (ID 93)</a></li>
+<li class="level2"><a href="#LOGGER_STATUS">LOGGER_STATUS (ID 92)</a></li>
 <li class="level2"><a href="#MOTOR_BENCH_STATUS">MOTOR_BENCH_STATUS (ID 94)</a></li>
-<li class="level2"><a href="#MOTOR_BENCH_STATIC">MOTOR_BENCH_STATIC (ID 95)</a></li>
 <li class="level2"><a href="#HIH_STATUS">HIH_STATUS (ID 96)</a></li>
 <li class="level2"><a href="#TEMT_STATUS">TEMT_STATUS (ID 97)</a></li>
 <li class="level2"><a href="#GP2Y_STATUS">GP2Y_STATUS (ID 98)</a></li>
@@ -213,7 +199,7 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html','');});
 <li class="level2"><a href="#PIKSI_HEARTBEAT">PIKSI_HEARTBEAT (ID 108)</a></li>
 <li class="level2"><a href="#MULTIGAZE_METERS">MULTIGAZE_METERS (ID 109)</a></li>
 <li class="level2"><a href="#DC_SHOT">DC_SHOT (ID 110)</a></li>
-<li class="level2"><a href="#TEST_BOARD_RESULTS">TEST_BOARD_RESULTS (ID 111)</a></li>
+<li class="level2"><a href="#CAMERA_PAYLOAD">CAMERA_PAYLOAD (ID 111)</a></li>
 <li class="level2"><a href="#MOTOR_MIXING">MOTOR_MIXING (ID 112)</a></li>
 <li class="level2"><a href="#MLX_SERIAL">MLX_SERIAL (ID 113)</a></li>
 <li class="level2"><a href="#PAYLOAD">PAYLOAD (ID 114)</a></li>
@@ -227,7 +213,7 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html','');});
 <li class="level2"><a href="#TCAS_RESOLVED">TCAS_RESOLVED (ID 122)</a></li>
 <li class="level2"><a href="#TCAS_DEBUG">TCAS_DEBUG (ID 123)</a></li>
 <li class="level2"><a href="#POTENTIAL">POTENTIAL (ID 124)</a></li>
-<li class="level2"><a href="#VERTICAL_ENERGY">VERTICAL_ENERGY (ID 125)</a></li>
+<li class="level2"><a href="#COPILOT_STATUS">COPILOT_STATUS (ID 125)</a></li>
 <li class="level2"><a href="#TEMP_TCOUPLE">TEMP_TCOUPLE (ID 126)</a></li>
 <li class="level2"><a href="#SHT_I2C_STATUS">SHT_I2C_STATUS (ID 127)</a></li>
 <li class="level2"><a href="#CAMERA_SNAPSHOT">CAMERA_SNAPSHOT (ID 128)</a></li>
@@ -237,11 +223,9 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html','');});
 <li class="level2"><a href="#IMU_ACCEL_SCALED">IMU_ACCEL_SCALED (ID 132)</a></li>
 <li class="level2"><a href="#IMU_MAG_SCALED">IMU_MAG_SCALED (ID 133)</a></li>
 <li class="level2"><a href="#FILTER">FILTER (ID 134)</a></li>
-<li class="level2"><a href="#FILTER2">FILTER2 (ID 135)</a></li>
 <li class="level2"><a href="#RATE_LOOP">RATE_LOOP (ID 136)</a></li>
 <li class="level2"><a href="#FILTER_ALIGNER">FILTER_ALIGNER (ID 137)</a></li>
 <li class="level2"><a href="#AIRSPEED_MS45XX">AIRSPEED_MS45XX (ID 138)</a></li>
-<li class="level2"><a href="#FILTER_COR">FILTER_COR (ID 139)</a></li>
 <li class="level2"><a href="#STAB_ATTITUDE_INT">STAB_ATTITUDE_INT (ID 140)</a></li>
 <li class="level2"><a href="#STAB_ATTITUDE_REF_INT">STAB_ATTITUDE_REF_INT (ID 141)</a></li>
 <li class="level2"><a href="#STAB_ATTITUDE_REF_FLOAT">STAB_ATTITUDE_REF_FLOAT (ID 142)</a></li>
@@ -260,7 +244,6 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html','');});
 <li class="level2"><a href="#GPS_INT">GPS_INT (ID 155)</a></li>
 <li class="level2"><a href="#AHRS_EULER_INT">AHRS_EULER_INT (ID 156)</a></li>
 <li class="level2"><a href="#AHRS_QUAT_INT">AHRS_QUAT_INT (ID 157)</a></li>
-<li class="level2"><a href="#AHRS_RMAT_INT">AHRS_RMAT_INT (ID 158)</a></li>
 <li class="level2"><a href="#ROTORCRAFT_NAV_STATUS">ROTORCRAFT_NAV_STATUS (ID 159)</a></li>
 <li class="level2"><a href="#ROTORCRAFT_RADIO_CONTROL">ROTORCRAFT_RADIO_CONTROL (ID 160)</a></li>
 <li class="level2"><a href="#VFF_EXTENDED">VFF_EXTENDED (ID 161)</a></li>
@@ -269,12 +252,8 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html','');});
 <li class="level2"><a href="#HFF">HFF (ID 164)</a></li>
 <li class="level2"><a href="#HFF_DBG">HFF_DBG (ID 165)</a></li>
 <li class="level2"><a href="#HFF_GPS">HFF_GPS (ID 166)</a></li>
-<li class="level2"><a href="#INS_SONAR">INS_SONAR (ID 167)</a></li>
 <li class="level2"><a href="#ROTORCRAFT_CAM">ROTORCRAFT_CAM (ID 168)</a></li>
 <li class="level2"><a href="#AHRS_REF_QUAT">AHRS_REF_QUAT (ID 169)</a></li>
-<li class="level2"><a href="#EKF7_XHAT">EKF7_XHAT (ID 170)</a></li>
-<li class="level2"><a href="#EKF7_Y">EKF7_Y (ID 171)</a></li>
-<li class="level2"><a href="#EKF7_P_DIAG">EKF7_P_DIAG (ID 172)</a></li>
 <li class="level2"><a href="#AHRS_EULER">AHRS_EULER (ID 173)</a></li>
 <li class="level2"><a href="#AHRS_MEASUREMENT_EULER">AHRS_MEASUREMENT_EULER (ID 174)</a></li>
 <li class="level2"><a href="#WT">WT (ID 175)</a></li>
@@ -283,25 +262,9 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html','');});
 <li class="level2"><a href="#AHRS_GYRO_BIAS_INT">AHRS_GYRO_BIAS_INT (ID 178)</a></li>
 <li class="level2"><a href="#AEROPROBE">AEROPROBE (ID 179)</a></li>
 <li class="level2"><a href="#FMS_TIME">FMS_TIME (ID 180)</a></li>
-<li class="level2"><a href="#LOADCELL">LOADCELL (ID 181)</a></li>
-<li class="level2"><a href="#FLA_DEBUG">FLA_DEBUG (ID 182)</a></li>
-<li class="level2"><a href="#BLMC_FAULT_STATUS">BLMC_FAULT_STATUS (ID 183)</a></li>
-<li class="level2"><a href="#BLMC_SPEEDS">BLMC_SPEEDS (ID 184)</a></li>
-<li class="level2"><a href="#AHRS_DEBUG_QUAT">AHRS_DEBUG_QUAT (ID 185)</a></li>
-<li class="level2"><a href="#BLMC_BUSVOLTS">BLMC_BUSVOLTS (ID 186)</a></li>
-<li class="level2"><a href="#SYSTEM_STATUS">SYSTEM_STATUS (ID 187)</a></li>
-<li class="level2"><a href="#DYNAMIXEL">DYNAMIXEL (ID 188)</a></li>
-<li class="level2"><a href="#RMAT_DEBUG">RMAT_DEBUG (ID 189)</a></li>
-<li class="level2"><a href="#SIMPLE_COMMANDS">SIMPLE_COMMANDS (ID 190)</a></li>
-<li class="level2"><a href="#VANE_SENSOR">VANE_SENSOR (ID 191)</a></li>
-<li class="level2"><a href="#CONTROLLER_GAINS">CONTROLLER_GAINS (ID 192)</a></li>
 <li class="level2"><a href="#AHRS_LKF">AHRS_LKF (ID 193)</a></li>
-<li class="level2"><a href="#AHRS_LKF_DEBUG">AHRS_LKF_DEBUG (ID 194)</a></li>
-<li class="level2"><a href="#AHRS_LKF_ACC_DBG">AHRS_LKF_ACC_DBG (ID 195)</a></li>
-<li class="level2"><a href="#AHRS_LKF_MAG_DBG">AHRS_LKF_MAG_DBG (ID 196)</a></li>
 <li class="level2"><a href="#NPS_SENSORS_SCALED">NPS_SENSORS_SCALED (ID 197)</a></li>
 <li class="level2"><a href="#INS">INS (ID 198)</a></li>
-<li class="level2"><a href="#GPS_ERROR">GPS_ERROR (ID 199)</a></li>
 <li class="level2"><a href="#IMU_GYRO">IMU_GYRO (ID 200)</a></li>
 <li class="level2"><a href="#IMU_MAG">IMU_MAG (ID 201)</a></li>
 <li class="level2"><a href="#IMU_ACCEL">IMU_ACCEL (ID 202)</a></li>
@@ -313,12 +276,11 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html','');});
 <li class="level2"><a href="#UART_ERRORS">UART_ERRORS (ID 208)</a></li>
 <li class="level2"><a href="#IMU_GYRO_LP">IMU_GYRO_LP (ID 209)</a></li>
 <li class="level2"><a href="#IMU_PRESSURE">IMU_PRESSURE (ID 210)</a></li>
-<li class="level2"><a href="#IMU_HS_GYRO">IMU_HS_GYRO (ID 211)</a></li>
-<li class="level2"><a href="#TEST_PASSTHROUGH_STATUS">TEST_PASSTHROUGH_STATUS (ID 212)</a></li>
 <li class="level2"><a href="#TUNE_VERT">TUNE_VERT (ID 213)</a></li>
 <li class="level2"><a href="#MF_DAQ_STATE">MF_DAQ_STATE (ID 214)</a></li>
 <li class="level2"><a href="#INFO_MSG">INFO_MSG (ID 215)</a></li>
 <li class="level2"><a href="#STAB_ATTITUDE_INDI">STAB_ATTITUDE_INDI (ID 216)</a></li>
+<li class="level2"><a href="#ROTORCRAFT_FP_MIN">ROTORCRAFT_FP_MIN (ID 217)</a></li>
 <li class="level2"><a href="#BEBOP_ACTUATORS">BEBOP_ACTUATORS (ID 218)</a></li>
 <li class="level2"><a href="#WEATHER">WEATHER (ID 219)</a></li>
 <li class="level2"><a href="#IMU_TURNTABLE">IMU_TURNTABLE (ID 220)</a></li>
@@ -334,27 +296,24 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html','');});
 <li class="level2"><a href="#ROTORCRAFT_STATUS">ROTORCRAFT_STATUS (ID 231)</a></li>
 <li class="level2"><a href="#STATE_FILTER_STATUS">STATE_FILTER_STATUS (ID 232)</a></li>
 <li class="level2"><a href="#PX4FLOW">PX4FLOW (ID 233)</a></li>
-<li class="level2"><a href="#OPTICFLOW">OPTICFLOW (ID 234)</a></li>
+<li class="level2"><a href="#LIDAR">LIDAR (ID 234)</a></li>
 <li class="level2"><a href="#VISUALTARGET">VISUALTARGET (ID 235)</a></li>
 <li class="level2"><a href="#SONAR">SONAR (ID 236)</a></li>
 <li class="level2"><a href="#PAYLOAD_FLOAT">PAYLOAD_FLOAT (ID 237)</a></li>
 <li class="level2"><a href="#NPS_POS_LLH">NPS_POS_LLH (ID 238)</a></li>
-<li class="level2"><a href="#NPS_RPMS">NPS_RPMS (ID 239)</a></li>
 <li class="level2"><a href="#NPS_SPEED_POS">NPS_SPEED_POS (ID 240)</a></li>
 <li class="level2"><a href="#NPS_RATE_ATTITUDE">NPS_RATE_ATTITUDE (ID 241)</a></li>
 <li class="level2"><a href="#NPS_GYRO_BIAS">NPS_GYRO_BIAS (ID 242)</a></li>
-<li class="level2"><a href="#NPS_RANGE_METER">NPS_RANGE_METER (ID 243)</a></li>
 <li class="level2"><a href="#NPS_WIND">NPS_WIND (ID 244)</a></li>
 <li class="level2"><a href="#ESC">ESC (ID 245)</a></li>
 <li class="level2"><a href="#RTOS_MON">RTOS_MON (ID 246)</a></li>
 <li class="level2"><a href="#PPRZ_DEBUG">PPRZ_DEBUG (ID 247)</a></li>
-<li class="level2"><a href="#NPS_ACCEL_LTP">NPS_ACCEL_LTP (ID 248)</a></li>
-<li class="level2"><a href="#LOOSE_INS_GPS">LOOSE_INS_GPS (ID 249)</a></li>
-<li class="level2"><a href="#AFL_COEFFS">AFL_COEFFS (ID 250)</a></li>
+<li class="level2"><a href="#BATTERY_MONITOR">BATTERY_MONITOR (ID 248)</a></li>
+<li class="level2"><a href="#INDI_G">INDI_G (ID 250)</a></li>
+<li class="level2"><a href="#GPS_RTK">GPS_RTK (ID 251)</a></li>
+<li class="level2"><a href="#GPS_RXMRTCM">GPS_RXMRTCM (ID 249)</a></li>
 <li class="level2"><a href="#GPS_SMALL">GPS_SMALL (ID 252)</a></li>
 <li class="level2"><a href="#I2C_ERRORS">I2C_ERRORS (ID 253)</a></li>
-<li class="level2"><a href="#RDYB_TRAJECTORY">RDYB_TRAJECTORY (ID 254)</a></li>
-<li class="level2"><a href="#HENRY_GNSS">HENRY_GNSS (ID 255)</a></li>
 </ul>
 </li>
 <li class="level1"><a href="#DATALINK_CLASS">Datalink Messages</a><ul><li class="level2"><a href="#ACINFO">ACINFO (ID 1)</a></li>
@@ -386,10 +345,14 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html','');});
 <li class="level2"><a href="#GOTO_MISSION">GOTO_MISSION (ID 30)</a></li>
 <li class="level2"><a href="#NEXT_MISSION">NEXT_MISSION (ID 31)</a></li>
 <li class="level2"><a href="#END_MISSION">END_MISSION (ID 32)</a></li>
+<li class="level2"><a href="#COPILOT_STATUS_DL">COPILOT_STATUS_DL (ID 33)</a></li>
+<li class="level2"><a href="#CAMERA_PAYLOAD_DL">CAMERA_PAYLOAD_DL (ID 34)</a></li>
+<li class="level2"><a href="#CAMERA_SNAPSHOT_DL">CAMERA_SNAPSHOT_DL (ID 35)</a></li>
 <li class="level2"><a href="#GUIDED_SETPOINT_NED">GUIDED_SETPOINT_NED (ID 40)</a></li>
 <li class="level2"><a href="#WINDTURBINE_STATUS">WINDTURBINE_STATUS (ID 50)</a></li>
 <li class="level2"><a href="#RC_3CH">RC_3CH (ID 51)</a></li>
 <li class="level2"><a href="#RC_4CH">RC_4CH (ID 52)</a></li>
+<li class="level2"><a href="#RC_5CH">RC_5CH (ID 53)</a></li>
 <li class="level2"><a href="#REMOTE_GPS_SMALL">REMOTE_GPS_SMALL (ID 54)</a></li>
 <li class="level2"><a href="#REMOTE_GPS">REMOTE_GPS (ID 55)</a></li>
 <li class="level2"><a href="#KITE_COMMAND">KITE_COMMAND (ID 96)</a></li>
@@ -403,6 +366,8 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html','');});
 <li class="level2"><a href="#GPS_INJECT">GPS_INJECT (ID 153)</a></li>
 <li class="level2"><a href="#EXTERNAL_MAG_RAW">EXTERNAL_MAG_RAW (ID 154)</a></li>
 <li class="level2"><a href="#VIDEO_ROI">VIDEO_ROI (ID 155)</a></li>
+<li class="level2"><a href="#EMERGENCY_CMD">EMERGENCY_CMD (ID 156)</a></li>
+<li class="level2"><a href="#RTCM_INJECT">RTCM_INJECT (ID 157)</a></li>
 </ul>
 </li>
 <li class="level1"><a href="#GROUND_CLASS">Ground Messages</a><ul><li class="level2"><a href="#NEW_AIRCRAFT">NEW_AIRCRAFT (ID 1)</a></li>
@@ -442,6 +407,7 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html','');});
 <li class="level2"><a href="#LINK_REPORT">LINK_REPORT (ID 36)</a></li>
 <li class="level2"><a href="#INTRUDER">INTRUDER (ID 37)</a></li>
 <li class="level2"><a href="#SHAPE">SHAPE (ID 38)</a></li>
+<li class="level2"><a href="#DL_EMERGENCY_CMD">DL_EMERGENCY_CMD (ID 39)</a></li>
 <li class="level2"><a href="#PLUMES">PLUMES (ID 100)</a></li>
 </ul>
 </li>
@@ -457,7 +423,15 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html','');});
 <li class="level2"><a href="#IMCU_REMOTE_BARO">IMCU_REMOTE_BARO (ID 11)</a></li>
 <li class="level2"><a href="#IMCU_REMOTE_AIRSPEED">IMCU_REMOTE_AIRSPEED (ID 12)</a></li>
 <li class="level2"><a href="#IMCU_REMOTE_GROUND">IMCU_REMOTE_GROUND (ID 15)</a></li>
+<li class="level2"><a href="#IMCU_REMOTE_GPS">IMCU_REMOTE_GPS (ID 62)</a></li>
+<li class="level2"><a href="#STEREOCAM_ARRAY">STEREOCAM_ARRAY (ID 80)</a></li>
+<li class="level2"><a href="#STEREOCAM_VELOCITY">STEREOCAM_VELOCITY (ID 81)</a></li>
+<li class="level2"><a href="#STEREOCAM_STATE">STEREOCAM_STATE (ID 82)</a></li>
+<li class="level2"><a href="#STEREOCAM_FOLLOW_ME">STEREOCAM_FOLLOW_ME (ID 83)</a></li>
+<li class="level2"><a href="#IMCU_DATALINK">IMCU_DATALINK (ID 113)</a></li>
 <li class="level2"><a href="#IMCU_TELEMETRY">IMCU_TELEMETRY (ID 114)</a></li>
+<li class="level2"><a href="#IMCU_DEBUG">IMCU_DEBUG (ID 115)</a></li>
+<li class="level2"><a href="#IMCU_PAYLOAD">IMCU_PAYLOAD (ID 116)</a></li>
 </ul>
 </li>
 </ul>
@@ -770,15 +744,23 @@ ADC_GENERIC (ID 18)</h2>
 <tr>
 <td>val2 </td><td>uint16 </td><td></td><td></td></tr>
 </table>
-<h2><a class="anchor" id="TEST_FORMAT"></a>
-TEST_FORMAT (ID 19)</h2>
+<h2><a class="anchor" id="ECU"></a>
+ECU (ID 19)</h2>
 <table class="doxtable">
 <tr>
 <th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
 <tr>
-<td>val1 </td><td>double </td><td></td><td></td></tr>
+<td>stg_in </td><td>uint8 </td><td>bool </td><td></td></tr>
 <tr>
-<td>val2 </td><td>float </td><td></td><td></td></tr>
+<td>stb_in </td><td>uint8 </td><td>bool </td><td></td></tr>
+<tr>
+<td>ain1 </td><td>float </td><td>V </td><td></td></tr>
+<tr>
+<td>ain2 </td><td>float </td><td>V </td><td></td></tr>
+<tr>
+<td>ain3 </td><td>float </td><td>V </td><td></td></tr>
+<tr>
+<td>ain4 </td><td>float </td><td>V </td><td></td></tr>
 </table>
 <h2><a class="anchor" id="CAM"></a>
 CAM (ID 20)</h2>
@@ -786,9 +768,9 @@ CAM (ID 20)</h2>
 <tr>
 <th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
 <tr>
-<td>phi </td><td>int16 </td><td>deg </td><td></td></tr>
+<td>pan </td><td>int16 </td><td>deg </td><td></td></tr>
 <tr>
-<td>theta </td><td>int16 </td><td>deg </td><td></td></tr>
+<td>tilt </td><td>int16 </td><td>deg </td><td></td></tr>
 <tr>
 <td>target_x </td><td>int16 </td><td>m </td><td></td></tr>
 <tr>
@@ -1072,68 +1054,6 @@ ENERGY (ID 37)</h2>
 <tr>
 <td>power </td><td>float </td><td>W </td><td></td></tr>
 </table>
-<h2><a class="anchor" id="BARO_BMP85_CALIB"></a>
-BARO_BMP85_CALIB (ID 38)</h2>
-<table class="doxtable">
-<tr>
-<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
-<tr>
-<td>a1 </td><td>int16 </td><td></td><td></td></tr>
-<tr>
-<td>a2 </td><td>int16 </td><td></td><td></td></tr>
-<tr>
-<td>a3 </td><td>int16 </td><td></td><td></td></tr>
-<tr>
-<td>a4 </td><td>uint16 </td><td></td><td></td></tr>
-<tr>
-<td>a5 </td><td>uint16 </td><td></td><td></td></tr>
-<tr>
-<td>a6 </td><td>uint16 </td><td></td><td></td></tr>
-<tr>
-<td>b1 </td><td>int16 </td><td></td><td></td></tr>
-<tr>
-<td>b2 </td><td>int16 </td><td></td><td></td></tr>
-<tr>
-<td>mb </td><td>int16 </td><td></td><td></td></tr>
-<tr>
-<td>mc </td><td>int16 </td><td></td><td></td></tr>
-<tr>
-<td>md </td><td>int16 </td><td></td><td></td></tr>
-</table>
-<h2><a class="anchor" id="BARO_BMP85"></a>
-BARO_BMP85 (ID 39)</h2>
-<table class="doxtable">
-<tr>
-<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
-<tr>
-<td>UT </td><td>int32 </td><td></td><td></td></tr>
-<tr>
-<td>UP </td><td>int32 </td><td></td><td></td></tr>
-<tr>
-<td>P </td><td>uint32 </td><td></td><td></td></tr>
-<tr>
-<td>T </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>MSL </td><td>float </td><td></td><td></td></tr>
-</table>
-<h2><a class="anchor" id="SPEED_LOOP"></a>
-SPEED_LOOP (ID 40)</h2>
-<table class="doxtable">
-<tr>
-<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
-<tr>
-<td>ve_set_point </td><td>float </td><td>m/s </td><td></td></tr>
-<tr>
-<td>ve </td><td>float </td><td>m/s </td><td></td></tr>
-<tr>
-<td>vn_set_point </td><td>float </td><td>m/s </td><td></td></tr>
-<tr>
-<td>vn </td><td>float </td><td>m/s </td><td></td></tr>
-<tr>
-<td>north_sp </td><td>float </td><td>rad </td><td></td></tr>
-<tr>
-<td>east_sp </td><td>float </td><td>rad </td><td></td></tr>
-</table>
 <h2><a class="anchor" id="ALT_KALMAN"></a>
 ALT_KALMAN (ID 41)</h2>
 <table class="doxtable">
@@ -1182,20 +1102,6 @@ BARO_MS5534A (ID 44)</h2>
 <tr>
 <td>alt </td><td>float </td><td>m </td><td></td></tr>
 </table>
-<h2><a class="anchor" id="PRESSURE"></a>
-PRESSURE (ID 45)</h2>
-<table class="doxtable">
-<tr>
-<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
-<tr>
-<td>airspeed_adc </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>airspeed </td><td>float </td><td>m/s </td><td></td></tr>
-<tr>
-<td>altitude_adc </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>altitude </td><td>float </td><td>m </td><td></td></tr>
-</table>
 <h2><a class="anchor" id="BARO_WORDS"></a>
 BARO_WORDS (ID 46)</h2>
 <table class="doxtable">
@@ -1223,16 +1129,6 @@ WP_MOVED_LLA (ID 47)</h2>
 <td>lon </td><td>int32 </td><td>1e7deg </td><td></td></tr>
 <tr>
 <td>alt </td><td>int32 </td><td>mm </td><td>Height above Mean Sea Level (geoid) </td></tr>
-</table>
-<h2><a class="anchor" id="CHRONO"></a>
-CHRONO (ID 48)</h2>
-<table class="doxtable">
-<tr>
-<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
-<tr>
-<td>tag </td><td>uint8 </td><td></td><td></td></tr>
-<tr>
-<td>time </td><td>uint32 </td><td>us </td><td></td></tr>
 </table>
 <h2><a class="anchor" id="WP_MOVED_ENU"></a>
 WP_MOVED_ENU (ID 49)</h2>
@@ -1308,60 +1204,6 @@ AIRSPEED (ID 54)</h2>
 <tr>
 <td>groundspeed_sp </td><td>float </td><td>m/s </td><td></td></tr>
 </table>
-<h2><a class="anchor" id="XSENS"></a>
-XSENS (ID 55)</h2>
-<table class="doxtable">
-<tr>
-<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
-<tr>
-<td>counter </td><td>int16 </td><td></td><td></td></tr>
-<tr>
-<td>p </td><td>float </td><td>deg/s </td><td></td></tr>
-<tr>
-<td>q </td><td>float </td><td>deg/s </td><td></td></tr>
-<tr>
-<td>r </td><td>float </td><td>deg/s </td><td></td></tr>
-<tr>
-<td>phi </td><td>float </td><td>deg </td><td></td></tr>
-<tr>
-<td>theta </td><td>float </td><td>deg </td><td></td></tr>
-<tr>
-<td>psi </td><td>float </td><td>deg </td><td></td></tr>
-<tr>
-<td>ax </td><td>float </td><td>m/s2 </td><td></td></tr>
-<tr>
-<td>ay </td><td>float </td><td>m/s2 </td><td></td></tr>
-<tr>
-<td>az </td><td>float </td><td>m/s2 </td><td></td></tr>
-<tr>
-<td>vx </td><td>float </td><td>m/s </td><td></td></tr>
-<tr>
-<td>vy </td><td>float </td><td>m/s </td><td></td></tr>
-<tr>
-<td>vz </td><td>float </td><td>m/s </td><td></td></tr>
-<tr>
-<td>lat </td><td>float </td><td>deg </td><td></td></tr>
-<tr>
-<td>lon </td><td>float </td><td>deg </td><td></td></tr>
-<tr>
-<td>alt </td><td>float </td><td>m </td><td></td></tr>
-<tr>
-<td>status </td><td>uint8 </td><td></td><td></td></tr>
-<tr>
-<td>hour </td><td>uint8 </td><td></td><td></td></tr>
-<tr>
-<td>min </td><td>uint8 </td><td></td><td></td></tr>
-<tr>
-<td>sec </td><td>uint8 </td><td></td><td></td></tr>
-<tr>
-<td>nanosec </td><td>uint32 </td><td></td><td></td></tr>
-<tr>
-<td>year </td><td>uint16 </td><td></td><td></td></tr>
-<tr>
-<td>month </td><td>uint8 </td><td></td><td></td></tr>
-<tr>
-<td>day </td><td>uint8 </td><td></td><td></td></tr>
-</table>
 <h2><a class="anchor" id="BARO_ETS"></a>
 BARO_ETS (ID 56)</h2>
 <table class="doxtable">
@@ -1385,24 +1227,6 @@ AIRSPEED_ETS (ID 57)</h2>
 <td>offset </td><td>uint16 </td><td></td><td></td></tr>
 <tr>
 <td>scaled </td><td>float </td><td></td><td></td></tr>
-</table>
-<h2><a class="anchor" id="PBN"></a>
-PBN (ID 58)</h2>
-<table class="doxtable">
-<tr>
-<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
-<tr>
-<td>airspeed_adc </td><td>uint16 </td><td></td><td></td></tr>
-<tr>
-<td>altitude_adc </td><td>uint16 </td><td></td><td></td></tr>
-<tr>
-<td>airspeed </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>altitude </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>airspeed_offset </td><td>uint16 </td><td></td><td></td></tr>
-<tr>
-<td>altitude_offset </td><td>uint16 </td><td></td><td></td></tr>
 </table>
 <h2><a class="anchor" id="GPS_LLA"></a>
 GPS_LLA (ID 59)</h2>
@@ -1457,44 +1281,6 @@ H_CTL_A (ID 60)</h2>
 <td>theta </td><td>float </td><td>rad </td><td></td></tr>
 <tr>
 <td>elevator_sp </td><td>int16 </td><td>pprz </td><td></td></tr>
-</table>
-<h2><a class="anchor" id="TURB_PRESSURE_RAW"></a>
-TURB_PRESSURE_RAW (ID 61)</h2>
-<table class="doxtable">
-<tr>
-<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
-<tr>
-<td>ch_0 </td><td>int32 </td><td>adc </td><td></td></tr>
-<tr>
-<td>ch_1 </td><td>int32 </td><td>adc </td><td></td></tr>
-<tr>
-<td>ch_2 </td><td>int32 </td><td>adc </td><td></td></tr>
-<tr>
-<td>ch_3 </td><td>int32 </td><td>adc </td><td></td></tr>
-<tr>
-<td>ch_4 </td><td>int32 </td><td>adc </td><td></td></tr>
-<tr>
-<td>ch_5 </td><td>int32 </td><td>adc </td><td></td></tr>
-<tr>
-<td>ch_6 </td><td>int32 </td><td>adc </td><td></td></tr>
-<tr>
-<td>ch_7 </td><td>int32 </td><td>adc </td><td></td></tr>
-<tr>
-<td>ch_8 </td><td>int32 </td><td>adc </td><td></td></tr>
-<tr>
-<td>ch_9 </td><td>int32 </td><td>adc </td><td></td></tr>
-<tr>
-<td>ch_10 </td><td>int32 </td><td>adc </td><td></td></tr>
-<tr>
-<td>ch_11 </td><td>int32 </td><td>adc </td><td></td></tr>
-<tr>
-<td>ch_12 </td><td>int32 </td><td>adc </td><td></td></tr>
-<tr>
-<td>ch_13 </td><td>int32 </td><td>adc </td><td></td></tr>
-<tr>
-<td>ch_14 </td><td>int32 </td><td>adc </td><td></td></tr>
-<tr>
-<td>ch_15 </td><td>int32 </td><td>adc </td><td></td></tr>
 </table>
 <h2><a class="anchor" id="TURB_PRESSURE_VOLTAGE"></a>
 TURB_PRESSURE_VOLTAGE (ID 62)</h2>
@@ -1670,6 +1456,23 @@ XTEND_RSSI (ID 70)</h2>
 <tr>
 <td>duty </td><td>uint8 </td><td>% </td><td></td></tr>
 </table>
+<h2><a class="anchor" id="GVF"></a>
+GVF (ID 71)</h2>
+<p>Information about the trajectory followed by the Guidance Vector Field algorithm.</p>
+<table class="doxtable">
+<tr>
+<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
+<tr>
+<td>error </td><td>float </td><td></td><td>Error index e, i.e. 'distance' to the trajectory </td></tr>
+<tr>
+<td>traj </td><td>uint8 </td><td></td><td>Kind of trajectory </td></tr>
+<tr>
+<td>s </td><td>int8 </td><td>1, -1 </td><td>Direction to be followed </td></tr>
+<tr>
+<td>ke </td><td>float </td><td></td><td>Gain for the vector field convergence </td></tr>
+<tr>
+<td>p </td><td>float[] </td><td></td><td>Parameters describing the trajectory </td></tr>
+</table>
 <h2><a class="anchor" id="SUPERBITRF"></a>
 SUPERBITRF (ID 72)</h2>
 <table class="doxtable">
@@ -1715,58 +1518,6 @@ GX3_INFO (ID 73)</h2>
 <td>hdr_error </td><td>uint32 </td><td></td><td></td></tr>
 <tr>
 <td>GX3_chksm </td><td>uint16 </td><td></td><td></td></tr>
-</table>
-<h2><a class="anchor" id="EXPLAIN"></a>
-EXPLAIN (ID 74)</h2>
-<table class="doxtable">
-<tr>
-<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
-<tr>
-<td>type </td><td>uint8 </td><td>NAME, SETTING, WAYPOINT, BLOCK, IMAV2013 </td><td></td></tr>
-<tr>
-<td>id </td><td>uint8 </td><td></td><td></td></tr>
-<tr>
-<td>string </td><td>uint8[] </td><td></td><td></td></tr>
-</table>
-<h2><a class="anchor" id="VIDEO_TELEMETRY"></a>
-VIDEO_TELEMETRY (ID 75)</h2>
-<table class="doxtable">
-<tr>
-<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
-<tr>
-<td>blob_x1 </td><td>int32 </td><td>pixels </td><td></td></tr>
-<tr>
-<td>blob_y1 </td><td>int32 </td><td>pixels </td><td></td></tr>
-<tr>
-<td>blob_x2 </td><td>int32 </td><td>pixels </td><td></td></tr>
-<tr>
-<td>blob_y2 </td><td>int32 </td><td>pixels </td><td></td></tr>
-<tr>
-<td>blob_x3 </td><td>int32 </td><td>pixels </td><td></td></tr>
-<tr>
-<td>blob_y3 </td><td>int32 </td><td>pixels </td><td></td></tr>
-<tr>
-<td>blob_x4 </td><td>int32 </td><td>pixels </td><td></td></tr>
-<tr>
-<td>blob_y4 </td><td>int32 </td><td>pixels </td><td></td></tr>
-</table>
-<h2><a class="anchor" id="VF_UPDATE"></a>
-VF_UPDATE (ID 76)</h2>
-<table class="doxtable">
-<tr>
-<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
-<tr>
-<td>baro </td><td>float </td><td>m </td><td></td></tr>
-<tr>
-<td>range_meter </td><td>float </td><td>m </td><td></td></tr>
-</table>
-<h2><a class="anchor" id="VF_PREDICT"></a>
-VF_PREDICT (ID 77)</h2>
-<table class="doxtable">
-<tr>
-<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
-<tr>
-<td>accel </td><td>float </td><td>m/s/s </td><td></td></tr>
 </table>
 <h2><a class="anchor" id="INV_FILTER"></a>
 INV_FILTER (ID 78)</h2>
@@ -1816,17 +1567,7 @@ MISSION_STATUS (ID 79)</h2>
 <tr>
 <td>remaining_time </td><td>float </td><td></td><td></td></tr>
 <tr>
-<td>task_list </td><td>uint8[] </td><td></td><td></td></tr>
-</table>
-<h2><a class="anchor" id="CROSS_TRACK_ERROR"></a>
-CROSS_TRACK_ERROR (ID 80)</h2>
-<table class="doxtable">
-<tr>
-<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
-<tr>
-<td>cross_track_error </td><td>float </td><td>m </td><td></td></tr>
-<tr>
-<td>cte_int </td><td>float </td><td></td><td></td></tr>
+<td>index_list </td><td>uint8[] </td><td></td><td></td></tr>
 </table>
 <h2><a class="anchor" id="GENERIC_COM"></a>
 GENERIC_COM (ID 81)</h2>
@@ -1999,43 +1740,18 @@ DPICCO_STATUS (ID 91)</h2>
 <tr>
 <td>ftemp </td><td>float </td><td>deg_celsius </td><td></td></tr>
 </table>
-<h2><a class="anchor" id="ANTENNA_DEBUG"></a>
-ANTENNA_DEBUG (ID 92)</h2>
+<h2><a class="anchor" id="LOGGER_STATUS"></a>
+LOGGER_STATUS (ID 92)</h2>
+<p>Logger status and error id (dependent of the logging system)</p>
 <table class="doxtable">
 <tr>
 <th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
 <tr>
-<td>mag_xraw </td><td>int32 </td><td></td><td></td></tr>
+<td>status </td><td>uint8 </td><td>STOPPED, RUNNING, ERROR </td><td>General status of the logger </td></tr>
 <tr>
-<td>mag_yraw </td><td>int32 </td><td></td><td></td></tr>
+<td>errno </td><td>uint8 </td><td></td><td>Error number, depend of the logging system, provides detailed information </td></tr>
 <tr>
-<td>mag_xcal </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>mag_ycal </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>mag_heading </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>mag_magnitude </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>mag_temp </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>mag_distor </td><td>uint8 </td><td></td><td></td></tr>
-<tr>
-<td>mag_cal_status </td><td>uint8 </td><td></td><td></td></tr>
-</table>
-<h2><a class="anchor" id="ANTENNA_STATUS"></a>
-ANTENNA_STATUS (ID 93)</h2>
-<table class="doxtable">
-<tr>
-<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
-<tr>
-<td>azim_sp </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>elev_sp </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>id_sp </td><td>uint8 </td><td></td><td></td></tr>
-<tr>
-<td>mode </td><td>uint8 </td><td></td><td></td></tr>
+<td>used </td><td>uint32 </td><td>bytes </td><td>Accumulated number of bytes written by the logger </td></tr>
 </table>
 <h2><a class="anchor" id="MOTOR_BENCH_STATUS"></a>
 MOTOR_BENCH_STATUS (ID 94)</h2>
@@ -2058,20 +1774,6 @@ MOTOR_BENCH_STATUS (ID 94)</h2>
 <td>time_s </td><td>uint16 </td><td></td><td></td></tr>
 <tr>
 <td>mode </td><td>uint8 </td><td></td><td></td></tr>
-</table>
-<h2><a class="anchor" id="MOTOR_BENCH_STATIC"></a>
-MOTOR_BENCH_STATIC (ID 95)</h2>
-<table class="doxtable">
-<tr>
-<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
-<tr>
-<td>av_rpm </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>av_thrust </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>av_current </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>throttle </td><td>uint16 </td><td></td><td></td></tr>
 </table>
 <h2><a class="anchor" id="HIH_STATUS"></a>
 HIH_STATUS (ID 96)</h2>
@@ -2247,17 +1949,21 @@ DC_SHOT (ID 110)</h2>
 <tr>
 <td>itow </td><td>uint32 </td><td>ms </td><td>GPS time of week </td></tr>
 </table>
-<h2><a class="anchor" id="TEST_BOARD_RESULTS"></a>
-TEST_BOARD_RESULTS (ID 111)</h2>
+<h2><a class="anchor" id="CAMERA_PAYLOAD"></a>
+CAMERA_PAYLOAD (ID 111)</h2>
 <table class="doxtable">
 <tr>
 <th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
 <tr>
-<td>uart </td><td>uint8 </td><td></td><td></td></tr>
+<td>timestamp </td><td>float </td><td>s </td><td>Payload computer seconds since startup </td></tr>
 <tr>
-<td>ppm </td><td>uint8 </td><td></td><td></td></tr>
+<td>used_memory </td><td>uint8 </td><td>% </td><td>Percentage of used memory (RAM) of the payload computer rounded up to whole percent </td></tr>
 <tr>
-<td>servo </td><td>uint16[] </td><td></td><td></td></tr>
+<td>used_disk </td><td>uint8 </td><td>% </td><td>Percentage of used disk of the payload computer rounded up to whole percent </td></tr>
+<tr>
+<td>door_status </td><td>uint8 </td><td>UNKNOWN, CLOSE, OPEN </td><td>Payload door open/close </td></tr>
+<tr>
+<td>error_code </td><td>uint8 </td><td>NONE, CAMERA_ERR, DOOR_ERR </td><td>Error codes of the payload </td></tr>
 </table>
 <h2><a class="anchor" id="MOTOR_MIXING"></a>
 MOTOR_MIXING (ID 112)</h2>
@@ -2459,25 +2165,21 @@ POTENTIAL (ID 124)</h2>
 <tr>
 <td>climb </td><td>float </td><td></td><td></td></tr>
 </table>
-<h2><a class="anchor" id="VERTICAL_ENERGY"></a>
-VERTICAL_ENERGY (ID 125)</h2>
+<h2><a class="anchor" id="COPILOT_STATUS"></a>
+COPILOT_STATUS (ID 125)</h2>
 <table class="doxtable">
 <tr>
 <th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
 <tr>
-<td>Epot_err </td><td>float </td><td></td><td></td></tr>
+<td>timestamp </td><td>float </td><td>s </td><td>Mission computer seconds since startup </td></tr>
 <tr>
-<td>Ekin_err </td><td>float </td><td></td><td></td></tr>
+<td>used_memory </td><td>uint8 </td><td>% </td><td>Percentage of used memory (RAM) of the mission computer rounded up to whole percent </td></tr>
 <tr>
-<td>Etot_err </td><td>float </td><td></td><td></td></tr>
+<td>used_disk </td><td>uint8 </td><td>% </td><td>Percentage of used disk of the mission computer rounded up to whole percent </td></tr>
 <tr>
-<td>Edis_err </td><td>float </td><td></td><td></td></tr>
+<td>status </td><td>uint8 </td><td>UNKNOWN, INIT, LOGGING, FAULT </td><td>Mission computer status </td></tr>
 <tr>
-<td>throttle </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>nav_pitch </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>speed_sp </td><td>float </td><td></td><td></td></tr>
+<td>error_code </td><td>uint8 </td><td>NONE, IO_ERROR </td><td>Error codes of the mission computer </td></tr>
 </table>
 <h2><a class="anchor" id="TEMP_TCOUPLE"></a>
 TEMP_TCOUPLE (ID 126)</h2>
@@ -2537,7 +2239,17 @@ CAMERA_SNAPSHOT (ID 128)</h2>
 <tr>
 <th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
 <tr>
-<td>snapshot_image_number </td><td>uint16 </td><td></td><td></td></tr>
+<td>camera_id </td><td>uint16 </td><td></td><td>Unique camera ID - consists of make,model and camera index </td></tr>
+<tr>
+<td>camera_state </td><td>uint8 </td><td>UNKNOWN, OK, ERROR </td><td><a class="el" href="group__state__interface.html#structState" title="Structure holding vehicle state data. ">State</a> of the given camera </td></tr>
+<tr>
+<td>snapshot_image_number </td><td>uint16 </td><td></td><td>Snapshot number in sequence </td></tr>
+<tr>
+<td>snapshot_valid </td><td>uint8 </td><td>bool </td><td>Flag checking whether the last snapshot was valid </td></tr>
+<tr>
+<td>lens_temp </td><td>float </td><td>deg_celsius </td><td>Lens temperature, NaN if not measured </td></tr>
+<tr>
+<td>array_temp </td><td>float </td><td>deg_celsius </td><td>Imager sensor temperature, NaN if not measured </td></tr>
 </table>
 <h2><a class="anchor" id="TIMESTAMP"></a>
 TIMESTAMP (ID 129)</h2>
@@ -2673,25 +2385,7 @@ FILTER (ID 134)</h2>
 <tr>
 <td>br </td><td>int32 </td><td></td><td></td></tr>
 <tr>
-<td>comp_id </td><td>uint8 </td><td>NONE, GENERIC, IR, ICQ, ICE, FC, DCM, FINV, MLKF, GX3 </td><td></td></tr>
-</table>
-<h2><a class="anchor" id="FILTER2"></a>
-FILTER2 (ID 135)</h2>
-<table class="doxtable">
-<tr>
-<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
-<tr>
-<td>px </td><td>int32 </td><td></td><td></td></tr>
-<tr>
-<td>py </td><td>int32 </td><td></td><td></td></tr>
-<tr>
-<td>pz </td><td>int32 </td><td></td><td></td></tr>
-<tr>
-<td>gsx </td><td>int32 </td><td></td><td></td></tr>
-<tr>
-<td>gsy </td><td>int32 </td><td></td><td></td></tr>
-<tr>
-<td>gsz </td><td>int32 </td><td></td><td></td></tr>
+<td>comp_id </td><td>uint8 </td><td>NONE, GENERIC, IR, ICQ, ICE, FC, DCM, FINV, MLKF, GX3, CHIMU, VN </td><td></td></tr>
 </table>
 <h2><a class="anchor" id="RATE_LOOP"></a>
 RATE_LOOP (ID 136)</h2>
@@ -2755,26 +2449,6 @@ AIRSPEED_MS45XX (ID 138)</h2>
 <td>temperature </td><td>int16 </td><td>0.1 deg_celcius </td><td></td></tr>
 <tr>
 <td>airspeed </td><td>float </td><td>m/s </td><td></td></tr>
-</table>
-<h2><a class="anchor" id="FILTER_COR"></a>
-FILTER_COR (ID 139)</h2>
-<table class="doxtable">
-<tr>
-<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
-<tr>
-<td>mphi </td><td>int32 </td><td></td><td></td></tr>
-<tr>
-<td>mtheta </td><td>int32 </td><td></td><td></td></tr>
-<tr>
-<td>mpsi </td><td>int32 </td><td></td><td></td></tr>
-<tr>
-<td>qi </td><td>int32 </td><td></td><td></td></tr>
-<tr>
-<td>qx </td><td>int32 </td><td></td><td></td></tr>
-<tr>
-<td>qy </td><td>int32 </td><td></td><td></td></tr>
-<tr>
-<td>qz </td><td>int32 </td><td></td><td></td></tr>
 </table>
 <h2><a class="anchor" id="STAB_ATTITUDE_INT"></a>
 STAB_ATTITUDE_INT (ID 140)</h2>
@@ -2990,7 +2664,7 @@ HOVER_LOOP (ID 146)</h2>
 <tr>
 <td>cmd_y </td><td>int32 </td><td></td><td></td></tr>
 <tr>
-<td>cmd_heading </td><td>int32 </td><td></td><td></td></tr>
+<td>cmd_heading </td><td>float </td><td>rad </td><td></td></tr>
 </table>
 <h2><a class="anchor" id="ROTORCRAFT_FP"></a>
 ROTORCRAFT_FP (ID 147)</h2>
@@ -3192,7 +2866,7 @@ GPS_INT (ID 155)</h2>
 <tr>
 <td>fix </td><td>uint8 </td><td>NONE, NA, 2D, 3D, DGPS, RTK </td><td></td></tr>
 <tr>
-<td>comp_id </td><td>uint8 </td><td>NONE, UBX, NMEA, SIRF, SKYTRAQ, MTK, PIKSI, XSENS, DATALINK, UDP, ARDRONE2, SIM </td><td></td></tr>
+<td>comp_id </td><td>uint8 </td><td>NONE, UBX, NMEA, SIRF, SKYTRAQ, MTK, PIKSI, XSENS, DATALINK, UDP, ARDRONE2, SIM, MULTI, VECTORNAV, IMCU </td><td></td></tr>
 </table>
 <h2><a class="anchor" id="AHRS_EULER_INT"></a>
 AHRS_EULER_INT (ID 156)</h2>
@@ -3212,7 +2886,7 @@ AHRS_EULER_INT (ID 156)</h2>
 <tr>
 <td>body_psi </td><td>int32 </td><td></td><td></td></tr>
 <tr>
-<td>comp_id </td><td>uint8 </td><td>NONE, GENERIC, IR, ICQ, ICE, FC, DCM, FINV, MLKF, GX3 </td><td></td></tr>
+<td>comp_id </td><td>uint8 </td><td>NONE, GENERIC, IR, ICQ, ICE, FC, DCM, FINV, MLKF, GX3, CHIMU, VN </td><td></td></tr>
 </table>
 <h2><a class="anchor" id="AHRS_QUAT_INT"></a>
 AHRS_QUAT_INT (ID 157)</h2>
@@ -3238,51 +2912,7 @@ AHRS_QUAT_INT (ID 157)</h2>
 <tr>
 <td>body_qz </td><td>int32 </td><td></td><td></td></tr>
 <tr>
-<td>comp_id </td><td>uint8 </td><td>NONE, GENERIC, IR, ICQ, ICE, FC, DCM, FINV, MLKF, GX3 </td><td></td></tr>
-</table>
-<h2><a class="anchor" id="AHRS_RMAT_INT"></a>
-AHRS_RMAT_INT (ID 158)</h2>
-<table class="doxtable">
-<tr>
-<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
-<tr>
-<td>imu_m00 </td><td>int32 </td><td></td><td></td></tr>
-<tr>
-<td>imu_m01 </td><td>int32 </td><td></td><td></td></tr>
-<tr>
-<td>imu_m02 </td><td>int32 </td><td></td><td></td></tr>
-<tr>
-<td>imu_m10 </td><td>int32 </td><td></td><td></td></tr>
-<tr>
-<td>imu_m11 </td><td>int32 </td><td></td><td></td></tr>
-<tr>
-<td>imu_m12 </td><td>int32 </td><td></td><td></td></tr>
-<tr>
-<td>imu_m20 </td><td>int32 </td><td></td><td></td></tr>
-<tr>
-<td>imu_m21 </td><td>int32 </td><td></td><td></td></tr>
-<tr>
-<td>imu_m22 </td><td>int32 </td><td></td><td></td></tr>
-<tr>
-<td>body_m00 </td><td>int32 </td><td></td><td></td></tr>
-<tr>
-<td>body_m01 </td><td>int32 </td><td></td><td></td></tr>
-<tr>
-<td>body_m02 </td><td>int32 </td><td></td><td></td></tr>
-<tr>
-<td>body_m10 </td><td>int32 </td><td></td><td></td></tr>
-<tr>
-<td>body_m11 </td><td>int32 </td><td></td><td></td></tr>
-<tr>
-<td>body_m12 </td><td>int32 </td><td></td><td></td></tr>
-<tr>
-<td>body_m20 </td><td>int32 </td><td></td><td></td></tr>
-<tr>
-<td>body_m21 </td><td>int32 </td><td></td><td></td></tr>
-<tr>
-<td>body_m22 </td><td>int32 </td><td></td><td></td></tr>
-<tr>
-<td>comp_id </td><td>uint8 </td><td>NONE, GENERIC, IR, ICQ, ICE, FC, DCM, FINV, MLKF, GX3 </td><td></td></tr>
+<td>comp_id </td><td>uint8 </td><td>NONE, GENERIC, IR, ICQ, ICE, FC, DCM, FINV, MLKF, GX3, CHIMU, VN </td><td></td></tr>
 </table>
 <h2><a class="anchor" id="ROTORCRAFT_NAV_STATUS"></a>
 ROTORCRAFT_NAV_STATUS (ID 159)</h2>
@@ -3395,6 +3025,10 @@ HFF (ID 164)</h2>
 <td>xdd </td><td>float </td><td></td><td></td></tr>
 <tr>
 <td>ydd </td><td>float </td><td></td><td></td></tr>
+<tr>
+<td>xbias </td><td>float </td><td></td><td></td></tr>
+<tr>
+<td>ybias </td><td>float </td><td></td><td></td></tr>
 </table>
 <h2><a class="anchor" id="HFF_DBG"></a>
 HFF_DBG (ID 165)</h2>
@@ -3417,6 +3051,10 @@ HFF_DBG (ID 165)</h2>
 <td>Pxdxd </td><td>float </td><td></td><td></td></tr>
 <tr>
 <td>Pydyd </td><td>float </td><td></td><td></td></tr>
+<tr>
+<td>Pxbiasxbias </td><td>float </td><td></td><td></td></tr>
+<tr>
+<td>Pybiasybias </td><td>float </td><td></td><td></td></tr>
 </table>
 <h2><a class="anchor" id="HFF_GPS"></a>
 HFF_GPS (ID 166)</h2>
@@ -3429,16 +3067,6 @@ HFF_GPS (ID 166)</h2>
 <td>lag_cnt_err </td><td>int16 </td><td></td><td></td></tr>
 <tr>
 <td>save_cnt </td><td>int16 </td><td></td><td></td></tr>
-</table>
-<h2><a class="anchor" id="INS_SONAR"></a>
-INS_SONAR (ID 167)</h2>
-<table class="doxtable">
-<tr>
-<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
-<tr>
-<td>distance </td><td>float </td><td>m </td><td></td></tr>
-<tr>
-<td>var </td><td>float </td><td></td><td></td></tr>
 </table>
 <h2><a class="anchor" id="ROTORCRAFT_CAM"></a>
 ROTORCRAFT_CAM (ID 168)</h2>
@@ -3472,84 +3100,6 @@ AHRS_REF_QUAT (ID 169)</h2>
 <tr>
 <td>body_qz </td><td>int32 </td><td></td><td></td></tr>
 </table>
-<h2><a class="anchor" id="EKF7_XHAT"></a>
-EKF7_XHAT (ID 170)</h2>
-<table class="doxtable">
-<tr>
-<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
-<tr>
-<td>c </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>s1 </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>s2 </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>s3 </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>p </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>q </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>r </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>bp </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>bq </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>br </td><td>float </td><td></td><td></td></tr>
-</table>
-<h2><a class="anchor" id="EKF7_Y"></a>
-EKF7_Y (ID 171)</h2>
-<table class="doxtable">
-<tr>
-<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
-<tr>
-<td>timecount </td><td>uint16 </td><td></td><td></td></tr>
-<tr>
-<td>g1 </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>g2 </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>g3 </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>m1 </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>m2 </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>m3 </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>p </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>q </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>r </td><td>float </td><td></td><td></td></tr>
-</table>
-<h2><a class="anchor" id="EKF7_P_DIAG"></a>
-EKF7_P_DIAG (ID 172)</h2>
-<table class="doxtable">
-<tr>
-<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
-<tr>
-<td>c </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>s1 </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>s2 </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>s3 </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>p </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>q </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>r </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>bp </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>bq </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>br </td><td>float </td><td></td><td></td></tr>
-</table>
 <h2><a class="anchor" id="AHRS_EULER"></a>
 AHRS_EULER (ID 173)</h2>
 <table class="doxtable">
@@ -3562,7 +3112,7 @@ AHRS_EULER (ID 173)</h2>
 <tr>
 <td>psi </td><td>float </td><td>rad </td><td></td></tr>
 <tr>
-<td>comp_id </td><td>uint8 </td><td>NONE, GENERIC, IR, ICQ, ICE, FC, DCM, FINV, MLKF, GX3 </td><td></td></tr>
+<td>comp_id </td><td>uint8 </td><td>NONE, GENERIC, IR, ICQ, ICE, FC, DCM, FINV, MLKF, GX3, CHIMU, VN </td><td></td></tr>
 </table>
 <h2><a class="anchor" id="AHRS_MEASUREMENT_EULER"></a>
 AHRS_MEASUREMENT_EULER (ID 174)</h2>
@@ -3620,7 +3170,7 @@ AHRS_GYRO_BIAS_INT (ID 178)</h2>
 <tr>
 <td>br </td><td>int32 </td><td></td><td></td></tr>
 <tr>
-<td>comp_id </td><td>uint8 </td><td>NONE, GENERIC, IR, ICQ, ICE, FC, DCM, FINV, MLKF, GX3 </td><td></td></tr>
+<td>comp_id </td><td>uint8 </td><td>NONE, GENERIC, IR, ICQ, ICE, FC, DCM, FINV, MLKF, GX3, CHIMU, VN </td><td></td></tr>
 </table>
 <h2><a class="anchor" id="AEROPROBE"></a>
 AEROPROBE (ID 179)</h2>
@@ -3656,214 +3206,6 @@ FMS_TIME (ID 180)</h2>
 <td>tv_nsec </td><td>uint32 </td><td></td><td></td></tr>
 <tr>
 <td>delay_ns </td><td>uint32 </td><td></td><td></td></tr>
-</table>
-<h2><a class="anchor" id="LOADCELL"></a>
-LOADCELL (ID 181)</h2>
-<table class="doxtable">
-<tr>
-<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
-<tr>
-<td>load </td><td>int32 </td><td></td><td></td></tr>
-</table>
-<h2><a class="anchor" id="FLA_DEBUG"></a>
-FLA_DEBUG (ID 182)</h2>
-<table class="doxtable">
-<tr>
-<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
-<tr>
-<td>past_input </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>imu_rate </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>desired_accel </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>motor_command </td><td>float </td><td></td><td></td></tr>
-</table>
-<h2><a class="anchor" id="BLMC_FAULT_STATUS"></a>
-BLMC_FAULT_STATUS (ID 183)</h2>
-<table class="doxtable">
-<tr>
-<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
-<tr>
-<td>raw_fault </td><td>uint16[] </td><td></td><td></td></tr>
-</table>
-<h2><a class="anchor" id="BLMC_SPEEDS"></a>
-BLMC_SPEEDS (ID 184)</h2>
-<table class="doxtable">
-<tr>
-<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
-<tr>
-<td>speeds </td><td>int16[] </td><td></td><td></td></tr>
-</table>
-<h2><a class="anchor" id="AHRS_DEBUG_QUAT"></a>
-AHRS_DEBUG_QUAT (ID 185)</h2>
-<table class="doxtable">
-<tr>
-<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
-<tr>
-<td>jqi </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>jqx </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>jqy </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>jqz </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>xqi </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>xqx </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>xqy </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>xqz </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>mqi </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>mqx </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>mqy </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>mqz </td><td>float </td><td></td><td></td></tr>
-</table>
-<h2><a class="anchor" id="BLMC_BUSVOLTS"></a>
-BLMC_BUSVOLTS (ID 186)</h2>
-<table class="doxtable">
-<tr>
-<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
-<tr>
-<td>busvolts </td><td>uint16[] </td><td></td><td></td></tr>
-</table>
-<h2><a class="anchor" id="SYSTEM_STATUS"></a>
-SYSTEM_STATUS (ID 187)</h2>
-<table class="doxtable">
-<tr>
-<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
-<tr>
-<td>csc1_loop_count </td><td>uint32 </td><td></td><td></td></tr>
-<tr>
-<td>csc1_msg_count </td><td>uint32 </td><td></td><td></td></tr>
-<tr>
-<td>csc2_loop_count </td><td>uint32 </td><td></td><td></td></tr>
-<tr>
-<td>csc2_msg_count </td><td>uint32 </td><td></td><td></td></tr>
-<tr>
-<td>can_rx_err </td><td>uint32 </td><td></td><td></td></tr>
-<tr>
-<td>can_tx_err </td><td>uint32 </td><td></td><td></td></tr>
-<tr>
-<td>rc_parser_err </td><td>uint32 </td><td></td><td></td></tr>
-<tr>
-<td>system_fault </td><td>uint8 </td><td></td><td></td></tr>
-</table>
-<h2><a class="anchor" id="DYNAMIXEL"></a>
-DYNAMIXEL (ID 188)</h2>
-<table class="doxtable">
-<tr>
-<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
-<tr>
-<td>left_wing </td><td>uint16 </td><td></td><td></td></tr>
-<tr>
-<td>right_wing </td><td>uint16 </td><td></td><td></td></tr>
-<tr>
-<td>left_wing_flag </td><td>uint8 </td><td></td><td></td></tr>
-<tr>
-<td>right_wing_flag </td><td>uint8 </td><td></td><td></td></tr>
-<tr>
-<td>invalid_position </td><td>uint32 </td><td></td><td></td></tr>
-<tr>
-<td>timeout_events </td><td>uint32 </td><td></td><td></td></tr>
-<tr>
-<td>checksum_errors </td><td>uint32 </td><td></td><td></td></tr>
-<tr>
-<td>fuse_rotation_angle </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>fuse_rotation_rate </td><td>float </td><td></td><td></td></tr>
-</table>
-<h2><a class="anchor" id="RMAT_DEBUG"></a>
-RMAT_DEBUG (ID 189)</h2>
-<table class="doxtable">
-<tr>
-<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
-<tr>
-<td>a </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>b </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>c </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>d </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>e </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>f </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>g </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>h </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>i </td><td>float </td><td></td><td></td></tr>
-</table>
-<h2><a class="anchor" id="SIMPLE_COMMANDS"></a>
-SIMPLE_COMMANDS (ID 190)</h2>
-<table class="doxtable">
-<tr>
-<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
-<tr>
-<td>roll </td><td>int16 </td><td></td><td></td></tr>
-<tr>
-<td>pitch </td><td>int16 </td><td></td><td></td></tr>
-<tr>
-<td>yaw </td><td>int16 </td><td></td><td></td></tr>
-</table>
-<h2><a class="anchor" id="VANE_SENSOR"></a>
-VANE_SENSOR (ID 191)</h2>
-<table class="doxtable">
-<tr>
-<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
-<tr>
-<td>alpha </td><td>float </td><td>rad </td><td></td></tr>
-<tr>
-<td>alpha_filtered </td><td>float </td><td>rad </td><td></td></tr>
-<tr>
-<td>alpha_target </td><td>float </td><td>rad </td><td></td></tr>
-<tr>
-<td>alpha_vane_error </td><td>float </td><td>rad </td><td></td></tr>
-<tr>
-<td>alpha2 </td><td>float </td><td>rad </td><td></td></tr>
-<tr>
-<td>beta </td><td>float </td><td>rad </td><td></td></tr>
-<tr>
-<td>beta_filtered </td><td>float </td><td>rad </td><td></td></tr>
-<tr>
-<td>beta_target </td><td>float </td><td>rad </td><td></td></tr>
-<tr>
-<td>beta_vane_error </td><td>float </td><td>rad </td><td></td></tr>
-<tr>
-<td>beta2 </td><td>float </td><td>rad </td><td></td></tr>
-</table>
-<h2><a class="anchor" id="CONTROLLER_GAINS"></a>
-CONTROLLER_GAINS (ID 192)</h2>
-<table class="doxtable">
-<tr>
-<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
-<tr>
-<td>roll_gamma_p </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>roll_gamma_d </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>roll_gamma_i </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>pitch_gamma_p </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>pitch_gamma_d </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>pitch_gamma_i </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>yaw_gamma_p </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>yaw_gamma_d </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>yaw_gamma_i </td><td>float </td><td></td><td></td></tr>
 </table>
 <h2><a class="anchor" id="AHRS_LKF"></a>
 AHRS_LKF (ID 193)</h2>
@@ -3902,82 +3244,6 @@ AHRS_LKF (ID 193)</h2>
 <td>my </td><td>float </td><td></td><td></td></tr>
 <tr>
 <td>mz </td><td>float </td><td></td><td></td></tr>
-</table>
-<h2><a class="anchor" id="AHRS_LKF_DEBUG"></a>
-AHRS_LKF_DEBUG (ID 194)</h2>
-<table class="doxtable">
-<tr>
-<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
-<tr>
-<td>phi_err </td><td>float </td><td>rad </td><td></td></tr>
-<tr>
-<td>theta_err </td><td>float </td><td>rad </td><td></td></tr>
-<tr>
-<td>psi_err </td><td>float </td><td>rad </td><td></td></tr>
-<tr>
-<td>bp </td><td>float </td><td>rad/s </td><td></td></tr>
-<tr>
-<td>bq </td><td>float </td><td>rad/s </td><td></td></tr>
-<tr>
-<td>br </td><td>float </td><td>rad/s </td><td></td></tr>
-<tr>
-<td>quat_norm </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>phi_accel </td><td>float </td><td>rad </td><td></td></tr>
-<tr>
-<td>theta_accel </td><td>float </td><td>rad </td><td></td></tr>
-<tr>
-<td>phi_cov </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>theta_cov </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>psi_cov </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>bp_cov </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>bq_cov </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>br_cov </td><td>float </td><td></td><td></td></tr>
-</table>
-<h2><a class="anchor" id="AHRS_LKF_ACC_DBG"></a>
-AHRS_LKF_ACC_DBG (ID 195)</h2>
-<table class="doxtable">
-<tr>
-<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
-<tr>
-<td>qi_err </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>qx_err </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>qy_err </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>qz_err </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>bp_err </td><td>float </td><td>rad/s </td><td></td></tr>
-<tr>
-<td>bq_err </td><td>float </td><td>rad/s </td><td></td></tr>
-<tr>
-<td>br_err </td><td>float </td><td>rad/s </td><td></td></tr>
-</table>
-<h2><a class="anchor" id="AHRS_LKF_MAG_DBG"></a>
-AHRS_LKF_MAG_DBG (ID 196)</h2>
-<table class="doxtable">
-<tr>
-<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
-<tr>
-<td>qi_err </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>qx_err </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>qy_err </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>qz_err </td><td>float </td><td></td><td></td></tr>
-<tr>
-<td>bp_err </td><td>float </td><td>rad/s </td><td></td></tr>
-<tr>
-<td>bq_err </td><td>float </td><td>rad/s </td><td></td></tr>
-<tr>
-<td>br_err </td><td>float </td><td>rad/s </td><td></td></tr>
 </table>
 <h2><a class="anchor" id="NPS_SENSORS_SCALED"></a>
 NPS_SENSORS_SCALED (ID 197)</h2>
@@ -4020,24 +3286,6 @@ INS (ID 198)</h2>
 <td>ins_ydd </td><td>int32 </td><td></td><td></td></tr>
 <tr>
 <td>ins_zdd </td><td>int32 </td><td></td><td></td></tr>
-</table>
-<h2><a class="anchor" id="GPS_ERROR"></a>
-GPS_ERROR (ID 199)</h2>
-<table class="doxtable">
-<tr>
-<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
-<tr>
-<td>x_position </td><td>float </td><td>m </td><td></td></tr>
-<tr>
-<td>y_position </td><td>float </td><td>m </td><td></td></tr>
-<tr>
-<td>z_position </td><td>float </td><td>m </td><td></td></tr>
-<tr>
-<td>x_velocity </td><td>float </td><td>m </td><td></td></tr>
-<tr>
-<td>y_velocity </td><td>float </td><td>m </td><td></td></tr>
-<tr>
-<td>z_velocity </td><td>float </td><td>m </td><td></td></tr>
 </table>
 <h2><a class="anchor" id="IMU_GYRO"></a>
 IMU_GYRO (ID 200)</h2>
@@ -4175,32 +3423,6 @@ IMU_PRESSURE (ID 210)</h2>
 <tr>
 <td>p </td><td>float </td><td>pascal </td><td></td></tr>
 </table>
-<h2><a class="anchor" id="IMU_HS_GYRO"></a>
-IMU_HS_GYRO (ID 211)</h2>
-<table class="doxtable">
-<tr>
-<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
-<tr>
-<td>axis </td><td>uint8 </td><td></td><td></td></tr>
-<tr>
-<td>samples </td><td>uint32[] </td><td></td><td></td></tr>
-</table>
-<h2><a class="anchor" id="TEST_PASSTHROUGH_STATUS"></a>
-TEST_PASSTHROUGH_STATUS (ID 212)</h2>
-<table class="doxtable">
-<tr>
-<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
-<tr>
-<td>io_proc_msg_cnt </td><td>uint32 </td><td></td><td></td></tr>
-<tr>
-<td>io_proc_err_cnt </td><td>uint32 </td><td></td><td></td></tr>
-<tr>
-<td>io_link_msg_cnt </td><td>uint32 </td><td></td><td></td></tr>
-<tr>
-<td>io_link_err_cnt </td><td>uint32 </td><td></td><td></td></tr>
-<tr>
-<td>rc_status </td><td>uint8 </td><td>OK, LOST, REALLY_LOST </td><td></td></tr>
-</table>
 <h2><a class="anchor" id="TUNE_VERT"></a>
 TUNE_VERT (ID 213)</h2>
 <table class="doxtable">
@@ -4290,6 +3512,21 @@ STAB_ATTITUDE_INDI (ID 216)</h2>
 <td>g1_r </td><td>float </td><td></td><td></td></tr>
 <tr>
 <td>g2_r </td><td>float </td><td></td><td></td></tr>
+</table>
+<h2><a class="anchor" id="ROTORCRAFT_FP_MIN"></a>
+ROTORCRAFT_FP_MIN (ID 217)</h2>
+<p>Minimalistic message to track Rotorcraft over very low bandwidth links</p>
+<table class="doxtable">
+<tr>
+<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
+<tr>
+<td>east </td><td>int32 </td><td></td><td></td></tr>
+<tr>
+<td>north </td><td>int32 </td><td></td><td></td></tr>
+<tr>
+<td>up </td><td>int32 </td><td></td><td></td></tr>
+<tr>
+<td>gspeed </td><td>uint16 </td><td>cm/s </td><td></td></tr>
 </table>
 <h2><a class="anchor" id="BEBOP_ACTUATORS"></a>
 BEBOP_ACTUATORS (ID 218)</h2>
@@ -4431,7 +3668,7 @@ TIME (ID 227)</h2>
 <tr>
 <th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
 <tr>
-<td>t </td><td>uint32 </td><td></td><td></td></tr>
+<td>t </td><td>uint32 </td><td></td><td>an integral value representing the number of seconds elapsed since 00:00 hours, Jan 1, 1970 UTC </td></tr>
 </table>
 <h2><a class="anchor" id="OPTIC_FLOW_EST"></a>
 OPTIC_FLOW_EST (ID 228)</h2>
@@ -4457,6 +3694,8 @@ OPTIC_FLOW_EST (ID 228)</h2>
 <tr>
 <td>vel_y </td><td>float </td><td>m/s </td><td></td></tr>
 <tr>
+<td>vel_z </td><td>float </td><td>m/s </td><td></td></tr>
+<tr>
 <td>div_size </td><td>float </td><td>1/s </td><td></td></tr>
 <tr>
 <td>surface_roughness </td><td>float </td><td>1/s </td><td></td></tr>
@@ -4469,11 +3708,15 @@ STEREO_IMG (ID 229)</h2>
 <tr>
 <th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
 <tr>
-<td>frequency </td><td>uint8 </td><td></td><td></td></tr>
+<td>type </td><td>uint8 </td><td>DIST_MATRIX, HISTOGRAM, DISPARITY_MAP, RAW </td><td></td></tr>
 <tr>
-<td>data_size </td><td>uint8 </td><td></td><td></td></tr>
+<td>width </td><td>uint8 </td><td></td><td></td></tr>
 <tr>
-<td>imageBuffer </td><td>uint8[] </td><td></td><td></td></tr>
+<td>height </td><td>uint8 </td><td></td><td></td></tr>
+<tr>
+<td>package_nb </td><td>uint8 </td><td></td><td></td></tr>
+<tr>
+<td>image_data </td><td>uint8[] </td><td></td><td></td></tr>
 </table>
 <h2><a class="anchor" id="ROTORCRAFT_STATUS"></a>
 ROTORCRAFT_STATUS (ID 231)</h2>
@@ -4523,6 +3766,8 @@ PX4FLOW (ID 233)</h2>
 <tr>
 <th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
 <tr>
+<td>time_sec </td><td>float </td><td>s </td><td></td></tr>
+<tr>
 <td>sensor_id </td><td>uint8 </td><td></td><td></td></tr>
 <tr>
 <td>flow_x </td><td>int16 </td><td></td><td></td></tr>
@@ -4537,15 +3782,17 @@ PX4FLOW (ID 233)</h2>
 <tr>
 <td>ground_distance </td><td>float </td><td>m </td><td></td></tr>
 </table>
-<h2><a class="anchor" id="OPTICFLOW"></a>
-OPTICFLOW (ID 234)</h2>
+<h2><a class="anchor" id="LIDAR"></a>
+LIDAR (ID 234)</h2>
 <table class="doxtable">
 <tr>
 <th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
 <tr>
-<td>flow </td><td>uint16 </td><td></td><td></td></tr>
+<td>distance </td><td>float </td><td>m </td><td></td></tr>
 <tr>
-<td>ref_alt </td><td>float </td><td></td><td></td></tr>
+<td>status </td><td>uint8 </td><td>INIT, REQ, READ, PARSE </td><td></td></tr>
+<tr>
+<td>trans_status </td><td>uint8 </td><td>Pending, Running, Success, Failed, Done </td><td></td></tr>
 </table>
 <h2><a class="anchor" id="VISUALTARGET"></a>
 VISUALTARGET (ID 235)</h2>
@@ -4598,20 +3845,6 @@ NPS_POS_LLH (ID 238)</h2>
 <td>agl </td><td>float </td><td>m </td><td></td></tr>
 <tr>
 <td>asl </td><td>float </td><td>m </td><td></td></tr>
-</table>
-<h2><a class="anchor" id="NPS_RPMS"></a>
-NPS_RPMS (ID 239)</h2>
-<table class="doxtable">
-<tr>
-<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
-<tr>
-<td>front </td><td>float </td><td>RPM </td><td></td></tr>
-<tr>
-<td>back </td><td>float </td><td>RPM </td><td></td></tr>
-<tr>
-<td>right </td><td>float </td><td>RPM </td><td></td></tr>
-<tr>
-<td>left </td><td>float </td><td>RPM </td><td></td></tr>
 </table>
 <h2><a class="anchor" id="NPS_SPEED_POS"></a>
 NPS_SPEED_POS (ID 240)</h2>
@@ -4666,14 +3899,6 @@ NPS_GYRO_BIAS (ID 242)</h2>
 <td>bq </td><td>float </td><td>deg/s </td><td></td></tr>
 <tr>
 <td>br </td><td>float </td><td>deg/s </td><td></td></tr>
-</table>
-<h2><a class="anchor" id="NPS_RANGE_METER"></a>
-NPS_RANGE_METER (ID 243)</h2>
-<table class="doxtable">
-<tr>
-<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
-<tr>
-<td>dist </td><td>float </td><td>adc </td><td></td></tr>
 </table>
 <h2><a class="anchor" id="NPS_WIND"></a>
 NPS_WIND (ID 244)</h2>
@@ -4735,95 +3960,107 @@ PPRZ_DEBUG (ID 247)</h2>
 <tr>
 <td>errno </td><td>uint8 </td><td></td><td></td></tr>
 </table>
-<h2><a class="anchor" id="NPS_ACCEL_LTP"></a>
-NPS_ACCEL_LTP (ID 248)</h2>
+<h2><a class="anchor" id="BATTERY_MONITOR"></a>
+BATTERY_MONITOR (ID 248)</h2>
 <table class="doxtable">
 <tr>
 <th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
 <tr>
-<td>xdd </td><td>float </td><td>m/s2 </td><td></td></tr>
+<td>version </td><td>uint8 </td><td>v3, v4, v5 </td><td>Battery monitor version </td></tr>
 <tr>
-<td>ydd </td><td>float </td><td>m/s2 </td><td></td></tr>
+<td>bus_dev_stat </td><td>uint8 </td><td>CURRENT, VOLTAGE, TEMP </td><td>Bus monitor status </td></tr>
 <tr>
-<td>zdd </td><td>float </td><td>m/s2 </td><td></td></tr>
+<td>bus_trans_stat </td><td>uint8 </td><td>Pending, Running, Success, Failed, Done </td><td>Bus monitor i2c transaction status </td></tr>
+<tr>
+<td>current_raw </td><td>uint16 </td><td>mV </td><td>Raw bus current reading </td></tr>
+<tr>
+<td>current </td><td>float </td><td>A </td><td>Bus current </td></tr>
+<tr>
+<td>bus_voltage </td><td>uint16 </td><td>mV </td><td>Bus voltage </td></tr>
+<tr>
+<td>bus_temp_raw </td><td>uint16[] </td><td>mV </td><td>Raw temperature reading </td></tr>
+<tr>
+<td>bus_temp </td><td>float[] </td><td>C </td><td>Battery temperatures </td></tr>
+<tr>
+<td>bal1_trans_stat </td><td>uint8 </td><td>Pending, Running, Success, Failed, Done </td><td>Cell bank 1 monitor i2c transaction status </td></tr>
+<tr>
+<td>bal1_cells </td><td>uint16[] </td><td>mV </td><td>Cell bank 1 voltage </td></tr>
+<tr>
+<td>bal2_trans_stat </td><td>uint8 </td><td>Pending, Running, Success, Failed, Done </td><td>Cell bank 2 monitor i2c transaction status </td></tr>
+<tr>
+<td>bal2_cells </td><td>uint16[] </td><td>mV </td><td>Cell bank 2 voltage </td></tr>
+<tr>
+<td>safety_plug </td><td>uint16 </td><td>mV </td><td>Safety plug voltage </td></tr>
 </table>
-<h2><a class="anchor" id="LOOSE_INS_GPS"></a>
-LOOSE_INS_GPS (ID 249)</h2>
+<h2><a class="anchor" id="INDI_G"></a>
+INDI_G (ID 250)</h2>
 <table class="doxtable">
 <tr>
 <th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
 <tr>
-<td>status </td><td>uint8 </td><td>UNINITIALIZED, STARTUP_TRANSIENTS, LOWPASSING, GPS_LOST, NOMINAL </td><td></td></tr>
+<td>G1_roll </td><td>float[] </td><td>none </td><td></td></tr>
 <tr>
-<td>time_running </td><td>double </td><td></td><td></td></tr>
+<td>G1_pitch </td><td>float[] </td><td>none </td><td></td></tr>
 <tr>
-<td>q0 </td><td>double </td><td></td><td></td></tr>
+<td>G1_yaw </td><td>float[] </td><td>none </td><td></td></tr>
 <tr>
-<td>q1 </td><td>double </td><td></td><td></td></tr>
+<td>G1_thrust </td><td>float[] </td><td>none </td><td></td></tr>
 <tr>
-<td>q2 </td><td>double </td><td></td><td></td></tr>
-<tr>
-<td>q3 </td><td>double </td><td></td><td></td></tr>
-<tr>
-<td>phi </td><td>double </td><td></td><td></td></tr>
-<tr>
-<td>theta </td><td>double </td><td></td><td></td></tr>
-<tr>
-<td>psi </td><td>double </td><td></td><td></td></tr>
-<tr>
-<td>north </td><td>double </td><td>m </td><td></td></tr>
-<tr>
-<td>east </td><td>double </td><td>m </td><td></td></tr>
-<tr>
-<td>down </td><td>double </td><td>m </td><td></td></tr>
-<tr>
-<td>v_north </td><td>double </td><td>m/s </td><td></td></tr>
-<tr>
-<td>v_east </td><td>double </td><td>m/s </td><td></td></tr>
-<tr>
-<td>v_down </td><td>double </td><td>m/s </td><td></td></tr>
-<tr>
-<td>est_p </td><td>double </td><td></td><td></td></tr>
-<tr>
-<td>est_q </td><td>double </td><td></td><td></td></tr>
-<tr>
-<td>est_r </td><td>double </td><td></td><td></td></tr>
-<tr>
-<td>gyroBias_x </td><td>double </td><td></td><td></td></tr>
-<tr>
-<td>gyroBias_y </td><td>double </td><td></td><td></td></tr>
-<tr>
-<td>gyroBias_z </td><td>double </td><td></td><td></td></tr>
-<tr>
-<td>imuCallbacks </td><td>uint32 </td><td></td><td></td></tr>
-<tr>
-<td>gpsCallbacks </td><td>uint32 </td><td></td><td></td></tr>
-<tr>
-<td>baroCallbacks </td><td>uint32 </td><td></td><td></td></tr>
+<td>G2 </td><td>float[] </td><td>none </td><td></td></tr>
 </table>
-<h2><a class="anchor" id="AFL_COEFFS"></a>
-AFL_COEFFS (ID 250)</h2>
+<h2><a class="anchor" id="GPS_RTK"></a>
+GPS_RTK (ID 251)</h2>
 <table class="doxtable">
 <tr>
 <th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
 <tr>
-<td>roll_a </td><td>float </td><td></td><td></td></tr>
+<td>iTOW </td><td>uint32 </td><td>ms </td><td></td></tr>
 <tr>
-<td>roll_b </td><td>float </td><td></td><td></td></tr>
+<td>refStationId </td><td>uint16 </td><td></td><td></td></tr>
 <tr>
-<td>roll_c </td><td>float </td><td></td><td></td></tr>
+<td>relPosN </td><td>int32 </td><td>cm </td><td></td></tr>
 <tr>
-<td>pitch_a </td><td>float </td><td></td><td></td></tr>
+<td>relPosE </td><td>int32 </td><td>cm </td><td></td></tr>
 <tr>
-<td>pitch_b </td><td>float </td><td></td><td></td></tr>
+<td>relPosD </td><td>int32 </td><td>cm </td><td></td></tr>
 <tr>
-<td>pitch_c </td><td>float </td><td></td><td></td></tr>
+<td>relPosHPN </td><td>int8 </td><td>mm </td><td></td></tr>
 <tr>
-<td>yaw_a </td><td>float </td><td></td><td></td></tr>
+<td>relPosHPE </td><td>int8 </td><td>mm </td><td></td></tr>
 <tr>
-<td>yaw_b </td><td>float </td><td></td><td></td></tr>
+<td>relPosHPD </td><td>int8 </td><td>mm </td><td></td></tr>
 <tr>
-<td>yaw_c </td><td>float </td><td></td><td></td></tr>
+<td>accN </td><td>uint32 </td><td>mm </td><td></td></tr>
+<tr>
+<td>accE </td><td>uint32 </td><td>mm </td><td></td></tr>
+<tr>
+<td>accD </td><td>uint32 </td><td>mm </td><td></td></tr>
+<tr>
+<td>carrSoln </td><td>uint8 </td><td>NONE, RTK FLOAT, RTK FIX </td><td></td></tr>
+<tr>
+<td>relPosValid </td><td>uint8 </td><td>FALSE, TRUE </td><td></td></tr>
+<tr>
+<td>diffSoln </td><td>uint8 </td><td>NONE, DGPS </td><td></td></tr>
+<tr>
+<td>gnssFixOK </td><td>uint8 </td><td>NONE, 3D </td><td></td></tr>
+</table>
+<h2><a class="anchor" id="GPS_RXMRTCM"></a>
+GPS_RXMRTCM (ID 249)</h2>
+<table class="doxtable">
+<tr>
+<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
+<tr>
+<td>Msg1005 </td><td>uint32 </td><td></td><td></td></tr>
+<tr>
+<td>Msg1077 </td><td>uint32 </td><td></td><td></td></tr>
+<tr>
+<td>Msg1087 </td><td>uint32 </td><td></td><td></td></tr>
+<tr>
+<td>Crc1005 </td><td>uint32 </td><td></td><td></td></tr>
+<tr>
+<td>Crc1077 </td><td>uint32 </td><td></td><td></td></tr>
+<tr>
+<td>Crc1087 </td><td>uint32 </td><td></td><td></td></tr>
 </table>
 <h2><a class="anchor" id="GPS_SMALL"></a>
 GPS_SMALL (ID 252)</h2>
@@ -4868,58 +4105,6 @@ I2C_ERRORS (ID 253)</h2>
 <td>last_unexpected_event </td><td>uint32 </td><td></td><td></td></tr>
 <tr>
 <td>bus_number </td><td>uint8 </td><td></td><td></td></tr>
-</table>
-<h2><a class="anchor" id="RDYB_TRAJECTORY"></a>
-RDYB_TRAJECTORY (ID 254)</h2>
-<table class="doxtable">
-<tr>
-<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
-<tr>
-<td>commanded_phi </td><td>float </td><td>rad </td><td></td></tr>
-<tr>
-<td>commanded_theta </td><td>float </td><td>rad </td><td></td></tr>
-<tr>
-<td>commanded_psi </td><td>float </td><td>rad </td><td></td></tr>
-<tr>
-<td>setpoint_x </td><td>float </td><td>m N </td><td></td></tr>
-<tr>
-<td>setpoint_y </td><td>float </td><td>m E </td><td></td></tr>
-<tr>
-<td>setpoint_z </td><td>float </td><td>m D </td><td></td></tr>
-</table>
-<h2><a class="anchor" id="HENRY_GNSS"></a>
-HENRY_GNSS (ID 255)</h2>
-<table class="doxtable">
-<tr>
-<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
-<tr>
-<td>last_imu_update </td><td>uint32 </td><td></td><td></td></tr>
-<tr>
-<td>GPS_time </td><td>double </td><td></td><td></td></tr>
-<tr>
-<td>GPS_solution_valid </td><td>uint8 </td><td></td><td></td></tr>
-<tr>
-<td>latitude </td><td>double </td><td>rad </td><td></td></tr>
-<tr>
-<td>longitude </td><td>double </td><td>rad </td><td></td></tr>
-<tr>
-<td>altitude </td><td>double </td><td></td><td></td></tr>
-<tr>
-<td>North </td><td>double </td><td></td><td></td></tr>
-<tr>
-<td>East </td><td>double </td><td></td><td></td></tr>
-<tr>
-<td>Down </td><td>double </td><td></td><td></td></tr>
-<tr>
-<td>SVs_Tracked </td><td>uint8 </td><td></td><td></td></tr>
-<tr>
-<td>SVs_PVT </td><td>uint8 </td><td></td><td></td></tr>
-<tr>
-<td>V_North </td><td>double </td><td></td><td></td></tr>
-<tr>
-<td>V_East </td><td>double </td><td></td><td></td></tr>
-<tr>
-<td>V_Down </td><td>double </td><td></td><td></td></tr>
 </table>
 <h1><a class="anchor" id="DATALINK_CLASS"></a>
 Datalink Messages</h1>
@@ -5164,6 +4349,8 @@ MISSION_GOTO_WP (ID 20)</h2>
 <td>wp_alt </td><td>float </td><td>m </td><td>altitude above geoid (MSL) </td></tr>
 <tr>
 <td>duration </td><td>float </td><td>s </td><td></td></tr>
+<tr>
+<td>index </td><td>uint8 </td><td></td><td></td></tr>
 </table>
 <h2><a class="anchor" id="MISSION_GOTO_WP_LLA"></a>
 MISSION_GOTO_WP_LLA (ID 21)</h2>
@@ -5182,6 +4369,8 @@ MISSION_GOTO_WP_LLA (ID 21)</h2>
 <td>wp_alt </td><td>int32 </td><td>mm </td><td>altitude above geoid (MSL) </td></tr>
 <tr>
 <td>duration </td><td>float </td><td>s </td><td></td></tr>
+<tr>
+<td>index </td><td>uint8 </td><td></td><td></td></tr>
 </table>
 <h2><a class="anchor" id="MISSION_CIRCLE"></a>
 MISSION_CIRCLE (ID 22)</h2>
@@ -5202,6 +4391,8 @@ MISSION_CIRCLE (ID 22)</h2>
 <td>radius </td><td>float </td><td>m </td><td></td></tr>
 <tr>
 <td>duration </td><td>float </td><td>s </td><td></td></tr>
+<tr>
+<td>index </td><td>uint8 </td><td></td><td></td></tr>
 </table>
 <h2><a class="anchor" id="MISSION_CIRCLE_LLA"></a>
 MISSION_CIRCLE_LLA (ID 23)</h2>
@@ -5222,6 +4413,8 @@ MISSION_CIRCLE_LLA (ID 23)</h2>
 <td>radius </td><td>float </td><td>m </td><td></td></tr>
 <tr>
 <td>duration </td><td>float </td><td>s </td><td></td></tr>
+<tr>
+<td>index </td><td>uint8 </td><td></td><td></td></tr>
 </table>
 <h2><a class="anchor" id="MISSION_SEGMENT"></a>
 MISSION_SEGMENT (ID 24)</h2>
@@ -5244,6 +4437,8 @@ MISSION_SEGMENT (ID 24)</h2>
 <td>segment_alt </td><td>float </td><td>m </td><td>altitude above geoid (MSL) </td></tr>
 <tr>
 <td>duration </td><td>float </td><td>s </td><td></td></tr>
+<tr>
+<td>index </td><td>uint8 </td><td></td><td></td></tr>
 </table>
 <h2><a class="anchor" id="MISSION_SEGMENT_LLA"></a>
 MISSION_SEGMENT_LLA (ID 25)</h2>
@@ -5266,6 +4461,8 @@ MISSION_SEGMENT_LLA (ID 25)</h2>
 <td>segment_alt </td><td>int32 </td><td>mm </td><td>altitude above geoid (MSL) </td></tr>
 <tr>
 <td>duration </td><td>float </td><td>s </td><td></td></tr>
+<tr>
+<td>index </td><td>uint8 </td><td></td><td></td></tr>
 </table>
 <h2><a class="anchor" id="MISSION_PATH"></a>
 MISSION_PATH (ID 26)</h2>
@@ -5302,6 +4499,8 @@ MISSION_PATH (ID 26)</h2>
 <td>duration </td><td>float </td><td>s </td><td></td></tr>
 <tr>
 <td>nb </td><td>uint8 </td><td></td><td></td></tr>
+<tr>
+<td>index </td><td>uint8 </td><td></td><td></td></tr>
 </table>
 <h2><a class="anchor" id="MISSION_PATH_LLA"></a>
 MISSION_PATH_LLA (ID 27)</h2>
@@ -5338,6 +4537,8 @@ MISSION_PATH_LLA (ID 27)</h2>
 <td>duration </td><td>float </td><td>s </td><td></td></tr>
 <tr>
 <td>nb </td><td>uint8 </td><td></td><td></td></tr>
+<tr>
+<td>index </td><td>uint8 </td><td></td><td></td></tr>
 </table>
 <h2><a class="anchor" id="MISSION_SURVEY"></a>
 MISSION_SURVEY (ID 28)</h2>
@@ -5360,6 +4561,8 @@ MISSION_SURVEY (ID 28)</h2>
 <td>survey_alt </td><td>float </td><td>m </td><td>altitude above geoid (MSL) </td></tr>
 <tr>
 <td>duration </td><td>float </td><td>s </td><td></td></tr>
+<tr>
+<td>index </td><td>uint8 </td><td></td><td></td></tr>
 </table>
 <h2><a class="anchor" id="MISSION_SURVEY_LLA"></a>
 MISSION_SURVEY_LLA (ID 29)</h2>
@@ -5382,6 +4585,8 @@ MISSION_SURVEY_LLA (ID 29)</h2>
 <td>survey_alt </td><td>int32 </td><td>mm </td><td>altitude above geoid (MSL) </td></tr>
 <tr>
 <td>duration </td><td>float </td><td>s </td><td></td></tr>
+<tr>
+<td>index </td><td>uint8 </td><td></td><td></td></tr>
 </table>
 <h2><a class="anchor" id="GOTO_MISSION"></a>
 GOTO_MISSION (ID 30)</h2>
@@ -5406,6 +4611,62 @@ END_MISSION (ID 32)</h2>
 <table class="doxtable">
 <tr>
 <th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
+<tr>
+<td>ac_id </td><td>uint8 </td><td></td><td></td></tr>
+</table>
+<h2><a class="anchor" id="COPILOT_STATUS_DL"></a>
+COPILOT_STATUS_DL (ID 33)</h2>
+<table class="doxtable">
+<tr>
+<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
+<tr>
+<td>ac_id </td><td>uint8 </td><td></td><td></td></tr>
+<tr>
+<td>used_memory </td><td>uint8 </td><td>% </td><td>Percentage of used memory (RAM) of the mission computer rounded up to whole percent </td></tr>
+<tr>
+<td>timestamp </td><td>float </td><td>s </td><td>Mission computer seconds since startup </td></tr>
+<tr>
+<td>used_disk </td><td>uint8 </td><td>% </td><td>Percentage of used disk of the mission computer rounded up to whole percent </td></tr>
+<tr>
+<td>status </td><td>uint8 </td><td>UNKNOWN, INIT, LOGGING, FAULT </td><td>Mission computer status </td></tr>
+<tr>
+<td>error_code </td><td>uint8 </td><td>NONE, IO_ERROR </td><td>Error codes of the mission computer </td></tr>
+</table>
+<h2><a class="anchor" id="CAMERA_PAYLOAD_DL"></a>
+CAMERA_PAYLOAD_DL (ID 34)</h2>
+<table class="doxtable">
+<tr>
+<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
+<tr>
+<td>ac_id </td><td>uint8 </td><td></td><td></td></tr>
+<tr>
+<td>error_code </td><td>uint8 </td><td>NONE, CAMERA_ERR, DOOR_ERR </td><td>Error codes of the payload </td></tr>
+<tr>
+<td>timestamp </td><td>float </td><td>s </td><td>Payload computer seconds sice startup </td></tr>
+<tr>
+<td>used_memory </td><td>uint8 </td><td>% </td><td>Percentage of used memory (RAM) of the payload computer rounded up to whole percent </td></tr>
+<tr>
+<td>used_disk </td><td>uint8 </td><td>% </td><td>Percentage of used disk of the payload computer rounded up to whole percent </td></tr>
+<tr>
+<td>door_status </td><td>uint8 </td><td>UNKNOWN, CLOSE, OPEN </td><td>Payload door open/close </td></tr>
+</table>
+<h2><a class="anchor" id="CAMERA_SNAPSHOT_DL"></a>
+CAMERA_SNAPSHOT_DL (ID 35)</h2>
+<table class="doxtable">
+<tr>
+<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
+<tr>
+<td>camera_id </td><td>uint16 </td><td></td><td>Unique camera ID - consists of make,model and camera index </td></tr>
+<tr>
+<td>snapshot_image_number </td><td>uint16 </td><td></td><td>Snapshot number in sequence </td></tr>
+<tr>
+<td>camera_state </td><td>uint8 </td><td>UNKNOWN, OK, ERROR </td><td><a class="el" href="group__state__interface.html#structState" title="Structure holding vehicle state data. ">State</a> of the given camera </td></tr>
+<tr>
+<td>snapshot_valid </td><td>uint8 </td><td>bool </td><td>Flag checking whether the last snapshot was valid </td></tr>
+<tr>
+<td>array_temp </td><td>float </td><td>deg_celsius </td><td>Imager sensor temperature, NaN if not measured </td></tr>
+<tr>
+<td>lens_temp </td><td>float </td><td>deg_celsius </td><td>Lens temperature, NaN if not measured </td></tr>
 <tr>
 <td>ac_id </td><td>uint8 </td><td></td><td></td></tr>
 </table>
@@ -5480,6 +4741,26 @@ RC_4CH (ID 52)</h2>
 <td>pitch </td><td>int8 </td><td></td><td></td></tr>
 <tr>
 <td>yaw </td><td>int8 </td><td></td><td></td></tr>
+</table>
+<h2><a class="anchor" id="RC_5CH"></a>
+RC_5CH (ID 53)</h2>
+<table class="doxtable">
+<tr>
+<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
+<tr>
+<td>ac_id </td><td>uint8 </td><td></td><td></td></tr>
+<tr>
+<td>throttle </td><td>uint8 </td><td></td><td></td></tr>
+<tr>
+<td>roll </td><td>int8 </td><td></td><td></td></tr>
+<tr>
+<td>pitch </td><td>int8 </td><td></td><td></td></tr>
+<tr>
+<td>yaw </td><td>int8 </td><td></td><td></td></tr>
+<tr>
+<td>mode </td><td>int8 </td><td></td><td></td></tr>
+<tr>
+<td>kill </td><td>int8 </td><td></td><td></td></tr>
 </table>
 <h2><a class="anchor" id="REMOTE_GPS_SMALL"></a>
 REMOTE_GPS_SMALL (ID 54)</h2>
@@ -5685,6 +4966,27 @@ VIDEO_ROI (ID 155)</h2>
 <tr>
 <td>downsized_width </td><td>int32 </td><td></td><td>The width of the image you received. Added because a module the receives this message does not know how big the image was that was broadcasted </td></tr>
 </table>
+<h2><a class="anchor" id="EMERGENCY_CMD"></a>
+EMERGENCY_CMD (ID 156)</h2>
+<p>Overcome setting ID and block ID problems in the case of multiboard autopilots like AP/FBW. With this message a KILL command can be sent to AP and FBW at the same time.</p>
+<table class="doxtable">
+<tr>
+<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
+<tr>
+<td>ac_id </td><td>uint8 </td><td></td><td></td></tr>
+<tr>
+<td>cmd </td><td>uint8 </td><td>KILL, STANDBY, LAND </td><td></td></tr>
+</table>
+<h2><a class="anchor" id="RTCM_INJECT"></a>
+RTCM_INJECT (ID 157)</h2>
+<table class="doxtable">
+<tr>
+<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
+<tr>
+<td>packet_id </td><td>uint8 </td><td></td><td></td></tr>
+<tr>
+<td>data </td><td>uint8[] </td><td></td><td></td></tr>
+</table>
 <h1><a class="anchor" id="GROUND_CLASS"></a>
 Ground Messages</h1>
 <h2><a class="anchor" id="NEW_AIRCRAFT"></a>
@@ -5871,9 +5173,9 @@ CAM_STATUS (ID 14)</h2>
 <tr>
 <td>ac_id </td><td>string </td><td></td><td></td></tr>
 <tr>
-<td>cam_lat </td><td>float </td><td>deg </td><td></td></tr>
+<td>lats </td><td>string </td><td></td><td></td></tr>
 <tr>
-<td>cam_long </td><td>float </td><td>deg </td><td></td></tr>
+<td>longs </td><td>string </td><td></td><td></td></tr>
 <tr>
 <td>cam_target_lat </td><td>float </td><td>deg </td><td></td></tr>
 <tr>
@@ -6277,6 +5579,16 @@ SHAPE (ID 38)</h2>
 <tr>
 <td>text </td><td>string </td><td></td><td></td></tr>
 </table>
+<h2><a class="anchor" id="DL_EMERGENCY_CMD"></a>
+DL_EMERGENCY_CMD (ID 39)</h2>
+<table class="doxtable">
+<tr>
+<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
+<tr>
+<td>ac_id </td><td>string </td><td></td><td></td></tr>
+<tr>
+<td>cmd </td><td>uint8 </td><td>KILL, STANDBY, LAND </td><td></td></tr>
+</table>
 <h2><a class="anchor" id="PLUMES"></a>
 PLUMES (ID 100)</h2>
 <table class="doxtable">
@@ -6398,6 +5710,124 @@ IMCU_REMOTE_GROUND (ID 15)</h2>
 <tr>
 <td>range </td><td>uint16 </td><td>cm </td><td></td></tr>
 </table>
+<h2><a class="anchor" id="IMCU_REMOTE_GPS"></a>
+IMCU_REMOTE_GPS (ID 62)</h2>
+<table class="doxtable">
+<tr>
+<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
+<tr>
+<td>ecef_x </td><td>int32 </td><td>cm </td><td></td></tr>
+<tr>
+<td>ecef_y </td><td>int32 </td><td>cm </td><td></td></tr>
+<tr>
+<td>ecef_z </td><td>int32 </td><td>cm </td><td></td></tr>
+<tr>
+<td>alt </td><td>int32 </td><td>mm </td><td>altitude above WGS84 reference ellipsoid </td></tr>
+<tr>
+<td>hmsl </td><td>int32 </td><td>mm </td><td>height above mean sea level (geoid) </td></tr>
+<tr>
+<td>ecef_xd </td><td>int32 </td><td>cm/s </td><td></td></tr>
+<tr>
+<td>ecef_yd </td><td>int32 </td><td>cm/s </td><td></td></tr>
+<tr>
+<td>ecef_zd </td><td>int32 </td><td>cm/s </td><td></td></tr>
+<tr>
+<td>course </td><td>int32 </td><td></td><td></td></tr>
+<tr>
+<td>gspeed </td><td>uint16 </td><td>cm/s </td><td></td></tr>
+<tr>
+<td>pacc </td><td>uint32 </td><td>cm </td><td></td></tr>
+<tr>
+<td>sacc </td><td>uint32 </td><td>cm/s </td><td></td></tr>
+<tr>
+<td>numsv </td><td>uint8 </td><td></td><td></td></tr>
+<tr>
+<td>fix </td><td>uint8 </td><td>NONE, NA, 2D, 3D, DGPS, RTK </td><td></td></tr>
+</table>
+<h2><a class="anchor" id="STEREOCAM_ARRAY"></a>
+STEREOCAM_ARRAY (ID 80)</h2>
+<p>Raw data fromt the stereocamera. Type defines what kind of data it is. This can be raw image, disparity map, obstacle histogram, ect.</p>
+<table class="doxtable">
+<tr>
+<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
+<tr>
+<td>type </td><td>uint8 </td><td>DIST_MATRIX, HISTOGRAM, DISPARITY_MAP, RAW </td><td></td></tr>
+<tr>
+<td>width </td><td>uint8 </td><td></td><td>array size parameters </td></tr>
+<tr>
+<td>height </td><td>uint8 </td><td></td><td></td></tr>
+<tr>
+<td>package_nb </td><td>uint8 </td><td></td><td>If the data being sent is too large for one message (e.g when sending a full image) this will indicate which package of the total data is contained in this message </td></tr>
+<tr>
+<td>image_data </td><td>uint8[] </td><td></td><td></td></tr>
+</table>
+<h2><a class="anchor" id="STEREOCAM_VELOCITY"></a>
+STEREOCAM_VELOCITY (ID 81)</h2>
+<p>Velocity measured using optical flow and stereovision. All parameters are in the camera frame</p>
+<table class="doxtable">
+<tr>
+<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
+<tr>
+<td>resolution </td><td>uint8 </td><td></td><td>Resolution of the vel and pos messages </td></tr>
+<tr>
+<td>dt_frame </td><td>uint8 </td><td></td><td>Time difference to previous frame </td></tr>
+<tr>
+<td>dt </td><td>uint8 </td><td></td><td>Time difference to previous message, not strictly required </td></tr>
+<tr>
+<td>velx </td><td>int16 </td><td>m/s </td><td>Velocity estimaed using stereo edgeflow </td></tr>
+<tr>
+<td>vely </td><td>int16 </td><td>m/s </td><td></td></tr>
+<tr>
+<td>velz </td><td>int16 </td><td>m/s </td><td></td></tr>
+<tr>
+<td>dposx </td><td>int16 </td><td>m </td><td>Distance traveled since the last message </td></tr>
+<tr>
+<td>dposy </td><td>int16 </td><td>m </td><td></td></tr>
+<tr>
+<td>dposz </td><td>int16 </td><td>m </td><td></td></tr>
+<tr>
+<td>vRMS </td><td>uint8 </td><td></td><td>RMS of the velocity estimate </td></tr>
+<tr>
+<td>posRMS </td><td>uint8 </td><td></td><td>RMS of the position </td></tr>
+<tr>
+<td>avg_dist </td><td>uint16 </td><td></td><td>Average distance to scene </td></tr>
+</table>
+<h2><a class="anchor" id="STEREOCAM_STATE"></a>
+STEREOCAM_STATE (ID 82)</h2>
+<p>Estimated state of the camera. As the stereocamera has no inertial sensors, this data should be sent to the stereocamera to enable onboard derotation of the optical flow</p>
+<table class="doxtable">
+<tr>
+<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
+<tr>
+<td>phi </td><td>float </td><td>rad </td><td>Pitch, roll and yaw angles of the camera </td></tr>
+<tr>
+<td>theta </td><td>float </td><td>rad </td><td></td></tr>
+<tr>
+<td>psi </td><td>float </td><td>rad </td><td></td></tr>
+<tr>
+<td>agl </td><td>float </td><td>m </td><td>Altitude above the ground. If not looking down, set to 0 </td></tr>
+</table>
+<h2><a class="anchor" id="STEREOCAM_FOLLOW_ME"></a>
+STEREOCAM_FOLLOW_ME (ID 83)</h2>
+<table class="doxtable">
+<tr>
+<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
+<tr>
+<td>headingToFollow </td><td>uint8 </td><td></td><td></td></tr>
+<tr>
+<td>heightObject </td><td>uint8 </td><td></td><td></td></tr>
+<tr>
+<td>distanceToObject </td><td>uint8 </td><td></td><td></td></tr>
+</table>
+<h2><a class="anchor" id="IMCU_DATALINK"></a>
+IMCU_DATALINK (ID 113)</h2>
+<p>Forward FBW datalink to AP</p>
+<table class="doxtable">
+<tr>
+<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
+<tr>
+<td>msg </td><td>uint8[] </td><td></td><td></td></tr>
+</table>
 <h2><a class="anchor" id="IMCU_TELEMETRY"></a>
 IMCU_TELEMETRY (ID 114)</h2>
 <table class="doxtable">
@@ -6408,12 +5838,28 @@ IMCU_TELEMETRY (ID 114)</h2>
 <tr>
 <td>msg </td><td>uint8[] </td><td></td><td></td></tr>
 </table>
+<h2><a class="anchor" id="IMCU_DEBUG"></a>
+IMCU_DEBUG (ID 115)</h2>
+<table class="doxtable">
+<tr>
+<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
+<tr>
+<td>msg </td><td>uint8[] </td><td></td><td></td></tr>
+</table>
+<h2><a class="anchor" id="IMCU_PAYLOAD"></a>
+IMCU_PAYLOAD (ID 116)</h2>
+<table class="doxtable">
+<tr>
+<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
+<tr>
+<td>data </td><td>uint8[] </td><td></td><td></td></tr>
+</table>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Oct 1 2016 14:02:20 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:02:50 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

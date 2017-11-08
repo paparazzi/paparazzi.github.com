@@ -14,5 +14,6 @@ var searchData=
   ['baro_5fsim_20module',['baro_sim module',['../module__baro_sim.html',1,'onboard_modules']]],
   ['bat_5fchecker_20module',['bat_checker module',['../module__bat_checker.html',1,'onboard_modules']]],
   ['bat_5fvoltage_5fardrone2_20module',['bat_voltage_ardrone2 module',['../module__bat_voltage_ardrone2.html',1,'onboard_modules']]],
-  ['bebop_5ffront_5fcamera_20module',['bebop_front_camera module',['../module__bebop_front_camera.html',1,'onboard_modules']]]
+  ['battery_5fmonitor_20module',['battery_monitor module',['../module__battery_monitor.html',1,'onboard_modules']]],
+  ['bebop_5fae_5fawb_20module',['bebop_ae_awb module',['../module__bebop_ae_awb.html',1,'onboard_modules']]]
 ];

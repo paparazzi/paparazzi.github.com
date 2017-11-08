@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -149,20 +149,40 @@ $(document).ready(function(){initNavTree('globals_func_x.html','');});
 &#160;
 
 <h3><a class="anchor" id="index_x"></a>- x -</h3><ul>
+<li>xbee_dl_event()
+: <a class="el" href="xbee__dl_8c.html#ae70130a34c8efc48df440e2b410793c6">xbee_dl.c</a>
+, <a class="el" href="xbee__dl_8h.html#ae70130a34c8efc48df440e2b410793c6">xbee_dl.h</a>
+</li>
+<li>xbee_dl_init()
+: <a class="el" href="xbee__dl_8h.html#add294366c202c587c00b54177fefe4c8">xbee_dl.h</a>
+, <a class="el" href="xbee__dl_8c.html#add294366c202c587c00b54177fefe4c8">xbee_dl.c</a>
+</li>
+<li>xgeqrf()
+: <a class="el" href="UKF__Wind__Estimator_8c.html#af1145125636356fc8ed4014a8552b5d3">UKF_Wind_Estimator.c</a>
+</li>
+<li>xgeqrf_f()
+: <a class="el" href="UKF__Wind__Estimator_8c.html#a06fe0b982008d39df58d5c5f4808204e">UKF_Wind_Estimator.c</a>
+</li>
+<li>xnrm2()
+: <a class="el" href="UKF__Wind__Estimator_8c.html#a91f88aec3e54f7da4348dc58aa23a06f">UKF_Wind_Estimator.c</a>
+</li>
+<li>xnrm2_f()
+: <a class="el" href="UKF__Wind__Estimator_8c.html#ae7791e7e2e302fdd54849037a36ac477">UKF_Wind_Estimator.c</a>
+</li>
 <li>xsens700_init()
 : <a class="el" href="xsens700_8c.html#a2028d92e3535919b8a4a5c9c2502431a">xsens700.c</a>
 , <a class="el" href="xsens700_8h.html#a2028d92e3535919b8a4a5c9c2502431a">xsens700.h</a>
 </li>
 <li>xsens700_periodic()
-: <a class="el" href="xsens700_8h.html#ad09da657a5336eb5bac0cae607a7cd34">xsens700.h</a>
-, <a class="el" href="xsens700_8c.html#ad09da657a5336eb5bac0cae607a7cd34">xsens700.c</a>
+: <a class="el" href="xsens700_8c.html#ad09da657a5336eb5bac0cae607a7cd34">xsens700.c</a>
+, <a class="el" href="xsens700_8h.html#ad09da657a5336eb5bac0cae607a7cd34">xsens700.h</a>
 </li>
 <li>xsens_ask_message_rate()
 : <a class="el" href="xsens700_8c.html#ac3c716f124f5e6ec6161955d18aa8cde">xsens700.c</a>
 </li>
 <li>xsens_event()
-: <a class="el" href="xsens__common_8c.html#acfc8750df8f4591f6d125d0a4c8eb160">xsens_common.c</a>
-, <a class="el" href="xsens__common_8h.html#acfc8750df8f4591f6d125d0a4c8eb160">xsens_common.h</a>
+: <a class="el" href="xsens__common_8h.html#acfc8750df8f4591f6d125d0a4c8eb160">xsens_common.h</a>
+, <a class="el" href="xsens__common_8c.html#acfc8750df8f4591f6d125d0a4c8eb160">xsens_common.c</a>
 </li>
 <li>xsens_init()
 : <a class="el" href="xsens_8c.html#a47f12136c89e8cc13ff45e72caab8a19">xsens.c</a>
@@ -173,8 +193,8 @@ $(document).ready(function(){initNavTree('globals_func_x.html','');});
 , <a class="el" href="xsens_8h.html#a6345aa5f7a6fc2de9539539d91bf0cba">xsens.h</a>
 </li>
 <li>xtend_rssi_periodic()
-: <a class="el" href="xtend__rssi_8c.html#aaa55d9916a48b8e26f5e4ddaeca4cac5">xtend_rssi.c</a>
-, <a class="el" href="xtend__rssi_8h.html#aaa55d9916a48b8e26f5e4ddaeca4cac5">xtend_rssi.h</a>
+: <a class="el" href="xtend__rssi_8h.html#aaa55d9916a48b8e26f5e4ddaeca4cac5">xtend_rssi.h</a>
+, <a class="el" href="xtend__rssi_8c.html#aaa55d9916a48b8e26f5e4ddaeca4cac5">xtend_rssi.c</a>
 </li>
 </ul>
 </div><!-- contents -->
@@ -182,7 +202,7 @@ $(document).ready(function(){initNavTree('globals_func_x.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Oct 1 2016 14:02:45 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:03:17 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

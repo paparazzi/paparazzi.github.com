@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -140,7 +140,7 @@ $(document).ready(function(){initNavTree('pprz__matrix__decomp__float_8h_source.
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keywordtype">void</span> <a class="code" href="pprz__matrix__decomp__float_8h.html#af9d29d8c0da1d82530a5ed4f240e969a">pprz_cholesky_float</a>(<span class="keywordtype">float</span> **out, <span class="keywordtype">float</span> **in, <span class="keywordtype">int</span> n);</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keywordtype">void</span> <a class="code" href="pprz__matrix__decomp__float_8h.html#ad4f442e8bd54d74ee9437a738788e186">pprz_qr_float</a>(<span class="keywordtype">float</span> **<a class="code" href="hf__float_8c.html#acbcee443d6d55cb8600b3f240f5cf907">Q</a>, <span class="keywordtype">float</span> **R, <span class="keywordtype">float</span> **in, <span class="keywordtype">int</span> <a class="code" href="group__math__algebra__int.html#ab792ef065eb18b07aaf87d22109862c1">m</a>, <span class="keywordtype">int</span> n);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keywordtype">void</span> <a class="code" href="pprz__matrix__decomp__float_8h.html#ad4f442e8bd54d74ee9437a738788e186">pprz_qr_float</a>(<span class="keywordtype">float</span> **Q, <span class="keywordtype">float</span> **R, <span class="keywordtype">float</span> **in, <span class="keywordtype">int</span> <a class="code" href="group__math__algebra__int.html#ab792ef065eb18b07aaf87d22109862c1">m</a>, <span class="keywordtype">int</span> n);</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keywordtype">int</span> <a class="code" href="pprz__matrix__decomp__float_8h.html#a9ef015d22c1f50265978a23b21d13e8a">pprz_svd_float</a>(<span class="keywordtype">float</span> **a, <span class="keywordtype">float</span> *w, <span class="keywordtype">float</span> **v, <span class="keywordtype">int</span> <a class="code" href="group__math__algebra__int.html#ab792ef065eb18b07aaf87d22109862c1">m</a>, <span class="keywordtype">int</span> n);</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
@@ -151,7 +151,6 @@ $(document).ready(function(){initNavTree('pprz__matrix__decomp__float_8h_source.
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PPRZ_MATRIX_DECOMP_FLOAT_H */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="hf__float_8c_html_acbcee443d6d55cb8600b3f240f5cf907"><div class="ttname"><a href="hf__float_8c.html#acbcee443d6d55cb8600b3f240f5cf907">Q</a></div><div class="ttdeci">#define Q</div><div class="ttdef"><b>Definition:</b> <a href="hf__float_8c_source.html#l00074">hf_float.c:74</a></div></div>
 <div class="ttc" id="pprz__matrix__decomp__float_8h_html_af9d29d8c0da1d82530a5ed4f240e969a"><div class="ttname"><a href="pprz__matrix__decomp__float_8h.html#af9d29d8c0da1d82530a5ed4f240e969a">pprz_cholesky_float</a></div><div class="ttdeci">void pprz_cholesky_float(float **out, float **in, int n)</div><div class="ttdoc">Cholesky decomposition. </div><div class="ttdef"><b>Definition:</b> <a href="pprz__matrix__decomp__float_8c_source.html#l00040">pprz_matrix_decomp_float.c:40</a></div></div>
 <div class="ttc" id="group__math__algebra__int_html_ab792ef065eb18b07aaf87d22109862c1"><div class="ttname"><a href="group__math__algebra__int.html#ab792ef065eb18b07aaf87d22109862c1">Int32RMat::m</a></div><div class="ttdeci">int32_t m[3 *3]</div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__int_8h_source.html#l00160">pprz_algebra_int.h:160</a></div></div>
 <div class="ttc" id="pprz__matrix__decomp__float_8h_html_ad4f442e8bd54d74ee9437a738788e186"><div class="ttname"><a href="pprz__matrix__decomp__float_8h.html#ad4f442e8bd54d74ee9437a738788e186">pprz_qr_float</a></div><div class="ttdeci">void pprz_qr_float(float **Q, float **R, float **in, int m, int n)</div><div class="ttdoc">QR decomposition. </div><div class="ttdef"><b>Definition:</b> <a href="pprz__matrix__decomp__float_8c_source.html#l00073">pprz_matrix_decomp_float.c:73</a></div></div>
@@ -164,7 +163,7 @@ $(document).ready(function(){initNavTree('pprz__matrix__decomp__float_8h_source.
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_29343b6f5fcd4b75a5dfbb985ff56864.html">math</a></li><li class="navelem"><a class="el" href="pprz__matrix__decomp__float_8h.html">pprz_matrix_decomp_float.h</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:01:20 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:01:34 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

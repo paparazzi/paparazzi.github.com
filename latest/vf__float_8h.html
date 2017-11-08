@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -145,7 +145,7 @@ Functions</h2></td></tr>
 <tr class="separator:a2358072559748851df8c44c975c43ebb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b79409337c63cb82e160e713b9b5455"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vf__float_8h.html#a6b79409337c63cb82e160e713b9b5455">vff_init</a> (float z, float zdot, float bias)</td></tr>
 <tr class="separator:a6b79409337c63cb82e160e713b9b5455"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa41dcb159a3384aadce98d6f89e82eca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vf__float_8h.html#aa41dcb159a3384aadce98d6f89e82eca">vff_propagate</a> (float accel, float <a class="el" href="optical__flow__landing_8c.html#a778e38aa889751afffa2dea6b803e67a">dt</a>)</td></tr>
+<tr class="memitem:aa41dcb159a3384aadce98d6f89e82eca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vf__float_8h.html#aa41dcb159a3384aadce98d6f89e82eca">vff_propagate</a> (float accel, float dt)</td></tr>
 <tr class="memdesc:aa41dcb159a3384aadce98d6f89e82eca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Propagate the filter in time.  <a href="#aa41dcb159a3384aadce98d6f89e82eca">More...</a><br /></td></tr>
 <tr class="separator:aa41dcb159a3384aadce98d6f89e82eca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a067f2a1bed73d1940c35450706a56265"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vf__float_8h.html#a067f2a1bed73d1940c35450706a56265">vff_update</a> (float z_meas)</td></tr>
@@ -314,7 +314,7 @@ z-acceleration in m/s^2 (NED, z-down) </td></tr>
 
 <p>References <a class="el" href="vf__extended__float_8c_source.html#l00085">vff_init()</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__int_8c_source.html#l00185">ins_int_init()</a>.</p>
+<p>Referenced by <a class="el" href="ins__int_8c_source.html#l00196">ins_int_init()</a>.</p>
 
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -377,11 +377,11 @@ z-acceleration in m/s^2 (NED, z-down) </td></tr>
 <p>Xk1 = F * Xk0 + B * accel;</p>
 <p>Pk1 = F * Pk0 * F' + Q; </p>
 
-<p>Definition at line <a class="el" href="vf__extended__float_8c_source.html#l00127">127</a> of file <a class="el" href="vf__extended__float_8c_source.html">vf_extended_float.c</a>.</p>
+<p>Definition at line <a class="el" href="vf__extended__float_8c_source.html#l00132">132</a> of file <a class="el" href="vf__extended__float_8c_source.html">vf_extended_float.c</a>.</p>
 
-<p>References <a class="el" href="vf__float_8h_source.html#l00037">Vff::bias</a>, <a class="el" href="vf__extended__float_8h_source.html#l00039">VffExtended::bias</a>, <a class="el" href="downlink_8h_source.html#l00084">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00088">DefaultDevice</a>, <a class="el" href="optical__flow__landing_8c_source.html#l00044">dt</a>, <a class="el" href="vf__float_8h_source.html#l00040">Vff::P</a>, <a class="el" href="vf__extended__float_8h_source.html#l00046">VffExtended::P</a>, <a class="el" href="vf__extended__float_8c_source.html#l00060">Qbiasbias</a>, <a class="el" href="vf__extended__float_8c_source.html#l00061">Qoffoff</a>, <a class="el" href="vf__extended__float_8c_source.html#l00071">send_vffe()</a>, <a class="el" href="vf__extended__float_8c_source.html#l00066">vff</a>, <a class="el" href="vf__float_8c_source.html#l00042">VFF_ACCEL_NOISE</a>, <a class="el" href="vf__extended__float_8c_source.html#l00057">VFF_EXTENDED_ACCEL_NOISE</a>, <a class="el" href="vf__float_8h_source.html#l00035">Vff::z</a>, <a class="el" href="vf__extended__float_8h_source.html#l00037">VffExtended::z</a>, <a class="el" href="vf__float_8h_source.html#l00036">Vff::zdot</a>, <a class="el" href="vf__extended__float_8h_source.html#l00038">VffExtended::zdot</a>, <a class="el" href="vf__float_8h_source.html#l00038">Vff::zdotdot</a>, and <a class="el" href="vf__extended__float_8h_source.html#l00042">VffExtended::zdotdot</a>.</p>
+<p>References <a class="el" href="vf__extended__float_8h_source.html#l00048">VffExtended::accel_noise</a>, <a class="el" href="vf__float_8h_source.html#l00037">Vff::bias</a>, <a class="el" href="vf__extended__float_8h_source.html#l00039">VffExtended::bias</a>, <a class="el" href="downlink_8h_source.html#l00042">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00046">DefaultDevice</a>, <a class="el" href="vf__float_8h_source.html#l00040">Vff::P</a>, <a class="el" href="vf__extended__float_8h_source.html#l00046">VffExtended::P</a>, <a class="el" href="vf__extended__float_8c_source.html#l00060">Qbiasbias</a>, <a class="el" href="vf__extended__float_8c_source.html#l00061">Qoffoff</a>, <a class="el" href="vf__extended__float_8c_source.html#l00071">send_vffe()</a>, <a class="el" href="vf__extended__float_8c_source.html#l00066">vff</a>, <a class="el" href="vf__float_8c_source.html#l00042">VFF_ACCEL_NOISE</a>, <a class="el" href="vf__float_8h_source.html#l00035">Vff::z</a>, <a class="el" href="vf__extended__float_8h_source.html#l00037">VffExtended::z</a>, <a class="el" href="vf__float_8h_source.html#l00036">Vff::zdot</a>, <a class="el" href="vf__extended__float_8h_source.html#l00038">VffExtended::zdot</a>, <a class="el" href="vf__float_8h_source.html#l00038">Vff::zdotdot</a>, and <a class="el" href="vf__extended__float_8h_source.html#l00042">VffExtended::zdotdot</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__int_8c_source.html#l00272">ins_int_propagate()</a>.</p>
+<p>Referenced by <a class="el" href="ins__int_8c_source.html#l00286">ins_int_propagate()</a>.</p>
 
 <p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -421,11 +421,11 @@ z-acceleration in m/s^2 (NED, z-down) </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="vf__extended__float_8c_source.html#l00347">347</a> of file <a class="el" href="vf__extended__float_8c_source.html">vf_extended_float.c</a>.</p>
+<p>Definition at line <a class="el" href="vf__extended__float_8c_source.html#l00352">352</a> of file <a class="el" href="vf__extended__float_8c_source.html">vf_extended_float.c</a>.</p>
 
 <p>References <a class="el" href="vf__extended__float_8c_source.html#l00085">vff_init()</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__int_8c_source.html#l00316">baro_cb()</a>.</p>
+<p>Referenced by <a class="el" href="ins__int_8c_source.html#l00331">baro_cb()</a>.</p>
 
 <p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -469,7 +469,7 @@ z-acceleration in m/s^2 (NED, z-down) </td></tr>
 
 <p>References <a class="el" href="vf__float_8c_source.html#l00153">update_z_conf()</a>, and <a class="el" href="vf__float_8c_source.html#l00047">VFF_MEAS_NOISE</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__int_8c_source.html#l00316">baro_cb()</a>.</p>
+<p>Referenced by <a class="el" href="ins__int_8c_source.html#l00331">baro_cb()</a>.</p>
 
 <p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -519,11 +519,11 @@ z-acceleration in m/s^2 (NED, z-down) </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="vf__extended__float_8c_source.html#l00406">406</a> of file <a class="el" href="vf__extended__float_8c_source.html">vf_extended_float.c</a>.</p>
+<p>Definition at line <a class="el" href="vf__extended__float_8c_source.html#l00411">411</a> of file <a class="el" href="vf__extended__float_8c_source.html">vf_extended_float.c</a>.</p>
 
-<p>References <a class="el" href="vf__extended__float_8c_source.html#l00369">update_vz_conf()</a>.</p>
+<p>References <a class="el" href="vf__extended__float_8c_source.html#l00374">update_vz_conf()</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__int_8c_source.html#l00346">ins_int_update_gps()</a>.</p>
+<p>Referenced by <a class="el" href="ins__int_8c_source.html#l00373">ins_int_update_gps()</a>, and <a class="el" href="ins__int_8c_source.html#l00539">vel_est_cb()</a>.</p>
 
 <p><div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -543,7 +543,7 @@ z-acceleration in m/s^2 (NED, z-down) </td></tr>
 <div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="vf__float_8h_a7d74fd7f8f95cece04e3c147e409f935_icgraph.png" border="0" usemap="#vf__float_8h_a7d74fd7f8f95cece04e3c147e409f935_icgraph" alt=""/></div>
 <map name="vf__float_8h_a7d74fd7f8f95cece04e3c147e409f935_icgraph" id="vf__float_8h_a7d74fd7f8f95cece04e3c147e409f935_icgraph">
-<area shape="rect" id="node2" href="ins__int_8h.html#a54df8c17ccf7a20d6ca09ad0b8f45db3" title="ins_int_update_gps" alt="" coords="197,5,343,32"/><area shape="rect" id="node3" href="ins__int_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title="gps_cb" alt="" coords="391,5,457,32"/><area shape="rect" id="node4" href="ins__int_8h.html#a6f47e4e65f9697a961c3bef79e9029e4" title="ins_int_init" alt="" coords="505,5,595,32"/></map>
+<area shape="rect" id="node2" href="ins__int_8h.html#a54df8c17ccf7a20d6ca09ad0b8f45db3" title="ins_int_update_gps" alt="" coords="197,5,343,32"/><area shape="rect" id="node5" href="ins__int_8c.html#aaf7a3cc82a863c682b5e9f18022c5ab7" title="vel_est_cb" alt="" coords="391,56,480,83"/><area shape="rect" id="node3" href="ins__int_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title="gps_cb" alt="" coords="402,5,469,32"/><area shape="rect" id="node4" href="ins__int_8h.html#a6f47e4e65f9697a961c3bef79e9029e4" title="ins_int_init" alt="" coords="528,31,617,57"/></map>
 </div>
 </p>
 
@@ -573,11 +573,11 @@ z-acceleration in m/s^2 (NED, z-down) </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="vf__extended__float_8c_source.html#l00284">284</a> of file <a class="el" href="vf__extended__float_8c_source.html">vf_extended_float.c</a>.</p>
+<p>Definition at line <a class="el" href="vf__extended__float_8c_source.html#l00289">289</a> of file <a class="el" href="vf__extended__float_8c_source.html">vf_extended_float.c</a>.</p>
 
-<p>References <a class="el" href="vf__extended__float_8c_source.html#l00240">update_alt_conf()</a>, and <a class="el" href="vf__float_8c_source.html#l00153">update_z_conf()</a>.</p>
+<p>References <a class="el" href="vf__extended__float_8c_source.html#l00245">update_alt_conf()</a>, and <a class="el" href="vf__float_8c_source.html#l00153">update_z_conf()</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__int_8c_source.html#l00346">ins_int_update_gps()</a>.</p>
+<p>Referenced by <a class="el" href="ins__int_8c_source.html#l00373">ins_int_update_gps()</a>, and <a class="el" href="ins__int_8c_source.html#l00581">pos_est_cb()</a>.</p>
 
 <p><div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -597,7 +597,7 @@ z-acceleration in m/s^2 (NED, z-down) </td></tr>
 <div id="dynsection-14-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="vf__float_8h_a383a56a1eaa73890c3b6ca0599c3fb67_icgraph.png" border="0" usemap="#vf__float_8h_a383a56a1eaa73890c3b6ca0599c3fb67_icgraph" alt=""/></div>
 <map name="vf__float_8h_a383a56a1eaa73890c3b6ca0599c3fb67_icgraph" id="vf__float_8h_a383a56a1eaa73890c3b6ca0599c3fb67_icgraph">
-<area shape="rect" id="node2" href="ins__int_8h.html#a54df8c17ccf7a20d6ca09ad0b8f45db3" title="ins_int_update_gps" alt="" coords="191,5,336,32"/><area shape="rect" id="node3" href="ins__int_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title="gps_cb" alt="" coords="384,5,451,32"/><area shape="rect" id="node4" href="ins__int_8h.html#a6f47e4e65f9697a961c3bef79e9029e4" title="ins_int_init" alt="" coords="499,5,588,32"/></map>
+<area shape="rect" id="node2" href="ins__int_8h.html#a54df8c17ccf7a20d6ca09ad0b8f45db3" title="ins_int_update_gps" alt="" coords="191,5,336,32"/><area shape="rect" id="node5" href="ins__int_8c.html#a6a61aa1ad8d97b329c073c9ee330be9f" title="pos_est_cb" alt="" coords="384,56,479,83"/><area shape="rect" id="node3" href="ins__int_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title="gps_cb" alt="" coords="398,5,465,32"/><area shape="rect" id="node4" href="ins__int_8h.html#a6f47e4e65f9697a961c3bef79e9029e4" title="ins_int_init" alt="" coords="527,31,616,57"/></map>
 </div>
 </p>
 
@@ -616,7 +616,7 @@ z-acceleration in m/s^2 (NED, z-down) </td></tr>
 
 <p>Definition at line <a class="el" href="vf__extended__float_8c_source.html#l00066">66</a> of file <a class="el" href="vf__extended__float_8c_source.html">vf_extended_float.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__int_8c_source.html#l00468">ins_update_from_vff()</a>, <a class="el" href="vf__float_8c_source.html#l00058">send_vff()</a>, <a class="el" href="vf__extended__float_8c_source.html#l00071">send_vffe()</a>, <a class="el" href="vf__extended__float_8c_source.html#l00240">update_alt_conf()</a>, <a class="el" href="vf__extended__float_8c_source.html#l00176">update_baro_conf()</a>, <a class="el" href="vf__extended__float_8c_source.html#l00303">update_offset_conf()</a>, <a class="el" href="vf__extended__float_8c_source.html#l00369">update_vz_conf()</a>, <a class="el" href="vf__float_8c_source.html#l00153">update_z_conf()</a>, <a class="el" href="vf__extended__float_8c_source.html#l00085">vff_init()</a>, and <a class="el" href="vf__extended__float_8c_source.html#l00127">vff_propagate()</a>.</p>
+<p>Referenced by <a class="el" href="ins__int_8c_source.html#l00494">ins_update_from_vff()</a>, <a class="el" href="vf__float_8c_source.html#l00058">send_vff()</a>, <a class="el" href="vf__extended__float_8c_source.html#l00071">send_vffe()</a>, <a class="el" href="vf__extended__float_8c_source.html#l00245">update_alt_conf()</a>, <a class="el" href="vf__extended__float_8c_source.html#l00181">update_baro_conf()</a>, <a class="el" href="vf__extended__float_8c_source.html#l00308">update_offset_conf()</a>, <a class="el" href="vf__extended__float_8c_source.html#l00374">update_vz_conf()</a>, <a class="el" href="vf__float_8c_source.html#l00153">update_z_conf()</a>, <a class="el" href="vf__extended__float_8c_source.html#l00085">vff_init()</a>, <a class="el" href="vf__extended__float_8c_source.html#l00132">vff_propagate()</a>, <a class="el" href="vf__extended__float_8c_source.html#l00221">vff_update_baro()</a>, <a class="el" href="vf__extended__float_8c_source.html#l00346">vff_update_offset()</a>, and <a class="el" href="vf__extended__float_8c_source.html#l00284">vff_update_z()</a>.</p>
 
 </div>
 </div>
@@ -626,7 +626,7 @@ z-acceleration in m/s^2 (NED, z-down) </td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_800f0b451dc44a2b86d16d857cea778d.html">ins</a></li><li class="navelem"><a class="el" href="vf__float_8h.html">vf_float.h</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:02:14 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:02:43 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

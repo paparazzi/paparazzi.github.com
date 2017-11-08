@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -494,10 +494,10 @@ $(document).ready(function(){initNavTree('apogee_2chibios_2v1_80_2board_8h_sourc
 <div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;<span class="preprocessor">                                     PIN_MODE_INPUT(GPIOC_OSC32_IN)       | \</span></div>
 <div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;<span class="preprocessor">                                     PIN_MODE_INPUT(GPIOC_OSC32_OUT))</span></div>
 <div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;</div>
-<div class="line"><a name="l00386"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#a7543f04fa6799015c04039794a777f34">  386</a></span>&#160;<span class="preprocessor">#define VAL_GPIOC_OTYPER            (PIN_OTYPE_OPENDRAIN(GPIOC_LED1)      | \</span></div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;<span class="preprocessor">                                     PIN_OTYPE_OPENDRAIN(GPIOC_LED3)      | \</span></div>
+<div class="line"><a name="l00386"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#a7543f04fa6799015c04039794a777f34">  386</a></span>&#160;<span class="preprocessor">#define VAL_GPIOC_OTYPER            (PIN_OTYPE_PUSHPULL(GPIOC_LED1)       | \</span></div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;<span class="preprocessor">                                     PIN_OTYPE_PUSHPULL(GPIOC_LED3)       | \</span></div>
 <div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;<span class="preprocessor">                                     PIN_OTYPE_OPENDRAIN(GPIOC_PIN2)      | \</span></div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;<span class="preprocessor">                                     PIN_OTYPE_OPENDRAIN(GPIOC_LED4)      | \</span></div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;<span class="preprocessor">                                     PIN_OTYPE_PUSHPULL(GPIOC_LED4)       | \</span></div>
 <div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;<span class="preprocessor">                                     PIN_OTYPE_PUSHPULL(GPIOC_AUX3)       | \</span></div>
 <div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;<span class="preprocessor">                                     PIN_OTYPE_PUSHPULL(GPIOC_AUX2)       | \</span></div>
 <div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;<span class="preprocessor">                                     PIN_OTYPE_PUSHPULL(GPIOC_USART6_TX)  | \</span></div>
@@ -507,7 +507,7 @@ $(document).ready(function(){initNavTree('apogee_2chibios_2v1_80_2board_8h_sourc
 <div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;<span class="preprocessor">                                     PIN_OTYPE_PUSHPULL(GPIOC_SDIO_D2)    | \</span></div>
 <div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;<span class="preprocessor">                                     PIN_OTYPE_PUSHPULL(GPIOC_SDIO_D3)    | \</span></div>
 <div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;<span class="preprocessor">                                     PIN_OTYPE_PUSHPULL(GPIOC_SDIO_CK)    | \</span></div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;<span class="preprocessor">                                     PIN_OTYPE_OPENDRAIN(GPIOC_LED2)      | \</span></div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;<span class="preprocessor">                                     PIN_OTYPE_PUSHPULL(GPIOC_LED2)       | \</span></div>
 <div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;<span class="preprocessor">                                     PIN_OTYPE_PUSHPULL(GPIOC_OSC32_IN)   | \</span></div>
 <div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;<span class="preprocessor">                                     PIN_OTYPE_PUSHPULL(GPIOC_OSC32_OUT))</span></div>
 <div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;</div>
@@ -1040,74 +1040,114 @@ $(document).ready(function(){initNavTree('apogee_2chibios_2v1_80_2board_8h_sourc
 <div class="line"><a name="l00932"></a><span class="lineno">  932</span>&#160;<span class="preprocessor">#if (USE_PWM1 &amp;&amp; USE_PWM_INPUT2)</span></div>
 <div class="line"><a name="l00933"></a><span class="lineno">  933</span>&#160;<span class="preprocessor">#error &quot;PW1 and PWM_INPUT2 are not compatible&quot;</span></div>
 <div class="line"><a name="l00934"></a><span class="lineno">  934</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00935"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#a7b2dc3d19dbe27b942c23488ea1ba292">  935</a></span>&#160;<span class="preprocessor">#define PWM_INPUT2_ICU            ICUD2</span></div>
+<div class="line"><a name="l00935"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#a7b2dc3d19dbe27b942c23488ea1ba292">  935</a></span>&#160;<span class="preprocessor">#define PWM_INPUT2_ICU            ICUD9</span></div>
 <div class="line"><a name="l00936"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#acf0f4fd8ccd323e59ba8556f10bb9fb8">  936</a></span>&#160;<span class="preprocessor">#define PWM_INPUT2_CHANNEL        ICU_CHANNEL_1</span></div>
 <div class="line"><a name="l00937"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#a2b514928ef703832ce4e5fbc14056ba3">  937</a></span>&#160;<span class="preprocessor">#define PWM_INPUT2_GPIO_PORT      GPIOA</span></div>
 <div class="line"><a name="l00938"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#a720d34950af7c141340f0e3e18abd55c">  938</a></span>&#160;<span class="preprocessor">#define PWM_INPUT2_GPIO_PIN       GPIO2</span></div>
 <div class="line"><a name="l00939"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#a328d996e4247f8d93183a9d01c8d7137">  939</a></span>&#160;<span class="preprocessor">#define PWM_INPUT2_GPIO_AF        GPIO_AF3</span></div>
 <div class="line"><a name="l00940"></a><span class="lineno">  940</span>&#160;</div>
-<div class="line"><a name="l00944"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#a22c39ad944259723eb9fbe773e294139">  944</a></span>&#160;<span class="preprocessor">#define I2C1_CLOCK_SPEED 400000</span></div>
-<div class="line"><a name="l00945"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#a9914c116b1e93a66882b48999c8efcd9">  945</a></span>&#160;<span class="preprocessor">#define I2C1_CFG_DEF {       \</span></div>
-<div class="line"><a name="l00946"></a><span class="lineno">  946</span>&#160;<span class="preprocessor">           OPMODE_I2C,        \</span></div>
-<div class="line"><a name="l00947"></a><span class="lineno">  947</span>&#160;<span class="preprocessor">           I2C1_CLOCK_SPEED,  \</span></div>
-<div class="line"><a name="l00948"></a><span class="lineno">  948</span>&#160;<span class="preprocessor">           FAST_DUTY_CYCLE_2, \</span></div>
-<div class="line"><a name="l00949"></a><span class="lineno">  949</span>&#160;<span class="preprocessor">           }</span></div>
-<div class="line"><a name="l00950"></a><span class="lineno">  950</span>&#160;</div>
-<div class="line"><a name="l00951"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#ac0a2e46dae466187803c62e2e9bef045">  951</a></span>&#160;<span class="preprocessor">#define I2C2_CLOCK_SPEED 400000</span></div>
-<div class="line"><a name="l00952"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#acc19e345342d6130dc5351e4dcd15fea">  952</a></span>&#160;<span class="preprocessor">#define I2C2_CFG_DEF {       \</span></div>
-<div class="line"><a name="l00953"></a><span class="lineno">  953</span>&#160;<span class="preprocessor">           OPMODE_I2C,        \</span></div>
-<div class="line"><a name="l00954"></a><span class="lineno">  954</span>&#160;<span class="preprocessor">           I2C2_CLOCK_SPEED,  \</span></div>
-<div class="line"><a name="l00955"></a><span class="lineno">  955</span>&#160;<span class="preprocessor">           FAST_DUTY_CYCLE_2, \</span></div>
-<div class="line"><a name="l00956"></a><span class="lineno">  956</span>&#160;<span class="preprocessor">           }</span></div>
-<div class="line"><a name="l00957"></a><span class="lineno">  957</span>&#160;</div>
-<div class="line"><a name="l00961"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#a4409cac3bdec2cfc7d7ce95c1ef4b002">  961</a></span>&#160;<span class="preprocessor">#define SPI1_GPIO_AF GPIO_AF5</span></div>
-<div class="line"><a name="l00962"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#a871d43c3d2837b5d0719389e347aa300">  962</a></span>&#160;<span class="preprocessor">#define SPI1_GPIO_PORT_MISO GPIOA</span></div>
-<div class="line"><a name="l00963"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#ada248ea908ea4ee30983b56d29af8380">  963</a></span>&#160;<span class="preprocessor">#define SPI1_GPIO_MISO GPIO6</span></div>
-<div class="line"><a name="l00964"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#afe67bca9eb8da8654288c02124683016">  964</a></span>&#160;<span class="preprocessor">#define SPI1_GPIO_PORT_MOSI GPIOA</span></div>
-<div class="line"><a name="l00965"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#a7ea27a1248fdb7ecc776cc16d56d52b8">  965</a></span>&#160;<span class="preprocessor">#define SPI1_GPIO_MOSI GPIO7</span></div>
-<div class="line"><a name="l00966"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#a5e12991f1c0aedb1a09cf8ef3b8206fe">  966</a></span>&#160;<span class="preprocessor">#define SPI1_GPIO_PORT_SCK GPIOA</span></div>
-<div class="line"><a name="l00967"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#a09bc02b7a8383e70a06ebdc7aa25f750">  967</a></span>&#160;<span class="preprocessor">#define SPI1_GPIO_SCK GPIO5</span></div>
-<div class="line"><a name="l00968"></a><span class="lineno">  968</span>&#160;</div>
-<div class="line"><a name="l00969"></a><span class="lineno">  969</span>&#160;<span class="comment">// SLAVE0 on SPI connector</span></div>
-<div class="line"><a name="l00970"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#a62cb06db3908015c7305ca6833f90159">  970</a></span>&#160;<span class="preprocessor">#define SPI_SELECT_SLAVE0_PORT GPIOB</span></div>
-<div class="line"><a name="l00971"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#a697b8e633c428bd167844542c8c1453f">  971</a></span>&#160;<span class="preprocessor">#define SPI_SELECT_SLAVE0_PIN GPIO9</span></div>
-<div class="line"><a name="l00972"></a><span class="lineno">  972</span>&#160;<span class="comment">// SLAVE1 on AUX1</span></div>
-<div class="line"><a name="l00973"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#abed465f8e9387dc4c034b1d71989043c">  973</a></span>&#160;<span class="preprocessor">#define SPI_SELECT_SLAVE1_PORT GPIOB</span></div>
-<div class="line"><a name="l00974"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#a6391f9c6d48eca04803022ab073df01a">  974</a></span>&#160;<span class="preprocessor">#define SPI_SELECT_SLAVE1_PIN GPIO1</span></div>
-<div class="line"><a name="l00975"></a><span class="lineno">  975</span>&#160;<span class="comment">// SLAVE2 on AUX2</span></div>
-<div class="line"><a name="l00976"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#ad1fce2206d522b24623e9b742b1f2988">  976</a></span>&#160;<span class="preprocessor">#define SPI_SELECT_SLAVE2_PORT GPIOC</span></div>
-<div class="line"><a name="l00977"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#ae006e4c20f82ac5d2104debcd8615f06">  977</a></span>&#160;<span class="preprocessor">#define SPI_SELECT_SLAVE2_PIN GPIO5</span></div>
-<div class="line"><a name="l00978"></a><span class="lineno">  978</span>&#160;<span class="comment">// SLAVE3 on AUX3</span></div>
-<div class="line"><a name="l00979"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#aaf1f83e1cd34b94de35fbbaaa7f6cb46">  979</a></span>&#160;<span class="preprocessor">#define SPI_SELECT_SLAVE3_PORT GPIOC</span></div>
-<div class="line"><a name="l00980"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#a43f488034394a3e0c0749b96fdbdd08f">  980</a></span>&#160;<span class="preprocessor">#define SPI_SELECT_SLAVE3_PIN GPIO4</span></div>
-<div class="line"><a name="l00981"></a><span class="lineno">  981</span>&#160;<span class="comment">// SLAVE4 on AUX4</span></div>
-<div class="line"><a name="l00982"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#a68d301edae4fbbd1f4a7e9de1a9252b1">  982</a></span>&#160;<span class="preprocessor">#define SPI_SELECT_SLAVE4_PORT GPIOB</span></div>
-<div class="line"><a name="l00983"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#aaaf3b422873946314dfec6703a3a5580">  983</a></span>&#160;<span class="preprocessor">#define SPI_SELECT_SLAVE4_PIN GPIO15</span></div>
-<div class="line"><a name="l00984"></a><span class="lineno">  984</span>&#160;</div>
-<div class="line"><a name="l00991"></a><span class="lineno">  991</span>&#160;<span class="preprocessor">#ifndef USE_BARO_BOARD</span></div>
-<div class="line"><a name="l00992"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#a3f7278cf218a92fa0a1514dea823cd9d">  992</a></span>&#160;<span class="preprocessor">#define USE_BARO_BOARD 1</span></div>
-<div class="line"><a name="l00993"></a><span class="lineno">  993</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00994"></a><span class="lineno">  994</span>&#160;</div>
-<div class="line"><a name="l00995"></a><span class="lineno">  995</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00996"></a><span class="lineno">  996</span>&#160;<span class="comment"> * Actuators for fixedwing</span></div>
-<div class="line"><a name="l00997"></a><span class="lineno">  997</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00998"></a><span class="lineno">  998</span>&#160; <span class="comment">/* Default actuators driver */</span></div>
-<div class="line"><a name="l00999"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">  999</a></span>&#160;<span class="preprocessor">#define DEFAULT_ACTUATORS &quot;subsystems/actuators/actuators_pwm.h&quot;</span></div>
-<div class="line"><a name="l01000"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#a3fc5f96f074d833b909fd75c92b7d2d0"> 1000</a></span>&#160;<span class="preprocessor">#define ActuatorDefaultSet(_x,_y) ActuatorPwmSet(_x,_y)</span></div>
-<div class="line"><a name="l01001"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#ab68f28871d18c17e7e70ae63277d37c2"> 1001</a></span>&#160;<span class="preprocessor">#define ActuatorsDefaultInit() ActuatorsPwmInit()</span></div>
-<div class="line"><a name="l01002"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#a0ceadf6a913477832e04b0cb7cd17210"> 1002</a></span>&#160;<span class="preprocessor">#define ActuatorsDefaultCommit() ActuatorsPwmCommit()</span></div>
-<div class="line"><a name="l01003"></a><span class="lineno"> 1003</span>&#160;</div>
-<div class="line"><a name="l01004"></a><span class="lineno"> 1004</span>&#160;<span class="preprocessor">#if !defined(_FROM_ASM_)</span></div>
-<div class="line"><a name="l01005"></a><span class="lineno"> 1005</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l01006"></a><span class="lineno"> 1006</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
-<div class="line"><a name="l01007"></a><span class="lineno"> 1007</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l01008"></a><span class="lineno"> 1008</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="apogee_2chibios_2v1_80_2board_8h.html#a48edc646a1de1ba488bbe7d786df9bae">boardInit</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l01009"></a><span class="lineno"> 1009</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l01010"></a><span class="lineno"> 1010</span>&#160;}</div>
+<div class="line"><a name="l00944"></a><span class="lineno">  944</span>&#160;<span class="preprocessor">#ifndef I2C1_CLOCK_SPEED</span></div>
+<div class="line"><a name="l00945"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#a22c39ad944259723eb9fbe773e294139">  945</a></span>&#160;<span class="preprocessor">#define I2C1_CLOCK_SPEED 400000</span></div>
+<div class="line"><a name="l00946"></a><span class="lineno">  946</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00947"></a><span class="lineno">  947</span>&#160;<span class="preprocessor">#if I2C1_CLOCK_SPEED == 400000</span></div>
+<div class="line"><a name="l00948"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#a8ed6744bfd60205cd3b9933dd2a399b0">  948</a></span>&#160;<span class="preprocessor">#define I2C1_DUTY_CYCLE FAST_DUTY_CYCLE_2</span></div>
+<div class="line"><a name="l00949"></a><span class="lineno">  949</span>&#160;<span class="preprocessor">#elif I2C1_CLOCK_SPEED == 100000</span></div>
+<div class="line"><a name="l00950"></a><span class="lineno">  950</span>&#160;<span class="preprocessor">#define I2C1_DUTY_CYCLE STD_DUTY_CYCLE</span></div>
+<div class="line"><a name="l00951"></a><span class="lineno">  951</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00952"></a><span class="lineno">  952</span>&#160;<span class="preprocessor">#error Invalid I2C1 clock speed</span></div>
+<div class="line"><a name="l00953"></a><span class="lineno">  953</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00954"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#a9914c116b1e93a66882b48999c8efcd9">  954</a></span>&#160;<span class="preprocessor">#define I2C1_CFG_DEF {        \</span></div>
+<div class="line"><a name="l00955"></a><span class="lineno">  955</span>&#160;<span class="preprocessor">           OPMODE_I2C,        \</span></div>
+<div class="line"><a name="l00956"></a><span class="lineno">  956</span>&#160;<span class="preprocessor">           I2C1_CLOCK_SPEED,  \</span></div>
+<div class="line"><a name="l00957"></a><span class="lineno">  957</span>&#160;<span class="preprocessor">           I2C1_DUTY_CYCLE,   \</span></div>
+<div class="line"><a name="l00958"></a><span class="lineno">  958</span>&#160;<span class="preprocessor">           }</span></div>
+<div class="line"><a name="l00959"></a><span class="lineno">  959</span>&#160;</div>
+<div class="line"><a name="l00960"></a><span class="lineno">  960</span>&#160;<span class="preprocessor">#ifndef I2C2_CLOCK_SPEED</span></div>
+<div class="line"><a name="l00961"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#ac0a2e46dae466187803c62e2e9bef045">  961</a></span>&#160;<span class="preprocessor">#define I2C2_CLOCK_SPEED 400000</span></div>
+<div class="line"><a name="l00962"></a><span class="lineno">  962</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00963"></a><span class="lineno">  963</span>&#160;<span class="preprocessor">#if I2C2_CLOCK_SPEED == 400000</span></div>
+<div class="line"><a name="l00964"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#a232ef1f09041be94a60f75e8adad0d98">  964</a></span>&#160;<span class="preprocessor">#define I2C2_DUTY_CYCLE FAST_DUTY_CYCLE_2</span></div>
+<div class="line"><a name="l00965"></a><span class="lineno">  965</span>&#160;<span class="preprocessor">#elif I2C2_CLOCK_SPEED == 100000</span></div>
+<div class="line"><a name="l00966"></a><span class="lineno">  966</span>&#160;<span class="preprocessor">#define I2C2_DUTY_CYCLE STD_DUTY_CYCLE</span></div>
+<div class="line"><a name="l00967"></a><span class="lineno">  967</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00968"></a><span class="lineno">  968</span>&#160;<span class="preprocessor">#error Invalid I2C2 clock speed</span></div>
+<div class="line"><a name="l00969"></a><span class="lineno">  969</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00970"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#acc19e345342d6130dc5351e4dcd15fea">  970</a></span>&#160;<span class="preprocessor">#define I2C2_CFG_DEF {        \</span></div>
+<div class="line"><a name="l00971"></a><span class="lineno">  971</span>&#160;<span class="preprocessor">           OPMODE_I2C,        \</span></div>
+<div class="line"><a name="l00972"></a><span class="lineno">  972</span>&#160;<span class="preprocessor">           I2C2_CLOCK_SPEED,  \</span></div>
+<div class="line"><a name="l00973"></a><span class="lineno">  973</span>&#160;<span class="preprocessor">           I2C2_DUTY_CYCLE,   \</span></div>
+<div class="line"><a name="l00974"></a><span class="lineno">  974</span>&#160;<span class="preprocessor">           }</span></div>
+<div class="line"><a name="l00975"></a><span class="lineno">  975</span>&#160;</div>
+<div class="line"><a name="l00979"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#a4409cac3bdec2cfc7d7ce95c1ef4b002">  979</a></span>&#160;<span class="preprocessor">#define SPI1_GPIO_AF GPIO_AF5</span></div>
+<div class="line"><a name="l00980"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#a871d43c3d2837b5d0719389e347aa300">  980</a></span>&#160;<span class="preprocessor">#define SPI1_GPIO_PORT_MISO GPIOA</span></div>
+<div class="line"><a name="l00981"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#ada248ea908ea4ee30983b56d29af8380">  981</a></span>&#160;<span class="preprocessor">#define SPI1_GPIO_MISO GPIO6</span></div>
+<div class="line"><a name="l00982"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#afe67bca9eb8da8654288c02124683016">  982</a></span>&#160;<span class="preprocessor">#define SPI1_GPIO_PORT_MOSI GPIOA</span></div>
+<div class="line"><a name="l00983"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#a7ea27a1248fdb7ecc776cc16d56d52b8">  983</a></span>&#160;<span class="preprocessor">#define SPI1_GPIO_MOSI GPIO7</span></div>
+<div class="line"><a name="l00984"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#a5e12991f1c0aedb1a09cf8ef3b8206fe">  984</a></span>&#160;<span class="preprocessor">#define SPI1_GPIO_PORT_SCK GPIOA</span></div>
+<div class="line"><a name="l00985"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#a09bc02b7a8383e70a06ebdc7aa25f750">  985</a></span>&#160;<span class="preprocessor">#define SPI1_GPIO_SCK GPIO5</span></div>
+<div class="line"><a name="l00986"></a><span class="lineno">  986</span>&#160;</div>
+<div class="line"><a name="l00987"></a><span class="lineno">  987</span>&#160;<span class="comment">// SLAVE0 on SPI connector</span></div>
+<div class="line"><a name="l00988"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#a62cb06db3908015c7305ca6833f90159">  988</a></span>&#160;<span class="preprocessor">#define SPI_SELECT_SLAVE0_PORT GPIOB</span></div>
+<div class="line"><a name="l00989"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#a697b8e633c428bd167844542c8c1453f">  989</a></span>&#160;<span class="preprocessor">#define SPI_SELECT_SLAVE0_PIN GPIO9</span></div>
+<div class="line"><a name="l00990"></a><span class="lineno">  990</span>&#160;<span class="comment">// SLAVE1 on AUX1</span></div>
+<div class="line"><a name="l00991"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#abed465f8e9387dc4c034b1d71989043c">  991</a></span>&#160;<span class="preprocessor">#define SPI_SELECT_SLAVE1_PORT GPIOB</span></div>
+<div class="line"><a name="l00992"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#a6391f9c6d48eca04803022ab073df01a">  992</a></span>&#160;<span class="preprocessor">#define SPI_SELECT_SLAVE1_PIN GPIO1</span></div>
+<div class="line"><a name="l00993"></a><span class="lineno">  993</span>&#160;<span class="comment">// SLAVE2 on AUX2</span></div>
+<div class="line"><a name="l00994"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#ad1fce2206d522b24623e9b742b1f2988">  994</a></span>&#160;<span class="preprocessor">#define SPI_SELECT_SLAVE2_PORT GPIOC</span></div>
+<div class="line"><a name="l00995"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#ae006e4c20f82ac5d2104debcd8615f06">  995</a></span>&#160;<span class="preprocessor">#define SPI_SELECT_SLAVE2_PIN GPIO5</span></div>
+<div class="line"><a name="l00996"></a><span class="lineno">  996</span>&#160;<span class="comment">// SLAVE3 on AUX3</span></div>
+<div class="line"><a name="l00997"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#aaf1f83e1cd34b94de35fbbaaa7f6cb46">  997</a></span>&#160;<span class="preprocessor">#define SPI_SELECT_SLAVE3_PORT GPIOC</span></div>
+<div class="line"><a name="l00998"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#a43f488034394a3e0c0749b96fdbdd08f">  998</a></span>&#160;<span class="preprocessor">#define SPI_SELECT_SLAVE3_PIN GPIO4</span></div>
+<div class="line"><a name="l00999"></a><span class="lineno">  999</span>&#160;<span class="comment">// SLAVE4 on AUX4</span></div>
+<div class="line"><a name="l01000"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#a68d301edae4fbbd1f4a7e9de1a9252b1"> 1000</a></span>&#160;<span class="preprocessor">#define SPI_SELECT_SLAVE4_PORT GPIOB</span></div>
+<div class="line"><a name="l01001"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#aaaf3b422873946314dfec6703a3a5580"> 1001</a></span>&#160;<span class="preprocessor">#define SPI_SELECT_SLAVE4_PIN GPIO15</span></div>
+<div class="line"><a name="l01002"></a><span class="lineno"> 1002</span>&#160;</div>
+<div class="line"><a name="l01009"></a><span class="lineno"> 1009</span>&#160;<span class="preprocessor">#ifndef USE_BARO_BOARD</span></div>
+<div class="line"><a name="l01010"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#a3f7278cf218a92fa0a1514dea823cd9d"> 1010</a></span>&#160;<span class="preprocessor">#define USE_BARO_BOARD 1</span></div>
 <div class="line"><a name="l01011"></a><span class="lineno"> 1011</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l01012"></a><span class="lineno"> 1012</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _FROM_ASM_ */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l01013"></a><span class="lineno"> 1013</span>&#160;</div>
-<div class="line"><a name="l01014"></a><span class="lineno"> 1014</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _BOARD_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l01012"></a><span class="lineno"> 1012</span>&#160;</div>
+<div class="line"><a name="l01013"></a><span class="lineno"> 1013</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l01014"></a><span class="lineno"> 1014</span>&#160;<span class="comment"> * Actuators for fixedwing</span></div>
+<div class="line"><a name="l01015"></a><span class="lineno"> 1015</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l01016"></a><span class="lineno"> 1016</span>&#160; <span class="comment">/* Default actuators driver */</span></div>
+<div class="line"><a name="l01017"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#aa7699f41fbe105c8f5061cc48a5f6307"> 1017</a></span>&#160;<span class="preprocessor">#define DEFAULT_ACTUATORS &quot;subsystems/actuators/actuators_pwm.h&quot;</span></div>
+<div class="line"><a name="l01018"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#a3fc5f96f074d833b909fd75c92b7d2d0"> 1018</a></span>&#160;<span class="preprocessor">#define ActuatorDefaultSet(_x,_y) ActuatorPwmSet(_x,_y)</span></div>
+<div class="line"><a name="l01019"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#ab68f28871d18c17e7e70ae63277d37c2"> 1019</a></span>&#160;<span class="preprocessor">#define ActuatorsDefaultInit() ActuatorsPwmInit()</span></div>
+<div class="line"><a name="l01020"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#a0ceadf6a913477832e04b0cb7cd17210"> 1020</a></span>&#160;<span class="preprocessor">#define ActuatorsDefaultCommit() ActuatorsPwmCommit()</span></div>
+<div class="line"><a name="l01021"></a><span class="lineno"> 1021</span>&#160;</div>
+<div class="line"><a name="l01022"></a><span class="lineno"> 1022</span>&#160;</div>
+<div class="line"><a name="l01026"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#aead66bc65b8e434c97f28429baeb2800"> 1026</a></span>&#160;<span class="preprocessor">#define SDIO_D0_PORT GPIOC</span></div>
+<div class="line"><a name="l01027"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#a4f939402a3adf6008ed5ca06dbd030b9"> 1027</a></span>&#160;<span class="preprocessor">#define SDIO_D0_PIN GPIOC_SDIO_D0</span></div>
+<div class="line"><a name="l01028"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#abf25aa536f76d47dc6dc73da99210ac7"> 1028</a></span>&#160;<span class="preprocessor">#define SDIO_D1_PORT GPIOC</span></div>
+<div class="line"><a name="l01029"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#a7769af3a5d7785eb756c5d0378ed7051"> 1029</a></span>&#160;<span class="preprocessor">#define SDIO_D1_PIN GPIOC_SDIO_D1</span></div>
+<div class="line"><a name="l01030"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#a719da4653e9f8f406b223235e09bf853"> 1030</a></span>&#160;<span class="preprocessor">#define SDIO_D2_PORT GPIOC</span></div>
+<div class="line"><a name="l01031"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#a9f35b196f10e4942483d526f7f25df31"> 1031</a></span>&#160;<span class="preprocessor">#define SDIO_D2_PIN GPIOC_SDIO_D2</span></div>
+<div class="line"><a name="l01032"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#a1307338bc6abca9bbc5a1b217eee257e"> 1032</a></span>&#160;<span class="preprocessor">#define SDIO_D3_PORT GPIOC</span></div>
+<div class="line"><a name="l01033"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#ad62e199253d055f0de7aa50ee2492263"> 1033</a></span>&#160;<span class="preprocessor">#define SDIO_D3_PIN GPIOC_SDIO_D3</span></div>
+<div class="line"><a name="l01034"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#a8faef81f6f3f71405b3f2351cef48ab2"> 1034</a></span>&#160;<span class="preprocessor">#define SDIO_CK_PORT GPIOC</span></div>
+<div class="line"><a name="l01035"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#a7306050aa843659659499bde3429b417"> 1035</a></span>&#160;<span class="preprocessor">#define SDIO_CK_PIN GPIOC_SDIO_CK</span></div>
+<div class="line"><a name="l01036"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#a2f973750f9134ee2fa55e004db3c6edc"> 1036</a></span>&#160;<span class="preprocessor">#define SDIO_CMD_PORT GPIOD</span></div>
+<div class="line"><a name="l01037"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#a9fbc674ce2e0b67af3e150f79033dd75"> 1037</a></span>&#160;<span class="preprocessor">#define SDIO_CMD_PIN GPIOD_SDIO_CMD</span></div>
+<div class="line"><a name="l01038"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#aea0d4879d704dd9b28e0e0f78eaed9bf"> 1038</a></span>&#160;<span class="preprocessor">#define SDIO_AF 12</span></div>
+<div class="line"><a name="l01039"></a><span class="lineno"> 1039</span>&#160;<span class="comment">// bat monitoring for file closing</span></div>
+<div class="line"><a name="l01040"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#a10df201a6a0340fdb61816a617b6bab9"> 1040</a></span>&#160;<span class="preprocessor">#define SDLOG_BAT_ADC ADCD1</span></div>
+<div class="line"><a name="l01041"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#afa171425c899787769e5d3612c80acd2"> 1041</a></span>&#160;<span class="preprocessor">#define SDLOG_BAT_CHAN AD1_4_CHANNEL</span></div>
+<div class="line"><a name="l01042"></a><span class="lineno"> 1042</span>&#160;<span class="comment">// usb led status</span></div>
+<div class="line"><a name="l01043"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#a3eca81ff4917508b17002a96844e0904"> 1043</a></span>&#160;<span class="preprocessor">#define SDLOG_USB_LED 4</span></div>
+<div class="line"><a name="l01044"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#a9ed04c344aae38b6ee690c98e609d2d1"> 1044</a></span>&#160;<span class="preprocessor">#define SDLOG_USB_VBUS_PORT GPIOA</span></div>
+<div class="line"><a name="l01045"></a><span class="lineno"><a class="line" href="apogee_2chibios_2v1_80_2board_8h.html#a22e2edaeffd24afc57074815c42628d7"> 1045</a></span>&#160;<span class="preprocessor">#define SDLOG_USB_VBUS_PIN GPIO9</span></div>
+<div class="line"><a name="l01046"></a><span class="lineno"> 1046</span>&#160;</div>
+<div class="line"><a name="l01047"></a><span class="lineno"> 1047</span>&#160;<span class="preprocessor">#if !defined(_FROM_ASM_)</span></div>
+<div class="line"><a name="l01048"></a><span class="lineno"> 1048</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l01049"></a><span class="lineno"> 1049</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a name="l01050"></a><span class="lineno"> 1050</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01051"></a><span class="lineno"> 1051</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="apogee_2chibios_2v1_80_2board_8h.html#a48edc646a1de1ba488bbe7d786df9bae">boardInit</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l01052"></a><span class="lineno"> 1052</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l01053"></a><span class="lineno"> 1053</span>&#160;}</div>
+<div class="line"><a name="l01054"></a><span class="lineno"> 1054</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01055"></a><span class="lineno"> 1055</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _FROM_ASM_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l01056"></a><span class="lineno"> 1056</span>&#160;</div>
+<div class="line"><a name="l01057"></a><span class="lineno"> 1057</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _BOARD_H_ */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="apogee_2chibios_2v1_80_2board_8h_html_a48edc646a1de1ba488bbe7d786df9bae"><div class="ttname"><a href="apogee_2chibios_2v1_80_2board_8h.html#a48edc646a1de1ba488bbe7d786df9bae">boardInit</a></div><div class="ttdeci">void boardInit(void)</div><div class="ttdoc">Board-specific initialization code. </div><div class="ttdef"><b>Definition:</b> <a href="apogee_2chibios_2v1_80_2board_8c_source.html#l00122">board.c:122</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -1115,7 +1155,7 @@ $(document).ready(function(){initNavTree('apogee_2chibios_2v1_80_2board_8h_sourc
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e030268cd18297cf6282390f76bfcf7f.html">boards</a></li><li class="navelem"><a class="el" href="dir_906fcced062b34dea0e143ec53b4cca3.html">apogee</a></li><li class="navelem"><a class="el" href="dir_d80e81afc648ccfe0c5d0ba6bef93947.html">chibios</a></li><li class="navelem"><a class="el" href="dir_ac30925fa52d2a539368a9111fda4132.html">v1.0</a></li><li class="navelem"><a class="el" href="apogee_2chibios_2v1_80_2board_8h.html">board.h</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:01:15 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:01:29 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

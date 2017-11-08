@@ -19,7 +19,7 @@ var cv_8h =
     ] ],
     [ "cv_function", "cv_8h.html#a960f7aa465ad21c19cbd56c49bad7e82", null ],
     [ "add_video_device", "cv_8h.html#a9e0afd727457cecc0e207aa03c4d48a5", null ],
-    [ "cv_add_to_device", "cv_8h.html#ada9827c953db23005383fa57f742e994", null ],
-    [ "cv_add_to_device_async", "cv_8h.html#ab67c6930fcd2fe1ed5cb26a5fc3a202e", null ],
+    [ "cv_add_to_device", "cv_8h.html#aee4ecc7b59c1526a024f91a46a34ff45", null ],
+    [ "cv_add_to_device_async", "cv_8h.html#a14d4ab03a3db0de4144a4c497c4b8149", null ],
     [ "cv_run_device", "cv_8h.html#a600c1d8570ebc9340cee21772e84f022", null ]
 ];

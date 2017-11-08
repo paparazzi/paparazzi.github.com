@@ -2,6 +2,10 @@ var dir_a146ed466020daad33793c9994e8ab3e =
 [
     [ "dummy.c", "dummy_8c.html", "dummy_8c" ],
     [ "dummy.h", "dummy_8h.html", "dummy_8h" ],
+    [ "hott.c", "subsystems_2radio__control_2hott_8c.html", "subsystems_2radio__control_2hott_8c" ],
+    [ "hott.h", "subsystems_2radio__control_2hott_8h.html", "subsystems_2radio__control_2hott_8h" ],
+    [ "hott_common.c", "hott__common_8c.html", "hott__common_8c" ],
+    [ "hott_common.h", "hott__common_8h.html", "hott__common_8h" ],
     [ "joby_9ch.h", "joby__9ch_8h.html", "joby__9ch_8h" ],
     [ "ppm.c", "ppm_8c.html", "ppm_8c" ],
     [ "ppm.h", "ppm_8h.html", "ppm_8h" ],

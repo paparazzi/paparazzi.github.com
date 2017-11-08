@@ -33,5 +33,9 @@ var dir_46fef683200e96ccf1a2f608d90c4a2d =
     [ "ahrs_int_utils.h", "ahrs__int__utils_8h.html", "ahrs__int__utils_8h" ],
     [ "ahrs_magnetic_field_model.h", "ahrs__magnetic__field__model_8h.html", null ],
     [ "ahrs_sim.c", "ahrs__sim_8c.html", "ahrs__sim_8c" ],
-    [ "ahrs_sim.h", "ahrs__sim_8h.html", "ahrs__sim_8h" ]
+    [ "ahrs_sim.h", "ahrs__sim_8h.html", "ahrs__sim_8h" ],
+    [ "ahrs_vectornav.c", "ahrs__vectornav_8c.html", "ahrs__vectornav_8c" ],
+    [ "ahrs_vectornav.h", "ahrs__vectornav_8h.html", "ahrs__vectornav_8h" ],
+    [ "ahrs_vectornav_wrapper.c", "ahrs__vectornav__wrapper_8c.html", "ahrs__vectornav__wrapper_8c" ],
+    [ "ahrs_vectornav_wrapper.h", "ahrs__vectornav__wrapper_8h.html", "ahrs__vectornav__wrapper_8h" ]
 ];

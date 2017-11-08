@@ -3,6 +3,8 @@ var imu__apogee_8h =
     [ "ImuApogee", "imu__apogee_8h.html#structImuApogee", [
       [ "mpu", "imu__apogee_8h.html#af336a924ca29eddfb18fd75358fc210f", null ]
     ] ],
+    [ "APOGEE_ACCEL_RANGE", "imu__apogee_8h.html#afff4a758f055126720cafb4f1be1c956", null ],
+    [ "APOGEE_GYRO_RANGE", "imu__apogee_8h.html#ab3023c8e310c1587bcb135e7e55b24db", null ],
     [ "IMU_ACCEL_X_NEUTRAL", "imu__apogee_8h.html#a01dac8935d4166bc144b115219cddbc4", null ],
     [ "IMU_ACCEL_X_SENS", "imu__apogee_8h.html#a8ac88fc00cde506229b92c6a1e2c3122", null ],
     [ "IMU_ACCEL_X_SENS_DEN", "imu__apogee_8h.html#a8acf299c1bfb2daa92b1894556ca50ad", null ],

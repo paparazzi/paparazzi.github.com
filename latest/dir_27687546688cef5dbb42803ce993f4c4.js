@@ -19,6 +19,8 @@ var dir_27687546688cef5dbb42803ce993f4c4 =
     [ "actuators_mkk_v2.h", "actuators__mkk__v2_8h.html", "actuators__mkk__v2_8h" ],
     [ "actuators_ppm.h", "actuators__ppm_8h.html", null ],
     [ "actuators_pwm.h", "actuators__pwm_8h.html", "actuators__pwm_8h" ],
+    [ "actuators_sbus.c", "actuators__sbus_8c.html", "actuators__sbus_8c" ],
+    [ "actuators_sbus.h", "actuators__sbus_8h.html", "actuators__sbus_8h" ],
     [ "actuators_skiron.c", "actuators__skiron_8c.html", "actuators__skiron_8c" ],
     [ "actuators_skiron.h", "actuators__skiron_8h.html", "actuators__skiron_8h" ],
     [ "actuators_spektrum.c", "actuators__spektrum_8c.html", "actuators__spektrum_8c" ],

@@ -1,7 +1,5 @@
 var imu__aspirin__2__spi_8c =
 [
-    [ "ASPIRIN_2_ACCEL_RANGE", "imu__aspirin__2__spi_8c.html#a4f8b496b4f04d19aafab4035c173936d", null ],
-    [ "ASPIRIN_2_GYRO_RANGE", "imu__aspirin__2__spi_8c.html#a11ef895ade8a43bd8b57168fd937f21d", null ],
     [ "ASPIRIN_2_MAG_STARTUP_DELAY", "imu__aspirin__2__spi_8c.html#a2bd978d7cced1a6ac2c30b1cea574917", null ],
     [ "ASPIRIN_2_SPI_DEV", "imu__aspirin__2__spi_8c.html#a06f00b43155f4f09c8dabf807b7a5641", null ],
     [ "ASPIRIN_2_SPI_SLAVE_IDX", "imu__aspirin__2__spi_8c.html#a7b969377ba70ed1e73b1454f028cb3ee", null ],

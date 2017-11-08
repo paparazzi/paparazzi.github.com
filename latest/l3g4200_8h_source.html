@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -178,7 +178,7 @@ $(document).ready(function(){initNavTree('l3g4200_8h_source.html','');});
 <div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="l3g4200_8h.html">   73</a></span>&#160;  <span class="keyword">union </span>{</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">struct </span><a class="code" href="group__math__algebra__int.html#structInt32Rates">Int32Rates</a> rates;          </div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> value[3];                 </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  } <a class="code" href="l3g4200_8h.html#a6a6ad0fd121a04bc8d998af60cdb1f77">data</a>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  } <a class="code" href="l3g4200_8h.html#afc490436da4edd84115e3efda9384b5f">data</a>;</div>
 <div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="l3g4200_8h.html#a5e676045bac453aa30e0c2072bc252a9">   77</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="l3g4200_8h.html#structL3g4200Config">L3g4200Config</a> <a class="code" href="l3g4200_8h.html#a5e676045bac453aa30e0c2072bc252a9">config</a>;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;};</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
@@ -201,6 +201,7 @@ $(document).ready(function(){initNavTree('l3g4200_8h_source.html','');});
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">#endif // L3G4200_H</span></div>
 <div class="ttc" id="l3g4200_8h_html_affef29745f5a82cfc679e157c57b9c40"><div class="ttname"><a href="l3g4200_8h.html#affef29745f5a82cfc679e157c57b9c40">l3g4200_event</a></div><div class="ttdeci">void l3g4200_event(struct L3g4200 *l3g)</div><div class="ttdef"><b>Definition:</b> <a href="l3g4200_8c_source.html#l00114">l3g4200.c:114</a></div></div>
 <div class="ttc" id="group__math__algebra__int_html_structInt32Rates"><div class="ttname"><a href="group__math__algebra__int.html#structInt32Rates">Int32Rates</a></div><div class="ttdoc">angular rates </div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__int_8h_source.html#l00179">pprz_algebra_int.h:179</a></div></div>
+<div class="ttc" id="l3g4200_8h_html_afc490436da4edd84115e3efda9384b5f"><div class="ttname"><a href="l3g4200_8h.html#afc490436da4edd84115e3efda9384b5f">L3g4200::data</a></div><div class="ttdeci">union L3g4200::@305 data</div></div>
 <div class="ttc" id="l3g4200_8h_html_aa227b9026f3d2693889a27a753f5d5d1ad5afa02f5dbcf6aab5fc4da37093961f"><div class="ttname"><a href="l3g4200_8h.html#aa227b9026f3d2693889a27a753f5d5d1ad5afa02f5dbcf6aab5fc4da37093961f">L3G_CONF_REG5</a></div><div class="ttdef"><b>Definition:</b> <a href="l3g4200_8h_source.html#l00063">l3g4200.h:63</a></div></div>
 <div class="ttc" id="l3g4200_8h_html_aa227b9026f3d2693889a27a753f5d5d1a046143b5ae5413b4b9a6891bf4d0936d"><div class="ttname"><a href="l3g4200_8h.html#aa227b9026f3d2693889a27a753f5d5d1a046143b5ae5413b4b9a6891bf4d0936d">L3G_CONF_REG1</a></div><div class="ttdef"><b>Definition:</b> <a href="l3g4200_8h_source.html#l00061">l3g4200.h:61</a></div></div>
 <div class="ttc" id="l3g4200_8h_html_aa78509836bbf5a035172dc6da198b26d"><div class="ttname"><a href="l3g4200_8h.html#aa78509836bbf5a035172dc6da198b26d">l3g4200_init</a></div><div class="ttdeci">void l3g4200_init(struct L3g4200 *l3g, struct i2c_periph *i2c_p, uint8_t i2c_address)</div><div class="ttdoc">Initialize L3g4200 struct and set default config options. </div><div class="ttdef"><b>Definition:</b> <a href="l3g4200_8c_source.html#l00047">l3g4200.c:47</a></div></div>
@@ -220,7 +221,6 @@ $(document).ready(function(){initNavTree('l3g4200_8h_source.html','');});
 <div class="ttc" id="group__i2c_html_structi2c__transaction"><div class="ttname"><a href="group__i2c.html#structi2c__transaction">i2c_transaction</a></div><div class="ttdoc">I2C transaction structure. </div><div class="ttdef"><b>Definition:</b> <a href="i2c_8h_source.html#l00093">i2c.h:93</a></div></div>
 <div class="ttc" id="l3g4200_8h_html_a29ff7a309d816aaf75f16b7171f49b15"><div class="ttname"><a href="l3g4200_8h.html#a29ff7a309d816aaf75f16b7171f49b15">L3g4200Config::ctrl_reg4</a></div><div class="ttdeci">uint8_t ctrl_reg4</div><div class="ttdef"><b>Definition:</b> <a href="l3g4200_8h_source.html#l00054">l3g4200.h:54</a></div></div>
 <div class="ttc" id="types_8h_html_a2ba621978a511250f7250fb10e05ffbe"><div class="ttname"><a href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a></div><div class="ttdeci">signed long int32_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00019">types.h:19</a></div></div>
-<div class="ttc" id="l3g4200_8h_html_a6a6ad0fd121a04bc8d998af60cdb1f77"><div class="ttname"><a href="l3g4200_8h.html#a6a6ad0fd121a04bc8d998af60cdb1f77">L3g4200::data</a></div><div class="ttdeci">union L3g4200::@303 data</div></div>
 <div class="ttc" id="l3g4200_8h_html_aa227b9026f3d2693889a27a753f5d5d1"><div class="ttname"><a href="l3g4200_8h.html#aa227b9026f3d2693889a27a753f5d5d1">L3g4200ConfStatus</a></div><div class="ttdeci">L3g4200ConfStatus</div><div class="ttdoc">config status states </div><div class="ttdef"><b>Definition:</b> <a href="l3g4200_8h_source.html#l00059">l3g4200.h:59</a></div></div>
 <div class="ttc" id="group__i2c_html_structi2c__periph"><div class="ttname"><a href="group__i2c.html#structi2c__periph">i2c_periph</a></div><div class="ttdoc">I2C peripheral structure. </div><div class="ttdef"><b>Definition:</b> <a href="i2c_8h_source.html#l00138">i2c.h:138</a></div></div>
 <div class="ttc" id="l3g4200_8h_html_a5aee177e3ea1d8450f8a6b6c6e685be8"><div class="ttname"><a href="l3g4200_8h.html#a5aee177e3ea1d8450f8a6b6c6e685be8">L3g4200Config::ctrl_reg1</a></div><div class="ttdeci">uint8_t ctrl_reg1</div><div class="ttdef"><b>Definition:</b> <a href="l3g4200_8h_source.html#l00053">l3g4200.h:53</a></div></div>
@@ -238,7 +238,7 @@ $(document).ready(function(){initNavTree('l3g4200_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_0a48ba2c0a76794adfddddc873522f67.html">peripherals</a></li><li class="navelem"><a class="el" href="l3g4200_8h.html">l3g4200.h</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:01:29 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:01:47 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -312,11 +312,11 @@ $(document).ready(function(){initNavTree('ms5611__i2c_8c_source.html','');});
 <div class="ttc" id="ms5611__regs_8h_html_a22f63e90af0ec7d29bff584215f56a8a"><div class="ttname"><a href="ms5611__regs_8h.html#a22f63e90af0ec7d29bff584215f56a8a">PROM_NB</a></div><div class="ttdeci">#define PROM_NB</div><div class="ttdef"><b>Definition:</b> <a href="ms5611__regs_8h_source.html#l00038">ms5611_regs.h:38</a></div></div>
 <div class="ttc" id="ms5611_8h_html_aeabcd6fb6c9a54ba10c34130f71f855bac9caf96919528372b6ec815ccf802ee4"><div class="ttname"><a href="ms5611_8h.html#aeabcd6fb6c9a54ba10c34130f71f855bac9caf96919528372b6ec815ccf802ee4">MS5611_STATUS_CONV_D1_OK</a></div><div class="ttdef"><b>Definition:</b> <a href="ms5611_8h_source.html#l00044">ms5611.h:44</a></div></div>
 <div class="ttc" id="ms5611__i2c_8c_html_a17e23c3602297d6edbf19ad6d4bc1d8e"><div class="ttname"><a href="ms5611__i2c_8c.html#a17e23c3602297d6edbf19ad6d4bc1d8e">ms5611_i2c_init</a></div><div class="ttdeci">void ms5611_i2c_init(struct Ms5611_I2c *ms, struct i2c_periph *i2c_p, uint8_t addr, bool is_ms5607)</div><div class="ttdef"><b>Definition:</b> <a href="ms5611__i2c_8c_source.html#l00033">ms5611_i2c.c:33</a></div></div>
-<div class="ttc" id="ms5611_8c_html_ae3efc8f29a1b06b12e734be3ab9b5eb4"><div class="ttname"><a href="ms5611_8c.html#ae3efc8f29a1b06b12e734be3ab9b5eb4">ms5611_calc</a></div><div class="ttdeci">bool ms5611_calc(struct Ms5611Data *ms)</div><div class="ttdoc">Calculate temperature and compensated pressure for MS5611. </div><div class="ttdef"><b>Definition:</b> <a href="ms5611_8c_source.html#l00067">ms5611.c:67</a></div></div>
+<div class="ttc" id="ms5611_8c_html_ae3efc8f29a1b06b12e734be3ab9b5eb4"><div class="ttname"><a href="ms5611_8c.html#ae3efc8f29a1b06b12e734be3ab9b5eb4">ms5611_calc</a></div><div class="ttdeci">bool ms5611_calc(struct Ms5611Data *ms)</div><div class="ttdoc">Calculate temperature and compensated pressure for MS5611. </div><div class="ttdef"><b>Definition:</b> <a href="ms5611_8c_source.html#l00081">ms5611.c:81</a></div></div>
 <div class="ttc" id="ms5611_8h_html_a9339741b3228b645469da793bd8ed717"><div class="ttname"><a href="ms5611_8h.html#a9339741b3228b645469da793bd8ed717">Ms5611Data::c</a></div><div class="ttdeci">uint16_t c[PROM_NB]</div><div class="ttdef"><b>Definition:</b> <a href="ms5611_8h_source.html#l00054">ms5611.h:54</a></div></div>
 <div class="ttc" id="group__i2c_html_a295b2671835ae06b28905433cd1096ee"><div class="ttname"><a href="group__i2c.html#a295b2671835ae06b28905433cd1096ee">i2c_transaction::buf</a></div><div class="ttdeci">volatile uint8_t buf[I2C_BUF_LEN]</div><div class="ttdoc">Transaction buffer With I2C_BUF_LEN number of bytes. </div><div class="ttdef"><b>Definition:</b> <a href="i2c_8h_source.html#l00122">i2c.h:122</a></div></div>
 <div class="ttc" id="group__i2c_html_ggab31a87ef6e90ddd08be846de32e8a442a2884da616ec2ff9183e649f8fab1073b"><div class="ttname"><a href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a2884da616ec2ff9183e649f8fab1073b">I2CTransSuccess</a></div><div class="ttdoc">transaction successfully finished by I2C driver </div><div class="ttdef"><b>Definition:</b> <a href="i2c_8h_source.html#l00057">i2c.h:57</a></div></div>
-<div class="ttc" id="ms5611_8c_html_a6dea78d3cbdf03549f9d15b920089ff1"><div class="ttname"><a href="ms5611_8c.html#a6dea78d3cbdf03549f9d15b920089ff1">ms5607_calc</a></div><div class="ttdeci">bool ms5607_calc(struct Ms5611Data *ms)</div><div class="ttdoc">Calculate temperature and compensated pressure for MS5607. </div><div class="ttdef"><b>Definition:</b> <a href="ms5611_8c_source.html#l00110">ms5611.c:110</a></div></div>
+<div class="ttc" id="ms5611_8c_html_a6dea78d3cbdf03549f9d15b920089ff1"><div class="ttname"><a href="ms5611_8c.html#a6dea78d3cbdf03549f9d15b920089ff1">ms5607_calc</a></div><div class="ttdeci">bool ms5607_calc(struct Ms5611Data *ms)</div><div class="ttdoc">Calculate temperature and compensated pressure for MS5607. </div><div class="ttdef"><b>Definition:</b> <a href="ms5611_8c_source.html#l00124">ms5611.c:124</a></div></div>
 <div class="ttc" id="ms5611__i2c_8h_html_a5349bb570536ee55a7e1a41a5d956907"><div class="ttname"><a href="ms5611__i2c_8h.html#a5349bb570536ee55a7e1a41a5d956907">Ms5611_I2c::data</a></div><div class="ttdeci">struct Ms5611Data data</div><div class="ttdef"><b>Definition:</b> <a href="ms5611__i2c_8h_source.html#l00043">ms5611_i2c.h:43</a></div></div>
 <div class="ttc" id="ms5611__i2c_8h_html_abfecb0e214ef090f4879c57b1ba65992"><div class="ttname"><a href="ms5611__i2c_8h.html#abfecb0e214ef090f4879c57b1ba65992">Ms5611_I2c::is_ms5607</a></div><div class="ttdeci">bool is_ms5607</div><div class="ttdoc">TRUE if MS5607, FALSE if MS5611. </div><div class="ttdef"><b>Definition:</b> <a href="ms5611__i2c_8h_source.html#l00040">ms5611_i2c.h:40</a></div></div>
 <div class="ttc" id="ms5611__i2c_8h_html_structMs5611__I2c"><div class="ttname"><a href="ms5611__i2c_8h.html#structMs5611__I2c">Ms5611_I2c</a></div><div class="ttdef"><b>Definition:</b> <a href="ms5611__i2c_8h_source.html#l00036">ms5611_i2c.h:36</a></div></div>
@@ -363,7 +363,7 @@ $(document).ready(function(){initNavTree('ms5611__i2c_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_0a48ba2c0a76794adfddddc873522f67.html">peripherals</a></li><li class="navelem"><a class="el" href="ms5611__i2c_8c.html">ms5611_i2c.c</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:01:30 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:01:48 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

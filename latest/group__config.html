@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -99,11 +99,22 @@ $(document).ready(function(){initNavTree('group__config.html','');});
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a>  </div>
   <div class="headertitle">
 <div class="title">Config</div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:gaf96117860ce3ac9637e7b0fb3f1eac1f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__config.html#gaf96117860ce3ac9637e7b0fb3f1eac1f">_CHIBIOS_RT_CONF_</a></td></tr>
+<tr class="separator:gaf96117860ce3ac9637e7b0fb3f1eac1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7ed3022f929b0ef250c4aa8cda44c0be"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__config.html#ga7ed3022f929b0ef250c4aa8cda44c0be">CORTEX_VTOR_INIT</a>&#160;&#160;&#160;0x08000000U</td></tr>
+<tr class="separator:ga7ed3022f929b0ef250c4aa8cda44c0be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga92e0819075bd91dc380cc86a20186960"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__config.html#ga92e0819075bd91dc380cc86a20186960">CHPRINTF_USE_FLOAT</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:ga92e0819075bd91dc380cc86a20186960"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
 System timers settings</h2></td></tr>
 <tr class="memitem:ga2af9a4c66ec41bad799a27c94728c1ae"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__config.html#ga2af9a4c66ec41bad799a27c94728c1ae">CH_CFG_ST_RESOLUTION</a>&#160;&#160;&#160;32</td></tr>
@@ -208,9 +219,12 @@ Debug options</h2></td></tr>
 <tr class="memitem:gad602fd2546073869a10859158d865b9b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__config.html#gad602fd2546073869a10859158d865b9b">CH_DBG_ENABLE_ASSERTS</a>&#160;&#160;&#160;<a class="el" href="imu__chimu_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></td></tr>
 <tr class="memdesc:gad602fd2546073869a10859158d865b9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Debug option, consistency checks.  <a href="#gad602fd2546073869a10859158d865b9b">More...</a><br /></td></tr>
 <tr class="separator:gad602fd2546073869a10859158d865b9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8bc4cfd861131aeb3c880347d0068229"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__config.html#ga8bc4cfd861131aeb3c880347d0068229">CH_DBG_ENABLE_TRACE</a>&#160;&#160;&#160;<a class="el" href="imu__chimu_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></td></tr>
-<tr class="memdesc:ga8bc4cfd861131aeb3c880347d0068229"><td class="mdescLeft">&#160;</td><td class="mdescRight">Debug option, trace buffer.  <a href="#ga8bc4cfd861131aeb3c880347d0068229">More...</a><br /></td></tr>
-<tr class="separator:ga8bc4cfd861131aeb3c880347d0068229"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga72ac367ab16b997a2c7d095d3fcb9ecf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__config.html#ga72ac367ab16b997a2c7d095d3fcb9ecf">CH_DBG_TRACE_MASK</a>&#160;&#160;&#160;CH_DBG_TRACE_MASK_DISABLED</td></tr>
+<tr class="memdesc:ga72ac367ab16b997a2c7d095d3fcb9ecf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Debug option, trace buffer.  <a href="#ga72ac367ab16b997a2c7d095d3fcb9ecf">More...</a><br /></td></tr>
+<tr class="separator:ga72ac367ab16b997a2c7d095d3fcb9ecf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacae5f1969a3b894cc3eea9807c07bd2c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__config.html#gacae5f1969a3b894cc3eea9807c07bd2c">CH_DBG_TRACE_BUFFER_SIZE</a>&#160;&#160;&#160;128</td></tr>
+<tr class="memdesc:gacae5f1969a3b894cc3eea9807c07bd2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trace buffer entries.  <a href="#gacae5f1969a3b894cc3eea9807c07bd2c">More...</a><br /></td></tr>
+<tr class="separator:gacae5f1969a3b894cc3eea9807c07bd2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab93d9ee904f15d4f2c26ef2a1394a1d7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__config.html#gab93d9ee904f15d4f2c26ef2a1394a1d7">CH_DBG_ENABLE_STACK_CHECK</a>&#160;&#160;&#160;<a class="el" href="imu__chimu_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></td></tr>
 <tr class="memdesc:gab93d9ee904f15d4f2c26ef2a1394a1d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Debug option, stack checks.  <a href="#gab93d9ee904f15d4f2c26ef2a1394a1d7">More...</a><br /></td></tr>
 <tr class="separator:gab93d9ee904f15d4f2c26ef2a1394a1d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -235,6 +249,12 @@ Kernel hooks</h2></td></tr>
 <tr class="memitem:ga61b9805943d69980f6778106ad3fbb9c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__config.html#ga61b9805943d69980f6778106ad3fbb9c">CH_CFG_CONTEXT_SWITCH_HOOK</a>(ntp, otp)</td></tr>
 <tr class="memdesc:ga61b9805943d69980f6778106ad3fbb9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Context switch hook.  <a href="#ga61b9805943d69980f6778106ad3fbb9c">More...</a><br /></td></tr>
 <tr class="separator:ga61b9805943d69980f6778106ad3fbb9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad85045848a313bb4af2ba316beb65a43"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__config.html#gad85045848a313bb4af2ba316beb65a43">CH_CFG_IRQ_PROLOGUE_HOOK</a>()</td></tr>
+<tr class="memdesc:gad85045848a313bb4af2ba316beb65a43"><td class="mdescLeft">&#160;</td><td class="mdescRight">ISR enter hook.  <a href="#gad85045848a313bb4af2ba316beb65a43">More...</a><br /></td></tr>
+<tr class="separator:gad85045848a313bb4af2ba316beb65a43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7267d6fe5e220bedb4e04f3a101b72c2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__config.html#ga7267d6fe5e220bedb4e04f3a101b72c2">CH_CFG_IRQ_EPILOGUE_HOOK</a>()</td></tr>
+<tr class="memdesc:ga7267d6fe5e220bedb4e04f3a101b72c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">ISR exit hook.  <a href="#ga7267d6fe5e220bedb4e04f3a101b72c2">More...</a><br /></td></tr>
+<tr class="separator:ga7267d6fe5e220bedb4e04f3a101b72c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5193dc6602d532b5eb171c6459d80707"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__config.html#ga5193dc6602d532b5eb171c6459d80707">CH_CFG_IDLE_ENTER_HOOK</a>()</td></tr>
 <tr class="memdesc:ga5193dc6602d532b5eb171c6459d80707"><td class="mdescLeft">&#160;</td><td class="mdescRight">Idle thread enter hook.  <a href="#ga5193dc6602d532b5eb171c6459d80707">More...</a><br /></td></tr>
 <tr class="separator:ga5193dc6602d532b5eb171c6459d80707"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -250,10 +270,27 @@ Kernel hooks</h2></td></tr>
 <tr class="memitem:ga03c17b48d4f0444046d41102acb3a54b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__config.html#ga03c17b48d4f0444046d41102acb3a54b">CH_CFG_SYSTEM_HALT_HOOK</a>(reason)</td></tr>
 <tr class="memdesc:ga03c17b48d4f0444046d41102acb3a54b"><td class="mdescLeft">&#160;</td><td class="mdescRight">System halt hook.  <a href="#ga03c17b48d4f0444046d41102acb3a54b">More...</a><br /></td></tr>
 <tr class="separator:ga03c17b48d4f0444046d41102acb3a54b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabcfd6612c445e7dfbef53f0ff5f73eb8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__config.html#gabcfd6612c445e7dfbef53f0ff5f73eb8">CH_CFG_TRACE_HOOK</a>(tep)</td></tr>
+<tr class="memdesc:gabcfd6612c445e7dfbef53f0ff5f73eb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trace hook.  <a href="#gabcfd6612c445e7dfbef53f0ff5f73eb8">More...</a><br /></td></tr>
+<tr class="separator:gabcfd6612c445e7dfbef53f0ff5f73eb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Kernel related settings and hooks. </p>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="gaf96117860ce3ac9637e7b0fb3f1eac1f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define _CHIBIOS_RT_CONF_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="chconf_8h_source.html#l00031">31</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ga61b9805943d69980f6778106ad3fbb9c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -284,7 +321,7 @@ Kernel hooks</h2></td></tr>
 <p>Context switch hook. </p>
 <p>This hook is invoked just before switching between threads. </p>
 
-<p>Definition at line <a class="el" href="chconf_8h_source.html#l00459">459</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
+<p>Definition at line <a class="el" href="chconf_8h_source.html#l00466">466</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
 
 </div>
 </div>
@@ -301,6 +338,7 @@ Kernel hooks</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">{                                          \</div>
+<div class="line">  <span class="comment">/* Idle-enter code here.*/</span>                                                \</div>
 <div class="line">}</div>
 </div><!-- fragment -->
 <p>Idle thread enter hook. </p>
@@ -308,7 +346,7 @@ Kernel hooks</h2></td></tr>
 <dd>
 This macro can be used to activate a power saving mode. </dd></dl>
 
-<p>Definition at line <a class="el" href="chconf_8h_source.html#l00469">469</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
+<p>Definition at line <a class="el" href="chconf_8h_source.html#l00490">490</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
 
 </div>
 </div>
@@ -325,6 +363,7 @@ This macro can be used to activate a power saving mode. </dd></dl>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">{                                          \</div>
+<div class="line">  <span class="comment">/* Idle-leave code here.*/</span>                                                \</div>
 <div class="line">}</div>
 </div><!-- fragment -->
 <p>Idle thread leave hook. </p>
@@ -332,7 +371,7 @@ This macro can be used to activate a power saving mode. </dd></dl>
 <dd>
 This macro can be used to deactivate a power saving mode. </dd></dl>
 
-<p>Definition at line <a class="el" href="chconf_8h_source.html#l00478">478</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
+<p>Definition at line <a class="el" href="chconf_8h_source.html#l00500">500</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
 
 </div>
 </div>
@@ -355,7 +394,51 @@ This macro can be used to deactivate a power saving mode. </dd></dl>
 <p>Idle Loop hook. </p>
 <p>This hook is continuously invoked by the idle thread loop. </p>
 
-<p>Definition at line <a class="el" href="chconf_8h_source.html#l00485">485</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
+<p>Definition at line <a class="el" href="chconf_8h_source.html#l00508">508</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga7267d6fe5e220bedb4e04f3a101b72c2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CH_CFG_IRQ_EPILOGUE_HOOK</td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">{                                        \</div>
+<div class="line">  <span class="comment">/* IRQ epilogue code here.*/</span>                                              \</div>
+<div class="line">}</div>
+</div><!-- fragment -->
+<p>ISR exit hook. </p>
+
+<p>Definition at line <a class="el" href="chconf_8h_source.html#l00480">480</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gad85045848a313bb4af2ba316beb65a43"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CH_CFG_IRQ_PROLOGUE_HOOK</td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">{                                        \</div>
+<div class="line">  <span class="comment">/* IRQ prologue code here.*/</span>                                              \</div>
+<div class="line">}</div>
+</div><!-- fragment -->
+<p>ISR enter hook. </p>
+
+<p>Definition at line <a class="el" href="chconf_8h_source.html#l00473">473</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
 
 </div>
 </div>
@@ -375,7 +458,7 @@ This macro can be used to deactivate a power saving mode. </dd></dl>
 <dd>
 Requires <code>CH_CFG_USE_MEMCORE</code>. </dd></dl>
 
-<p>Definition at line <a class="el" href="chconf_8h_source.html#l00095">95</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
+<p>Definition at line <a class="el" href="chconf_8h_source.html#l00097">97</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
 
 </div>
 </div>
@@ -392,7 +475,7 @@ Requires <code>CH_CFG_USE_MEMCORE</code>. </dd></dl>
 <p>Idle thread automatic spawn suppression. </p>
 <p>When this option is activated the function <code>chSysInit()</code> does not spawn the idle thread. The application <code><a class="el" href="lpc21_2uart__tunnel_8c.html#a3c04138a5bfe5d72780bb7e82a18e627">main()</a></code> function becomes the idle thread and must implement an infinite loop. </p>
 
-<p>Definition at line <a class="el" href="chconf_8h_source.html#l00104">104</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
+<p>Definition at line <a class="el" href="chconf_8h_source.html#l00106">106</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
 
 </div>
 </div>
@@ -412,7 +495,7 @@ Requires <code>CH_CFG_USE_MEMCORE</code>. </dd></dl>
 <dd>
 The default is <code>TRUE</code>. </dd></dl>
 
-<p>Definition at line <a class="el" href="chconf_8h_source.html#l00123">123</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
+<p>Definition at line <a class="el" href="chconf_8h_source.html#l00125">125</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
 
 </div>
 </div>
@@ -429,9 +512,9 @@ The default is <code>TRUE</code>. </dd></dl>
 <p>System tick frequency. </p>
 <p>Frequency of the system timer that drives the system ticks. This setting also defines the system tick time unit. </p>
 
-<p>Definition at line <a class="el" href="chconf_8h_source.html#l00049">49</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
+<p>Definition at line <a class="el" href="chconf_8h_source.html#l00051">51</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
 
-<p>Referenced by <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c_source.html#l00046">rtos_mon_periodic_arch()</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00126">sys_tick_handler()</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00101">sys_time_msleep()</a>, and <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00095">sys_time_usleep()</a>.</p>
+<p>Referenced by <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c_source.html#l00046">rtos_mon_periodic_arch()</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00126">sys_tick_handler()</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00049">sys_time_arch_init()</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00101">sys_time_msleep()</a>, and <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00095">sys_time_usleep()</a>.</p>
 
 </div>
 </div>
@@ -448,7 +531,7 @@ The default is <code>TRUE</code>. </dd></dl>
 <p>System time counter resolution. </p>
 <dl class="section note"><dt>Note</dt><dd>Allowed values are 16 or 32 bits. </dd></dl>
 
-<p>Definition at line <a class="el" href="chconf_8h_source.html#l00042">42</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
+<p>Definition at line <a class="el" href="chconf_8h_source.html#l00044">44</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
 
 </div>
 </div>
@@ -465,7 +548,7 @@ The default is <code>TRUE</code>. </dd></dl>
 <p>Time delta constant for the tick-less mode. </p>
 <dl class="section note"><dt>Note</dt><dd>If this value is zero then the system uses the classic periodic tick. This value represents the minimum number of ticks that is safe to specify in a timeout directive. The value one is not valid, timeouts are rounded up to this value. </dd></dl>
 
-<p>Definition at line <a class="el" href="chconf_8h_source.html#l00059">59</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
+<p>Definition at line <a class="el" href="chconf_8h_source.html#l00061">61</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
 
 </div>
 </div>
@@ -489,7 +572,7 @@ The default is <code>TRUE</code>. </dd></dl>
 <p>System halt hook. </p>
 <p>This hook is invoked in case to a system halting error before the system is halted. </p>
 
-<p>Definition at line <a class="el" href="chconf_8h_source.html#l00503">503</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
+<p>Definition at line <a class="el" href="chconf_8h_source.html#l00526">526</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
 
 </div>
 </div>
@@ -512,7 +595,7 @@ The default is <code>TRUE</code>. </dd></dl>
 <p>System tick event hook. </p>
 <p>This hook is invoked in the system tick handler immediately after processing the virtual timers queue. </p>
 
-<p>Definition at line <a class="el" href="chconf_8h_source.html#l00494">494</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
+<p>Definition at line <a class="el" href="chconf_8h_source.html#l00517">517</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
 
 </div>
 </div>
@@ -539,7 +622,7 @@ The default is <code>TRUE</code>. </dd></dl>
 <dd>
 It is also invoked when the threads simply return in order to terminate. </dd></dl>
 
-<p>Definition at line <a class="el" href="chconf_8h_source.html#l00451">451</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
+<p>Definition at line <a class="el" href="chconf_8h_source.html#l00458">458</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
 
 </div>
 </div>
@@ -556,7 +639,7 @@ It is also invoked when the threads simply return in order to terminate. </dd></
 <p>Threads descriptor structure extension. </p>
 <p>User fields added to the end of the <code>thread_t</code> structure. </p>
 
-<p>Definition at line <a class="el" href="chconf_8h_source.html#l00429">429</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
+<p>Definition at line <a class="el" href="chconf_8h_source.html#l00436">436</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
 
 </div>
 </div>
@@ -581,7 +664,7 @@ It is also invoked when the threads simply return in order to terminate. </dd></
 <p>User initialization code added to the <code>chThdInit()</code> API.</p>
 <dl class="section note"><dt>Note</dt><dd>It is invoked from within <code>chThdInit()</code> and implicitly from all the threads creation APIs. </dd></dl>
 
-<p>Definition at line <a class="el" href="chconf_8h_source.html#l00439">439</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
+<p>Definition at line <a class="el" href="chconf_8h_source.html#l00446">446</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
 
 </div>
 </div>
@@ -600,7 +683,31 @@ It is also invoked when the threads simply return in order to terminate. </dd></
 <dd>
 The round robin preemption is not supported in tickless mode and must be set to zero in that case. </dd></dl>
 
-<p>Definition at line <a class="el" href="chconf_8h_source.html#l00082">82</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
+<p>Definition at line <a class="el" href="chconf_8h_source.html#l00084">84</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gabcfd6612c445e7dfbef53f0ff5f73eb8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CH_CFG_TRACE_HOOK</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">tep</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">{                                            \</div>
+<div class="line">  <span class="comment">/* Trace code here.*/</span>                                                     \</div>
+<div class="line">}</div>
+</div><!-- fragment -->
+<p>Trace hook. </p>
+<p>This hook is invoked each time a new record is written in the trace buffer. </p>
+
+<p>Definition at line <a class="el" href="chconf_8h_source.html#l00535">535</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
 
 </div>
 </div>
@@ -620,7 +727,7 @@ The round robin preemption is not supported in tickless mode and must be set to 
 <dd>
 Requires <code>CH_CFG_USE_MUTEXES</code>. </dd></dl>
 
-<p>Definition at line <a class="el" href="chconf_8h_source.html#l00205">205</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
+<p>Definition at line <a class="el" href="chconf_8h_source.html#l00207">207</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
 
 </div>
 </div>
@@ -640,7 +747,7 @@ Requires <code>CH_CFG_USE_MUTEXES</code>. </dd></dl>
 <dd>
 Requires <code>CH_CFG_USE_CONDVARS</code>. </dd></dl>
 
-<p>Definition at line <a class="el" href="chconf_8h_source.html#l00215">215</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
+<p>Definition at line <a class="el" href="chconf_8h_source.html#l00217">217</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
 
 </div>
 </div>
@@ -662,7 +769,7 @@ Requires <code>CH_CFG_USE_WAITEXIT</code>. </dd>
 <dd>
 Requires <code>CH_CFG_USE_HEAP</code> and/or <code>CH_CFG_USE_MEMPOOLS</code>. </dd></dl>
 
-<p>Definition at line <a class="el" href="chconf_8h_source.html#l00312">312</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
+<p>Definition at line <a class="el" href="chconf_8h_source.html#l00314">314</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
 
 </div>
 </div>
@@ -680,7 +787,7 @@ Requires <code>CH_CFG_USE_HEAP</code> and/or <code>CH_CFG_USE_MEMPOOLS</code>. <
 <p>If enabled then the event flags APIs are included in the kernel.</p>
 <dl class="section note"><dt>Note</dt><dd>The default is <code>TRUE</code>. </dd></dl>
 
-<p>Definition at line <a class="el" href="chconf_8h_source.html#l00223">223</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
+<p>Definition at line <a class="el" href="chconf_8h_source.html#l00225">225</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
 
 </div>
 </div>
@@ -700,7 +807,7 @@ Requires <code>CH_CFG_USE_HEAP</code> and/or <code>CH_CFG_USE_MEMPOOLS</code>. <
 <dd>
 Requires <code>CH_CFG_USE_EVENTS</code>. </dd></dl>
 
-<p>Definition at line <a class="el" href="chconf_8h_source.html#l00233">233</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
+<p>Definition at line <a class="el" href="chconf_8h_source.html#l00235">235</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
 
 </div>
 </div>
@@ -722,7 +829,7 @@ Requires <code>CH_CFG_USE_MEMCORE</code> and either <code>CH_CFG_USE_MUTEXES</co
 <dd>
 Mutexes are recommended. </dd></dl>
 
-<p>Definition at line <a class="el" href="chconf_8h_source.html#l00292">292</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
+<p>Definition at line <a class="el" href="chconf_8h_source.html#l00294">294</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
 
 </div>
 </div>
@@ -742,7 +849,7 @@ Mutexes are recommended. </dd></dl>
 <dd>
 Requires <code>CH_CFG_USE_SEMAPHORES</code>. </dd></dl>
 
-<p>Definition at line <a class="el" href="chconf_8h_source.html#l00263">263</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
+<p>Definition at line <a class="el" href="chconf_8h_source.html#l00265">265</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
 
 </div>
 </div>
@@ -760,7 +867,7 @@ Requires <code>CH_CFG_USE_SEMAPHORES</code>. </dd></dl>
 <p>If enabled then the core memory manager APIs are included in the kernel.</p>
 <dl class="section note"><dt>Note</dt><dd>The default is <code>TRUE</code>. </dd></dl>
 
-<p>Definition at line <a class="el" href="chconf_8h_source.html#l00280">280</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
+<p>Definition at line <a class="el" href="chconf_8h_source.html#l00282">282</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
 
 </div>
 </div>
@@ -778,7 +885,7 @@ Requires <code>CH_CFG_USE_SEMAPHORES</code>. </dd></dl>
 <p>If enabled then the memory pools allocator APIs are included in the kernel.</p>
 <dl class="section note"><dt>Note</dt><dd>The default is <code>TRUE</code>. </dd></dl>
 
-<p>Definition at line <a class="el" href="chconf_8h_source.html#l00301">301</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
+<p>Definition at line <a class="el" href="chconf_8h_source.html#l00303">303</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
 
 </div>
 </div>
@@ -796,7 +903,7 @@ Requires <code>CH_CFG_USE_SEMAPHORES</code>. </dd></dl>
 <p>If enabled then the synchronous messages APIs are included in the kernel.</p>
 <dl class="section note"><dt>Note</dt><dd>The default is <code>TRUE</code>. </dd></dl>
 
-<p>Definition at line <a class="el" href="chconf_8h_source.html#l00242">242</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
+<p>Definition at line <a class="el" href="chconf_8h_source.html#l00244">244</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
 
 </div>
 </div>
@@ -816,7 +923,7 @@ Requires <code>CH_CFG_USE_SEMAPHORES</code>. </dd></dl>
 <dd>
 Requires <code>CH_CFG_USE_MESSAGES</code>. </dd></dl>
 
-<p>Definition at line <a class="el" href="chconf_8h_source.html#l00253">253</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
+<p>Definition at line <a class="el" href="chconf_8h_source.html#l00255">255</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
 
 </div>
 </div>
@@ -834,7 +941,7 @@ Requires <code>CH_CFG_USE_MESSAGES</code>. </dd></dl>
 <p>If enabled then the mutexes APIs are included in the kernel.</p>
 <dl class="section note"><dt>Note</dt><dd>The default is <code>TRUE</code>. </dd></dl>
 
-<p>Definition at line <a class="el" href="chconf_8h_source.html#l00185">185</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
+<p>Definition at line <a class="el" href="chconf_8h_source.html#l00187">187</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
 
 </div>
 </div>
@@ -855,7 +962,7 @@ The default is <code>FALSE</code>. </dd>
 <dd>
 Requires <code>CH_CFG_USE_MUTEXES</code>. </dd></dl>
 
-<p>Definition at line <a class="el" href="chconf_8h_source.html#l00195">195</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
+<p>Definition at line <a class="el" href="chconf_8h_source.html#l00197">197</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
 
 </div>
 </div>
@@ -873,7 +980,7 @@ Requires <code>CH_CFG_USE_MUTEXES</code>. </dd></dl>
 <p>If enabled then the I/O queues APIs are included in the kernel.</p>
 <dl class="section note"><dt>Note</dt><dd>The default is <code>TRUE</code>. </dd></dl>
 
-<p>Definition at line <a class="el" href="chconf_8h_source.html#l00271">271</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
+<p>Definition at line <a class="el" href="chconf_8h_source.html#l00273">273</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
 
 </div>
 </div>
@@ -891,7 +998,7 @@ Requires <code>CH_CFG_USE_MUTEXES</code>. </dd></dl>
 <p>If enabled then the registry APIs are included in the kernel.</p>
 <dl class="section note"><dt>Note</dt><dd>The default is <code>TRUE</code>. </dd></dl>
 
-<p>Definition at line <a class="el" href="chconf_8h_source.html#l00149">149</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
+<p>Definition at line <a class="el" href="chconf_8h_source.html#l00151">151</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
 
 </div>
 </div>
@@ -909,7 +1016,7 @@ Requires <code>CH_CFG_USE_MUTEXES</code>. </dd></dl>
 <p>If enabled then the Semaphores APIs are included in the kernel.</p>
 <dl class="section note"><dt>Note</dt><dd>The default is <code>TRUE</code>. </dd></dl>
 
-<p>Definition at line <a class="el" href="chconf_8h_source.html#l00166">166</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
+<p>Definition at line <a class="el" href="chconf_8h_source.html#l00168">168</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
 
 </div>
 </div>
@@ -929,7 +1036,7 @@ Requires <code>CH_CFG_USE_MUTEXES</code>. </dd></dl>
 <dd>
 Requires <code>CH_CFG_USE_SEMAPHORES</code>. </dd></dl>
 
-<p>Definition at line <a class="el" href="chconf_8h_source.html#l00177">177</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
+<p>Definition at line <a class="el" href="chconf_8h_source.html#l00179">179</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
 
 </div>
 </div>
@@ -947,7 +1054,7 @@ Requires <code>CH_CFG_USE_SEMAPHORES</code>. </dd></dl>
 <p>If enabled then the time measurement APIs are included in the kernel.</p>
 <dl class="section note"><dt>Note</dt><dd>The default is <code>TRUE</code>. </dd></dl>
 
-<p>Definition at line <a class="el" href="chconf_8h_source.html#l00141">141</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
+<p>Definition at line <a class="el" href="chconf_8h_source.html#l00143">143</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
 
 </div>
 </div>
@@ -965,7 +1072,7 @@ Requires <code>CH_CFG_USE_SEMAPHORES</code>. </dd></dl>
 <p>If enabled then the <code>chThdWait()</code> function is included in the kernel.</p>
 <dl class="section note"><dt>Note</dt><dd>The default is <code>TRUE</code>. </dd></dl>
 
-<p>Definition at line <a class="el" href="chconf_8h_source.html#l00158">158</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
+<p>Definition at line <a class="el" href="chconf_8h_source.html#l00160">160</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
 
 </div>
 </div>
@@ -983,7 +1090,7 @@ Requires <code>CH_CFG_USE_SEMAPHORES</code>. </dd></dl>
 <p>If enabled then all the assertions in the kernel code are activated. This includes consistency checks inside the kernel, runtime anomalies and port-defined checks.</p>
 <dl class="section note"><dt>Note</dt><dd>The default is <code>FALSE</code>. </dd></dl>
 
-<p>Definition at line <a class="el" href="chconf_8h_source.html#l00363">363</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
+<p>Definition at line <a class="el" href="chconf_8h_source.html#l00365">365</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
 
 </div>
 </div>
@@ -1001,7 +1108,7 @@ Requires <code>CH_CFG_USE_SEMAPHORES</code>. </dd></dl>
 <p>If enabled then the checks on the API functions input parameters are activated.</p>
 <dl class="section note"><dt>Note</dt><dd>The default is <code>FALSE</code>. </dd></dl>
 
-<p>Definition at line <a class="el" href="chconf_8h_source.html#l00351">351</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
+<p>Definition at line <a class="el" href="chconf_8h_source.html#l00353">353</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
 
 </div>
 </div>
@@ -1023,25 +1130,7 @@ The stack check is performed in a architecture/port dependent way. It may not be
 <dd>
 The default failure mode is to halt the system with the global <code>panic_msg</code> variable set to <code>NULL</code>. </dd></dl>
 
-<p>Definition at line <a class="el" href="chconf_8h_source.html#l00388">388</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga8bc4cfd861131aeb3c880347d0068229"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define CH_DBG_ENABLE_TRACE&#160;&#160;&#160;<a class="el" href="imu__chimu_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Debug option, trace buffer. </p>
-<p>If enabled then the context switch circular trace buffer is activated.</p>
-<dl class="section note"><dt>Note</dt><dd>The default is <code>FALSE</code>. </dd></dl>
-
-<p>Definition at line <a class="el" href="chconf_8h_source.html#l00374">374</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
+<p>Definition at line <a class="el" href="chconf_8h_source.html#l00395">395</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
 
 </div>
 </div>
@@ -1059,7 +1148,7 @@ The default failure mode is to halt the system with the global <code>panic_msg</
 <p>If enabled then the threads working area is filled with a byte value when a thread is created. This can be useful for the runtime measurement of the used stack.</p>
 <dl class="section note"><dt>Note</dt><dd>The default is <code>FALSE</code>. </dd></dl>
 
-<p>Definition at line <a class="el" href="chconf_8h_source.html#l00400">400</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
+<p>Definition at line <a class="el" href="chconf_8h_source.html#l00407">407</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
 
 </div>
 </div>
@@ -1076,7 +1165,7 @@ The default failure mode is to halt the system with the global <code>panic_msg</
 <p>Debug option, kernel statistics. </p>
 <dl class="section note"><dt>Note</dt><dd>The default is <code>FALSE</code>. </dd></dl>
 
-<p>Definition at line <a class="el" href="chconf_8h_source.html#l00329">329</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
+<p>Definition at line <a class="el" href="chconf_8h_source.html#l00331">331</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
 
 </div>
 </div>
@@ -1094,7 +1183,7 @@ The default failure mode is to halt the system with the global <code>panic_msg</
 <p>If enabled the correct call protocol for system APIs is checked at runtime.</p>
 <dl class="section note"><dt>Note</dt><dd>The default is <code>FALSE</code>. </dd></dl>
 
-<p>Definition at line <a class="el" href="chconf_8h_source.html#l00340">340</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
+<p>Definition at line <a class="el" href="chconf_8h_source.html#l00342">342</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
 
 </div>
 </div>
@@ -1114,7 +1203,72 @@ The default failure mode is to halt the system with the global <code>panic_msg</
 <dd>
 This debug option is not currently compatible with the tickless mode. </dd></dl>
 
-<p>Definition at line <a class="el" href="chconf_8h_source.html#l00413">413</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
+<p>Definition at line <a class="el" href="chconf_8h_source.html#l00420">420</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gacae5f1969a3b894cc3eea9807c07bd2c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CH_DBG_TRACE_BUFFER_SIZE&#160;&#160;&#160;128</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Trace buffer entries. </p>
+<dl class="section note"><dt>Note</dt><dd>The trace buffer is only allocated if <code>CH_DBG_TRACE_MASK</code> is different from <code>CH_DBG_TRACE_MASK_DISABLED</code>. </dd></dl>
+
+<p>Definition at line <a class="el" href="chconf_8h_source.html#l00382">382</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga72ac367ab16b997a2c7d095d3fcb9ecf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CH_DBG_TRACE_MASK&#160;&#160;&#160;CH_DBG_TRACE_MASK_DISABLED</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Debug option, trace buffer. </p>
+<p>If enabled then the context switch circular trace buffer is activated.</p>
+<dl class="section note"><dt>Note</dt><dd>The default is <code>CH_DBG_TRACE_MASK_DISABLED</code>. </dd></dl>
+
+<p>Definition at line <a class="el" href="chconf_8h_source.html#l00375">375</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga92e0819075bd91dc380cc86a20186960"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHPRINTF_USE_FLOAT&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="chconf_8h_source.html#l00566">566</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga7ed3022f929b0ef250c4aa8cda44c0be"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CORTEX_VTOR_INIT&#160;&#160;&#160;0x08000000U</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="chconf_8h_source.html#l00560">560</a> of file <a class="el" href="chconf_8h_source.html">chconf.h</a>.</p>
+
+<p>Referenced by <a class="el" href="chibios_2mcu__arch_8c_source.html#l00109">mcu_arch_init()</a>.</p>
 
 </div>
 </div>
@@ -1123,7 +1277,7 @@ This debug option is not currently compatible with the tickless mode. </dd></dl>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Oct 1 2016 14:02:22 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:02:53 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

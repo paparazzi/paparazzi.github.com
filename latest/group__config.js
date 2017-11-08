@@ -1,9 +1,12 @@
 var group__config =
 [
+    [ "_CHIBIOS_RT_CONF_", "group__config.html#gaf96117860ce3ac9637e7b0fb3f1eac1f", null ],
     [ "CH_CFG_CONTEXT_SWITCH_HOOK", "group__config.html#ga61b9805943d69980f6778106ad3fbb9c", null ],
     [ "CH_CFG_IDLE_ENTER_HOOK", "group__config.html#ga5193dc6602d532b5eb171c6459d80707", null ],
     [ "CH_CFG_IDLE_LEAVE_HOOK", "group__config.html#ga2b4d6d05e655234eb7b46fb16e8180a9", null ],
     [ "CH_CFG_IDLE_LOOP_HOOK", "group__config.html#gad22892d2984f5289c63f963622e7f2af", null ],
+    [ "CH_CFG_IRQ_EPILOGUE_HOOK", "group__config.html#ga7267d6fe5e220bedb4e04f3a101b72c2", null ],
+    [ "CH_CFG_IRQ_PROLOGUE_HOOK", "group__config.html#gad85045848a313bb4af2ba316beb65a43", null ],
     [ "CH_CFG_MEMCORE_SIZE", "group__config.html#ga185a9549f0d212530070e806680c4949", null ],
     [ "CH_CFG_NO_IDLE_THREAD", "group__config.html#ga8c0d4e5b775c997167737f0ca65eb11e", null ],
     [ "CH_CFG_OPTIMIZE_SPEED", "group__config.html#gac7a7942b6c4ef2f79416971688a49c40", null ],
@@ -16,6 +19,7 @@ var group__config =
     [ "CH_CFG_THREAD_EXTRA_FIELDS", "group__config.html#ga376f299366010470175d4abbb0e8096b", null ],
     [ "CH_CFG_THREAD_INIT_HOOK", "group__config.html#gaf52424f7ed3a7c4e7e49b144997aed2c", null ],
     [ "CH_CFG_TIME_QUANTUM", "group__config.html#ga20a364f069f854ccdba167f2cca2526f", null ],
+    [ "CH_CFG_TRACE_HOOK", "group__config.html#gabcfd6612c445e7dfbef53f0ff5f73eb8", null ],
     [ "CH_CFG_USE_CONDVARS", "group__config.html#ga73bc5a9da32221b5dd7759eed02a11fc", null ],
     [ "CH_CFG_USE_CONDVARS_TIMEOUT", "group__config.html#gae286dae62e72f6bd17ecfbd69194b1bb", null ],
     [ "CH_CFG_USE_DYNAMIC", "group__config.html#ga6ae82f40768d872dea807aac79e38deb", null ],
@@ -38,9 +42,12 @@ var group__config =
     [ "CH_DBG_ENABLE_ASSERTS", "group__config.html#gad602fd2546073869a10859158d865b9b", null ],
     [ "CH_DBG_ENABLE_CHECKS", "group__config.html#gaef984ca3bfd8a71478ad55ce6e56a8bb", null ],
     [ "CH_DBG_ENABLE_STACK_CHECK", "group__config.html#gab93d9ee904f15d4f2c26ef2a1394a1d7", null ],
-    [ "CH_DBG_ENABLE_TRACE", "group__config.html#ga8bc4cfd861131aeb3c880347d0068229", null ],
     [ "CH_DBG_FILL_THREADS", "group__config.html#ga6a859dd249adfb66b9bbf809061ea06c", null ],
     [ "CH_DBG_STATISTICS", "group__config.html#ga01fa48cf866c26bad886a15c37571f99", null ],
     [ "CH_DBG_SYSTEM_STATE_CHECK", "group__config.html#ga10db71bc25605169dddc82c1604b0a16", null ],
-    [ "CH_DBG_THREADS_PROFILING", "group__config.html#gadc9c00c2e5b6e766ded8dfa77c0c90c1", null ]
+    [ "CH_DBG_THREADS_PROFILING", "group__config.html#gadc9c00c2e5b6e766ded8dfa77c0c90c1", null ],
+    [ "CH_DBG_TRACE_BUFFER_SIZE", "group__config.html#gacae5f1969a3b894cc3eea9807c07bd2c", null ],
+    [ "CH_DBG_TRACE_MASK", "group__config.html#ga72ac367ab16b997a2c7d095d3fcb9ecf", null ],
+    [ "CHPRINTF_USE_FLOAT", "group__config.html#ga92e0819075bd91dc380cc86a20186960", null ],
+    [ "CORTEX_VTOR_INIT", "group__config.html#ga7ed3022f929b0ef250c4aa8cda44c0be", null ]
 ];

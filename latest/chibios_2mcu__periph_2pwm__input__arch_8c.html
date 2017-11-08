@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -116,8 +116,10 @@ $(document).ready(function(){initNavTree('chibios_2mcu__periph_2pwm__input__arch
 <p>handling of stm32 PWM input using a timer with capture.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;mcu_periph/pwm_input_arch.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="pwm__input_8h_source.html">mcu_periph/pwm_input.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="gpio_8h_source.html">mcu_periph/gpio.h</a>&quot;</code><br />
-<code>#include &quot;hal.h&quot;</code><br />
+<code>#include &lt;hal.h&gt;</code><br />
+<code>#include &lt;BOARD_CONFIG&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for pwm_input_arch.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -125,7 +127,7 @@ $(document).ready(function(){initNavTree('chibios_2mcu__periph_2pwm__input__arch
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="chibios_2mcu__periph_2pwm__input__arch_8c__incl.png" border="0" usemap="#sw_2airborne_2arch_2chibios_2mcu__periph_2pwm__input__arch_8c" alt=""/></div>
 <map name="sw_2airborne_2arch_2chibios_2mcu__periph_2pwm__input__arch_8c" id="sw_2airborne_2arch_2chibios_2mcu__periph_2pwm__input__arch_8c">
-<area shape="rect" id="node3" href="gpio_8h.html" title="Some architecture independent helper functions for GPIOs. " alt="" coords="201,102,341,129"/></map>
+<area shape="rect" id="node3" href="pwm__input_8h.html" title="arch independent PWM input capture API " alt="" coords="201,102,383,129"/><area shape="rect" id="node4" href="gpio_8h.html" title="Some architecture independent helper functions for GPIOs. " alt="" coords="407,102,547,129"/></map>
 </div>
 </div>
 <p><a href="chibios_2mcu__periph_2pwm__input__arch_8c_source.html">Go to the source code of this file.</a></p>
@@ -139,10 +141,6 @@ Macros</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a45920a6a88c45cb2cb798b01306707a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chibios_2mcu__periph_2pwm__input__arch_8c.html#a45920a6a88c45cb2cb798b01306707a2">pwm_input_init</a> (void)</td></tr>
 <tr class="separator:a45920a6a88c45cb2cb798b01306707a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6bb41ee9ef588e2319ab3f59ac58bb2c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chibios_2mcu__periph_2pwm__input__arch_8c.html#a6bb41ee9ef588e2319ab3f59ac58bb2c">get_pwm_input_duty_in_usec</a> (<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> <a class="el" href="stm32_2subsystems_2imu_2imu__crista__arch_8c.html#a4b613adf1dc9edfbc9951cf9b86ec2e3">channel</a>)</td></tr>
-<tr class="separator:a6bb41ee9ef588e2319ab3f59ac58bb2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac481cd63da992c694d29285978e7384"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chibios_2mcu__periph_2pwm__input__arch_8c.html#aac481cd63da992c694d29285978e7384">get_pwm_input_period_in_usec</a> (<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> <a class="el" href="stm32_2subsystems_2imu_2imu__crista__arch_8c.html#a4b613adf1dc9edfbc9951cf9b86ec2e3">channel</a>)</td></tr>
-<tr class="separator:aac481cd63da992c694d29285978e7384"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>handling of stm32 PWM input using a timer with capture. </p>
@@ -159,79 +157,13 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="chibios_2mcu__periph_2pwm__input__arch_8c_source.html#l00032">32</a> of file <a class="el" href="chibios_2mcu__periph_2pwm__input__arch_8c_source.html">pwm_input_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="chibios_2mcu__periph_2pwm__input__arch_8c_source.html#l00034">34</a> of file <a class="el" href="chibios_2mcu__periph_2pwm__input__arch_8c_source.html">pwm_input_arch.c</a>.</p>
 
 <p>Referenced by <a class="el" href="stm32_2subsystems_2actuators_2actuators__dualpwm__arch_8c_source.html#l00046">actuators_dualpwm_arch_init()</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a6bb41ee9ef588e2319ab3f59ac58bb2c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> get_pwm_input_duty_in_usec </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td>
-          <td class="paramname"><em>channel</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="chibios_2mcu__periph_2pwm__input__arch_8c_source.html#l00117">117</a> of file <a class="el" href="chibios_2mcu__periph_2pwm__input__arch_8c_source.html">pwm_input_arch.c</a>.</p>
-
-<p>References <a class="el" href="ADS8344_8c_source.html#l00080">channel</a>, <a class="el" href="pwm__input_8c_source.html#l00029">pwm_input_duty_tics</a>, and <a class="el" href="chibios_2mcu__periph_2pwm__input__arch_8h_source.html#l00045">PWM_INPUT_TICKS_PER_USEC</a>.</p>
-
-<p>Referenced by <a class="el" href="aoa__pwm_8c_source.html#l00111">aoa_pwm_update()</a>.</p>
-
-<p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="chibios_2mcu__periph_2pwm__input__arch_8c_a6bb41ee9ef588e2319ab3f59ac58bb2c_icgraph.png" border="0" usemap="#chibios_2mcu__periph_2pwm__input__arch_8c_a6bb41ee9ef588e2319ab3f59ac58bb2c_icgraph" alt=""/></div>
-<map name="chibios_2mcu__periph_2pwm__input__arch_8c_a6bb41ee9ef588e2319ab3f59ac58bb2c_icgraph" id="chibios_2mcu__periph_2pwm__input__arch_8c_a6bb41ee9ef588e2319ab3f59ac58bb2c_icgraph">
-<area shape="rect" id="node2" href="aoa__pwm_8h.html#ad218f9a74fbec56f87dd18f493fc01e3" title="aoa_pwm_update" alt="" coords="208,13,343,39"/></map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="aac481cd63da992c694d29285978e7384"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> get_pwm_input_period_in_usec </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td>
-          <td class="paramname"><em>channel</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="chibios_2mcu__periph_2pwm__input__arch_8c_source.html#l00121">121</a> of file <a class="el" href="chibios_2mcu__periph_2pwm__input__arch_8c_source.html">pwm_input_arch.c</a>.</p>
-
-<p>References <a class="el" href="ADS8344_8c_source.html#l00080">channel</a>, <a class="el" href="pwm__input_8c_source.html#l00031">pwm_input_period_tics</a>, and <a class="el" href="chibios_2mcu__periph_2pwm__input__arch_8h_source.html#l00045">PWM_INPUT_TICKS_PER_USEC</a>.</p>
-
-<p>Referenced by <a class="el" href="rpm__sensor_8c_source.html#l00067">rpm_sensor_get_rpm()</a>.</p>
-
-<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="chibios_2mcu__periph_2pwm__input__arch_8c_aac481cd63da992c694d29285978e7384_icgraph.png" border="0" usemap="#chibios_2mcu__periph_2pwm__input__arch_8c_aac481cd63da992c694d29285978e7384_icgraph" alt=""/></div>
-<map name="chibios_2mcu__periph_2pwm__input__arch_8c_aac481cd63da992c694d29285978e7384_icgraph" id="chibios_2mcu__periph_2pwm__input__arch_8c_aac481cd63da992c694d29285978e7384_icgraph">
-<area shape="rect" id="node2" href="rpm__sensor_8h.html#a9a1ae07808a3f9b217e667660e4fd41a" title="rpm_sensor_get_rpm" alt="" coords="220,31,379,57"/><area shape="rect" id="node3" href="stabilization__attitude__heli__indi_8c.html#add1138c9aae1adaafdb42ddf2f0c039a" title="stabilization_attitude_run" alt="" coords="427,5,609,32"/><area shape="rect" id="node4" href="rpm__sensor_8h.html#a5550963597a0a9158031c44bbf5ecaf2" title="rpm_sensor_periodic" alt="" coords="441,56,595,83"/></map>
-</div>
-</p>
-
-</div>
-</div>
 <a class="anchor" id="a45920a6a88c45cb2cb798b01306707a2"></a>
 <div class="memitem">
 <div class="memproto">
@@ -246,28 +178,28 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="chibios_2mcu__periph_2pwm__input__arch_8c_source.html#l00090">90</a> of file <a class="el" href="chibios_2mcu__periph_2pwm__input__arch_8c_source.html">pwm_input_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="chibios_2mcu__periph_2pwm__input__arch_8c_source.html#l00092">92</a> of file <a class="el" href="chibios_2mcu__periph_2pwm__input__arch_8c_source.html">pwm_input_arch.c</a>.</p>
 
-<p>References <a class="el" href="chibios_2mcu__periph_2gpio__arch_8c_source.html#l00061">gpio_setup_pin_af()</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00929">PWM_INPUT1_GPIO_AF</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00928">PWM_INPUT1_GPIO_PIN</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00927">PWM_INPUT1_GPIO_PORT</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00924">PWM_INPUT1_ICU</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00939">PWM_INPUT2_GPIO_AF</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00938">PWM_INPUT2_GPIO_PIN</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00937">PWM_INPUT2_GPIO_PORT</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00935">PWM_INPUT2_ICU</a>, <a class="el" href="pwm__input_8c_source.html#l00029">pwm_input_duty_tics</a>, <a class="el" href="pwm__input_8c_source.html#l00030">pwm_input_duty_valid</a>, <a class="el" href="chibios_2mcu__periph_2pwm__input__arch_8h_source.html#l00038">PWM_INPUT_NB</a>, <a class="el" href="pwm__input_8c_source.html#l00031">pwm_input_period_tics</a>, and <a class="el" href="pwm__input_8c_source.html#l00032">pwm_input_period_valid</a>.</p>
+<p>References <a class="el" href="chibios_2mcu__periph_2gpio__arch_8c_source.html#l00061">gpio_setup_pin_af()</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00929">PWM_INPUT1_GPIO_AF</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00928">PWM_INPUT1_GPIO_PIN</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00927">PWM_INPUT1_GPIO_PORT</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00924">PWM_INPUT1_ICU</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00939">PWM_INPUT2_GPIO_AF</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00938">PWM_INPUT2_GPIO_PIN</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00937">PWM_INPUT2_GPIO_PORT</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00935">PWM_INPUT2_ICU</a>, <a class="el" href="pwm__input_8c_source.html#l00034">pwm_input_duty_tics</a>, <a class="el" href="pwm__input_8c_source.html#l00035">pwm_input_duty_valid</a>, <a class="el" href="chibios_2mcu__periph_2pwm__input__arch_8h_source.html#l00038">PWM_INPUT_NB</a>, <a class="el" href="pwm__input_8c_source.html#l00036">pwm_input_period_tics</a>, and <a class="el" href="pwm__input_8c_source.html#l00037">pwm_input_period_valid</a>.</p>
 
 <p>Referenced by <a class="el" href="pwm__meas_8c_source.html#l00033">pwm_meas_init()</a>.</p>
 
-<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="chibios_2mcu__periph_2pwm__input__arch_8c_a45920a6a88c45cb2cb798b01306707a2_cgraph.png" border="0" usemap="#chibios_2mcu__periph_2pwm__input__arch_8c_a45920a6a88c45cb2cb798b01306707a2_cgraph" alt=""/></div>
 <map name="chibios_2mcu__periph_2pwm__input__arch_8c_a45920a6a88c45cb2cb798b01306707a2_cgraph" id="chibios_2mcu__periph_2pwm__input__arch_8c_a45920a6a88c45cb2cb798b01306707a2_cgraph">
-<area shape="rect" id="node2" href="chibios_2mcu__periph_2gpio__arch_8c.html#a2c7329d348ac5b033def05d5474eaf86" title="Setup a gpio for input or output with alternate function. " alt="" coords="171,5,308,32"/></map>
+<area shape="rect" id="node2" href="chibios_2mcu__periph_2gpio__arch_8c.html#a528b4b25ff5b01c8fc531698281f80f1" title="Setup a gpio for input or output with alternate function. " alt="" coords="171,5,308,32"/></map>
 </div>
 </p>
 
-<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="chibios_2mcu__periph_2pwm__input__arch_8c_a45920a6a88c45cb2cb798b01306707a2_icgraph.png" border="0" usemap="#chibios_2mcu__periph_2pwm__input__arch_8c_a45920a6a88c45cb2cb798b01306707a2_icgraph" alt=""/></div>
 <map name="chibios_2mcu__periph_2pwm__input__arch_8c_a45920a6a88c45cb2cb798b01306707a2_icgraph" id="chibios_2mcu__periph_2pwm__input__arch_8c_a45920a6a88c45cb2cb798b01306707a2_icgraph">
 <area shape="rect" id="node2" href="pwm__meas_8h.html#a84d3630a1807bc21333ea5cf9e9357f8" title="pwm_meas_init" alt="" coords="171,5,292,32"/></map>
@@ -282,7 +214,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_975986b9e0eb299e77243bf822f828ce.html">chibios</a></li><li class="navelem"><a class="el" href="dir_b82140776176b28f52d7ab660bc0e8ab.html">mcu_periph</a></li><li class="navelem"><a class="el" href="chibios_2mcu__periph_2pwm__input__arch_8c.html">pwm_input_arch.c</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:01:36 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:01:55 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

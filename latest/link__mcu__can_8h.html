@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -191,19 +191,19 @@ checksum</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a70220d83e9827cbe611a4cd03e6935d3"></a>union <a class="el" href="link__mcu__usart_8h.html#unionlink__mcu__msg_8payload">link_mcu_msg</a></td>
-<td class="fieldname">
-payload</td>
-<td class="fielddoc">
-</td></tr>
-<tr><td class="fieldtype">
-<a class="anchor" id="abd9194dd00eb7b9df0ada8f1b6c68dd5"></a>union <a class="el" href="link__mcu__usart_8h.html#unionlink__mcu__msg_8payload">link_mcu_msg</a></td>
+<a class="anchor" id="a9568197494354a03838889d30088173d"></a>union <a class="el" href="link__mcu__usart_8h.html#unionlink__mcu__msg_8payload">link_mcu_msg</a></td>
 <td class="fieldname">
 payload</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
 <a class="anchor" id="a3e9f9041035967f8aa282f87be567fbe"></a>union <a class="el" href="link__mcu__usart_8h.html#unionlink__mcu__msg_8payload">link_mcu_msg</a></td>
+<td class="fieldname">
+payload</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a70220d83e9827cbe611a4cd03e6935d3"></a>union <a class="el" href="link__mcu__usart_8h.html#unionlink__mcu__msg_8payload">link_mcu_msg</a></td>
 <td class="fieldname">
 payload</td>
 <td class="fielddoc">
@@ -308,7 +308,7 @@ from_fbw</td>
       </table>
 </div><div class="memdoc">
 
-<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00554">attitude_loop()</a>.</p>
+<p>Referenced by <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00272">attitude_loop()</a>, and <a class="el" href="fixedwing_2autopilot__generated_8c_source.html#l00050">autopilot_generated_periodic()</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -317,7 +317,7 @@ from_fbw</td>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="link__mcu__can_8h_ad2f41351eb7b54410360a1e9f1f2407a_icgraph.png" border="0" usemap="#link__mcu__can_8h_ad2f41351eb7b54410360a1e9f1f2407a_icgraph" alt=""/></div>
 <map name="link__mcu__can_8h_ad2f41351eb7b54410360a1e9f1f2407a_icgraph" id="link__mcu__can_8h_ad2f41351eb7b54410360a1e9f1f2407a_icgraph">
-<area shape="rect" id="node2" href="main__ap_8h.html#a315546d9034361bbc6970b3792dc8b67" title="attitude_loop" alt="" coords="169,56,276,83"/><area shape="rect" id="node3" href="main__ap_8h.html#a2b4e383f6a21da5bad019df0b3891508" title="event_task_ap" alt="" coords="360,5,475,32"/><area shape="rect" id="node4" href="sim__ap_8c.html#a4f982dacbb35ccfc3e0fcaa64156a2a0" title="sim_periodic_task" alt="" coords="559,31,695,57"/><area shape="rect" id="node5" href="main__ap_8h.html#a43fd973b44bcc2c2583cf8287048212f" title="handle_periodic_tasks_ap" alt="" coords="324,107,511,133"/></map>
+<area shape="rect" id="node2" href="fixedwing_2autopilot__static_8h.html#a315546d9034361bbc6970b3792dc8b67" title="attitude_loop" alt="" coords="169,81,276,108"/><area shape="rect" id="node9" href="rotorcraft_2autopilot__generated_8h.html#a275c90ef6580ab8a9c8a36f7ee3b9644" title="autopilot_generated\l_periodic" alt="" coords="337,158,488,199"/><area shape="rect" id="node3" href="rotorcraft_2autopilot__static_8h.html#a81ff7c3a0611cb76bfbd35fc817070d6" title="autopilot_static_periodic" alt="" coords="324,56,501,83"/><area shape="rect" id="node5" href="fixedwing_2main__ap_8h.html#a43fd973b44bcc2c2583cf8287048212f" title="handle_periodic_tasks_ap" alt="" coords="732,107,919,133"/><area shape="rect" id="node8" href="sim__ap_8c.html#a4f982dacbb35ccfc3e0fcaa64156a2a0" title="sim_periodic_task" alt="" coords="757,5,893,32"/><area shape="rect" id="node4" href="autopilot_8h.html#a1914661233fbbed6c2ee653b99757652" title="Autopilot periodic call at PERIODIC_FREQUENCY. " alt="" coords="549,56,684,83"/><area shape="rect" id="node6" href="rotorcraft_2main__fbw_8h.html#a81249e4ef19b8766982a6fe272d89bae" title="main_periodic" alt="" coords="770,56,881,83"/><area shape="rect" id="node7" href="rotorcraft_2main__fbw_8h.html#ab79bb049ce85bf2ed3a75c6b12c02bcb" title="handle_periodic_tasks" alt="" coords="967,56,1129,83"/></map>
 </div>
 </p>
 
@@ -372,7 +372,7 @@ from_fbw</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="link__mcu__can_8h.html">link_mcu_can.h</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:01:50 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:02:13 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

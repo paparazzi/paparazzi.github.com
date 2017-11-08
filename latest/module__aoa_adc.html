@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -174,12 +174,14 @@ Raw AOA_adc.xml file:</h2>
 <div class="line">    &lt;define name=&quot;AOA_SENS&quot; value=&quot;(2*3.14)/1024&quot; description=&quot;sensor sensitivity&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;AOA_OFFSET&quot; value=&quot;3.14&quot;  description=&quot;offset in radians&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;AOA_FILTER&quot; value=&quot;0.5&quot; description=&quot;filtering parameter between 0 (no filtering) and 1&quot;/&gt;</div>
+<div class="line"></div>
+<div class="line"></div>
 <div class="line">  &lt;/doc&gt;</div>
 <div class="line">  &lt;settings&gt;</div>
 <div class="line">    &lt;dl_settings&gt;</div>
 <div class="line">      &lt;dl_settings NAME=&quot;AOA&quot;&gt;</div>
-<div class="line">        &lt;dl_setting MAX=&quot;4&quot; MIN=&quot;-4&quot; STEP=&quot;0.0001&quot; VAR=&quot;AOA_offset&quot; shortname=&quot;AOA_offset&quot; module=&quot;modules/sensors/AOA_adc&quot; param=&quot;AOA_OFFSET&quot;/&gt;</div>
-<div class="line">        &lt;dl_setting MAX=&quot;0.95&quot; MIN=&quot;0&quot; STEP=&quot;0.001&quot; VAR=&quot;AOA_filter&quot; shortname=&quot;AOA_filter&quot; module=&quot;modules/sensors/AOA_adc&quot; param=&quot;AOA_FILTER&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting MAX=&quot;4&quot; MIN=&quot;-4&quot; STEP=&quot;0.0001&quot; VAR=&quot;aoa_adc.offset&quot; shortname=&quot;AOA_offset&quot; module=&quot;modules/sensors/aoa_adc&quot; param=&quot;AOA_OFFSET&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting MAX=&quot;0.95&quot; MIN=&quot;0&quot; STEP=&quot;0.001&quot; VAR=&quot;aoa_adc.filter&quot; shortname=&quot;AOA_filter&quot; module=&quot;modules/sensors/aoa_adc&quot; param=&quot;AOA_FILTER&quot;/&gt;</div>
 <div class="line">        &lt;dl_setting MAX=&quot;1&quot; MIN=&quot;0&quot; STEP=&quot;1&quot; VAR=&quot;h_ctl_pitch_mode&quot; shortname=&quot;PITCH_Mode&quot;  module=&quot;stabilization/stabilization_attitude&quot; /&gt;</div>
 <div class="line">      &lt;/dl_settings&gt;</div>
 <div class="line">    &lt;/dl_settings&gt;</div>
@@ -205,7 +207,7 @@ Raw AOA_adc.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:02:19 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:02:47 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

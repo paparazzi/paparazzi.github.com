@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -126,7 +126,7 @@ $(document).ready(function(){initNavTree('motor__mixing_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="motor__mixing_8c__incl.png" border="0" usemap="#sw_2airborne_2subsystems_2actuators_2motor__mixing_8c" alt=""/></div>
 <map name="sw_2airborne_2subsystems_2actuators_2motor__mixing_8c" id="sw_2airborne_2subsystems_2actuators_2motor__mixing_8c">
-<area shape="rect" id="node2" href="motor__mixing_8h.html" title="Motor Mixing. " alt="" coords="1005,95,1169,136"/><area shape="rect" id="node4" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="884,191,980,218"/><area shape="rect" id="node8" href="telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code). " alt="" coords="331,95,485,136"/><area shape="rect" id="node7" href="motor__mixing__types_8h.html" title="Common Motor Mixing configuration types. " alt="" coords="1005,191,1169,218"/><area shape="rect" id="node5" href="inttypes_8h.html" title="inttypes.h" alt="" coords="984,281,1069,307"/><area shape="rect" id="node9" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="232,281,371,307"/><area shape="rect" id="node13" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="626,184,779,225"/><area shape="rect" id="node16" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="446,273,599,315"/></map>
+<area shape="rect" id="node2" href="motor__mixing_8h.html" title="Motor Mixing. " alt="" coords="1145,95,1309,136"/><area shape="rect" id="node4" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="1025,191,1121,218"/><area shape="rect" id="node8" href="telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code). " alt="" coords="221,95,375,136"/><area shape="rect" id="node7" href="motor__mixing__types_8h.html" title="Common Motor Mixing configuration types. " alt="" coords="1145,191,1309,218"/><area shape="rect" id="node5" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1091,281,1177,307"/><area shape="rect" id="node9" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="125,363,263,389"/><area shape="rect" id="node13" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="733,184,887,225"/><area shape="rect" id="node16" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="553,273,707,315"/><area shape="rect" id="node18" href="pprz__dl_8h.html" title="Datalink using PPRZ protocol. " alt="" coords="336,281,529,307"/></map>
 </div>
 </div>
 <p><a href="motor__mixing_8c_source.html">Go to the source code of this file.</a></p>
@@ -455,7 +455,7 @@ Variables</h2></td></tr>
 
 <p>References <a class="el" href="motor__mixing_8h_source.html#l00037">MotorMixing::commands</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="motor__mixing_8c_source.html#l00094">motor_mixing</a>, <a class="el" href="motor__mixing_8c_source.html#l00047">MOTOR_MIXING_STOP_MOTOR</a>, <a class="el" href="motor__mixing_8c_source.html#l00055">MOTOR_MIXING_TRIM_PITCH</a>, <a class="el" href="motor__mixing_8c_source.html#l00051">MOTOR_MIXING_TRIM_ROLL</a>, <a class="el" href="motor__mixing_8c_source.html#l00059">MOTOR_MIXING_TRIM_YAW</a>, <a class="el" href="motor__mixing_8h_source.html#l00042">MotorMixing::nb_failure</a>, <a class="el" href="motor__mixing_8h_source.html#l00041">MotorMixing::nb_saturation</a>, <a class="el" href="motor__mixing_8h_source.html#l00039">MotorMixing::override_enabled</a>, <a class="el" href="motor__mixing_8h_source.html#l00040">MotorMixing::override_value</a>, <a class="el" href="motor__mixing_8c_source.html#l00090">pitch_coef</a>, <a class="el" href="telemetry_8c_source.html#l00046">register_periodic_telemetry()</a>, <a class="el" href="motor__mixing_8c_source.html#l00089">roll_coef</a>, <a class="el" href="motor__mixing_8c_source.html#l00098">send_motor_mixing()</a>, <a class="el" href="motor__mixing_8h_source.html#l00038">MotorMixing::trim</a>, and <a class="el" href="motor__mixing_8c_source.html#l00091">yaw_coef</a>.</p>
 
-<p>Referenced by <a class="el" href="rotorcraft_2main_8c_source.html#l00158">main_init()</a>.</p>
+<p>Referenced by <a class="el" href="rotorcraft_2main__fbw_8c_source.html#l00075">main_init()</a>.</p>
 
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -475,7 +475,7 @@ Variables</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="motor__mixing_8c_aa6be133f8fea4274105384f0276801a1_icgraph.png" border="0" usemap="#motor__mixing_8c_aa6be133f8fea4274105384f0276801a1_icgraph" alt=""/></div>
 <map name="motor__mixing_8c_aa6be133f8fea4274105384f0276801a1_icgraph" id="motor__mixing_8c_aa6be133f8fea4274105384f0276801a1_icgraph">
-<area shape="rect" id="node2" href="rotorcraft_2main__fbw_8h.html#a092df25ac46a6a4ca72c023d8821f9b2" title="Main initialization. " alt="" coords="189,5,269,32"/><area shape="rect" id="node3" href="rotorcraft_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="317,5,372,32"/></map>
+<area shape="rect" id="node2" href="rotorcraft_2main__fbw_8c.html#a3719465edd56d2b587a6b340f29e4f90" title="Main initialization. " alt="" coords="189,5,269,32"/></map>
 </div>
 </p>
 
@@ -582,7 +582,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="motor__mixing_8c_source.html#l00128">128</a> of file <a class="el" href="motor__mixing_8c_source.html">motor_mixing.c</a>.</p>
 
-<p>References <a class="el" href="motor__mixing_8h_source.html#l00037">MotorMixing::commands</a>, <a class="el" href="motor__mixing_8c_source.html#l00094">motor_mixing</a>, and <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00156">offset</a>.</p>
+<p>References <a class="el" href="motor__mixing_8h_source.html#l00037">MotorMixing::commands</a>, <a class="el" href="motor__mixing_8c_source.html#l00094">motor_mixing</a>, and <a class="el" href="dw1000__arduino_8c_source.html#l00206">offset</a>.</p>
 
 <p>Referenced by <a class="el" href="motor__mixing_8c_source.html#l00193">motor_mixing_run()</a>.</p>
 
@@ -644,7 +644,7 @@ Variables</h2></td></tr>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="motor__mixing_8c_a6b93fe889f4597c3a354af3a8910eecc_icgraph.png" border="0" usemap="#motor__mixing_8c_a6b93fe889f4597c3a354af3a8910eecc_icgraph" alt=""/></div>
 <map name="motor__mixing_8c_a6b93fe889f4597c3a354af3a8910eecc_icgraph" id="motor__mixing_8c_a6b93fe889f4597c3a354af3a8910eecc_icgraph">
-<area shape="rect" id="node2" href="motor__mixing_8h.html#aa6be133f8fea4274105384f0276801a1" title="motor_mixing_init" alt="" coords="201,5,337,32"/><area shape="rect" id="node3" href="rotorcraft_2main__fbw_8h.html#a092df25ac46a6a4ca72c023d8821f9b2" title="Main initialization. " alt="" coords="385,5,465,32"/><area shape="rect" id="node4" href="rotorcraft_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="513,5,568,32"/></map>
+<area shape="rect" id="node2" href="motor__mixing_8h.html#aa6be133f8fea4274105384f0276801a1" title="motor_mixing_init" alt="" coords="201,5,337,32"/><area shape="rect" id="node3" href="rotorcraft_2main__fbw_8c.html#a3719465edd56d2b587a6b340f29e4f90" title="Main initialization. " alt="" coords="385,5,465,32"/></map>
 </div>
 </p>
 
@@ -663,7 +663,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="motor__mixing_8c_source.html#l00094">94</a> of file <a class="el" href="motor__mixing_8c_source.html">motor_mixing.c</a>.</p>
 
-<p>Referenced by <a class="el" href="motor__mixing_8c_source.html#l00136">bound_commands()</a>, <a class="el" href="motor__mixing_8c_source.html#l00144">bound_commands_step()</a>, <a class="el" href="motor__mixing_8c_source.html#l00109">motor_mixing_init()</a>, <a class="el" href="motor__mixing_8c_source.html#l00193">motor_mixing_run()</a>, <a class="el" href="motor__mixing_8c_source.html#l00168">motor_mixing_run_spinup()</a>, <a class="el" href="nps__autopilot__rotorcraft_8c_source.html#l00086">nps_autopilot_run_step()</a>, <a class="el" href="motor__mixing_8c_source.html#l00128">offset_commands()</a>, <a class="el" href="motor__mixing_8c_source.html#l00098">send_motor_mixing()</a>, and <a class="el" href="rotorcraft_2autopilot_8c_source.html#l00187">send_status()</a>.</p>
+<p>Referenced by <a class="el" href="motor__mixing_8c_source.html#l00136">bound_commands()</a>, <a class="el" href="motor__mixing_8c_source.html#l00144">bound_commands_step()</a>, <a class="el" href="motor__mixing_8c_source.html#l00109">motor_mixing_init()</a>, <a class="el" href="motor__mixing_8c_source.html#l00193">motor_mixing_run()</a>, <a class="el" href="motor__mixing_8c_source.html#l00168">motor_mixing_run_spinup()</a>, <a class="el" href="nps__autopilot__rotorcraft_8c_source.html#l00093">nps_autopilot_run_step()</a>, <a class="el" href="motor__mixing_8c_source.html#l00128">offset_commands()</a>, <a class="el" href="motor__mixing_8c_source.html#l00098">send_motor_mixing()</a>, and <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00085">send_status()</a>.</p>
 
 </div>
 </div>
@@ -759,7 +759,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="motor__mixing_8c_source.html#l00091">91</a> of file <a class="el" href="motor__mixing_8c_source.html">motor_mixing.c</a>.</p>
 
-<p>Referenced by <a class="el" href="motor__mixing_8c_source.html#l00109">motor_mixing_init()</a>, and <a class="el" href="motor__mixing_8c_source.html#l00193">motor_mixing_run()</a>.</p>
+<p>Referenced by <a class="el" href="nps__fdm__gazebo_8cpp_source.html#l00303">init_gazebo()</a>, <a class="el" href="motor__mixing_8c_source.html#l00109">motor_mixing_init()</a>, and <a class="el" href="motor__mixing_8c_source.html#l00193">motor_mixing_run()</a>.</p>
 
 </div>
 </div>
@@ -769,7 +769,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_27687546688cef5dbb42803ce993f4c4.html">actuators</a></li><li class="navelem"><a class="el" href="motor__mixing_8c.html">motor_mixing.c</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:02:09 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:02:37 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

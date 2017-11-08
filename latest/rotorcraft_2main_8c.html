@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -106,39 +106,16 @@ $(document).ready(function(){initNavTree('rotorcraft_2main_8c.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#define-members">Macros</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">main.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Rotorcraft main loop.  
+<p>Program main function AP + FBW on single MCU AP or FBW on dual MCU None on SITL.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;<a class="el" href="inttypes_8h_source.html">inttypes.h</a>&gt;</code><br />
-<code>#include &quot;<a class="el" href="mcu_8h_source.html">mcu.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="rotorcraft_2main__ap_8h_source.html">firmwares/rotorcraft/main_ap.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="sys__time_8h_source.html">mcu_periph/sys_time.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="led_8h_source.html">led.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="telemetry_8h_source.html">subsystems/datalink/telemetry.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="datalink_8h_source.html">subsystems/datalink/datalink.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="downlink_8h_source.html">subsystems/datalink/downlink.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="settings_8h_source.html">subsystems/settings.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="commands_8h_source.html">subsystems/commands.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="subsystems_2actuators_8h_source.html">subsystems/actuators.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="imu_8h_source.html">subsystems/imu.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="gps_8h_source.html">subsystems/gps.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="electrical_8h_source.html">subsystems/electrical.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="rotorcraft_2autopilot_8h_source.html">firmwares/rotorcraft/autopilot.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="radio__control_8h_source.html">subsystems/radio_control.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="stabilization_8h_source.html">firmwares/rotorcraft/stabilization.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="guidance_8h_source.html">firmwares/rotorcraft/guidance.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="ahrs_8h_source.html">subsystems/ahrs.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="ahrs__aligner_8h_source.html">subsystems/ahrs/ahrs_aligner.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="state_8h_source.html">state.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="main_8h_source.html">firmwares/rotorcraft/main.h</a>&quot;</code><br />
-<code>#include &quot;generated/modules.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="abi_8h_source.html">subsystems/abi.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for main.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -146,204 +123,21 @@ $(document).ready(function(){initNavTree('rotorcraft_2main_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rotorcraft_2main_8c__incl.png" border="0" usemap="#sw_2airborne_2firmwares_2rotorcraft_2main_8c" alt=""/></div>
 <map name="sw_2airborne_2firmwares_2rotorcraft_2main_8c" id="sw_2airborne_2firmwares_2rotorcraft_2main_8c">
-<area shape="rect" id="node2" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1365,370,1451,397"/><area shape="rect" id="node3" href="mcu_8h.html" title="Arch independent mcu ( Micro Controller Unit ) utilities. " alt="" coords="249,102,311,129"/><area shape="rect" id="node5" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="2135,281,2305,307"/><area shape="rect" id="node10" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API " alt="" coords="1105,281,1159,307"/><area shape="rect" id="node12" href="telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code). " alt="" coords="422,95,575,136"/><area shape="rect" id="node17" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="682,184,835,225"/><area shape="rect" id="node21" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="515,273,669,315"/><area shape="rect" id="node23" href="settings_8h.html" title="Persistent settings interface. " alt="" coords="962,191,1129,218"/><area shape="rect" id="node24" href="commands_8h.html" title="Hardware independent code for commands handling. " alt="" coords="1627,191,1813,218"/><area shape="rect" id="node26" href="subsystems_2actuators_8h.html" title="Hardware independent API for actuators (servos, motor controllers). " alt="" coords="1427,191,1603,218"/><area shape="rect" id="node27" href="imu_8h.html" title="Inertial Measurement Unit interface. " alt="" coords="2947,191,3085,218"/><area shape="rect" id="node33" href="gps_8h.html" title="Device independent GPS code (interface) " alt="" coords="2784,191,2923,218"/><area shape="rect" id="node36" href="electrical_8h.html" title="Interface for electrical status: supply voltage, current, battery status, etc. " alt="" coords="2390,191,2562,218"/><area shape="rect" id="node37" href="rotorcraft_2autopilot_8h.html" title="Autopilot modes. " alt="" coords="1975,95,2123,136"/><area shape="rect" id="node38" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="3109,191,3176,218"/><area shape="rect" id="node40" href="radio__control_8h.html" title="subsystems/radio_control.h" alt="" coords="1203,191,1402,218"/><area shape="rect" id="node42" href="stabilization_8h.html" title="General stabilization interface for rotorcrafts. " alt="" coords="1838,184,1986,225"/><area shape="rect" id="node43" href="guidance_8h.html" title="firmwares/rotorcraft\l/guidance.h" alt="" coords="2599,95,2747,136"/><area shape="rect" id="node46" href="ahrs_8h.html" title="Dispatcher to register actual AHRS implementations. " alt="" coords="3451,459,3594,486"/><area shape="rect" id="node47" href="ahrs__aligner_8h.html" title="Interface to align the AHRS via low&#45;passed measurements at startup. " alt="" coords="3276,273,3439,315"/><area shape="rect" id="node48" href="main_8h.html" title="Rotorcraft main loop. " alt="" coords="3666,95,3814,136"/><area shape="rect" id="node49" href="abi_8h.html" title="Main include for ABI (AirBorneInterface). " alt="" coords="3838,102,3973,129"/><area shape="rect" id="node13" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="232,281,371,307"/><area shape="rect" id="node25" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="1492,281,1588,307"/><area shape="rect" id="node28" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="2633,370,2812,397"/><area shape="rect" id="node31" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="3273,370,3463,397"/><area shape="rect" id="node32" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="2986,273,3150,315"/><area shape="rect" id="node29" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="3272,459,3427,486"/><area shape="rect" id="node34" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="2533,273,2683,315"/><area shape="rect" id="node35" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="2759,273,2910,315"/><area shape="rect" id="node44" href="guidance__h_8h.html" title="Horizontal guidance for rotorcrafts. " alt="" coords="2587,184,2760,225"/><area shape="rect" id="node45" href="rotorcraft_2guidance_2guidance__v_8h.html" title="Vertical guidance for rotorcrafts. " alt="" coords="3027,452,3197,493"/></map>
+<area shape="rect" id="node2" href="rotorcraft_2main__ap_8h.html" title="Rotorcraft main loop. " alt="" coords="5,95,153,136"/><area shape="rect" id="node3" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="178,102,349,129"/><area shape="rect" id="node4" href="inttypes_8h.html" title="inttypes.h" alt="" coords="34,191,119,218"/></map>
 </div>
 </div>
 <p><a href="rotorcraft_2main_8c_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:ac3c586d9cc5d614d34061b3844a1e45b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2main_8c.html#ac3c586d9cc5d614d34061b3844a1e45b">MODULES_C</a></td></tr>
-<tr class="separator:ac3c586d9cc5d614d34061b3844a1e45b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d9ee6657ac8c3da096a12fec464d803"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2main_8c.html#a1d9ee6657ac8c3da096a12fec464d803">ABI_C</a></td></tr>
-<tr class="separator:a1d9ee6657ac8c3da096a12fec464d803"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a124e8be962a54f3f7a0957fa34ec5876"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2main_8c.html#a124e8be962a54f3f7a0957fa34ec5876">BARO_PERIODIC_FREQUENCY</a>&#160;&#160;&#160;50</td></tr>
-<tr class="separator:a124e8be962a54f3f7a0957fa34ec5876"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2d4961da684eacdb42ba6907edc216d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2main_8c.html#ad2d4961da684eacdb42ba6907edc216d">RC_LOST_MODE</a>&#160;&#160;&#160;<a class="el" href="rotorcraft_2autopilot_8h.html#ac01e66c09ff9aa539479ea5e5b120d36">AP_MODE_FAILSAFE</a></td></tr>
-<tr class="memdesc:ad2d4961da684eacdb42ba6907edc216d"><td class="mdescLeft">&#160;</td><td class="mdescRight">mode to enter when RC is lost while using a mode with RC input (not AP_MODE_NAV)  <a href="#ad2d4961da684eacdb42ba6907edc216d">More...</a><br /></td></tr>
-<tr class="separator:ad2d4961da684eacdb42ba6907edc216d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a840291bc02cba5474a4cb46a9b9566fe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main</a> (void)</td></tr>
 <tr class="separator:a840291bc02cba5474a4cb46a9b9566fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afaa8374e20b79aaf7cfcea5ad9467ab1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rotorcraft_2main__fbw_8h.html#a718749e18d63ca0d6b0d1b918efb41d6">STATIC_INLINE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2main_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1">main_init</a> (void)</td></tr>
-<tr class="separator:afaa8374e20b79aaf7cfcea5ad9467ab1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acfa2a521a46d9beb8a3fa77bb0c9e407"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rotorcraft_2main__fbw_8h.html#a718749e18d63ca0d6b0d1b918efb41d6">STATIC_INLINE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2main_8c.html#acfa2a521a46d9beb8a3fa77bb0c9e407">handle_periodic_tasks</a> (void)</td></tr>
-<tr class="separator:acfa2a521a46d9beb8a3fa77bb0c9e407"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a433218491d8e51ae032540c2c00d263f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rotorcraft_2main__fbw_8h.html#a718749e18d63ca0d6b0d1b918efb41d6">STATIC_INLINE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2main_8c.html#a433218491d8e51ae032540c2c00d263f">main_periodic</a> (void)</td></tr>
-<tr class="separator:a433218491d8e51ae032540c2c00d263f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b3411ed88af39bbe3adea1e9d3aa1a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rotorcraft_2main__fbw_8h.html#a718749e18d63ca0d6b0d1b918efb41d6">STATIC_INLINE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2main_8c.html#a7b3411ed88af39bbe3adea1e9d3aa1a8">telemetry_periodic</a> (void)</td></tr>
-<tr class="separator:a7b3411ed88af39bbe3adea1e9d3aa1a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6266a73fe8c0512f1de72cea96e5110b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rotorcraft_2main__fbw_8h.html#a718749e18d63ca0d6b0d1b918efb41d6">STATIC_INLINE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2main_8c.html#a6266a73fe8c0512f1de72cea96e5110b">failsafe_check</a> (void)</td></tr>
-<tr class="separator:a6266a73fe8c0512f1de72cea96e5110b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a319a645047f275499aa30b0bc08c6e10"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rotorcraft_2main__fbw_8h.html#a718749e18d63ca0d6b0d1b918efb41d6">STATIC_INLINE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2main_8c.html#a319a645047f275499aa30b0bc08c6e10">main_event</a> (void)</td></tr>
-<tr class="separator:a319a645047f275499aa30b0bc08c6e10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a2e4708ec775c7d180386cce571ee9e69"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sys__time_8h.html#afd62afa1c6cefa443f9c9f6aa1e03dae">tid_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2main_8c.html#a2e4708ec775c7d180386cce571ee9e69">main_periodic_tid</a></td></tr>
-<tr class="memdesc:a2e4708ec775c7d180386cce571ee9e69"><td class="mdescLeft">&#160;</td><td class="mdescRight">id for <a class="el" href="rotorcraft_2main_8c.html#a433218491d8e51ae032540c2c00d263f">main_periodic()</a> timer  <a href="#a2e4708ec775c7d180386cce571ee9e69">More...</a><br /></td></tr>
-<tr class="separator:a2e4708ec775c7d180386cce571ee9e69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad22206414845137916e0ed83054bdfc8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sys__time_8h.html#afd62afa1c6cefa443f9c9f6aa1e03dae">tid_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2main_8c.html#ad22206414845137916e0ed83054bdfc8">modules_tid</a></td></tr>
-<tr class="memdesc:ad22206414845137916e0ed83054bdfc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">id for modules_periodic_task() timer  <a href="#ad22206414845137916e0ed83054bdfc8">More...</a><br /></td></tr>
-<tr class="separator:ad22206414845137916e0ed83054bdfc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3e516754299b88759000e60e490f5a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sys__time_8h.html#afd62afa1c6cefa443f9c9f6aa1e03dae">tid_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2main_8c.html#ab3e516754299b88759000e60e490f5a8">failsafe_tid</a></td></tr>
-<tr class="memdesc:ab3e516754299b88759000e60e490f5a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">id for <a class="el" href="rotorcraft_2main_8c.html#a6266a73fe8c0512f1de72cea96e5110b">failsafe_check()</a> timer  <a href="#ab3e516754299b88759000e60e490f5a8">More...</a><br /></td></tr>
-<tr class="separator:ab3e516754299b88759000e60e490f5a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a642adb8e14e348b49a460cadebe6608b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sys__time_8h.html#afd62afa1c6cefa443f9c9f6aa1e03dae">tid_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2main_8c.html#a642adb8e14e348b49a460cadebe6608b">radio_control_tid</a></td></tr>
-<tr class="memdesc:a642adb8e14e348b49a460cadebe6608b"><td class="mdescLeft">&#160;</td><td class="mdescRight">id for <a class="el" href="radio__control_8c.html#a3673b154cadd0d85e61e2fe36fdda1bd">radio_control_periodic_task()</a> timer  <a href="#a642adb8e14e348b49a460cadebe6608b">More...</a><br /></td></tr>
-<tr class="separator:a642adb8e14e348b49a460cadebe6608b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a447fbe99f4dc78a3fa46e02fb396f1fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sys__time_8h.html#afd62afa1c6cefa443f9c9f6aa1e03dae">tid_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2main_8c.html#a447fbe99f4dc78a3fa46e02fb396f1fe">electrical_tid</a></td></tr>
-<tr class="memdesc:a447fbe99f4dc78a3fa46e02fb396f1fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">id for <a class="el" href="electrical_8c.html#aeef6ce2fb40e76ed52df5a1d45646ba1">electrical_periodic()</a> timer  <a href="#a447fbe99f4dc78a3fa46e02fb396f1fe">More...</a><br /></td></tr>
-<tr class="separator:a447fbe99f4dc78a3fa46e02fb396f1fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaaaf875f33da06aeb2b503fde86862c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sys__time_8h.html#afd62afa1c6cefa443f9c9f6aa1e03dae">tid_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rotorcraft_2main_8c.html#aaaaf875f33da06aeb2b503fde86862c1">telemetry_tid</a></td></tr>
-<tr class="memdesc:aaaaf875f33da06aeb2b503fde86862c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">id for <a class="el" href="rotorcraft_2main_8c.html#a7b3411ed88af39bbe3adea1e9d3aa1a8">telemetry_periodic()</a> timer  <a href="#aaaaf875f33da06aeb2b503fde86862c1">More...</a><br /></td></tr>
-<tr class="separator:aaaaf875f33da06aeb2b503fde86862c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Rotorcraft main loop. </p>
+<div class="textblock"><p>Program main function AP + FBW on single MCU AP or FBW on dual MCU None on SITL. </p>
 
 <p>Definition in file <a class="el" href="rotorcraft_2main_8c_source.html">main.c</a>.</p>
-</div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="a1d9ee6657ac8c3da096a12fec464d803"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ABI_C</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="rotorcraft_2main_8c_source.html#l00031">31</a> of file <a class="el" href="rotorcraft_2main_8c_source.html">main.c</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a124e8be962a54f3f7a0957fa34ec5876"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define BARO_PERIODIC_FREQUENCY&#160;&#160;&#160;50</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="rotorcraft_2main_8c_source.html#l00100">100</a> of file <a class="el" href="rotorcraft_2main_8c_source.html">main.c</a>.</p>
-
-<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00174">init_ap()</a>, and <a class="el" href="rotorcraft_2main_8c_source.html#l00158">main_init()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ac3c586d9cc5d614d34061b3844a1e45b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MODULES_C</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="rotorcraft_2main_8c_source.html#l00029">29</a> of file <a class="el" href="rotorcraft_2main_8c_source.html">main.c</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ad2d4961da684eacdb42ba6907edc216d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define RC_LOST_MODE&#160;&#160;&#160;<a class="el" href="rotorcraft_2autopilot_8h.html#ac01e66c09ff9aa539479ea5e5b120d36">AP_MODE_FAILSAFE</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>mode to enter when RC is lost while using a mode with RC input (not AP_MODE_NAV) </p>
-
-<p>Definition at line <a class="el" href="rotorcraft_2main_8c_source.html#l00304">304</a> of file <a class="el" href="rotorcraft_2main_8c_source.html">main.c</a>.</p>
-
-<p>Referenced by <a class="el" href="rotorcraft_2main_8c_source.html#l00307">failsafe_check()</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a6266a73fe8c0512f1de72cea96e5110b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="rotorcraft_2main__fbw_8h.html#a718749e18d63ca0d6b0d1b918efb41d6">STATIC_INLINE</a> void failsafe_check </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="rotorcraft_2main_8c_source.html#l00307">307</a> of file <a class="el" href="rotorcraft_2main_8c_source.html">main.c</a>.</p>
-
-<p>References <a class="el" href="rotorcraft_2autopilot_8h_source.html#l00037">AP_MODE_FAILSAFE</a>, <a class="el" href="rotorcraft_2autopilot_8h_source.html#l00054">AP_MODE_FLIP</a>, <a class="el" href="rotorcraft_2autopilot_8h_source.html#l00055">AP_MODE_GUIDED</a>, <a class="el" href="rotorcraft_2autopilot_8h_source.html#l00038">AP_MODE_HOME</a>, <a class="el" href="rotorcraft_2autopilot_8h_source.html#l00036">AP_MODE_KILL</a>, <a class="el" href="rotorcraft_2autopilot_8h_source.html#l00053">AP_MODE_MODULE</a>, <a class="el" href="rotorcraft_2autopilot_8h_source.html#l00049">AP_MODE_NAV</a>, <a class="el" href="rotorcraft_2autopilot_8c_source.html#l00669">autopilot_check_in_flight()</a>, <a class="el" href="rotorcraft_2autopilot_8c_source.html#l00069">autopilot_mode</a>, <a class="el" href="rotorcraft_2autopilot_8c_source.html#l00076">autopilot_motors_on</a>, <a class="el" href="rotorcraft_2autopilot_8c_source.html#l00424">autopilot_set_mode()</a>, <a class="el" href="electrical_8h_source.html#l00053">Electrical::bat_critical</a>, <a class="el" href="electrical_8c_source.html#l00065">electrical</a>, <a class="el" href="gps_8h_source.html#l00045">GpsIsLost</a>, <a class="el" href="radio__control_8c_source.html#l00030">radio_control</a>, <a class="el" href="rotorcraft_2main_8c_source.html#l00304">RC_LOST_MODE</a>, <a class="el" href="radio__control_8h_source.html#l00048">RC_OK</a>, <a class="el" href="radio__control_8h_source.html#l00050">RC_REALLY_LOST</a>, and <a class="el" href="radio__control_8h_source.html#l00053">RadioControl::status</a>.</p>
-
-<p>Referenced by <a class="el" href="rotorcraft_2main_8c_source.html#l00232">handle_periodic_tasks()</a>, and <a class="el" href="rotorcraft_2main_8c_source.html#l00158">main_init()</a>.</p>
-
-<p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="rotorcraft_2main_8c_a6266a73fe8c0512f1de72cea96e5110b_cgraph.png" border="0" usemap="#rotorcraft_2main_8c_a6266a73fe8c0512f1de72cea96e5110b_cgraph" alt=""/></div>
-<map name="rotorcraft_2main_8c_a6266a73fe8c0512f1de72cea96e5110b_cgraph" id="rotorcraft_2main_8c_a6266a73fe8c0512f1de72cea96e5110b_cgraph">
-<area shape="rect" id="node2" href="rotorcraft_2autopilot_8c.html#a8a5717e6ffce00d9926abc6c56336852" title="autopilot_check_in\l_flight" alt="" coords="169,49,309,90"/><area shape="rect" id="node9" href="rotorcraft_2autopilot_8c.html#a3aaa2cf16ee3b25e8fca9bbd1d579d64" title="autopilot_set_mode" alt="" coords="164,205,313,232"/><area shape="rect" id="node3" href="group__state__acceleration.html#ga058e2128ff3a2a3ca5f3c606f4166dfe" title="Get acceleration in NED coordinates (float). " alt="" coords="387,5,537,32"/><area shape="rect" id="node7" href="group__state__velocity.html#ga50a44ddecd4b2517b549549e953ffea2" title="Get ground speed in local NED coordinates (float). " alt="" coords="384,56,540,83"/><area shape="rect" id="node4" href="group__state__acceleration.html#gaea5833c5515c007e9ebd4ef106e80071" title="stateCalcAccelNed_f" alt="" coords="629,5,783,32"/><area shape="rect" id="node5" href="pprz__geodetic__float_8c.html#ac36c2e51de3064e3919a1f58f884342e" title="ned_of_ecef_vect_f" alt="" coords="877,5,1021,32"/><area shape="rect" id="node6" href="pprz__geodetic__float_8c.html#ac44c5ea35811dcd7f50fb3741d0c12ad" title="enu_of_ecef_vect_f" alt="" coords="1125,5,1269,32"/><area shape="rect" id="node8" href="group__state__velocity.html#ga440e1db9aa0854e8cea50670d7055450" title="stateCalcSpeedNed_f" alt="" coords="626,56,786,83"/><area shape="rect" id="node10" href="rotorcraft_2autopilot_8c.html#a99409d6a32e6cce437a1c0354a2515eb" title="ahrs_is_aligned" alt="" coords="646,115,766,141"/><area shape="rect" id="node13" href="rotorcraft_2autopilot_8c.html#a984f4d5c6b86649c92c12acff12025f5" title="autopilot_set_motors_on" alt="" coords="371,165,553,192"/><area shape="rect" id="node15" href="guidance__h_8c.html#a2903786227eb11507928f99870099225" title="guidance_h_mode_changed" alt="" coords="361,735,563,761"/><area shape="rect" id="node47" href="rotorcraft_2guidance_2guidance__v_8c.html#ac24445848e497e9b0da2913cecb0db73" title="guidance_v_mode_changed" alt="" coords="849,1247,1049,1273"/><area shape="rect" id="node49" href="rotorcraft_2stabilization_2stabilization__attitude_8h.html#a5a2d8d3947ba9cdc571cea5778c93f4a" title="stabilization_attitude\l_set_failsafe_setpoint" alt="" coords="626,267,786,309"/><area shape="rect" id="node11" href="group__state__attitude.html#ga5f950379a74a7915c0d28336d5ec26ac" title="Test if attitudes are valid. " alt="" coords="876,56,1023,83"/><area shape="rect" id="node12" href="group__math__orientation__representation.html#ga6037b8cf7c0b5d44eeb596ca6804fdc0" title="Test if orientations are valid. " alt="" coords="1119,56,1274,83"/><area shape="rect" id="node14" href="autopilot__arming__switch_8h.html#a644c6a09c2081595c4dbc608fd7ed163" title="autopilot_arming_set" alt="" coords="627,165,785,192"/><area shape="rect" id="node16" href="stabilization__none_8c.html#a49478c0307e64c56d48cf0feaa0d8876" title="stabilization_none\l_enter" alt="" coords="637,574,775,615"/><area shape="rect" id="node17" href="stabilization__rate_8c.html#a3c8ef06f1db709ae713371b0a2a5054d" title="stabilization_rate\l_enter" alt="" coords="641,639,771,681"/><area shape="rect" id="node18" href="stabilization__attitude__rc__setpoint_8c.html#abdf70201d8682a7d5b567fc6f3790063" title="reset the heading for care&#45;free mode to current heading " alt="" coords="856,107,1043,149"/><area shape="rect" id="node21" href="rotorcraft_2stabilization_2stabilization__attitude_8h.html#a23f862ca823e6fd23fc9c111178be077" title="stabilization_attitude\l_enter" alt="" coords="629,757,783,798"/><area shape="rect" id="node37" href="guidance__indi_8c.html#a638dd6a545987ce3e0a8c8cef1e3481c" title="Call upon entering indi guidance. " alt="" coords="631,924,781,951"/><area shape="rect" id="node38" href="guidance__h_8c.html#a2a7de8dee0c85bd58633a392d8e2df91" title="guidance_h_hover_enter" alt="" coords="617,823,795,849"/><area shape="rect" id="node44" href="ctrl__module__demo_8c.html#af0a3b4e238d064326406719e8244e92d" title="guidance_h_module_enter" alt="" coords="611,975,801,1001"/><area shape="rect" id="node45" href="guidance__h_8c.html#acfce6969bcd9f8b676f79baf04ef4c00" title="guidance_h_nav_enter" alt="" coords="623,873,789,900"/><area shape="rect" id="node46" href="guidance__flip_8c.html#a896a483b1034357b2911e72d625ff8fd" title="guidance_flip_enter" alt="" coords="633,705,779,732"/><area shape="rect" id="node19" href="group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float). " alt="" coords="1097,173,1296,200"/><area shape="rect" id="node20" href="group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float). " alt="" coords="1361,173,1525,200"/><area shape="rect" id="node22" href="stabilization__attitude__rc__setpoint_8c.html#aef31d05722347c8213ef503f5c6f1113" title="stabilization_attitude\l_get_heading_f" alt="" coords="872,326,1027,367"/><area shape="rect" id="node23" href="stabilization__attitude__ref__euler__float_8c.html#a7fcefe5e6328d89221e00a1c285d018a" title="attitude_ref_euler\l_float_enter" alt="" coords="882,895,1017,937"/><area shape="rect" id="node25" href="group__state__attitude.html#ga5ae8778366c1fad669189cb2def40792" title="Get vehicle body attitude euler angles (int). " alt="" coords="1344,625,1543,652"/><area shape="rect" id="node27" href="stabilization__attitude__euler__int_8c.html#a60f842edfa8dd98a227f18def04a0b55" title="reset_psi_ref_from_body" alt="" coords="860,961,1039,988"/><area shape="rect" id="node28" href="stabilization__attitude__rc__setpoint_8c.html#a1270210b635f040b5bdd7d974f29c71f" title="stabilization_attitude\l_get_heading_i" alt="" coords="1119,475,1274,517"/><area shape="rect" id="node29" href="stabilization__attitude__ref__quat__float_8c.html#a64a18d12f7fbb46c79790b1f141204e2" title="attitude_ref_quat_float\l_enter" alt="" coords="866,1013,1033,1054"/><area shape="rect" id="node31" href="group__math__algebra__float.html#ga0f036208343a764a0c1616264dbe31ca" title="initialises a quaternion to identity " alt="" coords="879,793,1019,820"/><area shape="rect" id="node32" href="stabilization__indi_8c.html#a121fd732c65156adade05ffb27fbaf52" title="stabilization_indi\l_enter" alt="" coords="886,559,1013,601"/><area shape="rect" id="node33" href="stabilization__attitude__ref__quat__int_8c.html#a43134b9502b1b59a68e214221e011fb8" title="attitude_ref_quat_int\l_enter" alt="" coords="872,727,1027,769"/><area shape="rect" id="node36" href="group__math__algebra__int.html#ga698f3fc474f66517868238f6f6b08fca" title="initialises a quaternion to identity " alt="" coords="877,844,1021,871"/><area shape="rect" id="node24" href="stabilization__attitude__ref__euler__float_8c.html#a6a5d0ab462481567bc0272c3b2604df9" title="reset_psi_ref" alt="" coords="1145,903,1249,929"/><area shape="rect" id="node26" href="group__math__orientation__representation.html#gae05f220bbbdaafcbe11bc2d1fb622f39" title="Get vehicle body attitude euler angles (int). " alt="" coords="1591,625,1753,652"/><area shape="rect" id="node30" href="stabilization__attitude__ref__quat__float_8c.html#ab694ffc68ccd095d3641670ad7d272a7" title="reset_psi_ref" alt="" coords="1145,1020,1249,1047"/><area shape="rect" id="node34" href="stabilization__attitude__ref__quat__int_8c.html#a8b76f387f4398db36d6273fd9d18f2c7" title="reset_psi_ref" alt="" coords="1145,731,1249,757"/><area shape="rect" id="node35" href="group__math__algebra__int.html#gab3d8478211bf7da23d2345e8eae43fc8" title="Quaternion from Euler angles. " alt="" coords="1119,781,1274,808"/><area shape="rect" id="node39" href="group__state__position.html#gaf9a3b3ed4f6a011ae65d49d78bf4aa25" title="Get position in local NED coordinates (int). " alt="" coords="1115,1184,1279,1211"/><area shape="rect" id="node41" href="guidance__h_8c.html#ad9bd6447dd5cea00192adfbbf5a30cd5" title="reset_guidance_reference\l_from_current_position" alt="" coords="855,1181,1043,1222"/><area shape="rect" id="node40" href="group__state__position.html#gac60dff329c00697fc9fcc459406293c9" title="stateCalcPositionNed_i" alt="" coords="1359,1184,1527,1211"/><area shape="rect" id="node42" href="group__state__velocity.html#gaed641b0c36e2ad2407a97be88ec2506c" title="Get ground speed in local NED coordinates (int). " alt="" coords="1119,1235,1274,1261"/><area shape="rect" id="node43" href="group__state__velocity.html#gaefc74e9c1a2033ec07959a2fde629bd5" title="stateCalcSpeedNed_i" alt="" coords="1364,1235,1523,1261"/><area shape="rect" id="node48" href="ctrl__module__demo_8c.html#a1288433c507106e865034b02ae79b2d6" title="guidance_v_module_enter" alt="" coords="1101,1285,1292,1312"/><area shape="rect" id="node50" href="stabilization__indi_8c.html#a2d7051eac973a8507897f6753deaf818" title="stabilization_indi\l_set_failsafe_setpoint" alt="" coords="869,391,1029,433"/></map>
-</div>
-</p>
-
-<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="rotorcraft_2main_8c_a6266a73fe8c0512f1de72cea96e5110b_icgraph.png" border="0" usemap="#rotorcraft_2main_8c_a6266a73fe8c0512f1de72cea96e5110b_icgraph" alt=""/></div>
-<map name="rotorcraft_2main_8c_a6266a73fe8c0512f1de72cea96e5110b_icgraph" id="rotorcraft_2main_8c_a6266a73fe8c0512f1de72cea96e5110b_icgraph">
-<area shape="rect" id="node2" href="rotorcraft_2main__fbw_8h.html#acfa2a521a46d9beb8a3fa77bb0c9e407" title="handle_periodic_tasks" alt="" coords="164,107,327,133"/><area shape="rect" id="node8" href="rotorcraft_2main__fbw_8h.html#a092df25ac46a6a4ca72c023d8821f9b2" title="Main initialization. " alt="" coords="205,183,285,209"/><area shape="rect" id="node3" href="fixedwing_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="433,5,487,32"/><area shape="rect" id="node4" href="main__chibios_8c.html#a1bd1ec0fdc597d88ee659889cda25c0a" title="thd_ap" alt="" coords="427,56,493,83"/><area shape="rect" id="node6" href="main__chibios_8c.html#a4042bcab9578175e00c82adcc2b251f8" title="thd_fbw" alt="" coords="425,107,495,133"/><area shape="rect" id="node7" href="nps__autopilot__fixedwing_8c.html#a12870aaa609d4860004be3cec4c8cf2a" title="nps_autopilot_run_step" alt="" coords="375,157,545,184"/><area shape="rect" id="node5" href="main__chibios_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Main function. " alt="" coords="593,81,648,108"/><area shape="rect" id="node9" href="rotorcraft_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="433,208,487,235"/></map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="acfa2a521a46d9beb8a3fa77bb0c9e407"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="rotorcraft_2main__fbw_8h.html#a718749e18d63ca0d6b0d1b918efb41d6">STATIC_INLINE</a> void handle_periodic_tasks </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="rotorcraft_2main_8c_source.html#l00232">232</a> of file <a class="el" href="rotorcraft_2main_8c_source.html">main.c</a>.</p>
-
-<p>Referenced by <a class="el" href="fixedwing_2main_8c_source.html#l00042">main()</a>, <a class="el" href="nps__autopilot__fixedwing_8c_source.html#l00099">nps_autopilot_run_step()</a>, <a class="el" href="main__chibios_8c_source.html#l00114">thd_ap()</a>, and <a class="el" href="main__chibios_8c_source.html#l00133">thd_fbw()</a>.</p>
-
-<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="rotorcraft_2main_8c_acfa2a521a46d9beb8a3fa77bb0c9e407_icgraph.png" border="0" usemap="#rotorcraft_2main_8c_acfa2a521a46d9beb8a3fa77bb0c9e407_icgraph" alt=""/></div>
-<map name="rotorcraft_2main_8c_acfa2a521a46d9beb8a3fa77bb0c9e407_icgraph" id="rotorcraft_2main_8c_acfa2a521a46d9beb8a3fa77bb0c9e407_icgraph">
-<area shape="rect" id="node2" href="fixedwing_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="274,5,329,32"/><area shape="rect" id="node3" href="nps__autopilot__fixedwing_8c.html#a12870aaa609d4860004be3cec4c8cf2a" title="nps_autopilot_run_step" alt="" coords="216,56,387,83"/><area shape="rect" id="node4" href="main__chibios_8c.html#a1bd1ec0fdc597d88ee659889cda25c0a" title="thd_ap" alt="" coords="268,107,335,133"/><area shape="rect" id="node6" href="main__chibios_8c.html#a4042bcab9578175e00c82adcc2b251f8" title="thd_fbw" alt="" coords="266,157,337,184"/><area shape="rect" id="node5" href="main__chibios_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Main function. " alt="" coords="435,132,489,159"/></map>
-</div>
-</p>
-
-</div>
-</div>
+</div><h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="a840291bc02cba5474a4cb46a9b9566fe"></a>
 <div class="memitem">
 <div class="memproto">
@@ -358,265 +152,20 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rotorcraft_2main_8c_source.html#l00122">122</a> of file <a class="el" href="rotorcraft_2main_8c_source.html">main.c</a>.</p>
+<p>Definition at line <a class="el" href="rotorcraft_2main_8c_source.html#l00040">40</a> of file <a class="el" href="rotorcraft_2main_8c_source.html">main.c</a>.</p>
 
-<p>References <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00068">get_sys_time_usec()</a>, <a class="el" href="rotorcraft_2main_8c_source.html#l00232">handle_periodic_tasks()</a>, <a class="el" href="rotorcraft_2main_8c_source.html#l00346">main_event()</a>, <a class="el" href="rotorcraft_2main_8c_source.html#l00158">main_init()</a>, and <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00095">sys_time_usleep()</a>.</p>
+<p>References <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00068">get_sys_time_usec()</a>, <a class="el" href="rotorcraft_2main__ap_8c_source.html#l00200">handle_periodic_tasks()</a>, <a class="el" href="stm32_2uart__tunnel_8c_source.html#l00085">main_event()</a>, <a class="el" href="demo__ahrs__actuators_8c_source.html#l00087">main_init()</a>, and <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00095">sys_time_usleep()</a>.</p>
 
-<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rotorcraft_2main_8c_a840291bc02cba5474a4cb46a9b9566fe_cgraph.png" border="0" usemap="#rotorcraft_2main_8c_a840291bc02cba5474a4cb46a9b9566fe_cgraph" alt=""/></div>
 <map name="rotorcraft_2main_8c_a840291bc02cba5474a4cb46a9b9566fe_cgraph" id="rotorcraft_2main_8c_a840291bc02cba5474a4cb46a9b9566fe_cgraph">
-<area shape="rect" id="node2" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup. " alt="" coords="117,5,261,32"/><area shape="rect" id="node4" href="rotorcraft_2main_8c.html#acfa2a521a46d9beb8a3fa77bb0c9e407" title="handle_periodic_tasks" alt="" coords="108,56,271,83"/><area shape="rect" id="node5" href="rotorcraft_2main_8c.html#a319a645047f275499aa30b0bc08c6e10" title="main_event" alt="" coords="141,107,238,133"/><area shape="rect" id="node6" href="rotorcraft_2main_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="149,157,229,184"/><area shape="rect" id="node7" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a74db3eed857f9c53bb67db256c12bc83" title="sys_time_usleep(uint32_t us) " alt="" coords="125,208,253,235"/><area shape="rect" id="node3" href="sys__time_8h.html#adb22f2652f04908fbc644c7274bf7273" title="usec_of_sys_time_ticks" alt="" coords="319,5,489,32"/></map>
+<area shape="rect" id="node2" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup. " alt="" coords="117,335,261,361"/><area shape="rect" id="node3" href="main_8h.html#acfa2a521a46d9beb8a3fa77bb0c9e407" title="handle_periodic_tasks" alt="" coords="108,385,271,412"/><area shape="rect" id="node4" href="stm32_2uart__tunnel_8c.html#a319a645047f275499aa30b0bc08c6e10" title="main_event" alt="" coords="141,436,238,463"/><area shape="rect" id="node8" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="149,1145,229,1172"/><area shape="rect" id="node50" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a74db3eed857f9c53bb67db256c12bc83" title="sys_time_usleep(uint32_t us) " alt="" coords="125,1196,253,1223"/><area shape="rect" id="node5" href="chibios_2mcu__periph_2gpio__arch_8h.html#a302a5c9e7203669d0b9db8a2952fe009" title="Clear a gpio output to low level. " alt="" coords="363,335,450,361"/><area shape="rect" id="node6" href="chibios_2mcu__periph_2gpio__arch_8h.html#afd6403990094d8cd6010b2e641a977da" title="Get level of a gpio. " alt="" coords="585,5,663,32"/><area shape="rect" id="node7" href="chibios_2mcu__periph_2gpio__arch_8h.html#a0da8ef247730680b4ffa595d11069051" title="Set a gpio output to high level. " alt="" coords="369,436,445,463"/><area shape="rect" id="node9" href="ahrs_8c.html#aa3721663c9df7c7af5613486a3566afb" title="AHRS initialization. " alt="" coords="369,968,445,995"/><area shape="rect" id="node13" href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function. " alt="" coords="753,1019,951,1045"/><area shape="rect" id="node15" href="downlink_8c.html#afd49e1738cc6ad57218b944dcb94f73b" title="downlink_init" alt="" coords="355,1069,458,1096"/><area shape="rect" id="node18" href="group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b" title="Microcontroller peripherals initialization. " alt="" coords="369,487,445,513"/><area shape="rect" id="node39" href="group__math__orientation__representation.html#ga4bc38966bac43e1f55b2f042d8f2e411" title="Get vehicle body attitude quaternion (float). " alt="" coords="329,1120,485,1147"/><area shape="rect" id="node41" href="demo__ahrs__actuators_8c.html#acd7f051f394d395b1b28750b8e853e9c" title="send_actuators" alt="" coords="346,1171,467,1197"/><area shape="rect" id="node42" href="demo__ahrs__actuators_8c.html#a65644c7fe2e327f01296b259bc106f85" title="send_alive" alt="" coords="362,1221,451,1248"/><area shape="rect" id="node43" href="demo__ahrs__actuators_8c.html#a974326e4c446abb45f2c4ce43666412f" title="send_autopilot_version" alt="" coords="322,1272,491,1299"/><area shape="rect" id="node44" href="demo__ahrs__actuators_8c.html#a4d3ebf2393fe597ab7a9a9e615ed2efe" title="send_commands" alt="" coords="341,1323,473,1349"/><area shape="rect" id="node45" href="settings_8c.html#a5f9a5a2e826aec11c77548f2a541fb9e" title="settings_init" alt="" coords="357,1373,456,1400"/><area shape="rect" id="node47" href="group__state__interface.html#gae841c56c9a83bf54bcdd8d7f166f2e2a" title="stateInit" alt="" coords="369,1424,444,1451"/><area shape="rect" id="node48" href="sys__time_8c.html#a3ababed8b6819006aaf919a663efe8cd" title="Register a new system timer. " alt="" coords="319,1475,495,1501"/><area shape="rect" id="node10" href="ahrs_8c.html#ad933997851f19f057be2d3c1d4b5b5d0" title="Switch to the output of another AHRS impl. " alt="" coords="576,917,672,944"/><area shape="rect" id="node11" href="ahrs__aligner_8c.html#a321c9a82fcb75074c3041cbf6906e5ea" title="ahrs_aligner_init" alt="" coords="561,968,687,995"/><area shape="rect" id="node12" href="ahrs__aligner_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title="gyro_cb" alt="" coords="816,917,888,944"/><area shape="rect" id="node14" href="ahrs__aligner_8c.html#abe64b23cba24d9f6d4efd4773d3c8d1e" title="send_aligner" alt="" coords="801,968,903,995"/><area shape="rect" id="node16" href="downlink_8c.html#af23b2b19aabf230dd8e4bb719c3d4f34" title="send_downlink" alt="" coords="567,1120,681,1147"/><area shape="rect" id="node17" href="chibios_2mcu__periph_2sys__time__arch_8c.html#ad3cb294b0d1d74dfb511534b36a17960" title="Get the time in milliseconds since startup. " alt="" coords="777,1120,927,1147"/><area shape="rect" id="node19" href="group__mcu__periph.html#ga916f2adc2080b4fe88034086d107a8dc" title="Optional board init function called at the start of mcu_init(). " alt="" coords="581,56,667,83"/><area shape="rect" id="node21" href="chibios_2mcu__arch_8c.html#a87671303c7d4a9264b1ffbb07e87f454" title="mcu_arch_init" alt="" coords="569,107,679,133"/><area shape="rect" id="node22" href="chibios_2mcu__periph_2gpio__arch_8c.html#a614c4a447f1e43381d92c682ac3b953f" title="Setup one or more pins of the given GPIO port as outputs. " alt="" coords="553,157,695,184"/><area shape="rect" id="node23" href="chibios_2mcu__periph_2gpio__arch_8c.html#ae7d0172a824f41338c10872b96cc541b" title="Setup one or more pins of the given GPIO port as inputs. " alt="" coords="559,208,689,235"/><area shape="rect" id="node24" href="sys__time_8c.html#a1e6b75f4db9128a3326d8a6283b0af43" title="sys_time_init" alt="" coords="571,259,677,285"/><area shape="rect" id="node26" href="led_8h.html#a9d9d9b1f30592189c3aa7358c626218f" title="Automatic initialization of actived LED Set to OFF at startup. " alt="" coords="591,309,657,336"/><area shape="rect" id="node27" href="linux_2mcu__periph_2uart__arch_8c.html#a7e440684a8b6a4088b2f1d5b4dc47587" title="uart_arch_init" alt="" coords="569,360,679,387"/><area shape="rect" id="node28" href="chibios_2mcu__periph_2adc__arch_8c.html#a2b815e6730e8723a6d1d06d9ef8f31c0" title="Adc init. " alt="" coords="589,411,659,437"/><area shape="rect" id="node29" href="lpc21_2usb__ser__hw_8c.html#a96a54f28bfc8bc28963cd2fac74609cd" title="VCOM_init" alt="" coords="581,461,667,488"/><area shape="rect" id="node30" href="group__spi.html#ga2437939c4fca0a4a5a4f79460ed3f731" title="spi0_init" alt="" coords="587,512,661,539"/><area shape="rect" id="node32" href="group__spi.html#ga7da3469436debceb731ecb76c920efda" title="spi1_init" alt="" coords="587,563,661,589"/><area shape="rect" id="node33" href="group__spi.html#ga1c8c4e89459606c70f6749714abd4a86" title="spi2_init" alt="" coords="587,613,661,640"/><area shape="rect" id="node34" href="group__spi.html#gafc9125c5764a6749703ae4f1303a16f3" title="spi_init_slaves() function " alt="" coords="567,664,681,691"/><area shape="rect" id="node35" href="spi__slave__hs__arch_8c.html#ad7c7233ab7697ee83d0228fe95b0c048" title="spi_slave_hs_init" alt="" coords="560,715,688,741"/><area shape="rect" id="node36" href="dac__arch_8c.html#a6e622fafee8436bf9cf9f6b120352e3c" title="dac_init" alt="" coords="589,765,659,792"/><area shape="rect" id="node37" href="linux_2mcu__periph_2udp__arch_8c.html#a665732768aad2a0f4b0a396d96485cc2" title="udp_arch_init" alt="" coords="571,816,677,843"/><area shape="rect" id="node38" href="group__mcu__periph.html#gaf8669c6ba2d12460cf1172edd1a5e4a3" title="Optional board init function called at the end of mcu_init(). " alt="" coords="577,867,671,893"/><area shape="rect" id="node20" href="ardrone_2board_8c.html#a646b7f375c14d15f1aa843bbe058634f" title="KillGracefully" alt="" coords="801,56,903,83"/><area shape="rect" id="node25" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a9b31c2feb846b96205ae20ea6883e1c4" title="sys_time_arch_init" alt="" coords="782,259,922,285"/><area shape="rect" id="node31" href="group__spi.html#ga6c0861f0c2184cab82f883ca29312011" title="Initialize a spi peripheral. " alt="" coords="819,563,885,589"/><area shape="rect" id="node40" href="group__math__orientation__representation.html#ga33edf7d5bd278bed617fb5aa88559dc2" title="orientationCalcQuat_f" alt="" coords="544,1171,704,1197"/><area shape="rect" id="node46" href="chibios_2subsystems_2settings__arch_8c.html#a6d60026540670a5fc2ac03dee06c791e" title="persistent_read" alt="" coords="563,1373,685,1400"/><area shape="rect" id="node49" href="sys__time_8h.html#a2894f16d75a4d3c6ad1449d7bba85406" title="sys_time_ticks_of_sec" alt="" coords="543,1475,705,1501"/></map>
 </div>
 </p>
-
-</div>
-</div>
-<a class="anchor" id="a319a645047f275499aa30b0bc08c6e10"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void main_event </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="rotorcraft_2main_8c_source.html#l00346">346</a> of file <a class="el" href="rotorcraft_2main_8c_source.html">main.c</a>.</p>
-
-<p>Referenced by <a class="el" href="rotorcraft_2main_8c_source.html#l00122">main()</a>.</p>
-
-<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="rotorcraft_2main_8c_a319a645047f275499aa30b0bc08c6e10_icgraph.png" border="0" usemap="#rotorcraft_2main_8c_a319a645047f275499aa30b0bc08c6e10_icgraph" alt=""/></div>
-<map name="rotorcraft_2main_8c_a319a645047f275499aa30b0bc08c6e10_icgraph" id="rotorcraft_2main_8c_a319a645047f275499aa30b0bc08c6e10_icgraph">
-<area shape="rect" id="node2" href="rotorcraft_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="151,5,205,32"/></map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="afaa8374e20b79aaf7cfcea5ad9467ab1"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void main_init </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="rotorcraft_2main_8c_source.html#l00158">158</a> of file <a class="el" href="rotorcraft_2main_8c_source.html">main.c</a>.</p>
-
-<p>Referenced by <a class="el" href="rotorcraft_2main_8c_source.html#l00122">main()</a>.</p>
-
-<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="rotorcraft_2main_8c_afaa8374e20b79aaf7cfcea5ad9467ab1_icgraph.png" border="0" usemap="#rotorcraft_2main_8c_afaa8374e20b79aaf7cfcea5ad9467ab1_icgraph" alt=""/></div>
-<map name="rotorcraft_2main_8c_afaa8374e20b79aaf7cfcea5ad9467ab1_icgraph" id="rotorcraft_2main_8c_afaa8374e20b79aaf7cfcea5ad9467ab1_icgraph">
-<area shape="rect" id="node2" href="rotorcraft_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="133,5,188,32"/></map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a433218491d8e51ae032540c2c00d263f"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void main_periodic </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="rotorcraft_2main_8c_source.html#l00259">259</a> of file <a class="el" href="rotorcraft_2main_8c_source.html">main.c</a>.</p>
-
-<p>Referenced by <a class="el" href="rotorcraft_2main_8c_source.html#l00232">handle_periodic_tasks()</a>.</p>
-
-<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="rotorcraft_2main_8c_a433218491d8e51ae032540c2c00d263f_icgraph.png" border="0" usemap="#rotorcraft_2main_8c_a433218491d8e51ae032540c2c00d263f_icgraph" alt=""/></div>
-<map name="rotorcraft_2main_8c_a433218491d8e51ae032540c2c00d263f_icgraph" id="rotorcraft_2main_8c_a433218491d8e51ae032540c2c00d263f_icgraph">
-<area shape="rect" id="node2" href="rotorcraft_2main__fbw_8h.html#acfa2a521a46d9beb8a3fa77bb0c9e407" title="handle_periodic_tasks" alt="" coords="164,81,327,108"/><area shape="rect" id="node3" href="fixedwing_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="433,5,487,32"/><area shape="rect" id="node4" href="main__chibios_8c.html#a1bd1ec0fdc597d88ee659889cda25c0a" title="thd_ap" alt="" coords="427,56,493,83"/><area shape="rect" id="node6" href="main__chibios_8c.html#a4042bcab9578175e00c82adcc2b251f8" title="thd_fbw" alt="" coords="425,107,495,133"/><area shape="rect" id="node7" href="nps__autopilot__fixedwing_8c.html#a12870aaa609d4860004be3cec4c8cf2a" title="nps_autopilot_run_step" alt="" coords="375,157,545,184"/><area shape="rect" id="node5" href="main__chibios_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Main function. " alt="" coords="593,81,648,108"/></map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a7b3411ed88af39bbe3adea1e9d3aa1a8"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="rotorcraft_2main__fbw_8h.html#a718749e18d63ca0d6b0d1b918efb41d6">STATIC_INLINE</a> void telemetry_periodic </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="rotorcraft_2main_8c_source.html#l00283">283</a> of file <a class="el" href="rotorcraft_2main_8c_source.html">main.c</a>.</p>
-
-<p>Referenced by <a class="el" href="rotorcraft_2main_8c_source.html#l00232">handle_periodic_tasks()</a>.</p>
-
-<p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="rotorcraft_2main_8c_a7b3411ed88af39bbe3adea1e9d3aa1a8_icgraph.png" border="0" usemap="#rotorcraft_2main_8c_a7b3411ed88af39bbe3adea1e9d3aa1a8_icgraph" alt=""/></div>
-<map name="rotorcraft_2main_8c_a7b3411ed88af39bbe3adea1e9d3aa1a8_icgraph" id="rotorcraft_2main_8c_a7b3411ed88af39bbe3adea1e9d3aa1a8_icgraph">
-<area shape="rect" id="node2" href="rotorcraft_2main__fbw_8h.html#acfa2a521a46d9beb8a3fa77bb0c9e407" title="handle_periodic_tasks" alt="" coords="195,81,357,108"/><area shape="rect" id="node3" href="fixedwing_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="463,5,518,32"/><area shape="rect" id="node4" href="main__chibios_8c.html#a1bd1ec0fdc597d88ee659889cda25c0a" title="thd_ap" alt="" coords="457,56,524,83"/><area shape="rect" id="node6" href="main__chibios_8c.html#a4042bcab9578175e00c82adcc2b251f8" title="thd_fbw" alt="" coords="455,107,526,133"/><area shape="rect" id="node7" href="nps__autopilot__fixedwing_8c.html#a12870aaa609d4860004be3cec4c8cf2a" title="nps_autopilot_run_step" alt="" coords="405,157,576,184"/><area shape="rect" id="node5" href="main__chibios_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Main function. " alt="" coords="624,81,679,108"/></map>
-</div>
-</p>
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a class="anchor" id="a447fbe99f4dc78a3fa46e02fb396f1fe"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="sys__time_8h.html#afd62afa1c6cefa443f9c9f6aa1e03dae">tid_t</a> electrical_tid</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>id for <a class="el" href="electrical_8c.html#aeef6ce2fb40e76ed52df5a1d45646ba1">electrical_periodic()</a> timer </p>
-
-<p>Definition at line <a class="el" href="rotorcraft_2main_8c_source.html#l00115">115</a> of file <a class="el" href="rotorcraft_2main_8c_source.html">main.c</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ab3e516754299b88759000e60e490f5a8"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="sys__time_8h.html#afd62afa1c6cefa443f9c9f6aa1e03dae">tid_t</a> failsafe_tid</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>id for <a class="el" href="rotorcraft_2main_8c.html#a6266a73fe8c0512f1de72cea96e5110b">failsafe_check()</a> timer </p>
-
-<p>Definition at line <a class="el" href="rotorcraft_2main_8c_source.html#l00113">113</a> of file <a class="el" href="rotorcraft_2main_8c_source.html">main.c</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a2e4708ec775c7d180386cce571ee9e69"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="sys__time_8h.html#afd62afa1c6cefa443f9c9f6aa1e03dae">tid_t</a> main_periodic_tid</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>id for <a class="el" href="rotorcraft_2main_8c.html#a433218491d8e51ae032540c2c00d263f">main_periodic()</a> timer </p>
-
-<p>Definition at line <a class="el" href="rotorcraft_2main_8c_source.html#l00111">111</a> of file <a class="el" href="rotorcraft_2main_8c_source.html">main.c</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ad22206414845137916e0ed83054bdfc8"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="sys__time_8h.html#afd62afa1c6cefa443f9c9f6aa1e03dae">tid_t</a> modules_tid</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>id for modules_periodic_task() timer </p>
-
-<p>Definition at line <a class="el" href="rotorcraft_2main_8c_source.html#l00112">112</a> of file <a class="el" href="rotorcraft_2main_8c_source.html">main.c</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a642adb8e14e348b49a460cadebe6608b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="sys__time_8h.html#afd62afa1c6cefa443f9c9f6aa1e03dae">tid_t</a> radio_control_tid</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>id for <a class="el" href="radio__control_8c.html#a3673b154cadd0d85e61e2fe36fdda1bd">radio_control_periodic_task()</a> timer </p>
-
-<p>Definition at line <a class="el" href="rotorcraft_2main_8c_source.html#l00114">114</a> of file <a class="el" href="rotorcraft_2main_8c_source.html">main.c</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aaaaf875f33da06aeb2b503fde86862c1"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="sys__time_8h.html#afd62afa1c6cefa443f9c9f6aa1e03dae">tid_t</a> telemetry_tid</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>id for <a class="el" href="rotorcraft_2main_8c.html#a7b3411ed88af39bbe3adea1e9d3aa1a8">telemetry_periodic()</a> timer </p>
-
-<p>Definition at line <a class="el" href="rotorcraft_2main_8c_source.html#l00116">116</a> of file <a class="el" href="rotorcraft_2main_8c_source.html">main.c</a>.</p>
 
 </div>
 </div>
@@ -626,7 +175,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_e37d355c72eb7c8e5b43c34bdea5a24b.html">rotorcraft</a></li><li class="navelem"><a class="el" href="rotorcraft_2main_8c.html">main.c</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:01:47 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:02:09 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

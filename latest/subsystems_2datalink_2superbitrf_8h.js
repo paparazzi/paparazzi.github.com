@@ -46,7 +46,6 @@ var subsystems_2datalink_2superbitrf_8h =
     [ "SUPERBITRF_RECV_TIME", "subsystems_2datalink_2superbitrf_8h.html#a954444ad0f32f41c06c53ac38e4cf06e", null ],
     [ "SUPERBITRF_SYNC_RECV_TIME", "subsystems_2datalink_2superbitrf_8h.html#ae6fdf2460ffaf5330e8a9fffd465d4f1", null ],
     [ "SUPERBITRF_TX_BUFFER_SIZE", "subsystems_2datalink_2superbitrf_8h.html#a57ebae970a132e79970b3214a70a959b", null ],
-    [ "SuperbitRFCheckAndParse", "subsystems_2datalink_2superbitrf_8h.html#a027195244402bd1ad1b293407e6d9544", null ],
     [ "dsm_protocol", "subsystems_2datalink_2superbitrf_8h.html#a3ca1d4bb343a741879bdec84939ee4f3", [
       [ "DSM_DSM2_1", "arch_2sim_2subsystems_2datalink_2superbitrf_8h.html#a3ca1d4bb343a741879bdec84939ee4f3abe130355db41b6aa76a4e96a471a4635", null ],
       [ "DSM_DSM2_2", "arch_2sim_2subsystems_2datalink_2superbitrf_8h.html#a3ca1d4bb343a741879bdec84939ee4f3a9b1ed02c342b713e72b3c987646e5dfb", null ],
@@ -74,9 +73,12 @@ var subsystems_2datalink_2superbitrf_8h =
       [ "SUPERBITRF_SYNCING_B", "subsystems_2datalink_2superbitrf_8h.html#aff46e2692b6bb527a21559a9faf61dd3af949af650a3a03cc323054fe6f9baaad", null ],
       [ "SUPERBITRF_TRANSFER", "subsystems_2datalink_2superbitrf_8h.html#aff46e2692b6bb527a21559a9faf61dd3a118efba928d6599a1475093903a9a1d4", null ]
     ] ],
+    [ "superbitrf_dl_event", "subsystems_2datalink_2superbitrf_8h.html#a06a950af7255fea459d7c6de8c8c0cad", null ],
+    [ "superbitrf_dl_init", "subsystems_2datalink_2superbitrf_8h.html#a6714bbf604e39f172a0686abe3d6f6c2", null ],
     [ "superbitrf_event", "subsystems_2datalink_2superbitrf_8h.html#a3dba487ecc02fb6e7bdde994032fd795", null ],
     [ "superbitrf_init", "subsystems_2datalink_2superbitrf_8h.html#a7b9a2741375ca1dffc4f2e6a6d7a9307", null ],
     [ "superbitrf_set_mfg_id", "subsystems_2datalink_2superbitrf_8h.html#ae345f2ad961222da07a6be6d68a04ea6", null ],
     [ "superbitrf_set_protocol", "subsystems_2datalink_2superbitrf_8h.html#a5b12cebcec8be804d5f2a5e779c44bec", null ],
+    [ "pprz_srf_tp", "subsystems_2datalink_2superbitrf_8h.html#a8ca003cf8a7ffde99a9c8feb253d89d7", null ],
     [ "superbitrf", "subsystems_2datalink_2superbitrf_8h.html#a3de4c224554ac6608830085912a98b86", null ]
 ];

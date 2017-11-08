@@ -11,5 +11,7 @@ var serial__port_8h =
     [ "serial_port_free", "serial__port_8h.html#a2c010011ea7396568f40b0137dcbf646", null ],
     [ "serial_port_new", "serial__port_8h.html#aee75c3cee5e5beaef3f9b1a692d3633c", null ],
     [ "serial_port_open", "serial__port_8h.html#ad0860772c1bd006fb61f934b8a9c8e3e", null ],
-    [ "serial_port_open_raw", "serial__port_8h.html#a69092c80559cd279bfd046d53b25fefd", null ]
+    [ "serial_port_open_raw", "serial__port_8h.html#a69092c80559cd279bfd046d53b25fefd", null ],
+    [ "serial_port_set_baudrate", "serial__port_8h.html#af25145952d87a0f805da05e7ceb3e5a8", null ],
+    [ "serial_port_set_bits_stop_parity", "serial__port_8h.html#acf391c48a39bcc64fabe03f73f246655", null ]
 ];

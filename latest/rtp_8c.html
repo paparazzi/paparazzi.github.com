@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -127,7 +127,7 @@ $(document).ready(function(){initNavTree('rtp_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rtp_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2computer__vision_2lib_2encoding_2rtp_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2computer__vision_2lib_2encoding_2rtp_8c" id="sw_2airborne_2modules_2computer__vision_2lib_2encoding_2rtp_8c">
-<area shape="rect" id="node5" href="rtp_8h.html" title="Encodes a vide stream with RTP (JPEG) " alt="" coords="339,109,391,136"/><area shape="rect" id="node7" href="image_8h.html" title="Image helper functions like resizing, color filter, converters... " alt="" coords="247,184,379,211"/><area shape="rect" id="node8" href="udp__socket_8h.html" title="Easily create and use UDP sockets. " alt="" coords="454,184,561,211"/></map>
+<area shape="rect" id="node5" href="rtp_8h.html" title="Encodes a video stream with RTP Format 26 (Motion JPEG) " alt="" coords="235,109,287,136"/><area shape="rect" id="node7" href="image_8h.html" title="Image helper functions like resizing, color filter, converters... " alt="" coords="957,184,1089,211"/><area shape="rect" id="node21" href="udp__socket_8h.html" title="Easily create and use UDP sockets. " alt="" coords="258,184,365,211"/><area shape="rect" id="node8" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="897,259,963,285"/><area shape="rect" id="node9" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="918,423,1097,449"/><area shape="rect" id="node14" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="452,423,643,449"/><area shape="rect" id="node17" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="799,333,949,375"/><area shape="rect" id="node19" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="612,333,763,375"/><area shape="rect" id="node20" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="1025,333,1189,375"/><area shape="rect" id="node10" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="629,497,783,524"/><area shape="rect" id="node12" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="1053,497,1204,524"/><area shape="rect" id="node18" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="719,423,843,449"/></map>
 </div>
 </div>
 <p><a href="rtp_8c_source.html">Go to the source code of this file.</a></p>
@@ -147,14 +147,14 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a7b661ee336df15cbee60fda1d7263247"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rtp_8c.html#a7b661ee336df15cbee60fda1d7263247">rtp_packet_send</a> (struct <a class="el" href="udp__socket_8h.html#structUdpSocket">UdpSocket</a> *udp, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *Jpeg, int JpegLen, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> m_SequenceNumber, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> m_Timestamp, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> m_offset, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> marker_bit, int w, int h, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> format_code, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> quality_code, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> has_dri_header)</td></tr>
-<tr class="separator:a7b661ee336df15cbee60fda1d7263247"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedd2d69861650f90d27683d366946e03"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rtp_8c.html#aedd2d69861650f90d27683d366946e03">rtp_packet_send</a> (struct <a class="el" href="udp__socket_8h.html#structUdpSocket">UdpSocket</a> *udp, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *Jpeg, int JpegLen, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> m_SequenceNumber, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> m_Timestamp, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> m_offset, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> marker_bit, int w, int <a class="el" href="UKF__Wind__Estimator_8c.html#a1b540e52aff26922bc43ff126fa35270">h</a>, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> format_code, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> quality_code, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> has_dri_header)</td></tr>
+<tr class="separator:aedd2d69861650f90d27683d366946e03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c9aa998b02c9ff5099bb3fc6bbc2b5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rtp_8c.html#a6c9aa998b02c9ff5099bb3fc6bbc2b5e">rtp_frame_test</a> (struct <a class="el" href="udp__socket_8h.html#structUdpSocket">UdpSocket</a> *udp)</td></tr>
 <tr class="memdesc:a6c9aa998b02c9ff5099bb3fc6bbc2b5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a test RTP frame.  <a href="#a6c9aa998b02c9ff5099bb3fc6bbc2b5e">More...</a><br /></td></tr>
 <tr class="separator:a6c9aa998b02c9ff5099bb3fc6bbc2b5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab810dc7d46e209624e4edd330edb7bf7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rtp_8c.html#ab810dc7d46e209624e4edd330edb7bf7">rtp_frame_send</a> (struct <a class="el" href="udp__socket_8h.html#structUdpSocket">UdpSocket</a> *udp, struct <a class="el" href="image_8h.html#structimage__t">image_t</a> *img, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> format_code, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> quality_code, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> has_dri_header, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> delta_t)</td></tr>
-<tr class="memdesc:ab810dc7d46e209624e4edd330edb7bf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send an RTP frame.  <a href="#ab810dc7d46e209624e4edd330edb7bf7">More...</a><br /></td></tr>
-<tr class="separator:ab810dc7d46e209624e4edd330edb7bf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31d0efc8803ccbb83cb0b713e69ff16f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rtp_8c.html#a31d0efc8803ccbb83cb0b713e69ff16f">rtp_frame_send</a> (struct <a class="el" href="udp__socket_8h.html#structUdpSocket">UdpSocket</a> *udp, struct <a class="el" href="image_8h.html#structimage__t">image_t</a> *img, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> format_code, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> quality_code, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> has_dri_header, float average_frame_rate, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *packet_number, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> *rtp_time_counter)</td></tr>
+<tr class="memdesc:a31d0efc8803ccbb83cb0b713e69ff16f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send an RTP frame.  <a href="#a31d0efc8803ccbb83cb0b713e69ff16f">More...</a><br /></td></tr>
+<tr class="separator:a31d0efc8803ccbb83cb0b713e69ff16f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -178,7 +178,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rtp_8c_source.html#l00040">40</a> of file <a class="el" href="rtp_8c_source.html">rtp.c</a>.</p>
+<p>Definition at line <a class="el" href="rtp_8c_source.html#l00068">68</a> of file <a class="el" href="rtp_8c_source.html">rtp.c</a>.</p>
 
 </div>
 </div>
@@ -192,9 +192,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rtp_8c_source.html#l00041">41</a> of file <a class="el" href="rtp_8c_source.html">rtp.c</a>.</p>
+<p>Definition at line <a class="el" href="rtp_8c_source.html#l00069">69</a> of file <a class="el" href="rtp_8c_source.html">rtp.c</a>.</p>
 
-<p>Referenced by <a class="el" href="rtp_8c_source.html#l00067">rtp_frame_test()</a>.</p>
+<p>Referenced by <a class="el" href="rtp_8c_source.html#l00095">rtp_frame_test()</a>.</p>
 
 </div>
 </div>
@@ -208,7 +208,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Referenced by <a class="el" href="rtp_8c_source.html#l00158">rtp_packet_send()</a>.</p>
+<p>Referenced by <a class="el" href="rtp_8c_source.html#l00177">rtp_packet_send()</a>.</p>
 
 </div>
 </div>
@@ -222,7 +222,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Referenced by <a class="el" href="rtp_8c_source.html#l00158">rtp_packet_send()</a>.</p>
+<p>Referenced by <a class="el" href="rtp_8c_source.html#l00177">rtp_packet_send()</a>.</p>
 
 </div>
 </div>
@@ -236,12 +236,12 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Referenced by <a class="el" href="rtp_8c_source.html#l00097">rtp_frame_send()</a>.</p>
+<p>Referenced by <a class="el" href="rtp_8c_source.html#l00127">rtp_frame_send()</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="ab810dc7d46e209624e4edd330edb7bf7"></a>
+<a class="anchor" id="a31d0efc8803ccbb83cb0b713e69ff16f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -278,8 +278,20 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td>
-          <td class="paramname"><em>delta_t</em>&#160;</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>average_frame_rate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *&#160;</td>
+          <td class="paramname"><em>packet_number</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> *&#160;</td>
+          <td class="paramname"><em>rtp_time_counter</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -297,25 +309,27 @@ Variables</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">format_code</td><td>0 for YUV422 and 1 for YUV421 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">quality_code</td><td>The JPEG encoding quality </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">has_dri_header</td><td>Whether we have an DRI header or not </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">delta_t</td><td>Time between images (if set to 0 or less it is calculated) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">frame_time</td><td>Time image was taken in usec (if set to 0 or less it is calculated) </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">packet_number</td><td>The frame number of the rtp stream </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">rtp_time_counter</td><td>The frame time counter of the rtp stream </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="rtp_8c_source.html#l00097">97</a> of file <a class="el" href="rtp_8c_source.html">rtp.c</a>.</p>
+<p>Definition at line <a class="el" href="rtp_8c_source.html#l00127">127</a> of file <a class="el" href="rtp_8c_source.html">rtp.c</a>.</p>
 
-<p>References <a class="el" href="image_8h_source.html#l00051">image_t::buf</a>, <a class="el" href="image_8h_source.html#l00050">image_t::buf_size</a>, <a class="el" href="image_8h_source.html#l00045">image_t::h</a>, <a class="el" href="rtp_8c.html#a879456c3b8e2853f7044d764e9c180d4">MAX_PACKET_SIZE</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00156">offset</a>, <a class="el" href="rtp_8c_source.html#l00158">rtp_packet_send()</a>, and <a class="el" href="image_8h_source.html#l00044">image_t::w</a>.</p>
+<p>References <a class="el" href="image_8h_source.html#l00053">image_t::buf</a>, <a class="el" href="image_8h_source.html#l00052">image_t::buf_size</a>, <a class="el" href="image_8h_source.html#l00046">image_t::h</a>, <a class="el" href="rtp_8c.html#a879456c3b8e2853f7044d764e9c180d4">MAX_PACKET_SIZE</a>, <a class="el" href="dw1000__arduino_8c_source.html#l00206">offset</a>, <a class="el" href="rtp_8c_source.html#l00177">rtp_packet_send()</a>, and <a class="el" href="image_8h_source.html#l00045">image_t::w</a>.</p>
 
-<p>Referenced by <a class="el" href="bebop__front__camera_8c_source.html#l00081">bebop_front_camera_thread()</a>, and <a class="el" href="viewvideo_8c_source.html#l00129">viewvideo_function()</a>.</p>
+<p>Referenced by <a class="el" href="viewvideo_8c_source.html#l00113">viewvideo_function()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="rtp_8c_ab810dc7d46e209624e4edd330edb7bf7_cgraph.png" border="0" usemap="#rtp_8c_ab810dc7d46e209624e4edd330edb7bf7_cgraph" alt=""/></div>
-<map name="rtp_8c_ab810dc7d46e209624e4edd330edb7bf7_cgraph" id="rtp_8c_ab810dc7d46e209624e4edd330edb7bf7_cgraph">
-<area shape="rect" id="node2" href="rtp_8c.html#a7b661ee336df15cbee60fda1d7263247" title="rtp_packet_send" alt="" coords="176,5,304,32"/><area shape="rect" id="node3" href="udp__socket_8c.html#a2c3da4bd5d683ae6c844649fac79f13d" title="Send a packet from buffer, non&#45;blocking. " alt="" coords="352,5,547,32"/></map>
+<div class="center"><img src="rtp_8c_a31d0efc8803ccbb83cb0b713e69ff16f_cgraph.png" border="0" usemap="#rtp_8c_a31d0efc8803ccbb83cb0b713e69ff16f_cgraph" alt=""/></div>
+<map name="rtp_8c_a31d0efc8803ccbb83cb0b713e69ff16f_cgraph" id="rtp_8c_a31d0efc8803ccbb83cb0b713e69ff16f_cgraph">
+<area shape="rect" id="node2" href="rtp_8c.html#aedd2d69861650f90d27683d366946e03" title="rtp_packet_send" alt="" coords="176,5,304,32"/><area shape="rect" id="node3" href="udp__socket_8c.html#a2c3da4bd5d683ae6c844649fac79f13d" title="Send a packet from buffer, non&#45;blocking. " alt="" coords="352,5,547,32"/></map>
 </div>
 </p>
 
@@ -324,9 +338,9 @@ Variables</h2></td></tr>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="rtp_8c_ab810dc7d46e209624e4edd330edb7bf7_icgraph.png" border="0" usemap="#rtp_8c_ab810dc7d46e209624e4edd330edb7bf7_icgraph" alt=""/></div>
-<map name="rtp_8c_ab810dc7d46e209624e4edd330edb7bf7_icgraph" id="rtp_8c_ab810dc7d46e209624e4edd330edb7bf7_icgraph">
-<area shape="rect" id="node2" href="bebop__front__camera_8c.html#a63cb60d57fb10579691954003dc4491e" title="Handles all the video streaming and saving of the image shots This is a sepereate thread..." alt="" coords="176,5,331,47"/><area shape="rect" id="node4" href="viewvideo_8c.html#aaa64c7de292e7ac10b442216cc49dcab" title="Handles all the video streaming and saving of the image shots This is a sepereate thread..." alt="" coords="183,71,324,98"/><area shape="rect" id="node3" href="bebop__front__camera_8h.html#a179ce25d44bf966f12b86e3a96654161" title="Start with streaming. " alt="" coords="379,5,533,47"/><area shape="rect" id="node5" href="viewvideo_8h.html#a8479777ac5ff98cdf58349e741f04005" title="Initialize the view video. " alt="" coords="401,71,511,98"/></map>
+<div class="center"><img src="rtp_8c_a31d0efc8803ccbb83cb0b713e69ff16f_icgraph.png" border="0" usemap="#rtp_8c_a31d0efc8803ccbb83cb0b713e69ff16f_icgraph" alt=""/></div>
+<map name="rtp_8c_a31d0efc8803ccbb83cb0b713e69ff16f_icgraph" id="rtp_8c_a31d0efc8803ccbb83cb0b713e69ff16f_icgraph">
+<area shape="rect" id="node2" href="viewvideo_8c.html#a0df1e7fcdd4897477c64c18bb5bce697" title="Handles all the video streaming and saving of the image shots This is a separate thread, so it needs to be thread safe! " alt="" coords="176,5,317,32"/></map>
 </div>
 </p>
 
@@ -354,9 +368,9 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="rtp_8c_source.html#l00067">67</a> of file <a class="el" href="rtp_8c_source.html">rtp.c</a>.</p>
+<p>Definition at line <a class="el" href="rtp_8c_source.html#l00095">95</a> of file <a class="el" href="rtp_8c_source.html">rtp.c</a>.</p>
 
-<p>References <a class="el" href="rtp_8c_source.html#l00044">JpegScanDataCh2A</a>, <a class="el" href="rtp_8c_source.html#l00053">JpegScanDataCh2B</a>, <a class="el" href="rtp_8c_source.html#l00041">KJpegCh2ScanDataLen</a>, and <a class="el" href="rtp_8c_source.html#l00158">rtp_packet_send()</a>.</p>
+<p>References <a class="el" href="rtp_8c_source.html#l00072">JpegScanDataCh2A</a>, <a class="el" href="rtp_8c_source.html#l00081">JpegScanDataCh2B</a>, <a class="el" href="rtp_8c_source.html#l00069">KJpegCh2ScanDataLen</a>, and <a class="el" href="rtp_8c_source.html#l00177">rtp_packet_send()</a>.</p>
 
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -365,13 +379,13 @@ Variables</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rtp_8c_a6c9aa998b02c9ff5099bb3fc6bbc2b5e_cgraph.png" border="0" usemap="#rtp_8c_a6c9aa998b02c9ff5099bb3fc6bbc2b5e_cgraph" alt=""/></div>
 <map name="rtp_8c_a6c9aa998b02c9ff5099bb3fc6bbc2b5e_cgraph" id="rtp_8c_a6c9aa998b02c9ff5099bb3fc6bbc2b5e_cgraph">
-<area shape="rect" id="node2" href="rtp_8c.html#a7b661ee336df15cbee60fda1d7263247" title="rtp_packet_send" alt="" coords="171,5,299,32"/><area shape="rect" id="node3" href="udp__socket_8c.html#a2c3da4bd5d683ae6c844649fac79f13d" title="Send a packet from buffer, non&#45;blocking. " alt="" coords="347,5,541,32"/></map>
+<area shape="rect" id="node2" href="rtp_8c.html#aedd2d69861650f90d27683d366946e03" title="rtp_packet_send" alt="" coords="171,5,299,32"/><area shape="rect" id="node3" href="udp__socket_8c.html#a2c3da4bd5d683ae6c844649fac79f13d" title="Send a packet from buffer, non&#45;blocking. " alt="" coords="347,5,541,32"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a7b661ee336df15cbee60fda1d7263247"></a>
+<a class="anchor" id="aedd2d69861650f90d27683d366946e03"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -399,7 +413,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
           <td class="paramname"><em>m_SequenceNumber</em>, </td>
         </tr>
         <tr>
@@ -463,19 +477,19 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="rtp_8c_source.html#l00158">158</a> of file <a class="el" href="rtp_8c_source.html">rtp.c</a>.</p>
+<p>Definition at line <a class="el" href="rtp_8c_source.html#l00177">177</a> of file <a class="el" href="rtp_8c_source.html">rtp.c</a>.</p>
 
-<p>References <a class="el" href="rtp_8c.html#a098326507412cf884a2f7fc1d07ca6e6">KJpegHeaderSize</a>, <a class="el" href="rtp_8c.html#ab212f5526e3064dfb83c572feab4758c">KRtpHeaderSize</a>, and <a class="el" href="udp__socket_8c_source.html#l00140">udp_socket_send_dontwait()</a>.</p>
+<p>References <a class="el" href="rtp_8c.html#a098326507412cf884a2f7fc1d07ca6e6">KJpegHeaderSize</a>, <a class="el" href="rtp_8c.html#ab212f5526e3064dfb83c572feab4758c">KRtpHeaderSize</a>, and <a class="el" href="udp__socket_8c_source.html#l00141">udp_socket_send_dontwait()</a>.</p>
 
-<p>Referenced by <a class="el" href="rtp_8c_source.html#l00097">rtp_frame_send()</a>, and <a class="el" href="rtp_8c_source.html#l00067">rtp_frame_test()</a>.</p>
+<p>Referenced by <a class="el" href="rtp_8c_source.html#l00127">rtp_frame_send()</a>, and <a class="el" href="rtp_8c_source.html#l00095">rtp_frame_test()</a>.</p>
 
 <p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="rtp_8c_a7b661ee336df15cbee60fda1d7263247_cgraph.png" border="0" usemap="#rtp_8c_a7b661ee336df15cbee60fda1d7263247_cgraph" alt=""/></div>
-<map name="rtp_8c_a7b661ee336df15cbee60fda1d7263247_cgraph" id="rtp_8c_a7b661ee336df15cbee60fda1d7263247_cgraph">
+<div class="center"><img src="rtp_8c_aedd2d69861650f90d27683d366946e03_cgraph.png" border="0" usemap="#rtp_8c_aedd2d69861650f90d27683d366946e03_cgraph" alt=""/></div>
+<map name="rtp_8c_aedd2d69861650f90d27683d366946e03_cgraph" id="rtp_8c_aedd2d69861650f90d27683d366946e03_cgraph">
 <area shape="rect" id="node2" href="udp__socket_8c.html#a2c3da4bd5d683ae6c844649fac79f13d" title="Send a packet from buffer, non&#45;blocking. " alt="" coords="181,5,376,32"/></map>
 </div>
 </p>
@@ -485,9 +499,9 @@ Variables</h2></td></tr>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="rtp_8c_a7b661ee336df15cbee60fda1d7263247_icgraph.png" border="0" usemap="#rtp_8c_a7b661ee336df15cbee60fda1d7263247_icgraph" alt=""/></div>
-<map name="rtp_8c_a7b661ee336df15cbee60fda1d7263247_icgraph" id="rtp_8c_a7b661ee336df15cbee60fda1d7263247_icgraph">
-<area shape="rect" id="node2" href="rtp_8h.html#ab810dc7d46e209624e4edd330edb7bf7" title="Send an RTP frame. " alt="" coords="181,42,304,69"/><area shape="rect" id="node7" href="rtp_8h.html#a6c9aa998b02c9ff5099bb3fc6bbc2b5e" title="Send a test RTP frame. " alt="" coords="184,93,301,119"/><area shape="rect" id="node3" href="bebop__front__camera_8c.html#a63cb60d57fb10579691954003dc4491e" title="Handles all the video streaming and saving of the image shots This is a sepereate thread..." alt="" coords="352,5,507,47"/><area shape="rect" id="node5" href="viewvideo_8c.html#aaa64c7de292e7ac10b442216cc49dcab" title="Handles all the video streaming and saving of the image shots This is a sepereate thread..." alt="" coords="359,71,500,98"/><area shape="rect" id="node4" href="bebop__front__camera_8h.html#a179ce25d44bf966f12b86e3a96654161" title="Start with streaming. " alt="" coords="555,5,709,47"/><area shape="rect" id="node6" href="viewvideo_8h.html#a8479777ac5ff98cdf58349e741f04005" title="Initialize the view video. " alt="" coords="577,71,687,98"/></map>
+<div class="center"><img src="rtp_8c_aedd2d69861650f90d27683d366946e03_icgraph.png" border="0" usemap="#rtp_8c_aedd2d69861650f90d27683d366946e03_icgraph" alt=""/></div>
+<map name="rtp_8c_aedd2d69861650f90d27683d366946e03_icgraph" id="rtp_8c_aedd2d69861650f90d27683d366946e03_icgraph">
+<area shape="rect" id="node2" href="rtp_8h.html#a31d0efc8803ccbb83cb0b713e69ff16f" title="Send an RTP frame. " alt="" coords="181,5,304,32"/><area shape="rect" id="node4" href="rtp_8h.html#a6c9aa998b02c9ff5099bb3fc6bbc2b5e" title="Send a test RTP frame. " alt="" coords="184,56,301,83"/><area shape="rect" id="node3" href="viewvideo_8c.html#a0df1e7fcdd4897477c64c18bb5bce697" title="Handles all the video streaming and saving of the image shots This is a separate thread, so it needs to be thread safe! " alt="" coords="352,5,493,32"/></map>
 </div>
 </p>
 
@@ -513,9 +527,9 @@ Variables</h2></td></tr>
 <div class="line">  0x80, 0x0a, 0x28, 0xa2, 0x80, 0x3f, 0xff, 0xd9</div>
 <div class="line">}</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="rtp_8c_source.html#l00044">44</a> of file <a class="el" href="rtp_8c_source.html">rtp.c</a>.</p>
+<p>Definition at line <a class="el" href="rtp_8c_source.html#l00072">72</a> of file <a class="el" href="rtp_8c_source.html">rtp.c</a>.</p>
 
-<p>Referenced by <a class="el" href="rtp_8c_source.html#l00067">rtp_frame_test()</a>.</p>
+<p>Referenced by <a class="el" href="rtp_8c_source.html#l00095">rtp_frame_test()</a>.</p>
 
 </div>
 </div>
@@ -538,9 +552,9 @@ Variables</h2></td></tr>
 <div class="line">  0x80, 0x0a, 0x28, 0xa2, 0x80, 0x3f, 0xff, 0xd9</div>
 <div class="line">}</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="rtp_8c_source.html#l00053">53</a> of file <a class="el" href="rtp_8c_source.html">rtp.c</a>.</p>
+<p>Definition at line <a class="el" href="rtp_8c_source.html#l00081">81</a> of file <a class="el" href="rtp_8c_source.html">rtp.c</a>.</p>
 
-<p>Referenced by <a class="el" href="rtp_8c_source.html#l00067">rtp_frame_test()</a>.</p>
+<p>Referenced by <a class="el" href="rtp_8c_source.html#l00095">rtp_frame_test()</a>.</p>
 
 </div>
 </div>
@@ -550,7 +564,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_304e79c9f5d09ea65a2f55aafb6a6b9d.html">computer_vision</a></li><li class="navelem"><a class="el" href="dir_9adc125244b74c64b95124778e5b932a.html">lib</a></li><li class="navelem"><a class="el" href="dir_7aa332c18e5fa1eaa6661da2f3ea70ae.html">encoding</a></li><li class="navelem"><a class="el" href="rtp_8c.html">rtp.c</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:01:54 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:02:17 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

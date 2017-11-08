@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -79,6 +79,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow3" class="tabs2">
     <ul class="tablist">
       <li><a href="functions.html"><span>All</span></a></li>
+      <li><a href="functions_func.html"><span>Functions</span></a></li>
       <li class="current"><a href="functions_vars.html"><span>Variables</span></a></li>
     </ul>
   </div>
@@ -147,7 +148,8 @@ $(document).ready(function(){initNavTree('functions_vars_x.html','');});
 
 <h3><a class="anchor" id="index_x"></a>- x -</h3><ul>
 <li>x
-: <a class="el" href="imu__chimu_8h.html#a52e80849b8ab097fee0f45fe7bafb1a4">CHIMU_Vector</a>
+: <a class="el" href="act__fast_8h.html#ac6004dd4d97a330f12d57a569b59efd9">agent_t</a>
+, <a class="el" href="imu__chimu_8h.html#a52e80849b8ab097fee0f45fe7bafb1a4">CHIMU_Vector</a>
 , <a class="el" href="image_8h.html#a687b7d2826eb010a079cc2e2ffbb9b52">crop_t</a>
 , <a class="el" href="group__math__algebra__double.html#a7519f4492e3d607594df79b3d30ad082">DoubleVect2</a>
 , <a class="el" href="group__math__algebra__double.html#a755f3938a6c152764ae2b73bc2994840">DoubleVect3</a>
@@ -163,7 +165,6 @@ $(document).ready(function(){initNavTree('functions_vars_x.html','');});
 , <a class="el" href="group__math__algebra__float.html#aa44c74404cf8ef0b143066e970352adb">FloatVect3</a>
 , <a class="el" href="cv__georeference_8c.html#a72c30982e4f6d7ce0f93a4de8eea9c1c">georeference_filter_t</a>
 , <a class="el" href="hf__float_8h.html#a6e01846a801cbd7fe3ae1f69df70ce3b">HfilterFloat</a>
-, <a class="el" href="stabilization__indi_8h.html#ab268e640f9029f1f67250d4c06122c16">IndiFilter</a>
 , <a class="el" href="group__math__algebra__int.html#a655bffc25394920e5314a184550a82c3">Int16Vect3</a>
 , <a class="el" href="group__math__algebra__int.html#a91ffcd57e82c034206721483e7b7c7f8">Int32Vect2</a>
 , <a class="el" href="group__math__algebra__int.html#aacbde96e85265b05620b8d4a04790911">Int32Vect3</a>
@@ -186,17 +187,38 @@ $(document).ready(function(){initNavTree('functions_vars_x.html','');});
 : <a class="el" href="group__math__algebra__int.html#ab4c9a9c037ace1d9d6e00cc8f8d1deb0">Uint16Vect3</a>
 , <a class="el" href="group__math__algebra__int.html#aad4bc5ede8ae08bdc4fd719df0f94060">Uint8Vect3</a>
 </li>
+<li>x0
+: <a class="el" href="UKF__Wind__Estimator_8h.html#ad99d7300d0e2fa0e6647cdab20183997">ukf_init_tag</a>
+</li>
+<li>x1
+: <a class="el" href="gvf_8h.html#a05a374528044036860cf45da2d0bc5b8">gvf_seg</a>
+</li>
+<li>x2
+: <a class="el" href="gvf_8h.html#abf985b574b4a003973c9509ab01f8d8e">gvf_seg</a>
+</li>
 <li>x_min
 : <a class="el" href="blob__finder_8h.html#a0676111d41418feffd337eb7db062685">image_label_t</a>
 </li>
+<li>x_not_empty
+: <a class="el" href="UKF__Wind__Estimator_8h.html#a8e6388b8bb5c9fe7c882a3d5f57847f0">DW</a>
+</li>
+<li>x_odd_inc
+: <a class="el" href="mt9f002_8h.html#a230dd4d003b6a64ff1351fac054f0f17">mt9f002_t</a>
+</li>
 <li>x_pos
 : <a class="el" href="gps__sirf_8c.html#a983ad6443162f5a9f55ee427e80584c7">sirf_msg_2</a>
+</li>
+<li>x_sub
+: <a class="el" href="image_8h.html#a4af89eca3b3cdd34b596623afee81ab9">point_t</a>
 </li>
 <li>x_sum
 : <a class="el" href="blob__finder_8h.html#a707968c97b1bd127fd29edb24db36d3f">image_label_t</a>
 </li>
 <li>x_t
 : <a class="el" href="cv__georeference_8c.html#a68f1873f875a02a3aa36194f14ecf197">georeference_t</a>
+</li>
+<li>xbias
+: <a class="el" href="hf__float_8h.html#aba06181bd340832c1d941e0bfcb8a8ad">HfilterFloat</a>
 </li>
 <li>xdot
 : <a class="el" href="hf__float_8h.html#a3161286a7c402bf00b108cf84127542b">HfilterFloat</a>
@@ -213,6 +235,9 @@ $(document).ready(function(){initNavTree('functions_vars_x.html','');});
 <li>xn2
 : <a class="el" href="notch__filter_8h.html#ab59917f8d868ffc90d73eeb7006e8fb4">SecondOrderNotchFilter</a>
 </li>
+<li>xout
+: <a class="el" href="UKF__Wind__Estimator_8h.html#a3f350290dfded94387863112d2aefad3">ExtY</a>
+</li>
 <li>xP
 : <a class="el" href="hf__float_8h.html#a9f2b092d078a04d786dff4f301397411">HfilterFloat</a>
 </li>
@@ -222,7 +247,7 @@ $(document).ready(function(){initNavTree('functions_vars_x.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Oct 1 2016 14:02:43 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:03:14 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

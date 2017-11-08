@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -145,7 +145,7 @@ Data Fields</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Driver configuration structure. </p>
 
-<p>Definition at line <a class="el" href="usb__msd_8h_source.html#l00104">104</a> of file <a class="el" href="usb__msd_8h_source.html">usb_msd.h</a>.</p>
+<p>Definition at line <a class="el" href="usb__msd_8h_source.html#l00123">123</a> of file <a class="el" href="usb__msd_8h_source.html">usb_msd.h</a>.</p>
 </div><h2 class="groupheader">Field Documentation</h2>
 <a class="anchor" id="a48035f5a2eb5644283c58c73a426fdfa"></a>
 <div class="memitem">
@@ -159,9 +159,9 @@ Data Fields</h2></td></tr>
 
 <p>Block device to use for storage. </p>
 
-<p>Definition at line <a class="el" href="usb__msd_8h_source.html#l00113">113</a> of file <a class="el" href="usb__msd_8h_source.html">usb_msd.h</a>.</p>
+<p>Definition at line <a class="el" href="usb__msd_8h_source.html#l00132">132</a> of file <a class="el" href="usb__msd_8h_source.html">usb_msd.h</a>.</p>
 
-<p>Referenced by <a class="el" href="usb__msd_8c_source.html#l00396">msd_scsi_process_start_read_write_10()</a>, <a class="el" href="usb__msd_8c_source.html#l00573">msd_scsi_process_test_unit_ready()</a>, and <a class="el" href="usb__msd_8c_source.html#l00820">msdStart()</a>.</p>
+<p>Referenced by <a class="el" href="usb__msd_8c_source.html#l00449">msd_scsi_process_start_read_write_10()</a>, <a class="el" href="usb__msd_8c_source.html#l00627">msd_scsi_process_test_unit_ready()</a>, and <a class="el" href="usb__msd_8c_source.html#l00855">msdStart()</a>.</p>
 
 </div>
 </div>
@@ -177,9 +177,9 @@ Data Fields</h2></td></tr>
 
 <p>Index of the USB endpoint to use for transfers. </p>
 
-<p>Definition at line <a class="el" href="usb__msd_8h_source.html#l00118">118</a> of file <a class="el" href="usb__msd_8h_source.html">usb_msd.h</a>.</p>
+<p>Definition at line <a class="el" href="usb__msd_8h_source.html#l00137">137</a> of file <a class="el" href="usb__msd_8h_source.html">usb_msd.h</a>.</p>
 
-<p>Referenced by <a class="el" href="usb__msd_8c_source.html#l00608">msd_read_command_block()</a>, <a class="el" href="usb__msd_8c_source.html#l00276">msd_start_receive()</a>, <a class="el" href="usb__msd_8c_source.html#l00266">msd_start_transmit()</a>, <a class="el" href="usb__msd_8c_source.html#l00173">msdConfigureHookI()</a>, <a class="el" href="usb__msd_8c_source.html#l00820">msdStart()</a>, and <a class="el" href="usb__msd_8c_source.html#l00866">msdStop()</a>.</p>
+<p>Referenced by <a class="el" href="usb__msd_8c_source.html#l00669">msd_read_command_block()</a>, <a class="el" href="usb__msd_8c_source.html#l00325">msd_start_receive()</a>, <a class="el" href="usb__msd_8c_source.html#l00311">msd_start_transmit()</a>, <a class="el" href="usb__msd_8c_source.html#l00188">msdConfigureHookI()</a>, <a class="el" href="usb__msd_8c_source.html#l00205">msdRequestsHook()</a>, <a class="el" href="usb__msd_8c_source.html#l00855">msdStart()</a>, and <a class="el" href="usb__msd_8c_source.html#l00900">msdStop()</a>.</p>
 
 </div>
 </div>
@@ -196,9 +196,9 @@ Data Fields</h2></td></tr>
 <p>Optional callback that will be called whenever there is read/write activity. </p>
 <dl class="section note"><dt>Note</dt><dd>The callback is called with argument true when activity starts, and false when activity stops. </dd></dl>
 
-<p>Definition at line <a class="el" href="usb__msd_8h_source.html#l00126">126</a> of file <a class="el" href="usb__msd_8h_source.html">usb_msd.h</a>.</p>
+<p>Definition at line <a class="el" href="usb__msd_8h_source.html#l00145">145</a> of file <a class="el" href="usb__msd_8h_source.html">usb_msd.h</a>.</p>
 
-<p>Referenced by <a class="el" href="usb__msd_8c_source.html#l00608">msd_read_command_block()</a>.</p>
+<p>Referenced by <a class="el" href="usb__msd_8c_source.html#l00669">msd_read_command_block()</a>.</p>
 
 </div>
 </div>
@@ -215,9 +215,9 @@ Data Fields</h2></td></tr>
 <p>Short product identification. </p>
 <dl class="section note"><dt>Note</dt><dd>ASCII characters only, maximum 16 characters (pad with zeroes). </dd></dl>
 
-<p>Definition at line <a class="el" href="usb__msd_8h_source.html#l00138">138</a> of file <a class="el" href="usb__msd_8h_source.html">usb_msd.h</a>.</p>
+<p>Definition at line <a class="el" href="usb__msd_8h_source.html#l00157">157</a> of file <a class="el" href="usb__msd_8h_source.html">usb_msd.h</a>.</p>
 
-<p>Referenced by <a class="el" href="usb__msd_8c_source.html#l00820">msdStart()</a>.</p>
+<p>Referenced by <a class="el" href="usb__msd_8c_source.html#l00855">msdStart()</a>.</p>
 
 </div>
 </div>
@@ -234,9 +234,9 @@ Data Fields</h2></td></tr>
 <p>Short product revision. </p>
 <dl class="section note"><dt>Note</dt><dd>ASCII characters only, maximum 4 characters (pad with zeroes). </dd></dl>
 
-<p>Definition at line <a class="el" href="usb__msd_8h_source.html#l00144">144</a> of file <a class="el" href="usb__msd_8h_source.html">usb_msd.h</a>.</p>
+<p>Definition at line <a class="el" href="usb__msd_8h_source.html#l00163">163</a> of file <a class="el" href="usb__msd_8h_source.html">usb_msd.h</a>.</p>
 
-<p>Referenced by <a class="el" href="usb__msd_8c_source.html#l00820">msdStart()</a>.</p>
+<p>Referenced by <a class="el" href="usb__msd_8c_source.html#l00855">msdStart()</a>.</p>
 
 </div>
 </div>
@@ -253,9 +253,9 @@ Data Fields</h2></td></tr>
 <p>Short vendor identification. </p>
 <dl class="section note"><dt>Note</dt><dd>ASCII characters only, maximum 8 characters (pad with zeroes). </dd></dl>
 
-<p>Definition at line <a class="el" href="usb__msd_8h_source.html#l00132">132</a> of file <a class="el" href="usb__msd_8h_source.html">usb_msd.h</a>.</p>
+<p>Definition at line <a class="el" href="usb__msd_8h_source.html#l00151">151</a> of file <a class="el" href="usb__msd_8h_source.html">usb_msd.h</a>.</p>
 
-<p>Referenced by <a class="el" href="usb__msd_8c_source.html#l00820">msdStart()</a>.</p>
+<p>Referenced by <a class="el" href="usb__msd_8c_source.html#l00855">msdStart()</a>.</p>
 
 </div>
 </div>
@@ -271,9 +271,9 @@ Data Fields</h2></td></tr>
 
 <p>USB driver to use for communication. </p>
 
-<p>Definition at line <a class="el" href="usb__msd_8h_source.html#l00108">108</a> of file <a class="el" href="usb__msd_8h_source.html">usb_msd.h</a>.</p>
+<p>Definition at line <a class="el" href="usb__msd_8h_source.html#l00127">127</a> of file <a class="el" href="usb__msd_8h_source.html">usb_msd.h</a>.</p>
 
-<p>Referenced by <a class="el" href="usb__msd_8c_source.html#l00741">mass_storage_thread()</a>, <a class="el" href="usb__msd_8c_source.html#l00608">msd_read_command_block()</a>, <a class="el" href="usb__msd_8c_source.html#l00276">msd_start_receive()</a>, <a class="el" href="usb__msd_8c_source.html#l00266">msd_start_transmit()</a>, <a class="el" href="usb__msd_8c_source.html#l00173">msdConfigureHookI()</a>, <a class="el" href="usb__msd_8c_source.html#l00820">msdStart()</a>, and <a class="el" href="usb__msd_8c_source.html#l00866">msdStop()</a>.</p>
+<p>Referenced by <a class="el" href="usb__msd_8c_source.html#l01156">mass_storage_thread()</a>, <a class="el" href="usb__msd_8c_source.html#l00669">msd_read_command_block()</a>, <a class="el" href="usb__msd_8c_source.html#l00325">msd_start_receive()</a>, <a class="el" href="usb__msd_8c_source.html#l00311">msd_start_transmit()</a>, <a class="el" href="usb__msd_8c_source.html#l00188">msdConfigureHookI()</a>, <a class="el" href="usb__msd_8c_source.html#l00205">msdRequestsHook()</a>, <a class="el" href="usb__msd_8c_source.html#l00855">msdStart()</a>, and <a class="el" href="usb__msd_8c_source.html#l00900">msdStop()</a>.</p>
 
 </div>
 </div>
@@ -286,7 +286,7 @@ Data Fields</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structUSBMassStorageConfig.html">USBMassStorageConfig</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:02:23 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:02:54 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

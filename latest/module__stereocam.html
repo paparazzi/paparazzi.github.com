@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -105,15 +105,17 @@ $(document).ready(function(){initNavTree('module__stereocam.html','');});
 <div class="contents">
 <div class="textblock"><p><b>StereoCamera read and decode.</b></p>
 <p><b></b></p>
-<p>Module to read and decode messages from the TU Delft stereo camera over uart. The stereo camera is designed and produced by Christophe de Wagter from the TU Delft. Baud rates tested include B38400, B230400, B921600. If entire images are being sent, it is recommended to use a STEREO_BAUD of B921600 and a STEREO_BUF_SIZE of 32768.</p>
+<p>Module to read and decode messages from the TU Delft stereo camera over uart. The stereo camera is designed and produced by Christophe de Wagter from the TU Delft. Baud rates tested include B38400, B230400, B921600. If entire images are being sent, it is recommended to use a STEREO_BAUD of B921600.</p>
 <h1><a class="anchor" id="module_load_example__stereocam"></a>
 Example for airframe file</h1>
 <p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;module name=&quot;stereocam&quot;&gt;</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;  &lt;define name=&quot;SEND_STEREO&quot; value=&quot;TRUE|FALSE&quot; /&gt;</div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;  &lt;define name=&quot;STEREO_BUF_SIZE&quot; value=&quot;NUM&quot; /&gt;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;  &lt;configure name=&quot;STEREO_UART&quot; value=&quot;UARTX&quot; /&gt;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;  &lt;configure name=&quot;STEREO_BAUD&quot; value=&quot;BXXXXX&quot; /&gt;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;&lt;/module&gt;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;  &lt;define name=&quot;FORWARD_IMAGE_DATA&quot; value=&quot;TRUE|FALSE&quot; /&gt;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;  &lt;define name=&quot;STEREO_BODY_TO_STEREO_PHI&quot; value=&quot;90&quot; /&gt;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;  &lt;define name=&quot;STEREO_BODY_TO_STEREO_THETA&quot; value=&quot;0&quot; /&gt;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;  &lt;define name=&quot;STEREO_BODY_TO_STEREO_PSI&quot; value=&quot;90&quot; /&gt;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;  &lt;configure name=&quot;STEREO_UART&quot; value=&quot;UARTX&quot; /&gt;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;  &lt;configure name=&quot;STEREO_BAUD&quot; value=&quot;BXXXXX&quot; /&gt;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;&lt;/module&gt;</div>
 </div><!-- fragment --> <h1><a class="anchor" id="configuration__stereocam"></a>
 Module configuration options</h1>
 <h2><a class="anchor" id="configure"></a>
@@ -127,25 +129,35 @@ Configure Options</h2>
 <h2><a class="anchor" id="define"></a>
 Define Options</h2>
 <ul>
-<li><b>name:</b> <code>SEND_STEREO</code> <b>value:</b> <em>TRUE|FALSE</em> <br />
- Description: If TRUE, a copy of received messages is sent to the ground station over the datalink (default: TRUE)</li>
-<li><b>name:</b> <code>STEREO_BUF_SIZE</code> <b>value:</b> <em>NUM</em> <br />
- Description: Size of the receiving buffer, must be at least as large as the message being sent (default: 1024)</li>
+<li><b>name:</b> <code>FORWARD_IMAGE_DATA</code> <b>value:</b> <em>TRUE|FALSE</em> <br />
+ Description: If TRUE, a copy of received iamges is sent to the ground station over the datalink (default: TRUE)</li>
+<li><b>name:</b> <code>STEREO_BODY_TO_STEREO_PHI</code> <b>value:</b> <em>90</em> <br />
+ Description: Rotation matrix from body to camera frame</li>
+<li><b>name:</b> <code>STEREO_BODY_TO_STEREO_THETA</code> <b>value:</b> <em>0</em></li>
+<li><b>name:</b> <code>STEREO_BODY_TO_STEREO_PSI</code> <b>value:</b> <em>90</em></li>
 </ul>
 <h1><a class="anchor" id="functions__stereocam"></a>
 Module functions</h1>
+<h2><a class="anchor" id="init_functions"></a>
+Init Functions</h2>
+<p>These initialization functions are called once on startup.</p>
+<ul>
+<li><a class="el" href="stereocam_8c.html#a060837eafee75563e97a5d6fd62211ee">stereocam_init()</a></li>
+</ul>
+<h2><a class="anchor" id="event_functions"></a>
+Event Functions</h2>
+<p>These event functions are called in each cycle of the module event loop.</p>
+<ul>
+<li><a class="el" href="stereocam_8c.html#a95bf6b29adccc637ae2d86539a211d28">stereocam_event()</a></li>
+</ul>
 <h2><a class="anchor" id="periodic_functions"></a>
 Periodic Functions</h2>
 <p>These functions are called periodically at the specified frequency from the module periodic loop.</p>
 <ul>
-<li><a class="el" href="stereocam_8c.html#af9fdd9db13734d364f446939addc77d9">stereocam_periodic()</a><ul>
-<li>Frequency in Hz: <em>512</em> </li>
+<li><a class="el" href="stereocam_8c.html#a8e79296f77859c1cee9e52f993af1fd9">state2stereocam()</a><ul>
+<li>Frequency in Hz: <em>25</em> </li>
 <li>Autorun: <em>TRUE</em> <br />
  Periodic function automatically starts after init.</li>
-<li>Start function: <a class="el" href="stereocam_8c.html#a314feadf5e42a344a71bf9c9b08f7c17">stereocam_start()</a><br />
- Executed before the periodic function starts.</li>
-<li>Stop function: <a class="el" href="stereocam_8c.html#ad93db7f30e258585f126bb2bcc969064">stereocam_stop()</a><br />
- Executed after the periodic function stops.</li>
 </ul>
 </li>
 </ul>
@@ -160,8 +172,8 @@ Header Files</h2>
 <h2><a class="anchor" id="sources"></a>
 Source Files</h2>
 <ul>
-<li><a class="el" href="stereoprotocol_8c.html">modules/stereocam/stereoprotocol.c</a></li>
 <li><a class="el" href="stereocam_8c.html">modules/stereocam/stereocam.c</a></li>
+<li>pprzlink/src/pprz_transport.c</li>
 </ul>
 <h2><a class="anchor" id="module_xml__stereocam"></a>
 Raw stereocam.xml file:</h2>
@@ -174,24 +186,34 @@ Raw stereocam.xml file:</h2>
 <div class="line">      Module to read and decode messages from the TU Delft stereo camera over uart.</div>
 <div class="line">      The stereo camera is designed and produced by Christophe de Wagter from the TU Delft.</div>
 <div class="line">      Baud rates tested include B38400, B230400, B921600.</div>
-<div class="line">      If entire images are being sent, it is recommended to use a STEREO_BAUD of B921600 and a STEREO_BUF_SIZE of 32768.</div>
+<div class="line">      If entire images are being sent, it is recommended to use a STEREO_BAUD of B921600.</div>
 <div class="line">    &lt;/description&gt;</div>
 <div class="line">    &lt;configure name=&quot;STEREO_UART&quot; value=&quot;UARTX&quot; description=&quot;Sets the UART port number of the connected camera (required)&quot;/&gt;</div>
 <div class="line">    &lt;configure name=&quot;STEREO_BAUD&quot; value=&quot;BXXXXX&quot; description=&quot;Sets the BAUD rate of the connected camera (required: must be same as camera)&quot;/&gt;</div>
-<div class="line">    &lt;define name=&quot;SEND_STEREO&quot; value=&quot;TRUE|FALSE&quot; description=&quot;If TRUE, a copy of received messages is sent to the ground station over the datalink (default: TRUE)&quot;/&gt;</div>
-<div class="line">    &lt;define name=&quot;STEREO_BUF_SIZE&quot; value=&quot;NUM&quot; description=&quot;Size of the receiving buffer, must be at least as large as the message being sent (default: 1024)&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;FORWARD_IMAGE_DATA&quot; value=&quot;TRUE|FALSE&quot; description=&quot;If TRUE, a copy of received iamges is sent to the ground station over the datalink (default: TRUE)&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;STEREO_BODY_TO_STEREO_PHI&quot; value=&quot;90&quot; description=&quot;Rotation matrix from body to camera frame&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;STEREO_BODY_TO_STEREO_THETA&quot; value=&quot;0&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;STEREO_BODY_TO_STEREO_PSI&quot; value=&quot;90&quot;/&gt;</div>
 <div class="line">  &lt;/doc&gt;</div>
 <div class="line">  &lt;header&gt;</div>
 <div class="line">    &lt;file name=&quot;stereocam.h&quot;/&gt;</div>
 <div class="line">  &lt;/header&gt;</div>
-<div class="line">  &lt;periodic fun=&quot;stereocam_periodic()&quot; start=&quot;stereocam_start()&quot; stop=&quot;stereocam_stop()&quot; autorun=&quot;TRUE&quot; freq=&quot;512&quot;/&gt;</div>
+<div class="line">  &lt;init fun=&quot;stereocam_init()&quot;/&gt;</div>
+<div class="line">  &lt;periodic fun=&quot;state2stereocam()&quot; autorun=&quot;TRUE&quot; freq=&quot;25&quot;/&gt;</div>
+<div class="line">  &lt;event fun=&quot;stereocam_event()&quot;/&gt;</div>
 <div class="line">  &lt;makefile&gt;</div>
-<div class="line">    &lt;file name=&quot;stereoprotocol.c&quot; dir=&quot;modules/stereocam&quot;/&gt;</div>
-<div class="line">    &lt;configure name=&quot;STEREO_UART&quot; case=&quot;upper|lower&quot;/&gt;</div>
+<div class="line">    &lt;!-- Configure default UART port and baudrate --&gt;</div>
+<div class="line">    &lt;configure name=&quot;STEREO_UART&quot; default=&quot;UART1&quot; case=&quot;upper|lower&quot;/&gt;</div>
+<div class="line">    &lt;configure name=&quot;STEREO_BAUD&quot; default=&quot;B921600&quot;/&gt;</div>
+<div class="line">    </div>
+<div class="line">    &lt;!-- Enable UART and set baudrate --&gt;</div>
 <div class="line">    &lt;define name=&quot;USE_$(STEREO_UART_UPPER)&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;UART_LINK&quot; value=&quot;$(STEREO_UART_LOWER)&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;$(STEREO_UART_UPPER)_BAUD&quot; value=&quot;$(STEREO_BAUD)&quot;/&gt;</div>
+<div class="line">    </div>
+<div class="line">    &lt;!-- Sources and PPRZLink for transport --&gt;</div>
 <div class="line">    &lt;file name=&quot;stereocam.c&quot;/&gt;</div>
+<div class="line">    &lt;file name=&quot;pprz_transport.c&quot; dir=&quot;pprzlink/src&quot;/&gt;</div>
 <div class="line">  &lt;/makefile&gt;</div>
 <div class="line"> &lt;/module&gt;</div>
 </div><!-- fragment --> </div></div><!-- contents -->
@@ -200,7 +222,7 @@ Raw stereocam.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:02:19 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:02:47 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

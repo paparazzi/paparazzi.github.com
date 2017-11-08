@@ -1,9 +1,10 @@
 <map id="sw/airborne/arch/stm32/mcu_periph/sys_time_arch.h" name="sw/airborne/arch/stm32/mcu_periph/sys_time_arch.h">
-<area shape="rect" id="node2" href="$chibios_2mcu__periph_2sys__time__arch_8c.html" title="Implementation of system time functions for ChibiOS arch. " alt="" coords="4223,102,4431,143"/>
-<area shape="rect" id="node3" href="$stm32_2usb__ser__hw_8c.html" title="CDC USB device driver for STM32 architecture (STM32F1, STM32F4) " alt="" coords="4456,102,4628,143"/>
-<area shape="rect" id="node4" href="$sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="4652,102,4827,143"/>
-<area shape="rect" id="node49" href="$px4__flash_8c.html" title="sw/airborne/modules\l/px4_flash/px4_flash.c" alt="" coords="8900,213,9061,255"/>
-<area shape="rect" id="node50" href="$spektrum__soft__bind__fbw_8c.html" title="sw/airborne/modules\l/spektrum_soft_bind\l/spektrum_soft_bind_fbw.c" alt="" coords="4903,95,5093,151"/>
+<area shape="rect" id="node2" href="$chibios_2mcu__periph_2sys__time__arch_8c.html" title="Implementation of system time functions for ChibiOS arch. " alt="" coords="4131,102,4339,143"/>
+<area shape="rect" id="node3" href="$stm32_2usb__ser__hw_8c.html" title="CDC USB device driver for STM32 architecture (STM32F1, STM32F4) " alt="" coords="4364,102,4536,143"/>
+<area shape="rect" id="node4" href="$sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="4560,102,4735,143"/>
+<area shape="rect" id="node48" href="$px4__flash_8c.html" title="sw/airborne/modules\l/px4_flash/px4_flash.c" alt="" coords="8727,213,8888,255"/>
+<area shape="rect" id="node49" href="$spektrum__soft__bind__ap_8c.html" title="sw/airborne/modules\l/spektrum_soft_bind\l/spektrum_soft_bind_ap.c" alt="" coords="4810,95,4997,151"/>
+<area shape="rect" id="node50" href="$spektrum__soft__bind__fbw_8c.html" title="sw/airborne/modules\l/spektrum_soft_bind\l/spektrum_soft_bind_fbw.c" alt="" coords="5021,95,5212,151"/>
 <area shape="rect" id="node5" href="$chibios_2mcu__periph_2sys__time__arch_8h.html" title="Implementation of system time functions for ChibiOS arch. " alt="" coords="5,213,215,255"/>
 <area shape="rect" id="node6" href="$linux_2mcu__periph_2sys__time__arch_8c.html" title="sw/airborne/arch/linux\l/mcu_periph/sys_time_arch.c" alt="" coords="239,213,447,255"/>
 <area shape="rect" id="node7" href="$lpc21_2mcu__periph_2sys__time__arch_8c.html" title="LPC21xx timing functions. " alt="" coords="471,213,679,255"/>
@@ -26,26 +27,25 @@
 <area shape="rect" id="node24" href="$stm32_2peripherals_2ms2100__arch_8c.html" title="STM32 specific functions for the ms2100 magnetic sensor from PNI. " alt="" coords="3931,213,4129,255"/>
 <area shape="rect" id="node25" href="$stm32_2subsystems_2radio__control_2spektrum__arch_8c.html" title="sw/airborne/arch/stm32\l/subsystems/radio_control\l/spektrum_arch.c" alt="" coords="4153,206,4344,262"/>
 <area shape="rect" id="node26" href="$stm32_2uart__tunnel_8c.html" title="sw/airborne/arch/stm32\l/uart_tunnel.c" alt="" coords="4368,213,4540,255"/>
-<area shape="rect" id="node27" href="$boards_2ardrone_2actuators_8c.html" title="Actuator driver for ardrone2 version. " alt="" coords="4565,213,4717,255"/>
-<area shape="rect" id="node28" href="$baro__board__ms5611__i2c_8c.html" title="Driver for onboard MS5611 baro via I2C. " alt="" coords="4741,213,4935,255"/>
-<area shape="rect" id="node29" href="$baro__board__ms5611__spi_8c.html" title="Driver for onboard MS5611 baro via SPI. " alt="" coords="4959,213,5154,255"/>
-<area shape="rect" id="node30" href="$imu__krooz__memsic_8c.html" title="Driver for the IMU on the KroozSD Big Rotorcraft Edition board. " alt="" coords="5178,213,5378,255"/>
-<area shape="rect" id="node31" href="$demo__ahrs__actuators_8c.html" title="Demo prog with ahrs and simple roll/pitch commands to actuators. " alt="" coords="5402,213,5621,255"/>
-<area shape="rect" id="node32" href="$main__ap_8c.html" title="AP ( AutoPilot ) tasks. " alt="" coords="5645,213,5807,255"/>
-<area shape="rect" id="node33" href="$main__chibios_8c.html" title="sw/airborne/firmwares\l/fixedwing/main_chibios.c" alt="" coords="5831,213,6013,255"/>
-<area shape="rect" id="node34" href="$fixedwing_2main__fbw_8c.html" title="FBW ( FlyByWire ) process. " alt="" coords="6037,213,6199,255"/>
-<area shape="rect" id="node35" href="$rotorcraft_2autopilot_8c.html" title="Autopilot. " alt="" coords="6223,213,6384,255"/>
-<area shape="rect" id="node36" href="$guidance__indi_8c.html" title="A guidance mode based on Incremental Nonlinear Dynamic Inversion Come to IROS2016 to learn more! ..." alt="" coords="6408,206,6569,262"/>
-<area shape="rect" id="node37" href="$rotorcraft_2main_8c.html" title="Rotorcraft main loop. " alt="" coords="6593,213,6755,255"/>
-<area shape="rect" id="node38" href="$rotorcraft_2main__fbw_8c.html" title="Rotorcraft FBW main loop. " alt="" coords="6779,213,6940,255"/>
-<area shape="rect" id="node39" href="$stabilization__attitude__rc__setpoint_8c.html" title="Read an attitude setpoint from the RC. " alt="" coords="6964,199,7131,269"/>
-<area shape="rect" id="node40" href="$setup__actuators_8c.html" title="sw/airborne/firmwares\l/setup/setup_actuators.c" alt="" coords="7155,213,7337,255"/>
-<area shape="rect" id="node41" href="$usb__tunnel_8c.html" title="USB tunnel application. " alt="" coords="7361,213,7523,255"/>
-<area shape="rect" id="node42" href="$main__demo2_8c.html" title="sw/airborne/firmwares\l/tutorial/main_demo2.c" alt="" coords="7547,213,7718,255"/>
-<area shape="rect" id="node43" href="$main__demo3_8c.html" title="sw/airborne/firmwares\l/tutorial/main_demo3.c" alt="" coords="7742,213,7913,255"/>
-<area shape="rect" id="node44" href="$main__demo4_8c.html" title="sw/airborne/firmwares\l/tutorial/main_demo4.c" alt="" coords="7937,213,8107,255"/>
-<area shape="rect" id="node45" href="$main__demo5_8c.html" title="sw/airborne/firmwares\l/tutorial/main_demo5.c" alt="" coords="8131,213,8302,255"/>
-<area shape="rect" id="node46" href="$main__demo6_8c.html" title="sw/airborne/firmwares\l/tutorial/main_demo6.c" alt="" coords="8326,213,8497,255"/>
-<area shape="rect" id="node47" href="$sys__time_8c.html" title="Architecture independent timing functions. " alt="" coords="8521,213,8696,255"/>
-<area shape="rect" id="node48" href="$v4l2_8c.html" title="Capture images from a V4L2 device (Video for Linux 2) " alt="" coords="8721,206,8875,262"/>
+<area shape="rect" id="node27" href="$autopilot_8c.html" title="Core autopilot interface common to all firmwares. " alt="" coords="4564,221,4731,247"/>
+<area shape="rect" id="node28" href="$boards_2ardrone_2actuators_8c.html" title="Actuator driver for ardrone2 version. " alt="" coords="4755,213,4907,255"/>
+<area shape="rect" id="node29" href="$baro__board__ms5611__i2c_8c.html" title="Driver for onboard MS5611 baro via I2C. " alt="" coords="4931,213,5126,255"/>
+<area shape="rect" id="node30" href="$baro__board__ms5611__spi_8c.html" title="Driver for onboard MS5611 baro via SPI. " alt="" coords="5150,213,5345,255"/>
+<area shape="rect" id="node31" href="$imu__krooz__memsic_8c.html" title="Driver for the IMU on the KroozSD Big Rotorcraft Edition board. " alt="" coords="5369,213,5569,255"/>
+<area shape="rect" id="node32" href="$demo__ahrs__actuators_8c.html" title="Demo prog with ahrs and simple roll/pitch commands to actuators. " alt="" coords="5593,213,5811,255"/>
+<area shape="rect" id="node33" href="$fixedwing_2main__ap_8c.html" title="AP ( AutoPilot ) tasks. " alt="" coords="5836,213,5997,255"/>
+<area shape="rect" id="node34" href="$fixedwing_2main__chibios_8c.html" title="sw/airborne/firmwares\l/fixedwing/main_chibios.c" alt="" coords="6021,213,6204,255"/>
+<area shape="rect" id="node35" href="$fixedwing_2main__fbw_8c.html" title="FBW ( FlyByWire ) process. " alt="" coords="6228,213,6389,255"/>
+<area shape="rect" id="node36" href="$guidance__indi_8c.html" title="A guidance mode based on Incremental Nonlinear Dynamic Inversion Come to IROS2016 to learn more! ..." alt="" coords="6413,206,6575,262"/>
+<area shape="rect" id="node37" href="$rotorcraft_2main_8c.html" title="Program main function AP + FBW on single MCU AP or FBW on dual MCU None on SITL. " alt="" coords="6599,213,6760,255"/>
+<area shape="rect" id="node38" href="$rotorcraft_2main__ap_8c.html" title="Rotorcraft main loop. " alt="" coords="6784,213,6945,255"/>
+<area shape="rect" id="node39" href="$rotorcraft_2main__chibios_8c.html" title="sw/airborne/firmwares\l/rotorcraft/main_chibios.c" alt="" coords="6970,213,7154,255"/>
+<area shape="rect" id="node40" href="$rotorcraft_2main__fbw_8c.html" title="Rotorcraft FBW main loop. " alt="" coords="7179,213,7340,255"/>
+<area shape="rect" id="node41" href="$stabilization__attitude__rc__setpoint_8c.html" title="Read an attitude setpoint from the RC. " alt="" coords="7364,199,7531,269"/>
+<area shape="rect" id="node42" href="$setup__actuators_8c.html" title="sw/airborne/firmwares\l/setup/setup_actuators.c" alt="" coords="7555,213,7737,255"/>
+<area shape="rect" id="node43" href="$usb__tunnel_8c.html" title="USB tunnel application. " alt="" coords="7761,213,7923,255"/>
+<area shape="rect" id="node44" href="$main__demo2_8c.html" title="sw/airborne/firmwares\l/tutorial/main_demo2.c" alt="" coords="7947,213,8118,255"/>
+<area shape="rect" id="node45" href="$main__demo3_8c.html" title="sw/airborne/firmwares\l/tutorial/main_demo3.c" alt="" coords="8142,213,8313,255"/>
+<area shape="rect" id="node46" href="$main__demo4_8c.html" title="sw/airborne/firmwares\l/tutorial/main_demo4.c" alt="" coords="8337,213,8507,255"/>
+<area shape="rect" id="node47" href="$main__demo5_8c.html" title="sw/airborne/firmwares\l/tutorial/main_demo5.c" alt="" coords="8531,213,8702,255"/>
 </map>

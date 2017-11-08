@@ -10,6 +10,7 @@ var lpc21_2led__hw_8h =
     [ "_LED_SET", "lpc21_2led__hw_8h.html#a53dc1e5c08eb1dbe8454d39bb9dbe917", null ],
     [ "LED_CLR", "lpc21_2led__hw_8h.html#aa4b4a07d9abfdd4048f55d054738d5e0", null ],
     [ "LED_DIR", "lpc21_2led__hw_8h.html#a5e6e8175b14eb74be4352b198244ee02", null ],
+    [ "LED_DISABLE", "lpc21_2led__hw_8h.html#a8883d7ef721064fc83a6817add5ad3a9", null ],
     [ "LED_INIT", "lpc21_2led__hw_8h.html#a49b662104f8fa2b8fa86ea80e94c3d6b", null ],
     [ "LED_OFF", "lpc21_2led__hw_8h.html#a76c86a9c700e32e68f48f85271970b7f", null ],
     [ "LED_ON", "lpc21_2led__hw_8h.html#a3ab823c4004d96d154dfb8f69d18c47a", null ],

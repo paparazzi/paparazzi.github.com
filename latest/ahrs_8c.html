@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -118,6 +118,7 @@ $(document).ready(function(){initNavTree('ahrs_8c.html','');});
 <p>Dispatcher to register actual AHRS implementations.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="ahrs_8h_source.html">subsystems/ahrs.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ahrs__aligner_8h_source.html">subsystems/ahrs/ahrs_aligner.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for ahrs.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -125,7 +126,7 @@ $(document).ready(function(){initNavTree('ahrs_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs_8c__incl.png" border="0" usemap="#sw_2airborne_2subsystems_2ahrs_8c" alt=""/></div>
 <map name="sw_2airborne_2subsystems_2ahrs_8c" id="sw_2airborne_2subsystems_2ahrs_8c">
-<area shape="rect" id="node2" href="ahrs_8h.html" title="Dispatcher to register actual AHRS implementations. " alt="" coords="22,95,165,121"/></map>
+<area shape="rect" id="node2" href="ahrs_8h.html" title="Dispatcher to register actual AHRS implementations. " alt="" coords="5,184,148,211"/><area shape="rect" id="node4" href="ahrs__aligner_8h.html" title="Interface to align the AHRS via low&#45;passed measurements at startup. " alt="" coords="114,95,277,136"/><area shape="rect" id="node5" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="261,184,439,211"/><area shape="rect" id="node6" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="450,259,605,285"/><area shape="rect" id="node9" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="275,259,425,285"/></map>
 </div>
 </div>
 <p><a href="ahrs_8c_source.html">Go to the source code of this file.</a></p>
@@ -183,7 +184,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <div class="textblock"><p>references a registered AHRS implementation </p>
 
-<p>Definition at line <a class="el" href="ahrs_8c_source.html#l00050">50</a> of file <a class="el" href="ahrs_8c_source.html">ahrs.c</a>.</p>
+<p>Definition at line <a class="el" href="ahrs_8c_source.html#l00055">55</a> of file <a class="el" href="ahrs_8c_source.html">ahrs.c</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
@@ -211,7 +212,7 @@ enable</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ahrs_8c_source.html#l00040">40</a> of file <a class="el" href="ahrs_8c_source.html">ahrs.c</a>.</p>
+<p>Definition at line <a class="el" href="ahrs_8c_source.html#l00045">45</a> of file <a class="el" href="ahrs_8c_source.html">ahrs.c</a>.</p>
 
 </div>
 </div>
@@ -229,7 +230,7 @@ enable</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ahrs_8c_source.html#l00041">41</a> of file <a class="el" href="ahrs_8c_source.html">ahrs.c</a>.</p>
+<p>Definition at line <a class="el" href="ahrs_8c_source.html#l00046">46</a> of file <a class="el" href="ahrs_8c_source.html">ahrs.c</a>.</p>
 
 </div>
 </div>
@@ -245,9 +246,9 @@ enable</td>
 
 <p>maximum number of AHRS implementations that can register </p>
 
-<p>Definition at line <a class="el" href="ahrs_8c_source.html#l00046">46</a> of file <a class="el" href="ahrs_8c_source.html">ahrs.c</a>.</p>
+<p>Definition at line <a class="el" href="ahrs_8c_source.html#l00051">51</a> of file <a class="el" href="ahrs_8c_source.html">ahrs.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ahrs_8c_source.html#l00068">ahrs_init()</a>, <a class="el" href="ahrs_8c_source.html#l00057">ahrs_register_impl()</a>, and <a class="el" href="ahrs_8c_source.html#l00084">ahrs_switch()</a>.</p>
+<p>Referenced by <a class="el" href="ahrs_8c_source.html#l00073">ahrs_init()</a>, <a class="el" href="ahrs_8c_source.html#l00062">ahrs_register_impl()</a>, and <a class="el" href="ahrs_8c_source.html#l00093">ahrs_switch()</a>.</p>
 
 </div>
 </div>
@@ -265,9 +266,9 @@ enable</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ahrs_8c_source.html#l00042">42</a> of file <a class="el" href="ahrs_8c_source.html">ahrs.c</a>.</p>
+<p>Definition at line <a class="el" href="ahrs_8c_source.html#l00047">47</a> of file <a class="el" href="ahrs_8c_source.html">ahrs.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ahrs_8c_source.html#l00068">ahrs_init()</a>.</p>
+<p>Referenced by <a class="el" href="ahrs_8c_source.html#l00073">ahrs_init()</a>.</p>
 
 </div>
 </div>
@@ -289,11 +290,11 @@ enable</td>
 <p>AHRS initialization. </p>
 <p>Called at startup. Registers/initializes the default AHRS. </p>
 
-<p>Definition at line <a class="el" href="ahrs_8c_source.html#l00068">68</a> of file <a class="el" href="ahrs_8c_source.html">ahrs.c</a>.</p>
+<p>Definition at line <a class="el" href="ahrs_8c_source.html#l00073">73</a> of file <a class="el" href="ahrs_8c_source.html">ahrs.c</a>.</p>
 
-<p>References <a class="el" href="ahrs_8c_source.html#l00054">ahrs_impls</a>, <a class="el" href="ahrs_8c_source.html#l00046">AHRS_NB_IMPL</a>, <a class="el" href="ahrs_8c_source.html#l00084">ahrs_switch()</a>, <a class="el" href="ahrs_8c_source.html#l00051">AhrsImpl::enable</a>, <a class="el" href="ahrs__chimu_8h_source.html#l00040">PRIMARY_AHRS</a>, and <a class="el" href="ahrs_8c_source.html#l00042">RegisterAhrs</a>.</p>
+<p>References <a class="el" href="ahrs__aligner_8c_source.html#l00079">ahrs_aligner_init()</a>, <a class="el" href="ahrs_8c_source.html#l00059">ahrs_impls</a>, <a class="el" href="ahrs_8c_source.html#l00051">AHRS_NB_IMPL</a>, <a class="el" href="ahrs_8c_source.html#l00093">ahrs_switch()</a>, <a class="el" href="ahrs_8c_source.html#l00056">AhrsImpl::enable</a>, <a class="el" href="ahrs__chimu_8h_source.html#l00040">PRIMARY_AHRS</a>, and <a class="el" href="ahrs_8c_source.html#l00047">RegisterAhrs</a>.</p>
 
-<p>Referenced by <a class="el" href="main__ap_8c_source.html#l00174">init_ap()</a>, and <a class="el" href="demo__ahrs__actuators_8c_source.html#l00088">main_init()</a>.</p>
+<p>Referenced by <a class="el" href="fixedwing_2main__ap_8c_source.html#l00149">init_ap()</a>, and <a class="el" href="demo__ahrs__actuators_8c_source.html#l00087">main_init()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -302,7 +303,7 @@ enable</td>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs_8c_aa3721663c9df7c7af5613486a3566afb_cgraph.png" border="0" usemap="#ahrs_8c_aa3721663c9df7c7af5613486a3566afb_cgraph" alt=""/></div>
 <map name="ahrs_8c_aa3721663c9df7c7af5613486a3566afb_cgraph" id="ahrs_8c_aa3721663c9df7c7af5613486a3566afb_cgraph">
-<area shape="rect" id="node2" href="ahrs_8c.html#ad933997851f19f057be2d3c1d4b5b5d0" title="Switch to the output of another AHRS impl. " alt="" coords="129,5,225,32"/></map>
+<area shape="rect" id="node2" href="ahrs__aligner_8c.html#a321c9a82fcb75074c3041cbf6906e5ea" title="ahrs_aligner_init" alt="" coords="129,56,256,83"/><area shape="rect" id="node8" href="ahrs_8c.html#ad933997851f19f057be2d3c1d4b5b5d0" title="Switch to the output of another AHRS impl. " alt="" coords="145,107,241,133"/><area shape="rect" id="node3" href="ahrs__aligner_8c.html#a47e1ea35fdb43af72537c6c9f38b889d" title="gyro_cb" alt="" coords="367,5,439,32"/><area shape="rect" id="node6" href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function. " alt="" coords="304,56,501,83"/><area shape="rect" id="node7" href="ahrs__aligner_8c.html#abe64b23cba24d9f6d4efd4773d3c8d1e" title="send_aligner" alt="" coords="351,107,454,133"/><area shape="rect" id="node4" href="ahrs__aligner_8c.html#aa8c5b5a4ce38e0dd4e1234bad8adf92d" title="ahrs_aligner_run" alt="" coords="549,5,677,32"/><area shape="rect" id="node5" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup. " alt="" coords="725,5,869,32"/></map>
 </div>
 </p>
 
@@ -313,7 +314,7 @@ enable</td>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs_8c_aa3721663c9df7c7af5613486a3566afb_icgraph.png" border="0" usemap="#ahrs_8c_aa3721663c9df7c7af5613486a3566afb_icgraph" alt=""/></div>
 <map name="ahrs_8c_aa3721663c9df7c7af5613486a3566afb_icgraph" id="ahrs_8c_aa3721663c9df7c7af5613486a3566afb_icgraph">
-<area shape="rect" id="node2" href="main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="137,5,201,32"/><area shape="rect" id="node4" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="129,56,209,83"/><area shape="rect" id="node3" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="289,5,360,32"/><area shape="rect" id="node5" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="297,56,352,83"/><area shape="rect" id="node6" href="nps__autopilot__rotorcraft_8c.html#a3348493e992edd2442581c1d09446b4b" title="nps_autopilot_init" alt="" coords="257,107,392,133"/><area shape="rect" id="node7" href="nps__main_8c.html#af28efef10cede3b66825b2dc2e4e7705" title="nps_main_init" alt="" coords="440,107,551,133"/><area shape="rect" id="node8" href="nps__main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="599,107,653,133"/></map>
+<area shape="rect" id="node2" href="fixedwing_2main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="137,5,201,32"/><area shape="rect" id="node4" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="129,56,209,83"/><area shape="rect" id="node3" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="289,5,360,32"/><area shape="rect" id="node5" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="297,56,352,83"/><area shape="rect" id="node6" href="nps__autopilot__rotorcraft_8c.html#a3348493e992edd2442581c1d09446b4b" title="nps_autopilot_init" alt="" coords="257,107,392,133"/><area shape="rect" id="node7" href="nps__main__hitl_8c.html#a72ef549ee35deec8c017e83d9de38f66" title="nps_radio_and_autopilot_init" alt="" coords="440,107,644,133"/></map>
 </div>
 </p>
 
@@ -341,11 +342,11 @@ enable</td>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="ahrs_8c_source.html#l00057">57</a> of file <a class="el" href="ahrs_8c_source.html">ahrs.c</a>.</p>
+<p>Definition at line <a class="el" href="ahrs_8c_source.html#l00062">62</a> of file <a class="el" href="ahrs_8c_source.html">ahrs.c</a>.</p>
 
-<p>References <a class="el" href="ahrs_8c_source.html#l00054">ahrs_impls</a>, <a class="el" href="ahrs_8c_source.html#l00046">AHRS_NB_IMPL</a>, and <a class="el" href="ahrs_8c_source.html#l00051">AhrsImpl::enable</a>.</p>
+<p>References <a class="el" href="ahrs_8c_source.html#l00059">ahrs_impls</a>, <a class="el" href="ahrs_8c_source.html#l00051">AHRS_NB_IMPL</a>, and <a class="el" href="ahrs_8c_source.html#l00056">AhrsImpl::enable</a>.</p>
 
-<p>Referenced by <a class="el" href="ahrs__chimu__spi_8c_source.html#l00064">ahrs_chimu_register()</a>, <a class="el" href="ahrs__float__dcm__wrapper_8c_source.html#l00198">ahrs_dcm_register()</a>, <a class="el" href="ahrs__float__cmpl__wrapper_8c_source.html#l00283">ahrs_fc_register()</a>, <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00237">ahrs_float_invariant_register()</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00340">ahrs_gx3_register()</a>, <a class="el" href="ahrs__int__cmpl__euler__wrapper_8c_source.html#l00196">ahrs_ice_register()</a>, <a class="el" href="ahrs__int__cmpl__quat__wrapper_8c_source.html#l00271">ahrs_icq_register()</a>, <a class="el" href="ahrs__float__mlkf__wrapper_8c_source.html#l00222">ahrs_mlkf_register()</a>, and <a class="el" href="ahrs__sim_8c_source.html#l00064">ahrs_sim_register()</a>.</p>
+<p>Referenced by <a class="el" href="ahrs__chimu__spi_8c_source.html#l00064">ahrs_chimu_register()</a>, <a class="el" href="ahrs__float__dcm__wrapper_8c_source.html#l00198">ahrs_dcm_register()</a>, <a class="el" href="ahrs__float__cmpl__wrapper_8c_source.html#l00283">ahrs_fc_register()</a>, <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00237">ahrs_float_invariant_register()</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00340">ahrs_gx3_register()</a>, <a class="el" href="ahrs__int__cmpl__euler__wrapper_8c_source.html#l00196">ahrs_ice_register()</a>, <a class="el" href="ahrs__int__cmpl__quat__wrapper_8c_source.html#l00271">ahrs_icq_register()</a>, <a class="el" href="ahrs__float__mlkf__wrapper_8c_source.html#l00222">ahrs_mlkf_register()</a>, <a class="el" href="ahrs__sim_8c_source.html#l00064">ahrs_sim_register()</a>, and <a class="el" href="ahrs__vectornav__wrapper_8c_source.html#l00066">ahrs_vectornav_register()</a>.</p>
 
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -354,7 +355,7 @@ enable</td>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs_8c_a3d1e9af59a49b4a13e84adbb37d0efec_icgraph.png" border="0" usemap="#ahrs_8c_a3d1e9af59a49b4a13e84adbb37d0efec_icgraph" alt=""/></div>
 <map name="ahrs_8c_a3d1e9af59a49b4a13e84adbb37d0efec_icgraph" id="ahrs_8c_a3d1e9af59a49b4a13e84adbb37d0efec_icgraph">
-<area shape="rect" id="node2" href="ahrs__chimu__spi_8c.html#a276d0fbae93455ee8df03b838757a6e7" title="ahrs_chimu_register" alt="" coords="193,5,345,32"/><area shape="rect" id="node3" href="ahrs__float__dcm__wrapper_8h.html#a18235ffdb70868861d5424fe8c4bafa5" title="ahrs_dcm_register" alt="" coords="199,56,340,83"/><area shape="rect" id="node4" href="ahrs__float__cmpl__wrapper_8h.html#aa47cd2e2f95362dd732bac1f275344e0" title="ahrs_fc_register" alt="" coords="207,107,331,133"/><area shape="rect" id="node5" href="ahrs__float__invariant__wrapper_8h.html#af929b6f9cb8695819d29bdacca1f24f0" title="ahrs_float_invariant\l_register" alt="" coords="196,158,343,199"/><area shape="rect" id="node6" href="ahrs__gx3_8h.html#ab455d990b4555c8eadb7413685cc96e5" title="ahrs_gx3_register" alt="" coords="201,224,337,251"/><area shape="rect" id="node7" href="ahrs__int__cmpl__euler__wrapper_8h.html#a9381a05bdc4709a1da0c7eae9b5d9fbc" title="ahrs_ice_register" alt="" coords="204,275,335,301"/><area shape="rect" id="node8" href="ahrs__int__cmpl__quat__wrapper_8h.html#af71a2cd8d6fabc9373e99e2aeddbbb89" title="ahrs_icq_register" alt="" coords="204,325,335,352"/><area shape="rect" id="node9" href="ahrs__float__mlkf__wrapper_8h.html#adf9165ad7440f11e3dae35391f5844d6" title="ahrs_mlkf_register" alt="" coords="199,376,339,403"/><area shape="rect" id="node10" href="ahrs__sim_8h.html#abe985eebaeb618b0da18f4964f52e758" title="ahrs_sim_register" alt="" coords="201,427,337,453"/></map>
+<area shape="rect" id="node2" href="ahrs__chimu__spi_8c.html#a276d0fbae93455ee8df03b838757a6e7" title="ahrs_chimu_register" alt="" coords="205,5,357,32"/><area shape="rect" id="node3" href="ahrs__float__dcm__wrapper_8h.html#a18235ffdb70868861d5424fe8c4bafa5" title="ahrs_dcm_register" alt="" coords="211,56,352,83"/><area shape="rect" id="node4" href="ahrs__float__cmpl__wrapper_8h.html#aa47cd2e2f95362dd732bac1f275344e0" title="ahrs_fc_register" alt="" coords="219,107,343,133"/><area shape="rect" id="node5" href="ahrs__float__invariant__wrapper_8h.html#af929b6f9cb8695819d29bdacca1f24f0" title="ahrs_float_invariant\l_register" alt="" coords="208,158,355,199"/><area shape="rect" id="node6" href="ahrs__gx3_8h.html#ab455d990b4555c8eadb7413685cc96e5" title="ahrs_gx3_register" alt="" coords="213,224,349,251"/><area shape="rect" id="node7" href="ahrs__int__cmpl__euler__wrapper_8h.html#a9381a05bdc4709a1da0c7eae9b5d9fbc" title="ahrs_ice_register" alt="" coords="216,275,347,301"/><area shape="rect" id="node8" href="ahrs__int__cmpl__quat__wrapper_8h.html#af71a2cd8d6fabc9373e99e2aeddbbb89" title="ahrs_icq_register" alt="" coords="216,325,347,352"/><area shape="rect" id="node9" href="ahrs__float__mlkf__wrapper_8h.html#adf9165ad7440f11e3dae35391f5844d6" title="ahrs_mlkf_register" alt="" coords="211,376,351,403"/><area shape="rect" id="node10" href="ahrs__sim_8h.html#abe985eebaeb618b0da18f4964f52e758" title="ahrs_sim_register" alt="" coords="213,427,349,453"/><area shape="rect" id="node11" href="ahrs__vectornav__wrapper_8h.html#a67821e4f24335d5924bdb33a11c661e0" title="ahrs_vectornav_register" alt="" coords="193,477,369,504"/></map>
 </div>
 </p>
 
@@ -382,11 +383,11 @@ enable</td>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="ahrs_8c_source.html#l00084">84</a> of file <a class="el" href="ahrs_8c_source.html">ahrs.c</a>.</p>
+<p>Definition at line <a class="el" href="ahrs_8c_source.html#l00093">93</a> of file <a class="el" href="ahrs_8c_source.html">ahrs.c</a>.</p>
 
-<p>References <a class="el" href="ahrs_8c_source.html#l00054">ahrs_impls</a>, <a class="el" href="ahrs_8c_source.html#l00046">AHRS_NB_IMPL</a>, <a class="el" href="ahrs_8c_source.html#l00055">ahrs_output_idx</a>, <a class="el" href="ahrs_8c_source.html#l00051">AhrsImpl::enable</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="nps__radio__control__spektrum_8c_source.html#l00102">idx</a>, and <a class="el" href="std_8h_source.html#l00004">TRUE</a>.</p>
+<p>References <a class="el" href="ahrs_8c_source.html#l00059">ahrs_impls</a>, <a class="el" href="ahrs_8c_source.html#l00051">AHRS_NB_IMPL</a>, <a class="el" href="ahrs_8c_source.html#l00060">ahrs_output_idx</a>, <a class="el" href="ahrs_8c_source.html#l00056">AhrsImpl::enable</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="nps__radio__control__spektrum_8c_source.html#l00105">idx</a>, and <a class="el" href="std_8h_source.html#l00004">TRUE</a>.</p>
 
-<p>Referenced by <a class="el" href="ahrs_8c_source.html#l00068">ahrs_init()</a>.</p>
+<p>Referenced by <a class="el" href="ahrs_8c_source.html#l00073">ahrs_init()</a>.</p>
 
 <p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -395,7 +396,7 @@ enable</td>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs_8c_ad933997851f19f057be2d3c1d4b5b5d0_icgraph.png" border="0" usemap="#ahrs_8c_ad933997851f19f057be2d3c1d4b5b5d0_icgraph" alt=""/></div>
 <map name="ahrs_8c_ad933997851f19f057be2d3c1d4b5b5d0_icgraph" id="ahrs_8c_ad933997851f19f057be2d3c1d4b5b5d0_icgraph">
-<area shape="rect" id="node2" href="ahrs_8h.html#aa3721663c9df7c7af5613486a3566afb" title="AHRS initialization. " alt="" coords="149,81,225,108"/><area shape="rect" id="node3" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="273,56,353,83"/><area shape="rect" id="node8" href="main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="281,107,345,133"/><area shape="rect" id="node4" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="441,5,496,32"/><area shape="rect" id="node5" href="nps__autopilot__rotorcraft_8c.html#a3348493e992edd2442581c1d09446b4b" title="nps_autopilot_init" alt="" coords="401,56,536,83"/><area shape="rect" id="node6" href="nps__main_8c.html#af28efef10cede3b66825b2dc2e4e7705" title="nps_main_init" alt="" coords="584,56,695,83"/><area shape="rect" id="node7" href="nps__main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="743,56,797,83"/><area shape="rect" id="node9" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="433,107,504,133"/></map>
+<area shape="rect" id="node2" href="ahrs_8h.html#aa3721663c9df7c7af5613486a3566afb" title="AHRS initialization. " alt="" coords="149,81,225,108"/><area shape="rect" id="node3" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="273,56,353,83"/><area shape="rect" id="node7" href="fixedwing_2main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="281,107,345,133"/><area shape="rect" id="node4" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="441,5,496,32"/><area shape="rect" id="node5" href="nps__autopilot__rotorcraft_8c.html#a3348493e992edd2442581c1d09446b4b" title="nps_autopilot_init" alt="" coords="401,56,536,83"/><area shape="rect" id="node6" href="nps__main__hitl_8c.html#a72ef549ee35deec8c017e83d9de38f66" title="nps_radio_and_autopilot_init" alt="" coords="584,56,788,83"/><area shape="rect" id="node8" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="433,107,504,133"/></map>
 </div>
 </p>
 
@@ -412,9 +413,9 @@ enable</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ahrs_8c_source.html#l00054">54</a> of file <a class="el" href="ahrs_8c_source.html">ahrs.c</a>.</p>
+<p>Definition at line <a class="el" href="ahrs_8c_source.html#l00059">59</a> of file <a class="el" href="ahrs_8c_source.html">ahrs.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ahrs_8c_source.html#l00068">ahrs_init()</a>, <a class="el" href="ahrs_8c_source.html#l00057">ahrs_register_impl()</a>, and <a class="el" href="ahrs_8c_source.html#l00084">ahrs_switch()</a>.</p>
+<p>Referenced by <a class="el" href="ahrs_8c_source.html#l00073">ahrs_init()</a>, <a class="el" href="ahrs_8c_source.html#l00062">ahrs_register_impl()</a>, and <a class="el" href="ahrs_8c_source.html#l00093">ahrs_switch()</a>.</p>
 
 </div>
 </div>
@@ -428,9 +429,9 @@ enable</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ahrs_8c_source.html#l00055">55</a> of file <a class="el" href="ahrs_8c_source.html">ahrs.c</a>.</p>
+<p>Definition at line <a class="el" href="ahrs_8c_source.html#l00060">60</a> of file <a class="el" href="ahrs_8c_source.html">ahrs.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ahrs_8c_source.html#l00084">ahrs_switch()</a>.</p>
+<p>Referenced by <a class="el" href="ahrs_8c_source.html#l00093">ahrs_switch()</a>.</p>
 
 </div>
 </div>
@@ -440,7 +441,7 @@ enable</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="ahrs_8c.html">ahrs.c</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:02:09 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:02:37 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

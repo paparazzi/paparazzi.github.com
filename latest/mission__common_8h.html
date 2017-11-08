@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -191,10 +191,14 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a64f46ea1c53b7a5677d078814b7b4752"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add225f937fa97e4f76900b7f5e73872e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mission__common_8h.html#add225f937fa97e4f76900b7f5e73872e">MissionInsertMode</a> { <a class="el" href="mission__common_8h.html#add225f937fa97e4f76900b7f5e73872ea71f30510b076569dd2830e348fb77a13">Append</a>, 
+<tr class="memitem:add225f937fa97e4f76900b7f5e73872e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mission__common_8h.html#add225f937fa97e4f76900b7f5e73872e">MissionInsertMode</a> { <br />
+&#160;&#160;<a class="el" href="mission__common_8h.html#add225f937fa97e4f76900b7f5e73872ea71f30510b076569dd2830e348fb77a13">Append</a>, 
 <a class="el" href="mission__common_8h.html#add225f937fa97e4f76900b7f5e73872eaff00766678e17c5de13a40452c27d802">Prepend</a>, 
 <a class="el" href="mission__common_8h.html#add225f937fa97e4f76900b7f5e73872ea1fd0704fd22b0ea1388f7d19f84f8161">ReplaceCurrent</a>, 
-<a class="el" href="mission__common_8h.html#add225f937fa97e4f76900b7f5e73872ead55a1685be3004600647f9607d70aa70">ReplaceAll</a>
+<a class="el" href="mission__common_8h.html#add225f937fa97e4f76900b7f5e73872ead55a1685be3004600647f9607d70aa70">ReplaceAll</a>, 
+<br />
+&#160;&#160;<a class="el" href="mission__common_8h.html#add225f937fa97e4f76900b7f5e73872eaa7bc3623595171b0c3f13d83b9af532d">ReplaceNexts</a>
+<br />
  }</td></tr>
 <tr class="separator:add225f937fa97e4f76900b7f5e73872e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -270,11 +274,11 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p>Definition at line <a class="el" href="mission__common_8h_source.html#l00054">54</a> of file <a class="el" href="mission__common_8h_source.html">mission_common.h</a>.</p>
+<p>Definition at line <a class="el" href="mission__common_8h_source.html#l00055">55</a> of file <a class="el" href="mission__common_8h_source.html">mission_common.h</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a2f32a38a71ceac64a93397bd2f7704e0"></a>union <a class="el" href="mission__common_8h.html#union__mission__wp_8wp">_mission_wp</a></td>
+<a class="anchor" id="ae32d4778f0a66857d84fcddf40fbca9d"></a>union <a class="el" href="mission__common_8h.html#union__mission__wp_8wp">_mission_wp</a></td>
 <td class="fieldname">
 wp</td>
 <td class="fielddoc">
@@ -293,11 +297,11 @@ wp</td>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p>Definition at line <a class="el" href="mission__common_8h_source.html#l00061">61</a> of file <a class="el" href="mission__common_8h_source.html">mission_common.h</a>.</p>
+<p>Definition at line <a class="el" href="mission__common_8h_source.html#l00062">62</a> of file <a class="el" href="mission__common_8h_source.html">mission_common.h</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a69874cce86488b3829aab3b898e8d336"></a>union <a class="el" href="mission__common_8h.html#union__mission__circle_8center">_mission_circle</a></td>
+<a class="anchor" id="ac3842228fbc0e47bdbd166b7ae87c05f"></a>union <a class="el" href="mission__common_8h.html#union__mission__circle_8center">_mission_circle</a></td>
 <td class="fieldname">
 center</td>
 <td class="fielddoc">
@@ -322,17 +326,17 @@ radius</td>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p>Definition at line <a class="el" href="mission__common_8h_source.html#l00070">70</a> of file <a class="el" href="mission__common_8h_source.html">mission_common.h</a>.</p>
+<p>Definition at line <a class="el" href="mission__common_8h_source.html#l00071">71</a> of file <a class="el" href="mission__common_8h_source.html">mission_common.h</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a289d8d1cb2d21af852410b81757272ec"></a>union <a class="el" href="mission__common_8h.html#union__mission__segment_8from">_mission_segment</a></td>
+<a class="anchor" id="ad78889dcc9108232f7bcb31278e83615"></a>union <a class="el" href="mission__common_8h.html#union__mission__segment_8from">_mission_segment</a></td>
 <td class="fieldname">
 from</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a2a076031328cb9c50bee48cfe6eb473f"></a>union <a class="el" href="mission__common_8h.html#union__mission__segment_8to">_mission_segment</a></td>
+<a class="anchor" id="adbdcb7731edcc16faff5ca23741bcead"></a>union <a class="el" href="mission__common_8h.html#union__mission__segment_8to">_mission_segment</a></td>
 <td class="fieldname">
 to</td>
 <td class="fielddoc">
@@ -351,7 +355,7 @@ to</td>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p>Definition at line <a class="el" href="mission__common_8h_source.html#l00083">83</a> of file <a class="el" href="mission__common_8h_source.html">mission_common.h</a>.</p>
+<p>Definition at line <a class="el" href="mission__common_8h_source.html#l00084">84</a> of file <a class="el" href="mission__common_8h_source.html">mission_common.h</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
@@ -361,7 +365,7 @@ nb</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="ad6950d5f19dc91a0fa2ce240ddc639bd"></a>union <a class="el" href="mission__common_8h.html#union__mission__path_8path">_mission_path</a></td>
+<a class="anchor" id="a5cd11591589d3e29a2e274aa383e5432"></a>union <a class="el" href="mission__common_8h.html#union__mission__path_8path">_mission_path</a></td>
 <td class="fieldname">
 path</td>
 <td class="fielddoc">
@@ -386,7 +390,7 @@ path_idx</td>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p>Definition at line <a class="el" href="mission__common_8h_source.html#l00093">93</a> of file <a class="el" href="mission__common_8h_source.html">mission_common.h</a>.</p>
+<p>Definition at line <a class="el" href="mission__common_8h_source.html#l00094">94</a> of file <a class="el" href="mission__common_8h_source.html">mission_common.h</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
@@ -396,11 +400,17 @@ duration</td>
 <td class="fielddoc">
 time to spend in the element (&lt;= 0 to disable) </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a0cdea7320c5843bc26c45ef97e2292bb"></a>union <a class="el" href="mission__common_8h.html#union__mission__element_8element">_mission_element</a></td>
+<a class="anchor" id="a2e6db7b334f7423430ad07cda1201dd9"></a>union <a class="el" href="mission__common_8h.html#union__mission__element_8element">_mission_element</a></td>
 <td class="fieldname">
 element</td>
 <td class="fielddoc">
 </td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a9b7e63b95f8d64933fb8db3cfa26934a"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
+<td class="fieldname">
+index</td>
+<td class="fielddoc">
+index of mission element </td></tr>
 <tr><td class="fieldtype">
 <a class="anchor" id="a9865f3bf50ac1182fbe6998e37799cb8"></a>enum <a class="el" href="mission__common_8h.html#a64f46ea1c53b7a5677d078814b7b4752">MissionType</a></td>
 <td class="fieldname">
@@ -421,7 +431,7 @@ type</td>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p>Definition at line <a class="el" href="mission__common_8h_source.html#l00112">112</a> of file <a class="el" href="mission__common_8h_source.html">mission_common.h</a>.</p>
+<p>Definition at line <a class="el" href="mission__common_8h_source.html#l00114">114</a> of file <a class="el" href="mission__common_8h_source.html">mission_common.h</a>.</p>
 </div><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Collaboration diagram for _mission:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -471,7 +481,7 @@ inserstion index </td></tr>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p>Definition at line <a class="el" href="mission__common_8h_source.html#l00055">55</a> of file <a class="el" href="mission__common_8h_source.html">mission_common.h</a>.</p>
+<p>Definition at line <a class="el" href="mission__common_8h_source.html#l00056">56</a> of file <a class="el" href="mission__common_8h_source.html">mission_common.h</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
@@ -500,7 +510,7 @@ wp_i</td>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p>Definition at line <a class="el" href="mission__common_8h_source.html#l00062">62</a> of file <a class="el" href="mission__common_8h_source.html">mission_common.h</a>.</p>
+<p>Definition at line <a class="el" href="mission__common_8h_source.html#l00063">63</a> of file <a class="el" href="mission__common_8h_source.html">mission_common.h</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
@@ -529,7 +539,7 @@ center_i</td>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p>Definition at line <a class="el" href="mission__common_8h_source.html#l00071">71</a> of file <a class="el" href="mission__common_8h_source.html">mission_common.h</a>.</p>
+<p>Definition at line <a class="el" href="mission__common_8h_source.html#l00072">72</a> of file <a class="el" href="mission__common_8h_source.html">mission_common.h</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
@@ -558,7 +568,7 @@ from_i</td>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p>Definition at line <a class="el" href="mission__common_8h_source.html#l00076">76</a> of file <a class="el" href="mission__common_8h_source.html">mission_common.h</a>.</p>
+<p>Definition at line <a class="el" href="mission__common_8h_source.html#l00077">77</a> of file <a class="el" href="mission__common_8h_source.html">mission_common.h</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
@@ -587,7 +597,7 @@ to_i</td>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p>Definition at line <a class="el" href="mission__common_8h_source.html#l00084">84</a> of file <a class="el" href="mission__common_8h_source.html">mission_common.h</a>.</p>
+<p>Definition at line <a class="el" href="mission__common_8h_source.html#l00085">85</a> of file <a class="el" href="mission__common_8h_source.html">mission_common.h</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
@@ -616,7 +626,7 @@ path_i[<a class="el" href="mission__common_8h.html#aab82cfe6539e97d31e0120e16c18
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p>Definition at line <a class="el" href="mission__common_8h_source.html#l00095">95</a> of file <a class="el" href="mission__common_8h_source.html">mission_common.h</a>.</p>
+<p>Definition at line <a class="el" href="mission__common_8h_source.html#l00096">96</a> of file <a class="el" href="mission__common_8h_source.html">mission_common.h</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
@@ -660,9 +670,9 @@ mission_wp</td>
 
 <p>Max number of elements in the tasks' list can be redefined. </p>
 
-<p>Definition at line <a class="el" href="mission__common_8h_source.html#l00109">109</a> of file <a class="el" href="mission__common_8h_source.html">mission_common.h</a>.</p>
+<p>Definition at line <a class="el" href="mission__common_8h_source.html#l00111">111</a> of file <a class="el" href="mission__common_8h_source.html">mission_common.h</a>.</p>
 
-<p>Referenced by <a class="el" href="mission__common_8c_source.html#l00047">mission_insert()</a>, <a class="el" href="mission__common_8c_source.html#l00312">mission_parse_GOTO_MISSION()</a>, <a class="el" href="mission__common_8c_source.html#l00324">mission_parse_NEXT_MISSION()</a>, <a class="el" href="mission__fw__nav_8c_source.html#l00142">mission_run()</a>, and <a class="el" href="mission__common_8c_source.html#l00101">mission_status_report()</a>.</p>
+<p>Referenced by <a class="el" href="mission__common_8c_source.html#l00046">mission_insert()</a>, <a class="el" href="mission__common_8c_source.html#l00323">mission_parse_GOTO_MISSION()</a>, <a class="el" href="mission__common_8c_source.html#l00335">mission_parse_NEXT_MISSION()</a>, <a class="el" href="mission__fw__nav_8c_source.html#l00142">mission_run()</a>, and <a class="el" href="mission__common_8c_source.html#l00104">mission_status_report()</a>.</p>
 
 </div>
 </div>
@@ -676,9 +686,9 @@ mission_wp</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mission__common_8h_source.html#l00082">82</a> of file <a class="el" href="mission__common_8h_source.html">mission_common.h</a>.</p>
+<p>Definition at line <a class="el" href="mission__common_8h_source.html#l00083">83</a> of file <a class="el" href="mission__common_8h_source.html">mission_common.h</a>.</p>
 
-<p>Referenced by <a class="el" href="mission__common_8c_source.html#l00243">mission_parse_PATH()</a>, and <a class="el" href="mission__common_8c_source.html#l00274">mission_parse_PATH_LLA()</a>.</p>
+<p>Referenced by <a class="el" href="mission__common_8c_source.html#l00252">mission_parse_PATH()</a>, and <a class="el" href="mission__common_8c_source.html#l00284">mission_parse_PATH_LLA()</a>.</p>
 
 </div>
 </div>
@@ -704,6 +714,9 @@ mission_wp</td>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="add225f937fa97e4f76900b7f5e73872ead55a1685be3004600647f9607d70aa70"></a>ReplaceAll&#160;</td><td class="fielddoc">
 <p>remove all elements and add the new one </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="add225f937fa97e4f76900b7f5e73872eaa7bc3623595171b0c3f13d83b9af532d"></a>ReplaceNexts&#160;</td><td class="fielddoc">
+<p>replace the next element and remove all the others </p>
 </td></tr>
 </table>
 
@@ -765,11 +778,11 @@ mission_wp</td>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>return TRUE if conversion is succesful, FALSE otherwise </dd></dl>
 
-<p>Definition at line <a class="el" href="mission__common_8c_source.html#l00087">87</a> of file <a class="el" href="mission__common_8c_source.html">mission_common.c</a>.</p>
+<p>Definition at line <a class="el" href="mission__common_8c_source.html#l00090">90</a> of file <a class="el" href="mission__common_8c_source.html">mission_common.c</a>.</p>
 
-<p>References <a class="el" href="mission__common_8h.html#a0cdea7320c5843bc26c45ef97e2292bb">_mission_element::element</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00194">ENU_BFP_OF_REAL</a>, <a class="el" href="mission__common_8h_source.html#l00039">MissionCircle</a>, <a class="el" href="mission__common_8h_source.html#l00041">MissionPath</a>, <a class="el" href="mission__common_8h_source.html#l00040">MissionSegment</a>, <a class="el" href="mission__common_8h_source.html#l00038">MissionWP</a>, and <a class="el" href="mission__common_8h_source.html#l00094">_mission_element::type</a>.</p>
+<p>References <a class="el" href="mission__common_8h.html#a2e6db7b334f7423430ad07cda1201dd9">_mission_element::element</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00194">ENU_BFP_OF_REAL</a>, <a class="el" href="mission__common_8h_source.html#l00039">MissionCircle</a>, <a class="el" href="mission__common_8h_source.html#l00041">MissionPath</a>, <a class="el" href="mission__common_8h_source.html#l00040">MissionSegment</a>, <a class="el" href="mission__common_8h_source.html#l00038">MissionWP</a>, and <a class="el" href="mission__common_8h_source.html#l00095">_mission_element::type</a>.</p>
 
-<p>Referenced by <a class="el" href="mission__common_8c_source.html#l00047">mission_insert()</a>.</p>
+<p>Referenced by <a class="el" href="mission__common_8c_source.html#l00046">mission_insert()</a>.</p>
 
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -801,9 +814,9 @@ mission_wp</td>
 <p>Get current mission element. </p>
 <dl class="section return"><dt>Returns</dt><dd>return a pointer to the next mission element or NULL if no more elements </dd></dl>
 
-<p>Definition at line <a class="el" href="mission__common_8c_source.html#l00091">91</a> of file <a class="el" href="mission__common_8c_source.html">mission_common.c</a>.</p>
+<p>Definition at line <a class="el" href="mission__common_8c_source.html#l00094">94</a> of file <a class="el" href="mission__common_8c_source.html">mission_common.c</a>.</p>
 
-<p>References <a class="el" href="mission__common_8h_source.html#l00116">_mission::current_idx</a>, <a class="el" href="mission__common_8h_source.html#l00113">_mission::elements</a>, <a class="el" href="mission__common_8h_source.html#l00115">_mission::insert_idx</a>, and <a class="el" href="mission__common_8c_source.html#l00036">mission</a>.</p>
+<p>References <a class="el" href="mission__common_8h_source.html#l00118">_mission::current_idx</a>, <a class="el" href="mission__common_8h_source.html#l00115">_mission::elements</a>, <a class="el" href="mission__common_8h_source.html#l00117">_mission::insert_idx</a>, and <a class="el" href="mission__common_8c_source.html#l00035">mission</a>.</p>
 
 <p>Referenced by <a class="el" href="mission__fw__nav_8c_source.html#l00142">mission_run()</a>.</p>
 
@@ -836,9 +849,9 @@ mission_wp</td>
 
 <p>Init mission structure. </p>
 
-<p>Definition at line <a class="el" href="mission__common_8c_source.html#l00038">38</a> of file <a class="el" href="mission__common_8c_source.html">mission_common.c</a>.</p>
+<p>Definition at line <a class="el" href="mission__common_8c_source.html#l00037">37</a> of file <a class="el" href="mission__common_8c_source.html">mission_common.c</a>.</p>
 
-<p>References <a class="el" href="mission__common_8h_source.html#l00116">_mission::current_idx</a>, <a class="el" href="mission__common_8h_source.html#l00114">_mission::element_time</a>, <a class="el" href="mission__common_8h_source.html#l00115">_mission::insert_idx</a>, and <a class="el" href="mission__common_8c_source.html#l00036">mission</a>.</p>
+<p>References <a class="el" href="mission__common_8h_source.html#l00118">_mission::current_idx</a>, <a class="el" href="mission__common_8h_source.html#l00116">_mission::element_time</a>, <a class="el" href="mission__common_8h_source.html#l00117">_mission::insert_idx</a>, and <a class="el" href="mission__common_8c_source.html#l00035">mission</a>.</p>
 
 </div>
 </div>
@@ -876,11 +889,11 @@ mission_wp</td>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>return TRUE if insertion is succesful, FALSE otherwise </dd></dl>
 
-<p>Definition at line <a class="el" href="mission__common_8c_source.html#l00047">47</a> of file <a class="el" href="mission__common_8c_source.html">mission_common.c</a>.</p>
+<p>Definition at line <a class="el" href="mission__common_8c_source.html#l00046">46</a> of file <a class="el" href="mission__common_8c_source.html">mission_common.c</a>.</p>
 
-<p>References <a class="el" href="mission__common_8h_source.html#l00048">Append</a>, <a class="el" href="mission__common_8h_source.html#l00116">_mission::current_idx</a>, <a class="el" href="mission__common_8h_source.html#l00113">_mission::elements</a>, <a class="el" href="mission__common_8h_source.html#l00115">_mission::insert_idx</a>, <a class="el" href="mission__common_8c_source.html#l00036">mission</a>, <a class="el" href="mission__common_8c_source.html#l00087">mission_element_convert()</a>, <a class="el" href="mission__common_8h_source.html#l00109">MISSION_ELEMENT_NB</a>, <a class="el" href="mission__common_8h_source.html#l00049">Prepend</a>, <a class="el" href="mission__common_8h_source.html#l00051">ReplaceAll</a>, and <a class="el" href="mission__common_8h_source.html#l00050">ReplaceCurrent</a>.</p>
+<p>References <a class="el" href="mission__common_8h_source.html#l00048">Append</a>, <a class="el" href="mission__common_8h_source.html#l00118">_mission::current_idx</a>, <a class="el" href="mission__common_8h_source.html#l00115">_mission::elements</a>, <a class="el" href="mission__common_8h_source.html#l00117">_mission::insert_idx</a>, <a class="el" href="mission__common_8c_source.html#l00035">mission</a>, <a class="el" href="mission__common_8c_source.html#l00090">mission_element_convert()</a>, <a class="el" href="mission__common_8h_source.html#l00111">MISSION_ELEMENT_NB</a>, <a class="el" href="mission__common_8h_source.html#l00049">Prepend</a>, <a class="el" href="mission__common_8h_source.html#l00051">ReplaceAll</a>, <a class="el" href="mission__common_8h_source.html#l00050">ReplaceCurrent</a>, and <a class="el" href="mission__common_8h_source.html#l00052">ReplaceNexts</a>.</p>
 
-<p>Referenced by <a class="el" href="mission__common_8c_source.html#l00162">mission_parse_CIRCLE()</a>, <a class="el" href="mission__common_8c_source.html#l00179">mission_parse_CIRCLE_LLA()</a>, <a class="el" href="mission__common_8c_source.html#l00126">mission_parse_GOTO_WP()</a>, <a class="el" href="mission__common_8c_source.html#l00142">mission_parse_GOTO_WP_LLA()</a>, <a class="el" href="mission__common_8c_source.html#l00243">mission_parse_PATH()</a>, <a class="el" href="mission__common_8c_source.html#l00274">mission_parse_PATH_LLA()</a>, <a class="el" href="mission__common_8c_source.html#l00200">mission_parse_SEGMENT()</a>, and <a class="el" href="mission__common_8c_source.html#l00219">mission_parse_SEGMENT_LLA()</a>.</p>
+<p>Referenced by <a class="el" href="mission__common_8c_source.html#l00167">mission_parse_CIRCLE()</a>, <a class="el" href="mission__common_8c_source.html#l00185">mission_parse_CIRCLE_LLA()</a>, <a class="el" href="mission__common_8c_source.html#l00129">mission_parse_GOTO_WP()</a>, <a class="el" href="mission__common_8c_source.html#l00146">mission_parse_GOTO_WP_LLA()</a>, <a class="el" href="mission__common_8c_source.html#l00252">mission_parse_PATH()</a>, <a class="el" href="mission__common_8c_source.html#l00284">mission_parse_PATH_LLA()</a>, <a class="el" href="mission__common_8c_source.html#l00207">mission_parse_SEGMENT()</a>, and <a class="el" href="mission__common_8c_source.html#l00227">mission_parse_SEGMENT_LLA()</a>.</p>
 
 <p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -920,9 +933,9 @@ mission_wp</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mission__common_8c_source.html#l00162">162</a> of file <a class="el" href="mission__common_8c_source.html">mission_common.c</a>.</p>
+<p>Definition at line <a class="el" href="mission__common_8c_source.html#l00167">167</a> of file <a class="el" href="mission__common_8c_source.html">mission_common.c</a>.</p>
 
-<p>References <a class="el" href="main__demo5_8c_source.html#l00064">dl_buffer</a>, <a class="el" href="mission__common_8h_source.html#l00102">_mission_element::duration</a>, <a class="el" href="mission__common_8h.html#a0cdea7320c5843bc26c45ef97e2292bb">_mission_element::element</a>, <a class="el" href="mission__common_8c_source.html#l00047">mission_insert()</a>, <a class="el" href="mission__common_8h_source.html#l00039">MissionCircle</a>, and <a class="el" href="mission__common_8h_source.html#l00094">_mission_element::type</a>.</p>
+<p>References <a class="el" href="main__demo5_8c_source.html#l00064">dl_buffer</a>, <a class="el" href="mission__common_8h_source.html#l00103">_mission_element::duration</a>, <a class="el" href="mission__common_8h.html#a2e6db7b334f7423430ad07cda1201dd9">_mission_element::element</a>, <a class="el" href="mission__common_8h_source.html#l00104">_mission_element::index</a>, <a class="el" href="mission__common_8c_source.html#l00046">mission_insert()</a>, <a class="el" href="mission__common_8h_source.html#l00039">MissionCircle</a>, and <a class="el" href="mission__common_8h_source.html#l00095">_mission_element::type</a>.</p>
 
 <p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -951,9 +964,9 @@ mission_wp</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mission__common_8c_source.html#l00179">179</a> of file <a class="el" href="mission__common_8c_source.html">mission_common.c</a>.</p>
+<p>Definition at line <a class="el" href="mission__common_8c_source.html#l00185">185</a> of file <a class="el" href="mission__common_8c_source.html">mission_common.c</a>.</p>
 
-<p>References <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="main__demo5_8c_source.html#l00064">dl_buffer</a>, <a class="el" href="mission__common_8h_source.html#l00102">_mission_element::duration</a>, <a class="el" href="mission__common_8h.html#a0cdea7320c5843bc26c45ef97e2292bb">_mission_element::element</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00060">LlaCoor_i::lat</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00061">LlaCoor_i::lon</a>, <a class="el" href="mission__common_8c_source.html#l00047">mission_insert()</a>, <a class="el" href="mission__fw__nav_8c_source.html#l00038">mission_point_of_lla()</a>, <a class="el" href="mission__common_8h_source.html#l00039">MissionCircle</a>, and <a class="el" href="mission__common_8h_source.html#l00094">_mission_element::type</a>.</p>
+<p>References <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="main__demo5_8c_source.html#l00064">dl_buffer</a>, <a class="el" href="mission__common_8h_source.html#l00103">_mission_element::duration</a>, <a class="el" href="mission__common_8h.html#a2e6db7b334f7423430ad07cda1201dd9">_mission_element::element</a>, <a class="el" href="mission__common_8h_source.html#l00104">_mission_element::index</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00060">LlaCoor_i::lat</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00061">LlaCoor_i::lon</a>, <a class="el" href="mission__common_8c_source.html#l00046">mission_insert()</a>, <a class="el" href="mission__fw__nav_8c_source.html#l00038">mission_point_of_lla()</a>, <a class="el" href="mission__common_8h_source.html#l00039">MissionCircle</a>, and <a class="el" href="mission__common_8h_source.html#l00095">_mission_element::type</a>.</p>
 
 <p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -982,9 +995,9 @@ mission_wp</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mission__common_8c_source.html#l00335">335</a> of file <a class="el" href="mission__common_8c_source.html">mission_common.c</a>.</p>
+<p>Definition at line <a class="el" href="mission__common_8c_source.html#l00346">346</a> of file <a class="el" href="mission__common_8c_source.html">mission_common.c</a>.</p>
 
-<p>References <a class="el" href="mission__common_8h_source.html#l00116">_mission::current_idx</a>, <a class="el" href="main__demo5_8c_source.html#l00064">dl_buffer</a>, <a class="el" href="mission__common_8h_source.html#l00115">_mission::insert_idx</a>, and <a class="el" href="mission__common_8c_source.html#l00036">mission</a>.</p>
+<p>References <a class="el" href="mission__common_8h_source.html#l00118">_mission::current_idx</a>, <a class="el" href="main__demo5_8c_source.html#l00064">dl_buffer</a>, <a class="el" href="mission__common_8h_source.html#l00117">_mission::insert_idx</a>, and <a class="el" href="mission__common_8c_source.html#l00035">mission</a>.</p>
 
 </div>
 </div>
@@ -1002,9 +1015,9 @@ mission_wp</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mission__common_8c_source.html#l00312">312</a> of file <a class="el" href="mission__common_8c_source.html">mission_common.c</a>.</p>
+<p>Definition at line <a class="el" href="mission__common_8c_source.html#l00323">323</a> of file <a class="el" href="mission__common_8c_source.html">mission_common.c</a>.</p>
 
-<p>References <a class="el" href="mission__common_8h_source.html#l00116">_mission::current_idx</a>, <a class="el" href="main__demo5_8c_source.html#l00064">dl_buffer</a>, <a class="el" href="mission__common_8c_source.html#l00036">mission</a>, and <a class="el" href="mission__common_8h_source.html#l00109">MISSION_ELEMENT_NB</a>.</p>
+<p>References <a class="el" href="mission__common_8h_source.html#l00118">_mission::current_idx</a>, <a class="el" href="main__demo5_8c_source.html#l00064">dl_buffer</a>, <a class="el" href="mission__common_8c_source.html#l00035">mission</a>, and <a class="el" href="mission__common_8h_source.html#l00111">MISSION_ELEMENT_NB</a>.</p>
 
 </div>
 </div>
@@ -1024,9 +1037,9 @@ mission_wp</td>
 
 <p>Parsing functions called when a mission message is received. </p>
 
-<p>Definition at line <a class="el" href="mission__common_8c_source.html#l00126">126</a> of file <a class="el" href="mission__common_8c_source.html">mission_common.c</a>.</p>
+<p>Definition at line <a class="el" href="mission__common_8c_source.html#l00129">129</a> of file <a class="el" href="mission__common_8c_source.html">mission_common.c</a>.</p>
 
-<p>References <a class="el" href="main__demo5_8c_source.html#l00064">dl_buffer</a>, <a class="el" href="mission__common_8h_source.html#l00102">_mission_element::duration</a>, <a class="el" href="mission__common_8h.html#a0cdea7320c5843bc26c45ef97e2292bb">_mission_element::element</a>, <a class="el" href="mission__common_8c_source.html#l00047">mission_insert()</a>, <a class="el" href="mission__common_8h_source.html#l00038">MissionWP</a>, and <a class="el" href="mission__common_8h_source.html#l00094">_mission_element::type</a>.</p>
+<p>References <a class="el" href="main__demo5_8c_source.html#l00064">dl_buffer</a>, <a class="el" href="mission__common_8h_source.html#l00103">_mission_element::duration</a>, <a class="el" href="mission__common_8h.html#a2e6db7b334f7423430ad07cda1201dd9">_mission_element::element</a>, <a class="el" href="mission__common_8h_source.html#l00104">_mission_element::index</a>, <a class="el" href="mission__common_8c_source.html#l00046">mission_insert()</a>, <a class="el" href="mission__common_8h_source.html#l00038">MissionWP</a>, and <a class="el" href="mission__common_8h_source.html#l00095">_mission_element::type</a>.</p>
 
 <p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -1055,9 +1068,9 @@ mission_wp</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mission__common_8c_source.html#l00142">142</a> of file <a class="el" href="mission__common_8c_source.html">mission_common.c</a>.</p>
+<p>Definition at line <a class="el" href="mission__common_8c_source.html#l00146">146</a> of file <a class="el" href="mission__common_8c_source.html">mission_common.c</a>.</p>
 
-<p>References <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="main__demo5_8c_source.html#l00064">dl_buffer</a>, <a class="el" href="mission__common_8h_source.html#l00102">_mission_element::duration</a>, <a class="el" href="mission__common_8h.html#a0cdea7320c5843bc26c45ef97e2292bb">_mission_element::element</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00060">LlaCoor_i::lat</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00061">LlaCoor_i::lon</a>, <a class="el" href="mission__common_8c_source.html#l00047">mission_insert()</a>, <a class="el" href="mission__fw__nav_8c_source.html#l00038">mission_point_of_lla()</a>, <a class="el" href="mission__common_8h_source.html#l00038">MissionWP</a>, and <a class="el" href="mission__common_8h_source.html#l00094">_mission_element::type</a>.</p>
+<p>References <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="main__demo5_8c_source.html#l00064">dl_buffer</a>, <a class="el" href="mission__common_8h_source.html#l00103">_mission_element::duration</a>, <a class="el" href="mission__common_8h.html#a2e6db7b334f7423430ad07cda1201dd9">_mission_element::element</a>, <a class="el" href="mission__common_8h_source.html#l00104">_mission_element::index</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00060">LlaCoor_i::lat</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00061">LlaCoor_i::lon</a>, <a class="el" href="mission__common_8c_source.html#l00046">mission_insert()</a>, <a class="el" href="mission__fw__nav_8c_source.html#l00038">mission_point_of_lla()</a>, <a class="el" href="mission__common_8h_source.html#l00038">MissionWP</a>, and <a class="el" href="mission__common_8h_source.html#l00095">_mission_element::type</a>.</p>
 
 <p><div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -1086,9 +1099,9 @@ mission_wp</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mission__common_8c_source.html#l00324">324</a> of file <a class="el" href="mission__common_8c_source.html">mission_common.c</a>.</p>
+<p>Definition at line <a class="el" href="mission__common_8c_source.html#l00335">335</a> of file <a class="el" href="mission__common_8c_source.html">mission_common.c</a>.</p>
 
-<p>References <a class="el" href="mission__common_8h_source.html#l00116">_mission::current_idx</a>, <a class="el" href="main__demo5_8c_source.html#l00064">dl_buffer</a>, <a class="el" href="mission__common_8h_source.html#l00115">_mission::insert_idx</a>, <a class="el" href="mission__common_8c_source.html#l00036">mission</a>, and <a class="el" href="mission__common_8h_source.html#l00109">MISSION_ELEMENT_NB</a>.</p>
+<p>References <a class="el" href="mission__common_8h_source.html#l00118">_mission::current_idx</a>, <a class="el" href="main__demo5_8c_source.html#l00064">dl_buffer</a>, <a class="el" href="mission__common_8h_source.html#l00117">_mission::insert_idx</a>, <a class="el" href="mission__common_8c_source.html#l00035">mission</a>, and <a class="el" href="mission__common_8h_source.html#l00111">MISSION_ELEMENT_NB</a>.</p>
 
 </div>
 </div>
@@ -1106,9 +1119,9 @@ mission_wp</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mission__common_8c_source.html#l00243">243</a> of file <a class="el" href="mission__common_8c_source.html">mission_common.c</a>.</p>
+<p>Definition at line <a class="el" href="mission__common_8c_source.html#l00252">252</a> of file <a class="el" href="mission__common_8c_source.html">mission_common.c</a>.</p>
 
-<p>References <a class="el" href="main__demo5_8c_source.html#l00064">dl_buffer</a>, <a class="el" href="mission__common_8h_source.html#l00102">_mission_element::duration</a>, <a class="el" href="mission__common_8h.html#a0cdea7320c5843bc26c45ef97e2292bb">_mission_element::element</a>, <a class="el" href="mission__common_8c_source.html#l00047">mission_insert()</a>, <a class="el" href="mission__common_8h_source.html#l00082">MISSION_PATH_NB</a>, <a class="el" href="mission__common_8h_source.html#l00041">MissionPath</a>, and <a class="el" href="mission__common_8h_source.html#l00094">_mission_element::type</a>.</p>
+<p>References <a class="el" href="main__demo5_8c_source.html#l00064">dl_buffer</a>, <a class="el" href="mission__common_8h_source.html#l00103">_mission_element::duration</a>, <a class="el" href="mission__common_8h.html#a2e6db7b334f7423430ad07cda1201dd9">_mission_element::element</a>, <a class="el" href="mission__common_8h_source.html#l00104">_mission_element::index</a>, <a class="el" href="mission__common_8c_source.html#l00046">mission_insert()</a>, <a class="el" href="mission__common_8h_source.html#l00083">MISSION_PATH_NB</a>, <a class="el" href="mission__common_8h_source.html#l00041">MissionPath</a>, and <a class="el" href="mission__common_8h_source.html#l00095">_mission_element::type</a>.</p>
 
 <p><div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -1137,9 +1150,9 @@ mission_wp</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mission__common_8c_source.html#l00274">274</a> of file <a class="el" href="mission__common_8c_source.html">mission_common.c</a>.</p>
+<p>Definition at line <a class="el" href="mission__common_8c_source.html#l00284">284</a> of file <a class="el" href="mission__common_8c_source.html">mission_common.c</a>.</p>
 
-<p>References <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="main__demo5_8c_source.html#l00064">dl_buffer</a>, <a class="el" href="mission__common_8h_source.html#l00102">_mission_element::duration</a>, <a class="el" href="mission__common_8h.html#a0cdea7320c5843bc26c45ef97e2292bb">_mission_element::element</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00060">LlaCoor_i::lat</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00061">LlaCoor_i::lon</a>, <a class="el" href="mission__common_8c_source.html#l00047">mission_insert()</a>, <a class="el" href="mission__common_8h_source.html#l00082">MISSION_PATH_NB</a>, <a class="el" href="mission__fw__nav_8c_source.html#l00038">mission_point_of_lla()</a>, <a class="el" href="mission__common_8h_source.html#l00041">MissionPath</a>, and <a class="el" href="mission__common_8h_source.html#l00094">_mission_element::type</a>.</p>
+<p>References <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="main__demo5_8c_source.html#l00064">dl_buffer</a>, <a class="el" href="mission__common_8h_source.html#l00103">_mission_element::duration</a>, <a class="el" href="mission__common_8h.html#a2e6db7b334f7423430ad07cda1201dd9">_mission_element::element</a>, <a class="el" href="mission__common_8h_source.html#l00104">_mission_element::index</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00060">LlaCoor_i::lat</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00061">LlaCoor_i::lon</a>, <a class="el" href="mission__common_8c_source.html#l00046">mission_insert()</a>, <a class="el" href="mission__common_8h_source.html#l00083">MISSION_PATH_NB</a>, <a class="el" href="mission__fw__nav_8c_source.html#l00038">mission_point_of_lla()</a>, <a class="el" href="mission__common_8h_source.html#l00041">MissionPath</a>, and <a class="el" href="mission__common_8h_source.html#l00095">_mission_element::type</a>.</p>
 
 <p><div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -1168,9 +1181,9 @@ mission_wp</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mission__common_8c_source.html#l00200">200</a> of file <a class="el" href="mission__common_8c_source.html">mission_common.c</a>.</p>
+<p>Definition at line <a class="el" href="mission__common_8c_source.html#l00207">207</a> of file <a class="el" href="mission__common_8c_source.html">mission_common.c</a>.</p>
 
-<p>References <a class="el" href="main__demo5_8c_source.html#l00064">dl_buffer</a>, <a class="el" href="mission__common_8h_source.html#l00102">_mission_element::duration</a>, <a class="el" href="mission__common_8h.html#a0cdea7320c5843bc26c45ef97e2292bb">_mission_element::element</a>, <a class="el" href="mission__common_8c_source.html#l00047">mission_insert()</a>, <a class="el" href="mission__common_8h_source.html#l00040">MissionSegment</a>, and <a class="el" href="mission__common_8h_source.html#l00094">_mission_element::type</a>.</p>
+<p>References <a class="el" href="main__demo5_8c_source.html#l00064">dl_buffer</a>, <a class="el" href="mission__common_8h_source.html#l00103">_mission_element::duration</a>, <a class="el" href="mission__common_8h.html#a2e6db7b334f7423430ad07cda1201dd9">_mission_element::element</a>, <a class="el" href="mission__common_8h_source.html#l00104">_mission_element::index</a>, <a class="el" href="mission__common_8c_source.html#l00046">mission_insert()</a>, <a class="el" href="mission__common_8h_source.html#l00040">MissionSegment</a>, and <a class="el" href="mission__common_8h_source.html#l00095">_mission_element::type</a>.</p>
 
 <p><div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -1199,9 +1212,9 @@ mission_wp</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mission__common_8c_source.html#l00219">219</a> of file <a class="el" href="mission__common_8c_source.html">mission_common.c</a>.</p>
+<p>Definition at line <a class="el" href="mission__common_8c_source.html#l00227">227</a> of file <a class="el" href="mission__common_8c_source.html">mission_common.c</a>.</p>
 
-<p>References <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="main__demo5_8c_source.html#l00064">dl_buffer</a>, <a class="el" href="mission__common_8h_source.html#l00102">_mission_element::duration</a>, <a class="el" href="mission__common_8h.html#a0cdea7320c5843bc26c45ef97e2292bb">_mission_element::element</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00060">LlaCoor_i::lat</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00061">LlaCoor_i::lon</a>, <a class="el" href="mission__common_8c_source.html#l00047">mission_insert()</a>, <a class="el" href="mission__fw__nav_8c_source.html#l00038">mission_point_of_lla()</a>, <a class="el" href="mission__common_8h_source.html#l00040">MissionSegment</a>, and <a class="el" href="mission__common_8h_source.html#l00094">_mission_element::type</a>.</p>
+<p>References <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="main__demo5_8c_source.html#l00064">dl_buffer</a>, <a class="el" href="mission__common_8h_source.html#l00103">_mission_element::duration</a>, <a class="el" href="mission__common_8h.html#a2e6db7b334f7423430ad07cda1201dd9">_mission_element::element</a>, <a class="el" href="mission__common_8h_source.html#l00104">_mission_element::index</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00060">LlaCoor_i::lat</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00061">LlaCoor_i::lon</a>, <a class="el" href="mission__common_8c_source.html#l00046">mission_insert()</a>, <a class="el" href="mission__fw__nav_8c_source.html#l00038">mission_point_of_lla()</a>, <a class="el" href="mission__common_8h_source.html#l00040">MissionSegment</a>, and <a class="el" href="mission__common_8h_source.html#l00095">_mission_element::type</a>.</p>
 
 <p><div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -1286,9 +1299,9 @@ mission_wp</td>
 
 <p>Definition at line <a class="el" href="mission__fw__nav_8c_source.html#l00038">38</a> of file <a class="el" href="mission__fw__nav_8c_source.html">mission_fw_nav.c</a>.</p>
 
-<p>References <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="mission__rotorcraft__nav_8c_source.html#l00038">BUFFER_ZONE_DIST</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00083">UtmCoor_f::east</a>, <a class="el" href="pprz__geodetic__int_8c_source.html#l00295">enu_of_lla_point_i()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00125">float_vect2_norm()</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00102">LtpDef_i::hmsl</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00100">LtpDef_i::lla</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00177">LLA_FLOAT_OF_BFP</a>, <a class="el" href="navigation_8c_source.html#l00063">max_dist_from_home</a>, <a class="el" href="common__nav_8c_source.html#l00042">nav_utm_east0</a>, <a class="el" href="common__nav_8c_source.html#l00043">nav_utm_north0</a>, <a class="el" href="common__nav_8c_source.html#l00044">nav_utm_zone0</a>, <a class="el" href="state_8h_source.html#l00171">State::ned_initialized_i</a>, <a class="el" href="state_8h_source.html#l00166">State::ned_origin_i</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00082">UtmCoor_f::north</a>, <a class="el" href="state_8c_source.html#l00036">state</a>, <a class="el" href="pprz__geodetic__float_8c_source.html#l00308">utm_of_lla_f()</a>, <a class="el" href="pprz__algebra_8h_source.html#l00091">VECT2_DIFF</a>, <a class="el" href="pprz__algebra_8h_source.html#l00097">VECT2_SMUL</a>, <a class="el" href="pprz__algebra_8h_source.html#l00085">VECT2_SUM</a>, <a class="el" href="pprz__algebra_8h_source.html#l00188">VECT3_SMUL</a>, <a class="el" href="subsystems_2navigation_2waypoints_8c_source.html#l00077">waypoint_get_x()</a>, <a class="el" href="subsystems_2navigation_2waypoints_8c_source.html#l00085">waypoint_get_y()</a>, <a class="el" href="common__nav_8c_source.html#l00038">waypoints</a>, <a class="el" href="common__nav_8h_source.html#l00040">point::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00050">FloatVect2::x</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00073">EnuCoor_f::x</a>, <a class="el" href="common__nav_8h_source.html#l00041">point::y</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00051">FloatVect2::y</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00074">EnuCoor_f::y</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00075">EnuCoor_f::z</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00085">UtmCoor_f::zone</a>.</p>
+<p>References <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="mission__rotorcraft__nav_8c_source.html#l00038">BUFFER_ZONE_DIST</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00083">UtmCoor_f::east</a>, <a class="el" href="pprz__geodetic__int_8c_source.html#l00295">enu_of_lla_point_i()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00125">float_vect2_norm()</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00102">LtpDef_i::hmsl</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00100">LtpDef_i::lla</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00177">LLA_FLOAT_OF_BFP</a>, <a class="el" href="navigation_8c_source.html#l00079">max_dist_from_home</a>, <a class="el" href="common__nav_8c_source.html#l00042">nav_utm_east0</a>, <a class="el" href="common__nav_8c_source.html#l00043">nav_utm_north0</a>, <a class="el" href="common__nav_8c_source.html#l00044">nav_utm_zone0</a>, <a class="el" href="state_8h_source.html#l00171">State::ned_initialized_i</a>, <a class="el" href="state_8h_source.html#l00166">State::ned_origin_i</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00082">UtmCoor_f::north</a>, <a class="el" href="state_8c_source.html#l00036">state</a>, <a class="el" href="pprz__geodetic__float_8c_source.html#l00308">utm_of_lla_f()</a>, <a class="el" href="pprz__algebra_8h_source.html#l00091">VECT2_DIFF</a>, <a class="el" href="pprz__algebra_8h_source.html#l00097">VECT2_SMUL</a>, <a class="el" href="pprz__algebra_8h_source.html#l00085">VECT2_SUM</a>, <a class="el" href="pprz__algebra_8h_source.html#l00188">VECT3_SMUL</a>, <a class="el" href="subsystems_2navigation_2waypoints_8c_source.html#l00077">waypoint_get_x()</a>, <a class="el" href="subsystems_2navigation_2waypoints_8c_source.html#l00085">waypoint_get_y()</a>, <a class="el" href="common__nav_8c_source.html#l00038">waypoints</a>, <a class="el" href="common__nav_8h_source.html#l00040">point::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00050">FloatVect2::x</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00073">EnuCoor_f::x</a>, <a class="el" href="common__nav_8h_source.html#l00041">point::y</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00051">FloatVect2::y</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00074">EnuCoor_f::y</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00075">EnuCoor_f::z</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00085">UtmCoor_f::zone</a>.</p>
 
-<p>Referenced by <a class="el" href="mission__common_8c_source.html#l00179">mission_parse_CIRCLE_LLA()</a>, <a class="el" href="mission__common_8c_source.html#l00142">mission_parse_GOTO_WP_LLA()</a>, <a class="el" href="mission__common_8c_source.html#l00274">mission_parse_PATH_LLA()</a>, and <a class="el" href="mission__common_8c_source.html#l00219">mission_parse_SEGMENT_LLA()</a>.</p>
+<p>Referenced by <a class="el" href="mission__common_8c_source.html#l00185">mission_parse_CIRCLE_LLA()</a>, <a class="el" href="mission__common_8c_source.html#l00146">mission_parse_GOTO_WP_LLA()</a>, <a class="el" href="mission__common_8c_source.html#l00284">mission_parse_PATH_LLA()</a>, and <a class="el" href="mission__common_8c_source.html#l00227">mission_parse_SEGMENT_LLA()</a>.</p>
 
 <p><div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -1335,7 +1348,7 @@ mission_wp</td>
 
 <p>Definition at line <a class="el" href="mission__fw__nav_8c_source.html#l00142">142</a> of file <a class="el" href="mission__fw__nav_8c_source.html">mission_fw_nav.c</a>.</p>
 
-<p>References <a class="el" href="mission__common_8h_source.html#l00116">_mission::current_idx</a>, <a class="el" href="mission__fw__nav_8c_source.html#l00067">dt_navigation</a>, <a class="el" href="mission__common_8h_source.html#l00102">_mission_element::duration</a>, <a class="el" href="mission__common_8h.html#a0cdea7320c5843bc26c45ef97e2292bb">_mission_element::element</a>, <a class="el" href="mission__common_8h_source.html#l00114">_mission::element_time</a>, <a class="el" href="mission__common_8c_source.html#l00036">mission</a>, <a class="el" href="mission__common_8h_source.html#l00109">MISSION_ELEMENT_NB</a>, <a class="el" href="mission__common_8c_source.html#l00091">mission_get()</a>, <a class="el" href="mission__fw__nav_8c_source.html#l00089">mission_nav_circle()</a>, <a class="el" href="mission__fw__nav_8c_source.html#l00114">mission_nav_path()</a>, <a class="el" href="mission__fw__nav_8c_source.html#l00099">mission_nav_segment()</a>, <a class="el" href="mission__fw__nav_8c_source.html#l00074">mission_nav_wp()</a>, <a class="el" href="mission__common_8h_source.html#l00039">MissionCircle</a>, <a class="el" href="mission__common_8h_source.html#l00041">MissionPath</a>, <a class="el" href="mission__common_8h_source.html#l00040">MissionSegment</a>, <a class="el" href="mission__common_8h_source.html#l00038">MissionWP</a>, and <a class="el" href="mission__common_8h_source.html#l00094">_mission_element::type</a>.</p>
+<p>References <a class="el" href="mission__common_8h_source.html#l00118">_mission::current_idx</a>, <a class="el" href="mission__fw__nav_8c_source.html#l00067">dt_navigation</a>, <a class="el" href="mission__common_8h_source.html#l00103">_mission_element::duration</a>, <a class="el" href="mission__common_8h.html#a2e6db7b334f7423430ad07cda1201dd9">_mission_element::element</a>, <a class="el" href="mission__common_8h_source.html#l00116">_mission::element_time</a>, <a class="el" href="mission__common_8c_source.html#l00035">mission</a>, <a class="el" href="mission__common_8h_source.html#l00111">MISSION_ELEMENT_NB</a>, <a class="el" href="mission__common_8c_source.html#l00094">mission_get()</a>, <a class="el" href="mission__fw__nav_8c_source.html#l00089">mission_nav_circle()</a>, <a class="el" href="mission__fw__nav_8c_source.html#l00114">mission_nav_path()</a>, <a class="el" href="mission__fw__nav_8c_source.html#l00099">mission_nav_segment()</a>, <a class="el" href="mission__fw__nav_8c_source.html#l00074">mission_nav_wp()</a>, <a class="el" href="mission__common_8h_source.html#l00039">MissionCircle</a>, <a class="el" href="mission__common_8h_source.html#l00041">MissionPath</a>, <a class="el" href="mission__common_8h_source.html#l00040">MissionSegment</a>, <a class="el" href="mission__common_8h_source.html#l00038">MissionWP</a>, and <a class="el" href="mission__common_8h_source.html#l00095">_mission_element::type</a>.</p>
 
 <p><div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -1367,9 +1380,9 @@ mission_wp</td>
 <p>Report mission status. </p>
 <p>Send mission status over datalink </p>
 
-<p>Definition at line <a class="el" href="mission__common_8c_source.html#l00101">101</a> of file <a class="el" href="mission__common_8c_source.html">mission_common.c</a>.</p>
+<p>Definition at line <a class="el" href="mission__common_8c_source.html#l00104">104</a> of file <a class="el" href="mission__common_8c_source.html">mission_common.c</a>.</p>
 
-<p>References <a class="el" href="mission__common_8h_source.html#l00116">_mission::current_idx</a>, <a class="el" href="downlink_8h_source.html#l00084">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00088">DefaultDevice</a>, <a class="el" href="mission__common_8h_source.html#l00102">_mission_element::duration</a>, <a class="el" href="mission__common_8h_source.html#l00114">_mission::element_time</a>, <a class="el" href="mission__common_8h_source.html#l00113">_mission::elements</a>, <a class="el" href="mission__common_8h_source.html#l00115">_mission::insert_idx</a>, <a class="el" href="mission__common_8c_source.html#l00036">mission</a>, <a class="el" href="mission__common_8h_source.html#l00109">MISSION_ELEMENT_NB</a>, and <a class="el" href="mission__common_8h_source.html#l00094">_mission_element::type</a>.</p>
+<p>References <a class="el" href="mission__common_8h_source.html#l00118">_mission::current_idx</a>, <a class="el" href="downlink_8h_source.html#l00042">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00046">DefaultDevice</a>, <a class="el" href="mission__common_8h_source.html#l00103">_mission_element::duration</a>, <a class="el" href="mission__common_8h_source.html#l00116">_mission::element_time</a>, <a class="el" href="mission__common_8h_source.html#l00115">_mission::elements</a>, <a class="el" href="mission__common_8h_source.html#l00104">_mission_element::index</a>, <a class="el" href="mission__common_8h_source.html#l00117">_mission::insert_idx</a>, <a class="el" href="mission__common_8c_source.html#l00035">mission</a>, and <a class="el" href="mission__common_8h_source.html#l00111">MISSION_ELEMENT_NB</a>.</p>
 
 </div>
 </div>
@@ -1384,9 +1397,9 @@ mission_wp</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mission__common_8c_source.html#l00036">36</a> of file <a class="el" href="mission__common_8c_source.html">mission_common.c</a>.</p>
+<p>Definition at line <a class="el" href="mission__common_8c_source.html#l00035">35</a> of file <a class="el" href="mission__common_8c_source.html">mission_common.c</a>.</p>
 
-<p>Referenced by <a class="el" href="mission__common_8c_source.html#l00091">mission_get()</a>, <a class="el" href="mission__common_8c_source.html#l00038">mission_init()</a>, <a class="el" href="mission__common_8c_source.html#l00047">mission_insert()</a>, <a class="el" href="mission__rotorcraft__nav_8c_source.html#l00141">mission_nav_circle()</a>, <a class="el" href="mission__common_8c_source.html#l00335">mission_parse_END_MISSION()</a>, <a class="el" href="mission__common_8c_source.html#l00312">mission_parse_GOTO_MISSION()</a>, <a class="el" href="mission__common_8c_source.html#l00324">mission_parse_NEXT_MISSION()</a>, <a class="el" href="mission__fw__nav_8c_source.html#l00142">mission_run()</a>, and <a class="el" href="mission__common_8c_source.html#l00101">mission_status_report()</a>.</p>
+<p>Referenced by <a class="el" href="mission__common_8c_source.html#l00094">mission_get()</a>, <a class="el" href="mission__common_8c_source.html#l00037">mission_init()</a>, <a class="el" href="mission__common_8c_source.html#l00046">mission_insert()</a>, <a class="el" href="mission__rotorcraft__nav_8c_source.html#l00141">mission_nav_circle()</a>, <a class="el" href="mission__common_8c_source.html#l00346">mission_parse_END_MISSION()</a>, <a class="el" href="mission__common_8c_source.html#l00323">mission_parse_GOTO_MISSION()</a>, <a class="el" href="mission__common_8c_source.html#l00335">mission_parse_NEXT_MISSION()</a>, <a class="el" href="mission__fw__nav_8c_source.html#l00142">mission_run()</a>, and <a class="el" href="mission__common_8c_source.html#l00104">mission_status_report()</a>.</p>
 
 </div>
 </div>
@@ -1396,7 +1409,7 @@ mission_wp</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_6eed4cd5dc7f8396232b71b94973ca94.html">mission</a></li><li class="navelem"><a class="el" href="mission__common_8h.html">mission_common.h</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:02:01 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:02:29 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

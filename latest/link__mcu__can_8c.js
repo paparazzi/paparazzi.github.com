@@ -10,11 +10,11 @@ var link__mcu__can_8c =
     [ "link_mcu_event_task", "link__mcu__can_8c.html#ac8ca91741aea5e6803a8db35d4c8188e", null ],
     [ "link_mcu_init", "link__mcu__can_8c.html#a4811adaa420099181f04d75d5ba24c25", null ],
     [ "link_mcu_on_can_msg", "link__mcu__can_8c.html#a9b98f23c7b3a434d4a626acf53a48172", null ],
-    [ "imcu_chan1", "link__mcu__can_8c.html#a7cff8068cb42172e1dbac09e90a5fc0f", null ],
-    [ "imcu_chan2", "link__mcu__can_8c.html#a9a47ef8c6d625faaa192d1c6e5343e2e", null ],
-    [ "imcu_cmd_ext", "link__mcu__can_8c.html#a254cc89149067c978f813ea013f2282d", null ],
-    [ "imcu_cmd_mstr", "link__mcu__can_8c.html#a94c03f76d421d02f0d09c296ddb3e45b", null ],
-    [ "imcu_trim", "link__mcu__can_8c.html#a9433a2071ede410af133dfccc8ec2fd7", null ],
+    [ "imcu_chan1", "link__mcu__can_8c.html#a06c0b69d8a0719cc853becf0ccec3e9a", null ],
+    [ "imcu_chan2", "link__mcu__can_8c.html#a0666e3f171ea0df34acbe9f9a48d5178", null ],
+    [ "imcu_cmd_ext", "link__mcu__can_8c.html#a94bcffe8034193eff790d27b8f82e78b", null ],
+    [ "imcu_cmd_mstr", "link__mcu__can_8c.html#ac54cc0920325032bc2fca0fe8c959d17", null ],
+    [ "imcu_trim", "link__mcu__can_8c.html#aa8ce85cc5f01d443d318096b62009ba0", null ],
     [ "link_mcu_from_ap_msg", "link__mcu__can_8c.html#a4d130fa66a5074c64197b7cd4bf535de", null ],
     [ "link_mcu_from_fbw_msg", "link__mcu__can_8c.html#a86deade5843ab146c47083104cf8f3cd", null ]
 ];

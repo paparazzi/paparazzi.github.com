@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -79,6 +79,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow3" class="tabs2">
     <ul class="tablist">
       <li><a href="functions.html"><span>All</span></a></li>
+      <li><a href="functions_func.html"><span>Functions</span></a></li>
       <li class="current"><a href="functions_vars.html"><span>Variables</span></a></li>
     </ul>
   </div>
@@ -149,11 +150,15 @@ $(document).ready(function(){initNavTree('functions_vars_q.html','');});
 <li>q
 : <a class="el" href="imu__chimu_8h.html#a33ed9c32c88ed20e755d09a94bda5e08">CHIMU_attitude_data</a>
 , <a class="el" href="group__math__algebra__double.html#a73bba193cdc5815d6bbf2d0af7fce341">DoubleRates</a>
+, <a class="el" href="UKF__Wind__Estimator_8h.html#a61c996bf85b231478aaffa544d045733">ExtU</a>
 , <a class="el" href="group__math__algebra__float.html#a128ab43f390d2a0ff80fe4bef003061a">FloatRates</a>
 , <a class="el" href="imu__quality__assessment_8h.html#a68fd7327c547bf73393278a18f3f6087">imu_quality_assessment_data_struct</a>
 , <a class="el" href="group__math__algebra__int.html#a42f1c182e191b60ad2d3a31303a8528b">Int16Rates</a>
 , <a class="el" href="group__math__algebra__int.html#a7c820bcf2018e94b89898d36d81d7f4a">Int32Rates</a>
 , <a class="el" href="group__math__algebra__int.html#af99b1f105232c9c619d62040fb3c9d4c">Int64Rates</a>
+</li>
+<li>Q
+: <a class="el" href="UKF__Wind__Estimator_8h.html#a343b67dba1681f6208293717f5ce2f63">ukf_params_tag</a>
 </li>
 <li>q_ax
 : <a class="el" href="imu__quality__assessment_8h.html#a59685537e3b49989d467fe6bdc126efe">imu_quality_assessment_data_struct</a>
@@ -166,6 +171,15 @@ $(document).ready(function(){initNavTree('functions_vars_q.html','');});
 </li>
 <li>q_m
 : <a class="el" href="imu__quality__assessment_8h.html#a0b37e6ce9fd493c029f9cd67189bbabe">imu_quality_assessment_data_struct</a>
+</li>
+<li>q_va
+: <a class="el" href="wind__estimator_8h.html#a1e2a539b7b2f227ba1c03b443997d00a">WindEstimator</a>
+</li>
+<li>q_va_scale
+: <a class="el" href="wind__estimator_8h.html#a8c3df323de545f49dcd05dacdcb34f49">WindEstimator</a>
+</li>
+<li>q_wind
+: <a class="el" href="wind__estimator_8h.html#a36c24690b669f887f364661d4e56c977">WindEstimator</a>
 </li>
 <li>qfe
 : <a class="el" href="ins__alt__float_8h.html#a15d590f01b0a8362874f749ddcc62a5e">InsAltFloat</a>
@@ -183,12 +197,16 @@ $(document).ready(function(){initNavTree('functions_vars_q.html','');});
 : <a class="el" href="air__data_8h.html#ad706d8f69f322cdd07edff309fa4eeda">AirData</a>
 , <a class="el" href="nps__atmosphere_8h.html#a0931fe9c2dcc4cc0b2b1eaac9fc1ecd4">NpsAtmosphere</a>
 </li>
+<li>qual
+: <a class="el" href="px4flow__i2c_8h.html#a35f6228526bc2230ad559730faeaf0d0">px4flow_i2c_frame</a>
+, <a class="el" href="px4flow__i2c_8h.html#a553e2a71e095480eda707ec82142d588">px4flow_i2c_integral_frame</a>
+</li>
 <li>quality
 : <a class="el" href="px4flow_8h.html#a37141317f9f0b65722368a4dde470570">mavlink_optical_flow</a>
+, <a class="el" href="px4flow_8h.html#a1886dadc1b7f0f18f2746ffee3b54fdf">mavlink_optical_flow_rad</a>
 </li>
 <li>quality_factor
-: <a class="el" href="bebop__front__camera_8h.html#a77567b718a7a7ff685925f78055a1ccf">bebopfrontcamera_t</a>
-, <a class="el" href="viewvideo_8h.html#ae231a96296226c7bfe79f1a3d34a7ac6">viewvideo_t</a>
+: <a class="el" href="viewvideo_8h.html#ae231a96296226c7bfe79f1a3d34a7ac6">viewvideo_t</a>
 </li>
 <li>quat
 : <a class="el" href="stabilization__attitude__ref__quat__float_8h.html#a773a37e03a3c43043d6b051b8d17cd08">AttRefQuatFloat</a>
@@ -229,7 +247,7 @@ $(document).ready(function(){initNavTree('functions_vars_q.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Oct 1 2016 14:02:43 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:03:14 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

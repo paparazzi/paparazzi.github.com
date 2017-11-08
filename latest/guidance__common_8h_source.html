@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -177,26 +177,29 @@ $(document).ready(function(){initNavTree('guidance__common_8h_source.html','');}
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="guidance__common_8h.html#a38f0bbceda8812281fc650c2c1aac6c8">v_ctl_climb_loop</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="guidance__common_8h.html#a130f49d9941f156bb04aa94122b167d0">v_ctl_landing_loop</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="guidance__common_8h.html#a7fefa3c115f6c0f7453db6c2edd2dbbb">v_ctl_throttle_slew</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="guidance__common_8h.html#a923130788d24be11d6fbc59192920b72">   78</a></span>&#160;<span class="preprocessor">#define guidance_v_SetCruiseThrottle(_v) { \</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">    v_ctl_auto_throttle_cruise_throttle = (_v ? _v : v_ctl_auto_throttle_nominal_cruise_throttle); \</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">    Bound(v_ctl_auto_throttle_cruise_throttle, v_ctl_auto_throttle_min_cruise_throttle, v_ctl_auto_throttle_max_cruise_throttle); \</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">  }</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="guidance__common_8h.html#a7fe0d6e838155d9c38c8cf8a8413cf21">v_ctl_guidance_loop</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="guidance__common_8h.html#a7fefa3c115f6c0f7453db6c2edd2dbbb">v_ctl_throttle_slew</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="guidance__common_8h.html#a19a937eeeb0bc25db36047be49dc3bb9">   83</a></span>&#160;<span class="preprocessor">#define guidance_v_SetAutoThrottleIgain(_v) { \</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">    v_ctl_auto_throttle_igain = _v;   \</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">    v_ctl_auto_throttle_sum_err = 0;    \</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="guidance__common_8h.html#a923130788d24be11d6fbc59192920b72">   83</a></span>&#160;<span class="preprocessor">#define guidance_v_SetCruiseThrottle(_v) { \</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">    v_ctl_auto_throttle_cruise_throttle = (_v ? _v : v_ctl_auto_throttle_nominal_cruise_throttle); \</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">    Bound(v_ctl_auto_throttle_cruise_throttle, v_ctl_auto_throttle_min_cruise_throttle, v_ctl_auto_throttle_max_cruise_throttle); \</span></div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">  }</span></div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="guidance__common_8h.html#a19a937eeeb0bc25db36047be49dc3bb9">   88</a></span>&#160;<span class="preprocessor">#define guidance_v_SetAutoThrottleIgain(_v) { \</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor">    v_ctl_auto_throttle_igain = _v;   \</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">    v_ctl_auto_throttle_sum_err = 0;    \</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">  }</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
 <div class="ttc" id="guidance__common_8h_html_a91af08f8c8981542a5e44b874c7c39ad"><div class="ttname"><a href="guidance__common_8h.html#a91af08f8c8981542a5e44b874c7c39ad">v_ctl_throttle_slewed</a></div><div class="ttdeci">pprz_t v_ctl_throttle_slewed</div><div class="ttdef"><b>Definition:</b> <a href="energy__ctrl_8c_source.html#l00132">energy_ctrl.c:132</a></div></div>
 <div class="ttc" id="guidance__common_8h_html_a41fdcf4ec5465153f878ae82130eddf7"><div class="ttname"><a href="guidance__common_8h.html#a41fdcf4ec5465153f878ae82130eddf7">v_ctl_auto_airspeed_controlled</a></div><div class="ttdeci">float v_ctl_auto_airspeed_controlled</div><div class="ttdef"><b>Definition:</b> <a href="energy__ctrl_8c_source.html#l00123">energy_ctrl.c:123</a></div></div>
 <div class="ttc" id="paparazzi_8h_html_a3fd988f23519b41e9aea4d38bfb45e1c"><div class="ttname"><a href="paparazzi_8h.html#a3fd988f23519b41e9aea4d38bfb45e1c">pprz_t</a></div><div class="ttdeci">int16_t pprz_t</div><div class="ttdef"><b>Definition:</b> <a href="paparazzi_8h_source.html#l00006">paparazzi.h:6</a></div></div>
 <div class="ttc" id="guidance__common_8h_html_a7fefa3c115f6c0f7453db6c2edd2dbbb"><div class="ttname"><a href="guidance__common_8h.html#a7fefa3c115f6c0f7453db6c2edd2dbbb">v_ctl_throttle_slew</a></div><div class="ttdeci">void v_ctl_throttle_slew(void)</div><div class="ttdoc">Computes throttle_slewed from throttle_setpoint. </div><div class="ttdef"><b>Definition:</b> <a href="energy__ctrl_8c_source.html#l00450">energy_ctrl.c:450</a></div></div>
+<div class="ttc" id="guidance__common_8h_html_a7fe0d6e838155d9c38c8cf8a8413cf21"><div class="ttname"><a href="guidance__common_8h.html#a7fe0d6e838155d9c38c8cf8a8413cf21">v_ctl_guidance_loop</a></div><div class="ttdeci">void v_ctl_guidance_loop(void)</div><div class="ttdoc">General guidance logic This will call the proper control loops according to the sub-modes. </div><div class="ttdef"><b>Definition:</b> <a href="fixedwing_2guidance_2guidance__v_8c_source.html#l00265">guidance_v.c:265</a></div></div>
 <div class="ttc" id="guidance__common_8h_html_a86e489231e48e9241b68229ba29007c9"><div class="ttname"><a href="guidance__common_8h.html#a86e489231e48e9241b68229ba29007c9">v_ctl_auto_throttle_sum_err</a></div><div class="ttdeci">float v_ctl_auto_throttle_sum_err</div><div class="ttdef"><b>Definition:</b> <a href="energy__ctrl_8c_source.html#l00077">energy_ctrl.c:77</a></div></div>
 <div class="ttc" id="guidance__common_8h_html_a7c417874ed0ec332df4832ed1e1d957d"><div class="ttname"><a href="guidance__common_8h.html#a7c417874ed0ec332df4832ed1e1d957d">v_ctl_pitch_setpoint</a></div><div class="ttdeci">float v_ctl_pitch_setpoint</div><div class="ttdef"><b>Definition:</b> <a href="energy__ctrl_8c_source.html#l00133">energy_ctrl.c:133</a></div></div>
 <div class="ttc" id="guidance__common_8h_html_adddca7473e9b7d77cd07d78d5bc70439"><div class="ttname"><a href="guidance__common_8h.html#adddca7473e9b7d77cd07d78d5bc70439">v_ctl_altitude_error</a></div><div class="ttdeci">float v_ctl_altitude_error</div><div class="ttdoc">in meters, (setpoint - alt) -> positive = too low </div><div class="ttdef"><b>Definition:</b> <a href="energy__ctrl_8c_source.html#l00092">energy_ctrl.c:92</a></div></div>
@@ -204,7 +207,7 @@ $(document).ready(function(){initNavTree('guidance__common_8h_source.html','');}
 <div class="ttc" id="guidance__common_8h_html_afa5597f66c8d01e0afcfa047afe6964b"><div class="ttname"><a href="guidance__common_8h.html#afa5597f66c8d01e0afcfa047afe6964b">v_ctl_mode</a></div><div class="ttdeci">uint8_t v_ctl_mode</div><div class="ttdef"><b>Definition:</b> <a href="energy__ctrl_8c_source.html#l00074">energy_ctrl.c:74</a></div></div>
 <div class="ttc" id="inttypes_8h_html"><div class="ttname"><a href="inttypes_8h.html">inttypes.h</a></div></div>
 <div class="ttc" id="guidance__common_8h_html_ac48c5fff2d5aca1dd1fc58622709d7eb"><div class="ttname"><a href="guidance__common_8h.html#ac48c5fff2d5aca1dd1fc58622709d7eb">v_ctl_init</a></div><div class="ttdeci">void v_ctl_init(void)</div><div class="ttdef"><b>Definition:</b> <a href="energy__ctrl_8c_source.html#l00216">energy_ctrl.c:216</a></div></div>
-<div class="ttc" id="guidance__common_8h_html_a130f49d9941f156bb04aa94122b167d0"><div class="ttname"><a href="guidance__common_8h.html#a130f49d9941f156bb04aa94122b167d0">v_ctl_landing_loop</a></div><div class="ttdeci">void v_ctl_landing_loop(void)</div><div class="ttdef"><b>Definition:</b> <a href="fixedwing_2guidance_2guidance__v_8c_source.html#l00318">guidance_v.c:318</a></div></div>
+<div class="ttc" id="guidance__common_8h_html_a130f49d9941f156bb04aa94122b167d0"><div class="ttname"><a href="guidance__common_8h.html#a130f49d9941f156bb04aa94122b167d0">v_ctl_landing_loop</a></div><div class="ttdeci">void v_ctl_landing_loop(void)</div><div class="ttdef"><b>Definition:</b> <a href="fixedwing_2guidance_2guidance__v_8c_source.html#l00357">guidance_v.c:357</a></div></div>
 <div class="ttc" id="types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00014">types.h:14</a></div></div>
 <div class="ttc" id="guidance__common_8h_html_af6673f0686b827efdacc838902dc0ab3"><div class="ttname"><a href="guidance__common_8h.html#af6673f0686b827efdacc838902dc0ab3">v_ctl_climb_setpoint</a></div><div class="ttdeci">float v_ctl_climb_setpoint</div><div class="ttdef"><b>Definition:</b> <a href="energy__ctrl_8c_source.html#l00098">energy_ctrl.c:98</a></div></div>
 <div class="ttc" id="guidance__common_8h_html_ab78a678ff1021823256d747800db3140"><div class="ttname"><a href="guidance__common_8h.html#ab78a678ff1021823256d747800db3140">v_ctl_altitude_loop</a></div><div class="ttdeci">void v_ctl_altitude_loop(void)</div><div class="ttdoc">outer loop </div><div class="ttdef"><b>Definition:</b> <a href="energy__ctrl_8c_source.html#l00296">energy_ctrl.c:296</a></div></div>
@@ -220,7 +223,7 @@ $(document).ready(function(){initNavTree('guidance__common_8h_source.html','');}
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_cb1b347b64b61ba7f369ccfe68448b26.html">fixedwing</a></li><li class="navelem"><a class="el" href="dir_ed1aed0b4c5a033d4a5b36c06a1a768a.html">guidance</a></li><li class="navelem"><a class="el" href="guidance__common_8h.html">guidance_common.h</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:01:17 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:01:31 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

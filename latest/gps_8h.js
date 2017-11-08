@@ -41,6 +41,33 @@ var gps_8h =
       [ "t0_tow", "gps_8h.html#a8f4002623b4a2a838d6e69181b533bd4", null ],
       [ "t0_tow_frac", "gps_8h.html#a36bdae78da6e3c513f7a5aec65ae6416", null ]
     ] ],
+    [ "GpsRelposNED", "gps_8h.html#structGpsRelposNED", [
+      [ "accD", "gps_8h.html#a3bdf813f5cc98e49692bfb72830cbd02", null ],
+      [ "accE", "gps_8h.html#a4789265cbf7c59088d9c7275aeb35f35", null ],
+      [ "accN", "gps_8h.html#add67b5af8aaa529d18ae9b60b337f27a", null ],
+      [ "carrSoln", "gps_8h.html#aaabdd36bffe942920e2bfeabfcfa7676", null ],
+      [ "diffSoln", "gps_8h.html#a809675aa0ebb803cfb7afe99c314e0a3", null ],
+      [ "gnssFixOK", "gps_8h.html#a36f2e6dddae1df1155683822e73c3d4d", null ],
+      [ "iTOW", "gps_8h.html#a231fde6bd2e42a9de50253ae4fb94c5a", null ],
+      [ "refStationId", "gps_8h.html#a1a37a0ac518858500eb685327a1e8f76", null ],
+      [ "relPosD", "gps_8h.html#ac0f2667703a0d8f46fc91fa82f6d9589", null ],
+      [ "relPosE", "gps_8h.html#ac0a4052ee1274bfd6aaf173d28417979", null ],
+      [ "relPosHPD", "gps_8h.html#acfb05effce10c8aa378dccb3ac820011", null ],
+      [ "relPosHPE", "gps_8h.html#aefd22ed8cf7b2f1e0088fb6ce085ec34", null ],
+      [ "relPosHPN", "gps_8h.html#a99902b8572da45ec09a010e4e1ffd3c1", null ],
+      [ "relPosN", "gps_8h.html#a5d5bac94fc2d642aafb9edb97f8da1bf", null ],
+      [ "relPosValid", "gps_8h.html#ab13c1e193763d6d9eef87e00b1e958cc", null ]
+    ] ],
+    [ "RtcmMan", "gps_8h.html#structRtcmMan", [
+      [ "Cnt105", "gps_8h.html#a0a09d89147a2c5c5ce32d9ca04160994", null ],
+      [ "Cnt177", "gps_8h.html#a99d3853155238974cf63652c8e5f2403", null ],
+      [ "Cnt187", "gps_8h.html#a17e7e754195d574b64362e63f4d0a13c", null ],
+      [ "Crc105", "gps_8h.html#a65cd647ec71c018db01d700fb36efe8c", null ],
+      [ "Crc177", "gps_8h.html#a2b65844540910d901510ace881c3bde8", null ],
+      [ "Crc187", "gps_8h.html#a407f430c7fd01e7f821b3f50b87e21a8", null ],
+      [ "MsgType", "gps_8h.html#af5e6fdb0c22f54f04d18815f9c3dc046", null ],
+      [ "RefStation", "gps_8h.html#a6a5c8e5b6995940dbf460753aca9d68e", null ]
+    ] ],
     [ "GPS_FIX_2D", "gps_8h.html#ab9017c3f1cc7ed2f396f90be17706c98", null ],
     [ "GPS_FIX_3D", "gps_8h.html#ac5e980c8325a29dd79a45ed26af404be", null ],
     [ "GPS_FIX_DGPS", "gps_8h.html#a300cb3f5972ba750d595aba3b15dcf4e", null ],

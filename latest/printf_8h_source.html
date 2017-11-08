@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -133,30 +133,33 @@ $(document).ready(function(){initNavTree('printf_8h_source.html','');});
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#define _PRINTF_H_</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;stdarg.h&gt;</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#if !defined(CHPRINTF_USE_FLOAT) || defined(__DOXYGEN__)</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="group__chprintf.html#ga92e0819075bd91dc380cc86a20186960">   37</a></span>&#160;<span class="preprocessor">#define CHPRINTF_USE_FLOAT          TRUE</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__chprintf.html#ga741317a25ba4d8c7bcc132bd2ccabac1">directchprintf</a>(BaseSequentialStream *chp, <span class="keyword">const</span> <span class="keywordtype">char</span> *fmt, ...);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__chprintf.html#ga6ab3aab7068a955278da45c63b02bc4d">directchvprintf</a>(BaseSequentialStream *chp, <span class="keyword">const</span> <span class="keywordtype">char</span> *fmt, va_list ap);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">//  __attribute__ ((format (printf, 2, 3)));</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__chprintf.html#ga561a2515db27520c8a995f2f2213aed4">chvsnprintf</a>(<span class="keywordtype">char</span> *buffer, <span class="keywordtype">size_t</span> size, <span class="keyword">const</span> <span class="keywordtype">char</span> *fmt, va_list ap);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__chprintf.html#gabe5c0e0148763ecfd7829f6129f29e0a">chsnprintf</a>(<span class="keywordtype">char</span> *buffer, <span class="keywordtype">size_t</span> size, <span class="keyword">const</span> <span class="keywordtype">char</span> *fmt, ...);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">// __attribute__ ((format (printf, 3, 4)));</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__chprintf.html#gac84c97ff3243a8aa49289a3abc53f010">chprintf</a>(BaseSequentialStream *lchp, <span class="keyword">const</span> <span class="keywordtype">char</span> *fmt, ...) ;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__chprintf.html#gad88171c5e97371e1da27a5cc1a735285">chvprintf</a>(BaseSequentialStream *lchp, <span class="keyword">const</span> <span class="keywordtype">char</span> *fmt, va_list ap);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__chprintf.html#ga508e06db6508345345c73a5523343bed">smchsnprintf</a>(<span class="keywordtype">char</span> *buffer, <span class="keywordtype">size_t</span> size, <span class="keyword">const</span> <span class="keywordtype">char</span> *fmt, ...);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__chprintf.html#ga9199aabf4df69c18ea85d1030d44ce68">smchvsnprintf</a>(<span class="keywordtype">char</span> *buffer, <span class="keywordtype">size_t</span> size, <span class="keyword">const</span> <span class="keywordtype">char</span> *fmt, va_list ap);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _PRINTF_H_ */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &lt;ch.h&gt;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &lt;hal.h&gt;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#if !defined(CHPRINTF_USE_FLOAT) || defined(__DOXYGEN__)</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="group__chprintf.html#ga92e0819075bd91dc380cc86a20186960">   40</a></span>&#160;<span class="preprocessor">#define CHPRINTF_USE_FLOAT          TRUE</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__chprintf.html#ga741317a25ba4d8c7bcc132bd2ccabac1">directchprintf</a>(BaseSequentialStream *chp, <span class="keyword">const</span> <span class="keywordtype">char</span> *fmt, ...);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__chprintf.html#ga6ab3aab7068a955278da45c63b02bc4d">directchvprintf</a>(BaseSequentialStream *chp, <span class="keyword">const</span> <span class="keywordtype">char</span> *fmt, va_list ap);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">//  __attribute__ ((format (printf, 2, 3)));</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__chprintf.html#ga561a2515db27520c8a995f2f2213aed4">chvsnprintf</a>(<span class="keywordtype">char</span> *buffer, <span class="keywordtype">size_t</span> size, <span class="keyword">const</span> <span class="keywordtype">char</span> *fmt, va_list ap);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__chprintf.html#gabe5c0e0148763ecfd7829f6129f29e0a">chsnprintf</a>(<span class="keywordtype">char</span> *buffer, <span class="keywordtype">size_t</span> size, <span class="keyword">const</span> <span class="keywordtype">char</span> *fmt, ...);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">// __attribute__ ((format (printf, 3, 4)));</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__chprintf.html#gac84c97ff3243a8aa49289a3abc53f010">chprintf</a>(BaseSequentialStream *lchp, <span class="keyword">const</span> <span class="keywordtype">char</span> *fmt, ...) ;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__chprintf.html#gad88171c5e97371e1da27a5cc1a735285">chvprintf</a>(BaseSequentialStream *lchp, <span class="keyword">const</span> <span class="keywordtype">char</span> *fmt, va_list ap);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__chprintf.html#ga508e06db6508345345c73a5523343bed">smchsnprintf</a>(<span class="keywordtype">char</span> *buffer, <span class="keywordtype">size_t</span> size, <span class="keyword">const</span> <span class="keywordtype">char</span> *fmt, ...);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__chprintf.html#ga9199aabf4df69c18ea85d1030d44ce68">smchvsnprintf</a>(<span class="keywordtype">char</span> *buffer, <span class="keywordtype">size_t</span> size, <span class="keyword">const</span> <span class="keywordtype">char</span> *fmt, va_list ap);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _PRINTF_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
 <div class="ttc" id="group__chprintf_html_ga6ab3aab7068a955278da45c63b02bc4d"><div class="ttname"><a href="group__chprintf.html#ga6ab3aab7068a955278da45c63b02bc4d">directchvprintf</a></div><div class="ttdeci">void directchvprintf(BaseSequentialStream *chp, const char *fmt, va_list ap)</div><div class="ttdef"><b>Definition:</b> <a href="printf_8c_source.html#l00367">printf.c:367</a></div></div>
 <div class="ttc" id="group__chprintf_html_gabe5c0e0148763ecfd7829f6129f29e0a"><div class="ttname"><a href="group__chprintf.html#gabe5c0e0148763ecfd7829f6129f29e0a">chsnprintf</a></div><div class="ttdeci">void chsnprintf(char *buffer, size_t size, const char *fmt,...)</div><div class="ttdef"><b>Definition:</b> <a href="printf_8c_source.html#l00377">printf.c:377</a></div></div>
 <div class="ttc" id="group__chprintf_html_gac84c97ff3243a8aa49289a3abc53f010"><div class="ttname"><a href="group__chprintf.html#gac84c97ff3243a8aa49289a3abc53f010">chprintf</a></div><div class="ttdeci">void chprintf(BaseSequentialStream *lchp, const char *fmt,...)</div><div class="ttdef"><b>Definition:</b> <a href="printf_8c_source.html#l00395">printf.c:395</a></div></div>
@@ -171,7 +174,7 @@ $(document).ready(function(){initNavTree('printf_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_cbf4be70f5fb954ea1d2a546dd70b40e.html">loggers</a></li><li class="navelem"><a class="el" href="dir_c27662836f6a804eadd3e3b5df5506a4.html">sdlog_chibios</a></li><li class="navelem"><a class="el" href="printf_8h.html">printf.h</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:01:25 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:01:42 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

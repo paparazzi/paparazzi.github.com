@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -117,15 +117,42 @@ Module configuration options</h1>
 Configure Options</h2>
 <ul>
 <li><b>name:</b> <code>MODEM_PORT</code> <b>value:</b> <em>UARTx</em> <br />
- Description: UART where the modem is connected to (UART1, UART2, etc</li>
+ Description: UART where the modem is connected to (UART1, UART2, etc)</li>
 <li><b>name:</b> <code>MODEM_BAUD</code> <b>value:</b> <em>B57600</em> <br />
  Description: UART baud rate</li>
 </ul>
+<h1><a class="anchor" id="autoloads__telemetry_transparent"></a>
+Auto-loaded modules</h1>
+<p>The following modules are automatically loaded (just as if you had added them in the airframe file)</p><ul>
+<li>module__telemetrynps</li>
+<li>module__telemetrysim </li>
+</ul>
+<h1><a class="anchor" id="functions__telemetry_transparent"></a>
+Module functions</h1>
+<h2><a class="anchor" id="init_functions"></a>
+Init Functions</h2>
+<p>These initialization functions are called once on startup.</p>
+<ul>
+<li><a class="el" href="pprz__dl_8c.html#a6d36e01500ee43587013813aacb843c2" title="Init function. ">pprz_dl_init()</a></li>
+</ul>
+<h2><a class="anchor" id="event_functions"></a>
+Event Functions</h2>
+<p>These event functions are called in each cycle of the module event loop.</p>
+<ul>
+<li><a class="el" href="pprz__dl_8c.html#adfe1564dac687b426549de7dfe029931" title="Datalink Event. ">pprz_dl_event()</a></li>
+</ul>
 <h1><a class="anchor" id="files"></a>
 Files</h1>
+<h2><a class="anchor" id="headers"></a>
+Header Files</h2>
+<p>The following headers are automatically included in modules.h</p>
+<ul>
+<li><a class="el" href="pprz__dl_8h.html">pprz_dl.h</a></li>
+</ul>
 <h2><a class="anchor" id="sources"></a>
 Source Files</h2>
 <ul>
+<li><a class="el" href="pprz__dl_8c.html">modules/datalink/pprz_dl.c</a></li>
 <li><a class="el" href="downlink_8c.html">subsystems/datalink/downlink.c</a></li>
 <li><a class="el" href="datalink_8c.html">subsystems/datalink/datalink.c</a></li>
 <li><a class="el" href="telemetry_8c.html">subsystems/datalink/telemetry.c</a></li>
@@ -140,18 +167,24 @@ Source Files</h2>
 Raw telemetry_transparent.xml file:</h2>
 <div class="fragment"><div class="line">&lt;!DOCTYPE module SYSTEM &quot;module.dtd&quot;&gt;</div>
 <div class="line"></div>
-<div class="line">&lt;module name=&quot;telemetry_transparent&quot; dir=&quot;datalink&quot;&gt;</div>
+<div class="line">&lt;module name=&quot;telemetry_transparent&quot; dir=&quot;datalink&quot; task=&quot;datalink&quot;&gt;</div>
 <div class="line">  &lt;doc&gt;</div>
 <div class="line">    &lt;description&gt;</div>
 <div class="line">      Telemetry using PPRZ protocol over UART</div>
 <div class="line"></div>
 <div class="line">      Currently used as a makefile wrapper over the telemetry_transparent subsystem</div>
 <div class="line">    &lt;/description&gt;</div>
-<div class="line">    &lt;configure name=&quot;MODEM_PORT&quot; value=&quot;UARTx&quot; description=&quot;UART where the modem is connected to (UART1, UART2, etc&quot;/&gt;</div>
+<div class="line">    &lt;configure name=&quot;MODEM_PORT&quot; value=&quot;UARTx&quot; description=&quot;UART where the modem is connected to (UART1, UART2, etc)&quot;/&gt;</div>
 <div class="line">    &lt;configure name=&quot;MODEM_BAUD&quot; value=&quot;B57600&quot; description=&quot;UART baud rate&quot;/&gt;</div>
 <div class="line">  &lt;/doc&gt;</div>
-<div class="line">  &lt;header/&gt;</div>
-<div class="line">  &lt;makefile target=&quot;!fbw|sim|nps&quot;&gt;</div>
+<div class="line">  &lt;autoload name=&quot;telemetry&quot; type=&quot;nps&quot;/&gt;</div>
+<div class="line">  &lt;autoload name=&quot;telemetry&quot; type=&quot;sim&quot;/&gt;</div>
+<div class="line">  &lt;header&gt;</div>
+<div class="line">    &lt;file name=&quot;pprz_dl.h&quot;/&gt;</div>
+<div class="line">  &lt;/header&gt;</div>
+<div class="line">  &lt;init fun=&quot;pprz_dl_init()&quot;/&gt;</div>
+<div class="line">  &lt;event fun=&quot;pprz_dl_event()&quot;/&gt;</div>
+<div class="line">  &lt;makefile target=&quot;!fbw|sim|nps|hitl&quot;&gt;</div>
 <div class="line">    &lt;configure name=&quot;MODEM_PORT&quot; case=&quot;upper|lower&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;USE_$(MODEM_PORT_UPPER)&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;$(MODEM_PORT_UPPER)_BAUD&quot; value=&quot;$(MODEM_BAUD)&quot;/&gt;</div>
@@ -161,6 +194,7 @@ Raw telemetry_transparent.xml file:</h2>
 <div class="line">    &lt;define name=&quot;PPRZ_UART&quot; value=&quot;$(MODEM_PORT_LOWER)&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;DOWNLINK_TRANSPORT&quot; value=&quot;pprz_tp&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;DATALINK&quot; value=&quot;PPRZ&quot;/&gt;</div>
+<div class="line">    &lt;file name=&quot;pprz_dl.c&quot;/&gt;</div>
 <div class="line">    &lt;file name=&quot;downlink.c&quot; dir=&quot;subsystems/datalink&quot;/&gt;</div>
 <div class="line">    &lt;file name=&quot;datalink.c&quot; dir=&quot;subsystems/datalink&quot;/&gt;</div>
 <div class="line">    &lt;file name=&quot;telemetry.c&quot; dir=&quot;subsystems/datalink&quot;/&gt;</div>
@@ -185,7 +219,7 @@ Raw telemetry_transparent.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:02:19 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:02:50 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

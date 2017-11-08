@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -106,6 +106,7 @@ $(document).ready(function(){initNavTree('linux_2mcu__periph_2gpio__arch_8h.html
 
 <div class="header">
   <div class="summary">
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">gpio_arch.h File Reference</div>  </div>
@@ -124,9 +125,23 @@ $(document).ready(function(){initNavTree('linux_2mcu__periph_2gpio__arch_8h.html
 <map name="sw_2airborne_2arch_2linux_2mcu__periph_2gpio__arch_8h" id="sw_2airborne_2arch_2linux_2mcu__periph_2gpio__arch_8h">
 </map>
 </div>
+</div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="linux_2mcu__periph_2gpio__arch_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2arch_2linux_2mcu__periph_2gpio__arch_8hdep" alt=""/></div>
+<map name="sw_2airborne_2arch_2linux_2mcu__periph_2gpio__arch_8hdep" id="sw_2airborne_2arch_2linux_2mcu__periph_2gpio__arch_8hdep">
+<area shape="rect" id="node2" href="linux_2mcu__periph_2gpio__arch_8c.html" title="GPIO helper functions for linux/omap. " alt="" coords="5,95,184,136"/></map>
+</div>
 </div>
 <p><a href="linux_2mcu__periph_2gpio__arch_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a0b1ea4c5dcb8c89237166d2e62be42de"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2mcu__periph_2gpio__arch_8h.html#a0b1ea4c5dcb8c89237166d2e62be42de">gpio_port_t</a></td></tr>
+<tr class="separator:a0b1ea4c5dcb8c89237166d2e62be42de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a5b778ed65199db17a02961791e4ee8b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2mcu__periph_2gpio__arch_8h.html#a5b778ed65199db17a02961791e4ee8b8">gpio_setup_output</a> (<a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> port, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> gpios)</td></tr>
@@ -147,10 +162,25 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>GPIO helper functions for linux/omap. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo:</a></b></dt><dd>implement gpio_set|clear </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Todo:</a></b></dt><dd>implement gpio_set|clear </dd></dl>
 
 <p>Definition in file <a class="el" href="linux_2mcu__periph_2gpio__arch_8h_source.html">gpio_arch.h</a>.</p>
-</div><h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Typedef Documentation</h2>
+<a class="anchor" id="a0b1ea4c5dcb8c89237166d2e62be42de"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> <a class="el" href="chibios_2mcu__periph_2gpio__arch_8h.html#a9b70aff93b967dba18363c475eba9e03">gpio_port_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="linux_2mcu__periph_2gpio__arch_8h_source.html#l00034">34</a> of file <a class="el" href="linux_2mcu__periph_2gpio__arch_8h_source.html">gpio_arch.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="aa94dfa6db378d98566e22e193c7a8ab7"></a>
 <div class="memitem">
 <div class="memproto">
@@ -177,7 +207,7 @@ Functions</h2></td></tr>
 
 <p>Clear a gpio output to low level. </p>
 
-<p>Definition at line <a class="el" href="gpio__ardrone_8c_source.html#l00070">70</a> of file <a class="el" href="gpio__ardrone_8c_source.html">gpio_ardrone.c</a>.</p>
+<p>Definition at line <a class="el" href="linux_2mcu__periph_2gpio__arch_8c_source.html#l00037">37</a> of file <a class="el" href="linux_2mcu__periph_2gpio__arch_8c_source.html">gpio_arch.c</a>.</p>
 
 <p>References <a class="el" href="gpio__ardrone_8c_source.html#l00034">GPIO_WRITE</a>, <a class="el" href="gpio__ardrone_8c_source.html#l00035">gpiofp</a>, <a class="el" href="gpio__ardrone_8c_source.html#l00038">gpio_data::pin</a>, and <a class="el" href="gpio__ardrone_8c_source.html#l00039">gpio_data::value</a>.</p>
 
@@ -209,7 +239,7 @@ Functions</h2></td></tr>
 
 <p>Read a gpio value. </p>
 
-<p>Definition at line <a class="el" href="gpio__ardrone_8c_source.html#l00120">120</a> of file <a class="el" href="gpio__ardrone_8c_source.html">gpio_ardrone.c</a>.</p>
+<p>Definition at line <a class="el" href="linux_2mcu__periph_2gpio__arch_8c_source.html#l00039">39</a> of file <a class="el" href="linux_2mcu__periph_2gpio__arch_8c_source.html">gpio_arch.c</a>.</p>
 
 <p>References <a class="el" href="gpio__ardrone_8c_source.html#l00033">GPIO_READ</a>, <a class="el" href="gpio__ardrone_8c_source.html#l00035">gpiofp</a>, <a class="el" href="gpio__ardrone_8c_source.html#l00038">gpio_data::pin</a>, and <a class="el" href="gpio__ardrone_8c_source.html#l00039">gpio_data::value</a>.</p>
 
@@ -241,7 +271,7 @@ Functions</h2></td></tr>
 
 <p>Set a gpio output to high level. </p>
 
-<p>Definition at line <a class="el" href="gpio__ardrone_8c_source.html#l00054">54</a> of file <a class="el" href="gpio__ardrone_8c_source.html">gpio_ardrone.c</a>.</p>
+<p>Definition at line <a class="el" href="linux_2mcu__periph_2gpio__arch_8c_source.html#l00035">35</a> of file <a class="el" href="linux_2mcu__periph_2gpio__arch_8c_source.html">gpio_arch.c</a>.</p>
 
 <p>References <a class="el" href="gpio__ardrone_8c_source.html#l00034">GPIO_WRITE</a>, <a class="el" href="gpio__ardrone_8c_source.html#l00035">gpiofp</a>, <a class="el" href="gpio__ardrone_8c_source.html#l00038">gpio_data::pin</a>, and <a class="el" href="gpio__ardrone_8c_source.html#l00039">gpio_data::value</a>.</p>
 
@@ -280,7 +310,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="gpio__ardrone_8c_source.html#l00086">86</a> of file <a class="el" href="gpio__ardrone_8c_source.html">gpio_ardrone.c</a>.</p>
+<p>Definition at line <a class="el" href="linux_2mcu__periph_2gpio__arch_8c_source.html#l00033">33</a> of file <a class="el" href="linux_2mcu__periph_2gpio__arch_8c_source.html">gpio_arch.c</a>.</p>
 
 </div>
 </div>
@@ -317,7 +347,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="gpio__ardrone_8c_source.html#l00102">102</a> of file <a class="el" href="gpio__ardrone_8c_source.html">gpio_ardrone.c</a>.</p>
+<p>Definition at line <a class="el" href="linux_2mcu__periph_2gpio__arch_8c_source.html#l00031">31</a> of file <a class="el" href="linux_2mcu__periph_2gpio__arch_8c_source.html">gpio_arch.c</a>.</p>
 
 </div>
 </div>
@@ -327,7 +357,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_92fbf38b8c893a0928a3445a75d0ac01.html">linux</a></li><li class="navelem"><a class="el" href="dir_7cedabfb4d36d0fdf06823c7fd9084fc.html">mcu_periph</a></li><li class="navelem"><a class="el" href="linux_2mcu__periph_2gpio__arch_8h.html">gpio_arch.h</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:01:36 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:01:54 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

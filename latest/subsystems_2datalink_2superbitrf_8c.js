@@ -9,6 +9,8 @@ var subsystems_2datalink_2superbitrf_8c =
     [ "null_function", "subsystems_2datalink_2superbitrf_8c.html#a8f4467bfe6fde05aa3f86bc87c6aa13f", null ],
     [ "send_superbit", "subsystems_2datalink_2superbitrf_8c.html#ac3d60cdf3bfba959b6f27342e99aa3b7", null ],
     [ "superbitrf_check_free_space", "subsystems_2datalink_2superbitrf_8c.html#aa66ddfcb221bb28bb84ac599fbbee9f3", null ],
+    [ "superbitrf_dl_event", "subsystems_2datalink_2superbitrf_8c.html#a06a950af7255fea459d7c6de8c8c0cad", null ],
+    [ "superbitrf_dl_init", "subsystems_2datalink_2superbitrf_8c.html#a6714bbf604e39f172a0686abe3d6f6c2", null ],
     [ "superbitrf_event", "subsystems_2datalink_2superbitrf_8c.html#a3dba487ecc02fb6e7bdde994032fd795", null ],
     [ "superbitrf_gen_dsmx_channels", "subsystems_2datalink_2superbitrf_8c.html#a6b5bc9267521d705d992c32bd447f2e8", null ],
     [ "superbitrf_init", "subsystems_2datalink_2superbitrf_8c.html#a7b9a2741375ca1dffc4f2e6a6d7a9307", null ],
@@ -27,5 +29,6 @@ var subsystems_2datalink_2superbitrf_8c =
     [ "cyrf_transfer_config", "subsystems_2datalink_2superbitrf_8c.html#ab7cad7b2b636d70ece62e9cede876603", null ],
     [ "pn_bind", "subsystems_2datalink_2superbitrf_8c.html#a5be6b26c1e951b77db6faaa1e73753a4", null ],
     [ "pn_codes", "subsystems_2datalink_2superbitrf_8c.html#aaf55d217cae95639a912876ea383e8d3", null ],
+    [ "pprz_srf_tp", "subsystems_2datalink_2superbitrf_8c.html#a8ca003cf8a7ffde99a9c8feb253d89d7", null ],
     [ "superbitrf", "subsystems_2datalink_2superbitrf_8c.html#a3de4c224554ac6608830085912a98b86", null ]
 ];

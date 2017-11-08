@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -186,7 +186,7 @@ $(document).ready(function(){initNavTree('actuators__asctec_8h_source.html','');
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
 <div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="actuators__asctec_8h.html#a51ed5541f172177fb696ad4c54b4a0fd">   80</a></span>&#160;<span class="preprocessor">#define ActuatorAsctecSet(_i, _v) { actuators_asctec.cmds[_i] = _v; }</span></div>
 <div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="actuators__asctec_8h.html#a3505965ab607898b508887fd73d2356e">   81</a></span>&#160;<span class="preprocessor">#define ActuatorsAsctecInit() actuators_asctec_init()</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="actuators__asctec_8h.html#a22f9e74ba355be337eda7df43fdc012d">   82</a></span>&#160;<span class="preprocessor">#define ActuatorsAsctecCommit() actuators_asctec_set(autopilot_motors_on)</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="actuators__asctec_8h.html#a22f9e74ba355be337eda7df43fdc012d">   82</a></span>&#160;<span class="preprocessor">#define ActuatorsAsctecCommit() actuators_asctec_set(autopilot_get_motors_on())</span></div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* ACTUATORS_ASCTEC_H */</span><span class="preprocessor"></span></div>
@@ -226,7 +226,7 @@ $(document).ready(function(){initNavTree('actuators__asctec_8h_source.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_27687546688cef5dbb42803ce993f4c4.html">actuators</a></li><li class="navelem"><a class="el" href="actuators__asctec_8h.html">actuators_asctec.h</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:01:31 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:01:48 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

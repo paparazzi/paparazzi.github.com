@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -141,7 +141,7 @@ Functions</h2></td></tr>
 <tr class="memitem:af9d29d8c0da1d82530a5ed4f240e969a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pprz__matrix__decomp__float_8h.html#af9d29d8c0da1d82530a5ed4f240e969a">pprz_cholesky_float</a> (float **out, float **in, int n)</td></tr>
 <tr class="memdesc:af9d29d8c0da1d82530a5ed4f240e969a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cholesky decomposition.  <a href="#af9d29d8c0da1d82530a5ed4f240e969a">More...</a><br /></td></tr>
 <tr class="separator:af9d29d8c0da1d82530a5ed4f240e969a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4f442e8bd54d74ee9437a738788e186"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pprz__matrix__decomp__float_8h.html#ad4f442e8bd54d74ee9437a738788e186">pprz_qr_float</a> (float **<a class="el" href="hf__float_8c.html#acbcee443d6d55cb8600b3f240f5cf907">Q</a>, float **R, float **in, int m, int n)</td></tr>
+<tr class="memitem:ad4f442e8bd54d74ee9437a738788e186"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pprz__matrix__decomp__float_8h.html#ad4f442e8bd54d74ee9437a738788e186">pprz_qr_float</a> (float **Q, float **R, float **in, int m, int n)</td></tr>
 <tr class="memdesc:ad4f442e8bd54d74ee9437a738788e186"><td class="mdescLeft">&#160;</td><td class="mdescRight">QR decomposition.  <a href="#ad4f442e8bd54d74ee9437a738788e186">More...</a><br /></td></tr>
 <tr class="separator:ad4f442e8bd54d74ee9437a738788e186"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ef015d22c1f50265978a23b21d13e8a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pprz__matrix__decomp__float_8h.html#a9ef015d22c1f50265978a23b21d13e8a">pprz_svd_float</a> (float **a, float *w, float **v, int m, int n)</td></tr>
@@ -199,7 +199,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="pprz__matrix__decomp__float_8c_source.html#l00040">40</a> of file <a class="el" href="pprz__matrix__decomp__float_8c_source.html">pprz_matrix_decomp_float.c</a>.</p>
 
-<p>References <a class="el" href="pprz__algebra__float_8h_source.html#l00603">float_mat_copy()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00594">float_mat_zero()</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00586">MAKE_MATRIX_PTR</a>.</p>
+<p>References <a class="el" href="pprz__algebra__float_8h_source.html#l00635">float_mat_copy()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00626">float_mat_zero()</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00616">MAKE_MATRIX_PTR</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -284,7 +284,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="pprz__matrix__decomp__float_8c_source.html#l00073">73</a> of file <a class="el" href="pprz__matrix__decomp__float_8c_source.html">pprz_matrix_decomp_float.c</a>.</p>
 
-<p>References <a class="el" href="pprz__algebra__float_8h_source.html#l00694">float_mat_col()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00603">float_mat_copy()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00667">float_mat_minor()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00648">float_mat_mul()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00630">float_mat_transpose()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00680">float_mat_vmul()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00571">float_vect_norm()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00562">float_vect_sdiv()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00160">Int32RMat::m</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00586">MAKE_MATRIX_PTR</a>.</p>
+<p>References <a class="el" href="pprz__algebra__float_8h_source.html#l00726">float_mat_col()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00635">float_mat_copy()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00699">float_mat_minor()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00680">float_mat_mul()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00662">float_mat_transpose()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00712">float_mat_vmul()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00585">float_vect_norm()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00576">float_vect_sdiv()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00160">Int32RMat::m</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00616">MAKE_MATRIX_PTR</a>.</p>
 
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -373,9 +373,9 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="pprz__matrix__decomp__float_8c_source.html#l00147">147</a> of file <a class="el" href="pprz__matrix__decomp__float_8c_source.html">pprz_matrix_decomp_float.c</a>.</p>
 
-<p>References <a class="el" href="pprz__algebra__int_8h_source.html#l00160">Int32RMat::m</a>, and <a class="el" href="pprz__matrix__decomp__float_8c_source.html#l00112">pythag()</a>.</p>
+<p>References <a class="el" href="mag__calib__ukf_8c_source.html#l00127">H</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00160">Int32RMat::m</a>, <a class="el" href="pprz__matrix__decomp__float_8c_source.html#l00112">pythag()</a>, <a class="el" href="mesonh__atmosphere_8py_source.html#l00043">mesonh.mesonh_atmosphere::X</a>, <a class="el" href="mesonh__atmosphere_8py_source.html#l00044">mesonh.mesonh_atmosphere::Y</a>, and <a class="el" href="mesonh__atmosphere_8py_source.html#l00045">mesonh.mesonh_atmosphere::Z</a>.</p>
 
-<p>Referenced by <a class="el" href="linear__flow__fit_8c_source.html#l00105">fit_linear_flow_field()</a>, and <a class="el" href="pprz__polyfit__float_8c_source.html#l00063">pprz_polyfit_float()</a>.</p>
+<p>Referenced by <a class="el" href="linear__flow__fit_8c_source.html#l00103">fit_linear_flow_field()</a>, and <a class="el" href="pprz__polyfit__float_8c_source.html#l00063">pprz_polyfit_float()</a>.</p>
 
 <p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -395,7 +395,7 @@ Functions</h2></td></tr>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="pprz__matrix__decomp__float_8h_a9ef015d22c1f50265978a23b21d13e8a_icgraph.png" border="0" usemap="#pprz__matrix__decomp__float_8h_a9ef015d22c1f50265978a23b21d13e8a_icgraph" alt=""/></div>
 <map name="pprz__matrix__decomp__float_8h_a9ef015d22c1f50265978a23b21d13e8a_icgraph" id="pprz__matrix__decomp__float_8h_a9ef015d22c1f50265978a23b21d13e8a_icgraph">
-<area shape="rect" id="node2" href="linear__flow__fit_8h.html#a4a796ceb3a2c8c6ee52e0f80d7306ced" title="Analyze a linear flow field, retrieving information such as divergence, surface roughness, focus of expansion, etc. " alt="" coords="168,13,308,39"/><area shape="rect" id="node8" href="pprz__polyfit__float_8h.html#abfdb5a4da651dc25d7361010d48ea2fa" title="Polynomial regression. " alt="" coords="173,63,303,90"/><area shape="rect" id="node3" href="linear__flow__fit_8h.html#aa4c5db404c7e5f3a1e89ce298b6c7b4b" title="Analyze a linear flow field, retrieving information such as divergence, surface roughness, focus of expansion, etc. " alt="" coords="356,5,500,47"/><area shape="rect" id="node4" href="opticflow__calculator_8h.html#ab394463bc481d71e14ae92b730c1bad0" title="Run the optical flow with fast9 and lukaskanade on a new image frame. " alt="" coords="548,13,728,39"/><area shape="rect" id="node5" href="opticflow__calculator_8h.html#aee6bfa400248db0fad131de276c15783" title="Run the optical flow on a new image frame. " alt="" coords="776,13,931,39"/><area shape="rect" id="node6" href="opticflow__module_8c.html#a36b69a7ec255d2d20bb31b6d13e3e567" title="The main optical flow calculation thread. " alt="" coords="979,13,1143,39"/><area shape="rect" id="node7" href="opticflow__module_8h.html#a6026660ee86fbb1f72bada581386e6d9" title="Initialize the optical flow module for the bottom camera. " alt="" coords="1191,13,1349,39"/></map>
+<area shape="rect" id="node2" href="linear__flow__fit_8h.html#a4a796ceb3a2c8c6ee52e0f80d7306ced" title="Analyze a linear flow field, retrieving information such as divergence, surface roughness, focus of expansion, etc. " alt="" coords="168,13,308,39"/><area shape="rect" id="node8" href="pprz__polyfit__float_8h.html#abfdb5a4da651dc25d7361010d48ea2fa" title="Polynomial regression. " alt="" coords="173,63,303,90"/><area shape="rect" id="node3" href="linear__flow__fit_8h.html#ac1c609f9975078816d4dd4862d94833b" title="Analyze a linear flow field, retrieving information such as divergence, surface roughness, focus of expansion, etc. " alt="" coords="356,5,500,47"/><area shape="rect" id="node4" href="opticflow__calculator_8h.html#a3edff14cc7f95b5202ba6841a12dfed3" title="Run the optical flow with fast9 and lukaskanade on a new image frame. " alt="" coords="548,13,728,39"/><area shape="rect" id="node5" href="opticflow__calculator_8h.html#a89e51af8fe5a0f534193635d181a2086" title="Run the optical flow on a new image frame. " alt="" coords="776,13,931,39"/><area shape="rect" id="node6" href="opticflow__module_8c.html#a36b69a7ec255d2d20bb31b6d13e3e567" title="The main optical flow calculation thread. " alt="" coords="979,13,1143,39"/><area shape="rect" id="node7" href="opticflow__module_8h.html#a6026660ee86fbb1f72bada581386e6d9" title="Initialize the optical flow module for the bottom camera. " alt="" coords="1191,13,1349,39"/></map>
 </div>
 </p>
 
@@ -481,7 +481,7 @@ Functions</h2></td></tr>
 
 <p>References <a class="el" href="pprz__algebra__int_8h_source.html#l00160">Int32RMat::m</a>.</p>
 
-<p>Referenced by <a class="el" href="linear__flow__fit_8c_source.html#l00105">fit_linear_flow_field()</a>, and <a class="el" href="pprz__polyfit__float_8c_source.html#l00063">pprz_polyfit_float()</a>.</p>
+<p>Referenced by <a class="el" href="linear__flow__fit_8c_source.html#l00103">fit_linear_flow_field()</a>, and <a class="el" href="pprz__polyfit__float_8c_source.html#l00063">pprz_polyfit_float()</a>.</p>
 
 <p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -490,7 +490,7 @@ Functions</h2></td></tr>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="pprz__matrix__decomp__float_8h_a232890252a145ccc1a0dd849bf13cb67_icgraph.png" border="0" usemap="#pprz__matrix__decomp__float_8h_a232890252a145ccc1a0dd849bf13cb67_icgraph" alt=""/></div>
 <map name="pprz__matrix__decomp__float_8h_a232890252a145ccc1a0dd849bf13cb67_icgraph" id="pprz__matrix__decomp__float_8h_a232890252a145ccc1a0dd849bf13cb67_icgraph">
-<area shape="rect" id="node2" href="linear__flow__fit_8h.html#a4a796ceb3a2c8c6ee52e0f80d7306ced" title="Analyze a linear flow field, retrieving information such as divergence, surface roughness, focus of expansion, etc. " alt="" coords="208,13,348,39"/><area shape="rect" id="node8" href="pprz__polyfit__float_8h.html#abfdb5a4da651dc25d7361010d48ea2fa" title="Polynomial regression. " alt="" coords="213,63,343,90"/><area shape="rect" id="node3" href="linear__flow__fit_8h.html#aa4c5db404c7e5f3a1e89ce298b6c7b4b" title="Analyze a linear flow field, retrieving information such as divergence, surface roughness, focus of expansion, etc. " alt="" coords="396,5,540,47"/><area shape="rect" id="node4" href="opticflow__calculator_8h.html#ab394463bc481d71e14ae92b730c1bad0" title="Run the optical flow with fast9 and lukaskanade on a new image frame. " alt="" coords="588,13,768,39"/><area shape="rect" id="node5" href="opticflow__calculator_8h.html#aee6bfa400248db0fad131de276c15783" title="Run the optical flow on a new image frame. " alt="" coords="816,13,971,39"/><area shape="rect" id="node6" href="opticflow__module_8c.html#a36b69a7ec255d2d20bb31b6d13e3e567" title="The main optical flow calculation thread. " alt="" coords="1019,13,1183,39"/><area shape="rect" id="node7" href="opticflow__module_8h.html#a6026660ee86fbb1f72bada581386e6d9" title="Initialize the optical flow module for the bottom camera. " alt="" coords="1231,13,1389,39"/></map>
+<area shape="rect" id="node2" href="linear__flow__fit_8h.html#a4a796ceb3a2c8c6ee52e0f80d7306ced" title="Analyze a linear flow field, retrieving information such as divergence, surface roughness, focus of expansion, etc. " alt="" coords="208,13,348,39"/><area shape="rect" id="node8" href="pprz__polyfit__float_8h.html#abfdb5a4da651dc25d7361010d48ea2fa" title="Polynomial regression. " alt="" coords="213,63,343,90"/><area shape="rect" id="node3" href="linear__flow__fit_8h.html#ac1c609f9975078816d4dd4862d94833b" title="Analyze a linear flow field, retrieving information such as divergence, surface roughness, focus of expansion, etc. " alt="" coords="396,5,540,47"/><area shape="rect" id="node4" href="opticflow__calculator_8h.html#a3edff14cc7f95b5202ba6841a12dfed3" title="Run the optical flow with fast9 and lukaskanade on a new image frame. " alt="" coords="588,13,768,39"/><area shape="rect" id="node5" href="opticflow__calculator_8h.html#a89e51af8fe5a0f534193635d181a2086" title="Run the optical flow on a new image frame. " alt="" coords="816,13,971,39"/><area shape="rect" id="node6" href="opticflow__module_8c.html#a36b69a7ec255d2d20bb31b6d13e3e567" title="The main optical flow calculation thread. " alt="" coords="1019,13,1183,39"/><area shape="rect" id="node7" href="opticflow__module_8h.html#a6026660ee86fbb1f72bada581386e6d9" title="Initialize the optical flow module for the bottom camera. " alt="" coords="1231,13,1389,39"/></map>
 </div>
 </p>
 
@@ -502,7 +502,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_29343b6f5fcd4b75a5dfbb985ff56864.html">math</a></li><li class="navelem"><a class="el" href="pprz__matrix__decomp__float_8h.html">pprz_matrix_decomp_float.h</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:01:51 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:02:14 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

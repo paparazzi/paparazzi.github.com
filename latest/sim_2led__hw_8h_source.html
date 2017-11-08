@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -118,15 +118,18 @@ $(document).ready(function(){initNavTree('sim_2led__hw_8h_source.html','');});
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;caml/callback.h&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">extern</span> value *<a class="code" href="sim_2led__hw_8h.html#ae292f9d2a858553831b8f8934ba4d2fd">leds_closure</a>;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="sim_2led__hw_8h.html#a49b662104f8fa2b8fa86ea80e94c3d6b">   11</a></span>&#160;<span class="preprocessor">#define LED_INIT(i) { }</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="sim_2led__hw_8h.html#a3ab823c4004d96d154dfb8f69d18c47a">   12</a></span>&#160;<span class="preprocessor">#define LED_ON(i) { if (leds_closure) callback2(*leds_closure, Val_int(i), Val_int(1)); }</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="sim_2led__hw_8h.html#a76c86a9c700e32e68f48f85271970b7f">   13</a></span>&#160;<span class="preprocessor">#define LED_OFF(i) { if (leds_closure) callback2(*leds_closure, Val_int(i), Val_int(0)); }</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="sim_2led__hw_8h.html#afd0bf6b0eebb00641365dc389a9fc449">   14</a></span>&#160;<span class="preprocessor">#define LED_TOGGLE(i) { if (leds_closure) callback2(*leds_closure, Val_int(i), Val_int(2)); }</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="sim_2led__hw_8h.html#aec278ae20b30da80a2fcdcee9d51571b">   16</a></span>&#160;<span class="preprocessor">#define LED_PERIODIC() {}</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">bool</span> <a class="code" href="sim_2led__hw_8h.html#a64c76e6560c3cce05e312eb542f1c6cd">led_disable</a>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="sim_2led__hw_8h.html#a49b662104f8fa2b8fa86ea80e94c3d6b">   12</a></span>&#160;<span class="preprocessor">#define LED_INIT(i) { led_disable = false; }</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="sim_2led__hw_8h.html#a3ab823c4004d96d154dfb8f69d18c47a">   13</a></span>&#160;<span class="preprocessor">#define LED_ON(i) { if (leds_closure &amp;&amp; !led_disable) callback2(*leds_closure, Val_int(i), Val_int(1)); }</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="sim_2led__hw_8h.html#a76c86a9c700e32e68f48f85271970b7f">   14</a></span>&#160;<span class="preprocessor">#define LED_OFF(i) { if (leds_closure &amp;&amp; !led_disable) callback2(*leds_closure, Val_int(i), Val_int(0)); }</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="sim_2led__hw_8h.html#afd0bf6b0eebb00641365dc389a9fc449">   15</a></span>&#160;<span class="preprocessor">#define LED_TOGGLE(i) { if (leds_closure &amp;&amp; !led_disable) callback2(*leds_closure, Val_int(i), Val_int(2)); }</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="sim_2led__hw_8h.html#a8883d7ef721064fc83a6817add5ad3a9">   16</a></span>&#160;<span class="preprocessor">#define LED_DISABLE(i) { LED_OFF(i); led_disable = true; }</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* LED_HW_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="sim_2led__hw_8h.html#aec278ae20b30da80a2fcdcee9d51571b">   18</a></span>&#160;<span class="preprocessor">#define LED_PERIODIC() {}</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* LED_HW_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="sim_2led__hw_8h_html_a64c76e6560c3cce05e312eb542f1c6cd"><div class="ttname"><a href="sim_2led__hw_8h.html#a64c76e6560c3cce05e312eb542f1c6cd">led_disable</a></div><div class="ttdeci">bool led_disable</div><div class="ttdef"><b>Definition:</b> <a href="sim_2led__hw_8c_source.html#l00004">led_hw.c:4</a></div></div>
 <div class="ttc" id="sim_2led__hw_8h_html_ae292f9d2a858553831b8f8934ba4d2fd"><div class="ttname"><a href="sim_2led__hw_8h.html#ae292f9d2a858553831b8f8934ba4d2fd">leds_closure</a></div><div class="ttdeci">value * leds_closure</div><div class="ttdef"><b>Definition:</b> <a href="sim_2led__hw_8c_source.html#l00003">led_hw.c:3</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -134,7 +137,7 @@ $(document).ready(function(){initNavTree('sim_2led__hw_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_c87a6d12365ead88e0b90ddbc1b3c9bb.html">sim</a></li><li class="navelem"><a class="el" href="sim_2led__hw_8h.html">led_hw.h</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:01:11 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:01:25 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -6,6 +6,7 @@ var temp__adc_8c =
     [ "TEMP_ADC_SYNC_SEND", "temp__adc_8c.html#a4c68e25d2f3d54188bf998fb8876fe06", null ],
     [ "calc_lm35", "temp__adc_8c.html#a5929b5b9a76cc7b8e5254ab2c9ebcf51", null ],
     [ "calc_ntc", "temp__adc_8c.html#ad7d46c34d9cc451a4abac31cf37fb54c", null ],
+    [ "get_temp", "temp__adc_8c.html#ac90f8f853caa5cf987dfeda71ae3a44b", null ],
     [ "temp_adc_downlink", "temp__adc_8c.html#a0ce7f593e572bd6e02324239b0c80119", null ],
     [ "temp_adc_init", "temp__adc_8c.html#a266db1bf5ea82dcb94e97eb562c18473", null ],
     [ "temp_adc_periodic", "temp__adc_8c.html#ace8b2170204f3b1ea7d842c4f1e5d1f5", null ],

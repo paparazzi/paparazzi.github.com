@@ -1,5 +1,6 @@
 var stabilization__attitude__rc__setpoint_8c =
 [
+    [ "COORDINATED_TURN_AIRSPEED", "stabilization__attitude__rc__setpoint_8c.html#a3134e713e3374428c9ce1dac5ddd243b", null ],
     [ "STABILIZATION_ATTITUDE_DEADBAND_A", "stabilization__attitude__rc__setpoint_8c.html#aa0de8361674b7cea63fa619cd7a0ea8b", null ],
     [ "STABILIZATION_ATTITUDE_DEADBAND_E", "stabilization__attitude__rc__setpoint_8c.html#aad8fe9406197b3ce9ac53d117bba1ae0", null ],
     [ "YAW_DEADBAND_EXCEEDED", "stabilization__attitude__rc__setpoint_8c.html#a908110653d45fd82871ee768ffe38317", null ],

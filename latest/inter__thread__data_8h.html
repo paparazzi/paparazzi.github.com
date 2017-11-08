@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -132,7 +132,7 @@ $(document).ready(function(){initNavTree('inter__thread__data_8h.html','');});
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="inter__thread__data_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2modules_2computer__vision_2opticflow_2inter__thread__data_8hdep" alt=""/></div>
 <map name="sw_2airborne_2modules_2computer__vision_2opticflow_2inter__thread__data_8hdep" id="sw_2airborne_2modules_2computer__vision_2opticflow_2inter__thread__data_8hdep">
-<area shape="rect" id="node2" href="edge__flow_8h.html" title="calculate optical flow with EdgeFlow " alt="" coords="103,213,257,269"/><area shape="rect" id="node5" href="opticflow__calculator_8h.html" title="Calculate velocity from optic flow. " alt="" coords="214,109,405,165"/><area shape="rect" id="node3" href="edge__flow_8c.html" title="calculate optical flow with EdgeFlow " alt="" coords="5,317,160,373"/><area shape="rect" id="node4" href="opticflow__calculator_8c.html" title="Estimate velocity from optic flow. " alt="" coords="185,317,375,373"/><area shape="rect" id="node6" href="opticflow__module_8h.html" title="optical&#45;flow calculation for Parrot Drones " alt="" coords="378,213,569,269"/><area shape="rect" id="node7" href="opticflow__module_8c.html" title="optical&#45;flow based hovering for Parrot AR.Drone 2.0 " alt="" coords="399,317,590,373"/></map>
+<area shape="rect" id="node2" href="edge__flow_8h.html" title="calculate optical flow with EdgeFlow " alt="" coords="103,213,257,269"/><area shape="rect" id="node5" href="opticflow__calculator_8h.html" title="Calculate velocity from optic flow. " alt="" coords="214,109,405,165"/><area shape="rect" id="node3" href="edge__flow_8c.html" title="calculate optical flow with EdgeFlow " alt="" coords="5,317,160,373"/><area shape="rect" id="node4" href="opticflow__calculator_8c.html" title="Estimate velocity from optic flow. " alt="" coords="185,317,375,373"/><area shape="rect" id="node6" href="opticflow__module_8h.html" title="optical&#45;flow calculation for Parrot Drones " alt="" coords="378,213,569,269"/><area shape="rect" id="node7" href="opticflow__module_8c.html" title="Optical&#45;flow estimation module. " alt="" coords="399,317,590,373"/></map>
 </div>
 </div>
 <p><a href="inter__thread__data_8h_source.html">Go to the source code of this file.</a></p>
@@ -141,8 +141,6 @@ $(document).ready(function(){initNavTree('inter__thread__data_8h.html','');});
 Data Structures</h2></td></tr>
 <tr class="memitem:structopticflow__result__t"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter__thread__data_8h.html#structopticflow__result__t">opticflow_result_t</a></td></tr>
 <tr class="separator:structopticflow__result__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:structopticflow__state__t"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inter__thread__data_8h.html#structopticflow__state__t">opticflow_state_t</a></td></tr>
-<tr class="separator:structopticflow__state__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Inter-thread data structures. </p>
@@ -161,7 +159,16 @@ Data Structures</h2></td></tr>
 </div><div class="memdoc">
 <div class="textblock">
 <p>Definition at line <a class="el" href="inter__thread__data_8h_source.html#l00037">37</a> of file <a class="el" href="inter__thread__data_8h_source.html">inter_thread_data.h</a>.</p>
-</div><table class="fieldtable">
+</div><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Collaboration diagram for opticflow_result_t:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="structopticflow__result__t__coll__graph.png" border="0" usemap="#opticflow__result__t_coll__map" alt="Collaboration graph"/></div>
+<map name="opticflow__result__t_coll__map" id="opticflow__result__t_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
 <a class="anchor" id="a74c2834deac4432958a5ad0726262f1a"></a><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
@@ -198,13 +205,13 @@ The derotated flow calculation in the y direction (in subpixels) </td></tr>
 <td class="fieldname">
 flow_x</td>
 <td class="fielddoc">
-Flow in x direction from the camera (in subpixels) </td></tr>
+Flow in x direction from the camera (in subpixels) with X positive to the right. </td></tr>
 <tr><td class="fieldtype">
 <a class="anchor" id="ad6c8918293af2439402cd642dfb616fd"></a><a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a></td>
 <td class="fieldname">
 flow_y</td>
 <td class="fielddoc">
-Flow in y direction from the camera (in subpixels) </td></tr>
+Flow in y direction from the camera (in subpixels) with Y positive to the bottom. </td></tr>
 <tr><td class="fieldtype">
 <a class="anchor" id="a7ec8537092c7faeaee475bc0203e032b"></a>float</td>
 <td class="fieldname">
@@ -230,79 +237,17 @@ tracked_cnt</td>
 <td class="fielddoc">
 The amount of tracked corners. </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a70e6b2e916c219f0b44019d5e9be9828"></a>float</td>
+<a class="anchor" id="a88ce0e0601aabf3cd0c7bd46aa5e84e1"></a>struct <a class="el" href="group__math__algebra__float.html#structFloatVect3">FloatVect3</a></td>
 <td class="fieldname">
-vel_body_x</td>
+vel_body</td>
 <td class="fielddoc">
-The velocity in the x direction (body fixed coordinates) </td></tr>
+The velocity in body frame (m/s) with X positive to the front of the aircraft, Y positive to the right and Z positive downwards to the ground. </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="ae4ab1916dcc12aa4f2050473e6aae38d"></a>float</td>
+<a class="anchor" id="ad1e55d0c93a8d49b789c09bda5e8f583"></a>struct <a class="el" href="group__math__algebra__float.html#structFloatVect3">FloatVect3</a></td>
 <td class="fieldname">
-vel_body_y</td>
+vel_cam</td>
 <td class="fielddoc">
-The velocity in the y direction (body fixed coordinates) </td></tr>
-<tr><td class="fieldtype">
-<a class="anchor" id="a7c074dfb5c43f9fdf569ac5cc6e4bf84"></a>float</td>
-<td class="fieldname">
-vel_x</td>
-<td class="fielddoc">
-The velocity in the x direction (image coordinates) </td></tr>
-<tr><td class="fieldtype">
-<a class="anchor" id="ac464e79cb76ab3a83edc99fd914811cb"></a>float</td>
-<td class="fieldname">
-vel_y</td>
-<td class="fielddoc">
-The velocity in the y direction (image coordinates) </td></tr>
-</table>
-
-</div>
-</div>
-<a name="structopticflow__state__t" id="structopticflow__state__t"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct opticflow_state_t</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="textblock">
-<p>Definition at line <a class="el" href="inter__thread__data_8h_source.html#l00062">62</a> of file <a class="el" href="inter__thread__data_8h_source.html">inter_thread_data.h</a>.</p>
-</div><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Collaboration diagram for opticflow_state_t:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="structopticflow__state__t__coll__graph.png" border="0" usemap="#opticflow__state__t_coll__map" alt="Collaboration graph"/></div>
-<map name="opticflow__state__t_coll__map" id="opticflow__state__t_coll__map">
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<table class="fieldtable">
-<tr><th colspan="3">Data Fields</th></tr>
-<tr><td class="fieldtype">
-<a class="anchor" id="abac22a985b0ca572aabda0e4d9239c94"></a>struct <a class="el" href="group__math__algebra__int.html#structInt32Vect3">Int32Vect3</a></td>
-<td class="fieldname">
-accel_imu_meas</td>
-<td class="fielddoc">
-imu acceleration in imu's coordinates </td></tr>
-<tr><td class="fieldtype">
-<a class="anchor" id="a10655044c886afdd097767b8d85d3079"></a>float</td>
-<td class="fieldname">
-agl</td>
-<td class="fielddoc">
-height above ground [m] </td></tr>
-<tr><td class="fieldtype">
-<a class="anchor" id="af65952a69836c1dc4352c956e5de45e6"></a>struct <a class="el" href="group__math__algebra__float.html#structFloatQuat">FloatQuat</a></td>
-<td class="fieldname">
-imu_to_body_quat</td>
-<td class="fielddoc">
-imu to body quaternion </td></tr>
-<tr><td class="fieldtype">
-<a class="anchor" id="a8e80c342e31d4bcc458ce298057e1925"></a>struct <a class="el" href="group__math__algebra__float.html#structFloatRates">FloatRates</a></td>
-<td class="fieldname">
-rates</td>
-<td class="fielddoc">
-Body rates. </td></tr>
+The velocity in camera frame (m/s) </td></tr>
 </table>
 
 </div>
@@ -313,7 +258,7 @@ Body rates. </td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_304e79c9f5d09ea65a2f55aafb6a6b9d.html">computer_vision</a></li><li class="navelem"><a class="el" href="dir_737909cdc08fae475c12e10cc4efa3fe.html">opticflow</a></li><li class="navelem"><a class="el" href="inter__thread__data_8h.html">inter_thread_data.h</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:01:55 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:02:18 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

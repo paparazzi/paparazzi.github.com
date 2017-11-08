@@ -1,5 +1,6 @@
 var cv__blob__locator_8c =
 [
+    [ "BLOB_LOCATOR_FPS", "cv__blob__locator_8c.html#a8b645bd36faa1b2560ee203fd6858576", null ],
     [ "Img", "cv__blob__locator_8c.html#a8affdbd5c68f57a9388246057d1103b5", null ],
     [ "cv_blob_locator_event", "cv__blob__locator_8c.html#a391703403d5b9f54b9aeb1ef368be61b", null ],
     [ "cv_blob_locator_func", "cv__blob__locator_8c.html#a5298a0e08ea26e8e2031d5def6dc11ec", null ],

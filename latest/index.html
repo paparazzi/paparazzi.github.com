@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -104,16 +104,16 @@ $(document).ready(function(){initNavTree('index.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><h1>Paparazzi UAS </h1>
-<p><a href="https://travis-ci.org/paparazzi/paparazzi">![Build Status](https://travis-ci.org/paparazzi/paparazzi.png?branch=master)</a> <a href="https://gitter.im/paparazzi/discuss">![Gitter chat](https://badges.gitter.im/paparazzi/discuss.svg)</a></p>
-<p>Paparazzi is an attempt to develop a free software Unmanned (Air) Vehicle System. As of today the system is being used successfuly by a number of hobbyists, universities and companies all over the world, on vehicle of various size ( 100g to 25Kg ) and of various nature ( fixed wing, rotorcrafts, boats and surface vehicles).</p>
-<p>Up to date information is available in the wiki <a href="http://wiki.paparazziuav.org">http://wiki.paparazziuav.org</a></p>
-<p>and from the mailing list <a href="http://savannah.nongnu.org/mail/?group=paparazzi">paparazzi-devel@nongnu.org</a> and the IRC channel (freenode, #paparazzi).</p>
-<h2>Required Software </h2>
-<p>Installation is described in the wiki (<a href="http://wiki.paparazziuav.org/wiki/Installation">http://wiki.paparazziuav.org/wiki/Installation</a>).</p>
+<p><a href="https://travis-ci.org/paparazzi/paparazzi">![Build Status](https://travis-ci.org/paparazzi/paparazzi.png?branch=master)</a> <a href="https://gitter.im/paparazzi/discuss">![Gitter chat](https://badges.gitter.im/paparazzi/discuss.svg)</a> <a href="https://scan.coverity.com/projects/paparazzi-paparazzi"></a></p>
+<p>Paparazzi is a free open source software package for Unmanned (Air) Vehicle Systems. For many years, the system has been used successfuly by hobbyists, universities and companies all over the world, on vehicles of various sizes (11.9g to 25kg). Paparazzi supports fixed wing, rotorcraft, hybrids, flapping vehicles and it is even possible to use it for boats and surface vehicles.</p>
+<p>Up to date information is available on the wiki <a href="http://wiki.paparazziuav.org">http://wiki.paparazziuav.org</a></p>
+<p>To get in touch, subscribe to the mailing list <a href="http://savannah.nongnu.org/mail/?group=paparazzi">paparazzi-devel@nongnu.org</a>, the IRC channel (freenode, #paparazzi) and Gitter (<a href="https://gitter.im/paparazzi/discuss">https://gitter.im/paparazzi/discuss</a>).</p>
+<h2>Required software </h2>
+<p>Instructions for installation can be found on the wiki (<a href="http://wiki.paparazziuav.org/wiki/Installation">http://wiki.paparazziuav.org/wiki/Installation</a>).</p>
 <p>For Ubuntu users, required packages are available in the <a href="https://launchpad.net/~paparazzi-uav/+archive/ppa">paparazzi-uav PPA</a>, Debian users can use the <a href="http://download.opensuse.org/repositories/home:/flixr:/paparazzi-uav/Debian_7.0/">OpenSUSE Build Service repository</a></p>
 <p>Debian/Ubuntu packages:</p><ul>
-<li><b>paparazzi-dev</b> is the meta-package that depends on everything needed to compile and run the ground segment and the simulator.</li>
-<li><b>paparazzi-jsbsim</b> is needed for using JSBSim as flight dynamic model for the simulator.</li>
+<li><b>paparazzi-dev</b> is the meta-package on which the Paparazzi software depends to compile and run the ground segment and simulator.</li>
+<li><b>paparazzi-jsbsim</b> is needed for using JSBSim as flight dynamics model for the simulator.</li>
 </ul>
 <p>Recommended cross compiling toolchain: <a href="https://launchpad.net/gcc-arm-embedded">https://launchpad.net/gcc-arm-embedded</a></p>
 <h2>Directories quick and dirty description: </h2>
@@ -129,21 +129,21 @@ $(document).ready(function(){initNavTree('index.html','');});
 <li>Select the "Microjet" aircraft in the upper-left A/C combo box. Select "sim" from upper-middle "target" combo box. Click "Build". When the compilation is finished, select "Simulation" from the upper-right session combo box and click "Execute".</li>
 <li>In the GCS, wait about 10s for the aircraft to be in the "Holding point" navigation block. Switch to the "Takeoff" block (lower-left blue airway button in the strip). Takeoff with the green launch button.</li>
 </ol>
-<h2>Uploading of the embedded software </h2>
+<h2>Uploading the embedded software </h2>
 <ol type="1">
 <li>Power the flight controller board while it is connected to the PC with the USB cable.</li>
 <li>From the Paparazzi center, select the "ap" target, and click "Upload".</li>
 </ol>
 <h2>Flight </h2>
 <ol type="1">
-<li>From the Paparazzi Center, select the flight session and ... do the same than in simulation ! </li>
+<li>From the Paparazzi Center, select the flight session and ... do the same as in simulation ! </li>
 </ol>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Oct 1 2016 14:02:42 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:03:13 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -139,7 +139,7 @@ $(document).ready(function(){initNavTree('max7456_8c_source.html','');});
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;generated/flight_plan.h&quot;</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &quot;generated/airframe.h&quot;</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &quot;autopilot.h&quot;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="autopilot_8h.html">autopilot.h</a>&quot;</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="electrical_8h.html">subsystems/electrical.h</a>&quot;</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="state_8h.html">state.h</a>&quot;</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
@@ -435,7 +435,7 @@ $(document).ready(function(){initNavTree('max7456_8c_source.html','');});
 <div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;</div>
 <div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;  <span class="comment">// translate the string and put it to the &quot;osd_string&quot; &#39;\0&#39; = 0xff</span></div>
 <div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;  x = 0;</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;  <span class="keywordflow">while</span> (*(<span class="keywordtype">string</span> + x) != <span class="charliteral">&#39;\0&#39;</span>) {</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;  <span class="keywordflow">while</span> ( (*(<span class="keywordtype">string</span> + x) != <span class="charliteral">&#39;\0&#39;</span>) &amp;&amp; ( x &lt; (<span class="keyword">sizeof</span>(<a class="code" href="max7456_8c.html#acdc4b849c0511672a323bbf18fc1edd0">osd_string</a>)-1) )) {</div>
 <div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    <a class="code" href="max7456_8c.html#acdc4b849c0511672a323bbf18fc1edd0">osd_string</a>[x] = <a class="code" href="max7456_8c.html#ab6589475b928e58fdf044d03783fcb54">ascii_to_osd_c</a>(*(<span class="keywordtype">string</span> + x));</div>
 <div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    x++;</div>
 <div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;  }</div>
@@ -447,113 +447,119 @@ $(document).ready(function(){initNavTree('max7456_8c_source.html','');});
 <div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    }</div>
 <div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;  }</div>
 <div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;  <span class="comment">//Adjust for the reserved character number.</span></div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;  <span class="keywordflow">for</span> (; x &lt; char_nb; x++) {</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    <a class="code" href="max7456_8c.html#acdc4b849c0511672a323bbf18fc1edd0">osd_string</a>[x] = 0;</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;  <span class="comment">// Prevent overflow condition</span></div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;  <span class="keywordflow">if</span> (char_nb &gt;= <a class="code" href="max7456_8c.html#a6eb10be1ada9e27107d48bb7e4227380">OSD_STRING_SIZE</a>) {</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    char_nb = <a class="code" href="max7456_8c.html#a6eb10be1ada9e27107d48bb7e4227380">OSD_STRING_SIZE</a>-1;</div>
 <div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;  }</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;  <a class="code" href="max7456_8c.html#acdc4b849c0511672a323bbf18fc1edd0">osd_string</a>[x] = 0xff;</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;  <a class="code" href="max7456_8c.html#ab12c522f0d1c08e1e613dbb58c68b8e4">osd_attr</a> = attributes;</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;  <span class="comment">//TRIGGER THE SPI TRANSFERS. The rest of the spi transfers occur in the &quot;max7456_event&quot; function.</span></div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="max7456_8c.html#a1a2e7353726577174986f047eb2da00a">max7456_osd_status</a> == <a class="code" href="max7456_8c.html#a9df37033e964a8027eab3e650e7aea6ea8aba0c2d23308a2639371e18ddf12dbe">OSD_IDLE</a>) {</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    <a class="code" href="max7456_8c.html#a81da927f13f840f041a3315da1851753">max7456_trans</a>.<a class="code" href="group__spi.html#afb1b752d52e128cbc20348ef79c5f131">output_length</a> = 2;</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    <a class="code" href="max7456_8c.html#a81da927f13f840f041a3315da1851753">max7456_trans</a>.<a class="code" href="group__spi.html#a81b75a5eca2a775f4dcf89e8f1c519eb">output_buf</a>[0] = <a class="code" href="max7456__regs_8h.html#a23439f1fb1c2baf58555fb65542d5f56">OSD_DMAH_REG</a>;</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    <a class="code" href="max7456_8c.html#a81da927f13f840f041a3315da1851753">max7456_trans</a>.<a class="code" href="group__spi.html#a81b75a5eca2a775f4dcf89e8f1c519eb">output_buf</a>[1] = (<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>)((<a class="code" href="max7456_8c.html#ad65fea792b2227069e8c05acedab1849">osd_char_address</a> &gt;&gt; 8) &amp; 0x0001);</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    <a class="code" href="max7456_8c.html#a1a2e7353726577174986f047eb2da00a">max7456_osd_status</a> = <a class="code" href="max7456_8c.html#a9df37033e964a8027eab3e650e7aea6ea2995e6e161483e588dfded4d2a10b32b">OSD_S_STEP1</a>;</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    <a class="code" href="group__spi.html#ga5d383931766cb373ebad0b8bc26d439d">spi_submit</a>(&amp;(MAX7456_SPI_DEV), &amp;<a class="code" href="max7456_8c.html#a81da927f13f840f041a3315da1851753">max7456_trans</a>);</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;  }</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;  <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;}</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;<span class="comment">// A VERY VERY STRIPED DOWN sprintf function suitable only for the paparazzi OSD.</span></div>
-<div class="line"><a name="l00365"></a><span class="lineno"><a class="line" href="max7456_8c.html#a257eaf8b3e2576c806cd402e398795e0">  365</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="max7456_8c.html#a257eaf8b3e2576c806cd402e398795e0">_osd_sprintf</a>(<span class="keywordtype">char</span> *buffer, <span class="keywordtype">char</span> *<span class="keywordtype">string</span>, <span class="keywordtype">float</span> value)</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;{</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;  <span class="comment">//Adjust for the reserved character number.</span></div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;  <span class="keywordflow">for</span> (; x &lt; char_nb; x++) {</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    <a class="code" href="max7456_8c.html#acdc4b849c0511672a323bbf18fc1edd0">osd_string</a>[x] = 0;</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;  }</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;  <a class="code" href="max7456_8c.html#acdc4b849c0511672a323bbf18fc1edd0">osd_string</a>[x] = 0xff;</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;  <a class="code" href="max7456_8c.html#ab12c522f0d1c08e1e613dbb58c68b8e4">osd_attr</a> = attributes;</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;  <span class="comment">//TRIGGER THE SPI TRANSFERS. The rest of the spi transfers occur in the &quot;max7456_event&quot; function.</span></div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="max7456_8c.html#a1a2e7353726577174986f047eb2da00a">max7456_osd_status</a> == <a class="code" href="max7456_8c.html#a9df37033e964a8027eab3e650e7aea6ea8aba0c2d23308a2639371e18ddf12dbe">OSD_IDLE</a>) {</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    <a class="code" href="max7456_8c.html#a81da927f13f840f041a3315da1851753">max7456_trans</a>.<a class="code" href="group__spi.html#afb1b752d52e128cbc20348ef79c5f131">output_length</a> = 2;</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    <a class="code" href="max7456_8c.html#a81da927f13f840f041a3315da1851753">max7456_trans</a>.<a class="code" href="group__spi.html#a81b75a5eca2a775f4dcf89e8f1c519eb">output_buf</a>[0] = <a class="code" href="max7456__regs_8h.html#a23439f1fb1c2baf58555fb65542d5f56">OSD_DMAH_REG</a>;</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    <a class="code" href="max7456_8c.html#a81da927f13f840f041a3315da1851753">max7456_trans</a>.<a class="code" href="group__spi.html#a81b75a5eca2a775f4dcf89e8f1c519eb">output_buf</a>[1] = (<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>)((<a class="code" href="max7456_8c.html#ad65fea792b2227069e8c05acedab1849">osd_char_address</a> &gt;&gt; 8) &amp; 0x0001);</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    <a class="code" href="max7456_8c.html#a1a2e7353726577174986f047eb2da00a">max7456_osd_status</a> = <a class="code" href="max7456_8c.html#a9df37033e964a8027eab3e650e7aea6ea2995e6e161483e588dfded4d2a10b32b">OSD_S_STEP1</a>;</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    <a class="code" href="group__spi.html#ga5d383931766cb373ebad0b8bc26d439d">spi_submit</a>(&amp;(MAX7456_SPI_DEV), &amp;<a class="code" href="max7456_8c.html#a81da927f13f840f041a3315da1851753">max7456_trans</a>);</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;  }</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;  <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;}</div>
 <div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> param_start = 0;</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> param_end = 0;</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> frac_nb = 0;</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> digit = 0;</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> x = 0, y = 0, z = 0;</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;  <a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> i_dec = 0;</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;  <a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> i_frac = 0;</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;  <span class="keywordtype">char</span> to_asc[10] = {48, 48, 48, 48, 48, 48, 48, 48, 48, 48};</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;  <span class="comment">// Clear the osd string.</span></div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;  <span class="keywordflow">for</span> (x = 0; x &lt; <span class="keyword">sizeof</span>(<a class="code" href="max7456_8c.html#acdc4b849c0511672a323bbf18fc1edd0">osd_string</a>); x++) {</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    <a class="code" href="max7456_8c.html#acdc4b849c0511672a323bbf18fc1edd0">osd_string</a>[x] = 0;</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;  }</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;  x = 0;</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;  <span class="comment">// Search for the prameter start and stop positions.</span></div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;  <span class="keywordflow">while</span> (*(<span class="keywordtype">string</span> + x) != <span class="charliteral">&#39;\0&#39;</span>) {</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    <span class="keywordflow">if</span> (*(<span class="keywordtype">string</span> + x) == <span class="charliteral">&#39;%&#39;</span>) {</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;      param_start = x;</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (*(<span class="keywordtype">string</span> + x) == <span class="charliteral">&#39;f&#39;</span>) {</div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;      param_end = x;</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;      <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;    }</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    x++;</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;  }</div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;  <span class="comment">// find and bound the precision specified.</span></div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;  frac_nb = *(<span class="keywordtype">string</span> + param_end - 1) - 48; <span class="comment">// Convert to number, ASCII 48 = &#39;0&#39;</span></div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;  <span class="keywordflow">if</span> (frac_nb &gt; 3) {</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;    frac_nb = 3;       <span class="comment">// Bound value.</span></div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;  }</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;  y = (<span class="keyword">sizeof</span>(to_asc) - 1); <span class="comment">// Point y to the end of the array.</span></div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;  i_dec = abs((<a class="code" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>)value);</div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;  <span class="comment">// Fist we will deal with the fractional part if specified.</span></div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;  <span class="keywordflow">if</span> (frac_nb &gt; 0 &amp;&amp; frac_nb &lt;= 3) {</div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;    i_frac = abs((<a class="code" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>)((value - (<a class="code" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>)value) * 1000)); <span class="comment">// Max precision is 3 digits.</span></div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;    x = 100;</div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    z = frac_nb;</div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;    <span class="keywordflow">do</span> {                            <span class="comment">// Example if frac_nb=2 then 952 will show as .95</span></div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;      z--;</div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;      digit = (i_frac / x);</div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;      to_asc[y + z] = digit + 48; <span class="comment">// Convert to ASCII</span></div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;      i_frac -= digit * x;      <span class="comment">// Calculate the remainder.</span></div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;      x /= 10;                  <span class="comment">// 952-(9*100) = 52, 52-(10*5)=2 etc.</span></div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    } <span class="keywordflow">while</span> (z &gt; 0);</div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;    y -= frac_nb;     <span class="comment">// set y to point where the dot must be placed.</span></div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;    to_asc[y] = <span class="charliteral">&#39;.&#39;</span>;</div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;    y--;             <span class="comment">// Set y to point where the rest of the numbers must be written.</span></div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;  }</div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;</div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;  <span class="comment">// Now it is time for the integer part. &quot;y&quot; already points to the position just before the dot.</span></div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;  <span class="keywordflow">do</span> {</div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;    to_asc[y] = (i_dec % 10) + 48;            <span class="comment">//Write at least one digit even if value is zero.</span></div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;    i_dec /= 10;</div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;    <span class="keywordflow">if</span> (i_dec &lt;= 0) {                          <span class="comment">// This way the leading zero is ommited.</span></div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;      <span class="keywordflow">if</span> (value &lt; 0) {</div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;        y--; to_asc[y] = <span class="charliteral">&#39;-&#39;</span>;  <span class="comment">// Place the minus sign if needed.</span></div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;      }</div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;      <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;      y--;</div>
-<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;    }</div>
-<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;  } <span class="keywordflow">while</span> (1);</div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;</div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;  <span class="comment">// Fill the buffer with the characters in the beggining of the string if any.</span></div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;  <span class="keywordflow">for</span> (x = 0; x &lt; param_start; x++) {</div>
-<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;    *(buffer + x) = *(<span class="keywordtype">string</span> + x);</div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;  }</div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;</div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;  <span class="comment">// x is now pointing to the next character in osd_string.</span></div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;  <span class="comment">// y is already pointing to the first digit or negative sign in &quot;to_asc&quot; array.</span></div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;  <span class="keywordflow">while</span> (y &lt; <span class="keyword">sizeof</span>(to_asc)) {</div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;    *(buffer + x) = to_asc[y];</div>
-<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;    x++; y++;</div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;  }</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;<span class="comment">// A VERY VERY STRIPED DOWN sprintf function suitable only for the paparazzi OSD.</span></div>
+<div class="line"><a name="l00369"></a><span class="lineno"><a class="line" href="max7456_8c.html#a257eaf8b3e2576c806cd402e398795e0">  369</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="max7456_8c.html#a257eaf8b3e2576c806cd402e398795e0">_osd_sprintf</a>(<span class="keywordtype">char</span> *buffer, <span class="keywordtype">char</span> *<span class="keywordtype">string</span>, <span class="keywordtype">float</span> value)</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;{</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> param_start = 0;</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> param_end = 0;</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> frac_nb = 0;</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> digit = 0;</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> x = 0, y = 0, z = 0;</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;  <a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> i_dec = 0;</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;  <a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> i_frac = 0;</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;  <span class="keywordtype">char</span> to_asc[10] = {48, 48, 48, 48, 48, 48, 48, 48, 48, 48};</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;  <span class="comment">// Clear the osd string.</span></div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;  <span class="keywordflow">for</span> (x = 0; x &lt; <span class="keyword">sizeof</span>(<a class="code" href="max7456_8c.html#acdc4b849c0511672a323bbf18fc1edd0">osd_string</a>); x++) {</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;    <a class="code" href="max7456_8c.html#acdc4b849c0511672a323bbf18fc1edd0">osd_string</a>[x] = 0;</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;  }</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;  x = 0;</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;  <span class="comment">// Search for the prameter start and stop positions.</span></div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;  <span class="keywordflow">while</span> (*(<span class="keywordtype">string</span> + x) != <span class="charliteral">&#39;\0&#39;</span>) {</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    <span class="keywordflow">if</span> (*(<span class="keywordtype">string</span> + x) == <span class="charliteral">&#39;%&#39;</span>) {</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;      param_start = x;</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (*(<span class="keywordtype">string</span> + x) == <span class="charliteral">&#39;f&#39;</span>) {</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;      param_end = x;</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;      <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;    }</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;    x++;</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;  }</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;  <span class="comment">// find and bound the precision specified.</span></div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;  frac_nb = *(<span class="keywordtype">string</span> + param_end - 1) - 48; <span class="comment">// Convert to number, ASCII 48 = &#39;0&#39;</span></div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;  <span class="keywordflow">if</span> (frac_nb &gt; 3) {</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;    frac_nb = 3;       <span class="comment">// Bound value.</span></div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;  }</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;  <span class="comment">// Point y to one before the end of the array</span></div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;  <span class="comment">// Because we will increment it with frac_nb-1, so pointing it to the end would result in overflow</span></div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;  y = (<span class="keyword">sizeof</span>(to_asc) - 3);</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;  i_dec = abs((<a class="code" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>)value);</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;  <span class="comment">// Fist we will deal with the fractional part if specified.</span></div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;  <span class="keywordflow">if</span> (frac_nb &gt; 0 &amp;&amp; frac_nb &lt;= 3) {</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    i_frac = abs((<a class="code" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>)((value - (<a class="code" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a>)value) * 1000)); <span class="comment">// Max precision is 3 digits.</span></div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;    x = 100;</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;    z = frac_nb;</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    <span class="keywordflow">do</span> {                            <span class="comment">// Example if frac_nb=2 then 952 will show as .95</span></div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;      z--;</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;      digit = (i_frac / x);</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;      to_asc[y + z] = digit + 48; <span class="comment">// Convert to ASCII</span></div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;      i_frac -= digit * x;      <span class="comment">// Calculate the remainder.</span></div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;      x /= 10;                  <span class="comment">// 952-(9*100) = 52, 52-(10*5)=2 etc.</span></div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;    } <span class="keywordflow">while</span> (z &gt; 0);</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;    y -= frac_nb;     <span class="comment">// set y to point where the dot must be placed.</span></div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;    to_asc[y] = <span class="charliteral">&#39;.&#39;</span>;</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;    y--;             <span class="comment">// Set y to point where the rest of the numbers must be written.</span></div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;  }</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;  <span class="comment">// Now it is time for the integer part. &quot;y&quot; already points to the position just before the dot.</span></div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;  <span class="keywordflow">do</span> {</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;    to_asc[y] = (i_dec % 10) + 48;            <span class="comment">//Write at least one digit even if value is zero.</span></div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;    i_dec /= 10;</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;    <span class="keywordflow">if</span> (i_dec &lt;= 0) {                          <span class="comment">// This way the leading zero is ommited.</span></div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;      <span class="keywordflow">if</span> (value &lt; 0) {</div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;        y--; to_asc[y] = <span class="charliteral">&#39;-&#39;</span>;  <span class="comment">// Place the minus sign if needed.</span></div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;      }</div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;      <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;      y--;</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;    }</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;  } <span class="keywordflow">while</span> (1);</div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;  <span class="comment">// Fill the buffer with the characters in the beggining of the string if any.</span></div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;  <span class="keywordflow">for</span> (x = 0; x &lt; param_start; x++) {</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;    *(buffer + x) = *(<span class="keywordtype">string</span> + x);</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;  }</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;</div>
 <div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;  <span class="comment">// x is now pointing to the next character in osd_string.</span></div>
-<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;  <span class="comment">// &quot;param_end&quot; is pointing to the last format character in the string.</span></div>
-<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;  <span class="keywordflow">do</span> {</div>
-<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;    param_end++;</div>
-<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;    *(buffer + x++) = *(<span class="keywordtype">string</span> + param_end);</div>
-<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;  } <span class="keywordflow">while</span> (*(<span class="keywordtype">string</span> + param_end) != <span class="charliteral">&#39;\0&#39;</span>); <span class="comment">//Write the rest of the string including the terminating char.</span></div>
-<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;</div>
-<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;  <span class="keywordflow">return</span> (0);</div>
-<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;}</div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;  <span class="comment">// y is already pointing to the first digit or negative sign in &quot;to_asc&quot; array.</span></div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;  <span class="keywordflow">while</span> (y &lt; <span class="keyword">sizeof</span>(to_asc)) {</div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;    *(buffer + x) = to_asc[y];</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;    x++; y++;</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;  }</div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;  <span class="comment">// x is now pointing to the next character in osd_string.</span></div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;  <span class="comment">// &quot;param_end&quot; is pointing to the last format character in the string.</span></div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;  <span class="keywordflow">do</span> {</div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;    param_end++;</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;    *(buffer + x++) = *(<span class="keywordtype">string</span> + param_end);</div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;  } <span class="keywordflow">while</span> (*(<span class="keywordtype">string</span> + param_end) != <span class="charliteral">&#39;\0&#39;</span>); <span class="comment">//Write the rest of the string including the terminating char.</span></div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;  <span class="keywordflow">return</span> (0);</div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;}</div>
 <div class="ttc" id="max7456_8c_html_a9df37033e964a8027eab3e650e7aea6e"><div class="ttname"><a href="max7456_8c.html#a9df37033e964a8027eab3e650e7aea6e">max7456_osd_status_codes</a></div><div class="ttdeci">max7456_osd_status_codes</div><div class="ttdef"><b>Definition:</b> <a href="max7456_8c_source.html#l00070">max7456.c:70</a></div></div>
 <div class="ttc" id="max7456_8c_html_a9df37033e964a8027eab3e650e7aea6ea985f8973f3e0e452c4fdbd42690fc39a"><div class="ttname"><a href="max7456_8c.html#a9df37033e964a8027eab3e650e7aea6ea985f8973f3e0e452c4fdbd42690fc39a">OSD_INIT1</a></div><div class="ttdef"><b>Definition:</b> <a href="max7456_8c_source.html#l00072">max7456.c:72</a></div></div>
 <div class="ttc" id="types_8h_html_a273cf69d639a59973b6019625df33e30"><div class="ttname"><a href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></div><div class="ttdeci">unsigned short uint16_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00016">types.h:16</a></div></div>
@@ -577,7 +583,7 @@ $(document).ready(function(){initNavTree('max7456_8c_source.html','');});
 <div class="ttc" id="max7456_8h_html"><div class="ttname"><a href="max7456_8h.html">max7456.h</a></div><div class="ttdoc">Maxim MAX7456 single-channel monochrome on-screen display driver. </div></div>
 <div class="ttc" id="group__spi_html_structspi__transaction"><div class="ttname"><a href="group__spi.html#structspi__transaction">spi_transaction</a></div><div class="ttdoc">SPI transaction structure. </div><div class="ttdef"><b>Definition:</b> <a href="spi_8h_source.html#l00142">spi.h:142</a></div></div>
 <div class="ttc" id="max7456_8c_html_ac3dd6ed7cc7d01ada4ce3180d50150cd"><div class="ttname"><a href="max7456_8c.html#ac3dd6ed7cc7d01ada4ce3180d50150cd">osd_attributes</a></div><div class="ttdeci">osd_attributes</div><div class="ttdef"><b>Definition:</b> <a href="max7456_8c_source.html#l00084">max7456.c:84</a></div></div>
-<div class="ttc" id="group__spi_html_ga5d383931766cb373ebad0b8bc26d439d"><div class="ttname"><a href="group__spi.html#ga5d383931766cb373ebad0b8bc26d439d">spi_submit</a></div><div class="ttdeci">bool spi_submit(struct spi_periph *p, struct spi_transaction *t)</div><div class="ttdoc">Submit SPI transaction. </div><div class="ttdef"><b>Definition:</b> <a href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00364">spi_arch.c:364</a></div></div>
+<div class="ttc" id="group__spi_html_ga5d383931766cb373ebad0b8bc26d439d"><div class="ttname"><a href="group__spi.html#ga5d383931766cb373ebad0b8bc26d439d">spi_submit</a></div><div class="ttdeci">bool spi_submit(struct spi_periph *p, struct spi_transaction *t)</div><div class="ttdoc">Submit SPI transaction. </div><div class="ttdef"><b>Definition:</b> <a href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00457">spi_arch.c:457</a></div></div>
 <div class="ttc" id="max7456__regs_8h_html_a1f5860407812528a75495ffbf8be60ed"><div class="ttname"><a href="max7456__regs_8h.html#a1f5860407812528a75495ffbf8be60ed">OSD_DMM_REG</a></div><div class="ttdeci">#define OSD_DMM_REG</div><div class="ttdef"><b>Definition:</b> <a href="max7456__regs_8h_source.html#l00036">max7456_regs.h:36</a></div></div>
 <div class="ttc" id="group__spi_html_af804a20f8372631a24aad61be1383307"><div class="ttname"><a href="group__spi.html#af804a20f8372631a24aad61be1383307">spi_transaction::bitorder</a></div><div class="ttdeci">enum SPIBitOrder bitorder</div><div class="ttdoc">MSB/LSB order. </div><div class="ttdef"><b>Definition:</b> <a href="spi_8h_source.html#l00152">spi.h:152</a></div></div>
 <div class="ttc" id="max7456_8c_html_a9df37033e964a8027eab3e650e7aea6ea7fa9ba78dd17378ea9ec7e3aebedaa27"><div class="ttname"><a href="max7456_8c.html#a9df37033e964a8027eab3e650e7aea6ea7fa9ba78dd17378ea9ec7e3aebedaa27">OSD_INIT4</a></div><div class="ttdef"><b>Definition:</b> <a href="max7456_8c_source.html#l00075">max7456.c:75</a></div></div>
@@ -598,7 +604,7 @@ $(document).ready(function(){initNavTree('max7456_8c_source.html','');});
 <div class="ttc" id="max7456__regs_8h_html_a88abf210591968ce981163b6912e52d2"><div class="ttname"><a href="max7456__regs_8h.html#a88abf210591968ce981163b6912e52d2">OSD_OSDBL_REG</a></div><div class="ttdeci">#define OSD_OSDBL_REG</div><div class="ttdef"><b>Definition:</b> <a href="max7456__regs_8h_source.html#l00040">max7456_regs.h:40</a></div></div>
 <div class="ttc" id="max7456_8c_html_a81da927f13f840f041a3315da1851753"><div class="ttname"><a href="max7456_8c.html#a81da927f13f840f041a3315da1851753">max7456_trans</a></div><div class="ttdeci">struct spi_transaction max7456_trans</div><div class="ttdef"><b>Definition:</b> <a href="max7456_8c_source.html#l00059">max7456.c:59</a></div></div>
 <div class="ttc" id="group__spi_html_ggab7f6befabf036cdd2fcc73e688d17f92a616ab1558f18f3b3c58f22e0f16fe40e"><div class="ttname"><a href="group__spi.html#ggab7f6befabf036cdd2fcc73e688d17f92a616ab1558f18f3b3c58f22e0f16fe40e">SPIDss8bit</a></div><div class="ttdef"><b>Definition:</b> <a href="spi_8h_source.html#l00084">spi.h:84</a></div></div>
-<div class="ttc" id="max7456_8c_html_a257eaf8b3e2576c806cd402e398795e0"><div class="ttname"><a href="max7456_8c.html#a257eaf8b3e2576c806cd402e398795e0">_osd_sprintf</a></div><div class="ttdeci">static bool _osd_sprintf(char *buffer, char *string, float value)</div><div class="ttdef"><b>Definition:</b> <a href="max7456_8c_source.html#l00365">max7456.c:365</a></div></div>
+<div class="ttc" id="max7456_8c_html_a257eaf8b3e2576c806cd402e398795e0"><div class="ttname"><a href="max7456_8c.html#a257eaf8b3e2576c806cd402e398795e0">_osd_sprintf</a></div><div class="ttdeci">static bool _osd_sprintf(char *buffer, char *string, float value)</div><div class="ttdef"><b>Definition:</b> <a href="max7456_8c_source.html#l00369">max7456.c:369</a></div></div>
 <div class="ttc" id="electrical_8h_html"><div class="ttname"><a href="electrical_8h.html">electrical.h</a></div><div class="ttdoc">Interface for electrical status: supply voltage, current, battery status, etc. </div></div>
 <div class="ttc" id="sys__time_8h_html"><div class="ttname"><a href="sys__time_8h.html">sys_time.h</a></div><div class="ttdoc">Architecture independent timing functions. </div></div>
 <div class="ttc" id="group__spi_html_a42f7b32b71120469bf60af28f5880177"><div class="ttname"><a href="group__spi.html#a42f7b32b71120469bf60af28f5880177">spi_transaction::after_cb</a></div><div class="ttdeci">SPICallback after_cb</div><div class="ttdoc">NULL or function called after the transaction. </div><div class="ttdef"><b>Definition:</b> <a href="spi_8h_source.html#l00155">spi.h:155</a></div></div>
@@ -616,13 +622,14 @@ $(document).ready(function(){initNavTree('max7456_8c_source.html','');});
 <div class="ttc" id="max7456__regs_8h_html_a0b6c3567df75bec5f7228f806211ea19"><div class="ttname"><a href="max7456__regs_8h.html#a0b6c3567df75bec5f7228f806211ea19">OSD_VM0_REG</a></div><div class="ttdeci">#define OSD_VM0_REG</div><div class="ttdef"><b>Definition:</b> <a href="max7456__regs_8h_source.html#l00034">max7456_regs.h:34</a></div></div>
 <div class="ttc" id="max7456_8c_html_a9df37033e964a8027eab3e650e7aea6ea8aba0c2d23308a2639371e18ddf12dbe"><div class="ttname"><a href="max7456_8c.html#a9df37033e964a8027eab3e650e7aea6ea8aba0c2d23308a2639371e18ddf12dbe">OSD_IDLE</a></div><div class="ttdef"><b>Definition:</b> <a href="max7456_8c_source.html#l00077">max7456.c:77</a></div></div>
 <div class="ttc" id="max7456_8c_html_a1a2e7353726577174986f047eb2da00a"><div class="ttname"><a href="max7456_8c.html#a1a2e7353726577174986f047eb2da00a">max7456_osd_status</a></div><div class="ttdeci">uint8_t max7456_osd_status</div><div class="ttdef"><b>Definition:</b> <a href="max7456_8c_source.html#l00089">max7456.c:89</a></div></div>
+<div class="ttc" id="autopilot_8h_html"><div class="ttname"><a href="autopilot_8h.html">autopilot.h</a></div><div class="ttdoc">Core autopilot interface common to all firmwares. </div></div>
 <div class="ttc" id="max7456__regs_8h_html_afae9adbd38b263fcda2f9d4b38d5e15d"><div class="ttname"><a href="max7456__regs_8h.html#afae9adbd38b263fcda2f9d4b38d5e15d">OSD_INVERT_PIXELS</a></div><div class="ttdeci">#define OSD_INVERT_PIXELS</div><div class="ttdef"><b>Definition:</b> <a href="max7456__regs_8h_source.html#l00054">max7456_regs.h:54</a></div></div>
 <div class="ttc" id="max7456_8c_html_a2b5efe546809c5c4b7d6470ba879d9fa"><div class="ttname"><a href="max7456_8c.html#a2b5efe546809c5c4b7d6470ba879d9fa">osd_put_s</a></div><div class="ttdeci">static void osd_put_s(char *string, uint8_t attributes, uint8_t char_nb, uint8_t row, uint8_t column)</div><div class="ttdef"><b>Definition:</b> <a href="max7456_8c_source.html#l00318">max7456.c:318</a></div></div>
 <div class="ttc" id="max7456__regs_8h_html_afb4c96fca740fe46f8a002ac432a93a2"><div class="ttname"><a href="max7456__regs_8h.html#afb4c96fca740fe46f8a002ac432a93a2">OSD_VIDEO_MODE_PAL</a></div><div class="ttdeci">#define OSD_VIDEO_MODE_PAL</div><div class="ttdef"><b>Definition:</b> <a href="max7456__regs_8h_source.html#l00045">max7456_regs.h:45</a></div></div>
 <div class="ttc" id="types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00014">types.h:14</a></div></div>
 <div class="ttc" id="state_8h_html"><div class="ttname"><a href="state_8h.html">state.h</a></div><div class="ttdoc">API to get/set the generic vehicle states. </div></div>
 <div class="ttc" id="max7456_8c_html_a1d6d4401863cba472802654472781050"><div class="ttname"><a href="max7456_8c.html#a1d6d4401863cba472802654472781050">max7456_periodic</a></div><div class="ttdeci">void max7456_periodic(void)</div><div class="ttdef"><b>Definition:</b> <a href="max7456_8c_source.html#l00119">max7456.c:119</a></div></div>
-<div class="ttc" id="group__state__velocity_html_ga8e7f86fe83bd1b767f9c5016ed245822"><div class="ttname"><a href="group__state__velocity.html#ga8e7f86fe83bd1b767f9c5016ed245822">stateGetSpeedEnu_f</a></div><div class="ttdeci">static struct EnuCoor_f * stateGetSpeedEnu_f(void)</div><div class="ttdoc">Get ground speed in local ENU coordinates (float). </div><div class="ttdef"><b>Definition:</b> <a href="state_8h_source.html#l00905">state.h:905</a></div></div>
+<div class="ttc" id="group__state__velocity_html_ga8e7f86fe83bd1b767f9c5016ed245822"><div class="ttname"><a href="group__state__velocity.html#ga8e7f86fe83bd1b767f9c5016ed245822">stateGetSpeedEnu_f</a></div><div class="ttdeci">static struct EnuCoor_f * stateGetSpeedEnu_f(void)</div><div class="ttdoc">Get ground speed in local ENU coordinates (float). </div><div class="ttdef"><b>Definition:</b> <a href="state_8h_source.html#l00917">state.h:917</a></div></div>
 <div class="ttc" id="group__spi_html_gga133152bd9fd803ef729bdfb9dc488baaaef9737139e9d1ed3ef30d2200acc629e"><div class="ttname"><a href="group__spi.html#gga133152bd9fd803ef729bdfb9dc488baaaef9737139e9d1ed3ef30d2200acc629e">SPICphaEdge1</a></div><div class="ttdoc">CPHA = 0. </div><div class="ttdef"><b>Definition:</b> <a href="spi_8h_source.html#l00068">spi.h:68</a></div></div>
 <div class="ttc" id="electrical_8h_html_aa06d22221dc04d5615b4bbc0a7e66556"><div class="ttname"><a href="electrical_8h.html#aa06d22221dc04d5615b4bbc0a7e66556">Electrical::vsupply</a></div><div class="ttdeci">uint16_t vsupply</div><div class="ttdoc">supply voltage in decivolts </div><div class="ttdef"><b>Definition:</b> <a href="electrical_8h_source.html#l00048">electrical.h:48</a></div></div>
 <div class="ttc" id="max7456_8c_html_a6eb10be1ada9e27107d48bb7e4227380"><div class="ttname"><a href="max7456_8c.html#a6eb10be1ada9e27107d48bb7e4227380">OSD_STRING_SIZE</a></div><div class="ttdeci">#define OSD_STRING_SIZE</div><div class="ttdef"><b>Definition:</b> <a href="max7456_8c_source.html#l00052">max7456.c:52</a></div></div>
@@ -654,7 +661,7 @@ $(document).ready(function(){initNavTree('max7456_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_ba28e41237872f6268f6dbae3db26982.html">display</a></li><li class="navelem"><a class="el" href="max7456_8c.html">max7456.c</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:01:23 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:01:40 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

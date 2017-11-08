@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -133,50 +133,52 @@ $(document).ready(function(){initNavTree('rotorcraft_2main__fbw_8h_source.html',
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#ifndef MAIN_H</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#define MAIN_H</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#ifdef SITL</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#define STATIC_INLINE extern</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="rotorcraft_2main__fbw_8h.html#a718749e18d63ca0d6b0d1b918efb41d6">   42</a></span>&#160;<span class="preprocessor">#define STATIC_INLINE static inline</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#ifndef RC_LOST_FBW_MODE</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="rotorcraft_2main__fbw_8h.html#a847fcb81c0c4dccf329ed06e1dce72b4">   47</a></span>&#160;<span class="preprocessor">#define RC_LOST_FBW_MODE FBW_MODE_FAILSAFE</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#ifndef RC_LOST_IN_AUTO_FBW_MODE</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="rotorcraft_2main__fbw_8h.html#a41268820242deb4edbc5c58049b8bd72">   52</a></span>&#160;<span class="preprocessor">#define RC_LOST_IN_AUTO_FBW_MODE FBW_MODE_AUTO</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#ifndef AP_LOST_FBW_MODE</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="rotorcraft_2main__fbw_8h.html#a7bbabce9b8357dba63c9744c416c464a">   57</a></span>&#160;<span class="preprocessor">#define AP_LOST_FBW_MODE FBW_MODE_FAILSAFE</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#ifndef RADIO_FBW_MODE</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="rotorcraft_2main__fbw_8h.html#af9f3b5db2d73fb91df097b6a9285432d">   64</a></span>&#160;<span class="preprocessor">#define RADIO_FBW_MODE RADIO_MODE</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#ifndef RC_LOST_FBW_MODE</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="rotorcraft_2main__fbw_8h.html#a847fcb81c0c4dccf329ed06e1dce72b4">   41</a></span>&#160;<span class="preprocessor">#define RC_LOST_FBW_MODE FBW_MODE_FAILSAFE</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#ifndef RC_LOST_IN_AUTO_FBW_MODE</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="rotorcraft_2main__fbw_8h.html#a41268820242deb4edbc5c58049b8bd72">   46</a></span>&#160;<span class="preprocessor">#define RC_LOST_IN_AUTO_FBW_MODE FBW_MODE_AUTO</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#ifndef AP_LOST_FBW_MODE</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="rotorcraft_2main__fbw_8h.html#a7bbabce9b8357dba63c9744c416c464a">   51</a></span>&#160;<span class="preprocessor">#define AP_LOST_FBW_MODE FBW_MODE_FAILSAFE</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#ifndef FBW_MODE_AUTO_ONLY</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="rotorcraft_2main__fbw_8h.html#a018c1577429e2fab4b34d0d18b4d9322">   56</a></span>&#160;<span class="preprocessor">#define FBW_MODE_AUTO_ONLY false</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#ifndef RADIO_FBW_MODE</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="rotorcraft_2main__fbw_8h.html#af9f3b5db2d73fb91df097b6a9285432d">   61</a></span>&#160;<span class="preprocessor">#define RADIO_FBW_MODE RADIO_MODE</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="rotorcraft_2main__fbw_8h.html#af4086243bdaea71d4dfd3c03883cab31a36b48f7f55dbe0671efa9a93dfb93404">   64</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {<a class="code" href="rotorcraft_2main__fbw_8h.html#af4086243bdaea71d4dfd3c03883cab31a36b48f7f55dbe0671efa9a93dfb93404">FBW_MODE_MANUAL</a> = 0, <a class="code" href="rotorcraft_2main__fbw_8h.html#af4086243bdaea71d4dfd3c03883cab31a4e63082d699becdd9584190688c5a691">FBW_MODE_AUTO</a> = 1, <a class="code" href="rotorcraft_2main__fbw_8h.html#af4086243bdaea71d4dfd3c03883cab31a1c116e8571ae43fbeaeecf3bef02b4ee">FBW_MODE_FAILSAFE</a> = 2} <a class="code" href="rotorcraft_2main__fbw_8h.html#af4086243bdaea71d4dfd3c03883cab31">fbw_mode_enum</a>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<a class="code" href="rotorcraft_2main__fbw_8h.html#a718749e18d63ca0d6b0d1b918efb41d6">STATIC_INLINE</a> <span class="keywordtype">void</span> <a class="code" href="rotorcraft_2main__fbw_8h.html#a092df25ac46a6a4ca72c023d8821f9b2">main_init</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<a class="code" href="rotorcraft_2main__fbw_8h.html#a718749e18d63ca0d6b0d1b918efb41d6">STATIC_INLINE</a> <span class="keywordtype">void</span> <a class="code" href="rotorcraft_2main__fbw_8h.html#a542234de10fcdadb4184efcd9c7d0d04">main_event</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<a class="code" href="rotorcraft_2main__fbw_8h.html#a718749e18d63ca0d6b0d1b918efb41d6">STATIC_INLINE</a> <span class="keywordtype">void</span> <a class="code" href="rotorcraft_2main__fbw_8h.html#acfa2a521a46d9beb8a3fa77bb0c9e407">handle_periodic_tasks</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<a class="code" href="rotorcraft_2main__fbw_8h.html#a718749e18d63ca0d6b0d1b918efb41d6">STATIC_INLINE</a> <span class="keywordtype">void</span> <a class="code" href="rotorcraft_2main__fbw_8h.html#a4fee35a9ab2c517bde9f598c265222b0">main_periodic</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<a class="code" href="rotorcraft_2main__fbw_8h.html#a718749e18d63ca0d6b0d1b918efb41d6">STATIC_INLINE</a> <span class="keywordtype">void</span> <a class="code" href="rotorcraft_2main__fbw_8h.html#a7b3411ed88af39bbe3adea1e9d3aa1a8">telemetry_periodic</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="rotorcraft_2main__fbw_8h.html#a3719465edd56d2b587a6b340f29e4f90">main_init</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="rotorcraft_2main__fbw_8h.html#ad0fb4f12833cb2f0b4c69fa317ea24d9">main_event</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="rotorcraft_2main__fbw_8h.html#ab79bb049ce85bf2ed3a75c6b12c02bcb">handle_periodic_tasks</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="rotorcraft_2main__fbw_8h.html#a81249e4ef19b8766982a6fe272d89bae">main_periodic</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="rotorcraft_2main__fbw_8h.html#aa185a98f019b1142ec48cf954cabe858">telemetry_periodic</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* MAIN_H */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="rotorcraft_2main__fbw_8h_html_a092df25ac46a6a4ca72c023d8821f9b2"><div class="ttname"><a href="rotorcraft_2main__fbw_8h.html#a092df25ac46a6a4ca72c023d8821f9b2">main_init</a></div><div class="ttdeci">STATIC_INLINE void main_init(void)</div><div class="ttdoc">Main initialization. </div><div class="ttdef"><b>Definition:</b> <a href="rotorcraft_2main_8c_source.html#l00158">main.c:158</a></div></div>
-<div class="ttc" id="rotorcraft_2main__fbw_8h_html_a4fee35a9ab2c517bde9f598c265222b0"><div class="ttname"><a href="rotorcraft_2main__fbw_8h.html#a4fee35a9ab2c517bde9f598c265222b0">main_periodic</a></div><div class="ttdeci">STATIC_INLINE void main_periodic(void)</div><div class="ttdef"><b>Definition:</b> <a href="rotorcraft_2main_8c_source.html#l00259">main.c:259</a></div></div>
-<div class="ttc" id="rotorcraft_2main__fbw_8h_html_a718749e18d63ca0d6b0d1b918efb41d6"><div class="ttname"><a href="rotorcraft_2main__fbw_8h.html#a718749e18d63ca0d6b0d1b918efb41d6">STATIC_INLINE</a></div><div class="ttdeci">#define STATIC_INLINE</div><div class="ttdef"><b>Definition:</b> <a href="rotorcraft_2main__fbw_8h_source.html#l00042">main_fbw.h:42</a></div></div>
-<div class="ttc" id="rotorcraft_2main__fbw_8h_html_acfa2a521a46d9beb8a3fa77bb0c9e407"><div class="ttname"><a href="rotorcraft_2main__fbw_8h.html#acfa2a521a46d9beb8a3fa77bb0c9e407">handle_periodic_tasks</a></div><div class="ttdeci">STATIC_INLINE void handle_periodic_tasks(void)</div><div class="ttdef"><b>Definition:</b> <a href="rotorcraft_2main_8c_source.html#l00232">main.c:232</a></div></div>
-<div class="ttc" id="rotorcraft_2main__fbw_8h_html_a7b3411ed88af39bbe3adea1e9d3aa1a8"><div class="ttname"><a href="rotorcraft_2main__fbw_8h.html#a7b3411ed88af39bbe3adea1e9d3aa1a8">telemetry_periodic</a></div><div class="ttdeci">STATIC_INLINE void telemetry_periodic(void)</div><div class="ttdef"><b>Definition:</b> <a href="rotorcraft_2main_8c_source.html#l00283">main.c:283</a></div></div>
-<div class="ttc" id="rotorcraft_2main__fbw_8h_html_a542234de10fcdadb4184efcd9c7d0d04"><div class="ttname"><a href="rotorcraft_2main__fbw_8h.html#a542234de10fcdadb4184efcd9c7d0d04">main_event</a></div><div class="ttdeci">STATIC_INLINE void main_event(void)</div><div class="ttdef"><b>Definition:</b> <a href="rotorcraft_2main_8c_source.html#l00346">main.c:346</a></div></div>
+<div class="ttc" id="rotorcraft_2main__fbw_8h_html_af4086243bdaea71d4dfd3c03883cab31a1c116e8571ae43fbeaeecf3bef02b4ee"><div class="ttname"><a href="rotorcraft_2main__fbw_8h.html#af4086243bdaea71d4dfd3c03883cab31a1c116e8571ae43fbeaeecf3bef02b4ee">FBW_MODE_FAILSAFE</a></div><div class="ttdef"><b>Definition:</b> <a href="rotorcraft_2main__fbw_8h_source.html#l00064">main_fbw.h:64</a></div></div>
+<div class="ttc" id="rotorcraft_2main__fbw_8h_html_af4086243bdaea71d4dfd3c03883cab31"><div class="ttname"><a href="rotorcraft_2main__fbw_8h.html#af4086243bdaea71d4dfd3c03883cab31">fbw_mode_enum</a></div><div class="ttdeci">fbw_mode_enum</div><div class="ttdef"><b>Definition:</b> <a href="rotorcraft_2main__fbw_8h_source.html#l00064">main_fbw.h:64</a></div></div>
+<div class="ttc" id="rotorcraft_2main__fbw_8h_html_a81249e4ef19b8766982a6fe272d89bae"><div class="ttname"><a href="rotorcraft_2main__fbw_8h.html#a81249e4ef19b8766982a6fe272d89bae">main_periodic</a></div><div class="ttdeci">void main_periodic(void)</div><div class="ttdef"><b>Definition:</b> <a href="rotorcraft_2main__ap_8c_source.html#l00235">main_ap.c:235</a></div></div>
+<div class="ttc" id="rotorcraft_2main__fbw_8h_html_af4086243bdaea71d4dfd3c03883cab31a36b48f7f55dbe0671efa9a93dfb93404"><div class="ttname"><a href="rotorcraft_2main__fbw_8h.html#af4086243bdaea71d4dfd3c03883cab31a36b48f7f55dbe0671efa9a93dfb93404">FBW_MODE_MANUAL</a></div><div class="ttdef"><b>Definition:</b> <a href="rotorcraft_2main__fbw_8h_source.html#l00064">main_fbw.h:64</a></div></div>
+<div class="ttc" id="rotorcraft_2main__fbw_8h_html_a3719465edd56d2b587a6b340f29e4f90"><div class="ttname"><a href="rotorcraft_2main__fbw_8h.html#a3719465edd56d2b587a6b340f29e4f90">main_init</a></div><div class="ttdeci">void main_init(void)</div><div class="ttdoc">Main initialization. </div><div class="ttdef"><b>Definition:</b> <a href="rotorcraft_2main__ap_8c_source.html#l00116">main_ap.c:116</a></div></div>
+<div class="ttc" id="rotorcraft_2main__fbw_8h_html_ab79bb049ce85bf2ed3a75c6b12c02bcb"><div class="ttname"><a href="rotorcraft_2main__fbw_8h.html#ab79bb049ce85bf2ed3a75c6b12c02bcb">handle_periodic_tasks</a></div><div class="ttdeci">void handle_periodic_tasks(void)</div><div class="ttdef"><b>Definition:</b> <a href="rotorcraft_2main__ap_8c_source.html#l00200">main_ap.c:200</a></div></div>
+<div class="ttc" id="rotorcraft_2main__fbw_8h_html_ad0fb4f12833cb2f0b4c69fa317ea24d9"><div class="ttname"><a href="rotorcraft_2main__fbw_8h.html#ad0fb4f12833cb2f0b4c69fa317ea24d9">main_event</a></div><div class="ttdeci">void main_event(void)</div><div class="ttdef"><b>Definition:</b> <a href="rotorcraft_2main__ap_8c_source.html#l00329">main_ap.c:329</a></div></div>
+<div class="ttc" id="rotorcraft_2main__fbw_8h_html_aa185a98f019b1142ec48cf954cabe858"><div class="ttname"><a href="rotorcraft_2main__fbw_8h.html#aa185a98f019b1142ec48cf954cabe858">telemetry_periodic</a></div><div class="ttdeci">void telemetry_periodic(void)</div><div class="ttdef"><b>Definition:</b> <a href="rotorcraft_2main__ap_8c_source.html#l00263">main_ap.c:263</a></div></div>
+<div class="ttc" id="rotorcraft_2main__fbw_8h_html_af4086243bdaea71d4dfd3c03883cab31a4e63082d699becdd9584190688c5a691"><div class="ttname"><a href="rotorcraft_2main__fbw_8h.html#af4086243bdaea71d4dfd3c03883cab31a4e63082d699becdd9584190688c5a691">FBW_MODE_AUTO</a></div><div class="ttdef"><b>Definition:</b> <a href="rotorcraft_2main__fbw_8h_source.html#l00064">main_fbw.h:64</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_e37d355c72eb7c8e5b43c34bdea5a24b.html">rotorcraft</a></li><li class="navelem"><a class="el" href="rotorcraft_2main__fbw_8h.html">main_fbw.h</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:01:17 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:01:31 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

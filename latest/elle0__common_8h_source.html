@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -376,218 +376,210 @@ $(document).ready(function(){initNavTree('elle0__common_8h_source.html','');});
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;</div>
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;<span class="comment">/* Onboard ADCs */</span></div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;<span class="comment">   ADC1 PC3/ADC13</span></div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;<span class="comment">   ADC2 PC0/ADC10</span></div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;<span class="comment">   ADC3 PC1/ADC11</span></div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;<span class="comment">   ADC4 PC5/ADC15</span></div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;<span class="comment">   ADC6 PC2/ADC12</span></div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;<span class="comment">   BATT PC4/ADC14</span></div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;<span class="comment">*/</span></div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;<span class="comment">/* provide defines that can be used to access the ADC_x in the code or airframe file</span></div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;<span class="comment"> * these directly map to the index number of the 4 adc channels defined above</span></div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;<span class="comment"> * 4th (index 3) is used for bat monitoring by default</span></div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;<span class="preprocessor">#ifndef USE_ADC_1</span></div>
-<div class="line"><a name="l00283"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#aab83c950c69c702e02d7ff473e0c25a3">  283</a></span>&#160;<span class="preprocessor">#define USE_ADC_1 1</span></div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;<span class="preprocessor">#if USE_ADC_1</span></div>
-<div class="line"><a name="l00287"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a26861f0e94a25ff7f6a8a0b2879cf624">  287</a></span>&#160;<span class="preprocessor">#define AD1_1_CHANNEL 14</span></div>
-<div class="line"><a name="l00288"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a3d767e16f12a6ee542079f3c9677192c">  288</a></span>&#160;<span class="preprocessor">#define ADC_1 AD1_1</span></div>
-<div class="line"><a name="l00289"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a8b70edf8d4481efa03d2b05cc91851ea">  289</a></span>&#160;<span class="preprocessor">#define ADC_1_GPIO_PORT GPIOC</span></div>
-<div class="line"><a name="l00290"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#accf0f0e91cb15244014fcecdb785a248">  290</a></span>&#160;<span class="preprocessor">#define ADC_1_GPIO_PIN GPIO4</span></div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;<span class="preprocessor">#if USE_ADC_2</span></div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;<span class="preprocessor">#define AD1_2_CHANNEL 15</span></div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;<span class="preprocessor">#define ADC_2 AD1_2</span></div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;<span class="preprocessor">#define ADC_2_GPIO_PORT GPIOC</span></div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;<span class="preprocessor">#define ADC_2_GPIO_PIN GPIO5</span></div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;<span class="preprocessor">#if USE_ADC_3</span></div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;<span class="preprocessor">#define AD1_3_CHANNEL 0</span></div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;<span class="preprocessor">#define ADC_3 AD1_3</span></div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;<span class="preprocessor">#define ADC_3_GPIO_PORT GPIOA</span></div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;<span class="preprocessor">#define ADC_3_GPIO_PIN GPIO0</span></div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;<span class="preprocessor">#if USE_ADC_4</span></div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;<span class="preprocessor">#define AD1_4_CHANNEL 1</span></div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;<span class="preprocessor">#define ADC_4 AD1_4</span></div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;<span class="preprocessor">#define ADC_4_GPIO_PORT GPIOA</span></div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;<span class="preprocessor">#define ADC_4_GPIO_PIN GPIO1</span></div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;<span class="comment">/* provide defines that can be used to access the ADC_x in the code or airframe file</span></div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;<span class="comment"> * these directly map to the index number of the 4 adc channels defined above</span></div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;<span class="comment"> * 4th (index 3) is used for bat monitoring by default</span></div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;<span class="preprocessor">#ifndef USE_ADC_1</span></div>
+<div class="line"><a name="l00275"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#aab83c950c69c702e02d7ff473e0c25a3">  275</a></span>&#160;<span class="preprocessor">#define USE_ADC_1 1</span></div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;<span class="preprocessor">#if USE_ADC_1</span></div>
+<div class="line"><a name="l00279"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a26861f0e94a25ff7f6a8a0b2879cf624">  279</a></span>&#160;<span class="preprocessor">#define AD1_1_CHANNEL 14</span></div>
+<div class="line"><a name="l00280"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a3d767e16f12a6ee542079f3c9677192c">  280</a></span>&#160;<span class="preprocessor">#define ADC_1 AD1_1</span></div>
+<div class="line"><a name="l00281"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a8b70edf8d4481efa03d2b05cc91851ea">  281</a></span>&#160;<span class="preprocessor">#define ADC_1_GPIO_PORT GPIOC</span></div>
+<div class="line"><a name="l00282"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#accf0f0e91cb15244014fcecdb785a248">  282</a></span>&#160;<span class="preprocessor">#define ADC_1_GPIO_PIN GPIO4</span></div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;<span class="preprocessor">#if USE_ADC_2</span></div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;<span class="preprocessor">#define AD1_2_CHANNEL 15</span></div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;<span class="preprocessor">#define ADC_2 AD1_2</span></div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;<span class="preprocessor">#define ADC_2_GPIO_PORT GPIOC</span></div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;<span class="preprocessor">#define ADC_2_GPIO_PIN GPIO5</span></div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;<span class="preprocessor">#if USE_ADC_3</span></div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;<span class="preprocessor">#define AD1_3_CHANNEL 0</span></div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;<span class="preprocessor">#define ADC_3 AD1_3</span></div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;<span class="preprocessor">#define ADC_3_GPIO_PORT GPIOA</span></div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;<span class="preprocessor">#define ADC_3_GPIO_PIN GPIO0</span></div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;<span class="preprocessor">#if USE_ADC_4</span></div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;<span class="preprocessor">#define AD1_4_CHANNEL 1</span></div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;<span class="preprocessor">#define ADC_4 AD1_4</span></div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;<span class="preprocessor">#define ADC_4_GPIO_PORT GPIOA</span></div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;<span class="preprocessor">#define ADC_4_GPIO_PIN GPIO1</span></div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;<span class="comment">/* allow to define ADC_CHANNEL_VSUPPLY in the airframe file*/</span></div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;<span class="preprocessor">#ifndef ADC_CHANNEL_VSUPPLY</span></div>
+<div class="line"><a name="l00308"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#ad5a6636ee170fccf62a748fc72374d3b">  308</a></span>&#160;<span class="preprocessor">#define ADC_CHANNEL_VSUPPLY ADC_1</span></div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;</div>
+<div class="line"><a name="l00311"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a94fa241ceca04635f282e09bdd829f5f">  311</a></span>&#160;<span class="preprocessor">#define DefaultVoltageOfAdc(adc) (0.0045*adc)</span></div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;</div>
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;<span class="comment">/* allow to define ADC_CHANNEL_VSUPPLY in the airframe file*/</span></div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;<span class="preprocessor">#ifndef ADC_CHANNEL_VSUPPLY</span></div>
-<div class="line"><a name="l00316"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#ad5a6636ee170fccf62a748fc72374d3b">  316</a></span>&#160;<span class="preprocessor">#define ADC_CHANNEL_VSUPPLY ADC_1</span></div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;</div>
-<div class="line"><a name="l00319"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a94fa241ceca04635f282e09bdd829f5f">  319</a></span>&#160;<span class="preprocessor">#define DefaultVoltageOfAdc(adc) (0.0045*adc)</span></div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;<span class="comment"> * PWM</span></div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00318"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#ab8668b847469a8d3041eb77d7f1e5a78">  318</a></span>&#160;<span class="preprocessor">#define PWM_USE_TIM3 1</span></div>
+<div class="line"><a name="l00319"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a9edea038e84fe10c9a71436253cc8ea1">  319</a></span>&#160;<span class="preprocessor">#define PWM_USE_TIM5 1</span></div>
 <div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;<span class="comment"> * PWM</span></div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00326"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#ab8668b847469a8d3041eb77d7f1e5a78">  326</a></span>&#160;<span class="preprocessor">#define PWM_USE_TIM3 1</span></div>
-<div class="line"><a name="l00327"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a9edea038e84fe10c9a71436253cc8ea1">  327</a></span>&#160;<span class="preprocessor">#define PWM_USE_TIM5 1</span></div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;<span class="preprocessor">#ifndef USE_PWM1</span></div>
-<div class="line"><a name="l00330"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a9e51c24a0d742a25ba8d5e92b6d88d65">  330</a></span>&#160;<span class="preprocessor">#define USE_PWM1 1</span></div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;<span class="preprocessor">#ifndef USE_PWM2</span></div>
-<div class="line"><a name="l00333"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a3b04e14d6ed72ccdfab217fa4ca9a737">  333</a></span>&#160;<span class="preprocessor">#define USE_PWM2 1</span></div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;<span class="preprocessor">#ifndef USE_PWM3</span></div>
-<div class="line"><a name="l00336"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#ae6eef5f45ba39c8c7c0b65487b2bc35a">  336</a></span>&#160;<span class="preprocessor">#define USE_PWM3 1</span></div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;<span class="preprocessor">#ifndef USE_PWM4</span></div>
-<div class="line"><a name="l00339"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a8899afdbd830cb0b81968fc660291934">  339</a></span>&#160;<span class="preprocessor">#define USE_PWM4 1</span></div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;<span class="preprocessor">#ifndef USE_PWM5</span></div>
-<div class="line"><a name="l00342"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a402c216e512bc4a39616400af32b7c7f">  342</a></span>&#160;<span class="preprocessor">#define USE_PWM5 1</span></div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;<span class="preprocessor">#ifndef USE_PWM6</span></div>
-<div class="line"><a name="l00345"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a460087c9ad1cc47d89c51536be5d9a72">  345</a></span>&#160;<span class="preprocessor">#define USE_PWM6 1</span></div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;<span class="preprocessor">#if USE_SERVOS_7AND8</span></div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;<span class="preprocessor">#if USE_I2C1</span></div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;<span class="preprocessor">#error &quot;You cannot USE_SERVOS_7AND8 and USE_I2C1 at the same time&quot;</span></div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;<span class="preprocessor">#define ACTUATORS_PWM_NB 8</span></div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;<span class="preprocessor">#define USE_PWM7 1</span></div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;<span class="preprocessor">#define USE_PWM8 1</span></div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;<span class="preprocessor">#define PWM_USE_TIM4 1</span></div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;<span class="preprocessor">#define ACTUATORS_PWM_NB 8</span></div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00359"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a68d4247d6cfc6a0dc584ca7a7f41115b">  359</a></span>&#160;<span class="preprocessor">#define ACTUATORS_PWM_NB 6</span></div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;<span class="comment">// PWM_SERVO_x is the index of the servo in the actuators_pwm_values array</span></div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;<span class="preprocessor">#if USE_PWM1</span></div>
-<div class="line"><a name="l00364"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a27260a99d1076f9d0d1cb786860066fd">  364</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_1 0</span></div>
-<div class="line"><a name="l00365"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#ada5c5036a84c550ab1f82c1af0bcd112">  365</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_1_TIMER TIM3</span></div>
-<div class="line"><a name="l00366"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a86960c3aad4310e9c2963cd5d63e6392">  366</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_1_GPIO GPIOC</span></div>
-<div class="line"><a name="l00367"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#aa7c130ffea683af1bcc3eb9fbc3aa0ae">  367</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_1_PIN GPIO6</span></div>
-<div class="line"><a name="l00368"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a5d184c3828cac2e2a9ba377fe1b1eb35">  368</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_1_AF GPIO_AF2</span></div>
-<div class="line"><a name="l00369"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a8d77db0e10464907b23412abccbf7c63">  369</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_1_OC TIM_OC1</span></div>
-<div class="line"><a name="l00370"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#ae40a4e27a94283e513359632ceea8de0">  370</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_1_OC_BIT (1&lt;&lt;0)</span></div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;<span class="preprocessor">#define PWM_SERVO_1_OC_BIT 0</span></div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;<span class="preprocessor">#if USE_PWM2</span></div>
-<div class="line"><a name="l00376"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#abdf3f086a6274a36ead16fc540d4a05c">  376</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_2 1</span></div>
-<div class="line"><a name="l00377"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a50dc24ffa7fff76fe5c0bda8cee432d6">  377</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_2_TIMER TIM3</span></div>
-<div class="line"><a name="l00378"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#adca9740b51ca9f7681d3c3f585a57836">  378</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_2_GPIO GPIOC</span></div>
-<div class="line"><a name="l00379"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a93588ba4e78f8b0452867afb990c0264">  379</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_2_PIN GPIO7</span></div>
-<div class="line"><a name="l00380"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a0b37c9a3e2fb7498e24a8d9ee681df3b">  380</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_2_AF GPIO_AF2</span></div>
-<div class="line"><a name="l00381"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a71122954f0f92371cc8f6124e291a016">  381</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_2_OC TIM_OC2</span></div>
-<div class="line"><a name="l00382"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a50227ddde1342cae56494d8cedfde915">  382</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_2_OC_BIT (1&lt;&lt;1)</span></div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;<span class="preprocessor">#define PWM_SERVO_2_OC_BIT 0</span></div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;<span class="preprocessor">#if USE_PWM3</span></div>
-<div class="line"><a name="l00388"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a342eee19f66562516414e255f3db4cc4">  388</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_3 2</span></div>
-<div class="line"><a name="l00389"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a267f7d6033304596a25d8436e2af4af6">  389</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_3_TIMER TIM3</span></div>
-<div class="line"><a name="l00390"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a3527010cfbb35e98ab1bba9ded57da14">  390</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_3_GPIO GPIOC</span></div>
-<div class="line"><a name="l00391"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a1f43b2c4250213826a1c0cae49004e3c">  391</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_3_PIN GPIO8</span></div>
-<div class="line"><a name="l00392"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a1af3b0681135879303164ffd4953257b">  392</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_3_AF GPIO_AF2</span></div>
-<div class="line"><a name="l00393"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#abbc7c54dc7ef033588e5b1ae4dcaf62d">  393</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_3_OC TIM_OC3</span></div>
-<div class="line"><a name="l00394"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a665cb015c3504e5dcfd386c518de25c0">  394</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_3_OC_BIT (1&lt;&lt;2)</span></div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;<span class="preprocessor">#define PWM_SERVO_3_OC_BIT 0</span></div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;<span class="preprocessor">#if USE_PWM4</span></div>
-<div class="line"><a name="l00400"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a91f6626bfa49db33e3a3ed5d1bad1cc5">  400</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_4 3</span></div>
-<div class="line"><a name="l00401"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a01f35b990dd64f2a26f879a0757dea09">  401</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_4_TIMER TIM3</span></div>
-<div class="line"><a name="l00402"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a1d3867d6cc6edaf6fa497dc7a4466f21">  402</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_4_GPIO GPIOC</span></div>
-<div class="line"><a name="l00403"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a6404fc57b2246acd54fe7539e29aa9a6">  403</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_4_PIN GPIO9</span></div>
-<div class="line"><a name="l00404"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a689995b3ffce4727831c630e0c144b5e">  404</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_4_AF GPIO_AF2</span></div>
-<div class="line"><a name="l00405"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#ac8d434552c8699c63f65cc53d3b5f30d">  405</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_4_OC TIM_OC4</span></div>
-<div class="line"><a name="l00406"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a9e53b17ebc6bac4a7bee8c55ebef692d">  406</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_4_OC_BIT (1&lt;&lt;3)</span></div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;<span class="preprocessor">#define PWM_SERVO_4_OC_BIT 0</span></div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;</div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;<span class="preprocessor">#if USE_PWM5</span></div>
-<div class="line"><a name="l00412"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#ae718fb13d2500192855c74e78e6c9c5e">  412</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_5 4</span></div>
-<div class="line"><a name="l00413"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a788deb07b7c76a809557fa2ee0c416e5">  413</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_5_TIMER TIM5</span></div>
-<div class="line"><a name="l00414"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a08192a96a6eebfeb1d83f369a8ecb12a">  414</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_5_GPIO GPIOA</span></div>
-<div class="line"><a name="l00415"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a7ca4d622269db724a3af09d3625280ee">  415</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_5_PIN GPIO0</span></div>
-<div class="line"><a name="l00416"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a28fc7e79d9148492cf26b91a7a5c0d14">  416</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_5_AF GPIO_AF2</span></div>
-<div class="line"><a name="l00417"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#ac1a3a477a0001b92c5ec56eb2d8327bf">  417</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_5_OC TIM_OC1</span></div>
-<div class="line"><a name="l00418"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a5d2f3465213306fd37370c884444e5e5">  418</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_5_OC_BIT (1&lt;&lt;0)</span></div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;<span class="preprocessor">#define PWM_SERVO_5_OC_BIT 0</span></div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;</div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;<span class="preprocessor">#if USE_PWM6</span></div>
-<div class="line"><a name="l00424"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a20e24103fcaa69e246c0d87b3a040050">  424</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_6 5</span></div>
-<div class="line"><a name="l00425"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a91379312db5447f1d9c4343ab6abba3c">  425</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_6_TIMER TIM5</span></div>
-<div class="line"><a name="l00426"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a9c90f2615bc6566f45e326285819f6d4">  426</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_6_GPIO GPIOA</span></div>
-<div class="line"><a name="l00427"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#ac9b1f25ca62d407c091acfb0334dc377">  427</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_6_PIN GPIO1</span></div>
-<div class="line"><a name="l00428"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a4790fb09d46bc4fec1b725d476ae813d">  428</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_6_AF GPIO_AF2</span></div>
-<div class="line"><a name="l00429"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a78b91cae357eed2023271f3a889047dd">  429</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_6_OC TIM_OC2</span></div>
-<div class="line"><a name="l00430"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#af94fd6d4d1273791ff04578e48f27857">  430</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_6_OC_BIT (1&lt;&lt;1)</span></div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;<span class="preprocessor">#define PWM_SERVO_6_OC_BIT 0</span></div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;</div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;<span class="preprocessor">#if USE_PWM7</span></div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;<span class="preprocessor">#define PWM_SERVO_7 6</span></div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;<span class="preprocessor">#define PWM_SERVO_7_TIMER TIM4</span></div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;<span class="preprocessor">#define PWM_SERVO_7_GPIO GPIOB</span></div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;<span class="preprocessor">#define PWM_SERVO_7_PIN GPIO6</span></div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;<span class="preprocessor">#define PWM_SERVO_7_AF GPIO_AF2</span></div>
-<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;<span class="preprocessor">#define PWM_SERVO_7_OC TIM_OC1</span></div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;<span class="preprocessor">#define PWM_SERVO_7_OC_BIT (1&lt;&lt;0)</span></div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00444"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a345f7e7ea14339c4e1fab93846675d5e">  444</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_7_OC_BIT 0</span></div>
-<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;</div>
-<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;<span class="preprocessor">#if USE_PWM8</span></div>
-<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;<span class="preprocessor">#define PWM_SERVO_8 7</span></div>
-<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;<span class="preprocessor">#define PWM_SERVO_8_TIMER TIM4</span></div>
-<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;<span class="preprocessor">#define PWM_SERVO_8_GPIO GPIOB</span></div>
-<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;<span class="preprocessor">#define PWM_SERVO_8_PIN GPIO7</span></div>
-<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;<span class="preprocessor">#define PWM_SERVO_8_AF GPIO_AF2</span></div>
-<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;<span class="preprocessor">#define PWM_SERVO_8_OC TIM_OC2</span></div>
-<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;<span class="preprocessor">#define PWM_SERVO_8_OC_BIT (1&lt;&lt;1)</span></div>
-<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00456"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a22f6b63dd659b030c48992b45bbc2353">  456</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_8_OC_BIT 0</span></div>
-<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;<span class="preprocessor">#ifndef USE_PWM1</span></div>
+<div class="line"><a name="l00322"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a9e51c24a0d742a25ba8d5e92b6d88d65">  322</a></span>&#160;<span class="preprocessor">#define USE_PWM1 1</span></div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;<span class="preprocessor">#ifndef USE_PWM2</span></div>
+<div class="line"><a name="l00325"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a3b04e14d6ed72ccdfab217fa4ca9a737">  325</a></span>&#160;<span class="preprocessor">#define USE_PWM2 1</span></div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;<span class="preprocessor">#ifndef USE_PWM3</span></div>
+<div class="line"><a name="l00328"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#ae6eef5f45ba39c8c7c0b65487b2bc35a">  328</a></span>&#160;<span class="preprocessor">#define USE_PWM3 1</span></div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;<span class="preprocessor">#ifndef USE_PWM4</span></div>
+<div class="line"><a name="l00331"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a8899afdbd830cb0b81968fc660291934">  331</a></span>&#160;<span class="preprocessor">#define USE_PWM4 1</span></div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;<span class="preprocessor">#ifndef USE_PWM5</span></div>
+<div class="line"><a name="l00334"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a402c216e512bc4a39616400af32b7c7f">  334</a></span>&#160;<span class="preprocessor">#define USE_PWM5 1</span></div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;<span class="preprocessor">#ifndef USE_PWM6</span></div>
+<div class="line"><a name="l00337"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a460087c9ad1cc47d89c51536be5d9a72">  337</a></span>&#160;<span class="preprocessor">#define USE_PWM6 1</span></div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;<span class="preprocessor">#if USE_SERVOS_7AND8</span></div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;<span class="preprocessor">#if USE_I2C1</span></div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;<span class="preprocessor">#error &quot;You cannot USE_SERVOS_7AND8 and USE_I2C1 at the same time&quot;</span></div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;<span class="preprocessor">#define ACTUATORS_PWM_NB 8</span></div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;<span class="preprocessor">#define USE_PWM7 1</span></div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;<span class="preprocessor">#define USE_PWM8 1</span></div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;<span class="preprocessor">#define PWM_USE_TIM4 1</span></div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;<span class="preprocessor">#define ACTUATORS_PWM_NB 8</span></div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00351"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a68d4247d6cfc6a0dc584ca7a7f41115b">  351</a></span>&#160;<span class="preprocessor">#define ACTUATORS_PWM_NB 6</span></div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;<span class="comment">// PWM_SERVO_x is the index of the servo in the actuators_pwm_values array</span></div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;<span class="preprocessor">#if USE_PWM1</span></div>
+<div class="line"><a name="l00356"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a27260a99d1076f9d0d1cb786860066fd">  356</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_1 0</span></div>
+<div class="line"><a name="l00357"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#ada5c5036a84c550ab1f82c1af0bcd112">  357</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_1_TIMER TIM3</span></div>
+<div class="line"><a name="l00358"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a86960c3aad4310e9c2963cd5d63e6392">  358</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_1_GPIO GPIOC</span></div>
+<div class="line"><a name="l00359"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#aa7c130ffea683af1bcc3eb9fbc3aa0ae">  359</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_1_PIN GPIO6</span></div>
+<div class="line"><a name="l00360"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a5d184c3828cac2e2a9ba377fe1b1eb35">  360</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_1_AF GPIO_AF2</span></div>
+<div class="line"><a name="l00361"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a8d77db0e10464907b23412abccbf7c63">  361</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_1_OC TIM_OC1</span></div>
+<div class="line"><a name="l00362"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#ae40a4e27a94283e513359632ceea8de0">  362</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_1_OC_BIT (1&lt;&lt;0)</span></div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;<span class="preprocessor">#define PWM_SERVO_1_OC_BIT 0</span></div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;<span class="preprocessor">#if USE_PWM2</span></div>
+<div class="line"><a name="l00368"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#abdf3f086a6274a36ead16fc540d4a05c">  368</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_2 1</span></div>
+<div class="line"><a name="l00369"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a50dc24ffa7fff76fe5c0bda8cee432d6">  369</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_2_TIMER TIM3</span></div>
+<div class="line"><a name="l00370"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#adca9740b51ca9f7681d3c3f585a57836">  370</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_2_GPIO GPIOC</span></div>
+<div class="line"><a name="l00371"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a93588ba4e78f8b0452867afb990c0264">  371</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_2_PIN GPIO7</span></div>
+<div class="line"><a name="l00372"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a0b37c9a3e2fb7498e24a8d9ee681df3b">  372</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_2_AF GPIO_AF2</span></div>
+<div class="line"><a name="l00373"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a71122954f0f92371cc8f6124e291a016">  373</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_2_OC TIM_OC2</span></div>
+<div class="line"><a name="l00374"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a50227ddde1342cae56494d8cedfde915">  374</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_2_OC_BIT (1&lt;&lt;1)</span></div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;<span class="preprocessor">#define PWM_SERVO_2_OC_BIT 0</span></div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;<span class="preprocessor">#if USE_PWM3</span></div>
+<div class="line"><a name="l00380"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a342eee19f66562516414e255f3db4cc4">  380</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_3 2</span></div>
+<div class="line"><a name="l00381"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a267f7d6033304596a25d8436e2af4af6">  381</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_3_TIMER TIM3</span></div>
+<div class="line"><a name="l00382"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a3527010cfbb35e98ab1bba9ded57da14">  382</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_3_GPIO GPIOC</span></div>
+<div class="line"><a name="l00383"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a1f43b2c4250213826a1c0cae49004e3c">  383</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_3_PIN GPIO8</span></div>
+<div class="line"><a name="l00384"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a1af3b0681135879303164ffd4953257b">  384</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_3_AF GPIO_AF2</span></div>
+<div class="line"><a name="l00385"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#abbc7c54dc7ef033588e5b1ae4dcaf62d">  385</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_3_OC TIM_OC3</span></div>
+<div class="line"><a name="l00386"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a665cb015c3504e5dcfd386c518de25c0">  386</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_3_OC_BIT (1&lt;&lt;2)</span></div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;<span class="preprocessor">#define PWM_SERVO_3_OC_BIT 0</span></div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;<span class="preprocessor">#if USE_PWM4</span></div>
+<div class="line"><a name="l00392"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a91f6626bfa49db33e3a3ed5d1bad1cc5">  392</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_4 3</span></div>
+<div class="line"><a name="l00393"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a01f35b990dd64f2a26f879a0757dea09">  393</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_4_TIMER TIM3</span></div>
+<div class="line"><a name="l00394"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a1d3867d6cc6edaf6fa497dc7a4466f21">  394</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_4_GPIO GPIOC</span></div>
+<div class="line"><a name="l00395"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a6404fc57b2246acd54fe7539e29aa9a6">  395</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_4_PIN GPIO9</span></div>
+<div class="line"><a name="l00396"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a689995b3ffce4727831c630e0c144b5e">  396</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_4_AF GPIO_AF2</span></div>
+<div class="line"><a name="l00397"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#ac8d434552c8699c63f65cc53d3b5f30d">  397</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_4_OC TIM_OC4</span></div>
+<div class="line"><a name="l00398"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a9e53b17ebc6bac4a7bee8c55ebef692d">  398</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_4_OC_BIT (1&lt;&lt;3)</span></div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;<span class="preprocessor">#define PWM_SERVO_4_OC_BIT 0</span></div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;<span class="preprocessor">#if USE_PWM5</span></div>
+<div class="line"><a name="l00404"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#ae718fb13d2500192855c74e78e6c9c5e">  404</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_5 4</span></div>
+<div class="line"><a name="l00405"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a788deb07b7c76a809557fa2ee0c416e5">  405</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_5_TIMER TIM5</span></div>
+<div class="line"><a name="l00406"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a08192a96a6eebfeb1d83f369a8ecb12a">  406</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_5_GPIO GPIOA</span></div>
+<div class="line"><a name="l00407"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a7ca4d622269db724a3af09d3625280ee">  407</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_5_PIN GPIO0</span></div>
+<div class="line"><a name="l00408"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a28fc7e79d9148492cf26b91a7a5c0d14">  408</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_5_AF GPIO_AF2</span></div>
+<div class="line"><a name="l00409"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#ac1a3a477a0001b92c5ec56eb2d8327bf">  409</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_5_OC TIM_OC1</span></div>
+<div class="line"><a name="l00410"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a5d2f3465213306fd37370c884444e5e5">  410</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_5_OC_BIT (1&lt;&lt;0)</span></div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;<span class="preprocessor">#define PWM_SERVO_5_OC_BIT 0</span></div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;<span class="preprocessor">#if USE_PWM6</span></div>
+<div class="line"><a name="l00416"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a20e24103fcaa69e246c0d87b3a040050">  416</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_6 5</span></div>
+<div class="line"><a name="l00417"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a91379312db5447f1d9c4343ab6abba3c">  417</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_6_TIMER TIM5</span></div>
+<div class="line"><a name="l00418"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a9c90f2615bc6566f45e326285819f6d4">  418</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_6_GPIO GPIOA</span></div>
+<div class="line"><a name="l00419"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#ac9b1f25ca62d407c091acfb0334dc377">  419</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_6_PIN GPIO1</span></div>
+<div class="line"><a name="l00420"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a4790fb09d46bc4fec1b725d476ae813d">  420</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_6_AF GPIO_AF2</span></div>
+<div class="line"><a name="l00421"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a78b91cae357eed2023271f3a889047dd">  421</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_6_OC TIM_OC2</span></div>
+<div class="line"><a name="l00422"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#af94fd6d4d1273791ff04578e48f27857">  422</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_6_OC_BIT (1&lt;&lt;1)</span></div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;<span class="preprocessor">#define PWM_SERVO_6_OC_BIT 0</span></div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;<span class="preprocessor">#if USE_PWM7</span></div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;<span class="preprocessor">#define PWM_SERVO_7 6</span></div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;<span class="preprocessor">#define PWM_SERVO_7_TIMER TIM4</span></div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;<span class="preprocessor">#define PWM_SERVO_7_GPIO GPIOB</span></div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;<span class="preprocessor">#define PWM_SERVO_7_PIN GPIO6</span></div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;<span class="preprocessor">#define PWM_SERVO_7_AF GPIO_AF2</span></div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;<span class="preprocessor">#define PWM_SERVO_7_OC TIM_OC1</span></div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;<span class="preprocessor">#define PWM_SERVO_7_OC_BIT (1&lt;&lt;0)</span></div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00436"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a345f7e7ea14339c4e1fab93846675d5e">  436</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_7_OC_BIT 0</span></div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;<span class="preprocessor">#if USE_PWM8</span></div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;<span class="preprocessor">#define PWM_SERVO_8 7</span></div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;<span class="preprocessor">#define PWM_SERVO_8_TIMER TIM4</span></div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;<span class="preprocessor">#define PWM_SERVO_8_GPIO GPIOB</span></div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;<span class="preprocessor">#define PWM_SERVO_8_PIN GPIO7</span></div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;<span class="preprocessor">#define PWM_SERVO_8_AF GPIO_AF2</span></div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;<span class="preprocessor">#define PWM_SERVO_8_OC TIM_OC2</span></div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;<span class="preprocessor">#define PWM_SERVO_8_OC_BIT (1&lt;&lt;1)</span></div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00448"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a22f6b63dd659b030c48992b45bbc2353">  448</a></span>&#160;<span class="preprocessor">#define PWM_SERVO_8_OC_BIT 0</span></div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;<span class="comment">/* servos 1-4 on TIM3 */</span></div>
+<div class="line"><a name="l00452"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a59305d3ed1cc7b7ab5184b1652b0c7d5">  452</a></span>&#160;<span class="preprocessor">#define PWM_TIM3_CHAN_MASK (PWM_SERVO_1_OC_BIT|PWM_SERVO_2_OC_BIT|PWM_SERVO_3_OC_BIT|PWM_SERVO_4_OC_BIT)</span></div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;<span class="comment">/* servos 5-6 on TIM5 */</span></div>
+<div class="line"><a name="l00454"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a7abc8f9863cc1fd96ecaf1b1cfeaaa55">  454</a></span>&#160;<span class="preprocessor">#define PWM_TIM5_CHAN_MASK (PWM_SERVO_5_OC_BIT|PWM_SERVO_6_OC_BIT)</span></div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;<span class="comment">/* servos 7-8 on TIM4 if USE_SERVOS_7AND8 */</span></div>
+<div class="line"><a name="l00456"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#ad1ec00f69a8dbb70ce0d31eef0206d5e">  456</a></span>&#160;<span class="preprocessor">#define PWM_TIM4_CHAN_MASK (PWM_SERVO_7_OC_BIT|PWM_SERVO_8_OC_BIT)</span></div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;</div>
 <div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;</div>
-<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;<span class="comment">/* servos 1-4 on TIM3 */</span></div>
-<div class="line"><a name="l00460"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a59305d3ed1cc7b7ab5184b1652b0c7d5">  460</a></span>&#160;<span class="preprocessor">#define PWM_TIM3_CHAN_MASK (PWM_SERVO_1_OC_BIT|PWM_SERVO_2_OC_BIT|PWM_SERVO_3_OC_BIT|PWM_SERVO_4_OC_BIT)</span></div>
-<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;<span class="comment">/* servos 5-6 on TIM5 */</span></div>
-<div class="line"><a name="l00462"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a7abc8f9863cc1fd96ecaf1b1cfeaaa55">  462</a></span>&#160;<span class="preprocessor">#define PWM_TIM5_CHAN_MASK (PWM_SERVO_5_OC_BIT|PWM_SERVO_6_OC_BIT)</span></div>
-<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;<span class="comment">/* servos 7-8 on TIM4 if USE_SERVOS_7AND8 */</span></div>
-<div class="line"><a name="l00464"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#ad1ec00f69a8dbb70ce0d31eef0206d5e">  464</a></span>&#160;<span class="preprocessor">#define PWM_TIM4_CHAN_MASK (PWM_SERVO_7_OC_BIT|PWM_SERVO_8_OC_BIT)</span></div>
-<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;</div>
-<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;</div>
-<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;<span class="comment">/* by default activate onboard baro */</span></div>
-<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;<span class="preprocessor">#ifndef USE_BARO_BOARD</span></div>
-<div class="line"><a name="l00469"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a3f7278cf218a92fa0a1514dea823cd9d">  469</a></span>&#160;<span class="preprocessor">#define USE_BARO_BOARD 1</span></div>
-<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;</div>
-<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* CONFIG_ELLE0_1_0_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;<span class="comment">/* by default activate onboard baro */</span></div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;<span class="preprocessor">#ifndef USE_BARO_BOARD</span></div>
+<div class="line"><a name="l00461"></a><span class="lineno"><a class="line" href="elle0__common_8h.html#a3f7278cf218a92fa0a1514dea823cd9d">  461</a></span>&#160;<span class="preprocessor">#define USE_BARO_BOARD 1</span></div>
+<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;</div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* CONFIG_ELLE0_1_0_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e030268cd18297cf6282390f76bfcf7f.html">boards</a></li><li class="navelem"><a class="el" href="elle0__common_8h.html">elle0_common.h</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:01:16 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:01:30 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

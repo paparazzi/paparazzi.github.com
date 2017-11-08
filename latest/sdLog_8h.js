@@ -13,8 +13,10 @@ var sdLog_8h =
       [ "SDLOG_FSFULL", "sdLog_8h.html#ae9361ce95c5a174983481365e90d87b3a34cd85153505593b951d06813ee58193", null ],
       [ "SDLOG_FDFULL", "sdLog_8h.html#ae9361ce95c5a174983481365e90d87b3a9a64c859d9d46dedf9318baefedb1005", null ],
       [ "SDLOG_QUEUEFULL", "sdLog_8h.html#ae9361ce95c5a174983481365e90d87b3a1486fb4bf54767066d617d124c7d1b85", null ],
+      [ "SDLOG_MEMFULL", "sdLog_8h.html#ae9361ce95c5a174983481365e90d87b3aa24961aec7d58d270923e0038e093363", null ],
       [ "SDLOG_NOTHREAD", "sdLog_8h.html#ae9361ce95c5a174983481365e90d87b3aca3b2953a40741c4fd00047b9ec803aa", null ],
       [ "SDLOG_INTERNAL_ERROR", "sdLog_8h.html#ae9361ce95c5a174983481365e90d87b3ad8b69293df63a8b1fa213f3ae8429725", null ],
+      [ "SDLOG_CANNOT_EXPAND", "sdLog_8h.html#ae9361ce95c5a174983481365e90d87b3ae0bbc3b5fe1a4489f0396241a660a8cf", null ],
       [ "SDLOG_LOGNUM_ERROR", "sdLog_8h.html#ae9361ce95c5a174983481365e90d87b3a14d88ec8c386a0bc8b8b8ab178b6e446", null ],
       [ "SDLOG_WAS_LAUNCHED", "sdLog_8h.html#ae9361ce95c5a174983481365e90d87b3a4237d6b686f973c6af0bf0c44b849390", null ]
     ] ],

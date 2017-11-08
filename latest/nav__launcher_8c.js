@@ -20,7 +20,7 @@ var nav__launcher_8c =
       [ "L_Finished", "nav__launcher_8c.html#a866762c1088f77bad73a925d61827b91af5c2717f3b609ccb9d794ba2d646b646", null ]
     ] ],
     [ "nav_launcher_run", "nav__launcher_8c.html#ab48c9dc5c6e69f766e06e1c07e230a60", null ],
-    [ "nav_launcher_setup", "nav__launcher_8c.html#a35d99b45a087a211da7a99b02be22f0e", null ],
+    [ "nav_launcher_setup", "nav__launcher_8c.html#a1eb24d7eba288013894a92a03d442067", null ],
     [ "CLaunch_Status", "nav__launcher_8c.html#a5235379cd92b699e0ef1625840c5e79e", null ],
     [ "launch_alt", "nav__launcher_8c.html#ae0aa9f5ac06f76d2eb9c95d56d39b009", null ],
     [ "launch_circle", "nav__launcher_8c.html#a9f7cfd308bc700e7c38a3ac7be6faf24", null ],

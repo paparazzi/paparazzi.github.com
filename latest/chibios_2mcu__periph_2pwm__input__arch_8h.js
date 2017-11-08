@@ -1,9 +1,7 @@
 var chibios_2mcu__periph_2pwm__input__arch_8h =
 [
-    [ "PWM_INPUT_SIGNED_TICKS_OF_USEC", "chibios_2mcu__periph_2pwm__input__arch_8h.html#a3418d5249c5b312dd2a65e1b523f1764", null ],
-    [ "PWM_INPUT_TICKS_OF_USEC", "chibios_2mcu__periph_2pwm__input__arch_8h.html#a5faa37b1f48b05b352e2490781831742", null ],
-    [ "PWM_INPUT_TICKS_PER_USEC", "chibios_2mcu__periph_2pwm__input__arch_8h.html#a3ae3b1d1e88e20bb623b9bfb375b9e76", null ],
-    [ "USEC_OF_PWM_INPUT_TICKS", "chibios_2mcu__periph_2pwm__input__arch_8h.html#ac40a35f68787fdf8e657f339ef24ebd9", null ],
+    [ "PWM_INPUT1_TICKS_PER_USEC", "chibios_2mcu__periph_2pwm__input__arch_8h.html#ad78f99c222ee381826dc71959004de9f", null ],
+    [ "PWM_INPUT2_TICKS_PER_USEC", "chibios_2mcu__periph_2pwm__input__arch_8h.html#abe33bea00528e95fa8fe858d374f2820", null ],
     [ "pwm_input_channels", "chibios_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89", [
       [ "PWM_INPUT1", "chibios_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89a32b12a036871c7af7e058b004d913c4e", null ],
       [ "PWM_INPUT2", "chibios_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89a9111b96e9eb0797d88775081ee4fd89a", null ],

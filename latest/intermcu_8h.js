@@ -17,7 +17,9 @@ var intermcu_8h =
     [ "INTERMCU_SET_CMD_STATUS", "intermcu_8h.html#a11d5b632a52a6f98388585351cd41cf3", null ],
     [ "intermcu_cmd_status", "intermcu_8h.html#a4c80c4a2f81c27265b0e196af3453adc", [
       [ "INTERMCU_CMD_MOTORS_ON", "intermcu_8h.html#a4c80c4a2f81c27265b0e196af3453adca21da74cd6f28c15050aa7d4b0171523c", null ],
-      [ "INTERMCU_CMD_DISARM", "intermcu_8h.html#a4c80c4a2f81c27265b0e196af3453adca234d69409b088a1331577ab51424e1e3", null ]
+      [ "INTERMCU_CMD_DISARM", "intermcu_8h.html#a4c80c4a2f81c27265b0e196af3453adca234d69409b088a1331577ab51424e1e3", null ],
+      [ "INTERMCU_CMD_TIPPROPS", "intermcu_8h.html#a4c80c4a2f81c27265b0e196af3453adca6ff8c793f6114259916ae64bed152628", null ],
+      [ "INTERMCU_CMD_FAILSAFE", "intermcu_8h.html#a4c80c4a2f81c27265b0e196af3453adcacf16e9d5dd680ca590cb73e7523d7eb1", null ]
     ] ],
     [ "intermcu_PX4_baud_status", "intermcu_8h.html#a692b0f0e24d84c328657634259b6cc2c", [
       [ "PX4_BAUD", "intermcu_8h.html#a692b0f0e24d84c328657634259b6cc2ca8c7ae7ded482185743b329698d8e0b68", null ],

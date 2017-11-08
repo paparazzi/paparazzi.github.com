@@ -11,6 +11,6 @@ var nav__line__border_8c =
       [ "LQC11", "nav__line__border_8c.html#ad5923d4cae4a0d6912fbe7b761930ee5a7f637cfcb9990910ded6a6f84bafed9b", null ]
     ] ],
     [ "nav_line_border_run", "nav__line__border_8c.html#ad8aeda9d8b50c4c799e02f30fd7fdd2c", null ],
-    [ "nav_line_border_setup", "nav__line__border_8c.html#aea21d6509680f23940bb6dd6aaeb4062", null ],
+    [ "nav_line_border_setup", "nav__line__border_8c.html#a59293daa36eb6cd6f25f21733f51ed45", null ],
     [ "line_border_status", "nav__line__border_8c.html#ad61069f7efa416f20286bd177373cd17", null ]
 ];

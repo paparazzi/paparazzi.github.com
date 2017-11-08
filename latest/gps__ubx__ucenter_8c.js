@@ -13,6 +13,7 @@ var gps__ubx__ucenter_8c =
     [ "GPS_SBAS_INTEGRITY", "gps__ubx__ucenter_8c.html#ac99cb919825d17a9f31af8d067313d8a", null ],
     [ "GPS_SBAS_MAX_SBAS", "gps__ubx__ucenter_8c.html#aace3eb0d2dafedb7211e93bb49f29959", null ],
     [ "GPS_SBAS_RANGING", "gps__ubx__ucenter_8c.html#ada44e94c8939b49533535f26af388379", null ],
+    [ "GPS_UBX_ENABLE_NMEA_DATA_MASK", "gps__ubx__ucenter_8c.html#a795637c038061d50a428834973f875ef", null ],
     [ "GPS_UBX_NAV5_DYNAMICS", "gps__ubx__ucenter_8c.html#aebbf8779525abb9e3be454022b86cb8e", null ],
     [ "GPS_UBX_UCENTER_RATE", "gps__ubx__ucenter_8c.html#a179870d9ccd3fc30f92fb7c66f27953b", null ],
     [ "GPS_UBX_UCENTER_REPLY_ACK", "gps__ubx__ucenter_8c.html#a5f64b650a79b8c6bf7659a95d763ffc5", null ],
@@ -53,6 +54,7 @@ var gps__ubx__ucenter_8c =
     [ "NAV_DYN_STATIONARY", "gps__ubx__ucenter_8c.html#a8a90f2cd7dab634e840dc14d79431494", null ],
     [ "NMEA_PROTO_MASK", "gps__ubx__ucenter_8c.html#ab9aa18b1e00f53f983be44115151c92a", null ],
     [ "RESERVED", "gps__ubx__ucenter_8c.html#a56701f18aaad537f7fc0e9be309503c3", null ],
+    [ "RTCM3_PROTO_MASK", "gps__ubx__ucenter_8c.html#a9c9dcae6eddc4580c9a74f7b9f90bb14", null ],
     [ "RTCM_PROTO_MASK", "gps__ubx__ucenter_8c.html#a09dfa2e97e29e6e13d19b924250844f9", null ],
     [ "UBX_GPS_BAUD", "gps__ubx__ucenter_8c.html#a48a7c8b56ee5eb14dafb00e290855eb7", null ],
     [ "UBX_PROTO_MASK", "gps__ubx__ucenter_8c.html#a80ea5ec151a883bb9d4526d7362c0bb2", null ],
@@ -65,6 +67,7 @@ var gps__ubx__ucenter_8c =
     [ "gps_ubx_ucenter_configure", "gps__ubx__ucenter_8c.html#af6f0304a1c44f869e7b3d1bf76e756ae", null ],
     [ "gps_ubx_ucenter_enable_msg", "gps__ubx__ucenter_8c.html#a5a84e05f666e0f50c30772e4ef95cbdb", null ],
     [ "gps_ubx_ucenter_event", "gps__ubx__ucenter_8c.html#a6cb0d0e14aa4700bc5058890f146ca74", null ],
+    [ "gps_ubx_ucenter_get_status", "gps__ubx__ucenter_8c.html#aded3f81ec7693e4383cde538b3459205", null ],
     [ "gps_ubx_ucenter_init", "gps__ubx__ucenter_8c.html#ab3e87f1813c44b35cf8df6774715a4a9", null ],
     [ "gps_ubx_ucenter_periodic", "gps__ubx__ucenter_8c.html#a483da5be54cf6eca071cd6c1ee0e3675", null ],
     [ "gps_ubx_ucenter", "gps__ubx__ucenter_8c.html#a080e2318dbd7b4cb34822c4fbbfc701d", null ]

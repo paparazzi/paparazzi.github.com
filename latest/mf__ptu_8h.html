@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -150,7 +150,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="mf__ptu_8c_source.html#l00076">76</a> of file <a class="el" href="mf__ptu_8c_source.html">mf_ptu.c</a>.</p>
 
-<p>References <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00265">adc_buf_channel()</a>, <a class="el" href="mf__ptu_8c_source.html#l00054">ADC_CHANNEL_PTU_NB_SAMPLES</a>, <a class="el" href="chibios_2mcu__periph_2gpio__arch_8h_source.html#l00093">gpio_set()</a>, <a class="el" href="chibios_2mcu__periph_2gpio__arch_8c_source.html#l00033">gpio_setup_output()</a>, <a class="el" href="mf__ptu_8c_source.html#l00062">humid_period</a>, <a class="el" href="mf__ptu_8c_source.html#l00060">pressure_adc</a>, <a class="el" href="mf__ptu_8c_source.html#l00056">pressure_buf</a>, <a class="el" href="mf__ptu_8c_source.html#l00061">temp_adc</a>, and <a class="el" href="mf__ptu_8c_source.html#l00057">temp_buf</a>.</p>
+<p>References <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00281">adc_buf_channel()</a>, <a class="el" href="mf__ptu_8c_source.html#l00054">ADC_CHANNEL_PTU_NB_SAMPLES</a>, <a class="el" href="chibios_2mcu__periph_2gpio__arch_8h_source.html#l00098">gpio_set()</a>, <a class="el" href="chibios_2mcu__periph_2gpio__arch_8c_source.html#l00033">gpio_setup_output()</a>, <a class="el" href="mf__ptu_8c_source.html#l00062">humid_period</a>, <a class="el" href="mf__ptu_8c_source.html#l00060">pressure_adc</a>, <a class="el" href="mf__ptu_8c_source.html#l00056">pressure_buf</a>, <a class="el" href="mf__ptu_8c_source.html#l00061">temp_adc</a>, and <a class="el" href="mf__ptu_8c_source.html#l00057">temp_buf</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -181,7 +181,18 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="mf__ptu_8c_source.html#l00095">95</a> of file <a class="el" href="mf__ptu_8c_source.html">mf_ptu.c</a>.</p>
 
-<p>References <a class="el" href="adc_8h_source.html#l00057">adc_buf::av_nb_sample</a>, <a class="el" href="gps_8h_source.html#l00093">GpsState::course</a>, <a class="el" href="downlink_8h_source.html#l00084">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00088">DefaultDevice</a>, <a class="el" href="gps_8h_source.html#l00099">GpsState::fix</a>, <a class="el" href="gps_8c_source.html#l00075">gps</a>, <a class="el" href="gps_8h_source.html#l00091">GpsState::gspeed</a>, <a class="el" href="gps_8h_source.html#l00088">GpsState::hmsl</a>, <a class="el" href="mf__ptu_8c_source.html#l00062">humid_period</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00060">LlaCoor_i::lat</a>, <a class="el" href="gps_8h_source.html#l00086">GpsState::lla_pos</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00061">LlaCoor_i::lon</a>, <a class="el" href="gps_8h_source.html#l00090">GpsState::ned_vel</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00076">pprzLogFile</a>, <a class="el" href="mf__ptu_8c_source.html#l00060">pressure_adc</a>, <a class="el" href="mf__ptu_8c_source.html#l00056">pressure_buf</a>, <a class="el" href="mf__ptu_8c_source.html#l00046">PTU_HUMIDTY_OFFSET</a>, <a class="el" href="mf__ptu_8c_source.html#l00049">PTU_HUMIDTY_SCALE</a>, <a class="el" href="mf__ptu_8c_source.html#l00034">PTU_PRESSURE_OFFSET</a>, <a class="el" href="mf__ptu_8c_source.html#l00037">PTU_PRESSURE_SCALE</a>, <a class="el" href="mf__ptu_8c_source.html#l00040">PTU_TEMPERATURE_OFFSET</a>, <a class="el" href="mf__ptu_8c_source.html#l00043">PTU_TEMPERATURE_SCALE</a>, <a class="el" href="pwm__input_8c_source.html#l00031">pwm_input_period_tics</a>, <a class="el" href="adc_8h_source.html#l00054">adc_buf::sum</a>, <a class="el" href="mf__ptu_8c_source.html#l00061">temp_adc</a>, <a class="el" href="mf__ptu_8c_source.html#l00057">temp_buf</a>, <a class="el" href="gps_8h_source.html#l00101">GpsState::tow</a>, <a class="el" href="chibios_2mcu__periph_2pwm__input__arch_8h_source.html#l00050">USEC_OF_PWM_INPUT_TICKS</a>, <a class="el" href="gps_8h_source.html#l00100">GpsState::week</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00071">NedCoor_i::z</a>.</p>
+<p>References <a class="el" href="adc_8h_source.html#l00057">adc_buf::av_nb_sample</a>, <a class="el" href="gps_8h_source.html#l00093">GpsState::course</a>, <a class="el" href="downlink_8h_source.html#l00042">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00046">DefaultDevice</a>, <a class="el" href="gps_8h_source.html#l00099">GpsState::fix</a>, <a class="el" href="pwm__input_8c_source.html#l00044">get_pwm_input_period_in_usec()</a>, <a class="el" href="gps_8c_source.html#l00075">gps</a>, <a class="el" href="gps_8h_source.html#l00091">GpsState::gspeed</a>, <a class="el" href="gps_8h_source.html#l00088">GpsState::hmsl</a>, <a class="el" href="mf__ptu_8c_source.html#l00062">humid_period</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00060">LlaCoor_i::lat</a>, <a class="el" href="gps_8h_source.html#l00086">GpsState::lla_pos</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00061">LlaCoor_i::lon</a>, <a class="el" href="gps_8h_source.html#l00090">GpsState::ned_vel</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00085">pprzLogFile</a>, <a class="el" href="mf__ptu_8c_source.html#l00060">pressure_adc</a>, <a class="el" href="mf__ptu_8c_source.html#l00056">pressure_buf</a>, <a class="el" href="mf__ptu_8c_source.html#l00046">PTU_HUMIDTY_OFFSET</a>, <a class="el" href="mf__ptu_8c_source.html#l00049">PTU_HUMIDTY_SCALE</a>, <a class="el" href="mf__ptu_8c_source.html#l00034">PTU_PRESSURE_OFFSET</a>, <a class="el" href="mf__ptu_8c_source.html#l00037">PTU_PRESSURE_SCALE</a>, <a class="el" href="mf__ptu_8c_source.html#l00040">PTU_TEMPERATURE_OFFSET</a>, <a class="el" href="mf__ptu_8c_source.html#l00043">PTU_TEMPERATURE_SCALE</a>, <a class="el" href="adc_8h_source.html#l00054">adc_buf::sum</a>, <a class="el" href="mf__ptu_8c_source.html#l00061">temp_adc</a>, <a class="el" href="mf__ptu_8c_source.html#l00057">temp_buf</a>, <a class="el" href="gps_8h_source.html#l00101">GpsState::tow</a>, <a class="el" href="gps_8h_source.html#l00100">GpsState::week</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00071">NedCoor_i::z</a>.</p>
+
+<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="mf__ptu_8h_a1f3cab37f4f9e68bffb587d9661e0296_cgraph.png" border="0" usemap="#mf__ptu_8h_a1f3cab37f4f9e68bffb587d9661e0296_cgraph" alt=""/></div>
+<map name="mf__ptu_8h_a1f3cab37f4f9e68bffb587d9661e0296_cgraph" id="mf__ptu_8h_a1f3cab37f4f9e68bffb587d9661e0296_cgraph">
+<area shape="rect" id="node2" href="pwm__input_8c.html#aac481cd63da992c694d29285978e7384" title="get_pwm_input_period\l_in_usec" alt="" coords="177,5,344,47"/></map>
+</div>
+</p>
 
 </div>
 </div>
@@ -191,7 +202,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_dcc9af59dc35b42e32db80b18066e136.html">meteo</a></li><li class="navelem"><a class="el" href="mf__ptu_8h.html">mf_ptu.h</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:02:01 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:02:29 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

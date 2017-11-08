@@ -1,6 +1,7 @@
 var searchData=
 [
   ['oa_5fupdate',['OA_update',['../guidance__OA_8c.html#aeedb2b02de7cc2259cbbc6187e17f8d6',1,'OA_update():&#160;guidance_OA.c'],['../guidance__OA_8h.html#ae9523792204e84a5ff5dd0af6f49b225',1,'OA_update(void):&#160;guidance_OA.c']]],
+  ['obstacle_5fcb',['obstacle_cb',['../range__forcefield_8c.html#a8be158d737dc3d0e423dd0807e89a7aa',1,'range_forcefield.c']]],
   ['offset_5fcommands',['offset_commands',['../motor__mixing_8c.html#a04fd0bea41cfac070770a7725f19154a',1,'motor_mixing.c']]],
   ['on_5fdl_5fsetting',['on_DL_SETTING',['../nps__ivy_8c.html#a2bc82ff9c2b6dbda0c4553d05f471632',1,'nps_ivy.c']]],
   ['on_5ferror',['on_error',['../ttx2scilab_8c.html#a08728d86beb4dc52bf9ca9cacf7f4878',1,'ttx2scilab.c']]],
@@ -16,11 +17,8 @@ var searchData=
   ['opencv_5fexample',['opencv_example',['../opencv__example_8cpp.html#a6e9d13abcf561943ebba60b0b5f43565',1,'opencv_example(char *img, int width, int height):&#160;opencv_example.cpp'],['../opencv__example_8h.html#a6e9d13abcf561943ebba60b0b5f43565',1,'opencv_example(char *img, int width, int height):&#160;opencv_example.cpp']]],
   ['opencv_5ffunc',['opencv_func',['../cv__opencvdemo_8c.html#a5effea43b9cdfb2509b018a4d31da0f2',1,'cv_opencvdemo.c']]],
   ['opencvdemo_5finit',['opencvdemo_init',['../cv__opencvdemo_8c.html#ad6b89073e490f7f45751cf66f4b97c4b',1,'opencvdemo_init(void):&#160;cv_opencvdemo.c'],['../cv__opencvdemo_8h.html#ad6b89073e490f7f45751cf66f4b97c4b',1,'opencvdemo_init(void):&#160;cv_opencvdemo.c']]],
-  ['opticflow_5fagl_5fcb',['opticflow_agl_cb',['../opticflow__module_8c.html#a4ff563eb2ad3a731774426ee87cd9b79',1,'opticflow_module.c']]],
-  ['opticflow_5fbody_5fto_5fimu_5fcb',['opticflow_body_to_imu_cb',['../opticflow__module_8c.html#aa7fc7edb3614e2fa5c4dcb27ef96ffc0',1,'opticflow_module.c']]],
-  ['opticflow_5fcalc_5fframe',['opticflow_calc_frame',['../opticflow__calculator_8c.html#aee6bfa400248db0fad131de276c15783',1,'opticflow_calc_frame(struct opticflow_t *opticflow, struct opticflow_state_t *state, struct image_t *img, struct opticflow_result_t *result):&#160;opticflow_calculator.c'],['../opticflow__calculator_8h.html#aee6bfa400248db0fad131de276c15783',1,'opticflow_calc_frame(struct opticflow_t *opticflow, struct opticflow_state_t *state, struct image_t *img, struct opticflow_result_t *result):&#160;opticflow_calculator.c']]],
-  ['opticflow_5fcalc_5finit',['opticflow_calc_init',['../opticflow__calculator_8c.html#ad1cbe6ffd4e1b030423015bd38bb3200',1,'opticflow_calc_init(struct opticflow_t *opticflow, uint16_t w, uint16_t h):&#160;opticflow_calculator.c'],['../opticflow__calculator_8h.html#ad1cbe6ffd4e1b030423015bd38bb3200',1,'opticflow_calc_init(struct opticflow_t *opticflow, uint16_t w, uint16_t h):&#160;opticflow_calculator.c']]],
-  ['opticflow_5fimu_5faccel_5fcb',['opticflow_imu_accel_cb',['../opticflow__module_8c.html#ab65a1da01d0fc8f3f83c7f7f0534e40e',1,'opticflow_module.c']]],
+  ['opticflow_5fcalc_5fframe',['opticflow_calc_frame',['../opticflow__calculator_8c.html#a89e51af8fe5a0f534193635d181a2086',1,'opticflow_calc_frame(struct opticflow_t *opticflow, struct image_t *img, struct opticflow_result_t *result):&#160;opticflow_calculator.c'],['../opticflow__calculator_8h.html#a89e51af8fe5a0f534193635d181a2086',1,'opticflow_calc_frame(struct opticflow_t *opticflow, struct image_t *img, struct opticflow_result_t *result):&#160;opticflow_calculator.c']]],
+  ['opticflow_5fcalc_5finit',['opticflow_calc_init',['../opticflow__calculator_8c.html#a519453dc5509bc6d489b2b5aeb94f915',1,'opticflow_calc_init(struct opticflow_t *opticflow):&#160;opticflow_calculator.c'],['../opticflow__calculator_8h.html#a519453dc5509bc6d489b2b5aeb94f915',1,'opticflow_calc_init(struct opticflow_t *opticflow):&#160;opticflow_calculator.c']]],
   ['opticflow_5fmodule_5fcalc',['opticflow_module_calc',['../opticflow__module_8c.html#a36b69a7ec255d2d20bb31b6d13e3e567',1,'opticflow_module.c']]],
   ['opticflow_5fmodule_5finit',['opticflow_module_init',['../opticflow__module_8c.html#a6026660ee86fbb1f72bada581386e6d9',1,'opticflow_module_init(void):&#160;opticflow_module.c'],['../opticflow__module_8h.html#a6026660ee86fbb1f72bada581386e6d9',1,'opticflow_module_init(void):&#160;opticflow_module.c']]],
   ['opticflow_5fmodule_5frun',['opticflow_module_run',['../opticflow__module_8c.html#abf53d072984591ae6710a65682d6bedb',1,'opticflow_module_run(void):&#160;opticflow_module.c'],['../opticflow__module_8h.html#abf53d072984591ae6710a65682d6bedb',1,'opticflow_module_run(void):&#160;opticflow_module.c']]],
@@ -51,5 +49,6 @@ var searchData=
   ['orientationsetquat_5fi',['orientationSetQuat_i',['../group__math__orientation__representation.html#ga8a3e395362b89b24cee7c3dd6dddb03c',1,'pprz_orientation_conversion.h']]],
   ['orientationsetrmat_5ff',['orientationSetRMat_f',['../group__math__orientation__representation.html#ga2c06304a23d68ae280c1cc5f4f01386a',1,'pprz_orientation_conversion.h']]],
   ['orientationsetrmat_5fi',['orientationSetRMat_i',['../group__math__orientation__representation.html#gad65752ee2fd524adefea88180fac375d',1,'pprz_orientation_conversion.h']]],
-  ['osd_5fput_5fs',['osd_put_s',['../max7456_8c.html#a2b5efe546809c5c4b7d6470ba879d9fa',1,'max7456.c']]]
+  ['osd_5fput_5fs',['osd_put_s',['../max7456_8c.html#a2b5efe546809c5c4b7d6470ba879d9fa',1,'max7456.c']]],
+  ['out_5fof_5fsegment_5farea',['out_of_segment_area',['../gvf_8c.html#a65f6cd8e6cb6d2da2e96af25c1ce412c',1,'gvf.c']]]
 ];

@@ -16,7 +16,7 @@ var common__flight__plan_8h =
     [ "NextStageAndBreak", "common__flight__plan_8h.html#ab6fa2c1db175998ff9eb1eb65b9411c1", null ],
     [ "NextStageAndBreakFrom", "common__flight__plan_8h.html#aa64072da784959799353d18ae618cbc5", null ],
     [ "Or", "common__flight__plan_8h.html#a930c4658c4c62e1d04058018e9732a26", null ],
-    [ "Return", "common__flight__plan_8h.html#a067ebcdcacb7ae66d3a69ef859c5e930", null ],
+    [ "Return", "common__flight__plan_8h.html#a10c727164f85d4aacc4c83e1cb0152e2", null ],
     [ "Stage", "common__flight__plan_8h.html#a73a31daf5fd187893268389b0cf07d32", null ],
     [ "nav_goto_block", "common__flight__plan_8h.html#ac8f874fffc6c3c549774e84eaabeac0d", null ],
     [ "nav_init_block", "common__flight__plan_8h.html#aa3cbfa3c23e459645a8e67b1bb4a1bef", null ],

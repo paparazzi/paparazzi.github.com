@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -243,8 +243,8 @@ $(document).ready(function(){initNavTree('alt__filter_8c_source.html','');});
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  <span class="keywordtype">int</span> i, j;</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  <span class="keywordtype">float</span> I[3][3]; <span class="comment">// matrices temporaires</span></div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  <span class="keywordtype">float</span> J[3][2];</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  <span class="keywordtype">float</span> <a class="code" href="trilateration_8c.html#a145f61de888f096c52a2945234a407b0">I</a>[3][3]; <span class="comment">// matrices temporaires</span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  <span class="keywordtype">float</span> <a class="code" href="trilateration_8c.html#a7c20f6b5c2b8c830d450944735b761b3">J</a>[3][2];</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;  <span class="comment">// Calcul de X</span></div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  <span class="comment">// X(k+1) = Ad*X(k) + Bd*U(k)</span></div>
@@ -291,7 +291,7 @@ $(document).ready(function(){initNavTree('alt__filter_8c_source.html','');});
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;{</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;</div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  <span class="keywordtype">int</span> i, j, div;</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  <span class="keywordtype">float</span> I[3][3]; <span class="comment">// matrice temporaire</span></div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  <span class="keywordtype">float</span> <a class="code" href="trilateration_8c.html#a145f61de888f096c52a2945234a407b0">I</a>[3][3]; <span class="comment">// matrice temporaire</span></div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  <span class="keywordtype">float</span> Kf[3] = { 0., 0., 0. };</div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;</div>
@@ -338,7 +338,7 @@ $(document).ready(function(){initNavTree('alt__filter_8c_source.html','');});
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;{</div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;</div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;  <span class="keywordtype">int</span> i, j, div;</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;  <span class="keywordtype">float</span> I[3][3]; <span class="comment">// matrice temporaire</span></div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;  <span class="keywordtype">float</span> <a class="code" href="trilateration_8c.html#a145f61de888f096c52a2945234a407b0">I</a>[3][3]; <span class="comment">// matrice temporaire</span></div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;</div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;  <span class="keywordtype">float</span> Kf[3] = { 0., 0., 0. };</div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;</div>
@@ -378,6 +378,7 @@ $(document).ready(function(){initNavTree('alt__filter_8c_source.html','');});
 <div class="ttc" id="uart_8h_html"><div class="ttname"><a href="uart_8h.html">uart.h</a></div><div class="ttdoc">arch independent UART (Universal Asynchronous Receiver/Transmitter) API </div></div>
 <div class="ttc" id="alt__filter_8h_html_structTypeKalman"><div class="ttname"><a href="alt__filter_8h.html#structTypeKalman">TypeKalman</a></div><div class="ttdef"><b>Definition:</b> <a href="alt__filter_8h_source.html#l00038">alt_filter.h:38</a></div></div>
 <div class="ttc" id="alt__filter_8h_html_aabe02ce61fa97a22da91e8f102d13b7a"><div class="ttname"><a href="alt__filter_8h.html#aabe02ce61fa97a22da91e8f102d13b7a">TypeKalman::W</a></div><div class="ttdeci">float W[KALT_N_ETAT-1][KALT_N_ETAT-1]</div><div class="ttdef"><b>Definition:</b> <a href="alt__filter_8h_source.html#l00041">alt_filter.h:41</a></div></div>
+<div class="ttc" id="trilateration_8c_html_a145f61de888f096c52a2945234a407b0"><div class="ttname"><a href="trilateration_8c.html#a145f61de888f096c52a2945234a407b0">I</a></div><div class="ttdeci">static float I</div><div class="ttdef"><b>Definition:</b> <a href="trilateration_8c_source.html#l00035">trilateration.c:35</a></div></div>
 <div class="ttc" id="alt__filter_8c_html_a276a4fc3a21783d1c7ccbc3e21f1a485"><div class="ttname"><a href="alt__filter_8c.html#a276a4fc3a21783d1c7ccbc3e21f1a485">MarcheAleaBiaisAltimetre</a></div><div class="ttdeci">float MarcheAleaBiaisAltimetre</div><div class="ttdef"><b>Definition:</b> <a href="alt__filter_8c_source.html#l00036">alt_filter.c:36</a></div></div>
 <div class="ttc" id="alt__filter_8h_html_aad68cd83b954144d3f7bed17436a1218"><div class="ttname"><a href="alt__filter_8h.html#aad68cd83b954144d3f7bed17436a1218">TypeKalman::Md</a></div><div class="ttdeci">float Md[KALT_N_ETAT][KALT_N_ETAT-1]</div><div class="ttdef"><b>Definition:</b> <a href="alt__filter_8h_source.html#l00045">alt_filter.h:45</a></div></div>
 <div class="ttc" id="alt__filter_8h_html_abb2d0ec4a9d248802fdefc3ec296b67e"><div class="ttname"><a href="alt__filter_8h.html#abb2d0ec4a9d248802fdefc3ec296b67e">TypeKalman::Bd</a></div><div class="ttdeci">float Bd[KALT_N_ETAT]</div><div class="ttdef"><b>Definition:</b> <a href="alt__filter_8h_source.html#l00043">alt_filter.h:43</a></div></div>
@@ -386,6 +387,7 @@ $(document).ready(function(){initNavTree('alt__filter_8c_source.html','');});
 <div class="ttc" id="alt__filter_8h_html_a728bbd37e0548fa5c5be0d02150bd0ff"><div class="ttname"><a href="alt__filter_8h.html#a728bbd37e0548fa5c5be0d02150bd0ff">TypeKalman::Ad</a></div><div class="ttdeci">float Ad[KALT_N_ETAT][KALT_N_ETAT]</div><div class="ttdef"><b>Definition:</b> <a href="alt__filter_8h_source.html#l00044">alt_filter.h:44</a></div></div>
 <div class="ttc" id="alt__filter_8c_html_a2881d68fb11ecf0c9c8ee635d4f5400c"><div class="ttname"><a href="alt__filter_8c.html#a2881d68fb11ecf0c9c8ee635d4f5400c">kalmanEstimation</a></div><div class="ttdeci">void kalmanEstimation(TypeKalman *k, float accVert)</div><div class="ttdef"><b>Definition:</b> <a href="alt__filter_8c_source.html#l00130">alt_filter.c:130</a></div></div>
 <div class="ttc" id="gps_8h_html_a10af95f7fdab3171a789866838b0c8c3"><div class="ttname"><a href="gps_8h.html#a10af95f7fdab3171a789866838b0c8c3">GpsState::hmsl</a></div><div class="ttdeci">int32_t hmsl</div><div class="ttdoc">height above mean sea level (MSL) in mm </div><div class="ttdef"><b>Definition:</b> <a href="gps_8h_source.html#l00088">gps.h:88</a></div></div>
+<div class="ttc" id="trilateration_8c_html_a7c20f6b5c2b8c830d450944735b761b3"><div class="ttname"><a href="trilateration_8c.html#a7c20f6b5c2b8c830d450944735b761b3">J</a></div><div class="ttdeci">static float J</div><div class="ttdef"><b>Definition:</b> <a href="trilateration_8c_source.html#l00035">trilateration.c:35</a></div></div>
 <div class="ttc" id="alt__filter_8h_html_a7f39810eac8af4f293c8936da4737d81"><div class="ttname"><a href="alt__filter_8h.html#a7f39810eac8af4f293c8936da4737d81">TypeKalman::Te</a></div><div class="ttdeci">float Te</div><div class="ttdef"><b>Definition:</b> <a href="alt__filter_8h_source.html#l00039">alt_filter.h:39</a></div></div>
 <div class="ttc" id="baro__ets_8h_html"><div class="ttname"><a href="baro__ets_8h.html">baro_ets.h</a></div><div class="ttdoc">Driver for the EagleTree Systems Altitude Sensor. </div></div>
 <div class="ttc" id="gps_8h_html"><div class="ttname"><a href="gps_8h.html">gps.h</a></div><div class="ttdoc">Device independent GPS code (interface) </div></div>
@@ -394,10 +396,10 @@ $(document).ready(function(){initNavTree('alt__filter_8c_source.html','');});
 <div class="ttc" id="alt__filter_8c_html_ae05d497e598d27cd712567d1eef7ac77"><div class="ttname"><a href="alt__filter_8c.html#ae05d497e598d27cd712567d1eef7ac77">last_baro_alt</a></div><div class="ttdeci">float last_baro_alt</div><div class="ttdef"><b>Definition:</b> <a href="alt__filter_8c_source.html#l00047">alt_filter.c:47</a></div></div>
 <div class="ttc" id="alt__filter_8c_html_a950abcee11e715e940943af99e3a7610"><div class="ttname"><a href="alt__filter_8c.html#a950abcee11e715e940943af99e3a7610">alt_filter_init</a></div><div class="ttdeci">void alt_filter_init(void)</div><div class="ttdef"><b>Definition:</b> <a href="alt__filter_8c_source.html#l00049">alt_filter.c:49</a></div></div>
 <div class="ttc" id="alt__filter_8h_html_a2ef29d05e829ab561c0bb8210c466d12"><div class="ttname"><a href="alt__filter_8h.html#a2ef29d05e829ab561c0bb8210c466d12">TypeKalman::P</a></div><div class="ttdeci">float P[KALT_N_ETAT][KALT_N_ETAT]</div><div class="ttdef"><b>Definition:</b> <a href="alt__filter_8h_source.html#l00040">alt_filter.h:40</a></div></div>
-<div class="ttc" id="downlink_8h_html_a891b19a3eba08208d4e550aa6c6188dd"><div class="ttname"><a href="downlink_8h.html#a891b19a3eba08208d4e550aa6c6188dd">DefaultChannel</a></div><div class="ttdeci">#define DefaultChannel</div><div class="ttdoc">SITL. </div><div class="ttdef"><b>Definition:</b> <a href="downlink_8h_source.html#l00084">downlink.h:84</a></div></div>
+<div class="ttc" id="downlink_8h_html_a891b19a3eba08208d4e550aa6c6188dd"><div class="ttname"><a href="downlink_8h.html#a891b19a3eba08208d4e550aa6c6188dd">DefaultChannel</a></div><div class="ttdeci">#define DefaultChannel</div><div class="ttdef"><b>Definition:</b> <a href="downlink_8h_source.html#l00042">downlink.h:42</a></div></div>
 <div class="ttc" id="alt__filter_8h_html_a91e46de58261f8d60e17a7f8c054cd88"><div class="ttname"><a href="alt__filter_8h.html#a91e46de58261f8d60e17a7f8c054cd88">TypeKalman::X</a></div><div class="ttdeci">float X[KALT_N_ETAT]</div><div class="ttdef"><b>Definition:</b> <a href="alt__filter_8h_source.html#l00042">alt_filter.h:42</a></div></div>
 <div class="ttc" id="alt__filter_8c_html_a8ec1fab79293e2f4f0028ac72fe3b312"><div class="ttname"><a href="alt__filter_8c.html#a8ec1fab79293e2f4f0028ac72fe3b312">SigAltiAltimetre</a></div><div class="ttdeci">float SigAltiAltimetre</div><div class="ttdef"><b>Definition:</b> <a href="alt__filter_8c_source.html#l00035">alt_filter.c:35</a></div></div>
-<div class="ttc" id="downlink_8h_html_a028b405f95cecb4af565b17c8ee71d80"><div class="ttname"><a href="downlink_8h.html#a028b405f95cecb4af565b17c8ee71d80">DefaultDevice</a></div><div class="ttdeci">#define DefaultDevice</div><div class="ttdef"><b>Definition:</b> <a href="downlink_8h_source.html#l00088">downlink.h:88</a></div></div>
+<div class="ttc" id="downlink_8h_html_a028b405f95cecb4af565b17c8ee71d80"><div class="ttname"><a href="downlink_8h.html#a028b405f95cecb4af565b17c8ee71d80">DefaultDevice</a></div><div class="ttdeci">#define DefaultDevice</div><div class="ttdef"><b>Definition:</b> <a href="downlink_8h_source.html#l00046">downlink.h:46</a></div></div>
 <div class="ttc" id="alt__filter_8c_html_ace1b4aea9a9f4ad4358342ff392c3dd4"><div class="ttname"><a href="alt__filter_8c.html#ace1b4aea9a9f4ad4358342ff392c3dd4">kalmanInit</a></div><div class="ttdeci">void kalmanInit(TypeKalman *k)</div><div class="ttdef"><b>Definition:</b> <a href="alt__filter_8c_source.html#l00091">alt_filter.c:91</a></div></div>
 <div class="ttc" id="alt__filter_8h_html"><div class="ttname"><a href="alt__filter_8h.html">alt_filter.h</a></div></div>
 <div class="ttc" id="alt__filter_8c_html_a7f19e63b056b13da0338400111c3ce28"><div class="ttname"><a href="alt__filter_8c.html#a7f19e63b056b13da0338400111c3ce28">MarcheAleaAccelerometre</a></div><div class="ttdeci">float MarcheAleaAccelerometre</div><div class="ttdef"><b>Definition:</b> <a href="alt__filter_8c_source.html#l00037">alt_filter.c:37</a></div></div>
@@ -413,7 +415,7 @@ $(document).ready(function(){initNavTree('alt__filter_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_12fb52dac4e3837dec02c6544f4d82f8.html">ins</a></li><li class="navelem"><a class="el" href="alt__filter_8c.html">alt_filter.c</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:01:24 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:01:41 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

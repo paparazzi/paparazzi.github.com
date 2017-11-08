@@ -21,6 +21,6 @@ var nav__spiral_8h =
       [ "SpiralInc", "nav__spiral_8h.html#ab1ef3d1e834bd62f55deec9293529026a2682ee3752006bf1d49f7df99be5de01", null ]
     ] ],
     [ "nav_spiral_run", "nav__spiral_8h.html#a816049b35ed5cc3424ab34f7e5ddf18a", null ],
-    [ "nav_spiral_setup", "nav__spiral_8h.html#a30971b18235112b2f6f0d538ab4440d4", null ],
+    [ "nav_spiral_setup", "nav__spiral_8h.html#a0544cbca21d745ae1ac865d6388fba5a", null ],
     [ "nav_spiral", "nav__spiral_8h.html#a488b81bc621440538359e40440e2e211", null ]
 ];

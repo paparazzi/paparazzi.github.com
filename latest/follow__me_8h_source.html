@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -117,16 +117,19 @@ $(document).ready(function(){initNavTree('follow__me_8h_source.html','');});
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#ifndef FOLLOW_ME_H</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#define FOLLOW_ME_H</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">float</span> <a class="code" href="follow__me_8h.html#a87bacea2b0bab9265ed2f255198d38c0">ref_pitch</a>;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">float</span> <a class="code" href="follow__me_8h.html#afd52552e7dc0c1f6f124bdd4343f978c">ref_roll</a>;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">float</span> <a class="code" href="follow__me_8h.html#a9a9a128aa9067d7277b9e2a5341e41a8">selfie_alt</a>;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="follow__me_8h.html#a5c3112293f2a4d98f2ddb0d937011a36">follow_me_periodic</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">float</span> <a class="code" href="follow__me_8h.html#a87bacea2b0bab9265ed2f255198d38c0">ref_pitch</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">float</span> <a class="code" href="follow__me_8h.html#afd52552e7dc0c1f6f124bdd4343f978c">ref_roll</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">float</span> <a class="code" href="follow__me_8h.html#a9a9a128aa9067d7277b9e2a5341e41a8">selfie_alt</a>;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="follow__me_8h.html#a86b645981e64487edee42fa1bf3bc848">follow_me</a>(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> headingToFollow, <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> heightObject, <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> distanceToObject);</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
 <div class="ttc" id="follow__me_8h_html_a87bacea2b0bab9265ed2f255198d38c0"><div class="ttname"><a href="follow__me_8h.html#a87bacea2b0bab9265ed2f255198d38c0">ref_pitch</a></div><div class="ttdeci">float ref_pitch</div><div class="ttdef"><b>Definition:</b> <a href="guidance__OA_8c_source.html#l00103">guidance_OA.c:103</a></div></div>
+<div class="ttc" id="follow__me_8h_html_a86b645981e64487edee42fa1bf3bc848"><div class="ttname"><a href="follow__me_8h.html#a86b645981e64487edee42fa1bf3bc848">follow_me</a></div><div class="ttdeci">void follow_me(uint8_t headingToFollow, uint8_t heightObject, uint8_t distanceToObject)</div><div class="ttdef"><b>Definition:</b> <a href="follow__me_8c_source.html#l00062">follow_me.c:62</a></div></div>
 <div class="ttc" id="follow__me_8h_html_afd52552e7dc0c1f6f124bdd4343f978c"><div class="ttname"><a href="follow__me_8h.html#afd52552e7dc0c1f6f124bdd4343f978c">ref_roll</a></div><div class="ttdeci">float ref_roll</div><div class="ttdef"><b>Definition:</b> <a href="guidance__OA_8c_source.html#l00104">guidance_OA.c:104</a></div></div>
-<div class="ttc" id="follow__me_8h_html_a5c3112293f2a4d98f2ddb0d937011a36"><div class="ttname"><a href="follow__me_8h.html#a5c3112293f2a4d98f2ddb0d937011a36">follow_me_periodic</a></div><div class="ttdeci">void follow_me_periodic(void)</div><div class="ttdef"><b>Definition:</b> <a href="follow__me_8c_source.html#l00069">follow_me.c:69</a></div></div>
+<div class="ttc" id="types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00014">types.h:14</a></div></div>
 <div class="ttc" id="follow__me_8h_html_a9a9a128aa9067d7277b9e2a5341e41a8"><div class="ttname"><a href="follow__me_8h.html#a9a9a128aa9067d7277b9e2a5341e41a8">selfie_alt</a></div><div class="ttdeci">float selfie_alt</div><div class="ttdef"><b>Definition:</b> <a href="follow__me_8c_source.html#l00033">follow_me.c:33</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -134,7 +137,7 @@ $(document).ready(function(){initNavTree('follow__me_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_3df9ff4d3eb13d31d58a513ba3c4e4bb.html">stereocam</a></li><li class="navelem"><a class="el" href="dir_ec7640edce12f2ff088305425ab2b433.html">stereocam_follow_me</a></li><li class="navelem"><a class="el" href="follow__me_8h.html">follow_me.h</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:01:28 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:01:46 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

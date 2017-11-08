@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -139,7 +139,7 @@ $(document).ready(function(){initNavTree('gps__sim_8h.html','');});
 Macros</h2></td></tr>
 <tr class="memitem:a0eb39777eac135c917af2eed39cce7f1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__sim_8h.html#a0eb39777eac135c917af2eed39cce7f1">PRIMARY_GPS</a>&#160;&#160;&#160;GPS_SIM</td></tr>
 <tr class="separator:a0eb39777eac135c917af2eed39cce7f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae22ab9aec374f99e38d4ff69a5ea90a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__sim_8h.html#aae22ab9aec374f99e38d4ff69a5ea90a">gps_sim_periodic_check</a>()&#160;&#160;&#160;<a class="el" href="gps_8h.html#ae631bcedc95daefc88cba7e639b38f19">gps_periodic_check</a>(&amp;<a class="el" href="gps_8h.html#a5cf954024f8e0433b21db7439c5bee9d">gps</a>)</td></tr>
+<tr class="memitem:aae22ab9aec374f99e38d4ff69a5ea90a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__sim_8h.html#aae22ab9aec374f99e38d4ff69a5ea90a">gps_sim_periodic_check</a>()&#160;&#160;&#160;<a class="el" href="intermcu__fbw_8c.html#ae631bcedc95daefc88cba7e639b38f19">gps_periodic_check</a>(&amp;<a class="el" href="gps_8h.html#a5cf954024f8e0433b21db7439c5bee9d">gps</a>)</td></tr>
 <tr class="separator:aae22ab9aec374f99e38d4ff69a5ea90a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -158,7 +158,7 @@ Functions</h2></td></tr>
           <td class="memname">#define gps_sim_periodic_check</td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="gps_8h.html#ae631bcedc95daefc88cba7e639b38f19">gps_periodic_check</a>(&amp;<a class="el" href="gps_8h.html#a5cf954024f8e0433b21db7439c5bee9d">gps</a>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="intermcu__fbw_8c.html#ae631bcedc95daefc88cba7e639b38f19">gps_periodic_check</a>(&amp;<a class="el" href="gps_8h.html#a5cf954024f8e0433b21db7439c5bee9d">gps</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -218,7 +218,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="gps__sim_8c_source.html#l00030">30</a> of file <a class="el" href="gps__sim_8c_source.html">gps_sim.c</a>.</p>
 
-<p>References <a class="el" href="gps_8h_source.html#l00099">GpsState::fix</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00068">get_sys_time_usec()</a>, <a class="el" href="gps_8c_source.html#l00075">gps</a>, <a class="el" href="gps_8h_source.html#l00039">GPS_FIX_3D</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00166">GPS_SIM_ID</a>, <a class="el" href="gps_8h_source.html#l00106">GpsState::last_3dfix_ticks</a>, <a class="el" href="gps_8h_source.html#l00107">GpsState::last_3dfix_time</a>, <a class="el" href="gps_8h_source.html#l00108">GpsState::last_msg_ticks</a>, <a class="el" href="gps_8h_source.html#l00109">GpsState::last_msg_time</a>, <a class="el" href="sys__time_8h_source.html#l00072">sys_time::nb_sec</a>, and <a class="el" href="sys__time_8h_source.html#l00073">sys_time::nb_sec_rem</a>.</p>
+<p>References <a class="el" href="gps_8h_source.html#l00099">GpsState::fix</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00068">get_sys_time_usec()</a>, <a class="el" href="gps_8c_source.html#l00075">gps</a>, <a class="el" href="gps_8h_source.html#l00039">GPS_FIX_3D</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00189">GPS_SIM_ID</a>, <a class="el" href="gps_8h_source.html#l00106">GpsState::last_3dfix_ticks</a>, <a class="el" href="gps_8h_source.html#l00107">GpsState::last_3dfix_time</a>, <a class="el" href="gps_8h_source.html#l00108">GpsState::last_msg_ticks</a>, <a class="el" href="gps_8h_source.html#l00109">GpsState::last_msg_time</a>, <a class="el" href="sys__time_8h_source.html#l00072">sys_time::nb_sec</a>, and <a class="el" href="sys__time_8h_source.html#l00073">sys_time::nb_sec_rem</a>.</p>
 
 <p>Referenced by <a class="el" href="sim__gps_8c_source.html#l00020">sim_use_gps_pos()</a>.</p>
 
@@ -229,7 +229,7 @@ Functions</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps__sim_8h_a9b24214fcb576b1bd7832dccaaa3f430_cgraph.png" border="0" usemap="#gps__sim_8h_a9b24214fcb576b1bd7832dccaaa3f430_cgraph" alt=""/></div>
 <map name="gps__sim_8h_a9b24214fcb576b1bd7832dccaaa3f430_cgraph" id="gps__sim_8h_a9b24214fcb576b1bd7832dccaaa3f430_cgraph">
-<area shape="rect" id="node2" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup. " alt="" coords="180,5,324,32"/><area shape="rect" id="node3" href="sys__time_8h.html#adb22f2652f04908fbc644c7274bf7273" title="usec_of_sys_time_ticks" alt="" coords="372,5,543,32"/></map>
+<area shape="rect" id="node2" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup. " alt="" coords="180,5,324,32"/></map>
 </div>
 </p>
 
@@ -252,7 +252,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_8c4cbb881db224ddaf0756e79ed706ce.html">gps</a></li><li class="navelem"><a class="el" href="gps__sim_8h.html">gps_sim.h</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:02:12 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:02:40 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

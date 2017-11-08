@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -147,7 +147,7 @@ $(document).ready(function(){initNavTree('subsystems_2radio__control_2rc__datali
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                           <a class="code" href="types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> pitch)</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> throttle = ((throttle_mode &amp; 0xFC) &gt;&gt; 2) * (128 / 64);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> mode = throttle_mode &amp; 0x03;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="sonar__bebop_8c.html#a37e90f5e3bd99fac2021fb3a326607d4">mode</a> = throttle_mode &amp; 0x03;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <a class="code" href="subsystems_2radio__control_2rc__datalink_8c.html#a8ad016a0fe68026f295a8ffaacdd2c5f">rc_dl_values</a>[<a class="code" href="sim_2subsystems_2radio__control_2spektrum__arch_8h.html#ae59b042496b1debe96e1d98fbc3e4b1f">RADIO_ROLL</a>] = roll;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <a class="code" href="subsystems_2radio__control_2rc__datalink_8c.html#a8ad016a0fe68026f295a8ffaacdd2c5f">rc_dl_values</a>[<a class="code" href="sim_2subsystems_2radio__control_2spektrum__arch_8h.html#a8e61ffe584bf24170117b9fcb2da4023">RADIO_PITCH</a>] = pitch;</div>
@@ -159,7 +159,7 @@ $(document).ready(function(){initNavTree('subsystems_2radio__control_2rc__datali
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
 <div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="rc__datalink_8h.html#aa3d40235f29aab16121c0073217835a2">   56</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="subsystems_2radio__control_2rc__datalink_8c.html#aa3d40235f29aab16121c0073217835a2">parse_rc_4ch_datalink</a>(</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> mode,</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="sonar__bebop_8c.html#a37e90f5e3bd99fac2021fb3a326607d4">mode</a>,</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> throttle,</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <a class="code" href="types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> roll,</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <a class="code" href="types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> pitch,</div>
@@ -220,6 +220,7 @@ $(document).ready(function(){initNavTree('subsystems_2radio__control_2rc__datali
 <div class="ttc" id="radio__control_8h_html_ac96a9e3f6c17299d532eb572ef0ea415"><div class="ttname"><a href="radio__control_8h.html#ac96a9e3f6c17299d532eb572ef0ea415">RC_OK</a></div><div class="ttdeci">#define RC_OK</div><div class="ttdef"><b>Definition:</b> <a href="radio__control_8h_source.html#l00048">radio_control.h:48</a></div></div>
 <div class="ttc" id="sim_2subsystems_2radio__control_2spektrum__arch_8h_html_a2fab1464ab1748edb2a45a08cf7c422a"><div class="ttname"><a href="sim_2subsystems_2radio__control_2spektrum__arch_8h.html#a2fab1464ab1748edb2a45a08cf7c422a">RADIO_MODE</a></div><div class="ttdeci">#define RADIO_MODE</div><div class="ttdef"><b>Definition:</b> <a href="sim_2subsystems_2radio__control_2spektrum__arch_8h_source.html#l00059">spektrum_arch.h:59</a></div></div>
 <div class="ttc" id="types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00014">types.h:14</a></div></div>
+<div class="ttc" id="sonar__bebop_8c_html_a37e90f5e3bd99fac2021fb3a326607d4"><div class="ttname"><a href="sonar__bebop_8c.html#a37e90f5e3bd99fac2021fb3a326607d4">mode</a></div><div class="ttdeci">static uint8_t mode</div><div class="ttdoc">mode holds the current sonar mode mode = 0 used at high altitude, uses 16 wave patterns mode = 1 used...</div><div class="ttdef"><b>Definition:</b> <a href="sonar__bebop_8c_source.html#l00066">sonar_bebop.c:66</a></div></div>
 <div class="ttc" id="subsystems_2radio__control_2rc__datalink_8c_html_a6ba4bebf68f7ff39f4569dfe3b1f2832"><div class="ttname"><a href="subsystems_2radio__control_2rc__datalink_8c.html#a6ba4bebf68f7ff39f4569dfe3b1f2832">radio_control_impl_init</a></div><div class="ttdeci">void radio_control_impl_init(void)</div><div class="ttdef"><b>Definition:</b> <a href="subsystems_2radio__control_2rc__datalink_8c_source.html#l00034">rc_datalink.c:34</a></div></div>
 <div class="ttc" id="subsystems_2radio__control_2rc__datalink_8c_html_af4b863040e1fdafe349107575bcb35c2"><div class="ttname"><a href="subsystems_2radio__control_2rc__datalink_8c.html#af4b863040e1fdafe349107575bcb35c2">rc_datalink_normalize</a></div><div class="ttdeci">static void rc_datalink_normalize(int8_t *in, int16_t *out)</div><div class="ttdoc">Normalize rc_dl_values to radio values. </div><div class="ttdef"><b>Definition:</b> <a href="subsystems_2radio__control_2rc__datalink_8c_source.html#l00075">rc_datalink.c:75</a></div></div>
 <div class="ttc" id="radio__control_8h_html_a009f85397fd864a703ce54da8f02daa8"><div class="ttname"><a href="radio__control_8h.html#a009f85397fd864a703ce54da8f02daa8">RadioControl::time_since_last_frame</a></div><div class="ttdeci">uint8_t time_since_last_frame</div><div class="ttdef"><b>Definition:</b> <a href="radio__control_8h_source.html#l00054">radio_control.h:54</a></div></div>
@@ -233,7 +234,7 @@ $(document).ready(function(){initNavTree('subsystems_2radio__control_2rc__datali
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_a146ed466020daad33793c9994e8ab3e.html">radio_control</a></li><li class="navelem"><a class="el" href="subsystems_2radio__control_2rc__datalink_8c.html">rc_datalink.c</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:01:15 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:01:28 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

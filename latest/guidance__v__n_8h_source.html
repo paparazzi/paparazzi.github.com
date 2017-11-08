@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -133,31 +133,34 @@ $(document).ready(function(){initNavTree('guidance__v__n_8h_source.html','');});
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#ifndef FW_V_CTL_N_H</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#define FW_V_CTL_N_H</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="guidance__v__n_8h.html#a09f63f36c513da12a9022e1528b056b8">   31</a></span>&#160;<span class="preprocessor">#define V_CTL_SPEED_THROTTLE    0</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="guidance__v__n_8h.html#ad1fc2f2f9c2f7b494f92950216f594e4">   32</a></span>&#160;<span class="preprocessor">#define V_CTL_SPEED_AIRSPEED    1</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="guidance__v__n_8h.html#a2919ee4ab6a733cc7d7042d8a66d0a18">   33</a></span>&#160;<span class="preprocessor">#define V_CTL_SPEED_GROUNDSPEED 2</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">float</span> <a class="code" href="guidance__v__n_8h.html#a992257d43ee61196221f65559c382166">v_ctl_auto_pitch_dgain</a>;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">float</span> <a class="code" href="guidance__v__n_8h.html#a9f24e8e7780b869a78621afd000040c6">v_ctl_auto_airspeed_throttle_pgain</a>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">float</span> <a class="code" href="guidance__v__n_8h.html#a5ab6f31cae1b2898cf56d3f0f5f9a670">v_ctl_auto_airspeed_throttle_dgain</a>;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">float</span> <a class="code" href="guidance__v__n_8h.html#a97f2f4f228bd707dab5fc2e248733131">v_ctl_auto_airspeed_throttle_igain</a>;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">float</span> <a class="code" href="guidance__v__n_8h.html#a89656d311770a2ccd86c0c8a3163c593">v_ctl_auto_airspeed_throttle_sum_err</a>;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">float</span> <a class="code" href="guidance__v__n_8h.html#a1758293f85f49526f7a5d4aea70c4e0d">v_ctl_auto_airspeed_pitch_pgain</a>;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">float</span> <a class="code" href="guidance__v__n_8h.html#a835abe20bb35bfafe93b7dc691452558">v_ctl_auto_airspeed_pitch_dgain</a>;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">float</span> <a class="code" href="guidance__v__n_8h.html#a4c5b45de7a5a7c93fc0b3f95b5b8fca5">v_ctl_auto_airspeed_pitch_igain</a>;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">float</span> <a class="code" href="guidance__v__n_8h.html#a03f5c169831f178499142fb48aca0560">v_ctl_auto_airspeed_pitch_sum_err</a>;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">extern</span> <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="guidance__v__n_8h.html#aa4ebe07275990427a055a732e6f37740">v_ctl_speed_mode</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="fixedwing_2guidance_2guidance__v_8h.html">firmwares/fixedwing/guidance/guidance_v.h</a>&quot;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="guidance__v__n_8h.html#a09f63f36c513da12a9022e1528b056b8">   33</a></span>&#160;<span class="preprocessor">#define V_CTL_SPEED_THROTTLE    0</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="guidance__v__n_8h.html#ad1fc2f2f9c2f7b494f92950216f594e4">   34</a></span>&#160;<span class="preprocessor">#define V_CTL_SPEED_AIRSPEED    1</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="guidance__v__n_8h.html#a2919ee4ab6a733cc7d7042d8a66d0a18">   35</a></span>&#160;<span class="preprocessor">#define V_CTL_SPEED_GROUNDSPEED 2</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">float</span> <a class="code" href="guidance__v__n_8h.html#a992257d43ee61196221f65559c382166">v_ctl_auto_pitch_dgain</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">float</span> <a class="code" href="guidance__v__n_8h.html#a9f24e8e7780b869a78621afd000040c6">v_ctl_auto_airspeed_throttle_pgain</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">float</span> <a class="code" href="guidance__v__n_8h.html#a5ab6f31cae1b2898cf56d3f0f5f9a670">v_ctl_auto_airspeed_throttle_dgain</a>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">float</span> <a class="code" href="guidance__v__n_8h.html#a97f2f4f228bd707dab5fc2e248733131">v_ctl_auto_airspeed_throttle_igain</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">float</span> <a class="code" href="guidance__v__n_8h.html#a89656d311770a2ccd86c0c8a3163c593">v_ctl_auto_airspeed_throttle_sum_err</a>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">float</span> <a class="code" href="guidance__v__n_8h.html#a1758293f85f49526f7a5d4aea70c4e0d">v_ctl_auto_airspeed_pitch_pgain</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">float</span> <a class="code" href="guidance__v__n_8h.html#a835abe20bb35bfafe93b7dc691452558">v_ctl_auto_airspeed_pitch_dgain</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">float</span> <a class="code" href="guidance__v__n_8h.html#a4c5b45de7a5a7c93fc0b3f95b5b8fca5">v_ctl_auto_airspeed_pitch_igain</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">float</span> <a class="code" href="guidance__v__n_8h.html#a03f5c169831f178499142fb48aca0560">v_ctl_auto_airspeed_pitch_sum_err</a>;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">float</span> <a class="code" href="guidance__v__n_8h.html#a5e23002cc5fd9c1836b3843111bb035e">v_ctl_pitch_loiter_trim</a>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">float</span> <a class="code" href="guidance__v__n_8h.html#a7667ff34ce57a772e6136801fa6d5aa6">v_ctl_pitch_dash_trim</a>;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* FW_V_CTL_N_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">extern</span> <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="guidance__v__n_8h.html#aa4ebe07275990427a055a732e6f37740">v_ctl_speed_mode</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">float</span> <a class="code" href="guidance__v__n_8h.html#a5e23002cc5fd9c1836b3843111bb035e">v_ctl_pitch_loiter_trim</a>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">float</span> <a class="code" href="guidance__v__n_8h.html#a7667ff34ce57a772e6136801fa6d5aa6">v_ctl_pitch_dash_trim</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* FW_V_CTL_N_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="guidance__v__n_8h_html_a4c5b45de7a5a7c93fc0b3f95b5b8fca5"><div class="ttname"><a href="guidance__v__n_8h.html#a4c5b45de7a5a7c93fc0b3f95b5b8fca5">v_ctl_auto_airspeed_pitch_igain</a></div><div class="ttdeci">float v_ctl_auto_airspeed_pitch_igain</div></div>
 <div class="ttc" id="guidance__v__n_8h_html_aa4ebe07275990427a055a732e6f37740"><div class="ttname"><a href="guidance__v__n_8h.html#aa4ebe07275990427a055a732e6f37740">v_ctl_speed_mode</a></div><div class="ttdeci">uint8_t v_ctl_speed_mode</div><div class="ttdef"><b>Definition:</b> <a href="guidance__v__n_8c_source.html#l00099">guidance_v_n.c:99</a></div></div>
 <div class="ttc" id="guidance__v__n_8h_html_a03f5c169831f178499142fb48aca0560"><div class="ttname"><a href="guidance__v__n_8h.html#a03f5c169831f178499142fb48aca0560">v_ctl_auto_airspeed_pitch_sum_err</a></div><div class="ttdeci">float v_ctl_auto_airspeed_pitch_sum_err</div></div>
 <div class="ttc" id="guidance__v__n_8h_html_a89656d311770a2ccd86c0c8a3163c593"><div class="ttname"><a href="guidance__v__n_8h.html#a89656d311770a2ccd86c0c8a3163c593">v_ctl_auto_airspeed_throttle_sum_err</a></div><div class="ttdeci">float v_ctl_auto_airspeed_throttle_sum_err</div></div>
 <div class="ttc" id="guidance__v__n_8h_html_a7667ff34ce57a772e6136801fa6d5aa6"><div class="ttname"><a href="guidance__v__n_8h.html#a7667ff34ce57a772e6136801fa6d5aa6">v_ctl_pitch_dash_trim</a></div><div class="ttdeci">float v_ctl_pitch_dash_trim</div><div class="ttdef"><b>Definition:</b> <a href="stabilization__adaptive_8c_source.html#l00205">stabilization_adaptive.c:205</a></div></div>
+<div class="ttc" id="fixedwing_2guidance_2guidance__v_8h_html"><div class="ttname"><a href="fixedwing_2guidance_2guidance__v_8h.html">guidance_v.h</a></div><div class="ttdoc">Vertical control for fixed wing vehicles. </div></div>
 <div class="ttc" id="guidance__v__n_8h_html_a9f24e8e7780b869a78621afd000040c6"><div class="ttname"><a href="guidance__v__n_8h.html#a9f24e8e7780b869a78621afd000040c6">v_ctl_auto_airspeed_throttle_pgain</a></div><div class="ttdeci">float v_ctl_auto_airspeed_throttle_pgain</div></div>
 <div class="ttc" id="guidance__v__n_8h_html_a5ab6f31cae1b2898cf56d3f0f5f9a670"><div class="ttname"><a href="guidance__v__n_8h.html#a5ab6f31cae1b2898cf56d3f0f5f9a670">v_ctl_auto_airspeed_throttle_dgain</a></div><div class="ttdeci">float v_ctl_auto_airspeed_throttle_dgain</div></div>
 <div class="ttc" id="guidance__v__n_8h_html_a5e23002cc5fd9c1836b3843111bb035e"><div class="ttname"><a href="guidance__v__n_8h.html#a5e23002cc5fd9c1836b3843111bb035e">v_ctl_pitch_loiter_trim</a></div><div class="ttdeci">float v_ctl_pitch_loiter_trim</div><div class="ttdef"><b>Definition:</b> <a href="stabilization__adaptive_8c_source.html#l00204">stabilization_adaptive.c:204</a></div></div>
@@ -172,7 +175,7 @@ $(document).ready(function(){initNavTree('guidance__v__n_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_cb1b347b64b61ba7f369ccfe68448b26.html">fixedwing</a></li><li class="navelem"><a class="el" href="dir_ed1aed0b4c5a033d4a5b36c06a1a768a.html">guidance</a></li><li class="navelem"><a class="el" href="guidance__v__n_8h.html">guidance_v_n.h</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:01:17 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:01:31 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

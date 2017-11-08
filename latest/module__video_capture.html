@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -104,14 +104,17 @@ $(document).ready(function(){initNavTree('module__video_capture.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><b>Capture images from video device on the internal memory (JPEG, full size, best quality)</b></p>
-<p>No detailed description...</p>
+<p>Images can be saved by pressing the strip button, using the GCS settings panel or with the 'video_capture_shoot' function.</p>
+<p>Additional data (GPS location) can be included in the Exif header by including the video_exif module.</p>
 <h1><a class="anchor" id="module_load_example__video_capture"></a>
 Example for airframe file</h1>
 <p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;module name=&quot;video_thread&quot;/&gt;</div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;&lt;module name=&quot;video_capture&quot;&gt;</div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;  &lt;define name=&quot;VIDEO_CAPTURE_CAMERA&quot; value=&quot;front_camera|bottom_camera&quot; /&gt;</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;  &lt;define name=&quot;VIDEO_CAPTURE_PATH&quot; value=&quot;/data/video/images&quot; /&gt;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;&lt;/module&gt;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;  &lt;define name=&quot;VIDEO_CAPTURE_JPEG_QUALITY&quot; value=&quot;99&quot; /&gt;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;  &lt;define name=&quot;VIDEO_CAPTURE_FPS&quot; value=&quot;0&quot; /&gt;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;&lt;/module&gt;</div>
 </div><!-- fragment --> <h1><a class="anchor" id="configuration__video_capture"></a>
 Module configuration options</h1>
 <h2><a class="anchor" id="define"></a>
@@ -121,6 +124,10 @@ Define Options</h2>
  Description: Video device to use</li>
 <li><b>name:</b> <code>VIDEO_CAPTURE_PATH</code> <b>value:</b> <em>/data/video/images</em> <br />
  Description: Location to save images</li>
+<li><b>name:</b> <code>VIDEO_CAPTURE_JPEG_QUALITY</code> <b>value:</b> <em>99</em> <br />
+ Description: JPEG quality of images</li>
+<li><b>name:</b> <code>VIDEO_CAPTURE_FPS</code> <b>value:</b> <em>0</em> <br />
+ Description: The (maximum) frequency to run the calculations at. If zero, it will max out at the camera frame rate</li>
 </ul>
 <h1><a class="anchor" id="dependencies__video_capture"></a>
 Dependencies</h1>
@@ -155,11 +162,16 @@ Raw video_capture.xml file:</h2>
 <div class="line">&lt;module name=&quot;video_capture&quot; dir=&quot;computer_vision&quot;&gt;</div>
 <div class="line">  &lt;doc&gt;</div>
 <div class="line">    &lt;description&gt;</div>
-<div class="line">      Capture images from video device on the internal memory (JPEG, full size, best quality)</div>
+<div class="line">      Capture images from video device on the internal memory (JPEG, full size, best quality). Images can be saved by</div>
+<div class="line">      pressing the strip button, using the GCS settings panel or with the &#39;video_capture_shoot&#39; function.</div>
+<div class="line"></div>
+<div class="line">      Additional data (GPS location) can be included in the Exif header by including the video_exif module.</div>
 <div class="line">    &lt;/description&gt;</div>
 <div class="line"></div>
 <div class="line">    &lt;define name=&quot;VIDEO_CAPTURE_CAMERA&quot; value=&quot;front_camera|bottom_camera&quot; description=&quot;Video device to use&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;VIDEO_CAPTURE_PATH&quot; value=&quot;/data/video/images&quot; description=&quot;Location to save images&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;VIDEO_CAPTURE_JPEG_QUALITY&quot; value=&quot;99&quot; description=&quot;JPEG quality of images&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;VIDEO_CAPTURE_FPS&quot; value=&quot;0&quot; description=&quot;The (maximum) frequency to run the calculations at. If zero, it will max out at the camera frame rate&quot;/&gt;</div>
 <div class="line">  &lt;/doc&gt;</div>
 <div class="line"></div>
 <div class="line">  &lt;settings&gt;</div>
@@ -193,7 +205,7 @@ Raw video_capture.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:02:16 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:02:48 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

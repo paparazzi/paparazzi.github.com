@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -119,7 +119,7 @@ $(document).ready(function(){initNavTree('electrical_8c.html','');});
 <div class="textblock"><code>#include &quot;<a class="el" href="electrical_8h_source.html">subsystems/electrical.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="adc_8h_source.html">mcu_periph/adc.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="commands_8h_source.html">subsystems/commands.h</a>&quot;</code><br />
-<code>#include &quot;autopilot.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="autopilot_8h_source.html">autopilot.h</a>&quot;</code><br />
 <code>#include &quot;generated/airframe.h&quot;</code><br />
 <code>#include &lt;BOARD_CONFIG&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -129,7 +129,7 @@ $(document).ready(function(){initNavTree('electrical_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="electrical_8c__incl.png" border="0" usemap="#sw_2airborne_2subsystems_2electrical_8c" alt=""/></div>
 <map name="sw_2airborne_2subsystems_2electrical_8c" id="sw_2airborne_2subsystems_2electrical_8c">
-<area shape="rect" id="node2" href="electrical_8h.html" title="Interface for electrical status: supply voltage, current, battery status, etc. " alt="" coords="5,95,177,121"/><area shape="rect" id="node5" href="adc_8h.html" title="arch independent ADC (Analog to Digital Converter) API " alt="" coords="463,95,599,121"/><area shape="rect" id="node8" href="commands_8h.html" title="Hardware independent code for commands handling. " alt="" coords="253,95,439,121"/><area shape="rect" id="node6" href="inttypes_8h.html" title="inttypes.h" alt="" coords="465,244,550,271"/><area shape="rect" id="node9" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="319,169,415,196"/></map>
+<area shape="rect" id="node2" href="electrical_8h.html" title="Interface for electrical status: supply voltage, current, battery status, etc. " alt="" coords="53,95,225,121"/><area shape="rect" id="node5" href="adc_8h.html" title="arch independent ADC (Analog to Digital Converter) API " alt="" coords="845,95,981,121"/><area shape="rect" id="node8" href="commands_8h.html" title="Hardware independent code for commands handling. " alt="" coords="307,95,493,121"/><area shape="rect" id="node10" href="autopilot_8h.html" title="Core autopilot interface common to all firmwares. " alt="" coords="517,95,608,121"/><area shape="rect" id="node6" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1168,251,1253,278"/><area shape="rect" id="node9" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="515,169,611,196"/><area shape="rect" id="node11" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="424,169,491,196"/><area shape="rect" id="node12" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="189,333,368,360"/><area shape="rect" id="node18" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="673,333,863,360"/><area shape="rect" id="node21" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="385,244,535,285"/><area shape="rect" id="node23" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="559,244,710,285"/><area shape="rect" id="node24" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="197,244,361,285"/><area shape="rect" id="node13" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="564,408,719,435"/><area shape="rect" id="node16" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="287,408,438,435"/><area shape="rect" id="node22" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="473,333,597,360"/></map>
 </div>
 </div>
 <p><a href="electrical_8c_source.html">Go to the source code of this file.</a></p>
@@ -144,7 +144,7 @@ Macros</h2></td></tr>
 <tr class="separator:ae718155e6e9f20accaa19604a341f982"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a244669d0d9c86f4339f5d6fe83fdb9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="electrical_8c.html#a3a244669d0d9c86f4339f5d6fe83fdb9">VoltageOfAdc</a>(adc)&#160;&#160;&#160;<a class="el" href="yapa__2_80_8h.html#a94fa241ceca04635f282e09bdd829f5f">DefaultVoltageOfAdc</a>(adc)</td></tr>
 <tr class="separator:a3a244669d0d9c86f4339f5d6fe83fdb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d130fa14265d4aefded214285df4915"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="electrical_8c.html#a4d130fa14265d4aefded214285df4915">MilliAmpereOfAdc</a>(adc)&#160;&#160;&#160;<a class="el" href="opa__ap__1_80_8h.html#ae66588cc87259ee96c9b794f74bc6e0d">DefaultMilliAmpereOfAdc</a>(adc)</td></tr>
+<tr class="memitem:a4d130fa14265d4aefded214285df4915"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="electrical_8c.html#a4d130fa14265d4aefded214285df4915">MilliAmpereOfAdc</a>(adc)&#160;&#160;&#160;<a class="el" href="vms__ecu_2chibios_2v1_80_2board_8h.html#ae66588cc87259ee96c9b794f74bc6e0d">DefaultMilliAmpereOfAdc</a>(adc)</td></tr>
 <tr class="separator:a4d130fa14265d4aefded214285df4915"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5b8cca2fda6d0ea38b687fc6737f462"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="electrical_8c.html#ab5b8cca2fda6d0ea38b687fc6737f462">CURRENT_ESTIMATION_NONLINEARITY</a>&#160;&#160;&#160;1.2</td></tr>
 <tr class="separator:ab5b8cca2fda6d0ea38b687fc6737f462"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -223,7 +223,7 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">adc</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="opa__ap__1_80_8h.html#ae66588cc87259ee96c9b794f74bc6e0d">DefaultMilliAmpereOfAdc</a>(adc)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="vms__ecu_2chibios_2v1_80_2board_8h.html#ae66588cc87259ee96c9b794f74bc6e0d">DefaultMilliAmpereOfAdc</a>(adc)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -287,9 +287,9 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="electrical_8c_source.html#l00099">99</a> of file <a class="el" href="electrical_8c_source.html">electrical.c</a>.</p>
 
-<p>References <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00265">adc_buf_channel()</a>, <a class="el" href="navstik__1_80_8h_source.html#l00189">ADC_CHANNEL_CURRENT</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00763">ADC_CHANNEL_VSUPPLY</a>, <a class="el" href="electrical_8h_source.html#l00053">Electrical::bat_critical</a>, <a class="el" href="electrical_8h_source.html#l00052">Electrical::bat_low</a>, <a class="el" href="electrical_8h_source.html#l00049">Electrical::current</a>, <a class="el" href="electrical_8c_source.html#l00089">CURRENT_ESTIMATION_NONLINEARITY</a>, <a class="el" href="adc_8h_source.html#l00041">DEFAULT_AV_NB_SAMPLE</a>, <a class="el" href="electrical_8h_source.html#l00051">Electrical::energy</a>, and <a class="el" href="electrical_8h_source.html#l00048">Electrical::vsupply</a>.</p>
+<p>References <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00281">adc_buf_channel()</a>, <a class="el" href="navstik__1_80_8h_source.html#l00189">ADC_CHANNEL_CURRENT</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00763">ADC_CHANNEL_VSUPPLY</a>, <a class="el" href="electrical_8h_source.html#l00053">Electrical::bat_critical</a>, <a class="el" href="electrical_8h_source.html#l00052">Electrical::bat_low</a>, <a class="el" href="electrical_8h_source.html#l00049">Electrical::current</a>, <a class="el" href="electrical_8c_source.html#l00089">CURRENT_ESTIMATION_NONLINEARITY</a>, <a class="el" href="adc_8h_source.html#l00041">DEFAULT_AV_NB_SAMPLE</a>, <a class="el" href="electrical_8h_source.html#l00051">Electrical::energy</a>, and <a class="el" href="electrical_8h_source.html#l00048">Electrical::vsupply</a>.</p>
 
-<p>Referenced by <a class="el" href="fixedwing_2main__fbw_8c_source.html#l00363">init_fbw()</a>, and <a class="el" href="rotorcraft_2main_8c_source.html#l00158">main_init()</a>.</p>
+<p>Referenced by <a class="el" href="fixedwing_2main__fbw_8c_source.html#l00363">init_fbw()</a>, and <a class="el" href="rotorcraft_2main__ap_8c_source.html#l00116">main_init()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -309,7 +309,7 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="electrical_8c_ac5e9a56281268bdf6ddec2143b25f16a_icgraph.png" border="0" usemap="#electrical_8c_ac5e9a56281268bdf6ddec2143b25f16a_icgraph" alt=""/></div>
 <map name="electrical_8c_ac5e9a56281268bdf6ddec2143b25f16a_icgraph" id="electrical_8c_ac5e9a56281268bdf6ddec2143b25f16a_icgraph">
-<area shape="rect" id="node2" href="fixedwing_2main__fbw_8h.html#ad86b7fe577a2414df2c7a5a9222aa45a" title="init_fbw" alt="" coords="164,5,233,32"/><area shape="rect" id="node4" href="rotorcraft_2main__fbw_8h.html#a092df25ac46a6a4ca72c023d8821f9b2" title="Main initialization. " alt="" coords="159,56,239,83"/><area shape="rect" id="node3" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="287,5,357,32"/><area shape="rect" id="node5" href="rotorcraft_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="295,56,349,83"/></map>
+<area shape="rect" id="node2" href="fixedwing_2main__fbw_8h.html#ad86b7fe577a2414df2c7a5a9222aa45a" title="init_fbw" alt="" coords="164,5,233,32"/><area shape="rect" id="node4" href="rotorcraft_2main__fbw_8h.html#a3719465edd56d2b587a6b340f29e4f90" title="Main initialization. " alt="" coords="159,56,239,83"/><area shape="rect" id="node3" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="287,5,357,32"/></map>
 </div>
 </p>
 
@@ -331,18 +331,29 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="electrical_8c_source.html#l00121">121</a> of file <a class="el" href="electrical_8c_source.html">electrical.c</a>.</p>
 
-<p>References <a class="el" href="electrical_8c_source.html#l00052">BAT_CHECKER_DELAY</a>, <a class="el" href="electrical_8h_source.html#l00053">Electrical::bat_critical</a>, <a class="el" href="electrical_8h_source.html#l00052">Electrical::bat_low</a>, <a class="el" href="commands_8c_source.html#l00030">commands</a>, <a class="el" href="electrical_8h_source.html#l00042">CRITIC_BAT_LEVEL</a>, <a class="el" href="electrical_8h_source.html#l00049">Electrical::current</a>, <a class="el" href="electrical_8c_source.html#l00055">ELECTRICAL_PERIODIC_FREQ</a>, <a class="el" href="electrical_8h_source.html#l00051">Electrical::energy</a>, <a class="el" href="fixedwing_2autopilot_8c_source.html#l00042">kill_throttle</a>, <a class="el" href="electrical_8h_source.html#l00036">LOW_BAT_LEVEL</a>, <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="electrical_8c_source.html#l00085">MilliAmpereOfAdc</a>, <a class="el" href="electrical_8c_source.html#l00058">MIN_BAT_LEVEL</a>, <a class="el" href="electrical_8c_source.html#l00082">VoltageOfAdc</a>, and <a class="el" href="electrical_8h_source.html#l00048">Electrical::vsupply</a>.</p>
+<p>References <a class="el" href="autopilot_8c_source.html#l00225">autopilot_throttle_killed()</a>, <a class="el" href="electrical_8c_source.html#l00052">BAT_CHECKER_DELAY</a>, <a class="el" href="electrical_8h_source.html#l00053">Electrical::bat_critical</a>, <a class="el" href="electrical_8h_source.html#l00052">Electrical::bat_low</a>, <a class="el" href="commands_8c_source.html#l00030">commands</a>, <a class="el" href="electrical_8h_source.html#l00042">CRITIC_BAT_LEVEL</a>, <a class="el" href="electrical_8h_source.html#l00049">Electrical::current</a>, <a class="el" href="electrical_8c_source.html#l00055">ELECTRICAL_PERIODIC_FREQ</a>, <a class="el" href="electrical_8h_source.html#l00051">Electrical::energy</a>, <a class="el" href="electrical_8h_source.html#l00036">LOW_BAT_LEVEL</a>, <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="electrical_8c_source.html#l00085">MilliAmpereOfAdc</a>, <a class="el" href="electrical_8c_source.html#l00058">MIN_BAT_LEVEL</a>, <a class="el" href="electrical_8c_source.html#l00082">VoltageOfAdc</a>, and <a class="el" href="electrical_8h_source.html#l00048">Electrical::vsupply</a>.</p>
 
-<p>Referenced by <a class="el" href="rotorcraft_2main_8c_source.html#l00232">handle_periodic_tasks()</a>, <a class="el" href="fixedwing_2main__fbw_8c_source.html#l00446">handle_periodic_tasks_fbw()</a>, and <a class="el" href="sim__ap_8c_source.html#l00063">sim_periodic_task()</a>.</p>
+<p>Referenced by <a class="el" href="rotorcraft_2main__ap_8c_source.html#l00200">handle_periodic_tasks()</a>, <a class="el" href="fixedwing_2main__fbw_8c_source.html#l00446">handle_periodic_tasks_fbw()</a>, and <a class="el" href="sim__ap_8c_source.html#l00062">sim_periodic_task()</a>.</p>
 
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="electrical_8c_aeef6ce2fb40e76ed52df5a1d45646ba1_cgraph.png" border="0" usemap="#electrical_8c_aeef6ce2fb40e76ed52df5a1d45646ba1_cgraph" alt=""/></div>
+<map name="electrical_8c_aeef6ce2fb40e76ed52df5a1d45646ba1_cgraph" id="electrical_8c_aeef6ce2fb40e76ed52df5a1d45646ba1_cgraph">
+<area shape="rect" id="node2" href="autopilot_8c.html#ad0636a1ccc27b07219072341aec524d8" title="get kill status " alt="" coords="189,5,321,47"/></map>
+</div>
+</p>
+
+<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="electrical_8c_aeef6ce2fb40e76ed52df5a1d45646ba1_icgraph.png" border="0" usemap="#electrical_8c_aeef6ce2fb40e76ed52df5a1d45646ba1_icgraph" alt=""/></div>
 <map name="electrical_8c_aeef6ce2fb40e76ed52df5a1d45646ba1_icgraph" id="electrical_8c_aeef6ce2fb40e76ed52df5a1d45646ba1_icgraph">
-<area shape="rect" id="node2" href="rotorcraft_2main__fbw_8h.html#acfa2a521a46d9beb8a3fa77bb0c9e407" title="handle_periodic_tasks" alt="" coords="203,81,366,108"/><area shape="rect" id="node8" href="fixedwing_2main__fbw_8h.html#acde595dfd297c51b2737fcb70a2f8fd2" title="handle_periodic_tasks_fbw" alt="" coords="189,132,380,159"/><area shape="rect" id="node9" href="sim__ap_8c.html#a4f982dacbb35ccfc3e0fcaa64156a2a0" title="sim_periodic_task" alt="" coords="217,183,353,209"/><area shape="rect" id="node3" href="fixedwing_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="486,5,541,32"/><area shape="rect" id="node4" href="nps__autopilot__fixedwing_8c.html#a12870aaa609d4860004be3cec4c8cf2a" title="nps_autopilot_run_step" alt="" coords="428,56,599,83"/><area shape="rect" id="node5" href="main__chibios_8c.html#a1bd1ec0fdc597d88ee659889cda25c0a" title="thd_ap" alt="" coords="480,107,547,133"/><area shape="rect" id="node7" href="main__chibios_8c.html#a4042bcab9578175e00c82adcc2b251f8" title="thd_fbw" alt="" coords="478,157,549,184"/><area shape="rect" id="node6" href="main__chibios_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Main function. " alt="" coords="647,132,701,159"/></map>
+<area shape="rect" id="node2" href="rotorcraft_2main__fbw_8h.html#ab79bb049ce85bf2ed3a75c6b12c02bcb" title="handle_periodic_tasks" alt="" coords="203,5,366,32"/><area shape="rect" id="node3" href="fixedwing_2main__fbw_8h.html#acde595dfd297c51b2737fcb70a2f8fd2" title="handle_periodic_tasks_fbw" alt="" coords="189,56,380,83"/><area shape="rect" id="node4" href="sim__ap_8c.html#a4f982dacbb35ccfc3e0fcaa64156a2a0" title="sim_periodic_task" alt="" coords="217,107,353,133"/></map>
 </div>
 </p>
 
@@ -361,7 +372,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="electrical_8c_source.html#l00065">65</a> of file <a class="el" href="electrical_8c_source.html">electrical.c</a>.</p>
 
-<p>Referenced by <a class="el" href="boards_2bebop_2actuators_8c_source.html#l00073">actuators_bebop_commit()</a>, <a class="el" href="bat__checker_8c_source.html#l00060">bat_checker_periodic()</a>, <a class="el" href="bat__voltage__ardrone2_8c_source.html#l00086">bat_voltage_ardrone2_periodic()</a>, <a class="el" href="ezcurrent_8c_source.html#l00050">ezcurrent_init()</a>, <a class="el" href="ezcurrent_8c_source.html#l00069">ezcurrent_read_event()</a>, <a class="el" href="rotorcraft_2main_8c_source.html#l00307">failsafe_check()</a>, <a class="el" href="generic__com_8c_source.html#l00070">generic_com_periodic()</a>, <a class="el" href="hott__eam_8h_source.html#l00140">hott_update_eam_msg()</a>, <a class="el" href="intermcu__fbw_8c_source.html#l00121">intermcu_send_status()</a>, <a class="el" href="mavlink_8c_source.html#l00768">mavlink_send_battery_status()</a>, <a class="el" href="mavlink_8c_source.html#l00508">mavlink_send_sys_status()</a>, <a class="el" href="max7456_8c_source.html#l00119">max7456_periodic()</a>, <a class="el" href="nps__electrical_8c_source.html#l00044">nps_electrical_run_step()</a>, <a class="el" href="rpm__sensor_8c_source.html#l00042">rpm_sensor_send_motor()</a>, <a class="el" href="rotorcraft_2autopilot_8c_source.html#l00211">send_energy()</a>, <a class="el" href="fixedwing_2main__fbw_8c_source.html#l00326">send_fbw_status()</a>, <a class="el" href="send__imu__mag__current_8c_source.html#l00034">send_imu_mag_current()</a>, <a class="el" href="rotorcraft_2autopilot_8c_source.html#l00187">send_status()</a>, and <a class="el" href="sim__ap_8c_source.html#l00105">update_bat()</a>.</p>
+<p>Referenced by <a class="el" href="boards_2bebop_2actuators_8c_source.html#l00073">actuators_bebop_commit()</a>, <a class="el" href="boards_2disco_2actuators_8c_source.html#l00108">actuators_disco_commit()</a>, <a class="el" href="bat__checker_8c_source.html#l00060">bat_checker_periodic()</a>, <a class="el" href="swing_2board_8c_source.html#l00042">bat_read()</a>, <a class="el" href="bat__voltage__ardrone2_8c_source.html#l00086">bat_voltage_ardrone2_periodic()</a>, <a class="el" href="battery__monitor_8c_source.html#l00197">battery_monitor_read_bus()</a>, <a class="el" href="ezcurrent_8c_source.html#l00050">ezcurrent_init()</a>, <a class="el" href="ezcurrent_8c_source.html#l00069">ezcurrent_read_event()</a>, <a class="el" href="rotorcraft_2main__ap_8c_source.html#l00287">failsafe_check()</a>, <a class="el" href="generic__com_8c_source.html#l00070">generic_com_periodic()</a>, <a class="el" href="hott__eam_8h_source.html#l00140">hott_update_eam_msg()</a>, <a class="el" href="intermcu__fbw_8c_source.html#l00139">intermcu_send_status()</a>, <a class="el" href="mavlink_8c_source.html#l00770">mavlink_send_battery_status()</a>, <a class="el" href="mavlink_8c_source.html#l00510">mavlink_send_sys_status()</a>, <a class="el" href="max7456_8c_source.html#l00119">max7456_periodic()</a>, <a class="el" href="nps__electrical_8c_source.html#l00044">nps_electrical_run_step()</a>, <a class="el" href="rpm__sensor_8c_source.html#l00043">rpm_sensor_send_motor()</a>, <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00109">send_energy()</a>, <a class="el" href="fixedwing_2main__fbw_8c_source.html#l00326">send_fbw_status()</a>, <a class="el" href="send__imu__mag__current_8c_source.html#l00034">send_imu_mag_current()</a>, <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00085">send_status()</a>, and <a class="el" href="sim__ap_8c_source.html#l00110">update_bat()</a>.</p>
 
 </div>
 </div>
@@ -371,7 +382,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="electrical_8c.html">electrical.c</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:02:11 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:02:39 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

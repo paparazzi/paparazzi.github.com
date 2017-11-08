@@ -23,6 +23,7 @@ var halconf_8h =
     [ "HAL_USE_TM", "group__HAL__CONF.html#ga989811956a40f9270a092212a8570632", null ],
     [ "HAL_USE_UART", "group__HAL__CONF.html#ga73220cad2edf2aee77b7ce1b53cacff0", null ],
     [ "HAL_USE_USB", "group__HAL__CONF.html#gafc8f8fc6010f46f5baae4a369e14974e", null ],
+    [ "HAL_USE_WDG", "group__HAL__CONF.html#gac3be0803223f25a5edeed87f56b526c3", null ],
     [ "I2C_USE_MUTUAL_EXCLUSION", "group__HAL__CONF.html#ga7125642404a6fd3d4985d1cb6e1b7b0a", null ],
     [ "MAC_USE_EVENTS", "group__HAL__CONF.html#ga887da1c1383a9e7b45c4464877a7e05e", null ],
     [ "MAC_USE_ZERO_COPY", "group__HAL__CONF.html#gad763d9426413cf2fe3922ebb8578bc59", null ],
@@ -32,6 +33,11 @@ var halconf_8h =
     [ "SDC_NICE_WAITING", "group__HAL__CONF.html#ga3391c832c171a8606b0fc864766f08ba", null ],
     [ "SERIAL_BUFFERS_SIZE", "group__HAL__CONF.html#ga81a9fb00c7a1ce0fe70f263d8fd820e8", null ],
     [ "SERIAL_DEFAULT_BITRATE", "group__HAL__CONF.html#gacb4c08ac23f83ac9d58c50ff840de516", null ],
+    [ "SERIAL_USB_BUFFERS_NUMBER", "group__HAL__CONF.html#ga0c332b2493fd2106beb13425549120fe", null ],
+    [ "SERIAL_USB_BUFFERS_SIZE", "group__HAL__CONF.html#ga24727a5407c6a41af53b59588592da80", null ],
     [ "SPI_USE_MUTUAL_EXCLUSION", "group__HAL__CONF.html#ga36d1818f9631f955f7cc94629b1d5498", null ],
-    [ "SPI_USE_WAIT", "group__HAL__CONF.html#ga0c9ab1488423fa10a22f506c6e74b563", null ]
+    [ "SPI_USE_WAIT", "group__HAL__CONF.html#ga0c9ab1488423fa10a22f506c6e74b563", null ],
+    [ "UART_USE_MUTUAL_EXCLUSION", "group__HAL__CONF.html#gae689e57cf792af401c324de566038687", null ],
+    [ "UART_USE_WAIT", "group__HAL__CONF.html#ga3ccbb19b26b53ba0a8e40cb6b8650114", null ],
+    [ "USB_USE_WAIT", "group__HAL__CONF.html#ga150144a73f541c7aca03c61f5ae16a6e", null ]
 ];

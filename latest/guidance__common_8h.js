@@ -15,6 +15,7 @@ var guidance__common_8h =
     [ "V_CTL_MODE_NB", "guidance__common_8h.html#ab20ec2fcbfbfca52c1a326f3398f8fca", null ],
     [ "v_ctl_altitude_loop", "guidance__common_8h.html#ab78a678ff1021823256d747800db3140", null ],
     [ "v_ctl_climb_loop", "guidance__common_8h.html#a38f0bbceda8812281fc650c2c1aac6c8", null ],
+    [ "v_ctl_guidance_loop", "guidance__common_8h.html#a7fe0d6e838155d9c38c8cf8a8413cf21", null ],
     [ "v_ctl_init", "guidance__common_8h.html#ac48c5fff2d5aca1dd1fc58622709d7eb", null ],
     [ "v_ctl_landing_loop", "guidance__common_8h.html#a130f49d9941f156bb04aa94122b167d0", null ],
     [ "v_ctl_throttle_slew", "guidance__common_8h.html#a7fefa3c115f6c0f7453db6c2edd2dbbb", null ],

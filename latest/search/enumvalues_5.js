@@ -1,9 +1,9 @@
 var searchData=
 [
   ['false',['False',['../types_8h.html#a7c6368b321bd9acd0149b030bb8275edaf9d46b7804d93a4fcde88489a1b68c24',1,'False():&#160;types.h'],['../inttypes_8h.html#a7c6368b321bd9acd0149b030bb8275edaf9d46b7804d93a4fcde88489a1b68c24',1,'False():&#160;inttypes.h']]],
-  ['fbw_5fmode_5fauto',['FBW_MODE_AUTO',['../rotorcraft_2main__fbw_8c.html#af4086243bdaea71d4dfd3c03883cab31a4e63082d699becdd9584190688c5a691',1,'main_fbw.c']]],
-  ['fbw_5fmode_5ffailsafe',['FBW_MODE_FAILSAFE',['../rotorcraft_2main__fbw_8c.html#af4086243bdaea71d4dfd3c03883cab31a1c116e8571ae43fbeaeecf3bef02b4ee',1,'main_fbw.c']]],
-  ['fbw_5fmode_5fmanual',['FBW_MODE_MANUAL',['../rotorcraft_2main__fbw_8c.html#af4086243bdaea71d4dfd3c03883cab31a36b48f7f55dbe0671efa9a93dfb93404',1,'main_fbw.c']]],
+  ['fbw_5fmode_5fauto',['FBW_MODE_AUTO',['../rotorcraft_2main__fbw_8h.html#af4086243bdaea71d4dfd3c03883cab31a4e63082d699becdd9584190688c5a691',1,'main_fbw.h']]],
+  ['fbw_5fmode_5ffailsafe',['FBW_MODE_FAILSAFE',['../rotorcraft_2main__fbw_8h.html#af4086243bdaea71d4dfd3c03883cab31a1c116e8571ae43fbeaeecf3bef02b4ee',1,'main_fbw.h']]],
+  ['fbw_5fmode_5fmanual',['FBW_MODE_MANUAL',['../rotorcraft_2main__fbw_8h.html#af4086243bdaea71d4dfd3c03883cab31a36b48f7f55dbe0671efa9a93dfb93404',1,'main_fbw.h']]],
   ['fet_5fbraking',['FET_BRAKING',['../esc32_8h.html#a7d7ff77147834c43663d3dfd1f263610a0b6e9bcb59a15bbe07bf285846817137',1,'esc32.h']]],
   ['ff1term',['FF1TERM',['../esc32_8h.html#a7d7ff77147834c43663d3dfd1f263610aeda6ec7f8264b54ce041032fb8b23c83',1,'esc32.h']]],
   ['ff2term',['FF2TERM',['../esc32_8h.html#a7d7ff77147834c43663d3dfd1f263610a0cbf4eb39216073c56d846d34fb21817',1,'esc32.h']]],

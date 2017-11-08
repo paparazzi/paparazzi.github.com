@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -148,8 +148,8 @@ $(document).ready(function(){initNavTree('common__flight__plan_8h_source.html','
 <div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="common__flight__plan_8h.html#a9f3e30fbd9ad4c0bdc20d1dee3e43eb0">   44</a></span>&#160;<span class="preprocessor">#define InitStage() nav_init_stage();</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
 <div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="common__flight__plan_8h.html#a3e749f8fe41a97ef62de0dd622dbe3e9">   46</a></span>&#160;<span class="preprocessor">#define Block(x) case x: nav_block=x;</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="common__flight__plan_8h.html#abed83dcae2c09eb0d09f0b279bad1d8b">   47</a></span>&#160;<span class="preprocessor">#define NextBlock() { nav_block++; nav_init_block(); }</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="common__flight__plan_8h.html#ac90fac1cee5a86d0b7c434516f85dd98">   48</a></span>&#160;<span class="preprocessor">#define GotoBlock(b) { nav_block=b; nav_init_block(); }</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="common__flight__plan_8h.html#abed83dcae2c09eb0d09f0b279bad1d8b">   47</a></span>&#160;<span class="preprocessor">#define NextBlock() nav_goto_block(nav_block + 1)</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="common__flight__plan_8h.html#ac90fac1cee5a86d0b7c434516f85dd98">   48</a></span>&#160;<span class="preprocessor">#define GotoBlock(b) nav_goto_block(b)</span></div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
 <div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="common__flight__plan_8h.html#a73a31daf5fd187893268389b0cf07d32">   50</a></span>&#160;<span class="preprocessor">#define Stage(s) case s: nav_stage=s;</span></div>
 <div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="common__flight__plan_8h.html#a5fa65984b8d334be4318091bb98934ef">   51</a></span>&#160;<span class="preprocessor">#define NextStage() { nav_stage++; InitStage(); }</span></div>
@@ -158,7 +158,7 @@ $(document).ready(function(){initNavTree('common__flight__plan_8h_source.html','
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
 <div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="common__flight__plan_8h.html#a5b96743d43411bd82912a80f4d491de2">   55</a></span>&#160;<span class="preprocessor">#define Label(x) label_ ## x:</span></div>
 <div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="common__flight__plan_8h.html#a010478bef118b0b6d9271708bb7797f7">   56</a></span>&#160;<span class="preprocessor">#define Goto(x) { goto label_ ## x; }</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="common__flight__plan_8h.html#a067ebcdcacb7ae66d3a69ef859c5e930">   57</a></span>&#160;<span class="preprocessor">#define Return() { nav_block=last_block; nav_stage=last_stage; block_time=0;}</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="common__flight__plan_8h.html#a10c727164f85d4aacc4c83e1cb0152e2">   57</a></span>&#160;<span class="preprocessor">#define Return(x) { nav_block=last_block; if (x==1) {nav_stage=0;} else {nav_stage=last_stage;} block_time=0;}</span></div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
 <div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="common__flight__plan_8h.html#af7d017fbba81f09f955d27d59df57acc">   59</a></span>&#160;<span class="preprocessor">#define And(x, y) ((x) &amp;&amp; (y))</span></div>
 <div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="common__flight__plan_8h.html#a930c4658c4c62e1d04058018e9732a26">   60</a></span>&#160;<span class="preprocessor">#define Or(x, y) ((x) || (y))</span></div>
@@ -188,7 +188,7 @@ $(document).ready(function(){initNavTree('common__flight__plan_8h_source.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_8a28edc49a666abb23d4888eaf71220c.html">navigation</a></li><li class="navelem"><a class="el" href="common__flight__plan_8h.html">common_flight_plan.h</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:01:34 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:01:52 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -189,10 +189,9 @@ Raw ahrs_float_invariant.xml file:</h2>
 <div class="line"></div>
 <div class="line">  &lt;makefile target=&quot;!sim|fbw&quot;&gt;</div>
 <div class="line">    &lt;configure name=&quot;USE_MAGNETOMETER&quot; default=&quot;1&quot;/&gt;</div>
-<div class="line">    &lt;configure name=&quot;AHRS_ALIGNER_LED&quot; default=&quot;none&quot;/&gt;</div>
 <div class="line"></div>
 <div class="line">    &lt;define name=&quot;USE_MAGNETOMETER&quot; cond=&quot;ifeq (,$(findstring $(USE_MAGNETOMETER),0 FALSE))&quot;/&gt;</div>
-<div class="line">    &lt;define name=&quot;AHRS_ALINGER_LED&quot; value=&quot;$(AHRS_ALIGNER_LED)&quot; cond=&quot;ifneq ($(AHRS_ALIGNER_LED),none)&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;AHRS_ALIGNER_LED&quot; value=&quot;$(AHRS_ALIGNER_LED)&quot; cond=&quot;ifneq ($(AHRS_ALIGNER_LED),none)&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;USE_AHRS&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;USE_AHRS_ALIGNER&quot;/&gt;</div>
 <div class="line"></div>
@@ -224,7 +223,7 @@ Raw ahrs_float_invariant.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:02:18 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:02:49 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

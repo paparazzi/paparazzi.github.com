@@ -19,6 +19,6 @@ var nav__line_8c =
       [ "LQC11", "nav__vertical__raster_8c.html#ab8af100196e813e8f45013a015da1dc4a7f637cfcb9990910ded6a6f84bafed9b", null ]
     ] ],
     [ "nav_line_run", "nav__line_8c.html#aea23f333a62e87e18f4c30016a945325", null ],
-    [ "nav_line_setup", "nav__line_8c.html#a8ebfc8d603e671de1e94d544cae1a75f", null ],
+    [ "nav_line_setup", "nav__line_8c.html#a10235ae748855de825bbd4d421464e4b", null ],
     [ "line_status", "nav__line_8c.html#a1e4b07456818b9e3350d99d1931205fd", null ]
 ];

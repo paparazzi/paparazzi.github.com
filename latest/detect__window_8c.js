@@ -1,5 +1,6 @@
 var detect__window_8c =
 [
+    [ "DETECT_WINDOW_FPS", "detect__window_8c.html#a69e9aed1c4dd021e51d9cfc84c07f157", null ],
     [ "N_WINDOW_SIZES", "detect__window_8c.html#aa9b19b106182b9a72e86e8c9bc869de8", null ],
     [ "RES", "detect__window_8c.html#a65b26605d90a0bcd0e13e05db54f551f", null ],
     [ "detect_escape", "detect__window_8c.html#afe15b8dbeece20cca4e81dd0ef0ed327", null ],

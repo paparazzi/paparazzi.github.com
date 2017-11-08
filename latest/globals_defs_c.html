@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -410,6 +410,12 @@ $(document).ready(function(){initNavTree('globals_defs_c.html','');});
 <li>CAN1
 : <a class="el" href="LPC21xx_8h.html#a4964ecb6a5c689aaf8ee2832b8093aac">LPC21xx.h</a>
 </li>
+<li>CAN1_RX
+: <a class="el" href="chimera_2chibios_2v1_80_2board_8h.html#a38eb3a0ab33c460b90bd817ee26c8411">board.h</a>
+</li>
+<li>CAN1_TX
+: <a class="el" href="chimera_2chibios_2v1_80_2board_8h.html#af52b7d735e33cb119ac602e54530d966">board.h</a>
+</li>
 <li>CAN2
 : <a class="el" href="LPC21xx_8h.html#ac5e4c86ed487dc91418b156e24808033">LPC21xx.h</a>
 </li>
@@ -441,7 +447,7 @@ $(document).ready(function(){initNavTree('globals_defs_c.html','');});
 : <a class="el" href="navigation_8c.html#a3738a3f27a7562047055480aeaf2da40">navigation.c</a>
 </li>
 <li>CATASTROPHIC_BAT_KILL_DELAY
-: <a class="el" href="main__ap_8c.html#a9fca79962cf1b71c8dc6252436ac1c79">main_ap.c</a>
+: <a class="el" href="fixedwing_2main__ap_8c.html#a9fca79962cf1b71c8dc6252436ac1c79">main_ap.c</a>
 </li>
 <li>CCLK
 : <a class="el" href="lpcSCB_8h.html#addec7d88e04ddfe6ac90caf602636c51">lpcSCB.h</a>
@@ -508,6 +514,12 @@ $(document).ready(function(){initNavTree('globals_defs_c.html','');});
 <li>CH_CFG_IDLE_LOOP_HOOK
 : <a class="el" href="group__config.html#gad22892d2984f5289c63f963622e7f2af">chconf.h</a>
 </li>
+<li>CH_CFG_IRQ_EPILOGUE_HOOK
+: <a class="el" href="group__config.html#ga7267d6fe5e220bedb4e04f3a101b72c2">chconf.h</a>
+</li>
+<li>CH_CFG_IRQ_PROLOGUE_HOOK
+: <a class="el" href="group__config.html#gad85045848a313bb4af2ba316beb65a43">chconf.h</a>
+</li>
 <li>CH_CFG_MEMCORE_SIZE
 : <a class="el" href="group__config.html#ga185a9549f0d212530070e806680c4949">chconf.h</a>
 </li>
@@ -543,6 +555,9 @@ $(document).ready(function(){initNavTree('globals_defs_c.html','');});
 </li>
 <li>CH_CFG_TIME_QUANTUM
 : <a class="el" href="group__config.html#ga20a364f069f854ccdba167f2cca2526f">chconf.h</a>
+</li>
+<li>CH_CFG_TRACE_HOOK
+: <a class="el" href="group__config.html#gabcfd6612c445e7dfbef53f0ff5f73eb8">chconf.h</a>
 </li>
 <li>CH_CFG_USE_CONDVARS
 : <a class="el" href="group__config.html#ga73bc5a9da32221b5dd7759eed02a11fc">chconf.h</a>
@@ -610,9 +625,6 @@ $(document).ready(function(){initNavTree('globals_defs_c.html','');});
 <li>CH_DBG_ENABLE_STACK_CHECK
 : <a class="el" href="group__config.html#gab93d9ee904f15d4f2c26ef2a1394a1d7">chconf.h</a>
 </li>
-<li>CH_DBG_ENABLE_TRACE
-: <a class="el" href="group__config.html#ga8bc4cfd861131aeb3c880347d0068229">chconf.h</a>
-</li>
 <li>CH_DBG_FILL_THREADS
 : <a class="el" href="group__config.html#ga6a859dd249adfb66b9bbf809061ea06c">chconf.h</a>
 </li>
@@ -624,6 +636,12 @@ $(document).ready(function(){initNavTree('globals_defs_c.html','');});
 </li>
 <li>CH_DBG_THREADS_PROFILING
 : <a class="el" href="group__config.html#gadc9c00c2e5b6e766ded8dfa77c0c90c1">chconf.h</a>
+</li>
+<li>CH_DBG_TRACE_BUFFER_SIZE
+: <a class="el" href="group__config.html#gacae5f1969a3b894cc3eea9807c07bd2c">chconf.h</a>
+</li>
+<li>CH_DBG_TRACE_MASK
+: <a class="el" href="group__config.html#ga72ac367ab16b997a2c7d095d3fcb9ecf">chconf.h</a>
 </li>
 <li>CH_SIZE
 : <a class="el" href="w5100_8c.html#ab1805e3dc2190fd3c6accde94758b0d1">w5100.c</a>
@@ -728,14 +746,15 @@ $(document).ready(function(){initNavTree('globals_defs_c.html','');});
 : <a class="el" href="imu__chimu_8h.html#a2ec2d11d12f1527bec4150b0411c27a9">imu_chimu.h</a>
 </li>
 <li>ChopServo
-: <a class="el" href="lpc21_2subsystems_2actuators_2servos__4015__MAT__hw_8h.html#a4b3ddbb108e57195911bc60ea22ff123">servos_4015_MAT_hw.h</a>
+: <a class="el" href="lpc21_2subsystems_2actuators_2servos__ppm__hw_8h.html#a4b3ddbb108e57195911bc60ea22ff123">servos_ppm_hw.h</a>
 , <a class="el" href="servos__4015__hw_8h.html#a4b3ddbb108e57195911bc60ea22ff123">servos_4015_hw.h</a>
+, <a class="el" href="lpc21_2subsystems_2actuators_2servos__4015__MAT__hw_8h.html#a4b3ddbb108e57195911bc60ea22ff123">servos_4015_MAT_hw.h</a>
 , <a class="el" href="lpc21_2subsystems_2actuators_2servos__4017__hw_8h.html#a4b3ddbb108e57195911bc60ea22ff123">servos_4017_hw.h</a>
-, <a class="el" href="lpc21_2subsystems_2actuators_2servos__ppm__hw_8h.html#a4b3ddbb108e57195911bc60ea22ff123">servos_ppm_hw.h</a>
 , <a class="el" href="servos__nil_8h.html#a4b3ddbb108e57195911bc60ea22ff123">servos_nil.h</a>
 </li>
 <li>CHPRINTF_USE_FLOAT
-: <a class="el" href="group__chprintf.html#ga92e0819075bd91dc380cc86a20186960">printf.h</a>
+: <a class="el" href="group__config.html#ga92e0819075bd91dc380cc86a20186960">chconf.h</a>
+, <a class="el" href="group__chprintf.html#ga92e0819075bd91dc380cc86a20186960">printf.h</a>
 </li>
 <li>CI
 : <a class="el" href="pprz__geodetic__double_8c.html#a2e20b961702519f39a39c93d21591131">pprz_geodetic_double.c</a>
@@ -744,12 +763,18 @@ $(document).ready(function(){initNavTree('globals_defs_c.html','');});
 <li>CLEAR
 : <a class="el" href="v4l2_8c.html#ab0ba4dd6e237b96132c0a66be2fb3bc2">v4l2.c</a>
 </li>
+<li>clock_get_current_time
+: <a class="el" href="nps__main_8h.html#a51e6e866abd4af263d99504a70d0dab8">nps_main.h</a>
+</li>
 <li>CLOSE_TO_WAYPOINT
 : <a class="el" href="navigation_8c.html#a886b61a67281687fc4c33ce0fcbe85a7">navigation.c</a>
 </li>
 <li>CloseDegAngles
 : <a class="el" href="nav_8h.html#ac7337f6adcdaff21acccd2f32070b666">nav.h</a>
 , <a class="el" href="navigation_8h.html#ac7337f6adcdaff21acccd2f32070b666">navigation.h</a>
+</li>
+<li>CloseRadAngles
+: <a class="el" href="navigation_8h.html#ab4fd74f9040282b0ffd4ca833a18ccdf">navigation.h</a>
 </li>
 <li>CM_OF_M
 : <a class="el" href="group__math__geodetic__int.html#gac1c9373f4e9310feecc165355eaec87f">pprz_geodetic_int.h</a>
@@ -761,8 +786,8 @@ $(document).ready(function(){initNavTree('globals_defs_c.html','');});
 : <a class="el" href="baro__MS5534A_8c.html#a6fda1c30b3e6c3656c58c972df422559">baro_MS5534A.c</a>
 </li>
 <li>CMD_OF_SAT
-: <a class="el" href="guidance__opticflow__hover_8c.html#ac9a8cd4525614f871188949b70d9f9cc">guidance_opticflow_hover.c</a>
-, <a class="el" href="guidance__OA_8c.html#ac9a8cd4525614f871188949b70d9f9cc">guidance_OA.c</a>
+: <a class="el" href="guidance__OA_8c.html#ac9a8cd4525614f871188949b70d9f9cc">guidance_OA.c</a>
+, <a class="el" href="guidance__opticflow__hover_8c.html#ac9a8cd4525614f871188949b70d9f9cc">guidance_opticflow_hover.c</a>
 </li>
 <li>CMD_PRESSURE
 : <a class="el" href="baro__MS5534A_8c.html#a15ff6cbc81d61f366c8901b883c38200">baro_MS5534A.c</a>
@@ -791,20 +816,26 @@ $(document).ready(function(){initNavTree('globals_defs_c.html','');});
 <li>CMTI
 : <a class="el" href="gsm_8c.html#a78d05100a105cf6352fa112ba110bf77">gsm.c</a>
 </li>
+<li>COLORFILTER_FPS
+: <a class="el" href="colorfilter_8c.html#a5a295f1f80434acb03d99955a6b7613c">colorfilter.c</a>
+</li>
+<li>COLORFILTER_SEND_OBSTACLE
+: <a class="el" href="colorfilter_8c.html#a39d36b2017d849527027efde107473cc">colorfilter.c</a>
+</li>
 <li>COMMAND_
 : <a class="el" href="lpc21_2subsystems_2actuators_2actuators__pwm__arch_8h.html#aa1e86fef0a1552f03b3151aba31fffdb">actuators_pwm_arch.h</a>
 </li>
 <li>COMMAND_PITCH_TRIM
-: <a class="el" href="main__ap_8c.html#af47ce5621dac0e4911b3769c1517c778">main_ap.c</a>
+: <a class="el" href="fixedwing_2main__ap_8c.html#af47ce5621dac0e4911b3769c1517c778">main_ap.c</a>
 </li>
 <li>COMMAND_ROLL_TRIM
-: <a class="el" href="main__ap_8c.html#a367677864db2bdf0324039485b3a1cf7">main_ap.c</a>
+: <a class="el" href="fixedwing_2main__ap_8c.html#a367677864db2bdf0324039485b3a1cf7">main_ap.c</a>
 </li>
 <li>COMMAND_YAW_TRIM
-: <a class="el" href="main__ap_8c.html#a83f827b8cd2afd7a5032281b9dede954">main_ap.c</a>
+: <a class="el" href="fixedwing_2main__ap_8c.html#a83f827b8cd2afd7a5032281b9dede954">main_ap.c</a>
 </li>
-<li>COMPLEMENT_2
-: <a class="el" href="libisp_8c.html#a48e935859e5b0dac500db27ac0e423fa">libisp.c</a>
+<li>COMMON_INT_TYPES
+: <a class="el" href="common_8h.html#a31819738da84413414ac3981082b2f8e">common.h</a>
 </li>
 <li>COMPUTATION_FRAC
 : <a class="el" href="ahrs__int__cmpl__quat_8c.html#af8ed6034aba17fe334cfe8d8204d83f9">ahrs_int_cmpl_quat.c</a>
@@ -861,15 +892,18 @@ $(document).ready(function(){initNavTree('globals_defs_c.html','');});
 : <a class="el" href="config__mkk__v2_8h.html#a32f1b62e0c68d17267d7af8f5f7583d3">config_mkk_v2.h</a>
 </li>
 <li>Configure_GPS_RESET_Pin
-: <a class="el" href="sdlog__1_80_8h.html#a0fad87177073eb3f02c6fc96a97328e7">sdlog_1.0.h</a>
+: <a class="el" href="logom__2_86_8h.html#a0fad87177073eb3f02c6fc96a97328e7">logom_2.6.h</a>
 , <a class="el" href="tiny__2_81_8h.html#a0fad87177073eb3f02c6fc96a97328e7">tiny_2.1.h</a>
-, <a class="el" href="logom__2_86_8h.html#a0fad87177073eb3f02c6fc96a97328e7">logom_2.6.h</a>
+, <a class="el" href="sdlog__1_80_8h.html#a0fad87177073eb3f02c6fc96a97328e7">sdlog_1.0.h</a>
 </li>
 <li>CONTROL_FREQUENCY
-: <a class="el" href="fixedwing_2autopilot_8h.html#a992e6194ee1d6c879faa66e51b72840a">autopilot.h</a>
+: <a class="el" href="fixedwing_2autopilot__static_8h.html#a992e6194ee1d6c879faa66e51b72840a">autopilot_static.h</a>
 </li>
-<li>COV_WINDOW_SIZE
-: <a class="el" href="optical__flow__landing_8h.html#a46a737bcf1cfcfb1da20ff9f70a9a012">optical_flow_landing.h</a>
+<li>COORDINATED_TURN_AIRSPEED
+: <a class="el" href="stabilization__attitude__rc__setpoint_8c.html#a3134e713e3374428c9ce1dac5ddd243b">stabilization_attitude_rc_setpoint.c</a>
+</li>
+<li>CORTEX_VTOR_INIT
+: <a class="el" href="group__config.html#ga7ed3022f929b0ef250c4aa8cda44c0be">chconf.h</a>
 </li>
 <li>CPHA
 : <a class="el" href="LPC21xx_8h.html#ad8529d2df242f4448a2e66aab0eef9a3">LPC21xx.h</a>
@@ -884,7 +918,7 @@ $(document).ready(function(){initNavTree('globals_defs_c.html','');});
 : <a class="el" href="lpc21_2link__mcu__hw_8h.html#a653d2ce62628ed8a24b986b1c9107833">link_mcu_hw.h</a>
 </li>
 <li>CrcLow
-: <a class="el" href="lpc21_2link__mcu__hw_8h.html#adb19201fe1d4dccfe72271bbdc0626e6">link_mcu_hw.h</a>
+: <a class="el" href="stm32_2link__mcu__hw_8h.html#adb19201fe1d4dccfe72271bbdc0626e6">link_mcu_hw.h</a>
 </li>
 <li>CRITIC_BAT_LEVEL
 : <a class="el" href="electrical_8h.html#a750ae88746939044885e47e1c11ea136">electrical.h</a>
@@ -1148,7 +1182,7 @@ $(document).ready(function(){initNavTree('globals_defs_c.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Oct 1 2016 14:02:46 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:03:17 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

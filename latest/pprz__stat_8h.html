@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -112,7 +112,7 @@ $(document).ready(function(){initNavTree('pprz__stat_8h.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p>Statistics functions like variance.  
+<p>Statistics functions.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;std.h&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -124,32 +124,169 @@ $(document).ready(function(){initNavTree('pprz__stat_8h.html','');});
 <map name="sw_2airborne_2math_2pprz__stat_8h" id="sw_2airborne_2math_2pprz__stat_8h">
 </map>
 </div>
+</div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="pprz__stat_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2math_2pprz__stat_8hdep" alt=""/></div>
+<map name="sw_2airborne_2math_2pprz__stat_8hdep" id="sw_2airborne_2math_2pprz__stat_8hdep">
+<area shape="rect" id="node2" href="pprz__stat_8c.html" title="Statistics functions. " alt="" coords="5,102,171,143"/><area shape="rect" id="node3" href="size__divergence_8c.html" title="Calculate divergence from flow vectors by looking at line sizes between the points. " alt="" coords="195,95,386,151"/><area shape="rect" id="node4" href="optical__flow__landing_8c.html" title="This module implements optical flow landings in which the divergence is kept constant. " alt="" coords="411,102,597,143"/></map>
+</div>
 </div>
 <p><a href="pprz__stat_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a1cba9838365378d7cb143e159429dea6"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pprz__stat_8h.html#a1cba9838365378d7cb143e159429dea6">variance_float</a> (float *array, int nb)</td></tr>
-<tr class="memdesc:a1cba9838365378d7cb143e159429dea6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the variance of an array of values (float).  <a href="#a1cba9838365378d7cb143e159429dea6">More...</a><br /></td></tr>
-<tr class="separator:a1cba9838365378d7cb143e159429dea6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8093f5f1d78b865cc0b17a4b08fe84ed"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pprz__stat_8h.html#a8093f5f1d78b865cc0b17a4b08fe84ed">variance_int</a> (<a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> *array, int nb)</td></tr>
-<tr class="memdesc:a8093f5f1d78b865cc0b17a4b08fe84ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the variance of an array of values (integer).  <a href="#a8093f5f1d78b865cc0b17a4b08fe84ed">More...</a><br /></td></tr>
-<tr class="separator:a8093f5f1d78b865cc0b17a4b08fe84ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ea37190b84005b38d22358e2d2c3a74"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pprz__stat_8h.html#a9ea37190b84005b38d22358e2d2c3a74">mean_i</a> (<a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> *array, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> n_elements)</td></tr>
+<tr class="memdesc:a9ea37190b84005b38d22358e2d2c3a74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the mean value of an array This is implemented using floats to handle scaling of all variables.  <a href="#a9ea37190b84005b38d22358e2d2c3a74">More...</a><br /></td></tr>
+<tr class="separator:a9ea37190b84005b38d22358e2d2c3a74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50abca98517a26ee5a4e1f3e6e9e0f56"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pprz__stat_8h.html#a50abca98517a26ee5a4e1f3e6e9e0f56">variance_i</a> (<a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> *array, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> n_elements)</td></tr>
+<tr class="memdesc:a50abca98517a26ee5a4e1f3e6e9e0f56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the variance of an array of values (integer).  <a href="#a50abca98517a26ee5a4e1f3e6e9e0f56">More...</a><br /></td></tr>
+<tr class="separator:a50abca98517a26ee5a4e1f3e6e9e0f56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a938b3854a384a0e327d27cf1c515b117"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pprz__stat_8h.html#a938b3854a384a0e327d27cf1c515b117">covariance_i</a> (<a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> *array1, <a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> *array2, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> n_elements)</td></tr>
+<tr class="memdesc:a938b3854a384a0e327d27cf1c515b117"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the covariance of two arrays V(X) = E[(X-E[X])(Y-E[Y])] = E[XY] - E[X]E[Y] where E[X] is the expected value of X This is implemented using floats to handle scaling of all variables.  <a href="#a938b3854a384a0e327d27cf1c515b117">More...</a><br /></td></tr>
+<tr class="separator:a938b3854a384a0e327d27cf1c515b117"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a234aff5aa9b0f7e40ac863e2b60d6365"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pprz__stat_8h.html#a234aff5aa9b0f7e40ac863e2b60d6365">sum_f</a> (float *array, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> n_elements)</td></tr>
+<tr class="memdesc:a234aff5aa9b0f7e40ac863e2b60d6365"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the sum array elements.  <a href="#a234aff5aa9b0f7e40ac863e2b60d6365">More...</a><br /></td></tr>
+<tr class="separator:a234aff5aa9b0f7e40ac863e2b60d6365"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c4d41545675c0f746d1100d435ffe8f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pprz__stat_8h.html#a7c4d41545675c0f746d1100d435ffe8f">mean_f</a> (float *arr, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> n_elements)</td></tr>
+<tr class="memdesc:a7c4d41545675c0f746d1100d435ffe8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the mean value of an array (float)  <a href="#a7c4d41545675c0f746d1100d435ffe8f">More...</a><br /></td></tr>
+<tr class="separator:a7c4d41545675c0f746d1100d435ffe8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef701f0d6d92883bf903cc4e8b20048e"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pprz__stat_8h.html#aef701f0d6d92883bf903cc4e8b20048e">variance_f</a> (float *array, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> n_elements)</td></tr>
+<tr class="memdesc:aef701f0d6d92883bf903cc4e8b20048e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the variance of an array of values (float).  <a href="#aef701f0d6d92883bf903cc4e8b20048e">More...</a><br /></td></tr>
+<tr class="separator:aef701f0d6d92883bf903cc4e8b20048e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfa4250d4cb12b024d2d6a19d8253695"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pprz__stat_8h.html#acfa4250d4cb12b024d2d6a19d8253695">covariance_f</a> (float *array1, float *array2, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> n_elements)</td></tr>
+<tr class="memdesc:acfa4250d4cb12b024d2d6a19d8253695"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the covariance of two arrays V(X) = E[(X-E[X])(Y-E[Y])] = E[XY] - E[X]E[Y] where E[X] is the expected value of X.  <a href="#acfa4250d4cb12b024d2d6a19d8253695">More...</a><br /></td></tr>
+<tr class="separator:acfa4250d4cb12b024d2d6a19d8253695"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Statistics functions like variance. </p>
+<div class="textblock"><p>Statistics functions. </p>
 
 <p>Definition in file <a class="el" href="pprz__stat_8h_source.html">pprz_stat.h</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a1cba9838365378d7cb143e159429dea6"></a>
+<a class="anchor" id="acfa4250d4cb12b024d2d6a19d8253695"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static float variance_float </td>
+          <td class="memname">float covariance_f </td>
+          <td>(</td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>arr1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>arr2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td>
+          <td class="paramname"><em>n_elements</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compute the covariance of two arrays V(X) = E[(X-E[X])(Y-E[Y])] = E[XY] - E[X]E[Y] where E[X] is the expected value of X. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">*array1</td><td>The first array </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*array2</td><td>The second array </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">n_elements</td><td>Number of elements in the arrays </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>covariance </dd></dl>
+
+<p>Definition at line <a class="el" href="pprz__stat_8c_source.html#l00141">141</a> of file <a class="el" href="pprz__stat_8c_source.html">pprz_stat.c</a>.</p>
+
+<p>Referenced by <a class="el" href="optical__flow__landing_8c_source.html#l00518">set_cov_div()</a>, and <a class="el" href="pprz__stat_8c_source.html#l00128">variance_f()</a>.</p>
+
+<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="pprz__stat_8h_acfa4250d4cb12b024d2d6a19d8253695_icgraph.png" border="0" usemap="#pprz__stat_8h_acfa4250d4cb12b024d2d6a19d8253695_icgraph" alt=""/></div>
+<map name="pprz__stat_8h_acfa4250d4cb12b024d2d6a19d8253695_icgraph" id="pprz__stat_8h_acfa4250d4cb12b024d2d6a19d8253695_icgraph">
+<area shape="rect" id="node2" href="optical__flow__landing_8c.html#a529beff707cc000dee0afe4234074da4" title="Set the covariance of the divergence and the thrust / past divergence This funciton should only be ca..." alt="" coords="156,5,252,32"/><area shape="rect" id="node6" href="pprz__stat_8h.html#aef701f0d6d92883bf903cc4e8b20048e" title="Compute the variance of an array of values (float). " alt="" coords="161,56,247,83"/><area shape="rect" id="node3" href="optical__flow__landing_8c.html#a3a43c6fe7380d2c3fcadc9dfa82faa2b" title="Determine and set the thrust for constant divergence control. " alt="" coords="300,5,471,32"/><area shape="rect" id="node4" href="optical__flow__landing_8c.html#a9628e4f2b9a046bb7ff80c208ab85daa" title="Run the optical flow landing module. " alt="" coords="519,5,697,32"/><area shape="rect" id="node5" href="vertical__ctrl__module__demo_8h.html#a24ef9289dfa15084a7457a97ad7632c8" title="guidance_v_module_run" alt="" coords="745,5,923,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a938b3854a384a0e327d27cf1c515b117"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> covariance_i </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> *&#160;</td>
+          <td class="paramname"><em>array1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> *&#160;</td>
+          <td class="paramname"><em>array2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td>
+          <td class="paramname"><em>n_elements</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compute the covariance of two arrays V(X) = E[(X-E[X])(Y-E[Y])] = E[XY] - E[X]E[Y] where E[X] is the expected value of X This is implemented using floats to handle scaling of all variables. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">*array1</td><td>The first array </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*array2</td><td>The second array </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">n_elements</td><td>Number of elements in the arrays </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>covariance </dd></dl>
+
+<p>Definition at line <a class="el" href="pprz__stat_8c_source.html#l00074">74</a> of file <a class="el" href="pprz__stat_8c_source.html">pprz_stat.c</a>.</p>
+
+<p>Referenced by <a class="el" href="pprz__stat_8c_source.html#l00060">variance_i()</a>.</p>
+
+<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="pprz__stat_8h_a938b3854a384a0e327d27cf1c515b117_icgraph.png" border="0" usemap="#pprz__stat_8h_a938b3854a384a0e327d27cf1c515b117_icgraph" alt=""/></div>
+<map name="pprz__stat_8h_a938b3854a384a0e327d27cf1c515b117_icgraph" id="pprz__stat_8h_a938b3854a384a0e327d27cf1c515b117_icgraph">
+<area shape="rect" id="node2" href="pprz__stat_8h.html#a50abca98517a26ee5a4e1f3e6e9e0f56" title="Compute the variance of an array of values (integer). " alt="" coords="155,5,241,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a7c4d41545675c0f746d1100d435ffe8f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float mean_f </td>
           <td>(</td>
           <td class="paramtype">float *&#160;</td>
           <td class="paramname"><em>array</em>, </td>
@@ -157,8 +294,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>nb</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td>
+          <td class="paramname"><em>n_elements</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -166,37 +303,54 @@ Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Compute the variance of an array of values (float). </p>
-<p>The variance is a measure of how far a set of numbers is spread out V(X) = E[(X-E[X])^2] = E[X^2] - E[X]^2 where E[X] is the expected value of X</p>
+<p>Compute the mean value of an array (float) </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">array</td><td>pointer to an array of float </td></tr>
-    <tr><td class="paramname">nb</td><td>numbre of values in the array, must be &gt;0 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*array</td><td>The array </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">n_elements</td><td>Number of elements in the array </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>variance </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>mean </dd></dl>
 
-<p>Definition at line <a class="el" href="pprz__stat_8h_source.html#l00045">45</a> of file <a class="el" href="pprz__stat_8h_source.html">pprz_stat.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__stat_8c_source.html#l00115">115</a> of file <a class="el" href="pprz__stat_8c_source.html">pprz_stat.c</a>.</p>
+
+<p>References <a class="el" href="pprz__stat_8c_source.html#l00099">sum_f()</a>.</p>
+
+<p>Referenced by <a class="el" href="size__divergence_8c_source.html#l00046">get_size_divergence()</a>.</p>
+
+<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="pprz__stat_8h_a7c4d41545675c0f746d1100d435ffe8f_cgraph.png" border="0" usemap="#pprz__stat_8h_a7c4d41545675c0f746d1100d435ffe8f_cgraph" alt=""/></div>
+<map name="pprz__stat_8h_a7c4d41545675c0f746d1100d435ffe8f_cgraph" id="pprz__stat_8h_a7c4d41545675c0f746d1100d435ffe8f_cgraph">
+<area shape="rect" id="node2" href="pprz__stat_8c.html#a234aff5aa9b0f7e40ac863e2b60d6365" title="Compute the sum array elements (float) " alt="" coords="124,5,185,32"/></map>
+</div>
+</p>
+
+<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="pprz__stat_8h_a7c4d41545675c0f746d1100d435ffe8f_icgraph.png" border="0" usemap="#pprz__stat_8h_a7c4d41545675c0f746d1100d435ffe8f_icgraph" alt=""/></div>
+<map name="pprz__stat_8h_a7c4d41545675c0f746d1100d435ffe8f_icgraph" id="pprz__stat_8h_a7c4d41545675c0f746d1100d435ffe8f_icgraph">
+<area shape="rect" id="node2" href="size__divergence_8h.html#a5bd0d30766d4538c9b64fccc7826b12a" title="Get divergence from optical flow vectors based on line sizes between corners. " alt="" coords="124,5,276,32"/><area shape="rect" id="node3" href="opticflow__calculator_8h.html#a3edff14cc7f95b5202ba6841a12dfed3" title="Run the optical flow with fast9 and lukaskanade on a new image frame. " alt="" coords="324,5,504,32"/><area shape="rect" id="node4" href="opticflow__calculator_8h.html#a89e51af8fe5a0f534193635d181a2086" title="Run the optical flow on a new image frame. " alt="" coords="552,5,707,32"/><area shape="rect" id="node5" href="opticflow__module_8c.html#a36b69a7ec255d2d20bb31b6d13e3e567" title="The main optical flow calculation thread. " alt="" coords="755,5,919,32"/><area shape="rect" id="node6" href="opticflow__module_8h.html#a6026660ee86fbb1f72bada581386e6d9" title="Initialize the optical flow module for the bottom camera. " alt="" coords="967,5,1125,32"/></map>
+</div>
+</p>
 
 </div>
 </div>
-<a class="anchor" id="a8093f5f1d78b865cc0b17a4b08fe84ed"></a>
+<a class="anchor" id="a9ea37190b84005b38d22358e2d2c3a74"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> variance_int </td>
+          <td class="memname"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> mean_i </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> *&#160;</td>
           <td class="paramname"><em>array</em>, </td>
@@ -204,8 +358,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>nb</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td>
+          <td class="paramname"><em>n_elements</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -213,25 +367,181 @@ Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Compute the variance of an array of values (integer). </p>
-<p>The variance is a measure of how far a set of numbers is spread out V(X) = E[(X-E[X])^2] = E[X^2] - E[X]^2 where E[X] is the expected value of X</p>
+<p>Compute the mean value of an array This is implemented using floats to handle scaling of all variables. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">array</td><td>pointer to an array of integer </td></tr>
-    <tr><td class="paramname">nb</td><td>numbre of values in the array, must be &gt;0 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*array</td><td>The array </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">n_elements</td><td>Number of elements in the array </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>mean </dd></dl>
+
+<p>Definition at line <a class="el" href="pprz__stat_8c_source.html#l00039">39</a> of file <a class="el" href="pprz__stat_8c_source.html">pprz_stat.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a234aff5aa9b0f7e40ac863e2b60d6365"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float sum_f </td>
+          <td>(</td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>array</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td>
+          <td class="paramname"><em>n_elements</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compute the sum array elements. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">*array</td><td>The first array </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">n_elements</td><td>Number of elements in the arrays </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>array sum</dd></dl>
+<p>Compute the sum array elements.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">*array</td><td>The array </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">n_elements</td><td>Number of elements in the arrays </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>array sum </dd></dl>
+
+<p>Definition at line <a class="el" href="pprz__stat_8c_source.html#l00099">99</a> of file <a class="el" href="pprz__stat_8c_source.html">pprz_stat.c</a>.</p>
+
+<p>Referenced by <a class="el" href="pprz__stat_8c_source.html#l00115">mean_f()</a>.</p>
+
+<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="pprz__stat_8h_a234aff5aa9b0f7e40ac863e2b60d6365_icgraph.png" border="0" usemap="#pprz__stat_8h_a234aff5aa9b0f7e40ac863e2b60d6365_icgraph" alt=""/></div>
+<map name="pprz__stat_8h_a234aff5aa9b0f7e40ac863e2b60d6365_icgraph" id="pprz__stat_8h_a234aff5aa9b0f7e40ac863e2b60d6365_icgraph">
+<area shape="rect" id="node2" href="pprz__stat_8h.html#a7c4d41545675c0f746d1100d435ffe8f" title="Compute the mean value of an array (float) " alt="" coords="115,5,185,32"/><area shape="rect" id="node3" href="size__divergence_8h.html#a5bd0d30766d4538c9b64fccc7826b12a" title="Get divergence from optical flow vectors based on line sizes between corners. " alt="" coords="233,5,385,32"/><area shape="rect" id="node4" href="opticflow__calculator_8h.html#a3edff14cc7f95b5202ba6841a12dfed3" title="Run the optical flow with fast9 and lukaskanade on a new image frame. " alt="" coords="433,5,613,32"/><area shape="rect" id="node5" href="opticflow__calculator_8h.html#a89e51af8fe5a0f534193635d181a2086" title="Run the optical flow on a new image frame. " alt="" coords="661,5,816,32"/><area shape="rect" id="node6" href="opticflow__module_8c.html#a36b69a7ec255d2d20bb31b6d13e3e567" title="The main optical flow calculation thread. " alt="" coords="864,5,1028,32"/><area shape="rect" id="node7" href="opticflow__module_8h.html#a6026660ee86fbb1f72bada581386e6d9" title="Initialize the optical flow module for the bottom camera. " alt="" coords="1076,5,1235,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aef701f0d6d92883bf903cc4e8b20048e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float variance_f </td>
+          <td>(</td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>array</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td>
+          <td class="paramname"><em>n_elements</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compute the variance of an array of values (float). </p>
+<p>The variance is a measure of how far a set of numbers is spread out V(X) = E[(X-E[X])^2] = E[X^2] - E[X]^2 where E[X] is the expected value of X </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">array</td><td>Pointer to an array of float </td></tr>
+    <tr><td class="paramname">n_elements</td><td>Number of values in the array </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>variance </dd></dl>
 
-<p>Definition at line <a class="el" href="pprz__stat_8h_source.html#l00066">66</a> of file <a class="el" href="pprz__stat_8h_source.html">pprz_stat.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__stat_8c_source.html#l00128">128</a> of file <a class="el" href="pprz__stat_8c_source.html">pprz_stat.c</a>.</p>
+
+<p>References <a class="el" href="pprz__stat_8c_source.html#l00141">covariance_f()</a>.</p>
+
+<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="pprz__stat_8h_aef701f0d6d92883bf903cc4e8b20048e_cgraph.png" border="0" usemap="#pprz__stat_8h_aef701f0d6d92883bf903cc4e8b20048e_cgraph" alt=""/></div>
+<map name="pprz__stat_8h_aef701f0d6d92883bf903cc4e8b20048e_cgraph" id="pprz__stat_8h_aef701f0d6d92883bf903cc4e8b20048e_cgraph">
+<area shape="rect" id="node2" href="pprz__stat_8c.html#ac75c0169ede28d21ada6d51e7431ea18" title="Compute the covariance of two arrays V(X) = E[(X&#45;E[X])(Y&#45;E[Y])] = E[XY] &#45; E[X]E[Y] where E[X] is the ..." alt="" coords="140,5,243,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a50abca98517a26ee5a4e1f3e6e9e0f56"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> variance_i </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> *&#160;</td>
+          <td class="paramname"><em>array</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td>
+          <td class="paramname"><em>n_elements</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compute the variance of an array of values (integer). </p>
+<p>The variance is a measure of how far a set of numbers is spread out V(X) = E[(X-E[X])^2] = E[X^2] - E[X]^2 where E[X] is the expected value of X This is implemented using floats to handle scaling of all variables </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">array</td><td>pointer to an array of integer </td></tr>
+    <tr><td class="paramname">n_elements</td><td>number of elements in the array </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>variance </dd></dl>
+
+<p>Definition at line <a class="el" href="pprz__stat_8c_source.html#l00060">60</a> of file <a class="el" href="pprz__stat_8c_source.html">pprz_stat.c</a>.</p>
+
+<p>References <a class="el" href="pprz__stat_8c_source.html#l00074">covariance_i()</a>.</p>
+
+<p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="pprz__stat_8h_a50abca98517a26ee5a4e1f3e6e9e0f56_cgraph.png" border="0" usemap="#pprz__stat_8h_a50abca98517a26ee5a4e1f3e6e9e0f56_cgraph" alt=""/></div>
+<map name="pprz__stat_8h_a50abca98517a26ee5a4e1f3e6e9e0f56_cgraph" id="pprz__stat_8h_a50abca98517a26ee5a4e1f3e6e9e0f56_cgraph">
+<area shape="rect" id="node2" href="pprz__stat_8c.html#a938b3854a384a0e327d27cf1c515b117" title="Compute the covariance of two arrays V(X) = E[(X&#45;E[X])(Y&#45;E[Y])] = E[XY] &#45; E[X]E[Y] where E[X] is the ..." alt="" coords="140,5,241,32"/></map>
+</div>
+</p>
 
 </div>
 </div>
@@ -241,7 +551,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_29343b6f5fcd4b75a5dfbb985ff56864.html">math</a></li><li class="navelem"><a class="el" href="pprz__stat_8h.html">pprz_stat.h</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:01:52 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:02:14 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

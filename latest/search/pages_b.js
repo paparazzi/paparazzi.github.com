@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['nav_5fbasic_5ffw_20module',['nav_basic_fw module',['../module__nav_basic_fw.html',1,'onboard_modules']]],
+  ['nav_5fbasic_5frotorcraft_20module',['nav_basic_rotorcraft module',['../module__nav_basic_rotorcraft.html',1,'onboard_modules']]],
   ['nav_5fbungee_5ftakeoff_20module',['nav_bungee_takeoff module',['../module__nav_bungee_takeoff.html',1,'onboard_modules']]],
   ['nav_5fcatapult_20module',['nav_catapult module',['../module__nav_catapult.html',1,'onboard_modules']]],
   ['nav_5fcube_20module',['nav_cube module',['../module__nav_cube.html',1,'onboard_modules']]],
@@ -21,5 +23,7 @@ var searchData=
   ['nav_5fsurvey_5fpolygon_20module',['nav_survey_polygon module',['../module__nav_survey_polygon.html',1,'onboard_modules']]],
   ['nav_5fsurvey_5frectangle_5frotorcraft_20module',['nav_survey_rectangle_rotorcraft module',['../module__nav_survey_rectangle_rotorcraft.html',1,'onboard_modules']]],
   ['nav_5fsurvey_5fzamboni_20module',['nav_survey_zamboni module',['../module__nav_survey_zamboni.html',1,'onboard_modules']]],
-  ['nav_5fvertical_5fraster_20module',['nav_vertical_raster module',['../module__nav_vertical_raster.html',1,'onboard_modules']]]
+  ['nav_5fvertical_5fraster_20module',['nav_vertical_raster module',['../module__nav_vertical_raster.html',1,'onboard_modules']]],
+  ['navigation_20module',['navigation module',['../module__navigation.html',1,'onboard_modules']]],
+  ['nps_20module',['nps module',['../module__nps.html',1,'onboard_modules']]]
 ];

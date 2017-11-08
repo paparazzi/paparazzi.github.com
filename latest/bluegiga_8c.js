@@ -10,7 +10,7 @@ var bluegiga_8c =
     [ "bluegiga_ch_available", "bluegiga_8c.html#a66315eb7fa09606080b4f65f0ab0149b", null ],
     [ "bluegiga_increment_buf", "bluegiga_8c.html#ad59d5db2be5ea429bc32bddfab4f39f3", null ],
     [ "bluegiga_init", "bluegiga_8c.html#ac8a60ccee96fbe718a27b6194f3f14e0", null ],
-    [ "bluegiga_load_tx", "bluegiga_8c.html#a916d36665c2e3144ac83612875e5af59", null ],
+    [ "bluegiga_load_tx", "bluegiga_8c.html#a95be3ef04141e5037bfd21e88d87d3ef", null ],
     [ "bluegiga_receive", "bluegiga_8c.html#a50a0f979fdb5e8cb70090c6de5f203ac", null ],
     [ "bluegiga_transmit", "bluegiga_8c.html#abe358f767725314dab7b28a59e51989c", null ],
     [ "dev_char_available", "bluegiga_8c.html#a9b6278c5129408fea7fcd6ef782bb566", null ],

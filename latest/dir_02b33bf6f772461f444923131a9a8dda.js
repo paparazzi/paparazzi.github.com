@@ -1,5 +1,7 @@
 var dir_02b33bf6f772461f444923131a9a8dda =
 [
+    [ "act_fast.c", "act__fast_8c.html", "act__fast_8c" ],
+    [ "act_fast.h", "act__fast_8h.html", "act__fast_8h" ],
     [ "bayer.h", "bayer_8h.html", "bayer_8h" ],
     [ "edge_flow.c", "edge__flow_8c.html", "edge__flow_8c" ],
     [ "edge_flow.h", "edge__flow_8h.html", "edge__flow_8h" ],

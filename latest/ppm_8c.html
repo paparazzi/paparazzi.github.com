@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -126,7 +126,7 @@ $(document).ready(function(){initNavTree('ppm_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ppm_8c__incl.png" border="0" usemap="#sw_2airborne_2subsystems_2radio__control_2ppm_8c" alt=""/></div>
 <map name="sw_2airborne_2subsystems_2radio__control_2ppm_8c" id="sw_2airborne_2subsystems_2radio__control_2ppm_8c">
-<area shape="rect" id="node2" href="radio__control_8h.html" title="subsystems/radio_control.h" alt="" coords="529,102,727,129"/><area shape="rect" id="node9" href="ppm_8h.html" title="subsystems/radio_control\l/ppm.h" alt="" coords="263,184,449,225"/><area shape="rect" id="node13" href="telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code). " alt="" coords="1295,95,1449,136"/><area shape="rect" id="node3" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API " alt="" coords="473,191,527,218"/><area shape="rect" id="node6" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="809,191,905,218"/><area shape="rect" id="node7" href="inttypes_8h.html" title="inttypes.h" alt="" coords="711,281,796,307"/><area shape="rect" id="node14" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="1409,281,1548,307"/><area shape="rect" id="node18" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="1001,184,1154,225"/><area shape="rect" id="node21" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="821,273,974,315"/></map>
+<area shape="rect" id="node2" href="radio__control_8h.html" title="subsystems/radio_control.h" alt="" coords="535,102,734,129"/><area shape="rect" id="node9" href="ppm_8h.html" title="subsystems/radio_control\l/ppm.h" alt="" coords="171,184,357,225"/><area shape="rect" id="node13" href="telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code). " alt="" coords="883,95,1037,136"/><area shape="rect" id="node3" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API " alt="" coords="640,191,693,218"/><area shape="rect" id="node6" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="717,191,813,218"/><area shape="rect" id="node7" href="inttypes_8h.html" title="inttypes.h" alt="" coords="853,281,939,307"/><area shape="rect" id="node14" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="1595,363,1733,389"/><area shape="rect" id="node18" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="1055,184,1209,225"/><area shape="rect" id="node21" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="1141,273,1294,315"/><area shape="rect" id="node23" href="pprz__dl_8h.html" title="Datalink using PPRZ protocol. " alt="" coords="1501,281,1694,307"/></map>
 </div>
 </div>
 <p><a href="ppm_8c_source.html">Go to the source code of this file.</a></p>
@@ -290,6 +290,8 @@ Variables</h2></td></tr>
 <p>PPM frames are normalized using the IIR filter. </p>
 
 <p>Definition at line <a class="el" href="ppm_8c_source.html#l00080">80</a> of file <a class="el" href="ppm_8c_source.html">ppm.c</a>.</p>
+
+<p>References <a class="el" href="radio__control_8h_source.html#l00057">RadioControl::frame_cpt</a>, <a class="el" href="ppm_8c_source.html#l00032">ppm_frame_available</a>, <a class="el" href="ppm_8c_source.html#l00031">ppm_pulses</a>, <a class="el" href="radio__control_8c_source.html#l00030">radio_control</a>, <a class="el" href="radio__control_8h_source.html#l00055">RadioControl::radio_ok_cpt</a>, <a class="el" href="radio__control_8h_source.html#l00048">RC_OK</a>, <a class="el" href="radio__control_8h_source.html#l00053">RadioControl::status</a>, and <a class="el" href="radio__control_8h_source.html#l00054">RadioControl::time_since_last_frame</a>.</p>
 
 </div>
 </div>
@@ -486,7 +488,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_a146ed466020daad33793c9994e8ab3e.html">radio_control</a></li><li class="navelem"><a class="el" href="ppm_8c.html">ppm.c</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:02:15 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:02:43 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

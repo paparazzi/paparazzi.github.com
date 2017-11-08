@@ -1,7 +1,7 @@
 var itg3200_8h_structItg3200 =
 [
     [ "config", "itg3200_8h.html#afa4cc1e1d75f91db123a836b1cd86534", null ],
-    [ "data", "itg3200_8h.html#a3aa5ce1954753836ef8d0746c3082bef", null ],
+    [ "data", "itg3200_8h.html#af66c721088e7a8d0d865ce6e96bd6c15", null ],
     [ "data_available", "itg3200_8h.html#afa9a5fae8d7275bf0e32953270721f89", null ],
     [ "i2c_p", "itg3200_8h.html#af77c755f3f0273ae4eb4ea0e52944e9b", null ],
     [ "i2c_trans", "itg3200_8h.html#a23f84eb807f7665897fd37afa39276a2", null ],

@@ -10,7 +10,7 @@ var nps__autopilot_8h =
     [ "nps_autopilot_run_systime_step", "nps__autopilot_8h.html#a7ac376c868e8cec83ef082ac3beb9487", null ],
     [ "sim_overwrite_ahrs", "nps__autopilot_8h.html#abf3277c5d8e757db78d1d7d84cac144f", null ],
     [ "sim_overwrite_ins", "nps__autopilot_8h.html#a636593c9bb6482b2a36d64bef4975310", null ],
-    [ "autopilot", "nps__autopilot_8h.html#a79d878aebe7520564fafc3ee8699ad59", null ],
+    [ "nps_autopilot", "nps__autopilot_8h.html#a039b5dba7bbcbe943b5cb40ff681651e", null ],
     [ "nps_bypass_ahrs", "nps__autopilot_8h.html#a40f1af5c10f2fba9ce6e966c915ef449", null ],
     [ "nps_bypass_ins", "nps__autopilot_8h.html#a4869125aa1851fb944d57893f0674c20", null ]
 ];

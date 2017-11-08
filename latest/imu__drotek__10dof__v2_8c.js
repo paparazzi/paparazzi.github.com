@@ -1,7 +1,5 @@
 var imu__drotek__10dof__v2_8c =
 [
-    [ "DROTEK_2_ACCEL_RANGE", "imu__drotek__10dof__v2_8c.html#a1c3ca37cded23ef693d12ba3d75bae82", null ],
-    [ "DROTEK_2_GYRO_RANGE", "imu__drotek__10dof__v2_8c.html#a1de887123c1fabb4c456d20ed1ce4261", null ],
     [ "DROTEK_2_HMC_I2C_ADDR", "imu__drotek__10dof__v2_8c.html#aa1c88a63b8fbb21edecbbbd84175cc08", null ],
     [ "DROTEK_2_MPU_I2C_ADDR", "imu__drotek__10dof__v2_8c.html#af4de7dfb9e19658eba16105df8df7617", null ],
     [ "imu_drotek2_configure_mag_slave", "imu__drotek__10dof__v2_8c.html#aa6fe8a1d331fefd7ce125c55154d14c5", null ],

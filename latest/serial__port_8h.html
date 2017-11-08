@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.11_devel-11-g4d405cd-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -155,6 +155,10 @@ Functions</h2></td></tr>
 <tr class="separator:ad0860772c1bd006fb61f934b8a9c8e3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a436c287d25989f374ec728048a371b93"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="serial__port_8h.html#a436c287d25989f374ec728048a371b93">serial_port_close</a> (struct <a class="el" href="serial__port_8h.html#structSerialPort">SerialPort</a> *me)</td></tr>
 <tr class="separator:a436c287d25989f374ec728048a371b93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af25145952d87a0f805da05e7ceb3e5a8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="serial__port_8h.html#af25145952d87a0f805da05e7ceb3e5a8">serial_port_set_baudrate</a> (struct <a class="el" href="serial__port_8h.html#structSerialPort">SerialPort</a> *me, speed_t speed)</td></tr>
+<tr class="separator:af25145952d87a0f805da05e7ceb3e5a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf391c48a39bcc64fabe03f73f246655"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="serial__port_8h.html#acf391c48a39bcc64fabe03f73f246655">serial_port_set_bits_stop_parity</a> (struct <a class="el" href="serial__port_8h.html#structSerialPort">SerialPort</a> *me, const int bits, const int stop, const int parity)</td></tr>
+<tr class="separator:acf391c48a39bcc64fabe03f73f246655"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/><h2 class="groupheader">Data Structure Documentation</h2>
 <a name="structSerialPort" id="structSerialPort"></a>
@@ -167,7 +171,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p>Definition at line <a class="el" href="serial__port_8h_source.html#l00028">28</a> of file <a class="el" href="serial__port_8h_source.html">serial_port.h</a>.</p>
+<p>Definition at line <a class="el" href="serial__port_8h_source.html#l00029">29</a> of file <a class="el" href="serial__port_8h_source.html">serial_port.h</a>.</p>
 </div><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Collaboration diagram for SerialPort:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -216,11 +220,11 @@ orig_termios</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="serial__port_8c_source.html#l00126">126</a> of file <a class="el" href="serial__port_8c_source.html">serial_port.c</a>.</p>
+<p>Definition at line <a class="el" href="serial__port_8c_source.html#l00181">181</a> of file <a class="el" href="serial__port_8c_source.html">serial_port.c</a>.</p>
 
-<p>References <a class="el" href="serial__port_8h_source.html#l00029">SerialPort::fd</a>, <a class="el" href="serial__port_8h_source.html#l00030">SerialPort::orig_termios</a>, <a class="el" href="serial__port_8c_source.html#l00019">TRACE</a>, and <a class="el" href="serial__port_8c_source.html#l00020">TRACE_ERROR</a>.</p>
+<p>References <a class="el" href="serial__port_8h_source.html#l00030">SerialPort::fd</a>, <a class="el" href="serial__port_8h_source.html#l00031">SerialPort::orig_termios</a>, <a class="el" href="serial__port_8c_source.html#l00071">TRACE</a>, and <a class="el" href="serial__port_8c_source.html#l00072">TRACE_ERROR</a>.</p>
 
-<p>Referenced by <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00216">uart_periph_set_baudrate()</a>.</p>
+<p>Referenced by <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00217">uart_periph_open()</a>.</p>
 
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -229,7 +233,7 @@ orig_termios</td>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="serial__port_8h_a436c287d25989f374ec728048a371b93_icgraph.png" border="0" usemap="#serial__port_8h_a436c287d25989f374ec728048a371b93_icgraph" alt=""/></div>
 <map name="serial__port_8h_a436c287d25989f374ec728048a371b93_icgraph" id="serial__port_8h_a436c287d25989f374ec728048a371b93_icgraph">
-<area shape="rect" id="node2" href="linux_2mcu__periph_2uart__arch_8c.html#af1a8e69ac854e1358f0df7e6d8724512" title="Set baudrate. " alt="" coords="183,5,369,32"/></map>
+<area shape="rect" id="node2" href="linux_2mcu__periph_2uart__arch_8c.html#ac751a8cc23d0edf0d436ad40d0a3b50e" title="uart_periph_open" alt="" coords="183,5,317,32"/><area shape="rect" id="node3" href="linux_2mcu__periph_2uart__arch_8c.html#af1a8e69ac854e1358f0df7e6d8724512" title="Set baudrate. " alt="" coords="365,5,552,32"/></map>
 </div>
 </p>
 
@@ -249,11 +253,11 @@ orig_termios</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="serial__port_8c_source.html#l00034">34</a> of file <a class="el" href="serial__port_8c_source.html">serial_port.c</a>.</p>
+<p>Definition at line <a class="el" href="serial__port_8c_source.html#l00089">89</a> of file <a class="el" href="serial__port_8c_source.html">serial_port.c</a>.</p>
 
-<p>References <a class="el" href="serial__port_8h_source.html#l00029">SerialPort::fd</a>, <a class="el" href="serial__port_8c_source.html#l00019">TRACE</a>, and <a class="el" href="serial__port_8c_source.html#l00020">TRACE_ERROR</a>.</p>
+<p>References <a class="el" href="serial__port_8h_source.html#l00030">SerialPort::fd</a>, <a class="el" href="serial__port_8c_source.html#l00071">TRACE</a>, and <a class="el" href="serial__port_8c_source.html#l00072">TRACE_ERROR</a>.</p>
 
-<p>Referenced by <a class="el" href="serial__port_8c_source.html#l00095">serial_port_open()</a>, and <a class="el" href="serial__port_8c_source.html#l00056">serial_port_open_raw()</a>.</p>
+<p>Referenced by <a class="el" href="serial__port_8c_source.html#l00150">serial_port_open()</a>, and <a class="el" href="serial__port_8c_source.html#l00111">serial_port_open_raw()</a>.</p>
 
 <p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -262,7 +266,7 @@ orig_termios</td>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="serial__port_8h_afafe7988057b4462cafea02de41b6488_icgraph.png" border="0" usemap="#serial__port_8h_afafe7988057b4462cafea02de41b6488_icgraph" alt=""/></div>
 <map name="serial__port_8h_afafe7988057b4462cafea02de41b6488_icgraph" id="serial__port_8h_afafe7988057b4462cafea02de41b6488_icgraph">
-<area shape="rect" id="node2" href="serial__port_8h.html#ad0860772c1bd006fb61f934b8a9c8e3e" title="serial_port_open" alt="" coords="195,5,323,32"/><area shape="rect" id="node3" href="serial__port_8h.html#a69092c80559cd279bfd046d53b25fefd" title="serial_port_open_raw" alt="" coords="180,56,337,83"/><area shape="rect" id="node4" href="linux_2mcu__periph_2uart__arch_8c.html#af1a8e69ac854e1358f0df7e6d8724512" title="Set baudrate. " alt="" coords="385,56,572,83"/></map>
+<area shape="rect" id="node2" href="serial__port_8h.html#ad0860772c1bd006fb61f934b8a9c8e3e" title="serial_port_open" alt="" coords="195,5,323,32"/><area shape="rect" id="node3" href="serial__port_8h.html#a69092c80559cd279bfd046d53b25fefd" title="serial_port_open_raw" alt="" coords="180,56,337,83"/><area shape="rect" id="node4" href="linux_2mcu__periph_2uart__arch_8c.html#ac751a8cc23d0edf0d436ad40d0a3b50e" title="uart_periph_open" alt="" coords="385,56,520,83"/><area shape="rect" id="node5" href="linux_2mcu__periph_2uart__arch_8c.html#af1a8e69ac854e1358f0df7e6d8724512" title="Set baudrate. " alt="" coords="568,56,755,83"/></map>
 </div>
 </p>
 
@@ -282,9 +286,9 @@ orig_termios</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="serial__port_8c_source.html#l00045">45</a> of file <a class="el" href="serial__port_8c_source.html">serial_port.c</a>.</p>
+<p>Definition at line <a class="el" href="serial__port_8c_source.html#l00100">100</a> of file <a class="el" href="serial__port_8c_source.html">serial_port.c</a>.</p>
 
-<p>References <a class="el" href="serial__port_8h_source.html#l00029">SerialPort::fd</a>, <a class="el" href="serial__port_8c_source.html#l00019">TRACE</a>, and <a class="el" href="serial__port_8c_source.html#l00020">TRACE_ERROR</a>.</p>
+<p>References <a class="el" href="serial__port_8h_source.html#l00030">SerialPort::fd</a>, <a class="el" href="serial__port_8c_source.html#l00071">TRACE</a>, and <a class="el" href="serial__port_8c_source.html#l00072">TRACE_ERROR</a>.</p>
 
 </div>
 </div>
@@ -302,9 +306,9 @@ orig_termios</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="serial__port_8c_source.html#l00028">28</a> of file <a class="el" href="serial__port_8c_source.html">serial_port.c</a>.</p>
+<p>Definition at line <a class="el" href="serial__port_8c_source.html#l00080">80</a> of file <a class="el" href="serial__port_8c_source.html">serial_port.c</a>.</p>
 
-<p>Referenced by <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00216">uart_periph_set_baudrate()</a>.</p>
+<p>Referenced by <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00217">uart_periph_open()</a>.</p>
 
 <p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -313,7 +317,7 @@ orig_termios</td>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="serial__port_8h_a2c010011ea7396568f40b0137dcbf646_icgraph.png" border="0" usemap="#serial__port_8h_a2c010011ea7396568f40b0137dcbf646_icgraph" alt=""/></div>
 <map name="serial__port_8h_a2c010011ea7396568f40b0137dcbf646_icgraph" id="serial__port_8h_a2c010011ea7396568f40b0137dcbf646_icgraph">
-<area shape="rect" id="node2" href="linux_2mcu__periph_2uart__arch_8c.html#af1a8e69ac854e1358f0df7e6d8724512" title="Set baudrate. " alt="" coords="175,5,361,32"/></map>
+<area shape="rect" id="node2" href="linux_2mcu__periph_2uart__arch_8c.html#ac751a8cc23d0edf0d436ad40d0a3b50e" title="uart_periph_open" alt="" coords="175,5,309,32"/><area shape="rect" id="node3" href="linux_2mcu__periph_2uart__arch_8c.html#af1a8e69ac854e1358f0df7e6d8724512" title="Set baudrate. " alt="" coords="357,5,544,32"/></map>
 </div>
 </p>
 
@@ -333,9 +337,9 @@ orig_termios</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="serial__port_8c_source.html#l00022">22</a> of file <a class="el" href="serial__port_8c_source.html">serial_port.c</a>.</p>
+<p>Definition at line <a class="el" href="serial__port_8c_source.html#l00074">74</a> of file <a class="el" href="serial__port_8c_source.html">serial_port.c</a>.</p>
 
-<p>Referenced by <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00216">uart_periph_set_baudrate()</a>.</p>
+<p>Referenced by <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00217">uart_periph_open()</a>.</p>
 
 <p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -344,7 +348,7 @@ orig_termios</td>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="serial__port_8h_aee75c3cee5e5beaef3f9b1a692d3633c_icgraph.png" border="0" usemap="#serial__port_8h_aee75c3cee5e5beaef3f9b1a692d3633c_icgraph" alt=""/></div>
 <map name="serial__port_8h_aee75c3cee5e5beaef3f9b1a692d3633c_icgraph" id="serial__port_8h_aee75c3cee5e5beaef3f9b1a692d3633c_icgraph">
-<area shape="rect" id="node2" href="linux_2mcu__periph_2uart__arch_8c.html#af1a8e69ac854e1358f0df7e6d8724512" title="Set baudrate. " alt="" coords="175,5,361,32"/></map>
+<area shape="rect" id="node2" href="linux_2mcu__periph_2uart__arch_8c.html#ac751a8cc23d0edf0d436ad40d0a3b50e" title="uart_periph_open" alt="" coords="175,5,309,32"/><area shape="rect" id="node3" href="linux_2mcu__periph_2uart__arch_8c.html#af1a8e69ac854e1358f0df7e6d8724512" title="Set baudrate. " alt="" coords="357,5,544,32"/></map>
 </div>
 </p>
 
@@ -380,9 +384,9 @@ orig_termios</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="serial__port_8c_source.html#l00095">95</a> of file <a class="el" href="serial__port_8c_source.html">serial_port.c</a>.</p>
+<p>Definition at line <a class="el" href="serial__port_8c_source.html#l00150">150</a> of file <a class="el" href="serial__port_8c_source.html">serial_port.c</a>.</p>
 
-<p>References <a class="el" href="serial__port_8h_source.html#l00031">SerialPort::cur_termios</a>, <a class="el" href="serial__port_8h_source.html#l00029">SerialPort::fd</a>, <a class="el" href="serial__port_8h_source.html#l00030">SerialPort::orig_termios</a>, <a class="el" href="serial__port_8c_source.html#l00034">serial_port_flush()</a>, <a class="el" href="serial__port_8c_source.html#l00019">TRACE</a>, and <a class="el" href="serial__port_8c_source.html#l00020">TRACE_ERROR</a>.</p>
+<p>References <a class="el" href="serial__port_8h_source.html#l00032">SerialPort::cur_termios</a>, <a class="el" href="serial__port_8h_source.html#l00030">SerialPort::fd</a>, <a class="el" href="serial__port_8h_source.html#l00031">SerialPort::orig_termios</a>, <a class="el" href="serial__port_8c_source.html#l00089">serial_port_flush()</a>, <a class="el" href="serial__port_8c_source.html#l00071">TRACE</a>, and <a class="el" href="serial__port_8c_source.html#l00072">TRACE_ERROR</a>.</p>
 
 <p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -427,11 +431,11 @@ orig_termios</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="serial__port_8c_source.html#l00056">56</a> of file <a class="el" href="serial__port_8c_source.html">serial_port.c</a>.</p>
+<p>Definition at line <a class="el" href="serial__port_8c_source.html#l00111">111</a> of file <a class="el" href="serial__port_8c_source.html">serial_port.c</a>.</p>
 
-<p>References <a class="el" href="serial__port_8h_source.html#l00031">SerialPort::cur_termios</a>, <a class="el" href="serial__port_8h_source.html#l00029">SerialPort::fd</a>, <a class="el" href="serial__port_8c_source.html#l00015">IUCLC</a>, <a class="el" href="serial__port_8h_source.html#l00030">SerialPort::orig_termios</a>, <a class="el" href="serial__port_8c_source.html#l00034">serial_port_flush()</a>, <a class="el" href="serial__port_8c_source.html#l00019">TRACE</a>, and <a class="el" href="serial__port_8c_source.html#l00020">TRACE_ERROR</a>.</p>
+<p>References <a class="el" href="serial__port_8h_source.html#l00032">SerialPort::cur_termios</a>, <a class="el" href="serial__port_8h_source.html#l00030">SerialPort::fd</a>, <a class="el" href="serial__port_8c_source.html#l00067">IUCLC</a>, <a class="el" href="serial__port_8h_source.html#l00031">SerialPort::orig_termios</a>, <a class="el" href="serial__port_8c_source.html#l00089">serial_port_flush()</a>, <a class="el" href="serial__port_8c_source.html#l00071">TRACE</a>, and <a class="el" href="serial__port_8c_source.html#l00072">TRACE_ERROR</a>.</p>
 
-<p>Referenced by <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00216">uart_periph_set_baudrate()</a>.</p>
+<p>Referenced by <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00217">uart_periph_open()</a>.</p>
 
 <p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -451,7 +455,105 @@ orig_termios</td>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="serial__port_8h_a69092c80559cd279bfd046d53b25fefd_icgraph.png" border="0" usemap="#serial__port_8h_a69092c80559cd279bfd046d53b25fefd_icgraph" alt=""/></div>
 <map name="serial__port_8h_a69092c80559cd279bfd046d53b25fefd_icgraph" id="serial__port_8h_a69092c80559cd279bfd046d53b25fefd_icgraph">
-<area shape="rect" id="node2" href="linux_2mcu__periph_2uart__arch_8c.html#af1a8e69ac854e1358f0df7e6d8724512" title="Set baudrate. " alt="" coords="211,5,397,32"/></map>
+<area shape="rect" id="node2" href="linux_2mcu__periph_2uart__arch_8c.html#ac751a8cc23d0edf0d436ad40d0a3b50e" title="uart_periph_open" alt="" coords="211,5,345,32"/><area shape="rect" id="node3" href="linux_2mcu__periph_2uart__arch_8c.html#af1a8e69ac854e1358f0df7e6d8724512" title="Set baudrate. " alt="" coords="393,5,580,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="af25145952d87a0f805da05e7ceb3e5a8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int serial_port_set_baudrate </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="serial__port_8h.html#structSerialPort">SerialPort</a> *&#160;</td>
+          <td class="paramname"><em>me</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">speed_t&#160;</td>
+          <td class="paramname"><em>speed</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="serial__port_8c_source.html#l00207">207</a> of file <a class="el" href="serial__port_8c_source.html">serial_port.c</a>.</p>
+
+<p>References <a class="el" href="serial__port_8h_source.html#l00032">SerialPort::cur_termios</a>, <a class="el" href="serial__port_8h_source.html#l00030">SerialPort::fd</a>, <a class="el" href="serial__port_8c_source.html#l00071">TRACE</a>, and <a class="el" href="serial__port_8c_source.html#l00072">TRACE_ERROR</a>.</p>
+
+<p>Referenced by <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00244">uart_periph_set_baudrate()</a>.</p>
+
+<p><div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="serial__port_8h_af25145952d87a0f805da05e7ceb3e5a8_icgraph.png" border="0" usemap="#serial__port_8h_af25145952d87a0f805da05e7ceb3e5a8_icgraph" alt=""/></div>
+<map name="serial__port_8h_af25145952d87a0f805da05e7ceb3e5a8_icgraph" id="serial__port_8h_af25145952d87a0f805da05e7ceb3e5a8_icgraph">
+<area shape="rect" id="node2" href="linux_2mcu__periph_2uart__arch_8c.html#af1a8e69ac854e1358f0df7e6d8724512" title="Set baudrate. " alt="" coords="235,5,421,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="acf391c48a39bcc64fabe03f73f246655"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int serial_port_set_bits_stop_parity </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="serial__port_8h.html#structSerialPort">SerialPort</a> *&#160;</td>
+          <td class="paramname"><em>me</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>bits</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>stop</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>parity</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="serial__port_8c_source.html#l00221">221</a> of file <a class="el" href="serial__port_8c_source.html">serial_port.c</a>.</p>
+
+<p>References <a class="el" href="serial__port_8h_source.html#l00032">SerialPort::cur_termios</a>, <a class="el" href="serial__port_8h_source.html#l00030">SerialPort::fd</a>, <a class="el" href="serial__port_8c_source.html#l00071">TRACE</a>, <a class="el" href="serial__port_8c_source.html#l00072">TRACE_ERROR</a>, <a class="el" href="serial__port_8c_source.html#l00049">UBITS_7</a>, <a class="el" href="serial__port_8c_source.html#l00057">UPARITY_EVEN</a>, <a class="el" href="serial__port_8c_source.html#l00056">UPARITY_ODD</a>, and <a class="el" href="serial__port_8c_source.html#l00052">USTOP_1</a>.</p>
+
+<p>Referenced by <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00260">uart_periph_set_bits_stop_parity()</a>.</p>
+
+<p><div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="serial__port_8h_acf391c48a39bcc64fabe03f73f246655_icgraph.png" border="0" usemap="#serial__port_8h_acf391c48a39bcc64fabe03f73f246655_icgraph" alt=""/></div>
+<map name="serial__port_8h_acf391c48a39bcc64fabe03f73f246655_icgraph" id="serial__port_8h_acf391c48a39bcc64fabe03f73f246655_icgraph">
+<area shape="rect" id="node2" href="linux_2mcu__periph_2uart__arch_8c.html#a8d3d1662ef64e539d843aa5060cffbfd" title="Set parity and stop bits. " alt="" coords="200,5,352,47"/></map>
 </div>
 </p>
 
@@ -463,7 +565,7 @@ orig_termios</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_92fbf38b8c893a0928a3445a75d0ac01.html">linux</a></li><li class="navelem"><a class="el" href="serial__port_8h.html">serial_port.h</a></li>
-    <li class="footer">Generated on Sat Oct 1 2016 14:01:38 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Nov 8 2017 10:01:56 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>
