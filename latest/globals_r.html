@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -210,9 +210,6 @@ $(document).ready(function(){initNavTree('globals_r.html','');});
 <li>R_ALT
 : <a class="el" href="vf__extended__float_8c.html#a42afc75d03c75255f5d5b8d5f7bdcec9">vf_extended_float.c</a>
 </li>
-<li>R_BARO
-: <a class="el" href="vf__extended__float_8c.html#a662a7e9b1ca3cb69b0bc04067a9779d6">vf_extended_float.c</a>
-</li>
 <li>r_dot_new
 : <a class="el" href="guidance__OA_8c.html#a264f6ffe326bde98f4a7ae552179f758">guidance_OA.c</a>
 , <a class="el" href="guidance__OA_8h.html#a264f6ffe326bde98f4a7ae552179f758">guidance_OA.h</a>
@@ -223,8 +220,8 @@ $(document).ready(function(){initNavTree('globals_r.html','');});
 <li>R_kal
 : <a class="el" href="obstacle__avoidance_8c.html#afe030233882d14003e15fba4b0d13719">obstacle_avoidance.c</a>
 </li>
-<li>R_OFFSET
-: <a class="el" href="vf__extended__float_8c.html#a3960e784c7c8e6c83ba671b3702fb67f">vf_extended_float.c</a>
+<li>R_OBS_HEIGHT
+: <a class="el" href="vf__extended__float_8c.html#a93587d10fd1c7e77fe9f9a6c59472177">vf_extended_float.c</a>
 </li>
 <li>RA_CLIMB
 : <a class="el" href="tcas_8h.html#a07deba9c3568731e07896ae2612e46a1af9aa818f0dad99575cc23dcd06c78dde">tcas.h</a>
@@ -245,45 +242,43 @@ $(document).ready(function(){initNavTree('globals_r.html','');});
 : <a class="el" href="group__math__geodetic__int.html#gaa3e70fd5135f905380bab76644ce6a28">pprz_geodetic_int.h</a>
 </li>
 <li>RADIO_AUX1
-: <a class="el" href="sim_2subsystems_2radio__control_2spektrum__arch_8h.html#a724c6e3a0c2aae44ec9b47b6062d1d18">spektrum_arch.h</a>
-, <a class="el" href="intermcu__ap_8h.html#a724c6e3a0c2aae44ec9b47b6062d1d18">intermcu_ap.h</a>
+: <a class="el" href="intermcu__ap_8h.html#a724c6e3a0c2aae44ec9b47b6062d1d18">intermcu_ap.h</a>
+, <a class="el" href="spektrum__radio_8h.html#a724c6e3a0c2aae44ec9b47b6062d1d18">spektrum_radio.h</a>
 , <a class="el" href="superbitrf__rc_8h.html#a724c6e3a0c2aae44ec9b47b6062d1d18">superbitrf_rc.h</a>
 </li>
 <li>RADIO_AUX2
-: <a class="el" href="sim_2subsystems_2radio__control_2spektrum__arch_8h.html#a9fd86154b023cbc8a9981059db36497b">spektrum_arch.h</a>
-, <a class="el" href="intermcu__ap_8h.html#a9fd86154b023cbc8a9981059db36497b">intermcu_ap.h</a>
-, <a class="el" href="joby__9ch_8h.html#a9fd86154b023cbc8a9981059db36497b">joby_9ch.h</a>
+: <a class="el" href="intermcu__ap_8h.html#a9fd86154b023cbc8a9981059db36497b">intermcu_ap.h</a>
+, <a class="el" href="spektrum__radio_8h.html#a9fd86154b023cbc8a9981059db36497b">spektrum_radio.h</a>
 , <a class="el" href="superbitrf__rc_8h.html#a9fd86154b023cbc8a9981059db36497b">superbitrf_rc.h</a>
 </li>
 <li>RADIO_AUX3
-: <a class="el" href="sim_2subsystems_2radio__control_2spektrum__arch_8h.html#a8b08ebd84535982413ca015939d18053">spektrum_arch.h</a>
-, <a class="el" href="intermcu__ap_8h.html#a8b08ebd84535982413ca015939d18053">intermcu_ap.h</a>
-, <a class="el" href="joby__9ch_8h.html#a8b08ebd84535982413ca015939d18053">joby_9ch.h</a>
-, <a class="el" href="spektrum__dx7se_8h.html#a8b08ebd84535982413ca015939d18053">spektrum_dx7se.h</a>
+: <a class="el" href="intermcu__ap_8h.html#a8b08ebd84535982413ca015939d18053">intermcu_ap.h</a>
+, <a class="el" href="spektrum__radio_8h.html#a8b08ebd84535982413ca015939d18053">spektrum_radio.h</a>
 , <a class="el" href="superbitrf__rc_8h.html#a8b08ebd84535982413ca015939d18053">superbitrf_rc.h</a>
 </li>
 <li>RADIO_AUX4
-: <a class="el" href="sim_2subsystems_2radio__control_2spektrum__arch_8h.html#aa10aa2cd49cc22bc20bb0e472e23c98c">spektrum_arch.h</a>
-, <a class="el" href="spektrum__dx7se_8h.html#aa10aa2cd49cc22bc20bb0e472e23c98c">spektrum_dx7se.h</a>
+: <a class="el" href="spektrum__radio_8h.html#aa10aa2cd49cc22bc20bb0e472e23c98c">spektrum_radio.h</a>
 , <a class="el" href="superbitrf__rc_8h.html#aa10aa2cd49cc22bc20bb0e472e23c98c">superbitrf_rc.h</a>
 </li>
 <li>RADIO_AUX5
-: <a class="el" href="sim_2subsystems_2radio__control_2spektrum__arch_8h.html#acfa6e3e837871f50e50a4c70b2c7edd8">spektrum_arch.h</a>
+: <a class="el" href="spektrum__radio_8h.html#acfa6e3e837871f50e50a4c70b2c7edd8">spektrum_radio.h</a>
 , <a class="el" href="superbitrf__rc_8h.html#acfa6e3e837871f50e50a4c70b2c7edd8">superbitrf_rc.h</a>
 </li>
 <li>RADIO_AUX6
-: <a class="el" href="sim_2subsystems_2radio__control_2spektrum__arch_8h.html#a94dbfbf0ae6ea4229c639ee4a7555465">spektrum_arch.h</a>
+: <a class="el" href="spektrum__radio_8h.html#a94dbfbf0ae6ea4229c639ee4a7555465">spektrum_radio.h</a>
 , <a class="el" href="superbitrf__rc_8h.html#a94dbfbf0ae6ea4229c639ee4a7555465">superbitrf_rc.h</a>
 </li>
 <li>RADIO_AUX7
-: <a class="el" href="sim_2subsystems_2radio__control_2spektrum__arch_8h.html#a9c35e47a5484f5e81d96ccb10ece2211">spektrum_arch.h</a>
+: <a class="el" href="spektrum__radio_8h.html#a9c35e47a5484f5e81d96ccb10ece2211">spektrum_radio.h</a>
 , <a class="el" href="superbitrf__rc_8h.html#a9c35e47a5484f5e81d96ccb10ece2211">superbitrf_rc.h</a>
 </li>
 <li>RADIO_AUX8
-: <a class="el" href="superbitrf__rc_8h.html#a5fdc4625435a1756d996da7867bddc18">superbitrf_rc.h</a>
+: <a class="el" href="spektrum__radio_8h.html#a5fdc4625435a1756d996da7867bddc18">spektrum_radio.h</a>
+, <a class="el" href="superbitrf__rc_8h.html#a5fdc4625435a1756d996da7867bddc18">superbitrf_rc.h</a>
 </li>
 <li>RADIO_AUX9
-: <a class="el" href="superbitrf__rc_8h.html#ac5d768a757f013a44c96ecf92287888e">superbitrf_rc.h</a>
+: <a class="el" href="spektrum__radio_8h.html#ac5d768a757f013a44c96ecf92287888e">spektrum_radio.h</a>
+, <a class="el" href="superbitrf__rc_8h.html#ac5d768a757f013a44c96ecf92287888e">superbitrf_rc.h</a>
 </li>
 <li>radio_control
 : <a class="el" href="radio__control_8c.html#a8fe61a8aa3f1859efec4bb06bc1134dc">radio_control.c</a>
@@ -310,13 +305,14 @@ $(document).ready(function(){initNavTree('globals_r.html','');});
 , <a class="el" href="superbitrf__rc_8h.html#a760dbd4fa3f62cc43524fc420c2a9e5f">superbitrf_rc.h</a>
 </li>
 <li>radio_control_impl_init()
-: <a class="el" href="lpc21_2subsystems_2radio__control_2spektrum__arch_8c.html#a6ba4bebf68f7ff39f4569dfe3b1f2832">spektrum_arch.c</a>
+: <a class="el" href="spektrum__arch_8c.html#a6ba4bebf68f7ff39f4569dfe3b1f2832">spektrum_arch.c</a>
 , <a class="el" href="dummy_8c.html#a6ba4bebf68f7ff39f4569dfe3b1f2832">dummy.c</a>
 , <a class="el" href="subsystems_2radio__control_2hott_8c.html#a6ba4bebf68f7ff39f4569dfe3b1f2832">hott.c</a>
 , <a class="el" href="ppm_8c.html#a6ba4bebf68f7ff39f4569dfe3b1f2832">ppm.c</a>
 , <a class="el" href="subsystems_2radio__control_2rc__datalink_8c.html#a6ba4bebf68f7ff39f4569dfe3b1f2832">rc_datalink.c</a>
 , <a class="el" href="sbus_8c.html#a6ba4bebf68f7ff39f4569dfe3b1f2832">sbus.c</a>
 , <a class="el" href="sbus__dual_8c.html#a6ba4bebf68f7ff39f4569dfe3b1f2832">sbus_dual.c</a>
+, <a class="el" href="spektrum_8c.html#a6ba4bebf68f7ff39f4569dfe3b1f2832">spektrum.c</a>
 , <a class="el" href="superbitrf__rc_8c.html#a6ba4bebf68f7ff39f4569dfe3b1f2832">superbitrf_rc.c</a>
 , <a class="el" href="radio__control_8h.html#a6ba4bebf68f7ff39f4569dfe3b1f2832">radio_control.h</a>
 </li>
@@ -325,15 +321,12 @@ $(document).ready(function(){initNavTree('globals_r.html','');});
 , <a class="el" href="radio__control_8h.html#afb55b39c9ce65c9074c0472838fe551d">radio_control.h</a>
 </li>
 <li>RADIO_CONTROL_NB_CHANNEL
-: <a class="el" href="sim_2subsystems_2radio__control_2spektrum__arch_8h.html#a1beed9c63b07301d72b3516543545652">spektrum_arch.h</a>
-, <a class="el" href="intermcu__ap_8h.html#a1beed9c63b07301d72b3516543545652">intermcu_ap.h</a>
+: <a class="el" href="intermcu__ap_8h.html#a1beed9c63b07301d72b3516543545652">intermcu_ap.h</a>
 , <a class="el" href="hott__common_8h.html#a1beed9c63b07301d72b3516543545652">hott_common.h</a>
-, <a class="el" href="joby__9ch_8h.html#a1beed9c63b07301d72b3516543545652">joby_9ch.h</a>
 , <a class="el" href="ppm_8h.html#a1beed9c63b07301d72b3516543545652">ppm.h</a>
 , <a class="el" href="rc__datalink_8h.html#a1beed9c63b07301d72b3516543545652">rc_datalink.h</a>
 , <a class="el" href="sbus__common_8h.html#a1beed9c63b07301d72b3516543545652">sbus_common.h</a>
-, <a class="el" href="spektrum__dx7se_8h.html#a1beed9c63b07301d72b3516543545652">spektrum_dx7se.h</a>
-, <a class="el" href="spektrum__dx7se__joby_8h.html#a1beed9c63b07301d72b3516543545652">spektrum_dx7se_joby.h</a>
+, <a class="el" href="spektrum__radio_8h.html#a1beed9c63b07301d72b3516543545652">spektrum_radio.h</a>
 , <a class="el" href="superbitrf__rc_8h.html#a1beed9c63b07301d72b3516543545652">superbitrf_rc.h</a>
 </li>
 <li>radio_control_periodic_handle()
@@ -383,11 +376,7 @@ $(document).ready(function(){initNavTree('globals_r.html','');});
 : <a class="el" href="nps__radio__control_8c.html#a1b6bc90ce0d1ff8669c28b91b989df5d">nps_radio_control.c</a>
 </li>
 <li>RADIO_CONTROL_SPEKTRUM_SIGNS
-: <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8h.html#a61744d020c5c398d66a619dc22b1900c">spektrum_arch.h</a>
-</li>
-<li>radio_control_spektrum_try_bind()
-: <a class="el" href="sim_2subsystems_2radio__control_2spektrum__arch_8c.html#ac3242f23ea541664f6fbc29edecbf199">spektrum_arch.c</a>
-, <a class="el" href="spektrum_8h.html#ac3242f23ea541664f6fbc29edecbf199">spektrum.h</a>
+: <a class="el" href="spektrum__radio_8h.html#a61744d020c5c398d66a619dc22b1900c">spektrum_radio.h</a>
 </li>
 <li>RADIO_CONTROL_TAKEOFF_TIME
 : <a class="el" href="nps__radio__control_8c.html#a5b8cf34ea05390d014c9879317df1fd9">nps_radio_control.c</a>
@@ -395,72 +384,53 @@ $(document).ready(function(){initNavTree('globals_r.html','');});
 <li>radio_control_tid
 : <a class="el" href="rotorcraft_2main__ap_8c.html#a642adb8e14e348b49a460cadebe6608b">main_ap.c</a>
 , <a class="el" href="rotorcraft_2main__fbw_8c.html#a642adb8e14e348b49a460cadebe6608b">main_fbw.c</a>
+, <a class="el" href="rover_2main__ap_8c.html#a642adb8e14e348b49a460cadebe6608b">main_ap.c</a>
 </li>
 <li>RADIO_FBW_MODE
 : <a class="el" href="rotorcraft_2main__fbw_8h.html#af9f3b5db2d73fb91df097b6a9285432d">main_fbw.h</a>
 </li>
 <li>RADIO_FLAP
-: <a class="el" href="sim_2subsystems_2radio__control_2spektrum__arch_8h.html#a7cc3813c8b10a6392586d6de2212ba06">spektrum_arch.h</a>
+: <a class="el" href="spektrum__radio_8h.html#a7cc3813c8b10a6392586d6de2212ba06">spektrum_radio.h</a>
 , <a class="el" href="superbitrf__rc_8h.html#a7cc3813c8b10a6392586d6de2212ba06">superbitrf_rc.h</a>
 </li>
 <li>RADIO_GEAR
-: <a class="el" href="sim_2subsystems_2radio__control_2spektrum__arch_8h.html#aafc722d7aec7f55c5a2d98c6c41a9c29">spektrum_arch.h</a>
-, <a class="el" href="joby__9ch_8h.html#aafc722d7aec7f55c5a2d98c6c41a9c29">joby_9ch.h</a>
+: <a class="el" href="spektrum__radio_8h.html#aafc722d7aec7f55c5a2d98c6c41a9c29">spektrum_radio.h</a>
 , <a class="el" href="superbitrf__rc_8h.html#aafc722d7aec7f55c5a2d98c6c41a9c29">superbitrf_rc.h</a>
-</li>
-<li>RADIO_KILL
-: <a class="el" href="joby__9ch_8h.html#a6f7be56884f4433cbfa95dc20057a77c">joby_9ch.h</a>
 </li>
 <li>RADIO_KILL_SWITCH
 : <a class="el" href="intermcu__ap_8h.html#aaf81f14818697e4134650e3d7cea4e3f">intermcu_ap.h</a>
-, <a class="el" href="spektrum__dx7se__joby_8h.html#aaf81f14818697e4134650e3d7cea4e3f">spektrum_dx7se_joby.h</a>
 </li>
 <li>radio_lost_mode()
 : <a class="el" href="fixedwing_2main__fbw_8c.html#a4aa80794b287cf29c0139d0e70ac6b1f">main_fbw.c</a>
 </li>
 <li>RADIO_MODE
-: <a class="el" href="sim_2subsystems_2radio__control_2spektrum__arch_8h.html#a2fab1464ab1748edb2a45a08cf7c422a">spektrum_arch.h</a>
-, <a class="el" href="intermcu__ap_8h.html#a2fab1464ab1748edb2a45a08cf7c422a">intermcu_ap.h</a>
-, <a class="el" href="joby__9ch_8h.html#a2fab1464ab1748edb2a45a08cf7c422a">joby_9ch.h</a>
+: <a class="el" href="intermcu__ap_8h.html#a2fab1464ab1748edb2a45a08cf7c422a">intermcu_ap.h</a>
 , <a class="el" href="rc__datalink_8h.html#a2fab1464ab1748edb2a45a08cf7c422a">rc_datalink.h</a>
-, <a class="el" href="spektrum__dx7se_8h.html#a2fab1464ab1748edb2a45a08cf7c422a">spektrum_dx7se.h</a>
-, <a class="el" href="spektrum__dx7se__joby_8h.html#a2fab1464ab1748edb2a45a08cf7c422a">spektrum_dx7se_joby.h</a>
+, <a class="el" href="spektrum__radio_8h.html#a2fab1464ab1748edb2a45a08cf7c422a">spektrum_radio.h</a>
 , <a class="el" href="superbitrf__rc_8h.html#a2fab1464ab1748edb2a45a08cf7c422a">superbitrf_rc.h</a>
 </li>
 <li>RADIO_PITCH
-: <a class="el" href="sim_2subsystems_2radio__control_2spektrum__arch_8h.html#a8e61ffe584bf24170117b9fcb2da4023">spektrum_arch.h</a>
-, <a class="el" href="intermcu__ap_8h.html#a8e61ffe584bf24170117b9fcb2da4023">intermcu_ap.h</a>
-, <a class="el" href="joby__9ch_8h.html#a8e61ffe584bf24170117b9fcb2da4023">joby_9ch.h</a>
+: <a class="el" href="intermcu__ap_8h.html#a8e61ffe584bf24170117b9fcb2da4023">intermcu_ap.h</a>
 , <a class="el" href="rc__datalink_8h.html#a8e61ffe584bf24170117b9fcb2da4023">rc_datalink.h</a>
-, <a class="el" href="spektrum__dx7se_8h.html#a8e61ffe584bf24170117b9fcb2da4023">spektrum_dx7se.h</a>
-, <a class="el" href="spektrum__dx7se__joby_8h.html#a8e61ffe584bf24170117b9fcb2da4023">spektrum_dx7se_joby.h</a>
+, <a class="el" href="spektrum__radio_8h.html#a8e61ffe584bf24170117b9fcb2da4023">spektrum_radio.h</a>
 , <a class="el" href="superbitrf__rc_8h.html#a8e61ffe584bf24170117b9fcb2da4023">superbitrf_rc.h</a>
 </li>
 <li>RADIO_ROLL
-: <a class="el" href="sim_2subsystems_2radio__control_2spektrum__arch_8h.html#ae59b042496b1debe96e1d98fbc3e4b1f">spektrum_arch.h</a>
-, <a class="el" href="intermcu__ap_8h.html#ae59b042496b1debe96e1d98fbc3e4b1f">intermcu_ap.h</a>
-, <a class="el" href="joby__9ch_8h.html#ae59b042496b1debe96e1d98fbc3e4b1f">joby_9ch.h</a>
+: <a class="el" href="intermcu__ap_8h.html#ae59b042496b1debe96e1d98fbc3e4b1f">intermcu_ap.h</a>
 , <a class="el" href="rc__datalink_8h.html#ae59b042496b1debe96e1d98fbc3e4b1f">rc_datalink.h</a>
-, <a class="el" href="spektrum__dx7se_8h.html#ae59b042496b1debe96e1d98fbc3e4b1f">spektrum_dx7se.h</a>
-, <a class="el" href="spektrum__dx7se__joby_8h.html#ae59b042496b1debe96e1d98fbc3e4b1f">spektrum_dx7se_joby.h</a>
+, <a class="el" href="spektrum__radio_8h.html#ae59b042496b1debe96e1d98fbc3e4b1f">spektrum_radio.h</a>
 , <a class="el" href="superbitrf__rc_8h.html#ae59b042496b1debe96e1d98fbc3e4b1f">superbitrf_rc.h</a>
 </li>
 <li>RADIO_THROTTLE
-: <a class="el" href="sim_2subsystems_2radio__control_2spektrum__arch_8h.html#a393c67e7c336f4e58413e3cb07378511">spektrum_arch.h</a>
-, <a class="el" href="intermcu__ap_8h.html#a393c67e7c336f4e58413e3cb07378511">intermcu_ap.h</a>
-, <a class="el" href="joby__9ch_8h.html#a393c67e7c336f4e58413e3cb07378511">joby_9ch.h</a>
+: <a class="el" href="intermcu__ap_8h.html#a393c67e7c336f4e58413e3cb07378511">intermcu_ap.h</a>
 , <a class="el" href="rc__datalink_8h.html#a393c67e7c336f4e58413e3cb07378511">rc_datalink.h</a>
-, <a class="el" href="spektrum__dx7se_8h.html#a393c67e7c336f4e58413e3cb07378511">spektrum_dx7se.h</a>
-, <a class="el" href="spektrum__dx7se__joby_8h.html#a393c67e7c336f4e58413e3cb07378511">spektrum_dx7se_joby.h</a>
+, <a class="el" href="spektrum__radio_8h.html#a393c67e7c336f4e58413e3cb07378511">spektrum_radio.h</a>
 , <a class="el" href="superbitrf__rc_8h.html#a393c67e7c336f4e58413e3cb07378511">superbitrf_rc.h</a>
 </li>
 <li>RADIO_YAW
-: <a class="el" href="sim_2subsystems_2radio__control_2spektrum__arch_8h.html#a0a504ca751f60fabf7900b13916561a6">spektrum_arch.h</a>
-, <a class="el" href="intermcu__ap_8h.html#a0a504ca751f60fabf7900b13916561a6">intermcu_ap.h</a>
-, <a class="el" href="joby__9ch_8h.html#a0a504ca751f60fabf7900b13916561a6">joby_9ch.h</a>
+: <a class="el" href="intermcu__ap_8h.html#a0a504ca751f60fabf7900b13916561a6">intermcu_ap.h</a>
 , <a class="el" href="rc__datalink_8h.html#a0a504ca751f60fabf7900b13916561a6">rc_datalink.h</a>
-, <a class="el" href="spektrum__dx7se_8h.html#a0a504ca751f60fabf7900b13916561a6">spektrum_dx7se.h</a>
-, <a class="el" href="spektrum__dx7se__joby_8h.html#a0a504ca751f60fabf7900b13916561a6">spektrum_dx7se_joby.h</a>
+, <a class="el" href="spektrum__radio_8h.html#a0a504ca751f60fabf7900b13916561a6">spektrum_radio.h</a>
 , <a class="el" href="superbitrf__rc_8h.html#a0a504ca751f60fabf7900b13916561a6">superbitrf_rc.h</a>
 </li>
 <li>RadioControlEvent
@@ -474,14 +444,8 @@ $(document).ready(function(){initNavTree('globals_r.html','');});
 , <a class="el" href="intermcu__ap_8c.html#af92639a882c9a02ecc422e3ba96c1274">intermcu_ap.c</a>
 , <a class="el" href="intermcu__ap_8h.html#af92639a882c9a02ecc422e3ba96c1274">intermcu_ap.h</a>
 </li>
-<li>RadioControlEventImp()
-: <a class="el" href="sim_2subsystems_2radio__control_2spektrum__arch_8c.html#aafc7faaab3785de71d5f220c1b4caed7">spektrum_arch.c</a>
-, <a class="el" href="sim_2subsystems_2radio__control_2spektrum__arch_8h.html#aa14d845c3a5ca2182ee1d7594b22ab44">spektrum_arch.h</a>
-, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#aafc7faaab3785de71d5f220c1b4caed7">spektrum_arch.c</a>
-, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8h.html#aa14d845c3a5ca2182ee1d7594b22ab44">spektrum_arch.h</a>
-</li>
-<li>RadioControlEventImpl
-: <a class="el" href="lpc21_2subsystems_2radio__control_2spektrum__arch_8h.html#aac589f9beea5f3274a11d8b54b19523e">spektrum_arch.h</a>
+<li>RadioControlEventImp
+: <a class="el" href="spektrum__arch_8h.html#afdde98823a1f4ee0a8be9a3c6f01036a">spektrum_arch.h</a>
 </li>
 <li>RadioControlValues
 : <a class="el" href="radio__control_8h.html#a764f3b5472564631b314515d69179deb">radio_control.h</a>
@@ -494,6 +458,12 @@ $(document).ready(function(){initNavTree('globals_r.html','');});
 </li>
 <li>railnumberSinceBoot
 : <a class="el" href="cartography_8c.html#a20a0aca5f2607987909da6278f59c1dc">cartography.c</a>
+</li>
+<li>range_array
+: <a class="el" href="relative__localization__filter_8c.html#af47d47d1da0fe73abb8f4bfbc71eacd3">relative_localization_filter.c</a>
+</li>
+<li>range_communication_event
+: <a class="el" href="relative__localization__filter_8c.html#a108fcbddebbe46b8fc977d3bae18fe7c">relative_localization_filter.c</a>
 </li>
 <li>RANGE_FORCEFIELD_ID
 : <a class="el" href="abi__sender__ids_8h.html#aaed040930aab51aeb612aba936c5d748">abi_sender_ids.h</a>
@@ -528,6 +498,9 @@ $(document).ready(function(){initNavTree('globals_r.html','');});
 <li>range_forcefield_update()
 : <a class="el" href="range__forcefield_8c.html#a88e177ede39a056fa2c332ee034ad6e8">range_forcefield.c</a>
 , <a class="el" href="range__forcefield_8h.html#a88e177ede39a056fa2c332ee034ad6e8">range_forcefield.h</a>
+</li>
+<li>range_msg_callback()
+: <a class="el" href="relative__localization__filter_8c.html#a2e719dd98f227ac5efe36084651ddf78">relative_localization_filter.c</a>
 </li>
 <li>RATE_BFP_OF_REAL
 : <a class="el" href="group__math__algebra__int.html#ga986eabb558dbd92f341c7e26480f1124">pprz_algebra_int.h</a>
@@ -648,12 +621,6 @@ $(document).ready(function(){initNavTree('globals_r.html','');});
 <li>rc_event_2
 : <a class="el" href="sim__ap_8c.html#a253335b6d83a10fd0d450f28c8dd77fb">sim_ap.c</a>
 </li>
-<li>RC_JOBY_SIGNS
-: <a class="el" href="joby__9ch_8h.html#a2233530c891bc879ec3bca1afb40d9e7">joby_9ch.h</a>
-</li>
-<li>RC_JOBY_SYNC_2
-: <a class="el" href="joby__9ch_8h.html#a4f61bcae9d06003dc3cf168ee48c055a">joby_9ch.h</a>
-</li>
 <li>RC_LOST
 : <a class="el" href="radio__control_8h.html#ae260ed6c98624fcd1d70c232038204d2">radio_control.h</a>
 </li>
@@ -704,9 +671,10 @@ $(document).ready(function(){initNavTree('globals_r.html','');});
 , <a class="el" href="sbus__dual_8c.html#a0391a78ae3f30e6308e3bef30963823b">sbus_dual.c</a>
 </li>
 <li>RC_PPM_SIGNED_TICKS_OF_USEC
-: <a class="el" href="chibios_2subsystems_2radio__control_2ppm__arch_8h.html#a89dbcbaebdf3485e1fdecc29fb6f16db">ppm_arch.h</a>
+: <a class="el" href="stm32_2subsystems_2radio__control_2ppm__arch_8h.html#a89dbcbaebdf3485e1fdecc29fb6f16db">ppm_arch.h</a>
 , <a class="el" href="hott__common_8h.html#a89dbcbaebdf3485e1fdecc29fb6f16db">hott_common.h</a>
 , <a class="el" href="sbus__common_8h.html#a89dbcbaebdf3485e1fdecc29fb6f16db">sbus_common.h</a>
+, <a class="el" href="chibios_2subsystems_2radio__control_2ppm__arch_8h.html#a89dbcbaebdf3485e1fdecc29fb6f16db">ppm_arch.h</a>
 </li>
 <li>RC_PPM_TICKS_OF_USEC
 : <a class="el" href="chibios_2subsystems_2radio__control_2ppm__arch_8h.html#aad33b862bb6166593e16a30779799b51">ppm_arch.h</a>
@@ -729,8 +697,8 @@ $(document).ready(function(){initNavTree('globals_r.html','');});
 : <a class="el" href="nps__radio__control_8c.html#af7482dd8008ea128505e53b89dde34fb">nps_radio_control.c</a>
 </li>
 <li>RC_SET_POLARITY
-: <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a50ec2ad5fe4db9bf380763480ac16af5">spektrum_arch.c</a>
-, <a class="el" href="sbus__common_8c.html#a50ec2ad5fe4db9bf380763480ac16af5">sbus_common.c</a>
+: <a class="el" href="sbus__common_8c.html#a50ec2ad5fe4db9bf380763480ac16af5">sbus_common.c</a>
+, <a class="el" href="spektrum_8c.html#a50ec2ad5fe4db9bf380763480ac16af5">spektrum.c</a>
 </li>
 <li>rc_settings()
 : <a class="el" href="rc__settings_8c.html#a70dfba35cc80c7b5f4da8c2f4aa18181">rc_settings.c</a>
@@ -739,59 +707,11 @@ $(document).ready(function(){initNavTree('globals_r.html','');});
 : <a class="el" href="fixedwing_2autopilot__firmware_8c.html#a3349e614a926a99c63c8b9f2935a29f3">autopilot_firmware.c</a>
 , <a class="el" href="rc__settings_8c.html#a3349e614a926a99c63c8b9f2935a29f3">rc_settings.c</a>
 </li>
-<li>rc_spk_parser_buf
-: <a class="el" href="lpc21_2subsystems_2radio__control_2spektrum__arch_8c.html#a52ba41a99ccfcfe10a8850b7121850e3">spektrum_arch.c</a>
-, <a class="el" href="lpc21_2subsystems_2radio__control_2spektrum__arch_8h.html#a52ba41a99ccfcfe10a8850b7121850e3">spektrum_arch.h</a>
-</li>
-<li>rc_spk_parser_idx
-: <a class="el" href="lpc21_2subsystems_2radio__control_2spektrum__arch_8c.html#a90fd99c9ddce4a4f47f093d999d16a63">spektrum_arch.c</a>
-, <a class="el" href="lpc21_2subsystems_2radio__control_2spektrum__arch_8h.html#a90fd99c9ddce4a4f47f093d999d16a63">spektrum_arch.h</a>
-</li>
-<li>rc_spk_parser_status
-: <a class="el" href="lpc21_2subsystems_2radio__control_2spektrum__arch_8c.html#a822166c097923a0fbee7894170a19e75">spektrum_arch.c</a>
-, <a class="el" href="lpc21_2subsystems_2radio__control_2spektrum__arch_8h.html#a822166c097923a0fbee7894170a19e75">spektrum_arch.h</a>
-</li>
-<li>RC_SPK_STA_GOT_SYNC_1
-: <a class="el" href="lpc21_2subsystems_2radio__control_2spektrum__arch_8h.html#a7cbeda0d94d6f3e1ec245c2d1b5ef2dc">spektrum_arch.h</a>
-</li>
-<li>RC_SPK_STA_GOT_SYNC_2
-: <a class="el" href="lpc21_2subsystems_2radio__control_2spektrum__arch_8h.html#a736e4e5f8ce1ead8ed708e4eb094e2e0">spektrum_arch.h</a>
-</li>
-<li>RC_SPK_STA_UNINIT
-: <a class="el" href="lpc21_2subsystems_2radio__control_2spektrum__arch_8h.html#a513e1aed3772acef9761941c072b2feb">spektrum_arch.h</a>
-</li>
-<li>RC_SPK_SYNC_1
-: <a class="el" href="lpc21_2subsystems_2radio__control_2spektrum__arch_8h.html#a7c941eead8c8d946a7a6d70e45c51780">spektrum_arch.h</a>
-</li>
-<li>RC_SPK_SYNC_2
-: <a class="el" href="spektrum__dx7se_8h.html#a0b6ec86d1fd5c83baa2fbd4509b30f03">spektrum_dx7se.h</a>
-, <a class="el" href="spektrum__dx7se__joby_8h.html#a0b6ec86d1fd5c83baa2fbd4509b30f03">spektrum_dx7se_joby.h</a>
-</li>
-<li>rc_spk_throw
-: <a class="el" href="lpc21_2subsystems_2radio__control_2spektrum__arch_8c.html#af871da7c10e72980ef21424337791c76">spektrum_arch.c</a>
-, <a class="el" href="lpc21_2subsystems_2radio__control_2spektrum__arch_8h.html#af871da7c10e72980ef21424337791c76">spektrum_arch.h</a>
-</li>
-<li>RC_SPK_THROWS
-: <a class="el" href="spektrum__dx7se_8h.html#aa765b184d938f5978566fca429ca33d6">spektrum_dx7se.h</a>
-, <a class="el" href="spektrum__dx7se__joby_8h.html#aa765b184d938f5978566fca429ca33d6">spektrum_dx7se_joby.h</a>
-</li>
 <li>RCC_TIM_ADC
 : <a class="el" href="stm32_2mcu__periph_2adc__arch_8c.html#ad0eb89a1ba54932bcb9f202b2581fee2">adc_arch.c</a>
 </li>
-<li>RCC_TIMx
-: <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a83d163caf7fad521d71b8fb511cede8a">spektrum_arch.c</a>
-</li>
 <li>RcChannel
 : <a class="el" href="rc__settings_8c.html#a1208e80268eeb8b24ab1a67f2ecedb54">rc_settings.c</a>
-</li>
-<li>RcLink
-: <a class="el" href="lpc21_2subsystems_2radio__control_2spektrum__arch_8h.html#a58576435eb4ebe4d5c836af6b6ff70bf">spektrum_arch.h</a>
-</li>
-<li>RcLinkChAvailable
-: <a class="el" href="lpc21_2subsystems_2radio__control_2spektrum__arch_8h.html#a03d0da00a8031f96349aa0d5bb719bcf">spektrum_arch.h</a>
-</li>
-<li>RcLinkGetCh
-: <a class="el" href="lpc21_2subsystems_2radio__control_2spektrum__arch_8h.html#a5170b087e1edaf39a737cbdb742d0512">spektrum_arch.h</a>
 </li>
 <li>RCLost
 : <a class="el" href="nav_8h.html#ac3892fe123b99e805c0c5d5b1b4cd144">nav.h</a>
@@ -801,6 +721,9 @@ $(document).ready(function(){initNavTree('globals_r.html','');});
 </li>
 <li>RcSettingsOff
 : <a class="el" href="rc__settings_8h.html#abfe4dd8918b6b47bb2d488c62343372d">rc_settings.h</a>
+</li>
+<li>RCValue
+: <a class="el" href="radio__control_8h.html#a9e76d89b30ff9e29ad85bd7d83d9e783">radio_control.h</a>
 </li>
 <li>rd_msg_len
 : <a class="el" href="rtcm3_8h.html#a521b552b352123fdf083508bfcdceeed">rtcm3.h</a>
@@ -884,16 +807,16 @@ $(document).ready(function(){initNavTree('globals_r.html','');});
 : <a class="el" href="rtwtypes_8h.html#a2e4078fe4daba4fe064f5c7614b361a2">rtwtypes.h</a>
 </li>
 <li>received_spektrum_soft_bind()
-: <a class="el" href="spektrum__soft__bind__fbw_8h.html#a019a8098631a35cbcdae0c277dbaba6f">spektrum_soft_bind_fbw.h</a>
-, <a class="el" href="spektrum__soft__bind__fbw_8c.html#a019a8098631a35cbcdae0c277dbaba6f">spektrum_soft_bind_fbw.c</a>
+: <a class="el" href="spektrum__soft__bind__fbw_8c.html#a019a8098631a35cbcdae0c277dbaba6f">spektrum_soft_bind_fbw.c</a>
+, <a class="el" href="spektrum__soft__bind__fbw_8h.html#a019a8098631a35cbcdae0c277dbaba6f">spektrum_soft_bind_fbw.h</a>
 </li>
 <li>recievedData
 : <a class="el" href="modules_2ins_2ins__arduimu_8c.html#a7ad0b6baa7c668497b49a342fbddc246">ins_arduimu.c</a>
 , <a class="el" href="modules_2ins_2ins__arduimu__basic_8c.html#a7ad0b6baa7c668497b49a342fbddc246">ins_arduimu_basic.c</a>
 </li>
 <li>record_video
-: <a class="el" href="cv__blob__locator_8h.html#a83032abdec3a3f45390ff8905fac77e6">cv_blob_locator.h</a>
-, <a class="el" href="cv__blob__locator_8c.html#a83032abdec3a3f45390ff8905fac77e6">cv_blob_locator.c</a>
+: <a class="el" href="cv__blob__locator_8c.html#a83032abdec3a3f45390ff8905fac77e6">cv_blob_locator.c</a>
+, <a class="el" href="cv__blob__locator_8h.html#a83032abdec3a3f45390ff8905fac77e6">cv_blob_locator.h</a>
 </li>
 <li>RECTANGLE_SURVEY_DEFAULT_SWEEP
 : <a class="el" href="nav__survey__rectangle__rotorcraft_8c.html#a12a3e97b26866461785e3fbd1b057ca1">nav_survey_rectangle_rotorcraft.c</a>
@@ -901,6 +824,15 @@ $(document).ready(function(){initNavTree('globals_r.html','');});
 <li>rectangle_survey_sweep_num
 : <a class="el" href="nav__survey__rectangle__rotorcraft_8c.html#a25ca15e256a339687900d5c06c15535f">nav_survey_rectangle_rotorcraft.c</a>
 , <a class="el" href="nav__survey__rectangle__rotorcraft_8h.html#a25ca15e256a339687900d5c06c15535f">nav_survey_rectangle_rotorcraft.h</a>
+</li>
+<li>RED_U
+: <a class="el" href="pano__unwrap_8c.html#ad7ececf38c8975107e7a13ab74d9e95e">pano_unwrap.c</a>
+</li>
+<li>RED_V
+: <a class="el" href="pano__unwrap_8c.html#a0a6298fb82bef927b8088951c386f833">pano_unwrap.c</a>
+</li>
+<li>RED_Y
+: <a class="el" href="pano__unwrap_8c.html#a7989608711b7dbc393bc1a07737c13b5">pano_unwrap.c</a>
 </li>
 <li>ref
 : <a class="el" href="temp__tcouple__adc_8c.html#a241f0aa542718c2480a4fa6ce56070f7">temp_tcouple_adc.c</a>
@@ -930,10 +862,10 @@ $(document).ready(function(){initNavTree('globals_r.html','');});
 : <a class="el" href="stabilization__attitude__ref__euler__int_8c.html#a7c98c2da7c74ef04118c3145232e8d26">stabilization_attitude_ref_euler_int.c</a>
 </li>
 <li>ref_pitch
-: <a class="el" href="follow__me_8h.html#a87bacea2b0bab9265ed2f255198d38c0">follow_me.h</a>
-, <a class="el" href="guidance__OA_8c.html#a87bacea2b0bab9265ed2f255198d38c0">guidance_OA.c</a>
+: <a class="el" href="guidance__OA_8c.html#a87bacea2b0bab9265ed2f255198d38c0">guidance_OA.c</a>
 , <a class="el" href="guidance__OA_8h.html#a87bacea2b0bab9265ed2f255198d38c0">guidance_OA.h</a>
 , <a class="el" href="follow__me_8c.html#a87bacea2b0bab9265ed2f255198d38c0">follow_me.c</a>
+, <a class="el" href="follow__me_8h.html#a87bacea2b0bab9265ed2f255198d38c0">follow_me.h</a>
 </li>
 <li>REF_RATE_FRAC
 : <a class="el" href="stabilization__attitude__ref__int_8h.html#a6a9ac7c2e058fdcfbd5ec56c9979944e">stabilization_attitude_ref_int.h</a>
@@ -948,20 +880,20 @@ $(document).ready(function(){initNavTree('globals_r.html','');});
 : <a class="el" href="stabilization__attitude__ref__euler__int_8c.html#a215bd0f15e33a9d2e43a791a9235a50d">stabilization_attitude_ref_euler_int.c</a>
 </li>
 <li>ref_roll
-: <a class="el" href="follow__me_8h.html#afd52552e7dc0c1f6f124bdd4343f978c">follow_me.h</a>
+: <a class="el" href="guidance__OA_8h.html#afd52552e7dc0c1f6f124bdd4343f978c">guidance_OA.h</a>
 , <a class="el" href="guidance__OA_8c.html#afd52552e7dc0c1f6f124bdd4343f978c">guidance_OA.c</a>
-, <a class="el" href="guidance__OA_8h.html#afd52552e7dc0c1f6f124bdd4343f978c">guidance_OA.h</a>
 , <a class="el" href="follow__me_8c.html#afd52552e7dc0c1f6f124bdd4343f978c">follow_me.c</a>
+, <a class="el" href="follow__me_8h.html#afd52552e7dc0c1f6f124bdd4343f978c">follow_me.h</a>
 </li>
 <li>ref_sensor_samples
-: <a class="el" href="ahrs__aligner_8c.html#add17db62c42b1076a998bac38c552708">ahrs_aligner.c</a>
+: <a class="el" href="ahrs__aligner_8c.html#a04dfce0b514ac9a3bca04fa64286091f">ahrs_aligner.c</a>
 </li>
 <li>ref_yaw
 : <a class="el" href="obstacle__avoidance_8c.html#a0862abd562be2475e7e0e31766c18528">obstacle_avoidance.c</a>
 </li>
 <li>reference_acceleration
-: <a class="el" href="stabilization__indi_8h.html#a6be6232124313cc99a13ce5c9f453b6a">stabilization_indi.h</a>
-, <a class="el" href="stabilization__indi_8c.html#a6be6232124313cc99a13ce5c9f453b6a">stabilization_indi.c</a>
+: <a class="el" href="stabilization__indi_8c.html#a6be6232124313cc99a13ce5c9f453b6a">stabilization_indi.c</a>
+, <a class="el" href="stabilization__indi_8h.html#a6be6232124313cc99a13ce5c9f453b6a">stabilization_indi.h</a>
 </li>
 <li>reference_pitch
 : <a class="el" href="obstacle__avoidance_8c.html#ae078454b01eeea1d1a0e431c5f04fd33">obstacle_avoidance.c</a>
@@ -1009,11 +941,22 @@ $(document).ready(function(){initNavTree('globals_r.html','');});
 : <a class="el" href="sim_2led__hw_8c.html#aa85b1c7cdad6a8b6035a17361f395886">led_hw.c</a>
 </li>
 <li>register_periodic_telemetry()
-: <a class="el" href="telemetry__common_8h.html#a8b8cf43739f06c54d16370c141b541a0">telemetry_common.h</a>
-, <a class="el" href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0">telemetry.c</a>
+: <a class="el" href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0">telemetry.c</a>
+, <a class="el" href="telemetry__common_8h.html#a8b8cf43739f06c54d16370c141b541a0">telemetry_common.h</a>
 </li>
 <li>RegisterAhrs
 : <a class="el" href="ahrs_8c.html#a315fb112dc69a12a2e2c8cdd43f836f9">ahrs.c</a>
+</li>
+<li>relative_localization_filter_init()
+: <a class="el" href="relative__localization__filter_8c.html#a6da4d8bf05d9240f503606d63b6be761">relative_localization_filter.c</a>
+, <a class="el" href="relative__localization__filter_8h.html#a6da4d8bf05d9240f503606d63b6be761">relative_localization_filter.h</a>
+</li>
+<li>relative_localization_filter_periodic()
+: <a class="el" href="relative__localization__filter_8h.html#a5fa5b2f3971dc4bb735fb4ad3691316d">relative_localization_filter.h</a>
+, <a class="el" href="relative__localization__filter_8c.html#a5fa5b2f3971dc4bb735fb4ad3691316d">relative_localization_filter.c</a>
+</li>
+<li>RELATIVE_LOCALIZATION_ID
+: <a class="el" href="abi__sender__ids_8h.html#ad83f845fc9d1a98388403ea342aa331a">abi_sender_ids.h</a>
 </li>
 <li>relaunch_reading_memory
 : <a class="el" href="high__speed__logger__direct__memory_8c.html#ab998d0a08b382adc864f654d3f576195">high_speed_logger_direct_memory.c</a>
@@ -1041,8 +984,8 @@ $(document).ready(function(){initNavTree('globals_r.html','');});
 : <a class="el" href="mission__common_8h.html#add225f937fa97e4f76900b7f5e73872eaa7bc3623595171b0c3f13d83b9af532d">mission_common.h</a>
 </li>
 <li>reporting_task()
-: <a class="el" href="fixedwing_2main__ap_8h.html#a35e24bbf955d315ca24de207ead69ce2">main_ap.h</a>
-, <a class="el" href="fixedwing_2main__ap_8c.html#a35e24bbf955d315ca24de207ead69ce2">main_ap.c</a>
+: <a class="el" href="fixedwing_2main__ap_8c.html#a35e24bbf955d315ca24de207ead69ce2">main_ap.c</a>
+, <a class="el" href="fixedwing_2main__ap_8h.html#a35e24bbf955d315ca24de207ead69ce2">main_ap.h</a>
 </li>
 <li>repulsionforce_filter_flag
 : <a class="el" href="guidance__OA_8c.html#a8fd84e5f3905fb563d8e23bc56fc68e0">guidance_OA.c</a>
@@ -1078,14 +1021,12 @@ $(document).ready(function(){initNavTree('globals_r.html','');});
 <li>RESERVED
 : <a class="el" href="gps__ubx__ucenter_8c.html#a56701f18aaad537f7fc0e9be309503c3">gps_ubx_ucenter.c</a>
 </li>
-<li>reset()
-: <a class="el" href="lpc21_2mcu__arch_8c.html#a3aea9deb2a0bfea9ff05a898f4822e31">mcu_arch.c</a>
+<li>reset
+: <a class="el" href="baro__MS5534A_8c.html#ae9f68c6af70342cbaad9f8500d0b6f23">baro_MS5534A.c</a>
+, <a class="el" href="lpc21_2mcu__arch_8c.html#a3aea9deb2a0bfea9ff05a898f4822e31">mcu_arch.c</a>
 </li>
 <li>RESET
 : <a class="el" href="humid__sht_8c.html#ab702106cf3b3e96750b6845ded4e0299">humid_sht.c</a>
-</li>
-<li>reset
-: <a class="el" href="baro__MS5534A_8c.html#ae9f68c6af70342cbaad9f8500d0b6f23">baro_MS5534A.c</a>
 </li>
 <li>reset_all_vars()
 : <a class="el" href="optical__flow__landing_8c.html#a46c9da8aa58fea58306c6a47b9f21c89">optical_flow_landing.c</a>
@@ -1093,10 +1034,13 @@ $(document).ready(function(){initNavTree('globals_r.html','');});
 <li>reset_guidance_reference_from_current_position()
 : <a class="el" href="rotorcraft_2guidance_2guidance__h_8c.html#ad9bd6447dd5cea00192adfbbf5a30cd5">guidance_h.c</a>
 </li>
+<li>reset_horizontal_vars()
+: <a class="el" href="optical__flow__hover_8c.html#a043924ff94b6679387ad01bd10786087">optical_flow_hover.c</a>
+</li>
 <li>reset_psi_ref()
-: <a class="el" href="stabilization__attitude__ref__quat__float_8c.html#ab694ffc68ccd095d3641670ad7d272a7">stabilization_attitude_ref_quat_float.c</a>
-, <a class="el" href="stabilization__attitude__ref__euler__float_8c.html#a6a5d0ab462481567bc0272c3b2604df9">stabilization_attitude_ref_euler_float.c</a>
+: <a class="el" href="stabilization__attitude__ref__euler__float_8c.html#a6a5d0ab462481567bc0272c3b2604df9">stabilization_attitude_ref_euler_float.c</a>
 , <a class="el" href="stabilization__attitude__ref__quat__int_8c.html#a8b76f387f4398db36d6273fd9d18f2c7">stabilization_attitude_ref_quat_int.c</a>
+, <a class="el" href="stabilization__attitude__ref__quat__float_8c.html#ab694ffc68ccd095d3641670ad7d272a7">stabilization_attitude_ref_quat_float.c</a>
 </li>
 <li>reset_psi_ref_from_body()
 : <a class="el" href="stabilization__attitude__euler__int_8c.html#a60f842edfa8dd98a227f18def04a0b55">stabilization_attitude_euler_int.c</a>
@@ -1105,12 +1049,21 @@ $(document).ready(function(){initNavTree('globals_r.html','');});
 : <a class="el" href="ahrs__float__mlkf_8c.html#a9fbef29f6a0a976770a3055c37a35d95">ahrs_float_mlkf.c</a>
 </li>
 <li>Reset_Sweep
-: <a class="el" href="nav__survey__poly__osam_8c.html#a458e606e37e191e79d098b28a4d730e3">nav_survey_poly_osam.c</a>
-, <a class="el" href="nav__survey__poly__osam_8h.html#a458e606e37e191e79d098b28a4d730e3">nav_survey_poly_osam.h</a>
+: <a class="el" href="nav__survey__poly__osam_8h.html#a458e606e37e191e79d098b28a4d730e3">nav_survey_poly_osam.h</a>
+, <a class="el" href="nav__survey__poly__osam_8c.html#a458e606e37e191e79d098b28a4d730e3">nav_survey_poly_osam.c</a>
+</li>
+<li>reset_vertical_vars()
+: <a class="el" href="optical__flow__hover_8c.html#aa1f1ab30f74e185f0cc6c922cb0e2354">optical_flow_hover.c</a>
+</li>
+<li>respond_sts()
+: <a class="el" href="gec__dl_8h.html#a455f4433190fb942249d0c1167f33b83">gec_dl.h</a>
+</li>
+<li>RESPONDER
+: <a class="el" href="gec_8h.html#a8790a73508ded11cd29de7ea4488fa6aa47677588214f17dd37fddf6ccbbc8abb">gec.h</a>
 </li>
 <li>restoreFIQ()
-: <a class="el" href="armVIC_8h.html#aeb2b763cdec502e621568f61f4fefb07">armVIC.h</a>
-, <a class="el" href="armVIC_8c.html#aeb2b763cdec502e621568f61f4fefb07">armVIC.c</a>
+: <a class="el" href="armVIC_8c.html#aeb2b763cdec502e621568f61f4fefb07">armVIC.c</a>
+, <a class="el" href="armVIC_8h.html#aeb2b763cdec502e621568f61f4fefb07">armVIC.h</a>
 </li>
 <li>restoreIRQ()
 : <a class="el" href="armVIC_8c.html#ae65947fbc714eff716bc3dd03d909ec8">armVIC.c</a>
@@ -1127,8 +1080,8 @@ $(document).ready(function(){initNavTree('globals_r.html','');});
 </li>
 <li>REVERSE
 : <a class="el" href="actuators__asctec__v2_8h.html#a4fc4c81cd178f2e57a6d8ce74785742ea906b7cc20b42994dda4da492767c1de9">actuators_asctec_v2.h</a>
-, <a class="el" href="actuators__asctec_8h.html#a6ab1b9217ee457a8e4352cf0b28af79da906b7cc20b42994dda4da492767c1de9">actuators_asctec.h</a>
 , <a class="el" href="actuators__asctec__v2__new_8h.html#a4fc4c81cd178f2e57a6d8ce74785742ea906b7cc20b42994dda4da492767c1de9">actuators_asctec_v2_new.h</a>
+, <a class="el" href="actuators__asctec_8h.html#a6ab1b9217ee457a8e4352cf0b28af79da906b7cc20b42994dda4da492767c1de9">actuators_asctec.h</a>
 </li>
 <li>RFF
 : <a class="el" href="LPC21xx_8h.html#afc2aa4b88f921be1b8d9575fc4ad8d95">LPC21xx.h</a>
@@ -1144,8 +1097,11 @@ $(document).ready(function(){initNavTree('globals_r.html','');});
 </li>
 <li>RIGHT
 : <a class="el" href="actuators__asctec_8h.html#ad2db450a6c9862a4f81ba35a4d5f4f20aec8379af7490bb9eaaf579cf17876f38">actuators_asctec.h</a>
-, <a class="el" href="actuators__asctec__v2_8h.html#a6a84074f57bc5110d7e301d4662c4899aec8379af7490bb9eaaf579cf17876f38">actuators_asctec_v2.h</a>
 , <a class="el" href="actuators__asctec__v2__new_8h.html#a6a84074f57bc5110d7e301d4662c4899aec8379af7490bb9eaaf579cf17876f38">actuators_asctec_v2_new.h</a>
+, <a class="el" href="actuators__asctec__v2_8h.html#a6a84074f57bc5110d7e301d4662c4899aec8379af7490bb9eaaf579cf17876f38">actuators_asctec_v2.h</a>
+</li>
+<li>RL_NUAVS
+: <a class="el" href="relative__localization__filter_8c.html#a082396352d616dc432da635cfdff7af7">relative_localization_filter.c</a>
 </li>
 <li>RMASK
 : <a class="el" href="w5100_8c.html#ab313966344db7ce2681d95597427a7b4">w5100.c</a>
@@ -1180,12 +1136,29 @@ $(document).ready(function(){initNavTree('globals_r.html','');});
 <li>rng()
 : <a class="el" href="opencv__contour_8cpp.html#a2bb3a617236eb1bd8ace5e140f519081">opencv_contour.cpp</a>
 </li>
+<li>rng_deinit()
+: <a class="el" href="rng_8h.html#a2a25baf68bfa99b354145cf2de467ab0">rng.h</a>
+, <a class="el" href="sim_2mcu__periph_2rng__arch_8c.html#a2a25baf68bfa99b354145cf2de467ab0">rng_arch.c</a>
+</li>
+<li>rng_get()
+: <a class="el" href="sim_2mcu__periph_2rng__arch_8c.html#a44387fcb7ecd6d2f064471e3312a1c5f">rng_arch.c</a>
+, <a class="el" href="rng_8h.html#a44387fcb7ecd6d2f064471e3312a1c5f">rng.h</a>
+</li>
+<li>rng_init()
+: <a class="el" href="sim_2mcu__periph_2rng__arch_8c.html#ad5a3df3d0092f55f6ea54ccaa7daf3dc">rng_arch.c</a>
+, <a class="el" href="rng_8h.html#ad5a3df3d0092f55f6ea54ccaa7daf3dc">rng.h</a>
+, <a class="el" href="stm32_2mcu__periph_2rng__arch_8c.html#ad5a3df3d0092f55f6ea54ccaa7daf3dc">rng_arch.c</a>
+</li>
+<li>rng_wait_and_get()
+: <a class="el" href="stm32_2mcu__periph_2rng__arch_8c.html#a820694eb7a21338e91e79f50a3a241ea">rng_arch.c</a>
+, <a class="el" href="rng_8h.html#a820694eb7a21338e91e79f50a3a241ea">rng.h</a>
+</li>
 <li>ROLL
 : <a class="el" href="actuators__asctec_8h.html#a82d0d12190beb7d9db322455bf6a4d1da2eeb9fef8a6a516fa6437a44a6efbd52">actuators_asctec.h</a>
 </li>
 <li>roll_coef
-: <a class="el" href="swashplate__mixing_8c.html#ae9314a09d7bb1225dea109c1c7985e1c">swashplate_mixing.c</a>
-, <a class="el" href="motor__mixing_8c.html#ac24face7eff523838a17e0706583464a">motor_mixing.c</a>
+: <a class="el" href="motor__mixing_8c.html#ac24face7eff523838a17e0706583464a">motor_mixing.c</a>
+, <a class="el" href="swashplate__mixing_8c.html#ae9314a09d7bb1225dea109c1c7985e1c">swashplate_mixing.c</a>
 </li>
 <li>roll_filt
 : <a class="el" href="guidance__indi_8c.html#a19dc03ef4234ea423340bcc0c249e1cf">guidance_indi.c</a>
@@ -1208,22 +1181,16 @@ $(document).ready(function(){initNavTree('globals_r.html','');});
 <li>RORMIS
 : <a class="el" href="LPC21xx_8h.html#a656bfbe85887cdecaf90c90d975448cd">LPC21xx.h</a>
 </li>
-<li>rotate32_left()
-: <a class="el" href="kremlib_8h.html#a83237aadd20310fb783c472bbe6cd838">kremlib.h</a>
-</li>
-<li>rotate32_right()
-: <a class="el" href="kremlib_8h.html#ac82f33046320d58e9dbdcefb7e1f0830">kremlib.h</a>
-</li>
 <li>RotateAndTranslateToWorld()
-: <a class="el" href="nav__survey__poly__osam_8c.html#a48c160b16e812b494516ffb30413d169">nav_survey_poly_osam.c</a>
-, <a class="el" href="nav__survey__poly__rotorcraft_8c.html#a25e0c88188e3a3761a48896bc3c13643">nav_survey_poly_rotorcraft.c</a>
+: <a class="el" href="nav__survey__poly__rotorcraft_8c.html#a25e0c88188e3a3761a48896bc3c13643">nav_survey_poly_rotorcraft.c</a>
+, <a class="el" href="nav__survey__poly__osam_8c.html#a48c160b16e812b494516ffb30413d169">nav_survey_poly_osam.c</a>
 </li>
 <li>ROTORCRAFT_CAM_DEFAULT_MODE
 : <a class="el" href="rotorcraft__cam_8h.html#ac8ccbc8ee7594a4fc81fa3a5b4d77789">rotorcraft_cam.h</a>
 </li>
 <li>rotorcraft_cam_init()
-: <a class="el" href="rotorcraft__cam_8h.html#a9714f023c0b83d4d973e8758e053a6ce">rotorcraft_cam.h</a>
-, <a class="el" href="rotorcraft__cam_8c.html#a9714f023c0b83d4d973e8758e053a6ce">rotorcraft_cam.c</a>
+: <a class="el" href="rotorcraft__cam_8c.html#a9714f023c0b83d4d973e8758e053a6ce">rotorcraft_cam.c</a>
+, <a class="el" href="rotorcraft__cam_8h.html#a9714f023c0b83d4d973e8758e053a6ce">rotorcraft_cam.h</a>
 </li>
 <li>rotorcraft_cam_mode
 : <a class="el" href="rotorcraft__cam_8c.html#a4f854e9e805596e5127d9045839b5fdc">rotorcraft_cam.c</a>
@@ -1248,8 +1215,8 @@ $(document).ready(function(){initNavTree('globals_r.html','');});
 : <a class="el" href="rotorcraft__cam_8c.html#a35b7703c58ad70d19ac2960c7e2d6dda">rotorcraft_cam.c</a>
 </li>
 <li>rotorcraft_cam_pan
-: <a class="el" href="rotorcraft__cam_8h.html#a51ace79b92e7c5ab69438597883a4c8c">rotorcraft_cam.h</a>
-, <a class="el" href="rotorcraft__cam_8c.html#a51ace79b92e7c5ab69438597883a4c8c">rotorcraft_cam.c</a>
+: <a class="el" href="rotorcraft__cam_8c.html#a51ace79b92e7c5ab69438597883a4c8c">rotorcraft_cam.c</a>
+, <a class="el" href="rotorcraft__cam_8h.html#a51ace79b92e7c5ab69438597883a4c8c">rotorcraft_cam.h</a>
 </li>
 <li>ROTORCRAFT_CAM_PAN_MAX
 : <a class="el" href="rotorcraft__cam_8c.html#a0806094f8433ed826213cbb728c5a53a">rotorcraft_cam.c</a>
@@ -1278,8 +1245,8 @@ $(document).ready(function(){initNavTree('globals_r.html','');});
 : <a class="el" href="rotorcraft__cam_8h.html#abc571d6b199150468ea05e30a1f6d3f6">rotorcraft_cam.h</a>
 </li>
 <li>rotorcraft_cam_tilt
-: <a class="el" href="rotorcraft__cam_8h.html#a6565dd8f5371a7c2509896667262fbea">rotorcraft_cam.h</a>
-, <a class="el" href="rotorcraft__cam_8c.html#a6565dd8f5371a7c2509896667262fbea">rotorcraft_cam.c</a>
+: <a class="el" href="rotorcraft__cam_8c.html#a6565dd8f5371a7c2509896667262fbea">rotorcraft_cam.c</a>
+, <a class="el" href="rotorcraft__cam_8h.html#a6565dd8f5371a7c2509896667262fbea">rotorcraft_cam.h</a>
 </li>
 <li>rotorcraft_cam_tilt_pwm
 : <a class="el" href="rotorcraft__cam_8c.html#adda457c04709dca302b7342870c93dc8">rotorcraft_cam.c</a>
@@ -1294,14 +1261,45 @@ $(document).ready(function(){initNavTree('globals_r.html','');});
 <li>ROTORCRAFT_COMMANDS_THROUGH_MODULE
 : <a class="el" href="glide__wing__lock_8h.html#af688353e9277038d0e14900750e70f98">glide_wing_lock.h</a>
 </li>
+<li>rover_guidance
+: <a class="el" href="rover__guidance_8h.html#a89757d7e561b48965a8d23ae858501f8">rover_guidance.h</a>
+, <a class="el" href="rover__guidance_8c.html#a89757d7e561b48965a8d23ae858501f8">rover_guidance.c</a>
+</li>
+<li>rover_guidance_enter()
+: <a class="el" href="rover__guidance_8h.html#a4db8bb1975e15df2fc7918173c74d874">rover_guidance.h</a>
+, <a class="el" href="rover__guidance_8c.html#a4db8bb1975e15df2fc7918173c74d874">rover_guidance.c</a>
+</li>
+<li>rover_guidance_init()
+: <a class="el" href="rover__guidance_8h.html#a85032e7f0f51a23f0d19dfc0fc1f3268">rover_guidance.h</a>
+, <a class="el" href="rover__guidance_8c.html#a85032e7f0f51a23f0d19dfc0fc1f3268">rover_guidance.c</a>
+</li>
+<li>rover_guidance_periodic()
+: <a class="el" href="rover__guidance_8h.html#a789221ff96e848d65c3c2038931795e3">rover_guidance.h</a>
+, <a class="el" href="rover__guidance_8c.html#a789221ff96e848d65c3c2038931795e3">rover_guidance.c</a>
+</li>
+<li>rover_guidance_run()
+: <a class="el" href="rover__guidance_8h.html#a1c5d14152545935d78448eae5d0a6b6d">rover_guidance.h</a>
+, <a class="el" href="rover__guidance_8c.html#a1c5d14152545935d78448eae5d0a6b6d">rover_guidance.c</a>
+</li>
+<li>rover_guidance_set_speed_igain()
+: <a class="el" href="rover__guidance_8h.html#a277b7231eb54d477f8122a85a57460bf">rover_guidance.h</a>
+, <a class="el" href="rover__guidance_8c.html#a277b7231eb54d477f8122a85a57460bf">rover_guidance.c</a>
+</li>
+<li>rover_guidance_set_turn_igain()
+: <a class="el" href="rover__guidance_8c.html#a3d60e4cdc5e3fc56b2d0dc0543ecdb2e">rover_guidance.c</a>
+, <a class="el" href="rover__guidance_8h.html#a3d60e4cdc5e3fc56b2d0dc0543ecdb2e">rover_guidance.h</a>
+</li>
 <li>rpm
 : <a class="el" href="rpm__sensor_8c.html#a7e8977f1a58204edfd9b2514f29dfd47">rpm_sensor.c</a>
 </li>
 <li>rpm_cb()
-: <a class="el" href="stabilization__indi_8c.html#ab3186fac0bc1064939e1d9a2139b9243">stabilization_indi.c</a>
+: <a class="el" href="stabilization__indi_8c.html#a82a03c76c1dda03f5762afc40bfb0517">stabilization_indi.c</a>
+, <a class="el" href="throttle__curve_8c.html#ab3186fac0bc1064939e1d9a2139b9243">throttle_curve.c</a>
+, <a class="el" href="stabilization__indi_8c.html#ab3186fac0bc1064939e1d9a2139b9243">stabilization_indi.c</a>
 </li>
 <li>rpm_ev
-: <a class="el" href="stabilization__indi_8c.html#a4a88952668a3d8ce232c443ed5bb18b4">stabilization_indi.c</a>
+: <a class="el" href="throttle__curve_8c.html#a4a88952668a3d8ce232c443ed5bb18b4">throttle_curve.c</a>
+, <a class="el" href="stabilization__indi_8c.html#a4a88952668a3d8ce232c443ed5bb18b4">stabilization_indi.c</a>
 </li>
 <li>RPM_FILTER_TAU
 : <a class="el" href="rpm__sensor_8c.html#ad04e33164164eac39848d671c94e5cec">rpm_sensor.c</a>
@@ -1316,19 +1314,19 @@ $(document).ready(function(){initNavTree('globals_r.html','');});
 : <a class="el" href="rpm__sensor_8h.html#a7bd9698aa6ec5ae5e50583a7d0661963">rpm_sensor.h</a>
 </li>
 <li>rpm_sensor_get_rpm()
-: <a class="el" href="rpm__sensor_8h.html#a9a1ae07808a3f9b217e667660e4fd41a">rpm_sensor.h</a>
-, <a class="el" href="rpm__sensor_8c.html#a9a1ae07808a3f9b217e667660e4fd41a">rpm_sensor.c</a>
+: <a class="el" href="rpm__sensor_8c.html#a9a1ae07808a3f9b217e667660e4fd41a">rpm_sensor.c</a>
+, <a class="el" href="rpm__sensor_8h.html#a9a1ae07808a3f9b217e667660e4fd41a">rpm_sensor.h</a>
 </li>
 <li>RPM_SENSOR_ID
 : <a class="el" href="abi__sender__ids_8h.html#a366120cccd504b29f24896cee4cccf57">abi_sender_ids.h</a>
 </li>
 <li>rpm_sensor_init()
-: <a class="el" href="rpm__sensor_8c.html#aedef6155fceb893c028bdb57041b2177">rpm_sensor.c</a>
-, <a class="el" href="rpm__sensor_8h.html#aedef6155fceb893c028bdb57041b2177">rpm_sensor.h</a>
+: <a class="el" href="rpm__sensor_8h.html#aedef6155fceb893c028bdb57041b2177">rpm_sensor.h</a>
+, <a class="el" href="rpm__sensor_8c.html#aedef6155fceb893c028bdb57041b2177">rpm_sensor.c</a>
 </li>
 <li>rpm_sensor_periodic()
-: <a class="el" href="rpm__sensor_8h.html#a5550963597a0a9158031c44bbf5ecaf2">rpm_sensor.h</a>
-, <a class="el" href="rpm__sensor_8c.html#a5550963597a0a9158031c44bbf5ecaf2">rpm_sensor.c</a>
+: <a class="el" href="rpm__sensor_8c.html#a5550963597a0a9158031c44bbf5ecaf2">rpm_sensor.c</a>
+, <a class="el" href="rpm__sensor_8h.html#a5550963597a0a9158031c44bbf5ecaf2">rpm_sensor.h</a>
 </li>
 <li>rpm_sensor_send_motor()
 : <a class="el" href="rpm__sensor_8c.html#a4e54bc48209e92a5e6743f0fec50fb1c">rpm_sensor.c</a>
@@ -1506,8 +1504,8 @@ $(document).ready(function(){initNavTree('globals_r.html','');});
 : <a class="el" href="rtcm3_8h.html#af73b1c0f15189ba30dc0fe99f3317e23">rtcm3.h</a>
 </li>
 <li>RTCMgetbitu()
-: <a class="el" href="CRC24Q_8h.html#a0852ca13d7774030a7df798732e2dcb4">CRC24Q.h</a>
-, <a class="el" href="rtcm3_8h.html#a91b36270155ba0329e0a4ce357e806a5">rtcm3.h</a>
+: <a class="el" href="rtcm3_8h.html#a91b36270155ba0329e0a4ce357e806a5">rtcm3.h</a>
+, <a class="el" href="CRC24Q_8h.html#a0852ca13d7774030a7df798732e2dcb4">CRC24Q.h</a>
 </li>
 <li>RTCMIN
 : <a class="el" href="LPC21xx_8h.html#a0150d9e65ef842a5636b60239fbc936c">LPC21xx.h</a>
@@ -1541,11 +1539,12 @@ $(document).ready(function(){initNavTree('globals_r.html','');});
 : <a class="el" href="LPC21xx_8h.html#a0c159869d07eba8ed54ecb01a4980165">LPC21xx.h</a>
 </li>
 <li>rtos_mon
-: <a class="el" href="sys__mon__rtos_8h.html#a183fa429fa3abf007df40b5af125f481">sys_mon_rtos.h</a>
-, <a class="el" href="rtos__mon_8c.html#a183fa429fa3abf007df40b5af125f481">rtos_mon.c</a>
+: <a class="el" href="rtos__mon_8c.html#a183fa429fa3abf007df40b5af125f481">rtos_mon.c</a>
+, <a class="el" href="sys__mon__rtos_8h.html#a183fa429fa3abf007df40b5af125f481">sys_mon_rtos.h</a>
 </li>
 <li>rtos_mon_init_arch()
-: <a class="el" href="sys__mon__rtos_8h.html#a1b64b82ab870e30ee1f72178d3f16f74">sys_mon_rtos.h</a>
+: <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c.html#a1b64b82ab870e30ee1f72178d3f16f74">rtos_mon_arch.c</a>
+, <a class="el" href="sys__mon__rtos_8h.html#a1b64b82ab870e30ee1f72178d3f16f74">sys_mon_rtos.h</a>
 , <a class="el" href="sim_2modules_2core_2rtos__mon__arch_8c.html#a1b64b82ab870e30ee1f72178d3f16f74">rtos_mon_arch.c</a>
 </li>
 <li>RTOS_MON_MAX_THREADS
@@ -1555,8 +1554,8 @@ $(document).ready(function(){initNavTree('globals_r.html','');});
 : <a class="el" href="sys__mon__rtos_8h.html#acd36f92f0645ec63b4d2f230a0a93cf2">sys_mon_rtos.h</a>
 </li>
 <li>rtos_mon_periodic_arch()
-: <a class="el" href="sys__mon__rtos_8h.html#a145651dfc10decbb4b6cda9b5876854b">sys_mon_rtos.h</a>
-, <a class="el" href="sim_2modules_2core_2rtos__mon__arch_8c.html#a145651dfc10decbb4b6cda9b5876854b">rtos_mon_arch.c</a>
+: <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c.html#a145651dfc10decbb4b6cda9b5876854b">rtos_mon_arch.c</a>
+, <a class="el" href="sys__mon__rtos_8h.html#a145651dfc10decbb4b6cda9b5876854b">sys_mon_rtos.h</a>
 </li>
 <li>RTOS_MON_THREAD_NAMES
 : <a class="el" href="sys__mon__rtos_8h.html#a07c287521a8737c5cccb28843f6d6084">sys_mon_rtos.h</a>
@@ -1565,8 +1564,8 @@ $(document).ready(function(){initNavTree('globals_r.html','');});
 : <a class="el" href="apogee__1_80_8h.html#abf336788eac71daef505f432e8f80602">apogee_1.0.h</a>
 </li>
 <li>rtp_frame_send()
-: <a class="el" href="rtp_8c.html#a31d0efc8803ccbb83cb0b713e69ff16f">rtp.c</a>
-, <a class="el" href="rtp_8h.html#a31d0efc8803ccbb83cb0b713e69ff16f">rtp.h</a>
+: <a class="el" href="rtp_8h.html#a31d0efc8803ccbb83cb0b713e69ff16f">rtp.h</a>
+, <a class="el" href="rtp_8c.html#a31d0efc8803ccbb83cb0b713e69ff16f">rtp.c</a>
 </li>
 <li>rtp_frame_test()
 : <a class="el" href="rtp_8h.html#a6c9aa998b02c9ff5099bb3fc6bbc2b5e">rtp.h</a>
@@ -1587,12 +1586,12 @@ $(document).ready(function(){initNavTree('globals_r.html','');});
 , <a class="el" href="rotorcraft_2guidance_2guidance__v_8h.html#add8143296d90990e7c8da2e1c67c6e62">guidance_v.h</a>
 </li>
 <li>run_logger()
-: <a class="el" href="high__speed__logger__direct__memory_8h.html#aee2922318f7c228fa538200e527971db">high_speed_logger_direct_memory.h</a>
-, <a class="el" href="high__speed__logger__direct__memory_8c.html#aee2922318f7c228fa538200e527971db">high_speed_logger_direct_memory.c</a>
+: <a class="el" href="high__speed__logger__direct__memory_8c.html#aee2922318f7c228fa538200e527971db">high_speed_logger_direct_memory.c</a>
+, <a class="el" href="high__speed__logger__direct__memory_8h.html#aee2922318f7c228fa538200e527971db">high_speed_logger_direct_memory.h</a>
 </li>
 <li>run_memory_management()
-: <a class="el" href="high__speed__logger__direct__memory_8h.html#a08b60bc2790ff19cbabae3f390132ad7">high_speed_logger_direct_memory.h</a>
-, <a class="el" href="high__speed__logger__direct__memory_8c.html#a08b60bc2790ff19cbabae3f390132ad7">high_speed_logger_direct_memory.c</a>
+: <a class="el" href="high__speed__logger__direct__memory_8c.html#a08b60bc2790ff19cbabae3f390132ad7">high_speed_logger_direct_memory.c</a>
+, <a class="el" href="high__speed__logger__direct__memory_8h.html#a08b60bc2790ff19cbabae3f390132ad7">high_speed_logger_direct_memory.h</a>
 </li>
 <li>runge_kutta_1_float()
 : <a class="el" href="pprz__rk__float_8h.html#adf59a02242f08eba730c793cd28fd826">pprz_rk_float.h</a>
@@ -1605,6 +1604,9 @@ $(document).ready(function(){initNavTree('globals_r.html','');});
 </li>
 <li>RungeKutta()
 : <a class="el" href="UKF__Wind__Estimator_8c.html#a3ce8106141d8e0474d84e6e8872b7318">UKF_Wind_Estimator.c</a>
+</li>
+<li>RX2_POL
+: <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a6aba486a472846ed9ad7015860cd8ca3">board.h</a>
 </li>
 <li>RXBUF_BASE
 : <a class="el" href="w5100_8c.html#a0b61d617d075e2e171480bd2839bf93f">w5100.c</a>
@@ -1636,7 +1638,7 @@ $(document).ready(function(){initNavTree('globals_r.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Nov 8 2017 10:03:16 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:04:33 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

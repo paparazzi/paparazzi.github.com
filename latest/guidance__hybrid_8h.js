@@ -9,6 +9,7 @@ var guidance__hybrid_8h =
     [ "guidance_hybrid_set_cmd_i", "guidance__hybrid_8h.html#a1cfa8fe1e8d7d2711d02b071c4a24523", null ],
     [ "guidance_hybrid_vertical", "guidance__hybrid_8h.html#a579d66799a2ebc105bed0060f17216f7", null ],
     [ "alt_pitch_gain", "guidance__hybrid_8h.html#ad0d86f5d336c804454daa2404ee0c489", null ],
+    [ "force_forward_flight", "guidance__hybrid_8h.html#af8a5dd071abc8df6c3c96887b68dd595", null ],
     [ "guidance_hybrid_norm_ref_airspeed", "guidance__hybrid_8h.html#a08e0a91b27051019fbe697786066f6a6", null ],
     [ "horizontal_speed_gain", "guidance__hybrid_8h.html#ac60f1fe72b2977b65de347d7ef00ab0f", null ],
     [ "max_airspeed", "guidance__hybrid_8h.html#a8272b2bcae7d65113297afe886600fc8", null ],

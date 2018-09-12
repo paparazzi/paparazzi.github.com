@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -119,7 +119,6 @@ $(document).ready(function(){initNavTree('video__thread_8c.html','');});
 <code>#include &lt;errno.h&gt;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
 <code>#include &lt;unistd.h&gt;</code><br />
-<code>#include &lt;sys/time.h&gt;</code><br />
 <code>#include &lt;math.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="v4l2_8h_source.html">lib/v4l/v4l2.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="image_8h_source.html">lib/vision/image.h</a>&quot;</code><br />
@@ -135,7 +134,7 @@ $(document).ready(function(){initNavTree('video__thread_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="video__thread_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2computer__vision_2video__thread_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2computer__vision_2video__thread_8c" id="sw_2airborne_2modules_2computer__vision_2video__thread_8c">
-<area shape="rect" id="node2" href="video__thread_8h.html" title="Start a Video thread and grab images. " alt="" coords="819,109,1005,151"/><area shape="rect" id="node9" href="image_8h.html" title="Image helper functions like resizing, color filter, converters... " alt="" coords="525,363,712,404"/><area shape="rect" id="node29" href="v4l2_8h.html" title="Capture images from a V4L2 device (Video for Linux 2) " alt="" coords="383,199,483,225"/><area shape="rect" id="node31" href="bayer_8h.html" title="lib/vision/bayer.h" alt="" coords="566,117,693,143"/><area shape="rect" id="node32" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="1552,199,1723,225"/><area shape="rect" id="node34" href="rt__priority_8h.html" title="Functions to obtain rt priority or set the nice level. " alt="" coords="1128,117,1221,143"/><area shape="rect" id="node4" href="cv_8h.html" title="Computer vision framework for onboard processing. " alt="" coords="899,199,1114,225"/><area shape="rect" id="node6" href="video__device_8h.html" title="peripherals/video_device.h" alt="" coords="911,281,1102,307"/><area shape="rect" id="node8" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1296,370,1381,397"/><area shape="rect" id="node11" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="624,452,691,479"/><area shape="rect" id="node12" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="753,616,932,643"/><area shape="rect" id="node18" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="237,616,427,643"/><area shape="rect" id="node21" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="615,527,766,568"/><area shape="rect" id="node23" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="441,527,591,568"/><area shape="rect" id="node24" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="842,527,1006,568"/><area shape="rect" id="node13" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="419,691,573,717"/><area shape="rect" id="node16" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="805,691,955,717"/><area shape="rect" id="node22" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="554,616,678,643"/></map>
+<area shape="rect" id="node2" href="video__thread_8h.html" title="Start a Video thread and grab images. " alt="" coords="416,109,603,151"/><area shape="rect" id="node9" href="image_8h.html" title="Image helper functions like resizing, color filter, converters... " alt="" coords="561,363,748,404"/><area shape="rect" id="node29" href="v4l2_8h.html" title="Capture images from a V4L2 device (Video for Linux 2) " alt="" coords="250,199,350,225"/><area shape="rect" id="node31" href="bayer_8h.html" title="lib/vision/bayer.h" alt="" coords="693,117,819,143"/><area shape="rect" id="node32" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="1393,199,1564,225"/><area shape="rect" id="node34" href="rt__priority_8h.html" title="Functions to obtain rt priority or set the nice level. " alt="" coords="1031,117,1124,143"/><area shape="rect" id="node4" href="cv_8h.html" title="Computer vision framework for onboard processing. " alt="" coords="402,199,617,225"/><area shape="rect" id="node6" href="video__device_8h.html" title="peripherals/video_device.h" alt="" coords="414,281,605,307"/><area shape="rect" id="node8" href="inttypes_8h.html" title="inttypes.h" alt="" coords="916,370,1001,397"/><area shape="rect" id="node11" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="705,452,772,479"/><area shape="rect" id="node12" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="588,616,767,643"/><area shape="rect" id="node18" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="1093,616,1283,643"/><area shape="rect" id="node21" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="566,527,717,568"/><area shape="rect" id="node23" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="929,527,1079,568"/><area shape="rect" id="node24" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="741,527,905,568"/><area shape="rect" id="node13" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="1043,691,1197,717"/><area shape="rect" id="node16" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="566,691,717,717"/><area shape="rect" id="node22" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="842,616,966,643"/></map>
 </div>
 </div>
 <p><a href="video__thread_8c_source.html">Go to the source code of this file.</a></p>
@@ -191,7 +190,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Referenced by <a class="el" href="video__thread_8c_source.html#l00087">video_thread_function()</a>.</p>
+<p>Referenced by <a class="el" href="video__thread_8c_source.html#l00084">video_thread_function()</a>.</p>
 
 </div>
 </div>
@@ -205,9 +204,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="video__thread_8c_source.html#l00065">65</a> of file <a class="el" href="video__thread_8c_source.html">video_thread.c</a>.</p>
+<p>Definition at line <a class="el" href="video__thread_8c_source.html#l00063">63</a> of file <a class="el" href="video__thread_8c_source.html">video_thread.c</a>.</p>
 
-<p>Referenced by <a class="el" href="video__thread_8c_source.html#l00195">add_video_device()</a>, <a class="el" href="video__thread_8c_source.html#l00271">video_thread_start()</a>, and <a class="el" href="video__thread_8c_source.html#l00286">video_thread_stop()</a>.</p>
+<p>Referenced by <a class="el" href="video__thread_8c_source.html#l00189">add_video_device()</a>, <a class="el" href="video__thread_8c_source.html#l00268">video_thread_start()</a>, and <a class="el" href="video__thread_8c_source.html#l00282">video_thread_stop()</a>.</p>
 
 </div>
 </div>
@@ -221,9 +220,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="video__thread_8c_source.html#l00059">59</a> of file <a class="el" href="video__thread_8c_source.html">video_thread.c</a>.</p>
+<p>Definition at line <a class="el" href="video__thread_8c_source.html#l00057">57</a> of file <a class="el" href="video__thread_8c_source.html">video_thread.c</a>.</p>
 
-<p>Referenced by <a class="el" href="video__thread_8c_source.html#l00087">video_thread_function()</a>.</p>
+<p>Referenced by <a class="el" href="video__thread_8c_source.html#l00084">video_thread_function()</a>.</p>
 
 </div>
 </div>
@@ -242,9 +241,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="video__thread_8c_source.html#l00195">195</a> of file <a class="el" href="video__thread_8c_source.html">video_thread.c</a>.</p>
+<p>Definition at line <a class="el" href="video__thread_8c_source.html#l00189">189</a> of file <a class="el" href="video__thread_8c_source.html">video_thread.c</a>.</p>
 
-<p>References <a class="el" href="video__thread_8c_source.html#l00069">cameras</a>, <a class="el" href="video__device_8h_source.html#l00048">video_config_t::dev_name</a>, <a class="el" href="video__thread_8c_source.html#l00170">initialize_camera()</a>, <a class="el" href="kremlib_8h_source.html#l00242">printf</a>, and <a class="el" href="video__thread_8c_source.html#l00065">VIDEO_THREAD_MAX_CAMERAS</a>.</p>
+<p>References <a class="el" href="video__thread_8c_source.html#l00067">cameras</a>, <a class="el" href="video__device_8h_source.html#l00059">video_config_t::dev_name</a>, <a class="el" href="video__thread_8c_source.html#l00164">initialize_camera()</a>, and <a class="el" href="video__thread_8c_source.html#l00063">VIDEO_THREAD_MAX_CAMERAS</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -281,11 +280,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="video__thread_8c_source.html#l00170">170</a> of file <a class="el" href="video__thread_8c_source.html">video_thread.c</a>.</p>
+<p>Definition at line <a class="el" href="video__thread_8c_source.html#l00164">164</a> of file <a class="el" href="video__thread_8c_source.html">video_thread.c</a>.</p>
 
-<p>References <a class="el" href="video__device_8h_source.html#l00052">video_config_t::buf_cnt</a>, <a class="el" href="video__device_8h_source.html#l00047">video_config_t::crop</a>, <a class="el" href="video__device_8h_source.html#l00040">video_thread_t::dev</a>, <a class="el" href="video__device_8h_source.html#l00048">video_config_t::dev_name</a>, <a class="el" href="video__device_8h_source.html#l00050">video_config_t::format</a>, <a class="el" href="video__device_8h_source.html#l00045">video_config_t::output_size</a>, <a class="el" href="kremlib_8h_source.html#l00242">printf</a>, <a class="el" href="video__device_8h_source.html#l00046">video_config_t::sensor_size</a>, <a class="el" href="video__device_8h_source.html#l00051">video_config_t::subdev_format</a>, <a class="el" href="video__device_8h_source.html#l00049">video_config_t::subdev_name</a>, <a class="el" href="video__device_8h_source.html#l00054">video_config_t::thread</a>, <a class="el" href="v4l2_8c_source.html#l00183">v4l2_init()</a>, and <a class="el" href="v4l2_8c_source.html#l00136">v4l2_init_subdev()</a>.</p>
+<p>References <a class="el" href="video__device_8h_source.html#l00063">video_config_t::buf_cnt</a>, <a class="el" href="video__device_8h_source.html#l00058">video_config_t::crop</a>, <a class="el" href="video__device_8h_source.html#l00040">video_thread_t::dev</a>, <a class="el" href="video__device_8h_source.html#l00059">video_config_t::dev_name</a>, <a class="el" href="video__device_8h_source.html#l00061">video_config_t::format</a>, <a class="el" href="video__device_8h_source.html#l00056">video_config_t::output_size</a>, <a class="el" href="video__device_8h_source.html#l00057">video_config_t::sensor_size</a>, <a class="el" href="video__device_8h_source.html#l00062">video_config_t::subdev_format</a>, <a class="el" href="video__device_8h_source.html#l00060">video_config_t::subdev_name</a>, <a class="el" href="video__device_8h_source.html#l00065">video_config_t::thread</a>, <a class="el" href="v4l2_8c_source.html#l00183">v4l2_init()</a>, and <a class="el" href="v4l2_8c_source.html#l00136">v4l2_init_subdev()</a>.</p>
 
-<p>Referenced by <a class="el" href="video__thread_8c_source.html#l00195">add_video_device()</a>.</p>
+<p>Referenced by <a class="el" href="video__thread_8c_source.html#l00189">add_video_device()</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -333,11 +332,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="video__thread_8c_source.html#l00231">231</a> of file <a class="el" href="video__thread_8c_source.html">video_thread.c</a>.</p>
+<p>Definition at line <a class="el" href="video__thread_8c_source.html#l00225">225</a> of file <a class="el" href="video__thread_8c_source.html">video_thread.c</a>.</p>
 
-<p>References <a class="el" href="video__device_8h_source.html#l00048">video_config_t::dev_name</a>, <a class="el" href="video__device_8h_source.html#l00039">video_thread_t::is_running</a>, <a class="el" href="kremlib_8h_source.html#l00242">printf</a>, <a class="el" href="video__device_8h_source.html#l00054">video_config_t::thread</a>, and <a class="el" href="video__thread_8c_source.html#l00087">video_thread_function()</a>.</p>
+<p>References <a class="el" href="video__device_8h_source.html#l00059">video_config_t::dev_name</a>, <a class="el" href="video__device_8h_source.html#l00039">video_thread_t::is_running</a>, <a class="el" href="video__device_8h_source.html#l00065">video_config_t::thread</a>, and <a class="el" href="video__thread_8c_source.html#l00084">video_thread_function()</a>.</p>
 
-<p>Referenced by <a class="el" href="video__thread_8c_source.html#l00271">video_thread_start()</a>.</p>
+<p>Referenced by <a class="el" href="video__thread_8c_source.html#l00268">video_thread_start()</a>.</p>
 
 <p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -346,7 +345,7 @@ Variables</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="video__thread_8c_ab813e16de6bb4fcba1ac803cd51e722d_cgraph.png" border="0" usemap="#video__thread_8c_ab813e16de6bb4fcba1ac803cd51e722d_cgraph" alt=""/></div>
 <map name="video__thread_8c_ab813e16de6bb4fcba1ac803cd51e722d_cgraph" id="video__thread_8c_ab813e16de6bb4fcba1ac803cd51e722d_cgraph">
-<area shape="rect" id="node2" href="video__thread_8c.html#a99fd8c1413b858abf320b9adb453ed75" title="Handles all the video streaming and saving of the image shots This is a separate thread, so it needs to be thread safe! " alt="" coords="196,233,359,260"/><area shape="rect" id="node3" href="image_8c.html#ab5cc0250c461b9d2f043e4884f6b9a53" title="Create a new image. " alt="" coords="841,196,951,223"/><area shape="rect" id="node4" href="v4l2_8c.html#a4efccaca5c6c386d09e315ccfcaa3581" title="Start capturing images in streaming mode (Thread safe) " alt="" coords="415,5,557,32"/><area shape="rect" id="node7" href="libisp_8c.html#a1b23f6d5fe4f4e5c8e38944439156f19" title="configure_isp" alt="" coords="433,56,539,83"/><area shape="rect" id="node10" href="rt__priority_8h.html#ad24a15cd8740f6a59aa1a3fd3f8c74bb" title="set_nice_level" alt="" coords="431,157,541,184"/><area shape="rect" id="node11" href="linux_2mcu__periph_2sys__time__arch_8h.html#afcf2b9e660762eef1d26b9b44cafacb1" title="elapsed time in microsecs between two timespecs " alt="" coords="407,208,565,235"/><area shape="rect" id="node12" href="v4l2_8c.html#a5f8eea1ef0eb13865ad6753e02f4a283" title="Get the latest image buffer and lock it (Thread safe, BLOCKING) This functions blocks until image acc..." alt="" coords="425,259,547,285"/><area shape="rect" id="node13" href="bayer_8h.html#ac5dfa338e1c818c31921acfdd170051b" title="Decode Bayer Pattern. " alt="" coords="437,309,535,336"/><area shape="rect" id="node15" href="cv_8c.html#a600c1d8570ebc9340cee21772e84f022" title="cv_run_device" alt="" coords="430,360,542,387"/><area shape="rect" id="node19" href="v4l2_8c.html#a865e07dd33caf3bb71a3b90834b308c3" title="Free the image and enqueue the buffer (Thread safe) This must be done after processing the image..." alt="" coords="423,411,549,437"/><area shape="rect" id="node20" href="image_8c.html#aa09d6434519478ba26eab12a96d600ba" title="Free the image. " alt="" coords="439,461,533,488"/><area shape="rect" id="node5" href="v4l2_8c.html#a3016fdd985a61647b2fc6a653ebfcfaa" title="The main capturing thread This thread handles the queue and dequeue of buffers, to make sure only the..." alt="" coords="613,5,767,32"/><area shape="rect" id="node6" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup. " alt="" coords="824,5,968,32"/><area shape="rect" id="node8" href="libisp_8c.html#a18baccdcb0a85933c9d8aad524c46673" title="This is taken from libisp. " alt="" coords="641,56,739,83"/><area shape="rect" id="node9" href="libisp_8c.html#a8ece15cff340c783aed0144eab145207" title="This is taken from libisp. " alt="" coords="815,56,977,83"/><area shape="rect" id="node14" href="bayer_8h.html#a7bcab48c91c2c274a2e94e848a106f11" title="clip" alt="" coords="669,284,711,311"/><area shape="rect" id="node16" href="cv_8c.html#abcef27aac4d31a36682981e347cd6f3a" title="cv_async_function" alt="" coords="621,335,759,361"/><area shape="rect" id="node18" href="cv_8c.html#a9ccbed9793580feadb878ae82db54f7f" title="timeval_diff" alt="" coords="643,385,737,412"/><area shape="rect" id="node17" href="image_8c.html#a02932625f9aeb66da70c89a2f2d3a052" title="Copy an image from inut to output This will only work if the formats are the same. " alt="" coords="847,335,945,361"/></map>
+<area shape="rect" id="node2" href="video__thread_8c.html#a99fd8c1413b858abf320b9adb453ed75" title="Handles all the video streaming and saving of the image shots This is a separate thread, so it needs to be thread safe! " alt="" coords="196,259,359,285"/><area shape="rect" id="node3" href="image_8c.html#ab5cc0250c461b9d2f043e4884f6b9a53" title="Create a new image. " alt="" coords="823,208,934,235"/><area shape="rect" id="node4" href="v4l2_8c.html#a4efccaca5c6c386d09e315ccfcaa3581" title="Start capturing images in streaming mode (Thread safe) " alt="" coords="407,5,548,32"/><area shape="rect" id="node6" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup. " alt="" coords="807,31,951,57"/><area shape="rect" id="node7" href="libisp_8c.html#a1b23f6d5fe4f4e5c8e38944439156f19" title="configure_isp" alt="" coords="424,107,531,133"/><area shape="rect" id="node10" href="rt__priority_8h.html#ad24a15cd8740f6a59aa1a3fd3f8c74bb" title="set_nice_level" alt="" coords="422,208,533,235"/><area shape="rect" id="node11" href="v4l2_8c.html#a5f8eea1ef0eb13865ad6753e02f4a283" title="Get the latest image buffer and lock it (Thread safe, BLOCKING) This functions blocks until image acc..." alt="" coords="416,259,539,285"/><area shape="rect" id="node12" href="bayer_8h.html#ac5dfa338e1c818c31921acfdd170051b" title="Decode Bayer Pattern. " alt="" coords="428,309,527,336"/><area shape="rect" id="node14" href="cv_8c.html#a600c1d8570ebc9340cee21772e84f022" title="cv_run_device" alt="" coords="421,360,533,387"/><area shape="rect" id="node17" href="image_8c.html#aa09d6434519478ba26eab12a96d600ba" title="Free the image. " alt="" coords="831,385,926,412"/><area shape="rect" id="node19" href="v4l2_8c.html#a865e07dd33caf3bb71a3b90834b308c3" title="Free the image and enqueue the buffer (Thread safe) This must be done after processing the image..." alt="" coords="414,461,541,488"/><area shape="rect" id="node20" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a74db3eed857f9c53bb67db256c12bc83" title="sys_time_usleep(uint32_t us) " alt="" coords="413,512,541,539"/><area shape="rect" id="node5" href="v4l2_8c.html#a3016fdd985a61647b2fc6a653ebfcfaa" title="The main capturing thread This thread handles the queue and dequeue of buffers, to make sure only the..." alt="" coords="596,5,749,32"/><area shape="rect" id="node8" href="libisp_8c.html#a18baccdcb0a85933c9d8aad524c46673" title="This is taken from libisp. " alt="" coords="623,107,722,133"/><area shape="rect" id="node9" href="libisp_8c.html#a8ece15cff340c783aed0144eab145207" title="This is taken from libisp. " alt="" coords="797,107,960,133"/><area shape="rect" id="node13" href="bayer_8h.html#a7bcab48c91c2c274a2e94e848a106f11" title="clip" alt="" coords="651,259,694,285"/><area shape="rect" id="node15" href="cv_8c.html#abcef27aac4d31a36682981e347cd6f3a" title="cv_async_function" alt="" coords="603,309,742,336"/><area shape="rect" id="node18" href="cv_8c.html#a9ccbed9793580feadb878ae82db54f7f" title="timeval_diff" alt="" coords="625,360,720,387"/><area shape="rect" id="node16" href="image_8c.html#a02932625f9aeb66da70c89a2f2d3a052" title="Copy an image from inut to output This will only work if the formats are the same. " alt="" coords="829,309,928,336"/></map>
 </div>
 </p>
 
@@ -385,11 +384,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="video__thread_8c_source.html#l00246">246</a> of file <a class="el" href="video__thread_8c_source.html">video_thread.c</a>.</p>
+<p>Definition at line <a class="el" href="video__thread_8c_source.html#l00243">243</a> of file <a class="el" href="video__thread_8c_source.html">video_thread.c</a>.</p>
 
-<p>References <a class="el" href="video__device_8h_source.html#l00040">video_thread_t::dev</a>, <a class="el" href="video__device_8h_source.html#l00039">video_thread_t::is_running</a>, <a class="el" href="v4l2_8h_source.html#l00050">v4l2_device::name</a>, <a class="el" href="kremlib_8h_source.html#l00242">printf</a>, <a class="el" href="video__device_8h_source.html#l00054">video_config_t::thread</a>, and <a class="el" href="v4l2_8c_source.html#l00486">v4l2_stop_capture()</a>.</p>
+<p>References <a class="el" href="video__device_8h_source.html#l00040">video_thread_t::dev</a>, <a class="el" href="video__device_8h_source.html#l00039">video_thread_t::is_running</a>, <a class="el" href="v4l2_8h_source.html#l00050">v4l2_device::name</a>, <a class="el" href="video__device_8h_source.html#l00065">video_config_t::thread</a>, and <a class="el" href="v4l2_8c_source.html#l00490">v4l2_stop_capture()</a>.</p>
 
-<p>Referenced by <a class="el" href="video__thread_8c_source.html#l00286">video_thread_stop()</a>.</p>
+<p>Referenced by <a class="el" href="video__thread_8c_source.html#l00282">video_thread_stop()</a>.</p>
 
 <p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -439,11 +438,11 @@ Variables</h2></td></tr>
 
 <p>Handles all the video streaming and saving of the image shots This is a separate thread, so it needs to be thread safe! </p>
 
-<p>Definition at line <a class="el" href="video__thread_8c_source.html#l00087">87</a> of file <a class="el" href="video__thread_8c_source.html">video_thread.c</a>.</p>
+<p>Definition at line <a class="el" href="video__thread_8c_source.html#l00084">84</a> of file <a class="el" href="video__thread_8c_source.html">video_thread.c</a>.</p>
 
-<p>References <a class="el" href="bayer_8h_source.html#l00055">BayerToYUV()</a>, <a class="el" href="libisp_8c_source.html#l00163">configure_isp()</a>, <a class="el" href="cv_8c_source.html#l00162">cv_run_device()</a>, <a class="el" href="video__device_8h_source.html#l00040">video_thread_t::dev</a>, <a class="el" href="video__device_8h_source.html#l00048">video_config_t::dev_name</a>, <a class="el" href="video__device_8h_source.html#l00053">video_config_t::filters</a>, <a class="el" href="video__device_8h_source.html#l00056">video_config_t::fps</a>, <a class="el" href="image_8c_source.html#l00038">image_create()</a>, <a class="el" href="image_8c_source.html#l00063">image_free()</a>, <a class="el" href="image_8h_source.html#l00036">IMAGE_YUV422</a>, <a class="el" href="video__thread_8c.html#ab0f21f9e77da0895e31da6d6497b9d09">IMG_FLT_SIZE</a>, <a class="el" href="video__device_8h_source.html#l00039">video_thread_t::is_running</a>, <a class="el" href="rt__priority_8h_source.html#l00069">set_nice_level()</a>, <a class="el" href="linux_2mcu__periph_2sys__time__arch_8h_source.html#l00053">sys_time_elapsed_us()</a>, <a class="el" href="video__device_8h_source.html#l00054">video_config_t::thread</a>, <a class="el" href="v4l2_8c_source.html#l00406">v4l2_image_free()</a>, <a class="el" href="v4l2_8c_source.html#l00332">v4l2_image_get()</a>, <a class="el" href="v4l2_8c_source.html#l00427">v4l2_start_capture()</a>, <a class="el" href="video__device_8h_source.html#l00034">VIDEO_FILTER_DEBAYER</a>, <a class="el" href="video__device_8h_source.html#l00035">VIDEO_FILTER_ISP</a>, and <a class="el" href="video__thread_8c_source.html#l00059">VIDEO_THREAD_NICE_LEVEL</a>.</p>
+<p>References <a class="el" href="bayer_8h_source.html#l00055">BayerToYUV()</a>, <a class="el" href="libisp_8c_source.html#l00163">configure_isp()</a>, <a class="el" href="cv_8c_source.html#l00177">cv_run_device()</a>, <a class="el" href="video__device_8h_source.html#l00040">video_thread_t::dev</a>, <a class="el" href="video__device_8h_source.html#l00059">video_config_t::dev_name</a>, <a class="el" href="video__device_8h_source.html#l00064">video_config_t::filters</a>, <a class="el" href="video__device_8h_source.html#l00067">video_config_t::fps</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00068">get_sys_time_usec()</a>, <a class="el" href="image_8c_source.html#l00039">image_create()</a>, <a class="el" href="image_8c_source.html#l00064">image_free()</a>, <a class="el" href="image_8h_source.html#l00036">IMAGE_YUV422</a>, <a class="el" href="video__thread_8c.html#ab0f21f9e77da0895e31da6d6497b9d09">IMG_FLT_SIZE</a>, <a class="el" href="video__device_8h_source.html#l00039">video_thread_t::is_running</a>, <a class="el" href="rt__priority_8h_source.html#l00069">set_nice_level()</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00095">sys_time_usleep()</a>, <a class="el" href="video__device_8h_source.html#l00065">video_config_t::thread</a>, <a class="el" href="v4l2_8c_source.html#l00406">v4l2_image_free()</a>, <a class="el" href="v4l2_8c_source.html#l00332">v4l2_image_get()</a>, <a class="el" href="v4l2_8c_source.html#l00427">v4l2_start_capture()</a>, <a class="el" href="video__device_8h_source.html#l00034">VIDEO_FILTER_DEBAYER</a>, <a class="el" href="video__device_8h_source.html#l00035">VIDEO_FILTER_ISP</a>, and <a class="el" href="video__thread_8c_source.html#l00057">VIDEO_THREAD_NICE_LEVEL</a>.</p>
 
-<p>Referenced by <a class="el" href="video__thread_8c_source.html#l00231">start_video_thread()</a>.</p>
+<p>Referenced by <a class="el" href="video__thread_8c_source.html#l00225">start_video_thread()</a>.</p>
 
 <p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -452,7 +451,7 @@ Variables</h2></td></tr>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="video__thread_8c_a99fd8c1413b858abf320b9adb453ed75_cgraph.png" border="0" usemap="#video__thread_8c_a99fd8c1413b858abf320b9adb453ed75_cgraph" alt=""/></div>
 <map name="video__thread_8c_a99fd8c1413b858abf320b9adb453ed75_cgraph" id="video__thread_8c_a99fd8c1413b858abf320b9adb453ed75_cgraph">
-<area shape="rect" id="node2" href="bayer_8h.html#ac5dfa338e1c818c31921acfdd170051b" title="Decode Bayer Pattern. " alt="" coords="246,19,345,45"/><area shape="rect" id="node4" href="libisp_8c.html#a1b23f6d5fe4f4e5c8e38944439156f19" title="configure_isp" alt="" coords="242,81,349,108"/><area shape="rect" id="node7" href="cv_8c.html#a600c1d8570ebc9340cee21772e84f022" title="cv_run_device" alt="" coords="239,157,351,184"/><area shape="rect" id="node10" href="image_8c.html#ab5cc0250c461b9d2f043e4884f6b9a53" title="Create a new image. " alt="" coords="650,183,761,209"/><area shape="rect" id="node12" href="image_8c.html#aa09d6434519478ba26eab12a96d600ba" title="Free the image. " alt="" coords="248,259,343,285"/><area shape="rect" id="node13" href="rt__priority_8h.html#ad24a15cd8740f6a59aa1a3fd3f8c74bb" title="set_nice_level" alt="" coords="240,309,351,336"/><area shape="rect" id="node14" href="linux_2mcu__periph_2sys__time__arch_8h.html#afcf2b9e660762eef1d26b9b44cafacb1" title="elapsed time in microsecs between two timespecs " alt="" coords="216,360,375,387"/><area shape="rect" id="node15" href="v4l2_8c.html#a865e07dd33caf3bb71a3b90834b308c3" title="Free the image and enqueue the buffer (Thread safe) This must be done after processing the image..." alt="" coords="232,411,359,437"/><area shape="rect" id="node16" href="v4l2_8c.html#a5f8eea1ef0eb13865ad6753e02f4a283" title="Get the latest image buffer and lock it (Thread safe, BLOCKING) This functions blocks until image acc..." alt="" coords="234,461,357,488"/><area shape="rect" id="node17" href="v4l2_8c.html#a4efccaca5c6c386d09e315ccfcaa3581" title="Start capturing images in streaming mode (Thread safe) " alt="" coords="225,512,366,539"/><area shape="rect" id="node3" href="bayer_8h.html#a7bcab48c91c2c274a2e94e848a106f11" title="clip" alt="" coords="478,5,521,32"/><area shape="rect" id="node5" href="libisp_8c.html#a18baccdcb0a85933c9d8aad524c46673" title="This is taken from libisp. " alt="" coords="450,56,549,83"/><area shape="rect" id="node6" href="libisp_8c.html#a8ece15cff340c783aed0144eab145207" title="This is taken from libisp. " alt="" coords="624,56,787,83"/><area shape="rect" id="node8" href="cv_8c.html#abcef27aac4d31a36682981e347cd6f3a" title="cv_async_function" alt="" coords="430,107,569,133"/><area shape="rect" id="node11" href="cv_8c.html#a9ccbed9793580feadb878ae82db54f7f" title="timeval_diff" alt="" coords="452,157,547,184"/><area shape="rect" id="node9" href="image_8c.html#a02932625f9aeb66da70c89a2f2d3a052" title="Copy an image from inut to output This will only work if the formats are the same. " alt="" coords="656,107,755,133"/><area shape="rect" id="node18" href="v4l2_8c.html#a3016fdd985a61647b2fc6a653ebfcfaa" title="The main capturing thread This thread handles the queue and dequeue of buffers, to make sure only the..." alt="" coords="423,512,576,539"/><area shape="rect" id="node19" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup. " alt="" coords="633,512,777,539"/></map>
+<area shape="rect" id="node2" href="bayer_8h.html#ac5dfa338e1c818c31921acfdd170051b" title="Decode Bayer Pattern. " alt="" coords="237,19,336,45"/><area shape="rect" id="node4" href="libisp_8c.html#a1b23f6d5fe4f4e5c8e38944439156f19" title="configure_isp" alt="" coords="233,95,340,121"/><area shape="rect" id="node7" href="cv_8c.html#a600c1d8570ebc9340cee21772e84f022" title="cv_run_device" alt="" coords="231,157,343,184"/><area shape="rect" id="node10" href="image_8c.html#ab5cc0250c461b9d2f043e4884f6b9a53" title="Create a new image. " alt="" coords="633,183,743,209"/><area shape="rect" id="node11" href="image_8c.html#aa09d6434519478ba26eab12a96d600ba" title="Free the image. " alt="" coords="641,247,735,273"/><area shape="rect" id="node13" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup. " alt="" coords="616,335,760,361"/><area shape="rect" id="node14" href="rt__priority_8h.html#ad24a15cd8740f6a59aa1a3fd3f8c74bb" title="set_nice_level" alt="" coords="231,411,342,437"/><area shape="rect" id="node15" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a74db3eed857f9c53bb67db256c12bc83" title="sys_time_usleep(uint32_t us) " alt="" coords="223,461,351,488"/><area shape="rect" id="node16" href="v4l2_8c.html#a865e07dd33caf3bb71a3b90834b308c3" title="Free the image and enqueue the buffer (Thread safe) This must be done after processing the image..." alt="" coords="223,512,350,539"/><area shape="rect" id="node17" href="v4l2_8c.html#a5f8eea1ef0eb13865ad6753e02f4a283" title="Get the latest image buffer and lock it (Thread safe, BLOCKING) This functions blocks until image acc..." alt="" coords="225,563,348,589"/><area shape="rect" id="node18" href="v4l2_8c.html#a4efccaca5c6c386d09e315ccfcaa3581" title="Start capturing images in streaming mode (Thread safe) " alt="" coords="216,360,357,387"/><area shape="rect" id="node3" href="bayer_8h.html#a7bcab48c91c2c274a2e94e848a106f11" title="clip" alt="" coords="461,5,503,32"/><area shape="rect" id="node5" href="libisp_8c.html#a18baccdcb0a85933c9d8aad524c46673" title="This is taken from libisp. " alt="" coords="433,56,531,83"/><area shape="rect" id="node6" href="libisp_8c.html#a8ece15cff340c783aed0144eab145207" title="This is taken from libisp. " alt="" coords="607,56,769,83"/><area shape="rect" id="node8" href="cv_8c.html#abcef27aac4d31a36682981e347cd6f3a" title="cv_async_function" alt="" coords="413,107,551,133"/><area shape="rect" id="node12" href="cv_8c.html#a9ccbed9793580feadb878ae82db54f7f" title="timeval_diff" alt="" coords="435,157,529,184"/><area shape="rect" id="node9" href="image_8c.html#a02932625f9aeb66da70c89a2f2d3a052" title="Copy an image from inut to output This will only work if the formats are the same. " alt="" coords="639,107,737,133"/><area shape="rect" id="node19" href="v4l2_8c.html#a3016fdd985a61647b2fc6a653ebfcfaa" title="The main capturing thread This thread handles the queue and dequeue of buffers, to make sure only the..." alt="" coords="405,360,559,387"/></map>
 </div>
 </p>
 
@@ -485,7 +484,7 @@ Variables</h2></td></tr>
 
 <p>Initialize the view video. </p>
 
-<p>Definition at line <a class="el" href="video__thread_8c_source.html#l00264">264</a> of file <a class="el" href="video__thread_8c_source.html">video_thread.c</a>.</p>
+<p>Definition at line <a class="el" href="video__thread_8c_source.html#l00261">261</a> of file <a class="el" href="video__thread_8c_source.html">video_thread.c</a>.</p>
 
 </div>
 </div>
@@ -505,7 +504,7 @@ Variables</h2></td></tr>
 
 <p>A dummy for now. </p>
 
-<p>Definition at line <a class="el" href="video__thread_8c_source.html#l00077">77</a> of file <a class="el" href="video__thread_8c_source.html">video_thread.c</a>.</p>
+<p>Definition at line <a class="el" href="video__thread_8c_source.html#l00075">75</a> of file <a class="el" href="video__thread_8c_source.html">video_thread.c</a>.</p>
 
 </div>
 </div>
@@ -525,7 +524,7 @@ Variables</h2></td></tr>
 
 <p>Starts the streaming of a all cameras. </p>
 
-<p>Definition at line <a class="el" href="video__thread_8c_source.html#l00271">271</a> of file <a class="el" href="video__thread_8c_source.html">video_thread.c</a>.</p>
+<p>Definition at line <a class="el" href="video__thread_8c_source.html#l00268">268</a> of file <a class="el" href="video__thread_8c_source.html">video_thread.c</a>.</p>
 
 </div>
 </div>
@@ -545,7 +544,7 @@ Variables</h2></td></tr>
 
 <p>Stops the streaming of all cameras This could take some time, because the thread is stopped asynchronous. </p>
 
-<p>Definition at line <a class="el" href="video__thread_8c_source.html#l00286">286</a> of file <a class="el" href="video__thread_8c_source.html">video_thread.c</a>.</p>
+<p>Definition at line <a class="el" href="video__thread_8c_source.html#l00282">282</a> of file <a class="el" href="video__thread_8c_source.html">video_thread.c</a>.</p>
 
 </div>
 </div>
@@ -568,9 +567,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="video__thread_8c_source.html#l00069">69</a> of file <a class="el" href="video__thread_8c_source.html">video_thread.c</a>.</p>
+<p>Definition at line <a class="el" href="video__thread_8c_source.html#l00067">67</a> of file <a class="el" href="video__thread_8c_source.html">video_thread.c</a>.</p>
 
-<p>Referenced by <a class="el" href="video__thread_8c_source.html#l00195">add_video_device()</a>, <a class="el" href="video__thread_8c_source.html#l00271">video_thread_start()</a>, and <a class="el" href="video__thread_8c_source.html#l00286">video_thread_stop()</a>.</p>
+<p>Referenced by <a class="el" href="video__thread_8c_source.html#l00189">add_video_device()</a>, <a class="el" href="video__thread_8c_source.html#l00268">video_thread_start()</a>, and <a class="el" href="video__thread_8c_source.html#l00282">video_thread_stop()</a>.</p>
 
 </div>
 </div>
@@ -580,7 +579,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_304e79c9f5d09ea65a2f55aafb6a6b9d.html">computer_vision</a></li><li class="navelem"><a class="el" href="video__thread_8c.html">video_thread.c</a></li>
-    <li class="footer">Generated on Wed Nov 8 2017 10:02:19 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:03:28 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

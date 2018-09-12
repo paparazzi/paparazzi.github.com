@@ -1,5 +1,5 @@
 <map id="stateCalcSpeedEnu_f" name="stateCalcSpeedEnu_f">
-<area shape="rect" id="node2" href="$group__state__velocity.html#ga8e7f86fe83bd1b767f9c5016ed245822" title="Get ground speed in local ENU coordinates (float). " alt="" coords="212,360,367,387"/>
+<area shape="rect" id="node2" href="$group__state__velocity.html#ga8e7f86fe83bd1b767f9c5016ed245822" title="Get ground speed in local ENU coordinates (float). " alt="" coords="212,503,367,529"/>
 <area shape="rect" id="node3" href="$fixedwing_2autopilot__firmware_8c.html#ae015b1759bb416ee56b7a3a403b12985" title="send_estimator" alt="" coords="461,56,584,83"/>
 <area shape="rect" id="node9" href="$energy__ctrl_8c.html#a1fca0891379c02432d10e73daef730d3" title="ac_char_update" alt="" coords="461,107,585,133"/>
 <area shape="rect" id="node10" href="$guidance__common_8h.html#a38f0bbceda8812281fc650c2c1aac6c8" title="Auto&#45;throttle inner loop. " alt="" coords="704,157,831,184"/>
@@ -9,14 +9,19 @@
 <area shape="rect" id="node25" href="$optical__flow__landing_8c.html#a9628e4f2b9a046bb7ff80c208ab85daa" title="Run the optical flow landing module. " alt="" coords="433,360,612,387"/>
 <area shape="rect" id="node27" href="$decawave__anchorless__communication_8h.html#a666f8ed1285e6941cc47eeef8857a2bd" title="This function periodically sends state data over the serial (which is received by the arduino) ..." alt="" coords="430,411,615,453"/>
 <area shape="rect" id="node28" href="$max7456_8h.html#a1d6d4401863cba472802654472781050" title="max7456_periodic" alt="" coords="453,477,592,504"/>
-<area shape="rect" id="node29" href="$meteo__france__DAQ_8h.html#a428cd9287f9e24f69dd92d696e0a053a" title="mf_daq_send_state" alt="" coords="449,528,597,555"/>
-<area shape="rect" id="node30" href="$meteo__france__DAQ_8h.html#ac95d521856a9424097d05f67c635c10e" title="parse_mf_daq_msg" alt="" coords="449,579,597,605"/>
-<area shape="rect" id="node31" href="$potential_8h.html#a2ecae8ed4b80ccfece655453a56db7cd" title="potential_task" alt="" coords="467,629,579,656"/>
-<area shape="rect" id="node32" href="$tcas_8h.html#adb2f00821358ed6ad0f366e6a2422558" title="tcas_periodic_task_1Hz" alt="" coords="437,680,609,707"/>
-<area shape="rect" id="node4" href="$rotorcraft_2autopilot__firmware_8h.html#a2bb31e995242a89c837b4eda1d08fe57" title="Init function. " alt="" coords="684,56,851,83"/>
+<area shape="rect" id="node29" href="$dragspeed_8c.html#abeaf6ff173980a45c9b5e36a1834b8dc" title="Calibrate drag coefficient by comparing accelerometer measurements to INS velocities. " alt="" coords="465,528,580,555"/>
+<area shape="rect" id="node32" href="$dragspeed_8c.html#a42b1bf05665b86938bd682bb1cb84ac7" title="Calibrate zero velocity by measuring the accelerations while the drone hovers in&#45;place. " alt="" coords="467,579,579,605"/>
+<area shape="rect" id="node33" href="$dragspeed_8c.html#a633022ff064733c702ae49155480d81e" title="send_dragspeed" alt="" coords="703,629,831,656"/>
+<area shape="rect" id="node34" href="$meteo__france__DAQ_8h.html#a428cd9287f9e24f69dd92d696e0a053a" title="mf_daq_send_state" alt="" coords="449,680,597,707"/>
+<area shape="rect" id="node35" href="$meteo__france__DAQ_8h.html#ac95d521856a9424097d05f67c635c10e" title="parse_mf_daq_msg" alt="" coords="449,731,597,757"/>
+<area shape="rect" id="node36" href="$potential_8h.html#a2ecae8ed4b80ccfece655453a56db7cd" title="potential_task" alt="" coords="467,781,579,808"/>
+<area shape="rect" id="node37" href="$tcas_8h.html#adb2f00821358ed6ad0f366e6a2422558" title="tcas_periodic_task_1Hz" alt="" coords="437,832,609,859"/>
+<area shape="rect" id="node38" href="$nav__rover__base_8c.html#ac1382cbcc0f52b6f9e2387e53105be7d" title="nav_approaching" alt="" coords="457,883,588,909"/>
+<area shape="rect" id="node41" href="$relative__localization__filter_8c.html#a2e719dd98f227ac5efe36084651ddf78" title="range_msg_callback" alt="" coords="447,937,599,964"/>
+<area shape="rect" id="node4" href="$rover_2autopilot__firmware_8h.html#a2bb31e995242a89c837b4eda1d08fe57" title="Init function. " alt="" coords="684,56,851,83"/>
 <area shape="rect" id="node5" href="$autopilot_8h.html#a9d3557653abfc3d4c428724b249f6d5e" title="Autopilot initialization function. " alt="" coords="927,56,1031,83"/>
 <area shape="rect" id="node6" href="$fixedwing_2main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="1159,5,1223,32"/>
-<area shape="rect" id="node8" href="$rotorcraft_2main__fbw_8h.html#a3719465edd56d2b587a6b340f29e4f90" title="Main initialization. " alt="" coords="1151,56,1231,83"/>
+<area shape="rect" id="node8" href="$rover_2main__ap_8h.html#a3719465edd56d2b587a6b340f29e4f90" title="Main initialization. " alt="" coords="1151,56,1231,83"/>
 <area shape="rect" id="node7" href="$sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="1360,5,1431,32"/>
 <area shape="rect" id="node11" href="$fixedwing_2autopilot__static_8h.html#a315546d9034361bbc6970b3792dc8b67" title="attitude_loop" alt="" coords="926,157,1033,184"/>
 <area shape="rect" id="node18" href="$fixedwing_2guidance_2guidance__v_8c.html#a7fe0d6e838155d9c38c8cf8a8413cf21" title="General guidance logic This will call the proper control loops according to the sub&#45;modes. " alt="" coords="904,208,1055,235"/>
@@ -24,10 +29,15 @@
 <area shape="rect" id="node14" href="$fixedwing_2main__ap_8h.html#a43fd973b44bcc2c2583cf8287048212f" title="handle_periodic_tasks_ap" alt="" coords="1511,107,1697,133"/>
 <area shape="rect" id="node17" href="$sim__ap_8c.html#a4f982dacbb35ccfc3e0fcaa64156a2a0" title="sim_periodic_task" alt="" coords="1536,208,1672,235"/>
 <area shape="rect" id="node13" href="$autopilot_8h.html#a1914661233fbbed6c2ee653b99757652" title="Autopilot periodic call at PERIODIC_FREQUENCY. " alt="" coords="1328,157,1463,184"/>
-<area shape="rect" id="node15" href="$rotorcraft_2main__fbw_8h.html#a81249e4ef19b8766982a6fe272d89bae" title="main_periodic" alt="" coords="1549,157,1659,184"/>
-<area shape="rect" id="node16" href="$rotorcraft_2main__fbw_8h.html#ab79bb049ce85bf2ed3a75c6b12c02bcb" title="handle_periodic_tasks" alt="" coords="1745,157,1908,184"/>
+<area shape="rect" id="node15" href="$rover_2main__ap_8h.html#a81249e4ef19b8766982a6fe272d89bae" title="main_periodic" alt="" coords="1549,157,1659,184"/>
+<area shape="rect" id="node16" href="$rover_2main__ap_8h.html#ab79bb049ce85bf2ed3a75c6b12c02bcb" title="handle_periodic_tasks" alt="" coords="1745,157,1908,184"/>
 <area shape="rect" id="node20" href="$fixedwing_2guidance_2guidance__v_8c.html#a38f0bbceda8812281fc650c2c1aac6c8" title="Auto&#45;throttle inner loop. " alt="" coords="704,208,831,235"/>
 <area shape="rect" id="node22" href="$guidance__v__n_8c.html#a38f0bbceda8812281fc650c2c1aac6c8" title="Auto&#45;throttle inner loop. " alt="" coords="704,284,831,311"/>
 <area shape="rect" id="node23" href="$guidance__v__n_8c.html#a7fe0d6e838155d9c38c8cf8a8413cf21" title="General guidance logic This will call the proper control loops according to the sub&#45;modes. " alt="" coords="904,284,1055,311"/>
-<area shape="rect" id="node26" href="$vertical__ctrl__module__demo_8h.html#a24ef9289dfa15084a7457a97ad7632c8" title="guidance_v_module_run" alt="" coords="679,360,856,387"/>
+<area shape="rect" id="node26" href="$optical__flow__landing_8c.html#a24ef9289dfa15084a7457a97ad7632c8" title="guidance_v_module_run" alt="" coords="679,360,856,387"/>
+<area shape="rect" id="node30" href="$dragspeed_8c.html#aacd6b1869f263f90a6f1fbe777a87793" title="accel_cb" alt="" coords="729,579,806,605"/>
+<area shape="rect" id="node31" href="$dragspeed_8h.html#a05d45f13ce0a7459512936aff9e9ad29" title="dragspeed_init" alt="" coords="921,604,1037,631"/>
+<area shape="rect" id="node39" href="$rover_2navigation_8h.html#a7254173fb2381632e0554d801cc59897" title="Registering functions. " alt="" coords="687,832,848,859"/>
+<area shape="rect" id="node40" href="$nav__rover__base_8h.html#a7dbbfec5c5db9defc4309d2a6cb092b4" title="Init and register nav functions. " alt="" coords="924,857,1035,884"/>
+<area shape="rect" id="node42" href="$relative__localization__filter_8h.html#a6da4d8bf05d9240f503606d63b6be761" title="relative_localization\l_filter_init" alt="" coords="694,934,841,975"/>
 </map>

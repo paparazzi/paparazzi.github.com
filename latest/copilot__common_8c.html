@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -153,6 +153,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a8b94bc3c335ccfb1b5b7d65df6789dc1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="copilot__common_8c.html#a8b94bc3c335ccfb1b5b7d65df6789dc1">copilot_parse_copilot_status_dl</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf)</td></tr>
 <tr class="memdesc:a8b94bc3c335ccfb1b5b7d65df6789dc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">copy COPILOT_STATUS message and mark it to be sent  <a href="#a8b94bc3c335ccfb1b5b7d65df6789dc1">More...</a><br /></td></tr>
 <tr class="separator:a8b94bc3c335ccfb1b5b7d65df6789dc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f66771f594519e6d3b8efd400ec4162"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="copilot__common_8c.html#a6f66771f594519e6d3b8efd400ec4162">copilot_parse_payload_command_dl</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf)</td></tr>
+<tr class="memdesc:a6f66771f594519e6d3b8efd400ec4162"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pass through PAYLOAD_COMMAND message and send it as PAYLOAD msg over telemetry.  <a href="#a6f66771f594519e6d3b8efd400ec4162">More...</a><br /></td></tr>
+<tr class="separator:a6f66771f594519e6d3b8efd400ec4162"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -218,7 +221,7 @@ Variables</h2></td></tr>
 
 <p>copy CAMERA_PAYLOAD message and mark it to be sent </p>
 
-<p>Definition at line <a class="el" href="copilot__common_8c_source.html#l00159">159</a> of file <a class="el" href="copilot__common_8c_source.html">copilot_common.c</a>.</p>
+<p>Definition at line <a class="el" href="copilot__common_8c_source.html#l00147">147</a> of file <a class="el" href="copilot__common_8c_source.html">copilot_common.c</a>.</p>
 
 <p>References <a class="el" href="copilot__common_8c_source.html#l00051">cam_payload</a>, <a class="el" href="copilot_8h_source.html#l00059">CameraPayload::door_status</a>, <a class="el" href="copilot_8h_source.html#l00060">CameraPayload::error_code</a>, <a class="el" href="pprz__mutex_8h_source.html#l00046">PPRZ_MUTEX_LOCK</a>, <a class="el" href="pprz__mutex_8h_source.html#l00047">PPRZ_MUTEX_UNLOCK</a>, <a class="el" href="copilot__common_8c_source.html#l00048">send_cam_payload</a>, <a class="el" href="copilot_8h_source.html#l00056">CameraPayload::timestamp</a>, <a class="el" href="copilot_8h_source.html#l00058">CameraPayload::used_disk</a>, and <a class="el" href="copilot_8h_source.html#l00057">CameraPayload::used_mem</a>.</p>
 
@@ -242,7 +245,7 @@ Variables</h2></td></tr>
 <p>Message processing functions.</p>
 <p>In case of multiple cameras, it is up to the payload computer to send CAMERA_SNAPSHOT messages for each camera at proper interval, so the values don't get overwritten. </p>
 
-<p>Definition at line <a class="el" href="copilot__common_8c_source.html#l00139">139</a> of file <a class="el" href="copilot__common_8c_source.html">copilot_common.c</a>.</p>
+<p>Definition at line <a class="el" href="copilot__common_8c_source.html#l00127">127</a> of file <a class="el" href="copilot__common_8c_source.html">copilot_common.c</a>.</p>
 
 <p>References <a class="el" href="copilot_8h_source.html#l00069">CameraSnapshot::array_temp</a>, <a class="el" href="copilot_8h_source.html#l00064">CameraSnapshot::cam_id</a>, <a class="el" href="copilot__common_8c_source.html#l00052">cam_snapshot</a>, <a class="el" href="copilot_8h_source.html#l00065">CameraSnapshot::cam_state</a>, <a class="el" href="copilot_8h_source.html#l00068">CameraSnapshot::lens_temp</a>, <a class="el" href="pprz__mutex_8h_source.html#l00046">PPRZ_MUTEX_LOCK</a>, <a class="el" href="pprz__mutex_8h_source.html#l00047">PPRZ_MUTEX_UNLOCK</a>, <a class="el" href="copilot__common_8c_source.html#l00047">send_cam_snapshot</a>, <a class="el" href="copilot_8h_source.html#l00066">CameraSnapshot::snapshot_num</a>, and <a class="el" href="copilot_8h_source.html#l00067">CameraSnapshot::snapshot_valid</a>.</p>
 
@@ -264,9 +267,31 @@ Variables</h2></td></tr>
 
 <p>copy COPILOT_STATUS message and mark it to be sent </p>
 
-<p>Definition at line <a class="el" href="copilot__common_8c_source.html#l00177">177</a> of file <a class="el" href="copilot__common_8c_source.html">copilot_common.c</a>.</p>
+<p>Definition at line <a class="el" href="copilot__common_8c_source.html#l00165">165</a> of file <a class="el" href="copilot__common_8c_source.html">copilot_common.c</a>.</p>
 
 <p>References <a class="el" href="copilot__common_8c_source.html#l00053">copilot_status</a>, <a class="el" href="copilot_8h_source.html#l00077">CopilotStatus::error_code</a>, <a class="el" href="pprz__mutex_8h_source.html#l00046">PPRZ_MUTEX_LOCK</a>, <a class="el" href="pprz__mutex_8h_source.html#l00047">PPRZ_MUTEX_UNLOCK</a>, <a class="el" href="copilot__common_8c_source.html#l00049">send_copilot_status</a>, <a class="el" href="copilot_8h_source.html#l00076">CopilotStatus::status</a>, <a class="el" href="copilot_8h_source.html#l00073">CopilotStatus::timestamp</a>, <a class="el" href="copilot_8h_source.html#l00075">CopilotStatus::used_disk</a>, and <a class="el" href="copilot_8h_source.html#l00074">CopilotStatus::used_mem</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6f66771f594519e6d3b8efd400ec4162"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void copilot_parse_payload_command_dl </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramname"><em>buf</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pass through PAYLOAD_COMMAND message and send it as PAYLOAD msg over telemetry. </p>
+
+<p>Definition at line <a class="el" href="copilot__common_8c_source.html#l00184">184</a> of file <a class="el" href="copilot__common_8c_source.html">copilot_common.c</a>.</p>
+
+<p>References <a class="el" href="downlink_8h_source.html#l00042">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00046">DefaultDevice</a>, <a class="el" href="main__demo5_8c_source.html#l00064">dl_buffer</a>, <a class="el" href="extra__pprz__dl_8c_source.html#l00050">extra_dl_buffer</a>, and <a class="el" href="extra__pprz__dl_8c_source.html#l00052">extra_pprz_tp</a>.</p>
 
 </div>
 </div>
@@ -353,7 +378,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="copilot__common_8c_source.html#l00051">51</a> of file <a class="el" href="copilot__common_8c_source.html">copilot_common.c</a>.</p>
 
-<p>Referenced by <a class="el" href="copilot__common_8c_source.html#l00060">copilot_init()</a>, <a class="el" href="copilot__common_8c_source.html#l00159">copilot_parse_cam_payload_dl()</a>, and <a class="el" href="copilot__common_8c_source.html#l00076">copilot_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="copilot__common_8c_source.html#l00060">copilot_init()</a>, <a class="el" href="copilot__common_8c_source.html#l00147">copilot_parse_cam_payload_dl()</a>, and <a class="el" href="copilot__common_8c_source.html#l00076">copilot_periodic()</a>.</p>
 
 </div>
 </div>
@@ -369,7 +394,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="copilot__common_8c_source.html#l00052">52</a> of file <a class="el" href="copilot__common_8c_source.html">copilot_common.c</a>.</p>
 
-<p>Referenced by <a class="el" href="copilot__common_8c_source.html#l00060">copilot_init()</a>, <a class="el" href="copilot__common_8c_source.html#l00139">copilot_parse_cam_snapshot_dl()</a>, and <a class="el" href="copilot__common_8c_source.html#l00076">copilot_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="copilot__common_8c_source.html#l00060">copilot_init()</a>, <a class="el" href="copilot__common_8c_source.html#l00127">copilot_parse_cam_snapshot_dl()</a>, and <a class="el" href="copilot__common_8c_source.html#l00076">copilot_periodic()</a>.</p>
 
 </div>
 </div>
@@ -385,7 +410,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="copilot__common_8c_source.html#l00053">53</a> of file <a class="el" href="copilot__common_8c_source.html">copilot_common.c</a>.</p>
 
-<p>Referenced by <a class="el" href="copilot__common_8c_source.html#l00060">copilot_init()</a>, <a class="el" href="copilot__common_8c_source.html#l00177">copilot_parse_copilot_status_dl()</a>, and <a class="el" href="copilot__common_8c_source.html#l00076">copilot_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="copilot__common_8c_source.html#l00060">copilot_init()</a>, <a class="el" href="copilot__common_8c_source.html#l00165">copilot_parse_copilot_status_dl()</a>, and <a class="el" href="copilot__common_8c_source.html#l00076">copilot_periodic()</a>.</p>
 
 </div>
 </div>
@@ -401,7 +426,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="copilot__common_8c_source.html#l00048">48</a> of file <a class="el" href="copilot__common_8c_source.html">copilot_common.c</a>.</p>
 
-<p>Referenced by <a class="el" href="copilot__common_8c_source.html#l00060">copilot_init()</a>, <a class="el" href="copilot__common_8c_source.html#l00159">copilot_parse_cam_payload_dl()</a>, and <a class="el" href="copilot__common_8c_source.html#l00076">copilot_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="copilot__common_8c_source.html#l00060">copilot_init()</a>, <a class="el" href="copilot__common_8c_source.html#l00147">copilot_parse_cam_payload_dl()</a>, and <a class="el" href="copilot__common_8c_source.html#l00076">copilot_periodic()</a>.</p>
 
 </div>
 </div>
@@ -417,7 +442,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="copilot__common_8c_source.html#l00047">47</a> of file <a class="el" href="copilot__common_8c_source.html">copilot_common.c</a>.</p>
 
-<p>Referenced by <a class="el" href="copilot__common_8c_source.html#l00060">copilot_init()</a>, <a class="el" href="copilot__common_8c_source.html#l00139">copilot_parse_cam_snapshot_dl()</a>, and <a class="el" href="copilot__common_8c_source.html#l00076">copilot_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="copilot__common_8c_source.html#l00060">copilot_init()</a>, <a class="el" href="copilot__common_8c_source.html#l00127">copilot_parse_cam_snapshot_dl()</a>, and <a class="el" href="copilot__common_8c_source.html#l00076">copilot_periodic()</a>.</p>
 
 </div>
 </div>
@@ -433,7 +458,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="copilot__common_8c_source.html#l00049">49</a> of file <a class="el" href="copilot__common_8c_source.html">copilot_common.c</a>.</p>
 
-<p>Referenced by <a class="el" href="copilot__common_8c_source.html#l00060">copilot_init()</a>, <a class="el" href="copilot__common_8c_source.html#l00177">copilot_parse_copilot_status_dl()</a>, and <a class="el" href="copilot__common_8c_source.html#l00076">copilot_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="copilot__common_8c_source.html#l00060">copilot_init()</a>, <a class="el" href="copilot__common_8c_source.html#l00165">copilot_parse_copilot_status_dl()</a>, and <a class="el" href="copilot__common_8c_source.html#l00076">copilot_periodic()</a>.</p>
 
 </div>
 </div>
@@ -443,7 +468,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_6eed4cd5dc7f8396232b71b94973ca94.html">mission</a></li><li class="navelem"><a class="el" href="copilot__common_8c.html">copilot_common.c</a></li>
-    <li class="footer">Generated on Wed Nov 8 2017 10:02:29 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:03:37 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

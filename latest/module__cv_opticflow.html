@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -121,14 +121,6 @@ Airframe file section</h2>
  Description: ABI sender id for opticflow messages (default: 1)</li>
 <li><b>name</b> <code>CAMERA</code> <b>value:</b> <em>bottom_camera|front_camera</em> <br />
  Description: The V4L2 camera device that is used for the calculations</li>
-<li><b>name</b> <code>FOV_W</code> <b>value:</b> <em>0.89360857702</em> <br />
- Description: The field of view width of the bottom camera (Defaults are from an ARDrone 2)</li>
-<li><b>name</b> <code>FOV_H</code> <b>value:</b> <em>0.67020643276</em> <br />
- Description: The field of view height of the bottom camera (Defaults are from an ARDrone 2)</li>
-<li><b>name</b> <code>FX</code> <b>value:</b> <em>343.1211</em> <br />
- Description: Field in the x direction of the camera (Defaults are from an ARDrone 2)</li>
-<li><b>name</b> <code>FY</code> <b>value:</b> <em>348.5053</em> <br />
- Description: Field in the y direction of the camera (Defaults are from an ARDrone 2)</li>
 <li><b>name</b> <code>DEROTATION_CORRECTION_FACTOR_X</code> <b>value:</b> <em>1.0</em> <br />
  Description: Correction factor for derotation (in x direction), estimated from a fit between the gyro's rates and the resulting flow (caused by the camera not being exactly in the middle (Defaults are from an ARDrone 2)</li>
 <li><b>name</b> <code>DEROTATION_CORRECTION_FACTOR_Y</code> <b>value:</b> <em>1.0</em> <br />
@@ -151,6 +143,10 @@ Airframe file section</h2>
  Description: Whether to keep already tracked corners in memory for the next frame or re-detect new ones every time</li>
 <li><b>name</b> <code>FPS</code> <b>value:</b> <em>0</em> <br />
  Description: The (maximum) frequency to run the calculations at. If zero, it will max out at the camera frame rate</li>
+<li><b>name</b> <code>TRACK_BACK</code> <b>value:</b> <em>TRUE</em> <br />
+ Description: Whether flow vectors are tracked back to the previous image and only kept if they end up close to the original point.</li>
+<li><b>name</b> <code>SHOW_FLOW</code> <b>value:</b> <em>TRUE</em> <br />
+ Description: Whether to draw the flow vectors in the image.</li>
 <li><b>name</b> <code>MAX_TRACK_CORNERS</code> <b>value:</b> <em>25</em> <br />
  Description: The maximum amount of corners the Lucas Kanade algorithm is tracking between two frames</li>
 <li><b>name</b> <code>MAX_ITERATIONS</code> <b>value:</b> <em>10</em> <br />
@@ -233,6 +229,7 @@ Source Files</h2>
 <li><a class="el" href="fast__rosten_8c.html">modules/computer_vision/lib/vision/fast_rosten.c</a></li>
 <li><a class="el" href="lucas__kanade_8c.html">modules/computer_vision/lib/vision/lucas_kanade.c</a></li>
 <li><a class="el" href="edge__flow_8c.html">modules/computer_vision/lib/vision/edge_flow.c</a></li>
+<li><a class="el" href="undistortion_8c.html">modules/computer_vision/lib/vision/undistortion.c</a></li>
 </ul>
 <h2><a class="anchor" id="module_xml__cv_opticflow"></a>
 Raw cv_opticflow.xml file:</h2>
@@ -255,10 +252,6 @@ Raw cv_opticflow.xml file:</h2>
 <div class="line">      &lt;define name=&quot;CAMERA&quot; value=&quot;bottom_camera|front_camera&quot; description=&quot;The V4L2 camera device that is used for the calculations&quot;/&gt;</div>
 <div class="line"></div>
 <div class="line">      &lt;!-- Camera parameters --&gt;</div>
-<div class="line">      &lt;define name=&quot;FOV_W&quot; value=&quot;0.89360857702&quot; description=&quot;The field of view width of the bottom camera (Defaults are from an ARDrone 2)&quot;/&gt;</div>
-<div class="line">      &lt;define name=&quot;FOV_H&quot; value=&quot;0.67020643276&quot; description=&quot;The field of view height of the bottom camera (Defaults are from an ARDrone 2)&quot;/&gt;</div>
-<div class="line">      &lt;define name=&quot;FX&quot; value=&quot;343.1211&quot; description=&quot;Field in the x direction of the camera (Defaults are from an ARDrone 2)&quot;/&gt;</div>
-<div class="line">      &lt;define name=&quot;FY&quot; value=&quot;348.5053&quot; description=&quot;Field in the y direction of the camera (Defaults are from an ARDrone 2)&quot;/&gt;</div>
 <div class="line">      &lt;define name=&quot;DEROTATION_CORRECTION_FACTOR_X&quot; value=&quot;1.0&quot; description=&quot;Correction factor for derotation (in x direction), estimated from a fit between the gyro&#39;s rates and the resulting flow (caused by the camera not being exactly in the middle (Defaults are from an ARDrone 2)&quot;/&gt;</div>
 <div class="line">      &lt;define name=&quot;DEROTATION_CORRECTION_FACTOR_Y&quot; value=&quot;1.0&quot; description=&quot;Correction factor for derotation (in y direction), estimated from a fit between the gyro&#39;s rates and the resulting flow (caused by the camera not being exactly in the middle (Defaults are from an ARDrone 2)&quot;/&gt;</div>
 <div class="line">      &lt;configure name=&quot;BODY_TO_CAM_PHI&quot; value=&quot;0&quot; description=&quot;Rotation from body frame to camera frame around x axis&quot;/&gt;</div>
@@ -275,6 +268,8 @@ Raw cv_opticflow.xml file:</h2>
 <div class="line">      &lt;define name=&quot;MEDIAN_FILTER&quot; value=&quot;0&quot; description=&quot;A median filter on the resulting velocities to be turned on or off (last 5 measurements)&quot;/&gt;</div>
 <div class="line">      &lt;define name=&quot;FEATURE_MANAGEMENT&quot; value=&quot;1&quot; description=&quot;Whether to keep already tracked corners in memory for the next frame or re-detect new ones every time&quot;/&gt;</div>
 <div class="line">      &lt;define name=&quot;FPS&quot; value=&quot;0&quot; description=&quot;The (maximum) frequency to run the calculations at. If zero, it will max out at the camera frame rate&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;TRACK_BACK&quot; value=&quot;TRUE&quot; description=&quot;Whether flow vectors are tracked back to the previous image and only kept if they end up close to the original point.&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;SHOW_FLOW&quot; value=&quot;TRUE&quot; description=&quot;Whether to draw the flow vectors in the image.&quot;/&gt;</div>
 <div class="line"></div>
 <div class="line">      &lt;!-- Lucas Kanade optical flow calculation parameters --&gt;</div>
 <div class="line">      &lt;define name=&quot;MAX_TRACK_CORNERS&quot; value=&quot;25&quot; description=&quot;The maximum amount of corners the Lucas Kanade algorithm is tracking between two frames&quot;/&gt;</div>
@@ -313,12 +308,14 @@ Raw cv_opticflow.xml file:</h2>
 <div class="line">        &lt;dl_setting var=&quot;opticflow.derotation&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;1&quot; module=&quot;computer_vision/opticflow_module&quot; values=&quot;OFF|ON&quot; shortname=&quot;derotation&quot; param=&quot;OPTICFLOW_DEROTATION&quot;/&gt;</div>
 <div class="line">        &lt;dl_setting var=&quot;opticflow.median_filter&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;1&quot; values=&quot;OFF|ON&quot; shortname=&quot;median_filter&quot; param=&quot;OPTICFLOW_MEDIAN_FILTER&quot;/&gt;</div>
 <div class="line">        &lt;dl_setting var=&quot;opticflow.feature_management&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;1&quot; values=&quot;OFF|ON&quot; shortname=&quot;feature_management&quot; param=&quot;OPTICFLOW_FEATURE_MANAGEMENT&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting var=&quot;opticflow.track_back&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;1&quot; values=&quot;FALSE|TRUE&quot; shortname=&quot;track_back&quot; param=&quot;OPTICFLOW_TRACK_BACK&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting var=&quot;opticflow.show_flow&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;1&quot; values=&quot;FALSE|TRUE&quot; shortname=&quot;show_flow&quot; param=&quot;OPTICFLOW_SHOW_FLOW&quot;/&gt;</div>
+<div class="line"></div>
 <div class="line"></div>
 <div class="line">        &lt;!-- Specifically for Lucas Kanade and FAST9 --&gt;</div>
 <div class="line">        &lt;dl_setting var=&quot;opticflow.max_track_corners&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;500&quot; shortname=&quot;max_trck_corners&quot; param=&quot;OPTICFLOW_MAX_TRACK_CORNERS&quot;/&gt;</div>
 <div class="line">        &lt;dl_setting var=&quot;opticflow.max_iterations&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;100&quot; shortname=&quot;max_iterations&quot; param=&quot;OPTICFLOW_MAX_ITERATIONS&quot;/&gt;</div>
 <div class="line">        &lt;dl_setting var=&quot;opticflow.threshold_vec&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;100&quot; shortname=&quot;threshold_vec&quot; param=&quot;OPTICFLOW_THRESHOLD_VEC&quot;/&gt;</div>
-<div class="line"></div>
 <div class="line">        &lt;dl_setting var=&quot;opticflow.fast9_adaptive&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;1&quot; values=&quot;FALSE|TRUE&quot; shortname=&quot;fast9_adaptive&quot; param=&quot;OPTICFLOW_FAST9_ADAPTIVE&quot;/&gt;</div>
 <div class="line">        &lt;dl_setting var=&quot;opticflow.fast9_threshold&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;255&quot; shortname=&quot;fast9_threshold&quot; param=&quot;OPTICFLOW_FAST9_THRESHOLD&quot;/&gt;</div>
 <div class="line">        &lt;dl_setting var=&quot;opticflow.fast9_min_distance&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;500&quot; shortname=&quot;fast9_min_distance&quot; param=&quot;OPTICFLOW_FAST9_MIN_DISTANCE&quot;/&gt;</div>
@@ -370,6 +367,8 @@ Raw cv_opticflow.xml file:</h2>
 <div class="line">    &lt;file name=&quot;fast_rosten.c&quot; dir=&quot;modules/computer_vision/lib/vision&quot;/&gt;</div>
 <div class="line">    &lt;file name=&quot;lucas_kanade.c&quot; dir=&quot;modules/computer_vision/lib/vision&quot;/&gt;</div>
 <div class="line">    &lt;file name=&quot;edge_flow.c&quot; dir=&quot;modules/computer_vision/lib/vision&quot;/&gt;</div>
+<div class="line">    &lt;file name=&quot;undistortion.c&quot; dir=&quot;modules/computer_vision/lib/vision&quot;/&gt;</div>
+<div class="line"></div>
 <div class="line">  &lt;/makefile&gt;</div>
 <div class="line">&lt;/module&gt;</div>
 </div><!-- fragment --> </div></div><!-- contents -->
@@ -378,7 +377,7 @@ Raw cv_opticflow.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Wed Nov 8 2017 10:02:47 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:03:57 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

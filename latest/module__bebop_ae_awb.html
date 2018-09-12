@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -103,7 +103,7 @@ $(document).ready(function(){initNavTree('module__bebop_ae_awb.html','');});
 <div class="title">bebop_ae_awb module </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><b>Auto exposure and Auto white balancing for the Bebop 1 and 2</b></p>
+<div class="textblock"><p><b>Auto Exposure and Auto White Balancing for the Bebop 1 and 2</b></p>
 <p>No detailed description...</p>
 <h1><a class="anchor" id="module_load_example__bebop_ae_awb"></a>
 Example for airframe file</h1>
@@ -114,10 +114,44 @@ Module configuration options</h1>
 Airframe file section</h2>
 <ul>
 <li><b>section</b> name: <code>bebop_ae_awb</code> <ul>
+<li><b>name</b> <code>BEBOP_AE_AWB_NICE</code> <b>value:</b> <em>5</em> <br />
+ Description: Nice setting for async thread</li>
 <li><b>name</b> <code>BEBOP_AUTO_EXPOSURE</code> <b>value:</b> <em>true</em> <br />
  Description: perform auto exposure (Default: true)</li>
+<li><b>name</b> <code>BEBOP_AE_AWB_CAMERA</code> <b>value:</b> <em>front_camera|bottom_camera</em> <br />
+ Description: which camera to run the AWB and AE</li>
+<li><b>name</b> <code>BEBOP_AE_AWB_VERBOSE</code> <b>value:</b> <em>TRUE|FALSE</em> <br />
+ Description: Whether or not to print debug information to the terminal</li>
+<li><b>name</b> <code>BEBOP_AE_EXPOSURE_GAIN</code> <b>value:</b> <em>0.75</em> <br />
+ Description: Gain to apply to autoexposure change</li>
+<li><b>name</b> <code>BEBOP_AE_MIDDLE_INDEX</code> <b>value:</b> <em>110</em> <br />
+ Description: Bin index to be considered as the center of the brightness bins</li>
+<li><b>name</b> <code>BEBOP_AE_DARK_IGNORE</code> <b>value:</b> <em>0.2</em> <br />
+ Description: Proportion of dark bins to ignore in the computation of the autoexposure</li>
+<li><b>name</b> <code>BEBOP_AE_BRIGHT_IGNORE</code> <b>value:</b> <em>0.6</em> <br />
+ Description: Proportion of bright bins to ignore in the computation of the autoexposure</li>
+<li><b>name</b> <code>BEBOP_AE_DARK_BINS</code> <b>value:</b> <em>73</em> <br />
+ Description: Number of dark bins to consider as dark in the autoexposure</li>
+<li><b>name</b> <code>BEBOP_AE_BRIGHT_BINS</code> <b>value:</b> <em>73</em> <br />
+ Description: Number of bright bins to consider as bright in autoexposure</li>
 <li><b>name</b> <code>BEBOP_AUTO_WHITE_BALANCE</code> <b>value:</b> <em>true</em> <br />
  Description: Perform auto white balance (Default: true)</li>
+<li><b>name</b> <code>BEBOP_AWB_GAIN</code> <b>value:</b> <em>0.5</em> <br />
+ Description: Gain to apply to AWB changes</li>
+<li><b>name</b> <code>BEBOP_AWB_MIN_GAINS</code> <b>value:</b> <em>1</em> <br />
+ Description: Minimum gain for AWB</li>
+<li><b>name</b> <code>BEBOP_AWB_MAX_GAINS</code> <b>value:</b> <em>63.5</em> <br />
+ Description: Maximum gain for AWB</li>
+<li><b>name</b> <code>BEBOP_AWB_GAIN_SCHEDULING</code> <b>value:</b> <em>TRUE|FALSE</em> <br />
+ Description: Activates gain scheduling for the AWB, helps to handle fast changes in brightness</li>
+<li><b>name</b> <code>BEBOP_AWB_GAIN_SCHEDULING_TARGET</code> <b>value:</b> <em>10</em> <br />
+ Description: Target white balance</li>
+<li><b>name</b> <code>BEBOP_AWB_GAIN_SCHEDULING_TOLERANCE</code> <b>value:</b> <em>7.5</em> <br />
+ Description: Tolerance around the target exposure outside of which gain scheduling is activated</li>
+<li><b>name</b> <code>BEBOP_AWB_GAIN_SCHEDULING_STEP</code> <b>value:</b> <em>0.02</em> <br />
+ Description: Step size of the AWB gain scheduling correction</li>
+<li><b>name</b> <code>BEBOP_AWB_MIN_GREY_PIXELS</code> <b>value:</b> <em>1000</em> <br />
+ Description: Minimum number of grey pixels in image, when lower, the AWB is reset</li>
 </ul>
 </li>
 </ul>
@@ -128,17 +162,6 @@ Init Functions</h2>
 <p>These initialization functions are called once on startup.</p>
 <ul>
 <li><a class="el" href="bebop__ae__awb_8c.html#a488d91f59b9036f352ebc7fcafdedf7b">bebop_ae_awb_init()</a></li>
-</ul>
-<h2><a class="anchor" id="periodic_functions"></a>
-Periodic Functions</h2>
-<p>These functions are called periodically at the specified frequency from the module periodic loop.</p>
-<ul>
-<li><a class="el" href="bebop__ae__awb_8c.html#a031dd0b0370498bb2226f1335f8f7b56">bebop_ae_awb_periodic()</a><ul>
-<li>Frequency in Hz: <em>5</em> </li>
-<li>Autorun: <em>TRUE</em> <br />
- Periodic function automatically starts after init.</li>
-</ul>
-</li>
 </ul>
 <h1><a class="anchor" id="files"></a>
 Files</h1>
@@ -159,19 +182,52 @@ Raw bebop_ae_awb.xml file:</h2>
 <div class="line"></div>
 <div class="line">&lt;module name=&quot;bebop_ae_awb&quot; dir=&quot;computer_vision&quot;&gt;</div>
 <div class="line">  &lt;doc&gt;</div>
-<div class="line">    &lt;description&gt;Auto exposure and Auto white balancing for the Bebop 1 and 2&lt;/description&gt;</div>
-<div class="line">    </div>
+<div class="line">    &lt;description&gt;Auto Exposure and Auto White Balancing for the Bebop 1 and 2&lt;/description&gt;</div>
 <div class="line">    &lt;section name=&quot;bebop_ae_awb&quot;&gt;</div>
+<div class="line">      &lt;define  name=&quot;BEBOP_AE_AWB_NICE&quot; value=&quot;5&quot; description=&quot;Nice setting for async thread&quot;/&gt;</div>
 <div class="line">      &lt;define name=&quot;BEBOP_AUTO_EXPOSURE&quot; value=&quot;true&quot; description=&quot;perform auto exposure (Default: true)&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;BEBOP_AE_AWB_CAMERA&quot; value=&quot;front_camera|bottom_camera&quot; description=&quot;which camera to run the AWB and AE&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;BEBOP_AE_AWB_VERBOSE&quot; value=&quot;TRUE|FALSE&quot; description=&quot;Whether or not to print debug information to the terminal&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;BEBOP_AE_EXPOSURE_GAIN&quot; value=&quot;0.75&quot; description=&quot;Gain to apply to autoexposure change&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;BEBOP_AE_MIDDLE_INDEX&quot; value=&quot;110&quot; description=&quot;Bin index to be considered as the center of the brightness bins&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;BEBOP_AE_DARK_IGNORE&quot; value=&quot;0.2&quot; description=&quot;Proportion of dark bins to ignore in the computation of the autoexposure&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;BEBOP_AE_BRIGHT_IGNORE&quot; value=&quot;0.6&quot; description=&quot;Proportion of bright bins to ignore in the computation of the autoexposure&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;BEBOP_AE_DARK_BINS&quot; value=&quot;73&quot; description=&quot;Number of dark bins to consider as dark in the autoexposure&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;BEBOP_AE_BRIGHT_BINS&quot; value=&quot;73&quot; description=&quot;Number of bright bins to consider as bright in autoexposure&quot;/&gt;</div>
 <div class="line">      &lt;define name=&quot;BEBOP_AUTO_WHITE_BALANCE&quot; value=&quot;true&quot; description=&quot;Perform auto white balance (Default: true)&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;BEBOP_AWB_GAIN&quot; value=&quot;0.5&quot; description=&quot;Gain to apply to AWB changes&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;BEBOP_AWB_MIN_GAINS&quot; value=&quot;1&quot; description=&quot;Minimum gain for AWB&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;BEBOP_AWB_MAX_GAINS&quot; value=&quot;63.5&quot; description=&quot;Maximum gain for AWB&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;BEBOP_AWB_GAIN_SCHEDULING&quot; value=&quot;TRUE|FALSE&quot; description=&quot;Activates gain scheduling for the AWB, helps to handle fast changes in brightness&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;BEBOP_AWB_GAIN_SCHEDULING_TARGET&quot; value=&quot;10&quot; description=&quot;Target white balance&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;BEBOP_AWB_GAIN_SCHEDULING_TOLERANCE&quot; value=&quot;7.5&quot; description=&quot;Tolerance around the target exposure outside of which gain scheduling is activated&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;BEBOP_AWB_GAIN_SCHEDULING_STEP&quot; value=&quot;0.02&quot; description=&quot;Step size of the AWB gain scheduling correction&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;BEBOP_AWB_MIN_GREY_PIXELS&quot; value=&quot;1000&quot; description=&quot;Minimum number of grey pixels in image, when lower, the AWB is reset&quot;/&gt;</div>
 <div class="line">    &lt;/section&gt;</div>
 <div class="line">  &lt;/doc&gt;</div>
-<div class="line">  </div>
+<div class="line">  &lt;settings&gt;</div>
+<div class="line">  &lt;dl_settings&gt;</div>
+<div class="line">    &lt;dl_settings NAME=&quot;AE/AWB&quot;&gt;</div>
+<div class="line">      &lt;dl_setting var=&quot;ae_set.active&quot; values=&quot;OFF|ON&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;1&quot; module=&quot;computer_vision/bebop_ae_awb&quot; shortname=&quot;AE active&quot;/&gt;</div>
+<div class="line">      &lt;dl_setting var=&quot;ae_set.exposure_gain&quot; min=&quot;0&quot; step=&quot;0.02&quot; max=&quot;2&quot; module=&quot;computer_vision/bebop_ae_awb&quot; shortname=&quot;AE gain&quot;/&gt;</div>
+<div class="line">      &lt;dl_setting var=&quot;ae_set.middle_index&quot; min=&quot;6&quot; step=&quot;1&quot; max=&quot;249&quot; module=&quot;computer_vision/bebop_ae_awb&quot; shortname=&quot;AE center bin&quot;/&gt;</div>
+<div class="line">      &lt;dl_setting var=&quot;ae_set.dark_bins&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;127&quot; module=&quot;computer_vision/bebop_ae_awb&quot; shortname=&quot;AE dark bins&quot;/&gt;</div>
+<div class="line">      &lt;dl_setting var=&quot;ae_set.bright_bins&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;127&quot; module=&quot;computer_vision/bebop_ae_awb&quot; shortname=&quot;AE bright bins&quot;/&gt;</div>
+<div class="line">      &lt;dl_setting var=&quot;ae_set.dark_ignore&quot; min=&quot;0&quot; step=&quot;0.01&quot; max=&quot;1&quot; module=&quot;computer_vision/bebop_ae_awb&quot; shortname=&quot;AE ignore dark (%)&quot;/&gt;</div>
+<div class="line">      &lt;dl_setting var=&quot;ae_set.bright_ignore&quot; min=&quot;0&quot; step=&quot;0.01&quot; max=&quot;1&quot; module=&quot;computer_vision/bebop_ae_awb&quot; shortname=&quot;AE ignore bright (%)&quot;/&gt;</div>
+<div class="line">      &lt;dl_setting var=&quot;awb_set.active&quot; values=&quot;OFF|ON&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;1&quot; module=&quot;computer_vision/bebop_ae_awb&quot; shortname=&quot;AWB Active&quot;/&gt;</div>
+<div class="line">      &lt;dl_setting var=&quot;awb_set.gain&quot; min=&quot;0&quot; step=&quot;0.02&quot; max=&quot;2&quot; module=&quot;computer_vision/bebop_ae_awb&quot; shortname=&quot;AWB gain&quot;/&gt;</div>
+<div class="line">      &lt;dl_setting var=&quot;awb_set.gain_scheduling&quot; values=&quot;OFF|ON&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;1&quot; module=&quot;computer_vision/bebop_ae_awb&quot; shortname=&quot;AE gain sched&quot;/&gt;</div>
+<div class="line">      &lt;dl_setting var=&quot;awb_set.gain_scheduling_target&quot; min=&quot;1&quot; step=&quot;0.5&quot; max=&quot;20&quot; module=&quot;computer_vision/bebop_ae_awb&quot; shortname=&quot;sched target&quot;/&gt;</div>
+<div class="line">      &lt;dl_setting var=&quot;awb_set.gain_scheduling_tolerance&quot; min=&quot;1&quot; step=&quot;0.5&quot; max=&quot;20&quot; module=&quot;computer_vision/bebop_ae_awb&quot; shortname=&quot;sched tolerance&quot;/&gt;</div>
+<div class="line">      &lt;dl_setting var=&quot;awb_set.gain_scheduling_step&quot; min=&quot;0.005&quot; step=&quot;0.005&quot; max=&quot;0.1&quot; module=&quot;computer_vision/bebop_ae_awb&quot; shortname=&quot;sched step&quot;/&gt;</div>
+<div class="line">    &lt;/dl_settings&gt;</div>
+<div class="line">  &lt;/dl_settings&gt;</div>
+<div class="line">&lt;/settings&gt;</div>
 <div class="line">  &lt;header&gt;</div>
 <div class="line">    &lt;file name=&quot;bebop_ae_awb.h&quot;/&gt;</div>
 <div class="line">  &lt;/header&gt;</div>
 <div class="line">  &lt;init fun=&quot;bebop_ae_awb_init()&quot;/&gt;</div>
-<div class="line">  &lt;periodic fun=&quot;bebop_ae_awb_periodic()&quot; freq=&quot;5&quot; autorun=&quot;TRUE&quot;/&gt;</div>
 <div class="line">  &lt;makefile target=&quot;ap&quot;&gt;</div>
 <div class="line">    &lt;file name=&quot;bebop_ae_awb.c&quot;/&gt;</div>
 <div class="line">  &lt;/makefile&gt;</div>
@@ -183,7 +239,7 @@ Raw bebop_ae_awb.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Wed Nov 8 2017 10:02:46 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:03:55 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

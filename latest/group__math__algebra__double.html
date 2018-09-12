@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -666,7 +666,7 @@ in rad/s^2 </td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="group__math__algebra__double_ga0535deb8e541ae49fbd3fff0ef33347d_icgraph.png" border="0" usemap="#group__math__algebra__double_ga0535deb8e541ae49fbd3fff0ef33347d_icgraph" alt=""/></div>
 <map name="group__math__algebra__double_ga0535deb8e541ae49fbd3fff0ef33347d_icgraph" id="group__math__algebra__double_ga0535deb8e541ae49fbd3fff0ef33347d_icgraph">
-<area shape="rect" id="node2" href="nps__fdm__jsbsim_8cpp.html#a2d617cee29889c9d6592f9978dfa8a31" title="Populates the NPS fdm struct after a simulation step. " alt="" coords="220,31,315,57"/><area shape="rect" id="node3" href="nps__fdm__jsbsim_8cpp.html#a17ec5b69b110d046f9db5b67d2b08779" title="Set JSBsim specific fields that are not used for Gazebo. " alt="" coords="381,5,484,32"/><area shape="rect" id="node6" href="nps__fdm__jsbsim_8cpp.html#a4f72ff1c76415e3e41897d762122c5f8" title="Update the simulation state. " alt="" coords="363,56,503,83"/><area shape="rect" id="node4" href="nps__main__common_8c.html#a92aad3720fb482042b695d66e633699a" title="nps_main_init" alt="" coords="780,5,891,32"/><area shape="rect" id="node5" href="nps__main__hitl_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="943,31,997,57"/><area shape="rect" id="node7" href="nps__main__hitl_8c.html#a9a080385e191a932860731e6f511c775" title="nps_main_run_sim_step" alt="" coords="551,56,728,83"/><area shape="rect" id="node8" href="nps__main__hitl_8c.html#afa201657c19f3eac2d07487bb11a261d" title="nps_main_loop" alt="" coords="776,56,895,83"/></map>
+<area shape="rect" id="node2" href="nps__fdm__jsbsim_8cpp.html#a2d617cee29889c9d6592f9978dfa8a31" title="Populates the NPS fdm struct after a simulation step. " alt="" coords="220,31,315,57"/><area shape="rect" id="node3" href="nps__fdm__jsbsim_8cpp.html#a17ec5b69b110d046f9db5b67d2b08779" title="Initialize actuator dynamics, set unused fields in fdm. " alt="" coords="381,5,484,32"/><area shape="rect" id="node6" href="nps__fdm__jsbsim_8cpp.html#a4f72ff1c76415e3e41897d762122c5f8" title="Update the simulation state. " alt="" coords="363,56,503,83"/><area shape="rect" id="node4" href="nps__main__common_8c.html#a92aad3720fb482042b695d66e633699a" title="nps_main_init" alt="" coords="780,5,891,32"/><area shape="rect" id="node5" href="nps__main__hitl_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="943,31,997,57"/><area shape="rect" id="node7" href="nps__main__hitl_8c.html#a9a080385e191a932860731e6f511c775" title="nps_main_run_sim_step" alt="" coords="551,56,728,83"/><area shape="rect" id="node8" href="nps__main__hitl_8c.html#afa201657c19f3eac2d07487bb11a261d" title="nps_main_loop" alt="" coords="776,56,895,83"/></map>
 </div>
 </p>
 
@@ -810,7 +810,7 @@ in rad/s^2 </td></tr>
 
 <p>References <a class="el" href="pprz__algebra__double_8h_source.html#l00077">DoubleEulers::phi</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00079">DoubleEulers::psi</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00056">DoubleQuat::qi</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00057">DoubleQuat::qx</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00058">DoubleQuat::qy</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00059">DoubleQuat::qz</a>, and <a class="el" href="pprz__algebra__double_8h_source.html#l00078">DoubleEulers::theta</a>.</p>
 
-<p>Referenced by <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00440">decode_ahrspacket()</a>, and <a class="el" href="nps__fdm__gazebo_8cpp_source.html#l00390">gazebo_read()</a>.</p>
+<p>Referenced by <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00440">decode_ahrspacket()</a>, and <a class="el" href="nps__fdm__gazebo_8cpp_source.html#l00462">gazebo_read()</a>.</p>
 
 <p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -1238,7 +1238,7 @@ in rad/s^2 </td></tr>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="group__math__algebra__double_gae5087aa382f54a889f1786194651a2b6_icgraph.png" border="0" usemap="#group__math__algebra__double_gae5087aa382f54a889f1786194651a2b6_icgraph" alt=""/></div>
 <map name="group__math__algebra__double_gae5087aa382f54a889f1786194651a2b6_icgraph" id="group__math__algebra__double_gae5087aa382f54a889f1786194651a2b6_icgraph">
-<area shape="rect" id="node2" href="nps__fdm__crrcsim_8c.html#af6bebbe57b1e739c8b1565a483f91597" title="decode_gpspacket" alt="" coords="219,5,361,32"/><area shape="rect" id="node4" href="group__math__algebra__double.html#ga534b127a8508dc0c012db8db9378af0d" title="normalize 3D vector in place " alt="" coords="201,56,379,83"/><area shape="rect" id="node3" href="nps__fdm__crrcsim_8c.html#a4f72ff1c76415e3e41897d762122c5f8" title="nps_fdm_run_step" alt="" coords="427,5,567,32"/><area shape="rect" id="node5" href="nps__fdm__jsbsim_8cpp.html#a3836be75ba868b34cd08503e2f242ab5" title="Initialize the ltp from the JSBSim location. " alt="" coords="465,56,529,83"/><area shape="rect" id="node6" href="nps__fdm__jsbsim_8cpp.html#a17ec5b69b110d046f9db5b67d2b08779" title="Set JSBsim specific fields that are not used for Gazebo. " alt="" coords="615,56,717,83"/><area shape="rect" id="node7" href="nps__main__common_8c.html#a92aad3720fb482042b695d66e633699a" title="nps_main_init" alt="" coords="765,56,876,83"/><area shape="rect" id="node8" href="nps__main__hitl_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="924,56,979,83"/></map>
+<area shape="rect" id="node2" href="nps__fdm__crrcsim_8c.html#af6bebbe57b1e739c8b1565a483f91597" title="decode_gpspacket" alt="" coords="219,5,361,32"/><area shape="rect" id="node4" href="group__math__algebra__double.html#ga534b127a8508dc0c012db8db9378af0d" title="normalize 3D vector in place " alt="" coords="201,56,379,83"/><area shape="rect" id="node3" href="nps__fdm__crrcsim_8c.html#a4f72ff1c76415e3e41897d762122c5f8" title="nps_fdm_run_step" alt="" coords="427,5,567,32"/><area shape="rect" id="node5" href="nps__fdm__jsbsim_8cpp.html#a3836be75ba868b34cd08503e2f242ab5" title="Initialize the ltp from the JSBSim location. " alt="" coords="465,56,529,83"/><area shape="rect" id="node6" href="nps__fdm__jsbsim_8cpp.html#a17ec5b69b110d046f9db5b67d2b08779" title="Initialize actuator dynamics, set unused fields in fdm. " alt="" coords="615,56,717,83"/><area shape="rect" id="node7" href="nps__main__common_8c.html#a92aad3720fb482042b695d66e633699a" title="nps_main_init" alt="" coords="765,56,876,83"/><area shape="rect" id="node8" href="nps__main__hitl_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="924,56,979,83"/></map>
 </div>
 </p>
 
@@ -1292,7 +1292,7 @@ in rad/s^2 </td></tr>
 <div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="group__math__algebra__double_ga534b127a8508dc0c012db8db9378af0d_icgraph.png" border="0" usemap="#group__math__algebra__double_ga534b127a8508dc0c012db8db9378af0d_icgraph" alt=""/></div>
 <map name="group__math__algebra__double_ga534b127a8508dc0c012db8db9378af0d_icgraph" id="group__math__algebra__double_ga534b127a8508dc0c012db8db9378af0d_icgraph">
-<area shape="rect" id="node2" href="nps__fdm__jsbsim_8cpp.html#a3836be75ba868b34cd08503e2f242ab5" title="Initialize the ltp from the JSBSim location. " alt="" coords="231,5,295,32"/><area shape="rect" id="node3" href="nps__fdm__jsbsim_8cpp.html#a17ec5b69b110d046f9db5b67d2b08779" title="Set JSBsim specific fields that are not used for Gazebo. " alt="" coords="343,5,445,32"/><area shape="rect" id="node4" href="nps__main__common_8c.html#a92aad3720fb482042b695d66e633699a" title="nps_main_init" alt="" coords="493,5,604,32"/><area shape="rect" id="node5" href="nps__main__hitl_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="652,5,707,32"/></map>
+<area shape="rect" id="node2" href="nps__fdm__jsbsim_8cpp.html#a3836be75ba868b34cd08503e2f242ab5" title="Initialize the ltp from the JSBSim location. " alt="" coords="231,5,295,32"/><area shape="rect" id="node3" href="nps__fdm__jsbsim_8cpp.html#a17ec5b69b110d046f9db5b67d2b08779" title="Initialize actuator dynamics, set unused fields in fdm. " alt="" coords="343,5,445,32"/><area shape="rect" id="node4" href="nps__main__common_8c.html#a92aad3720fb482042b695d66e633699a" title="nps_main_init" alt="" coords="493,5,604,32"/><area shape="rect" id="node5" href="nps__main__hitl_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="652,5,707,32"/></map>
 </div>
 </p>
 
@@ -1303,7 +1303,7 @@ in rad/s^2 </td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Nov 8 2017 10:02:53 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:04:04 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

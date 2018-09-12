@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -272,7 +272,7 @@ $(document).ready(function(){initNavTree('nav__bungee__takeoff_8c_source.html','
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;      <a class="code" href="autopilot_8c.html#ab83712cb24bab637f3f254d4a96ada1e">autopilot_set_kill_throttle</a>(<span class="keyword">false</span>);</div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;      <span class="keywordflow">if</span> ((<a class="code" href="group__state__position.html#ga7488f3b1e3afa9515541c0130278bdac">stateGetPositionUtm_f</a>()-&gt;alt &gt; <a class="code" href="nav__bungee__takeoff_8c.html#abab4c4d2267c6dae376d760a7ae658e0">bungee_point</a>.<a class="code" href="group__math__algebra__float.html#adeaa53529844ee1fa7df48e61c3994f7">z</a> + <a class="code" href="nav__bungee__takeoff_8c.html#aee1e2e8f4da2547ed0e3b7541cc538ea">BUNGEE_TAKEOFF_HEIGHT</a>)</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;#<span class="keywordflow">if</span> USE_AIRSPEED</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;#<span class="keywordflow">if</span> <a class="code" href="disco_8h.html#a634090af23161c4f7fef1dcabdc71335">USE_AIRSPEED</a></div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;          &amp;&amp; (<a class="code" href="group__state__wind__airspeed.html#gab0cc6ebb3671ec1b34ac2c33f11c6b26">stateGetAirspeed_f</a>() &gt; BUNGEE_TAKEOFF_AIRSPEED)</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;#endif</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;          ) {</div>
@@ -312,7 +312,7 @@ $(document).ready(function(){initNavTree('nav__bungee__takeoff_8c_source.html','
 <div class="ttc" id="pprz__algebra__float_8h_html"><div class="ttname"><a href="pprz__algebra__float_8h.html">pprz_algebra_float.h</a></div><div class="ttdoc">Paparazzi floating point algebra. </div></div>
 <div class="ttc" id="nav__bungee__takeoff_8c_html_aae6fceafa835980331582dce2475afcb"><div class="ttname"><a href="nav__bungee__takeoff_8c.html#aae6fceafa835980331582dce2475afcb">takeoff_dir</a></div><div class="ttdeci">static struct FloatVect2 takeoff_dir</div><div class="ttdef"><b>Definition:</b> <a href="nav__bungee__takeoff_8c_source.html#l00129">nav_bungee_takeoff.c:129</a></div></div>
 <div class="ttc" id="common__nav_8h_html_a2d51bcd8e90e2dea91009f895a452a22"><div class="ttname"><a href="common__nav_8h.html#a2d51bcd8e90e2dea91009f895a452a22">WaypointX</a></div><div class="ttdeci">#define WaypointX(_wp)</div><div class="ttdef"><b>Definition:</b> <a href="common__nav_8h_source.html#l00045">common_nav.h:45</a></div></div>
-<div class="ttc" id="autopilot_8c_html_ab83712cb24bab637f3f254d4a96ada1e"><div class="ttname"><a href="autopilot_8c.html#ab83712cb24bab637f3f254d4a96ada1e">autopilot_set_kill_throttle</a></div><div class="ttdeci">void autopilot_set_kill_throttle(bool kill)</div><div class="ttdoc">set kill throttle </div><div class="ttdef"><b>Definition:</b> <a href="autopilot_8c_source.html#l00214">autopilot.c:214</a></div></div>
+<div class="ttc" id="autopilot_8c_html_ab83712cb24bab637f3f254d4a96ada1e"><div class="ttname"><a href="autopilot_8c.html#ab83712cb24bab637f3f254d4a96ada1e">autopilot_set_kill_throttle</a></div><div class="ttdeci">void autopilot_set_kill_throttle(bool kill)</div><div class="ttdoc">set kill throttle </div><div class="ttdef"><b>Definition:</b> <a href="autopilot_8c_source.html#l00218">autopilot.c:218</a></div></div>
 <div class="ttc" id="nav__bungee__takeoff_8c_html_a8409c736b1809c2a67bd672e723f9aa4"><div class="ttname"><a href="nav__bungee__takeoff_8c.html#a8409c736b1809c2a67bd672e723f9aa4">BUNGEE_TAKEOFF_MIN_SPEED</a></div><div class="ttdeci">#define BUNGEE_TAKEOFF_MIN_SPEED</div><div class="ttdef"><b>Definition:</b> <a href="nav__bungee__takeoff_8c_source.html#l00106">nav_bungee_takeoff.c:106</a></div></div>
 <div class="ttc" id="nav__bungee__takeoff_8c_html_ab496f035eec714cd74c7ab5315ef1dd9"><div class="ttname"><a href="nav__bungee__takeoff_8c.html#ab496f035eec714cd74c7ab5315ef1dd9">CTakeoffStatus</a></div><div class="ttdeci">static enum TakeoffStatus CTakeoffStatus</div><div class="ttdef"><b>Definition:</b> <a href="nav__bungee__takeoff_8c_source.html#l00125">nav_bungee_takeoff.c:125</a></div></div>
 <div class="ttc" id="nav_8h_html_a6f740d9f9313ba73fa7dcd9dd53c4440"><div class="ttname"><a href="nav_8h.html#a6f740d9f9313ba73fa7dcd9dd53c4440">NavVerticalThrottleMode</a></div><div class="ttdeci">#define NavVerticalThrottleMode(_throttle)</div><div class="ttdoc">Set the vertical mode to fixed throttle with the specified setpoint. </div><div class="ttdef"><b>Definition:</b> <a href="nav_8h_source.html#l00197">nav.h:197</a></div></div>
@@ -324,6 +324,7 @@ $(document).ready(function(){initNavTree('nav__bungee__takeoff_8c_source.html','
 <div class="ttc" id="nav_8c_html_ab4247c9f3dc0417690e1404add032cbe"><div class="ttname"><a href="nav_8c.html#ab4247c9f3dc0417690e1404add032cbe">nav_route_xy</a></div><div class="ttdeci">void nav_route_xy(float last_wp_x, float last_wp_y, float wp_x, float wp_y)</div><div class="ttdoc">Computes the carrot position along the desired segment. </div><div class="ttdef"><b>Definition:</b> <a href="nav_8c_source.html#l00381">nav.c:381</a></div></div>
 <div class="ttc" id="autopilot_8h_html"><div class="ttname"><a href="autopilot_8h.html">autopilot.h</a></div><div class="ttdoc">Core autopilot interface common to all firmwares. </div></div>
 <div class="ttc" id="group__state__position_html_ga7488f3b1e3afa9515541c0130278bdac"><div class="ttname"><a href="group__state__position.html#ga7488f3b1e3afa9515541c0130278bdac">stateGetPositionUtm_f</a></div><div class="ttdeci">static struct UtmCoor_f * stateGetPositionUtm_f(void)</div><div class="ttdoc">Get position in UTM coordinates (float). </div><div class="ttdef"><b>Definition:</b> <a href="state_8h_source.html#l00692">state.h:692</a></div></div>
+<div class="ttc" id="disco_8h_html_a634090af23161c4f7fef1dcabdc71335"><div class="ttname"><a href="disco_8h.html#a634090af23161c4f7fef1dcabdc71335">USE_AIRSPEED</a></div><div class="ttdeci">#define USE_AIRSPEED</div><div class="ttdef"><b>Definition:</b> <a href="disco_8h_source.html#l00112">disco.h:112</a></div></div>
 <div class="ttc" id="types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00014">types.h:14</a></div></div>
 <div class="ttc" id="nav__bungee__takeoff_8c_html_a537434c0146d72f1c0f111539eb1945a"><div class="ttname"><a href="nav__bungee__takeoff_8c.html#a537434c0146d72f1c0f111539eb1945a">TakeoffStatus</a></div><div class="ttdeci">TakeoffStatus</div><div class="ttdef"><b>Definition:</b> <a href="nav__bungee__takeoff_8c_source.html#l00119">nav_bungee_takeoff.c:119</a></div></div>
 <div class="ttc" id="state_8h_html"><div class="ttname"><a href="state_8h.html">state.h</a></div><div class="ttdoc">API to get/set the generic vehicle states. </div></div>
@@ -345,7 +346,7 @@ $(document).ready(function(){initNavTree('nav__bungee__takeoff_8c_source.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_984e899df90dd104b2eabcdbb76ec71f.html">nav</a></li><li class="navelem"><a class="el" href="nav__bungee__takeoff_8c.html">nav_bungee_takeoff.c</a></li>
-    <li class="footer">Generated on Wed Nov 8 2017 10:01:44 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:02:50 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

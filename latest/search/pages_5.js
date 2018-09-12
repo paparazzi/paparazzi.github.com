@@ -1,6 +1,7 @@
 var searchData=
 [
   ['fbw_5fdatalink_20module',['fbw_datalink module',['../module__fbw_datalink.html',1,'onboard_modules']]],
+  ['fc_5frotor_20module',['fc_rotor module',['../module__fc_rotor.html',1,'onboard_modules']]],
   ['fdm_5fcrrcsim_20module',['fdm_crrcsim module',['../module__fdm_crrcsim.html',1,'onboard_modules']]],
   ['fdm_5fgazebo_20module',['fdm_gazebo module',['../module__fdm_gazebo.html',1,'onboard_modules']]],
   ['flight_5fbenchmark_20module',['flight_benchmark module',['../module__flight_benchmark.html',1,'onboard_modules']]],

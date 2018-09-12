@@ -65,6 +65,7 @@ var searchData=
   ['ins_5fgps_5fpassthrough_20module',['ins_gps_passthrough module',['../module__ins_gps_passthrough.html',1,'onboard_modules']]],
   ['ins_5fhff_20module',['ins_hff module',['../module__ins_hff.html',1,'onboard_modules']]],
   ['ins_5fhff_5fextended_20module',['ins_hff_extended module',['../module__ins_hff_extended.html',1,'onboard_modules']]],
+  ['ins_5fmekf_5fwind_20module',['ins_mekf_wind module',['../module__ins_mekf_wind.html',1,'onboard_modules']]],
   ['ins_5fnps_20module',['ins_nps module',['../module__ins_nps.html',1,'onboard_modules']]],
   ['ins_5fsim_20module',['ins_sim module',['../module__ins_sim.html',1,'onboard_modules']]],
   ['ins_5fskeleton_20module',['ins_skeleton module',['../module__ins_skeleton.html',1,'onboard_modules']]],

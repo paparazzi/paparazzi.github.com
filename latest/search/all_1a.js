@@ -14,6 +14,8 @@ var searchData=
   ['zambonisurvey',['ZamboniSurvey',['../nav__survey__zamboni_8h.html#structZamboniSurvey',1,'']]],
   ['zdot',['zdot',['../vf__extended__float_8h.html#a6b5f21822256d71a3973b26a081fe26f',1,'VffExtended::zdot()'],['../vf__float_8h.html#a985d750a72be66416d761c5863aab331',1,'Vff::zdot()']]],
   ['zdotdot',['zdotdot',['../vf__extended__float_8h.html#a2b123c188ea8f6f2d691eb2d74d6e9a8',1,'VffExtended::zdotdot()'],['../vf__float_8h.html#a1dbc6c9d7873360feb9534f583c60755',1,'Vff::zdotdot()']]],
+  ['zero',['zero',['../dragspeed_8h.html#a45ef91f1226a7389c95668af0cd907f3',1,'dragspeed_t']]],
+  ['zero_5fcalibrated',['zero_calibrated',['../dragspeed_8h.html#a27a5e0068a82c1b43b10f59118a2ff66',1,'dragspeed_t']]],
   ['zero_5foffset_5fdegrees',['ZERO_OFFSET_DEGREES',['../wind__gfi_8c.html#a1c27d6803cac68644bf4d9b90f9efdcf',1,'wind_gfi.c']]],
   ['zerobyte',['ZeroByte',['../VN100_8h.html#a9f78d8190e6812fb9cded7c2672eb13e',1,'VN100_Res_Packet']]],
   ['zerobyte1',['ZeroByte1',['../VN100_8h.html#a9c21d48f2392db817e0820e204269970',1,'VN100_Req_Packet']]],
@@ -27,11 +29,12 @@ var searchData=
   ['zeta_5fomega_5fq_5fres',['ZETA_OMEGA_Q_RES',['../stabilization__attitude__ref__euler__int_8c.html#a2ffd7ebe36c7ed3fc6d5bc478dff0848',1,'stabilization_attitude_ref_euler_int.c']]],
   ['zeta_5fomega_5fr',['ZETA_OMEGA_R',['../stabilization__attitude__ref__euler__int_8c.html#a458e61308e0036b8436dccc57bb46087',1,'stabilization_attitude_ref_euler_int.c']]],
   ['zeta_5fomega_5fr_5fres',['ZETA_OMEGA_R_RES',['../stabilization__attitude__ref__euler__int_8c.html#af916b9ba572f57a75454992d58831306',1,'stabilization_attitude_ref_euler_int.c']]],
-  ['zeta_5fp',['ZETA_P',['../stabilization__attitude__ref__euler__int_8c.html#a09d0136bb7fcef1b5563cfce0110bce2',1,'ZETA_P():&#160;stabilization_attitude_ref_euler_int.c'],['../stabilization__attitude__ref__quat__float_8c.html#ae266ccceacd5d256c5dfce62568fcb2d',1,'zeta_p():&#160;stabilization_attitude_ref_quat_float.c']]],
-  ['zeta_5fq',['zeta_q',['../stabilization__attitude__ref__quat__float_8c.html#ab482e84b4c19ce50246b5a414789ccb0',1,'zeta_q():&#160;stabilization_attitude_ref_quat_float.c'],['../stabilization__attitude__ref__euler__int_8c.html#a608ba2cf6b2f506c7a5a19cfe514f278',1,'ZETA_Q():&#160;stabilization_attitude_ref_euler_int.c']]],
+  ['zeta_5fp',['zeta_p',['../stabilization__attitude__ref__quat__float_8c.html#ae266ccceacd5d256c5dfce62568fcb2d',1,'zeta_p():&#160;stabilization_attitude_ref_quat_float.c'],['../stabilization__attitude__ref__euler__int_8c.html#a09d0136bb7fcef1b5563cfce0110bce2',1,'ZETA_P():&#160;stabilization_attitude_ref_euler_int.c']]],
+  ['zeta_5fq',['ZETA_Q',['../stabilization__attitude__ref__euler__int_8c.html#a608ba2cf6b2f506c7a5a19cfe514f278',1,'ZETA_Q():&#160;stabilization_attitude_ref_euler_int.c'],['../stabilization__attitude__ref__quat__float_8c.html#ab482e84b4c19ce50246b5a414789ccb0',1,'zeta_q():&#160;stabilization_attitude_ref_quat_float.c']]],
   ['zeta_5fr',['ZETA_R',['../stabilization__attitude__ref__euler__int_8c.html#ac45f26bd8ff0228f320ed655d17777d5',1,'ZETA_R():&#160;stabilization_attitude_ref_euler_int.c'],['../stabilization__attitude__ref__quat__float_8c.html#a5f030065f3f76926bbebb1e67a4694b8',1,'zeta_r():&#160;stabilization_attitude_ref_quat_float.c']]],
   ['zigzag_5ftable',['zigzag_table',['../jpeg_8c.html#a46fe732a45d70b70dee231158208905b',1,'jpeg.c']]],
   ['zone',['zone',['../group__math__geodetic__double.html#a12cdbac673550a28982e7f048916ef6e',1,'UtmCoor_d::zone()'],['../pprz__geodetic__float_8h.html#a86adc8b9ebb389f4716c6c569a0b5d91',1,'UtmCoor_f::zone()'],['../group__math__geodetic__int.html#a6d4bf413c00434d016a1e35ae4d1cc86',1,'UtmCoor_i::zone()']]],
+  ['zp',['Zp',['../discrete__ekf_8h.html#afe2e9ae17cd7fec80dc545963eb0db2c',1,'discrete_ekf']]],
   ['zs',['zs',['../nav__survey__zamboni_8c.html#acf44c9037a753ca9c14d448ccaa1179f',1,'nav_survey_zamboni.c']]],
   ['zscale',['ZSCALE',['../namespacemesonh_1_1mesonh__atmosphere.html#a09dc6dc216931298063b29712c131836',1,'mesonh::mesonh_atmosphere']]]
 ];

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['hacl_2a',['HACL*',['../md_sw_airborne_modules_datalink_hacl-c_README.html',1,'']]],
   ['hackhd_20module',['hackhd module',['../module__hackhd.html',1,'onboard_modules']]],
   ['haclc_20module',['haclc module',['../module__haclc.html',1,'onboard_modules']]],
   ['heli_5fswashplate_5fmixing_20module',['heli_swashplate_mixing module',['../module__heli_swashplate_mixing.html',1,'onboard_modules']]],

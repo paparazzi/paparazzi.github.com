@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -126,9 +126,11 @@ $(document).ready(function(){initNavTree('opticflow__calculator_8c.html','');});
 <code>#include &quot;<a class="el" href="fast__rosten_8h_source.html">lib/vision/fast_rosten.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="act__fast_8h_source.html">lib/vision/act_fast.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="edge__flow_8h_source.html">lib/vision/edge_flow.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="undistortion_8h_source.html">lib/vision/undistortion.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="size__divergence_8h_source.html">size_divergence.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="linear__flow__fit_8h_source.html">linear_flow_fit.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="agl__dist_8h_source.html">modules/sonar/agl_dist.h</a>&quot;</code><br />
+<code>#include &lt;BOARD_CONFIG&gt;</code><br />
 <code>#include &quot;<a class="el" href="median__filter_8h_source.html">filters/median_filter.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for opticflow_calculator.c:</div>
@@ -137,15 +139,13 @@ $(document).ready(function(){initNavTree('opticflow__calculator_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="opticflow__calculator_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2computer__vision_2opticflow_2opticflow__calculator_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2computer__vision_2opticflow_2opticflow__calculator_8c" id="sw_2airborne_2modules_2computer__vision_2opticflow_2opticflow__calculator_8c">
-<area shape="rect" id="node6" href="opticflow__calculator_8h.html" title="Calculate velocity from optic flow. " alt="" coords="899,184,1056,211"/><area shape="rect" id="node15" href="image_8h.html" title="Image helper functions like resizing, color filter, converters... " alt="" coords="689,333,821,360"/><area shape="rect" id="node25" href="lucas__kanade_8h.html" title="efficient fixed&#45;point optical&#45;flow calculation " alt="" coords="43,259,221,285"/><area shape="rect" id="node26" href="fast__rosten_8h.html" title="lib/vision/fast_rosten.h" alt="" coords="246,259,410,285"/><area shape="rect" id="node27" href="act__fast_8h.html" title="Finds corners in an image by actively scanning the image. " alt="" coords="486,259,629,285"/><area shape="rect" id="node28" href="edge__flow_8h.html" title="calculate optical flow with EdgeFlow " alt="" coords="1128,109,1283,136"/><area shape="rect" id="node29" href="size__divergence_8h.html" title="Calculate divergence from flow vectors by looking at line sizes beteween the points. " alt="" coords="581,184,717,211"/><area shape="rect" id="node30" href="linear__flow__fit_8h.html" title="linear_flow_fit.h" alt="" coords="649,109,767,136"/><area shape="rect" id="node31" href="agl__dist_8h.html" title="Bind to agl ABI message and provide a filtered value to be used in flight plans. " alt="" coords="1809,109,1991,136"/><area shape="rect" id="node32" href="median__filter_8h.html" title="filters/median_filter.h" alt="" coords="201,490,356,517"/><area shape="rect" id="node7" href="inter__thread__data_8h.html" title="Inter&#45;thread data structures. " alt="" coords="925,408,1073,435"/><area shape="rect" id="node22" href="v4l2_8h.html" title="Capture images from a V4L2 device (Video for Linux 2) " alt="" coords="1155,259,1255,285"/><area shape="rect" id="node8" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="1015,572,1206,599"/><area shape="rect" id="node13" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="541,572,720,599"/><area shape="rect" id="node9" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="845,647,963,673"/><area shape="rect" id="node14" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="518,647,669,673"/><area shape="rect" id="node17" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="721,408,788,435"/><area shape="rect" id="node18" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="482,483,633,524"/><area shape="rect" id="node20" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="947,483,1098,524"/><area shape="rect" id="node21" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="759,483,923,524"/><area shape="rect" id="node19" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="795,572,919,599"/></map>
+<area shape="rect" id="node6" href="opticflow__calculator_8h.html" title="Calculate velocity from optic flow. " alt="" coords="732,184,889,211"/><area shape="rect" id="node15" href="image_8h.html" title="Image helper functions like resizing, color filter, converters... " alt="" coords="913,333,1045,360"/><area shape="rect" id="node25" href="lucas__kanade_8h.html" title="efficient fixed&#45;point optical&#45;flow calculation " alt="" coords="1292,259,1471,285"/><area shape="rect" id="node26" href="fast__rosten_8h.html" title="lib/vision/fast_rosten.h" alt="" coords="1495,259,1659,285"/><area shape="rect" id="node27" href="act__fast_8h.html" title="Finds corners in an image by actively scanning the image. " alt="" coords="1683,259,1826,285"/><area shape="rect" id="node28" href="edge__flow_8h.html" title="calculate optical flow with EdgeFlow " alt="" coords="479,109,633,136"/><area shape="rect" id="node29" href="undistortion_8h.html" title="Functions for undistorting camera images. " alt="" coords="1720,333,1888,360"/><area shape="rect" id="node30" href="size__divergence_8h.html" title="Calculate divergence from flow vectors by looking at line sizes beteween the points. " alt="" coords="964,184,1100,211"/><area shape="rect" id="node31" href="linear__flow__fit_8h.html" title="linear_flow_fit.h" alt="" coords="1123,184,1242,211"/><area shape="rect" id="node32" href="agl__dist_8h.html" title="Bind to agl ABI message and provide a filtered value to be used in flight plans. " alt="" coords="1571,109,1754,136"/><area shape="rect" id="node34" href="median__filter_8h.html" title="filters/median_filter.h" alt="" coords="1292,490,1447,517"/><area shape="rect" id="node7" href="inter__thread__data_8h.html" title="Inter&#45;thread data structures. " alt="" coords="246,408,394,435"/><area shape="rect" id="node22" href="v4l2_8h.html" title="Capture images from a V4L2 device (Video for Linux 2) " alt="" coords="506,259,606,285"/><area shape="rect" id="node8" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="317,572,507,599"/><area shape="rect" id="node13" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="636,572,815,599"/><area shape="rect" id="node9" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="519,647,636,673"/><area shape="rect" id="node14" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="813,647,963,673"/><area shape="rect" id="node17" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="684,408,751,435"/><area shape="rect" id="node18" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="914,483,1065,524"/><area shape="rect" id="node20" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="739,483,890,524"/><area shape="rect" id="node21" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="449,483,613,524"/><area shape="rect" id="node19" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="890,572,1014,599"/></map>
 </div>
 </div>
 <p><a href="opticflow__calculator_8c_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a13336903e036219c099bd104d863cfd7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="opticflow__calculator_8c.html#a13336903e036219c099bd104d863cfd7">OPTICFLOW_SHOW_FLOW</a>&#160;&#160;&#160;0</td></tr>
-<tr class="separator:a13336903e036219c099bd104d863cfd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73368d05acc46e19d741c4a2a735b507"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="opticflow__calculator_8c.html#a73368d05acc46e19d741c4a2a735b507">OPTICFLOW_SHOW_CORNERS</a>&#160;&#160;&#160;0</td></tr>
 <tr class="separator:a73368d05acc46e19d741c4a2a735b507"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ec04431f08f3a2b5b61f1558e9c30a5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="opticflow__calculator_8c.html#a8ec04431f08f3a2b5b61f1558e9c30a5">EXHAUSTIVE_FAST</a>&#160;&#160;&#160;0</td></tr>
@@ -158,14 +158,6 @@ Macros</h2></td></tr>
 <tr class="separator:a6cb6f7a102895b91c73f8de7481627ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d242743a80ef3c17abcdac5b2c81dad"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="opticflow__calculator_8c.html#a5d242743a80ef3c17abcdac5b2c81dad">OPTICFLOW_CORNER_METHOD</a>&#160;&#160;&#160;<a class="el" href="opticflow__calculator_8c.html#a2f3ec4284114cb4fb95ecb58bf88b5ec">ACT_FAST</a></td></tr>
 <tr class="separator:a5d242743a80ef3c17abcdac5b2c81dad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4043026b5d94973d9fa60f60a413dc8f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="opticflow__calculator_8c.html#a4043026b5d94973d9fa60f60a413dc8f">OPTICFLOW_FOV_W</a>&#160;&#160;&#160;0.89360857702</td></tr>
-<tr class="separator:a4043026b5d94973d9fa60f60a413dc8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a184240245951718710f4497d86280453"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="opticflow__calculator_8c.html#a184240245951718710f4497d86280453">OPTICFLOW_FOV_H</a>&#160;&#160;&#160;0.67020643276</td></tr>
-<tr class="separator:a184240245951718710f4497d86280453"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a701655c6e9dbd9fae3df8a45e952615e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="opticflow__calculator_8c.html#a701655c6e9dbd9fae3df8a45e952615e">OPTICFLOW_FX</a>&#160;&#160;&#160;343.1211</td></tr>
-<tr class="separator:a701655c6e9dbd9fae3df8a45e952615e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3891408a268c20c86d7cd464d273889f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="opticflow__calculator_8c.html#a3891408a268c20c86d7cd464d273889f">OPTICFLOW_FY</a>&#160;&#160;&#160;348.5053</td></tr>
-<tr class="separator:a3891408a268c20c86d7cd464d273889f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4b72dba2e7b765a38b2a4d584839258"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="opticflow__calculator_8c.html#aa4b72dba2e7b765a38b2a4d584839258">OPTICFLOW_MAX_TRACK_CORNERS</a>&#160;&#160;&#160;25</td></tr>
 <tr class="separator:aa4b72dba2e7b765a38b2a4d584839258"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7266fc98a3d53734b3b73e0da2f46502"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="opticflow__calculator_8c.html#a7266fc98a3d53734b3b73e0da2f46502">OPTICFLOW_WINDOW_SIZE</a>&#160;&#160;&#160;10</td></tr>
@@ -224,6 +216,10 @@ Macros</h2></td></tr>
 <tr class="separator:aafb53e32cc0a9d9368c924773c9325d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c40b27a435d66a53854068fe7ecf2cb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="opticflow__calculator_8c.html#a5c40b27a435d66a53854068fe7ecf2cb">OPTICFLOW_BODY_TO_CAM_PSI</a>&#160;&#160;&#160;-M_PI_2</td></tr>
 <tr class="separator:a5c40b27a435d66a53854068fe7ecf2cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cba4039bdc4d953256d5371793c2040"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="opticflow__calculator_8c.html#a8cba4039bdc4d953256d5371793c2040">OPTICFLOW_TRACK_BACK</a>&#160;&#160;&#160;<a class="el" href="imu__chimu_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></td></tr>
+<tr class="separator:a8cba4039bdc4d953256d5371793c2040"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13336903e036219c099bd104d863cfd7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="opticflow__calculator_8c.html#a13336903e036219c099bd104d863cfd7">OPTICFLOW_SHOW_FLOW</a>&#160;&#160;&#160;<a class="el" href="imu__chimu_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></td></tr>
+<tr class="separator:a13336903e036219c099bd104d863cfd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -238,6 +234,8 @@ Functions</h2></td></tr>
 <tr class="separator:a61fcf92d4f40ff2d80d6bb03e37120c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a096dc77deb46fbfcc36e72bc8eb24784"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="opticflow__calculator_8c.html#a096dc77deb46fbfcc36e72bc8eb24784">manage_flow_features</a> (struct <a class="el" href="image_8h.html#structimage__t">image_t</a> *img, struct <a class="el" href="opticflow__calculator_8h.html#structopticflow__t">opticflow_t</a> *<a class="el" href="opticflow__module_8h.html#a4ed7d8828611f3355617fb6745ade2a0">opticflow</a>, struct <a class="el" href="inter__thread__data_8h.html#structopticflow__result__t">opticflow_result_t</a> *result)</td></tr>
 <tr class="separator:a096dc77deb46fbfcc36e72bc8eb24784"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3332fc643e3c25e5ac27404e75b14299"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="image_8h.html#structflow__t">flow_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="opticflow__calculator_8c.html#a3332fc643e3c25e5ac27404e75b14299">predict_flow_vectors</a> (struct <a class="el" href="image_8h.html#structflow__t">flow_t</a> *flow_vectors, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> n_points, float phi_diff, float theta_diff, float psi_diff, struct <a class="el" href="opticflow__calculator_8h.html#structopticflow__t">opticflow_t</a> *<a class="el" href="opticflow__module_8h.html#a4ed7d8828611f3355617fb6745ade2a0">opticflow</a>)</td></tr>
+<tr class="separator:a3332fc643e3c25e5ac27404e75b14299"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a519453dc5509bc6d489b2b5aeb94f915"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="opticflow__calculator_8c.html#a519453dc5509bc6d489b2b5aeb94f915">opticflow_calc_init</a> (struct <a class="el" href="opticflow__calculator_8h.html#structopticflow__t">opticflow_t</a> *<a class="el" href="opticflow__module_8h.html#a4ed7d8828611f3355617fb6745ade2a0">opticflow</a>)</td></tr>
 <tr class="memdesc:a519453dc5509bc6d489b2b5aeb94f915"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the opticflow calculator.  <a href="#a519453dc5509bc6d489b2b5aeb94f915">More...</a><br /></td></tr>
 <tr class="separator:a519453dc5509bc6d489b2b5aeb94f915"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -277,7 +275,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00053">53</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
+<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00057">57</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
 
 <p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00298">calc_fast9_lukas_kanade()</a>.</p>
 
@@ -293,7 +291,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00052">52</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
+<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00056">56</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
 
 <p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00298">calc_fast9_lukas_kanade()</a>.</p>
 
@@ -309,7 +307,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00157">157</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
+<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00137">137</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
 
 <p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00298">calc_fast9_lukas_kanade()</a>.</p>
 
@@ -325,7 +323,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00156">156</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
+<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00136">136</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
 
 <p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00298">calc_fast9_lukas_kanade()</a>.</p>
 
@@ -341,7 +339,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00063">63</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
+<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00067">67</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
 
 <p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00298">calc_fast9_lukas_kanade()</a>.</p>
 
@@ -357,9 +355,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00214">214</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
+<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00194">194</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
 
-<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00250">opticflow_calc_init()</a>.</p>
+<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00248">opticflow_calc_init()</a>.</p>
 
 </div>
 </div>
@@ -373,9 +371,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00204">204</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
+<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00184">184</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
 
-<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00250">opticflow_calc_init()</a>.</p>
+<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00248">opticflow_calc_init()</a>.</p>
 
 </div>
 </div>
@@ -389,9 +387,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00219">219</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
+<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00199">199</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
 
-<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00250">opticflow_calc_init()</a>.</p>
+<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00248">opticflow_calc_init()</a>.</p>
 
 </div>
 </div>
@@ -405,9 +403,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00209">209</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
+<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00189">189</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
 
-<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00250">opticflow_calc_init()</a>.</p>
+<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00248">opticflow_calc_init()</a>.</p>
 
 </div>
 </div>
@@ -421,9 +419,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00225">225</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
+<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00205">205</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
 
-<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00250">opticflow_calc_init()</a>.</p>
+<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00248">opticflow_calc_init()</a>.</p>
 
 </div>
 </div>
@@ -437,9 +435,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00231">231</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
+<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00211">211</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
 
-<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00250">opticflow_calc_init()</a>.</p>
+<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00248">opticflow_calc_init()</a>.</p>
 
 </div>
 </div>
@@ -453,9 +451,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00228">228</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
+<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00208">208</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
 
-<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00250">opticflow_calc_init()</a>.</p>
+<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00248">opticflow_calc_init()</a>.</p>
 
 </div>
 </div>
@@ -469,9 +467,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00067">67</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
+<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00070">70</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
 
-<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00250">opticflow_calc_init()</a>.</p>
+<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00248">opticflow_calc_init()</a>.</p>
 
 </div>
 </div>
@@ -485,9 +483,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00169">169</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
+<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00149">149</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
 
-<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00250">opticflow_calc_init()</a>.</p>
+<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00248">opticflow_calc_init()</a>.</p>
 
 </div>
 </div>
@@ -501,9 +499,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00174">174</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
+<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00154">154</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
 
-<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00250">opticflow_calc_init()</a>.</p>
+<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00248">opticflow_calc_init()</a>.</p>
 
 </div>
 </div>
@@ -517,9 +515,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00179">179</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
+<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00159">159</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
 
-<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00250">opticflow_calc_init()</a>.</p>
+<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00248">opticflow_calc_init()</a>.</p>
 
 </div>
 </div>
@@ -533,9 +531,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00136">136</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
+<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00116">116</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
 
-<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00250">opticflow_calc_init()</a>.</p>
+<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00248">opticflow_calc_init()</a>.</p>
 
 </div>
 </div>
@@ -549,9 +547,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00146">146</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
+<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00126">126</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
 
-<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00250">opticflow_calc_init()</a>.</p>
+<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00248">opticflow_calc_init()</a>.</p>
 
 </div>
 </div>
@@ -565,9 +563,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00199">199</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
+<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00179">179</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
 
-<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00250">opticflow_calc_init()</a>.</p>
+<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00248">opticflow_calc_init()</a>.</p>
 
 </div>
 </div>
@@ -581,9 +579,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00151">151</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
+<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00131">131</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
 
-<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00250">opticflow_calc_init()</a>.</p>
+<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00248">opticflow_calc_init()</a>.</p>
 
 </div>
 </div>
@@ -597,9 +595,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00194">194</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
+<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00174">174</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
 
-<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00250">opticflow_calc_init()</a>.</p>
+<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00248">opticflow_calc_init()</a>.</p>
 
 </div>
 </div>
@@ -613,9 +611,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00141">141</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
+<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00121">121</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
 
-<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00250">opticflow_calc_init()</a>.</p>
+<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00248">opticflow_calc_init()</a>.</p>
 
 </div>
 </div>
@@ -629,69 +627,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00189">189</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
+<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00169">169</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
 
-<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00250">opticflow_calc_init()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a184240245951718710f4497d86280453"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define OPTICFLOW_FOV_H&#160;&#160;&#160;0.67020643276</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00078">78</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a4043026b5d94973d9fa60f60a413dc8f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define OPTICFLOW_FOV_W&#160;&#160;&#160;0.89360857702</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00073">73</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a701655c6e9dbd9fae3df8a45e952615e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define OPTICFLOW_FX&#160;&#160;&#160;343.1211</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00084">84</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
-
-<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00659">calc_edgeflow_tot()</a>, and <a class="el" href="opticflow__calculator_8c_source.html#l00298">calc_fast9_lukas_kanade()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a3891408a268c20c86d7cd464d273889f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define OPTICFLOW_FY&#160;&#160;&#160;348.5053</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00090">90</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
-
-<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00659">calc_edgeflow_tot()</a>, and <a class="el" href="opticflow__calculator_8c_source.html#l00298">calc_fast9_lukas_kanade()</a>.</p>
+<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00248">opticflow_calc_init()</a>.</p>
 
 </div>
 </div>
@@ -705,9 +643,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00121">121</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
+<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00101">101</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
 
-<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00250">opticflow_calc_init()</a>.</p>
+<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00248">opticflow_calc_init()</a>.</p>
 
 </div>
 </div>
@@ -721,9 +659,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00096">96</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
+<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00076">76</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
 
-<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00298">calc_fast9_lukas_kanade()</a>, and <a class="el" href="opticflow__calculator_8c_source.html#l00250">opticflow_calc_init()</a>.</p>
+<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00298">calc_fast9_lukas_kanade()</a>, and <a class="el" href="opticflow__calculator_8c_source.html#l00248">opticflow_calc_init()</a>.</p>
 
 </div>
 </div>
@@ -737,9 +675,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00184">184</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
+<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00164">164</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
 
-<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00250">opticflow_calc_init()</a>.</p>
+<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00248">opticflow_calc_init()</a>.</p>
 
 </div>
 </div>
@@ -753,9 +691,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00160">160</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
+<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00140">140</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
 
-<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00250">opticflow_calc_init()</a>.</p>
+<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00248">opticflow_calc_init()</a>.</p>
 
 </div>
 </div>
@@ -769,9 +707,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00131">131</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
+<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00111">111</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
 
-<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00250">opticflow_calc_init()</a>.</p>
+<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00248">opticflow_calc_init()</a>.</p>
 
 </div>
 </div>
@@ -785,9 +723,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00116">116</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
+<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00096">96</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
 
-<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00250">opticflow_calc_init()</a>.</p>
+<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00248">opticflow_calc_init()</a>.</p>
 
 </div>
 </div>
@@ -801,9 +739,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00106">106</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
+<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00086">86</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
 
-<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00250">opticflow_calc_init()</a>.</p>
+<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00248">opticflow_calc_init()</a>.</p>
 
 </div>
 </div>
@@ -817,7 +755,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00050">50</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
+<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00054">54</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
 
 </div>
 </div>
@@ -826,12 +764,14 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define OPTICFLOW_SHOW_FLOW&#160;&#160;&#160;0</td>
+          <td class="memname">#define OPTICFLOW_SHOW_FLOW&#160;&#160;&#160;<a class="el" href="imu__chimu_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00049">49</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
+<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00224">224</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
+
+<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00248">opticflow_calc_init()</a>.</p>
 
 </div>
 </div>
@@ -845,9 +785,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00111">111</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
+<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00091">91</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
 
-<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00250">opticflow_calc_init()</a>.</p>
+<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00248">opticflow_calc_init()</a>.</p>
 
 </div>
 </div>
@@ -861,9 +801,25 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00126">126</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
+<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00106">106</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
 
-<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00250">opticflow_calc_init()</a>.</p>
+<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00248">opticflow_calc_init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8cba4039bdc4d953256d5371793c2040"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OPTICFLOW_TRACK_BACK&#160;&#160;&#160;<a class="el" href="imu__chimu_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00217">217</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
+
+<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00248">opticflow_calc_init()</a>.</p>
 
 </div>
 </div>
@@ -877,9 +833,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00101">101</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
+<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00081">81</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
 
-<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00250">opticflow_calc_init()</a>.</p>
+<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00248">opticflow_calc_init()</a>.</p>
 
 </div>
 </div>
@@ -893,7 +849,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00060">60</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
+<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00064">64</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
 
 <p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00298">calc_fast9_lukas_kanade()</a>.</p>
 
@@ -942,11 +898,11 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00659">659</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
+<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00813">813</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
 
-<p>References <a class="el" href="agl__dist_8c_source.html#l00035">agl_dist_value_filtered</a>, <a class="el" href="edge__flow_8c_source.html#l00039">calc_previous_frame_nr()</a>, <a class="el" href="edge__flow_8c_source.html#l00168">calculate_edge_displacement()</a>, <a class="el" href="edge__flow_8c_source.html#l00088">calculate_edge_histogram()</a>, <a class="el" href="inter__thread__data_8h_source.html#l00039">opticflow_result_t::corner_cnt</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00050">opticflow_t::derotation</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00053">opticflow_t::derotation_correction_factor_x</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00054">opticflow_t::derotation_correction_factor_y</a>, <a class="el" href="edge__flow_8h_source.html#l00052">DISP_RANGE_MAX</a>, <a class="el" href="inter__thread__data_8h_source.html#l00051">opticflow_result_t::div_size</a>, <a class="el" href="edge__flow_8h_source.html#l00078">edge_flow_t::div_x</a>, <a class="el" href="edge__flow_8h_source.html#l00080">edge_flow_t::div_y</a>, <a class="el" href="inter__thread__data_8h_source.html#l00054">opticflow_result_t::divergence</a>, <a class="el" href="edge__flow_8c_source.html#l00297">draw_edgeflow_img()</a>, <a class="el" href="image_8h_source.html#l00048">image_t::eulers</a>, <a class="el" href="edge__flow_8h_source.html#l00068">edge_hist_t::eulers</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00498">FLOAT_EULERS_ZERO</a>, <a class="el" href="inter__thread__data_8h_source.html#l00045">opticflow_result_t::flow_der_x</a>, <a class="el" href="inter__thread__data_8h_source.html#l00046">opticflow_result_t::flow_der_y</a>, <a class="el" href="inter__thread__data_8h_source.html#l00043">opticflow_result_t::flow_x</a>, <a class="el" href="edge__flow_8h_source.html#l00077">edge_flow_t::flow_x</a>, <a class="el" href="inter__thread__data_8h_source.html#l00044">opticflow_result_t::flow_y</a>, <a class="el" href="edge__flow_8h_source.html#l00079">edge_flow_t::flow_y</a>, <a class="el" href="inter__thread__data_8h_source.html#l00038">opticflow_result_t::fps</a>, <a class="el" href="edge__flow_8h_source.html#l00067">edge_hist_t::frame_time</a>, <a class="el" href="edge__flow_8c_source.html#l00337">getAmountPeaks()</a>, <a class="el" href="image_8h_source.html#l00046">image_t::h</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00042">opticflow_t::just_switched_method</a>, <a class="el" href="edge__flow_8c_source.html#l00247">line_fit()</a>, <a class="el" href="edge__flow_8h_source.html#l00045">MAX_HORIZON</a>, <a class="el" href="edge__flow_8h_source.html#l00055">MAX_WINDOW_SIZE</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00051">opticflow_t::median_filter</a>, <a class="el" href="inter__thread__data_8h_source.html#l00056">opticflow_result_t::noise_measurement</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00084">OPTICFLOW_FX</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00090">OPTICFLOW_FY</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00085">FloatEulers::phi</a>, <a class="el" href="detect__window_8c_source.html#l00027">RES</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00057">opticflow_t::resolution_factor</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00049">opticflow_t::search_distance</a>, <a class="el" href="inter__thread__data_8h_source.html#l00053">opticflow_result_t::surface_roughness</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00086">FloatEulers::theta</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00866">timeval_diff()</a>, <a class="el" href="inter__thread__data_8h_source.html#l00040">opticflow_result_t::tracked_cnt</a>, <a class="el" href="image_8h_source.html#l00047">image_t::ts</a>, <a class="el" href="median__filter_8h_source.html#l00222">UpdateMedianFilterVect3Float</a>, <a class="el" href="inter__thread__data_8h_source.html#l00048">opticflow_result_t::vel_cam</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00236">vel_filt</a>, <a class="el" href="image_8h_source.html#l00045">image_t::w</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00048">opticflow_t::window_size</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, <a class="el" href="edge__flow_8h_source.html#l00065">edge_hist_t::x</a>, <a class="el" href="edge__flow_8h_source.html#l00072">edgeflow_displacement_t::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>, <a class="el" href="edge__flow_8h_source.html#l00066">edge_hist_t::y</a>, <a class="el" href="edge__flow_8h_source.html#l00073">edgeflow_displacement_t::y</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>.</p>
+<p>References <a class="el" href="agl__dist_8c_source.html#l00035">agl_dist_value_filtered</a>, <a class="el" href="edge__flow_8c_source.html#l00039">calc_previous_frame_nr()</a>, <a class="el" href="edge__flow_8c_source.html#l00168">calculate_edge_displacement()</a>, <a class="el" href="edge__flow_8c_source.html#l00088">calculate_edge_histogram()</a>, <a class="el" href="inter__thread__data_8h_source.html#l00039">opticflow_result_t::corner_cnt</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00050">opticflow_t::derotation</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00053">opticflow_t::derotation_correction_factor_x</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00054">opticflow_t::derotation_correction_factor_y</a>, <a class="el" href="edge__flow_8h_source.html#l00052">DISP_RANGE_MAX</a>, <a class="el" href="inter__thread__data_8h_source.html#l00051">opticflow_result_t::div_size</a>, <a class="el" href="edge__flow_8h_source.html#l00078">edge_flow_t::div_x</a>, <a class="el" href="edge__flow_8h_source.html#l00080">edge_flow_t::div_y</a>, <a class="el" href="inter__thread__data_8h_source.html#l00054">opticflow_result_t::divergence</a>, <a class="el" href="edge__flow_8c_source.html#l00297">draw_edgeflow_img()</a>, <a class="el" href="image_8h_source.html#l00048">image_t::eulers</a>, <a class="el" href="edge__flow_8h_source.html#l00068">edge_hist_t::eulers</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00499">FLOAT_EULERS_ZERO</a>, <a class="el" href="inter__thread__data_8h_source.html#l00045">opticflow_result_t::flow_der_x</a>, <a class="el" href="inter__thread__data_8h_source.html#l00046">opticflow_result_t::flow_der_y</a>, <a class="el" href="inter__thread__data_8h_source.html#l00043">opticflow_result_t::flow_x</a>, <a class="el" href="edge__flow_8h_source.html#l00077">edge_flow_t::flow_x</a>, <a class="el" href="inter__thread__data_8h_source.html#l00044">opticflow_result_t::flow_y</a>, <a class="el" href="edge__flow_8h_source.html#l00079">edge_flow_t::flow_y</a>, <a class="el" href="inter__thread__data_8h_source.html#l00038">opticflow_result_t::fps</a>, <a class="el" href="edge__flow_8h_source.html#l00067">edge_hist_t::frame_time</a>, <a class="el" href="edge__flow_8c_source.html#l00337">getAmountPeaks()</a>, <a class="el" href="image_8h_source.html#l00046">image_t::h</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00042">opticflow_t::just_switched_method</a>, <a class="el" href="edge__flow_8c_source.html#l00247">line_fit()</a>, <a class="el" href="edge__flow_8h_source.html#l00045">MAX_HORIZON</a>, <a class="el" href="edge__flow_8h_source.html#l00055">MAX_WINDOW_SIZE</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00051">opticflow_t::median_filter</a>, <a class="el" href="inter__thread__data_8h_source.html#l00056">opticflow_result_t::noise_measurement</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00085">FloatEulers::phi</a>, <a class="el" href="detect__window_8c_source.html#l00027">RES</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00060">opticflow_t::resolution_factor</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00049">opticflow_t::search_distance</a>, <a class="el" href="inter__thread__data_8h_source.html#l00053">opticflow_result_t::surface_roughness</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00086">FloatEulers::theta</a>, <a class="el" href="opticflow__calculator_8c_source.html#l01022">timeval_diff()</a>, <a class="el" href="inter__thread__data_8h_source.html#l00040">opticflow_result_t::tracked_cnt</a>, <a class="el" href="image_8h_source.html#l00047">image_t::ts</a>, <a class="el" href="median__filter_8h_source.html#l00214">UpdateMedianFilterVect3Float</a>, <a class="el" href="inter__thread__data_8h_source.html#l00048">opticflow_result_t::vel_cam</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00232">vel_filt</a>, <a class="el" href="image_8h_source.html#l00045">image_t::w</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00048">opticflow_t::window_size</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, <a class="el" href="edge__flow_8h_source.html#l00065">edge_hist_t::x</a>, <a class="el" href="edge__flow_8h_source.html#l00072">edgeflow_displacement_t::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>, <a class="el" href="edge__flow_8h_source.html#l00066">edge_hist_t::y</a>, <a class="el" href="edge__flow_8h_source.html#l00073">edgeflow_displacement_t::y</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>.</p>
 
-<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00827">opticflow_calc_frame()</a>.</p>
+<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00983">opticflow_calc_frame()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -1016,9 +972,9 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00298">298</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
 
-<p>References <a class="el" href="act__fast_8c_source.html#l00048">act_fast()</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00053">ACT_FAST</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00077">opticflow_t::actfast_gradient_method</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00074">opticflow_t::actfast_long_step</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00076">opticflow_t::actfast_min_gradient</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00075">opticflow_t::actfast_short_step</a>, <a class="el" href="agl__dist_8c_source.html#l00035">agl_dist_value_filtered</a>, <a class="el" href="linear__flow__fit_8c_source.html#l00063">analyze_linear_flow_field()</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00881">cmp_flow()</a>, <a class="el" href="inter__thread__data_8h_source.html#l00039">opticflow_result_t::corner_cnt</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00047">opticflow_t::corner_method</a>, <a class="el" href="image_8h_source.html#l00060">point_t::count</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00050">opticflow_t::derotation</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00053">opticflow_t::derotation_correction_factor_x</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00054">opticflow_t::derotation_correction_factor_y</a>, <a class="el" href="inter__thread__data_8h_source.html#l00051">opticflow_result_t::div_size</a>, <a class="el" href="linear__flow__fit_8h_source.html#l00050">linear_flow_fit_info::divergence</a>, <a class="el" href="inter__thread__data_8h_source.html#l00054">opticflow_result_t::divergence</a>, <a class="el" href="image_8h_source.html#l00048">image_t::eulers</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00052">EXHAUSTIVE_FAST</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00063">opticflow_t::fast9_adaptive</a>, <a class="el" href="fast__rosten_8c_source.html#l00052">fast9_detect()</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00157">FAST9_HIGH_THRESHOLD</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00156">FAST9_LOW_THRESHOLD</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00065">opticflow_t::fast9_min_distance</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00066">opticflow_t::fast9_padding</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00069">opticflow_t::fast9_ret_corners</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00068">opticflow_t::fast9_rsize</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00064">opticflow_t::fast9_threshold</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00070">opticflow_t::feature_management</a>, <a class="el" href="inter__thread__data_8h_source.html#l00045">opticflow_result_t::flow_der_x</a>, <a class="el" href="inter__thread__data_8h_source.html#l00046">opticflow_result_t::flow_der_y</a>, <a class="el" href="inter__thread__data_8h_source.html#l00043">opticflow_result_t::flow_x</a>, <a class="el" href="image_8h_source.html#l00068">flow_t::flow_x</a>, <a class="el" href="inter__thread__data_8h_source.html#l00044">opticflow_result_t::flow_y</a>, <a class="el" href="image_8h_source.html#l00069">flow_t::flow_y</a>, <a class="el" href="inter__thread__data_8h_source.html#l00038">opticflow_result_t::fps</a>, <a class="el" href="size__divergence_8c_source.html#l00046">get_size_divergence()</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00041">opticflow_t::got_first_img</a>, <a class="el" href="image_8h_source.html#l00046">image_t::h</a>, <a class="el" href="image_8c_source.html#l00077">image_copy()</a>, <a class="el" href="image_8c_source.html#l00038">image_create()</a>, <a class="el" href="image_8h_source.html#l00037">IMAGE_GRAYSCALE</a>, <a class="el" href="image_8c_source.html#l00579">image_show_flow()</a>, <a class="el" href="image_8c_source.html#l00554">image_show_points()</a>, <a class="el" href="image_8c_source.html#l00099">image_switch()</a>, <a class="el" href="image_8c_source.html#l00118">image_to_grayscale()</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00043">opticflow_t::img_gray</a>, <a class="el" href="median__filter_8h_source.html#l00213">InitMedianFilterVect3Float</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00042">opticflow_t::just_switched_method</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00063">LINEAR_FIT</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00545">manage_flow_features()</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00058">opticflow_t::max_iterations</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00062">opticflow_t::max_track_corners</a>, <a class="el" href="median__filter_8h_source.html#l00028">MEDIAN_DEFAULT_SIZE</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00051">opticflow_t::median_filter</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00056">n_agents</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00055">n_time_steps</a>, <a class="el" href="inter__thread__data_8h_source.html#l00056">opticflow_result_t::noise_measurement</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00084">OPTICFLOW_FX</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00090">OPTICFLOW_FY</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00096">OPTICFLOW_MAX_TRACK_CORNERS</a>, <a class="el" href="lucas__kanade_8c_source.html#l00073">opticFlowLK()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00085">FloatEulers::phi</a>, <a class="el" href="image_8h_source.html#l00067">flow_t::pos</a>, <a class="el" href="image_8h_source.html#l00049">image_t::pprz_ts</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00044">opticflow_t::prev_img_gray</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00060">opticflow_t::pyramid_level</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00060">SIZE_DIV</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00056">opticflow_t::subpixel_factor</a>, <a class="el" href="linear__flow__fit_8h_source.html#l00043">linear_flow_fit_info::surface_roughness</a>, <a class="el" href="inter__thread__data_8h_source.html#l00053">opticflow_result_t::surface_roughness</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00086">FloatEulers::theta</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00059">opticflow_t::threshold_vec</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00866">timeval_diff()</a>, <a class="el" href="inter__thread__data_8h_source.html#l00040">opticflow_result_t::tracked_cnt</a>, <a class="el" href="image_8h_source.html#l00047">image_t::ts</a>, <a class="el" href="median__filter_8h_source.html#l00222">UpdateMedianFilterVect3Float</a>, <a class="el" href="pprz__algebra_8h_source.html#l00124">VECT3_ASSIGN</a>, <a class="el" href="inter__thread__data_8h_source.html#l00049">opticflow_result_t::vel_body</a>, <a class="el" href="inter__thread__data_8h_source.html#l00048">opticflow_result_t::vel_cam</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00236">vel_filt</a>, <a class="el" href="image_8h_source.html#l00045">image_t::w</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00048">opticflow_t::window_size</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, <a class="el" href="image_8h_source.html#l00058">point_t::x</a>, <a class="el" href="image_8h_source.html#l00061">point_t::x_sub</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>, <a class="el" href="image_8h_source.html#l00059">point_t::y</a>, <a class="el" href="image_8h_source.html#l00062">point_t::y_sub</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>.</p>
+<p>References <a class="el" href="act__fast_8c_source.html#l00048">act_fast()</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00057">ACT_FAST</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00080">opticflow_t::actfast_gradient_method</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00077">opticflow_t::actfast_long_step</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00079">opticflow_t::actfast_min_gradient</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00078">opticflow_t::actfast_short_step</a>, <a class="el" href="agl__dist_8c_source.html#l00035">agl_dist_value_filtered</a>, <a class="el" href="linear__flow__fit_8c_source.html#l00063">analyze_linear_flow_field()</a>, <a class="el" href="opticflow__calculator_8c_source.html#l01037">cmp_flow()</a>, <a class="el" href="inter__thread__data_8h_source.html#l00039">opticflow_result_t::corner_cnt</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00047">opticflow_t::corner_method</a>, <a class="el" href="image_8h_source.html#l00060">point_t::count</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00050">opticflow_t::derotation</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00053">opticflow_t::derotation_correction_factor_x</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00054">opticflow_t::derotation_correction_factor_y</a>, <a class="el" href="inter__thread__data_8h_source.html#l00051">opticflow_result_t::div_size</a>, <a class="el" href="linear__flow__fit_8h_source.html#l00050">linear_flow_fit_info::divergence</a>, <a class="el" href="inter__thread__data_8h_source.html#l00054">opticflow_result_t::divergence</a>, <a class="el" href="image_8h_source.html#l00070">flow_t::error</a>, <a class="el" href="image_8h_source.html#l00048">image_t::eulers</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00056">EXHAUSTIVE_FAST</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00066">opticflow_t::fast9_adaptive</a>, <a class="el" href="fast__rosten_8c_source.html#l00052">fast9_detect()</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00137">FAST9_HIGH_THRESHOLD</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00136">FAST9_LOW_THRESHOLD</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00068">opticflow_t::fast9_min_distance</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00069">opticflow_t::fast9_padding</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00072">opticflow_t::fast9_ret_corners</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00071">opticflow_t::fast9_rsize</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00067">opticflow_t::fast9_threshold</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00073">opticflow_t::feature_management</a>, <a class="el" href="inter__thread__data_8h_source.html#l00045">opticflow_result_t::flow_der_x</a>, <a class="el" href="inter__thread__data_8h_source.html#l00046">opticflow_result_t::flow_der_y</a>, <a class="el" href="inter__thread__data_8h_source.html#l00043">opticflow_result_t::flow_x</a>, <a class="el" href="image_8h_source.html#l00068">flow_t::flow_x</a>, <a class="el" href="inter__thread__data_8h_source.html#l00044">opticflow_result_t::flow_y</a>, <a class="el" href="image_8h_source.html#l00069">flow_t::flow_y</a>, <a class="el" href="inter__thread__data_8h_source.html#l00038">opticflow_result_t::fps</a>, <a class="el" href="size__divergence_8c_source.html#l00046">get_size_divergence()</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00041">opticflow_t::got_first_img</a>, <a class="el" href="image_8h_source.html#l00046">image_t::h</a>, <a class="el" href="image_8c_source.html#l00078">image_copy()</a>, <a class="el" href="image_8c_source.html#l00039">image_create()</a>, <a class="el" href="image_8h_source.html#l00037">IMAGE_GRAYSCALE</a>, <a class="el" href="image_8c_source.html#l00621">image_show_flow_color()</a>, <a class="el" href="image_8c_source.html#l00557">image_show_points()</a>, <a class="el" href="image_8c_source.html#l00100">image_switch()</a>, <a class="el" href="image_8c_source.html#l00119">image_to_grayscale()</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00043">opticflow_t::img_gray</a>, <a class="el" href="median__filter_8h_source.html#l00205">InitMedianFilterVect3Float</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00042">opticflow_t::just_switched_method</a>, <a class="el" href="lucas__kanade_8h_source.html#l00037">LARGE_FLOW_ERROR</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00067">LINEAR_FIT</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00699">manage_flow_features()</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00061">opticflow_t::max_iterations</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00065">opticflow_t::max_track_corners</a>, <a class="el" href="median__filter_8h_source.html#l00028">MEDIAN_DEFAULT_SIZE</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00051">opticflow_t::median_filter</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00060">n_agents</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00059">n_time_steps</a>, <a class="el" href="inter__thread__data_8h_source.html#l00056">opticflow_result_t::noise_measurement</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00076">OPTICFLOW_MAX_TRACK_CORNERS</a>, <a class="el" href="lucas__kanade_8c_source.html#l00073">opticFlowLK()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00085">FloatEulers::phi</a>, <a class="el" href="image_8h_source.html#l00067">flow_t::pos</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00628">predict_flow_vectors()</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00044">opticflow_t::prev_img_gray</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00087">FloatEulers::psi</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00063">opticflow_t::pyramid_level</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00057">opticflow_t::show_flow</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00064">SIZE_DIV</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00059">opticflow_t::subpixel_factor</a>, <a class="el" href="linear__flow__fit_8h_source.html#l00043">linear_flow_fit_info::surface_roughness</a>, <a class="el" href="inter__thread__data_8h_source.html#l00053">opticflow_result_t::surface_roughness</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00086">FloatEulers::theta</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00062">opticflow_t::threshold_vec</a>, <a class="el" href="opticflow__calculator_8c_source.html#l01022">timeval_diff()</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00056">opticflow_t::track_back</a>, <a class="el" href="inter__thread__data_8h_source.html#l00040">opticflow_result_t::tracked_cnt</a>, <a class="el" href="image_8h_source.html#l00047">image_t::ts</a>, <a class="el" href="median__filter_8h_source.html#l00214">UpdateMedianFilterVect3Float</a>, <a class="el" href="pprz__algebra_8h_source.html#l00124">VECT3_ASSIGN</a>, <a class="el" href="inter__thread__data_8h_source.html#l00049">opticflow_result_t::vel_body</a>, <a class="el" href="inter__thread__data_8h_source.html#l00048">opticflow_result_t::vel_cam</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00232">vel_filt</a>, <a class="el" href="image_8h_source.html#l00045">image_t::w</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00048">opticflow_t::window_size</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, <a class="el" href="image_8h_source.html#l00058">point_t::x</a>, <a class="el" href="image_8h_source.html#l00061">point_t::x_sub</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>, <a class="el" href="image_8h_source.html#l00059">point_t::y</a>, <a class="el" href="image_8h_source.html#l00062">point_t::y_sub</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>.</p>
 
-<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00827">opticflow_calc_frame()</a>.</p>
+<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00983">opticflow_calc_frame()</a>.</p>
 
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -1027,7 +983,7 @@ Variables</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="opticflow__calculator_8c_a3edff14cc7f95b5202ba6841a12dfed3_cgraph.png" border="0" usemap="#opticflow__calculator_8c_a3edff14cc7f95b5202ba6841a12dfed3_cgraph" alt=""/></div>
 <map name="opticflow__calculator_8c_a3edff14cc7f95b5202ba6841a12dfed3_cgraph" id="opticflow__calculator_8c_a3edff14cc7f95b5202ba6841a12dfed3_cgraph">
-<area shape="rect" id="node2" href="act__fast_8c.html#a3fd4992d91035835158a2b8c044377bd" title="Do an ACT&#45;FAST corner detection. " alt="" coords="280,56,353,83"/><area shape="rect" id="node6" href="linear__flow__fit_8c.html#ac1c609f9975078816d4dd4862d94833b" title="Analyze a linear flow field, retrieving information such as divergence, surface roughness, focus of expansion, etc. " alt="" coords="245,209,389,250"/><area shape="rect" id="node12" href="opticflow__calculator_8c.html#a70ba354beb51e86724b52a657ca34c25" title="Compare two flow vectors based on flow distance Used for sorting. " alt="" coords="276,275,357,301"/><area shape="rect" id="node13" href="fast__rosten_8c.html#a188523b38a244aa925088dfa115ed12e" title="Do a FAST9 corner detection. " alt="" coords="476,107,579,133"/><area shape="rect" id="node14" href="size__divergence_8c.html#a5bd0d30766d4538c9b64fccc7826b12a" title="Get divergence from optical flow vectors based on line sizes between corners. " alt="" coords="241,325,393,352"/><area shape="rect" id="node17" href="image_8c.html#a02932625f9aeb66da70c89a2f2d3a052" title="Copy an image from inut to output This will only work if the formats are the same. " alt="" coords="267,376,366,403"/><area shape="rect" id="node18" href="image_8c.html#ab5cc0250c461b9d2f043e4884f6b9a53" title="Create a new image. " alt="" coords="876,477,987,504"/><area shape="rect" id="node19" href="image_8c.html#a94dcb784f31e65bdc562452321371a5f" title="Shows the flow from a specific point to a new point This works on YUV422 and Grayscale images..." alt="" coords="251,604,383,631"/><area shape="rect" id="node22" href="image_8c.html#a6b1f1f53bd730945826724d139048831" title="Show points in an image by coloring them through giving the pixels the maximum value. " alt="" coords="243,655,390,681"/><area shape="rect" id="node23" href="image_8c.html#a170da2d6e19d1b99084a4fb18bc1a2ee" title="This will switch image *a and *b This is faster as image_copy because it doesn&#39;t copy the whole image..." alt="" coords="263,705,371,732"/><area shape="rect" id="node24" href="image_8c.html#a74a32006a620503a7ca62e5b2a86abd1" title="Convert an image to grayscale. " alt="" coords="241,756,392,783"/><area shape="rect" id="node25" href="opticflow__calculator_8c.html#a096dc77deb46fbfcc36e72bc8eb24784" title="manage_flow_features" alt="" coords="233,157,400,184"/><area shape="rect" id="node27" href="lucas__kanade_8c.html#af606a40a73a15031b62ee44a5e0c475d" title="opticFlowLK" alt="" coords="269,553,364,580"/><area shape="rect" id="node38" href="opticflow__calculator_8c.html#a37709847b0065c4f371663e9ad30459d" title="Calculate the difference from start till finish. " alt="" coords="269,807,364,833"/><area shape="rect" id="node3" href="fast__rosten_8c.html#a227ca8d03c30c4a5ad0ebe0113a8a875" title="Do a FAST9 corner detection for a single pixel. " alt="" coords="458,5,597,32"/><area shape="rect" id="node5" href="image_8c.html#a1cbeeba8965707f0e5e9cb1e256c70c5" title="Get the gradient at a pixel location. " alt="" coords="448,56,607,83"/><area shape="rect" id="node4" href="fast__rosten_8c.html#a58984f615be2e8c52b3d0b1fc595a250" title="Make offsets for FAST9 calculation. " alt="" coords="672,56,811,83"/><area shape="rect" id="node7" href="linear__flow__fit_8c.html#ad96c136057bf95b8ca88d210c453dae3" title="Extract information from the parameters that were fit to the optical flow field. " alt="" coords="454,209,601,250"/><area shape="rect" id="node8" href="linear__flow__fit_8c.html#a4a796ceb3a2c8c6ee52e0f80d7306ced" title="Analyze a linear flow field, retrieving information such as divergence, surface roughness, focus of expansion, etc. " alt="" coords="457,275,597,301"/><area shape="rect" id="node9" href="pprz__matrix__decomp__float_8c.html#a9ef015d22c1f50265978a23b21d13e8a" title="SVD decomposition. " alt="" coords="684,224,799,251"/><area shape="rect" id="node11" href="pprz__matrix__decomp__float_8c.html#a232890252a145ccc1a0dd849bf13cb67" title="SVD based linear solver. " alt="" coords="664,275,819,301"/><area shape="rect" id="node10" href="pprz__matrix__decomp__float_8c.html#ac174129986fce93a3240504458351308" title="Some SVD decomposition utility macros and functions. " alt="" coords="898,224,965,251"/><area shape="rect" id="node15" href="pprz__stat_8c.html#adea85d32f16991e739b2cea3b3ec427e" title="Compute the mean value of an array (float) " alt="" coords="492,325,563,352"/><area shape="rect" id="node16" href="pprz__stat_8c.html#a234aff5aa9b0f7e40ac863e2b60d6365" title="Compute the sum array elements (float) " alt="" coords="711,325,772,352"/><area shape="rect" id="node20" href="image_8c.html#a40fe37e1ba3df58796c2aa29e04e8567" title="Draw a pink line on the image. " alt="" coords="463,933,591,960"/><area shape="rect" id="node21" href="image_8c.html#a39d2c18c82e89a7ff9b2423a7cdc9366" title="Draw a line on the image. " alt="" coords="658,933,825,960"/><area shape="rect" id="node26" href="opticflow__calculator_8c.html#a61fcf92d4f40ff2d80d6bb03e37120c4" title="Compare the rows of an integer (uint16_t) 2D array based on the first column. " alt="" coords="482,157,573,184"/><area shape="rect" id="node28" href="image_8c.html#ae0f7d6068a0813bd149153b409474672" title="Calculate the G vector of an image gradient This is used for optical flow calculation. " alt="" coords="671,629,812,656"/><area shape="rect" id="node29" href="image_8c.html#a946e57aea5ff8c79adee46cb2c72dd80" title="Calculate the difference between two images and return the error This will only work with grayscale i..." alt="" coords="675,680,807,707"/><area shape="rect" id="node30" href="image_8c.html#aa09d6434519478ba26eab12a96d600ba" title="Free the image. " alt="" coords="694,579,789,605"/><area shape="rect" id="node31" href="image_8c.html#a5b47fdb25a4d3b575a1a1e1960d5f5e3" title="Calculate the gradients using the following matrix: [0 &#45;1 0; &#45;1 0 1; 0 1 0]. " alt="" coords="677,781,806,808"/><area shape="rect" id="node32" href="image_8c.html#afc5615de31e098e68a4d2e3b4b686a1b" title="Calculate the multiplication between two images and return the error This will only work with image g..." alt="" coords="682,832,801,859"/><area shape="rect" id="node33" href="image_8c.html#a527ba2bdc0c396a6eec8f56ee5b8e097" title="This outputs a subpixel window image in grayscale Currently only works with Grayscale images as input..." alt="" coords="655,883,828,909"/><area shape="rect" id="node34" href="lucas__kanade_8c.html#a869989419ebdf7115ec8fbfbd433e37c" title="Compute the optical flow of several points using the Lucas&#45;Kanade algorithm by Yves Bouguet The initi..." alt="" coords="466,731,589,757"/><area shape="rect" id="node35" href="image_8c.html#a6656ee75c4f8c05dbebbab3fae1b332a" title="This function populates given array of image_t structs with wanted number of padded pyramids based on..." alt="" coords="472,528,583,555"/><area shape="rect" id="node36" href="image_8c.html#af8fc6003afdb4b14bd2f8112491f2dc4" title="This function adds padding to input image by mirroring the edge image elements. " alt="" coords="670,477,813,504"/><area shape="rect" id="node37" href="image_8c.html#a038faec3786d8baa2e38c7672129e276" title="This function takes previous padded pyramid level and outputs next level of pyramid without padding..." alt="" coords="669,528,814,555"/></map>
+<area shape="rect" id="node2" href="act__fast_8c.html#a3fd4992d91035835158a2b8c044377bd" title="Do an ACT&#45;FAST corner detection. " alt="" coords="280,56,353,83"/><area shape="rect" id="node6" href="linear__flow__fit_8c.html#ac1c609f9975078816d4dd4862d94833b" title="Analyze a linear flow field, retrieving information such as divergence, surface roughness, focus of expansion, etc. " alt="" coords="245,234,389,275"/><area shape="rect" id="node12" href="opticflow__calculator_8c.html#a70ba354beb51e86724b52a657ca34c25" title="Compare two flow vectors based on flow distance Used for sorting. " alt="" coords="276,300,357,327"/><area shape="rect" id="node13" href="fast__rosten_8c.html#a188523b38a244aa925088dfa115ed12e" title="Do a FAST9 corner detection. " alt="" coords="489,157,592,184"/><area shape="rect" id="node14" href="size__divergence_8c.html#a5bd0d30766d4538c9b64fccc7826b12a" title="Get divergence from optical flow vectors based on line sizes between corners. " alt="" coords="241,351,393,377"/><area shape="rect" id="node17" href="image_8c.html#a02932625f9aeb66da70c89a2f2d3a052" title="Copy an image from inut to output This will only work if the formats are the same. " alt="" coords="267,401,366,428"/><area shape="rect" id="node18" href="image_8c.html#ab5cc0250c461b9d2f043e4884f6b9a53" title="Create a new image. " alt="" coords="931,477,1041,504"/><area shape="rect" id="node19" href="image_8c.html#a9745125ba8d5be3b499b8ff972e189ee" title="Shows the flow from a specific point to a new point This works on YUV422 and Grayscale images..." alt="" coords="455,984,626,1011"/><area shape="rect" id="node22" href="image_8c.html#a6b1f1f53bd730945826724d139048831" title="Show points in an image by coloring them through giving the pixels the maximum value. " alt="" coords="243,655,390,681"/><area shape="rect" id="node24" href="image_8c.html#a170da2d6e19d1b99084a4fb18bc1a2ee" title="This will switch image *a and *b This is faster as image_copy because it doesn&#39;t copy the whole image..." alt="" coords="263,756,371,783"/><area shape="rect" id="node25" href="image_8c.html#a74a32006a620503a7ca62e5b2a86abd1" title="Convert an image to grayscale. " alt="" coords="241,807,392,833"/><area shape="rect" id="node26" href="opticflow__calculator_8c.html#a096dc77deb46fbfcc36e72bc8eb24784" title="manage_flow_features" alt="" coords="233,132,400,159"/><area shape="rect" id="node28" href="lucas__kanade_8c.html#a6a8349de0d6e2015151312034c07ed0d" title="opticFlowLK" alt="" coords="269,604,364,631"/><area shape="rect" id="node39" href="opticflow__calculator_8c.html#a3332fc643e3c25e5ac27404e75b14299" title="predict_flow_vectors" alt="" coords="241,963,392,989"/><area shape="rect" id="node46" href="opticflow__calculator_8c.html#a37709847b0065c4f371663e9ad30459d" title="Calculate the difference from start till finish. " alt="" coords="269,1013,364,1040"/><area shape="rect" id="node3" href="fast__rosten_8c.html#a227ca8d03c30c4a5ad0ebe0113a8a875" title="Do a FAST9 corner detection for a single pixel. " alt="" coords="471,5,610,32"/><area shape="rect" id="node5" href="image_8c.html#a1cbeeba8965707f0e5e9cb1e256c70c5" title="Get the gradient at a pixel location. " alt="" coords="461,56,620,83"/><area shape="rect" id="node4" href="fast__rosten_8c.html#a58984f615be2e8c52b3d0b1fc595a250" title="Make offsets for FAST9 calculation. " alt="" coords="699,81,837,108"/><area shape="rect" id="node7" href="linear__flow__fit_8c.html#ad96c136057bf95b8ca88d210c453dae3" title="Extract information from the parameters that were fit to the optical flow field. " alt="" coords="467,259,614,301"/><area shape="rect" id="node8" href="linear__flow__fit_8c.html#a4a796ceb3a2c8c6ee52e0f80d7306ced" title="Analyze a linear flow field, retrieving information such as divergence, surface roughness, focus of expansion, etc. " alt="" coords="471,208,611,235"/><area shape="rect" id="node9" href="pprz__matrix__decomp__float_8c.html#a9ef015d22c1f50265978a23b21d13e8a" title="SVD decomposition. " alt="" coords="711,233,825,260"/><area shape="rect" id="node11" href="pprz__matrix__decomp__float_8c.html#a232890252a145ccc1a0dd849bf13cb67" title="SVD based linear solver. " alt="" coords="691,183,845,209"/><area shape="rect" id="node10" href="pprz__matrix__decomp__float_8c.html#ac174129986fce93a3240504458351308" title="Some SVD decomposition utility macros and functions. " alt="" coords="953,233,1019,260"/><area shape="rect" id="node15" href="pprz__stat_8c.html#adea85d32f16991e739b2cea3b3ec427e" title="Compute the mean value of an array (float) " alt="" coords="505,325,576,352"/><area shape="rect" id="node16" href="pprz__stat_8c.html#a234aff5aa9b0f7e40ac863e2b60d6365" title="Compute the sum array elements (float) " alt="" coords="737,325,799,352"/><area shape="rect" id="node20" href="image_8c.html#a5c379f1bb8d221e3830de3cf1fe0478e" title="Draw a cross&#45;hair on the image. " alt="" coords="686,933,850,960"/><area shape="rect" id="node21" href="image_8c.html#a39d2c18c82e89a7ff9b2423a7cdc9366" title="Draw a line on the image. " alt="" coords="903,959,1069,985"/><area shape="rect" id="node23" href="image_8c.html#a5943c9835fd07452f25e10ae27f16720" title="Show points in an image by coloring them through giving the pixels the maximum value. " alt="" coords="448,933,633,960"/><area shape="rect" id="node27" href="opticflow__calculator_8c.html#a61fcf92d4f40ff2d80d6bb03e37120c4" title="Compare the rows of an integer (uint16_t) 2D array based on the first column. " alt="" coords="495,107,586,133"/><area shape="rect" id="node29" href="image_8c.html#ae0f7d6068a0813bd149153b409474672" title="Calculate the G vector of an image gradient This is used for optical flow calculation. " alt="" coords="697,883,839,909"/><area shape="rect" id="node30" href="image_8c.html#a946e57aea5ff8c79adee46cb2c72dd80" title="Calculate the difference between two images and return the error This will only work with grayscale i..." alt="" coords="702,629,834,656"/><area shape="rect" id="node31" href="image_8c.html#aa09d6434519478ba26eab12a96d600ba" title="Free the image. " alt="" coords="721,579,815,605"/><area shape="rect" id="node32" href="image_8c.html#a5b47fdb25a4d3b575a1a1e1960d5f5e3" title="Calculate the gradients using the following matrix: [0 &#45;1 0; &#45;1 0 1; 0 1 0]. " alt="" coords="703,680,833,707"/><area shape="rect" id="node33" href="image_8c.html#afc5615de31e098e68a4d2e3b4b686a1b" title="Calculate the multiplication between two images and return the error This will only work with image g..." alt="" coords="709,781,827,808"/><area shape="rect" id="node34" href="image_8c.html#a527ba2bdc0c396a6eec8f56ee5b8e097" title="This outputs a subpixel window image in grayscale Currently only works with Grayscale images as input..." alt="" coords="681,832,855,859"/><area shape="rect" id="node35" href="lucas__kanade_8c.html#aec51a5433258fa6d3608ae6a76531945" title="Compute the optical flow of several points using the Lucas&#45;Kanade algorithm by Yves Bouguet The initi..." alt="" coords="479,731,602,757"/><area shape="rect" id="node36" href="image_8c.html#a6656ee75c4f8c05dbebbab3fae1b332a" title="This function populates given array of image_t structs with wanted number of padded pyramids based on..." alt="" coords="485,528,596,555"/><area shape="rect" id="node37" href="image_8c.html#af8fc6003afdb4b14bd2f8112491f2dc4" title="This function adds padding to input image by mirroring the edge image elements. " alt="" coords="697,528,839,555"/><area shape="rect" id="node38" href="image_8c.html#a038faec3786d8baa2e38c7672129e276" title="This function takes previous padded pyramid level and outputs next level of pyramid without padding..." alt="" coords="695,477,841,504"/><area shape="rect" id="node40" href="undistortion_8c.html#a2c56172dffbf789b4b5c164c08395740" title="Transform distorted pixel coordinates to normalized coordinates. " alt="" coords="465,1129,616,1170"/><area shape="rect" id="node43" href="undistortion_8c.html#a8de5dc518fd2c56789b57c9561b190e8" title="Transform normalized coordinates to distorted pixel coordinates. " alt="" coords="459,1035,622,1077"/><area shape="rect" id="node41" href="undistortion_8c.html#a81ad256378b5df58e5c0e61f3bddcbe2" title="Undistort distorted normalized image coordinates with the invertible Dhane method. " alt="" coords="695,1187,841,1213"/><area shape="rect" id="node42" href="undistortion_8c.html#abd20e3c24af3ed0e37744adcbcd6fbc2" title="Transform pixel coordinates to normalized coordinates. " alt="" coords="690,1136,846,1163"/><area shape="rect" id="node44" href="undistortion_8c.html#a8e2c52fb82e4e3ee37c424ce13d03c29" title="Distort normalized image coordinates with the invertible Dhane method. " alt="" coords="703,1085,833,1112"/><area shape="rect" id="node45" href="undistortion_8c.html#a44a90a0656990482d07b3d8ac7928ea6" title="Transform normalized coordinates to pixel coordinates. " alt="" coords="690,1035,846,1061"/></map>
 </div>
 </p>
 
@@ -1086,9 +1042,9 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Negative if a[0] &lt; b[0],0 if a[0] == b[0] and positive if a[0] &gt; b[0] </dd></dl>
 
-<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00896">896</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
+<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l01052">1052</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
 
-<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00545">manage_flow_features()</a>.</p>
+<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00699">manage_flow_features()</a>.</p>
 
 <p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -1145,7 +1101,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Negative if b has more flow than a, 0 if the same and positive if a has more flow than b </dd></dl>
 
-<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00881">881</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
+<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l01037">1037</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
 
 <p>References <a class="el" href="image_8h_source.html#l00068">flow_t::flow_x</a>, and <a class="el" href="image_8h_source.html#l00069">flow_t::flow_y</a>.</p>
 
@@ -1202,9 +1158,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00545">545</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
+<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00699">699</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
 
-<p>References <a class="el" href="baro__MS5534A_8c_source.html#l00203">c1</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00896">cmp_array()</a>, <a class="el" href="inter__thread__data_8h_source.html#l00039">opticflow_result_t::corner_cnt</a>, <a class="el" href="image_8h_source.html#l00060">point_t::count</a>, <a class="el" href="fast__rosten_8c_source.html#l00052">fast9_detect()</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00065">opticflow_t::fast9_min_distance</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00072">opticflow_t::fast9_num_regions</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00066">opticflow_t::fast9_padding</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00071">opticflow_t::fast9_region_detect</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00069">opticflow_t::fast9_ret_corners</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00068">opticflow_t::fast9_rsize</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00064">opticflow_t::fast9_threshold</a>, <a class="el" href="image_8h_source.html#l00046">image_t::h</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00062">opticflow_t::max_track_corners</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00044">opticflow_t::prev_img_gray</a>, <a class="el" href="image_8h_source.html#l00045">image_t::w</a>, <a class="el" href="image_8h_source.html#l00058">point_t::x</a>, <a class="el" href="image_8h_source.html#l00061">point_t::x_sub</a>, <a class="el" href="image_8h_source.html#l00059">point_t::y</a>, and <a class="el" href="image_8h_source.html#l00062">point_t::y_sub</a>.</p>
+<p>References <a class="el" href="baro__MS5534A_8c_source.html#l00203">c1</a>, <a class="el" href="opticflow__calculator_8c_source.html#l01052">cmp_array()</a>, <a class="el" href="inter__thread__data_8h_source.html#l00039">opticflow_result_t::corner_cnt</a>, <a class="el" href="image_8h_source.html#l00060">point_t::count</a>, <a class="el" href="fast__rosten_8c_source.html#l00052">fast9_detect()</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00068">opticflow_t::fast9_min_distance</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00075">opticflow_t::fast9_num_regions</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00069">opticflow_t::fast9_padding</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00074">opticflow_t::fast9_region_detect</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00072">opticflow_t::fast9_ret_corners</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00071">opticflow_t::fast9_rsize</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00067">opticflow_t::fast9_threshold</a>, <a class="el" href="image_8h_source.html#l00046">image_t::h</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00065">opticflow_t::max_track_corners</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00044">opticflow_t::prev_img_gray</a>, <a class="el" href="image_8h_source.html#l00045">image_t::w</a>, <a class="el" href="image_8h_source.html#l00058">point_t::x</a>, <a class="el" href="image_8h_source.html#l00061">point_t::x_sub</a>, <a class="el" href="image_8h_source.html#l00059">point_t::y</a>, and <a class="el" href="image_8h_source.html#l00062">point_t::y_sub</a>.</p>
 
 <p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00298">calc_fast9_lukas_kanade()</a>.</p>
 
@@ -1273,11 +1229,11 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00827">827</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
+<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00983">983</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
 
-<p>References <a class="el" href="opticflow__calculator_8c_source.html#l00237">body_to_cam</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00659">calc_edgeflow_tot()</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00298">calc_fast9_lukas_kanade()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00120">float_rmat_transp_vmult()</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00042">opticflow_t::just_switched_method</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00046">opticflow_t::method</a>, <a class="el" href="inter__thread__data_8h_source.html#l00049">opticflow_result_t::vel_body</a>, and <a class="el" href="inter__thread__data_8h_source.html#l00048">opticflow_result_t::vel_cam</a>.</p>
+<p>References <a class="el" href="opticflow__calculator_8c_source.html#l00233">body_to_cam</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00813">calc_edgeflow_tot()</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00298">calc_fast9_lukas_kanade()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00120">float_rmat_transp_vmult()</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00042">opticflow_t::just_switched_method</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00046">opticflow_t::method</a>, <a class="el" href="inter__thread__data_8h_source.html#l00049">opticflow_result_t::vel_body</a>, and <a class="el" href="inter__thread__data_8h_source.html#l00048">opticflow_result_t::vel_cam</a>.</p>
 
-<p>Referenced by <a class="el" href="opticflow__module_8c_source.html#l00147">opticflow_module_calc()</a>.</p>
+<p>Referenced by <a class="el" href="opticflow__module_8c_source.html#l00144">opticflow_module_calc()</a>.</p>
 
 <p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -1286,7 +1242,7 @@ Variables</h2></td></tr>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="opticflow__calculator_8c_a89e51af8fe5a0f534193635d181a2086_cgraph.png" border="0" usemap="#opticflow__calculator_8c_a89e51af8fe5a0f534193635d181a2086_cgraph" alt=""/></div>
 <map name="opticflow__calculator_8c_a89e51af8fe5a0f534193635d181a2086_cgraph" id="opticflow__calculator_8c_a89e51af8fe5a0f534193635d181a2086_cgraph">
-<area shape="rect" id="node2" href="opticflow__calculator_8c.html#ab57bd1ab7d50982c7f9494e40e6da3ca" title="Run the optical flow with EDGEFLOW on a new image frame. " alt="" coords="231,183,365,209"/><area shape="rect" id="node13" href="opticflow__calculator_8c.html#a3edff14cc7f95b5202ba6841a12dfed3" title="Run the optical flow with fast9 and lukaskanade on a new image frame. " alt="" coords="208,892,388,919"/><area shape="rect" id="node48" href="group__math__algebra__float.html#gac852ba0c3ec48acfd8abaefbf933d4b6" title="rotate 3D vector by transposed rotation matrix. " alt="" coords="209,943,387,969"/><area shape="rect" id="node3" href="edge__flow_8c.html#a79cdb2523f43871785a1808f5d3dc260" title="Calc_previous_frame_nr; adaptive Time Horizon. " alt="" coords="455,208,628,235"/><area shape="rect" id="node4" href="edge__flow_8c.html#a362f7ce14089a9e1bf93464ef5731714" title="Calculate_displacement calculates the displacement between two histograms. " alt="" coords="436,56,647,83"/><area shape="rect" id="node6" href="edge__flow_8c.html#a3dacd96582561f6f436df853e4ce0d63" title="Calculate a edge/gradient histogram for each dimension of the image. " alt="" coords="446,5,637,32"/><area shape="rect" id="node7" href="edge__flow_8c.html#a3b033920386bfd9bd702b743b16d6339" title="Draws edgehistogram, displacement and linefit directly on the image for debugging (only for edgeflow ..." alt="" coords="468,259,615,285"/><area shape="rect" id="node10" href="edge__flow_8c.html#a36266096493b2aae14a6aefc01e5c0db" title="getAmountPeaks, calculates the amount of peaks in a edge histogram " alt="" coords="475,107,607,133"/><area shape="rect" id="node11" href="edge__flow_8c.html#a57885c6d0cf61ad61c6e6113b2573c88" title="Fits a linear model to an array with pixel displacements with least squares. " alt="" coords="510,157,573,184"/><area shape="rect" id="node12" href="opticflow__calculator_8c.html#a37709847b0065c4f371663e9ad30459d" title="Calculate the difference from start till finish. " alt="" coords="494,309,589,336"/><area shape="rect" id="node5" href="edge__flow_8c.html#a24125fbc0c941963c0e3a2ab55a97e6e" title="Calculate minimum of an array. " alt="" coords="723,56,825,83"/><area shape="rect" id="node8" href="image_8c.html#a40fe37e1ba3df58796c2aa29e04e8567" title="Draw a pink line on the image. " alt="" coords="710,259,838,285"/><area shape="rect" id="node9" href="image_8c.html#a39d2c18c82e89a7ff9b2423a7cdc9366" title="Draw a line on the image. " alt="" coords="905,259,1071,285"/><area shape="rect" id="node14" href="act__fast_8c.html#a3fd4992d91035835158a2b8c044377bd" title="Do an ACT&#45;FAST corner detection. " alt="" coords="505,993,578,1020"/><area shape="rect" id="node18" href="linear__flow__fit_8c.html#ac1c609f9975078816d4dd4862d94833b" title="Analyze a linear flow field, retrieving information such as divergence, surface roughness, focus of expansion, etc. " alt="" coords="469,1045,613,1086"/><area shape="rect" id="node24" href="opticflow__calculator_8c.html#a70ba354beb51e86724b52a657ca34c25" title="Compare two flow vectors based on flow distance Used for sorting. " alt="" coords="501,943,582,969"/><area shape="rect" id="node25" href="fast__rosten_8c.html#a188523b38a244aa925088dfa115ed12e" title="Do a FAST9 corner detection. " alt="" coords="723,917,825,944"/><area shape="rect" id="node26" href="size__divergence_8c.html#a5bd0d30766d4538c9b64fccc7826b12a" title="Get divergence from optical flow vectors based on line sizes between corners. " alt="" coords="465,1161,617,1188"/><area shape="rect" id="node29" href="image_8c.html#a02932625f9aeb66da70c89a2f2d3a052" title="Copy an image from inut to output This will only work if the formats are the same. " alt="" coords="492,1111,591,1137"/><area shape="rect" id="node30" href="image_8c.html#ab5cc0250c461b9d2f043e4884f6b9a53" title="Create a new image. " alt="" coords="1123,411,1233,437"/><area shape="rect" id="node31" href="image_8c.html#a94dcb784f31e65bdc562452321371a5f" title="Shows the flow from a specific point to a new point This works on YUV422 and Grayscale images..." alt="" coords="475,360,607,387"/><area shape="rect" id="node32" href="image_8c.html#a6b1f1f53bd730945826724d139048831" title="Show points in an image by coloring them through giving the pixels the maximum value. " alt="" coords="468,1212,615,1239"/><area shape="rect" id="node33" href="image_8c.html#a170da2d6e19d1b99084a4fb18bc1a2ee" title="This will switch image *a and *b This is faster as image_copy because it doesn&#39;t copy the whole image..." alt="" coords="487,1263,595,1289"/><area shape="rect" id="node34" href="image_8c.html#a74a32006a620503a7ca62e5b2a86abd1" title="Convert an image to grayscale. " alt="" coords="466,411,617,437"/><area shape="rect" id="node35" href="opticflow__calculator_8c.html#a096dc77deb46fbfcc36e72bc8eb24784" title="manage_flow_features" alt="" coords="458,841,625,868"/><area shape="rect" id="node37" href="lucas__kanade_8c.html#af606a40a73a15031b62ee44a5e0c475d" title="opticFlowLK" alt="" coords="494,639,589,665"/><area shape="rect" id="node15" href="fast__rosten_8c.html#a227ca8d03c30c4a5ad0ebe0113a8a875" title="Do a FAST9 corner detection for a single pixel. " alt="" coords="705,1019,843,1045"/><area shape="rect" id="node17" href="image_8c.html#a1cbeeba8965707f0e5e9cb1e256c70c5" title="Get the gradient at a pixel location. " alt="" coords="695,968,853,995"/><area shape="rect" id="node16" href="fast__rosten_8c.html#a58984f615be2e8c52b3d0b1fc595a250" title="Make offsets for FAST9 calculation. " alt="" coords="919,968,1057,995"/><area shape="rect" id="node19" href="linear__flow__fit_8c.html#ad96c136057bf95b8ca88d210c453dae3" title="Extract information from the parameters that were fit to the optical flow field. " alt="" coords="701,1070,847,1111"/><area shape="rect" id="node20" href="linear__flow__fit_8c.html#a4a796ceb3a2c8c6ee52e0f80d7306ced" title="Analyze a linear flow field, retrieving information such as divergence, surface roughness, focus of expansion, etc. " alt="" coords="704,1136,844,1163"/><area shape="rect" id="node21" href="pprz__matrix__decomp__float_8c.html#a9ef015d22c1f50265978a23b21d13e8a" title="SVD decomposition. " alt="" coords="931,1136,1045,1163"/><area shape="rect" id="node23" href="pprz__matrix__decomp__float_8c.html#a232890252a145ccc1a0dd849bf13cb67" title="SVD based linear solver. " alt="" coords="911,1085,1065,1112"/><area shape="rect" id="node22" href="pprz__matrix__decomp__float_8c.html#ac174129986fce93a3240504458351308" title="Some SVD decomposition utility macros and functions. " alt="" coords="1145,1136,1211,1163"/><area shape="rect" id="node27" href="pprz__stat_8c.html#adea85d32f16991e739b2cea3b3ec427e" title="Compute the mean value of an array (float) " alt="" coords="739,1187,809,1213"/><area shape="rect" id="node28" href="pprz__stat_8c.html#a234aff5aa9b0f7e40ac863e2b60d6365" title="Compute the sum array elements (float) " alt="" coords="957,1187,1019,1213"/><area shape="rect" id="node36" href="opticflow__calculator_8c.html#a61fcf92d4f40ff2d80d6bb03e37120c4" title="Compare the rows of an integer (uint16_t) 2D array based on the first column. " alt="" coords="729,867,819,893"/><area shape="rect" id="node38" href="image_8c.html#ae0f7d6068a0813bd149153b409474672" title="Calculate the G vector of an image gradient This is used for optical flow calculation. " alt="" coords="917,715,1059,741"/><area shape="rect" id="node39" href="image_8c.html#a946e57aea5ff8c79adee46cb2c72dd80" title="Calculate the difference between two images and return the error This will only work with grayscale i..." alt="" coords="922,765,1054,792"/><area shape="rect" id="node40" href="image_8c.html#aa09d6434519478ba26eab12a96d600ba" title="Free the image. " alt="" coords="941,512,1035,539"/><area shape="rect" id="node41" href="image_8c.html#a5b47fdb25a4d3b575a1a1e1960d5f5e3" title="Calculate the gradients using the following matrix: [0 &#45;1 0; &#45;1 0 1; 0 1 0]. " alt="" coords="923,816,1053,843"/><area shape="rect" id="node42" href="image_8c.html#afc5615de31e098e68a4d2e3b4b686a1b" title="Calculate the multiplication between two images and return the error This will only work with image g..." alt="" coords="929,563,1047,589"/><area shape="rect" id="node43" href="image_8c.html#a527ba2bdc0c396a6eec8f56ee5b8e097" title="This outputs a subpixel window image in grayscale Currently only works with Grayscale images as input..." alt="" coords="901,613,1075,640"/><area shape="rect" id="node44" href="lucas__kanade_8c.html#a869989419ebdf7115ec8fbfbd433e37c" title="Compute the optical flow of several points using the Lucas&#45;Kanade algorithm by Yves Bouguet The initi..." alt="" coords="713,664,835,691"/><area shape="rect" id="node45" href="image_8c.html#a6656ee75c4f8c05dbebbab3fae1b332a" title="This function populates given array of image_t structs with wanted number of padded pyramids based on..." alt="" coords="719,461,829,488"/><area shape="rect" id="node46" href="image_8c.html#af8fc6003afdb4b14bd2f8112491f2dc4" title="This function adds padding to input image by mirroring the edge image elements. " alt="" coords="917,411,1059,437"/><area shape="rect" id="node47" href="image_8c.html#a038faec3786d8baa2e38c7672129e276" title="This function takes previous padded pyramid level and outputs next level of pyramid without padding..." alt="" coords="915,461,1061,488"/></map>
+<area shape="rect" id="node2" href="opticflow__calculator_8c.html#ab57bd1ab7d50982c7f9494e40e6da3ca" title="Run the optical flow with EDGEFLOW on a new image frame. " alt="" coords="231,183,365,209"/><area shape="rect" id="node13" href="opticflow__calculator_8c.html#a3edff14cc7f95b5202ba6841a12dfed3" title="Run the optical flow with fast9 and lukaskanade on a new image frame. " alt="" coords="208,655,388,681"/><area shape="rect" id="node50" href="group__math__algebra__float.html#gac852ba0c3ec48acfd8abaefbf933d4b6" title="rotate 3D vector by transposed rotation matrix. " alt="" coords="209,705,387,732"/><area shape="rect" id="node3" href="edge__flow_8c.html#a79cdb2523f43871785a1808f5d3dc260" title="Calc_previous_frame_nr; adaptive Time Horizon. " alt="" coords="455,5,628,32"/><area shape="rect" id="node4" href="edge__flow_8c.html#a362f7ce14089a9e1bf93464ef5731714" title="Calculate_displacement calculates the displacement between two histograms. " alt="" coords="436,56,647,83"/><area shape="rect" id="node6" href="edge__flow_8c.html#a3dacd96582561f6f436df853e4ce0d63" title="Calculate a edge/gradient histogram for each dimension of the image. " alt="" coords="446,107,637,133"/><area shape="rect" id="node7" href="edge__flow_8c.html#a3b033920386bfd9bd702b743b16d6339" title="Draws edgehistogram, displacement and linefit directly on the image for debugging (only for edgeflow ..." alt="" coords="468,259,615,285"/><area shape="rect" id="node10" href="edge__flow_8c.html#a36266096493b2aae14a6aefc01e5c0db" title="getAmountPeaks, calculates the amount of peaks in a edge histogram " alt="" coords="475,157,607,184"/><area shape="rect" id="node11" href="edge__flow_8c.html#a57885c6d0cf61ad61c6e6113b2573c88" title="Fits a linear model to an array with pixel displacements with least squares. " alt="" coords="510,208,573,235"/><area shape="rect" id="node12" href="opticflow__calculator_8c.html#a37709847b0065c4f371663e9ad30459d" title="Calculate the difference from start till finish. " alt="" coords="494,309,589,336"/><area shape="rect" id="node5" href="edge__flow_8c.html#a24125fbc0c941963c0e3a2ab55a97e6e" title="Calculate minimum of an array. " alt="" coords="736,56,839,83"/><area shape="rect" id="node8" href="image_8c.html#a40fe37e1ba3df58796c2aa29e04e8567" title="Draw a pink line on the image. " alt="" coords="951,259,1079,285"/><area shape="rect" id="node9" href="image_8c.html#a39d2c18c82e89a7ff9b2423a7cdc9366" title="Draw a line on the image. " alt="" coords="1149,477,1316,504"/><area shape="rect" id="node14" href="act__fast_8c.html#a3fd4992d91035835158a2b8c044377bd" title="Do an ACT&#45;FAST corner detection. " alt="" coords="505,832,578,859"/><area shape="rect" id="node18" href="linear__flow__fit_8c.html#ac1c609f9975078816d4dd4862d94833b" title="Analyze a linear flow field, retrieving information such as divergence, surface roughness, focus of expansion, etc. " alt="" coords="469,361,613,402"/><area shape="rect" id="node23" href="opticflow__calculator_8c.html#a70ba354beb51e86724b52a657ca34c25" title="Compare two flow vectors based on flow distance Used for sorting. " alt="" coords="501,1420,582,1447"/><area shape="rect" id="node24" href="fast__rosten_8c.html#a188523b38a244aa925088dfa115ed12e" title="Do a FAST9 corner detection. " alt="" coords="736,629,839,656"/><area shape="rect" id="node25" href="size__divergence_8c.html#a5bd0d30766d4538c9b64fccc7826b12a" title="Get divergence from optical flow vectors based on line sizes between corners. " alt="" coords="465,427,617,453"/><area shape="rect" id="node28" href="image_8c.html#a02932625f9aeb66da70c89a2f2d3a052" title="Copy an image from inut to output This will only work if the formats are the same. " alt="" coords="492,528,591,555"/><area shape="rect" id="node29" href="image_8c.html#ab5cc0250c461b9d2f043e4884f6b9a53" title="Create a new image. " alt="" coords="959,1187,1070,1213"/><area shape="rect" id="node30" href="image_8c.html#a9745125ba8d5be3b499b8ff972e189ee" title="Shows the flow from a specific point to a new point This works on YUV422 and Grayscale images..." alt="" coords="702,528,873,555"/><area shape="rect" id="node32" href="image_8c.html#a6b1f1f53bd730945826724d139048831" title="Show points in an image by coloring them through giving the pixels the maximum value. " alt="" coords="468,477,615,504"/><area shape="rect" id="node34" href="image_8c.html#a170da2d6e19d1b99084a4fb18bc1a2ee" title="This will switch image *a and *b This is faster as image_copy because it doesn&#39;t copy the whole image..." alt="" coords="487,680,595,707"/><area shape="rect" id="node35" href="image_8c.html#a74a32006a620503a7ca62e5b2a86abd1" title="Convert an image to grayscale. " alt="" coords="466,731,617,757"/><area shape="rect" id="node36" href="opticflow__calculator_8c.html#a096dc77deb46fbfcc36e72bc8eb24784" title="manage_flow_features" alt="" coords="458,629,625,656"/><area shape="rect" id="node38" href="lucas__kanade_8c.html#a6a8349de0d6e2015151312034c07ed0d" title="opticFlowLK" alt="" coords="494,959,589,985"/><area shape="rect" id="node47" href="opticflow__calculator_8c.html#a3332fc643e3c25e5ac27404e75b14299" title="predict_flow_vectors" alt="" coords="466,1245,617,1272"/><area shape="rect" id="node15" href="fast__rosten_8c.html#a227ca8d03c30c4a5ad0ebe0113a8a875" title="Do a FAST9 corner detection for a single pixel. " alt="" coords="718,680,857,707"/><area shape="rect" id="node17" href="image_8c.html#a1cbeeba8965707f0e5e9cb1e256c70c5" title="Get the gradient at a pixel location. " alt="" coords="708,731,867,757"/><area shape="rect" id="node16" href="fast__rosten_8c.html#a58984f615be2e8c52b3d0b1fc595a250" title="Make offsets for FAST9 calculation. " alt="" coords="945,655,1084,681"/><area shape="rect" id="node19" href="linear__flow__fit_8c.html#ad96c136057bf95b8ca88d210c453dae3" title="Extract information from the parameters that were fit to the optical flow field. " alt="" coords="714,361,861,402"/><area shape="rect" id="node20" href="linear__flow__fit_8c.html#a4a796ceb3a2c8c6ee52e0f80d7306ced" title="Analyze a linear flow field, retrieving information such as divergence, surface roughness, focus of expansion, etc. " alt="" coords="717,309,857,336"/><area shape="rect" id="node21" href="pprz__matrix__decomp__float_8c.html#a9ef015d22c1f50265978a23b21d13e8a" title="SVD decomposition. " alt="" coords="957,360,1072,387"/><area shape="rect" id="node22" href="pprz__matrix__decomp__float_8c.html#a232890252a145ccc1a0dd849bf13cb67" title="SVD based linear solver. " alt="" coords="937,309,1092,336"/><area shape="rect" id="node26" href="pprz__stat_8c.html#adea85d32f16991e739b2cea3b3ec427e" title="Compute the mean value of an array (float) " alt="" coords="752,427,823,453"/><area shape="rect" id="node27" href="pprz__stat_8c.html#a234aff5aa9b0f7e40ac863e2b60d6365" title="Compute the sum array elements (float) " alt="" coords="984,427,1045,453"/><area shape="rect" id="node31" href="image_8c.html#a5c379f1bb8d221e3830de3cf1fe0478e" title="Draw a cross&#45;hair on the image. " alt="" coords="933,477,1097,504"/><area shape="rect" id="node33" href="image_8c.html#a5943c9835fd07452f25e10ae27f16720" title="Show points in an image by coloring them through giving the pixels the maximum value. " alt="" coords="695,477,880,504"/><area shape="rect" id="node37" href="opticflow__calculator_8c.html#a61fcf92d4f40ff2d80d6bb03e37120c4" title="Compare the rows of an integer (uint16_t) 2D array based on the first column. " alt="" coords="742,579,833,605"/><area shape="rect" id="node39" href="image_8c.html#ae0f7d6068a0813bd149153b409474672" title="Calculate the G vector of an image gradient This is used for optical flow calculation. " alt="" coords="944,1135,1085,1161"/><area shape="rect" id="node40" href="image_8c.html#a946e57aea5ff8c79adee46cb2c72dd80" title="Calculate the difference between two images and return the error This will only work with grayscale i..." alt="" coords="949,889,1081,916"/><area shape="rect" id="node41" href="image_8c.html#aa09d6434519478ba26eab12a96d600ba" title="Free the image. " alt="" coords="967,832,1062,859"/><area shape="rect" id="node42" href="image_8c.html#a5b47fdb25a4d3b575a1a1e1960d5f5e3" title="Calculate the gradients using the following matrix: [0 &#45;1 0; &#45;1 0 1; 0 1 0]. " alt="" coords="950,952,1079,979"/><area shape="rect" id="node43" href="image_8c.html#afc5615de31e098e68a4d2e3b4b686a1b" title="Calculate the multiplication between two images and return the error This will only work with image g..." alt="" coords="955,1028,1074,1055"/><area shape="rect" id="node44" href="image_8c.html#a527ba2bdc0c396a6eec8f56ee5b8e097" title="This outputs a subpixel window image in grayscale Currently only works with Grayscale images as input..." alt="" coords="928,1083,1101,1109"/><area shape="rect" id="node45" href="lucas__kanade_8c.html#aec51a5433258fa6d3608ae6a76531945" title="Compute the optical flow of several points using the Lucas&#45;Kanade algorithm by Yves Bouguet The initi..." alt="" coords="726,984,849,1011"/><area shape="rect" id="node46" href="image_8c.html#a6656ee75c4f8c05dbebbab3fae1b332a" title="This function populates given array of image_t structs with wanted number of padded pyramids based on..." alt="" coords="732,781,843,808"/><area shape="rect" id="node48" href="undistortion_8c.html#a2c56172dffbf789b4b5c164c08395740" title="Transform distorted pixel coordinates to normalized coordinates. " alt="" coords="712,1303,863,1345"/><area shape="rect" id="node49" href="undistortion_8c.html#a8de5dc518fd2c56789b57c9561b190e8" title="Transform normalized coordinates to distorted pixel coordinates. " alt="" coords="706,1238,869,1279"/></map>
 </div>
 </p>
 
@@ -1325,11 +1281,11 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00250">250</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
+<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00248">248</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
 
-<p>References <a class="el" href="opticflow__calculator_8h_source.html#l00077">opticflow_t::actfast_gradient_method</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00074">opticflow_t::actfast_long_step</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00076">opticflow_t::actfast_min_gradient</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00075">opticflow_t::actfast_short_step</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00237">body_to_cam</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00047">opticflow_t::corner_method</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00050">opticflow_t::derotation</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00053">opticflow_t::derotation_correction_factor_x</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00054">opticflow_t::derotation_correction_factor_y</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00063">opticflow_t::fast9_adaptive</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00065">opticflow_t::fast9_min_distance</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00072">opticflow_t::fast9_num_regions</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00066">opticflow_t::fast9_padding</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00071">opticflow_t::fast9_region_detect</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00069">opticflow_t::fast9_ret_corners</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00068">opticflow_t::fast9_rsize</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00064">opticflow_t::fast9_threshold</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00070">opticflow_t::feature_management</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00319">float_rmat_of_eulers</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00058">opticflow_t::max_iterations</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00062">opticflow_t::max_track_corners</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00051">opticflow_t::median_filter</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00046">opticflow_t::method</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00214">OPTICFLOW_ACTFAST_GRADIENT_METHOD</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00204">OPTICFLOW_ACTFAST_LONG_STEP</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00219">OPTICFLOW_ACTFAST_MIN_GRADIENT</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00209">OPTICFLOW_ACTFAST_SHORT_STEP</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00225">OPTICFLOW_BODY_TO_CAM_PHI</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00231">OPTICFLOW_BODY_TO_CAM_PSI</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00228">OPTICFLOW_BODY_TO_CAM_THETA</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00067">OPTICFLOW_CORNER_METHOD</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00169">OPTICFLOW_DEROTATION</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00174">OPTICFLOW_DEROTATION_CORRECTION_FACTOR_X</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00179">OPTICFLOW_DEROTATION_CORRECTION_FACTOR_Y</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00136">OPTICFLOW_FAST9_ADAPTIVE</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00146">OPTICFLOW_FAST9_MIN_DISTANCE</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00199">OPTICFLOW_FAST9_NUM_REGIONS</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00151">OPTICFLOW_FAST9_PADDING</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00194">OPTICFLOW_FAST9_REGION_DETECT</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00141">OPTICFLOW_FAST9_THRESHOLD</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00189">OPTICFLOW_FEATURE_MANAGEMENT</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00121">OPTICFLOW_MAX_ITERATIONS</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00096">OPTICFLOW_MAX_TRACK_CORNERS</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00184">OPTICFLOW_MEDIAN_FILTER</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00160">OPTICFLOW_METHOD</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00131">OPTICFLOW_PYRAMID_LEVEL</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00116">OPTICFLOW_RESOLUTION_FACTOR</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00106">OPTICFLOW_SEARCH_DISTANCE</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00111">OPTICFLOW_SUBPIXEL_FACTOR</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00126">OPTICFLOW_THRESHOLD_VEC</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00101">OPTICFLOW_WINDOW_SIZE</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00060">opticflow_t::pyramid_level</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00057">opticflow_t::resolution_factor</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00049">opticflow_t::search_distance</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00056">opticflow_t::subpixel_factor</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00059">opticflow_t::threshold_vec</a>, and <a class="el" href="opticflow__calculator_8h_source.html#l00048">opticflow_t::window_size</a>.</p>
+<p>References <a class="el" href="opticflow__calculator_8h_source.html#l00080">opticflow_t::actfast_gradient_method</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00077">opticflow_t::actfast_long_step</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00079">opticflow_t::actfast_min_gradient</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00078">opticflow_t::actfast_short_step</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00233">body_to_cam</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00047">opticflow_t::corner_method</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00050">opticflow_t::derotation</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00053">opticflow_t::derotation_correction_factor_x</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00054">opticflow_t::derotation_correction_factor_y</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00066">opticflow_t::fast9_adaptive</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00068">opticflow_t::fast9_min_distance</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00075">opticflow_t::fast9_num_regions</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00069">opticflow_t::fast9_padding</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00074">opticflow_t::fast9_region_detect</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00072">opticflow_t::fast9_ret_corners</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00071">opticflow_t::fast9_rsize</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00067">opticflow_t::fast9_threshold</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00073">opticflow_t::feature_management</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00319">float_rmat_of_eulers</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00061">opticflow_t::max_iterations</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00065">opticflow_t::max_track_corners</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00051">opticflow_t::median_filter</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00046">opticflow_t::method</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00194">OPTICFLOW_ACTFAST_GRADIENT_METHOD</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00184">OPTICFLOW_ACTFAST_LONG_STEP</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00199">OPTICFLOW_ACTFAST_MIN_GRADIENT</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00189">OPTICFLOW_ACTFAST_SHORT_STEP</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00205">OPTICFLOW_BODY_TO_CAM_PHI</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00211">OPTICFLOW_BODY_TO_CAM_PSI</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00208">OPTICFLOW_BODY_TO_CAM_THETA</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00070">OPTICFLOW_CORNER_METHOD</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00149">OPTICFLOW_DEROTATION</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00154">OPTICFLOW_DEROTATION_CORRECTION_FACTOR_X</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00159">OPTICFLOW_DEROTATION_CORRECTION_FACTOR_Y</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00116">OPTICFLOW_FAST9_ADAPTIVE</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00126">OPTICFLOW_FAST9_MIN_DISTANCE</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00179">OPTICFLOW_FAST9_NUM_REGIONS</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00131">OPTICFLOW_FAST9_PADDING</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00174">OPTICFLOW_FAST9_REGION_DETECT</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00121">OPTICFLOW_FAST9_THRESHOLD</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00169">OPTICFLOW_FEATURE_MANAGEMENT</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00101">OPTICFLOW_MAX_ITERATIONS</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00076">OPTICFLOW_MAX_TRACK_CORNERS</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00164">OPTICFLOW_MEDIAN_FILTER</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00140">OPTICFLOW_METHOD</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00111">OPTICFLOW_PYRAMID_LEVEL</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00096">OPTICFLOW_RESOLUTION_FACTOR</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00086">OPTICFLOW_SEARCH_DISTANCE</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00224">OPTICFLOW_SHOW_FLOW</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00091">OPTICFLOW_SUBPIXEL_FACTOR</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00106">OPTICFLOW_THRESHOLD_VEC</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00217">OPTICFLOW_TRACK_BACK</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00081">OPTICFLOW_WINDOW_SIZE</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00063">opticflow_t::pyramid_level</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00060">opticflow_t::resolution_factor</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00049">opticflow_t::search_distance</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00057">opticflow_t::show_flow</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00059">opticflow_t::subpixel_factor</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00062">opticflow_t::threshold_vec</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00056">opticflow_t::track_back</a>, and <a class="el" href="opticflow__calculator_8h_source.html#l00048">opticflow_t::window_size</a>.</p>
 
-<p>Referenced by <a class="el" href="opticflow__module_8c_source.html#l00095">opticflow_module_init()</a>.</p>
+<p>Referenced by <a class="el" href="opticflow__module_8c_source.html#l00090">opticflow_module_init()</a>.</p>
 
 <p><div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -1339,6 +1295,92 @@ Variables</h2></td></tr>
 <div class="center"><img src="opticflow__calculator_8c_a519453dc5509bc6d489b2b5aeb94f915_icgraph.png" border="0" usemap="#opticflow__calculator_8c_a519453dc5509bc6d489b2b5aeb94f915_icgraph" alt=""/></div>
 <map name="opticflow__calculator_8c_a519453dc5509bc6d489b2b5aeb94f915_icgraph" id="opticflow__calculator_8c_a519453dc5509bc6d489b2b5aeb94f915_icgraph">
 <area shape="rect" id="node2" href="opticflow__module_8h.html#a6026660ee86fbb1f72bada581386e6d9" title="Initialize the optical flow module for the bottom camera. " alt="" coords="188,5,347,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a3332fc643e3c25e5ac27404e75b14299"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static struct <a class="el" href="image_8h.html#structflow__t">flow_t</a> * predict_flow_vectors </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="image_8h.html#structflow__t">flow_t</a> *&#160;</td>
+          <td class="paramname"><em>flow_vectors</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
+          <td class="paramname"><em>n_points</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>phi_diff</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>theta_diff</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>psi_diff</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="opticflow__calculator_8h.html#structopticflow__t">opticflow_t</a> *&#160;</td>
+          <td class="paramname"><em>opticflow</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00628">628</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
+
+<p>References <a class="el" href="pprz__geodetic__utm_8h_source.html#l00044">A</a>, <a class="el" href="ahrs__float__invariant_8c_source.html#l00101">B</a>, <a class="el" href="undistortion_8c_source.html#l00128">distorted_pixels_to_normalized_coords()</a>, <a class="el" href="image_8h_source.html#l00070">flow_t::error</a>, <a class="el" href="image_8h_source.html#l00068">flow_t::flow_x</a>, <a class="el" href="image_8h_source.html#l00069">flow_t::flow_y</a>, <a class="el" href="undistort__image_8c_source.html#l00070">K</a>, <a class="el" href="lucas__kanade_8h_source.html#l00037">LARGE_FLOW_ERROR</a>, <a class="el" href="undistortion_8c_source.html#l00146">normalized_coords_to_distorted_pixels()</a>, <a class="el" href="image_8h_source.html#l00067">flow_t::pos</a>, <a class="el" href="opticflow__calculator_8h_source.html#l00059">opticflow_t::subpixel_factor</a>, <a class="el" href="image_8h_source.html#l00058">point_t::x</a>, and <a class="el" href="image_8h_source.html#l00059">point_t::y</a>.</p>
+
+<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00298">calc_fast9_lukas_kanade()</a>.</p>
+
+<p><div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="opticflow__calculator_8c_a3332fc643e3c25e5ac27404e75b14299_cgraph.png" border="0" usemap="#opticflow__calculator_8c_a3332fc643e3c25e5ac27404e75b14299_cgraph" alt=""/></div>
+<map name="opticflow__calculator_8c_a3332fc643e3c25e5ac27404e75b14299_cgraph" id="opticflow__calculator_8c_a3332fc643e3c25e5ac27404e75b14299_cgraph">
+<area shape="rect" id="node2" href="undistortion_8c.html#a2c56172dffbf789b4b5c164c08395740" title="Transform distorted pixel coordinates to normalized coordinates. " alt="" coords="210,42,361,83"/><area shape="rect" id="node5" href="undistortion_8c.html#a8de5dc518fd2c56789b57c9561b190e8" title="Transform normalized coordinates to distorted pixel coordinates. " alt="" coords="204,107,367,149"/><area shape="rect" id="node3" href="undistortion_8c.html#a81ad256378b5df58e5c0e61f3bddcbe2" title="Undistort distorted normalized image coordinates with the invertible Dhane method. " alt="" coords="419,5,566,32"/><area shape="rect" id="node4" href="undistortion_8c.html#abd20e3c24af3ed0e37744adcbcd6fbc2" title="Transform pixel coordinates to normalized coordinates. " alt="" coords="415,56,571,83"/><area shape="rect" id="node6" href="undistortion_8c.html#a8e2c52fb82e4e3ee37c424ce13d03c29" title="Distort normalized image coordinates with the invertible Dhane method. " alt="" coords="427,111,558,137"/><area shape="rect" id="node7" href="undistortion_8c.html#a44a90a0656990482d07b3d8ac7928ea6" title="Transform normalized coordinates to pixel coordinates. " alt="" coords="415,161,571,188"/></map>
+</div>
+</p>
+
+<p><div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="opticflow__calculator_8c_a3332fc643e3c25e5ac27404e75b14299_icgraph.png" border="0" usemap="#opticflow__calculator_8c_a3332fc643e3c25e5ac27404e75b14299_icgraph" alt=""/></div>
+<map name="opticflow__calculator_8c_a3332fc643e3c25e5ac27404e75b14299_icgraph" id="opticflow__calculator_8c_a3332fc643e3c25e5ac27404e75b14299_icgraph">
+<area shape="rect" id="node2" href="opticflow__calculator_8h.html#a3edff14cc7f95b5202ba6841a12dfed3" title="Run the optical flow with fast9 and lukaskanade on a new image frame. " alt="" coords="204,5,384,32"/><area shape="rect" id="node3" href="opticflow__calculator_8h.html#a89e51af8fe5a0f534193635d181a2086" title="Run the optical flow on a new image frame. " alt="" coords="432,5,587,32"/><area shape="rect" id="node4" href="opticflow__module_8c.html#a36b69a7ec255d2d20bb31b6d13e3e567" title="The main optical flow calculation thread. " alt="" coords="635,5,799,32"/><area shape="rect" id="node5" href="opticflow__module_8h.html#a6026660ee86fbb1f72bada581386e6d9" title="Initialize the optical flow module for the bottom camera. " alt="" coords="847,5,1005,32"/></map>
 </div>
 </p>
 
@@ -1386,15 +1428,15 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The difference in milliseconds </dd></dl>
 
-<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00866">866</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
+<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l01022">1022</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
 
-<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00659">calc_edgeflow_tot()</a>, and <a class="el" href="opticflow__calculator_8c_source.html#l00298">calc_fast9_lukas_kanade()</a>.</p>
+<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00813">calc_edgeflow_tot()</a>, and <a class="el" href="opticflow__calculator_8c_source.html#l00298">calc_fast9_lukas_kanade()</a>.</p>
 
-<p><div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="opticflow__calculator_8c_a37709847b0065c4f371663e9ad30459d_icgraph.png" border="0" usemap="#opticflow__calculator_8c_a37709847b0065c4f371663e9ad30459d_icgraph" alt=""/></div>
 <map name="opticflow__calculator_8c_a37709847b0065c4f371663e9ad30459d_icgraph" id="opticflow__calculator_8c_a37709847b0065c4f371663e9ad30459d_icgraph">
 <area shape="rect" id="node2" href="opticflow__calculator_8h.html#ab57bd1ab7d50982c7f9494e40e6da3ca" title="Run the optical flow with EDGEFLOW on a new image frame. " alt="" coords="171,5,305,32"/><area shape="rect" id="node6" href="opticflow__calculator_8h.html#a3edff14cc7f95b5202ba6841a12dfed3" title="Run the optical flow with fast9 and lukaskanade on a new image frame. " alt="" coords="148,56,328,83"/><area shape="rect" id="node3" href="opticflow__calculator_8h.html#a89e51af8fe5a0f534193635d181a2086" title="Run the optical flow on a new image frame. " alt="" coords="376,31,531,57"/><area shape="rect" id="node4" href="opticflow__module_8c.html#a36b69a7ec255d2d20bb31b6d13e3e567" title="The main optical flow calculation thread. " alt="" coords="579,31,743,57"/><area shape="rect" id="node5" href="opticflow__module_8h.html#a6026660ee86fbb1f72bada581386e6d9" title="Initialize the optical flow module for the bottom camera. " alt="" coords="791,31,949,57"/></map>
@@ -1414,9 +1456,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00237">237</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
+<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00233">233</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
 
-<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00827">opticflow_calc_frame()</a>, and <a class="el" href="opticflow__calculator_8c_source.html#l00250">opticflow_calc_init()</a>.</p>
+<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00983">opticflow_calc_frame()</a>, and <a class="el" href="opticflow__calculator_8c_source.html#l00248">opticflow_calc_init()</a>.</p>
 
 </div>
 </div>
@@ -1430,7 +1472,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00056">56</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
+<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00060">60</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
 
 <p>Referenced by <a class="el" href="act__fast_8c_source.html#l00048">act_fast()</a>, and <a class="el" href="opticflow__calculator_8c_source.html#l00298">calc_fast9_lukas_kanade()</a>.</p>
 
@@ -1446,7 +1488,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00055">55</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
+<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00059">59</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
 
 <p>Referenced by <a class="el" href="act__fast_8c_source.html#l00048">act_fast()</a>, and <a class="el" href="opticflow__calculator_8c_source.html#l00298">calc_fast9_lukas_kanade()</a>.</p>
 
@@ -1462,9 +1504,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00236">236</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
+<p>Definition at line <a class="el" href="opticflow__calculator_8c_source.html#l00232">232</a> of file <a class="el" href="opticflow__calculator_8c_source.html">opticflow_calculator.c</a>.</p>
 
-<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00659">calc_edgeflow_tot()</a>, and <a class="el" href="opticflow__calculator_8c_source.html#l00298">calc_fast9_lukas_kanade()</a>.</p>
+<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00813">calc_edgeflow_tot()</a>, and <a class="el" href="opticflow__calculator_8c_source.html#l00298">calc_fast9_lukas_kanade()</a>.</p>
 
 </div>
 </div>
@@ -1474,7 +1516,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_304e79c9f5d09ea65a2f55aafb6a6b9d.html">computer_vision</a></li><li class="navelem"><a class="el" href="dir_737909cdc08fae475c12e10cc4efa3fe.html">opticflow</a></li><li class="navelem"><a class="el" href="opticflow__calculator_8c.html">opticflow_calculator.c</a></li>
-    <li class="footer">Generated on Wed Nov 8 2017 10:02:18 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:03:28 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

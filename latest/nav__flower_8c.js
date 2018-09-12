@@ -5,6 +5,7 @@ var nav__flower_8c =
       [ "FlowerLine", "nav__flower_8c.html#ab3972f7766a79f22a1ed10c84e294551a67ace41cbedde07dc60db766a1f42b2f", null ],
       [ "Circle", "nav__flower_8c.html#ab3972f7766a79f22a1ed10c84e294551ad3ce82743a8255ccd69f5b67d257c489", null ]
     ] ],
+    [ "nav_flower_init", "nav__flower_8c.html#ada07e6046b41fa2b2a74a0aa70b39897", null ],
     [ "nav_flower_run", "nav__flower_8c.html#a6d71597b4b26b2c8f393f9621972e463", null ],
     [ "nav_flower_setup", "nav__flower_8c.html#a09c7108cea4e529bb7f83d0850d312cc", null ],
     [ "Center", "nav__flower_8c.html#a688461f77762ad7bc85685537182f73c", null ],

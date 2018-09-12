@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -147,10 +147,10 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a2f34a673c57aed8f653b7b2484c5fd82"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chdk__pipe_8c.html#a2f34a673c57aed8f653b7b2484c5fd82">wait_for_cmd</a> (int timeout)</td></tr>
+<tr class="memitem:a2f34a673c57aed8f653b7b2484c5fd82"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chdk__pipe_8c.html#a2f34a673c57aed8f653b7b2484c5fd82">wait_for_cmd</a> (int <a class="el" href="object__tracking_8c.html#a0847d1b93c790eaa08315d68e786ae14">timeout</a>)</td></tr>
 <tr class="memdesc:a2f34a673c57aed8f653b7b2484c5fd82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for the commandline to be available TODO: add timeout.  <a href="#a2f34a673c57aed8f653b7b2484c5fd82">More...</a><br /></td></tr>
 <tr class="separator:a2f34a673c57aed8f653b7b2484c5fd82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb412201e90d78c603b34f212f5a0b13"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chdk__pipe_8c.html#adb412201e90d78c603b34f212f5a0b13">wait_for_img</a> (char *filename, int timeout)</td></tr>
+<tr class="memitem:adb412201e90d78c603b34f212f5a0b13"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chdk__pipe_8c.html#adb412201e90d78c603b34f212f5a0b13">wait_for_img</a> (char *filename, int <a class="el" href="object__tracking_8c.html#a0847d1b93c790eaa08315d68e786ae14">timeout</a>)</td></tr>
 <tr class="memdesc:adb412201e90d78c603b34f212f5a0b13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for the image to be available TODO: add timeout.  <a href="#adb412201e90d78c603b34f212f5a0b13">More...</a><br /></td></tr>
 <tr class="separator:adb412201e90d78c603b34f212f5a0b13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e76ced5cf617936f8a4a32377a123ac"><td class="memItemLeft" align="right" valign="top">static pid_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chdk__pipe_8c.html#a2e76ced5cf617936f8a4a32377a123ac">popen2</a> (const char *command, int *infp, int *outfp)</td></tr>
@@ -292,7 +292,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="chdk__pipe_8c_source.html#l00050">50</a> of file <a class="el" href="chdk__pipe_8c_source.html">chdk_pipe.c</a>.</p>
 
-<p>References <a class="el" href="kremlib_8h_source.html#l00243">exit</a>, <a class="el" href="chdk__pipe_8c_source.html#l00024">fi</a>, <a class="el" href="chdk__pipe_8c_source.html#l00024">fo</a>, <a class="el" href="chdk__pipe_8c_source.html#l00137">popen2()</a>, <a class="el" href="chdk__pipe_8c_source.html#l00021">setup</a>, <a class="el" href="chdk__pipe_8c_source.html#l00018">SHELL</a>, and <a class="el" href="chdk__pipe_8c_source.html#l00126">wait_for_cmd()</a>.</p>
+<p>References <a class="el" href="chdk__pipe_8c_source.html#l00024">fi</a>, <a class="el" href="chdk__pipe_8c_source.html#l00024">fo</a>, <a class="el" href="chdk__pipe_8c_source.html#l00137">popen2()</a>, <a class="el" href="chdk__pipe_8c_source.html#l00021">setup</a>, <a class="el" href="chdk__pipe_8c_source.html#l00018">SHELL</a>, and <a class="el" href="chdk__pipe_8c_source.html#l00126">wait_for_cmd()</a>.</p>
 
 <p>Referenced by <a class="el" href="catia_8c_source.html#l00025">main()</a>.</p>
 
@@ -408,7 +408,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="chdk__pipe_8c_source.html#l00137">137</a> of file <a class="el" href="chdk__pipe_8c_source.html">chdk_pipe.c</a>.</p>
 
-<p>References <a class="el" href="kremlib_8h_source.html#l00243">exit</a>, <a class="el" href="chdk__pipe_8c_source.html#l00015">READ</a>, and <a class="el" href="chdk__pipe_8c_source.html#l00016">WRITE</a>.</p>
+<p>References <a class="el" href="chdk__pipe_8c_source.html#l00015">READ</a>, and <a class="el" href="chdk__pipe_8c_source.html#l00016">WRITE</a>.</p>
 
 <p>Referenced by <a class="el" href="chdk__pipe_8c_source.html#l00050">chdk_pipe_init()</a>.</p>
 
@@ -605,7 +605,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_9cd42eb44f1e76fa7c8c7cd9c9a53863.html">digital_cam</a></li><li class="navelem"><a class="el" href="dir_8d52ef0129d8a0d69e51e902d77cc0c9.html">catia</a></li><li class="navelem"><a class="el" href="chdk__pipe_8c.html">chdk_pipe.c</a></li>
-    <li class="footer">Generated on Wed Nov 8 2017 10:02:24 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:03:31 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

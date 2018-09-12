@@ -1,13 +1,18 @@
 var decawave__anchorless__communication_8c =
 [
     [ "nodeState", "decawave__anchorless__communication_8c.html#structnodeState", [
+      [ "ax", "decawave__anchorless__communication_8c.html#acd88101a6b3b04216e131b2e6aca1939", null ],
+      [ "ay", "decawave__anchorless__communication_8c.html#aacfdc4cd784172cb75b5b51ef9c5f5ad", null ],
       [ "nodeAddress", "decawave__anchorless__communication_8c.html#a1d3031c62a326d82db79ffbad426921f", null ],
       [ "r", "decawave__anchorless__communication_8c.html#a2cd7b26b7083356f3c4cebd16b4886b1", null ],
       [ "state_updated", "decawave__anchorless__communication_8c.html#a71ed95cd99d66a324de4fb6a98e20c30", null ],
       [ "vx", "decawave__anchorless__communication_8c.html#a701a0951ea5719144dc95167ec86eecf", null ],
       [ "vy", "decawave__anchorless__communication_8c.html#ac42a63234e729735ea920ea7e5e18eeb", null ],
+      [ "yawr", "decawave__anchorless__communication_8c.html#ac08db18ead57ba3ad9ca92a991f1f4f6", null ],
       [ "z", "decawave__anchorless__communication_8c.html#aedc72b5d54316dab173d46ab838a5e26", null ]
     ] ],
+    [ "UWB_SERIAL_COMM_AX", "decawave__anchorless__communication_8c.html#ad424940346424a3f6d16879024afe2c7", null ],
+    [ "UWB_SERIAL_COMM_AY", "decawave__anchorless__communication_8c.html#a4c8b864722cbb1595e04c537fa91b2a1", null ],
     [ "UWB_SERIAL_COMM_DIST_NUM_NODES", "decawave__anchorless__communication_8c.html#ad168b4ae34da0594be7a966a0bde9f5f", null ],
     [ "UWB_SERIAL_COMM_END_MARKER", "decawave__anchorless__communication_8c.html#a7555dd71206bfc350ea3bcec3f8508be", null ],
     [ "UWB_SERIAL_COMM_MAX_MESSAGE", "decawave__anchorless__communication_8c.html#a617e5fc09f1ac5290c594f2ca21ca959", null ],
@@ -18,6 +23,7 @@ var decawave__anchorless__communication_8c =
     [ "UWB_SERIAL_COMM_START_MARKER", "decawave__anchorless__communication_8c.html#aecf9a1ac4caf973a360cfb57507eeecf", null ],
     [ "UWB_SERIAL_COMM_VX", "decawave__anchorless__communication_8c.html#a37c40789e9d1c232944de584f44b3b2b", null ],
     [ "UWB_SERIAL_COMM_VY", "decawave__anchorless__communication_8c.html#a69ac1f48fb128e861016b15f428e1a0b", null ],
+    [ "UWB_SERIAL_COMM_YAWR", "decawave__anchorless__communication_8c.html#a8b2cd6139f69cd35c2bf0a5742433c20", null ],
     [ "UWB_SERIAL_COMM_Z", "decawave__anchorless__communication_8c.html#ab0b1e6dae4b5bbbeeb8a5b31be2a8bbb", null ],
     [ "UWB_SERIAL_PORT", "decawave__anchorless__communication_8c.html#a4728ae1c2135e4a6086331c87d6f0bf5", null ],
     [ "checkStatesUpdated", "decawave__anchorless__communication_8c.html#a1b9df4970567804ad5e82038b0215c8b", null ],

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -241,7 +241,7 @@ $(document).ready(function(){initNavTree('guidance__v__adapt_8c_source.html','')
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  <a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> <a class="code" href="group__math__geodetic__utm.html#ga07484107e6d9fdf38b53edf631d6511d">E</a> = gv_adapt_P + <a class="code" href="guidance__v__adapt_8c.html#ab71b7758a98d0f9f24db0f4ea5cb5127">GV_ADAPT_MEAS_NOISE_HOVER</a> + ref * <a class="code" href="guidance__v__adapt_8c.html#a7375d670f4b38044453271776694d0a9">GV_ADAPT_MEAS_NOISE_OF_ZD</a>;</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  <span class="comment">/* Kalman gain  K = P / (P + R) = P / E  */</span></div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  <a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> K = (gv_adapt_P &lt;&lt; <a class="code" href="guidance__v__adapt_8c.html#a51fba05eb418475b476fbadc2534827c">K_FRAC</a>) / E;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  <a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> <a class="code" href="undistort__image_8c.html#a29a532ec52354ee7571487245359a066">K</a> = (gv_adapt_P &lt;&lt; <a class="code" href="guidance__v__adapt_8c.html#a51fba05eb418475b476fbadc2534827c">K_FRAC</a>) / E;</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  <span class="comment">/* Update Covariance  Pnew = P - K * P   */</span></div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  gv_adapt_P = gv_adapt_P - ((K * <a class="code" href="guidance__v__adapt_8c.html#a397e893a9ab16d6efe7637576c61dd00">gv_adapt_P</a>) &gt;&gt; <a class="code" href="guidance__v__adapt_8c.html#a51fba05eb418475b476fbadc2534827c">K_FRAC</a>);</div>
@@ -270,6 +270,7 @@ $(document).ready(function(){initNavTree('guidance__v__adapt_8c_source.html','')
 <div class="ttc" id="group__math__algebra__int_html_ga871a3a4fc9d79e94f0f648483542f7fa"><div class="ttname"><a href="group__math__algebra__int.html#ga871a3a4fc9d79e94f0f648483542f7fa">INT32_ACCEL_FRAC</a></div><div class="ttdeci">#define INT32_ACCEL_FRAC</div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__int_8h_source.html#l00078">pprz_algebra_int.h:78</a></div></div>
 <div class="ttc" id="guidance__v__adapt_8c_html_a8009c4c8d2bf9ea4150743b0ee52d75a"><div class="ttname"><a href="guidance__v__adapt_8c.html#a8009c4c8d2bf9ea4150743b0ee52d75a">GV_ADAPT_SYS_NOISE</a></div><div class="ttdeci">#define GV_ADAPT_SYS_NOISE</div><div class="ttdef"><b>Definition:</b> <a href="guidance__v__adapt_8c_source.html#l00107">guidance_v_adapt.c:107</a></div></div>
 <div class="ttc" id="group__math__algebra__int_html_ga78c97bb51a4486cff673bf9995b8fdb0"><div class="ttname"><a href="group__math__algebra__int.html#ga78c97bb51a4486cff673bf9995b8fdb0">INT32_SPEED_FRAC</a></div><div class="ttdeci">#define INT32_SPEED_FRAC</div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__int_8h_source.html#l00073">pprz_algebra_int.h:73</a></div></div>
+<div class="ttc" id="undistort__image_8c_html_a29a532ec52354ee7571487245359a066"><div class="ttname"><a href="undistort__image_8c.html#a29a532ec52354ee7571487245359a066">K</a></div><div class="ttdeci">static float K[9]</div><div class="ttdef"><b>Definition:</b> <a href="undistort__image_8c_source.html#l00070">undistort_image.c:70</a></div></div>
 <div class="ttc" id="guidance__v__adapt_8c_html_ad86e4967e4f8918981e037e48aed1ad1"><div class="ttname"><a href="guidance__v__adapt_8c.html#ad86e4967e4f8918981e037e48aed1ad1">GUIDANCE_V_ADAPT_MAX_CMD</a></div><div class="ttdeci">#define GUIDANCE_V_ADAPT_MAX_CMD</div><div class="ttdoc">Filter is not fed if command values are out of a % of 0/MAX_PPRZ. </div><div class="ttdef"><b>Definition:</b> <a href="guidance__v__adapt_8c_source.html#l00091">guidance_v_adapt.c:91</a></div></div>
 <div class="ttc" id="guidance__v__adapt_8c_html_ab71b7758a98d0f9f24db0f4ea5cb5127"><div class="ttname"><a href="guidance__v__adapt_8c.html#ab71b7758a98d0f9f24db0f4ea5cb5127">GV_ADAPT_MEAS_NOISE_HOVER</a></div><div class="ttdeci">#define GV_ADAPT_MEAS_NOISE_HOVER</div><div class="ttdef"><b>Definition:</b> <a href="guidance__v__adapt_8c_source.html#l00111">guidance_v_adapt.c:111</a></div></div>
 <div class="ttc" id="guidance__v__adapt_8h_html_a039f31720ffa5d57ad37345eec2fb302"><div class="ttname"><a href="guidance__v__adapt_8h.html#a039f31720ffa5d57ad37345eec2fb302">GV_ADAPT_X_FRAC</a></div><div class="ttdeci">#define GV_ADAPT_X_FRAC</div><div class="ttdef"><b>Definition:</b> <a href="guidance__v__adapt_8h_source.html#l00040">guidance_v_adapt.h:40</a></div></div>
@@ -302,7 +303,7 @@ $(document).ready(function(){initNavTree('guidance__v__adapt_8c_source.html','')
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_e37d355c72eb7c8e5b43c34bdea5a24b.html">rotorcraft</a></li><li class="navelem"><a class="el" href="dir_3d64810a495a8e63c02e8d4ee1418813.html">guidance</a></li><li class="navelem"><a class="el" href="guidance__v__adapt_8c.html">guidance_v_adapt.c</a></li>
-    <li class="footer">Generated on Wed Nov 8 2017 10:01:32 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:02:37 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -1,5 +1,6 @@
 var autopilot_8h_structpprz__autopilot =
 [
+    [ "arming_status", "autopilot_8h.html#a15a35c53993bb6bd17765757498ab191", null ],
     [ "detect_ground_once", "autopilot_8h.html#a62f158e87f1df5bb70d52b737d55a81b", null ],
     [ "flight_time", "autopilot_8h.html#af35bdb0c0c4f70fa59cbdcc4de62fa47", null ],
     [ "ground_detected", "autopilot_8h.html#a1154041b9d6cf2833d5e8748b66ab8e2", null ],

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -218,6 +218,15 @@ Functions</h2></td></tr>
 <tr class="memitem:gafb731922c9fb73255aa4cc11e34bfbd6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__i2c.html#gafb731922c9fb73255aa4cc11e34bfbd6">i2c_transceive</a> (struct <a class="el" href="group__i2c.html#structi2c__periph">i2c_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, struct <a class="el" href="group__i2c.html#structi2c__transaction">i2c_transaction</a> *t, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> s_addr, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> len_w, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> len_r)</td></tr>
 <tr class="memdesc:gafb731922c9fb73255aa4cc11e34bfbd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a write/read transaction.  <a href="group__i2c.html#gafb731922c9fb73255aa4cc11e34bfbd6">More...</a><br /></td></tr>
 <tr class="separator:gafb731922c9fb73255aa4cc11e34bfbd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad729c07f3a162f0463cbe381f4b538d3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__i2c.html#gad729c07f3a162f0463cbe381f4b538d3">i2c_blocking_transmit</a> (struct <a class="el" href="group__i2c.html#structi2c__periph">i2c_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, struct <a class="el" href="group__i2c.html#structi2c__transaction">i2c_transaction</a> *t, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> s_addr, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> len)</td></tr>
+<tr class="memdesc:gad729c07f3a162f0463cbe381f4b538d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a write only transaction and wait for it to complete.  <a href="group__i2c.html#gad729c07f3a162f0463cbe381f4b538d3">More...</a><br /></td></tr>
+<tr class="separator:gad729c07f3a162f0463cbe381f4b538d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga20e1122a73affcddc3adfd904799e612"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__i2c.html#ga20e1122a73affcddc3adfd904799e612">i2c_blocking_receive</a> (struct <a class="el" href="group__i2c.html#structi2c__periph">i2c_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, struct <a class="el" href="group__i2c.html#structi2c__transaction">i2c_transaction</a> *t, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> s_addr, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> len)</td></tr>
+<tr class="memdesc:ga20e1122a73affcddc3adfd904799e612"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a read only transaction and wait for it to complete.  <a href="group__i2c.html#ga20e1122a73affcddc3adfd904799e612">More...</a><br /></td></tr>
+<tr class="separator:ga20e1122a73affcddc3adfd904799e612"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0666a38e1bb2dc7a6b796a404e27fef4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__i2c.html#ga0666a38e1bb2dc7a6b796a404e27fef4">i2c_blocking_transceive</a> (struct <a class="el" href="group__i2c.html#structi2c__periph">i2c_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, struct <a class="el" href="group__i2c.html#structi2c__transaction">i2c_transaction</a> *t, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> s_addr, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> len_w, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> len_r)</td></tr>
+<tr class="memdesc:ga0666a38e1bb2dc7a6b796a404e27fef4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a write/read transaction and wait for it to complete.  <a href="group__i2c.html#ga0666a38e1bb2dc7a6b796a404e27fef4">More...</a><br /></td></tr>
+<tr class="separator:ga0666a38e1bb2dc7a6b796a404e27fef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Architecture independent I2C (Inter-Integrated Circuit Bus) API. </p>
@@ -230,7 +239,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_1ca43f6a116d741d80fb1d0555a2b198.html">mcu_periph</a></li><li class="navelem"><a class="el" href="i2c_8h.html">i2c.h</a></li>
-    <li class="footer">Generated on Wed Nov 8 2017 10:02:15 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:03:24 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

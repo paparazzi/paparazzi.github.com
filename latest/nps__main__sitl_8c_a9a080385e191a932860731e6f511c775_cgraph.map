@@ -1,9 +1,9 @@
 <map id="nps_main_run_sim_step" name="nps_main_run_sim_step">
 <area shape="rect" id="node2" href="$nps__atmosphere_8c.html#a67677167db3648e35b21ad5e7aab5e80" title="nps_atmosphere_update" alt="" coords="253,56,436,83"/>
-<area shape="rect" id="node5" href="$nps__autopilot_8h.html#a12870aaa609d4860004be3cec4c8cf2a" title="nps_autopilot_run_step" alt="" coords="259,705,430,732"/>
-<area shape="rect" id="node29" href="$nps__autopilot_8h.html#a7ac376c868e8cec83ef082ac3beb9487" title="nps_autopilot_run_systime_step" alt="" coords="231,1320,459,1347"/>
-<area shape="rect" id="node31" href="$nps__fdm_8h.html#a4f72ff1c76415e3e41897d762122c5f8" title="Update the simulation state. " alt="" coords="275,1599,415,1625"/>
-<area shape="rect" id="node43" href="$nps__sensors_8c.html#acce77f76dcc7946ef7dfd9a522b47b63" title="nps_sensors_run_step" alt="" coords="262,2055,427,2081"/>
+<area shape="rect" id="node5" href="$nps__autopilot_8h.html#a12870aaa609d4860004be3cec4c8cf2a" title="nps_autopilot_run_step" alt="" coords="259,655,430,681"/>
+<area shape="rect" id="node27" href="$nps__autopilot_8h.html#a7ac376c868e8cec83ef082ac3beb9487" title="nps_autopilot_run_systime_step" alt="" coords="231,1219,459,1245"/>
+<area shape="rect" id="node29" href="$nps__fdm_8h.html#a4f72ff1c76415e3e41897d762122c5f8" title="Update the simulation state. " alt="" coords="275,1497,415,1524"/>
+<area shape="rect" id="node41" href="$nps__sensors_8c.html#acce77f76dcc7946ef7dfd9a522b47b63" title="nps_sensors_run_step" alt="" coords="262,2004,427,2031"/>
 <area shape="rect" id="node3" href="$nps__fdm_8h.html#ac07a0f8dffd889c21a81979e521a8d97" title="nps_fdm_set_turbulence" alt="" coords="521,5,700,32"/>
 <area shape="rect" id="node4" href="$nps__fdm_8h.html#a05c90019f11f90f6855e9b0c3224b4a3" title="nps_fdm_set_wind_ned" alt="" coords="525,56,696,83"/>
 <area shape="rect" id="node6" href="$autopilot_8c.html#a6b52f0f9cd2cbf420a77029513ea6f35" title="get motors status " alt="" coords="519,107,702,133"/>
@@ -27,25 +27,25 @@
 <area shape="rect" id="node24" href="$nps__autopilot__fixedwing_8c.html#abf3277c5d8e757db78d1d7d84cac144f" title="sim_overwrite_ahrs" alt="" coords="538,1067,683,1093"/>
 <area shape="rect" id="node25" href="$nps__autopilot__fixedwing_8c.html#a636593c9bb6482b2a36d64bef4975310" title="sim_overwrite_ins" alt="" coords="543,1117,678,1144"/>
 <area shape="rect" id="node26" href="$group__state__wind__airspeed.html#ga2ede5795eaec38206e25b8850ee40f63" title="Set airspeed (float). " alt="" coords="539,1168,683,1195"/>
-<area shape="rect" id="node27" href="$group__state__wind__airspeed.html#ga1a540eaf41fceb101d2c7403f1e9ba06" title="Set angle of attack in radians (float). " alt="" coords="521,1219,700,1245"/>
-<area shape="rect" id="node28" href="$group__state__wind__airspeed.html#ga6198f76153003e86df9bbac3ed892ed1" title="Set sideslip angle in radians (float). " alt="" coords="542,1269,679,1296"/>
-<area shape="rect" id="node30" href="$chibios_2mcu__periph_2sys__time__arch_8c.html#a69effd654e3a455f2f0bba7b270eab48" title="sys_tick_handler" alt="" coords="547,1320,674,1347"/>
-<area shape="rect" id="node32" href="$nps__fdm__jsbsim_8cpp.html#aa8d531348a8fbe30accc30952915a90d" title="Checks NpsFdm struct for NaNs. " alt="" coords="553,1371,668,1397"/>
-<area shape="rect" id="node33" href="$nps__fdm__crrcsim_8c.html#a8321162c08bf2560073a99ea18d5a045" title="decode_ahrspacket" alt="" coords="537,1421,684,1448"/>
-<area shape="rect" id="node34" href="$nps__fdm__crrcsim_8c.html#af6bebbe57b1e739c8b1565a483f91597" title="decode_gpspacket" alt="" coords="539,1472,682,1499"/>
-<area shape="rect" id="node35" href="$nps__fdm__crrcsim_8c.html#ac37d179a4a680d5869427c60c0ef8c25" title="decode_imupacket" alt="" coords="539,1523,682,1549"/>
-<area shape="rect" id="node36" href="$nps__fdm__jsbsim_8cpp.html#ac3f41f22e543ac14794eecd306681e76" title="Feed JSBSim with the latest actuator commands. " alt="" coords="561,1573,660,1600"/>
-<area shape="rect" id="node37" href="$nps__fdm__jsbsim_8cpp.html#a2d617cee29889c9d6592f9978dfa8a31" title="Populates the NPS fdm struct after a simulation step. " alt="" coords="563,1624,658,1651"/>
-<area shape="rect" id="node38" href="$nps__fdm__gazebo_8cpp.html#a9708e7004fa19d0d9fbbbf480fa7829b" title="Read Gazebo&#39;s simulation state and store the results in the fdm struct used by NPS. " alt="" coords="558,1675,663,1701"/>
-<area shape="rect" id="node39" href="$nps__fdm__gazebo_8cpp.html#a3abe86a7add17ad03ccc3e2e84f8cfbe" title="Write actuator commands to Gazebo. " alt="" coords="557,1725,664,1752"/>
-<area shape="rect" id="node40" href="$nps__fdm__crrcsim_8c.html#a67337675973f93b9ab3cd01a3e5d2435" title="get_msg" alt="" coords="571,1776,650,1803"/>
-<area shape="rect" id="node41" href="$nps__fdm__gazebo_8cpp.html#acf1b27b2902f5682b920ee9420619a10" title="Set up a Gazebo server. " alt="" coords="563,1827,658,1853"/>
-<area shape="rect" id="node42" href="$nps__fdm__crrcsim_8c.html#a75978090ea593009549c5dc324e060f1" title="send_servo_cmd" alt="" coords="545,1877,676,1904"/>
-<area shape="rect" id="node44" href="$nps__sensor__gyro_8c.html#a0e6d7f6637deebfa2e530c1d17d8145a" title="nps_sensor_gyro_run_step" alt="" coords="514,1928,707,1955"/>
-<area shape="rect" id="node45" href="$nps__sensor__accel_8c.html#a6dde36646613cb09a8a384af3c85b9e6" title="nps_sensor_accel_run_step" alt="" coords="511,1979,710,2005"/>
-<area shape="rect" id="node46" href="$nps__sensor__mag_8c.html#afd402828074c485d02f9ceb00e384b03" title="nps_sensor_mag_run_step" alt="" coords="513,2029,708,2056"/>
-<area shape="rect" id="node47" href="$nps__sensor__baro_8c.html#ac776435b52b441f95b61ecff4a6f2762" title="nps_sensor_baro_run_step" alt="" coords="513,2080,708,2107"/>
-<area shape="rect" id="node48" href="$nps__sensor__gps_8c.html#a8b6a7e5d571ffcdd482b49cef2e2efe4" title="nps_sensor_gps_run_step" alt="" coords="517,2131,705,2157"/>
-<area shape="rect" id="node49" href="$nps__sensor__sonar_8c.html#a4e2b27eb6c2f7ed609f9b0a9d59368c4" title="nps_sensor_sonar_run_step" alt="" coords="510,2181,711,2208"/>
-<area shape="rect" id="node50" href="$nps__sensor__airspeed_8c.html#a7ea8fb956ea4cec723729964031915d5" title="nps_sensor_airspeed\l_run_step" alt="" coords="532,2233,689,2274"/>
+<area shape="rect" id="node28" href="$chibios_2mcu__periph_2sys__time__arch_8c.html#a69effd654e3a455f2f0bba7b270eab48" title="sys_tick_handler" alt="" coords="547,1219,674,1245"/>
+<area shape="rect" id="node30" href="$nps__fdm__jsbsim_8cpp.html#aa8d531348a8fbe30accc30952915a90d" title="Checks NpsFdm struct for NaNs. " alt="" coords="553,1269,668,1296"/>
+<area shape="rect" id="node31" href="$nps__fdm__crrcsim_8c.html#a8321162c08bf2560073a99ea18d5a045" title="decode_ahrspacket" alt="" coords="537,1320,684,1347"/>
+<area shape="rect" id="node32" href="$nps__fdm__crrcsim_8c.html#af6bebbe57b1e739c8b1565a483f91597" title="decode_gpspacket" alt="" coords="539,1371,682,1397"/>
+<area shape="rect" id="node33" href="$nps__fdm__crrcsim_8c.html#ac37d179a4a680d5869427c60c0ef8c25" title="decode_imupacket" alt="" coords="539,1421,682,1448"/>
+<area shape="rect" id="node34" href="$nps__fdm__jsbsim_8cpp.html#ac3f41f22e543ac14794eecd306681e76" title="Feed JSBSim with the latest actuator commands. " alt="" coords="561,1472,660,1499"/>
+<area shape="rect" id="node35" href="$nps__fdm__jsbsim_8cpp.html#a2d617cee29889c9d6592f9978dfa8a31" title="Populates the NPS fdm struct after a simulation step. " alt="" coords="563,1523,658,1549"/>
+<area shape="rect" id="node36" href="$nps__fdm__gazebo_8cpp.html#a9708e7004fa19d0d9fbbbf480fa7829b" title="Read Gazebo&#39;s simulation state and store the results in the fdm struct used by NPS. " alt="" coords="558,1573,663,1600"/>
+<area shape="rect" id="node37" href="$nps__fdm__gazebo_8cpp.html#a3abe86a7add17ad03ccc3e2e84f8cfbe" title="Write actuator commands to Gazebo. " alt="" coords="557,1624,664,1651"/>
+<area shape="rect" id="node38" href="$nps__fdm__crrcsim_8c.html#a67337675973f93b9ab3cd01a3e5d2435" title="get_msg" alt="" coords="571,1675,650,1701"/>
+<area shape="rect" id="node39" href="$nps__fdm__gazebo_8cpp.html#acf1b27b2902f5682b920ee9420619a10" title="Set up a Gazebo server. " alt="" coords="563,1725,658,1752"/>
+<area shape="rect" id="node40" href="$nps__fdm__crrcsim_8c.html#a75978090ea593009549c5dc324e060f1" title="send_servo_cmd" alt="" coords="545,1776,676,1803"/>
+<area shape="rect" id="node42" href="$nps__sensor__gyro_8c.html#a0e6d7f6637deebfa2e530c1d17d8145a" title="nps_sensor_gyro_run_step" alt="" coords="514,1827,707,1853"/>
+<area shape="rect" id="node43" href="$nps__sensor__accel_8c.html#a6dde36646613cb09a8a384af3c85b9e6" title="nps_sensor_accel_run_step" alt="" coords="511,1877,710,1904"/>
+<area shape="rect" id="node44" href="$nps__sensor__mag_8c.html#afd402828074c485d02f9ceb00e384b03" title="nps_sensor_mag_run_step" alt="" coords="513,1928,708,1955"/>
+<area shape="rect" id="node45" href="$nps__sensor__baro_8c.html#ac776435b52b441f95b61ecff4a6f2762" title="nps_sensor_baro_run_step" alt="" coords="513,1979,708,2005"/>
+<area shape="rect" id="node46" href="$nps__sensor__gps_8c.html#a8b6a7e5d571ffcdd482b49cef2e2efe4" title="nps_sensor_gps_run_step" alt="" coords="517,2029,705,2056"/>
+<area shape="rect" id="node47" href="$nps__sensor__sonar_8c.html#a4e2b27eb6c2f7ed609f9b0a9d59368c4" title="nps_sensor_sonar_run_step" alt="" coords="510,2080,711,2107"/>
+<area shape="rect" id="node48" href="$nps__sensor__airspeed_8c.html#a7ea8fb956ea4cec723729964031915d5" title="nps_sensor_airspeed\l_run_step" alt="" coords="532,2131,689,2173"/>
+<area shape="rect" id="node49" href="$nps__sensor__temperature_8c.html#a9b3050705f61f467495ad96d989afd0c" title="nps_sensor_temperature\l_run_step" alt="" coords="519,2197,702,2238"/>
+<area shape="rect" id="node50" href="$nps__sensor__aoa_8c.html#aff4573dfb3981359e087728798b18c23" title="nps_sensor_aoa_run_step" alt="" coords="516,2263,705,2289"/>
 </map>

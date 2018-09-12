@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -448,7 +448,8 @@ $(document).ready(function(){initNavTree('globals_b.html','');});
 : <a class="el" href="lisa__l_2baro__board_8c.html#a6c5d28296d0273908662b993468d73cb">baro_board.c</a>
 </li>
 <li>baro_cb()
-: <a class="el" href="ins__skeleton_8c.html#a7fdc16072298b2db800864d08d72945a">ins_skeleton.c</a>
+: <a class="el" href="ins__mekf__wind__wrapper_8c.html#a7fdc16072298b2db800864d08d72945a">ins_mekf_wind_wrapper.c</a>
+, <a class="el" href="ins__skeleton_8c.html#a7fdc16072298b2db800864d08d72945a">ins_skeleton.c</a>
 , <a class="el" href="ins__alt__float_8c.html#a7fdc16072298b2db800864d08d72945a">ins_alt_float.c</a>
 , <a class="el" href="ins__float__invariant__wrapper_8c.html#a7fdc16072298b2db800864d08d72945a">ins_float_invariant_wrapper.c</a>
 , <a class="el" href="ins__int_8c.html#a7fdc16072298b2db800864d08d72945a">ins_int.c</a>
@@ -564,7 +565,8 @@ $(document).ready(function(){initNavTree('globals_b.html','');});
 , <a class="el" href="baro__ets_8h.html#a1e53a1472f63179c5b73ac9dcc75601c">baro_ets.h</a>
 </li>
 <li>baro_ev
-: <a class="el" href="ins__skeleton_8c.html#a7e2e4e9787ce7895e880fe4eb5dc0702">ins_skeleton.c</a>
+: <a class="el" href="ins__mekf__wind__wrapper_8c.html#a7e2e4e9787ce7895e880fe4eb5dc0702">ins_mekf_wind_wrapper.c</a>
+, <a class="el" href="ins__skeleton_8c.html#a7e2e4e9787ce7895e880fe4eb5dc0702">ins_skeleton.c</a>
 , <a class="el" href="ins__alt__float_8c.html#a7e2e4e9787ce7895e880fe4eb5dc0702">ins_alt_float.c</a>
 , <a class="el" href="ins__float__invariant__wrapper_8c.html#a7e2e4e9787ce7895e880fe4eb5dc0702">ins_float_invariant_wrapper.c</a>
 , <a class="el" href="ins__int_8c.html#a7e2e4e9787ce7895e880fe4eb5dc0702">ins_int.c</a>
@@ -601,8 +603,8 @@ $(document).ready(function(){initNavTree('globals_b.html','');});
 , <a class="el" href="baro__hca_8h.html#ae5cec43bc2d58c755d2bd0ec39eec8d4">baro_hca.h</a>
 </li>
 <li>baro_hca_init()
-: <a class="el" href="baro__hca_8c.html#a03acca48d9dc4f37f0455600328ac30a">baro_hca.c</a>
-, <a class="el" href="baro__hca_8h.html#a03acca48d9dc4f37f0455600328ac30a">baro_hca.h</a>
+: <a class="el" href="baro__hca_8h.html#a03acca48d9dc4f37f0455600328ac30a">baro_hca.h</a>
+, <a class="el" href="baro__hca_8c.html#a03acca48d9dc4f37f0455600328ac30a">baro_hca.c</a>
 </li>
 <li>BARO_HCA_MAX_OUT
 : <a class="el" href="baro__hca_8c.html#aa2abdd33cd47a7d984dc0916348b6c05">baro_hca.c</a>
@@ -810,7 +812,7 @@ $(document).ready(function(){initNavTree('globals_b.html','');});
 , <a class="el" href="baro_8h.html#a23ed77c56ba44b3ed3cc3b8e378bdb00">baro.h</a>
 </li>
 <li>BARO_PERIODIC_FREQUENCY
-: <a class="el" href="rotorcraft_2main__ap_8c.html#a124e8be962a54f3f7a0957fa34ec5876">main_ap.c</a>
+: <a class="el" href="rover_2main__ap_8c.html#a124e8be962a54f3f7a0957fa34ec5876">main_ap.c</a>
 </li>
 <li>baro_read()
 : <a class="el" href="swing_2baro__board_8c.html#ac92a0c0517ee3a8c9d5eeb7a31fdc316">baro_board.c</a>
@@ -925,7 +927,7 @@ $(document).ready(function(){initNavTree('globals_b.html','');});
 : <a class="el" href="baro__ets_8h.html#a8593684bb1be9bea4a2541091926e973">baro_ets.h</a>
 </li>
 <li>BaroEvent
-: <a class="el" href="lisa__l_2baro__board_8h.html#a430d0a6a2030a6b9f31c8a1a04846781">baro_board.h</a>
+: <a class="el" href="apogee_2baro__board_8h.html#a430d0a6a2030a6b9f31c8a1a04846781">baro_board.h</a>
 </li>
 <li>BaroHcaEvent
 : <a class="el" href="baro__hca_8h.html#af603ee116d61a972761b23bd5f947644">baro_hca.h</a>
@@ -957,28 +959,28 @@ $(document).ready(function(){initNavTree('globals_b.html','');});
 : <a class="el" href="swing_2board_8c.html#ac3ddb4680b1137bdfeef12f69a58537c">board.c</a>
 </li>
 <li>bat_voltage_ardrone2_init()
-: <a class="el" href="bat__voltage__ardrone2_8c.html#ab9af5b4a5c98f740f8a494b3e13b6b5c">bat_voltage_ardrone2.c</a>
-, <a class="el" href="bat__voltage__ardrone2_8h.html#ab9af5b4a5c98f740f8a494b3e13b6b5c">bat_voltage_ardrone2.h</a>
+: <a class="el" href="bat__voltage__ardrone2_8h.html#ab9af5b4a5c98f740f8a494b3e13b6b5c">bat_voltage_ardrone2.h</a>
+, <a class="el" href="bat__voltage__ardrone2_8c.html#ab9af5b4a5c98f740f8a494b3e13b6b5c">bat_voltage_ardrone2.c</a>
 </li>
 <li>bat_voltage_ardrone2_periodic()
-: <a class="el" href="bat__voltage__ardrone2_8h.html#a29f655da1d6e283a278fa280cc567b01">bat_voltage_ardrone2.h</a>
-, <a class="el" href="bat__voltage__ardrone2_8c.html#a29f655da1d6e283a278fa280cc567b01">bat_voltage_ardrone2.c</a>
+: <a class="el" href="bat__voltage__ardrone2_8c.html#a29f655da1d6e283a278fa280cc567b01">bat_voltage_ardrone2.c</a>
+, <a class="el" href="bat__voltage__ardrone2_8h.html#a29f655da1d6e283a278fa280cc567b01">bat_voltage_ardrone2.h</a>
 </li>
 <li>batmon_current_offset
-: <a class="el" href="battery__monitor_8c.html#a14abcaedde7d798d8fc0274e1eb5ba20">battery_monitor.c</a>
-, <a class="el" href="battery__monitor_8h.html#a14abcaedde7d798d8fc0274e1eb5ba20">battery_monitor.h</a>
+: <a class="el" href="battery__monitor_8h.html#a14abcaedde7d798d8fc0274e1eb5ba20">battery_monitor.h</a>
+, <a class="el" href="battery__monitor_8c.html#a14abcaedde7d798d8fc0274e1eb5ba20">battery_monitor.c</a>
 </li>
 <li>batmon_current_sensitivity
-: <a class="el" href="battery__monitor_8h.html#a6236657284c59ea5eaa053c739f429a4">battery_monitor.h</a>
-, <a class="el" href="battery__monitor_8c.html#a6236657284c59ea5eaa053c739f429a4">battery_monitor.c</a>
+: <a class="el" href="battery__monitor_8c.html#a6236657284c59ea5eaa053c739f429a4">battery_monitor.c</a>
+, <a class="el" href="battery__monitor_8h.html#a6236657284c59ea5eaa053c739f429a4">battery_monitor.h</a>
 </li>
 <li>batmon_temp_offset
-: <a class="el" href="battery__monitor_8c.html#abc0f782aa705ed8224c158891d23642a">battery_monitor.c</a>
-, <a class="el" href="battery__monitor_8h.html#abc0f782aa705ed8224c158891d23642a">battery_monitor.h</a>
+: <a class="el" href="battery__monitor_8h.html#abc0f782aa705ed8224c158891d23642a">battery_monitor.h</a>
+, <a class="el" href="battery__monitor_8c.html#abc0f782aa705ed8224c158891d23642a">battery_monitor.c</a>
 </li>
 <li>batmon_temp_sensitivity
-: <a class="el" href="battery__monitor_8h.html#a6a7c4a65e54f9929aaacdea3f50a9901">battery_monitor.h</a>
-, <a class="el" href="battery__monitor_8c.html#a6a7c4a65e54f9929aaacdea3f50a9901">battery_monitor.c</a>
+: <a class="el" href="battery__monitor_8c.html#a6a7c4a65e54f9929aaacdea3f50a9901">battery_monitor.c</a>
+, <a class="el" href="battery__monitor_8h.html#a6a7c4a65e54f9929aaacdea3f50a9901">battery_monitor.h</a>
 </li>
 <li>batmonbal1
 : <a class="el" href="battery__monitor_8c.html#adee0aebd61dd74ed266c93ad31f15b24">battery_monitor.c</a>
@@ -989,8 +991,8 @@ $(document).ready(function(){initNavTree('globals_b.html','');});
 , <a class="el" href="battery__monitor_8h.html#a811b9e4f42228b2a8c42ab6aa84e7485">battery_monitor.h</a>
 </li>
 <li>batmonbus
-: <a class="el" href="battery__monitor_8c.html#ae96423be038e3982c804c87b5e45f36a">battery_monitor.c</a>
-, <a class="el" href="battery__monitor_8h.html#ae96423be038e3982c804c87b5e45f36a">battery_monitor.h</a>
+: <a class="el" href="battery__monitor_8h.html#ae96423be038e3982c804c87b5e45f36a">battery_monitor.h</a>
+, <a class="el" href="battery__monitor_8c.html#ae96423be038e3982c804c87b5e45f36a">battery_monitor.c</a>
 </li>
 <li>BatmonBusStatus
 : <a class="el" href="battery__monitor_8h.html#a60f84d24b7f1d64370b81e64a8d0cd84">battery_monitor.h</a>
@@ -1035,8 +1037,8 @@ $(document).ready(function(){initNavTree('globals_b.html','');});
 : <a class="el" href="battery__monitor_8h.html#a97a5e98a12239146deb9c22a3128d38f">battery_monitor.h</a>
 </li>
 <li>battery_monitor_check_i2c_transaction()
-: <a class="el" href="battery__monitor_8c.html#a7593bb18bd0269e596a6f3ede1127feb">battery_monitor.c</a>
-, <a class="el" href="battery__monitor_8h.html#a7593bb18bd0269e596a6f3ede1127feb">battery_monitor.h</a>
+: <a class="el" href="battery__monitor_8h.html#a7593bb18bd0269e596a6f3ede1127feb">battery_monitor.h</a>
+, <a class="el" href="battery__monitor_8c.html#a7593bb18bd0269e596a6f3ede1127feb">battery_monitor.c</a>
 </li>
 <li>BATTERY_MONITOR_CURRENT_OFFSET
 : <a class="el" href="battery__monitor_8h.html#a5f95e800bad5a87cecabab7e887d9bac">battery_monitor.h</a>
@@ -1045,20 +1047,20 @@ $(document).ready(function(){initNavTree('globals_b.html','');});
 : <a class="el" href="battery__monitor_8h.html#a509a78692f51a99f7df6c4625310da4d">battery_monitor.h</a>
 </li>
 <li>battery_monitor_event()
-: <a class="el" href="battery__monitor_8c.html#a1c01c0cd67b7d946851aa964af9a27b0">battery_monitor.c</a>
-, <a class="el" href="battery__monitor_8h.html#a1c01c0cd67b7d946851aa964af9a27b0">battery_monitor.h</a>
+: <a class="el" href="battery__monitor_8h.html#a1c01c0cd67b7d946851aa964af9a27b0">battery_monitor.h</a>
+, <a class="el" href="battery__monitor_8c.html#a1c01c0cd67b7d946851aa964af9a27b0">battery_monitor.c</a>
 </li>
 <li>battery_monitor_get_address()
-: <a class="el" href="battery__monitor_8h.html#a42a08a531b163213437bbbd059fe37d6">battery_monitor.h</a>
-, <a class="el" href="battery__monitor_8c.html#a058a56fbecc2d59516506316a38f72b7">battery_monitor.c</a>
+: <a class="el" href="battery__monitor_8c.html#a058a56fbecc2d59516506316a38f72b7">battery_monitor.c</a>
+, <a class="el" href="battery__monitor_8h.html#a42a08a531b163213437bbbd059fe37d6">battery_monitor.h</a>
 </li>
 <li>battery_monitor_init()
-: <a class="el" href="battery__monitor_8c.html#ada976116d6f0d114e4c2d3f4b55e3d30">battery_monitor.c</a>
-, <a class="el" href="battery__monitor_8h.html#ada976116d6f0d114e4c2d3f4b55e3d30">battery_monitor.h</a>
+: <a class="el" href="battery__monitor_8h.html#ada976116d6f0d114e4c2d3f4b55e3d30">battery_monitor.h</a>
+, <a class="el" href="battery__monitor_8c.html#ada976116d6f0d114e4c2d3f4b55e3d30">battery_monitor.c</a>
 </li>
 <li>battery_monitor_init_balance()
-: <a class="el" href="battery__monitor_8h.html#a3a085ae2dccfb981687fade3bd5e32f2">battery_monitor.h</a>
-, <a class="el" href="battery__monitor_8c.html#a2d90289ee4c68243d2e79b97d241d96c">battery_monitor.c</a>
+: <a class="el" href="battery__monitor_8c.html#a2d90289ee4c68243d2e79b97d241d96c">battery_monitor.c</a>
+, <a class="el" href="battery__monitor_8h.html#a3a085ae2dccfb981687fade3bd5e32f2">battery_monitor.h</a>
 </li>
 <li>battery_monitor_init_bus()
 : <a class="el" href="battery__monitor_8c.html#ab58a356c583eae3f244dea45ffd665d5">battery_monitor.c</a>
@@ -1111,6 +1113,10 @@ $(document).ready(function(){initNavTree('globals_b.html','');});
 : <a class="el" href="baro__board__ms5611__i2c_8c.html#a54223cd96d37f2a235ffe717bf5b4423">baro_board_ms5611_i2c.c</a>
 , <a class="el" href="baro__board__ms5611__spi_8c.html#a53ac887327ecb2d370071b62748388d3">baro_board_ms5611_spi.c</a>
 </li>
+<li>bb_ms5611_filt
+: <a class="el" href="baro__board__ms5611__spi_8c.html#a57f69ffb30e0a221a46d5292b9b7808f">baro_board_ms5611_spi.c</a>
+, <a class="el" href="baro__board__ms5611__i2c_8c.html#a57f69ffb30e0a221a46d5292b9b7808f">baro_board_ms5611_i2c.c</a>
+</li>
 <li>BB_MS5611_SLAVE_ADDR
 : <a class="el" href="baro__board__ms5611__i2c_8c.html#abd7fdff82b87848ef3a165026d497cd4">baro_board_ms5611_i2c.c</a>
 </li>
@@ -1125,22 +1131,42 @@ $(document).ready(function(){initNavTree('globals_b.html','');});
 <li>BB_UNINITIALIZED
 : <a class="el" href="booz_2baro__board_8h.html#a080d7bfaad497259d3c3430293e21c22a7620464f013e95570bcb4e149d832024">baro_board.h</a>
 </li>
-<li>be32toh
-: <a class="el" href="kremlib_8h.html#a6acac399720b3a57d9050420aa0aac41">kremlib.h</a>
-</li>
-<li>be64toh
-: <a class="el" href="kremlib_8h.html#af94eb043f5be14b4f260fb9b4c89ca2e">kremlib.h</a>
-</li>
 <li>BEBOP_ACCEL_RANGE
 : <a class="el" href="imu__bebop_8h.html#a70a016cc48bdbc25cbe6efbf5c26b7d1">imu_bebop.h</a>
+</li>
+<li>BEBOP_AE_AWB_CAMERA
+: <a class="el" href="bebop__ae__awb_8c.html#a307ee35918a5b9d018cd45008dc52e0d">bebop_ae_awb.c</a>
 </li>
 <li>bebop_ae_awb_init()
 : <a class="el" href="bebop__ae__awb_8c.html#a488d91f59b9036f352ebc7fcafdedf7b">bebop_ae_awb.c</a>
 , <a class="el" href="bebop__ae__awb_8h.html#a488d91f59b9036f352ebc7fcafdedf7b">bebop_ae_awb.h</a>
 </li>
-<li>bebop_ae_awb_periodic()
-: <a class="el" href="bebop__ae__awb_8c.html#a031dd0b0370498bb2226f1335f8f7b56">bebop_ae_awb.c</a>
-, <a class="el" href="bebop__ae__awb_8h.html#a031dd0b0370498bb2226f1335f8f7b56">bebop_ae_awb.h</a>
+<li>BEBOP_AE_AWB_NICE
+: <a class="el" href="bebop__ae__awb_8c.html#a284b4e16ba6bed18cfbfa94a3ebd5537">bebop_ae_awb.c</a>
+</li>
+<li>BEBOP_AE_AWB_VERBOSE
+: <a class="el" href="bebop__ae__awb_8c.html#a6962194dc67d93f19be5944ca662f622">bebop_ae_awb.c</a>
+</li>
+<li>BEBOP_AE_BRIGHT_BINS
+: <a class="el" href="bebop__ae__awb_8c.html#adab9ff5d5f09a1224daca8f576be4216">bebop_ae_awb.c</a>
+</li>
+<li>BEBOP_AE_BRIGHT_IGNORE
+: <a class="el" href="bebop__ae__awb_8c.html#a0965587f24710502521831097dd67912">bebop_ae_awb.c</a>
+</li>
+<li>BEBOP_AE_DARK_BINS
+: <a class="el" href="bebop__ae__awb_8c.html#a83c198ad9b99805a56d56f95530d7496">bebop_ae_awb.c</a>
+</li>
+<li>BEBOP_AE_DARK_IGNORE
+: <a class="el" href="bebop__ae__awb_8c.html#a3997f925d1f521c066239fcd5e56aaff">bebop_ae_awb.c</a>
+</li>
+<li>BEBOP_AE_EXPOSURE_GAIN
+: <a class="el" href="bebop__ae__awb_8c.html#afa17363f98102a3670927b7579c3a2d5">bebop_ae_awb.c</a>
+</li>
+<li>BEBOP_AE_MIDDLE_INDEX
+: <a class="el" href="bebop__ae__awb_8c.html#ac03bc735ad889f022030dc90c879a676">bebop_ae_awb.c</a>
+</li>
+<li>bebop_ae_reset()
+: <a class="el" href="bebop__ae__awb_8c.html#a09ba6ad3cac712b0a7834f2ec49da7c1">bebop_ae_awb.c</a>
 </li>
 <li>BEBOP_AUTO_EXPOSURE
 : <a class="el" href="bebop__ae__awb_8c.html#a22ccf03b85fe69f13df21a4c7b1006dc">bebop_ae_awb.c</a>
@@ -1148,11 +1174,32 @@ $(document).ready(function(){initNavTree('globals_b.html','');});
 <li>BEBOP_AUTO_WHITE_BALANCE
 : <a class="el" href="bebop__ae__awb_8c.html#a63d09bf64e982cb48cc90e09a1a8c42b">bebop_ae_awb.c</a>
 </li>
-<li>BEBOP_AWB_MAX_GAIN
-: <a class="el" href="bebop__ae__awb_8c.html#a1962415dd14a4079fc9ebcc2f26b61fc">bebop_ae_awb.c</a>
+<li>BEBOP_AWB_GAIN
+: <a class="el" href="bebop__ae__awb_8c.html#a0574fd7466e77a9bfcaa8422167d02fa">bebop_ae_awb.c</a>
 </li>
-<li>BEBOP_AWB_MIN_GAIN
-: <a class="el" href="bebop__ae__awb_8c.html#a3960593410df04cc79e7eff7706c77a3">bebop_ae_awb.c</a>
+<li>BEBOP_AWB_GAIN_SCHEDULING
+: <a class="el" href="bebop__ae__awb_8c.html#acd20764e5659ac9f4ea6287cb872f778">bebop_ae_awb.c</a>
+</li>
+<li>BEBOP_AWB_GAIN_SCHEDULING_STEP
+: <a class="el" href="bebop__ae__awb_8c.html#aaae03e0ab491a3d110ea32204578e0f2">bebop_ae_awb.c</a>
+</li>
+<li>BEBOP_AWB_GAIN_SCHEDULING_TARGET
+: <a class="el" href="bebop__ae__awb_8c.html#a707f8ab3c5c1f285ee2d3d132abd3374">bebop_ae_awb.c</a>
+</li>
+<li>BEBOP_AWB_GAIN_SCHEDULING_TOLERANCE
+: <a class="el" href="bebop__ae__awb_8c.html#ab487bd252afd24e060c02a6220a3f25b">bebop_ae_awb.c</a>
+</li>
+<li>BEBOP_AWB_MAX_GAINS
+: <a class="el" href="bebop__ae__awb_8c.html#ac5b4f8f8c0fc007532af027921931cb2">bebop_ae_awb.c</a>
+</li>
+<li>BEBOP_AWB_MIN_GAINS
+: <a class="el" href="bebop__ae__awb_8c.html#a431070d74fa5294c177086edbf30553b">bebop_ae_awb.c</a>
+</li>
+<li>BEBOP_AWB_MIN_GREY_PIXELS
+: <a class="el" href="bebop__ae__awb_8c.html#a43c8b73a010780ce9c15f74c5acea122">bebop_ae_awb.c</a>
+</li>
+<li>bebop_awb_reset()
+: <a class="el" href="bebop__ae__awb_8c.html#a2437d420ea7e9414fafd1d9e9617807a">bebop_ae_awb.c</a>
 </li>
 <li>BEBOP_GYRO_RANGE
 : <a class="el" href="imu__bebop_8h.html#aa841c1a66da7ff3edb957875907ddc07">imu_bebop.h</a>
@@ -1304,8 +1351,8 @@ $(document).ready(function(){initNavTree('globals_b.html','');});
 : <a class="el" href="esc32_8h.html#ab012f41c17e9ede81accd6af9e1eb577">esc32.h</a>
 </li>
 <li>bind_soft_value
-: <a class="el" href="spektrum__soft__bind__ap_8c.html#afa6263c88719c5877209b3aa106e66d1">spektrum_soft_bind_ap.c</a>
-, <a class="el" href="spektrum__soft__bind__ap_8h.html#afa6263c88719c5877209b3aa106e66d1">spektrum_soft_bind_ap.h</a>
+: <a class="el" href="spektrum__soft__bind__ap_8h.html#afa6263c88719c5877209b3aa106e66d1">spektrum_soft_bind_ap.h</a>
+, <a class="el" href="spektrum__soft__bind__ap_8c.html#afa6263c88719c5877209b3aa106e66d1">spektrum_soft_bind_ap.c</a>
 </li>
 <li>BIT_NUMBER
 : <a class="el" href="boards_2ardrone_2actuators_8c.html#ad87a7f48bd6ebc50a23c03b0b84490ed">actuators.c</a>
@@ -1347,15 +1394,24 @@ $(document).ready(function(){initNavTree('globals_b.html','');});
 : <a class="el" href="common__flight__plan_8h.html#a3e749f8fe41a97ef62de0dd622dbe3e9">common_flight_plan.h</a>
 </li>
 <li>block_time
-: <a class="el" href="common__flight__plan_8c.html#ae3eebf6396d9b2539b27b9477c46724d">common_flight_plan.c</a>
-, <a class="el" href="common__flight__plan_8h.html#ae3eebf6396d9b2539b27b9477c46724d">common_flight_plan.h</a>
+: <a class="el" href="common__flight__plan_8h.html#ae3eebf6396d9b2539b27b9477c46724d">common_flight_plan.h</a>
+, <a class="el" href="common__flight__plan_8c.html#ae3eebf6396d9b2539b27b9477c46724d">common_flight_plan.c</a>
+</li>
+<li>BLUE_U
+: <a class="el" href="pano__unwrap_8c.html#a7fb6faa30c3712178c0b0ec873a5f710">pano_unwrap.c</a>
+</li>
+<li>BLUE_V
+: <a class="el" href="pano__unwrap_8c.html#adead730de205c3ef477cd573f27067b5">pano_unwrap.c</a>
+</li>
+<li>BLUE_Y
+: <a class="el" href="pano__unwrap_8c.html#a208ed943fd98c679def4a5048c15669e">pano_unwrap.c</a>
 </li>
 <li>BLUEGIGA
 : <a class="el" href="datalink_8h.html#a833e12609ab35c67bd0bcd2d51eb3ed6">datalink.h</a>
 </li>
 <li>bluegiga_broadcast_msg()
-: <a class="el" href="bluegiga_8h.html#a319f8e3ab43913066407c2d009e8e366">bluegiga.h</a>
-, <a class="el" href="bluegiga_8c.html#a319f8e3ab43913066407c2d009e8e366">bluegiga.c</a>
+: <a class="el" href="bluegiga_8c.html#a319f8e3ab43913066407c2d009e8e366">bluegiga.c</a>
+, <a class="el" href="bluegiga_8h.html#a319f8e3ab43913066407c2d009e8e366">bluegiga.h</a>
 </li>
 <li>BLUEGIGA_BUFFER_SIZE
 : <a class="el" href="bluegiga_8h.html#aeda4d8a1ddbe2067f3e88ecba0860f06">bluegiga.h</a>
@@ -1492,8 +1548,8 @@ $(document).ready(function(){initNavTree('globals_b.html','');});
 : <a class="el" href="bmp085__regs_8h.html#ac2a8c8494bc9512f6d11fe223736995e">bmp085_regs.h</a>
 </li>
 <li>bmp085_periodic()
-: <a class="el" href="bmp085_8h.html#ad6fe03b188457ab22e7e81f0712c9afb">bmp085.h</a>
-, <a class="el" href="bmp085_8c.html#ad6fe03b188457ab22e7e81f0712c9afb">bmp085.c</a>
+: <a class="el" href="bmp085_8c.html#ad6fe03b188457ab22e7e81f0712c9afb">bmp085.c</a>
+, <a class="el" href="bmp085_8h.html#ad6fe03b188457ab22e7e81f0712c9afb">bmp085.h</a>
 </li>
 <li>bmp085_read_eeprom_calib()
 : <a class="el" href="bmp085_8h.html#a96cbcc561ed98d124a49fcd60b701fb6">bmp085.h</a>
@@ -1573,8 +1629,8 @@ $(document).ready(function(){initNavTree('globals_b.html','');});
 : <a class="el" href="bebop_8h.html#a318522acd53f9093b0b51553ac2cd96c">bebop.h</a>
 </li>
 <li>BOARD_CHIMERA
-: <a class="el" href="chimera_8h.html#a380bee891ec2d53ab42ee637b0d9aa47">chimera.h</a>
-, <a class="el" href="chimera_2chibios_2v1_80_2board_8h.html#a380bee891ec2d53ab42ee637b0d9aa47">board.h</a>
+: <a class="el" href="chimera_2chibios_2v1_80_2board_8h.html#a380bee891ec2d53ab42ee637b0d9aa47">board.h</a>
+, <a class="el" href="chimera_8h.html#a380bee891ec2d53ab42ee637b0d9aa47">chimera.h</a>
 </li>
 <li>BOARD_CJMCU
 : <a class="el" href="cjmcu_8h.html#ac0317b07ed4e221518a953468e8595df">cjmcu.h</a>
@@ -1587,15 +1643,14 @@ $(document).ready(function(){initNavTree('globals_b.html','');});
 </li>
 <li>board_init()
 : <a class="el" href="group__mcu__periph.html#ga916f2adc2080b4fe88034086d107a8dc">board.c</a>
-, <a class="el" href="group__mcu__periph.html#ga916f2adc2080b4fe88034086d107a8dc">mcu.h</a>
-, <a class="el" href="group__mcu__periph.html#ga916f2adc2080b4fe88034086d107a8dc">board.c</a>
 , <a class="el" href="group__mcu__periph.html#ga916f2adc2080b4fe88034086d107a8dc">mcu.c</a>
 , <a class="el" href="group__mcu__periph.html#ga916f2adc2080b4fe88034086d107a8dc">board.c</a>
+, <a class="el" href="group__mcu__periph.html#ga916f2adc2080b4fe88034086d107a8dc">mcu.h</a>
 </li>
 <li>board_init2()
-: <a class="el" href="group__mcu__periph.html#gaf8669c6ba2d12460cf1172edd1a5e4a3">mcu.h</a>
-, <a class="el" href="group__mcu__periph.html#gaf8669c6ba2d12460cf1172edd1a5e4a3">mcu.c</a>
+: <a class="el" href="group__mcu__periph.html#gaf8669c6ba2d12460cf1172edd1a5e4a3">mcu.c</a>
 , <a class="el" href="group__mcu__periph.html#gaf8669c6ba2d12460cf1172edd1a5e4a3">board.c</a>
+, <a class="el" href="group__mcu__periph.html#gaf8669c6ba2d12460cf1172edd1a5e4a3">mcu.h</a>
 </li>
 <li>BOARD_KROOZ
 : <a class="el" href="krooz__sd_8h.html#aa5441a38066de616a7ce5dc93aa85111">krooz_sd.h</a>
@@ -1610,9 +1665,9 @@ $(document).ready(function(){initNavTree('globals_b.html','');});
 : <a class="el" href="lisa__l__1_80_8h.html#a5dd43bf9103c4a464e35816ecda290ac">lisa_l_1.0.h</a>
 </li>
 <li>BOARD_LISA_M
-: <a class="el" href="lisa__m__2_80_8h.html#a7eeaab0a07ca1795ca1835de3438d88c">lisa_m_2.0.h</a>
+: <a class="el" href="lisa__m__1_80_8h.html#a7eeaab0a07ca1795ca1835de3438d88c">lisa_m_1.0.h</a>
+, <a class="el" href="lisa__m__2_80_8h.html#a7eeaab0a07ca1795ca1835de3438d88c">lisa_m_2.0.h</a>
 , <a class="el" href="lisa__m__2_81_8h.html#a7eeaab0a07ca1795ca1835de3438d88c">lisa_m_2.1.h</a>
-, <a class="el" href="lisa__m__1_80_8h.html#a7eeaab0a07ca1795ca1835de3438d88c">lisa_m_1.0.h</a>
 </li>
 <li>BOARD_LISA_MX
 : <a class="el" href="lisa__mx__common_8h.html#ad5ab672ed99e0ed22b94b1b1712024ac">lisa_mx_common.h</a>
@@ -1621,7 +1676,7 @@ $(document).ready(function(){initNavTree('globals_b.html','');});
 : <a class="el" href="lisa__s__1_80_8h.html#a09c38bb059efc5446b99a7160bb92254">lisa_s_1.0.h</a>
 </li>
 <li>BOARD_NAME
-: <a class="el" href="vms__ecu_2chibios_2v1_80_2board_8h.html#a02581754b212d533d96cde56c8145c9b">board.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a02581754b212d533d96cde56c8145c9b">board.h</a>
 </li>
 <li>BOARD_NAZE32
 : <a class="el" href="naze32__common_8h.html#aa154494d57f96a56b05a33d4af8ea132">naze32_common.h</a>
@@ -1636,8 +1691,8 @@ $(document).ready(function(){initNavTree('globals_b.html','');});
 : <a class="el" href="px4fmu__1_87_8h.html#a5f22007b228fd82094127a698cd0f243">px4fmu_1.7.h</a>
 </li>
 <li>BOARD_PX4FMU_v2
-: <a class="el" href="px4fmu__2_84_8h.html#a1d9414f7945382146f40ebd4f406b373">px4fmu_2.4.h</a>
-, <a class="el" href="px4fmu_2chibios_2v2_84_2board_8h.html#a1d9414f7945382146f40ebd4f406b373">board.h</a>
+: <a class="el" href="px4fmu_2chibios_2v2_84_2board_8h.html#a1d9414f7945382146f40ebd4f406b373">board.h</a>
+, <a class="el" href="px4fmu__2_84_8h.html#a1d9414f7945382146f40ebd4f406b373">px4fmu_2.4.h</a>
 </li>
 <li>BOARD_PX4FMU_V4
 : <a class="el" href="px4fmu__4_80_8h.html#a726d74adb2ac8c58c975fb1ff6322ea1">px4fmu_4.0.h</a>
@@ -1671,12 +1726,16 @@ $(document).ready(function(){initNavTree('globals_b.html','');});
 </li>
 <li>boardInit()
 : <a class="el" href="chimera_2chibios_2v1_80_2board_8c.html#a48edc646a1de1ba488bbe7d786df9bae">board.c</a>
-, <a class="el" href="lia_2chibios_2v1_81_2board_8h.html#a48edc646a1de1ba488bbe7d786df9bae">board.h</a>
-, <a class="el" href="lia_2chibios_2v1_81_2board_8c.html#a48edc646a1de1ba488bbe7d786df9bae">board.c</a>
-, <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a48edc646a1de1ba488bbe7d786df9bae">board.h</a>
-, <a class="el" href="vms__ecu_2chibios_2v1_80_2board_8c.html#a48edc646a1de1ba488bbe7d786df9bae">board.c</a>
-, <a class="el" href="chimera_2chibios_2v1_80_2board_8h.html#a48edc646a1de1ba488bbe7d786df9bae">board.h</a>
+, <a class="el" href="px4fmu_2chibios_2v2_84_2board_8h.html#a48edc646a1de1ba488bbe7d786df9bae">board.h</a>
 , <a class="el" href="apogee_2chibios_2v1_80_2board_8c.html#a48edc646a1de1ba488bbe7d786df9bae">board.c</a>
+, <a class="el" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a48edc646a1de1ba488bbe7d786df9bae">board.h</a>
+, <a class="el" href="lisa__mx_2chibios_2v2_81_2board_8c.html#a48edc646a1de1ba488bbe7d786df9bae">board.c</a>
+, <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a48edc646a1de1ba488bbe7d786df9bae">board.h</a>
+, <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8c.html#a48edc646a1de1ba488bbe7d786df9bae">board.c</a>
+, <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#a48edc646a1de1ba488bbe7d786df9bae">board.h</a>
+, <a class="el" href="lia_2chibios_2v1_81_2board_8c.html#a48edc646a1de1ba488bbe7d786df9bae">board.c</a>
+, <a class="el" href="chimera_2chibios_2v1_80_2board_8h.html#a48edc646a1de1ba488bbe7d786df9bae">board.h</a>
+, <a class="el" href="vms__ecu_2chibios_2v1_80_2board_8c.html#a48edc646a1de1ba488bbe7d786df9bae">board.c</a>
 </li>
 <li>body_accel_f
 : <a class="el" href="stabilization__indi_8c.html#a8681b79f205fa4744fcc2dbb1903703f">stabilization_indi.c</a>
@@ -1689,30 +1748,35 @@ $(document).ready(function(){initNavTree('globals_b.html','');});
 </li>
 <li>body_to_imu
 : <a class="el" href="ins__alt__float_8c.html#a755effd49991d996e4703451d0edc293">ins_alt_float.c</a>
+, <a class="el" href="ins__gps__passthrough_8c.html#a755effd49991d996e4703451d0edc293">ins_gps_passthrough.c</a>
 </li>
 <li>body_to_imu_cb()
-: <a class="el" href="ins__alt__float_8c.html#ab5f6300c213088a4ea0598baafb5e736">ins_alt_float.c</a>
+: <a class="el" href="energy__ctrl_8c.html#ab5f6300c213088a4ea0598baafb5e736">energy_ctrl.c</a>
+, <a class="el" href="ins__alt__float_8c.html#ab5f6300c213088a4ea0598baafb5e736">ins_alt_float.c</a>
 , <a class="el" href="ahrs__int__cmpl__euler__wrapper_8c.html#ab5f6300c213088a4ea0598baafb5e736">ahrs_int_cmpl_euler_wrapper.c</a>
 , <a class="el" href="ahrs__int__cmpl__quat__wrapper_8c.html#ab5f6300c213088a4ea0598baafb5e736">ahrs_int_cmpl_quat_wrapper.c</a>
-, <a class="el" href="ahrs__float__mlkf__wrapper_8c.html#ab5f6300c213088a4ea0598baafb5e736">ahrs_float_mlkf_wrapper.c</a>
-, <a class="el" href="ahrs__float__dcm__wrapper_8c.html#ab5f6300c213088a4ea0598baafb5e736">ahrs_float_dcm_wrapper.c</a>
-, <a class="el" href="ins__skeleton_8c.html#ab5f6300c213088a4ea0598baafb5e736">ins_skeleton.c</a>
-, <a class="el" href="energy__ctrl_8c.html#ab5f6300c213088a4ea0598baafb5e736">energy_ctrl.c</a>
-, <a class="el" href="ins__float__invariant__wrapper_8c.html#ab5f6300c213088a4ea0598baafb5e736">ins_float_invariant_wrapper.c</a>
+, <a class="el" href="ins__gps__passthrough_8c.html#ab5f6300c213088a4ea0598baafb5e736">ins_gps_passthrough.c</a>
 , <a class="el" href="ahrs__float__invariant__wrapper_8c.html#ab5f6300c213088a4ea0598baafb5e736">ahrs_float_invariant_wrapper.c</a>
 , <a class="el" href="ahrs__float__cmpl__wrapper_8c.html#ab5f6300c213088a4ea0598baafb5e736">ahrs_float_cmpl_wrapper.c</a>
+, <a class="el" href="ins__mekf__wind__wrapper_8c.html#aebafed20ba923acb949adb335ab7a793">ins_mekf_wind_wrapper.c</a>
+, <a class="el" href="ins__skeleton_8c.html#ab5f6300c213088a4ea0598baafb5e736">ins_skeleton.c</a>
+, <a class="el" href="ahrs__float__mlkf__wrapper_8c.html#ab5f6300c213088a4ea0598baafb5e736">ahrs_float_mlkf_wrapper.c</a>
+, <a class="el" href="ahrs__float__dcm__wrapper_8c.html#ab5f6300c213088a4ea0598baafb5e736">ahrs_float_dcm_wrapper.c</a>
+, <a class="el" href="ins__float__invariant__wrapper_8c.html#ab5f6300c213088a4ea0598baafb5e736">ins_float_invariant_wrapper.c</a>
 </li>
 <li>body_to_imu_ev
-: <a class="el" href="ahrs__int__cmpl__euler__wrapper_8c.html#a1f7208107f1a5edfea2b32e570ad602d">ahrs_int_cmpl_euler_wrapper.c</a>
-, <a class="el" href="ahrs__float__invariant__wrapper_8c.html#a1f7208107f1a5edfea2b32e570ad602d">ahrs_float_invariant_wrapper.c</a>
-, <a class="el" href="ins__skeleton_8c.html#a1f7208107f1a5edfea2b32e570ad602d">ins_skeleton.c</a>
-, <a class="el" href="energy__ctrl_8c.html#a1f7208107f1a5edfea2b32e570ad602d">energy_ctrl.c</a>
+: <a class="el" href="ins__mekf__wind__wrapper_8c.html#a1f7208107f1a5edfea2b32e570ad602d">ins_mekf_wind_wrapper.c</a>
 , <a class="el" href="ahrs__float__cmpl__wrapper_8c.html#a1f7208107f1a5edfea2b32e570ad602d">ahrs_float_cmpl_wrapper.c</a>
 , <a class="el" href="ins__alt__float_8c.html#a1f7208107f1a5edfea2b32e570ad602d">ins_alt_float.c</a>
-, <a class="el" href="ahrs__float__dcm__wrapper_8c.html#a1f7208107f1a5edfea2b32e570ad602d">ahrs_float_dcm_wrapper.c</a>
-, <a class="el" href="ins__float__invariant__wrapper_8c.html#a1f7208107f1a5edfea2b32e570ad602d">ins_float_invariant_wrapper.c</a>
 , <a class="el" href="ahrs__int__cmpl__quat__wrapper_8c.html#a1f7208107f1a5edfea2b32e570ad602d">ahrs_int_cmpl_quat_wrapper.c</a>
+, <a class="el" href="ahrs__float__invariant__wrapper_8c.html#a1f7208107f1a5edfea2b32e570ad602d">ahrs_float_invariant_wrapper.c</a>
 , <a class="el" href="ahrs__float__mlkf__wrapper_8c.html#a1f7208107f1a5edfea2b32e570ad602d">ahrs_float_mlkf_wrapper.c</a>
+, <a class="el" href="ins__float__invariant__wrapper_8c.html#a1f7208107f1a5edfea2b32e570ad602d">ins_float_invariant_wrapper.c</a>
+, <a class="el" href="ins__gps__passthrough_8c.html#a1f7208107f1a5edfea2b32e570ad602d">ins_gps_passthrough.c</a>
+, <a class="el" href="energy__ctrl_8c.html#a1f7208107f1a5edfea2b32e570ad602d">energy_ctrl.c</a>
+, <a class="el" href="ahrs__int__cmpl__euler__wrapper_8c.html#a1f7208107f1a5edfea2b32e570ad602d">ahrs_int_cmpl_euler_wrapper.c</a>
+, <a class="el" href="ahrs__float__dcm__wrapper_8c.html#a1f7208107f1a5edfea2b32e570ad602d">ahrs_float_dcm_wrapper.c</a>
+, <a class="el" href="ins__skeleton_8c.html#a1f7208107f1a5edfea2b32e570ad602d">ins_skeleton.c</a>
 </li>
 <li>boolean
 : <a class="el" href="inttypes_8h.html#a7c6368b321bd9acd0149b030bb8275ed">inttypes.h</a>
@@ -1720,6 +1784,9 @@ $(document).ready(function(){initNavTree('globals_b.html','');});
 </li>
 <li>boolean_T
 : <a class="el" href="rtwtypes_8h.html#a3f14692b9a04d8211058e2bfc777a9fc">rtwtypes.h</a>
+</li>
+<li>BOOT1
+: <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#acb03234966d1b045245e028326d2e0b3">board.h</a>
 </li>
 <li>BOOZ_ANALOG_BARO_THRESHOLD
 : <a class="el" href="booz_2baro__board_8c.html#a67c9aca109fecabd8d15c3ac9cc8dae7">baro_board.c</a>
@@ -1760,17 +1827,17 @@ $(document).ready(function(){initNavTree('globals_b.html','');});
 , <a class="el" href="textons_8c.html#ad239f51eb3b581eb4c76a6fcb7f92e2f">textons.c</a>
 </li>
 <li>border_width
-: <a class="el" href="textons_8h.html#acc84bbf7292bdc04ee8fc730f6276d2a">textons.h</a>
-, <a class="el" href="textons_8c.html#acc84bbf7292bdc04ee8fc730f6276d2a">textons.c</a>
+: <a class="el" href="textons_8c.html#acc84bbf7292bdc04ee8fc730f6276d2a">textons.c</a>
+, <a class="el" href="textons_8h.html#acc84bbf7292bdc04ee8fc730f6276d2a">textons.h</a>
 </li>
 <li>bottom_camera
-: <a class="el" href="mt9v117_8c.html#aebe228d13ad2e4e0c8528d945ad76a82">mt9v117.c</a>
-, <a class="el" href="ardrone2_8h.html#aebe228d13ad2e4e0c8528d945ad76a82">ardrone2.h</a>
+: <a class="el" href="pc__sim_8h.html#aebe228d13ad2e4e0c8528d945ad76a82">pc_sim.h</a>
 , <a class="el" href="disco_8h.html#aebe228d13ad2e4e0c8528d945ad76a82">disco.h</a>
-, <a class="el" href="pc__sim_8h.html#aebe228d13ad2e4e0c8528d945ad76a82">pc_sim.h</a>
-, <a class="el" href="ardrone_2board_8c.html#aebe228d13ad2e4e0c8528d945ad76a82">board.c</a>
-, <a class="el" href="video__thread__nps_8c.html#aebe228d13ad2e4e0c8528d945ad76a82">video_thread_nps.c</a>
 , <a class="el" href="bebop_8h.html#aebe228d13ad2e4e0c8528d945ad76a82">bebop.h</a>
+, <a class="el" href="ardrone_2board_8c.html#aebe228d13ad2e4e0c8528d945ad76a82">board.c</a>
+, <a class="el" href="ardrone2_8h.html#aebe228d13ad2e4e0c8528d945ad76a82">ardrone2.h</a>
+, <a class="el" href="mt9v117_8c.html#aebe228d13ad2e4e0c8528d945ad76a82">mt9v117.c</a>
+, <a class="el" href="video__thread__nps_8c.html#aebe228d13ad2e4e0c8528d945ad76a82">video_thread_nps.c</a>
 </li>
 <li>BOUND
 : <a class="el" href="lpc21_2subsystems_2settings__arch_8c.html#aa3d3687532e25854c63dca906abf1032">settings_arch.c</a>
@@ -1946,7 +2013,7 @@ $(document).ready(function(){initNavTree('globals_b.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Nov 8 2017 10:03:16 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:04:32 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

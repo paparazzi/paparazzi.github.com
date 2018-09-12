@@ -9,6 +9,7 @@ var searchData=
   ['ellipse',['ELLIPSE',['../gvf_8h.html#a5e61057ce8c51b9efe7810e885a5e608a59c6b7739f239fb18fe5c81692358893',1,'gvf.h']]],
   ['entry',['Entry',['../nav__survey__poly__osam_8c.html#a8c59693bfb0c154698979de6e77bb0c5a6429a96682b7c66ac1c02883210c1d87',1,'Entry():&#160;nav_survey_poly_osam.c'],['../nav__survey__poly__rotorcraft_8c.html#a8c59693bfb0c154698979de6e77bb0c5a6429a96682b7c66ac1c02883210c1d87',1,'Entry():&#160;nav_survey_poly_rotorcraft.c'],['../nav__survey__polygon_8h.html#aa9c58cb0ccc605869d75547268f59fa6af1ca16f85c38f6843da477ec1aa176a6',1,'ENTRY():&#160;nav_survey_polygon.h']]],
   ['err',['ERR',['../nav__survey__polygon_8h.html#aa9c58cb0ccc605869d75547268f59fa6a0f886785b600b91048fcdc434c6b4a8e',1,'nav_survey_polygon.h']]],
+  ['error_5fnone',['ERROR_NONE',['../gec_8h.html#a9bb5b7264af11868fbe186511e439e9da4edc8aade11e1de7bbbdc04704baae5f',1,'gec.h']]],
   ['esc32_5fcan_5fcmd_5farm',['ESC32_CAN_CMD_ARM',['../actuators__esc32_8h.html#a640e110a8e92c1283f2aae76e4649f48ab5f155cc0d66bf4768c8a99abffb2e70',1,'actuators_esc32.h']]],
   ['esc32_5fcan_5fcmd_5fbeep',['ESC32_CAN_CMD_BEEP',['../actuators__esc32_8h.html#a640e110a8e92c1283f2aae76e4649f48a08a25adb9923f77995cbc28a2279124c',1,'actuators_esc32.h']]],
   ['esc32_5fcan_5fcmd_5fcfg_5fdefault',['ESC32_CAN_CMD_CFG_DEFAULT',['../actuators__esc32_8h.html#a640e110a8e92c1283f2aae76e4649f48a5abf83e1598a76f0976c8c5c44196108',1,'actuators_esc32.h']]],

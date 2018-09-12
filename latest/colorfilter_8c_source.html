@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -147,7 +147,7 @@ $(document).ready(function(){initNavTree('colorfilter_8c_source.html','');});
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="colorfilter_8c.html#a39d36b2017d849527027efde107473cc">COLORFILTER_SEND_OBSTACLE</a>)</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="colorfilter_8h.html#a1cd78b5508e71a82956808eba675122b">   43</a></span>&#160;struct <a class="code" href="cv_8h.html#structvideo__listener">video_listener</a> *<a class="code" href="colorfilter_8c.html#a1cd78b5508e71a82956808eba675122b">listener</a> = NULL;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="undistort__image_8h.html#a1cd78b5508e71a82956808eba675122b">   43</a></span>&#160;struct <a class="code" href="cv_8h.html#structvideo__listener">video_listener</a> *<a class="code" href="colorfilter_8c.html#a1cd78b5508e71a82956808eba675122b">listener</a> = NULL;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">// Filter Settings</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="cv__blob__locator_8h.html#a52291a7a5c10d56a832a7b6fcaa66c43">   46</a></span>&#160;<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="colorfilter_8c.html#a52291a7a5c10d56a832a7b6fcaa66c43">color_lum_min</a> = 105;</div>
@@ -209,9 +209,9 @@ $(document).ready(function(){initNavTree('colorfilter_8c_source.html','');});
 <div class="ttc" id="types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00014">types.h:14</a></div></div>
 <div class="ttc" id="colorfilter_8c_html_a4f6ce70f175c9d88381bbcc472ccc264"><div class="ttname"><a href="colorfilter_8c.html#a4f6ce70f175c9d88381bbcc472ccc264">colorfilter_func</a></div><div class="ttdeci">struct image_t * colorfilter_func(struct image_t *img)</div><div class="ttdef"><b>Definition:</b> <a href="colorfilter_8c_source.html#l00062">colorfilter.c:62</a></div></div>
 <div class="ttc" id="colorfilter_8c_html_a52291a7a5c10d56a832a7b6fcaa66c43"><div class="ttname"><a href="colorfilter_8c.html#a52291a7a5c10d56a832a7b6fcaa66c43">color_lum_min</a></div><div class="ttdeci">uint8_t color_lum_min</div><div class="ttdef"><b>Definition:</b> <a href="colorfilter_8c_source.html#l00046">colorfilter.c:46</a></div></div>
-<div class="ttc" id="abi__sender__ids_8h_html_aa5a933108a0974d6486fe72ca79b249c"><div class="ttname"><a href="abi__sender__ids_8h.html#aa5a933108a0974d6486fe72ca79b249c">OBS_DETECTION_COLOR_ID</a></div><div class="ttdeci">#define OBS_DETECTION_COLOR_ID</div><div class="ttdef"><b>Definition:</b> <a href="abi__sender__ids_8h_source.html#l00324">abi_sender_ids.h:324</a></div></div>
+<div class="ttc" id="abi__sender__ids_8h_html_aa5a933108a0974d6486fe72ca79b249c"><div class="ttname"><a href="abi__sender__ids_8h.html#aa5a933108a0974d6486fe72ca79b249c">OBS_DETECTION_COLOR_ID</a></div><div class="ttdeci">#define OBS_DETECTION_COLOR_ID</div><div class="ttdef"><b>Definition:</b> <a href="abi__sender__ids_8h_source.html#l00373">abi_sender_ids.h:373</a></div></div>
 <div class="ttc" id="colorfilter_8c_html_a39149da1c7d12899680335e4cc339499"><div class="ttname"><a href="colorfilter_8c.html#a39149da1c7d12899680335e4cc339499">color_cr_min</a></div><div class="ttdeci">uint8_t color_cr_min</div><div class="ttdef"><b>Definition:</b> <a href="colorfilter_8c_source.html#l00050">colorfilter.c:50</a></div></div>
-<div class="ttc" id="image_8c_html_aa5bba6b2f386abf2ac701492f6a48bc9"><div class="ttname"><a href="image_8c.html#aa5bba6b2f386abf2ac701492f6a48bc9">image_yuv422_colorfilt</a></div><div class="ttdeci">uint16_t image_yuv422_colorfilt(struct image_t *input, struct image_t *output, uint8_t y_m, uint8_t y_M, uint8_t u_m, uint8_t u_M, uint8_t v_m, uint8_t v_M)</div><div class="ttdoc">Filter colors in an YUV422 image. </div><div class="ttdef"><b>Definition:</b> <a href="image_8c_source.html#l00151">image.c:151</a></div></div>
+<div class="ttc" id="image_8c_html_aa5bba6b2f386abf2ac701492f6a48bc9"><div class="ttname"><a href="image_8c.html#aa5bba6b2f386abf2ac701492f6a48bc9">image_yuv422_colorfilt</a></div><div class="ttdeci">uint16_t image_yuv422_colorfilt(struct image_t *input, struct image_t *output, uint8_t y_m, uint8_t y_M, uint8_t u_m, uint8_t u_M, uint8_t v_m, uint8_t v_M)</div><div class="ttdoc">Filter colors in an YUV422 image. </div><div class="ttdef"><b>Definition:</b> <a href="image_8c_source.html#l00154">image.c:154</a></div></div>
 <div class="ttc" id="colorfilter_8c_html_a39d36b2017d849527027efde107473cc"><div class="ttname"><a href="colorfilter_8c.html#a39d36b2017d849527027efde107473cc">COLORFILTER_SEND_OBSTACLE</a></div><div class="ttdeci">#define COLORFILTER_SEND_OBSTACLE</div><div class="ttdoc">Default sonar/agl to use in opticflow visual_estimator. </div><div class="ttdef"><b>Definition:</b> <a href="colorfilter_8c_source.html#l00039">colorfilter.c:39</a></div></div>
 <div class="ttc" id="colorfilter_8h_html"><div class="ttname"><a href="colorfilter_8h.html">colorfilter.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -220,7 +220,7 @@ $(document).ready(function(){initNavTree('colorfilter_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_304e79c9f5d09ea65a2f55aafb6a6b9d.html">computer_vision</a></li><li class="navelem"><a class="el" href="colorfilter_8c.html">colorfilter.c</a></li>
-    <li class="footer">Generated on Wed Nov 8 2017 10:01:36 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:02:42 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

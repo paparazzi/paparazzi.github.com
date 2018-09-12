@@ -30,6 +30,8 @@ var dir_304e79c9f5d09ea65a2f55aafb6a6b9d =
     [ "opticflow_module.h", "opticflow__module_8h.html", "opticflow__module_8h" ],
     [ "textons.c", "textons_8c.html", "textons_8c" ],
     [ "textons.h", "textons_8h.html", "textons_8h" ],
+    [ "undistort_image.c", "undistort__image_8c.html", "undistort__image_8c" ],
+    [ "undistort_image.h", "undistort__image_8h.html", "undistort__image_8h" ],
     [ "video_capture.c", "video__capture_8c.html", "video__capture_8c" ],
     [ "video_capture.h", "video__capture_8h.html", "video__capture_8h" ],
     [ "video_thread.c", "video__thread_8c.html", "video__thread_8c" ],

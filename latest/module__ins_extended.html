@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -110,7 +110,7 @@ $(document).ready(function(){initNavTree('module__ins_extended.html','');});
 Example for airframe file</h1>
 <p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;module name=&quot;ins_extended&quot;&gt;</div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;  &lt;define name=&quot;USE_INS_NAV_INIT&quot; value=&quot;TRUE|FALSE&quot; /&gt;</div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;  &lt;define name=&quot;INS_INT_SONAR_ID&quot; value=&quot;ABI_BROADCAST&quot; /&gt;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;  &lt;define name=&quot;INS_INT_AGL_ID&quot; value=&quot;ABI_BROADCAST&quot; /&gt;</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;  &lt;define name=&quot;INS_INT_BARO_ID&quot; value=&quot;BARO_BOARD_SENDER_ID&quot; /&gt;</div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;  &lt;define name=&quot;INS_INT_GPS_ID&quot; value=&quot;GPS_MULTI_ID&quot; /&gt;</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;  &lt;define name=&quot;INS_INT_IMU_ID&quot; value=&quot;ABI_BROADCAST&quot; /&gt;</div>
@@ -118,7 +118,12 @@ Example for airframe file</h1>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  &lt;define name=&quot;INS_SONAR_MIN_RANGE&quot; value=&quot;0.001&quot; /&gt;</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  &lt;define name=&quot;INS_SONAR_MAX_RANGE&quot; value=&quot;4.0&quot; /&gt;</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  &lt;define name=&quot;INS_SONAR_UPDATE_ON_AGL&quot; value=&quot;FALSE&quot; /&gt;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;&lt;/module&gt;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  &lt;define name=&quot;DEBUG_VFF_EXTENDED&quot; value=&quot;0|1|2&quot; /&gt;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  &lt;define name=&quot;VFF_EXTENDED_INIT_PXX&quot; value=&quot;1.&quot; /&gt;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  &lt;define name=&quot;VFF_EXTENDED_ACCEL_NOISE&quot; value=&quot;0.5&quot; /&gt;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  &lt;define name=&quot;VFF_EXTENDED_R_BARO&quot; value=&quot;2.&quot; /&gt;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  &lt;define name=&quot;VFF_EXTENDED_NON_FLAT_GROUND&quot; value=&quot;FALSE&quot; /&gt;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;&lt;/module&gt;</div>
 </div><!-- fragment --> <h1><a class="anchor" id="configuration__ins_extended"></a>
 Module configuration options</h1>
 <h2><a class="anchor" id="define"></a>
@@ -126,7 +131,7 @@ Define Options</h2>
 <ul>
 <li><b>name:</b> <code>USE_INS_NAV_INIT</code> <b>value:</b> <em>TRUE|FALSE</em> <br />
  Description: Initialize the origin of the local coordinate system from flight plan. (Default: TRUE)</li>
-<li><b>name:</b> <code>INS_INT_SONAR_ID</code> <b>value:</b> <em>ABI_BROADCAST</em> <br />
+<li><b>name:</b> <code>INS_INT_AGL_ID</code> <b>value:</b> <em>ABI_BROADCAST</em> <br />
  Description: The ABI sender id of the sonar to use</li>
 <li><b>name:</b> <code>INS_INT_BARO_ID</code> <b>value:</b> <em>BARO_BOARD_SENDER_ID</em> <br />
  Description: The ABI sender id of the baro to use</li>
@@ -142,6 +147,16 @@ Define Options</h2>
  Description: max sonar range in meters</li>
 <li><b>name:</b> <code>INS_SONAR_UPDATE_ON_AGL</code> <b>value:</b> <em>FALSE</em> <br />
  Description: assume flat ground and use sonar for height</li>
+<li><b>name:</b> <code>DEBUG_VFF_EXTENDED</code> <b>value:</b> <em>0|1|2</em> <br />
+ Description: If set &gt; 0, this will send the vff message. If &gt; 1 then it will also print the P matrix</li>
+<li><b>name:</b> <code>VFF_EXTENDED_INIT_PXX</code> <b>value:</b> <em>1.</em> <br />
+ Description: Initial value of the diagonal of the P matrix</li>
+<li><b>name:</b> <code>VFF_EXTENDED_ACCEL_NOISE</code> <b>value:</b> <em>0.5</em> <br />
+ Description: Accelerometer noise setting</li>
+<li><b>name:</b> <code>VFF_EXTENDED_R_BARO</code> <b>value:</b> <em>2.</em> <br />
+ Description: Barometer noise setting</li>
+<li><b>name:</b> <code>VFF_EXTENDED_NON_FLAT_GROUND</code> <b>value:</b> <em>FALSE</em> <br />
+ Description: VFF_EXTENDED_NON_FLAT_GROUND removes the assumption of a flat ground and tries to estimate the height of the obstacles under the vehicle.</li>
 </ul>
 <h1><a class="anchor" id="functions__ins_extended"></a>
 Module functions</h1>
@@ -176,7 +191,7 @@ Raw ins_extended.xml file:</h2>
 <div class="line">      extended INS with vertical filter using sonar.</div>
 <div class="line">    &lt;/description&gt;</div>
 <div class="line">    &lt;define name=&quot;USE_INS_NAV_INIT&quot; value=&quot;TRUE|FALSE&quot; description=&quot;Initialize the origin of the local coordinate system from flight plan. (Default: TRUE)&quot;/&gt;</div>
-<div class="line">    &lt;define name=&quot;INS_INT_SONAR_ID&quot; value=&quot;ABI_BROADCAST&quot; description=&quot;The ABI sender id of the sonar to use&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;INS_INT_AGL_ID&quot; value=&quot;ABI_BROADCAST&quot; description=&quot;The ABI sender id of the sonar to use&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;INS_INT_BARO_ID&quot; value=&quot;BARO_BOARD_SENDER_ID&quot; description=&quot;The ABI sender id of the baro to use&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;INS_INT_GPS_ID&quot; value=&quot;GPS_MULTI_ID&quot; description=&quot;The ABI sender id of the GPS to use&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;INS_INT_IMU_ID&quot; value=&quot;ABI_BROADCAST&quot; description=&quot;The ABI sender id of the IMU to use&quot;/&gt;</div>
@@ -184,6 +199,12 @@ Raw ins_extended.xml file:</h2>
 <div class="line">    &lt;define name=&quot;INS_SONAR_MIN_RANGE&quot; value=&quot;0.001&quot; description=&quot;min sonar range in meters&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;INS_SONAR_MAX_RANGE&quot; value=&quot;4.0&quot; description=&quot;max sonar range in meters&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;INS_SONAR_UPDATE_ON_AGL&quot; value=&quot;FALSE&quot; description=&quot;assume flat ground and use sonar for height&quot;/&gt;</div>
+<div class="line">    </div>
+<div class="line">    &lt;define name=&quot;DEBUG_VFF_EXTENDED&quot; value=&quot;0|1|2&quot; description=&quot;If set &gt; 0, this will send the vff message. If &gt; 1 then it will also print the P matrix&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;VFF_EXTENDED_INIT_PXX&quot; value=&quot;1.&quot; description=&quot;Initial value of the diagonal of the P matrix&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;VFF_EXTENDED_ACCEL_NOISE&quot; value=&quot;0.5&quot; description=&quot;Accelerometer noise setting&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;VFF_EXTENDED_R_BARO&quot; value=&quot;2.&quot; description=&quot;Barometer noise setting&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;VFF_EXTENDED_NON_FLAT_GROUND&quot; value=&quot;FALSE&quot; description=&quot;VFF_EXTENDED_NON_FLAT_GROUND removes the assumption of a flat ground and tries to estimate the height of the obstacles under the vehicle.&quot;/&gt;</div>
 <div class="line">  &lt;/doc&gt;</div>
 <div class="line"></div>
 <div class="line">  &lt;settings&gt;</div>
@@ -192,7 +213,7 @@ Raw ins_extended.xml file:</h2>
 <div class="line">        &lt;dl_setting MAX=&quot;10&quot; MIN=&quot;0&quot; STEP=&quot;0.1&quot; VAR=&quot;vff.accel_noise&quot; shortname=&quot;accel_noise&quot; module=&quot;subsystems/ins/vf_extended_float&quot;/&gt;</div>
 <div class="line">        &lt;dl_setting MAX=&quot;10&quot; MIN=&quot;0&quot; STEP=&quot;0.1&quot; VAR=&quot;vff.r_baro&quot; shortname=&quot;r_baro&quot;/&gt;</div>
 <div class="line">        &lt;dl_setting MAX=&quot;10&quot; MIN=&quot;0&quot; STEP=&quot;0.1&quot; VAR=&quot;vff.r_alt&quot; shortname=&quot;r_alt&quot;/&gt;</div>
-<div class="line">        &lt;dl_setting MAX=&quot;10&quot; MIN=&quot;0&quot; STEP=&quot;0.1&quot; VAR=&quot;vff.r_offset&quot; shortname=&quot;r_offset&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting MAX=&quot;10&quot; MIN=&quot;0&quot; STEP=&quot;0.1&quot; VAR=&quot;vff.r_obs_height&quot; shortname=&quot;r_obs_height&quot;/&gt;</div>
 <div class="line">      &lt;/dl_settings&gt;</div>
 <div class="line">    &lt;/dl_settings&gt;</div>
 <div class="line">  &lt;/settings&gt;</div>
@@ -215,7 +236,7 @@ Raw ins_extended.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Wed Nov 8 2017 10:02:47 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:03:57 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

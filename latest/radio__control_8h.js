@@ -16,6 +16,7 @@ var radio__control_8h =
     [ "RC_OK_CPT", "radio__control_8h.html#a120dfe0c6e09f9048b5e575786d1011a", null ],
     [ "RC_REALLY_LOST", "radio__control_8h.html#a49d0c23f0651ada64ce2cfb001f7c47c", null ],
     [ "RC_REALLY_LOST_TIME", "radio__control_8h.html#ab1debb075d0e280a92155d1715f894cc", null ],
+    [ "RCValue", "radio__control_8h.html#a9e76d89b30ff9e29ad85bd7d83d9e783", null ],
     [ "radio_control_impl_init", "radio__control_8h.html#a6ba4bebf68f7ff39f4569dfe3b1f2832", null ],
     [ "radio_control_init", "radio__control_8h.html#afb55b39c9ce65c9074c0472838fe551d", null ],
     [ "radio_control_periodic_task", "radio__control_8h.html#a3673b154cadd0d85e61e2fe36fdda1bd", null ],

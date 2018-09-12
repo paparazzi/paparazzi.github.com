@@ -27,6 +27,7 @@ var copilot_8h =
     [ "copilot_parse_cam_snapshot_dl", "copilot_8h.html#a45b997dd03ef29008f0c189157238133", null ],
     [ "copilot_parse_copilot_status_dl", "copilot_8h.html#a8b94bc3c335ccfb1b5b7d65df6789dc1", null ],
     [ "copilot_parse_move_wp_dl", "copilot_8h.html#ab279d8cb60dd6477e1de73905a720520", null ],
+    [ "copilot_parse_payload_command_dl", "copilot_8h.html#a6f66771f594519e6d3b8efd400ec4162", null ],
     [ "copilot_periodic", "copilot_8h.html#aff1f561b25724533f46290e86658c698", null ],
     [ "PPRZ_MUTEX_DECL", "copilot_8h.html#ad1627728a91d31c276550e06e72feb0d", null ],
     [ "PPRZ_MUTEX_DECL", "copilot_8h.html#a6b42f34b86a4c232cef4b8e877a20e6c", null ],

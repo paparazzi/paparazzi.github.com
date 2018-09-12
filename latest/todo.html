@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -126,8 +126,9 @@ $(document).ready(function(){initNavTree('todo.html','');});
 <dd>find real value)  </dd>
 <dt><a class="anchor" id="_todo000025"></a>Global <a class="el" href="baro__ets_8c.html#a2af590c828781671589d89ae2fb831d1">BARO_ETS_SCALE</a>  </dt>
 <dd>check value At low altitudes pressure change is ~1.2 kPa for every 100 meters. So with a scale ADC-&gt;meters of 0.32 we get: 12 Pascal = 0.32 * ADC -&gt; SCALE = ~ 12 / 0.32 = 37.5  </dd>
-<dt><a class="anchor" id="_todo000006"></a>Global <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#a48edc646a1de1ba488bbe7d786df9bae">boardInit</a>  (void)</dt>
+<dt><a class="anchor" id="_todo000005"></a>Global <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#a48edc646a1de1ba488bbe7d786df9bae">boardInit</a>  (void)</dt>
 <dd><p class="startdd">Add your board-specific code, if any. </p>
+<p>Add your board-specific code, if any. </p>
 <p>Add your board-specific code, if any. </p>
 <p>Add your board-specific code, if any. </p>
 <p>Add your board-specific code, if any. </p>
@@ -173,8 +174,6 @@ $(document).ready(function(){initNavTree('todo.html','');});
 <dd>Add support for multiple SD cards.  </dd>
 <dt><a class="anchor" id="_todo000031"></a>File <a class="el" href="sdcard__spi_8c.html">sdcard_spi.c</a>  </dt>
 <dd>CRC checksums are not implemented. Fake values of 0xFF are used and they are ignored by the card.  </dd>
-<dt><a class="anchor" id="_todo000005"></a>Global <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#af4757e5c0e51a9d5ce1d33820a84948b">SpektrumParser</a>  (uint8_t _c, SpektrumStateType *spektrum_state, bool secondary_receiver)</dt>
-<dd>collect more data. I suspect that there is a low res  </dd>
 <dt><a class="anchor" id="_todo000019"></a>Global <a class="el" href="group__spi.html#gae920399b05f855df64dd584fe647eab3">spi0</a>  </dt>
 <dd>SPI error struct  </dd>
 <dt><a class="anchor" id="_todo000004"></a>Global <a class="el" href="stm32_2mcu__periph_2spi__arch_8c.html#a92d285e5b860130426aa3ce1369df0c9">spi_arch_int_enable</a>  (struct <a class="el" href="group__spi.html#structspi__periph" title="SPI peripheral structure. ">spi_periph</a> *spi)</dt>
@@ -199,7 +198,7 @@ $(document).ready(function(){initNavTree('todo.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Nov 8 2017 10:02:51 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:04:01 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

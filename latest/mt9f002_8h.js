@@ -36,6 +36,11 @@ var mt9f002_8h =
       [ "x_odd_inc", "mt9f002_8h.html#a230dd4d003b6a64ff1351fac054f0f17", null ],
       [ "y_odd_inc", "mt9f002_8h.html#a92b2ef17c169985bba2ccbbf740f22e1", null ]
     ] ],
+    [ "MT9F002_CENTER_X", "mt9f002_8h.html#a02a51e0adfa4409918c2bb35a2591e7b", null ],
+    [ "MT9F002_CENTER_Y", "mt9f002_8h.html#a76be7d6e685f89d596f369d6463ea537", null ],
+    [ "MT9F002_DHANE_K", "mt9f002_8h.html#a2cfb576fc391da5086d3149d2c3554f8", null ],
+    [ "MT9F002_FOCAL_X", "mt9f002_8h.html#af60fc4b6d4696ce7977a3d7b03e0f5ea", null ],
+    [ "MT9F002_FOCAL_Y", "mt9f002_8h.html#a80faa4382b8b6f551e3e8acfdf7f5274", null ],
     [ "MT9F002_GAIN_BLUE", "mt9f002_8h.html#a466d69f137a93cc65d2641745540e406", null ],
     [ "MT9F002_GAIN_GREEN1", "mt9f002_8h.html#a4f4f8fef7b9de9965fc67ba45de9132f", null ],
     [ "MT9F002_GAIN_GREEN2", "mt9f002_8h.html#ae1aae2e9df487ec2104cb5ad99e16086", null ],

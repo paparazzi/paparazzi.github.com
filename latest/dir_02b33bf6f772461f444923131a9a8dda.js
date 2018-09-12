@@ -10,5 +10,7 @@ var dir_02b33bf6f772461f444923131a9a8dda =
     [ "image.c", "image_8c.html", "image_8c" ],
     [ "image.h", "image_8h.html", "image_8h" ],
     [ "lucas_kanade.c", "lucas__kanade_8c.html", "lucas__kanade_8c" ],
-    [ "lucas_kanade.h", "lucas__kanade_8h.html", "lucas__kanade_8h" ]
+    [ "lucas_kanade.h", "lucas__kanade_8h.html", "lucas__kanade_8h" ],
+    [ "undistortion.c", "undistortion_8c.html", "undistortion_8c" ],
+    [ "undistortion.h", "undistortion_8h.html", "undistortion_8h" ]
 ];

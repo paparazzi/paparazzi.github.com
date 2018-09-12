@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['p_5fae',['P_AE',['../gec_8h.html#a6d13a1c88cfb3c15be159f325f869404ab1d761f38468f953d25f6bf841a2668b',1,'gec.h']]],
+  ['p_5fbe',['P_BE',['../gec_8h.html#a6d13a1c88cfb3c15be159f325f869404a087dde6638f221ec823378b7ac065a59',1,'gec.h']]],
   ['pcf_5fidle',['PCF_IDLE',['../wind__gfi_8h.html#a28af1f1f55de3fbdf348c7f76dee2ccca738254db5cfe4ab5ef5afbf0fe551902',1,'wind_gfi.h']]],
   ['pcf_5fread_5flsb',['PCF_READ_LSB',['../wind__gfi_8h.html#a28af1f1f55de3fbdf348c7f76dee2cccaf0bd450fa941fc16900c74c632e1c123',1,'wind_gfi.h']]],
   ['pcf_5fread_5fmsb',['PCF_READ_MSB',['../wind__gfi_8h.html#a28af1f1f55de3fbdf348c7f76dee2cccaa39c141dd8166adceade3fac18518440',1,'wind_gfi.h']]],

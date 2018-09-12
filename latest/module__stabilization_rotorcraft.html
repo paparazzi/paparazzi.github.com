@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -108,7 +108,26 @@ $(document).ready(function(){initNavTree('module__stabilization_rotorcraft.html'
 <h1><a class="anchor" id="module_load_example__stabilization_rotorcraft"></a>
 Example for airframe file</h1>
 <p>Add to your firmware section: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;module name=&quot;stabilization_rotorcraft&quot;/&gt;</div>
-</div><!-- fragment --> <h1><a class="anchor" id="autoloads__stabilization_rotorcraft"></a>
+</div><!-- fragment --> <h1><a class="anchor" id="configuration__stabilization_rotorcraft"></a>
+Module configuration options</h1>
+<h2><a class="anchor" id="af_section"></a>
+Airframe file section</h2>
+<ul>
+<li><b>section</b> name: <code>STABILIZATION_FILTER_CMD</code> prefix: <code>STABILIZATION_FILTER_CMD_</code> <ul>
+<li><b>name</b> <code>ROLL_PITCH</code> <b>value:</b> <em>0</em> <br />
+ Description: roll and pitch command filter toggle</li>
+<li><b>name</b> <code>YAW</code> <b>value:</b> <em>0</em> <br />
+ Description: yaw command filter toggle</li>
+<li><b>name</b> <code>ROLL_CUTOFF</code> <b>value:</b> <em>20.0</em> <br />
+ Description: roll command filter cut-off</li>
+<li><b>name</b> <code>PITCH_CUTOFF</code> <b>value:</b> <em>20.0</em> <br />
+ Description: pitch command filter cut-off</li>
+<li><b>name</b> <code>YAW_CUTOFF</code> <b>value:</b> <em>20.0</em> <br />
+ Description: yaw command filter cut-off</li>
+</ul>
+</li>
+</ul>
+<h1><a class="anchor" id="autoloads__stabilization_rotorcraft"></a>
 Auto-loaded modules</h1>
 <p>The following modules are automatically loaded (just as if you had added them in the airframe file)</p><ul>
 <li><a class="el" href="module__nav_basic_rotorcraft.html">nav_basic_rotorcraft module</a> </li>
@@ -148,6 +167,13 @@ Raw stabilization_rotorcraft.xml file:</h2>
 <div class="line">      Also provide the direct mode &#39;stabilization_none&#39;</div>
 <div class="line">      As a durty hack, it also provides navigation and guidance: this should be done in the airframe at some point</div>
 <div class="line">    &lt;/description&gt;</div>
+<div class="line">    &lt;section name=&quot;STABILIZATION_FILTER_CMD&quot; prefix=&quot;STABILIZATION_FILTER_CMD_&quot;&gt;</div>
+<div class="line">      &lt;define name=&quot;ROLL_PITCH&quot; value=&quot;0&quot; description=&quot;roll and pitch command filter toggle&quot; unit=&quot;bool&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;YAW&quot; value=&quot;0&quot; description=&quot;yaw command filter toggle&quot; unit=&quot;bool&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;ROLL_CUTOFF&quot; value=&quot;20.0&quot; description=&quot;roll command filter cut-off&quot; unit=&quot;Hz&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;PITCH_CUTOFF&quot; value=&quot;20.0&quot; description=&quot;pitch command filter cut-off&quot; unit=&quot;Hz&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;YAW_CUTOFF&quot; value=&quot;20.0&quot; description=&quot;yaw command filter cut-off&quot; unit=&quot;Hz&quot;/&gt; </div>
+<div class="line">    &lt;/section&gt;</div>
 <div class="line">  &lt;/doc&gt;</div>
 <div class="line">  &lt;autoload name=&quot;nav_basic_rotorcraft&quot;/&gt;</div>
 <div class="line">  &lt;header&gt;</div>
@@ -167,7 +193,7 @@ Raw stabilization_rotorcraft.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Wed Nov 8 2017 10:02:46 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:03:55 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

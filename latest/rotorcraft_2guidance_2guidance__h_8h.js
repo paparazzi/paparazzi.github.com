@@ -62,6 +62,5 @@ var rotorcraft_2guidance_2guidance__h_8h =
     [ "guidance_h_SetTau", "rotorcraft_2guidance_2guidance__h_8h.html#a5e7e711b3e72c45b1ee16ba8dbb84d18", null ],
     [ "guidance_h_SetZeta", "rotorcraft_2guidance_2guidance__h_8h.html#ae1521b518c96b341ec67ff9a7bc8bd0d", null ],
     [ "guidance_h", "rotorcraft_2guidance_2guidance__h_8h.html#a8e334308c59e5430c7dd0ac7e222f07b", null ],
-    [ "transition_percentage", "rotorcraft_2guidance_2guidance__h_8h.html#a03b606d1a31f9d006700fcbbc60d7293", null ],
-    [ "transition_theta_offset", "rotorcraft_2guidance_2guidance__h_8h.html#ac5766b598ff030ccbe7b127c796bc307", null ]
+    [ "transition_percentage", "rotorcraft_2guidance_2guidance__h_8h.html#a03b606d1a31f9d006700fcbbc60d7293", null ]
 ];

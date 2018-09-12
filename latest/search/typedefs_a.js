@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['mavlink_5fmission_5fmgr',['mavlink_mission_mgr',['../mission__manager_8h.html#a45d7b7def04dc761cc1451867d8b1df3',1,'mission_manager.h']]],
-  ['mpu60x0configset',['Mpu60x0ConfigSet',['../mpu60x0_8h.html#a8cdc9a8a37dfb7224218b0a1b3ee7e9a',1,'mpu60x0.h']]],
-  ['mpu60x0i2cslaveconfigure',['Mpu60x0I2cSlaveConfigure',['../mpu60x0_8h.html#aa81f67caf046d607299de22a57f797b8',1,'mpu60x0.h']]],
-  ['mpu9250configset',['Mpu9250ConfigSet',['../mpu9250_8h.html#a62c163eaf8e2918e26d119173cb0f7ee',1,'mpu9250.h']]],
-  ['mpu9250i2cslaveconfigure',['Mpu9250I2cSlaveConfigure',['../mpu9250_8h.html#a6615089619127aa79399b3e49e84a43a',1,'mpu9250.h']]],
-  ['msgqueue',['MsgQueue',['../msg__queue_8h.html#a53151d497644eaddb2396d4659056d74',1,'msg_queue.h']]]
+  ['nav_5frover_5fapproaching',['nav_rover_approaching',['../rover_2navigation_8h.html#a8a2a8080528255959f4866da8aa52f43',1,'navigation.h']]],
+  ['nav_5frover_5fcircle',['nav_rover_circle',['../rover_2navigation_8h.html#a70dfb440d907074305ae36f21681c294',1,'navigation.h']]],
+  ['nav_5frover_5fgoto',['nav_rover_goto',['../rover_2navigation_8h.html#a7b50300d076c61ee3c1133bcd5fec87b',1,'navigation.h']]],
+  ['nav_5frover_5foval',['nav_rover_oval',['../rover_2navigation_8h.html#a072fd97417b662208ec2b8ffe8bd0df0',1,'navigation.h']]],
+  ['nav_5frover_5foval_5finit',['nav_rover_oval_init',['../rover_2navigation_8h.html#a0a3de0bf1273e6ea2e53570fd8705dd4',1,'navigation.h']]],
+  ['nav_5frover_5froute',['nav_rover_route',['../rover_2navigation_8h.html#afed2bef66e0dd600e365de3b7eaf2ad5',1,'navigation.h']]]
 ];

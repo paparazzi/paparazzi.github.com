@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -153,8 +153,8 @@ $(document).ready(function(){initNavTree('functions_vars_f.html','');});
 <li>f2i_mixer_magic
 : <a class="el" href="px4__flash_2protocol_8h.html#ab79dcabd75072f9a989334673f7f0d6d">px4io_mixdata</a>
 </li>
-<li>f3
-: <a class="el" href="FStar_8h.html#a2c50dffedf370c673895b6c12a00a82c">K___uint64_t_uint64_t_uint64_t_uint64_t</a>
+<li>failsafe_mode_dist2
+: <a class="el" href="rover_2navigation_8h.html#a001e83820118d7d3a58ddd5b0d1f7879">RoverNavigation</a>
 </li>
 <li>fast9_adaptive
 : <a class="el" href="opticflow__calculator_8h.html#ab16878e5632234237e8383b9e4ee1230">opticflow_t</a>
@@ -184,6 +184,12 @@ $(document).ready(function(){initNavTree('functions_vars_f.html','');});
 : <a class="el" href="navdata_8h.html#a96d2b033c25b7cbf3c88e1e9046063ed">navdata_t</a>
 , <a class="el" href="serial__port_8h.html#ac4b61bc4a5f65550b9f94c2efdd07048">SerialPort</a>
 , <a class="el" href="v4l2_8h.html#a28c87539b5eb24b4e9c162ac5703bf49">v4l2_device</a>
+</li>
+<li>fd_read
+: <a class="el" href="pipe_8h.html#a302f59eb4358a2074592b70c525d93bb">pipe_periph</a>
+</li>
+<li>fd_write
+: <a class="el" href="pipe_8h.html#aff624d7cce9947151e1754261e90ab86">pipe_periph</a>
 </li>
 <li>fe_err
 : <a class="el" href="uart_8h.html#ab5a088408a0e4d3af31921e2eb1a7811">uart_periph</a>
@@ -224,6 +230,7 @@ $(document).ready(function(){initNavTree('functions_vars_f.html','');});
 <li>filter
 : <a class="el" href="aoa__adc_8h.html#a87aa44ee846084fa0343fc9069f35222">Aoa_Adc</a>
 , <a class="el" href="aoa__pwm_8h.html#afbad26a2eba59ddacf1969475a035cee">Aoa_Pwm</a>
+, <a class="el" href="dragspeed_8h.html#a1ce7d0adae16ef3d5e308d03144759dd">dragspeed_t</a>
 , <a class="el" href="cv__georeference_8c.html#a52f3d97872fdaf7a8a8c521ddefd7c9c">georeference_t</a>
 , <a class="el" href="blob__finder_8h.html#a1a873f29b5c7257ae170a774c57927f6">image_label_t</a>
 </li>
@@ -284,6 +291,9 @@ $(document).ready(function(){initNavTree('functions_vars_f.html','');});
 <li>flight_time
 : <a class="el" href="autopilot_8h.html#af35bdb0c0c4f70fa59cbdcc4de62fa47">pprz_autopilot</a>
 </li>
+<li>flip_horizontal
+: <a class="el" href="pano__unwrap_8h.html#adf2fb7a1dc20f2bd232fa666690272e1">pano_unwrap_t</a>
+</li>
 <li>Float
 : <a class="el" href="VN100_8h.html#a5e6cc11d8fc6e005816b5e0851a32231">VN100_Param</a>
 </li>
@@ -313,11 +323,23 @@ $(document).ready(function(){initNavTree('functions_vars_f.html','');});
 , <a class="el" href="px4flow_8h.html#a46cf0da0342aa761af38a4c05ab141d2">mavlink_optical_flow</a>
 , <a class="el" href="inter__thread__data_8h.html#ad6c8918293af2439402cd642dfb616fd">opticflow_result_t</a>
 </li>
+<li>flowX
+: <a class="el" href="optical__flow__functions_8h.html#a4094ca1b9cbcf965e15f5ebba4f9f565">OpticalFlowHover</a>
+</li>
+<li>flowY
+: <a class="el" href="optical__flow__functions_8h.html#ac9495d5c31412e42fb7df294bf968256">OpticalFlowHover</a>
+</li>
 <li>fly_from
 : <a class="el" href="nav__spiral_8h.html#ae7f897b4d4c09884e0719bb8c1490e65">NavSpiral</a>
 </li>
 <li>fmt
 : <a class="el" href="group__chprintf.html#a747c94e3c3cc1476e9810800e1db053b">synchronous_print_arg_t</a>
+</li>
+<li>focal_x
+: <a class="el" href="video__device_8h.html#a4f93eea3da400ac56c1918a8883bf60d">camera_intrinsics_t</a>
+</li>
+<li>focal_y
+: <a class="el" href="video__device_8h.html#a16e7c506a3c1c5c05d272ae8fb59088a">camera_intrinsics_t</a>
 </li>
 <li>focus_of_expansion_x
 : <a class="el" href="linear__flow__fit_8h.html#a400a698c378e817a82ec4f9ea781aa79">linear_flow_fit_info</a>
@@ -332,6 +354,9 @@ $(document).ready(function(){initNavTree('functions_vars_f.html','');});
 : <a class="el" href="avi__isp__vlformat__32to40_8h.html#a45344dd251eb848afcc4e758233a0516">avi_isp_vlformat_32to40_regs</a>
 , <a class="el" href="avi__isp__vlformat__40to32_8h.html#ac1bdcf7ae3d54adb52c7d98e0df9d513">avi_isp_vlformat_40to32_regs</a>
 , <a class="el" href="video__device_8h.html#a4aec9ee3d72122a284df613b9f2bf33d">video_config_t</a>
+</li>
+<li>forward_direction
+: <a class="el" href="pano__unwrap_8h.html#a70864706dc9d4660df33c53b3f860d9b">pano_unwrap_t</a>
 </li>
 <li>fps
 : <a class="el" href="inter__thread__data_8h.html#a7ec8537092c7faeaee475bc0203e032b">opticflow_result_t</a>
@@ -360,9 +385,6 @@ $(document).ready(function(){initNavTree('functions_vars_f.html','');});
 <li>frame_time
 : <a class="el" href="edge__flow_8h.html#a6ec9fb8f5054f41182e57e4e1e912d74">edge_hist_t</a>
 </li>
-<li>FrameCnt
-: <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a0f1bca7c6c4c57019ffea65b382a25de">SpektrumStateStruct</a>
-</li>
 <li>framing_error
 : <a class="el" href="vn200__serial_8h.html#a0a1a7bf6fd61d1537542203fdcea75fd">VNPacket</a>
 </li>
@@ -374,14 +396,10 @@ $(document).ready(function(){initNavTree('functions_vars_f.html','');});
 </li>
 <li>from
 : <a class="el" href="mission__common_8h.html#ad78889dcc9108232f7bcb31278e83615">_mission_segment</a>
+, <a class="el" href="nav__rover__base_8h.html#a9337c3c6f328c236be0f088f3956ece5">RoverNavGoto</a>
 </li>
 <li>fs_sel
 : <a class="el" href="itg3200_8h.html#ad6e742aab5b3d2ba2e6cbbaea90e0024">Itg3200Config</a>
-</li>
-<li>fst
-: <a class="el" href="Ed25519_8h.html#abfec3b8753eeb3ad978a30b5247c95f2">K___FStar_Seq_Base_seq_uint64_t_FStar_Seq_Base_seq_uint64_t</a>
-, <a class="el" href="SHA2__256_8h.html#aed2269ca5b6e4cd36e4000d0bac06601">K___uint32_t_uint8_t_</a>
-, <a class="el" href="FStar_8h.html#a7d8e049284a2beff4670154c23c751d6">K___uint64_t_uint64_t_uint64_t_uint64_t</a>
 </li>
 <li>fuel_flow
 : <a class="el" href="flight__gear_8h.html#a41bc257fca71a27be4c981c28030d924">FGNetFDM</a>
@@ -463,7 +481,7 @@ $(document).ready(function(){initNavTree('functions_vars_f.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Nov 8 2017 10:03:14 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:04:30 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -5,6 +5,8 @@ var dir_9cd42eb44f1e76fa7c8c7cd9c9a53863 =
     [ "atmega_i2c_cam_ctrl.h", "atmega__i2c__cam__ctrl_8h.html", "atmega__i2c__cam__ctrl_8h" ],
     [ "dc.c", "dc_8c.html", "dc_8c" ],
     [ "dc.h", "dc_8h.html", "dc_8h" ],
+    [ "dc_ctrl_parrot_mykonos.c", "dc__ctrl__parrot__mykonos_8c.html", "dc__ctrl__parrot__mykonos_8c" ],
+    [ "dc_ctrl_parrot_mykonos.h", "dc__ctrl__parrot__mykonos_8h.html", "dc__ctrl__parrot__mykonos_8h" ],
     [ "dc_shoot_rc.c", "dc__shoot__rc_8c.html", "dc__shoot__rc_8c" ],
     [ "dc_shoot_rc.h", "dc__shoot__rc_8h.html", "dc__shoot__rc_8h" ],
     [ "gpio_cam_ctrl.c", "gpio__cam__ctrl_8c.html", "gpio__cam__ctrl_8c" ],

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -251,13 +251,13 @@ $(document).ready(function(){initNavTree('stm32_2subsystems_2radio__control_2ppm
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="keywordtype">void</span> tim2_isr(<span class="keywordtype">void</span>)</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;{</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  <span class="keywordflow">if</span> ((TIM2_SR &amp; <a class="code" href="apogee__1_80_8h.html#a582f6248d8a6e48e6acb4fedbe175078">PPM_CC_IF</a>) != 0) {</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <a class="code" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a1c34ea5943bc1d1335983afe8435e2bd">timer_clear_flag</a>(TIM2, PPM_CC_IF);</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    timer_clear_flag(TIM2, PPM_CC_IF);</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> now = timer_get_counter(TIM2) + <a class="code" href="stm32_2subsystems_2radio__control_2ppm__arch_8c.html#a6b8315208a0f09436556fbce0298ae38">timer_rollover_cnt</a>;</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <a class="code" href="ppm_8c.html#ad16d4975a7ccff21d4ef4ff3f734f9e9">ppm_decode_frame</a>(now);</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> ((TIM2_SR &amp; TIM_SR_UIF) != 0) {</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <a class="code" href="stm32_2subsystems_2radio__control_2ppm__arch_8c.html#a6b8315208a0f09436556fbce0298ae38">timer_rollover_cnt</a> += (1 &lt;&lt; 16);</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <a class="code" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a1c34ea5943bc1d1335983afe8435e2bd">timer_clear_flag</a>(TIM2, TIM_SR_UIF);</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    timer_clear_flag(TIM2, TIM_SR_UIF);</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  }</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;}</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;</div>
@@ -267,13 +267,13 @@ $(document).ready(function(){initNavTree('stm32_2subsystems_2radio__control_2ppm
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="keywordtype">void</span> tim3_isr(<span class="keywordtype">void</span>)</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;{</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  <span class="keywordflow">if</span> ((TIM3_SR &amp; PPM_CC_IF) != 0) {</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <a class="code" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a1c34ea5943bc1d1335983afe8435e2bd">timer_clear_flag</a>(TIM3, PPM_CC_IF);</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    timer_clear_flag(TIM3, PPM_CC_IF);</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> now = timer_get_counter(TIM3) + <a class="code" href="stm32_2subsystems_2radio__control_2ppm__arch_8c.html#a6b8315208a0f09436556fbce0298ae38">timer_rollover_cnt</a>;</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <a class="code" href="ppm_8c.html#ad16d4975a7ccff21d4ef4ff3f734f9e9">ppm_decode_frame</a>(now);</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> ((TIM3_SR &amp; TIM_SR_UIF) != 0) {</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <a class="code" href="stm32_2subsystems_2radio__control_2ppm__arch_8c.html#a6b8315208a0f09436556fbce0298ae38">timer_rollover_cnt</a> += (1 &lt;&lt; 16);</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <a class="code" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a1c34ea5943bc1d1335983afe8435e2bd">timer_clear_flag</a>(TIM3, TIM_SR_UIF);</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    timer_clear_flag(TIM3, TIM_SR_UIF);</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;  }</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;}</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div>
@@ -282,13 +282,13 @@ $(document).ready(function(){initNavTree('stm32_2subsystems_2radio__control_2ppm
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="keywordtype">void</span> tim4_isr(<span class="keywordtype">void</span>)</div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;{</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  <span class="keywordflow">if</span> ((TIM4_SR &amp; PPM_CC_IF) != 0) {</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <a class="code" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a1c34ea5943bc1d1335983afe8435e2bd">timer_clear_flag</a>(TIM4, PPM_CC_IF);</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    timer_clear_flag(TIM4, PPM_CC_IF);</div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> now = timer_get_counter(TIM4) + <a class="code" href="stm32_2subsystems_2radio__control_2ppm__arch_8c.html#a6b8315208a0f09436556fbce0298ae38">timer_rollover_cnt</a>;</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <a class="code" href="ppm_8c.html#ad16d4975a7ccff21d4ef4ff3f734f9e9">ppm_decode_frame</a>(now);</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> ((TIM4_SR &amp; TIM_SR_UIF) != 0) {</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <a class="code" href="stm32_2subsystems_2radio__control_2ppm__arch_8c.html#a6b8315208a0f09436556fbce0298ae38">timer_rollover_cnt</a> += (1 &lt;&lt; 16);</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <a class="code" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a1c34ea5943bc1d1335983afe8435e2bd">timer_clear_flag</a>(TIM4, TIM_SR_UIF);</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    timer_clear_flag(TIM4, TIM_SR_UIF);</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;  }</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;}</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;</div>
@@ -297,13 +297,13 @@ $(document).ready(function(){initNavTree('stm32_2subsystems_2radio__control_2ppm
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;<span class="keywordtype">void</span> tim5_isr(<span class="keywordtype">void</span>)</div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;{</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  <span class="keywordflow">if</span> ((TIM5_SR &amp; PPM_CC_IF) != 0) {</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <a class="code" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a1c34ea5943bc1d1335983afe8435e2bd">timer_clear_flag</a>(TIM5, PPM_CC_IF);</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    timer_clear_flag(TIM5, PPM_CC_IF);</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> now = timer_get_counter(TIM5) + <a class="code" href="stm32_2subsystems_2radio__control_2ppm__arch_8c.html#a6b8315208a0f09436556fbce0298ae38">timer_rollover_cnt</a>;</div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <a class="code" href="ppm_8c.html#ad16d4975a7ccff21d4ef4ff3f734f9e9">ppm_decode_frame</a>(now);</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> ((TIM5_SR &amp; TIM_SR_UIF) != 0) {</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <a class="code" href="stm32_2subsystems_2radio__control_2ppm__arch_8c.html#a6b8315208a0f09436556fbce0298ae38">timer_rollover_cnt</a> += (1 &lt;&lt; 16);</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <a class="code" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a1c34ea5943bc1d1335983afe8435e2bd">timer_clear_flag</a>(TIM5, TIM_SR_UIF);</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    timer_clear_flag(TIM5, TIM_SR_UIF);</div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;  }</div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;}</div>
 <div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;</div>
@@ -318,13 +318,13 @@ $(document).ready(function(){initNavTree('stm32_2subsystems_2radio__control_2ppm
 <div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;  <span class="keywordflow">if</span> ((TIM1_SR &amp; TIM_SR_UIF) != 0) {</div>
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <a class="code" href="stm32_2subsystems_2radio__control_2ppm__arch_8c.html#a6b8315208a0f09436556fbce0298ae38">timer_rollover_cnt</a> += (1 &lt;&lt; 16);</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <a class="code" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a1c34ea5943bc1d1335983afe8435e2bd">timer_clear_flag</a>(TIM1, TIM_SR_UIF);</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    timer_clear_flag(TIM1, TIM_SR_UIF);</div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;  }</div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;}</div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;</div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;<span class="keywordtype">void</span> tim1_cc_isr(<span class="keywordtype">void</span>) {</div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;  <span class="keywordflow">if</span> ((TIM1_SR &amp; PPM_CC_IF) != 0) {</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <a class="code" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a1c34ea5943bc1d1335983afe8435e2bd">timer_clear_flag</a>(TIM1, PPM_CC_IF);</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    timer_clear_flag(TIM1, PPM_CC_IF);</div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> now = timer_get_counter(TIM1) + <a class="code" href="stm32_2subsystems_2radio__control_2ppm__arch_8c.html#a6b8315208a0f09436556fbce0298ae38">timer_rollover_cnt</a>;</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    <a class="code" href="ppm_8c.html#ad16d4975a7ccff21d4ef4ff3f734f9e9">ppm_decode_frame</a>(now);</div>
@@ -340,13 +340,13 @@ $(document).ready(function(){initNavTree('stm32_2subsystems_2radio__control_2ppm
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;  <span class="keywordflow">if</span> ((TIM8_SR &amp; TIM_SR_UIF) != 0) {</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    <a class="code" href="stm32_2subsystems_2radio__control_2ppm__arch_8c.html#a6b8315208a0f09436556fbce0298ae38">timer_rollover_cnt</a> += (1 &lt;&lt; 16);</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    <a class="code" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a1c34ea5943bc1d1335983afe8435e2bd">timer_clear_flag</a>(TIM8, TIM_SR_UIF);</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    timer_clear_flag(TIM8, TIM_SR_UIF);</div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;  }</div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;}</div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;<span class="keywordtype">void</span> tim8_cc_isr(<span class="keywordtype">void</span>) {</div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;  <span class="keywordflow">if</span> ((TIM8_SR &amp; PPM_CC_IF) != 0) {</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    <a class="code" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a1c34ea5943bc1d1335983afe8435e2bd">timer_clear_flag</a>(TIM8, PPM_CC_IF);</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    timer_clear_flag(TIM8, PPM_CC_IF);</div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;</div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> now = timer_get_counter(TIM8) + <a class="code" href="stm32_2subsystems_2radio__control_2ppm__arch_8c.html#a6b8315208a0f09436556fbce0298ae38">timer_rollover_cnt</a>;</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    <a class="code" href="ppm_8c.html#ad16d4975a7ccff21d4ef4ff3f734f9e9">ppm_decode_frame</a>(now);</div>
@@ -367,15 +367,14 @@ $(document).ready(function(){initNavTree('stm32_2subsystems_2radio__control_2ppm
 <div class="ttc" id="stm32_2mcu__arch_8c_html_ad5d712b19fd6e3df08c60d4db733a22c"><div class="ttname"><a href="stm32_2mcu__arch_8c.html#ad5d712b19fd6e3df08c60d4db733a22c">timer_get_frequency</a></div><div class="ttdeci">uint32_t timer_get_frequency(uint32_t timer_peripheral)</div><div class="ttdoc">Get Timer clock frequency (before prescaling) Only valid if using the internal clock for the timer...</div><div class="ttdef"><b>Definition:</b> <a href="stm32_2mcu__arch_8c_source.html#l00263">mcu_arch.c:263</a></div></div>
 <div class="ttc" id="apogee__1_80_8h_html_a582f6248d8a6e48e6acb4fedbe175078"><div class="ttname"><a href="apogee__1_80_8h.html#a582f6248d8a6e48e6acb4fedbe175078">PPM_CC_IF</a></div><div class="ttdeci">#define PPM_CC_IF</div><div class="ttdef"><b>Definition:</b> <a href="apogee__1_80_8h_source.html#l00350">apogee_1.0.h:350</a></div></div>
 <div class="ttc" id="std_8h_html_aa93f0eb578d23995850d61f7d61c55c1"><div class="ttname"><a href="std_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></div><div class="ttdeci">#define FALSE</div><div class="ttdef"><b>Definition:</b> <a href="std_8h_source.html#l00005">std.h:5</a></div></div>
-<div class="ttc" id="stm32_2subsystems_2radio__control_2spektrum__arch_8c_html_a1c34ea5943bc1d1335983afe8435e2bd"><div class="ttname"><a href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a1c34ea5943bc1d1335983afe8435e2bd">timer_clear_flag</a></div><div class="ttdeci">timer_clear_flag(TIMx, TIM_SR_UIF)</div></div>
-<div class="ttc" id="apogee_2chibios_2v1_80_2board_8h_html_a87537e4413a12b7b177ea61d489c2621"><div class="ttname"><a href="apogee_2chibios_2v1_80_2board_8h.html#a87537e4413a12b7b177ea61d489c2621">PPM_TIMER</a></div><div class="ttdeci">#define PPM_TIMER</div><div class="ttdef"><b>Definition:</b> <a href="apogee_2chibios_2v1_80_2board_8h_source.html#l00918">board.h:918</a></div></div>
+<div class="ttc" id="apogee_2chibios_2v1_80_2board_8h_html_a87537e4413a12b7b177ea61d489c2621"><div class="ttname"><a href="apogee_2chibios_2v1_80_2board_8h.html#a87537e4413a12b7b177ea61d489c2621">PPM_TIMER</a></div><div class="ttdeci">#define PPM_TIMER</div><div class="ttdef"><b>Definition:</b> <a href="apogee_2chibios_2v1_80_2board_8h_source.html#l00352">board.h:352</a></div></div>
 <div class="ttc" id="apogee__1_80_8h_html_a5c71cefbac7158c9005191835cc22eed"><div class="ttname"><a href="apogee__1_80_8h.html#a5c71cefbac7158c9005191835cc22eed">PPM_IRQ</a></div><div class="ttdeci">#define PPM_IRQ</div><div class="ttdef"><b>Definition:</b> <a href="apogee__1_80_8h_source.html#l00346">apogee_1.0.h:346</a></div></div>
 <div class="ttc" id="types_8h_html_a06896e8c53f721507066c079052171f8"><div class="ttname"><a href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a></div><div class="ttdeci">unsigned long uint32_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00018">types.h:18</a></div></div>
 <div class="ttc" id="ins__vectornav_8c_html_aa01d3425df2eb0f33ced38c9d8fa8f05"><div class="ttname"><a href="ins__vectornav_8c.html#aa01d3425df2eb0f33ced38c9d8fa8f05">PRINT_CONFIG_MSG</a></div><div class="ttdeci">PRINT_CONFIG_MSG(&quot;USE_INS_NAV_INIT defaulting to TRUE&quot;)</div></div>
 <div class="ttc" id="apogee__1_80_8h_html_ad3ff6dacdc7e56a330541bbbb49911ce"><div class="ttname"><a href="apogee__1_80_8h.html#ad3ff6dacdc7e56a330541bbbb49911ce">PPM_GPIO_PIN</a></div><div class="ttdeci">#define PPM_GPIO_PIN</div><div class="ttdef"><b>Definition:</b> <a href="apogee__1_80_8h_source.html#l00352">apogee_1.0.h:352</a></div></div>
 <div class="ttc" id="chibios_2subsystems_2radio__control_2ppm__arch_8c_html_aa933c6924c3511448e65fc31e2d26129"><div class="ttname"><a href="chibios_2subsystems_2radio__control_2ppm__arch_8c.html#aa933c6924c3511448e65fc31e2d26129">ppm_arch_init</a></div><div class="ttdeci">void ppm_arch_init(void)</div><div class="ttdoc">Architecture dependant code. </div><div class="ttdef"><b>Definition:</b> <a href="chibios_2subsystems_2radio__control_2ppm__arch_8c_source.html#l00089">ppm_arch.c:89</a></div></div>
 <div class="ttc" id="stm32_2subsystems_2radio__control_2ppm__arch_8c_html_a8c678c36f403d01c4348ff3d624fbf47"><div class="ttname"><a href="stm32_2subsystems_2radio__control_2ppm__arch_8c.html#a8c678c36f403d01c4348ff3d624fbf47">PPM_IRQ_PRIO</a></div><div class="ttdeci">#define PPM_IRQ_PRIO</div><div class="ttdef"><b>Definition:</b> <a href="stm32_2subsystems_2radio__control_2ppm__arch_8c_source.html#l00052">ppm_arch.c:52</a></div></div>
-<div class="ttc" id="apogee_2chibios_2v1_80_2board_8h_html_a45e07d7e279e23ee3a6245a83fa85e6a"><div class="ttname"><a href="apogee_2chibios_2v1_80_2board_8h.html#a45e07d7e279e23ee3a6245a83fa85e6a">PPM_CHANNEL</a></div><div class="ttdeci">#define PPM_CHANNEL</div><div class="ttdef"><b>Definition:</b> <a href="apogee_2chibios_2v1_80_2board_8h_source.html#l00917">board.h:917</a></div></div>
+<div class="ttc" id="apogee_2chibios_2v1_80_2board_8h_html_a45e07d7e279e23ee3a6245a83fa85e6a"><div class="ttname"><a href="apogee_2chibios_2v1_80_2board_8h.html#a45e07d7e279e23ee3a6245a83fa85e6a">PPM_CHANNEL</a></div><div class="ttdeci">#define PPM_CHANNEL</div><div class="ttdef"><b>Definition:</b> <a href="apogee_2chibios_2v1_80_2board_8h_source.html#l00351">board.h:351</a></div></div>
 <div class="ttc" id="apogee__1_80_8h_html_a9937fa84b1fa330638ac7ce9dd00bf32"><div class="ttname"><a href="apogee__1_80_8h.html#a9937fa84b1fa330638ac7ce9dd00bf32">PPM_TIMER_INPUT</a></div><div class="ttdeci">#define PPM_TIMER_INPUT</div><div class="ttdef"><b>Definition:</b> <a href="apogee__1_80_8h_source.html#l00345">apogee_1.0.h:345</a></div></div>
 <div class="ttc" id="stm32_2subsystems_2radio__control_2ppm__arch_8c_html_a6b8315208a0f09436556fbce0298ae38"><div class="ttname"><a href="stm32_2subsystems_2radio__control_2ppm__arch_8c.html#a6b8315208a0f09436556fbce0298ae38">timer_rollover_cnt</a></div><div class="ttdeci">static uint32_t timer_rollover_cnt</div><div class="ttdef"><b>Definition:</b> <a href="stm32_2subsystems_2radio__control_2ppm__arch_8c_source.html#l00056">ppm_arch.c:56</a></div></div>
 <div class="ttc" id="ppm_8h_html"><div class="ttname"><a href="ppm_8h.html">ppm.h</a></div></div>
@@ -386,7 +385,7 @@ $(document).ready(function(){initNavTree('stm32_2subsystems_2radio__control_2ppm
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_ebfa5059daba0d85a68f1520147b1a51.html">stm32</a></li><li class="navelem"><a class="el" href="dir_71548ae744da26ac2c7ca213b679dc43.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_b14b085d0c57bddb3031abea4661d10b.html">radio_control</a></li><li class="navelem"><a class="el" href="stm32_2subsystems_2radio__control_2ppm__arch_8c.html">ppm_arch.c</a></li>
-    <li class="footer">Generated on Wed Nov 8 2017 10:01:27 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:02:31 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

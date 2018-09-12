@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -110,7 +110,7 @@ $(document).ready(function(){initNavTree('module__ins_hff_extended.html','');});
 Example for airframe file</h1>
 <p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;module name=&quot;ins_hff_extended&quot;&gt;</div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;  &lt;define name=&quot;USE_INS_NAV_INIT&quot; value=&quot;TRUE|FALSE&quot; /&gt;</div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;  &lt;define name=&quot;INS_INT_SONAR_ID&quot; value=&quot;ABI_BROADCAST&quot; /&gt;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;  &lt;define name=&quot;INS_INT_AGL_ID&quot; value=&quot;ABI_BROADCAST&quot; /&gt;</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;  &lt;define name=&quot;INS_INT_BARO_ID&quot; value=&quot;BARO_BOARD_SENDER_ID&quot; /&gt;</div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;  &lt;define name=&quot;INS_INT_GPS_ID&quot; value=&quot;GPS_MULTI_ID&quot; /&gt;</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;  &lt;define name=&quot;INS_INT_IMU_ID&quot; value=&quot;ABI_BROADCAST&quot; /&gt;</div>
@@ -126,7 +126,7 @@ Define Options</h2>
 <ul>
 <li><b>name:</b> <code>USE_INS_NAV_INIT</code> <b>value:</b> <em>TRUE|FALSE</em> <br />
  Description: Initialize the origin of the local coordinate system from flight plan. (Default: TRUE)</li>
-<li><b>name:</b> <code>INS_INT_SONAR_ID</code> <b>value:</b> <em>ABI_BROADCAST</em> <br />
+<li><b>name:</b> <code>INS_INT_AGL_ID</code> <b>value:</b> <em>ABI_BROADCAST</em> <br />
  Description: The ABI sender id of the sonar to use</li>
 <li><b>name:</b> <code>INS_INT_BARO_ID</code> <b>value:</b> <em>BARO_BOARD_SENDER_ID</em> <br />
  Description: The ABI sender id of the baro to use</li>
@@ -177,7 +177,7 @@ Raw ins_hff_extended.xml file:</h2>
 <div class="line">      extended INS with vertical filter using sonar.</div>
 <div class="line">    &lt;/description&gt;</div>
 <div class="line">    &lt;define name=&quot;USE_INS_NAV_INIT&quot; value=&quot;TRUE|FALSE&quot; description=&quot;Initialize the origin of the local coordinate system from flight plan. (Default: TRUE)&quot;/&gt;</div>
-<div class="line">    &lt;define name=&quot;INS_INT_SONAR_ID&quot; value=&quot;ABI_BROADCAST&quot; description=&quot;The ABI sender id of the sonar to use&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;INS_INT_AGL_ID&quot; value=&quot;ABI_BROADCAST&quot; description=&quot;The ABI sender id of the sonar to use&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;INS_INT_BARO_ID&quot; value=&quot;BARO_BOARD_SENDER_ID&quot; description=&quot;The ABI sender id of the baro to use&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;INS_INT_GPS_ID&quot; value=&quot;GPS_MULTI_ID&quot; description=&quot;The ABI sender id of the GPS to use&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;INS_INT_IMU_ID&quot; value=&quot;ABI_BROADCAST&quot; description=&quot;The ABI sender id of the IMU to use&quot;/&gt;</div>
@@ -193,7 +193,7 @@ Raw ins_hff_extended.xml file:</h2>
 <div class="line">        &lt;dl_setting MAX=&quot;10&quot; MIN=&quot;0&quot; STEP=&quot;0.1&quot; VAR=&quot;vff.accel_noise&quot; shortname=&quot;accel_noise&quot; module=&quot;subsystems/ins/vf_extended_float&quot;/&gt;</div>
 <div class="line">        &lt;dl_setting MAX=&quot;10&quot; MIN=&quot;0&quot; STEP=&quot;0.1&quot; VAR=&quot;vff.r_baro&quot; shortname=&quot;r_baro&quot;/&gt;</div>
 <div class="line">        &lt;dl_setting MAX=&quot;10&quot; MIN=&quot;0&quot; STEP=&quot;0.1&quot; VAR=&quot;vff.r_alt&quot; shortname=&quot;r_alt&quot;/&gt;</div>
-<div class="line">        &lt;dl_setting MAX=&quot;10&quot; MIN=&quot;0&quot; STEP=&quot;0.1&quot; VAR=&quot;vff.r_offset&quot; shortname=&quot;r_offset&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting MAX=&quot;10&quot; MIN=&quot;0&quot; STEP=&quot;0.1&quot; VAR=&quot;vff.r_obs_height&quot; shortname=&quot;r_obs_height&quot;/&gt;</div>
 <div class="line">      &lt;/dl_settings&gt;</div>
 <div class="line">    &lt;/dl_settings&gt;</div>
 <div class="line">  &lt;/settings&gt;</div>
@@ -218,7 +218,7 @@ Raw ins_hff_extended.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Wed Nov 8 2017 10:02:49 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:03:59 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

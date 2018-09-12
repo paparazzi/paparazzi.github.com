@@ -7,6 +7,8 @@ var dir_7cedabfb4d36d0fdf06823c7fd9084fc =
     [ "i2c_arch.c", "linux_2mcu__periph_2i2c__arch_8c.html", "linux_2mcu__periph_2i2c__arch_8c" ],
     [ "i2c_arch.h", "linux_2mcu__periph_2i2c__arch_8h.html", null ],
     [ "i2c_smbus.h", "i2c__smbus_8h.html", "i2c__smbus_8h" ],
+    [ "pipe_arch.c", "linux_2mcu__periph_2pipe__arch_8c.html", "linux_2mcu__periph_2pipe__arch_8c" ],
+    [ "pipe_arch.h", "linux_2mcu__periph_2pipe__arch_8h.html", "linux_2mcu__periph_2pipe__arch_8h" ],
     [ "pwm_sysfs.c", "pwm__sysfs_8c.html", "pwm__sysfs_8c" ],
     [ "pwm_sysfs.h", "pwm__sysfs_8h.html", "pwm__sysfs_8h" ],
     [ "spi_arch.c", "linux_2mcu__periph_2spi__arch_8c.html", "linux_2mcu__periph_2spi__arch_8c" ],

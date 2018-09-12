@@ -18,15 +18,15 @@
 <area shape="rect" id="node31" href="$mf__ptu_8h.html#a0f4e02c4cf993d86c38de1bebc67fcd5" title="Data acquisition module for Meteo France PTU board. " alt="" coords="241,847,335,874"/>
 <area shape="rect" id="node32" href="$navdata_8h.html#a74e54d7069f2ba9c8f52b8be02c16d3f" title="Initialize the navdata board. " alt="" coords="238,797,338,823"/>
 <area shape="rect" id="node35" href="$opa__controller__fbw_8h.html#ae82caef1f98729ab67825cc71c6be66f" title="opa_controller_init" alt="" coords="219,949,357,975"/>
-<area shape="rect" id="node36" href="$stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a6ba4bebf68f7ff39f4569dfe3b1f2832" title="radio_control_impl_init" alt="" coords="205,999,371,1026"/>
-<area shape="rect" id="node37" href="$stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#ac3242f23ea541664f6fbc29edecbf199" title="radio_control_spektrum\l_try_bind" alt="" coords="201,1051,375,1092"/>
-<area shape="rect" id="node38" href="$rotorcraft__cam_8h.html#a9714f023c0b83d4d973e8758e053a6ce" title="rotorcraft_cam_init" alt="" coords="217,1117,359,1143"/>
-<area shape="rect" id="node39" href="$sbus__common_8h.html#a6dc25f3e917b3b706f27972cb0592272" title="Init function. " alt="" coords="217,1218,359,1245"/>
-<area shape="rect" id="node41" href="$group__spi.html#gafc9125c5764a6749703ae4f1303a16f3" title="Initialize all used slaves and unselect them. " alt="" coords="231,1167,345,1194"/>
-<area shape="rect" id="node42" href="$w5100_8h.html#a3a4ec6731e43710788d3e51f7749259c" title="w5100_init" alt="" coords="243,1269,333,1295"/>
+<area shape="rect" id="node36" href="$spektrum_8c.html#a6ba4bebf68f7ff39f4569dfe3b1f2832" title="Main Radio initialization. " alt="" coords="205,999,371,1026"/>
+<area shape="rect" id="node37" href="$rotorcraft__cam_8h.html#a9714f023c0b83d4d973e8758e053a6ce" title="rotorcraft_cam_init" alt="" coords="217,1050,359,1077"/>
+<area shape="rect" id="node38" href="$sbus__common_8h.html#a6dc25f3e917b3b706f27972cb0592272" title="Init function. " alt="" coords="217,1151,359,1178"/>
+<area shape="rect" id="node40" href="$spektrum_8c.html#afc04173093ee9c677d62c52a48f58b6f" title="This function puts the satellite in binding mode. " alt="" coords="229,1202,347,1229"/>
+<area shape="rect" id="node42" href="$group__spi.html#gafc9125c5764a6749703ae4f1303a16f3" title="Initialize all used slaves and unselect them. " alt="" coords="231,1101,345,1127"/>
+<area shape="rect" id="node43" href="$w5100_8h.html#a3a4ec6731e43710788d3e51f7749259c" title="w5100_init" alt="" coords="243,1253,333,1279"/>
 <area shape="rect" id="node4" href="$boards_2ardrone_2actuators_8h.html#a1e5faec000e4e1602bba080db2aec27c" title="actuators_ardrone_commit" alt="" coords="429,130,625,157"/>
 <area shape="rect" id="node7" href="$fixedwing_2main__ap_8h.html#a0913f0248fbbe56a5ec65e10e36c9f30" title="init_ap" alt="" coords="724,518,788,545"/>
-<area shape="rect" id="node9" href="$rotorcraft_2main__fbw_8h.html#a3719465edd56d2b587a6b340f29e4f90" title="Main initialization. " alt="" coords="487,239,567,266"/>
+<area shape="rect" id="node9" href="$rover_2main__ap_8h.html#a3719465edd56d2b587a6b340f29e4f90" title="Main initialization. " alt="" coords="487,239,567,266"/>
 <area shape="rect" id="node8" href="$sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="919,543,989,570"/>
 <area shape="rect" id="node11" href="$bluegiga__dl_8h.html#aeb085a7388c7ffe56ac4834ff104fb33" title="Init function. " alt="" coords="467,341,587,367"/>
 <area shape="rect" id="node13" href="$subsystems_2datalink_2superbitrf_8h.html#a7b9a2741375ca1dffc4f2e6a6d7a9307" title="Initialize the superbitrf. " alt="" coords="473,189,582,215"/>
@@ -37,7 +37,8 @@
 <area shape="rect" id="node27" href="$demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="927,873,981,899"/>
 <area shape="rect" id="node28" href="$nps__autopilot__rotorcraft_8c.html#a3348493e992edd2442581c1d09446b4b" title="nps_autopilot_init" alt="" coords="887,822,1021,849"/>
 <area shape="rect" id="node29" href="$nps__main__hitl_8c.html#a72ef549ee35deec8c017e83d9de38f66" title="nps_radio_and_autopilot_init" alt="" coords="1069,822,1273,849"/>
-<area shape="rect" id="node33" href="$navdata_8h.html#aded131295af4c39b10199bae2e560438" title="Update the navdata (event loop) " alt="" coords="464,771,591,798"/>
-<area shape="rect" id="node34" href="$imu__ardrone2_8h.html#a64ed917b58febc5528b575b56549c9a4" title="imu_ardrone2_init" alt="" coords="459,822,596,849"/>
-<area shape="rect" id="node40" href="$sbus_8c.html#a6ba4bebf68f7ff39f4569dfe3b1f2832" title="radio_control_impl_init" alt="" coords="445,1218,610,1245"/>
+<area shape="rect" id="node33" href="$navdata_8h.html#aded131295af4c39b10199bae2e560438" title="Update the navdata (event loop) " alt="" coords="464,822,591,849"/>
+<area shape="rect" id="node34" href="$imu__ardrone2_8h.html#a64ed917b58febc5528b575b56549c9a4" title="imu_ardrone2_init" alt="" coords="459,771,596,798"/>
+<area shape="rect" id="node39" href="$sbus_8c.html#a6ba4bebf68f7ff39f4569dfe3b1f2832" title="radio_control_impl_init" alt="" coords="445,1151,610,1178"/>
+<area shape="rect" id="node41" href="$spektrum_8c.html#aff8033ce4ec3eca45caafb45d2ba6760" title="spektrum_try_bind" alt="" coords="457,1202,598,1229"/>
 </map>

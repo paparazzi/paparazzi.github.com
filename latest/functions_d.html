@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -149,8 +149,14 @@ $(document).ready(function(){initNavTree('functions_d.html','');});
 <h3><a class="anchor" id="index_d"></a>- d -</h3><ul>
 <li>d
 : <a class="el" href="stabilization__attitude__common__float_8h.html#a40f32b9e96266f1712dc5954fbcb554e">FloatAttitudeGains</a>
-, <a class="el" href="rotorcraft_2guidance_2guidance__h_8h.html#a5e8feeb2984f9c49cb6efeed0438f7bc">HorizontalGuidanceGains</a>
+</li>
+<li>D
+: <a class="el" href="optical__flow__functions_8h.html#a9836254e93bfe3020cda26f2f6f2e9f2">GainsPID</a>
+</li>
+<li>d
+: <a class="el" href="rotorcraft_2guidance_2guidance__h_8h.html#a5e8feeb2984f9c49cb6efeed0438f7bc">HorizontalGuidanceGains</a>
 , <a class="el" href="stabilization__attitude__common__int_8h.html#a1f2a582f86594155e1586c6d75a15d8b">Int32AttitudeGains</a>
+, <a class="el" href="rover__guidance_8h.html#a1c6cd7480cfe9a75080ac440144d60ca">RoverGuidancePID</a>
 </li>
 <li>d1
 : <a class="el" href="actuators__xvert_8h.html#aecacc00ec469f3d26f8a936dd84809f6">EscData</a>
@@ -167,7 +173,15 @@ $(document).ready(function(){initNavTree('functions_d.html','');});
 : <a class="el" href="avi__isp__edge__enhancement__color__reduction__filter_8h.html#a212b74270782b2003520fb7be3cc11a6">avi_isp_edge_enhancement_color_reduction_filter_regs</a>
 </li>
 <li>d_err
-: <a class="el" href="optical__flow__landing_8h.html#aa374b55e9ee19912957b6104f2cc3606">OpticalFlowLanding</a>
+: <a class="el" href="optical__flow__functions_8h.html#a1124fcb0173d94c55215f9a9eafb4b96">GainsPID</a>
+, <a class="el" href="optical__flow__landing_8h.html#aa374b55e9ee19912957b6104f2cc3606">OpticalFlowLanding</a>
+, <a class="el" href="rover__guidance_8h.html#adde35fa525a4350fba81c5c848442c2c">RoverGuidancePID</a>
+</li>
+<li>dark_bins
+: <a class="el" href="bebop__ae__awb_8h.html#a5941b04676c2cb76370e3fcf6b308fc2">ae_setting_t</a>
+</li>
+<li>dark_ignore
+: <a class="el" href="bebop__ae__awb_8h.html#a9bacb8153bff3643cd41afbb0142dc18">ae_setting_t</a>
 </li>
 <li>dat
 : <a class="el" href="lpcI2C_8h.html#aa40d0f28fbbe4ee1e1472c5807eaedee">i2cRegs_t</a>
@@ -301,6 +315,9 @@ $(document).ready(function(){initNavTree('functions_d.html','');});
 <li>dead_pixel_correction
 : <a class="el" href="libisp_8h.html#ac78fea27472d197b123ca3a5b88c4ab4">libisp_config</a>
 </li>
+<li>decrypt_err
+: <a class="el" href="gec_8h.html#ab11c6ae94e34c4f3d11e443381a98038">gec_sts_ctx</a>
+</li>
 <li>defVectAddr
 : <a class="el" href="lpcVIC_8h.html#ace032e62a496d64cfc492d5c66ca93ee">vicRegs_t</a>
 </li>
@@ -318,6 +335,9 @@ $(document).ready(function(){initNavTree('functions_d.html','');});
 </li>
 <li>denoising
 : <a class="el" href="libisp_8h.html#ac9101121ff519dc1de32a58126b71f26">libisp_config</a>
+</li>
+<li>derotate_attitude
+: <a class="el" href="pano__unwrap_8h.html#acc43057526de241882ea09b796a1f69a">pano_unwrap_t</a>
 </li>
 <li>derotation
 : <a class="el" href="opticflow__calculator_8h.html#a69eee269a375bf38f5165e3babbacb37">opticflow_t</a>
@@ -365,6 +385,7 @@ $(document).ready(function(){initNavTree('functions_d.html','');});
 , <a class="el" href="intermcu_8h.html#a08873c5c21b05855f4baed53e4e56608">intermcu_t</a>
 , <a class="el" href="laser__range__array_8c.html#a2ddd27d910d26f1e73f1bb877dff9086">laser_range_array_t</a>
 , <a class="el" href="mag__pitot__uart_8h.html#a5a42d4a0b980e53173638d56daef7be0">mag_pitot_t</a>
+, <a class="el" href="pipe_8h.html#a8fd2044298a78756dd4ae169b4c36bcd">pipe_periph</a>
 , <a class="el" href="sdlogger__spi__direct_8h.html#a42d14ead579c74bd724f8f1cff4a0aa7">sdlogger_spi_periph</a>
 , <a class="el" href="spi__slave__hs__arch_8h.html#a1b969f5c928051949eaaebb15050dacc">spi_slave_hs</a>
 , <a class="el" href="stereocam_8h.html#ab377e6fcaf5f92e2a5386a7c31368480">stereocam_t</a>
@@ -389,15 +410,20 @@ $(document).ready(function(){initNavTree('functions_d.html','');});
 <li>dgain_adaptive
 : <a class="el" href="optical__flow__landing_8h.html#a05f97bef53de779bbecbe98d5b33762f">OpticalFlowLanding</a>
 </li>
+<li>Dhane_k
+: <a class="el" href="video__device_8h.html#a66c88f61b22fc09253795454f89b9919">camera_intrinsics_t</a>
+</li>
 <li>diff_pressure
-: <a class="el" href="airspeed__ms45xx__i2c_8h.html#a24cbba56fa2ae80156cc3909c350d212">AirspeedMs45xx</a>
-, <a class="el" href="meteo__stick_8h.html#a8df815c163b1d03862dbd31f6bb051b3">MeteoStick</a>
+: <a class="el" href="meteo__stick_8h.html#a8df815c163b1d03862dbd31f6bb051b3">MeteoStick</a>
 </li>
 <li>differential
 : <a class="el" href="air__data_8h.html#ab4f039d8074741d0e8aaa7ab449daee8">AirData</a>
 </li>
 <li>diffSoln
 : <a class="el" href="gps_8h.html#a809675aa0ebb803cfb7afe99c314e0a3">GpsRelposNED</a>
+</li>
+<li>dim
+: <a class="el" href="jevois_8c.html#a94e5f3238d9b9eed8b8a82929d79e44b">jevois_msg_t</a>
 </li>
 <li>dir0
 : <a class="el" href="lpcGPIO_8h.html#a543e8f1df6739d7100544ab4bfbbc536">gpioRegs_t</a>
@@ -415,6 +441,9 @@ $(document).ready(function(){initNavTree('functions_d.html','');});
 : <a class="el" href="nav__survey__polygon__gvf_8h.html#a69e31be4117d9247a8a2534b94ad6ce5">gvf_SurveyPolyAdv</a>
 , <a class="el" href="nav__survey__polygon_8h.html#abc7faf51467c32d66a09d45c374b4157">SurveyPolyAdv</a>
 </li>
+<li>disable_wind
+: <a class="el" href="ins__mekf__wind_8h.html#a9ea40162dba5314667e02814fb3f13db">ins_mekf_wind_parameters</a>
+</li>
 <li>displacement_coeffs
 : <a class="el" href="avi__isp__chromatic__aberration_8h.html#aca0b1067695e87f7e86a66d45fe8a189">avi_isp_chromatic_aberration_regs</a>
 </li>
@@ -423,6 +452,12 @@ $(document).ready(function(){initNavTree('functions_d.html','');});
 </li>
 <li>dist
 : <a class="el" href="teraranger__one_8h.html#af01fe02032b123a43179c983ff142d44">TeraRanger</a>
+</li>
+<li>dist2_to_home
+: <a class="el" href="rover_2navigation_8h.html#a5aece1cc11b94def8af552f40daa6971">RoverNavigation</a>
+</li>
+<li>dist2_to_wp
+: <a class="el" href="nav__rover__base_8h.html#aea2f432f3ac689b9cb868b9c04834db3">RoverNavGoto</a>
 </li>
 <li>dist_from_center
 : <a class="el" href="nav__spiral_8h.html#aede25bcfa3a0ea79d4f2aeb164c74923">NavSpiral</a>
@@ -457,6 +492,7 @@ $(document).ready(function(){initNavTree('functions_d.html','');});
 </li>
 <li>divergence
 : <a class="el" href="linear__flow__fit_8h.html#a1d225f8174b9eacfb26a6305f0b40bf5">linear_flow_fit_info</a>
+, <a class="el" href="optical__flow__functions_8h.html#a38c2573aaeb4bdcf3961f57f82fa5ce2">OpticalFlowHover</a>
 , <a class="el" href="optical__flow__landing_8h.html#aa687bc83e2cb282b099fa59f6589c11f">OpticalFlowLanding</a>
 , <a class="el" href="inter__thread__data_8h.html#a620f8c554d6d1507c4ec7e75070b37f3">opticflow_result_t</a>
 </li>
@@ -503,6 +539,9 @@ $(document).ready(function(){initNavTree('functions_d.html','');});
 <li>doy
 : <a class="el" href="lpcRTC_8h.html#adce208b9e6a1554b86f694f123067005">rtcRegs_t</a>
 </li>
+<li>dphi
+: <a class="el" href="pano__unwrap_8c.html#af1b1dc166b4b7bdddb55b1bacc3b66b7">LUT_t</a>
+</li>
 <li>dr
 : <a class="el" href="lpcSPI_8h.html#aae39e6b64fba8e0e155b333310edcbf2">spiRegs_t</a>
 , <a class="el" href="lpcSPI_8h.html#ad1cadfbbb2be80d7657986ba83a4b933">sspRegs_t</a>
@@ -543,7 +582,11 @@ $(document).ready(function(){initNavTree('functions_d.html','');});
 : <a class="el" href="group__spi.html#a815b95697425c9e24fb81e83f4a13385">spi_transaction</a>
 </li>
 <li>dt
-: <a class="el" href="UKF__Wind__Estimator_8h.html#a779a1c1400e34a8917355a2da5ff827d">ukf_params_tag</a>
+: <a class="el" href="discrete__ekf_8h.html#a01b8b9d48eb75686d9529e3bf3bd775d">discrete_ekf</a>
+, <a class="el" href="UKF__Wind__Estimator_8h.html#a779a1c1400e34a8917355a2da5ff827d">ukf_params_tag</a>
+</li>
+<li>dtheta
+: <a class="el" href="pano__unwrap_8c.html#adf68803b07ec81b59d070471b019faa9">LUT_t</a>
 </li>
 <li>du
 : <a class="el" href="structIndiController__int.html#a8d97e7d0eab949a6053efbf0ca4cd950">IndiController_int</a>
@@ -578,7 +621,7 @@ $(document).ready(function(){initNavTree('functions_d.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Nov 8 2017 10:03:13 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:04:30 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

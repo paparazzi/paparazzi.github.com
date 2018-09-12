@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -205,37 +205,49 @@ Functions</h2></td></tr>
 <td class="fieldname">
 buffer[<a class="el" href="sbus__common_8h.html#ab8f86c137438a99b0143cc90312ee571">SBUS_BUF_LENGTH</a>]</td>
 <td class="fielddoc">
-input buffer </td></tr>
+Input buffer. </td></tr>
 <tr><td class="fieldtype">
 <a class="anchor" id="aed20f5edacb96e4a94728d8e9b1adbb5"></a>bool</td>
 <td class="fieldname">
 frame_available</td>
 <td class="fielddoc">
-new frame available </td></tr>
+A data frame is available. </td></tr>
 <tr><td class="fieldtype">
 <a class="anchor" id="a3e2b363f525e59ca90976968922e7418"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
 idx</td>
 <td class="fielddoc">
-input index </td></tr>
+Input index. </td></tr>
 <tr><td class="fieldtype">
 <a class="anchor" id="a1f2d11e10220529eef1800f9e4c85fc6"></a><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
 <td class="fieldname">
 ppm[<a class="el" href="sbus__common_8h.html#afb790236a604cd21678b157b429e16fa">SBUS_NB_CHANNEL</a>]</td>
 <td class="fielddoc">
-decoded and converted values </td></tr>
+Decoded and converted to ppm values. </td></tr>
 <tr><td class="fieldtype">
 <a class="anchor" id="a360c73641ee425943c337f2862b4690a"></a><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
 <td class="fieldname">
 pulses[<a class="el" href="sbus__common_8h.html#afb790236a604cd21678b157b429e16fa">SBUS_NB_CHANNEL</a>]</td>
 <td class="fielddoc">
-decoded values </td></tr>
+Decoded values. </td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a9d0086da907b3573a0b6694319b2fe56"></a>bool</td>
+<td class="fieldname">
+rc_failsafe</td>
+<td class="fielddoc">
+Receiver set to in failsafe mode. </td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a69739eacc3b10dd9881e82bacf2770ba"></a>bool</td>
+<td class="fieldname">
+rc_lost</td>
+<td class="fielddoc">
+RC reception is lost. </td></tr>
 <tr><td class="fieldtype">
 <a class="anchor" id="a783fff7c5a213bdb9443689a767ea062"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
 status</td>
 <td class="fielddoc">
-decoder state machine status </td></tr>
+Decoder state-machine status. </td></tr>
 </table>
 
 </div>
@@ -273,7 +285,7 @@ decoder state machine status </td></tr>
 
 <p>Event macro with handler callback. </p>
 
-<p>Definition at line <a class="el" href="sbus__common_8h_source.html#l00108">108</a> of file <a class="el" href="sbus__common_8h_source.html">sbus_common.h</a>.</p>
+<p>Definition at line <a class="el" href="sbus__common_8h_source.html#l00110">110</a> of file <a class="el" href="sbus__common_8h_source.html">sbus_common.h</a>.</p>
 
 </div>
 </div>
@@ -332,7 +344,7 @@ decoder state machine status </td></tr>
 
 <p>Definition at line <a class="el" href="sbus__common_8h_source.html#l00062">62</a> of file <a class="el" href="sbus__common_8h_source.html">sbus_common.h</a>.</p>
 
-<p>Referenced by <a class="el" href="sbus__common_8c_source.html#l00117">sbus_common_decode_event()</a>.</p>
+<p>Referenced by <a class="el" href="sbus__common_8c_source.html#l00127">sbus_common_decode_event()</a>.</p>
 
 </div>
 </div>
@@ -348,7 +360,7 @@ decoder state machine status </td></tr>
 
 <p>Definition at line <a class="el" href="sbus__common_8h_source.html#l00063">63</a> of file <a class="el" href="sbus__common_8h_source.html">sbus_common.h</a>.</p>
 
-<p>Referenced by <a class="el" href="sbus__common_8c_source.html#l00083">decode_sbus_buffer()</a>, and <a class="el" href="sbus_8c_source.html#l00045">send_sbus()</a>.</p>
+<p>Referenced by <a class="el" href="sbus__common_8c_source.html#l00087">decode_sbus_buffer()</a>, and <a class="el" href="sbus_8c_source.html#l00045">send_sbus()</a>.</p>
 
 </div>
 </div>
@@ -418,9 +430,9 @@ decoder state machine status </td></tr>
 
 <p>Decoding event function. </p>
 
-<p>Definition at line <a class="el" href="sbus__common_8c_source.html#l00117">117</a> of file <a class="el" href="sbus__common_8c_source.html">sbus_common.c</a>.</p>
+<p>Definition at line <a class="el" href="sbus__common_8c_source.html#l00127">127</a> of file <a class="el" href="sbus__common_8c_source.html">sbus_common.c</a>.</p>
 
-<p>References <a class="el" href="sbus__common_8h_source.html#l00083">Sbus::buffer</a>, <a class="el" href="sbus__common_8c_source.html#l00083">decode_sbus_buffer()</a>, <a class="el" href="sbus__common_8h_source.html#l00082">Sbus::frame_available</a>, <a class="el" href="sbus__common_8h_source.html#l00084">Sbus::idx</a>, <a class="el" href="sbus__common_8h_source.html#l00081">Sbus::ppm</a>, <a class="el" href="sbus__common_8h_source.html#l00080">Sbus::pulses</a>, <a class="el" href="sbus__common_8h_source.html#l00062">SBUS_BUF_LENGTH</a>, <a class="el" href="sbus__common_8c_source.html#l00035">SBUS_END_BYTE_0</a>, <a class="el" href="sbus__common_8c_source.html#l00036">SBUS_END_BYTE_1</a>, <a class="el" href="sbus__common_8c_source.html#l00037">SBUS_END_BYTE_2</a>, <a class="el" href="sbus__common_8c_source.html#l00038">SBUS_END_BYTE_3</a>, <a class="el" href="sbus__common_8c_source.html#l00039">SBUS_END_BYTE_4</a>, <a class="el" href="sbus__common_8c_source.html#l00040">SBUS_END_BYTE_5</a>, <a class="el" href="sbus__common_8c_source.html#l00034">SBUS_START_BYTE</a>, <a class="el" href="sbus__common_8c_source.html#l00047">SBUS_STATUS_GOT_START</a>, <a class="el" href="sbus__common_8c_source.html#l00046">SBUS_STATUS_UNINIT</a>, <a class="el" href="sbus__common_8h_source.html#l00085">Sbus::status</a>, <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00323">uart_char_available()</a>, and <a class="el" href="chibios_2mcu__periph_2uart__arch_8c_source.html#l00840">uart_getch()</a>.</p>
+<p>References <a class="el" href="sbus__common_8h_source.html#l00085">Sbus::buffer</a>, <a class="el" href="sbus__common_8c_source.html#l00087">decode_sbus_buffer()</a>, <a class="el" href="sbus__common_8h_source.html#l00082">Sbus::frame_available</a>, <a class="el" href="sbus__common_8h_source.html#l00086">Sbus::idx</a>, <a class="el" href="sbus__common_8h_source.html#l00081">Sbus::ppm</a>, <a class="el" href="sbus__common_8h_source.html#l00080">Sbus::pulses</a>, <a class="el" href="sbus__common_8h_source.html#l00083">Sbus::rc_failsafe</a>, <a class="el" href="sbus__common_8h_source.html#l00084">Sbus::rc_lost</a>, <a class="el" href="sbus__common_8h_source.html#l00062">SBUS_BUF_LENGTH</a>, <a class="el" href="sbus__common_8c_source.html#l00036">SBUS_END_BYTE_0</a>, <a class="el" href="sbus__common_8c_source.html#l00037">SBUS_END_BYTE_1</a>, <a class="el" href="sbus__common_8c_source.html#l00038">SBUS_END_BYTE_2</a>, <a class="el" href="sbus__common_8c_source.html#l00039">SBUS_END_BYTE_3</a>, <a class="el" href="sbus__common_8c_source.html#l00040">SBUS_END_BYTE_4</a>, <a class="el" href="sbus__common_8c_source.html#l00041">SBUS_END_BYTE_5</a>, <a class="el" href="sbus__common_8c_source.html#l00035">SBUS_START_BYTE</a>, <a class="el" href="sbus__common_8c_source.html#l00050">SBUS_STATUS_GOT_START</a>, <a class="el" href="sbus__common_8c_source.html#l00049">SBUS_STATUS_UNINIT</a>, <a class="el" href="sbus__common_8h_source.html#l00087">Sbus::status</a>, <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00324">uart_char_available()</a>, and <a class="el" href="chibios_2mcu__periph_2uart__arch_8c_source.html#l00840">uart_getch()</a>.</p>
 
 <p>Referenced by <a class="el" href="sbus_8c_source.html#l00067">sbus_decode_event()</a>, and <a class="el" href="sbus__dual_8c_source.html#l00074">sbus_dual_decode_event()</a>.</p>
 
@@ -431,7 +443,7 @@ decoder state machine status </td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="sbus__common_8h_ae8a17057cacb6e3b645d16793db3e21f_cgraph.png" border="0" usemap="#sbus__common_8h_ae8a17057cacb6e3b645d16793db3e21f_cgraph" alt=""/></div>
 <map name="sbus__common_8h_ae8a17057cacb6e3b645d16793db3e21f_cgraph" id="sbus__common_8h_ae8a17057cacb6e3b645d16793db3e21f_cgraph">
-<area shape="rect" id="node2" href="sbus__common_8c.html#a4709831177d7353573127a61a5605b36" title="Decode the raw buffer. " alt="" coords="224,5,375,32"/><area shape="rect" id="node3" href="linux_2mcu__periph_2uart__arch_8c.html#abd0dcae4715bc91bdf3369785a9b6c87" title="Check UART for available chars in receive buffer. " alt="" coords="226,56,373,83"/><area shape="rect" id="node4" href="chibios_2mcu__periph_2uart__arch_8c.html#adb9a60ec94a31a08e6454ccf64f24039" title="uart_getch" alt="" coords="254,107,345,133"/></map>
+<area shape="rect" id="node2" href="sbus__common_8c.html#ae438287533911004cc6f3ff98b065df7" title="Decode the raw buffer. " alt="" coords="224,5,375,32"/><area shape="rect" id="node3" href="linux_2mcu__periph_2uart__arch_8c.html#abd0dcae4715bc91bdf3369785a9b6c87" title="Check UART for available chars in receive buffer. " alt="" coords="226,56,373,83"/><area shape="rect" id="node4" href="chibios_2mcu__periph_2uart__arch_8c.html#adb9a60ec94a31a08e6454ccf64f24039" title="uart_getch" alt="" coords="254,107,345,133"/></map>
 </div>
 </p>
 
@@ -486,9 +498,9 @@ decoder state machine status </td></tr>
 
 <p>Init function. </p>
 
-<p>Definition at line <a class="el" href="sbus__common_8c_source.html#l00061">61</a> of file <a class="el" href="sbus__common_8c_source.html">sbus_common.c</a>.</p>
+<p>Definition at line <a class="el" href="sbus__common_8c_source.html#l00063">63</a> of file <a class="el" href="sbus__common_8c_source.html">sbus_common.c</a>.</p>
 
-<p>References <a class="el" href="chibios_2mcu__periph_2uart__arch_8h_source.html#l00047">B100000</a>, <a class="el" href="sbus__common_8h_source.html#l00082">Sbus::frame_available</a>, <a class="el" href="chibios_2mcu__periph_2gpio__arch_8c_source.html#l00033">gpio_setup_output()</a>, <a class="el" href="sbus__common_8c_source.html#l00057">RC_SET_POLARITY</a>, <a class="el" href="sbus__common_8c_source.html#l00046">SBUS_STATUS_UNINIT</a>, <a class="el" href="sbus__common_8h_source.html#l00085">Sbus::status</a>, <a class="el" href="uart_8c_source.html#l00299">uart_periph_invert_data_logic()</a>, <a class="el" href="chibios_2mcu__periph_2uart__arch_8c_source.html#l00856">uart_periph_set_baudrate()</a>, <a class="el" href="chibios_2mcu__periph_2uart__arch_8c_source.html#l00885">uart_periph_set_bits_stop_parity()</a>, <a class="el" href="serial__port_8c_source.html#l00050">UBITS_8</a>, <a class="el" href="serial__port_8c_source.html#l00057">UPARITY_EVEN</a>, and <a class="el" href="serial__port_8c_source.html#l00053">USTOP_2</a>.</p>
+<p>References <a class="el" href="chibios_2mcu__periph_2uart__arch_8h_source.html#l00047">B100000</a>, <a class="el" href="sbus__common_8h_source.html#l00082">Sbus::frame_available</a>, <a class="el" href="chibios_2mcu__periph_2gpio__arch_8c_source.html#l00033">gpio_setup_output()</a>, <a class="el" href="sbus__common_8h_source.html#l00083">Sbus::rc_failsafe</a>, <a class="el" href="sbus__common_8h_source.html#l00084">Sbus::rc_lost</a>, <a class="el" href="sbus__common_8c_source.html#l00060">RC_SET_POLARITY</a>, <a class="el" href="sbus__common_8c_source.html#l00049">SBUS_STATUS_UNINIT</a>, <a class="el" href="sbus__common_8h_source.html#l00087">Sbus::status</a>, <a class="el" href="uart_8c_source.html#l00299">uart_periph_invert_data_logic()</a>, <a class="el" href="chibios_2mcu__periph_2uart__arch_8c_source.html#l00856">uart_periph_set_baudrate()</a>, <a class="el" href="chibios_2mcu__periph_2uart__arch_8c_source.html#l00885">uart_periph_set_bits_stop_parity()</a>, <a class="el" href="serial__port_8c_source.html#l00050">UBITS_8</a>, <a class="el" href="serial__port_8c_source.html#l00057">UPARITY_EVEN</a>, and <a class="el" href="serial__port_8c_source.html#l00053">USTOP_2</a>.</p>
 
 <p>Referenced by <a class="el" href="sbus_8c_source.html#l00054">radio_control_impl_init()</a>.</p>
 
@@ -522,7 +534,7 @@ decoder state machine status </td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_a146ed466020daad33793c9994e8ab3e.html">radio_control</a></li><li class="navelem"><a class="el" href="sbus__common_8h.html">sbus_common.h</a></li>
-    <li class="footer">Generated on Wed Nov 8 2017 10:02:43 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:03:53 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -123,6 +123,7 @@ var searchData=
   ['sht2_5ftrig_5ftemp',['SHT2_TRIG_TEMP',['../humid__sht__i2c_8h.html#a7c65edb490a688e3cd17e2c308b9d67aa6e3d448b229697a765e456eecac64522',1,'humid_sht_i2c.h']]],
   ['sht2_5funinit',['SHT2_UNINIT',['../humid__sht__i2c_8h.html#a7c65edb490a688e3cd17e2c308b9d67aa73cc5817786cf197668ba47b5e1b43f5',1,'humid_sht_i2c.h']]],
   ['shunt_5fresistance',['SHUNT_RESISTANCE',['../esc32_8h.html#a7d7ff77147834c43663d3dfd1f263610a5b79720871eafedcab857d3a23811dca',1,'esc32.h']]],
+  ['sig',['SIG',['../gec_8h.html#a6d13a1c88cfb3c15be159f325f869404abed797aac9b7d073c8459e0d95496ba9',1,'gec.h']]],
   ['sin',['SIN',['../gvf_8h.html#a5e61057ce8c51b9efe7810e885a5e608a55720cf0d1ebf3d6f0eac12f2dffbfa2',1,'gvf.h']]],
   ['sip6_5fpwm0_5fstart',['SiP6_PWM0_START',['../boards_2swing_2actuators_8c.html#ac36f475ca5b446f4fde4c9b90bec77c8a7203056b93bf0d31f07fc978eb015579',1,'actuators.c']]],
   ['sip6_5fpwm1_5fstart',['SiP6_PWM1_START',['../boards_2swing_2actuators_8c.html#ac36f475ca5b446f4fde4c9b90bec77c8a089cac2ce20b18e99eb10844b484b8a3',1,'actuators.c']]],

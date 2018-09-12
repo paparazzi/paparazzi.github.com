@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -269,6 +269,15 @@ $(document).ready(function(){initNavTree('globals_w.html','');});
 <li>wait_for_img()
 : <a class="el" href="chdk__pipe_8c.html#adb412201e90d78c603b34f212f5a0b13">chdk_pipe.c</a>
 </li>
+<li>WAIT_MSG1
+: <a class="el" href="gec_8h.html#a17026bec7f574bca918d5f81939429bcaea009cc7d311ade3e8068c54e8e0eac3">gec.h</a>
+</li>
+<li>WAIT_MSG2
+: <a class="el" href="gec_8h.html#a17026bec7f574bca918d5f81939429bca2276a5b1ccde8466b9071becdf91408b">gec.h</a>
+</li>
+<li>WAIT_MSG3
+: <a class="el" href="gec_8h.html#a17026bec7f574bca918d5f81939429bca246e0d2e5190c3ca8ecec380199df6c5">gec.h</a>
+</li>
 <li>waiting_for_reply
 : <a class="el" href="gsm_8c.html#a4745d89a1ef0868ade7aca9ed2808338">gsm.c</a>
 </li>
@@ -300,8 +309,8 @@ $(document).ready(function(){initNavTree('globals_w.html','');});
 , <a class="el" href="subsystems_2navigation_2waypoints_8h.html#ab6dc3af2d184a91218a1fe7f02b858bc">waypoints.h</a>
 </li>
 <li>waypoint_globalize()
-: <a class="el" href="subsystems_2navigation_2waypoints_8c.html#a10acece8582506367e9e9df3694bf31b">waypoints.c</a>
-, <a class="el" href="subsystems_2navigation_2waypoints_8h.html#a10acece8582506367e9e9df3694bf31b">waypoints.h</a>
+: <a class="el" href="subsystems_2navigation_2waypoints_8h.html#a10acece8582506367e9e9df3694bf31b">waypoints.h</a>
+, <a class="el" href="subsystems_2navigation_2waypoints_8c.html#a10acece8582506367e9e9df3694bf31b">waypoints.c</a>
 </li>
 <li>waypoint_is_global()
 : <a class="el" href="subsystems_2navigation_2waypoints_8c.html#a4f584367219ec09db0e1df24c85e7a1b">waypoints.c</a>
@@ -385,8 +394,8 @@ $(document).ready(function(){initNavTree('globals_w.html','');});
 , <a class="el" href="subsystems_2navigation_2waypoints_8h.html#a2c2d759f6328c40f66c4cc162da266bb">waypoints.h</a>
 </li>
 <li>WaypointX
-: <a class="el" href="common__nav_8h.html#a2d51bcd8e90e2dea91009f895a452a22">common_nav.h</a>
-, <a class="el" href="subsystems_2navigation_2waypoints_8h.html#a2d51bcd8e90e2dea91009f895a452a22">waypoints.h</a>
+: <a class="el" href="subsystems_2navigation_2waypoints_8h.html#a2d51bcd8e90e2dea91009f895a452a22">waypoints.h</a>
+, <a class="el" href="common__nav_8h.html#a2d51bcd8e90e2dea91009f895a452a22">common_nav.h</a>
 </li>
 <li>WaypointY
 : <a class="el" href="common__nav_8h.html#a983349c9ccc3f390fafe929d3c9fdd16">common_nav.h</a>
@@ -465,6 +474,9 @@ $(document).ready(function(){initNavTree('globals_w.html','');});
 <li>WGS84_H
 : <a class="el" href="group__math__geodetic__wgs84.html#ga308d77871a261ab445d3d5b1501e35eb">pprz_geodetic_wgs84.h</a>
 </li>
+<li>WHITELIST_LEN
+: <a class="el" href="gec__dl_8h.html#aef0f56c8f498b45106bcc3280e391397">gec_dl.h</a>
+</li>
 <li>wind_estimate
 : <a class="el" href="guidance__hybrid_8c.html#ae3782f9a7e92aa5c8f9e3aa86f64cc19">guidance_hybrid.c</a>
 </li>
@@ -472,8 +484,8 @@ $(document).ready(function(){initNavTree('globals_w.html','');});
 : <a class="el" href="guidance__hybrid_8c.html#ab507737a4a37f88df7b25bf7f923ad66">guidance_hybrid.c</a>
 </li>
 <li>wind_estimator
-: <a class="el" href="wind__estimator_8c.html#aaed8a383171cc0d9cd357c48fd73177c">wind_estimator.c</a>
-, <a class="el" href="wind__estimator_8h.html#aaed8a383171cc0d9cd357c48fd73177c">wind_estimator.h</a>
+: <a class="el" href="wind__estimator_8h.html#aaed8a383171cc0d9cd357c48fd73177c">wind_estimator.h</a>
+, <a class="el" href="wind__estimator_8c.html#aaed8a383171cc0d9cd357c48fd73177c">wind_estimator.c</a>
 </li>
 <li>wind_estimator_event()
 : <a class="el" href="wind__estimator_8h.html#af175c7aace58699751294cb06ccfa87b">wind_estimator.h</a>
@@ -496,8 +508,8 @@ $(document).ready(function(){initNavTree('globals_w.html','');});
 , <a class="el" href="wind__estimator_8h.html#a522a42367833ed2b89d93db1a65c60a0">wind_estimator.h</a>
 </li>
 <li>wind_estimator_Set_Q_WIND()
-: <a class="el" href="wind__estimator_8c.html#a1929777051168286cce7032efbbe3162">wind_estimator.c</a>
-, <a class="el" href="wind__estimator_8h.html#a1929777051168286cce7032efbbe3162">wind_estimator.h</a>
+: <a class="el" href="wind__estimator_8h.html#a1929777051168286cce7032efbbe3162">wind_estimator.h</a>
+, <a class="el" href="wind__estimator_8c.html#a1929777051168286cce7032efbbe3162">wind_estimator.c</a>
 </li>
 <li>wind_estimator_Set_R_AOA()
 : <a class="el" href="wind__estimator_8c.html#a2c5c69e32a4d868eeb83d3e0febfc963">wind_estimator.c</a>
@@ -512,8 +524,8 @@ $(document).ready(function(){initNavTree('globals_w.html','');});
 , <a class="el" href="wind__estimator_8h.html#a6d738b207e828d54537e1ea30e75dbec">wind_estimator.h</a>
 </li>
 <li>wind_estimator_Set_R_VA()
-: <a class="el" href="wind__estimator_8h.html#a76abfd1db477f1492273deec4c8233ad">wind_estimator.h</a>
-, <a class="el" href="wind__estimator_8c.html#a76abfd1db477f1492273deec4c8233ad">wind_estimator.c</a>
+: <a class="el" href="wind__estimator_8c.html#a76abfd1db477f1492273deec4c8233ad">wind_estimator.c</a>
+, <a class="el" href="wind__estimator_8h.html#a76abfd1db477f1492273deec4c8233ad">wind_estimator.h</a>
 </li>
 <li>wind_estimator_step()
 : <a class="el" href="wind__estimator_8c.html#a9625948d6ba7c62cb2603ce28bfb5d56">wind_estimator.c</a>
@@ -563,8 +575,8 @@ $(document).ready(function(){initNavTree('globals_w.html','');});
 : <a class="el" href="glide__wing__lock_8c.html#aad3170b4005943ff924e12ac87530c4f">glide_wing_lock.c</a>
 </li>
 <li>wls_alloc()
-: <a class="el" href="wls__alloc_8c.html#ab835ef4e4c3f872177ddb0dbc4e9eb45">wls_alloc.c</a>
-, <a class="el" href="wls__alloc_8h.html#a05bd41ae464753af8d7647e4543dc47b">wls_alloc.h</a>
+: <a class="el" href="wls__alloc_8h.html#a05bd41ae464753af8d7647e4543dc47b">wls_alloc.h</a>
+, <a class="el" href="wls__alloc_8c.html#ab835ef4e4c3f872177ddb0dbc4e9eb45">wls_alloc.c</a>
 </li>
 <li>WLS_VERBOSE
 : <a class="el" href="wls__alloc_8c.html#a29c662bf90acd6a86c4c37c670018e2f">wls_alloc.c</a>
@@ -632,13 +644,16 @@ $(document).ready(function(){initNavTree('globals_w.html','');});
 : <a class="el" href="humid__pcap01_8c.html#ab2cb1ad8c696c29efe17a06b6c53d01f">humid_pcap01.c</a>
 , <a class="el" href="humid__pcap01_8h.html#ab2cb1ad8c696c29efe17a06b6c53d01f">humid_pcap01.h</a>
 </li>
+<li>Wv
+: <a class="el" href="stabilization__indi_8c.html#a135981fcec0a59310c170cfdb95e491d">stabilization_indi.c</a>
+</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Nov 8 2017 10:03:16 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:04:33 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

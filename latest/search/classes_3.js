@@ -3,6 +3,7 @@ var searchData=
   ['calibration_5fparams',['Calibration_params',['../meteo__stick__calib_8h.html#structCalibration__params',1,'']]],
   ['calibrationpoint',['CalibrationPoint',['../meteo__stick__calib_8c.html#structCalibrationPoint',1,'']]],
   ['camera_5fframe_5ft',['camera_frame_t',['../cv__georeference_8h.html#structcamera__frame__t',1,'']]],
+  ['camera_5fintrinsics_5ft',['camera_intrinsics_t',['../video__device_8h.html#structcamera__intrinsics__t',1,'']]],
   ['camerapayload',['CameraPayload',['../copilot_8h.html#structCameraPayload',1,'']]],
   ['camerasnapshot',['CameraSnapshot',['../copilot_8h.html#structCameraSnapshot',1,'']]],
   ['can_5faccept_5fregs_5ft',['can_accept_Regs_t',['../lpcCAN_8h.html#structcan__accept__Regs__t',1,'']]],
@@ -23,7 +24,7 @@ var searchData=
   ['contour_5fthreshold',['contour_threshold',['../opencv__contour_8h.html#structcontour__threshold',1,'']]],
   ['copilotstatus',['CopilotStatus',['../copilot_8h.html#structCopilotStatus',1,'']]],
   ['crop_5ft',['crop_t',['../image_8h.html#structcrop__t',1,'']]],
-  ['ctrl_5fmodule_5fdemo_5fstruct',['ctrl_module_demo_struct',['../ctrl__module__demo_8c.html#structctrl__module__demo__struct',1,'']]],
+  ['ctrl_5fmodule_5fdemo_5fstruct',['ctrl_module_demo_struct',['../ctrl__module__outerloop__demo_8c.html#structctrl__module__demo__struct',1,'']]],
   ['curve_5ft',['curve_t',['../throttle__curve_8h.html#structcurve__t',1,'']]],
   ['cv_5fasync',['cv_async',['../cv_8h.html#structcv__async',1,'']]],
   ['cyrf6936',['Cyrf6936',['../cyrf6936_8h.html#structCyrf6936',1,'']]]

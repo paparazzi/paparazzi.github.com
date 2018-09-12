@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -255,7 +255,7 @@ $(document).ready(function(){initNavTree('vms__ecu__demo_8c_source.html','');});
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  chRegSetThreadName(<span class="stringliteral">&quot;receiver&quot;</span>);</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  chEvtRegister(&amp;cip-&gt;<a class="code" href="vms__ecu__demo_8c.html#a8de216fbf165bdfa084acb58f85cae19">canp</a>-&gt;rxfull_event, &amp;el, 0);</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  <span class="keywordflow">while</span>(!chThdShouldTerminateX()) {</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keywordflow">if</span> (chEvtWaitAnyTimeout(ALL_EVENTS, MS2ST(100)) == 0)</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keywordflow">if</span> (chEvtWaitAnyTimeout(ALL_EVENTS, TIME_MS2I(100)) == 0)</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;      <span class="keywordflow">continue</span>;</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="keywordflow">while</span> (canReceive(cip-&gt;<a class="code" href="vms__ecu__demo_8c.html#a8de216fbf165bdfa084acb58f85cae19">canp</a>, CAN_ANY_MAILBOX,</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        &amp;rxmsg, TIME_IMMEDIATE) == MSG_OK) {</div>
@@ -285,8 +285,8 @@ $(document).ready(function(){initNavTree('vms__ecu__demo_8c_source.html','');});
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  txmsg.data32[1] = 0x00FF00FF;</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;</div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  <span class="keywordflow">while</span> (!chThdShouldTerminateX()) {</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    <span class="comment">//canTransmit(&amp;CAND1, CAN_ANY_MAILBOX, &amp;txmsg, MS2ST(100));</span></div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    canTransmit(&amp;CAND2, CAN_ANY_MAILBOX, &amp;txmsg, MS2ST(100));</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    <span class="comment">//canTransmit(&amp;CAND1, CAN_ANY_MAILBOX, &amp;txmsg, TIME_MS2I(100));</span></div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    canTransmit(&amp;CAND2, CAN_ANY_MAILBOX, &amp;txmsg, TIME_MS2I(100));</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    chThdSleepMilliseconds(500);</div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;  }</div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;}</div>
@@ -440,7 +440,7 @@ $(document).ready(function(){initNavTree('vms__ecu__demo_8c_source.html','');});
 <div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;  dacPutChannelX(&amp;DACD2,1,<a class="code" href="vms__ecu__demo_8c.html#a077fd27480e70c7aa38e4c3b3ea81392">dac_ref2</a>);</div>
 <div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;}</div>
 <div class="ttc" id="adc_8h_html_aceea4ff785000051676babf3e5f25287"><div class="ttname"><a href="adc_8h.html#aceea4ff785000051676babf3e5f25287">adc_buf::av_nb_sample</a></div><div class="ttdeci">uint8_t av_nb_sample</div><div class="ttdef"><b>Definition:</b> <a href="adc_8h_source.html#l00057">adc.h:57</a></div></div>
-<div class="ttc" id="apogee_2chibios_2v1_80_2board_8h_html_a1d0bc863ec3717e7ed493491c0f82b24"><div class="ttname"><a href="apogee_2chibios_2v1_80_2board_8h.html#a1d0bc863ec3717e7ed493491c0f82b24">ADC_4</a></div><div class="ttdeci">#define ADC_4</div><div class="ttdef"><b>Definition:</b> <a href="apogee_2chibios_2v1_80_2board_8h_source.html#l00756">board.h:756</a></div></div>
+<div class="ttc" id="apogee_2chibios_2v1_80_2board_8h_html_a1d0bc863ec3717e7ed493491c0f82b24"><div class="ttname"><a href="apogee_2chibios_2v1_80_2board_8h.html#a1d0bc863ec3717e7ed493491c0f82b24">ADC_4</a></div><div class="ttdeci">#define ADC_4</div><div class="ttdef"><b>Definition:</b> <a href="apogee_2chibios_2v1_80_2board_8h_source.html#l00190">board.h:190</a></div></div>
 <div class="ttc" id="types_8h_html_a273cf69d639a59973b6019625df33e30"><div class="ttname"><a href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></div><div class="ttdeci">unsigned short uint16_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00016">types.h:16</a></div></div>
 <div class="ttc" id="lpc21_2mcu__periph_2gpio__arch_8h_html_ac485358099728ddae050db37924dd6b7"><div class="ttname"><a href="lpc21_2mcu__periph_2gpio__arch_8h.html#ac485358099728ddae050db37924dd6b7">GPIOA</a></div><div class="ttdeci">#define GPIOA</div><div class="ttdef"><b>Definition:</b> <a href="lpc21_2mcu__periph_2gpio__arch_8h_source.html#l00034">gpio_arch.h:34</a></div></div>
 <div class="ttc" id="vms__ecu__demo_8c_html_ac980a7301b46c80d918aad4c70de7e94"><div class="ttname"><a href="vms__ecu__demo_8c.html#ac980a7301b46c80d918aad4c70de7e94">dac_1</a></div><div class="ttdeci">uint16_t dac_1</div><div class="ttdef"><b>Definition:</b> <a href="vms__ecu__demo_8c_source.html#l00076">vms_ecu_demo.c:76</a></div></div>
@@ -505,7 +505,7 @@ $(document).ready(function(){initNavTree('vms__ecu__demo_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_70579c1bc98ef60ad2e3f19e534cb634.html">fsae_electric</a></li><li class="navelem"><a class="el" href="vms__ecu__demo_8c.html">vms_ecu_demo.c</a></li>
-    <li class="footer">Generated on Wed Nov 8 2017 10:01:41 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:02:46 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

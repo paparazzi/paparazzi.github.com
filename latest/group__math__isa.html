@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -144,6 +144,12 @@ Macros</h2></td></tr>
 <tr class="memitem:ga7d0c2f65195eccd628c465918fef843b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math__isa.html#ga7d0c2f65195eccd628c465918fef843b">PPRZ_ISA_AIR_DENSITY</a>&#160;&#160;&#160;1.225</td></tr>
 <tr class="memdesc:ga7d0c2f65195eccd628c465918fef843b"><td class="mdescLeft">&#160;</td><td class="mdescRight">standard air density in kg/m^3  <a href="#ga7d0c2f65195eccd628c465918fef843b">More...</a><br /></td></tr>
 <tr class="separator:ga7d0c2f65195eccd628c465918fef843b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac4f09249f783c161c64374c3ef5e26a6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math__isa.html#gac4f09249f783c161c64374c3ef5e26a6">CelsiusOfKelvin</a>(_t)&#160;&#160;&#160;(_t - 274.15f)</td></tr>
+<tr class="memdesc:gac4f09249f783c161c64374c3ef5e26a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert temperature from Kelvin to Celsius.  <a href="#gac4f09249f783c161c64374c3ef5e26a6">More...</a><br /></td></tr>
+<tr class="separator:gac4f09249f783c161c64374c3ef5e26a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga00054dde81814240e486b3b65f4b44b7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math__isa.html#ga00054dde81814240e486b3b65f4b44b7">KelvinOfCelsius</a>(_t)&#160;&#160;&#160;(_t + 274.15f)</td></tr>
+<tr class="memdesc:ga00054dde81814240e486b3b65f4b44b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert temperature from Celsius to Kelvin.  <a href="#ga00054dde81814240e486b3b65f4b44b7">More...</a><br /></td></tr>
+<tr class="separator:ga00054dde81814240e486b3b65f4b44b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -165,6 +171,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gafdec5e2681fb1665fc5c6da7ed86e0a7"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math__isa.html#gafdec5e2681fb1665fc5c6da7ed86e0a7">pprz_isa_ref_pressure_of_height_full</a> (float pressure, float height)</td></tr>
 <tr class="memdesc:gafdec5e2681fb1665fc5c6da7ed86e0a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get reference pressure (QFE or QNH) from current pressure and height.  <a href="#gafdec5e2681fb1665fc5c6da7ed86e0a7">More...</a><br /></td></tr>
 <tr class="separator:gafdec5e2681fb1665fc5c6da7ed86e0a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga889c38e2942d13f6bd92deeb331f63a0"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math__isa.html#ga889c38e2942d13f6bd92deeb331f63a0">pprz_isa_temperature_of_altitude</a> (float alt)</td></tr>
+<tr class="memdesc:ga889c38e2942d13f6bd92deeb331f63a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get ISA temperature from a MSL altitude.  <a href="#ga889c38e2942d13f6bd92deeb331f63a0">More...</a><br /></td></tr>
+<tr class="separator:ga889c38e2942d13f6bd92deeb331f63a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -173,6 +182,50 @@ Variables</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="gac4f09249f783c161c64374c3ef5e26a6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CelsiusOfKelvin</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_t</td><td>)</td>
+          <td>&#160;&#160;&#160;(_t - 274.15f)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convert temperature from Kelvin to Celsius. </p>
+
+<p>Definition at line <a class="el" href="pprz__isa_8h_source.html#l00069">69</a> of file <a class="el" href="pprz__isa_8h_source.html">pprz_isa.h</a>.</p>
+
+<p>Referenced by <a class="el" href="air__data_8c_source.html#l00338">tas_from_eas()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga00054dde81814240e486b3b65f4b44b7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KelvinOfCelsius</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_t</td><td>)</td>
+          <td>&#160;&#160;&#160;(_t + 274.15f)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convert temperature from Celsius to Kelvin. </p>
+
+<p>Definition at line <a class="el" href="pprz__isa_8h_source.html#l00071">71</a> of file <a class="el" href="pprz__isa_8h_source.html">pprz_isa.h</a>.</p>
+
+<p>Referenced by <a class="el" href="air__data_8c_source.html#l00319">get_tas_factor()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ga7d0c2f65195eccd628c465918fef843b"></a>
 <div class="memitem">
 <div class="memproto">
@@ -187,7 +240,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="pprz__isa_8h_source.html#l00064">64</a> of file <a class="el" href="pprz__isa_8h_source.html">pprz_isa.h</a>.</p>
 
-<p>Referenced by <a class="el" href="air__data_8c_source.html#l00269">eas_from_dynamic_pressure()</a>.</p>
+<p>Referenced by <a class="el" href="air__data_8c_source.html#l00291">eas_from_dynamic_pressure()</a>.</p>
 
 </div>
 </div>
@@ -221,7 +274,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="pprz__isa_8h_source.html#l00058">58</a> of file <a class="el" href="pprz__isa_8h_source.html">pprz_isa.h</a>.</p>
 
-<p>Referenced by <a class="el" href="pprz__isa_8h_source.html#l00139">pprz_isa_height_of_pressure_full()</a>, and <a class="el" href="pprz__isa_8h_source.html#l00159">pprz_isa_ref_pressure_of_height_full()</a>.</p>
+<p>Referenced by <a class="el" href="pprz__isa_8h_source.html#l00144">pprz_isa_height_of_pressure_full()</a>, and <a class="el" href="pprz__isa_8h_source.html#l00164">pprz_isa_ref_pressure_of_height_full()</a>.</p>
 
 </div>
 </div>
@@ -239,7 +292,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="pprz__isa_8h_source.html#l00056">56</a> of file <a class="el" href="pprz__isa_8h_source.html">pprz_isa.h</a>.</p>
 
-<p>Referenced by <a class="el" href="pprz__isa_8h_source.html#l00139">pprz_isa_height_of_pressure_full()</a>, and <a class="el" href="pprz__isa_8h_source.html#l00159">pprz_isa_ref_pressure_of_height_full()</a>.</p>
+<p>Referenced by <a class="el" href="pprz__isa_8h_source.html#l00144">pprz_isa_height_of_pressure_full()</a>, and <a class="el" href="pprz__isa_8h_source.html#l00164">pprz_isa_ref_pressure_of_height_full()</a>.</p>
 
 </div>
 </div>
@@ -257,7 +310,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="pprz__isa_8h_source.html#l00060">60</a> of file <a class="el" href="pprz__isa_8h_source.html">pprz_isa.h</a>.</p>
 
-<p>Referenced by <a class="el" href="pprz__isa_8h_source.html#l00139">pprz_isa_height_of_pressure_full()</a>, and <a class="el" href="pprz__isa_8h_source.html#l00159">pprz_isa_ref_pressure_of_height_full()</a>.</p>
+<p>Referenced by <a class="el" href="pprz__isa_8h_source.html#l00144">pprz_isa_height_of_pressure_full()</a>, and <a class="el" href="pprz__isa_8h_source.html#l00164">pprz_isa_ref_pressure_of_height_full()</a>.</p>
 
 </div>
 </div>
@@ -275,7 +328,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="pprz__isa_8h_source.html#l00050">50</a> of file <a class="el" href="pprz__isa_8h_source.html">pprz_isa.h</a>.</p>
 
-<p>Referenced by <a class="el" href="air__data_8c_source.html#l00297">get_tas_factor()</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00119">nps_fdm_init()</a>, <a class="el" href="pprz__isa_8h_source.html#l00075">pprz_isa_altitude_of_pressure()</a>, and <a class="el" href="pprz__isa_8h_source.html#l00110">pprz_isa_pressure_of_altitude()</a>.</p>
+<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00213">baro_cb()</a>, <a class="el" href="air__data_8c_source.html#l00319">get_tas_factor()</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00119">nps_fdm_init()</a>, <a class="el" href="pprz__isa_8h_source.html#l00080">pprz_isa_altitude_of_pressure()</a>, and <a class="el" href="pprz__isa_8h_source.html#l00115">pprz_isa_pressure_of_altitude()</a>.</p>
 
 </div>
 </div>
@@ -293,7 +346,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="pprz__isa_8h_source.html#l00052">52</a> of file <a class="el" href="pprz__isa_8h_source.html">pprz_isa.h</a>.</p>
 
-<p>Referenced by <a class="el" href="air__data_8c_source.html#l00297">get_tas_factor()</a>, <a class="el" href="pprz__isa_8h_source.html#l00139">pprz_isa_height_of_pressure_full()</a>, and <a class="el" href="pprz__isa_8h_source.html#l00159">pprz_isa_ref_pressure_of_height_full()</a>.</p>
+<p>Referenced by <a class="el" href="air__data_8c_source.html#l00319">get_tas_factor()</a>, <a class="el" href="pprz__isa_8h_source.html#l00144">pprz_isa_height_of_pressure_full()</a>, <a class="el" href="pprz__isa_8h_source.html#l00164">pprz_isa_ref_pressure_of_height_full()</a>, and <a class="el" href="pprz__isa_8h_source.html#l00179">pprz_isa_temperature_of_altitude()</a>.</p>
 
 </div>
 </div>
@@ -311,7 +364,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="pprz__isa_8h_source.html#l00054">54</a> of file <a class="el" href="pprz__isa_8h_source.html">pprz_isa.h</a>.</p>
 
-<p>Referenced by <a class="el" href="pprz__isa_8h_source.html#l00139">pprz_isa_height_of_pressure_full()</a>, and <a class="el" href="pprz__isa_8h_source.html#l00159">pprz_isa_ref_pressure_of_height_full()</a>.</p>
+<p>Referenced by <a class="el" href="pprz__isa_8h_source.html#l00144">pprz_isa_height_of_pressure_full()</a>, <a class="el" href="pprz__isa_8h_source.html#l00164">pprz_isa_ref_pressure_of_height_full()</a>, and <a class="el" href="pprz__isa_8h_source.html#l00179">pprz_isa_temperature_of_altitude()</a>.</p>
 
 </div>
 </div>
@@ -348,7 +401,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>altitude in m in ISA conditions </dd></dl>
 
-<p>Definition at line <a class="el" href="pprz__isa_8h_source.html#l00075">75</a> of file <a class="el" href="pprz__isa_8h_source.html">pprz_isa.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__isa_8h_source.html#l00080">80</a> of file <a class="el" href="pprz__isa_8h_source.html">pprz_isa.h</a>.</p>
 
 <p>References <a class="el" href="pprz__isa_8h_source.html#l00050">PPRZ_ISA_SEA_LEVEL_PRESSURE</a>.</p>
 
@@ -410,9 +463,9 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>height in m above reference in ISA conditions </dd></dl>
 
-<p>Definition at line <a class="el" href="pprz__isa_8h_source.html#l00095">95</a> of file <a class="el" href="pprz__isa_8h_source.html">pprz_isa.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__isa_8h_source.html#l00100">100</a> of file <a class="el" href="pprz__isa_8h_source.html">pprz_isa.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__int_8c_source.html#l00331">baro_cb()</a>, <a class="el" href="ins__alt__float_8c_source.html#l00165">ins_alt_float_update_baro()</a>, and <a class="el" href="ins__float__invariant_8c_source.html#l00457">ins_float_invariant_update_baro()</a>.</p>
+<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00213">baro_cb()</a>, <a class="el" href="ins__alt__float_8c_source.html#l00165">ins_alt_float_update_baro()</a>, and <a class="el" href="ins__float__invariant_8c_source.html#l00457">ins_float_invariant_update_baro()</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -421,7 +474,7 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="group__math__isa_ga133268df708f6ee3b953bb291e8db342_icgraph.png" border="0" usemap="#group__math__isa_ga133268df708f6ee3b953bb291e8db342_icgraph" alt=""/></div>
 <map name="group__math__isa_ga133268df708f6ee3b953bb291e8db342_icgraph" id="group__math__isa_ga133268df708f6ee3b953bb291e8db342_icgraph">
-<area shape="rect" id="node2" href="ins__int_8c.html#a7fdc16072298b2db800864d08d72945a" title="baro_cb" alt="" coords="251,5,325,32"/><area shape="rect" id="node4" href="ins__alt__float_8h.html#afb6a5cd07b6574dfb93f023aecfcec5d" title="ins_alt_float_update_baro" alt="" coords="195,56,381,83"/><area shape="rect" id="node7" href="ins__float__invariant_8h.html#ab10a69f505b95e3513f45a05abf08edb" title="ins_float_invariant\l_update_baro" alt="" coords="219,107,357,149"/><area shape="rect" id="node3" href="ins__int_8h.html#a6f47e4e65f9697a961c3bef79e9029e4" title="ins_int_init" alt="" coords="429,5,519,32"/><area shape="rect" id="node5" href="ins__alt__float_8c.html#a7fdc16072298b2db800864d08d72945a" title="baro_cb" alt="" coords="437,56,511,83"/><area shape="rect" id="node6" href="ins__alt__float_8h.html#addae4691b18806ce2db90c10ef8d7274" title="ins_alt_float_init" alt="" coords="573,56,697,83"/><area shape="rect" id="node8" href="ins__float__invariant__wrapper_8c.html#a7fdc16072298b2db800864d08d72945a" title="baro_cb" alt="" coords="437,115,511,141"/><area shape="rect" id="node9" href="ins__float__invariant__wrapper_8h.html#abd4f3b0fcceec4de92a1ad9a7653c6f3" title="ins_float_invariant\l_wrapper_init" alt="" coords="567,107,704,149"/></map>
+<area shape="rect" id="node2" href="ins__mekf__wind__wrapper_8c.html#a7fdc16072298b2db800864d08d72945a" title="baro_cb" alt="" coords="251,5,325,32"/><area shape="rect" id="node4" href="ins__alt__float_8h.html#afb6a5cd07b6574dfb93f023aecfcec5d" title="ins_alt_float_update_baro" alt="" coords="195,56,381,83"/><area shape="rect" id="node7" href="ins__float__invariant_8h.html#ab10a69f505b95e3513f45a05abf08edb" title="ins_float_invariant\l_update_baro" alt="" coords="219,107,357,149"/><area shape="rect" id="node3" href="ins__mekf__wind__wrapper_8h.html#a7b3c1fefc89ec1a4ff25484626a02deb" title="Init function. " alt="" coords="429,5,628,32"/><area shape="rect" id="node5" href="ins__alt__float_8c.html#a7fdc16072298b2db800864d08d72945a" title="baro_cb" alt="" coords="492,56,565,83"/><area shape="rect" id="node6" href="ins__alt__float_8h.html#addae4691b18806ce2db90c10ef8d7274" title="ins_alt_float_init" alt="" coords="683,56,807,83"/><area shape="rect" id="node8" href="ins__float__invariant__wrapper_8c.html#a7fdc16072298b2db800864d08d72945a" title="baro_cb" alt="" coords="492,115,565,141"/><area shape="rect" id="node9" href="ins__float__invariant__wrapper_8h.html#abd4f3b0fcceec4de92a1ad9a7653c6f3" title="ins_float_invariant\l_wrapper_init" alt="" coords="676,107,813,149"/></map>
 </div>
 </p>
 
@@ -470,11 +523,11 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>height above reference in m in ISA conditions </dd></dl>
 
-<p>Definition at line <a class="el" href="pprz__isa_8h_source.html#l00139">139</a> of file <a class="el" href="pprz__isa_8h_source.html">pprz_isa.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__isa_8h_source.html#l00144">144</a> of file <a class="el" href="pprz__isa_8h_source.html">pprz_isa.h</a>.</p>
 
 <p>References <a class="el" href="pprz__isa_8h_source.html#l00058">PPRZ_ISA_GAS_CONSTANT</a>, <a class="el" href="pprz__isa_8h_source.html#l00056">PPRZ_ISA_GRAVITY</a>, <a class="el" href="pprz__isa_8h_source.html#l00060">PPRZ_ISA_MOLAR_MASS</a>, <a class="el" href="pprz__isa_8h_source.html#l00052">PPRZ_ISA_SEA_LEVEL_TEMP</a>, and <a class="el" href="pprz__isa_8h_source.html#l00054">PPRZ_ISA_TEMP_LAPS_RATE</a>.</p>
 
-<p>Referenced by <a class="el" href="air__data_8c_source.html#l00105">pressure_abs_cb()</a>.</p>
+<p>Referenced by <a class="el" href="air__data_8c_source.html#l00112">pressure_abs_cb()</a>.</p>
 
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -520,11 +573,11 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>static pressure in Pa at given altitude in ISA conditions </dd></dl>
 
-<p>Definition at line <a class="el" href="pprz__isa_8h_source.html#l00110">110</a> of file <a class="el" href="pprz__isa_8h_source.html">pprz_isa.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__isa_8h_source.html#l00115">115</a> of file <a class="el" href="pprz__isa_8h_source.html">pprz_isa.h</a>.</p>
 
 <p>References <a class="el" href="pprz__isa_8h_source.html#l00050">PPRZ_ISA_SEA_LEVEL_PRESSURE</a>.</p>
 
-<p>Referenced by <a class="el" href="baro__sim_8c_source.html#l00039">baro_sim_periodic()</a>, and <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00384">decode_gpspacket()</a>.</p>
+<p>Referenced by <a class="el" href="baro__sim_8c_source.html#l00039">baro_sim_periodic()</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00384">decode_gpspacket()</a>, and <a class="el" href="air__data_8c_source.html#l00338">tas_from_eas()</a>.</p>
 
 <p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -533,7 +586,7 @@ Variables</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="group__math__isa_ga64a5320121c2e4fcd276a8434fa18c7b_icgraph.png" border="0" usemap="#group__math__isa_ga64a5320121c2e4fcd276a8434fa18c7b_icgraph" alt=""/></div>
 <map name="group__math__isa_ga64a5320121c2e4fcd276a8434fa18c7b_icgraph" id="group__math__isa_ga64a5320121c2e4fcd276a8434fa18c7b_icgraph">
-<area shape="rect" id="node2" href="baro__sim_8h.html#ad43ede516cb291db8ea546cc89c3fdaf" title="baro_sim_periodic" alt="" coords="213,5,351,32"/><area shape="rect" id="node3" href="nps__fdm__crrcsim_8c.html#af6bebbe57b1e739c8b1565a483f91597" title="decode_gpspacket" alt="" coords="211,56,353,83"/><area shape="rect" id="node4" href="nps__fdm__crrcsim_8c.html#a4f72ff1c76415e3e41897d762122c5f8" title="nps_fdm_run_step" alt="" coords="401,56,541,83"/></map>
+<area shape="rect" id="node2" href="baro__sim_8h.html#ad43ede516cb291db8ea546cc89c3fdaf" title="baro_sim_periodic" alt="" coords="213,5,351,32"/><area shape="rect" id="node3" href="nps__fdm__crrcsim_8c.html#af6bebbe57b1e739c8b1565a483f91597" title="decode_gpspacket" alt="" coords="211,56,353,83"/><area shape="rect" id="node5" href="air__data_8h.html#aecf73d89654409d574b551a23e3807ad" title="Calculate true airspeed from equivalent airspeed. " alt="" coords="227,132,337,159"/><area shape="rect" id="node4" href="nps__fdm__crrcsim_8c.html#a4f72ff1c76415e3e41897d762122c5f8" title="nps_fdm_run_step" alt="" coords="433,43,573,69"/><area shape="rect" id="node6" href="air__data_8c.html#af4b6a37d862e72a427f405e18fe3a5f5" title="airspeed_cb" alt="" coords="453,93,552,120"/><area shape="rect" id="node8" href="air__data_8c.html#a4ecdb280f61e36c777ce134bac0d140a" title="pressure_diff_cb" alt="" coords="439,144,566,171"/><area shape="rect" id="node9" href="air__data_8h.html#a85b8f86ff925ba2d320b5d2e79f98d16" title="Calculate true airspeed from dynamic pressure. " alt="" coords="401,195,604,221"/><area shape="rect" id="node7" href="air__data_8h.html#adf7b25090f4cb33d35ccfbc18470e0ad" title="AirData initialization. " alt="" coords="665,119,765,145"/><area shape="rect" id="node10" href="ins__mekf__wind__wrapper_8c.html#ad6cfd2421f1c43be32c64ccb0ac236be" title="pressure_diff_cb" alt="" coords="652,195,779,221"/><area shape="rect" id="node11" href="ins__mekf__wind__wrapper_8h.html#a7b3c1fefc89ec1a4ff25484626a02deb" title="Init function. " alt="" coords="827,195,1025,221"/></map>
 </div>
 </p>
 
@@ -581,9 +634,9 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>static pressure in Pa at given height in ISA conditions </dd></dl>
 
-<p>Definition at line <a class="el" href="pprz__isa_8h_source.html#l00122">122</a> of file <a class="el" href="pprz__isa_8h_source.html">pprz_isa.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__isa_8h_source.html#l00127">127</a> of file <a class="el" href="pprz__isa_8h_source.html">pprz_isa.h</a>.</p>
 
-<p>Referenced by <a class="el" href="nps__fdm__gazebo_8cpp_source.html#l00390">gazebo_read()</a>.</p>
+<p>Referenced by <a class="el" href="nps__fdm__gazebo_8cpp_source.html#l00462">gazebo_read()</a>.</p>
 
 <p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -641,11 +694,11 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>reference pressure at height=0 in Pa </dd></dl>
 
-<p>Definition at line <a class="el" href="pprz__isa_8h_source.html#l00159">159</a> of file <a class="el" href="pprz__isa_8h_source.html">pprz_isa.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__isa_8h_source.html#l00164">164</a> of file <a class="el" href="pprz__isa_8h_source.html">pprz_isa.h</a>.</p>
 
 <p>References <a class="el" href="pprz__isa_8h_source.html#l00058">PPRZ_ISA_GAS_CONSTANT</a>, <a class="el" href="pprz__isa_8h_source.html#l00056">PPRZ_ISA_GRAVITY</a>, <a class="el" href="pprz__isa_8h_source.html#l00060">PPRZ_ISA_MOLAR_MASS</a>, <a class="el" href="pprz__isa_8h_source.html#l00052">PPRZ_ISA_SEA_LEVEL_TEMP</a>, and <a class="el" href="pprz__isa_8h_source.html#l00054">PPRZ_ISA_TEMP_LAPS_RATE</a>.</p>
 
-<p>Referenced by <a class="el" href="air__data_8c_source.html#l00105">pressure_abs_cb()</a>.</p>
+<p>Referenced by <a class="el" href="air__data_8c_source.html#l00112">pressure_abs_cb()</a>.</p>
 
 <p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -655,6 +708,56 @@ Variables</h2></td></tr>
 <div class="center"><img src="group__math__isa_gafdec5e2681fb1665fc5c6da7ed86e0a7_icgraph.png" border="0" usemap="#group__math__isa_gafdec5e2681fb1665fc5c6da7ed86e0a7_icgraph" alt=""/></div>
 <map name="group__math__isa_gafdec5e2681fb1665fc5c6da7ed86e0a7_icgraph" id="group__math__isa_gafdec5e2681fb1665fc5c6da7ed86e0a7_icgraph">
 <area shape="rect" id="node2" href="air__data_8c.html#aa047324f82b8a6e3f38f32988d536a55" title="pressure_abs_cb" alt="" coords="216,13,347,39"/><area shape="rect" id="node3" href="air__data_8h.html#adf7b25090f4cb33d35ccfbc18470e0ad" title="AirData initialization. " alt="" coords="395,13,495,39"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ga889c38e2942d13f6bd92deeb331f63a0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static float pprz_isa_temperature_of_altitude </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>alt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get ISA temperature from a MSL altitude. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">alt</td><td>AMSL altitude </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>temperature in ISA condition </dd></dl>
+
+<p>Definition at line <a class="el" href="pprz__isa_8h_source.html#l00179">179</a> of file <a class="el" href="pprz__isa_8h_source.html">pprz_isa.h</a>.</p>
+
+<p>References <a class="el" href="pprz__isa_8h_source.html#l00052">PPRZ_ISA_SEA_LEVEL_TEMP</a>, and <a class="el" href="pprz__isa_8h_source.html#l00054">PPRZ_ISA_TEMP_LAPS_RATE</a>.</p>
+
+<p>Referenced by <a class="el" href="air__data_8c_source.html#l00338">tas_from_eas()</a>.</p>
+
+<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="group__math__isa_ga889c38e2942d13f6bd92deeb331f63a0_icgraph.png" border="0" usemap="#group__math__isa_ga889c38e2942d13f6bd92deeb331f63a0_icgraph" alt=""/></div>
+<map name="group__math__isa_ga889c38e2942d13f6bd92deeb331f63a0_icgraph" id="group__math__isa_ga889c38e2942d13f6bd92deeb331f63a0_icgraph">
+<area shape="rect" id="node2" href="air__data_8h.html#aecf73d89654409d574b551a23e3807ad" title="Calculate true airspeed from equivalent airspeed. " alt="" coords="216,56,325,83"/><area shape="rect" id="node3" href="air__data_8c.html#af4b6a37d862e72a427f405e18fe3a5f5" title="airspeed_cb" alt="" coords="425,5,524,32"/><area shape="rect" id="node5" href="air__data_8c.html#a4ecdb280f61e36c777ce134bac0d140a" title="pressure_diff_cb" alt="" coords="411,56,538,83"/><area shape="rect" id="node6" href="air__data_8h.html#a85b8f86ff925ba2d320b5d2e79f98d16" title="Calculate true airspeed from dynamic pressure. " alt="" coords="373,107,576,133"/><area shape="rect" id="node4" href="air__data_8h.html#adf7b25090f4cb33d35ccfbc18470e0ad" title="AirData initialization. " alt="" coords="637,31,737,57"/><area shape="rect" id="node7" href="ins__mekf__wind__wrapper_8c.html#ad6cfd2421f1c43be32c64ccb0ac236be" title="pressure_diff_cb" alt="" coords="624,107,751,133"/><area shape="rect" id="node8" href="ins__mekf__wind__wrapper_8h.html#a7b3c1fefc89ec1a4ff25484626a02deb" title="Init function. " alt="" coords="799,107,997,133"/></map>
 </div>
 </p>
 
@@ -688,7 +791,7 @@ Variables</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Nov 8 2017 10:02:54 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:04:05 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

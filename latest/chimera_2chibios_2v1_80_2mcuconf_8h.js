@@ -135,7 +135,7 @@ var chimera_2chibios_2v1_80_2mcuconf_8h =
     [ "STM32_PLLN_VALUE", "chimera_2chibios_2v1_80_2mcuconf_8h.html#a42a8bb439be9c6c643c7ab48f02ee662", null ],
     [ "STM32_PLLP_VALUE", "chimera_2chibios_2v1_80_2mcuconf_8h.html#a0a2a10496ad437bb1bf6bf23892148e4", null ],
     [ "STM32_PLLQ_VALUE", "chimera_2chibios_2v1_80_2mcuconf_8h.html#adc27d1e2fcdedcb56fc15a41e5f43d91", null ],
-    [ "STM32_PLLSAIDIVR", "chimera_2chibios_2v1_80_2mcuconf_8h.html#ad0b5ddcffdcdbb3438268a281ed82588", null ],
+    [ "STM32_PLLSAIDIVR_VALUE", "chimera_2chibios_2v1_80_2mcuconf_8h.html#a9bd8243c565cf0d8128ca9cc00bc1a4d", null ],
     [ "STM32_PLLSAIN_VALUE", "chimera_2chibios_2v1_80_2mcuconf_8h.html#adad1367e1eb26c3a6df6a358f44ce98e", null ],
     [ "STM32_PLLSAIP_VALUE", "chimera_2chibios_2v1_80_2mcuconf_8h.html#aacacec5795cca34be3ff692ffb8f1a13", null ],
     [ "STM32_PLLSAIQ_VALUE", "chimera_2chibios_2v1_80_2mcuconf_8h.html#a33922bdd7e2781286b82d9e778c98b3f", null ],

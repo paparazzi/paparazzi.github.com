@@ -1,0 +1,51 @@
+<map id="autopilot_static_periodic" name="autopilot_static_periodic">
+<area shape="rect" id="node2" href="$fixedwing_2autopilot__static_8c.html#a315546d9034361bbc6970b3792dc8b67" title="attitude_loop" alt="" coords="273,157,379,184"/>
+<area shape="rect" id="node12" href="$autopilot_8c.html#aa0968d46fbee148348a7e062afac69a6" title="get in_flight flag " alt="" coords="744,347,879,373"/>
+<area shape="rect" id="node13" href="$fixedwing_2autopilot__static_8c.html#af7eb08dcaaeb9f55fe1b77230b0e78c3" title="autopilot_static_set_mode" alt="" coords="231,892,421,919"/>
+<area shape="rect" id="node14" href="$navigation_8c.html#a4603515f41786b54ea9383a65a9f249e" title="Computes squared distance to the HOME waypoint potentially sets too_far_from_home. " alt="" coords="235,943,417,969"/>
+<area shape="rect" id="node15" href="$nav__geofence_8h.html#aaaf24479c95e5a458c7612ccc75a2b6b" title="datalink_lost" alt="" coords="275,993,377,1020"/>
+<area shape="rect" id="node16" href="$rotorcraft_2guidance_2guidance__h_8c.html#afff2f6a359638c74d5d1051c3edfa554" title="guidance_h_run" alt="" coords="265,563,387,589"/>
+<area shape="rect" id="node40" href="$rotorcraft_2guidance_2guidance__v_8c.html#a5c03e8fc9dd9e84925081df8639d4001" title="guidance_v_run" alt="" coords="265,841,387,868"/>
+<area shape="rect" id="node48" href="$nav__geofence_8h.html#a57c518618655d66ccd5f0dbbca309921" title="higher_than_max_altitude" alt="" coords="232,1044,420,1071"/>
+<area shape="rect" id="node49" href="$nav_8c.html#a069e6b8f68b2e117cbbe03f29e30a2e3" title="Home mode navigation (circle around HOME) " alt="" coords="281,1095,371,1121"/>
+<area shape="rect" id="node50" href="$nav_8c.html#ad40d34bcd8520f64bb073fae4a08878e" title="Navigation main: call to the code generated from the XML flight plan. " alt="" coords="258,1145,394,1172"/>
+<area shape="rect" id="node3" href="$autopilot_8c.html#a23af2ac2d4bcb9b71c869a409de61cc4" title="get autopilot mode " alt="" coords="483,5,634,32"/>
+<area shape="rect" id="node4" href="$stabilization__adaptive_8c.html#a86f0d47644538be1345aab19c7dc3de4" title="h_ctl_attitude_loop" alt="" coords="487,56,630,83"/>
+<area shape="rect" id="node5" href="$link__mcu__can_8h.html#ad2f41351eb7b54410360a1e9f1f2407a" title="link_mcu_send" alt="" coords="501,107,617,133"/>
+<area shape="rect" id="node6" href="$energy__ctrl_8c.html#a38f0bbceda8812281fc650c2c1aac6c8" title="Auto&#45;throttle inner loop. " alt="" coords="495,157,622,184"/>
+<area shape="rect" id="node7" href="$guidance__common_8h.html#a130f49d9941f156bb04aa94122b167d0" title="v_ctl_landing_loop" alt="" coords="489,208,628,235"/>
+<area shape="rect" id="node11" href="$energy__ctrl_8c.html#a7fefa3c115f6c0f7453db6c2edd2dbbb" title="Computes slewed throttle from throttle setpoint called at 20Hz. " alt="" coords="489,259,628,285"/>
+<area shape="rect" id="node8" href="$group__state__velocity.html#ga1396b84069296dc0353f25281a472c08" title="Get norm of horizontal ground speed (float). " alt="" coords="696,157,927,184"/>
+<area shape="rect" id="node9" href="$group__state__position.html#ga7488f3b1e3afa9515541c0130278bdac" title="Get position in UTM coordinates (float). " alt="" coords="728,208,895,235"/>
+<area shape="rect" id="node10" href="$autopilot_8c.html#ad0636a1ccc27b07219072341aec524d8" title="get kill status " alt="" coords="745,259,877,301"/>
+<area shape="rect" id="node17" href="$stabilization__none_8c.html#a972045a8232a7659ea0552e6718369e4" title="stabilization_none_run" alt="" coords="476,664,641,691"/>
+<area shape="rect" id="node18" href="$stabilization__rate_8c.html#acfa2e0820b52aea2dce670dd9295b540" title="stabilization_rate_run" alt="" coords="479,715,638,741"/>
+<area shape="rect" id="node19" href="$rotorcraft_2guidance_2guidance__h_8c.html#ae0ff25590456201a3c9ff1dc7ea13415" title="transition_run" alt="" coords="503,360,614,387"/>
+<area shape="rect" id="node20" href="$rotorcraft_2stabilization_2stabilization__attitude_8h.html#add1138c9aae1adaafdb42ddf2f0c039a" title="stabilization_attitude_run" alt="" coords="720,515,903,541"/>
+<area shape="rect" id="node36" href="$rotorcraft_2guidance_2guidance__h_8c.html#a60716914dafeccd7ab74967606ae4045" title="Run GUIDED mode control. " alt="" coords="472,613,645,640"/>
+<area shape="rect" id="node37" href="$rotorcraft_2guidance_2guidance__h_8c.html#a609bdd40f9f6aeac4b4d493ffabd24d5" title="Set horizontal guidance from NAV and run control loop. " alt="" coords="477,512,640,539"/>
+<area shape="rect" id="node38" href="$ctrl__module__demo_8c.html#a77f05df2acd1da23e187f1f3f5d5a26f" title="guidance_h_module_run" alt="" coords="469,411,648,437"/>
+<area shape="rect" id="node39" href="$guidance__flip_8c.html#a341f66aaa1a6e736e980ae5cccb3c0f5" title="guidance_flip_run" alt="" coords="492,461,625,488"/>
+<area shape="rect" id="node21" href="$stabilization__attitude__ref__euler__float_8c.html#aa06a66885cd25a47ac9efc8664f29f0a" title="attitude_ref_euler\l_float_update" alt="" coords="1007,667,1141,709"/>
+<area shape="rect" id="node22" href="$group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float). " alt="" coords="975,733,1173,760"/>
+<area shape="rect" id="node23" href="$group__state__rate.html#ga086f10e8804f8e95ace9a2b1cd26a66c" title="Get vehicle body angular rate (float). " alt="" coords="995,784,1153,811"/>
+<area shape="rect" id="node24" href="$stabilization__attitude__ref__euler__int_8c.html#a041606d24b535f7020178ae487e069d5" title="Propagate reference model. " alt="" coords="1007,835,1141,877"/>
+<area shape="rect" id="node25" href="$group__state__attitude.html#ga5ae8778366c1fad669189cb2def40792" title="Get vehicle body attitude euler angles (int). " alt="" coords="975,160,1173,187"/>
+<area shape="rect" id="node26" href="$group__state__rate.html#ga3fc058302e6f40bf0b8797ca9a7ed60f" title="Get vehicle body angular rate (int). " alt="" coords="996,211,1152,237"/>
+<area shape="rect" id="node27" href="$group__state__acceleration.html#gab55b482bd9fe875141bafd34beda8bb4" title="Get acceleration in NED coordinates (int). " alt="" coords="1000,901,1148,928"/>
+<area shape="rect" id="node28" href="$group__math__algebra__int.html#ga6298f55d272675b9b71dcb3fcbcf4a8a" title="rotate 3D vector by rotation matrix. " alt="" coords="1007,261,1141,288"/>
+<area shape="rect" id="node29" href="$group__state__attitude.html#ga7c541b9b2e6231ac9a11a9e21562a5b3" title="Get vehicle body attitude rotation matrix (int). " alt="" coords="979,312,1169,339"/>
+<area shape="rect" id="node30" href="$group__state__attitude.html#ga28e5de0a4822cabcfe8350e2343111ce" title="Get vehicle body attitude quaternion (int). " alt="" coords="979,363,1169,389"/>
+<area shape="rect" id="node31" href="$group__math__algebra__int.html#ga6102185fc581099e1e256c3df37fd08d" title="Composition (multiplication) of two quaternions. " alt="" coords="995,413,1153,440"/>
+<area shape="rect" id="node32" href="$group__math__algebra__int.html#gae4cd7dd8ca63cfe3aed0eb7c3857ac9a" title="Composition (multiplication) of two quaternions. " alt="" coords="995,464,1153,491"/>
+<area shape="rect" id="node33" href="$group__math__algebra__int.html#ga7af214127cdc156466db26fd3497ce84" title="int32_quat_wrap_shortest" alt="" coords="981,515,1167,541"/>
+<area shape="rect" id="node34" href="$group__math__algebra__int.html#ga00267cacb602945fc6cfb054492460fa" title="normalize a quaternion inplace " alt="" coords="994,565,1154,592"/>
+<area shape="rect" id="node35" href="$rpm__sensor_8c.html#a9a1ae07808a3f9b217e667660e4fd41a" title="rpm_sensor_get_rpm" alt="" coords="995,616,1153,643"/>
+<area shape="rect" id="node41" href="$rotorcraft_2guidance_2guidance__v_8c.html#a0f2c0608e9949e1d68952c3491a30a83" title="guidance_v_thrust_adapt" alt="" coords="720,765,903,792"/>
+<area shape="rect" id="node42" href="$group__state__position.html#gaf9a3b3ed4f6a011ae65d49d78bf4aa25" title="Get position in local NED coordinates (int). " alt="" coords="992,957,1156,984"/>
+<area shape="rect" id="node43" href="$guidance__v__ref_8c.html#ab8d8d8003fbd1c3d31ee72827ea1e25e" title="update vertical reference from speed setpoint. " alt="" coords="736,1062,887,1103"/>
+<area shape="rect" id="node44" href="$rotorcraft_2guidance_2guidance__v_8c.html#add8143296d90990e7c8da2e1c67c6e62" title="run_hover_loop" alt="" coords="751,960,871,987"/>
+<area shape="rect" id="node45" href="$rotorcraft_2guidance_2guidance__v_8c.html#ada32f262fec6c51998c5041daa0d089c" title="Run GUIDED mode control. " alt="" coords="473,917,645,944"/>
+<area shape="rect" id="node46" href="$ctrl__module__demo_8c.html#a92d0c10f0d13b0b23000b1b161cfb5e4" title="guidance_v_module_run" alt="" coords="470,867,647,893"/>
+<area shape="rect" id="node47" href="$rotorcraft_2guidance_2guidance__v_8c.html#adee3e8feda47516b9c7ccbb1b97daaf6" title="Set guidance setpoint from NAV and run hover loop. " alt="" coords="478,1019,639,1045"/>
+</map>

@@ -1,5 +1,8 @@
 var energy__ctrl_8h =
 [
+    [ "V_CTL_SPEED_AIRSPEED", "energy__ctrl_8h.html#ad1fc2f2f9c2f7b494f92950216f594e4", null ],
+    [ "V_CTL_SPEED_GROUNDSPEED", "energy__ctrl_8h.html#a2919ee4ab6a733cc7d7042d8a66d0a18", null ],
+    [ "V_CTL_SPEED_THROTTLE", "energy__ctrl_8h.html#a09f63f36c513da12a9022e1528b056b8", null ],
     [ "ac_char_climb_max", "energy__ctrl_8h.html#a081acd8e49b957c270368dee018ae415", null ],
     [ "ac_char_climb_pitch", "energy__ctrl_8h.html#a3deaed0ef0a3aba5e8b1150498d81f82", null ],
     [ "ac_char_cruise_pitch", "energy__ctrl_8h.html#a8fa25cd75ff8dfaf527c50d6aaa9cc83", null ],
@@ -29,5 +32,6 @@ var energy__ctrl_8h =
     [ "v_ctl_energy_total_igain", "energy__ctrl_8h.html#a5920205ac05cd681abf9f4dce7086597", null ],
     [ "v_ctl_energy_total_pgain", "energy__ctrl_8h.html#a0dca445d8becd2c52c40371c2ec0dd08", null ],
     [ "v_ctl_max_acceleration", "energy__ctrl_8h.html#a8a1ef28c2298cf68c84058c6cbaba741", null ],
-    [ "v_ctl_max_climb", "energy__ctrl_8h.html#a51438d5875cea79cc711298b3cc6e5df", null ]
+    [ "v_ctl_max_climb", "energy__ctrl_8h.html#a51438d5875cea79cc711298b3cc6e5df", null ],
+    [ "v_ctl_speed_mode", "energy__ctrl_8h.html#aa4ebe07275990427a055a732e6f37740", null ]
 ];

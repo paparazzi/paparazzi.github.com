@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -205,11 +205,11 @@ $(document).ready(function(){initNavTree('msg__queue_8c_source.html','');});
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keywordflow">if</span> (urgency == <a class="code" href="msg__queue_8h.html#a515d85b3345a7403ee1c9f4b8b5769fcab738f26664be5b03e2d40eb391d707bb">MsgQueue_REGULAR</a>) {</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordflow">if</span> (chMBPost(&amp;que-&gt;<a class="code" href="msg__queue_8h.html#ae17057bd2c7a165ba13f8246407b5cf9">mb</a>, mpl.<a class="code" href="msg__queue_8c.html#a7ab9b401c73d3a11a1c6aaede9a22519">msg_ptr_len</a>, timout) != MSG_OK) {</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordflow">if</span> (chMBPostTimeout(&amp;que-&gt;<a class="code" href="msg__queue_8h.html#ae17057bd2c7a165ba13f8246407b5cf9">mb</a>, mpl.<a class="code" href="msg__queue_8c.html#a7ab9b401c73d3a11a1c6aaede9a22519">msg_ptr_len</a>, timout) != MSG_OK) {</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      <span class="keywordflow">goto</span> fail;</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    }</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordflow">if</span> (chMBPostAhead(&amp;que-&gt;<a class="code" href="msg__queue_8h.html#ae17057bd2c7a165ba13f8246407b5cf9">mb</a>, mpl.<a class="code" href="msg__queue_8c.html#a7ab9b401c73d3a11a1c6aaede9a22519">msg_ptr_len</a>, timout) != MSG_OK) {</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordflow">if</span> (chMBPostAheadTimeout(&amp;que-&gt;<a class="code" href="msg__queue_8h.html#ae17057bd2c7a165ba13f8246407b5cf9">mb</a>, mpl.<a class="code" href="msg__queue_8c.html#a7ab9b401c73d3a11a1c6aaede9a22519">msg_ptr_len</a>, timout) != MSG_OK) {</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;      <span class="keywordflow">goto</span> fail;</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    }</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  }</div>
@@ -253,7 +253,7 @@ $(document).ready(function(){initNavTree('msg__queue_8c_source.html','');});
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;</div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  msg_t <a class="code" href="anemotaxis_8c.html#a015eb90e0de9f16e87bd149d4b9ce959">status</a>;</div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  <span class="keywordflow">do</span>  {</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    status = chMBFetch(&amp;que-&gt;<a class="code" href="msg__queue_8h.html#ae17057bd2c7a165ba13f8246407b5cf9">mb</a>, (msg_t *) &amp;mpl.<a class="code" href="msg__queue_8c.html#a7ab9b401c73d3a11a1c6aaede9a22519">msg_ptr_len</a>, timout);</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    status = chMBFetchTimeout(&amp;que-&gt;<a class="code" href="msg__queue_8h.html#ae17057bd2c7a165ba13f8246407b5cf9">mb</a>, (msg_t *) &amp;mpl.<a class="code" href="msg__queue_8c.html#a7ab9b401c73d3a11a1c6aaede9a22519">msg_ptr_len</a>, timout);</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  } <span class="keywordflow">while</span> (status == MSG_RESET);</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  <span class="keywordflow">if</span> (status != MSG_OK) {</div>
@@ -327,7 +327,7 @@ $(document).ready(function(){initNavTree('msg__queue_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_cbf4be70f5fb954ea1d2a546dd70b40e.html">loggers</a></li><li class="navelem"><a class="el" href="dir_c27662836f6a804eadd3e3b5df5506a4.html">sdlog_chibios</a></li><li class="navelem"><a class="el" href="msg__queue_8c.html">msg_queue.c</a></li>
-    <li class="footer">Generated on Wed Nov 8 2017 10:01:42 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:02:48 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

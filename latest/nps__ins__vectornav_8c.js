@@ -25,7 +25,7 @@ var nps__ins__vectornav_8c =
     [ "nps_ins_fetch_data", "nps__ins__vectornav_8c.html#a003d06964d78213c96100e9ca57c7979", null ],
     [ "nps_ins_fill_buffer", "nps__ins__vectornav_8c.html#a37df16d56213486a430d45f925225c71", null ],
     [ "nps_ins_init", "nps__ins__vectornav_8c.html#a89c3c505d205dced5e7dc45d0e629cb8", null ],
-    [ "vn_calculate_crc", "nps__ins__vectornav_8c.html#a45926adbd806a5dd48811978e7be6bc7", null ],
+    [ "vn_calculate_crc", "nps__ins__vectornav_8c.html#a527b04df60a1c78c212ce22604abfa7a", null ],
     [ "vn_get_time_of_week", "nps__ins__vectornav_8c.html#af54cd3a3df5541a95a96ba9e66c7758a", null ],
     [ "ins_buffer", "nps__ins__vectornav_8c.html#a044e6373c2e63733a079336f584e0846", null ],
     [ "vn_buffer", "nps__ins__vectornav_8c.html#ab21b154589240fe2c29b401eab6e314d", null ],

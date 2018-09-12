@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -1050,7 +1050,7 @@ $(document).ready(function(){initNavTree('qr__solve_8c_source.html','');});
 <div class="line"><a name="l00939"></a><span class="lineno">  939</span>&#160;<span class="comment">*/</span></div>
 <div class="line"><a name="l00940"></a><span class="lineno">  940</span>&#160;{</div>
 <div class="line"><a name="l00941"></a><span class="lineno">  941</span>&#160;  <span class="keywordtype">int</span> i;</div>
-<div class="line"><a name="l00942"></a><span class="lineno">  942</span>&#160;  <span class="keywordtype">int</span> info <a class="code" href="navigation_8c.html#a9314d7061c454ecf2111d3965db8f23f">UNUSED</a>;</div>
+<div class="line"><a name="l00942"></a><span class="lineno">  942</span>&#160;  <span class="keywordtype">int</span> info <a class="code" href="rotorcraft_2navigation_8c.html#a9314d7061c454ecf2111d3965db8f23f">UNUSED</a>;</div>
 <div class="line"><a name="l00943"></a><span class="lineno">  943</span>&#160;  <span class="keywordtype">int</span> j;</div>
 <div class="line"><a name="l00944"></a><span class="lineno">  944</span>&#160;  <span class="keywordtype">int</span> job;</div>
 <div class="line"><a name="l00945"></a><span class="lineno">  945</span>&#160;  <span class="keywordtype">int</span> k;</div>
@@ -1706,7 +1706,7 @@ $(document).ready(function(){initNavTree('qr__solve_8c_source.html','');});
 <div class="line"><a name="l01595"></a><span class="lineno"> 1595</span>&#160;<span class="comment">    Output, float QR_SOLVE[N], the least squares solution.</span></div>
 <div class="line"><a name="l01596"></a><span class="lineno"> 1596</span>&#160;<span class="comment">*/</span></div>
 <div class="line"><a name="l01597"></a><span class="lineno"> 1597</span>&#160;{</div>
-<div class="line"><a name="l01598"></a><span class="lineno"> 1598</span>&#160;  <span class="keywordtype">int</span> ind <a class="code" href="navigation_8c.html#a9314d7061c454ecf2111d3965db8f23f">UNUSED</a>;</div>
+<div class="line"><a name="l01598"></a><span class="lineno"> 1598</span>&#160;  <span class="keywordtype">int</span> ind <a class="code" href="rotorcraft_2navigation_8c.html#a9314d7061c454ecf2111d3965db8f23f">UNUSED</a>;</div>
 <div class="line"><a name="l01599"></a><span class="lineno"> 1599</span>&#160;  <span class="keywordtype">int</span> itask;</div>
 <div class="line"><a name="l01600"></a><span class="lineno"> 1600</span>&#160;  <span class="keywordtype">int</span> kr;</div>
 <div class="line"><a name="l01601"></a><span class="lineno"> 1601</span>&#160;  <span class="keywordtype">int</span> lda;</div>
@@ -1733,6 +1733,7 @@ $(document).ready(function(){initNavTree('qr__solve_8c_source.html','');});
 <div class="ttc" id="qr__solve_8c_html_ab1b00af76b78908d5f012c3023e8690f"><div class="ttname"><a href="qr__solve_8c.html#ab1b00af76b78908d5f012c3023e8690f">dscal</a></div><div class="ttdeci">void dscal(int n, float sa, float x[], int incx)</div><div class="ttdef"><b>Definition:</b> <a href="qr__solve_8c_source.html#l01344">qr_solve.c:1344</a></div></div>
 <div class="ttc" id="qr__solve_8c_html_a32d5754b3d1e62e762af43ee5f2e2135"><div class="ttname"><a href="qr__solve_8c.html#a32d5754b3d1e62e762af43ee5f2e2135">ddot</a></div><div class="ttdeci">float ddot(int n, float dx[], int incx, float dy[], int incy)</div><div class="ttdef"><b>Definition:</b> <a href="qr__solve_8c_source.html#l00144">qr_solve.c:144</a></div></div>
 <div class="ttc" id="qr__solve_8c_html_adb1d7ac5915e3af7d8034232eb1b587d"><div class="ttname"><a href="qr__solve_8c.html#adb1d7ac5915e3af7d8034232eb1b587d">dnrm2</a></div><div class="ttdeci">float dnrm2(int n, float x[], int incx)</div><div class="ttdef"><b>Definition:</b> <a href="qr__solve_8c_source.html#l00264">qr_solve.c:264</a></div></div>
+<div class="ttc" id="rotorcraft_2navigation_8c_html_a9314d7061c454ecf2111d3965db8f23f"><div class="ttname"><a href="rotorcraft_2navigation_8c.html#a9314d7061c454ecf2111d3965db8f23f">UNUSED</a></div><div class="ttdeci">uint8_t last_wp UNUSED</div><div class="ttdef"><b>Definition:</b> <a href="rotorcraft_2navigation_8c_source.html#l00092">navigation.c:92</a></div></div>
 <div class="ttc" id="qr__solve_8c_html_a6ecb9a7b36dcdb21869bd05c7e7cf149"><div class="ttname"><a href="qr__solve_8c.html#a6ecb9a7b36dcdb21869bd05c7e7cf149">dqrank</a></div><div class="ttdeci">void dqrank(float a[], int lda, int m, int n, float tol, int *kr, int jpvt[], float qraux[])</div><div class="ttdef"><b>Definition:</b> <a href="qr__solve_8c_source.html#l00357">qr_solve.c:357</a></div></div>
 <div class="ttc" id="r8lib__min_8h_html"><div class="ttname"><a href="r8lib__min_8h.html">r8lib_min.h</a></div></div>
 <div class="ttc" id="qr__solve_8c_html_a52f94d5d8c6c1df1cc33b4f08e7f8902"><div class="ttname"><a href="qr__solve_8c.html#a52f94d5d8c6c1df1cc33b4f08e7f8902">dqrsl</a></div><div class="ttdeci">int dqrsl(float a[], int lda, int n, int k, float qraux[], float y[], float qy[], float qty[], float b[], float rsd[], float ab[], int job)</div><div class="ttdef"><b>Definition:</b> <a href="qr__solve_8c_source.html#l00985">qr_solve.c:985</a></div></div>
@@ -1748,14 +1749,13 @@ $(document).ready(function(){initNavTree('qr__solve_8c_source.html','');});
 <div class="ttc" id="qr__solve_8c_html_afa0182a4c21d9992eae335332c52a1f5"><div class="ttname"><a href="qr__solve_8c.html#afa0182a4c21d9992eae335332c52a1f5">dswap</a></div><div class="ttdeci">void dswap(int n, float x[], int incx, float y[], int incy)</div><div class="ttdef"><b>Definition:</b> <a href="qr__solve_8c_source.html#l01433">qr_solve.c:1433</a></div></div>
 <div class="ttc" id="r8lib__min_8c_html_ae73c30e1658d722ce9ff2e671db331ca"><div class="ttname"><a href="r8lib__min_8c.html#ae73c30e1658d722ce9ff2e671db331ca">i4_min</a></div><div class="ttdeci">int i4_min(int i1, int i2)</div><div class="ttdef"><b>Definition:</b> <a href="r8lib__min_8c_source.html#l00474">r8lib_min.c:474</a></div></div>
 <div class="ttc" id="qr__solve_8c_html_aefe21c521674eb7a8c9f9ea74864f29e"><div class="ttname"><a href="qr__solve_8c.html#aefe21c521674eb7a8c9f9ea74864f29e">dqrls</a></div><div class="ttdeci">int dqrls(float a[], int lda, int m, int n, float tol, int *kr, float b[], float x[], float rsd[], int jpvt[], float qraux[], int itask)</div><div class="ttdef"><b>Definition:</b> <a href="qr__solve_8c_source.html#l00714">qr_solve.c:714</a></div></div>
-<div class="ttc" id="navigation_8c_html_a9314d7061c454ecf2111d3965db8f23f"><div class="ttname"><a href="navigation_8c.html#a9314d7061c454ecf2111d3965db8f23f">UNUSED</a></div><div class="ttdeci">uint8_t last_wp UNUSED</div><div class="ttdef"><b>Definition:</b> <a href="navigation_8c_source.html#l00092">navigation.c:92</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_29343b6f5fcd4b75a5dfbb985ff56864.html">math</a></li><li class="navelem"><a class="el" href="dir_879cab577fd2f9083eff958fc2dd0263.html">qr_solve</a></li><li class="navelem"><a class="el" href="qr__solve_8c.html">qr_solve.c</a></li>
-    <li class="footer">Generated on Wed Nov 8 2017 10:01:35 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:02:40 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

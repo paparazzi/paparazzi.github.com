@@ -68,6 +68,7 @@ var energy__ctrl_8c =
     [ "v_ctl_max_climb", "energy__ctrl_8c.html#a51438d5875cea79cc711298b3cc6e5df", null ],
     [ "v_ctl_mode", "energy__ctrl_8c.html#afa5597f66c8d01e0afcfa047afe6964b", null ],
     [ "v_ctl_pitch_setpoint", "energy__ctrl_8c.html#a7c417874ed0ec332df4832ed1e1d957d", null ],
+    [ "v_ctl_speed_mode", "energy__ctrl_8c.html#aa4ebe07275990427a055a732e6f37740", null ],
     [ "v_ctl_throttle_setpoint", "energy__ctrl_8c.html#a1ee0cbf7d1ed331f44539840507a7436", null ],
     [ "v_ctl_throttle_slewed", "energy__ctrl_8c.html#a91af08f8c8981542a5e44b874c7c39ad", null ]
 ];

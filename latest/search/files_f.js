@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['object_5ftracking_2ec',['object_tracking.c',['../object__tracking_8c.html',1,'']]],
+  ['object_5ftracking_2eh',['object_tracking.h',['../object__tracking_8h.html',1,'']]],
   ['obstacle_5favoidance_2ec',['obstacle_avoidance.c',['../obstacle__avoidance_8c.html',1,'']]],
   ['obstacle_5favoidance_2eh',['obstacle_avoidance.h',['../obstacle__avoidance_8h.html',1,'']]],
   ['olimex_5flpc_5fh2148_2eh',['olimex_lpc_h2148.h',['../olimex__lpc__h2148_8h.html',1,'']]],
@@ -21,6 +23,10 @@ var searchData=
   ['openlog_2eh',['openlog.h',['../openlog_8h.html',1,'']]],
   ['openpilot_5frevo_5f1_2e0_2eh',['openpilot_revo_1.0.h',['../openpilot__revo__1_80_8h.html',1,'']]],
   ['openpilot_5frevo_5fnano_2eh',['openpilot_revo_nano.h',['../openpilot__revo__nano_8h.html',1,'']]],
+  ['optical_5fflow_5ffunctions_2ec',['optical_flow_functions.c',['../optical__flow__functions_8c.html',1,'']]],
+  ['optical_5fflow_5ffunctions_2eh',['optical_flow_functions.h',['../optical__flow__functions_8h.html',1,'']]],
+  ['optical_5fflow_5fhover_2ec',['optical_flow_hover.c',['../optical__flow__hover_8c.html',1,'']]],
+  ['optical_5fflow_5fhover_2eh',['optical_flow_hover.h',['../optical__flow__hover_8h.html',1,'']]],
   ['optical_5fflow_5flanding_2ec',['optical_flow_landing.c',['../optical__flow__landing_8c.html',1,'']]],
   ['optical_5fflow_5flanding_2eh',['optical_flow_landing.h',['../optical__flow__landing_8h.html',1,'']]],
   ['opticflow_5fcalculator_2ec',['opticflow_calculator.c',['../opticflow__calculator_8c.html',1,'']]],

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -158,6 +158,7 @@ $(document).ready(function(){initNavTree('functions_vars_g.html','');});
 <li>gain
 : <a class="el" href="ads1220_8h.html#a8dd28597a736ef35478e8c4bfe7b6d34">Ads1220Config</a>
 , <a class="el" href="avi__isp__lens__shading__correction_8h.html#aff85593c6af7302cca1455894002e02f">avi_isp_lens_shading_correction_regs</a>
+, <a class="el" href="bebop__ae__awb_8h.html#a87eb3d5f02c3968e48abdf8e750b7d43">awb_setting_t</a>
 , <a class="el" href="hmc58xx_8h.html#a86907824abf6570ce4572e912d21cfe0">Hmc58xxConfig</a>
 </li>
 <li>gain_blue
@@ -171,6 +172,18 @@ $(document).ready(function(){initNavTree('functions_vars_g.html','');});
 </li>
 <li>gain_red
 : <a class="el" href="mt9f002_8h.html#a2fd99a1bdc39f05100efdb72b5c16358">mt9f002_t</a>
+</li>
+<li>gain_scheduling
+: <a class="el" href="bebop__ae__awb_8h.html#a0278c42703202f87b8e0baf8c3d2b0d6">awb_setting_t</a>
+</li>
+<li>gain_scheduling_step
+: <a class="el" href="bebop__ae__awb_8h.html#afaee7f5e3ca3f0479f33a9b8ffc0078c">awb_setting_t</a>
+</li>
+<li>gain_scheduling_target
+: <a class="el" href="bebop__ae__awb_8h.html#a7b00fe3c305b821433d45f16f6a72586">awb_setting_t</a>
+</li>
+<li>gain_scheduling_tolerance
+: <a class="el" href="bebop__ae__awb_8h.html#a1d8fe0d90ace59cf56597c8fd6cbfed1">awb_setting_t</a>
 </li>
 <li>gains
 : <a class="el" href="ahrs__float__invariant_8h.html#ab519c5370ae87809e408a087ee457c07">AhrsFloatInv</a>
@@ -241,6 +254,9 @@ $(document).ready(function(){initNavTree('functions_vars_g.html','');});
 <li>got_first_img
 : <a class="el" href="opticflow__calculator_8h.html#a50177a5e749edc0bdc8ea6a33fee44ac">opticflow_t</a>
 </li>
+<li>goto_wp
+: <a class="el" href="nav__rover__base_8h.html#a667c4d3065094de1673eb6022586c140">RoverNavBase</a>
+</li>
 <li>gps
 : <a class="el" href="ins__skeleton_8h.html#ab450359b8f4aa169fd7462933d6b81a2">InsModuleInt</a>
 , <a class="el" href="nps__sensors_8h.html#a02ae23248b64104d14fa2b05e520e14f">NpsSensors</a>
@@ -263,6 +279,9 @@ $(document).ready(function(){initNavTree('functions_vars_g.html','');});
 </li>
 <li>gps_fix
 : <a class="el" href="vn200__serial_8h.html#a9bacb260e38befb1008eae59075a4cd8">VNData</a>
+</li>
+<li>gps_initialized
+: <a class="el" href="ins__mekf__wind__wrapper_8h.html#ac05e099b15ac88e5eee9cbbc7a457d39">InsMekfWind</a>
 </li>
 <li>gps_nb_ovrn
 : <a class="el" href="gps__nmea_8h.html#a9c077c9ee13244ae940a4c4b1a8b7b3d">GpsNmea</a>
@@ -418,7 +437,7 @@ $(document).ready(function(){initNavTree('functions_vars_g.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Nov 8 2017 10:03:14 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:04:30 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

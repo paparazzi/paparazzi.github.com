@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['xsens',['Xsens',['../xsens700_8h.html#structXsens',1,'']]],
-  ['xsenstime',['XsensTime',['../xsens700_8h.html#structXsensTime',1,'']]]
+  ['zambonisurvey',['ZamboniSurvey',['../nav__survey__zamboni_8h.html#structZamboniSurvey',1,'']]]
 ];

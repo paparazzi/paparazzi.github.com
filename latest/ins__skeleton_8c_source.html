@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -236,7 +236,7 @@ $(document).ready(function(){initNavTree('ins__skeleton_8c_source.html','');});
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="comment"> * wrapper functions</span></div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="comment"> **********************************************************/</span></div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div>
-<div class="line"><a name="l00137"></a><span class="lineno"><a class="line" href="ins_8h.html#a14cb66a86c67d8b9216a8c12f58c311b">  137</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="ins__skeleton_8c.html#a14cb66a86c67d8b9216a8c12f58c311b">ins_reset_local_origin</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00137"></a><span class="lineno"><a class="line" href="ins__skeleton_8c.html#a14cb66a86c67d8b9216a8c12f58c311b">  137</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="ins__skeleton_8c.html#a14cb66a86c67d8b9216a8c12f58c311b">ins_reset_local_origin</a>(<span class="keywordtype">void</span>)</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;{</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="ins__skeleton_8c.html#ae3ad45d1449f0072980c3b17c6ca781a">ins_module</a>.<a class="code" href="ins__skeleton_8h.html#ab450359b8f4aa169fd7462933d6b81a2">gps</a>.<a class="code" href="gps_8h.html#afeffb02bdd18d27a87e96bb77175168f">fix</a> &gt;= <a class="code" href="gps_8h.html#ac5e980c8325a29dd79a45ed26af404be">GPS_FIX_3D</a>) {</div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <a class="code" href="group__math__geodetic__int.html#ga5afd098a83e572b854e157486ccb569f">ltp_def_from_ecef_i</a>(&amp;<a class="code" href="ins__skeleton_8c.html#ae3ad45d1449f0072980c3b17c6ca781a">ins_module</a>.<a class="code" href="ins__skeleton_8h.html#a63284b19159a7a330d4aa29abc801744">ltp_def</a>, &amp;<a class="code" href="ins__skeleton_8c.html#ae3ad45d1449f0072980c3b17c6ca781a">ins_module</a>.<a class="code" href="ins__skeleton_8h.html#ab450359b8f4aa169fd7462933d6b81a2">gps</a>.<a class="code" href="gps_8h.html#a4b4e800eef9609fd474c0c92fd4836ff">ecef_pos</a>);</div>
@@ -416,7 +416,7 @@ $(document).ready(function(){initNavTree('ins__skeleton_8c_source.html','');});
 <div class="ttc" id="ins__skeleton_8c_html_ac73bf250ba772215adbe88d71bec0a8f"><div class="ttname"><a href="ins__skeleton_8c.html#ac73bf250ba772215adbe88d71bec0a8f">ins_module_update_gps</a></div><div class="ttdeci">void WEAK ins_module_update_gps(struct GpsState *gps_s, float dt)</div><div class="ttdef"><b>Definition:</b> <a href="ins__skeleton_8c_source.html#l00087">ins_skeleton.c:87</a></div></div>
 <div class="ttc" id="gps_8h_html_a8c0416718a59e50261890cd870f716ea"><div class="ttname"><a href="gps_8h.html#a8c0416718a59e50261890cd870f716ea">GpsState::ned_vel</a></div><div class="ttdeci">struct NedCoor_i ned_vel</div><div class="ttdoc">speed NED in cm/s </div><div class="ttdef"><b>Definition:</b> <a href="gps_8h_source.html#l00090">gps.h:90</a></div></div>
 <div class="ttc" id="ins__skeleton_8c_html_af8c616627ecbb4860e359944c97dc718"><div class="ttname"><a href="ins__skeleton_8c.html#af8c616627ecbb4860e359944c97dc718">gps_ev</a></div><div class="ttdeci">static abi_event gps_ev</div><div class="ttdef"><b>Definition:</b> <a href="ins__skeleton_8c_source.html#l00068">ins_skeleton.c:68</a></div></div>
-<div class="ttc" id="nps__autopilot_8h_html_a636593c9bb6482b2a36d64bef4975310"><div class="ttname"><a href="nps__autopilot_8h.html#a636593c9bb6482b2a36d64bef4975310">sim_overwrite_ins</a></div><div class="ttdeci">void sim_overwrite_ins(void)</div><div class="ttdef"><b>Definition:</b> <a href="nps__autopilot__fixedwing_8c_source.html#l00242">nps_autopilot_fixedwing.c:242</a></div></div>
+<div class="ttc" id="nps__autopilot_8h_html_a636593c9bb6482b2a36d64bef4975310"><div class="ttname"><a href="nps__autopilot_8h.html#a636593c9bb6482b2a36d64bef4975310">sim_overwrite_ins</a></div><div class="ttdeci">void sim_overwrite_ins(void)</div><div class="ttdef"><b>Definition:</b> <a href="nps__autopilot__fixedwing_8c_source.html#l00266">nps_autopilot_fixedwing.c:266</a></div></div>
 <div class="ttc" id="group__math__geodetic__int_html_ga5afd098a83e572b854e157486ccb569f"><div class="ttname"><a href="group__math__geodetic__int.html#ga5afd098a83e572b854e157486ccb569f">ltp_def_from_ecef_i</a></div><div class="ttdeci">void ltp_def_from_ecef_i(struct LtpDef_i *def, struct EcefCoor_i *ecef)</div><div class="ttdef"><b>Definition:</b> <a href="pprz__geodetic__int_8c_source.html#l00060">pprz_geodetic_int.c:60</a></div></div>
 <div class="ttc" id="ins__skeleton_8h_html"><div class="ttname"><a href="ins__skeleton_8h.html">ins_skeleton.h</a></div><div class="ttdoc">Paparazzi specific wrapper to run simple module based INS. </div></div>
 <div class="ttc" id="ins__skeleton_8h_html_a63284b19159a7a330d4aa29abc801744"><div class="ttname"><a href="ins__skeleton_8h.html#a63284b19159a7a330d4aa29abc801744">InsModuleInt::ltp_def</a></div><div class="ttdeci">struct LtpDef_i ltp_def</div><div class="ttdef"><b>Definition:</b> <a href="ins__skeleton_8h_source.html#l00041">ins_skeleton.h:41</a></div></div>
@@ -426,7 +426,7 @@ $(document).ready(function(){initNavTree('ins__skeleton_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_12fb52dac4e3837dec02c6544f4d82f8.html">ins</a></li><li class="navelem"><a class="el" href="ins__skeleton_8c.html">ins_skeleton.c</a></li>
-    <li class="footer">Generated on Wed Nov 8 2017 10:01:41 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:02:47 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

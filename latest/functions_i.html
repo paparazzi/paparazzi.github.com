@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -151,8 +151,14 @@ $(document).ready(function(){initNavTree('functions_i.html','');});
 : <a class="el" href="digital__cam_2catia_2protocol_8h.html#a84fd5a6b454d55a58ca0f5e923c23105">dc_shot_union</a>
 , <a class="el" href="stabilization__attitude__common__float_8h.html#af92656755f70798294413b0e009aac53">FloatAttitudeGains</a>
 , <a class="el" href="high__pass__filter_8h.html#af693f49196c6e83ae874e5ef0d0a55c1">FourthOrderHighPass</a>
-, <a class="el" href="rotorcraft_2guidance_2guidance__h_8h.html#a9f6ab14a47cb5b132c1fa6e98d0119fe">HorizontalGuidanceGains</a>
+</li>
+<li>I
+: <a class="el" href="optical__flow__functions_8h.html#a49065260e692807bd9812c67fd1f60d9">GainsPID</a>
+</li>
+<li>i
+: <a class="el" href="rotorcraft_2guidance_2guidance__h_8h.html#a9f6ab14a47cb5b132c1fa6e98d0119fe">HorizontalGuidanceGains</a>
 , <a class="el" href="stabilization__attitude__common__int_8h.html#a9b6f3fd15b242cec0359c2d1b2ffd669">Int32AttitudeGains</a>
+, <a class="el" href="rover__guidance_8h.html#a84be25fddcd69db9d44c99cc62f062e3">RoverGuidancePID</a>
 , <a class="el" href="low__pass__filter_8h.html#af724a38e8d130297d1b58315ffa3a688">SecondOrderLowPass</a>
 , <a class="el" href="low__pass__filter_8h.html#adfeb2766a030a1345532cf0e31c9437a">SecondOrderLowPass_int</a>
 </li>
@@ -239,8 +245,10 @@ $(document).ready(function(){initNavTree('functions_i.html','');});
 , <a class="el" href="actuators__xvert_8h.html#a1d2d411afadaa983d6475ef2aa494e34">EscData</a>
 , <a class="el" href="high__speed__logger__spi__link_8h.html#a10b837de87b5c91442369cefb1b9da9c">high_speed_logger_spi_link_data</a>
 , <a class="el" href="blob__finder_8h.html#a398b4969b250ece6c0e0de2cbb39bf95">image_label_t</a>
+, <a class="el" href="jevois_8c.html#a12e6214ece47c41bc99d5234eb0c383f">jevois_msg_t</a>
 , <a class="el" href="logger__uart_8h.html#a19a133ede23fc042197628cfac27b519">logger_uart_data_struct</a>
 , <a class="el" href="telemetry__common_8h.html#aa777fe9ae55c6448e53c35cde3f21847">telemetry_cb_slots</a>
+, <a class="el" href="xsens__parser_8h.html#a3d4b9129ee4a70bf8023626a2c28bc93">XsensParser</a>
 </li>
 <li>idac
 : <a class="el" href="ads1220_8h.html#a70ac969349208cbc802e3c1acc1c9f78">Ads1220Config</a>
@@ -248,9 +256,12 @@ $(document).ready(function(){initNavTree('functions_i.html','');});
 <li>idx
 : <a class="el" href="delayed__first__order__lowpass__filter_8h.html#a1e4e4bb2a8c09a52b738b095943ee418">delayed_first_order_lowpass_filter_t</a>
 , <a class="el" href="dw1000__arduino_8c.html#a4edee60028d57401bf83d97e1f212121">DW1000</a>
+, <a class="el" href="gec__dl_8h.html#aae535f36d7c1ac94441e1de3c123d458">gec_whitelist</a>
+, <a class="el" href="jevois_8c.html#a186fad305db16c311d4d235355968a6b">jevois_t</a>
 , <a class="el" href="sbus__common_8h.html#a3e2b363f525e59ca90976968922e7418">Sbus</a>
 , <a class="el" href="sdlogger__spi__direct_8h.html#a87128fdb4e3130609732b402ca3dd8ae">sdlogger_spi_periph</a>
 , <a class="el" href="hott__common_8h.html#a12aebff02d7cb2a2a4da019cbdcd6a40">SHott</a>
+, <a class="el" href="spektrum_8h.html#a6985e4f13e0b837ab788bd20daacb693">spektrum_sat_t</a>
 </li>
 <li>idx_buf
 : <a class="el" href="group__i2c.html#adc23e331e23ecbdabc4510adeb43f8c2">i2c_periph</a>
@@ -352,6 +363,9 @@ $(document).ready(function(){initNavTree('functions_i.html','');});
 <li>info
 : <a class="el" href="vi_8h.html#ad561aa0f6e51fcc56e7379bd73806823">VehicleInterface</a>
 </li>
+<li>init
+: <a class="el" href="gec__dl_8h.html#ac13bb3392f1be70d4b1321de381f4873">gec_whitelist</a>
+</li>
 <li>init_dt
 : <a class="el" href="nps__fdm_8h.html#a3169da126f2088c6a9df6760946843a1">NpsFdm</a>
 </li>
@@ -386,7 +400,8 @@ $(document).ready(function(){initNavTree('functions_i.html','');});
 : <a class="el" href="nav__catapult_8h.html#a69c357fd90bbc4ceb3c5422273053e18">nav_catapult_struct</a>
 </li>
 <li>initialized
-: <a class="el" href="adxl345__i2c_8h.html#a37480f4d96b448a49e5f158880a2039a">Adxl345_I2c</a>
+: <a class="el" href="modules_2actuators_2actuators__md25_8h.html#a880d9cea25602d7f4157e639b872ebff">ActuatorsMD25</a>
+, <a class="el" href="adxl345__i2c_8h.html#a37480f4d96b448a49e5f158880a2039a">Adxl345_I2c</a>
 , <a class="el" href="adxl345__spi_8h.html#a859fc044d9d5ade66994d9b8db4d9d05">Adxl345_Spi</a>
 , <a class="el" href="ak8963_8h.html#a43c269b2202c4d458eefd4caeddee09a">Ak8963</a>
 , <a class="el" href="ak8975_8h.html#a9b1bc2058970c375dc5bbf4244369d67">Ak8975</a>
@@ -413,7 +428,8 @@ $(document).ready(function(){initNavTree('functions_i.html','');});
 : <a class="el" href="range__forcefield_8h.html#a1175459d31a49a18edcf31c74bd2f28a">range_forcefield_param_t</a>
 </li>
 <li>input
-: <a class="el" href="vi_8h.html#a63dca4642131593d26db22a363a88693">VehicleInterface</a>
+: <a class="el" href="optical__flow__functions_8h.html#a4ad1408a92faf2a8ba8631ccafd230cc">OFhistory</a>
+, <a class="el" href="vi_8h.html#a63dca4642131593d26db22a363a88693">VehicleInterface</a>
 </li>
 <li>input_buf
 : <a class="el" href="cyrf6936_8h.html#aa8664c0ed6c3430db8a18b548597f27e">Cyrf6936</a>
@@ -426,6 +442,9 @@ $(document).ready(function(){initNavTree('functions_i.html','');});
 </li>
 <li>input_length
 : <a class="el" href="group__spi.html#a826bfe3ef31eee73f45cfb9d1aba2f83">spi_transaction</a>
+</li>
+<li>inputs
+: <a class="el" href="ins__mekf__wind_8cpp.html#a527e7a6bcf47e7f5f3f995873a258e12">InsMekfWindPrivate</a>
 </li>
 <li>inquiry
 : <a class="el" href="usb__msd_8h.html#a8a468fc28f3fae3cc307a5081a29397a">USBMassStorageDriver</a>
@@ -519,6 +538,7 @@ $(document).ready(function(){initNavTree('functions_i.html','');});
 , <a class="el" href="ahrs__int__cmpl__quat_8h.html#a3ad65b90ba554f474f4eaf08a877a8b5">AhrsIntCmplQuat</a>
 , <a class="el" href="ahrs__float__mlkf_8h.html#a18c0fd51dd202a9d3d7592b46a38f414">AhrsMlkf</a>
 , <a class="el" href="ins__float__invariant_8h.html#a63649cae217c60393b1f46d71b632f1b">InsFloatInv</a>
+, <a class="el" href="ins__mekf__wind__wrapper_8h.html#a672a89df0129cd088152caf60cfd3768">InsMekfWind</a>
 </li>
 <li>is_configured
 : <a class="el" href="gps__nmea_8h.html#ad61e507e331a3413630a4bf2256a1ecd">GpsNmea</a>
@@ -558,7 +578,7 @@ $(document).ready(function(){initNavTree('functions_i.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Nov 8 2017 10:03:13 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:04:30 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

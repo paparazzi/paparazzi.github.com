@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -191,8 +191,8 @@ Macros</h2></td></tr>
 <div class="line">    const <span class="keywordtype">float</span> m02 = _S[1][0]*_S[2][1] - _S[1][1]*_S[2][0];            \</div>
 <div class="line">    const <span class="keywordtype">float</span> m12 = _S[0][0]*_S[2][1] - _S[0][1]*_S[2][0];            \</div>
 <div class="line">    const <span class="keywordtype">float</span> m22 = _S[0][0]*_S[1][1] - _S[0][1]*_S[1][0];            \</div>
-<div class="line">    float det = _S[0][0]*m00 - _S[1][0]*m10 + _S[2][0]*m20;             <a class="code" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a14a004ce07f47580a6800c76982ea599">\</a></div>
-<div class="line"><a class="code" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a14a004ce07f47580a6800c76982ea599">    if</a> (fabs(det) &lt; FLT_EPSILON) {                                      \</div>
+<div class="line">    float det = _S[0][0]*m00 - _S[1][0]*m10 + _S[2][0]*m20;             \</div>
+<div class="line">    if (fabs(det) &lt; FLT_EPSILON) {                                      \</div>
 <div class="line">      <span class="comment">/* If the determinant is too small then set it to epsilon preserving sign. */</span> <a class="code" href="pprz__simple__matrix_8h.html#a09eb14a8c70b8473c12388ce49e7cb0d">\</a></div>
 <div class="line"><a class="code" href="pprz__simple__matrix_8h.html#a09eb14a8c70b8473c12388ce49e7cb0d">      warn_message</a>(<span class="stringliteral">&quot;warning: %s:%d MAT_INV33 trying to invert non-invertable matrix &#39;%s&#39; and put result in &#39;%s&#39;.\n&quot;</span>, __FILE__, __LINE__, #_S, #_invS); \</div>
 <div class="line">      det = copysignf(FLT_EPSILON, det);                                \</div>
@@ -208,7 +208,6 @@ Macros</h2></td></tr>
 <div class="line">    _invS[2][2] =  m22 / det;                                           \</div>
 <div class="line">  }</div>
 <div class="ttc" id="pprz__simple__matrix_8h_html_a09eb14a8c70b8473c12388ce49e7cb0d"><div class="ttname"><a href="pprz__simple__matrix_8h.html#a09eb14a8c70b8473c12388ce49e7cb0d">warn_message</a></div><div class="ttdeci">#define warn_message(...)</div><div class="ttdef"><b>Definition:</b> <a href="pprz__simple__matrix_8h_source.html#l00040">pprz_simple_matrix.h:40</a></div></div>
-<div class="ttc" id="stm32_2subsystems_2radio__control_2spektrum__arch_8c_html_a14a004ce07f47580a6800c76982ea599"><div class="ttname"><a href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a14a004ce07f47580a6800c76982ea599">if</a></div><div class="ttdeci">if(PrimarySpektrumState.SpektrumTimer)</div><div class="ttdef"><b>Definition:</b> <a href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00605">spektrum_arch.c:605</a></div></div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="pprz__simple__matrix_8h_source.html#l00099">99</a> of file <a class="el" href="pprz__simple__matrix_8h_source.html">pprz_simple_matrix.h</a>.</p>
 
@@ -480,7 +479,7 @@ Macros</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_29343b6f5fcd4b75a5dfbb985ff56864.html">math</a></li><li class="navelem"><a class="el" href="pprz__simple__matrix_8h.html">pprz_simple_matrix.h</a></li>
-    <li class="footer">Generated on Wed Nov 8 2017 10:02:14 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:03:23 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

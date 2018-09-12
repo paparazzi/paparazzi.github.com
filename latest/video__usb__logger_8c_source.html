@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -182,12 +182,12 @@ $(document).ready(function(){initNavTree('video__usb__logger_8c_source.html','')
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#else</span></div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    FILE *fp = fopen(save_name, <span class="stringliteral">&quot;w&quot;</span>);</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">if</span> (fp == NULL) {</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      <a class="code" href="kremlib_8h.html#a3cb9f0894fab1c8fbb0753c9c7c2a8d9">printf</a>(<span class="stringliteral">&quot;[video_thread-thread] Could not write shot %s.\n&quot;</span>, save_name);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      printf(<span class="stringliteral">&quot;[video_thread-thread] Could not write shot %s.\n&quot;</span>, save_name);</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      <span class="comment">// Save it to the file and close it</span></div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      fwrite(img_jpeg-&gt;buf, <span class="keyword">sizeof</span>(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>), img_jpeg-&gt;buf_size, fp);</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      fclose(fp);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      <a class="code" href="kremlib_8h.html#a3cb9f0894fab1c8fbb0753c9c7c2a8d9">printf</a>(<span class="stringliteral">&quot;Wrote image\n&quot;</span>);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      printf(<span class="stringliteral">&quot;Wrote image\n&quot;</span>);</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
@@ -272,7 +272,7 @@ $(document).ready(function(){initNavTree('video__usb__logger_8c_source.html','')
 <div class="ttc" id="group__math__algebra__float_html_a4b2c73d59e89d78354658b20058720e0"><div class="ttname"><a href="group__math__algebra__float.html#a4b2c73d59e89d78354658b20058720e0">FloatEulers::phi</a></div><div class="ttdeci">float phi</div><div class="ttdoc">in radians </div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__float_8h_source.html#l00085">pprz_algebra_float.h:85</a></div></div>
 <div class="ttc" id="pose__history_8h_html_a08ca71549471f2eb45159e79df960e39"><div class="ttname"><a href="pose__history_8h.html#a08ca71549471f2eb45159e79df960e39">pose_t::rates</a></div><div class="ttdeci">struct FloatRates rates</div><div class="ttdef"><b>Definition:</b> <a href="pose__history_8h_source.html#l00034">pose_history.h:34</a></div></div>
 <div class="ttc" id="group__math__algebra__float_html_a75e3090314c4ad6edf12f7c08d9c5c0a"><div class="ttname"><a href="group__math__algebra__float.html#a75e3090314c4ad6edf12f7c08d9c5c0a">FloatRates::r</a></div><div class="ttdeci">float r</div><div class="ttdoc">in rad/s </div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__float_8h_source.html#l00096">pprz_algebra_float.h:96</a></div></div>
-<div class="ttc" id="image_8c_html_ab5cc0250c461b9d2f043e4884f6b9a53"><div class="ttname"><a href="image_8c.html#ab5cc0250c461b9d2f043e4884f6b9a53">image_create</a></div><div class="ttdeci">void image_create(struct image_t *img, uint16_t width, uint16_t height, enum image_type type)</div><div class="ttdoc">Create a new image. </div><div class="ttdef"><b>Definition:</b> <a href="image_8c_source.html#l00038">image.c:38</a></div></div>
+<div class="ttc" id="image_8c_html_ab5cc0250c461b9d2f043e4884f6b9a53"><div class="ttname"><a href="image_8c.html#ab5cc0250c461b9d2f043e4884f6b9a53">image_create</a></div><div class="ttdeci">void image_create(struct image_t *img, uint16_t width, uint16_t height, enum image_type type)</div><div class="ttdoc">Create a new image. </div><div class="ttdef"><b>Definition:</b> <a href="image_8c_source.html#l00039">image.c:39</a></div></div>
 <div class="ttc" id="image_8h_html_structimage__t"><div class="ttname"><a href="image_8h.html#structimage__t">image_t</a></div><div class="ttdef"><b>Definition:</b> <a href="image_8h_source.html#l00043">image.h:43</a></div></div>
 <div class="ttc" id="pose__history_8c_html_aad26510aa5a6a4e21e4f1721010c8968"><div class="ttname"><a href="pose__history_8c.html#aad26510aa5a6a4e21e4f1721010c8968">get_rotation_at_timestamp</a></div><div class="ttdeci">struct pose_t get_rotation_at_timestamp(uint32_t timestamp)</div><div class="ttdoc">Given a pprz timestamp in used (obtained with get_sys_time_usec) we return the pose in FloatEulers cl...</div><div class="ttdef"><b>Definition:</b> <a href="pose__history_8c_source.html#l00053">pose_history.c:53</a></div></div>
 <div class="ttc" id="group__math__algebra__float_html_adafcac96d547392e830b872ac4dcdc75"><div class="ttname"><a href="group__math__algebra__float.html#adafcac96d547392e830b872ac4dcdc75">FloatEulers::psi</a></div><div class="ttdeci">float psi</div><div class="ttdoc">in radians </div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__float_8h_source.html#l00087">pprz_algebra_float.h:87</a></div></div>
@@ -313,7 +313,6 @@ $(document).ready(function(){initNavTree('video__usb__logger_8c_source.html','')
 <div class="ttc" id="video__usb__logger_8c_html_a513b43b4ffa70d39abed0047e7cc0e26"><div class="ttname"><a href="video__usb__logger_8c.html#a513b43b4ffa70d39abed0047e7cc0e26">VIDEO_USB_LOGGER_FPS</a></div><div class="ttdeci">#define VIDEO_USB_LOGGER_FPS</div><div class="ttdoc">Default FPS (zero means run at camera fps) </div><div class="ttdef"><b>Definition:</b> <a href="video__usb__logger_8c_source.html#l00047">video_usb_logger.c:47</a></div></div>
 <div class="ttc" id="group__state__position_html_gaf9a3b3ed4f6a011ae65d49d78bf4aa25"><div class="ttname"><a href="group__state__position.html#gaf9a3b3ed4f6a011ae65d49d78bf4aa25">stateGetPositionNed_i</a></div><div class="ttdeci">static struct NedCoor_i * stateGetPositionNed_i(void)</div><div class="ttdoc">Get position in local NED coordinates (int). </div><div class="ttdef"><b>Definition:</b> <a href="state_8h_source.html#l00665">state.h:665</a></div></div>
 <div class="ttc" id="video__usb__logger_8c_html_a48037f75df7ef6c2c81838e65dc73258"><div class="ttname"><a href="video__usb__logger_8c.html#a48037f75df7ef6c2c81838e65dc73258">foldername</a></div><div class="ttdeci">char foldername[512]</div><div class="ttdef"><b>Definition:</b> <a href="video__usb__logger_8c_source.html#l00055">video_usb_logger.c:55</a></div></div>
-<div class="ttc" id="kremlib_8h_html_a3cb9f0894fab1c8fbb0753c9c7c2a8d9"><div class="ttname"><a href="kremlib_8h.html#a3cb9f0894fab1c8fbb0753c9c7c2a8d9">printf</a></div><div class="ttdeci">#define printf</div><div class="ttdef"><b>Definition:</b> <a href="kremlib_8h_source.html#l00242">kremlib.h:242</a></div></div>
 <div class="ttc" id="group__state__acceleration_html_gab55b482bd9fe875141bafd34beda8bb4"><div class="ttname"><a href="group__state__acceleration.html#gab55b482bd9fe875141bafd34beda8bb4">stateGetAccelNed_i</a></div><div class="ttdeci">static struct NedCoor_i * stateGetAccelNed_i(void)</div><div class="ttdoc">Get acceleration in NED coordinates (int). </div><div class="ttdef"><b>Definition:</b> <a href="state_8h_source.html#l01020">state.h:1020</a></div></div>
 <div class="ttc" id="image_8h_html_af039c7afe08a5eb2cff06e357227cdb8ae57daacf0b164b5e0c959eb664e3421b"><div class="ttname"><a href="image_8h.html#af039c7afe08a5eb2cff06e357227cdb8ae57daacf0b164b5e0c959eb664e3421b">IMAGE_JPEG</a></div><div class="ttdoc">An JPEG encoded image (not per pixel encoded) </div><div class="ttdef"><b>Definition:</b> <a href="image_8h_source.html#l00038">image.h:38</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -322,7 +321,7 @@ $(document).ready(function(){initNavTree('video__usb__logger_8c_source.html','')
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_304e79c9f5d09ea65a2f55aafb6a6b9d.html">computer_vision</a></li><li class="navelem"><a class="el" href="video__usb__logger_8c.html">video_usb_logger.c</a></li>
-    <li class="footer">Generated on Wed Nov 8 2017 10:01:38 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:02:44 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -1,6 +1,7 @@
 var pprz__algebra__float_8c =
 [
     [ "float_eulers_of_quat", "group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8", null ],
+    [ "float_eulers_of_quat_yxz", "group__math__algebra__float.html#ga2209f7781fa014668eae2909541acb43", null ],
     [ "float_eulers_of_quat_zxy", "group__math__algebra__float.html#ga94f781d7f49b3e8fe681bd456faabbd1", null ],
     [ "float_eulers_of_rmat", "group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76", null ],
     [ "float_mat2_mult", "group__math__algebra__float.html#gae412eb428563fdc69dd7ee229e027331", null ],
@@ -23,6 +24,7 @@ var pprz__algebra__float_8c =
     [ "float_quat_inv_comp_norm_shortest", "group__math__algebra__float.html#ga154c3d68389b47e11fcdace73b1d75a7", null ],
     [ "float_quat_of_axis_angle", "group__math__algebra__float.html#ga0ad75a3c32ba844b0aae704455dc2257", null ],
     [ "float_quat_of_eulers", "group__math__algebra__float.html#ga99c8f1ff70a5b638cf87ea816f1756a2", null ],
+    [ "float_quat_of_eulers_yxz", "group__math__algebra__float.html#ga7d905b22661b1d2c90de5e63b0d7b864", null ],
     [ "float_quat_of_eulers_zxy", "group__math__algebra__float.html#ga2b04e80e9af8e229f2249bb4b6514fa8", null ],
     [ "float_quat_of_orientation_vect", "group__math__algebra__float.html#ga9698d02fc9515e6638181602aa04536a", null ],
     [ "float_quat_of_rmat", "group__math__algebra__float.html#ga29a7db3c967cea290d25b28b4d17f01f", null ],

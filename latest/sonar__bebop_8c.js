@@ -3,6 +3,8 @@ var sonar__bebop_8c =
     [ "SONAR_BEBOP_ADC_BUFFER_SIZE", "sonar__bebop_8c.html#a4e8a10619b7218be47016114a501e943", null ],
     [ "SONAR_BEBOP_ADC_MAX_VALUE", "sonar__bebop_8c.html#a1c24ac701ff0a3680cdfc5dbc60bf57a", null ],
     [ "SONAR_BEBOP_INX_DIFF_TO_DIST", "sonar__bebop_8c.html#aa58c52ed6fb874f1db52977057a1242d", null ],
+    [ "SONAR_BEBOP_MAX_TRANS_TIME", "sonar__bebop_8c.html#a8ec0d211210689df81801b49607aef27", null ],
+    [ "SONAR_BEBOP_MIN_PEAK_VAL", "sonar__bebop_8c.html#a5e6595e3723dd6cb79c4c5d658493c7e", null ],
     [ "SONAR_BEBOP_PEAK_THRESHOLD", "sonar__bebop_8c.html#ad38ba37e0445c0f57ef79e1c154ca7a3", null ],
     [ "SONAR_BEBOP_TRANSITION_COUNT", "sonar__bebop_8c.html#a6017153886b228ceea828e5d7333a20b", null ],
     [ "SONAR_BEBOP_TRANSITION_HIGH_TO_LOW", "sonar__bebop_8c.html#ab5d4a93ccc6b9424f012526922b6344c", null ],

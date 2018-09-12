@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -537,37 +537,27 @@ $(document).ready(function(){initNavTree('apogee__1_80_8h_source.html','');});
 <div class="line"><a name="l00426"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a6c01b610a4ef6d66079fcbdc464e6208">  426</a></span>&#160;<span class="preprocessor">#define SPEKTRUM_PRIMARY_BIND_CONF_PIN GPIO8</span></div>
 <div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;</div>
-<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;<span class="comment">/* Configuration of UART2 for Spektrum */</span></div>
-<div class="line"><a name="l00430"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a625a3569ff01571416adcd8d9a3e8878">  430</a></span>&#160;<span class="preprocessor">#define SPEKTRUM_UART2_RCC RCC_USART2</span></div>
-<div class="line"><a name="l00431"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a72445961e484d65706a9b6d897fd510e">  431</a></span>&#160;<span class="preprocessor">#define SPEKTRUM_UART2_BANK GPIOA</span></div>
-<div class="line"><a name="l00432"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a709a999c99640032c159e61ceab7797a">  432</a></span>&#160;<span class="preprocessor">#define SPEKTRUM_UART2_PIN GPIO3</span></div>
-<div class="line"><a name="l00433"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a0b1697ff5064f319cf146f597ada6fe0">  433</a></span>&#160;<span class="preprocessor">#define SPEKTRUM_UART2_AF GPIO_AF7</span></div>
-<div class="line"><a name="l00434"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a578d5939a046c3eb0b5e185f7e500d27">  434</a></span>&#160;<span class="preprocessor">#define SPEKTRUM_UART2_IRQ NVIC_USART2_IRQ</span></div>
-<div class="line"><a name="l00435"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#ae926e4829833fe67cd614cd513096808">  435</a></span>&#160;<span class="preprocessor">#define SPEKTRUM_UART2_ISR usart2_isr</span></div>
-<div class="line"><a name="l00436"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#ab73e097ba0e9f79e7abb3d657c2ef6f0">  436</a></span>&#160;<span class="preprocessor">#define SPEKTRUM_UART2_DEV USART2</span></div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;</div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;</div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;<span class="comment"> * IRQ Priorities</span></div>
-<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00442"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#abf336788eac71daef505f432e8f80602">  442</a></span>&#160;<span class="preprocessor">#define RTOS_PRIO 2</span></div>
-<div class="line"><a name="l00443"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a166470e13d9423555f00bf7cc19e2958">  443</a></span>&#160;<span class="preprocessor">#define NVIC_TIM_IRQ_PRIO (RTOS_PRIO+1)</span></div>
-<div class="line"><a name="l00444"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a636ff5041f4e741fddf95be4529be2a7">  444</a></span>&#160;<span class="preprocessor">#define NVIC_I2C_IRQ_PRIO (RTOS_PRIO+2)</span></div>
-<div class="line"><a name="l00445"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a8994f7c1ff31dac6203cb108c17f037b">  445</a></span>&#160;<span class="preprocessor">#define NVIC_SPI_IRQ_PRIO (RTOS_PRIO+3)</span></div>
-<div class="line"><a name="l00446"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a02d423d44bf8b1b9ee1b3e0745fc119d">  446</a></span>&#160;<span class="preprocessor">#define NVIC_UART_IRQ_PRIO (RTOS_PRIO+4)</span></div>
-<div class="line"><a name="l00447"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#addc98a0d456a1a674054a78239b38059">  447</a></span>&#160;<span class="preprocessor">#define NVIC_USART_IRQ_PRIO (RTOS_PRIO+4)</span></div>
-<div class="line"><a name="l00448"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a006a3e3f3935299ac3dfc03cb283c41e">  448</a></span>&#160;<span class="preprocessor">#define NVIC_ADC_IRQ_PRIO (RTOS_PRIO+5)</span></div>
-<div class="line"><a name="l00449"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#ad1b25396f3821ed53d02ea3e9eebb8fd">  449</a></span>&#160;<span class="preprocessor">#define NVIC_TIM6_DAC_IRQ_PRIO (RTOS_PRIO+6)</span></div>
-<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;</div>
-<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;</div>
-<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* CONFIG_APOGEE_1_00_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;<span class="comment"> * IRQ Priorities</span></div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00432"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#abf336788eac71daef505f432e8f80602">  432</a></span>&#160;<span class="preprocessor">#define RTOS_PRIO 2</span></div>
+<div class="line"><a name="l00433"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a166470e13d9423555f00bf7cc19e2958">  433</a></span>&#160;<span class="preprocessor">#define NVIC_TIM_IRQ_PRIO (RTOS_PRIO+1)</span></div>
+<div class="line"><a name="l00434"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a636ff5041f4e741fddf95be4529be2a7">  434</a></span>&#160;<span class="preprocessor">#define NVIC_I2C_IRQ_PRIO (RTOS_PRIO+2)</span></div>
+<div class="line"><a name="l00435"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a8994f7c1ff31dac6203cb108c17f037b">  435</a></span>&#160;<span class="preprocessor">#define NVIC_SPI_IRQ_PRIO (RTOS_PRIO+3)</span></div>
+<div class="line"><a name="l00436"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a02d423d44bf8b1b9ee1b3e0745fc119d">  436</a></span>&#160;<span class="preprocessor">#define NVIC_UART_IRQ_PRIO (RTOS_PRIO+4)</span></div>
+<div class="line"><a name="l00437"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#addc98a0d456a1a674054a78239b38059">  437</a></span>&#160;<span class="preprocessor">#define NVIC_USART_IRQ_PRIO (RTOS_PRIO+4)</span></div>
+<div class="line"><a name="l00438"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#a006a3e3f3935299ac3dfc03cb283c41e">  438</a></span>&#160;<span class="preprocessor">#define NVIC_ADC_IRQ_PRIO (RTOS_PRIO+5)</span></div>
+<div class="line"><a name="l00439"></a><span class="lineno"><a class="line" href="apogee__1_80_8h.html#ad1b25396f3821ed53d02ea3e9eebb8fd">  439</a></span>&#160;<span class="preprocessor">#define NVIC_TIM6_DAC_IRQ_PRIO (RTOS_PRIO+6)</span></div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* CONFIG_APOGEE_1_00_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e030268cd18297cf6282390f76bfcf7f.html">boards</a></li><li class="navelem"><a class="el" href="apogee__1_80_8h.html">apogee_1.0.h</a></li>
-    <li class="footer">Generated on Wed Nov 8 2017 10:01:29 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:02:34 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

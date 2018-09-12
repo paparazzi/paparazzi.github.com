@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -140,6 +140,7 @@ Datalink Functions</h1>
 <li>on message <b>MISSION_SEGMENT_LLA</b> call <a class="el" href="mission__common_8c.html#aa6ff1ff42af5ec7f32536bc2bddd70b0">mission_parse_SEGMENT_LLA()</a></li>
 <li>on message <b>MISSION_PATH</b> call <a class="el" href="mission__common_8c.html#aefd31c46b4c656ca476b5edda5eb3531">mission_parse_PATH()</a></li>
 <li>on message <b>MISSION_PATH_LLA</b> call <a class="el" href="mission__common_8c.html#ae2825fd4a06960dae1a0e84a8ef2fdac">mission_parse_PATH_LLA()</a></li>
+<li>on message <b>MISSION_CUSTOM</b> call <a class="el" href="mission__common_8c.html#a34a6c378805ba3b7318947b9bb279e34">mission_parse_CUSTOM()</a></li>
 <li>on message <b>GOTO_MISSION</b> call <a class="el" href="mission__common_8c.html#a4c9eaed4052ca09539ce790603d7fd06">mission_parse_GOTO_MISSION()</a></li>
 <li>on message <b>NEXT_MISSION</b> call <a class="el" href="mission__common_8c.html#aac8d2a7b8e27ca7f286507b83d278163">mission_parse_NEXT_MISSION()</a></li>
 <li>on message <b>END_MISSION</b> call <a class="el" href="mission__common_8c.html#aed1e579e47995e14bb003735220be047">mission_parse_END_MISSION()</a> </li>
@@ -184,11 +185,13 @@ Raw mission_fw.xml file:</h2>
 <div class="line">  &lt;datalink message=&quot;MISSION_SEGMENT_LLA&quot; fun=&quot;mission_parse_SEGMENT_LLA()&quot;/&gt;</div>
 <div class="line">  &lt;datalink message=&quot;MISSION_PATH&quot; fun=&quot;mission_parse_PATH()&quot;/&gt;</div>
 <div class="line">  &lt;datalink message=&quot;MISSION_PATH_LLA&quot; fun=&quot;mission_parse_PATH_LLA()&quot;/&gt;</div>
+<div class="line">  &lt;datalink message=&quot;MISSION_CUSTOM&quot; fun=&quot;mission_parse_CUSTOM()&quot;/&gt;</div>
 <div class="line">  &lt;datalink message=&quot;GOTO_MISSION&quot; fun=&quot;mission_parse_GOTO_MISSION()&quot;/&gt;</div>
 <div class="line">  &lt;datalink message=&quot;NEXT_MISSION&quot; fun=&quot;mission_parse_NEXT_MISSION()&quot;/&gt;</div>
 <div class="line">  &lt;datalink message=&quot;END_MISSION&quot; fun=&quot;mission_parse_END_MISSION()&quot;/&gt;</div>
 <div class="line"></div>
 <div class="line">  &lt;makefile&gt;</div>
+<div class="line">    &lt;define name=&quot;USE_MISSION&quot;/&gt;</div>
 <div class="line">    &lt;file name=&quot;mission_common.c&quot;/&gt;</div>
 <div class="line">    &lt;file name=&quot;mission_fw_nav.c&quot;/&gt;</div>
 <div class="line">  &lt;/makefile&gt;</div>
@@ -199,7 +202,7 @@ Raw mission_fw.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Wed Nov 8 2017 10:02:46 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:03:56 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

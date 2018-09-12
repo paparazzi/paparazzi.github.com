@@ -1,0 +1,48 @@
+<map id="mavlink_common_message_handler" name="mavlink_common_message_handler">
+<area shape="rect" id="node2" href="$autopilot_8c.html#a23af2ac2d4bcb9b71c869a409de61cc4" title="get autopilot mode " alt="" coords="782,211,933,237"/>
+<area shape="rect" id="node3" href="$autopilot_8c.html#a6b52f0f9cd2cbf420a77029513ea6f35" title="get motors status " alt="" coords="265,129,447,156"/>
+<area shape="rect" id="node4" href="$autopilot__guided_8c.html#acb5ff8d624f7583075e58303f46b9890" title="Set position and heading setpoints wrt. " alt="" coords="274,181,438,222"/>
+<area shape="rect" id="node5" href="$autopilot__guided_8c.html#ae4f59fae723f5116a979c7c5b923c180" title="Set position and heading setpoints in GUIDED mode. " alt="" coords="509,312,704,339"/>
+<area shape="rect" id="node36" href="$autopilot__guided_8c.html#a32b83e461c091c64ffa38e4f08f6a312" title="Set position and heading setpoints wrt. " alt="" coords="274,246,438,287"/>
+<area shape="rect" id="node37" href="$autopilot__guided_8c.html#a113a26863eee267edc78f72876ec8f69" title="Set velocity and heading setpoints in GUIDED mode. " alt="" coords="505,363,708,389"/>
+<area shape="rect" id="node40" href="$autopilot_8c.html#a1b657630df5b70390e96f4964390210a" title="set autopilot mode " alt="" coords="281,417,431,444"/>
+<area shape="rect" id="node43" href="$autopilot_8c.html#a984f4d5c6b86649c92c12acff12025f5" title="turn motors on/off, eventually depending of the current mode set kill_throttle accordingly FIXME is i..." alt="" coords="265,468,447,495"/>
+<area shape="rect" id="node46" href="$subsystems_2radio__control_2rc__datalink_8c.html#aa3d40235f29aab16121c0073217835a2" title="Decode datalink message to get rc values with RC_4CH message. " alt="" coords="274,519,438,545"/>
+<area shape="rect" id="node47" href="$mavlink_8c.html#a02a4175b51d1be746de549ae377d08f1" title="settings_idx_from_param_id" alt="" coords="255,569,457,596"/>
+<area shape="rect" id="node27" href="$group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float). " alt="" coords="507,109,706,136"/>
+<area shape="rect" id="node32" href="$group__state__position.html#gac1b41866b307723e3ad8ddd566d4f627" title="Get position in local NED coordinates (float). " alt="" coords="524,160,689,187"/>
+<area shape="rect" id="node35" href="$group__state__position.html#gad1490e1d9825a698db02787701f99f6f" title="Test if local coordinates are valid. " alt="" coords="507,211,706,237"/>
+<area shape="rect" id="node6" href="$rotorcraft_2guidance_2guidance__h_8c.html#a326822b3cfdaaf76105134072212346c" title="Set heading setpoint in GUIDED mode. " alt="" coords="771,363,943,405"/>
+<area shape="rect" id="node7" href="$rotorcraft_2guidance_2guidance__h_8c.html#a4df96f9ee6b60d5df3ccfd2bd45dc6f2" title="Set horizontal position setpoint in GUIDED mode. " alt="" coords="756,261,959,288"/>
+<area shape="rect" id="node8" href="$rotorcraft_2guidance_2guidance__v_8c.html#a37acdbbaffc177a9c200f95098d5b398" title="Set z setpoint in GUIDED mode. " alt="" coords="765,312,950,339"/>
+<area shape="rect" id="node9" href="$group__state__position.html#gaf9a3b3ed4f6a011ae65d49d78bf4aa25" title="Get position in local NED coordinates (int). " alt="" coords="1009,312,1173,339"/>
+<area shape="rect" id="node23" href="$group__state__velocity.html#gaed641b0c36e2ad2407a97be88ec2506c" title="Get ground speed in local NED coordinates (int). " alt="" coords="1013,477,1168,504"/>
+<area shape="rect" id="node10" href="$group__state__position.html#gac60dff329c00697fc9fcc459406293c9" title="stateCalcPositionNed_i" alt="" coords="1223,268,1391,295"/>
+<area shape="rect" id="node11" href="$group__math__geodetic__int.html#ga55c109fccf11d3699553122869dfd38b" title="Convert a ECEF position to local NED. " alt="" coords="1636,376,1775,403"/>
+<area shape="rect" id="node14" href="$pprz__geodetic__float_8c.html#a3045a5a383aa4ebf5b8a9763773b9b6d" title="ned_of_ecef_point_f" alt="" coords="1631,5,1780,32"/>
+<area shape="rect" id="node16" href="$pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title="ecef_of_lla_f" alt="" coords="1853,224,1953,251"/>
+<area shape="rect" id="node17" href="$group__math__geodetic__int.html#ga196c47e1d20669076a358d0f4317e093" title="Convert a point from LLA to local NED. " alt="" coords="1448,325,1575,352"/>
+<area shape="rect" id="node20" href="$pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="1462,161,1561,188"/>
+<area shape="rect" id="node12" href="$group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU. " alt="" coords="1833,376,1972,403"/>
+<area shape="rect" id="node13" href="$group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU. " alt="" coords="2025,376,2173,403"/>
+<area shape="rect" id="node15" href="$pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title="enu_of_ecef_point_f" alt="" coords="1828,5,1977,32"/>
+<area shape="rect" id="node18" href="$group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF. " alt="" coords="1656,275,1755,301"/>
+<area shape="rect" id="node19" href="$group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title="ecef_of_lla_d" alt="" coords="1851,275,1955,301"/>
+<area shape="rect" id="node21" href="$pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="1632,107,1779,133"/>
+<area shape="rect" id="node22" href="$pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="1637,158,1773,199"/>
+<area shape="rect" id="node24" href="$group__state__velocity.html#gaefc74e9c1a2033ec07959a2fde629bd5" title="stateCalcSpeedNed_i" alt="" coords="1228,477,1387,504"/>
+<area shape="rect" id="node25" href="$group__math__geodetic__int.html#gab4eda479f4c01e96082d8a352f16cfea" title="Rotate a vector from ECEF to NED. " alt="" coords="1440,477,1583,504"/>
+<area shape="rect" id="node26" href="$group__math__geodetic__int.html#gaf0ee62cd162ca87bc294be6cfd107986" title="Rotate a vector from ECEF to ENU. " alt="" coords="1634,477,1777,504"/>
+<area shape="rect" id="node28" href="$group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float). " alt="" coords="775,109,939,136"/>
+<area shape="rect" id="node29" href="$group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title="orientationCalcEulers_f" alt="" coords="1007,109,1175,136"/>
+<area shape="rect" id="node30" href="$group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76" title="float_eulers_of_rmat" alt="" coords="1231,109,1384,136"/>
+<area shape="rect" id="node31" href="$group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="float_eulers_of_quat" alt="" coords="1232,59,1383,85"/>
+<area shape="rect" id="node33" href="$group__state__position.html#ga480ea806b0ffe839df24d856b7ce0261" title="stateCalcPositionNed_f" alt="" coords="1223,160,1392,187"/>
+<area shape="rect" id="node34" href="$pprz__geodetic__float_8c.html#aba90b4f88dce2d3eadce9c28fcde2d54" title="ned_of_lla_point_f" alt="" coords="1443,107,1579,133"/>
+<area shape="rect" id="node38" href="$rotorcraft_2guidance_2guidance__h_8c.html#a21a4387750aad0a127dfa928b8557a90" title="Set horizontal velocity setpoint in GUIDED mode. " alt="" coords="759,429,956,456"/>
+<area shape="rect" id="node39" href="$rotorcraft_2guidance_2guidance__v_8c.html#acac5c328b4af288851a9ede4552381f8" title="Set z velocity setpoint in GUIDED mode. " alt="" coords="761,480,953,507"/>
+<area shape="rect" id="node41" href="$fixedwing_2autopilot__generated_8c.html#a2a352534b34a60927d75719902d2cffc" title="autopilot_generated\l_set_mode" alt="" coords="531,414,682,455"/>
+<area shape="rect" id="node42" href="$fixedwing_2autopilot__static_8c.html#af7eb08dcaaeb9f55fe1b77230b0e78c3" title="autopilot_static_set_mode" alt="" coords="511,480,702,507"/>
+<area shape="rect" id="node44" href="$fixedwing_2autopilot__generated_8c.html#ae22ba131f3568b0ef1e9b5b57bdf74ab" title="autopilot_generated\l_set_motors_on" alt="" coords="531,531,682,573"/>
+<area shape="rect" id="node45" href="$fixedwing_2autopilot__static_8c.html#abfbb0a41b76eefca4b0df8297b2569c8" title="autopilot_static_set\l_motors_on" alt="" coords="533,597,680,638"/>
+</map>

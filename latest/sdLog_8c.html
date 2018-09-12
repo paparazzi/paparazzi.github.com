@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -145,6 +145,8 @@ Macros</h2></td></tr>
 <tr class="separator:aacc3ee1a7f283f8ef65cea31f4436a95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4922593f9f95a4fabc34eacf23ac4550"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdLog_8c.html#a4922593f9f95a4fabc34eacf23ac4550">IS_POWER_OF_TWO</a>(s)&#160;&#160;&#160;((s) &amp;&amp; !((s) &amp; ((s) - 1)))</td></tr>
 <tr class="separator:a4922593f9f95a4fabc34eacf23ac4550"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a275a34cd0d8f3b9b04ee91df269136e3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdLog_8c.html#a275a34cd0d8f3b9b04ee91df269136e3">FFCONF_DEF</a>&#160;&#160;&#160;_FATFS</td></tr>
+<tr class="separator:a275a34cd0d8f3b9b04ee91df269136e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1cf68ce7e74ae0b79f57bbc3f7d2b77"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sdLog_8c.html#af1cf68ce7e74ae0b79f57bbc3f7d2b77">SDLOG_WRITE_BUFFER_SIZE</a>&#160;&#160;&#160;(<a class="el" href="px4fmu_2chibios_2v2_84_2mcuconf_8h.html#abf3ea4f6b58f67f72d53c6f7e35d76f0">SDLOG_ALL_BUFFERS_SIZE</a>/<a class="el" href="px4fmu_2chibios_2v2_84_2mcuconf_8h.html#abfa7a6086a22ce269b39b1a7cd3ca4a1">SDLOG_NUM_FILES</a>)</td></tr>
 <tr class="separator:af1cf68ce7e74ae0b79f57bbc3f7d2b77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -170,6 +172,20 @@ Functions</h2></td></tr>
 <tr class="separator:a0feebb43817c3a4d97e34f991012932c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="a275a34cd0d8f3b9b04ee91df269136e3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FFCONF_DEF&#160;&#160;&#160;_FATFS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="sdLog_8c_source.html#l00055">55</a> of file <a class="el" href="sdLog_8c_source.html">sdLog.c</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a4922593f9f95a4fabc34eacf23ac4550"></a>
 <div class="memitem">
 <div class="memproto">
@@ -184,7 +200,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sdLog_8c_source.html#l00043">43</a> of file <a class="el" href="sdLog_8c_source.html">sdLog.c</a>.</p>
+<p>Definition at line <a class="el" href="sdLog_8c_source.html#l00047">47</a> of file <a class="el" href="sdLog_8c_source.html">sdLog.c</a>.</p>
 
 </div>
 </div>
@@ -230,9 +246,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sdLog_8c_source.html#l00042">42</a> of file <a class="el" href="sdLog_8c_source.html">sdLog.c</a>.</p>
+<p>Definition at line <a class="el" href="sdLog_8c_source.html#l00045">45</a> of file <a class="el" href="sdLog_8c_source.html">sdLog.c</a>.</p>
 
-<p>Referenced by <a class="el" href="sdLog_8c_source.html#l00722">getFileName()</a>.</p>
+<p>Referenced by <a class="el" href="sdLog_8c_source.html#l00731">getFileName()</a>.</p>
 
 </div>
 </div>
@@ -260,9 +276,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sdLog_8c_source.html#l00041">41</a> of file <a class="el" href="sdLog_8c_source.html">sdLog.c</a>.</p>
+<p>Definition at line <a class="el" href="sdLog_8c_source.html#l00042">42</a> of file <a class="el" href="sdLog_8c_source.html">sdLog.c</a>.</p>
 
-<p>Referenced by <a class="el" href="sdLog_8c_source.html#l00722">getFileName()</a>.</p>
+<p>Referenced by <a class="el" href="sdLog_8c_source.html#l00731">getFileName()</a>.</p>
 
 </div>
 </div>
@@ -276,7 +292,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sdLog_8c_source.html#l00069">69</a> of file <a class="el" href="sdLog_8c_source.html">sdLog.c</a>.</p>
+<p>Definition at line <a class="el" href="sdLog_8c_source.html#l00078">78</a> of file <a class="el" href="sdLog_8c_source.html">sdLog.c</a>.</p>
 
 </div>
 </div>
@@ -378,9 +394,9 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>status (always check status) </dd></dl>
 
-<p>Definition at line <a class="el" href="sdLog_8c_source.html#l00722">722</a> of file <a class="el" href="sdLog_8c_source.html">sdLog.c</a>.</p>
+<p>Definition at line <a class="el" href="sdLog_8c_source.html#l00731">731</a> of file <a class="el" href="sdLog_8c_source.html">sdLog.c</a>.</p>
 
-<p>References <a class="el" href="printf_8c_source.html#l00377">chsnprintf()</a>, <a class="el" href="sdLog_8c_source.html#l00042">MAX</a>, <a class="el" href="sdLog_8c_source.html#l00041">MIN</a>, <a class="el" href="sdLog_8h_source.html#l00036">NUMBERFMF</a>, <a class="el" href="sdLog_8h_source.html#l00035">NUMBERMAX</a>, <a class="el" href="sdLog_8h_source.html#l00110">SDLOG_FATFS_ERROR</a>, <a class="el" href="sdLog_8h_source.html#l00119">SDLOG_LOGNUM_ERROR</a>, <a class="el" href="sdLog_8h_source.html#l00108">SDLOG_OK</a>, and <a class="el" href="sdLog_8c_source.html#l00843">uiGetIndexOfLogFile()</a>.</p>
+<p>References <a class="el" href="printf_8c_source.html#l00377">chsnprintf()</a>, <a class="el" href="sdLog_8c_source.html#l00045">MAX</a>, <a class="el" href="sdLog_8c_source.html#l00042">MIN</a>, <a class="el" href="sdLog_8h_source.html#l00036">NUMBERFMF</a>, <a class="el" href="sdLog_8h_source.html#l00035">NUMBERMAX</a>, <a class="el" href="sdLog_8h_source.html#l00110">SDLOG_FATFS_ERROR</a>, <a class="el" href="sdLog_8h_source.html#l00119">SDLOG_LOGNUM_ERROR</a>, <a class="el" href="sdLog_8h_source.html#l00108">SDLOG_OK</a>, and <a class="el" href="sdLog_8c_source.html#l00852">uiGetIndexOfLogFile()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -461,7 +477,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>status (always check status) </dd></dl>
 
-<p>Definition at line <a class="el" href="sdLog_8c_source.html#l00783">783</a> of file <a class="el" href="sdLog_8c_source.html">sdLog.c</a>.</p>
+<p>Definition at line <a class="el" href="sdLog_8c_source.html#l00792">792</a> of file <a class="el" href="sdLog_8c_source.html">sdLog.c</a>.</p>
 
 <p>References <a class="el" href="sdLog_8h_source.html#l00110">SDLOG_FATFS_ERROR</a>, <a class="el" href="sdLog_8h_source.html#l00111">SDLOG_FATFS_NOENT</a>, and <a class="el" href="sdLog_8h_source.html#l00108">SDLOG_OK</a>.</p>
 
@@ -497,7 +513,7 @@ Functions</h2></td></tr>
 <p>unmount filesystem </p>
 <p>unmount filesystem, free sdio peripheral This function is available even without thread login facility : even if SDLOG_XXX macro are zeroed </p><dl class="section return"><dt>Returns</dt><dd>status (always check status) </dd></dl>
 
-<p>Definition at line <a class="el" href="sdLog_8c_source.html#l00253">253</a> of file <a class="el" href="sdLog_8c_source.html">sdLog.c</a>.</p>
+<p>Definition at line <a class="el" href="sdLog_8c_source.html#l00262">262</a> of file <a class="el" href="sdLog_8c_source.html">sdLog.c</a>.</p>
 
 <p>References <a class="el" href="sdLog_8h_source.html#l00110">SDLOG_FATFS_ERROR</a>, and <a class="el" href="sdLog_8h_source.html#l00108">SDLOG_OK</a>.</p>
 
@@ -539,7 +555,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>status (always check status) </dd></dl>
 
-<p>Definition at line <a class="el" href="sdLog_8c_source.html#l00193">193</a> of file <a class="el" href="sdLog_8c_source.html">sdLog.c</a>.</p>
+<p>Definition at line <a class="el" href="sdLog_8c_source.html#l00202">202</a> of file <a class="el" href="sdLog_8c_source.html">sdLog.c</a>.</p>
 
 <p>References <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="tlsf__malloc__arch_8h_source.html#l00044">HEAP_DEFAULT</a>, <a class="el" href="msg__queue_8c_source.html#l00042">msgqueue_init()</a>, <a class="el" href="sdio__arch_8c_source.html#l00048">sdio_connect()</a>, <a class="el" href="sdio__arch_8c_source.html#l00087">sdio_disconnect()</a>, <a class="el" href="sdLog_8h_source.html#l00110">SDLOG_FATFS_ERROR</a>, <a class="el" href="sdLog_8h_source.html#l00109">SDLOG_NOCARD</a>, <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h_source.html#l00389">SDLOG_NUM_FILES</a>, <a class="el" href="sdLog_8h_source.html#l00108">SDLOG_OK</a>, <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h_source.html#l00387">SDLOG_QUEUE_BUCKETS</a>, and <a class="el" href="sdLog_8h_source.html#l00120">SDLOG_WAS_LAUNCHED</a>.</p>
 
@@ -601,9 +617,9 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sdLog_8c_source.html#l00843">843</a> of file <a class="el" href="sdLog_8c_source.html">sdLog.c</a>.</p>
+<p>Definition at line <a class="el" href="sdLog_8c_source.html#l00852">852</a> of file <a class="el" href="sdLog_8c_source.html">sdLog.c</a>.</p>
 
-<p>Referenced by <a class="el" href="sdLog_8c_source.html#l00722">getFileName()</a>.</p>
+<p>Referenced by <a class="el" href="sdLog_8c_source.html#l00731">getFileName()</a>.</p>
 
 <p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -624,7 +640,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_cbf4be70f5fb954ea1d2a546dd70b40e.html">loggers</a></li><li class="navelem"><a class="el" href="dir_c27662836f6a804eadd3e3b5df5506a4.html">sdlog_chibios</a></li><li class="navelem"><a class="el" href="sdLog_8c.html">sdLog.c</a></li>
-    <li class="footer">Generated on Wed Nov 8 2017 10:02:28 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:03:35 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

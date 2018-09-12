@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -257,23 +257,25 @@ $(document).ready(function(){initNavTree('l3gd20__spi_8c_source.html','');});
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keywordflow">switch</span> (l3g-&gt;<a class="code" href="l3gd20__spi_8h.html#a1419e1910a4a3f22ab7523a276fd5a73">spi_trans</a>.<a class="code" href="group__spi.html#afcc49de6913e59398111a070be5aeda2">status</a>) {</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;      <span class="keywordflow">case</span> <a class="code" href="group__spi.html#gga52e70c55efc6a9b04903157a0965baaca3f30804ee098adcaa3b21455346c3707">SPITransFailed</a>:</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        l3g-&gt;<a class="code" href="l3gd20__spi_8h.html#a81441f8bffd38ea5061027562c74de2f">init_status</a>--; <span class="comment">// Retry config (TODO max retry)</span></div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;      <span class="keywordflow">case</span> <a class="code" href="group__spi.html#gga52e70c55efc6a9b04903157a0965baacaa4021c68696337695cfdb356866f3b53">SPITransSuccess</a>:</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        <span class="keywordflow">if</span> (l3g-&gt;<a class="code" href="l3gd20__spi_8h.html#a81441f8bffd38ea5061027562c74de2f">init_status</a> == <a class="code" href="l3gd20_8h.html#aa1db7c07c0f8810a2a13717dca0d4d8da932c7ea3be721b728d99fc5a031be1b3">L3G_CONF_WHO_AM_I_OK</a>) {</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;          <span class="keywordflow">if</span> (l3g-&gt;<a class="code" href="l3gd20__spi_8h.html#a85111f62d593f3984bfefc45a612a2ef">rx_buf</a>[1] == <a class="code" href="l3gd20__regs_8h.html#a6581544c2103b660dd16c39bcfbaa742">L3GD20_WHO_AM_I</a>) {</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;            l3g-&gt;<a class="code" href="l3gd20__spi_8h.html#a81441f8bffd38ea5061027562c74de2f">init_status</a>++;</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;          } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            l3g-&gt;<a class="code" href="l3gd20__spi_8h.html#a81441f8bffd38ea5061027562c74de2f">init_status</a> = <a class="code" href="l3gd20_8h.html#aa1db7c07c0f8810a2a13717dca0d4d8da7708a9b4a9bc651d5d9278a8b06f88bd">L3G_CONF_WHO_AM_I</a>;</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;          }</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        }</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;      <span class="keywordflow">case</span> <a class="code" href="group__spi.html#gga52e70c55efc6a9b04903157a0965baacaf68ce6dfcd0fd5b2210ce03c86bb4580">SPITransDone</a>:</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        l3g-&gt;<a class="code" href="l3gd20__spi_8h.html#a1419e1910a4a3f22ab7523a276fd5a73">spi_trans</a>.<a class="code" href="group__spi.html#afcc49de6913e59398111a070be5aeda2">status</a> = <a class="code" href="group__spi.html#gga52e70c55efc6a9b04903157a0965baacaf68ce6dfcd0fd5b2210ce03c86bb4580">SPITransDone</a>;</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        <a class="code" href="l3gd20__spi_8c.html#a4a0ec290b0c95368ffc813212f7be9c9">l3gd20_spi_send_config</a>(l3g);</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;      <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        <span class="comment">/* FALLTHROUGH */</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;      <span class="keywordflow">case</span> <a class="code" href="group__spi.html#gga52e70c55efc6a9b04903157a0965baacaa4021c68696337695cfdb356866f3b53">SPITransSuccess</a>:</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <span class="keywordflow">if</span> (l3g-&gt;<a class="code" href="l3gd20__spi_8h.html#a81441f8bffd38ea5061027562c74de2f">init_status</a> == <a class="code" href="l3gd20_8h.html#aa1db7c07c0f8810a2a13717dca0d4d8da932c7ea3be721b728d99fc5a031be1b3">L3G_CONF_WHO_AM_I_OK</a>) {</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;          <span class="keywordflow">if</span> (l3g-&gt;<a class="code" href="l3gd20__spi_8h.html#a85111f62d593f3984bfefc45a612a2ef">rx_buf</a>[1] == <a class="code" href="l3gd20__regs_8h.html#a6581544c2103b660dd16c39bcfbaa742">L3GD20_WHO_AM_I</a>) {</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            l3g-&gt;<a class="code" href="l3gd20__spi_8h.html#a81441f8bffd38ea5061027562c74de2f">init_status</a>++;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;          } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            l3g-&gt;<a class="code" href="l3gd20__spi_8h.html#a81441f8bffd38ea5061027562c74de2f">init_status</a> = <a class="code" href="l3gd20_8h.html#aa1db7c07c0f8810a2a13717dca0d4d8da7708a9b4a9bc651d5d9278a8b06f88bd">L3G_CONF_WHO_AM_I</a>;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;          }</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        }</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        <span class="comment">/* FALLTHROUGH */</span></div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;      <span class="keywordflow">case</span> <a class="code" href="group__spi.html#gga52e70c55efc6a9b04903157a0965baacaf68ce6dfcd0fd5b2210ce03c86bb4580">SPITransDone</a>:</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        l3g-&gt;<a class="code" href="l3gd20__spi_8h.html#a1419e1910a4a3f22ab7523a276fd5a73">spi_trans</a>.<a class="code" href="group__spi.html#afcc49de6913e59398111a070be5aeda2">status</a> = <a class="code" href="group__spi.html#gga52e70c55efc6a9b04903157a0965baacaf68ce6dfcd0fd5b2210ce03c86bb4580">SPITransDone</a>;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        <a class="code" href="l3gd20__spi_8c.html#a4a0ec290b0c95368ffc813212f7be9c9">l3gd20_spi_send_config</a>(l3g);</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    }</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  }</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;}</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;      <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    }</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  }</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;}</div>
 <div class="ttc" id="l3gd20__regs_8h_html_a7e2abf758b00293ef11c24b6a6ecc463"><div class="ttname"><a href="l3gd20__regs_8h.html#a7e2abf758b00293ef11c24b6a6ecc463">L3GD20_Xen</a></div><div class="ttdeci">#define L3GD20_Xen</div><div class="ttdef"><b>Definition:</b> <a href="l3gd20__regs_8h_source.html#l00053">l3gd20_regs.h:53</a></div></div>
 <div class="ttc" id="group__spi_html_a1c63fdf45b423a121cf0666a8aaa2539"><div class="ttname"><a href="group__spi.html#a1c63fdf45b423a121cf0666a8aaa2539">spi_transaction::cpol</a></div><div class="ttdeci">enum SPIClockPolarity cpol</div><div class="ttdoc">clock polarity control </div><div class="ttdef"><b>Definition:</b> <a href="spi_8h_source.html#l00149">spi.h:149</a></div></div>
 <div class="ttc" id="group__spi_html_gga52e70c55efc6a9b04903157a0965baacaa4021c68696337695cfdb356866f3b53"><div class="ttname"><a href="group__spi.html#gga52e70c55efc6a9b04903157a0965baacaa4021c68696337695cfdb356866f3b53">SPITransSuccess</a></div><div class="ttdef"><b>Definition:</b> <a href="spi_8h_source.html#l00093">spi.h:93</a></div></div>
@@ -288,7 +290,7 @@ $(document).ready(function(){initNavTree('l3gd20__spi_8c_source.html','');});
 <div class="ttc" id="l3gd20__spi_8h_html_a46da18df86619fbb9c50d325251599c8"><div class="ttname"><a href="l3gd20__spi_8h.html#a46da18df86619fbb9c50d325251599c8">L3gd20_Spi::spi_p</a></div><div class="ttdeci">struct spi_periph * spi_p</div><div class="ttdef"><b>Definition:</b> <a href="l3gd20__spi_8h_source.html#l00039">l3gd20_spi.h:39</a></div></div>
 <div class="ttc" id="l3gd20__spi_8h_html_a81441f8bffd38ea5061027562c74de2f"><div class="ttname"><a href="l3gd20__spi_8h.html#a81441f8bffd38ea5061027562c74de2f">L3gd20_Spi::init_status</a></div><div class="ttdeci">enum L3gd20ConfStatus init_status</div><div class="ttdoc">init status </div><div class="ttdef"><b>Definition:</b> <a href="l3gd20__spi_8h_source.html#l00043">l3gd20_spi.h:43</a></div></div>
 <div class="ttc" id="l3gd20_8h_html_a333275bd95b04134ba9ad179c55f618c"><div class="ttname"><a href="l3gd20_8h.html#a333275bd95b04134ba9ad179c55f618c">L3gd20Config::drbw</a></div><div class="ttdeci">enum L3gd20DRBW drbw</div><div class="ttdoc">Data rate and bandwidth. </div><div class="ttdef"><b>Definition:</b> <a href="l3gd20_8h_source.html#l00047">l3gd20.h:47</a></div></div>
-<div class="ttc" id="group__spi_html_ga5d383931766cb373ebad0b8bc26d439d"><div class="ttname"><a href="group__spi.html#ga5d383931766cb373ebad0b8bc26d439d">spi_submit</a></div><div class="ttdeci">bool spi_submit(struct spi_periph *p, struct spi_transaction *t)</div><div class="ttdoc">Submit SPI transaction. </div><div class="ttdef"><b>Definition:</b> <a href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00457">spi_arch.c:457</a></div></div>
+<div class="ttc" id="group__spi_html_ga5d383931766cb373ebad0b8bc26d439d"><div class="ttname"><a href="group__spi.html#ga5d383931766cb373ebad0b8bc26d439d">spi_submit</a></div><div class="ttdeci">bool spi_submit(struct spi_periph *p, struct spi_transaction *t)</div><div class="ttdoc">Submit SPI transaction. </div><div class="ttdef"><b>Definition:</b> <a href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00458">spi_arch.c:458</a></div></div>
 <div class="ttc" id="group__spi_html_gga585d188d86d5ad9a6fe2d3d11af58ca7abb9d597cb05133176eac7d6a87b5f9af"><div class="ttname"><a href="group__spi.html#gga585d188d86d5ad9a6fe2d3d11af58ca7abb9d597cb05133176eac7d6a87b5f9af">SPICpolIdleHigh</a></div><div class="ttdoc">CPOL = 1. </div><div class="ttdef"><b>Definition:</b> <a href="spi_8h_source.html#l00078">spi.h:78</a></div></div>
 <div class="ttc" id="group__spi_html_af804a20f8372631a24aad61be1383307"><div class="ttname"><a href="group__spi.html#af804a20f8372631a24aad61be1383307">spi_transaction::bitorder</a></div><div class="ttdeci">enum SPIBitOrder bitorder</div><div class="ttdoc">MSB/LSB order. </div><div class="ttdef"><b>Definition:</b> <a href="spi_8h_source.html#l00152">spi.h:152</a></div></div>
 <div class="ttc" id="l3gd20__spi_8c_html_a7ce0152bebd25be7add3b16f7d660f2e"><div class="ttname"><a href="l3gd20__spi_8c.html#a7ce0152bebd25be7add3b16f7d660f2e">l3gd20_spi_init</a></div><div class="ttdeci">void l3gd20_spi_init(struct L3gd20_Spi *l3g, struct spi_periph *spi_p, uint8_t slave_idx)</div><div class="ttdef"><b>Definition:</b> <a href="l3gd20__spi_8c_source.html#l00030">l3gd20_spi.c:30</a></div></div>
@@ -343,7 +345,7 @@ $(document).ready(function(){initNavTree('l3gd20__spi_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_0a48ba2c0a76794adfddddc873522f67.html">peripherals</a></li><li class="navelem"><a class="el" href="l3gd20__spi_8c.html">l3gd20_spi.c</a></li>
-    <li class="footer">Generated on Wed Nov 8 2017 10:01:47 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:02:53 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

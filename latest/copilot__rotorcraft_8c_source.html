@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -134,7 +134,7 @@ $(document).ready(function(){initNavTree('copilot__rotorcraft_8c_source.html',''
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="telemetry_8h.html">subsystems/datalink/telemetry.h</a>&quot;</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">// needed for WP_MOVED confirmation</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="navigation_8h.html">firmwares/rotorcraft/navigation.h</a>&quot;</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="rotorcraft_2navigation_8h.html">firmwares/rotorcraft/navigation.h</a>&quot;</span></div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">//#include &quot;math/pprz_geodetic_float.h&quot;</span></div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pprz__geodetic__int_8h.html">math/pprz_geodetic_int.h</a>&quot;</span></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">//#include &quot;state.h&quot;</span></div>
@@ -194,7 +194,6 @@ $(document).ready(function(){initNavTree('copilot__rotorcraft_8c_source.html',''
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  }</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;}</div>
 <div class="ttc" id="common__nav_8h_html_a8293fd2de3ce739deb6d53691fd21fcf"><div class="ttname"><a href="common__nav_8h.html#a8293fd2de3ce739deb6d53691fd21fcf">point::x</a></div><div class="ttdeci">float x</div><div class="ttdef"><b>Definition:</b> <a href="common__nav_8h_source.html#l00040">common_nav.h:40</a></div></div>
-<div class="ttc" id="navigation_8h_html"><div class="ttname"><a href="navigation_8h.html">navigation.h</a></div><div class="ttdoc">Rotorcraft navigation functions. </div></div>
 <div class="ttc" id="group__state__position_html_gad1490e1d9825a698db02787701f99f6f"><div class="ttname"><a href="group__state__position.html#gad1490e1d9825a698db02787701f99f6f">stateIsLocalCoordinateValid</a></div><div class="ttdeci">static bool stateIsLocalCoordinateValid(void)</div><div class="ttdoc">Test if local coordinates are valid. </div><div class="ttdef"><b>Definition:</b> <a href="state_8h_source.html#l00508">state.h:508</a></div></div>
 <div class="ttc" id="telemetry_8h_html"><div class="ttname"><a href="telemetry_8h.html">telemetry.h</a></div><div class="ttdoc">Periodic telemetry system header (includes downlink utility and generated code). </div></div>
 <div class="ttc" id="group__math__geodetic__int_html_structLlaCoor__i"><div class="ttname"><a href="group__math__geodetic__int.html#structLlaCoor__i">LlaCoor_i</a></div><div class="ttdoc">vector in Latitude, Longitude and Altitude </div><div class="ttdef"><b>Definition:</b> <a href="pprz__geodetic__int_8h_source.html#l00059">pprz_geodetic_int.h:59</a></div></div>
@@ -211,6 +210,7 @@ $(document).ready(function(){initNavTree('copilot__rotorcraft_8c_source.html',''
 <div class="ttc" id="group__state__position_html_ga5938a2d96030881a6cc7534247857dc4"><div class="ttname"><a href="group__state__position.html#ga5938a2d96030881a6cc7534247857dc4">State::ned_origin_i</a></div><div class="ttdeci">struct LtpDef_i ned_origin_i</div><div class="ttdoc">Definition of the local (flat earth) coordinate system. </div><div class="ttdef"><b>Definition:</b> <a href="state_8h_source.html#l00166">state.h:166</a></div></div>
 <div class="ttc" id="downlink_8h_html_a891b19a3eba08208d4e550aa6c6188dd"><div class="ttname"><a href="downlink_8h.html#a891b19a3eba08208d4e550aa6c6188dd">DefaultChannel</a></div><div class="ttdeci">#define DefaultChannel</div><div class="ttdef"><b>Definition:</b> <a href="downlink_8h_source.html#l00042">downlink.h:42</a></div></div>
 <div class="ttc" id="extra__pprz__dl_8c_html_a6b4b905f67b3133492603b5040e51768"><div class="ttname"><a href="extra__pprz__dl_8c.html#a6b4b905f67b3133492603b5040e51768">extra_dl_buffer</a></div><div class="ttdeci">uint8_t extra_dl_buffer[MSG_SIZE]</div><div class="ttdef"><b>Definition:</b> <a href="extra__pprz__dl_8c_source.html#l00050">extra_pprz_dl.c:50</a></div></div>
+<div class="ttc" id="rotorcraft_2navigation_8h_html"><div class="ttname"><a href="rotorcraft_2navigation_8h.html">navigation.h</a></div><div class="ttdoc">Rotorcraft navigation functions. </div></div>
 <div class="ttc" id="types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00014">types.h:14</a></div></div>
 <div class="ttc" id="downlink_8h_html_a028b405f95cecb4af565b17c8ee71d80"><div class="ttname"><a href="downlink_8h.html#a028b405f95cecb4af565b17c8ee71d80">DefaultDevice</a></div><div class="ttdeci">#define DefaultDevice</div><div class="ttdef"><b>Definition:</b> <a href="downlink_8h_source.html#l00046">downlink.h:46</a></div></div>
 <div class="ttc" id="common__nav_8c_html_a94e2a3864e1c0746e69eb9cda1061c62"><div class="ttname"><a href="common__nav_8c.html#a94e2a3864e1c0746e69eb9cda1061c62">waypoints</a></div><div class="ttdeci">struct point waypoints[NB_WAYPOINT]</div><div class="ttdoc">size == nb_waypoint, waypoint 0 is a dummy waypoint </div><div class="ttdef"><b>Definition:</b> <a href="common__nav_8c_source.html#l00038">common_nav.c:38</a></div></div>
@@ -225,7 +225,7 @@ $(document).ready(function(){initNavTree('copilot__rotorcraft_8c_source.html',''
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_6eed4cd5dc7f8396232b71b94973ca94.html">mission</a></li><li class="navelem"><a class="el" href="copilot__rotorcraft_8c.html">copilot_rotorcraft.c</a></li>
-    <li class="footer">Generated on Wed Nov 8 2017 10:01:43 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:02:49 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

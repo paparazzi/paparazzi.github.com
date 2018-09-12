@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -107,9 +107,34 @@ $(document).ready(function(){initNavTree('module__orange_avoider.html','');});
 <p>This example module shows how you can use the camera stream and colorfilter to detect orange objects. By adding this module to your flightplan and flying in the cyberzoo with the flightplan tudelft/course2017_avoid_orange_cyberzoo.xml you will avoid every obstacle that is orange.</p>
 <h1><a class="anchor" id="module_load_example__orange_avoider"></a>
 Example for airframe file</h1>
-<p>Add to your firmware section: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;module name=&quot;cv_colorfilter.xml&quot;/&gt;</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;&lt;module name=&quot;orange_avoider&quot;/&gt;</div>
-</div><!-- fragment --> <h1><a class="anchor" id="dependencies__orange_avoider"></a>
+<p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;module name=&quot;cv_colorfilter.xml&quot;/&gt;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;&lt;module name=&quot;orange_avoider&quot;&gt;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;  &lt;define name=&quot;ORANGE_AVOIDER_LUM_MIN&quot; value=&quot;0-255&quot; /&gt;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;  &lt;define name=&quot;ORANGE_AVOIDER_LUM_MAX&quot; value=&quot;0-255&quot; /&gt;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;  &lt;define name=&quot;ORANGE_AVOIDER_CR_MIN&quot; value=&quot;0-255&quot; /&gt;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;  &lt;define name=&quot;ORANGE_AVOIDER_CR_MAX&quot; value=&quot;0-255&quot; /&gt;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;  &lt;define name=&quot;ORANGE_AVOIDER_CB_MIN&quot; value=&quot;0-255&quot; /&gt;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  &lt;define name=&quot;ORANGE_AVOIDER_CB_MAX&quot; value=&quot;0-255&quot; /&gt;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;&lt;/module&gt;</div>
+</div><!-- fragment --> <h1><a class="anchor" id="configuration__orange_avoider"></a>
+Module configuration options</h1>
+<h2><a class="anchor" id="define"></a>
+Define Options</h2>
+<ul>
+<li><b>name:</b> <code>ORANGE_AVOIDER_LUM_MIN</code> <b>value:</b> <em>0-255</em> <br />
+ Description: Minimum Luminance To select pixel as object</li>
+<li><b>name:</b> <code>ORANGE_AVOIDER_LUM_MAX</code> <b>value:</b> <em>0-255</em> <br />
+ Description: Minimum Luminance To select pixel as object</li>
+<li><b>name:</b> <code>ORANGE_AVOIDER_CR_MIN</code> <b>value:</b> <em>0-255</em> <br />
+ Description: Minimum CR To select pixel as object</li>
+<li><b>name:</b> <code>ORANGE_AVOIDER_CR_MAX</code> <b>value:</b> <em>0-255</em> <br />
+ Description: Minimum CR To select pixel as object</li>
+<li><b>name:</b> <code>ORANGE_AVOIDER_CB_MIN</code> <b>value:</b> <em>0-255</em> <br />
+ Description: Minimum CB To select pixel as object</li>
+<li><b>name:</b> <code>ORANGE_AVOIDER_CB_MAX</code> <b>value:</b> <em>0-255</em> <br />
+ Description: Minimum CB To select pixel as object</li>
+</ul>
+<h1><a class="anchor" id="dependencies__orange_avoider"></a>
 Dependencies</h1>
 <ul>
 <li>module__cv_colorfilter_xml </li>
@@ -157,6 +182,12 @@ Raw orange_avoider.xml file:</h2>
 <div class="line">  This example module shows how you can use the camera stream and colorfilter to detect orange objects.</div>
 <div class="line">  By adding this module to your flightplan and flying in the cyberzoo with the flightplan tudelft/course2017_avoid_orange_cyberzoo.xml you will avoid every obstacle that is orange.</div>
 <div class="line">    &lt;/description&gt;</div>
+<div class="line">    &lt;define name=&quot;ORANGE_AVOIDER_LUM_MIN&quot; value=&quot;0-255&quot; description=&quot;Minimum Luminance To select pixel as object&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;ORANGE_AVOIDER_LUM_MAX&quot; value=&quot;0-255&quot; description=&quot;Minimum Luminance To select pixel as object&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;ORANGE_AVOIDER_CR_MIN&quot; value=&quot;0-255&quot; description=&quot;Minimum CR To select pixel as object&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;ORANGE_AVOIDER_CR_MAX&quot; value=&quot;0-255&quot; description=&quot;Minimum CR To select pixel as object&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;ORANGE_AVOIDER_CB_MIN&quot; value=&quot;0-255&quot; description=&quot;Minimum CB To select pixel as object&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;ORANGE_AVOIDER_CB_MAX&quot; value=&quot;0-255&quot; description=&quot;Minimum CB To select pixel as object&quot;/&gt;</div>
 <div class="line">  &lt;/doc&gt;</div>
 <div class="line">  &lt;depends&gt;cv_colorfilter.xml&lt;/depends&gt;</div>
 <div class="line">  &lt;header&gt;</div>
@@ -164,7 +195,7 @@ Raw orange_avoider.xml file:</h2>
 <div class="line">  &lt;/header&gt;</div>
 <div class="line">  &lt;init fun=&quot;orange_avoider_init()&quot;/&gt;</div>
 <div class="line">  &lt;periodic fun=&quot;orange_avoider_periodic()&quot; freq=&quot;4&quot;/&gt;</div>
-<div class="line">  &lt;makefile target=&quot;ap&quot;&gt;</div>
+<div class="line">  &lt;makefile &gt;</div>
 <div class="line">    &lt;file name=&quot;orange_avoider.c&quot;/&gt;</div>
 <div class="line">  &lt;/makefile&gt;</div>
 <div class="line">&lt;/module&gt;</div>
@@ -175,7 +206,7 @@ Raw orange_avoider.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Wed Nov 8 2017 10:02:48 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:03:58 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -162,8 +162,8 @@ $(document).ready(function(){initNavTree('globals_vars_f.html','');});
 : <a class="el" href="fixedwing_2main__fbw_8h.html#a04101c7f45676997ca991bb10734066c">main_fbw.h</a>
 </li>
 <li>failsafe_mode_dist2
-: <a class="el" href="navigation_8c.html#a7369d742619e7cbb1b71ec46f845f06e">navigation.c</a>
-, <a class="el" href="navigation_8h.html#a7369d742619e7cbb1b71ec46f845f06e">navigation.h</a>
+: <a class="el" href="rover_2navigation_8c.html#a7369d742619e7cbb1b71ec46f845f06e">navigation.c</a>
+, <a class="el" href="rotorcraft_2navigation_8h.html#a7369d742619e7cbb1b71ec46f845f06e">navigation.h</a>
 </li>
 <li>failsafe_tid
 : <a class="el" href="rotorcraft_2main__ap_8c.html#ab3e516754299b88759000e60e490f5a8">main_ap.c</a>
@@ -173,10 +173,10 @@ $(document).ready(function(){initNavTree('globals_vars_f.html','');});
 , <a class="el" href="baro__ms5611__spi_8c.html#a4cd87df09b5c003ea87e593e7be5d80f">baro_ms5611_spi.c</a>
 </li>
 <li>fbw_mode
-: <a class="el" href="fixedwing_2main__fbw_8c.html#ac72590ceb6632f7874a3240836537857">main_fbw.c</a>
+: <a class="el" href="telemetry__intermcu__fbw_8c.html#a2165b8ffefef56193179893400522499">telemetry_intermcu_fbw.c</a>
+, <a class="el" href="fixedwing_2main__fbw_8c.html#ac72590ceb6632f7874a3240836537857">main_fbw.c</a>
 , <a class="el" href="fixedwing_2main__fbw_8h.html#ac72590ceb6632f7874a3240836537857">main_fbw.h</a>
 , <a class="el" href="rotorcraft_2main__fbw_8c.html#a2165b8ffefef56193179893400522499">main_fbw.c</a>
-, <a class="el" href="telemetry__intermcu__fbw_8c.html#a2165b8ffefef56193179893400522499">telemetry_intermcu_fbw.c</a>
 </li>
 <li>fbw_motors_on
 : <a class="el" href="rotorcraft_2main__fbw_8c.html#a78999b158f7adedebd44829411f69d53">main_fbw.c</a>
@@ -281,8 +281,8 @@ $(document).ready(function(){initNavTree('globals_vars_f.html','');});
 <li>flight_altitude
 : <a class="el" href="nav_8c.html#a1612ea0e1474e49b800cb3f497096523">nav.c</a>
 , <a class="el" href="nav_8h.html#a1612ea0e1474e49b800cb3f497096523">nav.h</a>
-, <a class="el" href="navigation_8c.html#a1612ea0e1474e49b800cb3f497096523">navigation.c</a>
-, <a class="el" href="navigation_8h.html#a1612ea0e1474e49b800cb3f497096523">navigation.h</a>
+, <a class="el" href="rotorcraft_2navigation_8c.html#a1612ea0e1474e49b800cb3f497096523">navigation.c</a>
+, <a class="el" href="rotorcraft_2navigation_8h.html#a1612ea0e1474e49b800cb3f497096523">navigation.h</a>
 </li>
 <li>flightgear
 : <a class="el" href="nps__flightgear_8c.html#a02dc13023acd03de503d68f80ebe6a42">nps_flightgear.c</a>
@@ -304,6 +304,12 @@ $(document).ready(function(){initNavTree('globals_vars_f.html','');});
 </li>
 <li>FlowerTheta
 : <a class="el" href="nav__flower_8c.html#a0c935f750d6c391ac00b92505c7513f6">nav_flower.c</a>
+</li>
+<li>flowX
+: <a class="el" href="optical__flow__hover_8c.html#a407507eaae08a64fbb2cc28aa9308d4c">optical_flow_hover.c</a>
+</li>
+<li>flowY
+: <a class="el" href="optical__flow__hover_8c.html#a1fa241545e49f14164bf5f620fd948a6">optical_flow_hover.c</a>
 </li>
 <li>FLQDR
 : <a class="el" href="nav__line__osam_8c.html#ac4d94e31e6e80714f7505df99243b5fa">nav_line_osam.c</a>
@@ -336,6 +342,14 @@ $(document).ready(function(){initNavTree('globals_vars_f.html','');});
 <li>focal
 : <a class="el" href="obstacle__avoidance_8c.html#ac855c2ab732c6413721c204efb34b4b0">obstacle_avoidance.c</a>
 </li>
+<li>focal_x
+: <a class="el" href="undistort__image_8c.html#ace4e9c98851393dcaadba965ce187ac3">undistort_image.c</a>
+, <a class="el" href="undistort__image_8h.html#ace4e9c98851393dcaadba965ce187ac3">undistort_image.h</a>
+</li>
+<li>focal_y
+: <a class="el" href="undistort__image_8c.html#a5e6ad3ccfff282fdaec690c7a5b63b9f">undistort_image.c</a>
+, <a class="el" href="undistort__image_8h.html#a5e6ad3ccfff282fdaec690c7a5b63b9f">undistort_image.h</a>
+</li>
 <li>focus_length
 : <a class="el" href="cv__georeference_8c.html#aac02c1eaa59c4cc452ba76c1a2261b00">cv_georeference.c</a>
 , <a class="el" href="cv__georeference_8h.html#aac02c1eaa59c4cc452ba76c1a2261b00">cv_georeference.h</a>
@@ -351,15 +365,16 @@ $(document).ready(function(){initNavTree('globals_vars_f.html','');});
 , <a class="el" href="potential_8h.html#a733641d1fb4e79d1e4e80daf4c5e09d0">potential.h</a>
 </li>
 <li>force_forward_flight
-: <a class="el" href="guidance__hybrid_8c.html#af8a5dd071abc8df6c3c96887b68dd595">guidance_hybrid.c</a>
+: <a class="el" href="guidance__hybrid_8h.html#af8a5dd071abc8df6c3c96887b68dd595">guidance_hybrid.h</a>
+, <a class="el" href="guidance__hybrid_8c.html#af8a5dd071abc8df6c3c96887b68dd595">guidance_hybrid.c</a>
 </li>
 <li>force_pos_gain
 : <a class="el" href="potential_8c.html#ab854e51b04432e809f3d60e85d19ded3">potential.c</a>
 , <a class="el" href="potential_8h.html#ab854e51b04432e809f3d60e85d19ded3">potential.h</a>
 </li>
 <li>force_speed_gain
-: <a class="el" href="potential_8c.html#adda93a003e9b84061c28b3b2ef8bea4b">potential.c</a>
-, <a class="el" href="potential_8h.html#adda93a003e9b84061c28b3b2ef8bea4b">potential.h</a>
+: <a class="el" href="potential_8h.html#adda93a003e9b84061c28b3b2ef8bea4b">potential.h</a>
+, <a class="el" href="potential_8c.html#adda93a003e9b84061c28b3b2ef8bea4b">potential.c</a>
 </li>
 <li>form_a
 : <a class="el" href="formation_8c.html#afc629dd59f363557c0c07350822f9e11">formation.c</a>
@@ -391,16 +406,16 @@ $(document).ready(function(){initNavTree('globals_vars_f.html','');});
 : <a class="el" href="formation_8c.html#a586066ae1845c5ca9d3bd7fa09ce335f">formation.c</a>
 </li>
 <li>formation
-: <a class="el" href="formation_8c.html#a86703694a52eca211bffb90b5163c75a">formation.c</a>
-, <a class="el" href="formation_8h.html#a148f303113664f79962247dcd90f5421">formation.h</a>
+: <a class="el" href="formation_8h.html#a148f303113664f79962247dcd90f5421">formation.h</a>
+, <a class="el" href="formation_8c.html#a86703694a52eca211bffb90b5163c75a">formation.c</a>
 </li>
 <li>fp_climb
-: <a class="el" href="nav_8h.html#adcc3264cc6d2b806b9f4c3f29368c281">nav.h</a>
-, <a class="el" href="nav_8c.html#adcc3264cc6d2b806b9f4c3f29368c281">nav.c</a>
+: <a class="el" href="nav_8c.html#adcc3264cc6d2b806b9f4c3f29368c281">nav.c</a>
+, <a class="el" href="nav_8h.html#adcc3264cc6d2b806b9f4c3f29368c281">nav.h</a>
 </li>
 <li>fp_pitch
-: <a class="el" href="nav_8c.html#a737a463b508f62286a0e62c5ed5648b4">nav.c</a>
-, <a class="el" href="nav_8h.html#a737a463b508f62286a0e62c5ed5648b4">nav.h</a>
+: <a class="el" href="nav_8h.html#a737a463b508f62286a0e62c5ed5648b4">nav.h</a>
+, <a class="el" href="nav_8c.html#a737a463b508f62286a0e62c5ed5648b4">nav.c</a>
 </li>
 <li>fp_throttle
 : <a class="el" href="nav_8c.html#a2be28bd06add4db649c8a0e9f773281a">nav.c</a>
@@ -413,51 +428,42 @@ $(document).ready(function(){initNavTree('globals_vars_f.html','');});
 : <a class="el" href="temp__tcouple__adc_8c.html#aa67736b889b8eff5752f3d0b6367906c">temp_tcouple_adc.c</a>
 </li>
 <li>front_camera
-: <a class="el" href="pc__sim_8h.html#abe211b229633c3f39cbfb50c5765b4b4">pc_sim.h</a>
+: <a class="el" href="ardrone_2board_8c.html#abe211b229633c3f39cbfb50c5765b4b4">board.c</a>
 , <a class="el" href="ardrone2_8h.html#abe211b229633c3f39cbfb50c5765b4b4">ardrone2.h</a>
-, <a class="el" href="video__thread__nps_8c.html#abe211b229633c3f39cbfb50c5765b4b4">video_thread_nps.c</a>
-, <a class="el" href="mt9f002_8c.html#abe211b229633c3f39cbfb50c5765b4b4">mt9f002.c</a>
-, <a class="el" href="ardrone_2board_8c.html#abe211b229633c3f39cbfb50c5765b4b4">board.c</a>
 , <a class="el" href="bebop_8h.html#abe211b229633c3f39cbfb50c5765b4b4">bebop.h</a>
+, <a class="el" href="mt9f002_8c.html#abe211b229633c3f39cbfb50c5765b4b4">mt9f002.c</a>
+, <a class="el" href="pc__sim_8h.html#abe211b229633c3f39cbfb50c5765b4b4">pc_sim.h</a>
 , <a class="el" href="disco_8h.html#abe211b229633c3f39cbfb50c5765b4b4">disco.h</a>
-</li>
-<li>FStar_UInt128_u32_32
-: <a class="el" href="FStar_8h.html#aa21e839b1489ad31141be51b554db56a">FStar.h</a>
-</li>
-<li>FStar_UInt128_u32_64
-: <a class="el" href="FStar_8h.html#a31b7bf572c1957f3611a1f10d6926b33">FStar.h</a>
-</li>
-<li>FStar_UInt128_u64_l32_mask
-: <a class="el" href="FStar_8h.html#a97241b47649d023f865ac1ccfa46d952">FStar.h</a>
+, <a class="el" href="video__thread__nps_8c.html#abe211b229633c3f39cbfb50c5765b4b4">video_thread_nps.c</a>
 </li>
 <li>ftemphtm
 : <a class="el" href="humid__htm__b71_8c.html#adfb08fb58d62ab3300c38d22cc1f9c22">humid_htm_b71.c</a>
 </li>
 <li>ftempms
-: <a class="el" href="baro__ms5611__spi_8c.html#a326d1071e8bed8a67a068d954eae5398">baro_ms5611_spi.c</a>
-, <a class="el" href="baro__ms5611__i2c_8c.html#a326d1071e8bed8a67a068d954eae5398">baro_ms5611_i2c.c</a>
+: <a class="el" href="baro__ms5611__i2c_8c.html#a326d1071e8bed8a67a068d954eae5398">baro_ms5611_i2c.c</a>
+, <a class="el" href="baro__ms5611__spi_8c.html#a326d1071e8bed8a67a068d954eae5398">baro_ms5611_spi.c</a>
 </li>
 <li>ftempsht
-: <a class="el" href="humid__sht__uart_8h.html#ab5111f7c86720c03eca02d5362d3373f">humid_sht_uart.h</a>
-, <a class="el" href="humid__sht__uart_8c.html#ab5111f7c86720c03eca02d5362d3373f">humid_sht_uart.c</a>
-, <a class="el" href="humid__sht_8h.html#ab5111f7c86720c03eca02d5362d3373f">humid_sht.h</a>
+: <a class="el" href="humid__sht_8h.html#ab5111f7c86720c03eca02d5362d3373f">humid_sht.h</a>
 , <a class="el" href="humid__sht_8c.html#ab5111f7c86720c03eca02d5362d3373f">humid_sht.c</a>
+, <a class="el" href="humid__sht__uart_8c.html#ab5111f7c86720c03eca02d5362d3373f">humid_sht_uart.c</a>
+, <a class="el" href="humid__sht__uart_8h.html#ab5111f7c86720c03eca02d5362d3373f">humid_sht_uart.h</a>
 </li>
 <li>ftempsht_i2c
 : <a class="el" href="humid__sht__i2c_8c.html#ad52c52ca36e2d9bad2918adee20b2a54">humid_sht_i2c.c</a>
 , <a class="el" href="humid__sht__i2c_8h.html#ad52c52ca36e2d9bad2918adee20b2a54">humid_sht_i2c.h</a>
 </li>
 <li>ftmd_temperature
-: <a class="el" href="temp__temod_8c.html#aaaf211bc5462b03ca020351920b40586">temp_temod.c</a>
-, <a class="el" href="temp__temod_8h.html#aaaf211bc5462b03ca020351920b40586">temp_temod.h</a>
+: <a class="el" href="temp__temod_8h.html#aaaf211bc5462b03ca020351920b40586">temp_temod.h</a>
+, <a class="el" href="temp__temod_8c.html#aaaf211bc5462b03ca020351920b40586">temp_temod.c</a>
 </li>
 <li>ftmp_temperature
 : <a class="el" href="temp__tmp102_8h.html#a8912f650188fc5048acd54fb13fdb70a">temp_tmp102.h</a>
 , <a class="el" href="temp__tmp102_8c.html#a8912f650188fc5048acd54fb13fdb70a">temp_tmp102.c</a>
 </li>
 <li>FULL_SAMPLING
-: <a class="el" href="textons_8c.html#a73515c3cec3be7f534b5c2af9f191d12">textons.c</a>
-, <a class="el" href="textons_8h.html#a73515c3cec3be7f534b5c2af9f191d12">textons.h</a>
+: <a class="el" href="textons_8h.html#a73515c3cec3be7f534b5c2af9f191d12">textons.h</a>
+, <a class="el" href="textons_8c.html#a73515c3cec3be7f534b5c2af9f191d12">textons.c</a>
 </li>
 <li>furuno_cfg_cnt
 : <a class="el" href="gps__furuno_8c.html#a472cd42e5e349a6d6f76dc3524d3ebd1">gps_furuno.c</a>
@@ -471,7 +477,7 @@ $(document).ready(function(){initNavTree('globals_vars_f.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Nov 8 2017 10:03:17 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:04:33 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

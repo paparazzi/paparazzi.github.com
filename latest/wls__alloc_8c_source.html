@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -161,7 +161,7 @@ $(document).ready(function(){initNavTree('wls__alloc_8c_source.html','');});
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
 <div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="wls__alloc_8h.html#a05bd41ae464753af8d7647e4543dc47b">  101</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="wls__alloc_8c.html#ab835ef4e4c3f872177ddb0dbc4e9eb45">wls_alloc</a>(<span class="keywordtype">float</span>* u, <span class="keywordtype">float</span>* v, <span class="keywordtype">float</span>* umin, <span class="keywordtype">float</span>* umax, <span class="keywordtype">float</span>** <a class="code" href="ahrs__float__invariant_8c.html#a111da81ae5883147168bbb8366377b10">B</a>,</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">int</span> n_u, <span class="keywordtype">int</span> n_v, <span class="keywordtype">float</span>* u_guess, <span class="keywordtype">float</span>* W_init, <span class="keywordtype">float</span>* Wv,</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">int</span> n_u, <span class="keywordtype">int</span> n_v, <span class="keywordtype">float</span>* u_guess, <span class="keywordtype">float</span>* W_init, <span class="keywordtype">float</span>* <a class="code" href="stabilization__indi_8c.html#a135981fcec0a59310c170cfdb95e491d">Wv</a>,</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordtype">float</span>* Wu, <span class="keywordtype">float</span>* <a class="code" href="light__solar_8c.html#a865f598ce218c5496c018323caf1fb4d">up</a>, <span class="keywordtype">float</span> gamma_sq, <span class="keywordtype">int</span> imax) {</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="comment">// allocate variables, use defaults where parameters are set to 0</span></div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="keywordflow">if</span>(!gamma_sq) gamma_sq = 100000;</div>
@@ -189,7 +189,7 @@ $(document).ready(function(){initNavTree('wls__alloc_8c_source.html','');});
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  <span class="keywordtype">float</span> p_free[n_u];</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  <span class="keywordtype">float</span> <a class="code" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>[n_u];</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  <span class="keywordtype">float</span> u_opt[n_u];</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  <span class="keywordtype">int</span> infeasible_index[n_u] <a class="code" href="navigation_8c.html#a9314d7061c454ecf2111d3965db8f23f">UNUSED</a>;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  <span class="keywordtype">int</span> infeasible_index[n_u] <a class="code" href="rotorcraft_2navigation_8c.html#a9314d7061c454ecf2111d3965db8f23f">UNUSED</a>;</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  <span class="keywordtype">int</span> n_infeasible = 0;</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  <span class="keywordtype">float</span> lambda[n_u];</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  <span class="keywordtype">float</span> W[n_u];</div>
@@ -365,65 +365,66 @@ $(document).ready(function(){initNavTree('wls__alloc_8c_source.html','');});
 <div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;<span class="preprocessor">#if WLS_VERBOSE</span></div>
 <div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;<span class="keywordtype">void</span> <a class="code" href="wls__alloc_8c.html#a90c6e2dcdb59035738d92ab5a763981e">print_in_and_outputs</a>(<span class="keywordtype">int</span> n_c, <span class="keywordtype">int</span> n_free, <span class="keywordtype">float</span>** A_free_ptr, <span class="keywordtype">float</span>* d, <span class="keywordtype">float</span>* p_free) {</div>
 <div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;  <a class="code" href="kremlib_8h.html#a3cb9f0894fab1c8fbb0753c9c7c2a8d9">printf</a>(<span class="stringliteral">&quot;n_c = %d n_free = %d\n&quot;</span>, n_c, n_free);</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;  printf(<span class="stringliteral">&quot;n_c = %d n_free = %d\n&quot;</span>, n_c, n_free);</div>
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;  <a class="code" href="kremlib_8h.html#a3cb9f0894fab1c8fbb0753c9c7c2a8d9">printf</a>(<span class="stringliteral">&quot;A_free =\n&quot;</span>);</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;  printf(<span class="stringliteral">&quot;A_free =\n&quot;</span>);</div>
 <div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; n_c; i++) {</div>
 <div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; n_free; j++) {</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;      <a class="code" href="kremlib_8h.html#a3cb9f0894fab1c8fbb0753c9c7c2a8d9">printf</a>(<span class="stringliteral">&quot;%f &quot;</span>, A_free_ptr[i][j]);</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;      printf(<span class="stringliteral">&quot;%f &quot;</span>, A_free_ptr[i][j]);</div>
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    }</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    <a class="code" href="kremlib_8h.html#a3cb9f0894fab1c8fbb0753c9c7c2a8d9">printf</a>(<span class="stringliteral">&quot;\n&quot;</span>);</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    printf(<span class="stringliteral">&quot;\n&quot;</span>);</div>
 <div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;  }</div>
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;  <a class="code" href="kremlib_8h.html#a3cb9f0894fab1c8fbb0753c9c7c2a8d9">printf</a>(<span class="stringliteral">&quot;d = &quot;</span>);</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;  printf(<span class="stringliteral">&quot;d = &quot;</span>);</div>
 <div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; n_c; j++) {</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    <a class="code" href="kremlib_8h.html#a3cb9f0894fab1c8fbb0753c9c7c2a8d9">printf</a>(<span class="stringliteral">&quot;%f &quot;</span>, d[j]);</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    printf(<span class="stringliteral">&quot;%f &quot;</span>, d[j]);</div>
 <div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;  }</div>
 <div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;  <a class="code" href="kremlib_8h.html#a3cb9f0894fab1c8fbb0753c9c7c2a8d9">printf</a>(<span class="stringliteral">&quot;\noutput = &quot;</span>);</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;  printf(<span class="stringliteral">&quot;\noutput = &quot;</span>);</div>
 <div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; n_free; j++) {</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    <a class="code" href="kremlib_8h.html#a3cb9f0894fab1c8fbb0753c9c7c2a8d9">printf</a>(<span class="stringliteral">&quot;%f &quot;</span>, p_free[j]);</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    printf(<span class="stringliteral">&quot;%f &quot;</span>, p_free[j]);</div>
 <div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;  }</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;  <a class="code" href="kremlib_8h.html#a3cb9f0894fab1c8fbb0753c9c7c2a8d9">printf</a>(<span class="stringliteral">&quot;\n\n&quot;</span>);</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;  printf(<span class="stringliteral">&quot;\n\n&quot;</span>);</div>
 <div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;}</div>
 <div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;</div>
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;<span class="keywordtype">void</span> <a class="code" href="wls__alloc_8c.html#a4aee565c4388fda3d9e4d12c6b6f22fb">print_final_values</a>(<span class="keywordtype">int</span> n_u, <span class="keywordtype">int</span> n_v, <span class="keywordtype">float</span>* u, <span class="keywordtype">float</span>** <a class="code" href="ahrs__float__invariant_8c.html#a111da81ae5883147168bbb8366377b10">B</a>, <span class="keywordtype">float</span>* v, <span class="keywordtype">float</span>* umin, <span class="keywordtype">float</span>* umax) {</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;  <a class="code" href="kremlib_8h.html#a3cb9f0894fab1c8fbb0753c9c7c2a8d9">printf</a>(<span class="stringliteral">&quot;n_u = %d n_v = %d\n&quot;</span>, n_u, n_v);</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;  printf(<span class="stringliteral">&quot;n_u = %d n_v = %d\n&quot;</span>, n_u, n_v);</div>
 <div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;  <a class="code" href="kremlib_8h.html#a3cb9f0894fab1c8fbb0753c9c7c2a8d9">printf</a>(<span class="stringliteral">&quot;B =\n&quot;</span>);</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;  printf(<span class="stringliteral">&quot;B =\n&quot;</span>);</div>
 <div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; n_v; i++) {</div>
 <div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; n_u; j++) {</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;      <a class="code" href="kremlib_8h.html#a3cb9f0894fab1c8fbb0753c9c7c2a8d9">printf</a>(<span class="stringliteral">&quot;%f &quot;</span>, B[i][j]);</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;      printf(<span class="stringliteral">&quot;%f &quot;</span>, B[i][j]);</div>
 <div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    }</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    <a class="code" href="kremlib_8h.html#a3cb9f0894fab1c8fbb0753c9c7c2a8d9">printf</a>(<span class="stringliteral">&quot;\n&quot;</span>);</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    printf(<span class="stringliteral">&quot;\n&quot;</span>);</div>
 <div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;  }</div>
 <div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;  <a class="code" href="kremlib_8h.html#a3cb9f0894fab1c8fbb0753c9c7c2a8d9">printf</a>(<span class="stringliteral">&quot;v = &quot;</span>);</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;  printf(<span class="stringliteral">&quot;v = &quot;</span>);</div>
 <div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; n_v; j++) {</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    <a class="code" href="kremlib_8h.html#a3cb9f0894fab1c8fbb0753c9c7c2a8d9">printf</a>(<span class="stringliteral">&quot;%f &quot;</span>, v[j]);</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    printf(<span class="stringliteral">&quot;%f &quot;</span>, v[j]);</div>
 <div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;  }</div>
 <div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;  <a class="code" href="kremlib_8h.html#a3cb9f0894fab1c8fbb0753c9c7c2a8d9">printf</a>(<span class="stringliteral">&quot;\nu = &quot;</span>);</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;  printf(<span class="stringliteral">&quot;\nu = &quot;</span>);</div>
 <div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; n_u; j++) {</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    <a class="code" href="kremlib_8h.html#a3cb9f0894fab1c8fbb0753c9c7c2a8d9">printf</a>(<span class="stringliteral">&quot;%f &quot;</span>, u[j]);</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    printf(<span class="stringliteral">&quot;%f &quot;</span>, u[j]);</div>
 <div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;  }</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;  <a class="code" href="kremlib_8h.html#a3cb9f0894fab1c8fbb0753c9c7c2a8d9">printf</a>(<span class="stringliteral">&quot;\n&quot;</span>);</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;  printf(<span class="stringliteral">&quot;\n&quot;</span>);</div>
 <div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;  <a class="code" href="kremlib_8h.html#a3cb9f0894fab1c8fbb0753c9c7c2a8d9">printf</a>(<span class="stringliteral">&quot;\numin = &quot;</span>);</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;  printf(<span class="stringliteral">&quot;\numin = &quot;</span>);</div>
 <div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; n_u; j++) {</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    <a class="code" href="kremlib_8h.html#a3cb9f0894fab1c8fbb0753c9c7c2a8d9">printf</a>(<span class="stringliteral">&quot;%f &quot;</span>, umin[j]);</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    printf(<span class="stringliteral">&quot;%f &quot;</span>, umin[j]);</div>
 <div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;  }</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;  <a class="code" href="kremlib_8h.html#a3cb9f0894fab1c8fbb0753c9c7c2a8d9">printf</a>(<span class="stringliteral">&quot;\n&quot;</span>);</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;  printf(<span class="stringliteral">&quot;\n&quot;</span>);</div>
 <div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;  <a class="code" href="kremlib_8h.html#a3cb9f0894fab1c8fbb0753c9c7c2a8d9">printf</a>(<span class="stringliteral">&quot;\numax = &quot;</span>);</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;  printf(<span class="stringliteral">&quot;\numax = &quot;</span>);</div>
 <div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; n_u; j++) {</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    <a class="code" href="kremlib_8h.html#a3cb9f0894fab1c8fbb0753c9c7c2a8d9">printf</a>(<span class="stringliteral">&quot;%f &quot;</span>, umax[j]);</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    printf(<span class="stringliteral">&quot;%f &quot;</span>, umax[j]);</div>
 <div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;  }</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;  <a class="code" href="kremlib_8h.html#a3cb9f0894fab1c8fbb0753c9c7c2a8d9">printf</a>(<span class="stringliteral">&quot;\n\n&quot;</span>);</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;  printf(<span class="stringliteral">&quot;\n\n&quot;</span>);</div>
 <div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;</div>
 <div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;}</div>
 <div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="qr__solve_8h_html"><div class="ttname"><a href="qr__solve_8h.html">qr_solve.h</a></div></div>
+<div class="ttc" id="rotorcraft_2navigation_8c_html_a9314d7061c454ecf2111d3965db8f23f"><div class="ttname"><a href="rotorcraft_2navigation_8c.html#a9314d7061c454ecf2111d3965db8f23f">UNUSED</a></div><div class="ttdeci">uint8_t last_wp UNUSED</div><div class="ttdef"><b>Definition:</b> <a href="rotorcraft_2navigation_8c_source.html#l00092">navigation.c:92</a></div></div>
 <div class="ttc" id="textons_8c_html_ab1551d8043c2aa4410fb7dbb1fe3be7b"><div class="ttname"><a href="textons_8c.html#ab1551d8043c2aa4410fb7dbb1fe3be7b">alpha</a></div><div class="ttdeci">float alpha</div><div class="ttdef"><b>Definition:</b> <a href="textons_8c_source.html#l00107">textons.c:107</a></div></div>
 <div class="ttc" id="wls__alloc_8h_html"><div class="ttname"><a href="wls__alloc_8h.html">wls_alloc.h</a></div></div>
 <div class="ttc" id="wls__alloc_8c_html_a4aee565c4388fda3d9e4d12c6b6f22fb"><div class="ttname"><a href="wls__alloc_8c.html#a4aee565c4388fda3d9e4d12c6b6f22fb">print_final_values</a></div><div class="ttdeci">void print_final_values(int n_u, int n_v, float *u, float **B, float *v, float *umin, float *umax)</div></div>
@@ -437,15 +438,14 @@ $(document).ready(function(){initNavTree('wls__alloc_8c_source.html','');});
 <div class="ttc" id="ins__alt__float_8c_html_a9d3f100c4375da4d957dbe599d494905"><div class="ttname"><a href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a></div><div class="ttdeci">static float p[2][2]</div><div class="ttdef"><b>Definition:</b> <a href="ins__alt__float_8c_source.html#l00268">ins_alt_float.c:268</a></div></div>
 <div class="ttc" id="group__math__geodetic__utm_html_ga955f504eccf76b4eb2489c0adab03121"><div class="ttname"><a href="group__math__geodetic__utm.html#ga955f504eccf76b4eb2489c0adab03121">A</a></div><div class="ttdeci">#define A</div><div class="ttdef"><b>Definition:</b> <a href="pprz__geodetic__utm_8h_source.html#l00044">pprz_geodetic_utm.h:44</a></div></div>
 <div class="ttc" id="wls__alloc_8c_html_ae96dd388138c3a7830cafe5eec5a0708"><div class="ttname"><a href="wls__alloc_8c.html#ae96dd388138c3a7830cafe5eec5a0708">qr_solve_wrapper</a></div><div class="ttdeci">void qr_solve_wrapper(int m, int n, float **A, float *b, float *x)</div><div class="ttdoc">Wrapper for qr solve. </div><div class="ttdef"><b>Definition:</b> <a href="wls__alloc_8c_source.html#l00063">wls_alloc.c:63</a></div></div>
-<div class="ttc" id="kremlib_8h_html_a3cb9f0894fab1c8fbb0753c9c7c2a8d9"><div class="ttname"><a href="kremlib_8h.html#a3cb9f0894fab1c8fbb0753c9c7c2a8d9">printf</a></div><div class="ttdeci">#define printf</div><div class="ttdef"><b>Definition:</b> <a href="kremlib_8h_source.html#l00242">kremlib.h:242</a></div></div>
-<div class="ttc" id="navigation_8c_html_a9314d7061c454ecf2111d3965db8f23f"><div class="ttname"><a href="navigation_8c.html#a9314d7061c454ecf2111d3965db8f23f">UNUSED</a></div><div class="ttdeci">uint8_t last_wp UNUSED</div><div class="ttdef"><b>Definition:</b> <a href="navigation_8c_source.html#l00092">navigation.c:92</a></div></div>
+<div class="ttc" id="stabilization__indi_8c_html_a135981fcec0a59310c170cfdb95e491d"><div class="ttname"><a href="stabilization__indi_8c.html#a135981fcec0a59310c170cfdb95e491d">Wv</a></div><div class="ttdeci">static float Wv[INDI_OUTPUTS]</div><div class="ttdef"><b>Definition:</b> <a href="stabilization__indi_8c_source.html#l00110">stabilization_indi.c:110</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_e37d355c72eb7c8e5b43c34bdea5a24b.html">rotorcraft</a></li><li class="navelem"><a class="el" href="dir_d1b81cc433edb6118e3c3e3bc7700be0.html">stabilization</a></li><li class="navelem"><a class="el" href="dir_a7f27d6d8047fe7c2fb437aa87b5222b.html">wls</a></li><li class="navelem"><a class="el" href="wls__alloc_8c.html">wls_alloc.c</a></li>
-    <li class="footer">Generated on Wed Nov 8 2017 10:01:33 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:02:39 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

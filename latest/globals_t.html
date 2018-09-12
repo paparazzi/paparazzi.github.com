@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -342,23 +342,23 @@ $(document).ready(function(){initNavTree('globals_t.html','');});
 : <a class="el" href="tcas_8c.html#a636b102d0ab938f9f56571e356093324">tcas.c</a>
 , <a class="el" href="tcas_8h.html#a636b102d0ab938f9f56571e356093324">tcas.h</a>
 </li>
-<li>TCAS_ALIM
-: <a class="el" href="tcas_8c.html#a9b85ff9921f76bd3131d6eecec1a54f3">tcas.c</a>
-</li>
 <li>tcas_alim
 : <a class="el" href="tcas_8c.html#a396262a03772db7853eee2291f8e0c04">tcas.c</a>
 , <a class="el" href="tcas_8h.html#a396262a03772db7853eee2291f8e0c04">tcas.h</a>
+</li>
+<li>TCAS_ALIM
+: <a class="el" href="tcas_8c.html#a9b85ff9921f76bd3131d6eecec1a54f3">tcas.c</a>
 </li>
 <li>tcas_alt_setpoint
 : <a class="el" href="tcas_8c.html#a7e660e258c0e3ba4f90b3d7534073aa6">tcas.c</a>
 , <a class="el" href="tcas_8h.html#a7e660e258c0e3ba4f90b3d7534073aa6">tcas.h</a>
 </li>
+<li>TCAS_DMOD
+: <a class="el" href="tcas_8c.html#a7a08d19a2e74e8be9ec5f7e38d433a33">tcas.c</a>
+</li>
 <li>tcas_dmod
 : <a class="el" href="tcas_8c.html#a464ab9be93b0bab52d30eb5300c7c008">tcas.c</a>
 , <a class="el" href="tcas_8h.html#a464ab9be93b0bab52d30eb5300c7c008">tcas.h</a>
-</li>
-<li>TCAS_DMOD
-: <a class="el" href="tcas_8c.html#a7a08d19a2e74e8be9ec5f7e38d433a33">tcas.c</a>
 </li>
 <li>TCAS_DT_MAX
 : <a class="el" href="tcas_8c.html#ae389c900929577ad8fc6f27ab3459154">tcas.c</a>
@@ -399,12 +399,12 @@ $(document).ready(function(){initNavTree('globals_t.html','');});
 <li>TCAS_TA
 : <a class="el" href="tcas_8h.html#a2a1fff0a0522fa6c1c6f859d687308c7">tcas.h</a>
 </li>
-<li>TCAS_TAU_RA
-: <a class="el" href="tcas_8c.html#ac93d0f01b1296c100ca664541b037cc5">tcas.c</a>
-</li>
 <li>tcas_tau_ra
 : <a class="el" href="tcas_8c.html#a2e66a196e4b5eed3d57f3599723aa4ee">tcas.c</a>
 , <a class="el" href="tcas_8h.html#a2e66a196e4b5eed3d57f3599723aa4ee">tcas.h</a>
+</li>
+<li>TCAS_TAU_RA
+: <a class="el" href="tcas_8c.html#ac93d0f01b1296c100ca664541b037cc5">tcas.c</a>
 </li>
 <li>tcas_tau_ta
 : <a class="el" href="tcas_8c.html#ac4b75b633a66ffdbd3202e4cac225ba8">tcas.c</a>
@@ -501,9 +501,9 @@ $(document).ready(function(){initNavTree('globals_t.html','');});
 , <a class="el" href="telemetry__intermcu__fbw_8c.html#ad6f1c8a8daa04e62e1b26cbd0d564e1e">telemetry_intermcu_fbw.c</a>
 </li>
 <li>telemetry_intermcu_on_msg()
-: <a class="el" href="telemetry__intermcu_8h.html#a494e042e37d2bc36b74cc155e444e137">telemetry_intermcu.h</a>
-, <a class="el" href="telemetry__intermcu__ap_8c.html#a494e042e37d2bc36b74cc155e444e137">telemetry_intermcu_ap.c</a>
-, <a class="el" href="telemetry__intermcu__fbw_8c.html#a494e042e37d2bc36b74cc155e444e137">telemetry_intermcu_fbw.c</a>
+: <a class="el" href="telemetry__intermcu_8h.html#a06d6fba8d0891b94f3b150c7e31bbf82">telemetry_intermcu.h</a>
+, <a class="el" href="telemetry__intermcu__ap_8c.html#a06d6fba8d0891b94f3b150c7e31bbf82">telemetry_intermcu_ap.c</a>
+, <a class="el" href="telemetry__intermcu__fbw_8c.html#a06d6fba8d0891b94f3b150c7e31bbf82">telemetry_intermcu_fbw.c</a>
 </li>
 <li>telemetry_intermcu_periodic()
 : <a class="el" href="telemetry__intermcu_8h.html#a0729be829ae2bee0e74b41b036b86c05">telemetry_intermcu.h</a>
@@ -517,7 +517,7 @@ $(document).ready(function(){initNavTree('globals_t.html','');});
 : <a class="el" href="telemetry__intermcu__ap_8c.html#a42f5260876f60c4092b75499b0be465a">telemetry_intermcu_ap.c</a>
 </li>
 <li>telemetry_intermcu_repack()
-: <a class="el" href="telemetry__intermcu__fbw_8c.html#a2229202b9a637f3bd439342f9c76b44a">telemetry_intermcu_fbw.c</a>
+: <a class="el" href="telemetry__intermcu__fbw_8c.html#ad57afcdf06b03a2859cf3d965e1a9e74">telemetry_intermcu_fbw.c</a>
 </li>
 <li>telemetry_intermcu_send_message()
 : <a class="el" href="telemetry__intermcu__ap_8c.html#a7adebdd4572bc08583d4d1243db2aa2c">telemetry_intermcu_ap.c</a>
@@ -534,10 +534,13 @@ $(document).ready(function(){initNavTree('globals_t.html','');});
 , <a class="el" href="rotorcraft_2main__ap_8h.html#aa185a98f019b1142ec48cf954cabe858">main_ap.h</a>
 , <a class="el" href="rotorcraft_2main__fbw_8c.html#aa185a98f019b1142ec48cf954cabe858">main_fbw.c</a>
 , <a class="el" href="rotorcraft_2main__fbw_8h.html#aa185a98f019b1142ec48cf954cabe858">main_fbw.h</a>
+, <a class="el" href="rover_2main__ap_8c.html#aa185a98f019b1142ec48cf954cabe858">main_ap.c</a>
+, <a class="el" href="rover_2main__ap_8h.html#aa185a98f019b1142ec48cf954cabe858">main_ap.h</a>
 </li>
 <li>telemetry_tid
 : <a class="el" href="fixedwing_2main__ap_8c.html#aaaaf875f33da06aeb2b503fde86862c1">main_ap.c</a>
 , <a class="el" href="rotorcraft_2main__fbw_8c.html#aaaaf875f33da06aeb2b503fde86862c1">main_fbw.c</a>
+, <a class="el" href="rover_2main__ap_8c.html#aaaaf875f33da06aeb2b503fde86862c1">main_ap.c</a>
 </li>
 <li>temod_event()
 : <a class="el" href="temp__temod_8c.html#a40dbb5e2d191dcd22c11a598d5169295">temp_temod.c</a>
@@ -795,55 +798,6 @@ $(document).ready(function(){initNavTree('globals_t.html','');});
 <li>testDataOut
 : <a class="el" href="qr__code__spi__link_8c.html#a46469c88d17f6fb9d0fe32aa18c5f012">qr_code_spi_link.c</a>
 </li>
-<li>TestLib_check()
-: <a class="el" href="testlib_8c.html#a4e56b50a896f4a4c25b529ceb83fac4d">testlib.c</a>
-, <a class="el" href="testlib_8h.html#ad4453722778c0b2e906a5345423a4026">testlib.h</a>
-</li>
-<li>TestLib_compare_and_print()
-: <a class="el" href="testlib_8h.html#a4da1a11496c785ea1413600b86425144">testlib.h</a>
-, <a class="el" href="testlib_8c.html#a4da1a11496c785ea1413600b86425144">testlib.c</a>
-</li>
-<li>TestLib_cpucycles()
-: <a class="el" href="testlib_8h.html#a04c871dc4018b3100ff1b9287949e75a">testlib.h</a>
-</li>
-<li>TestLib_cpucycles_begin()
-: <a class="el" href="testlib_8h.html#ae44de1c265729c03135223398b6a80ec">testlib.h</a>
-</li>
-<li>TestLib_cpucycles_end()
-: <a class="el" href="testlib_8h.html#ad742276e1f566545781bf221aa6e28ba">testlib.h</a>
-</li>
-<li>TestLib_cycles
-: <a class="el" href="testlib_8h.html#ae5ab59a895a9a88c53672f96759452cb">testlib.h</a>
-</li>
-<li>TestLib_perr()
-: <a class="el" href="testlib_8c.html#abc3f8df39d8e3df2d124d8d9b59a4100">testlib.c</a>
-, <a class="el" href="testlib_8h.html#abc3f8df39d8e3df2d124d8d9b59a4100">testlib.h</a>
-</li>
-<li>TestLib_print_clock_diff()
-: <a class="el" href="testlib_8c.html#ae9d9631d1694cfc02bda77853d6eaf41">testlib.c</a>
-, <a class="el" href="testlib_8h.html#ae9d9631d1694cfc02bda77853d6eaf41">testlib.h</a>
-</li>
-<li>TestLib_print_cycles_per_round()
-: <a class="el" href="testlib_8c.html#a072fd0b5adc8404062b18fa05502f670">testlib.c</a>
-, <a class="el" href="testlib_8h.html#a072fd0b5adc8404062b18fa05502f670">testlib.h</a>
-</li>
-<li>TestLib_touch()
-: <a class="el" href="testlib_8c.html#a15c58ee68c6a4e19307884ef2f3b9516">testlib.c</a>
-, <a class="el" href="testlib_8h.html#a5afebf4d82226b03fdfc3f203b18535e">testlib.h</a>
-</li>
-<li>TestLib_uint32_p_null
-: <a class="el" href="testlib_8h.html#a5c47354ce0a20d83664f88753f2d3d1c">testlib.h</a>
-</li>
-<li>TestLib_uint64_p_null
-: <a class="el" href="testlib_8h.html#aabadc2a8fcfd551fc26a95976b948533">testlib.h</a>
-</li>
-<li>TestLib_uint8_p_null
-: <a class="el" href="testlib_8h.html#a63db5467ca6130c1009343927008ec16">testlib.h</a>
-</li>
-<li>TestLib_unsafe_malloc()
-: <a class="el" href="testlib_8c.html#aecf97dd2c8115787a8fb0fb8bb4030af">testlib.c</a>
-, <a class="el" href="testlib_8h.html#aecf97dd2c8115787a8fb0fb8bb4030af">testlib.h</a>
-</li>
 <li>texton_distribution
 : <a class="el" href="textons_8c.html#a37c1f9ffc95bdb92779d73f088750028">textons.c</a>
 , <a class="el" href="textons_8h.html#a37c1f9ffc95bdb92779d73f088750028">textons.h</a>
@@ -943,7 +897,7 @@ $(document).ready(function(){initNavTree('globals_t.html','');});
 <li>THD_WORKING_AREA()
 : <a class="el" href="chibios_2mcu__periph_2spi__arch_8c.html#a6d056a444ab9ff07405d2fdb3f554e2c">spi_arch.c</a>
 , <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a9b1f508bb40bda0b5b7ebdcf877cb9f3">sys_time_arch.c</a>
-, <a class="el" href="fixedwing_2main__chibios_8c.html#aa88ee056a193c43536d25d6d83718c8b">main_chibios.c</a>
+, <a class="el" href="fixedwing_2main__chibios_8c.html#a2954efe909ba3927650f4d7bc6107ba3">main_chibios.c</a>
 , <a class="el" href="vms__ecu__demo_8c.html#a7d1ac88d5b0e184e4e2e74fc7bb09e80">vms_ecu_demo.c</a>
 , <a class="el" href="group__chprintf.html#gaaa63d28f86feab4f82cf46a5e39c91c7">printf.c</a>
 , <a class="el" href="usb__msd_8c.html#a0d338bbae03b38747a52bed49249fa7b">usb_msd.c</a>
@@ -997,7 +951,7 @@ $(document).ready(function(){initNavTree('globals_t.html','');});
 : <a class="el" href="rotorcraft_2autopilot__utils_8c.html#a29020e550d0d136a0212ba92940fd672">autopilot_utils.c</a>
 </li>
 <li>THRESHOLD_2_PPRZ
-: <a class="el" href="rotorcraft_2autopilot__utils_8c.html#a042859caaa6cc4c56b7918a0715b674d">autopilot_utils.c</a>
+: <a class="el" href="rover_2autopilot__utils_8c.html#a042859caaa6cc4c56b7918a0715b674d">autopilot_utils.c</a>
 </li>
 <li>THRESHOLD_GROUND_DETECT
 : <a class="el" href="rotorcraft_2autopilot__firmware_8c.html#a691189e2b0e9182bc6a3fe84b6e0a267">autopilot_firmware.c</a>
@@ -1013,12 +967,30 @@ $(document).ready(function(){initNavTree('globals_t.html','');});
 , <a class="el" href="throttle__curve_8h.html#a221e1cf040a3e43d119178667fd76aad">throttle_curve.h</a>
 </li>
 <li>throttle_curve_init()
-: <a class="el" href="throttle__curve_8h.html#a6dd506225a07a2ea4e6f39cfb34d6397">throttle_curve.h</a>
-, <a class="el" href="throttle__curve_8c.html#a6dd506225a07a2ea4e6f39cfb34d6397">throttle_curve.c</a>
+: <a class="el" href="throttle__curve_8c.html#a6dd506225a07a2ea4e6f39cfb34d6397">throttle_curve.c</a>
+, <a class="el" href="throttle__curve_8h.html#a6dd506225a07a2ea4e6f39cfb34d6397">throttle_curve.h</a>
+</li>
+<li>THROTTLE_CURVE_RPM_ACT
+: <a class="el" href="throttle__curve_8c.html#aeaa9f82b8ccadd612969f4ace31805b3">throttle_curve.c</a>
+</li>
+<li>THROTTLE_CURVE_RPM_FB_I
+: <a class="el" href="throttle__curve_8c.html#ad3908eda77cbc31284f81840c3efe78a">throttle_curve.c</a>
+</li>
+<li>THROTTLE_CURVE_RPM_FB_P
+: <a class="el" href="throttle__curve_8c.html#a6ba7bae0d2592f58b421dfe4c78b3a80">throttle_curve.c</a>
+</li>
+<li>THROTTLE_CURVE_RPM_ID
+: <a class="el" href="throttle__curve_8c.html#a9b8081822a5db1c695b3675a97e59f2b">throttle_curve.c</a>
+</li>
+<li>THROTTLE_CURVE_RPM_INC_LIMIT
+: <a class="el" href="throttle__curve_8c.html#aa5a470d0242ebaeb8f238a036386aeca">throttle_curve.c</a>
 </li>
 <li>throttle_curve_run()
-: <a class="el" href="throttle__curve_8c.html#a61821337b67b9a8481f57e521205cb91">throttle_curve.c</a>
-, <a class="el" href="throttle__curve_8h.html#a61821337b67b9a8481f57e521205cb91">throttle_curve.h</a>
+: <a class="el" href="throttle__curve_8c.html#aa25541409314b2cd0199a3adc299d314">throttle_curve.c</a>
+, <a class="el" href="throttle__curve_8h.html#a543adeeedcc71be82aa23201232c2d66">throttle_curve.h</a>
+</li>
+<li>throttle_curve_send_telem()
+: <a class="el" href="throttle__curve_8c.html#a6f584cc127d0e7a4cc646365f4513c9a">throttle_curve.c</a>
 </li>
 <li>THROTTLE_CURVE_SWITCH_VAL
 : <a class="el" href="throttle__curve_8c.html#a19820f76eb27824a314c56b4800bc828">throttle_curve.c</a>
@@ -1027,8 +999,8 @@ $(document).ready(function(){initNavTree('globals_t.html','');});
 : <a class="el" href="nav__bungee__takeoff_8c.html#a0d83650a12f67a2a3b9be1e65dcb21d4">nav_bungee_takeoff.c</a>
 </li>
 <li>throttle_slew
-: <a class="el" href="arch_2sim_2modules_2ins_2ins__arduimu_8c.html#aac18cc3d324b605dd90d56321d413455">ins_arduimu.c</a>
-, <a class="el" href="ins__arduimu_8h.html#aac18cc3d324b605dd90d56321d413455">ins_arduimu.h</a>
+: <a class="el" href="ins__arduimu_8h.html#aac18cc3d324b605dd90d56321d413455">ins_arduimu.h</a>
+, <a class="el" href="arch_2sim_2modules_2ins_2ins__arduimu_8c.html#aac18cc3d324b605dd90d56321d413455">ins_arduimu.c</a>
 </li>
 <li>THROTTLE_STICK_DOWN
 : <a class="el" href="rotorcraft_2autopilot__rc__helpers_8h.html#a1658edfb25039379849b94dda1eada9b">autopilot_rc_helpers.h</a>
@@ -1079,12 +1051,12 @@ $(document).ready(function(){initNavTree('globals_t.html','');});
 : <a class="el" href="uart__cam__ctrl_8c.html#a1c243cee59714576fc25654b97bd2aa3">uart_cam_ctrl.c</a>
 </li>
 <li>ti_acs
-: <a class="el" href="group__ac__info.html#gab3795ba1b3ecde9a2056986e77373342">traffic_info.c</a>
-, <a class="el" href="group__ac__info.html#gab3795ba1b3ecde9a2056986e77373342">traffic_info.h</a>
+: <a class="el" href="group__ac__info.html#gab3795ba1b3ecde9a2056986e77373342">traffic_info.h</a>
+, <a class="el" href="group__ac__info.html#gab3795ba1b3ecde9a2056986e77373342">traffic_info.c</a>
 </li>
 <li>ti_acs_id
-: <a class="el" href="group__ac__info.html#gab5ba385d8398688a96e0269bc9c50fb9">traffic_info.h</a>
-, <a class="el" href="group__ac__info.html#gab5ba385d8398688a96e0269bc9c50fb9">traffic_info.c</a>
+: <a class="el" href="group__ac__info.html#gab5ba385d8398688a96e0269bc9c50fb9">traffic_info.c</a>
+, <a class="el" href="group__ac__info.html#gab5ba385d8398688a96e0269bc9c50fb9">traffic_info.h</a>
 </li>
 <li>ti_acs_idx
 : <a class="el" href="group__ac__info.html#ga2696f46ef83417abc0528b1f4fdb1169">traffic_info.c</a>
@@ -1100,8 +1072,8 @@ $(document).ready(function(){initNavTree('globals_t.html','');});
 : <a class="el" href="sys__time_8h.html#afd62afa1c6cefa443f9c9f6aa1e03dae">sys_time.h</a>
 </li>
 <li>TIM12_SERVO_HZ
-: <a class="el" href="chibios_2subsystems_2actuators_2actuators__pwm__arch_8h.html#a61301c31538dcbdb2c7018715847b446">actuators_pwm_arch.h</a>
-, <a class="el" href="actuators__shared__arch_8h.html#a61301c31538dcbdb2c7018715847b446">actuators_shared_arch.h</a>
+: <a class="el" href="actuators__shared__arch_8h.html#a61301c31538dcbdb2c7018715847b446">actuators_shared_arch.h</a>
+, <a class="el" href="chibios_2subsystems_2actuators_2actuators__pwm__arch_8h.html#a61301c31538dcbdb2c7018715847b446">actuators_pwm_arch.h</a>
 </li>
 <li>TIM1_CC_IF_DUTY
 : <a class="el" href="apogee__1_80_8h.html#a880bc48c4436c16e8f402ff84b2073e9">apogee_1.0.h</a>
@@ -1158,25 +1130,28 @@ $(document).ready(function(){initNavTree('globals_t.html','');});
 : <a class="el" href="apogee__1_80_8h.html#a2555b099b63f3dba83c104de095ec356">apogee_1.0.h</a>
 </li>
 <li>TIM9_SERVO_HZ
-: <a class="el" href="chibios_2subsystems_2actuators_2actuators__pwm__arch_8h.html#a5cca030e9242d74bda94022625298cec">actuators_pwm_arch.h</a>
-, <a class="el" href="actuators__shared__arch_8h.html#a5cca030e9242d74bda94022625298cec">actuators_shared_arch.h</a>
+: <a class="el" href="actuators__shared__arch_8h.html#a5cca030e9242d74bda94022625298cec">actuators_shared_arch.h</a>
+, <a class="el" href="chibios_2subsystems_2actuators_2actuators__pwm__arch_8h.html#a5cca030e9242d74bda94022625298cec">actuators_pwm_arch.h</a>
 </li>
 <li>TIM_ADC
 : <a class="el" href="stm32_2mcu__periph_2adc__arch_8c.html#a99c5bc9141c12b8d4f235a6bc19266f0">adc_arch.c</a>
-</li>
-<li>TIM_TICS_FOR_100us
-: <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a94fea3742c90d2c73341748bf2de72d4">spektrum_arch.c</a>
 </li>
 <li>time_countdown_init()
 : <a class="el" href="time__countdown_8c.html#a3445395cd2c45aa2830d1b3c774e6e27">time_countdown.c</a>
 , <a class="el" href="time__countdown_8h.html#a3445395cd2c45aa2830d1b3c774e6e27">time_countdown.h</a>
 </li>
 <li>time_countdown_periodic_1hz()
-: <a class="el" href="time__countdown_8h.html#a002c209afa416c1cd7aa99ae7c210410">time_countdown.h</a>
-, <a class="el" href="time__countdown_8c.html#a002c209afa416c1cd7aa99ae7c210410">time_countdown.c</a>
+: <a class="el" href="time__countdown_8c.html#a002c209afa416c1cd7aa99ae7c210410">time_countdown.c</a>
+, <a class="el" href="time__countdown_8h.html#a002c209afa416c1cd7aa99ae7c210410">time_countdown.h</a>
 </li>
 <li>TIME_COUNTDOWN_START_VALUE
 : <a class="el" href="time__countdown_8c.html#a8067dd23dd37d0173e84e8b6474047be">time_countdown.c</a>
+</li>
+<li>time_of_accel_sp_2d
+: <a class="el" href="guidance__indi_8c.html#ada1058d9f876baa193cebc5aa30daa76">guidance_indi.c</a>
+</li>
+<li>time_of_accel_sp_3d
+: <a class="el" href="guidance__indi_8c.html#aa35e446e7885bff3cb2c56f8b3720269">guidance_indi.c</a>
 </li>
 <li>TIME_PER_DEFLECTION
 : <a class="el" href="servo__tester_8c.html#a8e349ee610d729d9b7dfdfd1863fbca4">servo_tester.c</a>
@@ -1204,6 +1179,9 @@ $(document).ready(function(){initNavTree('globals_t.html','');});
 : <a class="el" href="time__countdown_8c.html#a9b5d40ba50b85dbd23358ffbe613ce6c">time_countdown.c</a>
 , <a class="el" href="time__countdown_8h.html#a9b5d40ba50b85dbd23358ffbe613ce6c">time_countdown.h</a>
 </li>
+<li>timeout
+: <a class="el" href="object__tracking_8c.html#a0847d1b93c790eaa08315d68e786ae14">object_tracking.c</a>
+</li>
 <li>TIMER0_ISR()
 : <a class="el" href="lpc21_2mcu__periph_2sys__time__arch_8c.html#ae189f8759d6fc0d0ea13267459b1f2ad">sys_time_arch.c</a>
 , <a class="el" href="lpc21_2mcu__periph_2sys__time__arch_8h.html#ae189f8759d6fc0d0ea13267459b1f2ad">sys_time_arch.h</a>
@@ -1214,31 +1192,19 @@ $(document).ready(function(){initNavTree('globals_t.html','');});
 <li>TIMER0_VIC_SLOT
 : <a class="el" href="lpc21_2mcu__periph_2sys__time__arch_8h.html#ad5d5ed8092dba600cf37de82e1b60086">sys_time_arch.h</a>
 </li>
-<li>timer_clear_flag()
-: <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a1c34ea5943bc1d1335983afe8435e2bd">spektrum_arch.c</a>
-</li>
 <li>timer_get_frequency()
-: <a class="el" href="stm32_2mcu__arch_8c.html#ad5d712b19fd6e3df08c60d4db733a22c">mcu_arch.c</a>
-, <a class="el" href="stm32_2mcu__arch_8h.html#ad5d712b19fd6e3df08c60d4db733a22c">mcu_arch.h</a>
+: <a class="el" href="stm32_2mcu__arch_8h.html#ad5d712b19fd6e3df08c60d4db733a22c">mcu_arch.h</a>
+, <a class="el" href="stm32_2mcu__arch_8c.html#ad5d712b19fd6e3df08c60d4db733a22c">mcu_arch.c</a>
 </li>
 <li>timer_rollover_cnt
-: <a class="el" href="chibios_2subsystems_2radio__control_2ppm__arch_8c.html#a6b8315208a0f09436556fbce0298ae38">ppm_arch.c</a>
+: <a class="el" href="stm32_2subsystems_2radio__control_2ppm__arch_8c.html#a6b8315208a0f09436556fbce0298ae38">ppm_arch.c</a>
 </li>
 <li>timeval_diff()
-: <a class="el" href="opticflow__calculator_8c.html#a37709847b0065c4f371663e9ad30459d">opticflow_calculator.c</a>
-, <a class="el" href="cv_8c.html#a9ccbed9793580feadb878ae82db54f7f">cv.c</a>
+: <a class="el" href="cv_8c.html#a9ccbed9793580feadb878ae82db54f7f">cv.c</a>
+, <a class="el" href="opticflow__calculator_8c.html#a37709847b0065c4f371663e9ad30459d">opticflow_calculator.c</a>
 </li>
 <li>timeval_diff2()
 : <a class="el" href="edge__flow_8h.html#ad1d1a9f908fa4e96f28ccbe968f356e8">edge_flow.h</a>
-</li>
-<li>TIMx
-: <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a25d69bed0692e5f9388fbf3df864e075">spektrum_arch.c</a>
-</li>
-<li>TIMx_DAC_ISR
-: <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#acd2fc10603bb3dbf8119d375e4dfb66b">spektrum_arch.c</a>
-</li>
-<li>TIMx_ISR
-: <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#ab5826c5f133db9bdf55ddbdf61b54b64">spektrum_arch.c</a>
 </li>
 <li>TIR_CR0I
 : <a class="el" href="lpcTMR_8h.html#aa5736fe7bdb6ec8ff3d35af3c38da343">lpcTMR.h</a>
@@ -1277,8 +1243,8 @@ $(document).ready(function(){initNavTree('globals_t.html','');});
 , <a class="el" href="tlsf__malloc_8h.html#a1324770050af7b18bce649d036612cf1">tlsf_malloc.h</a>
 </li>
 <li>tlsf_init_heaps()
-: <a class="el" href="tlsf__malloc__arch_8c.html#a4b5b59eea2001cbdc1c69b823743ba16">tlsf_malloc_arch.c</a>
-, <a class="el" href="tlsf__malloc_8h.html#a4b5b59eea2001cbdc1c69b823743ba16">tlsf_malloc.h</a>
+: <a class="el" href="tlsf__malloc_8h.html#a4b5b59eea2001cbdc1c69b823743ba16">tlsf_malloc.h</a>
+, <a class="el" href="tlsf__malloc__arch_8c.html#a4b5b59eea2001cbdc1c69b823743ba16">tlsf_malloc_arch.c</a>
 </li>
 <li>tlsf_malloc_r()
 : <a class="el" href="tlsf__malloc__arch_8c.html#ad0333be97f2cbeecedde494c53243648">tlsf_malloc_arch.c</a>
@@ -1296,8 +1262,8 @@ $(document).ready(function(){initNavTree('globals_t.html','');});
 , <a class="el" href="tlsf__malloc__arch_8c.html#acd409acd35fa6782d1d26ab94d1c2a89">tlsf_malloc_arch.c</a>
 </li>
 <li>tlsf_stat_r()
-: <a class="el" href="tlsf__malloc__arch_8c.html#a95f2a98b0ca24489895eb88877ba6656">tlsf_malloc_arch.c</a>
-, <a class="el" href="tlsf__malloc_8h.html#a95f2a98b0ca24489895eb88877ba6656">tlsf_malloc.h</a>
+: <a class="el" href="tlsf__malloc_8h.html#a95f2a98b0ca24489895eb88877ba6656">tlsf_malloc.h</a>
+, <a class="el" href="tlsf__malloc__arch_8c.html#a95f2a98b0ca24489895eb88877ba6656">tlsf_malloc_arch.c</a>
 </li>
 <li>TMCR_MR0_I
 : <a class="el" href="lpcTMR_8h.html#a225d2f2a139843cf373ef6b6aebe540f">lpcTMR.h</a>
@@ -1348,8 +1314,8 @@ $(document).ready(function(){initNavTree('globals_t.html','');});
 : <a class="el" href="temp__tmp102_8h.html#a316b135f98442f1ffd6e3fcb0f795a15">temp_tmp102.h</a>
 </li>
 <li>tmp102_event()
-: <a class="el" href="temp__tmp102_8c.html#a2866e6e6ac2a212124efcc6fac2d0e74">temp_tmp102.c</a>
-, <a class="el" href="temp__tmp102_8h.html#a2866e6e6ac2a212124efcc6fac2d0e74">temp_tmp102.h</a>
+: <a class="el" href="temp__tmp102_8h.html#a2866e6e6ac2a212124efcc6fac2d0e74">temp_tmp102.h</a>
+, <a class="el" href="temp__tmp102_8c.html#a2866e6e6ac2a212124efcc6fac2d0e74">temp_tmp102.c</a>
 </li>
 <li>tmp102_init()
 : <a class="el" href="temp__tmp102_8h.html#ac75f01dc11a58b9e4d93939bcc68f112">temp_tmp102.h</a>
@@ -1431,14 +1397,14 @@ $(document).ready(function(){initNavTree('globals_t.html','');});
 , <a class="el" href="flight__benchmark_8c.html#a9c89ccb67edcffa690db968ae55d0e38">flight_benchmark.c</a>
 </li>
 <li>TolerancePosition
-: <a class="el" href="flight__benchmark_8h.html#a32990d5437f07167a684a9dc97602022">flight_benchmark.h</a>
-, <a class="el" href="flight__benchmark_8c.html#a32990d5437f07167a684a9dc97602022">flight_benchmark.c</a>
+: <a class="el" href="flight__benchmark_8c.html#a32990d5437f07167a684a9dc97602022">flight_benchmark.c</a>
+, <a class="el" href="flight__benchmark_8h.html#a32990d5437f07167a684a9dc97602022">flight_benchmark.h</a>
 </li>
 <li>too_far_from_home
-: <a class="el" href="navigation_8c.html#a40345348447d2bf9b3462286f0b95a4f">navigation.c</a>
-, <a class="el" href="navigation_8h.html#a40345348447d2bf9b3462286f0b95a4f">navigation.h</a>
-, <a class="el" href="common__nav_8h.html#a40345348447d2bf9b3462286f0b95a4f">common_nav.h</a>
+: <a class="el" href="rotorcraft_2navigation_8h.html#a40345348447d2bf9b3462286f0b95a4f">navigation.h</a>
+, <a class="el" href="rotorcraft_2navigation_8c.html#a40345348447d2bf9b3462286f0b95a4f">navigation.c</a>
 , <a class="el" href="common__nav_8c.html#a40345348447d2bf9b3462286f0b95a4f">common_nav.c</a>
+, <a class="el" href="common__nav_8h.html#a40345348447d2bf9b3462286f0b95a4f">common_nav.h</a>
 </li>
 <li>Total_force
 : <a class="el" href="guidance__OA_8c.html#a42d032cf4169c15404dbb05713996703">guidance_OA.c</a>
@@ -1458,8 +1424,8 @@ $(document).ready(function(){initNavTree('globals_t.html','');});
 , <a class="el" href="serial__port_8c.html#a114bd0b279c986fe4425fbcce8206709">serial_port.c</a>
 </li>
 <li>TRACE_ERROR
-: <a class="el" href="serial__port_8c.html#a7c12181b2e8dc912219651ff42d22e42">serial_port.c</a>
-, <a class="el" href="udp__socket_8c.html#a7c12181b2e8dc912219651ff42d22e42">udp_socket.c</a>
+: <a class="el" href="udp__socket_8c.html#a7c12181b2e8dc912219651ff42d22e42">udp_socket.c</a>
+, <a class="el" href="serial__port_8c.html#a7c12181b2e8dc912219651ff42d22e42">serial_port.c</a>
 </li>
 <li>TRACKING_AIRSPEED
 : <a class="el" href="nav__airspeed_8c.html#afa2aa8a271fcddc679b10b9a78322204">nav_airspeed.c</a>
@@ -1471,8 +1437,8 @@ $(document).ready(function(){initNavTree('globals_t.html','');});
 : <a class="el" href="gps__piksi_8c.html#ab07c3ded128de63b9a2314880d3abcae">gps_piksi.c</a>
 </li>
 <li>traffic_info_init()
-: <a class="el" href="group__ac__info.html#gaae96e15faf2bb8e4c1f82c01cdf869c2">traffic_info.c</a>
-, <a class="el" href="group__ac__info.html#gaae96e15faf2bb8e4c1f82c01cdf869c2">traffic_info.h</a>
+: <a class="el" href="group__ac__info.html#gaae96e15faf2bb8e4c1f82c01cdf869c2">traffic_info.h</a>
+, <a class="el" href="group__ac__info.html#gaae96e15faf2bb8e4c1f82c01cdf869c2">traffic_info.c</a>
 </li>
 <li>TRAJ_MAX_BANK
 : <a class="el" href="stabilization__attitude__passthrough_8c.html#a669618b358d48a98ea0b7c88a3db1854">stabilization_attitude_passthrough.c</a>
@@ -1481,8 +1447,8 @@ $(document).ready(function(){initNavTree('globals_t.html','');});
 : <a class="el" href="gvf_8h.html#a5e61057ce8c51b9efe7810e885a5e608">gvf.h</a>
 </li>
 <li>trajectoryConfidence
-: <a class="el" href="orange__avoider_8h.html#a337f54ebc2ec76b14365163bc7f5f7e5">orange_avoider.h</a>
-, <a class="el" href="orange__avoider_8c.html#a337f54ebc2ec76b14365163bc7f5f7e5">orange_avoider.c</a>
+: <a class="el" href="orange__avoider_8c.html#a337f54ebc2ec76b14365163bc7f5f7e5">orange_avoider.c</a>
+, <a class="el" href="orange__avoider_8h.html#a337f54ebc2ec76b14365163bc7f5f7e5">orange_avoider.h</a>
 </li>
 <li>trans_cb()
 : <a class="el" href="bluegiga_8c.html#a81dec5456e47bf1870486a85600c7e1c">bluegiga.c</a>
@@ -1494,8 +1460,8 @@ $(document).ready(function(){initNavTree('globals_t.html','');});
 : <a class="el" href="nav__flower_8c.html#a116d829509d0cd638a8e1fe85fe7858a">nav_flower.c</a>
 </li>
 <li>transform_illuminance_image()
-: <a class="el" href="detect__window_8c.html#a9c2d6a24773c1b4e11722908a7f58dcd">detect_window.c</a>
-, <a class="el" href="detect__window_8h.html#a9c2d6a24773c1b4e11722908a7f58dcd">detect_window.h</a>
+: <a class="el" href="detect__window_8h.html#a9c2d6a24773c1b4e11722908a7f58dcd">detect_window.h</a>
+, <a class="el" href="detect__window_8c.html#a9c2d6a24773c1b4e11722908a7f58dcd">detect_window.c</a>
 </li>
 <li>transition_percentage
 : <a class="el" href="rotorcraft_2guidance_2guidance__h_8c.html#a03b606d1a31f9d006700fcbbc60d7293">guidance_h.c</a>
@@ -1505,13 +1471,13 @@ $(document).ready(function(){initNavTree('globals_t.html','');});
 : <a class="el" href="rotorcraft_2guidance_2guidance__h_8c.html#ae0ff25590456201a3c9ff1dc7ea13415">guidance_h.c</a>
 </li>
 <li>transition_theta_offset
-: <a class="el" href="rotorcraft_2guidance_2guidance__h_8c.html#ac5766b598ff030ccbe7b127c796bc307">guidance_h.c</a>
-, <a class="el" href="rotorcraft_2guidance_2guidance__h_8h.html#ac5766b598ff030ccbe7b127c796bc307">guidance_h.h</a>
+: <a class="el" href="stabilization__attitude__rc__setpoint_8c.html#ac5766b598ff030ccbe7b127c796bc307">stabilization_attitude_rc_setpoint.c</a>
+, <a class="el" href="stabilization__attitude__rc__setpoint_8h.html#ac5766b598ff030ccbe7b127c796bc307">stabilization_attitude_rc_setpoint.h</a>
 </li>
 <li>TranslateAndRotateFromWorld()
-: <a class="el" href="nav__survey__poly__rotorcraft_8c.html#a96d0c0466f7f735616e1d7a97822368f">nav_survey_poly_rotorcraft.c</a>
-, <a class="el" href="nav__line__osam_8c.html#ab7d058967ce69d5ca67b0e24bee62da6">nav_line_osam.c</a>
+: <a class="el" href="nav__line__osam_8c.html#ab7d058967ce69d5ca67b0e24bee62da6">nav_line_osam.c</a>
 , <a class="el" href="nav__survey__poly__osam_8c.html#af0bd4fedce9feee425bcbd4ee20439bb">nav_survey_poly_osam.c</a>
+, <a class="el" href="nav__survey__poly__rotorcraft_8c.html#a96d0c0466f7f735616e1d7a97822368f">nav_survey_poly_rotorcraft.c</a>
 </li>
 <li>TREE_BUF_12_1
 : <a class="el" href="pprz__trig__int_8h.html#afe5058505fa494bcd67642089d17784b">pprz_trig_int.h</a>
@@ -1581,9 +1547,9 @@ $(document).ready(function(){initNavTree('globals_t.html','');});
 : <a class="el" href="pprz__trig__int_8h.html#a3bf768a89c2a47e30ce976aca3f7b30d">pprz_trig_int.h</a>
 </li>
 <li>TRIG_ISR()
-: <a class="el" href="trig__ext__hw_8c.html#ad7ca2e350f249bba99a8a506cf5892c4">trig_ext_hw.c</a>
-, <a class="el" href="trig__ext__hw_8h.html#a80ce25041c38ee2a1bb26b18549e8423">trig_ext_hw.h</a>
+: <a class="el" href="trig__ext__hw_8h.html#a80ce25041c38ee2a1bb26b18549e8423">trig_ext_hw.h</a>
 , <a class="el" href="lpc21_2modules_2core_2trigger__ext__hw_8h.html#a80ce25041c38ee2a1bb26b18549e8423">trigger_ext_hw.h</a>
+, <a class="el" href="trig__ext__hw_8c.html#ad7ca2e350f249bba99a8a506cf5892c4">trig_ext_hw.c</a>
 , <a class="el" href="lpc21_2modules_2core_2trigger__ext__hw_8c.html#ad7ca2e350f249bba99a8a506cf5892c4">trigger_ext_hw.c</a>
 </li>
 <li>TRIGGER_CR
@@ -1599,19 +1565,18 @@ $(document).ready(function(){initNavTree('globals_t.html','');});
 : <a class="el" href="lpc21_2modules_2core_2trigger__ext__hw_8h.html#a8879dc54d4d1b9f44a368d284f8bad33">trigger_ext_hw.h</a>
 </li>
 <li>trigger_delta_t0
-: <a class="el" href="core_2trigger__ext_8h.html#ac7a4064196d14ce7f94d69bd6fce5a8c">trigger_ext.h</a>
-, <a class="el" href="core_2trigger__ext_8c.html#ac7a4064196d14ce7f94d69bd6fce5a8c">trigger_ext.c</a>
+: <a class="el" href="core_2trigger__ext_8c.html#ac7a4064196d14ce7f94d69bd6fce5a8c">trigger_ext.c</a>
+, <a class="el" href="core_2trigger__ext_8h.html#ac7a4064196d14ce7f94d69bd6fce5a8c">trigger_ext.h</a>
 </li>
 <li>trigger_ext_init()
 : <a class="el" href="sensors_2trigger__ext_8c.html#a1df0777ed6e2d929b0b2d3dd6a5cd088">trigger_ext.c</a>
 , <a class="el" href="core_2trigger__ext_8h.html#a1df0777ed6e2d929b0b2d3dd6a5cd088">trigger_ext.h</a>
 , <a class="el" href="sim_2modules_2core_2trigger__ext__hw_8c.html#a1df0777ed6e2d929b0b2d3dd6a5cd088">trigger_ext_hw.c</a>
 , <a class="el" href="sensors_2trigger__ext_8h.html#a1df0777ed6e2d929b0b2d3dd6a5cd088">trigger_ext.h</a>
-, <a class="el" href="lpc21_2modules_2core_2trigger__ext__hw_8c.html#a1df0777ed6e2d929b0b2d3dd6a5cd088">trigger_ext_hw.c</a>
 </li>
 <li>trigger_ext_periodic()
-: <a class="el" href="sensors_2trigger__ext_8c.html#a9966095b9196836a5ee5cb74b5322223">trigger_ext.c</a>
-, <a class="el" href="sensors_2trigger__ext_8h.html#a9966095b9196836a5ee5cb74b5322223">trigger_ext.h</a>
+: <a class="el" href="sensors_2trigger__ext_8h.html#a9966095b9196836a5ee5cb74b5322223">trigger_ext.h</a>
+, <a class="el" href="sensors_2trigger__ext_8c.html#a9966095b9196836a5ee5cb74b5322223">trigger_ext.c</a>
 </li>
 <li>trigger_ext_valid
 : <a class="el" href="core_2trigger__ext_8h.html#a6626bfaa95d889c188bff61bcd649cbf">trigger_ext.h</a>
@@ -1623,8 +1588,8 @@ $(document).ready(function(){initNavTree('globals_t.html','');});
 </li>
 <li>trigger_t0
 : <a class="el" href="trig__ext__hw_8c.html#a1bff3aeb61914b47d6d91311bccb1578">trig_ext_hw.c</a>
-, <a class="el" href="core_2trigger__ext_8c.html#a1bff3aeb61914b47d6d91311bccb1578">trigger_ext.c</a>
 , <a class="el" href="core_2trigger__ext_8h.html#a1bff3aeb61914b47d6d91311bccb1578">trigger_ext.h</a>
+, <a class="el" href="core_2trigger__ext_8c.html#a1bff3aeb61914b47d6d91311bccb1578">trigger_ext.c</a>
 , <a class="el" href="trig__ext__hw_8h.html#a1bff3aeb61914b47d6d91311bccb1578">trig_ext_hw.h</a>
 </li>
 <li>trilateration_compute()
@@ -1641,18 +1606,18 @@ $(document).ready(function(){initNavTree('globals_t.html','');});
 <li>TRIM_UPPRZ
 : <a class="el" href="paparazzi_8h.html#a3e070a9f163110692ed4b0f6a95b41c6">paparazzi.h</a>
 </li>
+<li>TRUE
+: <a class="el" href="imu__chimu_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">imu_chimu.h</a>
+</li>
+<li>True
+: <a class="el" href="types_8h.html#a7c6368b321bd9acd0149b030bb8275eda6d32c34708a0a3507c4bdb89219d650b">types.h</a>
+, <a class="el" href="inttypes_8h.html#a7c6368b321bd9acd0149b030bb8275eda6d32c34708a0a3507c4bdb89219d650b">inttypes.h</a>
+</li>
 <li>true
 : <a class="el" href="rtwtypes_8h.html#a41f9c5fb8b08eb5dc3edce4dcb37fee7">rtwtypes.h</a>
 </li>
 <li>TRUE
 : <a class="el" href="std_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">std.h</a>
-</li>
-<li>True
-: <a class="el" href="inttypes_8h.html#a7c6368b321bd9acd0149b030bb8275eda6d32c34708a0a3507c4bdb89219d650b">inttypes.h</a>
-, <a class="el" href="types_8h.html#a7c6368b321bd9acd0149b030bb8275eda6d32c34708a0a3507c4bdb89219d650b">types.h</a>
-</li>
-<li>TRUE
-: <a class="el" href="imu__chimu_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">imu_chimu.h</a>
 </li>
 <li>true_function()
 : <a class="el" href="w5100_8c.html#a838b127385e9ee32c6e20446acb6bbe6">w5100.c</a>
@@ -1714,7 +1679,7 @@ $(document).ready(function(){initNavTree('globals_t.html','');});
 : <a class="el" href="lpc21_2usb__ser__hw_8c.html#a49eede323a902bbaf9ad4b4d02ecb009">usb_ser_hw.c</a>
 </li>
 <li>txfifo
-: <a class="el" href="stm32_2usb__ser__hw_8c.html#a12493139993bcd851cdfb44eb0abae57">usb_ser_hw.c</a>
+: <a class="el" href="lpc21_2usb__ser__hw_8c.html#a12493139993bcd851cdfb44eb0abae57">usb_ser_hw.c</a>
 </li>
 <li>TXIM
 : <a class="el" href="LPC21xx_8h.html#a310dd84ff39a737fa08520004419d6be">LPC21xx.h</a>
@@ -1731,7 +1696,7 @@ $(document).ready(function(){initNavTree('globals_t.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Nov 8 2017 10:03:16 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:04:33 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

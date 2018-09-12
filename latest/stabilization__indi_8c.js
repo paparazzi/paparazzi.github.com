@@ -1,9 +1,6 @@
 var stabilization__indi_8c =
 [
     [ "INDI_ALLOWED_G_FACTOR", "stabilization__indi_8c.html#adacf5bd2509f3caeba0785cacdc7b67b", null ],
-    [ "INDI_G_SCALING", "stabilization__indi_8c.html#aa33bbb5b41564ce1c95d73f2888a611d", null ],
-    [ "INDI_NUM_ACT", "stabilization__indi_8c.html#a65f870ad78b08581bc5c3448c5413b6e", null ],
-    [ "INDI_OUTPUTS", "stabilization__indi_8c.html#a3182c4a983f124dbbd45a1aef87e3851", null ],
     [ "STABILIZATION_INDI_MAX_RATE", "stabilization__indi_8c.html#a6b8e94ede31416d0e5b7251270d743bb", null ],
     [ "bound_g_mat", "stabilization__indi_8c.html#a4e43de9dea0dc088a1a920bd7470fe45", null ],
     [ "calc_g1_element", "stabilization__indi_8c.html#ada3e67cc5198f44de9142dc2b93f7d41", null ],
@@ -76,5 +73,6 @@ var stabilization__indi_8c =
     [ "stab_att_sp_euler", "stabilization__indi_8c.html#a5b355848d1ce79a73b3fe67c8e86cd42", null ],
     [ "stab_att_sp_quat", "stabilization__indi_8c.html#acec5709f25760d7094e4f0c9bb5be2ec", null ],
     [ "stabilization_att_indi_cmd", "stabilization__indi_8c.html#a1ab1b3a18a465440c67159c392970573", null ],
-    [ "thrust_ev", "stabilization__indi_8c.html#a796a47d113a5bb3cf4e5544205ea959e", null ]
+    [ "thrust_ev", "stabilization__indi_8c.html#a796a47d113a5bb3cf4e5544205ea959e", null ],
+    [ "Wv", "stabilization__indi_8c.html#a135981fcec0a59310c170cfdb95e491d", null ]
 ];

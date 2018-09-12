@@ -1,5 +1,11 @@
 var orange__avoider_8c =
 [
+    [ "ORANGE_AVOIDER_CB_MAX", "orange__avoider_8c.html#a199edfbce7a9eaa0eccb19018b70cced", null ],
+    [ "ORANGE_AVOIDER_CB_MIN", "orange__avoider_8c.html#a210a32059cd035137221033da4886fb9", null ],
+    [ "ORANGE_AVOIDER_CR_MAX", "orange__avoider_8c.html#ae643ce1e3aebb04c13186a463ac42b52", null ],
+    [ "ORANGE_AVOIDER_CR_MIN", "orange__avoider_8c.html#a4bd50f1ab5405433215e3dda8fc17705", null ],
+    [ "ORANGE_AVOIDER_LUM_MAX", "orange__avoider_8c.html#a65005e47e3ec61733d2c4d95cdd5c6c3", null ],
+    [ "ORANGE_AVOIDER_LUM_MIN", "orange__avoider_8c.html#a1a8960b55556a3b95d40f8dfa7b4df1b", null ],
     [ "ORANGE_AVOIDER_VERBOSE", "orange__avoider_8c.html#af115de1f0ff11c264ed97e821b2b468e", null ],
     [ "PRINT", "orange__avoider_8c.html#aee52c6162d4b084290ed778856a1ded4", null ],
     [ "VERBOSE_PRINT", "orange__avoider_8c.html#a01535af7e50005fd099fe06f94865e54", null ],

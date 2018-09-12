@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -107,8 +107,30 @@ $(document).ready(function(){initNavTree('module__heli_throttle_curve.html','');
 <p>No detailed description...</p>
 <h1><a class="anchor" id="module_load_example__heli_throttle_curve"></a>
 Example for airframe file</h1>
-<p>Add to your firmware section: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;module name=&quot;heli_throttle_curve&quot;/&gt;</div>
-</div><!-- fragment --> <h1><a class="anchor" id="functions__heli_throttle_curve"></a>
+<p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;module name=&quot;heli_throttle_curve&quot;&gt;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;  &lt;define name=&quot;THROTTLE_CURVE_RPM_FB_P&quot; value=&quot;0&quot; /&gt;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;  &lt;define name=&quot;THROTTLE_CURVE_RPM_FB_I&quot; value=&quot;0&quot; /&gt;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;  &lt;define name=&quot;THROTTLE_CURVE_RPM_INC_LIMIT&quot; value=&quot;512&quot; /&gt;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;  &lt;define name=&quot;THROTTLE_CURVE_RPM_ID&quot; value=&quot;ABI_BROADCAST&quot; /&gt;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;  &lt;define name=&quot;THROTTLE_CURVE_RPM_ACT&quot; value=&quot;0&quot; /&gt;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;&lt;/module&gt;</div>
+</div><!-- fragment --> <h1><a class="anchor" id="configuration__heli_throttle_curve"></a>
+Module configuration options</h1>
+<h2><a class="anchor" id="define"></a>
+Define Options</h2>
+<ul>
+<li><b>name:</b> <code>THROTTLE_CURVE_RPM_FB_P</code> <b>value:</b> <em>0</em> <br />
+ Description: The RPM controller feeadback P gain of the PI controller</li>
+<li><b>name:</b> <code>THROTTLE_CURVE_RPM_FB_I</code> <b>value:</b> <em>0</em> <br />
+ Description: The RPM controller feeadback I gain of the PI controller</li>
+<li><b>name:</b> <code>THROTTLE_CURVE_RPM_INC_LIMIT</code> <b>value:</b> <em>512</em> <br />
+ Description: Amount of RPM the controller can increase or decrease per second</li>
+<li><b>name:</b> <code>THROTTLE_CURVE_RPM_ID</code> <b>value:</b> <em>ABI_BROADCAST</em> <br />
+ Description: The ABI sender ID to listen for RPM messages</li>
+<li><b>name:</b> <code>THROTTLE_CURVE_RPM_ACT</code> <b>value:</b> <em>0</em> <br />
+ Description: The ABI RPM message motor index</li>
+</ul>
+<h1><a class="anchor" id="functions__heli_throttle_curve"></a>
 Module functions</h1>
 <h2><a class="anchor" id="init_functions"></a>
 Init Functions</h2>
@@ -136,13 +158,28 @@ Raw heli_throttle_curve.xml file:</h2>
 <div class="line">&lt;module name=&quot;throttle_curve&quot; dir=&quot;helicopter&quot;&gt;</div>
 <div class="line">  &lt;doc&gt;</div>
 <div class="line">    &lt;description&gt;Throttle Curve Mixers&lt;/description&gt;</div>
+<div class="line">    &lt;define name=&quot;THROTTLE_CURVE_RPM_FB_P&quot; value=&quot;0&quot; description=&quot;The RPM controller feeadback P gain of the PI controller&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;THROTTLE_CURVE_RPM_FB_I&quot; value=&quot;0&quot; description=&quot;The RPM controller feeadback I gain of the PI controller&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;THROTTLE_CURVE_RPM_INC_LIMIT&quot; value=&quot;512&quot; description=&quot;Amount of RPM the controller can increase or decrease per second&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;THROTTLE_CURVE_RPM_ID&quot; value=&quot;ABI_BROADCAST&quot; description=&quot;The ABI sender ID to listen for RPM messages&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;THROTTLE_CURVE_RPM_ACT&quot; value=&quot;0&quot; description=&quot;The ABI RPM message motor index&quot;/&gt;</div>
 <div class="line">  &lt;/doc&gt;</div>
+<div class="line">  &lt;settings&gt;</div>
+<div class="line">    &lt;dl_settings&gt;</div>
+<div class="line">      &lt;dl_settings NAME=&quot;ThrottleCurve&quot;&gt;</div>
+<div class="line">         &lt;dl_setting var=&quot;throttle_curve.rpm_fb_p&quot; min=&quot;0.00&quot; step=&quot;0.005&quot; max=&quot;100&quot; shortname=&quot;rpm_fb_p&quot; param=&quot;THROTTLE_CURVE_RPM_FB_P&quot; /&gt;</div>
+<div class="line">         &lt;dl_setting var=&quot;throttle_curve.rpm_fb_i&quot; min=&quot;0.00&quot; step=&quot;0.005&quot; max=&quot;100&quot; shortname=&quot;rpm_fb_i&quot; param=&quot;THROTTLE_CURVE_RPM_FB_I&quot; /&gt;</div>
+<div class="line">         &lt;dl_setting var=&quot;throttle_curve.throttle_trim&quot; min=&quot;-9600&quot; step=&quot;0&quot; max=&quot;9600&quot; shortname=&quot;throttle_trim&quot; /&gt;</div>
+<div class="line">      &lt;/dl_settings&gt;</div>
+<div class="line">    &lt;/dl_settings&gt;</div>
+<div class="line">  &lt;/settings&gt;</div>
 <div class="line">  &lt;header&gt;</div>
 <div class="line">    &lt;file name=&quot;throttle_curve.h&quot;/&gt;</div>
 <div class="line">  &lt;/header&gt;</div>
 <div class="line">  &lt;init fun=&quot;throttle_curve_init()&quot;/&gt;</div>
-<div class="line">  &lt;makefile target=&quot;ap|fbw&quot;&gt;</div>
+<div class="line">  &lt;makefile target=&quot;ap&quot;&gt;</div>
 <div class="line">    &lt;file name=&quot;throttle_curve.c&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;USE_THROTTLE_CURVES&quot; value=&quot;TRUE&quot;/&gt;</div>
 <div class="line">  &lt;/makefile&gt;</div>
 <div class="line">&lt;/module&gt;</div>
 <div class="line"></div>
@@ -152,7 +189,7 @@ Raw heli_throttle_curve.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Wed Nov 8 2017 10:02:49 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:03:59 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

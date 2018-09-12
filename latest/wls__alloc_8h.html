@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -128,7 +128,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ae96dd388138c3a7830cafe5eec5a0708"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wls__alloc_8h.html#ae96dd388138c3a7830cafe5eec5a0708">qr_solve_wrapper</a> (int m, int n, float **<a class="el" href="ins__float__invariant_8c.html#a66c12beb10a03abecd6d5893b821e166">A</a>, float *b, float *x)</td></tr>
 <tr class="memdesc:ae96dd388138c3a7830cafe5eec5a0708"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper for qr solve.  <a href="#ae96dd388138c3a7830cafe5eec5a0708">More...</a><br /></td></tr>
 <tr class="separator:ae96dd388138c3a7830cafe5eec5a0708"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05bd41ae464753af8d7647e4543dc47b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wls__alloc_8h.html#a05bd41ae464753af8d7647e4543dc47b">wls_alloc</a> (float *u, float *v, float *umin, float *umax, float **<a class="el" href="ins__float__invariant_8c.html#a111da81ae5883147168bbb8366377b10">B</a>, int n_u, int n_w, float *u_guess, float *W_init, float *Wv, float *Wu, float *ud, float gamma, int imax)</td></tr>
+<tr class="memitem:a05bd41ae464753af8d7647e4543dc47b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wls__alloc_8h.html#a05bd41ae464753af8d7647e4543dc47b">wls_alloc</a> (float *u, float *v, float *umin, float *umax, float **<a class="el" href="ins__float__invariant_8c.html#a111da81ae5883147168bbb8366377b10">B</a>, int n_u, int n_w, float *u_guess, float *W_init, float *<a class="el" href="stabilization__indi_8c.html#a135981fcec0a59310c170cfdb95e491d">Wv</a>, float *Wu, float *ud, float gamma, int imax)</td></tr>
 <tr class="memdesc:a05bd41ae464753af8d7647e4543dc47b"><td class="mdescLeft">&#160;</td><td class="mdescRight">active set algorithm for control allocation  <a href="#a05bd41ae464753af8d7647e4543dc47b">More...</a><br /></td></tr>
 <tr class="separator:a05bd41ae464753af8d7647e4543dc47b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -336,9 +336,9 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="wls__alloc_8c_source.html#l00101">101</a> of file <a class="el" href="wls__alloc_8c_source.html">wls_alloc.c</a>.</p>
 
-<p>References <a class="el" href="pprz__geodetic__utm_8h_source.html#l00044">A</a>, <a class="el" href="textons_8c_source.html#l00107">alpha</a>, <a class="el" href="ins__alt__float_8c_source.html#l00268">p</a>, <a class="el" href="wls__alloc_8c.html#a4aee565c4388fda3d9e4d12c6b6f22fb">print_final_values()</a>, <a class="el" href="wls__alloc_8c.html#a90c6e2dcdb59035738d92ab5a763981e">print_in_and_outputs()</a>, <a class="el" href="wls__alloc_8c_source.html#l00063">qr_solve_wrapper()</a>, and <a class="el" href="navigation_8c_source.html#l00092">UNUSED</a>.</p>
+<p>References <a class="el" href="pprz__geodetic__utm_8h_source.html#l00044">A</a>, <a class="el" href="textons_8c_source.html#l00107">alpha</a>, <a class="el" href="ins__alt__float_8c_source.html#l00268">p</a>, <a class="el" href="wls__alloc_8c.html#a4aee565c4388fda3d9e4d12c6b6f22fb">print_final_values()</a>, <a class="el" href="wls__alloc_8c.html#a90c6e2dcdb59035738d92ab5a763981e">print_in_and_outputs()</a>, <a class="el" href="wls__alloc_8c_source.html#l00063">qr_solve_wrapper()</a>, and <a class="el" href="rotorcraft_2navigation_8c_source.html#l00092">UNUSED</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00344">stabilization_indi_calc_cmd()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__indi_8c_source.html#l00345">stabilization_indi_calc_cmd()</a>.</p>
 
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -370,7 +370,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_e37d355c72eb7c8e5b43c34bdea5a24b.html">rotorcraft</a></li><li class="navelem"><a class="el" href="dir_d1b81cc433edb6118e3c3e3bc7700be0.html">stabilization</a></li><li class="navelem"><a class="el" href="dir_a7f27d6d8047fe7c2fb437aa87b5222b.html">wls</a></li><li class="navelem"><a class="el" href="wls__alloc_8h.html">wls_alloc.h</a></li>
-    <li class="footer">Generated on Wed Nov 8 2017 10:02:13 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:03:21 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

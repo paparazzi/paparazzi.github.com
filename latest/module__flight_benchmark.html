@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -103,11 +103,11 @@ $(document).ready(function(){initNavTree('module__flight_benchmark.html','');});
 <div class="title">flight_benchmark module </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><b>Flight benchmark.</b></p>
+<div class="textblock"><p><b>Flight benchmark for fixedwing.</b></p>
 <p><b></b></p>
-<p>This module allows a quantitative assessment of the flight. It calculates the sum of squared error of the two-dimensional course (x / y), the altitude and true airspeed. The sum of squared error of the course and altitude were separated, because they are regulated separately, and so they dependent on various parameters. The module was written to optimize the control parameters and has already been used successfully.</p>
-<p>The measurement is not started until about the variable benchm_go is set to 1.</p>
-<p>The sum of squared error can by reseted by changing the boolean variable benchm_reset to zero (will turn back to 1 automatically after it has done the reset). This can also be used in a flight plan, which allows a flight plan with auto-reset. So it is possible to fly an oval or a eight figure with a sum of squared error that will be reseted at the very same point of the figure.</p>
+<p>This module allows a quantitative assessment of a flight. It calculates the sum of squared error of the two-dimensional course (x / y), the altitude and true airspeed. The sum of squared error of the course and altitude were separated, because they are regulated separately, and so they dependent on various parameters. The module was written to optimize the control parameters and has already been used successfully.</p>
+<p>The measurement is not started until about the variable benchm_go is set to 1. Could also be set from within a flightplan for automated Becnhmarking.</p>
+<p>The sum of squared error can by reseted by changing the boolean variable benchm_reset to zero. It will turn back to 1 automatically after it has done the reset). This can also be used in a flight plan, which allows a flight plan with auto-reset. So it is possible to fly an oval or a eight figure with a sum of squared error that will be reseted at the very same point of the figure.</p>
 <h1><a class="anchor" id="module_load_example__flight_benchmark"></a>
 Example for airframe file</h1>
 <p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;module name=&quot;flight_benchmark&quot;&gt;</div>
@@ -124,11 +124,11 @@ Module configuration options</h1>
 Define Options</h2>
 <ul>
 <li><b>name:</b> <code>BENCHMARK_AIRSPEED</code> <b>value:</b> <em>None</em> <br />
- Description: enable airspeed benchmarking (only with airspeed module)</li>
+ Description: Add to enable airspeed benchmarking (only with airspeed module)</li>
 <li><b>name:</b> <code>BENCHMARK_ALTITUDE</code> <b>value:</b> <em>None</em> <br />
- Description: enable altitude benchmarking</li>
+ Description: Add to enable altitude benchmarking</li>
 <li><b>name:</b> <code>BENCHMARK_POSITION</code> <b>value:</b> <em>None</em> <br />
- Description: enable position (x/y) benchmarking. (shortest error to the path)</li>
+ Description: Add to enable position (x/y) benchmarking. (shortest error to the path)</li>
 <li><b>name:</b> <code>BENCHMARK_TOLERANCE_AIRSPEED</code> <b>value:</b> <em>0.</em> <br />
  Description: define the tolerated value where the sum of squared error won't change. Set to zero to have no tolerance.</li>
 <li><b>name:</b> <code>BENCHMARK_TOLERANCE_ALTITUDE</code> <b>value:</b> <em>0.</em> <br />
@@ -175,16 +175,16 @@ Raw flight_benchmark.xml file:</h2>
 <div class="line">&lt;module name=&quot;flight_benchmark&quot; dir=&quot;benchmark&quot;&gt;</div>
 <div class="line">  &lt;doc&gt;</div>
 <div class="line">    &lt;description&gt;</div>
-<div class="line">Flight benchmark.</div>
-<div class="line">This module allows a quantitative assessment of the flight. It calculates the sum of squared error of the two-dimensional course (x / y), the altitude and true airspeed. The sum of squared error of the course and altitude were separated, because they are regulated separately, and so they dependent on various parameters. The module was written to optimize the control parameters and has already been used successfully.</div>
+<div class="line">Flight benchmark for fixedwing.</div>
+<div class="line">This module allows a quantitative assessment of a flight. It calculates the sum of squared error of the two-dimensional course (x / y), the altitude and true airspeed. The sum of squared error of the course and altitude were separated, because they are regulated separately, and so they dependent on various parameters. The module was written to optimize the control parameters and has already been used successfully.</div>
 <div class="line"></div>
-<div class="line">The measurement is not started until about the variable benchm_go is set to 1.</div>
+<div class="line">The measurement is not started until about the variable benchm_go is set to 1. Could also be set from within a flightplan for automated Becnhmarking.</div>
 <div class="line"></div>
-<div class="line">The sum of squared error can by reseted by changing the boolean variable benchm_reset to zero (will turn back to 1 automatically after it has done the reset). This can also be used in a flight plan, which allows a flight plan with auto-reset. So it is possible to fly an oval or a eight figure with a sum of squared error that will be reseted at the very same point of the figure.</div>
+<div class="line">The sum of squared error can by reseted by changing the boolean variable benchm_reset to zero. It will turn back to 1 automatically after it has done the reset). This can also be used in a flight plan, which allows a flight plan with auto-reset. So it is possible to fly an oval or a eight figure with a sum of squared error that will be reseted at the very same point of the figure.</div>
 <div class="line">    &lt;/description&gt;</div>
-<div class="line">    &lt;define name=&quot;BENCHMARK_AIRSPEED&quot; description=&quot;enable airspeed benchmarking (only with airspeed module)&quot;/&gt;</div>
-<div class="line">    &lt;define name=&quot;BENCHMARK_ALTITUDE&quot; description=&quot;enable altitude benchmarking&quot;/&gt;</div>
-<div class="line">    &lt;define name=&quot;BENCHMARK_POSITION&quot; description=&quot;enable position (x/y) benchmarking. (shortest error to the path)&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;BENCHMARK_AIRSPEED&quot; description=&quot;Add to enable airspeed benchmarking (only with airspeed module)&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;BENCHMARK_ALTITUDE&quot; description=&quot;Add to enable altitude benchmarking&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;BENCHMARK_POSITION&quot; description=&quot;Add to enable position (x/y) benchmarking. (shortest error to the path)&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;BENCHMARK_TOLERANCE_AIRSPEED&quot; value=&quot;0.&quot; description=&quot;define the tolerated value where the sum of squared error won&#39;t change. Set to zero to have no tolerance.&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;BENCHMARK_TOLERANCE_ALTITUDE&quot; value=&quot;0.&quot; description=&quot;define the tolerated value where the sum of squared error won&#39;t change. Set to zero to have no tolerance.&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;BENCHMARK_TOLERANCE_POSITION&quot; value=&quot;0.&quot; description=&quot;define the tolerated value where the sum of squared error won&#39;t change. Set to zero to have no tolerance.&quot;/&gt;</div>
@@ -216,7 +216,7 @@ Raw flight_benchmark.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Wed Nov 8 2017 10:02:47 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:03:57 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

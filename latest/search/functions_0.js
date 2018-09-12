@@ -9,10 +9,20 @@ var searchData=
   ['_5fapply_5fbounds',['_apply_bounds',['../classmesonh_1_1mesonh__atmosphere_1_1MesoNHAtmosphere.html#a88c94062ebf55ba4217d5fcb2cba0fcf',1,'mesonh::mesonh_atmosphere::MesoNHAtmosphere']]],
   ['_5fcan_5frun_5frx_5fcallback',['_can_run_rx_callback',['../can__arch_8c.html#a29e5282665581fc7533fb24eb96bf30c',1,'_can_run_rx_callback(uint32_t id, uint8_t *buf, uint8_t len):&#160;can.c'],['../can_8c.html#a29e5282665581fc7533fb24eb96bf30c',1,'_can_run_rx_callback(uint32_t id, uint8_t *buf, uint8_t len):&#160;can.c']]],
   ['_5fchvsnprintf',['_chvsnprintf',['../group__chprintf.html#gaa4e64308af46238224f455c00a4fcf26',1,'printf.c']]],
+  ['_5fclose_5fr',['_close_r',['../pprz__syscalls_8c.html#a63a33220ea91df5a24013c492698baf8',1,'pprz_syscalls.c']]],
+  ['_5fexit',['_exit',['../pprz__syscalls_8c.html#a5c0ffd90e1eb0dfd1f4e927142c6d844',1,'pprz_syscalls.c']]],
+  ['_5ffstat_5fr',['_fstat_r',['../pprz__syscalls_8c.html#a0c807d4afb1292c2f7f807ff17873e95',1,'pprz_syscalls.c']]],
   ['_5fget_5finterpolator',['_get_interpolator',['../classmesonh_1_1mesonh__atmosphere_1_1MesoNHAtmosphere.html#abd2f5d589f1c7792b71a537be0e52fe7',1,'mesonh::mesonh_atmosphere::MesoNHAtmosphere']]],
   ['_5fget_5fvar_5fvalues',['_get_var_values',['../classmesonh_1_1mesonh__atmosphere_1_1MesoNHAtmosphere.html#af2eeeb356498a6995413f5e32ff4e6b5',1,'mesonh::mesonh_atmosphere::MesoNHAtmosphere']]],
-  ['_5fisr',['_ISR',['../stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a447e129abefa9eb6efc28829bf6c8364',1,'spektrum_arch.c']]],
+  ['_5fgetpid',['_getpid',['../pprz__syscalls_8c.html#ad1f206883946ce8cb8bb983464f9b102',1,'pprz_syscalls.c']]],
+  ['_5fisatty_5fr',['_isatty_r',['../pprz__syscalls_8c.html#a36d822ac47597188f2a27b2c759ae271',1,'pprz_syscalls.c']]],
+  ['_5fkill',['_kill',['../pprz__syscalls_8c.html#ae47169369e6a23386a0d453c8b728f06',1,'pprz_syscalls.c']]],
+  ['_5flseek_5fr',['_lseek_r',['../pprz__syscalls_8c.html#a029e46e3fb9ea7ae9c2e1fe82ac81460',1,'pprz_syscalls.c']]],
+  ['_5fnav_5foval_5finit',['_nav_oval_init',['../nav__rover__base_8c.html#a904ffeed2a0fae550fcb6fedd8f63360',1,'nav_rover_base.c']]],
   ['_5fosd_5fsprintf',['_osd_sprintf',['../max7456_8c.html#a257eaf8b3e2576c806cd402e398795e0',1,'max7456.c']]],
+  ['_5fread_5fr',['_read_r',['../pprz__syscalls_8c.html#afc14f05f953a9952dd7550ab386d55e5',1,'pprz_syscalls.c']]],
   ['_5fsbrk',['_sbrk',['../airspeed__otf_8c.html#a50d0541bd42367bb4b26013ff383318d',1,'airspeed_otf.c']]],
-  ['_5fslicyfy',['_slicyfy',['../classmesonh_1_1mesonh__atmosphere_1_1MesoNHAtmosphere.html#a9a5f2ad154a3911aeec2a7ff4889496e',1,'mesonh::mesonh_atmosphere::MesoNHAtmosphere']]]
+  ['_5fsbrk_5fr',['_sbrk_r',['../pprz__syscalls_8c.html#a89fe06bed73dc7c786d1377427f7789a',1,'pprz_syscalls.c']]],
+  ['_5fslicyfy',['_slicyfy',['../classmesonh_1_1mesonh__atmosphere_1_1MesoNHAtmosphere.html#a9a5f2ad154a3911aeec2a7ff4889496e',1,'mesonh::mesonh_atmosphere::MesoNHAtmosphere']]],
+  ['_5fwrite_5fr',['_write_r',['../pprz__syscalls_8c.html#a08e3b31df5620ce8d2f139c61d634a1d',1,'pprz_syscalls.c']]]
 ];

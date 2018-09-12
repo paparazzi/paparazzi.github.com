@@ -27,6 +27,8 @@ var dir_984e899df90dd104b2eabcdbb76ec71f =
     [ "nav_line_osam.h", "nav__line__osam_8h.html", "nav__line__osam_8h" ],
     [ "nav_poles.c", "nav__poles_8c.html", "nav__poles_8c" ],
     [ "nav_poles.h", "nav__poles_8h.html", "nav__poles_8h" ],
+    [ "nav_rover_base.c", "nav__rover__base_8c.html", "nav__rover__base_8c" ],
+    [ "nav_rover_base.h", "nav__rover__base_8h.html", "nav__rover__base_8h" ],
     [ "nav_skid_landing.c", "nav__skid__landing_8c.html", "nav__skid__landing_8c" ],
     [ "nav_skid_landing.h", "nav__skid__landing_8h.html", "nav__skid__landing_8h" ],
     [ "nav_smooth.c", "nav__smooth_8c.html", "nav__smooth_8c" ],

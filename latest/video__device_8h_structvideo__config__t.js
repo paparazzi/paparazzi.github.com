@@ -1,6 +1,7 @@
 var video__device_8h_structvideo__config__t =
 [
     [ "buf_cnt", "video__device_8h.html#ab7d8e2731b25c538b5826e6a5d882f20", null ],
+    [ "camera_intrinsics", "video__device_8h.html#a57aa44e7476112b6eeb526315b3a4434", null ],
     [ "crop", "video__device_8h.html#ab60466e7549f817d9a0f2e30b3c6762e", null ],
     [ "cv_listener", "video__device_8h.html#ac6e8e8ed1336fa93b7494d1aa8cb7775", null ],
     [ "dev_name", "video__device_8h.html#ae5f0b0d81df0d1915cb02c001ed78e61", null ],

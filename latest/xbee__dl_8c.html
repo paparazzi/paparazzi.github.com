@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -133,10 +133,18 @@ $(document).ready(function(){initNavTree('xbee__dl_8c.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:a8d4bbd3584601a0e3f911ff97633e10d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xbee__dl_8c.html#a8d4bbd3584601a0e3f911ff97633e10d">STR_</a>(s)&#160;&#160;&#160;#s</td></tr>
+<tr class="separator:a8d4bbd3584601a0e3f911ff97633e10d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6388870e639eee9c0a69446876f1f8cc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xbee__dl_8c.html#a6388870e639eee9c0a69446876f1f8cc">STR</a>(s)&#160;&#160;&#160;<a class="el" href="xbee__dl_8c.html#a8d4bbd3584601a0e3f911ff97633e10d">STR_</a>(s)</td></tr>
+<tr class="separator:a6388870e639eee9c0a69446876f1f8cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a637a2c0512132f836bac769f5bdb50d9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xbee__dl_8c.html#a637a2c0512132f836bac769f5bdb50d9">XBEE_TYPE</a>&#160;&#160;&#160;XBEE_24</td></tr>
 <tr class="separator:a637a2c0512132f836bac769f5bdb50d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab188dcb256c0341757d97bcff05bfe4d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xbee__dl_8c.html#ab188dcb256c0341757d97bcff05bfe4d">XBEE_INIT</a>&#160;&#160;&#160;&quot;&quot;</td></tr>
 <tr class="separator:ab188dcb256c0341757d97bcff05bfe4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49dfd19411acd2cc456d38091309c844"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xbee__dl_8c.html#a49dfd19411acd2cc456d38091309c844">XBEE_CHANNEL_CONF</a>&#160;&#160;&#160;&quot;&quot;</td></tr>
+<tr class="separator:a49dfd19411acd2cc456d38091309c844"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88fa737059e67b4b17ec980e5877361e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="xbee__dl_8c.html#a88fa737059e67b4b17ec980e5877361e">CONCAT</a>(a, b)&#160;&#160;&#160;a b</td></tr>
+<tr class="separator:a88fa737059e67b4b17ec980e5877361e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -154,6 +162,88 @@ Variables</h2></td></tr>
 <tr class="separator:a6f625714a8612ddfbc3ba6cf112b7ed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="a88fa737059e67b4b17ec980e5877361e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CONCAT</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">a, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">b&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;a b</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="xbee__dl_8c_source.html#l00050">50</a> of file <a class="el" href="xbee__dl_8c_source.html">xbee_dl.c</a>.</p>
+
+<p>Referenced by <a class="el" href="xbee__dl_8c_source.html#l00054">xbee_dl_init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6388870e639eee9c0a69446876f1f8cc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STR</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">s</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="xbee__dl_8c.html#a8d4bbd3584601a0e3f911ff97633e10d">STR_</a>(s)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="xbee__dl_8c_source.html#l00034">34</a> of file <a class="el" href="xbee__dl_8c_source.html">xbee_dl.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8d4bbd3584601a0e3f911ff97633e10d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STR_</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">s</td><td>)</td>
+          <td>&#160;&#160;&#160;#s</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="xbee__dl_8c_source.html#l00033">33</a> of file <a class="el" href="xbee__dl_8c_source.html">xbee_dl.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a49dfd19411acd2cc456d38091309c844"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XBEE_CHANNEL_CONF&#160;&#160;&#160;&quot;&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="xbee__dl_8c_source.html#l00047">47</a> of file <a class="el" href="xbee__dl_8c_source.html">xbee_dl.c</a>.</p>
+
+<p>Referenced by <a class="el" href="xbee__dl_8c_source.html#l00054">xbee_dl_init()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ab188dcb256c0341757d97bcff05bfe4d"></a>
 <div class="memitem">
 <div class="memproto">
@@ -164,9 +254,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="xbee__dl_8c_source.html#l00037">37</a> of file <a class="el" href="xbee__dl_8c_source.html">xbee_dl.c</a>.</p>
+<p>Definition at line <a class="el" href="xbee__dl_8c_source.html#l00040">40</a> of file <a class="el" href="xbee__dl_8c_source.html">xbee_dl.c</a>.</p>
 
-<p>Referenced by <a class="el" href="xbee__dl_8c_source.html#l00042">xbee_dl_init()</a>.</p>
+<p>Referenced by <a class="el" href="xbee__dl_8c_source.html#l00054">xbee_dl_init()</a>.</p>
 
 </div>
 </div>
@@ -180,9 +270,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="xbee__dl_8c_source.html#l00034">34</a> of file <a class="el" href="xbee__dl_8c_source.html">xbee_dl.c</a>.</p>
+<p>Definition at line <a class="el" href="xbee__dl_8c_source.html#l00037">37</a> of file <a class="el" href="xbee__dl_8c_source.html">xbee_dl.c</a>.</p>
 
-<p>Referenced by <a class="el" href="xbee__dl_8c_source.html#l00042">xbee_dl_init()</a>.</p>
+<p>Referenced by <a class="el" href="xbee__dl_8c_source.html#l00054">xbee_dl_init()</a>.</p>
 
 </div>
 </div>
@@ -203,9 +293,9 @@ Variables</h2></td></tr>
 
 <p>Datalink Event. </p>
 
-<p>Definition at line <a class="el" href="xbee__dl_8c_source.html#l00053">53</a> of file <a class="el" href="xbee__dl_8c_source.html">xbee_dl.c</a>.</p>
+<p>Definition at line <a class="el" href="xbee__dl_8c_source.html#l00065">65</a> of file <a class="el" href="xbee__dl_8c_source.html">xbee_dl.c</a>.</p>
 
-<p>References <a class="el" href="main__demo5_8c_source.html#l00064">dl_buffer</a>, <a class="el" href="main__demo5_8c_source.html#l00061">dl_msg_available</a>, <a class="el" href="datalink_8h_source.html#l00078">DlCheckAndParse()</a>, and <a class="el" href="xbee__dl_8c_source.html#l00040">xbee_tp</a>.</p>
+<p>References <a class="el" href="main__demo5_8c_source.html#l00064">dl_buffer</a>, <a class="el" href="main__demo5_8c_source.html#l00061">dl_msg_available</a>, <a class="el" href="datalink_8h_source.html#l00079">DlCheckAndParse()</a>, and <a class="el" href="xbee__dl_8c_source.html#l00052">xbee_tp</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -236,9 +326,9 @@ Variables</h2></td></tr>
 
 <p>Init function. </p>
 
-<p>Definition at line <a class="el" href="xbee__dl_8c_source.html#l00042">42</a> of file <a class="el" href="xbee__dl_8c_source.html">xbee_dl.c</a>.</p>
+<p>Definition at line <a class="el" href="xbee__dl_8c_source.html#l00054">54</a> of file <a class="el" href="xbee__dl_8c_source.html">xbee_dl.c</a>.</p>
 
-<p>References <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00095">sys_time_usleep()</a>, <a class="el" href="xbee__dl_8c_source.html#l00037">XBEE_INIT</a>, <a class="el" href="xbee__dl_8c_source.html#l00040">xbee_tp</a>, and <a class="el" href="xbee__dl_8c_source.html#l00034">XBEE_TYPE</a>.</p>
+<p>References <a class="el" href="xbee__dl_8c_source.html#l00050">CONCAT</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00095">sys_time_usleep()</a>, <a class="el" href="xbee__dl_8c_source.html#l00047">XBEE_CHANNEL_CONF</a>, <a class="el" href="xbee__dl_8c_source.html#l00040">XBEE_INIT</a>, <a class="el" href="xbee__dl_8c_source.html#l00052">xbee_tp</a>, and <a class="el" href="xbee__dl_8c_source.html#l00037">XBEE_TYPE</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -266,9 +356,9 @@ Variables</h2></td></tr>
 
 <p>XBEE transport structure. </p>
 
-<p>Definition at line <a class="el" href="xbee__dl_8c_source.html#l00040">40</a> of file <a class="el" href="xbee__dl_8c_source.html">xbee_dl.c</a>.</p>
+<p>Definition at line <a class="el" href="xbee__dl_8c_source.html#l00052">52</a> of file <a class="el" href="xbee__dl_8c_source.html">xbee_dl.c</a>.</p>
 
-<p>Referenced by <a class="el" href="xbee__dl_8c_source.html#l00053">xbee_dl_event()</a>, and <a class="el" href="xbee__dl_8c_source.html#l00042">xbee_dl_init()</a>.</p>
+<p>Referenced by <a class="el" href="xbee__dl_8c_source.html#l00065">xbee_dl_event()</a>, and <a class="el" href="xbee__dl_8c_source.html#l00054">xbee_dl_init()</a>.</p>
 
 </div>
 </div>
@@ -278,7 +368,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_164c7aa663179b26059278e7f36078da.html">datalink</a></li><li class="navelem"><a class="el" href="xbee__dl_8c.html">xbee_dl.c</a></li>
-    <li class="footer">Generated on Wed Nov 8 2017 10:02:23 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:03:30 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

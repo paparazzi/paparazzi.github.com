@@ -28,6 +28,7 @@ var searchData=
   ['guidance_5fhybrid_20module',['guidance_hybrid module',['../module__guidance_hybrid.html',1,'onboard_modules']]],
   ['guidance_5findi_20module',['guidance_indi module',['../module__guidance_indi.html',1,'onboard_modules']]],
   ['guidance_5frotorcraft_20module',['guidance_rotorcraft module',['../module__guidance_rotorcraft.html',1,'onboard_modules']]],
+  ['guidance_5frover_20module',['guidance_rover module',['../module__guidance_rover.html',1,'onboard_modules']]],
   ['gumstix_5fqr_5fcode_5fspi_5flink_20module',['gumstix_qr_code_spi_link module',['../module__gumstix_qr_code_spi_link.html',1,'onboard_modules']]],
   ['gvf_5fmodule_20module',['gvf_module module',['../module__gvf_module.html',1,'onboard_modules']]]
 ];

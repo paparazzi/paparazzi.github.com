@@ -1,0 +1,30 @@
+<map id="baro_cb" name="baro_cb">
+<area shape="rect" id="node2" href="$ins__int_8c.html#a906e42c3bdc95d6fa78d129fbf20719e" title="copy position and speed to state interface " alt="" coords="143,113,273,140"/>
+<area shape="rect" id="node14" href="$ins__int_8c.html#a1c58640eca6d3495200de79b4daf134c" title="update ins state from vertical filter " alt="" coords="133,181,283,208"/>
+<area shape="rect" id="node15" href="$group__math__isa.html#ga133268df708f6ee3b953bb291e8db342" title="Get relative altitude from pressure (using simplified equation). " alt="" coords="137,233,279,274"/>
+<area shape="rect" id="node16" href="$group__state__position.html#ga545d479db45e1a9711e59736b6d1309b" title="Get position in local ENU coordinates (float). " alt="" coords="127,299,289,325"/>
+<area shape="rect" id="node25" href="$vf__extended__float_8c.html#a9871b34cda71fc04b9e312b8ce4f11af" title="vff_realign" alt="" coords="165,349,251,376"/>
+<area shape="rect" id="node26" href="$vf__float_8c.html#a067f2a1bed73d1940c35450706a56265" title="vff_update" alt="" coords="163,400,253,427"/>
+<area shape="rect" id="node28" href="$vf__extended__float_8c.html#a94b26d899a6d7ca4e26cb7df3f45ef49" title="vff_update_baro" alt="" coords="145,451,271,477"/>
+<area shape="rect" id="node3" href="$group__state__position.html#ga83bd9c7ef9bfff9ff41a5d290be52438" title="Set position from local NED coordinates (int). " alt="" coords="339,164,502,191"/>
+<area shape="rect" id="node4" href="$group__state__velocity.html#gaa6cbe14043ae394f4994ac02bee85644" title="Set ground speed in local NED coordinates (int). " alt="" coords="343,12,498,39"/>
+<area shape="rect" id="node5" href="$group__state__acceleration.html#ga44bccfd32b2928abef6b08c4f867c1be" title="Set acceleration in NED coordinates (int). " alt="" coords="347,63,494,89"/>
+<area shape="rect" id="node6" href="$nps__autopilot_8h.html#a636593c9bb6482b2a36d64bef4975310" title="sim_overwrite_ins" alt="" coords="353,113,488,140"/>
+<area shape="rect" id="node7" href="$group__state__position.html#ga9ff9643cd109a27a481d5883652d0f08" title="Set position from local NED coordinates (float). " alt="" coords="553,56,717,83"/>
+<area shape="rect" id="node8" href="$pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="586,208,685,235"/>
+<area shape="rect" id="node11" href="$group__state__position.html#gac6c73e42fc6b5891cb23454ad9c68c92" title="Set position from UTM coordinates (float). " alt="" coords="552,107,719,133"/>
+<area shape="rect" id="node12" href="$group__state__velocity.html#gae6549b15cd961047c89481ab2d87171f" title="Set ground speed in local NED coordinates (float). " alt="" coords="558,157,713,184"/>
+<area shape="rect" id="node13" href="$group__state__acceleration.html#ga27b8f24af6ddce14389efaa5ec119967" title="Set acceleration in NED coordinates (float). " alt="" coords="561,5,709,32"/>
+<area shape="rect" id="node9" href="$pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="768,145,915,172"/>
+<area shape="rect" id="node10" href="$pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="773,197,909,238"/>
+<area shape="rect" id="node17" href="$group__state__position.html#ga718066acd9581365ca5c2aacb29130fd" title="stateCalcPositionEnu_f" alt="" coords="337,307,504,333"/>
+<area shape="rect" id="node18" href="$pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title="enu_of_ecef_point_f" alt="" coords="767,364,916,391"/>
+<area shape="rect" id="node19" href="$group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU. " alt="" coords="566,415,705,441"/>
+<area shape="rect" id="node21" href="$pprz__geodetic__float_8c.html#ab8d5cb7292ea74802e7a94e265c0703a" title="enu_of_lla_point_f" alt="" coords="567,313,703,340"/>
+<area shape="rect" id="node23" href="$group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF. " alt="" coords="586,263,685,289"/>
+<area shape="rect" id="node20" href="$group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU. " alt="" coords="767,415,915,441"/>
+<area shape="rect" id="node22" href="$pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title="ecef_of_lla_f" alt="" coords="791,313,891,340"/>
+<area shape="rect" id="node24" href="$group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title="ecef_of_lla_d" alt="" coords="789,263,893,289"/>
+<area shape="rect" id="node27" href="$vf__float_8c.html#aafd7012999c4a5c623b6b6f311ec595a" title="Update altitude. " alt="" coords="363,400,478,427"/>
+<area shape="rect" id="node29" href="$vf__extended__float_8c.html#a7cc8f440a2dfd6769810468a88ccec67" title="Update sensor &quot;with&quot; offset (baro). " alt="" coords="352,451,489,477"/>
+</map>

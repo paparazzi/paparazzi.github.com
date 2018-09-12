@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -118,6 +118,8 @@ $(document).ready(function(){initNavTree('chconf_8h.html','');});
 Macros</h2></td></tr>
 <tr class="memitem:gaf96117860ce3ac9637e7b0fb3f1eac1f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__config.html#gaf96117860ce3ac9637e7b0fb3f1eac1f">_CHIBIOS_RT_CONF_</a></td></tr>
 <tr class="separator:gaf96117860ce3ac9637e7b0fb3f1eac1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga041edf4a73fd382bfa00df5e97fe4b48"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__config.html#ga041edf4a73fd382bfa00df5e97fe4b48">_CHIBIOS_RT_CONF_VER_5_1_</a></td></tr>
+<tr class="separator:ga041edf4a73fd382bfa00df5e97fe4b48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7ed3022f929b0ef250c4aa8cda44c0be"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__config.html#ga7ed3022f929b0ef250c4aa8cda44c0be">CORTEX_VTOR_INIT</a>&#160;&#160;&#160;0x08000000U</td></tr>
 <tr class="separator:ga7ed3022f929b0ef250c4aa8cda44c0be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga92e0819075bd91dc380cc86a20186960"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__config.html#ga92e0819075bd91dc380cc86a20186960">CHPRINTF_USE_FLOAT</a>&#160;&#160;&#160;1</td></tr>
@@ -129,6 +131,12 @@ Macros</h2></td></tr>
 <tr class="memitem:ga174ac107e620ac81bb1487c1ad7ad839"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__config.html#ga174ac107e620ac81bb1487c1ad7ad839">CH_CFG_ST_FREQUENCY</a>&#160;&#160;&#160;10000</td></tr>
 <tr class="memdesc:ga174ac107e620ac81bb1487c1ad7ad839"><td class="mdescLeft">&#160;</td><td class="mdescRight">System tick frequency.  <a href="group__config.html#ga174ac107e620ac81bb1487c1ad7ad839">More...</a><br /></td></tr>
 <tr class="separator:ga174ac107e620ac81bb1487c1ad7ad839"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9847218dc028099f62071c25b352b249"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__config.html#ga9847218dc028099f62071c25b352b249">CH_CFG_INTERVALS_SIZE</a>&#160;&#160;&#160;32</td></tr>
+<tr class="memdesc:ga9847218dc028099f62071c25b352b249"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time intervals data size.  <a href="group__config.html#ga9847218dc028099f62071c25b352b249">More...</a><br /></td></tr>
+<tr class="separator:ga9847218dc028099f62071c25b352b249"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga06cdb9f25ea2f420b632ba9c19dd4d2d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__config.html#ga06cdb9f25ea2f420b632ba9c19dd4d2d">CH_CFG_TIME_TYPES_SIZE</a>&#160;&#160;&#160;32</td></tr>
+<tr class="memdesc:ga06cdb9f25ea2f420b632ba9c19dd4d2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time types data size.  <a href="group__config.html#ga06cdb9f25ea2f420b632ba9c19dd4d2d">More...</a><br /></td></tr>
+<tr class="separator:ga06cdb9f25ea2f420b632ba9c19dd4d2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga11ec0b9fb6a84d32dbc8567cc4af4d17"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__config.html#ga11ec0b9fb6a84d32dbc8567cc4af4d17">CH_CFG_ST_TIMEDELTA</a>&#160;&#160;&#160;0</td></tr>
 <tr class="memdesc:ga11ec0b9fb6a84d32dbc8567cc4af4d17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time delta constant for the tick-less mode.  <a href="group__config.html#ga11ec0b9fb6a84d32dbc8567cc4af4d17">More...</a><br /></td></tr>
 <tr class="separator:ga11ec0b9fb6a84d32dbc8567cc4af4d17"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -189,9 +197,6 @@ Macros</h2></td></tr>
 <tr class="memitem:gae7b225553e9e069eda0dc0a251e0882c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__config.html#gae7b225553e9e069eda0dc0a251e0882c">CH_CFG_USE_MAILBOXES</a>&#160;&#160;&#160;<a class="el" href="imu__chimu_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></td></tr>
 <tr class="memdesc:gae7b225553e9e069eda0dc0a251e0882c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mailboxes APIs.  <a href="group__config.html#gae7b225553e9e069eda0dc0a251e0882c">More...</a><br /></td></tr>
 <tr class="separator:gae7b225553e9e069eda0dc0a251e0882c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9bb08f7384ee7ec4893bb28723286ee3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__config.html#ga9bb08f7384ee7ec4893bb28723286ee3">CH_CFG_USE_QUEUES</a>&#160;&#160;&#160;<a class="el" href="imu__chimu_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></td></tr>
-<tr class="memdesc:ga9bb08f7384ee7ec4893bb28723286ee3"><td class="mdescLeft">&#160;</td><td class="mdescRight">I/O Queues APIs.  <a href="group__config.html#ga9bb08f7384ee7ec4893bb28723286ee3">More...</a><br /></td></tr>
-<tr class="separator:ga9bb08f7384ee7ec4893bb28723286ee3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaad95228d05e4107b33836d30d21645a7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__config.html#gaad95228d05e4107b33836d30d21645a7">CH_CFG_USE_MEMCORE</a>&#160;&#160;&#160;<a class="el" href="imu__chimu_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></td></tr>
 <tr class="memdesc:gaad95228d05e4107b33836d30d21645a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Core Memory Manager APIs.  <a href="group__config.html#gaad95228d05e4107b33836d30d21645a7">More...</a><br /></td></tr>
 <tr class="separator:gaad95228d05e4107b33836d30d21645a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -201,9 +206,34 @@ Macros</h2></td></tr>
 <tr class="memitem:ga826c1fac997fb6e976c3012d20316444"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__config.html#ga826c1fac997fb6e976c3012d20316444">CH_CFG_USE_MEMPOOLS</a>&#160;&#160;&#160;<a class="el" href="imu__chimu_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></td></tr>
 <tr class="memdesc:ga826c1fac997fb6e976c3012d20316444"><td class="mdescLeft">&#160;</td><td class="mdescRight">Memory Pools Allocator APIs.  <a href="group__config.html#ga826c1fac997fb6e976c3012d20316444">More...</a><br /></td></tr>
 <tr class="separator:ga826c1fac997fb6e976c3012d20316444"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga72b7ca5d7f26849361dc139dbcd039b7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__config.html#ga72b7ca5d7f26849361dc139dbcd039b7">CH_CFG_USE_OBJ_FIFOS</a>&#160;&#160;&#160;<a class="el" href="imu__chimu_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></td></tr>
+<tr class="memdesc:ga72b7ca5d7f26849361dc139dbcd039b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Objects FIFOs APIs.  <a href="group__config.html#ga72b7ca5d7f26849361dc139dbcd039b7">More...</a><br /></td></tr>
+<tr class="separator:ga72b7ca5d7f26849361dc139dbcd039b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6ae82f40768d872dea807aac79e38deb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__config.html#ga6ae82f40768d872dea807aac79e38deb">CH_CFG_USE_DYNAMIC</a>&#160;&#160;&#160;<a class="el" href="imu__chimu_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></td></tr>
 <tr class="memdesc:ga6ae82f40768d872dea807aac79e38deb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dynamic Threads APIs.  <a href="group__config.html#ga6ae82f40768d872dea807aac79e38deb">More...</a><br /></td></tr>
 <tr class="separator:ga6ae82f40768d872dea807aac79e38deb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Objects factory options</div></td></tr>
+<tr class="memitem:ga8a16695970dcb592b310ae6bfc57ae31"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__config.html#ga8a16695970dcb592b310ae6bfc57ae31">CH_CFG_USE_FACTORY</a>&#160;&#160;&#160;<a class="el" href="imu__chimu_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></td></tr>
+<tr class="memdesc:ga8a16695970dcb592b310ae6bfc57ae31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Objects Factory APIs.  <a href="group__config.html#ga8a16695970dcb592b310ae6bfc57ae31">More...</a><br /></td></tr>
+<tr class="separator:ga8a16695970dcb592b310ae6bfc57ae31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae64d8a8c3ba7626cab5e8c955ddcfec9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__config.html#gae64d8a8c3ba7626cab5e8c955ddcfec9">CH_CFG_FACTORY_MAX_NAMES_LENGTH</a>&#160;&#160;&#160;8</td></tr>
+<tr class="memdesc:gae64d8a8c3ba7626cab5e8c955ddcfec9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum length for object names.  <a href="group__config.html#gae64d8a8c3ba7626cab5e8c955ddcfec9">More...</a><br /></td></tr>
+<tr class="separator:gae64d8a8c3ba7626cab5e8c955ddcfec9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6494d04c6abb9f0b4bfd06eee6c8e013"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__config.html#ga6494d04c6abb9f0b4bfd06eee6c8e013">CH_CFG_FACTORY_OBJECTS_REGISTRY</a>&#160;&#160;&#160;<a class="el" href="imu__chimu_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></td></tr>
+<tr class="memdesc:ga6494d04c6abb9f0b4bfd06eee6c8e013"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables the registry of generic objects.  <a href="group__config.html#ga6494d04c6abb9f0b4bfd06eee6c8e013">More...</a><br /></td></tr>
+<tr class="separator:ga6494d04c6abb9f0b4bfd06eee6c8e013"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad2d97ed4d8ef5f773295ab0dff750c3a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__config.html#gad2d97ed4d8ef5f773295ab0dff750c3a">CH_CFG_FACTORY_GENERIC_BUFFERS</a>&#160;&#160;&#160;<a class="el" href="imu__chimu_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></td></tr>
+<tr class="memdesc:gad2d97ed4d8ef5f773295ab0dff750c3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables factory for generic buffers.  <a href="group__config.html#gad2d97ed4d8ef5f773295ab0dff750c3a">More...</a><br /></td></tr>
+<tr class="separator:gad2d97ed4d8ef5f773295ab0dff750c3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafc999784304892d5ef32584c73cdbc71"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__config.html#gafc999784304892d5ef32584c73cdbc71">CH_CFG_FACTORY_SEMAPHORES</a>&#160;&#160;&#160;<a class="el" href="imu__chimu_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></td></tr>
+<tr class="memdesc:gafc999784304892d5ef32584c73cdbc71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables factory for semaphores.  <a href="group__config.html#gafc999784304892d5ef32584c73cdbc71">More...</a><br /></td></tr>
+<tr class="separator:gafc999784304892d5ef32584c73cdbc71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa643a4501b7a8f90b869383eef7a6b88"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__config.html#gaa643a4501b7a8f90b869383eef7a6b88">CH_CFG_FACTORY_MAILBOXES</a>&#160;&#160;&#160;<a class="el" href="imu__chimu_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></td></tr>
+<tr class="memdesc:gaa643a4501b7a8f90b869383eef7a6b88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables factory for mailboxes.  <a href="group__config.html#gaa643a4501b7a8f90b869383eef7a6b88">More...</a><br /></td></tr>
+<tr class="separator:gaa643a4501b7a8f90b869383eef7a6b88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga746a11399d25b08b503e117bfb7f18c7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__config.html#ga746a11399d25b08b503e117bfb7f18c7">CH_CFG_FACTORY_OBJ_FIFOS</a>&#160;&#160;&#160;<a class="el" href="imu__chimu_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></td></tr>
+<tr class="memdesc:ga746a11399d25b08b503e117bfb7f18c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables factory for objects FIFOs.  <a href="group__config.html#ga746a11399d25b08b503e117bfb7f18c7">More...</a><br /></td></tr>
+<tr class="separator:ga746a11399d25b08b503e117bfb7f18c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Debug options</div></td></tr>
 <tr class="memitem:ga01fa48cf866c26bad886a15c37571f99"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__config.html#ga01fa48cf866c26bad886a15c37571f99">CH_DBG_STATISTICS</a>&#160;&#160;&#160;<a class="el" href="imu__chimu_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></td></tr>
 <tr class="memdesc:ga01fa48cf866c26bad886a15c37571f99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Debug option, kernel statistics.  <a href="group__config.html#ga01fa48cf866c26bad886a15c37571f99">More...</a><br /></td></tr>
@@ -233,6 +263,12 @@ Macros</h2></td></tr>
 <tr class="memdesc:gadc9c00c2e5b6e766ded8dfa77c0c90c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Debug option, threads profiling.  <a href="group__config.html#gadc9c00c2e5b6e766ded8dfa77c0c90c1">More...</a><br /></td></tr>
 <tr class="separator:gadc9c00c2e5b6e766ded8dfa77c0c90c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Kernel hooks</div></td></tr>
+<tr class="memitem:ga6d88c5f6523d72281f22fdf58671261d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__config.html#ga6d88c5f6523d72281f22fdf58671261d">CH_CFG_SYSTEM_EXTRA_FIELDS</a>&#160;&#160;&#160;/* Add threads custom fields here.*/</td></tr>
+<tr class="memdesc:ga6d88c5f6523d72281f22fdf58671261d"><td class="mdescLeft">&#160;</td><td class="mdescRight">System structure extension.  <a href="group__config.html#ga6d88c5f6523d72281f22fdf58671261d">More...</a><br /></td></tr>
+<tr class="separator:ga6d88c5f6523d72281f22fdf58671261d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaed27778fc31c60981412907989ab2342"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__config.html#gaed27778fc31c60981412907989ab2342">CH_CFG_SYSTEM_INIT_HOOK</a>(tp)</td></tr>
+<tr class="memdesc:gaed27778fc31c60981412907989ab2342"><td class="mdescLeft">&#160;</td><td class="mdescRight">System initialization hook.  <a href="group__config.html#gaed27778fc31c60981412907989ab2342">More...</a><br /></td></tr>
+<tr class="separator:gaed27778fc31c60981412907989ab2342"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga376f299366010470175d4abbb0e8096b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__config.html#ga376f299366010470175d4abbb0e8096b">CH_CFG_THREAD_EXTRA_FIELDS</a>&#160;&#160;&#160;/* Add threads custom fields here.*/</td></tr>
 <tr class="memdesc:ga376f299366010470175d4abbb0e8096b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Threads descriptor structure extension.  <a href="group__config.html#ga376f299366010470175d4abbb0e8096b">More...</a><br /></td></tr>
 <tr class="separator:ga376f299366010470175d4abbb0e8096b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -276,7 +312,7 @@ Macros</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_975986b9e0eb299e77243bf822f828ce.html">chibios</a></li><li class="navelem"><a class="el" href="chconf_8h.html">chconf.h</a></li>
-    <li class="footer">Generated on Wed Nov 8 2017 10:01:54 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:03:01 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

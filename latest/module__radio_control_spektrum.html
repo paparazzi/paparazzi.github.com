@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -108,12 +108,11 @@ $(document).ready(function(){initNavTree('module__radio_control_spektrum.html','
 <h1><a class="anchor" id="module_load_example__radio_control_spektrum"></a>
 Example for airframe file</h1>
 <p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;module name=&quot;radio_control_spektrum&quot;&gt;</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;  &lt;define name=&quot;USE_DSMX&quot; value=&quot;FALSE|TRUE&quot; /&gt;</div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;  &lt;configure name=&quot;RADIO_CONTROL_LED&quot; value=&quot;none|num&quot; /&gt;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;  &lt;configure name=&quot;RADIO_CONTROL_SPEKTRUM_PRIMARY_PORT&quot; value=&quot;num&quot; /&gt;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;  &lt;configure name=&quot;RADIO_CONTROL_SPEKTRUM_SECONDARY_PORT&quot; value=&quot;num&quot; /&gt;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;  &lt;configure name=&quot;USE_SECONDARY_SPEKTRUM_RECEIVER&quot; value=&quot;0|1&quot; /&gt;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;&lt;/module&gt;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;  &lt;configure name=&quot;RADIO_CONTROL_LED&quot; value=&quot;none|num&quot; /&gt;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;  &lt;configure name=&quot;RADIO_CONTROL_SPEKTRUM_PRIMARY_PORT&quot; value=&quot;uartX&quot; /&gt;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;  &lt;configure name=&quot;RADIO_CONTROL_SPEKTRUM_SECONDARY_PORT&quot; value=&quot;uartX&quot; /&gt;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;  &lt;configure name=&quot;USE_SECONDARY_SPEKTRUM_RECEIVER&quot; value=&quot;0|1&quot; /&gt;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;&lt;/module&gt;</div>
 </div><!-- fragment --> <h1><a class="anchor" id="configuration__radio_control_spektrum"></a>
 Module configuration options</h1>
 <h2><a class="anchor" id="configure"></a>
@@ -121,18 +120,12 @@ Configure Options</h2>
 <ul>
 <li><b>name:</b> <code>RADIO_CONTROL_LED</code> <b>value:</b> <em>none|num</em> <br />
  Description: LED number or 'none' to disable</li>
-<li><b>name:</b> <code>RADIO_CONTROL_SPEKTRUM_PRIMARY_PORT</code> <b>value:</b> <em>num</em> <br />
- Description: UART number for primary spektrum receiver</li>
-<li><b>name:</b> <code>RADIO_CONTROL_SPEKTRUM_SECONDARY_PORT</code> <b>value:</b> <em>num</em> <br />
- Description: UART number for optional secondary spektrum receiver</li>
+<li><b>name:</b> <code>RADIO_CONTROL_SPEKTRUM_PRIMARY_PORT</code> <b>value:</b> <em>uartX</em> <br />
+ Description: UART for primary spektrum receiver</li>
+<li><b>name:</b> <code>RADIO_CONTROL_SPEKTRUM_SECONDARY_PORT</code> <b>value:</b> <em>uartX</em> <br />
+ Description: UART for optional secondary spektrum receiver</li>
 <li><b>name:</b> <code>USE_SECONDARY_SPEKTRUM_RECEIVER</code> <b>value:</b> <em>0|1</em> <br />
  Description: enable secondary receiver (default: disabled)</li>
-</ul>
-<h2><a class="anchor" id="define"></a>
-Define Options</h2>
-<ul>
-<li><b>name:</b> <code>USE_DSMX</code> <b>value:</b> <em>FALSE|TRUE</em> <br />
- Description: Set to true to use DSMX instead of DSM2</li>
 </ul>
 <h1><a class="anchor" id="files"></a>
 Files</h1>
@@ -147,10 +140,10 @@ Source Files</h2>
 <ul>
 <li><a class="el" href="radio__control_8c.html">subsystems/radio_control.c</a></li>
 <li><a class="el" href="spektrum_8c.html">subsystems/radio_control/spektrum.c</a></li>
-<li>/subsystems/radio_control/spektrum_arch.c</li>
 <li><a class="el" href="radio__control_8c.html">subsystems/radio_control.c</a></li>
 <li><a class="el" href="spektrum_8c.html">subsystems/radio_control/spektrum.c</a></li>
-<li>/subsystems/radio_control/spektrum_arch.c</li>
+<li><a class="el" href="radio__control_8c.html">subsystems/radio_control.c</a></li>
+<li>arch dependent: <a class="el" href="spektrum__arch_8c.html" title="Simulator implementation for spektrum radio control. ">subsystems/radio_control/spektrum_arch.c</a></li>
 </ul>
 <h2><a class="anchor" id="module_xml__radio_control_spektrum"></a>
 Raw radio_control_spektrum.xml file:</h2>
@@ -164,50 +157,70 @@ Raw radio_control_spektrum.xml file:</h2>
 <div class="line">      Define USE_DSMX on STM32 microcontrollers to bind in DSMX instead of DSM2</div>
 <div class="line">    &lt;/description&gt;</div>
 <div class="line">    &lt;configure name=&quot;RADIO_CONTROL_LED&quot; value=&quot;none|num&quot; description=&quot;LED number or &#39;none&#39; to disable&quot;/&gt;</div>
-<div class="line">    &lt;configure name=&quot;RADIO_CONTROL_SPEKTRUM_PRIMARY_PORT&quot; value=&quot;num&quot; description=&quot;UART number for primary spektrum receiver&quot;/&gt;</div>
-<div class="line">    &lt;configure name=&quot;RADIO_CONTROL_SPEKTRUM_SECONDARY_PORT&quot; value=&quot;num&quot; description=&quot;UART number for optional secondary spektrum receiver&quot;/&gt;</div>
+<div class="line">    &lt;configure name=&quot;RADIO_CONTROL_SPEKTRUM_PRIMARY_PORT&quot; value=&quot;uartX&quot; description=&quot;UART for primary spektrum receiver&quot;/&gt;</div>
+<div class="line">    &lt;configure name=&quot;RADIO_CONTROL_SPEKTRUM_SECONDARY_PORT&quot; value=&quot;uartX&quot; description=&quot;UART for optional secondary spektrum receiver&quot;/&gt;</div>
 <div class="line">    &lt;configure name=&quot;USE_SECONDARY_SPEKTRUM_RECEIVER&quot; value=&quot;0|1&quot; description=&quot;enable secondary receiver (default: disabled)&quot;/&gt;</div>
-<div class="line">    &lt;define name=&quot;USE_DSMX&quot; value=&quot;FALSE|TRUE&quot; description=&quot;Set to true to use DSMX instead of DSM2&quot;/&gt;</div>
 <div class="line">  &lt;/doc&gt;</div>
 <div class="line">  &lt;header&gt;</div>
 <div class="line">    &lt;file name=&quot;spektrum.h&quot; dir=&quot;subsystems/radio_control&quot;/&gt;</div>
 <div class="line">  &lt;/header&gt;</div>
-<div class="line">  &lt;makefile target=&quot;ap|fbw|sim|nps|hitl|test_radio_control&quot;&gt;</div>
+<div class="line">  &lt;makefile target=&quot;ap|fbw|sim|nps|test_radio_control&quot;&gt;</div>
 <div class="line">    &lt;configure name=&quot;RADIO_CONTROL_LED&quot; default=&quot;none&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;RADIO_CONTROL_LED&quot; value=&quot;$(RADIO_CONTROL_LED)&quot; cond=&quot;ifneq ($(RADIO_CONTROL_LED),none)&quot;/&gt;</div>
-<div class="line">    &lt;define name=&quot;RADIO_CONTROL_TYPE_H&quot; value=&quot;subsystems/radio_control/spektrum.h&quot; type=&quot;string&quot;/&gt;</div>
-<div class="line">    &lt;raw&gt;</div>
-<div class="line">      ifeq ($(ARCH), lpc21)</div>
-<div class="line">      ifndef RADIO_CONTROL_SPEKTRUM_MODEL</div>
-<div class="line">      RADIO_CONTROL_SPEKTRUM_MODEL=\&quot;subsystems/radio_control/spektrum_dx7se.h\&quot;</div>
-<div class="line">      endif</div>
-<div class="line">      RC_CFLAGS += -DRADIO_CONTROL_SPEKTRUM_MODEL_H=$(RADIO_CONTROL_SPEKTRUM_MODEL)</div>
-<div class="line">      endif</div>
-<div class="line">    &lt;/raw&gt;</div>
 <div class="line">  &lt;/makefile&gt;</div>
-<div class="line">  &lt;makefile target=&quot;fbw|sim|nps|hitl|test_radio_control&quot;&gt;</div>
-<div class="line">    &lt;configure name=&quot;USE_SECONDARY_SPEKTRUM_RECEIVER&quot; default=&quot;0&quot;/&gt;</div>
+<div class="line">  &lt;makefile target=&quot;fbw|test_radio_control&quot;&gt;</div>
 <div class="line">    &lt;define name=&quot;RADIO_CONTROL&quot;/&gt;</div>
-<div class="line">    &lt;define name=&quot;RADIO_CONTROL_BIND_IMPL_FUNC&quot; value=&quot;radio_control_spektrum_try_bind&quot;/&gt;</div>
-<div class="line">    &lt;define name=&quot;RADIO_CONTROL_SPEKTRUM_PRIMARY_PORT&quot; value=&quot;SPEKTRUM_$(RADIO_CONTROL_SPEKTRUM_PRIMARY_PORT)&quot;/&gt;</div>
-<div class="line">    &lt;define name=&quot;OVERRIDE_$(RADIO_CONTROL_SPEKTRUM_PRIMARY_PORT)_IRQ_HANDLER&quot;/&gt;</div>
-<div class="line">    &lt;define name=&quot;RADIO_CONTROL_SPEKTRUM_SECONDARY_PORT&quot; value=&quot;SPEKTRUM_$(RADIO_CONTROL_SPEKTRUM_SECONDARY_PORT)&quot; cond=&quot;ifneq ($(USE_SECONDARY_SPEKTRUM_RECEIVER),0)&quot;/&gt;</div>
-<div class="line">    &lt;define name=&quot;OVERRIDE_$(RADIO_CONTROL_SPEKTRUM_PRIMARY_PORT)_IRQ_HANDLER&quot; cond=&quot;ifneq ($(USE_SECONDARY_SPEKTRUM_RECEIVER),0)&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;RADIO_CONTROL_TYPE_H&quot; value=&quot;subsystems/radio_control/spektrum.h&quot; type=&quot;string&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;RADIO_CONTROL_BIND_IMPL_FUNC&quot; value=&quot;spektrum_try_bind&quot;/&gt;</div>
+<div class="line"></div>
+<div class="line">    &lt;configure name=&quot;SPEKTRUM_PRIMARY_UART&quot; value=&quot;$(RADIO_CONTROL_SPEKTRUM_PRIMARY_PORT)&quot; case=&quot;upper|lower&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;USE_$(SPEKTRUM_PRIMARY_UART_UPPER)&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;SPEKTRUM_PRIMARY_UART&quot;  value=&quot;$(SPEKTRUM_PRIMARY_UART_LOWER)&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;SPEKTRUM_PRIMARY_UART_UPPER&quot;  value=&quot;$(SPEKTRUM_PRIMARY_UART_UPPER)_GPIO&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;$(SPEKTRUM_PRIMARY_UART_UPPER)_BAUD&quot; value=&quot;B115200&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;USE_$(SPEKTRUM_PRIMARY_UART_UPPER)_TX&quot; value=&quot;FALSE&quot;/&gt;</div>
+<div class="line"></div>
+<div class="line">    &lt;configure name=&quot;SPEKTRUM_SECONDARY_UART&quot; value=&quot;$(RADIO_CONTROL_SPEKTRUM_SECONDARY_PORT)&quot; case=&quot;upper|lower&quot;/&gt;</div>
+<div class="line">    &lt;configure name=&quot;USE_SECONDARY_SPEKTRUM_RECEIVER&quot; default=&quot;0&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;USE_$(SPEKTRUM_SECONDARY_UART_UPPER)&quot; cond=&quot;ifneq ($(USE_SECONDARY_SPEKTRUM_RECEIVER),0)&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;SPEKTRUM_SECONDARY_UART&quot;  value=&quot;$(SPEKTRUM_SECONDARY_UART_LOWER)&quot; cond=&quot;ifneq ($(USE_SECONDARY_SPEKTRUM_RECEIVER),0)&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;SPEKTRUM_SECONDARY_UART_UPPER&quot;  value=&quot;$(SPEKTRUM_SECONDARY_UART_UPPER)_GPIO&quot; cond=&quot;ifneq ($(USE_SECONDARY_SPEKTRUM_RECEIVER),0)&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;$(SPEKTRUM_SECONDARY_UART_UPPER)_BAUD&quot; value=&quot;B115200&quot; cond=&quot;ifneq ($(USE_SECONDARY_SPEKTRUM_RECEIVER),0)&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;USE_$(SPEKTRUM_SECONDARY_UART_UPPER)_TX&quot; value=&quot;FALSE&quot; cond=&quot;ifneq ($(USE_SECONDARY_SPEKTRUM_RECEIVER),0)&quot;/&gt;</div>
+<div class="line"></div>
 <div class="line">    &lt;file name=&quot;radio_control.c&quot; dir=&quot;subsystems&quot;/&gt;</div>
 <div class="line">    &lt;file name=&quot;spektrum.c&quot; dir=&quot;subsystems/radio_control&quot;/&gt;</div>
-<div class="line">    &lt;file name=&quot;spektrum_arch.c&quot; dir=&quot;$(SRC_ARCH)/subsystems/radio_control&quot;/&gt;</div>
+<div class="line">  &lt;/makefile&gt;</div>
+<div class="line">  &lt;makefile target=&quot;ap&quot;&gt;</div>
+<div class="line">    &lt;define name=&quot;RADIO_CONTROL_TYPE_H&quot; value=&quot;subsystems/radio_control/spektrum.h&quot; type=&quot;string&quot;/&gt;</div>
 <div class="line">  &lt;/makefile&gt;</div>
 <div class="line">  &lt;makefile target=&quot;ap&quot; cond=&quot;ifeq (,$(findstring $(SEPARATE_FBW),1 TRUE))&quot;&gt;</div>
-<div class="line">    &lt;configure name=&quot;USE_SECONDARY_SPEKTRUM_RECEIVER&quot; default=&quot;0&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;RADIO_CONTROL&quot;/&gt;</div>
-<div class="line">    &lt;define name=&quot;RADIO_CONTROL_BIND_IMPL_FUNC&quot; value=&quot;radio_control_spektrum_try_bind&quot;/&gt;</div>
-<div class="line">    &lt;define name=&quot;RADIO_CONTROL_SPEKTRUM_PRIMARY_PORT&quot; value=&quot;SPEKTRUM_$(RADIO_CONTROL_SPEKTRUM_PRIMARY_PORT)&quot;/&gt;</div>
-<div class="line">    &lt;define name=&quot;OVERRIDE_$(RADIO_CONTROL_SPEKTRUM_PRIMARY_PORT)_IRQ_HANDLER&quot;/&gt;</div>
-<div class="line">    &lt;define name=&quot;RADIO_CONTROL_SPEKTRUM_SECONDARY_PORT&quot; value=&quot;SPEKTRUM_$(RADIO_CONTROL_SPEKTRUM_SECONDARY_PORT)&quot; cond=&quot;ifneq ($(USE_SECONDARY_SPEKTRUM_RECEIVER),0)&quot;/&gt;</div>
-<div class="line">    &lt;define name=&quot;OVERRIDE_$(RADIO_CONTROL_SPEKTRUM_PRIMARY_PORT)_IRQ_HANDLER&quot; cond=&quot;ifneq ($(USE_SECONDARY_SPEKTRUM_RECEIVER),0)&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;RADIO_CONTROL_BIND_IMPL_FUNC&quot; value=&quot;spektrum_try_bind&quot;/&gt;</div>
+<div class="line"></div>
+<div class="line">    &lt;configure name=&quot;SPEKTRUM_PRIMARY_UART&quot; value=&quot;$(RADIO_CONTROL_SPEKTRUM_PRIMARY_PORT)&quot; case=&quot;upper|lower&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;USE_$(SPEKTRUM_PRIMARY_UART_UPPER)&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;SPEKTRUM_PRIMARY_UART&quot;  value=&quot;$(SPEKTRUM_PRIMARY_UART_LOWER)&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;SPEKTRUM_PRIMARY_UART_UPPER&quot;  value=&quot;$(SPEKTRUM_PRIMARY_UART_UPPER)_GPIO&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;$(SPEKTRUM_PRIMARY_UART_UPPER)_BAUD&quot; value=&quot;B115200&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;USE_$(SPEKTRUM_PRIMARY_UART_UPPER)_TX&quot; value=&quot;FALSE&quot;/&gt;</div>
+<div class="line"></div>
+<div class="line">    &lt;configure name=&quot;SPEKTRUM_SECONDARY_UART&quot; value=&quot;$(RADIO_CONTROL_SPEKTRUM_SECONDARY_PORT)&quot; case=&quot;upper|lower&quot;/&gt;</div>
+<div class="line">    &lt;configure name=&quot;USE_SECONDARY_SPEKTRUM_RECEIVER&quot; default=&quot;0&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;USE_$(SPEKTRUM_SECONDARY_UART_UPPER)&quot; cond=&quot;ifneq ($(USE_SECONDARY_SPEKTRUM_RECEIVER),0)&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;SPEKTRUM_SECONDARY_UART&quot;  value=&quot;$(SPEKTRUM_SECONDARY_UART_LOWER)&quot; cond=&quot;ifneq ($(USE_SECONDARY_SPEKTRUM_RECEIVER),0)&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;SPEKTRUM_SECONDARY_UART_UPPER&quot;  value=&quot;$(SPEKTRUM_SECONDARY_UART_UPPER)_GPIO&quot; cond=&quot;ifneq ($(USE_SECONDARY_SPEKTRUM_RECEIVER),0)&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;$(SPEKTRUM_SECONDARY_UART_UPPER)_BAUD&quot; value=&quot;B115200&quot; cond=&quot;ifneq ($(USE_SECONDARY_SPEKTRUM_RECEIVER),0)&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;USE_$(SPEKTRUM_SECONDARY_UART_UPPER)_TX&quot; value=&quot;FALSE&quot; cond=&quot;ifneq ($(USE_SECONDARY_SPEKTRUM_RECEIVER),0)&quot;/&gt;</div>
+<div class="line">    </div>
 <div class="line">    &lt;file name=&quot;radio_control.c&quot; dir=&quot;subsystems&quot;/&gt;</div>
 <div class="line">    &lt;file name=&quot;spektrum.c&quot; dir=&quot;subsystems/radio_control&quot;/&gt;</div>
-<div class="line">    &lt;file name=&quot;spektrum_arch.c&quot; dir=&quot;$(SRC_ARCH)/subsystems/radio_control&quot;/&gt;</div>
+<div class="line">  &lt;/makefile&gt;</div>
+<div class="line">  &lt;makefile target=&quot;sim|nps|hitl&quot;&gt;</div>
+<div class="line">    &lt;define name=&quot;RADIO_CONTROL&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;RADIO_CONTROL_TYPE_H&quot; value=&quot;subsystems/radio_control/spektrum_arch.h&quot; type=&quot;string&quot;/&gt;</div>
+<div class="line">    &lt;file name=&quot;radio_control.c&quot; dir=&quot;subsystems&quot;/&gt;</div>
+<div class="line">    &lt;file_arch name=&quot;spektrum_arch.c&quot; dir=&quot;subsystems/radio_control&quot;/&gt;</div>
 <div class="line">  &lt;/makefile&gt;</div>
 <div class="line">&lt;/module&gt;</div>
 <div class="line"></div>
@@ -217,7 +230,7 @@ Raw radio_control_spektrum.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Wed Nov 8 2017 10:02:49 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:04:00 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

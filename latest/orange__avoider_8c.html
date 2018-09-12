@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -115,8 +115,9 @@ $(document).ready(function(){initNavTree('orange__avoider_8c.html','');});
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="orange__avoider_8h_source.html">modules/orange_avoider/orange_avoider.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="colorfilter_8h_source.html">modules/computer_vision/colorfilter.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="navigation_8h_source.html">firmwares/rotorcraft/navigation.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="rotorcraft_2navigation_8h_source.html">firmwares/rotorcraft/navigation.h</a>&quot;</code><br />
 <code>#include &quot;generated/flight_plan.h&quot;</code><br />
+<code>#include &quot;generated/airframe.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="state_8h_source.html">state.h</a>&quot;</code><br />
 <code>#include &lt;time.h&gt;</code><br />
 <code>#include &lt;math.h&gt;</code><br />
@@ -129,7 +130,7 @@ $(document).ready(function(){initNavTree('orange__avoider_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="orange__avoider_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2orange__avoider_2orange__avoider_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2orange__avoider_2orange__avoider_8c" id="sw_2airborne_2modules_2orange__avoider_2orange__avoider_8c">
-<area shape="rect" id="node2" href="orange__avoider_8h.html" title="modules/orange_avoider\l/orange_avoider.h" alt="" coords="513,452,693,493"/><area shape="rect" id="node13" href="colorfilter_8h.html" title="modules/computer_vision\l/colorfilter.h" alt="" coords="391,109,577,151"/><area shape="rect" id="node21" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="1133,459,1200,486"/><area shape="rect" id="node28" href="navigation_8h.html" title="Rotorcraft navigation functions. " alt="" coords="953,273,1101,315"/><area shape="rect" id="node3" href="inttypes_8h.html" title="inttypes.h" alt="" coords="560,549,645,575"/><area shape="rect" id="node4" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="787,541,938,583"/><area shape="rect" id="node5" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="833,638,957,665"/><area shape="rect" id="node7" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="1130,638,1270,665"/><area shape="rect" id="node8" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="1345,720,1500,747"/><area shape="rect" id="node11" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="883,720,1034,747"/><area shape="rect" id="node15" href="cv_8h.html" title="Computer vision framework for onboard processing. " alt="" coords="187,199,402,225"/><area shape="rect" id="node17" href="video__device_8h.html" title="peripherals/video_device.h" alt="" coords="199,281,390,307"/><area shape="rect" id="node19" href="image_8h.html" title="Image helper functions like resizing, color filter, converters... " alt="" coords="43,363,229,404"/><area shape="rect" id="node22" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="1346,638,1537,665"/><area shape="rect" id="node25" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="962,541,1113,583"/><area shape="rect" id="node26" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="1239,541,1403,583"/><area shape="rect" id="node29" href="subsystems_2navigation_2waypoints_8h.html" title="subsystems/navigation\l/waypoints.h" alt="" coords="889,452,1058,493"/><area shape="rect" id="node30" href="common__flight__plan_8h.html" title="Common flight_plan functions shared between fixedwing and rotorcraft. " alt="" coords="474,631,643,672"/><area shape="rect" id="node31" href="autopilot_8h.html" title="Core autopilot interface common to all firmwares. " alt="" coords="1247,370,1337,397"/><area shape="rect" id="node32" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="768,459,864,486"/></map>
+<area shape="rect" id="node2" href="orange__avoider_8h.html" title="modules/orange_avoider\l/orange_avoider.h" alt="" coords="946,452,1126,493"/><area shape="rect" id="node13" href="colorfilter_8h.html" title="modules/computer_vision\l/colorfilter.h" alt="" coords="826,109,1013,151"/><area shape="rect" id="node21" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="590,459,657,486"/><area shape="rect" id="node28" href="rotorcraft_2navigation_8h.html" title="Rotorcraft navigation functions. " alt="" coords="1650,273,1798,315"/><area shape="rect" id="node3" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1049,549,1134,575"/><area shape="rect" id="node4" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="1384,541,1535,583"/><area shape="rect" id="node5" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="1296,638,1420,665"/><area shape="rect" id="node7" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="674,638,814,665"/><area shape="rect" id="node8" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="441,720,596,747"/><area shape="rect" id="node11" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="671,720,822,747"/><area shape="rect" id="node15" href="cv_8h.html" title="Computer vision framework for onboard processing. " alt="" coords="812,199,1027,225"/><area shape="rect" id="node17" href="video__device_8h.html" title="peripherals/video_device.h" alt="" coords="478,281,668,307"/><area shape="rect" id="node19" href="image_8h.html" title="Image helper functions like resizing, color filter, converters... " alt="" coords="581,363,768,404"/><area shape="rect" id="node22" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="404,638,595,665"/><area shape="rect" id="node25" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="1210,541,1360,583"/><area shape="rect" id="node26" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="542,541,706,583"/><area shape="rect" id="node29" href="subsystems_2navigation_2waypoints_8h.html" title="subsystems/navigation\l/waypoints.h" alt="" coords="1984,452,2154,493"/><area shape="rect" id="node30" href="common__flight__plan_8h.html" title="Common flight_plan functions shared between fixedwing and rotorcraft. " alt="" coords="1051,631,1220,672"/><area shape="rect" id="node31" href="autopilot_8h.html" title="Core autopilot interface common to all firmwares. " alt="" coords="1606,370,1697,397"/><area shape="rect" id="node32" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="1333,459,1429,486"/></map>
 </div>
 </div>
 <p><a href="orange__avoider_8c_source.html">Go to the source code of this file.</a></p>
@@ -142,6 +143,18 @@ Macros</h2></td></tr>
 <tr class="separator:aee52c6162d4b084290ed778856a1ded4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01535af7e50005fd099fe06f94865e54"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="orange__avoider_8c.html#a01535af7e50005fd099fe06f94865e54">VERBOSE_PRINT</a>(...)</td></tr>
 <tr class="separator:a01535af7e50005fd099fe06f94865e54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a8960b55556a3b95d40f8dfa7b4df1b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="orange__avoider_8c.html#a1a8960b55556a3b95d40f8dfa7b4df1b">ORANGE_AVOIDER_LUM_MIN</a>&#160;&#160;&#160;41</td></tr>
+<tr class="separator:a1a8960b55556a3b95d40f8dfa7b4df1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65005e47e3ec61733d2c4d95cdd5c6c3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="orange__avoider_8c.html#a65005e47e3ec61733d2c4d95cdd5c6c3">ORANGE_AVOIDER_LUM_MAX</a>&#160;&#160;&#160;183</td></tr>
+<tr class="separator:a65005e47e3ec61733d2c4d95cdd5c6c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a210a32059cd035137221033da4886fb9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="orange__avoider_8c.html#a210a32059cd035137221033da4886fb9">ORANGE_AVOIDER_CB_MIN</a>&#160;&#160;&#160;53</td></tr>
+<tr class="separator:a210a32059cd035137221033da4886fb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a199edfbce7a9eaa0eccb19018b70cced"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="orange__avoider_8c.html#a199edfbce7a9eaa0eccb19018b70cced">ORANGE_AVOIDER_CB_MAX</a>&#160;&#160;&#160;121</td></tr>
+<tr class="separator:a199edfbce7a9eaa0eccb19018b70cced"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bd50f1ab5405433215e3dda8fc17705"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="orange__avoider_8c.html#a4bd50f1ab5405433215e3dda8fc17705">ORANGE_AVOIDER_CR_MIN</a>&#160;&#160;&#160;134</td></tr>
+<tr class="separator:a4bd50f1ab5405433215e3dda8fc17705"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae643ce1e3aebb04c13186a463ac42b52"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="orange__avoider_8c.html#ae643ce1e3aebb04c13186a463ac42b52">ORANGE_AVOIDER_CR_MAX</a>&#160;&#160;&#160;249</td></tr>
+<tr class="separator:ae643ce1e3aebb04c13186a463ac42b52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -178,6 +191,102 @@ Variables</h2></td></tr>
 
 <p>Definition in file <a class="el" href="orange__avoider_8c_source.html">orange_avoider.c</a>.</p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="a199edfbce7a9eaa0eccb19018b70cced"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ORANGE_AVOIDER_CB_MAX&#160;&#160;&#160;121</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="orange__avoider_8c_source.html#l00047">47</a> of file <a class="el" href="orange__avoider_8c_source.html">orange_avoider.c</a>.</p>
+
+<p>Referenced by <a class="el" href="orange__avoider_8c_source.html#l00068">orange_avoider_init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a210a32059cd035137221033da4886fb9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ORANGE_AVOIDER_CB_MIN&#160;&#160;&#160;53</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="orange__avoider_8c_source.html#l00043">43</a> of file <a class="el" href="orange__avoider_8c_source.html">orange_avoider.c</a>.</p>
+
+<p>Referenced by <a class="el" href="orange__avoider_8c_source.html#l00068">orange_avoider_init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae643ce1e3aebb04c13186a463ac42b52"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ORANGE_AVOIDER_CR_MAX&#160;&#160;&#160;249</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="orange__avoider_8c_source.html#l00055">55</a> of file <a class="el" href="orange__avoider_8c_source.html">orange_avoider.c</a>.</p>
+
+<p>Referenced by <a class="el" href="orange__avoider_8c_source.html#l00068">orange_avoider_init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4bd50f1ab5405433215e3dda8fc17705"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ORANGE_AVOIDER_CR_MIN&#160;&#160;&#160;134</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="orange__avoider_8c_source.html#l00051">51</a> of file <a class="el" href="orange__avoider_8c_source.html">orange_avoider.c</a>.</p>
+
+<p>Referenced by <a class="el" href="orange__avoider_8c_source.html#l00068">orange_avoider_init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a65005e47e3ec61733d2c4d95cdd5c6c3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ORANGE_AVOIDER_LUM_MAX&#160;&#160;&#160;183</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="orange__avoider_8c_source.html#l00039">39</a> of file <a class="el" href="orange__avoider_8c_source.html">orange_avoider.c</a>.</p>
+
+<p>Referenced by <a class="el" href="orange__avoider_8c_source.html#l00068">orange_avoider_init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1a8960b55556a3b95d40f8dfa7b4df1b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ORANGE_AVOIDER_LUM_MIN&#160;&#160;&#160;41</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="orange__avoider_8c_source.html#l00035">35</a> of file <a class="el" href="orange__avoider_8c_source.html">orange_avoider.c</a>.</p>
+
+<p>Referenced by <a class="el" href="orange__avoider_8c_source.html#l00068">orange_avoider_init()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="af115de1f0ff11c264ed97e821b2b468e"></a>
 <div class="memitem">
 <div class="memproto">
@@ -188,7 +297,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="orange__avoider_8c_source.html#l00024">24</a> of file <a class="el" href="orange__avoider_8c_source.html">orange_avoider.c</a>.</p>
+<p>Definition at line <a class="el" href="orange__avoider_8c_source.html#l00025">25</a> of file <a class="el" href="orange__avoider_8c_source.html">orange_avoider.c</a>.</p>
 
 </div>
 </div>
@@ -216,7 +325,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="orange__avoider_8c_source.html#l00026">26</a> of file <a class="el" href="orange__avoider_8c_source.html">orange_avoider.c</a>.</p>
+<p>Definition at line <a class="el" href="orange__avoider_8c_source.html#l00027">27</a> of file <a class="el" href="orange__avoider_8c_source.html">orange_avoider.c</a>.</p>
 
 </div>
 </div>
@@ -234,9 +343,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="orange__avoider_8c_source.html#l00030">30</a> of file <a class="el" href="orange__avoider_8c_source.html">orange_avoider.c</a>.</p>
+<p>Definition at line <a class="el" href="orange__avoider_8c_source.html#l00031">31</a> of file <a class="el" href="orange__avoider_8c_source.html">orange_avoider.c</a>.</p>
 
-<p>Referenced by <a class="el" href="orange__avoider_8c_source.html#l00102">calculateForwards()</a>, <a class="el" href="orange__avoider_8c_source.html#l00143">chooseRandomIncrementAvoidance()</a>, <a class="el" href="orange__avoider_8c_source.html#l00088">increase_nav_heading()</a>, <a class="el" href="orange__avoider_8c_source.html#l00121">moveWaypoint()</a>, and <a class="el" href="orange__avoider_8c_source.html#l00059">orange_avoider_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="orange__avoider_8c_source.html#l00128">calculateForwards()</a>, <a class="el" href="orange__avoider_8c_source.html#l00169">chooseRandomIncrementAvoidance()</a>, <a class="el" href="orange__avoider_8c_source.html#l00114">increase_nav_heading()</a>, <a class="el" href="orange__avoider_8c_source.html#l00147">moveWaypoint()</a>, and <a class="el" href="orange__avoider_8c_source.html#l00085">orange_avoider_periodic()</a>.</p>
 
 </div>
 </div>
@@ -273,11 +382,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="orange__avoider_8c_source.html#l00102">102</a> of file <a class="el" href="orange__avoider_8c_source.html">orange_avoider.c</a>.</p>
+<p>Definition at line <a class="el" href="orange__avoider_8c_source.html#l00128">128</a> of file <a class="el" href="orange__avoider_8c_source.html">orange_avoider.c</a>.</p>
 
-<p>References <a class="el" href="pprz__algebra__int_8h_source.html#l00211">ANGLE_FLOAT_OF_BFP</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00216">POS_BFP_OF_REAL</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00217">POS_FLOAT_OF_BFP</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00149">Int32Eulers::psi</a>, <a class="el" href="state_8h_source.html#l01125">stateGetNedToBodyEulers_i()</a>, <a class="el" href="state_8h_source.html#l00674">stateGetPositionEnu_i()</a>, <a class="el" href="orange__avoider_8c_source.html#l00030">VERBOSE_PRINT</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00078">EnuCoor_i::x</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00079">EnuCoor_i::y</a>.</p>
+<p>References <a class="el" href="pprz__algebra__int_8h_source.html#l00211">ANGLE_FLOAT_OF_BFP</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00216">POS_BFP_OF_REAL</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00217">POS_FLOAT_OF_BFP</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00149">Int32Eulers::psi</a>, <a class="el" href="state_8h_source.html#l01125">stateGetNedToBodyEulers_i()</a>, <a class="el" href="state_8h_source.html#l00674">stateGetPositionEnu_i()</a>, <a class="el" href="orange__avoider_8c_source.html#l00031">VERBOSE_PRINT</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00078">EnuCoor_i::x</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00079">EnuCoor_i::y</a>.</p>
 
-<p>Referenced by <a class="el" href="orange__avoider_8c_source.html#l00132">moveWaypointForward()</a>.</p>
+<p>Referenced by <a class="el" href="orange__avoider_8c_source.html#l00158">moveWaypointForward()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -317,11 +426,11 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="orange__avoider_8c_source.html#l00143">143</a> of file <a class="el" href="orange__avoider_8c_source.html">orange_avoider.c</a>.</p>
+<p>Definition at line <a class="el" href="orange__avoider_8c_source.html#l00169">169</a> of file <a class="el" href="orange__avoider_8c_source.html">orange_avoider.c</a>.</p>
 
-<p>References <a class="el" href="orange__avoider_8c_source.html#l00035">incrementForAvoidance</a>, and <a class="el" href="orange__avoider_8c_source.html#l00030">VERBOSE_PRINT</a>.</p>
+<p>References <a class="el" href="orange__avoider_8c_source.html#l00061">incrementForAvoidance</a>, and <a class="el" href="orange__avoider_8c_source.html#l00031">VERBOSE_PRINT</a>.</p>
 
-<p>Referenced by <a class="el" href="orange__avoider_8c_source.html#l00042">orange_avoider_init()</a>, and <a class="el" href="orange__avoider_8c_source.html#l00059">orange_avoider_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="orange__avoider_8c_source.html#l00068">orange_avoider_init()</a>, and <a class="el" href="orange__avoider_8c_source.html#l00085">orange_avoider_periodic()</a>.</p>
 
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -360,11 +469,11 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="orange__avoider_8c_source.html#l00088">88</a> of file <a class="el" href="orange__avoider_8c_source.html">orange_avoider.c</a>.</p>
+<p>Definition at line <a class="el" href="orange__avoider_8c_source.html#l00114">114</a> of file <a class="el" href="orange__avoider_8c_source.html">orange_avoider.c</a>.</p>
 
-<p>References <a class="el" href="pprz__algebra__int_8h_source.html#l00210">ANGLE_BFP_OF_REAL</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00211">ANGLE_FLOAT_OF_BFP</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00126">INT32_ANGLE_NORMALIZE</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00149">Int32Eulers::psi</a>, <a class="el" href="state_8h_source.html#l01125">stateGetNedToBodyEulers_i()</a>, and <a class="el" href="orange__avoider_8c_source.html#l00030">VERBOSE_PRINT</a>.</p>
+<p>References <a class="el" href="pprz__algebra__int_8h_source.html#l00210">ANGLE_BFP_OF_REAL</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00211">ANGLE_FLOAT_OF_BFP</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00126">INT32_ANGLE_NORMALIZE</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00149">Int32Eulers::psi</a>, <a class="el" href="state_8h_source.html#l01125">stateGetNedToBodyEulers_i()</a>, and <a class="el" href="orange__avoider_8c_source.html#l00031">VERBOSE_PRINT</a>.</p>
 
-<p>Referenced by <a class="el" href="orange__avoider_8c_source.html#l00059">orange_avoider_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="orange__avoider_8c_source.html#l00085">orange_avoider_periodic()</a>.</p>
 
 <p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -414,11 +523,11 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="orange__avoider_8c_source.html#l00121">121</a> of file <a class="el" href="orange__avoider_8c_source.html">orange_avoider.c</a>.</p>
+<p>Definition at line <a class="el" href="orange__avoider_8c_source.html#l00147">147</a> of file <a class="el" href="orange__avoider_8c_source.html">orange_avoider.c</a>.</p>
 
-<p>References <a class="el" href="pprz__algebra__int_8h_source.html#l00217">POS_FLOAT_OF_BFP</a>, <a class="el" href="orange__avoider_8c_source.html#l00030">VERBOSE_PRINT</a>, <a class="el" href="subsystems_2navigation_2waypoints_8c_source.html#l00138">waypoint_set_xy_i()</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00078">EnuCoor_i::x</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00079">EnuCoor_i::y</a>.</p>
+<p>References <a class="el" href="pprz__algebra__int_8h_source.html#l00217">POS_FLOAT_OF_BFP</a>, <a class="el" href="orange__avoider_8c_source.html#l00031">VERBOSE_PRINT</a>, <a class="el" href="subsystems_2navigation_2waypoints_8c_source.html#l00138">waypoint_set_xy_i()</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00078">EnuCoor_i::x</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00079">EnuCoor_i::y</a>.</p>
 
-<p>Referenced by <a class="el" href="orange__avoider_8c_source.html#l00132">moveWaypointForward()</a>.</p>
+<p>Referenced by <a class="el" href="orange__avoider_8c_source.html#l00158">moveWaypointForward()</a>.</p>
 
 <p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -468,11 +577,11 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="orange__avoider_8c_source.html#l00132">132</a> of file <a class="el" href="orange__avoider_8c_source.html">orange_avoider.c</a>.</p>
+<p>Definition at line <a class="el" href="orange__avoider_8c_source.html#l00158">158</a> of file <a class="el" href="orange__avoider_8c_source.html">orange_avoider.c</a>.</p>
 
-<p>References <a class="el" href="orange__avoider_8c_source.html#l00102">calculateForwards()</a>, and <a class="el" href="orange__avoider_8c_source.html#l00121">moveWaypoint()</a>.</p>
+<p>References <a class="el" href="orange__avoider_8c_source.html#l00128">calculateForwards()</a>, and <a class="el" href="orange__avoider_8c_source.html#l00147">moveWaypoint()</a>.</p>
 
-<p>Referenced by <a class="el" href="orange__avoider_8c_source.html#l00059">orange_avoider_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="orange__avoider_8c_source.html#l00085">orange_avoider_periodic()</a>.</p>
 
 <p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -512,9 +621,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="orange__avoider_8c_source.html#l00042">42</a> of file <a class="el" href="orange__avoider_8c_source.html">orange_avoider.c</a>.</p>
+<p>Definition at line <a class="el" href="orange__avoider_8c_source.html#l00068">68</a> of file <a class="el" href="orange__avoider_8c_source.html">orange_avoider.c</a>.</p>
 
-<p>References <a class="el" href="orange__avoider_8c_source.html#l00143">chooseRandomIncrementAvoidance()</a>, <a class="el" href="colorfilter_8c_source.html#l00049">color_cb_max</a>, <a class="el" href="colorfilter_8c_source.html#l00048">color_cb_min</a>, <a class="el" href="colorfilter_8c_source.html#l00051">color_cr_max</a>, <a class="el" href="colorfilter_8c_source.html#l00050">color_cr_min</a>, <a class="el" href="colorfilter_8c_source.html#l00047">color_lum_max</a>, and <a class="el" href="colorfilter_8c_source.html#l00046">color_lum_min</a>.</p>
+<p>References <a class="el" href="orange__avoider_8c_source.html#l00169">chooseRandomIncrementAvoidance()</a>, <a class="el" href="colorfilter_8c_source.html#l00049">color_cb_max</a>, <a class="el" href="colorfilter_8c_source.html#l00048">color_cb_min</a>, <a class="el" href="colorfilter_8c_source.html#l00051">color_cr_max</a>, <a class="el" href="colorfilter_8c_source.html#l00050">color_cr_min</a>, <a class="el" href="colorfilter_8c_source.html#l00047">color_lum_max</a>, <a class="el" href="colorfilter_8c_source.html#l00046">color_lum_min</a>, <a class="el" href="orange__avoider_8c_source.html#l00047">ORANGE_AVOIDER_CB_MAX</a>, <a class="el" href="orange__avoider_8c_source.html#l00043">ORANGE_AVOIDER_CB_MIN</a>, <a class="el" href="orange__avoider_8c_source.html#l00055">ORANGE_AVOIDER_CR_MAX</a>, <a class="el" href="orange__avoider_8c_source.html#l00051">ORANGE_AVOIDER_CR_MIN</a>, <a class="el" href="orange__avoider_8c_source.html#l00039">ORANGE_AVOIDER_LUM_MAX</a>, and <a class="el" href="orange__avoider_8c_source.html#l00035">ORANGE_AVOIDER_LUM_MIN</a>.</p>
 
 <p><div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -543,9 +652,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="orange__avoider_8c_source.html#l00059">59</a> of file <a class="el" href="orange__avoider_8c_source.html">orange_avoider.c</a>.</p>
+<p>Definition at line <a class="el" href="orange__avoider_8c_source.html#l00085">85</a> of file <a class="el" href="orange__avoider_8c_source.html">orange_avoider.c</a>.</p>
 
-<p>References <a class="el" href="orange__avoider_8c_source.html#l00143">chooseRandomIncrementAvoidance()</a>, <a class="el" href="colorfilter_8c_source.html#l00054">color_count</a>, <a class="el" href="orange__avoider_8c_source.html#l00088">increase_nav_heading()</a>, <a class="el" href="orange__avoider_8c_source.html#l00035">incrementForAvoidance</a>, <a class="el" href="orange__avoider_8c_source.html#l00037">maxDistance</a>, <a class="el" href="orange__avoider_8c_source.html#l00132">moveWaypointForward()</a>, <a class="el" href="navigation_8c_source.html#l00104">nav_heading</a>, <a class="el" href="navigation_8c_source.html#l00510">nav_set_heading_towards_waypoint()</a>, <a class="el" href="orange__avoider_8c_source.html#l00033">safeToGoForwards</a>, <a class="el" href="orange__avoider_8c_source.html#l00036">trajectoryConfidence</a>, <a class="el" href="orange__avoider_8c_source.html#l00034">tresholdColorCount</a>, <a class="el" href="orange__avoider_8c_source.html#l00030">VERBOSE_PRINT</a>, and <a class="el" href="subsystems_2navigation_2waypoints_8c_source.html#l00225">waypoint_set_here_2d()</a>.</p>
+<p>References <a class="el" href="orange__avoider_8c_source.html#l00169">chooseRandomIncrementAvoidance()</a>, <a class="el" href="colorfilter_8c_source.html#l00054">color_count</a>, <a class="el" href="orange__avoider_8c_source.html#l00114">increase_nav_heading()</a>, <a class="el" href="orange__avoider_8c_source.html#l00061">incrementForAvoidance</a>, <a class="el" href="orange__avoider_8c_source.html#l00063">maxDistance</a>, <a class="el" href="orange__avoider_8c_source.html#l00158">moveWaypointForward()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00104">nav_heading</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00510">nav_set_heading_towards_waypoint()</a>, <a class="el" href="orange__avoider_8c_source.html#l00059">safeToGoForwards</a>, <a class="el" href="orange__avoider_8c_source.html#l00062">trajectoryConfidence</a>, <a class="el" href="orange__avoider_8c_source.html#l00060">tresholdColorCount</a>, <a class="el" href="orange__avoider_8c_source.html#l00031">VERBOSE_PRINT</a>, and <a class="el" href="subsystems_2navigation_2waypoints_8c_source.html#l00225">waypoint_set_here_2d()</a>.</p>
 
 <p><div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -554,7 +663,7 @@ Variables</h2></td></tr>
 <div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="orange__avoider_8c_a518e130cd4210428c9772cb104c78731_cgraph.png" border="0" usemap="#orange__avoider_8c_a518e130cd4210428c9772cb104c78731_cgraph" alt=""/></div>
 <map name="orange__avoider_8c_a518e130cd4210428c9772cb104c78731_cgraph" id="orange__avoider_8c_a518e130cd4210428c9772cb104c78731_cgraph">
-<area shape="rect" id="node2" href="orange__avoider_8c.html#ac55d6c1ab8e8ddf0e79a28c68a396218" title="chooseRandomIncrementAvoidance" alt="" coords="232,113,483,140"/><area shape="rect" id="node3" href="orange__avoider_8c.html#ab90ef5d5cb3a3b87eb0851792fdfc682" title="increase_nav_heading" alt="" coords="275,164,439,191"/><area shape="rect" id="node9" href="orange__avoider_8c.html#a72ecd5c8947f92bac5d0c6967dbec35b" title="moveWaypointForward" alt="" coords="275,215,440,241"/><area shape="rect" id="node31" href="navigation_8c.html#a3db1ed9a54dba70032a53de5dec69d9b" title="Set heading in the direction of a waypoint. " alt="" coords="264,266,451,307"/><area shape="rect" id="node36" href="subsystems_2navigation_2waypoints_8c.html#a28dd523c6d75fb36ce3ffec86a6e096c" title="set waypoint to current horizontal location without modifying altitude " alt="" coords="542,360,706,387"/><area shape="rect" id="node4" href="group__state__attitude.html#ga5ae8778366c1fad669189cb2def40792" title="Get vehicle body attitude euler angles (int). " alt="" coords="765,164,964,191"/><area shape="rect" id="node5" href="group__math__orientation__representation.html#gae05f220bbbdaafcbe11bc2d1fb622f39" title="Get vehicle body attitude euler angles (int). " alt="" coords="1014,81,1177,108"/><area shape="rect" id="node6" href="group__math__orientation__representation.html#gaa07c68d2ea52188413c8c90ce48b73c8" title="orientationCalcEulers_i" alt="" coords="1227,5,1393,32"/><area shape="rect" id="node7" href="group__math__algebra__int.html#gaf2f61a27841c68cefbd27a8614fcd90e" title="int32_eulers_of_rmat" alt="" coords="1463,5,1620,32"/><area shape="rect" id="node8" href="group__math__algebra__int.html#ga02ccc32cb7b533e0c7cf18140fb7104e" title="int32_eulers_of_quat" alt="" coords="1464,56,1619,83"/><area shape="rect" id="node10" href="orange__avoider_8c.html#a4e5570532574857283bde2f3437c5375" title="calculateForwards" alt="" coords="556,215,692,241"/><area shape="rect" id="node23" href="orange__avoider_8c.html#ab9e9ec09110cd9cd8a03cb04532db57a" title="moveWaypoint" alt="" coords="567,455,681,481"/><area shape="rect" id="node11" href="group__state__position.html#gaf326b26862d91ded4ee4e856a511df47" title="Get position in local ENU coordinates (int). " alt="" coords="783,215,946,241"/><area shape="rect" id="node12" href="group__state__position.html#gaf61c3a86bc000852a2d27d5727ceaa91" title="stateCalcPositionEnu_i" alt="" coords="1012,215,1179,241"/><area shape="rect" id="node13" href="group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU. " alt="" coords="1472,107,1611,133"/><area shape="rect" id="node15" href="pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title="enu_of_ecef_point_f" alt="" coords="1467,411,1616,437"/><area shape="rect" id="node16" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title="ecef_of_lla_f" alt="" coords="1713,233,1813,260"/><area shape="rect" id="node17" href="group__math__geodetic__int.html#gae42bb4930966f1c362524f95bb5d7d6e" title="Convert a point from LLA to local ENU. " alt="" coords="1247,107,1373,133"/><area shape="rect" id="node20" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="1261,512,1359,539"/><area shape="rect" id="node14" href="group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU. " alt="" coords="1689,132,1837,159"/><area shape="rect" id="node18" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF. " alt="" coords="1492,259,1591,285"/><area shape="rect" id="node19" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title="ecef_of_lla_d" alt="" coords="1711,284,1815,311"/><area shape="rect" id="node21" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="1468,479,1615,505"/><area shape="rect" id="node22" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="1473,530,1609,571"/><area shape="rect" id="node24" href="subsystems_2navigation_2waypoints_8c.html#a6458406c3ff4259882fa0b93991f3c1e" title="Set only local XY coordinates of waypoint without update altitude. " alt="" coords="797,472,933,499"/><area shape="rect" id="node25" href="subsystems_2navigation_2waypoints_8c.html#a10acece8582506367e9e9df3694bf31b" title="update global LLA coordinates from its ENU coordinates " alt="" coords="1025,715,1166,741"/><area shape="rect" id="node26" href="group__math__geodetic__int.html#gaaeff7441301129ca712e828b9b4f474e" title="Convert a local ENU position to ECEF. " alt="" coords="1472,664,1611,691"/><area shape="rect" id="node28" href="group__math__geodetic__int.html#gaea47a32071c2427f895fcb1df32c4e23" title="Convert a ECEF to LLA. " alt="" coords="1261,765,1359,792"/><area shape="rect" id="node27" href="group__math__geodetic__int.html#gaabe6e63048c95afdffdd4a581dc5f2b8" title="Rotate a vector from ENU to ECEF. " alt="" coords="1692,664,1835,691"/><area shape="rect" id="node29" href="pprz__geodetic__float_8c.html#adecd186d51b41b09f0cad928c0d2f68e" title="lla_of_ecef_f" alt="" coords="1491,740,1591,767"/><area shape="rect" id="node30" href="group__math__geodetic__double.html#ga9d3464ccabcd97db9fb4e1c7d25dfe16" title="lla_of_ecef_d" alt="" coords="1489,791,1593,817"/><area shape="rect" id="node32" href="navigation_8c.html#a497df0753fcbcd7b681341695228527c" title="Set heading to point towards x,y position in local coordinates. " alt="" coords="531,272,717,299"/><area shape="rect" id="node33" href="group__state__position.html#ga545d479db45e1a9711e59736b6d1309b" title="Get position in local ENU coordinates (float). " alt="" coords="783,269,946,296"/><area shape="rect" id="node34" href="group__state__position.html#ga718066acd9581365ca5c2aacb29130fd" title="stateCalcPositionEnu_f" alt="" coords="1012,353,1179,380"/><area shape="rect" id="node35" href="pprz__geodetic__float_8c.html#ab8d5cb7292ea74802e7a94e265c0703a" title="enu_of_lla_point_f" alt="" coords="1242,360,1378,387"/><area shape="rect" id="node37" href="group__state__position.html#ga99473409b740a26c0e2b9a5bd8e9defb" title="Get position in LLA coordinates (int). " alt="" coords="787,371,943,397"/><area shape="rect" id="node42" href="subsystems_2navigation_2waypoints_8c.html#a4f584367219ec09db0e1df24c85e7a1b" title="waypoint_is_global" alt="" coords="795,421,935,448"/><area shape="rect" id="node43" href="subsystems_2navigation_2waypoints_8c.html#a8676ceec12bad6ae1a4b8e829775003e" title="set waypoint latitude/longitude without updating altitude " alt="" coords="791,320,938,347"/><area shape="rect" id="node38" href="group__state__position.html#gad0fedf046f198eace06305e56fc7a0f8" title="Calculate LLA (int) from any other available representation. " alt="" coords="1015,613,1175,640"/><area shape="rect" id="node39" href="group__math__geodetic__int.html#gaf92579b72a2adb1aaac73fae89553fca" title="Convert a local NED position to ECEF. " alt="" coords="1241,664,1379,691"/><area shape="rect" id="node40" href="pprz__geodetic__float_8c.html#a30c2e47ec9a898079c04e8b08496b455" title="lla_of_utm_f" alt="" coords="1261,563,1359,589"/><area shape="rect" id="node41" href="pprz__geodetic__float_8c.html#a28b6e05c87f50f1e5290e36407095fb6" title="inverse_isometric_latitude_f" alt="" coords="1441,596,1641,623"/><area shape="rect" id="node44" href="subsystems_2navigation_2waypoints_8c.html#af184581f432d472b608685122f2d944d" title="update local ENU coordinates from its LLA coordinates " alt="" coords="1029,277,1161,304"/><area shape="rect" id="node45" href="group__math__geodetic__int.html#gab462d1e8278e0dd9cbc9ff463cde8f5e" title="Convert a point from LLA to local ENU. " alt="" coords="1243,259,1377,285"/></map>
+<area shape="rect" id="node2" href="orange__avoider_8c.html#ac55d6c1ab8e8ddf0e79a28c68a396218" title="chooseRandomIncrementAvoidance" alt="" coords="232,296,483,322"/><area shape="rect" id="node3" href="orange__avoider_8c.html#ab90ef5d5cb3a3b87eb0851792fdfc682" title="increase_nav_heading" alt="" coords="531,514,695,541"/><area shape="rect" id="node9" href="orange__avoider_8c.html#a72ecd5c8947f92bac5d0c6967dbec35b" title="moveWaypointForward" alt="" coords="275,397,440,424"/><area shape="rect" id="node31" href="rotorcraft_2navigation_8c.html#a3db1ed9a54dba70032a53de5dec69d9b" title="Set heading in the direction of a waypoint. " alt="" coords="264,448,451,490"/><area shape="rect" id="node32" href="subsystems_2navigation_2waypoints_8c.html#a28dd523c6d75fb36ce3ffec86a6e096c" title="set waypoint to current horizontal location without modifying altitude " alt="" coords="531,346,695,373"/><area shape="rect" id="node4" href="group__state__attitude.html#ga5ae8778366c1fad669189cb2def40792" title="Get vehicle body attitude euler angles (int). " alt="" coords="743,514,941,541"/><area shape="rect" id="node5" href="group__math__orientation__representation.html#gae05f220bbbdaafcbe11bc2d1fb622f39" title="Get vehicle body attitude euler angles (int). " alt="" coords="991,557,1154,584"/><area shape="rect" id="node6" href="group__math__orientation__representation.html#gaa07c68d2ea52188413c8c90ce48b73c8" title="orientationCalcEulers_i" alt="" coords="1204,600,1371,626"/><area shape="rect" id="node7" href="group__math__algebra__int.html#gaf2f61a27841c68cefbd27a8614fcd90e" title="int32_eulers_of_rmat" alt="" coords="1440,625,1597,652"/><area shape="rect" id="node8" href="group__math__algebra__int.html#ga02ccc32cb7b533e0c7cf18140fb7104e" title="int32_eulers_of_quat" alt="" coords="1441,574,1596,601"/><area shape="rect" id="node10" href="orange__avoider_8c.html#a4e5570532574857283bde2f3437c5375" title="calculateForwards" alt="" coords="545,448,681,474"/><area shape="rect" id="node23" href="orange__avoider_8c.html#ab9e9ec09110cd9cd8a03cb04532db57a" title="moveWaypoint" alt="" coords="555,397,670,424"/><area shape="rect" id="node11" href="group__state__position.html#gaf326b26862d91ded4ee4e856a511df47" title="Get position in local ENU coordinates (int). " alt="" coords="761,448,923,474"/><area shape="rect" id="node12" href="group__state__position.html#gaf61c3a86bc000852a2d27d5727ceaa91" title="stateCalcPositionEnu_i" alt="" coords="989,448,1156,474"/><area shape="rect" id="node13" href="group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU. " alt="" coords="1449,448,1588,474"/><area shape="rect" id="node15" href="pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title="enu_of_ecef_point_f" alt="" coords="1213,549,1362,576"/><area shape="rect" id="node16" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title="ecef_of_lla_f" alt="" coords="1691,473,1791,500"/><area shape="rect" id="node17" href="group__math__geodetic__int.html#gae42bb4930966f1c362524f95bb5d7d6e" title="Convert a point from LLA to local ENU. " alt="" coords="1224,397,1351,424"/><area shape="rect" id="node20" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="1238,296,1337,322"/><area shape="rect" id="node14" href="group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU. " alt="" coords="1667,346,1815,373"/><area shape="rect" id="node18" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF. " alt="" coords="1469,397,1568,424"/><area shape="rect" id="node19" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title="ecef_of_lla_d" alt="" coords="1689,397,1793,424"/><area shape="rect" id="node21" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="1445,296,1592,322"/><area shape="rect" id="node22" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="1451,128,1587,170"/><area shape="rect" id="node24" href="subsystems_2navigation_2waypoints_8c.html#a6458406c3ff4259882fa0b93991f3c1e" title="Set only local XY coordinates of waypoint without update altitude. " alt="" coords="774,397,910,424"/><area shape="rect" id="node25" href="subsystems_2navigation_2waypoints_8c.html#a10acece8582506367e9e9df3694bf31b" title="update global LLA coordinates from its ENU coordinates " alt="" coords="1002,194,1143,221"/><area shape="rect" id="node26" href="group__math__geodetic__int.html#gaaeff7441301129ca712e828b9b4f474e" title="Convert a local ENU position to ECEF. " alt="" coords="1449,26,1588,53"/><area shape="rect" id="node28" href="group__math__geodetic__int.html#gaea47a32071c2427f895fcb1df32c4e23" title="Convert a ECEF to LLA. " alt="" coords="1238,194,1337,221"/><area shape="rect" id="node27" href="group__math__geodetic__int.html#gaabe6e63048c95afdffdd4a581dc5f2b8" title="Rotate a vector from ENU to ECEF. " alt="" coords="1669,26,1812,53"/><area shape="rect" id="node29" href="pprz__geodetic__float_8c.html#adecd186d51b41b09f0cad928c0d2f68e" title="lla_of_ecef_f" alt="" coords="1469,245,1569,272"/><area shape="rect" id="node30" href="group__math__geodetic__double.html#ga9d3464ccabcd97db9fb4e1c7d25dfe16" title="lla_of_ecef_d" alt="" coords="1467,194,1571,221"/><area shape="rect" id="node33" href="group__state__position.html#ga99473409b740a26c0e2b9a5bd8e9defb" title="Get position in LLA coordinates (int). " alt="" coords="764,190,920,217"/><area shape="rect" id="node38" href="subsystems_2navigation_2waypoints_8c.html#a4f584367219ec09db0e1df24c85e7a1b" title="waypoint_is_global" alt="" coords="772,296,912,322"/><area shape="rect" id="node39" href="subsystems_2navigation_2waypoints_8c.html#a8676ceec12bad6ae1a4b8e829775003e" title="set waypoint latitude/longitude without updating altitude " alt="" coords="769,346,915,373"/><area shape="rect" id="node34" href="group__state__position.html#gad0fedf046f198eace06305e56fc7a0f8" title="Calculate LLA (int) from any other available representation. " alt="" coords="993,140,1153,166"/><area shape="rect" id="node35" href="pprz__geodetic__float_8c.html#a30c2e47ec9a898079c04e8b08496b455" title="lla_of_utm_f" alt="" coords="1238,140,1337,166"/><area shape="rect" id="node37" href="group__math__geodetic__int.html#gaf92579b72a2adb1aaac73fae89553fca" title="Convert a local NED position to ECEF. " alt="" coords="1218,38,1357,65"/><area shape="rect" id="node36" href="pprz__geodetic__float_8c.html#a28b6e05c87f50f1e5290e36407095fb6" title="inverse_isometric_latitude_f" alt="" coords="1419,77,1619,104"/><area shape="rect" id="node40" href="subsystems_2navigation_2waypoints_8c.html#af184581f432d472b608685122f2d944d" title="update local ENU coordinates from its LLA coordinates " alt="" coords="1007,346,1139,373"/><area shape="rect" id="node41" href="group__math__geodetic__int.html#gab462d1e8278e0dd9cbc9ff463cde8f5e" title="Convert a point from LLA to local ENU. " alt="" coords="1220,346,1355,373"/></map>
 </div>
 </p>
 
@@ -571,9 +680,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="orange__avoider_8c_source.html#l00035">35</a> of file <a class="el" href="orange__avoider_8c_source.html">orange_avoider.c</a>.</p>
+<p>Definition at line <a class="el" href="orange__avoider_8c_source.html#l00061">61</a> of file <a class="el" href="orange__avoider_8c_source.html">orange_avoider.c</a>.</p>
 
-<p>Referenced by <a class="el" href="orange__avoider_8c_source.html#l00143">chooseRandomIncrementAvoidance()</a>, and <a class="el" href="orange__avoider_8c_source.html#l00059">orange_avoider_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="orange__avoider_8c_source.html#l00169">chooseRandomIncrementAvoidance()</a>, and <a class="el" href="orange__avoider_8c_source.html#l00085">orange_avoider_periodic()</a>.</p>
 
 </div>
 </div>
@@ -587,9 +696,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="orange__avoider_8c_source.html#l00037">37</a> of file <a class="el" href="orange__avoider_8c_source.html">orange_avoider.c</a>.</p>
+<p>Definition at line <a class="el" href="orange__avoider_8c_source.html#l00063">63</a> of file <a class="el" href="orange__avoider_8c_source.html">orange_avoider.c</a>.</p>
 
-<p>Referenced by <a class="el" href="orange__avoider_8c_source.html#l00059">orange_avoider_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="orange__avoider_8c_source.html#l00085">orange_avoider_periodic()</a>.</p>
 
 </div>
 </div>
@@ -603,9 +712,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="orange__avoider_8c_source.html#l00033">33</a> of file <a class="el" href="orange__avoider_8c_source.html">orange_avoider.c</a>.</p>
+<p>Definition at line <a class="el" href="orange__avoider_8c_source.html#l00059">59</a> of file <a class="el" href="orange__avoider_8c_source.html">orange_avoider.c</a>.</p>
 
-<p>Referenced by <a class="el" href="orange__avoider_8c_source.html#l00059">orange_avoider_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="orange__avoider_8c_source.html#l00085">orange_avoider_periodic()</a>.</p>
 
 </div>
 </div>
@@ -619,9 +728,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="orange__avoider_8c_source.html#l00036">36</a> of file <a class="el" href="orange__avoider_8c_source.html">orange_avoider.c</a>.</p>
+<p>Definition at line <a class="el" href="orange__avoider_8c_source.html#l00062">62</a> of file <a class="el" href="orange__avoider_8c_source.html">orange_avoider.c</a>.</p>
 
-<p>Referenced by <a class="el" href="orange__avoider_8c_source.html#l00059">orange_avoider_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="orange__avoider_8c_source.html#l00085">orange_avoider_periodic()</a>.</p>
 
 </div>
 </div>
@@ -635,9 +744,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="orange__avoider_8c_source.html#l00034">34</a> of file <a class="el" href="orange__avoider_8c_source.html">orange_avoider.c</a>.</p>
+<p>Definition at line <a class="el" href="orange__avoider_8c_source.html#l00060">60</a> of file <a class="el" href="orange__avoider_8c_source.html">orange_avoider.c</a>.</p>
 
-<p>Referenced by <a class="el" href="orange__avoider_8c_source.html#l00059">orange_avoider_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="orange__avoider_8c_source.html#l00085">orange_avoider_periodic()</a>.</p>
 
 </div>
 </div>
@@ -647,7 +756,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_183f1dc71a771a05a9ab5222da140bc3.html">orange_avoider</a></li><li class="navelem"><a class="el" href="orange__avoider_8c.html">orange_avoider.c</a></li>
-    <li class="footer">Generated on Wed Nov 8 2017 10:02:31 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:03:40 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

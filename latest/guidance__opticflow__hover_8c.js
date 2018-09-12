@@ -12,7 +12,7 @@ var guidance__opticflow__hover_8c =
     [ "guidance_h_module_init", "guidance__opticflow__hover_8c.html#ab39ce31e4173de7b9aefa839324ec9a2", null ],
     [ "guidance_h_module_read_rc", "guidance__opticflow__hover_8c.html#a4c33bfc7d07ffb6d33a1af63799da082", null ],
     [ "guidance_h_module_run", "guidance__opticflow__hover_8c.html#a77f05df2acd1da23e187f1f3f5d5a26f", null ],
-    [ "stabilization_opticflow_vel_cb", "guidance__opticflow__hover_8c.html#aef79617b4190e7235eed5f6653a296ad", null ],
+    [ "stabilization_opticflow_vel_cb", "guidance__opticflow__hover_8c.html#a781dbde7c535e9a3c38caeb2026d9ebb", null ],
     [ "opticflow_stab", "guidance__opticflow__hover_8c.html#a20c98e89ac4c2f80fdd841992ec3053c", null ],
     [ "velocity_est_ev", "guidance__opticflow__hover_8c.html#a8bb8c5bcb1317ae899d2fedf92e4e6fb", null ]
 ];

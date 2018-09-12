@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -147,7 +147,7 @@ $(document).ready(function(){initNavTree('max7456_8c_source.html','');});
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#ifdef AP</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#include &quot;subsystems/navigation/nav.h&quot;</span></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="navigation_8h.html">firmwares/rotorcraft/navigation.h</a>&quot;</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="rotorcraft_2navigation_8h.html">firmwares/rotorcraft/navigation.h</a>&quot;</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">// Peripherials</span></div>
@@ -568,7 +568,6 @@ $(document).ready(function(){initNavTree('max7456_8c_source.html','');});
 <div class="ttc" id="group__spi_html_gga52e70c55efc6a9b04903157a0965baacaa4021c68696337695cfdb356866f3b53"><div class="ttname"><a href="group__spi.html#gga52e70c55efc6a9b04903157a0965baacaa4021c68696337695cfdb356866f3b53">SPITransSuccess</a></div><div class="ttdef"><b>Definition:</b> <a href="spi_8h_source.html#l00093">spi.h:93</a></div></div>
 <div class="ttc" id="max7456_8c_html_a9066777e2c60d23d0177a42eab2abdb9"><div class="ttname"><a href="max7456_8c.html#a9066777e2c60d23d0177a42eab2abdb9">osd_str_buf</a></div><div class="ttdeci">char osd_str_buf[OSD_STRING_SIZE]</div><div class="ttdef"><b>Definition:</b> <a href="max7456_8c_source.html#l00064">max7456.c:64</a></div></div>
 <div class="ttc" id="group__spi_html_a8d8c70f4ac840678b944e410e93f779e"><div class="ttname"><a href="group__spi.html#a8d8c70f4ac840678b944e410e93f779e">spi_transaction::cdiv</a></div><div class="ttdeci">enum SPIClockDiv cdiv</div><div class="ttdoc">prescaler of main clock to use as SPI clock </div><div class="ttdef"><b>Definition:</b> <a href="spi_8h_source.html#l00153">spi.h:153</a></div></div>
-<div class="ttc" id="navigation_8h_html"><div class="ttname"><a href="navigation_8h.html">navigation.h</a></div><div class="ttdoc">Rotorcraft navigation functions. </div></div>
 <div class="ttc" id="group__spi_html_afb1b752d52e128cbc20348ef79c5f131"><div class="ttname"><a href="group__spi.html#afb1b752d52e128cbc20348ef79c5f131">spi_transaction::output_length</a></div><div class="ttdeci">uint16_t output_length</div><div class="ttdoc">number of data words to write </div><div class="ttdef"><b>Definition:</b> <a href="spi_8h_source.html#l00146">spi.h:146</a></div></div>
 <div class="ttc" id="max7456_8c_html_a9df37033e964a8027eab3e650e7aea6ea557065ef84f4f0f26c25fcd6daecca8a"><div class="ttname"><a href="max7456_8c.html#a9df37033e964a8027eab3e650e7aea6ea557065ef84f4f0f26c25fcd6daecca8a">OSD_FINISHED</a></div><div class="ttdef"><b>Definition:</b> <a href="max7456_8c_source.html#l00081">max7456.c:81</a></div></div>
 <div class="ttc" id="max7456__regs_8h_html_a765970503223897d73ca1c222222bec6"><div class="ttname"><a href="max7456__regs_8h.html#a765970503223897d73ca1c222222bec6">OSD_BLINK_CHAR</a></div><div class="ttdeci">#define OSD_BLINK_CHAR</div><div class="ttdef"><b>Definition:</b> <a href="max7456__regs_8h_source.html#l00053">max7456_regs.h:53</a></div></div>
@@ -583,7 +582,7 @@ $(document).ready(function(){initNavTree('max7456_8c_source.html','');});
 <div class="ttc" id="max7456_8h_html"><div class="ttname"><a href="max7456_8h.html">max7456.h</a></div><div class="ttdoc">Maxim MAX7456 single-channel monochrome on-screen display driver. </div></div>
 <div class="ttc" id="group__spi_html_structspi__transaction"><div class="ttname"><a href="group__spi.html#structspi__transaction">spi_transaction</a></div><div class="ttdoc">SPI transaction structure. </div><div class="ttdef"><b>Definition:</b> <a href="spi_8h_source.html#l00142">spi.h:142</a></div></div>
 <div class="ttc" id="max7456_8c_html_ac3dd6ed7cc7d01ada4ce3180d50150cd"><div class="ttname"><a href="max7456_8c.html#ac3dd6ed7cc7d01ada4ce3180d50150cd">osd_attributes</a></div><div class="ttdeci">osd_attributes</div><div class="ttdef"><b>Definition:</b> <a href="max7456_8c_source.html#l00084">max7456.c:84</a></div></div>
-<div class="ttc" id="group__spi_html_ga5d383931766cb373ebad0b8bc26d439d"><div class="ttname"><a href="group__spi.html#ga5d383931766cb373ebad0b8bc26d439d">spi_submit</a></div><div class="ttdeci">bool spi_submit(struct spi_periph *p, struct spi_transaction *t)</div><div class="ttdoc">Submit SPI transaction. </div><div class="ttdef"><b>Definition:</b> <a href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00457">spi_arch.c:457</a></div></div>
+<div class="ttc" id="group__spi_html_ga5d383931766cb373ebad0b8bc26d439d"><div class="ttname"><a href="group__spi.html#ga5d383931766cb373ebad0b8bc26d439d">spi_submit</a></div><div class="ttdeci">bool spi_submit(struct spi_periph *p, struct spi_transaction *t)</div><div class="ttdoc">Submit SPI transaction. </div><div class="ttdef"><b>Definition:</b> <a href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00458">spi_arch.c:458</a></div></div>
 <div class="ttc" id="max7456__regs_8h_html_a1f5860407812528a75495ffbf8be60ed"><div class="ttname"><a href="max7456__regs_8h.html#a1f5860407812528a75495ffbf8be60ed">OSD_DMM_REG</a></div><div class="ttdeci">#define OSD_DMM_REG</div><div class="ttdef"><b>Definition:</b> <a href="max7456__regs_8h_source.html#l00036">max7456_regs.h:36</a></div></div>
 <div class="ttc" id="group__spi_html_af804a20f8372631a24aad61be1383307"><div class="ttname"><a href="group__spi.html#af804a20f8372631a24aad61be1383307">spi_transaction::bitorder</a></div><div class="ttdeci">enum SPIBitOrder bitorder</div><div class="ttdoc">MSB/LSB order. </div><div class="ttdef"><b>Definition:</b> <a href="spi_8h_source.html#l00152">spi.h:152</a></div></div>
 <div class="ttc" id="max7456_8c_html_a9df37033e964a8027eab3e650e7aea6ea7fa9ba78dd17378ea9ec7e3aebedaa27"><div class="ttname"><a href="max7456_8c.html#a9df37033e964a8027eab3e650e7aea6ea7fa9ba78dd17378ea9ec7e3aebedaa27">OSD_INIT4</a></div><div class="ttdef"><b>Definition:</b> <a href="max7456_8c_source.html#l00075">max7456.c:75</a></div></div>
@@ -623,6 +622,7 @@ $(document).ready(function(){initNavTree('max7456_8c_source.html','');});
 <div class="ttc" id="max7456_8c_html_a9df37033e964a8027eab3e650e7aea6ea8aba0c2d23308a2639371e18ddf12dbe"><div class="ttname"><a href="max7456_8c.html#a9df37033e964a8027eab3e650e7aea6ea8aba0c2d23308a2639371e18ddf12dbe">OSD_IDLE</a></div><div class="ttdef"><b>Definition:</b> <a href="max7456_8c_source.html#l00077">max7456.c:77</a></div></div>
 <div class="ttc" id="max7456_8c_html_a1a2e7353726577174986f047eb2da00a"><div class="ttname"><a href="max7456_8c.html#a1a2e7353726577174986f047eb2da00a">max7456_osd_status</a></div><div class="ttdeci">uint8_t max7456_osd_status</div><div class="ttdef"><b>Definition:</b> <a href="max7456_8c_source.html#l00089">max7456.c:89</a></div></div>
 <div class="ttc" id="autopilot_8h_html"><div class="ttname"><a href="autopilot_8h.html">autopilot.h</a></div><div class="ttdoc">Core autopilot interface common to all firmwares. </div></div>
+<div class="ttc" id="rotorcraft_2navigation_8h_html"><div class="ttname"><a href="rotorcraft_2navigation_8h.html">navigation.h</a></div><div class="ttdoc">Rotorcraft navigation functions. </div></div>
 <div class="ttc" id="max7456__regs_8h_html_afae9adbd38b263fcda2f9d4b38d5e15d"><div class="ttname"><a href="max7456__regs_8h.html#afae9adbd38b263fcda2f9d4b38d5e15d">OSD_INVERT_PIXELS</a></div><div class="ttdeci">#define OSD_INVERT_PIXELS</div><div class="ttdef"><b>Definition:</b> <a href="max7456__regs_8h_source.html#l00054">max7456_regs.h:54</a></div></div>
 <div class="ttc" id="max7456_8c_html_a2b5efe546809c5c4b7d6470ba879d9fa"><div class="ttname"><a href="max7456_8c.html#a2b5efe546809c5c4b7d6470ba879d9fa">osd_put_s</a></div><div class="ttdeci">static void osd_put_s(char *string, uint8_t attributes, uint8_t char_nb, uint8_t row, uint8_t column)</div><div class="ttdef"><b>Definition:</b> <a href="max7456_8c_source.html#l00318">max7456.c:318</a></div></div>
 <div class="ttc" id="max7456__regs_8h_html_afb4c96fca740fe46f8a002ac432a93a2"><div class="ttname"><a href="max7456__regs_8h.html#afb4c96fca740fe46f8a002ac432a93a2">OSD_VIDEO_MODE_PAL</a></div><div class="ttdeci">#define OSD_VIDEO_MODE_PAL</div><div class="ttdef"><b>Definition:</b> <a href="max7456__regs_8h_source.html#l00045">max7456_regs.h:45</a></div></div>
@@ -661,7 +661,7 @@ $(document).ready(function(){initNavTree('max7456_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_ba28e41237872f6268f6dbae3db26982.html">display</a></li><li class="navelem"><a class="el" href="max7456_8c.html">max7456.c</a></li>
-    <li class="footer">Generated on Wed Nov 8 2017 10:01:40 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:02:46 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

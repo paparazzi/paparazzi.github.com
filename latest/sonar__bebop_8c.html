@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -156,9 +156,15 @@ Macros</h2></td></tr>
 <tr class="memitem:a6017153886b228ceea828e5d7333a20b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sonar__bebop_8c.html#a6017153886b228ceea828e5d7333a20b">SONAR_BEBOP_TRANSITION_COUNT</a>&#160;&#160;&#160;7</td></tr>
 <tr class="memdesc:a6017153886b228ceea828e5d7333a20b"><td class="mdescLeft">&#160;</td><td class="mdescRight">SONAR_BEBOP_TRANSITION_COUNT number of samples before switching mode.  <a href="#a6017153886b228ceea828e5d7333a20b">More...</a><br /></td></tr>
 <tr class="separator:a6017153886b228ceea828e5d7333a20b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad38ba37e0445c0f57ef79e1c154ca7a3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sonar__bebop_8c.html#ad38ba37e0445c0f57ef79e1c154ca7a3">SONAR_BEBOP_PEAK_THRESHOLD</a>&#160;&#160;&#160;250</td></tr>
+<tr class="memitem:ad38ba37e0445c0f57ef79e1c154ca7a3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sonar__bebop_8c.html#ad38ba37e0445c0f57ef79e1c154ca7a3">SONAR_BEBOP_PEAK_THRESHOLD</a>&#160;&#160;&#160;100</td></tr>
 <tr class="memdesc:ad38ba37e0445c0f57ef79e1c154ca7a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">SONAR_BEBOP_PEAK_THRESHOLD minimum samples from broadcast stop.  <a href="#ad38ba37e0445c0f57ef79e1c154ca7a3">More...</a><br /></td></tr>
 <tr class="separator:ad38ba37e0445c0f57ef79e1c154ca7a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e6595e3723dd6cb79c4c5d658493c7e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sonar__bebop_8c.html#a5e6595e3723dd6cb79c4c5d658493c7e">SONAR_BEBOP_MIN_PEAK_VAL</a>&#160;&#160;&#160;1024</td></tr>
+<tr class="memdesc:a5e6595e3723dd6cb79c4c5d658493c7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">SONAR_BEBOP_MIN_PEAK_VAL minimum adc value of reflected peak that will be cosidered.  <a href="#a5e6595e3723dd6cb79c4c5d658493c7e">More...</a><br /></td></tr>
+<tr class="separator:a5e6595e3723dd6cb79c4c5d658493c7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ec0d211210689df81801b49607aef27"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sonar__bebop_8c.html#a8ec0d211210689df81801b49607aef27">SONAR_BEBOP_MAX_TRANS_TIME</a>&#160;&#160;&#160;270</td></tr>
+<tr class="memdesc:a8ec0d211210689df81801b49607aef27"><td class="mdescLeft">&#160;</td><td class="mdescRight">SONAR_BEBOP_MAX_TRANS_TIME maximum time for a reflection to travel and return in the adc measurement window.  <a href="#a8ec0d211210689df81801b49607aef27">More...</a><br /></td></tr>
+<tr class="separator:a8ec0d211210689df81801b49607aef27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -207,7 +213,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="sonar__bebop_8c_source.html#l00060">60</a> of file <a class="el" href="sonar__bebop_8c_source.html">sonar_bebop.c</a>.</p>
 
-<p>Referenced by <a class="el" href="sonar__bebop_8c_source.html#l00124">sonar_bebop_read()</a>.</p>
+<p>Referenced by <a class="el" href="sonar__bebop_8c_source.html#l00129">sonar_bebop_read()</a>.</p>
 
 </div>
 </div>
@@ -225,7 +231,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="sonar__bebop_8c_source.html#l00057">57</a> of file <a class="el" href="sonar__bebop_8c_source.html">sonar_bebop.c</a>.</p>
 
-<p>Referenced by <a class="el" href="sonar__bebop_8c_source.html#l00124">sonar_bebop_read()</a>.</p>
+<p>Referenced by <a class="el" href="sonar__bebop_8c_source.html#l00129">sonar_bebop_read()</a>.</p>
 
 </div>
 </div>
@@ -243,7 +249,43 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="sonar__bebop_8c_source.html#l00054">54</a> of file <a class="el" href="sonar__bebop_8c_source.html">sonar_bebop.c</a>.</p>
 
-<p>Referenced by <a class="el" href="sonar__bebop_8c_source.html#l00124">sonar_bebop_read()</a>.</p>
+<p>Referenced by <a class="el" href="sonar__bebop_8c_source.html#l00129">sonar_bebop_read()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8ec0d211210689df81801b49607aef27"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SONAR_BEBOP_MAX_TRANS_TIME&#160;&#160;&#160;270</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SONAR_BEBOP_MAX_TRANS_TIME maximum time for a reflection to travel and return in the adc measurement window. </p>
+
+<p>Definition at line <a class="el" href="sonar__bebop_8c_source.html#l00086">86</a> of file <a class="el" href="sonar__bebop_8c_source.html">sonar_bebop.c</a>.</p>
+
+<p>Referenced by <a class="el" href="sonar__bebop_8c_source.html#l00129">sonar_bebop_read()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5e6595e3723dd6cb79c4c5d658493c7e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SONAR_BEBOP_MIN_PEAK_VAL&#160;&#160;&#160;1024</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SONAR_BEBOP_MIN_PEAK_VAL minimum adc value of reflected peak that will be cosidered. </p>
+
+<p>Definition at line <a class="el" href="sonar__bebop_8c_source.html#l00083">83</a> of file <a class="el" href="sonar__bebop_8c_source.html">sonar_bebop.c</a>.</p>
+
+<p>Referenced by <a class="el" href="sonar__bebop_8c_source.html#l00129">sonar_bebop_read()</a>.</p>
 
 </div>
 </div>
@@ -252,7 +294,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define SONAR_BEBOP_PEAK_THRESHOLD&#160;&#160;&#160;250</td>
+          <td class="memname">#define SONAR_BEBOP_PEAK_THRESHOLD&#160;&#160;&#160;100</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -261,7 +303,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="sonar__bebop_8c_source.html#l00080">80</a> of file <a class="el" href="sonar__bebop_8c_source.html">sonar_bebop.c</a>.</p>
 
-<p>Referenced by <a class="el" href="sonar__bebop_8c_source.html#l00124">sonar_bebop_read()</a>.</p>
+<p>Referenced by <a class="el" href="sonar__bebop_8c_source.html#l00129">sonar_bebop_read()</a>.</p>
 
 </div>
 </div>
@@ -279,7 +321,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="sonar__bebop_8c_source.html#l00075">75</a> of file <a class="el" href="sonar__bebop_8c_source.html">sonar_bebop.c</a>.</p>
 
-<p>Referenced by <a class="el" href="sonar__bebop_8c_source.html#l00124">sonar_bebop_read()</a>.</p>
+<p>Referenced by <a class="el" href="sonar__bebop_8c_source.html#l00129">sonar_bebop_read()</a>.</p>
 
 </div>
 </div>
@@ -297,7 +339,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="sonar__bebop_8c_source.html#l00069">69</a> of file <a class="el" href="sonar__bebop_8c_source.html">sonar_bebop.c</a>.</p>
 
-<p>Referenced by <a class="el" href="sonar__bebop_8c_source.html#l00124">sonar_bebop_read()</a>.</p>
+<p>Referenced by <a class="el" href="sonar__bebop_8c_source.html#l00129">sonar_bebop_read()</a>.</p>
 
 </div>
 </div>
@@ -315,7 +357,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="sonar__bebop_8c_source.html#l00072">72</a> of file <a class="el" href="sonar__bebop_8c_source.html">sonar_bebop.c</a>.</p>
 
-<p>Referenced by <a class="el" href="sonar__bebop_8c_source.html#l00124">sonar_bebop_read()</a>.</p>
+<p>Referenced by <a class="el" href="sonar__bebop_8c_source.html#l00129">sonar_bebop_read()</a>.</p>
 
 </div>
 </div>
@@ -334,9 +376,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sonar__bebop_8c_source.html#l00097">97</a> of file <a class="el" href="sonar__bebop_8c_source.html">sonar_bebop.c</a>.</p>
+<p>Definition at line <a class="el" href="sonar__bebop_8c_source.html#l00100">100</a> of file <a class="el" href="sonar__bebop_8c_source.html">sonar_bebop.c</a>.</p>
 
-<p>References <a class="el" href="spi_8h_source.html#l00151">spi_transaction::dss</a>, <a class="el" href="median__filter_8h_source.html#l00156">init_median_filter_f()</a>, <a class="el" href="spi_8h_source.html#l00143">spi_transaction::input_buf</a>, <a class="el" href="spi_8h_source.html#l00145">spi_transaction::input_length</a>, <a class="el" href="sonar__bebop_8h_source.html#l00033">SonarBebop::meas</a>, <a class="el" href="sonar__bebop_8c_source.html#l00066">mode</a>, <a class="el" href="sonar__bebop_8h_source.html#l00034">SonarBebop::offset</a>, <a class="el" href="spi_8h_source.html#l00144">spi_transaction::output_buf</a>, <a class="el" href="spi_8h_source.html#l00146">spi_transaction::output_length</a>, <a class="el" href="sonar__bebop_8c_source.html#l00077">pulse_transition_counter</a>, <a class="el" href="spi_8h_source.html#l00148">spi_transaction::select</a>, <a class="el" href="sonar__bebop_8c_source.html#l00089">sonar_bebop</a>, <a class="el" href="sonar__bebop_8c_source.html#l00124">sonar_bebop_read()</a>, <a class="el" href="sonar__bebop_8c_source.html#l00086">sonar_bebop_spi_d</a>, <a class="el" href="sonar__bebop_8c_source.html#l00091">sonar_bebop_spi_t</a>, <a class="el" href="sonar__bebop_8c_source.html#l00045">sonar_filt</a>, <a class="el" href="spi_8h_source.html#l00084">SPIDss8bit</a>, <a class="el" href="spi_8h_source.html#l00057">SPISelectUnselect</a>, <a class="el" href="spi_8h_source.html#l00095">SPITransDone</a>, and <a class="el" href="spi_8h_source.html#l00156">spi_transaction::status</a>.</p>
+<p>References <a class="el" href="spi_8h_source.html#l00151">spi_transaction::dss</a>, <a class="el" href="median__filter_8h_source.html#l00148">init_median_filter_f()</a>, <a class="el" href="spi_8h_source.html#l00143">spi_transaction::input_buf</a>, <a class="el" href="spi_8h_source.html#l00145">spi_transaction::input_length</a>, <a class="el" href="sonar__bebop_8h_source.html#l00033">SonarBebop::meas</a>, <a class="el" href="sonar__bebop_8c_source.html#l00066">mode</a>, <a class="el" href="sonar__bebop_8h_source.html#l00034">SonarBebop::offset</a>, <a class="el" href="spi_8h_source.html#l00144">spi_transaction::output_buf</a>, <a class="el" href="spi_8h_source.html#l00146">spi_transaction::output_length</a>, <a class="el" href="sonar__bebop_8c_source.html#l00077">pulse_transition_counter</a>, <a class="el" href="spi_8h_source.html#l00148">spi_transaction::select</a>, <a class="el" href="sonar__bebop_8c_source.html#l00095">sonar_bebop</a>, <a class="el" href="sonar__bebop_8c_source.html#l00129">sonar_bebop_read()</a>, <a class="el" href="sonar__bebop_8c_source.html#l00092">sonar_bebop_spi_d</a>, <a class="el" href="sonar__bebop_8c_source.html#l00097">sonar_bebop_spi_t</a>, <a class="el" href="sonar__bebop_8c_source.html#l00045">sonar_filt</a>, <a class="el" href="spi_8h_source.html#l00084">SPIDss8bit</a>, <a class="el" href="spi_8h_source.html#l00057">SPISelectUnselect</a>, <a class="el" href="spi_8h_source.html#l00095">SPITransDone</a>, and <a class="el" href="spi_8h_source.html#l00156">spi_transaction::status</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -345,7 +387,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="sonar__bebop_8c_a23dcc242803b0762d120696ddd57e98f_cgraph.png" border="0" usemap="#sonar__bebop_8c_a23dcc242803b0762d120696ddd57e98f_cgraph" alt=""/></div>
 <map name="sonar__bebop_8c_a23dcc242803b0762d120696ddd57e98f_cgraph" id="sonar__bebop_8c_a23dcc242803b0762d120696ddd57e98f_cgraph">
-<area shape="rect" id="node2" href="median__filter_8h.html#a27267fc98e5ca03bd559af7cc214f41b" title="init_median_filter_f" alt="" coords="184,56,327,83"/><area shape="rect" id="node3" href="sonar__bebop_8c.html#a523295c3c567273e2db300652a282f1f" title="sonar_bebop_read Read ADC value to update sonar measurement " alt="" coords="185,107,326,133"/><area shape="rect" id="node4" href="linux_2mcu__periph_2adc__arch_8c.html#ab376b08d349863388fb0b17cb14c8caa" title="Start or stop the ADC readings. " alt="" coords="411,5,506,32"/><area shape="rect" id="node6" href="group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction. " alt="" coords="413,56,504,83"/><area shape="rect" id="node7" href="linux_2mcu__periph_2adc__arch_8c.html#a20ceeab2fc8a81cfb9ec2261a8b57234" title="Read the ADC buffer from the driver. " alt="" coords="418,107,499,133"/><area shape="rect" id="node8" href="median__filter_8h.html#a3f267a32fda5629b6303a915e75bc5f1" title="update_median_filter_f" alt="" coords="375,157,543,184"/><area shape="rect" id="node10" href="group__state__position.html#ga545d479db45e1a9711e59736b6d1309b" title="Get position in local ENU coordinates (float). " alt="" coords="377,208,540,235"/><area shape="rect" id="node5" href="linux_2mcu__periph_2adc__arch_8c.html#ad3e249549a50a2d6c16d1bb1ab3be7e9" title="Write an int to a sysfs file. " alt="" coords="617,5,731,32"/><area shape="rect" id="node9" href="median__filter_8h.html#a67ad7878d066a18745671a3f3bb2fb92" title="get_median_filter_f" alt="" coords="602,157,746,184"/><area shape="rect" id="node11" href="group__state__position.html#ga718066acd9581365ca5c2aacb29130fd" title="stateCalcPositionEnu_f" alt="" coords="591,208,757,235"/><area shape="rect" id="node12" href="pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title="enu_of_ecef_point_f" alt="" coords="992,157,1141,184"/><area shape="rect" id="node13" href="group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU. " alt="" coords="805,107,944,133"/><area shape="rect" id="node15" href="pprz__geodetic__float_8c.html#ab8d5cb7292ea74802e7a94e265c0703a" title="enu_of_lla_point_f" alt="" coords="807,208,943,235"/><area shape="rect" id="node17" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF. " alt="" coords="825,259,924,285"/><area shape="rect" id="node19" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="825,309,924,336"/><area shape="rect" id="node14" href="group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU. " alt="" coords="993,107,1141,133"/><area shape="rect" id="node16" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title="ecef_of_lla_f" alt="" coords="1017,208,1117,235"/><area shape="rect" id="node18" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title="ecef_of_lla_d" alt="" coords="1015,259,1119,285"/><area shape="rect" id="node20" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="993,309,1140,336"/><area shape="rect" id="node21" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="999,361,1135,402"/></map>
+<area shape="rect" id="node2" href="median__filter_8h.html#a96f8e995febe47e892b65f0e6ea0bf3c" title="init_median_filter_f" alt="" coords="184,56,327,83"/><area shape="rect" id="node3" href="sonar__bebop_8c.html#a523295c3c567273e2db300652a282f1f" title="sonar_bebop_read Read ADC value to update sonar measurement " alt="" coords="185,107,326,133"/><area shape="rect" id="node4" href="linux_2mcu__periph_2adc__arch_8c.html#ab376b08d349863388fb0b17cb14c8caa" title="Start or stop the ADC readings. " alt="" coords="411,5,506,32"/><area shape="rect" id="node6" href="group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction. " alt="" coords="413,56,504,83"/><area shape="rect" id="node7" href="linux_2mcu__periph_2adc__arch_8c.html#a20ceeab2fc8a81cfb9ec2261a8b57234" title="Read the ADC buffer from the driver. " alt="" coords="418,107,499,133"/><area shape="rect" id="node8" href="median__filter_8h.html#a299781c28e551a49077251f79ddf6487" title="update_median_filter_f" alt="" coords="375,157,543,184"/><area shape="rect" id="node10" href="group__state__position.html#ga545d479db45e1a9711e59736b6d1309b" title="Get position in local ENU coordinates (float). " alt="" coords="377,208,540,235"/><area shape="rect" id="node5" href="linux_2mcu__periph_2adc__arch_8c.html#ad3e249549a50a2d6c16d1bb1ab3be7e9" title="Write an int to a sysfs file. " alt="" coords="617,5,731,32"/><area shape="rect" id="node9" href="median__filter_8h.html#ac22bc67043369c2e3322fbcbbe6b7b3f" title="get_median_filter_f" alt="" coords="602,157,746,184"/><area shape="rect" id="node11" href="group__state__position.html#ga718066acd9581365ca5c2aacb29130fd" title="stateCalcPositionEnu_f" alt="" coords="591,208,757,235"/><area shape="rect" id="node12" href="pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title="enu_of_ecef_point_f" alt="" coords="992,157,1141,184"/><area shape="rect" id="node13" href="group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU. " alt="" coords="805,107,944,133"/><area shape="rect" id="node15" href="pprz__geodetic__float_8c.html#ab8d5cb7292ea74802e7a94e265c0703a" title="enu_of_lla_point_f" alt="" coords="807,208,943,235"/><area shape="rect" id="node17" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF. " alt="" coords="825,259,924,285"/><area shape="rect" id="node19" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="825,309,924,336"/><area shape="rect" id="node14" href="group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU. " alt="" coords="993,107,1141,133"/><area shape="rect" id="node16" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title="ecef_of_lla_f" alt="" coords="1017,208,1117,235"/><area shape="rect" id="node18" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title="ecef_of_lla_d" alt="" coords="1015,259,1119,285"/><area shape="rect" id="node20" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="993,309,1140,336"/><area shape="rect" id="node21" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="999,361,1135,402"/></map>
 </div>
 </p>
 
@@ -367,11 +409,11 @@ Variables</h2></td></tr>
 
 <p>sonar_bebop_read Read ADC value to update sonar measurement </p>
 
-<p>Definition at line <a class="el" href="sonar__bebop_8c_source.html#l00124">124</a> of file <a class="el" href="sonar__bebop_8c_source.html">sonar_bebop.c</a>.</p>
+<p>Definition at line <a class="el" href="sonar__bebop_8c_source.html#l00129">129</a> of file <a class="el" href="sonar__bebop_8c_source.html">sonar_bebop.c</a>.</p>
 
-<p>References <a class="el" href="sonar__bebop_8c_source.html#l00120">adc_buffer</a>, <a class="el" href="linux_2mcu__periph_2adc__arch_8c_source.html#l00101">adc_enable()</a>, <a class="el" href="linux_2mcu__periph_2adc__arch_8c_source.html#l00113">adc_read()</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00095">AGL_SONAR_ADC_ID</a>, <a class="el" href="downlink_8h_source.html#l00042">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00046">DefaultDevice</a>, <a class="el" href="sonar__bebop_8h_source.html#l00035">SonarBebop::distance</a>, <a class="el" href="sonar__bebop_8h_source.html#l00033">SonarBebop::meas</a>, <a class="el" href="sonar__bebop_8c_source.html#l00066">mode</a>, <a class="el" href="spi_8h_source.html#l00144">spi_transaction::output_buf</a>, <a class="el" href="sonar__bebop_8c_source.html#l00077">pulse_transition_counter</a>, <a class="el" href="sonar__bebop_8c_source.html#l00089">sonar_bebop</a>, <a class="el" href="sonar__bebop_8c_source.html#l00060">SONAR_BEBOP_ADC_BUFFER_SIZE</a>, <a class="el" href="sonar__bebop_8c_source.html#l00057">SONAR_BEBOP_ADC_MAX_VALUE</a>, <a class="el" href="sonar__bebop_8c_source.html#l00054">SONAR_BEBOP_INX_DIFF_TO_DIST</a>, <a class="el" href="sonar__bebop_8c_source.html#l00080">SONAR_BEBOP_PEAK_THRESHOLD</a>, <a class="el" href="sonar__bebop_8c_source.html#l00086">sonar_bebop_spi_d</a>, <a class="el" href="sonar__bebop_8c_source.html#l00091">sonar_bebop_spi_t</a>, <a class="el" href="sonar__bebop_8c_source.html#l00075">SONAR_BEBOP_TRANSITION_COUNT</a>, <a class="el" href="sonar__bebop_8c_source.html#l00069">SONAR_BEBOP_TRANSITION_HIGH_TO_LOW</a>, <a class="el" href="sonar__bebop_8c_source.html#l00072">SONAR_BEBOP_TRANSITION_LOW_TO_HIGH</a>, <a class="el" href="sonar__bebop_8c_source.html#l00045">sonar_filt</a>, <a class="el" href="spi_8c_source.html#l00035">spi0</a>, <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00457">spi_submit()</a>, <a class="el" href="spi_8h_source.html#l00095">SPITransDone</a>, <a class="el" href="spi_8h_source.html#l00093">SPITransSuccess</a>, <a class="el" href="state_8h_source.html#l00719">stateGetPositionEnu_f()</a>, <a class="el" href="spi_8h_source.html#l00156">spi_transaction::status</a>, <a class="el" href="median__filter_8h_source.html#l00173">update_median_filter_f()</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00075">EnuCoor_f::z</a>.</p>
+<p>References <a class="el" href="sonar__bebop_8c_source.html#l00125">adc_buffer</a>, <a class="el" href="linux_2mcu__periph_2adc__arch_8c_source.html#l00101">adc_enable()</a>, <a class="el" href="linux_2mcu__periph_2adc__arch_8c_source.html#l00113">adc_read()</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00121">AGL_SONAR_ADC_ID</a>, <a class="el" href="downlink_8h_source.html#l00042">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00046">DefaultDevice</a>, <a class="el" href="sonar__bebop_8h_source.html#l00035">SonarBebop::distance</a>, <a class="el" href="sonar__bebop_8h_source.html#l00033">SonarBebop::meas</a>, <a class="el" href="sonar__bebop_8c_source.html#l00066">mode</a>, <a class="el" href="spi_8h_source.html#l00144">spi_transaction::output_buf</a>, <a class="el" href="sonar__bebop_8c_source.html#l00077">pulse_transition_counter</a>, <a class="el" href="sonar__bebop_8c_source.html#l00095">sonar_bebop</a>, <a class="el" href="sonar__bebop_8c_source.html#l00060">SONAR_BEBOP_ADC_BUFFER_SIZE</a>, <a class="el" href="sonar__bebop_8c_source.html#l00057">SONAR_BEBOP_ADC_MAX_VALUE</a>, <a class="el" href="sonar__bebop_8c_source.html#l00054">SONAR_BEBOP_INX_DIFF_TO_DIST</a>, <a class="el" href="sonar__bebop_8c_source.html#l00086">SONAR_BEBOP_MAX_TRANS_TIME</a>, <a class="el" href="sonar__bebop_8c_source.html#l00083">SONAR_BEBOP_MIN_PEAK_VAL</a>, <a class="el" href="sonar__bebop_8c_source.html#l00080">SONAR_BEBOP_PEAK_THRESHOLD</a>, <a class="el" href="sonar__bebop_8c_source.html#l00092">sonar_bebop_spi_d</a>, <a class="el" href="sonar__bebop_8c_source.html#l00097">sonar_bebop_spi_t</a>, <a class="el" href="sonar__bebop_8c_source.html#l00075">SONAR_BEBOP_TRANSITION_COUNT</a>, <a class="el" href="sonar__bebop_8c_source.html#l00069">SONAR_BEBOP_TRANSITION_HIGH_TO_LOW</a>, <a class="el" href="sonar__bebop_8c_source.html#l00072">SONAR_BEBOP_TRANSITION_LOW_TO_HIGH</a>, <a class="el" href="sonar__bebop_8c_source.html#l00045">sonar_filt</a>, <a class="el" href="spi_8c_source.html#l00035">spi0</a>, <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00458">spi_submit()</a>, <a class="el" href="spi_8h_source.html#l00095">SPITransDone</a>, <a class="el" href="spi_8h_source.html#l00093">SPITransSuccess</a>, <a class="el" href="state_8h_source.html#l00719">stateGetPositionEnu_f()</a>, <a class="el" href="spi_8h_source.html#l00156">spi_transaction::status</a>, <a class="el" href="median__filter_8h_source.html#l00175">update_median_filter_f()</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00075">EnuCoor_f::z</a>.</p>
 
-<p>Referenced by <a class="el" href="sonar__bebop_8c_source.html#l00097">sonar_bebop_init()</a>.</p>
+<p>Referenced by <a class="el" href="sonar__bebop_8c_source.html#l00100">sonar_bebop_init()</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -380,7 +422,7 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="sonar__bebop_8c_a523295c3c567273e2db300652a282f1f_cgraph.png" border="0" usemap="#sonar__bebop_8c_a523295c3c567273e2db300652a282f1f_cgraph" alt=""/></div>
 <map name="sonar__bebop_8c_a523295c3c567273e2db300652a282f1f_cgraph" id="sonar__bebop_8c_a523295c3c567273e2db300652a282f1f_cgraph">
-<area shape="rect" id="node2" href="linux_2mcu__periph_2adc__arch_8c.html#ab376b08d349863388fb0b17cb14c8caa" title="Start or stop the ADC readings. " alt="" coords="231,5,326,32"/><area shape="rect" id="node4" href="linux_2mcu__periph_2adc__arch_8c.html#a20ceeab2fc8a81cfb9ec2261a8b57234" title="Read the ADC buffer from the driver. " alt="" coords="238,56,319,83"/><area shape="rect" id="node5" href="group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction. " alt="" coords="233,107,324,133"/><area shape="rect" id="node6" href="group__state__position.html#ga545d479db45e1a9711e59736b6d1309b" title="Get position in local ENU coordinates (float). " alt="" coords="197,157,360,184"/><area shape="rect" id="node18" href="median__filter_8h.html#a3f267a32fda5629b6303a915e75bc5f1" title="update_median_filter_f" alt="" coords="195,208,363,235"/><area shape="rect" id="node3" href="linux_2mcu__periph_2adc__arch_8c.html#ad3e249549a50a2d6c16d1bb1ab3be7e9" title="Write an int to a sysfs file. " alt="" coords="437,5,551,32"/><area shape="rect" id="node7" href="group__state__position.html#ga718066acd9581365ca5c2aacb29130fd" title="stateCalcPositionEnu_f" alt="" coords="411,157,577,184"/><area shape="rect" id="node8" href="pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title="enu_of_ecef_point_f" alt="" coords="812,107,961,133"/><area shape="rect" id="node9" href="group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU. " alt="" coords="625,56,764,83"/><area shape="rect" id="node11" href="pprz__geodetic__float_8c.html#ab8d5cb7292ea74802e7a94e265c0703a" title="enu_of_lla_point_f" alt="" coords="627,157,763,184"/><area shape="rect" id="node13" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF. " alt="" coords="645,208,744,235"/><area shape="rect" id="node15" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="645,259,744,285"/><area shape="rect" id="node10" href="group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU. " alt="" coords="813,56,961,83"/><area shape="rect" id="node12" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title="ecef_of_lla_f" alt="" coords="837,157,937,184"/><area shape="rect" id="node14" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title="ecef_of_lla_d" alt="" coords="835,208,939,235"/><area shape="rect" id="node16" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="813,259,960,285"/><area shape="rect" id="node17" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="819,310,955,351"/><area shape="rect" id="node19" href="median__filter_8h.html#a67ad7878d066a18745671a3f3bb2fb92" title="get_median_filter_f" alt="" coords="422,208,566,235"/></map>
+<area shape="rect" id="node2" href="linux_2mcu__periph_2adc__arch_8c.html#ab376b08d349863388fb0b17cb14c8caa" title="Start or stop the ADC readings. " alt="" coords="231,5,326,32"/><area shape="rect" id="node4" href="linux_2mcu__periph_2adc__arch_8c.html#a20ceeab2fc8a81cfb9ec2261a8b57234" title="Read the ADC buffer from the driver. " alt="" coords="238,56,319,83"/><area shape="rect" id="node5" href="group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction. " alt="" coords="233,107,324,133"/><area shape="rect" id="node6" href="group__state__position.html#ga545d479db45e1a9711e59736b6d1309b" title="Get position in local ENU coordinates (float). " alt="" coords="197,157,360,184"/><area shape="rect" id="node18" href="median__filter_8h.html#a299781c28e551a49077251f79ddf6487" title="update_median_filter_f" alt="" coords="195,208,363,235"/><area shape="rect" id="node3" href="linux_2mcu__periph_2adc__arch_8c.html#ad3e249549a50a2d6c16d1bb1ab3be7e9" title="Write an int to a sysfs file. " alt="" coords="437,5,551,32"/><area shape="rect" id="node7" href="group__state__position.html#ga718066acd9581365ca5c2aacb29130fd" title="stateCalcPositionEnu_f" alt="" coords="411,157,577,184"/><area shape="rect" id="node8" href="pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title="enu_of_ecef_point_f" alt="" coords="812,107,961,133"/><area shape="rect" id="node9" href="group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU. " alt="" coords="625,56,764,83"/><area shape="rect" id="node11" href="pprz__geodetic__float_8c.html#ab8d5cb7292ea74802e7a94e265c0703a" title="enu_of_lla_point_f" alt="" coords="627,157,763,184"/><area shape="rect" id="node13" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF. " alt="" coords="645,208,744,235"/><area shape="rect" id="node15" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="645,259,744,285"/><area shape="rect" id="node10" href="group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU. " alt="" coords="813,56,961,83"/><area shape="rect" id="node12" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title="ecef_of_lla_f" alt="" coords="837,157,937,184"/><area shape="rect" id="node14" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title="ecef_of_lla_d" alt="" coords="835,208,939,235"/><area shape="rect" id="node16" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="813,259,960,285"/><area shape="rect" id="node17" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="819,310,955,351"/><area shape="rect" id="node19" href="median__filter_8h.html#ac22bc67043369c2e3322fbcbbe6b7b3f" title="get_median_filter_f" alt="" coords="422,208,566,235"/></map>
 </div>
 </p>
 
@@ -408,9 +450,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sonar__bebop_8c_source.html#l00120">120</a> of file <a class="el" href="sonar__bebop_8c_source.html">sonar_bebop.c</a>.</p>
+<p>Definition at line <a class="el" href="sonar__bebop_8c_source.html#l00125">125</a> of file <a class="el" href="sonar__bebop_8c_source.html">sonar_bebop.c</a>.</p>
 
-<p>Referenced by <a class="el" href="sonar__bebop_8c_source.html#l00124">sonar_bebop_read()</a>.</p>
+<p>Referenced by <a class="el" href="sonar__bebop_8c_source.html#l00129">sonar_bebop_read()</a>.</p>
 
 </div>
 </div>
@@ -436,7 +478,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="sonar__bebop_8c_source.html#l00066">66</a> of file <a class="el" href="sonar__bebop_8c_source.html">sonar_bebop.c</a>.</p>
 
-<p>Referenced by <a class="el" href="sim__i2c__cam__ctrl_8c_source.html#l00054">atmega_i2c_cam_ctrl_send()</a>, <a class="el" href="dc_8c_source.html#l00139">dc_info()</a>, <a class="el" href="mavlink_8c_source.html#l00222">mavlink_common_message_handler()</a>, <a class="el" href="subsystems_2radio__control_2rc__datalink_8c_source.html#l00040">parse_rc_3ch_datalink()</a>, <a class="el" href="formation_8h_source.html#l00056">parseFormationSlot()</a>, <a class="el" href="telemetry_8c_source.html#l00078">periodic_telemetry_err_report()</a>, <a class="el" href="rotorcraft__cam_8c_source.html#l00097">rotorcraft_cam_set_mode()</a>, <a class="el" href="sdio__arch_8c_source.html#l00048">sdio_connect()</a>, <a class="el" href="sonar__bebop_8c_source.html#l00097">sonar_bebop_init()</a>, <a class="el" href="sonar__bebop_8c_source.html#l00124">sonar_bebop_read()</a>, <a class="el" href="throttle__curve_8c_source.html#l00053">throttle_curve_run()</a>, and <a class="el" href="stm32_2mcu__periph_2uart__arch_8c_source.html#l00092">uart_periph_set_mode()</a>.</p>
+<p>Referenced by <a class="el" href="sim__i2c__cam__ctrl_8c_source.html#l00054">atmega_i2c_cam_ctrl_send()</a>, <a class="el" href="dc_8c_source.html#l00158">dc_info()</a>, <a class="el" href="mavlink_8c_source.html#l00222">mavlink_common_message_handler()</a>, <a class="el" href="throttle__curve_8c_source.html#l00208">nav_throttle_curve_set()</a>, <a class="el" href="subsystems_2radio__control_2rc__datalink_8c_source.html#l00040">parse_rc_3ch_datalink()</a>, <a class="el" href="formation_8h_source.html#l00056">parseFormationSlot()</a>, <a class="el" href="telemetry_8c_source.html#l00078">periodic_telemetry_err_report()</a>, <a class="el" href="rotorcraft__cam_8c_source.html#l00097">rotorcraft_cam_set_mode()</a>, <a class="el" href="sdio__arch_8c_source.html#l00048">sdio_connect()</a>, <a class="el" href="sonar__bebop_8c_source.html#l00100">sonar_bebop_init()</a>, <a class="el" href="sonar__bebop_8c_source.html#l00129">sonar_bebop_read()</a>, <a class="el" href="throttle__curve_8c_source.html#l00115">throttle_curve_run()</a>, and <a class="el" href="stm32_2mcu__periph_2uart__arch_8c_source.html#l00092">uart_periph_set_mode()</a>.</p>
 
 </div>
 </div>
@@ -460,7 +502,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="sonar__bebop_8c_source.html#l00077">77</a> of file <a class="el" href="sonar__bebop_8c_source.html">sonar_bebop.c</a>.</p>
 
-<p>Referenced by <a class="el" href="sonar__bebop_8c_source.html#l00097">sonar_bebop_init()</a>, and <a class="el" href="sonar__bebop_8c_source.html#l00124">sonar_bebop_read()</a>.</p>
+<p>Referenced by <a class="el" href="sonar__bebop_8c_source.html#l00100">sonar_bebop_init()</a>, and <a class="el" href="sonar__bebop_8c_source.html#l00129">sonar_bebop_read()</a>.</p>
 
 </div>
 </div>
@@ -474,9 +516,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sonar__bebop_8c_source.html#l00089">89</a> of file <a class="el" href="sonar__bebop_8c_source.html">sonar_bebop.c</a>.</p>
+<p>Definition at line <a class="el" href="sonar__bebop_8c_source.html#l00095">95</a> of file <a class="el" href="sonar__bebop_8c_source.html">sonar_bebop.c</a>.</p>
 
-<p>Referenced by <a class="el" href="sonar__bebop_8c_source.html#l00097">sonar_bebop_init()</a>, and <a class="el" href="sonar__bebop_8c_source.html#l00124">sonar_bebop_read()</a>.</p>
+<p>Referenced by <a class="el" href="sonar__bebop_8c_source.html#l00100">sonar_bebop_init()</a>, and <a class="el" href="sonar__bebop_8c_source.html#l00129">sonar_bebop_read()</a>.</p>
 
 </div>
 </div>
@@ -502,9 +544,9 @@ Variables</h2></td></tr>
 </div><!-- fragment -->
 <p>sonar_bebop_spi_d the waveforms emitted by the sonar waveform 0 is long pulse used at high altitude waveform 1 is shorter pulse used at low altitude </p>
 
-<p>Definition at line <a class="el" href="sonar__bebop_8c_source.html#l00086">86</a> of file <a class="el" href="sonar__bebop_8c_source.html">sonar_bebop.c</a>.</p>
+<p>Definition at line <a class="el" href="sonar__bebop_8c_source.html#l00092">92</a> of file <a class="el" href="sonar__bebop_8c_source.html">sonar_bebop.c</a>.</p>
 
-<p>Referenced by <a class="el" href="sonar__bebop_8c_source.html#l00097">sonar_bebop_init()</a>, and <a class="el" href="sonar__bebop_8c_source.html#l00124">sonar_bebop_read()</a>.</p>
+<p>Referenced by <a class="el" href="sonar__bebop_8c_source.html#l00100">sonar_bebop_init()</a>, and <a class="el" href="sonar__bebop_8c_source.html#l00129">sonar_bebop_read()</a>.</p>
 
 </div>
 </div>
@@ -526,9 +568,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sonar__bebop_8c_source.html#l00091">91</a> of file <a class="el" href="sonar__bebop_8c_source.html">sonar_bebop.c</a>.</p>
+<p>Definition at line <a class="el" href="sonar__bebop_8c_source.html#l00097">97</a> of file <a class="el" href="sonar__bebop_8c_source.html">sonar_bebop.c</a>.</p>
 
-<p>Referenced by <a class="el" href="sonar__bebop_8c_source.html#l00097">sonar_bebop_init()</a>, and <a class="el" href="sonar__bebop_8c_source.html#l00124">sonar_bebop_read()</a>.</p>
+<p>Referenced by <a class="el" href="sonar__bebop_8c_source.html#l00100">sonar_bebop_init()</a>, and <a class="el" href="sonar__bebop_8c_source.html#l00129">sonar_bebop_read()</a>.</p>
 
 </div>
 </div>
@@ -544,7 +586,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="sonar__bebop_8c_source.html#l00045">45</a> of file <a class="el" href="sonar__bebop_8c_source.html">sonar_bebop.c</a>.</p>
 
-<p>Referenced by <a class="el" href="sonar__bebop_8c_source.html#l00097">sonar_bebop_init()</a>, and <a class="el" href="sonar__bebop_8c_source.html#l00124">sonar_bebop_read()</a>.</p>
+<p>Referenced by <a class="el" href="sonar__bebop_8c_source.html#l00100">sonar_bebop_init()</a>, and <a class="el" href="sonar__bebop_8c_source.html#l00129">sonar_bebop_read()</a>.</p>
 
 </div>
 </div>
@@ -554,7 +596,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_f794e7c055cca00c0de6f5564d477f09.html">sonar</a></li><li class="navelem"><a class="el" href="sonar__bebop_8c.html">sonar_bebop.c</a></li>
-    <li class="footer">Generated on Wed Nov 8 2017 10:02:33 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:03:42 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

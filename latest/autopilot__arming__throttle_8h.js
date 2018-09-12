@@ -10,6 +10,7 @@ var autopilot__arming__throttle_8h =
       [ "STATE_UNARMING", "autopilot__arming__throttle_8h.html#a67f42ccf33e2918fef63b1a6c729e759ac74fe63e8ab7da4eabd976515f323417", null ]
     ] ],
     [ "autopilot_arming_check_motors_on", "autopilot__arming__throttle_8h.html#abbbe9ccad851ff6d7ef88e298059b6ce", null ],
+    [ "autopilot_arming_check_valid", "autopilot__arming__throttle_8h.html#afb9cc707f6ac906cfe4f07d2706c197f", null ],
     [ "autopilot_arming_init", "autopilot__arming__throttle_8h.html#aea5ad986cd1e5b80aff7ef5589a18aac", null ],
     [ "autopilot_arming_set", "autopilot__arming__throttle_8h.html#a644c6a09c2081595c4dbc608fd7ed163", null ],
     [ "autopilot_arming_delay_counter", "autopilot__arming__throttle_8h.html#a72b5d1501b850d4593373116279c7024", null ],

@@ -1,5 +1,6 @@
 var sdLog_8c =
 [
+    [ "FFCONF_DEF", "sdLog_8c.html#a275a34cd0d8f3b9b04ee91df269136e3", null ],
     [ "IS_POWER_OF_TWO", "sdLog_8c.html#a4922593f9f95a4fabc34eacf23ac4550", null ],
     [ "likely", "sdLog_8c.html#a217a0bd562b98ae8c2ffce44935351e1", null ],
     [ "MAX", "sdLog_8c.html#aacc3ee1a7f283f8ef65cea31f4436a95", null ],

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -341,7 +341,7 @@ $(document).ready(function(){initNavTree('ahrs__float__mlkf_8c_source.html','');
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;  <span class="comment">// K = PH&#39;invS</span></div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;  <span class="keywordtype">float</span> tmp2[6][3];</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;  <a class="code" href="pprz__simple__matrix_8h.html#a02c0ae5fb437280749638994286c902a">MAT_MUL_T</a>(6, 6, 3, tmp2, <a class="code" href="ahrs__float__mlkf_8c.html#aa2dc4e2a45ec5bd9ca31ace4716de0fd">ahrs_mlkf</a>.<a class="code" href="ahrs__float__mlkf_8h.html#a0081a1710872516b7083335077675627">P</a>, H);</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;  <span class="keywordtype">float</span> K[6][3];</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;  <span class="keywordtype">float</span> <a class="code" href="undistort__image_8c.html#a29a532ec52354ee7571487245359a066">K</a>[6][3];</div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;  <a class="code" href="pprz__simple__matrix_8h.html#a8e05d6535e6658735179deeb5838a7c2">MAT_MUL</a>(6, 3, 3, K, tmp2, invS);</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;  <span class="comment">// P = (I-KH)P</span></div>
@@ -407,7 +407,7 @@ $(document).ready(function(){initNavTree('ahrs__float__mlkf_8c_source.html','');
 <div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;  <span class="comment">// K = PH&#39;invS</span></div>
 <div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;  <span class="keywordtype">float</span> tmp2[6][3];</div>
 <div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;  <a class="code" href="pprz__simple__matrix_8h.html#a02c0ae5fb437280749638994286c902a">MAT_MUL_T</a>(6, 6, 3, tmp2, <a class="code" href="ahrs__float__mlkf_8c.html#aa2dc4e2a45ec5bd9ca31ace4716de0fd">ahrs_mlkf</a>.<a class="code" href="ahrs__float__mlkf_8h.html#a0081a1710872516b7083335077675627">P</a>, H);</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;  <span class="keywordtype">float</span> K[6][3];</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;  <span class="keywordtype">float</span> <a class="code" href="undistort__image_8c.html#a29a532ec52354ee7571487245359a066">K</a>[6][3];</div>
 <div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;  <a class="code" href="pprz__simple__matrix_8h.html#a8e05d6535e6658735179deeb5838a7c2">MAT_MUL</a>(6, 3, 3, K, tmp2, invS);</div>
 <div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;</div>
 <div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;  <span class="comment">// P = (I-KH)P</span></div>
@@ -455,6 +455,7 @@ $(document).ready(function(){initNavTree('ahrs__float__mlkf_8c_source.html','');
 <div class="ttc" id="ahrs__float__mlkf_8c_html_a7bb2235206c421516cfa4884d287fc65"><div class="ttname"><a href="ahrs__float__mlkf_8c.html#a7bb2235206c421516cfa4884d287fc65">ahrs_mlkf_update_mag_full</a></div><div class="ttdeci">void ahrs_mlkf_update_mag_full(struct FloatVect3 *mag)</div><div class="ttdef"><b>Definition:</b> <a href="ahrs__float__mlkf_8c_source.html#l00156">ahrs_float_mlkf.c:156</a></div></div>
 <div class="ttc" id="pprz__simple__matrix_8h_html"><div class="ttname"><a href="pprz__simple__matrix_8h.html">pprz_simple_matrix.h</a></div><div class="ttdoc">Simple matrix helper macros. </div></div>
 <div class="ttc" id="group__math__algebra__float_html_adeaa53529844ee1fa7df48e61c3994f7"><div class="ttname"><a href="group__math__algebra__float.html#adeaa53529844ee1fa7df48e61c3994f7">FloatVect3::z</a></div><div class="ttdeci">float z</div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__float_8h_source.html#l00057">pprz_algebra_float.h:57</a></div></div>
+<div class="ttc" id="undistort__image_8c_html_a29a532ec52354ee7571487245359a066"><div class="ttname"><a href="undistort__image_8c.html#a29a532ec52354ee7571487245359a066">K</a></div><div class="ttdeci">static float K[9]</div><div class="ttdef"><b>Definition:</b> <a href="undistort__image_8c_source.html#l00070">undistort_image.c:70</a></div></div>
 <div class="ttc" id="ahrs__float__mlkf_8c_html_a6941fca93ff7e77336f1c774e3361e5c"><div class="ttname"><a href="ahrs__float__mlkf_8c.html#a6941fca93ff7e77336f1c774e3361e5c">AHRS_MAG_NOISE_Z</a></div><div class="ttdeci">#define AHRS_MAG_NOISE_Z</div><div class="ttdef"><b>Definition:</b> <a href="ahrs__float__mlkf_8c_source.html#l00046">ahrs_float_mlkf.c:46</a></div></div>
 <div class="ttc" id="group__math__algebra__float_html_gaf182e4cea0a80278a3b2856331095ff6"><div class="ttname"><a href="group__math__algebra__float.html#gaf182e4cea0a80278a3b2856331095ff6">float_quat_comp</a></div><div class="ttdeci">void float_quat_comp(struct FloatQuat *a2c, struct FloatQuat *a2b, struct FloatQuat *b2c)</div><div class="ttdoc">Composition (multiplication) of two quaternions. </div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__float_8c_source.html#l00320">pprz_algebra_float.c:320</a></div></div>
 <div class="ttc" id="ahrs__float__mlkf_8c_html_ac19870482d91dc7347d7065e2447ae67"><div class="ttname"><a href="ahrs__float__mlkf_8c.html#ac19870482d91dc7347d7065e2447ae67">AHRS_MAG_NOISE_Y</a></div><div class="ttdeci">#define AHRS_MAG_NOISE_Y</div><div class="ttdef"><b>Definition:</b> <a href="ahrs__float__mlkf_8c_source.html#l00045">ahrs_float_mlkf.c:45</a></div></div>
@@ -525,7 +526,7 @@ $(document).ready(function(){initNavTree('ahrs__float__mlkf_8c_source.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_46fef683200e96ccf1a2f608d90c4a2d.html">ahrs</a></li><li class="navelem"><a class="el" href="ahrs__float__mlkf_8c.html">ahrs_float_mlkf.c</a></li>
-    <li class="footer">Generated on Wed Nov 8 2017 10:01:49 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:02:56 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

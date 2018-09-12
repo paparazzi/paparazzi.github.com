@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -305,6 +305,18 @@ $(document).ready(function(){initNavTree('globals_vars_c.html','');});
 <li>Center
 : <a class="el" href="nav__flower_8c.html#a688461f77762ad7bc85685537182f73c">nav_flower.c</a>
 </li>
+<li>center_ratio
+: <a class="el" href="undistort__image_8c.html#a570d448b8224fa617f9a6a2e0e817cf1">undistort_image.c</a>
+, <a class="el" href="undistort__image_8h.html#a570d448b8224fa617f9a6a2e0e817cf1">undistort_image.h</a>
+</li>
+<li>center_x
+: <a class="el" href="undistort__image_8c.html#a2ba4d960c52ede54c9867b2467ac213f">undistort_image.c</a>
+, <a class="el" href="undistort__image_8h.html#a2ba4d960c52ede54c9867b2467ac213f">undistort_image.h</a>
+</li>
+<li>center_y
+: <a class="el" href="undistort__image_8c.html#a40a2369ab24fb8b496c3a7eb497c1ff6">undistort_image.c</a>
+, <a class="el" href="undistort__image_8h.html#a40a2369ab24fb8b496c3a7eb497c1ff6">undistort_image.h</a>
+</li>
 <li>CFlowerStatus
 : <a class="el" href="nav__flower_8c.html#a2775e7004e7029fd9494780202041322">nav_flower.c</a>
 </li>
@@ -314,18 +326,6 @@ $(document).ready(function(){initNavTree('globals_vars_c.html','');});
 <li>Cfreq
 : <a class="el" href="obstacle__avoidance_8c.html#a8a15870fb9bd1387a4f52f679a43450e">obstacle_avoidance.c</a>
 , <a class="el" href="obstacle__avoidance_8h.html#a8a15870fb9bd1387a4f52f679a43450e">obstacle_avoidance.h</a>
-</li>
-<li>Chacha20Poly1305_keylen
-: <a class="el" href="Chacha20Poly1305_8c.html#a94698d344c1d9e720e4068c224e9b29e">Chacha20Poly1305.c</a>
-, <a class="el" href="Chacha20Poly1305_8h.html#a94698d344c1d9e720e4068c224e9b29e">Chacha20Poly1305.h</a>
-</li>
-<li>Chacha20Poly1305_maclen
-: <a class="el" href="Chacha20Poly1305_8c.html#a0570514f8b482e1a6034fbb3bf1828da">Chacha20Poly1305.c</a>
-, <a class="el" href="Chacha20Poly1305_8h.html#a0570514f8b482e1a6034fbb3bf1828da">Chacha20Poly1305.h</a>
-</li>
-<li>Chacha20Poly1305_noncelen
-: <a class="el" href="Chacha20Poly1305_8c.html#ad81eef1445f5fbb46e04fd733e0f941b">Chacha20Poly1305.c</a>
-, <a class="el" href="Chacha20Poly1305_8h.html#ad81eef1445f5fbb46e04fd733e0f941b">Chacha20Poly1305.h</a>
 </li>
 <li>channel
 : <a class="el" href="ADS8344_8c.html#a715f5cb061d11eb75981741eda4dafcd">ADS8344.c</a>
@@ -396,10 +396,6 @@ $(document).ready(function(){initNavTree('globals_vars_c.html','');});
 <li>CircleY
 : <a class="el" href="nav__flower_8c.html#a628583ce780732981d809a7b039cd11c">nav_flower.c</a>
 </li>
-<li>ck
-: <a class="el" href="xsens__common_8c.html#a8cc30b8cc0fb84cf89bd40f5e701c2b1">xsens_common.c</a>
-, <a class="el" href="xsens__common_8h.html#a8cc30b8cc0fb84cf89bd40f5e701c2b1">xsens_common.h</a>
-</li>
 <li>ck_a
 : <a class="el" href="w5100_8c.html#a51ab444129c13f6f6f44765945b7c1f7">w5100.c</a>
 </li>
@@ -444,16 +440,16 @@ $(document).ready(function(){initNavTree('globals_vars_c.html','');});
 : <a class="el" href="swashplate__mixing_8c.html#af9fe2ad0e7216d4cc032d793e1d68623">swashplate_mixing.c</a>
 </li>
 <li>color_cb_max
-: <a class="el" href="cv__blob__locator_8h.html#a028a785eb4e92e36a242baac2c592b6b">cv_blob_locator.h</a>
+: <a class="el" href="colorfilter_8h.html#a028a785eb4e92e36a242baac2c592b6b">colorfilter.h</a>
 , <a class="el" href="colorfilter_8c.html#a028a785eb4e92e36a242baac2c592b6b">colorfilter.c</a>
-, <a class="el" href="colorfilter_8h.html#a028a785eb4e92e36a242baac2c592b6b">colorfilter.h</a>
 , <a class="el" href="cv__blob__locator_8c.html#a028a785eb4e92e36a242baac2c592b6b">cv_blob_locator.c</a>
+, <a class="el" href="cv__blob__locator_8h.html#a028a785eb4e92e36a242baac2c592b6b">cv_blob_locator.h</a>
 </li>
 <li>color_cb_min
-: <a class="el" href="colorfilter_8c.html#adbcec0bafce0688f1708beaf0b6e792a">colorfilter.c</a>
-, <a class="el" href="colorfilter_8h.html#adbcec0bafce0688f1708beaf0b6e792a">colorfilter.h</a>
-, <a class="el" href="cv__blob__locator_8c.html#adbcec0bafce0688f1708beaf0b6e792a">cv_blob_locator.c</a>
+: <a class="el" href="cv__blob__locator_8c.html#adbcec0bafce0688f1708beaf0b6e792a">cv_blob_locator.c</a>
 , <a class="el" href="cv__blob__locator_8h.html#adbcec0bafce0688f1708beaf0b6e792a">cv_blob_locator.h</a>
+, <a class="el" href="colorfilter_8h.html#adbcec0bafce0688f1708beaf0b6e792a">colorfilter.h</a>
+, <a class="el" href="colorfilter_8c.html#adbcec0bafce0688f1708beaf0b6e792a">colorfilter.c</a>
 </li>
 <li>color_count
 : <a class="el" href="colorfilter_8c.html#ad99d2a0b5a335e334b306c2a38a80c52">colorfilter.c</a>
@@ -461,27 +457,27 @@ $(document).ready(function(){initNavTree('globals_vars_c.html','');});
 </li>
 <li>color_cr_max
 : <a class="el" href="colorfilter_8c.html#a178c4572aced8af31538a036d2d1c5df">colorfilter.c</a>
+, <a class="el" href="colorfilter_8h.html#a178c4572aced8af31538a036d2d1c5df">colorfilter.h</a>
 , <a class="el" href="cv__blob__locator_8c.html#a178c4572aced8af31538a036d2d1c5df">cv_blob_locator.c</a>
 , <a class="el" href="cv__blob__locator_8h.html#a178c4572aced8af31538a036d2d1c5df">cv_blob_locator.h</a>
-, <a class="el" href="colorfilter_8h.html#a178c4572aced8af31538a036d2d1c5df">colorfilter.h</a>
 </li>
 <li>color_cr_min
 : <a class="el" href="colorfilter_8c.html#a39149da1c7d12899680335e4cc339499">colorfilter.c</a>
+, <a class="el" href="colorfilter_8h.html#a39149da1c7d12899680335e4cc339499">colorfilter.h</a>
 , <a class="el" href="cv__blob__locator_8c.html#a39149da1c7d12899680335e4cc339499">cv_blob_locator.c</a>
 , <a class="el" href="cv__blob__locator_8h.html#a39149da1c7d12899680335e4cc339499">cv_blob_locator.h</a>
-, <a class="el" href="colorfilter_8h.html#a39149da1c7d12899680335e4cc339499">colorfilter.h</a>
 </li>
 <li>color_lum_max
 : <a class="el" href="colorfilter_8c.html#a8546349fa41cd2a0fa906119990c65cf">colorfilter.c</a>
+, <a class="el" href="colorfilter_8h.html#a8546349fa41cd2a0fa906119990c65cf">colorfilter.h</a>
 , <a class="el" href="cv__blob__locator_8c.html#a8546349fa41cd2a0fa906119990c65cf">cv_blob_locator.c</a>
 , <a class="el" href="cv__blob__locator_8h.html#a8546349fa41cd2a0fa906119990c65cf">cv_blob_locator.h</a>
-, <a class="el" href="colorfilter_8h.html#a8546349fa41cd2a0fa906119990c65cf">colorfilter.h</a>
 </li>
 <li>color_lum_min
 : <a class="el" href="colorfilter_8c.html#a52291a7a5c10d56a832a7b6fcaa66c43">colorfilter.c</a>
+, <a class="el" href="colorfilter_8h.html#a52291a7a5c10d56a832a7b6fcaa66c43">colorfilter.h</a>
 , <a class="el" href="cv__blob__locator_8c.html#a52291a7a5c10d56a832a7b6fcaa66c43">cv_blob_locator.c</a>
 , <a class="el" href="cv__blob__locator_8h.html#a52291a7a5c10d56a832a7b6fcaa66c43">cv_blob_locator.h</a>
-, <a class="el" href="colorfilter_8h.html#a52291a7a5c10d56a832a7b6fcaa66c43">colorfilter.h</a>
 </li>
 <li>com_trans
 : <a class="el" href="generic__com_8c.html#aacf77b866e79c13fe19296fa3402f472">generic_com.c</a>
@@ -506,8 +502,12 @@ $(document).ready(function(){initNavTree('globals_vars_c.html','');});
 , <a class="el" href="commands_8c.html#a929b1098e1af3f34ee056eeed9227136">commands.c</a>
 </li>
 <li>commands_failsafe
-: <a class="el" href="commands_8c.html#a88b3a12659adc4151ddd6cbef8bd4187">commands.c</a>
-, <a class="el" href="commands_8h.html#a88b3a12659adc4151ddd6cbef8bd4187">commands.h</a>
+: <a class="el" href="commands_8h.html#a88b3a12659adc4151ddd6cbef8bd4187">commands.h</a>
+, <a class="el" href="commands_8c.html#a88b3a12659adc4151ddd6cbef8bd4187">commands.c</a>
+</li>
+<li>comode_time
+: <a class="el" href="ctrl__module__outerloop__demo_8c.html#aa520a8ed7a4e070f40515a4408bf20ce">ctrl_module_outerloop_demo.c</a>
+, <a class="el" href="ctrl__module__outerloop__demo_8h.html#aa520a8ed7a4e070f40515a4408bf20ce">ctrl_module_outerloop_demo.h</a>
 </li>
 <li>coms_status
 : <a class="el" href="bluegiga_8c.html#a63fb36ed0551dd092ac6f34c76bb6168">bluegiga.c</a>
@@ -516,8 +516,8 @@ $(document).ready(function(){initNavTree('globals_vars_c.html','');});
 : <a class="el" href="stm32_2usb__ser__hw_8c.html#a79fece8dc710f4eaf00c3f026ab2e4ae">usb_ser_hw.c</a>
 </li>
 <li>config_mkk_v2
-: <a class="el" href="config__mkk__v2_8c.html#aebea4d35d22142e6709b5bdee4240e87">config_mkk_v2.c</a>
-, <a class="el" href="config__mkk__v2_8h.html#aebea4d35d22142e6709b5bdee4240e87">config_mkk_v2.h</a>
+: <a class="el" href="config__mkk__v2_8h.html#aebea4d35d22142e6709b5bdee4240e87">config_mkk_v2.h</a>
+, <a class="el" href="config__mkk__v2_8c.html#aebea4d35d22142e6709b5bdee4240e87">config_mkk_v2.c</a>
 </li>
 <li>config_mkk_v2_eeprom
 : <a class="el" href="config__mkk__v2_8c.html#a6a85c29bff8b6d58a25ce209f97f125f">config_mkk_v2.c</a>
@@ -540,6 +540,9 @@ $(document).ready(function(){initNavTree('globals_vars_c.html','');});
 <li>continue_reading_memory
 : <a class="el" href="high__speed__logger__direct__memory_8c.html#afdd9fd13586250efcd63cb728a19e7cc">high_speed_logger_direct_memory.c</a>
 </li>
+<li>control_increment
+: <a class="el" href="guidance__indi_8c.html#ac61a4dcb4e497c0e078bd59eab538d0b">guidance_indi.c</a>
+</li>
 <li>controlled_throttle
 : <a class="el" href="guidance__v__n_8c.html#a83c32a6107288a146666bc1aa79ab8ed">guidance_v_n.c</a>
 </li>
@@ -556,8 +559,8 @@ $(document).ready(function(){initNavTree('globals_vars_c.html','');});
 : <a class="el" href="geiger__counter_8c.html#acf72a5e0a4ec7503979dbf07551a30fd">geiger_counter.c</a>
 </li>
 <li>counter
-: <a class="el" href="airspeed__uADC_8c.html#a51322ddb267b4729d6b5f2bb05d49fff">airspeed_uADC.c</a>
-, <a class="el" href="avoid__navigation_8c.html#aaec3cd97712876a5e9ff70559b1fca26">avoid_navigation.c</a>
+: <a class="el" href="avoid__navigation_8c.html#aaec3cd97712876a5e9ff70559b1fca26">avoid_navigation.c</a>
+, <a class="el" href="airspeed__uADC_8c.html#a51322ddb267b4729d6b5f2bb05d49fff">airspeed_uADC.c</a>
 </li>
 <li>course
 : <a class="el" href="airspeed__uADC_8c.html#a07e858c64561f8f3465da2ba434ccd1f">airspeed_uADC.c</a>
@@ -568,8 +571,23 @@ $(document).ready(function(){initNavTree('globals_vars_c.html','');});
 <li>cov_array_filled
 : <a class="el" href="optical__flow__landing_8c.html#a73f200132b3c846f4b218a930fcf8945">optical_flow_landing.c</a>
 </li>
+<li>cov_array_filledXY
+: <a class="el" href="optical__flow__functions_8h.html#a10b81db25639f8d958f56a19830300c1">optical_flow_functions.h</a>
+, <a class="el" href="optical__flow__functions_8c.html#a10b81db25639f8d958f56a19830300c1">optical_flow_functions.c</a>
+</li>
+<li>cov_array_filledZ
+: <a class="el" href="optical__flow__functions_8h.html#aa8b63c1d9c106ddfa2259b7b1afb68e3">optical_flow_functions.h</a>
+, <a class="el" href="optical__flow__functions_8c.html#aa8b63c1d9c106ddfa2259b7b1afb68e3">optical_flow_functions.c</a>
+</li>
 <li>cov_div
 : <a class="el" href="optical__flow__landing_8c.html#af1eb4bb0fed2c8f7231d95df4e76de42">optical_flow_landing.c</a>
+</li>
+<li>cov_method
+: <a class="el" href="optical__flow__hover_8h.html#ac3cf9ed1a1882c7ce8277b8e3ecacb3d">optical_flow_hover.h</a>
+, <a class="el" href="optical__flow__hover_8c.html#ac3cf9ed1a1882c7ce8277b8e3ecacb3d">optical_flow_hover.c</a>
+</li>
+<li>covariances
+: <a class="el" href="optical__flow__hover_8c.html#a37aa12b988bdee40891b058873dc1e36">optical_flow_hover.c</a>
 </li>
 <li>crc
 : <a class="el" href="link__mcu__spi_8c.html#aa60093a9a5d5d17864cfda66c47733e3">link_mcu_spi.c</a>
@@ -599,24 +617,27 @@ $(document).ready(function(){initNavTree('globals_vars_c.html','');});
 <li>CTakeoffStatus
 : <a class="el" href="nav__bungee__takeoff_8c.html#ab496f035eec714cd74c7ab5315ef1dd9">nav_bungee_takeoff.c</a>
 </li>
+<li>ctrl
+: <a class="el" href="ctrl__module__outerloop__demo_8c.html#a3a589132e4ce8f7571ef838379bd4065">ctrl_module_outerloop_demo.c</a>
+</li>
 <li>ctrl_module_demo
-: <a class="el" href="ctrl__module__demo_8c.html#a2c7b8243840c6a49bbf66b4400720f39">ctrl_module_demo.c</a>
+: <a class="el" href="ctrl__module__innerloop__demo_8c.html#a2c7b8243840c6a49bbf66b4400720f39">ctrl_module_innerloop_demo.c</a>
 </li>
 <li>ctrl_module_demo_pr_d_gain
-: <a class="el" href="ctrl__module__demo_8h.html#ae541c8a45b0875c67e832ce575348669">ctrl_module_demo.h</a>
-, <a class="el" href="ctrl__module__demo_8c.html#ae541c8a45b0875c67e832ce575348669">ctrl_module_demo.c</a>
+: <a class="el" href="ctrl__module__innerloop__demo_8h.html#ae541c8a45b0875c67e832ce575348669">ctrl_module_innerloop_demo.h</a>
+, <a class="el" href="ctrl__module__innerloop__demo_8c.html#ae541c8a45b0875c67e832ce575348669">ctrl_module_innerloop_demo.c</a>
 </li>
 <li>ctrl_module_demo_pr_ff_gain
-: <a class="el" href="ctrl__module__demo_8c.html#ae95f03331cf6424439fb30fcbf8e738a">ctrl_module_demo.c</a>
-, <a class="el" href="ctrl__module__demo_8h.html#ae95f03331cf6424439fb30fcbf8e738a">ctrl_module_demo.h</a>
+: <a class="el" href="ctrl__module__innerloop__demo_8c.html#ae95f03331cf6424439fb30fcbf8e738a">ctrl_module_innerloop_demo.c</a>
+, <a class="el" href="ctrl__module__innerloop__demo_8h.html#ae95f03331cf6424439fb30fcbf8e738a">ctrl_module_innerloop_demo.h</a>
 </li>
 <li>ctrl_module_demo_y_d_gain
-: <a class="el" href="ctrl__module__demo_8c.html#a5c7d785dbf189111383030ed66326e01">ctrl_module_demo.c</a>
-, <a class="el" href="ctrl__module__demo_8h.html#a5c7d785dbf189111383030ed66326e01">ctrl_module_demo.h</a>
+: <a class="el" href="ctrl__module__innerloop__demo_8c.html#a5c7d785dbf189111383030ed66326e01">ctrl_module_innerloop_demo.c</a>
+, <a class="el" href="ctrl__module__innerloop__demo_8h.html#a5c7d785dbf189111383030ed66326e01">ctrl_module_innerloop_demo.h</a>
 </li>
 <li>ctrl_module_demo_y_ff_gain
-: <a class="el" href="ctrl__module__demo_8h.html#ab325f25d6b8a8a63212572cbdad8b87a">ctrl_module_demo.h</a>
-, <a class="el" href="ctrl__module__demo_8c.html#ab325f25d6b8a8a63212572cbdad8b87a">ctrl_module_demo.c</a>
+: <a class="el" href="ctrl__module__innerloop__demo_8h.html#ab325f25d6b8a8a63212572cbdad8b87a">ctrl_module_innerloop_demo.h</a>
+, <a class="el" href="ctrl__module__innerloop__demo_8c.html#ab325f25d6b8a8a63212572cbdad8b87a">ctrl_module_innerloop_demo.c</a>
 </li>
 <li>cur_pos_x
 : <a class="el" href="nav_8h.html#aa5c303fedda9fe2c787095dcd2456363">nav.h</a>
@@ -644,8 +665,8 @@ $(document).ready(function(){initNavTree('globals_vars_c.html','');});
 : <a class="el" href="mavlink_8c.html#a050527395d793a9d3502e1614c953f3b">mavlink.c</a>
 </li>
 <li>cv_blob_locator_reset
-: <a class="el" href="cv__blob__locator_8c.html#ae97be8987eb112d08c57d0de0d664e82">cv_blob_locator.c</a>
-, <a class="el" href="cv__blob__locator_8h.html#ae97be8987eb112d08c57d0de0d664e82">cv_blob_locator.h</a>
+: <a class="el" href="cv__blob__locator_8h.html#ae97be8987eb112d08c57d0de0d664e82">cv_blob_locator.h</a>
+, <a class="el" href="cv__blob__locator_8c.html#ae97be8987eb112d08c57d0de0d664e82">cv_blob_locator.c</a>
 </li>
 <li>cv_blob_locator_type
 : <a class="el" href="cv__blob__locator_8c.html#ae3dd4cc91cbed27623ae288efd886bea">cv_blob_locator.c</a>
@@ -672,7 +693,7 @@ $(document).ready(function(){initNavTree('globals_vars_c.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Nov 8 2017 10:03:17 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:04:33 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

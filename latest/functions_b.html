@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -175,9 +175,13 @@ $(document).ready(function(){initNavTree('functions_b.html','');});
 <li>baro_alt
 : <a class="el" href="ins__alt__float_8h.html#a7494df7fc8dee14f90c0aadce0f9cbc5">InsAltFloat</a>
 , <a class="el" href="ins__float__invariant_8h.html#adda99b56f59e884dd771848a16690fba">inv_measures</a>
+, <a class="el" href="ins__mekf__wind_8cpp.html#a5baf5415b6747ab66b417e9e4bb1328f">MekfWindMeasurements</a>
 </li>
 <li>baro_available
 : <a class="el" href="navdata_8h.html#aa9dc36cf6dd4c2c4d09b6b680e92cbf4">navdata_t</a>
+</li>
+<li>baro_bias
+: <a class="el" href="ins__mekf__wind_8cpp.html#a8c389b6826943e011ae600091214e932">MekfWindState</a>
 </li>
 <li>baro_calibrated
 : <a class="el" href="navdata_8h.html#a6435345ad995ab0b63fec1770b6f5784">navdata_t</a>
@@ -185,6 +189,7 @@ $(document).ready(function(){initNavTree('functions_b.html','');});
 <li>baro_initialized
 : <a class="el" href="ins__alt__float_8h.html#a6c6f02c433156a3eaaa8d3228efc3165">InsAltFloat</a>
 , <a class="el" href="ins__int_8h.html#a601a59af00bb2d8bcb02d0ac7a919a73">InsInt</a>
+, <a class="el" href="ins__mekf__wind__wrapper_8h.html#aeb0a332d7f6938fa9b0890ebfe3cb43b">InsMekfWind</a>
 </li>
 <li>baro_z
 : <a class="el" href="ins__int_8h.html#a1d12a85b7661adba1fd8c1662f05aa2b">InsInt</a>
@@ -192,6 +197,9 @@ $(document).ready(function(){initNavTree('functions_b.html','');});
 </li>
 <li>base_mode
 : <a class="el" href="px4flow_8h.html#af73631b17d4d01c9a0e525d224ec3051">mavlink_heartbeat</a>
+</li>
+<li>bat
+: <a class="el" href="modules_2actuators_2actuators__md25_8h.html#a1df42a53e7690c3be1f65ad8bf2e5e1d">ActuatorsMD25</a>
 </li>
 <li>bat_cell_mvolts
 : <a class="el" href="battery__monitor_8h.html#afcd6f41a2279f2dffab42c6a87e9fc33">BatMonBal</a>
@@ -386,6 +394,7 @@ $(document).ready(function(){initNavTree('functions_b.html','');});
 , <a class="el" href="ahrs__vectornav_8h.html#a914ea8b555457274792c346752fb007e">AhrsVectornav</a>
 , <a class="el" href="imu_8h.html#a3ce3df3bf961804f9af1616e53b98b7f">Imu</a>
 , <a class="el" href="ins__float__invariant_8h.html#a946847c4b6563308ed9b8bf2c1732919">InsFloatInv</a>
+, <a class="el" href="ins__mekf__wind__wrapper_8h.html#a8bf8a9d7870b0f72354fbcd32cb7b9e1">InsMekfWind</a>
 , <a class="el" href="ins__skeleton_8h.html#ab8430220d641b3eaa61a126bc1b60e14">InsModuleInt</a>
 , <a class="el" href="ins__vectornav_8h.html#a93fb8eea711f9ecde7093b6683f76b3e">InsVectornav</a>
 </li>
@@ -419,6 +428,15 @@ $(document).ready(function(){initNavTree('functions_b.html','');});
 <li>brake_right
 : <a class="el" href="flight__gear_8h.html#afcb1357447c1667f60be2abcbf23e97f">FGNetCtrls</a>
 </li>
+<li>bright_bins
+: <a class="el" href="bebop__ae__awb_8h.html#afbc013e3bb6e54081b19002f20a52e4e">ae_setting_t</a>
+</li>
+<li>bright_ignore
+: <a class="el" href="bebop__ae__awb_8h.html#af2010ea6c85e03dc77767089837640ad">ae_setting_t</a>
+</li>
+<li>broadtime
+: <a class="el" href="dcf_8h.html#ab601f4e52d1fa6b40ffe15a45f61ea99">dcf_con</a>
+</li>
 <li>bsem
 : <a class="el" href="usb__msd_8h.html#af7ba7653c1de371ae7173272b7f20c6e">USBMassStorageDriver</a>
 </li>
@@ -432,6 +450,8 @@ $(document).ready(function(){initNavTree('functions_b.html','');});
 , <a class="el" href="group__i2c.html#a295b2671835ae06b28905433cd1096ee">i2c_transaction</a>
 , <a class="el" href="image_8h.html#a4af7d619f8367a3e68fbfad265546011">image_t</a>
 , <a class="el" href="nps__fdm__crrcsim_8c.html#afde8d8cd47d4406590e132bbde8459f0">inputbuf</a>
+, <a class="el" href="jevois_8c.html#a1eeaed94a6eace3e15d418f84b55dc7d">jevois_t</a>
+, <a class="el" href="spektrum_8h.html#adb896892bc656665ab82bbb7b8086e2f">spektrum_sat_t</a>
 , <a class="el" href="telemetry__intermcu__fbw_8c.html#a343b4e42ed65babd846c76e1e456ae7a">telemetry_intermcu_t</a>
 , <a class="el" href="v4l2_8h.html#a129766ce42e8c69f2a0ca4c55ef3cca0">v4l2_img_buf</a>
 </li>
@@ -524,7 +544,7 @@ $(document).ready(function(){initNavTree('functions_b.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Nov 8 2017 10:03:13 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:04:30 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

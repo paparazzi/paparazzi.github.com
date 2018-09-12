@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -194,7 +194,7 @@ $(document).ready(function(){initNavTree('qr__code_8c_source.html','');});
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keywordtype">int</span> n = zbar_scan_image(<a class="code" href="qr__code_8c.html#a3f4d208deed4a57af5030a186ddea916">scanner</a>, image);</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keywordflow">if</span> (n &lt; 0) {</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <a class="code" href="kremlib_8h.html#a3cb9f0894fab1c8fbb0753c9c7c2a8d9">printf</a>(<span class="stringliteral">&quot;zbar_scan_image returned %d\n&quot;</span>, n);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    printf(<span class="stringliteral">&quot;zbar_scan_image returned %d\n&quot;</span>, n);</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  }</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="comment">// extract results</span></div>
@@ -203,7 +203,7 @@ $(document).ready(function(){initNavTree('qr__code_8c_source.html','');});
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="comment">// do something useful with results</span></div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    zbar_symbol_type_t typ = zbar_symbol_get_type(symbol);</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">char</span> *data = (<span class="keywordtype">char</span> *)zbar_symbol_get_data(symbol);</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <a class="code" href="kremlib_8h.html#a3cb9f0894fab1c8fbb0753c9c7c2a8d9">printf</a>(<span class="stringliteral">&quot;decoded %s symbol \&quot;%s\&quot; at %d %d\n&quot;</span>,</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    printf(<span class="stringliteral">&quot;decoded %s symbol \&quot;%s\&quot; at %d %d\n&quot;</span>,</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;           zbar_get_symbol_name(typ), data, zbar_symbol_get_loc_x(symbol, 0), zbar_symbol_get_loc_y(symbol, 0));</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="qr__code_8c.html#a47a5d7fd467d074491b22071df503137">drawRectangleAroundQRCode</a>) {</div>
@@ -241,9 +241,9 @@ $(document).ready(function(){initNavTree('qr__code_8c_source.html','');});
 <div class="ttc" id="image_8h_html_a42e8d87861c2a899bd4090bacf58c9dd"><div class="ttname"><a href="image_8h.html#a42e8d87861c2a899bd4090bacf58c9dd">image_t::buf_size</a></div><div class="ttdeci">uint32_t buf_size</div><div class="ttdoc">The buffer size. </div><div class="ttdef"><b>Definition:</b> <a href="image_8h_source.html#l00052">image.h:52</a></div></div>
 <div class="ttc" id="qr__code_8c_html_ac2cd906083090c455a8cf7bb2b491dee"><div class="ttname"><a href="qr__code_8c.html#ac2cd906083090c455a8cf7bb2b491dee">qrcode_init</a></div><div class="ttdeci">void qrcode_init(void)</div><div class="ttdef"><b>Definition:</b> <a href="qr__code_8c_source.html#l00042">qr_code.c:42</a></div></div>
 <div class="ttc" id="telemetry_8h_html"><div class="ttname"><a href="telemetry_8h.html">telemetry.h</a></div><div class="ttdoc">Periodic telemetry system header (includes downlink utility and generated code). </div></div>
-<div class="ttc" id="image_8c_html_ab5cc0250c461b9d2f043e4884f6b9a53"><div class="ttname"><a href="image_8c.html#ab5cc0250c461b9d2f043e4884f6b9a53">image_create</a></div><div class="ttdeci">void image_create(struct image_t *img, uint16_t width, uint16_t height, enum image_type type)</div><div class="ttdoc">Create a new image. </div><div class="ttdef"><b>Definition:</b> <a href="image_8c_source.html#l00038">image.c:38</a></div></div>
+<div class="ttc" id="image_8c_html_ab5cc0250c461b9d2f043e4884f6b9a53"><div class="ttname"><a href="image_8c.html#ab5cc0250c461b9d2f043e4884f6b9a53">image_create</a></div><div class="ttdeci">void image_create(struct image_t *img, uint16_t width, uint16_t height, enum image_type type)</div><div class="ttdoc">Create a new image. </div><div class="ttdef"><b>Definition:</b> <a href="image_8c_source.html#l00039">image.c:39</a></div></div>
 <div class="ttc" id="image_8h_html_structimage__t"><div class="ttname"><a href="image_8h.html#structimage__t">image_t</a></div><div class="ttdef"><b>Definition:</b> <a href="image_8h_source.html#l00043">image.h:43</a></div></div>
-<div class="ttc" id="image_8c_html_a40fe37e1ba3df58796c2aa29e04e8567"><div class="ttname"><a href="image_8c.html#a40fe37e1ba3df58796c2aa29e04e8567">image_draw_line</a></div><div class="ttdeci">void image_draw_line(struct image_t *img, struct point_t *from, struct point_t *to)</div><div class="ttdoc">Draw a pink line on the image. </div><div class="ttdef"><b>Definition:</b> <a href="image_8c_source.html#l00679">image.c:679</a></div></div>
+<div class="ttc" id="image_8c_html_a40fe37e1ba3df58796c2aa29e04e8567"><div class="ttname"><a href="image_8c.html#a40fe37e1ba3df58796c2aa29e04e8567">image_draw_line</a></div><div class="ttdeci">void image_draw_line(struct image_t *img, struct point_t *from, struct point_t *to)</div><div class="ttdoc">Draw a pink line on the image. </div><div class="ttdef"><b>Definition:</b> <a href="image_8c_source.html#l00795">image.c:795</a></div></div>
 <div class="ttc" id="image_8h_html_a53790d3f42a710902f3dd1c21f7fcb38"><div class="ttname"><a href="image_8h.html#a53790d3f42a710902f3dd1c21f7fcb38">point_t::x</a></div><div class="ttdeci">uint32_t x</div><div class="ttdoc">The x coordinate of the point. </div><div class="ttdef"><b>Definition:</b> <a href="image_8h_source.html#l00058">image.h:58</a></div></div>
 <div class="ttc" id="cv_8c_html_aee4ecc7b59c1526a024f91a46a34ff45"><div class="ttname"><a href="cv_8c.html#aee4ecc7b59c1526a024f91a46a34ff45">cv_add_to_device</a></div><div class="ttdeci">struct video_listener * cv_add_to_device(struct video_config_t *device, cv_function func, uint16_t fps)</div><div class="ttdef"><b>Definition:</b> <a href="cv_8c_source.html#l00046">cv.c:46</a></div></div>
 <div class="ttc" id="image_8h_html_aa3c13c99294ff126c4c019d5e799253e"><div class="ttname"><a href="image_8h.html#aa3c13c99294ff126c4c019d5e799253e">image_t::w</a></div><div class="ttdeci">uint16_t w</div><div class="ttdoc">Image width. </div><div class="ttdef"><b>Definition:</b> <a href="image_8h_source.html#l00045">image.h:45</a></div></div>
@@ -260,7 +260,6 @@ $(document).ready(function(){initNavTree('qr__code_8c_source.html','');});
 <div class="ttc" id="qr__code_8h_html"><div class="ttname"><a href="qr__code_8h.html">qr_code.h</a></div><div class="ttdoc">Parse video stream to detect and decode QR-codes using the ZBAR library. </div></div>
 <div class="ttc" id="qr__code_8c_html_a3f4d208deed4a57af5030a186ddea916"><div class="ttname"><a href="qr__code_8c.html#a3f4d208deed4a57af5030a186ddea916">scanner</a></div><div class="ttdeci">zbar_image_scanner_t * scanner</div><div class="ttdef"><b>Definition:</b> <a href="qr__code_8c_source.html#l00052">qr_code.c:52</a></div></div>
 <div class="ttc" id="image_8h_html_af039c7afe08a5eb2cff06e357227cdb8a6d97e6c2ad43721a212d52ec806261d3"><div class="ttname"><a href="image_8h.html#af039c7afe08a5eb2cff06e357227cdb8a6d97e6c2ad43721a212d52ec806261d3">IMAGE_GRAYSCALE</a></div><div class="ttdoc">Grayscale image with only the Y part (uint8 per pixel) </div><div class="ttdef"><b>Definition:</b> <a href="image_8h_source.html#l00037">image.h:37</a></div></div>
-<div class="ttc" id="kremlib_8h_html_a3cb9f0894fab1c8fbb0753c9c7c2a8d9"><div class="ttname"><a href="kremlib_8h.html#a3cb9f0894fab1c8fbb0753c9c7c2a8d9">printf</a></div><div class="ttdeci">#define printf</div><div class="ttdef"><b>Definition:</b> <a href="kremlib_8h_source.html#l00242">kremlib.h:242</a></div></div>
 <div class="ttc" id="qr__code_8c_html_a8dac2ca1a7472c7f3bdad5f998ba8b54"><div class="ttname"><a href="qr__code_8c.html#a8dac2ca1a7472c7f3bdad5f998ba8b54">QRCODE_FPS</a></div><div class="ttdeci">#define QRCODE_FPS</div><div class="ttdoc">Default FPS (zero means run at camera fps) </div><div class="ttdef"><b>Definition:</b> <a href="qr__code_8c_source.html#l00038">qr_code.c:38</a></div></div>
 <div class="ttc" id="qr__code_8c_html_a11658bf3a3b28cf09f0eb002dd77c507"><div class="ttname"><a href="qr__code_8c.html#a11658bf3a3b28cf09f0eb002dd77c507">qrscan</a></div><div class="ttdeci">struct image_t * qrscan(struct image_t *img)</div><div class="ttdef"><b>Definition:</b> <a href="qr__code_8c_source.html#l00054">qr_code.c:54</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -269,7 +268,7 @@ $(document).ready(function(){initNavTree('qr__code_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_304e79c9f5d09ea65a2f55aafb6a6b9d.html">computer_vision</a></li><li class="navelem"><a class="el" href="dir_36cdc087bcb0b13e79a865917b3734d4.html">qrcode</a></li><li class="navelem"><a class="el" href="qr__code_8c.html">qr_code.c</a></li>
-    <li class="footer">Generated on Wed Nov 8 2017 10:01:38 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:02:44 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

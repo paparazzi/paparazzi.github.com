@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -400,7 +400,7 @@ $(document).ready(function(){initNavTree('globals_defs_b.html','');});
 : <a class="el" href="abi__sender__ids_8h.html#a2d896d0e33c22364c608d78c7ed335a0">abi_sender_ids.h</a>
 </li>
 <li>BARO_PERIODIC_FREQUENCY
-: <a class="el" href="rotorcraft_2main__ap_8c.html#a124e8be962a54f3f7a0957fa34ec5876">main_ap.c</a>
+: <a class="el" href="rover_2main__ap_8c.html#a124e8be962a54f3f7a0957fa34ec5876">main_ap.c</a>
 </li>
 <li>BARO_SCP_IDLE
 : <a class="el" href="baro__scp__i2c_8h.html#a4a5962e918a5fc89f6f1092e261095d6">baro_scp_i2c.h</a>
@@ -498,14 +498,35 @@ $(document).ready(function(){initNavTree('globals_defs_b.html','');});
 , <a class="el" href="baro__board__ms5611__spi_8c.html#a4ff576c8f1aeccfcbe960067683f487b">baro_board_ms5611_spi.c</a>
 , <a class="el" href="bebop_2baro__board_8h.html#a4ff576c8f1aeccfcbe960067683f487b">baro_board.h</a>
 </li>
-<li>be32toh
-: <a class="el" href="kremlib_8h.html#a6acac399720b3a57d9050420aa0aac41">kremlib.h</a>
-</li>
-<li>be64toh
-: <a class="el" href="kremlib_8h.html#af94eb043f5be14b4f260fb9b4c89ca2e">kremlib.h</a>
-</li>
 <li>BEBOP_ACCEL_RANGE
 : <a class="el" href="imu__bebop_8h.html#a70a016cc48bdbc25cbe6efbf5c26b7d1">imu_bebop.h</a>
+</li>
+<li>BEBOP_AE_AWB_CAMERA
+: <a class="el" href="bebop__ae__awb_8c.html#a307ee35918a5b9d018cd45008dc52e0d">bebop_ae_awb.c</a>
+</li>
+<li>BEBOP_AE_AWB_NICE
+: <a class="el" href="bebop__ae__awb_8c.html#a284b4e16ba6bed18cfbfa94a3ebd5537">bebop_ae_awb.c</a>
+</li>
+<li>BEBOP_AE_AWB_VERBOSE
+: <a class="el" href="bebop__ae__awb_8c.html#a6962194dc67d93f19be5944ca662f622">bebop_ae_awb.c</a>
+</li>
+<li>BEBOP_AE_BRIGHT_BINS
+: <a class="el" href="bebop__ae__awb_8c.html#adab9ff5d5f09a1224daca8f576be4216">bebop_ae_awb.c</a>
+</li>
+<li>BEBOP_AE_BRIGHT_IGNORE
+: <a class="el" href="bebop__ae__awb_8c.html#a0965587f24710502521831097dd67912">bebop_ae_awb.c</a>
+</li>
+<li>BEBOP_AE_DARK_BINS
+: <a class="el" href="bebop__ae__awb_8c.html#a83c198ad9b99805a56d56f95530d7496">bebop_ae_awb.c</a>
+</li>
+<li>BEBOP_AE_DARK_IGNORE
+: <a class="el" href="bebop__ae__awb_8c.html#a3997f925d1f521c066239fcd5e56aaff">bebop_ae_awb.c</a>
+</li>
+<li>BEBOP_AE_EXPOSURE_GAIN
+: <a class="el" href="bebop__ae__awb_8c.html#afa17363f98102a3670927b7579c3a2d5">bebop_ae_awb.c</a>
+</li>
+<li>BEBOP_AE_MIDDLE_INDEX
+: <a class="el" href="bebop__ae__awb_8c.html#ac03bc735ad889f022030dc90c879a676">bebop_ae_awb.c</a>
 </li>
 <li>BEBOP_AUTO_EXPOSURE
 : <a class="el" href="bebop__ae__awb_8c.html#a22ccf03b85fe69f13df21a4c7b1006dc">bebop_ae_awb.c</a>
@@ -513,11 +534,29 @@ $(document).ready(function(){initNavTree('globals_defs_b.html','');});
 <li>BEBOP_AUTO_WHITE_BALANCE
 : <a class="el" href="bebop__ae__awb_8c.html#a63d09bf64e982cb48cc90e09a1a8c42b">bebop_ae_awb.c</a>
 </li>
-<li>BEBOP_AWB_MAX_GAIN
-: <a class="el" href="bebop__ae__awb_8c.html#a1962415dd14a4079fc9ebcc2f26b61fc">bebop_ae_awb.c</a>
+<li>BEBOP_AWB_GAIN
+: <a class="el" href="bebop__ae__awb_8c.html#a0574fd7466e77a9bfcaa8422167d02fa">bebop_ae_awb.c</a>
 </li>
-<li>BEBOP_AWB_MIN_GAIN
-: <a class="el" href="bebop__ae__awb_8c.html#a3960593410df04cc79e7eff7706c77a3">bebop_ae_awb.c</a>
+<li>BEBOP_AWB_GAIN_SCHEDULING
+: <a class="el" href="bebop__ae__awb_8c.html#acd20764e5659ac9f4ea6287cb872f778">bebop_ae_awb.c</a>
+</li>
+<li>BEBOP_AWB_GAIN_SCHEDULING_STEP
+: <a class="el" href="bebop__ae__awb_8c.html#aaae03e0ab491a3d110ea32204578e0f2">bebop_ae_awb.c</a>
+</li>
+<li>BEBOP_AWB_GAIN_SCHEDULING_TARGET
+: <a class="el" href="bebop__ae__awb_8c.html#a707f8ab3c5c1f285ee2d3d132abd3374">bebop_ae_awb.c</a>
+</li>
+<li>BEBOP_AWB_GAIN_SCHEDULING_TOLERANCE
+: <a class="el" href="bebop__ae__awb_8c.html#ab487bd252afd24e060c02a6220a3f25b">bebop_ae_awb.c</a>
+</li>
+<li>BEBOP_AWB_MAX_GAINS
+: <a class="el" href="bebop__ae__awb_8c.html#ac5b4f8f8c0fc007532af027921931cb2">bebop_ae_awb.c</a>
+</li>
+<li>BEBOP_AWB_MIN_GAINS
+: <a class="el" href="bebop__ae__awb_8c.html#a431070d74fa5294c177086edbf30553b">bebop_ae_awb.c</a>
+</li>
+<li>BEBOP_AWB_MIN_GREY_PIXELS
+: <a class="el" href="bebop__ae__awb_8c.html#a43c8b73a010780ce9c15f74c5acea122">bebop_ae_awb.c</a>
 </li>
 <li>BEBOP_GYRO_RANGE
 : <a class="el" href="imu__bebop_8h.html#aa841c1a66da7ff3edb957875907ddc07">imu_bebop.h</a>
@@ -563,6 +602,15 @@ $(document).ready(function(){initNavTree('globals_defs_b.html','');});
 </li>
 <li>Block
 : <a class="el" href="common__flight__plan_8h.html#a3e749f8fe41a97ef62de0dd622dbe3e9">common_flight_plan.h</a>
+</li>
+<li>BLUE_U
+: <a class="el" href="pano__unwrap_8c.html#a7fb6faa30c3712178c0b0ec873a5f710">pano_unwrap.c</a>
+</li>
+<li>BLUE_V
+: <a class="el" href="pano__unwrap_8c.html#adead730de205c3ef477cd573f27067b5">pano_unwrap.c</a>
+</li>
+<li>BLUE_Y
+: <a class="el" href="pano__unwrap_8c.html#a208ed943fd98c679def4a5048c15669e">pano_unwrap.c</a>
 </li>
 <li>BLUEGIGA
 : <a class="el" href="datalink_8h.html#a833e12609ab35c67bd0bcd2d51eb3ed6">datalink.h</a>
@@ -673,8 +721,8 @@ $(document).ready(function(){initNavTree('globals_defs_b.html','');});
 : <a class="el" href="bebop_8h.html#a318522acd53f9093b0b51553ac2cd96c">bebop.h</a>
 </li>
 <li>BOARD_CHIMERA
-: <a class="el" href="chimera_2chibios_2v1_80_2board_8h.html#a380bee891ec2d53ab42ee637b0d9aa47">board.h</a>
-, <a class="el" href="chimera_8h.html#a380bee891ec2d53ab42ee637b0d9aa47">chimera.h</a>
+: <a class="el" href="chimera_8h.html#a380bee891ec2d53ab42ee637b0d9aa47">chimera.h</a>
+, <a class="el" href="chimera_2chibios_2v1_80_2board_8h.html#a380bee891ec2d53ab42ee637b0d9aa47">board.h</a>
 </li>
 <li>BOARD_CJMCU
 : <a class="el" href="cjmcu_8h.html#ac0317b07ed4e221518a953468e8595df">cjmcu.h</a>
@@ -698,9 +746,9 @@ $(document).ready(function(){initNavTree('globals_defs_b.html','');});
 : <a class="el" href="lisa__l__1_80_8h.html#a5dd43bf9103c4a464e35816ecda290ac">lisa_l_1.0.h</a>
 </li>
 <li>BOARD_LISA_M
-: <a class="el" href="lisa__m__2_80_8h.html#a7eeaab0a07ca1795ca1835de3438d88c">lisa_m_2.0.h</a>
+: <a class="el" href="lisa__m__1_80_8h.html#a7eeaab0a07ca1795ca1835de3438d88c">lisa_m_1.0.h</a>
 , <a class="el" href="lisa__m__2_81_8h.html#a7eeaab0a07ca1795ca1835de3438d88c">lisa_m_2.1.h</a>
-, <a class="el" href="lisa__m__1_80_8h.html#a7eeaab0a07ca1795ca1835de3438d88c">lisa_m_1.0.h</a>
+, <a class="el" href="lisa__m__2_80_8h.html#a7eeaab0a07ca1795ca1835de3438d88c">lisa_m_2.0.h</a>
 </li>
 <li>BOARD_LISA_MX
 : <a class="el" href="lisa__mx__common_8h.html#ad5ab672ed99e0ed22b94b1b1712024ac">lisa_mx_common.h</a>
@@ -709,7 +757,7 @@ $(document).ready(function(){initNavTree('globals_defs_b.html','');});
 : <a class="el" href="lisa__s__1_80_8h.html#a09c38bb059efc5446b99a7160bb92254">lisa_s_1.0.h</a>
 </li>
 <li>BOARD_NAME
-: <a class="el" href="chimera_2chibios_2v1_80_2board_8h.html#a02581754b212d533d96cde56c8145c9b">board.h</a>
+: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#a02581754b212d533d96cde56c8145c9b">board.h</a>
 </li>
 <li>BOARD_NAZE32
 : <a class="el" href="naze32__common_8h.html#aa154494d57f96a56b05a33d4af8ea132">naze32_common.h</a>
@@ -756,6 +804,9 @@ $(document).ready(function(){initNavTree('globals_defs_b.html','');});
 </li>
 <li>BOARD_SWING
 : <a class="el" href="swing_8h.html#a76ebf5bbee85d331327408c3da20838a">swing.h</a>
+</li>
+<li>BOOT1
+: <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#acb03234966d1b045245e028326d2e0b3">board.h</a>
 </li>
 <li>BOOZ_ANALOG_BARO_THRESHOLD
 : <a class="el" href="booz_2baro__board_8c.html#a67c9aca109fecabd8d15c3ac9cc8dae7">baro_board.c</a>
@@ -850,7 +901,7 @@ $(document).ready(function(){initNavTree('globals_defs_b.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Nov 8 2017 10:03:17 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:04:34 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

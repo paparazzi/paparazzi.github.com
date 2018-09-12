@@ -34,7 +34,7 @@ var searchData=
   ['umsd',['UMSD',['../usb__msd_8c.html#a763a87a3e47982d8a8bd7a69ac4dfaef',1,'usb_msd.c']]],
   ['unexpected_5fevent_5fcnt',['unexpected_event_cnt',['../group__i2c.html#a874ae9784489639f832a7b6d8b9d0993',1,'i2c_errors']]],
   ['unit',['unit',['../nav_8c.html#a04b783250b1673126fa3f4729cb2078e',1,'nav.c']]],
-  ['unused',['UNUSED',['../navigation_8c.html#a9314d7061c454ecf2111d3965db8f23f',1,'navigation.c']]],
+  ['unused',['UNUSED',['../rotorcraft_2navigation_8c.html#a9314d7061c454ecf2111d3965db8f23f',1,'navigation.c']]],
   ['up',['up',['../bmp085_8h.html#a0791e9daa8a0f7e55df65bcd1c900b5e',1,'Bmp085::up()'],['../light__solar_8c.html#a865f598ce218c5496c018323caf1fb4d',1,'up():&#160;light_solar.c'],['../light__solar_8h.html#a865f598ce218c5496c018323caf1fb4d',1,'up():&#160;light_solar.c']]],
   ['update_5fagl',['update_agl',['../lidar__lite_8h.html#aa9c9ac5c46e5938b4587cf76b7b70920',1,'LidarLite::update_agl()'],['../lidar__sf11_8h.html#a9695845bfd281bf81794989af057f69a',1,'LidarSF11::update_agl()'],['../px4flow__i2c_8h.html#a102449c4edfe9b3661618632f34fd223',1,'px4flow_data::update_agl()']]],
   ['update_5fmatrix',['Update_Matrix',['../ahrs__float__dcm_8c.html#ad127bd0b0b65b831860abe0ac9234672',1,'ahrs_float_dcm.c']]],

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -144,6 +144,9 @@ Source Files</h2>
 <li><a class="el" href="cv__opencvdemo_8c.html">modules/computer_vision/cv_opencvdemo.c</a></li>
 <li><a class="el" href="opencv__example_8cpp.html">modules/computer_vision/opencv_example.cpp</a></li>
 <li><a class="el" href="opencv__image__functions_8cpp.html">modules/computer_vision/opencv_image_functions.cpp</a></li>
+<li><a class="el" href="cv__opencvdemo_8c.html">modules/computer_vision/cv_opencvdemo.c</a></li>
+<li><a class="el" href="opencv__example_8cpp.html">modules/computer_vision/opencv_example.cpp</a></li>
+<li><a class="el" href="opencv__image__functions_8cpp.html">modules/computer_vision/opencv_image_functions.cpp</a></li>
 </ul>
 <h2><a class="anchor" id="module_xml__cv_opencvdemo"></a>
 Raw cv_opencvdemo.xml file:</h2>
@@ -170,19 +173,29 @@ Raw cv_opencvdemo.xml file:</h2>
 <div class="line">    &lt;file name=&quot;opencv_image_functions.cpp&quot;/&gt;</div>
 <div class="line">    &lt;flag name=&quot;CXXFLAGS&quot; value=&quot;I$(PAPARAZZI_SRC)/sw/ext/opencv_bebop/install/include&quot;/&gt;</div>
 <div class="line"></div>
-<div class="line">    &lt;flag name=&quot;LDFLAGS&quot; value=&quot;L$(PAPARAZZI_SRC)/sw/ext/opencv_bebop/install/lib&quot; /&gt;</div>
-<div class="line">    &lt;flag name=&quot;LDFLAGS&quot; value=&quot;lopencv_imgcodecs&quot; /&gt;</div>
-<div class="line">    &lt;flag name=&quot;LDFLAGS&quot; value=&quot;lopencv_imgproc&quot; /&gt;</div>
-<div class="line">    &lt;flag name=&quot;LDFLAGS&quot; value=&quot;lopencv_core&quot; /&gt;</div>
-<div class="line">    &lt;flag name=&quot;LDFLAGS&quot; value=&quot;L$(PAPARAZZI_HOME)/sw/ext/opencv_bebop/install/share/OpenCV/3rdparty/lib&quot; /&gt;</div>
-<div class="line">    &lt;flag name=&quot;LDFLAGS&quot; value=&quot;lzlib&quot; /&gt;</div>
-<div class="line">    &lt;flag name=&quot;LDFLAGS&quot; value=&quot;llibpng&quot; /&gt;</div>
-<div class="line">    &lt;flag name=&quot;LDFLAGS&quot; value=&quot;lstdc++&quot; /&gt;</div>
-<div class="line">    &lt;flag name=&quot;LDFLAGS&quot; value=&quot;ldl&quot; /&gt;</div>
-<div class="line">    &lt;flag name=&quot;LDFLAGS&quot; value=&quot;lm&quot; /&gt;</div>
-<div class="line">    &lt;flag name=&quot;LDFLAGS&quot; value=&quot;lpthread&quot; /&gt;</div>
-<div class="line">    &lt;flag name=&quot;LDFLAGS&quot; value=&quot;lrt&quot; /&gt;</div>
+<div class="line">  &lt;flag name=&quot;LDFLAGS&quot; value=&quot;L$(PAPARAZZI_HOME)/sw/ext/opencv_bebop/install/lib&quot; /&gt;</div>
+<div class="line">  &lt;flag name=&quot;LDFLAGS&quot; value=&quot;lopencv_world&quot; /&gt;</div>
+<div class="line">  &lt;flag name=&quot;LDFLAGS&quot; value=&quot;L$(PAPARAZZI_HOME)/sw/ext/opencv_bebop/install/share/OpenCV/3rdparty/lib&quot; /&gt;</div>
+<div class="line">  &lt;flag name=&quot;LDFLAGS&quot; value=&quot;ltegra_hal&quot; /&gt;</div>
+<div class="line">  &lt;flag name=&quot;LDFLAGS&quot; value=&quot;lzlib&quot; /&gt;</div>
+<div class="line">  &lt;flag name=&quot;LDFLAGS&quot; value=&quot;llibjpeg&quot; /&gt;</div>
+<div class="line">  &lt;flag name=&quot;LDFLAGS&quot; value=&quot;llibpng&quot; /&gt;</div>
+<div class="line">  &lt;flag name=&quot;LDFLAGS&quot; value=&quot;llibtiff&quot; /&gt;</div>
+<div class="line">  &lt;flag name=&quot;LDFLAGS&quot; value=&quot;lstdc++&quot; /&gt;</div>
+<div class="line">  &lt;flag name=&quot;LDFLAGS&quot; value=&quot;ldl&quot; /&gt;</div>
+<div class="line">  &lt;flag name=&quot;LDFLAGS&quot; value=&quot;lm&quot; /&gt;</div>
+<div class="line">  &lt;flag name=&quot;LDFLAGS&quot; value=&quot;lpthread&quot; /&gt;</div>
+<div class="line">  &lt;flag name=&quot;LDFLAGS&quot; value=&quot;lrt&quot; /&gt;</div>
 <div class="line"></div>
+<div class="line">  &lt;/makefile&gt;</div>
+<div class="line">  &lt;makefile target=&quot;nps&quot;&gt;</div>
+<div class="line">    &lt;file name=&quot;cv_opencvdemo.c&quot;/&gt;</div>
+<div class="line">    &lt;file name=&quot;opencv_example.cpp&quot;/&gt;</div>
+<div class="line">    &lt;file name=&quot;opencv_image_functions.cpp&quot;/&gt;</div>
+<div class="line">    &lt;raw&gt;</div>
+<div class="line">      nps.CXXFLAGS += $(shell pkg-config opencv --cflags)</div>
+<div class="line">      nps.LDFLAGS  += -lopencv_imgproc -lopencv_highgui -lopencv_core</div>
+<div class="line">    &lt;/raw&gt;</div>
 <div class="line">  &lt;/makefile&gt;</div>
 <div class="line">&lt;/module&gt;</div>
 </div><!-- fragment --> </div></div><!-- contents -->
@@ -191,7 +204,7 @@ Raw cv_opencvdemo.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Wed Nov 8 2017 10:02:50 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:04:00 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

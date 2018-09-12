@@ -4,6 +4,7 @@ var copilot__common_8c =
     [ "copilot_parse_cam_payload_dl", "copilot__common_8c.html#a59e05c9fee48850daf7dcf2a8d40f7fc", null ],
     [ "copilot_parse_cam_snapshot_dl", "copilot__common_8c.html#a45b997dd03ef29008f0c189157238133", null ],
     [ "copilot_parse_copilot_status_dl", "copilot__common_8c.html#a8b94bc3c335ccfb1b5b7d65df6789dc1", null ],
+    [ "copilot_parse_payload_command_dl", "copilot__common_8c.html#a6f66771f594519e6d3b8efd400ec4162", null ],
     [ "copilot_periodic", "copilot__common_8c.html#aff1f561b25724533f46290e86658c698", null ],
     [ "PPRZ_MUTEX", "copilot__common_8c.html#a41460231fbfe5a825c3902e22593e306", null ],
     [ "PPRZ_MUTEX", "copilot__common_8c.html#a7f183fd22ae1ee62b4cfb29f37a7b929", null ],

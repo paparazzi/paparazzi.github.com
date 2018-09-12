@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -447,11 +447,11 @@ $(document).ready(function(){initNavTree('meteo__stick_8c_source.html','');});
 <div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;      }</div>
 <div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;<span class="preprocessor">#else</span></div>
 <div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;      sdLogWriteLog(<a class="code" href="sdlog__chibios_8c.html#aa98230ec7c62b75b008363356fdefb4d">pprzLogFile</a>,</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;                    <span class="stringliteral">&quot;P(adc) T(adc) H(ticks) P_diff(adc) P(hPa) T(C) H(\%) CAS(m/s) FIX TOW(ms) WEEK Lat(1e7rad) Lon(1e7rad) HMSL(mm) GS(cm/s) course(1e7rad) VZ(cm/s)\n&quot;</span>);</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;                    <span class="stringliteral">&quot;P(adc) T(adc) H(ticks) P_diff(adc) P(hPa) T(C) H(%%) CAS(m/s) FIX TOW(ms) WEEK Lat(1e7rad) Lon(1e7rad) HMSL(mm) GS(cm/s) course(1e7rad) VZ(cm/s)\n&quot;</span>);</div>
 <div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;      log_ptu_started = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;      sdLogWriteLog(<a class="code" href="sdlog__chibios_8c.html#aa98230ec7c62b75b008363356fdefb4d">pprzLogFile</a>, <span class="stringliteral">&quot;%d %d %d %d %.2f %.2f %.2f %.2f %d %d %d %d %d %d %d %d %d\n&quot;</span>,</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;      sdLogWriteLog(<a class="code" href="sdlog__chibios_8c.html#aa98230ec7c62b75b008363356fdefb4d">pprzLogFile</a>, <span class="stringliteral">&quot;%lu %lu %lu %lu %.2f %.2f %.2f %.2f %d %lu %d %lu %lu %lu %d %lu %lu\n&quot;</span>,</div>
 <div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;                    <a class="code" href="meteo__stick_8c.html#a1dec660888ebffb6eb9d1c25d7ab44c0">meteo_stick</a>.<a class="code" href="meteo__stick_8h.html#a6cdccef828ca48eb680a7e1f4ad55e53">pressure</a>.<a class="code" href="ads1220_8h.html#adfef9ebbfea128c55c6bd5ad3d611ce8">data</a>, <a class="code" href="meteo__stick_8c.html#a1dec660888ebffb6eb9d1c25d7ab44c0">meteo_stick</a>.<a class="code" href="meteo__stick_8h.html#a64666c3aa0c1609f0d2d8e5b430131de">temperature</a>.<a class="code" href="ads1220_8h.html#adfef9ebbfea128c55c6bd5ad3d611ce8">data</a>,</div>
 <div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;                    <a class="code" href="meteo__stick_8c.html#a1dec660888ebffb6eb9d1c25d7ab44c0">meteo_stick</a>.<a class="code" href="meteo__stick_8h.html#a45a8536a8340bc57dd6539cf369a0c24">humidity_period</a>, <a class="code" href="meteo__stick_8c.html#a1dec660888ebffb6eb9d1c25d7ab44c0">meteo_stick</a>.<a class="code" href="meteo__stick_8h.html#a8df815c163b1d03862dbd31f6bb051b3">diff_pressure</a>.<a class="code" href="ads1220_8h.html#adfef9ebbfea128c55c6bd5ad3d611ce8">data</a>,</div>
 <div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;                    <a class="code" href="meteo__stick_8c.html#a1dec660888ebffb6eb9d1c25d7ab44c0">meteo_stick</a>.<a class="code" href="meteo__stick_8h.html#a414f5a2e36ce1e9a52ba3ae913926852">current_pressure</a>, <a class="code" href="meteo__stick_8c.html#a1dec660888ebffb6eb9d1c25d7ab44c0">meteo_stick</a>.<a class="code" href="meteo__stick_8h.html#a84b90fb9f263e982669a1320d7777b87">current_temperature</a>,</div>
@@ -642,7 +642,7 @@ $(document).ready(function(){initNavTree('meteo__stick_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_dcc9af59dc35b42e32db80b18066e136.html">meteo</a></li><li class="navelem"><a class="el" href="meteo__stick_8c.html">meteo_stick.c</a></li>
-    <li class="footer">Generated on Wed Nov 8 2017 10:01:43 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:02:49 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

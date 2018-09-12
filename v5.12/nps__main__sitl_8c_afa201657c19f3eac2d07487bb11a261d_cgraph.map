@@ -1,0 +1,51 @@
+<map id="nps_main_loop" name="nps_main_loop">
+<area shape="rect" id="node2" href="$nps__main__sitl_8c.html#a9a080385e191a932860731e6f511c775" title="nps_main_run_sim_step" alt="" coords="172,411,349,437"/>
+<area shape="rect" id="node50" href="$nps__main_8h.html#abde7f979f8df9c8db19de17ab6498ec2" title="time_to_double" alt="" coords="200,461,321,488"/>
+<area shape="rect" id="node3" href="$nps__atmosphere_8c.html#a67677167db3648e35b21ad5e7aab5e80" title="nps_atmosphere_update" alt="" coords="420,56,603,83"/>
+<area shape="rect" id="node6" href="$nps__autopilot_8h.html#a7ac376c868e8cec83ef082ac3beb9487" title="nps_autopilot_run_systime_step" alt="" coords="397,233,625,260"/>
+<area shape="rect" id="node8" href="$nps__fdm_8h.html#a4f72ff1c76415e3e41897d762122c5f8" title="Update the simulation state. " alt="" coords="441,411,581,437"/>
+<area shape="rect" id="node20" href="$nps__sensors_8c.html#acce77f76dcc7946ef7dfd9a522b47b63" title="nps_sensors_run_step" alt="" coords="429,917,594,944"/>
+<area shape="rect" id="node31" href="$nps__autopilot_8h.html#a12870aaa609d4860004be3cec4c8cf2a" title="nps_autopilot_run_step" alt="" coords="426,1681,597,1708"/>
+<area shape="rect" id="node4" href="$nps__fdm_8h.html#ac07a0f8dffd889c21a81979e521a8d97" title="nps_fdm_set_turbulence" alt="" coords="688,5,867,32"/>
+<area shape="rect" id="node5" href="$nps__fdm_8h.html#a05c90019f11f90f6855e9b0c3224b4a3" title="nps_fdm_set_wind_ned" alt="" coords="692,56,863,83"/>
+<area shape="rect" id="node7" href="$chibios_2mcu__periph_2sys__time__arch_8c.html#a69effd654e3a455f2f0bba7b270eab48" title="sys_tick_handler" alt="" coords="714,107,841,133"/>
+<area shape="rect" id="node9" href="$nps__fdm__jsbsim_8cpp.html#aa8d531348a8fbe30accc30952915a90d" title="Checks NpsFdm struct for NaNs. " alt="" coords="720,157,835,184"/>
+<area shape="rect" id="node10" href="$nps__fdm__crrcsim_8c.html#a8321162c08bf2560073a99ea18d5a045" title="decode_ahrspacket" alt="" coords="704,208,851,235"/>
+<area shape="rect" id="node11" href="$nps__fdm__crrcsim_8c.html#af6bebbe57b1e739c8b1565a483f91597" title="decode_gpspacket" alt="" coords="706,259,849,285"/>
+<area shape="rect" id="node12" href="$nps__fdm__crrcsim_8c.html#ac37d179a4a680d5869427c60c0ef8c25" title="decode_imupacket" alt="" coords="706,309,849,336"/>
+<area shape="rect" id="node13" href="$nps__fdm__jsbsim_8cpp.html#ac3f41f22e543ac14794eecd306681e76" title="Feed JSBSim with the latest actuator commands. " alt="" coords="728,360,827,387"/>
+<area shape="rect" id="node14" href="$nps__fdm__jsbsim_8cpp.html#a2d617cee29889c9d6592f9978dfa8a31" title="Populates the NPS fdm struct after a simulation step. " alt="" coords="730,411,825,437"/>
+<area shape="rect" id="node15" href="$nps__fdm__gazebo_8cpp.html#a9708e7004fa19d0d9fbbbf480fa7829b" title="Read Gazebo&#39;s simulation state and store the results in the fdm struct used by NPS. " alt="" coords="725,461,830,488"/>
+<area shape="rect" id="node16" href="$nps__fdm__gazebo_8cpp.html#a94dca1c6f71f62b84d6e35c1a5c0d6fc" title="Write actuator commands to Gazebo. " alt="" coords="724,512,831,539"/>
+<area shape="rect" id="node17" href="$nps__fdm__crrcsim_8c.html#a67337675973f93b9ab3cd01a3e5d2435" title="get_msg" alt="" coords="738,563,817,589"/>
+<area shape="rect" id="node18" href="$nps__fdm__gazebo_8cpp.html#acf1b27b2902f5682b920ee9420619a10" title="Set up a Gazebo server. " alt="" coords="730,613,825,640"/>
+<area shape="rect" id="node19" href="$nps__fdm__crrcsim_8c.html#a75978090ea593009549c5dc324e060f1" title="send_servo_cmd" alt="" coords="712,664,843,691"/>
+<area shape="rect" id="node21" href="$nps__sensor__gyro_8c.html#a0e6d7f6637deebfa2e530c1d17d8145a" title="nps_sensor_gyro_run_step" alt="" coords="681,715,874,741"/>
+<area shape="rect" id="node22" href="$nps__sensor__accel_8c.html#a6dde36646613cb09a8a384af3c85b9e6" title="nps_sensor_accel_run_step" alt="" coords="678,765,877,792"/>
+<area shape="rect" id="node23" href="$nps__sensor__mag_8c.html#afd402828074c485d02f9ceb00e384b03" title="nps_sensor_mag_run_step" alt="" coords="680,816,875,843"/>
+<area shape="rect" id="node24" href="$nps__sensor__baro_8c.html#ac776435b52b441f95b61ecff4a6f2762" title="nps_sensor_baro_run_step" alt="" coords="680,867,875,893"/>
+<area shape="rect" id="node25" href="$nps__sensor__gps_8c.html#a8b6a7e5d571ffcdd482b49cef2e2efe4" title="nps_sensor_gps_run_step" alt="" coords="683,917,871,944"/>
+<area shape="rect" id="node26" href="$nps__sensor__sonar_8c.html#a4e2b27eb6c2f7ed609f9b0a9d59368c4" title="nps_sensor_sonar_run_step" alt="" coords="677,968,878,995"/>
+<area shape="rect" id="node27" href="$nps__sensor__airspeed_8c.html#a7ea8fb956ea4cec723729964031915d5" title="nps_sensor_airspeed\l_run_step" alt="" coords="699,1019,856,1061"/>
+<area shape="rect" id="node28" href="$nps__sensor__temperature_8c.html#a9b3050705f61f467495ad96d989afd0c" title="nps_sensor_temperature\l_run_step" alt="" coords="686,1085,869,1126"/>
+<area shape="rect" id="node29" href="$nps__sensor__aoa_8c.html#aff4573dfb3981359e087728798b18c23" title="nps_sensor_aoa_run_step" alt="" coords="683,1151,872,1177"/>
+<area shape="rect" id="node30" href="$nps__sensor__sideslip_8c.html#ac9586b3051a603d9375a8b986a279cb3" title="nps_sensor_sideslip\l_run_step" alt="" coords="703,1202,852,1243"/>
+<area shape="rect" id="node32" href="$autopilot_8c.html#a6b52f0f9cd2cbf420a77029513ea6f35" title="get motors status " alt="" coords="686,1268,869,1295"/>
+<area shape="rect" id="node33" href="$gps__sim__nps_8c.html#a4bf6eb34827c681440149b78bbc12dd0" title="gps_feed_value" alt="" coords="717,1319,838,1345"/>
+<area shape="rect" id="node34" href="$main_8h.html#acfa2a521a46d9beb8a3fa77bb0c9e407" title="handle_periodic_tasks" alt="" coords="696,1369,859,1396"/>
+<area shape="rect" id="node35" href="$imu__nps_8c.html#a3eda401c67dfeee490285016ec944e48" title="imu_feed_gyro_accel" alt="" coords="699,1420,855,1447"/>
+<area shape="rect" id="node36" href="$imu__nps_8c.html#a18428bf984166238838fe9d1a4842b5e" title="imu_feed_mag" alt="" coords="719,1471,836,1497"/>
+<area shape="rect" id="node37" href="$stm32_2uart__tunnel_8c.html#a319a645047f275499aa30b0bc08c6e10" title="main_event" alt="" coords="729,1521,826,1548"/>
+<area shape="rect" id="node38" href="$nps__electrical_8c.html#aec79a7c89cea748d7a4696ad97548796" title="nps_electrical_run_step" alt="" coords="691,1572,863,1599"/>
+<area shape="rect" id="node39" href="$nps__radio__control_8c.html#a2a652ae30e8858d65f3e811509a795dd" title="nps_radio_control_available" alt="" coords="678,1623,877,1649"/>
+<area shape="rect" id="node40" href="$nps__sensors_8c.html#a25bed254695b7ef285fef3b65a0e70c8" title="nps_sensors_airspeed\l_available" alt="" coords="695,1674,859,1715"/>
+<area shape="rect" id="node41" href="$nps__sensors_8c.html#a9f0d5924c701b7e2fc354376eb732153" title="nps_sensors_aoa_available" alt="" coords="679,1740,875,1767"/>
+<area shape="rect" id="node42" href="$nps__sensors_8c.html#ab2b1a34f57c46d5023b6b55c5b542138" title="nps_sensors_baro_available" alt="" coords="677,1791,878,1817"/>
+<area shape="rect" id="node43" href="$nps__sensors_8c.html#a6471e7a5ca66a4873c85a486cc894d69" title="nps_sensors_gps_available" alt="" coords="680,1841,875,1868"/>
+<area shape="rect" id="node44" href="$nps__sensors_8c.html#ab784120436efbbdf3c1e9a2b9796e39e" title="nps_sensors_gyro_available" alt="" coords="677,1892,877,1919"/>
+<area shape="rect" id="node45" href="$nps__sensors_8c.html#a52e8a37d2424731646987d22544007d8" title="nps_sensors_mag_available" alt="" coords="677,1943,878,1969"/>
+<area shape="rect" id="node46" href="$nps__sensors_8c.html#a7d784592fe366c7f75569573b5736cda" title="nps_sensors_sideslip\l_available" alt="" coords="699,1994,855,2035"/>
+<area shape="rect" id="node47" href="$nps__sensors_8c.html#a315436c4d4ba6802a27789ffd4ec148d" title="nps_sensors_sonar_available" alt="" coords="673,2060,881,2087"/>
+<area shape="rect" id="node48" href="$nps__sensors_8c.html#af63006fb01eb11e0ba786370dccc518e" title="nps_sensors_temperature\l_available" alt="" coords="682,2111,873,2153"/>
+<area shape="rect" id="node49" href="$ins__vectornav_8c.html#aa01d3425df2eb0f33ced38c9d8fa8f05" title="PRINT_CONFIG_MSG" alt="" coords="702,2177,853,2204"/>
+</map>

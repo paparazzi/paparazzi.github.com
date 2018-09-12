@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -270,7 +270,7 @@ tx_insert_idx</td>
 
 <p>Definition at line <a class="el" href="udp_8h_source.html#l00035">35</a> of file <a class="el" href="udp_8h_source.html">udp.h</a>.</p>
 
-<p>Referenced by <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html#l00081">udp_char_available()</a>, <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html#l00097">udp_getch()</a>, and <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html#l00109">udp_receive()</a>.</p>
+<p>Referenced by <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html#l00083">udp_char_available()</a>, <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html#l00099">udp_getch()</a>, and <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html#l00111">udp_receive()</a>.</p>
 
 </div>
 </div>
@@ -336,7 +336,7 @@ tx_insert_idx</td>
 <p>Initialize the UDP peripheral. </p>
 <p>Allocate <a class="el" href="udp__socket_8h.html#structUdpSocket">UdpSocket</a> struct and create and bind the UDP socket. </p>
 
-<p>Definition at line <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html#l00069">69</a> of file <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html">udp_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html#l00071">71</a> of file <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html">udp_arch.c</a>.</p>
 
 <p>References <a class="el" href="udp_8h_source.html#l00047">udp_periph::network</a>, and <a class="el" href="udp__socket_8c_source.html#l00049">udp_socket_create()</a>.</p>
 
@@ -389,11 +389,11 @@ tx_insert_idx</td>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>number of bytes available in receive buffer </dd></dl>
 
-<p>Definition at line <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html#l00081">81</a> of file <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html">udp_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html#l00083">83</a> of file <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html">udp_arch.c</a>.</p>
 
 <p>References <a class="el" href="udp_8h_source.html#l00042">udp_periph::rx_extract_idx</a>, <a class="el" href="udp_8h_source.html#l00041">udp_periph::rx_insert_idx</a>, and <a class="el" href="udp_8h_source.html#l00035">UDP_RX_BUFFER_SIZE</a>.</p>
 
-<p>Referenced by <a class="el" href="udp_8c_source.html#l00060">udp_periph_init()</a>, and <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html#l00109">udp_receive()</a>.</p>
+<p>Referenced by <a class="el" href="udp_8c_source.html#l00060">udp_periph_init()</a>, and <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html#l00111">udp_receive()</a>.</p>
 
 <p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -490,7 +490,7 @@ tx_insert_idx</td>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>last byte </dd></dl>
 
-<p>Definition at line <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html#l00097">97</a> of file <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html">udp_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html#l00099">99</a> of file <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html">udp_arch.c</a>.</p>
 
 <p>References <a class="el" href="udp_8h_source.html#l00040">udp_periph::rx_buf</a>, <a class="el" href="udp_8h_source.html#l00042">udp_periph::rx_extract_idx</a>, and <a class="el" href="udp_8h_source.html#l00035">UDP_RX_BUFFER_SIZE</a>.</p>
 
@@ -555,7 +555,7 @@ tx_insert_idx</td>
 
 <p>Definition at line <a class="el" href="udp_8c_source.html#l00060">60</a> of file <a class="el" href="udp_8c_source.html">udp.c</a>.</p>
 
-<p>References <a class="el" href="udp_8h_source.html#l00049">udp_periph::device</a>, <a class="el" href="udp_8h_source.html#l00042">udp_periph::rx_extract_idx</a>, <a class="el" href="udp_8h_source.html#l00041">udp_periph::rx_insert_idx</a>, <a class="el" href="udp_8h_source.html#l00045">udp_periph::tx_insert_idx</a>, <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html#l00069">udp_arch_periph_init()</a>, <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html#l00081">udp_char_available()</a>, <a class="el" href="udp_8c_source.html#l00083">udp_check_free_space()</a>, <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html#l00097">udp_getch()</a>, <a class="el" href="udp_8c_source.html#l00103">udp_put_buffer()</a>, <a class="el" href="udp_8c_source.html#l00093">udp_put_byte()</a>, and <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html#l00142">udp_send_message()</a>.</p>
+<p>References <a class="el" href="udp_8h_source.html#l00049">udp_periph::device</a>, <a class="el" href="udp_8h_source.html#l00042">udp_periph::rx_extract_idx</a>, <a class="el" href="udp_8h_source.html#l00041">udp_periph::rx_insert_idx</a>, <a class="el" href="udp_8h_source.html#l00045">udp_periph::tx_insert_idx</a>, <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html#l00071">udp_arch_periph_init()</a>, <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html#l00083">udp_char_available()</a>, <a class="el" href="udp_8c_source.html#l00083">udp_check_free_space()</a>, <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html#l00099">udp_getch()</a>, <a class="el" href="udp_8c_source.html#l00103">udp_put_buffer()</a>, <a class="el" href="udp_8c_source.html#l00093">udp_put_byte()</a>, and <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html#l00144">udp_send_message()</a>.</p>
 
 <p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -699,11 +699,11 @@ tx_insert_idx</td>
 
 <p>Read bytes from UDP. </p>
 
-<p>Definition at line <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html#l00109">109</a> of file <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html">udp_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html#l00111">111</a> of file <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html">udp_arch.c</a>.</p>
 
-<p>References <a class="el" href="udp__socket_8h_source.html#l00036">UdpSocket::addr_in</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00605">if()</a>, <a class="el" href="udp_8h_source.html#l00047">udp_periph::network</a>, <a class="el" href="udp_8h_source.html#l00040">udp_periph::rx_buf</a>, <a class="el" href="udp_8h_source.html#l00041">udp_periph::rx_insert_idx</a>, <a class="el" href="udp__socket_8h_source.html#l00035">UdpSocket::sockfd</a>, <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html#l00081">udp_char_available()</a>, and <a class="el" href="udp_8h_source.html#l00035">UDP_RX_BUFFER_SIZE</a>.</p>
+<p>References <a class="el" href="udp__socket_8h_source.html#l00036">UdpSocket::addr_in</a>, <a class="el" href="udp_8h_source.html#l00047">udp_periph::network</a>, <a class="el" href="udp_8h_source.html#l00040">udp_periph::rx_buf</a>, <a class="el" href="udp_8h_source.html#l00041">udp_periph::rx_insert_idx</a>, <a class="el" href="udp__socket_8h_source.html#l00035">UdpSocket::sockfd</a>, <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html#l00083">udp_char_available()</a>, and <a class="el" href="udp_8h_source.html#l00035">UDP_RX_BUFFER_SIZE</a>.</p>
 
-<p>Referenced by <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html#l00181">udp_thread()</a>.</p>
+<p>Referenced by <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html#l00182">udp_thread()</a>.</p>
 
 <p><div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -712,7 +712,7 @@ tx_insert_idx</td>
 <div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="udp_8h_a23264d73f7cf6197c139bf6841da1ee2_cgraph.png" border="0" usemap="#udp_8h_a23264d73f7cf6197c139bf6841da1ee2_cgraph" alt=""/></div>
 <map name="udp_8h_a23264d73f7cf6197c139bf6841da1ee2_cgraph" id="udp_8h_a23264d73f7cf6197c139bf6841da1ee2_cgraph">
-<area shape="rect" id="node2" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a14a004ce07f47580a6800c76982ea599" title="if" alt="" coords="205,5,243,32"/><area shape="rect" id="node3" href="linux_2mcu__periph_2udp__arch_8c.html#a36a5847da7a6cd7e824bbf1366505aa1" title="Get number of bytes available in receive buffer. " alt="" coords="152,56,296,83"/></map>
+<area shape="rect" id="node2" href="linux_2mcu__periph_2udp__arch_8c.html#a36a5847da7a6cd7e824bbf1366505aa1" title="Get number of bytes available in receive buffer. " alt="" coords="152,5,296,32"/></map>
 </div>
 </p>
 
@@ -755,28 +755,17 @@ tx_insert_idx</td>
 
 <p>Send a message. </p>
 
-<p>Definition at line <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html#l00142">142</a> of file <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html">udp_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html#l00144">144</a> of file <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html">udp_arch.c</a>.</p>
 
-<p>References <a class="el" href="udp__socket_8h_source.html#l00037">UdpSocket::addr_out</a>, <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00605">if()</a>, <a class="el" href="udp_8h_source.html#l00047">udp_periph::network</a>, <a class="el" href="udp__socket_8h_source.html#l00035">UdpSocket::sockfd</a>, <a class="el" href="udp_8h_source.html#l00044">udp_periph::tx_buf</a>, and <a class="el" href="udp_8h_source.html#l00045">udp_periph::tx_insert_idx</a>.</p>
+<p>References <a class="el" href="udp__socket_8h_source.html#l00037">UdpSocket::addr_out</a>, <a class="el" href="udp_8h_source.html#l00047">udp_periph::network</a>, <a class="el" href="udp__socket_8h_source.html#l00035">UdpSocket::sockfd</a>, <a class="el" href="udp_8h_source.html#l00044">udp_periph::tx_buf</a>, and <a class="el" href="udp_8h_source.html#l00045">udp_periph::tx_insert_idx</a>.</p>
 
 <p>Referenced by <a class="el" href="udp_8c_source.html#l00060">udp_periph_init()</a>.</p>
 
 <p><div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-13-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-13-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="udp_8h_acd1365113847d9c844e256228443af2d_cgraph.png" border="0" usemap="#udp_8h_acd1365113847d9c844e256228443af2d_cgraph" alt=""/></div>
-<map name="udp_8h_acd1365113847d9c844e256228443af2d_cgraph" id="udp_8h_acd1365113847d9c844e256228443af2d_cgraph">
-<area shape="rect" id="node2" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a14a004ce07f47580a6800c76982ea599" title="if" alt="" coords="204,5,243,32"/></map>
-</div>
-</p>
-
-<p><div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-14-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="udp_8h_acd1365113847d9c844e256228443af2d_icgraph.png" border="0" usemap="#udp_8h_acd1365113847d9c844e256228443af2d_icgraph" alt=""/></div>
 <map name="udp_8h_acd1365113847d9c844e256228443af2d_icgraph" id="udp_8h_acd1365113847d9c844e256228443af2d_icgraph">
 <area shape="rect" id="node2" href="udp_8h.html#a1f1d82b302692d0e1c6b01db1b03f6ea" title="Initialize the UDP peripheral. " alt="" coords="204,5,323,32"/></map>
@@ -823,7 +812,7 @@ tx_insert_idx</td>
 
 <p>Send a packet from another buffer. </p>
 
-<p>Definition at line <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html#l00168">168</a> of file <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html">udp_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html#l00169">169</a> of file <a class="el" href="linux_2mcu__periph_2udp__arch_8c_source.html">udp_arch.c</a>.</p>
 
 <p>References <a class="el" href="udp__socket_8h_source.html#l00037">UdpSocket::addr_out</a>, <a class="el" href="udp_8h_source.html#l00047">udp_periph::network</a>, and <a class="el" href="udp__socket_8h_source.html#l00035">UdpSocket::sockfd</a>.</p>
 
@@ -835,7 +824,7 @@ tx_insert_idx</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_1ca43f6a116d741d80fb1d0555a2b198.html">mcu_periph</a></li><li class="navelem"><a class="el" href="udp_8h.html">udp.h</a></li>
-    <li class="footer">Generated on Wed Nov 8 2017 10:02:15 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:03:24 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -4,7 +4,6 @@ var stereocam_8c =
     [ "STEREO_BODY_TO_STEREO_PHI", "stereocam_8c.html#a08db0e99eabe15b2717deb9be612d236", null ],
     [ "STEREO_BODY_TO_STEREO_PSI", "stereocam_8c.html#a398a3636c8477587fed7d924fd625a13", null ],
     [ "STEREO_BODY_TO_STEREO_THETA", "stereocam_8c.html#a5bca2e27869ba002c0196a9291ab3592", null ],
-    [ "STEREOCAM2STATE_SENDER_ID", "stereocam_8c.html#a0138123dc90ec0b8d486f60404154060", null ],
     [ "STEREOCAM_USE_MEDIAN_FILTER", "stereocam_8c.html#a43e9c9e974b315267dbaf02e1828154f", null ],
     [ "state2stereocam", "stereocam_8c.html#a8e79296f77859c1cee9e52f993af1fd9", null ],
     [ "stereocam_event", "stereocam_8c.html#a95bf6b29adccc637ae2d86539a211d28", null ],

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -190,7 +190,7 @@ $(document).ready(function(){initNavTree('nav__line__border_8c_source.html','');
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keywordflow">switch</span> (<a class="code" href="nav__line__border_8c.html#ad5923d4cae4a0d6912fbe7b761930ee5">line_border_status</a>) {</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="nav__line__border_8c.html#ad5923d4cae4a0d6912fbe7b761930ee5acfcd68d903867d509a779613b2ccfba5">LR12</a>:</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;      <a class="code" href="nav_8h.html#ace040d4295064ba78ba5c0339fb5fc9d">NavSegment</a>(l2, l1);</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="nav_8h.html#a6abc4155795f1dda277c3246557348dc">NavApproachingFrom</a>(l1, l2, <a class="code" href="navigation_8h.html#a85685a489a01120ee0b7aab3fb9934fd">CARROT</a>)) {</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="nav_8h.html#a6abc4155795f1dda277c3246557348dc">NavApproachingFrom</a>(l1, l2, <a class="code" href="rotorcraft_2navigation_8h.html#a85685a489a01120ee0b7aab3fb9934fd">CARROT</a>)) {</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <a class="code" href="nav__line__border_8c.html#ad5923d4cae4a0d6912fbe7b761930ee5">line_border_status</a> = <a class="code" href="nav__line__border_8c.html#ad5923d4cae4a0d6912fbe7b761930ee5a04ad51045635dee83d454860ae6b135c">LQC21</a>;</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <a class="code" href="nav_8c.html#a2580ee456d7dd3d157fd7c43ad2eac2d">nav_init_stage</a>();</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      }</div>
@@ -212,7 +212,7 @@ $(document).ready(function(){initNavTree('nav__line__border_8c_source.html','');
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="nav__line__border_8c.html#ad5923d4cae4a0d6912fbe7b761930ee5a383219705a1e85c6f680e43d1f304f5b">LR21</a>:</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;      <a class="code" href="nav_8h.html#ace040d4295064ba78ba5c0339fb5fc9d">NavSegment</a>(l1, l2);</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="nav_8h.html#a6abc4155795f1dda277c3246557348dc">NavApproachingFrom</a>(l2, l1, <a class="code" href="navigation_8h.html#a85685a489a01120ee0b7aab3fb9934fd">CARROT</a>)) {</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="nav_8h.html#a6abc4155795f1dda277c3246557348dc">NavApproachingFrom</a>(l2, l1, <a class="code" href="rotorcraft_2navigation_8h.html#a85685a489a01120ee0b7aab3fb9934fd">CARROT</a>)) {</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <a class="code" href="nav__line__border_8c.html#ad5923d4cae4a0d6912fbe7b761930ee5">line_border_status</a> = <a class="code" href="nav__line__border_8c.html#ad5923d4cae4a0d6912fbe7b761930ee5ad74fa6a689e1a6c8373a3359bba8d124">LTC1</a>;</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <a class="code" href="nav_8c.html#a2580ee456d7dd3d157fd7c43ad2eac2d">nav_init_stage</a>();</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;      }</div>
@@ -264,18 +264,18 @@ $(document).ready(function(){initNavTree('nav__line__border_8c_source.html','');
 <div class="ttc" id="types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00014">types.h:14</a></div></div>
 <div class="ttc" id="common__nav_8c_html_a94e2a3864e1c0746e69eb9cda1061c62"><div class="ttname"><a href="common__nav_8c.html#a94e2a3864e1c0746e69eb9cda1061c62">waypoints</a></div><div class="ttdeci">struct point waypoints[NB_WAYPOINT]</div><div class="ttdoc">size == nb_waypoint, waypoint 0 is a dummy waypoint </div><div class="ttdef"><b>Definition:</b> <a href="common__nav_8c_source.html#l00038">common_nav.c:38</a></div></div>
 <div class="ttc" id="nav__line__border_8c_html_ad5923d4cae4a0d6912fbe7b761930ee5ad74fa6a689e1a6c8373a3359bba8d124"><div class="ttname"><a href="nav__line__border_8c.html#ad5923d4cae4a0d6912fbe7b761930ee5ad74fa6a689e1a6c8373a3359bba8d124">LTC1</a></div><div class="ttdef"><b>Definition:</b> <a href="nav__line__border_8c_source.html#l00037">nav_line_border.c:37</a></div></div>
-<div class="ttc" id="navigation_8h_html_a85685a489a01120ee0b7aab3fb9934fd"><div class="ttname"><a href="navigation_8h.html#a85685a489a01120ee0b7aab3fb9934fd">CARROT</a></div><div class="ttdeci">#define CARROT</div><div class="ttdoc">default approaching_time for a wp </div><div class="ttdef"><b>Definition:</b> <a href="navigation_8h_source.html#l00040">navigation.h:40</a></div></div>
 <div class="ttc" id="common__nav_8h_html_a7bb43530a17e55615fa418ff9f914991"><div class="ttname"><a href="common__nav_8h.html#a7bb43530a17e55615fa418ff9f914991">point::a</a></div><div class="ttdeci">float a</div><div class="ttdef"><b>Definition:</b> <a href="common__nav_8h_source.html#l00042">common_nav.h:42</a></div></div>
 <div class="ttc" id="nav__line__border_8c_html_ad5923d4cae4a0d6912fbe7b761930ee5a383219705a1e85c6f680e43d1f304f5b"><div class="ttname"><a href="nav__line__border_8c.html#ad5923d4cae4a0d6912fbe7b761930ee5a383219705a1e85c6f680e43d1f304f5b">LR21</a></div><div class="ttdef"><b>Definition:</b> <a href="nav__line__border_8c_source.html#l00037">nav_line_border.c:37</a></div></div>
 <div class="ttc" id="nav_8h_html"><div class="ttname"><a href="nav_8h.html">nav.h</a></div><div class="ttdoc">Fixedwing Navigation library. </div></div>
 <div class="ttc" id="nav__line__border_8c_html_ad5923d4cae4a0d6912fbe7b761930ee5acfcd68d903867d509a779613b2ccfba5"><div class="ttname"><a href="nav__line__border_8c.html#ad5923d4cae4a0d6912fbe7b761930ee5acfcd68d903867d509a779613b2ccfba5">LR12</a></div><div class="ttdef"><b>Definition:</b> <a href="nav__line__border_8c_source.html#l00037">nav_line_border.c:37</a></div></div>
+<div class="ttc" id="rotorcraft_2navigation_8h_html_a85685a489a01120ee0b7aab3fb9934fd"><div class="ttname"><a href="rotorcraft_2navigation_8h.html#a85685a489a01120ee0b7aab3fb9934fd">CARROT</a></div><div class="ttdeci">#define CARROT</div><div class="ttdoc">default approaching_time for a wp </div><div class="ttdef"><b>Definition:</b> <a href="rotorcraft_2navigation_8h_source.html#l00040">navigation.h:40</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_984e899df90dd104b2eabcdbb76ec71f.html">nav</a></li><li class="navelem"><a class="el" href="nav__line__border_8c.html">nav_line_border.c</a></li>
-    <li class="footer">Generated on Wed Nov 8 2017 10:01:44 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:02:50 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

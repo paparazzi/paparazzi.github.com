@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -168,8 +168,17 @@ $(document).ready(function(){initNavTree('globals_defs_e.html','');});
 <li>ECEF_FLOAT_OF_BFP
 : <a class="el" href="group__math__geodetic__int.html#ga32b7872d03139c904b76beed354cc68d">pprz_geodetic_int.h</a>
 </li>
+<li>eigen_assert
+: <a class="el" href="ins__mekf__wind_8cpp.html#a8e2ca28851f1191a2d4d32d715f10ee7">ins_mekf_wind.cpp</a>
+</li>
 <li>Eight
 : <a class="el" href="nav_8h.html#aefc5a52ca873a9bfb3e1d31a261338a4">nav.h</a>
+</li>
+<li>EKF_M
+: <a class="el" href="discrete__ekf_8h.html#afdccae2f6ac5625fa693b2646b02a529">discrete_ekf.h</a>
+</li>
+<li>EKF_N
+: <a class="el" href="discrete__ekf_8h.html#aa77a36f2da098625f2ef7618b8de7627">discrete_ekf.h</a>
 </li>
 <li>ELECTRICAL_PERIODIC_FREQ
 : <a class="el" href="electrical_8c.html#a38f71d2a8af148d19587556e77ce0f58">electrical.c</a>
@@ -396,12 +405,6 @@ $(document).ready(function(){initNavTree('globals_defs_e.html','');});
 <li>EULERS_SUB
 : <a class="el" href="group__math__algebra__generic.html#ga5c1aa49d0a35b999863609bf7f070a6d">pprz_algebra.h</a>
 </li>
-<li>EVALUATOR2
-: <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a39e0ec33ee11ed6450cd16f46ad9d79f">spektrum_arch.c</a>
-</li>
-<li>EVALUATOR3
-: <a class="el" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a631908660ded7a879bd3e6c688f363bd">spektrum_arch.c</a>
-</li>
 <li>EVT_BOT_RESET
 : <a class="el" href="usb__msd_8h.html#a8aff3cb65bed52e7fba0f0ce8a5be8c2">usb_msd.h</a>
 </li>
@@ -443,9 +446,6 @@ $(document).ready(function(){initNavTree('globals_defs_e.html','');});
 </li>
 <li>EXHAUSTIVE_FAST
 : <a class="el" href="opticflow__calculator_8c.html#a8ec04431f08f3a2b5b61f1558e9c30a5">opticflow_calculator.c</a>
-</li>
-<li>exit
-: <a class="el" href="kremlib_8h.html#a2c0fc8fb2a170824c3e134b3e7a4a1e9">kremlib.h</a>
 </li>
 <li>EXPAND_AS_ENUM
 : <a class="el" href="libisp_8h.html#ad337cbf142f664987d730085a31700fe">libisp.h</a>
@@ -522,7 +522,7 @@ $(document).ready(function(){initNavTree('globals_defs_e.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Nov 8 2017 10:03:17 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:04:34 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

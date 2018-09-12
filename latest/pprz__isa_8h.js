@@ -1,5 +1,7 @@
 var pprz__isa_8h =
 [
+    [ "CelsiusOfKelvin", "group__math__isa.html#gac4f09249f783c161c64374c3ef5e26a6", null ],
+    [ "KelvinOfCelsius", "group__math__isa.html#ga00054dde81814240e486b3b65f4b44b7", null ],
     [ "PPRZ_ISA_AIR_DENSITY", "group__math__isa.html#ga7d0c2f65195eccd628c465918fef843b", null ],
     [ "PPRZ_ISA_AIR_GAS_CONSTANT", "group__math__isa.html#gafa91f419878630665f68348e39fc23f0", null ],
     [ "PPRZ_ISA_GAS_CONSTANT", "group__math__isa.html#ga9bdc2f4f1eb8a54e79b08361726ccf63", null ],
@@ -14,5 +16,6 @@ var pprz__isa_8h =
     [ "pprz_isa_pressure_of_altitude", "group__math__isa.html#ga64a5320121c2e4fcd276a8434fa18c7b", null ],
     [ "pprz_isa_pressure_of_height", "group__math__isa.html#ga2637c638b53cdee6290f333ad8782fa5", null ],
     [ "pprz_isa_ref_pressure_of_height_full", "group__math__isa.html#gafdec5e2681fb1665fc5c6da7ed86e0a7", null ],
+    [ "pprz_isa_temperature_of_altitude", "group__math__isa.html#ga889c38e2942d13f6bd92deeb331f63a0", null ],
     [ "PPRZ_ISA_M_OF_P_CONST", "group__math__isa.html#gac4015c2a2916f2ee2151f6bf6083a1ed", null ]
 ];

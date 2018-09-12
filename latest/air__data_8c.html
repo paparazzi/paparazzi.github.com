@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -148,6 +148,9 @@ Macros</h2></td></tr>
 <tr class="memitem:a440cf3b07b64526d4f7cfa8d212e2a1d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="air__data_8c.html#a440cf3b07b64526d4f7cfa8d212e2a1d">AIR_DATA_AIRSPEED_ID</a>&#160;&#160;&#160;<a class="el" href="abi__common_8h.html#a89a673124c7bb521be4e42d4bc0d29cb">ABI_BROADCAST</a></td></tr>
 <tr class="memdesc:a440cf3b07b64526d4f7cfa8d212e2a1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">ABI binding for airspeed.  <a href="#a440cf3b07b64526d4f7cfa8d212e2a1d">More...</a><br /></td></tr>
 <tr class="separator:a440cf3b07b64526d4f7cfa8d212e2a1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acea3aad334b5e1d9f07ae939de8ebdbf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="air__data_8c.html#acea3aad334b5e1d9f07ae939de8ebdbf">AIR_DATA_INCIDENCE_ID</a>&#160;&#160;&#160;<a class="el" href="abi__common_8h.html#a89a673124c7bb521be4e42d4bc0d29cb">ABI_BROADCAST</a></td></tr>
+<tr class="memdesc:acea3aad334b5e1d9f07ae939de8ebdbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">ABI binding for incidence angles.  <a href="#acea3aad334b5e1d9f07ae939de8ebdbf">More...</a><br /></td></tr>
+<tr class="separator:acea3aad334b5e1d9f07ae939de8ebdbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47a91a1d61f366f4e3a0af77d4299809"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="air__data_8c.html#a47a91a1d61f366f4e3a0af77d4299809">AIR_DATA_TAS_FACTOR</a>&#160;&#160;&#160;1.0</td></tr>
 <tr class="memdesc:a47a91a1d61f366f4e3a0af77d4299809"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default factor to convert estimated airspeed (EAS) to true airspeed (TAS)  <a href="#a47a91a1d61f366f4e3a0af77d4299809">More...</a><br /></td></tr>
 <tr class="separator:a47a91a1d61f366f4e3a0af77d4299809"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -171,6 +174,8 @@ Functions</h2></td></tr>
 <tr class="separator:a704d8592956cc0ab315cbe37f9967cf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4b6a37d862e72a427f405e18fe3a5f5"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="air__data_8c.html#af4b6a37d862e72a427f405e18fe3a5f5">airspeed_cb</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> sender_id, float eas)</td></tr>
 <tr class="separator:af4b6a37d862e72a427f405e18fe3a5f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a896330e2da292c75ca65a644566050ad"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="air__data_8c.html#a896330e2da292c75ca65a644566050ad">incidence_cb</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> sender_id, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> flag, float aoa, float sideslip)</td></tr>
+<tr class="separator:a896330e2da292c75ca65a644566050ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add8d02d7ec9c33ea1f26ad858e7f56f2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="air__data_8c.html#add8d02d7ec9c33ea1f26ad858e7f56f2">send_baro_raw</a> (struct transport_tx *trans, struct link_device *<a class="el" href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a>)</td></tr>
 <tr class="separator:add8d02d7ec9c33ea1f26ad858e7f56f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b68222903f8ba22950ff21c78b231c2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="air__data_8c.html#a5b68222903f8ba22950ff21c78b231c2">send_air_data</a> (struct transport_tx *trans, struct link_device *<a class="el" href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a>)</td></tr>
@@ -212,6 +217,8 @@ Variables</h2></td></tr>
 <tr class="separator:a38cb06612986df226f29ce29c93450e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20fc0f187d1eb48378c2f2e9ac5c4457"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="abi__common_8h.html#a60f71f1b8ca24759458ed4f700f02814">abi_event</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="air__data_8c.html#a20fc0f187d1eb48378c2f2e9ac5c4457">airspeed_ev</a></td></tr>
 <tr class="separator:a20fc0f187d1eb48378c2f2e9ac5c4457"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa788a84ec6afad2bdada0f7986d7a1ac"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="abi__common_8h.html#a60f71f1b8ca24759458ed4f700f02814">abi_event</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="air__data_8c.html#aa788a84ec6afad2bdada0f7986d7a1ac">incidence_ev</a></td></tr>
+<tr class="separator:aa788a84ec6afad2bdada0f7986d7a1ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f6517b0335f8650fb0cfb9f8b249f4b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="air__data_8c.html#a3f6517b0335f8650fb0cfb9f8b249f4b">baro_health_counter</a></td></tr>
 <tr class="memdesc:a3f6517b0335f8650fb0cfb9f8b249f4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">counter to check baro health  <a href="#a3f6517b0335f8650fb0cfb9f8b249f4b">More...</a><br /></td></tr>
 <tr class="separator:a3f6517b0335f8650fb0cfb9f8b249f4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -241,7 +248,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="air__data_8c_source.html#l00065">65</a> of file <a class="el" href="air__data_8c_source.html">air_data.c</a>.</p>
 
-<p>Referenced by <a class="el" href="air__data_8c_source.html#l00195">air_data_init()</a>.</p>
+<p>Referenced by <a class="el" href="air__data_8c_source.html#l00216">air_data_init()</a>.</p>
 
 </div>
 </div>
@@ -259,7 +266,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="air__data_8c_source.html#l00044">44</a> of file <a class="el" href="air__data_8c_source.html">air_data.c</a>.</p>
 
-<p>Referenced by <a class="el" href="air__data_8c_source.html#l00195">air_data_init()</a>.</p>
+<p>Referenced by <a class="el" href="air__data_8c_source.html#l00216">air_data_init()</a>.</p>
 
 </div>
 </div>
@@ -277,7 +284,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="air__data_8c_source.html#l00051">51</a> of file <a class="el" href="air__data_8c_source.html">air_data.c</a>.</p>
 
-<p>Referenced by <a class="el" href="air__data_8c_source.html#l00195">air_data_init()</a>.</p>
+<p>Referenced by <a class="el" href="air__data_8c_source.html#l00216">air_data_init()</a>.</p>
 
 </div>
 </div>
@@ -293,9 +300,9 @@ Variables</h2></td></tr>
 
 <p>Calculate Airspeed from differential pressure by default. </p>
 
-<p>Definition at line <a class="el" href="air__data_8c_source.html#l00076">76</a> of file <a class="el" href="air__data_8c_source.html">air_data.c</a>.</p>
+<p>Definition at line <a class="el" href="air__data_8c_source.html#l00083">83</a> of file <a class="el" href="air__data_8c_source.html">air_data.c</a>.</p>
 
-<p>Referenced by <a class="el" href="air__data_8c_source.html#l00195">air_data_init()</a>.</p>
+<p>Referenced by <a class="el" href="air__data_8c_source.html#l00216">air_data_init()</a>.</p>
 
 </div>
 </div>
@@ -311,9 +318,9 @@ Variables</h2></td></tr>
 
 <p>Don't calculate AMSL from baro and QNH by default. </p>
 
-<p>Definition at line <a class="el" href="air__data_8c_source.html#l00086">86</a> of file <a class="el" href="air__data_8c_source.html">air_data.c</a>.</p>
+<p>Definition at line <a class="el" href="air__data_8c_source.html#l00093">93</a> of file <a class="el" href="air__data_8c_source.html">air_data.c</a>.</p>
 
-<p>Referenced by <a class="el" href="air__data_8c_source.html#l00195">air_data_init()</a>.</p>
+<p>Referenced by <a class="el" href="air__data_8c_source.html#l00216">air_data_init()</a>.</p>
 
 </div>
 </div>
@@ -329,9 +336,27 @@ Variables</h2></td></tr>
 
 <p>Calculate tas_factor from temp and pressure by default. </p>
 
-<p>Definition at line <a class="el" href="air__data_8c_source.html#l00081">81</a> of file <a class="el" href="air__data_8c_source.html">air_data.c</a>.</p>
+<p>Definition at line <a class="el" href="air__data_8c_source.html#l00088">88</a> of file <a class="el" href="air__data_8c_source.html">air_data.c</a>.</p>
 
-<p>Referenced by <a class="el" href="air__data_8c_source.html#l00195">air_data_init()</a>.</p>
+<p>Referenced by <a class="el" href="air__data_8c_source.html#l00216">air_data_init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acea3aad334b5e1d9f07ae939de8ebdbf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define AIR_DATA_INCIDENCE_ID&#160;&#160;&#160;<a class="el" href="abi__common_8h.html#a89a673124c7bb521be4e42d4bc0d29cb">ABI_BROADCAST</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ABI binding for incidence angles. </p>
+
+<p>Definition at line <a class="el" href="air__data_8c_source.html#l00072">72</a> of file <a class="el" href="air__data_8c_source.html">air_data.c</a>.</p>
+
+<p>Referenced by <a class="el" href="air__data_8c_source.html#l00216">air_data_init()</a>.</p>
 
 </div>
 </div>
@@ -347,9 +372,9 @@ Variables</h2></td></tr>
 
 <p>Default factor to convert estimated airspeed (EAS) to true airspeed (TAS) </p>
 
-<p>Definition at line <a class="el" href="air__data_8c_source.html#l00071">71</a> of file <a class="el" href="air__data_8c_source.html">air_data.c</a>.</p>
+<p>Definition at line <a class="el" href="air__data_8c_source.html#l00078">78</a> of file <a class="el" href="air__data_8c_source.html">air_data.c</a>.</p>
 
-<p>Referenced by <a class="el" href="air__data_8c_source.html#l00195">air_data_init()</a>.</p>
+<p>Referenced by <a class="el" href="air__data_8c_source.html#l00216">air_data_init()</a>.</p>
 
 </div>
 </div>
@@ -367,7 +392,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="air__data_8c_source.html#l00058">58</a> of file <a class="el" href="air__data_8c_source.html">air_data.c</a>.</p>
 
-<p>Referenced by <a class="el" href="air__data_8c_source.html#l00195">air_data_init()</a>.</p>
+<p>Referenced by <a class="el" href="air__data_8c_source.html#l00216">air_data_init()</a>.</p>
 
 </div>
 </div>
@@ -389,9 +414,11 @@ Variables</h2></td></tr>
 <p>Return AMSL (altitude AboveSeaLevel). </p>
 <p>If AMSL from baro is valid, return that, otherwise from gps. </p>
 
-<p>Definition at line <a class="el" href="air__data_8c_source.html#l00235">235</a> of file <a class="el" href="air__data_8c_source.html">air_data.c</a>.</p>
+<p>Definition at line <a class="el" href="air__data_8c_source.html#l00257">257</a> of file <a class="el" href="air__data_8c_source.html">air_data.c</a>.</p>
 
 <p>References <a class="el" href="air__data_8c_source.html#l00039">air_data</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00057">LlaCoor_f::alt</a>, <a class="el" href="air__data_8h_source.html#l00046">AirData::amsl_baro</a>, <a class="el" href="air__data_8h_source.html#l00047">AirData::amsl_baro_valid</a>, and <a class="el" href="state_8h_source.html#l00728">stateGetPositionLla_f()</a>.</p>
+
+<p>Referenced by <a class="el" href="air__data_8c_source.html#l00338">tas_from_eas()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -400,7 +427,18 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="air__data_8c_a4691b05fed5487ddf708464110926d4d_cgraph.png" border="0" usemap="#air__data_8c_a4691b05fed5487ddf708464110926d4d_cgraph" alt=""/></div>
 <map name="air__data_8c_a4691b05fed5487ddf708464110926d4d_cgraph" id="air__data_8c_a4691b05fed5487ddf708464110926d4d_cgraph">
-<area shape="rect" id="node2" href="group__state__position.html#gabd04faa28d1792450eaa4a3f22066055" title="Get position in LLA coordinates (float). " alt="" coords="193,56,351,83"/><area shape="rect" id="node3" href="group__state__position.html#gaac3f376669ccf9575fb91e78ae4954f7" title="stateCalcPositionLla_f" alt="" coords="399,56,560,83"/><area shape="rect" id="node4" href="pprz__geodetic__float_8c.html#adecd186d51b41b09f0cad928c0d2f68e" title="lla_of_ecef_f" alt="" coords="633,5,733,32"/><area shape="rect" id="node5" href="pprz__geodetic__float_8c.html#a9703caac26c4b1272c010037fd661956" title="ecef_of_ned_point_f" alt="" coords="608,56,757,83"/><area shape="rect" id="node7" href="pprz__geodetic__float_8c.html#a30c2e47ec9a898079c04e8b08496b455" title="lla_of_utm_f" alt="" coords="633,107,732,133"/><area shape="rect" id="node6" href="pprz__geodetic__float_8c.html#a197187e7b04018beddfcd6a7a4ab3972" title="ecef_of_enu_point_f" alt="" coords="831,56,980,83"/><area shape="rect" id="node8" href="pprz__geodetic__float_8c.html#a28b6e05c87f50f1e5290e36407095fb6" title="inverse_isometric_latitude_f" alt="" coords="805,107,1005,133"/><area shape="rect" id="node9" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="837,158,973,199"/></map>
+<area shape="rect" id="node2" href="group__state__position.html#gabd04faa28d1792450eaa4a3f22066055" title="Get position in LLA coordinates (float). " alt="" coords="193,81,351,108"/><area shape="rect" id="node3" href="group__state__position.html#gaac3f376669ccf9575fb91e78ae4954f7" title="stateCalcPositionLla_f" alt="" coords="399,81,560,108"/><area shape="rect" id="node4" href="pprz__geodetic__float_8c.html#adecd186d51b41b09f0cad928c0d2f68e" title="lla_of_ecef_f" alt="" coords="633,5,733,32"/><area shape="rect" id="node5" href="pprz__geodetic__float_8c.html#a30c2e47ec9a898079c04e8b08496b455" title="lla_of_utm_f" alt="" coords="633,56,732,83"/><area shape="rect" id="node8" href="pprz__geodetic__float_8c.html#a9703caac26c4b1272c010037fd661956" title="ecef_of_ned_point_f" alt="" coords="608,107,757,133"/><area shape="rect" id="node9" href="pprz__geodetic__float_8c.html#a197187e7b04018beddfcd6a7a4ab3972" title="ecef_of_enu_point_f" alt="" coords="831,136,980,163"/><area shape="rect" id="node6" href="pprz__geodetic__float_8c.html#a28b6e05c87f50f1e5290e36407095fb6" title="inverse_isometric_latitude_f" alt="" coords="805,8,1005,35"/><area shape="rect" id="node7" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="837,59,973,101"/></map>
+</div>
+</p>
+
+<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="air__data_8c_a4691b05fed5487ddf708464110926d4d_icgraph.png" border="0" usemap="#air__data_8c_a4691b05fed5487ddf708464110926d4d_icgraph" alt=""/></div>
+<map name="air__data_8c_a4691b05fed5487ddf708464110926d4d_icgraph" id="air__data_8c_a4691b05fed5487ddf708464110926d4d_icgraph">
+<area shape="rect" id="node2" href="air__data_8h.html#aecf73d89654409d574b551a23e3807ad" title="Calculate true airspeed from equivalent airspeed. " alt="" coords="193,56,303,83"/><area shape="rect" id="node3" href="air__data_8c.html#a4ecdb280f61e36c777ce134bac0d140a" title="pressure_diff_cb" alt="" coords="389,5,515,32"/><area shape="rect" id="node5" href="air__data_8c.html#af4b6a37d862e72a427f405e18fe3a5f5" title="airspeed_cb" alt="" coords="403,56,501,83"/><area shape="rect" id="node6" href="air__data_8h.html#a85b8f86ff925ba2d320b5d2e79f98d16" title="Calculate true airspeed from dynamic pressure. " alt="" coords="351,107,553,133"/><area shape="rect" id="node4" href="air__data_8h.html#adf7b25090f4cb33d35ccfbc18470e0ad" title="AirData initialization. " alt="" coords="615,31,715,57"/><area shape="rect" id="node7" href="ins__mekf__wind__wrapper_8c.html#ad6cfd2421f1c43be32c64ccb0ac236be" title="pressure_diff_cb" alt="" coords="601,107,728,133"/><area shape="rect" id="node8" href="ins__mekf__wind__wrapper_8h.html#a7b3c1fefc89ec1a4ff25484626a02deb" title="Init function. " alt="" coords="776,107,975,133"/></map>
 </div>
 </p>
 
@@ -423,18 +461,18 @@ Variables</h2></td></tr>
 <p><a class="el" href="air__data_8h.html#structAirData" title="Air Data strucute. ">AirData</a> initialization. </p>
 <p>Called at startup. Bind ABI messages </p>
 
-<p>Definition at line <a class="el" href="air__data_8c_source.html#l00195">195</a> of file <a class="el" href="air__data_8c_source.html">air_data.c</a>.</p>
+<p>Definition at line <a class="el" href="air__data_8c_source.html#l00216">216</a> of file <a class="el" href="air__data_8c_source.html">air_data.c</a>.</p>
 
-<p>References <a class="el" href="air__data_8c_source.html#l00039">air_data</a>, <a class="el" href="air__data_8c_source.html#l00065">AIR_DATA_AIRSPEED_ID</a>, <a class="el" href="air__data_8c_source.html#l00044">AIR_DATA_BARO_ABS_ID</a>, <a class="el" href="air__data_8c_source.html#l00051">AIR_DATA_BARO_DIFF_ID</a>, <a class="el" href="air__data_8c_source.html#l00076">AIR_DATA_CALC_AIRSPEED</a>, <a class="el" href="air__data_8c_source.html#l00086">AIR_DATA_CALC_AMSL_BARO</a>, <a class="el" href="air__data_8c_source.html#l00081">AIR_DATA_CALC_TAS_FACTOR</a>, <a class="el" href="air__data_8c_source.html#l00071">AIR_DATA_TAS_FACTOR</a>, <a class="el" href="air__data_8c_source.html#l00058">AIR_DATA_TEMPERATURE_ID</a>, <a class="el" href="air__data_8h_source.html#l00042">AirData::airspeed</a>, <a class="el" href="air__data_8c_source.html#l00154">airspeed_cb()</a>, <a class="el" href="air__data_8h_source.html#l00046">AirData::amsl_baro</a>, <a class="el" href="air__data_8h_source.html#l00047">AirData::amsl_baro_valid</a>, <a class="el" href="air__data_8h_source.html#l00053">AirData::aoa</a>, <a class="el" href="air__data_8h_source.html#l00048">AirData::calc_airspeed</a>, <a class="el" href="air__data_8h_source.html#l00050">AirData::calc_amsl_baro</a>, <a class="el" href="air__data_8h_source.html#l00049">AirData::calc_qnh_once</a>, <a class="el" href="air__data_8h_source.html#l00051">AirData::calc_tas_factor</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="air__data_8h_source.html#l00039">AirData::differential</a>, <a class="el" href="air__data_8h_source.html#l00038">AirData::pressure</a>, <a class="el" href="air__data_8c_source.html#l00105">pressure_abs_cb()</a>, <a class="el" href="air__data_8c_source.html#l00132">pressure_diff_cb()</a>, <a class="el" href="air__data_8h_source.html#l00045">AirData::qnh</a>, <a class="el" href="telemetry_8c_source.html#l00046">register_periodic_telemetry()</a>, <a class="el" href="air__data_8c_source.html#l00174">send_air_data()</a>, <a class="el" href="air__data_8c_source.html#l00183">send_amsl()</a>, <a class="el" href="air__data_8c_source.html#l00168">send_baro_raw()</a>, <a class="el" href="air__data_8h_source.html#l00054">AirData::sideslip</a>, <a class="el" href="air__data_8h_source.html#l00043">AirData::tas</a>, <a class="el" href="air__data_8h_source.html#l00044">AirData::tas_factor</a>, <a class="el" href="air__data_8h_source.html#l00040">AirData::temperature</a>, <a class="el" href="air__data_8c_source.html#l00144">temperature_cb()</a>, <a class="el" href="air__data_8h_source.html#l00056">AirData::wind_dir</a>, and <a class="el" href="air__data_8h_source.html#l00055">AirData::wind_speed</a>.</p>
+<p>References <a class="el" href="air__data_8c_source.html#l00039">air_data</a>, <a class="el" href="air__data_8c_source.html#l00065">AIR_DATA_AIRSPEED_ID</a>, <a class="el" href="air__data_8c_source.html#l00044">AIR_DATA_BARO_ABS_ID</a>, <a class="el" href="air__data_8c_source.html#l00051">AIR_DATA_BARO_DIFF_ID</a>, <a class="el" href="air__data_8c_source.html#l00083">AIR_DATA_CALC_AIRSPEED</a>, <a class="el" href="air__data_8c_source.html#l00093">AIR_DATA_CALC_AMSL_BARO</a>, <a class="el" href="air__data_8c_source.html#l00088">AIR_DATA_CALC_TAS_FACTOR</a>, <a class="el" href="air__data_8c_source.html#l00072">AIR_DATA_INCIDENCE_ID</a>, <a class="el" href="air__data_8c_source.html#l00078">AIR_DATA_TAS_FACTOR</a>, <a class="el" href="air__data_8c_source.html#l00058">AIR_DATA_TEMPERATURE_ID</a>, <a class="el" href="air__data_8h_source.html#l00042">AirData::airspeed</a>, <a class="el" href="air__data_8c_source.html#l00161">airspeed_cb()</a>, <a class="el" href="air__data_8h_source.html#l00046">AirData::amsl_baro</a>, <a class="el" href="air__data_8h_source.html#l00047">AirData::amsl_baro_valid</a>, <a class="el" href="air__data_8h_source.html#l00053">AirData::aoa</a>, <a class="el" href="air__data_8h_source.html#l00048">AirData::calc_airspeed</a>, <a class="el" href="air__data_8h_source.html#l00050">AirData::calc_amsl_baro</a>, <a class="el" href="air__data_8h_source.html#l00049">AirData::calc_qnh_once</a>, <a class="el" href="air__data_8h_source.html#l00051">AirData::calc_tas_factor</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="air__data_8h_source.html#l00039">AirData::differential</a>, <a class="el" href="air__data_8c_source.html#l00172">incidence_cb()</a>, <a class="el" href="air__data_8h_source.html#l00038">AirData::pressure</a>, <a class="el" href="air__data_8c_source.html#l00112">pressure_abs_cb()</a>, <a class="el" href="air__data_8c_source.html#l00139">pressure_diff_cb()</a>, <a class="el" href="air__data_8h_source.html#l00045">AirData::qnh</a>, <a class="el" href="telemetry_8c_source.html#l00046">register_periodic_telemetry()</a>, <a class="el" href="air__data_8c_source.html#l00195">send_air_data()</a>, <a class="el" href="air__data_8c_source.html#l00204">send_amsl()</a>, <a class="el" href="air__data_8c_source.html#l00189">send_baro_raw()</a>, <a class="el" href="air__data_8h_source.html#l00054">AirData::sideslip</a>, <a class="el" href="air__data_8h_source.html#l00043">AirData::tas</a>, <a class="el" href="air__data_8h_source.html#l00044">AirData::tas_factor</a>, <a class="el" href="air__data_8h_source.html#l00040">AirData::temperature</a>, <a class="el" href="air__data_8c_source.html#l00151">temperature_cb()</a>, <a class="el" href="air__data_8h_source.html#l00056">AirData::wind_dir</a>, and <a class="el" href="air__data_8h_source.html#l00055">AirData::wind_speed</a>.</p>
 
-<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="air__data_8c_adf7b25090f4cb33d35ccfbc18470e0ad_cgraph.png" border="0" usemap="#air__data_8c_adf7b25090f4cb33d35ccfbc18470e0ad_cgraph" alt=""/></div>
 <map name="air__data_8c_adf7b25090f4cb33d35ccfbc18470e0ad_cgraph" id="air__data_8c_adf7b25090f4cb33d35ccfbc18470e0ad_cgraph">
-<area shape="rect" id="node2" href="air__data_8c.html#af4b6a37d862e72a427f405e18fe3a5f5" title="airspeed_cb" alt="" coords="203,56,301,83"/><area shape="rect" id="node5" href="air__data_8c.html#aa047324f82b8a6e3f38f32988d536a55" title="pressure_abs_cb" alt="" coords="187,248,317,275"/><area shape="rect" id="node19" href="air__data_8c.html#a4ecdb280f61e36c777ce134bac0d140a" title="pressure_diff_cb" alt="" coords="189,107,315,133"/><area shape="rect" id="node21" href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function. " alt="" coords="153,349,351,376"/><area shape="rect" id="node22" href="air__data_8c.html#a5b68222903f8ba22950ff21c78b231c2" title="send_air_data" alt="" coords="196,400,308,427"/><area shape="rect" id="node23" href="air__data_8c.html#aae97369dd0a4cdc549c69a2767b9c76b" title="send_amsl" alt="" coords="207,299,297,325"/><area shape="rect" id="node24" href="air__data_8c.html#add8d02d7ec9c33ea1f26ad858e7f56f2" title="send_baro_raw" alt="" coords="193,451,311,477"/><area shape="rect" id="node25" href="air__data_8c.html#a704d8592956cc0ab315cbe37f9967cf6" title="temperature_cb" alt="" coords="189,501,315,528"/><area shape="rect" id="node3" href="air__data_8c.html#aecf73d89654409d574b551a23e3807ad" title="Calculate true airspeed from equivalent airspeed. " alt="" coords="447,56,557,83"/><area shape="rect" id="node4" href="group__state__wind__airspeed.html#ga2ede5795eaec38206e25b8850ee40f63" title="Set airspeed (float). " alt="" coords="430,5,574,32"/><area shape="rect" id="node6" href="group__state__position.html#gaa448f4b7a818b669a03eaf0fc7b9f218" title="Test if global coordinates are valid. " alt="" coords="399,340,605,367"/><area shape="rect" id="node8" href="UKF__Wind__Estimator_8c.html#a1b540e52aff26922bc43ff126fa35270" title="h" alt="" coords="483,157,521,184"/><area shape="rect" id="node9" href="group__state__position.html#gabd04faa28d1792450eaa4a3f22066055" title="Get position in LLA coordinates (float). " alt="" coords="423,391,581,417"/><area shape="rect" id="node17" href="group__math__isa.html#gafdec5e2681fb1665fc5c6da7ed86e0a7" title="Get reference pressure (QFE or QNH) from current pressure and height. " alt="" coords="421,209,583,250"/><area shape="rect" id="node18" href="group__math__isa.html#gaf1eda8b09fa91ba53444be5c8e009994" title="Get relative altitude from pressure (using full equation). " alt="" coords="431,274,573,315"/><area shape="rect" id="node7" href="group__state__position.html#gad1490e1d9825a698db02787701f99f6f" title="Test if local coordinates are valid. " alt="" coords="653,340,852,367"/><area shape="rect" id="node10" href="group__state__position.html#gaac3f376669ccf9575fb91e78ae4954f7" title="stateCalcPositionLla_f" alt="" coords="672,391,833,417"/><area shape="rect" id="node11" href="pprz__geodetic__float_8c.html#adecd186d51b41b09f0cad928c0d2f68e" title="lla_of_ecef_f" alt="" coords="925,340,1025,367"/><area shape="rect" id="node12" href="pprz__geodetic__float_8c.html#a9703caac26c4b1272c010037fd661956" title="ecef_of_ned_point_f" alt="" coords="900,391,1049,417"/><area shape="rect" id="node14" href="pprz__geodetic__float_8c.html#a30c2e47ec9a898079c04e8b08496b455" title="lla_of_utm_f" alt="" coords="925,445,1024,472"/><area shape="rect" id="node13" href="pprz__geodetic__float_8c.html#a197187e7b04018beddfcd6a7a4ab3972" title="ecef_of_enu_point_f" alt="" coords="1123,387,1272,413"/><area shape="rect" id="node15" href="pprz__geodetic__float_8c.html#a28b6e05c87f50f1e5290e36407095fb6" title="inverse_isometric_latitude_f" alt="" coords="1097,504,1297,531"/><area shape="rect" id="node16" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="1129,438,1265,479"/><area shape="rect" id="node20" href="air__data_8c.html#a0767fbd26611c68f1d1259567a6dfe50" title="Calculate equivalent airspeed from dynamic pressure. " alt="" coords="399,107,605,133"/><area shape="rect" id="node26" href="air__data_8c.html#ae9803888a95a6268efcb76c8adc5cff4" title="Calculate true airspeed (TAS) factor. " alt="" coords="445,501,559,528"/></map>
+<area shape="rect" id="node2" href="air__data_8c.html#af4b6a37d862e72a427f405e18fe3a5f5" title="airspeed_cb" alt="" coords="203,157,301,184"/><area shape="rect" id="node17" href="air__data_8c.html#a896330e2da292c75ca65a644566050ad" title="incidence_cb" alt="" coords="200,383,304,409"/><area shape="rect" id="node20" href="air__data_8c.html#aa047324f82b8a6e3f38f32988d536a55" title="pressure_abs_cb" alt="" coords="187,332,317,359"/><area shape="rect" id="node26" href="air__data_8c.html#a4ecdb280f61e36c777ce134bac0d140a" title="pressure_diff_cb" alt="" coords="189,107,315,133"/><area shape="rect" id="node28" href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function. " alt="" coords="153,433,351,460"/><area shape="rect" id="node29" href="air__data_8c.html#a5b68222903f8ba22950ff21c78b231c2" title="send_air_data" alt="" coords="196,484,308,511"/><area shape="rect" id="node30" href="air__data_8c.html#aae97369dd0a4cdc549c69a2767b9c76b" title="send_amsl" alt="" coords="707,239,798,265"/><area shape="rect" id="node31" href="air__data_8c.html#add8d02d7ec9c33ea1f26ad858e7f56f2" title="send_baro_raw" alt="" coords="193,535,311,561"/><area shape="rect" id="node32" href="air__data_8c.html#a704d8592956cc0ab315cbe37f9967cf6" title="temperature_cb" alt="" coords="189,31,315,57"/><area shape="rect" id="node3" href="air__data_8c.html#aecf73d89654409d574b551a23e3807ad" title="Calculate true airspeed from equivalent airspeed. " alt="" coords="447,107,557,133"/><area shape="rect" id="node16" href="group__state__wind__airspeed.html#ga2ede5795eaec38206e25b8850ee40f63" title="Set airspeed (float). " alt="" coords="430,157,574,184"/><area shape="rect" id="node4" href="air__data_8c.html#ae9803888a95a6268efcb76c8adc5cff4" title="Calculate true airspeed (TAS) factor. " alt="" coords="695,5,810,32"/><area shape="rect" id="node5" href="air__data_8c.html#a4691b05fed5487ddf708464110926d4d" title="Return AMSL (altitude AboveSeaLevel). " alt="" coords="683,188,823,215"/><area shape="rect" id="node14" href="group__math__isa.html#ga64a5320121c2e4fcd276a8434fa18c7b" title="Get pressure in Pa from absolute altitude (using simplified equation). " alt="" coords="674,122,831,163"/><area shape="rect" id="node15" href="group__math__isa.html#ga889c38e2942d13f6bd92deeb331f63a0" title="Get ISA temperature from a MSL altitude. " alt="" coords="671,57,834,98"/><area shape="rect" id="node6" href="group__state__position.html#gabd04faa28d1792450eaa4a3f22066055" title="Get position in LLA coordinates (float). " alt="" coords="900,239,1057,265"/><area shape="rect" id="node7" href="group__state__position.html#gaac3f376669ccf9575fb91e78ae4954f7" title="stateCalcPositionLla_f" alt="" coords="1105,239,1267,265"/><area shape="rect" id="node8" href="pprz__geodetic__float_8c.html#adecd186d51b41b09f0cad928c0d2f68e" title="lla_of_ecef_f" alt="" coords="1339,163,1439,189"/><area shape="rect" id="node9" href="pprz__geodetic__float_8c.html#a30c2e47ec9a898079c04e8b08496b455" title="lla_of_utm_f" alt="" coords="1340,213,1439,240"/><area shape="rect" id="node12" href="pprz__geodetic__float_8c.html#a9703caac26c4b1272c010037fd661956" title="ecef_of_ned_point_f" alt="" coords="1315,315,1464,341"/><area shape="rect" id="node13" href="pprz__geodetic__float_8c.html#a197187e7b04018beddfcd6a7a4ab3972" title="ecef_of_enu_point_f" alt="" coords="1537,289,1687,316"/><area shape="rect" id="node10" href="pprz__geodetic__float_8c.html#a28b6e05c87f50f1e5290e36407095fb6" title="inverse_isometric_latitude_f" alt="" coords="1512,227,1712,253"/><area shape="rect" id="node11" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="1544,161,1680,202"/><area shape="rect" id="node18" href="group__state__wind__airspeed.html#ga1a540eaf41fceb101d2c7403f1e9ba06" title="Set angle of attack in radians (float). " alt="" coords="413,543,591,569"/><area shape="rect" id="node19" href="group__state__wind__airspeed.html#ga6198f76153003e86df9bbac3ed892ed1" title="Set sideslip angle in radians (float). " alt="" coords="433,593,571,620"/><area shape="rect" id="node21" href="group__state__position.html#gaa448f4b7a818b669a03eaf0fc7b9f218" title="Test if global coordinates are valid. " alt="" coords="399,391,605,417"/><area shape="rect" id="node23" href="UKF__Wind__Estimator_8c.html#a1b540e52aff26922bc43ff126fa35270" title="h" alt="" coords="483,441,521,468"/><area shape="rect" id="node24" href="group__math__isa.html#gafdec5e2681fb1665fc5c6da7ed86e0a7" title="Get reference pressure (QFE or QNH) from current pressure and height. " alt="" coords="421,259,583,301"/><area shape="rect" id="node25" href="group__math__isa.html#gaf1eda8b09fa91ba53444be5c8e009994" title="Get relative altitude from pressure (using full equation). " alt="" coords="431,325,573,366"/><area shape="rect" id="node22" href="group__state__position.html#gad1490e1d9825a698db02787701f99f6f" title="Test if local coordinates are valid. " alt="" coords="653,391,852,417"/><area shape="rect" id="node27" href="air__data_8c.html#a0767fbd26611c68f1d1259567a6dfe50" title="Calculate equivalent airspeed from dynamic pressure. " alt="" coords="399,56,605,83"/></map>
 </div>
 </p>
 
@@ -457,7 +495,7 @@ Variables</h2></td></tr>
 <p>Check health. </p>
 <p>Needs to be called periodically. </p>
 
-<p>Definition at line <a class="el" href="air__data_8c_source.html#l00245">245</a> of file <a class="el" href="air__data_8c_source.html">air_data.c</a>.</p>
+<p>Definition at line <a class="el" href="air__data_8c_source.html#l00267">267</a> of file <a class="el" href="air__data_8c_source.html">air_data.c</a>.</p>
 
 <p>References <a class="el" href="air__data_8c_source.html#l00039">air_data</a>, and <a class="el" href="air__data_8h_source.html#l00047">AirData::amsl_baro_valid</a>.</p>
 
@@ -495,28 +533,28 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="air__data_8c_source.html#l00154">154</a> of file <a class="el" href="air__data_8c_source.html">air_data.c</a>.</p>
+<p>Definition at line <a class="el" href="air__data_8c_source.html#l00161">161</a> of file <a class="el" href="air__data_8c_source.html">air_data.c</a>.</p>
 
-<p>References <a class="el" href="air__data_8c_source.html#l00039">air_data</a>, <a class="el" href="air__data_8h_source.html#l00042">AirData::airspeed</a>, <a class="el" href="air__data_8h_source.html#l00048">AirData::calc_airspeed</a>, <a class="el" href="state_8h_source.html#l01309">stateSetAirspeed_f()</a>, <a class="el" href="air__data_8h_source.html#l00043">AirData::tas</a>, and <a class="el" href="air__data_8c_source.html#l00316">tas_from_eas()</a>.</p>
+<p>References <a class="el" href="air__data_8c_source.html#l00039">air_data</a>, <a class="el" href="air__data_8h_source.html#l00042">AirData::airspeed</a>, <a class="el" href="air__data_8h_source.html#l00048">AirData::calc_airspeed</a>, <a class="el" href="state_8h_source.html#l01309">stateSetAirspeed_f()</a>, <a class="el" href="air__data_8h_source.html#l00043">AirData::tas</a>, and <a class="el" href="air__data_8c_source.html#l00338">tas_from_eas()</a>.</p>
 
-<p>Referenced by <a class="el" href="air__data_8c_source.html#l00195">air_data_init()</a>.</p>
-
-<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="air__data_8c_af4b6a37d862e72a427f405e18fe3a5f5_cgraph.png" border="0" usemap="#air__data_8c_af4b6a37d862e72a427f405e18fe3a5f5_cgraph" alt=""/></div>
-<map name="air__data_8c_af4b6a37d862e72a427f405e18fe3a5f5_cgraph" id="air__data_8c_af4b6a37d862e72a427f405e18fe3a5f5_cgraph">
-<area shape="rect" id="node2" href="group__state__wind__airspeed.html#ga2ede5795eaec38206e25b8850ee40f63" title="Set airspeed (float). " alt="" coords="152,5,296,32"/><area shape="rect" id="node3" href="air__data_8c.html#aecf73d89654409d574b551a23e3807ad" title="Calculate true airspeed from equivalent airspeed. " alt="" coords="169,56,279,83"/></map>
-</div>
-</p>
+<p>Referenced by <a class="el" href="air__data_8c_source.html#l00216">air_data_init()</a>.</p>
 
 <p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="air__data_8c_af4b6a37d862e72a427f405e18fe3a5f5_cgraph.png" border="0" usemap="#air__data_8c_af4b6a37d862e72a427f405e18fe3a5f5_cgraph" alt=""/></div>
+<map name="air__data_8c_af4b6a37d862e72a427f405e18fe3a5f5_cgraph" id="air__data_8c_af4b6a37d862e72a427f405e18fe3a5f5_cgraph">
+<area shape="rect" id="node2" href="group__state__wind__airspeed.html#ga2ede5795eaec38206e25b8850ee40f63" title="Set airspeed (float). " alt="" coords="152,60,296,87"/><area shape="rect" id="node3" href="air__data_8c.html#aecf73d89654409d574b551a23e3807ad" title="Calculate true airspeed from equivalent airspeed. " alt="" coords="169,111,279,137"/><area shape="rect" id="node4" href="air__data_8c.html#ae9803888a95a6268efcb76c8adc5cff4" title="Calculate true airspeed (TAS) factor. " alt="" coords="368,31,483,57"/><area shape="rect" id="node5" href="air__data_8c.html#a4691b05fed5487ddf708464110926d4d" title="Return AMSL (altitude AboveSeaLevel). " alt="" coords="355,81,495,108"/><area shape="rect" id="node14" href="group__math__isa.html#ga64a5320121c2e4fcd276a8434fa18c7b" title="Get pressure in Pa from absolute altitude (using simplified equation). " alt="" coords="347,133,504,174"/><area shape="rect" id="node15" href="group__math__isa.html#ga889c38e2942d13f6bd92deeb331f63a0" title="Get ISA temperature from a MSL altitude. " alt="" coords="344,198,507,239"/><area shape="rect" id="node6" href="group__state__position.html#gabd04faa28d1792450eaa4a3f22066055" title="Get position in LLA coordinates (float). " alt="" coords="555,81,712,108"/><area shape="rect" id="node7" href="group__state__position.html#gaac3f376669ccf9575fb91e78ae4954f7" title="stateCalcPositionLla_f" alt="" coords="760,81,921,108"/><area shape="rect" id="node8" href="pprz__geodetic__float_8c.html#adecd186d51b41b09f0cad928c0d2f68e" title="lla_of_ecef_f" alt="" coords="994,5,1094,32"/><area shape="rect" id="node9" href="pprz__geodetic__float_8c.html#a30c2e47ec9a898079c04e8b08496b455" title="lla_of_utm_f" alt="" coords="995,56,1093,83"/><area shape="rect" id="node12" href="pprz__geodetic__float_8c.html#a9703caac26c4b1272c010037fd661956" title="ecef_of_ned_point_f" alt="" coords="969,107,1119,133"/><area shape="rect" id="node13" href="pprz__geodetic__float_8c.html#a197187e7b04018beddfcd6a7a4ab3972" title="ecef_of_enu_point_f" alt="" coords="1192,136,1341,163"/><area shape="rect" id="node10" href="pprz__geodetic__float_8c.html#a28b6e05c87f50f1e5290e36407095fb6" title="inverse_isometric_latitude_f" alt="" coords="1167,8,1367,35"/><area shape="rect" id="node11" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="1199,59,1335,101"/></map>
+</div>
+</p>
+
+<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="air__data_8c_af4b6a37d862e72a427f405e18fe3a5f5_icgraph.png" border="0" usemap="#air__data_8c_af4b6a37d862e72a427f405e18fe3a5f5_icgraph" alt=""/></div>
 <map name="air__data_8c_af4b6a37d862e72a427f405e18fe3a5f5_icgraph" id="air__data_8c_af4b6a37d862e72a427f405e18fe3a5f5_icgraph">
 <area shape="rect" id="node2" href="air__data_8h.html#adf7b25090f4cb33d35ccfbc18470e0ad" title="AirData initialization. " alt="" coords="152,5,252,32"/></map>
@@ -553,20 +591,20 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>equivalent airspeed in m/s </dd></dl>
 
-<p>Definition at line <a class="el" href="air__data_8c_source.html#l00269">269</a> of file <a class="el" href="air__data_8c_source.html">air_data.c</a>.</p>
+<p>Definition at line <a class="el" href="air__data_8c_source.html#l00291">291</a> of file <a class="el" href="air__data_8c_source.html">air_data.c</a>.</p>
 
 <p>References <a class="el" href="rotorcraft_2main__fbw_8c_source.html#l00053">Max</a>, and <a class="el" href="pprz__isa_8h_source.html#l00064">PPRZ_ISA_AIR_DENSITY</a>.</p>
 
-<p>Referenced by <a class="el" href="air__data_8c_source.html#l00132">pressure_diff_cb()</a>, and <a class="el" href="air__data_8c_source.html#l00329">tas_from_dynamic_pressure()</a>.</p>
+<p>Referenced by <a class="el" href="air__data_8c_source.html#l00139">pressure_diff_cb()</a>, and <a class="el" href="air__data_8c_source.html#l00365">tas_from_dynamic_pressure()</a>.</p>
 
-<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="air__data_8c_a0767fbd26611c68f1d1259567a6dfe50_icgraph.png" border="0" usemap="#air__data_8c_a0767fbd26611c68f1d1259567a6dfe50_icgraph" alt=""/></div>
 <map name="air__data_8c_a0767fbd26611c68f1d1259567a6dfe50_icgraph" id="air__data_8c_a0767fbd26611c68f1d1259567a6dfe50_icgraph">
-<area shape="rect" id="node2" href="air__data_8c.html#a4ecdb280f61e36c777ce134bac0d140a" title="pressure_diff_cb" alt="" coords="298,5,425,32"/><area shape="rect" id="node4" href="air__data_8h.html#a85b8f86ff925ba2d320b5d2e79f98d16" title="Calculate true airspeed from dynamic pressure. " alt="" coords="260,56,463,83"/><area shape="rect" id="node3" href="air__data_8h.html#adf7b25090f4cb33d35ccfbc18470e0ad" title="AirData initialization. " alt="" coords="511,5,611,32"/></map>
+<area shape="rect" id="node2" href="air__data_8c.html#a4ecdb280f61e36c777ce134bac0d140a" title="pressure_diff_cb" alt="" coords="298,5,425,32"/><area shape="rect" id="node4" href="air__data_8h.html#a85b8f86ff925ba2d320b5d2e79f98d16" title="Calculate true airspeed from dynamic pressure. " alt="" coords="260,56,463,83"/><area shape="rect" id="node3" href="air__data_8h.html#adf7b25090f4cb33d35ccfbc18470e0ad" title="AirData initialization. " alt="" coords="524,5,624,32"/><area shape="rect" id="node5" href="ins__mekf__wind__wrapper_8c.html#ad6cfd2421f1c43be32c64ccb0ac236be" title="pressure_diff_cb" alt="" coords="511,56,637,83"/><area shape="rect" id="node6" href="ins__mekf__wind__wrapper_8h.html#a7b3c1fefc89ec1a4ff25484626a02deb" title="Init function. " alt="" coords="685,56,884,83"/></map>
 </div>
 </p>
 
@@ -616,20 +654,94 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>tas factor </dd></dl>
 
-<p>Definition at line <a class="el" href="air__data_8c_source.html#l00297">297</a> of file <a class="el" href="air__data_8c_source.html">air_data.c</a>.</p>
+<p>Definition at line <a class="el" href="air__data_8c_source.html#l00319">319</a> of file <a class="el" href="air__data_8c_source.html">air_data.c</a>.</p>
 
-<p>References <a class="el" href="pprz__isa_8h_source.html#l00050">PPRZ_ISA_SEA_LEVEL_PRESSURE</a>, and <a class="el" href="pprz__isa_8h_source.html#l00052">PPRZ_ISA_SEA_LEVEL_TEMP</a>.</p>
+<p>References <a class="el" href="pprz__isa_8h_source.html#l00071">KelvinOfCelsius</a>, <a class="el" href="pprz__isa_8h_source.html#l00050">PPRZ_ISA_SEA_LEVEL_PRESSURE</a>, and <a class="el" href="pprz__isa_8h_source.html#l00052">PPRZ_ISA_SEA_LEVEL_TEMP</a>.</p>
 
-<p>Referenced by <a class="el" href="air__data_8c_source.html#l00144">temperature_cb()</a>.</p>
+<p>Referenced by <a class="el" href="air__data_8c_source.html#l00338">tas_from_eas()</a>, and <a class="el" href="air__data_8c_source.html#l00151">temperature_cb()</a>.</p>
 
-<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="air__data_8c_ae9803888a95a6268efcb76c8adc5cff4_icgraph.png" border="0" usemap="#air__data_8c_ae9803888a95a6268efcb76c8adc5cff4_icgraph" alt=""/></div>
 <map name="air__data_8c_ae9803888a95a6268efcb76c8adc5cff4_icgraph" id="air__data_8c_ae9803888a95a6268efcb76c8adc5cff4_icgraph">
-<area shape="rect" id="node2" href="air__data_8c.html#a704d8592956cc0ab315cbe37f9967cf6" title="temperature_cb" alt="" coords="168,5,293,32"/><area shape="rect" id="node3" href="air__data_8h.html#adf7b25090f4cb33d35ccfbc18470e0ad" title="AirData initialization. " alt="" coords="341,5,441,32"/></map>
+<area shape="rect" id="node2" href="air__data_8h.html#aecf73d89654409d574b551a23e3807ad" title="Calculate true airspeed from equivalent airspeed. " alt="" coords="176,69,285,96"/><area shape="rect" id="node9" href="air__data_8c.html#a704d8592956cc0ab315cbe37f9967cf6" title="temperature_cb" alt="" coords="168,145,293,172"/><area shape="rect" id="node3" href="air__data_8c.html#a4ecdb280f61e36c777ce134bac0d140a" title="pressure_diff_cb" alt="" coords="379,56,506,83"/><area shape="rect" id="node5" href="air__data_8c.html#af4b6a37d862e72a427f405e18fe3a5f5" title="airspeed_cb" alt="" coords="393,107,492,133"/><area shape="rect" id="node6" href="air__data_8h.html#a85b8f86ff925ba2d320b5d2e79f98d16" title="Calculate true airspeed from dynamic pressure. " alt="" coords="341,5,544,32"/><area shape="rect" id="node4" href="air__data_8h.html#adf7b25090f4cb33d35ccfbc18470e0ad" title="AirData initialization. " alt="" coords="605,107,705,133"/><area shape="rect" id="node7" href="ins__mekf__wind__wrapper_8c.html#ad6cfd2421f1c43be32c64ccb0ac236be" title="pressure_diff_cb" alt="" coords="592,5,719,32"/><area shape="rect" id="node8" href="ins__mekf__wind__wrapper_8h.html#a7b3c1fefc89ec1a4ff25484626a02deb" title="Init function. " alt="" coords="767,5,965,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a896330e2da292c75ca65a644566050ad"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void incidence_cb </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>sender_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>flag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>aoa</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>sideslip</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="air__data_8c_source.html#l00172">172</a> of file <a class="el" href="air__data_8c_source.html">air_data.c</a>.</p>
+
+<p>References <a class="el" href="air__data_8c_source.html#l00039">air_data</a>, <a class="el" href="air__data_8h_source.html#l00053">AirData::aoa</a>, <a class="el" href="air__data_8h_source.html#l00054">AirData::sideslip</a>, <a class="el" href="state_8h_source.html#l01318">stateSetAngleOfAttack_f()</a>, and <a class="el" href="state_8h_source.html#l01327">stateSetSideslip_f()</a>.</p>
+
+<p>Referenced by <a class="el" href="air__data_8c_source.html#l00216">air_data_init()</a>.</p>
+
+<p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="air__data_8c_a896330e2da292c75ca65a644566050ad_cgraph.png" border="0" usemap="#air__data_8c_a896330e2da292c75ca65a644566050ad_cgraph" alt=""/></div>
+<map name="air__data_8c_a896330e2da292c75ca65a644566050ad_cgraph" id="air__data_8c_a896330e2da292c75ca65a644566050ad_cgraph">
+<area shape="rect" id="node2" href="group__state__wind__airspeed.html#ga1a540eaf41fceb101d2c7403f1e9ba06" title="Set angle of attack in radians (float). " alt="" coords="157,5,336,32"/><area shape="rect" id="node3" href="group__state__wind__airspeed.html#ga6198f76153003e86df9bbac3ed892ed1" title="Set sideslip angle in radians (float). " alt="" coords="178,56,315,83"/></map>
+</div>
+</p>
+
+<p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="air__data_8c_a896330e2da292c75ca65a644566050ad_icgraph.png" border="0" usemap="#air__data_8c_a896330e2da292c75ca65a644566050ad_icgraph" alt=""/></div>
+<map name="air__data_8c_a896330e2da292c75ca65a644566050ad_icgraph" id="air__data_8c_a896330e2da292c75ca65a644566050ad_icgraph">
+<area shape="rect" id="node2" href="air__data_8h.html#adf7b25090f4cb33d35ccfbc18470e0ad" title="AirData initialization. " alt="" coords="157,5,257,32"/></map>
 </div>
 </p>
 
@@ -668,28 +780,28 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>FIXME: use height above MSL (geoid) and not WGS84 ellipsoid here </p>
 
-<p>Definition at line <a class="el" href="air__data_8c_source.html#l00105">105</a> of file <a class="el" href="air__data_8c_source.html">air_data.c</a>.</p>
+<p>Definition at line <a class="el" href="air__data_8c_source.html#l00112">112</a> of file <a class="el" href="air__data_8c_source.html">air_data.c</a>.</p>
 
-<p>References <a class="el" href="air__data_8c_source.html#l00039">air_data</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00057">LlaCoor_f::alt</a>, <a class="el" href="air__data_8h_source.html#l00046">AirData::amsl_baro</a>, <a class="el" href="air__data_8h_source.html#l00047">AirData::amsl_baro_valid</a>, <a class="el" href="air__data_8h_source.html#l00050">AirData::calc_amsl_baro</a>, <a class="el" href="air__data_8h_source.html#l00049">AirData::calc_qnh_once</a>, <a class="el" href="UKF__Wind__Estimator_8c_source.html#l00821">h()</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00097">LtpDef_f::hmsl</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00095">LtpDef_f::lla</a>, <a class="el" href="state_8h_source.html#l00223">State::ned_initialized_f</a>, <a class="el" href="state_8h_source.html#l00220">State::ned_origin_f</a>, <a class="el" href="pprz__isa_8h_source.html#l00139">pprz_isa_height_of_pressure_full()</a>, <a class="el" href="pprz__isa_8h_source.html#l00159">pprz_isa_ref_pressure_of_height_full()</a>, <a class="el" href="air__data_8h_source.html#l00038">AirData::pressure</a>, <a class="el" href="air__data_8h_source.html#l00045">AirData::qnh</a>, <a class="el" href="state_8c_source.html#l00036">state</a>, <a class="el" href="state_8h_source.html#l00728">stateGetPositionLla_f()</a>, and <a class="el" href="state_8h_source.html#l00515">stateIsGlobalCoordinateValid()</a>.</p>
+<p>References <a class="el" href="air__data_8c_source.html#l00039">air_data</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00057">LlaCoor_f::alt</a>, <a class="el" href="air__data_8h_source.html#l00046">AirData::amsl_baro</a>, <a class="el" href="air__data_8h_source.html#l00047">AirData::amsl_baro_valid</a>, <a class="el" href="air__data_8h_source.html#l00050">AirData::calc_amsl_baro</a>, <a class="el" href="air__data_8h_source.html#l00049">AirData::calc_qnh_once</a>, <a class="el" href="UKF__Wind__Estimator_8c_source.html#l00821">h()</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00097">LtpDef_f::hmsl</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00095">LtpDef_f::lla</a>, <a class="el" href="state_8h_source.html#l00223">State::ned_initialized_f</a>, <a class="el" href="state_8h_source.html#l00220">State::ned_origin_f</a>, <a class="el" href="pprz__isa_8h_source.html#l00144">pprz_isa_height_of_pressure_full()</a>, <a class="el" href="pprz__isa_8h_source.html#l00164">pprz_isa_ref_pressure_of_height_full()</a>, <a class="el" href="air__data_8h_source.html#l00038">AirData::pressure</a>, <a class="el" href="air__data_8h_source.html#l00045">AirData::qnh</a>, <a class="el" href="state_8c_source.html#l00036">state</a>, <a class="el" href="state_8h_source.html#l00728">stateGetPositionLla_f()</a>, and <a class="el" href="state_8h_source.html#l00515">stateIsGlobalCoordinateValid()</a>.</p>
 
-<p>Referenced by <a class="el" href="air__data_8c_source.html#l00195">air_data_init()</a>.</p>
+<p>Referenced by <a class="el" href="air__data_8c_source.html#l00216">air_data_init()</a>.</p>
 
-<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="air__data_8c_aa047324f82b8a6e3f38f32988d536a55_cgraph.png" border="0" usemap="#air__data_8c_aa047324f82b8a6e3f38f32988d536a55_cgraph" alt=""/></div>
 <map name="air__data_8c_aa047324f82b8a6e3f38f32988d536a55_cgraph" id="air__data_8c_aa047324f82b8a6e3f38f32988d536a55_cgraph">
-<area shape="rect" id="node2" href="UKF__Wind__Estimator_8c.html#a1b540e52aff26922bc43ff126fa35270" title="h" alt="" coords="267,5,306,32"/><area shape="rect" id="node3" href="group__math__isa.html#gaf1eda8b09fa91ba53444be5c8e009994" title="Get relative altitude from pressure (using full equation). " alt="" coords="216,57,357,98"/><area shape="rect" id="node4" href="group__math__isa.html#gafdec5e2681fb1665fc5c6da7ed86e0a7" title="Get reference pressure (QFE or QNH) from current pressure and height. " alt="" coords="205,122,368,163"/><area shape="rect" id="node5" href="group__state__position.html#gabd04faa28d1792450eaa4a3f22066055" title="Get position in LLA coordinates (float). " alt="" coords="208,188,365,215"/><area shape="rect" id="node13" href="group__state__position.html#gaa448f4b7a818b669a03eaf0fc7b9f218" title="Test if global coordinates are valid. " alt="" coords="184,239,389,265"/><area shape="rect" id="node6" href="group__state__position.html#gaac3f376669ccf9575fb91e78ae4954f7" title="stateCalcPositionLla_f" alt="" coords="456,188,617,215"/><area shape="rect" id="node7" href="pprz__geodetic__float_8c.html#adecd186d51b41b09f0cad928c0d2f68e" title="lla_of_ecef_f" alt="" coords="709,137,809,164"/><area shape="rect" id="node8" href="pprz__geodetic__float_8c.html#a9703caac26c4b1272c010037fd661956" title="ecef_of_ned_point_f" alt="" coords="684,188,833,215"/><area shape="rect" id="node10" href="pprz__geodetic__float_8c.html#a30c2e47ec9a898079c04e8b08496b455" title="lla_of_utm_f" alt="" coords="709,239,808,265"/><area shape="rect" id="node9" href="pprz__geodetic__float_8c.html#a197187e7b04018beddfcd6a7a4ab3972" title="ecef_of_enu_point_f" alt="" coords="907,188,1056,215"/><area shape="rect" id="node11" href="pprz__geodetic__float_8c.html#a28b6e05c87f50f1e5290e36407095fb6" title="inverse_isometric_latitude_f" alt="" coords="881,239,1081,265"/><area shape="rect" id="node12" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="913,290,1049,331"/><area shape="rect" id="node14" href="group__state__position.html#gad1490e1d9825a698db02787701f99f6f" title="Test if local coordinates are valid. " alt="" coords="437,239,636,265"/></map>
+<area shape="rect" id="node2" href="UKF__Wind__Estimator_8c.html#a1b540e52aff26922bc43ff126fa35270" title="h" alt="" coords="267,5,306,32"/><area shape="rect" id="node3" href="group__math__isa.html#gaf1eda8b09fa91ba53444be5c8e009994" title="Get relative altitude from pressure (using full equation). " alt="" coords="216,57,357,98"/><area shape="rect" id="node4" href="group__math__isa.html#gafdec5e2681fb1665fc5c6da7ed86e0a7" title="Get reference pressure (QFE or QNH) from current pressure and height. " alt="" coords="205,122,368,163"/><area shape="rect" id="node5" href="group__state__position.html#gabd04faa28d1792450eaa4a3f22066055" title="Get position in LLA coordinates (float). " alt="" coords="208,188,365,215"/><area shape="rect" id="node13" href="group__state__position.html#gaa448f4b7a818b669a03eaf0fc7b9f218" title="Test if global coordinates are valid. " alt="" coords="184,239,389,265"/><area shape="rect" id="node6" href="group__state__position.html#gaac3f376669ccf9575fb91e78ae4954f7" title="stateCalcPositionLla_f" alt="" coords="456,188,617,215"/><area shape="rect" id="node7" href="pprz__geodetic__float_8c.html#adecd186d51b41b09f0cad928c0d2f68e" title="lla_of_ecef_f" alt="" coords="709,112,809,139"/><area shape="rect" id="node8" href="pprz__geodetic__float_8c.html#a30c2e47ec9a898079c04e8b08496b455" title="lla_of_utm_f" alt="" coords="709,163,808,189"/><area shape="rect" id="node11" href="pprz__geodetic__float_8c.html#a9703caac26c4b1272c010037fd661956" title="ecef_of_ned_point_f" alt="" coords="684,213,833,240"/><area shape="rect" id="node12" href="pprz__geodetic__float_8c.html#a197187e7b04018beddfcd6a7a4ab3972" title="ecef_of_enu_point_f" alt="" coords="907,243,1056,269"/><area shape="rect" id="node9" href="pprz__geodetic__float_8c.html#a28b6e05c87f50f1e5290e36407095fb6" title="inverse_isometric_latitude_f" alt="" coords="881,115,1081,141"/><area shape="rect" id="node10" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="913,166,1049,207"/><area shape="rect" id="node14" href="group__state__position.html#gad1490e1d9825a698db02787701f99f6f" title="Test if local coordinates are valid. " alt="" coords="437,239,636,265"/></map>
 </div>
 </p>
 
-<p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="air__data_8c_aa047324f82b8a6e3f38f32988d536a55_icgraph.png" border="0" usemap="#air__data_8c_aa047324f82b8a6e3f38f32988d536a55_icgraph" alt=""/></div>
 <map name="air__data_8c_aa047324f82b8a6e3f38f32988d536a55_icgraph" id="air__data_8c_aa047324f82b8a6e3f38f32988d536a55_icgraph">
 <area shape="rect" id="node2" href="air__data_8h.html#adf7b25090f4cb33d35ccfbc18470e0ad" title="AirData initialization. " alt="" coords="184,5,284,32"/></map>
@@ -730,28 +842,28 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="air__data_8c_source.html#l00132">132</a> of file <a class="el" href="air__data_8c_source.html">air_data.c</a>.</p>
+<p>Definition at line <a class="el" href="air__data_8c_source.html#l00139">139</a> of file <a class="el" href="air__data_8c_source.html">air_data.c</a>.</p>
 
-<p>References <a class="el" href="air__data_8c_source.html#l00039">air_data</a>, <a class="el" href="air__data_8h_source.html#l00042">AirData::airspeed</a>, <a class="el" href="air__data_8h_source.html#l00048">AirData::calc_airspeed</a>, <a class="el" href="air__data_8h_source.html#l00039">AirData::differential</a>, <a class="el" href="air__data_8c_source.html#l00269">eas_from_dynamic_pressure()</a>, <a class="el" href="air__data_8h_source.html#l00038">AirData::pressure</a>, <a class="el" href="state_8h_source.html#l01309">stateSetAirspeed_f()</a>, <a class="el" href="air__data_8h_source.html#l00043">AirData::tas</a>, and <a class="el" href="air__data_8c_source.html#l00316">tas_from_eas()</a>.</p>
+<p>References <a class="el" href="air__data_8c_source.html#l00039">air_data</a>, <a class="el" href="air__data_8h_source.html#l00042">AirData::airspeed</a>, <a class="el" href="air__data_8h_source.html#l00048">AirData::calc_airspeed</a>, <a class="el" href="air__data_8h_source.html#l00039">AirData::differential</a>, <a class="el" href="air__data_8c_source.html#l00291">eas_from_dynamic_pressure()</a>, <a class="el" href="air__data_8h_source.html#l00038">AirData::pressure</a>, <a class="el" href="state_8h_source.html#l01309">stateSetAirspeed_f()</a>, <a class="el" href="air__data_8h_source.html#l00043">AirData::tas</a>, and <a class="el" href="air__data_8c_source.html#l00338">tas_from_eas()</a>.</p>
 
-<p>Referenced by <a class="el" href="air__data_8c_source.html#l00195">air_data_init()</a>.</p>
+<p>Referenced by <a class="el" href="air__data_8c_source.html#l00216">air_data_init()</a>.</p>
 
-<p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="air__data_8c_a4ecdb280f61e36c777ce134bac0d140a_cgraph.png" border="0" usemap="#air__data_8c_a4ecdb280f61e36c777ce134bac0d140a_cgraph" alt=""/></div>
 <map name="air__data_8c_a4ecdb280f61e36c777ce134bac0d140a_cgraph" id="air__data_8c_a4ecdb280f61e36c777ce134bac0d140a_cgraph">
-<area shape="rect" id="node2" href="air__data_8c.html#a0767fbd26611c68f1d1259567a6dfe50" title="Calculate equivalent airspeed from dynamic pressure. " alt="" coords="180,5,387,32"/><area shape="rect" id="node3" href="group__state__wind__airspeed.html#ga2ede5795eaec38206e25b8850ee40f63" title="Set airspeed (float). " alt="" coords="211,56,355,83"/><area shape="rect" id="node4" href="air__data_8c.html#aecf73d89654409d574b551a23e3807ad" title="Calculate true airspeed from equivalent airspeed. " alt="" coords="229,107,338,133"/></map>
+<area shape="rect" id="node2" href="air__data_8c.html#a0767fbd26611c68f1d1259567a6dfe50" title="Calculate equivalent airspeed from dynamic pressure. " alt="" coords="180,9,387,36"/><area shape="rect" id="node3" href="group__state__wind__airspeed.html#ga2ede5795eaec38206e25b8850ee40f63" title="Set airspeed (float). " alt="" coords="211,60,355,87"/><area shape="rect" id="node4" href="air__data_8c.html#aecf73d89654409d574b551a23e3807ad" title="Calculate true airspeed from equivalent airspeed. " alt="" coords="229,111,338,137"/><area shape="rect" id="node5" href="air__data_8c.html#ae9803888a95a6268efcb76c8adc5cff4" title="Calculate true airspeed (TAS) factor. " alt="" coords="459,31,573,57"/><area shape="rect" id="node6" href="air__data_8c.html#a4691b05fed5487ddf708464110926d4d" title="Return AMSL (altitude AboveSeaLevel). " alt="" coords="446,81,586,108"/><area shape="rect" id="node15" href="group__math__isa.html#ga64a5320121c2e4fcd276a8434fa18c7b" title="Get pressure in Pa from absolute altitude (using simplified equation). " alt="" coords="437,133,595,174"/><area shape="rect" id="node16" href="group__math__isa.html#ga889c38e2942d13f6bd92deeb331f63a0" title="Get ISA temperature from a MSL altitude. " alt="" coords="435,198,597,239"/><area shape="rect" id="node7" href="group__state__position.html#gabd04faa28d1792450eaa4a3f22066055" title="Get position in LLA coordinates (float). " alt="" coords="645,81,803,108"/><area shape="rect" id="node8" href="group__state__position.html#gaac3f376669ccf9575fb91e78ae4954f7" title="stateCalcPositionLla_f" alt="" coords="851,81,1012,108"/><area shape="rect" id="node9" href="pprz__geodetic__float_8c.html#adecd186d51b41b09f0cad928c0d2f68e" title="lla_of_ecef_f" alt="" coords="1085,5,1185,32"/><area shape="rect" id="node10" href="pprz__geodetic__float_8c.html#a30c2e47ec9a898079c04e8b08496b455" title="lla_of_utm_f" alt="" coords="1085,56,1184,83"/><area shape="rect" id="node13" href="pprz__geodetic__float_8c.html#a9703caac26c4b1272c010037fd661956" title="ecef_of_ned_point_f" alt="" coords="1060,107,1209,133"/><area shape="rect" id="node14" href="pprz__geodetic__float_8c.html#a197187e7b04018beddfcd6a7a4ab3972" title="ecef_of_enu_point_f" alt="" coords="1283,136,1432,163"/><area shape="rect" id="node11" href="pprz__geodetic__float_8c.html#a28b6e05c87f50f1e5290e36407095fb6" title="inverse_isometric_latitude_f" alt="" coords="1257,8,1457,35"/><area shape="rect" id="node12" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="1289,59,1425,101"/></map>
 </div>
 </p>
 
-<p><div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="air__data_8c_a4ecdb280f61e36c777ce134bac0d140a_icgraph.png" border="0" usemap="#air__data_8c_a4ecdb280f61e36c777ce134bac0d140a_icgraph" alt=""/></div>
 <map name="air__data_8c_a4ecdb280f61e36c777ce134bac0d140a_icgraph" id="air__data_8c_a4ecdb280f61e36c777ce134bac0d140a_icgraph">
 <area shape="rect" id="node2" href="air__data_8h.html#adf7b25090f4cb33d35ccfbc18470e0ad" title="AirData initialization. " alt="" coords="180,5,280,32"/></map>
@@ -792,17 +904,17 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="air__data_8c_source.html#l00174">174</a> of file <a class="el" href="air__data_8c_source.html">air_data.c</a>.</p>
+<p>Definition at line <a class="el" href="air__data_8c_source.html#l00195">195</a> of file <a class="el" href="air__data_8c_source.html">air_data.c</a>.</p>
 
 <p>References <a class="el" href="air__data_8c_source.html#l00039">air_data</a>, <a class="el" href="air__data_8h_source.html#l00042">AirData::airspeed</a>, <a class="el" href="air__data_8h_source.html#l00046">AirData::amsl_baro</a>, <a class="el" href="air__data_8h_source.html#l00039">AirData::differential</a>, <a class="el" href="air__data_8h_source.html#l00038">AirData::pressure</a>, <a class="el" href="air__data_8h_source.html#l00045">AirData::qnh</a>, <a class="el" href="air__data_8h_source.html#l00043">AirData::tas</a>, and <a class="el" href="air__data_8h_source.html#l00040">AirData::temperature</a>.</p>
 
-<p>Referenced by <a class="el" href="air__data_8c_source.html#l00195">air_data_init()</a>.</p>
+<p>Referenced by <a class="el" href="air__data_8c_source.html#l00216">air_data_init()</a>.</p>
 
-<p><div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="air__data_8c_a5b68222903f8ba22950ff21c78b231c2_icgraph.png" border="0" usemap="#air__data_8c_a5b68222903f8ba22950ff21c78b231c2_icgraph" alt=""/></div>
 <map name="air__data_8c_a5b68222903f8ba22950ff21c78b231c2_icgraph" id="air__data_8c_a5b68222903f8ba22950ff21c78b231c2_icgraph">
 <area shape="rect" id="node2" href="air__data_8h.html#adf7b25090f4cb33d35ccfbc18470e0ad" title="AirData initialization. " alt="" coords="165,5,265,32"/></map>
@@ -843,28 +955,28 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="air__data_8c_source.html#l00183">183</a> of file <a class="el" href="air__data_8c_source.html">air_data.c</a>.</p>
+<p>Definition at line <a class="el" href="air__data_8c_source.html#l00204">204</a> of file <a class="el" href="air__data_8c_source.html">air_data.c</a>.</p>
 
 <p>References <a class="el" href="air__data_8c_source.html#l00039">air_data</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00057">LlaCoor_f::alt</a>, <a class="el" href="air__data_8h_source.html#l00046">AirData::amsl_baro</a>, and <a class="el" href="state_8h_source.html#l00728">stateGetPositionLla_f()</a>.</p>
 
-<p>Referenced by <a class="el" href="air__data_8c_source.html#l00195">air_data_init()</a>.</p>
+<p>Referenced by <a class="el" href="air__data_8c_source.html#l00216">air_data_init()</a>.</p>
 
-<p><div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="air__data_8c_aae97369dd0a4cdc549c69a2767b9c76b_cgraph.png" border="0" usemap="#air__data_8c_aae97369dd0a4cdc549c69a2767b9c76b_cgraph" alt=""/></div>
 <map name="air__data_8c_aae97369dd0a4cdc549c69a2767b9c76b_cgraph" id="air__data_8c_aae97369dd0a4cdc549c69a2767b9c76b_cgraph">
-<area shape="rect" id="node2" href="group__state__position.html#gabd04faa28d1792450eaa4a3f22066055" title="Get position in LLA coordinates (float). " alt="" coords="144,56,301,83"/><area shape="rect" id="node3" href="group__state__position.html#gaac3f376669ccf9575fb91e78ae4954f7" title="stateCalcPositionLla_f" alt="" coords="349,56,511,83"/><area shape="rect" id="node4" href="pprz__geodetic__float_8c.html#adecd186d51b41b09f0cad928c0d2f68e" title="lla_of_ecef_f" alt="" coords="583,5,683,32"/><area shape="rect" id="node5" href="pprz__geodetic__float_8c.html#a9703caac26c4b1272c010037fd661956" title="ecef_of_ned_point_f" alt="" coords="559,56,708,83"/><area shape="rect" id="node7" href="pprz__geodetic__float_8c.html#a30c2e47ec9a898079c04e8b08496b455" title="lla_of_utm_f" alt="" coords="584,107,683,133"/><area shape="rect" id="node6" href="pprz__geodetic__float_8c.html#a197187e7b04018beddfcd6a7a4ab3972" title="ecef_of_enu_point_f" alt="" coords="781,56,931,83"/><area shape="rect" id="node8" href="pprz__geodetic__float_8c.html#a28b6e05c87f50f1e5290e36407095fb6" title="inverse_isometric_latitude_f" alt="" coords="756,107,956,133"/><area shape="rect" id="node9" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="788,158,924,199"/></map>
+<area shape="rect" id="node2" href="group__state__position.html#gabd04faa28d1792450eaa4a3f22066055" title="Get position in LLA coordinates (float). " alt="" coords="144,81,301,108"/><area shape="rect" id="node3" href="group__state__position.html#gaac3f376669ccf9575fb91e78ae4954f7" title="stateCalcPositionLla_f" alt="" coords="349,81,511,108"/><area shape="rect" id="node4" href="pprz__geodetic__float_8c.html#adecd186d51b41b09f0cad928c0d2f68e" title="lla_of_ecef_f" alt="" coords="583,5,683,32"/><area shape="rect" id="node5" href="pprz__geodetic__float_8c.html#a30c2e47ec9a898079c04e8b08496b455" title="lla_of_utm_f" alt="" coords="584,56,683,83"/><area shape="rect" id="node8" href="pprz__geodetic__float_8c.html#a9703caac26c4b1272c010037fd661956" title="ecef_of_ned_point_f" alt="" coords="559,107,708,133"/><area shape="rect" id="node9" href="pprz__geodetic__float_8c.html#a197187e7b04018beddfcd6a7a4ab3972" title="ecef_of_enu_point_f" alt="" coords="781,136,931,163"/><area shape="rect" id="node6" href="pprz__geodetic__float_8c.html#a28b6e05c87f50f1e5290e36407095fb6" title="inverse_isometric_latitude_f" alt="" coords="756,8,956,35"/><area shape="rect" id="node7" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="788,59,924,101"/></map>
 </div>
 </p>
 
-<p><div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="air__data_8c_aae97369dd0a4cdc549c69a2767b9c76b_icgraph.png" border="0" usemap="#air__data_8c_aae97369dd0a4cdc549c69a2767b9c76b_icgraph" alt=""/></div>
 <map name="air__data_8c_aae97369dd0a4cdc549c69a2767b9c76b_icgraph" id="air__data_8c_aae97369dd0a4cdc549c69a2767b9c76b_icgraph">
 <area shape="rect" id="node2" href="air__data_8h.html#adf7b25090f4cb33d35ccfbc18470e0ad" title="AirData initialization. " alt="" coords="144,5,244,32"/></map>
@@ -905,17 +1017,17 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="air__data_8c_source.html#l00168">168</a> of file <a class="el" href="air__data_8c_source.html">air_data.c</a>.</p>
+<p>Definition at line <a class="el" href="air__data_8c_source.html#l00189">189</a> of file <a class="el" href="air__data_8c_source.html">air_data.c</a>.</p>
 
 <p>References <a class="el" href="air__data_8c_source.html#l00039">air_data</a>, <a class="el" href="air__data_8h_source.html#l00039">AirData::differential</a>, and <a class="el" href="air__data_8h_source.html#l00038">AirData::pressure</a>.</p>
 
-<p>Referenced by <a class="el" href="air__data_8c_source.html#l00195">air_data_init()</a>.</p>
+<p>Referenced by <a class="el" href="air__data_8c_source.html#l00216">air_data_init()</a>.</p>
 
-<p><div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div id="dynsection-17-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="air__data_8c_add8d02d7ec9c33ea1f26ad858e7f56f2_icgraph.png" border="0" usemap="#air__data_8c_add8d02d7ec9c33ea1f26ad858e7f56f2_icgraph" alt=""/></div>
 <map name="air__data_8c_add8d02d7ec9c33ea1f26ad858e7f56f2_icgraph" id="air__data_8c_add8d02d7ec9c33ea1f26ad858e7f56f2_icgraph">
 <area shape="rect" id="node2" href="air__data_8h.html#adf7b25090f4cb33d35ccfbc18470e0ad" title="AirData initialization. " alt="" coords="172,5,272,32"/></map>
@@ -948,18 +1060,31 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true airspeed in m/s </dd></dl>
 
-<p>Definition at line <a class="el" href="air__data_8c_source.html#l00329">329</a> of file <a class="el" href="air__data_8c_source.html">air_data.c</a>.</p>
+<p>Definition at line <a class="el" href="air__data_8c_source.html#l00365">365</a> of file <a class="el" href="air__data_8c_source.html">air_data.c</a>.</p>
 
-<p>References <a class="el" href="air__data_8c_source.html#l00269">eas_from_dynamic_pressure()</a>, and <a class="el" href="air__data_8c_source.html#l00316">tas_from_eas()</a>.</p>
+<p>References <a class="el" href="air__data_8c_source.html#l00291">eas_from_dynamic_pressure()</a>, and <a class="el" href="air__data_8c_source.html#l00338">tas_from_eas()</a>.</p>
 
-<p><div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00255">pressure_diff_cb()</a>.</p>
+
+<p><div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div id="dynsection-18-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="air__data_8c_a85b8f86ff925ba2d320b5d2e79f98d16_cgraph.png" border="0" usemap="#air__data_8c_a85b8f86ff925ba2d320b5d2e79f98d16_cgraph" alt=""/></div>
 <map name="air__data_8c_a85b8f86ff925ba2d320b5d2e79f98d16_cgraph" id="air__data_8c_a85b8f86ff925ba2d320b5d2e79f98d16_cgraph">
-<area shape="rect" id="node2" href="air__data_8c.html#a0767fbd26611c68f1d1259567a6dfe50" title="Calculate equivalent airspeed from dynamic pressure. " alt="" coords="256,5,463,32"/><area shape="rect" id="node3" href="air__data_8c.html#aecf73d89654409d574b551a23e3807ad" title="Calculate true airspeed from equivalent airspeed. " alt="" coords="305,56,414,83"/></map>
+<area shape="rect" id="node2" href="air__data_8c.html#a0767fbd26611c68f1d1259567a6dfe50" title="Calculate equivalent airspeed from dynamic pressure. " alt="" coords="256,60,463,87"/><area shape="rect" id="node3" href="air__data_8c.html#aecf73d89654409d574b551a23e3807ad" title="Calculate true airspeed from equivalent airspeed. " alt="" coords="305,111,414,137"/><area shape="rect" id="node4" href="air__data_8c.html#ae9803888a95a6268efcb76c8adc5cff4" title="Calculate true airspeed (TAS) factor. " alt="" coords="535,31,649,57"/><area shape="rect" id="node5" href="air__data_8c.html#a4691b05fed5487ddf708464110926d4d" title="Return AMSL (altitude AboveSeaLevel). " alt="" coords="522,81,662,108"/><area shape="rect" id="node14" href="group__math__isa.html#ga64a5320121c2e4fcd276a8434fa18c7b" title="Get pressure in Pa from absolute altitude (using simplified equation). " alt="" coords="513,133,671,174"/><area shape="rect" id="node15" href="group__math__isa.html#ga889c38e2942d13f6bd92deeb331f63a0" title="Get ISA temperature from a MSL altitude. " alt="" coords="511,198,673,239"/><area shape="rect" id="node6" href="group__state__position.html#gabd04faa28d1792450eaa4a3f22066055" title="Get position in LLA coordinates (float). " alt="" coords="721,81,879,108"/><area shape="rect" id="node7" href="group__state__position.html#gaac3f376669ccf9575fb91e78ae4954f7" title="stateCalcPositionLla_f" alt="" coords="927,81,1088,108"/><area shape="rect" id="node8" href="pprz__geodetic__float_8c.html#adecd186d51b41b09f0cad928c0d2f68e" title="lla_of_ecef_f" alt="" coords="1161,5,1261,32"/><area shape="rect" id="node9" href="pprz__geodetic__float_8c.html#a30c2e47ec9a898079c04e8b08496b455" title="lla_of_utm_f" alt="" coords="1161,56,1260,83"/><area shape="rect" id="node12" href="pprz__geodetic__float_8c.html#a9703caac26c4b1272c010037fd661956" title="ecef_of_ned_point_f" alt="" coords="1136,107,1285,133"/><area shape="rect" id="node13" href="pprz__geodetic__float_8c.html#a197187e7b04018beddfcd6a7a4ab3972" title="ecef_of_enu_point_f" alt="" coords="1359,136,1508,163"/><area shape="rect" id="node10" href="pprz__geodetic__float_8c.html#a28b6e05c87f50f1e5290e36407095fb6" title="inverse_isometric_latitude_f" alt="" coords="1333,8,1533,35"/><area shape="rect" id="node11" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="1365,59,1501,101"/></map>
+</div>
+</p>
+
+<p><div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-19-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="air__data_8c_a85b8f86ff925ba2d320b5d2e79f98d16_icgraph.png" border="0" usemap="#air__data_8c_a85b8f86ff925ba2d320b5d2e79f98d16_icgraph" alt=""/></div>
+<map name="air__data_8c_a85b8f86ff925ba2d320b5d2e79f98d16_icgraph" id="air__data_8c_a85b8f86ff925ba2d320b5d2e79f98d16_icgraph">
+<area shape="rect" id="node2" href="ins__mekf__wind__wrapper_8c.html#ad6cfd2421f1c43be32c64ccb0ac236be" title="pressure_diff_cb" alt="" coords="256,5,383,32"/><area shape="rect" id="node3" href="ins__mekf__wind__wrapper_8h.html#a7b3c1fefc89ec1a4ff25484626a02deb" title="Init function. " alt="" coords="431,5,629,32"/></map>
 </div>
 </p>
 
@@ -989,20 +1114,31 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true airspeed in m/s </dd></dl>
 
-<p>Definition at line <a class="el" href="air__data_8c_source.html#l00316">316</a> of file <a class="el" href="air__data_8c_source.html">air_data.c</a>.</p>
+<p>Definition at line <a class="el" href="air__data_8c_source.html#l00338">338</a> of file <a class="el" href="air__data_8c_source.html">air_data.c</a>.</p>
 
-<p>References <a class="el" href="air__data_8c_source.html#l00039">air_data</a>, and <a class="el" href="air__data_8h_source.html#l00044">AirData::tas_factor</a>.</p>
+<p>References <a class="el" href="air__data_8c_source.html#l00039">air_data</a>, <a class="el" href="air__data_8c_source.html#l00257">air_data_get_amsl()</a>, <a class="el" href="air__data_8h_source.html#l00051">AirData::calc_tas_factor</a>, <a class="el" href="pprz__isa_8h_source.html#l00069">CelsiusOfKelvin</a>, <a class="el" href="air__data_8c_source.html#l00319">get_tas_factor()</a>, <a class="el" href="ins__alt__float_8c_source.html#l00268">p</a>, <a class="el" href="pprz__isa_8h_source.html#l00115">pprz_isa_pressure_of_altitude()</a>, <a class="el" href="pprz__isa_8h_source.html#l00179">pprz_isa_temperature_of_altitude()</a>, <a class="el" href="air__data_8h_source.html#l00038">AirData::pressure</a>, <a class="el" href="air__data_8h_source.html#l00044">AirData::tas_factor</a>, and <a class="el" href="air__data_8h_source.html#l00040">AirData::temperature</a>.</p>
 
-<p>Referenced by <a class="el" href="air__data_8c_source.html#l00154">airspeed_cb()</a>, <a class="el" href="air__data_8c_source.html#l00132">pressure_diff_cb()</a>, and <a class="el" href="air__data_8c_source.html#l00329">tas_from_dynamic_pressure()</a>.</p>
+<p>Referenced by <a class="el" href="air__data_8c_source.html#l00161">airspeed_cb()</a>, <a class="el" href="air__data_8c_source.html#l00139">pressure_diff_cb()</a>, and <a class="el" href="air__data_8c_source.html#l00365">tas_from_dynamic_pressure()</a>.</p>
 
-<p><div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-16-content" class="dyncontent" style="display:none;">
+<div id="dynsection-20-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="air__data_8c_aecf73d89654409d574b551a23e3807ad_cgraph.png" border="0" usemap="#air__data_8c_aecf73d89654409d574b551a23e3807ad_cgraph" alt=""/></div>
+<map name="air__data_8c_aecf73d89654409d574b551a23e3807ad_cgraph" id="air__data_8c_aecf73d89654409d574b551a23e3807ad_cgraph">
+<area shape="rect" id="node2" href="air__data_8c.html#a4691b05fed5487ddf708464110926d4d" title="Return AMSL (altitude AboveSeaLevel). " alt="" coords="174,81,314,108"/><area shape="rect" id="node11" href="air__data_8c.html#ae9803888a95a6268efcb76c8adc5cff4" title="Calculate true airspeed (TAS) factor. " alt="" coords="187,132,301,159"/><area shape="rect" id="node12" href="group__math__isa.html#ga64a5320121c2e4fcd276a8434fa18c7b" title="Get pressure in Pa from absolute altitude (using simplified equation). " alt="" coords="165,183,323,225"/><area shape="rect" id="node13" href="group__math__isa.html#ga889c38e2942d13f6bd92deeb331f63a0" title="Get ISA temperature from a MSL altitude. " alt="" coords="163,249,325,290"/><area shape="rect" id="node3" href="group__state__position.html#gabd04faa28d1792450eaa4a3f22066055" title="Get position in LLA coordinates (float). " alt="" coords="373,81,531,108"/><area shape="rect" id="node4" href="group__state__position.html#gaac3f376669ccf9575fb91e78ae4954f7" title="stateCalcPositionLla_f" alt="" coords="579,81,740,108"/><area shape="rect" id="node5" href="pprz__geodetic__float_8c.html#adecd186d51b41b09f0cad928c0d2f68e" title="lla_of_ecef_f" alt="" coords="813,5,913,32"/><area shape="rect" id="node6" href="pprz__geodetic__float_8c.html#a30c2e47ec9a898079c04e8b08496b455" title="lla_of_utm_f" alt="" coords="813,56,912,83"/><area shape="rect" id="node9" href="pprz__geodetic__float_8c.html#a9703caac26c4b1272c010037fd661956" title="ecef_of_ned_point_f" alt="" coords="788,107,937,133"/><area shape="rect" id="node10" href="pprz__geodetic__float_8c.html#a197187e7b04018beddfcd6a7a4ab3972" title="ecef_of_enu_point_f" alt="" coords="1011,136,1160,163"/><area shape="rect" id="node7" href="pprz__geodetic__float_8c.html#a28b6e05c87f50f1e5290e36407095fb6" title="inverse_isometric_latitude_f" alt="" coords="985,8,1185,35"/><area shape="rect" id="node8" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="1017,59,1153,101"/></map>
+</div>
+</p>
+
+<p><div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-21-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="air__data_8c_aecf73d89654409d574b551a23e3807ad_icgraph.png" border="0" usemap="#air__data_8c_aecf73d89654409d574b551a23e3807ad_icgraph" alt=""/></div>
 <map name="air__data_8c_aecf73d89654409d574b551a23e3807ad_icgraph" id="air__data_8c_aecf73d89654409d574b551a23e3807ad_icgraph">
-<area shape="rect" id="node2" href="air__data_8c.html#af4b6a37d862e72a427f405e18fe3a5f5" title="airspeed_cb" alt="" coords="215,5,313,32"/><area shape="rect" id="node4" href="air__data_8c.html#a4ecdb280f61e36c777ce134bac0d140a" title="pressure_diff_cb" alt="" coords="201,56,327,83"/><area shape="rect" id="node5" href="air__data_8h.html#a85b8f86ff925ba2d320b5d2e79f98d16" title="Calculate true airspeed from dynamic pressure. " alt="" coords="163,107,365,133"/><area shape="rect" id="node3" href="air__data_8h.html#adf7b25090f4cb33d35ccfbc18470e0ad" title="AirData initialization. " alt="" coords="413,31,513,57"/></map>
+<area shape="rect" id="node2" href="air__data_8c.html#af4b6a37d862e72a427f405e18fe3a5f5" title="airspeed_cb" alt="" coords="215,5,313,32"/><area shape="rect" id="node4" href="air__data_8c.html#a4ecdb280f61e36c777ce134bac0d140a" title="pressure_diff_cb" alt="" coords="201,56,327,83"/><area shape="rect" id="node5" href="air__data_8h.html#a85b8f86ff925ba2d320b5d2e79f98d16" title="Calculate true airspeed from dynamic pressure. " alt="" coords="163,107,365,133"/><area shape="rect" id="node3" href="air__data_8h.html#adf7b25090f4cb33d35ccfbc18470e0ad" title="AirData initialization. " alt="" coords="427,31,527,57"/><area shape="rect" id="node6" href="ins__mekf__wind__wrapper_8c.html#ad6cfd2421f1c43be32c64ccb0ac236be" title="pressure_diff_cb" alt="" coords="413,107,540,133"/><area shape="rect" id="node7" href="ins__mekf__wind__wrapper_8h.html#a7b3c1fefc89ec1a4ff25484626a02deb" title="Init function. " alt="" coords="588,107,787,133"/></map>
 </div>
 </p>
 
@@ -1040,28 +1176,28 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="air__data_8c_source.html#l00144">144</a> of file <a class="el" href="air__data_8c_source.html">air_data.c</a>.</p>
+<p>Definition at line <a class="el" href="air__data_8c_source.html#l00151">151</a> of file <a class="el" href="air__data_8c_source.html">air_data.c</a>.</p>
 
-<p>References <a class="el" href="air__data_8c_source.html#l00039">air_data</a>, <a class="el" href="air__data_8h_source.html#l00042">AirData::airspeed</a>, <a class="el" href="air__data_8h_source.html#l00051">AirData::calc_tas_factor</a>, <a class="el" href="air__data_8c_source.html#l00297">get_tas_factor()</a>, <a class="el" href="air__data_8h_source.html#l00038">AirData::pressure</a>, <a class="el" href="air__data_8h_source.html#l00044">AirData::tas_factor</a>, and <a class="el" href="air__data_8h_source.html#l00040">AirData::temperature</a>.</p>
+<p>References <a class="el" href="air__data_8c_source.html#l00039">air_data</a>, <a class="el" href="air__data_8h_source.html#l00042">AirData::airspeed</a>, <a class="el" href="air__data_8h_source.html#l00051">AirData::calc_tas_factor</a>, <a class="el" href="air__data_8c_source.html#l00319">get_tas_factor()</a>, <a class="el" href="air__data_8h_source.html#l00038">AirData::pressure</a>, <a class="el" href="air__data_8h_source.html#l00044">AirData::tas_factor</a>, and <a class="el" href="air__data_8h_source.html#l00040">AirData::temperature</a>.</p>
 
-<p>Referenced by <a class="el" href="air__data_8c_source.html#l00195">air_data_init()</a>.</p>
+<p>Referenced by <a class="el" href="air__data_8c_source.html#l00216">air_data_init()</a>.</p>
 
-<p><div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-22" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-22-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-22-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-17-content" class="dyncontent" style="display:none;">
+<div id="dynsection-22-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="air__data_8c_a704d8592956cc0ab315cbe37f9967cf6_cgraph.png" border="0" usemap="#air__data_8c_a704d8592956cc0ab315cbe37f9967cf6_cgraph" alt=""/></div>
 <map name="air__data_8c_a704d8592956cc0ab315cbe37f9967cf6_cgraph" id="air__data_8c_a704d8592956cc0ab315cbe37f9967cf6_cgraph">
 <area shape="rect" id="node2" href="air__data_8c.html#ae9803888a95a6268efcb76c8adc5cff4" title="Calculate true airspeed (TAS) factor. " alt="" coords="179,5,293,32"/></map>
 </div>
 </p>
 
-<p><div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-23" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-23-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-23-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-18-content" class="dyncontent" style="display:none;">
+<div id="dynsection-23-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="air__data_8c_a704d8592956cc0ab315cbe37f9967cf6_icgraph.png" border="0" usemap="#air__data_8c_a704d8592956cc0ab315cbe37f9967cf6_icgraph" alt=""/></div>
 <map name="air__data_8c_a704d8592956cc0ab315cbe37f9967cf6_icgraph" id="air__data_8c_a704d8592956cc0ab315cbe37f9967cf6_icgraph">
 <area shape="rect" id="node2" href="air__data_8h.html#adf7b25090f4cb33d35ccfbc18470e0ad" title="AirData initialization. " alt="" coords="179,5,279,32"/></map>
@@ -1085,7 +1221,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="air__data_8c_source.html#l00039">39</a> of file <a class="el" href="air__data_8c_source.html">air_data.c</a>.</p>
 
-<p>Referenced by <a class="el" href="air__data_8c_source.html#l00235">air_data_get_amsl()</a>, <a class="el" href="air__data_8c_source.html#l00195">air_data_init()</a>, <a class="el" href="air__data_8c_source.html#l00245">air_data_periodic()</a>, <a class="el" href="air__data_8c_source.html#l00154">airspeed_cb()</a>, <a class="el" href="air__data_8c_source.html#l00105">pressure_abs_cb()</a>, <a class="el" href="air__data_8c_source.html#l00132">pressure_diff_cb()</a>, <a class="el" href="air__data_8c_source.html#l00174">send_air_data()</a>, <a class="el" href="air__data_8c_source.html#l00183">send_amsl()</a>, <a class="el" href="air__data_8c_source.html#l00168">send_baro_raw()</a>, <a class="el" href="air__data_8c_source.html#l00316">tas_from_eas()</a>, and <a class="el" href="air__data_8c_source.html#l00144">temperature_cb()</a>.</p>
+<p>Referenced by <a class="el" href="air__data_8c_source.html#l00257">air_data_get_amsl()</a>, <a class="el" href="air__data_8c_source.html#l00216">air_data_init()</a>, <a class="el" href="air__data_8c_source.html#l00267">air_data_periodic()</a>, <a class="el" href="air__data_8c_source.html#l00161">airspeed_cb()</a>, <a class="el" href="air__data_8c_source.html#l00172">incidence_cb()</a>, <a class="el" href="air__data_8c_source.html#l00112">pressure_abs_cb()</a>, <a class="el" href="air__data_8c_source.html#l00139">pressure_diff_cb()</a>, <a class="el" href="air__data_8c_source.html#l00195">send_air_data()</a>, <a class="el" href="air__data_8c_source.html#l00204">send_amsl()</a>, <a class="el" href="air__data_8c_source.html#l00189">send_baro_raw()</a>, <a class="el" href="air__data_8c_source.html#l00338">tas_from_eas()</a>, and <a class="el" href="air__data_8c_source.html#l00151">temperature_cb()</a>.</p>
 
 </div>
 </div>
@@ -1131,7 +1267,29 @@ Variables</h2></td></tr>
 
 <p>counter to check baro health </p>
 
-<p>Definition at line <a class="el" href="air__data_8c_source.html#l00102">102</a> of file <a class="el" href="air__data_8c_source.html">air_data.c</a>.</p>
+<p>Definition at line <a class="el" href="air__data_8c_source.html#l00109">109</a> of file <a class="el" href="air__data_8c_source.html">air_data.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa788a84ec6afad2bdada0f7986d7a1ac"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="abi__common_8h.html#a60f71f1b8ca24759458ed4f700f02814">abi_event</a> incidence_ev</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="air__data_8c_source.html#l00074">74</a> of file <a class="el" href="air__data_8c_source.html">air_data.c</a>.</p>
 
 </div>
 </div>
@@ -1207,7 +1365,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_7c79cf3fc55c1bc2c13c3c778f75f69a.html">air_data</a></li><li class="navelem"><a class="el" href="air__data_8c.html">air_data.c</a></li>
-    <li class="footer">Generated on Wed Nov 8 2017 10:02:15 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:03:25 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

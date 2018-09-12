@@ -9,6 +9,7 @@ var nps__main_8h_structNpsMain =
     [ "host_time_factor", "nps__main_8h.html#a6bb2995b72c8441d79ca14c4b5c0617e", null ],
     [ "ivy_bus", "nps__main_8h.html#a93f3dc2550ba26ec5e095e1e3584d514", null ],
     [ "js_dev", "nps__main_8h.html#a0f484b4f4de43cc143a5875e86f59509", null ],
+    [ "nodisplay", "nps__main_8h.html#a68aed38f06b7c11c3ee04855d0ba910a", null ],
     [ "norc", "nps__main_8h.html#a5bdbebb50289ae26b4bd73ec2738121e", null ],
     [ "rc_script", "nps__main_8h.html#a322863eb6efbf43868d3b3f3fa178d98", null ],
     [ "real_initial_time", "nps__main_8h.html#ad60042b3e42ecef4998ae2c092f2b930", null ],

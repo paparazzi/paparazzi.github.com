@@ -13,7 +13,9 @@ var searchData=
   ['control_5fenergyadaptive_20module',['control_energyadaptive module',['../module__control_energyadaptive.html',1,'onboard_modules']]],
   ['control_5fnew_20module',['control_new module',['../module__control_new.html',1,'onboard_modules']]],
   ['copilot_20module',['copilot module',['../module__copilot.html',1,'onboard_modules']]],
-  ['ctrl_5fmodule_5fdemo_20module',['ctrl_module_demo module',['../module__ctrl_module_demo.html',1,'onboard_modules']]],
+  ['ctrl_5feffectiveness_5fscheduling_20module',['ctrl_effectiveness_scheduling module',['../module__ctrl_effectiveness_scheduling.html',1,'onboard_modules']]],
+  ['ctrl_5fmodule_5finnerloop_5fdemo_20module',['ctrl_module_innerloop_demo module',['../module__ctrl_module_innerloop_demo.html',1,'onboard_modules']]],
+  ['ctrl_5fmodule_5fouterloop_5fdemo_20module',['ctrl_module_outerloop_demo module',['../module__ctrl_module_outerloop_demo.html',1,'onboard_modules']]],
   ['current_5fsensor_20module',['current_sensor module',['../module__current_sensor.html',1,'onboard_modules']]],
   ['cv_5fblob_5flocator_20module',['cv_blob_locator module',['../module__cv_blob_locator.html',1,'onboard_modules']]],
   ['cv_5fcolorfilter_20module',['cv_colorfilter module',['../module__cv_colorfilter.html',1,'onboard_modules']]],
@@ -24,5 +26,6 @@ var searchData=
   ['cv_5fopticflow_20module',['cv_opticflow module',['../module__cv_opticflow.html',1,'onboard_modules']]],
   ['cv_5fqrcode_20module',['cv_qrcode module',['../module__cv_qrcode.html',1,'onboard_modules']]],
   ['cv_5ftextons_20module',['cv_textons module',['../module__cv_textons.html',1,'onboard_modules']]],
+  ['cv_5fundistort_5fimage_20module',['cv_undistort_image module',['../module__cv_undistort_image.html',1,'onboard_modules']]],
   ['c_20style_20guide',['C Style Guide',['../stylec.html',1,'styleguide']]]
 ];

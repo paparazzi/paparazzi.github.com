@@ -19,6 +19,7 @@ var image_8h =
       [ "y_sub", "image_8h.html#ae19dda5d9d7e48819560118bc96f622c", null ]
     ] ],
     [ "flow_t", "image_8h.html#structflow__t", [
+      [ "error", "image_8h.html#ac063f65c5d6915e5f154c64dfc3e3b96", null ],
       [ "flow_x", "image_8h.html#aab8ebddbe3203e4c019f47339e5e305c", null ],
       [ "flow_y", "image_8h.html#a6c6d82d5c21a9ae8260e721aa00064d6", null ],
       [ "pos", "image_8h.html#ab1416ca0341e3519e929dee42a4531fa", null ]
@@ -44,14 +45,18 @@ var image_8h =
     [ "image_copy", "image_8h.html#a02932625f9aeb66da70c89a2f2d3a052", null ],
     [ "image_create", "image_8h.html#ab5cc0250c461b9d2f043e4884f6b9a53", null ],
     [ "image_difference", "image_8h.html#a946e57aea5ff8c79adee46cb2c72dd80", null ],
+    [ "image_draw_crosshair", "image_8h.html#a5c379f1bb8d221e3830de3cf1fe0478e", null ],
     [ "image_draw_line", "image_8h.html#a40fe37e1ba3df58796c2aa29e04e8567", null ],
     [ "image_draw_line_color", "image_8h.html#a39d2c18c82e89a7ff9b2423a7cdc9366", null ],
+    [ "image_draw_rectangle", "image_8h.html#a34fd967076d5e4e4b65730a80638bb09", null ],
     [ "image_free", "image_8h.html#aa09d6434519478ba26eab12a96d600ba", null ],
     [ "image_gradient_pixel", "image_8h.html#a1cbeeba8965707f0e5e9cb1e256c70c5", null ],
     [ "image_gradients", "image_8h.html#a5b47fdb25a4d3b575a1a1e1960d5f5e3", null ],
     [ "image_multiply", "image_8h.html#afc5615de31e098e68a4d2e3b4b686a1b", null ],
     [ "image_show_flow", "image_8h.html#a94dcb784f31e65bdc562452321371a5f", null ],
+    [ "image_show_flow_color", "image_8h.html#a9745125ba8d5be3b499b8ff972e189ee", null ],
     [ "image_show_points", "image_8h.html#a6b1f1f53bd730945826724d139048831", null ],
+    [ "image_show_points_color", "image_8h.html#a5943c9835fd07452f25e10ae27f16720", null ],
     [ "image_subpixel_window", "image_8h.html#a527ba2bdc0c396a6eec8f56ee5b8e097", null ],
     [ "image_switch", "image_8h.html#a170da2d6e19d1b99084a4fb18bc1a2ee", null ],
     [ "image_to_grayscale", "image_8h.html#a74a32006a620503a7ca62e5b2a86abd1", null ],

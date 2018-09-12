@@ -38,10 +38,10 @@ var median__filter_8h =
     [ "UpdateMedianFilterRatesInt", "median__filter_8h.html#acd05707df38c78d3a0c0a8b8d4e0058f", null ],
     [ "UpdateMedianFilterVect3Float", "median__filter_8h.html#a35c3d2b82bc9a1e09c6e87cdc748306a", null ],
     [ "UpdateMedianFilterVect3Int", "median__filter_8h.html#a0e78f662145c412ae8c4e57fcc38e2ef", null ],
-    [ "get_median_filter_f", "median__filter_8h.html#a67ad7878d066a18745671a3f3bb2fb92", null ],
-    [ "get_median_filter_i", "median__filter_8h.html#a4b24eae146e241b005063b4a44e7a511", null ],
-    [ "init_median_filter_f", "median__filter_8h.html#a27267fc98e5ca03bd559af7cc214f41b", null ],
-    [ "init_median_filter_i", "median__filter_8h.html#a1a8fedd54d66986e087c7e4e4349443f", null ],
-    [ "update_median_filter_f", "median__filter_8h.html#a3f267a32fda5629b6303a915e75bc5f1", null ],
-    [ "update_median_filter_i", "median__filter_8h.html#a93ba7fc73a838bfdb0a9a36681c824fc", null ]
+    [ "get_median_filter_f", "median__filter_8h.html#ac22bc67043369c2e3322fbcbbe6b7b3f", null ],
+    [ "get_median_filter_i", "median__filter_8h.html#ac2d1df417cffe3a92ae5ab588c09e9cf", null ],
+    [ "init_median_filter_f", "median__filter_8h.html#a96f8e995febe47e892b65f0e6ea0bf3c", null ],
+    [ "init_median_filter_i", "median__filter_8h.html#a166821d0e610078dfba3fa692d0ae5ca", null ],
+    [ "update_median_filter_f", "median__filter_8h.html#a299781c28e551a49077251f79ddf6487", null ],
+    [ "update_median_filter_i", "median__filter_8h.html#a87c4aea132190eff249c7eebe4c9e730", null ]
 ];

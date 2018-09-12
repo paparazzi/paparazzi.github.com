@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -151,7 +151,7 @@ $(document).ready(function(){initNavTree('swing_2baro__board_8c_source.html','')
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordtype">int</span> fd_sonar = open(<span class="stringliteral">&quot;/dev/input/baro_event&quot;</span>, O_RDONLY);</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordflow">if</span> (fd_sonar == -1) {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="kremlib_8h.html#a3cb9f0894fab1c8fbb0753c9c7c2a8d9">printf</a>(<span class="stringliteral">&quot;Unable to open baro event to read pressure\n&quot;</span>);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    printf(<span class="stringliteral">&quot;Unable to open baro event to read pressure\n&quot;</span>);</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">return</span> NULL;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  }</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
@@ -180,27 +180,28 @@ $(document).ready(function(){initNavTree('swing_2baro__board_8c_source.html','')
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="comment">/* Start baro reading thread */</span></div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  pthread_t baro_thread;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keywordflow">if</span> (pthread_create(&amp;baro_thread, NULL, <a class="code" href="swing_2baro__board_8c.html#ac92a0c0517ee3a8c9d5eeb7a31fdc316">baro_read</a>, NULL) != 0) {</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <a class="code" href="kremlib_8h.html#a3cb9f0894fab1c8fbb0753c9c7c2a8d9">printf</a>(<span class="stringliteral">&quot;[swing_board] Could not create baro reading thread!\n&quot;</span>);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    printf(<span class="stringliteral">&quot;[swing_board] Could not create baro reading thread!\n&quot;</span>);</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  }</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;}</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="swing_2baro__board_8c.html#a23ed77c56ba44b3ed3cc3b8e378bdb00">   87</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="apogee_2baro__board_8c.html#a23ed77c56ba44b3ed3cc3b8e378bdb00">baro_periodic</a>(<span class="keywordtype">void</span>) {}</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  pthread_setname_np(baro_thread, <span class="stringliteral">&quot;pprz_baro_thread&quot;</span>);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;}</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="swing_2baro__board_8c.html#a23ed77c56ba44b3ed3cc3b8e378bdb00">   88</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="apogee_2baro__board_8c.html#a23ed77c56ba44b3ed3cc3b8e378bdb00">baro_periodic</a>(<span class="keywordtype">void</span>) {}</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="swing_2baro__board_8c.html#a35cf6cc4a308999840a583900a3d35ff">   90</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="lia_2baro__board_8c.html#a35cf6cc4a308999840a583900a3d35ff">baro_event</a>(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;{</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  pthread_mutex_lock(&amp;<a class="code" href="swing_2baro__board_8c.html#a1703ee5ef6a93c868924ec4898610bd4">baro_swing_mutex</a>);</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="swing_2baro__board_8c.html#a8a3fc33f58532f0749533d93d460117a">baro_swing_available</a>) {</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="comment">// From datasheet: raw_pressure / 4096 -&gt; pressure in hPa</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="comment">// send data in Pa</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">float</span> pressure = 100.f * ((float)<a class="code" href="swing_2baro__board_8c.html#aaba6f5f436c2d8d877ca3822059fcd11">baro_swing_raw</a>) / 4096.f;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    AbiSendMsgBARO_ABS(<a class="code" href="abi__sender__ids_8h.html#a5bb669cab223b9398b897303b2aae001">BARO_BOARD_SENDER_ID</a>, pressure);</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <a class="code" href="swing_2baro__board_8c.html#a8a3fc33f58532f0749533d93d460117a">baro_swing_available</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  }</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  pthread_mutex_unlock(&amp;<a class="code" href="swing_2baro__board_8c.html#a1703ee5ef6a93c868924ec4898610bd4">baro_swing_mutex</a>);</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;}</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="swing_2baro__board_8c.html#a35cf6cc4a308999840a583900a3d35ff">   91</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="lia_2baro__board_8c.html#a35cf6cc4a308999840a583900a3d35ff">baro_event</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;{</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  pthread_mutex_lock(&amp;<a class="code" href="swing_2baro__board_8c.html#a1703ee5ef6a93c868924ec4898610bd4">baro_swing_mutex</a>);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="swing_2baro__board_8c.html#a8a3fc33f58532f0749533d93d460117a">baro_swing_available</a>) {</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="comment">// From datasheet: raw_pressure / 4096 -&gt; pressure in hPa</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="comment">// send data in Pa</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordtype">float</span> pressure = 100.f * ((float)<a class="code" href="swing_2baro__board_8c.html#aaba6f5f436c2d8d877ca3822059fcd11">baro_swing_raw</a>) / 4096.f;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    AbiSendMsgBARO_ABS(<a class="code" href="abi__sender__ids_8h.html#a5bb669cab223b9398b897303b2aae001">BARO_BOARD_SENDER_ID</a>, pressure);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <a class="code" href="swing_2baro__board_8c.html#a8a3fc33f58532f0749533d93d460117a">baro_swing_available</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  }</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  pthread_mutex_unlock(&amp;<a class="code" href="swing_2baro__board_8c.html#a1703ee5ef6a93c868924ec4898610bd4">baro_swing_mutex</a>);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;}</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
 <div class="ttc" id="baro_8h_html"><div class="ttname"><a href="baro_8h.html">baro.h</a></div><div class="ttdoc">Common barometric sensor implementation. </div></div>
 <div class="ttc" id="abi_8h_html"><div class="ttname"><a href="abi_8h.html">abi.h</a></div><div class="ttdoc">Main include for ABI (AirBorneInterface). </div></div>
 <div class="ttc" id="apogee_2baro__board_8c_html_a9b25546908842f1d38fc56e438d46e21"><div class="ttname"><a href="apogee_2baro__board_8c.html#a9b25546908842f1d38fc56e438d46e21">baro_init</a></div><div class="ttdeci">void baro_init(void)</div><div class="ttdef"><b>Definition:</b> <a href="apogee_2baro__board_8c_source.html#l00076">baro_board.c:76</a></div></div>
@@ -214,14 +215,13 @@ $(document).ready(function(){initNavTree('swing_2baro__board_8c_source.html','')
 <div class="ttc" id="swing_2baro__board_8c_html_aaba6f5f436c2d8d877ca3822059fcd11"><div class="ttname"><a href="swing_2baro__board_8c.html#aaba6f5f436c2d8d877ca3822059fcd11">baro_swing_raw</a></div><div class="ttdeci">static int32_t baro_swing_raw</div><div class="ttdef"><b>Definition:</b> <a href="swing_2baro__board_8c_source.html#l00039">baro_board.c:39</a></div></div>
 <div class="ttc" id="swing_2baro__board_8c_html_a1703ee5ef6a93c868924ec4898610bd4"><div class="ttname"><a href="swing_2baro__board_8c.html#a1703ee5ef6a93c868924ec4898610bd4">baro_swing_mutex</a></div><div class="ttdeci">static pthread_mutex_t baro_swing_mutex</div><div class="ttdef"><b>Definition:</b> <a href="swing_2baro__board_8c_source.html#l00040">baro_board.c:40</a></div></div>
 <div class="ttc" id="swing_2baro__board_8h_html"><div class="ttname"><a href="swing_2baro__board_8h.html">baro_board.h</a></div><div class="ttdoc">Paparazzi Swing Baro Sensor implementation. </div></div>
-<div class="ttc" id="kremlib_8h_html_a3cb9f0894fab1c8fbb0753c9c7c2a8d9"><div class="ttname"><a href="kremlib_8h.html#a3cb9f0894fab1c8fbb0753c9c7c2a8d9">printf</a></div><div class="ttdeci">#define printf</div><div class="ttdef"><b>Definition:</b> <a href="kremlib_8h_source.html#l00242">kremlib.h:242</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e030268cd18297cf6282390f76bfcf7f.html">boards</a></li><li class="navelem"><a class="el" href="dir_ac03d41c96f56bce96151277973f6cb5.html">swing</a></li><li class="navelem"><a class="el" href="swing_2baro__board_8c.html">baro_board.c</a></li>
-    <li class="footer">Generated on Wed Nov 8 2017 10:01:28 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:02:33 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

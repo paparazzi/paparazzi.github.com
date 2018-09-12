@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -212,7 +212,7 @@ $(document).ready(function(){initNavTree('ardrone_2board_8c_source.html','');});
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    fp = popen(pidof_commandline, <span class="stringliteral">&quot;r&quot;</span>);</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordflow">if</span> (fp != NULL) { <span class="comment">/* Could open the pidof with line */</span></div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;      <span class="keywordflow">if</span> (fgets(pid, <span class="keyword">sizeof</span>(pid) - 1, fp) != NULL) {</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <a class="code" href="kremlib_8h.html#a3cb9f0894fab1c8fbb0753c9c7c2a8d9">printf</a>(<span class="stringliteral">&quot;Process ID deducted: \&quot;%s\&quot;\n&quot;</span>, pid);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        printf(<span class="stringliteral">&quot;Process ID deducted: \&quot;%s\&quot;\n&quot;</span>, pid);</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="keywordflow">if</span> (atoi(pid) &gt; 0) { <span class="comment">/* To make sure we end 0 &gt; There is a real process id found */</span></div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;          <span class="keywordtype">char</span> kill_command_and_process[200] = <span class="stringliteral">&quot;kill -9 &quot;</span>; <span class="comment">/* BTW there is no pkill on this Busybox */</span></div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;          strcat(kill_command_and_process, pid);</div>
@@ -239,7 +239,7 @@ $(document).ready(function(){initNavTree('ardrone_2board_8c_source.html','');});
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  <a class="code" href="ardrone_2board_8c.html#a646b7f375c14d15f1aa843bbe058634f">KillGracefully</a>(<span class="stringliteral">&quot;program.elf&quot;</span>);</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  (void) ret;</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;}</div>
-<div class="ttc" id="video__device_8h_html_ae2ef10126f2c9dbdac9cf5ea3bacf794"><div class="ttname"><a href="video__device_8h.html#ae2ef10126f2c9dbdac9cf5ea3bacf794">video_config_t::output_size</a></div><div class="ttdeci">struct img_size_t output_size</div><div class="ttdoc">Output image size. </div><div class="ttdef"><b>Definition:</b> <a href="video__device_8h_source.html#l00045">video_device.h:45</a></div></div>
+<div class="ttc" id="video__device_8h_html_ae2ef10126f2c9dbdac9cf5ea3bacf794"><div class="ttname"><a href="video__device_8h.html#ae2ef10126f2c9dbdac9cf5ea3bacf794">video_config_t::output_size</a></div><div class="ttdeci">struct img_size_t output_size</div><div class="ttdoc">Output image size. </div><div class="ttdef"><b>Definition:</b> <a href="video__device_8h_source.html#l00056">video_device.h:56</a></div></div>
 <div class="ttc" id="v4l2_8h_html"><div class="ttname"><a href="v4l2_8h.html">v4l2.h</a></div><div class="ttdoc">Capture images from a V4L2 device (Video for Linux 2) </div></div>
 <div class="ttc" id="ardrone_2board_8c_html_a646b7f375c14d15f1aa843bbe058634f"><div class="ttname"><a href="ardrone_2board_8c.html#a646b7f375c14d15f1aa843bbe058634f">KillGracefully</a></div><div class="ttdeci">int KillGracefully(char *process_name)</div><div class="ttdef"><b>Definition:</b> <a href="ardrone_2board_8c_source.html#l00094">board.c:94</a></div></div>
 <div class="ttc" id="group__mcu__periph_html_ga916f2adc2080b4fe88034086d107a8dc"><div class="ttname"><a href="group__mcu__periph.html#ga916f2adc2080b4fe88034086d107a8dc">board_init</a></div><div class="ttdeci">void board_init(void)</div><div class="ttdoc">Optional board init function called at the start of mcu_init(). </div><div class="ttdef"><b>Definition:</b> <a href="ardrone_2board_8c_source.html#l00130">board.c:130</a></div></div>
@@ -247,16 +247,15 @@ $(document).ready(function(){initNavTree('ardrone_2board_8c_source.html','');});
 <div class="ttc" id="ardrone_2board_8c_html_aebe228d13ad2e4e0c8528d945ad76a82"><div class="ttname"><a href="ardrone_2board_8c.html#aebe228d13ad2e4e0c8528d945ad76a82">bottom_camera</a></div><div class="ttdeci">struct video_config_t bottom_camera</div><div class="ttdef"><b>Definition:</b> <a href="ardrone_2board_8c_source.html#l00068">board.c:68</a></div></div>
 <div class="ttc" id="video__device_8h_html"><div class="ttname"><a href="video__device_8h.html">video_device.h</a></div></div>
 <div class="ttc" id="ardrone_2board_8c_html_abe211b229633c3f39cbfb50c5765b4b4"><div class="ttname"><a href="ardrone_2board_8c.html#abe211b229633c3f39cbfb50c5765b4b4">front_camera</a></div><div class="ttdeci">struct video_config_t front_camera</div><div class="ttdef"><b>Definition:</b> <a href="ardrone_2board_8c_source.html#l00043">board.c:43</a></div></div>
-<div class="ttc" id="kremlib_8h_html_a3cb9f0894fab1c8fbb0753c9c7c2a8d9"><div class="ttname"><a href="kremlib_8h.html#a3cb9f0894fab1c8fbb0753c9c7c2a8d9">printf</a></div><div class="ttdeci">#define printf</div><div class="ttdef"><b>Definition:</b> <a href="kremlib_8h_source.html#l00242">kremlib.h:242</a></div></div>
-<div class="ttc" id="image_8h_html_af715f74ca485995f0f4d0f40020ac81a"><div class="ttname"><a href="image_8h.html#af715f74ca485995f0f4d0f40020ac81a">img_size_t::w</a></div><div class="ttdeci">uint16_t w</div><div class="ttdoc">The width. </div><div class="ttdef"><b>Definition:</b> <a href="image_8h_source.html#l00074">image.h:74</a></div></div>
-<div class="ttc" id="video__device_8h_html_structvideo__config__t"><div class="ttname"><a href="video__device_8h.html#structvideo__config__t">video_config_t</a></div><div class="ttdoc">V4L2 device settings. </div><div class="ttdef"><b>Definition:</b> <a href="video__device_8h_source.html#l00044">video_device.h:44</a></div></div>
+<div class="ttc" id="image_8h_html_af715f74ca485995f0f4d0f40020ac81a"><div class="ttname"><a href="image_8h.html#af715f74ca485995f0f4d0f40020ac81a">img_size_t::w</a></div><div class="ttdeci">uint16_t w</div><div class="ttdoc">The width. </div><div class="ttdef"><b>Definition:</b> <a href="image_8h_source.html#l00075">image.h:75</a></div></div>
+<div class="ttc" id="video__device_8h_html_structvideo__config__t"><div class="ttname"><a href="video__device_8h.html#structvideo__config__t">video_config_t</a></div><div class="ttdoc">V4L2 device settings. </div><div class="ttdef"><b>Definition:</b> <a href="video__device_8h_source.html#l00055">video_device.h:55</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e030268cd18297cf6282390f76bfcf7f.html">boards</a></li><li class="navelem"><a class="el" href="dir_93997fa94db05292d114fcb1dd488916.html">ardrone</a></li><li class="navelem"><a class="el" href="ardrone_2board_8c.html">board.c</a></li>
-    <li class="footer">Generated on Wed Nov 8 2017 10:01:29 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:02:33 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

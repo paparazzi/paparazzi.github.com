@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -245,6 +245,8 @@ $(document).ready(function(){initNavTree('functions_vars_a.html','');});
 , <a class="el" href="imu_8h.html#aecac1be12d8d9c9c31be2ad9d5b90627">Imu</a>
 , <a class="el" href="ins__float__invariant_8h.html#a1401609b4a97c260eb60c68fdb8508c2">inv_command</a>
 , <a class="el" href="ins__float__invariant_8h.html#aecfac5c328ea030e06067337bce6910b">inv_measures</a>
+, <a class="el" href="ins__mekf__wind_8cpp.html#ac5d2c780351def9945be95fd1c102556">MekfWindInputs</a>
+, <a class="el" href="ins__mekf__wind_8cpp.html#adc666fd7c9a334ab95aa373a2798a7d7">MekfWindState</a>
 , <a class="el" href="nps__sensors_8h.html#a9ad5df2a3316c9075ed5920abbb2cd68">NpsSensors</a>
 </li>
 <li>Accel
@@ -258,6 +260,9 @@ $(document).ready(function(){initNavTree('functions_vars_a.html','');});
 <li>accel_available
 : <a class="el" href="imu__nps_8h.html#affdfaed8b6dbb49c41b8615817a80cbb">ImuNps</a>
 , <a class="el" href="xsens700_8h.html#a9ef6f8fa87d4b749d333ea6b0ac4d93e">Xsens</a>
+</li>
+<li>accel_bias
+: <a class="el" href="ins__mekf__wind_8cpp.html#aa38e6cacac8b059d1ab61339131ad61b">MekfWindState</a>
 </li>
 <li>accel_cnt
 : <a class="el" href="ahrs__float__cmpl_8h.html#ad9fbe78484412fe9e4c9b53438c89709">AhrsFloatCmpl</a>
@@ -292,6 +297,9 @@ $(document).ready(function(){initNavTree('functions_vars_a.html','');});
 <li>accel_range
 : <a class="el" href="mpu60x0_8h.html#abe7cee016f124472673117c85168a7f5">Mpu60x0Config</a>
 , <a class="el" href="mpu9250_8h.html#acc1cbb496e5ea43bf9a0794045c7573e">Mpu9250Config</a>
+</li>
+<li>accel_rate
+: <a class="el" href="modules_2actuators_2actuators__md25_8h.html#ab567b3ed142c269b46993e249947a03c">ActuatorsMD25</a>
 </li>
 <li>accel_status
 : <a class="el" href="group__state__acceleration.html#ga42a40deda3336374ca2d3322c9e176d9">State</a>
@@ -337,7 +345,9 @@ $(document).ready(function(){initNavTree('functions_vars_a.html','');});
 : <a class="el" href="px4__flash_2protocol_8h.html#a8c998a740c7a24b4bdf2fe1ba8f903c6">px4io_mixdata</a>
 </li>
 <li>active
-: <a class="el" href="act__fast_8h.html#a19062a096b465456b60b3e957413be00">agent_t</a>
+: <a class="el" href="bebop__ae__awb_8h.html#ab2471d6eb4bfde82d8c057fc671e5892">ae_setting_t</a>
+, <a class="el" href="act__fast_8h.html#a19062a096b465456b60b3e957413be00">agent_t</a>
+, <a class="el" href="bebop__ae__awb_8h.html#a9710dafed6488074c31565928fb9623c">awb_setting_t</a>
 , <a class="el" href="cv_8h.html#a540cc5f18a27fe162ca7aeebbf941f0e">video_listener</a>
 </li>
 <li>actuator_out
@@ -403,6 +413,12 @@ $(document).ready(function(){initNavTree('functions_vars_a.html','');});
 <li>afmr
 : <a class="el" href="lpcCAN_8h.html#af259dd418e2cb796e748ceb0a3b494c8">can_accept_Regs_t</a>
 </li>
+<li>afrh
+: <a class="el" href="xvert_2chibios_2v1_80_2board_8c.html#a1d1b43e61f60097e62847a7bc0085c6d">gpio_setup_t</a>
+</li>
+<li>afrl
+: <a class="el" href="xvert_2chibios_2v1_80_2board_8c.html#a55a945fac971487c65b9ff9456d49076">gpio_setup_t</a>
+</li>
 <li>after_cb
 : <a class="el" href="group__spi.html#a42f7b32b71120469bf60af28f5880177">spi_transaction</a>
 </li>
@@ -430,6 +446,7 @@ $(document).ready(function(){initNavTree('functions_vars_a.html','');});
 : <a class="el" href="air__data_8h.html#aa3fd9eb6dd833a4c41b2792f8aefff6e">AirData</a>
 , <a class="el" href="airspeed__adc_8h.html#abc9369e89888cef93dd1ab37044beaaf">AirspeedAdc</a>
 , <a class="el" href="airspeed__ms45xx__i2c_8h.html#af8f6282fba31101e1bfc23f0d393505a">AirspeedMs45xx</a>
+, <a class="el" href="ins__mekf__wind_8cpp.html#a14e7c7f692a0d57f322b3beed2ebf7c9">MekfWindMeasurements</a>
 , <a class="el" href="nps__fdm_8h.html#a53ecaa8442cbd8d50152cde7883e3cfa">NpsFdm</a>
 , <a class="el" href="nps__sensors_8h.html#a6a58aa361a6c9887083c7505ba58adb9">NpsSensors</a>
 , <a class="el" href="pressure__board__navarro_8h.html#a024c576df9b7538ad95959d78ed9e6cf">PBNState</a>
@@ -586,8 +603,12 @@ $(document).ready(function(){initNavTree('functions_vars_a.html','');});
 <li>aoa
 : <a class="el" href="air__data_8h.html#a80eacf3c47bc18ce0b039e4770bc878e">AirData</a>
 , <a class="el" href="UKF__Wind__Estimator_8h.html#a0d038f2a90e7893330ffdec142c8718c">ExtU</a>
+, <a class="el" href="ins__mekf__wind_8cpp.html#a09c2b5fde69c19fad4709fd493b1daba">MekfWindMeasurements</a>
 , <a class="el" href="nps__fdm_8h.html#a0ba36b2cc1255eb1f05991c12f1e8494">NpsFdm</a>
 , <a class="el" href="nps__sensors_8h.html#aa722fd907fbd21050cda460f1a02ca06">NpsSensors</a>
+</li>
+<li>aos
+: <a class="el" href="ins__mekf__wind_8cpp.html#a0408858cc5a40645caf7c916f9d6c3e7">MekfWindMeasurements</a>
 </li>
 <li>ap
 : <a class="el" href="group__chprintf.html#aff9004a9588d7b04f9a4151ed5d4624b">synchronous_print_arg_t</a>
@@ -610,6 +631,9 @@ $(document).ready(function(){initNavTree('functions_vars_a.html','');});
 <li>arb_lost_cnt
 : <a class="el" href="group__i2c.html#af759b5450d828fa43aa04b203bab42cd">i2c_errors</a>
 </li>
+<li>arming_status
+: <a class="el" href="autopilot_8h.html#a15a35c53993bb6bd17765757498ab191">pprz_autopilot</a>
+</li>
 <li>array_temp
 : <a class="el" href="copilot_8h.html#a8f8767bb01f2cea650d9f5761513efac">CameraSnapshot</a>
 </li>
@@ -628,8 +652,12 @@ $(document).ready(function(){initNavTree('functions_vars_a.html','');});
 <li>autopilot
 : <a class="el" href="px4flow_8h.html#a73119a1d911e7b793682d7e0043ef02e">mavlink_heartbeat</a>
 </li>
+<li>autoset_offset
+: <a class="el" href="airspeed__ms45xx__i2c_8h.html#a19827c5000cce05be28ccad145fb9194">AirspeedMs45xx</a>
+</li>
 <li>autoshoot
-: <a class="el" href="hackhd_8h.html#a734f8cdb64711578b3d5fab0a4df1d83">HackHD</a>
+: <a class="el" href="dc__ctrl__parrot__mykonos_8h.html#ab1d93fd2ca0ebb5d993ba451b0b84962">Dc_Ctrl_Parrot_Mykonos</a>
+, <a class="el" href="hackhd_8h.html#a734f8cdb64711578b3d5fab0a4df1d83">HackHD</a>
 </li>
 <li>av_nb_sample
 : <a class="el" href="adc_8h.html#aceea4ff785000051676babf3e5f25287">adc_buf</a>
@@ -667,9 +695,11 @@ $(document).ready(function(){initNavTree('functions_vars_a.html','');});
 </li>
 <li>ax
 : <a class="el" href="navdata_8h.html#afb768780467050497c752ea0dd506173">navdata_measure_t</a>
+, <a class="el" href="decawave__anchorless__communication_8c.html#acd88101a6b3b04216e131b2e6aca1939">nodeState</a>
 </li>
 <li>ay
 : <a class="el" href="navdata_8h.html#a16395ce437b54859368eae1432b649a8">navdata_measure_t</a>
+, <a class="el" href="decawave__anchorless__communication_8c.html#aacfdc4cd784172cb75b5b51ef9c5f5ad">nodeState</a>
 </li>
 <li>az
 : <a class="el" href="navdata_8h.html#af1ce6912ab2bedc8fb275876b7c04327">navdata_measure_t</a>
@@ -683,7 +713,7 @@ $(document).ready(function(){initNavTree('functions_vars_a.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Nov 8 2017 10:03:14 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:04:30 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

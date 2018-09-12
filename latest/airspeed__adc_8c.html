@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -121,6 +121,7 @@ $(document).ready(function(){initNavTree('airspeed__adc_8c.html','');});
 <code>#include &lt;BOARD_CONFIG&gt;</code><br />
 <code>#include &quot;generated/airframe.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="state_8h_source.html">state.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="abi_8h_source.html">subsystems/abi.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for airspeed_adc.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -128,7 +129,7 @@ $(document).ready(function(){initNavTree('airspeed__adc_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="airspeed__adc_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2sensors_2airspeed__adc_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2sensors_2airspeed__adc_8c" id="sw_2airborne_2modules_2sensors_2airspeed__adc_8c">
-<area shape="rect" id="node2" href="airspeed__adc_8h.html" title="Read an airspeed or differential pressure sensor via onboard ADC. " alt="" coords="5,95,196,136"/><area shape="rect" id="node4" href="adc_8h.html" title="arch independent ADC (Analog to Digital Converter) API " alt="" coords="221,102,357,129"/><area shape="rect" id="node8" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="741,102,807,129"/><area shape="rect" id="node3" href="inttypes_8h.html" title="inttypes.h" alt="" coords="67,191,153,218"/><area shape="rect" id="node9" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="703,273,882,300"/><area shape="rect" id="node16" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="957,273,1148,300"/><area shape="rect" id="node19" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="615,184,765,225"/><area shape="rect" id="node21" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="440,184,591,225"/><area shape="rect" id="node22" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="841,184,1005,225"/><area shape="rect" id="node11" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="957,348,1111,375"/><area shape="rect" id="node14" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="588,348,739,375"/><area shape="rect" id="node20" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="491,273,615,300"/></map>
+<area shape="rect" id="node2" href="airspeed__adc_8h.html" title="Read an airspeed or differential pressure sensor via onboard ADC. " alt="" coords="5,95,196,136"/><area shape="rect" id="node4" href="adc_8h.html" title="arch independent ADC (Analog to Digital Converter) API " alt="" coords="221,102,357,129"/><area shape="rect" id="node8" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="735,102,802,129"/><area shape="rect" id="node23" href="abi_8h.html" title="Main include for ABI (AirBorneInterface). " alt="" coords="1157,102,1292,129"/><area shape="rect" id="node3" href="inttypes_8h.html" title="inttypes.h" alt="" coords="58,191,143,218"/><area shape="rect" id="node9" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="665,273,843,300"/><area shape="rect" id="node16" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="921,273,1112,300"/><area shape="rect" id="node19" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="588,184,739,225"/><area shape="rect" id="node21" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="413,184,564,225"/><area shape="rect" id="node22" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="815,184,979,225"/><area shape="rect" id="node11" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="915,348,1070,375"/><area shape="rect" id="node14" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="547,348,697,375"/><area shape="rect" id="node20" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="464,273,588,300"/></map>
 </div>
 </div>
 <p><a href="airspeed__adc_8c_source.html">Go to the source code of this file.</a></p>
@@ -169,9 +170,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="airspeed__adc_8c_source.html#l00050">50</a> of file <a class="el" href="airspeed__adc_8c_source.html">airspeed_adc.c</a>.</p>
+<p>Definition at line <a class="el" href="airspeed__adc_8c_source.html#l00051">51</a> of file <a class="el" href="airspeed__adc_8c_source.html">airspeed_adc.c</a>.</p>
 
-<p>Referenced by <a class="el" href="airspeed__adc_8c_source.html#l00057">airspeed_adc_init()</a>.</p>
+<p>Referenced by <a class="el" href="airspeed__adc_8c_source.html#l00058">airspeed_adc_init()</a>.</p>
 
 </div>
 </div>
@@ -185,7 +186,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="airspeed__adc_8c_source.html#l00033">33</a> of file <a class="el" href="airspeed__adc_8c_source.html">airspeed_adc.c</a>.</p>
+<p>Definition at line <a class="el" href="airspeed__adc_8c_source.html#l00034">34</a> of file <a class="el" href="airspeed__adc_8c_source.html">airspeed_adc.c</a>.</p>
 
 </div>
 </div>
@@ -204,9 +205,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="airspeed__adc_8c_source.html#l00057">57</a> of file <a class="el" href="airspeed__adc_8c_source.html">airspeed_adc.c</a>.</p>
+<p>Definition at line <a class="el" href="airspeed__adc_8c_source.html#l00058">58</a> of file <a class="el" href="airspeed__adc_8c_source.html">airspeed_adc.c</a>.</p>
 
-<p>References <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00281">adc_buf_channel()</a>, <a class="el" href="airspeed__adc_8c_source.html#l00050">ADC_CHANNEL_AIRSPEED_NB_SAMPLES</a>, <a class="el" href="airspeed__adc_8h_source.html#l00035">AirspeedAdc::airspeed</a>, <a class="el" href="airspeed__adc_8c_source.html#l00041">airspeed_adc</a>, <a class="el" href="airspeed__adc_8c_source.html#l00053">buf_airspeed</a>, <a class="el" href="airspeed__adc_8h_source.html#l00033">AirspeedAdc::offset</a>, and <a class="el" href="airspeed__adc_8h_source.html#l00034">AirspeedAdc::scale</a>.</p>
+<p>References <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00281">adc_buf_channel()</a>, <a class="el" href="airspeed__adc_8c_source.html#l00051">ADC_CHANNEL_AIRSPEED_NB_SAMPLES</a>, <a class="el" href="airspeed__adc_8h_source.html#l00035">AirspeedAdc::airspeed</a>, <a class="el" href="airspeed__adc_8c_source.html#l00042">airspeed_adc</a>, <a class="el" href="airspeed__adc_8c_source.html#l00054">buf_airspeed</a>, <a class="el" href="airspeed__adc_8h_source.html#l00033">AirspeedAdc::offset</a>, and <a class="el" href="airspeed__adc_8h_source.html#l00034">AirspeedAdc::scale</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -235,9 +236,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="airspeed__adc_8c_source.html#l00072">72</a> of file <a class="el" href="airspeed__adc_8c_source.html">airspeed_adc.c</a>.</p>
+<p>Definition at line <a class="el" href="airspeed__adc_8c_source.html#l00073">73</a> of file <a class="el" href="airspeed__adc_8c_source.html">airspeed_adc.c</a>.</p>
 
-<p>References <a class="el" href="airspeed__adc_8h_source.html#l00035">AirspeedAdc::airspeed</a>, <a class="el" href="airspeed__adc_8c_source.html#l00041">airspeed_adc</a>, <a class="el" href="adc_8h_source.html#l00057">adc_buf::av_nb_sample</a>, <a class="el" href="airspeed__adc_8c_source.html#l00053">buf_airspeed</a>, <a class="el" href="rotorcraft_2main__fbw_8c_source.html#l00053">Max</a>, <a class="el" href="airspeed__adc_8h_source.html#l00033">AirspeedAdc::offset</a>, <a class="el" href="airspeed__adc_8h_source.html#l00034">AirspeedAdc::scale</a>, <a class="el" href="sim__ir_8c_source.html#l00014">sim_air_speed</a>, <a class="el" href="state_8h_source.html#l01309">stateSetAirspeed_f()</a>, <a class="el" href="adc_8h_source.html#l00054">adc_buf::sum</a>, and <a class="el" href="airspeed__adc_8h_source.html#l00032">AirspeedAdc::val</a>.</p>
+<p>References <a class="el" href="airspeed__adc_8h_source.html#l00035">AirspeedAdc::airspeed</a>, <a class="el" href="airspeed__adc_8c_source.html#l00042">airspeed_adc</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00099">AIRSPEED_ADC_ID</a>, <a class="el" href="adc_8h_source.html#l00057">adc_buf::av_nb_sample</a>, <a class="el" href="airspeed__adc_8c_source.html#l00054">buf_airspeed</a>, <a class="el" href="rotorcraft_2main__fbw_8c_source.html#l00053">Max</a>, <a class="el" href="airspeed__adc_8h_source.html#l00033">AirspeedAdc::offset</a>, <a class="el" href="airspeed__adc_8h_source.html#l00034">AirspeedAdc::scale</a>, <a class="el" href="sim__ir_8c_source.html#l00014">sim_air_speed</a>, <a class="el" href="state_8h_source.html#l01309">stateSetAirspeed_f()</a>, <a class="el" href="adc_8h_source.html#l00054">adc_buf::sum</a>, and <a class="el" href="airspeed__adc_8h_source.html#l00032">AirspeedAdc::val</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -263,9 +264,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="airspeed__adc_8c_source.html#l00041">41</a> of file <a class="el" href="airspeed__adc_8c_source.html">airspeed_adc.c</a>.</p>
+<p>Definition at line <a class="el" href="airspeed__adc_8c_source.html#l00042">42</a> of file <a class="el" href="airspeed__adc_8c_source.html">airspeed_adc.c</a>.</p>
 
-<p>Referenced by <a class="el" href="airspeed__adc_8c_source.html#l00057">airspeed_adc_init()</a>, and <a class="el" href="airspeed__adc_8c_source.html#l00072">airspeed_adc_update()</a>.</p>
+<p>Referenced by <a class="el" href="airspeed__adc_8c_source.html#l00058">airspeed_adc_init()</a>, and <a class="el" href="airspeed__adc_8c_source.html#l00073">airspeed_adc_update()</a>.</p>
 
 </div>
 </div>
@@ -287,9 +288,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="airspeed__adc_8c_source.html#l00053">53</a> of file <a class="el" href="airspeed__adc_8c_source.html">airspeed_adc.c</a>.</p>
+<p>Definition at line <a class="el" href="airspeed__adc_8c_source.html#l00054">54</a> of file <a class="el" href="airspeed__adc_8c_source.html">airspeed_adc.c</a>.</p>
 
-<p>Referenced by <a class="el" href="airspeed__adc_8c_source.html#l00057">airspeed_adc_init()</a>, and <a class="el" href="airspeed__adc_8c_source.html#l00072">airspeed_adc_update()</a>.</p>
+<p>Referenced by <a class="el" href="airspeed__adc_8c_source.html#l00058">airspeed_adc_init()</a>, and <a class="el" href="airspeed__adc_8c_source.html#l00073">airspeed_adc_update()</a>.</p>
 
 </div>
 </div>
@@ -299,7 +300,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_2f48bbb566df394f79dcf8fe0631584a.html">sensors</a></li><li class="navelem"><a class="el" href="airspeed__adc_8c.html">airspeed_adc.c</a></li>
-    <li class="footer">Generated on Wed Nov 8 2017 10:02:32 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:03:40 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -103,23 +103,24 @@ $(document).ready(function(){initNavTree('module__airspeed_ms45xx_i2c.html','');
 <div class="title">airspeed_ms45xx_i2c module </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><b>MS45XX differential pressure/airspeed sensor.</b></p>
+<div class="textblock"><p><b>MS45XX differential or gauge type of pressure sensor for e.g measuring airspeed.</b></p>
 <p><b></b></p>
-<p>Airspeed sensor module using the MS45xxDO digital pressure sensor via I2C. Needs one of the differential versions with 14bit pressure and 11bit temperature.</p>
+<p>This sensor module is using the MS45xxDO digital pressure sensor with readings via I2C. Needs to be a versions with 14bit pressure and 11bit temperature data output.</p>
 <h1><a class="anchor" id="module_load_example__airspeed_ms45xx_i2c"></a>
 Example for airframe file</h1>
 <p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;module name=&quot;airspeed_ms45xx_i2c&quot;&gt;</div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;  &lt;define name=&quot;MS45XX_I2C_DEV&quot; value=&quot;i2cX&quot; /&gt;</div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;  &lt;define name=&quot;MS45XX_I2C_ADDR&quot; value=&quot;0x50&quot; /&gt;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;  &lt;define name=&quot;MS45XX_PRESSURE_RANGE&quot; value=&quot;1|2|5|15|30|50|100|150&quot; /&gt;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;  &lt;define name=&quot;MS45XX_OUTPUT_TYPE&quot; value=&quot;0|1&quot; /&gt;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;  &lt;define name=&quot;MS45XX_SYNC_SEND&quot; value=&quot;TRUE|FALSE&quot; /&gt;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;  &lt;define name=&quot;MS45XX_PRESSURE_SCALE&quot; value=&quot;1.05&quot; /&gt;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  &lt;define name=&quot;MS45XX_PRESSURE_OFFSET&quot; value=&quot;8618.4&quot; /&gt;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  &lt;define name=&quot;MS45XX_AIRSPEED_SCALE&quot; value=&quot;1.6327&quot; /&gt;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  &lt;define name=&quot;MS45XX_LOWPASS_TAU&quot; value=&quot;0.15&quot; /&gt;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  &lt;define name=&quot;USE_AIRSPEED_MS45XX&quot; value=&quot;TRUE|FALSE&quot; /&gt;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;&lt;/module&gt;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;  &lt;define name=&quot;MS45XX_PRESSURE_TYPE&quot; value=&quot;0|1&quot; /&gt;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;  &lt;define name=&quot;MS45XX_PRESSURE_RANGE&quot; value=&quot;1|2|4|5|10|15|20|30|50|100|150&quot; /&gt;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;  &lt;define name=&quot;MS45XX_OUTPUT_TYPE&quot; value=&quot;0|1&quot; /&gt;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;  &lt;define name=&quot;MS45XX_SYNC_SEND&quot; value=&quot;TRUE|FALSE&quot; /&gt;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  &lt;define name=&quot;MS45XX_PRESSURE_SCALE&quot; value=&quot;1.05&quot; /&gt;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  &lt;define name=&quot;MS45XX_PRESSURE_OFFSET&quot; value=&quot;8618.4&quot; /&gt;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  &lt;define name=&quot;MS45XX_AIRSPEED_SCALE&quot; value=&quot;1.6327&quot; /&gt;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  &lt;define name=&quot;MS45XX_LOWPASS_TAU&quot; value=&quot;0.15&quot; /&gt;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  &lt;define name=&quot;USE_AIRSPEED_MS45XX&quot; value=&quot;TRUE|FALSE&quot; /&gt;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;&lt;/module&gt;</div>
 </div><!-- fragment --> <h1><a class="anchor" id="configuration__airspeed_ms45xx_i2c"></a>
 Module configuration options</h1>
 <h2><a class="anchor" id="define"></a>
@@ -129,7 +130,9 @@ Define Options</h2>
  Description: set i2c peripheral (default: i2c2)</li>
 <li><b>name:</b> <code>MS45XX_I2C_ADDR</code> <b>value:</b> <em>0x50</em> <br />
  Description: i2c slave address (default: 0x50)</li>
-<li><b>name:</b> <code>MS45XX_PRESSURE_RANGE</code> <b>value:</b> <em>1|2|5|15|30|50|100|150</em> <br />
+<li><b>name:</b> <code>MS45XX_PRESSURE_TYPE</code> <b>value:</b> <em>0|1</em> <br />
+ Description: Pressure Differential or Gauge, default is Differential</li>
+<li><b>name:</b> <code>MS45XX_PRESSURE_RANGE</code> <b>value:</b> <em>1|2|4|5|10|15|20|30|50|100|150</em> <br />
  Description: pressure range in psi (default: 1)</li>
 <li><b>name:</b> <code>MS45XX_OUTPUT_TYPE</code> <b>value:</b> <em>0|1</em> <br />
  Description: set to 0 for output type A, to 1 for output type B (default: type A)</li>
@@ -144,7 +147,7 @@ Define Options</h2>
 <li><b>name:</b> <code>MS45XX_LOWPASS_TAU</code> <b>value:</b> <em>0.15</em> <br />
  Description: Time constant for second order Butterworth low pass filter</li>
 <li><b>name:</b> <code>USE_AIRSPEED_MS45XX</code> <b>value:</b> <em>TRUE|FALSE</em> <br />
- Description: set airspeed in state interface</li>
+ Description: Set airspeed in state interface for this sensor</li>
 </ul>
 <h1><a class="anchor" id="functions__airspeed_ms45xx_i2c"></a>
 Module functions</h1>
@@ -191,27 +194,30 @@ Raw airspeed_ms45xx_i2c.xml file:</h2>
 <div class="line">&lt;module name=&quot;airspeed_ms45xx_i2c&quot; dir=&quot;sensors&quot;&gt;</div>
 <div class="line">  &lt;doc&gt;</div>
 <div class="line">    &lt;description&gt;</div>
-<div class="line">      MS45XX differential pressure/airspeed sensor.</div>
-<div class="line">      Airspeed sensor module using the MS45xxDO digital pressure sensor via I2C.</div>
-<div class="line">      Needs one of the differential versions with 14bit pressure and 11bit temperature.</div>
+<div class="line">      MS45XX differential or gauge type of pressure sensor for e.g measuring airspeed.</div>
+<div class="line">      This sensor module is using the MS45xxDO digital pressure sensor with readings via I2C.</div>
+<div class="line">      Needs to be a versions with 14bit pressure and 11bit temperature data output.</div>
 <div class="line">    &lt;/description&gt;</div>
 <div class="line">    &lt;define name=&quot;MS45XX_I2C_DEV&quot; value=&quot;i2cX&quot; description=&quot;set i2c peripheral (default: i2c2)&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;MS45XX_I2C_ADDR&quot; value=&quot;0x50&quot; description=&quot;i2c slave address (default: 0x50)&quot;/&gt;</div>
-<div class="line">    &lt;define name=&quot;MS45XX_PRESSURE_RANGE&quot; value=&quot;1|2|5|15|30|50|100|150&quot; description=&quot;pressure range in psi (default: 1)&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;MS45XX_PRESSURE_TYPE&quot; value=&quot;0|1&quot; description=&quot;Pressure Differential or Gauge, default is Differential&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;MS45XX_PRESSURE_RANGE&quot; value=&quot;1|2|4|5|10|15|20|30|50|100|150&quot; description=&quot;pressure range in psi (default: 1)&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;MS45XX_OUTPUT_TYPE&quot; value=&quot;0|1&quot; description=&quot;set to 0 for output type A, to 1 for output type B (default: type A)&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;MS45XX_SYNC_SEND&quot; value=&quot;TRUE|FALSE&quot; description=&quot;flag to enable sending every new measurement via telemetry (default:FALSE)&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;MS45XX_PRESSURE_SCALE&quot; value=&quot;1.05&quot; description=&quot;pressure scaling factor to convert raw output to Pa (default: set according to pressure range and output type according to datasheet)&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;MS45XX_PRESSURE_OFFSET&quot; value=&quot;8618.4&quot; description=&quot;pressure offset in Pa (default: set according to pressure range and output type according to datasheet)&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;MS45XX_AIRSPEED_SCALE&quot; value=&quot;1.6327&quot; description=&quot;quadratic scale factor to convert differential pressure to airspeed&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;MS45XX_LOWPASS_TAU&quot; value=&quot;0.15&quot; description=&quot;Time constant for second order Butterworth low pass filter&quot;/&gt;</div>
-<div class="line">    &lt;define name=&quot;USE_AIRSPEED_MS45XX&quot; value=&quot;TRUE|FALSE&quot; description=&quot;set airspeed in state interface&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;USE_AIRSPEED_MS45XX&quot; value=&quot;TRUE|FALSE&quot; description=&quot;Set airspeed in state interface for this sensor&quot;/&gt;</div>
 <div class="line">  &lt;/doc&gt;</div>
 <div class="line"></div>
 <div class="line">  &lt;settings&gt;</div>
 <div class="line">    &lt;dl_settings&gt;</div>
 <div class="line">      &lt;dl_settings NAME=&quot;MS45XX&quot;&gt;</div>
 <div class="line">        &lt;dl_setting min=&quot;0&quot; max=&quot;1&quot; step=&quot;1&quot; values=&quot;FALSE|TRUE&quot; var=&quot;ms45xx.sync_send&quot; type=&quot;bool&quot; shortname=&quot;sync_send&quot; module=&quot;modules/sensors/airspeed_ms45xx_i2c&quot; param=&quot;MS45XX_SYNC_SEND&quot; persistent=&quot;true&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting min=&quot;0&quot; max=&quot;1&quot; step=&quot;1&quot; values=&quot;FALSE|TRUE&quot; var=&quot;ms45xx.autoset_offset&quot; type=&quot;bool&quot; shortname=&quot;autoset offset&quot; module=&quot;modules/sensors/airspeed_ms45xx_i2c&quot; param=&quot;MS45XX_SYNC_SEND&quot; persistent=&quot;true&quot;/&gt;</div>
 <div class="line">        &lt;dl_setting min=&quot;0.9&quot; max=&quot;1.2&quot; step=&quot;0.01&quot; var=&quot;ms45xx.pressure_scale&quot; type=&quot;float&quot; shortname=&quot;PressScale&quot; module=&quot;modules/sensors/airspeed_ms45xx_i2c&quot; param=&quot;MS45XX_PRESSURE_SCALE&quot; persistent=&quot;true&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting min=&quot;0&quot; max=&quot;1&quot; step=&quot;1&quot; values=&quot;FALSE|TRUE&quot; var=&quot;ms45xx.pressure_type&quot; type=&quot;bool&quot; shortname=&quot;Type G&quot; module=&quot;modules/sensors/airspeed_ms45xx_i2c&quot; param=&quot;MS45XX_PRESSURE_TYPE&quot; persistent=&quot;true&quot;/&gt;</div>
 <div class="line">        &lt;dl_setting min=&quot;8300.0&quot; max=&quot;8900.0&quot; step=&quot;0.1&quot; var=&quot;ms45xx.pressure_offset&quot; type=&quot;float&quot; shortname=&quot;PressOffset&quot; module=&quot;modules/sensors/airspeed_ms45xx_i2c&quot; param=&quot;MS45XX_PRESSURE_OFFSET&quot; persistent=&quot;true&quot;/&gt;</div>
 <div class="line">        &lt;dl_setting min=&quot;1.0&quot; max=&quot;2.0&quot; step=&quot;0.01&quot; var=&quot;ms45xx.airspeed_scale&quot; type=&quot;float&quot; shortname=&quot;AirScale&quot; module=&quot;modules/sensors/airspeed_ms45xx_i2c&quot; param=&quot;MS45XX_AIRSPEED_SCALE&quot; persistent=&quot;true&quot;/&gt;</div>
 <div class="line">      &lt;/dl_settings&gt;</div>
@@ -236,7 +242,7 @@ Raw airspeed_ms45xx_i2c.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Wed Nov 8 2017 10:02:47 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:03:57 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

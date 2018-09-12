@@ -311,6 +311,7 @@ var chimera_2chibios_2v1_80_2board_8h =
     [ "SRV7_TIM4_CH4", "chimera_2chibios_2v1_80_2board_8h.html#a14eda67d73b606d0912b6bd27d46ad26", null ],
     [ "STM32_HSECLK", "chimera_2chibios_2v1_80_2board_8h.html#aad7ccbfca9d4bd146d0d48ad6473912e", null ],
     [ "STM32_LSECLK", "chimera_2chibios_2v1_80_2board_8h.html#a9498f8f4ae2badbe39c078555ca9c793", null ],
+    [ "STM32_LSEDRV", "chimera_2chibios_2v1_80_2board_8h.html#a744a10171d8d258a2459deafb6d08ce2", null ],
     [ "STM32_VDD", "chimera_2chibios_2v1_80_2board_8h.html#a839559aab882ed0a1b6d46aa9c228378", null ],
     [ "STM32F767xx", "chimera_2chibios_2v1_80_2board_8h.html#a8291360b9adbfcbccfe2751a5c723357", null ],
     [ "SWCLK", "chimera_2chibios_2v1_80_2board_8h.html#a4f6f5eebe5c0ed0dfd19b15d6c26f2d1", null ],

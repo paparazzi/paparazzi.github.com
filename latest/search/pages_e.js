@@ -1,14 +1,18 @@
 var searchData=
 [
-  ['radio_5fcontrol_5fdatalink_20module',['radio_control_datalink module',['../module__radio_control_datalink.html',1,'onboard_modules']]],
-  ['radio_5fcontrol_5fhott_20module',['radio_control_hott module',['../module__radio_control_hott.html',1,'onboard_modules']]],
-  ['radio_5fcontrol_5fppm_20module',['radio_control_ppm module',['../module__radio_control_ppm.html',1,'onboard_modules']]],
-  ['radio_5fcontrol_5fsbus_20module',['radio_control_sbus module',['../module__radio_control_sbus.html',1,'onboard_modules']]],
-  ['radio_5fcontrol_5fsbus_5fdual_20module',['radio_control_sbus_dual module',['../module__radio_control_sbus_dual.html',1,'onboard_modules']]],
-  ['radio_5fcontrol_5fspektrum_20module',['radio_control_spektrum module',['../module__radio_control_spektrum.html',1,'onboard_modules']]],
-  ['radio_5fcontrol_5fsuperbitrf_5frc_20module',['radio_control_superbitrf_rc module',['../module__radio_control_superbitrf_rc.html',1,'onboard_modules']]],
-  ['range_5fforcefield_20module',['range_forcefield module',['../module__range_forcefield.html',1,'onboard_modules']]],
-  ['rotorcraft_5fcam_20module',['rotorcraft_cam module',['../module__rotorcraft_cam.html',1,'onboard_modules']]],
-  ['rpm_5fsensor_20module',['rpm_sensor module',['../module__rpm_sensor.html',1,'onboard_modules']]],
-  ['rssi_20module',['rssi module',['../module__rssi.html',1,'onboard_modules']]]
+  ['pano_5funwrap_20module',['pano_unwrap module',['../module__pano_unwrap.html',1,'onboard_modules']]],
+  ['pbn_20module',['pbn module',['../module__pbn.html',1,'onboard_modules']]],
+  ['photogrammetry_5fcalculator_20module',['photogrammetry_calculator module',['../module__photogrammetry_calculator.html',1,'onboard_modules']]],
+  ['pipe_20module',['pipe module',['../module__pipe.html',1,'onboard_modules']]],
+  ['pose_5fhistory_20module',['pose_history module',['../module__pose_history.html',1,'onboard_modules']]],
+  ['potential_20module',['potential module',['../module__potential.html',1,'onboard_modules']]],
+  ['pprzlog_20module',['pprzlog module',['../module__pprzlog.html',1,'onboard_modules']]],
+  ['pwm_5fmeas_20module',['pwm_meas module',['../module__pwm_meas.html',1,'onboard_modules']]],
+  ['px4_5fflash_20module',['px4_flash module',['../module__px4_flash.html',1,'onboard_modules']]],
+  ['px4_5fgimbal_20module',['px4_gimbal module',['../module__px4_gimbal.html',1,'onboard_modules']]],
+  ['px4flow_20module',['px4flow module',['../module__px4flow.html',1,'onboard_modules']]],
+  ['px4flow_5fi2c_20module',['px4flow_i2c module',['../module__px4flow_i2c.html',1,'onboard_modules']]],
+  ['paparazzi_20messages',['Paparazzi Messages',['../paparazzi_messages.html',1,'']]],
+  ['paparazzi_20technical_20primers',['Paparazzi Technical Primers',['../primer.html',1,'']]],
+  ['python_20style_20guide',['Python Style Guide',['../stylepython.html',1,'styleguide']]]
 ];

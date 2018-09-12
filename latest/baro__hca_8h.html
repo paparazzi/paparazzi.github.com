@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -168,9 +168,9 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{ <a class="code" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a14a004ce07f47580a6800c76982ea599">\</a></div>
-<div class="line"><a class="code" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a14a004ce07f47580a6800c76982ea599">    if</a> (<a class="code" href="baro__hca_8h.html#ae5cec43bc2d58c755d2bd0ec39eec8d4">baro_hca_i2c_trans</a>.<a class="code" href="group__i2c.html#ac4f80563bab524eee997c5c27ef570a4">status</a> == <a class="code" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a2884da616ec2ff9183e649f8fab1073b">I2CTransSuccess</a>) <a class="code" href="baro__hca_8h.html#ab328991896ecea4ebfab7f1622c49e5e">baro_hca_read_event</a>(); \</div>
-<div class="line">    else <a class="code" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a14a004ce07f47580a6800c76982ea599">if</a> (<a class="code" href="baro__hca_8h.html#ae5cec43bc2d58c755d2bd0ec39eec8d4">baro_hca_i2c_trans</a>.<a class="code" href="anemotaxis_8c.html#a015eb90e0de9f16e87bd149d4b9ce959">status</a> == <a class="code" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a4a8906d81bf97d49da468e6c6b9f39e9">I2CTransFailed</a>) <a class="code" href="baro__hca_8h.html#ae5cec43bc2d58c755d2bd0ec39eec8d4">baro_hca_i2c_trans</a>.<a class="code" href="anemotaxis_8c.html#a015eb90e0de9f16e87bd149d4b9ce959">status</a> = <a class="code" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a6d2d46dfea9ba1457201928eabeccace">I2CTransDone</a>; \</div>
+<b>Value:</b><div class="fragment"><div class="line">{ \</div>
+<div class="line">    if (<a class="code" href="baro__hca_8h.html#ae5cec43bc2d58c755d2bd0ec39eec8d4">baro_hca_i2c_trans</a>.<a class="code" href="group__i2c.html#ac4f80563bab524eee997c5c27ef570a4">status</a> == <a class="code" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a2884da616ec2ff9183e649f8fab1073b">I2CTransSuccess</a>) <a class="code" href="baro__hca_8h.html#ab328991896ecea4ebfab7f1622c49e5e">baro_hca_read_event</a>(); \</div>
+<div class="line">    else if (<a class="code" href="baro__hca_8h.html#ae5cec43bc2d58c755d2bd0ec39eec8d4">baro_hca_i2c_trans</a>.<a class="code" href="anemotaxis_8c.html#a015eb90e0de9f16e87bd149d4b9ce959">status</a> == <a class="code" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a4a8906d81bf97d49da468e6c6b9f39e9">I2CTransFailed</a>) <a class="code" href="baro__hca_8h.html#ae5cec43bc2d58c755d2bd0ec39eec8d4">baro_hca_i2c_trans</a>.<a class="code" href="anemotaxis_8c.html#a015eb90e0de9f16e87bd149d4b9ce959">status</a> = <a class="code" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a6d2d46dfea9ba1457201928eabeccace">I2CTransDone</a>; \</div>
 <div class="line">  }</div>
 <div class="ttc" id="anemotaxis_8c_html_a015eb90e0de9f16e87bd149d4b9ce959"><div class="ttname"><a href="anemotaxis_8c.html#a015eb90e0de9f16e87bd149d4b9ce959">status</a></div><div class="ttdeci">status</div><div class="ttdef"><b>Definition:</b> <a href="anemotaxis_8c_source.html#l00010">anemotaxis.c:10</a></div></div>
 <div class="ttc" id="group__i2c_html_ggab31a87ef6e90ddd08be846de32e8a442a2884da616ec2ff9183e649f8fab1073b"><div class="ttname"><a href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a2884da616ec2ff9183e649f8fab1073b">I2CTransSuccess</a></div><div class="ttdoc">transaction successfully finished by I2C driver </div><div class="ttdef"><b>Definition:</b> <a href="i2c_8h_source.html#l00057">i2c.h:57</a></div></div>
@@ -179,7 +179,6 @@ Variables</h2></td></tr>
 <div class="ttc" id="group__i2c_html_ggab31a87ef6e90ddd08be846de32e8a442a4a8906d81bf97d49da468e6c6b9f39e9"><div class="ttname"><a href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a4a8906d81bf97d49da468e6c6b9f39e9">I2CTransFailed</a></div><div class="ttdoc">transaction failed </div><div class="ttdef"><b>Definition:</b> <a href="i2c_8h_source.html#l00058">i2c.h:58</a></div></div>
 <div class="ttc" id="group__i2c_html_ac4f80563bab524eee997c5c27ef570a4"><div class="ttname"><a href="group__i2c.html#ac4f80563bab524eee997c5c27ef570a4">i2c_transaction::status</a></div><div class="ttdeci">enum I2CTransactionStatus status</div><div class="ttdoc">Transaction status. </div><div class="ttdef"><b>Definition:</b> <a href="i2c_8h_source.html#l00126">i2c.h:126</a></div></div>
 <div class="ttc" id="baro__hca_8h_html_ae5cec43bc2d58c755d2bd0ec39eec8d4"><div class="ttname"><a href="baro__hca_8h.html#ae5cec43bc2d58c755d2bd0ec39eec8d4">baro_hca_i2c_trans</a></div><div class="ttdeci">struct i2c_transaction baro_hca_i2c_trans</div><div class="ttdef"><b>Definition:</b> <a href="baro__hca_8c_source.html#l00060">baro_hca.c:60</a></div></div>
-<div class="ttc" id="stm32_2subsystems_2radio__control_2spektrum__arch_8c_html_a14a004ce07f47580a6800c76982ea599"><div class="ttname"><a href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a14a004ce07f47580a6800c76982ea599">if</a></div><div class="ttdeci">if(PrimarySpektrumState.SpektrumTimer)</div><div class="ttdef"><b>Definition:</b> <a href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00605">spektrum_arch.c:605</a></div></div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="baro__hca_8h_source.html#l00036">36</a> of file <a class="el" href="baro__hca_8h_source.html">baro_hca.h</a>.</p>
 
@@ -242,7 +241,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="baro__hca_8c_source.html#l00070">70</a> of file <a class="el" href="baro__hca_8c_source.html">baro_hca.c</a>.</p>
 
-<p>References <a class="el" href="baro__hca_8c_source.html#l00034">BARO_HCA_ADDR</a>, <a class="el" href="baro__hca_8c_source.html#l00051">BARO_HCA_I2C_DEV</a>, <a class="el" href="baro__hca_8c_source.html#l00060">baro_hca_i2c_trans</a>, <a class="el" href="i2c_8c_source.html#l00268">i2c_receive()</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, and <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>.</p>
+<p>References <a class="el" href="baro__hca_8c_source.html#l00034">BARO_HCA_ADDR</a>, <a class="el" href="baro__hca_8c_source.html#l00051">BARO_HCA_I2C_DEV</a>, <a class="el" href="baro__hca_8c_source.html#l00060">baro_hca_i2c_trans</a>, <a class="el" href="i2c_8c_source.html#l00270">i2c_receive()</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, and <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -280,7 +279,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_2f48bbb566df394f79dcf8fe0631584a.html">sensors</a></li><li class="navelem"><a class="el" href="baro__hca_8h.html">baro_hca.h</a></li>
-    <li class="footer">Generated on Wed Nov 8 2017 10:02:32 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:03:41 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

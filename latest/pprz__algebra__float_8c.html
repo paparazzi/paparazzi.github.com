@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -226,6 +226,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga2b04e80e9af8e229f2249bb4b6514fa8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math__algebra__float.html#ga2b04e80e9af8e229f2249bb4b6514fa8">float_quat_of_eulers_zxy</a> (struct <a class="el" href="group__math__algebra__float.html#structFloatQuat">FloatQuat</a> *q, struct <a class="el" href="group__math__algebra__float.html#structFloatEulers">FloatEulers</a> *e)</td></tr>
 <tr class="memdesc:ga2b04e80e9af8e229f2249bb4b6514fa8"><td class="mdescLeft">&#160;</td><td class="mdescRight">quat from euler rotation 'ZXY' This rotation order is useful if you need 90 deg pitch  <a href="group__math__algebra__float.html#ga2b04e80e9af8e229f2249bb4b6514fa8">More...</a><br /></td></tr>
 <tr class="separator:ga2b04e80e9af8e229f2249bb4b6514fa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7d905b22661b1d2c90de5e63b0d7b864"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math__algebra__float.html#ga7d905b22661b1d2c90de5e63b0d7b864">float_quat_of_eulers_yxz</a> (struct <a class="el" href="group__math__algebra__float.html#structFloatQuat">FloatQuat</a> *q, struct <a class="el" href="group__math__algebra__float.html#structFloatEulers">FloatEulers</a> *e)</td></tr>
+<tr class="memdesc:ga7d905b22661b1d2c90de5e63b0d7b864"><td class="mdescLeft">&#160;</td><td class="mdescRight">quat from euler rotation 'YXZ' This function calculates a quaternion from Euler angles with the order YXZ, so pitch, roll, yaw, instead of the conventional ZYX order.  <a href="group__math__algebra__float.html#ga7d905b22661b1d2c90de5e63b0d7b864">More...</a><br /></td></tr>
+<tr class="separator:ga7d905b22661b1d2c90de5e63b0d7b864"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0ad75a3c32ba844b0aae704455dc2257"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math__algebra__float.html#ga0ad75a3c32ba844b0aae704455dc2257">float_quat_of_axis_angle</a> (struct <a class="el" href="group__math__algebra__float.html#structFloatQuat">FloatQuat</a> *q, const struct <a class="el" href="group__math__algebra__float.html#structFloatVect3">FloatVect3</a> *uv, float angle)</td></tr>
 <tr class="memdesc:ga0ad75a3c32ba844b0aae704455dc2257"><td class="mdescLeft">&#160;</td><td class="mdescRight">Quaternion from unit vector and angle.  <a href="group__math__algebra__float.html#ga0ad75a3c32ba844b0aae704455dc2257">More...</a><br /></td></tr>
 <tr class="separator:ga0ad75a3c32ba844b0aae704455dc2257"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -240,6 +243,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gacd48accfe6eaac320b0d651d894e1db8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8">float_eulers_of_quat</a> (struct <a class="el" href="group__math__algebra__float.html#structFloatEulers">FloatEulers</a> *e, struct <a class="el" href="group__math__algebra__float.html#structFloatQuat">FloatQuat</a> *q)</td></tr>
 <tr class="memdesc:gacd48accfe6eaac320b0d651d894e1db8"><td class="mdescLeft">&#160;</td><td class="mdescRight">euler rotation 'ZYX'  <a href="group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8">More...</a><br /></td></tr>
 <tr class="separator:gacd48accfe6eaac320b0d651d894e1db8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2209f7781fa014668eae2909541acb43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math__algebra__float.html#ga2209f7781fa014668eae2909541acb43">float_eulers_of_quat_yxz</a> (struct <a class="el" href="group__math__algebra__float.html#structFloatEulers">FloatEulers</a> *e, struct <a class="el" href="group__math__algebra__float.html#structFloatQuat">FloatQuat</a> *q)</td></tr>
+<tr class="memdesc:ga2209f7781fa014668eae2909541acb43"><td class="mdescLeft">&#160;</td><td class="mdescRight">euler rotation 'YXZ' This function calculates from a quaternion the Euler angles with the order YXZ, so pitch, roll, yaw, instead of the conventional ZYX order.  <a href="group__math__algebra__float.html#ga2209f7781fa014668eae2909541acb43">More...</a><br /></td></tr>
+<tr class="separator:ga2209f7781fa014668eae2909541acb43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga94f781d7f49b3e8fe681bd456faabbd1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math__algebra__float.html#ga94f781d7f49b3e8fe681bd456faabbd1">float_eulers_of_quat_zxy</a> (struct <a class="el" href="group__math__algebra__float.html#structFloatEulers">FloatEulers</a> *e, struct <a class="el" href="group__math__algebra__float.html#structFloatQuat">FloatQuat</a> *q)</td></tr>
 <tr class="memdesc:ga94f781d7f49b3e8fe681bd456faabbd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">euler rotation 'ZXY' This rotation order is useful if you need 90 deg pitch  <a href="group__math__algebra__float.html#ga94f781d7f49b3e8fe681bd456faabbd1">More...</a><br /></td></tr>
 <tr class="separator:ga94f781d7f49b3e8fe681bd456faabbd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -299,11 +305,11 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pprz__algebra__float_8c_source.html#l00719">719</a> of file <a class="el" href="pprz__algebra__float_8c_source.html">pprz_algebra_float.c</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra__float_8c_source.html#l00778">778</a> of file <a class="el" href="pprz__algebra__float_8c_source.html">pprz_algebra_float.c</a>.</p>
 
-<p>References <a class="el" href="pprz__algebra__float_8c_source.html#l00711">float_mat_minor_4d()</a>.</p>
+<p>References <a class="el" href="pprz__algebra__float_8c_source.html#l00770">float_mat_minor_4d()</a>.</p>
 
-<p>Referenced by <a class="el" href="pprz__algebra__float_8c_source.html#l00753">float_mat_inv_4d()</a>.</p>
+<p>Referenced by <a class="el" href="pprz__algebra__float_8c_source.html#l00812">float_mat_inv_4d()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -351,11 +357,11 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pprz__algebra__float_8c_source.html#l00739">739</a> of file <a class="el" href="pprz__algebra__float_8c_source.html">pprz_algebra_float.c</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra__float_8c_source.html#l00798">798</a> of file <a class="el" href="pprz__algebra__float_8c_source.html">pprz_algebra_float.c</a>.</p>
 
-<p>References <a class="el" href="pprz__algebra__float_8c_source.html#l00711">float_mat_minor_4d()</a>.</p>
+<p>References <a class="el" href="pprz__algebra__float_8c_source.html#l00770">float_mat_minor_4d()</a>.</p>
 
-<p>Referenced by <a class="el" href="pprz__algebra__float_8c_source.html#l00753">float_mat_inv_4d()</a>.</p>
+<p>Referenced by <a class="el" href="pprz__algebra__float_8c_source.html#l00812">float_mat_inv_4d()</a>.</p>
 
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -443,11 +449,11 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pprz__algebra__float_8c_source.html#l00711">711</a> of file <a class="el" href="pprz__algebra__float_8c_source.html">pprz_algebra_float.c</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra__float_8c_source.html#l00770">770</a> of file <a class="el" href="pprz__algebra__float_8c_source.html">pprz_algebra_float.c</a>.</p>
 
 <p>References <a class="el" href="baro__MS5534A_8c_source.html#l00203">c1</a>, and <a class="el" href="baro__MS5534A_8c_source.html#l00203">c2</a>.</p>
 
-<p>Referenced by <a class="el" href="pprz__algebra__float_8c_source.html#l00719">float_mat_adjoint_4d()</a>, and <a class="el" href="pprz__algebra__float_8c_source.html#l00739">float_mat_det_4d()</a>.</p>
+<p>Referenced by <a class="el" href="pprz__algebra__float_8c_source.html#l00778">float_mat_adjoint_4d()</a>, and <a class="el" href="pprz__algebra__float_8c_source.html#l00798">float_mat_det_4d()</a>.</p>
 
 <p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -507,7 +513,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_29343b6f5fcd4b75a5dfbb985ff56864.html">math</a></li><li class="navelem"><a class="el" href="pprz__algebra__float_8c.html">pprz_algebra_float.c</a></li>
-    <li class="footer">Generated on Wed Nov 8 2017 10:02:13 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:03:22 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

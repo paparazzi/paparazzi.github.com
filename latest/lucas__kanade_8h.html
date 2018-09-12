@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -106,6 +106,7 @@ $(document).ready(function(){initNavTree('lucas__kanade_8h.html','');});
 
 <div class="header">
   <div class="summary">
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">lucas_kanade.h File Reference</div>  </div>
@@ -132,18 +133,25 @@ $(document).ready(function(){initNavTree('lucas__kanade_8h.html','');});
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="lucas__kanade_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2modules_2computer__vision_2lib_2vision_2lucas__kanade_8hdep" alt=""/></div>
 <map name="sw_2airborne_2modules_2computer__vision_2lib_2vision_2lucas__kanade_8hdep" id="sw_2airborne_2modules_2computer__vision_2lib_2vision_2lucas__kanade_8hdep">
-<area shape="rect" id="node2" href="lucas__kanade_8c.html" title="efficient fixed&#45;point optical&#45;flow calculation " alt="" coords="5,109,169,165"/><area shape="rect" id="node3" href="opticflow__calculator_8c.html" title="Estimate velocity from optic flow. " alt="" coords="193,109,384,165"/></map>
+<area shape="rect" id="node2" href="image_8c.html" title="Image helper functions, like resizing, color filter, converters... " alt="" coords="5,109,160,165"/><area shape="rect" id="node3" href="lucas__kanade_8c.html" title="efficient fixed&#45;point optical&#45;flow calculation " alt="" coords="185,109,349,165"/><area shape="rect" id="node4" href="opticflow__calculator_8c.html" title="Estimate velocity from optic flow. " alt="" coords="373,109,563,165"/></map>
 </div>
 </div>
 <p><a href="lucas__kanade_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ab5548a18b211350842902725aa9dc50a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lucas__kanade_8h.html#ab5548a18b211350842902725aa9dc50a">LARGE_FLOW_ERROR</a>&#160;&#160;&#160;1E5</td></tr>
+<tr class="separator:ab5548a18b211350842902725aa9dc50a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae15359ddd160fcd965de33c43fa5ff7c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lucas__kanade_8h.html#ae15359ddd160fcd965de33c43fa5ff7c">MEDIUM_FLOW_ERROR</a>&#160;&#160;&#160;1E3</td></tr>
+<tr class="separator:ae15359ddd160fcd965de33c43fa5ff7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:af606a40a73a15031b62ee44a5e0c475d"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="image_8h.html#structflow__t">flow_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lucas__kanade_8h.html#af606a40a73a15031b62ee44a5e0c475d">opticFlowLK</a> (struct <a class="el" href="image_8h.html#structimage__t">image_t</a> *new_img, struct <a class="el" href="image_8h.html#structimage__t">image_t</a> *old_img, struct <a class="el" href="image_8h.html#structpoint__t">point_t</a> *points, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *points_cnt, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> half_window_size, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> subpixel_factor, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> max_iterations, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> step_threshold, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> max_points, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> pyramid_level)</td></tr>
-<tr class="separator:af606a40a73a15031b62ee44a5e0c475d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a869989419ebdf7115ec8fbfbd433e37c"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="image_8h.html#structflow__t">flow_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lucas__kanade_8h.html#a869989419ebdf7115ec8fbfbd433e37c">opticFlowLK_flat</a> (struct <a class="el" href="image_8h.html#structimage__t">image_t</a> *new_img, struct <a class="el" href="image_8h.html#structimage__t">image_t</a> *old_img, struct <a class="el" href="image_8h.html#structpoint__t">point_t</a> *points, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *points_cnt, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> half_window_size, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> subpixel_factor, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> max_iterations, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> step_threshold, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> max_points)</td></tr>
-<tr class="memdesc:a869989419ebdf7115ec8fbfbd433e37c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the optical flow of several points using the Lucas-Kanade algorithm by Yves Bouguet The initial fixed-point implementation is doen by G.  <a href="#a869989419ebdf7115ec8fbfbd433e37c">More...</a><br /></td></tr>
-<tr class="separator:a869989419ebdf7115ec8fbfbd433e37c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a8349de0d6e2015151312034c07ed0d"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="image_8h.html#structflow__t">flow_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lucas__kanade_8h.html#a6a8349de0d6e2015151312034c07ed0d">opticFlowLK</a> (struct <a class="el" href="image_8h.html#structimage__t">image_t</a> *new_img, struct <a class="el" href="image_8h.html#structimage__t">image_t</a> *old_img, struct <a class="el" href="image_8h.html#structpoint__t">point_t</a> *points, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *points_cnt, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> half_window_size, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> subpixel_factor, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> max_iterations, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> step_threshold, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> max_points, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> pyramid_level, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> keep_bad_points)</td></tr>
+<tr class="separator:a6a8349de0d6e2015151312034c07ed0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec51a5433258fa6d3608ae6a76531945"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="image_8h.html#structflow__t">flow_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lucas__kanade_8h.html#aec51a5433258fa6d3608ae6a76531945">opticFlowLK_flat</a> (struct <a class="el" href="image_8h.html#structimage__t">image_t</a> *new_img, struct <a class="el" href="image_8h.html#structimage__t">image_t</a> *old_img, struct <a class="el" href="image_8h.html#structpoint__t">point_t</a> *points, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *points_cnt, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> half_window_size, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> subpixel_factor, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> max_iterations, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> step_threshold, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> max_points, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> keep_bad_points)</td></tr>
+<tr class="memdesc:aec51a5433258fa6d3608ae6a76531945"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the optical flow of several points using the Lucas-Kanade algorithm by Yves Bouguet The initial fixed-point implementation is doen by G.  <a href="#aec51a5433258fa6d3608ae6a76531945">More...</a><br /></td></tr>
+<tr class="separator:aec51a5433258fa6d3608ae6a76531945"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>efficient fixed-point optical-flow calculation </p>
@@ -154,8 +162,39 @@ Functions</h2></td></tr>
 </ul>
 
 <p>Definition in file <a class="el" href="lucas__kanade_8h_source.html">lucas_kanade.h</a>.</p>
-</div><h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="af606a40a73a15031b62ee44a5e0c475d"></a>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="ab5548a18b211350842902725aa9dc50a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LARGE_FLOW_ERROR&#160;&#160;&#160;1E5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lucas__kanade_8h_source.html#l00037">37</a> of file <a class="el" href="lucas__kanade_8h_source.html">lucas_kanade.h</a>.</p>
+
+<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00298">calc_fast9_lukas_kanade()</a>, <a class="el" href="image_8c_source.html#l00621">image_show_flow_color()</a>, <a class="el" href="lucas__kanade_8c_source.html#l00073">opticFlowLK()</a>, <a class="el" href="lucas__kanade_8c_source.html#l00266">opticFlowLK_flat()</a>, and <a class="el" href="opticflow__calculator_8c_source.html#l00628">predict_flow_vectors()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae15359ddd160fcd965de33c43fa5ff7c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MEDIUM_FLOW_ERROR&#160;&#160;&#160;1E3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lucas__kanade_8h_source.html#l00038">38</a> of file <a class="el" href="lucas__kanade_8h_source.html">lucas_kanade.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a6a8349de0d6e2015151312034c07ed0d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -217,7 +256,13 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
-          <td class="paramname"><em>pyramid_level</em>&#160;</td>
+          <td class="paramname"><em>pyramid_level</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>keep_bad_points</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -229,7 +274,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="lucas__kanade_8c_source.html#l00073">73</a> of file <a class="el" href="lucas__kanade_8c_source.html">lucas_kanade.c</a>.</p>
 
-<p>References <a class="el" href="image_8h_source.html#l00068">flow_t::flow_x</a>, <a class="el" href="image_8h_source.html#l00069">flow_t::flow_y</a>, <a class="el" href="image_8h_source.html#l00046">image_t::h</a>, <a class="el" href="image_8c_source.html#l00448">image_calculate_g()</a>, <a class="el" href="image_8c_source.html#l00038">image_create()</a>, <a class="el" href="image_8c_source.html#l00480">image_difference()</a>, <a class="el" href="image_8c_source.html#l00063">image_free()</a>, <a class="el" href="image_8h_source.html#l00039">IMAGE_GRADIENT</a>, <a class="el" href="image_8c_source.html#l00424">image_gradients()</a>, <a class="el" href="image_8h_source.html#l00037">IMAGE_GRAYSCALE</a>, <a class="el" href="image_8c_source.html#l00518">image_multiply()</a>, <a class="el" href="image_8c_source.html#l00366">image_subpixel_window()</a>, <a class="el" href="lucas__kanade_8c_source.html#l00253">opticFlowLK_flat()</a>, <a class="el" href="ins__alt__float_8c_source.html#l00268">p</a>, <a class="el" href="textons_8c_source.html#l00097">patch_size</a>, <a class="el" href="image_8h_source.html#l00067">flow_t::pos</a>, <a class="el" href="image_8c_source.html#l00339">pyramid_build()</a>, <a class="el" href="image_8h_source.html#l00045">image_t::w</a>, <a class="el" href="image_8h_source.html#l00058">point_t::x</a>, and <a class="el" href="image_8h_source.html#l00059">point_t::y</a>.</p>
+<p>References <a class="el" href="image_8h_source.html#l00070">flow_t::error</a>, <a class="el" href="image_8h_source.html#l00068">flow_t::flow_x</a>, <a class="el" href="image_8h_source.html#l00069">flow_t::flow_y</a>, <a class="el" href="image_8h_source.html#l00046">image_t::h</a>, <a class="el" href="image_8c_source.html#l00451">image_calculate_g()</a>, <a class="el" href="image_8c_source.html#l00039">image_create()</a>, <a class="el" href="image_8c_source.html#l00483">image_difference()</a>, <a class="el" href="image_8c_source.html#l00064">image_free()</a>, <a class="el" href="image_8h_source.html#l00039">IMAGE_GRADIENT</a>, <a class="el" href="image_8c_source.html#l00427">image_gradients()</a>, <a class="el" href="image_8h_source.html#l00037">IMAGE_GRAYSCALE</a>, <a class="el" href="image_8c_source.html#l00521">image_multiply()</a>, <a class="el" href="image_8c_source.html#l00369">image_subpixel_window()</a>, <a class="el" href="lucas__kanade_8h_source.html#l00037">LARGE_FLOW_ERROR</a>, <a class="el" href="lucas__kanade_8c_source.html#l00266">opticFlowLK_flat()</a>, <a class="el" href="ins__alt__float_8c_source.html#l00268">p</a>, <a class="el" href="textons_8c_source.html#l00097">patch_size</a>, <a class="el" href="image_8h_source.html#l00067">flow_t::pos</a>, <a class="el" href="image_8c_source.html#l00342">pyramid_build()</a>, <a class="el" href="image_8h_source.html#l00045">image_t::w</a>, <a class="el" href="image_8h_source.html#l00058">point_t::x</a>, and <a class="el" href="image_8h_source.html#l00059">point_t::y</a>.</p>
 
 <p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00298">calc_fast9_lukas_kanade()</a>.</p>
 
@@ -238,9 +283,9 @@ Functions</h2></td></tr>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="lucas__kanade_8h_af606a40a73a15031b62ee44a5e0c475d_cgraph.png" border="0" usemap="#lucas__kanade_8h_af606a40a73a15031b62ee44a5e0c475d_cgraph" alt=""/></div>
-<map name="lucas__kanade_8h_af606a40a73a15031b62ee44a5e0c475d_cgraph" id="lucas__kanade_8h_af606a40a73a15031b62ee44a5e0c475d_cgraph">
-<area shape="rect" id="node2" href="image_8c.html#ae0f7d6068a0813bd149153b409474672" title="Calculate the G vector of an image gradient This is used for optical flow calculation. " alt="" coords="335,195,476,222"/><area shape="rect" id="node3" href="image_8c.html#ab5cc0250c461b9d2f043e4884f6b9a53" title="Create a new image. " alt="" coords="540,69,651,95"/><area shape="rect" id="node4" href="image_8c.html#a946e57aea5ff8c79adee46cb2c72dd80" title="Calculate the difference between two images and return the error This will only work with grayscale i..." alt="" coords="339,246,471,273"/><area shape="rect" id="node5" href="image_8c.html#aa09d6434519478ba26eab12a96d600ba" title="Free the image. " alt="" coords="358,145,453,171"/><area shape="rect" id="node6" href="image_8c.html#a5b47fdb25a4d3b575a1a1e1960d5f5e3" title="Calculate the gradients using the following matrix: [0 &#45;1 0; &#45;1 0 1; 0 1 0]. " alt="" coords="341,347,470,374"/><area shape="rect" id="node7" href="image_8c.html#afc5615de31e098e68a4d2e3b4b686a1b" title="Calculate the multiplication between two images and return the error This will only work with image g..." alt="" coords="346,398,465,425"/><area shape="rect" id="node8" href="image_8c.html#a527ba2bdc0c396a6eec8f56ee5b8e097" title="This outputs a subpixel window image in grayscale Currently only works with Grayscale images as input..." alt="" coords="319,449,492,475"/><area shape="rect" id="node9" href="lucas__kanade_8c.html#a869989419ebdf7115ec8fbfbd433e37c" title="Compute the optical flow of several points using the Lucas&#45;Kanade algorithm by Yves Bouguet The initi..." alt="" coords="148,297,271,323"/><area shape="rect" id="node10" href="image_8c.html#a6656ee75c4f8c05dbebbab3fae1b332a" title="This function populates given array of image_t structs with wanted number of padded pyramids based on..." alt="" coords="154,94,265,121"/><area shape="rect" id="node11" href="image_8c.html#af8fc6003afdb4b14bd2f8112491f2dc4" title="This function adds padding to input image by mirroring the edge image elements. " alt="" coords="334,43,477,70"/><area shape="rect" id="node12" href="image_8c.html#a038faec3786d8baa2e38c7672129e276" title="This function takes previous padded pyramid level and outputs next level of pyramid without padding..." alt="" coords="333,94,478,121"/></map>
+<div class="center"><img src="lucas__kanade_8h_a6a8349de0d6e2015151312034c07ed0d_cgraph.png" border="0" usemap="#lucas__kanade_8h_a6a8349de0d6e2015151312034c07ed0d_cgraph" alt=""/></div>
+<map name="lucas__kanade_8h_a6a8349de0d6e2015151312034c07ed0d_cgraph" id="lucas__kanade_8h_a6a8349de0d6e2015151312034c07ed0d_cgraph">
+<area shape="rect" id="node2" href="image_8c.html#ae0f7d6068a0813bd149153b409474672" title="Calculate the G vector of an image gradient This is used for optical flow calculation. " alt="" coords="335,195,476,222"/><area shape="rect" id="node3" href="image_8c.html#ab5cc0250c461b9d2f043e4884f6b9a53" title="Create a new image. " alt="" coords="540,69,651,95"/><area shape="rect" id="node4" href="image_8c.html#a946e57aea5ff8c79adee46cb2c72dd80" title="Calculate the difference between two images and return the error This will only work with grayscale i..." alt="" coords="339,246,471,273"/><area shape="rect" id="node5" href="image_8c.html#aa09d6434519478ba26eab12a96d600ba" title="Free the image. " alt="" coords="358,145,453,171"/><area shape="rect" id="node6" href="image_8c.html#a5b47fdb25a4d3b575a1a1e1960d5f5e3" title="Calculate the gradients using the following matrix: [0 &#45;1 0; &#45;1 0 1; 0 1 0]. " alt="" coords="341,347,470,374"/><area shape="rect" id="node7" href="image_8c.html#afc5615de31e098e68a4d2e3b4b686a1b" title="Calculate the multiplication between two images and return the error This will only work with image g..." alt="" coords="346,398,465,425"/><area shape="rect" id="node8" href="image_8c.html#a527ba2bdc0c396a6eec8f56ee5b8e097" title="This outputs a subpixel window image in grayscale Currently only works with Grayscale images as input..." alt="" coords="319,449,492,475"/><area shape="rect" id="node9" href="lucas__kanade_8c.html#aec51a5433258fa6d3608ae6a76531945" title="Compute the optical flow of several points using the Lucas&#45;Kanade algorithm by Yves Bouguet The initi..." alt="" coords="148,297,271,323"/><area shape="rect" id="node10" href="image_8c.html#a6656ee75c4f8c05dbebbab3fae1b332a" title="This function populates given array of image_t structs with wanted number of padded pyramids based on..." alt="" coords="154,94,265,121"/><area shape="rect" id="node11" href="image_8c.html#af8fc6003afdb4b14bd2f8112491f2dc4" title="This function adds padding to input image by mirroring the edge image elements. " alt="" coords="334,43,477,70"/><area shape="rect" id="node12" href="image_8c.html#a038faec3786d8baa2e38c7672129e276" title="This function takes previous padded pyramid level and outputs next level of pyramid without padding..." alt="" coords="333,94,478,121"/></map>
 </div>
 </p>
 
@@ -249,15 +294,15 @@ Functions</h2></td></tr>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="lucas__kanade_8h_af606a40a73a15031b62ee44a5e0c475d_icgraph.png" border="0" usemap="#lucas__kanade_8h_af606a40a73a15031b62ee44a5e0c475d_icgraph" alt=""/></div>
-<map name="lucas__kanade_8h_af606a40a73a15031b62ee44a5e0c475d_icgraph" id="lucas__kanade_8h_af606a40a73a15031b62ee44a5e0c475d_icgraph">
+<div class="center"><img src="lucas__kanade_8h_a6a8349de0d6e2015151312034c07ed0d_icgraph.png" border="0" usemap="#lucas__kanade_8h_a6a8349de0d6e2015151312034c07ed0d_icgraph" alt=""/></div>
+<map name="lucas__kanade_8h_a6a8349de0d6e2015151312034c07ed0d_icgraph" id="lucas__kanade_8h_a6a8349de0d6e2015151312034c07ed0d_icgraph">
 <area shape="rect" id="node2" href="opticflow__calculator_8h.html#a3edff14cc7f95b5202ba6841a12dfed3" title="Run the optical flow with fast9 and lukaskanade on a new image frame. " alt="" coords="148,5,328,32"/><area shape="rect" id="node3" href="opticflow__calculator_8h.html#a89e51af8fe5a0f534193635d181a2086" title="Run the optical flow on a new image frame. " alt="" coords="376,5,531,32"/><area shape="rect" id="node4" href="opticflow__module_8c.html#a36b69a7ec255d2d20bb31b6d13e3e567" title="The main optical flow calculation thread. " alt="" coords="579,5,743,32"/><area shape="rect" id="node5" href="opticflow__module_8h.html#a6026660ee86fbb1f72bada581386e6d9" title="Initialize the optical flow module for the bottom camera. " alt="" coords="791,5,949,32"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a869989419ebdf7115ec8fbfbd433e37c"></a>
+<a class="anchor" id="aec51a5433258fa6d3608ae6a76531945"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -313,7 +358,13 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td>
-          <td class="paramname"><em>max_points</em>&#160;</td>
+          <td class="paramname"><em>max_points</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>keep_bad_points</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -340,9 +391,9 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The vectors from the original *points in subpixels </dd></dl>
 
-<p>Definition at line <a class="el" href="lucas__kanade_8c_source.html#l00253">253</a> of file <a class="el" href="lucas__kanade_8c_source.html">lucas_kanade.c</a>.</p>
+<p>Definition at line <a class="el" href="lucas__kanade_8c_source.html#l00266">266</a> of file <a class="el" href="lucas__kanade_8c_source.html">lucas_kanade.c</a>.</p>
 
-<p>References <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="image_8h_source.html#l00068">flow_t::flow_x</a>, <a class="el" href="image_8h_source.html#l00069">flow_t::flow_y</a>, <a class="el" href="image_8h_source.html#l00046">image_t::h</a>, <a class="el" href="image_8c_source.html#l00448">image_calculate_g()</a>, <a class="el" href="image_8c_source.html#l00038">image_create()</a>, <a class="el" href="image_8c_source.html#l00480">image_difference()</a>, <a class="el" href="image_8c_source.html#l00063">image_free()</a>, <a class="el" href="image_8h_source.html#l00039">IMAGE_GRADIENT</a>, <a class="el" href="image_8c_source.html#l00424">image_gradients()</a>, <a class="el" href="image_8h_source.html#l00037">IMAGE_GRAYSCALE</a>, <a class="el" href="image_8c_source.html#l00518">image_multiply()</a>, <a class="el" href="image_8c_source.html#l00366">image_subpixel_window()</a>, <a class="el" href="ins__alt__float_8c_source.html#l00268">p</a>, <a class="el" href="textons_8c_source.html#l00097">patch_size</a>, <a class="el" href="image_8h_source.html#l00067">flow_t::pos</a>, <a class="el" href="std_8h_source.html#l00004">TRUE</a>, <a class="el" href="image_8h_source.html#l00045">image_t::w</a>, <a class="el" href="image_8h_source.html#l00058">point_t::x</a>, and <a class="el" href="image_8h_source.html#l00059">point_t::y</a>.</p>
+<p>References <a class="el" href="image_8h_source.html#l00070">flow_t::error</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="image_8h_source.html#l00068">flow_t::flow_x</a>, <a class="el" href="image_8h_source.html#l00069">flow_t::flow_y</a>, <a class="el" href="image_8h_source.html#l00046">image_t::h</a>, <a class="el" href="image_8c_source.html#l00451">image_calculate_g()</a>, <a class="el" href="image_8c_source.html#l00039">image_create()</a>, <a class="el" href="image_8c_source.html#l00483">image_difference()</a>, <a class="el" href="image_8c_source.html#l00064">image_free()</a>, <a class="el" href="image_8h_source.html#l00039">IMAGE_GRADIENT</a>, <a class="el" href="image_8c_source.html#l00427">image_gradients()</a>, <a class="el" href="image_8h_source.html#l00037">IMAGE_GRAYSCALE</a>, <a class="el" href="image_8c_source.html#l00521">image_multiply()</a>, <a class="el" href="image_8c_source.html#l00369">image_subpixel_window()</a>, <a class="el" href="lucas__kanade_8h_source.html#l00037">LARGE_FLOW_ERROR</a>, <a class="el" href="ins__alt__float_8c_source.html#l00268">p</a>, <a class="el" href="textons_8c_source.html#l00097">patch_size</a>, <a class="el" href="image_8h_source.html#l00067">flow_t::pos</a>, <a class="el" href="std_8h_source.html#l00004">TRUE</a>, <a class="el" href="image_8h_source.html#l00045">image_t::w</a>, <a class="el" href="image_8h_source.html#l00058">point_t::x</a>, and <a class="el" href="image_8h_source.html#l00059">point_t::y</a>.</p>
 
 <p>Referenced by <a class="el" href="lucas__kanade_8c_source.html#l00073">opticFlowLK()</a>.</p>
 
@@ -351,8 +402,8 @@ Functions</h2></td></tr>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="lucas__kanade_8h_a869989419ebdf7115ec8fbfbd433e37c_cgraph.png" border="0" usemap="#lucas__kanade_8h_a869989419ebdf7115ec8fbfbd433e37c_cgraph" alt=""/></div>
-<map name="lucas__kanade_8h_a869989419ebdf7115ec8fbfbd433e37c_cgraph" id="lucas__kanade_8h_a869989419ebdf7115ec8fbfbd433e37c_cgraph">
+<div class="center"><img src="lucas__kanade_8h_aec51a5433258fa6d3608ae6a76531945_cgraph.png" border="0" usemap="#lucas__kanade_8h_aec51a5433258fa6d3608ae6a76531945_cgraph" alt=""/></div>
+<map name="lucas__kanade_8h_aec51a5433258fa6d3608ae6a76531945_cgraph" id="lucas__kanade_8h_aec51a5433258fa6d3608ae6a76531945_cgraph">
 <area shape="rect" id="node2" href="image_8c.html#ae0f7d6068a0813bd149153b409474672" title="Calculate the G vector of an image gradient This is used for optical flow calculation. " alt="" coords="192,5,333,32"/><area shape="rect" id="node3" href="image_8c.html#ab5cc0250c461b9d2f043e4884f6b9a53" title="Create a new image. " alt="" coords="207,56,318,83"/><area shape="rect" id="node4" href="image_8c.html#a946e57aea5ff8c79adee46cb2c72dd80" title="Calculate the difference between two images and return the error This will only work with grayscale i..." alt="" coords="197,107,329,133"/><area shape="rect" id="node5" href="image_8c.html#aa09d6434519478ba26eab12a96d600ba" title="Free the image. " alt="" coords="215,157,310,184"/><area shape="rect" id="node6" href="image_8c.html#a5b47fdb25a4d3b575a1a1e1960d5f5e3" title="Calculate the gradients using the following matrix: [0 &#45;1 0; &#45;1 0 1; 0 1 0]. " alt="" coords="198,208,327,235"/><area shape="rect" id="node7" href="image_8c.html#afc5615de31e098e68a4d2e3b4b686a1b" title="Calculate the multiplication between two images and return the error This will only work with image g..." alt="" coords="203,259,322,285"/><area shape="rect" id="node8" href="image_8c.html#a527ba2bdc0c396a6eec8f56ee5b8e097" title="This outputs a subpixel window image in grayscale Currently only works with Grayscale images as input..." alt="" coords="176,309,349,336"/></map>
 </div>
 </p>
@@ -362,9 +413,9 @@ Functions</h2></td></tr>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="lucas__kanade_8h_a869989419ebdf7115ec8fbfbd433e37c_icgraph.png" border="0" usemap="#lucas__kanade_8h_a869989419ebdf7115ec8fbfbd433e37c_icgraph" alt=""/></div>
-<map name="lucas__kanade_8h_a869989419ebdf7115ec8fbfbd433e37c_icgraph" id="lucas__kanade_8h_a869989419ebdf7115ec8fbfbd433e37c_icgraph">
-<area shape="rect" id="node2" href="lucas__kanade_8h.html#af606a40a73a15031b62ee44a5e0c475d" title="opticFlowLK" alt="" coords="176,5,271,32"/><area shape="rect" id="node3" href="opticflow__calculator_8h.html#a3edff14cc7f95b5202ba6841a12dfed3" title="Run the optical flow with fast9 and lukaskanade on a new image frame. " alt="" coords="319,5,499,32"/><area shape="rect" id="node4" href="opticflow__calculator_8h.html#a89e51af8fe5a0f534193635d181a2086" title="Run the optical flow on a new image frame. " alt="" coords="547,5,701,32"/><area shape="rect" id="node5" href="opticflow__module_8c.html#a36b69a7ec255d2d20bb31b6d13e3e567" title="The main optical flow calculation thread. " alt="" coords="749,5,913,32"/><area shape="rect" id="node6" href="opticflow__module_8h.html#a6026660ee86fbb1f72bada581386e6d9" title="Initialize the optical flow module for the bottom camera. " alt="" coords="961,5,1120,32"/></map>
+<div class="center"><img src="lucas__kanade_8h_aec51a5433258fa6d3608ae6a76531945_icgraph.png" border="0" usemap="#lucas__kanade_8h_aec51a5433258fa6d3608ae6a76531945_icgraph" alt=""/></div>
+<map name="lucas__kanade_8h_aec51a5433258fa6d3608ae6a76531945_icgraph" id="lucas__kanade_8h_aec51a5433258fa6d3608ae6a76531945_icgraph">
+<area shape="rect" id="node2" href="lucas__kanade_8h.html#a6a8349de0d6e2015151312034c07ed0d" title="opticFlowLK" alt="" coords="176,5,271,32"/><area shape="rect" id="node3" href="opticflow__calculator_8h.html#a3edff14cc7f95b5202ba6841a12dfed3" title="Run the optical flow with fast9 and lukaskanade on a new image frame. " alt="" coords="319,5,499,32"/><area shape="rect" id="node4" href="opticflow__calculator_8h.html#a89e51af8fe5a0f534193635d181a2086" title="Run the optical flow on a new image frame. " alt="" coords="547,5,701,32"/><area shape="rect" id="node5" href="opticflow__module_8c.html#a36b69a7ec255d2d20bb31b6d13e3e567" title="The main optical flow calculation thread. " alt="" coords="749,5,913,32"/><area shape="rect" id="node6" href="opticflow__module_8h.html#a6026660ee86fbb1f72bada581386e6d9" title="Initialize the optical flow module for the bottom camera. " alt="" coords="961,5,1120,32"/></map>
 </div>
 </p>
 
@@ -376,7 +427,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_304e79c9f5d09ea65a2f55aafb6a6b9d.html">computer_vision</a></li><li class="navelem"><a class="el" href="dir_9adc125244b74c64b95124778e5b932a.html">lib</a></li><li class="navelem"><a class="el" href="dir_02b33bf6f772461f444923131a9a8dda.html">vision</a></li><li class="navelem"><a class="el" href="lucas__kanade_8h.html">lucas_kanade.h</a></li>
-    <li class="footer">Generated on Wed Nov 8 2017 10:02:18 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:03:27 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

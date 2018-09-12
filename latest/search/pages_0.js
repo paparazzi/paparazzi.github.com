@@ -11,6 +11,7 @@ var searchData=
   ['actuators_5fdualpwm_20module',['actuators_dualpwm module',['../module__actuators_dualpwm.html',1,'onboard_modules']]],
   ['actuators_5fdummy_20module',['actuators_dummy module',['../module__actuators_dummy.html',1,'onboard_modules']]],
   ['actuators_5fesc32_20module',['actuators_esc32 module',['../module__actuators_esc32.html',1,'onboard_modules']]],
+  ['actuators_5fmd25_20module',['actuators_md25 module',['../module__actuators_md25.html',1,'onboard_modules']]],
   ['actuators_5fmkk_20module',['actuators_mkk module',['../module__actuators_mkk.html',1,'onboard_modules']]],
   ['actuators_5fmkk_5fv2_20module',['actuators_mkk_v2 module',['../module__actuators_mkk_v2.html',1,'onboard_modules']]],
   ['actuators_5fppm_20module',['actuators_ppm module',['../module__actuators_ppm.html',1,'onboard_modules']]],

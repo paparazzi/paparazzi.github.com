@@ -1,51 +1,51 @@
 <map id="nps_main_init" name="nps_main_init">
-<area shape="rect" id="node2" href="$nps__main__common_8c.html#a61cf140bea933e01e341e54d1dbaa058" title="cont_hdl" alt="" coords="228,57,304,84"/>
-<area shape="rect" id="node3" href="$nps__main__common_8c.html#a1180f7a36c8de6d96df1f18aab2fa62b" title="tstp_hdl" alt="" coords="484,51,557,77"/>
-<area shape="rect" id="node4" href="$nps__atmosphere_8c.html#a5c5546f787b1d322ecf38dc10de13309" title="nps_atmosphere_init" alt="" coords="188,175,344,201"/>
-<area shape="rect" id="node7" href="$nps__fdm_8h.html#a17ec5b69b110d046f9db5b67d2b08779" title="Set JSBsim specific fields that are not used for Gazebo. " alt="" coords="215,360,317,387"/>
-<area shape="rect" id="node31" href="$nps__main__common_8c.html#a9e2370130aa6e869a0ed56a22117cf3b" title="nps_main_parse_options" alt="" coords="175,411,357,437"/>
-<area shape="rect" id="node32" href="$nps__main_8h.html#a72ef549ee35deec8c017e83d9de38f66" title="nps_radio_and_autopilot_init" alt="" coords="164,575,368,601"/>
-<area shape="rect" id="node37" href="$nps__sensors_8c.html#a09b47018a69d874a1e3d3876e04f8a8f" title="nps_sensors_init" alt="" coords="202,993,330,1020"/>
-<area shape="rect" id="node50" href="$nps__main__common_8c.html#abde7f979f8df9c8db19de17ab6498ec2" title="time_to_double" alt="" coords="205,1044,327,1071"/>
-<area shape="rect" id="node5" href="$nps__atmosphere_8c.html#af26b03152e5247339b17a8fc33b02573" title="nps_atmosphere_set\l_wind_dir" alt="" coords="442,167,599,209"/>
-<area shape="rect" id="node6" href="$nps__atmosphere_8c.html#ad83734b3b0bac4f867043ea1721f8d76" title="nps_atmosphere_set\l_wind_speed" alt="" coords="442,102,599,143"/>
-<area shape="rect" id="node8" href="$nps__fdm__jsbsim_8cpp.html#a2d617cee29889c9d6592f9978dfa8a31" title="Populates the NPS fdm struct after a simulation step. " alt="" coords="473,385,568,412"/>
+<area shape="rect" id="node2" href="$nps__main__common_8c.html#a61cf140bea933e01e341e54d1dbaa058" title="cont_hdl" alt="" coords="228,184,304,211"/>
+<area shape="rect" id="node3" href="$nps__main__common_8c.html#a1180f7a36c8de6d96df1f18aab2fa62b" title="tstp_hdl" alt="" coords="484,177,557,204"/>
+<area shape="rect" id="node4" href="$nps__atmosphere_8c.html#a5c5546f787b1d322ecf38dc10de13309" title="nps_atmosphere_init" alt="" coords="188,301,344,328"/>
+<area shape="rect" id="node7" href="$nps__fdm_8h.html#a17ec5b69b110d046f9db5b67d2b08779" title="Initialize actuator dynamics, set unused fields in fdm. " alt="" coords="215,588,317,615"/>
+<area shape="rect" id="node31" href="$nps__main__common_8c.html#a9e2370130aa6e869a0ed56a22117cf3b" title="nps_main_parse_options" alt="" coords="175,639,357,665"/>
+<area shape="rect" id="node32" href="$nps__main_8h.html#a72ef549ee35deec8c017e83d9de38f66" title="nps_radio_and_autopilot_init" alt="" coords="164,753,368,780"/>
+<area shape="rect" id="node37" href="$nps__sensors_8c.html#a09b47018a69d874a1e3d3876e04f8a8f" title="nps_sensors_init" alt="" coords="202,1069,330,1096"/>
+<area shape="rect" id="node50" href="$nps__main__common_8c.html#abde7f979f8df9c8db19de17ab6498ec2" title="time_to_double" alt="" coords="205,1120,327,1147"/>
+<area shape="rect" id="node5" href="$nps__atmosphere_8c.html#af26b03152e5247339b17a8fc33b02573" title="nps_atmosphere_set\l_wind_dir" alt="" coords="442,229,599,270"/>
+<area shape="rect" id="node6" href="$nps__atmosphere_8c.html#ad83734b3b0bac4f867043ea1721f8d76" title="nps_atmosphere_set\l_wind_speed" alt="" coords="442,294,599,335"/>
+<area shape="rect" id="node8" href="$nps__fdm__jsbsim_8cpp.html#a2d617cee29889c9d6592f9978dfa8a31" title="Populates the NPS fdm struct after a simulation step. " alt="" coords="473,360,568,387"/>
+<area shape="rect" id="node20" href="$high__pass__filter_8h.html#aada833c6eaef6023c98dc2aff18131ca" title="Init first order high pass filter. " alt="" coords="429,461,613,488"/>
+<area shape="rect" id="node21" href="$low__pass__filter_8h.html#aa83e19c99f2ac6261e3e0e21fc246d1c" title="Init first order low pass filter. " alt="" coords="432,512,609,539"/>
 <area shape="rect" id="node22" href="$nps__fdm__jsbsim_8cpp.html#a22e629dc0a3ec62417e2a4e820d85244" title="Initializes JSBSim. " alt="" coords="476,563,565,589"/>
-<area shape="rect" id="node26" href="$nps__fdm__crrcsim_8c.html#a3836be75ba868b34cd08503e2f242ab5" title="init_ltp" alt="" coords="489,664,553,691"/>
-<area shape="rect" id="node28" href="$nps__fdm__crrcsim_8c.html#a6e4ed6bd24dbdcac38f21624a3ff6e21" title="inputbuf_init" alt="" coords="471,233,571,260"/>
-<area shape="rect" id="node29" href="$nps__fdm__crrcsim_8c.html#a05657e44b838d5a6532691337ca740d8" title="open_udp" alt="" coords="478,284,563,311"/>
-<area shape="rect" id="node30" href="$nps__fdm__crrcsim_8c.html#a75978090ea593009549c5dc324e060f1" title="send_servo_cmd" alt="" coords="455,335,586,361"/>
-<area shape="rect" id="node9" href="$group__math__algebra__double.html#ga0535deb8e541ae49fbd3fff0ef33347d" title="double_eulers_of_quat" alt="" coords="687,461,854,488"/>
-<area shape="rect" id="node10" href="$nps__fdm__jsbsim_8cpp.html#a703cdaf8b93af6b9b808fcdbf4084618" title="Convert JSBSim location format and struct to NPS location format and struct. " alt="" coords="707,5,834,32"/>
-<area shape="rect" id="node11" href="$nps__fdm__jsbsim_8cpp.html#a7e68479ada54ac5003c84917b727b9d7" title="Convert JSBSim quaternion struct to NPS quaternion struct. " alt="" coords="697,56,845,83"/>
-<area shape="rect" id="node12" href="$nps__fdm__jsbsim_8cpp.html#acf70433e41af4d4790169eae2540d1cf" title="Convert JSBSim rates vector struct to NPS rates struct. " alt="" coords="701,107,840,133"/>
-<area shape="rect" id="node13" href="$nps__fdm__jsbsim_8cpp.html#acdf7fcf0cea69535a6ff9f01f9323f52" title="Convert JSBSim vector format and struct to NPS vector format and struct. " alt="" coords="703,157,838,184"/>
-<area shape="rect" id="node14" href="$nps__fdm__jsbsim_8cpp.html#a9548efbcd14770bf2220ed0d3e82f660" title="Convert JSBSim location to NPS LLA. " alt="" coords="673,208,868,235"/>
-<area shape="rect" id="node15" href="$nps__fdm__jsbsim_8cpp.html#a321e3b5209597d68b61714ec248ae019" title="Convert JSBSim location to NPS LLA. " alt="" coords="679,259,862,285"/>
-<area shape="rect" id="node16" href="$group__math__geodetic__double.html#ga9d3464ccabcd97db9fb4e1c7d25dfe16" title="lla_of_ecef_d" alt="" coords="963,563,1067,589"/>
+<area shape="rect" id="node26" href="$nps__fdm__crrcsim_8c.html#a3836be75ba868b34cd08503e2f242ab5" title="init_ltp" alt="" coords="489,613,553,640"/>
+<area shape="rect" id="node28" href="$nps__fdm__crrcsim_8c.html#a6e4ed6bd24dbdcac38f21624a3ff6e21" title="inputbuf_init" alt="" coords="471,664,571,691"/>
+<area shape="rect" id="node29" href="$nps__fdm__crrcsim_8c.html#a05657e44b838d5a6532691337ca740d8" title="open_udp" alt="" coords="478,715,563,741"/>
+<area shape="rect" id="node30" href="$nps__fdm__crrcsim_8c.html#a75978090ea593009549c5dc324e060f1" title="send_servo_cmd" alt="" coords="455,765,586,792"/>
+<area shape="rect" id="node9" href="$group__math__algebra__double.html#ga0535deb8e541ae49fbd3fff0ef33347d" title="double_eulers_of_quat" alt="" coords="687,5,854,32"/>
+<area shape="rect" id="node10" href="$nps__fdm__jsbsim_8cpp.html#a703cdaf8b93af6b9b808fcdbf4084618" title="Convert JSBSim location format and struct to NPS location format and struct. " alt="" coords="707,56,834,83"/>
+<area shape="rect" id="node11" href="$nps__fdm__jsbsim_8cpp.html#a7e68479ada54ac5003c84917b727b9d7" title="Convert JSBSim quaternion struct to NPS quaternion struct. " alt="" coords="697,107,845,133"/>
+<area shape="rect" id="node12" href="$nps__fdm__jsbsim_8cpp.html#acf70433e41af4d4790169eae2540d1cf" title="Convert JSBSim rates vector struct to NPS rates struct. " alt="" coords="701,157,840,184"/>
+<area shape="rect" id="node13" href="$nps__fdm__jsbsim_8cpp.html#acdf7fcf0cea69535a6ff9f01f9323f52" title="Convert JSBSim vector format and struct to NPS vector format and struct. " alt="" coords="703,208,838,235"/>
+<area shape="rect" id="node14" href="$nps__fdm__jsbsim_8cpp.html#a9548efbcd14770bf2220ed0d3e82f660" title="Convert JSBSim location to NPS LLA. " alt="" coords="673,259,868,285"/>
+<area shape="rect" id="node15" href="$nps__fdm__jsbsim_8cpp.html#a321e3b5209597d68b61714ec248ae019" title="Convert JSBSim location to NPS LLA. " alt="" coords="679,309,862,336"/>
+<area shape="rect" id="node16" href="$group__math__geodetic__double.html#ga9d3464ccabcd97db9fb4e1c7d25dfe16" title="lla_of_ecef_d" alt="" coords="963,537,1067,564"/>
 <area shape="rect" id="node17" href="$nps__fdm__jsbsim_8cpp.html#af2cbbfe13b5d92888cb4ac8005a9dd8e" title="Convert JSBSim location to NPS LLH. " alt="" coords="710,512,831,539"/>
-<area shape="rect" id="node18" href="$group__math__geodetic__double.html#gabf3f021edce24bfc61367d778cd20952" title="ned_of_ecef_point_d" alt="" coords="694,309,847,336"/>
-<area shape="rect" id="node20" href="$group__math__geodetic__double.html#ga9a6c153bbedbbcc05dedcc6f5bc3266a" title="ned_of_ecef_vect_d" alt="" coords="697,360,845,387"/>
-<area shape="rect" id="node19" href="$group__math__geodetic__double.html#ga3be997b20a11ac02e2b673749da746b6" title="enu_of_ecef_point_d" alt="" coords="939,309,1092,336"/>
-<area shape="rect" id="node21" href="$group__math__geodetic__double.html#ga68d7b088555fe80092489578fb16517f" title="enu_of_ecef_vect_d" alt="" coords="941,360,1089,387"/>
+<area shape="rect" id="node18" href="$group__math__geodetic__double.html#gabf3f021edce24bfc61367d778cd20952" title="ned_of_ecef_point_d" alt="" coords="694,411,847,437"/>
+<area shape="rect" id="node19" href="$group__math__geodetic__double.html#ga9a6c153bbedbbcc05dedcc6f5bc3266a" title="ned_of_ecef_vect_d" alt="" coords="697,461,845,488"/>
 <area shape="rect" id="node23" href="$group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title="ecef_of_lla_d" alt="" coords="719,664,823,691"/>
-<area shape="rect" id="node24" href="$nps__fdm__jsbsim_8cpp.html#ac3f41f22e543ac14794eecd306681e76" title="Feed JSBSim with the latest actuator commands. " alt="" coords="721,613,820,640"/>
-<area shape="rect" id="node25" href="$group__math__geodetic__double.html#ga11cc21abdae02f0439da4b235acb4e4a" title="gc_of_gd_lat_d" alt="" coords="712,563,829,589"/>
+<area shape="rect" id="node24" href="$nps__fdm__jsbsim_8cpp.html#ac3f41f22e543ac14794eecd306681e76" title="Feed JSBSim with the latest actuator commands. " alt="" coords="721,563,820,589"/>
+<area shape="rect" id="node25" href="$group__math__geodetic__double.html#ga11cc21abdae02f0439da4b235acb4e4a" title="gc_of_gd_lat_d" alt="" coords="712,613,829,640"/>
 <area shape="rect" id="node27" href="$group__math__geodetic__double.html#ga3b487b485bc51b98307acae35009d1bb" title="ltp_def_from_ecef_d" alt="" coords="695,715,846,741"/>
-<area shape="rect" id="node33" href="$nps__autopilot_8h.html#aa10f50205109ca60f93290db2d7ac71c" title="nps_autopilot_init" alt="" coords="453,740,588,767"/>
-<area shape="rect" id="node34" href="$demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="731,816,811,843"/>
-<area shape="rect" id="node35" href="$nps__electrical_8c.html#a9a38e15f4c115662205d7acfb92db20c" title="nps_electrical_init" alt="" coords="703,867,838,893"/>
-<area shape="rect" id="node36" href="$nps__radio__control_8c.html#a1028b3dc0a115b1c2cbfbf478d60c1c7" title="nps_radio_control_init" alt="" coords="690,765,851,792"/>
-<area shape="rect" id="node38" href="$group__math__algebra__double.html#ga34c8c13c374e63e2a2d73bb7ae77dbd0" title="double_rmat_of_eulers" alt="" coords="687,1095,855,1121"/>
-<area shape="rect" id="node40" href="$nps__sensor__gyro_8c.html#a09e865c3364812c96e5aff8d56ccbc6d" title="nps_sensor_gyro_init" alt="" coords="443,791,599,817"/>
-<area shape="rect" id="node41" href="$nps__sensor__accel_8c.html#a39331055a2db55cacdcda037c61c5a89" title="nps_sensor_accel_init" alt="" coords="440,841,601,868"/>
-<area shape="rect" id="node42" href="$nps__sensor__mag_8c.html#a43dcedd3c66527ec2635d4081bcaa7d5" title="nps_sensor_mag_init" alt="" coords="442,892,599,919"/>
-<area shape="rect" id="node43" href="$nps__sensor__baro_8c.html#a81b63003f9125a4e942060bdea9fd45a" title="nps_sensor_baro_init" alt="" coords="442,943,599,969"/>
-<area shape="rect" id="node44" href="$nps__sensor__gps_8c.html#a40c4a8c2522582017498b101e5d476ef" title="nps_sensor_gps_init" alt="" coords="445,993,596,1020"/>
-<area shape="rect" id="node45" href="$nps__sensor__sonar_8c.html#a7d9c95a4ab117fe0e86cc57779e4d14f" title="nps_sensor_sonar_init" alt="" coords="439,1044,603,1071"/>
-<area shape="rect" id="node46" href="$nps__sensor__airspeed_8c.html#a7207f935316d9db8a10a26697a701ecf" title="nps_sensor_airspeed_init" alt="" coords="429,1095,612,1121"/>
-<area shape="rect" id="node47" href="$nps__sensor__temperature_8c.html#a025fded3d8708f13a3a8eb19e300a0bd" title="nps_sensor_temperature_init" alt="" coords="416,1145,625,1172"/>
-<area shape="rect" id="node48" href="$nps__sensor__aoa_8c.html#a2faff1ee09f26cd702c72210b4141ea5" title="nps_sensor_aoa_init" alt="" coords="445,1196,597,1223"/>
-<area shape="rect" id="node49" href="$nps__sensor__sideslip_8c.html#aed96c7a060e48218f92bb0dcdbada21f" title="nps_sensor_sideslip_init" alt="" coords="433,1247,608,1273"/>
-<area shape="rect" id="node39" href="$group__math__algebra__double.html#ga8f4ac8fb23be425a0301fc922b3c2644" title="Rotation matrix from 321 Euler angles (double). " alt="" coords="916,1095,1115,1121"/>
+<area shape="rect" id="node33" href="$nps__autopilot_8h.html#aa10f50205109ca60f93290db2d7ac71c" title="nps_autopilot_init" alt="" coords="453,816,588,843"/>
+<area shape="rect" id="node34" href="$demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="731,765,811,792"/>
+<area shape="rect" id="node35" href="$nps__electrical_8c.html#a9a38e15f4c115662205d7acfb92db20c" title="nps_electrical_init" alt="" coords="703,816,838,843"/>
+<area shape="rect" id="node36" href="$nps__radio__control_8c.html#a1028b3dc0a115b1c2cbfbf478d60c1c7" title="nps_radio_control_init" alt="" coords="690,867,851,893"/>
+<area shape="rect" id="node38" href="$group__math__algebra__double.html#ga34c8c13c374e63e2a2d73bb7ae77dbd0" title="double_rmat_of_eulers" alt="" coords="687,968,855,995"/>
+<area shape="rect" id="node40" href="$nps__sensor__gyro_8c.html#a09e865c3364812c96e5aff8d56ccbc6d" title="nps_sensor_gyro_init" alt="" coords="443,917,599,944"/>
+<area shape="rect" id="node41" href="$nps__sensor__accel_8c.html#a39331055a2db55cacdcda037c61c5a89" title="nps_sensor_accel_init" alt="" coords="440,968,601,995"/>
+<area shape="rect" id="node42" href="$nps__sensor__mag_8c.html#a43dcedd3c66527ec2635d4081bcaa7d5" title="nps_sensor_mag_init" alt="" coords="442,1019,599,1045"/>
+<area shape="rect" id="node43" href="$nps__sensor__baro_8c.html#a81b63003f9125a4e942060bdea9fd45a" title="nps_sensor_baro_init" alt="" coords="442,1069,599,1096"/>
+<area shape="rect" id="node44" href="$nps__sensor__gps_8c.html#a40c4a8c2522582017498b101e5d476ef" title="nps_sensor_gps_init" alt="" coords="445,1120,596,1147"/>
+<area shape="rect" id="node45" href="$nps__sensor__sonar_8c.html#a7d9c95a4ab117fe0e86cc57779e4d14f" title="nps_sensor_sonar_init" alt="" coords="439,1171,603,1197"/>
+<area shape="rect" id="node46" href="$nps__sensor__airspeed_8c.html#a7207f935316d9db8a10a26697a701ecf" title="nps_sensor_airspeed_init" alt="" coords="429,1221,612,1248"/>
+<area shape="rect" id="node47" href="$nps__sensor__temperature_8c.html#a025fded3d8708f13a3a8eb19e300a0bd" title="nps_sensor_temperature_init" alt="" coords="416,1272,625,1299"/>
+<area shape="rect" id="node48" href="$nps__sensor__aoa_8c.html#a2faff1ee09f26cd702c72210b4141ea5" title="nps_sensor_aoa_init" alt="" coords="445,1323,597,1349"/>
+<area shape="rect" id="node49" href="$nps__sensor__sideslip_8c.html#aed96c7a060e48218f92bb0dcdbada21f" title="nps_sensor_sideslip_init" alt="" coords="433,1373,608,1400"/>
+<area shape="rect" id="node39" href="$group__math__algebra__double.html#ga8f4ac8fb23be425a0301fc922b3c2644" title="Rotation matrix from 321 Euler angles (double). " alt="" coords="916,968,1115,995"/>
 </map>

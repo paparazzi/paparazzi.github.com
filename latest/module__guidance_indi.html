@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -114,6 +114,7 @@ Module functions</h1>
 Init Functions</h2>
 <p>These initialization functions are called once on startup.</p>
 <ul>
+<li><a class="el" href="guidance__indi_8c.html#aa1f448d3b1322b6c0bd3d84dbb5cf603" title="Init function. ">guidance_indi_init()</a></li>
 <li><a class="el" href="guidance__indi_8c.html#a638dd6a545987ce3e0a8c8cef1e3481c" title="Call upon entering indi guidance. ">guidance_indi_enter()</a></li>
 </ul>
 <h1><a class="anchor" id="files"></a>
@@ -144,12 +145,14 @@ Raw guidance_indi.xml file:</h2>
 <div class="line">      &lt;dl_settings NAME=&quot;guidance_indi&quot;&gt;</div>
 <div class="line">        &lt;dl_setting var=&quot;guidance_indi_pos_gain&quot; min=&quot;0&quot; step=&quot;0.1&quot; max=&quot;10.0&quot; shortname=&quot;kp_p&quot; param=&quot;GUIDANCE_INDI_POS_GAIN&quot; persistent=&quot;true&quot;/&gt;</div>
 <div class="line">        &lt;dl_setting var=&quot;guidance_indi_speed_gain&quot; min=&quot;0&quot; step=&quot;0.1&quot; max=&quot;10.0&quot; shortname=&quot;kp_p&quot; param=&quot;GUIDANCE_INDI_SPEED_GAIN&quot; persistent=&quot;true&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting var=&quot;guidance_indi_max_bank&quot; min=&quot;0&quot; step=&quot;0.1&quot; max=&quot;80.0&quot; shortname=&quot;max_bank&quot; param=&quot;GUIDANCE_H_MAX_BANK&quot;/&gt;</div>
 <div class="line">      &lt;/dl_settings&gt;</div>
 <div class="line">    &lt;/dl_settings&gt;</div>
 <div class="line">  &lt;/settings&gt;</div>
 <div class="line">  &lt;header&gt;</div>
 <div class="line">    &lt;file name=&quot;guidance_indi.h&quot;/&gt;</div>
 <div class="line">  &lt;/header&gt;</div>
+<div class="line">  &lt;init fun=&quot;guidance_indi_init()&quot;/&gt;</div>
 <div class="line">  &lt;init fun=&quot;guidance_indi_enter()&quot;/&gt;</div>
 <div class="line">  &lt;makefile target=&quot;ap|nps&quot; firmware=&quot;rotorcraft&quot;&gt;</div>
 <div class="line">    &lt;file name=&quot;guidance_indi.c&quot; dir=&quot;$(SRC_FIRMWARE)/guidance&quot;/&gt;</div>
@@ -162,7 +165,7 @@ Raw guidance_indi.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Wed Nov 8 2017 10:02:46 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:03:56 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

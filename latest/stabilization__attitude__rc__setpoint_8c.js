@@ -19,5 +19,6 @@ var stabilization__attitude__rc__setpoint_8c =
     [ "stabilization_attitude_read_rc_setpoint_quat_earth_bound_f", "stabilization__attitude__rc__setpoint_8c.html#a67c7c9ce5526222ceb3f422269fc8f47", null ],
     [ "stabilization_attitude_read_rc_setpoint_quat_f", "stabilization__attitude__rc__setpoint_8c.html#a7e0d148d1e5210bb1b299163d77daa4a", null ],
     [ "stabilization_attitude_reset_care_free_heading", "stabilization__attitude__rc__setpoint_8c.html#abdf70201d8682a7d5b567fc6f3790063", null ],
-    [ "care_free_heading", "stabilization__attitude__rc__setpoint_8c.html#a155172ea5c1102b9c13c379a7be61066", null ]
+    [ "care_free_heading", "stabilization__attitude__rc__setpoint_8c.html#a155172ea5c1102b9c13c379a7be61066", null ],
+    [ "transition_theta_offset", "stabilization__attitude__rc__setpoint_8c.html#ac5766b598ff030ccbe7b127c796bc307", null ]
 ];

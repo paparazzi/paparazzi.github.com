@@ -8,6 +8,9 @@ var searchData=
   ['um6packetwaiting',['UM6PacketWaiting',['../imu__um6_8h.html#a00d20b85c3a66188ef4e04a29754fddda6121224b393325ae16bd535a9ce5073f',1,'imu_um6.h']]],
   ['um6running',['UM6Running',['../imu__um6_8h.html#a26ca138779c71e0bc7de2b8b338d91fcab23796ae28cba8f6396aa0c1005cad5c',1,'imu_um6.h']]],
   ['um6uninit',['UM6Uninit',['../imu__um6_8h.html#a26ca138779c71e0bc7de2b8b338d91fca0a15c4dce3599a0cf01ce7e5d0f4a5b4',1,'imu_um6.h']]],
+  ['unexpected_5fmsg_5fdata_5ferror',['UNEXPECTED_MSG_DATA_ERROR',['../gec_8h.html#a9bb5b7264af11868fbe186511e439e9dad1fee40ada51d8db06b15280bfeb5aea',1,'gec.h']]],
+  ['unexpected_5fmsg_5ferror',['UNEXPECTED_MSG_ERROR',['../gec_8h.html#a9bb5b7264af11868fbe186511e439e9da06ceed719cdac9804774e51978050424',1,'gec.h']]],
+  ['unexpected_5fmsg_5ftype_5ferror',['UNEXPECTED_MSG_TYPE_ERROR',['../gec_8h.html#a9bb5b7264af11868fbe186511e439e9daa4d4f419225a9b71fa58afbd4ce29436',1,'gec.h']]],
   ['unset',['UNSET',['../formation_8h.html#a4c0e214062079ff665c54dbc682bb832aec1d962808cbb9cf1b89a5cdd6197923',1,'formation.h']]],
   ['uturn',['UTURN',['../anemotaxis_8c.html#a015eb90e0de9f16e87bd149d4b9ce959aba124336c528f7b9755eb778bdc45f5a',1,'UTURN():&#160;anemotaxis.c'],['../nav__survey__disc_8c.html#ac9afc0cb207e93bdf17ae7a0f93a5c44aba124336c528f7b9755eb778bdc45f5a',1,'UTURN():&#160;nav_survey_disc.c']]]
 ];

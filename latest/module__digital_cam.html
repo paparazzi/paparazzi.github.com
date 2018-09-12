@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -122,7 +122,8 @@ Example for airframe file</h1>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  &lt;define name=&quot;DC_AUTOSHOOT_DISTANCE_INTERVAL&quot; value=&quot;50&quot; /&gt;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  &lt;define name=&quot;DC_AUTOSHOOT_SURVEY_INTERVAL&quot; value=&quot;50&quot; /&gt;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  &lt;define name=&quot;DC_SHOT_SYNC_SEND&quot; value=&quot;TRUE|FALSE&quot; /&gt;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;&lt;/module&gt;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  &lt;define name=&quot;DC_SHOT_EXTRA_DL&quot; value=&quot;TRUE|FALSE&quot; /&gt;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;&lt;/module&gt;</div>
 </div><!-- fragment --> <h1><a class="anchor" id="configuration__digital_cam"></a>
 Module configuration options</h1>
 <h2><a class="anchor" id="define"></a>
@@ -156,6 +157,8 @@ Define Options</h2>
  Description: distance interval for DC_AUTOSHOOT_SURVEY in meters</li>
 <li><b>name:</b> <code>DC_SHOT_SYNC_SEND</code> <b>value:</b> <em>TRUE|FALSE</em> <br />
  Description: send DC_SHOT message when photo was taken (default: TRUE)</li>
+<li><b>name:</b> <code>DC_SHOT_EXTRA_DL</code> <b>value:</b> <em>TRUE|FALSE</em> <br />
+ Description: send DC_SHOT message other extra datalink like companion CPU (default: FALSE, requires DC_SHOT_SYNC_SEND)</li>
 </ul>
 <h1><a class="anchor" id="conflicts__digital_cam"></a>
 Conflicts</h1>
@@ -226,6 +229,7 @@ Raw digital_cam.xml file:</h2>
 <div class="line">    &lt;define name=&quot;DC_AUTOSHOOT_DISTANCE_INTERVAL&quot; value=&quot;50&quot; description=&quot;distance interval for DC_AUTOSHOOT_DISTANCE in meters&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;DC_AUTOSHOOT_SURVEY_INTERVAL&quot; value=&quot;50&quot; description=&quot;distance interval for DC_AUTOSHOOT_SURVEY in meters&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;DC_SHOT_SYNC_SEND&quot; value=&quot;TRUE|FALSE&quot; description=&quot;send DC_SHOT message when photo was taken (default: TRUE)&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;DC_SHOT_EXTRA_DL&quot; value=&quot;TRUE|FALSE&quot; description=&quot;send DC_SHOT message other extra datalink like companion CPU (default: FALSE, requires DC_SHOT_SYNC_SEND)&quot;/&gt;</div>
 <div class="line">  &lt;/doc&gt;</div>
 <div class="line">  &lt;settings&gt;</div>
 <div class="line">    &lt;dl_settings name=&quot;control&quot;&gt;</div>
@@ -277,7 +281,7 @@ Raw digital_cam.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Wed Nov 8 2017 10:02:48 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:03:59 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

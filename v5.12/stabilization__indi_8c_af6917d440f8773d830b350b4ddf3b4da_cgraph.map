@@ -1,0 +1,43 @@
+<map id="stabilization_indi_calc_cmd" name="stabilization_indi_calc_cmd">
+<area shape="rect" id="node2" href="$group__math__algebra__float.html#ga0c9a0d18305c582cf58a79771919c1e9" title="o = a + b " alt="" coords="199,81,318,108"/>
+<area shape="rect" id="node3" href="$group__math__algebra__float.html#ga132a789820c2d2610906e87120af9d18" title="a = 0 " alt="" coords="199,132,318,159"/>
+<area shape="rect" id="node4" href="$stabilization__indi_8c.html#aedcd86587b8d94bc799eb14c3b76c4d0" title="Function that tries to get actuator feedback. " alt="" coords="187,183,331,209"/>
+<area shape="rect" id="node6" href="$stabilization__indi_8c.html#ad4a81c601235942469d940e7ac5f400e" title="Function that estimates the control effectiveness of each actuator online. " alt="" coords="199,233,319,260"/>
+<area shape="rect" id="node18" href="$low__pass__filter_8h.html#aae1acf6d0534bb694b2f7f530ce41650" title="Update second order Butterworth low pass filter state with a new value. " alt="" coords="394,361,542,402"/>
+<area shape="rect" id="node20" href="$group__state__rate.html#ga086f10e8804f8e95ace9a2b1cd26a66c" title="Get vehicle body angular rate (float). " alt="" coords="180,397,337,424"/>
+<area shape="rect" id="node22" href="$wls__alloc_8c.html#ab835ef4e4c3f872177ddb0dbc4e9eb45" title="active set algorithm for control allocation " alt="" coords="220,503,297,529"/>
+<area shape="rect" id="node5" href="$group__math__algebra__float.html#ga90298b458dad65af4a4bc5f7491da823" title="a = b " alt="" coords="407,5,529,32"/>
+<area shape="rect" id="node7" href="$stabilization__indi_8c.html#a4e43de9dea0dc088a1a920bd7470fe45" title="bound_g_mat" alt="" coords="413,56,523,83"/>
+<area shape="rect" id="node8" href="$stabilization__indi_8c.html#ada3e67cc5198f44de9142dc2b93f7d41" title="calc_g1_element" alt="" coords="403,107,533,133"/>
+<area shape="rect" id="node9" href="$stabilization__indi_8c.html#a002d649f1f8bff9493c6756cdbbe8fe3" title="Function that calculates the pseudo&#45;inverse of (G1+G2). " alt="" coords="385,157,551,184"/>
+<area shape="rect" id="node15" href="$stabilization__indi_8c.html#af0670cf7944bc275ec1f9b44433155d1" title="calc_g2_element" alt="" coords="403,208,533,235"/>
+<area shape="rect" id="node16" href="$group__math__algebra__float.html#ga2a16655dc0d98a40ff17c6728fa1e4fb" title="o = a * s " alt="" coords="407,259,529,285"/>
+<area shape="rect" id="node17" href="$group__state__velocity.html#gaf19a04f3195dbbd90af367b1f5b9653a" title="Get acceleration in Body coordinates (int). " alt="" coords="391,309,545,336"/>
+<area shape="rect" id="node10" href="$group__math__algebra__float.html#gaa042696a5cf68997badb00ce1fef8039" title="4x4 Matrix inverse " alt="" coords="614,132,745,159"/>
+<area shape="rect" id="node14" href="$group__math__algebra__float.html#ga5414ddf453898006f97d7d5af12795e4" title="a *= s " alt="" coords="617,183,741,209"/>
+<area shape="rect" id="node11" href="$pprz__algebra__float_8c.html#a30f62e74ded569ae5c5c041dc8a242f8" title="float_mat_adjoint_4d" alt="" coords="808,107,964,133"/>
+<area shape="rect" id="node13" href="$pprz__algebra__float_8c.html#ad214e051d917bb0f99961825dd7edc9d" title="float_mat_det_4d" alt="" coords="819,157,953,184"/>
+<area shape="rect" id="node12" href="$pprz__algebra__float_8c.html#ad66e945ff3d5e74f6f20ffff7a0f9bda" title="float_mat_minor_4d" alt="" coords="1012,132,1163,159"/>
+<area shape="rect" id="node19" href="$low__pass__filter_8h.html#a039a2c61aa8ebdb1e4b4c5de6e79e531" title="Update second order low pass filter state with a new value. " alt="" coords="599,361,760,402"/>
+<area shape="rect" id="node21" href="$group__state__rate.html#ga52294469408c263566a43c4c903cb3ca" title="stateCalcBodyRates_f" alt="" coords="387,427,549,453"/>
+<area shape="rect" id="node23" href="$wls__alloc_8c.html#ae96dd388138c3a7830cafe5eec5a0708" title="Wrapper for qr solve. " alt="" coords="401,477,535,504"/>
+<area shape="rect" id="node41" href="$wls__alloc_8c.html#a90c6e2dcdb59035738d92ab5a763981e" title="print_in_and_outputs" alt="" coords="390,528,546,555"/>
+<area shape="rect" id="node42" href="$wls__alloc_8c.html#a4aee565c4388fda3d9e4d12c6b6f22fb" title="print_final_values" alt="" coords="402,579,534,605"/>
+<area shape="rect" id="node24" href="$qr__solve_8c.html#a90d5a7f0475008f757334c945452b340" title="qr_solve" alt="" coords="642,477,717,504"/>
+<area shape="rect" id="node25" href="$r8lib__min_8c.html#ab2e0afedd86fd28ec510f3a23eb8cdf6" title="r8mat_copy_new" alt="" coords="821,503,951,529"/>
+<area shape="rect" id="node26" href="$r8lib__min_8c.html#a71a8eac997a4bce58ae173efae3f9be2" title="r8_epsilon" alt="" coords="843,553,929,580"/>
+<area shape="rect" id="node27" href="$r8lib__min_8c.html#a832fba4cb87ce9b821e4268f1df0d2af" title="r8mat_amax" alt="" coords="834,401,938,428"/>
+<area shape="rect" id="node28" href="$qr__solve_8c.html#aefe21c521674eb7a8c9f9ea74864f29e" title="dqrls" alt="" coords="859,452,913,479"/>
+<area shape="rect" id="node29" href="$qr__solve_8c.html#a6ecb9a7b36dcdb21869bd05c7e7cf149" title="dqrank" alt="" coords="1054,427,1121,453"/>
+<area shape="rect" id="node39" href="$qr__solve_8c.html#a26a23027f69ea2fa426952985c7734c1" title="dqrlss" alt="" coords="1057,477,1117,504"/>
+<area shape="rect" id="node30" href="$qr__solve_8c.html#afaa40152476be17052f2c425914e744e" title="dqrdc" alt="" coords="1211,579,1269,605"/>
+<area shape="rect" id="node33" href="$r8lib__min_8c.html#ae73c30e1658d722ce9ff2e671db331ca" title="i4_min" alt="" coords="1321,427,1385,453"/>
+<area shape="rect" id="node31" href="$qr__solve_8c.html#afa0182a4c21d9992eae335332c52a1f5" title="dswap" alt="" coords="1321,629,1384,656"/>
+<area shape="rect" id="node32" href="$qr__solve_8c.html#adb1d7ac5915e3af7d8034232eb1b587d" title="dnrm2" alt="" coords="1321,680,1385,707"/>
+<area shape="rect" id="node34" href="$r8lib__min_8c.html#abd6a2ff6da5741932ef4a7f7948b9768" title="r8_sign" alt="" coords="1319,781,1387,808"/>
+<area shape="rect" id="node35" href="$qr__solve_8c.html#ab1b00af76b78908d5f012c3023e8690f" title="dscal" alt="" coords="1325,579,1380,605"/>
+<area shape="rect" id="node36" href="$qr__solve_8c.html#a32d5754b3d1e62e762af43ee5f2e2135" title="ddot" alt="" coords="1327,528,1378,555"/>
+<area shape="rect" id="node37" href="$qr__solve_8c.html#aa1ea50a6db5ef08ed0c3617d761efe97" title="daxpy" alt="" coords="1323,477,1383,504"/>
+<area shape="rect" id="node38" href="$r8lib__min_8c.html#a1fe667048dc6f8c87bd3cf219bdb928e" title="r8_max" alt="" coords="1317,731,1388,757"/>
+<area shape="rect" id="node40" href="$qr__solve_8c.html#a52f94d5d8c6c1df1cc33b4f08e7f8902" title="dqrsl" alt="" coords="1213,477,1267,504"/>
+</map>

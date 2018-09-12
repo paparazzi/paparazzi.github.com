@@ -6,7 +6,6 @@ var searchData=
   ['kalmanestimation',['kalmanEstimation',['../alt__filter_8c.html#a2881d68fb11ecf0c9c8ee635d4f5400c',1,'alt_filter.c']]],
   ['kalmaninit',['kalmanInit',['../alt__filter_8c.html#ace1b4aea9a9f4ad4358342ff392c3dd4',1,'alt_filter.c']]],
   ['kill_5fgracefull',['kill_gracefull',['../bebop_2board_8c.html#a161f380e3fa5363245deb13194d4780d',1,'kill_gracefull(char *process_name):&#160;board.c'],['../disco_2board_8c.html#a161f380e3fa5363245deb13194d4780d',1,'kill_gracefull(char *process_name):&#160;board.c']]],
-  ['kill_5fswitch_5fis_5fon',['kill_switch_is_on',['../rotorcraft_2autopilot__rc__helpers_8h.html#ac0cad24ec4c286be4262417eb5823094',1,'autopilot_rc_helpers.h']]],
-  ['killgracefully',['KillGracefully',['../ardrone_2board_8c.html#a646b7f375c14d15f1aa843bbe058634f',1,'board.c']]],
-  ['kremlinit_5fglobals',['kremlinit_globals',['../kremlib_8h.html#a6ed48e08a3e0e2e7cf21e012cd5f0fc8',1,'kremlib.h']]]
+  ['kill_5fswitch_5fis_5fon',['kill_switch_is_on',['../rotorcraft_2autopilot__rc__helpers_8h.html#ac0cad24ec4c286be4262417eb5823094',1,'kill_switch_is_on(void):&#160;autopilot_rc_helpers.h'],['../rover_2autopilot__rc__helpers_8h.html#ac0cad24ec4c286be4262417eb5823094',1,'kill_switch_is_on(void):&#160;autopilot_rc_helpers.h']]],
+  ['killgracefully',['KillGracefully',['../ardrone_2board_8c.html#a646b7f375c14d15f1aa843bbe058634f',1,'board.c']]]
 ];

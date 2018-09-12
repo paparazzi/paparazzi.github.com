@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -415,14 +415,13 @@ $(document).ready(function(){initNavTree('ins__vectornav_8c_source.html','');});
 <div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    <a class="code" href="gps_8c.html#a5cf954024f8e0433b21db7439c5bee9d">gps</a>.<a class="code" href="gps_8h.html#a5c50b02201b63dc34282b6c353b23589">last_3dfix_ticks</a> = <a class="code" href="sys__time_8h.html#structsys__time">sys_time</a>.<a class="code" href="sys__time_8h.html#a8654f589772b3eef22ab59594c97e513">nb_sec_rem</a>;</div>
 <div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;  }</div>
 <div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;  <span class="comment">// update internal states for telemetry purposes</span></div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;  <span class="comment">// TODO: directly convert vectornav output instead of using state interface</span></div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;  <span class="comment">// to support multiple INS running at the same time</span></div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;  <a class="code" href="ins__vectornav_8c.html#a6dd65fe2fc9c53ea5f7b354bf0b3ef59">ins_vn</a>.<a class="code" href="ins__vectornav_8h.html#aa29ba582f67c3c2ca28f6639c7fe7279">ltp_pos_i</a> = *<a class="code" href="group__state__position.html#gaf9a3b3ed4f6a011ae65d49d78bf4aa25">stateGetPositionNed_i</a>();</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;  <a class="code" href="ins__vectornav_8c.html#a6dd65fe2fc9c53ea5f7b354bf0b3ef59">ins_vn</a>.<a class="code" href="ins__vectornav_8h.html#aaedda1ddbfd8ef5cf031a906f4a44844">ltp_speed_i</a> = *<a class="code" href="group__state__velocity.html#gaed641b0c36e2ad2407a97be88ec2506c">stateGetSpeedNed_i</a>();</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;  <a class="code" href="ins__vectornav_8c.html#a6dd65fe2fc9c53ea5f7b354bf0b3ef59">ins_vn</a>.<a class="code" href="ins__vectornav_8h.html#a0fc872ffcfc5cf911e3f2776e6c3dab3">ltp_accel_i</a> = *<a class="code" href="group__state__acceleration.html#gab55b482bd9fe875141bafd34beda8bb4">stateGetAccelNed_i</a>();</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;}</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;  <span class="comment">// update internal states for telemetry purposes</span></div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;  <span class="comment">// TODO: directly convert vectornav output instead of using state interface</span></div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;  <span class="comment">// to support multiple INS running at the same time</span></div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;  <a class="code" href="ins__vectornav_8c.html#a6dd65fe2fc9c53ea5f7b354bf0b3ef59">ins_vn</a>.<a class="code" href="ins__vectornav_8h.html#aa29ba582f67c3c2ca28f6639c7fe7279">ltp_pos_i</a> = *<a class="code" href="group__state__position.html#gaf9a3b3ed4f6a011ae65d49d78bf4aa25">stateGetPositionNed_i</a>();</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;  <a class="code" href="ins__vectornav_8c.html#a6dd65fe2fc9c53ea5f7b354bf0b3ef59">ins_vn</a>.<a class="code" href="ins__vectornav_8h.html#aaedda1ddbfd8ef5cf031a906f4a44844">ltp_speed_i</a> = *<a class="code" href="group__state__velocity.html#gaed641b0c36e2ad2407a97be88ec2506c">stateGetSpeedNed_i</a>();</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;  <a class="code" href="ins__vectornav_8c.html#a6dd65fe2fc9c53ea5f7b354bf0b3ef59">ins_vn</a>.<a class="code" href="ins__vectornav_8h.html#a0fc872ffcfc5cf911e3f2776e6c3dab3">ltp_accel_i</a> = *<a class="code" href="group__state__acceleration.html#gab55b482bd9fe875141bafd34beda8bb4">stateGetAccelNed_i</a>();</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;}</div>
 <div class="ttc" id="types_8h_html_a273cf69d639a59973b6019625df33e30"><div class="ttname"><a href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></div><div class="ttdeci">unsigned short uint16_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00016">types.h:16</a></div></div>
 <div class="ttc" id="ins__vectornav_8h_html_a0cfbbc8a9747bf85b4d950c5e96cd899"><div class="ttname"><a href="ins__vectornav_8h.html#a0cfbbc8a9747bf85b4d950c5e96cd899">InsVectornav::ltp_accel_f</a></div><div class="ttdeci">struct NedCoor_f ltp_accel_f</div><div class="ttdef"><b>Definition:</b> <a href="ins__vectornav_8h_source.html#l00073">ins_vectornav.h:73</a></div></div>
 <div class="ttc" id="group__math__geodetic__int_html_a6bf50bfad7dc1208876ea6e9d41651f7"><div class="ttname"><a href="group__math__geodetic__int.html#a6bf50bfad7dc1208876ea6e9d41651f7">EcefCoor_i::z</a></div><div class="ttdeci">int32_t z</div><div class="ttdoc">in centimeters </div><div class="ttdef"><b>Definition:</b> <a href="pprz__geodetic__int_8h_source.html#l00053">pprz_geodetic_int.h:53</a></div></div>
@@ -589,7 +588,7 @@ $(document).ready(function(){initNavTree('ins__vectornav_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_800f0b451dc44a2b86d16d857cea778d.html">ins</a></li><li class="navelem"><a class="el" href="ins__vectornav_8c.html">ins_vectornav.c</a></li>
-    <li class="footer">Generated on Wed Nov 8 2017 10:01:52 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:02:59 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

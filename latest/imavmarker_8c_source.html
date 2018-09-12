@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -155,7 +155,7 @@ $(document).ready(function(){initNavTree('imavmarker_8c_source.html','');});
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *source = (<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *) input-&gt;buf;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> <a class="code" href="imavmarker_8h.html#ae1b23610248f940c28a2a76b6bea3e4f">x</a>, <a class="code" href="imavmarker_8h.html#a02d3035b637c12e06a34afa8e3d26e3e">y</a>, i, j, k;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <a class="code" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a14a004ce07f47580a6800c76982ea599">if</a> (M &lt; 1) { M = 1; }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  if (M &lt; 1) { M = 1; }</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  source = (<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *) input-&gt;buf;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordtype">int</span> maxx = 160;</div>
@@ -242,14 +242,13 @@ $(document).ready(function(){initNavTree('imavmarker_8c_source.html','');});
 <div class="ttc" id="group__math__geodetic__utm_html_ga955f504eccf76b4eb2489c0adab03121"><div class="ttname"><a href="group__math__geodetic__utm.html#ga955f504eccf76b4eb2489c0adab03121">A</a></div><div class="ttdeci">#define A</div><div class="ttdef"><b>Definition:</b> <a href="pprz__geodetic__utm_8h_source.html#l00044">pprz_geodetic_utm.h:44</a></div></div>
 <div class="ttc" id="imavmarker_8h_html"><div class="ttname"><a href="imavmarker_8h.html">imavmarker.h</a></div><div class="ttdoc">Find a IMAV pattern. </div></div>
 <div class="ttc" id="imavmarker_8c_html_aafa443822c1c72b0735f92c4656eb669"><div class="ttname"><a href="imavmarker_8c.html#aafa443822c1c72b0735f92c4656eb669">marker</a></div><div class="ttdeci">struct marker_deviation_t marker(struct image_t *input, uint8_t M)</div><div class="ttdef"><b>Definition:</b> <a href="imavmarker_8c_source.html#l00051">imavmarker.c:51</a></div></div>
-<div class="ttc" id="stm32_2subsystems_2radio__control_2spektrum__arch_8c_html_a14a004ce07f47580a6800c76982ea599"><div class="ttname"><a href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a14a004ce07f47580a6800c76982ea599">if</a></div><div class="ttdeci">if(PrimarySpektrumState.SpektrumTimer)</div><div class="ttdef"><b>Definition:</b> <a href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00605">spektrum_arch.c:605</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_304e79c9f5d09ea65a2f55aafb6a6b9d.html">computer_vision</a></li><li class="navelem"><a class="el" href="dir_085e957c53d1527bb97919405ff6f1e3.html">blob</a></li><li class="navelem"><a class="el" href="imavmarker_8c.html">imavmarker.c</a></li>
-    <li class="footer">Generated on Wed Nov 8 2017 10:01:36 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:02:42 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

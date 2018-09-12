@@ -1,51 +1,51 @@
 <map id="mcu_init" name="mcu_init">
-<area shape="rect" id="node2" href="$chibios_2mcu__periph_2adc__arch_8c.html#a2b815e6730e8723a6d1d06d9ef8f31c0" title="Adc init. " alt="" coords="165,116,235,142"/>
-<area shape="rect" id="node3" href="$group__mcu__periph.html#ga916f2adc2080b4fe88034086d107a8dc" title="Optional board init function called at the start of mcu_init(). " alt="" coords="157,166,243,193"/>
-<area shape="rect" id="node5" href="$group__mcu__periph.html#gaf8669c6ba2d12460cf1172edd1a5e4a3" title="Optional board init function called at the end of mcu_init(). " alt="" coords="153,217,247,244"/>
-<area shape="rect" id="node24" href="$dac__arch_8c.html#a6e622fafee8436bf9cf9f6b120352e3c" title="dac_init" alt="" coords="165,268,235,294"/>
-<area shape="rect" id="node25" href="$chibios_2mcu__periph_2gpio__arch_8h.html#afd6403990094d8cd6010b2e641a977da" title="Get level of a gpio. " alt="" coords="161,318,239,345"/>
-<area shape="rect" id="node26" href="$chibios_2mcu__periph_2gpio__arch_8c.html#ae7d0172a824f41338c10872b96cc541b" title="Setup one or more pins of the given GPIO port as inputs. " alt="" coords="135,369,265,396"/>
-<area shape="rect" id="node27" href="$chibios_2mcu__periph_2gpio__arch_8c.html#a614c4a447f1e43381d92c682ac3b953f" title="Setup one or more pins of the given GPIO port as outputs. " alt="" coords="129,420,271,446"/>
-<area shape="rect" id="node28" href="$led_8h.html#a9d9d9b1f30592189c3aa7358c626218f" title="Automatic initialization of actived LED Set to OFF at startup. " alt="" coords="167,470,233,497"/>
-<area shape="rect" id="node29" href="$chibios_2mcu__arch_8c.html#a87671303c7d4a9264b1ffbb07e87f454" title="mcu_arch_init" alt="" coords="145,521,255,548"/>
-<area shape="rect" id="node30" href="$group__spi.html#ga2437939c4fca0a4a5a4f79460ed3f731" title="spi0_init" alt="" coords="163,622,237,649"/>
-<area shape="rect" id="node33" href="$group__spi.html#ga7da3469436debceb731ecb76c920efda" title="spi1_init" alt="" coords="163,572,237,598"/>
-<area shape="rect" id="node35" href="$group__spi.html#ga1c8c4e89459606c70f6749714abd4a86" title="spi2_init" alt="" coords="163,673,237,700"/>
-<area shape="rect" id="node37" href="$group__spi.html#gafc9125c5764a6749703ae4f1303a16f3" title="spi_init_slaves() function " alt="" coords="143,724,257,750"/>
-<area shape="rect" id="node38" href="$spi__slave__hs__arch_8c.html#ad7c7233ab7697ee83d0228fe95b0c048" title="spi_slave_hs_init" alt="" coords="136,782,264,809"/>
-<area shape="rect" id="node46" href="$sys__time_8c.html#a1e6b75f4db9128a3326d8a6283b0af43" title="sys_time_init" alt="" coords="147,833,253,860"/>
-<area shape="rect" id="node48" href="$linux_2mcu__periph_2uart__arch_8c.html#a7e440684a8b6a4088b2f1d5b4dc47587" title="uart_arch_init" alt="" coords="145,884,255,910"/>
-<area shape="rect" id="node49" href="$linux_2mcu__periph_2udp__arch_8c.html#a665732768aad2a0f4b0a396d96485cc2" title="udp_arch_init" alt="" coords="147,934,253,961"/>
-<area shape="rect" id="node50" href="$lpc21_2usb__ser__hw_8c.html#a96a54f28bfc8bc28963cd2fac74609cd" title="VCOM_init" alt="" coords="157,985,243,1012"/>
-<area shape="rect" id="node4" href="$ardrone_2board_8c.html#a646b7f375c14d15f1aa843bbe058634f" title="KillGracefully" alt="" coords="367,141,470,168"/>
-<area shape="rect" id="node6" href="$mt9v117_8c.html#aa6ecb42ade7b40f50bc3cf8f306583a7" title="Initialisation of the Aptina MT9V117 CMOS sensor (1/6 inch VGA, bottom camera) " alt="" coords="366,192,471,218"/>
-<area shape="rect" id="node13" href="$mt9f002_8c.html#a8f43c3ad8d5ff841d1203ab6c760c8f0" title="Initialisation of the Aptina MT9F002 CMOS sensor (front camera) " alt="" coords="367,470,470,497"/>
-<area shape="rect" id="node7" href="$mt9v117_8c.html#ab5e11208a0a26679e535aaef6e6043ad" title="mt9v117_config" alt="" coords="595,53,719,80"/>
-<area shape="rect" id="node8" href="$mt9v117_8c.html#a930a08d54ce09662cbac826ff7a052bf" title="Write multiple bytes to a single register. " alt="" coords="921,78,1001,105"/>
-<area shape="rect" id="node9" href="$mt9v117_8c.html#acd33743f2f52bd5711b8c978e7cf3df2" title="write_var" alt="" coords="795,104,873,130"/>
-<area shape="rect" id="node10" href="$mt9v117_8c.html#aef8703a6aee9810c99eaa79ca4adad8a" title="mt9v117_write_patch" alt="" coords="577,154,736,181"/>
-<area shape="rect" id="node11" href="$mt9v117_8c.html#aa371a374d0c17594e7eed5c751c2df08" title="Read multiple bytes from a register. " alt="" coords="795,205,873,232"/>
-<area shape="rect" id="node12" href="$mt9v117_8c.html#affb04605c4916694762cf7744dd5e744" title="read_var" alt="" coords="617,256,696,282"/>
-<area shape="rect" id="node14" href="$mt9f002_8c.html#a19a080f1261d2c93036a71229829f3bc" title="Configure stage 1 for both MiPi and HiSPi connection. " alt="" coords="576,306,737,333"/>
-<area shape="rect" id="node15" href="$mt9f002_8c.html#aa234e478df07549163df80e9d4fe3804" title="Configure stage 2 for both MiPi and HiSPi connection. " alt="" coords="576,357,737,384"/>
-<area shape="rect" id="node16" href="$mt9f002_8c.html#a3193ac4829fc656e72624e1969c60f7f" title="Configure stage 3 for both MiPi and HiSPi connection. " alt="" coords="576,408,737,434"/>
-<area shape="rect" id="node17" href="$mt9f002_8c.html#a0c50ad7b7330297658579bcf6e71def4" title="Configure stage 1 for parallel connection. " alt="" coords="567,458,747,485"/>
-<area shape="rect" id="node18" href="$mt9f002_8c.html#a31a2861994de30b4951549681c8586e4" title="Configure stage 2 for parallel connection. " alt="" coords="567,509,747,536"/>
-<area shape="rect" id="node19" href="$mt9f002_8c.html#a36bbdbfc466a49d592b591d9d6a35b5f" title="Set the blanking configuration Blanking of the MT9F002 depends on the target FPS. ..." alt="" coords="575,560,738,586"/>
-<area shape="rect" id="node20" href="$mt9f002_8c.html#abcc9f0f2484aa96a4c1cef0c563fd62e" title="Set the exposure configuration Depends on the blanking (and therefore the FPS) " alt="" coords="572,610,741,637"/>
-<area shape="rect" id="node21" href="$mt9f002_8c.html#a2b19e806c9c4331da2e4730dd6592e38" title="Sets the GreenR, Blue, Red and GreenB gains. " alt="" coords="585,661,729,688"/>
-<area shape="rect" id="node22" href="$mt9f002_8c.html#a938725d4136403996410307333abe9f7" title="Set the PLL registers based on config. " alt="" coords="595,712,719,738"/>
-<area shape="rect" id="node23" href="$mt9f002_8c.html#ab56af0c2b794989ad4e1c4e112784588" title="mt9f002_set_resolution" alt="" coords="570,762,743,789"/>
-<area shape="rect" id="node31" href="$group__spi.html#ga6c0861f0c2184cab82f883ca29312011" title="Initialize a spi peripheral. " alt="" coords="385,572,452,598"/>
-<area shape="rect" id="node32" href="$group__spi.html#gab8cb9f918fae47c201bf233a0b3b282f" title="Architecture dependent SPI0 initialization. " alt="" coords="364,622,473,649"/>
-<area shape="rect" id="node34" href="$group__spi.html#gaaba00866ddaf960c0c761e61f81e5216" title="Architecture dependent SPI1 initialization. " alt="" coords="364,521,473,548"/>
-<area shape="rect" id="node36" href="$group__spi.html#gae6c7e2bb3fb354f3b98282386b41bf70" title="Architecture dependent SPI2 initialization. " alt="" coords="364,673,473,700"/>
-<area shape="rect" id="node39" href="$spi__slave__hs__arch_8c.html#a3eb5625306bbd0528404bdbec1fe2cd2" title="spi_slave_hs_char_available" alt="" coords="319,724,519,750"/>
-<area shape="rect" id="node40" href="$spi__slave__hs__arch_8c.html#a1fbf621e4a85b6c6293bcf41fe40aabc" title="spi_slave_hs_check\l_free_space" alt="" coords="345,775,492,816"/>
-<area shape="rect" id="node41" href="$spi__slave__hs__arch_8c.html#a26f8e1cbe59fb380e629b47643ed5a1e" title="spi_slave_hs_getch" alt="" coords="346,841,491,868"/>
-<area shape="rect" id="node42" href="$spi__slave__hs__arch_8c.html#a764936204b755d8bb7208f60debf35e4" title="spi_slave_hs_send" alt="" coords="349,892,489,918"/>
-<area shape="rect" id="node43" href="$spi__slave__hs__arch_8c.html#a033ab4abb6640b043dabebdb27e37692" title="spi_slave_hs_transmit" alt="" coords="575,972,738,998"/>
-<area shape="rect" id="node44" href="$spi__slave__hs__arch_8c.html#a28ebd1dea5d9de43e2f65023083dded2" title="spi_slave_hs_transmit\l_buffer" alt="" coords="337,994,500,1035"/>
-<area shape="rect" id="node45" href="$spi__slave__hs__arch_8c.html#aa105625a4ec7ecf95c0802c3edfade05" title="SSP_ISR" alt="" coords="381,1060,456,1086"/>
-<area shape="rect" id="node47" href="$chibios_2mcu__periph_2sys__time__arch_8c.html#a9b31c2feb846b96205ae20ea6883e1c4" title="sys_time_arch_init" alt="" coords="349,1110,489,1137"/>
+<area shape="rect" id="node2" href="$chibios_2mcu__periph_2adc__arch_8c.html#a2b815e6730e8723a6d1d06d9ef8f31c0" title="Adc init. " alt="" coords="165,41,235,67"/>
+<area shape="rect" id="node3" href="$group__mcu__periph.html#ga916f2adc2080b4fe88034086d107a8dc" title="Optional board init function called at the start of mcu_init(). " alt="" coords="157,91,243,118"/>
+<area shape="rect" id="node5" href="$group__mcu__periph.html#gaf8669c6ba2d12460cf1172edd1a5e4a3" title="Optional board init function called at the end of mcu_init(). " alt="" coords="153,142,247,169"/>
+<area shape="rect" id="node23" href="$dac__arch_8c.html#a6e622fafee8436bf9cf9f6b120352e3c" title="dac_init" alt="" coords="165,193,235,219"/>
+<area shape="rect" id="node24" href="$chibios_2mcu__periph_2gpio__arch_8h.html#afd6403990094d8cd6010b2e641a977da" title="Get level of a gpio. " alt="" coords="161,243,239,270"/>
+<area shape="rect" id="node25" href="$chibios_2mcu__periph_2gpio__arch_8c.html#ae7d0172a824f41338c10872b96cc541b" title="Setup one or more pins of the given GPIO port as inputs. " alt="" coords="135,294,265,321"/>
+<area shape="rect" id="node26" href="$chibios_2mcu__periph_2gpio__arch_8c.html#a614c4a447f1e43381d92c682ac3b953f" title="Setup one or more pins of the given GPIO port as outputs. " alt="" coords="129,345,271,371"/>
+<area shape="rect" id="node27" href="$led_8h.html#a9d9d9b1f30592189c3aa7358c626218f" title="Automatic initialization of actived LED Set to OFF at startup. " alt="" coords="167,395,233,422"/>
+<area shape="rect" id="node28" href="$chibios_2mcu__arch_8c.html#a87671303c7d4a9264b1ffbb07e87f454" title="mcu_arch_init" alt="" coords="145,446,255,473"/>
+<area shape="rect" id="node29" href="$sim_2mcu__periph_2rng__arch_8c.html#ad5a3df3d0092f55f6ea54ccaa7daf3dc" title="rng_init" alt="" coords="165,497,235,523"/>
+<area shape="rect" id="node30" href="$group__spi.html#ga2437939c4fca0a4a5a4f79460ed3f731" title="spi0_init" alt="" coords="163,598,237,625"/>
+<area shape="rect" id="node33" href="$group__spi.html#ga7da3469436debceb731ecb76c920efda" title="spi1_init" alt="" coords="163,547,237,574"/>
+<area shape="rect" id="node35" href="$group__spi.html#ga1c8c4e89459606c70f6749714abd4a86" title="spi2_init" alt="" coords="163,649,237,675"/>
+<area shape="rect" id="node37" href="$group__spi.html#gafc9125c5764a6749703ae4f1303a16f3" title="spi_init_slaves() function " alt="" coords="143,699,257,726"/>
+<area shape="rect" id="node38" href="$spi__slave__hs__arch_8c.html#ad7c7233ab7697ee83d0228fe95b0c048" title="spi_slave_hs_init" alt="" coords="136,766,264,793"/>
+<area shape="rect" id="node46" href="$sys__time_8c.html#a1e6b75f4db9128a3326d8a6283b0af43" title="sys_time_init" alt="" coords="147,817,253,843"/>
+<area shape="rect" id="node48" href="$linux_2mcu__periph_2uart__arch_8c.html#a7e440684a8b6a4088b2f1d5b4dc47587" title="uart_arch_init" alt="" coords="145,867,255,894"/>
+<area shape="rect" id="node49" href="$linux_2mcu__periph_2udp__arch_8c.html#a665732768aad2a0f4b0a396d96485cc2" title="udp_arch_init" alt="" coords="147,918,253,945"/>
+<area shape="rect" id="node50" href="$lpc21_2usb__ser__hw_8c.html#a96a54f28bfc8bc28963cd2fac74609cd" title="VCOM_init" alt="" coords="157,969,243,995"/>
+<area shape="rect" id="node4" href="$ardrone_2board_8c.html#a646b7f375c14d15f1aa843bbe058634f" title="KillGracefully" alt="" coords="367,91,470,118"/>
+<area shape="rect" id="node6" href="$mt9v117_8c.html#aa6ecb42ade7b40f50bc3cf8f306583a7" title="Initialisation of the Aptina MT9V117 CMOS sensor (1/6 inch VGA, bottom camera) " alt="" coords="366,142,471,169"/>
+<area shape="rect" id="node13" href="$mt9f002_8c.html#a8f43c3ad8d5ff841d1203ab6c760c8f0" title="Initialisation of the Aptina MT9F002 CMOS sensor (front camera) " alt="" coords="367,446,470,473"/>
+<area shape="rect" id="node7" href="$mt9v117_8c.html#ab5e11208a0a26679e535aaef6e6043ad" title="mt9v117_config" alt="" coords="595,243,719,270"/>
+<area shape="rect" id="node8" href="$mt9v117_8c.html#a930a08d54ce09662cbac826ff7a052bf" title="Write multiple bytes to a single register. " alt="" coords="921,167,1001,194"/>
+<area shape="rect" id="node9" href="$mt9v117_8c.html#acd33743f2f52bd5711b8c978e7cf3df2" title="write_var" alt="" coords="795,193,873,219"/>
+<area shape="rect" id="node10" href="$mt9v117_8c.html#aef8703a6aee9810c99eaa79ca4adad8a" title="mt9v117_write_patch" alt="" coords="577,142,736,169"/>
+<area shape="rect" id="node11" href="$mt9v117_8c.html#aa371a374d0c17594e7eed5c751c2df08" title="Read multiple bytes from a register. " alt="" coords="795,91,873,118"/>
+<area shape="rect" id="node12" href="$mt9v117_8c.html#affb04605c4916694762cf7744dd5e744" title="read_var" alt="" coords="617,41,696,67"/>
+<area shape="rect" id="node14" href="$mt9f002_8c.html#a19a080f1261d2c93036a71229829f3bc" title="Configure stage 1 for both MiPi and HiSPi connection. " alt="" coords="576,699,737,726"/>
+<area shape="rect" id="node15" href="$mt9f002_8c.html#aa234e478df07549163df80e9d4fe3804" title="Configure stage 2 for both MiPi and HiSPi connection. " alt="" coords="576,294,737,321"/>
+<area shape="rect" id="node16" href="$mt9f002_8c.html#a3193ac4829fc656e72624e1969c60f7f" title="Configure stage 3 for both MiPi and HiSPi connection. " alt="" coords="576,345,737,371"/>
+<area shape="rect" id="node17" href="$mt9f002_8c.html#a0c50ad7b7330297658579bcf6e71def4" title="Configure stage 1 for parallel connection. " alt="" coords="567,395,747,422"/>
+<area shape="rect" id="node18" href="$mt9f002_8c.html#a31a2861994de30b4951549681c8586e4" title="Configure stage 2 for parallel connection. " alt="" coords="567,446,747,473"/>
+<area shape="rect" id="node19" href="$mt9f002_8c.html#a36bbdbfc466a49d592b591d9d6a35b5f" title="Set the blanking configuration Blanking of the MT9F002 depends on the target FPS. ..." alt="" coords="575,497,738,523"/>
+<area shape="rect" id="node20" href="$mt9f002_8c.html#abcc9f0f2484aa96a4c1cef0c563fd62e" title="Set the exposure configuration Depends on the blanking (and therefore the FPS) " alt="" coords="572,547,741,574"/>
+<area shape="rect" id="node21" href="$mt9f002_8c.html#a2b19e806c9c4331da2e4730dd6592e38" title="Sets the GreenR, Blue, Red and GreenB gains. " alt="" coords="585,598,729,625"/>
+<area shape="rect" id="node22" href="$mt9f002_8c.html#a938725d4136403996410307333abe9f7" title="Set the PLL registers based on config. " alt="" coords="595,649,719,675"/>
+<area shape="rect" id="node31" href="$group__spi.html#ga6c0861f0c2184cab82f883ca29312011" title="Initialize a spi peripheral. " alt="" coords="385,547,452,574"/>
+<area shape="rect" id="node32" href="$group__spi.html#gab8cb9f918fae47c201bf233a0b3b282f" title="Architecture dependent SPI0 initialization. " alt="" coords="364,598,473,625"/>
+<area shape="rect" id="node34" href="$group__spi.html#gaaba00866ddaf960c0c761e61f81e5216" title="Architecture dependent SPI1 initialization. " alt="" coords="364,497,473,523"/>
+<area shape="rect" id="node36" href="$group__spi.html#gae6c7e2bb3fb354f3b98282386b41bf70" title="Architecture dependent SPI2 initialization. " alt="" coords="364,649,473,675"/>
+<area shape="rect" id="node39" href="$spi__slave__hs__arch_8c.html#a3eb5625306bbd0528404bdbec1fe2cd2" title="spi_slave_hs_char_available" alt="" coords="319,817,519,843"/>
+<area shape="rect" id="node40" href="$spi__slave__hs__arch_8c.html#a1fbf621e4a85b6c6293bcf41fe40aabc" title="spi_slave_hs_check\l_free_space" alt="" coords="345,868,492,909"/>
+<area shape="rect" id="node41" href="$spi__slave__hs__arch_8c.html#a26f8e1cbe59fb380e629b47643ed5a1e" title="spi_slave_hs_getch" alt="" coords="346,934,491,961"/>
+<area shape="rect" id="node42" href="$spi__slave__hs__arch_8c.html#a764936204b755d8bb7208f60debf35e4" title="spi_slave_hs_send" alt="" coords="349,985,489,1011"/>
+<area shape="rect" id="node43" href="$spi__slave__hs__arch_8c.html#a033ab4abb6640b043dabebdb27e37692" title="spi_slave_hs_transmit" alt="" coords="575,893,738,919"/>
+<area shape="rect" id="node44" href="$spi__slave__hs__arch_8c.html#a28ebd1dea5d9de43e2f65023083dded2" title="spi_slave_hs_transmit\l_buffer" alt="" coords="337,700,500,741"/>
+<area shape="rect" id="node45" href="$spi__slave__hs__arch_8c.html#aa105625a4ec7ecf95c0802c3edfade05" title="SSP_ISR" alt="" coords="381,766,456,793"/>
+<area shape="rect" id="node47" href="$chibios_2mcu__periph_2sys__time__arch_8c.html#a9b31c2feb846b96205ae20ea6883e1c4" title="sys_time_arch_init" alt="" coords="349,1086,489,1113"/>
 </map>

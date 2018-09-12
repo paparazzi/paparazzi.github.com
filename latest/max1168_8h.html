@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-72-g62bb3ca-dirty</span>
+   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -401,15 +401,14 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{             <a class="code" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a14a004ce07f47580a6800c76982ea599">\</a></div>
-<div class="line"><a class="code" href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a14a004ce07f47580a6800c76982ea599">    if</a> (<a class="code" href="max1168_8h.html#a2380db06cc4ae1a7b0e167a246862ea0">max1168_status</a> == <a class="code" href="max1168_8h.html#a9e1e6bea5d27c4027fb0bba20acd9320">MAX1168_IDLE</a>) { <a class="code" href="max1168_8h.html#adad993f2bbd2ca52aea0b0f97931863a">\</a></div>
+<b>Value:</b><div class="fragment"><div class="line">{             \</div>
+<div class="line">    if (<a class="code" href="max1168_8h.html#a2380db06cc4ae1a7b0e167a246862ea0">max1168_status</a> == <a class="code" href="max1168_8h.html#a9e1e6bea5d27c4027fb0bba20acd9320">MAX1168_IDLE</a>) { <a class="code" href="max1168_8h.html#adad993f2bbd2ca52aea0b0f97931863a">\</a></div>
 <div class="line"><a class="code" href="max1168_8h.html#adad993f2bbd2ca52aea0b0f97931863a">      max1168_read</a>();                     \</div>
 <div class="line">    }                                     \</div>
 <div class="line">  }</div>
 <div class="ttc" id="max1168_8h_html_a9e1e6bea5d27c4027fb0bba20acd9320"><div class="ttname"><a href="max1168_8h.html#a9e1e6bea5d27c4027fb0bba20acd9320">MAX1168_IDLE</a></div><div class="ttdeci">#define MAX1168_IDLE</div><div class="ttdef"><b>Definition:</b> <a href="max1168_8h_source.html#l00059">max1168.h:59</a></div></div>
 <div class="ttc" id="max1168_8h_html_adad993f2bbd2ca52aea0b0f97931863a"><div class="ttname"><a href="max1168_8h.html#adad993f2bbd2ca52aea0b0f97931863a">max1168_read</a></div><div class="ttdeci">void max1168_read(void)</div><div class="ttdef"><b>Definition:</b> <a href="sim_2peripherals_2max1168__arch_8c_source.html#l00026">max1168_arch.c:26</a></div></div>
 <div class="ttc" id="max1168_8h_html_a2380db06cc4ae1a7b0e167a246862ea0"><div class="ttname"><a href="max1168_8h.html#a2380db06cc4ae1a7b0e167a246862ea0">max1168_status</a></div><div class="ttdeci">volatile uint8_t max1168_status</div><div class="ttdef"><b>Definition:</b> <a href="max1168_8c_source.html#l00027">max1168.c:27</a></div></div>
-<div class="ttc" id="stm32_2subsystems_2radio__control_2spektrum__arch_8c_html_a14a004ce07f47580a6800c76982ea599"><div class="ttname"><a href="stm32_2subsystems_2radio__control_2spektrum__arch_8c.html#a14a004ce07f47580a6800c76982ea599">if</a></div><div class="ttdeci">if(PrimarySpektrumState.SpektrumTimer)</div><div class="ttdef"><b>Definition:</b> <a href="stm32_2subsystems_2radio__control_2spektrum__arch_8c_source.html#l00605">spektrum_arch.c:605</a></div></div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="max1168_8h_source.html#l00068">68</a> of file <a class="el" href="max1168_8h_source.html">max1168.h</a>.</p>
 
@@ -478,7 +477,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="max1168_8c_source.html#l00101">101</a> of file <a class="el" href="max1168_8c_source.html">max1168.c</a>.</p>
 
-<p>References <a class="el" href="max1168_8h_source.html#l00063">MAX1168_DATA_AVAILABLE</a>, <a class="el" href="max1168_8h_source.html#l00061">MAX1168_GOT_EOC</a>, <a class="el" href="max1168_8h_source.html#l00059">MAX1168_IDLE</a>, <a class="el" href="max1168_8c_source.html#l00031">max1168_read_trans</a>, <a class="el" href="max1168_8h_source.html#l00062">MAX1168_READING_RES</a>, <a class="el" href="max1168_8c_source.html#l00030">max1168_req_trans</a>, <a class="el" href="max1168_8h_source.html#l00031">MAX1168_SLAVE_IDX</a>, <a class="el" href="max1168_8h_source.html#l00035">MAX1168_SPI_DEV</a>, <a class="el" href="max1168_8c_source.html#l00027">max1168_status</a>, <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00589">spi_resume()</a>, <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00532">spi_slave_unselect()</a>, <a class="el" href="spi_8h_source.html#l00095">SPITransDone</a>, <a class="el" href="spi_8h_source.html#l00094">SPITransFailed</a>, <a class="el" href="spi_8h_source.html#l00093">SPITransSuccess</a>, and <a class="el" href="spi_8h_source.html#l00156">spi_transaction::status</a>.</p>
+<p>References <a class="el" href="max1168_8h_source.html#l00063">MAX1168_DATA_AVAILABLE</a>, <a class="el" href="max1168_8h_source.html#l00061">MAX1168_GOT_EOC</a>, <a class="el" href="max1168_8h_source.html#l00059">MAX1168_IDLE</a>, <a class="el" href="max1168_8c_source.html#l00031">max1168_read_trans</a>, <a class="el" href="max1168_8h_source.html#l00062">MAX1168_READING_RES</a>, <a class="el" href="max1168_8c_source.html#l00030">max1168_req_trans</a>, <a class="el" href="max1168_8h_source.html#l00031">MAX1168_SLAVE_IDX</a>, <a class="el" href="max1168_8h_source.html#l00035">MAX1168_SPI_DEV</a>, <a class="el" href="max1168_8c_source.html#l00027">max1168_status</a>, <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00590">spi_resume()</a>, <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00533">spi_slave_unselect()</a>, <a class="el" href="spi_8h_source.html#l00095">SPITransDone</a>, <a class="el" href="spi_8h_source.html#l00094">SPITransFailed</a>, <a class="el" href="spi_8h_source.html#l00093">SPITransSuccess</a>, and <a class="el" href="spi_8h_source.html#l00156">spi_transaction::status</a>.</p>
 
 <p>Referenced by <a class="el" href="imu__b2_8c_source.html#l00152">imu_b2_event()</a>, and <a class="el" href="imu__hbmini_8c_source.html#l00093">imu_hbmini_event()</a>.</p>
 
@@ -566,7 +565,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="sim_2peripherals_2max1168__arch_8c_source.html#l00026">26</a> of file <a class="el" href="sim_2peripherals_2max1168__arch_8c_source.html">max1168_arch.c</a>.</p>
 
-<p>References <a class="el" href="max1168_8c_source.html#l00031">max1168_read_trans</a>, <a class="el" href="max1168_8c_source.html#l00030">max1168_req_trans</a>, <a class="el" href="max1168_8h_source.html#l00060">MAX1168_SENDING_REQ</a>, <a class="el" href="max1168_8h_source.html#l00035">MAX1168_SPI_DEV</a>, <a class="el" href="max1168_8c_source.html#l00027">max1168_status</a>, and <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00457">spi_submit()</a>.</p>
+<p>References <a class="el" href="max1168_8c_source.html#l00031">max1168_read_trans</a>, <a class="el" href="max1168_8c_source.html#l00030">max1168_req_trans</a>, <a class="el" href="max1168_8h_source.html#l00060">MAX1168_SENDING_REQ</a>, <a class="el" href="max1168_8h_source.html#l00035">MAX1168_SPI_DEV</a>, <a class="el" href="max1168_8c_source.html#l00027">max1168_status</a>, and <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00458">spi_submit()</a>.</p>
 
 <p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -620,7 +619,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_0a48ba2c0a76794adfddddc873522f67.html">peripherals</a></li><li class="navelem"><a class="el" href="max1168_8h.html">max1168.h</a></li>
-    <li class="footer">Generated on Wed Nov 8 2017 10:02:35 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Sep 12 2018 02:03:44 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>
