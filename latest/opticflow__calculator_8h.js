@@ -22,7 +22,7 @@ var opticflow__calculator_8h =
       [ "img_gray", "opticflow__calculator_8h.html#a48090cfda015ecd52f82d6b72c8052fd", null ],
       [ "just_switched_method", "opticflow__calculator_8h.html#ad00cecd0d37a2da50d7e52907e316045", null ],
       [ "max_iterations", "opticflow__calculator_8h.html#a7b0e7579d3f7448cf883fbadef8cf13f", null ],
-      [ "max_track_corners", "opticflow__calculator_8h.html#ac8907107e2143e066e0fd388918dd475", null ],
+      [ "max_track_corners", "opticflow__calculator_8h.html#a302a13897d69528d8fd0f36c2a192854", null ],
       [ "median_filter", "opticflow__calculator_8h.html#ac46ba0a23910701fc0416b9887585474", null ],
       [ "method", "opticflow__calculator_8h.html#af6d3597927c49a82adb5fac801f1bfb5", null ],
       [ "prev_img_gray", "opticflow__calculator_8h.html#a081e7989b7c43732e5e23913a1244f69", null ],
@@ -35,6 +35,7 @@ var opticflow__calculator_8h =
       [ "track_back", "opticflow__calculator_8h.html#a089f6e08cb72710e2cd379c0e577b9ed", null ],
       [ "window_size", "opticflow__calculator_8h.html#ace971c356385c5fc287dfdb6874743ee", null ]
     ] ],
+    [ "FAST9_MAX_CORNERS", "opticflow__calculator_8h.html#af8580baf85f0c87ba368f1824c1d4063", null ],
     [ "calc_edgeflow_tot", "opticflow__calculator_8h.html#ab57bd1ab7d50982c7f9494e40e6da3ca", null ],
     [ "calc_fast9_lukas_kanade", "opticflow__calculator_8h.html#a3edff14cc7f95b5202ba6841a12dfed3", null ],
     [ "kalman_filter_opticflow_velocity", "opticflow__calculator_8h.html#a0b04e288db8c4c22a0354161df3e7873", null ],

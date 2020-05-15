@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -139,9 +139,9 @@ Periodic Functions</h2>
 Datalink Functions</h1>
 <p>Whenever the specified datalink message is received, the corresponing handler function is called.</p>
 <ul>
-<li>on message <b>REMOTE_GPS</b> call <a class="el" href="gps__datalink_8c.html#abb144fb2a2da32322d34bb775715c6d8">gps_datalink_parse_REMOTE_GPS()</a></li>
-<li>on message <b>REMOTE_GPS_SMALL</b> call <a class="el" href="gps__datalink_8c.html#a72af93d10391b6dae5f47999a9e90c2d">gps_datalink_parse_REMOTE_GPS_SMALL()</a></li>
-<li>on message <b>REMOTE_GPS_LOCAL</b> call <a class="el" href="gps__datalink_8c.html#a15713f768997b47fa44afe6913f8a6ae">gps_datalink_parse_REMOTE_GPS_LOCAL()</a> </li>
+<li>on message <b>REMOTE_GPS</b> call gps_datalink_parse_REMOTE_GPS(buf)</li>
+<li>on message <b>REMOTE_GPS_SMALL</b> call gps_datalink_parse_REMOTE_GPS_SMALL(buf)</li>
+<li>on message <b>REMOTE_GPS_LOCAL</b> call gps_datalink_parse_REMOTE_GPS_LOCAL(buf) </li>
 </ul>
 <h1><a class="anchor" id="files"></a>
 Files</h1>
@@ -175,9 +175,9 @@ Raw gps_datalink.xml file:</h2>
 <div class="line">  &lt;/header&gt;</div>
 <div class="line">  &lt;init fun=&quot;gps_datalink_init()&quot;/&gt;</div>
 <div class="line">  &lt;periodic fun=&quot;gps_datalink_periodic_check()&quot; freq=&quot;1.&quot; autorun=&quot;TRUE&quot;/&gt;</div>
-<div class="line">  &lt;datalink message=&quot;REMOTE_GPS&quot; fun=&quot;gps_datalink_parse_REMOTE_GPS()&quot;/&gt;</div>
-<div class="line">  &lt;datalink message=&quot;REMOTE_GPS_SMALL&quot; fun=&quot;gps_datalink_parse_REMOTE_GPS_SMALL()&quot;/&gt;</div>
-<div class="line">  &lt;datalink message=&quot;REMOTE_GPS_LOCAL&quot; fun=&quot;gps_datalink_parse_REMOTE_GPS_LOCAL()&quot;/&gt;</div>
+<div class="line">  &lt;datalink message=&quot;REMOTE_GPS&quot; fun=&quot;gps_datalink_parse_REMOTE_GPS(buf)&quot;/&gt;</div>
+<div class="line">  &lt;datalink message=&quot;REMOTE_GPS_SMALL&quot; fun=&quot;gps_datalink_parse_REMOTE_GPS_SMALL(buf)&quot;/&gt;</div>
+<div class="line">  &lt;datalink message=&quot;REMOTE_GPS_LOCAL&quot; fun=&quot;gps_datalink_parse_REMOTE_GPS_LOCAL(buf)&quot;/&gt;</div>
 <div class="line">  &lt;makefile target=&quot;ap|fbw&quot;&gt;</div>
 <div class="line">    &lt;file name=&quot;gps_datalink.c&quot; dir=&quot;subsystems/gps&quot;/&gt;</div>
 <div class="line">    &lt;raw&gt;</div>
@@ -207,7 +207,7 @@ Raw gps_datalink.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Wed Sep 12 2018 02:03:58 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:03:41 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

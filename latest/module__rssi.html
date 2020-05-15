@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -121,7 +121,7 @@ Init Functions</h2>
 Datalink Functions</h1>
 <p>Whenever the specified datalink message is received, the corresponing handler function is called.</p>
 <ul>
-<li>on message <b>RSSI</b> call <a class="el" href="rssi_8c.html#a1d77ada4aa56f69ef17114b756f721b0">parse_rssi_dl()</a> </li>
+<li>on message <b>RSSI</b> call parse_rssi_dl(buf) </li>
 </ul>
 <h1><a class="anchor" id="files"></a>
 Files</h1>
@@ -151,7 +151,7 @@ Raw rssi.xml file:</h2>
 <div class="line">    &lt;file name=&quot;rssi.h&quot;/&gt;</div>
 <div class="line">  &lt;/header&gt;</div>
 <div class="line">  &lt;init fun=&quot;rssi_init()&quot;/&gt;</div>
-<div class="line">  &lt;datalink message=&quot;RSSI&quot; fun=&quot;parse_rssi_dl()&quot;/&gt;</div>
+<div class="line">  &lt;datalink message=&quot;RSSI&quot; fun=&quot;parse_rssi_dl(buf)&quot;/&gt;</div>
 <div class="line">  &lt;makefile&gt;</div>
 <div class="line">    &lt;file name=&quot;rssi.c&quot;/&gt;</div>
 <div class="line">  &lt;/makefile&gt;</div>
@@ -163,7 +163,7 @@ Raw rssi.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Wed Sep 12 2018 02:03:57 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:03:40 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

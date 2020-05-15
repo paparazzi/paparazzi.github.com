@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -139,7 +139,7 @@ Periodic Functions</h2>
 <p>These functions are called periodically at the specified frequency from the module periodic loop.</p>
 <ul>
 <li><a class="el" href="flight__recorder_8c.html#aae850ede9ad9c2129b5902969280c7b5" title="Periodic function. ">flight_recorder_periodic()</a><ul>
-<li>Frequency in Hz: <em>100</em> </li>
+<li>Running at maximum module frequency.</li>
 <li>Autorun: <em>TRUE</em> <br />
  Periodic function automatically starts after init.</li>
 </ul>
@@ -177,7 +177,7 @@ Raw flight_recorder.xml file:</h2>
 <div class="line">    &lt;file name=&quot;flight_recorder.h&quot;/&gt;</div>
 <div class="line">  &lt;/header&gt;</div>
 <div class="line">  &lt;init fun=&quot;flight_recorder_init()&quot;/&gt;</div>
-<div class="line">  &lt;periodic fun=&quot;flight_recorder_periodic()&quot; freq=&quot;100&quot; autorun=&quot;TRUE&quot;/&gt;</div>
+<div class="line">  &lt;periodic fun=&quot;flight_recorder_periodic()&quot; autorun=&quot;TRUE&quot;/&gt;</div>
 <div class="line">  &lt;makefile target=&quot;ap&quot;&gt;</div>
 <div class="line">    &lt;file name=&quot;flight_recorder.c&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;FLIGHTRECORDER_SDLOG&quot; cond=&quot;ifneq (FALSE,$(findstring $(FLIGHTRECORDER_SDLOG),FALSE))&quot;/&gt;</div>
@@ -190,7 +190,7 @@ Raw flight_recorder.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Wed Sep 12 2018 02:03:55 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:03:39 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

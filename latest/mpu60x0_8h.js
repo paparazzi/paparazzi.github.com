@@ -7,6 +7,7 @@ var mpu60x0_8h =
       [ "accel_range", "mpu60x0_8h.html#abe7cee016f124472673117c85168a7f5", null ],
       [ "clk_sel", "mpu60x0_8h.html#acd7f455580bc4961b94d15d8713f95a9", null ],
       [ "dlpf_cfg", "mpu60x0_8h.html#a77fa2aabc0daa4eca984020546db90fa", null ],
+      [ "dlpf_cfg_acc", "mpu60x0_8h.html#ad3135d14791c55a2cca8de1f7c7cd8e3", null ],
       [ "drdy_int_enable", "mpu60x0_8h.html#a9dd1f2baae0ed3a8e1b86b1e3991b28f", null ],
       [ "gyro_range", "mpu60x0_8h.html#aefe120b6f39e8491c118cd03359210ce", null ],
       [ "i2c_bypass", "mpu60x0_8h.html#a9c1db77c261211e9db2f827ba707a70f", null ],
@@ -18,7 +19,8 @@ var mpu60x0_8h =
       [ "nb_slave_init", "mpu60x0_8h.html#a6ec9f5324d5501ed8bdc1a1bcf0a5584", null ],
       [ "nb_slaves", "mpu60x0_8h.html#a686f9c24017b15cc1cf15866def7fbc7", null ],
       [ "slaves", "mpu60x0_8h.html#a6facb3d9a26e53f21cf67cc5611792e7", null ],
-      [ "smplrt_div", "mpu60x0_8h.html#a5b22d78bb0c75cc5d47c7c7945975081", null ]
+      [ "smplrt_div", "mpu60x0_8h.html#a5b22d78bb0c75cc5d47c7c7945975081", null ],
+      [ "type", "mpu60x0_8h.html#a78539a4ae7f515457239d0a8ef918378", null ]
     ] ],
     [ "MPU60X0_ACCEL_SENS_16G", "mpu60x0_8h.html#a3c00ad8b06938bcae50b0fa9848e6fdb", null ],
     [ "MPU60X0_ACCEL_SENS_16G_DEN", "mpu60x0_8h.html#a8ee617830df6e64e3f89e155294f8d14", null ],
@@ -35,6 +37,7 @@ var mpu60x0_8h =
     [ "MPU60X0_DEFAULT_AFS_SEL", "mpu60x0_8h.html#a012200ea8acdb75a113e0e904266c04c", null ],
     [ "MPU60X0_DEFAULT_CLK_SEL", "mpu60x0_8h.html#a7b2aad53cd72c7d89b37be8a7ef2f391", null ],
     [ "MPU60X0_DEFAULT_DLPF_CFG", "mpu60x0_8h.html#aae70e698b1e7df4e02c2b175206c6e89", null ],
+    [ "MPU60X0_DEFAULT_DLPF_CFG_ACC", "mpu60x0_8h.html#a304dcf6be94f4e40db9a63dc59a0e3ac", null ],
     [ "MPU60X0_DEFAULT_FS_SEL", "mpu60x0_8h.html#a28cf7622a5ae3f6f389efd4ee1f6d6b6", null ],
     [ "MPU60X0_DEFAULT_INT_CFG", "mpu60x0_8h.html#a3a8d2a1bc7f3c7a8ae99deb829833e8b", null ],
     [ "MPU60X0_DEFAULT_SMPLRT_DIV", "mpu60x0_8h.html#a2f464667425fc763dadfb0ead8fa748f", null ],
@@ -62,9 +65,18 @@ var mpu60x0_8h =
       [ "MPU60X0_CONF_DLPF", "mpu60x0_8h.html#aad60854879c304e3415c62b9f4e5f0a9aef18ae869efd047d1040c28abadac870", null ],
       [ "MPU60X0_CONF_GYRO", "mpu60x0_8h.html#aad60854879c304e3415c62b9f4e5f0a9a59c5598c361e753030d4ff59fa623a0d", null ],
       [ "MPU60X0_CONF_ACCEL", "mpu60x0_8h.html#aad60854879c304e3415c62b9f4e5f0a9a38b732f84775a96a763d194a0fdea1b5", null ],
+      [ "MPU60X0_CONF_ACCEL2", "mpu60x0_8h.html#aad60854879c304e3415c62b9f4e5f0a9adadc54d3362a4326f4147805e6da28a3", null ],
       [ "MPU60X0_CONF_I2C_SLAVES", "mpu60x0_8h.html#aad60854879c304e3415c62b9f4e5f0a9a25d82c238afaa710f62e9d7a165b7239", null ],
       [ "MPU60X0_CONF_INT_ENABLE", "mpu60x0_8h.html#aad60854879c304e3415c62b9f4e5f0a9a657af33f4ac0f3d74a4a4148f1801e40", null ],
+      [ "MPU60X0_CONF_UNDOC1", "mpu60x0_8h.html#aad60854879c304e3415c62b9f4e5f0a9ae15e6ca6037caf4911a570c894361fdc", null ],
       [ "MPU60X0_CONF_DONE", "mpu60x0_8h.html#aad60854879c304e3415c62b9f4e5f0a9a340fb3e9e2865170b977a5416e77e640", null ]
+    ] ],
+    [ "Mpu60x0Type", "mpu60x0_8h.html#a4fc6a7bb40038da11884305a9b3d72a5", [
+      [ "MPU60X0", "mpu60x0_8h.html#a4fc6a7bb40038da11884305a9b3d72a5a9b414a740e7f495d11628f0d3c2016df", null ],
+      [ "ICM20600", "mpu60x0_8h.html#a4fc6a7bb40038da11884305a9b3d72a5a566e7cbd612d6eb4004c3864c2bca8a1", null ],
+      [ "ICM20608", "mpu60x0_8h.html#a4fc6a7bb40038da11884305a9b3d72a5ab5f71f1b3baf4233b5d6319d66b158b8", null ],
+      [ "ICM20602", "mpu60x0_8h.html#a4fc6a7bb40038da11884305a9b3d72a5a471f827c75d9113b54875491d9631ef8", null ],
+      [ "ICM20689", "mpu60x0_8h.html#a4fc6a7bb40038da11884305a9b3d72a5a5479a2affadc00aa909d2e3930b5e4f1", null ]
     ] ],
     [ "mpu60x0_configure_i2c_slaves", "mpu60x0_8h.html#aedbe7307e6e7f522300178dd964c2f3b", null ],
     [ "mpu60x0_send_config", "mpu60x0_8h.html#a564470aa2f16b3f6665b99d9141f9ae7", null ],

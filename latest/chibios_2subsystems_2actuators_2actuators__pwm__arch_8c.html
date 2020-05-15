@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -133,7 +133,7 @@ $(document).ready(function(){initNavTree('chibios_2subsystems_2actuators_2actuat
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a39096cf89de1399c6a85b9bc93a480c8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chibios_2subsystems_2actuators_2actuators__pwm__arch_8c.html#a39096cf89de1399c6a85b9bc93a480c8">PWM_CMD_TO_US</a>(_t)&#160;&#160;&#160;(1000000 * _t / <a class="el" href="chibios_2subsystems_2actuators_2actuators__pwm__arch_8h.html#a6177eb86ee16a1956c81749e4e332cf0">PWM_FREQUENCY</a>)</td></tr>
+<tr class="memitem:a39096cf89de1399c6a85b9bc93a480c8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chibios_2subsystems_2actuators_2actuators__pwm__arch_8c.html#a39096cf89de1399c6a85b9bc93a480c8">PWM_CMD_TO_US</a>(_t)&#160;&#160;&#160;(<a class="el" href="chibios_2subsystems_2actuators_2actuators__pwm__arch_8h.html#a6177eb86ee16a1956c81749e4e332cf0">PWM_FREQUENCY</a> * _t / 1000000)</td></tr>
 <tr class="memdesc:a39096cf89de1399c6a85b9bc93a480c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">CMD_TO_US() is depending on architecture (e.g STM32 vs LPC), and on the hardware settings (clock speed etc.).  <a href="#a39096cf89de1399c6a85b9bc93a480c8">More...</a><br /></td></tr>
 <tr class="separator:a39096cf89de1399c6a85b9bc93a480c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -168,7 +168,7 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">_t</td><td>)</td>
-          <td>&#160;&#160;&#160;(1000000 * _t / <a class="el" href="chibios_2subsystems_2actuators_2actuators__pwm__arch_8h.html#a6177eb86ee16a1956c81749e4e332cf0">PWM_FREQUENCY</a>)</td>
+          <td>&#160;&#160;&#160;(<a class="el" href="chibios_2subsystems_2actuators_2actuators__pwm__arch_8h.html#a6177eb86ee16a1956c81749e4e332cf0">PWM_FREQUENCY</a> * _t / 1000000)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -179,7 +179,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="chibios_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00047">47</a> of file <a class="el" href="chibios_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html">actuators_pwm_arch.c</a>.</p>
 
-<p>Referenced by <a class="el" href="chibios_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00155">actuators_pwm_commit()</a>.</p>
+<p>Referenced by <a class="el" href="chibios_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00170">actuators_pwm_commit()</a>.</p>
 
 </div>
 </div>
@@ -232,7 +232,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="chibios_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00155">155</a> of file <a class="el" href="chibios_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html">actuators_pwm_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="chibios_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00170">170</a> of file <a class="el" href="chibios_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html">actuators_pwm_arch.c</a>.</p>
 
 <p>Referenced by <a class="el" href="actuators__xvert_8c_source.html#l00091">actuators_xvert_commit()</a>.</p>
 
@@ -297,7 +297,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="chibios_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00050">50</a> of file <a class="el" href="chibios_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html">actuators_pwm_arch.c</a>.</p>
 
-<p>Referenced by <a class="el" href="boards_2ardrone_2actuators_8c_source.html#l00220">actuators_ardrone_commit()</a>, <a class="el" href="chibios_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00155">actuators_pwm_commit()</a>, and <a class="el" href="actuators__xvert_8c_source.html#l00091">actuators_xvert_commit()</a>.</p>
+<p>Referenced by <a class="el" href="boards_2ardrone_2actuators_8c_source.html#l00220">actuators_ardrone_commit()</a>, <a class="el" href="chibios_2subsystems_2actuators_2actuators__pwm__arch_8c_source.html#l00170">actuators_pwm_commit()</a>, and <a class="el" href="actuators__xvert_8c_source.html#l00091">actuators_xvert_commit()</a>.</p>
 
 </div>
 </div>
@@ -307,7 +307,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_975986b9e0eb299e77243bf822f828ce.html">chibios</a></li><li class="navelem"><a class="el" href="dir_73cccedf574db0d59f5da099cf4c385e.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_b9b57ee2d74177716cf3abf493c506b9.html">actuators</a></li><li class="navelem"><a class="el" href="chibios_2subsystems_2actuators_2actuators__pwm__arch_8c.html">actuators_pwm_arch.c</a></li>
-    <li class="footer">Generated on Wed Sep 12 2018 02:03:02 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:02:41 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

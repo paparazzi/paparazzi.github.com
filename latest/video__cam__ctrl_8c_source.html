@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -174,30 +174,34 @@ $(document).ready(function(){initNavTree('video__cam__ctrl_8c_source.html','');}
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">default</span>:</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  }</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="comment">// call command send_command function</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <a class="code" href="dc_8c.html#a6465f80b7bc14e598b6a2ab1436d3156">dc_send_command_common</a>(cmd);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div>
 <div class="ttc" id="video__cam__ctrl_8c_html_a310b6b4208930b49883ed0abccce0e87"><div class="ttname"><a href="video__cam__ctrl_8c.html#a310b6b4208930b49883ed0abccce0e87">digital_cam_video_periodic</a></div><div class="ttdeci">void digital_cam_video_periodic(void)</div><div class="ttdef"><b>Definition:</b> <a href="video__cam__ctrl_8c_source.html#l00039">video_cam_ctrl.c:39</a></div></div>
-<div class="ttc" id="video__capture_8c_html_ad6a280260d0b493fe232e1655a932182"><div class="ttname"><a href="video__capture_8c.html#ad6a280260d0b493fe232e1655a932182">video_capture_shoot</a></div><div class="ttdeci">void video_capture_shoot(void)</div><div class="ttdef"><b>Definition:</b> <a href="video__capture_8c_source.html#l00091">video_capture.c:91</a></div></div>
-<div class="ttc" id="dc_8c_html_a319b1533383dbc2491e1799a0148a7ba"><div class="ttname"><a href="dc_8c.html#a319b1533383dbc2491e1799a0148a7ba">dc_init</a></div><div class="ttdeci">void dc_init(void)</div><div class="ttdoc">initialize settings </div><div class="ttdef"><b>Definition:</b> <a href="dc_8c_source.html#l00151">dc.c:151</a></div></div>
+<div class="ttc" id="video__capture_8c_html_ad6a280260d0b493fe232e1655a932182"><div class="ttname"><a href="video__capture_8c.html#ad6a280260d0b493fe232e1655a932182">video_capture_shoot</a></div><div class="ttdeci">void video_capture_shoot(void)</div><div class="ttdef"><b>Definition:</b> <a href="video__capture_8c_source.html#l00100">video_capture.c:100</a></div></div>
+<div class="ttc" id="dc_8c_html_a319b1533383dbc2491e1799a0148a7ba"><div class="ttname"><a href="dc_8c.html#a319b1533383dbc2491e1799a0148a7ba">dc_init</a></div><div class="ttdeci">void dc_init(void)</div><div class="ttdoc">initialize settings </div><div class="ttdef"><b>Definition:</b> <a href="dc_8c_source.html#l00156">dc.c:156</a></div></div>
 <div class="ttc" id="dc_8h_html_a5bcad6137b0e9f54ae973b52e8a94d34a8680b60f2e92d2e261a7e44e21b9c9c2"><div class="ttname"><a href="dc_8h.html#a5bcad6137b0e9f54ae973b52e8a94d34a8680b60f2e92d2e261a7e44e21b9c9c2">DC_SHOOT</a></div><div class="ttdef"><b>Definition:</b> <a href="dc_8h_source.html#l00100">dc.h:100</a></div></div>
 <div class="ttc" id="dc_8h_html_a5bcad6137b0e9f54ae973b52e8a94d34adb654606b6903dfa316f5ecae39e378a"><div class="ttname"><a href="dc_8h.html#a5bcad6137b0e9f54ae973b52e8a94d34adb654606b6903dfa316f5ecae39e378a">DC_TALLER</a></div><div class="ttdef"><b>Definition:</b> <a href="dc_8h_source.html#l00103">dc.h:103</a></div></div>
 <div class="ttc" id="dc_8h_html"><div class="ttname"><a href="dc_8h.html">dc.h</a></div><div class="ttdoc">Standard Digital Camera Control Interface. </div></div>
 <div class="ttc" id="video__cam__ctrl_8c_html_ad98a8a746444240334dd83a35c6cde80"><div class="ttname"><a href="video__cam__ctrl_8c.html#ad98a8a746444240334dd83a35c6cde80">digital_cam_video_init</a></div><div class="ttdeci">void digital_cam_video_init(void)</div><div class="ttdef"><b>Definition:</b> <a href="video__cam__ctrl_8c_source.html#l00033">video_cam_ctrl.c:33</a></div></div>
+<div class="ttc" id="dc_8c_html_a6465f80b7bc14e598b6a2ab1436d3156"><div class="ttname"><a href="dc_8c.html#a6465f80b7bc14e598b6a2ab1436d3156">dc_send_command_common</a></div><div class="ttdeci">void dc_send_command_common(uint8_t cmd)</div><div class="ttdoc">Command sending function. </div><div class="ttdef"><b>Definition:</b> <a href="dc_8c_source.html#l00189">dc.c:189</a></div></div>
 <div class="ttc" id="dc_8h_html_a5bcad6137b0e9f54ae973b52e8a94d34a6f7a704df22428ad15570dee4f1337b8"><div class="ttname"><a href="dc_8h.html#a5bcad6137b0e9f54ae973b52e8a94d34a6f7a704df22428ad15570dee4f1337b8">DC_WIDER</a></div><div class="ttdef"><b>Definition:</b> <a href="dc_8h_source.html#l00102">dc.h:102</a></div></div>
 <div class="ttc" id="dc_8h_html_a5bcad6137b0e9f54ae973b52e8a94d34a6cbe5146993a6196dec9f8f4134a55c3"><div class="ttname"><a href="dc_8h.html#a5bcad6137b0e9f54ae973b52e8a94d34a6cbe5146993a6196dec9f8f4134a55c3">DC_OFF</a></div><div class="ttdef"><b>Definition:</b> <a href="dc_8h_source.html#l00116">dc.h:116</a></div></div>
 <div class="ttc" id="types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00014">types.h:14</a></div></div>
-<div class="ttc" id="dc_8c_html_a2a976ddc273dfdd99eb8638c364e9305"><div class="ttname"><a href="dc_8c.html#a2a976ddc273dfdd99eb8638c364e9305">dc_periodic</a></div><div class="ttdeci">void dc_periodic(void)</div><div class="ttdoc">periodic function </div><div class="ttdef"><b>Definition:</b> <a href="dc_8c_source.html#l00259">dc.c:259</a></div></div>
+<div class="ttc" id="dc_8c_html_a2a976ddc273dfdd99eb8638c364e9305"><div class="ttname"><a href="dc_8c.html#a2a976ddc273dfdd99eb8638c364e9305">dc_periodic</a></div><div class="ttdeci">void dc_periodic(void)</div><div class="ttdoc">periodic function </div><div class="ttdef"><b>Definition:</b> <a href="dc_8c_source.html#l00273">dc.c:273</a></div></div>
 <div class="ttc" id="video__cam__ctrl_8c_html_a833f16388be36136f5d7d173200d5e95"><div class="ttname"><a href="video__cam__ctrl_8c.html#a833f16388be36136f5d7d173200d5e95">dc_send_command</a></div><div class="ttdeci">void dc_send_command(uint8_t cmd)</div><div class="ttdoc">Send Command To Camera. </div><div class="ttdef"><b>Definition:</b> <a href="video__cam__ctrl_8c_source.html#l00050">video_cam_ctrl.c:50</a></div></div>
 <div class="ttc" id="video__cam__ctrl_8h_html"><div class="ttname"><a href="video__cam__ctrl_8h.html">video_cam_ctrl.h</a></div><div class="ttdoc">Digital Camera Control: controls triggering of an embedded digital camera on a linux based autopilot...</div></div>
 <div class="ttc" id="dc_8h_html_a5bcad6137b0e9f54ae973b52e8a94d34ae9e8886c0133a5c0d77247fc37ce51d5"><div class="ttname"><a href="dc_8h.html#a5bcad6137b0e9f54ae973b52e8a94d34ae9e8886c0133a5c0d77247fc37ce51d5">DC_ON</a></div><div class="ttdef"><b>Definition:</b> <a href="dc_8h_source.html#l00115">dc.h:115</a></div></div>
 <div class="ttc" id="video__capture_8h_html"><div class="ttname"><a href="video__capture_8h.html">video_capture.h</a></div></div>
-<div class="ttc" id="dc_8c_html_aaf0625fed2e489322c40c4b2a1904e9a"><div class="ttname"><a href="dc_8c.html#aaf0625fed2e489322c40c4b2a1904e9a">dc_send_shot_position</a></div><div class="ttdeci">void dc_send_shot_position(void)</div><div class="ttdoc">Send Down the coordinates of where the photo was taken. </div><div class="ttdef"><b>Definition:</b> <a href="dc_8c_source.html#l00099">dc.c:99</a></div></div>
+<div class="ttc" id="dc_8c_html_aaf0625fed2e489322c40c4b2a1904e9a"><div class="ttname"><a href="dc_8c.html#aaf0625fed2e489322c40c4b2a1904e9a">dc_send_shot_position</a></div><div class="ttdeci">void dc_send_shot_position(void)</div><div class="ttdoc">Send Down the coordinates of where the photo was taken. </div><div class="ttdef"><b>Definition:</b> <a href="dc_8c_source.html#l00104">dc.c:104</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_9cd42eb44f1e76fa7c8c7cd9c9a53863.html">digital_cam</a></li><li class="navelem"><a class="el" href="video__cam__ctrl_8c.html">video_cam_ctrl.c</a></li>
-    <li class="footer">Generated on Wed Sep 12 2018 02:02:46 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:02:23 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

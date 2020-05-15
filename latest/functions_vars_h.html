@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -153,11 +153,13 @@ $(document).ready(function(){initNavTree('functions_vars_h.html','');});
 </li>
 <li>H
 : <a class="el" href="discrete__ekf_8h.html#ab34a232ddad862ee2580de8262a5538e">discrete_ekf</a>
+, <a class="el" href="discrete__ekf__no__north_8h.html#a2e6c1f9323058b89f6a553d72bbcda9b">discrete_ekf_no_north</a>
 </li>
 <li>h
 : <a class="el" href="image_8h.html#a8bcdc857e2b3c08194113808ca2af345">image_t</a>
 , <a class="el" href="image_8h.html#a2d0ef72360af768d9f092c30a9b27cde">img_size_t</a>
 , <a class="el" href="v4l2_8h.html#a5e0811e2fc67026489c4df52143e502e">v4l2_device</a>
+, <a class="el" href="jevois__mavlink_8c.html#a789434a901eb0c80d2e5936b56cf177f">visual_target_struct</a>
 </li>
 <li>H11
 : <a class="el" href="gvf_8h.html#a5c243f0327a00d343092bec6d8462d92">gvf_Hess</a>
@@ -190,7 +192,7 @@ $(document).ready(function(){initNavTree('functions_vars_h.html','');});
 : <a class="el" href="vi_8h.html#a162939a96b3aa3f484ac56972b3ed848">Vi_command</a>
 </li>
 <li>h_sp
-: <a class="el" href="vi_8h.html#a3a3ffcacc9fabd63d14b03f8ce6c5a4c">Vi_command</a>
+: <a class="el" href="vi_8h.html#ab539abd4d3aa18929e44cd1efc8b0203">Vi_command</a>
 </li>
 <li>h_speed_dir_f
 : <a class="el" href="group__state__velocity.html#ga97af69f9c2d848327057cc3217686459">State</a>
@@ -204,8 +206,17 @@ $(document).ready(function(){initNavTree('functions_vars_h.html','');});
 <li>h_speed_norm_i
 : <a class="el" href="group__state__velocity.html#gaf48f5067a628c4c8b45df0b6537506f9">State</a>
 </li>
+<li>hacc
+: <a class="el" href="gps_8h.html#a507f711c224173c17a15e645a21befcd">GpsState</a>
+</li>
 <li>has_irq
 : <a class="el" href="cyrf6936_8h.html#a87b76fe274cbf7fe1b83e21414a6f520">Cyrf6936</a>
+</li>
+<li>hatx
+: <a class="el" href="1e__filter_8h.html#a7586498c0b9f279b3ebbd53849ce13d8">OneEuroLPFilter</a>
+</li>
+<li>hatxprev
+: <a class="el" href="1e__filter_8h.html#a5589142153f4bf4304caa1656581bd1b">OneEuroLPFilter</a>
 </li>
 <li>have_gsv
 : <a class="el" href="gps__nmea_8h.html#a99b0ded0280ca9724ad010e9bdd23d07">GpsNmea</a>
@@ -230,6 +241,7 @@ $(document).ready(function(){initNavTree('functions_vars_h.html','');});
 : <a class="el" href="gvf__line_8h.html#a77a6037f5222793c0cd5728b00da269b">gvf_li_par</a>
 , <a class="el" href="rotorcraft_2guidance_2guidance__h_8h.html#a902dfeb0c0690d6b80c472b1ae695f61">HorizontalGuidanceSetpoint</a>
 , <a class="el" href="rover__guidance_8h.html#a7247860f15a50036841fc55eee654b25">RoverGuidanceSetpoint</a>
+, <a class="el" href="rover__guidance__holonomic_8h.html#a8a6e4c9345d49c35cd6285cc3f2cbf58">RoverHoloGuidanceSetpoint</a>
 , <a class="el" href="rover_2navigation_8h.html#aa94f83fda4e627ae4f187501e5cfa6af">RoverNavigation</a>
 </li>
 <li>heading_aligned
@@ -249,8 +261,14 @@ $(document).ready(function(){initNavTree('functions_vars_h.html','');});
 <li>heap
 : <a class="el" href="msg__queue_8h.html#acf821510b9c205a9ecc50e269877f91f">MsgQueue</a>
 </li>
+<li>heap_fragments
+: <a class="el" href="sys__mon__rtos_8h.html#a990b699965a8b565266d73ba82235518">rtos_monitoring</a>
+</li>
 <li>heap_free_memory
 : <a class="el" href="sys__mon__rtos_8h.html#a4508640470b961fb3d1e9a5b0f522ef3">rtos_monitoring</a>
+</li>
+<li>heap_largest
+: <a class="el" href="sys__mon__rtos_8h.html#af6d3f10096fb7c3814f675486f163363">rtos_monitoring</a>
 </li>
 <li>height
 : <a class="el" href="pano__unwrap_8h.html#a9f0437a3747e1b1343b638cd649afbef">pano_unwrap_t</a>
@@ -309,6 +327,7 @@ $(document).ready(function(){initNavTree('functions_vars_h.html','');});
 </li>
 <li>Ht
 : <a class="el" href="discrete__ekf_8h.html#aa64b422c775f4769d485963f91ffe905">discrete_ekf</a>
+, <a class="el" href="discrete__ekf__no__north_8h.html#ac08b4d925c70c25607ad5130d0c8434c">discrete_ekf_no_north</a>
 </li>
 <li>hum
 : <a class="el" href="humid__pcap01_8h.html#a88baa0786a9b65f51bf2d07a8caea575">PCAP01VALUE</a>
@@ -331,7 +350,7 @@ $(document).ready(function(){initNavTree('functions_vars_h.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Sep 12 2018 02:04:30 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:04:08 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

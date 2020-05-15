@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -163,6 +163,7 @@ $(document).ready(function(){initNavTree('functions_y.html','');});
 , <a class="el" href="group__math__geodetic__int.html#a2c2e76b483141c5e864e7367ae2d0b69">EnuCoor_i</a>
 , <a class="el" href="group__math__algebra__float.html#aff743c76e4a26ffde83e0c7d05457669">FloatVect2</a>
 , <a class="el" href="group__math__algebra__float.html#ac5e44e02fe71768bf56eb39a14f3cc5b">FloatVect3</a>
+, <a class="el" href="snake__gate__detection_8h.html#aad7ca927df9bf665e0b7e563999cb448">gate_img</a>
 , <a class="el" href="hf__float_8h.html#a18b85c18ddbcb7d5344995a69729d8d9">HfilterFloat</a>
 , <a class="el" href="group__math__algebra__int.html#a94c27a1497ced3c4bdb95a2245733386">Int16Vect3</a>
 , <a class="el" href="group__math__algebra__int.html#a0945fb6906f0eaba2bfdb5c2fefdb051">Int32Vect2</a>
@@ -180,6 +181,8 @@ $(document).ready(function(){initNavTree('functions_y.html','');});
 , <a class="el" href="image_8h.html#a80f418915de01685d364a9ce7038eae7">point_t</a>
 , <a class="el" href="group__math__algebra__int.html#a4bd157d39e9f48e613c59c45094165c7">Uint16Vect3</a>
 , <a class="el" href="group__math__algebra__int.html#aea3adc5098c7d73f1d16c02790df54cd">Uint8Vect3</a>
+, <a class="el" href="jevois__mavlink_8c.html#a442e1a0a03148b6d9823dc4429ddd4e2">vision_relative_position_struct</a>
+, <a class="el" href="jevois__mavlink_8c.html#aa65d3f577c2a6c132e5d2a364ffa34b2">visual_target_struct</a>
 </li>
 <li>y1
 : <a class="el" href="gvf_8h.html#a9e9e083b66cd2aa620614c7fc1f1c059">gvf_seg</a>
@@ -192,6 +195,12 @@ $(document).ready(function(){initNavTree('functions_y.html','');});
 </li>
 <li>Y2
 : <a class="el" href="jpeg_8c.html#a0c520302a7b0853f6da3b0e5bb5a957d">JPEG_ENCODER_STRUCTURE</a>
+</li>
+<li>y_c
+: <a class="el" href="cv__detect__color__object_8c.html#a4e9c4f2a03fcd6b323e5fea7764b812e">color_object_t</a>
+</li>
+<li>y_corners
+: <a class="el" href="snake__gate__detection_8h.html#ab91652886737bcd921e3293a9a953aef">gate_img</a>
 </li>
 <li>y_max
 : <a class="el" href="blob__finder_8h.html#a3a89a2567fb4f97b2727b9033c4bb07a">image_filter_t</a>
@@ -213,7 +222,9 @@ $(document).ready(function(){initNavTree('functions_y.html','');});
 : <a class="el" href="blob__finder_8h.html#aecdaf9e4e79cdea29bc5aa2867332dbd">image_label_t</a>
 </li>
 <li>yaw
-: <a class="el" href="nps__radio__control__joystick_8h.html#a40a2af93b7ff4468e8bf392c5eb16214">NpsJoystick</a>
+: <a class="el" href="crtp_8h.html#a7a5772de4d15e4d12f1de6127b20a0ed">crtp_commander</a>
+, <a class="el" href="joystick_8h.html#a96ef4a24cdb1f844b2d263536e6283a8">Joystick</a>
+, <a class="el" href="nps__radio__control__joystick_8h.html#a40a2af93b7ff4468e8bf392c5eb16214">NpsJoystick</a>
 , <a class="el" href="nps__radio__control_8h.html#a564450a4d8766f1aeab0049f3081d584">NpsRadioControl</a>
 </li>
 <li>yaw_accel
@@ -275,7 +286,7 @@ $(document).ready(function(){initNavTree('functions_y.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Sep 12 2018 02:04:30 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:04:08 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

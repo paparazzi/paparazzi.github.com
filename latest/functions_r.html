@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -149,6 +149,7 @@ $(document).ready(function(){initNavTree('functions_r.html','');});
 <h3><a class="anchor" id="index_r"></a>- r -</h3><ul>
 <li>R
 : <a class="el" href="discrete__ekf_8h.html#a28978b9ad461c37b57ebbff8605c074e">discrete_ekf</a>
+, <a class="el" href="discrete__ekf__no__north_8h.html#ac191f4362bf2ab393bdcd023048fa0e8">discrete_ekf_no_north</a>
 </li>
 <li>r
 : <a class="el" href="group__math__algebra__double.html#a7900fc423e0731a60ec3b3a502cef75a">DoubleRates</a>
@@ -187,6 +188,9 @@ $(document).ready(function(){initNavTree('functions_r.html','');});
 <li>r_baro
 : <a class="el" href="vf__extended__float_8h.html#aa3fc06dc1683bdd102abe1a5319159d0">VffExtended</a>
 </li>
+<li>R_dist
+: <a class="el" href="ekf__range_8h.html#a560a013eb6551e3645066048454b6bcf">EKFRange</a>
+</li>
 <li>r_gs
 : <a class="el" href="wind__estimator_8h.html#af6999f1a80539747eab60fcf5fc74c89">WindEstimator</a>
 </li>
@@ -206,7 +210,8 @@ $(document).ready(function(){initNavTree('functions_r.html','');});
 : <a class="el" href="humid__pcap01_8h.html#a933b4f75095de534245fa8c17450358c">PCAP01VALUE</a>
 </li>
 <li>R_speed
-: <a class="el" href="ins__mekf__wind_8h.html#ae774f49c18651b4a8e06aee01eaa3dc8">ins_mekf_wind_parameters</a>
+: <a class="el" href="ekf__range_8h.html#aa7ad0bf31d355a2550e3d590e7aa9cc0">EKFRange</a>
+, <a class="el" href="ins__mekf__wind_8h.html#ae774f49c18651b4a8e06aee01eaa3dc8">ins_mekf_wind_parameters</a>
 </li>
 <li>R_speed_z
 : <a class="el" href="ins__mekf__wind_8h.html#af8e0ef1c9cb730040f7b04a0e722b47d">ins_mekf_wind_parameters</a>
@@ -216,6 +221,9 @@ $(document).ready(function(){initNavTree('functions_r.html','');});
 </li>
 <li>r_va
 : <a class="el" href="wind__estimator_8h.html#a30d4140a84279d04c9d9d8c78ece4ab7">WindEstimator</a>
+</li>
+<li>rad_per_px
+: <a class="el" href="pmw3901_8h.html#a5671dbc434443fd63baec641a5bdfd77">pmw3901_t</a>
 </li>
 <li>rad_vec
 : <a class="el" href="nav__survey__polygon__gvf_8h.html#a1ae698850af32b6c5389ca83974b7104">gvf_SurveyPolyAdv</a>
@@ -259,6 +267,9 @@ $(document).ready(function(){initNavTree('functions_r.html','');});
 : <a class="el" href="adxl345_8h.html#a6ee5db11ac7e24698803d3f5b1ec54fb">Adxl345Config</a>
 , <a class="el" href="lis302dl_8h.html#a1ab5aabe3d4b190c295dafe3a71bf512">Lis302dlConfig</a>
 </li>
+<li>ranger
+: <a class="el" href="cf__deck__multi__ranger_8c.html#a8a5ae2a84e308ef61afc732ce48e8c3c">cf_deck_multi_ranger</a>
+</li>
 <li>rate
 : <a class="el" href="ads1220_8h.html#aa83f442c99323ee0a26404fce288a80d">Ads1220Config</a>
 , <a class="el" href="adxl345_8h.html#a3ddf6d2e394d53c1d7e329fcf9565f80">Adxl345Config</a>
@@ -274,6 +285,7 @@ $(document).ready(function(){initNavTree('functions_r.html','');});
 , <a class="el" href="lis302dl_8h.html#a93e37ac2c058099170f9fb09ab10388b">Lis302dlConfig</a>
 , <a class="el" href="lsm303dlhc_8h.html#ae3150afe089fea5a37ac0070f741ed5c">Lsm303dlhcAccConfig</a>
 , <a class="el" href="lsm303dlhc_8h.html#a69c3816e0ccb8bd6a262050890c12c0f">Lsm303dlhcMagConfig</a>
+, <a class="el" href="1e__filter_8h.html#acb8bd51404b44ff979bcfe380de3e821">OneEuroFilter</a>
 , <a class="el" href="vi_8h.html#a66c48ea7afc8ba945d04e182efa49641">Vi_ahrs_info</a>
 </li>
 <li>rate_correction
@@ -301,7 +313,8 @@ $(document).ready(function(){initNavTree('functions_r.html','');});
 : <a class="el" href="group__state__rate.html#gaeae71089ee6e103c1f8ca1211cfaf039">State</a>
 </li>
 <li>rates
-: <a class="el" href="UKF__Wind__Estimator_8h.html#abe9dd0551a1db9152024ce5d7afa70f7">ExtU</a>
+: <a class="el" href="ahrs__madgwick_8h.html#a7a7cc12e020fe99d43c452dc36cd2432">AhrsMadgwick</a>
+, <a class="el" href="UKF__Wind__Estimator_8h.html#abe9dd0551a1db9152024ce5d7afa70f7">ExtU</a>
 , <a class="el" href="ins__float__invariant_8h.html#ac8379cd7f1ff242335392e03c0926f19">inv_command</a>
 , <a class="el" href="ins__mekf__wind_8cpp.html#a6068edc217bb281f14b6f78e3b4a4263">MekfWindInputs</a>
 , <a class="el" href="pose__history_8h.html#a08ca71549471f2eb45159e79df960e39">pose_t</a>
@@ -320,11 +333,28 @@ $(document).ready(function(){initNavTree('functions_r.html','');});
 , <a class="el" href="aoa__pwm_8h.html#ae4402220d13d53d3ef4072ed99ffc49d">Aoa_Pwm</a>
 , <a class="el" href="teraranger__one_8h.html#aaa2a3aad8c5ec635e6c08ed410f5220a">TeraRanger</a>
 </li>
+<li>raw_data
+: <a class="el" href="actuators__ostrich_8c.html#ae82f2f7a727cf9fdede9db04b0490c7b">SpeedMessage</a>
+</li>
+<li>raw_dist
+: <a class="el" href="dw1000__arduino_8c.html#ae414ba62b7912d1fc39e18fed97326a3">DW1000</a>
+, <a class="el" href="tfmini_8h.html#a728227207b9ff0fef5272d0052e5c2f8">TFMini</a>
+</li>
 <li>raw_mode
 : <a class="el" href="mpl3115_8h.html#a810209da510549a841e257a24bb78f88">Mpl3115</a>
+, <a class="el" href="tfmini_8h.html#a6c9ddb41b27b666bc8327414c995a90b">TFMini</a>
 </li>
-<li>raw_pos
-: <a class="el" href="dw1000__arduino_8c.html#affd2671fa744f0f89a1ce33354c10cca">DW1000</a>
+<li>raw_pressure
+: <a class="el" href="bmp3__i2c_8h.html#ad3b29b4edab8feee9a651ae3c3330745">Bmp3_I2c</a>
+</li>
+<li>raw_strength
+: <a class="el" href="tfmini_8h.html#a8d5e95adc5af3bedd9b218d98a1e0a67">TFMini</a>
+</li>
+<li>raw_temperature
+: <a class="el" href="bmp3__i2c_8h.html#ad26f8e75b4b06a1ab031644d6e7c497a">Bmp3_I2c</a>
+</li>
+<li>rawFrame
+: <a class="el" href="esc__dshot_8h.html#aa3ecaaae4a4c4a3ca6d5bbcf8771fe34">DshotPacket</a>
 </li>
 <li>rawIntr
 : <a class="el" href="lpcVIC_8h.html#aabed983c593fd977a94ce2989bc74ce2">vicRegs_t</a>
@@ -390,9 +420,20 @@ $(document).ready(function(){initNavTree('functions_r.html','');});
 <li>read_state
 : <a class="el" href="gps__sirf_8h.html#a212d0d48af03650bdfc9f37c756e3a57">GpsSirf</a>
 , <a class="el" href="gps__ubx__i2c_8h.html#add57d89bc7e4c47d1f16465ff9966bf0">GpsUbxI2C</a>
+, <a class="el" href="cf__deck__multi__ranger_8c.html#a62ed5cc0798a3630335ca9f8fdee59bf">SingleRanger</a>
+, <a class="el" href="sonar__vl53l1x_8h.html#afeb86020e9b31caca073f7a8a92ff56f">sonar_vl53l1x_dev</a>
+</li>
+<li>read_status
+: <a class="el" href="vl53l1__platform_8h.html#a391272193ae9fb2bf1bccddfb6d817e5">VL53L1_Dev_t</a>
 </li>
 <li>read_trans
 : <a class="el" href="ms2100_8h.html#a449ba9e4203acdf5a75fc85c8b26e671">Ms2100</a>
+</li>
+<li>readwrite_state
+: <a class="el" href="pmw3901_8h.html#a4333d500db1d2e8968a2dba664fe0686">pmw3901_t</a>
+</li>
+<li>readwrite_timeout
+: <a class="el" href="pmw3901_8h.html#ac1ed5f76696d6c5f9ffdf1594f876fde">pmw3901_t</a>
 </li>
 <li>ready
 : <a class="el" href="gec_8h.html#acd296ce7bbf2f90ee0b183902ff452be">gec_privkey</a>
@@ -411,6 +452,10 @@ $(document).ready(function(){initNavTree('functions_r.html','');});
 </li>
 <li>rec_chk
 : <a class="el" href="vn200__serial_8h.html#ad3ffe6c397b02a34f371ef749a9338d4">VNPacket</a>
+</li>
+<li>received
+: <a class="el" href="jevois__mavlink_8c.html#a4cf709cf207a96a93d65d6e229a37773">vision_relative_position_struct</a>
+, <a class="el" href="jevois__mavlink_8c.html#af16bfcda9e4fa37ee534641efdfc89de">visual_target_struct</a>
 </li>
 <li>reconfigured_or_reset_event
 : <a class="el" href="usb__msd_8h.html#a1ce213f8139ef38c8047e4f52a6f0ed5">USBMassStorageDriver</a>
@@ -431,6 +476,12 @@ $(document).ready(function(){initNavTree('functions_r.html','');});
 </li>
 <li>ref_ltp
 : <a class="el" href="gps__skytraq_8h.html#a72009b3f638ff38b068b37447c25179b">GpsSkytraq</a>
+</li>
+<li>ref_px
+: <a class="el" href="ctc_8h.html#a2da2a6c4844a3d097f9f935522692868">ctc_con</a>
+</li>
+<li>ref_py
+: <a class="el" href="ctc_8h.html#abbb897f22a160062468c765c3c881479">ctc_con</a>
 </li>
 <li>reference
 : <a class="el" href="structIndiController__int.html#a053595e6dba820bac8537d74ed7c6a3a">IndiController_int</a>
@@ -526,6 +577,7 @@ $(document).ready(function(){initNavTree('functions_r.html','');});
 </li>
 <li>reset
 : <a class="el" href="ahrs__float__invariant_8h.html#a89a463404ab94fd2d2aaa3e231843484">AhrsFloatInv</a>
+, <a class="el" href="ahrs__madgwick_8h.html#a3609652e32f7fcab0e9f066c30da848b">AhrsMadgwick</a>
 , <a class="el" href="gps_8h.html#ae9f9449dccc1b1f9404d44246245ef7b">GpsState</a>
 , <a class="el" href="ins__float__invariant_8h.html#ac48ef2a166a17a08fda2b82732fbb011">InsFloatInv</a>
 , <a class="el" href="ins__mekf__wind__wrapper_8h.html#aff87f8fc17eb5e6c5f2ada53bb2a1862">InsMekfWind</a>
@@ -588,6 +640,7 @@ $(document).ready(function(){initNavTree('functions_r.html','');});
 </li>
 <li>revision
 : <a class="el" href="config__mkk__v2_8h.html#a588696b2ea1f443f8bdfde51a21ebc90">config_mkk_v2_eeprom_t</a>
+, <a class="el" href="vl53l1x__api_8h.html#a863c15a6ed6b8fca8cbd5b17c36e5f61">VL53L1X_Version_t</a>
 </li>
 <li>rgrim_conf
 : <a class="el" href="avi__isp__dead__pixel__correction_8h.html#a45e416c87ef9cf45a65bd0398dd0024f">avi_isp_dead_pixel_correction_regs</a>
@@ -627,7 +680,9 @@ $(document).ready(function(){initNavTree('functions_r.html','');});
 : <a class="el" href="group__math__orientation__representation.html#ac3014e532f5ca710919668e1dd48c791">OrientationReps</a>
 </li>
 <li>roll
-: <a class="el" href="infrared_8h.html#a14240b7cc3650b62e82d45af3082ed78">Infrared</a>
+: <a class="el" href="crtp_8h.html#a10f598910fe22691187653dbda03bd2c">crtp_commander</a>
+, <a class="el" href="infrared_8h.html#a14240b7cc3650b62e82d45af3082ed78">Infrared</a>
+, <a class="el" href="joystick_8h.html#a37d738c05aca156b3f7b12fc5a3a2b4c">Joystick</a>
 , <a class="el" href="nps__radio__control__joystick_8h.html#ae292d822bc3c21ee30006df37d7e225e">NpsJoystick</a>
 , <a class="el" href="nps__radio__control_8h.html#ab5a5474c2a7f030e4da8c4e93e7c5cc4">NpsRadioControl</a>
 </li>
@@ -717,6 +772,7 @@ $(document).ready(function(){initNavTree('functions_r.html','');});
 </li>
 <li>rssi
 : <a class="el" href="rssi_8h.html#a3350b1b148515a8749e174ba50a7123d">rssi_info_</a>
+, <a class="el" href="syslink__dl_8h.html#a166e1226c31bb09d5d0da8240e767c63">syslink_dl</a>
 </li>
 <li>rtcm3_msg_callbacks_head
 : <a class="el" href="rtcm3_8h.html#ae5e507b1eaf9ee31bf431d5b4f550229">msg_state_t</a>
@@ -751,6 +807,7 @@ $(document).ready(function(){initNavTree('functions_r.html','');});
 , <a class="el" href="mpu9250__spi_8h.html#a57ba0ec6721b8de24d5781dbc4b4ba13">Mpu9250_Spi</a>
 , <a class="el" href="ms5611__spi_8h.html#a5e59eb056cb6beebe8ef0c9c4ef8ff97">Ms5611_Spi</a>
 , <a class="el" href="pipe_8h.html#a4ef04436e6981ebc8f0e2380b9307add">pipe_periph</a>
+, <a class="el" href="syslink__dl_8h.html#a90340ec9c2953d98a083e664da9ec9d4">syslink_dl</a>
 , <a class="el" href="uart_8h.html#aae582e1021f8139f7461a80477d1dc5b">uart_periph</a>
 , <a class="el" href="udp_8h.html#a75dd33c180ab1fc9d45631a845917f34">udp_periph</a>
 , <a class="el" href="w5100_8h.html#af0dc6d17a069ba3ff67be8c179521ad1">w5100_periph</a>
@@ -785,6 +842,7 @@ $(document).ready(function(){initNavTree('functions_r.html','');});
 <li>rx_extract_idx
 : <a class="el" href="bluegiga_8h.html#ada70c31afc00bcaee03ae9d35bc62abf">bluegiga_periph</a>
 , <a class="el" href="pipe_8h.html#adb59987518585d02c82636696978716c">pipe_periph</a>
+, <a class="el" href="syslink__dl_8h.html#a72c0afd9d631f337ef73d39738ec9843">syslink_dl</a>
 , <a class="el" href="uart_8h.html#a8f5faa6ee1d323375397db0a68603845">uart_periph</a>
 , <a class="el" href="udp_8h.html#a797ef67198f778a9e1e8fa7308904060">udp_periph</a>
 , <a class="el" href="w5100_8h.html#ad086f4b881aac56f267d9b023290ec48">w5100_periph</a>
@@ -795,6 +853,7 @@ $(document).ready(function(){initNavTree('functions_r.html','');});
 <li>rx_insert_idx
 : <a class="el" href="bluegiga_8h.html#ad6310f22962bac6e1b08734026cb3e64">bluegiga_periph</a>
 , <a class="el" href="pipe_8h.html#ac35b89a6715358d72b6b6fa23d4f4ba0">pipe_periph</a>
+, <a class="el" href="syslink__dl_8h.html#a6d058a249e9a5af67c60ee8cd35da3c8">syslink_dl</a>
 , <a class="el" href="uart_8h.html#a07e22f6950e141077f44b435852f1f84">uart_periph</a>
 , <a class="el" href="udp_8h.html#a936a30a772b3443d05b141faf341300d">udp_periph</a>
 , <a class="el" href="w5100_8h.html#a33b15365ada9320dc9de04eb8af3ec19">w5100_periph</a>
@@ -841,7 +900,7 @@ $(document).ready(function(){initNavTree('functions_r.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Sep 12 2018 02:04:30 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:04:08 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

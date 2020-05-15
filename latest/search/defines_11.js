@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['q311',['Q311',['../libisp__config_8h.html#ac6bef058edef9d016b5226c7a855f833',1,'libisp_config.h']]],
   ['qbiasbias',['Qbiasbias',['../vf__extended__float_8c.html#a70f5ca9eb3931cae7b39b297ec278141',1,'Qbiasbias():&#160;vf_extended_float.c'],['../vf__float_8c.html#a70f5ca9eb3931cae7b39b297ec278141',1,'Qbiasbias():&#160;vf_float.c']]],
   ['qobsobs',['Qobsobs',['../vf__extended__float_8c.html#a52e0d9124b7113e0de1860150cc1a1ef',1,'vf_extended_float.c']]],
   ['qoffoff',['Qoffoff',['../vf__extended__float_8c.html#a4a8d9b629f50078fdc06fbc3b5a535f8',1,'vf_extended_float.c']]],

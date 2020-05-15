@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -151,7 +151,7 @@ $(document).ready(function(){initNavTree('meteo__france__DAQ_8h_source.html','')
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="meteo__france__DAQ_8h.html#abf2a8b9cc259a9b8a1d99b673ad183d2">init_mf_daq</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="meteo__france__DAQ_8h.html#a428cd9287f9e24f69dd92d696e0a053a">mf_daq_send_state</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="meteo__france__DAQ_8h.html#a7a8ff2febc3dc7e6c36a1894755b7b8b">mf_daq_send_report</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="meteo__france__DAQ_8h.html#ac95d521856a9424097d05f67c635c10e">parse_mf_daq_msg</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="meteo__france__DAQ_8h.html#a5eac3ac3a7ca67f41b81350f2d0f7f0d">parse_mf_daq_msg</a>(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf);</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#if (defined MF_DAQ_POWER_PORT) &amp;&amp; (defined MF_DAQ_POWER_PIN)</span></div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#define meteo_france_DAQ_SetPower(_x) { \</span></div>
@@ -165,12 +165,12 @@ $(document).ready(function(){initNavTree('meteo__france__DAQ_8h_source.html','')
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="ttc" id="meteo__france__DAQ_8h_html_a5eac3ac3a7ca67f41b81350f2d0f7f0d"><div class="ttname"><a href="meteo__france__DAQ_8h.html#a5eac3ac3a7ca67f41b81350f2d0f7f0d">parse_mf_daq_msg</a></div><div class="ttdeci">void parse_mf_daq_msg(uint8_t *buf)</div><div class="ttdef"><b>Definition:</b> <a href="meteo__france__DAQ_8c_source.html#l00118">meteo_france_DAQ.c:118</a></div></div>
 <div class="ttc" id="gpio_8h_html"><div class="ttname"><a href="gpio_8h.html">gpio.h</a></div><div class="ttdoc">Some architecture independent helper functions for GPIOs. </div></div>
 <div class="ttc" id="meteo__france__DAQ_8h_html_a5b714423089337cc0badeb175cd27caf"><div class="ttname"><a href="meteo__france__DAQ_8h.html#a5b714423089337cc0badeb175cd27caf">MF_DAQ_SIZE</a></div><div class="ttdeci">#define MF_DAQ_SIZE</div><div class="ttdef"><b>Definition:</b> <a href="meteo__france__DAQ_8h_source.html#l00041">meteo_france_DAQ.h:41</a></div></div>
 <div class="ttc" id="meteo__france__DAQ_8h_html_ac6480b94865f30f33996f7cb72a45554"><div class="ttname"><a href="meteo__france__DAQ_8h.html#ac6480b94865f30f33996f7cb72a45554">mf_daq</a></div><div class="ttdeci">struct MF_DAQ mf_daq</div><div class="ttdef"><b>Definition:</b> <a href="meteo__france__DAQ_8c_source.html#l00046">meteo_france_DAQ.c:46</a></div></div>
 <div class="ttc" id="meteo__france__DAQ_8h_html_abf2a8b9cc259a9b8a1d99b673ad183d2"><div class="ttname"><a href="meteo__france__DAQ_8h.html#abf2a8b9cc259a9b8a1d99b673ad183d2">init_mf_daq</a></div><div class="ttdeci">void init_mf_daq(void)</div><div class="ttdef"><b>Definition:</b> <a href="meteo__france__DAQ_8c_source.html#l00057">meteo_france_DAQ.c:57</a></div></div>
 <div class="ttc" id="meteo__france__DAQ_8h_html_a428cd9287f9e24f69dd92d696e0a053a"><div class="ttname"><a href="meteo__france__DAQ_8h.html#a428cd9287f9e24f69dd92d696e0a053a">mf_daq_send_state</a></div><div class="ttdeci">void mf_daq_send_state(void)</div><div class="ttdef"><b>Definition:</b> <a href="meteo__france__DAQ_8c_source.html#l00068">meteo_france_DAQ.c:68</a></div></div>
-<div class="ttc" id="meteo__france__DAQ_8h_html_ac95d521856a9424097d05f67c635c10e"><div class="ttname"><a href="meteo__france__DAQ_8h.html#ac95d521856a9424097d05f67c635c10e">parse_mf_daq_msg</a></div><div class="ttdeci">void parse_mf_daq_msg(void)</div><div class="ttdef"><b>Definition:</b> <a href="meteo__france__DAQ_8c_source.html#l00118">meteo_france_DAQ.c:118</a></div></div>
 <div class="ttc" id="std_8h_html"><div class="ttname"><a href="std_8h.html">std.h</a></div></div>
 <div class="ttc" id="meteo__france__DAQ_8h_html_a7a8ff2febc3dc7e6c36a1894755b7b8b"><div class="ttname"><a href="meteo__france__DAQ_8h.html#a7a8ff2febc3dc7e6c36a1894755b7b8b">mf_daq_send_report</a></div><div class="ttdeci">void mf_daq_send_report(void)</div><div class="ttdef"><b>Definition:</b> <a href="meteo__france__DAQ_8c_source.html#l00092">meteo_france_DAQ.c:92</a></div></div>
 <div class="ttc" id="types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00014">types.h:14</a></div></div>
@@ -184,7 +184,7 @@ $(document).ready(function(){initNavTree('meteo__france__DAQ_8h_source.html','')
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_dcc9af59dc35b42e32db80b18066e136.html">meteo</a></li><li class="navelem"><a class="el" href="meteo__france__DAQ_8h.html">meteo_france_DAQ.h</a></li>
-    <li class="footer">Generated on Wed Sep 12 2018 02:02:49 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:02:26 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -115,6 +115,8 @@ var px4fmu__2_84_8h =
     [ "SPI_SELECT_SLAVE3_PORT", "px4fmu__2_84_8h.html#aaf1f83e1cd34b94de35fbbaaa7f6cb46", null ],
     [ "SPI_SELECT_SLAVE4_PIN", "px4fmu__2_84_8h.html#aaaf3b422873946314dfec6703a3a5580", null ],
     [ "SPI_SELECT_SLAVE4_PORT", "px4fmu__2_84_8h.html#a68d301edae4fbbd1f4a7e9de1a9252b1", null ],
+    [ "SPI_SELECT_SLAVE5_PIN", "px4fmu__2_84_8h.html#a045b009e33c6c53c43c8ff352a2fd507", null ],
+    [ "SPI_SELECT_SLAVE5_PORT", "px4fmu__2_84_8h.html#a0bb8407cbad582149d6c82588b77f100", null ],
     [ "UART2_GPIO_AF", "px4fmu__2_84_8h.html#a362880424997bf76d4e742c8c8504014", null ],
     [ "UART2_GPIO_PORT_RX", "px4fmu__2_84_8h.html#a5ab66f34d0a05ab9b8080edaed3ddaa3", null ],
     [ "UART2_GPIO_PORT_TX", "px4fmu__2_84_8h.html#aeb4ce4f4e6b86ab0a18edffac8f7ae70", null ],

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -154,9 +154,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a9a552cafb117e80a56acc9e51e4f1def"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2mcu__periph_2pipe__arch_8c.html#a9a552cafb117e80a56acc9e51e4f1def">pipe_arch_periph_init</a> (struct <a class="el" href="pipe_8h.html#structpipe__periph">pipe_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, char *read_name, char *write_name)</td></tr>
 <tr class="memdesc:a9a552cafb117e80a56acc9e51e4f1def"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the PIPE peripheral.  <a href="#a9a552cafb117e80a56acc9e51e4f1def">More...</a><br /></td></tr>
 <tr class="separator:a9a552cafb117e80a56acc9e51e4f1def"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af31a0e96cc21ae4e2e4a2b5cf63c4316"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2mcu__periph_2pipe__arch_8c.html#af31a0e96cc21ae4e2e4a2b5cf63c4316">pipe_char_available</a> (struct <a class="el" href="pipe_8h.html#structpipe__periph">pipe_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>)</td></tr>
-<tr class="memdesc:af31a0e96cc21ae4e2e4a2b5cf63c4316"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get number of bytes available in receive buffer.  <a href="#af31a0e96cc21ae4e2e4a2b5cf63c4316">More...</a><br /></td></tr>
-<tr class="separator:af31a0e96cc21ae4e2e4a2b5cf63c4316"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9321cb9d258dc7cf5d63c1a826cb4da8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2mcu__periph_2pipe__arch_8c.html#a9321cb9d258dc7cf5d63c1a826cb4da8">pipe_char_available</a> (struct <a class="el" href="pipe_8h.html#structpipe__periph">pipe_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>)</td></tr>
+<tr class="memdesc:a9321cb9d258dc7cf5d63c1a826cb4da8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get number of bytes available in receive buffer.  <a href="#a9321cb9d258dc7cf5d63c1a826cb4da8">More...</a><br /></td></tr>
+<tr class="separator:a9321cb9d258dc7cf5d63c1a826cb4da8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97d6c27da74c8a17a29d7148fa60f0b1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linux_2mcu__periph_2pipe__arch_8c.html#a97d6c27da74c8a17a29d7148fa60f0b1">pipe_getch</a> (struct <a class="el" href="pipe_8h.html#structpipe__periph">pipe_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>)</td></tr>
 <tr class="memdesc:a97d6c27da74c8a17a29d7148fa60f0b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the last character from the receive buffer.  <a href="#a97d6c27da74c8a17a29d7148fa60f0b1">More...</a><br /></td></tr>
 <tr class="separator:a97d6c27da74c8a17a29d7148fa60f0b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -265,12 +265,12 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="af31a0e96cc21ae4e2e4a2b5cf63c4316"></a>
+<a class="anchor" id="a9321cb9d258dc7cf5d63c1a826cb4da8"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> pipe_char_available </td>
+          <td class="memname">int pipe_char_available </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="pipe_8h.html#structpipe__periph">pipe_periph</a> *&#160;</td>
           <td class="paramname"><em>p</em></td><td>)</td>
@@ -297,8 +297,8 @@ Variables</h2></td></tr>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="linux_2mcu__periph_2pipe__arch_8c_af31a0e96cc21ae4e2e4a2b5cf63c4316_icgraph.png" border="0" usemap="#linux_2mcu__periph_2pipe__arch_8c_af31a0e96cc21ae4e2e4a2b5cf63c4316_icgraph" alt=""/></div>
-<map name="linux_2mcu__periph_2pipe__arch_8c_af31a0e96cc21ae4e2e4a2b5cf63c4316_icgraph" id="linux_2mcu__periph_2pipe__arch_8c_af31a0e96cc21ae4e2e4a2b5cf63c4316_icgraph">
+<div class="center"><img src="linux_2mcu__periph_2pipe__arch_8c_a9321cb9d258dc7cf5d63c1a826cb4da8_icgraph.png" border="0" usemap="#linux_2mcu__periph_2pipe__arch_8c_a9321cb9d258dc7cf5d63c1a826cb4da8_icgraph" alt=""/></div>
+<map name="linux_2mcu__periph_2pipe__arch_8c_a9321cb9d258dc7cf5d63c1a826cb4da8_icgraph" id="linux_2mcu__periph_2pipe__arch_8c_a9321cb9d258dc7cf5d63c1a826cb4da8_icgraph">
 <area shape="rect" id="node2" href="pipe_8h.html#a5f5f9bef9c717900a74e9cfa367d70b4" title="Initialize the PIPE peripheral. " alt="" coords="200,5,323,32"/><area shape="rect" id="node3" href="pipe_8h.html#a14ca8427ac6e9b1b03837df635720873" title="Read bytes from PIPE. " alt="" coords="210,56,313,83"/><area shape="rect" id="node4" href="linux_2mcu__periph_2pipe__arch_8c.html#a367d93fecef4749b70739ea1d568c814" title="check for new pipe packets to receive. " alt="" coords="371,56,469,83"/><area shape="rect" id="node5" href="pipe_8h.html#a77593bf739144ac35c87e55646a93685" title="pipe_arch_init" alt="" coords="517,56,628,83"/></map>
 </div>
 </p>
@@ -546,7 +546,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_92fbf38b8c893a0928a3445a75d0ac01.html">linux</a></li><li class="navelem"><a class="el" href="dir_7cedabfb4d36d0fdf06823c7fd9084fc.html">mcu_periph</a></li><li class="navelem"><a class="el" href="linux_2mcu__periph_2pipe__arch_8c.html">pipe_arch.c</a></li>
-    <li class="footer">Generated on Wed Sep 12 2018 02:03:03 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:02:41 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

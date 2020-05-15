@@ -41,12 +41,10 @@ var libisp_8h =
       [ "nb_valid_Y", "libisp_8h.html#ae9114421fe8298c71de229fd985e76b9", null ]
     ] ],
     [ "AVI_DEFINE_NODE", "libisp_8h.html#a60774f434c3ee76e4e69b1e1c0e5ead3", null ],
-    [ "BAYERSTATS_STATX", "libisp_8h.html#ad11ca5e1b8902cd912811f930f0b6b61", null ],
-    [ "BAYERSTATS_STATY", "libisp_8h.html#aacc06d63590a670cb880d5191b41e70b", null ],
     [ "EXPAND_AS_ENUM", "libisp_8h.html#ad337cbf142f664987d730085a31700fe", null ],
     [ "EXPAND_AS_PROTOTYPE", "libisp_8h.html#ade6570385aa26bc1af4ae27bbe05237f", null ],
-    [ "ISP_NODE_NR", "libisp_8h.html#a80155586fa275b28773c9b203f52cabaaefaae75e055095d672aaa23495c16b3f", null ],
+    [ "ISP_NODE_NR", "libisp_8h.html#a6b7b47dd702d9e331586d485013fd1eaaefaae75e055095d672aaa23495c16b3f", null ],
     [ "configure_isp", "libisp_8h.html#a1b23f6d5fe4f4e5c8e38944439156f19", null ],
     [ "isp_get_statistics_yuv", "libisp_8h.html#a5421e059846fd80e5f6bf1bd3ae1bb45", null ],
-    [ "isp_config", "libisp_8h.html#a77ccb6ae1e5fb27837febeb2ce2ab76c", null ]
+    [ "isp_request_statistics_yuv_window", "libisp_8h.html#aac3aeb2b663a02fd97e27007bbfbb95e", null ]
 ];

@@ -2,6 +2,7 @@ var mt9v117__regs_8h =
 [
     [ "MT9V117_ACCESS_CTL_STAT", "mt9v117__regs_8h.html#adfa4d62c1605f201ac7cc74164fa47de", null ],
     [ "MT9V117_ADDRESS", "mt9v117__regs_8h.html#a821614a6d68186e28ea65d7b5f4bbdf6", null ],
+    [ "MT9V117_AE_LUMA", "mt9v117__regs_8h.html#a6ebbc5de2fd86bafba544461db26533e", null ],
     [ "MT9V117_AE_RULE_ALGO_AVERAGE", "mt9v117__regs_8h.html#a94093c425549c3d9e2672ad8a8ef3707", null ],
     [ "MT9V117_AE_RULE_ALGO_OFFSET", "mt9v117__regs_8h.html#acbea1b3aebc894f587b23da5130e5dee", null ],
     [ "MT9V117_AE_RULE_ALGO_WEIGHTED", "mt9v117__regs_8h.html#acd711222139677ca8402366e37f17aad", null ],

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -161,6 +161,26 @@ Raw ins_float_invariant.xml file:</h2>
 <div class="line">    &lt;configure name=&quot;USE_MAGNETOMETER&quot; value=&quot;TRUE|FALSE&quot; description=&quot;use magnetometer&quot;/&gt;</div>
 <div class="line">    &lt;configure name=&quot;AHRS_ALIGNER_LED&quot; value=&quot;2&quot; description=&quot;LED number to indicate if AHRS/INS is aligned&quot;/&gt;</div>
 <div class="line">  &lt;/doc&gt;</div>
+<div class="line">  &lt;settings&gt;</div>
+<div class="line">    &lt;dl_settings&gt;</div>
+<div class="line">      &lt;dl_settings NAME=&quot;invariant&quot;&gt;</div>
+<div class="line">        &lt;dl_setting MAX=&quot;1&quot; MIN=&quot;1&quot; STEP=&quot;1&quot; VAR=&quot;ins_float_inv.reset&quot; shortname=&quot;reset&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting MAX=&quot;10&quot; MIN=&quot;0.&quot; STEP=&quot;0.001&quot; VAR=&quot;ins_float_inv.gains.lv&quot; shortname=&quot;lv&quot; module=&quot;subsystems/ins/ins_float_invariant&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting MAX=&quot;10&quot; MIN=&quot;0.&quot; STEP=&quot;0.001&quot; VAR=&quot;ins_float_inv.gains.lb&quot; shortname=&quot;lb&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting MAX=&quot;10&quot; MIN=&quot;0.&quot; STEP=&quot;0.001&quot; VAR=&quot;ins_float_inv.gains.mv&quot; shortname=&quot;mv&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting MAX=&quot;10&quot; MIN=&quot;0.&quot; STEP=&quot;0.01&quot; VAR=&quot;ins_float_inv.gains.mh&quot; shortname=&quot;mh&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting MAX=&quot;20&quot; MIN=&quot;0.&quot; STEP=&quot;0.01&quot; VAR=&quot;ins_float_inv.gains.nx&quot; shortname=&quot;nx&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting MAX=&quot;10&quot; MIN=&quot;0.&quot; STEP=&quot;0.01&quot; VAR=&quot;ins_float_inv.gains.nxz&quot; shortname=&quot;nxz&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting MAX=&quot;30&quot; MIN=&quot;0.&quot; STEP=&quot;0.01&quot; VAR=&quot;ins_float_inv.gains.mvz&quot; shortname=&quot;mvz&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting MAX=&quot;5&quot; MIN=&quot;0.&quot; STEP=&quot;0.01&quot; VAR=&quot;ins_float_inv.gains.nh&quot; shortname=&quot;nh&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting MAX=&quot;5&quot; MIN=&quot;0.&quot; STEP=&quot;0.01&quot; VAR=&quot;ins_float_inv.gains.ov&quot; shortname=&quot;ov&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting MAX=&quot;3&quot; MIN=&quot;0.&quot; STEP=&quot;0.01&quot; VAR=&quot;ins_float_inv.gains.ob&quot; shortname=&quot;ob&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting MAX=&quot;10&quot; MIN=&quot;0.&quot; STEP=&quot;0.01&quot; VAR=&quot;ins_float_inv.gains.rv&quot; shortname=&quot;rv&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting MAX=&quot;10&quot; MIN=&quot;0.&quot; STEP=&quot;0.01&quot; VAR=&quot;ins_float_inv.gains.rh&quot; shortname=&quot;rh&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting MAX=&quot;1&quot; MIN=&quot;0.&quot; STEP=&quot;0.001&quot; VAR=&quot;ins_float_inv.gains.sh&quot; shortname=&quot;sh&quot;/&gt;</div>
+<div class="line">      &lt;/dl_settings&gt;</div>
+<div class="line">    &lt;/dl_settings&gt;</div>
+<div class="line">  &lt;/settings&gt;</div>
 <div class="line">  &lt;header&gt;</div>
 <div class="line">    &lt;file name=&quot;ins_float_invariant_wrapper.h&quot; dir=&quot;subsystems/ins&quot;/&gt;</div>
 <div class="line">  &lt;/header&gt;</div>
@@ -194,7 +214,7 @@ Raw ins_float_invariant.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Wed Sep 12 2018 02:03:55 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:03:39 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

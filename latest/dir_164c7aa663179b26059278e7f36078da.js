@@ -1,5 +1,6 @@
 var dir_164c7aa663179b26059278e7f36078da =
 [
+    [ "bitcraze", "dir_847ced2633402d6448f9e1bf487c2d45.html", "dir_847ced2633402d6448f9e1bf487c2d45" ],
     [ "gec", "dir_a4141aa9aabfd994603c58524628479f.html", "dir_a4141aa9aabfd994603c58524628479f" ],
     [ "missionlib", "dir_023361752fe22268717f3f29b9cee4fa.html", "dir_023361752fe22268717f3f29b9cee4fa" ],
     [ "bluegiga_dl.c", "bluegiga__dl_8c.html", "bluegiga__dl_8c" ],

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -159,12 +159,12 @@ $(document).ready(function(){initNavTree('lpc21_2mcu__periph_2adc__arch_8c_sourc
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keywordtype">void</span> <a class="code" href="lpc21_2mcu__periph_2adc__arch_8c.html#a5020bf7d8186fe55c08833bf69d23421">adcISR0</a>(<span class="keywordtype">void</span>) __attribute__((naked));</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keywordtype">void</span> <a class="code" href="lpc21_2mcu__periph_2adc__arch_8c.html#a7197102040e60a099e91a01fa23f2af3">adcISR1</a>(<span class="keywordtype">void</span>) __attribute__((naked));</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="lpc21_2mcu__periph_2adc__arch_8c.html#a289883844d6749adab1cee5aabe41824">   59</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="chibios_2mcu__periph_2adc__arch_8c.html#a289883844d6749adab1cee5aabe41824">adc_buf_channel</a>(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> adc_channel, struct <a class="code" href="adc_8h.html#structadc__buf">adc_buf</a> *s, <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="adc_8h.html#aceea4ff785000051676babf3e5f25287">av_nb_sample</a>)</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="lpc21_2mcu__periph_2adc__arch_8c.html#a289883844d6749adab1cee5aabe41824">   59</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="chibios_2mcu__periph_2adc__arch_8c.html#a289883844d6749adab1cee5aabe41824">adc_buf_channel</a>(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> adc_channel, struct <a class="code" href="adc_8h.html#structadc__buf">adc_buf</a> *<a class="code" href="light__scheduler_8c.html#a2dee666f0c1fe072c549ff86b1d0a8ab">s</a>, <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="adc_8h.html#aceea4ff785000051676babf3e5f25287">av_nb_sample</a>)</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;{</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="comment">// check for out-of-bounds access</span></div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordflow">if</span> (adc_channel &gt;= (<a class="code" href="lpc21_2mcu__periph_2adc__arch_8h.html#a4628f122bb2c9b76cea4c5883eccd9a4">NB_ADC</a> * 2)) <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  buffers[adc_channel] = s;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  s-&gt;<a class="code" href="adc_8h.html#aceea4ff785000051676babf3e5f25287">av_nb_sample</a> = <a class="code" href="adc_8h.html#aceea4ff785000051676babf3e5f25287">av_nb_sample</a>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  buffers[adc_channel] = <a class="code" href="light__scheduler_8c.html#a2dee666f0c1fe072c549ff86b1d0a8ab">s</a>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  s-&gt;av_nb_sample = <a class="code" href="adc_8h.html#aceea4ff785000051676babf3e5f25287">av_nb_sample</a>;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">/*</span></div>
@@ -387,6 +387,7 @@ $(document).ready(function(){initNavTree('lpc21_2mcu__periph_2adc__arch_8c_sourc
 <div class="ttc" id="LPC21xx_8h_html_a87f793a1b9254ca2dec755c61184a715"><div class="ttname"><a href="LPC21xx_8h.html#a87f793a1b9254ca2dec755c61184a715">VICIntSelect</a></div><div class="ttdeci">#define VICIntSelect</div><div class="ttdef"><b>Definition:</b> <a href="LPC21xx_8h_source.html#l00430">LPC21xx.h:430</a></div></div>
 <div class="ttc" id="types_8h_html_a273cf69d639a59973b6019625df33e30"><div class="ttname"><a href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></div><div class="ttdeci">unsigned short uint16_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00016">types.h:16</a></div></div>
 <div class="ttc" id="lpcVIC_8h_html_a0e2535d4e45cf807172622fde21c7916"><div class="ttname"><a href="lpcVIC_8h.html#a0e2535d4e45cf807172622fde21c7916">VIC_AD0</a></div><div class="ttdeci">#define VIC_AD0</div><div class="ttdef"><b>Definition:</b> <a href="lpcVIC_8h_source.html#l00088">lpcVIC.h:88</a></div></div>
+<div class="ttc" id="light__scheduler_8c_html_a2dee666f0c1fe072c549ff86b1d0a8ab"><div class="ttname"><a href="light__scheduler_8c.html#a2dee666f0c1fe072c549ff86b1d0a8ab">s</a></div><div class="ttdeci">static uint32_t s</div><div class="ttdef"><b>Definition:</b> <a href="light__scheduler_8c_source.html#l00033">light_scheduler.c:33</a></div></div>
 <div class="ttc" id="lpc21_2mcu__periph_2adc__arch_8c_html_a070efa0119c718a6d3da4f285b522ba4"><div class="ttname"><a href="lpc21_2mcu__periph_2adc__arch_8c.html#a070efa0119c718a6d3da4f285b522ba4">adc0_val</a></div><div class="ttdeci">volatile uint16_t adc0_val[NB_ADC]</div><div class="ttdef"><b>Definition:</b> <a href="lpc21_2mcu__periph_2adc__arch_8c_source.html#l00053">adc_arch.c:53</a></div></div>
 <div class="ttc" id="armVIC_8h_html_a8f7ae9e1a1b3cd7cdc1fa0d371f2086a"><div class="ttname"><a href="armVIC_8h.html#a8f7ae9e1a1b3cd7cdc1fa0d371f2086a">_VIC_CNTL</a></div><div class="ttdeci">#define _VIC_CNTL(idx)</div><div class="ttdef"><b>Definition:</b> <a href="armVIC_8h_source.html#l00019">armVIC.h:19</a></div></div>
 <div class="ttc" id="lpc21_2mcu__periph_2adc__arch_8c_html_a8e27b48a376dceda1d65004439cfea9a"><div class="ttname"><a href="lpc21_2mcu__periph_2adc__arch_8c.html#a8e27b48a376dceda1d65004439cfea9a">ADC_PINSEL1_ONES</a></div><div class="ttdeci">static const uint32_t ADC_PINSEL1_ONES</div><div class="ttdef"><b>Definition:</b> <a href="lpc21_2mcu__periph_2adc__arch_8c_source.html#l00116">adc_arch.c:116</a></div></div>
@@ -428,7 +429,7 @@ $(document).ready(function(){initNavTree('lpc21_2mcu__periph_2adc__arch_8c_sourc
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_3f7617cb4a5e4fe5cc816b7b3bbdea3a.html">lpc21</a></li><li class="navelem"><a class="el" href="dir_52b0b5e73fdd6096ec81364edad665ef.html">mcu_periph</a></li><li class="navelem"><a class="el" href="lpc21_2mcu__periph_2adc__arch_8c.html">adc_arch.c</a></li>
-    <li class="footer">Generated on Wed Sep 12 2018 02:02:30 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:02:06 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

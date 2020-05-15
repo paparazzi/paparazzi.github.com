@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -128,16 +128,16 @@ $(document).ready(function(){initNavTree('cv__blob__locator_8c_source.html','');
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * along with paparazzi; see the file COPYING.  If not, see</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * &lt;http://www.gnu.org/licenses/&gt;.</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#ifndef BLOB_LOCATOR_FPS</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="cv__blob__locator_8c.html#a8b645bd36faa1b2560ee203fd6858576">   27</a></span>&#160;<span class="preprocessor">#define BLOB_LOCATOR_FPS 0       </span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="cv__blob__locator_8c.html#a8b645bd36faa1b2560ee203fd6858576">BLOB_LOCATOR_FPS</a>)</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;modules/computer_vision/cv_blob_locator.h&quot;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="cv_8h.html">modules/computer_vision/cv.h</a>&quot;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="blob__finder_8h.html">modules/computer_vision/blob/blob_finder.h</a>&quot;</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="imavmarker_8h.html">modules/computer_vision/blob/imavmarker.h</a>&quot;</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="detect__window_8h.html">modules/computer_vision/detect_window.h</a>&quot;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="cv__blob__locator_8h.html">modules/computer_vision/cv_blob_locator.h</a>&quot;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="cv_8h.html">modules/computer_vision/cv.h</a>&quot;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="blob__finder_8h.html">modules/computer_vision/blob/blob_finder.h</a>&quot;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="imavmarker_8h.html">modules/computer_vision/blob/imavmarker.h</a>&quot;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="detect__window_8h.html">modules/computer_vision/detect_window.h</a>&quot;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#ifndef BLOB_LOCATOR_FPS</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="cv__blob__locator_8c.html#a8b645bd36faa1b2560ee203fd6858576">   33</a></span>&#160;<span class="preprocessor">#define BLOB_LOCATOR_FPS 0       </span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="cv__blob__locator_8c.html#a8b645bd36faa1b2560ee203fd6858576">BLOB_LOCATOR_FPS</a>)</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
 <div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="cv__blob__locator_8c.html#a52291a7a5c10d56a832a7b6fcaa66c43">   38</a></span>&#160;<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="cv__blob__locator_8c.html#a52291a7a5c10d56a832a7b6fcaa66c43">color_lum_min</a>;</div>
@@ -156,18 +156,18 @@ $(document).ready(function(){initNavTree('cv__blob__locator_8c_source.html','');
 <div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="cv__blob__locator_8h.html#a097367403a1933e2662a880988d3d21e">   51</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="cv__blob__locator_8c.html#a097367403a1933e2662a880988d3d21e">marker_size</a> = 18;</div>
 <div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="cv__blob__locator_8h.html#a83032abdec3a3f45390ff8905fac77e6">   52</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="cv__blob__locator_8c.html#a83032abdec3a3f45390ff8905fac77e6">record_video</a> = 0;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="cv__blob__locator_8c.html#a541e9a2e37276895d71dfbba183cffc2">   54</a></span>&#160;<span class="keyword">volatile</span> <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> <a class="code" href="cv__blob__locator_8c.html#a541e9a2e37276895d71dfbba183cffc2">blob_locator</a> = 0;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="cv__blob__locator_8c.html#a541e9a2e37276895d71dfbba183cffc2">   54</a></span>&#160;volatile <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> <a class="code" href="cv__blob__locator_8c.html#a541e9a2e37276895d71dfbba183cffc2">blob_locator</a> = 0;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="cv__blob__locator_8c.html#a9d39c61a9e0df89f16e039a5d2eb1613">   56</a></span>&#160;<span class="keyword">volatile</span> <span class="keywordtype">bool</span> <a class="code" href="cv__blob__locator_8c.html#a9d39c61a9e0df89f16e039a5d2eb1613">blob_enabled</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="cv__blob__locator_8c.html#af51c97c0bc2ebff07cac6baef8a5e79f">   57</a></span>&#160;<span class="keyword">volatile</span> <span class="keywordtype">bool</span> <a class="code" href="cv__blob__locator_8c.html#af51c97c0bc2ebff07cac6baef8a5e79f">marker_enabled</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="cv__blob__locator_8c.html#a5a024cd10893bb257884de34514e54ab">   58</a></span>&#160;<span class="keyword">volatile</span> <span class="keywordtype">bool</span> <a class="code" href="cv__blob__locator_8c.html#a5a024cd10893bb257884de34514e54ab">window_enabled</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="cv__blob__locator_8c.html#a9d39c61a9e0df89f16e039a5d2eb1613">   56</a></span>&#160;volatile <span class="keywordtype">bool</span> <a class="code" href="cv__blob__locator_8c.html#a9d39c61a9e0df89f16e039a5d2eb1613">blob_enabled</a> = <a class="code" href="rtwtypes_8h.html#a65e9886d74aaee76545e83dd09011727">false</a>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="cv__blob__locator_8c.html#af51c97c0bc2ebff07cac6baef8a5e79f">   57</a></span>&#160;volatile <span class="keywordtype">bool</span> <a class="code" href="cv__blob__locator_8c.html#af51c97c0bc2ebff07cac6baef8a5e79f">marker_enabled</a> = false;</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="cv__blob__locator_8c.html#a5a024cd10893bb257884de34514e54ab">   58</a></span>&#160;volatile <span class="keywordtype">bool</span> <a class="code" href="cv__blob__locator_8c.html#a5a024cd10893bb257884de34514e54ab">window_enabled</a> = false;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">// Computer vision thread</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">struct </span><a class="code" href="image_8h.html#structimage__t">image_t</a> *<a class="code" href="cv__blob__locator_8c.html#abdf385a8df79da68d81a4c0fede3899e">cv_marker_func</a>(<span class="keyword">struct</span> <a class="code" href="image_8h.html#structimage__t">image_t</a> *img);</div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="cv__blob__locator_8c.html#abdf385a8df79da68d81a4c0fede3899e">   62</a></span>&#160;<span class="keyword">struct </span><a class="code" href="image_8h.html#structimage__t">image_t</a> *<a class="code" href="cv__blob__locator_8c.html#abdf385a8df79da68d81a4c0fede3899e">cv_marker_func</a>(<span class="keyword">struct</span> <a class="code" href="image_8h.html#structimage__t">image_t</a> *img)</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;struct <a class="code" href="image_8h.html#structimage__t">image_t</a> *<a class="code" href="cv__blob__locator_8c.html#abdf385a8df79da68d81a4c0fede3899e">cv_marker_func</a>(struct <a class="code" href="image_8h.html#structimage__t">image_t</a> *img);</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="cv__blob__locator_8c.html#abdf385a8df79da68d81a4c0fede3899e">   62</a></span>&#160;struct <a class="code" href="image_8h.html#structimage__t">image_t</a> *<a class="code" href="cv__blob__locator_8c.html#abdf385a8df79da68d81a4c0fede3899e">cv_marker_func</a>(struct <a class="code" href="image_8h.html#structimage__t">image_t</a> *img)</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;{</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordflow">if</span> (!marker_enabled) {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordflow">if</span> (!<a class="code" href="cv__blob__locator_8c.html#af51c97c0bc2ebff07cac6baef8a5e79f">marker_enabled</a>) {</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">return</span> NULL;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  }</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
@@ -189,7 +189,7 @@ $(document).ready(function(){initNavTree('cv__blob__locator_8c_source.html','');
 <div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="cv__blob__locator_8c.html#aa46d070d93f91a7f2399fe13aafab1bd">   84</a></span>&#160;<span class="keyword">struct </span><a class="code" href="image_8h.html#structimage__t">image_t</a> *<a class="code" href="cv__blob__locator_8c.html#aa46d070d93f91a7f2399fe13aafab1bd">cv_window_func</a>(<span class="keyword">struct</span> <a class="code" href="image_8h.html#structimage__t">image_t</a> *img)</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;{</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keywordflow">if</span> (!window_enabled) {</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keywordflow">if</span> (!<a class="code" href="cv__blob__locator_8c.html#a5a024cd10893bb257884de34514e54ab">window_enabled</a>) {</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordflow">return</span> NULL;</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  }</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
@@ -224,7 +224,7 @@ $(document).ready(function(){initNavTree('cv__blob__locator_8c_source.html','');
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> temp = coordinate[0];</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    temp = temp &lt;&lt; 16;</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    temp += coordinate[1];</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    blob_locator = temp;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <a class="code" href="cv__blob__locator_8c.html#a541e9a2e37276895d71dfbba183cffc2">blob_locator</a> = temp;</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  }</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
@@ -236,7 +236,7 @@ $(document).ready(function(){initNavTree('cv__blob__locator_8c_source.html','');
 <div class="line"><a name="l00131"></a><span class="lineno"><a class="line" href="cv__blob__locator_8c.html#a5298a0e08ea26e8e2031d5def6dc11ec">  131</a></span>&#160;<span class="keyword">struct </span><a class="code" href="image_8h.html#structimage__t">image_t</a> *<a class="code" href="cv__blob__locator_8c.html#a5298a0e08ea26e8e2031d5def6dc11ec">cv_blob_locator_func</a>(<span class="keyword">struct</span> <a class="code" href="image_8h.html#structimage__t">image_t</a> *img)</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;{</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  <span class="keywordflow">if</span> (!blob_enabled) {</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  <span class="keywordflow">if</span> (!<a class="code" href="cv__blob__locator_8c.html#a9d39c61a9e0df89f16e039a5d2eb1613">blob_enabled</a>) {</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keywordflow">return</span> NULL;</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  }</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
@@ -319,7 +319,7 @@ $(document).ready(function(){initNavTree('cv__blob__locator_8c_source.html','');
 <div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> temp = cgx;</div>
 <div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    temp = temp &lt;&lt; 16;</div>
 <div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    temp += cgy;</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    blob_locator = temp;</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    <a class="code" href="cv__blob__locator_8c.html#a541e9a2e37276895d71dfbba183cffc2">blob_locator</a> = temp;</div>
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;  }</div>
 <div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;</div>
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;  <a class="code" href="image_8c.html#aa09d6434519478ba26eab12a96d600ba">image_free</a>(&amp;dst);</div>
@@ -335,22 +335,22 @@ $(document).ready(function(){initNavTree('cv__blob__locator_8c_source.html','');
 <div class="line"><a name="l00230"></a><span class="lineno"><a class="line" href="cv__blob__locator_8h.html#a03040f93fee504200fd409c45f488e4d">  230</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="cv__blob__locator_8c.html#a03040f93fee504200fd409c45f488e4d">cv_blob_locator_init</a>(<span class="keywordtype">void</span>)</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;{</div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;  <span class="comment">// Red board in sunlight</span></div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;  color_lum_min = 100;</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;  color_lum_max = 200;</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;  color_cb_min = 140;</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;  color_cb_max = 255;</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;  color_cr_min = 140;</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;  color_cr_max = 255;</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;  <a class="code" href="cv__blob__locator_8c.html#a52291a7a5c10d56a832a7b6fcaa66c43">color_lum_min</a> = 100;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;  <a class="code" href="cv__blob__locator_8c.html#a8546349fa41cd2a0fa906119990c65cf">color_lum_max</a> = 200;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;  <a class="code" href="cv__blob__locator_8c.html#adbcec0bafce0688f1708beaf0b6e792a">color_cb_min</a> = 140;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;  <a class="code" href="cv__blob__locator_8c.html#a028a785eb4e92e36a242baac2c592b6b">color_cb_max</a> = 255;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;  <a class="code" href="cv__blob__locator_8c.html#a39149da1c7d12899680335e4cc339499">color_cr_min</a> = 140;</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;  <a class="code" href="cv__blob__locator_8c.html#a178c4572aced8af31538a036d2d1c5df">color_cr_max</a> = 255;</div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;</div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;  <span class="comment">// Lamp during night</span></div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;  color_lum_min = 180;</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;  color_lum_max = 255;</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;  color_cb_min = 100;</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;  color_cb_max = 150;</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;  color_cr_min = 100;</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;  color_cr_max = 150;</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;  <a class="code" href="cv__blob__locator_8c.html#a52291a7a5c10d56a832a7b6fcaa66c43">color_lum_min</a> = 180;</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;  <a class="code" href="cv__blob__locator_8c.html#a8546349fa41cd2a0fa906119990c65cf">color_lum_max</a> = 255;</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;  <a class="code" href="cv__blob__locator_8c.html#adbcec0bafce0688f1708beaf0b6e792a">color_cb_min</a> = 100;</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;  <a class="code" href="cv__blob__locator_8c.html#a028a785eb4e92e36a242baac2c592b6b">color_cb_max</a> = 150;</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;  <a class="code" href="cv__blob__locator_8c.html#a39149da1c7d12899680335e4cc339499">color_cr_min</a> = 100;</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;  <a class="code" href="cv__blob__locator_8c.html#a178c4572aced8af31538a036d2d1c5df">color_cr_max</a> = 150;</div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;  cv_blob_locator_reset = 0;</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;  <a class="code" href="cv__blob__locator_8c.html#ae97be8987eb112d08c57d0de0d664e82">cv_blob_locator_reset</a> = 0;</div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;  <a class="code" href="cv__georeference_8c.html#a41379c2909e00206b2c73893f814660e">georeference_init</a>();</div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;</div>
@@ -368,32 +368,32 @@ $(document).ready(function(){initNavTree('cv__blob__locator_8c_source.html','');
 <div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;</div>
 <div class="line"><a name="l00264"></a><span class="lineno"><a class="line" href="cv__blob__locator_8h.html#a391703403d5b9f54b9aeb1ef368be61b">  264</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="cv__blob__locator_8c.html#a391703403d5b9f54b9aeb1ef368be61b">cv_blob_locator_event</a>(<span class="keywordtype">void</span>)</div>
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;{</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;  <span class="keywordflow">switch</span> (cv_blob_locator_type) {</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;  <span class="keywordflow">switch</span> (<a class="code" href="cv__blob__locator_8c.html#ae3dd4cc91cbed27623ae288efd886bea">cv_blob_locator_type</a>) {</div>
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    <span class="keywordflow">case</span> 1:</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;      blob_enabled = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;      marker_enabled = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;      window_enabled = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;      <a class="code" href="cv__blob__locator_8c.html#a9d39c61a9e0df89f16e039a5d2eb1613">blob_enabled</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;      <a class="code" href="cv__blob__locator_8c.html#af51c97c0bc2ebff07cac6baef8a5e79f">marker_enabled</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;      <a class="code" href="cv__blob__locator_8c.html#a5a024cd10893bb257884de34514e54ab">window_enabled</a> = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;      <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    <span class="keywordflow">case</span> 2:</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;      blob_enabled = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;      marker_enabled = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;      window_enabled = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;      <a class="code" href="cv__blob__locator_8c.html#a9d39c61a9e0df89f16e039a5d2eb1613">blob_enabled</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;      <a class="code" href="cv__blob__locator_8c.html#af51c97c0bc2ebff07cac6baef8a5e79f">marker_enabled</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;      <a class="code" href="cv__blob__locator_8c.html#a5a024cd10893bb257884de34514e54ab">window_enabled</a> = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;      <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    <span class="keywordflow">case</span> 3:</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;      blob_enabled = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;      marker_enabled = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;      window_enabled = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;      <a class="code" href="cv__blob__locator_8c.html#a9d39c61a9e0df89f16e039a5d2eb1613">blob_enabled</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;      <a class="code" href="cv__blob__locator_8c.html#af51c97c0bc2ebff07cac6baef8a5e79f">marker_enabled</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;      <a class="code" href="cv__blob__locator_8c.html#a5a024cd10893bb257884de34514e54ab">window_enabled</a> = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;      <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;      blob_enabled = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;      marker_enabled = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;      window_enabled = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;      <a class="code" href="cv__blob__locator_8c.html#a9d39c61a9e0df89f16e039a5d2eb1613">blob_enabled</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;      <a class="code" href="cv__blob__locator_8c.html#af51c97c0bc2ebff07cac6baef8a5e79f">marker_enabled</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;      <a class="code" href="cv__blob__locator_8c.html#a5a024cd10893bb257884de34514e54ab">window_enabled</a> = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;      <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;  }</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;  <span class="keywordflow">if</span> (blob_locator != 0) {</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="cv__blob__locator_8c.html#a541e9a2e37276895d71dfbba183cffc2">blob_locator</a> != 0) {</div>
 <div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    <span class="comment">// CV thread has results: import</span></div>
 <div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> temp = <a class="code" href="cv__blob__locator_8c.html#a541e9a2e37276895d71dfbba183cffc2">blob_locator</a>;</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    blob_locator = 0;</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    <a class="code" href="cv__blob__locator_8c.html#a541e9a2e37276895d71dfbba183cffc2">blob_locator</a> = 0;</div>
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;</div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    <span class="comment">// Process</span></div>
 <div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    <a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> y = temp &amp; 0x0000ffff;</div>
@@ -412,7 +412,7 @@ $(document).ready(function(){initNavTree('cv__blob__locator_8c_source.html','');
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    <a class="code" href="cv__georeference_8c.html#a230ffda49b65d6b6963063af8ab73e00">georeference_project</a>(&amp;cam, WP_p1);</div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;<span class="preprocessor">#ifdef WP_CAM</span></div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    <a class="code" href="cv__georeference_8c.html#a551f2542023388240a3573ca7e223aec">georeference_filter</a>(<a class="code" href="std_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>, WP_CAM, geofilter_length);</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    <a class="code" href="cv__georeference_8c.html#a551f2542023388240a3573ca7e223aec">georeference_filter</a>(<a class="code" href="std_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>, WP_CAM, <a class="code" href="cv__blob__locator_8c.html#a72a4aa979afe374a531b18124cb16f19">geofilter_length</a>);</div>
 <div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;</div>
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;  }</div>
@@ -431,20 +431,20 @@ $(document).ready(function(){initNavTree('cv__blob__locator_8c_source.html','');
 <div class="line"><a name="l00326"></a><span class="lineno"><a class="line" href="cv__blob__locator_8h.html#ab5cade99ec312870fe6fb5bcde39ad05">  326</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="cv__blob__locator_8c.html#ab5cade99ec312870fe6fb5bcde39ad05">start_vision</a>(<span class="keywordtype">void</span>)</div>
 <div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;{</div>
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;  <a class="code" href="cv__georeference_8c.html#a41379c2909e00206b2c73893f814660e">georeference_init</a>();</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;  record_video = 1;</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;  cv_blob_locator_type = 3;</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;  <a class="code" href="cv__blob__locator_8c.html#a83032abdec3a3f45390ff8905fac77e6">record_video</a> = 1;</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;  <a class="code" href="cv__blob__locator_8c.html#ae3dd4cc91cbed27623ae288efd886bea">cv_blob_locator_type</a> = 3;</div>
 <div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;}</div>
 <div class="line"><a name="l00332"></a><span class="lineno"><a class="line" href="cv__blob__locator_8h.html#a8a4fb6ecf08af9edbb0f368da0225012">  332</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="cv__blob__locator_8c.html#a8a4fb6ecf08af9edbb0f368da0225012">start_vision_land</a>(<span class="keywordtype">void</span>)</div>
 <div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;{</div>
 <div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;  <a class="code" href="cv__georeference_8c.html#a41379c2909e00206b2c73893f814660e">georeference_init</a>();</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;  record_video = 1;</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;  cv_blob_locator_type = 2;</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;  <a class="code" href="cv__blob__locator_8c.html#a83032abdec3a3f45390ff8905fac77e6">record_video</a> = 1;</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;  <a class="code" href="cv__blob__locator_8c.html#ae3dd4cc91cbed27623ae288efd886bea">cv_blob_locator_type</a> = 2;</div>
 <div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;}</div>
 <div class="line"><a name="l00338"></a><span class="lineno"><a class="line" href="cv__blob__locator_8h.html#aebdb45a65cfc27189556cd6e9d6efc7f">  338</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="cv__blob__locator_8c.html#aebdb45a65cfc27189556cd6e9d6efc7f">stop_vision</a>(<span class="keywordtype">void</span>)</div>
 <div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;{</div>
 <div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;  <a class="code" href="cv__georeference_8c.html#a41379c2909e00206b2c73893f814660e">georeference_init</a>();</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;  record_video = 0;</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;  cv_blob_locator_type = 0;</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;  <a class="code" href="cv__blob__locator_8c.html#a83032abdec3a3f45390ff8905fac77e6">record_video</a> = 0;</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;  <a class="code" href="cv__blob__locator_8c.html#ae3dd4cc91cbed27623ae288efd886bea">cv_blob_locator_type</a> = 0;</div>
 <div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;}</div>
 <div class="ttc" id="blob__finder_8h_html_a3a89a2567fb4f97b2727b9033c4bb07a"><div class="ttname"><a href="blob__finder_8h.html#a3a89a2567fb4f97b2727b9033c4bb07a">image_filter_t::y_max</a></div><div class="ttdeci">uint8_t y_max</div><div class="ttdef"><b>Definition:</b> <a href="blob__finder_8h_source.html#l00038">blob_finder.h:38</a></div></div>
 <div class="ttc" id="blob__finder_8h_html_a707968c97b1bd127fd29edb24db36d3f"><div class="ttname"><a href="blob__finder_8h.html#a707968c97b1bd127fd29edb24db36d3f">image_label_t::x_sum</a></div><div class="ttdeci">uint32_t x_sum</div><div class="ttdoc">Sum of all x coordinates (used to find center of gravity) </div><div class="ttdef"><b>Definition:</b> <a href="blob__finder_8h_source.html#l00053">blob_finder.h:53</a></div></div>
@@ -463,13 +463,14 @@ $(document).ready(function(){initNavTree('cv__blob__locator_8c_source.html','');
 <div class="ttc" id="blob__finder_8h_html_a197edb8ff30d0f351a798fb33aed6dfe"><div class="ttname"><a href="blob__finder_8h.html#a197edb8ff30d0f351a798fb33aed6dfe">image_label_t::pixel_cnt</a></div><div class="ttdeci">uint32_t pixel_cnt</div><div class="ttdoc">Number of pixels in the blob. </div><div class="ttdef"><b>Definition:</b> <a href="blob__finder_8h_source.html#l00050">blob_finder.h:50</a></div></div>
 <div class="ttc" id="cv__blob__locator_8c_html_a39149da1c7d12899680335e4cc339499"><div class="ttname"><a href="cv__blob__locator_8c.html#a39149da1c7d12899680335e4cc339499">color_cr_min</a></div><div class="ttdeci">uint8_t color_cr_min</div><div class="ttdef"><b>Definition:</b> <a href="cv__blob__locator_8c_source.html#l00044">cv_blob_locator.c:44</a></div></div>
 <div class="ttc" id="cv__georeference_8h_html_structcamera__frame__t"><div class="ttname"><a href="cv__georeference_8h.html#structcamera__frame__t">camera_frame_t</a></div><div class="ttdef"><b>Definition:</b> <a href="cv__georeference_8h_source.html#l00037">cv_georeference.h:37</a></div></div>
-<div class="ttc" id="detect__window_8c_html_a7aa027192382c57d36c563c050324fcb"><div class="ttname"><a href="detect__window_8c.html#a7aa027192382c57d36c563c050324fcb">detect_window_sizes</a></div><div class="ttdeci">uint16_t detect_window_sizes(uint8_t *in, uint32_t image_width, uint32_t image_height, uint16_t *coordinate, uint32_t *integral_image, uint8_t MODE)</div><div class="ttdef"><b>Definition:</b> <a href="detect__window_8c_source.html#l00065">detect_window.c:65</a></div></div>
-<div class="ttc" id="image_8c_html_aa09d6434519478ba26eab12a96d600ba"><div class="ttname"><a href="image_8c.html#aa09d6434519478ba26eab12a96d600ba">image_free</a></div><div class="ttdeci">void image_free(struct image_t *img)</div><div class="ttdoc">Free the image. </div><div class="ttdef"><b>Definition:</b> <a href="image_8c_source.html#l00064">image.c:64</a></div></div>
+<div class="ttc" id="detect__window_8c_html_a7aa027192382c57d36c563c050324fcb"><div class="ttname"><a href="detect__window_8c.html#a7aa027192382c57d36c563c050324fcb">detect_window_sizes</a></div><div class="ttdeci">uint16_t detect_window_sizes(uint8_t *in, uint32_t image_width, uint32_t image_height, uint16_t *coordinate, uint32_t *integral_image, uint8_t MODE)</div><div class="ttdef"><b>Definition:</b> <a href="detect__window_8c_source.html#l00069">detect_window.c:69</a></div></div>
+<div class="ttc" id="image_8c_html_aa09d6434519478ba26eab12a96d600ba"><div class="ttname"><a href="image_8c.html#aa09d6434519478ba26eab12a96d600ba">image_free</a></div><div class="ttdeci">void image_free(struct image_t *img)</div><div class="ttdoc">Free the image. </div><div class="ttdef"><b>Definition:</b> <a href="image_8c_source.html#l00069">image.c:69</a></div></div>
 <div class="ttc" id="cv__blob__locator_8c_html_abdf385a8df79da68d81a4c0fede3899e"><div class="ttname"><a href="cv__blob__locator_8c.html#abdf385a8df79da68d81a4c0fede3899e">cv_marker_func</a></div><div class="ttdeci">struct image_t * cv_marker_func(struct image_t *img)</div><div class="ttdef"><b>Definition:</b> <a href="cv__blob__locator_8c_source.html#l00062">cv_blob_locator.c:62</a></div></div>
 <div class="ttc" id="blob__finder_8h_html_a0d74dbe92cca6e7baa725764dee3f55d"><div class="ttname"><a href="blob__finder_8h.html#a0d74dbe92cca6e7baa725764dee3f55d">image_filter_t::u_min</a></div><div class="ttdeci">uint8_t u_min</div><div class="ttdef"><b>Definition:</b> <a href="blob__finder_8h_source.html#l00039">blob_finder.h:39</a></div></div>
-<div class="ttc" id="image_8c_html_ab5cc0250c461b9d2f043e4884f6b9a53"><div class="ttname"><a href="image_8c.html#ab5cc0250c461b9d2f043e4884f6b9a53">image_create</a></div><div class="ttdeci">void image_create(struct image_t *img, uint16_t width, uint16_t height, enum image_type type)</div><div class="ttdoc">Create a new image. </div><div class="ttdef"><b>Definition:</b> <a href="image_8c_source.html#l00039">image.c:39</a></div></div>
+<div class="ttc" id="image_8c_html_ab5cc0250c461b9d2f043e4884f6b9a53"><div class="ttname"><a href="image_8c.html#ab5cc0250c461b9d2f043e4884f6b9a53">image_create</a></div><div class="ttdeci">void image_create(struct image_t *img, uint16_t width, uint16_t height, enum image_type type)</div><div class="ttdoc">Create a new image. </div><div class="ttdef"><b>Definition:</b> <a href="image_8c_source.html#l00043">image.c:43</a></div></div>
 <div class="ttc" id="image_8h_html_structimage__t"><div class="ttname"><a href="image_8h.html#structimage__t">image_t</a></div><div class="ttdef"><b>Definition:</b> <a href="image_8h_source.html#l00043">image.h:43</a></div></div>
 <div class="ttc" id="cv__blob__locator_8c_html_a5298a0e08ea26e8e2031d5def6dc11ec"><div class="ttname"><a href="cv__blob__locator_8c.html#a5298a0e08ea26e8e2031d5def6dc11ec">cv_blob_locator_func</a></div><div class="ttdeci">struct image_t * cv_blob_locator_func(struct image_t *img)</div><div class="ttdef"><b>Definition:</b> <a href="cv__blob__locator_8c_source.html#l00131">cv_blob_locator.c:131</a></div></div>
+<div class="ttc" id="cv__blob__locator_8h_html"><div class="ttname"><a href="cv__blob__locator_8h.html">cv_blob_locator.h</a></div></div>
 <div class="ttc" id="imavmarker_8h_html_a02d3035b637c12e06a34afa8e3d26e3e"><div class="ttname"><a href="imavmarker_8h.html#a02d3035b637c12e06a34afa8e3d26e3e">marker_deviation_t::y</a></div><div class="ttdeci">int32_t y</div><div class="ttdef"><b>Definition:</b> <a href="imavmarker_8h_source.html#l00034">imavmarker.h:34</a></div></div>
 <div class="ttc" id="cv__blob__locator_8c_html_a028a785eb4e92e36a242baac2c592b6b"><div class="ttname"><a href="cv__blob__locator_8c.html#a028a785eb4e92e36a242baac2c592b6b">color_cb_max</a></div><div class="ttdeci">uint8_t color_cb_max</div><div class="ttdef"><b>Definition:</b> <a href="cv__blob__locator_8c_source.html#l00042">cv_blob_locator.c:42</a></div></div>
 <div class="ttc" id="cv__georeference_8c_html_a41379c2909e00206b2c73893f814660e"><div class="ttname"><a href="cv__georeference_8c.html#a41379c2909e00206b2c73893f814660e">georeference_init</a></div><div class="ttdeci">void georeference_init(void)</div><div class="ttdef"><b>Definition:</b> <a href="cv__georeference_8c_source.html#l00180">cv_georeference.c:180</a></div></div>
@@ -495,7 +496,7 @@ $(document).ready(function(){initNavTree('cv__blob__locator_8c_source.html','');
 <div class="ttc" id="blob__finder_8h_html"><div class="ttname"><a href="blob__finder_8h.html">blob_finder.h</a></div><div class="ttdoc">Parse UYVY images and make a list of blobs of connected pixels. </div></div>
 <div class="ttc" id="cv__blob__locator_8c_html_a83032abdec3a3f45390ff8905fac77e6"><div class="ttname"><a href="cv__blob__locator_8c.html#a83032abdec3a3f45390ff8905fac77e6">record_video</a></div><div class="ttdeci">int record_video</div><div class="ttdef"><b>Definition:</b> <a href="cv__blob__locator_8c_source.html#l00052">cv_blob_locator.c:52</a></div></div>
 <div class="ttc" id="blob__finder_8h_html_a74cfa7d6423ebe034cc349eba78027a6"><div class="ttname"><a href="blob__finder_8h.html#a74cfa7d6423ebe034cc349eba78027a6">image_filter_t::v_min</a></div><div class="ttdeci">uint8_t v_min</div><div class="ttdef"><b>Definition:</b> <a href="blob__finder_8h_source.html#l00041">blob_finder.h:41</a></div></div>
-<div class="ttc" id="image_8c_html_a74a32006a620503a7ca62e5b2a86abd1"><div class="ttname"><a href="image_8c.html#a74a32006a620503a7ca62e5b2a86abd1">image_to_grayscale</a></div><div class="ttdeci">void image_to_grayscale(struct image_t *input, struct image_t *output)</div><div class="ttdoc">Convert an image to grayscale. </div><div class="ttdef"><b>Definition:</b> <a href="image_8c_source.html#l00119">image.c:119</a></div></div>
+<div class="ttc" id="image_8c_html_a74a32006a620503a7ca62e5b2a86abd1"><div class="ttname"><a href="image_8c.html#a74a32006a620503a7ca62e5b2a86abd1">image_to_grayscale</a></div><div class="ttdeci">void image_to_grayscale(struct image_t *input, struct image_t *output)</div><div class="ttdoc">Convert an image to grayscale. </div><div class="ttdef"><b>Definition:</b> <a href="image_8c_source.html#l00125">image.c:125</a></div></div>
 <div class="ttc" id="cv__blob__locator_8c_html_a8a4fb6ecf08af9edbb0f368da0225012"><div class="ttname"><a href="cv__blob__locator_8c.html#a8a4fb6ecf08af9edbb0f368da0225012">start_vision_land</a></div><div class="ttdeci">void start_vision_land(void)</div><div class="ttdef"><b>Definition:</b> <a href="cv__blob__locator_8c_source.html#l00332">cv_blob_locator.c:332</a></div></div>
 <div class="ttc" id="cv__georeference_8h_html_a70479b80bcf9ae5323bdd4e682cfd324"><div class="ttname"><a href="cv__georeference_8h.html#a70479b80bcf9ae5323bdd4e682cfd324">camera_frame_t::h</a></div><div class="ttdeci">int32_t h</div><div class="ttdoc">Frame height [px]. </div><div class="ttdef"><b>Definition:</b> <a href="cv__georeference_8h_source.html#l00039">cv_georeference.h:39</a></div></div>
 <div class="ttc" id="types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00014">types.h:14</a></div></div>
@@ -507,13 +508,14 @@ $(document).ready(function(){initNavTree('cv__blob__locator_8c_source.html','');
 <div class="ttc" id="cv__georeference_8h_html_a8c620e03636b94de326ec55f61088a5a"><div class="ttname"><a href="cv__georeference_8h.html#a8c620e03636b94de326ec55f61088a5a">camera_frame_t::w</a></div><div class="ttdeci">int32_t w</div><div class="ttdoc">Frame width [px]. </div><div class="ttdef"><b>Definition:</b> <a href="cv__georeference_8h_source.html#l00038">cv_georeference.h:38</a></div></div>
 <div class="ttc" id="imavmarker_8h_html_ae1b23610248f940c28a2a76b6bea3e4f"><div class="ttname"><a href="imavmarker_8h.html#ae1b23610248f940c28a2a76b6bea3e4f">marker_deviation_t::x</a></div><div class="ttdeci">int32_t x</div><div class="ttdef"><b>Definition:</b> <a href="imavmarker_8h_source.html#l00033">imavmarker.h:33</a></div></div>
 <div class="ttc" id="imavmarker_8h_html_structmarker__deviation__t"><div class="ttname"><a href="imavmarker_8h.html#structmarker__deviation__t">marker_deviation_t</a></div><div class="ttdef"><b>Definition:</b> <a href="imavmarker_8h_source.html#l00032">imavmarker.h:32</a></div></div>
-<div class="ttc" id="cv__blob__locator_8c_html_a8b645bd36faa1b2560ee203fd6858576"><div class="ttname"><a href="cv__blob__locator_8c.html#a8b645bd36faa1b2560ee203fd6858576">BLOB_LOCATOR_FPS</a></div><div class="ttdeci">#define BLOB_LOCATOR_FPS</div><div class="ttdoc">Default FPS (zero means run at camera fps) </div><div class="ttdef"><b>Definition:</b> <a href="cv__blob__locator_8c_source.html#l00027">cv_blob_locator.c:27</a></div></div>
+<div class="ttc" id="cv__blob__locator_8c_html_a8b645bd36faa1b2560ee203fd6858576"><div class="ttname"><a href="cv__blob__locator_8c.html#a8b645bd36faa1b2560ee203fd6858576">BLOB_LOCATOR_FPS</a></div><div class="ttdeci">#define BLOB_LOCATOR_FPS</div><div class="ttdoc">Default FPS (zero means run at camera fps) </div><div class="ttdef"><b>Definition:</b> <a href="cv__blob__locator_8c_source.html#l00033">cv_blob_locator.c:33</a></div></div>
 <div class="ttc" id="ins__alt__float_8c_html_a9d3f100c4375da4d957dbe599d494905"><div class="ttname"><a href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a></div><div class="ttdeci">static float p[2][2]</div><div class="ttdef"><b>Definition:</b> <a href="ins__alt__float_8c_source.html#l00268">ins_alt_float.c:268</a></div></div>
 <div class="ttc" id="cv__blob__locator_8c_html_a8affdbd5c68f57a9388246057d1103b5"><div class="ttname"><a href="cv__blob__locator_8c.html#a8affdbd5c68f57a9388246057d1103b5">Img</a></div><div class="ttdeci">#define Img(X, Y)</div><div class="ttdef"><b>Definition:</b> <a href="cv__blob__locator_8c_source.html#l00079">cv_blob_locator.c:79</a></div></div>
 <div class="ttc" id="image_8h_html_af039c7afe08a5eb2cff06e357227cdb8a6d97e6c2ad43721a212d52ec806261d3"><div class="ttname"><a href="image_8h.html#af039c7afe08a5eb2cff06e357227cdb8a6d97e6c2ad43721a212d52ec806261d3">IMAGE_GRAYSCALE</a></div><div class="ttdoc">Grayscale image with only the Y part (uint8 per pixel) </div><div class="ttdef"><b>Definition:</b> <a href="image_8h_source.html#l00037">image.h:37</a></div></div>
 <div class="ttc" id="cv__blob__locator_8c_html_a097367403a1933e2662a880988d3d21e"><div class="ttname"><a href="cv__blob__locator_8c.html#a097367403a1933e2662a880988d3d21e">marker_size</a></div><div class="ttdeci">int marker_size</div><div class="ttdef"><b>Definition:</b> <a href="cv__blob__locator_8c_source.html#l00051">cv_blob_locator.c:51</a></div></div>
 <div class="ttc" id="cv__blob__locator_8c_html_adbcec0bafce0688f1708beaf0b6e792a"><div class="ttname"><a href="cv__blob__locator_8c.html#adbcec0bafce0688f1708beaf0b6e792a">color_cb_min</a></div><div class="ttdeci">uint8_t color_cb_min</div><div class="ttdef"><b>Definition:</b> <a href="cv__blob__locator_8c_source.html#l00041">cv_blob_locator.c:41</a></div></div>
 <div class="ttc" id="cv__blob__locator_8c_html_a0625acc5c17262bca58f3055fcad6c29"><div class="ttname"><a href="cv__blob__locator_8c.html#a0625acc5c17262bca58f3055fcad6c29">cv_blob_locator_start</a></div><div class="ttdeci">void cv_blob_locator_start(void)</div><div class="ttdef"><b>Definition:</b> <a href="cv__blob__locator_8c_source.html#l00316">cv_blob_locator.c:316</a></div></div>
+<div class="ttc" id="rtwtypes_8h_html_a65e9886d74aaee76545e83dd09011727"><div class="ttname"><a href="rtwtypes_8h.html#a65e9886d74aaee76545e83dd09011727">false</a></div><div class="ttdeci">#define false</div><div class="ttdef"><b>Definition:</b> <a href="rtwtypes_8h_source.html#l00024">rtwtypes.h:24</a></div></div>
 <div class="ttc" id="imavmarker_8h_html"><div class="ttname"><a href="imavmarker_8h.html">imavmarker.h</a></div><div class="ttdoc">Find a IMAV pattern. </div></div>
 <div class="ttc" id="image_8h_html_af039c7afe08a5eb2cff06e357227cdb8aa19e189f53a1f2f6ad69169c68f56bba"><div class="ttname"><a href="image_8h.html#af039c7afe08a5eb2cff06e357227cdb8aa19e189f53a1f2f6ad69169c68f56bba">IMAGE_GRADIENT</a></div><div class="ttdoc">An image gradient (int16 per pixel) </div><div class="ttdef"><b>Definition:</b> <a href="image_8h_source.html#l00039">image.h:39</a></div></div>
 <div class="ttc" id="blob__finder_8c_html_a4394ddcfee7f3a3c1ff870b038b2883b"><div class="ttname"><a href="blob__finder_8c.html#a4394ddcfee7f3a3c1ff870b038b2883b">image_labeling</a></div><div class="ttdeci">void image_labeling(struct image_t *input, struct image_t *output, struct image_filter_t *filters, uint8_t filters_cnt, struct image_label_t *labels, uint16_t *labels_count)</div><div class="ttdef"><b>Definition:</b> <a href="blob__finder_8c_source.html#l00033">blob_finder.c:33</a></div></div>
@@ -527,7 +529,7 @@ $(document).ready(function(){initNavTree('cv__blob__locator_8c_source.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_304e79c9f5d09ea65a2f55aafb6a6b9d.html">computer_vision</a></li><li class="navelem"><a class="el" href="cv__blob__locator_8c.html">cv_blob_locator.c</a></li>
-    <li class="footer">Generated on Wed Sep 12 2018 02:02:42 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:02:19 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -159,6 +159,9 @@ $(document).ready(function(){initNavTree('globals_defs_b.html','');});
 , <a class="el" href="serial__port_8c.html#a82fce4c6435c1524dd934d40c26330bf">serial_port.c</a>
 , <a class="el" href="chibios_2mcu__periph_2uart__arch_8h.html#a82fce4c6435c1524dd934d40c26330bf">uart_arch.h</a>
 </li>
+<li>B1000000
+: <a class="el" href="chibios_2mcu__periph_2uart__arch_8h.html#a32dc4578657dac59f79f0bc7ffc9416f">uart_arch.h</a>
+</li>
 <li>B115200
 : <a class="el" href="chibios_2mcu__periph_2uart__arch_8h.html#aef3a1340ea0fba1573691a9e74a43d11">uart_arch.h</a>
 </li>
@@ -166,7 +169,7 @@ $(document).ready(function(){initNavTree('globals_defs_b.html','');});
 : <a class="el" href="chibios_2mcu__periph_2uart__arch_8h.html#a36fdf3b468aa37c932c5feb0f3a9d7d7">uart_arch.h</a>
 </li>
 <li>B1500000
-: <a class="el" href="stm32_2mcu__periph_2uart__arch_8h.html#a9ea600f5048d4b2b1dfa1249521701bd">uart_arch.h</a>
+: <a class="el" href="chibios_2mcu__periph_2uart__arch_8h.html#a9ea600f5048d4b2b1dfa1249521701bd">uart_arch.h</a>
 </li>
 <li>B19200
 : <a class="el" href="chibios_2mcu__periph_2uart__arch_8h.html#ae9baab0dacc8d414681e1cb5c354a058">uart_arch.h</a>
@@ -273,6 +276,9 @@ $(document).ready(function(){initNavTree('globals_defs_b.html','');});
 <li>BARO_AMSYS_SIGMA2
 : <a class="el" href="baro__amsys_8c.html#a1ec0f1811c56699e9d71849d9db6c552">baro_amsys.c</a>
 </li>
+<li>BARO_BMP3_SENDER_ID
+: <a class="el" href="abi__sender__ids_8h.html#a81cbaff3f58fa0319e6cffeea2807031">abi_sender_ids.h</a>
+</li>
 <li>BARO_BMP_DT
 : <a class="el" href="baro__bmp_8h.html#a2eecec94958f9a1575f7d7bbc29b62e5">baro_bmp.h</a>
 </li>
@@ -293,6 +299,9 @@ $(document).ready(function(){initNavTree('globals_defs_b.html','');});
 </li>
 <li>BARO_BOARD_SENDER_ID
 : <a class="el" href="abi__sender__ids_8h.html#a5bb669cab223b9398b897303b2aae001">abi_sender_ids.h</a>
+</li>
+<li>BARO_CS
+: <a class="el" href="px4fmu_2chibios_2v4_80_2board_8h.html#a97c6d52cafe62045e1783807cf959489">board.h</a>
 </li>
 <li>BARO_DIFF_ADDR
 : <a class="el" href="lisa__l_2baro__board_8c.html#a75c5128c79feb658731e646b8279f18f">baro_board.c</a>
@@ -396,9 +405,6 @@ $(document).ready(function(){initNavTree('globals_defs_b.html','');});
 : <a class="el" href="baro__ms5611__i2c_8h.html#a9d2d6897b288382c3923d8180e16d6bc">baro_ms5611_i2c.h</a>
 , <a class="el" href="baro__ms5611__spi_8h.html#a9d2d6897b288382c3923d8180e16d6bc">baro_ms5611_spi.h</a>
 </li>
-<li>BARO_PBN_SENDER_ID
-: <a class="el" href="abi__sender__ids_8h.html#a2d896d0e33c22364c608d78c7ed335a0">abi_sender_ids.h</a>
-</li>
 <li>BARO_PERIODIC_FREQUENCY
 : <a class="el" href="rover_2main__ap_8c.html#a124e8be962a54f3f7a0957fa34ec5876">main_ap.c</a>
 </li>
@@ -483,26 +489,16 @@ $(document).ready(function(){initNavTree('globals_defs_b.html','');});
 <li>BATTERY_MONITOR_VREF_MULT
 : <a class="el" href="battery__monitor_8h.html#ac1324bcc8a389ea0e3d9390e118c2c4c">battery_monitor.h</a>
 </li>
-<li>BAYERSTATS_STATX
-: <a class="el" href="libisp_8h.html#ad11ca5e1b8902cd912811f930f0b6b61">libisp.h</a>
-</li>
-<li>BAYERSTATS_STATY
-: <a class="el" href="libisp_8h.html#aacc06d63590a670cb880d5191b41e70b">libisp.h</a>
-</li>
 <li>BB_MS5611_SLAVE_ADDR
 : <a class="el" href="baro__board__ms5611__i2c_8c.html#abd7fdff82b87848ef3a165026d497cd4">baro_board_ms5611_i2c.c</a>
 </li>
 <li>BB_MS5611_TYPE_MS5607
-: <a class="el" href="disco_2baro__board_8h.html#a4ff576c8f1aeccfcbe960067683f487b">baro_board.h</a>
-, <a class="el" href="baro__board__ms5611__i2c_8c.html#a4ff576c8f1aeccfcbe960067683f487b">baro_board_ms5611_i2c.c</a>
+: <a class="el" href="baro__board__ms5611__i2c_8c.html#a4ff576c8f1aeccfcbe960067683f487b">baro_board_ms5611_i2c.c</a>
 , <a class="el" href="baro__board__ms5611__spi_8c.html#a4ff576c8f1aeccfcbe960067683f487b">baro_board_ms5611_spi.c</a>
 , <a class="el" href="bebop_2baro__board_8h.html#a4ff576c8f1aeccfcbe960067683f487b">baro_board.h</a>
 </li>
 <li>BEBOP_ACCEL_RANGE
 : <a class="el" href="imu__bebop_8h.html#a70a016cc48bdbc25cbe6efbf5c26b7d1">imu_bebop.h</a>
-</li>
-<li>BEBOP_AE_AWB_CAMERA
-: <a class="el" href="bebop__ae__awb_8c.html#a307ee35918a5b9d018cd45008dc52e0d">bebop_ae_awb.c</a>
 </li>
 <li>BEBOP_AE_AWB_NICE
 : <a class="el" href="bebop__ae__awb_8c.html#a284b4e16ba6bed18cfbfa94a3ebd5537">bebop_ae_awb.c</a>
@@ -582,6 +578,9 @@ $(document).ready(function(){initNavTree('globals_defs_b.html','');});
 <li>BFP_OF_REAL
 : <a class="el" href="group__math__algebra__int.html#gaa6bb9343d0a10947a0824bc67cf4a47d">pprz_algebra_int.h</a>
 </li>
+<li>BIT
+: <a class="el" href="virt2phys_8c.html#a4af0eb308fa447e114c2839fb9fdec68">virt2phys.c</a>
+</li>
 <li>BIT_NUMBER
 : <a class="el" href="boards_2ardrone_2actuators_8c.html#ad87a7f48bd6ebc50a23c03b0b84490ed">actuators.c</a>
 </li>
@@ -626,6 +625,243 @@ $(document).ready(function(){initNavTree('globals_defs_b.html','');});
 </li>
 <li>BLUEGIGA_SPI_BUF_SIZE
 : <a class="el" href="bluegiga_8h.html#a08972abdf5f3bafedcb94aaac8c14810">bluegiga.h</a>
+</li>
+<li>BLUEGIGA_UPDATE_DL
+: <a class="el" href="bluegiga__dl_8c.html#a05af5c1eb35d40188f3d1fb440774fd7">bluegiga_dl.c</a>
+</li>
+<li>BMI088_ACCEL_ADDR
+: <a class="el" href="bmi088__regs_8h.html#ab97f6b9c23511b5a156fa5f35ffa26f5">bmi088_regs.h</a>
+</li>
+<li>BMI088_ACCEL_ADDR_ALT
+: <a class="el" href="bmi088__regs_8h.html#aea4c5ac05ded0808781569358361aa0a">bmi088_regs.h</a>
+</li>
+<li>BMI088_ACCEL_CHIP_ID
+: <a class="el" href="bmi088__regs_8h.html#ad7a3c090df1889ce98bf90d0a87f3857">bmi088_regs.h</a>
+</li>
+<li>BMI088_ACCEL_CONF
+: <a class="el" href="bmi088__regs_8h.html#ae6f5bab111b705cda6085219f471bfd3">bmi088_regs.h</a>
+</li>
+<li>BMI088_ACCEL_ERR_REG
+: <a class="el" href="bmi088__regs_8h.html#af18e4a131b7bc805d9d47583c840b53f">bmi088_regs.h</a>
+</li>
+<li>BMI088_ACCEL_INT1_IO_CTRL
+: <a class="el" href="bmi088__regs_8h.html#a6cf117ca60a91d46775b230a9c15ff4d">bmi088_regs.h</a>
+</li>
+<li>BMI088_ACCEL_INT2_IO_CTRL
+: <a class="el" href="bmi088__regs_8h.html#ac8c5182ebf991ac16a96e7061f9a199b">bmi088_regs.h</a>
+</li>
+<li>BMI088_ACCEL_INT_MAP_DATA
+: <a class="el" href="bmi088__regs_8h.html#a93e3fda5085ab22d2b2f9a34af2e897e">bmi088_regs.h</a>
+</li>
+<li>BMI088_ACCEL_INT_STAT_1
+: <a class="el" href="bmi088__regs_8h.html#a21597f9327552deedc2bd5e3b8604269">bmi088_regs.h</a>
+</li>
+<li>BMI088_ACCEL_PWR_CONF
+: <a class="el" href="bmi088__regs_8h.html#a81aff3b96b7233020b6fb60e3e3eff63">bmi088_regs.h</a>
+</li>
+<li>BMI088_ACCEL_PWR_CTRl
+: <a class="el" href="bmi088__regs_8h.html#af7b75e6e56514728b8721b8ecdce0e3d">bmi088_regs.h</a>
+</li>
+<li>BMI088_ACCEL_RANGE
+: <a class="el" href="bmi088__regs_8h.html#a0681c47cce7b99baa82f3fae63172430">bmi088_regs.h</a>
+</li>
+<li>BMI088_ACCEL_SELF_TEST
+: <a class="el" href="bmi088__regs_8h.html#a6103be2e9e5fa53ec1dad5fb621ee370">bmi088_regs.h</a>
+</li>
+<li>BMI088_ACCEL_SENS_12G
+: <a class="el" href="bmi088_8h.html#a141f18820ce1d4e9b4b347ec7342d389">bmi088.h</a>
+</li>
+<li>BMI088_ACCEL_SENS_12G_DEN
+: <a class="el" href="bmi088_8h.html#a949997efd505f8b884f49487b4618795">bmi088.h</a>
+</li>
+<li>BMI088_ACCEL_SENS_12G_NUM
+: <a class="el" href="bmi088_8h.html#a7c6175f146d9e5cafce67e5cf7fd0af4">bmi088.h</a>
+</li>
+<li>BMI088_ACCEL_SENS_24G
+: <a class="el" href="bmi088_8h.html#a3b758e956ec0d8e9658aa50633f5e31b">bmi088.h</a>
+</li>
+<li>BMI088_ACCEL_SENS_24G_DEN
+: <a class="el" href="bmi088_8h.html#ad065ff95813dad89c121b668984ec770">bmi088.h</a>
+</li>
+<li>BMI088_ACCEL_SENS_24G_NUM
+: <a class="el" href="bmi088_8h.html#a664f650c0d07dafb083d7e1b4ce79c57">bmi088.h</a>
+</li>
+<li>BMI088_ACCEL_SENS_3G
+: <a class="el" href="bmi088_8h.html#afee6d28f6228f0691836460f26736bba">bmi088.h</a>
+</li>
+<li>BMI088_ACCEL_SENS_3G_DEN
+: <a class="el" href="bmi088_8h.html#ace2070a28288e3cc39a05f2aedd115af">bmi088.h</a>
+</li>
+<li>BMI088_ACCEL_SENS_3G_NUM
+: <a class="el" href="bmi088_8h.html#a2826d0ef009e0fb933f887a0c4eae722">bmi088.h</a>
+</li>
+<li>BMI088_ACCEL_SENS_6G
+: <a class="el" href="bmi088_8h.html#a0f2c05a102caf870f6d6fe0a98d70765">bmi088.h</a>
+</li>
+<li>BMI088_ACCEL_SENS_6G_DEN
+: <a class="el" href="bmi088_8h.html#a46b76e576ab953d8e4b8092fb38ee3de">bmi088.h</a>
+</li>
+<li>BMI088_ACCEL_SENS_6G_NUM
+: <a class="el" href="bmi088_8h.html#a6fcccbb88da5b406797c1477854ea7b8">bmi088.h</a>
+</li>
+<li>BMI088_ACCEL_SENSOR_TIME_0
+: <a class="el" href="bmi088__regs_8h.html#a06a61e09aa021e84485d93b080fb57a1">bmi088_regs.h</a>
+</li>
+<li>BMI088_ACCEL_SENSOR_TIME_1
+: <a class="el" href="bmi088__regs_8h.html#a82dceee8fa78da6c49210a2e6f558a92">bmi088_regs.h</a>
+</li>
+<li>BMI088_ACCEL_SENSOR_TIME_2
+: <a class="el" href="bmi088__regs_8h.html#a00518a7e7ff38b71b99fa5347a11eb00">bmi088_regs.h</a>
+</li>
+<li>BMI088_ACCEL_SOFT_RESET
+: <a class="el" href="bmi088__regs_8h.html#a7f582535300f5172d7179ec5edc6d536">bmi088_regs.h</a>
+</li>
+<li>BMI088_ACCEL_STATUS
+: <a class="el" href="bmi088__regs_8h.html#a43361c5a2fb2543f453f6a7fa6165226">bmi088_regs.h</a>
+</li>
+<li>BMI088_ACCEL_TEMP_LSB
+: <a class="el" href="bmi088__regs_8h.html#a20c3d2808efec86c2f89422d02797425">bmi088_regs.h</a>
+</li>
+<li>BMI088_ACCEL_TEMP_MSB
+: <a class="el" href="bmi088__regs_8h.html#a95c9cb77fae004a814ec911dea6e326d">bmi088_regs.h</a>
+</li>
+<li>BMI088_ACCEL_X_LSB
+: <a class="el" href="bmi088__regs_8h.html#a1af58be03ad96fbff2059f93966efe2e">bmi088_regs.h</a>
+</li>
+<li>BMI088_ACCEL_X_MSB
+: <a class="el" href="bmi088__regs_8h.html#a8127f9e52d1d2d3bf25da0c897731327">bmi088_regs.h</a>
+</li>
+<li>BMI088_ACCEL_Y_LSB
+: <a class="el" href="bmi088__regs_8h.html#aecca7c1ab2c4a8bd9a8d0893e8faed12">bmi088_regs.h</a>
+</li>
+<li>BMI088_ACCEL_Y_MSB
+: <a class="el" href="bmi088__regs_8h.html#ab1e53a5f52e424716f872331e5899e2d">bmi088_regs.h</a>
+</li>
+<li>BMI088_ACCEL_Z_LSB
+: <a class="el" href="bmi088__regs_8h.html#a8e945fd82014b80c888ed42f81e319dd">bmi088_regs.h</a>
+</li>
+<li>BMI088_ACCEL_Z_MSB
+: <a class="el" href="bmi088__regs_8h.html#af2f88c647b76f8802abf7ac566fde422">bmi088_regs.h</a>
+</li>
+<li>BMI088_CONFIG_ACCEL
+: <a class="el" href="bmi088_8h.html#a2190555c390d8d6eb35e01f38669cc2c">bmi088.h</a>
+</li>
+<li>BMI088_CONFIG_GYRO
+: <a class="el" href="bmi088_8h.html#a6536026d2da5fa6b9281c61798a27942">bmi088.h</a>
+</li>
+<li>BMI088_DEFAULT_ACCEL_BW
+: <a class="el" href="bmi088_8h.html#a01e9de7ea99be7b180e4f92d1fd6d44a">bmi088.h</a>
+</li>
+<li>BMI088_DEFAULT_ACCEL_ODR
+: <a class="el" href="bmi088_8h.html#afe4dfea0dd8f315a7e3b5dd18c3f026a">bmi088.h</a>
+</li>
+<li>BMI088_DEFAULT_ACCEL_RANGE
+: <a class="el" href="bmi088_8h.html#ab2204898557abad9fd042b6613b58a28">bmi088.h</a>
+</li>
+<li>BMI088_DEFAULT_GYRO_ODR
+: <a class="el" href="bmi088_8h.html#ad22d44db1a98a29139579d910a06d008">bmi088.h</a>
+</li>
+<li>BMI088_DEFAULT_GYRO_RANGE
+: <a class="el" href="bmi088_8h.html#a4de9c4972b4fca09f48202e801339376">bmi088.h</a>
+</li>
+<li>BMI088_GYRO_ADDR
+: <a class="el" href="bmi088__regs_8h.html#a59890fb634993026d4e4344656ff771b">bmi088_regs.h</a>
+</li>
+<li>BMI088_GYRO_ADDR_ALT
+: <a class="el" href="bmi088__regs_8h.html#a649569c759c6de2f966ca28de3e20375">bmi088_regs.h</a>
+</li>
+<li>BMI088_GYRO_BAND_WIDTH
+: <a class="el" href="bmi088__regs_8h.html#a6b0623ff0c126fead3dd9ee8e55deddf">bmi088_regs.h</a>
+</li>
+<li>BMI088_GYRO_CHIP_ID
+: <a class="el" href="bmi088__regs_8h.html#a1b31a99767c476994425f97f2ade7246">bmi088_regs.h</a>
+</li>
+<li>BMI088_GYRO_INT3_INT4_IO_CONF
+: <a class="el" href="bmi088__regs_8h.html#aaf3a5ace41a155ff8fecdc3289df9fb4">bmi088_regs.h</a>
+</li>
+<li>BMI088_GYRO_INT3_INT4_IO_MAP
+: <a class="el" href="bmi088__regs_8h.html#adce916b28ff75bc6baa01da9e415adca">bmi088_regs.h</a>
+</li>
+<li>BMI088_GYRO_INT_CTRL
+: <a class="el" href="bmi088__regs_8h.html#a77ce06c0488b6f519f129c77ab3e9102">bmi088_regs.h</a>
+</li>
+<li>BMI088_GYRO_INT_STAT_1
+: <a class="el" href="bmi088__regs_8h.html#a3af58fb30e26aeda2425040f4dfd0bf6">bmi088_regs.h</a>
+</li>
+<li>BMI088_GYRO_LPM_1
+: <a class="el" href="bmi088__regs_8h.html#a4df7bf1d87a3420fd3344a857fd194be">bmi088_regs.h</a>
+</li>
+<li>BMI088_GYRO_RANGE
+: <a class="el" href="bmi088__regs_8h.html#a1a52350916658a14389d0176ad7a1e76">bmi088_regs.h</a>
+</li>
+<li>BMI088_GYRO_RATE_X_LSB
+: <a class="el" href="bmi088__regs_8h.html#a59395733e43e82b15084d632dce434b0">bmi088_regs.h</a>
+</li>
+<li>BMI088_GYRO_RATE_X_MSB
+: <a class="el" href="bmi088__regs_8h.html#ab057159cf89304c46cfc2b5b0f1af5bb">bmi088_regs.h</a>
+</li>
+<li>BMI088_GYRO_RATE_Y_LSB
+: <a class="el" href="bmi088__regs_8h.html#acf2122b5cec13649326ef984670ec34c">bmi088_regs.h</a>
+</li>
+<li>BMI088_GYRO_RATE_Y_MSB
+: <a class="el" href="bmi088__regs_8h.html#aac7fc73258760ce2d4b435a8c0176df6">bmi088_regs.h</a>
+</li>
+<li>BMI088_GYRO_RATE_Z_LSB
+: <a class="el" href="bmi088__regs_8h.html#af878f4c88f4d1357444eff3d045eaa7a">bmi088_regs.h</a>
+</li>
+<li>BMI088_GYRO_RATE_Z_MSB
+: <a class="el" href="bmi088__regs_8h.html#aede69185486a3ff1902237fc0aedbe2f">bmi088_regs.h</a>
+</li>
+<li>BMI088_GYRO_SELF_TEST
+: <a class="el" href="bmi088__regs_8h.html#a985638139ec41a3c1a4b73a5414e81f3">bmi088_regs.h</a>
+</li>
+<li>BMI088_GYRO_SENS_1000
+: <a class="el" href="bmi088_8h.html#acbd72b4782499ae7d0e7f00164bf031c">bmi088.h</a>
+</li>
+<li>BMI088_GYRO_SENS_1000_DEN
+: <a class="el" href="bmi088_8h.html#af86de9930395d8c4c3620c62035cd13b">bmi088.h</a>
+</li>
+<li>BMI088_GYRO_SENS_1000_NUM
+: <a class="el" href="bmi088_8h.html#a5cf843ff2f0edf5e2e9ef408ea805328">bmi088.h</a>
+</li>
+<li>BMI088_GYRO_SENS_125
+: <a class="el" href="bmi088_8h.html#aff6364490333f04c67652e9269bfa164">bmi088.h</a>
+</li>
+<li>BMI088_GYRO_SENS_125_DEN
+: <a class="el" href="bmi088_8h.html#ad4ffc192a52eb7b2acc8e2ce0916de3a">bmi088.h</a>
+</li>
+<li>BMI088_GYRO_SENS_125_NUM
+: <a class="el" href="bmi088_8h.html#a8f7ec8290ef20dcf3740f6c5a4ac2f18">bmi088.h</a>
+</li>
+<li>BMI088_GYRO_SENS_2000
+: <a class="el" href="bmi088_8h.html#a8f452a334ca3e568e1f60d944b7f1b07">bmi088.h</a>
+</li>
+<li>BMI088_GYRO_SENS_2000_DEN
+: <a class="el" href="bmi088_8h.html#af92e4d481b646b478c2dd3a9204936c4">bmi088.h</a>
+</li>
+<li>BMI088_GYRO_SENS_2000_NUM
+: <a class="el" href="bmi088_8h.html#a80bc60413ab84018f9efa27ce683f52a">bmi088.h</a>
+</li>
+<li>BMI088_GYRO_SENS_250
+: <a class="el" href="bmi088_8h.html#afca30bcd7105b0d5ac07d94e58694daf">bmi088.h</a>
+</li>
+<li>BMI088_GYRO_SENS_250_DEN
+: <a class="el" href="bmi088_8h.html#a8247eb2087a65603255bad95a12a8d12">bmi088.h</a>
+</li>
+<li>BMI088_GYRO_SENS_250_NUM
+: <a class="el" href="bmi088_8h.html#a889eef41c9fdab5ecf702e4cb3618949">bmi088.h</a>
+</li>
+<li>BMI088_GYRO_SENS_500
+: <a class="el" href="bmi088_8h.html#a0646cdc3b43c4709b811e09db4e5d76e">bmi088.h</a>
+</li>
+<li>BMI088_GYRO_SENS_500_DEN
+: <a class="el" href="bmi088_8h.html#a7a00f2a24ac63a965da8ac2e86497a01">bmi088.h</a>
+</li>
+<li>BMI088_GYRO_SENS_500_NUM
+: <a class="el" href="bmi088_8h.html#abf2726bb3bc6514646221047a478fed2">bmi088.h</a>
+</li>
+<li>BMI088_GYRO_SOFT_RESET
+: <a class="el" href="bmi088__regs_8h.html#a0533ea9415878b8378721a3e8963ff55">bmi088_regs.h</a>
 </li>
 <li>BMP085_CTRL_REG
 : <a class="el" href="bmp085__regs_8h.html#aba8a2ba67440fd080a0d0b32c2e8839b">bmp085_regs.h</a>
@@ -696,6 +932,225 @@ $(document).ready(function(){initNavTree('globals_defs_b.html','');});
 <li>BMP180_OSS
 : <a class="el" href="ardrone_2baro__board_8c.html#a0b8ffa9cd76fa9a3bf11035c1734c5ec">baro_board.c</a>
 </li>
+<li>BMP3_ALL
+: <a class="el" href="bmp3__regs_8h.html#a8a9c33df65676b97da834864a63dd1f9">bmp3_regs.h</a>
+</li>
+<li>BMP3_CALIB_DATA_ADDR
+: <a class="el" href="bmp3__regs_8h.html#a737cf1e34dc1a96647d5c17440d985ed">bmp3_regs.h</a>
+</li>
+<li>BMP3_CALIB_DATA_LEN
+: <a class="el" href="bmp3__regs_8h.html#a5c12be1406dd220cb851f732ee7e619b">bmp3_regs.h</a>
+</li>
+<li>BMP3_CHIP_ID
+: <a class="el" href="bmp3__regs_8h.html#aa17c4ec4ae892f9d1686e6a38d50f26c">bmp3_regs.h</a>
+</li>
+<li>BMP3_CHIP_ID_ADDR
+: <a class="el" href="bmp3__regs_8h.html#a8bb0840a7ebf62a4af62fbd02268cef8">bmp3_regs.h</a>
+</li>
+<li>BMP3_CMD_ADDR
+: <a class="el" href="bmp3__regs_8h.html#afc5d6a73a1420d252bcffe48604dbb98">bmp3_regs.h</a>
+</li>
+<li>BMP3_COMPENSATION
+: <a class="el" href="bmp3__regs_8h.html#a454425f33de6262271b2e01c6703bcc7">bmp3_regs.h</a>
+</li>
+<li>BMP3_CONCAT_BYTES
+: <a class="el" href="bmp3__regs_8h.html#ad0081e2592138bf72a3f56ef42a7cc27">bmp3_regs.h</a>
+</li>
+<li>BMP3_CONFIG_ADDR
+: <a class="el" href="bmp3__regs_8h.html#a62d3146789316bdd7519a435898822c2">bmp3_regs.h</a>
+</li>
+<li>BMP3_DATA_ADDR
+: <a class="el" href="bmp3__regs_8h.html#a4b4c8a9a0af6221bb42dd5eed6f36229">bmp3_regs.h</a>
+</li>
+<li>BMP3_DOUBLE_PRECISION_COMPENSATION
+: <a class="el" href="bmp3__regs_8h.html#a778cc73cb43946204f94dbad1a346195">bmp3_regs.h</a>
+</li>
+<li>BMP3_ERR_REG_ADDR
+: <a class="el" href="bmp3__regs_8h.html#a0e067b5ad6f6c86975bd3cd4031da95c">bmp3_regs.h</a>
+</li>
+<li>BMP3_EVENT_ADDR
+: <a class="el" href="bmp3__regs_8h.html#a27b911f73095f8ee0b0b632bde16a265">bmp3_regs.h</a>
+</li>
+<li>BMP3_FIFO_CONFIG_1_ADDR
+: <a class="el" href="bmp3__regs_8h.html#afeddccb283fcfefcd6c1960f6e806998">bmp3_regs.h</a>
+</li>
+<li>BMP3_FIFO_CONFIG_2_ADDR
+: <a class="el" href="bmp3__regs_8h.html#a410cc2a2292fe968858369a7e712487c">bmp3_regs.h</a>
+</li>
+<li>BMP3_FIFO_DATA_ADDR
+: <a class="el" href="bmp3__regs_8h.html#a416cabd39ea0a91434cd62f2026eee4c">bmp3_regs.h</a>
+</li>
+<li>BMP3_FIFO_LENGTH_ADDR
+: <a class="el" href="bmp3__regs_8h.html#a31bf810caebb47d9ab2122ce8be09eff">bmp3_regs.h</a>
+</li>
+<li>BMP3_FIFO_WM_ADDR
+: <a class="el" href="bmp3__regs_8h.html#a9e09acae1b3679d1061644b01ba0319a">bmp3_regs.h</a>
+</li>
+<li>BMP3_FORCED_MODE
+: <a class="el" href="bmp3__regs_8h.html#a147183f222f1fe28267b31bb7190363d">bmp3_regs.h</a>
+</li>
+<li>BMP3_I2C_ADDR
+: <a class="el" href="bmp3__regs_8h.html#ad510e9c2768e02a10013ca0f38baa7e1">bmp3_regs.h</a>
+</li>
+<li>BMP3_I2C_ADDR_ALT
+: <a class="el" href="bmp3__regs_8h.html#a61930e7e33527c64ae5a5db283108e93">bmp3_regs.h</a>
+</li>
+<li>BMP3_IF_CONF_ADDR
+: <a class="el" href="bmp3__regs_8h.html#aafa3ab2d78a8c84a5583ec68d3fddb0e">bmp3_regs.h</a>
+</li>
+<li>BMP3_IIR_FILTER_COEFF_1
+: <a class="el" href="bmp3__regs_8h.html#a6f773c83c1efd9f4d2ca033b0c363f3e">bmp3_regs.h</a>
+</li>
+<li>BMP3_IIR_FILTER_COEFF_127
+: <a class="el" href="bmp3__regs_8h.html#a85ed39a9d0d5d4e3b3e97f75055bf67a">bmp3_regs.h</a>
+</li>
+<li>BMP3_IIR_FILTER_COEFF_15
+: <a class="el" href="bmp3__regs_8h.html#ada014a76d335702bbffeb63bf16240bf">bmp3_regs.h</a>
+</li>
+<li>BMP3_IIR_FILTER_COEFF_3
+: <a class="el" href="bmp3__regs_8h.html#a63249584358502978d1ee014bf2ea4f6">bmp3_regs.h</a>
+</li>
+<li>BMP3_IIR_FILTER_COEFF_31
+: <a class="el" href="bmp3__regs_8h.html#aafc4478383ebc7fe6fa457b91959e645">bmp3_regs.h</a>
+</li>
+<li>BMP3_IIR_FILTER_COEFF_63
+: <a class="el" href="bmp3__regs_8h.html#a4ecc1b5d5406ce0d8e5f8c09a97b2e4c">bmp3_regs.h</a>
+</li>
+<li>BMP3_IIR_FILTER_COEFF_7
+: <a class="el" href="bmp3__regs_8h.html#a73f6b983fad326e611cf10dd7a15e45a">bmp3_regs.h</a>
+</li>
+<li>BMP3_IIR_FILTER_DISABLE
+: <a class="el" href="bmp3__regs_8h.html#a2196584fe2b79aafb0daa6137432437a">bmp3_regs.h</a>
+</li>
+<li>BMP3_INT_CTRL_ADDR
+: <a class="el" href="bmp3__regs_8h.html#ab4616e018118813598c5de494ac26057">bmp3_regs.h</a>
+</li>
+<li>BMP3_INT_STATUS_REG_ADDR
+: <a class="el" href="bmp3__regs_8h.html#a19c1198ea1e718e6324b48a816b85156">bmp3_regs.h</a>
+</li>
+<li>BMP3_INTEGER_COMPENSATION
+: <a class="el" href="bmp3__regs_8h.html#a08744048b126b835a0d8316ac0c2c1c6">bmp3_regs.h</a>
+</li>
+<li>BMP3_NO_OVERSAMPLING
+: <a class="el" href="bmp3__regs_8h.html#a7e09e9a5d13eeb7f57c2e703284e54db">bmp3_regs.h</a>
+</li>
+<li>BMP3_NORMAL_MODE
+: <a class="el" href="bmp3__regs_8h.html#a4cc0776fdb5adff6497dcb03a0941c39">bmp3_regs.h</a>
+</li>
+<li>BMP3_ODR_0_001_HZ
+: <a class="el" href="bmp3__regs_8h.html#adb896e9709481daa924987b266b782a5">bmp3_regs.h</a>
+</li>
+<li>BMP3_ODR_0_003_HZ
+: <a class="el" href="bmp3__regs_8h.html#aa3b64dec0e533d0a04fd4f45b682cefd">bmp3_regs.h</a>
+</li>
+<li>BMP3_ODR_0_006_HZ
+: <a class="el" href="bmp3__regs_8h.html#a4d3288cf772d351d8fbe7087a1179f5c">bmp3_regs.h</a>
+</li>
+<li>BMP3_ODR_0_01_HZ
+: <a class="el" href="bmp3__regs_8h.html#ad64e516c52bace01307785557a30c1ff">bmp3_regs.h</a>
+</li>
+<li>BMP3_ODR_0_02_HZ
+: <a class="el" href="bmp3__regs_8h.html#ac3cbb4ad4012eb5593d440b82fc66958">bmp3_regs.h</a>
+</li>
+<li>BMP3_ODR_0_05_HZ
+: <a class="el" href="bmp3__regs_8h.html#a9005ee888b617048be2c37fd7d5a096b">bmp3_regs.h</a>
+</li>
+<li>BMP3_ODR_0_1_HZ
+: <a class="el" href="bmp3__regs_8h.html#a43706ac76aa1d4b367dd52d2071748f1">bmp3_regs.h</a>
+</li>
+<li>BMP3_ODR_0_2_HZ
+: <a class="el" href="bmp3__regs_8h.html#add3927605719a9b1377aa8441ae8aad0">bmp3_regs.h</a>
+</li>
+<li>BMP3_ODR_0_39_HZ
+: <a class="el" href="bmp3__regs_8h.html#a12f8c47ff31793a67d8c105118fc8ba2">bmp3_regs.h</a>
+</li>
+<li>BMP3_ODR_0_78_HZ
+: <a class="el" href="bmp3__regs_8h.html#a0f424f48e23f66fbafd12e574aa59b2d">bmp3_regs.h</a>
+</li>
+<li>BMP3_ODR_100_HZ
+: <a class="el" href="bmp3__regs_8h.html#aa9739b8211e68cbcf3cce0dfbb6dcc43">bmp3_regs.h</a>
+</li>
+<li>BMP3_ODR_12_5_HZ
+: <a class="el" href="bmp3__regs_8h.html#a04ca7f8cdc1dd22d98be390e5c0a9e9e">bmp3_regs.h</a>
+</li>
+<li>BMP3_ODR_1_5_HZ
+: <a class="el" href="bmp3__regs_8h.html#a7c8fa5e894a660fa4595b1990a86a073">bmp3_regs.h</a>
+</li>
+<li>BMP3_ODR_200_HZ
+: <a class="el" href="bmp3__regs_8h.html#a0189ddc242584bfc3947f79610c8e5d1">bmp3_regs.h</a>
+</li>
+<li>BMP3_ODR_25_HZ
+: <a class="el" href="bmp3__regs_8h.html#ae861f1dda7f03b0fb6fd8b9ac4be0c00">bmp3_regs.h</a>
+</li>
+<li>BMP3_ODR_3_1_HZ
+: <a class="el" href="bmp3__regs_8h.html#afb38fd553738466166147f162693dfd1">bmp3_regs.h</a>
+</li>
+<li>BMP3_ODR_50_HZ
+: <a class="el" href="bmp3__regs_8h.html#a9cc23dbcac01dcb749f3b46cc9d9dfb9">bmp3_regs.h</a>
+</li>
+<li>BMP3_ODR_6_25_HZ
+: <a class="el" href="bmp3__regs_8h.html#aedd1ab63c3186d74c6bea16696308c8b">bmp3_regs.h</a>
+</li>
+<li>BMP3_ODR_ADDR
+: <a class="el" href="bmp3__regs_8h.html#aa8b2394c679bd9658abfce43d81f9068">bmp3_regs.h</a>
+</li>
+<li>BMP3_OSR_ADDR
+: <a class="el" href="bmp3__regs_8h.html#adfec220bf580c3576a5fe031a6c7a67a">bmp3_regs.h</a>
+</li>
+<li>BMP3_OVERSAMPLING_16X
+: <a class="el" href="bmp3__regs_8h.html#a3bdb6456e802b9cce0ea9c5aa3e1dfc0">bmp3_regs.h</a>
+</li>
+<li>BMP3_OVERSAMPLING_2X
+: <a class="el" href="bmp3__regs_8h.html#ab596eab9574151caa30613b61e599b10">bmp3_regs.h</a>
+</li>
+<li>BMP3_OVERSAMPLING_32X
+: <a class="el" href="bmp3__regs_8h.html#acd7b3c28a1a52496ee8b1e7e52ecb981">bmp3_regs.h</a>
+</li>
+<li>BMP3_OVERSAMPLING_4X
+: <a class="el" href="bmp3__regs_8h.html#a6d4828b3f0f10c0c19a7a64b8a8c20f5">bmp3_regs.h</a>
+</li>
+<li>BMP3_OVERSAMPLING_8X
+: <a class="el" href="bmp3__regs_8h.html#aa07ad4bcf27972dce32ae952c5446d38">bmp3_regs.h</a>
+</li>
+<li>BMP3_P_AND_T_HEADER_DATA_LEN
+: <a class="el" href="bmp3__regs_8h.html#aa759f5811b430d295fa8d6732ce58e40">bmp3_regs.h</a>
+</li>
+<li>BMP3_P_DATA_LEN
+: <a class="el" href="bmp3__regs_8h.html#a99ce9afa0a90d60d9753c5098cc9e0ec">bmp3_regs.h</a>
+</li>
+<li>BMP3_P_OR_T_HEADER_DATA_LEN
+: <a class="el" href="bmp3__regs_8h.html#adcd5ec5214c62fd0c172022d020ecc1e">bmp3_regs.h</a>
+</li>
+<li>BMP3_P_T_DATA_LEN
+: <a class="el" href="bmp3__regs_8h.html#aabc2676bfdfdd2e0e8539ae082d1de1a">bmp3_regs.h</a>
+</li>
+<li>BMP3_PRESS
+: <a class="el" href="bmp3__regs_8h.html#a0bc291d86e14260388098c461c49b37e">bmp3_regs.h</a>
+</li>
+<li>BMP3_PWR_CTRL_ADDR
+: <a class="el" href="bmp3__regs_8h.html#ab77fd16e82ee2a324fff3fb0519eee87">bmp3_regs.h</a>
+</li>
+<li>BMP3_SENS_STATUS_REG_ADDR
+: <a class="el" href="bmp3__regs_8h.html#a306acc5582f69fdc81db36aedc6ba14a">bmp3_regs.h</a>
+</li>
+<li>BMP3_SENSOR_TIME_LEN
+: <a class="el" href="bmp3__regs_8h.html#aa0d5ae6662a200913b266a6a76c961e4">bmp3_regs.h</a>
+</li>
+<li>BMP3_SINGLE_PRECISION_COMPENSATION
+: <a class="el" href="bmp3__regs_8h.html#a5ec480c70e9c0cb1dd7451a8d55a6a1b">bmp3_regs.h</a>
+</li>
+<li>BMP3_SLAVE_ADDR
+: <a class="el" href="baro__bmp3_8c.html#aa9089b201322e86eeec1550bfeae05be">baro_bmp3.c</a>
+</li>
+<li>BMP3_SLEEP_MODE
+: <a class="el" href="bmp3__regs_8h.html#aa28989c8d5bebce4e4a919ef176907fd">bmp3_regs.h</a>
+</li>
+<li>BMP3_T_DATA_LEN
+: <a class="el" href="bmp3__regs_8h.html#a7a7a2f3c150a66a3c03dae7abc481b75">bmp3_regs.h</a>
+</li>
+<li>BMP3_TEMP
+: <a class="el" href="bmp3__regs_8h.html#a367e3fd6ae22dbc91d46571d405c81f1">bmp3_regs.h</a>
+</li>
 <li>BMP_I2C_DEV
 : <a class="el" href="baro__bmp_8c.html#ac9e2f079b03497055001c48b6fdbe21a">baro_bmp.c</a>
 </li>
@@ -727,6 +1182,9 @@ $(document).ready(function(){initNavTree('globals_defs_b.html','');});
 <li>BOARD_CJMCU
 : <a class="el" href="cjmcu_8h.html#ac0317b07ed4e221518a953468e8595df">cjmcu.h</a>
 </li>
+<li>BOARD_CRAZYFLIE
+: <a class="el" href="crazyflie_8h.html#aeb333eacf2917ece1d40450c2d3a7068">crazyflie.h</a>
+</li>
 <li>BOARD_DISCO
 : <a class="el" href="disco_8h.html#a0bd4697e31b2ceddbb7f20f7c3928f77">disco.h</a>
 </li>
@@ -746,9 +1204,9 @@ $(document).ready(function(){initNavTree('globals_defs_b.html','');});
 : <a class="el" href="lisa__l__1_80_8h.html#a5dd43bf9103c4a464e35816ecda290ac">lisa_l_1.0.h</a>
 </li>
 <li>BOARD_LISA_M
-: <a class="el" href="lisa__m__1_80_8h.html#a7eeaab0a07ca1795ca1835de3438d88c">lisa_m_1.0.h</a>
+: <a class="el" href="lisa__m__2_80_8h.html#a7eeaab0a07ca1795ca1835de3438d88c">lisa_m_2.0.h</a>
 , <a class="el" href="lisa__m__2_81_8h.html#a7eeaab0a07ca1795ca1835de3438d88c">lisa_m_2.1.h</a>
-, <a class="el" href="lisa__m__2_80_8h.html#a7eeaab0a07ca1795ca1835de3438d88c">lisa_m_2.0.h</a>
+, <a class="el" href="lisa__m__1_80_8h.html#a7eeaab0a07ca1795ca1835de3438d88c">lisa_m_1.0.h</a>
 </li>
 <li>BOARD_LISA_MX
 : <a class="el" href="lisa__mx__common_8h.html#ad5ab672ed99e0ed22b94b1b1712024ac">lisa_mx_common.h</a>
@@ -757,7 +1215,7 @@ $(document).ready(function(){initNavTree('globals_defs_b.html','');});
 : <a class="el" href="lisa__s__1_80_8h.html#a09c38bb059efc5446b99a7160bb92254">lisa_s_1.0.h</a>
 </li>
 <li>BOARD_NAME
-: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#a02581754b212d533d96cde56c8145c9b">board.h</a>
+: <a class="el" href="vms__ecu_2chibios_2v1_80_2board_8h.html#a02581754b212d533d96cde56c8145c9b">board.h</a>
 </li>
 <li>BOARD_NAZE32
 : <a class="el" href="naze32__common_8h.html#aa154494d57f96a56b05a33d4af8ea132">naze32_common.h</a>
@@ -769,11 +1227,14 @@ $(document).ready(function(){initNavTree('globals_defs_b.html','');});
 : <a class="el" href="opa__ftd__1_80_8h.html#a53a97ed7cf029107941f36f5b233edf9">opa_ftd_1.0.h</a>
 </li>
 <li>BOARD_PX4FMU
-: <a class="el" href="px4fmu__1_87_8h.html#a5f22007b228fd82094127a698cd0f243">px4fmu_1.7.h</a>
+: <a class="el" href="px4fmu_2chibios_2v4_80_2board_8h.html#a5f22007b228fd82094127a698cd0f243">board.h</a>
+, <a class="el" href="v5_80_2px4fmu_8h.html#a5f22007b228fd82094127a698cd0f243">px4fmu.h</a>
+, <a class="el" href="px4fmu__1_87_8h.html#a5f22007b228fd82094127a698cd0f243">px4fmu_1.7.h</a>
+, <a class="el" href="v4_80_2px4fmu_8h.html#a5f22007b228fd82094127a698cd0f243">px4fmu.h</a>
 </li>
 <li>BOARD_PX4FMU_v2
-: <a class="el" href="px4fmu__2_84_8h.html#a1d9414f7945382146f40ebd4f406b373">px4fmu_2.4.h</a>
-, <a class="el" href="px4fmu_2chibios_2v2_84_2board_8h.html#a1d9414f7945382146f40ebd4f406b373">board.h</a>
+: <a class="el" href="px4fmu_2chibios_2v2_84_2board_8h.html#a1d9414f7945382146f40ebd4f406b373">board.h</a>
+, <a class="el" href="px4fmu__2_84_8h.html#a1d9414f7945382146f40ebd4f406b373">px4fmu_2.4.h</a>
 </li>
 <li>BOARD_PX4FMU_V4
 : <a class="el" href="px4fmu__4_80_8h.html#a726d74adb2ac8c58c975fb1ff6322ea1">px4fmu_4.0.h</a>
@@ -786,6 +1247,9 @@ $(document).ready(function(){initNavTree('globals_defs_b.html','');});
 </li>
 <li>BOARD_ST_APOGEE
 : <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a8691cdd89bd658b2d24a3adbd4d61b59">board.h</a>
+</li>
+<li>BOARD_ST_CRAZYFLIE
+: <a class="el" href="crazyflie_2chibios_2v2_81_2board_8h.html#ae15d10244b0f0882fafb4fc44868e027">board.h</a>
 </li>
 <li>BOARD_ST_STM32373C_XVERT
 : <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#a0308d86678f4f22813b1071174530641">board.h</a>
@@ -805,8 +1269,15 @@ $(document).ready(function(){initNavTree('globals_defs_b.html','');});
 <li>BOARD_SWING
 : <a class="el" href="swing_8h.html#a76ebf5bbee85d331327408c3da20838a">swing.h</a>
 </li>
+<li>BOARD_TAWAKI
+: <a class="el" href="tawaki_2chibios_2v1_80_2board_8h.html#af1e83b5f5dd84246b52f12166fc0db83">board.h</a>
+, <a class="el" href="tawaki_8h.html#af1e83b5f5dd84246b52f12166fc0db83">tawaki.h</a>
+</li>
 <li>BOOT1
 : <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#acb03234966d1b045245e028326d2e0b3">board.h</a>
+</li>
+<li>BOOT1_PORT
+: <a class="el" href="crazyflie_2chibios_2v2_81_2board_8h.html#acefc565e5e08c7bc9387a49bbfc29715">board.h</a>
 </li>
 <li>BOOZ_ANALOG_BARO_THRESHOLD
 : <a class="el" href="booz_2baro__board_8c.html#a67c9aca109fecabd8d15c3ac9cc8dae7">baro_board.c</a>
@@ -828,6 +1299,9 @@ $(document).ready(function(){initNavTree('globals_defs_b.html','');});
 </li>
 <li>BoozSetPwmValue
 : <a class="el" href="booz__pwm__arch_8h.html#a67bd835310f6970a88ede1324e0ac585">booz_pwm_arch.h</a>
+</li>
+<li>bottom_camera
+: <a class="el" href="mt9v117__nps_8c.html#a4f6ec70cccb53c205de6b69c246637c3">mt9v117_nps.c</a>
 </li>
 <li>BOUND
 : <a class="el" href="lpc21_2subsystems_2settings__arch_8c.html#aa3d3687532e25854c63dca906abf1032">settings_arch.c</a>
@@ -901,7 +1375,7 @@ $(document).ready(function(){initNavTree('globals_defs_b.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Sep 12 2018 02:04:34 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:04:12 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

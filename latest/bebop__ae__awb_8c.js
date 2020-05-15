@@ -1,6 +1,5 @@
 var bebop__ae__awb_8c =
 [
-    [ "BEBOP_AE_AWB_CAMERA", "bebop__ae__awb_8c.html#a307ee35918a5b9d018cd45008dc52e0d", null ],
     [ "BEBOP_AE_AWB_NICE", "bebop__ae__awb_8c.html#a284b4e16ba6bed18cfbfa94a3ebd5537", null ],
     [ "BEBOP_AE_AWB_VERBOSE", "bebop__ae__awb_8c.html#a6962194dc67d93f19be5944ca662f622", null ],
     [ "BEBOP_AE_BRIGHT_BINS", "bebop__ae__awb_8c.html#adab9ff5d5f09a1224daca8f576be4216", null ],
@@ -24,8 +23,6 @@ var bebop__ae__awb_8c =
     [ "PRINT", "bebop__ae__awb_8c.html#aee52c6162d4b084290ed778856a1ded4", null ],
     [ "VERBOSE_PRINT", "bebop__ae__awb_8c.html#a01535af7e50005fd099fe06f94865e54", null ],
     [ "bebop_ae_awb_init", "bebop__ae__awb_8c.html#a488d91f59b9036f352ebc7fcafdedf7b", null ],
-    [ "bebop_ae_reset", "bebop__ae__awb_8c.html#a09ba6ad3cac712b0a7834f2ec49da7c1", null ],
-    [ "bebop_awb_reset", "bebop__ae__awb_8c.html#a2437d420ea7e9414fafd1d9e9617807a", null ],
     [ "update_ae_awb", "bebop__ae__awb_8c.html#a98dd41d74e2aed7f79d733e5c554701b", null ],
     [ "ae_set", "bebop__ae__awb_8c.html#a59c5ab043c16221c42ac40f1244e323e", null ],
     [ "awb_set", "bebop__ae__awb_8c.html#a8ca8bb5f3e3abe4795ae2a3b08026dbd", null ]

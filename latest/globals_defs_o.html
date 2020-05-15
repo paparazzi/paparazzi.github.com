@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -168,6 +168,9 @@ $(document).ready(function(){initNavTree('globals_defs_o.html','');});
 <li>OBS_DETECTION_COLOR_ID
 : <a class="el" href="abi__sender__ids_8h.html#aa5a933108a0974d6486fe72ca79b249c">abi_sender_ids.h</a>
 </li>
+<li>OBS_DETECTION_MULTI_RANGER_DECK_ID
+: <a class="el" href="abi__sender__ids_8h.html#af45cc92b6332c1464d351aa85ad8aa60">abi_sender_ids.h</a>
+</li>
 <li>OBS_DETECTION_RANGE_ARRAY_ID
 : <a class="el" href="abi__sender__ids_8h.html#ad2f16a9c7c02a063188512a864094fba">abi_sender_ids.h</a>
 </li>
@@ -201,9 +204,6 @@ $(document).ready(function(){initNavTree('globals_defs_o.html','');});
 : <a class="el" href="stabilization__attitude__euler__int_8c.html#a12f569e84b2838005e3c28f4476971e9">stabilization_attitude_euler_int.c</a>
 , <a class="el" href="stabilization__attitude__quat__int_8c.html#a12f569e84b2838005e3c28f4476971e9">stabilization_attitude_quat_int.c</a>
 , <a class="el" href="stabilization__rate_8c.html#a12f569e84b2838005e3c28f4476971e9">stabilization_rate.c</a>
-</li>
-<li>OFFSET_NBSAMPLES_AVRG
-: <a class="el" href="pressure__board__navarro_8c.html#a8b26512257083215cbfde5b9af63fff3">pressure_board_navarro.c</a>
 </li>
 <li>OFH_COV_METHOD
 : <a class="el" href="optical__flow__hover_8c.html#a57e65b92a2945cd79e39f78d01989bf8">optical_flow_hover.c</a>
@@ -449,6 +449,21 @@ $(document).ready(function(){initNavTree('globals_defs_o.html','');});
 <li>OPTICFLOW_METHOD
 : <a class="el" href="opticflow__calculator_8c.html#ad101acfd4a16f6f6637dacd380b77936">opticflow_calculator.c</a>
 </li>
+<li>OPTICFLOW_PMW3901_AGL_ID
+: <a class="el" href="opticflow__pmw3901_8c.html#aeb8f0b0feffe8f730563d091a1b209f7">opticflow_pmw3901.c</a>
+</li>
+<li>OPTICFLOW_PMW3901_AGL_TIMEOUT_US
+: <a class="el" href="opticflow__pmw3901_8c.html#abc3a122cca7165b73878597fb5894c6b">opticflow_pmw3901.c</a>
+</li>
+<li>OPTICFLOW_PMW3901_SENSOR_ANGLE
+: <a class="el" href="opticflow__pmw3901_8c.html#a06145a7d82df2456a84cfce79e4ca622">opticflow_pmw3901.c</a>
+</li>
+<li>OPTICFLOW_PMW3901_STD_PX
+: <a class="el" href="opticflow__pmw3901_8c.html#a5584a920011028006d3e7aee4a8178aa">opticflow_pmw3901.c</a>
+</li>
+<li>OPTICFLOW_PMW3901_SUBPIXEL_FACTOR
+: <a class="el" href="opticflow__pmw3901_8c.html#a11ab9a9427afcbe9514d141eeb0317b9">opticflow_pmw3901.c</a>
+</li>
 <li>OPTICFLOW_PYRAMID_LEVEL
 : <a class="el" href="opticflow__calculator_8c.html#a89786798db7f21e6b1e27fde7e44a9b9">opticflow_calculator.c</a>
 </li>
@@ -477,29 +492,15 @@ $(document).ready(function(){initNavTree('globals_defs_o.html','');});
 : <a class="el" href="opticflow__calculator_8c.html#a7266fc98a3d53734b3b73e0da2f46502">opticflow_calculator.c</a>
 </li>
 <li>Or
-: <a class="el" href="common__flight__plan_8h.html#a930c4658c4c62e1d04058018e9732a26">common_flight_plan.h</a>
-, <a class="el" href="rotorcraft_2main__fbw_8c.html#a930c4658c4c62e1d04058018e9732a26">main_fbw.c</a>
-</li>
-<li>ORANGE_AVOIDER_CB_MAX
-: <a class="el" href="orange__avoider_8c.html#a199edfbce7a9eaa0eccb19018b70cced">orange_avoider.c</a>
-</li>
-<li>ORANGE_AVOIDER_CB_MIN
-: <a class="el" href="orange__avoider_8c.html#a210a32059cd035137221033da4886fb9">orange_avoider.c</a>
-</li>
-<li>ORANGE_AVOIDER_CR_MAX
-: <a class="el" href="orange__avoider_8c.html#ae643ce1e3aebb04c13186a463ac42b52">orange_avoider.c</a>
-</li>
-<li>ORANGE_AVOIDER_CR_MIN
-: <a class="el" href="orange__avoider_8c.html#a4bd50f1ab5405433215e3dda8fc17705">orange_avoider.c</a>
-</li>
-<li>ORANGE_AVOIDER_LUM_MAX
-: <a class="el" href="orange__avoider_8c.html#a65005e47e3ec61733d2c4d95cdd5c6c3">orange_avoider.c</a>
-</li>
-<li>ORANGE_AVOIDER_LUM_MIN
-: <a class="el" href="orange__avoider_8c.html#a1a8960b55556a3b95d40f8dfa7b4df1b">orange_avoider.c</a>
+: <a class="el" href="rotorcraft_2main__fbw_8c.html#a930c4658c4c62e1d04058018e9732a26">main_fbw.c</a>
+, <a class="el" href="common__flight__plan_8h.html#a930c4658c4c62e1d04058018e9732a26">common_flight_plan.h</a>
 </li>
 <li>ORANGE_AVOIDER_VERBOSE
 : <a class="el" href="orange__avoider_8c.html#af115de1f0ff11c264ed97e821b2b468e">orange_avoider.c</a>
+, <a class="el" href="orange__avoider__guided_8c.html#af115de1f0ff11c264ed97e821b2b468e">orange_avoider_guided.c</a>
+</li>
+<li>ORANGE_AVOIDER_VISUAL_DETECTION_ID
+: <a class="el" href="orange__avoider_8c.html#ae966a608a1c5346beea4d7fc29f31e90">orange_avoider.c</a>
 </li>
 <li>ORREP_EULER_F
 : <a class="el" href="group__math__orientation__representation.html#ga5ca8cd93a67e7ddcd8534f523961edaf">pprz_orientation_conversion.h</a>
@@ -523,13 +524,19 @@ $(document).ready(function(){initNavTree('globals_defs_o.html','');});
 : <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a036afca03f7df3a43eb1e964be532db2">board.h</a>
 </li>
 <li>OSC32_OUT
-: <a class="el" href="chimera_2chibios_2v1_80_2board_8h.html#a0fa4c6c51464068064a0341484b6a6b2">board.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a0fa4c6c51464068064a0341484b6a6b2">board.h</a>
 </li>
 <li>OSC_IN
-: <a class="el" href="chimera_2chibios_2v1_80_2board_8h.html#a40209933b84b34d0eb77e2997229667f">board.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a40209933b84b34d0eb77e2997229667f">board.h</a>
+</li>
+<li>OSC_IN_PORT
+: <a class="el" href="crazyflie_2chibios_2v2_81_2board_8h.html#a5631531cf537387024230f44a3ae3bd8">board.h</a>
 </li>
 <li>OSC_OUT
 : <a class="el" href="chimera_2chibios_2v1_80_2board_8h.html#ab11a0f6a29beeede9d74045d2b5ebe96">board.h</a>
+</li>
+<li>OSC_OUT_PORT
+: <a class="el" href="crazyflie_2chibios_2v2_81_2board_8h.html#a38f015c1fca9f89d66a5ab9b9506c850">board.h</a>
 </li>
 <li>OSD_8BIT_MODE
 : <a class="el" href="max7456__regs_8h.html#a5f2ca044d7280cd03bcb92dc01558adf">max7456_regs.h</a>
@@ -640,7 +647,7 @@ $(document).ready(function(){initNavTree('globals_defs_o.html','');});
 : <a class="el" href="airspeed__otf_8c.html#a1e6eb54ce27391fcd387164a36280558">airspeed_otf.c</a>
 </li>
 <li>OTG_FS_DM
-: <a class="el" href="chimera_2chibios_2v1_80_2board_8h.html#a9511a3a3f74a6d69f433c98b8532a6ea">board.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a9511a3a3f74a6d69f433c98b8532a6ea">board.h</a>
 </li>
 <li>OTG_FS_DP
 : <a class="el" href="chimera_2chibios_2v1_80_2board_8h.html#a5409679e74f8ba436cc4e1f5cef8cd34">board.h</a>
@@ -661,8 +668,8 @@ $(document).ready(function(){initNavTree('globals_defs_o.html','');});
 : <a class="el" href="airspeed__ms45xx__i2c_8c.html#a09255b3c584ad61082cacfbfceb7bb23">airspeed_ms45xx_i2c.c</a>
 </li>
 <li>Oval
-: <a class="el" href="rotorcraft_2navigation_8h.html#a3e1c9983a7508c42235e2fead19db8b1">navigation.h</a>
-, <a class="el" href="nav_8h.html#a3e1c9983a7508c42235e2fead19db8b1">nav.h</a>
+: <a class="el" href="nav_8h.html#a3e1c9983a7508c42235e2fead19db8b1">nav.h</a>
+, <a class="el" href="rotorcraft_2navigation_8h.html#a3e1c9983a7508c42235e2fead19db8b1">navigation.h</a>
 </li>
 </ul>
 </div><!-- contents -->
@@ -670,7 +677,7 @@ $(document).ready(function(){initNavTree('globals_defs_o.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Sep 12 2018 02:04:34 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:04:12 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

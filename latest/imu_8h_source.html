@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -193,24 +193,30 @@ $(document).ready(function(){initNavTree('imu_8h_source.html','');});
 <div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="imu_8h.html#a2b487e2376edc35048f5d78cd4968221">   92</a></span>&#160;<span class="preprocessor">#define IMU_ACCEL_Z_NEUTRAL 0</span></div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor">#if !defined IMU_GYRO_P_SIGN &amp; !defined IMU_GYRO_Q_SIGN &amp; !defined IMU_GYRO_R_SIGN</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="imu_8h.html#a1b1c79353b8a69a2d7faecd6721efbb8">   96</a></span>&#160;<span class="preprocessor">#define IMU_GYRO_P_SIGN   1</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="imu_8h.html#affd63ad52249c74117b86454fe73d5b0">   97</a></span>&#160;<span class="preprocessor">#define IMU_GYRO_Q_SIGN   1</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="imu_8h.html#a91fa3d93fbfb5edbdf7f3b34436b53da">   98</a></span>&#160;<span class="preprocessor">#define IMU_GYRO_R_SIGN   1</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor">#if !defined IMU_MAG_X_NEUTRAL &amp;&amp; !defined IMU_MAG_Y_NEUTRAL &amp;&amp; !defined IMU_MAG_Z_NEUTRAL</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="imu_8h.html#a5a1d5879d834516237992ca0655fbd75">   96</a></span>&#160;<span class="preprocessor">#define IMU_MAG_X_NEUTRAL 0</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="imu_8h.html#a883be296d939f15b4832b11a2a7126f7">   97</a></span>&#160;<span class="preprocessor">#define IMU_MAG_Y_NEUTRAL 0</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="imu_8h.html#aaaad8a2da6287091682c33d93f33d9b2">   98</a></span>&#160;<span class="preprocessor">#define IMU_MAG_Z_NEUTRAL 0</span></div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">#if !defined IMU_ACCEL_X_SIGN &amp; !defined IMU_ACCEL_Y_SIGN &amp; !defined IMU_ACCEL_Z_SIGN</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="imu_8h.html#a4198979ecdab243efc790d5b739a4645">  101</a></span>&#160;<span class="preprocessor">#define IMU_ACCEL_X_SIGN  1</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="imu_8h.html#a20144cb4fd6b12baf8d74063f8dc87e3">  102</a></span>&#160;<span class="preprocessor">#define IMU_ACCEL_Y_SIGN  1</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="imu_8h.html#ad8bdd9e68ab45b4ec5950f2e718d8f6c">  103</a></span>&#160;<span class="preprocessor">#define IMU_ACCEL_Z_SIGN  1</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">#if !defined IMU_MAG_X_SIGN &amp; !defined IMU_MAG_Y_SIGN &amp; !defined IMU_MAG_Z_SIGN</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="imu_8h.html#a34ef05992d74a9dc07c6a20feffd6eef">  106</a></span>&#160;<span class="preprocessor">#define IMU_MAG_X_SIGN 1</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="imu_8h.html#a127929c4b5a458043f7ef2e0fa2a4e54">  107</a></span>&#160;<span class="preprocessor">#define IMU_MAG_Y_SIGN 1</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="imu_8h.html#a8612bd2fe2f927e8f283a9a8e60010f5">  108</a></span>&#160;<span class="preprocessor">#define IMU_MAG_Z_SIGN 1</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* IMU_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#if !defined IMU_GYRO_P_SIGN &amp; !defined IMU_GYRO_Q_SIGN &amp; !defined IMU_GYRO_R_SIGN</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="imu_8h.html#a1b1c79353b8a69a2d7faecd6721efbb8">  102</a></span>&#160;<span class="preprocessor">#define IMU_GYRO_P_SIGN   1</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="imu_8h.html#affd63ad52249c74117b86454fe73d5b0">  103</a></span>&#160;<span class="preprocessor">#define IMU_GYRO_Q_SIGN   1</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="imu_8h.html#a91fa3d93fbfb5edbdf7f3b34436b53da">  104</a></span>&#160;<span class="preprocessor">#define IMU_GYRO_R_SIGN   1</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#if !defined IMU_ACCEL_X_SIGN &amp; !defined IMU_ACCEL_Y_SIGN &amp; !defined IMU_ACCEL_Z_SIGN</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="imu_8h.html#a4198979ecdab243efc790d5b739a4645">  107</a></span>&#160;<span class="preprocessor">#define IMU_ACCEL_X_SIGN  1</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="imu_8h.html#a20144cb4fd6b12baf8d74063f8dc87e3">  108</a></span>&#160;<span class="preprocessor">#define IMU_ACCEL_Y_SIGN  1</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="imu_8h.html#ad8bdd9e68ab45b4ec5950f2e718d8f6c">  109</a></span>&#160;<span class="preprocessor">#define IMU_ACCEL_Z_SIGN  1</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="preprocessor">#if !defined IMU_MAG_X_SIGN &amp; !defined IMU_MAG_Y_SIGN &amp; !defined IMU_MAG_Z_SIGN</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="imu_8h.html#a34ef05992d74a9dc07c6a20feffd6eef">  112</a></span>&#160;<span class="preprocessor">#define IMU_MAG_X_SIGN 1</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="imu_8h.html#a127929c4b5a458043f7ef2e0fa2a4e54">  113</a></span>&#160;<span class="preprocessor">#define IMU_MAG_Y_SIGN 1</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="imu_8h.html#a8612bd2fe2f927e8f283a9a8e60010f5">  114</a></span>&#160;<span class="preprocessor">#define IMU_MAG_Z_SIGN 1</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* IMU_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="imu_8h_html_a931916ce562dfa28e02e0a6001dddc43"><div class="ttname"><a href="imu_8h.html#a931916ce562dfa28e02e0a6001dddc43">imu_SetBodyToImuCurrent</a></div><div class="ttdeci">void imu_SetBodyToImuCurrent(float set)</div><div class="ttdef"><b>Definition:</b> <a href="imu_8c_source.html#l00178">imu.c:178</a></div></div>
 <div class="ttc" id="group__math__algebra__int_html_structInt32Rates"><div class="ttname"><a href="group__math__algebra__int.html#structInt32Rates">Int32Rates</a></div><div class="ttdoc">angular rates </div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__int_8h_source.html#l00179">pprz_algebra_int.h:179</a></div></div>
 <div class="ttc" id="lpc21_2mcu__arch_8c_html_a3aea9deb2a0bfea9ff05a898f4822e31"><div class="ttname"><a href="lpc21_2mcu__arch_8c.html#a3aea9deb2a0bfea9ff05a898f4822e31">reset</a></div><div class="ttdeci">void reset(void)</div></div>
@@ -248,7 +254,7 @@ $(document).ready(function(){initNavTree('imu_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="imu_8h.html">imu.h</a></li>
-    <li class="footer">Generated on Wed Sep 12 2018 02:02:57 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:02:35 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

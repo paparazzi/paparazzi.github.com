@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -231,9 +231,9 @@ Macros</h2></td></tr>
 <tr class="separator:af6db3a645efeefcca3a10ff1a32e0c8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a178ccd14f02c958b129586b2d1169178"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#a178ccd14f02c958b129586b2d1169178">PX4IO_P_STATUS_ALARMS_TEMPERATURE</a>&#160;&#160;&#160;(1 &lt;&lt; 1) /* board temperature is high */</td></tr>
 <tr class="separator:a178ccd14f02c958b129586b2d1169178"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a812b0e517685b8904594c70050a29415"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#a812b0e517685b8904594c70050a29415">PX4IO_P_STATUS_ALARMS_SERVO_CURRENT</a>&#160;&#160;&#160;(1 &lt;&lt; 2) /* [1] servo <a class="el" href="fixedwing_2autopilot__firmware_8h.html#ae6a404c4d3d4da15402e4a8629e7e272">current</a> limit was exceeded */</td></tr>
+<tr class="memitem:a812b0e517685b8904594c70050a29415"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#a812b0e517685b8904594c70050a29415">PX4IO_P_STATUS_ALARMS_SERVO_CURRENT</a>&#160;&#160;&#160;(1 &lt;&lt; 2) /* [1] servo current limit was exceeded */</td></tr>
 <tr class="separator:a812b0e517685b8904594c70050a29415"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c84d9b111ed89f29865e8851da13778"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#a0c84d9b111ed89f29865e8851da13778">PX4IO_P_STATUS_ALARMS_ACC_CURRENT</a>&#160;&#160;&#160;(1 &lt;&lt; 3) /* [1] accessory <a class="el" href="fixedwing_2autopilot__firmware_8h.html#ae6a404c4d3d4da15402e4a8629e7e272">current</a> limit was exceeded */</td></tr>
+<tr class="memitem:a0c84d9b111ed89f29865e8851da13778"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#a0c84d9b111ed89f29865e8851da13778">PX4IO_P_STATUS_ALARMS_ACC_CURRENT</a>&#160;&#160;&#160;(1 &lt;&lt; 3) /* [1] accessory current limit was exceeded */</td></tr>
 <tr class="separator:a0c84d9b111ed89f29865e8851da13778"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34db300d7174592567fbf89cbce30d51"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#a34db300d7174592567fbf89cbce30d51">PX4IO_P_STATUS_ALARMS_FMU_LOST</a>&#160;&#160;&#160;(1 &lt;&lt; 4) /* timed out waiting for controls from FMU */</td></tr>
 <tr class="separator:a34db300d7174592567fbf89cbce30d51"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -245,7 +245,7 @@ Macros</h2></td></tr>
 <tr class="separator:aa2dcbb34e355f9ea0e5c3d082fb8d719"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a48acd59a573b52546f7ef60bb54b38"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#a6a48acd59a573b52546f7ef60bb54b38">PX4IO_P_STATUS_VBATT</a>&#160;&#160;&#160;4 /* [1] battery voltage in mV */</td></tr>
 <tr class="separator:a6a48acd59a573b52546f7ef60bb54b38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d804062f60144969e6a64f5df5e6a9e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#a8d804062f60144969e6a64f5df5e6a9e">PX4IO_P_STATUS_IBATT</a>&#160;&#160;&#160;5 /* [1] battery <a class="el" href="fixedwing_2autopilot__firmware_8h.html#ae6a404c4d3d4da15402e4a8629e7e272">current</a> (raw ADC) */</td></tr>
+<tr class="memitem:a8d804062f60144969e6a64f5df5e6a9e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#a8d804062f60144969e6a64f5df5e6a9e">PX4IO_P_STATUS_IBATT</a>&#160;&#160;&#160;5 /* [1] battery current (raw ADC) */</td></tr>
 <tr class="separator:a8d804062f60144969e6a64f5df5e6a9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16d29b5bfcccf263fcbd4cf6960e3bed"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#a16d29b5bfcccf263fcbd4cf6960e3bed">PX4IO_P_STATUS_VSERVO</a>&#160;&#160;&#160;6 /* [2] servo rail voltage in mV */</td></tr>
 <tr class="separator:a16d29b5bfcccf263fcbd4cf6960e3bed"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -272,7 +272,7 @@ Macros</h2></td></tr>
 <tr class="separator:ae86b391b1920141ce7791f254c3ed55c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9bedfa34d9d4665dc2f547a082c56cf4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#a9bedfa34d9d4665dc2f547a082c56cf4">PX4IO_P_RAW_RC_COUNT</a>&#160;&#160;&#160;0 /* number of valid channels */</td></tr>
 <tr class="separator:a9bedfa34d9d4665dc2f547a082c56cf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2af583297bcf06664ea6982f7522b2a0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#a2af583297bcf06664ea6982f7522b2a0">PX4IO_P_RAW_RC_FLAGS</a>&#160;&#160;&#160;1 /* RC detail <a class="el" href="anemotaxis_8c.html#a015eb90e0de9f16e87bd149d4b9ce959">status</a> flags */</td></tr>
+<tr class="memitem:a2af583297bcf06664ea6982f7522b2a0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#a2af583297bcf06664ea6982f7522b2a0">PX4IO_P_RAW_RC_FLAGS</a>&#160;&#160;&#160;1 /* RC detail <a class="el" href="nps__radio__control__spektrum_8c.html#ade818037fd6c985038ff29656089758d">status</a> flags */</td></tr>
 <tr class="separator:a2af583297bcf06664ea6982f7522b2a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad018df2fd148cc64447a1ef96937c47a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="px4__flash_2protocol_8h.html#ad018df2fd148cc64447a1ef96937c47a">PX4IO_P_RAW_RC_FLAGS_FRAME_DROP</a>&#160;&#160;&#160;(1 &lt;&lt; 0) /* single frame drop */</td></tr>
 <tr class="separator:ad018df2fd148cc64447a1ef96937c47a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -508,16 +508,16 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a52d62f1e780113658227de8a9e4c201e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="px4__flash_2protocol_8h.html#a52d62f1e780113658227de8a9e4c201eacd0be2ab890f11bd03ef8820861b54af">dsm_bind_power_down</a> = 0, 
-<a class="el" href="px4__flash_2protocol_8h.html#a52d62f1e780113658227de8a9e4c201ea47721f970fade779b2775fbcee17e833">dsm_bind_power_up</a>, 
-<a class="el" href="px4__flash_2protocol_8h.html#a52d62f1e780113658227de8a9e4c201ea8639e825e90551222744b3f4f645a721">dsm_bind_set_rx_out</a>, 
-<a class="el" href="px4__flash_2protocol_8h.html#a52d62f1e780113658227de8a9e4c201ea0c614985bee2ec5b6f6b7dd58dc70dd5">dsm_bind_send_pulses</a>, 
+<tr class="memitem:a3ee4e9f70475f3c684c23241163781ab"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="px4__flash_2protocol_8h.html#a3ee4e9f70475f3c684c23241163781abacd0be2ab890f11bd03ef8820861b54af">dsm_bind_power_down</a> = 0, 
+<a class="el" href="px4__flash_2protocol_8h.html#a3ee4e9f70475f3c684c23241163781aba47721f970fade779b2775fbcee17e833">dsm_bind_power_up</a>, 
+<a class="el" href="px4__flash_2protocol_8h.html#a3ee4e9f70475f3c684c23241163781aba8639e825e90551222744b3f4f645a721">dsm_bind_set_rx_out</a>, 
+<a class="el" href="px4__flash_2protocol_8h.html#a3ee4e9f70475f3c684c23241163781aba0c614985bee2ec5b6f6b7dd58dc70dd5">dsm_bind_send_pulses</a>, 
 <br />
-&#160;&#160;<a class="el" href="px4__flash_2protocol_8h.html#a52d62f1e780113658227de8a9e4c201eafd99415839ad8ab6ece72a524c8f7b93">dsm_bind_reinit_uart</a>
+&#160;&#160;<a class="el" href="px4__flash_2protocol_8h.html#a3ee4e9f70475f3c684c23241163781abafd99415839ad8ab6ece72a524c8f7b93">dsm_bind_reinit_uart</a>
 <br />
  }</td></tr>
-<tr class="separator:a52d62f1e780113658227de8a9e4c201e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a3ee4e9f70475f3c684c23241163781ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -1234,7 +1234,7 @@ regs[<a class="el" href="px4__flash_2protocol_8h.html#a0037b43d3693c0d8d3c5df6c3
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define PX4IO_P_RAW_RC_FLAGS&#160;&#160;&#160;1 /* RC detail <a class="el" href="anemotaxis_8c.html#a015eb90e0de9f16e87bd149d4b9ce959">status</a> flags */</td>
+          <td class="memname">#define PX4IO_P_RAW_RC_FLAGS&#160;&#160;&#160;1 /* RC detail <a class="el" href="nps__radio__control__spektrum_8c.html#ade818037fd6c985038ff29656089758d">status</a> flags */</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2045,7 +2045,7 @@ regs[<a class="el" href="px4__flash_2protocol_8h.html#a0037b43d3693c0d8d3c5df6c3
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define PX4IO_P_STATUS_ALARMS_ACC_CURRENT&#160;&#160;&#160;(1 &lt;&lt; 3) /* [1] accessory <a class="el" href="fixedwing_2autopilot__firmware_8h.html#ae6a404c4d3d4da15402e4a8629e7e272">current</a> limit was exceeded */</td>
+          <td class="memname">#define PX4IO_P_STATUS_ALARMS_ACC_CURRENT&#160;&#160;&#160;(1 &lt;&lt; 3) /* [1] accessory current limit was exceeded */</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2101,7 +2101,7 @@ regs[<a class="el" href="px4__flash_2protocol_8h.html#a0037b43d3693c0d8d3c5df6c3
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define PX4IO_P_STATUS_ALARMS_SERVO_CURRENT&#160;&#160;&#160;(1 &lt;&lt; 2) /* [1] servo <a class="el" href="fixedwing_2autopilot__firmware_8h.html#ae6a404c4d3d4da15402e4a8629e7e272">current</a> limit was exceeded */</td>
+          <td class="memname">#define PX4IO_P_STATUS_ALARMS_SERVO_CURRENT&#160;&#160;&#160;(1 &lt;&lt; 2) /* [1] servo current limit was exceeded */</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2423,7 +2423,7 @@ regs[<a class="el" href="px4__flash_2protocol_8h.html#a0037b43d3693c0d8d3c5df6c3
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define PX4IO_P_STATUS_IBATT&#160;&#160;&#160;5 /* [1] battery <a class="el" href="fixedwing_2autopilot__firmware_8h.html#ae6a404c4d3d4da15402e4a8629e7e272">current</a> (raw ADC) */</td>
+          <td class="memname">#define PX4IO_P_STATUS_IBATT&#160;&#160;&#160;5 /* [1] battery current (raw ADC) */</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2963,7 +2963,7 @@ regs[<a class="el" href="px4__flash_2protocol_8h.html#a0037b43d3693c0d8d3c5df6c3
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a class="anchor" id="a52d62f1e780113658227de8a9e4c201e"></a>
+<a class="anchor" id="a3ee4e9f70475f3c684c23241163781ab"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -2973,15 +2973,15 @@ regs[<a class="el" href="px4__flash_2protocol_8h.html#a0037b43d3693c0d8d3c5df6c3
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a52d62f1e780113658227de8a9e4c201eacd0be2ab890f11bd03ef8820861b54af"></a>dsm_bind_power_down&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a3ee4e9f70475f3c684c23241163781abacd0be2ab890f11bd03ef8820861b54af"></a>dsm_bind_power_down&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a52d62f1e780113658227de8a9e4c201ea47721f970fade779b2775fbcee17e833"></a>dsm_bind_power_up&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a3ee4e9f70475f3c684c23241163781aba47721f970fade779b2775fbcee17e833"></a>dsm_bind_power_up&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a52d62f1e780113658227de8a9e4c201ea8639e825e90551222744b3f4f645a721"></a>dsm_bind_set_rx_out&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a3ee4e9f70475f3c684c23241163781aba8639e825e90551222744b3f4f645a721"></a>dsm_bind_set_rx_out&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a52d62f1e780113658227de8a9e4c201ea0c614985bee2ec5b6f6b7dd58dc70dd5"></a>dsm_bind_send_pulses&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a3ee4e9f70475f3c684c23241163781aba0c614985bee2ec5b6f6b7dd58dc70dd5"></a>dsm_bind_send_pulses&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a52d62f1e780113658227de8a9e4c201eafd99415839ad8ab6ece72a524c8f7b93"></a>dsm_bind_reinit_uart&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a3ee4e9f70475f3c684c23241163781abafd99415839ad8ab6ece72a524c8f7b93"></a>dsm_bind_reinit_uart&#160;</td><td class="fielddoc">
 </td></tr>
 </table>
 
@@ -3062,7 +3062,7 @@ regs[<a class="el" href="px4__flash_2protocol_8h.html#a0037b43d3693c0d8d3c5df6c3
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_7d07a2235bf732e635d4183f1ff4bace.html">px4_flash</a></li><li class="navelem"><a class="el" href="px4__flash_2protocol_8h.html">protocol.h</a></li>
-    <li class="footer">Generated on Wed Sep 12 2018 02:03:31 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:03:13 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

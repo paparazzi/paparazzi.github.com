@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -103,7 +103,7 @@ $(document).ready(function(){initNavTree('module__bebop_ae_awb.html','');});
 <div class="title">bebop_ae_awb module </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><b>Auto Exposure and Auto White Balancing for the Bebop 1 and 2</b></p>
+<div class="textblock"><p><b>Auto Exposure and Auto White Balancing for the front camera on the Parrot Bebop 1 and 2 and the Disco</b></p>
 <p>No detailed description...</p>
 <h1><a class="anchor" id="module_load_example__bebop_ae_awb"></a>
 Example for airframe file</h1>
@@ -118,8 +118,6 @@ Airframe file section</h2>
  Description: Nice setting for async thread</li>
 <li><b>name</b> <code>BEBOP_AUTO_EXPOSURE</code> <b>value:</b> <em>true</em> <br />
  Description: perform auto exposure (Default: true)</li>
-<li><b>name</b> <code>BEBOP_AE_AWB_CAMERA</code> <b>value:</b> <em>front_camera|bottom_camera</em> <br />
- Description: which camera to run the AWB and AE</li>
 <li><b>name</b> <code>BEBOP_AE_AWB_VERBOSE</code> <b>value:</b> <em>TRUE|FALSE</em> <br />
  Description: Whether or not to print debug information to the terminal</li>
 <li><b>name</b> <code>BEBOP_AE_EXPOSURE_GAIN</code> <b>value:</b> <em>0.75</em> <br />
@@ -182,11 +180,10 @@ Raw bebop_ae_awb.xml file:</h2>
 <div class="line"></div>
 <div class="line">&lt;module name=&quot;bebop_ae_awb&quot; dir=&quot;computer_vision&quot;&gt;</div>
 <div class="line">  &lt;doc&gt;</div>
-<div class="line">    &lt;description&gt;Auto Exposure and Auto White Balancing for the Bebop 1 and 2&lt;/description&gt;</div>
+<div class="line">    &lt;description&gt;Auto Exposure and Auto White Balancing for the front camera on the Parrot Bebop 1 and 2 and the Disco&lt;/description&gt;</div>
 <div class="line">    &lt;section name=&quot;bebop_ae_awb&quot;&gt;</div>
 <div class="line">      &lt;define  name=&quot;BEBOP_AE_AWB_NICE&quot; value=&quot;5&quot; description=&quot;Nice setting for async thread&quot;/&gt;</div>
 <div class="line">      &lt;define name=&quot;BEBOP_AUTO_EXPOSURE&quot; value=&quot;true&quot; description=&quot;perform auto exposure (Default: true)&quot;/&gt;</div>
-<div class="line">      &lt;define name=&quot;BEBOP_AE_AWB_CAMERA&quot; value=&quot;front_camera|bottom_camera&quot; description=&quot;which camera to run the AWB and AE&quot;/&gt;</div>
 <div class="line">      &lt;define name=&quot;BEBOP_AE_AWB_VERBOSE&quot; value=&quot;TRUE|FALSE&quot; description=&quot;Whether or not to print debug information to the terminal&quot;/&gt;</div>
 <div class="line">      &lt;define name=&quot;BEBOP_AE_EXPOSURE_GAIN&quot; value=&quot;0.75&quot; description=&quot;Gain to apply to autoexposure change&quot;/&gt;</div>
 <div class="line">      &lt;define name=&quot;BEBOP_AE_MIDDLE_INDEX&quot; value=&quot;110&quot; description=&quot;Bin index to be considered as the center of the brightness bins&quot;/&gt;</div>
@@ -239,7 +236,7 @@ Raw bebop_ae_awb.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Wed Sep 12 2018 02:03:55 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:03:39 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

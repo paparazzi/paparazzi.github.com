@@ -7,7 +7,7 @@ var ins__float__invariant__wrapper_8c =
     [ "INS_FINV_MAG_ID", "ins__float__invariant__wrapper_8c.html#a391591cec07df7da04c0e93b725c3c9a", null ],
     [ "accel_cb", "ins__float__invariant__wrapper_8c.html#aacd6b1869f263f90a6f1fbe777a87793", null ],
     [ "aligner_cb", "ins__float__invariant__wrapper_8c.html#abb508f672663ab1485eae5b9e1799f21", null ],
-    [ "baro_cb", "ins__float__invariant__wrapper_8c.html#a7fdc16072298b2db800864d08d72945a", null ],
+    [ "baro_cb", "ins__float__invariant__wrapper_8c.html#a92209191a3ecc53fc4adaafd0fe82933", null ],
     [ "body_to_imu_cb", "ins__float__invariant__wrapper_8c.html#ab5f6300c213088a4ea0598baafb5e736", null ],
     [ "geo_mag_cb", "ins__float__invariant__wrapper_8c.html#ab4e8744a32b22245ff10f367b2b7c6b3", null ],
     [ "gps_cb", "ins__float__invariant__wrapper_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8", null ],

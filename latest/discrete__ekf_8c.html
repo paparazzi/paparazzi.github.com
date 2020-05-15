@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -111,7 +111,7 @@ $(document).ready(function(){initNavTree('discrete__ekf_8c.html','');});
 <div class="title">discrete_ekf.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="discrete__ekf_8h_source.html">discrete_ekf.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="discrete__ekf_8h_source.html">modules/relative_localization_filter/discrete_ekf.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="pprz__algebra__float_8h_source.html">math/pprz_algebra_float.h</a>&quot;</code><br />
 <code>#include &lt;math.h&gt;</code><br />
 <code>#include &lt;stdio.h&gt;</code><br />
@@ -122,7 +122,7 @@ $(document).ready(function(){initNavTree('discrete__ekf_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="discrete__ekf_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2relative__localization__filter_2discrete__ekf_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2relative__localization__filter_2discrete__ekf_8c" id="sw_2airborne_2modules_2relative__localization__filter_2discrete__ekf_8c">
-<area shape="rect" id="node2" href="discrete__ekf_8h.html" title="discrete_ekf.h" alt="" coords="45,109,156,136"/><area shape="rect" id="node6" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="232,109,423,136"/><area shape="rect" id="node7" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="241,184,358,211"/></map>
+<area shape="rect" id="node2" href="discrete__ekf_8h.html" title="modules/relative_localization\l_filter/discrete_ekf.h" alt="" coords="5,184,212,225"/><area shape="rect" id="node6" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="304,109,495,136"/><area shape="rect" id="node7" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="519,191,637,218"/></map>
 </div>
 </div>
 <p><a href="discrete__ekf_8c_source.html">Go to the source code of this file.</a></p>
@@ -140,7 +140,11 @@ Functions</h2></td></tr>
 <tr class="memitem:a915e5c594a306beda10175b41f9a9d5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="discrete__ekf_8c.html#a915e5c594a306beda10175b41f9a9d5e">linear_measure</a> (float *X, float *Z, float **<a class="el" href="mag__calib__ukf_8c.html#a6a6823a0d1f6a9d33e408b51e6b43b47">H</a>)</td></tr>
 <tr class="separator:a915e5c594a306beda10175b41f9a9d5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><dl class="section author"><dt>Author</dt><dd>Mario Coppola Discrete Extended Kalman Filter for Relative Localization </dd></dl>
+
+<p>Definition in file <a class="el" href="discrete__ekf_8c_source.html">discrete_ekf.c</a>.</p>
+</div><h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="a8456a0f21ab38aca40f3b4cafa6053c1"></a>
 <div class="memitem">
 <div class="memproto">
@@ -157,9 +161,9 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="discrete__ekf_8c_source.html#l00032">32</a> of file <a class="el" href="discrete__ekf_8c_source.html">discrete_ekf.c</a>.</p>
 
-<p>References <a class="el" href="discrete__ekf_8h_source.html#l00050">discrete_ekf::dt</a>, <a class="el" href="discrete__ekf_8h_source.html#l00034">EKF_M</a>, <a class="el" href="discrete__ekf_8h_source.html#l00033">EKF_N</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00767">float_mat_diagonal_scal()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00522">float_vect_zero()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00618">MAKE_MATRIX_PTR</a>, <a class="el" href="discrete__ekf_8h_source.html#l00040">discrete_ekf::P</a>, <a class="el" href="discrete__ekf_8h_source.html#l00041">discrete_ekf::Q</a>, <a class="el" href="discrete__ekf_8h_source.html#l00042">discrete_ekf::R</a>, and <a class="el" href="discrete__ekf_8h_source.html#l00037">discrete_ekf::X</a>.</p>
+<p>References <a class="el" href="discrete__ekf_8h_source.html#l00050">discrete_ekf::dt</a>, <a class="el" href="discrete__ekf_8h_source.html#l00034">EKF_M</a>, <a class="el" href="discrete__ekf_8h_source.html#l00033">EKF_N</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00848">float_mat_diagonal_scal()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00539">float_vect_zero()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00635">MAKE_MATRIX_PTR</a>, <a class="el" href="discrete__ekf_8h_source.html#l00040">discrete_ekf::P</a>, <a class="el" href="discrete__ekf_8h_source.html#l00041">discrete_ekf::Q</a>, <a class="el" href="discrete__ekf_8h_source.html#l00042">discrete_ekf::R</a>, and <a class="el" href="discrete__ekf_8h_source.html#l00037">discrete_ekf::X</a>.</p>
 
-<p>Referenced by <a class="el" href="relative__localization__filter_8c_source.html#l00054">range_msg_callback()</a>.</p>
+<p>Referenced by <a class="el" href="relative__localization__filter_8c_source.html#l00067">range_msg_callback()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -179,7 +183,7 @@ Functions</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="discrete__ekf_8c_a8456a0f21ab38aca40f3b4cafa6053c1_icgraph.png" border="0" usemap="#discrete__ekf_8c_a8456a0f21ab38aca40f3b4cafa6053c1_icgraph" alt=""/></div>
 <map name="discrete__ekf_8c_a8456a0f21ab38aca40f3b4cafa6053c1_icgraph" id="discrete__ekf_8c_a8456a0f21ab38aca40f3b4cafa6053c1_icgraph">
-<area shape="rect" id="node2" href="relative__localization__filter_8c.html#a2e719dd98f227ac5efe36084651ddf78" title="range_msg_callback" alt="" coords="184,13,336,39"/><area shape="rect" id="node3" href="relative__localization__filter_8h.html#a6da4d8bf05d9240f503606d63b6be761" title="relative_localization\l_filter_init" alt="" coords="384,5,531,47"/></map>
+<area shape="rect" id="node2" href="relative__localization__filter_8c.html#a9a5ee6ec3e44ff9f7cea260d969d6ddf" title="range_msg_callback" alt="" coords="184,13,336,39"/><area shape="rect" id="node3" href="relative__localization__filter_8h.html#a6da4d8bf05d9240f503606d63b6be761" title="relative_localization\l_filter_init" alt="" coords="384,5,531,47"/></map>
 </div>
 </p>
 
@@ -199,11 +203,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="discrete__ekf_8c_source.html#l00073">73</a> of file <a class="el" href="discrete__ekf_8c_source.html">discrete_ekf.c</a>.</p>
+<p>Definition at line <a class="el" href="discrete__ekf_8c_source.html#l00074">74</a> of file <a class="el" href="discrete__ekf_8c_source.html">discrete_ekf.c</a>.</p>
 
-<p>References <a class="el" href="discrete__ekf_8h_source.html#l00050">discrete_ekf::dt</a>, <a class="el" href="discrete__ekf_8h_source.html#l00033">EKF_N</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00694">float_mat_mul()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00646">float_mat_sum()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00664">float_mat_transpose_square()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00536">float_vect_sum()</a>, <a class="el" href="discrete__ekf_8h_source.html#l00043">discrete_ekf::H</a>, <a class="el" href="discrete__ekf_8c_source.html#l00147">linear_filter()</a>, <a class="el" href="discrete__ekf_8c_source.html#l00163">linear_measure()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00618">MAKE_MATRIX_PTR</a>, <a class="el" href="discrete__ekf_8h_source.html#l00040">discrete_ekf::P</a>, <a class="el" href="discrete__ekf_8h_source.html#l00041">discrete_ekf::Q</a>, <a class="el" href="discrete__ekf_8h_source.html#l00046">discrete_ekf::tmp1</a>, <a class="el" href="discrete__ekf_8h_source.html#l00047">discrete_ekf::tmp2</a>, <a class="el" href="discrete__ekf_8h_source.html#l00048">discrete_ekf::tmp3</a>, <a class="el" href="discrete__ekf_8h_source.html#l00037">discrete_ekf::X</a>, <a class="el" href="discrete__ekf_8h_source.html#l00038">discrete_ekf::Xp</a>, and <a class="el" href="discrete__ekf_8h_source.html#l00039">discrete_ekf::Zp</a>.</p>
+<p>References <a class="el" href="discrete__ekf_8h_source.html#l00050">discrete_ekf::dt</a>, <a class="el" href="discrete__ekf_8h_source.html#l00033">EKF_N</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00715">float_mat_mul()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00667">float_mat_sum()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00685">float_mat_transpose_square()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00553">float_vect_sum()</a>, <a class="el" href="discrete__ekf_8h_source.html#l00043">discrete_ekf::H</a>, <a class="el" href="discrete__ekf_8c_source.html#l00148">linear_filter()</a>, <a class="el" href="discrete__ekf_8c_source.html#l00164">linear_measure()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00635">MAKE_MATRIX_PTR</a>, <a class="el" href="discrete__ekf_8h_source.html#l00040">discrete_ekf::P</a>, <a class="el" href="discrete__ekf_8h_source.html#l00041">discrete_ekf::Q</a>, <a class="el" href="discrete__ekf_8h_source.html#l00046">discrete_ekf::tmp1</a>, <a class="el" href="discrete__ekf_8h_source.html#l00047">discrete_ekf::tmp2</a>, <a class="el" href="discrete__ekf_8h_source.html#l00048">discrete_ekf::tmp3</a>, <a class="el" href="discrete__ekf_8h_source.html#l00037">discrete_ekf::X</a>, <a class="el" href="discrete__ekf_8h_source.html#l00038">discrete_ekf::Xp</a>, and <a class="el" href="discrete__ekf_8h_source.html#l00039">discrete_ekf::Zp</a>.</p>
 
-<p>Referenced by <a class="el" href="relative__localization__filter_8c_source.html#l00054">range_msg_callback()</a>.</p>
+<p>Referenced by <a class="el" href="relative__localization__filter_8c_source.html#l00067">range_msg_callback()</a>.</p>
 
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -223,7 +227,7 @@ Functions</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="discrete__ekf_8c_a515b057a11f8b3433315e870ecd4e6d2_icgraph.png" border="0" usemap="#discrete__ekf_8c_a515b057a11f8b3433315e870ecd4e6d2_icgraph" alt=""/></div>
 <map name="discrete__ekf_8c_a515b057a11f8b3433315e870ecd4e6d2_icgraph" id="discrete__ekf_8c_a515b057a11f8b3433315e870ecd4e6d2_icgraph">
-<area shape="rect" id="node2" href="relative__localization__filter_8c.html#a2e719dd98f227ac5efe36084651ddf78" title="range_msg_callback" alt="" coords="204,13,356,39"/><area shape="rect" id="node3" href="relative__localization__filter_8h.html#a6da4d8bf05d9240f503606d63b6be761" title="relative_localization\l_filter_init" alt="" coords="404,5,551,47"/></map>
+<area shape="rect" id="node2" href="relative__localization__filter_8c.html#a9a5ee6ec3e44ff9f7cea260d969d6ddf" title="range_msg_callback" alt="" coords="204,13,356,39"/><area shape="rect" id="node3" href="relative__localization__filter_8h.html#a6da4d8bf05d9240f503606d63b6be761" title="relative_localization\l_filter_init" alt="" coords="404,5,551,47"/></map>
 </div>
 </p>
 
@@ -253,11 +257,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="discrete__ekf_8c_source.html#l00112">112</a> of file <a class="el" href="discrete__ekf_8c_source.html">discrete_ekf.c</a>.</p>
+<p>Definition at line <a class="el" href="discrete__ekf_8c_source.html#l00113">113</a> of file <a class="el" href="discrete__ekf_8c_source.html">discrete_ekf.c</a>.</p>
 
-<p>References <a class="el" href="discrete__ekf_8h_source.html#l00034">EKF_M</a>, <a class="el" href="discrete__ekf_8h_source.html#l00033">EKF_N</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00655">float_mat_diff()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00832">float_mat_invert()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00694">float_mat_mul()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00646">float_mat_sum()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00678">float_mat_transpose()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00713">float_mat_vect_mul()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00543">float_vect_diff()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00536">float_vect_sum()</a>, <a class="el" href="discrete__ekf_8h_source.html#l00043">discrete_ekf::H</a>, <a class="el" href="discrete__ekf_8h_source.html#l00044">discrete_ekf::Ht</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00618">MAKE_MATRIX_PTR</a>, <a class="el" href="discrete__ekf_8h_source.html#l00040">discrete_ekf::P</a>, <a class="el" href="discrete__ekf_8h_source.html#l00042">discrete_ekf::R</a>, <a class="el" href="discrete__ekf_8h_source.html#l00046">discrete_ekf::tmp1</a>, <a class="el" href="discrete__ekf_8h_source.html#l00047">discrete_ekf::tmp2</a>, <a class="el" href="discrete__ekf_8h_source.html#l00048">discrete_ekf::tmp3</a>, <a class="el" href="discrete__ekf_8h_source.html#l00037">discrete_ekf::X</a>, <a class="el" href="discrete__ekf_8h_source.html#l00038">discrete_ekf::Xp</a>, and <a class="el" href="discrete__ekf_8h_source.html#l00039">discrete_ekf::Zp</a>.</p>
+<p>References <a class="el" href="discrete__ekf_8h_source.html#l00034">EKF_M</a>, <a class="el" href="discrete__ekf_8h_source.html#l00033">EKF_N</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00676">float_mat_diff()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00832">float_mat_invert()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00715">float_mat_mul()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00667">float_mat_sum()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00699">float_mat_transpose()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00763">float_mat_vect_mul()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00560">float_vect_diff()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00553">float_vect_sum()</a>, <a class="el" href="discrete__ekf_8h_source.html#l00043">discrete_ekf::H</a>, <a class="el" href="discrete__ekf_8h_source.html#l00044">discrete_ekf::Ht</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00635">MAKE_MATRIX_PTR</a>, <a class="el" href="discrete__ekf_8h_source.html#l00040">discrete_ekf::P</a>, <a class="el" href="discrete__ekf_8h_source.html#l00042">discrete_ekf::R</a>, <a class="el" href="discrete__ekf_8h_source.html#l00046">discrete_ekf::tmp1</a>, <a class="el" href="discrete__ekf_8h_source.html#l00047">discrete_ekf::tmp2</a>, <a class="el" href="discrete__ekf_8h_source.html#l00048">discrete_ekf::tmp3</a>, <a class="el" href="discrete__ekf_8h_source.html#l00037">discrete_ekf::X</a>, <a class="el" href="discrete__ekf_8h_source.html#l00038">discrete_ekf::Xp</a>, and <a class="el" href="discrete__ekf_8h_source.html#l00039">discrete_ekf::Zp</a>.</p>
 
-<p>Referenced by <a class="el" href="relative__localization__filter_8c_source.html#l00054">range_msg_callback()</a>.</p>
+<p>Referenced by <a class="el" href="relative__localization__filter_8c_source.html#l00067">range_msg_callback()</a>.</p>
 
 <p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -277,7 +281,7 @@ Functions</h2></td></tr>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="discrete__ekf_8c_a0ee0e70847cd195e6924fa44c6123769_icgraph.png" border="0" usemap="#discrete__ekf_8c_a0ee0e70847cd195e6924fa44c6123769_icgraph" alt=""/></div>
 <map name="discrete__ekf_8c_a0ee0e70847cd195e6924fa44c6123769_icgraph" id="discrete__ekf_8c_a0ee0e70847cd195e6924fa44c6123769_icgraph">
-<area shape="rect" id="node2" href="relative__localization__filter_8c.html#a2e719dd98f227ac5efe36084651ddf78" title="range_msg_callback" alt="" coords="204,13,356,39"/><area shape="rect" id="node3" href="relative__localization__filter_8h.html#a6da4d8bf05d9240f503606d63b6be761" title="relative_localization\l_filter_init" alt="" coords="404,5,551,47"/></map>
+<area shape="rect" id="node2" href="relative__localization__filter_8c.html#a9a5ee6ec3e44ff9f7cea260d969d6ddf" title="range_msg_callback" alt="" coords="204,13,356,39"/><area shape="rect" id="node3" href="relative__localization__filter_8h.html#a6da4d8bf05d9240f503606d63b6be761" title="relative_localization\l_filter_init" alt="" coords="404,5,551,47"/></map>
 </div>
 </p>
 
@@ -319,11 +323,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="discrete__ekf_8c_source.html#l00147">147</a> of file <a class="el" href="discrete__ekf_8c_source.html">discrete_ekf.c</a>.</p>
+<p>Definition at line <a class="el" href="discrete__ekf_8c_source.html#l00148">148</a> of file <a class="el" href="discrete__ekf_8c_source.html">discrete_ekf.c</a>.</p>
 
-<p>References <a class="el" href="discrete__ekf_8h_source.html#l00033">EKF_N</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00767">float_mat_diagonal_scal()</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00522">float_vect_zero()</a>.</p>
+<p>References <a class="el" href="discrete__ekf_8h_source.html#l00033">EKF_N</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00848">float_mat_diagonal_scal()</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00539">float_vect_zero()</a>.</p>
 
-<p>Referenced by <a class="el" href="discrete__ekf_8c_source.html#l00073">discrete_ekf_predict()</a>.</p>
+<p>Referenced by <a class="el" href="discrete__ekf_8c_source.html#l00074">discrete_ekf_predict()</a>.</p>
 
 <p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -343,7 +347,7 @@ Functions</h2></td></tr>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="discrete__ekf_8c_a8129f4209e00f0e3a4bed6979c6cdef3_icgraph.png" border="0" usemap="#discrete__ekf_8c_a8129f4209e00f0e3a4bed6979c6cdef3_icgraph" alt=""/></div>
 <map name="discrete__ekf_8c_a8129f4209e00f0e3a4bed6979c6cdef3_icgraph" id="discrete__ekf_8c_a8129f4209e00f0e3a4bed6979c6cdef3_icgraph">
-<area shape="rect" id="node2" href="discrete__ekf_8h.html#a515b057a11f8b3433315e870ecd4e6d2" title="discrete_ekf_predict" alt="" coords="145,13,296,39"/><area shape="rect" id="node3" href="relative__localization__filter_8c.html#a2e719dd98f227ac5efe36084651ddf78" title="range_msg_callback" alt="" coords="344,13,496,39"/><area shape="rect" id="node4" href="relative__localization__filter_8h.html#a6da4d8bf05d9240f503606d63b6be761" title="relative_localization\l_filter_init" alt="" coords="544,5,691,47"/></map>
+<area shape="rect" id="node2" href="discrete__ekf_8h.html#a515b057a11f8b3433315e870ecd4e6d2" title="discrete_ekf_predict" alt="" coords="145,13,296,39"/><area shape="rect" id="node3" href="relative__localization__filter_8c.html#a9a5ee6ec3e44ff9f7cea260d969d6ddf" title="range_msg_callback" alt="" coords="344,13,496,39"/><area shape="rect" id="node4" href="relative__localization__filter_8h.html#a6da4d8bf05d9240f503606d63b6be761" title="relative_localization\l_filter_init" alt="" coords="544,5,691,47"/></map>
 </div>
 </p>
 
@@ -379,11 +383,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="discrete__ekf_8c_source.html#l00163">163</a> of file <a class="el" href="discrete__ekf_8c_source.html">discrete_ekf.c</a>.</p>
+<p>Definition at line <a class="el" href="discrete__ekf_8c_source.html#l00164">164</a> of file <a class="el" href="discrete__ekf_8c_source.html">discrete_ekf.c</a>.</p>
 
 <p>References <a class="el" href="discrete__ekf_8h_source.html#l00034">EKF_M</a>, and <a class="el" href="discrete__ekf_8h_source.html#l00033">EKF_N</a>.</p>
 
-<p>Referenced by <a class="el" href="discrete__ekf_8c_source.html#l00073">discrete_ekf_predict()</a>.</p>
+<p>Referenced by <a class="el" href="discrete__ekf_8c_source.html#l00074">discrete_ekf_predict()</a>.</p>
 
 <p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -392,7 +396,7 @@ Functions</h2></td></tr>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="discrete__ekf_8c_a915e5c594a306beda10175b41f9a9d5e_icgraph.png" border="0" usemap="#discrete__ekf_8c_a915e5c594a306beda10175b41f9a9d5e_icgraph" alt=""/></div>
 <map name="discrete__ekf_8c_a915e5c594a306beda10175b41f9a9d5e_icgraph" id="discrete__ekf_8c_a915e5c594a306beda10175b41f9a9d5e_icgraph">
-<area shape="rect" id="node2" href="discrete__ekf_8h.html#a515b057a11f8b3433315e870ecd4e6d2" title="discrete_ekf_predict" alt="" coords="175,13,325,39"/><area shape="rect" id="node3" href="relative__localization__filter_8c.html#a2e719dd98f227ac5efe36084651ddf78" title="range_msg_callback" alt="" coords="373,13,525,39"/><area shape="rect" id="node4" href="relative__localization__filter_8h.html#a6da4d8bf05d9240f503606d63b6be761" title="relative_localization\l_filter_init" alt="" coords="573,5,720,47"/></map>
+<area shape="rect" id="node2" href="discrete__ekf_8h.html#a515b057a11f8b3433315e870ecd4e6d2" title="discrete_ekf_predict" alt="" coords="175,13,325,39"/><area shape="rect" id="node3" href="relative__localization__filter_8c.html#a9a5ee6ec3e44ff9f7cea260d969d6ddf" title="range_msg_callback" alt="" coords="373,13,525,39"/><area shape="rect" id="node4" href="relative__localization__filter_8h.html#a6da4d8bf05d9240f503606d63b6be761" title="relative_localization\l_filter_init" alt="" coords="573,5,720,47"/></map>
 </div>
 </p>
 
@@ -404,7 +408,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_808b32a89de8baa3bfdbe89b0748a283.html">relative_localization_filter</a></li><li class="navelem"><a class="el" href="discrete__ekf_8c.html">discrete_ekf.c</a></li>
-    <li class="footer">Generated on Wed Sep 12 2018 02:03:40 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:03:22 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

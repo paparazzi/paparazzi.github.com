@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -154,7 +154,7 @@ $(document).ready(function(){initNavTree('globals_defs_n.html','');});
 : <a class="el" href="group__math__geodetic__utm.html#ga0240ac851181b84ac374872dc5434ee4">pprz_geodetic_utm.h</a>
 </li>
 <li>N_MAX_OF_GH
-: <a class="el" href="group__math__geodetic__wmm.html#ga14fae9a0d6423e6436793d10df70feeb">pprz_geodetic_wmm2015.h</a>
+: <a class="el" href="group__math__geodetic__wmm.html#ga14fae9a0d6423e6436793d10df70feeb">pprz_geodetic_wmm2020.h</a>
 </li>
 <li>N_WINDOW_SIZES
 : <a class="el" href="detect__window_8c.html#aa9b19b106182b9a72e86e8c9bc869de8">detect_window.c</a>
@@ -219,6 +219,7 @@ $(document).ready(function(){initNavTree('globals_defs_n.html','');});
 <li>NAV_C
 : <a class="el" href="nav_8c.html#a291c0fda2fd988bf5f602f56157ab2b7">nav.c</a>
 , <a class="el" href="rotorcraft_2navigation_8c.html#a291c0fda2fd988bf5f602f56157ab2b7">navigation.c</a>
+, <a class="el" href="orange__avoider_8c.html#a291c0fda2fd988bf5f602f56157ab2b7">orange_avoider.c</a>
 </li>
 <li>NAV_CATAPULT_ACCELERATION_DETECTION
 : <a class="el" href="nav__catapult_8c.html#a32b68a8eeb8fccf0a43882f920658613">nav_catapult.c</a>
@@ -554,16 +555,16 @@ $(document).ready(function(){initNavTree('globals_defs_n.html','');});
 , <a class="el" href="rotorcraft_2navigation_8h.html#ad617b2ea9bb32ff976e4b172cd375483">navigation.h</a>
 </li>
 <li>NavVerticalAutoThrottleMode
-: <a class="el" href="rotorcraft_2navigation_8h.html#af95d040500e23a05d6b095662fb18b59">navigation.h</a>
-, <a class="el" href="nav_8h.html#af95d040500e23a05d6b095662fb18b59">nav.h</a>
+: <a class="el" href="nav_8h.html#af95d040500e23a05d6b095662fb18b59">nav.h</a>
+, <a class="el" href="rotorcraft_2navigation_8h.html#af95d040500e23a05d6b095662fb18b59">navigation.h</a>
 </li>
 <li>NavVerticalClimbMode
-: <a class="el" href="nav_8h.html#a2b27eca94ecb2d5b20d5af88bfdd4efe">nav.h</a>
-, <a class="el" href="rover_2navigation_8h.html#a2b27eca94ecb2d5b20d5af88bfdd4efe">navigation.h</a>
+: <a class="el" href="rotorcraft_2navigation_8h.html#a2b27eca94ecb2d5b20d5af88bfdd4efe">navigation.h</a>
+, <a class="el" href="nav_8h.html#a2b27eca94ecb2d5b20d5af88bfdd4efe">nav.h</a>
 </li>
 <li>NavVerticalThrottleMode
 : <a class="el" href="nav_8h.html#a6f740d9f9313ba73fa7dcd9dd53c4440">nav.h</a>
-, <a class="el" href="rotorcraft_2navigation_8h.html#a6f740d9f9313ba73fa7dcd9dd53c4440">navigation.h</a>
+, <a class="el" href="rover_2navigation_8h.html#ab7db1bb7418f38442135471a3b4f3c24">navigation.h</a>
 </li>
 <li>NB_ACS
 : <a class="el" href="rssi_8c.html#aa9ad271011923751218b103cae2e0bfd">rssi.c</a>
@@ -588,8 +589,8 @@ $(document).ready(function(){initNavTree('globals_defs_n.html','');});
 <li>NB_DATA
 : <a class="el" href="generic__com_8c.html#af6dccfe0d3bbf8f9b4ec05cf162a376a">generic_com.c</a>
 , <a class="el" href="MPPT_8h.html#af6dccfe0d3bbf8f9b4ec05cf162a376a">MPPT.h</a>
-, <a class="el" href="ins__arduimu_8h.html#af6dccfe0d3bbf8f9b4ec05cf162a376a">ins_arduimu.h</a>
 , <a class="el" href="modules_2ins_2ins__arduimu__basic_8c.html#af6dccfe0d3bbf8f9b4ec05cf162a376a">ins_arduimu_basic.c</a>
+, <a class="el" href="ins__arduimu_8h.html#af6dccfe0d3bbf8f9b4ec05cf162a376a">ins_arduimu.h</a>
 </li>
 <li>NB_I2C_DATA
 : <a class="el" href="MPPT_8c.html#a007d3eb9d351cf41c0e3576b0b265c54">MPPT.c</a>
@@ -622,10 +623,10 @@ $(document).ready(function(){initNavTree('globals_defs_n.html','');});
 : <a class="el" href="baro__MS5534A_8c.html#a33edcc7fcd680338e39f36a495b62dae">baro_MS5534A.c</a>
 </li>
 <li>NMAX_1
-: <a class="el" href="group__math__geodetic__wmm.html#gac384eb6e7db2995f6746bd4be6a0513a">pprz_geodetic_wmm2015.h</a>
+: <a class="el" href="group__math__geodetic__wmm.html#gac384eb6e7db2995f6746bd4be6a0513a">pprz_geodetic_wmm2020.h</a>
 </li>
 <li>NMAX_2
-: <a class="el" href="group__math__geodetic__wmm.html#ga27c719d328a05f8348ccf8d1961565d0">pprz_geodetic_wmm2015.h</a>
+: <a class="el" href="group__math__geodetic__wmm.html#ga27c719d328a05f8348ccf8d1961565d0">pprz_geodetic_wmm2020.h</a>
 </li>
 <li>NMEA_MAXLEN
 : <a class="el" href="gps__nmea_8h.html#aba1b916a956dfdb482db16b3ef018572">gps_nmea.h</a>
@@ -642,9 +643,6 @@ $(document).ready(function(){initNavTree('globals_defs_n.html','');});
 <li>NO_CONF_WORD
 : <a class="el" href="infrared__i2c_8c.html#ad644a43f424142bebc17bb8ddea9599a">infrared_i2c.c</a>
 </li>
-<li>NO_DIV
-: <a class="el" href="size__divergence_8c.html#ad2ec1e7d1bb959942dfd30024bfeae21">size_divergence.c</a>
-</li>
 <li>noACK
 : <a class="el" href="humid__sht_8c.html#a608ff686c5fbdfd9631fc11c57cee9a8">humid_sht.c</a>
 </li>
@@ -658,8 +656,7 @@ $(document).ready(function(){initNavTree('globals_defs_n.html','');});
 : <a class="el" href="stereo__avoid__sim_8c.html#aa8a30b33178414e6d1c8d872781cb7b5">stereo_avoid_sim.c</a>
 </li>
 <li>NormCourse
-: <a class="el" href="rotorcraft_2navigation_8h.html#a397bca15d146964a80f93abd74763384">navigation.h</a>
-, <a class="el" href="nav_8h.html#a397bca15d146964a80f93abd74763384">nav.h</a>
+: <a class="el" href="nav_8h.html#a397bca15d146964a80f93abd74763384">nav.h</a>
 , <a class="el" href="rover_2navigation_8h.html#a397bca15d146964a80f93abd74763384">navigation.h</a>
 </li>
 <li>NormCourseRad
@@ -690,8 +687,8 @@ $(document).ready(function(){initNavTree('globals_defs_n.html','');});
 : <a class="el" href="nps__sensor__baro_8c.html#ae504bbaf7027e2689155fd3f6a9706e6">nps_sensor_baro.c</a>
 </li>
 <li>NPS_BYPASS_AHRS
-: <a class="el" href="nps__autopilot__fixedwing_8c.html#ac43e9310c9c7cafa544b09a8090c3d17">nps_autopilot_fixedwing.c</a>
-, <a class="el" href="nps__autopilot__rotorcraft_8c.html#ac43e9310c9c7cafa544b09a8090c3d17">nps_autopilot_rotorcraft.c</a>
+: <a class="el" href="nps__autopilot__rotorcraft_8c.html#ac43e9310c9c7cafa544b09a8090c3d17">nps_autopilot_rotorcraft.c</a>
+, <a class="el" href="nps__autopilot__fixedwing_8c.html#ac43e9310c9c7cafa544b09a8090c3d17">nps_autopilot_fixedwing.c</a>
 </li>
 <li>NPS_BYPASS_INS
 : <a class="el" href="nps__autopilot__fixedwing_8c.html#a2aa730dceb2044d13e49f3bd5df966e4">nps_autopilot_fixedwing.c</a>
@@ -805,6 +802,36 @@ $(document).ready(function(){initNavTree('globals_defs_n.html','');});
 <li>NPS_WORLD_ENV_UPDATE
 : <a class="el" href="nps__atmosphere_8c.html#ac7be27bf16ee44f5991585438203f7d0">nps_atmosphere.c</a>
 </li>
+<li>NRF_FLOW_CTRL
+: <a class="el" href="crazyflie_2chibios_2v2_81_2board_8h.html#a922f203619850f53b833a7eedffdad9e">board.h</a>
+</li>
+<li>NRF_FLOW_CTRL_PORT
+: <a class="el" href="crazyflie_2chibios_2v2_81_2board_8h.html#adb56ce35c687dad2f774f21fb19f9c5f">board.h</a>
+</li>
+<li>NRF_RX
+: <a class="el" href="crazyflie_2chibios_2v2_81_2board_8h.html#a3f893e704102bb92506097210547f331">board.h</a>
+</li>
+<li>NRF_RX_PORT
+: <a class="el" href="crazyflie_2chibios_2v2_81_2board_8h.html#a1a044dd9fa40cd92d8af518f7f2679ca">board.h</a>
+</li>
+<li>NRF_SWCLK
+: <a class="el" href="crazyflie_2chibios_2v2_81_2board_8h.html#a1f9a89c1809fbf99b0d19b63e9c60ec6">board.h</a>
+</li>
+<li>NRF_SWCLK_PORT
+: <a class="el" href="crazyflie_2chibios_2v2_81_2board_8h.html#af052e30927c9e06503b42a4439f2a130">board.h</a>
+</li>
+<li>NRF_SWIO
+: <a class="el" href="crazyflie_2chibios_2v2_81_2board_8h.html#a1302e0db2de9410231816866cebdcdc1">board.h</a>
+</li>
+<li>NRF_SWIO_PORT
+: <a class="el" href="crazyflie_2chibios_2v2_81_2board_8h.html#a33911e6e70e98778c3cc4aca5c49f8fb">board.h</a>
+</li>
+<li>NRF_TX
+: <a class="el" href="crazyflie_2chibios_2v2_81_2board_8h.html#ab6ab3a569ebf8c559057a35858664d57">board.h</a>
+</li>
+<li>NRF_TX_PORT
+: <a class="el" href="crazyflie_2chibios_2v2_81_2board_8h.html#a1c2e9aee1559dce88889ea957cdb3601">board.h</a>
+</li>
 <li>NSEC_OF_SEC
 : <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c.html#aeebc5d5fb02a87260cedd423fb3cc039">sys_time_arch.c</a>
 </li>
@@ -843,8 +870,8 @@ $(document).ready(function(){initNavTree('globals_defs_n.html','');});
 : <a class="el" href="apogee__1_80_8h.html#a636ff5041f4e741fddf95be4529be2a7">apogee_1.0.h</a>
 </li>
 <li>NVIC_SPI_IRQ_PRIO
-: <a class="el" href="stm32_2mcu__periph_2spi__arch_8c.html#a8994f7c1ff31dac6203cb108c17f037b">spi_arch.c</a>
-, <a class="el" href="apogee__1_80_8h.html#a8994f7c1ff31dac6203cb108c17f037b">apogee_1.0.h</a>
+: <a class="el" href="apogee__1_80_8h.html#a8994f7c1ff31dac6203cb108c17f037b">apogee_1.0.h</a>
+, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c.html#a8994f7c1ff31dac6203cb108c17f037b">spi_arch.c</a>
 </li>
 <li>NVIC_TIM6_DAC_IRQ_PRIO
 : <a class="el" href="apogee__1_80_8h.html#ad1b25396f3821ed53d02ea3e9eebb8fd">apogee_1.0.h</a>
@@ -867,7 +894,7 @@ $(document).ready(function(){initNavTree('globals_defs_n.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Sep 12 2018 02:04:34 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:04:12 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

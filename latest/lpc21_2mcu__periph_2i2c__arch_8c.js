@@ -1,9 +1,9 @@
 var lpc21_2mcu__periph_2i2c__arch_8c =
 [
     [ "i2c_event", "group__i2c.html#ga05763355d0e087ba41feab61dd773fe6", null ],
-    [ "i2c_idle", "group__i2c.html#ga7c5157eae9cb80352e8fa1319db148f8", null ],
-    [ "i2c_setbitrate", "group__i2c.html#ga886c0abe64ca0d366a35abba80cf2eff", null ],
-    [ "i2c_submit", "group__i2c.html#ga78e9c2753ae191a4aed66b82077b1dfe", null ],
+    [ "i2c_lpc21_idle", "lpc21_2mcu__periph_2i2c__arch_8c.html#a87a7fcd19b5ae1a1cd5c6eb0188efb30", null ],
+    [ "i2c_lpc21_setbitrate", "lpc21_2mcu__periph_2i2c__arch_8c.html#aee652803b61f0fdbf44350c7f54cfe64", null ],
+    [ "i2c_lpc21_submit", "lpc21_2mcu__periph_2i2c__arch_8c.html#a9c42e9878770c0799bee2c001f2a6151", null ],
     [ "I2cAutomaton", "lpc21_2mcu__periph_2i2c__arch_8c.html#a512c156108b054d32fb4e221d2e057f7", null ],
     [ "I2cClearIT", "lpc21_2mcu__periph_2i2c__arch_8c.html#a981976ae466e6a26c1e91774e12c2bd9", null ],
     [ "I2cClearStart", "lpc21_2mcu__periph_2i2c__arch_8c.html#afeedcbbb1955ba3dc334152678f8ca8d", null ],

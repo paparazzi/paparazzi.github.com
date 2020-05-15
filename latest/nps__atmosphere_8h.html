@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -124,7 +124,7 @@ $(document).ready(function(){initNavTree('nps__atmosphere_8h.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nps__atmosphere_8h__incl.png" border="0" usemap="#sw_2simulator_2nps_2nps__atmosphere_8h" alt=""/></div>
 <map name="sw_2simulator_2nps_2nps__atmosphere_8h" id="sw_2simulator_2nps_2nps__atmosphere_8h">
-<area shape="rect" id="node2" href="pprz__algebra__double_8h.html" title="Paparazzi double precision floating point algebra. " alt="" coords="85,95,290,121"/><area shape="rect" id="node3" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="25,244,142,271"/><area shape="rect" id="node7" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="169,169,321,196"/></map>
+<area shape="rect" id="node2" href="pprz__algebra__double_8h.html" title="Paparazzi double precision floating point algebra. " alt="" coords="89,95,294,121"/><area shape="rect" id="node3" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="77,244,194,271"/><area shape="rect" id="node8" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="173,169,325,196"/></map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
@@ -149,7 +149,7 @@ Functions</h2></td></tr>
 <tr class="separator:a5c5546f787b1d322ecf38dc10de13309"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad83734b3b0bac4f867043ea1721f8d76"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nps__atmosphere_8h.html#ad83734b3b0bac4f867043ea1721f8d76">nps_atmosphere_set_wind_speed</a> (double speed)</td></tr>
 <tr class="separator:ad83734b3b0bac4f867043ea1721f8d76"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af26b03152e5247339b17a8fc33b02573"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nps__atmosphere_8h.html#af26b03152e5247339b17a8fc33b02573">nps_atmosphere_set_wind_dir</a> (double dir)</td></tr>
+<tr class="memitem:af26b03152e5247339b17a8fc33b02573"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nps__atmosphere_8h.html#af26b03152e5247339b17a8fc33b02573">nps_atmosphere_set_wind_dir</a> (double <a class="el" href="shift__tracking_8c.html#a04c95be5dd36c679da64fa7181ff7cd2">dir</a>)</td></tr>
 <tr class="separator:af26b03152e5247339b17a8fc33b02573"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c302a2aca854b5dbc792b93decc0fb2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nps__atmosphere_8h.html#a0c302a2aca854b5dbc792b93decc0fb2">nps_atmosphere_set_wind_ned</a> (double wind_north, double wind_east, double wind_down)</td></tr>
 <tr class="separator:a0c302a2aca854b5dbc792b93decc0fb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -245,7 +245,7 @@ horizontal wind magnitude in m/s </td></tr>
 
 <p>Definition at line <a class="el" href="nps__atmosphere_8c_source.html#l00053">53</a> of file <a class="el" href="nps__atmosphere_8c_source.html">nps_atmosphere.c</a>.</p>
 
-<p>References <a class="el" href="pprz__algebra__float_8h_source.html#l00147">FLOAT_VECT3_ZERO</a>, <a class="el" href="nps__atmosphere_8h_source.html#l00038">NpsAtmosphere::last_world_env_req</a>, <a class="el" href="nps__atmosphere_8c_source.html#l00051">nps_atmosphere</a>, <a class="el" href="nps__atmosphere_8c_source.html#l00071">nps_atmosphere_set_wind_dir()</a>, <a class="el" href="nps__atmosphere_8c_source.html#l00063">nps_atmosphere_set_wind_speed()</a>, <a class="el" href="nps__atmosphere_8c_source.html#l00032">NPS_QNH</a>, <a class="el" href="nps__atmosphere_8c_source.html#l00044">NPS_TURBULENCE_SEVERITY</a>, <a class="el" href="nps__atmosphere_8c_source.html#l00040">NPS_WIND_DIR</a>, <a class="el" href="nps__atmosphere_8c_source.html#l00036">NPS_WIND_SPEED</a>, <a class="el" href="nps__atmosphere_8h_source.html#l00033">NpsAtmosphere::qnh</a>, <a class="el" href="nps__atmosphere_8h_source.html#l00037">NpsAtmosphere::turbulence_severity</a>, and <a class="el" href="nps__atmosphere_8h_source.html#l00036">NpsAtmosphere::wind</a>.</p>
+<p>References <a class="el" href="pprz__algebra__float_8h_source.html#l00161">FLOAT_VECT3_ZERO</a>, <a class="el" href="nps__atmosphere_8h_source.html#l00038">NpsAtmosphere::last_world_env_req</a>, <a class="el" href="nps__atmosphere_8c_source.html#l00051">nps_atmosphere</a>, <a class="el" href="nps__atmosphere_8c_source.html#l00071">nps_atmosphere_set_wind_dir()</a>, <a class="el" href="nps__atmosphere_8c_source.html#l00063">nps_atmosphere_set_wind_speed()</a>, <a class="el" href="nps__atmosphere_8c_source.html#l00032">NPS_QNH</a>, <a class="el" href="nps__atmosphere_8c_source.html#l00044">NPS_TURBULENCE_SEVERITY</a>, <a class="el" href="nps__atmosphere_8c_source.html#l00040">NPS_WIND_DIR</a>, <a class="el" href="nps__atmosphere_8c_source.html#l00036">NPS_WIND_SPEED</a>, <a class="el" href="nps__atmosphere_8h_source.html#l00033">NpsAtmosphere::qnh</a>, <a class="el" href="nps__atmosphere_8h_source.html#l00037">NpsAtmosphere::turbulence_severity</a>, and <a class="el" href="nps__atmosphere_8h_source.html#l00036">NpsAtmosphere::wind</a>.</p>
 
 <p>Referenced by <a class="el" href="nps__main__common_8c_source.html#l00079">nps_main_init()</a>.</p>
 
@@ -289,7 +289,7 @@ horizontal wind magnitude in m/s </td></tr>
 
 <p>Definition at line <a class="el" href="nps__atmosphere_8c_source.html#l00071">71</a> of file <a class="el" href="nps__atmosphere_8c_source.html">nps_atmosphere.c</a>.</p>
 
-<p>References <a class="el" href="nps__atmosphere_8c_source.html#l00051">nps_atmosphere</a>, <a class="el" href="nps__atmosphere_8h_source.html#l00036">NpsAtmosphere::wind</a>, <a class="el" href="nps__atmosphere_8h_source.html#l00035">NpsAtmosphere::wind_dir</a>, <a class="el" href="nps__atmosphere_8h_source.html#l00034">NpsAtmosphere::wind_speed</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00047">DoubleVect3::x</a>, and <a class="el" href="pprz__algebra__double_8h_source.html#l00048">DoubleVect3::y</a>.</p>
+<p>References <a class="el" href="shift__tracking_8c_source.html#l00091">dir</a>, <a class="el" href="nps__atmosphere_8c_source.html#l00051">nps_atmosphere</a>, <a class="el" href="nps__atmosphere_8h_source.html#l00036">NpsAtmosphere::wind</a>, <a class="el" href="nps__atmosphere_8h_source.html#l00035">NpsAtmosphere::wind_dir</a>, <a class="el" href="nps__atmosphere_8h_source.html#l00034">NpsAtmosphere::wind_speed</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00047">DoubleVect3::x</a>, and <a class="el" href="pprz__algebra__double_8h_source.html#l00048">DoubleVect3::y</a>.</p>
 
 <p>Referenced by <a class="el" href="nps__atmosphere_8c_source.html#l00053">nps_atmosphere_init()</a>.</p>
 
@@ -338,7 +338,7 @@ horizontal wind magnitude in m/s </td></tr>
 
 <p>Definition at line <a class="el" href="nps__atmosphere_8c_source.html#l00083">83</a> of file <a class="el" href="nps__atmosphere_8c_source.html">nps_atmosphere.c</a>.</p>
 
-<p>References <a class="el" href="pprz__algebra__float_8h_source.html#l00118">FLOAT_VECT2_NORM</a>, <a class="el" href="nps__atmosphere_8c_source.html#l00051">nps_atmosphere</a>, <a class="el" href="nps__atmosphere_8h_source.html#l00036">NpsAtmosphere::wind</a>, <a class="el" href="nps__atmosphere_8h_source.html#l00035">NpsAtmosphere::wind_dir</a>, <a class="el" href="nps__atmosphere_8h_source.html#l00034">NpsAtmosphere::wind_speed</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00047">DoubleVect3::x</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00048">DoubleVect3::y</a>, and <a class="el" href="pprz__algebra__double_8h_source.html#l00049">DoubleVect3::z</a>.</p>
+<p>References <a class="el" href="shift__tracking_8c_source.html#l00091">dir</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00132">FLOAT_VECT2_NORM</a>, <a class="el" href="nps__atmosphere_8c_source.html#l00051">nps_atmosphere</a>, <a class="el" href="nps__atmosphere_8h_source.html#l00036">NpsAtmosphere::wind</a>, <a class="el" href="nps__atmosphere_8h_source.html#l00035">NpsAtmosphere::wind_dir</a>, <a class="el" href="nps__atmosphere_8h_source.html#l00034">NpsAtmosphere::wind_speed</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00047">DoubleVect3::x</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00048">DoubleVect3::y</a>, and <a class="el" href="pprz__algebra__double_8h_source.html#l00049">DoubleVect3::z</a>.</p>
 
 <p>Referenced by <a class="el" href="nps__flightgear_8c_source.html#l00231">nps_flightgear_receive()</a>, and <a class="el" href="nps__ivy_8c_source.html#l00095">on_WORLD_ENV()</a>.</p>
 
@@ -455,7 +455,7 @@ horizontal wind magnitude in m/s </td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_57152efd0242905f7c5d6768e6b65e41.html">simulator</a></li><li class="navelem"><a class="el" href="dir_19bdda89d6219119fa616a46fa62e86b.html">nps</a></li><li class="navelem"><a class="el" href="nps__atmosphere_8h.html">nps_atmosphere.h</a></li>
-    <li class="footer">Generated on Wed Sep 12 2018 02:03:53 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:03:37 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

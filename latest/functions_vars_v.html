@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -161,6 +161,12 @@ $(document).ready(function(){initNavTree('functions_vars_v.html','');});
 <li>v_body_w
 : <a class="el" href="flight__gear_8h.html#aa2c7aa8fe2b6fe2548cf1a22c7487c92">FGNetFDM</a>
 </li>
+<li>v_centroid_x
+: <a class="el" href="ctc_8h.html#a20edcde8852e3216edd961306d1dd1af">ctc_con</a>
+</li>
+<li>v_centroid_y
+: <a class="el" href="ctc_8h.html#a5a3622c70e4b5d25d01c95753d858450">ctc_con</a>
+</li>
 <li>v_down
 : <a class="el" href="flight__gear_8h.html#a771bb5eefd500c614ea0a09f0a894a4f">FGNetFDM</a>
 </li>
@@ -183,10 +189,13 @@ $(document).ready(function(){initNavTree('functions_vars_v.html','');});
 : <a class="el" href="humid__pcap01_8h.html#a21462bf42fd8ffa2009e2c9dcfd7778b">PCAP01VALUE</a>
 </li>
 <li>v_sp
-: <a class="el" href="vi_8h.html#a3e49bc5063f03b187bbcbe0844e06b7a">Vi_command</a>
+: <a class="el" href="vi_8h.html#af59568af1069daf690bdbb4b8db1ddf8">Vi_command</a>
 </li>
 <li>va
 : <a class="el" href="UKF__Wind__Estimator_8h.html#aa09acbe181e42306d10dba57261b52a7">ExtU</a>
+</li>
+<li>vacc
+: <a class="el" href="gps_8h.html#aac1ba72a9c275ba426edb075b4b3575e">GpsState</a>
 </li>
 <li>val
 : <a class="el" href="airspeed__adc_8h.html#a5fcd7daa1371a69f1faa029a898999bb">AirspeedAdc</a>
@@ -196,6 +205,7 @@ $(document).ready(function(){initNavTree('functions_vars_v.html','');});
 : <a class="el" href="nps__radio__control_8h.html#a50236542116e595f4c2ad5e684b10283">NpsRadioControl</a>
 , <a class="el" href="spektrum_8h.html#ad71bdb402076ab07a67a93d18bda37b4">spektrum_sat_t</a>
 , <a class="el" href="spektrum_8h.html#a4c8ee69a3ef5b1649f77d0365e81b827">spektrum_t</a>
+, <a class="el" href="cv__target__localization_8c.html#ad929e8431fd1e707e67b9ff8f7281451">target_loc_t</a>
 </li>
 <li>valid_fields
 : <a class="el" href="gps_8h.html#aa49d58cc2ab1865f2a3c938a405a392a">GpsState</a>
@@ -438,8 +448,7 @@ $(document).ready(function(){initNavTree('functions_vars_v.html','');});
 : <a class="el" href="ads1220_8h.html#a1b98dc0c6d81167adcd125e3790d2758">Ads1220Config</a>
 </li>
 <li>vsupply
-: <a class="el" href="electrical_8h.html#aa06d22221dc04d5615b4bbc0a7e66556">Electrical</a>
-, <a class="el" href="intermcu__ap_8h.html#a839b3814bf60a5bbcacd3375461a1743">fbw_status_t</a>
+: <a class="el" href="electrical_8h.html#ad5e535e39613e6ec89d498019ef62030">Electrical</a>
 </li>
 <li>vt_pix_clk
 : <a class="el" href="mt9f002_8h.html#a5383a4355bbfe8a467cf06656dc75b79">mt9f002_t</a>
@@ -450,15 +459,22 @@ $(document).ready(function(){initNavTree('functions_vars_v.html','');});
 <li>vt_sys_clk_div
 : <a class="el" href="mt9f002_8h.html#a98203edac8ef72fdc8eac755024411b1">mt9f002_t</a>
 </li>
+<li>vtheta
+: <a class="el" href="actuators__ostrich_8c.html#af235d3bc6c40c875765e4e9914434b0c">SpeedMessagePayload</a>
+</li>
 <li>vx
-: <a class="el" href="navdata_8h.html#ac704f8d64ef3c8a2cdd0f45295d169e5">navdata_measure_t</a>
+: <a class="el" href="ctc_8h.html#a7e30972db00cb44e907ac65cd61c540d">ctc_con</a>
+, <a class="el" href="navdata_8h.html#ac704f8d64ef3c8a2cdd0f45295d169e5">navdata_measure_t</a>
 , <a class="el" href="decawave__anchorless__communication_8c.html#a701a0951ea5719144dc95167ec86eecf">nodeState</a>
 , <a class="el" href="gps__sirf_8c.html#afc4ca92b8d06d7d9219af76b6c53e4d3">sirf_msg_2</a>
+, <a class="el" href="actuators__ostrich_8c.html#a6194bdaf17aa776dce8731cbae70b8d6">SpeedMessagePayload</a>
 </li>
 <li>vy
-: <a class="el" href="navdata_8h.html#a450101f0300e48b4a51148cdfdc74d55">navdata_measure_t</a>
+: <a class="el" href="ctc_8h.html#aff5d833bf5cb291522785575013c8b2a">ctc_con</a>
+, <a class="el" href="navdata_8h.html#a450101f0300e48b4a51148cdfdc74d55">navdata_measure_t</a>
 , <a class="el" href="decawave__anchorless__communication_8c.html#ac42a63234e729735ea920ea7e5e18eeb">nodeState</a>
 , <a class="el" href="gps__sirf_8c.html#aa289bb266110fe7357adb2cdc527399c">sirf_msg_2</a>
+, <a class="el" href="actuators__ostrich_8c.html#adaafdb634b45e682092492073200bb2b">SpeedMessagePayload</a>
 </li>
 <li>vz
 : <a class="el" href="navdata_8h.html#a7a6dd3424352c1d15343131360e4e11f">navdata_measure_t</a>
@@ -470,7 +486,7 @@ $(document).ready(function(){initNavTree('functions_vars_v.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Sep 12 2018 02:04:30 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:04:08 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

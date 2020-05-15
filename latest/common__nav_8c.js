@@ -2,6 +2,7 @@ var common__nav_8c =
 [
     [ "common_nav_periodic_task_4Hz", "common__nav_8c.html#a41fefa6b96afeb9a5d9f8bc41b7b8c2e", null ],
     [ "compute_dist2_to_home", "common__nav_8c.html#a4603515f41786b54ea9383a65a9f249e", null ],
+    [ "get_time_to_home", "common__nav_8c.html#a0bb529b33392eba09b44a6b34be03cc0", null ],
     [ "nav_move_waypoint", "common__nav_8c.html#af9adf1af7508631a6122c216c6b57602", null ],
     [ "nav_reset_alt", "common__nav_8c.html#a3288149314aa748ce8aa507335f50bfd", null ],
     [ "nav_reset_reference", "common__nav_8c.html#a1886ff619a5c03dc6c54729f301fa62e", null ],

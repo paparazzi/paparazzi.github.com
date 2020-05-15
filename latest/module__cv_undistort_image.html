@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -112,15 +112,10 @@ Example for airframe file</h1>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;&lt;module name=&quot;cv_undistort_image&quot;&gt;</div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;  &lt;define name=&quot;UNDISTORT_MIN_X_NORMALIZED&quot; value=&quot;-2.0&quot; /&gt;</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;  &lt;define name=&quot;UNDISTORT_MAX_X_NORMALIZED&quot; value=&quot;2.0&quot; /&gt;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;  &lt;define name=&quot;UNDISTORT_DHANE_K&quot; value=&quot;1.25&quot; /&gt;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;  &lt;define name=&quot;UNDISTORT_FPS&quot; value=&quot;0&quot; /&gt;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;  &lt;define name=&quot;UNDISTORT_CAMERA&quot; value=&quot;bottom_camera|front_camera&quot; /&gt;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  &lt;define name=&quot;UNDISTORT_CENTER_RATIO&quot; value=&quot;1.0&quot; /&gt;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  &lt;define name=&quot;UNDISTORT_FOCAL_X&quot; value=&quot;189.69&quot; /&gt;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  &lt;define name=&quot;UNDISTORT_FOCAL_Y&quot; value=&quot;188.60&quot; /&gt;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  &lt;define name=&quot;UNDISTORT_CENTER_X&quot; value=&quot;165.04&quot; /&gt;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  &lt;define name=&quot;UNDISTORT_CENTER_Y&quot; value=&quot;118.44&quot; /&gt;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;&lt;/module&gt;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;  &lt;define name=&quot;UNDISTORT_FPS&quot; value=&quot;0&quot; /&gt;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;  &lt;define name=&quot;UNDISTORT_CAMERA&quot; value=&quot;bottom_camera|front_camera&quot; /&gt;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;  &lt;define name=&quot;UNDISTORT_CENTER_RATIO&quot; value=&quot;1.0&quot; /&gt;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;&lt;/module&gt;</div>
 </div><!-- fragment --> <h1><a class="anchor" id="configuration__cv_undistort_image"></a>
 Module configuration options</h1>
 <h2><a class="anchor" id="define"></a>
@@ -130,22 +125,12 @@ Define Options</h2>
  Description: Minimal normalized x-coordinate to be used for the undistortion</li>
 <li><b>name:</b> <code>UNDISTORT_MAX_X_NORMALIZED</code> <b>value:</b> <em>2.0</em> <br />
  Description: Maximal normalized x-coordinate to be used for the undistortion</li>
-<li><b>name:</b> <code>UNDISTORT_DHANE_K</code> <b>value:</b> <em>1.25</em> <br />
- Description: The single parameter of the Dhane invertible (un)distortion model.</li>
 <li><b>name:</b> <code>UNDISTORT_FPS</code> <b>value:</b> <em>0</em> <br />
  Description: The (maximum) frequency to run the calculations at. If zero, it will max out at the camera frame rate</li>
 <li><b>name:</b> <code>UNDISTORT_CAMERA</code> <b>value:</b> <em>bottom_camera|front_camera</em> <br />
  Description: The V4L2 camera device that is used for the calculations</li>
 <li><b>name:</b> <code>UNDISTORT_CENTER_RATIO</code> <b>value:</b> <em>1.0</em> <br />
  Description: If smaller than 1 only generate pixels for the center_ratio times the min_x to max_x interval. This makes undistortion quicker, but for a smaller FOV.</li>
-<li><b>name:</b> <code>UNDISTORT_FOCAL_X</code> <b>value:</b> <em>189.69</em> <br />
- Description: Focal length x-axis in pixels.</li>
-<li><b>name:</b> <code>UNDISTORT_FOCAL_Y</code> <b>value:</b> <em>188.60</em> <br />
- Description: Focal length y-axis in pixels.</li>
-<li><b>name:</b> <code>UNDISTORT_CENTER_X</code> <b>value:</b> <em>165.04</em> <br />
- Description: Image x-coordinate of the camera principal axis.</li>
-<li><b>name:</b> <code>UNDISTORT_CENTER_Y</code> <b>value:</b> <em>118.44</em> <br />
- Description: Image y-coordinate of the camera principal axis.</li>
 </ul>
 <h1><a class="anchor" id="dependencies__cv_undistort_image"></a>
 Dependencies</h1>
@@ -191,15 +176,9 @@ Raw cv_undistort_image.xml file:</h2>
 <div class="line">    &lt;/description&gt;</div>
 <div class="line">    &lt;define name=&quot;UNDISTORT_MIN_X_NORMALIZED&quot; value=&quot;-2.0&quot; description=&quot;Minimal normalized x-coordinate to be used for the undistortion&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;UNDISTORT_MAX_X_NORMALIZED&quot; value=&quot;2.0&quot; description=&quot;Maximal normalized x-coordinate to be used for the undistortion&quot;/&gt;</div>
-<div class="line">    &lt;define name=&quot;UNDISTORT_DHANE_K&quot; value=&quot;1.25&quot; description=&quot;The single parameter of the Dhane invertible (un)distortion model.&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;UNDISTORT_FPS&quot; value=&quot;0&quot; description=&quot;The (maximum) frequency to run the calculations at. If zero, it will max out at the camera frame rate&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;UNDISTORT_CAMERA&quot; value=&quot;bottom_camera|front_camera&quot; description=&quot;The V4L2 camera device that is used for the calculations&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;UNDISTORT_CENTER_RATIO&quot; value=&quot;1.0&quot; description=&quot;If smaller than 1 only generate pixels for the center_ratio times the min_x to max_x interval. This makes undistortion quicker, but for a smaller FOV.&quot;/&gt;</div>
-<div class="line">    &lt;define name=&quot;UNDISTORT_FOCAL_X&quot; value=&quot;189.69&quot; description=&quot;Focal length x-axis in pixels.&quot;/&gt;</div>
-<div class="line">    &lt;define name=&quot;UNDISTORT_FOCAL_Y&quot; value=&quot;188.60&quot; description=&quot;Focal length y-axis in pixels.&quot;/&gt;</div>
-<div class="line">    &lt;define name=&quot;UNDISTORT_CENTER_X&quot; value=&quot;165.04&quot; description=&quot;Image x-coordinate of the camera principal axis.&quot;/&gt;</div>
-<div class="line">    &lt;define name=&quot;UNDISTORT_CENTER_Y&quot; value=&quot;118.44&quot; description=&quot;Image y-coordinate of the camera principal axis.&quot;/&gt;</div>
-<div class="line"></div>
 <div class="line">  &lt;/doc&gt;</div>
 <div class="line"></div>
 <div class="line">  &lt;settings&gt;</div>
@@ -207,13 +186,12 @@ Raw cv_undistort_image.xml file:</h2>
 <div class="line">      &lt;dl_settings NAME=&quot;Undistort&quot;&gt;</div>
 <div class="line">  &lt;dl_setting var=&quot;min_x_normalized&quot;  min=&quot;-4.0&quot; step=&quot;0.1&quot; max=&quot;0.0&quot; shortname=&quot;min_x_n&quot; param=&quot;UNDISTORT_MIN_X_NORMALIZED&quot;/&gt;</div>
 <div class="line">  &lt;dl_setting var=&quot;max_x_normalized&quot;  min=&quot;0.1&quot; step=&quot;0.1&quot; max=&quot;4.0&quot; shortname=&quot;max_x_n&quot; param=&quot;UNDISTORT_MAX_X_NORMALIZED&quot;/&gt;</div>
-<div class="line">  &lt;dl_setting var=&quot;dhane_k&quot;  min=&quot;1.0&quot; step=&quot;0.01&quot; max=&quot;2.5&quot; shortname=&quot;dhane_k&quot; param=&quot;UNDISTORT_DHANE_K&quot;/&gt;</div>
+<div class="line">  &lt;dl_setting var=&quot;camera_intrinsics.Dhane_k&quot;  min=&quot;1.0&quot; step=&quot;0.01&quot; max=&quot;2.5&quot; shortname=&quot;dhane_k&quot; param=&quot;UNDISTORT_DHANE_K&quot;/&gt;</div>
 <div class="line">  &lt;dl_setting var=&quot;center_ratio&quot;  min=&quot;0.05&quot; step=&quot;0.01&quot; max=&quot;1.0&quot; shortname=&quot;center_ratio&quot; param=&quot;UNDISTORT_CENTER_RATIO&quot;/&gt;</div>
-<div class="line">  &lt;dl_setting var=&quot;focal_x&quot;  min=&quot;0.0&quot; step=&quot;0.05&quot; max=&quot;1024.0&quot; shortname=&quot;focal_x&quot; param=&quot;UNDISTORT_FOCAL_X&quot;/&gt;</div>
-<div class="line">  &lt;dl_setting var=&quot;center_x&quot;  min=&quot;0.0&quot; step=&quot;0.05&quot; max=&quot;1024.0&quot; shortname=&quot;center_x&quot; param=&quot;UNDISTORT_CENTER_X&quot;/&gt;</div>
-<div class="line">  &lt;dl_setting var=&quot;focal_y&quot;  min=&quot;0.0&quot; step=&quot;0.05&quot; max=&quot;1024.0&quot; shortname=&quot;focal_y&quot; param=&quot;UNDISTORT_FOCAL_Y&quot;/&gt;</div>
-<div class="line">  &lt;dl_setting var=&quot;center_y&quot;  min=&quot;0.0&quot; step=&quot;0.05&quot; max=&quot;1024.0&quot; shortname=&quot;center_y&quot; param=&quot;UNDISTORT_CENTER_Y&quot;/&gt;</div>
-<div class="line"></div>
+<div class="line">  &lt;dl_setting var=&quot;camera_intrinsics.focal_x&quot;  min=&quot;0.0&quot; step=&quot;0.05&quot; max=&quot;1024.0&quot; shortname=&quot;focal_x&quot; param=&quot;UNDISTORT_FOCAL_X&quot;/&gt;</div>
+<div class="line">  &lt;dl_setting var=&quot;camera_intrinsics.center_x&quot;  min=&quot;0.0&quot; step=&quot;0.05&quot; max=&quot;1024.0&quot; shortname=&quot;center_x&quot; param=&quot;UNDISTORT_CENTER_X&quot;/&gt;</div>
+<div class="line">  &lt;dl_setting var=&quot;camera_intrinsics.focal_y&quot;  min=&quot;0.0&quot; step=&quot;0.05&quot; max=&quot;1024.0&quot; shortname=&quot;focal_y&quot; param=&quot;UNDISTORT_FOCAL_Y&quot;/&gt;</div>
+<div class="line">  &lt;dl_setting var=&quot;camera_intrinsics.center_y&quot;  min=&quot;0.0&quot; step=&quot;0.05&quot; max=&quot;1024.0&quot; shortname=&quot;center_y&quot; param=&quot;UNDISTORT_CENTER_Y&quot;/&gt;</div>
 <div class="line">      &lt;/dl_settings&gt;</div>
 <div class="line">    &lt;/dl_settings&gt;</div>
 <div class="line">  &lt;/settings&gt;</div>
@@ -238,7 +216,7 @@ Raw cv_undistort_image.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Wed Sep 12 2018 02:03:56 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:03:39 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

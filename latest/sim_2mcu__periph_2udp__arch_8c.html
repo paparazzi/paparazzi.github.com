@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -148,9 +148,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a26342423a340c1420dbb8081d9fdd407"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sim_2mcu__periph_2udp__arch_8c.html#a26342423a340c1420dbb8081d9fdd407">udp_arch_periph_init</a> (struct <a class="el" href="udp_8h.html#structudp__periph">udp_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, char *host, int port_out, int port_in, bool broadcast)</td></tr>
 <tr class="memdesc:a26342423a340c1420dbb8081d9fdd407"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the UDP peripheral.  <a href="#a26342423a340c1420dbb8081d9fdd407">More...</a><br /></td></tr>
 <tr class="separator:a26342423a340c1420dbb8081d9fdd407"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36a5847da7a6cd7e824bbf1366505aa1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sim_2mcu__periph_2udp__arch_8c.html#a36a5847da7a6cd7e824bbf1366505aa1">udp_char_available</a> (struct <a class="el" href="udp_8h.html#structudp__periph">udp_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>)</td></tr>
-<tr class="memdesc:a36a5847da7a6cd7e824bbf1366505aa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get number of bytes available in receive buffer.  <a href="#a36a5847da7a6cd7e824bbf1366505aa1">More...</a><br /></td></tr>
-<tr class="separator:a36a5847da7a6cd7e824bbf1366505aa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe7eab267c8597508d18b8449b3407a5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sim_2mcu__periph_2udp__arch_8c.html#abe7eab267c8597508d18b8449b3407a5">udp_char_available</a> (struct <a class="el" href="udp_8h.html#structudp__periph">udp_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>)</td></tr>
+<tr class="memdesc:abe7eab267c8597508d18b8449b3407a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get number of bytes available in receive buffer.  <a href="#abe7eab267c8597508d18b8449b3407a5">More...</a><br /></td></tr>
+<tr class="separator:abe7eab267c8597508d18b8449b3407a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a902d6b73c1356c1650ddc474cb33433d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sim_2mcu__periph_2udp__arch_8c.html#a902d6b73c1356c1650ddc474cb33433d">udp_getch</a> (struct <a class="el" href="udp_8h.html#structudp__periph">udp_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>)</td></tr>
 <tr class="memdesc:a902d6b73c1356c1650ddc474cb33433d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the last character from the receive buffer.  <a href="#a902d6b73c1356c1650ddc474cb33433d">More...</a><br /></td></tr>
 <tr class="separator:a902d6b73c1356c1650ddc474cb33433d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -280,12 +280,12 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a36a5847da7a6cd7e824bbf1366505aa1"></a>
+<a class="anchor" id="abe7eab267c8597508d18b8449b3407a5"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> udp_char_available </td>
+          <td class="memname">int udp_char_available </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="udp_8h.html#structudp__periph">udp_periph</a> *&#160;</td>
           <td class="paramname"><em>p</em></td><td>)</td>
@@ -365,7 +365,7 @@ Variables</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="sim_2mcu__periph_2udp__arch_8c_a23264d73f7cf6197c139bf6841da1ee2_cgraph.png" border="0" usemap="#sim_2mcu__periph_2udp__arch_8c_a23264d73f7cf6197c139bf6841da1ee2_cgraph" alt=""/></div>
 <map name="sim_2mcu__periph_2udp__arch_8c_a23264d73f7cf6197c139bf6841da1ee2_cgraph" id="sim_2mcu__periph_2udp__arch_8c_a23264d73f7cf6197c139bf6841da1ee2_cgraph">
-<area shape="rect" id="node2" href="linux_2mcu__periph_2udp__arch_8c.html#a36a5847da7a6cd7e824bbf1366505aa1" title="Get number of bytes available in receive buffer. " alt="" coords="152,5,296,32"/></map>
+<area shape="rect" id="node2" href="linux_2mcu__periph_2udp__arch_8c.html#abe7eab267c8597508d18b8449b3407a5" title="Get number of bytes available in receive buffer. " alt="" coords="152,5,296,32"/></map>
 </div>
 </p>
 
@@ -530,7 +530,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_c87a6d12365ead88e0b90ddbc1b3c9bb.html">sim</a></li><li class="navelem"><a class="el" href="dir_f11394bd39850f137cd76d3a3707cb70.html">mcu_periph</a></li><li class="navelem"><a class="el" href="sim_2mcu__periph_2udp__arch_8c.html">udp_arch.c</a></li>
-    <li class="footer">Generated on Wed Sep 12 2018 02:03:03 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:02:41 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

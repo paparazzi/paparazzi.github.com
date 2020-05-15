@@ -9,8 +9,6 @@ var stabilization__indi_8h =
       [ "rate_r", "stabilization__indi__simple_8h.html#ab1290bd9adaf14c8fe53a7aa6430ca6f", null ]
     ] ],
     [ "INDI_G_SCALING", "stabilization__indi_8h.html#aa33bbb5b41564ce1c95d73f2888a611d", null ],
-    [ "INDI_NUM_ACT", "stabilization__indi_8h.html#a65f870ad78b08581bc5c3448c5413b6e", null ],
-    [ "INDI_OUTPUTS", "stabilization__indi_8h.html#a3182c4a983f124dbbd45a1aef87e3851", null ],
     [ "stabilization_indi_enter", "stabilization__indi_8h.html#a121fd732c65156adade05ffb27fbaf52", null ],
     [ "stabilization_indi_init", "stabilization__indi_8h.html#a9b355db7dd60fd053f3fff04eccdc11b", null ],
     [ "stabilization_indi_read_rc", "stabilization__indi_8h.html#a12143cafcad8c2db6f07b2cc072851d5", null ],

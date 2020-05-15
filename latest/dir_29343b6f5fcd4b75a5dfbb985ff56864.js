@@ -17,8 +17,8 @@ var dir_29343b6f5fcd4b75a5dfbb985ff56864 =
     [ "pprz_geodetic_int.h", "pprz__geodetic__int_8h.html", "pprz__geodetic__int_8h" ],
     [ "pprz_geodetic_utm.h", "pprz__geodetic__utm_8h.html", "pprz__geodetic__utm_8h" ],
     [ "pprz_geodetic_wgs84.h", "pprz__geodetic__wgs84_8h.html", "pprz__geodetic__wgs84_8h" ],
-    [ "pprz_geodetic_wmm2015.c", "pprz__geodetic__wmm2015_8c.html", "pprz__geodetic__wmm2015_8c" ],
-    [ "pprz_geodetic_wmm2015.h", "pprz__geodetic__wmm2015_8h.html", "pprz__geodetic__wmm2015_8h" ],
+    [ "pprz_geodetic_wmm2020.c", "pprz__geodetic__wmm2020_8c.html", "pprz__geodetic__wmm2020_8c" ],
+    [ "pprz_geodetic_wmm2020.h", "pprz__geodetic__wmm2020_8h.html", "pprz__geodetic__wmm2020_8h" ],
     [ "pprz_isa.h", "pprz__isa_8h.html", "pprz__isa_8h" ],
     [ "pprz_matrix_decomp_float.c", "pprz__matrix__decomp__float_8c.html", "pprz__matrix__decomp__float_8c" ],
     [ "pprz_matrix_decomp_float.h", "pprz__matrix__decomp__float_8h.html", "pprz__matrix__decomp__float_8h" ],
@@ -31,5 +31,7 @@ var dir_29343b6f5fcd4b75a5dfbb985ff56864 =
     [ "pprz_stat.c", "pprz__stat_8c.html", "pprz__stat_8c" ],
     [ "pprz_stat.h", "pprz__stat_8h.html", "pprz__stat_8h" ],
     [ "pprz_trig_int.c", "pprz__trig__int_8c.html", "pprz__trig__int_8c" ],
-    [ "pprz_trig_int.h", "pprz__trig__int_8h.html", "pprz__trig__int_8h" ]
+    [ "pprz_trig_int.h", "pprz__trig__int_8h.html", "pprz__trig__int_8h" ],
+    [ "RANSAC.c", "RANSAC_8c.html", "RANSAC_8c" ],
+    [ "RANSAC.h", "RANSAC_8h.html", "RANSAC_8h" ]
 ];

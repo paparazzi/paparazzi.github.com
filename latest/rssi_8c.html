@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -143,8 +143,8 @@ Functions</h2></td></tr>
 <tr class="separator:a159b4a2fba436e4c1b520646ebc5527d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a731e8f68b40e8f4ad2708ede2e0fa40f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rssi_8c.html#a731e8f68b40e8f4ad2708ede2e0fa40f">rssi_init</a> ()</td></tr>
 <tr class="separator:a731e8f68b40e8f4ad2708ede2e0fa40f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d77ada4aa56f69ef17114b756f721b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rssi_8c.html#a1d77ada4aa56f69ef17114b756f721b0">parse_rssi_dl</a> (void)</td></tr>
-<tr class="separator:a1d77ada4aa56f69ef17114b756f721b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a919690aaad3f7fefd2914a243294db59"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rssi_8c.html#a919690aaad3f7fefd2914a243294db59">parse_rssi_dl</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf)</td></tr>
+<tr class="separator:a919690aaad3f7fefd2914a243294db59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e69fe3a15e8256b20fed5fb23baf3ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rssi_8c.html#a3e69fe3a15e8256b20fed5fb23baf3ab">set_rssi</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> _ac_id, <a class="el" href="types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> _tx_strength, <a class="el" href="types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> _rssi)</td></tr>
 <tr class="separator:a3e69fe3a15e8256b20fed5fb23baf3ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36542a9ee32c8daa1fe6cc69720ec462"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="rssi_8h.html#structrssi__info__">rssi_info_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rssi_8c.html#a36542a9ee32c8daa1fe6cc69720ec462">get_rssi</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> _ac_id)</td></tr>
@@ -219,15 +219,15 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a1d77ada4aa56f69ef17114b756f721b0"></a>
+<a class="anchor" id="a919690aaad3f7fefd2914a243294db59"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void parse_rssi_dl </td>
           <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramname"><em>buf</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -235,15 +235,15 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="rssi_8c_source.html#l00065">65</a> of file <a class="el" href="rssi_8c_source.html">rssi.c</a>.</p>
 
-<p>References <a class="el" href="main__demo5_8c_source.html#l00064">dl_buffer</a>, and <a class="el" href="rssi_8c_source.html#l00077">set_rssi()</a>.</p>
+<p>References <a class="el" href="rssi_8c_source.html#l00077">set_rssi()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="rssi_8c_a1d77ada4aa56f69ef17114b756f721b0_cgraph.png" border="0" usemap="#rssi_8c_a1d77ada4aa56f69ef17114b756f721b0_cgraph" alt=""/></div>
-<map name="rssi_8c_a1d77ada4aa56f69ef17114b756f721b0_cgraph" id="rssi_8c_a1d77ada4aa56f69ef17114b756f721b0_cgraph">
+<div class="center"><img src="rssi_8c_a919690aaad3f7fefd2914a243294db59_cgraph.png" border="0" usemap="#rssi_8c_a919690aaad3f7fefd2914a243294db59_cgraph" alt=""/></div>
+<map name="rssi_8c_a919690aaad3f7fefd2914a243294db59_cgraph" id="rssi_8c_a919690aaad3f7fefd2914a243294db59_cgraph">
 <area shape="rect" id="node2" href="rssi_8c.html#a3e69fe3a15e8256b20fed5fb23baf3ab" title="set_rssi" alt="" coords="159,5,229,32"/></map>
 </div>
 </p>
@@ -398,7 +398,7 @@ Variables</h2></td></tr>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rssi_8c_a3e69fe3a15e8256b20fed5fb23baf3ab_icgraph.png" border="0" usemap="#rssi_8c_a3e69fe3a15e8256b20fed5fb23baf3ab_icgraph" alt=""/></div>
 <map name="rssi_8c_a3e69fe3a15e8256b20fed5fb23baf3ab_icgraph" id="rssi_8c_a3e69fe3a15e8256b20fed5fb23baf3ab_icgraph">
-<area shape="rect" id="node2" href="rssi_8h.html#a1d77ada4aa56f69ef17114b756f721b0" title="parse_rssi_dl" alt="" coords="124,5,229,32"/><area shape="rect" id="node3" href="rssi_8c.html#a159b4a2fba436e4c1b520646ebc5527d" title="rssi_cb" alt="" coords="143,56,210,83"/><area shape="rect" id="node4" href="rssi_8h.html#a004b14a419fab767d20132bdfc3fbc02" title="rssi_init" alt="" coords="277,56,348,83"/></map>
+<area shape="rect" id="node2" href="rssi_8h.html#a919690aaad3f7fefd2914a243294db59" title="parse_rssi_dl" alt="" coords="124,5,229,32"/><area shape="rect" id="node3" href="rssi_8c.html#a159b4a2fba436e4c1b520646ebc5527d" title="rssi_cb" alt="" coords="143,56,210,83"/><area shape="rect" id="node4" href="rssi_8h.html#a004b14a419fab767d20132bdfc3fbc02" title="rssi_init" alt="" coords="277,56,348,83"/></map>
 </div>
 </p>
 
@@ -473,7 +473,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_280ddc4eab531a6a77fbd73e72656568.html">multi</a></li><li class="navelem"><a class="el" href="rssi_8c.html">rssi.c</a></li>
-    <li class="footer">Generated on Wed Sep 12 2018 02:03:38 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:03:20 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

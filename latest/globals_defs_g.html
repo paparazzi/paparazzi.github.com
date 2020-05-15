@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -184,6 +184,9 @@ $(document).ready(function(){initNavTree('globals_defs_g.html','');});
 : <a class="el" href="stabilization__attitude__quat__float_8c.html#ac2de1e0726914060b8a76cc50e10b666">stabilization_attitude_quat_float.c</a>
 , <a class="el" href="stabilization__attitude__quat__int_8c.html#ac2de1e0726914060b8a76cc50e10b666">stabilization_attitude_quat_int.c</a>
 </li>
+<li>GEC_UPDATE_DL
+: <a class="el" href="gec__dl_8c.html#a5552d1dd4576f275184c864bb183fa1e">gec_dl.c</a>
+</li>
 <li>GEIGER_CNT_DEV
 : <a class="el" href="geiger__counter_8c.html#a0b1fac16331bf94c39da0007dfe6fb45">geiger_counter.c</a>
 </li>
@@ -197,7 +200,7 @@ $(document).ready(function(){initNavTree('globals_defs_g.html','');});
 : <a class="el" href="generic__com_8c.html#abd24cc3366ec5c1b317cba3d31b49784">generic_com.c</a>
 </li>
 <li>GEO_EPOCH
-: <a class="el" href="group__math__geodetic__wmm.html#ga8d79cd0cafb7b536b1a0dc7741958570">pprz_geodetic_wmm2015.h</a>
+: <a class="el" href="group__math__geodetic__wmm.html#ga8d79cd0cafb7b536b1a0dc7741958570">pprz_geodetic_wmm2020.h</a>
 </li>
 <li>GEO_MAG_SENDER_ID
 : <a class="el" href="geo__mag_8c.html#ac7fc5bc9131cd7ac30891e44ddddb6f2">geo_mag.c</a>
@@ -301,9 +304,9 @@ $(document).ready(function(){initNavTree('globals_defs_g.html','');});
 : <a class="el" href="xsens__parser_8h.html#a50f2d2d7acbe051094fd37b71ce583e2">xsens_parser.h</a>
 </li>
 <li>GOT_CHECKSUM
-: <a class="el" href="xsens__parser_8h.html#a174938824d754f469eba1dfc241ec170">xsens_parser.h</a>
+: <a class="el" href="gps__skytraq_8c.html#a174938824d754f469eba1dfc241ec170">gps_skytraq.c</a>
+, <a class="el" href="xsens__parser_8h.html#a174938824d754f469eba1dfc241ec170">xsens_parser.h</a>
 , <a class="el" href="gps__nmea_8c.html#a174938824d754f469eba1dfc241ec170">gps_nmea.c</a>
-, <a class="el" href="gps__skytraq_8c.html#a174938824d754f469eba1dfc241ec170">gps_skytraq.c</a>
 </li>
 <li>GOT_CHECKSUM1
 : <a class="el" href="gps__mtk_8c.html#a7a53eb7b7d725c83beee8dd21cb9f74f">gps_mtk.c</a>
@@ -434,9 +437,8 @@ $(document).ready(function(){initNavTree('globals_defs_g.html','');});
 , <a class="el" href="lpc21_2mcu__periph_2gpio__arch_8h.html#ac376b1c124378935df7b3c171b2bef35">gpio_arch.h</a>
 </li>
 <li>GPIO12
-: <a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#a1dfa6e5489489f2797d3d80c718716ce">gpio_arch.h</a>
+: <a class="el" href="lpc21_2mcu__periph_2gpio__arch_8h.html#a1dfa6e5489489f2797d3d80c718716ce">gpio_arch.h</a>
 , <a class="el" href="gpio__def_8h.html#a1dfa6e5489489f2797d3d80c718716ce">gpio_def.h</a>
-, <a class="el" href="lpc21_2mcu__periph_2gpio__arch_8h.html#a1dfa6e5489489f2797d3d80c718716ce">gpio_arch.h</a>
 </li>
 <li>GPIO13
 : <a class="el" href="gpio__def_8h.html#a4b7d9a3961712ddd2a58532f4dcedc1d">gpio_def.h</a>
@@ -546,6 +548,9 @@ $(document).ready(function(){initNavTree('globals_defs_g.html','');});
 : <a class="el" href="gpio__def_8h.html#ae2a4c4d28729daf18e1923a1878e7352">gpio_def.h</a>
 , <a class="el" href="lpc21_2mcu__periph_2gpio__arch_8h.html#ae2a4c4d28729daf18e1923a1878e7352">gpio_arch.h</a>
 </li>
+<li>GPIO__TIO_HV_STATUS
+: <a class="el" href="vl53l1x__api_8h.html#a2806961b4373aaf95b11489324e8f84b">vl53l1x_api.h</a>
+</li>
 <li>GPIO_AF0
 : <a class="el" href="gpio__def_8h.html#ab9c7d5d4b56cea62509068bee1395bd2">gpio_def.h</a>
 </li>
@@ -596,6 +601,9 @@ $(document).ready(function(){initNavTree('globals_defs_g.html','');});
 </li>
 <li>GPIO_DIRECTION
 : <a class="el" href="gpio__ardrone_8c.html#a76674bd82007b2ceec9a2e60e3f53d62">gpio_ardrone.c</a>
+</li>
+<li>GPIO_HV_MUX__CTRL
+: <a class="el" href="vl53l1x__api_8h.html#ac2b6c32911c2c553477f19bb3c25ce89">vl53l1x_api.h</a>
 </li>
 <li>GPIO_MAGIC
 : <a class="el" href="gpio__ardrone_8c.html#af1dc914dcbc1031f3939c41aa15ba7dd">gpio_ardrone.c</a>
@@ -1063,25 +1071,25 @@ $(document).ready(function(){initNavTree('globals_defs_g.html','');});
 : <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a92b46be684a8a8d5c9df37bdacfbd3cd">board.h</a>
 </li>
 <li>GPIOF_OSC_OUT
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#aec513bdecf3e822b2600bb57d558d626">board.h</a>
+: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#aec513bdecf3e822b2600bb57d558d626">board.h</a>
 </li>
 <li>GPIOF_PIN10
 : <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#afba4cb2bb39470b14fe1728f2a346aa3">board.h</a>
 </li>
 <li>GPIOF_PIN11
-: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#a5d323ee66fff2a1afea9f737bde228fc">board.h</a>
+: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a5d323ee66fff2a1afea9f737bde228fc">board.h</a>
 </li>
 <li>GPIOF_PIN12
 : <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#aeb4ff76a72ed2f309fe97fd0cc3be7d1">board.h</a>
 </li>
 <li>GPIOF_PIN13
-: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#a07fa1211d10bce0ff89491bdcdade32a">board.h</a>
+: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a07fa1211d10bce0ff89491bdcdade32a">board.h</a>
 </li>
 <li>GPIOF_PIN14
 : <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a94ff90d268a3db4eb6308a1d19a0d395">board.h</a>
 </li>
 <li>GPIOF_PIN15
-: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#a9900e46acf3f24185b1f7b6540c539d4">board.h</a>
+: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a9900e46acf3f24185b1f7b6540c539d4">board.h</a>
 </li>
 <li>GPIOF_PIN2
 : <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a45842066fab4f6092931c9ee4f91beb5">board.h</a>
@@ -1114,7 +1122,7 @@ $(document).ready(function(){initNavTree('globals_defs_g.html','');});
 : <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#afbcb152e63448087072ce9c2b0a1e95d">board.h</a>
 </li>
 <li>GPIOG_PIN1
-: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#a0d2ff4bc7a839045f1572eef9e9730e3">board.h</a>
+: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a0d2ff4bc7a839045f1572eef9e9730e3">board.h</a>
 </li>
 <li>GPIOG_PIN10
 : <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a82f128d8569e31065f2d192b8960010b">board.h</a>
@@ -1126,19 +1134,19 @@ $(document).ready(function(){initNavTree('globals_defs_g.html','');});
 : <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#abf8e3f893bf57f1a549ecfd499504ecc">board.h</a>
 </li>
 <li>GPIOG_PIN13
-: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#a813d83250ddde21beaa001b52e2dda3f">board.h</a>
+: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a813d83250ddde21beaa001b52e2dda3f">board.h</a>
 </li>
 <li>GPIOG_PIN14
 : <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a5ac75b9b685bd906fcae9a701bf79dd4">board.h</a>
 </li>
 <li>GPIOG_PIN15
-: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#aea113b61fcd6b74d29a9922dc76a0111">board.h</a>
+: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#aea113b61fcd6b74d29a9922dc76a0111">board.h</a>
 </li>
 <li>GPIOG_PIN2
 : <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a232d9d141544b6fe19b4330e2de7ae01">board.h</a>
 </li>
 <li>GPIOG_PIN3
-: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#adabf52dc50da31a4590ca7f9f1876213">board.h</a>
+: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#adabf52dc50da31a4590ca7f9f1876213">board.h</a>
 </li>
 <li>GPIOG_PIN4
 : <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a39b317c2cfbd19fe3397542a610705a4">board.h</a>
@@ -1150,13 +1158,13 @@ $(document).ready(function(){initNavTree('globals_defs_g.html','');});
 : <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#afca3c8f3562c4d1c2f6cda329a76a911">board.h</a>
 </li>
 <li>GPIOG_PIN7
-: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#a188b7f96c11d8be3e81e19de3bc2ed8b">board.h</a>
+: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a188b7f96c11d8be3e81e19de3bc2ed8b">board.h</a>
 </li>
 <li>GPIOG_PIN8
 : <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a5ec95eed12b8b0215fecb9c5a23d6927">board.h</a>
 </li>
 <li>GPIOG_PIN9
-: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#a47913ea083a8ecb55a2bdb8483d220a4">board.h</a>
+: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a47913ea083a8ecb55a2bdb8483d220a4">board.h</a>
 </li>
 <li>GPIOH
 : <a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#adeacbb43ae86c879945afe98c679b285">gpio_arch.h</a>
@@ -1171,19 +1179,19 @@ $(document).ready(function(){initNavTree('globals_defs_g.html','');});
 : <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a63ab98b9632d8f0243baf905ea16215f">board.h</a>
 </li>
 <li>GPIOH_PIN11
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#aa8dcfc054640bf2172a9b4eaf8a6dfdb">board.h</a>
+: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#aa8dcfc054640bf2172a9b4eaf8a6dfdb">board.h</a>
 </li>
 <li>GPIOH_PIN12
 : <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a031d9b903404b280675918d76c04a2a2">board.h</a>
 </li>
 <li>GPIOH_PIN13
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a35687aeddfc40b29b30855d1ecbb6ba2">board.h</a>
+: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#a35687aeddfc40b29b30855d1ecbb6ba2">board.h</a>
 </li>
 <li>GPIOH_PIN14
 : <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#ac0549b8a13632c46bb758b20da0d112a">board.h</a>
 </li>
 <li>GPIOH_PIN15
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a62978e558c51ab97538eff6819751832">board.h</a>
+: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#a62978e558c51ab97538eff6819751832">board.h</a>
 </li>
 <li>GPIOH_PIN2
 : <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a4b786724bf2f9fae66f93ab754624f91">board.h</a>
@@ -1195,19 +1203,19 @@ $(document).ready(function(){initNavTree('globals_defs_g.html','');});
 : <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a1f738a9bd369d0705d9790e05dd9a4bd">board.h</a>
 </li>
 <li>GPIOH_PIN5
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a422980a0bb0d929c6f5f6bd830e13756">board.h</a>
+: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#a422980a0bb0d929c6f5f6bd830e13756">board.h</a>
 </li>
 <li>GPIOH_PIN6
 : <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#acffa05a8468ff48b56a6ffea3f57c039">board.h</a>
 </li>
 <li>GPIOH_PIN7
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a6e0d4b68e35b3aa70dec486c014f10b9">board.h</a>
+: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#a6e0d4b68e35b3aa70dec486c014f10b9">board.h</a>
 </li>
 <li>GPIOH_PIN8
 : <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#af7b3c5c14e7e87da74f6b9218761ad42">board.h</a>
 </li>
 <li>GPIOH_PIN9
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a21b72d04e9883f826c9b5a9851fc37a5">board.h</a>
+: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#a21b72d04e9883f826c9b5a9851fc37a5">board.h</a>
 </li>
 <li>GPS_ARDRONE2_ID
 : <a class="el" href="abi__sender__ids_8h.html#a89ee30b4159982f2c1f7a14b7cad3a04">abi_sender_ids.h</a>
@@ -1222,16 +1230,16 @@ $(document).ready(function(){initNavTree('globals_defs_g.html','');});
 : <a class="el" href="abi__sender__ids_8h.html#abedd83b6da15e621b777f93a8893e31b">abi_sender_ids.h</a>
 </li>
 <li>GPS_EPOCH_BEGIN
-: <a class="el" href="group__math__geodetic__wmm.html#ga62100c08a958cf03a315d5b72a4a3c4a">pprz_geodetic_wmm2015.h</a>
+: <a class="el" href="group__math__geodetic__wmm.html#ga62100c08a958cf03a315d5b72a4a3c4a">pprz_geodetic_wmm2020.h</a>
 </li>
 <li>GPS_EPOCH_DAY
-: <a class="el" href="group__math__geodetic__wmm.html#gaf3038f37acae7201044977df82b7a2dc">pprz_geodetic_wmm2015.h</a>
+: <a class="el" href="group__math__geodetic__wmm.html#gaf3038f37acae7201044977df82b7a2dc">pprz_geodetic_wmm2020.h</a>
 </li>
 <li>GPS_EPOCH_MONTH
-: <a class="el" href="group__math__geodetic__wmm.html#ga34de3ba9150fa0efc7ec7267a9ff0c14">pprz_geodetic_wmm2015.h</a>
+: <a class="el" href="group__math__geodetic__wmm.html#ga34de3ba9150fa0efc7ec7267a9ff0c14">pprz_geodetic_wmm2020.h</a>
 </li>
 <li>GPS_EPOCH_YEAR
-: <a class="el" href="group__math__geodetic__wmm.html#ga1e5bd8bd3b1105c4841c135d8e1ed05d">pprz_geodetic_wmm2015.h</a>
+: <a class="el" href="group__math__geodetic__wmm.html#ga1e5bd8bd3b1105c4841c135d8e1ed05d">pprz_geodetic_wmm2020.h</a>
 </li>
 <li>GPS_FIX_2D
 : <a class="el" href="gps_8h.html#ab9017c3f1cc7ed2f396f90be17706c98">gps.h</a>
@@ -1354,9 +1362,9 @@ $(document).ready(function(){initNavTree('globals_defs_g.html','');});
 : <a class="el" href="ins__alt__float_8c.html#a64f433aa84bea43c5ef47b59b1cab4d3">ins_alt_float.c</a>
 </li>
 <li>GPS_RESET_GPIO
-: <a class="el" href="tiny__2_81_8h.html#a93cac9504742c75814121660d07a0c4d">tiny_2.1.h</a>
+: <a class="el" href="logom__2_86_8h.html#a93cac9504742c75814121660d07a0c4d">logom_2.6.h</a>
 , <a class="el" href="sdlog__1_80_8h.html#a93cac9504742c75814121660d07a0c4d">sdlog_1.0.h</a>
-, <a class="el" href="logom__2_86_8h.html#a93cac9504742c75814121660d07a0c4d">logom_2.6.h</a>
+, <a class="el" href="tiny__2_81_8h.html#a93cac9504742c75814121660d07a0c4d">tiny_2.1.h</a>
 </li>
 <li>GPS_SBAS_AUTOSCAN
 : <a class="el" href="gps__ubx__ucenter_8c.html#a92fba9c1446fe57d41be6ecfc7ee4045">gps_ubx_ucenter.c</a>
@@ -1407,30 +1415,30 @@ $(document).ready(function(){initNavTree('globals_defs_g.html','');});
 : <a class="el" href="gps_8h.html#a75e36ec8607f707f480ac824c7f793ef">gps.h</a>
 </li>
 <li>GPS_UBX_ENABLE_NMEA_DATA_MASK
-: <a class="el" href="bebop_8h.html#a795637c038061d50a428834973f875ef">bebop.h</a>
-, <a class="el" href="disco_8h.html#a795637c038061d50a428834973f875ef">disco.h</a>
+: <a class="el" href="disco_8h.html#a795637c038061d50a428834973f875ef">disco.h</a>
+, <a class="el" href="bebop_8h.html#a795637c038061d50a428834973f875ef">bebop.h</a>
 , <a class="el" href="swing_8h.html#a795637c038061d50a428834973f875ef">swing.h</a>
 , <a class="el" href="gps__ubx__ucenter_8c.html#a795637c038061d50a428834973f875ef">gps_ubx_ucenter.c</a>
 </li>
 <li>GPS_UBX_ERR_CHECKSUM
-: <a class="el" href="gps__ubx_8c.html#a8af86e1c457538b935baacc381f422dc">gps_ubx.c</a>
-, <a class="el" href="rtcm3_8h.html#a8af86e1c457538b935baacc381f422dc">rtcm3.h</a>
+: <a class="el" href="rtcm3_8h.html#a8af86e1c457538b935baacc381f422dc">rtcm3.h</a>
+, <a class="el" href="gps__ubx_8c.html#a8af86e1c457538b935baacc381f422dc">gps_ubx.c</a>
 </li>
 <li>GPS_UBX_ERR_MSG_TOO_LONG
 : <a class="el" href="rtcm3_8h.html#a6c7dd4d0942f7ec06c99e4f5b0c85982">rtcm3.h</a>
 , <a class="el" href="gps__ubx_8c.html#a6c7dd4d0942f7ec06c99e4f5b0c85982">gps_ubx.c</a>
 </li>
 <li>GPS_UBX_ERR_NONE
-: <a class="el" href="gps__ubx_8c.html#a4b19958cbccbc8c2c91ce9828f59721e">gps_ubx.c</a>
-, <a class="el" href="rtcm3_8h.html#a4b19958cbccbc8c2c91ce9828f59721e">rtcm3.h</a>
+: <a class="el" href="rtcm3_8h.html#a4b19958cbccbc8c2c91ce9828f59721e">rtcm3.h</a>
+, <a class="el" href="gps__ubx_8c.html#a4b19958cbccbc8c2c91ce9828f59721e">gps_ubx.c</a>
 </li>
 <li>GPS_UBX_ERR_OUT_OF_SYNC
 : <a class="el" href="gps__ubx_8c.html#af2686e059a3acebbbe398e9bd7fb155c">gps_ubx.c</a>
 , <a class="el" href="rtcm3_8h.html#af2686e059a3acebbbe398e9bd7fb155c">rtcm3.h</a>
 </li>
 <li>GPS_UBX_ERR_OVERRUN
-: <a class="el" href="gps__ubx_8c.html#a31567a4e7127d2caff45ae4a3c8f57b3">gps_ubx.c</a>
-, <a class="el" href="rtcm3_8h.html#a31567a4e7127d2caff45ae4a3c8f57b3">rtcm3.h</a>
+: <a class="el" href="rtcm3_8h.html#a31567a4e7127d2caff45ae4a3c8f57b3">rtcm3.h</a>
+, <a class="el" href="gps__ubx_8c.html#a31567a4e7127d2caff45ae4a3c8f57b3">gps_ubx.c</a>
 </li>
 <li>GPS_UBX_ERR_UNEXPECTED
 : <a class="el" href="gps__ubx_8c.html#a2a445739849feb8372c804feacf01ee5">gps_ubx.c</a>
@@ -1537,7 +1545,7 @@ $(document).ready(function(){initNavTree('globals_defs_g.html','');});
 : <a class="el" href="gps_8h.html#aae01b53fbd555bc8954b7ba297cb2cae">gps.h</a>
 </li>
 <li>GpsId
-: <a class="el" href="gps_8c.html#a43f1fa070e4a5ab9c05f5e8d34eaa4fd">gps.c</a>
+: <a class="el" href="gps_8h.html#a43f1fa070e4a5ab9c05f5e8d34eaa4fd">gps.h</a>
 </li>
 <li>GpsIsLost
 : <a class="el" href="gps_8h.html#a3081afe8b82d023c748c40dfc49ff2f7">gps.h</a>
@@ -1612,10 +1620,10 @@ $(document).ready(function(){initNavTree('globals_defs_g.html','');});
 : <a class="el" href="rotorcraft_2guidance_2guidance__h_8h.html#afde85d56c5c5d37ece2c4bfb640e72b5">guidance_h.h</a>
 </li>
 <li>GUIDANCE_H_MODE_MODULE_SETTING
-: <a class="el" href="optical__flow__landing_8h.html#ad1204ab358ff89918b7365faa943bcbd">optical_flow_landing.h</a>
-, <a class="el" href="ctrl__module__outerloop__demo_8h.html#ad1204ab358ff89918b7365faa943bcbd">ctrl_module_outerloop_demo.h</a>
-, <a class="el" href="vertical__ctrl__module__demo_8h.html#ad1204ab358ff89918b7365faa943bcbd">vertical_ctrl_module_demo.h</a>
+: <a class="el" href="ctrl__module__outerloop__demo_8h.html#ad1204ab358ff89918b7365faa943bcbd">ctrl_module_outerloop_demo.h</a>
 , <a class="el" href="optical__flow__hover_8h.html#ad1204ab358ff89918b7365faa943bcbd">optical_flow_hover.h</a>
+, <a class="el" href="optical__flow__landing_8h.html#ad1204ab358ff89918b7365faa943bcbd">optical_flow_landing.h</a>
+, <a class="el" href="vertical__ctrl__module__demo_8h.html#ad1204ab358ff89918b7365faa943bcbd">vertical_ctrl_module_demo.h</a>
 , <a class="el" href="ctrl__module__innerloop__demo_8h.html#ad1204ab358ff89918b7365faa943bcbd">ctrl_module_innerloop_demo.h</a>
 </li>
 <li>GUIDANCE_H_MODE_NAV
@@ -1702,6 +1710,9 @@ $(document).ready(function(){initNavTree('globals_defs_g.html','');});
 <li>GUIDANCE_V_GUIDED_MODE_ZHOLD
 : <a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#a61ff7500b379fb45da4f72f1a3fb759f">guidance_v.c</a>
 </li>
+<li>GUIDANCE_V_MAX_CMD
+: <a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#a74d1f5dd06cb4d38b0a29d5d6eeb4469">guidance_v.c</a>
+</li>
 <li>GUIDANCE_V_MAX_ERR_Z
 : <a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#af43d0b57dbb152a5c6ea22b497d9555e">guidance_v.c</a>
 </li>
@@ -1743,8 +1754,8 @@ $(document).ready(function(){initNavTree('globals_defs_g.html','');});
 </li>
 <li>GUIDANCE_V_MODE_MODULE_SETTING
 : <a class="el" href="optical__flow__hover_8h.html#a530e2bc7468050db21efc20f40ec79f5">optical_flow_hover.h</a>
-, <a class="el" href="optical__flow__landing_8h.html#a530e2bc7468050db21efc20f40ec79f5">optical_flow_landing.h</a>
 , <a class="el" href="ctrl__module__outerloop__demo_8h.html#a530e2bc7468050db21efc20f40ec79f5">ctrl_module_outerloop_demo.h</a>
+, <a class="el" href="optical__flow__landing_8h.html#a530e2bc7468050db21efc20f40ec79f5">optical_flow_landing.h</a>
 , <a class="el" href="ctrl__module__innerloop__demo_8h.html#a530e2bc7468050db21efc20f40ec79f5">ctrl_module_innerloop_demo.h</a>
 , <a class="el" href="vertical__ctrl__module__demo_8h.html#a530e2bc7468050db21efc20f40ec79f5">vertical_ctrl_module_demo.h</a>
 </li>
@@ -1955,13 +1966,16 @@ $(document).ready(function(){initNavTree('globals_defs_g.html','');});
 <li>GX3_MSG_LEN
 : <a class="el" href="ahrs__gx3_8h.html#ab865a6ade8de8adc9b977277e4d285d3">ahrs_gx3.h</a>
 </li>
+<li>GYRO_SENS_H
+: <a class="el" href="lsm6ds33_8h.html#aba8d97ccc3b83e3cc78e3f5b30bbaba1">lsm6ds33.h</a>
+</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Sep 12 2018 02:04:34 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:04:12 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

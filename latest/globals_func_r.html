@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -279,7 +279,11 @@ $(document).ready(function(){initNavTree('globals_func_r.html','');});
 , <a class="el" href="range__forcefield_8h.html#a88e177ede39a056fa2c332ee034ad6e8">range_forcefield.h</a>
 </li>
 <li>range_msg_callback()
-: <a class="el" href="relative__localization__filter_8c.html#a2e719dd98f227ac5efe36084651ddf78">relative_localization_filter.c</a>
+: <a class="el" href="relative__localization__filter_8c.html#a9a5ee6ec3e44ff9f7cea260d969d6ddf">relative_localization_filter.c</a>
+</li>
+<li>RANSAC_linear_model()
+: <a class="el" href="RANSAC_8c.html#ac3c27768c4b278317c7ce1f29d5b0b2d">RANSAC.c</a>
+, <a class="el" href="RANSAC_8h.html#ac3c27768c4b278317c7ce1f29d5b0b2d">RANSAC.h</a>
 </li>
 <li>rc_attitude_sticks_centered()
 : <a class="el" href="rotorcraft_2autopilot__rc__helpers_8h.html#ac2cf19a78374dab9e758348111b20c94">autopilot_rc_helpers.h</a>
@@ -319,12 +323,22 @@ $(document).ready(function(){initNavTree('globals_func_r.html','');});
 : <a class="el" href="humid__pcap01_8c.html#ae69f72127caa7ecfc75ae8ca84c52253">humid_pcap01.c</a>
 , <a class="el" href="humid__pcap01_8h.html#ae69f72127caa7ecfc75ae8ca84c52253">humid_pcap01.h</a>
 </li>
+<li>readRegister_blocking()
+: <a class="el" href="pmw3901_8c.html#a00ba06d3e6407dfaf867e6097462d617">pmw3901.c</a>
+</li>
+<li>readRegister_nonblocking()
+: <a class="el" href="pmw3901_8c.html#a6a7aaeb3506b15d4f4ff5f782f671836">pmw3901.c</a>
+</li>
 <li>ReadUsbBuffer()
 : <a class="el" href="usb__serial__stm32__example1_8c.html#a37712c8618bb3ae74339fb687cddd9e5">usb_serial_stm32_example1.c</a>
 </li>
 <li>received_spektrum_soft_bind()
 : <a class="el" href="spektrum__soft__bind__fbw_8c.html#a019a8098631a35cbcdae0c277dbaba6f">spektrum_soft_bind_fbw.c</a>
 , <a class="el" href="spektrum__soft__bind__fbw_8h.html#a019a8098631a35cbcdae0c277dbaba6f">spektrum_soft_bind_fbw.h</a>
+</li>
+<li>refine_single_corner()
+: <a class="el" href="snake__gate__detection_8c.html#af769b63bbec582d186cbe93175d6dc8c">snake_gate_detection.c</a>
+, <a class="el" href="snake__gate__detection_8h.html#af769b63bbec582d186cbe93175d6dc8c">snake_gate_detection.h</a>
 </li>
 <li>register_leds_cb()
 : <a class="el" href="sim_2led__hw_8c.html#aa85b1c7cdad6a8b6035a17361f395886">led_hw.c</a>
@@ -358,6 +372,9 @@ $(document).ready(function(){initNavTree('globals_func_r.html','');});
 <li>reset()
 : <a class="el" href="lpc21_2mcu__arch_8c.html#a3aea9deb2a0bfea9ff05a898f4822e31">mcu_arch.c</a>
 </li>
+<li>reset_1e_filter()
+: <a class="el" href="1e__filter_8h.html#a4ef955d1ac5105a91a5f54f0a2402a6f">1e_filter.h</a>
+</li>
 <li>reset_all_vars()
 : <a class="el" href="optical__flow__landing_8c.html#a46c9da8aa58fea58306c6a47b9f21c89">optical_flow_landing.c</a>
 </li>
@@ -367,9 +384,18 @@ $(document).ready(function(){initNavTree('globals_func_r.html','');});
 <li>reset_horizontal_vars()
 : <a class="el" href="optical__flow__hover_8c.html#a043924ff94b6679387ad01bd10786087">optical_flow_hover.c</a>
 </li>
+<li>reset_pi_d_df()
+: <a class="el" href="pid_8h.html#a2987742f63279262f9ff30d3fe628388">pid.h</a>
+</li>
+<li>reset_pid_df()
+: <a class="el" href="pid_8h.html#adaa2431b9acf2ac34e4576362712cf89">pid.h</a>
+</li>
+<li>reset_pid_f()
+: <a class="el" href="pid_8h.html#a6b94f2f2a26a4553ef5d55690b84cc0e">pid.h</a>
+</li>
 <li>reset_psi_ref()
-: <a class="el" href="stabilization__attitude__ref__quat__float_8c.html#ab694ffc68ccd095d3641670ad7d272a7">stabilization_attitude_ref_quat_float.c</a>
-, <a class="el" href="stabilization__attitude__ref__euler__float_8c.html#a6a5d0ab462481567bc0272c3b2604df9">stabilization_attitude_ref_euler_float.c</a>
+: <a class="el" href="stabilization__attitude__ref__euler__float_8c.html#a6a5d0ab462481567bc0272c3b2604df9">stabilization_attitude_ref_euler_float.c</a>
+, <a class="el" href="stabilization__attitude__ref__quat__float_8c.html#ab694ffc68ccd095d3641670ad7d272a7">stabilization_attitude_ref_quat_float.c</a>
 , <a class="el" href="stabilization__attitude__ref__quat__int_8c.html#a8b76f387f4398db36d6273fd9d18f2c7">stabilization_attitude_ref_quat_int.c</a>
 </li>
 <li>reset_psi_ref_from_body()
@@ -396,25 +422,25 @@ $(document).ready(function(){initNavTree('globals_func_r.html','');});
 : <a class="el" href="opencv__contour_8cpp.html#a2bb3a617236eb1bd8ace5e140f519081">opencv_contour.cpp</a>
 </li>
 <li>rng_deinit()
-: <a class="el" href="stm32_2mcu__periph_2rng__arch_8c.html#a2a25baf68bfa99b354145cf2de467ab0">rng_arch.c</a>
+: <a class="el" href="sim_2mcu__periph_2rng__arch_8c.html#a2a25baf68bfa99b354145cf2de467ab0">rng_arch.c</a>
 , <a class="el" href="rng_8h.html#a2a25baf68bfa99b354145cf2de467ab0">rng.h</a>
 </li>
 <li>rng_get()
-: <a class="el" href="rng_8h.html#a44387fcb7ecd6d2f064471e3312a1c5f">rng.h</a>
-, <a class="el" href="sim_2mcu__periph_2rng__arch_8c.html#a44387fcb7ecd6d2f064471e3312a1c5f">rng_arch.c</a>
+: <a class="el" href="sim_2mcu__periph_2rng__arch_8c.html#a44387fcb7ecd6d2f064471e3312a1c5f">rng_arch.c</a>
+, <a class="el" href="rng_8h.html#a44387fcb7ecd6d2f064471e3312a1c5f">rng.h</a>
 </li>
 <li>rng_init()
 : <a class="el" href="sim_2mcu__periph_2rng__arch_8c.html#ad5a3df3d0092f55f6ea54ccaa7daf3dc">rng_arch.c</a>
 , <a class="el" href="rng_8h.html#ad5a3df3d0092f55f6ea54ccaa7daf3dc">rng.h</a>
+, <a class="el" href="stm32_2mcu__periph_2rng__arch_8c.html#ad5a3df3d0092f55f6ea54ccaa7daf3dc">rng_arch.c</a>
 </li>
 <li>rng_wait_and_get()
-: <a class="el" href="stm32_2mcu__periph_2rng__arch_8c.html#a820694eb7a21338e91e79f50a3a241ea">rng_arch.c</a>
+: <a class="el" href="sim_2mcu__periph_2rng__arch_8c.html#a820694eb7a21338e91e79f50a3a241ea">rng_arch.c</a>
 , <a class="el" href="rng_8h.html#a820694eb7a21338e91e79f50a3a241ea">rng.h</a>
-, <a class="el" href="sim_2mcu__periph_2rng__arch_8c.html#a820694eb7a21338e91e79f50a3a241ea">rng_arch.c</a>
 </li>
 <li>RotateAndTranslateToWorld()
-: <a class="el" href="nav__survey__poly__rotorcraft_8c.html#a25e0c88188e3a3761a48896bc3c13643">nav_survey_poly_rotorcraft.c</a>
-, <a class="el" href="nav__survey__poly__osam_8c.html#a48c160b16e812b494516ffb30413d169">nav_survey_poly_osam.c</a>
+: <a class="el" href="nav__survey__poly__osam_8c.html#a48c160b16e812b494516ffb30413d169">nav_survey_poly_osam.c</a>
+, <a class="el" href="nav__survey__poly__rotorcraft_8c.html#a25e0c88188e3a3761a48896bc3c13643">nav_survey_poly_rotorcraft.c</a>
 </li>
 <li>rotorcraft_cam_init()
 : <a class="el" href="rotorcraft__cam_8c.html#a9714f023c0b83d4d973e8758e053a6ce">rotorcraft_cam.c</a>
@@ -425,44 +451,69 @@ $(document).ready(function(){initNavTree('globals_func_r.html','');});
 , <a class="el" href="rotorcraft__cam_8h.html#a64fb59f54ef1b4ddcec941fbe4cb8d9e">rotorcraft_cam.h</a>
 </li>
 <li>rotorcraft_cam_set_mode()
-: <a class="el" href="rotorcraft__cam_8c.html#a960941b65b673b137a8bd448633f8782">rotorcraft_cam.c</a>
-, <a class="el" href="rotorcraft__cam_8h.html#a960941b65b673b137a8bd448633f8782">rotorcraft_cam.h</a>
+: <a class="el" href="rotorcraft__cam_8h.html#a960941b65b673b137a8bd448633f8782">rotorcraft_cam.h</a>
+, <a class="el" href="rotorcraft__cam_8c.html#a960941b65b673b137a8bd448633f8782">rotorcraft_cam.c</a>
 </li>
 <li>rover_guidance_enter()
-: <a class="el" href="rover__guidance_8c.html#a4db8bb1975e15df2fc7918173c74d874">rover_guidance.c</a>
-, <a class="el" href="rover__guidance_8h.html#a4db8bb1975e15df2fc7918173c74d874">rover_guidance.h</a>
+: <a class="el" href="rover__guidance_8h.html#a4db8bb1975e15df2fc7918173c74d874">rover_guidance.h</a>
+, <a class="el" href="rover__guidance_8c.html#a4db8bb1975e15df2fc7918173c74d874">rover_guidance.c</a>
+</li>
+<li>rover_guidance_holonomic_set_speed_igain()
+: <a class="el" href="rover__guidance__holonomic_8c.html#ae49b3b5e2e2fdb245d57134c6b5c51b7">rover_guidance_holonomic.c</a>
+, <a class="el" href="rover__guidance__holonomic_8h.html#ae49b3b5e2e2fdb245d57134c6b5c51b7">rover_guidance_holonomic.h</a>
+</li>
+<li>rover_guidance_holonomic_set_turn_igain()
+: <a class="el" href="rover__guidance__holonomic_8h.html#ad86297e199fe43546b3915c63df1936e">rover_guidance_holonomic.h</a>
+, <a class="el" href="rover__guidance__holonomic_8c.html#ad86297e199fe43546b3915c63df1936e">rover_guidance_holonomic.c</a>
 </li>
 <li>rover_guidance_init()
-: <a class="el" href="rover__guidance_8c.html#a85032e7f0f51a23f0d19dfc0fc1f3268">rover_guidance.c</a>
-, <a class="el" href="rover__guidance_8h.html#a85032e7f0f51a23f0d19dfc0fc1f3268">rover_guidance.h</a>
+: <a class="el" href="rover__guidance_8h.html#a85032e7f0f51a23f0d19dfc0fc1f3268">rover_guidance.h</a>
+, <a class="el" href="rover__guidance_8c.html#a85032e7f0f51a23f0d19dfc0fc1f3268">rover_guidance.c</a>
 </li>
 <li>rover_guidance_periodic()
-: <a class="el" href="rover__guidance_8h.html#a789221ff96e848d65c3c2038931795e3">rover_guidance.h</a>
-, <a class="el" href="rover__guidance_8c.html#a789221ff96e848d65c3c2038931795e3">rover_guidance.c</a>
+: <a class="el" href="rover__guidance_8c.html#a789221ff96e848d65c3c2038931795e3">rover_guidance.c</a>
+, <a class="el" href="rover__guidance_8h.html#a789221ff96e848d65c3c2038931795e3">rover_guidance.h</a>
 </li>
 <li>rover_guidance_run()
-: <a class="el" href="rover__guidance_8c.html#a1c5d14152545935d78448eae5d0a6b6d">rover_guidance.c</a>
-, <a class="el" href="rover__guidance_8h.html#a1c5d14152545935d78448eae5d0a6b6d">rover_guidance.h</a>
+: <a class="el" href="rover__guidance_8h.html#a1c5d14152545935d78448eae5d0a6b6d">rover_guidance.h</a>
+, <a class="el" href="rover__guidance_8c.html#a1c5d14152545935d78448eae5d0a6b6d">rover_guidance.c</a>
 </li>
 <li>rover_guidance_set_speed_igain()
-: <a class="el" href="rover__guidance_8h.html#a277b7231eb54d477f8122a85a57460bf">rover_guidance.h</a>
-, <a class="el" href="rover__guidance_8c.html#a277b7231eb54d477f8122a85a57460bf">rover_guidance.c</a>
+: <a class="el" href="rover__guidance_8c.html#a277b7231eb54d477f8122a85a57460bf">rover_guidance.c</a>
+, <a class="el" href="rover__guidance_8h.html#a277b7231eb54d477f8122a85a57460bf">rover_guidance.h</a>
 </li>
 <li>rover_guidance_set_turn_igain()
 : <a class="el" href="rover__guidance_8c.html#a3d60e4cdc5e3fc56b2d0dc0543ecdb2e">rover_guidance.c</a>
 , <a class="el" href="rover__guidance_8h.html#a3d60e4cdc5e3fc56b2d0dc0543ecdb2e">rover_guidance.h</a>
 </li>
+<li>rover_holo_guidance_enter()
+: <a class="el" href="rover__guidance__holonomic_8c.html#ad1c07ff189eca88f4260899cf80a6d0c">rover_guidance_holonomic.c</a>
+, <a class="el" href="rover__guidance__holonomic_8h.html#ad1c07ff189eca88f4260899cf80a6d0c">rover_guidance_holonomic.h</a>
+</li>
+<li>rover_holo_guidance_init()
+: <a class="el" href="rover__guidance__holonomic_8c.html#a0adecdbc2340c783867780734139efdf">rover_guidance_holonomic.c</a>
+, <a class="el" href="rover__guidance__holonomic_8h.html#a0adecdbc2340c783867780734139efdf">rover_guidance_holonomic.h</a>
+</li>
+<li>rover_holo_guidance_periodic()
+: <a class="el" href="rover__guidance__holonomic_8c.html#a70e751b339e56d256a5393c443f508ce">rover_guidance_holonomic.c</a>
+, <a class="el" href="rover__guidance__holonomic_8h.html#a70e751b339e56d256a5393c443f508ce">rover_guidance_holonomic.h</a>
+</li>
+<li>rover_holo_guidance_run()
+: <a class="el" href="rover__guidance__holonomic_8c.html#a714eebb049eb159d6b28ae3118c7d2c3">rover_guidance_holonomic.c</a>
+, <a class="el" href="rover__guidance__holonomic_8h.html#a714eebb049eb159d6b28ae3118c7d2c3">rover_guidance_holonomic.h</a>
+</li>
 <li>rpm_cb()
-: <a class="el" href="throttle__curve_8c.html#ab3186fac0bc1064939e1d9a2139b9243">throttle_curve.c</a>
-, <a class="el" href="stabilization__indi_8c.html#ab3186fac0bc1064939e1d9a2139b9243">stabilization_indi.c</a>
+: <a class="el" href="stabilization__indi_8c.html#ab3186fac0bc1064939e1d9a2139b9243">stabilization_indi.c</a>
+, <a class="el" href="throttle__curve_8c.html#ab3186fac0bc1064939e1d9a2139b9243">throttle_curve.c</a>
+, <a class="el" href="stabilization__indi_8c.html#a82a03c76c1dda03f5762afc40bfb0517">stabilization_indi.c</a>
 </li>
 <li>rpm_sensor_get_rpm()
 : <a class="el" href="rpm__sensor_8h.html#a9a1ae07808a3f9b217e667660e4fd41a">rpm_sensor.h</a>
 , <a class="el" href="rpm__sensor_8c.html#a9a1ae07808a3f9b217e667660e4fd41a">rpm_sensor.c</a>
 </li>
 <li>rpm_sensor_init()
-: <a class="el" href="rpm__sensor_8h.html#aedef6155fceb893c028bdb57041b2177">rpm_sensor.h</a>
-, <a class="el" href="rpm__sensor_8c.html#aedef6155fceb893c028bdb57041b2177">rpm_sensor.c</a>
+: <a class="el" href="rpm__sensor_8c.html#aedef6155fceb893c028bdb57041b2177">rpm_sensor.c</a>
+, <a class="el" href="rpm__sensor_8h.html#aedef6155fceb893c028bdb57041b2177">rpm_sensor.h</a>
 </li>
 <li>rpm_sensor_periodic()
 : <a class="el" href="rpm__sensor_8h.html#a5550963597a0a9158031c44bbf5ecaf2">rpm_sensor.h</a>
@@ -497,18 +548,16 @@ $(document).ready(function(){initNavTree('globals_func_r.html','');});
 : <a class="el" href="rtcm3_8h.html#af73b1c0f15189ba30dc0fe99f3317e23">rtcm3.h</a>
 </li>
 <li>RTCMgetbitu()
-: <a class="el" href="rtcm3_8h.html#a91b36270155ba0329e0a4ce357e806a5">rtcm3.h</a>
-, <a class="el" href="CRC24Q_8h.html#a0852ca13d7774030a7df798732e2dcb4">CRC24Q.h</a>
+: <a class="el" href="CRC24Q_8h.html#a0852ca13d7774030a7df798732e2dcb4">CRC24Q.h</a>
+, <a class="el" href="rtcm3_8h.html#a91b36270155ba0329e0a4ce357e806a5">rtcm3.h</a>
 </li>
 <li>rtos_mon_init_arch()
-: <a class="el" href="sim_2modules_2core_2rtos__mon__arch_8c.html#a1b64b82ab870e30ee1f72178d3f16f74">rtos_mon_arch.c</a>
+: <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c.html#a1b64b82ab870e30ee1f72178d3f16f74">rtos_mon_arch.c</a>
 , <a class="el" href="sys__mon__rtos_8h.html#a1b64b82ab870e30ee1f72178d3f16f74">sys_mon_rtos.h</a>
-, <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c.html#a1b64b82ab870e30ee1f72178d3f16f74">rtos_mon_arch.c</a>
 </li>
 <li>rtos_mon_periodic_arch()
-: <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c.html#a145651dfc10decbb4b6cda9b5876854b">rtos_mon_arch.c</a>
-, <a class="el" href="sys__mon__rtos_8h.html#a145651dfc10decbb4b6cda9b5876854b">sys_mon_rtos.h</a>
-, <a class="el" href="sim_2modules_2core_2rtos__mon__arch_8c.html#a145651dfc10decbb4b6cda9b5876854b">rtos_mon_arch.c</a>
+: <a class="el" href="sys__mon__rtos_8h.html#a145651dfc10decbb4b6cda9b5876854b">sys_mon_rtos.h</a>
+, <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c.html#a145651dfc10decbb4b6cda9b5876854b">rtos_mon_arch.c</a>
 </li>
 <li>rtp_frame_send()
 : <a class="el" href="rtp_8c.html#a31d0efc8803ccbb83cb0b713e69ff16f">rtp.c</a>
@@ -522,20 +571,20 @@ $(document).ready(function(){initNavTree('globals_func_r.html','');});
 : <a class="el" href="rtp_8c.html#aedd2d69861650f90d27683d366946e03">rtp.c</a>
 </li>
 <li>run_avoid_navigation_onvision()
-: <a class="el" href="avoid__navigation_8h.html#afbb250f65364e84c51f0df86da67eb05">avoid_navigation.h</a>
-, <a class="el" href="avoid__navigation_8c.html#afbb250f65364e84c51f0df86da67eb05">avoid_navigation.c</a>
+: <a class="el" href="avoid__navigation_8c.html#afbb250f65364e84c51f0df86da67eb05">avoid_navigation.c</a>
+, <a class="el" href="avoid__navigation_8h.html#afbb250f65364e84c51f0df86da67eb05">avoid_navigation.h</a>
 </li>
 <li>run_hover_loop()
-: <a class="el" href="rotorcraft_2guidance_2guidance__v_8h.html#add8143296d90990e7c8da2e1c67c6e62">guidance_v.h</a>
-, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#add8143296d90990e7c8da2e1c67c6e62">guidance_v.c</a>
+: <a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#add8143296d90990e7c8da2e1c67c6e62">guidance_v.c</a>
+, <a class="el" href="rotorcraft_2guidance_2guidance__v_8h.html#add8143296d90990e7c8da2e1c67c6e62">guidance_v.h</a>
 </li>
 <li>run_logger()
 : <a class="el" href="high__speed__logger__direct__memory_8c.html#aee2922318f7c228fa538200e527971db">high_speed_logger_direct_memory.c</a>
 , <a class="el" href="high__speed__logger__direct__memory_8h.html#aee2922318f7c228fa538200e527971db">high_speed_logger_direct_memory.h</a>
 </li>
 <li>run_memory_management()
-: <a class="el" href="high__speed__logger__direct__memory_8c.html#a08b60bc2790ff19cbabae3f390132ad7">high_speed_logger_direct_memory.c</a>
-, <a class="el" href="high__speed__logger__direct__memory_8h.html#a08b60bc2790ff19cbabae3f390132ad7">high_speed_logger_direct_memory.h</a>
+: <a class="el" href="high__speed__logger__direct__memory_8h.html#a08b60bc2790ff19cbabae3f390132ad7">high_speed_logger_direct_memory.h</a>
+, <a class="el" href="high__speed__logger__direct__memory_8c.html#a08b60bc2790ff19cbabae3f390132ad7">high_speed_logger_direct_memory.c</a>
 </li>
 <li>runge_kutta_1_float()
 : <a class="el" href="pprz__rk__float_8h.html#adf59a02242f08eba730c793cd28fd826">pprz_rk_float.h</a>
@@ -549,13 +598,19 @@ $(document).ready(function(){initNavTree('globals_func_r.html','');});
 <li>RungeKutta()
 : <a class="el" href="UKF__Wind__Estimator_8c.html#a3ce8106141d8e0474d84e6e8872b7318">UKF_Wind_Estimator.c</a>
 </li>
+<li>rust_function()
+: <a class="el" href="rust__demo__module_8h.html#ab3c337f9afe5f3e50a211b3895d4334e">rust_demo_module.h</a>
+</li>
+<li>rust_periodic()
+: <a class="el" href="rust__demo__module_8h.html#a0a68624e30eaebba98c150713144fb1e">rust_demo_module.h</a>
+</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Sep 12 2018 02:04:33 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:04:11 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

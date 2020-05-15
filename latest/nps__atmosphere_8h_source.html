@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -148,7 +148,7 @@ $(document).ready(function(){initNavTree('nps__atmosphere_8h_source.html','');})
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="nps__atmosphere_8h.html#a5c5546f787b1d322ecf38dc10de13309">nps_atmosphere_init</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="nps__atmosphere_8h.html#ad83734b3b0bac4f867043ea1721f8d76">nps_atmosphere_set_wind_speed</a>(<span class="keywordtype">double</span> speed);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="nps__atmosphere_8h.html#af26b03152e5247339b17a8fc33b02573">nps_atmosphere_set_wind_dir</a>(<span class="keywordtype">double</span> dir);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="nps__atmosphere_8h.html#af26b03152e5247339b17a8fc33b02573">nps_atmosphere_set_wind_dir</a>(<span class="keywordtype">double</span> <a class="code" href="shift__tracking_8c.html#a04c95be5dd36c679da64fa7181ff7cd2">dir</a>);</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="nps__atmosphere_8h.html#a0c302a2aca854b5dbc792b93decc0fb2">nps_atmosphere_set_wind_ned</a>(<span class="keywordtype">double</span> wind_north, <span class="keywordtype">double</span> wind_east, <span class="keywordtype">double</span> wind_down);</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="nps__atmosphere_8h.html#a67677167db3648e35b21ad5e7aab5e80">nps_atmosphere_update</a>(<span class="keywordtype">double</span> dt);</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
@@ -162,6 +162,7 @@ $(document).ready(function(){initNavTree('nps__atmosphere_8h_source.html','');})
 <div class="ttc" id="nps__atmosphere_8h_html_a2cdcde6e6a0ea114ccf47268e55085b1"><div class="ttname"><a href="nps__atmosphere_8h.html#a2cdcde6e6a0ea114ccf47268e55085b1">NpsAtmosphere::turbulence_severity</a></div><div class="ttdeci">int turbulence_severity</div><div class="ttdoc">turbulence severity from 0-7 </div><div class="ttdef"><b>Definition:</b> <a href="nps__atmosphere_8h_source.html#l00037">nps_atmosphere.h:37</a></div></div>
 <div class="ttc" id="group__math__algebra__double_html_structDoubleVect3"><div class="ttname"><a href="group__math__algebra__double.html#structDoubleVect3">DoubleVect3</a></div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__double_8h_source.html#l00046">pprz_algebra_double.h:46</a></div></div>
 <div class="ttc" id="nps__atmosphere_8h_html_ac5e0ebba0aebaa261f7eeb7dfb1edd75"><div class="ttname"><a href="nps__atmosphere_8h.html#ac5e0ebba0aebaa261f7eeb7dfb1edd75">NpsAtmosphere::wind_speed</a></div><div class="ttdeci">double wind_speed</div><div class="ttdoc">horizontal wind magnitude in m/s </div><div class="ttdef"><b>Definition:</b> <a href="nps__atmosphere_8h_source.html#l00034">nps_atmosphere.h:34</a></div></div>
+<div class="ttc" id="shift__tracking_8c_html_a04c95be5dd36c679da64fa7181ff7cd2"><div class="ttname"><a href="shift__tracking_8c.html#a04c95be5dd36c679da64fa7181ff7cd2">dir</a></div><div class="ttdeci">static const float dir[]</div><div class="ttdef"><b>Definition:</b> <a href="shift__tracking_8c_source.html#l00091">shift_tracking.c:91</a></div></div>
 <div class="ttc" id="nps__atmosphere_8h_html_a5c5546f787b1d322ecf38dc10de13309"><div class="ttname"><a href="nps__atmosphere_8h.html#a5c5546f787b1d322ecf38dc10de13309">nps_atmosphere_init</a></div><div class="ttdeci">void nps_atmosphere_init(void)</div><div class="ttdef"><b>Definition:</b> <a href="nps__atmosphere_8c_source.html#l00053">nps_atmosphere.c:53</a></div></div>
 <div class="ttc" id="nps__atmosphere_8h_html_a8a5c6b047408802cabec4c573e6ac213"><div class="ttname"><a href="nps__atmosphere_8h.html#a8a5c6b047408802cabec4c573e6ac213">nps_atmosphere</a></div><div class="ttdeci">struct NpsAtmosphere nps_atmosphere</div><div class="ttdef"><b>Definition:</b> <a href="nps__atmosphere_8c_source.html#l00051">nps_atmosphere.c:51</a></div></div>
 <div class="ttc" id="nps__atmosphere_8h_html_a0931fe9c2dcc4cc0b2b1eaac9fc1ecd4"><div class="ttname"><a href="nps__atmosphere_8h.html#a0931fe9c2dcc4cc0b2b1eaac9fc1ecd4">NpsAtmosphere::qnh</a></div><div class="ttdeci">double qnh</div><div class="ttdoc">barometric pressure at sea level in Pascal </div><div class="ttdef"><b>Definition:</b> <a href="nps__atmosphere_8h_source.html#l00033">nps_atmosphere.h:33</a></div></div>
@@ -176,7 +177,7 @@ $(document).ready(function(){initNavTree('nps__atmosphere_8h_source.html','');})
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_57152efd0242905f7c5d6768e6b65e41.html">simulator</a></li><li class="navelem"><a class="el" href="dir_19bdda89d6219119fa616a46fa62e86b.html">nps</a></li><li class="navelem"><a class="el" href="nps__atmosphere_8h.html">nps_atmosphere.h</a></li>
-    <li class="footer">Generated on Wed Sep 12 2018 02:02:59 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:02:37 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

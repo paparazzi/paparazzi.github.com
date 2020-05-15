@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -119,6 +119,7 @@ $(document).ready(function(){initNavTree('chibios_2mcu__periph_2spi__arch_8c.htm
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="spi_8h_source.html">mcu_periph/spi.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="gpio_8h_source.html">mcu_periph/gpio.h</a>&quot;</code><br />
+<code>#include &lt;BOARD_CONFIG&gt;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="ram__arch_8h_source.html">mcu_periph/ram_arch.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -128,7 +129,7 @@ $(document).ready(function(){initNavTree('chibios_2mcu__periph_2spi__arch_8c.htm
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="chibios_2mcu__periph_2spi__arch_8c__incl.png" border="0" usemap="#sw_2airborne_2arch_2chibios_2mcu__periph_2spi__arch_8c" alt=""/></div>
 <map name="sw_2airborne_2arch_2chibios_2mcu__periph_2spi__arch_8c" id="sw_2airborne_2arch_2chibios_2mcu__periph_2spi__arch_8c">
-<area shape="rect" id="node2" href="spi_8h.html" title="Architecture independent SPI (Serial Peripheral Interface) API. " alt="" coords="79,95,210,121"/><area shape="rect" id="node5" href="gpio_8h.html" title="Some architecture independent helper functions for GPIOs. " alt="" coords="235,95,375,121"/><area shape="rect" id="node8" href="ram__arch_8h.html" title="Specific RAM section for DMA usage on F7. " alt="" coords="493,95,668,121"/></map>
+<area shape="rect" id="node2" href="spi_8h.html" title="Architecture independent SPI (Serial Peripheral Interface) API. " alt="" coords="278,95,409,121"/><area shape="rect" id="node10" href="gpio_8h.html" title="Some architecture independent helper functions for GPIOs. " alt="" coords="511,95,651,121"/><area shape="rect" id="node13" href="ram__arch_8h.html" title="Specific RAM section for DMA usage on F7. " alt="" coords="839,95,1013,121"/><area shape="rect" id="node5" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="197,169,367,196"/><area shape="rect" id="node6" href="inttypes_8h.html" title="inttypes.h" alt="" coords="293,251,378,278"/></map>
 </div>
 </div>
 <p><a href="chibios_2mcu__periph_2spi__arch_8c_source.html">Go to the source code of this file.</a></p>
@@ -140,6 +141,8 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:a0a1a8f8b428ced27265cbd6ba785172f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chibios_2mcu__periph_2spi__arch_8c.html#a0a1a8f8b428ced27265cbd6ba785172f">SPI_THREAD_STACK_SIZE</a>&#160;&#160;&#160;512</td></tr>
+<tr class="separator:a0a1a8f8b428ced27265cbd6ba785172f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f40e32d0281e5b00a48697e47b601ab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chibios_2mcu__periph_2spi__arch_8c.html#a9f40e32d0281e5b00a48697e47b601ab">SPI_DMA_BUF_LEN</a>&#160;&#160;&#160;512</td></tr>
 <tr class="separator:a9f40e32d0281e5b00a48697e47b601ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -165,8 +168,8 @@ Functions</h2></td></tr>
 <tr class="separator:a7cbe8651c3b40526666d3c0c4bf64c33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e3dc966ff84fe38c0936807ad753ace"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chibios_2mcu__periph_2spi__arch_8c.html#a5e3dc966ff84fe38c0936807ad753ace">thd_spi1</a> (void *arg)</td></tr>
 <tr class="separator:a5e3dc966ff84fe38c0936807ad753ace"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d056a444ab9ff07405d2fdb3f554e2c"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chibios_2mcu__periph_2spi__arch_8c.html#a6d056a444ab9ff07405d2fdb3f554e2c">THD_WORKING_AREA</a> (wa_thd_spi1, 256)</td></tr>
-<tr class="separator:a6d056a444ab9ff07405d2fdb3f554e2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f06fb8dc08823fc33049d42efeb735d"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chibios_2mcu__periph_2spi__arch_8c.html#a4f06fb8dc08823fc33049d42efeb735d">THD_WORKING_AREA</a> (wa_thd_spi1, <a class="el" href="chibios_2mcu__periph_2spi__arch_8c.html#a0a1a8f8b428ced27265cbd6ba785172f">SPI_THREAD_STACK_SIZE</a>)</td></tr>
+<tr class="separator:a4f06fb8dc08823fc33049d42efeb735d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaaba00866ddaf960c0c761e61f81e5216"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__spi.html#gaaba00866ddaf960c0c761e61f81e5216">spi1_arch_init</a> (void)</td></tr>
 <tr class="memdesc:gaaba00866ddaf960c0c761e61f81e5216"><td class="mdescLeft">&#160;</td><td class="mdescRight">Architecture dependent SPI1 initialization.  <a href="group__spi.html#gaaba00866ddaf960c0c761e61f81e5216">More...</a><br /></td></tr>
 <tr class="separator:gaaba00866ddaf960c0c761e61f81e5216"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -174,8 +177,8 @@ Functions</h2></td></tr>
 <tr class="separator:a9cb6c26fba09facad63467d545d0bac9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab11bc613174d612801ff3a26008806e7"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chibios_2mcu__periph_2spi__arch_8c.html#ab11bc613174d612801ff3a26008806e7">thd_spi2</a> (void *arg)</td></tr>
 <tr class="separator:ab11bc613174d612801ff3a26008806e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a8020dc8dbc3ba5e564af2ea950f96c"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chibios_2mcu__periph_2spi__arch_8c.html#a5a8020dc8dbc3ba5e564af2ea950f96c">THD_WORKING_AREA</a> (wa_thd_spi2, 256)</td></tr>
-<tr class="separator:a5a8020dc8dbc3ba5e564af2ea950f96c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b8228ae113c20c3fc25690e4f068a1c"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chibios_2mcu__periph_2spi__arch_8c.html#a7b8228ae113c20c3fc25690e4f068a1c">THD_WORKING_AREA</a> (wa_thd_spi2, <a class="el" href="chibios_2mcu__periph_2spi__arch_8c.html#a0a1a8f8b428ced27265cbd6ba785172f">SPI_THREAD_STACK_SIZE</a>)</td></tr>
+<tr class="separator:a7b8228ae113c20c3fc25690e4f068a1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae6c7e2bb3fb354f3b98282386b41bf70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__spi.html#gae6c7e2bb3fb354f3b98282386b41bf70">spi2_arch_init</a> (void)</td></tr>
 <tr class="memdesc:gae6c7e2bb3fb354f3b98282386b41bf70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Architecture dependent SPI2 initialization.  <a href="group__spi.html#gae6c7e2bb3fb354f3b98282386b41bf70">More...</a><br /></td></tr>
 <tr class="separator:gae6c7e2bb3fb354f3b98282386b41bf70"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -221,7 +224,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p>Definition at line <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00046">46</a> of file <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html">spi_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00052">52</a> of file <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html">spi_arch.c</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
@@ -245,7 +248,21 @@ sem</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00053">53</a> of file <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html">spi_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00059">59</a> of file <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html">spi_arch.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0a1a8f8b428ced27265cbd6ba785172f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SPI_THREAD_STACK_SIZE&#160;&#160;&#160;512</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00048">48</a> of file <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html">spi_arch.c</a>.</p>
 
 </div>
 </div>
@@ -280,11 +297,11 @@ sem</td>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00239">239</a> of file <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html">spi_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00247">247</a> of file <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html">spi_arch.c</a>.</p>
 
-<p>References <a class="el" href="spi_8h_source.html#l00155">spi_transaction::after_cb</a>, <a class="el" href="spi_8h_source.html#l00154">spi_transaction::before_cb</a>, <a class="el" href="spi_8h_source.html#l00178">spi_periph::init_struct</a>, <a class="el" href="spi_8h_source.html#l00143">spi_transaction::input_buf</a>, <a class="el" href="spi_8h_source.html#l00145">spi_transaction::input_length</a>, <a class="el" href="spi_8h_source.html#l00144">spi_transaction::output_buf</a>, <a class="el" href="spi_8h_source.html#l00146">spi_transaction::output_length</a>, <a class="el" href="spi_8h_source.html#l00177">spi_periph::reg_addr</a>, <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00047">spi_init::sem</a>, <a class="el" href="spi_8h_source.html#l00147">spi_transaction::slave_idx</a>, <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00161">spi_resolve_CR1()</a>, <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00221">spi_resolve_CR2()</a>, <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00110">spi_resolve_slave_pin()</a>, <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00063">spi_resolve_slave_port()</a>, <a class="el" href="spi_8h_source.html#l00163">SPI_TRANSACTION_QUEUE_LEN</a>, <a class="el" href="spi_8h_source.html#l00101">SPIIdle</a>, <a class="el" href="spi_8h_source.html#l00102">SPIRunning</a>, <a class="el" href="spi_8h_source.html#l00093">SPITransSuccess</a>, <a class="el" href="spi_8h_source.html#l00156">spi_transaction::status</a>, <a class="el" href="spi_8h_source.html#l00174">spi_periph::status</a>, <a class="el" href="spi_8h_source.html#l00181">spi_periph::suspend</a>, <a class="el" href="spi_8h_source.html#l00170">spi_periph::trans</a>, <a class="el" href="spi_8h_source.html#l00172">spi_periph::trans_extract_idx</a>, and <a class="el" href="spi_8h_source.html#l00171">spi_periph::trans_insert_idx</a>.</p>
+<p>References <a class="el" href="spi_8h_source.html#l00161">spi_transaction::after_cb</a>, <a class="el" href="spi_8h_source.html#l00160">spi_transaction::before_cb</a>, <a class="el" href="spi_8h_source.html#l00184">spi_periph::init_struct</a>, <a class="el" href="spi_8h_source.html#l00149">spi_transaction::input_buf</a>, <a class="el" href="spi_8h_source.html#l00151">spi_transaction::input_length</a>, <a class="el" href="spi_8h_source.html#l00150">spi_transaction::output_buf</a>, <a class="el" href="spi_8h_source.html#l00152">spi_transaction::output_length</a>, <a class="el" href="spi_8h_source.html#l00183">spi_periph::reg_addr</a>, <a class="el" href="spi_8h_source.html#l00154">spi_transaction::select</a>, <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00053">spi_init::sem</a>, <a class="el" href="spi_8h_source.html#l00153">spi_transaction::slave_idx</a>, <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00167">spi_resolve_CR1()</a>, <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00229">spi_resolve_CR2()</a>, <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00116">spi_resolve_slave_pin()</a>, <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00069">spi_resolve_slave_port()</a>, <a class="el" href="spi_8h_source.html#l00169">SPI_TRANSACTION_QUEUE_LEN</a>, <a class="el" href="spi_8h_source.html#l00107">SPIIdle</a>, <a class="el" href="spi_8h_source.html#l00108">SPIRunning</a>, <a class="el" href="spi_8h_source.html#l00064">SPISelect</a>, <a class="el" href="spi_8h_source.html#l00063">SPISelectUnselect</a>, <a class="el" href="spi_8h_source.html#l00099">SPITransSuccess</a>, <a class="el" href="spi_8h_source.html#l00065">SPIUnselect</a>, <a class="el" href="spi_8h_source.html#l00162">spi_transaction::status</a>, <a class="el" href="spi_8h_source.html#l00180">spi_periph::status</a>, <a class="el" href="spi_8h_source.html#l00187">spi_periph::suspend</a>, <a class="el" href="spi_8h_source.html#l00176">spi_periph::trans</a>, <a class="el" href="spi_8h_source.html#l00178">spi_periph::trans_extract_idx</a>, and <a class="el" href="spi_8h_source.html#l00177">spi_periph::trans_insert_idx</a>.</p>
 
-<p>Referenced by <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00340">thd_spi1()</a>, and <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00379">thd_spi2()</a>.</p>
+<p>Referenced by <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00354">thd_spi1()</a>, and <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00393">thd_spi2()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -412,11 +429,11 @@ sem</td>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00161">161</a> of file <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html">spi_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00167">167</a> of file <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html">spi_arch.c</a>.</p>
 
-<p>References <a class="el" href="spi_8h_source.html#l00069">SPICphaEdge2</a>, <a class="el" href="spi_8h_source.html#l00078">SPICpolIdleHigh</a>, <a class="el" href="spi_8h_source.html#l00120">SPIDiv128</a>, <a class="el" href="spi_8h_source.html#l00117">SPIDiv16</a>, <a class="el" href="spi_8h_source.html#l00114">SPIDiv2</a>, <a class="el" href="spi_8h_source.html#l00121">SPIDiv256</a>, <a class="el" href="spi_8h_source.html#l00118">SPIDiv32</a>, <a class="el" href="spi_8h_source.html#l00115">SPIDiv4</a>, <a class="el" href="spi_8h_source.html#l00119">SPIDiv64</a>, <a class="el" href="spi_8h_source.html#l00116">SPIDiv8</a>, <a class="el" href="spi_8h_source.html#l00085">SPIDss16bit</a>, and <a class="el" href="spi_8h_source.html#l00107">SPILSBFirst</a>.</p>
+<p>References <a class="el" href="spi_8h_source.html#l00075">SPICphaEdge2</a>, <a class="el" href="spi_8h_source.html#l00084">SPICpolIdleHigh</a>, <a class="el" href="spi_8h_source.html#l00126">SPIDiv128</a>, <a class="el" href="spi_8h_source.html#l00123">SPIDiv16</a>, <a class="el" href="spi_8h_source.html#l00120">SPIDiv2</a>, <a class="el" href="spi_8h_source.html#l00127">SPIDiv256</a>, <a class="el" href="spi_8h_source.html#l00124">SPIDiv32</a>, <a class="el" href="spi_8h_source.html#l00121">SPIDiv4</a>, <a class="el" href="spi_8h_source.html#l00125">SPIDiv64</a>, <a class="el" href="spi_8h_source.html#l00122">SPIDiv8</a>, <a class="el" href="spi_8h_source.html#l00091">SPIDss16bit</a>, and <a class="el" href="spi_8h_source.html#l00113">SPILSBFirst</a>.</p>
 
-<p>Referenced by <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00239">handle_spi_thd()</a>.</p>
+<p>Referenced by <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00247">handle_spi_thd()</a>.</p>
 
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -463,11 +480,11 @@ sem</td>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00221">221</a> of file <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html">spi_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00229">229</a> of file <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html">spi_arch.c</a>.</p>
 
-<p>References <a class="el" href="spi_8h_source.html#l00085">SPIDss16bit</a>.</p>
+<p>References <a class="el" href="spi_8h_source.html#l00091">SPIDss16bit</a>.</p>
 
-<p>Referenced by <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00239">handle_spi_thd()</a>.</p>
+<p>Referenced by <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00247">handle_spi_thd()</a>.</p>
 
 <p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -513,11 +530,11 @@ sem</td>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00110">110</a> of file <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html">spi_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00116">116</a> of file <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html">spi_arch.c</a>.</p>
 
-<p>References <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00445">SPI_SELECT_SLAVE0_PIN</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00448">SPI_SELECT_SLAVE1_PIN</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00451">SPI_SELECT_SLAVE2_PIN</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00454">SPI_SELECT_SLAVE3_PIN</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00457">SPI_SELECT_SLAVE4_PIN</a>, and <a class="el" href="chimera_8h_source.html#l00554">SPI_SELECT_SLAVE5_PIN</a>.</p>
+<p>References <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00523">SPI_SELECT_SLAVE0_PIN</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00526">SPI_SELECT_SLAVE1_PIN</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00529">SPI_SELECT_SLAVE2_PIN</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00532">SPI_SELECT_SLAVE3_PIN</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00535">SPI_SELECT_SLAVE4_PIN</a>, and <a class="el" href="chimera_8h_source.html#l00554">SPI_SELECT_SLAVE5_PIN</a>.</p>
 
-<p>Referenced by <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00239">handle_spi_thd()</a>.</p>
+<p>Referenced by <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00247">handle_spi_thd()</a>.</p>
 
 <p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -563,11 +580,11 @@ sem</td>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00063">63</a> of file <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html">spi_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00069">69</a> of file <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html">spi_arch.c</a>.</p>
 
-<p>References <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00444">SPI_SELECT_SLAVE0_PORT</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00447">SPI_SELECT_SLAVE1_PORT</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00450">SPI_SELECT_SLAVE2_PORT</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00453">SPI_SELECT_SLAVE3_PORT</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00456">SPI_SELECT_SLAVE4_PORT</a>, and <a class="el" href="chimera_8h_source.html#l00553">SPI_SELECT_SLAVE5_PORT</a>.</p>
+<p>References <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00522">SPI_SELECT_SLAVE0_PORT</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00525">SPI_SELECT_SLAVE1_PORT</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00528">SPI_SELECT_SLAVE2_PORT</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00531">SPI_SELECT_SLAVE3_PORT</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00534">SPI_SELECT_SLAVE4_PORT</a>, and <a class="el" href="chimera_8h_source.html#l00553">SPI_SELECT_SLAVE5_PORT</a>.</p>
 
-<p>Referenced by <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00239">handle_spi_thd()</a>.</p>
+<p>Referenced by <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00247">handle_spi_thd()</a>.</p>
 
 <p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -604,11 +621,11 @@ sem</td>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00340">340</a> of file <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html">spi_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00354">354</a> of file <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html">spi_arch.c</a>.</p>
 
-<p>References <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00239">handle_spi_thd()</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00967">spi1</a>, and <a class="el" href="std_8h_source.html#l00004">TRUE</a>.</p>
+<p>References <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00247">handle_spi_thd()</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00967">spi1</a>, and <a class="el" href="std_8h_source.html#l00004">TRUE</a>.</p>
 
-<p>Referenced by <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00352">spi1_arch_init()</a>.</p>
+<p>Referenced by <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00366">spi1_arch_init()</a>.</p>
 
 <p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -656,11 +673,11 @@ sem</td>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00379">379</a> of file <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html">spi_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00393">393</a> of file <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html">spi_arch.c</a>.</p>
 
-<p>References <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00239">handle_spi_thd()</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l01004">spi2</a>, and <a class="el" href="std_8h_source.html#l00004">TRUE</a>.</p>
+<p>References <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00247">handle_spi_thd()</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l01004">spi2</a>, and <a class="el" href="std_8h_source.html#l00004">TRUE</a>.</p>
 
-<p>Referenced by <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00391">spi2_arch_init()</a>.</p>
+<p>Referenced by <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00405">spi2_arch_init()</a>.</p>
 
 <p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -686,7 +703,7 @@ sem</td>
 
 </div>
 </div>
-<a class="anchor" id="a6d056a444ab9ff07405d2fdb3f554e2c"></a>
+<a class="anchor" id="a4f06fb8dc08823fc33049d42efeb735d"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -702,7 +719,7 @@ sem</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">256&#160;</td>
+          <td class="paramtype"><a class="el" href="chibios_2mcu__periph_2spi__arch_8c.html#a0a1a8f8b428ced27265cbd6ba785172f">SPI_THREAD_STACK_SIZE</a>&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -720,7 +737,7 @@ sem</td>
 
 </div>
 </div>
-<a class="anchor" id="a5a8020dc8dbc3ba5e564af2ea950f96c"></a>
+<a class="anchor" id="a7b8228ae113c20c3fc25690e4f068a1c"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -736,7 +753,7 @@ sem</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">256&#160;</td>
+          <td class="paramtype"><a class="el" href="chibios_2mcu__periph_2spi__arch_8c.html#a0a1a8f8b428ced27265cbd6ba785172f">SPI_THREAD_STACK_SIZE</a>&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -776,9 +793,9 @@ sem</td>
 <div class="line">  .sem = &amp;spi1_sem,</div>
 <div class="line">}</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00335">335</a> of file <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html">spi_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00349">349</a> of file <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html">spi_arch.c</a>.</p>
 
-<p>Referenced by <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00352">spi1_arch_init()</a>.</p>
+<p>Referenced by <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00366">spi1_arch_init()</a>.</p>
 
 </div>
 </div>
@@ -803,9 +820,9 @@ sem</td>
 <div class="line">  .sem = &amp;spi2_sem,</div>
 <div class="line">}</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00374">374</a> of file <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html">spi_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00388">388</a> of file <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html">spi_arch.c</a>.</p>
 
-<p>Referenced by <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00391">spi2_arch_init()</a>.</p>
+<p>Referenced by <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00405">spi2_arch_init()</a>.</p>
 
 </div>
 </div>
@@ -815,7 +832,7 @@ sem</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_975986b9e0eb299e77243bf822f828ce.html">chibios</a></li><li class="navelem"><a class="el" href="dir_b82140776176b28f52d7ab660bc0e8ab.html">mcu_periph</a></li><li class="navelem"><a class="el" href="chibios_2mcu__periph_2spi__arch_8c.html">spi_arch.c</a></li>
-    <li class="footer">Generated on Wed Sep 12 2018 02:03:02 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:02:40 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

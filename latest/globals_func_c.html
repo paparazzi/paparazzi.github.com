@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -149,13 +149,17 @@ $(document).ready(function(){initNavTree('globals_func_c.html','');});
 &#160;
 
 <h3><a class="anchor" id="index_c"></a>- c -</h3><ul>
+<li>c2d()
+: <a class="el" href="discrete__ekf__no__north_8c.html#af86012bc614ad388c003ab830233df2b">discrete_ekf_no_north.c</a>
+, <a class="el" href="discrete__ekf__no__north_8h.html#af86012bc614ad388c003ab830233df2b">discrete_ekf_no_north.h</a>
+</li>
 <li>calc_edgeflow_tot()
-: <a class="el" href="opticflow__calculator_8c.html#ab57bd1ab7d50982c7f9494e40e6da3ca">opticflow_calculator.c</a>
-, <a class="el" href="opticflow__calculator_8h.html#ab57bd1ab7d50982c7f9494e40e6da3ca">opticflow_calculator.h</a>
+: <a class="el" href="opticflow__calculator_8h.html#ab57bd1ab7d50982c7f9494e40e6da3ca">opticflow_calculator.h</a>
+, <a class="el" href="opticflow__calculator_8c.html#ab57bd1ab7d50982c7f9494e40e6da3ca">opticflow_calculator.c</a>
 </li>
 <li>calc_fast9_lukas_kanade()
-: <a class="el" href="opticflow__calculator_8h.html#a3edff14cc7f95b5202ba6841a12dfed3">opticflow_calculator.h</a>
-, <a class="el" href="opticflow__calculator_8c.html#a3edff14cc7f95b5202ba6841a12dfed3">opticflow_calculator.c</a>
+: <a class="el" href="opticflow__calculator_8c.html#a3edff14cc7f95b5202ba6841a12dfed3">opticflow_calculator.c</a>
+, <a class="el" href="opticflow__calculator_8h.html#a3edff14cc7f95b5202ba6841a12dfed3">opticflow_calculator.h</a>
 </li>
 <li>calc_g1_element()
 : <a class="el" href="stabilization__indi_8c.html#ada3e67cc5198f44de9142dc2b93f7d41">stabilization_indi.c</a>
@@ -190,6 +194,9 @@ $(document).ready(function(){initNavTree('globals_func_c.html','');});
 </li>
 <li>calculateCRC()
 : <a class="el" href="vn200__serial_8c.html#a4534893dcb2459077ceb871a388ad0ce">vn200_serial.c</a>
+</li>
+<li>calculateCrc8()
+: <a class="el" href="esc__dshot_8c.html#a2e417dbd1839a8efbf515ea7315b80d4">esc_dshot.c</a>
 </li>
 <li>calculateForwards()
 : <a class="el" href="orange__avoider_8c.html#a4e5570532574857283bde2f3437c5375">orange_avoider.c</a>
@@ -290,21 +297,44 @@ $(document).ready(function(){initNavTree('globals_func_c.html','');});
 , <a class="el" href="chdk__pipe_8h.html#acbcd675fa8ae8c63391052f98e33c5a4">chdk_pipe.h</a>
 </li>
 <li>check_anchor_timeout()
-: <a class="el" href="dw1000__arduino_8c.html#a41e7eed3ca0467a93cf6c152af47b12d">dw1000_arduino.c</a>
+: <a class="el" href="dw1000__arduino_8c.html#ac69c33f1afdbddc93f4606fc40376644">dw1000_arduino.c</a>
+</li>
+<li>check_and_compute_data()
+: <a class="el" href="dw1000__arduino_8c.html#a61ebb26ab28d54f27878ffeb87febfe9">dw1000_arduino.c</a>
+</li>
+<li>check_color_snake_gate_detection()
+: <a class="el" href="snake__gate__detection_8c.html#a0981ce70dd28acd9b61fd0da4248798f">snake_gate_detection.c</a>
+, <a class="el" href="snake__gate__detection_8h.html#a0981ce70dd28acd9b61fd0da4248798f">snake_gate_detection.h</a>
+</li>
+<li>check_color_yuv422()
+: <a class="el" href="image_8c.html#a6f14c04ea0779b7962d796490e0c8420">image.c</a>
+, <a class="el" href="image_8h.html#a6f14c04ea0779b7962d796490e0c8420">image.h</a>
+</li>
+<li>check_contiguity()
+: <a class="el" href="virt2phys_8c.html#ac0b66a5b5e335c413a78b5e9f677ba83">virt2phys.c</a>
+, <a class="el" href="virt2phys_8h.html#ac0b66a5b5e335c413a78b5e9f677ba83">virt2phys.h</a>
 </li>
 <li>check_for_nan()
 : <a class="el" href="nps__fdm__jsbsim_8cpp.html#aa8d531348a8fbe30accc30952915a90d">nps_fdm_jsbsim.cpp</a>
 </li>
+<li>check_gate_initial()
+: <a class="el" href="snake__gate__detection_8c.html#a864922da035b3c31db233b17ccc345d8">snake_gate_detection.c</a>
+, <a class="el" href="snake__gate__detection_8h.html#a73abc8b369efb049abd410dc504e441d">snake_gate_detection.h</a>
+</li>
+<li>check_gate_outline()
+: <a class="el" href="snake__gate__detection_8c.html#ace002ac27557c54636e18910bbf442b8">snake_gate_detection.c</a>
+, <a class="el" href="snake__gate__detection_8h.html#ace002ac27557c54636e18910bbf442b8">snake_gate_detection.h</a>
+</li>
+<li>check_inside()
+: <a class="el" href="snake__gate__detection_8c.html#ad427f2f71b35a1c9cfddeda6016eadbf">snake_gate_detection.c</a>
+, <a class="el" href="snake__gate__detection_8h.html#ad427f2f71b35a1c9cfddeda6016eadbf">snake_gate_detection.h</a>
+</li>
+<li>check_line()
+: <a class="el" href="snake__gate__detection_8c.html#a4fc05622300f85dd1b71353c16923ca6">snake_gate_detection.c</a>
+, <a class="el" href="snake__gate__detection_8h.html#a4fc05622300f85dd1b71353c16923ca6">snake_gate_detection.h</a>
+</li>
 <li>checkStatesUpdated()
 : <a class="el" href="decawave__anchorless__communication_8c.html#a1b9df4970567804ad5e82038b0215c8b">decawave_anchorless_communication.c</a>
-</li>
-<li>chemo_init()
-: <a class="el" href="chemo__detect_8c.html#aa666e38f9929c13d85bc8dcc07ed1e99">chemo_detect.c</a>
-, <a class="el" href="chemo__detect_8h.html#aa666e38f9929c13d85bc8dcc07ed1e99">chemo_detect.h</a>
-</li>
-<li>chemo_periodic()
-: <a class="el" href="chemo__detect_8c.html#a807d146e387265902ac0128036e54570">chemo_detect.c</a>
-, <a class="el" href="chemo__detect_8h.html#a807d146e387265902ac0128036e54570">chemo_detect.h</a>
 </li>
 <li>chibios_sdlog_init()
 : <a class="el" href="sdlog__chibios_8c.html#ad094fe3bc7f2da71d85d09484e25bfe6">sdlog_chibios.c</a>
@@ -327,8 +357,8 @@ $(document).ready(function(){initNavTree('globals_func_c.html','');});
 , <a class="el" href="imu__chimu_8h.html#a18b09515aee60d52a79df0c4b05d934d">imu_chimu.h</a>
 </li>
 <li>chooseRandomIncrementAvoidance()
-: <a class="el" href="orange__avoider_8c.html#ac55d6c1ab8e8ddf0e79a28c68a396218">orange_avoider.c</a>
-, <a class="el" href="orange__avoider_8h.html#a1296b3545ad39ed2510a2057a20dfb26">orange_avoider.h</a>
+: <a class="el" href="orange__avoider_8c.html#a1296b3545ad39ed2510a2057a20dfb26">orange_avoider.c</a>
+, <a class="el" href="orange__avoider__guided_8c.html#a1296b3545ad39ed2510a2057a20dfb26">orange_avoider_guided.c</a>
 </li>
 <li>chprintf()
 : <a class="el" href="group__chprintf.html#gac84c97ff3243a8aa49289a3abc53f010">printf.c</a>
@@ -346,9 +376,6 @@ $(document).ready(function(){initNavTree('globals_func_c.html','');});
 : <a class="el" href="stm32_2subsystems_2actuators_2actuators__dualpwm__arch_8c.html#acd2f86fcb3553dedcde8e395b93b05e0">actuators_dualpwm_arch.c</a>
 , <a class="el" href="stm32_2subsystems_2actuators_2actuators__dualpwm__arch_8h.html#acd2f86fcb3553dedcde8e395b93b05e0">actuators_dualpwm_arch.h</a>
 </li>
-<li>clip()
-: <a class="el" href="bayer_8h.html#a7bcab48c91c2c274a2e94e848a106f11">bayer.h</a>
-</li>
 <li>cmd_execute()
 : <a class="el" href="usb__serial__stm32__example1_8c.html#a4c05230e98a20fb7a4fdd8ad8e5c528a">usb_serial_stm32_example1.c</a>
 </li>
@@ -357,6 +384,12 @@ $(document).ready(function(){initNavTree('globals_func_c.html','');});
 </li>
 <li>cmp_flow()
 : <a class="el" href="opticflow__calculator_8c.html#a70ba354beb51e86724b52a657ca34c25">opticflow_calculator.c</a>
+</li>
+<li>cmp_i()
+: <a class="el" href="snake__gate__detection_8c.html#a1f7afc1f7cb5bac6020745c11eee2fdb">snake_gate_detection.c</a>
+</li>
+<li>cmpfunc()
+: <a class="el" href="snake__gate__detection_8c.html#a4ffbd7d116c633fda2c1957ca42cadb9">snake_gate_detection.c</a>
 </li>
 <li>CN_calculate_target()
 : <a class="el" href="obstacle__avoidance_8c.html#afb4f90a66f93fdb70da178189b76b6a2">obstacle_avoidance.c</a>
@@ -390,28 +423,68 @@ $(document).ready(function(){initNavTree('globals_func_c.html','');});
 : <a class="el" href="obstacle__avoidance_8c.html#a53290242178aea1256bfde6beba0d989">obstacle_avoidance.c</a>
 , <a class="el" href="obstacle__avoidance_8h.html#a53290242178aea1256bfde6beba0d989">obstacle_avoidance.h</a>
 </li>
+<li>collective_tracking_control()
+: <a class="el" href="ctc_8c.html#a4321ca0e4116e9d0debfdb98f8e62924">ctc.c</a>
+, <a class="el" href="ctc_8h.html#a03d5c465a0472d27b89a510004d97daa">ctc.h</a>
+</li>
+<li>collective_tracking_point()
+: <a class="el" href="ctc_8c.html#af71daf9fe6be839881aea3db9e8ba838">ctc.c</a>
+, <a class="el" href="ctc_8h.html#af71daf9fe6be839881aea3db9e8ba838">ctc.h</a>
+</li>
+<li>collective_tracking_vehicle()
+: <a class="el" href="ctc_8c.html#a05f2250743c8c4ab54bc33a4ed511ac9">ctc.c</a>
+, <a class="el" href="ctc_8h.html#a41ca7da4e74a84c337b7713fddec8e72">ctc.h</a>
+</li>
+<li>collective_tracking_waypoint()
+: <a class="el" href="ctc_8h.html#a451e8b5e8f347609d956627d23fd696c">ctc.h</a>
+, <a class="el" href="ctc_8c.html#a451e8b5e8f347609d956627d23fd696c">ctc.c</a>
+</li>
+<li>color_detection_cb()
+: <a class="el" href="orange__avoider_8c.html#a0111a459dae5b767ece1246ad1d1032e">orange_avoider.c</a>
+, <a class="el" href="orange__avoider__guided_8c.html#a0111a459dae5b767ece1246ad1d1032e">orange_avoider_guided.c</a>
+</li>
+<li>color_object_detector_init()
+: <a class="el" href="cv__detect__color__object_8c.html#aaaa68a4d10f42cf735a96f4ab74ec29a">cv_detect_color_object.c</a>
+, <a class="el" href="cv__detect__color__object_8h.html#aaaa68a4d10f42cf735a96f4ab74ec29a">cv_detect_color_object.h</a>
+</li>
+<li>color_object_detector_periodic()
+: <a class="el" href="cv__detect__color__object_8c.html#a9e98bd5e517e04efba87d5fb9df01069">cv_detect_color_object.c</a>
+, <a class="el" href="cv__detect__color__object_8h.html#a9e98bd5e517e04efba87d5fb9df01069">cv_detect_color_object.h</a>
+</li>
+<li>colorbgr_opencv_to_yuv422()
+: <a class="el" href="opencv__image__functions_8cpp.html#af4d0f0682c7323109f7cc2f1d8c1615b">opencv_image_functions.cpp</a>
+, <a class="el" href="opencv__image__functions_8h.html#afcaa83d18bc7fe61e4d98f12c1a9d5a9">opencv_image_functions.h</a>
+</li>
 <li>colorfilter_func()
-: <a class="el" href="colorfilter_8c.html#a4f6ce70f175c9d88381bbcc472ccc264">colorfilter.c</a>
+: <a class="el" href="colorfilter_8c.html#acda7c33d3bdd3802dc2794ebae3af9aa">colorfilter.c</a>
 </li>
 <li>colorfilter_init()
 : <a class="el" href="colorfilter_8c.html#ab8b6b333c3f84d7497aef5629a2e4453">colorfilter.c</a>
 , <a class="el" href="colorfilter_8h.html#ab8b6b333c3f84d7497aef5629a2e4453">colorfilter.h</a>
-</li>
-<li>colorrgb_opencv_to_yuv422()
-: <a class="el" href="opencv__image__functions_8cpp.html#a8a2863d725e738371ce5da4c94b37bc6">opencv_image_functions.cpp</a>
-, <a class="el" href="opencv__image__functions_8h.html#a61a5033300dd8089655841501408f0aa">opencv_image_functions.h</a>
 </li>
 <li>coloryuv_opencv_to_yuv422()
 : <a class="el" href="opencv__image__functions_8cpp.html#a003b51cf5281baaf8d7ffdf532d2526a">opencv_image_functions.cpp</a>
 , <a class="el" href="opencv__image__functions_8h.html#a7e0cf5e8a9df91b72406f77394e7b2cb">opencv_image_functions.h</a>
 </li>
 <li>comm_send_ch()
-: <a class="el" href="mavlink_8h.html#ab753873a1ee10adedd0ce246311468f8">mavlink.h</a>
-, <a class="el" href="jevois__mavlink_8h.html#ab753873a1ee10adedd0ce246311468f8">jevois_mavlink.h</a>
+: <a class="el" href="jevois__mavlink_8h.html#ab753873a1ee10adedd0ce246311468f8">jevois_mavlink.h</a>
+, <a class="el" href="mavlink_8h.html#ab753873a1ee10adedd0ce246311468f8">mavlink.h</a>
 </li>
 <li>common_nav_periodic_task_4Hz()
 : <a class="el" href="common__nav_8c.html#a41fefa6b96afeb9a5d9f8bc41b7b8c2e">common_nav.c</a>
 , <a class="el" href="common__nav_8h.html#aeee253823276823c6ea935330d106280">common_nav.h</a>
+</li>
+<li>compensate_pressure()
+: <a class="el" href="bmp3__i2c_8c.html#ab435820735af350d16c4ef134fb268f3">bmp3_i2c.c</a>
+</li>
+<li>compensate_temperature()
+: <a class="el" href="bmp3__i2c_8c.html#ac05a2dd2029ad95c4e4beee431c4f04a">bmp3_i2c.c</a>
+</li>
+<li>compute_1e_filter_alpha()
+: <a class="el" href="1e__filter_8h.html#aaa9eccba43c7a1dc898eb614cb786bc5">1e_filter.h</a>
+</li>
+<li>compute_1e_filter_lp()
+: <a class="el" href="1e__filter_8h.html#a31b91fa161d0ee0aef7b6106dd6f75df">1e_filter.h</a>
 </li>
 <li>compute_ahrs_representations()
 : <a class="el" href="ahrs__float__dcm_8c.html#a682bd53351651a47152def7839ecdbd2">ahrs_float_dcm.c</a>
@@ -420,14 +493,20 @@ $(document).ready(function(){initNavTree('globals_func_c.html','');});
 : <a class="el" href="nav__drop_8h.html#ab242b1072e38faf0e67e1da07e00f9ab">nav_drop.h</a>
 </li>
 <li>compute_body_orientation_and_rates()
-: <a class="el" href="ahrs__float__cmpl__wrapper_8c.html#a2e90a05e5a4ca369d0308bb72e68171d">ahrs_float_cmpl_wrapper.c</a>
+: <a class="el" href="ahrs__madgwick__wrapper_8c.html#a2e90a05e5a4ca369d0308bb72e68171d">ahrs_madgwick_wrapper.c</a>
+, <a class="el" href="ahrs__float__cmpl__wrapper_8c.html#a2e90a05e5a4ca369d0308bb72e68171d">ahrs_float_cmpl_wrapper.c</a>
 , <a class="el" href="ahrs__float__invariant__wrapper_8c.html#a2e90a05e5a4ca369d0308bb72e68171d">ahrs_float_invariant_wrapper.c</a>
 </li>
+<li>compute_checksum()
+: <a class="el" href="actuators__ostrich_8c.html#afe8acf1d19857fa47c3e77a01679f072">actuators_ostrich.c</a>
+</li>
 <li>compute_dist2_to_home()
-: <a class="el" href="rover_2navigation_8c.html#a4603515f41786b54ea9383a65a9f249e">navigation.c</a>
+: <a class="el" href="rotorcraft_2navigation_8c.html#a4603515f41786b54ea9383a65a9f249e">navigation.c</a>
 , <a class="el" href="rotorcraft_2navigation_8h.html#a4603515f41786b54ea9383a65a9f249e">navigation.h</a>
+, <a class="el" href="rover_2navigation_8c.html#a4603515f41786b54ea9383a65a9f249e">navigation.c</a>
 , <a class="el" href="common__nav_8c.html#a4603515f41786b54ea9383a65a9f249e">common_nav.c</a>
 , <a class="el" href="common__nav_8h.html#a4603515f41786b54ea9383a65a9f249e">common_nav.h</a>
+, <a class="el" href="rover_2navigation_8h.html#a4603515f41786b54ea9383a65a9f249e">navigation.h</a>
 </li>
 <li>compute_ff_vel()
 : <a class="el" href="range__forcefield_8c.html#aa72a4c6650c738da118b1e27d6d5a7cb">range_forcefield.c</a>
@@ -437,6 +516,7 @@ $(document).ready(function(){initNavTree('globals_func_c.html','');});
 </li>
 <li>compute_pid()
 : <a class="el" href="rover__guidance_8c.html#a60e14d9f6abb79fc1d05ec2c798745cf">rover_guidance.c</a>
+, <a class="el" href="rover__guidance__holonomic_8c.html#aab6d9bed21b8dc4c72bd50d278efdffc">rover_guidance_holonomic.c</a>
 </li>
 <li>compute_points_from_bungee()
 : <a class="el" href="nav__bungee__takeoff_8c.html#a2f53e9b3f76ff0a80bf595380900e71a">nav_bungee_takeoff.c</a>
@@ -451,8 +531,8 @@ $(document).ready(function(){initNavTree('globals_func_c.html','');});
 : <a class="el" href="config__mkk__v2_8c.html#ab40880a5a716dde2fd513271f24dcb8b">config_mkk_v2.c</a>
 </li>
 <li>config_mkk_v2_init()
-: <a class="el" href="config__mkk__v2_8h.html#aab70e844663cb90311674738347ccbd3">config_mkk_v2.h</a>
-, <a class="el" href="config__mkk__v2_8c.html#aab70e844663cb90311674738347ccbd3">config_mkk_v2.c</a>
+: <a class="el" href="config__mkk__v2_8c.html#aab70e844663cb90311674738347ccbd3">config_mkk_v2.c</a>
+, <a class="el" href="config__mkk__v2_8h.html#aab70e844663cb90311674738347ccbd3">config_mkk_v2.h</a>
 </li>
 <li>config_mkk_v2_parse_eeprom()
 : <a class="el" href="config__mkk__v2_8c.html#a2122a767a02942b48c586920c4627cd4">config_mkk_v2.c</a>
@@ -470,8 +550,8 @@ $(document).ready(function(){initNavTree('globals_func_c.html','');});
 , <a class="el" href="config__mkk__v2_8h.html#ac185d9a5e71b91184afbb07eac530ab0">config_mkk_v2.h</a>
 </li>
 <li>config_mkk_v2_send_eeprom()
-: <a class="el" href="config__mkk__v2_8h.html#a944c5b23198b8a50eb595a483c9b4408">config_mkk_v2.h</a>
-, <a class="el" href="config__mkk__v2_8c.html#a944c5b23198b8a50eb595a483c9b4408">config_mkk_v2.c</a>
+: <a class="el" href="config__mkk__v2_8c.html#a944c5b23198b8a50eb595a483c9b4408">config_mkk_v2.c</a>
+, <a class="el" href="config__mkk__v2_8h.html#a944c5b23198b8a50eb595a483c9b4408">config_mkk_v2.h</a>
 </li>
 <li>configure_baro_slave()
 : <a class="el" href="imu__apogee_8c.html#a50a720bf8e1a73ca4b5e90051b4cffc0">imu_apogee.c</a>
@@ -499,37 +579,37 @@ $(document).ready(function(){initNavTree('globals_func_c.html','');});
 , <a class="el" href="copilot__common_8c.html#a59e05c9fee48850daf7dcf2a8d40f7fc">copilot_common.c</a>
 </li>
 <li>copilot_parse_cam_snapshot_dl()
-: <a class="el" href="copilot__common_8c.html#a45b997dd03ef29008f0c189157238133">copilot_common.c</a>
-, <a class="el" href="copilot_8h.html#a45b997dd03ef29008f0c189157238133">copilot.h</a>
+: <a class="el" href="copilot_8h.html#a45b997dd03ef29008f0c189157238133">copilot.h</a>
+, <a class="el" href="copilot__common_8c.html#a45b997dd03ef29008f0c189157238133">copilot_common.c</a>
 </li>
 <li>copilot_parse_copilot_status_dl()
-: <a class="el" href="copilot_8h.html#a8b94bc3c335ccfb1b5b7d65df6789dc1">copilot.h</a>
-, <a class="el" href="copilot__common_8c.html#a8b94bc3c335ccfb1b5b7d65df6789dc1">copilot_common.c</a>
+: <a class="el" href="copilot__common_8c.html#a8b94bc3c335ccfb1b5b7d65df6789dc1">copilot_common.c</a>
+, <a class="el" href="copilot_8h.html#a8b94bc3c335ccfb1b5b7d65df6789dc1">copilot.h</a>
 </li>
 <li>copilot_parse_move_wp_dl()
-: <a class="el" href="copilot__rotorcraft_8c.html#ab279d8cb60dd6477e1de73905a720520">copilot_rotorcraft.c</a>
+: <a class="el" href="copilot__fixedwing_8c.html#ab279d8cb60dd6477e1de73905a720520">copilot_fixedwing.c</a>
+, <a class="el" href="copilot__rotorcraft_8c.html#ab279d8cb60dd6477e1de73905a720520">copilot_rotorcraft.c</a>
 , <a class="el" href="copilot_8h.html#ab279d8cb60dd6477e1de73905a720520">copilot.h</a>
-, <a class="el" href="copilot__fixedwing_8c.html#ab279d8cb60dd6477e1de73905a720520">copilot_fixedwing.c</a>
 </li>
 <li>copilot_parse_payload_command_dl()
-: <a class="el" href="copilot__common_8c.html#a6f66771f594519e6d3b8efd400ec4162">copilot_common.c</a>
-, <a class="el" href="copilot_8h.html#a6f66771f594519e6d3b8efd400ec4162">copilot.h</a>
+: <a class="el" href="copilot_8h.html#a6f66771f594519e6d3b8efd400ec4162">copilot.h</a>
+, <a class="el" href="copilot__common_8c.html#a6f66771f594519e6d3b8efd400ec4162">copilot_common.c</a>
 </li>
 <li>copilot_periodic()
-: <a class="el" href="copilot_8h.html#aff1f561b25724533f46290e86658c698">copilot.h</a>
-, <a class="el" href="copilot__common_8c.html#aff1f561b25724533f46290e86658c698">copilot_common.c</a>
+: <a class="el" href="copilot__common_8c.html#aff1f561b25724533f46290e86658c698">copilot_common.c</a>
+, <a class="el" href="copilot_8h.html#aff1f561b25724533f46290e86658c698">copilot.h</a>
 </li>
 <li>copy_from_to_fbw()
-: <a class="el" href="fixedwing_2autopilot__static_8c.html#ab8d2d846e05038e13cfb45b8bb8f0921">autopilot_static.c</a>
-, <a class="el" href="fixedwing_2autopilot__generated_8c.html#ab8d2d846e05038e13cfb45b8bb8f0921">autopilot_generated.c</a>
+: <a class="el" href="fixedwing_2autopilot__generated_8c.html#ab8d2d846e05038e13cfb45b8bb8f0921">autopilot_generated.c</a>
+, <a class="el" href="fixedwing_2autopilot__static_8c.html#ab8d2d846e05038e13cfb45b8bb8f0921">autopilot_static.c</a>
 </li>
 <li>covariance_f()
 : <a class="el" href="pprz__stat_8h.html#acfa4250d4cb12b024d2d6a19d8253695">pprz_stat.h</a>
 , <a class="el" href="pprz__stat_8c.html#ac75c0169ede28d21ada6d51e7431ea18">pprz_stat.c</a>
 </li>
 <li>covariance_i()
-: <a class="el" href="pprz__stat_8h.html#a938b3854a384a0e327d27cf1c515b117">pprz_stat.h</a>
-, <a class="el" href="pprz__stat_8c.html#a938b3854a384a0e327d27cf1c515b117">pprz_stat.c</a>
+: <a class="el" href="pprz__stat_8c.html#a938b3854a384a0e327d27cf1c515b117">pprz_stat.c</a>
+, <a class="el" href="pprz__stat_8h.html#a938b3854a384a0e327d27cf1c515b117">pprz_stat.h</a>
 </li>
 <li>cpu_ticks_of_nsec()
 : <a class="el" href="sys__time_8h.html#ab9fdc67ec3fff3769bebcd04e7ee86c2">sys_time.h</a>
@@ -558,9 +638,24 @@ $(document).ready(function(){initNavTree('globals_func_c.html','');});
 <li>create_tag()
 : <a class="el" href="exif__module_8c.html#a62dd27ed931462c0526e4632461c7acf">exif_module.c</a>
 </li>
+<li>ctc_init()
+: <a class="el" href="ctc_8h.html#a333a299639da8b8d3146dae0d9e1e5ee">ctc.h</a>
+, <a class="el" href="ctc_8c.html#a333a299639da8b8d3146dae0d9e1e5ee">ctc.c</a>
+</li>
+<li>ctc_send_info_to_nei()
+: <a class="el" href="ctc_8h.html#a9d266f88d9bf0ff9aa0b01dc9d8f951a">ctc.h</a>
+</li>
+<li>ctc_target_init()
+: <a class="el" href="ctc__target_8c.html#a2c31be9b86b8d2990a9e3f448f3ebaf9">ctc_target.c</a>
+, <a class="el" href="ctc__target_8h.html#a2c31be9b86b8d2990a9e3f448f3ebaf9">ctc_target.h</a>
+</li>
+<li>ctc_target_send_info_to_nei()
+: <a class="el" href="ctc__target_8h.html#a1bd09dfa4fe42657ce4e7719e3a1553b">ctc_target.h</a>
+, <a class="el" href="ctc__target_8c.html#a1bd09dfa4fe42657ce4e7719e3a1553b">ctc_target.c</a>
+</li>
 <li>ctrl_eff_scheduling_init()
-: <a class="el" href="ctrl__effectiveness__scheduling_8h.html#afa83ea9955eb8fb36341a2169a823af1">ctrl_effectiveness_scheduling.h</a>
-, <a class="el" href="ctrl__effectiveness__scheduling_8c.html#afa83ea9955eb8fb36341a2169a823af1">ctrl_effectiveness_scheduling.c</a>
+: <a class="el" href="ctrl__effectiveness__scheduling_8c.html#afa83ea9955eb8fb36341a2169a823af1">ctrl_effectiveness_scheduling.c</a>
+, <a class="el" href="ctrl__effectiveness__scheduling_8h.html#afa83ea9955eb8fb36341a2169a823af1">ctrl_effectiveness_scheduling.h</a>
 </li>
 <li>ctrl_eff_scheduling_periodic()
 : <a class="el" href="ctrl__effectiveness__scheduling_8h.html#a80dcca086fcbf5ef61bfe9d420b5ae10">ctrl_effectiveness_scheduling.h</a>
@@ -573,8 +668,8 @@ $(document).ready(function(){initNavTree('globals_func_c.html','');});
 : <a class="el" href="ctrl__module__innerloop__demo_8c.html#a246e056658d0e550e72754ab59707a78">ctrl_module_innerloop_demo.c</a>
 </li>
 <li>cv_add_to_device()
-: <a class="el" href="cv_8c.html#aee4ecc7b59c1526a024f91a46a34ff45">cv.c</a>
-, <a class="el" href="cv_8h.html#aee4ecc7b59c1526a024f91a46a34ff45">cv.h</a>
+: <a class="el" href="cv_8h.html#aee4ecc7b59c1526a024f91a46a34ff45">cv.h</a>
+, <a class="el" href="cv_8c.html#aee4ecc7b59c1526a024f91a46a34ff45">cv.c</a>
 </li>
 <li>cv_add_to_device_async()
 : <a class="el" href="cv_8h.html#a14d4ab03a3db0de4144a4c497c4b8149">cv.h</a>
@@ -590,27 +685,27 @@ $(document).ready(function(){initNavTree('globals_func_c.html','');});
 : <a class="el" href="cv_8c.html#a320424a660d1f3dc96e65784fea1af1c">cv.c</a>
 </li>
 <li>cv_blob_locator_event()
-: <a class="el" href="cv__blob__locator_8h.html#a391703403d5b9f54b9aeb1ef368be61b">cv_blob_locator.h</a>
-, <a class="el" href="cv__blob__locator_8c.html#a391703403d5b9f54b9aeb1ef368be61b">cv_blob_locator.c</a>
+: <a class="el" href="cv__blob__locator_8c.html#a391703403d5b9f54b9aeb1ef368be61b">cv_blob_locator.c</a>
+, <a class="el" href="cv__blob__locator_8h.html#a391703403d5b9f54b9aeb1ef368be61b">cv_blob_locator.h</a>
 </li>
 <li>cv_blob_locator_func()
 : <a class="el" href="cv__blob__locator_8c.html#a5298a0e08ea26e8e2031d5def6dc11ec">cv_blob_locator.c</a>
 </li>
 <li>cv_blob_locator_init()
-: <a class="el" href="cv__blob__locator_8h.html#a03040f93fee504200fd409c45f488e4d">cv_blob_locator.h</a>
-, <a class="el" href="cv__blob__locator_8c.html#a03040f93fee504200fd409c45f488e4d">cv_blob_locator.c</a>
+: <a class="el" href="cv__blob__locator_8c.html#a03040f93fee504200fd409c45f488e4d">cv_blob_locator.c</a>
+, <a class="el" href="cv__blob__locator_8h.html#a03040f93fee504200fd409c45f488e4d">cv_blob_locator.h</a>
 </li>
 <li>cv_blob_locator_periodic()
-: <a class="el" href="cv__blob__locator_8c.html#a4155e79e90bf935651c760ccdfbef27b">cv_blob_locator.c</a>
-, <a class="el" href="cv__blob__locator_8h.html#a4155e79e90bf935651c760ccdfbef27b">cv_blob_locator.h</a>
+: <a class="el" href="cv__blob__locator_8h.html#a4155e79e90bf935651c760ccdfbef27b">cv_blob_locator.h</a>
+, <a class="el" href="cv__blob__locator_8c.html#a4155e79e90bf935651c760ccdfbef27b">cv_blob_locator.c</a>
 </li>
 <li>cv_blob_locator_start()
-: <a class="el" href="cv__blob__locator_8h.html#a0625acc5c17262bca58f3055fcad6c29">cv_blob_locator.h</a>
-, <a class="el" href="cv__blob__locator_8c.html#a0625acc5c17262bca58f3055fcad6c29">cv_blob_locator.c</a>
+: <a class="el" href="cv__blob__locator_8c.html#a0625acc5c17262bca58f3055fcad6c29">cv_blob_locator.c</a>
+, <a class="el" href="cv__blob__locator_8h.html#a0625acc5c17262bca58f3055fcad6c29">cv_blob_locator.h</a>
 </li>
 <li>cv_blob_locator_stop()
-: <a class="el" href="cv__blob__locator_8c.html#aec5ab0ecb64bee378c339966bcfd7443">cv_blob_locator.c</a>
-, <a class="el" href="cv__blob__locator_8h.html#aec5ab0ecb64bee378c339966bcfd7443">cv_blob_locator.h</a>
+: <a class="el" href="cv__blob__locator_8h.html#aec5ab0ecb64bee378c339966bcfd7443">cv_blob_locator.h</a>
+, <a class="el" href="cv__blob__locator_8c.html#aec5ab0ecb64bee378c339966bcfd7443">cv_blob_locator.c</a>
 </li>
 <li>cv_marker_func()
 : <a class="el" href="cv__blob__locator_8c.html#abdf385a8df79da68d81a4c0fede3899e">cv_blob_locator.c</a>
@@ -618,6 +713,10 @@ $(document).ready(function(){initNavTree('globals_func_c.html','');});
 <li>cv_run_device()
 : <a class="el" href="cv_8c.html#a600c1d8570ebc9340cee21772e84f022">cv.c</a>
 , <a class="el" href="cv_8h.html#a600c1d8570ebc9340cee21772e84f022">cv.h</a>
+</li>
+<li>cv_target_localization_report_mark()
+: <a class="el" href="cv__target__localization_8h.html#a4ef50542f56ec3b378f5fd0664dbd4ca">cv_target_localization.h</a>
+, <a class="el" href="cv__target__localization_8c.html#a4ef50542f56ec3b378f5fd0664dbd4ca">cv_target_localization.c</a>
 </li>
 <li>cv_window_func()
 : <a class="el" href="cv__blob__locator_8c.html#aa46d070d93f91a7f2399fe13aafab1bd">cv_blob_locator.c</a>
@@ -627,12 +726,12 @@ $(document).ready(function(){initNavTree('globals_func_c.html','');});
 , <a class="el" href="cyrf6936_8c.html#a0b25c82679dcd151cb4eb29986f796c9">cyrf6936.c</a>
 </li>
 <li>cyrf6936_init()
-: <a class="el" href="cyrf6936_8h.html#a27414d1e4d63182c97357b576f05b37d">cyrf6936.h</a>
-, <a class="el" href="cyrf6936_8c.html#a27414d1e4d63182c97357b576f05b37d">cyrf6936.c</a>
+: <a class="el" href="cyrf6936_8c.html#a27414d1e4d63182c97357b576f05b37d">cyrf6936.c</a>
+, <a class="el" href="cyrf6936_8h.html#a27414d1e4d63182c97357b576f05b37d">cyrf6936.h</a>
 </li>
 <li>cyrf6936_multi_write()
-: <a class="el" href="cyrf6936_8c.html#a3b40b6f25aa27591a77e570e7bd0de49">cyrf6936.c</a>
-, <a class="el" href="cyrf6936_8h.html#a3b40b6f25aa27591a77e570e7bd0de49">cyrf6936.h</a>
+: <a class="el" href="cyrf6936_8h.html#a3b40b6f25aa27591a77e570e7bd0de49">cyrf6936.h</a>
+, <a class="el" href="cyrf6936_8c.html#a3b40b6f25aa27591a77e570e7bd0de49">cyrf6936.c</a>
 </li>
 <li>cyrf6936_read_block()
 : <a class="el" href="cyrf6936_8c.html#aff65efb88dd0ce64192c1afe791f3630">cyrf6936.c</a>
@@ -649,8 +748,8 @@ $(document).ready(function(){initNavTree('globals_func_c.html','');});
 , <a class="el" href="cyrf6936_8c.html#ab2e2ab2d19b97905d2c9825f65cddfda">cyrf6936.c</a>
 </li>
 <li>cyrf6936_write()
-: <a class="el" href="cyrf6936_8h.html#a5bd95c0f89a44a38d8fc8b71a8d1b2b3">cyrf6936.h</a>
-, <a class="el" href="cyrf6936_8c.html#a5bd95c0f89a44a38d8fc8b71a8d1b2b3">cyrf6936.c</a>
+: <a class="el" href="cyrf6936_8c.html#a5bd95c0f89a44a38d8fc8b71a8d1b2b3">cyrf6936.c</a>
+, <a class="el" href="cyrf6936_8h.html#a5bd95c0f89a44a38d8fc8b71a8d1b2b3">cyrf6936.h</a>
 </li>
 <li>cyrf6936_write_block()
 : <a class="el" href="cyrf6936_8c.html#add9d028cf1928e8ef15d28e43a952a4b">cyrf6936.c</a>
@@ -668,7 +767,7 @@ $(document).ready(function(){initNavTree('globals_func_c.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Sep 12 2018 02:04:33 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:04:11 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

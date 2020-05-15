@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -133,6 +133,9 @@ $(document).ready(function(){initNavTree('chibios_2mcu__arch_8c.html','');});
 Functions</h2></td></tr>
 <tr class="memitem:a87671303c7d4a9264b1ffbb07e87f454"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chibios_2mcu__arch_8c.html#a87671303c7d4a9264b1ffbb07e87f454">mcu_arch_init</a> (void)</td></tr>
 <tr class="separator:a87671303c7d4a9264b1ffbb07e87f454"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67d61bc2f9f31ef0eb14b901ec29396a"><td class="memItemLeft" align="right" valign="top">void WEAK&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chibios_2mcu__arch_8c.html#a67d61bc2f9f31ef0eb14b901ec29396a">mcu_periph_energy_save</a> (void)</td></tr>
+<tr class="memdesc:a67d61bc2f9f31ef0eb14b901ec29396a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call board specific energy saving Can be necessary for closing on power off.  <a href="#a67d61bc2f9f31ef0eb14b901ec29396a">More...</a><br /></td></tr>
+<tr class="separator:a67d61bc2f9f31ef0eb14b901ec29396a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Microcontroller initialization function for ChibiOS. </p>
@@ -156,7 +159,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="chibios_2mcu__arch_8c_source.html#l00109">109</a> of file <a class="el" href="chibios_2mcu__arch_8c_source.html">mcu_arch.c</a>.</p>
 
-<p>Referenced by <a class="el" href="mcu_8c_source.html#l00082">mcu_init()</a>.</p>
+<p>Referenced by <a class="el" href="mcu_8c_source.html#l00087">mcu_init()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -171,13 +174,46 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a67d61bc2f9f31ef0eb14b901ec29396a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WEAK mcu_periph_energy_save </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Call board specific energy saving Can be necessary for closing on power off. </p>
+
+<p>Definition at line <a class="el" href="chibios_2mcu__arch_8c_source.html#l00154">154</a> of file <a class="el" href="chibios_2mcu__arch_8c_source.html">mcu_arch.c</a>.</p>
+
+<p>Referenced by <a class="el" href="sdlog__chibios_8c_source.html#l00188">sdlog_chibios_finish()</a>.</p>
+
+<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="chibios_2mcu__arch_8c_a67d61bc2f9f31ef0eb14b901ec29396a_icgraph.png" border="0" usemap="#chibios_2mcu__arch_8c_a67d61bc2f9f31ef0eb14b901ec29396a_icgraph" alt=""/></div>
+<map name="chibios_2mcu__arch_8c_a67d61bc2f9f31ef0eb14b901ec29396a_icgraph" id="chibios_2mcu__arch_8c_a67d61bc2f9f31ef0eb14b901ec29396a_icgraph">
+<area shape="rect" id="node2" href="sdlog__chibios_8h.html#a468073a8575335ab6b2d8291548e78ff" title="sdlog_chibios_finish" alt="" coords="239,31,385,57"/><area shape="rect" id="node3" href="sdlog__chibios_8c.html#aee744de53d121395ef522cef118be731" title="thd_bat_survey" alt="" coords="433,5,553,32"/><area shape="rect" id="node6" href="usbStorage_8c.html#a03e36a472f457f472fc7031d798eac45" title="thdUsbStorage" alt="" coords="434,56,553,83"/><area shape="rect" id="node4" href="sdlog__chibios_8c.html#a7cf4c749454b496e749b47e614750109" title="thd_startlog" alt="" coords="637,5,735,32"/><area shape="rect" id="node5" href="sdlog__chibios_8h.html#aeeba7682db35a9becddc07935f5d256a" title="sdlog_chibios_init" alt="" coords="819,31,952,57"/><area shape="rect" id="node7" href="usbStorage_8h.html#a12081a3972cd8a738a527d104c647665" title="usbStorageStartPolling" alt="" coords="601,56,771,83"/></map>
+</div>
+</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_975986b9e0eb299e77243bf822f828ce.html">chibios</a></li><li class="navelem"><a class="el" href="chibios_2mcu__arch_8c.html">mcu_arch.c</a></li>
-    <li class="footer">Generated on Wed Sep 12 2018 02:03:01 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:02:39 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

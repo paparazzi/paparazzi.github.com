@@ -8,7 +8,7 @@ var traffic__info_8c =
     [ "acInfoCalcPositionUtm_i", "group__ac__info.html#ga625b19c827e0414eba7db51eb8ca4a75", null ],
     [ "acInfoCalcVelocityEnu_f", "group__ac__info.html#ga617fbb6b732b670c567912ec18da1014", null ],
     [ "acInfoCalcVelocityEnu_i", "group__ac__info.html#gade35a76a0329e540ef2ea613124705f0", null ],
-    [ "parse_acinfo_dl", "group__ac__info.html#ga074e6132a71e6c104b44a1c5a49d7a78", null ],
+    [ "parse_acinfo_dl", "group__ac__info.html#ga17b120995d97d500b7eb5aea22214041", null ],
     [ "set_ac_info_lla", "group__ac__info.html#ga6bded2c305127a6a5f336aaa481e2457", null ],
     [ "set_ac_info_utm", "group__ac__info.html#ga2f523b260d5f5dda8f138ba70435479c", null ],
     [ "traffic_info_init", "group__ac__info.html#gaae96e15faf2bb8e4c1f82c01cdf869c2", null ],

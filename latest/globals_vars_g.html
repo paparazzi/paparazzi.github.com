@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -214,6 +214,22 @@ $(document).ready(function(){initNavTree('globals_vars_g.html','');});
 : <a class="el" href="gas__engine__idle__trim_8c.html#a0289581c0f5029d21102407a6e7bfb8f">gas_engine_idle_trim.c</a>
 , <a class="el" href="gas__engine__idle__trim_8h.html#a0289581c0f5029d21102407a6e7bfb8f">gas_engine_idle_trim.h</a>
 </li>
+<li>gate_center_height
+: <a class="el" href="detect__gate_8c.html#a1b5eddf1f9ac247fedb123e3ba2410bb">detect_gate.c</a>
+</li>
+<li>gate_detect_mutex
+: <a class="el" href="detect__gate_8c.html#a7401d21bf94eb1d032046731ac8fe440">detect_gate.c</a>
+</li>
+<li>gate_size_m
+: <a class="el" href="detect__gate_8c.html#af74cb322b5c4c5d51f128331003436ce">detect_gate.c</a>
+</li>
+<li>gate_thickness
+: <a class="el" href="detect__gate_8c.html#a3596ea51639ad76194d7479bc4b1c468">detect_gate.c</a>
+, <a class="el" href="detect__gate_8h.html#a3596ea51639ad76194d7479bc4b1c468">detect_gate.h</a>
+</li>
+<li>gates_c
+: <a class="el" href="detect__gate_8c.html#a95bb79efe7abd3120aac95a961fbe08b">detect_gate.c</a>
+</li>
 <li>gazebo_actuators
 : <a class="el" href="nps__fdm__gazebo_8cpp.html#a224224fac62049cbbee496dc127cd616">nps_fdm_gazebo.cpp</a>
 </li>
@@ -256,12 +272,12 @@ $(document).ready(function(){initNavTree('globals_vars_g.html','');});
 : <a class="el" href="traffic__info_8c.html#adc09508a7a14d47c2d28cb1190a3cd48">traffic_info.c</a>
 </li>
 <li>gh1
-: <a class="el" href="group__math__geodetic__wmm.html#ga62e18ae35976dd22c318d2edb0796606">pprz_geodetic_wmm2015.c</a>
-, <a class="el" href="group__math__geodetic__wmm.html#ga62e18ae35976dd22c318d2edb0796606">pprz_geodetic_wmm2015.h</a>
+: <a class="el" href="group__math__geodetic__wmm.html#ga62e18ae35976dd22c318d2edb0796606">pprz_geodetic_wmm2020.c</a>
+, <a class="el" href="group__math__geodetic__wmm.html#ga62e18ae35976dd22c318d2edb0796606">pprz_geodetic_wmm2020.h</a>
 </li>
 <li>gh2
-: <a class="el" href="group__math__geodetic__wmm.html#ga456afafddc80399b883e504aca3f5329">pprz_geodetic_wmm2015.c</a>
-, <a class="el" href="group__math__geodetic__wmm.html#ga456afafddc80399b883e504aca3f5329">pprz_geodetic_wmm2015.h</a>
+: <a class="el" href="group__math__geodetic__wmm.html#ga456afafddc80399b883e504aca3f5329">pprz_geodetic_wmm2020.c</a>
+, <a class="el" href="group__math__geodetic__wmm.html#ga456afafddc80399b883e504aca3f5329">pprz_geodetic_wmm2020.h</a>
 </li>
 <li>gh_max_accel
 : <a class="el" href="guidance__h__ref_8c.html#a05f3b8d2d4e577edde72e464f128e71b">guidance_h_ref.c</a>
@@ -273,11 +289,14 @@ $(document).ready(function(){initNavTree('globals_vars_g.html','');});
 : <a class="el" href="guidance__h__ref_8c.html#ad1c81ab118dd232ccbfbd728684f533d">guidance_h_ref.c</a>
 , <a class="el" href="guidance__h__ref_8h.html#ad1c81ab118dd232ccbfbd728684f533d">guidance_h_ref.h</a>
 </li>
+<li>global_filters
+: <a class="el" href="cv__detect__color__object_8c.html#acc901b55ecd724d0dde4237d9d59caaf">cv_detect_color_object.c</a>
+</li>
 <li>gp2y_trans
 : <a class="el" href="dust__gp2y_8c.html#a44b4e1877b24df3a936c237f6149f36d">dust_gp2y.c</a>
 </li>
 <li>gpio_default_config
-: <a class="el" href="apogee_2chibios_2v1_80_2board_8c.html#a80a51f8d00a90983e395f3e15a4c46a5">board.c</a>
+: <a class="el" href="lisa__mx_2chibios_2v2_81_2board_8c.html#a80a51f8d00a90983e395f3e15a4c46a5">board.c</a>
 </li>
 <li>gpiofp
 : <a class="el" href="gpio__ardrone_8c.html#a906d4f886bffe22de3e67fc628d2bc5c">gpio_ardrone.c</a>
@@ -317,6 +336,7 @@ $(document).ready(function(){initNavTree('globals_vars_g.html','');});
 , <a class="el" href="ahrs__int__cmpl__quat__wrapper_8c.html#af8c616627ecbb4860e359944c97dc718">ahrs_int_cmpl_quat_wrapper.c</a>
 , <a class="el" href="gps_8c.html#af8c616627ecbb4860e359944c97dc718">gps.c</a>
 , <a class="el" href="ins__alt__float_8c.html#af8c616627ecbb4860e359944c97dc718">ins_alt_float.c</a>
+, <a class="el" href="ins__ekf2_8cpp.html#af8c616627ecbb4860e359944c97dc718">ins_ekf2.cpp</a>
 , <a class="el" href="ins__float__invariant__wrapper_8c.html#af8c616627ecbb4860e359944c97dc718">ins_float_invariant_wrapper.c</a>
 , <a class="el" href="ins__gps__passthrough_8c.html#af8c616627ecbb4860e359944c97dc718">ins_gps_passthrough.c</a>
 , <a class="el" href="ins__gps__passthrough__utm_8c.html#af8c616627ecbb4860e359944c97dc718">ins_gps_passthrough_utm.c</a>
@@ -336,6 +356,9 @@ $(document).ready(function(){initNavTree('globals_vars_g.html','');});
 </li>
 <li>gps_lost
 : <a class="el" href="fixedwing_2autopilot__static_8c.html#a581ad21989d47162693935c93e555b10">autopilot_static.c</a>
+</li>
+<li>gps_msg
+: <a class="el" href="ins__ekf2_8cpp.html#a2ed8363a1fdb276ef699b22bdbb2279b">ins_ekf2.cpp</a>
 </li>
 <li>gps_mtk
 : <a class="el" href="gps__mtk_8c.html#ab1002487799962f629e8c87860cc1964">gps_mtk.c</a>
@@ -393,12 +416,9 @@ $(document).ready(function(){initNavTree('globals_vars_g.html','');});
 <li>gps_ubx_i2c_ucenter_done
 : <a class="el" href="gps__ubx__i2c_8c.html#a249b40aa07e26dfa8d3b1c8f004a218e">gps_ubx_i2c.c</a>
 </li>
-<li>gps_ubx_time_sync
-: <a class="el" href="gps__ubx_8c.html#adbb7f9a44a3c5e3ca7d7fe69079091ba">gps_ubx.c</a>
-</li>
 <li>gps_ubx_ucenter
-: <a class="el" href="gps__ubx__ucenter_8h.html#a080e2318dbd7b4cb34822c4fbbfc701d">gps_ubx_ucenter.h</a>
-, <a class="el" href="gps__ubx__ucenter_8c.html#a080e2318dbd7b4cb34822c4fbbfc701d">gps_ubx_ucenter.c</a>
+: <a class="el" href="gps__ubx__ucenter_8c.html#a080e2318dbd7b4cb34822c4fbbfc701d">gps_ubx_ucenter.c</a>
+, <a class="el" href="gps__ubx__ucenter_8h.html#a080e2318dbd7b4cb34822c4fbbfc701d">gps_ubx_ucenter.h</a>
 </li>
 <li>gps_udp
 : <a class="el" href="gps__udp_8c.html#a4f1d555baba5ae777530401dd322b09e">gps_udp.c</a>
@@ -406,6 +426,9 @@ $(document).ready(function(){initNavTree('globals_vars_g.html','');});
 </li>
 <li>gps_udp_read_buffer
 : <a class="el" href="gps__udp_8c.html#aa26d52dfdfc37f29038df65600f8ca74">gps_udp.c</a>
+</li>
+<li>green_color
+: <a class="el" href="snake__gate__detection_8c.html#af1277b5afcda89127b598dbf4a266725">snake_gate_detection.c</a>
 </li>
 <li>ground_alt
 : <a class="el" href="common__nav_8c.html#a7a9fcbdc46c61d7a15eafcb443211104">common_nav.c</a>
@@ -517,16 +540,16 @@ $(document).ready(function(){initNavTree('globals_vars_g.html','');});
 , <a class="el" href="rotorcraft_2guidance_2guidance__v_8h.html#abbefa1daffcf539c6617f837ea6ec846">guidance_v.h</a>
 </li>
 <li>guidance_v_kp
-: <a class="el" href="rotorcraft_2guidance_2guidance__v_8h.html#a3836652cb5a9952023e05ed5046aa1e2">guidance_v.h</a>
-, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#a3836652cb5a9952023e05ed5046aa1e2">guidance_v.c</a>
+: <a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#a3836652cb5a9952023e05ed5046aa1e2">guidance_v.c</a>
+, <a class="el" href="rotorcraft_2guidance_2guidance__v_8h.html#a3836652cb5a9952023e05ed5046aa1e2">guidance_v.h</a>
 </li>
 <li>guidance_v_mode
-: <a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#a09896d1671aacfd563071566b7562fc1">guidance_v.c</a>
-, <a class="el" href="rotorcraft_2guidance_2guidance__v_8h.html#a09896d1671aacfd563071566b7562fc1">guidance_v.h</a>
+: <a class="el" href="rotorcraft_2guidance_2guidance__v_8h.html#a09896d1671aacfd563071566b7562fc1">guidance_v.h</a>
+, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#a09896d1671aacfd563071566b7562fc1">guidance_v.c</a>
 </li>
 <li>guidance_v_nominal_throttle
-: <a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#a730aebac96eaf548439f844e69456190">guidance_v.c</a>
-, <a class="el" href="rotorcraft_2guidance_2guidance__v_8h.html#a730aebac96eaf548439f844e69456190">guidance_v.h</a>
+: <a class="el" href="rotorcraft_2guidance_2guidance__v_8h.html#a730aebac96eaf548439f844e69456190">guidance_v.h</a>
+, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#a730aebac96eaf548439f844e69456190">guidance_v.c</a>
 </li>
 <li>guidance_v_rc_delta_t
 : <a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#a53779fb4d8ef92130859d3680c988156">guidance_v.c</a>
@@ -543,32 +566,32 @@ $(document).ready(function(){initNavTree('globals_vars_g.html','');});
 , <a class="el" href="rotorcraft_2guidance_2guidance__v_8h.html#ae7286efc4d084bd8c776d210310beceb">guidance_v.h</a>
 </li>
 <li>guidance_v_z_ref
-: <a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#a05574a3cc3b7afff99639758b8389dd9">guidance_v.c</a>
-, <a class="el" href="rotorcraft_2guidance_2guidance__v_8h.html#a05574a3cc3b7afff99639758b8389dd9">guidance_v.h</a>
+: <a class="el" href="rotorcraft_2guidance_2guidance__v_8h.html#a05574a3cc3b7afff99639758b8389dd9">guidance_v.h</a>
+, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#a05574a3cc3b7afff99639758b8389dd9">guidance_v.c</a>
 </li>
 <li>guidance_v_z_sp
 : <a class="el" href="rotorcraft_2guidance_2guidance__v_8h.html#a29bc59ad2410e5768283d22eaeb1dc06">guidance_v.h</a>
 , <a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#a29bc59ad2410e5768283d22eaeb1dc06">guidance_v.c</a>
 </li>
 <li>guidance_v_z_sum_err
-: <a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#a1ab1094ba9e347ad83bdc6cb9197fcb1">guidance_v.c</a>
-, <a class="el" href="rotorcraft_2guidance_2guidance__v_8h.html#a1ab1094ba9e347ad83bdc6cb9197fcb1">guidance_v.h</a>
+: <a class="el" href="rotorcraft_2guidance_2guidance__v_8h.html#a1ab1094ba9e347ad83bdc6cb9197fcb1">guidance_v.h</a>
+, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#a1ab1094ba9e347ad83bdc6cb9197fcb1">guidance_v.c</a>
 </li>
 <li>guidance_v_zd_ref
-: <a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#a45e457c45e984566dc82f03704a6c85d">guidance_v.c</a>
-, <a class="el" href="rotorcraft_2guidance_2guidance__v_8h.html#a45e457c45e984566dc82f03704a6c85d">guidance_v.h</a>
+: <a class="el" href="rotorcraft_2guidance_2guidance__v_8h.html#a45e457c45e984566dc82f03704a6c85d">guidance_v.h</a>
+, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#a45e457c45e984566dc82f03704a6c85d">guidance_v.c</a>
 </li>
 <li>guidance_v_zd_sp
-: <a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#a615ed31ff0e531f529ed3ac21e544269">guidance_v.c</a>
-, <a class="el" href="rotorcraft_2guidance_2guidance__v_8h.html#a615ed31ff0e531f529ed3ac21e544269">guidance_v.h</a>
+: <a class="el" href="rotorcraft_2guidance_2guidance__v_8h.html#a615ed31ff0e531f529ed3ac21e544269">guidance_v.h</a>
+, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#a615ed31ff0e531f529ed3ac21e544269">guidance_v.c</a>
 </li>
 <li>guidance_v_zdd_ref
-: <a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#a5bbf57d3e781753c7a290ce6cdce7ca5">guidance_v.c</a>
-, <a class="el" href="rotorcraft_2guidance_2guidance__v_8h.html#a5bbf57d3e781753c7a290ce6cdce7ca5">guidance_v.h</a>
+: <a class="el" href="rotorcraft_2guidance_2guidance__v_8h.html#a5bbf57d3e781753c7a290ce6cdce7ca5">guidance_v.h</a>
+, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c.html#a5bbf57d3e781753c7a290ce6cdce7ca5">guidance_v.c</a>
 </li>
 <li>gv_adapt_P
-: <a class="el" href="guidance__v__adapt_8c.html#a397e893a9ab16d6efe7637576c61dd00">guidance_v_adapt.c</a>
-, <a class="el" href="guidance__v__adapt_8h.html#a397e893a9ab16d6efe7637576c61dd00">guidance_v_adapt.h</a>
+: <a class="el" href="guidance__v__adapt_8h.html#a397e893a9ab16d6efe7637576c61dd00">guidance_v_adapt.h</a>
+, <a class="el" href="guidance__v__adapt_8c.html#a397e893a9ab16d6efe7637576c61dd00">guidance_v_adapt.c</a>
 </li>
 <li>gv_adapt_P0
 : <a class="el" href="guidance__v__adapt_8c.html#a606488180af5af850b60949fe7854398">guidance_v_adapt.c</a>
@@ -581,8 +604,8 @@ $(document).ready(function(){initNavTree('globals_vars_g.html','');});
 : <a class="el" href="guidance__v__adapt_8c.html#aa810b91c591c30594a11b3100b09f73c">guidance_v_adapt.c</a>
 </li>
 <li>gv_adapt_Xmeas
-: <a class="el" href="guidance__v__adapt_8h.html#ac9e0f391f1a1e53a185ce28a45e31090">guidance_v_adapt.h</a>
-, <a class="el" href="guidance__v__adapt_8c.html#ac9e0f391f1a1e53a185ce28a45e31090">guidance_v_adapt.c</a>
+: <a class="el" href="guidance__v__adapt_8c.html#ac9e0f391f1a1e53a185ce28a45e31090">guidance_v_adapt.c</a>
+, <a class="el" href="guidance__v__adapt_8h.html#ac9e0f391f1a1e53a185ce28a45e31090">guidance_v_adapt.h</a>
 </li>
 <li>gv_z_ref
 : <a class="el" href="guidance__v__ref_8h.html#a61ea35c28ade47f77f09a012aa0f4fe4">guidance_v_ref.h</a>
@@ -593,12 +616,12 @@ $(document).ready(function(){initNavTree('globals_vars_g.html','');});
 , <a class="el" href="guidance__v__ref_8h.html#af5b4bf2932d63454e537de13ae5f58f3">guidance_v_ref.h</a>
 </li>
 <li>gv_zdd_ref
-: <a class="el" href="guidance__v__ref_8c.html#a191284ac9220e67a39aff1ddf6c818eb">guidance_v_ref.c</a>
-, <a class="el" href="guidance__v__ref_8h.html#a191284ac9220e67a39aff1ddf6c818eb">guidance_v_ref.h</a>
+: <a class="el" href="guidance__v__ref_8h.html#a191284ac9220e67a39aff1ddf6c818eb">guidance_v_ref.h</a>
+, <a class="el" href="guidance__v__ref_8c.html#a191284ac9220e67a39aff1ddf6c818eb">guidance_v_ref.c</a>
 </li>
 <li>gvf_control
-: <a class="el" href="gvf_8h.html#a5f5e9220214385223a75b05a35bcc012">gvf.h</a>
-, <a class="el" href="gvf_8c.html#a5f5e9220214385223a75b05a35bcc012">gvf.c</a>
+: <a class="el" href="gvf_8c.html#a5f5e9220214385223a75b05a35bcc012">gvf.c</a>
+, <a class="el" href="gvf_8h.html#a5f5e9220214385223a75b05a35bcc012">gvf.h</a>
 </li>
 <li>gvf_ellipse_par
 : <a class="el" href="gvf__ellipse_8c.html#a7728b83a07d7bafb46d02595465e8bf8">gvf_ellipse.c</a>
@@ -608,12 +631,16 @@ $(document).ready(function(){initNavTree('globals_vars_g.html','');});
 : <a class="el" href="gvf__line_8h.html#af270617b6362d7f36eb550c8b1b18f19">gvf_line.h</a>
 , <a class="el" href="gvf__line_8c.html#af270617b6362d7f36eb550c8b1b18f19">gvf_line.c</a>
 </li>
+<li>gvf_nav_survey_sweep
+: <a class="el" href="nav__survey__polygon__gvf_8h.html#a7c38723926bc05cd8839213bcb450381">nav_survey_polygon_gvf.h</a>
+, <a class="el" href="nav__survey__polygon__gvf_8c.html#a7c38723926bc05cd8839213bcb450381">nav_survey_polygon_gvf.c</a>
+</li>
 <li>gvf_segment
 : <a class="el" href="gvf_8c.html#a67ba061ae20dfd1706c123e9136ec175">gvf.c</a>
 </li>
 <li>gvf_segment_par
-: <a class="el" href="gvf__line_8c.html#acc68e87325b5a6d91e31453dee7d2c23">gvf_line.c</a>
-, <a class="el" href="gvf__line_8h.html#acc68e87325b5a6d91e31453dee7d2c23">gvf_line.h</a>
+: <a class="el" href="gvf__line_8h.html#acc68e87325b5a6d91e31453dee7d2c23">gvf_line.h</a>
+, <a class="el" href="gvf__line_8c.html#acc68e87325b5a6d91e31453dee7d2c23">gvf_line.c</a>
 </li>
 <li>gvf_sin_par
 : <a class="el" href="gvf__sin_8c.html#a4dbac7127a15c39dcc7ab7dac928c16b">gvf_sin.c</a>
@@ -629,17 +656,23 @@ $(document).ready(function(){initNavTree('globals_vars_g.html','');});
 <li>gyr_valid
 : <a class="el" href="imu__umarim_8h.html#a36a56b6eabd2b4dec93ba1a9a16b4114">imu_umarim.h</a>
 </li>
+<li>gyro_1e
+: <a class="el" href="filter__1euro__imu_8c.html#a51f5f59b347ecf8d7c8fbbac098b85d1">filter_1euro_imu.c</a>
+</li>
 <li>gyro_ev
-: <a class="el" href="ahrs__int__cmpl__euler__wrapper_8c.html#a6aa911576e04d8ae0519d83ae6722546">ahrs_int_cmpl_euler_wrapper.c</a>
+: <a class="el" href="ahrs__madgwick__wrapper_8c.html#a6aa911576e04d8ae0519d83ae6722546">ahrs_madgwick_wrapper.c</a>
+, <a class="el" href="ins__ekf2_8cpp.html#a6aa911576e04d8ae0519d83ae6722546">ins_ekf2.cpp</a>
 , <a class="el" href="ahrs__float__dcm__wrapper_8c.html#a6aa911576e04d8ae0519d83ae6722546">ahrs_float_dcm_wrapper.c</a>
-, <a class="el" href="ahrs__float__invariant__wrapper_8c.html#a6aa911576e04d8ae0519d83ae6722546">ahrs_float_invariant_wrapper.c</a>
-, <a class="el" href="ahrs__int__cmpl__quat__wrapper_8c.html#a6aa911576e04d8ae0519d83ae6722546">ahrs_int_cmpl_quat_wrapper.c</a>
-, <a class="el" href="ahrs__float__cmpl__wrapper_8c.html#a6aa911576e04d8ae0519d83ae6722546">ahrs_float_cmpl_wrapper.c</a>
-, <a class="el" href="ahrs__float__mlkf__wrapper_8c.html#a6aa911576e04d8ae0519d83ae6722546">ahrs_float_mlkf_wrapper.c</a>
-, <a class="el" href="ahrs__aligner_8c.html#a6aa911576e04d8ae0519d83ae6722546">ahrs_aligner.c</a>
-, <a class="el" href="ins__float__invariant__wrapper_8c.html#a6aa911576e04d8ae0519d83ae6722546">ins_float_invariant_wrapper.c</a>
 , <a class="el" href="ahrs__infrared_8c.html#a6aa911576e04d8ae0519d83ae6722546">ahrs_infrared.c</a>
+, <a class="el" href="ahrs__float__mlkf__wrapper_8c.html#a6aa911576e04d8ae0519d83ae6722546">ahrs_float_mlkf_wrapper.c</a>
+, <a class="el" href="ins__float__invariant__wrapper_8c.html#a6aa911576e04d8ae0519d83ae6722546">ins_float_invariant_wrapper.c</a>
+, <a class="el" href="ahrs__int__cmpl__quat__wrapper_8c.html#a6aa911576e04d8ae0519d83ae6722546">ahrs_int_cmpl_quat_wrapper.c</a>
+, <a class="el" href="ahrs__aligner_8c.html#a6aa911576e04d8ae0519d83ae6722546">ahrs_aligner.c</a>
+, <a class="el" href="ahrs__int__cmpl__euler__wrapper_8c.html#a6aa911576e04d8ae0519d83ae6722546">ahrs_int_cmpl_euler_wrapper.c</a>
 , <a class="el" href="ins__mekf__wind__wrapper_8c.html#a6aa911576e04d8ae0519d83ae6722546">ins_mekf_wind_wrapper.c</a>
+, <a class="el" href="ahrs__float__invariant__wrapper_8c.html#a6aa911576e04d8ae0519d83ae6722546">ahrs_float_invariant_wrapper.c</a>
+, <a class="el" href="filter__1euro__imu_8c.html#a6aa911576e04d8ae0519d83ae6722546">filter_1euro_imu.c</a>
+, <a class="el" href="ahrs__float__cmpl__wrapper_8c.html#a6aa911576e04d8ae0519d83ae6722546">ahrs_float_cmpl_wrapper.c</a>
 </li>
 <li>gyro_sum
 : <a class="el" href="ahrs__aligner_8c.html#af1cca58ed89c86a319265f768f1b5e40">ahrs_aligner.c</a>
@@ -650,7 +683,7 @@ $(document).ready(function(){initNavTree('globals_vars_g.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Sep 12 2018 02:04:33 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:04:11 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

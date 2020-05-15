@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -259,9 +259,17 @@ $(document).ready(function(){initNavTree('globals_func_w.html','');});
 : <a class="el" href="subsystems_2navigation_2waypoints_8c.html#aa759c25e1ecc60cc27a614e366ab05a4">waypoints.c</a>
 , <a class="el" href="subsystems_2navigation_2waypoints_8h.html#aa759c25e1ecc60cc27a614e366ab05a4">waypoints.h</a>
 </li>
+<li>waypoint_move_here_2d()
+: <a class="el" href="subsystems_2navigation_2waypoints_8c.html#aee9952d480ee0cfd47a28d4a9aeb9b61">waypoints.c</a>
+, <a class="el" href="subsystems_2navigation_2waypoints_8h.html#aee9952d480ee0cfd47a28d4a9aeb9b61">waypoints.h</a>
+</li>
 <li>waypoint_move_lla()
 : <a class="el" href="subsystems_2navigation_2waypoints_8c.html#af898f624e88c626a1d47300e872ac444">waypoints.c</a>
 , <a class="el" href="subsystems_2navigation_2waypoints_8h.html#af898f624e88c626a1d47300e872ac444">waypoints.h</a>
+</li>
+<li>waypoint_move_xy_i()
+: <a class="el" href="subsystems_2navigation_2waypoints_8c.html#a41c11ce8ceec9d5d0e4062c7040afcb5">waypoints.c</a>
+, <a class="el" href="subsystems_2navigation_2waypoints_8h.html#a41c11ce8ceec9d5d0e4062c7040afcb5">waypoints.h</a>
 </li>
 <li>waypoint_position_copy()
 : <a class="el" href="subsystems_2navigation_2waypoints_8c.html#a3424028f882696fb20b338325138750d">waypoints.c</a>
@@ -280,24 +288,24 @@ $(document).ready(function(){initNavTree('globals_func_w.html','');});
 , <a class="el" href="subsystems_2navigation_2waypoints_8h.html#affb3b24527cc3e5342715d567fa245dc">waypoints.h</a>
 </li>
 <li>waypoint_set_enu_i()
-: <a class="el" href="subsystems_2navigation_2waypoints_8c.html#ac19d9c02f3d8c3b69cee759560317ea4">waypoints.c</a>
-, <a class="el" href="subsystems_2navigation_2waypoints_8h.html#ac19d9c02f3d8c3b69cee759560317ea4">waypoints.h</a>
+: <a class="el" href="subsystems_2navigation_2waypoints_8h.html#ac19d9c02f3d8c3b69cee759560317ea4">waypoints.h</a>
+, <a class="el" href="subsystems_2navigation_2waypoints_8c.html#ac19d9c02f3d8c3b69cee759560317ea4">waypoints.c</a>
 </li>
 <li>waypoint_set_global_flag()
 : <a class="el" href="subsystems_2navigation_2waypoints_8c.html#a848bd882e4fbb1177cbaec14f6381bf2">waypoints.c</a>
 , <a class="el" href="subsystems_2navigation_2waypoints_8h.html#a848bd882e4fbb1177cbaec14f6381bf2">waypoints.h</a>
 </li>
 <li>waypoint_set_here()
-: <a class="el" href="subsystems_2navigation_2waypoints_8h.html#a6c641b78233fd2eaf42e8e9044e789e5">waypoints.h</a>
-, <a class="el" href="subsystems_2navigation_2waypoints_8c.html#a6c641b78233fd2eaf42e8e9044e789e5">waypoints.c</a>
+: <a class="el" href="subsystems_2navigation_2waypoints_8c.html#a6c641b78233fd2eaf42e8e9044e789e5">waypoints.c</a>
+, <a class="el" href="subsystems_2navigation_2waypoints_8h.html#a6c641b78233fd2eaf42e8e9044e789e5">waypoints.h</a>
 </li>
 <li>waypoint_set_here_2d()
 : <a class="el" href="subsystems_2navigation_2waypoints_8c.html#a28dd523c6d75fb36ce3ffec86a6e096c">waypoints.c</a>
 , <a class="el" href="subsystems_2navigation_2waypoints_8h.html#a28dd523c6d75fb36ce3ffec86a6e096c">waypoints.h</a>
 </li>
 <li>waypoint_set_latlon()
-: <a class="el" href="subsystems_2navigation_2waypoints_8c.html#a8676ceec12bad6ae1a4b8e829775003e">waypoints.c</a>
-, <a class="el" href="subsystems_2navigation_2waypoints_8h.html#a8676ceec12bad6ae1a4b8e829775003e">waypoints.h</a>
+: <a class="el" href="subsystems_2navigation_2waypoints_8h.html#a8676ceec12bad6ae1a4b8e829775003e">waypoints.h</a>
+, <a class="el" href="subsystems_2navigation_2waypoints_8c.html#a8676ceec12bad6ae1a4b8e829775003e">waypoints.c</a>
 </li>
 <li>waypoint_set_lla()
 : <a class="el" href="subsystems_2navigation_2waypoints_8c.html#ae5ab24779a6d54a1086c472935b21f47">waypoints.c</a>
@@ -312,8 +320,8 @@ $(document).ready(function(){initNavTree('globals_func_w.html','');});
 , <a class="el" href="subsystems_2navigation_2waypoints_8h.html#a8d575cfbc187cac4cae8049873821e96">waypoints.h</a>
 </li>
 <li>waypoints_localize_all()
-: <a class="el" href="subsystems_2navigation_2waypoints_8h.html#a2c2d759f6328c40f66c4cc162da266bb">waypoints.h</a>
-, <a class="el" href="subsystems_2navigation_2waypoints_8c.html#a2c2d759f6328c40f66c4cc162da266bb">waypoints.c</a>
+: <a class="el" href="subsystems_2navigation_2waypoints_8c.html#a2c2d759f6328c40f66c4cc162da266bb">waypoints.c</a>
+, <a class="el" href="subsystems_2navigation_2waypoints_8h.html#a2c2d759f6328c40f66c4cc162da266bb">waypoints.h</a>
 </li>
 <li>wgs84_ellipsoid_to_geoid_f()
 : <a class="el" href="group__math__geodetic__wgs84.html#ga982ac769d3c18ca65b364e0588874100">pprz_geodetic_wgs84.h</a>
@@ -334,16 +342,16 @@ $(document).ready(function(){initNavTree('globals_func_w.html','');});
 , <a class="el" href="wind__estimator_8h.html#a0a4f52d63873704d3581f69f44d71751">wind_estimator.h</a>
 </li>
 <li>wind_estimator_Set_Q_VA()
-: <a class="el" href="wind__estimator_8h.html#aac1ea98dc22f8393cbf47f52b93ee575">wind_estimator.h</a>
-, <a class="el" href="wind__estimator_8c.html#aac1ea98dc22f8393cbf47f52b93ee575">wind_estimator.c</a>
+: <a class="el" href="wind__estimator_8c.html#aac1ea98dc22f8393cbf47f52b93ee575">wind_estimator.c</a>
+, <a class="el" href="wind__estimator_8h.html#aac1ea98dc22f8393cbf47f52b93ee575">wind_estimator.h</a>
 </li>
 <li>wind_estimator_Set_Q_VA_SCALE()
-: <a class="el" href="wind__estimator_8c.html#a522a42367833ed2b89d93db1a65c60a0">wind_estimator.c</a>
-, <a class="el" href="wind__estimator_8h.html#a522a42367833ed2b89d93db1a65c60a0">wind_estimator.h</a>
+: <a class="el" href="wind__estimator_8h.html#a522a42367833ed2b89d93db1a65c60a0">wind_estimator.h</a>
+, <a class="el" href="wind__estimator_8c.html#a522a42367833ed2b89d93db1a65c60a0">wind_estimator.c</a>
 </li>
 <li>wind_estimator_Set_Q_WIND()
-: <a class="el" href="wind__estimator_8h.html#a1929777051168286cce7032efbbe3162">wind_estimator.h</a>
-, <a class="el" href="wind__estimator_8c.html#a1929777051168286cce7032efbbe3162">wind_estimator.c</a>
+: <a class="el" href="wind__estimator_8c.html#a1929777051168286cce7032efbbe3162">wind_estimator.c</a>
+, <a class="el" href="wind__estimator_8h.html#a1929777051168286cce7032efbbe3162">wind_estimator.h</a>
 </li>
 <li>wind_estimator_Set_R_AOA()
 : <a class="el" href="wind__estimator_8h.html#a2c5c69e32a4d868eeb83d3e0febfc963">wind_estimator.h</a>
@@ -354,12 +362,12 @@ $(document).ready(function(){initNavTree('globals_func_w.html','');});
 , <a class="el" href="wind__estimator_8c.html#a7ee1b91b8335e5199e54cee9e6cb6bb7">wind_estimator.c</a>
 </li>
 <li>wind_estimator_Set_R_SSA()
-: <a class="el" href="wind__estimator_8c.html#a6d738b207e828d54537e1ea30e75dbec">wind_estimator.c</a>
-, <a class="el" href="wind__estimator_8h.html#a6d738b207e828d54537e1ea30e75dbec">wind_estimator.h</a>
+: <a class="el" href="wind__estimator_8h.html#a6d738b207e828d54537e1ea30e75dbec">wind_estimator.h</a>
+, <a class="el" href="wind__estimator_8c.html#a6d738b207e828d54537e1ea30e75dbec">wind_estimator.c</a>
 </li>
 <li>wind_estimator_Set_R_VA()
-: <a class="el" href="wind__estimator_8h.html#a76abfd1db477f1492273deec4c8233ad">wind_estimator.h</a>
-, <a class="el" href="wind__estimator_8c.html#a76abfd1db477f1492273deec4c8233ad">wind_estimator.c</a>
+: <a class="el" href="wind__estimator_8c.html#a76abfd1db477f1492273deec4c8233ad">wind_estimator.c</a>
+, <a class="el" href="wind__estimator_8h.html#a76abfd1db477f1492273deec4c8233ad">wind_estimator.h</a>
 </li>
 <li>wind_estimator_step()
 : <a class="el" href="wind__estimator_8c.html#a9625948d6ba7c62cb2603ce28bfb5d56">wind_estimator.c</a>
@@ -369,24 +377,24 @@ $(document).ready(function(){initNavTree('globals_func_w.html','');});
 , <a class="el" href="wind__gfi_8c.html#a14f55e8dba7acc117480142381ac2b14">wind_gfi.c</a>
 </li>
 <li>wind_gfi_init()
-: <a class="el" href="wind__gfi_8h.html#a9512180037f049d24e88b577056e2af5">wind_gfi.h</a>
-, <a class="el" href="wind__gfi_8c.html#a9512180037f049d24e88b577056e2af5">wind_gfi.c</a>
+: <a class="el" href="wind__gfi_8c.html#a9512180037f049d24e88b577056e2af5">wind_gfi.c</a>
+, <a class="el" href="wind__gfi_8h.html#a9512180037f049d24e88b577056e2af5">wind_gfi.h</a>
 </li>
 <li>wind_gfi_periodic()
 : <a class="el" href="wind__gfi_8h.html#a01df5bb8d91c672814726797d2ac05e5">wind_gfi.h</a>
 , <a class="el" href="wind__gfi_8c.html#a01df5bb8d91c672814726797d2ac05e5">wind_gfi.c</a>
 </li>
 <li>windturbine_periodic()
-: <a class="el" href="windturbine_8c.html#a44b819ec52bc8f9fe212c89113e2b835">windturbine.c</a>
-, <a class="el" href="windturbine_8h.html#a44b819ec52bc8f9fe212c89113e2b835">windturbine.h</a>
+: <a class="el" href="windturbine_8h.html#a44b819ec52bc8f9fe212c89113e2b835">windturbine.h</a>
+, <a class="el" href="windturbine_8c.html#a44b819ec52bc8f9fe212c89113e2b835">windturbine.c</a>
 </li>
 <li>wls_alloc()
-: <a class="el" href="wls__alloc_8h.html#a05bd41ae464753af8d7647e4543dc47b">wls_alloc.h</a>
-, <a class="el" href="wls__alloc_8c.html#ab835ef4e4c3f872177ddb0dbc4e9eb45">wls_alloc.c</a>
+: <a class="el" href="wls__alloc_8h.html#a8053b1e79e1b0395d86c381aa786434d">wls_alloc.h</a>
+, <a class="el" href="wls__alloc_8c.html#ac250d11d2fe928708ac372dbef5d547d">wls_alloc.c</a>
 </li>
 <li>write_exif_jpeg()
-: <a class="el" href="exif__module_8h.html#a5e636f6bee9bd1ab6d04ec780509dca5">exif_module.h</a>
-, <a class="el" href="exif__module_8c.html#a5e636f6bee9bd1ab6d04ec780509dca5">exif_module.c</a>
+: <a class="el" href="exif__module_8c.html#a5e636f6bee9bd1ab6d04ec780509dca5">exif_module.c</a>
+, <a class="el" href="exif__module_8h.html#a5e636f6bee9bd1ab6d04ec780509dca5">exif_module.h</a>
 </li>
 <li>write_file()
 : <a class="el" href="pwm__sysfs_8c.html#ad00f6141458677eb0aaee87f85c7954d">pwm_sysfs.c</a>
@@ -408,13 +416,16 @@ $(document).ready(function(){initNavTree('globals_func_w.html','');});
 : <a class="el" href="humid__pcap01_8h.html#ab2cb1ad8c696c29efe17a06b6c53d01f">humid_pcap01.h</a>
 , <a class="el" href="humid__pcap01_8c.html#ab2cb1ad8c696c29efe17a06b6c53d01f">humid_pcap01.c</a>
 </li>
+<li>writeRegister_blocking()
+: <a class="el" href="pmw3901_8c.html#a8265440e872d2a53abf19f0caeb3ec9e">pmw3901.c</a>
+</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Sep 12 2018 02:04:33 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:04:11 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

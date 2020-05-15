@@ -31,7 +31,6 @@ var vms__ecu__demo_8c =
     [ "can1", "vms__ecu__demo_8c.html#a3358e4985254bbf3679b92d3040c1f2f", null ],
     [ "can2", "vms__ecu__demo_8c.html#a3240d643f5755145805bca61b1289ab6", null ],
     [ "cancfg", "vms__ecu__demo_8c.html#a912d9d3f3e1a5e33895ed2995828e520", null ],
-    [ "cancfg_lb", "vms__ecu__demo_8c.html#a33db7ba992747f5556d35f3d4dad7aca", null ],
     [ "dac1cfg1", "vms__ecu__demo_8c.html#a43519755d2ae7b93d3c1a66d0982f714", null ],
     [ "dac1cfg2", "vms__ecu__demo_8c.html#a17467aaf60648a5b516fa9ee777a3083", null ],
     [ "dac_1", "vms__ecu__demo_8c.html#ac980a7301b46c80d918aad4c70de7e94", null ],

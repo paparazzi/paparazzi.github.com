@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -148,7 +148,7 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a9f39646c66682b02dacf60691c580b11"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hott__common_8c.html#a9f39646c66682b02dacf60691c580b11">hott_common_init</a> (struct <a class="el" href="hott__common_8h.html#structSHott">SHott</a> *hott_p, struct <a class="el" href="uart_8h.html#structuart__periph">uart_periph</a> *<a class="el" href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a>)</td></tr>
+<tr class="memitem:a9f39646c66682b02dacf60691c580b11"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hott__common_8c.html#a9f39646c66682b02dacf60691c580b11">hott_common_init</a> (struct <a class="el" href="hott__common_8h.html#structSHott">SHott</a> *hott_p, struct <a class="el" href="uart_8h.html#structuart__periph">uart_periph</a> *<a class="el" href="e__identification__fr_8c.html#aebd4a92b0e1e5a4d507f1674f09fcc2b">dev</a>)</td></tr>
 <tr class="memdesc:a9f39646c66682b02dacf60691c580b11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init function.  <a href="#a9f39646c66682b02dacf60691c580b11">More...</a><br /></td></tr>
 <tr class="separator:a9f39646c66682b02dacf60691c580b11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9666312af891d2b06b8ae31e085c4814"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hott__common_8c.html#a9666312af891d2b06b8ae31e085c4814">hott_CRC16</a> (<a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> <a class="el" href="link__mcu__spi_8c.html#aa60093a9a5d5d17864cfda66c47733e3">crc</a>, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> value)</td></tr>
@@ -156,7 +156,7 @@ Functions</h2></td></tr>
 <tr class="memitem:abf279afb79b17efa2fb6b7e22d65000a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hott__common_8c.html#abf279afb79b17efa2fb6b7e22d65000a">decode_hott_buffer</a> (const <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *src, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *dst, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> channels, bool *available, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *dstppm)</td></tr>
 <tr class="memdesc:abf279afb79b17efa2fb6b7e22d65000a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decode the raw buffer.  <a href="#abf279afb79b17efa2fb6b7e22d65000a">More...</a><br /></td></tr>
 <tr class="separator:abf279afb79b17efa2fb6b7e22d65000a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af62cf78ebb6326469d4f3df207c7160a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hott__common_8c.html#af62cf78ebb6326469d4f3df207c7160a">hott_common_decode_event</a> (struct <a class="el" href="hott__common_8h.html#structSHott">SHott</a> *hott_p, struct <a class="el" href="uart_8h.html#structuart__periph">uart_periph</a> *<a class="el" href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a>)</td></tr>
+<tr class="memitem:af62cf78ebb6326469d4f3df207c7160a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hott__common_8c.html#af62cf78ebb6326469d4f3df207c7160a">hott_common_decode_event</a> (struct <a class="el" href="hott__common_8h.html#structSHott">SHott</a> *hott_p, struct <a class="el" href="uart_8h.html#structuart__periph">uart_periph</a> *<a class="el" href="e__identification__fr_8c.html#aebd4a92b0e1e5a4d507f1674f09fcc2b">dev</a>)</td></tr>
 <tr class="memdesc:af62cf78ebb6326469d4f3df207c7160a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decoding event function.  <a href="#af62cf78ebb6326469d4f3df207c7160a">More...</a><br /></td></tr>
 <tr class="separator:af62cf78ebb6326469d4f3df207c7160a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -372,7 +372,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="hott__common_8c_source.html#l00098">98</a> of file <a class="el" href="hott__common_8c_source.html">hott_common.c</a>.</p>
 
-<p>References <a class="el" href="hott__common_8h_source.html#l00081">SHott::buffer</a>, <a class="el" href="hott__common_8c_source.html#l00071">decode_hott_buffer()</a>, <a class="el" href="hott__common_8h_source.html#l00082">SHott::expected_channels</a>, <a class="el" href="hott__common_8h_source.html#l00080">SHott::frame_available</a>, <a class="el" href="hott__common_8h_source.html#l00060">HOTT_NB_CHANNEL</a>, <a class="el" href="hott__common_8c_source.html#l00034">HOTT_START_BYTE</a>, <a class="el" href="hott__common_8c_source.html#l00039">HOTT_STATUS_DATA</a>, <a class="el" href="hott__common_8c_source.html#l00038">HOTT_STATUS_GOT_HEADER1</a>, <a class="el" href="hott__common_8c_source.html#l00037">HOTT_STATUS_GOT_START</a>, <a class="el" href="hott__common_8c_source.html#l00036">HOTT_STATUS_UNINIT</a>, <a class="el" href="hott__common_8h_source.html#l00083">SHott::idx</a>, <a class="el" href="hott__common_8h_source.html#l00079">SHott::ppm</a>, <a class="el" href="hott__common_8h_source.html#l00078">SHott::pulses</a>, <a class="el" href="hott__common_8h_source.html#l00084">SHott::status</a>, <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00324">uart_char_available()</a>, and <a class="el" href="chibios_2mcu__periph_2uart__arch_8c_source.html#l00840">uart_getch()</a>.</p>
+<p>References <a class="el" href="hott__common_8h_source.html#l00081">SHott::buffer</a>, <a class="el" href="hott__common_8c_source.html#l00071">decode_hott_buffer()</a>, <a class="el" href="hott__common_8h_source.html#l00082">SHott::expected_channels</a>, <a class="el" href="hott__common_8h_source.html#l00080">SHott::frame_available</a>, <a class="el" href="hott__common_8h_source.html#l00060">HOTT_NB_CHANNEL</a>, <a class="el" href="hott__common_8c_source.html#l00034">HOTT_START_BYTE</a>, <a class="el" href="hott__common_8c_source.html#l00039">HOTT_STATUS_DATA</a>, <a class="el" href="hott__common_8c_source.html#l00038">HOTT_STATUS_GOT_HEADER1</a>, <a class="el" href="hott__common_8c_source.html#l00037">HOTT_STATUS_GOT_START</a>, <a class="el" href="hott__common_8c_source.html#l00036">HOTT_STATUS_UNINIT</a>, <a class="el" href="hott__common_8h_source.html#l00083">SHott::idx</a>, <a class="el" href="hott__common_8h_source.html#l00079">SHott::ppm</a>, <a class="el" href="hott__common_8h_source.html#l00078">SHott::pulses</a>, <a class="el" href="hott__common_8h_source.html#l00084">SHott::status</a>, <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00323">uart_char_available()</a>, and <a class="el" href="chibios_2mcu__periph_2uart__arch_8c_source.html#l00867">uart_getch()</a>.</p>
 
 <p>Referenced by <a class="el" href="subsystems_2radio__control_2hott_8c_source.html#l00061">hott_decode_event()</a>.</p>
 
@@ -383,7 +383,7 @@ Functions</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="hott__common_8c_af62cf78ebb6326469d4f3df207c7160a_cgraph.png" border="0" usemap="#hott__common_8c_af62cf78ebb6326469d4f3df207c7160a_cgraph" alt=""/></div>
 <map name="hott__common_8c_af62cf78ebb6326469d4f3df207c7160a_cgraph" id="hott__common_8c_af62cf78ebb6326469d4f3df207c7160a_cgraph">
-<area shape="rect" id="node2" href="hott__common_8c.html#abf279afb79b17efa2fb6b7e22d65000a" title="Decode the raw buffer. " alt="" coords="220,5,367,32"/><area shape="rect" id="node4" href="linux_2mcu__periph_2uart__arch_8c.html#abd0dcae4715bc91bdf3369785a9b6c87" title="Check UART for available chars in receive buffer. " alt="" coords="220,56,367,83"/><area shape="rect" id="node5" href="chibios_2mcu__periph_2uart__arch_8c.html#adb9a60ec94a31a08e6454ccf64f24039" title="uart_getch" alt="" coords="248,107,339,133"/><area shape="rect" id="node3" href="hott__common_8c.html#a9666312af891d2b06b8ae31e085c4814" title="hott_CRC16" alt="" coords="415,5,511,32"/></map>
+<area shape="rect" id="node2" href="hott__common_8c.html#abf279afb79b17efa2fb6b7e22d65000a" title="Decode the raw buffer. " alt="" coords="220,5,367,32"/><area shape="rect" id="node4" href="linux_2mcu__periph_2uart__arch_8c.html#a663f41657d0ad8e115fc7709b071d749" title="Check UART for available chars in receive buffer. " alt="" coords="220,56,367,83"/><area shape="rect" id="node5" href="chibios_2mcu__periph_2uart__arch_8c.html#adb9a60ec94a31a08e6454ccf64f24039" title="uart_getch" alt="" coords="248,107,339,133"/><area shape="rect" id="node3" href="hott__common_8c.html#a9666312af891d2b06b8ae31e085c4814" title="hott_CRC16" alt="" coords="415,5,511,32"/></map>
 </div>
 </p>
 
@@ -428,7 +428,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="hott__common_8c_source.html#l00042">42</a> of file <a class="el" href="hott__common_8c_source.html">hott_common.c</a>.</p>
 
-<p>References <a class="el" href="chibios_2mcu__periph_2uart__arch_8h_source.html#l00048">B115200</a>, <a class="el" href="hott__common_8h_source.html#l00080">SHott::frame_available</a>, <a class="el" href="hott__common_8c_source.html#l00036">HOTT_STATUS_UNINIT</a>, <a class="el" href="hott__common_8h_source.html#l00084">SHott::status</a>, <a class="el" href="chibios_2mcu__periph_2uart__arch_8c_source.html#l00856">uart_periph_set_baudrate()</a>, <a class="el" href="chibios_2mcu__periph_2uart__arch_8c_source.html#l00885">uart_periph_set_bits_stop_parity()</a>, <a class="el" href="serial__port_8c_source.html#l00050">UBITS_8</a>, <a class="el" href="serial__port_8c_source.html#l00055">UPARITY_NO</a>, and <a class="el" href="serial__port_8c_source.html#l00052">USTOP_1</a>.</p>
+<p>References <a class="el" href="chibios_2mcu__periph_2uart__arch_8h_source.html#l00048">B115200</a>, <a class="el" href="hott__common_8h_source.html#l00080">SHott::frame_available</a>, <a class="el" href="hott__common_8c_source.html#l00036">HOTT_STATUS_UNINIT</a>, <a class="el" href="hott__common_8h_source.html#l00084">SHott::status</a>, <a class="el" href="chibios_2mcu__periph_2uart__arch_8c_source.html#l00883">uart_periph_set_baudrate()</a>, <a class="el" href="chibios_2mcu__periph_2uart__arch_8c_source.html#l00912">uart_periph_set_bits_stop_parity()</a>, <a class="el" href="serial__port_8c_source.html#l00050">UBITS_8</a>, <a class="el" href="serial__port_8c_source.html#l00055">UPARITY_NO</a>, and <a class="el" href="serial__port_8c_source.html#l00052">USTOP_1</a>.</p>
 
 <p>Referenced by <a class="el" href="subsystems_2radio__control_2hott_8c_source.html#l00048">radio_control_impl_init()</a>.</p>
 
@@ -513,7 +513,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_a146ed466020daad33793c9994e8ab3e.html">radio_control</a></li><li class="navelem"><a class="el" href="hott__common_8c.html">hott_common.c</a></li>
-    <li class="footer">Generated on Wed Sep 12 2018 02:03:52 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:03:36 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

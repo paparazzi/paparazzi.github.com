@@ -2,6 +2,7 @@ var modules =
 [
     [ "MCU Peripherals", "group__mcu__periph.html", "group__mcu__periph" ],
     [ "Aircraft data availability representations", "group__ac__info.html", "group__ac__info" ],
+    [ "Basic type definition", "group__porting__type.html", null ],
     [ "State interface", "group__state__interface.html", "group__state__interface" ],
     [ "Integer types", "group__common__inttypes.html", "group__common__inttypes" ],
     [ "Config", "group__config.html", "group__config" ],

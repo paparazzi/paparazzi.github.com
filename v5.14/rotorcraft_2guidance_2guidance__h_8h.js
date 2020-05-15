@@ -1,0 +1,66 @@
+var rotorcraft_2guidance_2guidance__h_8h =
+[
+    [ "HorizontalGuidanceSetpoint", "rotorcraft_2guidance_2guidance__h_8h.html#structHorizontalGuidanceSetpoint", [
+      [ "heading", "rotorcraft_2guidance_2guidance__h_8h.html#a902dfeb0c0690d6b80c472b1ae695f61", null ],
+      [ "heading_rate", "rotorcraft_2guidance_2guidance__h_8h.html#a75b6a5ffd5e710cfe2f935778b19e210", null ],
+      [ "mask", "rotorcraft_2guidance_2guidance__h_8h.html#a2853885ec3a53a0dbd5cec05ab04a928", null ],
+      [ "pos", "rotorcraft_2guidance_2guidance__h_8h.html#a47d7eee694eeefe375dcf58a632f5c37", null ],
+      [ "speed", "rotorcraft_2guidance_2guidance__h_8h.html#abf09060f037f857c6f12d08970aca3ae", null ]
+    ] ],
+    [ "HorizontalGuidanceReference", "rotorcraft_2guidance_2guidance__h_8h.html#structHorizontalGuidanceReference", [
+      [ "accel", "rotorcraft_2guidance_2guidance__h_8h.html#a2765280c9b7c5fb58c0e14cb6f3e10bf", null ],
+      [ "pos", "rotorcraft_2guidance_2guidance__h_8h.html#aaf6014914323023e853868e4568862f1", null ],
+      [ "speed", "rotorcraft_2guidance_2guidance__h_8h.html#a4934e9d65ca268ee4d1bb96fc1e38923", null ]
+    ] ],
+    [ "HorizontalGuidanceGains", "rotorcraft_2guidance_2guidance__h_8h.html#structHorizontalGuidanceGains", [
+      [ "a", "rotorcraft_2guidance_2guidance__h_8h.html#a97e17c94b0bfdfa38a2b0fd313e6c93f", null ],
+      [ "d", "rotorcraft_2guidance_2guidance__h_8h.html#a5e8feeb2984f9c49cb6efeed0438f7bc", null ],
+      [ "i", "rotorcraft_2guidance_2guidance__h_8h.html#a9f6ab14a47cb5b132c1fa6e98d0119fe", null ],
+      [ "p", "rotorcraft_2guidance_2guidance__h_8h.html#a02f5a18cfd7d9187c07527ec64fd21eb", null ],
+      [ "v", "rotorcraft_2guidance_2guidance__h_8h.html#a3af92eee7f2e4365dab066ed157c17dc", null ]
+    ] ],
+    [ "HorizontalGuidance", "rotorcraft_2guidance_2guidance__h_8h.html#structHorizontalGuidance", [
+      [ "approx_force_by_thrust", "rotorcraft_2guidance_2guidance__h_8h.html#a4265d2ace874029c37bdaf1d09d686ac", null ],
+      [ "gains", "rotorcraft_2guidance_2guidance__h_8h.html#a556a1701ca546e04b4dc36a2d0694b62", null ],
+      [ "mode", "rotorcraft_2guidance_2guidance__h_8h.html#a87d8bc8cc4153bc157d6ba040ec9fa70", null ],
+      [ "rc_sp", "rotorcraft_2guidance_2guidance__h_8h.html#a587138fbf6a1dd3e1956459a7ed6df05", null ],
+      [ "ref", "rotorcraft_2guidance_2guidance__h_8h.html#aaf9d060158ef455bd7e086c746762dbb", null ],
+      [ "sp", "rotorcraft_2guidance_2guidance__h_8h.html#af29476ba6c51442bad1a9bb589796c98", null ],
+      [ "use_ref", "rotorcraft_2guidance_2guidance__h_8h.html#acd8a11ea4e2311bcda3b321480fa4f2f", null ]
+    ] ],
+    [ "GUIDANCE_H_MODE_ATTITUDE", "rotorcraft_2guidance_2guidance__h_8h.html#a68ef1d14541e83675e37b38a6f57cd29", null ],
+    [ "GUIDANCE_H_MODE_CARE_FREE", "rotorcraft_2guidance_2guidance__h_8h.html#ab5186150bd081e971a07f229c81be028", null ],
+    [ "GUIDANCE_H_MODE_FLIP", "rotorcraft_2guidance_2guidance__h_8h.html#af3407bfad90bc6286498c58f1cbc7b3b", null ],
+    [ "GUIDANCE_H_MODE_FORWARD", "rotorcraft_2guidance_2guidance__h_8h.html#a026e798a33e20867dc0871f272d0fc38", null ],
+    [ "GUIDANCE_H_MODE_GUIDED", "rotorcraft_2guidance_2guidance__h_8h.html#a8d1d6da069dc7889d3667290dfb70e41", null ],
+    [ "GUIDANCE_H_MODE_HOVER", "rotorcraft_2guidance_2guidance__h_8h.html#a2f2f695a8fcb314dc64bf0b82811937d", null ],
+    [ "GUIDANCE_H_MODE_KILL", "rotorcraft_2guidance_2guidance__h_8h.html#aca30783fe715ec77589d55fdaa7b76e5", null ],
+    [ "GUIDANCE_H_MODE_MODULE", "rotorcraft_2guidance_2guidance__h_8h.html#afde85d56c5c5d37ece2c4bfb640e72b5", null ],
+    [ "GUIDANCE_H_MODE_NAV", "rotorcraft_2guidance_2guidance__h_8h.html#a0695fb38a9f3b93b7be3484568e0be1a", null ],
+    [ "GUIDANCE_H_MODE_RATE", "rotorcraft_2guidance_2guidance__h_8h.html#aea87a99ee38d15a28913fbe378ca264e", null ],
+    [ "GUIDANCE_H_MODE_RC_DIRECT", "rotorcraft_2guidance_2guidance__h_8h.html#aa4e386747c6286a7ce74fa13b1dfe6d9", null ],
+    [ "guidance_h_SetUseRef", "rotorcraft_2guidance_2guidance__h_8h.html#a3352ecdb631caf9d3c662f677eba3dfa", null ],
+    [ "GUIDANCE_H_USE_REF", "rotorcraft_2guidance_2guidance__h_8h.html#a1e7381c2478adba02ae064f931945492", null ],
+    [ "GUIDANCE_H_USE_SPEED_REF", "rotorcraft_2guidance_2guidance__h_8h.html#ab4234cf988c87fdcfaf199005c43a994", null ],
+    [ "guidance_h_from_nav", "rotorcraft_2guidance_2guidance__h_8h.html#a609bdd40f9f6aeac4b4d493ffabd24d5", null ],
+    [ "guidance_h_get_pos_err", "rotorcraft_2guidance_2guidance__h_8h.html#ae39cf067bc1b3de73d401e3cbea9162b", null ],
+    [ "guidance_h_guided_run", "rotorcraft_2guidance_2guidance__h_8h.html#a60716914dafeccd7ab74967606ae4045", null ],
+    [ "guidance_h_hover_enter", "rotorcraft_2guidance_2guidance__h_8h.html#a32c1c61b5aa933b712fd75a1a9bdc162", null ],
+    [ "guidance_h_init", "rotorcraft_2guidance_2guidance__h_8h.html#a7bc4ea0d5351c2ba6ee160db5a2e9f80", null ],
+    [ "guidance_h_mode_changed", "rotorcraft_2guidance_2guidance__h_8h.html#a2903786227eb11507928f99870099225", null ],
+    [ "guidance_h_nav_enter", "rotorcraft_2guidance_2guidance__h_8h.html#aaecb10d1d18788c0de654dd479441b20", null ],
+    [ "guidance_h_read_rc", "rotorcraft_2guidance_2guidance__h_8h.html#a1ad9b20a107ab0ded48adde7adb6fed0", null ],
+    [ "guidance_h_run", "rotorcraft_2guidance_2guidance__h_8h.html#afff2f6a359638c74d5d1051c3edfa554", null ],
+    [ "guidance_h_set_guided_body_vel", "rotorcraft_2guidance_2guidance__h_8h.html#ae192e6147e70b8acc536020ece52714b", null ],
+    [ "guidance_h_set_guided_heading", "rotorcraft_2guidance_2guidance__h_8h.html#a326822b3cfdaaf76105134072212346c", null ],
+    [ "guidance_h_set_guided_heading_rate", "rotorcraft_2guidance_2guidance__h_8h.html#af1c1fe7554cfb835e5f674228cb3858b", null ],
+    [ "guidance_h_set_guided_pos", "rotorcraft_2guidance_2guidance__h_8h.html#a4df96f9ee6b60d5df3ccfd2bd45dc6f2", null ],
+    [ "guidance_h_set_guided_vel", "rotorcraft_2guidance_2guidance__h_8h.html#a21a4387750aad0a127dfa928b8557a90", null ],
+    [ "guidance_h_set_igain", "rotorcraft_2guidance_2guidance__h_8h.html#ae5758cb648c364155482e9478ff16303", null ],
+    [ "guidance_h_SetMaxSpeed", "rotorcraft_2guidance_2guidance__h_8h.html#a8ff27831b0356299396c6a5bfdf93d12", null ],
+    [ "guidance_h_SetOmega", "rotorcraft_2guidance_2guidance__h_8h.html#acefa97a46964782f778ed871e04e646a", null ],
+    [ "guidance_h_SetTau", "rotorcraft_2guidance_2guidance__h_8h.html#a5e7e711b3e72c45b1ee16ba8dbb84d18", null ],
+    [ "guidance_h_SetZeta", "rotorcraft_2guidance_2guidance__h_8h.html#ae1521b518c96b341ec67ff9a7bc8bd0d", null ],
+    [ "guidance_h", "rotorcraft_2guidance_2guidance__h_8h.html#a8e334308c59e5430c7dd0ac7e222f07b", null ],
+    [ "transition_percentage", "rotorcraft_2guidance_2guidance__h_8h.html#a03b606d1a31f9d006700fcbbc60d7293", null ]
+];

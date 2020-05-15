@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -115,7 +115,7 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html','');});
 <li class="level2"><a href="#NAVIGATION_REF">NAVIGATION_REF (ID 9)</a></li>
 <li class="level2"><a href="#NAVIGATION">NAVIGATION (ID 10)</a></li>
 <li class="level2"><a href="#PPRZ_MODE">PPRZ_MODE (ID 11)</a></li>
-<li class="level2"><a href="#BAT">BAT (ID 12)</a></li>
+<li class="level2"><a href="#ENERGY">ENERGY (ID 12)</a></li>
 <li class="level2"><a href="#DEBUG_MCU_LINK">DEBUG_MCU_LINK (ID 13)</a></li>
 <li class="level2"><a href="#CALIBRATION">CALIBRATION (ID 14)</a></li>
 <li class="level2"><a href="#SETTINGS">SETTINGS (ID 15)</a></li>
@@ -140,7 +140,6 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html','');});
 <li class="level2"><a href="#MOTOR">MOTOR (ID 34)</a></li>
 <li class="level2"><a href="#WP_MOVED">WP_MOVED (ID 35)</a></li>
 <li class="level2"><a href="#MKK">MKK (ID 36)</a></li>
-<li class="level2"><a href="#ENERGY">ENERGY (ID 37)</a></li>
 <li class="level2"><a href="#DRAGSPEED">DRAGSPEED (ID 38)</a></li>
 <li class="level2"><a href="#RSSI_COMBINED">RSSI_COMBINED (ID 39)</a></li>
 <li class="level2"><a href="#DCF">DCF (ID 40)</a></li>
@@ -148,6 +147,7 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html','');});
 <li class="level2"><a href="#ESTIMATOR">ESTIMATOR (ID 42)</a></li>
 <li class="level2"><a href="#TUNE_ROLL">TUNE_ROLL (ID 43)</a></li>
 <li class="level2"><a href="#BARO_MS5534A">BARO_MS5534A (ID 44)</a></li>
+<li class="level2"><a href="#CHIRP">CHIRP (ID 45)</a></li>
 <li class="level2"><a href="#BARO_WORDS">BARO_WORDS (ID 46)</a></li>
 <li class="level2"><a href="#WP_MOVED_LLA">WP_MOVED_LLA (ID 47)</a></li>
 <li class="level2"><a href="#RLFILTER">RLFILTER (ID 48)</a></li>
@@ -174,8 +174,10 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html','');});
 <li class="level2"><a href="#GVF">GVF (ID 71)</a></li>
 <li class="level2"><a href="#SUPERBITRF">SUPERBITRF (ID 72)</a></li>
 <li class="level2"><a href="#GX3_INFO">GX3_INFO (ID 73)</a></li>
+<li class="level2"><a href="#UBLOX_INFO">UBLOX_INFO (ID 74)</a></li>
 <li class="level2"><a href="#INV_FILTER">INV_FILTER (ID 78)</a></li>
 <li class="level2"><a href="#MISSION_STATUS">MISSION_STATUS (ID 79)</a></li>
+<li class="level2"><a href="#JEVOIS">JEVOIS (ID 80)</a></li>
 <li class="level2"><a href="#GENERIC_COM">GENERIC_COM (ID 81)</a></li>
 <li class="level2"><a href="#FORMATION_SLOT_TM">FORMATION_SLOT_TM (ID 82)</a></li>
 <li class="level2"><a href="#FORMATION_STATUS_TM">FORMATION_STATUS_TM (ID 83)</a></li>
@@ -185,7 +187,7 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html','');});
 <li class="level2"><a href="#WIND_INFO_RET">WIND_INFO_RET (ID 87)</a></li>
 <li class="level2"><a href="#SCP_STATUS">SCP_STATUS (ID 88)</a></li>
 <li class="level2"><a href="#SHT_STATUS">SHT_STATUS (ID 89)</a></li>
-<li class="level2"><a href="#ENOSE_STATUS">ENOSE_STATUS (ID 90)</a></li>
+<li class="level2"><a href="#VISION_POSITION_ESTIMATE">VISION_POSITION_ESTIMATE (ID 90)</a></li>
 <li class="level2"><a href="#DPICCO_STATUS">DPICCO_STATUS (ID 91)</a></li>
 <li class="level2"><a href="#LOGGER_STATUS">LOGGER_STATUS (ID 92)</a></li>
 <li class="level2"><a href="#MOTOR_BENCH_STATUS">MOTOR_BENCH_STATUS (ID 94)</a></li>
@@ -257,8 +259,11 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html','');});
 <li class="level2"><a href="#HFF">HFF (ID 164)</a></li>
 <li class="level2"><a href="#HFF_DBG">HFF_DBG (ID 165)</a></li>
 <li class="level2"><a href="#HFF_GPS">HFF_GPS (ID 166)</a></li>
+<li class="level2"><a href="#INS_EKF2">INS_EKF2 (ID 167)</a></li>
 <li class="level2"><a href="#ROTORCRAFT_CAM">ROTORCRAFT_CAM (ID 168)</a></li>
 <li class="level2"><a href="#AHRS_REF_QUAT">AHRS_REF_QUAT (ID 169)</a></li>
+<li class="level2"><a href="#INS_EKF2_EXT">INS_EKF2_EXT (ID 170)</a></li>
+<li class="level2"><a href="#AHRS_BIAS">AHRS_BIAS (ID 171)</a></li>
 <li class="level2"><a href="#AHRS_EULER">AHRS_EULER (ID 173)</a></li>
 <li class="level2"><a href="#AHRS_MEASUREMENT_EULER">AHRS_MEASUREMENT_EULER (ID 174)</a></li>
 <li class="level2"><a href="#WT">WT (ID 175)</a></li>
@@ -281,6 +286,7 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html','');});
 <li class="level2"><a href="#UART_ERRORS">UART_ERRORS (ID 208)</a></li>
 <li class="level2"><a href="#IMU_GYRO_LP">IMU_GYRO_LP (ID 209)</a></li>
 <li class="level2"><a href="#IMU_PRESSURE">IMU_PRESSURE (ID 210)</a></li>
+<li class="level2"><a href="#WINDTUNNEL_MEAS">WINDTUNNEL_MEAS (ID 211)</a></li>
 <li class="level2"><a href="#TUNE_VERT">TUNE_VERT (ID 213)</a></li>
 <li class="level2"><a href="#MF_DAQ_STATE">MF_DAQ_STATE (ID 214)</a></li>
 <li class="level2"><a href="#INFO_MSG">INFO_MSG (ID 215)</a></li>
@@ -366,6 +372,7 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html','');});
 <li class="level2"><a href="#REMOTE_GPS_SMALL">REMOTE_GPS_SMALL (ID 54)</a></li>
 <li class="level2"><a href="#REMOTE_GPS">REMOTE_GPS (ID 55)</a></li>
 <li class="level2"><a href="#REMOTE_GPS_LOCAL">REMOTE_GPS_LOCAL (ID 56)</a></li>
+<li class="level2"><a href="#TARGET_POS">TARGET_POS (ID 57)</a></li>
 <li class="level2"><a href="#KITE_COMMAND">KITE_COMMAND (ID 96)</a></li>
 <li class="level2"><a href="#PAYLOAD_COMMAND">PAYLOAD_COMMAND (ID 97)</a></li>
 <li class="level2"><a href="#SET_ACTUATOR">SET_ACTUATOR (ID 100)</a></li>
@@ -637,6 +644,14 @@ NAVIGATION (ID 10)</h2>
 <tr>
 <td>dist_home </td><td>float </td><td>m </td><td></td></tr>
 <tr>
+<td>flight_time </td><td>uint16 </td><td>s </td><td></td></tr>
+<tr>
+<td>block_time </td><td>uint16 </td><td>s </td><td></td></tr>
+<tr>
+<td>stage_time </td><td>uint16 </td><td>s </td><td></td></tr>
+<tr>
+<td>kill_auto_throttle </td><td>uint8 </td><td>bool </td><td></td></tr>
+<tr>
 <td>circle_count </td><td>uint8 </td><td></td><td></td></tr>
 <tr>
 <td>oval_count </td><td>uint8 </td><td></td><td></td></tr>
@@ -659,27 +674,23 @@ PPRZ_MODE (ID 11)</h2>
 <tr>
 <td>mcu1_status </td><td>uint8 </td><td>LOST, OK, REALLY_LOST </td><td></td></tr>
 </table>
-<h2><a class="anchor" id="BAT"></a>
-BAT (ID 12)</h2>
+<h2><a class="anchor" id="ENERGY"></a>
+ENERGY (ID 12)</h2>
 <table class="doxtable">
 <tr>
 <th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
 <tr>
-<td>throttle </td><td>int16 </td><td>pprz </td><td></td></tr>
+<td>throttle </td><td>uint8 </td><td>% </td><td>Throttle setting </td></tr>
 <tr>
-<td>voltage </td><td>uint16 </td><td>1e-1V </td><td></td></tr>
+<td>voltage </td><td>float </td><td>V </td><td>Input battery voltage </td></tr>
 <tr>
-<td>amps </td><td>int16 </td><td>1e-2A </td><td></td></tr>
+<td>current </td><td>float </td><td>A </td><td>Current consumption </td></tr>
 <tr>
-<td>flight_time </td><td>uint16 </td><td>s </td><td></td></tr>
+<td>power </td><td>float </td><td>W </td><td><a class="el" href="electrical_8h.html#structElectrical">Electrical</a> power </td></tr>
 <tr>
-<td>kill_auto_throttle </td><td>uint8 </td><td>bool </td><td></td></tr>
+<td>charge </td><td>float </td><td>Ah </td><td>Accumulated consumed charge </td></tr>
 <tr>
-<td>block_time </td><td>uint16 </td><td>s </td><td></td></tr>
-<tr>
-<td>stage_time </td><td>uint16 </td><td>s </td><td></td></tr>
-<tr>
-<td>energy </td><td>int16 </td><td>mAh </td><td></td></tr>
+<td>energy </td><td>float </td><td>Wh </td><td>Accumulated consumed energy </td></tr>
 </table>
 <h2><a class="anchor" id="DEBUG_MCU_LINK"></a>
 DEBUG_MCU_LINK (ID 13)</h2>
@@ -1022,7 +1033,7 @@ MOTOR (ID 34)</h2>
 <tr>
 <td>rpm </td><td>uint16 </td><td>Hz </td><td></td></tr>
 <tr>
-<td>current </td><td>int32 </td><td>mA </td><td></td></tr>
+<td>current </td><td>float </td><td>A </td><td></td></tr>
 </table>
 <h2><a class="anchor" id="WP_MOVED"></a>
 WP_MOVED (ID 35)</h2>
@@ -1054,20 +1065,6 @@ MKK (ID 36)</h2>
 <td>current </td><td>uint8 </td><td>mA </td><td></td></tr>
 <tr>
 <td>temp </td><td>int8 </td><td>deg </td><td></td></tr>
-</table>
-<h2><a class="anchor" id="ENERGY"></a>
-ENERGY (ID 37)</h2>
-<table class="doxtable">
-<tr>
-<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
-<tr>
-<td>bat </td><td>float </td><td>V </td><td></td></tr>
-<tr>
-<td>amp </td><td>float </td><td>A </td><td></td></tr>
-<tr>
-<td>energy </td><td>uint16 </td><td>mAh </td><td></td></tr>
-<tr>
-<td>power </td><td>float </td><td>W </td><td></td></tr>
 </table>
 <h2><a class="anchor" id="DRAGSPEED"></a>
 DRAGSPEED (ID 38)</h2>
@@ -1158,6 +1155,30 @@ BARO_MS5534A (ID 44)</h2>
 <td>temp </td><td>uint16 </td><td>dC </td><td></td></tr>
 <tr>
 <td>alt </td><td>float </td><td>m </td><td></td></tr>
+</table>
+<h2><a class="anchor" id="CHIRP"></a>
+CHIRP (ID 45)</h2>
+<table class="doxtable">
+<tr>
+<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
+<tr>
+<td>active </td><td>uint8 </td><td></td><td>Chirp is active </td></tr>
+<tr>
+<td>percentage_done </td><td>float </td><td></td><td>Percentage done </td></tr>
+<tr>
+<td>current_frequency </td><td>float </td><td></td><td>Current frequency </td></tr>
+<tr>
+<td>axis </td><td>uint8 </td><td></td><td>Current chirp axis </td></tr>
+<tr>
+<td>amplitude </td><td>int16 </td><td></td><td>Amplitude </td></tr>
+<tr>
+<td>fstart </td><td>float </td><td></td><td>Start frequency </td></tr>
+<tr>
+<td>fstop </td><td>float </td><td></td><td>Stop frequency </td></tr>
+<tr>
+<td>noise_onaxis_ratio </td><td>float </td><td></td><td>Noise ratio onaxis </td></tr>
+<tr>
+<td>noise_offaxis </td><td>float </td><td></td><td>Noise offaxis </td></tr>
 </table>
 <h2><a class="anchor" id="BARO_WORDS"></a>
 BARO_WORDS (ID 46)</h2>
@@ -1627,6 +1648,26 @@ GX3_INFO (ID 73)</h2>
 <tr>
 <td>GX3_chksm </td><td>uint16 </td><td></td><td></td></tr>
 </table>
+<h2><a class="anchor" id="UBLOX_INFO"></a>
+UBLOX_INFO (ID 74)</h2>
+<table class="doxtable">
+<tr>
+<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
+<tr>
+<td>baud </td><td>uint32 </td><td></td><td></td></tr>
+<tr>
+<td>ver_sw_h </td><td>uint8 </td><td></td><td></td></tr>
+<tr>
+<td>ver_sw_l </td><td>uint8 </td><td></td><td></td></tr>
+<tr>
+<td>ver_hw_h </td><td>uint16 </td><td></td><td></td></tr>
+<tr>
+<td>ver_hw_l </td><td>uint16 </td><td></td><td></td></tr>
+<tr>
+<td>sbas </td><td>uint8 </td><td></td><td></td></tr>
+<tr>
+<td>gnss </td><td>uint8 </td><td>NONE, GPS, GLONAS, GPS+GLONAS, BEIDOU, GPS+BEIDOU, GLONAS+BEIDOU, GPS+GLONAS+BEIDOU, GALILEO </td><td></td></tr>
+</table>
 <h2><a class="anchor" id="INV_FILTER"></a>
 INV_FILTER (ID 78)</h2>
 <table class="doxtable">
@@ -1677,6 +1718,10 @@ MISSION_STATUS (ID 79)</h2>
 <tr>
 <td>index_list </td><td>uint8[] </td><td></td><td></td></tr>
 </table>
+<h2><a class="anchor" id="JEVOIS"></a>
+JEVOIS (ID 80)</h2>
+<p>Debug message for the JeVois smart camera corresponding to the standardized messages</p>
+<p>Field name | Type | Unit/Values | Description | --------&mdash;|---&mdash;|----------&mdash;|----------&mdash;| type | uint8 | | Standardized message type JEVOIS_MSG_[T1|N1|D1|T2|N2|D2|F2|T3|N3|D3|F3] | id | char[] | | Text string describing the reported object | nb | uint8 | | Number of elements in the coordinates array | coord | int16[] | | List of coordinates corresponding to 1D, 2D or 3D messages | dim | uint16[3] | | 1, 2 or 3D dimension | quat | float[4] | | Quaternion that relates the object's frame to the camera's frame, if appropriate |</p>
 <h2><a class="anchor" id="GENERIC_COM"></a>
 GENERIC_COM (ID 81)</h2>
 <table class="doxtable">
@@ -1695,9 +1740,9 @@ GENERIC_COM (ID 81)</h2>
 <tr>
 <td>airspeed </td><td>uint16 </td><td>cm/s </td><td></td></tr>
 <tr>
-<td>vsupply </td><td>uint8 </td><td>decivolt </td><td></td></tr>
+<td>vsupply </td><td>uint8 </td><td>deciV </td><td></td></tr>
 <tr>
-<td>energy </td><td>uint8 </td><td>deciAh </td><td></td></tr>
+<td>charge </td><td>uint8 </td><td>deciAh </td><td></td></tr>
 <tr>
 <td>throttle </td><td>uint8 </td><td>% </td><td></td></tr>
 <tr>
@@ -1818,21 +1863,24 @@ SHT_STATUS (ID 89)</h2>
 <tr>
 <td>temp </td><td>float </td><td>deg_celsius </td><td></td></tr>
 </table>
-<h2><a class="anchor" id="ENOSE_STATUS"></a>
-ENOSE_STATUS (ID 90)</h2>
+<h2><a class="anchor" id="VISION_POSITION_ESTIMATE"></a>
+VISION_POSITION_ESTIMATE (ID 90)</h2>
+<p>Generic message to send position measurement from computer vision</p>
 <table class="doxtable">
 <tr>
 <th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
 <tr>
-<td>val1 </td><td>uint16 </td><td></td><td></td></tr>
+<td>cnt </td><td>uint16 </td><td></td><td>Counter </td></tr>
 <tr>
-<td>val2 </td><td>uint16 </td><td></td><td></td></tr>
+<td>x </td><td>float </td><td></td><td>X </td></tr>
 <tr>
-<td>val3 </td><td>uint16 </td><td></td><td></td></tr>
+<td>y </td><td>float </td><td></td><td>Y </td></tr>
 <tr>
-<td>PID </td><td>uint16 </td><td></td><td></td></tr>
+<td>z </td><td>float </td><td></td><td>Z </td></tr>
 <tr>
-<td>heat </td><td>uint8[] </td><td></td><td></td></tr>
+<td>quality </td><td>float </td><td></td><td>Detection Quality or Uncertainty </td></tr>
+<tr>
+<td>extra </td><td>float </td><td></td><td>In case the default message does not suit you </td></tr>
 </table>
 <h2><a class="anchor" id="DPICCO_STATUS"></a>
 DPICCO_STATUS (ID 91)</h2>
@@ -1860,6 +1908,8 @@ LOGGER_STATUS (ID 92)</h2>
 <td>errno </td><td>uint8 </td><td></td><td>Error number, depend of the logging system, provides detailed information </td></tr>
 <tr>
 <td>used </td><td>uint32 </td><td>bytes </td><td>Accumulated number of bytes written by the logger </td></tr>
+<tr>
+<td>filenames </td><td>char[] </td><td></td><td>The filenames currently in use by the logger (First sdlog, second Flight recorder for chibios) </td></tr>
 </table>
 <h2><a class="anchor" id="MOTOR_BENCH_STATUS"></a>
 MOTOR_BENCH_STATUS (ID 94)</h2>
@@ -1963,9 +2013,9 @@ FBW_STATUS (ID 103)</h2>
 <tr>
 <td>mode </td><td>uint8 </td><td>MANUAL, AUTO, FAILSAFE </td><td></td></tr>
 <tr>
-<td>vsupply </td><td>uint16 </td><td>decivolt </td><td></td></tr>
+<td>vsupply </td><td>float </td><td>V </td><td></td></tr>
 <tr>
-<td>current </td><td>int32 </td><td>mA </td><td></td></tr>
+<td>current </td><td>float </td><td>A </td><td></td></tr>
 </table>
 <h2><a class="anchor" id="ADC"></a>
 ADC (ID 104)</h2>
@@ -3188,6 +3238,39 @@ HFF_GPS (ID 166)</h2>
 <tr>
 <td>save_cnt </td><td>int16 </td><td></td><td></td></tr>
 </table>
+<h2><a class="anchor" id="INS_EKF2"></a>
+INS_EKF2 (ID 167)</h2>
+<p>Extended Kalman Filter 2 status message which gives feedback about the input- and output states of the filter.</p>
+<table class="doxtable">
+<tr>
+<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
+<tr>
+<td>control_mode </td><td>uint32 </td><td></td><td>description of the control status (bitfields from common.h) </td></tr>
+<tr>
+<td>filter_fault_status </td><td>uint16 </td><td></td><td>numerical errors in output states (bitfields from common.h) </td></tr>
+<tr>
+<td>gps_check_status </td><td>uint16 </td><td></td><td>quality check of the GPS feedback (bitfields from common.h) </td></tr>
+<tr>
+<td>soln_status </td><td>uint16 </td><td></td><td>which output states are valid or has an error (bitfields from common.h) </td></tr>
+<tr>
+<td>innov_test_status </td><td>uint16 </td><td></td><td>which inputs exceed the innovation test </td></tr>
+<tr>
+<td>innov_mag </td><td>float </td><td></td><td></td></tr>
+<tr>
+<td>innov_vel </td><td>float </td><td></td><td></td></tr>
+<tr>
+<td>innov_pos </td><td>float </td><td></td><td></td></tr>
+<tr>
+<td>innov_hgt </td><td>float </td><td></td><td></td></tr>
+<tr>
+<td>innov_tas </td><td>float </td><td></td><td></td></tr>
+<tr>
+<td>innov_hagl </td><td>float </td><td></td><td></td></tr>
+<tr>
+<td>innov_beta </td><td>float </td><td></td><td></td></tr>
+<tr>
+<td>mag_decl </td><td>float </td><td>deg </td><td>Magnetic declination </td></tr>
+</table>
 <h2><a class="anchor" id="ROTORCRAFT_CAM"></a>
 ROTORCRAFT_CAM (ID 168)</h2>
 <table class="doxtable">
@@ -3219,6 +3302,50 @@ AHRS_REF_QUAT (ID 169)</h2>
 <td>body_qy </td><td>int32 </td><td></td><td></td></tr>
 <tr>
 <td>body_qz </td><td>int32 </td><td></td><td></td></tr>
+</table>
+<h2><a class="anchor" id="INS_EKF2_EXT"></a>
+INS_EKF2_EXT (ID 170)</h2>
+<table class="doxtable">
+<tr>
+<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
+<tr>
+<td>gps_drift_h </td><td>float </td><td>m/s </td><td>Horizontal position drift rate (m/s) </td></tr>
+<tr>
+<td>gps_drift_v </td><td>float </td><td>m/s </td><td>Vertical position drift rate (m/s) </td></tr>
+<tr>
+<td>gps_drift_h_filt </td><td>float </td><td>m/s </td><td>Filtered horizontal velocity (m/s) </td></tr>
+<tr>
+<td>gps_drift_blocked </td><td>uint8 </td><td></td><td>The GPS drift calculation is blocked </td></tr>
+<tr>
+<td>gyro_vibe_coning </td><td>float </td><td></td><td>Gyro delta angle coning metric = filtered length of (delta_angle x prev_delta_angle) </td></tr>
+<tr>
+<td>gyro_vibe_hf </td><td>float </td><td></td><td>Gyro high frequency vibe = filtered length of (delta_angle - prev_delta_angle) </td></tr>
+<tr>
+<td>accel_vibe_hf </td><td>float </td><td></td><td>Accel high frequency vibe = filtered length of (delta_velocity - prev_delta_velocity) </td></tr>
+</table>
+<h2><a class="anchor" id="AHRS_BIAS"></a>
+AHRS_BIAS (ID 171)</h2>
+<table class="doxtable">
+<tr>
+<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
+<tr>
+<td>accel_x </td><td>float </td><td>m/s^2 </td><td>Accelerometer bias x-axis </td></tr>
+<tr>
+<td>accel_y </td><td>float </td><td>m/s^2 </td><td>Accelerometer bias y-axis </td></tr>
+<tr>
+<td>accel_z </td><td>float </td><td>m/s^2 </td><td>Accelerometer bias z-axis </td></tr>
+<tr>
+<td>gyro_p </td><td>float </td><td>rad/sec </td><td>Gyrometer bias roll rate </td></tr>
+<tr>
+<td>gyro_q </td><td>float </td><td>rad/sec </td><td>Gyrometer bias pitch rate </td></tr>
+<tr>
+<td>gyro_r </td><td>float </td><td>rad/sec </td><td>Gyrometer bias yaw rate </td></tr>
+<tr>
+<td>mag_x </td><td>float </td><td>mGauss </td><td>Magnetometer x-bias in mGauss </td></tr>
+<tr>
+<td>mag_y </td><td>float </td><td>mGauss </td><td>Magnetometer y-bias in mGauss </td></tr>
+<tr>
+<td>mag_z </td><td>float </td><td>mGauss </td><td>Magnetometer z-bias in mGauss </td></tr>
 </table>
 <h2><a class="anchor" id="AHRS_EULER"></a>
 AHRS_EULER (ID 173)</h2>
@@ -3507,7 +3634,7 @@ IMU_MAG_CURRENT_CALIBRATION (ID 207)</h2>
 <tr>
 <td>mz </td><td>int32 </td><td>adc </td><td></td></tr>
 <tr>
-<td>electrical_current </td><td>int32 </td><td>mA </td><td></td></tr>
+<td>electrical_current </td><td>float </td><td>A </td><td></td></tr>
 </table>
 <h2><a class="anchor" id="UART_ERRORS"></a>
 UART_ERRORS (ID 208)</h2>
@@ -3542,6 +3669,24 @@ IMU_PRESSURE (ID 210)</h2>
 <th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
 <tr>
 <td>p </td><td>float </td><td>pascal </td><td></td></tr>
+</table>
+<h2><a class="anchor" id="WINDTUNNEL_MEAS"></a>
+WINDTUNNEL_MEAS (ID 211)</h2>
+<table class="doxtable">
+<tr>
+<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
+<tr>
+<td>aoa </td><td>float </td><td>deg </td><td>Angle of attack </td></tr>
+<tr>
+<td>airspeed </td><td>float </td><td>m/s </td><td>Airspeed measured </td></tr>
+<tr>
+<td>voltage </td><td>float </td><td>V </td><td>Voltage measured </td></tr>
+<tr>
+<td>current </td><td>float </td><td>A </td><td>Current measured </td></tr>
+<tr>
+<td>power </td><td>float </td><td>W </td><td>Calculated power (Voltage * Current) </td></tr>
+<tr>
+<td>commands </td><td>int32[] </td><td></td><td>Commands send to actuators </td></tr>
 </table>
 <h2><a class="anchor" id="TUNE_VERT"></a>
 TUNE_VERT (ID 213)</h2>
@@ -3855,9 +4000,9 @@ ROVER_STATUS (ID 230)</h2>
 <tr>
 <td>ap_motors_on </td><td>uint8 </td><td>MOTORS_OFF, MOTORS_ON </td><td></td></tr>
 <tr>
-<td>vsupply </td><td>uint16 </td><td>decivolt </td><td></td></tr>
-<tr>
 <td>cpu_time </td><td>uint16 </td><td>s </td><td></td></tr>
+<tr>
+<td>vsupply </td><td>float </td><td>V </td><td></td></tr>
 </table>
 <h2><a class="anchor" id="ROTORCRAFT_STATUS"></a>
 ROTORCRAFT_STATUS (ID 231)</h2>
@@ -3887,9 +4032,9 @@ ROTORCRAFT_STATUS (ID 231)</h2>
 <tr>
 <td>ap_v_mode </td><td>uint8 </td><td>KILL, RC_DIRECT, RC_CLIMB, CLIMB, HOVER, NAV, MODULE, FLIP, GUIDED </td><td></td></tr>
 <tr>
-<td>vsupply </td><td>uint16 </td><td>decivolt </td><td></td></tr>
-<tr>
 <td>cpu_time </td><td>uint16 </td><td>s </td><td></td></tr>
+<tr>
+<td>vsupply </td><td>float </td><td>V </td><td></td></tr>
 </table>
 <h2><a class="anchor" id="STATE_FILTER_STATUS"></a>
 STATE_FILTER_STATUS (ID 232)</h2>
@@ -3939,13 +4084,22 @@ LIDAR (ID 234)</h2>
 </table>
 <h2><a class="anchor" id="VISUALTARGET"></a>
 VISUALTARGET (ID 235)</h2>
+<p>Generic message with pixel coordinates of detected targets</p>
 <table class="doxtable">
 <tr>
 <th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
 <tr>
-<td>x </td><td>uint16 </td><td></td><td></td></tr>
+<td>cnt </td><td>uint16 </td><td></td><td>Counter </td></tr>
 <tr>
-<td>y </td><td>uint16 </td><td></td><td></td></tr>
+<td>x </td><td>int16 </td><td></td><td>Center pixel X </td></tr>
+<tr>
+<td>y </td><td>int16 </td><td></td><td>Center pixel X </td></tr>
+<tr>
+<td>w </td><td>int16 </td><td></td><td>Width in pixels </td></tr>
+<tr>
+<td>h </td><td>int16 </td><td></td><td>height in pixels </td></tr>
+<tr>
+<td>source </td><td>uint16 </td><td></td><td>In case many detectors run, which one did find this target </td></tr>
 </table>
 <h2><a class="anchor" id="SONAR"></a>
 SONAR (ID 236)</h2>
@@ -4137,7 +4291,11 @@ RTOS_MON (ID 246)</h2>
 <tr>
 <td>core_free </td><td>uint32 </td><td>Bytes </td><td>Core free memory </td></tr>
 <tr>
-<td>heap_free </td><td>uint32 </td><td>Bytes </td><td>Heap free memory </td></tr>
+<td>heap_free </td><td>uint32 </td><td>Bytes </td><td>Total fragmented free memory in the heap </td></tr>
+<tr>
+<td>heap_frags </td><td>uint32 </td><td>Fragments </td><td>Number of fragments in the heap </td></tr>
+<tr>
+<td>heap_largest </td><td>uint32 </td><td>Bytes </td><td>Largest free block in the heap </td></tr>
 <tr>
 <td>cpu_time </td><td>float </td><td>s </td><td></td></tr>
 </table>
@@ -4471,17 +4629,20 @@ FORMATION_STATUS (ID 10)</h2>
 </table>
 <h2><a class="anchor" id="JOYSTICK_RAW"></a>
 JOYSTICK_RAW (ID 11)</h2>
+<p>This message is used to send joystick input that can be used in any mode for control of the vehicle or the payload depending of the 'joystick_handler' function implementation. The scale of the inputs should be between -PPRZ_MAX (or 0) and PPRZ_MAX.</p>
 <table class="doxtable">
 <tr>
 <th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
 <tr>
+<td>roll </td><td>int16 </td><td></td><td></td></tr>
+<tr>
+<td>pitch </td><td>int16 </td><td></td><td></td></tr>
+<tr>
+<td>yaw </td><td>int16 </td><td></td><td></td></tr>
+<tr>
+<td>throttle </td><td>int16 </td><td></td><td></td></tr>
+<tr>
 <td>ac_id </td><td>uint8 </td><td></td><td></td></tr>
-<tr>
-<td>roll </td><td>int8 </td><td></td><td></td></tr>
-<tr>
-<td>pitch </td><td>int8 </td><td></td><td></td></tr>
-<tr>
-<td>throttle </td><td>int8 </td><td></td><td></td></tr>
 </table>
 <h2><a class="anchor" id="COMMANDS_RAW"></a>
 COMMANDS_RAW (ID 12)</h2>
@@ -5044,6 +5205,29 @@ REMOTE_GPS_LOCAL (ID 56)</h2>
 <tr>
 <td>course </td><td>float </td><td>deg </td><td></td></tr>
 </table>
+<h2><a class="anchor" id="TARGET_POS"></a>
+TARGET_POS (ID 57)</h2>
+<p>Global position, speed and ID a target for functions like Follow Me</p>
+<table class="doxtable">
+<tr>
+<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
+<tr>
+<td>ac_id </td><td>uint8 </td><td></td><td></td></tr>
+<tr>
+<td>target_id </td><td>uint8 </td><td></td><td></td></tr>
+<tr>
+<td>lat </td><td>int32 </td><td>1e7deg </td><td></td></tr>
+<tr>
+<td>lon </td><td>int32 </td><td>1e7deg </td><td></td></tr>
+<tr>
+<td>alt </td><td>int32 </td><td>mm </td><td>Height above Mean Sea Level (geoid) </td></tr>
+<tr>
+<td>speed </td><td>float </td><td>m/s </td><td>Ground speed </td></tr>
+<tr>
+<td>climb </td><td>float </td><td>m/s </td><td>Climb speed </td></tr>
+<tr>
+<td>course </td><td>float </td><td>deg </td><td></td></tr>
+</table>
 <h2><a class="anchor" id="KITE_COMMAND"></a>
 KITE_COMMAND (ID 96)</h2>
 <table class="doxtable">
@@ -5453,13 +5637,13 @@ ENGINE_STATUS (ID 15)</h2>
 <tr>
 <td>rpm </td><td>float </td><td>rpm </td><td></td></tr>
 <tr>
-<td>temp </td><td>float </td><td>celcius </td><td></td></tr>
+<td>temp </td><td>float </td><td>C </td><td></td></tr>
 <tr>
 <td>bat </td><td>float </td><td>V </td><td></td></tr>
 <tr>
 <td>amp </td><td>float </td><td>A </td><td></td></tr>
 <tr>
-<td>energy </td><td>uint16 </td><td>Wh </td><td></td></tr>
+<td>charge </td><td>float </td><td>Ah </td><td></td></tr>
 </table>
 <h2><a class="anchor" id="SVSINFO"></a>
 SVSINFO (ID 16)</h2>
@@ -5875,7 +6059,7 @@ JOYSTICK (ID 41)</h2>
 <tr>
 <th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
 <tr>
-<td>id </td><td>uint8 </td><td></td><td>Joystick ID </td></tr>
+<td>id </td><td>uint8 </td><td></td><td><a class="el" href="joystick_8h.html#structJoystick" title="Joystick structure. ">Joystick</a> ID </td></tr>
 <tr>
 <td>axis1 </td><td>int16 </td><td></td><td>axis 1 position </td></tr>
 <tr>
@@ -5968,9 +6152,9 @@ IMCU_FBW_STATUS (ID 4)</h2>
 <tr>
 <td>frame_rate </td><td>uint8 </td><td>Hz </td><td></td></tr>
 <tr>
-<td>vsupply </td><td>uint16 </td><td>decivolt </td><td></td></tr>
+<td>vsupply </td><td>float </td><td>V </td><td></td></tr>
 <tr>
-<td>current </td><td>int32 </td><td>mA </td><td></td></tr>
+<td>current </td><td>float </td><td>A </td><td></td></tr>
 </table>
 <h2><a class="anchor" id="IMCU_REMOTE_MAG"></a>
 IMCU_REMOTE_MAG (ID 10)</h2>
@@ -6162,7 +6346,7 @@ IMCU_PAYLOAD (ID 116)</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Sep 12 2018 02:04:01 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:03:44 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

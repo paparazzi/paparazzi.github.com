@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -120,7 +120,7 @@ $(document).ready(function(){initNavTree('mt9v117_8c.html','');});
 <div class="textblock"><code>#include &quot;std.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="mt9v117_8h_source.html">mt9v117.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mt9v117__regs_8h_source.html">mt9v117_regs.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="bebop_8h_source.html">boards/bebop.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="video__device_8h_source.html">peripherals/video_device.h</a>&quot;</code><br />
 <code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;unistd.h&gt;</code><br />
 <code>#include &lt;fcntl.h&gt;</code><br />
@@ -128,6 +128,8 @@ $(document).ready(function(){initNavTree('mt9v117_8c.html','');});
 <code>#include &lt;linux/i2c-dev.h&gt;</code><br />
 <code>#include &lt;linux/videodev2.h&gt;</code><br />
 <code>#include &lt;linux/v4l2-mediabus.h&gt;</code><br />
+<code>#include &quot;generated/airframe.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="bebop_8h_source.html">boards/bebop.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for mt9v117.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -135,7 +137,16 @@ $(document).ready(function(){initNavTree('mt9v117_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mt9v117_8c__incl.png" border="0" usemap="#sw_2airborne_2boards_2bebop_2mt9v117_8c" alt=""/></div>
 <map name="sw_2airborne_2boards_2bebop_2mt9v117_8c" id="sw_2airborne_2boards_2bebop_2mt9v117_8c">
-<area shape="rect" id="node3" href="mt9v117_8h.html" title="Initialization and configuration of the MT9V117 CMOS Chip. " alt="" coords="5,497,96,524"/><area shape="rect" id="node6" href="mt9v117__regs_8h.html" title="mt9v117_regs.h" alt="" coords="1250,95,1377,121"/><area shape="rect" id="node7" href="bebop_8h.html" title="boards/bebop.h" alt="" coords="423,95,545,121"/><area shape="rect" id="node4" href="i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API. " alt="" coords="120,572,251,599"/><area shape="rect" id="node8" href="video__device_8h.html" title="peripherals/video_device.h" alt="" coords="462,169,653,196"/><area shape="rect" id="node27" href="mt9f002_8h.html" title="Initialization and configuration of the MT9F002 CMOS Chip. " alt="" coords="121,497,301,524"/><area shape="rect" id="node10" href="inttypes_8h.html" title="inttypes.h" alt="" coords="588,251,673,278"/><area shape="rect" id="node11" href="image_8h.html" title="Image helper functions like resizing, color filter, converters... " alt="" coords="377,244,564,285"/><area shape="rect" id="node13" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="736,333,803,360"/><area shape="rect" id="node14" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="620,497,799,524"/><area shape="rect" id="node20" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="1074,497,1265,524"/><area shape="rect" id="node23" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="603,408,754,449"/><area shape="rect" id="node25" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="966,408,1117,449"/><area shape="rect" id="node26" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="778,408,942,449"/><area shape="rect" id="node15" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="949,572,1104,599"/><area shape="rect" id="node18" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="529,572,679,599"/><area shape="rect" id="node24" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="874,497,998,524"/></map>
+<area shape="rect" id="node3" href="mt9v117_8h.html" title="Initialization and configuration of the MT9V117 CMOS Chip. " alt="" coords="64,497,155,524"/><area shape="rect" id="node6" href="mt9v117__regs_8h.html" title="mt9v117_regs.h" alt="" coords="95,95,222,121"/><area shape="rect" id="node7" href="video__device_8h.html" title="peripherals/video_device.h" alt="" coords="214,169,405,196"/><area shape="rect" id="node34" href="bebop_8h.html" title="boards/bebop.h" alt="" coords="1341,95,1464,121"/><area shape="rect" id="node4" href="i2c_8h.html" title="Architecture independent I2C (Inter&#45;Integrated Circuit Bus) API. " alt="" coords="44,572,175,599"/><area shape="rect" id="node9" href="inttypes_8h.html" title="inttypes.h" alt="" coords="267,251,352,278"/><area shape="rect" id="node10" href="image_8h.html" title="Image helper functions like resizing, color filter, converters... " alt="" coords="376,244,563,285"/><area shape="rect" id="node12" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="633,333,700,360"/><area shape="rect" id="node13" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="601,497,780,524"/><area shape="rect" id="node20" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="906,497,1097,524"/><area shape="rect" id="node22" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="526,408,677,449"/><area shape="rect" id="node24" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="351,408,502,449"/><area shape="rect" id="node25" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="753,408,917,449"/><area shape="rect" id="node14" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="888,572,1043,599"/><area shape="rect" id="node18" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="561,572,711,599"/><area shape="rect" id="node23" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="402,497,526,524"/></map>
+</div>
+</div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="mt9v117_8c__dep__incl.png" border="0" usemap="#sw_2airborne_2boards_2bebop_2mt9v117_8cdep" alt=""/></div>
+<map name="sw_2airborne_2boards_2bebop_2mt9v117_8cdep" id="sw_2airborne_2boards_2bebop_2mt9v117_8cdep">
+<area shape="rect" id="node2" href="mt9v117__nps_8c.html" title="sw/airborne/boards\l/bebop/mt9v117_nps.c" alt="" coords="5,95,173,136"/></map>
 </div>
 </div>
 <p><a href="mt9v117_8c_source.html">Go to the source code of this file.</a></p>
@@ -174,6 +185,8 @@ Functions</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:aebe228d13ad2e4e0c8528d945ad76a82"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="video__device_8h.html#structvideo__config__t">video_config_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9v117_8c.html#aebe228d13ad2e4e0c8528d945ad76a82">bottom_camera</a></td></tr>
 <tr class="separator:aebe228d13ad2e4e0c8528d945ad76a82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2aace6511d89f4676f13ec941992bd4"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="mt9v117_8h.html#structmt9v117__t">mt9v117_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9v117_8c.html#af2aace6511d89f4676f13ec941992bd4">mt9v117</a></td></tr>
+<tr class="separator:af2aace6511d89f4676f13ec941992bd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add3aa1b600758e7fa22b2184140444f4"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9v117_8c.html#add3aa1b600758e7fa22b2184140444f4">patch_line1</a> []</td></tr>
 <tr class="separator:add3aa1b600758e7fa22b2184140444f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a496b3b82f61f9bfc4a698c988a8366bb"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9v117_8c.html#a496b3b82f61f9bfc4a698c988a8366bb">patch_line2</a> []</td></tr>
@@ -218,7 +231,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p>Definition at line <a class="el" href="mt9v117_8c_source.html#l00179">179</a> of file <a class="el" href="mt9v117_8c_source.html">mt9v117.c</a>.</p>
+<p>Definition at line <a class="el" href="mt9v117_8c_source.html#l00190">190</a> of file <a class="el" href="mt9v117_8c_source.html">mt9v117.c</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
@@ -248,9 +261,9 @@ len</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mt9v117_8c_source.html#l00076">76</a> of file <a class="el" href="mt9v117_8c_source.html">mt9v117.c</a>.</p>
+<p>Definition at line <a class="el" href="mt9v117_8c_source.html#l00087">87</a> of file <a class="el" href="mt9v117_8c_source.html">mt9v117.c</a>.</p>
 
-<p>Referenced by <a class="el" href="mt9v117_8c_source.html#l00260">mt9v117_write_patch()</a>.</p>
+<p>Referenced by <a class="el" href="mt9v117_8c_source.html#l00271">mt9v117_write_patch()</a>.</p>
 
 </div>
 </div>
@@ -277,31 +290,31 @@ len</td>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mt9v117_8c_source.html#l00323">323</a> of file <a class="el" href="mt9v117_8c_source.html">mt9v117.c</a>.</p>
+<p>Definition at line <a class="el" href="mt9v117_8c_source.html#l00334">334</a> of file <a class="el" href="mt9v117_8c_source.html">mt9v117.c</a>.</p>
 
-<p>References <a class="el" href="mt9v117__regs_8h_source.html#l00021">MT9V117_AE_TRACK_JUMP_DIVISOR</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00022">MT9V117_CAM_AET_SKIP_FRAMES</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00057">MT9V117_CAM_CROP_MODE_OFFSET</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00056">MT9V117_CAM_CROP_WINDOW_HEIGHT_OFFSET</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00055">MT9V117_CAM_CROP_WINDOW_WIDTH_OFFSET</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00053">MT9V117_CAM_CROP_WINDOW_XOFFSET_OFFSET</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00054">MT9V117_CAM_CROP_WINDOW_YOFFSET_OFFSET</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00033">MT9V117_CAM_CTRL_VAR</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00081">MT9V117_CAM_LL_START_GAIN_METRIC_OFFSET</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00082">MT9V117_CAM_LL_STOP_GAIN_METRIC_OFFSET</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00059">MT9V117_CAM_OUTPUT_HEIGHT_OFFSET</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00058">MT9V117_CAM_OUTPUT_WIDTH_OFFSET</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00039">MT9V117_CAM_SENSOR_CFG_CPIPE_LAST_ROW_OFFSET</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00038">MT9V117_CAM_SENSOR_CFG_FRAME_LENGTH_LINES_OFFSET</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00042">MT9V117_CAM_SENSOR_CFG_MAX_FDZONE_60_OFFSET</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00044">MT9V117_CAM_SENSOR_CFG_TARGET_FDZONE_60_OFFSET</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00037">MT9V117_CAM_SENSOR_CFG_X_ADDR_END_OFFSET</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00035">MT9V117_CAM_SENSOR_CFG_X_ADDR_START_OFFSET</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00036">MT9V117_CAM_SENSOR_CFG_Y_ADDR_END_OFFSET</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00034">MT9V117_CAM_SENSOR_CFG_Y_ADDR_START_OFFSET</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00046">MT9V117_CAM_SENSOR_CONTROL_READ_MODE_OFFSET</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00047">MT9V117_CAM_SENSOR_CONTROL_Y_SKIP_EN</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00079">MT9V117_CAM_STAT_AE_INITIAL_WINDOW_XEND_OFFSET</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00077">MT9V117_CAM_STAT_AE_INITIAL_WINDOW_XSTART_OFFSET</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00080">MT9V117_CAM_STAT_AE_INITIAL_WINDOW_YEND_OFFSET</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00078">MT9V117_CAM_STAT_AE_INITIAL_WINDOW_YSTART_OFFSET</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00075">MT9V117_CAM_STAT_AWB_HG_WINDOW_XEND_OFFSET</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00076">MT9V117_CAM_STAT_AWB_HG_WINDOW_YEND_OFFSET</a>, <a class="el" href="mt9v117_8c_source.html#l00203">write_reg()</a>, and <a class="el" href="mt9v117_8c_source.html#l00247">write_var()</a>.</p>
+<p>References <a class="el" href="mt9v117__regs_8h_source.html#l00021">MT9V117_AE_TRACK_JUMP_DIVISOR</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00022">MT9V117_CAM_AET_SKIP_FRAMES</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00058">MT9V117_CAM_CROP_MODE_OFFSET</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00057">MT9V117_CAM_CROP_WINDOW_HEIGHT_OFFSET</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00056">MT9V117_CAM_CROP_WINDOW_WIDTH_OFFSET</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00054">MT9V117_CAM_CROP_WINDOW_XOFFSET_OFFSET</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00055">MT9V117_CAM_CROP_WINDOW_YOFFSET_OFFSET</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00034">MT9V117_CAM_CTRL_VAR</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00082">MT9V117_CAM_LL_START_GAIN_METRIC_OFFSET</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00083">MT9V117_CAM_LL_STOP_GAIN_METRIC_OFFSET</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00060">MT9V117_CAM_OUTPUT_HEIGHT_OFFSET</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00059">MT9V117_CAM_OUTPUT_WIDTH_OFFSET</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00040">MT9V117_CAM_SENSOR_CFG_CPIPE_LAST_ROW_OFFSET</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00039">MT9V117_CAM_SENSOR_CFG_FRAME_LENGTH_LINES_OFFSET</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00043">MT9V117_CAM_SENSOR_CFG_MAX_FDZONE_60_OFFSET</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00045">MT9V117_CAM_SENSOR_CFG_TARGET_FDZONE_60_OFFSET</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00038">MT9V117_CAM_SENSOR_CFG_X_ADDR_END_OFFSET</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00036">MT9V117_CAM_SENSOR_CFG_X_ADDR_START_OFFSET</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00037">MT9V117_CAM_SENSOR_CFG_Y_ADDR_END_OFFSET</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00035">MT9V117_CAM_SENSOR_CFG_Y_ADDR_START_OFFSET</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00047">MT9V117_CAM_SENSOR_CONTROL_READ_MODE_OFFSET</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00048">MT9V117_CAM_SENSOR_CONTROL_Y_SKIP_EN</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00080">MT9V117_CAM_STAT_AE_INITIAL_WINDOW_XEND_OFFSET</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00078">MT9V117_CAM_STAT_AE_INITIAL_WINDOW_XSTART_OFFSET</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00081">MT9V117_CAM_STAT_AE_INITIAL_WINDOW_YEND_OFFSET</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00079">MT9V117_CAM_STAT_AE_INITIAL_WINDOW_YSTART_OFFSET</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00076">MT9V117_CAM_STAT_AWB_HG_WINDOW_XEND_OFFSET</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00074">MT9V117_CAM_STAT_AWB_HG_WINDOW_XSTART_OFFSET</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00077">MT9V117_CAM_STAT_AWB_HG_WINDOW_YEND_OFFSET</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00075">MT9V117_CAM_STAT_AWB_HG_WINDOW_YSTART_OFFSET</a>, <a class="el" href="mt9v117_8c_source.html#l00214">write_reg()</a>, and <a class="el" href="mt9v117_8c_source.html#l00258">write_var()</a>.</p>
 
-<p>Referenced by <a class="el" href="mt9v117_8c_source.html#l00368">mt9v117_init()</a>.</p>
-
-<p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="mt9v117_8c_ab5e11208a0a26679e535aaef6e6043ad_cgraph.png" border="0" usemap="#mt9v117_8c_ab5e11208a0a26679e535aaef6e6043ad_cgraph" alt=""/></div>
-<map name="mt9v117_8c_ab5e11208a0a26679e535aaef6e6043ad_cgraph" id="mt9v117_8c_ab5e11208a0a26679e535aaef6e6043ad_cgraph">
-<area shape="rect" id="node2" href="mt9v117_8c.html#a930a08d54ce09662cbac826ff7a052bf" title="Write multiple bytes to a single register. " alt="" coords="304,31,384,57"/><area shape="rect" id="node6" href="mt9v117_8c.html#acd33743f2f52bd5711b8c978e7cf3df2" title="write_var" alt="" coords="177,56,256,83"/><area shape="rect" id="node3" href="group__i2c.html#gad729c07f3a162f0463cbe381f4b538d3" title="Submit a write only transaction and wait for it to complete. " alt="" coords="432,31,592,57"/><area shape="rect" id="node4" href="group__i2c.html#ga78e9c2753ae191a4aed66b82077b1dfe" title="i2c_submit() function " alt="" coords="666,5,757,32"/><area shape="rect" id="node5" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup. " alt="" coords="640,56,783,83"/></map>
-</div>
-</p>
+<p>Referenced by <a class="el" href="mt9v117_8c_source.html#l00381">mt9v117_init()</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="mt9v117_8c_ab5e11208a0a26679e535aaef6e6043ad_cgraph.png" border="0" usemap="#mt9v117_8c_ab5e11208a0a26679e535aaef6e6043ad_cgraph" alt=""/></div>
+<map name="mt9v117_8c_ab5e11208a0a26679e535aaef6e6043ad_cgraph" id="mt9v117_8c_ab5e11208a0a26679e535aaef6e6043ad_cgraph">
+<area shape="rect" id="node2" href="mt9v117_8c.html#a930a08d54ce09662cbac826ff7a052bf" title="Write multiple bytes to a single register. " alt="" coords="304,31,384,57"/><area shape="rect" id="node6" href="mt9v117_8c.html#acd33743f2f52bd5711b8c978e7cf3df2" title="write_var" alt="" coords="177,56,256,83"/><area shape="rect" id="node3" href="group__i2c.html#gad729c07f3a162f0463cbe381f4b538d3" title="Submit a write only transaction and wait for it to complete. " alt="" coords="432,31,592,57"/><area shape="rect" id="node4" href="group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction. " alt="" coords="666,5,757,32"/><area shape="rect" id="node5" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup. " alt="" coords="640,56,783,83"/></map>
+</div>
+</p>
+
+<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mt9v117_8c_ab5e11208a0a26679e535aaef6e6043ad_icgraph.png" border="0" usemap="#mt9v117_8c_ab5e11208a0a26679e535aaef6e6043ad_icgraph" alt=""/></div>
 <map name="mt9v117_8c_ab5e11208a0a26679e535aaef6e6043ad_icgraph" id="mt9v117_8c_ab5e11208a0a26679e535aaef6e6043ad_icgraph">
-<area shape="rect" id="node2" href="mt9v117_8h.html#aa6ecb42ade7b40f50bc3cf8f306583a7" title="Initialisation of the Aptina MT9V117 CMOS sensor (1/6 inch VGA, bottom camera) " alt="" coords="177,56,283,83"/><area shape="rect" id="node3" href="group__mcu__periph.html#gaf8669c6ba2d12460cf1172edd1a5e4a3" title="Optional board init function called at the end of mcu_init(). " alt="" coords="331,56,424,83"/><area shape="rect" id="node4" href="group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b" title="Microcontroller peripherals initialization. " alt="" coords="472,56,548,83"/><area shape="rect" id="node5" href="lpc21_2uart__tunnel_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="609,5,663,32"/><area shape="rect" id="node6" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="596,56,676,83"/><area shape="rect" id="node10" href="fixedwing_2main__fbw_8h.html#ad86b7fe577a2414df2c7a5a9222aa45a" title="init_fbw" alt="" coords="601,107,671,133"/><area shape="rect" id="node7" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="764,5,819,32"/><area shape="rect" id="node8" href="nps__autopilot__rotorcraft_8c.html#a3348493e992edd2442581c1d09446b4b" title="nps_autopilot_init" alt="" coords="724,56,859,83"/><area shape="rect" id="node9" href="nps__main__hitl_8c.html#a72ef549ee35deec8c017e83d9de38f66" title="nps_radio_and_autopilot_init" alt="" coords="907,56,1111,83"/><area shape="rect" id="node11" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="756,107,827,133"/></map>
+<area shape="rect" id="node2" href="mt9v117_8h.html#aa6ecb42ade7b40f50bc3cf8f306583a7" title="Initialisation of the Aptina MT9V117 CMOS sensor (1/6 inch VGA, bottom camera) " alt="" coords="177,5,283,32"/></map>
 </div>
 </p>
 
@@ -323,31 +336,18 @@ len</td>
 
 <p>Initialisation of the Aptina MT9V117 CMOS sensor (1/6 inch VGA, bottom camera) </p>
 
-<p>Definition at line <a class="el" href="mt9v117_8c_source.html#l00368">368</a> of file <a class="el" href="mt9v117_8c_source.html">mt9v117.c</a>.</p>
+<p>Definition at line <a class="el" href="mt9v117_8c_source.html#l00381">381</a> of file <a class="el" href="mt9v117_8c_source.html">mt9v117.c</a>.</p>
 
-<p>References <a class="el" href="mt9v117_8h_source.html#l00057">mt9v117_t::i2c_trans</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00027">MT9V117_AE_RULE_ALGO_AVERAGE</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00026">MT9V117_AE_RULE_ALGO_OFFSET</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00025">MT9V117_AE_RULE_VAR</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00031">MT9V117_AWB_PIXEL_THRESHOLD_COUNT_OFFSET</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00030">MT9V117_AWB_VAR</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00033">MT9V117_CAM_CTRL_VAR</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00069">MT9V117_CAM_OUTPUT_FORMAT_BT656_ENABLE</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00060">MT9V117_CAM_OUTPUT_FORMAT_OFFSET</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00007">MT9V117_CHIP_ID</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00008">MT9V117_CHIP_ID_RESP</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00012">MT9V117_COMMAND</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00013">MT9V117_COMMAND_OK</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00016">MT9V117_COMMAND_SET_STATE</a>, <a class="el" href="mt9v117_8c_source.html#l00323">mt9v117_config()</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00011">MT9V117_PAD_SLEW</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00009">MT9V117_RESET_MISC_CTRL</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00010">MT9V117_RESET_SOC_I2C</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00085">MT9V117_SYS_STATE_ENTER_CONFIG_CHANGE</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00084">MT9V117_SYSMGR_NEXT_STATE_OFFSET</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00083">MT9V117_SYSMGR_VAR</a>, <a class="el" href="mt9v117_8c_source.html#l00260">mt9v117_write_patch()</a>, <a class="el" href="mt9v117_8c_source.html#l00230">read_reg()</a>, <a class="el" href="mt9v117_8c_source.html#l00254">read_var()</a>, <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>, <a class="el" href="mt9v117_8c_source.html#l00203">write_reg()</a>, and <a class="el" href="mt9v117_8c_source.html#l00247">write_var()</a>.</p>
-
-<p>Referenced by <a class="el" href="bebop_2board_8c_source.html#l00129">board_init2()</a>.</p>
-
-<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="mt9v117_8c_aa6ecb42ade7b40f50bc3cf8f306583a7_cgraph.png" border="0" usemap="#mt9v117_8c_aa6ecb42ade7b40f50bc3cf8f306583a7_cgraph" alt=""/></div>
-<map name="mt9v117_8c_aa6ecb42ade7b40f50bc3cf8f306583a7_cgraph" id="mt9v117_8c_aa6ecb42ade7b40f50bc3cf8f306583a7_cgraph">
-<area shape="rect" id="node2" href="mt9v117_8c.html#ab5e11208a0a26679e535aaef6e6043ad" title="mt9v117_config" alt="" coords="176,43,300,69"/><area shape="rect" id="node3" href="mt9v117_8c.html#a930a08d54ce09662cbac826ff7a052bf" title="Write multiple bytes to a single register. " alt="" coords="492,93,572,120"/><area shape="rect" id="node7" href="mt9v117_8c.html#acd33743f2f52bd5711b8c978e7cf3df2" title="write_var" alt="" coords="365,93,444,120"/><area shape="rect" id="node8" href="mt9v117_8c.html#aef8703a6aee9810c99eaa79ca4adad8a" title="mt9v117_write_patch" alt="" coords="159,144,317,171"/><area shape="rect" id="node9" href="mt9v117_8c.html#aa371a374d0c17594e7eed5c751c2df08" title="Read multiple bytes from a register. " alt="" coords="365,245,444,272"/><area shape="rect" id="node11" href="mt9v117_8c.html#affb04605c4916694762cf7744dd5e744" title="read_var" alt="" coords="199,245,277,272"/><area shape="rect" id="node4" href="group__i2c.html#gad729c07f3a162f0463cbe381f4b538d3" title="Submit a write only transaction and wait for it to complete. " alt="" coords="626,195,786,221"/><area shape="rect" id="node5" href="group__i2c.html#ga78e9c2753ae191a4aed66b82077b1dfe" title="i2c_submit() function " alt="" coords="866,195,957,221"/><area shape="rect" id="node6" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup. " alt="" coords="840,245,983,272"/><area shape="rect" id="node10" href="group__i2c.html#ga0666a38e1bb2dc7a6b796a404e27fef4" title="Submit a write/read transaction and wait for it to complete. " alt="" coords="620,245,792,272"/></map>
-</div>
-</p>
+<p>References <a class="el" href="mt9v117_8h_source.html#l00060">mt9v117_t::i2c_trans</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00023">MT9V117_AE_LUMA</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00028">MT9V117_AE_RULE_ALGO_AVERAGE</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00027">MT9V117_AE_RULE_ALGO_OFFSET</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00026">MT9V117_AE_RULE_VAR</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00032">MT9V117_AWB_PIXEL_THRESHOLD_COUNT_OFFSET</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00031">MT9V117_AWB_VAR</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00034">MT9V117_CAM_CTRL_VAR</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00070">MT9V117_CAM_OUTPUT_FORMAT_BT656_ENABLE</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00061">MT9V117_CAM_OUTPUT_FORMAT_OFFSET</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00007">MT9V117_CHIP_ID</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00008">MT9V117_CHIP_ID_RESP</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00012">MT9V117_COMMAND</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00013">MT9V117_COMMAND_OK</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00016">MT9V117_COMMAND_SET_STATE</a>, <a class="el" href="mt9v117_8c_source.html#l00334">mt9v117_config()</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00011">MT9V117_PAD_SLEW</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00009">MT9V117_RESET_MISC_CTRL</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00010">MT9V117_RESET_SOC_I2C</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00086">MT9V117_SYS_STATE_ENTER_CONFIG_CHANGE</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00085">MT9V117_SYSMGR_NEXT_STATE_OFFSET</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00084">MT9V117_SYSMGR_VAR</a>, <a class="el" href="mt9v117_8h_source.html#l00055">MT9V117_TARGET_LUMA</a>, <a class="el" href="mt9v117_8c_source.html#l00271">mt9v117_write_patch()</a>, <a class="el" href="mt9v117_8c_source.html#l00241">read_reg()</a>, <a class="el" href="mt9v117_8c_source.html#l00265">read_var()</a>, <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>, <a class="el" href="mt9v117_8c_source.html#l00214">write_reg()</a>, and <a class="el" href="mt9v117_8c_source.html#l00258">write_var()</a>.</p>
 
 <p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="mt9v117_8c_aa6ecb42ade7b40f50bc3cf8f306583a7_icgraph.png" border="0" usemap="#mt9v117_8c_aa6ecb42ade7b40f50bc3cf8f306583a7_icgraph" alt=""/></div>
-<map name="mt9v117_8c_aa6ecb42ade7b40f50bc3cf8f306583a7_icgraph" id="mt9v117_8c_aa6ecb42ade7b40f50bc3cf8f306583a7_icgraph">
-<area shape="rect" id="node2" href="group__mcu__periph.html#gaf8669c6ba2d12460cf1172edd1a5e4a3" title="Optional board init function called at the end of mcu_init(). " alt="" coords="159,56,252,83"/><area shape="rect" id="node3" href="group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b" title="Microcontroller peripherals initialization. " alt="" coords="300,56,376,83"/><area shape="rect" id="node4" href="lpc21_2uart__tunnel_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="437,5,491,32"/><area shape="rect" id="node5" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="424,56,504,83"/><area shape="rect" id="node9" href="fixedwing_2main__fbw_8h.html#ad86b7fe577a2414df2c7a5a9222aa45a" title="init_fbw" alt="" coords="429,107,499,133"/><area shape="rect" id="node6" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="592,5,647,32"/><area shape="rect" id="node7" href="nps__autopilot__rotorcraft_8c.html#a3348493e992edd2442581c1d09446b4b" title="nps_autopilot_init" alt="" coords="552,56,687,83"/><area shape="rect" id="node8" href="nps__main__hitl_8c.html#a72ef549ee35deec8c017e83d9de38f66" title="nps_radio_and_autopilot_init" alt="" coords="735,56,939,83"/><area shape="rect" id="node10" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="584,107,655,133"/></map>
+<div class="center"><img src="mt9v117_8c_aa6ecb42ade7b40f50bc3cf8f306583a7_cgraph.png" border="0" usemap="#mt9v117_8c_aa6ecb42ade7b40f50bc3cf8f306583a7_cgraph" alt=""/></div>
+<map name="mt9v117_8c_aa6ecb42ade7b40f50bc3cf8f306583a7_cgraph" id="mt9v117_8c_aa6ecb42ade7b40f50bc3cf8f306583a7_cgraph">
+<area shape="rect" id="node2" href="mt9v117_8c.html#ab5e11208a0a26679e535aaef6e6043ad" title="mt9v117_config" alt="" coords="176,43,300,69"/><area shape="rect" id="node3" href="mt9v117_8c.html#a930a08d54ce09662cbac826ff7a052bf" title="Write multiple bytes to a single register. " alt="" coords="492,93,572,120"/><area shape="rect" id="node7" href="mt9v117_8c.html#acd33743f2f52bd5711b8c978e7cf3df2" title="write_var" alt="" coords="365,93,444,120"/><area shape="rect" id="node8" href="mt9v117_8c.html#aef8703a6aee9810c99eaa79ca4adad8a" title="mt9v117_write_patch" alt="" coords="159,144,317,171"/><area shape="rect" id="node9" href="mt9v117_8c.html#aa371a374d0c17594e7eed5c751c2df08" title="Read multiple bytes from a register. " alt="" coords="365,245,444,272"/><area shape="rect" id="node11" href="mt9v117_8c.html#affb04605c4916694762cf7744dd5e744" title="read_var" alt="" coords="199,245,277,272"/><area shape="rect" id="node4" href="group__i2c.html#gad729c07f3a162f0463cbe381f4b538d3" title="Submit a write only transaction and wait for it to complete. " alt="" coords="626,195,786,221"/><area shape="rect" id="node5" href="group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction. " alt="" coords="866,195,957,221"/><area shape="rect" id="node6" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup. " alt="" coords="840,245,983,272"/><area shape="rect" id="node10" href="group__i2c.html#ga0666a38e1bb2dc7a6b796a404e27fef4" title="Submit a write/read transaction and wait for it to complete. " alt="" coords="620,245,792,272"/></map>
 </div>
 </p>
 
@@ -375,11 +375,11 @@ len</td>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mt9v117_8c_source.html#l00260">260</a> of file <a class="el" href="mt9v117_8c_source.html">mt9v117.c</a>.</p>
+<p>Definition at line <a class="el" href="mt9v117_8c_source.html#l00271">271</a> of file <a class="el" href="mt9v117_8c_source.html">mt9v117.c</a>.</p>
 
-<p>References <a class="el" href="i2c_8h_source.html#l00122">i2c_transaction::buf</a>, <a class="el" href="mt9v117_8c_source.html#l00180">mt9v117_patch_t::data</a>, <a class="el" href="i2c_8c_source.html#l00295">i2c_blocking_transmit()</a>, <a class="el" href="mt9v117_8h_source.html#l00056">mt9v117_t::i2c_periph</a>, <a class="el" href="mt9v117_8h_source.html#l00057">mt9v117_t::i2c_trans</a>, <a class="el" href="mt9v117_8c_source.html#l00181">mt9v117_patch_t::len</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00018">MT9V117_ACCESS_CTL_STAT</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00029">MT9V117_AE_TRACK_VAR</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00033">MT9V117_CAM_CTRL_VAR</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00012">MT9V117_COMMAND</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00017">MT9V117_COMMAND_APPLY_PATCH</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00013">MT9V117_COMMAND_OK</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00020">MT9V117_LOGICAL_ADDRESS_ACCESS</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00032">MT9V117_LOW_LIGHT_VAR</a>, <a class="el" href="mt9v117_8c_source.html#l00076">MT9V117_PATCH_LINE_NUM</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00096">MT9V117_PATCHLDR_FIRMWARE_ID_OFFSET</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00094">MT9V117_PATCHLDR_LOADER_ADDRESS_OFFSET</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00095">MT9V117_PATCHLDR_PATCH_ID_OFFSET</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00093">MT9V117_PATCHLDR_VAR</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00019">MT9V117_PHYSICAL_ADDRESS_ACCESS</a>, <a class="el" href="mt9v117_8c_source.html#l00230">read_reg()</a>, <a class="el" href="i2c_8h_source.html#l00104">i2c_transaction::slave_addr</a>, <a class="el" href="mt9v117_8c_source.html#l00203">write_reg()</a>, and <a class="el" href="mt9v117_8c_source.html#l00247">write_var()</a>.</p>
+<p>References <a class="el" href="i2c_8h_source.html#l00122">i2c_transaction::buf</a>, <a class="el" href="mt9v117_8c_source.html#l00191">mt9v117_patch_t::data</a>, <a class="el" href="i2c_8c_source.html#l00359">i2c_blocking_transmit()</a>, <a class="el" href="mt9v117_8h_source.html#l00059">mt9v117_t::i2c_periph</a>, <a class="el" href="mt9v117_8h_source.html#l00060">mt9v117_t::i2c_trans</a>, <a class="el" href="mt9v117_8c_source.html#l00192">mt9v117_patch_t::len</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00018">MT9V117_ACCESS_CTL_STAT</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00030">MT9V117_AE_TRACK_VAR</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00034">MT9V117_CAM_CTRL_VAR</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00012">MT9V117_COMMAND</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00017">MT9V117_COMMAND_APPLY_PATCH</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00013">MT9V117_COMMAND_OK</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00020">MT9V117_LOGICAL_ADDRESS_ACCESS</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00033">MT9V117_LOW_LIGHT_VAR</a>, <a class="el" href="mt9v117_8c_source.html#l00087">MT9V117_PATCH_LINE_NUM</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00097">MT9V117_PATCHLDR_FIRMWARE_ID_OFFSET</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00095">MT9V117_PATCHLDR_LOADER_ADDRESS_OFFSET</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00096">MT9V117_PATCHLDR_PATCH_ID_OFFSET</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00094">MT9V117_PATCHLDR_VAR</a>, <a class="el" href="mt9v117__regs_8h_source.html#l00019">MT9V117_PHYSICAL_ADDRESS_ACCESS</a>, <a class="el" href="mt9v117_8c_source.html#l00241">read_reg()</a>, <a class="el" href="i2c_8h_source.html#l00104">i2c_transaction::slave_addr</a>, <a class="el" href="mt9v117_8c_source.html#l00214">write_reg()</a>, and <a class="el" href="mt9v117_8c_source.html#l00258">write_var()</a>.</p>
 
-<p>Referenced by <a class="el" href="mt9v117_8c_source.html#l00368">mt9v117_init()</a>.</p>
+<p>Referenced by <a class="el" href="mt9v117_8c_source.html#l00381">mt9v117_init()</a>.</p>
 
 <p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -388,7 +388,7 @@ len</td>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mt9v117_8c_aef8703a6aee9810c99eaa79ca4adad8a_cgraph.png" border="0" usemap="#mt9v117_8c_aef8703a6aee9810c99eaa79ca4adad8a_cgraph" alt=""/></div>
 <map name="mt9v117_8c_aef8703a6aee9810c99eaa79ca4adad8a_cgraph" id="mt9v117_8c_aef8703a6aee9810c99eaa79ca4adad8a_cgraph">
-<area shape="rect" id="node2" href="group__i2c.html#gad729c07f3a162f0463cbe381f4b538d3" title="Submit a write only transaction and wait for it to complete. " alt="" coords="473,107,633,133"/><area shape="rect" id="node5" href="mt9v117_8c.html#aa371a374d0c17594e7eed5c751c2df08" title="Read multiple bytes from a register. " alt="" coords="212,157,291,184"/><area shape="rect" id="node7" href="mt9v117_8c.html#a930a08d54ce09662cbac826ff7a052bf" title="Write multiple bytes to a single register. " alt="" coords="339,56,419,83"/><area shape="rect" id="node8" href="mt9v117_8c.html#acd33743f2f52bd5711b8c978e7cf3df2" title="write_var" alt="" coords="212,5,291,32"/><area shape="rect" id="node3" href="group__i2c.html#ga78e9c2753ae191a4aed66b82077b1dfe" title="i2c_submit() function " alt="" coords="713,107,803,133"/><area shape="rect" id="node4" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup. " alt="" coords="687,157,829,184"/><area shape="rect" id="node6" href="group__i2c.html#ga0666a38e1bb2dc7a6b796a404e27fef4" title="Submit a write/read transaction and wait for it to complete. " alt="" coords="467,157,639,184"/></map>
+<area shape="rect" id="node2" href="group__i2c.html#gad729c07f3a162f0463cbe381f4b538d3" title="Submit a write only transaction and wait for it to complete. " alt="" coords="473,107,633,133"/><area shape="rect" id="node5" href="mt9v117_8c.html#aa371a374d0c17594e7eed5c751c2df08" title="Read multiple bytes from a register. " alt="" coords="212,157,291,184"/><area shape="rect" id="node7" href="mt9v117_8c.html#a930a08d54ce09662cbac826ff7a052bf" title="Write multiple bytes to a single register. " alt="" coords="339,56,419,83"/><area shape="rect" id="node8" href="mt9v117_8c.html#acd33743f2f52bd5711b8c978e7cf3df2" title="write_var" alt="" coords="212,5,291,32"/><area shape="rect" id="node3" href="group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction. " alt="" coords="713,107,803,133"/><area shape="rect" id="node4" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup. " alt="" coords="687,157,829,184"/><area shape="rect" id="node6" href="group__i2c.html#ga0666a38e1bb2dc7a6b796a404e27fef4" title="Submit a write/read transaction and wait for it to complete. " alt="" coords="467,157,639,184"/></map>
 </div>
 </p>
 
@@ -399,7 +399,7 @@ len</td>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mt9v117_8c_aef8703a6aee9810c99eaa79ca4adad8a_icgraph.png" border="0" usemap="#mt9v117_8c_aef8703a6aee9810c99eaa79ca4adad8a_icgraph" alt=""/></div>
 <map name="mt9v117_8c_aef8703a6aee9810c99eaa79ca4adad8a_icgraph" id="mt9v117_8c_aef8703a6aee9810c99eaa79ca4adad8a_icgraph">
-<area shape="rect" id="node2" href="mt9v117_8h.html#aa6ecb42ade7b40f50bc3cf8f306583a7" title="Initialisation of the Aptina MT9V117 CMOS sensor (1/6 inch VGA, bottom camera) " alt="" coords="212,56,317,83"/><area shape="rect" id="node3" href="group__mcu__periph.html#gaf8669c6ba2d12460cf1172edd1a5e4a3" title="Optional board init function called at the end of mcu_init(). " alt="" coords="365,56,459,83"/><area shape="rect" id="node4" href="group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b" title="Microcontroller peripherals initialization. " alt="" coords="507,56,583,83"/><area shape="rect" id="node5" href="lpc21_2uart__tunnel_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="643,5,698,32"/><area shape="rect" id="node6" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="631,56,711,83"/><area shape="rect" id="node10" href="fixedwing_2main__fbw_8h.html#ad86b7fe577a2414df2c7a5a9222aa45a" title="init_fbw" alt="" coords="636,107,705,133"/><area shape="rect" id="node7" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="799,5,853,32"/><area shape="rect" id="node8" href="nps__autopilot__rotorcraft_8c.html#a3348493e992edd2442581c1d09446b4b" title="nps_autopilot_init" alt="" coords="759,56,893,83"/><area shape="rect" id="node9" href="nps__main__hitl_8c.html#a72ef549ee35deec8c017e83d9de38f66" title="nps_radio_and_autopilot_init" alt="" coords="941,56,1145,83"/><area shape="rect" id="node11" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="791,107,861,133"/></map>
+<area shape="rect" id="node2" href="mt9v117_8h.html#aa6ecb42ade7b40f50bc3cf8f306583a7" title="Initialisation of the Aptina MT9V117 CMOS sensor (1/6 inch VGA, bottom camera) " alt="" coords="212,5,317,32"/></map>
 </div>
 </p>
 
@@ -445,11 +445,11 @@ len</td>
 
 <p>Read multiple bytes from a register. </p>
 
-<p>Definition at line <a class="el" href="mt9v117_8c_source.html#l00230">230</a> of file <a class="el" href="mt9v117_8c_source.html">mt9v117.c</a>.</p>
+<p>Definition at line <a class="el" href="mt9v117_8c_source.html#l00241">241</a> of file <a class="el" href="mt9v117_8c_source.html">mt9v117.c</a>.</p>
 
-<p>References <a class="el" href="i2c_8h_source.html#l00122">i2c_transaction::buf</a>, <a class="el" href="i2c_8c_source.html#l00337">i2c_blocking_transceive()</a>, <a class="el" href="mt9v117_8h_source.html#l00056">mt9v117_t::i2c_periph</a>, <a class="el" href="mt9v117_8h_source.html#l00057">mt9v117_t::i2c_trans</a>, <a class="el" href="mt9v117_8c_source.html#l00181">mt9v117_patch_t::len</a>, and <a class="el" href="mt9v117__regs_8h_source.html#l00004">MT9V117_ADDRESS</a>.</p>
+<p>References <a class="el" href="i2c_8h_source.html#l00122">i2c_transaction::buf</a>, <a class="el" href="i2c_8c_source.html#l00403">i2c_blocking_transceive()</a>, <a class="el" href="mt9v117_8h_source.html#l00059">mt9v117_t::i2c_periph</a>, <a class="el" href="mt9v117_8h_source.html#l00060">mt9v117_t::i2c_trans</a>, <a class="el" href="mt9v117_8c_source.html#l00192">mt9v117_patch_t::len</a>, and <a class="el" href="mt9v117__regs_8h_source.html#l00004">MT9V117_ADDRESS</a>.</p>
 
-<p>Referenced by <a class="el" href="mt9v117_8c_source.html#l00368">mt9v117_init()</a>, <a class="el" href="mt9v117_8c_source.html#l00260">mt9v117_write_patch()</a>, and <a class="el" href="mt9v117_8c_source.html#l00254">read_var()</a>.</p>
+<p>Referenced by <a class="el" href="mt9v117_8c_source.html#l00381">mt9v117_init()</a>, <a class="el" href="mt9v117_8c_source.html#l00271">mt9v117_write_patch()</a>, and <a class="el" href="mt9v117_8c_source.html#l00265">read_var()</a>.</p>
 
 <p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -458,7 +458,7 @@ len</td>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mt9v117_8c_aa371a374d0c17594e7eed5c751c2df08_cgraph.png" border="0" usemap="#mt9v117_8c_aa371a374d0c17594e7eed5c751c2df08_cgraph" alt=""/></div>
 <map name="mt9v117_8c_aa371a374d0c17594e7eed5c751c2df08_cgraph" id="mt9v117_8c_aa371a374d0c17594e7eed5c751c2df08_cgraph">
-<area shape="rect" id="node2" href="group__i2c.html#ga0666a38e1bb2dc7a6b796a404e27fef4" title="Submit a write/read transaction and wait for it to complete. " alt="" coords="132,31,304,57"/><area shape="rect" id="node3" href="group__i2c.html#ga78e9c2753ae191a4aed66b82077b1dfe" title="i2c_submit() function " alt="" coords="378,5,469,32"/><area shape="rect" id="node4" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup. " alt="" coords="352,56,495,83"/></map>
+<area shape="rect" id="node2" href="group__i2c.html#ga0666a38e1bb2dc7a6b796a404e27fef4" title="Submit a write/read transaction and wait for it to complete. " alt="" coords="132,31,304,57"/><area shape="rect" id="node3" href="group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction. " alt="" coords="378,5,469,32"/><area shape="rect" id="node4" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup. " alt="" coords="352,56,495,83"/></map>
 </div>
 </p>
 
@@ -469,7 +469,7 @@ len</td>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mt9v117_8c_aa371a374d0c17594e7eed5c751c2df08_icgraph.png" border="0" usemap="#mt9v117_8c_aa371a374d0c17594e7eed5c751c2df08_icgraph" alt=""/></div>
 <map name="mt9v117_8c_aa371a374d0c17594e7eed5c751c2df08_icgraph" id="mt9v117_8c_aa371a374d0c17594e7eed5c751c2df08_icgraph">
-<area shape="rect" id="node2" href="mt9v117_8h.html#aa6ecb42ade7b40f50bc3cf8f306583a7" title="Initialisation of the Aptina MT9V117 CMOS sensor (1/6 inch VGA, bottom camera) " alt="" coords="339,56,444,83"/><area shape="rect" id="node12" href="mt9v117_8c.html#aef8703a6aee9810c99eaa79ca4adad8a" title="mt9v117_write_patch" alt="" coords="132,56,291,83"/><area shape="rect" id="node13" href="mt9v117_8c.html#affb04605c4916694762cf7744dd5e744" title="read_var" alt="" coords="172,107,251,133"/><area shape="rect" id="node3" href="group__mcu__periph.html#gaf8669c6ba2d12460cf1172edd1a5e4a3" title="Optional board init function called at the end of mcu_init(). " alt="" coords="492,56,585,83"/><area shape="rect" id="node4" href="group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b" title="Microcontroller peripherals initialization. " alt="" coords="633,56,709,83"/><area shape="rect" id="node5" href="lpc21_2uart__tunnel_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="770,5,825,32"/><area shape="rect" id="node6" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="757,56,837,83"/><area shape="rect" id="node10" href="fixedwing_2main__fbw_8h.html#ad86b7fe577a2414df2c7a5a9222aa45a" title="init_fbw" alt="" coords="763,107,832,133"/><area shape="rect" id="node7" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="925,5,980,32"/><area shape="rect" id="node8" href="nps__autopilot__rotorcraft_8c.html#a3348493e992edd2442581c1d09446b4b" title="nps_autopilot_init" alt="" coords="885,56,1020,83"/><area shape="rect" id="node9" href="nps__main__hitl_8c.html#a72ef549ee35deec8c017e83d9de38f66" title="nps_radio_and_autopilot_init" alt="" coords="1068,56,1272,83"/><area shape="rect" id="node11" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="917,107,988,133"/></map>
+<area shape="rect" id="node2" href="mt9v117_8h.html#aa6ecb42ade7b40f50bc3cf8f306583a7" title="Initialisation of the Aptina MT9V117 CMOS sensor (1/6 inch VGA, bottom camera) " alt="" coords="339,25,444,51"/><area shape="rect" id="node3" href="mt9v117_8c.html#aef8703a6aee9810c99eaa79ca4adad8a" title="mt9v117_write_patch" alt="" coords="132,25,291,51"/><area shape="rect" id="node4" href="mt9v117_8c.html#affb04605c4916694762cf7744dd5e744" title="read_var" alt="" coords="172,75,251,102"/></map>
 </div>
 </p>
 
@@ -519,11 +519,11 @@ len</td>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mt9v117_8c_source.html#l00254">254</a> of file <a class="el" href="mt9v117_8c_source.html">mt9v117.c</a>.</p>
+<p>Definition at line <a class="el" href="mt9v117_8c_source.html#l00265">265</a> of file <a class="el" href="mt9v117_8c_source.html">mt9v117.c</a>.</p>
 
-<p>References <a class="el" href="mt9v117_8c_source.html#l00230">read_reg()</a>.</p>
+<p>References <a class="el" href="mt9v117_8c_source.html#l00241">read_reg()</a>.</p>
 
-<p>Referenced by <a class="el" href="mt9v117_8c_source.html#l00368">mt9v117_init()</a>.</p>
+<p>Referenced by <a class="el" href="mt9v117_8c_source.html#l00381">mt9v117_init()</a>.</p>
 
 <p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -532,7 +532,7 @@ len</td>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mt9v117_8c_affb04605c4916694762cf7744dd5e744_cgraph.png" border="0" usemap="#mt9v117_8c_affb04605c4916694762cf7744dd5e744_cgraph" alt=""/></div>
 <map name="mt9v117_8c_affb04605c4916694762cf7744dd5e744_cgraph" id="mt9v117_8c_affb04605c4916694762cf7744dd5e744_cgraph">
-<area shape="rect" id="node2" href="mt9v117_8c.html#aa371a374d0c17594e7eed5c751c2df08" title="Read multiple bytes from a register. " alt="" coords="132,31,211,57"/><area shape="rect" id="node3" href="group__i2c.html#ga0666a38e1bb2dc7a6b796a404e27fef4" title="Submit a write/read transaction and wait for it to complete. " alt="" coords="259,31,431,57"/><area shape="rect" id="node4" href="group__i2c.html#ga78e9c2753ae191a4aed66b82077b1dfe" title="i2c_submit() function " alt="" coords="505,5,595,32"/><area shape="rect" id="node5" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup. " alt="" coords="479,56,621,83"/></map>
+<area shape="rect" id="node2" href="mt9v117_8c.html#aa371a374d0c17594e7eed5c751c2df08" title="Read multiple bytes from a register. " alt="" coords="132,31,211,57"/><area shape="rect" id="node3" href="group__i2c.html#ga0666a38e1bb2dc7a6b796a404e27fef4" title="Submit a write/read transaction and wait for it to complete. " alt="" coords="259,31,431,57"/><area shape="rect" id="node4" href="group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction. " alt="" coords="505,5,595,32"/><area shape="rect" id="node5" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup. " alt="" coords="479,56,621,83"/></map>
 </div>
 </p>
 
@@ -543,7 +543,7 @@ len</td>
 <div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mt9v117_8c_affb04605c4916694762cf7744dd5e744_icgraph.png" border="0" usemap="#mt9v117_8c_affb04605c4916694762cf7744dd5e744_icgraph" alt=""/></div>
 <map name="mt9v117_8c_affb04605c4916694762cf7744dd5e744_icgraph" id="mt9v117_8c_affb04605c4916694762cf7744dd5e744_icgraph">
-<area shape="rect" id="node2" href="mt9v117_8h.html#aa6ecb42ade7b40f50bc3cf8f306583a7" title="Initialisation of the Aptina MT9V117 CMOS sensor (1/6 inch VGA, bottom camera) " alt="" coords="132,56,237,83"/><area shape="rect" id="node3" href="group__mcu__periph.html#gaf8669c6ba2d12460cf1172edd1a5e4a3" title="Optional board init function called at the end of mcu_init(). " alt="" coords="285,56,379,83"/><area shape="rect" id="node4" href="group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b" title="Microcontroller peripherals initialization. " alt="" coords="427,56,503,83"/><area shape="rect" id="node5" href="lpc21_2uart__tunnel_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="563,5,618,32"/><area shape="rect" id="node6" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="551,56,631,83"/><area shape="rect" id="node10" href="fixedwing_2main__fbw_8h.html#ad86b7fe577a2414df2c7a5a9222aa45a" title="init_fbw" alt="" coords="556,107,625,133"/><area shape="rect" id="node7" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="719,5,773,32"/><area shape="rect" id="node8" href="nps__autopilot__rotorcraft_8c.html#a3348493e992edd2442581c1d09446b4b" title="nps_autopilot_init" alt="" coords="679,56,813,83"/><area shape="rect" id="node9" href="nps__main__hitl_8c.html#a72ef549ee35deec8c017e83d9de38f66" title="nps_radio_and_autopilot_init" alt="" coords="861,56,1065,83"/><area shape="rect" id="node11" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="711,107,781,133"/></map>
+<area shape="rect" id="node2" href="mt9v117_8h.html#aa6ecb42ade7b40f50bc3cf8f306583a7" title="Initialisation of the Aptina MT9V117 CMOS sensor (1/6 inch VGA, bottom camera) " alt="" coords="132,5,237,32"/></map>
 </div>
 </p>
 
@@ -595,11 +595,11 @@ len</td>
 
 <p>Write multiple bytes to a single register. </p>
 
-<p>Definition at line <a class="el" href="mt9v117_8c_source.html#l00203">203</a> of file <a class="el" href="mt9v117_8c_source.html">mt9v117.c</a>.</p>
+<p>Definition at line <a class="el" href="mt9v117_8c_source.html#l00214">214</a> of file <a class="el" href="mt9v117_8c_source.html">mt9v117.c</a>.</p>
 
-<p>References <a class="el" href="i2c_8h_source.html#l00122">i2c_transaction::buf</a>, <a class="el" href="i2c_8c_source.html#l00295">i2c_blocking_transmit()</a>, <a class="el" href="mt9v117_8h_source.html#l00056">mt9v117_t::i2c_periph</a>, <a class="el" href="mt9v117_8h_source.html#l00057">mt9v117_t::i2c_trans</a>, and <a class="el" href="mt9v117__regs_8h_source.html#l00004">MT9V117_ADDRESS</a>.</p>
+<p>References <a class="el" href="i2c_8h_source.html#l00122">i2c_transaction::buf</a>, <a class="el" href="i2c_8c_source.html#l00359">i2c_blocking_transmit()</a>, <a class="el" href="mt9v117_8h_source.html#l00059">mt9v117_t::i2c_periph</a>, <a class="el" href="mt9v117_8h_source.html#l00060">mt9v117_t::i2c_trans</a>, and <a class="el" href="mt9v117__regs_8h_source.html#l00004">MT9V117_ADDRESS</a>.</p>
 
-<p>Referenced by <a class="el" href="mt9v117_8c_source.html#l00323">mt9v117_config()</a>, <a class="el" href="mt9v117_8c_source.html#l00368">mt9v117_init()</a>, <a class="el" href="mt9v117_8c_source.html#l00260">mt9v117_write_patch()</a>, and <a class="el" href="mt9v117_8c_source.html#l00247">write_var()</a>.</p>
+<p>Referenced by <a class="el" href="mt9v117_8c_source.html#l00334">mt9v117_config()</a>, <a class="el" href="mt9v117_8c_source.html#l00381">mt9v117_init()</a>, <a class="el" href="mt9v117_8c_source.html#l00271">mt9v117_write_patch()</a>, and <a class="el" href="mt9v117_8c_source.html#l00258">write_var()</a>.</p>
 
 <p><div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -608,7 +608,7 @@ len</td>
 <div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mt9v117_8c_a930a08d54ce09662cbac826ff7a052bf_cgraph.png" border="0" usemap="#mt9v117_8c_a930a08d54ce09662cbac826ff7a052bf_cgraph" alt=""/></div>
 <map name="mt9v117_8c_a930a08d54ce09662cbac826ff7a052bf_cgraph" id="mt9v117_8c_a930a08d54ce09662cbac826ff7a052bf_cgraph">
-<area shape="rect" id="node2" href="group__i2c.html#gad729c07f3a162f0463cbe381f4b538d3" title="Submit a write only transaction and wait for it to complete. " alt="" coords="133,31,293,57"/><area shape="rect" id="node3" href="group__i2c.html#ga78e9c2753ae191a4aed66b82077b1dfe" title="i2c_submit() function " alt="" coords="367,5,458,32"/><area shape="rect" id="node4" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup. " alt="" coords="341,56,484,83"/></map>
+<area shape="rect" id="node2" href="group__i2c.html#gad729c07f3a162f0463cbe381f4b538d3" title="Submit a write only transaction and wait for it to complete. " alt="" coords="133,31,293,57"/><area shape="rect" id="node3" href="group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction. " alt="" coords="367,5,458,32"/><area shape="rect" id="node4" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup. " alt="" coords="341,56,484,83"/></map>
 </div>
 </p>
 
@@ -619,7 +619,7 @@ len</td>
 <div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mt9v117_8c_a930a08d54ce09662cbac826ff7a052bf_icgraph.png" border="0" usemap="#mt9v117_8c_a930a08d54ce09662cbac826ff7a052bf_icgraph" alt=""/></div>
 <map name="mt9v117_8c_a930a08d54ce09662cbac826ff7a052bf_icgraph" id="mt9v117_8c_a930a08d54ce09662cbac826ff7a052bf_icgraph">
-<area shape="rect" id="node2" href="mt9v117_8c.html#ab5e11208a0a26679e535aaef6e6043ad" title="mt9v117_config" alt="" coords="277,33,401,60"/><area shape="rect" id="node3" href="mt9v117_8h.html#aa6ecb42ade7b40f50bc3cf8f306583a7" title="Initialisation of the Aptina MT9V117 CMOS sensor (1/6 inch VGA, bottom camera) " alt="" coords="467,58,572,85"/><area shape="rect" id="node13" href="mt9v117_8c.html#aef8703a6aee9810c99eaa79ca4adad8a" title="mt9v117_write_patch" alt="" coords="260,134,419,161"/><area shape="rect" id="node14" href="mt9v117_8c.html#acd33743f2f52bd5711b8c978e7cf3df2" title="write_var" alt="" coords="133,84,212,110"/><area shape="rect" id="node4" href="group__mcu__periph.html#gaf8669c6ba2d12460cf1172edd1a5e4a3" title="Optional board init function called at the end of mcu_init(). " alt="" coords="620,58,713,85"/><area shape="rect" id="node5" href="group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b" title="Microcontroller peripherals initialization. " alt="" coords="761,58,837,85"/><area shape="rect" id="node6" href="lpc21_2uart__tunnel_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="898,8,953,34"/><area shape="rect" id="node7" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="885,58,965,85"/><area shape="rect" id="node11" href="fixedwing_2main__fbw_8h.html#ad86b7fe577a2414df2c7a5a9222aa45a" title="init_fbw" alt="" coords="891,109,960,136"/><area shape="rect" id="node8" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1053,58,1108,85"/><area shape="rect" id="node9" href="nps__autopilot__rotorcraft_8c.html#a3348493e992edd2442581c1d09446b4b" title="nps_autopilot_init" alt="" coords="1013,8,1148,34"/><area shape="rect" id="node10" href="nps__main__hitl_8c.html#a72ef549ee35deec8c017e83d9de38f66" title="nps_radio_and_autopilot_init" alt="" coords="1196,8,1400,34"/><area shape="rect" id="node12" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="1045,109,1116,136"/></map>
+<area shape="rect" id="node2" href="mt9v117_8c.html#ab5e11208a0a26679e535aaef6e6043ad" title="mt9v117_config" alt="" coords="277,27,401,54"/><area shape="rect" id="node3" href="mt9v117_8h.html#aa6ecb42ade7b40f50bc3cf8f306583a7" title="Initialisation of the Aptina MT9V117 CMOS sensor (1/6 inch VGA, bottom camera) " alt="" coords="467,53,572,79"/><area shape="rect" id="node4" href="mt9v117_8c.html#aef8703a6aee9810c99eaa79ca4adad8a" title="mt9v117_write_patch" alt="" coords="260,129,419,155"/><area shape="rect" id="node5" href="mt9v117_8c.html#acd33743f2f52bd5711b8c978e7cf3df2" title="write_var" alt="" coords="133,78,212,105"/></map>
 </div>
 </p>
 
@@ -675,11 +675,11 @@ len</td>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mt9v117_8c_source.html#l00247">247</a> of file <a class="el" href="mt9v117_8c_source.html">mt9v117.c</a>.</p>
+<p>Definition at line <a class="el" href="mt9v117_8c_source.html#l00258">258</a> of file <a class="el" href="mt9v117_8c_source.html">mt9v117.c</a>.</p>
 
-<p>References <a class="el" href="mt9v117_8c_source.html#l00203">write_reg()</a>.</p>
+<p>References <a class="el" href="mt9v117_8c_source.html#l00214">write_reg()</a>.</p>
 
-<p>Referenced by <a class="el" href="mt9v117_8c_source.html#l00323">mt9v117_config()</a>, <a class="el" href="mt9v117_8c_source.html#l00368">mt9v117_init()</a>, and <a class="el" href="mt9v117_8c_source.html#l00260">mt9v117_write_patch()</a>.</p>
+<p>Referenced by <a class="el" href="mt9v117_8c_source.html#l00334">mt9v117_config()</a>, <a class="el" href="mt9v117_8c_source.html#l00381">mt9v117_init()</a>, and <a class="el" href="mt9v117_8c_source.html#l00271">mt9v117_write_patch()</a>.</p>
 
 <p><div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -688,7 +688,7 @@ len</td>
 <div id="dynsection-13-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mt9v117_8c_acd33743f2f52bd5711b8c978e7cf3df2_cgraph.png" border="0" usemap="#mt9v117_8c_acd33743f2f52bd5711b8c978e7cf3df2_cgraph" alt=""/></div>
 <map name="mt9v117_8c_acd33743f2f52bd5711b8c978e7cf3df2_cgraph" id="mt9v117_8c_acd33743f2f52bd5711b8c978e7cf3df2_cgraph">
-<area shape="rect" id="node2" href="mt9v117_8c.html#a930a08d54ce09662cbac826ff7a052bf" title="Write multiple bytes to a single register. " alt="" coords="132,31,212,57"/><area shape="rect" id="node3" href="group__i2c.html#gad729c07f3a162f0463cbe381f4b538d3" title="Submit a write only transaction and wait for it to complete. " alt="" coords="260,31,420,57"/><area shape="rect" id="node4" href="group__i2c.html#ga78e9c2753ae191a4aed66b82077b1dfe" title="i2c_submit() function " alt="" coords="494,5,585,32"/><area shape="rect" id="node5" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup. " alt="" coords="468,56,611,83"/></map>
+<area shape="rect" id="node2" href="mt9v117_8c.html#a930a08d54ce09662cbac826ff7a052bf" title="Write multiple bytes to a single register. " alt="" coords="132,31,212,57"/><area shape="rect" id="node3" href="group__i2c.html#gad729c07f3a162f0463cbe381f4b538d3" title="Submit a write only transaction and wait for it to complete. " alt="" coords="260,31,420,57"/><area shape="rect" id="node4" href="group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction. " alt="" coords="494,5,585,32"/><area shape="rect" id="node5" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup. " alt="" coords="468,56,611,83"/></map>
 </div>
 </p>
 
@@ -699,7 +699,7 @@ len</td>
 <div id="dynsection-14-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mt9v117_8c_acd33743f2f52bd5711b8c978e7cf3df2_icgraph.png" border="0" usemap="#mt9v117_8c_acd33743f2f52bd5711b8c978e7cf3df2_icgraph" alt=""/></div>
 <map name="mt9v117_8c_acd33743f2f52bd5711b8c978e7cf3df2_icgraph" id="mt9v117_8c_acd33743f2f52bd5711b8c978e7cf3df2_icgraph">
-<area shape="rect" id="node2" href="mt9v117_8c.html#ab5e11208a0a26679e535aaef6e6043ad" title="mt9v117_config" alt="" coords="149,5,273,32"/><area shape="rect" id="node3" href="mt9v117_8h.html#aa6ecb42ade7b40f50bc3cf8f306583a7" title="Initialisation of the Aptina MT9V117 CMOS sensor (1/6 inch VGA, bottom camera) " alt="" coords="339,56,444,83"/><area shape="rect" id="node13" href="mt9v117_8c.html#aef8703a6aee9810c99eaa79ca4adad8a" title="mt9v117_write_patch" alt="" coords="132,107,291,133"/><area shape="rect" id="node4" href="group__mcu__periph.html#gaf8669c6ba2d12460cf1172edd1a5e4a3" title="Optional board init function called at the end of mcu_init(). " alt="" coords="492,56,585,83"/><area shape="rect" id="node5" href="group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b" title="Microcontroller peripherals initialization. " alt="" coords="633,56,709,83"/><area shape="rect" id="node6" href="lpc21_2uart__tunnel_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="770,5,825,32"/><area shape="rect" id="node7" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="757,56,837,83"/><area shape="rect" id="node11" href="fixedwing_2main__fbw_8h.html#ad86b7fe577a2414df2c7a5a9222aa45a" title="init_fbw" alt="" coords="763,107,832,133"/><area shape="rect" id="node8" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="925,5,980,32"/><area shape="rect" id="node9" href="nps__autopilot__rotorcraft_8c.html#a3348493e992edd2442581c1d09446b4b" title="nps_autopilot_init" alt="" coords="885,56,1020,83"/><area shape="rect" id="node10" href="nps__main__hitl_8c.html#a72ef549ee35deec8c017e83d9de38f66" title="nps_radio_and_autopilot_init" alt="" coords="1068,56,1272,83"/><area shape="rect" id="node12" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="917,107,988,133"/></map>
+<area shape="rect" id="node2" href="mt9v117_8c.html#ab5e11208a0a26679e535aaef6e6043ad" title="mt9v117_config" alt="" coords="149,5,273,32"/><area shape="rect" id="node3" href="mt9v117_8h.html#aa6ecb42ade7b40f50bc3cf8f306583a7" title="Initialisation of the Aptina MT9V117 CMOS sensor (1/6 inch VGA, bottom camera) " alt="" coords="339,56,444,83"/><area shape="rect" id="node4" href="mt9v117_8c.html#aef8703a6aee9810c99eaa79ca4adad8a" title="mt9v117_write_patch" alt="" coords="132,107,291,133"/></map>
 </div>
 </p>
 
@@ -716,7 +716,24 @@ len</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mt9v117_8c_source.html#l00041">41</a> of file <a class="el" href="mt9v117_8c_source.html">mt9v117.c</a>.</p>
+<p>Definition at line <a class="el" href="mt9v117_8c_source.html#l00049">49</a> of file <a class="el" href="mt9v117_8c_source.html">mt9v117.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af2aace6511d89f4676f13ec941992bd4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="mt9v117_8h.html#structmt9v117__t">mt9v117_t</a> mt9v117</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">  .i2c_periph = &amp;i2c0</div>
+<div class="line">}</div>
+</div><!-- fragment -->
+<p>Definition at line <a class="el" href="mt9v117_8c_source.html#l00081">81</a> of file <a class="el" href="mt9v117_8c_source.html">mt9v117.c</a>.</p>
 
 </div>
 </div>
@@ -752,21 +769,21 @@ len</td>
 <div class="line">  {<a class="code" href="mt9v117_8c.html#aa55520cce0671d7afd7e796be1810133">patch_line12</a>, <span class="keyword">sizeof</span>(<a class="code" href="mt9v117_8c.html#aa55520cce0671d7afd7e796be1810133">patch_line12</a>)},</div>
 <div class="line">  {<a class="code" href="mt9v117_8c.html#a8fd8d8d9bb0a3354cbb15866acfd584c">patch_line13</a>, <span class="keyword">sizeof</span>(<a class="code" href="mt9v117_8c.html#a8fd8d8d9bb0a3354cbb15866acfd584c">patch_line13</a>)}</div>
 <div class="line">}</div>
-<div class="ttc" id="mt9v117_8c_html_ac2ccc3faf1e555d86beb027c936b5ee5"><div class="ttname"><a href="mt9v117_8c.html#ac2ccc3faf1e555d86beb027c936b5ee5">patch_line11</a></div><div class="ttdeci">static uint8_t patch_line11[]</div><div class="ttdef"><b>Definition:</b> <a href="mt9v117_8c_source.html#l00157">mt9v117.c:157</a></div></div>
-<div class="ttc" id="mt9v117_8c_html_a7f9cab53174eec39c81da4aea47085d9"><div class="ttname"><a href="mt9v117_8c.html#a7f9cab53174eec39c81da4aea47085d9">patch_line7</a></div><div class="ttdeci">static uint8_t patch_line7[]</div><div class="ttdef"><b>Definition:</b> <a href="mt9v117_8c_source.html#l00125">mt9v117.c:125</a></div></div>
-<div class="ttc" id="mt9v117_8c_html_a15200f80f57155acc46846a2cb59bcec"><div class="ttname"><a href="mt9v117_8c.html#a15200f80f57155acc46846a2cb59bcec">patch_line3</a></div><div class="ttdeci">static uint8_t patch_line3[]</div><div class="ttdef"><b>Definition:</b> <a href="mt9v117_8c_source.html#l00093">mt9v117.c:93</a></div></div>
-<div class="ttc" id="mt9v117_8c_html_add3aa1b600758e7fa22b2184140444f4"><div class="ttname"><a href="mt9v117_8c.html#add3aa1b600758e7fa22b2184140444f4">patch_line1</a></div><div class="ttdeci">static uint8_t patch_line1[]</div><div class="ttdef"><b>Definition:</b> <a href="mt9v117_8c_source.html#l00077">mt9v117.c:77</a></div></div>
-<div class="ttc" id="mt9v117_8c_html_a3be0e97ad177024fdee9edf6ae566119"><div class="ttname"><a href="mt9v117_8c.html#a3be0e97ad177024fdee9edf6ae566119">patch_line9</a></div><div class="ttdeci">static uint8_t patch_line9[]</div><div class="ttdef"><b>Definition:</b> <a href="mt9v117_8c_source.html#l00141">mt9v117.c:141</a></div></div>
-<div class="ttc" id="mt9v117_8c_html_a7049e331963c9d1c15a8c1ac661f4d47"><div class="ttname"><a href="mt9v117_8c.html#a7049e331963c9d1c15a8c1ac661f4d47">patch_line6</a></div><div class="ttdeci">static uint8_t patch_line6[]</div><div class="ttdef"><b>Definition:</b> <a href="mt9v117_8c_source.html#l00117">mt9v117.c:117</a></div></div>
-<div class="ttc" id="mt9v117_8c_html_a34ecbf1bc1887d2596b46bb985f339d8"><div class="ttname"><a href="mt9v117_8c.html#a34ecbf1bc1887d2596b46bb985f339d8">patch_line8</a></div><div class="ttdeci">static uint8_t patch_line8[]</div><div class="ttdef"><b>Definition:</b> <a href="mt9v117_8c_source.html#l00133">mt9v117.c:133</a></div></div>
-<div class="ttc" id="mt9v117_8c_html_a8091356d84ca5d2d204e5a4ed9f75ae3"><div class="ttname"><a href="mt9v117_8c.html#a8091356d84ca5d2d204e5a4ed9f75ae3">patch_line4</a></div><div class="ttdeci">static uint8_t patch_line4[]</div><div class="ttdef"><b>Definition:</b> <a href="mt9v117_8c_source.html#l00101">mt9v117.c:101</a></div></div>
-<div class="ttc" id="mt9v117_8c_html_aa55520cce0671d7afd7e796be1810133"><div class="ttname"><a href="mt9v117_8c.html#aa55520cce0671d7afd7e796be1810133">patch_line12</a></div><div class="ttdeci">static uint8_t patch_line12[]</div><div class="ttdef"><b>Definition:</b> <a href="mt9v117_8c_source.html#l00165">mt9v117.c:165</a></div></div>
-<div class="ttc" id="mt9v117_8c_html_a496b3b82f61f9bfc4a698c988a8366bb"><div class="ttname"><a href="mt9v117_8c.html#a496b3b82f61f9bfc4a698c988a8366bb">patch_line2</a></div><div class="ttdeci">static uint8_t patch_line2[]</div><div class="ttdef"><b>Definition:</b> <a href="mt9v117_8c_source.html#l00085">mt9v117.c:85</a></div></div>
-<div class="ttc" id="mt9v117_8c_html_a8fd8d8d9bb0a3354cbb15866acfd584c"><div class="ttname"><a href="mt9v117_8c.html#a8fd8d8d9bb0a3354cbb15866acfd584c">patch_line13</a></div><div class="ttdeci">static uint8_t patch_line13[]</div><div class="ttdef"><b>Definition:</b> <a href="mt9v117_8c_source.html#l00173">mt9v117.c:173</a></div></div>
-<div class="ttc" id="mt9v117_8c_html_a4851161d3bcb800486f7c605f7f452e3"><div class="ttname"><a href="mt9v117_8c.html#a4851161d3bcb800486f7c605f7f452e3">patch_line10</a></div><div class="ttdeci">static uint8_t patch_line10[]</div><div class="ttdef"><b>Definition:</b> <a href="mt9v117_8c_source.html#l00149">mt9v117.c:149</a></div></div>
-<div class="ttc" id="mt9v117_8c_html_ac286696034c656453faf01721b7e3849"><div class="ttname"><a href="mt9v117_8c.html#ac286696034c656453faf01721b7e3849">patch_line5</a></div><div class="ttdeci">static uint8_t patch_line5[]</div><div class="ttdef"><b>Definition:</b> <a href="mt9v117_8c_source.html#l00109">mt9v117.c:109</a></div></div>
+<div class="ttc" id="mt9v117_8c_html_ac2ccc3faf1e555d86beb027c936b5ee5"><div class="ttname"><a href="mt9v117_8c.html#ac2ccc3faf1e555d86beb027c936b5ee5">patch_line11</a></div><div class="ttdeci">static uint8_t patch_line11[]</div><div class="ttdef"><b>Definition:</b> <a href="mt9v117_8c_source.html#l00168">mt9v117.c:168</a></div></div>
+<div class="ttc" id="mt9v117_8c_html_a7f9cab53174eec39c81da4aea47085d9"><div class="ttname"><a href="mt9v117_8c.html#a7f9cab53174eec39c81da4aea47085d9">patch_line7</a></div><div class="ttdeci">static uint8_t patch_line7[]</div><div class="ttdef"><b>Definition:</b> <a href="mt9v117_8c_source.html#l00136">mt9v117.c:136</a></div></div>
+<div class="ttc" id="mt9v117_8c_html_a15200f80f57155acc46846a2cb59bcec"><div class="ttname"><a href="mt9v117_8c.html#a15200f80f57155acc46846a2cb59bcec">patch_line3</a></div><div class="ttdeci">static uint8_t patch_line3[]</div><div class="ttdef"><b>Definition:</b> <a href="mt9v117_8c_source.html#l00104">mt9v117.c:104</a></div></div>
+<div class="ttc" id="mt9v117_8c_html_add3aa1b600758e7fa22b2184140444f4"><div class="ttname"><a href="mt9v117_8c.html#add3aa1b600758e7fa22b2184140444f4">patch_line1</a></div><div class="ttdeci">static uint8_t patch_line1[]</div><div class="ttdef"><b>Definition:</b> <a href="mt9v117_8c_source.html#l00088">mt9v117.c:88</a></div></div>
+<div class="ttc" id="mt9v117_8c_html_a3be0e97ad177024fdee9edf6ae566119"><div class="ttname"><a href="mt9v117_8c.html#a3be0e97ad177024fdee9edf6ae566119">patch_line9</a></div><div class="ttdeci">static uint8_t patch_line9[]</div><div class="ttdef"><b>Definition:</b> <a href="mt9v117_8c_source.html#l00152">mt9v117.c:152</a></div></div>
+<div class="ttc" id="mt9v117_8c_html_a7049e331963c9d1c15a8c1ac661f4d47"><div class="ttname"><a href="mt9v117_8c.html#a7049e331963c9d1c15a8c1ac661f4d47">patch_line6</a></div><div class="ttdeci">static uint8_t patch_line6[]</div><div class="ttdef"><b>Definition:</b> <a href="mt9v117_8c_source.html#l00128">mt9v117.c:128</a></div></div>
+<div class="ttc" id="mt9v117_8c_html_a34ecbf1bc1887d2596b46bb985f339d8"><div class="ttname"><a href="mt9v117_8c.html#a34ecbf1bc1887d2596b46bb985f339d8">patch_line8</a></div><div class="ttdeci">static uint8_t patch_line8[]</div><div class="ttdef"><b>Definition:</b> <a href="mt9v117_8c_source.html#l00144">mt9v117.c:144</a></div></div>
+<div class="ttc" id="mt9v117_8c_html_a8091356d84ca5d2d204e5a4ed9f75ae3"><div class="ttname"><a href="mt9v117_8c.html#a8091356d84ca5d2d204e5a4ed9f75ae3">patch_line4</a></div><div class="ttdeci">static uint8_t patch_line4[]</div><div class="ttdef"><b>Definition:</b> <a href="mt9v117_8c_source.html#l00112">mt9v117.c:112</a></div></div>
+<div class="ttc" id="mt9v117_8c_html_aa55520cce0671d7afd7e796be1810133"><div class="ttname"><a href="mt9v117_8c.html#aa55520cce0671d7afd7e796be1810133">patch_line12</a></div><div class="ttdeci">static uint8_t patch_line12[]</div><div class="ttdef"><b>Definition:</b> <a href="mt9v117_8c_source.html#l00176">mt9v117.c:176</a></div></div>
+<div class="ttc" id="mt9v117_8c_html_a496b3b82f61f9bfc4a698c988a8366bb"><div class="ttname"><a href="mt9v117_8c.html#a496b3b82f61f9bfc4a698c988a8366bb">patch_line2</a></div><div class="ttdeci">static uint8_t patch_line2[]</div><div class="ttdef"><b>Definition:</b> <a href="mt9v117_8c_source.html#l00096">mt9v117.c:96</a></div></div>
+<div class="ttc" id="mt9v117_8c_html_a8fd8d8d9bb0a3354cbb15866acfd584c"><div class="ttname"><a href="mt9v117_8c.html#a8fd8d8d9bb0a3354cbb15866acfd584c">patch_line13</a></div><div class="ttdeci">static uint8_t patch_line13[]</div><div class="ttdef"><b>Definition:</b> <a href="mt9v117_8c_source.html#l00184">mt9v117.c:184</a></div></div>
+<div class="ttc" id="mt9v117_8c_html_a4851161d3bcb800486f7c605f7f452e3"><div class="ttname"><a href="mt9v117_8c.html#a4851161d3bcb800486f7c605f7f452e3">patch_line10</a></div><div class="ttdeci">static uint8_t patch_line10[]</div><div class="ttdef"><b>Definition:</b> <a href="mt9v117_8c_source.html#l00160">mt9v117.c:160</a></div></div>
+<div class="ttc" id="mt9v117_8c_html_ac286696034c656453faf01721b7e3849"><div class="ttname"><a href="mt9v117_8c.html#ac286696034c656453faf01721b7e3849">patch_line5</a></div><div class="ttdeci">static uint8_t patch_line5[]</div><div class="ttdef"><b>Definition:</b> <a href="mt9v117_8c_source.html#l00120">mt9v117.c:120</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="mt9v117_8c_source.html#l00184">184</a> of file <a class="el" href="mt9v117_8c_source.html">mt9v117.c</a>.</p>
+<p>Definition at line <a class="el" href="mt9v117_8c_source.html#l00195">195</a> of file <a class="el" href="mt9v117_8c_source.html">mt9v117.c</a>.</p>
 
 </div>
 </div>
@@ -795,7 +812,7 @@ len</td>
 <div class="line">  0xff, 0xff, 0xe7, 0x1c, 0x88, 0x36, 0x09, 0x0f, 0x00, 0xb3</div>
 <div class="line">}</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="mt9v117_8c_source.html#l00077">77</a> of file <a class="el" href="mt9v117_8c_source.html">mt9v117.c</a>.</p>
+<p>Definition at line <a class="el" href="mt9v117_8c_source.html#l00088">88</a> of file <a class="el" href="mt9v117_8c_source.html">mt9v117.c</a>.</p>
 
 </div>
 </div>
@@ -824,7 +841,7 @@ len</td>
 <div class="line">  0x03, 0xc0, 0xc0, 0xf1, 0x0d, 0x9e, 0x01, 0x00, 0xe8, 0x04</div>
 <div class="line">}</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="mt9v117_8c_source.html#l00149">149</a> of file <a class="el" href="mt9v117_8c_source.html">mt9v117.c</a>.</p>
+<p>Definition at line <a class="el" href="mt9v117_8c_source.html#l00160">160</a> of file <a class="el" href="mt9v117_8c_source.html">mt9v117.c</a>.</p>
 
 </div>
 </div>
@@ -853,7 +870,7 @@ len</td>
 <div class="line">  0x81, 0x41, 0xe0, 0x02, 0x81, 0x20, 0x08, 0xf7, 0x81, 0x34</div>
 <div class="line">}</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="mt9v117_8c_source.html#l00157">157</a> of file <a class="el" href="mt9v117_8c_source.html">mt9v117.c</a>.</p>
+<p>Definition at line <a class="el" href="mt9v117_8c_source.html#l00168">168</a> of file <a class="el" href="mt9v117_8c_source.html">mt9v117.c</a>.</p>
 
 </div>
 </div>
@@ -882,7 +899,7 @@ len</td>
 <div class="line">  0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00</div>
 <div class="line">}</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="mt9v117_8c_source.html#l00165">165</a> of file <a class="el" href="mt9v117_8c_source.html">mt9v117.c</a>.</p>
+<p>Definition at line <a class="el" href="mt9v117_8c_source.html#l00176">176</a> of file <a class="el" href="mt9v117_8c_source.html">mt9v117.c</a>.</p>
 
 </div>
 </div>
@@ -908,7 +925,7 @@ len</td>
 <div class="line">  0xff, 0xff, 0xe8, 0x08, 0xff, 0xff, 0xf1, 0x54</div>
 <div class="line">}</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="mt9v117_8c_source.html#l00173">173</a> of file <a class="el" href="mt9v117_8c_source.html">mt9v117.c</a>.</p>
+<p>Definition at line <a class="el" href="mt9v117_8c_source.html#l00184">184</a> of file <a class="el" href="mt9v117_8c_source.html">mt9v117.c</a>.</p>
 
 </div>
 </div>
@@ -937,7 +954,7 @@ len</td>
 <div class="line">  0x00, 0x00, 0xff, 0xf0, 0x21, 0x8c, 0xf0, 0x10, 0x1a, 0x22</div>
 <div class="line">}</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="mt9v117_8c_source.html#l00085">85</a> of file <a class="el" href="mt9v117_8c_source.html">mt9v117.c</a>.</p>
+<p>Definition at line <a class="el" href="mt9v117_8c_source.html#l00096">96</a> of file <a class="el" href="mt9v117_8c_source.html">mt9v117.c</a>.</p>
 
 </div>
 </div>
@@ -966,7 +983,7 @@ len</td>
 <div class="line">  0x3e, 0xd0, 0xb0, 0x60, 0xb0, 0x25, 0x7e, 0xe0, 0x78, 0xe0</div>
 <div class="line">}</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="mt9v117_8c_source.html#l00093">93</a> of file <a class="el" href="mt9v117_8c_source.html">mt9v117.c</a>.</p>
+<p>Definition at line <a class="el" href="mt9v117_8c_source.html#l00104">104</a> of file <a class="el" href="mt9v117_8c_source.html">mt9v117.c</a>.</p>
 
 </div>
 </div>
@@ -995,7 +1012,7 @@ len</td>
 <div class="line">  0xff, 0x00, 0x3e, 0xd0, 0xb1, 0x04, 0x7e, 0xe0, 0x78, 0xe0</div>
 <div class="line">}</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="mt9v117_8c_source.html#l00101">101</a> of file <a class="el" href="mt9v117_8c_source.html">mt9v117.c</a>.</p>
+<p>Definition at line <a class="el" href="mt9v117_8c_source.html#l00112">112</a> of file <a class="el" href="mt9v117_8c_source.html">mt9v117.c</a>.</p>
 
 </div>
 </div>
@@ -1024,7 +1041,7 @@ len</td>
 <div class="line">  0x7e, 0xe0, 0xc0, 0xf1, 0x09, 0x1e, 0x03, 0xc0, 0xc1, 0xa1</div>
 <div class="line">}</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="mt9v117_8c_source.html#l00109">109</a> of file <a class="el" href="mt9v117_8c_source.html">mt9v117.c</a>.</p>
+<p>Definition at line <a class="el" href="mt9v117_8c_source.html#l00120">120</a> of file <a class="el" href="mt9v117_8c_source.html">mt9v117.c</a>.</p>
 
 </div>
 </div>
@@ -1053,7 +1070,7 @@ len</td>
 <div class="line">  0x01, 0x00, 0xd8, 0x00, 0xb8, 0x9e, 0x0e, 0x5a, 0x03, 0x20</div>
 <div class="line">}</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="mt9v117_8c_source.html#l00117">117</a> of file <a class="el" href="mt9v117_8c_source.html">mt9v117.c</a>.</p>
+<p>Definition at line <a class="el" href="mt9v117_8c_source.html#l00128">128</a> of file <a class="el" href="mt9v117_8c_source.html">mt9v117.c</a>.</p>
 
 </div>
 </div>
@@ -1082,7 +1099,7 @@ len</td>
 <div class="line">  0xd8, 0x00, 0x20, 0xca, 0x02, 0x62, 0x00, 0xc9, 0x03, 0xe0</div>
 <div class="line">}</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="mt9v117_8c_source.html#l00125">125</a> of file <a class="el" href="mt9v117_8c_source.html">mt9v117.c</a>.</p>
+<p>Definition at line <a class="el" href="mt9v117_8c_source.html#l00136">136</a> of file <a class="el" href="mt9v117_8c_source.html">mt9v117.c</a>.</p>
 
 </div>
 </div>
@@ -1111,7 +1128,7 @@ len</td>
 <div class="line">  0x97, 0x40, 0x0a, 0x11, 0x00, 0x40, 0x0b, 0x0a, 0x01, 0x00</div>
 <div class="line">}</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="mt9v117_8c_source.html#l00133">133</a> of file <a class="el" href="mt9v117_8c_source.html">mt9v117.c</a>.</p>
+<p>Definition at line <a class="el" href="mt9v117_8c_source.html#l00144">144</a> of file <a class="el" href="mt9v117_8c_source.html">mt9v117.c</a>.</p>
 
 </div>
 </div>
@@ -1140,7 +1157,7 @@ len</td>
 <div class="line">  0xe7, 0x1c, 0x77, 0xcf, 0xff, 0xff, 0xe5, 0x46, 0x97, 0x40</div>
 <div class="line">}</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="mt9v117_8c_source.html#l00141">141</a> of file <a class="el" href="mt9v117_8c_source.html">mt9v117.c</a>.</p>
+<p>Definition at line <a class="el" href="mt9v117_8c_source.html#l00152">152</a> of file <a class="el" href="mt9v117_8c_source.html">mt9v117.c</a>.</p>
 
 </div>
 </div>
@@ -1150,7 +1167,7 @@ len</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e030268cd18297cf6282390f76bfcf7f.html">boards</a></li><li class="navelem"><a class="el" href="dir_1e1e24cfb731b3b06114ecddfd068653.html">bebop</a></li><li class="navelem"><a class="el" href="mt9v117_8c.html">mt9v117.c</a></li>
-    <li class="footer">Generated on Wed Sep 12 2018 02:03:11 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:02:52 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

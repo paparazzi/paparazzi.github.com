@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -105,12 +105,15 @@ $(document).ready(function(){initNavTree('module__dw1000_arduino.html','');});
 <div class="contents">
 <div class="textblock"><p><b>Driver to get ranging data from Decawave <a class="el" href="dw1000__arduino_8c.html#structDW1000" title="DW1000 positionning system structure. ">DW1000</a> modules connected to Arduino</b></p>
 <p>Decawave <a class="el" href="dw1000__arduino_8c.html#structDW1000" title="DW1000 positionning system structure. ">DW1000</a> modules (<a href="http://www.decawave.com/products/dwm1000-module">http://www.decawave.com/products/dwm1000-module</a>) are Ultra-Wide-Band devices that can be used for communication and ranging. Especially, using 3 modules as anchors can provide data for a localization system based on trilateration. The <a class="el" href="dw1000__arduino_8c.html#structDW1000" title="DW1000 positionning system structure. ">DW1000</a> is using a SPI connection, but an arduino-compatible board can be used with the library <a href="https://github.com/thotro/arduino-dw1000">https://github.com/thotro/arduino-dw1000</a> to hyde the low level drivers and provide direct ranging informations.</p>
+<p>See <a href="https://hal-enac.archives-ouvertes.fr/hal-01936955">https://hal-enac.archives-ouvertes.fr/hal-01936955</a> for more information on the EKF filtering.</p>
 <h1><a class="anchor" id="module_load_example__dw1000_arduino"></a>
 Example for airframe file</h1>
 <p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;module name=&quot;dw1000_arduino&quot;&gt;</div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;  &lt;configure name=&quot;DW1000_ARDUINO_UART&quot; value=&quot;UARTX&quot; /&gt;</div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;  &lt;configure name=&quot;DW1000_ARDUINO_BAUD&quot; value=&quot;B115200&quot; /&gt;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;&lt;/module&gt;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;  &lt;configure name=&quot;DW1000_USE_AS_LOCAL_POS&quot; value=&quot;FALSE|TRUE&quot; /&gt;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;  &lt;configure name=&quot;DW1000_USE_AS_GPS&quot; value=&quot;FALSE|TRUE&quot; /&gt;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;&lt;/module&gt;</div>
 </div><!-- fragment --> <h1><a class="anchor" id="configuration__dw1000_arduino"></a>
 Module configuration options</h1>
 <h2><a class="anchor" id="configure"></a>
@@ -120,6 +123,10 @@ Configure Options</h2>
  Description: UART on which arduino and its <a class="el" href="dw1000__arduino_8c.html#structDW1000" title="DW1000 positionning system structure. ">DW1000</a> module is connected</li>
 <li><b>name:</b> <code>DW1000_ARDUINO_BAUD</code> <b>value:</b> <em>B115200</em> <br />
  Description: UART Baudrate, default to 115200</li>
+<li><b>name:</b> <code>DW1000_USE_AS_LOCAL_POS</code> <b>value:</b> <em>FALSE|TRUE</em> <br />
+ Description: use as a local positioning system (default: TRUE)</li>
+<li><b>name:</b> <code>DW1000_USE_AS_GPS</code> <b>value:</b> <em>FALSE|TRUE</em> <br />
+ Description: use as a fake GPS positioning system (default: FALSE)</li>
 </ul>
 <h2><a class="anchor" id="af_section"></a>
 Airframe file section</h2>
@@ -141,6 +148,18 @@ Airframe file section</h2>
  Description: Initial heading correction between anchors frame and global frame</li>
 <li><b>name</b> <code>NB_ANCHORS</code> <b>value:</b> <em>3</em> <br />
  Description: Set number of anchors, only 3 are required/supported at the moment</li>
+<li><b>name</b> <code>USE_EKF</code> <b>value:</b> <em>FALSE|TRUE</em> <br />
+ Description: Enable EKF filtering, required to estimate speed</li>
+<li><b>name</b> <code>EKF_Q</code> <b>value:</b> <em>1.0</em> <br />
+ Description: EKF process noise</li>
+<li><b>name</b> <code>EKF_R_DIST</code> <b>value:</b> <em>0.1</em> <br />
+ Description: EKF noise on distance measurements</li>
+<li><b>name</b> <code>EKF_R_SPEED</code> <b>value:</b> <em>0.1</em> <br />
+ Description: EKF noise on speed measurements (if available)</li>
+<li><b>name</b> <code>NOISE_X|Y|Z</code> <b>value:</b> <em>0.1</em> <br />
+ Description: Noise level reported by the POSITION_ESTIMATE message when USE_AS_LOCAL_POS is activated</li>
+<li><b>name</b> <code>VEL_NOISE_X|Y|Z</code> <b>value:</b> <em>0.1</em> <br />
+ Description: Noise level reported by the VELOCITY_ESTIMATE message when USE_AS_LOCAL_POS is activated</li>
 </ul>
 </li>
 </ul>
@@ -150,25 +169,25 @@ Module functions</h1>
 Init Functions</h2>
 <p>These initialization functions are called once on startup.</p>
 <ul>
-<li><a class="el" href="dw1000__arduino_8c.html#a24a75fd0580f8ba2fed76df5e085e944">dw1000_arduino_init()</a></li>
+<li><a class="el" href="dw1000__arduino_8c.html#a1d567be05d71df280c5ed392dc999b1f">dw1000_arduino_init()</a></li>
 </ul>
 <h2><a class="anchor" id="event_functions"></a>
 Event Functions</h2>
 <p>These event functions are called in each cycle of the module event loop.</p>
 <ul>
-<li><a class="el" href="dw1000__arduino_8c.html#afead86118b2f1161ae9f748f30d5fc29">dw1000_arduino_event()</a></li>
+<li><a class="el" href="dw1000__arduino_8c.html#acd30e60aae354572abb40c0cc89eb6d3">dw1000_arduino_event()</a></li>
 </ul>
 <h2><a class="anchor" id="periodic_functions"></a>
 Periodic Functions</h2>
 <p>These functions are called periodically at the specified frequency from the module periodic loop.</p>
 <ul>
-<li><a class="el" href="dw1000__arduino_8c.html#a0e6089b71b1c51df603944e48cc64f37">dw1000_arduino_periodic()</a><ul>
+<li><a class="el" href="dw1000__arduino_8c.html#a37cdd8b01baa07937d73541c2a0da01e">dw1000_arduino_periodic()</a><ul>
 <li>Frequency in Hz: <em>10</em> </li>
 <li>Autorun: <em>LOCK</em> <br />
  Periodic function automatically starts after init and can't be stopped.</li>
 </ul>
 </li>
-<li><a class="el" href="dw1000__arduino_8c.html#a7d4e5e1b0179da9001c7e027566c4ef5">dw1000_arduino_report()</a><ul>
+<li><a class="el" href="dw1000__arduino_8c.html#ab9d9265b1d597d80f5c459c19f082f2c">dw1000_arduino_report()</a><ul>
 <li>Frequency in Hz: <em>10</em> </li>
 <li>Autorun: <em>FALSE</em> <br />
  Periodic function is started by user command.</li>
@@ -194,6 +213,7 @@ Source Files</h2>
 <ul>
 <li><a class="el" href="dw1000__arduino_8c.html">modules/decawave/dw1000_arduino.c</a></li>
 <li><a class="el" href="trilateration_8c.html">modules/decawave/trilateration.c</a></li>
+<li><a class="el" href="ekf__range_8c.html">modules/decawave/ekf_range.c</a></li>
 </ul>
 <h2><a class="anchor" id="module_xml__dw1000_arduino"></a>
 Raw dw1000_arduino.xml file:</h2>
@@ -207,9 +227,13 @@ Raw dw1000_arduino.xml file:</h2>
 <div class="line">      Decawave DW1000 modules (http://www.decawave.com/products/dwm1000-module) are Ultra-Wide-Band devices that can be used for communication and ranging.</div>
 <div class="line">      Especially, using 3 modules as anchors can provide data for a localization system based on trilateration.</div>
 <div class="line">      The DW1000 is using a SPI connection, but an arduino-compatible board can be used with the library https://github.com/thotro/arduino-dw1000 to hyde the low level drivers and provide direct ranging informations.</div>
+<div class="line"></div>
+<div class="line">      See https://hal-enac.archives-ouvertes.fr/hal-01936955 for more information on the EKF filtering.</div>
 <div class="line">    &lt;/description&gt;</div>
 <div class="line">    &lt;configure name=&quot;DW1000_ARDUINO_UART&quot; value=&quot;UARTX&quot; description=&quot;UART on which arduino and its DW1000 module is connected&quot;/&gt;</div>
 <div class="line">    &lt;configure name=&quot;DW1000_ARDUINO_BAUD&quot; value=&quot;B115200&quot; description=&quot;UART Baudrate, default to 115200&quot;/&gt;</div>
+<div class="line">    &lt;configure name=&quot;DW1000_USE_AS_LOCAL_POS&quot; value=&quot;FALSE|TRUE&quot; description=&quot;use as a local positioning system (default: TRUE)&quot;/&gt;</div>
+<div class="line">    &lt;configure name=&quot;DW1000_USE_AS_GPS&quot; value=&quot;FALSE|TRUE&quot; description=&quot;use as a fake GPS positioning system (default: FALSE)&quot;/&gt;</div>
 <div class="line">    &lt;section name=&quot;DW1000&quot; prefix=&quot;DW1000_&quot;&gt;</div>
 <div class="line">      &lt;define name=&quot;ANCHORS_IDS&quot; value=&quot;1, 2, 3&quot; type=&quot;int[]&quot; description=&quot;Comma separated list of anchors ID&quot;/&gt;</div>
 <div class="line">      &lt;define name=&quot;ANCHORS_POS_X&quot; value=&quot;0., 0., 5.&quot; type=&quot;float[]&quot; description=&quot;Comma separated list of anchors ID over X axis&quot;/&gt;</div>
@@ -219,8 +243,24 @@ Raw dw1000_arduino.xml file:</h2>
 <div class="line">      &lt;define name=&quot;SCALE&quot; value=&quot;1., 1., 1.&quot; type=&quot;float[]&quot; description=&quot;Position scale factor other X, Y and Z axis&quot;/&gt;</div>
 <div class="line">      &lt;define name=&quot;INITIAL_HEADING&quot; value=&quot;0.&quot; description=&quot;Initial heading correction between anchors frame and global frame&quot;/&gt;</div>
 <div class="line">      &lt;define name=&quot;NB_ANCHORS&quot; value=&quot;3&quot; description=&quot;Set number of anchors, only 3 are required/supported at the moment&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;USE_EKF&quot; value=&quot;FALSE|TRUE&quot; description=&quot;Enable EKF filtering, required to estimate speed&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;EKF_Q&quot; value=&quot;1.0&quot; description=&quot;EKF process noise&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;EKF_R_DIST&quot; value=&quot;0.1&quot; description=&quot;EKF noise on distance measurements&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;EKF_R_SPEED&quot; value=&quot;0.1&quot; description=&quot;EKF noise on speed measurements (if available)&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;NOISE_X|Y|Z&quot; value=&quot;0.1&quot; description=&quot;Noise level reported by the POSITION_ESTIMATE message when USE_AS_LOCAL_POS is activated&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;VEL_NOISE_X|Y|Z&quot; value=&quot;0.1&quot; description=&quot;Noise level reported by the VELOCITY_ESTIMATE message when USE_AS_LOCAL_POS is activated&quot;/&gt;</div>
 <div class="line">    &lt;/section&gt;</div>
 <div class="line">  &lt;/doc&gt;</div>
+<div class="line">  &lt;settings&gt;</div>
+<div class="line">    &lt;dl_settings&gt;</div>
+<div class="line">      &lt;dl_settings name=&quot;dw1000&quot;&gt;</div>
+<div class="line">        &lt;dl_setting max=&quot;1&quot; min=&quot;0&quot; step=&quot;1&quot; module=&quot;decawave/dw1000_arduino&quot; var=&quot;dw1000_use_ekf&quot; shortname=&quot;use_ekf&quot; values=&quot;FALSE|TRUE&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting max=&quot;5.0&quot; min=&quot;0.01&quot; step=&quot;0.01&quot; module=&quot;decawave/dw1000_arduino&quot; var=&quot;dw1000_ekf_q&quot; shortname=&quot;q_noise&quot; handler=&quot;update_ekf_q&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting max=&quot;1.0&quot; min=&quot;0.01&quot; step=&quot;0.01&quot; module=&quot;decawave/dw1000_arduino&quot; var=&quot;dw1000_ekf_r_dist&quot; shortname=&quot;r_dist&quot; handler=&quot;update_ekf_r_dist&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting max=&quot;1.0&quot; min=&quot;0.01&quot; step=&quot;0.01&quot; module=&quot;decawave/dw1000_arduino&quot; var=&quot;dw1000_ekf_r_speed&quot; shortname=&quot;r_speed&quot; handler=&quot;update_ekf_r_speed&quot;/&gt;</div>
+<div class="line">      &lt;/dl_settings&gt;</div>
+<div class="line">    &lt;/dl_settings&gt;</div>
+<div class="line">  &lt;/settings&gt;</div>
 <div class="line">  &lt;header&gt;</div>
 <div class="line">    &lt;file name=&quot;dw1000_arduino.h&quot;/&gt;</div>
 <div class="line">  &lt;/header&gt;</div>
@@ -232,8 +272,32 @@ Raw dw1000_arduino.xml file:</h2>
 <div class="line">  &lt;makefile&gt;</div>
 <div class="line">    &lt;configure name=&quot;DW1000_ARDUINO_UART&quot; case=&quot;upper|lower&quot;/&gt;</div>
 <div class="line">    &lt;configure name=&quot;DW1000_ARDUINO_BAUD&quot; default=&quot;B115200&quot;/&gt;</div>
+<div class="line">    &lt;configure name=&quot;DW1000_USE_AS_LOCAL_POS&quot; default=&quot;TRUE&quot;/&gt;</div>
+<div class="line">    &lt;configure name=&quot;DW1000_USE_AS_GPS&quot; default=&quot;FALSE&quot;/&gt;</div>
 <div class="line">    &lt;file name=&quot;dw1000_arduino.c&quot;/&gt;</div>
 <div class="line">    &lt;file name=&quot;trilateration.c&quot;/&gt;</div>
+<div class="line">    &lt;file name=&quot;ekf_range.c&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;DW1000_USE_AS_LOCAL_POS&quot; value=&quot;$(DW1000_USE_AS_LOCAL_POS)&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;DW1000_USE_AS_GPS&quot; value=&quot;$(DW1000_USE_AS_GPS)&quot;/&gt;</div>
+<div class="line">    &lt;raw&gt;</div>
+<div class="line">      ifeq (,$(findstring $(DW1000_USE_AS_GPS),0 FALSE))</div>
+<div class="line">        ifdef SECONDARY_GPS</div>
+<div class="line">          ifneq (,$(findstring $(SECONDARY_GPS), dw1000))</div>
+<div class="line">            # this is the secondary GPS</div>
+<div class="line">            $(TARGET).CFLAGS += -DGPS_SECONDARY_TYPE_H=\&quot;modules/decawave/dw1000_arduino.h\&quot;</div>
+<div class="line">            $(TARGET).CFLAGS += -DSECONDARY_GPS=GPS_DW1000</div>
+<div class="line">          else</div>
+<div class="line">            $(TARGET).CFLAGS += -DGPS_TYPE_H=\&quot;modules/decawave/dw1000_arduino.h\&quot;</div>
+<div class="line">            $(TARGET).CFLAGS += -DPRIMARY_GPS=GPS_DW1000</div>
+<div class="line">          endif</div>
+<div class="line">        else</div>
+<div class="line">          # plain old single GPS usage</div>
+<div class="line">          $(TARGET).CFLAGS += -DGPS_TYPE_H=\&quot;modules/decawave/dw1000_arduino.h\&quot;</div>
+<div class="line">        endif</div>
+<div class="line">      endif</div>
+<div class="line">    &lt;/raw&gt;</div>
+<div class="line">  &lt;/makefile&gt;</div>
+<div class="line">  &lt;makefile target=&quot;ap&quot;&gt;</div>
 <div class="line">    &lt;define name=&quot;USE_$(DW1000_ARDUINO_UART_UPPER)&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;DW1000_ARDUINO_DEV&quot; value=&quot;$(DW1000_ARDUINO_UART_LOWER)&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;$(DW1000_ARDUINO_UART_UPPER)_BAUD&quot; value=&quot;$(DW1000_ARDUINO_BAUD)&quot;/&gt;</div>
@@ -246,7 +310,7 @@ Raw dw1000_arduino.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Wed Sep 12 2018 02:03:57 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:03:40 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

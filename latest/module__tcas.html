@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -143,8 +143,8 @@ Periodic Functions</h2>
 Datalink Functions</h1>
 <p>Whenever the specified datalink message is received, the corresponing handler function is called.</p>
 <ul>
-<li>on message <b>TCAS_RESOLVE</b> call <a class="el" href="tcas_8c.html#a0e9cda68611380b1a78840531b999609">parseTcasResolve()</a></li>
-<li>on message <b>TCAS_RA</b> call <a class="el" href="tcas_8c.html#ae02e782b9aca4703f8fb2c8aeaca9441">parseTcasRA()</a> </li>
+<li>on message <b>TCAS_RESOLVE</b> call parseTcasResolve(buf)</li>
+<li>on message <b>TCAS_RA</b> call parseTcasRA(buf) </li>
 </ul>
 <h1><a class="anchor" id="files"></a>
 Files</h1>
@@ -174,8 +174,8 @@ Raw tcas.xml file:</h2>
 <div class="line">  &lt;init fun=&quot;tcas_init()&quot;/&gt;</div>
 <div class="line">  &lt;periodic fun=&quot;tcas_periodic_task_1Hz()&quot; freq=&quot;1&quot;/&gt;</div>
 <div class="line">  &lt;periodic fun=&quot;tcas_periodic_task_4Hz()&quot; freq=&quot;4&quot;/&gt;</div>
-<div class="line">  &lt;datalink message=&quot;TCAS_RESOLVE&quot; fun=&quot;parseTcasResolve()&quot;/&gt;</div>
-<div class="line">  &lt;datalink message=&quot;TCAS_RA&quot;      fun=&quot;parseTcasRA()&quot;/&gt;</div>
+<div class="line">  &lt;datalink message=&quot;TCAS_RESOLVE&quot; fun=&quot;parseTcasResolve(buf)&quot;/&gt;</div>
+<div class="line">  &lt;datalink message=&quot;TCAS_RA&quot;      fun=&quot;parseTcasRA(buf)&quot;/&gt;</div>
 <div class="line">  &lt;makefile&gt;</div>
 <div class="line">    &lt;file name=&quot;tcas.c&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;TCAS&quot;/&gt;</div>
@@ -188,7 +188,7 @@ Raw tcas.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Wed Sep 12 2018 02:03:59 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:03:43 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

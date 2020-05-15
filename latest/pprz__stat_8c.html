@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -129,22 +129,22 @@ $(document).ready(function(){initNavTree('pprz__stat_8c.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a9ea37190b84005b38d22358e2d2c3a74"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pprz__stat_8c.html#a9ea37190b84005b38d22358e2d2c3a74">mean_i</a> (<a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> *array, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> n_elements)</td></tr>
+<tr class="memitem:a9ea37190b84005b38d22358e2d2c3a74"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pprz__stat_8c.html#a9ea37190b84005b38d22358e2d2c3a74">mean_i</a> (<a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> *<a class="el" href="snake__gate__detection_8c.html#a0483d856b36b358ff3b62e6a3c6f95f1">array</a>, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> n_elements)</td></tr>
 <tr class="memdesc:a9ea37190b84005b38d22358e2d2c3a74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the mean value of an array This is implemented using floats to handle scaling of all variables.  <a href="#a9ea37190b84005b38d22358e2d2c3a74">More...</a><br /></td></tr>
 <tr class="separator:a9ea37190b84005b38d22358e2d2c3a74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50abca98517a26ee5a4e1f3e6e9e0f56"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pprz__stat_8c.html#a50abca98517a26ee5a4e1f3e6e9e0f56">variance_i</a> (<a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> *array, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> n_elements)</td></tr>
+<tr class="memitem:a50abca98517a26ee5a4e1f3e6e9e0f56"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pprz__stat_8c.html#a50abca98517a26ee5a4e1f3e6e9e0f56">variance_i</a> (<a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> *<a class="el" href="snake__gate__detection_8c.html#a0483d856b36b358ff3b62e6a3c6f95f1">array</a>, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> n_elements)</td></tr>
 <tr class="memdesc:a50abca98517a26ee5a4e1f3e6e9e0f56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the variance of an array of values (integer).  <a href="#a50abca98517a26ee5a4e1f3e6e9e0f56">More...</a><br /></td></tr>
 <tr class="separator:a50abca98517a26ee5a4e1f3e6e9e0f56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a938b3854a384a0e327d27cf1c515b117"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pprz__stat_8c.html#a938b3854a384a0e327d27cf1c515b117">covariance_i</a> (<a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> *array1, <a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> *array2, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> n_elements)</td></tr>
 <tr class="memdesc:a938b3854a384a0e327d27cf1c515b117"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the covariance of two arrays V(X) = E[(X-E[X])(Y-E[Y])] = E[XY] - E[X]E[Y] where E[X] is the expected value of X This is implemented using floats to handle scaling of all variables.  <a href="#a938b3854a384a0e327d27cf1c515b117">More...</a><br /></td></tr>
 <tr class="separator:a938b3854a384a0e327d27cf1c515b117"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a234aff5aa9b0f7e40ac863e2b60d6365"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pprz__stat_8c.html#a234aff5aa9b0f7e40ac863e2b60d6365">sum_f</a> (float *array, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> n_elements)</td></tr>
+<tr class="memitem:a234aff5aa9b0f7e40ac863e2b60d6365"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pprz__stat_8c.html#a234aff5aa9b0f7e40ac863e2b60d6365">sum_f</a> (float *<a class="el" href="snake__gate__detection_8c.html#a0483d856b36b358ff3b62e6a3c6f95f1">array</a>, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> n_elements)</td></tr>
 <tr class="memdesc:a234aff5aa9b0f7e40ac863e2b60d6365"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the sum array elements (float)  <a href="#a234aff5aa9b0f7e40ac863e2b60d6365">More...</a><br /></td></tr>
 <tr class="separator:a234aff5aa9b0f7e40ac863e2b60d6365"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adea85d32f16991e739b2cea3b3ec427e"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pprz__stat_8c.html#adea85d32f16991e739b2cea3b3ec427e">mean_f</a> (float *array, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> n_elements)</td></tr>
+<tr class="memitem:adea85d32f16991e739b2cea3b3ec427e"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pprz__stat_8c.html#adea85d32f16991e739b2cea3b3ec427e">mean_f</a> (float *<a class="el" href="snake__gate__detection_8c.html#a0483d856b36b358ff3b62e6a3c6f95f1">array</a>, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> n_elements)</td></tr>
 <tr class="memdesc:adea85d32f16991e739b2cea3b3ec427e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the mean value of an array (float)  <a href="#adea85d32f16991e739b2cea3b3ec427e">More...</a><br /></td></tr>
 <tr class="separator:adea85d32f16991e739b2cea3b3ec427e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef701f0d6d92883bf903cc4e8b20048e"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pprz__stat_8c.html#aef701f0d6d92883bf903cc4e8b20048e">variance_f</a> (float *array, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> n_elements)</td></tr>
+<tr class="memitem:aef701f0d6d92883bf903cc4e8b20048e"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pprz__stat_8c.html#aef701f0d6d92883bf903cc4e8b20048e">variance_f</a> (float *<a class="el" href="snake__gate__detection_8c.html#a0483d856b36b358ff3b62e6a3c6f95f1">array</a>, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> n_elements)</td></tr>
 <tr class="memdesc:aef701f0d6d92883bf903cc4e8b20048e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the variance of an array of values (float).  <a href="#aef701f0d6d92883bf903cc4e8b20048e">More...</a><br /></td></tr>
 <tr class="separator:aef701f0d6d92883bf903cc4e8b20048e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac75c0169ede28d21ada6d51e7431ea18"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pprz__stat_8c.html#ac75c0169ede28d21ada6d51e7431ea18">covariance_f</a> (float *arr1, float *arr2, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> n_elements)</td></tr>
@@ -208,7 +208,7 @@ Functions</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="pprz__stat_8c_ac75c0169ede28d21ada6d51e7431ea18_icgraph.png" border="0" usemap="#pprz__stat_8c_ac75c0169ede28d21ada6d51e7431ea18_icgraph" alt=""/></div>
 <map name="pprz__stat_8c_ac75c0169ede28d21ada6d51e7431ea18_icgraph" id="pprz__stat_8c_ac75c0169ede28d21ada6d51e7431ea18_icgraph">
-<area shape="rect" id="node2" href="optical__flow__functions_8h.html#a43d4f7bf1b6e93b4b62a84bbfb3d4813" title="Set the covariance of the divergence and the thrust / past divergence This funciton should only be ca..." alt="" coords="159,5,255,32"/><area shape="rect" id="node5" href="optical__flow__functions_8h.html#ab8a8e1a36d1906e82bd10e15b5736484" title="Set the covariance of the flow and past flow / desired angle This funciton should only be called once..." alt="" coords="156,56,259,83"/><area shape="rect" id="node8" href="pprz__stat_8h.html#aef701f0d6d92883bf903cc4e8b20048e" title="Compute the variance of an array of values (float). " alt="" coords="164,107,251,133"/><area shape="rect" id="node3" href="optical__flow__hover_8c.html#a9628e4f2b9a046bb7ff80c208ab85daa" title="Run the vertical optical flow hover module. " alt="" coords="315,5,493,32"/><area shape="rect" id="node4" href="vertical__ctrl__module__demo_8h.html#a24ef9289dfa15084a7457a97ad7632c8" title="guidance_v_module_run" alt="" coords="550,5,727,32"/><area shape="rect" id="node6" href="optical__flow__hover_8c.html#a1d6a689f380b3efc01bc97ed28ece11d" title="Run the horizontal optical flow hover module. " alt="" coords="307,56,501,83"/><area shape="rect" id="node7" href="optical__flow__hover_8c.html#a77f05df2acd1da23e187f1f3f5d5a26f" title="guidance_h_module_run" alt="" coords="549,56,728,83"/><area shape="rect" id="node9" href="ins__int_8c.html#a7fdc16072298b2db800864d08d72945a" title="baro_cb" alt="" coords="367,107,441,133"/><area shape="rect" id="node10" href="ins__int_8h.html#a6f47e4e65f9697a961c3bef79e9029e4" title="ins_int_init" alt="" coords="594,107,683,133"/></map>
+<area shape="rect" id="node2" href="optical__flow__functions_8h.html#a43d4f7bf1b6e93b4b62a84bbfb3d4813" title="Set the covariance of the divergence and the thrust / past divergence This funciton should only be ca..." alt="" coords="159,5,255,32"/><area shape="rect" id="node5" href="optical__flow__functions_8h.html#ab8a8e1a36d1906e82bd10e15b5736484" title="Set the covariance of the flow and past flow / desired angle This funciton should only be called once..." alt="" coords="156,56,259,83"/><area shape="rect" id="node8" href="pprz__stat_8h.html#aef701f0d6d92883bf903cc4e8b20048e" title="Compute the variance of an array of values (float). " alt="" coords="164,107,251,133"/><area shape="rect" id="node3" href="optical__flow__hover_8c.html#a9628e4f2b9a046bb7ff80c208ab85daa" title="Run the vertical optical flow hover module. " alt="" coords="315,5,493,32"/><area shape="rect" id="node4" href="vertical__ctrl__module__demo_8h.html#a24ef9289dfa15084a7457a97ad7632c8" title="guidance_v_module_run" alt="" coords="550,5,727,32"/><area shape="rect" id="node6" href="optical__flow__hover_8c.html#a1d6a689f380b3efc01bc97ed28ece11d" title="Run the horizontal optical flow hover module. " alt="" coords="307,56,501,83"/><area shape="rect" id="node7" href="optical__flow__hover_8c.html#a77f05df2acd1da23e187f1f3f5d5a26f" title="guidance_h_module_run" alt="" coords="549,56,728,83"/><area shape="rect" id="node9" href="ins__int_8c.html#a92209191a3ecc53fc4adaafd0fe82933" title="baro_cb" alt="" coords="367,107,441,133"/><area shape="rect" id="node10" href="ins__int_8h.html#a6f47e4e65f9697a961c3bef79e9029e4" title="ins_int_init" alt="" coords="594,107,683,133"/></map>
 </div>
 </p>
 
@@ -310,8 +310,6 @@ Functions</h2></td></tr>
 
 <p>References <a class="el" href="pprz__stat_8c_source.html#l00106">sum_f()</a>.</p>
 
-<p>Referenced by <a class="el" href="size__divergence_8c_source.html#l00046">get_size_divergence()</a>.</p>
-
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -320,17 +318,6 @@ Functions</h2></td></tr>
 <div class="center"><img src="pprz__stat_8c_adea85d32f16991e739b2cea3b3ec427e_cgraph.png" border="0" usemap="#pprz__stat_8c_adea85d32f16991e739b2cea3b3ec427e_cgraph" alt=""/></div>
 <map name="pprz__stat_8c_adea85d32f16991e739b2cea3b3ec427e_cgraph" id="pprz__stat_8c_adea85d32f16991e739b2cea3b3ec427e_cgraph">
 <area shape="rect" id="node2" href="pprz__stat_8c.html#a234aff5aa9b0f7e40ac863e2b60d6365" title="Compute the sum array elements (float) " alt="" coords="124,5,185,32"/></map>
-</div>
-</p>
-
-<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="pprz__stat_8c_adea85d32f16991e739b2cea3b3ec427e_icgraph.png" border="0" usemap="#pprz__stat_8c_adea85d32f16991e739b2cea3b3ec427e_icgraph" alt=""/></div>
-<map name="pprz__stat_8c_adea85d32f16991e739b2cea3b3ec427e_icgraph" id="pprz__stat_8c_adea85d32f16991e739b2cea3b3ec427e_icgraph">
-<area shape="rect" id="node2" href="size__divergence_8h.html#a5bd0d30766d4538c9b64fccc7826b12a" title="Get divergence from optical flow vectors based on line sizes between corners. " alt="" coords="124,5,276,32"/><area shape="rect" id="node3" href="opticflow__calculator_8h.html#a3edff14cc7f95b5202ba6841a12dfed3" title="Run the optical flow with fast9 and lukaskanade on a new image frame. " alt="" coords="324,5,504,32"/><area shape="rect" id="node4" href="opticflow__calculator_8h.html#a89e51af8fe5a0f534193635d181a2086" title="Run the optical flow on a new image frame. " alt="" coords="552,5,707,32"/><area shape="rect" id="node5" href="opticflow__module_8c.html#a36b69a7ec255d2d20bb31b6d13e3e567" title="The main optical flow calculation thread. " alt="" coords="755,5,919,32"/><area shape="rect" id="node6" href="opticflow__module_8h.html#a6026660ee86fbb1f72bada581386e6d9" title="Initialize the optical flow module for the bottom camera. " alt="" coords="967,5,1125,32"/></map>
 </div>
 </p>
 
@@ -413,14 +400,14 @@ Functions</h2></td></tr>
 
 <p>Referenced by <a class="el" href="pprz__stat_8c_source.html#l00122">mean_f()</a>.</p>
 
-<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="pprz__stat_8c_a234aff5aa9b0f7e40ac863e2b60d6365_icgraph.png" border="0" usemap="#pprz__stat_8c_a234aff5aa9b0f7e40ac863e2b60d6365_icgraph" alt=""/></div>
 <map name="pprz__stat_8c_a234aff5aa9b0f7e40ac863e2b60d6365_icgraph" id="pprz__stat_8c_a234aff5aa9b0f7e40ac863e2b60d6365_icgraph">
-<area shape="rect" id="node2" href="pprz__stat_8h.html#a7c4d41545675c0f746d1100d435ffe8f" title="Compute the mean value of an array (float) " alt="" coords="115,5,185,32"/><area shape="rect" id="node3" href="size__divergence_8h.html#a5bd0d30766d4538c9b64fccc7826b12a" title="Get divergence from optical flow vectors based on line sizes between corners. " alt="" coords="233,5,385,32"/><area shape="rect" id="node4" href="opticflow__calculator_8h.html#a3edff14cc7f95b5202ba6841a12dfed3" title="Run the optical flow with fast9 and lukaskanade on a new image frame. " alt="" coords="433,5,613,32"/><area shape="rect" id="node5" href="opticflow__calculator_8h.html#a89e51af8fe5a0f534193635d181a2086" title="Run the optical flow on a new image frame. " alt="" coords="661,5,816,32"/><area shape="rect" id="node6" href="opticflow__module_8c.html#a36b69a7ec255d2d20bb31b6d13e3e567" title="The main optical flow calculation thread. " alt="" coords="864,5,1028,32"/><area shape="rect" id="node7" href="opticflow__module_8h.html#a6026660ee86fbb1f72bada581386e6d9" title="Initialize the optical flow module for the bottom camera. " alt="" coords="1076,5,1235,32"/></map>
+<area shape="rect" id="node2" href="pprz__stat_8h.html#a7c4d41545675c0f746d1100d435ffe8f" title="Compute the mean value of an array (float) " alt="" coords="115,5,185,32"/></map>
 </div>
 </p>
 
@@ -466,25 +453,25 @@ Functions</h2></td></tr>
 
 <p>Referenced by <a class="el" href="ins__int_8c_source.html#l00337">baro_cb()</a>.</p>
 
-<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="pprz__stat_8c_aef701f0d6d92883bf903cc4e8b20048e_cgraph.png" border="0" usemap="#pprz__stat_8c_aef701f0d6d92883bf903cc4e8b20048e_cgraph" alt=""/></div>
 <map name="pprz__stat_8c_aef701f0d6d92883bf903cc4e8b20048e_cgraph" id="pprz__stat_8c_aef701f0d6d92883bf903cc4e8b20048e_cgraph">
 <area shape="rect" id="node2" href="pprz__stat_8c.html#ac75c0169ede28d21ada6d51e7431ea18" title="Compute the covariance of two arrays V(X) = E[(X&#45;E[X])(Y&#45;E[Y])] = E[XY] &#45; E[X]E[Y] where E[X] is the ..." alt="" coords="140,5,243,32"/></map>
 </div>
 </p>
 
-<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="pprz__stat_8c_aef701f0d6d92883bf903cc4e8b20048e_icgraph.png" border="0" usemap="#pprz__stat_8c_aef701f0d6d92883bf903cc4e8b20048e_icgraph" alt=""/></div>
 <map name="pprz__stat_8c_aef701f0d6d92883bf903cc4e8b20048e_icgraph" id="pprz__stat_8c_aef701f0d6d92883bf903cc4e8b20048e_icgraph">
-<area shape="rect" id="node2" href="ins__int_8c.html#a7fdc16072298b2db800864d08d72945a" title="baro_cb" alt="" coords="140,5,213,32"/><area shape="rect" id="node3" href="ins__int_8h.html#a6f47e4e65f9697a961c3bef79e9029e4" title="ins_int_init" alt="" coords="261,5,351,32"/></map>
+<area shape="rect" id="node2" href="ins__int_8c.html#a92209191a3ecc53fc4adaafd0fe82933" title="baro_cb" alt="" coords="140,5,213,32"/><area shape="rect" id="node3" href="ins__int_8h.html#a6f47e4e65f9697a961c3bef79e9029e4" title="ins_int_init" alt="" coords="261,5,351,32"/></map>
 </div>
 </p>
 
@@ -528,11 +515,11 @@ Functions</h2></td></tr>
 
 <p>References <a class="el" href="pprz__stat_8c_source.html#l00078">covariance_i()</a>.</p>
 
-<p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="pprz__stat_8c_a50abca98517a26ee5a4e1f3e6e9e0f56_cgraph.png" border="0" usemap="#pprz__stat_8c_a50abca98517a26ee5a4e1f3e6e9e0f56_cgraph" alt=""/></div>
 <map name="pprz__stat_8c_a50abca98517a26ee5a4e1f3e6e9e0f56_cgraph" id="pprz__stat_8c_a50abca98517a26ee5a4e1f3e6e9e0f56_cgraph">
 <area shape="rect" id="node2" href="pprz__stat_8c.html#a938b3854a384a0e327d27cf1c515b117" title="Compute the covariance of two arrays V(X) = E[(X&#45;E[X])(Y&#45;E[Y])] = E[XY] &#45; E[X]E[Y] where E[X] is the ..." alt="" coords="140,5,241,32"/></map>
@@ -547,7 +534,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_29343b6f5fcd4b75a5dfbb985ff56864.html">math</a></li><li class="navelem"><a class="el" href="pprz__stat_8c.html">pprz_stat.c</a></li>
-    <li class="footer">Generated on Wed Sep 12 2018 02:03:23 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:03:05 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

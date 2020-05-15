@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -242,6 +242,14 @@ Macros</h2></td></tr>
 <tr class="separator:ga8470f9f331a883ac9bf5a10f95eaf8fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabe8212f08f915234f4c2ed1d362c140b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math__algebra__generic.html#gabe8212f08f915234f4c2ed1d362c140b">MAT33_ROW_VECT3_SMUL</a>(_mat, _row, _vin, _s)</td></tr>
 <tr class="separator:gabe8212f08f915234f4c2ed1d362c140b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga28a287262a3234964931c956808df60c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math__algebra__generic.html#ga28a287262a3234964931c956808df60c">VECT3_VECT3_TRANS_MUL</a>(_mat, _v_a, _v_b)</td></tr>
+<tr class="separator:ga28a287262a3234964931c956808df60c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gada68445323d25e7f0a6f00b73caffff8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math__algebra__generic.html#gada68445323d25e7f0a6f00b73caffff8">MAT33_MAT33_DIFF</a>(_mat1, _mat2, _mat3)</td></tr>
+<tr class="separator:gada68445323d25e7f0a6f00b73caffff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6973c7a1f371b114260f96389cbe25bf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math__algebra__generic.html#ga6973c7a1f371b114260f96389cbe25bf">MAT33_MAT33_SUM</a>(_mat1, _mat2, _mat3)</td></tr>
+<tr class="separator:ga6973c7a1f371b114260f96389cbe25bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga894ab25bef695601ea448d04a9fd8aca"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math__algebra__generic.html#ga894ab25bef695601ea448d04a9fd8aca">MAT33_TRANS</a>(_mat1, _mat2)</td></tr>
+<tr class="separator:ga894ab25bef695601ea448d04a9fd8aca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabf462eb96f286f75cd4dda8e580a2916"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math__algebra__generic.html#gabf462eb96f286f75cd4dda8e580a2916">QUAT_ASSIGN</a>(_q, _i, _x, _y, _z)</td></tr>
 <tr class="separator:gabf462eb96f286f75cd4dda8e580a2916"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7123b22efe3d8c9eef35e9f438c0dc0e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math__algebra__generic.html#ga7123b22efe3d8c9eef35e9f438c0dc0e">QUAT_DIFF</a>(_qc, _qa, _qb)</td></tr>
@@ -339,9 +347,9 @@ Macros</h2></td></tr>
 <div class="line">  }</div>
 <div class="ttc" id="group__math__algebra__int_html_ga5251aee74e02d2935ee9835ae7bc7b2e"><div class="ttname"><a href="group__math__algebra__int.html#ga5251aee74e02d2935ee9835ae7bc7b2e">ACCEL_BFP_OF_REAL</a></div><div class="ttdeci">#define ACCEL_BFP_OF_REAL(_af)</div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__int_8h_source.html#l00220">pprz_algebra_int.h:220</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00748">748</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00801">801</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ahrs__vectornav_8c_source.html#l00066">ahrs_vectornav_event()</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00226">gx3_packet_read_message()</a>, <a class="el" href="imu__xsens_8c_source.html#l00053">handle_ins_msg()</a>, <a class="el" href="imu__vectornav_8c_source.html#l00149">imu_vectornav_propagate()</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00321">ins_float_invariant_propagate()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00244">ins_vectornav_propagate()</a>, <a class="el" href="state_8c_source.html#l01101">stateCalcAccelEcef_i()</a>, <a class="el" href="state_8c_source.html#l01068">stateCalcAccelNed_i()</a>, and <a class="el" href="imu__um6_8c_source.html#l00211">UM6_packet_read_message()</a>.</p>
+<p>Referenced by <a class="el" href="filter__1euro__imu_8c_source.html#l00143">accel_cb()</a>, <a class="el" href="ahrs__vectornav_8c_source.html#l00066">ahrs_vectornav_event()</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00226">gx3_packet_read_message()</a>, <a class="el" href="imu__xsens_8c_source.html#l00053">handle_ins_msg()</a>, <a class="el" href="imu__vectornav_8c_source.html#l00149">imu_vectornav_propagate()</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00337">ins_float_invariant_propagate()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00244">ins_vectornav_propagate()</a>, <a class="el" href="state_8c_source.html#l01101">stateCalcAccelEcef_i()</a>, <a class="el" href="state_8c_source.html#l01068">stateCalcAccelNed_i()</a>, and <a class="el" href="imu__um6_8c_source.html#l00211">UM6_packet_read_message()</a>.</p>
 
 </div>
 </div>
@@ -375,9 +383,9 @@ Macros</h2></td></tr>
 <div class="line">  }</div>
 <div class="ttc" id="group__math__algebra__int_html_gaeb7ad4ba2eac8c6f8e608fa42ab9c144"><div class="ttname"><a href="group__math__algebra__int.html#gaeb7ad4ba2eac8c6f8e608fa42ab9c144">ACCEL_FLOAT_OF_BFP</a></div><div class="ttdeci">#define ACCEL_FLOAT_OF_BFP(_ai)</div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__int_8h_source.html#l00221">pprz_algebra_int.h:221</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00742">742</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00795">795</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00381">accel_cb()</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00241">ahrs_icq_update_accel()</a>, <a class="el" href="ahrs__int__utils_8h_source.html#l00080">ahrs_int_get_quat_from_accel()</a>, <a class="el" href="ahrs__int__utils_8h_source.html#l00089">ahrs_int_get_quat_from_accel_mag()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00416">aligner_cb()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00595">lms_estimation()</a>, <a class="el" href="imu_8c_source.html#l00058">send_accel()</a>, <a class="el" href="state_8c_source.html#l01166">stateCalcAccelEcef_f()</a>, <a class="el" href="state_8c_source.html#l01133">stateCalcAccelNed_f()</a>, and <a class="el" href="energy__ctrl_8c_source.html#l00336">v_ctl_climb_loop()</a>.</p>
+<p>Referenced by <a class="el" href="ahrs__madgwick__wrapper_8c_source.html#l00145">accel_cb()</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00241">ahrs_icq_update_accel()</a>, <a class="el" href="ahrs__int__utils_8h_source.html#l00080">ahrs_int_get_quat_from_accel()</a>, <a class="el" href="ahrs__int__utils_8h_source.html#l00089">ahrs_int_get_quat_from_accel_mag()</a>, <a class="el" href="ahrs__madgwick__wrapper_8c_source.html#l00156">aligner_cb()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00595">lms_estimation()</a>, <a class="el" href="imu_8c_source.html#l00058">send_accel()</a>, <a class="el" href="state_8c_source.html#l01166">stateCalcAccelEcef_f()</a>, <a class="el" href="state_8c_source.html#l01133">stateCalcAccelNed_f()</a>, and <a class="el" href="energy__ctrl_8c_source.html#l00336">v_ctl_climb_loop()</a>.</p>
 
 </div>
 </div>
@@ -410,7 +418,7 @@ Macros</h2></td></tr>
 <div class="line">    (_a).psi   += (_b).psi;       \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00280">280</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00281">281</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
 <p>Referenced by <a class="el" href="ahrs__int__cmpl__euler_8c_source.html#l00154">ahrs_ice_propagate()</a>, <a class="el" href="stabilization__attitude__ref__euler__float_8c_source.html#l00067">attitude_ref_euler_float_update()</a>, <a class="el" href="stabilization__attitude__ref__euler__int_8c_source.html#l00084">attitude_ref_euler_int_update()</a>, and <a class="el" href="stabilization__attitude__euler__float_8c_source.html#l00176">stabilization_attitude_run()</a>.</p>
 
@@ -457,7 +465,7 @@ Macros</h2></td></tr>
 <div class="line">    (_e).psi   = (_psi);                            \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00273">273</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00274">274</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
 <p>Referenced by <a class="el" href="ahrs__float__utils_8h_source.html#l00038">ahrs_float_get_euler_from_accel_mag()</a>, <a class="el" href="stabilization__attitude__ref__euler__float_8c_source.html#l00067">attitude_ref_euler_float_update()</a>, and <a class="el" href="vi__test__signal_8c_source.html#l00043">booz_fms_impl_periodic()</a>.</p>
 
@@ -493,9 +501,9 @@ Macros</h2></td></tr>
 <div class="line">  }</div>
 <div class="ttc" id="group__math__algebra__int_html_ga488bd4dc490bfad7ff4aa4eb489c193e"><div class="ttname"><a href="group__math__algebra__int.html#ga488bd4dc490bfad7ff4aa4eb489c193e">ANGLE_BFP_OF_REAL</a></div><div class="ttdeci">#define ANGLE_BFP_OF_REAL(_af)</div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__int_8h_source.html#l00210">pprz_algebra_int.h:210</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00662">662</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00715">715</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
-<p>Referenced by <a class="el" href="pprz__orientation__conversion_8c_source.html#l00098">orientationCalcEulers_i()</a>, <a class="el" href="pprz__orientation__conversion_8c_source.html#l00048">orientationCalcQuat_i()</a>, <a class="el" href="pprz__orientation__conversion_8c_source.html#l00073">orientationCalcRMat_i()</a>, <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00051">send_att()</a>, <a class="el" href="ahrs__float__cmpl__wrapper_8c_source.html#l00068">send_euler_int()</a>, and <a class="el" href="imu__um6_8c_source.html#l00211">UM6_packet_read_message()</a>.</p>
+<p>Referenced by <a class="el" href="pprz__orientation__conversion_8c_source.html#l00098">orientationCalcEulers_i()</a>, <a class="el" href="pprz__orientation__conversion_8c_source.html#l00048">orientationCalcQuat_i()</a>, <a class="el" href="pprz__orientation__conversion_8c_source.html#l00073">orientationCalcRMat_i()</a>, <a class="el" href="ahrs__madgwick__wrapper_8c_source.html#l00050">send_att()</a>, <a class="el" href="ahrs__float__cmpl__wrapper_8c_source.html#l00068">send_euler_int()</a>, and <a class="el" href="imu__um6_8c_source.html#l00211">UM6_packet_read_message()</a>.</p>
 
 </div>
 </div>
@@ -534,7 +542,7 @@ Macros</h2></td></tr>
 <div class="line">    (_v).psi   = (_v).psi   &lt; (_min) ? (_min) : (_v).psi   &gt; (_max) ? (_max) : (_v).psi;   \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00316">316</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00317">317</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
 <p>Referenced by <a class="el" href="stabilization__attitude__euler__float_8c_source.html#l00176">stabilization_attitude_run()</a>.</p>
 
@@ -569,9 +577,9 @@ Macros</h2></td></tr>
 <div class="line">    (_a).psi   = (_b).psi;        \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00267">267</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00268">268</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ahrs__int__cmpl__euler_8c_source.html#l00078">ahrs_ice_align()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00353">fetch_state()</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00189">orientationSetEulers_f()</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00165">orientationSetEulers_i()</a>, and <a class="el" href="stabilization__attitude__euler__float_8c_source.html#l00176">stabilization_attitude_run()</a>.</p>
+<p>Referenced by <a class="el" href="ahrs__int__cmpl__euler_8c_source.html#l00078">ahrs_ice_align()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00364">fetch_state()</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00189">orientationSetEulers_f()</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00165">orientationSetEulers_i()</a>, and <a class="el" href="stabilization__attitude__euler__float_8c_source.html#l00176">stabilization_attitude_run()</a>.</p>
 
 </div>
 </div>
@@ -610,7 +618,7 @@ Macros</h2></td></tr>
 <div class="line">    (_c).psi   = (_a).psi   - (_b).psi;   \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00294">294</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00295">295</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
 <p>Referenced by <a class="el" href="ahrs__int__cmpl__euler_8c_source.html#l00154">ahrs_ice_propagate()</a>, <a class="el" href="stabilization__attitude__ref__euler__float_8c_source.html#l00067">attitude_ref_euler_float_update()</a>, <a class="el" href="stabilization__attitude__ref__euler__int_8c_source.html#l00084">attitude_ref_euler_int_update()</a>, and <a class="el" href="stabilization__attitude__euler__float_8c_source.html#l00176">stabilization_attitude_run()</a>.</p>
 
@@ -646,7 +654,7 @@ Macros</h2></td></tr>
 <div class="line">  }</div>
 <div class="ttc" id="group__math__algebra__int_html_gacb03bec97dc344a1416432700179ee1c"><div class="ttname"><a href="group__math__algebra__int.html#gacb03bec97dc344a1416432700179ee1c">ANGLE_FLOAT_OF_BFP</a></div><div class="ttdeci">#define ANGLE_FLOAT_OF_BFP(_ai)</div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__int_8h_source.html#l00211">pprz_algebra_int.h:211</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00656">656</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00709">709</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
 <p>Referenced by <a class="el" href="pprz__orientation__conversion_8c_source.html#l00173">orientationCalcEulers_f()</a>, <a class="el" href="pprz__orientation__conversion_8c_source.html#l00123">orientationCalcQuat_f()</a>, <a class="el" href="pprz__orientation__conversion_8c_source.html#l00148">orientationCalcRMat_f()</a>, <a class="el" href="stabilization__attitude__quat__transformations_8c_source.html#l00028">quat_from_rpy_cmd_i()</a>, and <a class="el" href="stabilization__attitude__euler__float_8c_source.html#l00154">stabilization_attitude_set_rpy_setpoint_i()</a>.</p>
 
@@ -687,7 +695,7 @@ Macros</h2></td></tr>
 <div class="line">    (_eo).psi   =  (_ei).psi   / (_s);        \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00309">309</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00310">310</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
 <p>Referenced by <a class="el" href="ahrs__int__cmpl__euler_8c_source.html#l00078">ahrs_ice_align()</a>, and <a class="el" href="ahrs__int__cmpl__euler_8c_source.html#l00154">ahrs_ice_propagate()</a>.</p>
 
@@ -728,7 +736,7 @@ Macros</h2></td></tr>
 <div class="line">    (_eo).psi   =  (_ei).psi   * (_s);        \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00302">302</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00303">303</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
 <p>Referenced by <a class="el" href="imu__um6_8c_source.html#l00211">UM6_packet_read_message()</a>.</p>
 
@@ -763,7 +771,7 @@ Macros</h2></td></tr>
 <div class="line">    (_a).psi   -= (_b).psi;       \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00287">287</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00288">288</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
 </div>
 </div>
@@ -797,7 +805,7 @@ Macros</h2></td></tr>
 <div class="line">  }</div>
 <div class="ttc" id="group__math__algebra__int_html_ga7a246ed59b41685b79922379c91f5f08"><div class="ttname"><a href="group__math__algebra__int.html#ga7a246ed59b41685b79922379c91f5f08">MAG_BFP_OF_REAL</a></div><div class="ttdeci">#define MAG_BFP_OF_REAL(_af)</div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__int_8h_source.html#l00222">pprz_algebra_int.h:222</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00760">760</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00813">813</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
 <p>Referenced by <a class="el" href="imu__xsens_8c_source.html#l00053">handle_ins_msg()</a>, and <a class="el" href="imu__um6_8c_source.html#l00211">UM6_packet_read_message()</a>.</p>
 
@@ -833,7 +841,7 @@ Macros</h2></td></tr>
 <div class="line">  }</div>
 <div class="ttc" id="group__math__algebra__int_html_gaeee9cfe0a5a7a8bdc1103e32b472e3c8"><div class="ttname"><a href="group__math__algebra__int.html#gaeee9cfe0a5a7a8bdc1103e32b472e3c8">MAG_FLOAT_OF_BFP</a></div><div class="ttdeci">#define MAG_FLOAT_OF_BFP(_ai)</div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__int_8h_source.html#l00223">pprz_algebra_int.h:223</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00754">754</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00807">807</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
 <p>Referenced by <a class="el" href="ahrs__int__utils_8h_source.html#l00089">ahrs_int_get_quat_from_accel_mag()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00416">aligner_cb()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00392">mag_cb()</a>, and <a class="el" href="imu_8c_source.html#l00098">send_mag()</a>.</p>
 
@@ -873,9 +881,11 @@ Macros</h2></td></tr>
 <div class="line"><a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">    MAT33_ELMT</a>((_mat1),2,1) = <a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">MAT33_ELMT</a>((_mat2),2,1);  <a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">\</a></div>
 <div class="line"><a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">    MAT33_ELMT</a>((_mat1),2,2) = <a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">MAT33_ELMT</a>((_mat2),2,2);  \</div>
 <div class="line">  }</div>
-<div class="ttc" id="group__math__algebra__generic_html_gaf6f5918ce1dc9b05f0d7262a48cfa90c"><div class="ttname"><a href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">MAT33_ELMT</a></div><div class="ttdeci">#define MAT33_ELMT(_m, _row, _col)</div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra_8h_source.html#l00435">pprz_algebra.h:435</a></div></div>
+<div class="ttc" id="group__math__algebra__generic_html_gaf6f5918ce1dc9b05f0d7262a48cfa90c"><div class="ttname"><a href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">MAT33_ELMT</a></div><div class="ttdeci">#define MAT33_ELMT(_m, _row, _col)</div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra_8h_source.html#l00436">pprz_algebra.h:436</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00437">437</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00438">438</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+
+<p>Referenced by <a class="el" href="PnP__AHRS_8c_source.html#l00054">get_world_position_from_image_points()</a>.</p>
 
 </div>
 </div>
@@ -909,9 +919,9 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00435">435</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00436">436</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
-<p>Referenced by <a class="el" href="cv__georeference_8c_source.html#l00053">georeference_project()</a>, and <a class="el" href="pano__unwrap_8c_source.html#l00230">unwrap_LUT()</a>.</p>
+<p>Referenced by <a class="el" href="cv__georeference_8c_source.html#l00053">georeference_project()</a>, <a class="el" href="dw1000__arduino_8c_source.html#l00417">process_data()</a>, and <a class="el" href="pano__unwrap_8c_source.html#l00230">unwrap_LUT()</a>.</p>
 
 </div>
 </div>
@@ -961,11 +971,107 @@ Macros</h2></td></tr>
 <div class="line"><a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">      MAT33_ELMT</a>((_minv),2,2) =  m22 / det;           \</div>
 <div class="line">    }                 \</div>
 <div class="line">  }</div>
-<div class="ttc" id="group__math__algebra__generic_html_gaf6f5918ce1dc9b05f0d7262a48cfa90c"><div class="ttname"><a href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">MAT33_ELMT</a></div><div class="ttdeci">#define MAT33_ELMT(_m, _row, _col)</div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra_8h_source.html#l00435">pprz_algebra.h:435</a></div></div>
+<div class="ttc" id="group__math__algebra__generic_html_gaf6f5918ce1dc9b05f0d7262a48cfa90c"><div class="ttname"><a href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">MAT33_ELMT</a></div><div class="ttdeci">#define MAT33_ELMT(_m, _row, _col)</div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra_8h_source.html#l00436">pprz_algebra.h:436</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00488">488</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00489">489</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
-<p>Referenced by <a class="el" href="guidance__indi_8c_source.html#l00154">guidance_indi_run()</a>.</p>
+<p>Referenced by <a class="el" href="PnP__AHRS_8c_source.html#l00054">get_world_position_from_image_points()</a>, and <a class="el" href="guidance__indi_8c_source.html#l00154">guidance_indi_run()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gada68445323d25e7f0a6f00b73caffff8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAT33_MAT33_DIFF</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_mat1, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_mat2, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_mat3&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">{                                 <a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">\</a></div>
+<div class="line"><a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">    MAT33_ELMT</a>((_mat1),0,0) = <a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">MAT33_ELMT</a>((_mat2),0,0)-<a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">MAT33_ELMT</a>((_mat3),0,0);  <a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">\</a></div>
+<div class="line"><a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">    MAT33_ELMT</a>((_mat1),0,1) = <a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">MAT33_ELMT</a>((_mat2),0,1)-<a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">MAT33_ELMT</a>((_mat3),0,1);  <a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">\</a></div>
+<div class="line"><a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">    MAT33_ELMT</a>((_mat1),0,2) = <a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">MAT33_ELMT</a>((_mat2),0,2)-<a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">MAT33_ELMT</a>((_mat3),0,2);  <a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">\</a></div>
+<div class="line"><a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">    MAT33_ELMT</a>((_mat1),1,0) = <a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">MAT33_ELMT</a>((_mat2),1,0)-<a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">MAT33_ELMT</a>((_mat3),1,0);  <a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">\</a></div>
+<div class="line"><a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">    MAT33_ELMT</a>((_mat1),1,1) = <a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">MAT33_ELMT</a>((_mat2),1,1)-<a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">MAT33_ELMT</a>((_mat3),1,1);  <a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">\</a></div>
+<div class="line"><a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">    MAT33_ELMT</a>((_mat1),1,2) = <a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">MAT33_ELMT</a>((_mat2),1,2)-<a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">MAT33_ELMT</a>((_mat3),1,2);  <a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">\</a></div>
+<div class="line"><a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">    MAT33_ELMT</a>((_mat1),2,0) = <a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">MAT33_ELMT</a>((_mat2),2,0)-<a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">MAT33_ELMT</a>((_mat3),2,0);  <a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">\</a></div>
+<div class="line"><a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">    MAT33_ELMT</a>((_mat1),2,1) = <a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">MAT33_ELMT</a>((_mat2),2,1)-<a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">MAT33_ELMT</a>((_mat3),2,1);  <a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">\</a></div>
+<div class="line"><a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">    MAT33_ELMT</a>((_mat1),2,2) = <a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">MAT33_ELMT</a>((_mat2),2,2)-<a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">MAT33_ELMT</a>((_mat3),2,2);  \</div>
+<div class="line">  }</div>
+<div class="ttc" id="group__math__algebra__generic_html_gaf6f5918ce1dc9b05f0d7262a48cfa90c"><div class="ttname"><a href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">MAT33_ELMT</a></div><div class="ttdeci">#define MAT33_ELMT(_m, _row, _col)</div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra_8h_source.html#l00436">pprz_algebra.h:436</a></div></div>
+</div><!-- fragment -->
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00534">534</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+
+<p>Referenced by <a class="el" href="PnP__AHRS_8c_source.html#l00054">get_world_position_from_image_points()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga6973c7a1f371b114260f96389cbe25bf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAT33_MAT33_SUM</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_mat1, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_mat2, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_mat3&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">{                                  <a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">\</a></div>
+<div class="line"><a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">    MAT33_ELMT</a>((_mat1),0,0) = <a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">MAT33_ELMT</a>((_mat2),0,0)+<a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">MAT33_ELMT</a>((_mat3),0,0);  <a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">\</a></div>
+<div class="line"><a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">    MAT33_ELMT</a>((_mat1),0,1) = <a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">MAT33_ELMT</a>((_mat2),0,1)+<a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">MAT33_ELMT</a>((_mat3),0,1);  <a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">\</a></div>
+<div class="line"><a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">    MAT33_ELMT</a>((_mat1),0,2) = <a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">MAT33_ELMT</a>((_mat2),0,2)+<a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">MAT33_ELMT</a>((_mat3),0,2);  <a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">\</a></div>
+<div class="line"><a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">    MAT33_ELMT</a>((_mat1),1,0) = <a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">MAT33_ELMT</a>((_mat2),1,0)+<a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">MAT33_ELMT</a>((_mat3),1,0);  <a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">\</a></div>
+<div class="line"><a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">    MAT33_ELMT</a>((_mat1),1,1) = <a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">MAT33_ELMT</a>((_mat2),1,1)+<a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">MAT33_ELMT</a>((_mat3),1,1);  <a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">\</a></div>
+<div class="line"><a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">    MAT33_ELMT</a>((_mat1),1,2) = <a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">MAT33_ELMT</a>((_mat2),1,2)+<a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">MAT33_ELMT</a>((_mat3),1,2);  <a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">\</a></div>
+<div class="line"><a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">    MAT33_ELMT</a>((_mat1),2,0) = <a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">MAT33_ELMT</a>((_mat2),2,0)+<a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">MAT33_ELMT</a>((_mat3),2,0);  <a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">\</a></div>
+<div class="line"><a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">    MAT33_ELMT</a>((_mat1),2,1) = <a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">MAT33_ELMT</a>((_mat2),2,1)+<a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">MAT33_ELMT</a>((_mat3),2,1);  <a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">\</a></div>
+<div class="line"><a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">    MAT33_ELMT</a>((_mat1),2,2) = <a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">MAT33_ELMT</a>((_mat2),2,2)+<a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">MAT33_ELMT</a>((_mat3),2,2);  \</div>
+<div class="line">  }</div>
+<div class="ttc" id="group__math__algebra__generic_html_gaf6f5918ce1dc9b05f0d7262a48cfa90c"><div class="ttname"><a href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">MAT33_ELMT</a></div><div class="ttdeci">#define MAT33_ELMT(_m, _row, _col)</div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra_8h_source.html#l00436">pprz_algebra.h:436</a></div></div>
+</div><!-- fragment -->
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00547">547</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+
+<p>Referenced by <a class="el" href="PnP__AHRS_8c_source.html#l00054">get_world_position_from_image_points()</a>.</p>
 
 </div>
 </div>
@@ -1003,9 +1109,9 @@ Macros</h2></td></tr>
 <div class="line"><a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">    MAT33_ELMT</a>((_mat1),2,1) = <a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">MAT33_ELMT</a>((_mat1),2,1)*_scalar;  <a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">\</a></div>
 <div class="line"><a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">    MAT33_ELMT</a>((_mat1),2,2) = <a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">MAT33_ELMT</a>((_mat1),2,2)*_scalar;  \</div>
 <div class="line">  }</div>
-<div class="ttc" id="group__math__algebra__generic_html_gaf6f5918ce1dc9b05f0d7262a48cfa90c"><div class="ttname"><a href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">MAT33_ELMT</a></div><div class="ttdeci">#define MAT33_ELMT(_m, _row, _col)</div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra_8h_source.html#l00435">pprz_algebra.h:435</a></div></div>
+<div class="ttc" id="group__math__algebra__generic_html_gaf6f5918ce1dc9b05f0d7262a48cfa90c"><div class="ttname"><a href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">MAT33_ELMT</a></div><div class="ttdeci">#define MAT33_ELMT(_m, _row, _col)</div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra_8h_source.html#l00436">pprz_algebra.h:436</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00449">449</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00450">450</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
 </div>
 </div>
@@ -1049,11 +1155,53 @@ Macros</h2></td></tr>
 <div class="line"><a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">    MAT33_ELMT</a>((_mat), _row, 1) = (_vin).y * (_s);           <a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">\</a></div>
 <div class="line"><a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">    MAT33_ELMT</a>((_mat), _row, 2) = (_vin).z * (_s);           \</div>
 <div class="line">  }</div>
-<div class="ttc" id="group__math__algebra__generic_html_gaf6f5918ce1dc9b05f0d7262a48cfa90c"><div class="ttname"><a href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">MAT33_ELMT</a></div><div class="ttdeci">#define MAT33_ELMT(_m, _row, _col)</div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra_8h_source.html#l00435">pprz_algebra.h:435</a></div></div>
+<div class="ttc" id="group__math__algebra__generic_html_gaf6f5918ce1dc9b05f0d7262a48cfa90c"><div class="ttname"><a href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">MAT33_ELMT</a></div><div class="ttdeci">#define MAT33_ELMT(_m, _row, _col)</div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra_8h_source.html#l00436">pprz_algebra.h:436</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00513">513</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00514">514</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
 <p>Referenced by <a class="el" href="pprz__algebra__float_8c_source.html#l00286">float_rmat_reorthogonalize()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga894ab25bef695601ea448d04a9fd8aca"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAT33_TRANS</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_mat1, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_mat2&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">{                      <a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">\</a></div>
+<div class="line"><a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">    MAT33_ELMT</a>((_mat1),0,0) = <a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">MAT33_ELMT</a>((_mat2),0,0);  <a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">\</a></div>
+<div class="line"><a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">    MAT33_ELMT</a>((_mat1),0,1) = <a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">MAT33_ELMT</a>((_mat2),1,0);  <a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">\</a></div>
+<div class="line"><a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">    MAT33_ELMT</a>((_mat1),0,2) = <a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">MAT33_ELMT</a>((_mat2),2,0);  <a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">\</a></div>
+<div class="line"><a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">    MAT33_ELMT</a>((_mat1),1,0) = <a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">MAT33_ELMT</a>((_mat2),0,1);  <a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">\</a></div>
+<div class="line"><a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">    MAT33_ELMT</a>((_mat1),1,1) = <a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">MAT33_ELMT</a>((_mat2),1,1);  <a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">\</a></div>
+<div class="line"><a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">    MAT33_ELMT</a>((_mat1),1,2) = <a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">MAT33_ELMT</a>((_mat2),2,1);  <a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">\</a></div>
+<div class="line"><a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">    MAT33_ELMT</a>((_mat1),2,0) = <a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">MAT33_ELMT</a>((_mat2),0,2);  <a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">\</a></div>
+<div class="line"><a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">    MAT33_ELMT</a>((_mat1),2,1) = <a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">MAT33_ELMT</a>((_mat2),1,2);  <a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">\</a></div>
+<div class="line"><a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">    MAT33_ELMT</a>((_mat1),2,2) = <a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">MAT33_ELMT</a>((_mat2),2,2);  \</div>
+<div class="line">  }</div>
+<div class="ttc" id="group__math__algebra__generic_html_gaf6f5918ce1dc9b05f0d7262a48cfa90c"><div class="ttname"><a href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">MAT33_ELMT</a></div><div class="ttdeci">#define MAT33_ELMT(_m, _row, _col)</div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra_8h_source.html#l00436">pprz_algebra.h:436</a></div></div>
+</div><!-- fragment -->
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00560">560</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+
+<p>Referenced by <a class="el" href="PnP__AHRS_8c_source.html#l00054">get_world_position_from_image_points()</a>.</p>
 
 </div>
 </div>
@@ -1097,11 +1245,11 @@ Macros</h2></td></tr>
 <div class="line"><a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">                MAT33_ELMT</a>((_mat), 2, 1) * (_vin).y + \</div>
 <div class="line">                <a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">MAT33_ELMT</a>((_mat), 2, 2) * (_vin).z;  \</div>
 <div class="line">  }</div>
-<div class="ttc" id="group__math__algebra__generic_html_gaf6f5918ce1dc9b05f0d7262a48cfa90c"><div class="ttname"><a href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">MAT33_ELMT</a></div><div class="ttdeci">#define MAT33_ELMT(_m, _row, _col)</div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra_8h_source.html#l00435">pprz_algebra.h:435</a></div></div>
+<div class="ttc" id="group__math__algebra__generic_html_gaf6f5918ce1dc9b05f0d7262a48cfa90c"><div class="ttname"><a href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">MAT33_ELMT</a></div><div class="ttdeci">#define MAT33_ELMT(_m, _row, _col)</div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra_8h_source.html#l00436">pprz_algebra.h:436</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00462">462</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00463">463</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
-<p>Referenced by <a class="el" href="pprz__geodetic__double_8c_source.html#l00140">enu_of_ecef_point_d()</a>, <a class="el" href="pprz__geodetic__float_8c_source.html#l00085">enu_of_ecef_point_f()</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00154">enu_of_ecef_vect_d()</a>, <a class="el" href="pprz__geodetic__float_8c_source.html#l00100">enu_of_ecef_vect_f()</a>, <a class="el" href="guidance__indi_8c_source.html#l00154">guidance_indi_run()</a>, <a class="el" href="nps__sensor__accel_8c_source.html#l00027">nps_sensor_accel_run_step()</a>, <a class="el" href="nps__sensor__gyro_8c_source.html#l00031">nps_sensor_gyro_run_step()</a>, and <a class="el" href="nps__sensor__mag_8c_source.html#l00026">nps_sensor_mag_run_step()</a>.</p>
+<p>Referenced by <a class="el" href="pprz__geodetic__double_8c_source.html#l00140">enu_of_ecef_point_d()</a>, <a class="el" href="pprz__geodetic__float_8c_source.html#l00085">enu_of_ecef_point_f()</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00154">enu_of_ecef_vect_d()</a>, <a class="el" href="pprz__geodetic__float_8c_source.html#l00100">enu_of_ecef_vect_f()</a>, <a class="el" href="PnP__AHRS_8c_source.html#l00054">get_world_position_from_image_points()</a>, <a class="el" href="guidance__indi_8c_source.html#l00154">guidance_indi_run()</a>, <a class="el" href="nps__sensor__accel_8c_source.html#l00027">nps_sensor_accel_run_step()</a>, <a class="el" href="nps__sensor__gyro_8c_source.html#l00031">nps_sensor_gyro_run_step()</a>, and <a class="el" href="nps__sensor__mag_8c_source.html#l00026">nps_sensor_mag_run_step()</a>.</p>
 
 </div>
 </div>
@@ -1145,9 +1293,9 @@ Macros</h2></td></tr>
 <div class="line"><a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">                MAT33_ELMT</a>((_mat), 1, 2) * (_vin).y + \</div>
 <div class="line">                <a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">MAT33_ELMT</a>((_mat), 2, 2) * (_vin).z;  \</div>
 <div class="line">  }</div>
-<div class="ttc" id="group__math__algebra__generic_html_gaf6f5918ce1dc9b05f0d7262a48cfa90c"><div class="ttname"><a href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">MAT33_ELMT</a></div><div class="ttdeci">#define MAT33_ELMT(_m, _row, _col)</div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra_8h_source.html#l00435">pprz_algebra.h:435</a></div></div>
+<div class="ttc" id="group__math__algebra__generic_html_gaf6f5918ce1dc9b05f0d7262a48cfa90c"><div class="ttname"><a href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">MAT33_ELMT</a></div><div class="ttdeci">#define MAT33_ELMT(_m, _row, _col)</div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra_8h_source.html#l00436">pprz_algebra.h:436</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00475">475</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00476">476</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
 <p>Referenced by <a class="el" href="pprz__geodetic__double_8c_source.html#l00168">ecef_of_enu_point_d()</a>, <a class="el" href="pprz__geodetic__float_8c_source.html#l00129">ecef_of_enu_point_f()</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00181">ecef_of_enu_vect_d()</a>, and <a class="el" href="pprz__geodetic__float_8c_source.html#l00164">ecef_of_enu_vect_f()</a>.</p>
 
@@ -1183,7 +1331,7 @@ Macros</h2></td></tr>
 <div class="line">  }</div>
 <div class="ttc" id="group__math__algebra__int_html_gadf322ab1574f7999563eaaedce920522"><div class="ttname"><a href="group__math__algebra__int.html#gadf322ab1574f7999563eaaedce920522">POS_BFP_OF_REAL</a></div><div class="ttdeci">#define POS_BFP_OF_REAL(_af)</div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__int_8h_source.html#l00216">pprz_algebra_int.h:216</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00724">724</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00777">777</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
 </div>
 </div>
@@ -1217,7 +1365,7 @@ Macros</h2></td></tr>
 <div class="line">  }</div>
 <div class="ttc" id="group__math__algebra__int_html_ga930576f090a11e3c53c8269ee2e26834"><div class="ttname"><a href="group__math__algebra__int.html#ga930576f090a11e3c53c8269ee2e26834">POS_FLOAT_OF_BFP</a></div><div class="ttdeci">#define POS_FLOAT_OF_BFP(_ai)</div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__int_8h_source.html#l00217">pprz_algebra_int.h:217</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00718">718</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00771">771</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
 </div>
 </div>
@@ -1251,7 +1399,7 @@ Macros</h2></td></tr>
 <div class="line">    (_qo).qz += (_qi).qz;       \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00566">566</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00619">619</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
 <p>Referenced by <a class="el" href="stabilization__attitude__ref__quat__float_8c_source.html#l00086">attitude_ref_quat_float_update()</a>, <a class="el" href="stabilization__attitude__ref__quat__int_8c_source.html#l00100">attitude_ref_quat_int_update()</a>, and <a class="el" href="ahrs__float__invariant_8c_source.html#l00266">invariant_model()</a>.</p>
 
@@ -1305,7 +1453,7 @@ Macros</h2></td></tr>
 <div class="line">    (_q).qz = (_z);         \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00527">527</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00580">580</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
 <p>Referenced by <a class="el" href="ahrs__float__utils_8h_source.html#l00059">ahrs_float_get_quat_from_accel()</a>, <a class="el" href="ahrs__float__utils_8h_source.html#l00083">ahrs_float_get_quat_from_accel_mag()</a>, <a class="el" href="ahrs__float__invariant_8c_source.html#l00370">float_quat_vmul_right()</a>, and <a class="el" href="stabilization__attitude__quat__transformations_8c_source.html#l00063">quat_from_earth_cmd_f()</a>.</p>
 
@@ -1342,7 +1490,7 @@ Macros</h2></td></tr>
 <div class="line">  }</div>
 <div class="ttc" id="group__math__algebra__int_html_ga20697efff6a79e06e159d8b5ddf0b38f"><div class="ttname"><a href="group__math__algebra__int.html#ga20697efff6a79e06e159d8b5ddf0b38f">QUAT1_BFP_OF_REAL</a></div><div class="ttdeci">#define QUAT1_BFP_OF_REAL(_qf)</div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__int_8h_source.html#l00212">pprz_algebra_int.h:212</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00699">699</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00752">752</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
 <p>Referenced by <a class="el" href="ahrs__int__utils_8h_source.html#l00080">ahrs_int_get_quat_from_accel()</a>, <a class="el" href="ahrs__int__utils_8h_source.html#l00089">ahrs_int_get_quat_from_accel_mag()</a>, <a class="el" href="guidance__hybrid_8c_source.html#l00350">guidance_hybrid_set_cmd_i()</a>, <a class="el" href="guidance__indi_8c_source.html#l00154">guidance_indi_run()</a>, <a class="el" href="pprz__orientation__conversion_8c_source.html#l00098">orientationCalcEulers_i()</a>, <a class="el" href="pprz__orientation__conversion_8c_source.html#l00048">orientationCalcQuat_i()</a>, <a class="el" href="pprz__orientation__conversion_8c_source.html#l00073">orientationCalcRMat_i()</a>, <a class="el" href="stabilization__attitude__quat__transformations_8c_source.html#l00048">quat_from_earth_cmd_i()</a>, <a class="el" href="stabilization__attitude__quat__transformations_8c_source.html#l00028">quat_from_rpy_cmd_i()</a>, <a class="el" href="stabilization__attitude__heli__indi_8c_source.html#l00323">stabilization_attitude_heli_indi_set_steadystate_pitchroll()</a>, <a class="el" href="stabilization__attitude__heli__indi_8c_source.html#l00606">stabilization_attitude_read_rc()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00517">stabilization_indi_read_rc()</a>, and <a class="el" href="imu__um6_8c_source.html#l00211">UM6_packet_read_message()</a>.</p>
 
@@ -1378,9 +1526,9 @@ Macros</h2></td></tr>
 <div class="line">    (_qo).qz = (_qi).qz;        \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00543">543</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00596">596</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ahrs__gx3_8c_source.html#l00327">ahrs_gx3_init()</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00627">ahrs_icq_realign_heading()</a>, <a class="el" href="stabilization__attitude__ref__quat__float_8c_source.html#l00086">attitude_ref_quat_float_update()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00353">fetch_state()</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00173">orientationSetQuat_f()</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00149">orientationSetQuat_i()</a>, <a class="el" href="nps__autopilot__fixedwing_8c_source.html#l00253">sim_overwrite_ahrs()</a>, <a class="el" href="stabilization__attitude__rc__setpoint_8c_source.html#l00427">stabilization_attitude_read_rc_setpoint_quat_earth_bound_f()</a>, and <a class="el" href="stabilization__attitude__rc__setpoint_8c_source.html#l00374">stabilization_attitude_read_rc_setpoint_quat_f()</a>.</p>
+<p>Referenced by <a class="el" href="ahrs__gx3_8c_source.html#l00327">ahrs_gx3_init()</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00627">ahrs_icq_realign_heading()</a>, <a class="el" href="stabilization__attitude__ref__quat__float_8c_source.html#l00086">attitude_ref_quat_float_update()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00364">fetch_state()</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00173">orientationSetQuat_f()</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00149">orientationSetQuat_i()</a>, <a class="el" href="nps__autopilot__fixedwing_8c_source.html#l00255">sim_overwrite_ahrs()</a>, <a class="el" href="stabilization__attitude__rc__setpoint_8c_source.html#l00427">stabilization_attitude_read_rc_setpoint_quat_earth_bound_f()</a>, and <a class="el" href="stabilization__attitude__rc__setpoint_8c_source.html#l00374">stabilization_attitude_read_rc_setpoint_quat_f()</a>.</p>
 
 </div>
 </div>
@@ -1420,7 +1568,7 @@ Macros</h2></td></tr>
 <div class="line">    (_qc).qz = (_qa).qz - (_qb).qz;     \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00535">535</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00588">588</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
 </div>
 </div>
@@ -1448,7 +1596,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00597">597</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00650">650</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
 </div>
 </div>
@@ -1482,9 +1630,9 @@ Macros</h2></td></tr>
 <div class="line">    (b).qz = -(a).qz;               \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00550">550</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00603">603</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
-<p>Referenced by <a class="el" href="pprz__algebra__float_8h_source.html#l00382">float_quat_wrap_shortest()</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00447">int32_quat_wrap_shortest()</a>.</p>
+<p>Referenced by <a class="el" href="pprz__algebra__float_8h_source.html#l00396">float_quat_wrap_shortest()</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00447">int32_quat_wrap_shortest()</a>.</p>
 
 </div>
 </div>
@@ -1517,7 +1665,7 @@ Macros</h2></td></tr>
 <div class="line">    (_vo).z=(_qi).qz;                 \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00582">582</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00635">635</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
 </div>
 </div>
@@ -1552,7 +1700,7 @@ Macros</h2></td></tr>
 <div class="line">  }</div>
 <div class="ttc" id="group__math__algebra__int_html_ga5323536a02d970f0edbe7e73d5bd67fa"><div class="ttname"><a href="group__math__algebra__int.html#ga5323536a02d970f0edbe7e73d5bd67fa">QUAT1_FLOAT_OF_BFP</a></div><div class="ttdeci">#define QUAT1_FLOAT_OF_BFP(_qi)</div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__int_8h_source.html#l00213">pprz_algebra_int.h:213</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00692">692</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00745">745</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
 <p>Referenced by <a class="el" href="pprz__orientation__conversion_8c_source.html#l00173">orientationCalcEulers_f()</a>, <a class="el" href="pprz__orientation__conversion_8c_source.html#l00123">orientationCalcQuat_f()</a>, and <a class="el" href="pprz__orientation__conversion_8c_source.html#l00148">orientationCalcRMat_f()</a>.</p>
 
@@ -1588,9 +1736,9 @@ Macros</h2></td></tr>
 <div class="line">    (_qo).qz = -(_qi).qz;       \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00574">574</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00627">627</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
-<p>Referenced by <a class="el" href="pprz__algebra__float_8h_source.html#l00377">float_quat_invert()</a>, <a class="el" href="ins__int_8c_source.html#l00396">ins_int_update_gps()</a>, and <a class="el" href="ins__int_8c_source.html#l00573">vel_est_cb()</a>.</p>
+<p>Referenced by <a class="el" href="pprz__algebra__float_8h_source.html#l00391">float_quat_invert()</a>, <a class="el" href="ins__int_8c_source.html#l00396">ins_int_update_gps()</a>, and <a class="el" href="ins__int_8c_source.html#l00573">vel_est_cb()</a>.</p>
 
 </div>
 </div>
@@ -1630,7 +1778,7 @@ Macros</h2></td></tr>
 <div class="line">    (_qo).qz = (_qi).qz / (_s); \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00589">589</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00642">642</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
 </div>
 </div>
@@ -1670,7 +1818,7 @@ Macros</h2></td></tr>
 <div class="line">    (_qo).qz = (_qi).qz * (_s);       \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00558">558</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00611">611</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
 <p>Referenced by <a class="el" href="stabilization__attitude__ref__quat__float_8c_source.html#l00086">attitude_ref_quat_float_update()</a>, and <a class="el" href="ahrs__float__invariant_8c_source.html#l00266">invariant_model()</a>.</p>
 
@@ -1706,7 +1854,7 @@ Macros</h2></td></tr>
 <div class="line">  }</div>
 <div class="ttc" id="ins__alt__float_8c_html_a9d3f100c4375da4d957dbe599d494905"><div class="ttname"><a href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a></div><div class="ttdeci">static float p[2][2]</div><div class="ttdef"><b>Definition:</b> <a href="ins__alt__float_8c_source.html#l00268">ins_alt_float.c:268</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00343">343</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00344">344</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
 <p>Referenced by <a class="el" href="ahrs__aligner_8c_source.html#l00108">ahrs_aligner_run()</a>, <a class="el" href="ahrs__int__cmpl__euler_8c_source.html#l00154">ahrs_ice_propagate()</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00187">ahrs_icq_propagate()</a>, <a class="el" href="stabilization__attitude__ref__euler__float_8c_source.html#l00067">attitude_ref_euler_float_update()</a>, <a class="el" href="stabilization__attitude__ref__euler__int_8c_source.html#l00084">attitude_ref_euler_int_update()</a>, <a class="el" href="stabilization__attitude__ref__quat__float_8c_source.html#l00086">attitude_ref_quat_float_update()</a>, <a class="el" href="stabilization__attitude__ref__quat__int_8c_source.html#l00100">attitude_ref_quat_int_update()</a>, <a class="el" href="imu__krooz_8c_source.html#l00139">imu_krooz_event()</a>, and <a class="el" href="stabilization__rate_8c_source.html#l00187">stabilization_rate_run()</a>.</p>
 
@@ -1748,7 +1896,7 @@ Macros</h2></td></tr>
 <div class="line">  }</div>
 <div class="ttc" id="ins__alt__float_8c_html_a9d3f100c4375da4d957dbe599d494905"><div class="ttname"><a href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a></div><div class="ttdeci">static float p[2][2]</div><div class="ttdef"><b>Definition:</b> <a href="ins__alt__float_8c_source.html#l00268">ins_alt_float.c:268</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00418">418</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00419">419</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
 <p>Referenced by <a class="el" href="ahrs__float__cmpl_8c_source.html#l00181">ahrs_fc_update_accel()</a>, <a class="el" href="ahrs__float__cmpl_8c_source.html#l00429">ahrs_fc_update_heading()</a>, <a class="el" href="ahrs__float__cmpl_8c_source.html#l00326">ahrs_fc_update_mag_2d()</a>, <a class="el" href="ahrs__float__cmpl_8c_source.html#l00371">ahrs_fc_update_mag_2d_dumb()</a>, and <a class="el" href="ahrs__float__cmpl_8c_source.html#l00296">ahrs_fc_update_mag_full()</a>.</p>
 
@@ -1796,9 +1944,9 @@ Macros</h2></td></tr>
 <div class="line">  }</div>
 <div class="ttc" id="ins__alt__float_8c_html_a9d3f100c4375da4d957dbe599d494905"><div class="ttname"><a href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a></div><div class="ttdeci">static float p[2][2]</div><div class="ttdef"><b>Definition:</b> <a href="ins__alt__float_8c_source.html#l00268">ins_alt_float.c:268</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00329">329</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00330">330</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__attitude__ref__quat__float_8c_source.html#l00057">attitude_ref_quat_float_init()</a>, <a class="el" href="imu__xsens_8c_source.html#l00053">handle_ins_msg()</a>, <a class="el" href="imu__aspirin__2__spi_8c_source.html#l00154">imu_aspirin2_event()</a>, <a class="el" href="imu__bebop_8c_source.html#l00112">imu_bebop_event()</a>, <a class="el" href="imu__disco_8c_source.html#l00099">imu_disco_event()</a>, <a class="el" href="imu__nps_8c_source.html#l00040">imu_feed_gyro_accel()</a>, <a class="el" href="imu_8c_source.html#l00110">imu_init()</a>, <a class="el" href="imu__krooz_8c_source.html#l00061">imu_krooz_init()</a>, <a class="el" href="imu__krooz_8c_source.html#l00091">imu_krooz_periodic()</a>, <a class="el" href="imu__navgo_8c_source.html#l00120">imu_navgo_event()</a>, <a class="el" href="imu__px4fmu_8c_source.html#l00084">imu_px4fmu_event()</a>, <a class="el" href="imu__swing_8c_source.html#l00092">imu_swing_event()</a>, <a class="el" href="ahrs__float__invariant_8c_source.html#l00266">invariant_model()</a>, <a class="el" href="navdata_8c_source.html#l00326">navdata_publish_imu()</a>, and <a class="el" href="stabilization__rate_8c_source.html#l00115">stabilization_rate_init()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__attitude__ref__quat__float_8c_source.html#l00057">attitude_ref_quat_float_init()</a>, <a class="el" href="imu__xsens_8c_source.html#l00053">handle_ins_msg()</a>, <a class="el" href="imu__aspirin__2__spi_8c_source.html#l00154">imu_aspirin2_event()</a>, <a class="el" href="imu__bebop_8c_source.html#l00112">imu_bebop_event()</a>, <a class="el" href="imu__disco_8c_source.html#l00108">imu_disco_event()</a>, <a class="el" href="imu__nps_8c_source.html#l00040">imu_feed_gyro_accel()</a>, <a class="el" href="imu_8c_source.html#l00110">imu_init()</a>, <a class="el" href="imu__krooz_8c_source.html#l00061">imu_krooz_init()</a>, <a class="el" href="imu__krooz_8c_source.html#l00091">imu_krooz_periodic()</a>, <a class="el" href="imu__navgo_8c_source.html#l00120">imu_navgo_event()</a>, <a class="el" href="imu__px4fmu_8c_source.html#l00084">imu_px4fmu_event()</a>, <a class="el" href="imu__swing_8c_source.html#l00092">imu_swing_event()</a>, <a class="el" href="ahrs__float__invariant_8c_source.html#l00266">invariant_model()</a>, <a class="el" href="navdata_8c_source.html#l00326">navdata_publish_imu()</a>, and <a class="el" href="stabilization__rate_8c_source.html#l00115">stabilization_rate_init()</a>.</p>
 
 </div>
 </div>
@@ -1833,9 +1981,9 @@ Macros</h2></td></tr>
 <div class="ttc" id="ins__alt__float_8c_html_a9d3f100c4375da4d957dbe599d494905"><div class="ttname"><a href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a></div><div class="ttdeci">static float p[2][2]</div><div class="ttdef"><b>Definition:</b> <a href="ins__alt__float_8c_source.html#l00268">ins_alt_float.c:268</a></div></div>
 <div class="ttc" id="group__math__algebra__int_html_ga986eabb558dbd92f341c7e26480f1124"><div class="ttname"><a href="group__math__algebra__int.html#ga986eabb558dbd92f341c7e26480f1124">RATE_BFP_OF_REAL</a></div><div class="ttdeci">#define RATE_BFP_OF_REAL(_af)</div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__int_8h_source.html#l00208">pprz_algebra_int.h:208</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00712">712</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00765">765</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ahrs__vectornav_8c_source.html#l00066">ahrs_vectornav_event()</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00226">gx3_packet_read_message()</a>, <a class="el" href="imu__xsens_8c_source.html#l00053">handle_ins_msg()</a>, <a class="el" href="imu__vectornav_8c_source.html#l00149">imu_vectornav_propagate()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00244">ins_vectornav_propagate()</a>, <a class="el" href="ahrs__float__cmpl__wrapper_8c_source.html#l00060">send_bias()</a>, <a class="el" href="state_8c_source.html#l01207">stateCalcBodyRates_i()</a>, and <a class="el" href="imu__um6_8c_source.html#l00211">UM6_packet_read_message()</a>.</p>
+<p>Referenced by <a class="el" href="ahrs__vectornav_8c_source.html#l00066">ahrs_vectornav_event()</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00226">gx3_packet_read_message()</a>, <a class="el" href="filter__1euro__imu_8c_source.html#l00114">gyro_cb()</a>, <a class="el" href="imu__xsens_8c_source.html#l00053">handle_ins_msg()</a>, <a class="el" href="imu__vectornav_8c_source.html#l00149">imu_vectornav_propagate()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00244">ins_vectornav_propagate()</a>, <a class="el" href="ahrs__float__cmpl__wrapper_8c_source.html#l00060">send_bias()</a>, <a class="el" href="state_8c_source.html#l01207">stateCalcBodyRates_i()</a>, and <a class="el" href="imu__um6_8c_source.html#l00211">UM6_packet_read_message()</a>.</p>
 
 </div>
 </div>
@@ -1875,7 +2023,7 @@ Macros</h2></td></tr>
 <div class="line">  }</div>
 <div class="ttc" id="ins__alt__float_8c_html_a9d3f100c4375da4d957dbe599d494905"><div class="ttname"><a href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a></div><div class="ttdeci">static float p[2][2]</div><div class="ttdef"><b>Definition:</b> <a href="ins__alt__float_8c_source.html#l00268">ins_alt_float.c:268</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00406">406</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00407">407</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
 <p>Referenced by <a class="el" href="stabilization__attitude__ref__euler__int_8c_source.html#l00084">attitude_ref_euler_int_update()</a>.</p>
 
@@ -1911,7 +2059,7 @@ Macros</h2></td></tr>
 <div class="line">  }</div>
 <div class="ttc" id="ins__alt__float_8c_html_a9d3f100c4375da4d957dbe599d494905"><div class="ttname"><a href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a></div><div class="ttdeci">static float p[2][2]</div><div class="ttdef"><b>Definition:</b> <a href="ins__alt__float_8c_source.html#l00268">ins_alt_float.c:268</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00412">412</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00413">413</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
 <p>Referenced by <a class="el" href="attitude__ref__saturate__naive_8h_source.html#l00058">attitude_ref_float_saturate_naive()</a>, and <a class="el" href="attitude__ref__saturate__naive_8h_source.html#l00071">attitude_ref_int_saturate_naive()</a>.</p>
 
@@ -1953,7 +2101,7 @@ Macros</h2></td></tr>
 <div class="line">  }</div>
 <div class="ttc" id="ins__alt__float_8c_html_a9d3f100c4375da4d957dbe599d494905"><div class="ttname"><a href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a></div><div class="ttdeci">static float p[2][2]</div><div class="ttdef"><b>Definition:</b> <a href="ins__alt__float_8c_source.html#l00268">ins_alt_float.c:268</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00400">400</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00401">401</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
 <p>Referenced by <a class="el" href="stabilization__rate_8c_source.html#l00187">stabilization_rate_run()</a>.</p>
 
@@ -1989,9 +2137,9 @@ Macros</h2></td></tr>
 <div class="line">  }</div>
 <div class="ttc" id="ins__alt__float_8c_html_a9d3f100c4375da4d957dbe599d494905"><div class="ttname"><a href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a></div><div class="ttdeci">static float p[2][2]</div><div class="ttdef"><b>Definition:</b> <a href="ins__alt__float_8c_source.html#l00268">ins_alt_float.c:268</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00336">336</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00337">337</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ahrs__float__cmpl_8c_source.html#l00145">ahrs_fc_propagate()</a>, <a class="el" href="ahrs__int__cmpl__euler_8c_source.html#l00078">ahrs_ice_align()</a>, <a class="el" href="ahrs__int__cmpl__euler_8c_source.html#l00154">ahrs_ice_propagate()</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00158">ahrs_icq_align()</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00187">ahrs_icq_propagate()</a>, <a class="el" href="imu__apogee_8c_source.html#l00138">imu_apogee_event()</a>, <a class="el" href="imu__aspirin__2__spi_8c_source.html#l00154">imu_aspirin2_event()</a>, <a class="el" href="imu__aspirin_8c_source.html#l00118">imu_aspirin_event()</a>, <a class="el" href="imu__aspirin__i2c_8c_source.html#l00129">imu_aspirin_i2c_event()</a>, <a class="el" href="imu__drotek__10dof__v2_8c_source.html#l00110">imu_drotek2_event()</a>, <a class="el" href="imu__gl1_8c_source.html#l00118">imu_gl1_event()</a>, <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00119">imu_mpu9250_event()</a>, <a class="el" href="imu__mpu6000__hmc5883_8c_source.html#l00146">imu_mpu_hmc_event()</a>, <a class="el" href="imu__mpu60x0__i2c_8c_source.html#l00080">imu_mpu_i2c_event()</a>, <a class="el" href="imu__mpu6000_8c_source.html#l00081">imu_mpu_spi_event()</a>, <a class="el" href="imu__navstik_8c_source.html#l00102">imu_navstik_event()</a>, <a class="el" href="imu_8c_source.html#l00208">imu_scale_gyro()</a>, <a class="el" href="imu__umarim_8c_source.html#l00103">imu_umarim_event()</a>, <a class="el" href="ahrs__float__mlkf_8c_source.html#l00163">propagate_ref()</a>, <a class="el" href="nps__autopilot__fixedwing_8c_source.html#l00253">sim_overwrite_ahrs()</a>, <a class="el" href="stabilization__attitude__quat__float_8c_source.html#l00295">stabilization_attitude_run()</a>, <a class="el" href="stabilization__indi__simple_8c_source.html#l00291">stabilization_indi_calc_cmd()</a>, <a class="el" href="state_8h_source.html#l01181">stateSetBodyRates_f()</a>, and <a class="el" href="state_8h_source.html#l01173">stateSetBodyRates_i()</a>.</p>
+<p>Referenced by <a class="el" href="ahrs__float__cmpl_8c_source.html#l00145">ahrs_fc_propagate()</a>, <a class="el" href="ahrs__int__cmpl__euler_8c_source.html#l00078">ahrs_ice_align()</a>, <a class="el" href="ahrs__int__cmpl__euler_8c_source.html#l00154">ahrs_ice_propagate()</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00158">ahrs_icq_align()</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00187">ahrs_icq_propagate()</a>, <a class="el" href="imu__apogee_8c_source.html#l00138">imu_apogee_event()</a>, <a class="el" href="imu__aspirin__2__spi_8c_source.html#l00154">imu_aspirin2_event()</a>, <a class="el" href="imu__aspirin_8c_source.html#l00118">imu_aspirin_event()</a>, <a class="el" href="imu__aspirin__i2c_8c_source.html#l00129">imu_aspirin_i2c_event()</a>, <a class="el" href="imu__bmi088__i2c_8c_source.html#l00108">imu_bmi088_event()</a>, <a class="el" href="imu__drotek__10dof__v2_8c_source.html#l00110">imu_drotek2_event()</a>, <a class="el" href="imu__gl1_8c_source.html#l00118">imu_gl1_event()</a>, <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00119">imu_mpu9250_event()</a>, <a class="el" href="imu__mpu6000__hmc5883_8c_source.html#l00146">imu_mpu_hmc_event()</a>, <a class="el" href="imu__mpu60x0__i2c_8c_source.html#l00080">imu_mpu_i2c_event()</a>, <a class="el" href="imu__mpu6000_8c_source.html#l00125">imu_mpu_spi_event()</a>, <a class="el" href="imu__navstik_8c_source.html#l00102">imu_navstik_event()</a>, <a class="el" href="imu_8c_source.html#l00208">imu_scale_gyro()</a>, <a class="el" href="imu__umarim_8c_source.html#l00103">imu_umarim_event()</a>, <a class="el" href="ahrs__float__mlkf_8c_source.html#l00163">propagate_ref()</a>, <a class="el" href="nps__autopilot__fixedwing_8c_source.html#l00255">sim_overwrite_ahrs()</a>, <a class="el" href="stabilization__attitude__quat__float_8c_source.html#l00295">stabilization_attitude_run()</a>, <a class="el" href="stabilization__indi__simple_8c_source.html#l00291">stabilization_indi_calc_cmd()</a>, <a class="el" href="state_8h_source.html#l01181">stateSetBodyRates_f()</a>, and <a class="el" href="state_8h_source.html#l01173">stateSetBodyRates_i()</a>.</p>
 
 </div>
 </div>
@@ -2031,9 +2179,9 @@ Macros</h2></td></tr>
 <div class="line">  }</div>
 <div class="ttc" id="ins__alt__float_8c_html_a9d3f100c4375da4d957dbe599d494905"><div class="ttname"><a href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a></div><div class="ttdeci">static float p[2][2]</div><div class="ttdef"><b>Definition:</b> <a href="ins__alt__float_8c_source.html#l00268">ins_alt_float.c:268</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00371">371</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00372">372</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ahrs__float__dcm_8c_source.html#l00142">ahrs_dcm_propagate()</a>, <a class="el" href="ahrs__int__cmpl__euler_8c_source.html#l00154">ahrs_ice_propagate()</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00187">ahrs_icq_propagate()</a>, <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00216">compute_body_orientation_and_rates()</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00321">ins_float_invariant_propagate()</a>, <a class="el" href="ahrs__float__invariant_8c_source.html#l00266">invariant_model()</a>, <a class="el" href="stabilization__attitude__euler__float_8c_source.html#l00176">stabilization_attitude_run()</a>, and <a class="el" href="stabilization__rate_8c_source.html#l00187">stabilization_rate_run()</a>.</p>
+<p>Referenced by <a class="el" href="ahrs__float__dcm_8c_source.html#l00142">ahrs_dcm_propagate()</a>, <a class="el" href="ahrs__int__cmpl__euler_8c_source.html#l00154">ahrs_ice_propagate()</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00187">ahrs_icq_propagate()</a>, <a class="el" href="ahrs__madgwick_8c_source.html#l00069">ahrs_madgwick_propagate()</a>, <a class="el" href="ahrs__float__invariant__wrapper_8c_source.html#l00216">compute_body_orientation_and_rates()</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00337">ins_float_invariant_propagate()</a>, <a class="el" href="ahrs__float__invariant_8c_source.html#l00266">invariant_model()</a>, <a class="el" href="stabilization__attitude__euler__float_8c_source.html#l00176">stabilization_attitude_run()</a>, and <a class="el" href="stabilization__rate_8c_source.html#l00187">stabilization_rate_run()</a>.</p>
 
 </div>
 </div>
@@ -2079,7 +2227,7 @@ Macros</h2></td></tr>
 <div class="line">  }</div>
 <div class="ttc" id="ins__alt__float_8c_html_a9d3f100c4375da4d957dbe599d494905"><div class="ttname"><a href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a></div><div class="ttdeci">static float p[2][2]</div><div class="ttdef"><b>Definition:</b> <a href="ins__alt__float_8c_source.html#l00268">ins_alt_float.c:268</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00392">392</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00393">393</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
 </div>
 </div>
@@ -2114,9 +2262,9 @@ Macros</h2></td></tr>
 <div class="ttc" id="group__math__algebra__int_html_ga6e66c515e55c38b84ef24aa04349053c"><div class="ttname"><a href="group__math__algebra__int.html#ga6e66c515e55c38b84ef24aa04349053c">RATE_FLOAT_OF_BFP</a></div><div class="ttdeci">#define RATE_FLOAT_OF_BFP(_ai)</div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__int_8h_source.html#l00209">pprz_algebra_int.h:209</a></div></div>
 <div class="ttc" id="ins__alt__float_8c_html_a9d3f100c4375da4d957dbe599d494905"><div class="ttname"><a href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a></div><div class="ttdeci">static float p[2][2]</div><div class="ttdef"><b>Definition:</b> <a href="ins__alt__float_8c_source.html#l00268">ins_alt_float.c:268</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00706">706</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00759">759</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00416">aligner_cb()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00300">gyro_cb()</a>, <a class="el" href="imu_8c_source.html#l00078">send_gyro()</a>, and <a class="el" href="state_8c_source.html#l01222">stateCalcBodyRates_f()</a>.</p>
+<p>Referenced by <a class="el" href="ahrs__madgwick__wrapper_8c_source.html#l00156">aligner_cb()</a>, <a class="el" href="ahrs__madgwick__wrapper_8c_source.html#l00115">gyro_cb()</a>, <a class="el" href="imu_8c_source.html#l00078">send_gyro()</a>, and <a class="el" href="state_8c_source.html#l01222">stateCalcBodyRates_f()</a>.</p>
 
 </div>
 </div>
@@ -2156,7 +2304,7 @@ Macros</h2></td></tr>
 <div class="line">  }</div>
 <div class="ttc" id="ins__alt__float_8c_html_a9d3f100c4375da4d957dbe599d494905"><div class="ttname"><a href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a></div><div class="ttdeci">static float p[2][2]</div><div class="ttdef"><b>Definition:</b> <a href="ins__alt__float_8c_source.html#l00268">ins_alt_float.c:268</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00385">385</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00386">386</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
 <p>Referenced by <a class="el" href="ahrs__aligner_8c_source.html#l00108">ahrs_aligner_run()</a>, <a class="el" href="ahrs__int__cmpl__euler_8c_source.html#l00154">ahrs_ice_propagate()</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00187">ahrs_icq_propagate()</a>, and <a class="el" href="stabilization__rate_8c_source.html#l00187">stabilization_rate_run()</a>.</p>
 
@@ -2198,7 +2346,7 @@ Macros</h2></td></tr>
 <div class="line">  }</div>
 <div class="ttc" id="ins__alt__float_8c_html_a9d3f100c4375da4d957dbe599d494905"><div class="ttname"><a href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a></div><div class="ttdeci">static float p[2][2]</div><div class="ttdef"><b>Definition:</b> <a href="ins__alt__float_8c_source.html#l00268">ins_alt_float.c:268</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00378">378</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00379">379</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
 <p>Referenced by <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00187">ahrs_icq_propagate()</a>, <a class="el" href="stabilization__attitude__ref__euler__float_8c_source.html#l00067">attitude_ref_euler_float_update()</a>, <a class="el" href="stabilization__attitude__ref__quat__float_8c_source.html#l00086">attitude_ref_quat_float_update()</a>, <a class="el" href="stabilization__indi__simple_8c_source.html#l00121">send_att_indi()</a>, and <a class="el" href="imu__um6_8c_source.html#l00211">UM6_packet_read_message()</a>.</p>
 
@@ -2234,7 +2382,7 @@ Macros</h2></td></tr>
 <div class="line">  }</div>
 <div class="ttc" id="ins__alt__float_8c_html_a9d3f100c4375da4d957dbe599d494905"><div class="ttname"><a href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a></div><div class="ttdeci">static float p[2][2]</div><div class="ttdef"><b>Definition:</b> <a href="ins__alt__float_8c_source.html#l00268">ins_alt_float.c:268</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00350">350</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00351">351</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
 <p>Referenced by <a class="el" href="ahrs__float__cmpl_8c_source.html#l00145">ahrs_fc_propagate()</a>, and <a class="el" href="ahrs__float__mlkf_8c_source.html#l00163">propagate_ref()</a>.</p>
 
@@ -2276,7 +2424,7 @@ Macros</h2></td></tr>
 <div class="line">  }</div>
 <div class="ttc" id="ins__alt__float_8c_html_a9d3f100c4375da4d957dbe599d494905"><div class="ttname"><a href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a></div><div class="ttdeci">static float p[2][2]</div><div class="ttdef"><b>Definition:</b> <a href="ins__alt__float_8c_source.html#l00268">ins_alt_float.c:268</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00357">357</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00358">358</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
 <p>Referenced by <a class="el" href="ahrs__float__cmpl_8c_source.html#l00145">ahrs_fc_propagate()</a>, <a class="el" href="stabilization__attitude__ref__euler__int_8c_source.html#l00084">attitude_ref_euler_int_update()</a>, and <a class="el" href="stabilization__attitude__ref__quat__int_8c_source.html#l00100">attitude_ref_quat_int_update()</a>.</p>
 
@@ -2324,7 +2472,7 @@ Macros</h2></td></tr>
 <div class="line">  }</div>
 <div class="ttc" id="ins__alt__float_8c_html_a9d3f100c4375da4d957dbe599d494905"><div class="ttname"><a href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a></div><div class="ttdeci">static float p[2][2]</div><div class="ttdef"><b>Definition:</b> <a href="ins__alt__float_8c_source.html#l00268">ins_alt_float.c:268</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00364">364</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00365">365</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
 <p>Referenced by <a class="el" href="ahrs__int__cmpl__euler_8c_source.html#l00154">ahrs_ice_propagate()</a>.</p>
 
@@ -2366,7 +2514,7 @@ Macros</h2></td></tr>
 <div class="line">  }</div>
 <div class="ttc" id="group__math__algebra__int_html_gadec7ae4944fea25c0388e37ad983fe22"><div class="ttname"><a href="group__math__algebra__int.html#gadec7ae4944fea25c0388e37ad983fe22">TRIG_BFP_OF_REAL</a></div><div class="ttdeci">#define TRIG_BFP_OF_REAL(_tf)</div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__int_8h_source.html#l00214">pprz_algebra_int.h:214</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00668">668</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00721">721</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
 <p>Referenced by <a class="el" href="pprz__orientation__conversion_8c_source.html#l00098">orientationCalcEulers_i()</a>, <a class="el" href="pprz__orientation__conversion_8c_source.html#l00048">orientationCalcQuat_i()</a>, and <a class="el" href="pprz__orientation__conversion_8c_source.html#l00073">orientationCalcRMat_i()</a>.</p>
 
@@ -2396,7 +2544,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00651">651</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00704">704</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
 <p>Referenced by <a class="el" href="pprz__orientation__conversion_8h_source.html#l00181">orientationSetRMat_f()</a>, and <a class="el" href="pprz__orientation__conversion_8h_source.html#l00157">orientationSetRMat_i()</a>.</p>
 
@@ -2443,7 +2591,7 @@ Macros</h2></td></tr>
 <div class="line">    (_c).m[8] = (_a).m[8] - (_b).m[8];       \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00613">613</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00666">666</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
 </div>
 </div>
@@ -2477,7 +2625,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00607">607</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00660">660</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
 <p>Referenced by <a class="el" href="ahrs__float__cmpl_8c_source.html#l00181">ahrs_fc_update_accel()</a>, <a class="el" href="ahrs__float__cmpl_8c_source.html#l00429">ahrs_fc_update_heading()</a>, <a class="el" href="ahrs__float__cmpl_8c_source.html#l00371">ahrs_fc_update_mag_2d_dumb()</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00241">ahrs_icq_update_accel()</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00565">ahrs_icq_update_heading()</a>, <a class="el" href="pprz__algebra__double_8c_source.html#l00114">double_rmat_inv()</a>, <a class="el" href="pprz__algebra__double_8c_source.html#l00029">double_rmat_of_eulers_321()</a>, <a class="el" href="pprz__algebra__double_8c_source.html#l00164">double_rmat_of_quat()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00577">float_quat_of_rmat()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00055">float_rmat_inv()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00169">float_rmat_of_axis_angle()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00214">float_rmat_of_eulers_312()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00194">float_rmat_of_eulers_321()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00236">float_rmat_of_quat()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00286">float_rmat_reorthogonalize()</a>, <a class="el" href="guidance__indi_8c_source.html#l00333">guidance_indi_calcG()</a>, <a class="el" href="guidance__indi_8c_source.html#l00305">guidance_indi_calcG_yxz()</a>, <a class="el" href="pprz__algebra__int_8c_source.html#l00421">int32_quat_of_rmat()</a>, <a class="el" href="pprz__algebra__int_8c_source.html#l00220">int32_rmat_of_eulers_312()</a>, <a class="el" href="pprz__algebra__int_8c_source.html#l00177">int32_rmat_of_eulers_321()</a>, and <a class="el" href="ahrs__float__dcm_8c_source.html#l00090">set_dcm_matrix_from_rmat()</a>.</p>
 
@@ -2519,7 +2667,7 @@ Macros</h2></td></tr>
 <div class="line">  }</div>
 <div class="ttc" id="group__math__algebra__int_html_ga41591c0e9e01055bfdb0ddbc0cd9b1ec"><div class="ttname"><a href="group__math__algebra__int.html#ga41591c0e9e01055bfdb0ddbc0cd9b1ec">TRIG_FLOAT_OF_BFP</a></div><div class="ttdeci">#define TRIG_FLOAT_OF_BFP(_ti)</div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__int_8h_source.html#l00215">pprz_algebra_int.h:215</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00680">680</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00733">733</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
 <p>Referenced by <a class="el" href="pprz__orientation__conversion_8c_source.html#l00173">orientationCalcEulers_f()</a>, <a class="el" href="pprz__orientation__conversion_8c_source.html#l00123">orientationCalcQuat_f()</a>, and <a class="el" href="pprz__orientation__conversion_8c_source.html#l00148">orientationCalcRMat_f()</a>.</p>
 
@@ -2539,7 +2687,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00610">610</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00663">663</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
 <p>Referenced by <a class="el" href="pprz__algebra__float_8c_source.html#l00577">float_quat_of_rmat()</a>, and <a class="el" href="pprz__algebra__int_8c_source.html#l00421">int32_quat_of_rmat()</a>.</p>
 
@@ -2585,9 +2733,9 @@ Macros</h2></td></tr>
 <div class="line"><a class="code" href="group__math__algebra__generic.html#gab04968261f7fa9056d945c9bfa4166b8">                RMAT_ELMT</a>((_rmat), 2, 1) * (_vin).y +  \</div>
 <div class="line">                <a class="code" href="group__math__algebra__generic.html#gab04968261f7fa9056d945c9bfa4166b8">RMAT_ELMT</a>((_rmat), 2, 2) * (_vin).z;   \</div>
 <div class="line">  }</div>
-<div class="ttc" id="group__math__algebra__generic_html_gab04968261f7fa9056d945c9bfa4166b8"><div class="ttname"><a href="group__math__algebra__generic.html#gab04968261f7fa9056d945c9bfa4166b8">RMAT_ELMT</a></div><div class="ttdeci">#define RMAT_ELMT(_rm, _row, _col)</div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra_8h_source.html#l00607">pprz_algebra.h:607</a></div></div>
+<div class="ttc" id="group__math__algebra__generic_html_gab04968261f7fa9056d945c9bfa4166b8"><div class="ttname"><a href="group__math__algebra__generic.html#gab04968261f7fa9056d945c9bfa4166b8">RMAT_ELMT</a></div><div class="ttdeci">#define RMAT_ELMT(_rm, _row, _col)</div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra_8h_source.html#l00660">pprz_algebra.h:660</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00626">626</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00679">679</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
 </div>
 </div>
@@ -2631,9 +2779,9 @@ Macros</h2></td></tr>
 <div class="line"><a class="code" href="group__math__algebra__generic.html#gab04968261f7fa9056d945c9bfa4166b8">                RMAT_ELMT</a>((_rmat), 1, 2) * (_vin).y +  \</div>
 <div class="line">                <a class="code" href="group__math__algebra__generic.html#gab04968261f7fa9056d945c9bfa4166b8">RMAT_ELMT</a>((_rmat), 2, 2) * (_vin).z;   \</div>
 <div class="line">  }</div>
-<div class="ttc" id="group__math__algebra__generic_html_gab04968261f7fa9056d945c9bfa4166b8"><div class="ttname"><a href="group__math__algebra__generic.html#gab04968261f7fa9056d945c9bfa4166b8">RMAT_ELMT</a></div><div class="ttdeci">#define RMAT_ELMT(_rm, _row, _col)</div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra_8h_source.html#l00607">pprz_algebra.h:607</a></div></div>
+<div class="ttc" id="group__math__algebra__generic_html_gab04968261f7fa9056d945c9bfa4166b8"><div class="ttname"><a href="group__math__algebra__generic.html#gab04968261f7fa9056d945c9bfa4166b8">RMAT_ELMT</a></div><div class="ttdeci">#define RMAT_ELMT(_rm, _row, _col)</div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra_8h_source.html#l00660">pprz_algebra.h:660</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00638">638</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00691">691</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
 </div>
 </div>
@@ -2667,7 +2815,7 @@ Macros</h2></td></tr>
 <div class="line">  }</div>
 <div class="ttc" id="group__math__algebra__int_html_gaf665ad3da6b5c3589c19d7bdc66e8fc4"><div class="ttname"><a href="group__math__algebra__int.html#gaf665ad3da6b5c3589c19d7bdc66e8fc4">SPEED_BFP_OF_REAL</a></div><div class="ttdeci">#define SPEED_BFP_OF_REAL(_af)</div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__int_8h_source.html#l00218">pprz_algebra_int.h:218</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00736">736</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00789">789</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
 <p>Referenced by <a class="el" href="traffic__info_8c_source.html#l00434">acInfoCalcVelocityEnu_i()</a>, <a class="el" href="state_8c_source.html#l00847">stateCalcHorizontalSpeedDir_i()</a>, <a class="el" href="state_8c_source.html#l00776">stateCalcSpeedEcef_i()</a>, <a class="el" href="state_8c_source.html#l00724">stateCalcSpeedEnu_i()</a>, and <a class="el" href="state_8c_source.html#l00674">stateCalcSpeedNed_i()</a>.</p>
 
@@ -2703,7 +2851,7 @@ Macros</h2></td></tr>
 <div class="line">  }</div>
 <div class="ttc" id="group__math__algebra__int_html_ga9f07d3d363b34da9e458e342f7453cc4"><div class="ttname"><a href="group__math__algebra__int.html#ga9f07d3d363b34da9e458e342f7453cc4">SPEED_FLOAT_OF_BFP</a></div><div class="ttdeci">#define SPEED_FLOAT_OF_BFP(_ai)</div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__int_8h_source.html#l00219">pprz_algebra_int.h:219</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00730">730</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00783">783</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
 <p>Referenced by <a class="el" href="traffic__info_8c_source.html#l00456">acInfoCalcVelocityEnu_f()</a>, <a class="el" href="state_8c_source.html#l01030">stateCalcHorizontalSpeedDir_f()</a>, <a class="el" href="state_8c_source.html#l01003">stateCalcHorizontalSpeedNorm_f()</a>, <a class="el" href="state_8c_source.html#l00978">stateCalcSpeedEcef_f()</a>, <a class="el" href="state_8c_source.html#l00928">stateCalcSpeedEnu_f()</a>, and <a class="el" href="state_8c_source.html#l00878">stateCalcSpeedNed_f()</a>.</p>
 
@@ -2723,9 +2871,9 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00047">47</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00048">48</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ahrs__float__utils_8h_source.html#l00083">ahrs_float_get_quat_from_accel_mag()</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00126">double_quat_norm()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00501">float_eulers_norm()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00361">float_quat_norm()</a>, and <a class="el" href="pprz__algebra__float_8c_source.html#l00068">float_rmat_norm()</a>.</p>
+<p>Referenced by <a class="el" href="ahrs__float__utils_8h_source.html#l00083">ahrs_float_get_quat_from_accel_mag()</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00126">double_quat_norm()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00518">float_eulers_norm()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00375">float_quat_norm()</a>, and <a class="el" href="pprz__algebra__float_8c_source.html#l00068">float_rmat_norm()</a>.</p>
 
 </div>
 </div>
@@ -2757,7 +2905,7 @@ Macros</h2></td></tr>
 <div class="line">    (_a).y += (_b).y;       \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00073">73</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00074">74</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
 <p>Referenced by <a class="el" href="guidance__h__ref_8c_source.html#l00116">gh_update_ref_from_pos_sp()</a>, <a class="el" href="guidance__h__ref_8c_source.html#l00148">gh_update_ref_from_speed_sp()</a>, <a class="el" href="guidance__hybrid_8c_source.html#l00264">guidance_hybrid_position_to_airspeed()</a>, <a class="el" href="nav__survey__zamboni_8c_source.html#l00129">nav_survey_zamboni_run()</a>, and <a class="el" href="pprz__geodetic__double_8c_source.html#l00276">utm_of_lla_d()</a>.</p>
 
@@ -2797,7 +2945,7 @@ Macros</h2></td></tr>
 <div class="line">    (_a).y = (_y);        \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00061">61</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00062">62</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
 <p>Referenced by <a class="el" href="nav__bungee__takeoff_8c_source.html#l00132">compute_points_from_bungee()</a>, <a class="el" href="ins__int_8c_source.html#l00396">ins_int_update_gps()</a>, <a class="el" href="nav__bungee__takeoff_8c_source.html#l00158">nav_bungee_takeoff_run()</a>, and <a class="el" href="rotorcraft_2navigation_8c_source.html#l00538">nav_circle()</a>.</p>
 
@@ -2831,9 +2979,9 @@ Macros</h2></td></tr>
 <div class="line">    (_a).y = (_b).y;        \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00067">67</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00068">68</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ahrs__float__cmpl_8c_source.html#l00326">ahrs_fc_update_mag_2d()</a>, <a class="el" href="dc_8c_source.html#l00259">dc_periodic()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00532">guidance_h_hover_enter()</a>, <a class="el" href="optical__flow__hover_8c_source.html#l00645">guidance_h_module_enter()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00414">guidance_h_update_reference()</a>, <a class="el" href="nav__survey__polygon__gvf_8c_source.html#l00137">gvf_nav_survey_polygon_setup()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00221">nav_advance_carrot()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00538">nav_circle()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00584">nav_route()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00243">nav_run()</a>, <a class="el" href="nav__spiral_8c_source.html#l00086">nav_spiral_run()</a>, <a class="el" href="nav__spiral_8c_source.html#l00050">nav_spiral_setup()</a>, <a class="el" href="nav__survey__polygon_8c_source.html#l00135">nav_survey_polygon_setup()</a>, <a class="el" href="nav__survey__zamboni_8c_source.html#l00057">nav_survey_zamboni_setup()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00202">reset_guidance_reference_from_current_position()</a>, <a class="el" href="state_8h_source.html#l01291">stateSetHorizontalWindspeed_f()</a>, and <a class="el" href="state_8h_source.html#l01264">stateSetHorizontalWindspeed_i()</a>.</p>
+<p>Referenced by <a class="el" href="ahrs__float__cmpl_8c_source.html#l00326">ahrs_fc_update_mag_2d()</a>, <a class="el" href="dc_8c_source.html#l00273">dc_periodic()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00532">guidance_h_hover_enter()</a>, <a class="el" href="optical__flow__hover_8c_source.html#l00645">guidance_h_module_enter()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00414">guidance_h_update_reference()</a>, <a class="el" href="nav__survey__polygon__gvf_8c_source.html#l00139">gvf_nav_survey_polygon_setup()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00221">nav_advance_carrot()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00538">nav_circle()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00584">nav_route()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00243">nav_run()</a>, <a class="el" href="nav__spiral_8c_source.html#l00086">nav_spiral_run()</a>, <a class="el" href="nav__spiral_8c_source.html#l00050">nav_spiral_setup()</a>, <a class="el" href="nav__survey__polygon_8c_source.html#l00135">nav_survey_polygon_setup()</a>, <a class="el" href="nav__survey__zamboni_8c_source.html#l00057">nav_survey_zamboni_setup()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00202">reset_guidance_reference_from_current_position()</a>, <a class="el" href="state_8h_source.html#l01291">stateSetHorizontalWindspeed_f()</a>, and <a class="el" href="state_8h_source.html#l01264">stateSetHorizontalWindspeed_i()</a>.</p>
 
 </div>
 </div>
@@ -2871,9 +3019,9 @@ Macros</h2></td></tr>
 <div class="line">    (_c).y = (_a).y - (_b).y;     \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00091">91</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00092">92</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
-<p>Referenced by <a class="el" href="nav__bungee__takeoff_8c_source.html#l00132">compute_points_from_bungee()</a>, <a class="el" href="optical__flow__hover_8c_source.html#l00684">computeOptiTrack()</a>, <a class="el" href="dc_8c_source.html#l00259">dc_periodic()</a>, <a class="el" href="guidance__h__ref_8c_source.html#l00116">gh_update_ref_from_pos_sp()</a>, <a class="el" href="guidance__h__ref_8c_source.html#l00148">gh_update_ref_from_speed_sp()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00462">guidance_h_traj_run()</a>, <a class="el" href="guidance__hybrid_8c_source.html#l00332">guidance_hybrid_determine_wind_estimate()</a>, <a class="el" href="guidance__hybrid_8c_source.html#l00264">guidance_hybrid_position_to_airspeed()</a>, <a class="el" href="nav__survey__polygon__gvf_8c_source.html#l00247">gvf_nav_survey_polygon_run()</a>, <a class="el" href="nav__survey__polygon__gvf_8c_source.html#l00137">gvf_nav_survey_polygon_setup()</a>, <a class="el" href="mission__rotorcraft__nav_8c_source.html#l00041">mission_point_of_lla()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00221">nav_advance_carrot()</a>, <a class="el" href="nav__rover__base_8c_source.html#l00063">nav_approaching()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00257">nav_approaching_from()</a>, <a class="el" href="nav__bungee__takeoff_8c_source.html#l00158">nav_bungee_takeoff_run()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00301">nav_check_wp_time()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00538">nav_circle()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00584">nav_route()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00497">nav_set_heading_towards()</a>, <a class="el" href="nav__spiral_8c_source.html#l00086">nav_spiral_run()</a>, <a class="el" href="nav__spiral_8c_source.html#l00050">nav_spiral_setup()</a>, <a class="el" href="nav__survey__disc_8c_source.html#l00058">nav_survey_disc_run()</a>, <a class="el" href="nav__survey__polygon_8c_source.html#l00232">nav_survey_polygon_run()</a>, <a class="el" href="nav__survey__polygon_8c_source.html#l00135">nav_survey_polygon_setup()</a>, <a class="el" href="nav__survey__zamboni_8c_source.html#l00057">nav_survey_zamboni_setup()</a>, <a class="el" href="rotorcraft__cam_8c_source.html#l00127">rotorcraft_cam_periodic()</a>, and <a class="el" href="rover__guidance_8c_source.html#l00083">rover_guidance_run()</a>.</p>
+<p>Referenced by <a class="el" href="nav__bungee__takeoff_8c_source.html#l00132">compute_points_from_bungee()</a>, <a class="el" href="optical__flow__hover_8c_source.html#l00684">computeOptiTrack()</a>, <a class="el" href="dc_8c_source.html#l00273">dc_periodic()</a>, <a class="el" href="guidance__h__ref_8c_source.html#l00116">gh_update_ref_from_pos_sp()</a>, <a class="el" href="guidance__h__ref_8c_source.html#l00148">gh_update_ref_from_speed_sp()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00462">guidance_h_traj_run()</a>, <a class="el" href="guidance__hybrid_8c_source.html#l00332">guidance_hybrid_determine_wind_estimate()</a>, <a class="el" href="guidance__hybrid_8c_source.html#l00264">guidance_hybrid_position_to_airspeed()</a>, <a class="el" href="nav__survey__polygon__gvf_8c_source.html#l00250">gvf_nav_survey_polygon_run()</a>, <a class="el" href="nav__survey__polygon__gvf_8c_source.html#l00139">gvf_nav_survey_polygon_setup()</a>, <a class="el" href="mission__rotorcraft__nav_8c_source.html#l00041">mission_point_of_lla()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00221">nav_advance_carrot()</a>, <a class="el" href="nav__rover__base_8c_source.html#l00063">nav_approaching()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00257">nav_approaching_from()</a>, <a class="el" href="nav__bungee__takeoff_8c_source.html#l00158">nav_bungee_takeoff_run()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00301">nav_check_wp_time()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00538">nav_circle()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00584">nav_route()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00497">nav_set_heading_towards()</a>, <a class="el" href="nav__spiral_8c_source.html#l00086">nav_spiral_run()</a>, <a class="el" href="nav__spiral_8c_source.html#l00050">nav_spiral_setup()</a>, <a class="el" href="nav__survey__disc_8c_source.html#l00058">nav_survey_disc_run()</a>, <a class="el" href="nav__survey__polygon_8c_source.html#l00232">nav_survey_polygon_run()</a>, <a class="el" href="nav__survey__polygon_8c_source.html#l00135">nav_survey_polygon_setup()</a>, <a class="el" href="nav__survey__zamboni_8c_source.html#l00057">nav_survey_zamboni_setup()</a>, <a class="el" href="rotorcraft__cam_8c_source.html#l00127">rotorcraft_cam_periodic()</a>, <a class="el" href="rover__guidance_8c_source.html#l00083">rover_guidance_run()</a>, and <a class="el" href="rover__guidance__holonomic_8c_source.html#l00084">rover_holo_guidance_run()</a>.</p>
 
 </div>
 </div>
@@ -2901,7 +3049,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00115">115</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00116">116</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
 <p>Referenced by <a class="el" href="nav__bungee__takeoff_8c_source.html#l00158">nav_bungee_takeoff_run()</a>, and <a class="el" href="nav__survey__disc_8c_source.html#l00058">nav_survey_disc_run()</a>.</p>
 
@@ -2921,9 +3069,9 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00117">117</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00118">118</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
-<p>Referenced by <a class="el" href="obstacle__avoidance_8c_source.html#l01032">CN_escape_velocity()</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00404">CN_potential_heading()</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00506">CN_potential_velocity()</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00777">CN_vector_escape_velocity()</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00590">CN_vector_velocity()</a>, <a class="el" href="dc__ctrl__parrot__mykonos_8c_source.html#l00280">dc_ctrl_parrot_mykonos_autoshoot()</a>, <a class="el" href="hackhd_8c_source.html#l00220">hackhd_autoshoot()</a>, and <a class="el" href="rotorcraft_2navigation_8c_source.html#l00497">nav_set_heading_towards()</a>.</p>
+<p>Referenced by <a class="el" href="obstacle__avoidance_8c_source.html#l01032">CN_escape_velocity()</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00404">CN_potential_heading()</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00506">CN_potential_velocity()</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00777">CN_vector_escape_velocity()</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00590">CN_vector_velocity()</a>, <a class="el" href="dc__ctrl__parrot__mykonos_8c_source.html#l00283">dc_ctrl_parrot_mykonos_autoshoot()</a>, <a class="el" href="hackhd_8c_source.html#l00220">hackhd_autoshoot()</a>, and <a class="el" href="rotorcraft_2navigation_8c_source.html#l00497">nav_set_heading_towards()</a>.</p>
 
 </div>
 </div>
@@ -2961,7 +3109,7 @@ Macros</h2></td></tr>
 <div class="line">    (_vo).y =  (_vi).y / (_s);      \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00103">103</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00104">104</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
 <p>Referenced by <a class="el" href="guidance__hybrid_8c_source.html#l00264">guidance_hybrid_position_to_airspeed()</a>, <a class="el" href="ins__int_8c_source.html#l00396">ins_int_update_gps()</a>, and <a class="el" href="rotorcraft_2navigation_8c_source.html#l00221">nav_advance_carrot()</a>.</p>
 
@@ -3001,9 +3149,9 @@ Macros</h2></td></tr>
 <div class="line">    (_vo).y =  (_vi).y * (_s);      \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00097">97</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00098">98</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
-<p>Referenced by <a class="el" href="nav__bungee__takeoff_8c_source.html#l00132">compute_points_from_bungee()</a>, <a class="el" href="guidance__h__ref_8c_source.html#l00116">gh_update_ref_from_pos_sp()</a>, <a class="el" href="guidance__h__ref_8c_source.html#l00148">gh_update_ref_from_speed_sp()</a>, <a class="el" href="nav__survey__polygon__gvf_8c_source.html#l00137">gvf_nav_survey_polygon_setup()</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00311">lla_of_utm_d()</a>, <a class="el" href="mission__rotorcraft__nav_8c_source.html#l00041">mission_point_of_lla()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00221">nav_advance_carrot()</a>, <a class="el" href="nav__rover__base_8c_source.html#l00063">nav_approaching()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00257">nav_approaching_from()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00584">nav_route()</a>, <a class="el" href="nav__survey__polygon_8c_source.html#l00135">nav_survey_polygon_setup()</a>, <a class="el" href="nav__survey__zamboni_8c_source.html#l00057">nav_survey_zamboni_setup()</a>, and <a class="el" href="pprz__geodetic__double_8c_source.html#l00276">utm_of_lla_d()</a>.</p>
+<p>Referenced by <a class="el" href="nav__bungee__takeoff_8c_source.html#l00132">compute_points_from_bungee()</a>, <a class="el" href="guidance__h__ref_8c_source.html#l00116">gh_update_ref_from_pos_sp()</a>, <a class="el" href="guidance__h__ref_8c_source.html#l00148">gh_update_ref_from_speed_sp()</a>, <a class="el" href="nav__survey__polygon__gvf_8c_source.html#l00139">gvf_nav_survey_polygon_setup()</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00311">lla_of_utm_d()</a>, <a class="el" href="mission__rotorcraft__nav_8c_source.html#l00041">mission_point_of_lla()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00221">nav_advance_carrot()</a>, <a class="el" href="nav__rover__base_8c_source.html#l00063">nav_approaching()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00257">nav_approaching_from()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00584">nav_route()</a>, <a class="el" href="nav__survey__polygon_8c_source.html#l00135">nav_survey_polygon_setup()</a>, <a class="el" href="nav__survey__zamboni_8c_source.html#l00057">nav_survey_zamboni_setup()</a>, and <a class="el" href="pprz__geodetic__double_8c_source.html#l00276">utm_of_lla_d()</a>.</p>
 
 </div>
 </div>
@@ -3041,7 +3189,7 @@ Macros</h2></td></tr>
 <div class="line">    (_v).y = (_v).y &lt; _min ? _min : (_v).y &gt; _max ? _max : (_v).y;  \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00109">109</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00110">110</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
 <p>Referenced by <a class="el" href="optical__flow__hover_8c_source.html#l00684">computeOptiTrack()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00462">guidance_h_traj_run()</a>, and <a class="el" href="rotorcraft_2navigation_8c_source.html#l00221">nav_advance_carrot()</a>.</p>
 
@@ -3075,7 +3223,7 @@ Macros</h2></td></tr>
 <div class="line">    (_a).y -= (_b).y;       \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00079">79</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00080">80</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
 <p>Referenced by <a class="el" href="pprz__geodetic__double_8c_source.html#l00311">lla_of_utm_d()</a>.</p>
 
@@ -3115,9 +3263,9 @@ Macros</h2></td></tr>
 <div class="line">    (_c).y = (_a).y + (_b).y;     \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00085">85</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00086">86</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
-<p>Referenced by <a class="el" href="nav__bungee__takeoff_8c_source.html#l00132">compute_points_from_bungee()</a>, <a class="el" href="guidance__h__ref_8c_source.html#l00116">gh_update_ref_from_pos_sp()</a>, <a class="el" href="nav__survey__polygon__gvf_8c_source.html#l00247">gvf_nav_survey_polygon_run()</a>, <a class="el" href="nav__survey__polygon__gvf_8c_source.html#l00137">gvf_nav_survey_polygon_setup()</a>, <a class="el" href="mission__rotorcraft__nav_8c_source.html#l00041">mission_point_of_lla()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00221">nav_advance_carrot()</a>, <a class="el" href="nav__rover__base_8c_source.html#l00063">nav_approaching()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00257">nav_approaching_from()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00538">nav_circle()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00584">nav_route()</a>, <a class="el" href="nav__survey__polygon_8c_source.html#l00232">nav_survey_polygon_run()</a>, <a class="el" href="nav__survey__polygon_8c_source.html#l00135">nav_survey_polygon_setup()</a>, and <a class="el" href="nav__survey__zamboni_8c_source.html#l00057">nav_survey_zamboni_setup()</a>.</p>
+<p>Referenced by <a class="el" href="nav__bungee__takeoff_8c_source.html#l00132">compute_points_from_bungee()</a>, <a class="el" href="guidance__h__ref_8c_source.html#l00116">gh_update_ref_from_pos_sp()</a>, <a class="el" href="nav__survey__polygon__gvf_8c_source.html#l00250">gvf_nav_survey_polygon_run()</a>, <a class="el" href="nav__survey__polygon__gvf_8c_source.html#l00139">gvf_nav_survey_polygon_setup()</a>, <a class="el" href="mission__rotorcraft__nav_8c_source.html#l00041">mission_point_of_lla()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00221">nav_advance_carrot()</a>, <a class="el" href="nav__rover__base_8c_source.html#l00063">nav_approaching()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00257">nav_approaching_from()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00538">nav_circle()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00584">nav_route()</a>, <a class="el" href="nav__survey__polygon_8c_source.html#l00232">nav_survey_polygon_run()</a>, <a class="el" href="nav__survey__polygon_8c_source.html#l00135">nav_survey_polygon_setup()</a>, and <a class="el" href="nav__survey__zamboni_8c_source.html#l00057">nav_survey_zamboni_setup()</a>.</p>
 
 </div>
 </div>
@@ -3150,7 +3298,7 @@ Macros</h2></td></tr>
 <div class="line">    (_vo).z = ABS((_vi).z);   \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00237">237</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00238">238</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
 </div>
 </div>
@@ -3183,9 +3331,9 @@ Macros</h2></td></tr>
 <div class="line">    (_a).z += (_b).z;       \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00146">146</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00147">147</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ahrs__aligner_8c_source.html#l00108">ahrs_aligner_run()</a>, <a class="el" href="ahrs__float__cmpl_8c_source.html#l00181">ahrs_fc_update_accel()</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00241">ahrs_icq_update_accel()</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00777">CN_vector_escape_velocity()</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00590">CN_vector_velocity()</a>, <a class="el" href="nps__random_8c_source.html#l00065">double_vect3_update_random_walk()</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00168">ecef_of_enu_point_d()</a>, <a class="el" href="pprz__geodetic__int_8c_source.html#l00238">ecef_of_enu_point_i()</a>, <a class="el" href="pprz__geodetic__int_8c_source.html#l00263">ecef_of_enu_pos_i()</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00584">error_output()</a>, <a class="el" href="ahrs__float__invariant_8c_source.html#l00370">float_quat_vmul_right()</a>, <a class="el" href="cv__georeference_8c_source.html#l00119">georeference_filter()</a>, <a class="el" href="imu__krooz_8c_source.html#l00139">imu_krooz_event()</a>, <a class="el" href="imu__krooz_8c_source.html#l00091">imu_krooz_periodic()</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00321">ins_float_invariant_propagate()</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00521">invariant_model()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00710">jsbsimloc_to_loc()</a>, <a class="el" href="nps__sensor__accel_8c_source.html#l00027">nps_sensor_accel_run_step()</a>, <a class="el" href="nps__sensor__gps_8c_source.html#l00039">nps_sensor_gps_run_step()</a>, <a class="el" href="nps__sensor__gyro_8c_source.html#l00031">nps_sensor_gyro_run_step()</a>, <a class="el" href="nps__sensor__mag_8c_source.html#l00026">nps_sensor_mag_run_step()</a>, and <a class="el" href="wind__estimator_8c_source.html#l00292">wind_estimator_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="ahrs__aligner_8c_source.html#l00108">ahrs_aligner_run()</a>, <a class="el" href="ahrs__float__cmpl_8c_source.html#l00181">ahrs_fc_update_accel()</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00241">ahrs_icq_update_accel()</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00777">CN_vector_escape_velocity()</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00590">CN_vector_velocity()</a>, <a class="el" href="cv__target__localization_8c_source.html#l00133">detection_cb()</a>, <a class="el" href="nps__random_8c_source.html#l00065">double_vect3_update_random_walk()</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00168">ecef_of_enu_point_d()</a>, <a class="el" href="pprz__geodetic__int_8c_source.html#l00238">ecef_of_enu_point_i()</a>, <a class="el" href="pprz__geodetic__int_8c_source.html#l00263">ecef_of_enu_pos_i()</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00614">error_output()</a>, <a class="el" href="ahrs__float__invariant_8c_source.html#l00370">float_quat_vmul_right()</a>, <a class="el" href="cv__georeference_8c_source.html#l00119">georeference_filter()</a>, <a class="el" href="imu__krooz_8c_source.html#l00139">imu_krooz_event()</a>, <a class="el" href="imu__krooz_8c_source.html#l00091">imu_krooz_periodic()</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00337">ins_float_invariant_propagate()</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00555">invariant_model()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00721">jsbsimloc_to_loc()</a>, <a class="el" href="nps__sensor__accel_8c_source.html#l00027">nps_sensor_accel_run_step()</a>, <a class="el" href="nps__sensor__gps_8c_source.html#l00039">nps_sensor_gps_run_step()</a>, <a class="el" href="nps__sensor__gyro_8c_source.html#l00031">nps_sensor_gyro_run_step()</a>, <a class="el" href="nps__sensor__mag_8c_source.html#l00026">nps_sensor_mag_run_step()</a>, and <a class="el" href="wind__estimator_8c_source.html#l00292">wind_estimator_periodic()</a>.</p>
 
 </div>
 </div>
@@ -3224,7 +3372,7 @@ Macros</h2></td></tr>
 <div class="line">    (_a).z += ((_b).z * (_s));        \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00167">167</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00168">168</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
 </div>
 </div>
@@ -3269,9 +3417,9 @@ Macros</h2></td></tr>
 <div class="line">    (_a).z = (_z);        \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00124">124</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00125">125</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ahrs__float__cmpl_8c_source.html#l00082">ahrs_fc_init()</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00115">ahrs_icq_init()</a>, <a class="el" href="ahrs__float__mlkf_8c_source.html#l00062">ahrs_mlkf_init()</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00298">calc_fast9_lukas_kanade()</a>, <a class="el" href="ahrs__int__cmpl__quat__wrapper_8c_source.html#l00232">geo_mag_cb()</a>, <a class="el" href="cv__georeference_8c_source.html#l00180">georeference_init()</a>, <a class="el" href="cv__georeference_8c_source.html#l00053">georeference_project()</a>, <a class="el" href="imu__xsens_8c_source.html#l00053">handle_ins_msg()</a>, <a class="el" href="imu__aspirin__2__spi_8c_source.html#l00154">imu_aspirin2_event()</a>, <a class="el" href="imu__bebop_8c_source.html#l00112">imu_bebop_event()</a>, <a class="el" href="imu__disco_8c_source.html#l00099">imu_disco_event()</a>, <a class="el" href="imu__nps_8c_source.html#l00040">imu_feed_gyro_accel()</a>, <a class="el" href="imu__nps_8c_source.html#l00053">imu_feed_mag()</a>, <a class="el" href="imu_8c_source.html#l00110">imu_init()</a>, <a class="el" href="imu__krooz_8c_source.html#l00139">imu_krooz_event()</a>, <a class="el" href="imu__krooz_8c_source.html#l00061">imu_krooz_init()</a>, <a class="el" href="imu__krooz_8c_source.html#l00091">imu_krooz_periodic()</a>, <a class="el" href="imu__navgo_8c_source.html#l00120">imu_navgo_event()</a>, <a class="el" href="imu__px4fmu_8c_source.html#l00084">imu_px4fmu_event()</a>, <a class="el" href="imu__swing_8c_source.html#l00092">imu_swing_event()</a>, <a class="el" href="imu__umarim_8c_source.html#l00103">imu_umarim_event()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00244">ins_vectornav_propagate()</a>, <a class="el" href="nav__bungee__takeoff_8c_source.html#l00145">nav_bungee_takeoff_setup()</a>, <a class="el" href="navdata_8c_source.html#l00326">navdata_publish_imu()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00166">nps_fdm_init()</a>, <a class="el" href="nps__sensor__accel_8c_source.html#l00010">nps_sensor_accel_init()</a>, <a class="el" href="nps__sensor__gps_8c_source.html#l00010">nps_sensor_gps_init()</a>, <a class="el" href="nps__sensor__gyro_8c_source.html#l00009">nps_sensor_gyro_init()</a>, <a class="el" href="nps__sensor__mag_8c_source.html#l00008">nps_sensor_mag_init()</a>, <a class="el" href="stabilization__attitude__quat__transformations_8c_source.html#l00063">quat_from_earth_cmd_f()</a>, and <a class="el" href="stabilization__attitude__euler__float_8c_source.html#l00098">stabilization_attitude_init()</a>.</p>
+<p>Referenced by <a class="el" href="ahrs__float__cmpl_8c_source.html#l00082">ahrs_fc_init()</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00115">ahrs_icq_init()</a>, <a class="el" href="ahrs__float__mlkf_8c_source.html#l00062">ahrs_mlkf_init()</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00298">calc_fast9_lukas_kanade()</a>, <a class="el" href="detect__gate_8c_source.html#l00305">detect_gate_init()</a>, <a class="el" href="ahrs__int__cmpl__quat__wrapper_8c_source.html#l00232">geo_mag_cb()</a>, <a class="el" href="cv__georeference_8c_source.html#l00180">georeference_init()</a>, <a class="el" href="cv__georeference_8c_source.html#l00053">georeference_project()</a>, <a class="el" href="imu__xsens_8c_source.html#l00053">handle_ins_msg()</a>, <a class="el" href="imu__aspirin__2__spi_8c_source.html#l00154">imu_aspirin2_event()</a>, <a class="el" href="imu__bebop_8c_source.html#l00112">imu_bebop_event()</a>, <a class="el" href="imu__disco_8c_source.html#l00108">imu_disco_event()</a>, <a class="el" href="imu__nps_8c_source.html#l00040">imu_feed_gyro_accel()</a>, <a class="el" href="imu__nps_8c_source.html#l00053">imu_feed_mag()</a>, <a class="el" href="imu_8c_source.html#l00110">imu_init()</a>, <a class="el" href="imu__krooz_8c_source.html#l00139">imu_krooz_event()</a>, <a class="el" href="imu__krooz_8c_source.html#l00061">imu_krooz_init()</a>, <a class="el" href="imu__krooz_8c_source.html#l00091">imu_krooz_periodic()</a>, <a class="el" href="imu__navgo_8c_source.html#l00120">imu_navgo_event()</a>, <a class="el" href="imu__px4fmu_8c_source.html#l00084">imu_px4fmu_event()</a>, <a class="el" href="imu__swing_8c_source.html#l00092">imu_swing_event()</a>, <a class="el" href="imu__umarim_8c_source.html#l00103">imu_umarim_event()</a>, <a class="el" href="ins__vectornav_8c_source.html#l00244">ins_vectornav_propagate()</a>, <a class="el" href="nav__bungee__takeoff_8c_source.html#l00145">nav_bungee_takeoff_setup()</a>, <a class="el" href="navdata_8c_source.html#l00326">navdata_publish_imu()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00173">nps_fdm_init()</a>, <a class="el" href="nps__sensor__accel_8c_source.html#l00010">nps_sensor_accel_init()</a>, <a class="el" href="nps__sensor__gps_8c_source.html#l00010">nps_sensor_gps_init()</a>, <a class="el" href="nps__sensor__gyro_8c_source.html#l00009">nps_sensor_gyro_init()</a>, <a class="el" href="nps__sensor__mag_8c_source.html#l00008">nps_sensor_mag_init()</a>, <a class="el" href="stabilization__attitude__quat__transformations_8c_source.html#l00063">quat_from_earth_cmd_f()</a>, <a class="el" href="stabilization__attitude__euler__float_8c_source.html#l00098">stabilization_attitude_init()</a>, and <a class="el" href="cv__target__localization_8c_source.html#l00190">target_localization_init()</a>.</p>
 
 </div>
 </div>
@@ -3316,7 +3464,7 @@ Macros</h2></td></tr>
 <div class="line">    (_a).z = ABS(_z);                              \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00132">132</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00133">133</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
 </div>
 </div>
@@ -3355,7 +3503,7 @@ Macros</h2></td></tr>
 <div class="line">    if ((_v).z &gt; (_v_max).z) (_v).z = (_v_max).z; <span class="keywordflow">else</span> <span class="keywordflow">if</span> ((_v).z &lt; (_v_min).z) (_v).z = (_v_min).z; \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00230">230</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00231">231</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
 <p>Referenced by <a class="el" href="vi__datalink_8c_source.html#l00042">vi_update_wp()</a>.</p>
 
@@ -3396,7 +3544,7 @@ Macros</h2></td></tr>
 <div class="line">    if ((_v).z &gt; (_max)) (_v).z = (_max); <span class="keywordflow">else</span> <span class="keywordflow">if</span> ((_v).z &lt; (_min)) (_v).z = (_min); \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00223">223</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00224">224</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
 <p>Referenced by <a class="el" href="nps__sensor__accel_8c_source.html#l00027">nps_sensor_accel_run_step()</a>, <a class="el" href="nps__sensor__gyro_8c_source.html#l00031">nps_sensor_gyro_run_step()</a>, and <a class="el" href="nps__sensor__mag_8c_source.html#l00026">nps_sensor_mag_run_step()</a>.</p>
 
@@ -3431,9 +3579,9 @@ Macros</h2></td></tr>
 <div class="line">    (_a).z = (_b).z;        \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00139">139</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00140">140</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__gps__passthrough_8c_source.html#l00198">accel_cb()</a>, <a class="el" href="traffic__info_8h_source.html#l00261">acInfoSetPositionEnu_f()</a>, <a class="el" href="traffic__info_8h_source.html#l00207">acInfoSetPositionEnu_i()</a>, <a class="el" href="traffic__info_8h_source.html#l00297">acInfoSetVelocityEnu_f()</a>, <a class="el" href="traffic__info_8h_source.html#l00279">acInfoSetVelocityEnu_i()</a>, <a class="el" href="ahrs__float__cmpl_8c_source.html#l00181">ahrs_fc_update_accel()</a>, <a class="el" href="ahrs__int__cmpl__euler_8c_source.html#l00202">ahrs_ice_update_accel()</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00241">ahrs_icq_update_accel()</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00777">CN_vector_escape_velocity()</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00590">CN_vector_velocity()</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00384">decode_gpspacket()</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00584">error_output()</a>, <a class="el" href="cv__georeference_8c_source.html#l00119">georeference_filter()</a>, <a class="el" href="imu__apogee_8c_source.html#l00138">imu_apogee_event()</a>, <a class="el" href="imu__aspirin__2__spi_8c_source.html#l00154">imu_aspirin2_event()</a>, <a class="el" href="imu__aspirin_8c_source.html#l00118">imu_aspirin_event()</a>, <a class="el" href="imu__aspirin__i2c_8c_source.html#l00129">imu_aspirin_i2c_event()</a>, <a class="el" href="imu__drotek__10dof__v2_8c_source.html#l00110">imu_drotek2_event()</a>, <a class="el" href="imu__gl1_8c_source.html#l00118">imu_gl1_event()</a>, <a class="el" href="imu__krooz_8c_source.html#l00091">imu_krooz_periodic()</a>, <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00119">imu_mpu9250_event()</a>, <a class="el" href="imu__mpu6000__hmc5883_8c_source.html#l00146">imu_mpu_hmc_event()</a>, <a class="el" href="imu__mpu60x0__i2c_8c_source.html#l00080">imu_mpu_i2c_event()</a>, <a class="el" href="imu__mpu6000_8c_source.html#l00081">imu_mpu_spi_event()</a>, <a class="el" href="imu__navgo_8c_source.html#l00120">imu_navgo_event()</a>, <a class="el" href="imu__navstik_8c_source.html#l00102">imu_navstik_event()</a>, <a class="el" href="imu__px4fmu__v2_84_8c_source.html#l00067">imu_px4_event()</a>, <a class="el" href="imu_8c_source.html#l00219">imu_scale_accel()</a>, <a class="el" href="ins__skeleton_8c_source.html#l00115">ins_module_propagate()</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00034">ltp_def_from_ecef_d()</a>, <a class="el" href="pprz__geodetic__float_8c_source.html#l00036">ltp_def_from_ecef_f()</a>, <a class="el" href="pprz__geodetic__int_8c_source.html#l00060">ltp_def_from_ecef_i()</a>, <a class="el" href="mag__hmc58xx_8c_source.html#l00086">mag_hmc58xx_module_event()</a>, <a class="el" href="mission__rotorcraft__nav_8c_source.html#l00117">mission_nav_wp()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00421">nav_home()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00179">nav_init()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00361">nav_init_stage()</a>, <a class="el" href="nav__survey__poly__rotorcraft_8c_source.html#l00307">nav_survey_poly_run()</a>, <a class="el" href="nav__survey__rectangle__rotorcraft_8c_source.html#l00099">nav_survey_rectangle_rotorcraft_setup()</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00239">NavGotoWaypoint()</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00180">NavGotoWaypointHeading()</a>, <a class="el" href="nps__sensor__accel_8c_source.html#l00027">nps_sensor_accel_run_step()</a>, <a class="el" href="nps__sensor__gps_8c_source.html#l00039">nps_sensor_gps_run_step()</a>, <a class="el" href="nps__sensor__gyro_8c_source.html#l00031">nps_sensor_gyro_run_step()</a>, <a class="el" href="nps__autopilot__fixedwing_8c_source.html#l00266">sim_overwrite_ins()</a>, <a class="el" href="state_8h_source.html#l00855">stateSetAccelBody_i()</a>, <a class="el" href="state_8h_source.html#l01010">stateSetAccelEcef_f()</a>, <a class="el" href="state_8h_source.html#l00994">stateSetAccelEcef_i()</a>, <a class="el" href="state_8h_source.html#l01002">stateSetAccelNed_f()</a>, <a class="el" href="state_8h_source.html#l00986">stateSetAccelNed_i()</a>, <a class="el" href="state_8h_source.html#l00622">stateSetPosition_f()</a>, <a class="el" href="state_8h_source.html#l00555">stateSetPosition_i()</a>, <a class="el" href="state_8h_source.html#l00590">stateSetPositionEcef_f()</a>, <a class="el" href="state_8h_source.html#l00523">stateSetPositionEcef_i()</a>, <a class="el" href="state_8h_source.html#l00606">stateSetPositionEnu_f()</a>, <a class="el" href="state_8h_source.html#l00539">stateSetPositionEnu_i()</a>, <a class="el" href="state_8h_source.html#l00598">stateSetPositionNed_f()</a>, <a class="el" href="state_8h_source.html#l00531">stateSetPositionNed_i()</a>, <a class="el" href="state_8h_source.html#l00833">stateSetSpeed_f()</a>, <a class="el" href="state_8h_source.html#l00787">stateSetSpeed_i()</a>, <a class="el" href="state_8h_source.html#l00825">stateSetSpeedEcef_f()</a>, <a class="el" href="state_8h_source.html#l00779">stateSetSpeedEcef_i()</a>, <a class="el" href="state_8h_source.html#l00817">stateSetSpeedEnu_f()</a>, <a class="el" href="state_8h_source.html#l00771">stateSetSpeedEnu_i()</a>, <a class="el" href="state_8h_source.html#l00809">stateSetSpeedNed_f()</a>, <a class="el" href="state_8h_source.html#l00763">stateSetSpeedNed_i()</a>, and <a class="el" href="nps__sensors__utils_8c_source.html#l00006">UpdateSensorLatency()</a>.</p>
+<p>Referenced by <a class="el" href="ins__gps__passthrough_8c_source.html#l00198">accel_cb()</a>, <a class="el" href="traffic__info_8h_source.html#l00261">acInfoSetPositionEnu_f()</a>, <a class="el" href="traffic__info_8h_source.html#l00207">acInfoSetPositionEnu_i()</a>, <a class="el" href="traffic__info_8h_source.html#l00297">acInfoSetVelocityEnu_f()</a>, <a class="el" href="traffic__info_8h_source.html#l00279">acInfoSetVelocityEnu_i()</a>, <a class="el" href="ahrs__float__cmpl_8c_source.html#l00181">ahrs_fc_update_accel()</a>, <a class="el" href="ahrs__int__cmpl__euler_8c_source.html#l00202">ahrs_ice_update_accel()</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00241">ahrs_icq_update_accel()</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00777">CN_vector_escape_velocity()</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00590">CN_vector_velocity()</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00384">decode_gpspacket()</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00614">error_output()</a>, <a class="el" href="cv__georeference_8c_source.html#l00119">georeference_filter()</a>, <a class="el" href="imu__apogee_8c_source.html#l00138">imu_apogee_event()</a>, <a class="el" href="imu__aspirin__2__spi_8c_source.html#l00154">imu_aspirin2_event()</a>, <a class="el" href="imu__aspirin_8c_source.html#l00118">imu_aspirin_event()</a>, <a class="el" href="imu__aspirin__i2c_8c_source.html#l00129">imu_aspirin_i2c_event()</a>, <a class="el" href="imu__bmi088__i2c_8c_source.html#l00108">imu_bmi088_event()</a>, <a class="el" href="imu__drotek__10dof__v2_8c_source.html#l00110">imu_drotek2_event()</a>, <a class="el" href="imu__gl1_8c_source.html#l00118">imu_gl1_event()</a>, <a class="el" href="imu__krooz_8c_source.html#l00091">imu_krooz_periodic()</a>, <a class="el" href="imu__mpu9250__i2c_8c_source.html#l00119">imu_mpu9250_event()</a>, <a class="el" href="imu__mpu6000__hmc5883_8c_source.html#l00146">imu_mpu_hmc_event()</a>, <a class="el" href="imu__mpu60x0__i2c_8c_source.html#l00080">imu_mpu_i2c_event()</a>, <a class="el" href="imu__mpu6000_8c_source.html#l00125">imu_mpu_spi_event()</a>, <a class="el" href="imu__navgo_8c_source.html#l00120">imu_navgo_event()</a>, <a class="el" href="imu__navstik_8c_source.html#l00102">imu_navstik_event()</a>, <a class="el" href="imu__px4fmu__v2_84_8c_source.html#l00067">imu_px4_event()</a>, <a class="el" href="imu_8c_source.html#l00219">imu_scale_accel()</a>, <a class="el" href="ins__skeleton_8c_source.html#l00115">ins_module_propagate()</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00034">ltp_def_from_ecef_d()</a>, <a class="el" href="pprz__geodetic__float_8c_source.html#l00036">ltp_def_from_ecef_f()</a>, <a class="el" href="pprz__geodetic__int_8c_source.html#l00060">ltp_def_from_ecef_i()</a>, <a class="el" href="mag__hmc58xx_8c_source.html#l00086">mag_hmc58xx_module_event()</a>, <a class="el" href="mag__ist8310_8c_source.html#l00085">mag_ist8310_module_event()</a>, <a class="el" href="mag__lis3mdl_8c_source.html#l00089">mag_lis3mdl_module_event()</a>, <a class="el" href="mission__rotorcraft__nav_8c_source.html#l00117">mission_nav_wp()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00421">nav_home()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00179">nav_init()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00361">nav_init_stage()</a>, <a class="el" href="nav__survey__poly__rotorcraft_8c_source.html#l00307">nav_survey_poly_run()</a>, <a class="el" href="nav__survey__rectangle__rotorcraft_8c_source.html#l00107">nav_survey_rectangle_rotorcraft_setup()</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00239">NavGotoWaypoint()</a>, <a class="el" href="rotorcraft_2navigation_8h_source.html#l00180">NavGotoWaypointHeading()</a>, <a class="el" href="nps__sensor__accel_8c_source.html#l00027">nps_sensor_accel_run_step()</a>, <a class="el" href="nps__sensor__gps_8c_source.html#l00039">nps_sensor_gps_run_step()</a>, <a class="el" href="nps__sensor__gyro_8c_source.html#l00031">nps_sensor_gyro_run_step()</a>, <a class="el" href="nps__autopilot__fixedwing_8c_source.html#l00268">sim_overwrite_ins()</a>, <a class="el" href="state_8h_source.html#l00855">stateSetAccelBody_i()</a>, <a class="el" href="state_8h_source.html#l01010">stateSetAccelEcef_f()</a>, <a class="el" href="state_8h_source.html#l00994">stateSetAccelEcef_i()</a>, <a class="el" href="state_8h_source.html#l01002">stateSetAccelNed_f()</a>, <a class="el" href="state_8h_source.html#l00986">stateSetAccelNed_i()</a>, <a class="el" href="state_8h_source.html#l00622">stateSetPosition_f()</a>, <a class="el" href="state_8h_source.html#l00555">stateSetPosition_i()</a>, <a class="el" href="state_8h_source.html#l00590">stateSetPositionEcef_f()</a>, <a class="el" href="state_8h_source.html#l00523">stateSetPositionEcef_i()</a>, <a class="el" href="state_8h_source.html#l00606">stateSetPositionEnu_f()</a>, <a class="el" href="state_8h_source.html#l00539">stateSetPositionEnu_i()</a>, <a class="el" href="state_8h_source.html#l00598">stateSetPositionNed_f()</a>, <a class="el" href="state_8h_source.html#l00531">stateSetPositionNed_i()</a>, <a class="el" href="state_8h_source.html#l00833">stateSetSpeed_f()</a>, <a class="el" href="state_8h_source.html#l00787">stateSetSpeed_i()</a>, <a class="el" href="state_8h_source.html#l00825">stateSetSpeedEcef_f()</a>, <a class="el" href="state_8h_source.html#l00779">stateSetSpeedEcef_i()</a>, <a class="el" href="state_8h_source.html#l00817">stateSetSpeedEnu_f()</a>, <a class="el" href="state_8h_source.html#l00771">stateSetSpeedEnu_i()</a>, <a class="el" href="state_8h_source.html#l00809">stateSetSpeedNed_f()</a>, <a class="el" href="state_8h_source.html#l00763">stateSetSpeedNed_i()</a>, and <a class="el" href="nps__sensors__utils_8c_source.html#l00006">UpdateSensorLatency()</a>.</p>
 
 </div>
 </div>
@@ -3472,7 +3620,7 @@ Macros</h2></td></tr>
 <div class="line">    (_vo).z = (_v1).x*(_v2).y - (_v1).y*(_v2).x;    \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00243">243</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00244">244</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
 <p>Referenced by <a class="el" href="ahrs__float__cmpl_8c_source.html#l00181">ahrs_fc_update_accel()</a>, <a class="el" href="ahrs__float__cmpl_8c_source.html#l00296">ahrs_fc_update_mag_full()</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00241">ahrs_icq_update_accel()</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00410">ahrs_icq_update_mag_full()</a>, <a class="el" href="ahrs__float__invariant_8c_source.html#l00318">error_output()</a>, <a class="el" href="ahrs__float__invariant_8c_source.html#l00370">float_quat_vmul_right()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00286">float_rmat_reorthogonalize()</a>, and <a class="el" href="stabilization__attitude__quat__transformations_8c_source.html#l00063">quat_from_earth_cmd_f()</a>.</p>
 
@@ -3513,9 +3661,9 @@ Macros</h2></td></tr>
 <div class="line">    (_c).z = (_a).z - (_b).z;     \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00181">181</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00182">182</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ahrs__float__cmpl_8c_source.html#l00181">ahrs_fc_update_accel()</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00241">ahrs_icq_update_accel()</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00140">enu_of_ecef_point_d()</a>, <a class="el" href="pprz__geodetic__float_8c_source.html#l00085">enu_of_ecef_point_f()</a>, <a class="el" href="pprz__geodetic__int_8c_source.html#l00090">enu_of_ecef_point_i()</a>, <a class="el" href="ahrs__float__invariant_8c_source.html#l00318">error_output()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00518">init_jsbsim()</a>, <a class="el" href="stabilization__attitude__quat__transformations_8c_source.html#l00063">quat_from_earth_cmd_f()</a>, <a class="el" href="ahrs__float__mlkf_8c_source.html#l00222">update_state()</a>, and <a class="el" href="ahrs__float__mlkf_8c_source.html#l00290">update_state_heading()</a>.</p>
+<p>Referenced by <a class="el" href="ahrs__float__cmpl_8c_source.html#l00181">ahrs_fc_update_accel()</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00241">ahrs_icq_update_accel()</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00140">enu_of_ecef_point_d()</a>, <a class="el" href="pprz__geodetic__float_8c_source.html#l00085">enu_of_ecef_point_f()</a>, <a class="el" href="pprz__geodetic__int_8c_source.html#l00090">enu_of_ecef_point_i()</a>, <a class="el" href="ahrs__float__invariant_8c_source.html#l00318">error_output()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00529">init_jsbsim()</a>, <a class="el" href="ahrs__float__mlkf_8c_source.html#l00222">update_state()</a>, and <a class="el" href="ahrs__float__mlkf_8c_source.html#l00290">update_state_heading()</a>.</p>
 
 </div>
 </div>
@@ -3543,9 +3691,9 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00249">249</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00250">250</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__float__invariant_8c_source.html#l00584">error_output()</a>, <a class="el" href="ahrs__float__invariant_8c_source.html#l00370">float_quat_vmul_right()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00286">float_rmat_reorthogonalize()</a>, and <a class="el" href="stabilization__attitude__quat__transformations_8c_source.html#l00063">quat_from_earth_cmd_f()</a>.</p>
+<p>Referenced by <a class="el" href="ins__float__invariant_8c_source.html#l00614">error_output()</a>, <a class="el" href="ahrs__float__invariant_8c_source.html#l00370">float_quat_vmul_right()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00286">float_rmat_reorthogonalize()</a>, and <a class="el" href="stabilization__attitude__quat__transformations_8c_source.html#l00063">quat_from_earth_cmd_f()</a>.</p>
 
 </div>
 </div>
@@ -3584,7 +3732,7 @@ Macros</h2></td></tr>
 <div class="line">    (_vo).z =  (_va).z / (_vb).z;       \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00209">209</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00210">210</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
 </div>
 </div>
@@ -3623,7 +3771,7 @@ Macros</h2></td></tr>
 <div class="line">    (_vo).z =  (_va).z * (_vb).z;       \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00216">216</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00217">217</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
 <p>Referenced by <a class="el" href="nps__sensor__accel_8c_source.html#l00027">nps_sensor_accel_run_step()</a>, and <a class="el" href="nps__sensor__gyro_8c_source.html#l00031">nps_sensor_gyro_run_step()</a>.</p>
 
@@ -3643,9 +3791,9 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00251">251</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00252">252</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
-<p>Referenced by <a class="el" href="pprz__algebra__double_8h_source.html#l00100">double_vect3_norm()</a>, and <a class="el" href="pprz__algebra__float_8c_source.html#l00286">float_rmat_reorthogonalize()</a>.</p>
+<p>Referenced by <a class="el" href="pprz__algebra__double_8h_source.html#l00100">double_vect3_norm()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00286">float_rmat_reorthogonalize()</a>, and <a class="el" href="PnP__AHRS_8c_source.html#l00054">get_world_position_from_image_points()</a>.</p>
 
 </div>
 </div>
@@ -3684,7 +3832,7 @@ Macros</h2></td></tr>
 <div class="line">    (_vo).z = (_r1).p*(_v2).y - (_r1).q*(_v2).x;    \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00253">253</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00254">254</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
 <p>Referenced by <a class="el" href="ahrs__float__cmpl_8c_source.html#l00181">ahrs_fc_update_accel()</a>, and <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00241">ahrs_icq_update_accel()</a>.</p>
 
@@ -3725,9 +3873,9 @@ Macros</h2></td></tr>
 <div class="line">    (_vo).z =  (_vi).z / (_s);        \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00195">195</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00196">196</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ahrs__aligner_8c_source.html#l00108">ahrs_aligner_run()</a>, <a class="el" href="ahrs__float__cmpl_8c_source.html#l00181">ahrs_fc_update_accel()</a>, <a class="el" href="ahrs__int__cmpl__euler_8c_source.html#l00202">ahrs_ice_update_accel()</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00241">ahrs_icq_update_accel()</a>, <a class="el" href="pprz__geodetic__int_8c_source.html#l00129">enu_of_ecef_pos_i()</a>, <a class="el" href="cv__georeference_8c_source.html#l00119">georeference_filter()</a>, <a class="el" href="imu__krooz_8c_source.html#l00091">imu_krooz_periodic()</a>, and <a class="el" href="rotorcraft_2navigation_8c_source.html#l00384">navigation_update_wp_from_speed()</a>.</p>
+<p>Referenced by <a class="el" href="ahrs__aligner_8c_source.html#l00108">ahrs_aligner_run()</a>, <a class="el" href="ahrs__float__cmpl_8c_source.html#l00181">ahrs_fc_update_accel()</a>, <a class="el" href="ahrs__int__cmpl__euler_8c_source.html#l00202">ahrs_ice_update_accel()</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00241">ahrs_icq_update_accel()</a>, <a class="el" href="ahrs__madgwick_8c_source.html#l00069">ahrs_madgwick_propagate()</a>, <a class="el" href="pprz__geodetic__int_8c_source.html#l00129">enu_of_ecef_pos_i()</a>, <a class="el" href="cv__georeference_8c_source.html#l00119">georeference_filter()</a>, <a class="el" href="PnP__AHRS_8c_source.html#l00054">get_world_position_from_image_points()</a>, <a class="el" href="imu__krooz_8c_source.html#l00091">imu_krooz_periodic()</a>, and <a class="el" href="rotorcraft_2navigation_8c_source.html#l00384">navigation_update_wp_from_speed()</a>.</p>
 
 </div>
 </div>
@@ -3766,9 +3914,9 @@ Macros</h2></td></tr>
 <div class="line">    (_vo).z =  (_vi).z * (_s);        \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00188">188</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00189">189</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ahrs__float__cmpl_8c_source.html#l00181">ahrs_fc_update_accel()</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00241">ahrs_icq_update_accel()</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00777">CN_vector_escape_velocity()</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00590">CN_vector_velocity()</a>, <a class="el" href="nps__random_8c_source.html#l00065">double_vect3_update_random_walk()</a>, <a class="el" href="pprz__geodetic__int_8c_source.html#l00263">ecef_of_enu_pos_i()</a>, <a class="el" href="ahrs__float__invariant_8c_source.html#l00318">error_output()</a>, <a class="el" href="ahrs__float__invariant_8c_source.html#l00370">float_quat_vmul_right()</a>, <a class="el" href="cv__georeference_8c_source.html#l00119">georeference_filter()</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00226">gx3_packet_read_message()</a>, <a class="el" href="imu__krooz_8c_source.html#l00091">imu_krooz_periodic()</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00321">ins_float_invariant_propagate()</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00521">invariant_model()</a>, <a class="el" href="mission__rotorcraft__nav_8c_source.html#l00041">mission_point_of_lla()</a>, <a class="el" href="stabilization__attitude__quat__transformations_8c_source.html#l00063">quat_from_earth_cmd_f()</a>, and <a class="el" href="imu__um6_8c_source.html#l00211">UM6_packet_read_message()</a>.</p>
+<p>Referenced by <a class="el" href="ahrs__float__cmpl_8c_source.html#l00181">ahrs_fc_update_accel()</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00241">ahrs_icq_update_accel()</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00777">CN_vector_escape_velocity()</a>, <a class="el" href="obstacle__avoidance_8c_source.html#l00590">CN_vector_velocity()</a>, <a class="el" href="nps__random_8c_source.html#l00065">double_vect3_update_random_walk()</a>, <a class="el" href="pprz__geodetic__int_8c_source.html#l00263">ecef_of_enu_pos_i()</a>, <a class="el" href="ahrs__float__invariant_8c_source.html#l00318">error_output()</a>, <a class="el" href="ahrs__float__invariant_8c_source.html#l00370">float_quat_vmul_right()</a>, <a class="el" href="cv__georeference_8c_source.html#l00119">georeference_filter()</a>, <a class="el" href="ahrs__gx3_8c_source.html#l00226">gx3_packet_read_message()</a>, <a class="el" href="imu__krooz_8c_source.html#l00091">imu_krooz_periodic()</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00337">ins_float_invariant_propagate()</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00555">invariant_model()</a>, <a class="el" href="mission__rotorcraft__nav_8c_source.html#l00041">mission_point_of_lla()</a>, and <a class="el" href="imu__um6_8c_source.html#l00211">UM6_packet_read_message()</a>.</p>
 
 </div>
 </div>
@@ -3807,7 +3955,7 @@ Macros</h2></td></tr>
 <div class="line">    (_v).z = (_v).z &lt; _min ? _min : (_v).z &gt; _max ? _max : (_v).z;  \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00202">202</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00203">203</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
 </div>
 </div>
@@ -3840,7 +3988,7 @@ Macros</h2></td></tr>
 <div class="line">    (_a).z -= (_b).z;       \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00153">153</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00154">154</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
 <p>Referenced by <a class="el" href="cv__georeference_8c_source.html#l00119">georeference_filter()</a>, and <a class="el" href="ins__int_8c_source.html#l00396">ins_int_update_gps()</a>.</p>
 
@@ -3881,9 +4029,9 @@ Macros</h2></td></tr>
 <div class="line">    (_c).z = (_a).z + (_b).z;     \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00160">160</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00161">161</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__float__invariant_8c_source.html#l00521">invariant_model()</a>.</p>
+<p>Referenced by <a class="el" href="PnP__AHRS_8c_source.html#l00054">get_world_position_from_image_points()</a>, and <a class="el" href="ins__float__invariant_8c_source.html#l00555">invariant_model()</a>.</p>
 
 </div>
 </div>
@@ -3928,9 +4076,57 @@ Macros</h2></td></tr>
 <div class="line">    (_c).z = (_a).z + (_s)*(_b).z;      \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00174">174</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00175">175</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ahrs__int__cmpl__euler_8c_source.html#l00202">ahrs_ice_update_accel()</a>, and <a class="el" href="pprz__algebra__float_8c_source.html#l00286">float_rmat_reorthogonalize()</a>.</p>
+<p>Referenced by <a class="el" href="ahrs__int__cmpl__euler_8c_source.html#l00202">ahrs_ice_update_accel()</a>, <a class="el" href="cv__target__localization_8c_source.html#l00133">detection_cb()</a>, and <a class="el" href="pprz__algebra__float_8c_source.html#l00286">float_rmat_reorthogonalize()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga28a287262a3234964931c956808df60c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define VECT3_VECT3_TRANS_MUL</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_mat, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_v_a, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_v_b&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">{ <a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">\</a></div>
+<div class="line"><a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">    MAT33_ELMT</a>((_mat),0,0) = (_v_a).x*(_v_b).x;   <a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">\</a></div>
+<div class="line"><a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">    MAT33_ELMT</a>((_mat),0,1) = (_v_a).x*(_v_b).y;   <a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">\</a></div>
+<div class="line"><a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">    MAT33_ELMT</a>((_mat),0,2) = (_v_a).x*(_v_b).z;   <a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">\</a></div>
+<div class="line"><a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">    MAT33_ELMT</a>((_mat),1,0) = (_v_a).y*(_v_b).x;   <a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">\</a></div>
+<div class="line"><a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">    MAT33_ELMT</a>((_mat),1,1) = (_v_a).y*(_v_b).y;   <a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">\</a></div>
+<div class="line"><a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">    MAT33_ELMT</a>((_mat),1,2) = (_v_a).y*(_v_b).z;   <a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">\</a></div>
+<div class="line"><a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">    MAT33_ELMT</a>((_mat),2,0) = (_v_a).z*(_v_b).x;   <a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">\</a></div>
+<div class="line"><a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">    MAT33_ELMT</a>((_mat),2,1) = (_v_a).z*(_v_b).y;   <a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">\</a></div>
+<div class="line"><a class="code" href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">    MAT33_ELMT</a>((_mat),2,2) = (_v_a).z*(_v_b).z;   \</div>
+<div class="line">  }</div>
+<div class="ttc" id="group__math__algebra__generic_html_gaf6f5918ce1dc9b05f0d7262a48cfa90c"><div class="ttname"><a href="group__math__algebra__generic.html#gaf6f5918ce1dc9b05f0d7262a48cfa90c">MAT33_ELMT</a></div><div class="ttdeci">#define MAT33_ELMT(_m, _row, _col)</div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra_8h_source.html#l00436">pprz_algebra.h:436</a></div></div>
+</div><!-- fragment -->
+<p>Definition at line <a class="el" href="pprz__algebra_8h_source.html#l00521">521</a> of file <a class="el" href="pprz__algebra_8h_source.html">pprz_algebra.h</a>.</p>
+
+<p>Referenced by <a class="el" href="PnP__AHRS_8c_source.html#l00054">get_world_position_from_image_points()</a>.</p>
 
 </div>
 </div>
@@ -3939,7 +4135,7 @@ Macros</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Sep 12 2018 02:04:04 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:03:47 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

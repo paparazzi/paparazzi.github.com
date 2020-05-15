@@ -17,6 +17,7 @@ var w5100_8h =
     [ "W5100_BUFFER_NUM", "w5100_8h.html#ac8228007507bc3d4724a8ad3a9ba91b3", null ],
     [ "W5100_RX_BUFFER_SIZE", "w5100_8h.html#a69f74830d4721e548a692322b86ccf54", null ],
     [ "W5100_TX_BUFFER_SIZE", "w5100_8h.html#a0c5eb0f23b68f787843e4f74561d7bb2", null ],
+    [ "W5100_UPDATE_DL", "w5100_8h.html#abec61833a3d9ec75eb08b213c0b81654", null ],
     [ "W5100Status", "w5100_8h.html#a1b86a774f206095259ed0b6034d24c60", [
       [ "W5100StatusUninit", "w5100_8h.html#a1b86a774f206095259ed0b6034d24c60add68bba90146d71b9a76a2bafdc99aa8", null ],
       [ "W5100StatusIdle", "w5100_8h.html#a1b86a774f206095259ed0b6034d24c60a6a38ad46c46871635bc8259ced43cac2", null ],

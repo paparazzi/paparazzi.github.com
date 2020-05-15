@@ -108,6 +108,8 @@ var searchData=
   ['hmc58xx_5freg_5fmode',['HMC58XX_REG_MODE',['../hmc58xx__regs_8h.html#a51c15fc657a98bfa828ad11921100226',1,'hmc58xx_regs.h']]],
   ['hmc58xx_5freg_5fstatus',['HMC58XX_REG_STATUS',['../hmc58xx__regs_8h.html#a354e8426982979ee27cb7dd38d57ff80',1,'hmc58xx_regs.h']]],
   ['hmc58xx_5fstartup_5fdelay',['HMC58XX_STARTUP_DELAY',['../hmc58xx_8c.html#a50cbc190f24e1b03ee72a4176cb3181d',1,'hmc58xx.c']]],
+  ['hmc5983_5fdrdy',['HMC5983_DRDY',['../px4fmu_2chibios_2v4_80_2board_8h.html#a586b21863a7b2ee0293ac00ae273f92c',1,'board.h']]],
+  ['hmc_5f5983',['HMC_5983',['../px4fmu_2chibios_2v4_80_2board_8h.html#aa3d4fcaeba13f2f8bdc309627b495ba6',1,'board.h']]],
   ['horizontal_5fmode_5fattitude',['HORIZONTAL_MODE_ATTITUDE',['../rotorcraft_2navigation_8h.html#a30b84135f7785b38ae71f5e29577aa02',1,'navigation.h']]],
   ['horizontal_5fmode_5fcircle',['HORIZONTAL_MODE_CIRCLE',['../nav_8h.html#a5bfcd798f85be44cd7766b55ef9c9c08',1,'HORIZONTAL_MODE_CIRCLE():&#160;nav.h'],['../rotorcraft_2navigation_8h.html#a5bfcd798f85be44cd7766b55ef9c9c08',1,'HORIZONTAL_MODE_CIRCLE():&#160;navigation.h']]],
   ['horizontal_5fmode_5fmanual',['HORIZONTAL_MODE_MANUAL',['../rotorcraft_2navigation_8h.html#a4cca765d253fc7cf1b3a3a277ec35bef',1,'navigation.h']]],

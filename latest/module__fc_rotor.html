@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -121,7 +121,7 @@ Init Functions</h2>
 Datalink Functions</h1>
 <p>Whenever the specified datalink message is received, the corresponing handler function is called.</p>
 <ul>
-<li>on message <b>DESIRED_SETPOINT</b> call <a class="el" href="fc__rotor_8c.html#a5ca58b591c60c1008ed9b42ea5659d97">fc_read_msg()</a> </li>
+<li>on message <b>DESIRED_SETPOINT</b> call fc_read_msg(buf) </li>
 </ul>
 <h1><a class="anchor" id="files"></a>
 Files</h1>
@@ -134,13 +134,13 @@ Header Files</h2>
 <h2><a class="anchor" id="sources"></a>
 Source Files</h2>
 <ul>
-<li><a class="el" href="fc__rotor_8c.html">modules/fc_rotor/fc_rotor.c</a></li>
+<li><a class="el" href="fc__rotor_8c.html">modules/multi/fc_rotor/fc_rotor.c</a></li>
 </ul>
 <h2><a class="anchor" id="module_xml__fc_rotor"></a>
 Raw fc_rotor.xml file:</h2>
 <div class="fragment"><div class="line">&lt;!DOCTYPE module SYSTEM &quot;module.dtd&quot;&gt;</div>
 <div class="line"></div>
-<div class="line">&lt;module name=&quot;fc_rotor&quot; dir=&quot;fc_rotor&quot;&gt;</div>
+<div class="line">&lt;module name=&quot;fc_rotor&quot; dir=&quot;multi/fc_rotor&quot;&gt;</div>
 <div class="line">  &lt;doc&gt;</div>
 <div class="line">    &lt;description&gt;</div>
 <div class="line">      Algorithm for the formation control of a team of rotorcrafts.</div>
@@ -154,7 +154,7 @@ Raw fc_rotor.xml file:</h2>
 <div class="line"></div>
 <div class="line">  &lt;init fun = &quot;fc_rotor_init()&quot;/&gt;</div>
 <div class="line"></div>
-<div class="line">  &lt;datalink message=&quot;DESIRED_SETPOINT&quot; fun=&quot;fc_read_msg()&quot;/&gt;</div>
+<div class="line">  &lt;datalink message=&quot;DESIRED_SETPOINT&quot; fun=&quot;fc_read_msg(buf)&quot;/&gt;</div>
 <div class="line"></div>
 <div class="line">  &lt;makefile firmware=&quot;rotorcraft&quot;&gt;</div>
 <div class="line">    &lt;define name=&quot;FC_ROTOR&quot;/&gt;</div>
@@ -168,7 +168,7 @@ Raw fc_rotor.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Wed Sep 12 2018 02:03:56 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:03:39 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -112,9 +112,11 @@ Example for airframe file</h1>
 <p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;module name=&quot;ahrs_float_dcm&quot;&gt;</div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;  &lt;define name=&quot;USE_MAGNETOMETER_ONGROUND&quot; /&gt;</div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;  &lt;define name=&quot;USE_AHRS_GPS_ACCELERATIONS&quot; /&gt;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;  &lt;configure name=&quot;USE_MAGNETOMETER&quot; value=&quot;FALSE&quot; /&gt;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;  &lt;configure name=&quot;AHRS_ALIGNER_LED&quot; value=&quot;1&quot; /&gt;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;&lt;/module&gt;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;  &lt;define name=&quot;ACCEL_WEIGHT_FILTER&quot; value=&quot;8&quot; /&gt;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;  &lt;define name=&quot;ACCEL_WEIGHT_BAND&quot; value=&quot;1.&quot; /&gt;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;  &lt;configure name=&quot;USE_MAGNETOMETER&quot; value=&quot;FALSE&quot; /&gt;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;  &lt;configure name=&quot;AHRS_ALIGNER_LED&quot; value=&quot;1&quot; /&gt;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;&lt;/module&gt;</div>
 </div><!-- fragment --> <h1><a class="anchor" id="configuration__ahrs_float_dcm"></a>
 Module configuration options</h1>
 <h2><a class="anchor" id="configure"></a>
@@ -132,6 +134,10 @@ Define Options</h2>
  Description: use magnetic compensation before takeoff only while GPS course not good</li>
 <li><b>name:</b> <code>USE_AHRS_GPS_ACCELERATIONS</code> <b>value:</b> <em>None</em> <br />
  Description: enable forward acceleration compensation from GPS speed</li>
+<li><b>name:</b> <code>ACCEL_WEIGHT_FILTER</code> <b>value:</b> <em>8</em> <br />
+ Description: adjust accel drift heuristic filter (default 8, 0 to disable filter)</li>
+<li><b>name:</b> <code>ACCEL_WEIGHT_BAND</code> <b>value:</b> <em>1.</em> <br />
+ Description: band size of accel filter: 1. means that there is no correction when accel magnitude exceeds +/- 0.5G around 1G (normal flight)</li>
 </ul>
 <h1><a class="anchor" id="autoloads__ahrs_float_dcm"></a>
 Auto-loaded modules</h1>
@@ -176,6 +182,8 @@ Raw ahrs_float_dcm.xml file:</h2>
 <div class="line">    &lt;configure name=&quot;AHRS_ALIGNER_LED&quot; value=&quot;1&quot; description=&quot;LED number to indicate AHRS alignment, none to disable (default is board dependent)&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;USE_MAGNETOMETER_ONGROUND&quot; description=&quot;use magnetic compensation before takeoff only while GPS course not good&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;USE_AHRS_GPS_ACCELERATIONS&quot; description=&quot;enable forward acceleration compensation from GPS speed&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;ACCEL_WEIGHT_FILTER&quot; value=&quot;8&quot; description=&quot;adjust accel drift heuristic filter (default 8, 0 to disable filter)&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;ACCEL_WEIGHT_BAND&quot; value=&quot;1.&quot; description=&quot;band size of accel filter: 1. means that there is no correction when accel magnitude exceeds +/- 0.5G around 1G (normal flight)&quot;/&gt;</div>
 <div class="line">  &lt;/doc&gt;</div>
 <div class="line"></div>
 <div class="line">  &lt;settings&gt;</div>
@@ -228,7 +236,7 @@ Raw ahrs_float_dcm.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Wed Sep 12 2018 02:03:56 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:03:40 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

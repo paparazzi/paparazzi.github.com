@@ -4,6 +4,8 @@ var dir_800f0b451dc44a2b86d16d857cea778d =
     [ "hf_float.h", "hf__float_8h.html", "hf__float_8h" ],
     [ "ins_alt_float.c", "ins__alt__float_8c.html", "ins__alt__float_8c" ],
     [ "ins_alt_float.h", "ins__alt__float_8h.html", "ins__alt__float_8h" ],
+    [ "ins_ekf2.cpp", "ins__ekf2_8cpp.html", "ins__ekf2_8cpp" ],
+    [ "ins_ekf2.h", "ins__ekf2_8h.html", "ins__ekf2_8h" ],
     [ "ins_float_invariant.c", "ins__float__invariant_8c.html", "ins__float__invariant_8c" ],
     [ "ins_float_invariant.h", "ins__float__invariant_8h.html", "ins__float__invariant_8h" ],
     [ "ins_float_invariant_wrapper.c", "ins__float__invariant__wrapper_8c.html", "ins__float__invariant__wrapper_8c" ],

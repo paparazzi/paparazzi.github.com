@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -143,8 +143,8 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:afee8a43e7e47c9ee164631a41a2bddea"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="telemetry__intermcu__ap_8c.html#afee8a43e7e47c9ee164631a41a2bddea">telemetry_intermcu_check_free_space</a> (struct <a class="el" href="telemetry__intermcu__fbw_8c.html#structtelemetry__intermcu__t">telemetry_intermcu_t</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, long *<a class="el" href="bat__voltage__ardrone2_8c.html#a6f8059414f0228f0256115e024eeed4b">fd</a>, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> len)</td></tr>
-<tr class="separator:afee8a43e7e47c9ee164631a41a2bddea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ce609c05996d113f768dd68fb3a8b3f"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="telemetry__intermcu__ap_8c.html#a9ce609c05996d113f768dd68fb3a8b3f">telemetry_intermcu_check_free_space</a> (struct <a class="el" href="telemetry__intermcu__fbw_8c.html#structtelemetry__intermcu__t">telemetry_intermcu_t</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, long *<a class="el" href="bat__voltage__ardrone2_8c.html#a6f8059414f0228f0256115e024eeed4b">fd</a>, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> len)</td></tr>
+<tr class="separator:a9ce609c05996d113f768dd68fb3a8b3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42f5260876f60c4092b75499b0be465a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="telemetry__intermcu__ap_8c.html#a42f5260876f60c4092b75499b0be465a">telemetry_intermcu_put_byte</a> (struct <a class="el" href="telemetry__intermcu__fbw_8c.html#structtelemetry__intermcu__t">telemetry_intermcu_t</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, long <a class="el" href="bat__voltage__ardrone2_8c.html#a6f8059414f0228f0256115e024eeed4b">fd</a>, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> data)</td></tr>
 <tr class="separator:a42f5260876f60c4092b75499b0be465a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25629bb0afa59807c6c0e0af91517203"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="telemetry__intermcu__ap_8c.html#a25629bb0afa59807c6c0e0af91517203">telemetry_intermcu_put_buffer</a> (struct <a class="el" href="telemetry__intermcu__fbw_8c.html#structtelemetry__intermcu__t">telemetry_intermcu_t</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, long <a class="el" href="bat__voltage__ardrone2_8c.html#a6f8059414f0228f0256115e024eeed4b">fd</a>, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *data, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> len)</td></tr>
@@ -185,7 +185,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="afee8a43e7e47c9ee164631a41a2bddea"></a>
+<a class="anchor" id="a9ce609c05996d113f768dd68fb3a8b3f"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -193,7 +193,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static bool telemetry_intermcu_check_free_space </td>
+          <td class="memname">static int telemetry_intermcu_check_free_space </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="telemetry__intermcu__fbw_8c.html#structtelemetry__intermcu__t">telemetry_intermcu_t</a> *&#160;</td>
           <td class="paramname"><em>p</em>, </td>
@@ -234,8 +234,8 @@ Variables</h2></td></tr>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="telemetry__intermcu__ap_8c_afee8a43e7e47c9ee164631a41a2bddea_icgraph.png" border="0" usemap="#telemetry__intermcu__ap_8c_afee8a43e7e47c9ee164631a41a2bddea_icgraph" alt=""/></div>
-<map name="telemetry__intermcu__ap_8c_afee8a43e7e47c9ee164631a41a2bddea_icgraph" id="telemetry__intermcu__ap_8c_afee8a43e7e47c9ee164631a41a2bddea_icgraph">
+<div class="center"><img src="telemetry__intermcu__ap_8c_a9ce609c05996d113f768dd68fb3a8b3f_icgraph.png" border="0" usemap="#telemetry__intermcu__ap_8c_a9ce609c05996d113f768dd68fb3a8b3f_icgraph" alt=""/></div>
+<map name="telemetry__intermcu__ap_8c_a9ce609c05996d113f768dd68fb3a8b3f_icgraph" id="telemetry__intermcu__ap_8c_a9ce609c05996d113f768dd68fb3a8b3f_icgraph">
 <area shape="rect" id="node2" href="telemetry__intermcu__ap_8c.html#ad6f1c8a8daa04e62e1b26cbd0d564e1e" title="telemetry_intermcu_init" alt="" coords="201,13,376,39"/></map>
 </div>
 </p>
@@ -276,7 +276,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="telemetry__intermcu__ap_8c_source.html#l00047">47</a> of file <a class="el" href="telemetry__intermcu__ap_8c_source.html">telemetry_intermcu_ap.c</a>.</p>
 
-<p>References <a class="el" href="telemetry__intermcu__ap_8h_source.html#l00040">telemetry_intermcu_t::dev</a>, <a class="el" href="telemetry__intermcu__ap_8c_source.html#l00038">telemetry_intermcu</a>, <a class="el" href="telemetry__intermcu__ap_8c_source.html#l00079">telemetry_intermcu_check_free_space()</a>, <a class="el" href="telemetry__intermcu__ap_8c_source.html#l00092">telemetry_intermcu_put_buffer()</a>, <a class="el" href="telemetry__intermcu__ap_8c_source.html#l00084">telemetry_intermcu_put_byte()</a>, <a class="el" href="telemetry__intermcu__ap_8c_source.html#l00100">telemetry_intermcu_send_message()</a>, and <a class="el" href="telemetry__intermcu__ap_8h_source.html#l00041">telemetry_intermcu_t::trans</a>.</p>
+<p>References <a class="el" href="telemetry__intermcu__ap_8h_source.html#l00040">telemetry_intermcu_t::dev</a>, <a class="el" href="telemetry__intermcu__ap_8c_source.html#l00038">telemetry_intermcu</a>, <a class="el" href="telemetry__intermcu__ap_8c_source.html#l00079">telemetry_intermcu_check_free_space()</a>, <a class="el" href="telemetry__intermcu__ap_8c_source.html#l00093">telemetry_intermcu_put_buffer()</a>, <a class="el" href="telemetry__intermcu__ap_8c_source.html#l00085">telemetry_intermcu_put_byte()</a>, <a class="el" href="telemetry__intermcu__ap_8c_source.html#l00101">telemetry_intermcu_send_message()</a>, and <a class="el" href="telemetry__intermcu__ap_8h_source.html#l00041">telemetry_intermcu_t::trans</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -285,7 +285,7 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="telemetry__intermcu__ap_8c_ad6f1c8a8daa04e62e1b26cbd0d564e1e_cgraph.png" border="0" usemap="#telemetry__intermcu__ap_8c_ad6f1c8a8daa04e62e1b26cbd0d564e1e_cgraph" alt=""/></div>
 <map name="telemetry__intermcu__ap_8c_ad6f1c8a8daa04e62e1b26cbd0d564e1e_cgraph" id="telemetry__intermcu__ap_8c_ad6f1c8a8daa04e62e1b26cbd0d564e1e_cgraph">
-<area shape="rect" id="node2" href="telemetry__intermcu__ap_8c.html#afee8a43e7e47c9ee164631a41a2bddea" title="telemetry_intermcu\l_check_free_space" alt="" coords="228,5,376,47"/><area shape="rect" id="node3" href="telemetry__intermcu__ap_8c.html#a25629bb0afa59807c6c0e0af91517203" title="telemetry_intermcu\l_put_buffer" alt="" coords="228,71,376,112"/><area shape="rect" id="node4" href="telemetry__intermcu__ap_8c.html#a42f5260876f60c4092b75499b0be465a" title="telemetry_intermcu\l_put_byte" alt="" coords="228,136,376,177"/><area shape="rect" id="node5" href="telemetry__intermcu__ap_8c.html#a7adebdd4572bc08583d4d1243db2aa2c" title="telemetry_intermcu\l_send_message" alt="" coords="228,201,376,243"/></map>
+<area shape="rect" id="node2" href="telemetry__intermcu__ap_8c.html#a9ce609c05996d113f768dd68fb3a8b3f" title="telemetry_intermcu\l_check_free_space" alt="" coords="228,5,376,47"/><area shape="rect" id="node3" href="telemetry__intermcu__ap_8c.html#a25629bb0afa59807c6c0e0af91517203" title="telemetry_intermcu\l_put_buffer" alt="" coords="228,71,376,112"/><area shape="rect" id="node4" href="telemetry__intermcu__ap_8c.html#a42f5260876f60c4092b75499b0be465a" title="telemetry_intermcu\l_put_byte" alt="" coords="228,136,376,177"/><area shape="rect" id="node5" href="telemetry__intermcu__ap_8c.html#a7adebdd4572bc08583d4d1243db2aa2c" title="telemetry_intermcu\l_send_message" alt="" coords="228,201,376,243"/></map>
 </div>
 </p>
 
@@ -396,7 +396,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="telemetry__intermcu__ap_8c_source.html#l00092">92</a> of file <a class="el" href="telemetry__intermcu__ap_8c_source.html">telemetry_intermcu_ap.c</a>.</p>
+<p>Definition at line <a class="el" href="telemetry__intermcu__ap_8c_source.html#l00093">93</a> of file <a class="el" href="telemetry__intermcu__ap_8c_source.html">telemetry_intermcu_ap.c</a>.</p>
 
 <p>References <a class="el" href="telemetry__intermcu__ap_8h_source.html#l00042">telemetry_intermcu_t::buf</a>, and <a class="el" href="telemetry__intermcu__ap_8h_source.html#l00043">telemetry_intermcu_t::buf_idx</a>.</p>
 
@@ -453,7 +453,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="telemetry__intermcu__ap_8c_source.html#l00084">84</a> of file <a class="el" href="telemetry__intermcu__ap_8c_source.html">telemetry_intermcu_ap.c</a>.</p>
+<p>Definition at line <a class="el" href="telemetry__intermcu__ap_8c_source.html#l00085">85</a> of file <a class="el" href="telemetry__intermcu__ap_8c_source.html">telemetry_intermcu_ap.c</a>.</p>
 
 <p>References <a class="el" href="telemetry__intermcu__ap_8h_source.html#l00042">telemetry_intermcu_t::buf</a>, <a class="el" href="telemetry__intermcu__ap_8h_source.html#l00043">telemetry_intermcu_t::buf_idx</a>, and <a class="el" href="telemetry__intermcu__ap_8h_source.html#l00035">TELEMERTY_INTERMCU_MSG_SIZE</a>.</p>
 
@@ -504,7 +504,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="telemetry__intermcu__ap_8c_source.html#l00100">100</a> of file <a class="el" href="telemetry__intermcu__ap_8c_source.html">telemetry_intermcu_ap.c</a>.</p>
+<p>Definition at line <a class="el" href="telemetry__intermcu__ap_8c_source.html#l00101">101</a> of file <a class="el" href="telemetry__intermcu__ap_8c_source.html">telemetry_intermcu_ap.c</a>.</p>
 
 <p>References <a class="el" href="telemetry__intermcu__ap_8h_source.html#l00042">telemetry_intermcu_t::buf</a>, <a class="el" href="telemetry__intermcu__ap_8h_source.html#l00043">telemetry_intermcu_t::buf_idx</a>, <a class="el" href="intermcu_8h_source.html#l00071">intermcu_t::device</a>, <a class="el" href="intermcu__ap_8c_source.html#l00041">intermcu</a>, <a class="el" href="intermcu_8h_source.html#l00034">INTERMCU_AP</a>, and <a class="el" href="intermcu_8h_source.html#l00072">intermcu_t::transport</a>.</p>
 
@@ -546,7 +546,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_dab7dfbaf243a3c567626a250692cdbb.html">telemetry</a></li><li class="navelem"><a class="el" href="telemetry__intermcu__ap_8c.html">telemetry_intermcu_ap.c</a></li>
-    <li class="footer">Generated on Wed Sep 12 2018 02:03:42 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:03:24 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

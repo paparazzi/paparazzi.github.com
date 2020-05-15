@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -243,6 +243,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga5d383931766cb373ebad0b8bc26d439d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__spi.html#ga5d383931766cb373ebad0b8bc26d439d">spi_submit</a> (struct <a class="el" href="group__spi.html#structspi__periph">spi_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, struct <a class="el" href="group__spi.html#structspi__transaction">spi_transaction</a> *t)</td></tr>
 <tr class="memdesc:ga5d383931766cb373ebad0b8bc26d439d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a spi transaction.  <a href="#ga5d383931766cb373ebad0b8bc26d439d">More...</a><br /></td></tr>
 <tr class="separator:ga5d383931766cb373ebad0b8bc26d439d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga66e55e817c63768ac9910dc6f7cc9447"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__spi.html#ga66e55e817c63768ac9910dc6f7cc9447">spi_blocking_transceive</a> (struct <a class="el" href="group__spi.html#structspi__periph">spi_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, struct <a class="el" href="group__spi.html#structspi__transaction">spi_transaction</a> *t)</td></tr>
+<tr class="memdesc:ga66e55e817c63768ac9910dc6f7cc9447"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a spi transaction (blocking).  <a href="#ga66e55e817c63768ac9910dc6f7cc9447">More...</a><br /></td></tr>
+<tr class="separator:ga66e55e817c63768ac9910dc6f7cc9447"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad43916477f5d87b42eaa7d2099771568"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__spi.html#gad43916477f5d87b42eaa7d2099771568">spi_slave_select</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> slave)</td></tr>
 <tr class="memdesc:gad43916477f5d87b42eaa7d2099771568"><td class="mdescLeft">&#160;</td><td class="mdescRight">Select a slave.  <a href="#gad43916477f5d87b42eaa7d2099771568">More...</a><br /></td></tr>
 <tr class="separator:gad43916477f5d87b42eaa7d2099771568"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -296,7 +299,7 @@ Variables</h2></td></tr>
 <li>if input_length is larger than output length, 0 is sent for the remaining words </li>
 </ul>
 
-<p>Definition at line <a class="el" href="spi_8h_source.html#l00142">142</a> of file <a class="el" href="spi_8h_source.html">spi.h</a>.</p>
+<p>Definition at line <a class="el" href="spi_8h_source.html#l00148">148</a> of file <a class="el" href="spi_8h_source.html">spi.h</a>.</p>
 </div><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for spi_transaction:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -407,7 +410,7 @@ status</td>
 </div><div class="memdoc">
 <div class="textblock"><p>SPI peripheral structure. </p>
 
-<p>Definition at line <a class="el" href="spi_8h_source.html#l00168">168</a> of file <a class="el" href="spi_8h_source.html">spi.h</a>.</p>
+<p>Definition at line <a class="el" href="spi_8h_source.html#l00174">174</a> of file <a class="el" href="spi_8h_source.html">spi.h</a>.</p>
 </div><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Collaboration diagram for spi_periph:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -494,7 +497,7 @@ tx_idx_buf</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="spi_8h_source.html#l00186">186</a> of file <a class="el" href="spi_8h_source.html">spi.h</a>.</p>
+<p>Definition at line <a class="el" href="spi_8h_source.html#l00192">192</a> of file <a class="el" href="spi_8h_source.html">spi.h</a>.</p>
 
 <p>Referenced by <a class="el" href="mcp355x_8c_source.html#l00036">mcp355x_init()</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00528">spi_init_slaves()</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00055">SpiSlaveSelect()</a>, and <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00073">SpiSlaveUnselect()</a>.</p>
 
@@ -510,7 +513,7 @@ tx_idx_buf</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="spi_8h_source.html#l00187">187</a> of file <a class="el" href="spi_8h_source.html">spi.h</a>.</p>
+<p>Definition at line <a class="el" href="spi_8h_source.html#l00193">193</a> of file <a class="el" href="spi_8h_source.html">spi.h</a>.</p>
 
 <p>Referenced by <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00528">spi_init_slaves()</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00055">SpiSlaveSelect()</a>, and <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00073">SpiSlaveUnselect()</a>.</p>
 
@@ -526,7 +529,7 @@ tx_idx_buf</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="spi_8h_source.html#l00188">188</a> of file <a class="el" href="spi_8h_source.html">spi.h</a>.</p>
+<p>Definition at line <a class="el" href="spi_8h_source.html#l00194">194</a> of file <a class="el" href="spi_8h_source.html">spi.h</a>.</p>
 
 <p>Referenced by <a class="el" href="imu__px4fmu_8c_source.html#l00061">imu_px4fmu_init()</a>.</p>
 
@@ -542,7 +545,7 @@ tx_idx_buf</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="spi_8h_source.html#l00189">189</a> of file <a class="el" href="spi_8h_source.html">spi.h</a>.</p>
+<p>Definition at line <a class="el" href="spi_8h_source.html#l00195">195</a> of file <a class="el" href="spi_8h_source.html">spi.h</a>.</p>
 
 </div>
 </div>
@@ -556,7 +559,7 @@ tx_idx_buf</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="spi_8h_source.html#l00190">190</a> of file <a class="el" href="spi_8h_source.html">spi.h</a>.</p>
+<p>Definition at line <a class="el" href="spi_8h_source.html#l00196">196</a> of file <a class="el" href="spi_8h_source.html">spi.h</a>.</p>
 
 </div>
 </div>
@@ -570,7 +573,7 @@ tx_idx_buf</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="spi_8h_source.html#l00191">191</a> of file <a class="el" href="spi_8h_source.html">spi.h</a>.</p>
+<p>Definition at line <a class="el" href="spi_8h_source.html#l00197">197</a> of file <a class="el" href="spi_8h_source.html">spi.h</a>.</p>
 
 </div>
 </div>
@@ -587,9 +590,9 @@ tx_idx_buf</td>
 <p>SPI transaction queue length. </p>
 <p>Number of transactions that can be queued. </p>
 
-<p>Definition at line <a class="el" href="spi_8h_source.html#l00163">163</a> of file <a class="el" href="spi_8h_source.html">spi.h</a>.</p>
+<p>Definition at line <a class="el" href="spi_8h_source.html#l00169">169</a> of file <a class="el" href="spi_8h_source.html">spi.h</a>.</p>
 
-<p>Referenced by <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00239">handle_spi_thd()</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00517">spi_next_transaction()</a>, <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00458">spi_submit()</a>, and <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00278">SpiEndOfTransaction()</a>.</p>
+<p>Referenced by <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00247">handle_spi_thd()</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00517">spi_next_transaction()</a>, <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00511">spi_submit()</a>, and <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00278">SpiEndOfTransaction()</a>.</p>
 
 </div>
 </div>
@@ -607,7 +610,7 @@ tx_idx_buf</td>
 <p>SPI Callback function. </p>
 <p>If not NULL (or 0), call function (with transaction as parameter) before or after transaction, e.g to allow execution of hardware specific actions </p>
 
-<p>Definition at line <a class="el" href="spi_8h_source.html#l00130">130</a> of file <a class="el" href="spi_8h_source.html">spi.h</a>.</p>
+<p>Definition at line <a class="el" href="spi_8h_source.html#l00136">136</a> of file <a class="el" href="spi_8h_source.html">spi.h</a>.</p>
 
 </div>
 </div>
@@ -628,7 +631,7 @@ tx_idx_buf</td>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="spi_8h_source.html#l00105">105</a> of file <a class="el" href="spi_8h_source.html">spi.h</a>.</p>
+<p>Definition at line <a class="el" href="spi_8h_source.html#l00111">111</a> of file <a class="el" href="spi_8h_source.html">spi.h</a>.</p>
 
 </div>
 </div>
@@ -663,7 +666,7 @@ tx_idx_buf</td>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="spi_8h_source.html#l00113">113</a> of file <a class="el" href="spi_8h_source.html">spi.h</a>.</p>
+<p>Definition at line <a class="el" href="spi_8h_source.html#l00119">119</a> of file <a class="el" href="spi_8h_source.html">spi.h</a>.</p>
 
 </div>
 </div>
@@ -688,7 +691,7 @@ tx_idx_buf</td>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="spi_8h_source.html#l00067">67</a> of file <a class="el" href="spi_8h_source.html">spi.h</a>.</p>
+<p>Definition at line <a class="el" href="spi_8h_source.html#l00073">73</a> of file <a class="el" href="spi_8h_source.html">spi.h</a>.</p>
 
 </div>
 </div>
@@ -713,7 +716,7 @@ tx_idx_buf</td>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="spi_8h_source.html#l00076">76</a> of file <a class="el" href="spi_8h_source.html">spi.h</a>.</p>
+<p>Definition at line <a class="el" href="spi_8h_source.html#l00082">82</a> of file <a class="el" href="spi_8h_source.html">spi.h</a>.</p>
 
 </div>
 </div>
@@ -735,7 +738,7 @@ tx_idx_buf</td>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="spi_8h_source.html#l00083">83</a> of file <a class="el" href="spi_8h_source.html">spi.h</a>.</p>
+<p>Definition at line <a class="el" href="spi_8h_source.html#l00089">89</a> of file <a class="el" href="spi_8h_source.html">spi.h</a>.</p>
 
 </div>
 </div>
@@ -755,7 +758,7 @@ tx_idx_buf</td>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="spi_8h_source.html#l00046">46</a> of file <a class="el" href="spi_8h_source.html">spi.h</a>.</p>
+<p>Definition at line <a class="el" href="spi_8h_source.html#l00052">52</a> of file <a class="el" href="spi_8h_source.html">spi.h</a>.</p>
 
 </div>
 </div>
@@ -786,7 +789,7 @@ tx_idx_buf</td>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="spi_8h_source.html#l00056">56</a> of file <a class="el" href="spi_8h_source.html">spi.h</a>.</p>
+<p>Definition at line <a class="el" href="spi_8h_source.html#l00062">62</a> of file <a class="el" href="spi_8h_source.html">spi.h</a>.</p>
 
 </div>
 </div>
@@ -808,7 +811,7 @@ tx_idx_buf</td>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="spi_8h_source.html#l00100">100</a> of file <a class="el" href="spi_8h_source.html">spi.h</a>.</p>
+<p>Definition at line <a class="el" href="spi_8h_source.html#l00106">106</a> of file <a class="el" href="spi_8h_source.html">spi.h</a>.</p>
 
 </div>
 </div>
@@ -836,7 +839,7 @@ tx_idx_buf</td>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="spi_8h_source.html#l00090">90</a> of file <a class="el" href="spi_8h_source.html">spi.h</a>.</p>
+<p>Definition at line <a class="el" href="spi_8h_source.html#l00096">96</a> of file <a class="el" href="spi_8h_source.html">spi.h</a>.</p>
 
 </div>
 </div>
@@ -858,9 +861,9 @@ tx_idx_buf</td>
 <p>Architecture dependent SPI0 initialization. </p>
 <p>Must be implemented by underlying architecture </p>
 
-<p>Definition at line <a class="el" href="linux_2mcu__periph_2spi__arch_8c_source.html#l00136">136</a> of file <a class="el" href="linux_2mcu__periph_2spi__arch_8c_source.html">spi_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="linux_2mcu__periph_2spi__arch_8c_source.html#l00137">137</a> of file <a class="el" href="linux_2mcu__periph_2spi__arch_8c_source.html">spi_arch.c</a>.</p>
 
-<p>References <a class="el" href="serial_8c_source.html#l00026">fd</a>, <a class="el" href="spi_8h_source.html#l00178">spi_periph::init_struct</a>, <a class="el" href="spi_8h_source.html#l00177">spi_periph::reg_addr</a>, <a class="el" href="spi_8c_source.html#l00035">spi0</a>, <a class="el" href="LPC21xx_8h_source.html#l00195">SPI0</a>, <a class="el" href="linux_2mcu__periph_2spi__arch_8c_source.html#l00129">SPI0_BITS_PER_WORD</a>, <a class="el" href="linux_2mcu__periph_2spi__arch_8c_source.html#l00125">SPI0_LSB_FIRST</a>, <a class="el" href="linux_2mcu__periph_2spi__arch_8c_source.html#l00133">SPI0_MAX_SPEED_HZ</a>, <a class="el" href="linux_2mcu__periph_2spi__arch_8c_source.html#l00121">SPI0_MODE</a>, and <a class="el" href="lpcVIC_8h_source.html#l00080">VIC_SPI0</a>.</p>
+<p>References <a class="el" href="serial_8c_source.html#l00026">fd</a>, <a class="el" href="spi_8h_source.html#l00184">spi_periph::init_struct</a>, <a class="el" href="spi_8h_source.html#l00183">spi_periph::reg_addr</a>, <a class="el" href="spi_8c_source.html#l00035">spi0</a>, <a class="el" href="LPC21xx_8h_source.html#l00195">SPI0</a>, <a class="el" href="linux_2mcu__periph_2spi__arch_8c_source.html#l00130">SPI0_BITS_PER_WORD</a>, <a class="el" href="linux_2mcu__periph_2spi__arch_8c_source.html#l00126">SPI0_LSB_FIRST</a>, <a class="el" href="linux_2mcu__periph_2spi__arch_8c_source.html#l00134">SPI0_MAX_SPEED_HZ</a>, <a class="el" href="linux_2mcu__periph_2spi__arch_8c_source.html#l00122">SPI0_MODE</a>, and <a class="el" href="lpcVIC_8h_source.html#l00080">VIC_SPI0</a>.</p>
 
 <p>Referenced by <a class="el" href="spi_8c_source.html#l00037">spi0_init()</a>.</p>
 
@@ -893,9 +896,9 @@ tx_idx_buf</td>
 
 <p>Definition at line <a class="el" href="spi_8c_source.html#l00037">37</a> of file <a class="el" href="spi_8c_source.html">spi.c</a>.</p>
 
-<p>References <a class="el" href="spi_8c_source.html#l00035">spi0</a>, <a class="el" href="linux_2mcu__periph_2spi__arch_8c_source.html#l00136">spi0_arch_init()</a>, and <a class="el" href="spi_8c_source.html#l00078">spi_init()</a>.</p>
+<p>References <a class="el" href="spi_8c_source.html#l00035">spi0</a>, <a class="el" href="linux_2mcu__periph_2spi__arch_8c_source.html#l00137">spi0_arch_init()</a>, and <a class="el" href="spi_8c_source.html#l00089">spi_init()</a>.</p>
 
-<p>Referenced by <a class="el" href="mcu_8c_source.html#l00082">mcu_init()</a>.</p>
+<p>Referenced by <a class="el" href="mcu_8c_source.html#l00087">mcu_init()</a>.</p>
 
 <p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -938,9 +941,9 @@ tx_idx_buf</td>
 <p>Architecture dependent SPI1 initialization. </p>
 <p>Must be implemented by underlying architecture </p>
 
-<p>Definition at line <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00352">352</a> of file <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html">spi_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00366">366</a> of file <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html">spi_arch.c</a>.</p>
 
-<p>References <a class="el" href="armVIC_8h_source.html#l00020">_VIC_ADDR</a>, <a class="el" href="armVIC_8h_source.html#l00019">_VIC_CNTL</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00077">locm3_spi_comm::br</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00103">spi_periph_dma::comm</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00104">spi_periph_dma::comm_sig</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00079">locm3_spi_comm::cpha</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00078">locm3_spi_comm::cpol</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00080">locm3_spi_comm::dff</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00091">spi_periph_dma::dma</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="serial_8c_source.html#l00026">fd</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00342">get_comm_signature()</a>, <a class="el" href="chibios_2mcu__periph_2gpio__arch_8c_source.html#l00061">gpio_setup_pin_af()</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00081">locm3_spi_comm::lsbfirst</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00436">MASTER_SSP_CPHA</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00435">MASTER_SSP_CPOL</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00433">MASTER_SSP_DSS</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00434">MASTER_SSP_FRF</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00440">MASTER_SSP_LBM</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00442">MASTER_SSP_MS</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00437">MASTER_SSP_SCR</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00443">MASTER_SSP_SOD</a>, <a class="el" href="LPC21xx_8h_source.html#l00348">PINSEL1</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00092">spi_periph_dma::rcc_dma</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00093">spi_periph_dma::rx_chan</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00095">spi_periph_dma::rx_chan_sel</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00101">spi_periph_dma::rx_dummy_buf</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00102">spi_periph_dma::rx_extra_dummy_dma</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00097">spi_periph_dma::rx_nvic_irq</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00327">set_default_comm_config()</a>, <a class="el" href="LPC21xx_8h_source.html#l00210">SPI1</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00967">spi1</a>, <a class="el" href="linux_2mcu__periph_2spi__arch_8c_source.html#l00185">SPI1_BITS_PER_WORD</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00112">spi1_dma</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00435">SPI1_GPIO_AF</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00437">SPI1_GPIO_MISO</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00439">SPI1_GPIO_MOSI</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00436">SPI1_GPIO_PORT_MISO</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00438">SPI1_GPIO_PORT_MOSI</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00440">SPI1_GPIO_PORT_SCK</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00441">SPI1_GPIO_SCK</a>, <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00335">spi1_init_s</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00455">spi1_ISR()</a>, <a class="el" href="linux_2mcu__periph_2spi__arch_8c_source.html#l00181">SPI1_LSB_FIRST</a>, <a class="el" href="linux_2mcu__periph_2spi__arch_8c_source.html#l00189">SPI1_MAX_SPEED_HZ</a>, <a class="el" href="linux_2mcu__periph_2spi__arch_8c_source.html#l00177">SPI1_MODE</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00392">SPI1_VIC_SLOT</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00498">spi_arch_int_enable()</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00090">spi_periph_dma::spidr</a>, <a class="el" href="spi_8h_source.html#l00101">SPIIdle</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00386">SSP_PINSEL1_MISO</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00387">SSP_PINSEL1_MOSI</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00385">SSP_PINSEL1_SCK</a>, <a class="el" href="LPC21xx_8h_source.html#l00226">SSPCPSR</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00450">SSPCPSR_VAL</a>, <a class="el" href="LPC21xx_8h_source.html#l00222">SSPCR0</a>, <a class="el" href="LPC21xx_8h_source.html#l00223">SSPCR1</a>, <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00340">thd_spi1()</a>, <a class="el" href="std_8h_source.html#l00004">TRUE</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00094">spi_periph_dma::tx_chan</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00096">spi_periph_dma::tx_chan_sel</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00099">spi_periph_dma::tx_dummy_buf</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00100">spi_periph_dma::tx_extra_dummy_dma</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00098">spi_periph_dma::tx_nvic_irq</a>, <a class="el" href="lpcVIC_8h_source.html#l00105">VIC_BIT</a>, <a class="el" href="lpcVIC_8h_source.html#l00102">VIC_ENABLE</a>, <a class="el" href="lpcVIC_8h_source.html#l00081">VIC_SPI1</a>, <a class="el" href="LPC21xx_8h_source.html#l00431">VICIntEnable</a>, and <a class="el" href="LPC21xx_8h_source.html#l00430">VICIntSelect</a>.</p>
+<p>References <a class="el" href="armVIC_8h_source.html#l00020">_VIC_ADDR</a>, <a class="el" href="armVIC_8h_source.html#l00019">_VIC_CNTL</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00077">locm3_spi_comm::br</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00103">spi_periph_dma::comm</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00104">spi_periph_dma::comm_sig</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00079">locm3_spi_comm::cpha</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00078">locm3_spi_comm::cpol</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00080">locm3_spi_comm::dff</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00091">spi_periph_dma::dma</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="serial_8c_source.html#l00026">fd</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00342">get_comm_signature()</a>, <a class="el" href="chibios_2mcu__periph_2gpio__arch_8c_source.html#l00061">gpio_setup_pin_af()</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00081">locm3_spi_comm::lsbfirst</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00436">MASTER_SSP_CPHA</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00435">MASTER_SSP_CPOL</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00433">MASTER_SSP_DSS</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00434">MASTER_SSP_FRF</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00440">MASTER_SSP_LBM</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00442">MASTER_SSP_MS</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00437">MASTER_SSP_SCR</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00443">MASTER_SSP_SOD</a>, <a class="el" href="LPC21xx_8h_source.html#l00348">PINSEL1</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00092">spi_periph_dma::rcc_dma</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00093">spi_periph_dma::rx_chan</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00095">spi_periph_dma::rx_chan_sel</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00101">spi_periph_dma::rx_dummy_buf</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00102">spi_periph_dma::rx_extra_dummy_dma</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00097">spi_periph_dma::rx_nvic_irq</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00327">set_default_comm_config()</a>, <a class="el" href="LPC21xx_8h_source.html#l00210">SPI1</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00967">spi1</a>, <a class="el" href="linux_2mcu__periph_2spi__arch_8c_source.html#l00186">SPI1_BITS_PER_WORD</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00112">spi1_dma</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00513">SPI1_GPIO_AF</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00515">SPI1_GPIO_MISO</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00517">SPI1_GPIO_MOSI</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00514">SPI1_GPIO_PORT_MISO</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00516">SPI1_GPIO_PORT_MOSI</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00518">SPI1_GPIO_PORT_SCK</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00519">SPI1_GPIO_SCK</a>, <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00349">spi1_init_s</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00455">spi1_ISR()</a>, <a class="el" href="linux_2mcu__periph_2spi__arch_8c_source.html#l00182">SPI1_LSB_FIRST</a>, <a class="el" href="linux_2mcu__periph_2spi__arch_8c_source.html#l00190">SPI1_MAX_SPEED_HZ</a>, <a class="el" href="linux_2mcu__periph_2spi__arch_8c_source.html#l00178">SPI1_MODE</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00392">SPI1_VIC_SLOT</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00498">spi_arch_int_enable()</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00090">spi_periph_dma::spidr</a>, <a class="el" href="spi_8h_source.html#l00107">SPIIdle</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00386">SSP_PINSEL1_MISO</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00387">SSP_PINSEL1_MOSI</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00385">SSP_PINSEL1_SCK</a>, <a class="el" href="LPC21xx_8h_source.html#l00226">SSPCPSR</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00450">SSPCPSR_VAL</a>, <a class="el" href="LPC21xx_8h_source.html#l00222">SSPCR0</a>, <a class="el" href="LPC21xx_8h_source.html#l00223">SSPCR1</a>, <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00354">thd_spi1()</a>, <a class="el" href="std_8h_source.html#l00004">TRUE</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00094">spi_periph_dma::tx_chan</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00096">spi_periph_dma::tx_chan_sel</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00099">spi_periph_dma::tx_dummy_buf</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00100">spi_periph_dma::tx_extra_dummy_dma</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00098">spi_periph_dma::tx_nvic_irq</a>, <a class="el" href="lpcVIC_8h_source.html#l00105">VIC_BIT</a>, <a class="el" href="lpcVIC_8h_source.html#l00102">VIC_ENABLE</a>, <a class="el" href="lpcVIC_8h_source.html#l00081">VIC_SPI1</a>, <a class="el" href="LPC21xx_8h_source.html#l00431">VICIntEnable</a>, and <a class="el" href="LPC21xx_8h_source.html#l00430">VICIntSelect</a>.</p>
 
 <p>Referenced by <a class="el" href="spi_8c_source.html#l00048">spi1_init()</a>.</p>
 
@@ -984,9 +987,9 @@ tx_idx_buf</td>
 
 <p>Definition at line <a class="el" href="spi_8c_source.html#l00048">48</a> of file <a class="el" href="spi_8c_source.html">spi.c</a>.</p>
 
-<p>References <a class="el" href="spi_8c_source.html#l00046">spi1</a>, <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00352">spi1_arch_init()</a>, and <a class="el" href="spi_8c_source.html#l00078">spi_init()</a>.</p>
+<p>References <a class="el" href="spi_8c_source.html#l00046">spi1</a>, <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00366">spi1_arch_init()</a>, and <a class="el" href="spi_8c_source.html#l00089">spi_init()</a>.</p>
 
-<p>Referenced by <a class="el" href="mcu_8c_source.html#l00082">mcu_init()</a>.</p>
+<p>Referenced by <a class="el" href="mcu_8c_source.html#l00087">mcu_init()</a>.</p>
 
 <p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -1029,9 +1032,9 @@ tx_idx_buf</td>
 <p>Architecture dependent SPI2 initialization. </p>
 <p>Must be implemented by underlying architecture </p>
 
-<p>Definition at line <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00391">391</a> of file <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html">spi_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00405">405</a> of file <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html">spi_arch.c</a>.</p>
 
-<p>References <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00077">locm3_spi_comm::br</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00103">spi_periph_dma::comm</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00104">spi_periph_dma::comm_sig</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00079">locm3_spi_comm::cpha</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00078">locm3_spi_comm::cpol</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00080">locm3_spi_comm::dff</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00091">spi_periph_dma::dma</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00342">get_comm_signature()</a>, <a class="el" href="chibios_2mcu__periph_2gpio__arch_8c_source.html#l00061">gpio_setup_pin_af()</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00081">locm3_spi_comm::lsbfirst</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00092">spi_periph_dma::rcc_dma</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00093">spi_periph_dma::rx_chan</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00095">spi_periph_dma::rx_chan_sel</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00101">spi_periph_dma::rx_dummy_buf</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00102">spi_periph_dma::rx_extra_dummy_dma</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00097">spi_periph_dma::rx_nvic_irq</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00327">set_default_comm_config()</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l01004">spi2</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00115">spi2_dma</a>, <a class="el" href="elle0__common_8h_source.html#l00196">SPI2_GPIO_AF</a>, <a class="el" href="elle0__common_8h_source.html#l00198">SPI2_GPIO_MISO</a>, <a class="el" href="elle0__common_8h_source.html#l00200">SPI2_GPIO_MOSI</a>, <a class="el" href="elle0__common_8h_source.html#l00197">SPI2_GPIO_PORT_MISO</a>, <a class="el" href="elle0__common_8h_source.html#l00199">SPI2_GPIO_PORT_MOSI</a>, <a class="el" href="elle0__common_8h_source.html#l00201">SPI2_GPIO_PORT_SCK</a>, <a class="el" href="elle0__common_8h_source.html#l00202">SPI2_GPIO_SCK</a>, <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00374">spi2_init_s</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00498">spi_arch_int_enable()</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00090">spi_periph_dma::spidr</a>, <a class="el" href="spi_8h_source.html#l00101">SPIIdle</a>, <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00379">thd_spi2()</a>, <a class="el" href="std_8h_source.html#l00004">TRUE</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00094">spi_periph_dma::tx_chan</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00096">spi_periph_dma::tx_chan_sel</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00099">spi_periph_dma::tx_dummy_buf</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00100">spi_periph_dma::tx_extra_dummy_dma</a>, and <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00098">spi_periph_dma::tx_nvic_irq</a>.</p>
+<p>References <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00077">locm3_spi_comm::br</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00103">spi_periph_dma::comm</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00104">spi_periph_dma::comm_sig</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00079">locm3_spi_comm::cpha</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00078">locm3_spi_comm::cpol</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00080">locm3_spi_comm::dff</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00091">spi_periph_dma::dma</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00342">get_comm_signature()</a>, <a class="el" href="chibios_2mcu__periph_2gpio__arch_8c_source.html#l00061">gpio_setup_pin_af()</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00081">locm3_spi_comm::lsbfirst</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00092">spi_periph_dma::rcc_dma</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00093">spi_periph_dma::rx_chan</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00095">spi_periph_dma::rx_chan_sel</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00101">spi_periph_dma::rx_dummy_buf</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00102">spi_periph_dma::rx_extra_dummy_dma</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00097">spi_periph_dma::rx_nvic_irq</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00327">set_default_comm_config()</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l01004">spi2</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00115">spi2_dma</a>, <a class="el" href="elle0__common_8h_source.html#l00196">SPI2_GPIO_AF</a>, <a class="el" href="elle0__common_8h_source.html#l00198">SPI2_GPIO_MISO</a>, <a class="el" href="elle0__common_8h_source.html#l00200">SPI2_GPIO_MOSI</a>, <a class="el" href="elle0__common_8h_source.html#l00197">SPI2_GPIO_PORT_MISO</a>, <a class="el" href="elle0__common_8h_source.html#l00199">SPI2_GPIO_PORT_MOSI</a>, <a class="el" href="elle0__common_8h_source.html#l00201">SPI2_GPIO_PORT_SCK</a>, <a class="el" href="elle0__common_8h_source.html#l00202">SPI2_GPIO_SCK</a>, <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00388">spi2_init_s</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00498">spi_arch_int_enable()</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00090">spi_periph_dma::spidr</a>, <a class="el" href="spi_8h_source.html#l00107">SPIIdle</a>, <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00393">thd_spi2()</a>, <a class="el" href="std_8h_source.html#l00004">TRUE</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00094">spi_periph_dma::tx_chan</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00096">spi_periph_dma::tx_chan_sel</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00099">spi_periph_dma::tx_dummy_buf</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00100">spi_periph_dma::tx_extra_dummy_dma</a>, and <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00098">spi_periph_dma::tx_nvic_irq</a>.</p>
 
 <p>Referenced by <a class="el" href="spi_8c_source.html#l00059">spi2_init()</a>.</p>
 
@@ -1075,9 +1078,9 @@ tx_idx_buf</td>
 
 <p>Definition at line <a class="el" href="spi_8c_source.html#l00059">59</a> of file <a class="el" href="spi_8c_source.html">spi.c</a>.</p>
 
-<p>References <a class="el" href="spi_8c_source.html#l00057">spi2</a>, <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00391">spi2_arch_init()</a>, and <a class="el" href="spi_8c_source.html#l00078">spi_init()</a>.</p>
+<p>References <a class="el" href="spi_8c_source.html#l00057">spi2</a>, <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00405">spi2_arch_init()</a>, and <a class="el" href="spi_8c_source.html#l00089">spi_init()</a>.</p>
 
-<p>Referenced by <a class="el" href="mcu_8c_source.html#l00082">mcu_init()</a>.</p>
+<p>Referenced by <a class="el" href="mcu_8c_source.html#l00087">mcu_init()</a>.</p>
 
 <p><div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -1098,6 +1101,78 @@ tx_idx_buf</td>
 <div class="center"><img src="group__spi_ga1c8c4e89459606c70f6749714abd4a86_icgraph.png" border="0" usemap="#group__spi_ga1c8c4e89459606c70f6749714abd4a86_icgraph" alt=""/></div>
 <map name="group__spi_ga1c8c4e89459606c70f6749714abd4a86_icgraph" id="group__spi_ga1c8c4e89459606c70f6749714abd4a86_icgraph">
 <area shape="rect" id="node2" href="group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b" title="Microcontroller peripherals initialization. " alt="" coords="128,56,204,83"/><area shape="rect" id="node3" href="fixedwing_2main__fbw_8h.html#ad86b7fe577a2414df2c7a5a9222aa45a" title="init_fbw" alt="" coords="257,5,327,32"/><area shape="rect" id="node5" href="lpc21_2uart__tunnel_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="265,56,319,83"/><area shape="rect" id="node6" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="252,107,332,133"/><area shape="rect" id="node4" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="412,5,483,32"/><area shape="rect" id="node7" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="420,81,475,108"/><area shape="rect" id="node8" href="nps__autopilot__rotorcraft_8c.html#a3348493e992edd2442581c1d09446b4b" title="nps_autopilot_init" alt="" coords="380,132,515,159"/><area shape="rect" id="node9" href="nps__main__hitl_8c.html#a72ef549ee35deec8c017e83d9de38f66" title="nps_radio_and_autopilot_init" alt="" coords="563,132,767,159"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ga66e55e817c63768ac9910dc6f7cc9447"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool spi_blocking_transceive </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="group__spi.html#structspi__periph">spi_periph</a> *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="group__spi.html#structspi__transaction">spi_transaction</a> *&#160;</td>
+          <td class="paramname"><em>t</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Perform a spi transaction (blocking). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>spi peripheral to be used </td></tr>
+    <tr><td class="paramname">t</td><td>spi transaction </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>TRUE if transaction completed (success or failure) </dd></dl>
+
+<p>Definition at line <a class="el" href="spi_8h_source.html#l00284">284</a> of file <a class="el" href="spi_8h_source.html">spi.h</a>.</p>
+
+<p>References <a class="el" href="sys__time_8h_source.html#l00129">get_sys_time_float()</a>, <a class="el" href="spi_8h_source.html#l00040">SPI_BLOCKING_TIMEOUT</a>, <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00511">spi_submit()</a>, <a class="el" href="spi_8h_source.html#l00097">SPITransPending</a>, <a class="el" href="spi_8h_source.html#l00098">SPITransRunning</a>, and <a class="el" href="spi_8h_source.html#l00162">spi_transaction::status</a>.</p>
+
+<p>Referenced by <a class="el" href="pmw3901_8c_source.html#l00095">readRegister_blocking()</a>, and <a class="el" href="pmw3901_8c_source.html#l00110">writeRegister_blocking()</a>.</p>
+
+<p><div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="group__spi_ga66e55e817c63768ac9910dc6f7cc9447_cgraph.png" border="0" usemap="#group__spi_ga66e55e817c63768ac9910dc6f7cc9447_cgraph" alt=""/></div>
+<map name="group__spi_ga66e55e817c63768ac9910dc6f7cc9447_cgraph" id="group__spi_ga66e55e817c63768ac9910dc6f7cc9447_cgraph">
+<area shape="rect" id="node2" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup. " alt="" coords="225,309,368,336"/><area shape="rect" id="node3" href="group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit a spi transaction. " alt="" coords="251,360,342,387"/><area shape="rect" id="node4" href="armVIC_8c.html#a495b577a0ad5c4dc620339b2edff1ac5" title="disableIRQ" alt="" coords="468,31,556,57"/><area shape="rect" id="node7" href="lpc21_2mcu__periph_2spi__arch_8c.html#abcda020ad14ec4732c4ffff453060fff" title="SpiStart" alt="" coords="475,335,549,361"/><area shape="rect" id="node21" href="armVIC_8c.html#adf9d98445ae51a2278cbe9e719f579f1" title="enableIRQ" alt="" coords="469,81,555,108"/><area shape="rect" id="node22" href="stm32_2mcu__periph_2spi__arch_8c.html#a42f17f52b327c1192801fc39493f43c5" title="Disable DMA channel interrupts. " alt="" coords="437,385,587,412"/><area shape="rect" id="node23" href="stm32_2mcu__periph_2spi__arch_8c.html#a87e230295cb1339876faa6f6986a44e9" title="Start a new transaction with DMA. " alt="" coords="416,639,608,665"/><area shape="rect" id="node29" href="stm32_2mcu__periph_2spi__arch_8c.html#a92d285e5b860130426aa3ce1369df0c9" title="Enable DMA channel interrupts. " alt="" coords="438,689,586,716"/><area shape="rect" id="node5" href="armVIC_8c.html#a07a90dd2662e1a51c45600eccd2661c4" title="__get_cpsr" alt="" coords="714,5,805,32"/><area shape="rect" id="node6" href="armVIC_8c.html#a2695574f2b9c353bb88ce1239a0ab9ec" title="__set_cpsr" alt="" coords="714,56,805,83"/><area shape="rect" id="node8" href="lpc21_2mcu__periph_2spi__arch_8c.html#ac8a1011a8423019c3b94e3a1a9744b6b" title="SpiClearCPHA" alt="" coords="704,512,815,539"/><area shape="rect" id="node9" href="lpc21_2mcu__periph_2spi__arch_8c.html#afddc6318837a832e08ac2096474632f8" title="SpiClearCPOL" alt="" coords="705,563,814,589"/><area shape="rect" id="node10" href="lpc21_2mcu__periph_2spi__arch_8c.html#a4bb68d5cebfe43c482fc48ca2a1ed6de" title="SpiEnable" alt="" coords="717,107,802,133"/><area shape="rect" id="node11" href="lpc21_2mcu__periph_2spi__arch_8c.html#a2f597567924a3000e5afb340e4aa5592" title="SpiEnableRti" alt="" coords="709,157,810,184"/><area shape="rect" id="node12" href="lpc21_2mcu__periph_2spi__arch_8c.html#acb7e2c245885f1b82d6791148172e592" title="SpiEnableTxi" alt="" coords="708,208,811,235"/><area shape="rect" id="node13" href="lpc21_2mcu__periph_2spi__arch_8c.html#a5c38f72da3e7ef54561ec617cdde67e5" title="SpiInitBuf" alt="" coords="718,259,801,285"/><area shape="rect" id="node17" href="lpc21_2mcu__periph_2spi__arch_8c.html#a3f8c8db30e82381d4d60a444f1708517" title="SpiSetCPHA" alt="" coords="709,309,809,336"/><area shape="rect" id="node18" href="lpc21_2mcu__periph_2spi__arch_8c.html#a1126b0a8388d4a8eb8ded8bbe8ab940e" title="SpiSetCPOL" alt="" coords="710,360,809,387"/><area shape="rect" id="node19" href="lpc21_2mcu__periph_2spi__arch_8c.html#ad816c76c7fe692f51942efa74bdb1d86" title="Set the SPI data size to 8 or 16bit. " alt="" coords="698,411,821,437"/><area shape="rect" id="node20" href="lpc21_2mcu__periph_2spi__arch_8c.html#ab639bd461acc9159f2a8566bfe1ebdd0" title="SpiSlaveSelect" alt="" coords="701,461,818,488"/><area shape="rect" id="node14" href="lpc21_2mcu__periph_2spi__arch_8c.html#a3e9017646922bf67dc34451d35696314" title="SpiTransmit" alt="" coords="911,259,1007,285"/><area shape="rect" id="node15" href="lpc21_2mcu__periph_2spi__arch_8c.html#a945eb366ac13567f396285aaa6381cec" title="SpiDisableTxi" alt="" coords="1055,233,1161,260"/><area shape="rect" id="node16" href="lpc21_2mcu__periph_2spi__arch_8c.html#af00370ab8f8ea4fe1ac8bf434230a398" title="SpiSend" alt="" coords="1071,284,1145,311"/><area shape="rect" id="node24" href="stm32_2mcu__periph_2spi__arch_8c.html#a0c1bcbefaf569036eb191e18ea849a7a" title="get_transaction_signature" alt="" coords="665,613,854,640"/><area shape="rect" id="node25" href="stm32_2mcu__periph_2spi__arch_8c.html#af29aa7d9b5af1ef2b42450937767535f" title="Update SPI communication conf from generic paparazzi SPI transaction. " alt="" coords="656,664,863,691"/><area shape="rect" id="node26" href="stm32_2mcu__periph_2spi__arch_8c.html#a9678da2cc27199851a80fcf27a2761a3" title="spi_configure_dma" alt="" coords="688,715,831,741"/><area shape="rect" id="node27" href="stm32_2mcu__periph_2spi__arch_8c.html#ab639bd461acc9159f2a8566bfe1ebdd0" title="SpiSlaveSelect" alt="" coords="701,765,818,792"/><area shape="rect" id="node28" href="chibios_2mcu__periph_2gpio__arch_8h.html#a302a5c9e7203669d0b9db8a2952fe009" title="Clear a gpio output to low level. " alt="" coords="915,765,1002,792"/></map>
+</div>
+</p>
+
+<p><div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="group__spi_ga66e55e817c63768ac9910dc6f7cc9447_icgraph.png" border="0" usemap="#group__spi_ga66e55e817c63768ac9910dc6f7cc9447_icgraph" alt=""/></div>
+<map name="group__spi_ga66e55e817c63768ac9910dc6f7cc9447_icgraph" id="group__spi_ga66e55e817c63768ac9910dc6f7cc9447_icgraph">
+<area shape="rect" id="node2" href="pmw3901_8c.html#a00ba06d3e6407dfaf867e6097462d617" title="readRegister_blocking" alt="" coords="226,5,387,32"/><area shape="rect" id="node3" href="pmw3901_8c.html#a8265440e872d2a53abf19f0caeb3ec9e" title="writeRegister_blocking" alt="" coords="225,56,388,83"/></map>
 </div>
 </p>
 
@@ -1125,17 +1200,17 @@ tx_idx_buf</td>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="spi_8c_source.html#l00078">78</a> of file <a class="el" href="spi_8c_source.html">spi.c</a>.</p>
+<p>Definition at line <a class="el" href="spi_8c_source.html#l00089">89</a> of file <a class="el" href="spi_8c_source.html">spi.c</a>.</p>
 
-<p>References <a class="el" href="spi_8h_source.html#l00179">spi_periph::mode</a>, <a class="el" href="spi_8h_source.html#l00101">SPIIdle</a>, <a class="el" href="spi_8h_source.html#l00047">SPIMaster</a>, <a class="el" href="spi_8h_source.html#l00174">spi_periph::status</a>, <a class="el" href="spi_8h_source.html#l00181">spi_periph::suspend</a>, <a class="el" href="spi_8h_source.html#l00172">spi_periph::trans_extract_idx</a>, and <a class="el" href="spi_8h_source.html#l00171">spi_periph::trans_insert_idx</a>.</p>
+<p>References <a class="el" href="spi_8h_source.html#l00185">spi_periph::mode</a>, <a class="el" href="spi_8h_source.html#l00107">SPIIdle</a>, <a class="el" href="spi_8h_source.html#l00053">SPIMaster</a>, <a class="el" href="spi_8h_source.html#l00180">spi_periph::status</a>, <a class="el" href="spi_8h_source.html#l00187">spi_periph::suspend</a>, <a class="el" href="spi_8h_source.html#l00178">spi_periph::trans_extract_idx</a>, and <a class="el" href="spi_8h_source.html#l00177">spi_periph::trans_insert_idx</a>.</p>
 
 <p>Referenced by <a class="el" href="spi_8c_source.html#l00037">spi0_init()</a>, <a class="el" href="spi_8c_source.html#l00048">spi1_init()</a>, and <a class="el" href="spi_8c_source.html#l00059">spi2_init()</a>.</p>
 
-<p><div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="group__spi_ga6c0861f0c2184cab82f883ca29312011_icgraph.png" border="0" usemap="#group__spi_ga6c0861f0c2184cab82f883ca29312011_icgraph" alt=""/></div>
 <map name="group__spi_ga6c0861f0c2184cab82f883ca29312011_icgraph" id="group__spi_ga6c0861f0c2184cab82f883ca29312011_icgraph">
 <area shape="rect" id="node2" href="group__spi.html#ga2437939c4fca0a4a5a4f79460ed3f731" title="spi0_init" alt="" coords="120,5,195,32"/><area shape="rect" id="node11" href="group__spi.html#ga7da3469436debceb731ecb76c920efda" title="spi1_init" alt="" coords="120,56,195,83"/><area shape="rect" id="node12" href="group__spi.html#ga1c8c4e89459606c70f6749714abd4a86" title="spi2_init" alt="" coords="120,107,195,133"/><area shape="rect" id="node3" href="group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b" title="Microcontroller peripherals initialization. " alt="" coords="243,56,319,83"/><area shape="rect" id="node4" href="fixedwing_2main__fbw_8h.html#ad86b7fe577a2414df2c7a5a9222aa45a" title="init_fbw" alt="" coords="372,5,441,32"/><area shape="rect" id="node6" href="lpc21_2uart__tunnel_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="379,56,434,83"/><area shape="rect" id="node7" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="367,107,447,133"/><area shape="rect" id="node5" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="527,5,597,32"/><area shape="rect" id="node8" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="535,81,589,108"/><area shape="rect" id="node9" href="nps__autopilot__rotorcraft_8c.html#a3348493e992edd2442581c1d09446b4b" title="nps_autopilot_init" alt="" coords="495,132,629,159"/><area shape="rect" id="node10" href="nps__main__hitl_8c.html#a72ef549ee35deec8c017e83d9de38f66" title="nps_radio_and_autopilot_init" alt="" coords="677,132,881,159"/></map>
@@ -1161,28 +1236,28 @@ tx_idx_buf</td>
 <p>Initialize all used slaves and unselect them. </p>
 <p>Initialize all used slaves and unselect them. </p>
 
-<p>Definition at line <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00604">604</a> of file <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html">spi_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00657">657</a> of file <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html">spi_arch.c</a>.</p>
 
-<p>References <a class="el" href="chibios_2mcu__periph_2gpio__arch_8c_source.html#l00033">gpio_setup_output()</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00047">SPI_SELECT_SLAVE0_IODIR</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00445">SPI_SELECT_SLAVE0_PIN</a>, <a class="el" href="booz__1_80_8h_source.html#l00121">SPI_SELECT_SLAVE0_PINSEL</a>, <a class="el" href="booz__1_80_8h_source.html#l00122">SPI_SELECT_SLAVE0_PINSEL_BIT</a>, <a class="el" href="booz__1_80_8h_source.html#l00123">SPI_SELECT_SLAVE0_PINSEL_VAL</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00444">SPI_SELECT_SLAVE0_PORT</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00051">SPI_SELECT_SLAVE1_IODIR</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00448">SPI_SELECT_SLAVE1_PIN</a>, <a class="el" href="booz__1_80_8h_source.html#l00127">SPI_SELECT_SLAVE1_PINSEL</a>, <a class="el" href="booz__1_80_8h_source.html#l00128">SPI_SELECT_SLAVE1_PINSEL_BIT</a>, <a class="el" href="booz__1_80_8h_source.html#l00129">SPI_SELECT_SLAVE1_PINSEL_VAL</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00447">SPI_SELECT_SLAVE1_PORT</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00451">SPI_SELECT_SLAVE2_PIN</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00450">SPI_SELECT_SLAVE2_PORT</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00454">SPI_SELECT_SLAVE3_PIN</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00453">SPI_SELECT_SLAVE3_PORT</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00457">SPI_SELECT_SLAVE4_PIN</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00456">SPI_SELECT_SLAVE4_PORT</a>, <a class="el" href="chimera_8h_source.html#l00554">SPI_SELECT_SLAVE5_PIN</a>, <a class="el" href="chimera_8h_source.html#l00553">SPI_SELECT_SLAVE5_PORT</a>, <a class="el" href="spi_8h_source.html#l00186">SPI_SLAVE0</a>, <a class="el" href="spi_8h_source.html#l00187">SPI_SLAVE1</a>, <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00533">spi_slave_unselect()</a>, and <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00073">SpiSlaveUnselect()</a>.</p>
+<p>References <a class="el" href="chibios_2mcu__periph_2gpio__arch_8c_source.html#l00033">gpio_setup_output()</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00047">SPI_SELECT_SLAVE0_IODIR</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00523">SPI_SELECT_SLAVE0_PIN</a>, <a class="el" href="booz__1_80_8h_source.html#l00121">SPI_SELECT_SLAVE0_PINSEL</a>, <a class="el" href="booz__1_80_8h_source.html#l00122">SPI_SELECT_SLAVE0_PINSEL_BIT</a>, <a class="el" href="booz__1_80_8h_source.html#l00123">SPI_SELECT_SLAVE0_PINSEL_VAL</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00522">SPI_SELECT_SLAVE0_PORT</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00051">SPI_SELECT_SLAVE1_IODIR</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00526">SPI_SELECT_SLAVE1_PIN</a>, <a class="el" href="booz__1_80_8h_source.html#l00127">SPI_SELECT_SLAVE1_PINSEL</a>, <a class="el" href="booz__1_80_8h_source.html#l00128">SPI_SELECT_SLAVE1_PINSEL_BIT</a>, <a class="el" href="booz__1_80_8h_source.html#l00129">SPI_SELECT_SLAVE1_PINSEL_VAL</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00525">SPI_SELECT_SLAVE1_PORT</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00529">SPI_SELECT_SLAVE2_PIN</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00528">SPI_SELECT_SLAVE2_PORT</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00532">SPI_SELECT_SLAVE3_PIN</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00531">SPI_SELECT_SLAVE3_PORT</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00535">SPI_SELECT_SLAVE4_PIN</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00534">SPI_SELECT_SLAVE4_PORT</a>, <a class="el" href="chimera_8h_source.html#l00554">SPI_SELECT_SLAVE5_PIN</a>, <a class="el" href="chimera_8h_source.html#l00553">SPI_SELECT_SLAVE5_PORT</a>, <a class="el" href="spi_8h_source.html#l00192">SPI_SLAVE0</a>, <a class="el" href="spi_8h_source.html#l00193">SPI_SLAVE1</a>, <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00586">spi_slave_unselect()</a>, and <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00073">SpiSlaveUnselect()</a>.</p>
 
-<p>Referenced by <a class="el" href="mcu_8c_source.html#l00082">mcu_init()</a>.</p>
+<p>Referenced by <a class="el" href="mcu_8c_source.html#l00087">mcu_init()</a>.</p>
 
-<p><div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div id="dynsection-17-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="group__spi_gafc9125c5764a6749703ae4f1303a16f3_cgraph.png" border="0" usemap="#group__spi_gafc9125c5764a6749703ae4f1303a16f3_cgraph" alt=""/></div>
 <map name="group__spi_gafc9125c5764a6749703ae4f1303a16f3_cgraph" id="group__spi_gafc9125c5764a6749703ae4f1303a16f3_cgraph">
 <area shape="rect" id="node2" href="chibios_2mcu__periph_2gpio__arch_8c.html#a614c4a447f1e43381d92c682ac3b953f" title="Setup one or more pins of the given GPIO port as outputs. " alt="" coords="167,5,308,32"/><area shape="rect" id="node3" href="group__spi.html#ga99507da72932c02e5d8daf9a7170ed69" title="spi_slave_unselect() function " alt="" coords="167,56,308,83"/><area shape="rect" id="node4" href="lpc21_2mcu__periph_2spi__arch_8c.html#af3a0a783f898c0211f2c0e5498c746a0" title="SpiSlaveUnselect" alt="" coords="171,107,304,133"/></map>
 </div>
 </p>
 
-<p><div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-16-content" class="dyncontent" style="display:none;">
+<div id="dynsection-18-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="group__spi_gafc9125c5764a6749703ae4f1303a16f3_icgraph.png" border="0" usemap="#group__spi_gafc9125c5764a6749703ae4f1303a16f3_icgraph" alt=""/></div>
 <map name="group__spi_gafc9125c5764a6749703ae4f1303a16f3_icgraph" id="group__spi_gafc9125c5764a6749703ae4f1303a16f3_icgraph">
 <area shape="rect" id="node2" href="group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b" title="Microcontroller peripherals initialization. " alt="" coords="167,56,243,83"/><area shape="rect" id="node3" href="fixedwing_2main__fbw_8h.html#ad86b7fe577a2414df2c7a5a9222aa45a" title="init_fbw" alt="" coords="296,5,365,32"/><area shape="rect" id="node5" href="lpc21_2uart__tunnel_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="303,56,358,83"/><area shape="rect" id="node6" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="291,107,371,133"/><area shape="rect" id="node4" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="451,5,521,32"/><area shape="rect" id="node7" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="459,81,513,108"/><area shape="rect" id="node8" href="nps__autopilot__rotorcraft_8c.html#a3348493e992edd2442581c1d09446b4b" title="nps_autopilot_init" alt="" coords="419,132,553,159"/><area shape="rect" id="node9" href="nps__main__hitl_8c.html#a72ef549ee35deec8c017e83d9de38f66" title="nps_radio_and_autopilot_init" alt="" coords="601,132,805,159"/></map>
@@ -1227,28 +1302,28 @@ tx_idx_buf</td>
 <p>Lock the SPI fifo.</p>
 <p>Empty, for paparazzi compatibility only </p>
 
-<p>Definition at line <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00576">576</a> of file <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html">spi_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00629">629</a> of file <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html">spi_arch.c</a>.</p>
 
-<p>References <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="spi_8h_source.html#l00178">spi_periph::init_struct</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00510">spi_arch_int_disable()</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00498">spi_arch_int_enable()</a>, <a class="el" href="spi_8h_source.html#l00181">spi_periph::suspend</a>, <a class="el" href="std_8h_source.html#l00004">TRUE</a>, <a class="el" href="lpcVIC_8h_source.html#l00105">VIC_BIT</a>, <a class="el" href="LPC21xx_8h_source.html#l00431">VICIntEnable</a>, and <a class="el" href="LPC21xx_8h_source.html#l00432">VICIntEnClear</a>.</p>
+<p>References <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="spi_8h_source.html#l00184">spi_periph::init_struct</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00510">spi_arch_int_disable()</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00498">spi_arch_int_enable()</a>, <a class="el" href="spi_8h_source.html#l00187">spi_periph::suspend</a>, <a class="el" href="std_8h_source.html#l00004">TRUE</a>, <a class="el" href="lpcVIC_8h_source.html#l00105">VIC_BIT</a>, <a class="el" href="LPC21xx_8h_source.html#l00431">VICIntEnable</a>, and <a class="el" href="LPC21xx_8h_source.html#l00432">VICIntEnClear</a>.</p>
 
 <p>Referenced by <a class="el" href="max1168_8c_source.html#l00134">max1168_lock_cb()</a>.</p>
 
-<p><div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-17-content" class="dyncontent" style="display:none;">
+<div id="dynsection-19-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="group__spi_ga747ed5cb8c8252f0101fb60a04fa886d_cgraph.png" border="0" usemap="#group__spi_ga747ed5cb8c8252f0101fb60a04fa886d_cgraph" alt=""/></div>
 <map name="group__spi_ga747ed5cb8c8252f0101fb60a04fa886d_cgraph" id="group__spi_ga747ed5cb8c8252f0101fb60a04fa886d_cgraph">
 <area shape="rect" id="node2" href="stm32_2mcu__periph_2spi__arch_8c.html#a42f17f52b327c1192801fc39493f43c5" title="Disable DMA channel interrupts. " alt="" coords="125,5,276,32"/><area shape="rect" id="node3" href="stm32_2mcu__periph_2spi__arch_8c.html#a92d285e5b860130426aa3ce1369df0c9" title="Enable DMA channel interrupts. " alt="" coords="127,56,275,83"/></map>
 </div>
 </p>
 
-<p><div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-18-content" class="dyncontent" style="display:none;">
+<div id="dynsection-20-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="group__spi_ga747ed5cb8c8252f0101fb60a04fa886d_icgraph.png" border="0" usemap="#group__spi_ga747ed5cb8c8252f0101fb60a04fa886d_icgraph" alt=""/></div>
 <map name="group__spi_ga747ed5cb8c8252f0101fb60a04fa886d_icgraph" id="group__spi_ga747ed5cb8c8252f0101fb60a04fa886d_icgraph">
 <area shape="rect" id="node2" href="max1168_8c.html#a65bdce5cdf607ff4f87fd590f20d16c3" title="max1168_lock_cb" alt="" coords="125,31,261,57"/><area shape="rect" id="node3" href="max1168_8h.html#a6130e20b7ea3c56aa94a9e449b773b4a" title="max1168_init" alt="" coords="309,31,417,57"/><area shape="rect" id="node4" href="imu__b2_8h.html#ae570fa02d6ebd9ce0b25e7074f002d72" title="imu_b2_init" alt="" coords="479,5,574,32"/><area shape="rect" id="node5" href="imu__hbmini_8h.html#aac46d381aad29da7884a7a0424bb9bda" title="imu_hbmini_init" alt="" coords="465,56,588,83"/></map>
@@ -1293,28 +1368,28 @@ tx_idx_buf</td>
 <p>Resume the SPI fifo.</p>
 <p>Empty, for paparazzi compatibility only </p>
 
-<p>Definition at line <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00590">590</a> of file <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html">spi_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00643">643</a> of file <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html">spi_arch.c</a>.</p>
 
-<p>References <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="spi_8h_source.html#l00178">spi_periph::init_struct</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00510">spi_arch_int_disable()</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00498">spi_arch_int_enable()</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00539">spi_start_dma_transaction()</a>, <a class="el" href="spi_8h_source.html#l00101">SPIIdle</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00249">SpiStart()</a>, <a class="el" href="spi_8h_source.html#l00174">spi_periph::status</a>, <a class="el" href="spi_8h_source.html#l00181">spi_periph::suspend</a>, <a class="el" href="spi_8h_source.html#l00170">spi_periph::trans</a>, <a class="el" href="spi_8h_source.html#l00172">spi_periph::trans_extract_idx</a>, <a class="el" href="spi_8h_source.html#l00171">spi_periph::trans_insert_idx</a>, <a class="el" href="std_8h_source.html#l00004">TRUE</a>, <a class="el" href="lpcVIC_8h_source.html#l00105">VIC_BIT</a>, <a class="el" href="LPC21xx_8h_source.html#l00431">VICIntEnable</a>, and <a class="el" href="LPC21xx_8h_source.html#l00432">VICIntEnClear</a>.</p>
+<p>References <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="spi_8h_source.html#l00184">spi_periph::init_struct</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00510">spi_arch_int_disable()</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00498">spi_arch_int_enable()</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00539">spi_start_dma_transaction()</a>, <a class="el" href="spi_8h_source.html#l00107">SPIIdle</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00249">SpiStart()</a>, <a class="el" href="spi_8h_source.html#l00180">spi_periph::status</a>, <a class="el" href="spi_8h_source.html#l00187">spi_periph::suspend</a>, <a class="el" href="spi_8h_source.html#l00176">spi_periph::trans</a>, <a class="el" href="spi_8h_source.html#l00178">spi_periph::trans_extract_idx</a>, <a class="el" href="spi_8h_source.html#l00177">spi_periph::trans_insert_idx</a>, <a class="el" href="std_8h_source.html#l00004">TRUE</a>, <a class="el" href="lpcVIC_8h_source.html#l00105">VIC_BIT</a>, <a class="el" href="LPC21xx_8h_source.html#l00431">VICIntEnable</a>, and <a class="el" href="LPC21xx_8h_source.html#l00432">VICIntEnClear</a>.</p>
 
 <p>Referenced by <a class="el" href="max1168_8c_source.html#l00101">max1168_event()</a>.</p>
 
-<p><div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-19-content" class="dyncontent" style="display:none;">
+<div id="dynsection-21-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="group__spi_gaf5ff5a9f93b73caf6532b7e25dd917b9_cgraph.png" border="0" usemap="#group__spi_gaf5ff5a9f93b73caf6532b7e25dd917b9_cgraph" alt=""/></div>
 <map name="group__spi_gaf5ff5a9f93b73caf6532b7e25dd917b9_cgraph" id="group__spi_gaf5ff5a9f93b73caf6532b7e25dd917b9_cgraph">
 <area shape="rect" id="node2" href="stm32_2mcu__periph_2spi__arch_8c.html#a42f17f52b327c1192801fc39493f43c5" title="Disable DMA channel interrupts. " alt="" coords="170,5,321,32"/><area shape="rect" id="node3" href="stm32_2mcu__periph_2spi__arch_8c.html#a92d285e5b860130426aa3ce1369df0c9" title="Enable DMA channel interrupts. " alt="" coords="171,56,319,83"/><area shape="rect" id="node4" href="stm32_2mcu__periph_2spi__arch_8c.html#a87e230295cb1339876faa6f6986a44e9" title="Start a new transaction with DMA. " alt="" coords="149,107,341,133"/><area shape="rect" id="node10" href="lpc21_2mcu__periph_2spi__arch_8c.html#abcda020ad14ec4732c4ffff453060fff" title="SpiStart" alt="" coords="208,411,283,437"/><area shape="rect" id="node5" href="stm32_2mcu__periph_2spi__arch_8c.html#a0c1bcbefaf569036eb191e18ea849a7a" title="get_transaction_signature" alt="" coords="398,5,587,32"/><area shape="rect" id="node6" href="stm32_2mcu__periph_2spi__arch_8c.html#af29aa7d9b5af1ef2b42450937767535f" title="Update SPI communication conf from generic paparazzi SPI transaction. " alt="" coords="389,56,596,83"/><area shape="rect" id="node7" href="stm32_2mcu__periph_2spi__arch_8c.html#a9678da2cc27199851a80fcf27a2761a3" title="spi_configure_dma" alt="" coords="421,107,564,133"/><area shape="rect" id="node8" href="stm32_2mcu__periph_2spi__arch_8c.html#ab639bd461acc9159f2a8566bfe1ebdd0" title="SpiSlaveSelect" alt="" coords="434,157,551,184"/><area shape="rect" id="node9" href="chibios_2mcu__periph_2gpio__arch_8h.html#a302a5c9e7203669d0b9db8a2952fe009" title="Clear a gpio output to low level. " alt="" coords="649,157,735,184"/><area shape="rect" id="node11" href="lpc21_2mcu__periph_2spi__arch_8c.html#ac8a1011a8423019c3b94e3a1a9744b6b" title="SpiClearCPHA" alt="" coords="437,208,548,235"/><area shape="rect" id="node12" href="lpc21_2mcu__periph_2spi__arch_8c.html#afddc6318837a832e08ac2096474632f8" title="SpiClearCPOL" alt="" coords="438,259,547,285"/><area shape="rect" id="node13" href="lpc21_2mcu__periph_2spi__arch_8c.html#a4bb68d5cebfe43c482fc48ca2a1ed6de" title="SpiEnable" alt="" coords="450,309,535,336"/><area shape="rect" id="node14" href="lpc21_2mcu__periph_2spi__arch_8c.html#a2f597567924a3000e5afb340e4aa5592" title="SpiEnableRti" alt="" coords="442,360,543,387"/><area shape="rect" id="node15" href="lpc21_2mcu__periph_2spi__arch_8c.html#acb7e2c245885f1b82d6791148172e592" title="SpiEnableTxi" alt="" coords="441,411,544,437"/><area shape="rect" id="node16" href="lpc21_2mcu__periph_2spi__arch_8c.html#a5c38f72da3e7ef54561ec617cdde67e5" title="SpiInitBuf" alt="" coords="451,461,534,488"/><area shape="rect" id="node20" href="lpc21_2mcu__periph_2spi__arch_8c.html#a3f8c8db30e82381d4d60a444f1708517" title="SpiSetCPHA" alt="" coords="443,512,543,539"/><area shape="rect" id="node21" href="lpc21_2mcu__periph_2spi__arch_8c.html#a1126b0a8388d4a8eb8ded8bbe8ab940e" title="SpiSetCPOL" alt="" coords="443,563,542,589"/><area shape="rect" id="node22" href="lpc21_2mcu__periph_2spi__arch_8c.html#ad816c76c7fe692f51942efa74bdb1d86" title="Set the SPI data size to 8 or 16bit. " alt="" coords="431,613,554,640"/><area shape="rect" id="node23" href="lpc21_2mcu__periph_2spi__arch_8c.html#ab639bd461acc9159f2a8566bfe1ebdd0" title="SpiSlaveSelect" alt="" coords="434,664,551,691"/><area shape="rect" id="node17" href="lpc21_2mcu__periph_2spi__arch_8c.html#a3e9017646922bf67dc34451d35696314" title="SpiTransmit" alt="" coords="644,461,740,488"/><area shape="rect" id="node18" href="lpc21_2mcu__periph_2spi__arch_8c.html#a945eb366ac13567f396285aaa6381cec" title="SpiDisableTxi" alt="" coords="788,436,895,463"/><area shape="rect" id="node19" href="lpc21_2mcu__periph_2spi__arch_8c.html#af00370ab8f8ea4fe1ac8bf434230a398" title="SpiSend" alt="" coords="804,487,879,513"/></map>
 </div>
 </p>
 
-<p><div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-22" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-22-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-22-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-20-content" class="dyncontent" style="display:none;">
+<div id="dynsection-22-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="group__spi_gaf5ff5a9f93b73caf6532b7e25dd917b9_icgraph.png" border="0" usemap="#group__spi_gaf5ff5a9f93b73caf6532b7e25dd917b9_icgraph" alt=""/></div>
 <map name="group__spi_gaf5ff5a9f93b73caf6532b7e25dd917b9_icgraph" id="group__spi_gaf5ff5a9f93b73caf6532b7e25dd917b9_icgraph">
 <area shape="rect" id="node2" href="max1168_8h.html#a957376acfc8fbd7b917f20a18e6c5a6c" title="max1168_event" alt="" coords="149,31,275,57"/><area shape="rect" id="node3" href="imu__b2_8h.html#ade46fe011019a8bae5cb916f34c03f9b" title="imu_b2_event" alt="" coords="336,5,448,32"/><area shape="rect" id="node4" href="imu__hbmini_8h.html#a5b9ae3abc04f091d942553dc17b589c8" title="imu_hbmini_event" alt="" coords="323,56,461,83"/></map>
@@ -1345,9 +1420,9 @@ tx_idx_buf</td>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="spi_8c_source.html#l00136">136</a> of file <a class="el" href="spi_8c_source.html">spi.c</a>.</p>
+<p>Definition at line <a class="el" href="spi_8c_source.html#l00147">147</a> of file <a class="el" href="spi_8c_source.html">spi.c</a>.</p>
 
-<p>References <a class="el" href="spi_8h_source.html#l00179">spi_periph::mode</a>, <a class="el" href="spi_8h_source.html#l00101">SPIIdle</a>, <a class="el" href="spi_8h_source.html#l00048">SPISlave</a>, <a class="el" href="spi_8h_source.html#l00174">spi_periph::status</a>, <a class="el" href="spi_8h_source.html#l00181">spi_periph::suspend</a>, <a class="el" href="spi_8h_source.html#l00172">spi_periph::trans_extract_idx</a>, and <a class="el" href="spi_8h_source.html#l00171">spi_periph::trans_insert_idx</a>.</p>
+<p>References <a class="el" href="spi_8h_source.html#l00185">spi_periph::mode</a>, <a class="el" href="spi_8h_source.html#l00107">SPIIdle</a>, <a class="el" href="spi_8h_source.html#l00054">SPISlave</a>, <a class="el" href="spi_8h_source.html#l00180">spi_periph::status</a>, <a class="el" href="spi_8h_source.html#l00187">spi_periph::suspend</a>, <a class="el" href="spi_8h_source.html#l00178">spi_periph::trans_extract_idx</a>, and <a class="el" href="spi_8h_source.html#l00177">spi_periph::trans_insert_idx</a>.</p>
 
 </div>
 </div>
@@ -1388,26 +1463,26 @@ tx_idx_buf</td>
 
 <p>Definition at line <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00679">679</a> of file <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html">spi_arch.c</a>.</p>
 
-<p>References <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00104">spi_periph_dma::comm_sig</a>, <a class="el" href="spi_8h_source.html#l00150">spi_transaction::cpha</a>, <a class="el" href="spi_8h_source.html#l00149">spi_transaction::cpol</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00091">spi_periph_dma::dma</a>, <a class="el" href="spi_8h_source.html#l00151">spi_transaction::dss</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00336">get_transaction_signature()</a>, <a class="el" href="spi_8h_source.html#l00178">spi_periph::init_struct</a>, <a class="el" href="spi_8h_source.html#l00143">spi_transaction::input_buf</a>, <a class="el" href="spi_8h_source.html#l00145">spi_transaction::input_length</a>, <a class="el" href="spi_8h_source.html#l00144">spi_transaction::output_buf</a>, <a class="el" href="spi_8h_source.html#l00146">spi_transaction::output_length</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00092">spi_periph_dma::rcc_dma</a>, <a class="el" href="spi_8h_source.html#l00177">spi_periph::reg_addr</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00093">spi_periph_dma::rx_chan</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00095">spi_periph_dma::rx_chan_sel</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00498">spi_arch_int_enable()</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00458">spi_configure_dma()</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l01591">spi_slave_set_config()</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00111">SpiClearCPHA()</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00101">SpiClearCPOL()</a>, <a class="el" href="spi_8h_source.html#l00069">SPICphaEdge2</a>, <a class="el" href="spi_8h_source.html#l00078">SPICpolIdleHigh</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00090">spi_periph_dma::spidr</a>, <a class="el" href="spi_8h_source.html#l00101">SPIIdle</a>, <a class="el" href="spi_8h_source.html#l00102">SPIRunning</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00106">SpiSetCPHA()</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00096">SpiSetCPOL()</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00123">SpiSetDataSize()</a>, <a class="el" href="spi_8h_source.html#l00094">SPITransFailed</a>, <a class="el" href="spi_8h_source.html#l00091">SPITransPending</a>, <a class="el" href="spi_8h_source.html#l00092">SPITransRunning</a>, <a class="el" href="spi_8h_source.html#l00156">spi_transaction::status</a>, <a class="el" href="spi_8h_source.html#l00174">spi_periph::status</a>, <a class="el" href="spi_8h_source.html#l00170">spi_periph::trans</a>, <a class="el" href="spi_8h_source.html#l00171">spi_periph::trans_insert_idx</a>, <a class="el" href="std_8h_source.html#l00004">TRUE</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00094">spi_periph_dma::tx_chan</a>, and <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00096">spi_periph_dma::tx_chan_sel</a>.</p>
+<p>References <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00104">spi_periph_dma::comm_sig</a>, <a class="el" href="spi_8h_source.html#l00156">spi_transaction::cpha</a>, <a class="el" href="spi_8h_source.html#l00155">spi_transaction::cpol</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00091">spi_periph_dma::dma</a>, <a class="el" href="spi_8h_source.html#l00157">spi_transaction::dss</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00336">get_transaction_signature()</a>, <a class="el" href="spi_8h_source.html#l00184">spi_periph::init_struct</a>, <a class="el" href="spi_8h_source.html#l00149">spi_transaction::input_buf</a>, <a class="el" href="spi_8h_source.html#l00151">spi_transaction::input_length</a>, <a class="el" href="spi_8h_source.html#l00150">spi_transaction::output_buf</a>, <a class="el" href="spi_8h_source.html#l00152">spi_transaction::output_length</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00092">spi_periph_dma::rcc_dma</a>, <a class="el" href="spi_8h_source.html#l00183">spi_periph::reg_addr</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00093">spi_periph_dma::rx_chan</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00095">spi_periph_dma::rx_chan_sel</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00498">spi_arch_int_enable()</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00458">spi_configure_dma()</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l01591">spi_slave_set_config()</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00111">SpiClearCPHA()</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00101">SpiClearCPOL()</a>, <a class="el" href="spi_8h_source.html#l00075">SPICphaEdge2</a>, <a class="el" href="spi_8h_source.html#l00084">SPICpolIdleHigh</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00090">spi_periph_dma::spidr</a>, <a class="el" href="spi_8h_source.html#l00107">SPIIdle</a>, <a class="el" href="spi_8h_source.html#l00108">SPIRunning</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00106">SpiSetCPHA()</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00096">SpiSetCPOL()</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00123">SpiSetDataSize()</a>, <a class="el" href="spi_8h_source.html#l00100">SPITransFailed</a>, <a class="el" href="spi_8h_source.html#l00097">SPITransPending</a>, <a class="el" href="spi_8h_source.html#l00098">SPITransRunning</a>, <a class="el" href="spi_8h_source.html#l00162">spi_transaction::status</a>, <a class="el" href="spi_8h_source.html#l00180">spi_periph::status</a>, <a class="el" href="spi_8h_source.html#l00176">spi_periph::trans</a>, <a class="el" href="spi_8h_source.html#l00177">spi_periph::trans_insert_idx</a>, <a class="el" href="std_8h_source.html#l00004">TRUE</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00094">spi_periph_dma::tx_chan</a>, and <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00096">spi_periph_dma::tx_chan_sel</a>.</p>
 
 <p>Referenced by <a class="el" href="bluegiga_8c_source.html#l00148">bluegiga_init()</a>, <a class="el" href="bluegiga_8c_source.html#l00250">bluegiga_receive()</a>, <a class="el" href="qr__code__spi__link_8c_source.html#l00042">qr_code_spi_link_init()</a>, and <a class="el" href="qr__code__spi__link_8c_source.html#l00058">qr_code_spi_link_periodic()</a>.</p>
 
-<p><div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-23" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-23-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-23-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-21-content" class="dyncontent" style="display:none;">
+<div id="dynsection-23-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="group__spi_gad2b96673b774298d3bd908e84ceb37c8_cgraph.png" border="0" usemap="#group__spi_gad2b96673b774298d3bd908e84ceb37c8_cgraph" alt=""/></div>
 <map name="group__spi_gad2b96673b774298d3bd908e84ceb37c8_cgraph" id="group__spi_gad2b96673b774298d3bd908e84ceb37c8_cgraph">
 <area shape="rect" id="node2" href="stm32_2mcu__periph_2spi__arch_8c.html#a0c1bcbefaf569036eb191e18ea849a7a" title="get_transaction_signature" alt="" coords="398,41,587,67"/><area shape="rect" id="node3" href="stm32_2mcu__periph_2spi__arch_8c.html#a92d285e5b860130426aa3ce1369df0c9" title="Enable DMA channel interrupts. " alt="" coords="191,41,339,67"/><area shape="rect" id="node4" href="stm32_2mcu__periph_2spi__arch_8c.html#a9678da2cc27199851a80fcf27a2761a3" title="spi_configure_dma" alt="" coords="194,91,337,118"/><area shape="rect" id="node5" href="stm32_2mcu__periph_2spi__arch_8c.html#ab59a690d8b69d3b2f0b4bf022dc2decf" title="spi_slave_set_config" alt="" coords="189,142,341,169"/><area shape="rect" id="node7" href="lpc21_2mcu__periph_2spi__arch_8c.html#ac8a1011a8423019c3b94e3a1a9744b6b" title="SpiClearCPHA" alt="" coords="210,193,321,219"/><area shape="rect" id="node8" href="lpc21_2mcu__periph_2spi__arch_8c.html#afddc6318837a832e08ac2096474632f8" title="SpiClearCPOL" alt="" coords="211,243,320,270"/><area shape="rect" id="node9" href="lpc21_2mcu__periph_2spi__arch_8c.html#a3f8c8db30e82381d4d60a444f1708517" title="SpiSetCPHA" alt="" coords="215,294,315,321"/><area shape="rect" id="node10" href="lpc21_2mcu__periph_2spi__arch_8c.html#a1126b0a8388d4a8eb8ded8bbe8ab940e" title="SpiSetCPOL" alt="" coords="216,345,315,371"/><area shape="rect" id="node11" href="lpc21_2mcu__periph_2spi__arch_8c.html#ad816c76c7fe692f51942efa74bdb1d86" title="Set the SPI data size to 8 or 16bit. " alt="" coords="204,395,327,422"/><area shape="rect" id="node6" href="stm32_2mcu__periph_2spi__arch_8c.html#af29aa7d9b5af1ef2b42450937767535f" title="Update SPI communication conf from generic paparazzi SPI transaction. " alt="" coords="389,142,596,169"/></map>
 </div>
 </p>
 
-<p><div id="dynsection-22" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-22-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-22-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-24" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-24-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-24-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-22-content" class="dyncontent" style="display:none;">
+<div id="dynsection-24-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="group__spi_gad2b96673b774298d3bd908e84ceb37c8_icgraph.png" border="0" usemap="#group__spi_gad2b96673b774298d3bd908e84ceb37c8_icgraph" alt=""/></div>
 <map name="group__spi_gad2b96673b774298d3bd908e84ceb37c8_icgraph" id="group__spi_gad2b96673b774298d3bd908e84ceb37c8_icgraph">
 <area shape="rect" id="node2" href="bluegiga_8h.html#ac8a60ccee96fbe718a27b6194f3f14e0" title="bluegiga_init" alt="" coords="545,9,648,35"/><area shape="rect" id="node4" href="bluegiga_8c.html#a50a0f979fdb5e8cb70090c6de5f203ac" title="bluegiga_receive" alt="" coords="216,34,345,61"/><area shape="rect" id="node6" href="qr__code__spi__link_8h.html#afe718e5de23ff690fa62b35bb69553f0" title="qr_code_spi_link_init" alt="" coords="205,85,357,111"/><area shape="rect" id="node7" href="qr__code__spi__link_8h.html#ae9d12bd06ade748707f69958324c82f3" title="qr_code_spi_link_periodic" alt="" coords="189,135,372,162"/><area shape="rect" id="node3" href="bluegiga__dl_8h.html#aeb085a7388c7ffe56ac4834ff104fb33" title="Init function. " alt="" coords="696,9,816,35"/><area shape="rect" id="node5" href="bluegiga_8c.html#a81dec5456e47bf1870486a85600c7e1c" title="trans_cb" alt="" coords="420,34,497,61"/></map>
@@ -1439,15 +1514,15 @@ tx_idx_buf</td>
 </dl>
 <p>Select a slave. </p>
 
-<p>Definition at line <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00491">491</a> of file <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html">spi_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00544">544</a> of file <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html">spi_arch.c</a>.</p>
 
-<p>References <a class="el" href="chibios_2mcu__periph_2gpio__arch_8h_source.html#l00108">gpio_clear()</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00445">SPI_SELECT_SLAVE0_PIN</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00444">SPI_SELECT_SLAVE0_PORT</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00448">SPI_SELECT_SLAVE1_PIN</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00447">SPI_SELECT_SLAVE1_PORT</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00451">SPI_SELECT_SLAVE2_PIN</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00450">SPI_SELECT_SLAVE2_PORT</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00454">SPI_SELECT_SLAVE3_PIN</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00453">SPI_SELECT_SLAVE3_PORT</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00457">SPI_SELECT_SLAVE4_PIN</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00456">SPI_SELECT_SLAVE4_PORT</a>, <a class="el" href="chimera_8h_source.html#l00554">SPI_SELECT_SLAVE5_PIN</a>, <a class="el" href="chimera_8h_source.html#l00553">SPI_SELECT_SLAVE5_PORT</a>, and <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00055">SpiSlaveSelect()</a>.</p>
+<p>References <a class="el" href="chibios_2mcu__periph_2gpio__arch_8h_source.html#l00108">gpio_clear()</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00523">SPI_SELECT_SLAVE0_PIN</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00522">SPI_SELECT_SLAVE0_PORT</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00526">SPI_SELECT_SLAVE1_PIN</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00525">SPI_SELECT_SLAVE1_PORT</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00529">SPI_SELECT_SLAVE2_PIN</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00528">SPI_SELECT_SLAVE2_PORT</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00532">SPI_SELECT_SLAVE3_PIN</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00531">SPI_SELECT_SLAVE3_PORT</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00535">SPI_SELECT_SLAVE4_PIN</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00534">SPI_SELECT_SLAVE4_PORT</a>, <a class="el" href="chimera_8h_source.html#l00554">SPI_SELECT_SLAVE5_PIN</a>, <a class="el" href="chimera_8h_source.html#l00553">SPI_SELECT_SLAVE5_PORT</a>, and <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00055">SpiSlaveSelect()</a>.</p>
 
-<p><div id="dynsection-23" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-23-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-23-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-25" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-25-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-25-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-23-content" class="dyncontent" style="display:none;">
+<div id="dynsection-25-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="group__spi_gad43916477f5d87b42eaa7d2099771568_cgraph.png" border="0" usemap="#group__spi_gad43916477f5d87b42eaa7d2099771568_cgraph" alt=""/></div>
 <map name="group__spi_gad43916477f5d87b42eaa7d2099771568_cgraph" id="group__spi_gad43916477f5d87b42eaa7d2099771568_cgraph">
 <area shape="rect" id="node2" href="chibios_2mcu__periph_2gpio__arch_8h.html#a302a5c9e7203669d0b9db8a2952fe009" title="Clear a gpio output to low level. " alt="" coords="194,5,281,32"/><area shape="rect" id="node3" href="lpc21_2mcu__periph_2spi__arch_8c.html#ab639bd461acc9159f2a8566bfe1ebdd0" title="SpiSlaveSelect" alt="" coords="179,56,296,83"/></map>
@@ -1479,28 +1554,28 @@ tx_idx_buf</td>
 </dl>
 <p>Unselect a slave. </p>
 
-<p>Definition at line <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00533">533</a> of file <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html">spi_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00586">586</a> of file <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html">spi_arch.c</a>.</p>
 
-<p>References <a class="el" href="chibios_2mcu__periph_2gpio__arch_8h_source.html#l00098">gpio_set()</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00445">SPI_SELECT_SLAVE0_PIN</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00444">SPI_SELECT_SLAVE0_PORT</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00448">SPI_SELECT_SLAVE1_PIN</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00447">SPI_SELECT_SLAVE1_PORT</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00451">SPI_SELECT_SLAVE2_PIN</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00450">SPI_SELECT_SLAVE2_PORT</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00454">SPI_SELECT_SLAVE3_PIN</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00453">SPI_SELECT_SLAVE3_PORT</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00457">SPI_SELECT_SLAVE4_PIN</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00456">SPI_SELECT_SLAVE4_PORT</a>, <a class="el" href="chimera_8h_source.html#l00554">SPI_SELECT_SLAVE5_PIN</a>, <a class="el" href="chimera_8h_source.html#l00553">SPI_SELECT_SLAVE5_PORT</a>, and <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00073">SpiSlaveUnselect()</a>.</p>
+<p>References <a class="el" href="chibios_2mcu__periph_2gpio__arch_8h_source.html#l00098">gpio_set()</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00523">SPI_SELECT_SLAVE0_PIN</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00522">SPI_SELECT_SLAVE0_PORT</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00526">SPI_SELECT_SLAVE1_PIN</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00525">SPI_SELECT_SLAVE1_PORT</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00529">SPI_SELECT_SLAVE2_PIN</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00528">SPI_SELECT_SLAVE2_PORT</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00532">SPI_SELECT_SLAVE3_PIN</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00531">SPI_SELECT_SLAVE3_PORT</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00535">SPI_SELECT_SLAVE4_PIN</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00534">SPI_SELECT_SLAVE4_PORT</a>, <a class="el" href="chimera_8h_source.html#l00554">SPI_SELECT_SLAVE5_PIN</a>, <a class="el" href="chimera_8h_source.html#l00553">SPI_SELECT_SLAVE5_PORT</a>, and <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00073">SpiSlaveUnselect()</a>.</p>
 
-<p>Referenced by <a class="el" href="max1168_8c_source.html#l00101">max1168_event()</a>, and <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00604">spi_init_slaves()</a>.</p>
+<p>Referenced by <a class="el" href="max1168_8c_source.html#l00101">max1168_event()</a>, and <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00657">spi_init_slaves()</a>.</p>
 
-<p><div id="dynsection-24" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-24-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-24-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-26" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-26-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-26-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-24-content" class="dyncontent" style="display:none;">
+<div id="dynsection-26-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="group__spi_ga99507da72932c02e5d8daf9a7170ed69_cgraph.png" border="0" usemap="#group__spi_ga99507da72932c02e5d8daf9a7170ed69_cgraph" alt=""/></div>
 <map name="group__spi_ga99507da72932c02e5d8daf9a7170ed69_cgraph" id="group__spi_ga99507da72932c02e5d8daf9a7170ed69_cgraph">
 <area shape="rect" id="node2" href="chibios_2mcu__periph_2gpio__arch_8h.html#a0da8ef247730680b4ffa595d11069051" title="Set a gpio output to high level. " alt="" coords="223,5,299,32"/><area shape="rect" id="node3" href="lpc21_2mcu__periph_2spi__arch_8c.html#af3a0a783f898c0211f2c0e5498c746a0" title="SpiSlaveUnselect" alt="" coords="195,56,328,83"/></map>
 </div>
 </p>
 
-<p><div id="dynsection-25" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-25-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-25-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-27" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-27-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-27-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-25-content" class="dyncontent" style="display:none;">
+<div id="dynsection-27-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="group__spi_ga99507da72932c02e5d8daf9a7170ed69_icgraph.png" border="0" usemap="#group__spi_ga99507da72932c02e5d8daf9a7170ed69_icgraph" alt=""/></div>
 <map name="group__spi_ga99507da72932c02e5d8daf9a7170ed69_icgraph" id="group__spi_ga99507da72932c02e5d8daf9a7170ed69_icgraph">
 <area shape="rect" id="node2" href="max1168_8h.html#a957376acfc8fbd7b917f20a18e6c5a6c" title="max1168_event" alt="" coords="195,56,320,83"/><area shape="rect" id="node5" href="group__spi.html#gafc9125c5764a6749703ae4f1303a16f3" title="Initialize all used slaves and unselect them. " alt="" coords="201,107,314,133"/><area shape="rect" id="node3" href="imu__b2_8h.html#ade46fe011019a8bae5cb916f34c03f9b" title="imu_b2_event" alt="" coords="381,5,493,32"/><area shape="rect" id="node4" href="imu__hbmini_8h.html#a5b9ae3abc04f091d942553dc17b589c8" title="imu_hbmini_event" alt="" coords="368,56,507,83"/><area shape="rect" id="node6" href="group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b" title="Microcontroller peripherals initialization. " alt="" coords="399,107,475,133"/><area shape="rect" id="node7" href="fixedwing_2main__fbw_8h.html#ad86b7fe577a2414df2c7a5a9222aa45a" title="init_fbw" alt="" coords="560,56,629,83"/><area shape="rect" id="node9" href="lpc21_2uart__tunnel_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="567,107,622,133"/><area shape="rect" id="node10" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="555,157,635,184"/><area shape="rect" id="node8" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="715,56,785,83"/><area shape="rect" id="node11" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="723,132,777,159"/><area shape="rect" id="node12" href="nps__autopilot__rotorcraft_8c.html#a3348493e992edd2442581c1d09446b4b" title="nps_autopilot_init" alt="" coords="683,183,817,209"/><area shape="rect" id="node13" href="nps__main__hitl_8c.html#a72ef549ee35deec8c017e83d9de38f66" title="nps_radio_and_autopilot_init" alt="" coords="865,183,1069,209"/></map>
@@ -1534,13 +1609,13 @@ tx_idx_buf</td>
 
 <p>Definition at line <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00703">703</a> of file <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html">spi_arch.c</a>.</p>
 
-<p>References <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00335">SpiSlaveStart()</a>, <a class="el" href="spi_8h_source.html#l00170">spi_periph::trans</a>, <a class="el" href="spi_8h_source.html#l00172">spi_periph::trans_extract_idx</a>, and <a class="el" href="spi_8h_source.html#l00171">spi_periph::trans_insert_idx</a>.</p>
+<p>References <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00335">SpiSlaveStart()</a>, <a class="el" href="spi_8h_source.html#l00176">spi_periph::trans</a>, <a class="el" href="spi_8h_source.html#l00178">spi_periph::trans_extract_idx</a>, and <a class="el" href="spi_8h_source.html#l00177">spi_periph::trans_insert_idx</a>.</p>
 
-<p><div id="dynsection-26" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-26-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-26-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-28" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-28-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-28-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-26-content" class="dyncontent" style="display:none;">
+<div id="dynsection-28-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="group__spi_ga6654c5e4a8dd36724bef153d376476b8_cgraph.png" border="0" usemap="#group__spi_ga6654c5e4a8dd36724bef153d376476b8_cgraph" alt=""/></div>
 <map name="group__spi_ga6654c5e4a8dd36724bef153d376476b8_cgraph" id="group__spi_ga6654c5e4a8dd36724bef153d376476b8_cgraph">
 <area shape="rect" id="node2" href="lpc21_2mcu__periph_2spi__arch_8c.html#a377ad6b429dbff1ca278ff6262a2914d" title="SpiSlaveStart" alt="" coords="165,56,275,83"/><area shape="rect" id="node3" href="lpc21_2mcu__periph_2spi__arch_8c.html#a4bb68d5cebfe43c482fc48ca2a1ed6de" title="SpiEnable" alt="" coords="331,5,417,32"/><area shape="rect" id="node4" href="lpc21_2mcu__periph_2spi__arch_8c.html#acb7e2c245885f1b82d6791148172e592" title="SpiEnableTxi" alt="" coords="323,56,425,83"/><area shape="rect" id="node5" href="lpc21_2mcu__periph_2spi__arch_8c.html#a5c38f72da3e7ef54561ec617cdde67e5" title="SpiInitBuf" alt="" coords="333,107,415,133"/><area shape="rect" id="node6" href="lpc21_2mcu__periph_2spi__arch_8c.html#a3e9017646922bf67dc34451d35696314" title="SpiTransmit" alt="" coords="473,107,569,133"/><area shape="rect" id="node7" href="lpc21_2mcu__periph_2spi__arch_8c.html#a945eb366ac13567f396285aaa6381cec" title="SpiDisableTxi" alt="" coords="617,81,724,108"/><area shape="rect" id="node8" href="lpc21_2mcu__periph_2spi__arch_8c.html#af00370ab8f8ea4fe1ac8bf434230a398" title="SpiSend" alt="" coords="633,132,708,159"/></map>
@@ -1594,17 +1669,17 @@ tx_idx_buf</td>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00458">458</a> of file <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html">spi_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00511">511</a> of file <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html">spi_arch.c</a>.</p>
 
-<p>References <a class="el" href="armVIC_8c_source.html#l00033">disableIRQ()</a>, <a class="el" href="spi_8h_source.html#l00151">spi_transaction::dss</a>, <a class="el" href="armVIC_8c_source.html#l00051">enableIRQ()</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="serial_8c_source.html#l00026">fd</a>, <a class="el" href="nps__radio__control__spektrum_8c_source.html#l00105">idx</a>, <a class="el" href="spi_8h_source.html#l00178">spi_periph::init_struct</a>, <a class="el" href="spi_8h_source.html#l00143">spi_transaction::input_buf</a>, <a class="el" href="spi_8h_source.html#l00145">spi_transaction::input_length</a>, <a class="el" href="rotorcraft_2main__fbw_8c_source.html#l00053">Max</a>, <a class="el" href="spi_8h_source.html#l00144">spi_transaction::output_buf</a>, <a class="el" href="spi_8h_source.html#l00146">spi_transaction::output_length</a>, <a class="el" href="spi_8h_source.html#l00177">spi_periph::reg_addr</a>, <a class="el" href="spi_8h_source.html#l00148">spi_transaction::select</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00510">spi_arch_int_disable()</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00498">spi_arch_int_enable()</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00539">spi_start_dma_transaction()</a>, <a class="el" href="spi_8h_source.html#l00163">SPI_TRANSACTION_QUEUE_LEN</a>, <a class="el" href="spi_8h_source.html#l00085">SPIDss16bit</a>, <a class="el" href="spi_8h_source.html#l00101">SPIIdle</a>, <a class="el" href="spi_8h_source.html#l00057">SPISelectUnselect</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00249">SpiStart()</a>, <a class="el" href="spi_8h_source.html#l00094">SPITransFailed</a>, <a class="el" href="spi_8h_source.html#l00091">SPITransPending</a>, <a class="el" href="spi_8h_source.html#l00093">SPITransSuccess</a>, <a class="el" href="spi_8h_source.html#l00059">SPIUnselect</a>, <a class="el" href="spi_8h_source.html#l00156">spi_transaction::status</a>, <a class="el" href="spi_8h_source.html#l00174">spi_periph::status</a>, <a class="el" href="spi_8h_source.html#l00181">spi_periph::suspend</a>, <a class="el" href="spi_8h_source.html#l00170">spi_periph::trans</a>, <a class="el" href="spi_8h_source.html#l00172">spi_periph::trans_extract_idx</a>, <a class="el" href="spi_8h_source.html#l00171">spi_periph::trans_insert_idx</a>, and <a class="el" href="std_8h_source.html#l00004">TRUE</a>.</p>
+<p>References <a class="el" href="armVIC_8c_source.html#l00033">disableIRQ()</a>, <a class="el" href="spi_8h_source.html#l00157">spi_transaction::dss</a>, <a class="el" href="armVIC_8c_source.html#l00051">enableIRQ()</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="serial_8c_source.html#l00026">fd</a>, <a class="el" href="nps__radio__control__spektrum_8c_source.html#l00105">idx</a>, <a class="el" href="spi_8h_source.html#l00184">spi_periph::init_struct</a>, <a class="el" href="spi_8h_source.html#l00149">spi_transaction::input_buf</a>, <a class="el" href="spi_8h_source.html#l00151">spi_transaction::input_length</a>, <a class="el" href="rotorcraft_2main__fbw_8c_source.html#l00053">Max</a>, <a class="el" href="spi_8h_source.html#l00150">spi_transaction::output_buf</a>, <a class="el" href="spi_8h_source.html#l00152">spi_transaction::output_length</a>, <a class="el" href="spi_8h_source.html#l00183">spi_periph::reg_addr</a>, <a class="el" href="spi_8h_source.html#l00154">spi_transaction::select</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00510">spi_arch_int_disable()</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00498">spi_arch_int_enable()</a>, <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00539">spi_start_dma_transaction()</a>, <a class="el" href="spi_8h_source.html#l00169">SPI_TRANSACTION_QUEUE_LEN</a>, <a class="el" href="spi_8h_source.html#l00091">SPIDss16bit</a>, <a class="el" href="spi_8h_source.html#l00107">SPIIdle</a>, <a class="el" href="spi_8h_source.html#l00063">SPISelectUnselect</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00249">SpiStart()</a>, <a class="el" href="spi_8h_source.html#l00100">SPITransFailed</a>, <a class="el" href="spi_8h_source.html#l00097">SPITransPending</a>, <a class="el" href="spi_8h_source.html#l00099">SPITransSuccess</a>, <a class="el" href="spi_8h_source.html#l00065">SPIUnselect</a>, <a class="el" href="spi_8h_source.html#l00162">spi_transaction::status</a>, <a class="el" href="spi_8h_source.html#l00180">spi_periph::status</a>, <a class="el" href="spi_8h_source.html#l00187">spi_periph::suspend</a>, <a class="el" href="spi_8h_source.html#l00176">spi_periph::trans</a>, <a class="el" href="spi_8h_source.html#l00178">spi_periph::trans_extract_idx</a>, <a class="el" href="spi_8h_source.html#l00177">spi_periph::trans_insert_idx</a>, and <a class="el" href="std_8h_source.html#l00004">TRUE</a>.</p>
 
-<p>Referenced by <a class="el" href="ads1220_8c_source.html#l00102">ads1220_configure()</a>, <a class="el" href="ads1220_8c_source.html#l00120">ads1220_read()</a>, <a class="el" href="ads1220_8c_source.html#l00080">ads1220_send_config()</a>, <a class="el" href="adxl345__spi_8c_source.html#l00118">adxl345_spi_read()</a>, <a class="el" href="adxl345__spi_8c_source.html#l00069">adxl345_spi_write_to_reg()</a>, <a class="el" href="cyrf6936_8c_source.html#l00312">cyrf6936_read_block()</a>, <a class="el" href="cyrf6936_8c_source.html#l00278">cyrf6936_write_block()</a>, <a class="el" href="eeprom25AA256_8c_source.html#l00072">eeprom25AA256_read()</a>, <a class="el" href="high__speed__logger__direct__memory_8c_source.html#l01095">high_speed_logger_direct_memory_init()</a>, <a class="el" href="high__speed__logger__spi__link_8c_source.html#l00055">high_speed_logger_spi_link_periodic()</a>, <a class="el" href="imu__krooz__memsic_8c_source.html#l00158">imu_krooz_event()</a>, <a class="el" href="ins__vn100_8c_source.html#l00109">ins_configure()</a>, <a class="el" href="l3gd20__spi_8c_source.html#l00122">l3gd20_spi_read()</a>, <a class="el" href="l3gd20__spi_8c_source.html#l00074">l3gd20_spi_send_config()</a>, <a class="el" href="l3gd20__spi_8c_source.html#l00064">l3gd20_spi_write_to_reg()</a>, <a class="el" href="lis302dl__spi_8c_source.html#l00128">lis302dl_spi_read()</a>, <a class="el" href="lis302dl__spi_8c_source.html#l00074">lis302dl_spi_send_config()</a>, <a class="el" href="lis302dl__spi_8c_source.html#l00064">lis302dl_spi_write_to_reg()</a>, <a class="el" href="lsm303d__spi_8c_source.html#l00151">lsm303d_spi_read()</a>, <a class="el" href="lsm303d__spi_8c_source.html#l00080">lsm303d_spi_send_config()</a>, <a class="el" href="lsm303d__spi_8c_source.html#l00070">lsm303d_spi_tx_reg()</a>, <a class="el" href="max1168_8c_source.html#l00087">max1168_read()</a>, <a class="el" href="max7456_8c_source.html#l00205">max7456_event()</a>, <a class="el" href="max7456_8c_source.html#l00119">max7456_periodic()</a>, <a class="el" href="mcp355x_8c_source.html#l00055">mcp355x_read()</a>, <a class="el" href="high__speed__logger__direct__memory_8c_source.html#l00319">memory_completly_erase()</a>, <a class="el" href="high__speed__logger__direct__memory_8c_source.html#l00293">memory_erase_4k()</a>, <a class="el" href="high__speed__logger__direct__memory_8c_source.html#l00200">memory_read_id()</a>, <a class="el" href="high__speed__logger__direct__memory_8c_source.html#l00258">memory_read_status_1()</a>, <a class="el" href="high__speed__logger__direct__memory_8c_source.html#l00377">memory_read_values()</a>, <a class="el" href="high__speed__logger__direct__memory_8c_source.html#l00239">memory_send_wrdi()</a>, <a class="el" href="high__speed__logger__direct__memory_8c_source.html#l00220">memory_send_wren()</a>, <a class="el" href="high__speed__logger__direct__memory_8c_source.html#l00343">memory_write_values()</a>, <a class="el" href="mpu60x0__spi_8c_source.html#l00097">mpu60x0_spi_read()</a>, <a class="el" href="mpu60x0__spi_8c_source.html#l00077">mpu60x0_spi_start_configure()</a>, <a class="el" href="mpu60x0__spi_8c_source.html#l00066">mpu60x0_spi_write_to_reg()</a>, <a class="el" href="mpu9250__spi_8c_source.html#l00096">mpu9250_spi_read()</a>, <a class="el" href="mpu9250__spi_8c_source.html#l00077">mpu9250_spi_start_configure()</a>, <a class="el" href="mpu9250__spi_8c_source.html#l00066">mpu9250_spi_write_to_reg()</a>, <a class="el" href="imu__aspirin__2__spi_8c_source.html#l00291">mpu_wait_slave4_ready()</a>, <a class="el" href="ms2100_8c_source.html#l00105">ms2100_event()</a>, <a class="el" href="ms2100_8c_source.html#l00096">ms2100_read()</a>, <a class="el" href="ms5611__spi_8c_source.html#l00133">ms5611_spi_event()</a>, <a class="el" href="ms5611__spi_8c_source.html#l00092">ms5611_spi_periodic_check()</a>, <a class="el" href="ms5611__spi_8c_source.html#l00065">ms5611_spi_start_configure()</a>, <a class="el" href="ms5611__spi_8c_source.html#l00076">ms5611_spi_start_conversion()</a>, <a class="el" href="max7456_8c_source.html#l00318">osd_put_s()</a>, <a class="el" href="sdcard__spi_8c_source.html#l00638">sdcard_spi_multiwrite_next()</a>, <a class="el" href="sdcard__spi_8c_source.html#l00666">sdcard_spi_multiwrite_stop()</a>, <a class="el" href="sdcard__spi_8c_source.html#l00099">sdcard_spi_periodic()</a>, <a class="el" href="sdcard__spi_8c_source.html#l00543">sdcard_spi_request_bytes()</a>, <a class="el" href="sdcard__spi_8c_source.html#l00502">sdcard_spi_send_app_cmd()</a>, <a class="el" href="sdcard__spi_8c_source.html#l00467">sdcard_spi_send_cmd()</a>, <a class="el" href="sdcard__spi_8c_source.html#l00156">sdcard_spi_spicallback()</a>, <a class="el" href="sonar__bebop_8c_source.html#l00129">sonar_bebop_read()</a>, <a class="el" href="sst25vfxxxx_8c_source.html#l00064">sst25vfxxxx_after_cb()</a>, <a class="el" href="sst25vfxxxx_8c_source.html#l00240">sst25vfxxxx_block_write_en()</a>, <a class="el" href="sst25vfxxxx_8c_source.html#l00258">sst25vfxxxx_chip_erase()</a>, <a class="el" href="sst25vfxxxx_8c_source.html#l00300">sst25vfxxxx_read()</a>, <a class="el" href="sst25vfxxxx_8c_source.html#l00220">sst25vfxxxx_read_id()</a>, <a class="el" href="sst25vfxxxx_8c_source.html#l00276">sst25vfxxxx_write()</a>, <a class="el" href="ins__vn100_8c_source.html#l00140">vn100_periodic_task()</a>, <a class="el" href="w5100_8c_source.html#l00130">w5100_get()</a>, and <a class="el" href="w5100_8c_source.html#l00117">w5100_set()</a>.</p>
+<p>Referenced by <a class="el" href="ads1220_8c_source.html#l00102">ads1220_configure()</a>, <a class="el" href="ads1220_8c_source.html#l00120">ads1220_read()</a>, <a class="el" href="ads1220_8c_source.html#l00080">ads1220_send_config()</a>, <a class="el" href="adxl345__spi_8c_source.html#l00118">adxl345_spi_read()</a>, <a class="el" href="adxl345__spi_8c_source.html#l00069">adxl345_spi_write_to_reg()</a>, <a class="el" href="cyrf6936_8c_source.html#l00312">cyrf6936_read_block()</a>, <a class="el" href="cyrf6936_8c_source.html#l00278">cyrf6936_write_block()</a>, <a class="el" href="eeprom25AA256_8c_source.html#l00072">eeprom25AA256_read()</a>, <a class="el" href="high__speed__logger__direct__memory_8c_source.html#l01095">high_speed_logger_direct_memory_init()</a>, <a class="el" href="high__speed__logger__spi__link_8c_source.html#l00055">high_speed_logger_spi_link_periodic()</a>, <a class="el" href="imu__krooz__memsic_8c_source.html#l00158">imu_krooz_event()</a>, <a class="el" href="ins__vn100_8c_source.html#l00109">ins_configure()</a>, <a class="el" href="l3gd20__spi_8c_source.html#l00122">l3gd20_spi_read()</a>, <a class="el" href="l3gd20__spi_8c_source.html#l00074">l3gd20_spi_send_config()</a>, <a class="el" href="l3gd20__spi_8c_source.html#l00064">l3gd20_spi_write_to_reg()</a>, <a class="el" href="lis302dl__spi_8c_source.html#l00128">lis302dl_spi_read()</a>, <a class="el" href="lis302dl__spi_8c_source.html#l00074">lis302dl_spi_send_config()</a>, <a class="el" href="lis302dl__spi_8c_source.html#l00064">lis302dl_spi_write_to_reg()</a>, <a class="el" href="lsm303d__spi_8c_source.html#l00151">lsm303d_spi_read()</a>, <a class="el" href="lsm303d__spi_8c_source.html#l00080">lsm303d_spi_send_config()</a>, <a class="el" href="lsm303d__spi_8c_source.html#l00070">lsm303d_spi_tx_reg()</a>, <a class="el" href="max1168_8c_source.html#l00087">max1168_read()</a>, <a class="el" href="max7456_8c_source.html#l00204">max7456_event()</a>, <a class="el" href="max7456_8c_source.html#l00119">max7456_periodic()</a>, <a class="el" href="mcp355x_8c_source.html#l00055">mcp355x_read()</a>, <a class="el" href="high__speed__logger__direct__memory_8c_source.html#l00319">memory_completly_erase()</a>, <a class="el" href="high__speed__logger__direct__memory_8c_source.html#l00293">memory_erase_4k()</a>, <a class="el" href="high__speed__logger__direct__memory_8c_source.html#l00200">memory_read_id()</a>, <a class="el" href="high__speed__logger__direct__memory_8c_source.html#l00258">memory_read_status_1()</a>, <a class="el" href="high__speed__logger__direct__memory_8c_source.html#l00377">memory_read_values()</a>, <a class="el" href="high__speed__logger__direct__memory_8c_source.html#l00239">memory_send_wrdi()</a>, <a class="el" href="high__speed__logger__direct__memory_8c_source.html#l00220">memory_send_wren()</a>, <a class="el" href="high__speed__logger__direct__memory_8c_source.html#l00343">memory_write_values()</a>, <a class="el" href="mpu60x0__spi_8c_source.html#l00115">mpu60x0_spi_read()</a>, <a class="el" href="mpu60x0__spi_8c_source.html#l00077">mpu60x0_spi_start_configure()</a>, <a class="el" href="mpu60x0__spi_8c_source.html#l00066">mpu60x0_spi_write_to_reg()</a>, <a class="el" href="mpu9250__spi_8c_source.html#l00096">mpu9250_spi_read()</a>, <a class="el" href="mpu9250__spi_8c_source.html#l00077">mpu9250_spi_start_configure()</a>, <a class="el" href="mpu9250__spi_8c_source.html#l00066">mpu9250_spi_write_to_reg()</a>, <a class="el" href="imu__aspirin__2__spi_8c_source.html#l00291">mpu_wait_slave4_ready()</a>, <a class="el" href="ms2100_8c_source.html#l00105">ms2100_event()</a>, <a class="el" href="ms2100_8c_source.html#l00096">ms2100_read()</a>, <a class="el" href="ms5611__spi_8c_source.html#l00133">ms5611_spi_event()</a>, <a class="el" href="ms5611__spi_8c_source.html#l00092">ms5611_spi_periodic_check()</a>, <a class="el" href="ms5611__spi_8c_source.html#l00065">ms5611_spi_start_configure()</a>, <a class="el" href="ms5611__spi_8c_source.html#l00076">ms5611_spi_start_conversion()</a>, <a class="el" href="max7456_8c_source.html#l00317">osd_put_s()</a>, <a class="el" href="pmw3901_8c_source.html#l00055">readRegister_nonblocking()</a>, <a class="el" href="sdcard__spi_8c_source.html#l00638">sdcard_spi_multiwrite_next()</a>, <a class="el" href="sdcard__spi_8c_source.html#l00666">sdcard_spi_multiwrite_stop()</a>, <a class="el" href="sdcard__spi_8c_source.html#l00099">sdcard_spi_periodic()</a>, <a class="el" href="sdcard__spi_8c_source.html#l00543">sdcard_spi_request_bytes()</a>, <a class="el" href="sdcard__spi_8c_source.html#l00502">sdcard_spi_send_app_cmd()</a>, <a class="el" href="sdcard__spi_8c_source.html#l00467">sdcard_spi_send_cmd()</a>, <a class="el" href="sdcard__spi_8c_source.html#l00156">sdcard_spi_spicallback()</a>, <a class="el" href="sonar__bebop_8c_source.html#l00150">sonar_bebop_read()</a>, <a class="el" href="spi_8h_source.html#l00284">spi_blocking_transceive()</a>, <a class="el" href="sst25vfxxxx_8c_source.html#l00064">sst25vfxxxx_after_cb()</a>, <a class="el" href="sst25vfxxxx_8c_source.html#l00240">sst25vfxxxx_block_write_en()</a>, <a class="el" href="sst25vfxxxx_8c_source.html#l00258">sst25vfxxxx_chip_erase()</a>, <a class="el" href="sst25vfxxxx_8c_source.html#l00300">sst25vfxxxx_read()</a>, <a class="el" href="sst25vfxxxx_8c_source.html#l00220">sst25vfxxxx_read_id()</a>, <a class="el" href="sst25vfxxxx_8c_source.html#l00276">sst25vfxxxx_write()</a>, <a class="el" href="ins__vn100_8c_source.html#l00140">vn100_periodic_task()</a>, <a class="el" href="w5100_8c_source.html#l00130">w5100_get()</a>, and <a class="el" href="w5100_8c_source.html#l00117">w5100_set()</a>.</p>
 
-<p><div id="dynsection-27" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-27-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-27-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-29" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-29-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-29-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-27-content" class="dyncontent" style="display:none;">
+<div id="dynsection-29-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="group__spi_ga5d383931766cb373ebad0b8bc26d439d_cgraph.png" border="0" usemap="#group__spi_ga5d383931766cb373ebad0b8bc26d439d_cgraph" alt=""/></div>
 <map name="group__spi_ga5d383931766cb373ebad0b8bc26d439d_cgraph" id="group__spi_ga5d383931766cb373ebad0b8bc26d439d_cgraph">
 <area shape="rect" id="node2" href="armVIC_8c.html#a495b577a0ad5c4dc620339b2edff1ac5" title="disableIRQ" alt="" coords="196,5,284,32"/><area shape="rect" id="node5" href="armVIC_8c.html#adf9d98445ae51a2278cbe9e719f579f1" title="enableIRQ" alt="" coords="197,56,283,83"/><area shape="rect" id="node6" href="stm32_2mcu__periph_2spi__arch_8c.html#a42f17f52b327c1192801fc39493f43c5" title="Disable DMA channel interrupts. " alt="" coords="165,107,315,133"/><area shape="rect" id="node7" href="stm32_2mcu__periph_2spi__arch_8c.html#a92d285e5b860130426aa3ce1369df0c9" title="Enable DMA channel interrupts. " alt="" coords="166,157,314,184"/><area shape="rect" id="node8" href="stm32_2mcu__periph_2spi__arch_8c.html#a87e230295cb1339876faa6f6986a44e9" title="Start a new transaction with DMA. " alt="" coords="144,208,336,235"/><area shape="rect" id="node14" href="lpc21_2mcu__periph_2spi__arch_8c.html#abcda020ad14ec4732c4ffff453060fff" title="SpiStart" alt="" coords="203,512,277,539"/><area shape="rect" id="node3" href="armVIC_8c.html#a07a90dd2662e1a51c45600eccd2661c4" title="__get_cpsr" alt="" coords="442,5,533,32"/><area shape="rect" id="node4" href="armVIC_8c.html#a2695574f2b9c353bb88ce1239a0ab9ec" title="__set_cpsr" alt="" coords="442,56,533,83"/><area shape="rect" id="node9" href="stm32_2mcu__periph_2spi__arch_8c.html#a0c1bcbefaf569036eb191e18ea849a7a" title="get_transaction_signature" alt="" coords="393,107,582,133"/><area shape="rect" id="node10" href="stm32_2mcu__periph_2spi__arch_8c.html#af29aa7d9b5af1ef2b42450937767535f" title="Update SPI communication conf from generic paparazzi SPI transaction. " alt="" coords="384,157,591,184"/><area shape="rect" id="node11" href="stm32_2mcu__periph_2spi__arch_8c.html#a9678da2cc27199851a80fcf27a2761a3" title="spi_configure_dma" alt="" coords="416,208,559,235"/><area shape="rect" id="node12" href="stm32_2mcu__periph_2spi__arch_8c.html#ab639bd461acc9159f2a8566bfe1ebdd0" title="SpiSlaveSelect" alt="" coords="429,259,546,285"/><area shape="rect" id="node13" href="chibios_2mcu__periph_2gpio__arch_8h.html#a302a5c9e7203669d0b9db8a2952fe009" title="Clear a gpio output to low level. " alt="" coords="643,259,730,285"/><area shape="rect" id="node15" href="lpc21_2mcu__periph_2spi__arch_8c.html#ac8a1011a8423019c3b94e3a1a9744b6b" title="SpiClearCPHA" alt="" coords="432,715,543,741"/><area shape="rect" id="node16" href="lpc21_2mcu__periph_2spi__arch_8c.html#afddc6318837a832e08ac2096474632f8" title="SpiClearCPOL" alt="" coords="433,765,542,792"/><area shape="rect" id="node17" href="lpc21_2mcu__periph_2spi__arch_8c.html#a4bb68d5cebfe43c482fc48ca2a1ed6de" title="SpiEnable" alt="" coords="445,309,530,336"/><area shape="rect" id="node18" href="lpc21_2mcu__periph_2spi__arch_8c.html#a2f597567924a3000e5afb340e4aa5592" title="SpiEnableRti" alt="" coords="437,360,538,387"/><area shape="rect" id="node19" href="lpc21_2mcu__periph_2spi__arch_8c.html#acb7e2c245885f1b82d6791148172e592" title="SpiEnableTxi" alt="" coords="436,411,539,437"/><area shape="rect" id="node20" href="lpc21_2mcu__periph_2spi__arch_8c.html#a5c38f72da3e7ef54561ec617cdde67e5" title="SpiInitBuf" alt="" coords="446,461,529,488"/><area shape="rect" id="node24" href="lpc21_2mcu__periph_2spi__arch_8c.html#a3f8c8db30e82381d4d60a444f1708517" title="SpiSetCPHA" alt="" coords="437,512,537,539"/><area shape="rect" id="node25" href="lpc21_2mcu__periph_2spi__arch_8c.html#a1126b0a8388d4a8eb8ded8bbe8ab940e" title="SpiSetCPOL" alt="" coords="438,563,537,589"/><area shape="rect" id="node26" href="lpc21_2mcu__periph_2spi__arch_8c.html#ad816c76c7fe692f51942efa74bdb1d86" title="Set the SPI data size to 8 or 16bit. " alt="" coords="426,613,549,640"/><area shape="rect" id="node27" href="lpc21_2mcu__periph_2spi__arch_8c.html#ab639bd461acc9159f2a8566bfe1ebdd0" title="SpiSlaveSelect" alt="" coords="429,664,546,691"/><area shape="rect" id="node21" href="lpc21_2mcu__periph_2spi__arch_8c.html#a3e9017646922bf67dc34451d35696314" title="SpiTransmit" alt="" coords="639,461,735,488"/><area shape="rect" id="node22" href="lpc21_2mcu__periph_2spi__arch_8c.html#a945eb366ac13567f396285aaa6381cec" title="SpiDisableTxi" alt="" coords="783,436,889,463"/><area shape="rect" id="node23" href="lpc21_2mcu__periph_2spi__arch_8c.html#af00370ab8f8ea4fe1ac8bf434230a398" title="SpiSend" alt="" coords="799,487,873,513"/></map>
@@ -1623,11 +1698,11 @@ tx_idx_buf</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000019">Todo:</a></b></dt><dd>SPI error struct </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000023">Todo:</a></b></dt><dd>SPI error struct </dd></dl>
 
 <p>Definition at line <a class="el" href="spi_8c_source.html#l00035">35</a> of file <a class="el" href="spi_8c_source.html">spi.c</a>.</p>
 
-<p>Referenced by <a class="el" href="sonar__bebop_8c_source.html#l00129">sonar_bebop_read()</a>, <a class="el" href="linux_2mcu__periph_2spi__arch_8c_source.html#l00136">spi0_arch_init()</a>, and <a class="el" href="spi_8c_source.html#l00037">spi0_init()</a>.</p>
+<p>Referenced by <a class="el" href="sonar__bebop_8c_source.html#l00150">sonar_bebop_read()</a>, <a class="el" href="linux_2mcu__periph_2spi__arch_8c_source.html#l00137">spi0_arch_init()</a>, and <a class="el" href="spi_8c_source.html#l00037">spi0_init()</a>.</p>
 
 </div>
 </div>
@@ -1646,7 +1721,7 @@ tx_idx_buf</td>
 
 <p>Definition at line <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l00967">967</a> of file <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html">spi_arch.c</a>.</p>
 
-<p>Referenced by <a class="el" href="imu__px4fmu_8c_source.html#l00061">imu_px4fmu_init()</a>, <a class="el" href="mcp355x_8c_source.html#l00055">mcp355x_read()</a>, <a class="el" href="qr__code__spi__link_8c_source.html#l00042">qr_code_spi_link_init()</a>, <a class="el" href="qr__code__spi__link_8c_source.html#l00058">qr_code_spi_link_periodic()</a>, <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00352">spi1_arch_init()</a>, <a class="el" href="spi_8c_source.html#l00048">spi1_init()</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00455">spi1_ISR()</a>, and <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00340">thd_spi1()</a>.</p>
+<p>Referenced by <a class="el" href="imu__px4fmu_8c_source.html#l00061">imu_px4fmu_init()</a>, <a class="el" href="mcp355x_8c_source.html#l00055">mcp355x_read()</a>, <a class="el" href="qr__code__spi__link_8c_source.html#l00042">qr_code_spi_link_init()</a>, <a class="el" href="qr__code__spi__link_8c_source.html#l00058">qr_code_spi_link_periodic()</a>, <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00366">spi1_arch_init()</a>, <a class="el" href="spi_8c_source.html#l00048">spi1_init()</a>, <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c_source.html#l00455">spi1_ISR()</a>, and <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00354">thd_spi1()</a>.</p>
 
 </div>
 </div>
@@ -1665,7 +1740,7 @@ tx_idx_buf</td>
 
 <p>Definition at line <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html#l01004">1004</a> of file <a class="el" href="stm32_2mcu__periph_2spi__arch_8c_source.html">spi_arch.c</a>.</p>
 
-<p>Referenced by <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00391">spi2_arch_init()</a>, <a class="el" href="spi_8c_source.html#l00059">spi2_init()</a>, and <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00379">thd_spi2()</a>.</p>
+<p>Referenced by <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00405">spi2_arch_init()</a>, <a class="el" href="spi_8c_source.html#l00059">spi2_init()</a>, and <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00393">thd_spi2()</a>.</p>
 
 </div>
 </div>
@@ -1674,7 +1749,7 @@ tx_idx_buf</td>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Sep 12 2018 02:04:02 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:03:45 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

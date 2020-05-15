@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -109,7 +109,8 @@ $(document).ready(function(){initNavTree('mt9f002_8h.html','');});
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">mt9f002.h File Reference</div>  </div>
 </div><!--header-->
@@ -119,6 +120,7 @@ $(document).ready(function(){initNavTree('mt9f002_8h.html','');});
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;std.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="i2c_8h_source.html">mcu_periph/i2c.h</a>&quot;</code><br />
+<code>#include &quot;generated/airframe.h&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for mt9f002.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -135,7 +137,7 @@ $(document).ready(function(){initNavTree('mt9f002_8h.html','');});
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mt9f002_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2boards_2bebop_2mt9f002_8hdep" alt=""/></div>
 <map name="sw_2airborne_2boards_2bebop_2mt9f002_8hdep" id="sw_2airborne_2boards_2bebop_2mt9f002_8hdep">
-<area shape="rect" id="node2" href="bebop_2board_8c.html" title="Bebop specific board initialization function. " alt="" coords="5,206,148,247"/><area shape="rect" id="node3" href="mt9f002_8c.html" title="Initialization of MT9F002 chip and options to change settings. " alt="" coords="172,206,315,247"/><area shape="rect" id="node4" href="bebop_8h.html" title="sw/airborne/boards\l/bebop.h" alt="" coords="339,102,481,143"/><area shape="rect" id="node6" href="bebop__ae__awb_8c.html" title="sw/airborne/modules\l/computer_vision/bebop\l_ae_awb.c" alt="" coords="505,199,680,255"/><area shape="rect" id="node7" href="disco_2board_8c.html" title="Disco specific board initialization function. " alt="" coords="704,206,847,247"/><area shape="rect" id="node8" href="disco_8h.html" title="sw/airborne/boards\l/disco.h" alt="" coords="576,102,719,143"/><area shape="rect" id="node9" href="libisp__config_8c.html" title="sw/airborne/modules\l/computer_vision/lib\l/isp/libisp_config.c" alt="" coords="794,95,949,151"/><area shape="rect" id="node5" href="mt9v117_8c.html" title="Initialization of MT9V117 chip and options to change settings. " alt="" coords="339,206,481,247"/></map>
+<area shape="rect" id="node2" href="libisp__config_8h.html" title="sw/airborne/boards\l/bebop/isp/libisp_config.h" alt="" coords="5,102,187,143"/><area shape="rect" id="node4" href="mt9f002_8c.html" title="Initialization of MT9F002 chip and options to change settings. " alt="" coords="211,102,354,143"/><area shape="rect" id="node6" href="disco_8h.html" title="sw/airborne/boards\l/disco.h" alt="" coords="378,102,521,143"/><area shape="rect" id="node8" href="bebop__ae__awb_8c.html" title="sw/airborne/modules\l/computer_vision/bebop\l_ae_awb.c" alt="" coords="545,95,719,151"/><area shape="rect" id="node3" href="libisp_8c.html" title="sw/airborne/boards\l/bebop/isp/libisp.c" alt="" coords="25,199,167,240"/><area shape="rect" id="node5" href="mt9f002__nps_8c.html" title="sw/airborne/boards\l/bebop/mt9f002_nps.c" alt="" coords="196,199,361,240"/><area shape="rect" id="node7" href="disco_2board_8c.html" title="Disco specific board initialization function. " alt="" coords="386,199,529,240"/></map>
 </div>
 </div>
 <p><a href="mt9f002_8h_source.html">Go to the source code of this file.</a></p>
@@ -147,41 +149,57 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:af738314f879d0dd6fac0bd053436552d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9f002_8h.html#af738314f879d0dd6fac0bd053436552d">MT9F002_OUTPUT_HEIGHT</a>&#160;&#160;&#160;822</td></tr>
-<tr class="separator:af738314f879d0dd6fac0bd053436552d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa07cb6d07e92685aee810db11e33c927"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9f002_8h.html#aa07cb6d07e92685aee810db11e33c927">MT9F002_OUTPUT_WIDTH</a>&#160;&#160;&#160;1152</td></tr>
+<tr class="memitem:a8e887c0f3d12ecb861294e92cb56e74b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9f002_8h.html#a8e887c0f3d12ecb861294e92cb56e74b">CFG_SCALER_M_MIN</a>&#160;&#160;&#160;16</td></tr>
+<tr class="separator:a8e887c0f3d12ecb861294e92cb56e74b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7190b99d91d9006d9d35070ed54b00f4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9f002_8h.html#a7190b99d91d9006d9d35070ed54b00f4">CFG_SCALER_M_MAX</a>&#160;&#160;&#160;128</td></tr>
+<tr class="separator:a7190b99d91d9006d9d35070ed54b00f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1075c6f2bd797baab7ba8e77638741a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9f002_8h.html#aa1075c6f2bd797baab7ba8e77638741a">CFG_MT9F002_WINDOW_WIDTH_MIN</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:aa1075c6f2bd797baab7ba8e77638741a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3366b714c3ab7b6ddda9d00179459704"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9f002_8h.html#a3366b714c3ab7b6ddda9d00179459704">CFG_MT9F002_WINDOW_HEIGHT_MIN</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a3366b714c3ab7b6ddda9d00179459704"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa56a924e86440a444460684f65df93d7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9f002_8h.html#aa56a924e86440a444460684f65df93d7">CFG_MT9F002_PIXEL_ARRAY_HEIGHT</a>&#160;&#160;&#160;3288</td></tr>
+<tr class="separator:aa56a924e86440a444460684f65df93d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f1595ca959c33faf0bca572a6cf995e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9f002_8h.html#a4f1595ca959c33faf0bca572a6cf995e">CFG_MT9F002_PIXEL_ARRAY_WIDTH</a>&#160;&#160;&#160;4608</td></tr>
+<tr class="separator:a4f1595ca959c33faf0bca572a6cf995e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bf3c744677cb13656f9e6964775743d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9f002_8h.html#a2bf3c744677cb13656f9e6964775743d">CFG_MT9F002_X_ADDR_MIN</a>&#160;&#160;&#160;24</td></tr>
+<tr class="separator:a2bf3c744677cb13656f9e6964775743d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada9c18004ccaa6c8ba10312dc5e570f1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9f002_8h.html#ada9c18004ccaa6c8ba10312dc5e570f1">CFG_MT9F002_X_ADDR_MAX</a>&#160;&#160;&#160;4647</td></tr>
+<tr class="separator:ada9c18004ccaa6c8ba10312dc5e570f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2eaea9177e45874ebc956a1e55452769"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9f002_8h.html#a2eaea9177e45874ebc956a1e55452769">CFG_MT9F002_Y_ADDR_MIN</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a2eaea9177e45874ebc956a1e55452769"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abff3bb64faa96217650a689020683be9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9f002_8h.html#abff3bb64faa96217650a689020683be9">CFG_MT9F002_Y_ADDR_MAX</a>&#160;&#160;&#160;<a class="el" href="mt9f002_8h.html#aa56a924e86440a444460684f65df93d7">CFG_MT9F002_PIXEL_ARRAY_HEIGHT</a></td></tr>
+<tr class="separator:abff3bb64faa96217650a689020683be9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcf5b0335c72b1b516e6cbb674b6269d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9f002_8h.html#adcf5b0335c72b1b516e6cbb674b6269d">RES_VGA</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:adcf5b0335c72b1b516e6cbb674b6269d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2689273319a9a00c51209b10ed51ab9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9f002_8h.html#ac2689273319a9a00c51209b10ed51ab9">RES_720p</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:ac2689273319a9a00c51209b10ed51ab9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2aaf71e6a95215dae6708749bc1bffb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9f002_8h.html#ac2aaf71e6a95215dae6708749bc1bffb">RES_720p_4_3</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:ac2aaf71e6a95215dae6708749bc1bffb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2040b471ee8bfbf48ac85f36f69962d5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9f002_8h.html#a2040b471ee8bfbf48ac85f36f69962d5">RES_1080p</a>&#160;&#160;&#160;3</td></tr>
+<tr class="separator:a2040b471ee8bfbf48ac85f36f69962d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac95d957d1331ca1f7fc5d8cacf1bec84"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9f002_8h.html#ac95d957d1331ca1f7fc5d8cacf1bec84">RES_1080p_4_3</a>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:ac95d957d1331ca1f7fc5d8cacf1bec84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41595837afdf85b8e30302155ce5f0ce"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9f002_8h.html#a41595837afdf85b8e30302155ce5f0ce">RES_FULL</a>&#160;&#160;&#160;5</td></tr>
+<tr class="separator:a41595837afdf85b8e30302155ce5f0ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa07cb6d07e92685aee810db11e33c927"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9f002_8h.html#aa07cb6d07e92685aee810db11e33c927">MT9F002_OUTPUT_WIDTH</a>&#160;&#160;&#160;640</td></tr>
 <tr class="separator:aa07cb6d07e92685aee810db11e33c927"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acac12807427e406cd1ece5a24d82a4af"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9f002_8h.html#acac12807427e406cd1ece5a24d82a4af">MT9F002_INITIAL_OFFSET_X</a>&#160;&#160;&#160;0.</td></tr>
-<tr class="separator:acac12807427e406cd1ece5a24d82a4af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45d4b9a2e3db000aea95ff7206cf9dd2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9f002_8h.html#a45d4b9a2e3db000aea95ff7206cf9dd2">MT9F002_INITIAL_OFFSET_Y</a>&#160;&#160;&#160;0.</td></tr>
-<tr class="separator:a45d4b9a2e3db000aea95ff7206cf9dd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b2cbbddc6c1dfb253f088dbf488b365"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9f002_8h.html#a2b2cbbddc6c1dfb253f088dbf488b365">MT9F002_OUTPUT_SCALER</a>&#160;&#160;&#160;1.</td></tr>
-<tr class="memdesc:a2b2cbbddc6c1dfb253f088dbf488b365"><td class="mdescLeft">&#160;</td><td class="mdescRight">Our output is only OUTPUT_SCALER of the pixels we take of the sensor It is programmable in 1/16 steps determined by ScaleFactor = 16/scale_m.  <a href="#a2b2cbbddc6c1dfb253f088dbf488b365">More...</a><br /></td></tr>
-<tr class="separator:a2b2cbbddc6c1dfb253f088dbf488b365"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3897e0ce7677738bb76b45dbfd9dcf7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9f002_8h.html#aa3897e0ce7677738bb76b45dbfd9dcf7">MT9F002_TARGET_EXPOSURE</a>&#160;&#160;&#160;30</td></tr>
-<tr class="memdesc:aa3897e0ce7677738bb76b45dbfd9dcf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exposure of the front camera of the bebop.  <a href="#aa3897e0ce7677738bb76b45dbfd9dcf7">More...</a><br /></td></tr>
-<tr class="separator:aa3897e0ce7677738bb76b45dbfd9dcf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4f307c3a502c7aadb224c7ff9f85a00"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9f002_8h.html#af4f307c3a502c7aadb224c7ff9f85a00">MT9F002_TARGET_FPS</a>&#160;&#160;&#160;15</td></tr>
+<tr class="memitem:af738314f879d0dd6fac0bd053436552d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9f002_8h.html#af738314f879d0dd6fac0bd053436552d">MT9F002_OUTPUT_HEIGHT</a>&#160;&#160;&#160;640</td></tr>
+<tr class="separator:af738314f879d0dd6fac0bd053436552d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f3037a1abaf1ff7136d4ad743da41a8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9f002_8h.html#a0f3037a1abaf1ff7136d4ad743da41a8">MT9F002_OFFSET_X</a>&#160;&#160;&#160;0.</td></tr>
+<tr class="separator:a0f3037a1abaf1ff7136d4ad743da41a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9f2aa10fb8cd9c1e0db620720fe2cbb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9f002_8h.html#ae9f2aa10fb8cd9c1e0db620720fe2cbb">MT9F002_OFFSET_Y</a>&#160;&#160;&#160;0.</td></tr>
+<tr class="separator:ae9f2aa10fb8cd9c1e0db620720fe2cbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53f07b64c0cb90896f5acab0f47adebf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9f002_8h.html#a53f07b64c0cb90896f5acab0f47adebf">MT9F002_ZOOM</a>&#160;&#160;&#160;1.</td></tr>
+<tr class="separator:a53f07b64c0cb90896f5acab0f47adebf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4f307c3a502c7aadb224c7ff9f85a00"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9f002_8h.html#af4f307c3a502c7aadb224c7ff9f85a00">MT9F002_TARGET_FPS</a>&#160;&#160;&#160;30</td></tr>
 <tr class="separator:af4f307c3a502c7aadb224c7ff9f85a00"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f4f8fef7b9de9965fc67ba45de9132f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9f002_8h.html#a4f4f8fef7b9de9965fc67ba45de9132f">MT9F002_GAIN_GREEN1</a>&#160;&#160;&#160;3.0</td></tr>
-<tr class="separator:a4f4f8fef7b9de9965fc67ba45de9132f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1aae2e9df487ec2104cb5ad99e16086"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9f002_8h.html#ae1aae2e9df487ec2104cb5ad99e16086">MT9F002_GAIN_GREEN2</a>&#160;&#160;&#160;3.0</td></tr>
-<tr class="separator:ae1aae2e9df487ec2104cb5ad99e16086"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21cd4a0a3c0d44a09a4cf5b5c5a4b245"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9f002_8h.html#a21cd4a0a3c0d44a09a4cf5b5c5a4b245">MT9F002_GAIN_RED</a>&#160;&#160;&#160;3.0</td></tr>
-<tr class="separator:a21cd4a0a3c0d44a09a4cf5b5c5a4b245"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a466d69f137a93cc65d2641745540e406"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9f002_8h.html#a466d69f137a93cc65d2641745540e406">MT9F002_GAIN_BLUE</a>&#160;&#160;&#160;4.0</td></tr>
-<tr class="separator:a466d69f137a93cc65d2641745540e406"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33624b48a483e36d6b8815170d60529c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9f002_8h.html#a33624b48a483e36d6b8815170d60529c">MT9F002_X_ODD_INC_VAL</a>&#160;&#160;&#160;1</td></tr>
-<tr class="separator:a33624b48a483e36d6b8815170d60529c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeff5551b0efe0b0fbd7d30f6a89ad0ef"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9f002_8h.html#aeff5551b0efe0b0fbd7d30f6a89ad0ef">MT9F002_Y_ODD_INC_VAL</a>&#160;&#160;&#160;1</td></tr>
-<tr class="separator:aeff5551b0efe0b0fbd7d30f6a89ad0ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af60fc4b6d4696ce7977a3d7b03e0f5ea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9f002_8h.html#af60fc4b6d4696ce7977a3d7b03e0f5ea">MT9F002_FOCAL_X</a>&#160;&#160;&#160;311.59304538f</td></tr>
+<tr class="memitem:af60fc4b6d4696ce7977a3d7b03e0f5ea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9f002_8h.html#af60fc4b6d4696ce7977a3d7b03e0f5ea">MT9F002_FOCAL_X</a>&#160;&#160;&#160;(<a class="el" href="mt9f002_8h.html#a53f07b64c0cb90896f5acab0f47adebf">MT9F002_ZOOM</a> * <a class="el" href="mt9f002_8h.html#aa07cb6d07e92685aee810db11e33c927">MT9F002_OUTPUT_WIDTH</a> / 2.f)</td></tr>
 <tr class="separator:af60fc4b6d4696ce7977a3d7b03e0f5ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80faa4382b8b6f551e3e8acfdf7f5274"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9f002_8h.html#a80faa4382b8b6f551e3e8acfdf7f5274">MT9F002_FOCAL_Y</a>&#160;&#160;&#160;313.01338397f</td></tr>
+<tr class="memitem:a80faa4382b8b6f551e3e8acfdf7f5274"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9f002_8h.html#a80faa4382b8b6f551e3e8acfdf7f5274">MT9F002_FOCAL_Y</a>&#160;&#160;&#160;(<a class="el" href="mt9f002_8h.html#a53f07b64c0cb90896f5acab0f47adebf">MT9F002_ZOOM</a> * <a class="el" href="mt9f002_8h.html#af738314f879d0dd6fac0bd053436552d">MT9F002_OUTPUT_HEIGHT</a> / 2.f)</td></tr>
 <tr class="separator:a80faa4382b8b6f551e3e8acfdf7f5274"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02a51e0adfa4409918c2bb35a2591e7b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9f002_8h.html#a02a51e0adfa4409918c2bb35a2591e7b">MT9F002_CENTER_X</a>&#160;&#160;&#160;158.37457814f</td></tr>
+<tr class="memitem:a02a51e0adfa4409918c2bb35a2591e7b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9f002_8h.html#a02a51e0adfa4409918c2bb35a2591e7b">MT9F002_CENTER_X</a>&#160;&#160;&#160;(<a class="el" href="mt9f002_8h.html#aa07cb6d07e92685aee810db11e33c927">MT9F002_OUTPUT_WIDTH</a> * (.5f - MT9F002_ZOOM * MT9F002_OFFSET_X))</td></tr>
 <tr class="separator:a02a51e0adfa4409918c2bb35a2591e7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76be7d6e685f89d596f369d6463ea537"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9f002_8h.html#a76be7d6e685f89d596f369d6463ea537">MT9F002_CENTER_Y</a>&#160;&#160;&#160;326.49375925f</td></tr>
+<tr class="memitem:a76be7d6e685f89d596f369d6463ea537"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9f002_8h.html#a76be7d6e685f89d596f369d6463ea537">MT9F002_CENTER_Y</a>&#160;&#160;&#160;(<a class="el" href="mt9f002_8h.html#af738314f879d0dd6fac0bd053436552d">MT9F002_OUTPUT_HEIGHT</a> * (.5f - MT9F002_ZOOM * MT9F002_OFFSET_Y))</td></tr>
 <tr class="separator:a76be7d6e685f89d596f369d6463ea537"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2cfb576fc391da5086d3149d2c3554f8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9f002_8h.html#a2cfb576fc391da5086d3149d2c3554f8">MT9F002_DHANE_K</a>&#160;&#160;&#160;1.25f</td></tr>
 <tr class="separator:a2cfb576fc391da5086d3149d2c3554f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -199,14 +217,33 @@ Functions</h2></td></tr>
 <tr class="memitem:a8f43c3ad8d5ff841d1203ab6c760c8f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9f002_8h.html#a8f43c3ad8d5ff841d1203ab6c760c8f0">mt9f002_init</a> (struct <a class="el" href="mt9f002_8h.html#structmt9f002__t">mt9f002_t</a> *mt)</td></tr>
 <tr class="memdesc:a8f43c3ad8d5ff841d1203ab6c760c8f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialisation of the Aptina MT9F002 CMOS sensor (front camera)  <a href="#a8f43c3ad8d5ff841d1203ab6c760c8f0">More...</a><br /></td></tr>
 <tr class="separator:a8f43c3ad8d5ff841d1203ab6c760c8f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab56af0c2b794989ad4e1c4e112784588"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9f002_8h.html#ab56af0c2b794989ad4e1c4e112784588">mt9f002_set_resolution</a> (struct <a class="el" href="mt9f002_8h.html#structmt9f002__t">mt9f002_t</a> *mt)</td></tr>
-<tr class="separator:ab56af0c2b794989ad4e1c4e112784588"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a107e8b9a036f53944cf021efd09ca617"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9f002_8h.html#a107e8b9a036f53944cf021efd09ca617">mt9f002_reset_exposure</a> (struct <a class="el" href="mt9f002_8h.html#structmt9f002__t">mt9f002_t</a> *mt)</td></tr>
+<tr class="separator:a107e8b9a036f53944cf021efd09ca617"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcc9f0f2484aa96a4c1cef0c563fd62e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9f002_8h.html#abcc9f0f2484aa96a4c1cef0c563fd62e">mt9f002_set_exposure</a> (struct <a class="el" href="mt9f002_8h.html#structmt9f002__t">mt9f002_t</a> *mt)</td></tr>
 <tr class="memdesc:abcc9f0f2484aa96a4c1cef0c563fd62e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the exposure configuration Depends on the blanking (and therefore the FPS)  <a href="#abcc9f0f2484aa96a4c1cef0c563fd62e">More...</a><br /></td></tr>
 <tr class="separator:abcc9f0f2484aa96a4c1cef0c563fd62e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad35111d4dbfb1bb69e2dcce789ba5e0b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9f002_8h.html#ad35111d4dbfb1bb69e2dcce789ba5e0b">mt9f002_reset_color</a> (struct <a class="el" href="mt9f002_8h.html#structmt9f002__t">mt9f002_t</a> *mt)</td></tr>
+<tr class="separator:ad35111d4dbfb1bb69e2dcce789ba5e0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b19e806c9c4331da2e4730dd6592e38"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9f002_8h.html#a2b19e806c9c4331da2e4730dd6592e38">mt9f002_set_gains</a> (struct <a class="el" href="mt9f002_8h.html#structmt9f002__t">mt9f002_t</a> *mt)</td></tr>
 <tr class="memdesc:a2b19e806c9c4331da2e4730dd6592e38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the GreenR, Blue, Red and GreenB gains.  <a href="#a2b19e806c9c4331da2e4730dd6592e38">More...</a><br /></td></tr>
 <tr class="separator:a2b19e806c9c4331da2e4730dd6592e38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1e09e3bbb34e6f084cf490573ca1f32"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9f002_8h.html#aa1e09e3bbb34e6f084cf490573ca1f32">mt9f002_setting_update_resolution</a> (float in)</td></tr>
+<tr class="separator:aa1e09e3bbb34e6f084cf490573ca1f32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2246079e693b6f43730bb618d5f52723"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9f002_8h.html#a2246079e693b6f43730bb618d5f52723">mt9f002_setting_update_color</a> (float in)</td></tr>
+<tr class="separator:a2246079e693b6f43730bb618d5f52723"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af63a6fbefe3f1f4b959f6b1610b0c9f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9f002_8h.html#af63a6fbefe3f1f4b959f6b1610b0c9f1">mt9f002_setting_update_exposure</a> (float in)</td></tr>
+<tr class="separator:af63a6fbefe3f1f4b959f6b1610b0c9f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a0a67664fafa1d9cbcc7deaa1352d1673"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="mt9f002_8h.html#structmt9f002__t">mt9f002_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9f002_8h.html#a0a67664fafa1d9cbcc7deaa1352d1673">mt9f002</a></td></tr>
+<tr class="separator:a0a67664fafa1d9cbcc7deaa1352d1673"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ac1d3e3a7f2ab0d12227da19352c3be"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9f002_8h.html#a9ac1d3e3a7f2ab0d12227da19352c3be">mt9f002_send_resolution</a></td></tr>
+<tr class="separator:a9ac1d3e3a7f2ab0d12227da19352c3be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a935c1300a2cc1c81907eb532a850061d"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9f002_8h.html#a935c1300a2cc1c81907eb532a850061d">mt9f002_send_color</a></td></tr>
+<tr class="separator:a935c1300a2cc1c81907eb532a850061d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc69c5f8a155e6cfafbd704582811f97"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mt9f002_8h.html#acc69c5f8a155e6cfafbd704582811f97">mt9f002_send_exposure</a></td></tr>
+<tr class="separator:acc69c5f8a155e6cfafbd704582811f97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Initialization and configuration of the MT9F002 CMOS Chip. </p>
@@ -223,7 +260,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p>Definition at line <a class="el" href="mt9f002_8h_source.html#l00131">131</a> of file <a class="el" href="mt9f002_8h_source.html">mt9f002.h</a>.</p>
+<p>Definition at line <a class="el" href="mt9f002_8h_source.html#l00133">133</a> of file <a class="el" href="mt9f002_8h_source.html">mt9f002.h</a>.</p>
 </div><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Collaboration diagram for mt9f002_t:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -246,25 +283,25 @@ Calculated frame length of blanking. </td></tr>
 <td class="fieldname">
 gain_blue</td>
 <td class="fielddoc">
-Gain for the Blue pixels [1.5 -&gt; 63.50]. </td></tr>
+Gain for the Blue pixels [1., 63.50]. </td></tr>
 <tr><td class="fieldtype">
 <a class="anchor" id="a57edda6b9d9a2416f69ca97140109498"></a>float</td>
 <td class="fieldname">
 gain_green1</td>
 <td class="fielddoc">
-Gain for the GreenR pixels [1.5 -&gt; 63.50]. </td></tr>
+Gain for the GreenR pixels [1., 63.50]. </td></tr>
 <tr><td class="fieldtype">
 <a class="anchor" id="a3d7a20391045497e98ad9ad7b7e873d8"></a>float</td>
 <td class="fieldname">
 gain_green2</td>
 <td class="fielddoc">
-Gain for the GreenB pixels [1.5 -&gt; 63.50]. </td></tr>
+Gain for the GreenB pixels [1., 63.50]. </td></tr>
 <tr><td class="fieldtype">
 <a class="anchor" id="a2fd99a1bdc39f05100efdb72b5c16358"></a>float</td>
 <td class="fieldname">
 gain_red</td>
 <td class="fielddoc">
-Gain for the Red pixels [1.5 -&gt; 63.50]. </td></tr>
+Gain for the Red pixels [1., 63.50]. </td></tr>
 <tr><td class="fieldtype">
 <a class="anchor" id="ab52bbec412338a8798d83b0a04daf418"></a>struct <a class="el" href="group__i2c.html#structi2c__periph">i2c_periph</a> *</td>
 <td class="fieldname">
@@ -276,7 +313,7 @@ I2C peripheral used to communicate over. </td></tr>
 <td class="fieldname">
 i2c_trans</td>
 <td class="fielddoc">
-I2C transaction for comminication with CMOS chip. </td></tr>
+I2C transaction for communication with CMOS chip. </td></tr>
 <tr><td class="fieldtype">
 <a class="anchor" id="a2750b71dc644a3f4ffab3534aafb9601"></a>float</td>
 <td class="fieldname">
@@ -296,13 +333,13 @@ line_length</td>
 <td class="fielddoc">
 Calculated line length of blanking. </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a897c00ed679e03d3c88b6072ff8d2d17"></a>float</td>
+<a class="anchor" id="a3026cda87b2f3c9d79319133fab3e16a"></a><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
 <td class="fieldname">
 offset_x</td>
 <td class="fielddoc">
 Offset from left in pixels. </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a96ba78b97791d5dd4b48fd93e884c5df"></a>float</td>
+<a class="anchor" id="a9011d838040bbcba7739fa66a249d2f4"></a><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
 <td class="fieldname">
 offset_y</td>
 <td class="fielddoc">
@@ -332,11 +369,11 @@ output_height</td>
 <td class="fielddoc">
 Output height. </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="ae5d7255b561f14c37d47f561c320b219"></a>float</td>
+<a class="anchor" id="aaee06ef641fa4323a0bff856214cef2d"></a><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
 <td class="fieldname">
 output_scaler</td>
 <td class="fielddoc">
-Output scale. </td></tr>
+Output scaler. </td></tr>
 <tr><td class="fieldtype">
 <a class="anchor" id="a48c3d5a9d19f26304db1a3d02147cba3"></a><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
 <td class="fieldname">
@@ -392,6 +429,36 @@ scaled_width</td>
 <td class="fielddoc">
 Width after corrected scaling. </td></tr>
 <tr><td class="fieldtype">
+<a class="anchor" id="ae84b77f1829ae9e0ea90b6fe1c2869ad"></a><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
+<td class="fieldname">
+sensor_height</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="aa9c29fcf5f0b40a4fc39fcddebb454d1"></a><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
+<td class="fieldname">
+sensor_width</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="ae84f573d30726720fab954adab60d12b"></a>float</td>
+<td class="fieldname">
+set_offset_x</td>
+<td class="fielddoc">
+Signed fractional offset from centre of image of original sensor [-0.5,0.5]. </td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a6f202a92a1cf7f90e52011d20b9da128"></a>float</td>
+<td class="fieldname">
+set_offset_y</td>
+<td class="fielddoc">
+Signed fractional offset from centre of image of original sensor [-0.5,0.5]. </td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a4b34a9f815987e291ea36a362c633c13"></a>float</td>
+<td class="fieldname">
+set_zoom</td>
+<td class="fielddoc">
+Image zoom set point. </td></tr>
+<tr><td class="fieldtype">
 <a class="anchor" id="a6a872b9907bd06439764f7698780e36b"></a><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></td>
 <td class="fieldname">
 shift_vt_pix_clk_div</td>
@@ -438,23 +505,181 @@ X increment for subsampling (1,3,7,15,31 accepted) </td></tr>
 <td class="fieldname">
 y_odd_inc</td>
 <td class="fielddoc">
-Y increment for subsampling (1,3,7 accepted) </td></tr>
+Y increment for subsampling (1,3,7,15,31 accepted) </td></tr>
 </table>
 
 </div>
 </div>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="aa56a924e86440a444460684f65df93d7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CFG_MT9F002_PIXEL_ARRAY_HEIGHT&#160;&#160;&#160;3288</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="mt9f002_8h_source.html#l00038">38</a> of file <a class="el" href="mt9f002_8h_source.html">mt9f002.h</a>.</p>
+
+<p>Referenced by <a class="el" href="mt9f002_8c_source.html#l00914">mt9f002_calc_resolution()</a>, and <a class="el" href="mt9f002_8c_source.html#l01111">mt9f002_setting_update_resolution()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4f1595ca959c33faf0bca572a6cf995e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CFG_MT9F002_PIXEL_ARRAY_WIDTH&#160;&#160;&#160;4608</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="mt9f002_8h_source.html#l00039">39</a> of file <a class="el" href="mt9f002_8h_source.html">mt9f002.h</a>.</p>
+
+<p>Referenced by <a class="el" href="mt9f002_8c_source.html#l00914">mt9f002_calc_resolution()</a>, and <a class="el" href="mt9f002_8c_source.html#l01111">mt9f002_setting_update_resolution()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3366b714c3ab7b6ddda9d00179459704"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CFG_MT9F002_WINDOW_HEIGHT_MIN&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="mt9f002_8h_source.html#l00037">37</a> of file <a class="el" href="mt9f002_8h_source.html">mt9f002.h</a>.</p>
+
+<p>Referenced by <a class="el" href="mt9f002_8c_source.html#l00914">mt9f002_calc_resolution()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa1075c6f2bd797baab7ba8e77638741a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CFG_MT9F002_WINDOW_WIDTH_MIN&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="mt9f002_8h_source.html#l00036">36</a> of file <a class="el" href="mt9f002_8h_source.html">mt9f002.h</a>.</p>
+
+<p>Referenced by <a class="el" href="mt9f002_8c_source.html#l00914">mt9f002_calc_resolution()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ada9c18004ccaa6c8ba10312dc5e570f1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CFG_MT9F002_X_ADDR_MAX&#160;&#160;&#160;4647</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="mt9f002_8h_source.html#l00041">41</a> of file <a class="el" href="mt9f002_8h_source.html">mt9f002.h</a>.</p>
+
+<p>Referenced by <a class="el" href="mt9f002_8c_source.html#l00914">mt9f002_calc_resolution()</a>, and <a class="el" href="mt9f002_8c_source.html#l01000">mt9f002_set_resolution()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2bf3c744677cb13656f9e6964775743d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CFG_MT9F002_X_ADDR_MIN&#160;&#160;&#160;24</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="mt9f002_8h_source.html#l00040">40</a> of file <a class="el" href="mt9f002_8h_source.html">mt9f002.h</a>.</p>
+
+<p>Referenced by <a class="el" href="mt9f002_8c_source.html#l00914">mt9f002_calc_resolution()</a>, and <a class="el" href="mt9f002_8c_source.html#l01000">mt9f002_set_resolution()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abff3bb64faa96217650a689020683be9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CFG_MT9F002_Y_ADDR_MAX&#160;&#160;&#160;<a class="el" href="mt9f002_8h.html#aa56a924e86440a444460684f65df93d7">CFG_MT9F002_PIXEL_ARRAY_HEIGHT</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="mt9f002_8h_source.html#l00043">43</a> of file <a class="el" href="mt9f002_8h_source.html">mt9f002.h</a>.</p>
+
+<p>Referenced by <a class="el" href="mt9f002_8c_source.html#l00914">mt9f002_calc_resolution()</a>, and <a class="el" href="mt9f002_8c_source.html#l01000">mt9f002_set_resolution()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2eaea9177e45874ebc956a1e55452769"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CFG_MT9F002_Y_ADDR_MIN&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="mt9f002_8h_source.html#l00042">42</a> of file <a class="el" href="mt9f002_8h_source.html">mt9f002.h</a>.</p>
+
+<p>Referenced by <a class="el" href="mt9f002_8c_source.html#l00914">mt9f002_calc_resolution()</a>, and <a class="el" href="mt9f002_8c_source.html#l01000">mt9f002_set_resolution()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7190b99d91d9006d9d35070ed54b00f4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CFG_SCALER_M_MAX&#160;&#160;&#160;128</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="mt9f002_8h_source.html#l00035">35</a> of file <a class="el" href="mt9f002_8h_source.html">mt9f002.h</a>.</p>
+
+<p>Referenced by <a class="el" href="mt9f002_8c_source.html#l00914">mt9f002_calc_resolution()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8e887c0f3d12ecb861294e92cb56e74b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CFG_SCALER_M_MIN&#160;&#160;&#160;16</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="mt9f002_8h_source.html#l00034">34</a> of file <a class="el" href="mt9f002_8h_source.html">mt9f002.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a02a51e0adfa4409918c2bb35a2591e7b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define MT9F002_CENTER_X&#160;&#160;&#160;158.37457814f</td>
+          <td class="memname">#define MT9F002_CENTER_X&#160;&#160;&#160;(<a class="el" href="mt9f002_8h.html#aa07cb6d07e92685aee810db11e33c927">MT9F002_OUTPUT_WIDTH</a> * (.5f - MT9F002_ZOOM * MT9F002_OFFSET_X))</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mt9f002_8h_source.html#l00114">114</a> of file <a class="el" href="mt9f002_8h_source.html">mt9f002.h</a>.</p>
+<p>Definition at line <a class="el" href="mt9f002_8h_source.html#l00116">116</a> of file <a class="el" href="mt9f002_8h_source.html">mt9f002.h</a>.</p>
 
 </div>
 </div>
@@ -463,12 +688,12 @@ Y increment for subsampling (1,3,7 accepted) </td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define MT9F002_CENTER_Y&#160;&#160;&#160;326.49375925f</td>
+          <td class="memname">#define MT9F002_CENTER_Y&#160;&#160;&#160;(<a class="el" href="mt9f002_8h.html#af738314f879d0dd6fac0bd053436552d">MT9F002_OUTPUT_HEIGHT</a> * (.5f - MT9F002_ZOOM * MT9F002_OFFSET_Y))</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mt9f002_8h_source.html#l00117">117</a> of file <a class="el" href="mt9f002_8h_source.html">mt9f002.h</a>.</p>
+<p>Definition at line <a class="el" href="mt9f002_8h_source.html#l00119">119</a> of file <a class="el" href="mt9f002_8h_source.html">mt9f002.h</a>.</p>
 
 </div>
 </div>
@@ -482,7 +707,7 @@ Y increment for subsampling (1,3,7 accepted) </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mt9f002_8h_source.html#l00120">120</a> of file <a class="el" href="mt9f002_8h_source.html">mt9f002.h</a>.</p>
+<p>Definition at line <a class="el" href="mt9f002_8h_source.html#l00122">122</a> of file <a class="el" href="mt9f002_8h_source.html">mt9f002.h</a>.</p>
 
 </div>
 </div>
@@ -491,12 +716,12 @@ Y increment for subsampling (1,3,7 accepted) </td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define MT9F002_FOCAL_X&#160;&#160;&#160;311.59304538f</td>
+          <td class="memname">#define MT9F002_FOCAL_X&#160;&#160;&#160;(<a class="el" href="mt9f002_8h.html#a53f07b64c0cb90896f5acab0f47adebf">MT9F002_ZOOM</a> * <a class="el" href="mt9f002_8h.html#aa07cb6d07e92685aee810db11e33c927">MT9F002_OUTPUT_WIDTH</a> / 2.f)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mt9f002_8h_source.html#l00108">108</a> of file <a class="el" href="mt9f002_8h_source.html">mt9f002.h</a>.</p>
+<p>Definition at line <a class="el" href="mt9f002_8h_source.html#l00110">110</a> of file <a class="el" href="mt9f002_8h_source.html">mt9f002.h</a>.</p>
 
 </div>
 </div>
@@ -505,104 +730,40 @@ Y increment for subsampling (1,3,7 accepted) </td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define MT9F002_FOCAL_Y&#160;&#160;&#160;313.01338397f</td>
+          <td class="memname">#define MT9F002_FOCAL_Y&#160;&#160;&#160;(<a class="el" href="mt9f002_8h.html#a53f07b64c0cb90896f5acab0f47adebf">MT9F002_ZOOM</a> * <a class="el" href="mt9f002_8h.html#af738314f879d0dd6fac0bd053436552d">MT9F002_OUTPUT_HEIGHT</a> / 2.f)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mt9f002_8h_source.html#l00111">111</a> of file <a class="el" href="mt9f002_8h_source.html">mt9f002.h</a>.</p>
+<p>Definition at line <a class="el" href="mt9f002_8h_source.html#l00113">113</a> of file <a class="el" href="mt9f002_8h_source.html">mt9f002.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a466d69f137a93cc65d2641745540e406"></a>
+<a class="anchor" id="a0f3037a1abaf1ff7136d4ad743da41a8"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define MT9F002_GAIN_BLUE&#160;&#160;&#160;4.0</td>
+          <td class="memname">#define MT9F002_OFFSET_X&#160;&#160;&#160;0.</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mt9f002_8h_source.html#l00092">92</a> of file <a class="el" href="mt9f002_8h_source.html">mt9f002.h</a>.</p>
-
-<p>Referenced by <a class="el" href="bebop__ae__awb_8c_source.html#l00154">bebop_awb_reset()</a>.</p>
+<p>Definition at line <a class="el" href="mt9f002_8h_source.html#l00091">91</a> of file <a class="el" href="mt9f002_8h_source.html">mt9f002.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a4f4f8fef7b9de9965fc67ba45de9132f"></a>
+<a class="anchor" id="ae9f2aa10fb8cd9c1e0db620720fe2cbb"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define MT9F002_GAIN_GREEN1&#160;&#160;&#160;3.0</td>
+          <td class="memname">#define MT9F002_OFFSET_Y&#160;&#160;&#160;0.</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mt9f002_8h_source.html#l00080">80</a> of file <a class="el" href="mt9f002_8h_source.html">mt9f002.h</a>.</p>
-
-<p>Referenced by <a class="el" href="bebop__ae__awb_8c_source.html#l00154">bebop_awb_reset()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ae1aae2e9df487ec2104cb5ad99e16086"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MT9F002_GAIN_GREEN2&#160;&#160;&#160;3.0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="mt9f002_8h_source.html#l00084">84</a> of file <a class="el" href="mt9f002_8h_source.html">mt9f002.h</a>.</p>
-
-<p>Referenced by <a class="el" href="bebop__ae__awb_8c_source.html#l00154">bebop_awb_reset()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a21cd4a0a3c0d44a09a4cf5b5c5a4b245"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MT9F002_GAIN_RED&#160;&#160;&#160;3.0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="mt9f002_8h_source.html#l00088">88</a> of file <a class="el" href="mt9f002_8h_source.html">mt9f002.h</a>.</p>
-
-<p>Referenced by <a class="el" href="bebop__ae__awb_8c_source.html#l00154">bebop_awb_reset()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="acac12807427e406cd1ece5a24d82a4af"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MT9F002_INITIAL_OFFSET_X&#160;&#160;&#160;0.</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="mt9f002_8h_source.html#l00043">43</a> of file <a class="el" href="mt9f002_8h_source.html">mt9f002.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a45d4b9a2e3db000aea95ff7206cf9dd2"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MT9F002_INITIAL_OFFSET_Y&#160;&#160;&#160;0.</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="mt9f002_8h_source.html#l00047">47</a> of file <a class="el" href="mt9f002_8h_source.html">mt9f002.h</a>.</p>
+<p>Definition at line <a class="el" href="mt9f002_8h_source.html#l00096">96</a> of file <a class="el" href="mt9f002_8h_source.html">mt9f002.h</a>.</p>
 
 </div>
 </div>
@@ -611,31 +772,12 @@ Y increment for subsampling (1,3,7 accepted) </td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define MT9F002_OUTPUT_HEIGHT&#160;&#160;&#160;822</td>
+          <td class="memname">#define MT9F002_OUTPUT_HEIGHT&#160;&#160;&#160;640</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mt9f002_8h_source.html#l00035">35</a> of file <a class="el" href="mt9f002_8h_source.html">mt9f002.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a2b2cbbddc6c1dfb253f088dbf488b365"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MT9F002_OUTPUT_SCALER&#160;&#160;&#160;1.</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Our output is only OUTPUT_SCALER of the pixels we take of the sensor It is programmable in 1/16 steps determined by ScaleFactor = 16/scale_m. </p>
-<p>Legal values for scale_m are 16 through 128, giving you the ability to scale from 1:1 to 1:8 (with m=128). Example: output_width = 512 output_height = 830 output_scaler = 0.25 We now get an image of 512 by 830 which contains a "compressed version" of what would normally be an image of 2048 by 3320 ISP (4608H x 2592V sensor) </p>
-
-<p>Definition at line <a class="el" href="mt9f002_8h_source.html#l00062">62</a> of file <a class="el" href="mt9f002_8h_source.html">mt9f002.h</a>.</p>
-
-<p>Referenced by <a class="el" href="nps__fdm__gazebo_8cpp_source.html#l00328">init_gazebo()</a>.</p>
+<p>Definition at line <a class="el" href="mt9f002_8h_source.html#l00085">85</a> of file <a class="el" href="mt9f002_8h_source.html">mt9f002.h</a>.</p>
 
 </div>
 </div>
@@ -644,31 +786,12 @@ Y increment for subsampling (1,3,7 accepted) </td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define MT9F002_OUTPUT_WIDTH&#160;&#160;&#160;1152</td>
+          <td class="memname">#define MT9F002_OUTPUT_WIDTH&#160;&#160;&#160;640</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mt9f002_8h_source.html#l00039">39</a> of file <a class="el" href="mt9f002_8h_source.html">mt9f002.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aa3897e0ce7677738bb76b45dbfd9dcf7"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MT9F002_TARGET_EXPOSURE&#160;&#160;&#160;30</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Exposure of the front camera of the bebop. </p>
-<p>Experimental values: Outside: 15 Inside well lit: 30 Inside poorly lit: 60 </p>
-
-<p>Definition at line <a class="el" href="mt9f002_8h_source.html#l00071">71</a> of file <a class="el" href="mt9f002_8h_source.html">mt9f002.h</a>.</p>
-
-<p>Referenced by <a class="el" href="bebop__ae__awb_8c_source.html#l00164">bebop_ae_reset()</a>.</p>
+<p>Definition at line <a class="el" href="mt9f002_8h_source.html#l00082">82</a> of file <a class="el" href="mt9f002_8h_source.html">mt9f002.h</a>.</p>
 
 </div>
 </div>
@@ -677,42 +800,112 @@ Y increment for subsampling (1,3,7 accepted) </td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define MT9F002_TARGET_FPS&#160;&#160;&#160;15</td>
+          <td class="memname">#define MT9F002_TARGET_FPS&#160;&#160;&#160;30</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mt9f002_8h_source.html#l00075">75</a> of file <a class="el" href="mt9f002_8h_source.html">mt9f002.h</a>.</p>
+<p>Definition at line <a class="el" href="mt9f002_8h_source.html#l00105">105</a> of file <a class="el" href="mt9f002_8h_source.html">mt9f002.h</a>.</p>
 
-<p>Referenced by <a class="el" href="nps__fdm__gazebo_8cpp_source.html#l00328">init_gazebo()</a>.</p>
+<p>Referenced by <a class="el" href="nps__fdm__gazebo_8cpp_source.html#l00333">init_gazebo()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a33624b48a483e36d6b8815170d60529c"></a>
+<a class="anchor" id="a53f07b64c0cb90896f5acab0f47adebf"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define MT9F002_X_ODD_INC_VAL&#160;&#160;&#160;1</td>
+          <td class="memname">#define MT9F002_ZOOM&#160;&#160;&#160;1.</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mt9f002_8h_source.html#l00098">98</a> of file <a class="el" href="mt9f002_8h_source.html">mt9f002.h</a>.</p>
+<p>Definition at line <a class="el" href="mt9f002_8h_source.html#l00101">101</a> of file <a class="el" href="mt9f002_8h_source.html">mt9f002.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="aeff5551b0efe0b0fbd7d30f6a89ad0ef"></a>
+<a class="anchor" id="a2040b471ee8bfbf48ac85f36f69962d5"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define MT9F002_Y_ODD_INC_VAL&#160;&#160;&#160;1</td>
+          <td class="memname">#define RES_1080p&#160;&#160;&#160;3</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mt9f002_8h_source.html#l00103">103</a> of file <a class="el" href="mt9f002_8h_source.html">mt9f002.h</a>.</p>
+<p>Definition at line <a class="el" href="mt9f002_8h_source.html#l00048">48</a> of file <a class="el" href="mt9f002_8h_source.html">mt9f002.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac95d957d1331ca1f7fc5d8cacf1bec84"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RES_1080p_4_3&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="mt9f002_8h_source.html#l00049">49</a> of file <a class="el" href="mt9f002_8h_source.html">mt9f002.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac2689273319a9a00c51209b10ed51ab9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RES_720p&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="mt9f002_8h_source.html#l00046">46</a> of file <a class="el" href="mt9f002_8h_source.html">mt9f002.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac2aaf71e6a95215dae6708749bc1bffb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RES_720p_4_3&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="mt9f002_8h_source.html#l00047">47</a> of file <a class="el" href="mt9f002_8h_source.html">mt9f002.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a41595837afdf85b8e30302155ce5f0ce"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RES_FULL&#160;&#160;&#160;5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="mt9f002_8h_source.html#l00050">50</a> of file <a class="el" href="mt9f002_8h_source.html">mt9f002.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adcf5b0335c72b1b516e6cbb674b6269d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RES_VGA&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="mt9f002_8h_source.html#l00045">45</a> of file <a class="el" href="mt9f002_8h_source.html">mt9f002.h</a>.</p>
 
 </div>
 </div>
@@ -738,7 +931,7 @@ Y increment for subsampling (1,3,7 accepted) </td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="mt9f002_8h_source.html#l00124">124</a> of file <a class="el" href="mt9f002_8h_source.html">mt9f002.h</a>.</p>
+<p>Definition at line <a class="el" href="mt9f002_8h_source.html#l00126">126</a> of file <a class="el" href="mt9f002_8h_source.html">mt9f002.h</a>.</p>
 
 </div>
 </div>
@@ -759,11 +952,9 @@ Y increment for subsampling (1,3,7 accepted) </td></tr>
 
 <p>Initialisation of the Aptina MT9F002 CMOS sensor (front camera) </p>
 
-<p>Definition at line <a class="el" href="mt9f002_8c_source.html#l00863">863</a> of file <a class="el" href="mt9f002_8c_source.html">mt9f002.c</a>.</p>
+<p>Definition at line <a class="el" href="mt9f002_8c_source.html#l01036">1036</a> of file <a class="el" href="mt9f002_8c_source.html">mt9f002.c</a>.</p>
 
-<p>References <a class="el" href="mt9f002_8h_source.html#l00170">mt9f002_t::i2c_trans</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="mt9f002_8h_source.html#l00132">mt9f002_t::interface</a>, <a class="el" href="mt9f002_8h_source.html#l00126">MT9F002_HiSPi</a>, <a class="el" href="mt9f002_8h_source.html#l00125">MT9F002_MIPI</a>, <a class="el" href="mt9f002_8c_source.html#l00127">mt9f002_mipi_stage1()</a>, <a class="el" href="mt9f002_8c_source.html#l00383">mt9f002_mipi_stage2()</a>, <a class="el" href="mt9f002_8c_source.html#l00391">mt9f002_mipi_stage3()</a>, <a class="el" href="mt9f002__regs_8h_source.html#l00052">MT9F002_MODE_SELECT</a>, <a class="el" href="mt9f002_8c_source.html#l00402">mt9f002_parallel_stage1()</a>, <a class="el" href="mt9f002_8c_source.html#l00499">mt9f002_parallel_stage2()</a>, <a class="el" href="mt9f002_8c_source.html#l00570">mt9f002_set_blanking()</a>, <a class="el" href="mt9f002_8c_source.html#l00666">mt9f002_set_exposure()</a>, <a class="el" href="mt9f002_8c_source.html#l00772">mt9f002_set_gains()</a>, <a class="el" href="mt9f002_8c_source.html#l00540">mt9f002_set_pll()</a>, <a class="el" href="mt9f002_8c_source.html#l00780">mt9f002_set_resolution()</a>, <a class="el" href="mt9f002__regs_8h_source.html#l00054">MT9F002_SOFTWARE_RESET</a>, <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>, and <a class="el" href="mt9f002_8c_source.html#l00081">write_reg()</a>.</p>
-
-<p>Referenced by <a class="el" href="bebop_2board_8c_source.html#l00129">board_init2()</a>.</p>
+<p>References <a class="el" href="mt9f002_8h_source.html#l00175">mt9f002_t::i2c_trans</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="mt9f002_8h_source.html#l00134">mt9f002_t::interface</a>, <a class="el" href="libisp_8c_source.html#l00214">isp_request_statistics_yuv_window()</a>, <a class="el" href="mt9f002_8c_source.html#l00914">mt9f002_calc_resolution()</a>, <a class="el" href="mt9f002_8h_source.html#l00128">MT9F002_HiSPi</a>, <a class="el" href="mt9f002_8h_source.html#l00127">MT9F002_MIPI</a>, <a class="el" href="mt9f002_8c_source.html#l00222">mt9f002_mipi_stage1()</a>, <a class="el" href="mt9f002_8c_source.html#l00478">mt9f002_mipi_stage2()</a>, <a class="el" href="mt9f002_8c_source.html#l00486">mt9f002_mipi_stage3()</a>, <a class="el" href="mt9f002__regs_8h_source.html#l00052">MT9F002_MODE_SELECT</a>, <a class="el" href="mt9f002_8c_source.html#l00497">mt9f002_parallel_stage1()</a>, <a class="el" href="mt9f002_8c_source.html#l00594">mt9f002_parallel_stage2()</a>, <a class="el" href="mt9f002_8c_source.html#l00659">mt9f002_set_blanking()</a>, <a class="el" href="mt9f002_8c_source.html#l00799">mt9f002_set_exposure()</a>, <a class="el" href="mt9f002_8c_source.html#l00906">mt9f002_set_gains()</a>, <a class="el" href="mt9f002_8c_source.html#l00632">mt9f002_set_pll()</a>, <a class="el" href="mt9f002_8c_source.html#l01000">mt9f002_set_resolution()</a>, <a class="el" href="mt9f002__regs_8h_source.html#l00054">MT9F002_SOFTWARE_RESET</a>, <a class="el" href="mt9f002_8h_source.html#l00169">mt9f002_t::sensor_height</a>, <a class="el" href="mt9f002_8h_source.html#l00168">mt9f002_t::sensor_width</a>, <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>, <a class="el" href="mt9f002_8c_source.html#l00053">VERBOSE_PRINT</a>, and <a class="el" href="mt9f002_8c_source.html#l00176">write_reg()</a>.</p>
 
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -772,18 +963,95 @@ Y increment for subsampling (1,3,7 accepted) </td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mt9f002_8h_a8f43c3ad8d5ff841d1203ab6c760c8f0_cgraph.png" border="0" usemap="#mt9f002_8h_a8f43c3ad8d5ff841d1203ab6c760c8f0_cgraph" alt=""/></div>
 <map name="mt9f002_8h_a8f43c3ad8d5ff841d1203ab6c760c8f0_cgraph" id="mt9f002_8h_a8f43c3ad8d5ff841d1203ab6c760c8f0_cgraph">
-<area shape="rect" id="node2" href="mt9f002_8c.html#a19a080f1261d2c93036a71229829f3bc" title="Configure stage 1 for both MiPi and HiSPi connection. " alt="" coords="165,309,327,336"/><area shape="rect" id="node3" href="mt9f002_8c.html#ab00cad0726a874bbfacc6481624e7463" title="Write multiple bytes to a single register. " alt="" coords="415,284,495,311"/><area shape="rect" id="node7" href="mt9f002_8c.html#aa234e478df07549163df80e9d4fe3804" title="Configure stage 2 for both MiPi and HiSPi connection. " alt="" coords="165,5,327,32"/><area shape="rect" id="node8" href="mt9f002_8c.html#a3193ac4829fc656e72624e1969c60f7f" title="Configure stage 3 for both MiPi and HiSPi connection. " alt="" coords="165,56,327,83"/><area shape="rect" id="node9" href="mt9f002_8c.html#a0c50ad7b7330297658579bcf6e71def4" title="Configure stage 1 for parallel connection. " alt="" coords="156,107,336,133"/><area shape="rect" id="node10" href="mt9f002_8c.html#a31a2861994de30b4951549681c8586e4" title="Configure stage 2 for parallel connection. " alt="" coords="156,157,336,184"/><area shape="rect" id="node11" href="mt9f002_8c.html#a36bbdbfc466a49d592b591d9d6a35b5f" title="Set the blanking configuration Blanking of the MT9F002 depends on the target FPS. ..." alt="" coords="165,461,327,488"/><area shape="rect" id="node15" href="mt9f002_8c.html#abcc9f0f2484aa96a4c1cef0c563fd62e" title="Set the exposure configuration Depends on the blanking (and therefore the FPS) " alt="" coords="161,360,331,387"/><area shape="rect" id="node16" href="mt9f002_8c.html#a2b19e806c9c4331da2e4730dd6592e38" title="Sets the GreenR, Blue, Red and GreenB gains. " alt="" coords="174,512,318,539"/><area shape="rect" id="node18" href="mt9f002_8c.html#a938725d4136403996410307333abe9f7" title="Set the PLL registers based on config. " alt="" coords="184,411,308,437"/><area shape="rect" id="node19" href="mt9f002_8c.html#ab56af0c2b794989ad4e1c4e112784588" title="mt9f002_set_resolution" alt="" coords="159,208,333,235"/><area shape="rect" id="node4" href="group__i2c.html#gad729c07f3a162f0463cbe381f4b538d3" title="Submit a write only transaction and wait for it to complete. " alt="" coords="581,323,741,349"/><area shape="rect" id="node5" href="group__i2c.html#ga78e9c2753ae191a4aed66b82077b1dfe" title="i2c_submit() function " alt="" coords="821,323,911,349"/><area shape="rect" id="node6" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup. " alt="" coords="795,373,937,400"/><area shape="rect" id="node12" href="group__math__algebra__int.html#ga6e8dc048191b43239ca6a933bd744468" title="int32_gcd" alt="" coords="413,461,497,488"/><area shape="rect" id="node13" href="mt9f002_8c.html#a776f344a93cb1df009bcf51511f151ae" title="Read multiple bytes from a register. " alt="" coords="416,385,495,412"/><area shape="rect" id="node14" href="group__i2c.html#ga0666a38e1bb2dc7a6b796a404e27fef4" title="Submit a write/read transaction and wait for it to complete. " alt="" coords="575,373,747,400"/><area shape="rect" id="node17" href="mt9f002_8c.html#a1564bc84cae7f55e338ef29831456ac7" title="Calculate the gain based on value of 1.0 &#45;&gt; 63.50. " alt="" coords="384,512,527,539"/></map>
+<area shape="rect" id="node2" href="libisp_8c.html#aac3aeb2b663a02fd97e27007bbfbb95e" title="isp_request_statistics\l_yuv_window" alt="" coords="166,5,326,47"/><area shape="rect" id="node3" href="mt9f002_8c.html#a9506d5f32398c5646dcba11167b56e3b" title="mt9f002_calc_resolution" alt="" coords="157,71,335,98"/><area shape="rect" id="node4" href="mt9f002_8c.html#a19a080f1261d2c93036a71229829f3bc" title="Configure stage 1 for both MiPi and HiSPi connection. " alt="" coords="165,375,327,402"/><area shape="rect" id="node5" href="mt9f002_8c.html#ab00cad0726a874bbfacc6481624e7463" title="Write multiple bytes to a single register. " alt="" coords="415,401,495,427"/><area shape="rect" id="node9" href="mt9f002_8c.html#aa234e478df07549163df80e9d4fe3804" title="Configure stage 2 for both MiPi and HiSPi connection. " alt="" coords="165,426,327,453"/><area shape="rect" id="node10" href="mt9f002_8c.html#a3193ac4829fc656e72624e1969c60f7f" title="Configure stage 3 for both MiPi and HiSPi connection. " alt="" coords="165,122,327,149"/><area shape="rect" id="node11" href="mt9f002_8c.html#a0c50ad7b7330297658579bcf6e71def4" title="Configure stage 1 for parallel connection. " alt="" coords="156,173,336,199"/><area shape="rect" id="node12" href="mt9f002_8c.html#a31a2861994de30b4951549681c8586e4" title="Configure stage 2 for parallel connection. " alt="" coords="156,223,336,250"/><area shape="rect" id="node13" href="mt9f002_8c.html#a36bbdbfc466a49d592b591d9d6a35b5f" title="mt9f002_set_blanking" alt="" coords="165,578,327,605"/><area shape="rect" id="node17" href="mt9f002_8c.html#abcc9f0f2484aa96a4c1cef0c563fd62e" title="Set the exposure configuration Depends on the blanking (and therefore the FPS) " alt="" coords="161,477,331,503"/><area shape="rect" id="node18" href="mt9f002_8c.html#a2b19e806c9c4331da2e4730dd6592e38" title="Sets the GreenR, Blue, Red and GreenB gains. " alt="" coords="174,629,318,655"/><area shape="rect" id="node20" href="mt9f002_8c.html#a938725d4136403996410307333abe9f7" title="Set the PLL registers based on config. " alt="" coords="184,527,308,554"/><area shape="rect" id="node21" href="mt9f002_8c.html#ae8f647b90deb6f61d57af6c5d0bb032f" title="mt9f002_set_resolution" alt="" coords="159,274,333,301"/><area shape="rect" id="node6" href="group__i2c.html#gad729c07f3a162f0463cbe381f4b538d3" title="Submit a write only transaction and wait for it to complete. " alt="" coords="581,439,741,466"/><area shape="rect" id="node7" href="group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction. " alt="" coords="821,490,911,517"/><area shape="rect" id="node8" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup. " alt="" coords="795,439,937,466"/><area shape="rect" id="node14" href="group__math__algebra__int.html#ga6e8dc048191b43239ca6a933bd744468" title="int32_gcd" alt="" coords="413,578,497,605"/><area shape="rect" id="node15" href="mt9f002_8c.html#a776f344a93cb1df009bcf51511f151ae" title="Read multiple bytes from a register. " alt="" coords="416,502,495,529"/><area shape="rect" id="node16" href="group__i2c.html#ga0666a38e1bb2dc7a6b796a404e27fef4" title="Submit a write/read transaction and wait for it to complete. " alt="" coords="575,490,747,517"/><area shape="rect" id="node19" href="mt9f002_8c.html#a1564bc84cae7f55e338ef29831456ac7" title="Calculate the gain based on value of 1.0 &#45;&gt; 63.50. " alt="" coords="384,629,527,655"/></map>
 </div>
 </p>
 
+</div>
+</div>
+<a class="anchor" id="ad35111d4dbfb1bb69e2dcce789ba5e0b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mt9f002_reset_color </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="mt9f002_8h.html#structmt9f002__t">mt9f002_t</a> *&#160;</td>
+          <td class="paramname"><em>mt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="mt9f002_8c_source.html#l01093">1093</a> of file <a class="el" href="mt9f002_8c_source.html">mt9f002.c</a>.</p>
+
+<p>References <a class="el" href="mt9f002_8h_source.html#l00156">mt9f002_t::gain_blue</a>, <a class="el" href="mt9f002_8h_source.html#l00155">mt9f002_t::gain_green1</a>, <a class="el" href="mt9f002_8h_source.html#l00158">mt9f002_t::gain_green2</a>, <a class="el" href="mt9f002_8h_source.html#l00157">mt9f002_t::gain_red</a>, <a class="el" href="mt9f002_8c_source.html#l00086">MT9F002_GAIN_BLUE</a>, <a class="el" href="mt9f002_8c_source.html#l00074">MT9F002_GAIN_GREEN1</a>, <a class="el" href="mt9f002_8c_source.html#l00078">MT9F002_GAIN_GREEN2</a>, <a class="el" href="mt9f002_8c_source.html#l00082">MT9F002_GAIN_RED</a>, and <a class="el" href="mt9f002_8c_source.html#l00906">mt9f002_set_gains()</a>.</p>
+
+<p>Referenced by <a class="el" href="bebop__ae__awb_8c_source.html#l00149">update_ae_awb()</a>.</p>
+
 <p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="mt9f002_8h_a8f43c3ad8d5ff841d1203ab6c760c8f0_icgraph.png" border="0" usemap="#mt9f002_8h_a8f43c3ad8d5ff841d1203ab6c760c8f0_icgraph" alt=""/></div>
-<map name="mt9f002_8h_a8f43c3ad8d5ff841d1203ab6c760c8f0_icgraph" id="mt9f002_8h_a8f43c3ad8d5ff841d1203ab6c760c8f0_icgraph">
-<area shape="rect" id="node2" href="group__mcu__periph.html#gaf8669c6ba2d12460cf1172edd1a5e4a3" title="Optional board init function called at the end of mcu_init(). " alt="" coords="156,56,249,83"/><area shape="rect" id="node3" href="group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b" title="Microcontroller peripherals initialization. " alt="" coords="297,56,373,83"/><area shape="rect" id="node4" href="lpc21_2uart__tunnel_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="434,5,489,32"/><area shape="rect" id="node5" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="421,56,501,83"/><area shape="rect" id="node9" href="fixedwing_2main__fbw_8h.html#ad86b7fe577a2414df2c7a5a9222aa45a" title="init_fbw" alt="" coords="427,107,496,133"/><area shape="rect" id="node6" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="589,5,644,32"/><area shape="rect" id="node7" href="nps__autopilot__rotorcraft_8c.html#a3348493e992edd2442581c1d09446b4b" title="nps_autopilot_init" alt="" coords="549,56,684,83"/><area shape="rect" id="node8" href="nps__main__hitl_8c.html#a72ef549ee35deec8c017e83d9de38f66" title="nps_radio_and_autopilot_init" alt="" coords="732,56,936,83"/><area shape="rect" id="node10" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="581,107,652,133"/></map>
+<div class="center"><img src="mt9f002_8h_ad35111d4dbfb1bb69e2dcce789ba5e0b_cgraph.png" border="0" usemap="#mt9f002_8h_ad35111d4dbfb1bb69e2dcce789ba5e0b_cgraph" alt=""/></div>
+<map name="mt9f002_8h_ad35111d4dbfb1bb69e2dcce789ba5e0b_cgraph" id="mt9f002_8h_ad35111d4dbfb1bb69e2dcce789ba5e0b_cgraph">
+<area shape="rect" id="node2" href="mt9f002_8c.html#a2b19e806c9c4331da2e4730dd6592e38" title="Sets the GreenR, Blue, Red and GreenB gains. " alt="" coords="208,31,352,57"/><area shape="rect" id="node3" href="mt9f002_8c.html#a1564bc84cae7f55e338ef29831456ac7" title="Calculate the gain based on value of 1.0 &#45;&gt; 63.50. " alt="" coords="400,5,543,32"/><area shape="rect" id="node4" href="mt9f002_8c.html#ab00cad0726a874bbfacc6481624e7463" title="Write multiple bytes to a single register. " alt="" coords="431,56,511,83"/><area shape="rect" id="node5" href="group__i2c.html#gad729c07f3a162f0463cbe381f4b538d3" title="Submit a write only transaction and wait for it to complete. " alt="" coords="591,56,751,83"/><area shape="rect" id="node6" href="group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction. " alt="" coords="825,31,915,57"/><area shape="rect" id="node7" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup. " alt="" coords="799,81,941,108"/></map>
+</div>
+</p>
+
+<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="mt9f002_8h_ad35111d4dbfb1bb69e2dcce789ba5e0b_icgraph.png" border="0" usemap="#mt9f002_8h_ad35111d4dbfb1bb69e2dcce789ba5e0b_icgraph" alt=""/></div>
+<map name="mt9f002_8h_ad35111d4dbfb1bb69e2dcce789ba5e0b_icgraph" id="mt9f002_8h_ad35111d4dbfb1bb69e2dcce789ba5e0b_icgraph">
+<area shape="rect" id="node2" href="bebop__ae__awb_8c.html#a98dd41d74e2aed7f79d733e5c554701b" title="update_ae_awb" alt="" coords="208,5,331,32"/><area shape="rect" id="node3" href="bebop__ae__awb_8h.html#a488d91f59b9036f352ebc7fcafdedf7b" title="bebop_ae_awb_init" alt="" coords="379,5,521,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a107e8b9a036f53944cf021efd09ca617"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mt9f002_reset_exposure </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="mt9f002_8h.html#structmt9f002__t">mt9f002_t</a> *&#160;</td>
+          <td class="paramname"><em>mt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="mt9f002_8c_source.html#l01102">1102</a> of file <a class="el" href="mt9f002_8c_source.html">mt9f002.c</a>.</p>
+
+<p>References <a class="el" href="mt9f002_8c_source.html#l00799">mt9f002_set_exposure()</a>, <a class="el" href="mt9f002_8c_source.html#l00069">MT9F002_TARGET_EXPOSURE</a>, and <a class="el" href="mt9f002_8h_source.html#l00152">mt9f002_t::target_exposure</a>.</p>
+
+<p>Referenced by <a class="el" href="bebop__ae__awb_8c_source.html#l00149">update_ae_awb()</a>.</p>
+
+<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="mt9f002_8h_a107e8b9a036f53944cf021efd09ca617_cgraph.png" border="0" usemap="#mt9f002_8h_a107e8b9a036f53944cf021efd09ca617_cgraph" alt=""/></div>
+<map name="mt9f002_8h_a107e8b9a036f53944cf021efd09ca617_cgraph" id="mt9f002_8h_a107e8b9a036f53944cf021efd09ca617_cgraph">
+<area shape="rect" id="node2" href="mt9f002_8c.html#abcc9f0f2484aa96a4c1cef0c563fd62e" title="Set the exposure configuration Depends on the blanking (and therefore the FPS) " alt="" coords="236,31,405,57"/><area shape="rect" id="node3" href="mt9f002_8c.html#a776f344a93cb1df009bcf51511f151ae" title="Read multiple bytes from a register. " alt="" coords="454,5,533,32"/><area shape="rect" id="node7" href="mt9f002_8c.html#ab00cad0726a874bbfacc6481624e7463" title="Write multiple bytes to a single register. " alt="" coords="453,56,533,83"/><area shape="rect" id="node4" href="group__i2c.html#ga0666a38e1bb2dc7a6b796a404e27fef4" title="Submit a write/read transaction and wait for it to complete. " alt="" coords="581,5,753,32"/><area shape="rect" id="node5" href="group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction. " alt="" coords="827,5,918,32"/><area shape="rect" id="node6" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup. " alt="" coords="801,56,944,83"/><area shape="rect" id="node8" href="group__i2c.html#gad729c07f3a162f0463cbe381f4b538d3" title="Submit a write only transaction and wait for it to complete. " alt="" coords="587,56,747,83"/></map>
+</div>
+</p>
+
+<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="mt9f002_8h_a107e8b9a036f53944cf021efd09ca617_icgraph.png" border="0" usemap="#mt9f002_8h_a107e8b9a036f53944cf021efd09ca617_icgraph" alt=""/></div>
+<map name="mt9f002_8h_a107e8b9a036f53944cf021efd09ca617_icgraph" id="mt9f002_8h_a107e8b9a036f53944cf021efd09ca617_icgraph">
+<area shape="rect" id="node2" href="bebop__ae__awb_8c.html#a98dd41d74e2aed7f79d733e5c554701b" title="update_ae_awb" alt="" coords="236,5,359,32"/><area shape="rect" id="node3" href="bebop__ae__awb_8h.html#a488d91f59b9036f352ebc7fcafdedf7b" title="bebop_ae_awb_init" alt="" coords="407,5,549,32"/></map>
 </div>
 </p>
 
@@ -805,31 +1073,31 @@ Y increment for subsampling (1,3,7 accepted) </td></tr>
 
 <p>Set the exposure configuration Depends on the blanking (and therefore the FPS) </p>
 
-<p>Definition at line <a class="el" href="mt9f002_8c_source.html#l00666">666</a> of file <a class="el" href="mt9f002_8c_source.html">mt9f002.c</a>.</p>
+<p>Definition at line <a class="el" href="mt9f002_8c_source.html#l00799">799</a> of file <a class="el" href="mt9f002_8c_source.html">mt9f002.c</a>.</p>
 
-<p>References <a class="el" href="mt9f002_8h_source.html#l00146">mt9f002_t::frame_length</a>, <a class="el" href="mt9f002_8h_source.html#l00145">mt9f002_t::line_length</a>, <a class="el" href="mt9f002__regs_8h_source.html#l00062">MT9F002_COARSE_INTEGRATION_TIME</a>, <a class="el" href="mt9f002__regs_8h_source.html#l00106">MT9F002_COARSE_INTEGRATION_TIME_MAX_MARGIN</a>, <a class="el" href="mt9f002__regs_8h_source.html#l00105">MT9F002_COARSE_INTEGRATION_TIME_MIN</a>, <a class="el" href="mt9f002__regs_8h_source.html#l00177">MT9F002_FINE_INTEGRATION_TIME_</a>, <a class="el" href="mt9f002__regs_8h_source.html#l00108">MT9F002_FINE_INTEGRATION_TIME_MAX_MARGIN</a>, <a class="el" href="mt9f002__regs_8h_source.html#l00107">MT9F002_FINE_INTEGRATION_TIME_MIN</a>, <a class="el" href="mt9f002_8c_source.html#l00108">read_reg()</a>, <a class="el" href="mt9f002_8h_source.html#l00151">mt9f002_t::real_exposure</a>, <a class="el" href="mt9f002_8h_source.html#l00150">mt9f002_t::target_exposure</a>, <a class="el" href="mt9f002_8h_source.html#l00143">mt9f002_t::vt_pix_clk</a>, and <a class="el" href="mt9f002_8c_source.html#l00081">write_reg()</a>.</p>
+<p>References <a class="el" href="mt9f002_8c_source.html#l00170">blanking_t::fine_integration_time_max_margin</a>, <a class="el" href="mt9f002_8c_source.html#l00169">blanking_t::fine_integration_time_min</a>, <a class="el" href="mt9f002_8h_source.html#l00148">mt9f002_t::frame_length</a>, <a class="el" href="mt9f002_8h_source.html#l00147">mt9f002_t::line_length</a>, <a class="el" href="mt9f002_8c.html#a7458d76c113f6562a849be01861e8593">mt9f002_blanking</a>, <a class="el" href="mt9f002__regs_8h_source.html#l00062">MT9F002_COARSE_INTEGRATION_TIME</a>, <a class="el" href="mt9f002__regs_8h_source.html#l00106">MT9F002_COARSE_INTEGRATION_TIME_MAX_MARGIN</a>, <a class="el" href="mt9f002__regs_8h_source.html#l00105">MT9F002_COARSE_INTEGRATION_TIME_MIN</a>, <a class="el" href="mt9f002__regs_8h_source.html#l00177">MT9F002_FINE_INTEGRATION_TIME_</a>, <a class="el" href="mt9f002_8c_source.html#l00203">read_reg()</a>, <a class="el" href="mt9f002_8h_source.html#l00153">mt9f002_t::real_exposure</a>, <a class="el" href="mt9f002_8h_source.html#l00152">mt9f002_t::target_exposure</a>, <a class="el" href="mt9f002_8h_source.html#l00145">mt9f002_t::vt_pix_clk</a>, and <a class="el" href="mt9f002_8c_source.html#l00176">write_reg()</a>.</p>
 
-<p>Referenced by <a class="el" href="bebop__ae__awb_8c_source.html#l00164">bebop_ae_reset()</a>, <a class="el" href="mt9f002_8c_source.html#l00863">mt9f002_init()</a>, and <a class="el" href="bebop__ae__awb_8c_source.html#l00170">update_ae_awb()</a>.</p>
+<p>Referenced by <a class="el" href="mt9f002_8c_source.html#l01036">mt9f002_init()</a>, <a class="el" href="mt9f002_8c_source.html#l01102">mt9f002_reset_exposure()</a>, <a class="el" href="mt9f002_8c_source.html#l01138">mt9f002_setting_update_exposure()</a>, and <a class="el" href="bebop__ae__awb_8c_source.html#l00149">update_ae_awb()</a>.</p>
 
-<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mt9f002_8h_abcc9f0f2484aa96a4c1cef0c563fd62e_cgraph.png" border="0" usemap="#mt9f002_8h_abcc9f0f2484aa96a4c1cef0c563fd62e_cgraph" alt=""/></div>
 <map name="mt9f002_8h_abcc9f0f2484aa96a4c1cef0c563fd62e_cgraph" id="mt9f002_8h_abcc9f0f2484aa96a4c1cef0c563fd62e_cgraph">
-<area shape="rect" id="node2" href="mt9f002_8c.html#a776f344a93cb1df009bcf51511f151ae" title="Read multiple bytes from a register. " alt="" coords="223,5,302,32"/><area shape="rect" id="node6" href="mt9f002_8c.html#ab00cad0726a874bbfacc6481624e7463" title="Write multiple bytes to a single register. " alt="" coords="223,56,303,83"/><area shape="rect" id="node3" href="group__i2c.html#ga0666a38e1bb2dc7a6b796a404e27fef4" title="Submit a write/read transaction and wait for it to complete. " alt="" coords="351,5,523,32"/><area shape="rect" id="node4" href="group__i2c.html#ga78e9c2753ae191a4aed66b82077b1dfe" title="i2c_submit() function " alt="" coords="597,5,687,32"/><area shape="rect" id="node5" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup. " alt="" coords="571,56,713,83"/><area shape="rect" id="node7" href="group__i2c.html#gad729c07f3a162f0463cbe381f4b538d3" title="Submit a write only transaction and wait for it to complete. " alt="" coords="357,56,517,83"/></map>
+<area shape="rect" id="node2" href="mt9f002_8c.html#a776f344a93cb1df009bcf51511f151ae" title="Read multiple bytes from a register. " alt="" coords="223,5,302,32"/><area shape="rect" id="node6" href="mt9f002_8c.html#ab00cad0726a874bbfacc6481624e7463" title="Write multiple bytes to a single register. " alt="" coords="223,56,303,83"/><area shape="rect" id="node3" href="group__i2c.html#ga0666a38e1bb2dc7a6b796a404e27fef4" title="Submit a write/read transaction and wait for it to complete. " alt="" coords="351,5,523,32"/><area shape="rect" id="node4" href="group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction. " alt="" coords="597,5,687,32"/><area shape="rect" id="node5" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup. " alt="" coords="571,56,713,83"/><area shape="rect" id="node7" href="group__i2c.html#gad729c07f3a162f0463cbe381f4b538d3" title="Submit a write only transaction and wait for it to complete. " alt="" coords="357,56,517,83"/></map>
 </div>
 </p>
 
-<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mt9f002_8h_abcc9f0f2484aa96a4c1cef0c563fd62e_icgraph.png" border="0" usemap="#mt9f002_8h_abcc9f0f2484aa96a4c1cef0c563fd62e_icgraph" alt=""/></div>
 <map name="mt9f002_8h_abcc9f0f2484aa96a4c1cef0c563fd62e_icgraph" id="mt9f002_8h_abcc9f0f2484aa96a4c1cef0c563fd62e_icgraph">
-<area shape="rect" id="node2" href="bebop__ae__awb_8c.html#a09ba6ad3cac712b0a7834f2ec49da7c1" title="bebop_ae_reset" alt="" coords="223,56,348,83"/><area shape="rect" id="node3" href="bebop__ae__awb_8c.html#a98dd41d74e2aed7f79d733e5c554701b" title="update_ae_awb" alt="" coords="396,5,519,32"/><area shape="rect" id="node5" href="mt9f002_8h.html#a8f43c3ad8d5ff841d1203ab6c760c8f0" title="Initialisation of the Aptina MT9F002 CMOS sensor (front camera) " alt="" coords="234,107,337,133"/><area shape="rect" id="node4" href="bebop__ae__awb_8h.html#a488d91f59b9036f352ebc7fcafdedf7b" title="bebop_ae_awb_init" alt="" coords="567,31,709,57"/><area shape="rect" id="node6" href="group__mcu__periph.html#gaf8669c6ba2d12460cf1172edd1a5e4a3" title="Optional board init function called at the end of mcu_init(). " alt="" coords="411,107,504,133"/><area shape="rect" id="node7" href="group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b" title="Microcontroller peripherals initialization. " alt="" coords="600,107,676,133"/><area shape="rect" id="node8" href="lpc21_2uart__tunnel_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="770,56,825,83"/><area shape="rect" id="node9" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="757,107,837,133"/><area shape="rect" id="node13" href="fixedwing_2main__fbw_8h.html#ad86b7fe577a2414df2c7a5a9222aa45a" title="init_fbw" alt="" coords="763,157,832,184"/><area shape="rect" id="node10" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="925,56,980,83"/><area shape="rect" id="node11" href="nps__autopilot__rotorcraft_8c.html#a3348493e992edd2442581c1d09446b4b" title="nps_autopilot_init" alt="" coords="885,107,1020,133"/><area shape="rect" id="node12" href="nps__main__hitl_8c.html#a72ef549ee35deec8c017e83d9de38f66" title="nps_radio_and_autopilot_init" alt="" coords="1068,107,1272,133"/><area shape="rect" id="node14" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="917,157,988,184"/></map>
+<area shape="rect" id="node2" href="mt9f002_8h.html#a8f43c3ad8d5ff841d1203ab6c760c8f0" title="Initialisation of the Aptina MT9F002 CMOS sensor (front camera) " alt="" coords="263,5,365,32"/><area shape="rect" id="node3" href="mt9f002_8h.html#a107e8b9a036f53944cf021efd09ca617" title="mt9f002_reset_exposure" alt="" coords="223,56,405,83"/><area shape="rect" id="node4" href="bebop__ae__awb_8c.html#a98dd41d74e2aed7f79d733e5c554701b" title="update_ae_awb" alt="" coords="453,81,576,108"/><area shape="rect" id="node6" href="mt9f002_8h.html#af63a6fbefe3f1f4b959f6b1610b0c9f1" title="mt9f002_setting_update\l_exposure" alt="" coords="225,158,403,199"/><area shape="rect" id="node5" href="bebop__ae__awb_8h.html#a488d91f59b9036f352ebc7fcafdedf7b" title="bebop_ae_awb_init" alt="" coords="624,81,767,108"/></map>
 </div>
 </p>
 
@@ -851,77 +1119,185 @@ Y increment for subsampling (1,3,7 accepted) </td></tr>
 
 <p>Sets the GreenR, Blue, Red and GreenB gains. </p>
 
-<p>Definition at line <a class="el" href="mt9f002_8c_source.html#l00772">772</a> of file <a class="el" href="mt9f002_8c_source.html">mt9f002.c</a>.</p>
+<p>Definition at line <a class="el" href="mt9f002_8c_source.html#l00906">906</a> of file <a class="el" href="mt9f002_8c_source.html">mt9f002.c</a>.</p>
 
-<p>References <a class="el" href="mt9f002_8h_source.html#l00154">mt9f002_t::gain_blue</a>, <a class="el" href="mt9f002_8h_source.html#l00153">mt9f002_t::gain_green1</a>, <a class="el" href="mt9f002_8h_source.html#l00156">mt9f002_t::gain_green2</a>, <a class="el" href="mt9f002_8h_source.html#l00155">mt9f002_t::gain_red</a>, <a class="el" href="mt9f002__regs_8h_source.html#l00205">MT9F002_BLUE_GAIN</a>, <a class="el" href="mt9f002_8c_source.html#l00726">mt9f002_calc_gain()</a>, <a class="el" href="mt9f002__regs_8h_source.html#l00204">MT9F002_GREEN1_GAIN</a>, <a class="el" href="mt9f002__regs_8h_source.html#l00207">MT9F002_GREEN2_GAIN</a>, <a class="el" href="mt9f002__regs_8h_source.html#l00206">MT9F002_RED_GAIN</a>, and <a class="el" href="mt9f002_8c_source.html#l00081">write_reg()</a>.</p>
+<p>References <a class="el" href="mt9f002_8h_source.html#l00156">mt9f002_t::gain_blue</a>, <a class="el" href="mt9f002_8h_source.html#l00155">mt9f002_t::gain_green1</a>, <a class="el" href="mt9f002_8h_source.html#l00158">mt9f002_t::gain_green2</a>, <a class="el" href="mt9f002_8h_source.html#l00157">mt9f002_t::gain_red</a>, <a class="el" href="mt9f002__regs_8h_source.html#l00205">MT9F002_BLUE_GAIN</a>, <a class="el" href="mt9f002_8c_source.html#l00860">mt9f002_calc_gain()</a>, <a class="el" href="mt9f002__regs_8h_source.html#l00204">MT9F002_GREEN1_GAIN</a>, <a class="el" href="mt9f002__regs_8h_source.html#l00207">MT9F002_GREEN2_GAIN</a>, <a class="el" href="mt9f002__regs_8h_source.html#l00206">MT9F002_RED_GAIN</a>, and <a class="el" href="mt9f002_8c_source.html#l00176">write_reg()</a>.</p>
 
-<p>Referenced by <a class="el" href="bebop__ae__awb_8c_source.html#l00154">bebop_awb_reset()</a>, <a class="el" href="mt9f002_8c_source.html#l00863">mt9f002_init()</a>, and <a class="el" href="bebop__ae__awb_8c_source.html#l00170">update_ae_awb()</a>.</p>
+<p>Referenced by <a class="el" href="mt9f002_8c_source.html#l01036">mt9f002_init()</a>, <a class="el" href="mt9f002_8c_source.html#l01093">mt9f002_reset_color()</a>, <a class="el" href="mt9f002_8c_source.html#l01133">mt9f002_setting_update_color()</a>, and <a class="el" href="bebop__ae__awb_8c_source.html#l00149">update_ae_awb()</a>.</p>
 
-<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mt9f002_8h_a2b19e806c9c4331da2e4730dd6592e38_cgraph.png" border="0" usemap="#mt9f002_8h_a2b19e806c9c4331da2e4730dd6592e38_cgraph" alt=""/></div>
 <map name="mt9f002_8h_a2b19e806c9c4331da2e4730dd6592e38_cgraph" id="mt9f002_8h_a2b19e806c9c4331da2e4730dd6592e38_cgraph">
-<area shape="rect" id="node2" href="mt9f002_8c.html#a1564bc84cae7f55e338ef29831456ac7" title="Calculate the gain based on value of 1.0 &#45;&gt; 63.50. " alt="" coords="197,5,340,32"/><area shape="rect" id="node3" href="mt9f002_8c.html#ab00cad0726a874bbfacc6481624e7463" title="Write multiple bytes to a single register. " alt="" coords="229,56,309,83"/><area shape="rect" id="node4" href="group__i2c.html#gad729c07f3a162f0463cbe381f4b538d3" title="Submit a write only transaction and wait for it to complete. " alt="" coords="388,56,548,83"/><area shape="rect" id="node5" href="group__i2c.html#ga78e9c2753ae191a4aed66b82077b1dfe" title="i2c_submit() function " alt="" coords="622,31,713,57"/><area shape="rect" id="node6" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup. " alt="" coords="596,81,739,108"/></map>
+<area shape="rect" id="node2" href="mt9f002_8c.html#a1564bc84cae7f55e338ef29831456ac7" title="Calculate the gain based on value of 1.0 &#45;&gt; 63.50. " alt="" coords="197,5,340,32"/><area shape="rect" id="node3" href="mt9f002_8c.html#ab00cad0726a874bbfacc6481624e7463" title="Write multiple bytes to a single register. " alt="" coords="229,56,309,83"/><area shape="rect" id="node4" href="group__i2c.html#gad729c07f3a162f0463cbe381f4b538d3" title="Submit a write only transaction and wait for it to complete. " alt="" coords="388,56,548,83"/><area shape="rect" id="node5" href="group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction. " alt="" coords="622,31,713,57"/><area shape="rect" id="node6" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup. " alt="" coords="596,81,739,108"/></map>
 </div>
 </p>
 
-<p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="mt9f002_8h_a2b19e806c9c4331da2e4730dd6592e38_icgraph.png" border="0" usemap="#mt9f002_8h_a2b19e806c9c4331da2e4730dd6592e38_icgraph" alt=""/></div>
 <map name="mt9f002_8h_a2b19e806c9c4331da2e4730dd6592e38_icgraph" id="mt9f002_8h_a2b19e806c9c4331da2e4730dd6592e38_icgraph">
-<area shape="rect" id="node2" href="bebop__ae__awb_8c.html#a2437d420ea7e9414fafd1d9e9617807a" title="bebop_awb_reset" alt="" coords="197,56,332,83"/><area shape="rect" id="node3" href="bebop__ae__awb_8c.html#a98dd41d74e2aed7f79d733e5c554701b" title="update_ae_awb" alt="" coords="380,5,503,32"/><area shape="rect" id="node5" href="mt9f002_8h.html#a8f43c3ad8d5ff841d1203ab6c760c8f0" title="Initialisation of the Aptina MT9F002 CMOS sensor (front camera) " alt="" coords="213,107,316,133"/><area shape="rect" id="node4" href="bebop__ae__awb_8h.html#a488d91f59b9036f352ebc7fcafdedf7b" title="bebop_ae_awb_init" alt="" coords="551,31,693,57"/><area shape="rect" id="node6" href="group__mcu__periph.html#gaf8669c6ba2d12460cf1172edd1a5e4a3" title="Optional board init function called at the end of mcu_init(). " alt="" coords="395,107,488,133"/><area shape="rect" id="node7" href="group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b" title="Microcontroller peripherals initialization. " alt="" coords="584,107,660,133"/><area shape="rect" id="node8" href="lpc21_2uart__tunnel_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="754,56,809,83"/><area shape="rect" id="node9" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="741,107,821,133"/><area shape="rect" id="node13" href="fixedwing_2main__fbw_8h.html#ad86b7fe577a2414df2c7a5a9222aa45a" title="init_fbw" alt="" coords="747,157,816,184"/><area shape="rect" id="node10" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="909,56,964,83"/><area shape="rect" id="node11" href="nps__autopilot__rotorcraft_8c.html#a3348493e992edd2442581c1d09446b4b" title="nps_autopilot_init" alt="" coords="869,107,1004,133"/><area shape="rect" id="node12" href="nps__main__hitl_8c.html#a72ef549ee35deec8c017e83d9de38f66" title="nps_radio_and_autopilot_init" alt="" coords="1052,107,1256,133"/><area shape="rect" id="node14" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="901,157,972,184"/></map>
+<area shape="rect" id="node2" href="mt9f002_8h.html#a8f43c3ad8d5ff841d1203ab6c760c8f0" title="Initialisation of the Aptina MT9F002 CMOS sensor (front camera) " alt="" coords="235,5,338,32"/><area shape="rect" id="node3" href="mt9f002_8h.html#ad35111d4dbfb1bb69e2dcce789ba5e0b" title="mt9f002_reset_color" alt="" coords="209,56,364,83"/><area shape="rect" id="node4" href="bebop__ae__awb_8c.html#a98dd41d74e2aed7f79d733e5c554701b" title="update_ae_awb" alt="" coords="424,81,547,108"/><area shape="rect" id="node6" href="mt9f002_8h.html#a2246079e693b6f43730bb618d5f52723" title="mt9f002_setting_update\l_color" alt="" coords="197,158,376,199"/><area shape="rect" id="node5" href="bebop__ae__awb_8h.html#a488d91f59b9036f352ebc7fcafdedf7b" title="bebop_ae_awb_init" alt="" coords="595,81,737,108"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="ab56af0c2b794989ad4e1c4e112784588"></a>
+<a class="anchor" id="a2246079e693b6f43730bb618d5f52723"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void mt9f002_set_resolution </td>
+          <td class="memname">void mt9f002_setting_update_color </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="mt9f002_8h.html#structmt9f002__t">mt9f002_t</a> *&#160;</td>
-          <td class="paramname"><em>mt</em></td><td>)</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>in</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mt9f002_8c_source.html#l00780">780</a> of file <a class="el" href="mt9f002_8c_source.html">mt9f002.c</a>.</p>
+<p>Definition at line <a class="el" href="mt9f002_8c_source.html#l01133">1133</a> of file <a class="el" href="mt9f002_8c_source.html">mt9f002.c</a>.</p>
 
-<p>References <a class="el" href="libisp_8h_source.html#l00007">BAYERSTATS_STATX</a>, <a class="el" href="libisp_8h_source.html#l00008">BAYERSTATS_STATY</a>, <a class="el" href="avi__isp__statistics__yuv_8h_source.html#l00197">avi_isp_statistics_yuv_regs::increments_log2</a>, <a class="el" href="libisp__config_8c_source.html#l00004">isp_config</a>, <a class="el" href="mt9f002_8c_source.html#l00043">MT9F002_MAX_HEIGHT</a>, <a class="el" href="mt9f002_8c_source.html#l00042">MT9F002_MAX_WIDTH</a>, <a class="el" href="mt9f002__regs_8h_source.html#l00092">MT9F002_SCALE_M</a>, <a class="el" href="mt9f002__regs_8h_source.html#l00006">MT9F002_SCALER_N</a>, <a class="el" href="mt9f002__regs_8h_source.html#l00090">MT9F002_SCALING_MODE</a>, <a class="el" href="mt9f002__regs_8h_source.html#l00082">MT9F002_X_ADDR_END</a>, <a class="el" href="mt9f002__regs_8h_source.html#l00080">MT9F002_X_ADDR_START</a>, <a class="el" href="mt9f002__regs_8h_source.html#l00084">MT9F002_X_OUTPUT_SIZE</a>, <a class="el" href="mt9f002__regs_8h_source.html#l00083">MT9F002_Y_ADDR_END</a>, <a class="el" href="mt9f002__regs_8h_source.html#l00081">MT9F002_Y_ADDR_START</a>, <a class="el" href="mt9f002__regs_8h_source.html#l00085">MT9F002_Y_OUTPUT_SIZE</a>, <a class="el" href="mt9f002_8h_source.html#l00163">mt9f002_t::offset_x</a>, <a class="el" href="mt9f002_8h_source.html#l00164">mt9f002_t::offset_y</a>, <a class="el" href="mt9f002_8h_source.html#l00159">mt9f002_t::output_height</a>, <a class="el" href="mt9f002_8h_source.html#l00160">mt9f002_t::output_scaler</a>, <a class="el" href="mt9f002_8h_source.html#l00158">mt9f002_t::output_width</a>, <a class="el" href="mt9f002_8h_source.html#l00162">mt9f002_t::scaled_height</a>, <a class="el" href="mt9f002_8h_source.html#l00161">mt9f002_t::scaled_width</a>, <a class="el" href="libisp_8h_source.html#l00069">libisp_config::statistics_bayer</a>, <a class="el" href="libisp_8h_source.html#l00086">libisp_config::statistics_yuv</a>, <a class="el" href="avi__isp__statistics__yuv_8h_source.html#l00190">avi_isp_statistics_yuv_regs::window_pos_x</a>, <a class="el" href="avi__isp__statistics__yuv_8h_source.html#l00191">avi_isp_statistics_yuv_regs::window_pos_y</a>, <a class="el" href="avi__isp__statistics__bayer_8h_source.html#l00149">avi_isp_statistics_bayer_regs::window_x</a>, <a class="el" href="avi__isp__statistics__bayer_8h_source.html#l00150">avi_isp_statistics_bayer_regs::window_y</a>, <a class="el" href="mt9f002_8c_source.html#l00081">write_reg()</a>, <a class="el" href="mt9f002_8h_source.html#l00166">mt9f002_t::x_odd_inc</a>, and <a class="el" href="mt9f002_8h_source.html#l00167">mt9f002_t::y_odd_inc</a>.</p>
+<p>References <a class="el" href="mt9f002_8c_source.html#l00906">mt9f002_set_gains()</a>.</p>
 
-<p>Referenced by <a class="el" href="mt9f002_8c_source.html#l00863">mt9f002_init()</a>.</p>
-
-<p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="mt9f002_8h_ab56af0c2b794989ad4e1c4e112784588_cgraph.png" border="0" usemap="#mt9f002_8h_ab56af0c2b794989ad4e1c4e112784588_cgraph" alt=""/></div>
-<map name="mt9f002_8h_ab56af0c2b794989ad4e1c4e112784588_cgraph" id="mt9f002_8h_ab56af0c2b794989ad4e1c4e112784588_cgraph">
-<area shape="rect" id="node2" href="mt9f002_8c.html#ab00cad0726a874bbfacc6481624e7463" title="Write multiple bytes to a single register. " alt="" coords="227,31,307,57"/><area shape="rect" id="node3" href="group__i2c.html#gad729c07f3a162f0463cbe381f4b538d3" title="Submit a write only transaction and wait for it to complete. " alt="" coords="355,31,515,57"/><area shape="rect" id="node4" href="group__i2c.html#ga78e9c2753ae191a4aed66b82077b1dfe" title="i2c_submit() function " alt="" coords="589,5,679,32"/><area shape="rect" id="node5" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup. " alt="" coords="563,56,705,83"/></map>
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="mt9f002_8h_a2246079e693b6f43730bb618d5f52723_cgraph.png" border="0" usemap="#mt9f002_8h_a2246079e693b6f43730bb618d5f52723_cgraph" alt=""/></div>
+<map name="mt9f002_8h_a2246079e693b6f43730bb618d5f52723_cgraph" id="mt9f002_8h_a2246079e693b6f43730bb618d5f52723_cgraph">
+<area shape="rect" id="node2" href="mt9f002_8c.html#a2b19e806c9c4331da2e4730dd6592e38" title="Sets the GreenR, Blue, Red and GreenB gains. " alt="" coords="232,31,376,57"/><area shape="rect" id="node3" href="mt9f002_8c.html#a1564bc84cae7f55e338ef29831456ac7" title="Calculate the gain based on value of 1.0 &#45;&gt; 63.50. " alt="" coords="424,5,567,32"/><area shape="rect" id="node4" href="mt9f002_8c.html#ab00cad0726a874bbfacc6481624e7463" title="Write multiple bytes to a single register. " alt="" coords="455,56,535,83"/><area shape="rect" id="node5" href="group__i2c.html#gad729c07f3a162f0463cbe381f4b538d3" title="Submit a write only transaction and wait for it to complete. " alt="" coords="615,56,775,83"/><area shape="rect" id="node6" href="group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction. " alt="" coords="849,31,939,57"/><area shape="rect" id="node7" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup. " alt="" coords="823,81,965,108"/></map>
 </div>
 </p>
 
-<p><div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="mt9f002_8h_ab56af0c2b794989ad4e1c4e112784588_icgraph.png" border="0" usemap="#mt9f002_8h_ab56af0c2b794989ad4e1c4e112784588_icgraph" alt=""/></div>
-<map name="mt9f002_8h_ab56af0c2b794989ad4e1c4e112784588_icgraph" id="mt9f002_8h_ab56af0c2b794989ad4e1c4e112784588_icgraph">
-<area shape="rect" id="node2" href="mt9f002_8h.html#a8f43c3ad8d5ff841d1203ab6c760c8f0" title="Initialisation of the Aptina MT9F002 CMOS sensor (front camera) " alt="" coords="227,56,329,83"/><area shape="rect" id="node3" href="group__mcu__periph.html#gaf8669c6ba2d12460cf1172edd1a5e4a3" title="Optional board init function called at the end of mcu_init(). " alt="" coords="377,56,471,83"/><area shape="rect" id="node4" href="group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b" title="Microcontroller peripherals initialization. " alt="" coords="519,56,595,83"/><area shape="rect" id="node5" href="lpc21_2uart__tunnel_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="655,5,710,32"/><area shape="rect" id="node6" href="demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="643,56,723,83"/><area shape="rect" id="node10" href="fixedwing_2main__fbw_8h.html#ad86b7fe577a2414df2c7a5a9222aa45a" title="init_fbw" alt="" coords="648,107,717,133"/><area shape="rect" id="node7" href="demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="811,5,865,32"/><area shape="rect" id="node8" href="nps__autopilot__rotorcraft_8c.html#a3348493e992edd2442581c1d09446b4b" title="nps_autopilot_init" alt="" coords="771,56,905,83"/><area shape="rect" id="node9" href="nps__main__hitl_8c.html#a72ef549ee35deec8c017e83d9de38f66" title="nps_radio_and_autopilot_init" alt="" coords="953,56,1157,83"/><area shape="rect" id="node11" href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="803,107,873,133"/></map>
+</div>
+<a class="anchor" id="af63a6fbefe3f1f4b959f6b1610b0c9f1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mt9f002_setting_update_exposure </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>in</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="mt9f002_8c_source.html#l01138">1138</a> of file <a class="el" href="mt9f002_8c_source.html">mt9f002.c</a>.</p>
+
+<p>References <a class="el" href="mt9f002_8c_source.html#l00799">mt9f002_set_exposure()</a>.</p>
+
+<p><div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="mt9f002_8h_af63a6fbefe3f1f4b959f6b1610b0c9f1_cgraph.png" border="0" usemap="#mt9f002_8h_af63a6fbefe3f1f4b959f6b1610b0c9f1_cgraph" alt=""/></div>
+<map name="mt9f002_8h_af63a6fbefe3f1f4b959f6b1610b0c9f1_cgraph" id="mt9f002_8h_af63a6fbefe3f1f4b959f6b1610b0c9f1_cgraph">
+<area shape="rect" id="node2" href="mt9f002_8c.html#abcc9f0f2484aa96a4c1cef0c563fd62e" title="Set the exposure configuration Depends on the blanking (and therefore the FPS) " alt="" coords="232,31,401,57"/><area shape="rect" id="node3" href="mt9f002_8c.html#a776f344a93cb1df009bcf51511f151ae" title="Read multiple bytes from a register. " alt="" coords="450,5,529,32"/><area shape="rect" id="node7" href="mt9f002_8c.html#ab00cad0726a874bbfacc6481624e7463" title="Write multiple bytes to a single register. " alt="" coords="449,56,529,83"/><area shape="rect" id="node4" href="group__i2c.html#ga0666a38e1bb2dc7a6b796a404e27fef4" title="Submit a write/read transaction and wait for it to complete. " alt="" coords="577,5,749,32"/><area shape="rect" id="node5" href="group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction. " alt="" coords="823,5,914,32"/><area shape="rect" id="node6" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup. " alt="" coords="797,56,940,83"/><area shape="rect" id="node8" href="group__i2c.html#gad729c07f3a162f0463cbe381f4b538d3" title="Submit a write only transaction and wait for it to complete. " alt="" coords="583,56,743,83"/></map>
 </div>
 </p>
+
+</div>
+</div>
+<a class="anchor" id="aa1e09e3bbb34e6f084cf490573ca1f32"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mt9f002_setting_update_resolution </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>in</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="mt9f002_8c_source.html#l01111">1111</a> of file <a class="el" href="mt9f002_8c_source.html">mt9f002.c</a>.</p>
+
+<p>References <a class="el" href="mt9f002_8h_source.html#l00038">CFG_MT9F002_PIXEL_ARRAY_HEIGHT</a>, <a class="el" href="mt9f002_8h_source.html#l00039">CFG_MT9F002_PIXEL_ARRAY_WIDTH</a>, <a class="el" href="libisp_8c_source.html#l00214">isp_request_statistics_yuv_window()</a>, <a class="el" href="rotorcraft_2main__fbw_8c_source.html#l00053">Max</a>, <a class="el" href="mt9f002_8c_source.html#l00914">mt9f002_calc_resolution()</a>, <a class="el" href="mt9f002_8c_source.html#l00659">mt9f002_set_blanking()</a>, <a class="el" href="mt9f002_8c_source.html#l01000">mt9f002_set_resolution()</a>, <a class="el" href="mt9f002_8h_source.html#l00165">mt9f002_t::offset_x</a>, <a class="el" href="mt9f002_8h_source.html#l00166">mt9f002_t::offset_y</a>, <a class="el" href="mt9f002_8h_source.html#l00169">mt9f002_t::sensor_height</a>, <a class="el" href="mt9f002_8h_source.html#l00168">mt9f002_t::sensor_width</a>, <a class="el" href="mt9f002_8h_source.html#l00178">mt9f002_t::set_offset_x</a>, <a class="el" href="mt9f002_8h_source.html#l00179">mt9f002_t::set_offset_y</a>, and <a class="el" href="mt9f002_8h_source.html#l00177">mt9f002_t::set_zoom</a>.</p>
+
+<p><div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="mt9f002_8h_aa1e09e3bbb34e6f084cf490573ca1f32_cgraph.png" border="0" usemap="#mt9f002_8h_aa1e09e3bbb34e6f084cf490573ca1f32_cgraph" alt=""/></div>
+<map name="mt9f002_8h_aa1e09e3bbb34e6f084cf490573ca1f32_cgraph" id="mt9f002_8h_aa1e09e3bbb34e6f084cf490573ca1f32_cgraph">
+<area shape="rect" id="node2" href="libisp_8c.html#aac3aeb2b663a02fd97e27007bbfbb95e" title="isp_request_statistics\l_yuv_window" alt="" coords="241,5,401,47"/><area shape="rect" id="node3" href="mt9f002_8c.html#a9506d5f32398c5646dcba11167b56e3b" title="mt9f002_calc_resolution" alt="" coords="232,71,411,98"/><area shape="rect" id="node4" href="mt9f002_8c.html#a36bbdbfc466a49d592b591d9d6a35b5f" title="mt9f002_set_blanking" alt="" coords="240,122,403,149"/><area shape="rect" id="node12" href="mt9f002_8c.html#ae8f647b90deb6f61d57af6c5d0bb032f" title="mt9f002_set_resolution" alt="" coords="235,173,408,199"/><area shape="rect" id="node5" href="group__math__algebra__int.html#ga6e8dc048191b43239ca6a933bd744468" title="int32_gcd" alt="" coords="459,122,543,149"/><area shape="rect" id="node6" href="mt9f002_8c.html#a776f344a93cb1df009bcf51511f151ae" title="Read multiple bytes from a register. " alt="" coords="461,71,540,98"/><area shape="rect" id="node10" href="mt9f002_8c.html#ab00cad0726a874bbfacc6481624e7463" title="Write multiple bytes to a single register. " alt="" coords="461,173,541,199"/><area shape="rect" id="node7" href="group__i2c.html#ga0666a38e1bb2dc7a6b796a404e27fef4" title="Submit a write/read transaction and wait for it to complete. " alt="" coords="591,97,763,123"/><area shape="rect" id="node8" href="group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367" title="Submit a I2C transaction. " alt="" coords="837,97,927,123"/><area shape="rect" id="node9" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup. " alt="" coords="811,147,953,174"/><area shape="rect" id="node11" href="group__i2c.html#gad729c07f3a162f0463cbe381f4b538d3" title="Submit a write only transaction and wait for it to complete. " alt="" coords="597,147,757,174"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a class="anchor" id="a0a67664fafa1d9cbcc7deaa1352d1673"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="mt9f002_8h.html#structmt9f002__t">mt9f002_t</a> mt9f002</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="mt9f002_8c_source.html#l00123">123</a> of file <a class="el" href="mt9f002_8c_source.html">mt9f002.c</a>.</p>
+
+<p>Referenced by <a class="el" href="bebop__ae__awb_8c_source.html#l00149">update_ae_awb()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a935c1300a2cc1c81907eb532a850061d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float mt9f002_send_color</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="mt9f002_8h_source.html#l00193">193</a> of file <a class="el" href="mt9f002_8h_source.html">mt9f002.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acc69c5f8a155e6cfafbd704582811f97"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float mt9f002_send_exposure</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="mt9f002_8h_source.html#l00194">194</a> of file <a class="el" href="mt9f002_8h_source.html">mt9f002.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9ac1d3e3a7f2ab0d12227da19352c3be"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float mt9f002_send_resolution</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="mt9f002_8h_source.html#l00192">192</a> of file <a class="el" href="mt9f002_8h_source.html">mt9f002.h</a>.</p>
 
 </div>
 </div>
@@ -931,7 +1307,7 @@ Y increment for subsampling (1,3,7 accepted) </td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e030268cd18297cf6282390f76bfcf7f.html">boards</a></li><li class="navelem"><a class="el" href="dir_1e1e24cfb731b3b06114ecddfd068653.html">bebop</a></li><li class="navelem"><a class="el" href="mt9f002_8h.html">mt9f002.h</a></li>
-    <li class="footer">Generated on Wed Sep 12 2018 02:03:10 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:02:52 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

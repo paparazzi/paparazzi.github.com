@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -167,17 +167,17 @@ $(document).ready(function(){initNavTree('baro__mpl3115_8c_source.html','');});
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;{</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <a class="code" href="mpl3115_8c.html#aefe7f165c195ba90ae950ae74b388148">mpl3115_event</a>(&amp;<a class="code" href="baro__mpl3115_8c.html#a123e85ff223a71e49cc7640550d99d4f">baro_mpl</a>);</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="baro__mpl3115_8c.html#a123e85ff223a71e49cc7640550d99d4f">baro_mpl</a>.<a class="code" href="mpl3115_8h.html#adf6015ee3f81b40ca0092d06099e5354">data_available</a>) {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="mpl3115_8h.html#a031d8d4f8fdce1d9155ffb19f2021df1">pressure</a> = (float)<a class="code" href="baro__mpl3115_8c.html#a123e85ff223a71e49cc7640550d99d4f">baro_mpl</a>.<a class="code" href="mpl3115_8h.html#a031d8d4f8fdce1d9155ffb19f2021df1">pressure</a> / (1 &lt;&lt; 2);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    AbiSendMsgBARO_ABS(<a class="code" href="abi__sender__ids_8h.html#a63a34f17c71c5dcf3f2abee9c229d5c8">BARO_MPL3115_SENDER_ID</a>, pressure);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">float</span> temp = (float)<a class="code" href="baro__mpl3115_8c.html#a123e85ff223a71e49cc7640550d99d4f">baro_mpl</a>.<a class="code" href="mpl3115_8h.html#a031d8d4f8fdce1d9155ffb19f2021df1">pressure</a> / 16.0f;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    AbiSendMsgTEMPERATURE(<a class="code" href="abi__sender__ids_8h.html#a63a34f17c71c5dcf3f2abee9c229d5c8">BARO_MPL3115_SENDER_ID</a>, temp);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#ifdef SENSOR_SYNC_SEND</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    DOWNLINK_SEND_MPL3115_BARO(<a class="code" href="downlink_8h.html#a891b19a3eba08208d4e550aa6c6188dd">DefaultChannel</a>, <a class="code" href="downlink_8h.html#a028b405f95cecb4af565b17c8ee71d80">DefaultDevice</a>, &amp;<a class="code" href="baro__mpl3115_8c.html#a123e85ff223a71e49cc7640550d99d4f">baro_mpl</a>.<a class="code" href="mpl3115_8h.html#a031d8d4f8fdce1d9155ffb19f2021df1">pressure</a>, &amp;<a class="code" href="baro__mpl3115_8c.html#a123e85ff223a71e49cc7640550d99d4f">baro_mpl</a>.<a class="code" href="mpl3115_8h.html#a9120eb49677bc5872cd7ed65b986e730">temperature</a>, &amp;<a class="code" href="baro__mpl3115_8c.html#a123e85ff223a71e49cc7640550d99d4f">baro_mpl</a>.alt);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <a class="code" href="baro__mpl3115_8c.html#a123e85ff223a71e49cc7640550d99d4f">baro_mpl</a>.<a class="code" href="mpl3115_8h.html#adf6015ee3f81b40ca0092d06099e5354">data_available</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  }</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> now_ts = <a class="code" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb">get_sys_time_usec</a>();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="mpl3115_8h.html#a031d8d4f8fdce1d9155ffb19f2021df1">pressure</a> = (float)<a class="code" href="baro__mpl3115_8c.html#a123e85ff223a71e49cc7640550d99d4f">baro_mpl</a>.<a class="code" href="mpl3115_8h.html#a031d8d4f8fdce1d9155ffb19f2021df1">pressure</a> / (1 &lt;&lt; 2);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    AbiSendMsgBARO_ABS(<a class="code" href="abi__sender__ids_8h.html#a63a34f17c71c5dcf3f2abee9c229d5c8">BARO_MPL3115_SENDER_ID</a>, pressure);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">float</span> temp = (float)<a class="code" href="baro__mpl3115_8c.html#a123e85ff223a71e49cc7640550d99d4f">baro_mpl</a>.<a class="code" href="mpl3115_8h.html#a031d8d4f8fdce1d9155ffb19f2021df1">pressure</a> / 16.0f;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    AbiSendMsgTEMPERATURE(<a class="code" href="abi__sender__ids_8h.html#a63a34f17c71c5dcf3f2abee9c229d5c8">BARO_MPL3115_SENDER_ID</a>, now_ts, temp);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#ifdef SENSOR_SYNC_SEND</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    DOWNLINK_SEND_MPL3115_BARO(<a class="code" href="downlink_8h.html#a891b19a3eba08208d4e550aa6c6188dd">DefaultChannel</a>, <a class="code" href="downlink_8h.html#a028b405f95cecb4af565b17c8ee71d80">DefaultDevice</a>, &amp;<a class="code" href="baro__mpl3115_8c.html#a123e85ff223a71e49cc7640550d99d4f">baro_mpl</a>.<a class="code" href="mpl3115_8h.html#a031d8d4f8fdce1d9155ffb19f2021df1">pressure</a>, &amp;<a class="code" href="baro__mpl3115_8c.html#a123e85ff223a71e49cc7640550d99d4f">baro_mpl</a>.<a class="code" href="mpl3115_8h.html#a9120eb49677bc5872cd7ed65b986e730">temperature</a>, &amp;<a class="code" href="baro__mpl3115_8c.html#a123e85ff223a71e49cc7640550d99d4f">baro_mpl</a>.alt);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <a class="code" href="baro__mpl3115_8c.html#a123e85ff223a71e49cc7640550d99d4f">baro_mpl</a>.<a class="code" href="mpl3115_8h.html#adf6015ee3f81b40ca0092d06099e5354">data_available</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  }</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
@@ -192,6 +192,7 @@ $(document).ready(function(){initNavTree('baro__mpl3115_8c_source.html','');});
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
 <div class="ttc" id="mpl3115_8h_html_adf6015ee3f81b40ca0092d06099e5354"><div class="ttname"><a href="mpl3115_8h.html#adf6015ee3f81b40ca0092d06099e5354">Mpl3115::data_available</a></div><div class="ttdeci">volatile bool data_available</div><div class="ttdoc">data ready flag </div><div class="ttdef"><b>Definition:</b> <a href="mpl3115_8h_source.html#l00076">mpl3115.h:76</a></div></div>
 <div class="ttc" id="uart_8h_html"><div class="ttname"><a href="uart_8h.html">uart.h</a></div><div class="ttdoc">arch independent UART (Universal Asynchronous Receiver/Transmitter) API </div></div>
 <div class="ttc" id="mpl3115_8c_html_a99a5dd8ffadd3cd757fede313accf050"><div class="ttname"><a href="mpl3115_8c.html#a99a5dd8ffadd3cd757fede313accf050">mpl3115_init</a></div><div class="ttdeci">void mpl3115_init(struct Mpl3115 *mpl, struct i2c_periph *i2c_p, uint8_t addr)</div><div class="ttdef"><b>Definition:</b> <a href="mpl3115_8c_source.html#l00031">mpl3115.c:31</a></div></div>
@@ -205,6 +206,7 @@ $(document).ready(function(){initNavTree('baro__mpl3115_8c_source.html','');});
 <div class="ttc" id="baro__mpl3115_8c_html_a28dec6a30759de1ada1c88d5eab50d98"><div class="ttname"><a href="baro__mpl3115_8c.html#a28dec6a30759de1ada1c88d5eab50d98">baro_mpl3115_read_periodic</a></div><div class="ttdeci">void baro_mpl3115_read_periodic(void)</div><div class="ttdef"><b>Definition:</b> <a href="baro__mpl3115_8c_source.html#l00056">baro_mpl3115.c:56</a></div></div>
 <div class="ttc" id="mpl3115_8h_html_a031d8d4f8fdce1d9155ffb19f2021df1"><div class="ttname"><a href="mpl3115_8h.html#a031d8d4f8fdce1d9155ffb19f2021df1">Mpl3115::pressure</a></div><div class="ttdeci">uint32_t pressure</div><div class="ttdoc">pressure in 1/4 Pascal </div><div class="ttdef"><b>Definition:</b> <a href="mpl3115_8h_source.html#l00080">mpl3115.h:80</a></div></div>
 <div class="ttc" id="mpl3115_8h_html_structMpl3115"><div class="ttname"><a href="mpl3115_8h.html#structMpl3115">Mpl3115</a></div><div class="ttdef"><b>Definition:</b> <a href="mpl3115_8h_source.html#l00070">mpl3115.h:70</a></div></div>
+<div class="ttc" id="types_8h_html_a06896e8c53f721507066c079052171f8"><div class="ttname"><a href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a></div><div class="ttdeci">unsigned long uint32_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00018">types.h:18</a></div></div>
 <div class="ttc" id="mpl3115_8h_html"><div class="ttname"><a href="mpl3115_8h.html">mpl3115.h</a></div><div class="ttdoc">Driver for the baro MPL3115A2 from Freescale (i2c) </div></div>
 <div class="ttc" id="baro__mpl3115_8c_html_a51d02f671661247a78075fe55d0315f5"><div class="ttname"><a href="baro__mpl3115_8c.html#a51d02f671661247a78075fe55d0315f5">baro_mpl3115_init</a></div><div class="ttdeci">void baro_mpl3115_init(void)</div><div class="ttdef"><b>Definition:</b> <a href="baro__mpl3115_8c_source.html#l00050">baro_mpl3115.c:50</a></div></div>
 <div class="ttc" id="mpl3115_8h_html_a9120eb49677bc5872cd7ed65b986e730"><div class="ttname"><a href="mpl3115_8h.html#a9120eb49677bc5872cd7ed65b986e730">Mpl3115::temperature</a></div><div class="ttdeci">int16_t temperature</div><div class="ttdoc">temperature in 1/16 degrees Celcius </div><div class="ttdef"><b>Definition:</b> <a href="mpl3115_8h_source.html#l00079">mpl3115.h:79</a></div></div>
@@ -213,13 +215,14 @@ $(document).ready(function(){initNavTree('baro__mpl3115_8c_source.html','');});
 <div class="ttc" id="downlink_8h_html"><div class="ttname"><a href="downlink_8h.html">downlink.h</a></div><div class="ttdoc">Common code for AP and FBW telemetry. </div></div>
 <div class="ttc" id="baro__mpl3115_8c_html_a123e85ff223a71e49cc7640550d99d4f"><div class="ttname"><a href="baro__mpl3115_8c.html#a123e85ff223a71e49cc7640550d99d4f">baro_mpl</a></div><div class="ttdeci">struct Mpl3115 baro_mpl</div><div class="ttdef"><b>Definition:</b> <a href="baro__mpl3115_8c_source.html#l00048">baro_mpl3115.c:48</a></div></div>
 <div class="ttc" id="baro__mpl3115_8h_html"><div class="ttname"><a href="baro__mpl3115_8h.html">baro_mpl3115.h</a></div><div class="ttdoc">Module for the baro MPL3115A2 from Freescale (i2c) </div></div>
+<div class="ttc" id="chibios_2mcu__periph_2sys__time__arch_8c_html_a7ddfef1f78a56c6b4c4c536b5d670bfb"><div class="ttname"><a href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb">get_sys_time_usec</a></div><div class="ttdeci">uint32_t get_sys_time_usec(void)</div><div class="ttdoc">Get the time in microseconds since startup. </div><div class="ttdef"><b>Definition:</b> <a href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00068">sys_time_arch.c:68</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_2f48bbb566df394f79dcf8fe0631584a.html">sensors</a></li><li class="navelem"><a class="el" href="baro__mpl3115_8c.html">baro_mpl3115.c</a></li>
-    <li class="footer">Generated on Wed Sep 12 2018 02:02:52 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:02:29 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

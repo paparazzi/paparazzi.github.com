@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -121,6 +121,8 @@ $(document).ready(function(){initNavTree('ctrl__module__outerloop__demo_8c.html'
 <code>#include &quot;<a class="el" href="radio__control_8h_source.html">subsystems/radio_control.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="stabilization_8h_source.html">firmwares/rotorcraft/stabilization.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="rotorcraft_2stabilization_2stabilization__attitude_8h_source.html">firmwares/rotorcraft/stabilization/stabilization_attitude.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="stabilization__attitude__rc__setpoint_8h_source.html">firmwares/rotorcraft/stabilization/stabilization_attitude_rc_setpoint.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="autopilot_8h_source.html">autopilot.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for ctrl_module_outerloop_demo.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -128,7 +130,7 @@ $(document).ready(function(){initNavTree('ctrl__module__outerloop__demo_8c.html'
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ctrl__module__outerloop__demo_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2ctrl_2ctrl__module__outerloop__demo_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2ctrl_2ctrl__module__outerloop__demo_8c" id="sw_2airborne_2modules_2ctrl_2ctrl__module__outerloop__demo_8c">
-<area shape="rect" id="node2" href="ctrl__module__outerloop__demo_8h.html" title="example empty controller " alt="" coords="134,117,314,158"/><area shape="rect" id="node4" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="635,124,701,151"/><area shape="rect" id="node18" href="radio__control_8h.html" title="subsystems/radio_control.h" alt="" coords="1314,124,1513,151"/><area shape="rect" id="node25" href="stabilization_8h.html" title="General stabilization interface for rotorcrafts. " alt="" coords="1163,213,1311,255"/><area shape="rect" id="node26" href="rotorcraft_2stabilization_2stabilization__attitude_8h.html" title="General attitude stabilization interface for rotorcrafts. " alt="" coords="957,109,1139,165"/><area shape="rect" id="node5" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="267,303,445,329"/><area shape="rect" id="node11" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="773,303,963,329"/><area shape="rect" id="node14" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="505,213,655,255"/><area shape="rect" id="node16" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="679,213,830,255"/><area shape="rect" id="node17" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="265,213,429,255"/><area shape="rect" id="node6" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="621,377,776,404"/><area shape="rect" id="node9" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="151,377,302,404"/><area shape="rect" id="node15" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="521,303,645,329"/><area shape="rect" id="node19" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API " alt="" coords="1387,221,1440,247"/><area shape="rect" id="node22" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="1672,221,1768,247"/><area shape="rect" id="node23" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1677,303,1763,329"/></map>
+<area shape="rect" id="node2" href="ctrl__module__outerloop__demo_8h.html" title="example empty controller " alt="" coords="5,407,185,448"/><area shape="rect" id="node4" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="771,221,838,247"/><area shape="rect" id="node18" href="radio__control_8h.html" title="subsystems/radio_control.h" alt="" coords="1827,124,2025,151"/><area shape="rect" id="node25" href="stabilization_8h.html" title="General stabilization interface for rotorcrafts. " alt="" coords="577,213,725,255"/><area shape="rect" id="node26" href="rotorcraft_2stabilization_2stabilization__attitude_8h.html" title="General attitude stabilization interface for rotorcrafts. " alt="" coords="420,109,603,165"/><area shape="rect" id="node28" href="stabilization__attitude__rc__setpoint_8h.html" title="Read an attitude setpoint from the RC. " alt="" coords="953,303,1136,359"/><area shape="rect" id="node29" href="autopilot_8h.html" title="Core autopilot interface common to all firmwares. " alt="" coords="1279,124,1370,151"/><area shape="rect" id="node5" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="693,414,871,441"/><area shape="rect" id="node12" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="987,414,1177,441"/><area shape="rect" id="node14" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="312,310,463,351"/><area shape="rect" id="node16" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="539,310,689,351"/><area shape="rect" id="node17" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="765,310,929,351"/><area shape="rect" id="node6" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="1266,496,1421,523"/><area shape="rect" id="node10" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="707,496,857,523"/><area shape="rect" id="node15" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="364,414,488,441"/><area shape="rect" id="node19" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API " alt="" coords="1963,221,2017,247"/><area shape="rect" id="node22" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="1793,221,1889,247"/><area shape="rect" id="node23" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1798,317,1883,344"/></map>
 </div>
 </div>
 <p><a href="ctrl__module__outerloop__demo_8c_source.html">Go to the source code of this file.</a></p>
@@ -239,9 +241,9 @@ rc_z</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ctrl__module__outerloop__demo_8c_source.html#l00057">57</a> of file <a class="el" href="ctrl__module__outerloop__demo_8c_source.html">ctrl_module_outerloop_demo.c</a>.</p>
+<p>Definition at line <a class="el" href="ctrl__module__outerloop__demo_8c_source.html#l00058">58</a> of file <a class="el" href="ctrl__module__outerloop__demo_8c_source.html">ctrl_module_outerloop_demo.c</a>.</p>
 
-<p>References <a class="el" href="ctrl__module__outerloop__demo_8c_source.html#l00041">ctrl_module_demo_struct::cmd</a>, <a class="el" href="ctrl__module__outerloop__demo_8c.html#a3a589132e4ce8f7571ef838379bd4065">ctrl</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00149">Int32Eulers::psi</a>, <a class="el" href="stabilization__attitude__rc__setpoint_8c_source.html#l00173">stabilization_attitude_read_rc_setpoint_eulers()</a>, and <a class="el" href="state_8h_source.html#l01125">stateGetNedToBodyEulers_i()</a>.</p>
+<p>References <a class="el" href="autopilot_8c_source.html#l00050">autopilot</a>, <a class="el" href="ctrl__module__outerloop__demo_8c_source.html#l00042">ctrl_module_demo_struct::cmd</a>, <a class="el" href="ctrl__module__outerloop__demo_8c.html#a3a589132e4ce8f7571ef838379bd4065">ctrl</a>, <a class="el" href="autopilot_8h_source.html#l00070">pprz_autopilot::in_flight</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00149">Int32Eulers::psi</a>, <a class="el" href="ctrl__module__outerloop__demo_8c_source.html#l00039">ctrl_module_demo_struct::rc_sp</a>, <a class="el" href="stabilization__attitude__rc__setpoint_8c_source.html#l00173">stabilization_attitude_read_rc_setpoint_eulers()</a>, and <a class="el" href="state_8h_source.html#l01125">stateGetNedToBodyEulers_i()</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -270,7 +272,7 @@ rc_z</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ctrl__module__outerloop__demo_8c_source.html#l00053">53</a> of file <a class="el" href="ctrl__module__outerloop__demo_8c_source.html">ctrl_module_outerloop_demo.c</a>.</p>
+<p>Definition at line <a class="el" href="ctrl__module__outerloop__demo_8c_source.html#l00054">54</a> of file <a class="el" href="ctrl__module__outerloop__demo_8c_source.html">ctrl_module_outerloop_demo.c</a>.</p>
 
 </div>
 </div>
@@ -288,9 +290,9 @@ rc_z</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ctrl__module__outerloop__demo_8c_source.html#l00066">66</a> of file <a class="el" href="ctrl__module__outerloop__demo_8c_source.html">ctrl_module_outerloop_demo.c</a>.</p>
+<p>Definition at line <a class="el" href="ctrl__module__outerloop__demo_8c_source.html#l00067">67</a> of file <a class="el" href="ctrl__module__outerloop__demo_8c_source.html">ctrl_module_outerloop_demo.c</a>.</p>
 
-<p>References <a class="el" href="stabilization__attitude__rc__setpoint_8c_source.html#l00173">stabilization_attitude_read_rc_setpoint_eulers()</a>.</p>
+<p>References <a class="el" href="autopilot_8c_source.html#l00050">autopilot</a>, <a class="el" href="ctrl__module__outerloop__demo_8c.html#a3a589132e4ce8f7571ef838379bd4065">ctrl</a>, <a class="el" href="autopilot_8h_source.html#l00070">pprz_autopilot::in_flight</a>, <a class="el" href="ctrl__module__outerloop__demo_8c_source.html#l00039">ctrl_module_demo_struct::rc_sp</a>, and <a class="el" href="stabilization__attitude__rc__setpoint_8c_source.html#l00173">stabilization_attitude_read_rc_setpoint_eulers()</a>.</p>
 
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -319,9 +321,9 @@ rc_z</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ctrl__module__outerloop__demo_8c_source.html#l00072">72</a> of file <a class="el" href="ctrl__module__outerloop__demo_8c_source.html">ctrl_module_outerloop_demo.c</a>.</p>
+<p>Definition at line <a class="el" href="ctrl__module__outerloop__demo_8c_source.html#l00073">73</a> of file <a class="el" href="ctrl__module__outerloop__demo_8c_source.html">ctrl_module_outerloop_demo.c</a>.</p>
 
-<p>References <a class="el" href="pprz__algebra__int_8h_source.html#l00210">ANGLE_BFP_OF_REAL</a>, <a class="el" href="ctrl__module__outerloop__demo_8c_source.html#l00041">ctrl_module_demo_struct::cmd</a>, <a class="el" href="ctrl__module__outerloop__demo_8c.html#a3a589132e4ce8f7571ef838379bd4065">ctrl</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00147">Int32Eulers::phi</a>, <a class="el" href="stabilization__attitude__euler__float_8c_source.html#l00176">stabilization_attitude_run()</a>, <a class="el" href="stabilization__attitude__euler__float_8c_source.html#l00154">stabilization_attitude_set_rpy_setpoint_i()</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00148">Int32Eulers::theta</a>.</p>
+<p>References <a class="el" href="pprz__algebra__int_8h_source.html#l00210">ANGLE_BFP_OF_REAL</a>, <a class="el" href="ctrl__module__outerloop__demo_8c_source.html#l00042">ctrl_module_demo_struct::cmd</a>, <a class="el" href="ctrl__module__outerloop__demo_8c.html#a3a589132e4ce8f7571ef838379bd4065">ctrl</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00147">Int32Eulers::phi</a>, <a class="el" href="stabilization__attitude__euler__float_8c_source.html#l00176">stabilization_attitude_run()</a>, <a class="el" href="stabilization__attitude__euler__float_8c_source.html#l00154">stabilization_attitude_set_rpy_setpoint_i()</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00148">Int32Eulers::theta</a>.</p>
 
 <p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -347,7 +349,7 @@ rc_z</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ctrl__module__outerloop__demo_8c_source.html#l00047">47</a> of file <a class="el" href="ctrl__module__outerloop__demo_8c_source.html">ctrl_module_outerloop_demo.c</a>.</p>
+<p>Definition at line <a class="el" href="ctrl__module__outerloop__demo_8c_source.html#l00048">48</a> of file <a class="el" href="ctrl__module__outerloop__demo_8c_source.html">ctrl_module_outerloop_demo.c</a>.</p>
 
 </div>
 </div>
@@ -361,7 +363,7 @@ rc_z</td>
       </table>
 </div><div class="memdoc">
 
-<p>Referenced by <a class="el" href="ctrl__module__outerloop__demo_8c_source.html#l00057">guidance_h_module_enter()</a>, and <a class="el" href="ctrl__module__outerloop__demo_8c_source.html#l00072">guidance_h_module_run()</a>.</p>
+<p>Referenced by <a class="el" href="ctrl__module__outerloop__demo_8c_source.html#l00058">guidance_h_module_enter()</a>, <a class="el" href="ctrl__module__outerloop__demo_8c_source.html#l00067">guidance_h_module_read_rc()</a>, and <a class="el" href="ctrl__module__outerloop__demo_8c_source.html#l00073">guidance_h_module_run()</a>.</p>
 
 </div>
 </div>
@@ -371,7 +373,7 @@ rc_z</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_94757629c544be2d6d24b01569be56e6.html">ctrl</a></li><li class="navelem"><a class="el" href="ctrl__module__outerloop__demo_8c.html">ctrl_module_outerloop_demo.c</a></li>
-    <li class="footer">Generated on Wed Sep 12 2018 02:03:29 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:03:11 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

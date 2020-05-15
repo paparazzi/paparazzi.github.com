@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -118,6 +118,7 @@ $(document).ready(function(){initNavTree('fixedwing_2autopilot__firmware_8h.html
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;std.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="autopilot_8h_source.html">autopilot.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="electrical_8h_source.html">subsystems/electrical.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for autopilot_firmware.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -125,7 +126,7 @@ $(document).ready(function(){initNavTree('fixedwing_2autopilot__firmware_8h.html
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="fixedwing_2autopilot__firmware_8h__incl.png" border="0" usemap="#sw_2airborne_2firmwares_2fixedwing_2autopilot__firmware_8h" alt=""/></div>
 <map name="sw_2airborne_2firmwares_2fixedwing_2autopilot__firmware_8h" id="sw_2airborne_2firmwares_2fixedwing_2autopilot__firmware_8h">
-<area shape="rect" id="node3" href="autopilot_8h.html" title="Core autopilot interface common to all firmwares. " alt="" coords="557,109,648,136"/><area shape="rect" id="node4" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="1143,184,1239,211"/><area shape="rect" id="node7" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="349,184,416,211"/><area shape="rect" id="node5" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1168,266,1253,293"/><area shape="rect" id="node8" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="255,348,433,375"/><area shape="rect" id="node14" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="709,348,899,375"/><area shape="rect" id="node17" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="402,259,553,300"/><area shape="rect" id="node19" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="583,259,734,300"/><area shape="rect" id="node20" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="162,259,326,300"/><area shape="rect" id="node9" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="615,423,769,449"/><area shape="rect" id="node12" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="338,423,489,449"/><area shape="rect" id="node18" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="509,348,633,375"/></map>
+<area shape="rect" id="node3" href="autopilot_8h.html" title="Core autopilot interface common to all firmwares. " alt="" coords="491,109,581,136"/><area shape="rect" id="node24" href="electrical_8h.html" title="Interface for electrical status: supply voltage, current, battery status, etc. " alt="" coords="1035,109,1207,136"/><area shape="rect" id="node4" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="573,184,669,211"/><area shape="rect" id="node7" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="951,184,1017,211"/><area shape="rect" id="node5" href="inttypes_8h.html" title="inttypes.h" alt="" coords="573,266,659,293"/><area shape="rect" id="node8" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="984,348,1163,375"/><area shape="rect" id="node15" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="1289,348,1479,375"/><area shape="rect" id="node17" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="909,259,1059,300"/><area shape="rect" id="node19" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="734,259,885,300"/><area shape="rect" id="node20" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="1135,259,1299,300"/><area shape="rect" id="node9" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="1288,423,1443,449"/><area shape="rect" id="node13" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="1011,423,1162,449"/><area shape="rect" id="node18" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="785,348,909,375"/></map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
@@ -162,15 +163,8 @@ Functions</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:ab559c6867326333905f9133432ff9315"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fixedwing_2autopilot__firmware_8h.html#ab559c6867326333905f9133432ff9315">lateral_mode</a></td></tr>
 <tr class="separator:ab559c6867326333905f9133432ff9315"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32da1e6e29634773a0e491df93f92414"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fixedwing_2autopilot__firmware_8h.html#a32da1e6e29634773a0e491df93f92414">vsupply</a></td></tr>
-<tr class="memdesc:a32da1e6e29634773a0e491df93f92414"><td class="mdescLeft">&#160;</td><td class="mdescRight">Supply voltage in deciVolt.  <a href="#a32da1e6e29634773a0e491df93f92414">More...</a><br /></td></tr>
-<tr class="separator:a32da1e6e29634773a0e491df93f92414"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6a404c4d3d4da15402e4a8629e7e272"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fixedwing_2autopilot__firmware_8h.html#ae6a404c4d3d4da15402e4a8629e7e272">current</a></td></tr>
-<tr class="memdesc:ae6a404c4d3d4da15402e4a8629e7e272"><td class="mdescLeft">&#160;</td><td class="mdescRight">Supply current in milliAmpere.  <a href="#ae6a404c4d3d4da15402e4a8629e7e272">More...</a><br /></td></tr>
-<tr class="separator:ae6a404c4d3d4da15402e4a8629e7e272"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d107b3b2dcebab8a10c9d39894f6b2a"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fixedwing_2autopilot__firmware_8h.html#a2d107b3b2dcebab8a10c9d39894f6b2a">energy</a></td></tr>
-<tr class="memdesc:a2d107b3b2dcebab8a10c9d39894f6b2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Energy consumption (mAh) This is the ap copy of the measurement from fbw FIXME use electrical module ?  <a href="#a2d107b3b2dcebab8a10c9d39894f6b2a">More...</a><br /></td></tr>
-<tr class="separator:a2d107b3b2dcebab8a10c9d39894f6b2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd67674abf5af30559fbc2f3a55ea241"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="electrical_8h.html#structElectrical">Electrical</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fixedwing_2autopilot__firmware_8h.html#acd67674abf5af30559fbc2f3a55ea241">ap_electrical</a></td></tr>
+<tr class="separator:acd67674abf5af30559fbc2f3a55ea241"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b46ee9ade673c44f54f4ad3497c16b9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fixedwing_2autopilot__firmware_8h.html#a4b46ee9ade673c44f54f4ad3497c16b9">mcu1_status</a></td></tr>
 <tr class="memdesc:a4b46ee9ade673c44f54f4ad3497c16b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Second MCU status (FBW part)  <a href="#a4b46ee9ade673c44f54f4ad3497c16b9">More...</a><br /></td></tr>
 <tr class="separator:a4b46ee9ade673c44f54f4ad3497c16b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -190,9 +184,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="fixedwing_2autopilot__firmware_8h_source.html#l00038">38</a> of file <a class="el" href="fixedwing_2autopilot__firmware_8h_source.html">autopilot_firmware.h</a>.</p>
+<p>Definition at line <a class="el" href="fixedwing_2autopilot__firmware_8h_source.html#l00039">39</a> of file <a class="el" href="fixedwing_2autopilot__firmware_8h_source.html">autopilot_firmware.h</a>.</p>
 
-<p>Referenced by <a class="el" href="nav_8c_source.html#l00355">fly_to_xy()</a>, <a class="el" href="fixedwing_2guidance_2guidance__h_8c_source.html#l00033">h_ctl_guidance_loop()</a>, and <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00208">navigation_task()</a>.</p>
+<p>Referenced by <a class="el" href="nav_8c_source.html#l00355">fly_to_xy()</a>, <a class="el" href="fixedwing_2guidance_2guidance__h_8c_source.html#l00033">h_ctl_guidance_loop()</a>, and <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00221">navigation_task()</a>.</p>
 
 </div>
 </div>
@@ -206,7 +200,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="fixedwing_2autopilot__firmware_8h_source.html#l00035">35</a> of file <a class="el" href="fixedwing_2autopilot__firmware_8h_source.html">autopilot_firmware.h</a>.</p>
+<p>Definition at line <a class="el" href="fixedwing_2autopilot__firmware_8h_source.html#l00036">36</a> of file <a class="el" href="fixedwing_2autopilot__firmware_8h_source.html">autopilot_firmware.h</a>.</p>
 
 <p>Referenced by <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00090">autopilot_static_init()</a>.</p>
 
@@ -222,7 +216,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="fixedwing_2autopilot__firmware_8h_source.html#l00039">39</a> of file <a class="el" href="fixedwing_2autopilot__firmware_8h_source.html">autopilot_firmware.h</a>.</p>
+<p>Definition at line <a class="el" href="fixedwing_2autopilot__firmware_8h_source.html#l00040">40</a> of file <a class="el" href="fixedwing_2autopilot__firmware_8h_source.html">autopilot_firmware.h</a>.</p>
 
 </div>
 </div>
@@ -236,9 +230,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="fixedwing_2autopilot__firmware_8h_source.html#l00037">37</a> of file <a class="el" href="fixedwing_2autopilot__firmware_8h_source.html">autopilot_firmware.h</a>.</p>
+<p>Definition at line <a class="el" href="fixedwing_2autopilot__firmware_8h_source.html#l00038">38</a> of file <a class="el" href="fixedwing_2autopilot__firmware_8h_source.html">autopilot_firmware.h</a>.</p>
 
-<p>Referenced by <a class="el" href="nav_8c_source.html#l00355">fly_to_xy()</a>, <a class="el" href="gvf_8c_source.html#l00139">gvf_control_2D()</a>, <a class="el" href="nav_8c_source.html#l00563">nav_without_gps()</a>, and <a class="el" href="fixedwing_2guidance_2guidance__v_8c_source.html#l00357">v_ctl_landing_loop()</a>.</p>
+<p>Referenced by <a class="el" href="ctc_8c_source.html#l00145">collective_tracking_control()</a>, <a class="el" href="nav_8c_source.html#l00355">fly_to_xy()</a>, <a class="el" href="gvf_8c_source.html#l00139">gvf_control_2D()</a>, <a class="el" href="nav_8c_source.html#l00568">nav_without_gps()</a>, and <a class="el" href="fixedwing_2guidance_2guidance__v_8c_source.html#l00357">v_ctl_landing_loop()</a>.</p>
 
 </div>
 </div>
@@ -252,7 +246,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="fixedwing_2autopilot__firmware_8h_source.html#l00036">36</a> of file <a class="el" href="fixedwing_2autopilot__firmware_8h_source.html">autopilot_firmware.h</a>.</p>
+<p>Definition at line <a class="el" href="fixedwing_2autopilot__firmware_8h_source.html#l00037">37</a> of file <a class="el" href="fixedwing_2autopilot__firmware_8h_source.html">autopilot_firmware.h</a>.</p>
 
 </div>
 </div>
@@ -273,45 +267,24 @@ Variables</h2></td></tr>
 
 <p>Init function. </p>
 
-<p>Definition at line <a class="el" href="fixedwing_2autopilot__firmware_8c_source.html#l00133">133</a> of file <a class="el" href="fixedwing_2autopilot__firmware_8c_source.html">autopilot_firmware.c</a>.</p>
+<p>Definition at line <a class="el" href="fixedwing_2autopilot__firmware_8c_source.html#l00114">114</a> of file <a class="el" href="fixedwing_2autopilot__firmware_8c_source.html">autopilot_firmware.c</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a class="anchor" id="ae6a404c4d3d4da15402e4a8629e7e272"></a>
+<a class="anchor" id="acd67674abf5af30559fbc2f3a55ea241"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> current</td>
+          <td class="memname">struct <a class="el" href="electrical_8h.html#structElectrical">Electrical</a> ap_electrical</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Supply current in milliAmpere. </p>
-<p>This the ap copy of the measurement from fbw FIXME use electrical module ? </p>
 
 <p>Definition at line <a class="el" href="fixedwing_2autopilot__firmware_8c_source.html#l00036">36</a> of file <a class="el" href="fixedwing_2autopilot__firmware_8c_source.html">autopilot_firmware.c</a>.</p>
 
-<p>Referenced by <a class="el" href="fixedwing_2autopilot__firmware_8c_source.html#l00133">autopilot_firmware_init()</a>, <a class="el" href="fixedwing_2autopilot__generated_8c_source.html#l00103">autopilot_generated_on_rc_frame()</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00112">autopilot_static_on_rc_frame()</a>, <a class="el" href="fixedwing_2autopilot__firmware_8c_source.html#l00070">send_bat()</a>, and <a class="el" href="fixedwing_2autopilot__firmware_8c_source.html#l00084">send_energy()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a2d107b3b2dcebab8a10c9d39894f6b2a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float energy</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Energy consumption (mAh) This is the ap copy of the measurement from fbw FIXME use electrical module ? </p>
-
-<p>Definition at line <a class="el" href="fixedwing_2autopilot__firmware_8c_source.html#l00037">37</a> of file <a class="el" href="fixedwing_2autopilot__firmware_8c_source.html">autopilot_firmware.c</a>.</p>
-
-<p>Referenced by <a class="el" href="fixedwing_2autopilot__firmware_8c_source.html#l00133">autopilot_firmware_init()</a>, <a class="el" href="fixedwing_2autopilot__generated_8c_source.html#l00103">autopilot_generated_on_rc_frame()</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00112">autopilot_static_on_rc_frame()</a>, <a class="el" href="generic__com_8c_source.html#l00070">generic_com_periodic()</a>, <a class="el" href="fixedwing_2autopilot__firmware_8c_source.html#l00070">send_bat()</a>, and <a class="el" href="fixedwing_2autopilot__firmware_8c_source.html#l00084">send_energy()</a>.</p>
+<p>Referenced by <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00285">attitude_loop()</a>, <a class="el" href="fixedwing_2autopilot__firmware_8c_source.html#l00114">autopilot_firmware_init()</a>, <a class="el" href="fixedwing_2autopilot__generated_8c_source.html#l00104">autopilot_generated_on_rc_frame()</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00112">autopilot_static_on_rc_frame()</a>, <a class="el" href="fixedwing_2main__ap_8c_source.html#l00334">monitor_task()</a>, <a class="el" href="fixedwing_2autopilot__firmware_8c_source.html#l00069">send_energy()</a>, and <a class="el" href="fixedwing_2guidance_2guidance__v_8c_source.html#l00265">v_ctl_guidance_loop()</a>.</p>
 
 </div>
 </div>
@@ -325,9 +298,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="fixedwing_2autopilot__firmware_8c_source.html#l00039">39</a> of file <a class="el" href="fixedwing_2autopilot__firmware_8c_source.html">autopilot_firmware.c</a>.</p>
+<p>Definition at line <a class="el" href="fixedwing_2autopilot__firmware_8c_source.html#l00038">38</a> of file <a class="el" href="fixedwing_2autopilot__firmware_8c_source.html">autopilot_firmware.c</a>.</p>
 
-<p>Referenced by <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00090">autopilot_static_init()</a>, <a class="el" href="nav_8c_source.html#l00355">fly_to_xy()</a>, <a class="el" href="gvf_8c_source.html#l00139">gvf_control_2D()</a>, <a class="el" href="fixedwing_2guidance_2guidance__h_8c_source.html#l00033">h_ctl_guidance_loop()</a>, <a class="el" href="nav_8c_source.html#l00563">nav_without_gps()</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00208">navigation_task()</a>, <a class="el" href="fixedwing_2autopilot__firmware_8c_source.html#l00058">send_mode()</a>, and <a class="el" href="fixedwing_2guidance_2guidance__v_8c_source.html#l00357">v_ctl_landing_loop()</a>.</p>
+<p>Referenced by <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00090">autopilot_static_init()</a>, <a class="el" href="ctc_8c_source.html#l00145">collective_tracking_control()</a>, <a class="el" href="nav_8c_source.html#l00355">fly_to_xy()</a>, <a class="el" href="gvf_8c_source.html#l00139">gvf_control_2D()</a>, <a class="el" href="fixedwing_2guidance_2guidance__h_8c_source.html#l00033">h_ctl_guidance_loop()</a>, <a class="el" href="nav_8c_source.html#l00568">nav_without_gps()</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00221">navigation_task()</a>, <a class="el" href="fixedwing_2autopilot__firmware_8c_source.html#l00057">send_mode()</a>, and <a class="el" href="fixedwing_2guidance_2guidance__v_8c_source.html#l00357">v_ctl_landing_loop()</a>.</p>
 
 </div>
 </div>
@@ -343,28 +316,9 @@ Variables</h2></td></tr>
 
 <p>Second MCU status (FBW part) </p>
 
-<p>Definition at line <a class="el" href="fixedwing_2autopilot__firmware_8c_source.html#l00040">40</a> of file <a class="el" href="fixedwing_2autopilot__firmware_8c_source.html">autopilot_firmware.c</a>.</p>
+<p>Definition at line <a class="el" href="fixedwing_2autopilot__firmware_8c_source.html#l00039">39</a> of file <a class="el" href="fixedwing_2autopilot__firmware_8c_source.html">autopilot_firmware.c</a>.</p>
 
-<p>Referenced by <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00378">mcu1_status_update()</a>, and <a class="el" href="fixedwing_2autopilot__firmware_8c_source.html#l00058">send_mode()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a32da1e6e29634773a0e491df93f92414"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> vsupply</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Supply voltage in deciVolt. </p>
-<p>This the ap copy of the measurement from fbw FIXME use electrical module ? </p>
-
-<p>Definition at line <a class="el" href="fixedwing_2autopilot__firmware_8c_source.html#l00035">35</a> of file <a class="el" href="fixedwing_2autopilot__firmware_8c_source.html">autopilot_firmware.c</a>.</p>
-
-<p>Referenced by <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00272">attitude_loop()</a>, <a class="el" href="fixedwing_2autopilot__firmware_8c_source.html#l00133">autopilot_firmware_init()</a>, <a class="el" href="fixedwing_2autopilot__generated_8c_source.html#l00103">autopilot_generated_on_rc_frame()</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00112">autopilot_static_on_rc_frame()</a>, <a class="el" href="gsm_8c_source.html#l00395">gsm_send_report_continue()</a>, <a class="el" href="fixedwing_2main__ap_8c_source.html#l00334">monitor_task()</a>, <a class="el" href="fixedwing_2autopilot__firmware_8c_source.html#l00070">send_bat()</a>, <a class="el" href="fixedwing_2autopilot__firmware_8c_source.html#l00084">send_energy()</a>, and <a class="el" href="fixedwing_2guidance_2guidance__v_8c_source.html#l00265">v_ctl_guidance_loop()</a>.</p>
+<p>Referenced by <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00387">mcu1_status_update()</a>, and <a class="el" href="fixedwing_2autopilot__firmware_8c_source.html#l00057">send_mode()</a>.</p>
 
 </div>
 </div>
@@ -374,7 +328,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_cb1b347b64b61ba7f369ccfe68448b26.html">fixedwing</a></li><li class="navelem"><a class="el" href="fixedwing_2autopilot__firmware_8h.html">autopilot_firmware.h</a></li>
-    <li class="footer">Generated on Wed Sep 12 2018 02:03:14 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:02:56 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

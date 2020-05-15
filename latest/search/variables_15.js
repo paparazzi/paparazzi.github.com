@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['u',['u',['../stabilization__indi__simple_8h.html#a61f3aa896082bf3a083074d3290670f6',1,'IndiEstimation::u()'],['../stabilization__indi__simple_8h.html#a41d571f736d9038e1a716b1680d2c130',1,'IndiVariables::u()']]],
+  ['u',['u',['../pid_8h.html#ae9bff75a221f84fdd904bea744585da0',1,'PID_f::u()'],['../pid_8h.html#ab62d126ca7a60d8da64ba0f881e60bc8',1,'PID_df::u()'],['../pid_8h.html#afecedc77778a62fbd5a01e0269220578',1,'PI_D_df::u()'],['../stabilization__indi__simple_8h.html#a61f3aa896082bf3a083074d3290670f6',1,'IndiEstimation::u()'],['../stabilization__indi__simple_8h.html#a41d571f736d9038e1a716b1680d2c130',1,'IndiVariables::u()']]],
   ['u_5fa_5fca_5fx',['u_a_ca_x',['../nav__smooth_8c.html#a6ffaeb29e2825a7f38417ee9109d3a65',1,'nav_smooth.c']]],
   ['u_5fa_5fca_5fy',['u_a_ca_y',['../nav__smooth_8c.html#af5b82b9a455a98a12cafa72e73dce010',1,'nav_smooth.c']]],
   ['u_5fact_5fdyn',['u_act_dyn',['../stabilization__indi__simple_8h.html#a6935e7142a2fa9983288318f1d5ccf20',1,'IndiVariables']]],
@@ -36,9 +36,9 @@ var searchData=
   ['unit',['unit',['../nav_8c.html#a04b783250b1673126fa3f4729cb2078e',1,'nav.c']]],
   ['unused',['UNUSED',['../rotorcraft_2navigation_8c.html#a9314d7061c454ecf2111d3965db8f23f',1,'navigation.c']]],
   ['up',['up',['../bmp085_8h.html#a0791e9daa8a0f7e55df65bcd1c900b5e',1,'Bmp085::up()'],['../light__solar_8c.html#a865f598ce218c5496c018323caf1fb4d',1,'up():&#160;light_solar.c'],['../light__solar_8h.html#a865f598ce218c5496c018323caf1fb4d',1,'up():&#160;light_solar.c']]],
-  ['update_5fagl',['update_agl',['../lidar__lite_8h.html#aa9c9ac5c46e5938b4587cf76b7b70920',1,'LidarLite::update_agl()'],['../lidar__sf11_8h.html#a9695845bfd281bf81794989af057f69a',1,'LidarSF11::update_agl()'],['../px4flow__i2c_8h.html#a102449c4edfe9b3661618632f34fd223',1,'px4flow_data::update_agl()']]],
+  ['update_5fagl',['update_agl',['../lidar__lite_8h.html#aa9c9ac5c46e5938b4587cf76b7b70920',1,'LidarLite::update_agl()'],['../lidar__sf11_8h.html#a9695845bfd281bf81794989af057f69a',1,'LidarSF11::update_agl()'],['../tfmini_8h.html#a677c88a16dd6a37024b13678175800ca',1,'TFMini::update_agl()'],['../px4flow__i2c_8h.html#a102449c4edfe9b3661618632f34fd223',1,'px4flow_data::update_agl()']]],
   ['update_5fmatrix',['Update_Matrix',['../ahrs__float__dcm_8c.html#ad127bd0b0b65b831860abe0ac9234672',1,'ahrs_float_dcm.c']]],
-  ['updated',['updated',['../dw1000__arduino_8c.html#a622a6b9800490ad6f5614d255c72e106',1,'DW1000']]],
+  ['updated',['updated',['../cv__detect__color__object_8c.html#a8f314d708f0b5a0f48f162cd760b7d19',1,'color_object_t::updated()'],['../dw1000__arduino_8c.html#a622a6b9800490ad6f5614d255c72e106',1,'DW1000::updated()'],['../trilateration_8h.html#a6c0b49fe194c565fdac58b2bb373ff7d',1,'Anchor::updated()']]],
   ['uplink_5fcount',['uplink_count',['../subsystems_2datalink_2superbitrf_8h.html#a092d33c20d86f3cdbb221972e4d5bbd0',1,'SuperbitRF']]],
   ['upper_5fu',['upper_u',['../opencv__contour_8h.html#ab0072bd0c334230924131b23d86c96c7',1,'contour_threshold']]],
   ['upper_5fv',['upper_v',['../opencv__contour_8h.html#a8ff2343f9e6d6f61f8b903abb8615a66',1,'contour_threshold']]],

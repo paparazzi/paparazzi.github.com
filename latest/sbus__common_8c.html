@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -117,6 +117,7 @@ $(document).ready(function(){initNavTree('sbus__common_8c.html','');});
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="radio__control_8h_source.html">subsystems/radio_control.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="sbus__common_8h_source.html">subsystems/radio_control/sbus_common.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="sys__time_8h_source.html">mcu_periph/sys_time.h</a>&quot;</code><br />
 <code>#include &lt;BOARD_CONFIG&gt;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
 <code>#include &lt;stdbool.h&gt;</code><br />
@@ -127,7 +128,7 @@ $(document).ready(function(){initNavTree('sbus__common_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="sbus__common_8c__incl.png" border="0" usemap="#sw_2airborne_2subsystems_2radio__control_2sbus__common_8c" alt=""/></div>
 <map name="sw_2airborne_2subsystems_2radio__control_2sbus__common_8c" id="sw_2airborne_2subsystems_2radio__control_2sbus__common_8c">
-<area shape="rect" id="node2" href="radio__control_8h.html" title="subsystems/radio_control.h" alt="" coords="239,102,437,129"/><area shape="rect" id="node9" href="sbus__common_8h.html" title="Common sbus structs and defines. " alt="" coords="647,95,834,136"/><area shape="rect" id="node3" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API " alt="" coords="213,184,266,211"/><area shape="rect" id="node6" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="290,184,386,211"/><area shape="rect" id="node7" href="inttypes_8h.html" title="inttypes.h" alt="" coords="290,259,375,285"/><area shape="rect" id="node11" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="618,184,757,211"/><area shape="rect" id="node14" href="gpio_8h.html" title="Some architecture independent helper functions for GPIOs. " alt="" coords="832,184,972,211"/></map>
+<area shape="rect" id="node2" href="radio__control_8h.html" title="subsystems/radio_control.h" alt="" coords="239,102,437,129"/><area shape="rect" id="node9" href="sbus__common_8h.html" title="Common sbus structs and defines. " alt="" coords="734,95,921,136"/><area shape="rect" id="node17" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="1066,102,1237,129"/><area shape="rect" id="node3" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API " alt="" coords="213,191,266,218"/><area shape="rect" id="node6" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="290,191,386,218"/><area shape="rect" id="node7" href="inttypes_8h.html" title="inttypes.h" alt="" coords="465,273,550,300"/><area shape="rect" id="node11" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="1071,191,1210,218"/><area shape="rect" id="node14" href="gpio_8h.html" title="Some architecture independent helper functions for GPIOs. " alt="" coords="755,191,895,218"/></map>
 </div>
 </div>
 <p><a href="sbus__common_8c_source.html">Go to the source code of this file.</a></p>
@@ -164,19 +165,22 @@ Macros</h2></td></tr>
 <tr class="separator:a60a5f13624f378d1e691872cb5533481"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78bd8c830e8bf9a58f90b63b44bb9826"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sbus__common_8c.html#a78bd8c830e8bf9a58f90b63b44bb9826">SBUS_STATUS_GOT_START</a>&#160;&#160;&#160;1</td></tr>
 <tr class="separator:a78bd8c830e8bf9a58f90b63b44bb9826"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4612970da8fd3d022dee31d4795c508"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sbus__common_8c.html#ae4612970da8fd3d022dee31d4795c508">SBUS_TIMEOUT_MS</a>&#160;&#160;&#160;4</td></tr>
+<tr class="memdesc:ae4612970da8fd3d022dee31d4795c508"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time before timeout when receiving a full SBUS frame.  <a href="#ae4612970da8fd3d022dee31d4795c508">More...</a><br /></td></tr>
+<tr class="separator:ae4612970da8fd3d022dee31d4795c508"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50ec2ad5fe4db9bf380763480ac16af5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sbus__common_8c.html#a50ec2ad5fe4db9bf380763480ac16af5">RC_SET_POLARITY</a>&#160;&#160;&#160;<a class="el" href="gpio__ardrone_8c.html#a573af743c8006ae98e309d4bc9284c85">gpio_set</a></td></tr>
 <tr class="memdesc:a50ec2ad5fe4db9bf380763480ac16af5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set polarity using RC_POLARITY_GPIO.  <a href="#a50ec2ad5fe4db9bf380763480ac16af5">More...</a><br /></td></tr>
 <tr class="separator:a50ec2ad5fe4db9bf380763480ac16af5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a1c2c32e690c83c19a8f9b3581b66cc5a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sbus__common_8c.html#a1c2c32e690c83c19a8f9b3581b66cc5a">sbus_common_init</a> (struct <a class="el" href="sbus__common_8h.html#structSbus">Sbus</a> *sbus_p, struct <a class="el" href="uart_8h.html#structuart__periph">uart_periph</a> *<a class="el" href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a>, <a class="el" href="chibios_2mcu__periph_2gpio__arch_8h.html#a9b70aff93b967dba18363c475eba9e03">gpio_port_t</a> gpio_polarity_port, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> gpio_polarity_pin)</td></tr>
+<tr class="memitem:a1c2c32e690c83c19a8f9b3581b66cc5a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sbus__common_8c.html#a1c2c32e690c83c19a8f9b3581b66cc5a">sbus_common_init</a> (struct <a class="el" href="sbus__common_8h.html#structSbus">Sbus</a> *sbus_p, struct <a class="el" href="uart_8h.html#structuart__periph">uart_periph</a> *<a class="el" href="e__identification__fr_8c.html#aebd4a92b0e1e5a4d507f1674f09fcc2b">dev</a>, <a class="el" href="chibios_2mcu__periph_2gpio__arch_8h.html#a9b70aff93b967dba18363c475eba9e03">gpio_port_t</a> gpio_polarity_port, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> gpio_polarity_pin)</td></tr>
 <tr class="memdesc:a1c2c32e690c83c19a8f9b3581b66cc5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init function.  <a href="#a1c2c32e690c83c19a8f9b3581b66cc5a">More...</a><br /></td></tr>
 <tr class="separator:a1c2c32e690c83c19a8f9b3581b66cc5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae438287533911004cc6f3ff98b065df7"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sbus__common_8c.html#ae438287533911004cc6f3ff98b065df7">decode_sbus_buffer</a> (const <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *src, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *dst, bool *is_frame_available, bool *is_rc_failsafe, bool *is_rc_lost, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *dstppm)</td></tr>
 <tr class="memdesc:ae438287533911004cc6f3ff98b065df7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decode the raw buffer.  <a href="#ae438287533911004cc6f3ff98b065df7">More...</a><br /></td></tr>
 <tr class="separator:ae438287533911004cc6f3ff98b065df7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a369db0efa4a3e8ac7e0b205a5c9740"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sbus__common_8c.html#a3a369db0efa4a3e8ac7e0b205a5c9740">sbus_common_decode_event</a> (struct <a class="el" href="sbus__common_8h.html#structSbus">Sbus</a> *sbus_p, struct <a class="el" href="uart_8h.html#structuart__periph">uart_periph</a> *<a class="el" href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a>)</td></tr>
+<tr class="memitem:a3a369db0efa4a3e8ac7e0b205a5c9740"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sbus__common_8c.html#a3a369db0efa4a3e8ac7e0b205a5c9740">sbus_common_decode_event</a> (struct <a class="el" href="sbus__common_8h.html#structSbus">Sbus</a> *sbus_p, struct <a class="el" href="uart_8h.html#structuart__periph">uart_periph</a> *<a class="el" href="e__identification__fr_8c.html#aebd4a92b0e1e5a4d507f1674f09fcc2b">dev</a>)</td></tr>
 <tr class="memdesc:a3a369db0efa4a3e8ac7e0b205a5c9740"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decoding event function.  <a href="#a3a369db0efa4a3e8ac7e0b205a5c9740">More...</a><br /></td></tr>
 <tr class="separator:a3a369db0efa4a3e8ac7e0b205a5c9740"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -198,9 +202,9 @@ Functions</h2></td></tr>
 <p>Set polarity using RC_POLARITY_GPIO. </p>
 <p>SBUS signal has a reversed polarity compared to normal UART this allows to using hardware UART peripheral by changing the input signal polarity. Setting this gpio ouput high inverts the signal, output low sets it to normal polarity. </p>
 
-<p>Definition at line <a class="el" href="sbus__common_8c_source.html#l00060">60</a> of file <a class="el" href="sbus__common_8c_source.html">sbus_common.c</a>.</p>
+<p>Definition at line <a class="el" href="sbus__common_8c_source.html#l00067">67</a> of file <a class="el" href="sbus__common_8c_source.html">sbus_common.c</a>.</p>
 
-<p>Referenced by <a class="el" href="sbus__common_8c_source.html#l00063">sbus_common_init()</a>.</p>
+<p>Referenced by <a class="el" href="sbus__common_8c_source.html#l00070">sbus_common_init()</a>.</p>
 
 </div>
 </div>
@@ -214,7 +218,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sbus__common_8c_source.html#l00043">43</a> of file <a class="el" href="sbus__common_8c_source.html">sbus_common.c</a>.</p>
+<p>Definition at line <a class="el" href="sbus__common_8c_source.html#l00044">44</a> of file <a class="el" href="sbus__common_8c_source.html">sbus_common.c</a>.</p>
 
 </div>
 </div>
@@ -228,7 +232,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sbus__common_8c_source.html#l00042">42</a> of file <a class="el" href="sbus__common_8c_source.html">sbus_common.c</a>.</p>
+<p>Definition at line <a class="el" href="sbus__common_8c_source.html#l00043">43</a> of file <a class="el" href="sbus__common_8c_source.html">sbus_common.c</a>.</p>
 
 </div>
 </div>
@@ -242,9 +246,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sbus__common_8c_source.html#l00036">36</a> of file <a class="el" href="sbus__common_8c_source.html">sbus_common.c</a>.</p>
+<p>Definition at line <a class="el" href="sbus__common_8c_source.html#l00037">37</a> of file <a class="el" href="sbus__common_8c_source.html">sbus_common.c</a>.</p>
 
-<p>Referenced by <a class="el" href="sbus__common_8c_source.html#l00127">sbus_common_decode_event()</a>.</p>
+<p>Referenced by <a class="el" href="sbus__common_8c_source.html#l00135">sbus_common_decode_event()</a>.</p>
 
 </div>
 </div>
@@ -258,9 +262,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sbus__common_8c_source.html#l00037">37</a> of file <a class="el" href="sbus__common_8c_source.html">sbus_common.c</a>.</p>
+<p>Definition at line <a class="el" href="sbus__common_8c_source.html#l00038">38</a> of file <a class="el" href="sbus__common_8c_source.html">sbus_common.c</a>.</p>
 
-<p>Referenced by <a class="el" href="sbus__common_8c_source.html#l00127">sbus_common_decode_event()</a>.</p>
+<p>Referenced by <a class="el" href="sbus__common_8c_source.html#l00135">sbus_common_decode_event()</a>.</p>
 
 </div>
 </div>
@@ -274,9 +278,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sbus__common_8c_source.html#l00038">38</a> of file <a class="el" href="sbus__common_8c_source.html">sbus_common.c</a>.</p>
+<p>Definition at line <a class="el" href="sbus__common_8c_source.html#l00039">39</a> of file <a class="el" href="sbus__common_8c_source.html">sbus_common.c</a>.</p>
 
-<p>Referenced by <a class="el" href="sbus__common_8c_source.html#l00127">sbus_common_decode_event()</a>.</p>
+<p>Referenced by <a class="el" href="sbus__common_8c_source.html#l00135">sbus_common_decode_event()</a>.</p>
 
 </div>
 </div>
@@ -290,9 +294,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sbus__common_8c_source.html#l00039">39</a> of file <a class="el" href="sbus__common_8c_source.html">sbus_common.c</a>.</p>
+<p>Definition at line <a class="el" href="sbus__common_8c_source.html#l00040">40</a> of file <a class="el" href="sbus__common_8c_source.html">sbus_common.c</a>.</p>
 
-<p>Referenced by <a class="el" href="sbus__common_8c_source.html#l00127">sbus_common_decode_event()</a>.</p>
+<p>Referenced by <a class="el" href="sbus__common_8c_source.html#l00135">sbus_common_decode_event()</a>.</p>
 
 </div>
 </div>
@@ -306,9 +310,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sbus__common_8c_source.html#l00040">40</a> of file <a class="el" href="sbus__common_8c_source.html">sbus_common.c</a>.</p>
+<p>Definition at line <a class="el" href="sbus__common_8c_source.html#l00041">41</a> of file <a class="el" href="sbus__common_8c_source.html">sbus_common.c</a>.</p>
 
-<p>Referenced by <a class="el" href="sbus__common_8c_source.html#l00127">sbus_common_decode_event()</a>.</p>
+<p>Referenced by <a class="el" href="sbus__common_8c_source.html#l00135">sbus_common_decode_event()</a>.</p>
 
 </div>
 </div>
@@ -322,9 +326,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sbus__common_8c_source.html#l00041">41</a> of file <a class="el" href="sbus__common_8c_source.html">sbus_common.c</a>.</p>
+<p>Definition at line <a class="el" href="sbus__common_8c_source.html#l00042">42</a> of file <a class="el" href="sbus__common_8c_source.html">sbus_common.c</a>.</p>
 
-<p>Referenced by <a class="el" href="sbus__common_8c_source.html#l00127">sbus_common_decode_event()</a>.</p>
+<p>Referenced by <a class="el" href="sbus__common_8c_source.html#l00135">sbus_common_decode_event()</a>.</p>
 
 </div>
 </div>
@@ -338,9 +342,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sbus__common_8c_source.html#l00044">44</a> of file <a class="el" href="sbus__common_8c_source.html">sbus_common.c</a>.</p>
+<p>Definition at line <a class="el" href="sbus__common_8c_source.html#l00045">45</a> of file <a class="el" href="sbus__common_8c_source.html">sbus_common.c</a>.</p>
 
-<p>Referenced by <a class="el" href="sbus__common_8c_source.html#l00087">decode_sbus_buffer()</a>.</p>
+<p>Referenced by <a class="el" href="sbus__common_8c_source.html#l00095">decode_sbus_buffer()</a>.</p>
 
 </div>
 </div>
@@ -354,9 +358,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sbus__common_8c_source.html#l00045">45</a> of file <a class="el" href="sbus__common_8c_source.html">sbus_common.c</a>.</p>
+<p>Definition at line <a class="el" href="sbus__common_8c_source.html#l00046">46</a> of file <a class="el" href="sbus__common_8c_source.html">sbus_common.c</a>.</p>
 
-<p>Referenced by <a class="el" href="sbus__common_8c_source.html#l00087">decode_sbus_buffer()</a>.</p>
+<p>Referenced by <a class="el" href="sbus__common_8c_source.html#l00095">decode_sbus_buffer()</a>.</p>
 
 </div>
 </div>
@@ -370,9 +374,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sbus__common_8c_source.html#l00046">46</a> of file <a class="el" href="sbus__common_8c_source.html">sbus_common.c</a>.</p>
+<p>Definition at line <a class="el" href="sbus__common_8c_source.html#l00047">47</a> of file <a class="el" href="sbus__common_8c_source.html">sbus_common.c</a>.</p>
 
-<p>Referenced by <a class="el" href="sbus__common_8c_source.html#l00087">decode_sbus_buffer()</a>.</p>
+<p>Referenced by <a class="el" href="sbus__common_8c_source.html#l00095">decode_sbus_buffer()</a>.</p>
 
 </div>
 </div>
@@ -386,9 +390,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sbus__common_8c_source.html#l00047">47</a> of file <a class="el" href="sbus__common_8c_source.html">sbus_common.c</a>.</p>
+<p>Definition at line <a class="el" href="sbus__common_8c_source.html#l00048">48</a> of file <a class="el" href="sbus__common_8c_source.html">sbus_common.c</a>.</p>
 
-<p>Referenced by <a class="el" href="sbus__common_8c_source.html#l00087">decode_sbus_buffer()</a>.</p>
+<p>Referenced by <a class="el" href="sbus__common_8c_source.html#l00095">decode_sbus_buffer()</a>.</p>
 
 </div>
 </div>
@@ -402,9 +406,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sbus__common_8c_source.html#l00035">35</a> of file <a class="el" href="sbus__common_8c_source.html">sbus_common.c</a>.</p>
+<p>Definition at line <a class="el" href="sbus__common_8c_source.html#l00036">36</a> of file <a class="el" href="sbus__common_8c_source.html">sbus_common.c</a>.</p>
 
-<p>Referenced by <a class="el" href="sbus__common_8c_source.html#l00127">sbus_common_decode_event()</a>.</p>
+<p>Referenced by <a class="el" href="sbus__common_8c_source.html#l00135">sbus_common_decode_event()</a>.</p>
 
 </div>
 </div>
@@ -418,9 +422,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sbus__common_8c_source.html#l00050">50</a> of file <a class="el" href="sbus__common_8c_source.html">sbus_common.c</a>.</p>
+<p>Definition at line <a class="el" href="sbus__common_8c_source.html#l00051">51</a> of file <a class="el" href="sbus__common_8c_source.html">sbus_common.c</a>.</p>
 
-<p>Referenced by <a class="el" href="sbus__common_8c_source.html#l00127">sbus_common_decode_event()</a>.</p>
+<p>Referenced by <a class="el" href="sbus__common_8c_source.html#l00135">sbus_common_decode_event()</a>.</p>
 
 </div>
 </div>
@@ -434,9 +438,27 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sbus__common_8c_source.html#l00049">49</a> of file <a class="el" href="sbus__common_8c_source.html">sbus_common.c</a>.</p>
+<p>Definition at line <a class="el" href="sbus__common_8c_source.html#l00050">50</a> of file <a class="el" href="sbus__common_8c_source.html">sbus_common.c</a>.</p>
 
-<p>Referenced by <a class="el" href="sbus__common_8c_source.html#l00127">sbus_common_decode_event()</a>, and <a class="el" href="sbus__common_8c_source.html#l00063">sbus_common_init()</a>.</p>
+<p>Referenced by <a class="el" href="sbus__common_8c_source.html#l00135">sbus_common_decode_event()</a>, and <a class="el" href="sbus__common_8c_source.html#l00070">sbus_common_init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae4612970da8fd3d022dee31d4795c508"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SBUS_TIMEOUT_MS&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Time before timeout when receiving a full SBUS frame. </p>
+
+<p>Definition at line <a class="el" href="sbus__common_8c_source.html#l00057">57</a> of file <a class="el" href="sbus__common_8c_source.html">sbus_common.c</a>.</p>
+
+<p>Referenced by <a class="el" href="sbus__common_8c_source.html#l00135">sbus_common_decode_event()</a>.</p>
 
 </div>
 </div>
@@ -499,11 +521,11 @@ Functions</h2></td></tr>
 
 <p>Decode the raw buffer. </p>
 
-<p>Definition at line <a class="el" href="sbus__common_8c_source.html#l00087">87</a> of file <a class="el" href="sbus__common_8c_source.html">sbus_common.c</a>.</p>
+<p>Definition at line <a class="el" href="sbus__common_8c_source.html#l00095">95</a> of file <a class="el" href="sbus__common_8c_source.html">sbus_common.c</a>.</p>
 
-<p>References <a class="el" href="ADS8344_8c_source.html#l00080">channel</a>, <a class="el" href="sbus__common_8c_source.html#l00044">SBUS_FLAGS_BYTE</a>, <a class="el" href="sbus__common_8c_source.html#l00045">SBUS_FRAME_LOST_BIT</a>, <a class="el" href="sbus__common_8h_source.html#l00063">SBUS_NB_CHANNEL</a>, <a class="el" href="sbus__common_8c_source.html#l00046">SBUS_RC_FAILSAFE_BIT</a>, <a class="el" href="sbus__common_8c_source.html#l00047">SBUS_RC_LOST_BIT</a>, and <a class="el" href="chibios_2subsystems_2radio__control_2ppm__arch_8h_source.html#l00046">USEC_OF_RC_PPM_TICKS</a>.</p>
+<p>References <a class="el" href="ADS8344_8c_source.html#l00080">channel</a>, <a class="el" href="sbus__common_8c_source.html#l00045">SBUS_FLAGS_BYTE</a>, <a class="el" href="sbus__common_8c_source.html#l00046">SBUS_FRAME_LOST_BIT</a>, <a class="el" href="sbus__common_8h_source.html#l00063">SBUS_NB_CHANNEL</a>, <a class="el" href="sbus__common_8c_source.html#l00047">SBUS_RC_FAILSAFE_BIT</a>, <a class="el" href="sbus__common_8c_source.html#l00048">SBUS_RC_LOST_BIT</a>, and <a class="el" href="chibios_2subsystems_2radio__control_2ppm__arch_8h_source.html#l00046">USEC_OF_RC_PPM_TICKS</a>.</p>
 
-<p>Referenced by <a class="el" href="sbus__common_8c_source.html#l00127">sbus_common_decode_event()</a>.</p>
+<p>Referenced by <a class="el" href="sbus__common_8c_source.html#l00135">sbus_common_decode_event()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -544,9 +566,9 @@ Functions</h2></td></tr>
 
 <p>Decoding event function. </p>
 
-<p>Definition at line <a class="el" href="sbus__common_8c_source.html#l00127">127</a> of file <a class="el" href="sbus__common_8c_source.html">sbus_common.c</a>.</p>
+<p>Definition at line <a class="el" href="sbus__common_8c_source.html#l00135">135</a> of file <a class="el" href="sbus__common_8c_source.html">sbus_common.c</a>.</p>
 
-<p>References <a class="el" href="sbus__common_8h_source.html#l00085">Sbus::buffer</a>, <a class="el" href="sbus__common_8c_source.html#l00087">decode_sbus_buffer()</a>, <a class="el" href="sbus__common_8h_source.html#l00082">Sbus::frame_available</a>, <a class="el" href="sbus__common_8h_source.html#l00086">Sbus::idx</a>, <a class="el" href="sbus__common_8h_source.html#l00081">Sbus::ppm</a>, <a class="el" href="sbus__common_8h_source.html#l00080">Sbus::pulses</a>, <a class="el" href="sbus__common_8h_source.html#l00083">Sbus::rc_failsafe</a>, <a class="el" href="sbus__common_8h_source.html#l00084">Sbus::rc_lost</a>, <a class="el" href="sbus__common_8h_source.html#l00062">SBUS_BUF_LENGTH</a>, <a class="el" href="sbus__common_8c_source.html#l00036">SBUS_END_BYTE_0</a>, <a class="el" href="sbus__common_8c_source.html#l00037">SBUS_END_BYTE_1</a>, <a class="el" href="sbus__common_8c_source.html#l00038">SBUS_END_BYTE_2</a>, <a class="el" href="sbus__common_8c_source.html#l00039">SBUS_END_BYTE_3</a>, <a class="el" href="sbus__common_8c_source.html#l00040">SBUS_END_BYTE_4</a>, <a class="el" href="sbus__common_8c_source.html#l00041">SBUS_END_BYTE_5</a>, <a class="el" href="sbus__common_8c_source.html#l00035">SBUS_START_BYTE</a>, <a class="el" href="sbus__common_8c_source.html#l00050">SBUS_STATUS_GOT_START</a>, <a class="el" href="sbus__common_8c_source.html#l00049">SBUS_STATUS_UNINIT</a>, <a class="el" href="sbus__common_8h_source.html#l00087">Sbus::status</a>, <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00324">uart_char_available()</a>, and <a class="el" href="chibios_2mcu__periph_2uart__arch_8c_source.html#l00840">uart_getch()</a>.</p>
+<p>References <a class="el" href="sbus__common_8h_source.html#l00085">Sbus::buffer</a>, <a class="el" href="sbus__common_8c_source.html#l00095">decode_sbus_buffer()</a>, <a class="el" href="sbus__common_8h_source.html#l00082">Sbus::frame_available</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00078">get_sys_time_msec()</a>, <a class="el" href="sbus__common_8h_source.html#l00086">Sbus::idx</a>, <a class="el" href="sbus__common_8h_source.html#l00081">Sbus::ppm</a>, <a class="el" href="sbus__common_8h_source.html#l00080">Sbus::pulses</a>, <a class="el" href="sbus__common_8h_source.html#l00083">Sbus::rc_failsafe</a>, <a class="el" href="sbus__common_8h_source.html#l00084">Sbus::rc_lost</a>, <a class="el" href="sbus__common_8h_source.html#l00062">SBUS_BUF_LENGTH</a>, <a class="el" href="sbus__common_8c_source.html#l00037">SBUS_END_BYTE_0</a>, <a class="el" href="sbus__common_8c_source.html#l00038">SBUS_END_BYTE_1</a>, <a class="el" href="sbus__common_8c_source.html#l00039">SBUS_END_BYTE_2</a>, <a class="el" href="sbus__common_8c_source.html#l00040">SBUS_END_BYTE_3</a>, <a class="el" href="sbus__common_8c_source.html#l00041">SBUS_END_BYTE_4</a>, <a class="el" href="sbus__common_8c_source.html#l00042">SBUS_END_BYTE_5</a>, <a class="el" href="sbus__common_8c_source.html#l00036">SBUS_START_BYTE</a>, <a class="el" href="sbus__common_8c_source.html#l00051">SBUS_STATUS_GOT_START</a>, <a class="el" href="sbus__common_8c_source.html#l00050">SBUS_STATUS_UNINIT</a>, <a class="el" href="sbus__common_8c_source.html#l00057">SBUS_TIMEOUT_MS</a>, <a class="el" href="sbus__common_8h_source.html#l00088">Sbus::start_time</a>, <a class="el" href="sbus__common_8h_source.html#l00087">Sbus::status</a>, <a class="el" href="linux_2mcu__periph_2uart__arch_8c_source.html#l00323">uart_char_available()</a>, and <a class="el" href="chibios_2mcu__periph_2uart__arch_8c_source.html#l00867">uart_getch()</a>.</p>
 
 <p>Referenced by <a class="el" href="sbus_8c_source.html#l00067">sbus_decode_event()</a>, and <a class="el" href="sbus__dual_8c_source.html#l00074">sbus_dual_decode_event()</a>.</p>
 
@@ -557,7 +579,7 @@ Functions</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="sbus__common_8c_a3a369db0efa4a3e8ac7e0b205a5c9740_cgraph.png" border="0" usemap="#sbus__common_8c_a3a369db0efa4a3e8ac7e0b205a5c9740_cgraph" alt=""/></div>
 <map name="sbus__common_8c_a3a369db0efa4a3e8ac7e0b205a5c9740_cgraph" id="sbus__common_8c_a3a369db0efa4a3e8ac7e0b205a5c9740_cgraph">
-<area shape="rect" id="node2" href="sbus__common_8c.html#ae438287533911004cc6f3ff98b065df7" title="Decode the raw buffer. " alt="" coords="224,5,375,32"/><area shape="rect" id="node3" href="linux_2mcu__periph_2uart__arch_8c.html#abd0dcae4715bc91bdf3369785a9b6c87" title="Check UART for available chars in receive buffer. " alt="" coords="226,56,373,83"/><area shape="rect" id="node4" href="chibios_2mcu__periph_2uart__arch_8c.html#adb9a60ec94a31a08e6454ccf64f24039" title="uart_getch" alt="" coords="254,107,345,133"/></map>
+<area shape="rect" id="node2" href="sbus__common_8c.html#ae438287533911004cc6f3ff98b065df7" title="Decode the raw buffer. " alt="" coords="224,5,375,32"/><area shape="rect" id="node3" href="chibios_2mcu__periph_2sys__time__arch_8c.html#ad3cb294b0d1d74dfb511534b36a17960" title="Get the time in milliseconds since startup. " alt="" coords="225,56,374,83"/><area shape="rect" id="node4" href="linux_2mcu__periph_2uart__arch_8c.html#a663f41657d0ad8e115fc7709b071d749" title="Check UART for available chars in receive buffer. " alt="" coords="226,107,373,133"/><area shape="rect" id="node5" href="chibios_2mcu__periph_2uart__arch_8c.html#adb9a60ec94a31a08e6454ccf64f24039" title="uart_getch" alt="" coords="254,157,345,184"/></map>
 </div>
 </p>
 
@@ -612,9 +634,9 @@ Functions</h2></td></tr>
 
 <p>Init function. </p>
 
-<p>Definition at line <a class="el" href="sbus__common_8c_source.html#l00063">63</a> of file <a class="el" href="sbus__common_8c_source.html">sbus_common.c</a>.</p>
+<p>Definition at line <a class="el" href="sbus__common_8c_source.html#l00070">70</a> of file <a class="el" href="sbus__common_8c_source.html">sbus_common.c</a>.</p>
 
-<p>References <a class="el" href="chibios_2mcu__periph_2uart__arch_8h_source.html#l00047">B100000</a>, <a class="el" href="sbus__common_8h_source.html#l00082">Sbus::frame_available</a>, <a class="el" href="chibios_2mcu__periph_2gpio__arch_8c_source.html#l00033">gpio_setup_output()</a>, <a class="el" href="sbus__common_8h_source.html#l00083">Sbus::rc_failsafe</a>, <a class="el" href="sbus__common_8h_source.html#l00084">Sbus::rc_lost</a>, <a class="el" href="sbus__common_8c_source.html#l00060">RC_SET_POLARITY</a>, <a class="el" href="sbus__common_8c_source.html#l00049">SBUS_STATUS_UNINIT</a>, <a class="el" href="sbus__common_8h_source.html#l00087">Sbus::status</a>, <a class="el" href="uart_8c_source.html#l00299">uart_periph_invert_data_logic()</a>, <a class="el" href="chibios_2mcu__periph_2uart__arch_8c_source.html#l00856">uart_periph_set_baudrate()</a>, <a class="el" href="chibios_2mcu__periph_2uart__arch_8c_source.html#l00885">uart_periph_set_bits_stop_parity()</a>, <a class="el" href="serial__port_8c_source.html#l00050">UBITS_8</a>, <a class="el" href="serial__port_8c_source.html#l00057">UPARITY_EVEN</a>, and <a class="el" href="serial__port_8c_source.html#l00053">USTOP_2</a>.</p>
+<p>References <a class="el" href="chibios_2mcu__periph_2uart__arch_8h_source.html#l00047">B100000</a>, <a class="el" href="sbus__common_8h_source.html#l00082">Sbus::frame_available</a>, <a class="el" href="chibios_2mcu__periph_2gpio__arch_8c_source.html#l00033">gpio_setup_output()</a>, <a class="el" href="sbus__common_8h_source.html#l00083">Sbus::rc_failsafe</a>, <a class="el" href="sbus__common_8h_source.html#l00084">Sbus::rc_lost</a>, <a class="el" href="sbus__common_8c_source.html#l00067">RC_SET_POLARITY</a>, <a class="el" href="sbus__common_8c_source.html#l00050">SBUS_STATUS_UNINIT</a>, <a class="el" href="sbus__common_8h_source.html#l00088">Sbus::start_time</a>, <a class="el" href="sbus__common_8h_source.html#l00087">Sbus::status</a>, <a class="el" href="uart_8c_source.html#l00299">uart_periph_invert_data_logic()</a>, <a class="el" href="chibios_2mcu__periph_2uart__arch_8c_source.html#l00883">uart_periph_set_baudrate()</a>, <a class="el" href="chibios_2mcu__periph_2uart__arch_8c_source.html#l00912">uart_periph_set_bits_stop_parity()</a>, <a class="el" href="serial__port_8c_source.html#l00050">UBITS_8</a>, <a class="el" href="serial__port_8c_source.html#l00057">UPARITY_EVEN</a>, and <a class="el" href="serial__port_8c_source.html#l00053">USTOP_2</a>.</p>
 
 <p>Referenced by <a class="el" href="sbus_8c_source.html#l00054">radio_control_impl_init()</a>.</p>
 
@@ -648,7 +670,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_a146ed466020daad33793c9994e8ab3e.html">radio_control</a></li><li class="navelem"><a class="el" href="sbus__common_8c.html">sbus_common.c</a></li>
-    <li class="footer">Generated on Wed Sep 12 2018 02:03:53 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:03:36 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -121,6 +121,7 @@ $(document).ready(function(){initNavTree('spi_8h.html','');});
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;std.h&quot;</code><br />
 <code>#include &quot;mcu_periph/spi_arch.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="sys__time_8h_source.html">mcu_periph/sys_time.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for spi.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -128,7 +129,7 @@ $(document).ready(function(){initNavTree('spi_8h.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="spi_8h__incl.png" border="0" usemap="#sw_2airborne_2mcu__periph_2spi_8h" alt=""/></div>
 <map name="sw_2airborne_2mcu__periph_2spi_8h" id="sw_2airborne_2mcu__periph_2spi_8h">
-</map>
+<area shape="rect" id="node4" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="213,95,384,121"/><area shape="rect" id="node5" href="inttypes_8h.html" title="inttypes.h" alt="" coords="124,177,209,203"/></map>
 </div>
 </div>
 <p><a href="spi_8h_source.html">Go to the source code of this file.</a></p>
@@ -144,6 +145,8 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:aeff80f00f6c7ef00aeb93fd95c78ced0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="spi_8h.html#aeff80f00f6c7ef00aeb93fd95c78ced0">SPI_BLOCKING_TIMEOUT</a>&#160;&#160;&#160;1.f</td></tr>
+<tr class="separator:aeff80f00f6c7ef00aeb93fd95c78ced0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8ae4597a9e237b75a108cdde49c302a6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__spi.html#ga8ae4597a9e237b75a108cdde49c302a6">SPI_TRANSACTION_QUEUE_LEN</a>&#160;&#160;&#160;8</td></tr>
 <tr class="memdesc:ga8ae4597a9e237b75a108cdde49c302a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">SPI transaction queue length.  <a href="group__spi.html#ga8ae4597a9e237b75a108cdde49c302a6">More...</a><br /></td></tr>
 <tr class="separator:ga8ae4597a9e237b75a108cdde49c302a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -255,6 +258,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga5d383931766cb373ebad0b8bc26d439d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__spi.html#ga5d383931766cb373ebad0b8bc26d439d">spi_submit</a> (struct <a class="el" href="group__spi.html#structspi__periph">spi_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, struct <a class="el" href="group__spi.html#structspi__transaction">spi_transaction</a> *t)</td></tr>
 <tr class="memdesc:ga5d383931766cb373ebad0b8bc26d439d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit a spi transaction.  <a href="group__spi.html#ga5d383931766cb373ebad0b8bc26d439d">More...</a><br /></td></tr>
 <tr class="separator:ga5d383931766cb373ebad0b8bc26d439d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga66e55e817c63768ac9910dc6f7cc9447"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__spi.html#ga66e55e817c63768ac9910dc6f7cc9447">spi_blocking_transceive</a> (struct <a class="el" href="group__spi.html#structspi__periph">spi_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, struct <a class="el" href="group__spi.html#structspi__transaction">spi_transaction</a> *t)</td></tr>
+<tr class="memdesc:ga66e55e817c63768ac9910dc6f7cc9447"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a spi transaction (blocking).  <a href="group__spi.html#ga66e55e817c63768ac9910dc6f7cc9447">More...</a><br /></td></tr>
+<tr class="separator:ga66e55e817c63768ac9910dc6f7cc9447"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad43916477f5d87b42eaa7d2099771568"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__spi.html#gad43916477f5d87b42eaa7d2099771568">spi_slave_select</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> slave)</td></tr>
 <tr class="memdesc:gad43916477f5d87b42eaa7d2099771568"><td class="mdescLeft">&#160;</td><td class="mdescRight">Select a slave.  <a href="group__spi.html#gad43916477f5d87b42eaa7d2099771568">More...</a><br /></td></tr>
 <tr class="separator:gad43916477f5d87b42eaa7d2099771568"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -293,13 +299,30 @@ Variables</h2></td></tr>
 <p>Also see the <a class="el" href="group__spi.html">SPI interface</a> page. </p>
 
 <p>Definition in file <a class="el" href="spi_8h_source.html">spi.h</a>.</p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="aeff80f00f6c7ef00aeb93fd95c78ced0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SPI_BLOCKING_TIMEOUT&#160;&#160;&#160;1.f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="spi_8h_source.html#l00040">40</a> of file <a class="el" href="spi_8h_source.html">spi.h</a>.</p>
+
+<p>Referenced by <a class="el" href="spi_8h_source.html#l00284">spi_blocking_transceive()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_1ca43f6a116d741d80fb1d0555a2b198.html">mcu_periph</a></li><li class="navelem"><a class="el" href="spi_8h.html">spi.h</a></li>
-    <li class="footer">Generated on Wed Sep 12 2018 02:03:24 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:03:06 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

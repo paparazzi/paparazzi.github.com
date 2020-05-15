@@ -13,6 +13,10 @@ var disco_8h =
     [ "MS45XX_PRESSURE_OUTPUT_TYPE_InH2O", "disco_8h.html#a0a6da70b0d6ba228fcd5d258f7bce7e7", null ],
     [ "MS45XX_PRESSURE_RANGE", "disco_8h.html#a290e8bdfa317a6b511add38211c4bbd9", null ],
     [ "MS45XX_PRESSURE_TYPE", "disco_8h.html#a7761b57fc68d5793ad3c3ea2edab6cbc", null ],
+    [ "SONAR_BEBOP_PEAK_THRESHOLD", "disco_8h.html#ad38ba37e0445c0f57ef79e1c154ca7a3", null ],
+    [ "SONAR_BEBOP_TRANSITION_COUNT", "disco_8h.html#a6017153886b228ceea828e5d7333a20b", null ],
+    [ "SONAR_BEBOP_TRANSITION_HIGH_TO_LOW", "disco_8h.html#ab5d4a93ccc6b9424f012526922b6344c", null ],
+    [ "SONAR_BEBOP_TRANSITION_LOW_TO_HIGH", "disco_8h.html#aa1a2721b9d1a8086bff14fb86548bc7c", null ],
     [ "SPI0_BITS_PER_WORD", "disco_8h.html#ac0c17180c00e0862f0dd0eaea546c19a", null ],
     [ "SPI0_MAX_SPEED_HZ", "disco_8h.html#a495eef5868c701c6dd024afee3038956", null ],
     [ "SPI0_MODE", "disco_8h.html#a989283f6e472fa84449301df602c6e94", null ],
@@ -26,6 +30,5 @@ var disco_8h =
     [ "USE_AIRSPEED_LOWPASS_FILTER", "disco_8h.html#ae4db6d792956c6002d91d931d0beab12", null ],
     [ "USE_BARO_BOARD", "disco_8h.html#a3f7278cf218a92fa0a1514dea823cd9d", null ],
     [ "bottom_camera", "disco_8h.html#aebe228d13ad2e4e0c8528d945ad76a82", null ],
-    [ "front_camera", "disco_8h.html#abe211b229633c3f39cbfb50c5765b4b4", null ],
-    [ "mt9f002", "disco_8h.html#a0a67664fafa1d9cbcc7deaa1352d1673", null ]
+    [ "front_camera", "disco_8h.html#abe211b229633c3f39cbfb50c5765b4b4", null ]
 ];

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -129,15 +129,19 @@ $(document).ready(function(){initNavTree('pc__sim_8h_source.html','');});
 <div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="pc__sim_8h.html#a3f7278cf218a92fa0a1514dea823cd9d">   18</a></span>&#160;<span class="preprocessor">#define USE_BARO_BOARD 0</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">extern</span> <span class="keyword">struct </span><a class="code" href="video__device_8h.html#structvideo__config__t">video_config_t</a> <a class="code" href="pc__sim_8h.html#abca45270f4f2c3b3f7e4cfbed49cc288">webcam</a>;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">// Simulated cameras, see modules/computer_vision/video_thread_nps.c</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">extern</span> <span class="keyword">struct </span><a class="code" href="video__device_8h.html#structvideo__config__t">video_config_t</a> <a class="code" href="pc__sim_8h.html#abe211b229633c3f39cbfb50c5765b4b4">front_camera</a>;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">extern</span> <span class="keyword">struct </span><a class="code" href="video__device_8h.html#structvideo__config__t">video_config_t</a> <a class="code" href="pc__sim_8h.html#aebe228d13ad2e4e0c8528d945ad76a82">bottom_camera</a>;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* CONFIG_PC_SIM_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="video__device_8h.html">peripherals/video_device.h</a>&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">extern</span> <span class="keyword">struct </span><a class="code" href="video__device_8h.html#structvideo__config__t">video_config_t</a> <a class="code" href="pc__sim_8h.html#abca45270f4f2c3b3f7e4cfbed49cc288">webcam</a>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">// Simulated cameras, see modules/computer_vision/video_thread_nps.c</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">extern</span> <span class="keyword">struct </span><a class="code" href="video__device_8h.html#structvideo__config__t">video_config_t</a> <a class="code" href="pc__sim_8h.html#abe211b229633c3f39cbfb50c5765b4b4">front_camera</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">extern</span> <span class="keyword">struct </span><a class="code" href="video__device_8h.html#structvideo__config__t">video_config_t</a> <a class="code" href="pc__sim_8h.html#aebe228d13ad2e4e0c8528d945ad76a82">bottom_camera</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* CONFIG_PC_SIM_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="pc__sim_8h_html_abca45270f4f2c3b3f7e4cfbed49cc288"><div class="ttname"><a href="pc__sim_8h.html#abca45270f4f2c3b3f7e4cfbed49cc288">webcam</a></div><div class="ttdeci">struct video_config_t webcam</div></div>
 <div class="ttc" id="pc__sim_8h_html_abe211b229633c3f39cbfb50c5765b4b4"><div class="ttname"><a href="pc__sim_8h.html#abe211b229633c3f39cbfb50c5765b4b4">front_camera</a></div><div class="ttdeci">struct video_config_t front_camera</div><div class="ttdoc">Video thread dummy for simulation. </div><div class="ttdef"><b>Definition:</b> <a href="ardrone_2board_8c_source.html#l00043">board.c:43</a></div></div>
+<div class="ttc" id="video__device_8h_html"><div class="ttname"><a href="video__device_8h.html">video_device.h</a></div></div>
 <div class="ttc" id="pc__sim_8h_html_aebe228d13ad2e4e0c8528d945ad76a82"><div class="ttname"><a href="pc__sim_8h.html#aebe228d13ad2e4e0c8528d945ad76a82">bottom_camera</a></div><div class="ttdeci">struct video_config_t bottom_camera</div><div class="ttdef"><b>Definition:</b> <a href="ardrone_2board_8c_source.html#l00068">board.c:68</a></div></div>
 <div class="ttc" id="video__device_8h_html_structvideo__config__t"><div class="ttname"><a href="video__device_8h.html#structvideo__config__t">video_config_t</a></div><div class="ttdoc">V4L2 device settings. </div><div class="ttdef"><b>Definition:</b> <a href="video__device_8h_source.html#l00055">video_device.h:55</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -146,7 +150,7 @@ $(document).ready(function(){initNavTree('pc__sim_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e030268cd18297cf6282390f76bfcf7f.html">boards</a></li><li class="navelem"><a class="el" href="pc__sim_8h.html">pc_sim.h</a></li>
-    <li class="footer">Generated on Wed Sep 12 2018 02:02:35 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:02:13 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -107,8 +107,18 @@ $(document).ready(function(){initNavTree('module__nav_basic_fw.html','');});
 <p>No detailed description...</p>
 <h1><a class="anchor" id="module_load_example__nav_basic_fw"></a>
 Example for airframe file</h1>
-<p>Add to your firmware section: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;module name=&quot;nav_basic_fw&quot;/&gt;</div>
-</div><!-- fragment --> <h1><a class="anchor" id="functions__nav_basic_fw"></a>
+<p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;module name=&quot;nav_basic_fw&quot;&gt;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;  &lt;define name=&quot;NAV_SURVEY_RECTANGLE_DYNAMIC&quot; value=&quot;FALSE|TRUE&quot; /&gt;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;&lt;/module&gt;</div>
+</div><!-- fragment --> <h1><a class="anchor" id="configuration__nav_basic_fw"></a>
+Module configuration options</h1>
+<h2><a class="anchor" id="define"></a>
+Define Options</h2>
+<ul>
+<li><b>name:</b> <code>NAV_SURVEY_RECTANGLE_DYNAMIC</code> <b>value:</b> <em>FALSE|TRUE</em> <br />
+ Description: Set to true to allow changing sweep distance mid survey</li>
+</ul>
+<h1><a class="anchor" id="functions__nav_basic_fw"></a>
 Module functions</h1>
 <h2><a class="anchor" id="init_functions"></a>
 Init Functions</h2>
@@ -140,6 +150,7 @@ Raw nav_basic_fw.xml file:</h2>
 <div class="line">    &lt;description&gt;</div>
 <div class="line">      Standard navigation patterns and flight plan handling</div>
 <div class="line">    &lt;/description&gt;</div>
+<div class="line">    &lt;define name=&quot;NAV_SURVEY_RECTANGLE_DYNAMIC&quot; value=&quot;FALSE|TRUE&quot; description=&quot;Set to true to allow changing sweep distance mid survey&quot;/&gt;</div>
 <div class="line">  &lt;/doc&gt;</div>
 <div class="line">  &lt;settings&gt;</div>
 <div class="line">    &lt;dl_settings&gt;</div>
@@ -155,6 +166,7 @@ Raw nav_basic_fw.xml file:</h2>
 <div class="line">        &lt;dl_setting MAX=&quot;50&quot; MIN=&quot;5&quot; STEP=&quot;0.5&quot; VAR=&quot;nav_ground_speed_setpoint&quot; shortname=&quot;ground speed&quot;/&gt;</div>
 <div class="line">        &lt;dl_setting MAX=&quot;0.2&quot; MIN=&quot;0&quot; STEP=&quot;0.01&quot; VAR=&quot;nav_ground_speed_pgain&quot; shortname=&quot;ground speed pgain&quot;/&gt;</div>
 <div class="line">        &lt;dl_setting MAX=&quot;500&quot; MIN=&quot;50&quot; STEP=&quot;5&quot; VAR=&quot;nav_survey_shift&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting min=&quot;10&quot; max=&quot;500&quot; step=&quot;1&quot; var=&quot;nav_survey_sweep&quot; type=&quot;float&quot; shortname=&quot;Distance&quot; module=&quot;subsystems/navigation/nav_survey_rectangle&quot;/&gt;</div>
 <div class="line">      &lt;/dl_settings&gt;</div>
 <div class="line">    &lt;/dl_settings&gt;</div>
 <div class="line">  &lt;/settings&gt;</div>
@@ -175,7 +187,7 @@ Raw nav_basic_fw.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Wed Sep 12 2018 02:04:00 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:03:43 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

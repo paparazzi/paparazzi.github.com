@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -154,6 +154,17 @@ Raw gain_scheduling.xml file:</h2>
 <div class="line">  &lt;/doc&gt;</div>
 <div class="line">&lt;settings&gt;</div>
 <div class="line">  &lt;dl_settings NAME=&quot;Gain scheduling&quot;&gt;</div>
+<div class="line">    &lt;dl_settings NAME=&quot;gain_set_1&quot;&gt;</div>
+<div class="line">      &lt;dl_setting var=&quot;gainlibrary[0].p.x&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;3000&quot; module=&quot;modules/ctrl/gain_scheduling&quot; shortname=&quot;phi_p&quot;/&gt;</div>
+<div class="line">      &lt;dl_setting var=&quot;gainlibrary[0].i.x&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;1000&quot; module=&quot;modules/ctrl/gain_scheduling&quot; shortname=&quot;phi_i&quot;/&gt;</div>
+<div class="line">      &lt;dl_setting var=&quot;gainlibrary[0].d.x&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;3000&quot; module=&quot;modules/ctrl/gain_scheduling&quot; shortname=&quot;phi_d&quot;/&gt;</div>
+<div class="line">      &lt;dl_setting var=&quot;gainlibrary[0].p.y&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;3000&quot; module=&quot;modules/ctrl/gain_scheduling&quot; shortname=&quot;theta_p&quot;/&gt;</div>
+<div class="line">      &lt;dl_setting var=&quot;gainlibrary[0].i.y&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;1000&quot; module=&quot;modules/ctrl/gain_scheduling&quot; shortname=&quot;theta_i&quot;/&gt;</div>
+<div class="line">      &lt;dl_setting var=&quot;gainlibrary[0].d.y&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;3000&quot; module=&quot;modules/ctrl/gain_scheduling&quot; shortname=&quot;theta_d&quot;/&gt;</div>
+<div class="line">      &lt;dl_setting var=&quot;gainlibrary[0].p.z&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;3000&quot; module=&quot;modules/ctrl/gain_scheduling&quot; shortname=&quot;psi_p&quot;/&gt;</div>
+<div class="line">      &lt;dl_setting var=&quot;gainlibrary[0].i.z&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;1000&quot; module=&quot;modules/ctrl/gain_scheduling&quot; shortname=&quot;psi_i&quot;/&gt;</div>
+<div class="line">      &lt;dl_setting var=&quot;gainlibrary[0].d.z&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;3000&quot; module=&quot;modules/ctrl/gain_scheduling&quot; shortname=&quot;psi_d&quot;/&gt;</div>
+<div class="line">    &lt;/dl_settings&gt;</div>
 <div class="line">    &lt;dl_settings NAME=&quot;gain_set_2&quot;&gt;</div>
 <div class="line">      &lt;dl_setting var=&quot;gainlibrary[1].p.x&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;3000&quot; module=&quot;modules/ctrl/gain_scheduling&quot; shortname=&quot;phi_p&quot;/&gt;</div>
 <div class="line">      &lt;dl_setting var=&quot;gainlibrary[1].i.x&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;1000&quot; module=&quot;modules/ctrl/gain_scheduling&quot; shortname=&quot;phi_i&quot;/&gt;</div>
@@ -182,7 +193,7 @@ Raw gain_scheduling.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Wed Sep 12 2018 02:03:59 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:03:42 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

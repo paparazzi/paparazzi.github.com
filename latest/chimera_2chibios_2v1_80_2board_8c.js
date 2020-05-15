@@ -13,6 +13,7 @@ var chimera_2chibios_2v1_80_2board_8c =
     [ "__early_init", "chimera_2chibios_2v1_80_2board_8c.html#a32c73ccd62cbae6568272cc6949531f2", null ],
     [ "boardInit", "chimera_2chibios_2v1_80_2board_8c.html#a48edc646a1de1ba488bbe7d786df9bae", null ],
     [ "gpio_init", "chimera_2chibios_2v1_80_2board_8c.html#a80165e560c06aa6ebd909115c6b9221a", null ],
+    [ "mcu_periph_energy_save", "chimera_2chibios_2v1_80_2board_8c.html#a551c9306f64635b52d9827b1065a11c1", null ],
     [ "stm32_gpio_init", "chimera_2chibios_2v1_80_2board_8c.html#a6642d60b72ede530ac245de7b42c1322", null ],
     [ "gpio_default_config", "chimera_2chibios_2v1_80_2board_8c.html#a80a51f8d00a90983e395f3e15a4c46a5", null ]
 ];

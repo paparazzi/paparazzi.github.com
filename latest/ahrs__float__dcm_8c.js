@@ -1,5 +1,7 @@
 var ahrs__float__dcm_8c =
 [
+    [ "ACCEL_WEIGHT_BAND", "ahrs__float__dcm_8c.html#ac3c51dcbd49ca0b36f5759f96d232b64", null ],
+    [ "ACCEL_WEIGHT_FILTER", "ahrs__float__dcm_8c.html#ab320166f60135defa2bcc392025ac5d5", null ],
     [ "ahrs_dcm_align", "ahrs__float__dcm_8c.html#ac19ef4cf9dfcc61561addd93a8c41a5e", null ],
     [ "ahrs_dcm_init", "ahrs__float__dcm_8c.html#a72e0ab470bdd713dbf05bbb7d2aaac0c", null ],
     [ "ahrs_dcm_propagate", "ahrs__float__dcm_8c.html#a085ad70d62a69cf92b8e08b27b9e60d1", null ],

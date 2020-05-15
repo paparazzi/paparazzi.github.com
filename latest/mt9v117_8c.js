@@ -13,6 +13,7 @@ var mt9v117_8c =
     [ "write_reg", "mt9v117_8c.html#a930a08d54ce09662cbac826ff7a052bf", null ],
     [ "write_var", "mt9v117_8c.html#acd33743f2f52bd5711b8c978e7cf3df2", null ],
     [ "bottom_camera", "mt9v117_8c.html#aebe228d13ad2e4e0c8528d945ad76a82", null ],
+    [ "mt9v117", "mt9v117_8c.html#af2aace6511d89f4676f13ec941992bd4", null ],
     [ "mt9v117_patch_lines", "mt9v117_8c.html#a3fd506a87954af6cc887054eea5c8b41", null ],
     [ "patch_line1", "mt9v117_8c.html#add3aa1b600758e7fa22b2184140444f4", null ],
     [ "patch_line10", "mt9v117_8c.html#a4851161d3bcb800486f7c605f7f452e3", null ],

@@ -34,10 +34,11 @@ var lpc21_2mcu__periph_2gpio__arch_8h =
     [ "GPIO9", "lpc21_2mcu__periph_2gpio__arch_8h.html#ae2a4c4d28729daf18e1923a1878e7352", null ],
     [ "GPIOA", "lpc21_2mcu__periph_2gpio__arch_8h.html#ac485358099728ddae050db37924dd6b7", null ],
     [ "GPIOB", "lpc21_2mcu__periph_2gpio__arch_8h.html#a68b66ac73be4c836db878a42e1fea3cd", null ],
-    [ "gpio_clear", "lpc21_2mcu__periph_2gpio__arch_8h.html#a89e9374c857d78edd1637be888d37fcb", null ],
-    [ "gpio_get", "lpc21_2mcu__periph_2gpio__arch_8h.html#a7ca727dbfee78043ad7f9ee1fc96182d", null ],
-    [ "gpio_set", "lpc21_2mcu__periph_2gpio__arch_8h.html#a323cdee14aaaa16c4dd52e4b1a6a6d5e", null ],
-    [ "gpio_setup_input", "lpc21_2mcu__periph_2gpio__arch_8h.html#ada0fcb2fa4a97c20e81bb1a422446137", null ],
-    [ "gpio_setup_output", "lpc21_2mcu__periph_2gpio__arch_8h.html#a9623a3774c44d3fc1cca04ccc9bc69f6", null ],
-    [ "gpio_toggle", "lpc21_2mcu__periph_2gpio__arch_8h.html#a9de53141a4d281b2e770655ab2e45c58", null ]
+    [ "gpio_port_t", "lpc21_2mcu__periph_2gpio__arch_8h.html#a0b1ea4c5dcb8c89237166d2e62be42de", null ],
+    [ "gpio_clear", "lpc21_2mcu__periph_2gpio__arch_8h.html#a8a6fcda044b51e6eb94e926da9c09fac", null ],
+    [ "gpio_get", "lpc21_2mcu__periph_2gpio__arch_8h.html#ab5d06ff9dd09e71dc368449ebf05152f", null ],
+    [ "gpio_set", "lpc21_2mcu__periph_2gpio__arch_8h.html#a7189e39183f728b1c2c832866500eec1", null ],
+    [ "gpio_setup_input", "lpc21_2mcu__periph_2gpio__arch_8h.html#aab080d08535beaa02eaa5ca94b0b86c3", null ],
+    [ "gpio_setup_output", "lpc21_2mcu__periph_2gpio__arch_8h.html#ace76b56403a9dd5dd0e86c04cc86b38a", null ],
+    [ "gpio_toggle", "lpc21_2mcu__periph_2gpio__arch_8h.html#af4e52c8853b0842607551966984ce8d8", null ]
 ];

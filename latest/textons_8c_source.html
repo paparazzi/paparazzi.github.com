@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -254,7 +254,7 @@ $(document).ready(function(){initNavTree('textons_8c_source.html','');});
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;</div>
 <div class="line"><a name="l00166"></a><span class="lineno"><a class="line" href="textons_8h.html#a89ba1b117446ed4075635e5d26107819">  166</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="textons_8c.html#a89ba1b117446ed4075635e5d26107819">DictionaryTrainingYUV</a>(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *frame, <a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> width, <a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> height)</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;{</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  <span class="keywordtype">int</span> i, j, <a class="code" href="image_8h.html#aa3c13c99294ff126c4c019d5e799253e">w</a>, s, texton, c; <span class="comment">// iterators</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  <span class="keywordtype">int</span> i, j, <a class="code" href="image_8h.html#aa3c13c99294ff126c4c019d5e799253e">w</a>, <a class="code" href="light__scheduler_8c.html#a2dee666f0c1fe072c549ff86b1d0a8ab">s</a>, texton, c; <span class="comment">// iterators</span></div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  <span class="keywordtype">int</span> x, y; <span class="comment">// image coordinates</span></div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  <span class="keywordtype">float</span> error_texton; <span class="comment">// distance between an image patch and a texton</span></div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;</div>
@@ -603,6 +603,7 @@ $(document).ready(function(){initNavTree('textons_8c_source.html','');});
 <div class="ttc" id="types_8h_html_a273cf69d639a59973b6019625df33e30"><div class="ttname"><a href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></div><div class="ttdeci">unsigned short uint16_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00016">types.h:16</a></div></div>
 <div class="ttc" id="textons_8c_html_a6d2b99999b3e2213453a8050abaedb18"><div class="ttname"><a href="textons_8c.html#a6d2b99999b3e2213453a8050abaedb18">load_dictionary</a></div><div class="ttdeci">uint8_t load_dictionary</div><div class="ttdef"><b>Definition:</b> <a href="textons_8c_source.html#l00094">textons.c:94</a></div></div>
 <div class="ttc" id="textons_8c_html_a5f00de43dd5ab23d5aaea3333937ce48"><div class="ttname"><a href="textons_8c.html#a5f00de43dd5ab23d5aaea3333937ce48">TEXTONS_PATCH_SIZE</a></div><div class="ttdeci">#define TEXTONS_PATCH_SIZE</div><div class="ttdef"><b>Definition:</b> <a href="textons_8c_source.html#l00064">textons.c:64</a></div></div>
+<div class="ttc" id="light__scheduler_8c_html_a2dee666f0c1fe072c549ff86b1d0a8ab"><div class="ttname"><a href="light__scheduler_8c.html#a2dee666f0c1fe072c549ff86b1d0a8ab">s</a></div><div class="ttdeci">static uint32_t s</div><div class="ttdef"><b>Definition:</b> <a href="light__scheduler_8c_source.html#l00033">light_scheduler.c:33</a></div></div>
 <div class="ttc" id="image_8h_html_a42e8d87861c2a899bd4090bacf58c9dd"><div class="ttname"><a href="image_8h.html#a42e8d87861c2a899bd4090bacf58c9dd">image_t::buf_size</a></div><div class="ttdeci">uint32_t buf_size</div><div class="ttdoc">The buffer size. </div><div class="ttdef"><b>Definition:</b> <a href="image_8h_source.html#l00052">image.h:52</a></div></div>
 <div class="ttc" id="textons_8c_html_ad239f51eb3b581eb4c76a6fcb7f92e2f"><div class="ttname"><a href="textons_8c.html#ad239f51eb3b581eb4c76a6fcb7f92e2f">border_height</a></div><div class="ttdeci">uint32_t border_height</div><div class="ttdef"><b>Definition:</b> <a href="textons_8c_source.html#l00102">textons.c:102</a></div></div>
 <div class="ttc" id="textons_8c_html_afb157a0820f04fbd4536ca42509ac14b"><div class="ttname"><a href="textons_8c.html#afb157a0820f04fbd4536ca42509ac14b">TEXTONS_FULL_SAMPLING</a></div><div class="ttdeci">#define TEXTONS_FULL_SAMPLING</div><div class="ttdef"><b>Definition:</b> <a href="textons_8c_source.html#l00074">textons.c:74</a></div></div>
@@ -651,7 +652,7 @@ $(document).ready(function(){initNavTree('textons_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_304e79c9f5d09ea65a2f55aafb6a6b9d.html">computer_vision</a></li><li class="navelem"><a class="el" href="textons_8c.html">textons.c</a></li>
-    <li class="footer">Generated on Wed Sep 12 2018 02:02:44 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:02:21 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

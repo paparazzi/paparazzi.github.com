@@ -43,6 +43,8 @@ var rtcm3_8h =
     [ "RTCM3_MSG_1005", "rtcm3_8h.html#a10657c445689ecfd8a5a3f93addbd348", null ],
     [ "RTCM3_MSG_1077", "rtcm3_8h.html#a49c8859972ba89a61b1d226b4d56b0e3", null ],
     [ "RTCM3_MSG_1087", "rtcm3_8h.html#a6d27776d242b9fea145b671037e43e4b", null ],
+    [ "RTCM3_MSG_1230", "rtcm3_8h.html#a5b3712bdc2677106eca117fa8ad49767", null ],
+    [ "RTCM3_MSG_4072", "rtcm3_8h.html#a4d9c27a870f1b63991473d09c017c308", null ],
     [ "RTCM3_PREAMBLE", "rtcm3_8h.html#acceb43d4596bc4ee172fbe10228cf74c", null ],
     [ "RTCM_CALLBACK_ERROR", "rtcm3_8h.html#aa6e5044c4a8c998a147f8a20a67cc93f", null ],
     [ "RTCM_CLASS", "rtcm3_8h.html#ac29fccad71af2d50088d59dcd3d01771", null ],

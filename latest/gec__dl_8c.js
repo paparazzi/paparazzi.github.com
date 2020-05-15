@@ -1,5 +1,6 @@
 var gec__dl_8c =
 [
+    [ "GEC_UPDATE_DL", "gec__dl_8c.html#a5552d1dd4576f275184c864bb183fa1e", null ],
     [ "gec_add_to_whitelist", "gec__dl_8c.html#a4a443ae413db37d824272314679e3599", null ],
     [ "gec_decrypt_message", "gec__dl_8c.html#ac948362603178542b0a8c8b7375279cd", null ],
     [ "gec_dl_event", "gec__dl_8c.html#a7645c559a6c4a5f611acab677af4a579", null ],

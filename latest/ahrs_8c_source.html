@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -140,7 +140,7 @@ $(document).ready(function(){initNavTree('ahrs_8c_source.html','');});
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#ifndef PRIMARY_AHRS</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#error &quot;PRIMARY_AHRS not set!&quot;</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="ahrs__chimu_8h.html#a100248ab1eaacc626e56add84dc1857f">PRIMARY_AHRS</a>)</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="ahrs__madgwick__wrapper_8h.html#a100248ab1eaacc626e56add84dc1857f">PRIMARY_AHRS</a>)</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#ifdef SECONDARY_AHRS</span></div>
@@ -180,7 +180,7 @@ $(document).ready(function(){initNavTree('ahrs_8c_source.html','');});
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="ahrs_8c.html#a6535396c7f3fd2b0f2a0ae95cc9e9749">ahrs_impls</a>[i].<a class="code" href="ahrs_8c.html#a5020fde00c68a09ce256309e9576ea4e">enable</a> = NULL;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  }</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <a class="code" href="ahrs_8c.html#a315fb112dc69a12a2e2c8cdd43f836f9">RegisterAhrs</a>(<a class="code" href="ahrs__chimu_8h.html#a100248ab1eaacc626e56add84dc1857f">PRIMARY_AHRS</a>);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <a class="code" href="ahrs_8c.html#a315fb112dc69a12a2e2c8cdd43f836f9">RegisterAhrs</a>(<a class="code" href="ahrs__madgwick__wrapper_8h.html#a100248ab1eaacc626e56add84dc1857f">PRIMARY_AHRS</a>);</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#ifdef SECONDARY_AHRS</span></div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <a class="code" href="ahrs_8c.html#a315fb112dc69a12a2e2c8cdd43f836f9">RegisterAhrs</a>(SECONDARY_AHRS);</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#endif</span></div>
@@ -213,8 +213,7 @@ $(document).ready(function(){initNavTree('ahrs_8c_source.html','');});
 <div class="ttc" id="nps__radio__control__spektrum_8c_html_a1f658a7d21dc9b85b8009cedb0a1aef6"><div class="ttname"><a href="nps__radio__control__spektrum_8c.html#a1f658a7d21dc9b85b8009cedb0a1aef6">idx</a></div><div class="ttdeci">static uint32_t idx</div><div class="ttdef"><b>Definition:</b> <a href="nps__radio__control__spektrum_8c_source.html#l00105">nps_radio_control_spektrum.c:105</a></div></div>
 <div class="ttc" id="ahrs_8h_html"><div class="ttname"><a href="ahrs_8h.html">ahrs.h</a></div><div class="ttdoc">Dispatcher to register actual AHRS implementations. </div></div>
 <div class="ttc" id="ahrs_8c_html_a5020fde00c68a09ce256309e9576ea4e"><div class="ttname"><a href="ahrs_8c.html#a5020fde00c68a09ce256309e9576ea4e">AhrsImpl::enable</a></div><div class="ttdeci">AhrsEnableOutput enable</div><div class="ttdef"><b>Definition:</b> <a href="ahrs_8c_source.html#l00056">ahrs.c:56</a></div></div>
-<div class="ttc" id="ahrs__chimu_8h_html_a100248ab1eaacc626e56add84dc1857f"><div class="ttname"><a href="ahrs__chimu_8h.html#a100248ab1eaacc626e56add84dc1857f">PRIMARY_AHRS</a></div><div class="ttdeci">#define PRIMARY_AHRS</div><div class="ttdef"><b>Definition:</b> <a href="ahrs__chimu_8h_source.html#l00040">ahrs_chimu.h:40</a></div></div>
-<div class="ttc" id="ahrs_8h_html_aeef6d907962b150f0f9183abba07aa8e"><div class="ttname"><a href="ahrs_8h.html#aeef6d907962b150f0f9183abba07aa8e">AhrsEnableOutput</a></div><div class="ttdeci">bool(* AhrsEnableOutput)(bool)</div><div class="ttdef"><b>Definition:</b> <a href="ahrs_8h_source.html#l00055">ahrs.h:55</a></div></div>
+<div class="ttc" id="ahrs_8h_html_aeef6d907962b150f0f9183abba07aa8e"><div class="ttname"><a href="ahrs_8h.html#aeef6d907962b150f0f9183abba07aa8e">AhrsEnableOutput</a></div><div class="ttdeci">bool(* AhrsEnableOutput)(bool)</div><div class="ttdef"><b>Definition:</b> <a href="ahrs_8h_source.html#l00057">ahrs.h:57</a></div></div>
 <div class="ttc" id="ahrs_8c_html_a315fb112dc69a12a2e2c8cdd43f836f9"><div class="ttname"><a href="ahrs_8c.html#a315fb112dc69a12a2e2c8cdd43f836f9">RegisterAhrs</a></div><div class="ttdeci">#define RegisterAhrs(_x)</div><div class="ttdef"><b>Definition:</b> <a href="ahrs_8c_source.html#l00047">ahrs.c:47</a></div></div>
 <div class="ttc" id="ahrs_8c_html_aa3721663c9df7c7af5613486a3566afb"><div class="ttname"><a href="ahrs_8c.html#aa3721663c9df7c7af5613486a3566afb">ahrs_init</a></div><div class="ttdeci">void ahrs_init(void)</div><div class="ttdoc">AHRS initialization. </div><div class="ttdef"><b>Definition:</b> <a href="ahrs_8c_source.html#l00073">ahrs.c:73</a></div></div>
 <div class="ttc" id="ahrs_8c_html_a6535396c7f3fd2b0f2a0ae95cc9e9749"><div class="ttname"><a href="ahrs_8c.html#a6535396c7f3fd2b0f2a0ae95cc9e9749">ahrs_impls</a></div><div class="ttdeci">struct AhrsImpl ahrs_impls[AHRS_NB_IMPL]</div><div class="ttdef"><b>Definition:</b> <a href="ahrs_8c_source.html#l00059">ahrs.c:59</a></div></div>
@@ -227,13 +226,14 @@ $(document).ready(function(){initNavTree('ahrs_8c_source.html','');});
 <div class="ttc" id="ahrs_8c_html_a55c10b138384c73b63df1f84cb75c4ff"><div class="ttname"><a href="ahrs_8c.html#a55c10b138384c73b63df1f84cb75c4ff">ahrs_output_idx</a></div><div class="ttdeci">uint8_t ahrs_output_idx</div><div class="ttdef"><b>Definition:</b> <a href="ahrs_8c_source.html#l00060">ahrs.c:60</a></div></div>
 <div class="ttc" id="types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00014">types.h:14</a></div></div>
 <div class="ttc" id="ahrs__aligner_8c_html_a321c9a82fcb75074c3041cbf6906e5ea"><div class="ttname"><a href="ahrs__aligner_8c.html#a321c9a82fcb75074c3041cbf6906e5ea">ahrs_aligner_init</a></div><div class="ttdeci">void ahrs_aligner_init(void)</div><div class="ttdef"><b>Definition:</b> <a href="ahrs__aligner_8c_source.html#l00081">ahrs_aligner.c:81</a></div></div>
+<div class="ttc" id="ahrs__madgwick__wrapper_8h_html_a100248ab1eaacc626e56add84dc1857f"><div class="ttname"><a href="ahrs__madgwick__wrapper_8h.html#a100248ab1eaacc626e56add84dc1857f">PRIMARY_AHRS</a></div><div class="ttdeci">#define PRIMARY_AHRS</div><div class="ttdef"><b>Definition:</b> <a href="ahrs__madgwick__wrapper_8h_source.html#l00033">ahrs_madgwick_wrapper.h:33</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="ahrs_8c.html">ahrs.c</a></li>
-    <li class="footer">Generated on Wed Sep 12 2018 02:02:55 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:02:33 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -4,6 +4,8 @@ var searchData=
   ['mag_5fcalib_5fukf_20module',['mag_calib_ukf module',['../module__mag_calib_ukf.html',1,'onboard_modules']]],
   ['mag_5fhmc5843_20module',['mag_hmc5843 module',['../module__mag_hmc5843.html',1,'onboard_modules']]],
   ['mag_5fhmc58xx_20module',['mag_hmc58xx module',['../module__mag_hmc58xx.html',1,'onboard_modules']]],
+  ['mag_5fist8310_20module',['mag_ist8310 module',['../module__mag_ist8310.html',1,'onboard_modules']]],
+  ['mag_5flis3mdl_20module',['mag_lis3mdl module',['../module__mag_lis3mdl.html',1,'onboard_modules']]],
   ['mag_5fmicromag_5ffw_20module',['mag_micromag_fw module',['../module__mag_micromag_fw.html',1,'onboard_modules']]],
   ['mag_5fpitot_5fuart_20module',['mag_pitot_uart module',['../module__mag_pitot_uart.html',1,'onboard_modules']]],
   ['mavlink_20module',['mavlink module',['../module__mavlink.html',1,'onboard_modules']]],

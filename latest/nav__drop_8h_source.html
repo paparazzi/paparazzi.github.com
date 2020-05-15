@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -137,7 +137,7 @@ $(document).ready(function(){initNavTree('nav__drop_8h_source.html','');});
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="nav_8h.html">firmwares/fixedwing/nav.h</a>&quot;</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">extern</span> unit_t <a class="code" href="nav__drop_8h.html#a109ae5e49434646c14e55174b80f1c23">nav_drop_compute_approach</a>(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> wp_target, <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> wp_start, <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> wp_baseturn, <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> wp_climbout,</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                                        <span class="keywordtype">float</span> <a class="code" href="chemotaxis_8c.html#a5050a760c11da521cd4aee6336f6529f">radius</a>);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                                        <span class="keywordtype">float</span> radius);</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">extern</span> unit_t <a class="code" href="nav__drop_8h.html#ab65dbfc40970aaba82469b775a829995">nav_drop_update_release</a>(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> wp_target);</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">extern</span> unit_t <a class="code" href="nav__drop_8h.html#a0e9ac240f39dc33492426056b1299227">nav_drop_shoot</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">float</span> <a class="code" href="nav__drop_8h.html#a30c0e5e0fbaf12b1315a61a2ac7583e8">nav_drop_trigger_delay</a>, <a class="code" href="nav__drop_8h.html#a833c2bc4de81c7daf803571457ac1d30">nav_drop_start_qdr</a>;</div>
@@ -151,7 +151,6 @@ $(document).ready(function(){initNavTree('nav__drop_8h_source.html','');});
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#endif // NAV_DROP_H</span></div>
 <div class="ttc" id="nav__drop_8h_html_a833c2bc4de81c7daf803571457ac1d30"><div class="ttname"><a href="nav__drop_8h.html#a833c2bc4de81c7daf803571457ac1d30">nav_drop_start_qdr</a></div><div class="ttdeci">float nav_drop_start_qdr</div></div>
-<div class="ttc" id="chemotaxis_8c_html_a5050a760c11da521cd4aee6336f6529f"><div class="ttname"><a href="chemotaxis_8c.html#a5050a760c11da521cd4aee6336f6529f">radius</a></div><div class="ttdeci">static float radius</div><div class="ttdef"><b>Definition:</b> <a href="chemotaxis_8c_source.html#l00015">chemotaxis.c:15</a></div></div>
 <div class="ttc" id="nav__drop_8h_html_a0e9ac240f39dc33492426056b1299227"><div class="ttname"><a href="nav__drop_8h.html#a0e9ac240f39dc33492426056b1299227">nav_drop_shoot</a></div><div class="ttdeci">unit_t nav_drop_shoot(void)</div></div>
 <div class="ttc" id="nav__drop_8h_html_ab242b1072e38faf0e67e1da07e00f9ab"><div class="ttname"><a href="nav__drop_8h.html#ab242b1072e38faf0e67e1da07e00f9ab">compute_alignment</a></div><div class="ttdeci">bool compute_alignment(uint8_t w1, uint8_t w2, uint8_t start, uint8_t end, float d_before, float d_after)</div></div>
 <div class="ttc" id="nav__drop_8h_html_a30c0e5e0fbaf12b1315a61a2ac7583e8"><div class="ttname"><a href="nav__drop_8h.html#a30c0e5e0fbaf12b1315a61a2ac7583e8">nav_drop_trigger_delay</a></div><div class="ttdeci">float nav_drop_trigger_delay</div></div>
@@ -166,7 +165,7 @@ $(document).ready(function(){initNavTree('nav__drop_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_984e899df90dd104b2eabcdbb76ec71f.html">nav</a></li><li class="navelem"><a class="el" href="nav__drop_8h.html">nav_drop.h</a></li>
-    <li class="footer">Generated on Wed Sep 12 2018 02:02:50 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:02:27 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

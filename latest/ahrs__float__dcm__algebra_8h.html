@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -130,7 +130,7 @@ $(document).ready(function(){initNavTree('ahrs__float__dcm__algebra_8h.html','')
 Functions</h2></td></tr>
 <tr class="memitem:abbc7df880bf45106d0b2fcc0f9ad7fde"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__float__dcm__algebra_8h.html#abbc7df880bf45106d0b2fcc0f9ad7fde">Vector_Dot_Product</a> (float vector1[3], float vector2[3])</td></tr>
 <tr class="separator:abbc7df880bf45106d0b2fcc0f9ad7fde"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acfdef0ee13b70a857c5b98cf98072fa3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__float__dcm__algebra_8h.html#acfdef0ee13b70a857c5b98cf98072fa3">Vector_Cross_Product</a> (float vectorOut[3], float v1[3], float v2[3])</td></tr>
+<tr class="memitem:acfdef0ee13b70a857c5b98cf98072fa3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__float__dcm__algebra_8h.html#acfdef0ee13b70a857c5b98cf98072fa3">Vector_Cross_Product</a> (float vectorOut[3], float <a class="el" href="discrete__ekf__no__north_8c.html#ae4ce3408adfdc26332e4271426728dc2ac8df954f7552d1072c2658e10df4f3a3">v1</a>[3], float <a class="el" href="discrete__ekf__no__north_8c.html#ae4ce3408adfdc26332e4271426728dc2a0aa2f691294ad7a0afdbb8f6f2323868">v2</a>[3])</td></tr>
 <tr class="separator:acfdef0ee13b70a857c5b98cf98072fa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2ea17a2b7db25753df083f03cff1a33"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__float__dcm__algebra_8h.html#aa2ea17a2b7db25753df083f03cff1a33">Vector_Scale</a> (float vectorOut[3], float vectorIn[3], float scale2)</td></tr>
 <tr class="separator:aa2ea17a2b7db25753df083f03cff1a33"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -141,7 +141,7 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Algebra helper functions for DCM. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000038">Todo:</a></b></dt><dd>get rid of this and use pprz math lib. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000042">Todo:</a></b></dt><dd>get rid of this and use pprz math lib. </dd></dl>
 
 <p>Definition in file <a class="el" href="ahrs__float__dcm__algebra_8h_source.html">ahrs_float_dcm_algebra.h</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
@@ -185,7 +185,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ahrs__float__dcm__algebra_8h_source.html#l00064">64</a> of file <a class="el" href="ahrs__float__dcm__algebra_8h_source.html">ahrs_float_dcm_algebra.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ahrs__float__dcm_8c_source.html#l00462">Matrix_update()</a>.</p>
+<p>Referenced by <a class="el" href="ahrs__float__dcm_8c_source.html#l00480">Matrix_update()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -240,7 +240,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ahrs__float__dcm__algebra_8h_source.html#l00043">43</a> of file <a class="el" href="ahrs__float__dcm__algebra_8h_source.html">ahrs_float_dcm_algebra.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ahrs__float__dcm_8c_source.html#l00361">Drift_correction()</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00462">Matrix_update()</a>, and <a class="el" href="ahrs__float__dcm_8c_source.html#l00280">Normalize()</a>.</p>
+<p>Referenced by <a class="el" href="ahrs__float__dcm_8c_source.html#l00373">Drift_correction()</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00480">Matrix_update()</a>, and <a class="el" href="ahrs__float__dcm_8c_source.html#l00280">Normalize()</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -295,7 +295,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ahrs__float__dcm__algebra_8h_source.html#l00029">29</a> of file <a class="el" href="ahrs__float__dcm__algebra_8h_source.html">ahrs_float_dcm_algebra.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ahrs__float__dcm_8c_source.html#l00361">Drift_correction()</a>, and <a class="el" href="ahrs__float__dcm_8c_source.html#l00280">Normalize()</a>.</p>
+<p>Referenced by <a class="el" href="ahrs__float__dcm_8c_source.html#l00373">Drift_correction()</a>, and <a class="el" href="ahrs__float__dcm_8c_source.html#l00280">Normalize()</a>.</p>
 
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -344,7 +344,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ahrs__float__dcm__algebra_8h_source.html#l00024">24</a> of file <a class="el" href="ahrs__float__dcm__algebra_8h_source.html">ahrs_float_dcm_algebra.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ahrs__float__dcm_8c_source.html#l00361">Drift_correction()</a>, and <a class="el" href="ahrs__float__dcm_8c_source.html#l00280">Normalize()</a>.</p>
+<p>Referenced by <a class="el" href="ahrs__float__dcm_8c_source.html#l00373">Drift_correction()</a>, and <a class="el" href="ahrs__float__dcm_8c_source.html#l00280">Normalize()</a>.</p>
 
 <p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -399,7 +399,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ahrs__float__dcm__algebra_8h_source.html#l00036">36</a> of file <a class="el" href="ahrs__float__dcm__algebra_8h_source.html">ahrs_float_dcm_algebra.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ahrs__float__dcm_8c_source.html#l00361">Drift_correction()</a>, and <a class="el" href="ahrs__float__dcm_8c_source.html#l00280">Normalize()</a>.</p>
+<p>Referenced by <a class="el" href="ahrs__float__dcm_8c_source.html#l00373">Drift_correction()</a>, and <a class="el" href="ahrs__float__dcm_8c_source.html#l00280">Normalize()</a>.</p>
 
 <p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -420,7 +420,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_46fef683200e96ccf1a2f608d90c4a2d.html">ahrs</a></li><li class="navelem"><a class="el" href="ahrs__float__dcm__algebra_8h.html">ahrs_float_dcm_algebra.h</a></li>
-    <li class="footer">Generated on Wed Sep 12 2018 02:03:46 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:03:30 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

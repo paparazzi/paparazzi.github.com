@@ -1,5 +1,9 @@
 var sdLog_8h =
 [
+    [ "LOG_APPEND_TAG_AT_CLOSE_DISABLED", "sdLog_8h.html#a8a8eaec6ea22d75b6caaeb09df68a8d3", null ],
+    [ "LOG_APPEND_TAG_AT_CLOSE_ENABLED", "sdLog_8h.html#a34cec0cb8902d0f343cd6ad965db356d", null ],
+    [ "LOG_PREALLOCATION_DISABLED", "sdLog_8h.html#afb81100a0eb9003efebef09173b5a217", null ],
+    [ "LOG_PREALLOCATION_ENABLED", "sdLog_8h.html#abce09fed039b57de52a320bc291c6d61", null ],
     [ "NUMBERFMF", "sdLog_8h.html#a152a0485677d297d1dc2a4e72bfd7b2b", null ],
     [ "NUMBERLEN", "sdLog_8h.html#abb76bb8fba67f860053fee454675e6ab", null ],
     [ "NUMBERMAX", "sdLog_8h.html#a385c043754d4928ba25d514c2220039c", null ],

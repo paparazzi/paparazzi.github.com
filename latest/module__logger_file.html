@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -126,7 +126,7 @@ Periodic Functions</h2>
 <p>These functions are called periodically at the specified frequency from the module periodic loop.</p>
 <ul>
 <li><a class="el" href="file__logger_8c.html#a0a108be83e6a060666234d7b46a36907" title="Log the values to a csv file. ">file_logger_periodic()</a><ul>
-<li>Running at maximum module frequency.</li>
+<li>Period in seconds: <em>0.01</em> </li>
 <li>Autorun: <em>FALSE</em> <br />
  Periodic function is started by user command.</li>
 <li>Start function: <a class="el" href="file__logger_8c.html#a8b966ef778bb5d676021e1c925540e5f" title="Start the file logger and open a new file. ">file_logger_start()</a><br />
@@ -165,7 +165,7 @@ Raw logger_file.xml file:</h2>
 <div class="line">  &lt;file name=&quot;file_logger.h&quot; /&gt;</div>
 <div class="line">  &lt;/header&gt;</div>
 <div class="line">  &lt;periodic fun=&quot;file_logger_periodic()&quot; start=&quot;file_logger_start()&quot;</div>
-<div class="line">        stop=&quot;file_logger_stop()&quot; autorun=&quot;FALSE&quot; /&gt;</div>
+<div class="line">        stop=&quot;file_logger_stop()&quot; autorun=&quot;FALSE&quot; period=&quot;0.01&quot; /&gt;</div>
 <div class="line">  &lt;makefile&gt;</div>
 <div class="line">  &lt;file name=&quot;file_logger.c&quot;/&gt;</div>
 <div class="line">  &lt;/makefile&gt;</div>
@@ -176,7 +176,7 @@ Raw logger_file.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Wed Sep 12 2018 02:03:58 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:03:41 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

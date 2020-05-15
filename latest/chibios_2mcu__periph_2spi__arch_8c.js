@@ -4,6 +4,7 @@ var chibios_2mcu__periph_2spi__arch_8c =
       [ "sem", "chibios_2mcu__periph_2spi__arch_8c.html#a597c7d231592fe59e4ea3a5ff8748f74", null ]
     ] ],
     [ "SPI_DMA_BUF_LEN", "chibios_2mcu__periph_2spi__arch_8c.html#a9f40e32d0281e5b00a48697e47b601ab", null ],
+    [ "SPI_THREAD_STACK_SIZE", "chibios_2mcu__periph_2spi__arch_8c.html#a0a1a8f8b428ced27265cbd6ba785172f", null ],
     [ "handle_spi_thd", "chibios_2mcu__periph_2spi__arch_8c.html#a3b31c9dcdd9d40b30a43ef7f6f58e5f2", null ],
     [ "SEMAPHORE_DECL", "chibios_2mcu__periph_2spi__arch_8c.html#a7cbe8651c3b40526666d3c0c4bf64c33", null ],
     [ "SEMAPHORE_DECL", "chibios_2mcu__periph_2spi__arch_8c.html#a9cb6c26fba09facad63467d545d0bac9", null ],
@@ -21,8 +22,8 @@ var chibios_2mcu__periph_2spi__arch_8c =
     [ "spi_submit", "group__spi.html#ga5d383931766cb373ebad0b8bc26d439d", null ],
     [ "thd_spi1", "chibios_2mcu__periph_2spi__arch_8c.html#a5e3dc966ff84fe38c0936807ad753ace", null ],
     [ "thd_spi2", "chibios_2mcu__periph_2spi__arch_8c.html#ab11bc613174d612801ff3a26008806e7", null ],
-    [ "THD_WORKING_AREA", "chibios_2mcu__periph_2spi__arch_8c.html#a6d056a444ab9ff07405d2fdb3f554e2c", null ],
-    [ "THD_WORKING_AREA", "chibios_2mcu__periph_2spi__arch_8c.html#a5a8020dc8dbc3ba5e564af2ea950f96c", null ],
+    [ "THD_WORKING_AREA", "chibios_2mcu__periph_2spi__arch_8c.html#a4f06fb8dc08823fc33049d42efeb735d", null ],
+    [ "THD_WORKING_AREA", "chibios_2mcu__periph_2spi__arch_8c.html#a7b8228ae113c20c3fc25690e4f068a1c", null ],
     [ "spi1_init_s", "chibios_2mcu__periph_2spi__arch_8c.html#a64a94c3563dabc793946ee2a9ba3e0eb", null ],
     [ "spi2_init_s", "chibios_2mcu__periph_2spi__arch_8c.html#a9df631bcdcbd82c36610f6c4f6205295", null ]
 ];

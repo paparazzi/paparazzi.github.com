@@ -11,6 +11,7 @@ var jevois_8c =
     ] ],
     [ "jevois_t", "jevois_8c.html#structjevois__t", [
       [ "buf", "jevois_8c.html#a1eeaed94a6eace3e15d418f84b55dc7d", null ],
+      [ "data_available", "jevois_8c.html#adfd0559dc6ad82fac1d6c635f0a84682", null ],
       [ "idx", "jevois_8c.html#a186fad305db16c311d4d235355968a6b", null ],
       [ "msg", "jevois_8c.html#aa732f610bb8788850bd724b858013382", null ],
       [ "n", "jevois_8c.html#ac7e840f52d134433e359f8b400809943", null ],
@@ -31,12 +32,15 @@ var jevois_8c =
       [ "JV_SEND_MSG", "jevois_8c.html#ae85595e13dd1f413553d6c92e0a8c040a3167efd48d09a7a20422a743f0397792", null ]
     ] ],
     [ "jevois_event", "jevois_8c.html#a5a4dfc5cbbd1116c8e19483b683db8eb", null ],
+    [ "jevois_extract_nb", "jevois_8c.html#a983869b0dac4c1aab278bb24700aa564", null ],
     [ "jevois_init", "jevois_8c.html#ae7c0a60712036dc7f1583b9954230c89", null ],
     [ "jevois_parse", "jevois_8c.html#a079a19f87529f4431d4aaba54a3f75db", null ],
+    [ "jevois_report", "jevois_8c.html#a4bb01532b86635c1f0989cae4d70e583", null ],
     [ "jevois_send_message", "jevois_8c.html#a316cc2f8606b1f3af8422e9f002b9fa9", null ],
+    [ "jevois_send_state", "jevois_8c.html#aaabffd8949fd232243751b5dbf121d60", null ],
+    [ "jevois_send_string", "jevois_8c.html#aa4b38bf843c270c3ef77b789bc08f30c", null ],
     [ "jevois_setmapping", "jevois_8c.html#a0e47409eccd5ab805c0b20e07f80ab1d", null ],
     [ "jevois_stream", "jevois_8c.html#a2e99fd57571cdb6cd8cbd0dc001a0d95", null ],
-    [ "send_string", "jevois_8c.html#a719e90120f72c34d31f5cabd705804de", null ],
     [ "jevois", "jevois_8c.html#a3de623487ef4ff78a085fc3acc3d5f78", null ],
     [ "jevois_mapping_setting", "jevois_8c.html#a53d4fd857346115161fea92cd6517690", null ],
     [ "jevois_stream_setting", "jevois_8c.html#a02337daa2df8835d1308bdf61367e664", null ]

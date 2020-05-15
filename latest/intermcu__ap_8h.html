@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -118,6 +118,7 @@ $(document).ready(function(){initNavTree('intermcu__ap_8h.html','');});
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="intermcu_8h_source.html">subsystems/intermcu.h</a>&quot;</code><br />
 <code>#include &quot;generated/airframe.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="electrical_8h_source.html">subsystems/electrical.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for intermcu_ap.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -125,7 +126,7 @@ $(document).ready(function(){initNavTree('intermcu__ap_8h.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="intermcu__ap_8h__incl.png" border="0" usemap="#sw_2airborne_2subsystems_2intermcu_2intermcu__ap_8h" alt=""/></div>
 <map name="sw_2airborne_2subsystems_2intermcu_2intermcu__ap_8h" id="sw_2airborne_2subsystems_2intermcu_2intermcu__ap_8h">
-<area shape="rect" id="node2" href="intermcu_8h.html" title="Rotorcraft Inter&#45;MCU interface. " alt="" coords="300,95,472,121"/><area shape="rect" id="node4" href="commands_8h.html" title="Hardware independent code for commands handling. " alt="" coords="85,169,271,196"/><area shape="rect" id="node5" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="130,244,226,271"/><area shape="rect" id="node6" href="inttypes_8h.html" title="inttypes.h" alt="" coords="135,319,221,345"/></map>
+<area shape="rect" id="node2" href="intermcu_8h.html" title="Rotorcraft Inter&#45;MCU interface. " alt="" coords="315,95,487,121"/><area shape="rect" id="node10" href="electrical_8h.html" title="Interface for electrical status: supply voltage, current, battery status, etc. " alt="" coords="511,95,683,121"/><area shape="rect" id="node4" href="commands_8h.html" title="Hardware independent code for commands handling. " alt="" coords="5,169,192,196"/><area shape="rect" id="node5" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="51,244,147,271"/><area shape="rect" id="node6" href="inttypes_8h.html" title="inttypes.h" alt="" coords="56,319,141,345"/></map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
@@ -193,13 +194,22 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <div class="textblock">
-<p>Definition at line <a class="el" href="intermcu__ap_8h_source.html#l00051">51</a> of file <a class="el" href="intermcu__ap_8h_source.html">intermcu_ap.h</a>.</p>
-</div><table class="fieldtable">
+<p>Definition at line <a class="el" href="intermcu__ap_8h_source.html#l00052">52</a> of file <a class="el" href="intermcu__ap_8h_source.html">intermcu_ap.h</a>.</p>
+</div><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Collaboration diagram for fbw_status_t:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="structfbw__status__t__coll__graph.png" border="0" usemap="#fbw__status__t_coll__map" alt="Collaboration graph"/></div>
+<map name="fbw__status__t_coll__map" id="fbw__status__t_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="a7bd83b6324e941532466702daa68bec3"></a><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a></td>
+<a class="anchor" id="a322af08d9490d76716acd4b941e49893"></a>struct <a class="el" href="electrical_8h.html#structElectrical">Electrical</a></td>
 <td class="fieldname">
-current</td>
+electrical</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
@@ -220,12 +230,6 @@ mode</td>
 rc_status</td>
 <td class="fielddoc">
 </td></tr>
-<tr><td class="fieldtype">
-<a class="anchor" id="a839b3814bf60a5bbcacd3375461a1743"></a><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></td>
-<td class="fieldname">
-vsupply</td>
-<td class="fielddoc">
-</td></tr>
 </table>
 
 </div>
@@ -241,7 +245,7 @@ vsupply</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="intermcu__ap_8h_source.html#l00045">45</a> of file <a class="el" href="intermcu__ap_8h_source.html">intermcu_ap.h</a>.</p>
+<p>Definition at line <a class="el" href="intermcu__ap_8h_source.html#l00046">46</a> of file <a class="el" href="intermcu__ap_8h_source.html">intermcu_ap.h</a>.</p>
 
 <p>Referenced by <a class="el" href="intermcu__fbw_8c_source.html#l00106">intermcu_on_rc_frame()</a>, and <a class="el" href="auto1__commands_8c_source.html#l00028">periodic_auto1_commands()</a>.</p>
 
@@ -257,7 +261,7 @@ vsupply</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="intermcu__ap_8h_source.html#l00046">46</a> of file <a class="el" href="intermcu__ap_8h_source.html">intermcu_ap.h</a>.</p>
+<p>Definition at line <a class="el" href="intermcu__ap_8h_source.html#l00047">47</a> of file <a class="el" href="intermcu__ap_8h_source.html">intermcu_ap.h</a>.</p>
 
 <p>Referenced by <a class="el" href="intermcu__fbw_8c_source.html#l00106">intermcu_on_rc_frame()</a>, and <a class="el" href="auto1__commands_8c_source.html#l00028">periodic_auto1_commands()</a>.</p>
 
@@ -273,7 +277,7 @@ vsupply</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="intermcu__ap_8h_source.html#l00047">47</a> of file <a class="el" href="intermcu__ap_8h_source.html">intermcu_ap.h</a>.</p>
+<p>Definition at line <a class="el" href="intermcu__ap_8h_source.html#l00048">48</a> of file <a class="el" href="intermcu__ap_8h_source.html">intermcu_ap.h</a>.</p>
 
 <p>Referenced by <a class="el" href="intermcu__fbw_8c_source.html#l00106">intermcu_on_rc_frame()</a>, and <a class="el" href="auto1__commands_8c_source.html#l00028">periodic_auto1_commands()</a>.</p>
 
@@ -289,9 +293,9 @@ vsupply</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="intermcu__ap_8h_source.html#l00048">48</a> of file <a class="el" href="intermcu__ap_8h_source.html">intermcu_ap.h</a>.</p>
+<p>Definition at line <a class="el" href="intermcu__ap_8h_source.html#l00049">49</a> of file <a class="el" href="intermcu__ap_8h_source.html">intermcu_ap.h</a>.</p>
 
-<p>Referenced by <a class="el" href="intermcu__fbw_8c_source.html#l00106">intermcu_on_rc_frame()</a>, <a class="el" href="link__mcu__can_8c_source.html#l00057">link_mcu_on_can_msg()</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00297">parse_mavpilot_msg()</a>, <a class="el" href="chibios_2subsystems_2radio__control_2ppm__arch_8c_source.html#l00089">ppm_arch_init()</a>, <a class="el" href="spektrum_8c_source.html#l00148">radio_control_impl_init()</a>, <a class="el" href="radio__control_8c_source.html#l00032">radio_control_init()</a>, <a class="el" href="autopilot_8c_source.html#l00077">send_rc()</a>, and <a class="el" href="spektrum_8c_source.html#l00269">spektrum_event()</a>.</p>
+<p>Referenced by <a class="el" href="intermcu__fbw_8c_source.html#l00106">intermcu_on_rc_frame()</a>, <a class="el" href="link__mcu__can_8c_source.html#l00057">link_mcu_on_can_msg()</a>, <a class="el" href="link__mcu__usart_8c_source.html#l00297">parse_mavpilot_msg()</a>, <a class="el" href="chibios_2subsystems_2radio__control_2ppm__arch_8c_source.html#l00089">ppm_arch_init()</a>, <a class="el" href="spektrum_8c_source.html#l00164">radio_control_impl_init()</a>, <a class="el" href="radio__control_8c_source.html#l00032">radio_control_init()</a>, <a class="el" href="autopilot_8c_source.html#l00077">send_rc()</a>, and <a class="el" href="spektrum_8c_source.html#l00285">spektrum_event()</a>.</p>
 
 </div>
 </div>
@@ -305,9 +309,9 @@ vsupply</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="intermcu__ap_8h_source.html#l00044">44</a> of file <a class="el" href="intermcu__ap_8h_source.html">intermcu_ap.h</a>.</p>
+<p>Definition at line <a class="el" href="intermcu__ap_8h_source.html#l00045">45</a> of file <a class="el" href="intermcu__ap_8h_source.html">intermcu_ap.h</a>.</p>
 
-<p>Referenced by <a class="el" href="rotorcraft_2main__fbw_8c_source.html#l00231">fbw_on_rc_frame()</a>, <a class="el" href="intermcu__fbw_8c_source.html#l00106">intermcu_on_rc_frame()</a>, and <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00160">send_rotorcraft_rc()</a>.</p>
+<p>Referenced by <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00112">autopilot_static_on_rc_frame()</a>, <a class="el" href="rotorcraft_2main__fbw_8c_source.html#l00231">fbw_on_rc_frame()</a>, <a class="el" href="intermcu__fbw_8c_source.html#l00106">intermcu_on_rc_frame()</a>, and <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00156">send_rotorcraft_rc()</a>.</p>
 
 </div>
 </div>
@@ -321,9 +325,9 @@ vsupply</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="intermcu__ap_8h_source.html#l00043">43</a> of file <a class="el" href="intermcu__ap_8h_source.html">intermcu_ap.h</a>.</p>
+<p>Definition at line <a class="el" href="intermcu__ap_8h_source.html#l00044">44</a> of file <a class="el" href="intermcu__ap_8h_source.html">intermcu_ap.h</a>.</p>
 
-<p>Referenced by <a class="el" href="rotorcraft_2autopilot__utils_8c_source.html#l00090">ap_mode_of_3way_switch()</a>, <a class="el" href="fixedwing_2main__fbw_8c_source.html#l00112">handle_rc_frame()</a>, <a class="el" href="intermcu__fbw_8c_source.html#l00106">intermcu_on_rc_frame()</a>, <a class="el" href="subsystems_2radio__control_2rc__datalink_8c_source.html#l00040">parse_rc_3ch_datalink()</a>, <a class="el" href="subsystems_2radio__control_2rc__datalink_8c_source.html#l00056">parse_rc_4ch_datalink()</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00340">pprz_mode_update()</a>, <a class="el" href="subsystems_2radio__control_2rc__datalink_8c_source.html#l00075">rc_datalink_normalize()</a>, and <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00160">send_rotorcraft_rc()</a>.</p>
+<p>Referenced by <a class="el" href="rotorcraft_2autopilot__utils_8c_source.html#l00090">ap_mode_of_3way_switch()</a>, <a class="el" href="fixedwing_2main__fbw_8c_source.html#l00112">handle_rc_frame()</a>, <a class="el" href="intermcu__fbw_8c_source.html#l00106">intermcu_on_rc_frame()</a>, <a class="el" href="subsystems_2radio__control_2rc__datalink_8c_source.html#l00040">parse_rc_3ch_datalink()</a>, <a class="el" href="subsystems_2radio__control_2rc__datalink_8c_source.html#l00056">parse_rc_4ch_datalink()</a>, <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00349">pprz_mode_update()</a>, <a class="el" href="subsystems_2radio__control_2rc__datalink_8c_source.html#l00075">rc_datalink_normalize()</a>, and <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00156">send_rotorcraft_rc()</a>.</p>
 
 </div>
 </div>
@@ -337,9 +341,9 @@ vsupply</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="intermcu__ap_8h_source.html#l00041">41</a> of file <a class="el" href="intermcu__ap_8h_source.html">intermcu_ap.h</a>.</p>
+<p>Definition at line <a class="el" href="intermcu__ap_8h_source.html#l00042">42</a> of file <a class="el" href="intermcu__ap_8h_source.html">intermcu_ap.h</a>.</p>
 
-<p>Referenced by <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00112">autopilot_static_on_rc_frame()</a>, <a class="el" href="stabilization__attitude__rc__setpoint_8c_source.html#l00072">get_rc_pitch()</a>, <a class="el" href="stabilization__attitude__rc__setpoint_8c_source.html#l00103">get_rc_pitch_f()</a>, <a class="el" href="ctrl__module__innerloop__demo_8c_source.html#l00090">guidance_h_module_read_rc()</a>, <a class="el" href="guidance__indi_8c_source.html#l00154">guidance_indi_run()</a>, <a class="el" href="intermcu__fbw_8c_source.html#l00106">intermcu_on_rc_frame()</a>, <a class="el" href="subsystems_2radio__control_2rc__datalink_8c_source.html#l00040">parse_rc_3ch_datalink()</a>, <a class="el" href="subsystems_2radio__control_2rc__datalink_8c_source.html#l00056">parse_rc_4ch_datalink()</a>, <a class="el" href="subsystems_2radio__control_2rc__datalink_8c_source.html#l00075">rc_datalink_normalize()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00639">read_rc_setpoint_speed_i()</a>, <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00160">send_rotorcraft_rc()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00149">send_tune_hover()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00345">stabilization_indi_calc_cmd()</a>, <a class="el" href="stabilization__none_8c_source.html#l00042">stabilization_none_read_rc()</a>, <a class="el" href="stabilization__rate_8c_source.html#l00137">stabilization_rate_read_rc()</a>, <a class="el" href="stabilization__rate_8c_source.html#l00160">stabilization_rate_read_rc_switched_sticks()</a>, and <a class="el" href="point_8c_source.html#l00164">vPoint()</a>.</p>
+<p>Referenced by <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00112">autopilot_static_on_rc_frame()</a>, <a class="el" href="stabilization__attitude__rc__setpoint_8c_source.html#l00072">get_rc_pitch()</a>, <a class="el" href="stabilization__attitude__rc__setpoint_8c_source.html#l00103">get_rc_pitch_f()</a>, <a class="el" href="ctrl__module__innerloop__demo_8c_source.html#l00090">guidance_h_module_read_rc()</a>, <a class="el" href="guidance__indi_8c_source.html#l00154">guidance_indi_run()</a>, <a class="el" href="intermcu__fbw_8c_source.html#l00106">intermcu_on_rc_frame()</a>, <a class="el" href="subsystems_2radio__control_2rc__datalink_8c_source.html#l00040">parse_rc_3ch_datalink()</a>, <a class="el" href="subsystems_2radio__control_2rc__datalink_8c_source.html#l00056">parse_rc_4ch_datalink()</a>, <a class="el" href="subsystems_2radio__control_2rc__datalink_8c_source.html#l00075">rc_datalink_normalize()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00639">read_rc_setpoint_speed_i()</a>, <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00156">send_rotorcraft_rc()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00149">send_tune_hover()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00345">stabilization_indi_calc_cmd()</a>, <a class="el" href="stabilization__none_8c_source.html#l00042">stabilization_none_read_rc()</a>, <a class="el" href="stabilization__rate_8c_source.html#l00137">stabilization_rate_read_rc()</a>, <a class="el" href="stabilization__rate_8c_source.html#l00160">stabilization_rate_read_rc_switched_sticks()</a>, and <a class="el" href="point_8c_source.html#l00164">vPoint()</a>.</p>
 
 </div>
 </div>
@@ -353,9 +357,9 @@ vsupply</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="intermcu__ap_8h_source.html#l00040">40</a> of file <a class="el" href="intermcu__ap_8h_source.html">intermcu_ap.h</a>.</p>
+<p>Definition at line <a class="el" href="intermcu__ap_8h_source.html#l00041">41</a> of file <a class="el" href="intermcu__ap_8h_source.html">intermcu_ap.h</a>.</p>
 
-<p>Referenced by <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00112">autopilot_static_on_rc_frame()</a>, <a class="el" href="stabilization__attitude__rc__setpoint_8c_source.html#l00060">get_rc_roll()</a>, <a class="el" href="stabilization__attitude__rc__setpoint_8c_source.html#l00092">get_rc_roll_f()</a>, <a class="el" href="ctrl__module__innerloop__demo_8c_source.html#l00090">guidance_h_module_read_rc()</a>, <a class="el" href="guidance__indi_8c_source.html#l00154">guidance_indi_run()</a>, <a class="el" href="intermcu__fbw_8c_source.html#l00106">intermcu_on_rc_frame()</a>, <a class="el" href="subsystems_2radio__control_2rc__datalink_8c_source.html#l00040">parse_rc_3ch_datalink()</a>, <a class="el" href="subsystems_2radio__control_2rc__datalink_8c_source.html#l00056">parse_rc_4ch_datalink()</a>, <a class="el" href="subsystems_2radio__control_2rc__datalink_8c_source.html#l00075">rc_datalink_normalize()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00639">read_rc_setpoint_speed_i()</a>, <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00160">send_rotorcraft_rc()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00149">send_tune_hover()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00345">stabilization_indi_calc_cmd()</a>, <a class="el" href="stabilization__none_8c_source.html#l00042">stabilization_none_read_rc()</a>, <a class="el" href="stabilization__rate_8c_source.html#l00137">stabilization_rate_read_rc()</a>, <a class="el" href="stabilization__rate_8c_source.html#l00160">stabilization_rate_read_rc_switched_sticks()</a>, and <a class="el" href="point_8c_source.html#l00164">vPoint()</a>.</p>
+<p>Referenced by <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00112">autopilot_static_on_rc_frame()</a>, <a class="el" href="stabilization__attitude__rc__setpoint_8c_source.html#l00060">get_rc_roll()</a>, <a class="el" href="stabilization__attitude__rc__setpoint_8c_source.html#l00092">get_rc_roll_f()</a>, <a class="el" href="ctrl__module__innerloop__demo_8c_source.html#l00090">guidance_h_module_read_rc()</a>, <a class="el" href="guidance__indi_8c_source.html#l00154">guidance_indi_run()</a>, <a class="el" href="intermcu__fbw_8c_source.html#l00106">intermcu_on_rc_frame()</a>, <a class="el" href="subsystems_2radio__control_2rc__datalink_8c_source.html#l00040">parse_rc_3ch_datalink()</a>, <a class="el" href="subsystems_2radio__control_2rc__datalink_8c_source.html#l00056">parse_rc_4ch_datalink()</a>, <a class="el" href="subsystems_2radio__control_2rc__datalink_8c_source.html#l00075">rc_datalink_normalize()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00639">read_rc_setpoint_speed_i()</a>, <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00156">send_rotorcraft_rc()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00149">send_tune_hover()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00345">stabilization_indi_calc_cmd()</a>, <a class="el" href="stabilization__none_8c_source.html#l00042">stabilization_none_read_rc()</a>, <a class="el" href="stabilization__rate_8c_source.html#l00137">stabilization_rate_read_rc()</a>, <a class="el" href="stabilization__rate_8c_source.html#l00160">stabilization_rate_read_rc_switched_sticks()</a>, and <a class="el" href="point_8c_source.html#l00164">vPoint()</a>.</p>
 
 </div>
 </div>
@@ -369,9 +373,9 @@ vsupply</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="intermcu__ap_8h_source.html#l00039">39</a> of file <a class="el" href="intermcu__ap_8h_source.html">intermcu_ap.h</a>.</p>
+<p>Definition at line <a class="el" href="intermcu__ap_8h_source.html#l00040">40</a> of file <a class="el" href="intermcu__ap_8h_source.html">intermcu_ap.h</a>.</p>
 
-<p>Referenced by <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00112">autopilot_static_on_rc_frame()</a>, <a class="el" href="ctrl__module__innerloop__demo_8c_source.html#l00090">guidance_h_module_read_rc()</a>, <a class="el" href="guidance__indi_8c_source.html#l00154">guidance_indi_run()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00205">guidance_v_read_rc()</a>, <a class="el" href="intermcu__fbw_8c_source.html#l00106">intermcu_on_rc_frame()</a>, <a class="el" href="subsystems_2radio__control_2rc__datalink_8c_source.html#l00040">parse_rc_3ch_datalink()</a>, <a class="el" href="subsystems_2radio__control_2rc__datalink_8c_source.html#l00056">parse_rc_4ch_datalink()</a>, <a class="el" href="subsystems_2radio__control_2rc__datalink_8c_source.html#l00075">rc_datalink_normalize()</a>, <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00160">send_rotorcraft_rc()</a>, <a class="el" href="spektrum_8c_source.html#l00169">spektrum_parse_channel()</a>, and <a class="el" href="superbitrf__rc_8c_source.html#l00040">superbitrf_rc_normalize()</a>.</p>
+<p>Referenced by <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00112">autopilot_static_on_rc_frame()</a>, <a class="el" href="ctrl__module__innerloop__demo_8c_source.html#l00090">guidance_h_module_read_rc()</a>, <a class="el" href="guidance__indi_8c_source.html#l00154">guidance_indi_run()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00209">guidance_v_read_rc()</a>, <a class="el" href="intermcu__fbw_8c_source.html#l00106">intermcu_on_rc_frame()</a>, <a class="el" href="subsystems_2radio__control_2rc__datalink_8c_source.html#l00040">parse_rc_3ch_datalink()</a>, <a class="el" href="subsystems_2radio__control_2rc__datalink_8c_source.html#l00056">parse_rc_4ch_datalink()</a>, <a class="el" href="subsystems_2radio__control_2rc__datalink_8c_source.html#l00075">rc_datalink_normalize()</a>, <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00156">send_rotorcraft_rc()</a>, <a class="el" href="spektrum_8c_source.html#l00185">spektrum_parse_channel()</a>, and <a class="el" href="superbitrf__rc_8c_source.html#l00040">superbitrf_rc_normalize()</a>.</p>
 
 </div>
 </div>
@@ -385,9 +389,9 @@ vsupply</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="intermcu__ap_8h_source.html#l00042">42</a> of file <a class="el" href="intermcu__ap_8h_source.html">intermcu_ap.h</a>.</p>
+<p>Definition at line <a class="el" href="intermcu__ap_8h_source.html#l00043">43</a> of file <a class="el" href="intermcu__ap_8h_source.html">intermcu_ap.h</a>.</p>
 
-<p>Referenced by <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00112">autopilot_static_on_rc_frame()</a>, <a class="el" href="fixedwing_2autopilot__generated_8c_source.html#l00090">copy_from_to_fbw()</a>, <a class="el" href="stabilization__attitude__rc__setpoint_8c_source.html#l00084">get_rc_yaw()</a>, <a class="el" href="stabilization__attitude__rc__setpoint_8c_source.html#l00114">get_rc_yaw_f()</a>, <a class="el" href="ctrl__module__innerloop__demo_8c_source.html#l00090">guidance_h_module_read_rc()</a>, <a class="el" href="intermcu__fbw_8c_source.html#l00106">intermcu_on_rc_frame()</a>, <a class="el" href="subsystems_2radio__control_2rc__datalink_8c_source.html#l00040">parse_rc_3ch_datalink()</a>, <a class="el" href="subsystems_2radio__control_2rc__datalink_8c_source.html#l00056">parse_rc_4ch_datalink()</a>, <a class="el" href="subsystems_2radio__control_2rc__datalink_8c_source.html#l00075">rc_datalink_normalize()</a>, <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00160">send_rotorcraft_rc()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00149">send_tune_hover()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00345">stabilization_indi_calc_cmd()</a>, <a class="el" href="stabilization__none_8c_source.html#l00042">stabilization_none_read_rc()</a>, <a class="el" href="stabilization__rate_8c_source.html#l00137">stabilization_rate_read_rc()</a>, and <a class="el" href="stabilization__rate_8c_source.html#l00160">stabilization_rate_read_rc_switched_sticks()</a>.</p>
+<p>Referenced by <a class="el" href="fixedwing_2autopilot__static_8c_source.html#l00112">autopilot_static_on_rc_frame()</a>, <a class="el" href="fixedwing_2autopilot__generated_8c_source.html#l00091">copy_from_to_fbw()</a>, <a class="el" href="stabilization__attitude__rc__setpoint_8c_source.html#l00084">get_rc_yaw()</a>, <a class="el" href="stabilization__attitude__rc__setpoint_8c_source.html#l00114">get_rc_yaw_f()</a>, <a class="el" href="ctrl__module__innerloop__demo_8c_source.html#l00090">guidance_h_module_read_rc()</a>, <a class="el" href="intermcu__fbw_8c_source.html#l00106">intermcu_on_rc_frame()</a>, <a class="el" href="subsystems_2radio__control_2rc__datalink_8c_source.html#l00040">parse_rc_3ch_datalink()</a>, <a class="el" href="subsystems_2radio__control_2rc__datalink_8c_source.html#l00056">parse_rc_4ch_datalink()</a>, <a class="el" href="subsystems_2radio__control_2rc__datalink_8c_source.html#l00075">rc_datalink_normalize()</a>, <a class="el" href="rotorcraft_2autopilot__firmware_8c_source.html#l00156">send_rotorcraft_rc()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00149">send_tune_hover()</a>, <a class="el" href="stabilization__indi_8c_source.html#l00345">stabilization_indi_calc_cmd()</a>, <a class="el" href="stabilization__none_8c_source.html#l00042">stabilization_none_read_rc()</a>, <a class="el" href="stabilization__rate_8c_source.html#l00137">stabilization_rate_read_rc()</a>, and <a class="el" href="stabilization__rate_8c_source.html#l00160">stabilization_rate_read_rc_switched_sticks()</a>.</p>
 
 </div>
 </div>
@@ -410,13 +414,13 @@ vsupply</td>
 
 <p>References <a class="el" href="intermcu_8h_source.html#l00071">intermcu_t::device</a>, <a class="el" href="intermcu_8h_source.html#l00075">intermcu_t::enabled</a>, <a class="el" href="intermcu_8h_source.html#l00034">INTERMCU_AP</a>, and <a class="el" href="intermcu_8h_source.html#l00072">intermcu_t::transport</a>.</p>
 
-<p>Referenced by <a class="el" href="spektrum__soft__bind__ap_8c_source.html#l00041">spektrum_soft_bind_click()</a>.</p>
+<p>Referenced by <a class="el" href="spektrum__soft__bind__ap_8c_source.html#l00046">spektrum_soft_bind_click()</a>.</p>
 
-<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="intermcu__ap_8h_a609bd43c94c68e55513f2c65cf8447cd_icgraph.png" border="0" usemap="#intermcu__ap_8h_a609bd43c94c68e55513f2c65cf8447cd_icgraph" alt=""/></div>
 <map name="intermcu__ap_8h_a609bd43c94c68e55513f2c65cf8447cd_icgraph" id="intermcu__ap_8h_a609bd43c94c68e55513f2c65cf8447cd_icgraph">
 <area shape="rect" id="node2" href="spektrum__soft__bind__ap_8h.html#a889f76b35754b2bc328b5cf5ee10f731" title="spektrum_soft_bind\l_click" alt="" coords="272,5,420,47"/></map>
@@ -451,26 +455,26 @@ vsupply</td>
 
 <p>Definition at line <a class="el" href="intermcu__ap_8c_source.html#l00111">111</a> of file <a class="el" href="intermcu__ap_8c_source.html">intermcu_ap.c</a>.</p>
 
-<p>References <a class="el" href="autopilot_8c_source.html#l00211">autopilot_get_motors_on()</a>, <a class="el" href="intermcu_8h_source.html#l00077">intermcu_t::cmd_status</a>, <a class="el" href="intermcu_8h_source.html#l00071">intermcu_t::device</a>, <a class="el" href="intermcu_8h_source.html#l00075">intermcu_t::enabled</a>, <a class="el" href="intermcu_8h_source.html#l00034">INTERMCU_AP</a>, <a class="el" href="intermcu_8h_source.html#l00058">INTERMCU_CMD_MOTORS_ON</a>, <a class="el" href="intermcu_8h_source.html#l00065">INTERMCU_SET_CMD_STATUS</a>, and <a class="el" href="intermcu_8h_source.html#l00072">intermcu_t::transport</a>.</p>
+<p>References <a class="el" href="autopilot_8c_source.html#l00212">autopilot_get_motors_on()</a>, <a class="el" href="intermcu_8h_source.html#l00077">intermcu_t::cmd_status</a>, <a class="el" href="intermcu_8h_source.html#l00071">intermcu_t::device</a>, <a class="el" href="intermcu_8h_source.html#l00075">intermcu_t::enabled</a>, <a class="el" href="intermcu_8h_source.html#l00034">INTERMCU_AP</a>, <a class="el" href="intermcu_8h_source.html#l00058">INTERMCU_CMD_MOTORS_ON</a>, <a class="el" href="intermcu_8h_source.html#l00065">INTERMCU_SET_CMD_STATUS</a>, and <a class="el" href="intermcu_8h_source.html#l00072">intermcu_t::transport</a>.</p>
 
 <p>Referenced by <a class="el" href="rotorcraft_2main__ap_8c_source.html#l00237">main_periodic()</a>.</p>
 
-<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="intermcu__ap_8h_ac22ebae188091108a7882dfebceb1c6c_cgraph.png" border="0" usemap="#intermcu__ap_8h_ac22ebae188091108a7882dfebceb1c6c_cgraph" alt=""/></div>
 <map name="intermcu__ap_8h_ac22ebae188091108a7882dfebceb1c6c_cgraph" id="intermcu__ap_8h_ac22ebae188091108a7882dfebceb1c6c_cgraph">
 <area shape="rect" id="node2" href="autopilot_8c.html#a6b52f0f9cd2cbf420a77029513ea6f35" title="get motors status " alt="" coords="228,5,411,32"/></map>
 </div>
 </p>
 
-<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="intermcu__ap_8h_ac22ebae188091108a7882dfebceb1c6c_icgraph.png" border="0" usemap="#intermcu__ap_8h_ac22ebae188091108a7882dfebceb1c6c_icgraph" alt=""/></div>
 <map name="intermcu__ap_8h_ac22ebae188091108a7882dfebceb1c6c_icgraph" id="intermcu__ap_8h_ac22ebae188091108a7882dfebceb1c6c_icgraph">
 <area shape="rect" id="node2" href="rover_2main__ap_8h.html#a81249e4ef19b8766982a6fe272d89bae" title="main_periodic" alt="" coords="228,5,339,32"/><area shape="rect" id="node3" href="rover_2main__ap_8h.html#ab79bb049ce85bf2ed3a75c6b12c02bcb" title="handle_periodic_tasks" alt="" coords="387,5,549,32"/></map>
@@ -499,11 +503,11 @@ vsupply</td>
 
 <p>Referenced by <a class="el" href="px4__flash_8c_source.html#l00079">px4flash_event()</a>.</p>
 
-<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="intermcu__ap_8h_a93c1caa54aaade98a45ffc18f7406a6f_icgraph.png" border="0" usemap="#intermcu__ap_8h_a93c1caa54aaade98a45ffc18f7406a6f_icgraph" alt=""/></div>
 <map name="intermcu__ap_8h_a93c1caa54aaade98a45ffc18f7406a6f_icgraph" id="intermcu__ap_8h_a93c1caa54aaade98a45ffc18f7406a6f_icgraph">
 <area shape="rect" id="node2" href="px4__flash_8h.html#a5bbeb4ac8fb18641568992822ee3ba00" title="px4flash_event" alt="" coords="217,5,336,32"/></map>
@@ -530,11 +534,11 @@ vsupply</td>
 
 <p>References <a class="el" href="intermcu_8h_source.html#l00071">intermcu_t::device</a>, <a class="el" href="intermcu_8h_source.html#l00075">intermcu_t::enabled</a>, <a class="el" href="intermcu__ap_8c_source.html#l00046">imcu_msg_buf</a>, <a class="el" href="intermcu__ap_8c_source.html#l00138">intermcu_parse_msg()</a>, <a class="el" href="intermcu_8h_source.html#l00076">intermcu_t::msg_available</a>, and <a class="el" href="intermcu_8h_source.html#l00072">intermcu_t::transport</a>.</p>
 
-<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="intermcu__ap_8h_af92639a882c9a02ecc422e3ba96c1274_cgraph.png" border="0" usemap="#intermcu__ap_8h_af92639a882c9a02ecc422e3ba96c1274_cgraph" alt=""/></div>
 <map name="intermcu__ap_8h_af92639a882c9a02ecc422e3ba96c1274_cgraph" id="intermcu__ap_8h_af92639a882c9a02ecc422e3ba96c1274_cgraph">
 <area shape="rect" id="node2" href="intermcu__ap_8c.html#a604cff1ebc93899fae5ce75bc77ae7e9" title="intermcu_parse_msg" alt="" coords="192,35,349,61"/><area shape="rect" id="node3" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb" title="Get the time in microseconds since startup. " alt="" coords="399,5,543,32"/><area shape="rect" id="node4" href="telemetry__intermcu_8h.html#a06d6fba8d0891b94f3b150c7e31bbf82" title="telemetry_intermcu\l_on_msg" alt="" coords="397,57,545,98"/><area shape="rect" id="node5" href="setup__actuators_8c.html#a8622e4eaf1529d8c64af55c0d05dadbe" title="Should be called when chars are available in dl_buffer. " alt="" coords="612,35,723,61"/><area shape="rect" id="node6" href="telemetry__intermcu__fbw_8c.html#ad57afcdf06b03a2859cf3d965e1a9e74" title="telemetry_intermcu\l_repack" alt="" coords="593,86,741,127"/></map>
@@ -549,7 +553,7 @@ vsupply</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_20e4859fd0a482048af55ed36cbc5ed3.html">intermcu</a></li><li class="navelem"><a class="el" href="intermcu__ap_8h.html">intermcu_ap.h</a></li>
-    <li class="footer">Generated on Wed Sep 12 2018 02:03:52 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:03:36 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

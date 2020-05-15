@@ -15,6 +15,7 @@ var common__nav_8h =
     [ "WaypointY", "common__nav_8h.html#a983349c9ccc3f390fafe929d3c9fdd16", null ],
     [ "common_nav_periodic_task_4Hz", "common__nav_8h.html#aeee253823276823c6ea935330d106280", null ],
     [ "compute_dist2_to_home", "common__nav_8h.html#a4603515f41786b54ea9383a65a9f249e", null ],
+    [ "get_time_to_home", "common__nav_8h.html#a0bb529b33392eba09b44a6b34be03cc0", null ],
     [ "nav_move_waypoint", "common__nav_8h.html#a442b6321ba6cb77bcae6a05b14bb132b", null ],
     [ "nav_reset_alt", "common__nav_8h.html#a3288149314aa748ce8aa507335f50bfd", null ],
     [ "nav_reset_reference", "common__nav_8h.html#a1886ff619a5c03dc6c54729f301fa62e", null ],

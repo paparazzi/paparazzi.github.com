@@ -3,6 +3,10 @@ var i2c_8h =
     [ "I2C_BUF_LEN", "group__i2c.html#ga4757adc18b278c40ced0d79f4e104460", null ],
     [ "I2C_TRANSACTION_QUEUE_LEN", "group__i2c.html#ga1e8f7694d49989f4823aa34cffae6319", null ],
     [ "ZEROS_ERR_COUNTER", "group__i2c.html#ga0c590ace0cfbd91af9173a07cc211362", null ],
+    [ "i2c_idle_fn_t", "group__i2c.html#gada60bb500eb1c9e4858ad1cc4f657d6f", null ],
+    [ "i2c_setbitrate_fn_t", "group__i2c.html#gae04148aed7c71d5b66046c612c611d36", null ],
+    [ "i2c_spin_fn_t", "group__i2c.html#ga4d31410b7d9628074bd8984dfc2fd10d", null ],
+    [ "i2c_submit_fn_t", "group__i2c.html#ga68f08058b94010a0968ca75525c7a038", null ],
     [ "I2CStatus", "group__i2c.html#ga9bec282875cd65e00172e875ef785bec", [
       [ "I2CIdle", "group__i2c.html#gga9bec282875cd65e00172e875ef785beca9ab9b8398c146fca315edd21fc934788", null ],
       [ "I2CStartRequested", "group__i2c.html#gga9bec282875cd65e00172e875ef785becac38326f97d97d96d564d1064ff3313c1", null ],
@@ -32,11 +36,11 @@ var i2c_8h =
     [ "i2c_blocking_transceive", "group__i2c.html#ga0666a38e1bb2dc7a6b796a404e27fef4", null ],
     [ "i2c_blocking_transmit", "group__i2c.html#gad729c07f3a162f0463cbe381f4b538d3", null ],
     [ "i2c_event", "group__i2c.html#ga05763355d0e087ba41feab61dd773fe6", null ],
-    [ "i2c_idle", "group__i2c.html#ga7c5157eae9cb80352e8fa1319db148f8", null ],
+    [ "i2c_idle", "group__i2c.html#ga5ca96421128d944b576fe84bfce9b0c7", null ],
     [ "i2c_init", "group__i2c.html#ga6b8ffbb119f71ec012b6a2c0a2f92279", null ],
     [ "i2c_receive", "group__i2c.html#ga9e7c3ccd9ba7415486bfb2e52eaa3964", null ],
-    [ "i2c_setbitrate", "group__i2c.html#ga886c0abe64ca0d366a35abba80cf2eff", null ],
-    [ "i2c_submit", "group__i2c.html#ga78e9c2753ae191a4aed66b82077b1dfe", null ],
+    [ "i2c_setbitrate", "group__i2c.html#gaf94ae876d37b80660572b725fffa7b0b", null ],
+    [ "i2c_submit", "group__i2c.html#ga4eed48e542a9c71b93372f5a38d7e367", null ],
     [ "i2c_transceive", "group__i2c.html#gafb731922c9fb73255aa4cc11e34bfbd6", null ],
     [ "i2c_transmit", "group__i2c.html#ga54405aa058f14a143b8b1b5380015927", null ]
 ];

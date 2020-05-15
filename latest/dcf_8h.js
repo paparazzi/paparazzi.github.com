@@ -15,8 +15,8 @@ var dcf_8h =
     [ "DCF_MAX_NEIGHBORS", "dcf_8h.html#a6cd866384c130e59eb9c6096c60b7c08", null ],
     [ "dcf_init", "dcf_8h.html#a7103f3bcbab88ab1be8870511d631956", null ],
     [ "distributed_circular", "dcf_8h.html#af9b1e37124f7524c47f9e4621d1e7c98", null ],
-    [ "parseRegTable", "dcf_8h.html#a1b21643ffc1d37916ad7e831546cff90", null ],
-    [ "parseThetaTable", "dcf_8h.html#acf7594649ecd68bdebf02e4f3330d80a", null ],
+    [ "parseRegTable", "dcf_8h.html#adb9f23dfce43999168c411258e74e9f8", null ],
+    [ "parseThetaTable", "dcf_8h.html#a8cddd90483f6005768648781de1fda56", null ],
     [ "send_theta_to_nei", "dcf_8h.html#a10a11ec6ecbc21114aa2afaf94ff1d21", null ],
     [ "dcf_control", "dcf_8h.html#ae21e1aa4150031faf4aa49585fa04171", null ],
     [ "dcf_tables", "dcf_8h.html#ac3839261a3eafbe67ae89dd4dc346e6b", null ]

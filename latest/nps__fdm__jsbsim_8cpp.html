@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -136,7 +136,7 @@ $(document).ready(function(){initNavTree('nps__fdm__jsbsim_8cpp.html','');});
 <code>#include &quot;<a class="el" href="pprz__geodetic__float_8h_source.html">math/pprz_geodetic_float.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="pprz__algebra_8h_source.html">math/pprz_algebra.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="pprz__algebra__float_8h_source.html">math/pprz_algebra_float.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="pprz__geodetic__wmm2015_8h_source.html">math/pprz_geodetic_wmm2015.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="pprz__geodetic__wmm2020_8h_source.html">math/pprz_geodetic_wmm2020.h</a>&quot;</code><br />
 <code>#include &quot;generated/airframe.h&quot;</code><br />
 <code>#include &quot;generated/flight_plan.h&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -146,7 +146,7 @@ $(document).ready(function(){initNavTree('nps__fdm__jsbsim_8cpp.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="nps__fdm__jsbsim_8cpp__incl.png" border="0" usemap="#sw_2simulator_2nps_2nps__fdm__jsbsim_8cpp" alt=""/></div>
 <map name="sw_2simulator_2nps_2nps__fdm__jsbsim_8cpp" id="sw_2simulator_2nps_2nps__fdm__jsbsim_8cpp">
-<area shape="rect" id="node18" href="nps__autopilot_8h.html" title="nps_autopilot.h" alt="" coords="2869,102,2989,129"/><area shape="rect" id="node22" href="nps__fdm_8h.html" title="nps_fdm.h" alt="" coords="3013,102,3103,129"/><area shape="rect" id="node25" href="pprz__geodetic__double_8h.html" title="Paparazzi double&#45;precision floating point math for geodetic calculations. " alt="" coords="3033,184,3184,225"/><area shape="rect" id="node26" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="3184,273,3308,300"/><area shape="rect" id="node28" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="3358,423,3475,449"/><area shape="rect" id="node31" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="3459,348,3611,375"/><area shape="rect" id="node34" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="3260,184,3411,225"/><area shape="rect" id="node35" href="pprz__geodetic__wmm2015_8h.html" title="WMM2015 Geomagnetic field model. " alt="" coords="3561,95,3712,136"/><area shape="rect" id="node20" href="nps__radio__control_8h.html" title="nps_radio_control.h" alt="" coords="2625,348,2771,375"/><area shape="rect" id="node23" href="flight__gear_8h.html" title="../flight_gear.h" alt="" coords="2846,191,2958,218"/><area shape="rect" id="node27" href="pprz__algebra__double_8h.html" title="Paparazzi double precision floating point algebra. " alt="" coords="2993,273,3160,300"/></map>
+<area shape="rect" id="node18" href="nps__autopilot_8h.html" title="nps_autopilot.h" alt="" coords="2869,102,2989,129"/><area shape="rect" id="node22" href="nps__fdm_8h.html" title="nps_fdm.h" alt="" coords="3013,102,3103,129"/><area shape="rect" id="node25" href="pprz__geodetic__double_8h.html" title="Paparazzi double&#45;precision floating point math for geodetic calculations. " alt="" coords="3033,184,3184,225"/><area shape="rect" id="node26" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="3184,273,3308,300"/><area shape="rect" id="node28" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="3321,423,3438,449"/><area shape="rect" id="node32" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="3459,348,3611,375"/><area shape="rect" id="node34" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="3260,184,3411,225"/><area shape="rect" id="node35" href="pprz__geodetic__wmm2020_8h.html" title="WMM2020 Geomagnetic field model. " alt="" coords="3561,95,3712,136"/><area shape="rect" id="node20" href="nps__radio__control_8h.html" title="nps_radio_control.h" alt="" coords="2625,348,2771,375"/><area shape="rect" id="node23" href="flight__gear_8h.html" title="../flight_gear.h" alt="" coords="2846,191,2958,218"/><area shape="rect" id="node27" href="pprz__algebra__double_8h.html" title="Paparazzi double precision floating point algebra. " alt="" coords="2993,273,3160,300"/></map>
 </div>
 </div>
 <p><a href="nps__fdm__jsbsim_8cpp_source.html">Go to the source code of this file.</a></p>
@@ -162,6 +162,9 @@ Macros</h2></td></tr>
 <tr class="separator:a94155297cb6b91686d2633387248d665"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a025b137ad97516fa9f2a291791ad6daf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nps__fdm__jsbsim_8cpp.html#a025b137ad97516fa9f2a291791ad6daf">CelsiusOfRankine</a>(_r)&#160;&#160;&#160;(((_r) - 491.67) / 1.8)</td></tr>
 <tr class="separator:a025b137ad97516fa9f2a291791ad6daf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3c5997079f9fc0ccc2eca4aaae82ebc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nps__fdm__jsbsim_8cpp.html#ab3c5997079f9fc0ccc2eca4aaae82ebc">JSBSIM_PATH</a>(_x)&#160;&#160;&#160;_x</td></tr>
+<tr class="memdesc:ab3c5997079f9fc0ccc2eca4aaae82ebc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Macro to build file path according to the lib version.  <a href="#ab3c5997079f9fc0ccc2eca4aaae82ebc">More...</a><br /></td></tr>
+<tr class="separator:ab3c5997079f9fc0ccc2eca4aaae82ebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a141fddf7b2ded7af48103d727e573574"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nps__fdm__jsbsim_8cpp.html#a141fddf7b2ded7af48103d727e573574">NPS_JSBSIM_MODEL</a>&#160;&#160;&#160;AIRFRAME_NAME</td></tr>
 <tr class="memdesc:a141fddf7b2ded7af48103d727e573574"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the JSBSim model.  <a href="#a141fddf7b2ded7af48103d727e573574">More...</a><br /></td></tr>
 <tr class="separator:a141fddf7b2ded7af48103d727e573574"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -231,7 +234,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a4f72ff1c76415e3e41897d762122c5f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nps__fdm__jsbsim_8cpp.html#a4f72ff1c76415e3e41897d762122c5f8">nps_fdm_run_step</a> (bool launch, double *<a class="el" href="commands_8h.html#a929b1098e1af3f34ee056eeed9227136">commands</a>, int commands_nb)</td></tr>
 <tr class="memdesc:a4f72ff1c76415e3e41897d762122c5f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the simulation state.  <a href="#a4f72ff1c76415e3e41897d762122c5f8">More...</a><br /></td></tr>
 <tr class="separator:a4f72ff1c76415e3e41897d762122c5f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4550df0adab6dedcc57ae3d67205479"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nps__fdm__jsbsim_8cpp.html#ae4550df0adab6dedcc57ae3d67205479">nps_fdm_set_wind</a> (double speed, double dir)</td></tr>
+<tr class="memitem:ae4550df0adab6dedcc57ae3d67205479"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nps__fdm__jsbsim_8cpp.html#ae4550df0adab6dedcc57ae3d67205479">nps_fdm_set_wind</a> (double speed, double <a class="el" href="shift__tracking_8c.html#a04c95be5dd36c679da64fa7181ff7cd2">dir</a>)</td></tr>
 <tr class="separator:ae4550df0adab6dedcc57ae3d67205479"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05c90019f11f90f6855e9b0c3224b4a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nps__fdm__jsbsim_8cpp.html#a05c90019f11f90f6855e9b0c3224b4a3">nps_fdm_set_wind_ned</a> (double wind_north, double wind_east, double wind_down)</td></tr>
 <tr class="separator:a05c90019f11f90f6855e9b0c3224b4a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -277,7 +280,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00074">74</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00353">fetch_state()</a>.</p>
+<p>Referenced by <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00364">fetch_state()</a>.</p>
 
 </div>
 </div>
@@ -293,7 +296,7 @@ Variables</h2></td></tr>
 
 <p>Control surface deflections for visualisation. </p>
 
-<p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00106">106</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
+<p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00113">113</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
 
 </div>
 </div>
@@ -313,7 +316,29 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00071">71</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00518">init_jsbsim()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00193">nps_fdm_run_step()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00275">nps_fdm_set_turbulence()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00261">nps_fdm_set_wind()</a>, and <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00268">nps_fdm_set_wind_ned()</a>.</p>
+<p>Referenced by <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00529">init_jsbsim()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00204">nps_fdm_run_step()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00286">nps_fdm_set_turbulence()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00272">nps_fdm_set_wind()</a>, and <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00279">nps_fdm_set_wind_ned()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab3c5997079f9fc0ccc2eca4aaae82ebc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define JSBSIM_PATH</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_x</td><td>)</td>
+          <td>&#160;&#160;&#160;_x</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Macro to build file path according to the lib version. </p>
+
+<p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00080">80</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
+
+<p>Referenced by <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00529">init_jsbsim()</a>.</p>
 
 </div>
 </div>
@@ -335,7 +360,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00070">70</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00353">fetch_state()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00518">init_jsbsim()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00710">jsbsimloc_to_loc()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00728">jsbsimvec_to_vec()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00796">lla_from_jsbsim_geocentric()</a>, and <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00813">lla_from_jsbsim_geodetic()</a>.</p>
+<p>Referenced by <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00364">fetch_state()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00529">init_jsbsim()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00721">jsbsimloc_to_loc()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00739">jsbsimvec_to_vec()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00807">lla_from_jsbsim_geocentric()</a>, and <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00824">lla_from_jsbsim_geodetic()</a>.</p>
 
 </div>
 </div>
@@ -351,9 +376,9 @@ Variables</h2></td></tr>
 
 <p>Minimum JSBSim timestep Around 1/10000 seems to be good for ground impacts. </p>
 
-<p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00127">127</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
+<p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00134">134</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00166">nps_fdm_init()</a>.</p>
+<p>Referenced by <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00173">nps_fdm_init()</a>.</p>
 
 </div>
 </div>
@@ -367,9 +392,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00113">113</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
+<p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00120">120</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00353">fetch_state()</a>.</p>
+<p>Referenced by <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00364">fetch_state()</a>.</p>
 
 </div>
 </div>
@@ -383,9 +408,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00109">109</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
+<p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00116">116</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00353">fetch_state()</a>.</p>
+<p>Referenced by <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00364">fetch_state()</a>.</p>
 
 </div>
 </div>
@@ -399,9 +424,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00121">121</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
+<p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00128">128</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00353">fetch_state()</a>.</p>
+<p>Referenced by <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00364">fetch_state()</a>.</p>
 
 </div>
 </div>
@@ -418,9 +443,9 @@ Variables</h2></td></tr>
 <p>Name of the JSBSim model. </p>
 <p>Defaults to the AIRFRAME_NAME </p>
 
-<p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00080">80</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
+<p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00087">87</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00518">init_jsbsim()</a>.</p>
+<p>Referenced by <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00529">init_jsbsim()</a>.</p>
 
 </div>
 </div>
@@ -436,9 +461,9 @@ Variables</h2></td></tr>
 
 <p>Trim values for the airframe. </p>
 
-<p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00092">92</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
+<p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00099">99</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00294">feed_jsbsim()</a>.</p>
+<p>Referenced by <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00305">feed_jsbsim()</a>.</p>
 
 </div>
 </div>
@@ -452,9 +477,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00096">96</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
+<p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00103">103</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00294">feed_jsbsim()</a>.</p>
+<p>Referenced by <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00305">feed_jsbsim()</a>.</p>
 
 </div>
 </div>
@@ -468,9 +493,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00117">117</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
+<p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00124">124</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00353">fetch_state()</a>.</p>
+<p>Referenced by <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00364">fetch_state()</a>.</p>
 
 </div>
 </div>
@@ -484,9 +509,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00100">100</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
+<p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00107">107</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00294">feed_jsbsim()</a>.</p>
+<p>Referenced by <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00305">feed_jsbsim()</a>.</p>
 
 </div>
 </div>
@@ -506,7 +531,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00073">73</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00353">fetch_state()</a>.</p>
+<p>Referenced by <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00364">fetch_state()</a>.</p>
 
 </div>
 </div>
@@ -537,11 +562,11 @@ Variables</h2></td></tr>
 <p>Increments the NaN count on each new NaN</p>
 <dl class="section return"><dt>Returns</dt><dd>Count of new NaNs. 0 for no new NaNs. </dd></dl>
 
-<p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00835">835</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
+<p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00846">846</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
 
-<p>References <a class="el" href="pprz__geodetic__double_8h_source.html#l00061">LlaCoor_d::alt</a>, <a class="el" href="nps__fdm_8h_source.html#l00071">NpsFdm::body_ecef_accel</a>, <a class="el" href="nps__fdm_8h_source.html#l00098">NpsFdm::body_ecef_rotaccel</a>, <a class="el" href="nps__fdm_8h_source.html#l00097">NpsFdm::body_ecef_rotvel</a>, <a class="el" href="nps__fdm_8h_source.html#l00069">NpsFdm::body_ecef_vel</a>, <a class="el" href="nps__fdm_8h_source.html#l00066">NpsFdm::ecef_ecef_accel</a>, <a class="el" href="nps__fdm_8h_source.html#l00064">NpsFdm::ecef_ecef_vel</a>, <a class="el" href="nps__fdm_8h_source.html#l00053">NpsFdm::ecef_pos</a>, <a class="el" href="nps__fdm_8h_source.html#l00090">NpsFdm::ecef_to_body_quat</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00150">fdm</a>, <a class="el" href="nps__fdm_8h_source.html#l00056">NpsFdm::hmsl</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00059">LlaCoor_d::lat</a>, <a class="el" href="nps__fdm_8h_source.html#l00055">NpsFdm::lla_pos</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00060">LlaCoor_d::lon</a>, <a class="el" href="nps__fdm_8h_source.html#l00076">NpsFdm::ltp_ecef_accel</a>, <a class="el" href="nps__fdm_8h_source.html#l00074">NpsFdm::ltp_ecef_vel</a>, <a class="el" href="nps__fdm_8h_source.html#l00104">NpsFdm::ltp_g</a>, <a class="el" href="nps__fdm_8h_source.html#l00105">NpsFdm::ltp_h</a>, <a class="el" href="nps__fdm_8h_source.html#l00092">NpsFdm::ltp_to_body_eulers</a>, <a class="el" href="nps__fdm_8h_source.html#l00091">NpsFdm::ltp_to_body_quat</a>, <a class="el" href="nps__fdm_8h_source.html#l00081">NpsFdm::ltpprz_ecef_accel</a>, <a class="el" href="nps__fdm_8h_source.html#l00079">NpsFdm::ltpprz_ecef_vel</a>, <a class="el" href="nps__fdm_8h_source.html#l00054">NpsFdm::ltpprz_pos</a>, <a class="el" href="nps__fdm_8h_source.html#l00094">NpsFdm::ltpprz_to_body_eulers</a>, <a class="el" href="nps__fdm_8h_source.html#l00093">NpsFdm::ltpprz_to_body_quat</a>, <a class="el" href="nps__fdm_8h_source.html#l00050">NpsFdm::nan_count</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00086">DoubleRates::p</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00077">DoubleEulers::phi</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00079">DoubleEulers::psi</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00087">DoubleRates::q</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00056">DoubleQuat::qi</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00057">DoubleQuat::qx</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00058">DoubleQuat::qy</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00059">DoubleQuat::qz</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00088">DoubleRates::r</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00078">DoubleEulers::theta</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00047">DoubleVect3::x</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00050">EcefCoor_d::x</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00068">NedCoor_d::x</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00048">DoubleVect3::y</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00051">EcefCoor_d::y</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00069">NedCoor_d::y</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00049">DoubleVect3::z</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00052">EcefCoor_d::z</a>, and <a class="el" href="pprz__geodetic__double_8h_source.html#l00070">NedCoor_d::z</a>.</p>
+<p>References <a class="el" href="pprz__geodetic__double_8h_source.html#l00061">LlaCoor_d::alt</a>, <a class="el" href="nps__fdm_8h_source.html#l00071">NpsFdm::body_ecef_accel</a>, <a class="el" href="nps__fdm_8h_source.html#l00098">NpsFdm::body_ecef_rotaccel</a>, <a class="el" href="nps__fdm_8h_source.html#l00097">NpsFdm::body_ecef_rotvel</a>, <a class="el" href="nps__fdm_8h_source.html#l00069">NpsFdm::body_ecef_vel</a>, <a class="el" href="nps__fdm_8h_source.html#l00066">NpsFdm::ecef_ecef_accel</a>, <a class="el" href="nps__fdm_8h_source.html#l00064">NpsFdm::ecef_ecef_vel</a>, <a class="el" href="nps__fdm_8h_source.html#l00053">NpsFdm::ecef_pos</a>, <a class="el" href="nps__fdm_8h_source.html#l00090">NpsFdm::ecef_to_body_quat</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00157">fdm</a>, <a class="el" href="nps__fdm_8h_source.html#l00056">NpsFdm::hmsl</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00059">LlaCoor_d::lat</a>, <a class="el" href="nps__fdm_8h_source.html#l00055">NpsFdm::lla_pos</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00060">LlaCoor_d::lon</a>, <a class="el" href="nps__fdm_8h_source.html#l00076">NpsFdm::ltp_ecef_accel</a>, <a class="el" href="nps__fdm_8h_source.html#l00074">NpsFdm::ltp_ecef_vel</a>, <a class="el" href="nps__fdm_8h_source.html#l00104">NpsFdm::ltp_g</a>, <a class="el" href="nps__fdm_8h_source.html#l00105">NpsFdm::ltp_h</a>, <a class="el" href="nps__fdm_8h_source.html#l00092">NpsFdm::ltp_to_body_eulers</a>, <a class="el" href="nps__fdm_8h_source.html#l00091">NpsFdm::ltp_to_body_quat</a>, <a class="el" href="nps__fdm_8h_source.html#l00081">NpsFdm::ltpprz_ecef_accel</a>, <a class="el" href="nps__fdm_8h_source.html#l00079">NpsFdm::ltpprz_ecef_vel</a>, <a class="el" href="nps__fdm_8h_source.html#l00054">NpsFdm::ltpprz_pos</a>, <a class="el" href="nps__fdm_8h_source.html#l00094">NpsFdm::ltpprz_to_body_eulers</a>, <a class="el" href="nps__fdm_8h_source.html#l00093">NpsFdm::ltpprz_to_body_quat</a>, <a class="el" href="nps__fdm_8h_source.html#l00050">NpsFdm::nan_count</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00086">DoubleRates::p</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00077">DoubleEulers::phi</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00079">DoubleEulers::psi</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00087">DoubleRates::q</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00056">DoubleQuat::qi</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00057">DoubleQuat::qx</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00058">DoubleQuat::qy</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00059">DoubleQuat::qz</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00088">DoubleRates::r</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00078">DoubleEulers::theta</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00047">DoubleVect3::x</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00050">EcefCoor_d::x</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00068">NedCoor_d::x</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00048">DoubleVect3::y</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00051">EcefCoor_d::y</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00069">NedCoor_d::y</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00049">DoubleVect3::z</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00052">EcefCoor_d::z</a>, and <a class="el" href="pprz__geodetic__double_8h_source.html#l00070">NedCoor_d::z</a>.</p>
 
-<p>Referenced by <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00193">nps_fdm_run_step()</a>.</p>
+<p>Referenced by <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00204">nps_fdm_run_step()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -597,11 +622,11 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00294">294</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
+<p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00305">305</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
 
-<p>References <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00153">FDMExec</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00092">NPS_JSBSIM_PITCH_TRIM</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00096">NPS_JSBSIM_ROLL_TRIM</a>, and <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00100">NPS_JSBSIM_YAW_TRIM</a>.</p>
+<p>References <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00160">FDMExec</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00099">NPS_JSBSIM_PITCH_TRIM</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00103">NPS_JSBSIM_ROLL_TRIM</a>, and <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00107">NPS_JSBSIM_YAW_TRIM</a>.</p>
 
-<p>Referenced by <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00518">init_jsbsim()</a>, and <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00193">nps_fdm_run_step()</a>.</p>
+<p>Referenced by <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00529">init_jsbsim()</a>, and <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00204">nps_fdm_run_step()</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -640,11 +665,11 @@ Variables</h2></td></tr>
 
 <p>Populates the NPS fdm struct after a simulation step. </p>
 
-<p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00353">353</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
+<p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00364">364</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
 
-<p>References <a class="el" href="nps__fdm_8h_source.html#l00061">NpsFdm::agl</a>, <a class="el" href="nps__fdm_8h_source.html#l00109">NpsFdm::airspeed</a>, <a class="el" href="nps__fdm_8h_source.html#l00115">NpsFdm::aoa</a>, <a class="el" href="nps__fdm_8h_source.html#l00087">NpsFdm::body_accel</a>, <a class="el" href="nps__fdm_8h_source.html#l00071">NpsFdm::body_ecef_accel</a>, <a class="el" href="nps__fdm_8h_source.html#l00098">NpsFdm::body_ecef_rotaccel</a>, <a class="el" href="nps__fdm_8h_source.html#l00097">NpsFdm::body_ecef_rotvel</a>, <a class="el" href="nps__fdm_8h_source.html#l00069">NpsFdm::body_ecef_vel</a>, <a class="el" href="nps__fdm_8h_source.html#l00084">NpsFdm::body_inertial_accel</a>, <a class="el" href="nps__fdm_8h_source.html#l00102">NpsFdm::body_inertial_rotaccel</a>, <a class="el" href="nps__fdm_8h_source.html#l00101">NpsFdm::body_inertial_rotvel</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00074">CelsiusOfRankine</a>, <a class="el" href="pprz__algebra__double_8c_source.html#l00068">double_eulers_of_quat()</a>, <a class="el" href="nps__fdm_8h_source.html#l00112">NpsFdm::dynamic_pressure</a>, <a class="el" href="nps__fdm_8h_source.html#l00066">NpsFdm::ecef_ecef_accel</a>, <a class="el" href="nps__fdm_8h_source.html#l00064">NpsFdm::ecef_ecef_vel</a>, <a class="el" href="nps__fdm_8h_source.html#l00053">NpsFdm::ecef_pos</a>, <a class="el" href="nps__fdm_8h_source.html#l00119">NpsFdm::elevator</a>, <a class="el" href="nps__fdm_8h_source.html#l00127">NpsFdm::eng_state</a>, <a class="el" href="pprz__algebra_8h_source.html#l00267">EULERS_COPY</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00150">fdm</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00153">FDMExec</a>, <a class="el" href="nps__fdm_8h_source.html#l00120">NpsFdm::flap</a>, <a class="el" href="nps__fdm_8h_source.html#l00056">NpsFdm::hmsl</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00710">jsbsimloc_to_loc()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00743">jsbsimquat_to_quat()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00759">jsbsimvec_to_rate()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00728">jsbsimvec_to_vec()</a>, <a class="el" href="nps__fdm_8h_source.html#l00121">NpsFdm::left_aileron</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00796">lla_from_jsbsim_geocentric()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00813">lla_from_jsbsim_geodetic()</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00083">lla_of_ecef_d()</a>, <a class="el" href="nps__fdm_8h_source.html#l00055">NpsFdm::lla_pos</a>, <a class="el" href="nps__fdm_8h_source.html#l00060">NpsFdm::lla_pos_geoc</a>, <a class="el" href="nps__fdm_8h_source.html#l00059">NpsFdm::lla_pos_geod</a>, <a class="el" href="nps__fdm_8h_source.html#l00058">NpsFdm::lla_pos_pprz</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00776">llh_from_jsbsim()</a>, <a class="el" href="nps__fdm_8h_source.html#l00076">NpsFdm::ltp_ecef_accel</a>, <a class="el" href="nps__fdm_8h_source.html#l00074">NpsFdm::ltp_ecef_vel</a>, <a class="el" href="nps__fdm_8h_source.html#l00092">NpsFdm::ltp_to_body_eulers</a>, <a class="el" href="nps__fdm_8h_source.html#l00091">NpsFdm::ltp_to_body_quat</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00155">ltpdef</a>, <a class="el" href="nps__fdm_8h_source.html#l00081">NpsFdm::ltpprz_ecef_accel</a>, <a class="el" href="nps__fdm_8h_source.html#l00079">NpsFdm::ltpprz_ecef_vel</a>, <a class="el" href="nps__fdm_8h_source.html#l00054">NpsFdm::ltpprz_pos</a>, <a class="el" href="nps__fdm_8h_source.html#l00094">NpsFdm::ltpprz_to_body_eulers</a>, <a class="el" href="nps__fdm_8h_source.html#l00093">NpsFdm::ltpprz_to_body_quat</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00070">MetersOfFeet</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00147">ned_of_ecef_point_d()</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00159">ned_of_ecef_vect_d()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00113">NPS_JSBSIM_AILERON_MAX_RAD</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00109">NPS_JSBSIM_ELEVATOR_MAX_RAD</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00121">NPS_JSBSIM_FLAP_MAX_RAD</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00117">NPS_JSBSIM_RUDDER_MAX_RAD</a>, <a class="el" href="nps__fdm_8h_source.html#l00126">NpsFdm::num_engines</a>, <a class="el" href="nps__fdm_8h_source.html#l00049">NpsFdm::on_ground</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00073">PascalOfPsf</a>, <a class="el" href="nps__fdm_8h_source.html#l00110">NpsFdm::pressure</a>, <a class="el" href="nps__fdm_8h_source.html#l00114">NpsFdm::pressure_sl</a>, <a class="el" href="pprz__algebra_8h_source.html#l00543">QUAT_COPY</a>, <a class="el" href="nps__fdm_8h_source.html#l00122">NpsFdm::right_aileron</a>, <a class="el" href="nps__fdm_8h_source.html#l00128">NpsFdm::rpm</a>, <a class="el" href="nps__fdm_8h_source.html#l00123">NpsFdm::rudder</a>, <a class="el" href="nps__fdm_8h_source.html#l00116">NpsFdm::sideslip</a>, <a class="el" href="nps__fdm_8h_source.html#l00113">NpsFdm::temperature</a>, <a class="el" href="nps__fdm_8h_source.html#l00046">NpsFdm::time</a>, <a class="el" href="nps__fdm_8h_source.html#l00111">NpsFdm::total_pressure</a>, <a class="el" href="nps__fdm_8h_source.html#l00107">NpsFdm::wind</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00047">DoubleVect3::x</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00050">EcefCoor_d::x</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00068">NedCoor_d::x</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00048">DoubleVect3::y</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00051">EcefCoor_d::y</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00069">NedCoor_d::y</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00049">DoubleVect3::z</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00052">EcefCoor_d::z</a>, and <a class="el" href="pprz__geodetic__double_8h_source.html#l00070">NedCoor_d::z</a>.</p>
+<p>References <a class="el" href="nps__fdm_8h_source.html#l00061">NpsFdm::agl</a>, <a class="el" href="nps__fdm_8h_source.html#l00109">NpsFdm::airspeed</a>, <a class="el" href="nps__fdm_8h_source.html#l00115">NpsFdm::aoa</a>, <a class="el" href="nps__fdm_8h_source.html#l00087">NpsFdm::body_accel</a>, <a class="el" href="nps__fdm_8h_source.html#l00071">NpsFdm::body_ecef_accel</a>, <a class="el" href="nps__fdm_8h_source.html#l00098">NpsFdm::body_ecef_rotaccel</a>, <a class="el" href="nps__fdm_8h_source.html#l00097">NpsFdm::body_ecef_rotvel</a>, <a class="el" href="nps__fdm_8h_source.html#l00069">NpsFdm::body_ecef_vel</a>, <a class="el" href="nps__fdm_8h_source.html#l00084">NpsFdm::body_inertial_accel</a>, <a class="el" href="nps__fdm_8h_source.html#l00102">NpsFdm::body_inertial_rotaccel</a>, <a class="el" href="nps__fdm_8h_source.html#l00101">NpsFdm::body_inertial_rotvel</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00074">CelsiusOfRankine</a>, <a class="el" href="pprz__algebra__double_8c_source.html#l00068">double_eulers_of_quat()</a>, <a class="el" href="nps__fdm_8h_source.html#l00112">NpsFdm::dynamic_pressure</a>, <a class="el" href="nps__fdm_8h_source.html#l00066">NpsFdm::ecef_ecef_accel</a>, <a class="el" href="nps__fdm_8h_source.html#l00064">NpsFdm::ecef_ecef_vel</a>, <a class="el" href="nps__fdm_8h_source.html#l00053">NpsFdm::ecef_pos</a>, <a class="el" href="nps__fdm_8h_source.html#l00119">NpsFdm::elevator</a>, <a class="el" href="nps__fdm_8h_source.html#l00127">NpsFdm::eng_state</a>, <a class="el" href="pprz__algebra_8h_source.html#l00268">EULERS_COPY</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00157">fdm</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00160">FDMExec</a>, <a class="el" href="nps__fdm_8h_source.html#l00120">NpsFdm::flap</a>, <a class="el" href="nps__fdm_8h_source.html#l00056">NpsFdm::hmsl</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00721">jsbsimloc_to_loc()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00754">jsbsimquat_to_quat()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00770">jsbsimvec_to_rate()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00739">jsbsimvec_to_vec()</a>, <a class="el" href="nps__fdm_8h_source.html#l00121">NpsFdm::left_aileron</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00807">lla_from_jsbsim_geocentric()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00824">lla_from_jsbsim_geodetic()</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00083">lla_of_ecef_d()</a>, <a class="el" href="nps__fdm_8h_source.html#l00055">NpsFdm::lla_pos</a>, <a class="el" href="nps__fdm_8h_source.html#l00060">NpsFdm::lla_pos_geoc</a>, <a class="el" href="nps__fdm_8h_source.html#l00059">NpsFdm::lla_pos_geod</a>, <a class="el" href="nps__fdm_8h_source.html#l00058">NpsFdm::lla_pos_pprz</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00787">llh_from_jsbsim()</a>, <a class="el" href="nps__fdm_8h_source.html#l00076">NpsFdm::ltp_ecef_accel</a>, <a class="el" href="nps__fdm_8h_source.html#l00074">NpsFdm::ltp_ecef_vel</a>, <a class="el" href="nps__fdm_8h_source.html#l00092">NpsFdm::ltp_to_body_eulers</a>, <a class="el" href="nps__fdm_8h_source.html#l00091">NpsFdm::ltp_to_body_quat</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00162">ltpdef</a>, <a class="el" href="nps__fdm_8h_source.html#l00081">NpsFdm::ltpprz_ecef_accel</a>, <a class="el" href="nps__fdm_8h_source.html#l00079">NpsFdm::ltpprz_ecef_vel</a>, <a class="el" href="nps__fdm_8h_source.html#l00054">NpsFdm::ltpprz_pos</a>, <a class="el" href="nps__fdm_8h_source.html#l00094">NpsFdm::ltpprz_to_body_eulers</a>, <a class="el" href="nps__fdm_8h_source.html#l00093">NpsFdm::ltpprz_to_body_quat</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00070">MetersOfFeet</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00147">ned_of_ecef_point_d()</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00159">ned_of_ecef_vect_d()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00120">NPS_JSBSIM_AILERON_MAX_RAD</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00116">NPS_JSBSIM_ELEVATOR_MAX_RAD</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00128">NPS_JSBSIM_FLAP_MAX_RAD</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00124">NPS_JSBSIM_RUDDER_MAX_RAD</a>, <a class="el" href="nps__fdm_8h_source.html#l00126">NpsFdm::num_engines</a>, <a class="el" href="nps__fdm_8h_source.html#l00049">NpsFdm::on_ground</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00073">PascalOfPsf</a>, <a class="el" href="nps__fdm_8h_source.html#l00110">NpsFdm::pressure</a>, <a class="el" href="nps__fdm_8h_source.html#l00114">NpsFdm::pressure_sl</a>, <a class="el" href="pprz__algebra_8h_source.html#l00596">QUAT_COPY</a>, <a class="el" href="nps__fdm_8h_source.html#l00122">NpsFdm::right_aileron</a>, <a class="el" href="nps__fdm_8h_source.html#l00128">NpsFdm::rpm</a>, <a class="el" href="nps__fdm_8h_source.html#l00123">NpsFdm::rudder</a>, <a class="el" href="nps__fdm_8h_source.html#l00116">NpsFdm::sideslip</a>, <a class="el" href="nps__fdm_8h_source.html#l00113">NpsFdm::temperature</a>, <a class="el" href="nps__fdm_8h_source.html#l00046">NpsFdm::time</a>, <a class="el" href="nps__fdm_8h_source.html#l00111">NpsFdm::total_pressure</a>, <a class="el" href="nps__fdm_8h_source.html#l00107">NpsFdm::wind</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00047">DoubleVect3::x</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00050">EcefCoor_d::x</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00068">NedCoor_d::x</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00048">DoubleVect3::y</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00051">EcefCoor_d::y</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00069">NedCoor_d::y</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00049">DoubleVect3::z</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00052">EcefCoor_d::z</a>, and <a class="el" href="pprz__geodetic__double_8h_source.html#l00070">NedCoor_d::z</a>.</p>
 
-<p>Referenced by <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00166">nps_fdm_init()</a>, and <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00193">nps_fdm_run_step()</a>.</p>
+<p>Referenced by <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00173">nps_fdm_init()</a>, and <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00204">nps_fdm_run_step()</a>.</p>
 
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -702,11 +727,11 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section warning"><dt>Warning</dt><dd>Needs PAPARAZZI_HOME defined to find the config files </dd></dl>
 
-<p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00518">518</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
+<p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00529">529</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
 
-<p>References <a class="el" href="pprz__geodetic__double_8h_source.html#l00061">LlaCoor_d::alt</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00120">ecef_of_lla_d()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00153">FDMExec</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00294">feed_jsbsim()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00071">FeetOfMeters</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00210">gc_of_gd_lat_d()</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00059">LlaCoor_d::lat</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00776">llh_from_jsbsim()</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00060">LlaCoor_d::lon</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00070">MetersOfFeet</a>, <a class="el" href="nps__autopilot_8h_source.html#l00018">NPS_COMMANDS_NB</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00080">NPS_JSBSIM_MODEL</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00158">offset</a>, <a class="el" href="chemotaxis_8c_source.html#l00015">radius</a>, <a class="el" href="pprz__algebra_8h_source.html#l00181">VECT3_DIFF</a>, and <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00161">vehicle_radius_max</a>.</p>
+<p>References <a class="el" href="pprz__geodetic__double_8h_source.html#l00061">LlaCoor_d::alt</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00120">ecef_of_lla_d()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00160">FDMExec</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00305">feed_jsbsim()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00071">FeetOfMeters</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00210">gc_of_gd_lat_d()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00080">JSBSIM_PATH</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00059">LlaCoor_d::lat</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00787">llh_from_jsbsim()</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00060">LlaCoor_d::lon</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00070">MetersOfFeet</a>, <a class="el" href="nps__autopilot_8h_source.html#l00042">NPS_COMMANDS_NB</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00087">NPS_JSBSIM_MODEL</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00165">offset</a>, <a class="el" href="pprz__algebra_8h_source.html#l00182">VECT3_DIFF</a>, and <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00168">vehicle_radius_max</a>.</p>
 
-<p>Referenced by <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00166">nps_fdm_init()</a>.</p>
+<p>Referenced by <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00173">nps_fdm_init()</a>.</p>
 
 <p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -757,11 +782,11 @@ Variables</h2></td></tr>
 <p>Initialize the ltp from the JSBSim location. </p>
 <p>properly get current time </p>
 
-<p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00652">652</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
+<p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00663">663</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
 
-<p>References <a class="el" href="pprz__geodetic__double_8h_source.html#l00061">LlaCoor_d::alt</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00106">double_vect3_normalize()</a>, <a class="el" href="nps__fdm_8h_source.html#l00053">NpsFdm::ecef_pos</a>, <a class="el" href="pprz__geodetic__wmm2015_8h_source.html#l00052">EXT_COEFF1</a>, <a class="el" href="pprz__geodetic__wmm2015_8h_source.html#l00053">EXT_COEFF2</a>, <a class="el" href="pprz__geodetic__wmm2015_8h_source.html#l00054">EXT_COEFF3</a>, <a class="el" href="pprz__geodetic__wmm2015_8c_source.html#l00064">extrapsh()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00150">fdm</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00153">FDMExec</a>, <a class="el" href="pprz__geodetic__wmm2015_8h_source.html#l00045">GEO_EPOCH</a>, <a class="el" href="pprz__geodetic__wmm2015_8h_source.html#l00051">IEXT</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00710">jsbsimloc_to_loc()</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00059">LlaCoor_d::lat</a>, <a class="el" href="nps__fdm_8h_source.html#l00055">NpsFdm::lla_pos</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00776">llh_from_jsbsim()</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00060">LlaCoor_d::lon</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00034">ltp_def_from_ecef_d()</a>, <a class="el" href="nps__fdm_8h_source.html#l00104">NpsFdm::ltp_g</a>, <a class="el" href="nps__fdm_8h_source.html#l00105">NpsFdm::ltp_h</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00155">ltpdef</a>, <a class="el" href="pprz__geodetic__wmm2015_8c_source.html#l00105">mag_calc()</a>, <a class="el" href="pprz__geodetic__wmm2015_8h_source.html#l00067">MAXCOEFF</a>, <a class="el" href="pprz__geodetic__wmm2015_8h_source.html#l00048">NMAX_1</a>, <a class="el" href="pprz__geodetic__wmm2015_8h_source.html#l00049">NMAX_2</a>, <a class="el" href="ins__vectornav_8c.html#aa01d3425df2eb0f33ced38c9d8fa8f05">PRINT_CONFIG_MSG()</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00047">DoubleVect3::x</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00048">DoubleVect3::y</a>, and <a class="el" href="pprz__algebra__double_8h_source.html#l00049">DoubleVect3::z</a>.</p>
+<p>References <a class="el" href="pprz__geodetic__double_8h_source.html#l00061">LlaCoor_d::alt</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00106">double_vect3_normalize()</a>, <a class="el" href="nps__fdm_8h_source.html#l00053">NpsFdm::ecef_pos</a>, <a class="el" href="pprz__geodetic__wmm2020_8h_source.html#l00052">EXT_COEFF1</a>, <a class="el" href="pprz__geodetic__wmm2020_8h_source.html#l00053">EXT_COEFF2</a>, <a class="el" href="pprz__geodetic__wmm2020_8h_source.html#l00054">EXT_COEFF3</a>, <a class="el" href="pprz__geodetic__wmm2020_8c_source.html#l00064">extrapsh()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00157">fdm</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00160">FDMExec</a>, <a class="el" href="pprz__geodetic__wmm2020_8h_source.html#l00045">GEO_EPOCH</a>, <a class="el" href="pprz__geodetic__wmm2020_8h_source.html#l00051">IEXT</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00721">jsbsimloc_to_loc()</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00059">LlaCoor_d::lat</a>, <a class="el" href="nps__fdm_8h_source.html#l00055">NpsFdm::lla_pos</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00787">llh_from_jsbsim()</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00060">LlaCoor_d::lon</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00034">ltp_def_from_ecef_d()</a>, <a class="el" href="nps__fdm_8h_source.html#l00104">NpsFdm::ltp_g</a>, <a class="el" href="nps__fdm_8h_source.html#l00105">NpsFdm::ltp_h</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00162">ltpdef</a>, <a class="el" href="pprz__geodetic__wmm2020_8c_source.html#l00105">mag_calc()</a>, <a class="el" href="pprz__geodetic__wmm2020_8h_source.html#l00067">MAXCOEFF</a>, <a class="el" href="pprz__geodetic__wmm2020_8h_source.html#l00048">NMAX_1</a>, <a class="el" href="pprz__geodetic__wmm2020_8h_source.html#l00049">NMAX_2</a>, <a class="el" href="ins__vectornav_8c.html#aa01d3425df2eb0f33ced38c9d8fa8f05">PRINT_CONFIG_MSG()</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00047">DoubleVect3::x</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00048">DoubleVect3::y</a>, and <a class="el" href="pprz__algebra__double_8h_source.html#l00049">DoubleVect3::z</a>.</p>
 
-<p>Referenced by <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00166">nps_fdm_init()</a>.</p>
+<p>Referenced by <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00173">nps_fdm_init()</a>.</p>
 
 <p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -829,11 +854,11 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00710">710</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
+<p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00721">721</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
 
-<p>References <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00070">MetersOfFeet</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00158">offset</a>, <a class="el" href="pprz__algebra_8h_source.html#l00146">VECT3_ADD</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00050">EcefCoor_d::x</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00051">EcefCoor_d::y</a>, and <a class="el" href="pprz__geodetic__double_8h_source.html#l00052">EcefCoor_d::z</a>.</p>
+<p>References <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00070">MetersOfFeet</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00165">offset</a>, <a class="el" href="pprz__algebra_8h_source.html#l00147">VECT3_ADD</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00050">EcefCoor_d::x</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00051">EcefCoor_d::y</a>, and <a class="el" href="pprz__geodetic__double_8h_source.html#l00052">EcefCoor_d::z</a>.</p>
 
-<p>Referenced by <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00353">fetch_state()</a>, and <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00652">init_ltp()</a>.</p>
+<p>Referenced by <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00364">fetch_state()</a>, and <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00663">init_ltp()</a>.</p>
 
 <p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -889,11 +914,11 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00743">743</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
+<p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00754">754</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
 
 <p>References <a class="el" href="pprz__algebra__double_8h_source.html#l00056">DoubleQuat::qi</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00057">DoubleQuat::qx</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00058">DoubleQuat::qy</a>, and <a class="el" href="pprz__algebra__double_8h_source.html#l00059">DoubleQuat::qz</a>.</p>
 
-<p>Referenced by <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00353">fetch_state()</a>.</p>
+<p>Referenced by <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00364">fetch_state()</a>.</p>
 
 <p><div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -949,11 +974,11 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00759">759</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
+<p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00770">770</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
 
 <p>References <a class="el" href="pprz__algebra__double_8h_source.html#l00086">DoubleRates::p</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00087">DoubleRates::q</a>, and <a class="el" href="pprz__algebra__double_8h_source.html#l00088">DoubleRates::r</a>.</p>
 
-<p>Referenced by <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00353">fetch_state()</a>.</p>
+<p>Referenced by <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00364">fetch_state()</a>.</p>
 
 <p><div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -1010,11 +1035,11 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00728">728</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
+<p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00739">739</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
 
 <p>References <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00070">MetersOfFeet</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00047">DoubleVect3::x</a>, <a class="el" href="pprz__algebra__double_8h_source.html#l00048">DoubleVect3::y</a>, and <a class="el" href="pprz__algebra__double_8h_source.html#l00049">DoubleVect3::z</a>.</p>
 
-<p>Referenced by <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00353">fetch_state()</a>.</p>
+<p>Referenced by <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00364">fetch_state()</a>.</p>
 
 <p><div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -1071,11 +1096,11 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00796">796</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
+<p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00807">807</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
 
 <p>References <a class="el" href="pprz__geodetic__double_8h_source.html#l00061">LlaCoor_d::alt</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00059">LlaCoor_d::lat</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00060">LlaCoor_d::lon</a>, and <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00070">MetersOfFeet</a>.</p>
 
-<p>Referenced by <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00353">fetch_state()</a>.</p>
+<p>Referenced by <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00364">fetch_state()</a>.</p>
 
 <p><div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -1132,11 +1157,11 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00813">813</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
+<p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00824">824</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
 
 <p>References <a class="el" href="pprz__geodetic__double_8h_source.html#l00061">LlaCoor_d::alt</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00059">LlaCoor_d::lat</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00060">LlaCoor_d::lon</a>, and <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00070">MetersOfFeet</a>.</p>
 
-<p>Referenced by <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00353">fetch_state()</a>.</p>
+<p>Referenced by <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00364">fetch_state()</a>.</p>
 
 <p><div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -1193,11 +1218,11 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00776">776</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
+<p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00787">787</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
 
 <p>References <a class="el" href="pprz__geodetic__double_8h_source.html#l00061">LlaCoor_d::alt</a>, <a class="el" href="pprz__geodetic__double_8h_source.html#l00059">LlaCoor_d::lat</a>, and <a class="el" href="pprz__geodetic__double_8h_source.html#l00060">LlaCoor_d::lon</a>.</p>
 
-<p>Referenced by <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00353">fetch_state()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00518">init_jsbsim()</a>, and <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00652">init_ltp()</a>.</p>
+<p>Referenced by <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00364">fetch_state()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00529">init_jsbsim()</a>, and <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00663">init_ltp()</a>.</p>
 
 <p><div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -1234,9 +1259,9 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00166">166</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
+<p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00173">173</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
 
-<p>References <a class="el" href="nps__fdm_8h_source.html#l00048">NpsFdm::curr_dt</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00150">fdm</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00153">FDMExec</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00353">fetch_state()</a>, <a class="el" href="nps__fdm_8h_source.html#l00047">NpsFdm::init_dt</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00518">init_jsbsim()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00652">init_ltp()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00127">MIN_DT</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00164">min_dt</a>, <a class="el" href="nps__fdm_8h_source.html#l00050">NpsFdm::nan_count</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00158">offset</a>, and <a class="el" href="pprz__algebra_8h_source.html#l00124">VECT3_ASSIGN</a>.</p>
+<p>References <a class="el" href="nps__fdm_8h_source.html#l00048">NpsFdm::curr_dt</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00157">fdm</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00160">FDMExec</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00364">fetch_state()</a>, <a class="el" href="nps__fdm_8h_source.html#l00047">NpsFdm::init_dt</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00529">init_jsbsim()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00663">init_ltp()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00134">MIN_DT</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00171">min_dt</a>, <a class="el" href="nps__fdm_8h_source.html#l00050">NpsFdm::nan_count</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00165">offset</a>, and <a class="el" href="pprz__algebra_8h_source.html#l00125">VECT3_ASSIGN</a>.</p>
 
 <p>Referenced by <a class="el" href="nps__main__common_8c_source.html#l00079">nps_main_init()</a>.</p>
 
@@ -1304,9 +1329,9 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00193">193</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
+<p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00204">204</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
 
-<p>References <a class="el" href="nps__fdm_8h_source.html#l00061">NpsFdm::agl</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00835">check_for_nan()</a>, <a class="el" href="nps__fdm_8h_source.html#l00048">NpsFdm::curr_dt</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00150">fdm</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00153">FDMExec</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00294">feed_jsbsim()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00071">FeetOfMeters</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00353">fetch_state()</a>, <a class="el" href="nps__fdm_8h_source.html#l00047">NpsFdm::init_dt</a>, <a class="el" href="nps__fdm_8h_source.html#l00074">NpsFdm::ltp_ecef_vel</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00164">min_dt</a>, <a class="el" href="nps__fdm_8h_source.html#l00050">NpsFdm::nan_count</a>, <a class="el" href="nps__fdm_8h_source.html#l00046">NpsFdm::time</a>, <a class="el" href="std_8h_source.html#l00004">TRUE</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00161">vehicle_radius_max</a>, and <a class="el" href="pprz__geodetic__double_8h_source.html#l00070">NedCoor_d::z</a>.</p>
+<p>References <a class="el" href="nps__fdm_8h_source.html#l00061">NpsFdm::agl</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00846">check_for_nan()</a>, <a class="el" href="nps__fdm_8h_source.html#l00048">NpsFdm::curr_dt</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00157">fdm</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00160">FDMExec</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00305">feed_jsbsim()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00071">FeetOfMeters</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00364">fetch_state()</a>, <a class="el" href="nps__fdm_8h_source.html#l00047">NpsFdm::init_dt</a>, <a class="el" href="nps__fdm_8h_source.html#l00074">NpsFdm::ltp_ecef_vel</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00171">min_dt</a>, <a class="el" href="nps__fdm_8h_source.html#l00050">NpsFdm::nan_count</a>, <a class="el" href="nps__fdm_8h_source.html#l00046">NpsFdm::time</a>, <a class="el" href="std_8h_source.html#l00004">TRUE</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00168">vehicle_radius_max</a>, and <a class="el" href="pprz__geodetic__double_8h_source.html#l00070">NedCoor_d::z</a>.</p>
 
 <p>Referenced by <a class="el" href="nps__main__hitl_8c_source.html#l00099">nps_main_run_sim_step()</a>.</p>
 
@@ -1360,9 +1385,9 @@ Variables</h2></td></tr>
 
 <p>Set temperature in degrees Celcius at given height h above MSL. </p>
 
-<p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00283">283</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
+<p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00294">294</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
 
-<p>References <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00153">FDMExec</a>.</p>
+<p>References <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00160">FDMExec</a>.</p>
 
 </div>
 </div>
@@ -1390,9 +1415,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00275">275</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
+<p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00286">286</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
 
-<p>References <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00153">FDMExec</a>, and <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00071">FeetOfMeters</a>.</p>
+<p>References <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00160">FDMExec</a>, and <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00071">FeetOfMeters</a>.</p>
 
 <p>Referenced by <a class="el" href="nps__atmosphere_8c_source.html#l00098">nps_atmosphere_update()</a>.</p>
 
@@ -1433,9 +1458,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00261">261</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
+<p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00272">272</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
 
-<p>References <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00153">FDMExec</a>, and <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00071">FeetOfMeters</a>.</p>
+<p>References <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00160">FDMExec</a>, and <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00071">FeetOfMeters</a>.</p>
 
 </div>
 </div>
@@ -1469,9 +1494,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00268">268</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
+<p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00279">279</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
 
-<p>References <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00153">FDMExec</a>, and <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00071">FeetOfMeters</a>.</p>
+<p>References <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00160">FDMExec</a>, and <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00071">FeetOfMeters</a>.</p>
 
 <p>Referenced by <a class="el" href="nps__atmosphere_8c_source.html#l00098">nps_atmosphere_update()</a>.</p>
 
@@ -1501,9 +1526,9 @@ Variables</h2></td></tr>
 
 <p>Holds all necessary NPS FDM state information. </p>
 
-<p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00150">150</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
+<p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00157">157</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00835">check_for_nan()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00353">fetch_state()</a>, <a class="el" href="gps__sim__nps_8c_source.html#l00031">gps_feed_value()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00652">init_ltp()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00166">nps_fdm_init()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00193">nps_fdm_run_step()</a>, <a class="el" href="nps__flightgear_8c_source.html#l00179">nps_flightgear_send()</a>, <a class="el" href="nps__flightgear_8c_source.html#l00115">nps_flightgear_send_fdm()</a>, <a class="el" href="nps__main__hitl_8c_source.html#l00108">nps_ins_data_loop()</a>, <a class="el" href="nps__ivy_8c_source.html#l00125">nps_ivy_send_WORLD_ENV_REQ()</a>, <a class="el" href="nps__main__common_8c_source.html#l00306">nps_main_display()</a>, <a class="el" href="nps__main__hitl_8c_source.html#l00287">nps_main_loop()</a>, <a class="el" href="nps__sensor__accel_8c_source.html#l00027">nps_sensor_accel_run_step()</a>, <a class="el" href="nps__sensor__airspeed_8c_source.html#l00063">nps_sensor_airspeed_run_step()</a>, <a class="el" href="nps__sensor__aoa_8c_source.html#l00062">nps_sensor_aoa_run_step()</a>, <a class="el" href="nps__sensor__baro_8c_source.html#l00023">nps_sensor_baro_run_step()</a>, <a class="el" href="nps__sensor__gps_8c_source.html#l00039">nps_sensor_gps_run_step()</a>, <a class="el" href="nps__sensor__gyro_8c_source.html#l00031">nps_sensor_gyro_run_step()</a>, <a class="el" href="nps__sensor__mag_8c_source.html#l00026">nps_sensor_mag_run_step()</a>, <a class="el" href="nps__sensor__sideslip_8c_source.html#l00063">nps_sensor_sideslip_run_step()</a>, <a class="el" href="nps__sensor__sonar_8c_source.html#l00063">nps_sensor_sonar_run_step()</a>, <a class="el" href="nps__sensor__temperature_8c_source.html#l00028">nps_sensor_temperature_run_step()</a>, <a class="el" href="nps__autopilot__fixedwing_8c_source.html#l00253">sim_overwrite_ahrs()</a>, and <a class="el" href="nps__autopilot__fixedwing_8c_source.html#l00266">sim_overwrite_ins()</a>.</p>
+<p>Referenced by <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00846">check_for_nan()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00364">fetch_state()</a>, <a class="el" href="gps__sim__nps_8c_source.html#l00031">gps_feed_value()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00663">init_ltp()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00173">nps_fdm_init()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00204">nps_fdm_run_step()</a>, <a class="el" href="nps__flightgear_8c_source.html#l00179">nps_flightgear_send()</a>, <a class="el" href="nps__flightgear_8c_source.html#l00115">nps_flightgear_send_fdm()</a>, <a class="el" href="nps__main__hitl_8c_source.html#l00108">nps_ins_data_loop()</a>, <a class="el" href="nps__ivy_8c_source.html#l00125">nps_ivy_send_WORLD_ENV_REQ()</a>, <a class="el" href="nps__main__common_8c_source.html#l00306">nps_main_display()</a>, <a class="el" href="nps__main__hitl_8c_source.html#l00305">nps_main_loop()</a>, <a class="el" href="nps__sensor__accel_8c_source.html#l00027">nps_sensor_accel_run_step()</a>, <a class="el" href="nps__sensor__airspeed_8c_source.html#l00063">nps_sensor_airspeed_run_step()</a>, <a class="el" href="nps__sensor__aoa_8c_source.html#l00062">nps_sensor_aoa_run_step()</a>, <a class="el" href="nps__sensor__baro_8c_source.html#l00023">nps_sensor_baro_run_step()</a>, <a class="el" href="nps__sensor__gps_8c_source.html#l00039">nps_sensor_gps_run_step()</a>, <a class="el" href="nps__sensor__gyro_8c_source.html#l00031">nps_sensor_gyro_run_step()</a>, <a class="el" href="nps__sensor__mag_8c_source.html#l00026">nps_sensor_mag_run_step()</a>, <a class="el" href="nps__sensor__sideslip_8c_source.html#l00063">nps_sensor_sideslip_run_step()</a>, <a class="el" href="nps__sensor__sonar_8c_source.html#l00063">nps_sensor_sonar_run_step()</a>, <a class="el" href="nps__sensor__temperature_8c_source.html#l00028">nps_sensor_temperature_run_step()</a>, <a class="el" href="nps__autopilot__fixedwing_8c_source.html#l00255">sim_overwrite_ahrs()</a>, and <a class="el" href="nps__autopilot__fixedwing_8c_source.html#l00268">sim_overwrite_ins()</a>.</p>
 
 </div>
 </div>
@@ -1527,9 +1552,9 @@ Variables</h2></td></tr>
 
 <p>The JSBSim executive object. </p>
 
-<p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00153">153</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
+<p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00160">160</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00294">feed_jsbsim()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00353">fetch_state()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00518">init_jsbsim()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00652">init_ltp()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00166">nps_fdm_init()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00193">nps_fdm_run_step()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00283">nps_fdm_set_temperature()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00275">nps_fdm_set_turbulence()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00261">nps_fdm_set_wind()</a>, and <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00268">nps_fdm_set_wind_ned()</a>.</p>
+<p>Referenced by <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00305">feed_jsbsim()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00364">fetch_state()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00529">init_jsbsim()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00663">init_ltp()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00173">nps_fdm_init()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00204">nps_fdm_run_step()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00294">nps_fdm_set_temperature()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00286">nps_fdm_set_turbulence()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00272">nps_fdm_set_wind()</a>, and <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00279">nps_fdm_set_wind_ned()</a>.</p>
 
 </div>
 </div>
@@ -1551,9 +1576,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00155">155</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
+<p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00162">162</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00353">fetch_state()</a>, and <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00652">init_ltp()</a>.</p>
+<p>Referenced by <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00364">fetch_state()</a>, and <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00663">init_ltp()</a>.</p>
 
 </div>
 </div>
@@ -1569,9 +1594,9 @@ Variables</h2></td></tr>
 
 <p>Timestep used for higher fidelity near the ground. </p>
 
-<p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00164">164</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
+<p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00171">171</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00166">nps_fdm_init()</a>, and <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00193">nps_fdm_run_step()</a>.</p>
+<p>Referenced by <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00173">nps_fdm_init()</a>, and <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00204">nps_fdm_run_step()</a>.</p>
 
 </div>
 </div>
@@ -1593,9 +1618,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00158">158</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
+<p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00165">165</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00518">init_jsbsim()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00710">jsbsimloc_to_loc()</a>, and <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00166">nps_fdm_init()</a>.</p>
+<p>Referenced by <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00529">init_jsbsim()</a>, <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00721">jsbsimloc_to_loc()</a>, and <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00173">nps_fdm_init()</a>.</p>
 
 </div>
 </div>
@@ -1611,9 +1636,9 @@ Variables</h2></td></tr>
 
 <p>The largest distance between vehicle CG and contact point. </p>
 
-<p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00161">161</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
+<p>Definition at line <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00168">168</a> of file <a class="el" href="nps__fdm__jsbsim_8cpp_source.html">nps_fdm_jsbsim.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00518">init_jsbsim()</a>, and <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00193">nps_fdm_run_step()</a>.</p>
+<p>Referenced by <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00529">init_jsbsim()</a>, and <a class="el" href="nps__fdm__jsbsim_8cpp_source.html#l00204">nps_fdm_run_step()</a>.</p>
 
 </div>
 </div>
@@ -1623,7 +1648,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_57152efd0242905f7c5d6768e6b65e41.html">simulator</a></li><li class="navelem"><a class="el" href="dir_19bdda89d6219119fa616a46fa62e86b.html">nps</a></li><li class="navelem"><a class="el" href="nps__fdm__jsbsim_8cpp.html">nps_fdm_jsbsim.cpp</a></li>
-    <li class="footer">Generated on Wed Sep 12 2018 02:03:54 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:03:37 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

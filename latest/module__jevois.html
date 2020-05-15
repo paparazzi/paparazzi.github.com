@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -108,9 +108,10 @@ $(document).ready(function(){initNavTree('module__jevois.html','');});
 <h1><a class="anchor" id="module_load_example__jevois"></a>
 Example for airframe file</h1>
 <p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;module name=&quot;jevois&quot;&gt;</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;  &lt;configure name=&quot;JEVOIS_UART&quot; value=&quot;UARTX&quot; /&gt;</div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;  &lt;configure name=&quot;JEVOIS_BAUD&quot; value=&quot;B115200&quot; /&gt;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;&lt;/module&gt;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;  &lt;define name=&quot;JEVOIS_SEND_MSG&quot; value=&quot;FALSE|TRUE&quot; /&gt;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;  &lt;configure name=&quot;JEVOIS_UART&quot; value=&quot;UARTX&quot; /&gt;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;  &lt;configure name=&quot;JEVOIS_BAUD&quot; value=&quot;B115200&quot; /&gt;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;&lt;/module&gt;</div>
 </div><!-- fragment --> <h1><a class="anchor" id="configuration__jevois"></a>
 Module configuration options</h1>
 <h2><a class="anchor" id="configure"></a>
@@ -120,6 +121,12 @@ Configure Options</h2>
  Description: UART on which Jevois camera is connected</li>
 <li><b>name:</b> <code>JEVOIS_BAUD</code> <b>value:</b> <em>B115200</em> <br />
  Description: UART Baudrate, default to 115200</li>
+</ul>
+<h2><a class="anchor" id="define"></a>
+Define Options</h2>
+<ul>
+<li><b>name:</b> <code>JEVOIS_SEND_MSG</code> <b>value:</b> <em>FALSE|TRUE</em> <br />
+ Description: Send synchronized jevois message over telemetry link, use periodic report function otherwise</li>
 </ul>
 <h1><a class="anchor" id="functions__jevois"></a>
 Module functions</h1>
@@ -134,6 +141,23 @@ Event Functions</h2>
 <p>These event functions are called in each cycle of the module event loop.</p>
 <ul>
 <li><a class="el" href="jevois_8c.html#a5a4dfc5cbbd1116c8e19483b683db8eb">jevois_event()</a></li>
+</ul>
+<h2><a class="anchor" id="periodic_functions"></a>
+Periodic Functions</h2>
+<p>These functions are called periodically at the specified frequency from the module periodic loop.</p>
+<ul>
+<li><a class="el" href="jevois_8c.html#a4bb01532b86635c1f0989cae4d70e583">jevois_report()</a><ul>
+<li>Frequency in Hz: <em>5</em> </li>
+<li>Autorun: <em>FALSE</em> <br />
+ Periodic function is started by user command.</li>
+</ul>
+</li>
+<li><a class="el" href="jevois_8c.html#aaabffd8949fd232243751b5dbf121d60" title="Send state to camera. ">jevois_send_state()</a><ul>
+<li>Frequency in Hz: <em>4</em> </li>
+<li>Autorun: <em>TRUE</em> <br />
+ Periodic function automatically starts after init.</li>
+</ul>
+</li>
 </ul>
 <h1><a class="anchor" id="files"></a>
 Files</h1>
@@ -161,6 +185,7 @@ Raw jevois.xml file:</h2>
 <div class="line">    &lt;/description&gt;</div>
 <div class="line">    &lt;configure name=&quot;JEVOIS_UART&quot; value=&quot;UARTX&quot; description=&quot;UART on which Jevois camera is connected&quot;/&gt;</div>
 <div class="line">    &lt;configure name=&quot;JEVOIS_BAUD&quot; value=&quot;B115200&quot; description=&quot;UART Baudrate, default to 115200&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;JEVOIS_SEND_MSG&quot; value=&quot;FALSE|TRUE&quot; description=&quot;Send synchronized jevois message over telemetry link, use periodic report function otherwise&quot;/&gt;</div>
 <div class="line">  &lt;/doc&gt;</div>
 <div class="line">  &lt;settings&gt;</div>
 <div class="line">    &lt;dl_settings&gt;</div>
@@ -174,6 +199,8 @@ Raw jevois.xml file:</h2>
 <div class="line">    &lt;file name=&quot;jevois.h&quot;/&gt;</div>
 <div class="line">  &lt;/header&gt;</div>
 <div class="line">  &lt;init fun=&quot;jevois_init()&quot;/&gt;</div>
+<div class="line">  &lt;periodic fun=&quot;jevois_report()&quot; freq=&quot;5&quot; autorun=&quot;FALSE&quot;/&gt;</div>
+<div class="line">  &lt;periodic fun=&quot;jevois_send_state()&quot; freq=&quot;4&quot; autorun=&quot;TRUE&quot;/&gt;</div>
 <div class="line">  &lt;event fun=&quot;jevois_event()&quot;/&gt;</div>
 <div class="line">  &lt;makefile&gt;</div>
 <div class="line">    &lt;configure name=&quot;JEVOIS_UART&quot; case=&quot;upper|lower&quot;/&gt;</div>
@@ -191,7 +218,7 @@ Raw jevois.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Wed Sep 12 2018 02:03:55 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:03:39 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

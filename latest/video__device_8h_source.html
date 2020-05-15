@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -155,7 +155,7 @@ $(document).ready(function(){initNavTree('video__device_8h_source.html','');});
 <div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="video__device_8h.html#a16e7c506a3c1c5c05d272ae8fb59088a">   48</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="video__device_8h.html#a16e7c506a3c1c5c05d272ae8fb59088a">focal_y</a>;  </div>
 <div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="video__device_8h.html#a293f1b6d26bc94a29f09d118466ff457">   49</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="video__device_8h.html#a293f1b6d26bc94a29f09d118466ff457">center_x</a>; </div>
 <div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="video__device_8h.html#ab27720d4ed056a497f437541e1543855">   50</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="video__device_8h.html#ab27720d4ed056a497f437541e1543855">center_y</a>; </div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="video__device_8h.html#a66c88f61b22fc09253795454f89b9919">   51</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="video__device_8h.html#a66c88f61b22fc09253795454f89b9919">Dhane_k</a>; <span class="comment">//&lt; (un)distortion parameter for a fish-eye lens</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="video__device_8h.html#a66c88f61b22fc09253795454f89b9919">   51</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="video__device_8h.html#a66c88f61b22fc09253795454f89b9919">Dhane_k</a>;  </div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;};</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
 <div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="video__device_8h.html">   55</a></span>&#160;<span class="keyword">struct </span><a class="code" href="video__device_8h.html#structvideo__config__t">video_config_t</a> {</div>
@@ -192,9 +192,9 @@ $(document).ready(function(){initNavTree('video__device_8h_source.html','');});
 <div class="ttc" id="video__device_8h_html_aefdcc0d6a040bfdb68ac09242872be88"><div class="ttname"><a href="video__device_8h.html#aefdcc0d6a040bfdb68ac09242872be88">video_config_t::sensor_size</a></div><div class="ttdeci">struct img_size_t sensor_size</div><div class="ttdoc">Original sensor size. </div><div class="ttdef"><b>Definition:</b> <a href="video__device_8h_source.html#l00057">video_device.h:57</a></div></div>
 <div class="ttc" id="types_8h_html_a06896e8c53f721507066c079052171f8"><div class="ttname"><a href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a></div><div class="ttdeci">unsigned long uint32_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00018">types.h:18</a></div></div>
 <div class="ttc" id="video__device_8h_html_a379440668a1177afeb173215961befa6"><div class="ttname"><a href="video__device_8h.html#a379440668a1177afeb173215961befa6">video_config_t::subdev_name</a></div><div class="ttdeci">char * subdev_name</div><div class="ttdoc">path to sub device </div><div class="ttdef"><b>Definition:</b> <a href="video__device_8h_source.html#l00060">video_device.h:60</a></div></div>
-<div class="ttc" id="video__device_8h_html_a66c88f61b22fc09253795454f89b9919"><div class="ttname"><a href="video__device_8h.html#a66c88f61b22fc09253795454f89b9919">camera_intrinsics_t::Dhane_k</a></div><div class="ttdeci">float Dhane_k</div><div class="ttdef"><b>Definition:</b> <a href="video__device_8h_source.html#l00051">video_device.h:51</a></div></div>
+<div class="ttc" id="video__device_8h_html_a66c88f61b22fc09253795454f89b9919"><div class="ttname"><a href="video__device_8h.html#a66c88f61b22fc09253795454f89b9919">camera_intrinsics_t::Dhane_k</a></div><div class="ttdeci">float Dhane_k</div><div class="ttdoc">(un)distortion parameter for a fish-eye lens </div><div class="ttdef"><b>Definition:</b> <a href="video__device_8h_source.html#l00051">video_device.h:51</a></div></div>
 <div class="ttc" id="inttypes_8h_html"><div class="ttname"><a href="inttypes_8h.html">inttypes.h</a></div></div>
-<div class="ttc" id="v4l2_8h_html_structv4l2__device"><div class="ttname"><a href="v4l2_8h.html#structv4l2__device">v4l2_device</a></div><div class="ttdef"><b>Definition:</b> <a href="v4l2_8h_source.html#l00049">v4l2.h:49</a></div></div>
+<div class="ttc" id="v4l2_8h_html_structv4l2__device"><div class="ttname"><a href="v4l2_8h.html#structv4l2__device">v4l2_device</a></div><div class="ttdef"><b>Definition:</b> <a href="v4l2_8h_source.html#l00050">v4l2.h:50</a></div></div>
 <div class="ttc" id="video__device_8h_html_ab10620da4dfb942905b1ad28d7c844e1"><div class="ttname"><a href="video__device_8h.html#ab10620da4dfb942905b1ad28d7c844e1">video_config_t::fps</a></div><div class="ttdeci">int fps</div><div class="ttdoc">Target FPS. </div><div class="ttdef"><b>Definition:</b> <a href="video__device_8h_source.html#l00067">video_device.h:67</a></div></div>
 <div class="ttc" id="cv_8h_html_structvideo__listener"><div class="ttname"><a href="cv_8h.html#structvideo__listener">video_listener</a></div><div class="ttdef"><b>Definition:</b> <a href="cv_8h_source.html#l00051">cv.h:51</a></div></div>
 <div class="ttc" id="types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00014">types.h:14</a></div></div>
@@ -215,7 +215,7 @@ $(document).ready(function(){initNavTree('video__device_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_0a48ba2c0a76794adfddddc873522f67.html">peripherals</a></li><li class="navelem"><a class="el" href="video__device_8h.html">video_device.h</a></li>
-    <li class="footer">Generated on Wed Sep 12 2018 02:02:54 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:02:32 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

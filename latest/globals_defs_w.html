@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -174,8 +174,14 @@ $(document).ready(function(){initNavTree('globals_defs_w.html','');});
 <li>W5100_TX_BUFFER_SIZE
 : <a class="el" href="w5100_8h.html#a0c5eb0f23b68f787843e4f74561d7bb2">w5100.h</a>
 </li>
+<li>W5100_UPDATE_DL
+: <a class="el" href="w5100_8h.html#abec61833a3d9ec75eb08b213c0b81654">w5100.h</a>
+</li>
 <li>WAIT
 : <a class="el" href="gps__nmea_8c.html#aef72fe86b7c60b1a86920496456edeac">gps_nmea.c</a>
+</li>
+<li>wait_ms
+: <a class="el" href="pmw3901_8c.html#a4839a2b4a985855937ca778d0e87391b">pmw3901.c</a>
 </li>
 <li>warn_message
 : <a class="el" href="pprz__simple__matrix_8h.html#a09eb14a8c70b8473c12388ce49e7cb0d">pprz_simple_matrix.h</a>
@@ -185,12 +191,12 @@ $(document).ready(function(){initNavTree('globals_defs_w.html','');});
 , <a class="el" href="subsystems_2navigation_2waypoints_8h.html#a2de6e5b93a3552facfa675f1bccd8db2">waypoints.h</a>
 </li>
 <li>WaypointX
-: <a class="el" href="common__nav_8h.html#a2d51bcd8e90e2dea91009f895a452a22">common_nav.h</a>
-, <a class="el" href="subsystems_2navigation_2waypoints_8h.html#a2d51bcd8e90e2dea91009f895a452a22">waypoints.h</a>
+: <a class="el" href="subsystems_2navigation_2waypoints_8h.html#a2d51bcd8e90e2dea91009f895a452a22">waypoints.h</a>
+, <a class="el" href="common__nav_8h.html#a2d51bcd8e90e2dea91009f895a452a22">common_nav.h</a>
 </li>
 <li>WaypointY
-: <a class="el" href="subsystems_2navigation_2waypoints_8h.html#a983349c9ccc3f390fafe929d3c9fdd16">waypoints.h</a>
-, <a class="el" href="common__nav_8h.html#a983349c9ccc3f390fafe929d3c9fdd16">common_nav.h</a>
+: <a class="el" href="common__nav_8h.html#a983349c9ccc3f390fafe929d3c9fdd16">common_nav.h</a>
+, <a class="el" href="subsystems_2navigation_2waypoints_8h.html#a983349c9ccc3f390fafe929d3c9fdd16">waypoints.h</a>
 </li>
 <li>WD
 : <a class="el" href="LPC21xx_8h.html#a869cae70716c35be29d1cee0cda40de4">LPC21xx.h</a>
@@ -247,7 +253,7 @@ $(document).ready(function(){initNavTree('globals_defs_w.html','');});
 : <a class="el" href="wind__estimator_8c.html#abf7bf11f3a1e04f899cffcde1c8812bb">wind_estimator.c</a>
 </li>
 <li>WEEKS_IN_YEAR
-: <a class="el" href="group__math__geodetic__wmm.html#gac2bdc89e52c860bf7f849b81fe4e5db2">pprz_geodetic_wmm2015.h</a>
+: <a class="el" href="group__math__geodetic__wmm.html#gac2bdc89e52c860bf7f849b81fe4e5db2">pprz_geodetic_wmm2020.h</a>
 </li>
 <li>WGS84_H
 : <a class="el" href="group__math__geodetic__wgs84.html#ga308d77871a261ab445d3d5b1501e35eb">pprz_geodetic_wgs84.h</a>
@@ -279,8 +285,8 @@ $(document).ready(function(){initNavTree('globals_defs_w.html','');});
 <li>WLS_VERBOSE
 : <a class="el" href="wls__alloc_8c.html#a29c662bf90acd6a86c4c37c670018e2f">wls_alloc.c</a>
 </li>
-<li>WMM2015_FRAC
-: <a class="el" href="group__math__geodetic__wmm.html#gaff1ae2e3ec5aff1f63189e3ce6a9e6dc">pprz_geodetic_wmm2015.h</a>
+<li>WMM2020_FRAC
+: <a class="el" href="group__math__geodetic__wmm.html#ga2e3e98dc4c9e45cb8f87715d22080e91">pprz_geodetic_wmm2020.h</a>
 </li>
 <li>word
 : <a class="el" href="nps__fdm__crrcsim_8c.html#a836535f59bf515522a395858a8029d42">nps_fdm_crrcsim.c</a>
@@ -303,13 +309,83 @@ $(document).ready(function(){initNavTree('globals_defs_w.html','');});
 <li>writel
 : <a class="el" href="libisp_8c.html#a9b78127e4ff19f19c9fb86d66e3c4ee1">libisp.c</a>
 </li>
+<li>writeRegister
+: <a class="el" href="pmw3901_8c.html#ab5a89d0bc9854fb3163e7e626d324dac">pmw3901.c</a>
+</li>
+<li>WS2812_AF
+: <a class="el" href="light__ws2812__arch_8c.html#a453201cffe6ef4d2fd313954f666460d">light_ws2812_arch.c</a>
+</li>
+<li>WS2812_BIT
+: <a class="el" href="light__ws2812__arch_8c.html#ae2f87bb1ab1267a1bced492acb1fc5a9">light_ws2812_arch.c</a>
+</li>
+<li>WS2812_BIT_N
+: <a class="el" href="light__ws2812__arch_8c.html#af952c2e36e5cd5d1dc3dac8e8a9bd124">light_ws2812_arch.c</a>
+</li>
+<li>WS2812_BLUE_BIT
+: <a class="el" href="light__ws2812__arch_8c.html#a190b6be6a702540df9606c31b01b7b13">light_ws2812_arch.c</a>
+</li>
+<li>WS2812_CFG_DEF
+: <a class="el" href="light__ws2812__arch_8c.html#ac107d92592f310c314784268b30ad59b">light_ws2812_arch.c</a>
+</li>
+<li>WS2812_COLOR_BIT_N
+: <a class="el" href="light__ws2812__arch_8c.html#a53cee3f01ca19899e72480bbe5ff33f5">light_ws2812_arch.c</a>
+</li>
+<li>WS2812_DMA_IRQ_PRIORITY
+: <a class="el" href="light__ws2812__arch_8c.html#a080cff9ec3c8306e7c5e09fe4079b4df">light_ws2812_arch.c</a>
+</li>
+<li>WS2812_DUTYCYCLE_0
+: <a class="el" href="light__ws2812__arch_8c.html#a4dd3d05de03511658b255a5b86792138">light_ws2812_arch.c</a>
+</li>
+<li>WS2812_DUTYCYCLE_1
+: <a class="el" href="light__ws2812__arch_8c.html#af1a95cfb23a1ac232b081ac166b717ff">light_ws2812_arch.c</a>
+</li>
+<li>WS2812_GPIO
+: <a class="el" href="light__ws2812__arch_8c.html#af3d211f64e527bb2fe3b1b110002b5a9">light_ws2812_arch.c</a>
+</li>
+<li>WS2812_GREEN_BIT
+: <a class="el" href="light__ws2812__arch_8c.html#a0196d9b5b8adb9854da6c3212c84763c">light_ws2812_arch.c</a>
+</li>
+<li>WS2812_NB_LEDS
+: <a class="el" href="light__ws2812__arch_8h.html#adb6545d263086cb25b1d522baf14f4ea">light_ws2812_arch.h</a>
+</li>
+<li>WS2812_PIN
+: <a class="el" href="light__ws2812__arch_8c.html#af75dc8bf5891f41c539ef9b8ebd3d1c3">light_ws2812_arch.c</a>
+</li>
+<li>WS2812_PWM_FREQUENCY
+: <a class="el" href="light__ws2812__arch_8c.html#a4c13f533146b4d972f0608e5bad30663">light_ws2812_arch.c</a>
+</li>
+<li>WS2812_RED_BIT
+: <a class="el" href="light__ws2812__arch_8c.html#afbfd19ffd3de95e52e9485ae478f24c7">light_ws2812_arch.c</a>
+</li>
+<li>WS2812_RESET_BIT_N
+: <a class="el" href="light__ws2812__arch_8c.html#a45915de98e873e3e99c6c9b632a1df54">light_ws2812_arch.c</a>
+</li>
+<li>WS2812_SERVO_HZ
+: <a class="el" href="light__ws2812__arch_8c.html#a4a8614ef3f68261ebfbed384cbc42bbf">light_ws2812_arch.c</a>
+</li>
+<li>WS2812D1_AF
+: <a class="el" href="tawaki_8h.html#afd8cee2fb7cfce1b91317be24260b39c">tawaki.h</a>
+, <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#afd8cee2fb7cfce1b91317be24260b39c">board.h</a>
+</li>
+<li>WS2812D1_CFG_DEF
+: <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a1c00198c3a1c3fabc5af8eb5b763dac5">board.h</a>
+, <a class="el" href="tawaki_8h.html#a1c00198c3a1c3fabc5af8eb5b763dac5">tawaki.h</a>
+</li>
+<li>WS2812D1_GPIO
+: <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a17e208399ce330289bcaef37bd2e9b08">board.h</a>
+, <a class="el" href="tawaki_8h.html#a17e208399ce330289bcaef37bd2e9b08">tawaki.h</a>
+</li>
+<li>WS2812D1_PIN
+: <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#aec52babc287e1d061dec870b9f43b083">board.h</a>
+, <a class="el" href="tawaki_8h.html#aec52babc287e1d061dec870b9f43b083">tawaki.h</a>
+</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Sep 12 2018 02:04:34 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:04:12 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

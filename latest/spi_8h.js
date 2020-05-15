@@ -1,5 +1,6 @@
 var spi_8h =
 [
+    [ "SPI_BLOCKING_TIMEOUT", "spi_8h.html#aeff80f00f6c7ef00aeb93fd95c78ced0", null ],
     [ "SPI_SLAVE0", "group__spi.html#ga0fa22f23eb96f7d513dfbe9802596a32", null ],
     [ "SPI_SLAVE1", "group__spi.html#ga96cc97e73af8ec7cffa9e1d4526692fc", null ],
     [ "SPI_SLAVE2", "group__spi.html#gaf58a9c9069d93bd0664d2197c87ce9ff", null ],
@@ -61,6 +62,7 @@ var spi_8h =
     [ "spi1_init", "group__spi.html#ga7da3469436debceb731ecb76c920efda", null ],
     [ "spi2_arch_init", "group__spi.html#gae6c7e2bb3fb354f3b98282386b41bf70", null ],
     [ "spi2_init", "group__spi.html#ga1c8c4e89459606c70f6749714abd4a86", null ],
+    [ "spi_blocking_transceive", "group__spi.html#ga66e55e817c63768ac9910dc6f7cc9447", null ],
     [ "spi_init", "group__spi.html#ga6c0861f0c2184cab82f883ca29312011", null ],
     [ "spi_init_slaves", "group__spi.html#gafc9125c5764a6749703ae4f1303a16f3", null ],
     [ "spi_lock", "group__spi.html#ga747ed5cb8c8252f0101fb60a04fa886d", null ],

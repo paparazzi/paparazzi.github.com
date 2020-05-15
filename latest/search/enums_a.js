@@ -16,7 +16,9 @@ var searchData=
   ['lis302dlconfstatus',['Lis302dlConfStatus',['../lis302dl_8h.html#adfa5b8dcd9381da47572aac33f99367a',1,'lis302dl.h']]],
   ['lis302dlranges',['Lis302dlRanges',['../lis302dl__regs_8h.html#a72031c26142ebe1e96c4994fecf7a608',1,'lis302dl_regs.h']]],
   ['lis302dlrates',['Lis302dlRates',['../lis302dl__regs_8h.html#ab839e76543bfb2d599a8eb8df710a493',1,'lis302dl_regs.h']]],
+  ['lis3mdlstatus',['Lis3mdlStatus',['../lis3mdl_8h.html#ab9aca99f63e3d0ba2ff2787de391ce93',1,'lis3mdl.h']]],
   ['lisabarostatus',['LisaBaroStatus',['../lisa__l_2baro__board_8c.html#afa23cfb2e942619d6fa44f549fe5edff',1,'baro_board.c']]],
+  ['lps25hconfstatus',['Lps25hConfStatus',['../lps25h_8h.html#a8f41e3830d7c61d7675316683a2329e5',1,'lps25h.h']]],
   ['lsm303daccelbandwidth',['Lsm303dAccelBandwidth',['../lsm303d__regs_8h.html#a2820afc1fa7aad10717bc6ef4e48e292',1,'lsm303d_regs.h']]],
   ['lsm303daccelranges',['Lsm303dAccelRanges',['../lsm303d__regs_8h.html#aacfa69f8de4f40936505a76ba517d963',1,'lsm303d_regs.h']]],
   ['lsm303daccelrates',['Lsm303dAccelRates',['../lsm303d__regs_8h.html#a300ea8afd679fb7fdbb6587056960dfe',1,'lsm303d_regs.h']]],
@@ -26,5 +28,11 @@ var searchData=
   ['lsm303dmagmode',['Lsm303dMagMode',['../lsm303d__regs_8h.html#af12cbc153cee03b573aa2276c643893f',1,'lsm303d_regs.h']]],
   ['lsm303dmagrange',['Lsm303dMagRange',['../lsm303d__regs_8h.html#a080b9a025fcd8119c7feebfbd08c3ad0',1,'lsm303d_regs.h']]],
   ['lsm303dmagrates',['Lsm303dMagRates',['../lsm303d__regs_8h.html#a9fda91a860152e67464c934319f62f0b',1,'lsm303d_regs.h']]],
-  ['lsm303dtarget',['Lsm303dTarget',['../lsm303d_8h.html#a00aff1671a1ffd0d8786a6fabfe03b51',1,'lsm303d.h']]]
+  ['lsm303dtarget',['Lsm303dTarget',['../lsm303d_8h.html#a00aff1671a1ffd0d8786a6fabfe03b51',1,'lsm303d.h']]],
+  ['lsm6accelbw',['Lsm6AccelBw',['../lsm6ds33__regs_8h.html#a3c3ea0ad68ad4097b12c71ae13f38c57',1,'lsm6ds33_regs.h']]],
+  ['lsm6accelodr',['Lsm6AccelODR',['../lsm6ds33__regs_8h.html#a1c59cff1a59adadf4d41e448892a7ab4',1,'lsm6ds33_regs.h']]],
+  ['lsm6accelranges',['Lsm6AccelRanges',['../lsm6ds33__regs_8h.html#a6f2b0d8ff22204c49259015365606ed2',1,'lsm6ds33_regs.h']]],
+  ['lsm6confstatus',['Lsm6ConfStatus',['../lsm6ds33_8h.html#a411777b435ae0f06a3202c244cd2eb9e',1,'lsm6ds33.h']]],
+  ['lsm6gyroodr',['Lsm6GyroODR',['../lsm6ds33__regs_8h.html#a86643339d7c17e4c01960e264bc49d00',1,'lsm6ds33_regs.h']]],
+  ['lsm6gyroranges',['Lsm6GyroRanges',['../lsm6ds33__regs_8h.html#a1f9ba8c71a1abf28199a36aca384b6b2',1,'lsm6ds33_regs.h']]]
 ];

@@ -3,6 +3,8 @@ var nav__survey__rectangle__rotorcraft_8c =
     [ "LINE_START_FUNCTION", "nav__survey__rectangle__rotorcraft_8c.html#a86a682e52e440368e6ca96062ef7563f", null ],
     [ "LINE_STOP_FUNCTION", "nav__survey__rectangle__rotorcraft_8c.html#a2788d8683c98c074cb18680dc2eea0af", null ],
     [ "RECTANGLE_SURVEY_DEFAULT_SWEEP", "nav__survey__rectangle__rotorcraft_8c.html#a12a3e97b26866461785e3fbd1b057ca1", null ],
+    [ "RECTANGLE_SURVEY_HEADING_NS", "nav__survey__rectangle__rotorcraft_8c.html#afa3d8fb95516b88637abe9227fe949ed", null ],
+    [ "RECTANGLE_SURVEY_HEADING_WE", "nav__survey__rectangle__rotorcraft_8c.html#a4146aa2ba29aed66d955c0174e909cdc", null ],
     [ "SurveyGoingEast", "nav__survey__rectangle__rotorcraft_8c.html#a89a1c981b6ac2e85f914e256ec7551d2", null ],
     [ "SurveyGoingNorth", "nav__survey__rectangle__rotorcraft_8c.html#a7418679b973bb034d9a4d4d0a094cfce", null ],
     [ "SurveyGoingSouth", "nav__survey__rectangle__rotorcraft_8c.html#ae6757fd74bd5bccad11bb489e1565f89", null ],

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -299,14 +299,15 @@ $(document).ready(function(){initNavTree('baro__scp_8c_source.html','');});
 <div class="line"><a name="l00188"></a><span class="lineno"><a class="line" href="baro__scp__i2c_8h.html#a6cbae7e48b4b096bafb8717f44bef3f1">  188</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="baro__scp_8c.html#a6cbae7e48b4b096bafb8717f44bef3f1">baro_scp_event</a>(<span class="keywordtype">void</span>)</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;{</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="baro__scp_8c.html#a8776cbecbf4f35a343275117724a3261">baro_scp_available</a> == <a class="code" href="std_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>) {</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <span class="keywordtype">float</span> pressure = (float)<a class="code" href="baro__scp_8c.html#a2686105e872eba82758010dbb3c91c99">baro_scp_pressure</a>;</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    AbiSendMsgBARO_ABS(<a class="code" href="abi__sender__ids_8h.html#a8a4582738989e2d5ae328febdf395f4c">BARO_SCP_SENDER_ID</a>, pressure);</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;<span class="preprocessor">#ifdef SENSOR_SYNC_SEND</span></div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    DOWNLINK_SEND_SCP_STATUS(<a class="code" href="downlink_8h.html#a891b19a3eba08208d4e550aa6c6188dd">DefaultChannel</a>, <a class="code" href="downlink_8h.html#a028b405f95cecb4af565b17c8ee71d80">DefaultDevice</a>, &amp;<a class="code" href="baro__scp_8c.html#a2686105e872eba82758010dbb3c91c99">baro_scp_pressure</a>, &amp;<a class="code" href="baro__scp_8c.html#afc76d1091765349f7cc77bef8db5b95b">baro_scp_temperature</a>);</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <a class="code" href="baro__scp_8c.html#a8776cbecbf4f35a343275117724a3261">baro_scp_available</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  }</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;}</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> now_ts = <a class="code" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb">get_sys_time_usec</a>();</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <span class="keywordtype">float</span> pressure = (float)<a class="code" href="baro__scp_8c.html#a2686105e872eba82758010dbb3c91c99">baro_scp_pressure</a>;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    AbiSendMsgBARO_ABS(<a class="code" href="abi__sender__ids_8h.html#a8a4582738989e2d5ae328febdf395f4c">BARO_SCP_SENDER_ID</a>, now_ts, pressure);</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="preprocessor">#ifdef SENSOR_SYNC_SEND</span></div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    DOWNLINK_SEND_SCP_STATUS(<a class="code" href="downlink_8h.html#a891b19a3eba08208d4e550aa6c6188dd">DefaultChannel</a>, <a class="code" href="downlink_8h.html#a028b405f95cecb4af565b17c8ee71d80">DefaultDevice</a>, &amp;<a class="code" href="baro__scp_8c.html#a2686105e872eba82758010dbb3c91c99">baro_scp_pressure</a>, &amp;<a class="code" href="baro__scp_8c.html#afc76d1091765349f7cc77bef8db5b95b">baro_scp_temperature</a>);</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <a class="code" href="baro__scp_8c.html#a8776cbecbf4f35a343275117724a3261">baro_scp_available</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  }</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;}</div>
 <div class="ttc" id="LPC21xx_8h_html_a87f793a1b9254ca2dec755c61184a715"><div class="ttname"><a href="LPC21xx_8h.html#a87f793a1b9254ca2dec755c61184a715">VICIntSelect</a></div><div class="ttdeci">#define VICIntSelect</div><div class="ttdef"><b>Definition:</b> <a href="LPC21xx_8h_source.html#l00430">LPC21xx.h:430</a></div></div>
 <div class="ttc" id="hbmini__1_80_8h_html_aabb4946529ad070470a4fdb279b02719"><div class="ttname"><a href="hbmini__1_80_8h.html#aabb4946529ad070470a4fdb279b02719">SPI1_DRDY_PINSEL_VAL</a></div><div class="ttdeci">#define SPI1_DRDY_PINSEL_VAL</div><div class="ttdef"><b>Definition:</b> <a href="hbmini__1_80_8h_source.html#l00090">hbmini_1.0.h:90</a></div></div>
 <div class="ttc" id="types_8h_html_a273cf69d639a59973b6019625df33e30"><div class="ttname"><a href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></div><div class="ttdeci">unsigned short uint16_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00016">types.h:16</a></div></div>
@@ -376,6 +377,7 @@ $(document).ready(function(){initNavTree('baro__scp_8c_source.html','');});
 <div class="ttc" id="LPC21xx_8h_html_a9cc6afb932232eaeb7ec147020873a5e"><div class="ttname"><a href="LPC21xx_8h.html#a9cc6afb932232eaeb7ec147020873a5e">SSPCR1</a></div><div class="ttdeci">#define SSPCR1</div><div class="ttdef"><b>Definition:</b> <a href="LPC21xx_8h_source.html#l00223">LPC21xx.h:223</a></div></div>
 <div class="ttc" id="baro__scp_8c_html_a8d13dab4d456903df339a357cb4754c9"><div class="ttname"><a href="baro__scp_8c.html#a8d13dab4d456903df339a357cb4754c9">STA_IDLE</a></div><div class="ttdeci">#define STA_IDLE</div><div class="ttdef"><b>Definition:</b> <a href="baro__scp_8c_source.html#l00022">baro_scp.c:22</a></div></div>
 <div class="ttc" id="baro__scp_8c_html_a83780199bd871c42c41102dba1ca9fa5"><div class="ttname"><a href="baro__scp_8c.html#a83780199bd871c42c41102dba1ca9fa5">SS_IODIR</a></div><div class="ttdeci">#define SS_IODIR</div><div class="ttdef"><b>Definition:</b> <a href="baro__scp_8c_source.html#l00059">baro_scp.c:59</a></div></div>
+<div class="ttc" id="chibios_2mcu__periph_2sys__time__arch_8c_html_a7ddfef1f78a56c6b4c4c536b5d670bfb"><div class="ttname"><a href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb">get_sys_time_usec</a></div><div class="ttdeci">uint32_t get_sys_time_usec(void)</div><div class="ttdoc">Get the time in microseconds since startup. </div><div class="ttdef"><b>Definition:</b> <a href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00068">sys_time_arch.c:68</a></div></div>
 <div class="ttc" id="hbmini__1_80_8h_html_a1dca9637251da27024bb43042d685080"><div class="ttname"><a href="hbmini__1_80_8h.html#a1dca9637251da27024bb43042d685080">SPI1_DRDY_PINSEL_BIT</a></div><div class="ttdeci">#define SPI1_DRDY_PINSEL_BIT</div><div class="ttdef"><b>Definition:</b> <a href="hbmini__1_80_8h_source.html#l00089">hbmini_1.0.h:89</a></div></div>
 <div class="ttc" id="baro__scp_8c_html_a6e117d3c5fa3fb0c56dd4ebf950381b2"><div class="ttname"><a href="baro__scp_8c.html#a6e117d3c5fa3fb0c56dd4ebf950381b2">SSP_DDS</a></div><div class="ttdeci">#define SSP_DDS</div><div class="ttdef"><b>Definition:</b> <a href="baro__scp_8c_source.html#l00046">baro_scp.c:46</a></div></div>
 <div class="ttc" id="baro__scp_8c_html_a8484136e7496673fca205e0ef7730109"><div class="ttname"><a href="baro__scp_8c.html#a8484136e7496673fca205e0ef7730109">SSP_SOD</a></div><div class="ttdeci">#define SSP_SOD</div><div class="ttdef"><b>Definition:</b> <a href="baro__scp_8c_source.html#l00056">baro_scp.c:56</a></div></div>
@@ -389,7 +391,7 @@ $(document).ready(function(){initNavTree('baro__scp_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_2f48bbb566df394f79dcf8fe0631584a.html">sensors</a></li><li class="navelem"><a class="el" href="baro__scp_8c.html">baro_scp.c</a></li>
-    <li class="footer">Generated on Wed Sep 12 2018 02:02:52 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:02:29 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

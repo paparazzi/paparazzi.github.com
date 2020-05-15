@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -126,8 +126,8 @@ Init Functions</h2>
 Datalink Functions</h1>
 <p>Whenever the specified datalink message is received, the corresponing handler function is called.</p>
 <ul>
-<li>on message <b>FORMATION_STATUS</b> call <a class="el" href="formation_8h.html#a911bcc0e845135d0513c5fd3b3bac6f6">parseFormationStatus()</a></li>
-<li>on message <b>FORMATION_SLOT</b> call <a class="el" href="formation_8h.html#a8569ca039a3b042aba94e219e190a86f">parseFormationSlot()</a> </li>
+<li>on message <b>FORMATION_STATUS</b> call parseFormationStatus(buf)</li>
+<li>on message <b>FORMATION_SLOT</b> call parseFormationSlot(buf) </li>
 </ul>
 <h1><a class="anchor" id="files"></a>
 Files</h1>
@@ -167,8 +167,8 @@ Raw formation_flight.xml file:</h2>
 <div class="line">    &lt;file name=&quot;formation.h&quot;/&gt;</div>
 <div class="line">  &lt;/header&gt;</div>
 <div class="line">  &lt;init fun=&quot;formation_init()&quot;/&gt;</div>
-<div class="line">  &lt;datalink message=&quot;FORMATION_STATUS&quot; fun=&quot;parseFormationStatus()&quot;/&gt;</div>
-<div class="line">  &lt;datalink message=&quot;FORMATION_SLOT&quot; fun=&quot;parseFormationSlot()&quot;/&gt;</div>
+<div class="line">  &lt;datalink message=&quot;FORMATION_STATUS&quot; fun=&quot;parseFormationStatus(buf)&quot;/&gt;</div>
+<div class="line">  &lt;datalink message=&quot;FORMATION_SLOT&quot; fun=&quot;parseFormationSlot(buf)&quot;/&gt;</div>
 <div class="line">  &lt;makefile&gt;</div>
 <div class="line">    &lt;file name=&quot;formation.c&quot;/&gt;</div>
 <div class="line">  &lt;/makefile&gt;</div>
@@ -180,7 +180,7 @@ Raw formation_flight.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Wed Sep 12 2018 02:03:59 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:03:42 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

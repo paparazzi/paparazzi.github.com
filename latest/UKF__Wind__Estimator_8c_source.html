@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -822,7 +822,7 @@ $(document).ready(function(){initNavTree('UKF__Wind__Estimator_8c_source.html','
 <div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;  <a class="code" href="rtwtypes_8h.html#ab7f14b954bf92a066b5a5cbc6f28b349">int8_T</a> ipiv[6];</div>
 <div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;  <a class="code" href="rtwtypes_8h.html#a9609106d9819cc5902186f03b8c49508">int32_T</a> j;</div>
 <div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;  <a class="code" href="rtwtypes_8h.html#a9609106d9819cc5902186f03b8c49508">int32_T</a> ix;</div>
-<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;  <a class="code" href="rtwtypes_8h.html#a4681caa479b0bdadb029f609112eaa71">real32_T</a> s;</div>
+<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;  <a class="code" href="rtwtypes_8h.html#a4681caa479b0bdadb029f609112eaa71">real32_T</a> <a class="code" href="light__scheduler_8c.html#a2dee666f0c1fe072c549ff86b1d0a8ab">s</a>;</div>
 <div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;  <a class="code" href="rtwtypes_8h.html#a9609106d9819cc5902186f03b8c49508">int32_T</a> c_ix;</div>
 <div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;  <a class="code" href="rtwtypes_8h.html#a9609106d9819cc5902186f03b8c49508">int32_T</a> d;</div>
 <div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;  <a class="code" href="rtwtypes_8h.html#a9609106d9819cc5902186f03b8c49508">int32_T</a> ijA;</div>
@@ -843,7 +843,7 @@ $(document).ready(function(){initNavTree('UKF__Wind__Estimator_8c_source.html','
 <div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;      s = fabsf(b_A[ix]);</div>
 <div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;      <span class="keywordflow">if</span> (s &gt; temp) {</div>
 <div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;        b_jAcol = b_kBcol - 1;</div>
-<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;        temp = s;</div>
+<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;        temp = <a class="code" href="light__scheduler_8c.html#a2dee666f0c1fe072c549ff86b1d0a8ab">s</a>;</div>
 <div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;      }</div>
 <div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;    }</div>
 <div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;</div>
@@ -2217,9 +2217,10 @@ $(document).ready(function(){initNavTree('UKF__Wind__Estimator_8c_source.html','
 <div class="line"><a name="l02106"></a><span class="lineno"> 2106</span>&#160;<span class="comment"> * [EOF]</span></div>
 <div class="line"><a name="l02107"></a><span class="lineno"> 2107</span>&#160;<span class="comment"> */</span></div>
 <div class="ttc" id="UKF__Wind__Estimator_8c_html_ae7791e7e2e302fdd54849037a36ac477"><div class="ttname"><a href="UKF__Wind__Estimator_8c.html#ae7791e7e2e302fdd54849037a36ac477">xnrm2_f</a></div><div class="ttdeci">static real32_T xnrm2_f(int32_T n, const real32_T x[147], int32_T ix0)</div><div class="ttdef"><b>Definition:</b> <a href="UKF__Wind__Estimator_8c_source.html#l00048">UKF_Wind_Estimator.c:48</a></div></div>
+<div class="ttc" id="light__scheduler_8c_html_a2dee666f0c1fe072c549ff86b1d0a8ab"><div class="ttname"><a href="light__scheduler_8c.html#a2dee666f0c1fe072c549ff86b1d0a8ab">s</a></div><div class="ttdeci">static uint32_t s</div><div class="ttdef"><b>Definition:</b> <a href="light__scheduler_8c_source.html#l00033">light_scheduler.c:33</a></div></div>
 <div class="ttc" id="UKF__Wind__Estimator_8c_html_af1145125636356fc8ed4014a8552b5d3"><div class="ttname"><a href="UKF__Wind__Estimator_8c.html#af1145125636356fc8ed4014a8552b5d3">xgeqrf</a></div><div class="ttdeci">static void xgeqrf(real32_T A[120], real32_T tau[6])</div><div class="ttdef"><b>Definition:</b> <a href="UKF__Wind__Estimator_8c_source.html#l00412">UKF_Wind_Estimator.c:412</a></div></div>
 <div class="ttc" id="UKF__Wind__Estimator_8h_html"><div class="ttname"><a href="UKF__Wind__Estimator_8h.html">UKF_Wind_Estimator.h</a></div></div>
-<div class="ttc" id="undistort__image_8c_html_a29a532ec52354ee7571487245359a066"><div class="ttname"><a href="undistort__image_8c.html#a29a532ec52354ee7571487245359a066">K</a></div><div class="ttdeci">static float K[9]</div><div class="ttdef"><b>Definition:</b> <a href="undistort__image_8c_source.html#l00070">undistort_image.c:70</a></div></div>
+<div class="ttc" id="undistort__image_8c_html_a29a532ec52354ee7571487245359a066"><div class="ttname"><a href="undistort__image_8c.html#a29a532ec52354ee7571487245359a066">K</a></div><div class="ttdeci">static float K[9]</div><div class="ttdef"><b>Definition:</b> <a href="undistort__image_8c_source.html#l00041">undistort_image.c:41</a></div></div>
 <div class="ttc" id="UKF__Wind__Estimator_8h_html_a0d038f2a90e7893330ffdec142c8718c"><div class="ttname"><a href="UKF__Wind__Estimator_8h.html#a0d038f2a90e7893330ffdec142c8718c">ExtU::aoa</a></div><div class="ttdeci">real32_T aoa</div><div class="ttdef"><b>Definition:</b> <a href="UKF__Wind__Estimator_8h_source.html#l00044">UKF_Wind_Estimator.h:44</a></div></div>
 <div class="ttc" id="UKF__Wind__Estimator_8h_html_a06835c35dd5e31fb53ca34fb4cb481fe"><div class="ttname"><a href="UKF__Wind__Estimator_8h.html#a06835c35dd5e31fb53ca34fb4cb481fe">ukf_params_tag::R</a></div><div class="ttdeci">real32_T R[36]</div><div class="ttdef"><b>Definition:</b> <a href="UKF__Wind__Estimator_8h_source.html#l00065">UKF_Wind_Estimator.h:65</a></div></div>
 <div class="ttc" id="UKF__Wind__Estimator_8h_html_a640cf08013047b31f2757192d9f82ee9"><div class="ttname"><a href="UKF__Wind__Estimator_8h.html#a640cf08013047b31f2757192d9f82ee9">DW::Delay1_DSTATE</a></div><div class="ttdeci">real32_T Delay1_DSTATE[7]</div><div class="ttdef"><b>Definition:</b> <a href="UKF__Wind__Estimator_8h_source.html#l00031">UKF_Wind_Estimator.h:31</a></div></div>
@@ -2244,7 +2245,7 @@ $(document).ready(function(){initNavTree('UKF__Wind__Estimator_8c_source.html','
 <div class="ttc" id="UKF__Wind__Estimator_8h_html_a61c996bf85b231478aaffa544d045733"><div class="ttname"><a href="UKF__Wind__Estimator_8h.html#a61c996bf85b231478aaffa544d045733">ExtU::q</a></div><div class="ttdeci">real32_T q[4]</div><div class="ttdef"><b>Definition:</b> <a href="UKF__Wind__Estimator_8h_source.html#l00041">UKF_Wind_Estimator.h:41</a></div></div>
 <div class="ttc" id="rtwtypes_8h_html_a4681caa479b0bdadb029f609112eaa71"><div class="ttname"><a href="rtwtypes_8h.html#a4681caa479b0bdadb029f609112eaa71">real32_T</a></div><div class="ttdeci">float real32_T</div><div class="ttdef"><b>Definition:</b> <a href="rtwtypes_8h_source.html#l00055">rtwtypes.h:55</a></div></div>
 <div class="ttc" id="UKF__Wind__Estimator_8h_html_afdebddd88e20d6299769fe94c33f0314"><div class="ttname"><a href="UKF__Wind__Estimator_8h.html#afdebddd88e20d6299769fe94c33f0314">DW::P_not_empty</a></div><div class="ttdeci">boolean_T P_not_empty</div><div class="ttdef"><b>Definition:</b> <a href="UKF__Wind__Estimator_8h_source.html#l00034">UKF_Wind_Estimator.h:34</a></div></div>
-<div class="ttc" id="dw1000__arduino_8c_html_aa0f1e783d32a3f42823c7fedb8f5b206"><div class="ttname"><a href="dw1000__arduino_8c.html#aa0f1e783d32a3f42823c7fedb8f5b206">scale</a></div><div class="ttdeci">static const float scale[]</div><div class="ttdef"><b>Definition:</b> <a href="dw1000__arduino_8c_source.html#l00207">dw1000_arduino.c:207</a></div></div>
+<div class="ttc" id="dw1000__arduino_8c_html_aa0f1e783d32a3f42823c7fedb8f5b206"><div class="ttname"><a href="dw1000__arduino_8c.html#aa0f1e783d32a3f42823c7fedb8f5b206">scale</a></div><div class="ttdeci">static const float scale[]</div><div class="ttdef"><b>Definition:</b> <a href="dw1000__arduino_8c_source.html#l00200">dw1000_arduino.c:200</a></div></div>
 <div class="ttc" id="UKF__Wind__Estimator_8h_html_ab98fe7919b1814cbcb1d9ce560fafcae"><div class="ttname"><a href="UKF__Wind__Estimator_8h.html#ab98fe7919b1814cbcb1d9ce560fafcae">ukf_init_tag::P0</a></div><div class="ttdeci">real32_T P0[49]</div><div class="ttdef"><b>Definition:</b> <a href="UKF__Wind__Estimator_8h_source.html#l00057">UKF_Wind_Estimator.h:57</a></div></div>
 <div class="ttc" id="UKF__Wind__Estimator_8c_html_a9f980617834e11ccd21d8799b9a54033"><div class="ttname"><a href="UKF__Wind__Estimator_8c.html#a9f980617834e11ccd21d8799b9a54033">UKF_Wind_Estimator_initialize</a></div><div class="ttdeci">void UKF_Wind_Estimator_initialize(void)</div><div class="ttdef"><b>Definition:</b> <a href="UKF__Wind__Estimator_8c_source.html#l02098">UKF_Wind_Estimator.c:2098</a></div></div>
 <div class="ttc" id="UKF__Wind__Estimator_8h_html_structukf__params__tag"><div class="ttname"><a href="UKF__Wind__Estimator_8h.html#structukf__params__tag">ukf_params_tag</a></div><div class="ttdef"><b>Definition:</b> <a href="UKF__Wind__Estimator_8h_source.html#l00063">UKF_Wind_Estimator.h:63</a></div></div>
@@ -2275,7 +2276,7 @@ $(document).ready(function(){initNavTree('UKF__Wind__Estimator_8c_source.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_dcc9af59dc35b42e32db80b18066e136.html">meteo</a></li><li class="navelem"><a class="el" href="dir_52cf33ca6ff4e1b7a3968aed8ced90c8.html">lib_ukf_wind_estimator</a></li><li class="navelem"><a class="el" href="UKF__Wind__Estimator_8c.html">UKF_Wind_Estimator.c</a></li>
-    <li class="footer">Generated on Wed Sep 12 2018 02:02:49 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:02:26 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -137,7 +137,7 @@ Periodic Functions</h2>
 Datalink Functions</h1>
 <p>Whenever the specified datalink message is received, the corresponing handler function is called.</p>
 <ul>
-<li>on message <b>PAYLOAD_FLOAT</b> call <a class="el" href="meteo__france__DAQ_8c.html#ac95d521856a9424097d05f67c635c10e">parse_mf_daq_msg()</a> </li>
+<li>on message <b>PAYLOAD_FLOAT</b> call parse_mf_daq_msg(buf) </li>
 </ul>
 <h1><a class="anchor" id="files"></a>
 Files</h1>
@@ -176,7 +176,7 @@ Raw meteo_france_DAQ.xml file:</h2>
 <div class="line">  &lt;init fun=&quot;init_mf_daq()&quot;/&gt;</div>
 <div class="line">  &lt;periodic fun=&quot;mf_daq_send_state()&quot; freq=&quot;10.&quot;/&gt;</div>
 <div class="line">  &lt;periodic fun=&quot;mf_daq_send_report()&quot; freq=&quot;1.&quot; autorun=&quot;TRUE&quot;/&gt;</div>
-<div class="line">  &lt;datalink message=&quot;PAYLOAD_FLOAT&quot; fun=&quot;parse_mf_daq_msg()&quot;/&gt;</div>
+<div class="line">  &lt;datalink message=&quot;PAYLOAD_FLOAT&quot; fun=&quot;parse_mf_daq_msg(buf)&quot;/&gt;</div>
 <div class="line">  &lt;makefile target=&quot;ap&quot;&gt;</div>
 <div class="line">    &lt;file name=&quot;meteo_france_DAQ.c&quot;/&gt;</div>
 <div class="line">  &lt;/makefile&gt;</div>
@@ -188,7 +188,7 @@ Raw meteo_france_DAQ.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Wed Sep 12 2018 02:03:56 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:03:40 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

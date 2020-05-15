@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -143,10 +143,9 @@ $(document).ready(function(){initNavTree('send__imu__mag__current_8c_source.html
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      &amp;<a class="code" href="imu_8c.html#a77b76ed533bc56f50d714f8958dd26cc">imu</a>.<a class="code" href="imu_8h.html#a01e131dee0a92335d91dabf61c33f627">mag_unscaled</a>.<a class="code" href="group__math__algebra__int.html#aacbde96e85265b05620b8d4a04790911">x</a>,</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      &amp;<a class="code" href="imu_8c.html#a77b76ed533bc56f50d714f8958dd26cc">imu</a>.<a class="code" href="imu_8h.html#a01e131dee0a92335d91dabf61c33f627">mag_unscaled</a>.<a class="code" href="group__math__algebra__int.html#ab617257f46107ac52602d44e6b8f274c">y</a>,</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      &amp;<a class="code" href="imu_8c.html#a77b76ed533bc56f50d714f8958dd26cc">imu</a>.<a class="code" href="imu_8h.html#a01e131dee0a92335d91dabf61c33f627">mag_unscaled</a>.<a class="code" href="group__math__algebra__int.html#a5c1b16eb951fe60e8fe3f00217268c36">z</a>,</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      &amp;<a class="code" href="electrical_8c.html#a935f74638cd658e7dac75915bcb63bde">electrical</a>.<a class="code" href="electrical_8h.html#aad2e82bde4cf4c3851ead15ad1dca550">current</a>);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      &amp;<a class="code" href="electrical_8c.html#a935f74638cd658e7dac75915bcb63bde">electrical</a>.<a class="code" href="electrical_8h.html#a66c55cf656b8005e05d38b78e8a88065">current</a>);</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="ttc" id="electrical_8h_html_aad2e82bde4cf4c3851ead15ad1dca550"><div class="ttname"><a href="electrical_8h.html#aad2e82bde4cf4c3851ead15ad1dca550">Electrical::current</a></div><div class="ttdeci">int32_t current</div><div class="ttdoc">current in milliamps </div><div class="ttdef"><b>Definition:</b> <a href="electrical_8h_source.html#l00049">electrical.h:49</a></div></div>
 <div class="ttc" id="uart_8h_html"><div class="ttname"><a href="uart_8h.html">uart.h</a></div><div class="ttdoc">arch independent UART (Universal Asynchronous Receiver/Transmitter) API </div></div>
 <div class="ttc" id="imu_8c_html_a77b76ed533bc56f50d714f8958dd26cc"><div class="ttname"><a href="imu_8c.html#a77b76ed533bc56f50d714f8958dd26cc">imu</a></div><div class="ttdeci">struct Imu imu</div><div class="ttdoc">global IMU state </div><div class="ttdef"><b>Definition:</b> <a href="imu_8c_source.html#l00108">imu.c:108</a></div></div>
 <div class="ttc" id="imu_8h_html_a01e131dee0a92335d91dabf61c33f627"><div class="ttname"><a href="imu_8h.html#a01e131dee0a92335d91dabf61c33f627">Imu::mag_unscaled</a></div><div class="ttdeci">struct Int32Vect3 mag_unscaled</div><div class="ttdoc">unscaled magnetometer measurements </div><div class="ttdef"><b>Definition:</b> <a href="imu_8h_source.html#l00048">imu.h:48</a></div></div>
@@ -159,14 +158,15 @@ $(document).ready(function(){initNavTree('send__imu__mag__current_8c_source.html
 <div class="ttc" id="group__math__algebra__int_html_aacbde96e85265b05620b8d4a04790911"><div class="ttname"><a href="group__math__algebra__int.html#aacbde96e85265b05620b8d4a04790911">Int32Vect3::x</a></div><div class="ttdeci">int32_t x</div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__int_8h_source.html#l00089">pprz_algebra_int.h:89</a></div></div>
 <div class="ttc" id="send__imu__mag__current_8c_html_a8e74c334733d09f815e94c39b715ef5e"><div class="ttname"><a href="send__imu__mag__current_8c.html#a8e74c334733d09f815e94c39b715ef5e">send_imu_mag_current</a></div><div class="ttdeci">void send_imu_mag_current(void)</div><div class="ttdef"><b>Definition:</b> <a href="send__imu__mag__current_8c_source.html#l00034">send_imu_mag_current.c:34</a></div></div>
 <div class="ttc" id="downlink_8h_html"><div class="ttname"><a href="downlink_8h.html">downlink.h</a></div><div class="ttdoc">Common code for AP and FBW telemetry. </div></div>
-<div class="ttc" id="electrical_8c_html_a935f74638cd658e7dac75915bcb63bde"><div class="ttname"><a href="electrical_8c.html#a935f74638cd658e7dac75915bcb63bde">electrical</a></div><div class="ttdeci">struct Electrical electrical</div><div class="ttdef"><b>Definition:</b> <a href="electrical_8c_source.html#l00065">electrical.c:65</a></div></div>
+<div class="ttc" id="electrical_8c_html_a935f74638cd658e7dac75915bcb63bde"><div class="ttname"><a href="electrical_8c.html#a935f74638cd658e7dac75915bcb63bde">electrical</a></div><div class="ttdeci">struct Electrical electrical</div><div class="ttdef"><b>Definition:</b> <a href="electrical_8c_source.html#l00066">electrical.c:66</a></div></div>
+<div class="ttc" id="electrical_8h_html_a66c55cf656b8005e05d38b78e8a88065"><div class="ttname"><a href="electrical_8h.html#a66c55cf656b8005e05d38b78e8a88065">Electrical::current</a></div><div class="ttdeci">float current</div><div class="ttdoc">current in A </div><div class="ttdef"><b>Definition:</b> <a href="electrical_8h_source.html#l00046">electrical.h:46</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_37564ab831024cf4b25aef13fc1feda3.html">calibration</a></li><li class="navelem"><a class="el" href="send__imu__mag__current_8c.html">send_imu_mag_current.c</a></li>
-    <li class="footer">Generated on Wed Sep 12 2018 02:02:41 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:02:18 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -246,7 +246,7 @@ $(document).ready(function(){initNavTree('printf_8c_source.html','');});
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
 <div class="line"><a name="l00169"></a><span class="lineno"><a class="line" href="group__chprintf.html#gaa4e64308af46238224f455c00a4fcf26">  169</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="group__chprintf.html#gaa4e64308af46238224f455c00a4fcf26">_chvsnprintf</a>(<span class="keywordtype">char</span> *buffer, BaseSequentialStream *chp, <span class="keywordtype">size_t</span> size, <span class="keyword">const</span> <span class="keywordtype">char</span> *fmt, va_list ap)</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;{</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  <span class="keywordtype">char</span> *<a class="code" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, *s, c, filler;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  <span class="keywordtype">char</span> *<a class="code" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, *<a class="code" href="light__scheduler_8c.html#a2dee666f0c1fe072c549ff86b1d0a8ab">s</a>, c, filler;</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  <span class="keywordtype">int</span> i, precision, width;</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;  <span class="keywordtype">bool</span> is_long, left_align, plus_on_float;</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  <span class="keywordtype">long</span> l;</div>
@@ -544,6 +544,7 @@ $(document).ready(function(){initNavTree('printf_8c_source.html','');});
 <div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;}</div>
 <div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;</div>
 <div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;</div>
+<div class="ttc" id="light__scheduler_8c_html_a2dee666f0c1fe072c549ff86b1d0a8ab"><div class="ttname"><a href="light__scheduler_8c.html#a2dee666f0c1fe072c549ff86b1d0a8ab">s</a></div><div class="ttdeci">static uint32_t s</div><div class="ttdef"><b>Definition:</b> <a href="light__scheduler_8c_source.html#l00033">light_scheduler.c:33</a></div></div>
 <div class="ttc" id="printf_8h_html"><div class="ttname"><a href="printf_8h.html">printf.h</a></div><div class="ttdoc">Mini printf-like functionality. </div></div>
 <div class="ttc" id="group__chprintf_html_ga6ab3aab7068a955278da45c63b02bc4d"><div class="ttname"><a href="group__chprintf.html#ga6ab3aab7068a955278da45c63b02bc4d">directchvprintf</a></div><div class="ttdeci">void directchvprintf(BaseSequentialStream *chp, const char *fmt, va_list ap)</div><div class="ttdef"><b>Definition:</b> <a href="printf_8c_source.html#l00367">printf.c:367</a></div></div>
 <div class="ttc" id="group__chprintf_html_gaaa63d28f86feab4f82cf46a5e39c91c7"><div class="ttname"><a href="group__chprintf.html#gaaa63d28f86feab4f82cf46a5e39c91c7">THD_WORKING_AREA</a></div><div class="ttdeci">static THD_WORKING_AREA(waSerialPrint, 512)</div></div>
@@ -573,7 +574,7 @@ $(document).ready(function(){initNavTree('printf_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_cbf4be70f5fb954ea1d2a546dd70b40e.html">loggers</a></li><li class="navelem"><a class="el" href="dir_c27662836f6a804eadd3e3b5df5506a4.html">sdlog_chibios</a></li><li class="navelem"><a class="el" href="printf_8c.html">printf.c</a></li>
-    <li class="footer">Generated on Wed Sep 12 2018 02:02:48 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:02:25 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

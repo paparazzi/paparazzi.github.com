@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -150,7 +150,7 @@ $(document).ready(function(){initNavTree('jpeg_8c_source.html','');});
 <div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="jpeg_8h.html#a64f2550b4c98bfb1f9b4b28bff5b9285">   44</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="jpeg_8c.html#af000b1ba8ec15e4044a5f68aafd42906">jpeg_create_svs_header</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *jpegbuf, <a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> size, <span class="keywordtype">int</span> <a class="code" href="image_8h.html#aa3c13c99294ff126c4c019d5e799253e">w</a>)</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="comment">// SVS Surveyor Jpeg UDP format</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> s = size;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> <a class="code" href="light__scheduler_8c.html#a2dee666f0c1fe072c549ff86b1d0a8ab">s</a> = size;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *<a class="code" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a> = (<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *) &amp; s;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  jpegbuf[0] = <span class="charliteral">&#39;#&#39;</span>;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  jpegbuf[1] = <span class="charliteral">&#39;#&#39;</span>;</div>
@@ -1145,6 +1145,7 @@ $(document).ready(function(){initNavTree('jpeg_8c_source.html','');});
 <div class="ttc" id="types_8h_html_a273cf69d639a59973b6019625df33e30"><div class="ttname"><a href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></div><div class="ttdeci">unsigned short uint16_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00016">types.h:16</a></div></div>
 <div class="ttc" id="jpeg_8c_html_a3d078479dd49a0e509a4c2fabdfecbe2"><div class="ttname"><a href="jpeg_8c.html#a3d078479dd49a0e509a4c2fabdfecbe2">chrominance_dc_size_table</a></div><div class="ttdeci">static const uint16_t chrominance_dc_size_table[]</div><div class="ttdef"><b>Definition:</b> <a href="jpeg_8c_source.html#l00139">jpeg.c:139</a></div></div>
 <div class="ttc" id="jpeg_8c_html_a688433e5f55000ae893f2d5c29097691"><div class="ttname"><a href="jpeg_8c.html#a688433e5f55000ae893f2d5c29097691">jpeg_initialization</a></div><div class="ttdeci">static void jpeg_initialization(JPEG_ENCODER_STRUCTURE *, uint32_t, uint32_t, uint32_t)</div><div class="ttdef"><b>Definition:</b> <a href="jpeg_8c_source.html#l00288">jpeg.c:288</a></div></div>
+<div class="ttc" id="light__scheduler_8c_html_a2dee666f0c1fe072c549ff86b1d0a8ab"><div class="ttname"><a href="light__scheduler_8c.html#a2dee666f0c1fe072c549ff86b1d0a8ab">s</a></div><div class="ttdeci">static uint32_t s</div><div class="ttdef"><b>Definition:</b> <a href="light__scheduler_8c_source.html#l00033">light_scheduler.c:33</a></div></div>
 <div class="ttc" id="image_8h_html_a42e8d87861c2a899bd4090bacf58c9dd"><div class="ttname"><a href="image_8h.html#a42e8d87861c2a899bd4090bacf58c9dd">image_t::buf_size</a></div><div class="ttdeci">uint32_t buf_size</div><div class="ttdoc">The buffer size. </div><div class="ttdef"><b>Definition:</b> <a href="image_8h_source.html#l00052">image.h:52</a></div></div>
 <div class="ttc" id="jpeg_8c_html_a8a9557560cb4c8d4e60756e99b5a5f13"><div class="ttname"><a href="jpeg_8c.html#a8a9557560cb4c8d4e60756e99b5a5f13">MakeTables</a></div><div class="ttdeci">void MakeTables(JPEG_ENCODER_STRUCTURE *jpeg_encoder_structure, int q)</div><div class="ttdef"><b>Definition:</b> <a href="jpeg_8c_source.html#l00369">jpeg.c:369</a></div></div>
 <div class="ttc" id="jpeg_8c_html_afc7271476f6fe399362809d8a1a4191e"><div class="ttname"><a href="jpeg_8c.html#afc7271476f6fe399362809d8a1a4191e">JPEG_ENCODER_STRUCTURE::offset</a></div><div class="ttdeci">uint16_t offset</div><div class="ttdef"><b>Definition:</b> <a href="jpeg_8c_source.html#l00083">jpeg.c:83</a></div></div>
@@ -1227,7 +1228,7 @@ $(document).ready(function(){initNavTree('jpeg_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_304e79c9f5d09ea65a2f55aafb6a6b9d.html">computer_vision</a></li><li class="navelem"><a class="el" href="dir_9adc125244b74c64b95124778e5b932a.html">lib</a></li><li class="navelem"><a class="el" href="dir_7aa332c18e5fa1eaa6661da2f3ea70ae.html">encoding</a></li><li class="navelem"><a class="el" href="jpeg_8c.html">jpeg.c</a></li>
-    <li class="footer">Generated on Wed Sep 12 2018 02:02:42 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:02:19 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

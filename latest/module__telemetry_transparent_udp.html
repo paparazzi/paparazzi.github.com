@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -170,6 +170,8 @@ Source Files</h2>
 <li>/fbw_downlink.c</li>
 <li>/rotorcraft_datalink.c</li>
 <li>/rotorcraft_telemetry.c</li>
+<li>/rover_datalink.c</li>
+<li>/rover_telemetry.c</li>
 </ul>
 <h2><a class="anchor" id="module_xml__telemetry_transparent_udp"></a>
 Raw telemetry_transparent_udp.xml file:</h2>
@@ -228,6 +230,10 @@ Raw telemetry_transparent_udp.xml file:</h2>
 <div class="line">    &lt;file name=&quot;rotorcraft_datalink.c&quot; dir=&quot;$(SRC_FIRMWARE)&quot;/&gt;</div>
 <div class="line">    &lt;file name=&quot;rotorcraft_telemetry.c&quot; dir=&quot;$(SRC_FIRMWARE)&quot;/&gt;</div>
 <div class="line">  &lt;/makefile&gt;</div>
+<div class="line">  &lt;makefile target=&quot;ap&quot; firmware=&quot;rover&quot;&gt;</div>
+<div class="line">    &lt;file name=&quot;rover_datalink.c&quot; dir=&quot;$(SRC_FIRMWARE)&quot;/&gt;</div>
+<div class="line">    &lt;file name=&quot;rover_telemetry.c&quot; dir=&quot;$(SRC_FIRMWARE)&quot;/&gt;</div>
+<div class="line">  &lt;/makefile&gt;</div>
 <div class="line">&lt;/module&gt;</div>
 <div class="line"></div>
 </div><!-- fragment --> </div></div><!-- contents -->
@@ -236,7 +242,7 @@ Raw telemetry_transparent_udp.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Wed Sep 12 2018 02:03:56 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:03:40 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

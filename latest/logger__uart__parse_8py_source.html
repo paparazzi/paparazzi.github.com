@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -109,21 +109,23 @@ $(document).ready(function(){initNavTree('logger__uart__parse_8py_source.html','
 <div class="title">logger_uart_parse.py</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="logger__uart__parse_8py.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno"><a class="line" href="namespacelogger__uart__parse.html">    1</a></span>&#160;<span class="keyword">import</span> struct</div>
+<a href="logger__uart__parse_8py.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno"><a class="line" href="namespacelogger__uart__parse.html">    1</a></span>&#160;<span class="comment">#! /usr/bin/env python</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;with open(<span class="stringliteral">&#39;uart_log.bin&#39;</span>, <span class="stringliteral">&#39;rb&#39;</span>) <span class="keyword">as</span> data:</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;    with open(<span class="stringliteral">&#39;converted.csv&#39;</span>, <span class="stringliteral">&#39;w&#39;</span>) <span class="keyword">as</span> out:</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;        out.write(<span class="stringliteral">&quot;sync,nr,gyro,,,accelero,,,phi/100,theta/100,psi/100\n&quot;</span>)</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;        <span class="keywordflow">while</span> (1):</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;            sync, nr, g1, g2, g3, s1, s2, s3, a1, a2, a3, crc = struct.unpack(<span class="stringliteral">&#39;&lt;H10hB&#39;</span>, data.read(23))</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;            out.write(hex(sync) + <span class="stringliteral">&quot;,&quot;</span> + str(nr) + <span class="stringliteral">&quot;,&quot;</span> + str(g1) + <span class="stringliteral">&quot;,&quot;</span> + str(g2) + <span class="stringliteral">&quot;,&quot;</span> + str(g3) + <span class="stringliteral">&quot;,&quot;</span> + str(s1) + <span class="stringliteral">&quot;,&quot;</span> + str(s2) + <span class="stringliteral">&quot;,&quot;</span> + str(s3) + <span class="stringliteral">&quot;,&quot;</span> + str(a1) + <span class="stringliteral">&quot;,&quot;</span> + str(a2) + <span class="stringliteral">&quot;,&quot;</span> + str(a3) + <span class="stringliteral">&quot;\n&quot;</span>)</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">import</span> struct</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;with open(<span class="stringliteral">&#39;uart_log.bin&#39;</span>, <span class="stringliteral">&#39;rb&#39;</span>) <span class="keyword">as</span> data:</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    with open(<span class="stringliteral">&#39;converted.csv&#39;</span>, <span class="stringliteral">&#39;w&#39;</span>) <span class="keyword">as</span> out:</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;        out.write(<span class="stringliteral">&quot;sync,nr,gyro,,,accelero,,,phi/100,theta/100,psi/100\n&quot;</span>)</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;        <span class="keywordflow">while</span> (1):</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;            sync, nr, g1, g2, g3, s1, s2, s3, a1, a2, a3, crc = struct.unpack(<span class="stringliteral">&#39;&lt;H10hB&#39;</span>, data.read(23))</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;            out.write(hex(sync) + <span class="stringliteral">&quot;,&quot;</span> + str(nr) + <span class="stringliteral">&quot;,&quot;</span> + str(g1) + <span class="stringliteral">&quot;,&quot;</span> + str(g2) + <span class="stringliteral">&quot;,&quot;</span> + str(g3) + <span class="stringliteral">&quot;,&quot;</span> + str(s1) + <span class="stringliteral">&quot;,&quot;</span> + str(s2) + <span class="stringliteral">&quot;,&quot;</span> + str(s3) + <span class="stringliteral">&quot;,&quot;</span> + str(a1) + <span class="stringliteral">&quot;,&quot;</span> + str(a2) + <span class="stringliteral">&quot;,&quot;</span> + str(a3) + <span class="stringliteral">&quot;\n&quot;</span>)</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_cbf4be70f5fb954ea1d2a546dd70b40e.html">loggers</a></li><li class="navelem"><a class="el" href="logger__uart__parse_8py.html">logger_uart_parse.py</a></li>
-    <li class="footer">Generated on Wed Sep 12 2018 02:02:48 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:02:25 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

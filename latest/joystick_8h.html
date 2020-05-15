@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>Paparazzi UAS: sw/airborne/firmwares/fixedwing/joystick.h File Reference</title>
+<title>Paparazzi UAS: sw/airborne/modules/joystick/joystick.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -106,29 +106,161 @@ $(document).ready(function(){initNavTree('joystick_8h.html','');});
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">joystick.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
+<div class="textblock"><code>#include &quot;std.h&quot;</code><br />
+</div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for joystick.h:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="joystick_8h__incl.png" border="0" usemap="#sw_2airborne_2modules_2joystick_2joystick_8h" alt=""/></div>
+<map name="sw_2airborne_2modules_2joystick_2joystick_8h" id="sw_2airborne_2modules_2joystick_2joystick_8h">
+</map>
+</div>
+</div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="joystick_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2modules_2joystick_2joystick_8hdep" alt=""/></div>
+<map name="sw_2airborne_2modules_2joystick_2joystick_8hdep" id="sw_2airborne_2modules_2joystick_2joystick_8hdep">
+<area shape="rect" id="node2" href="joystick_8c.html" title="sw/airborne/modules\l/joystick/joystick.c" alt="" coords="5,95,160,136"/></map>
+</div>
+</div>
 <p><a href="joystick_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:structJoystick"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="joystick_8h.html#structJoystick">Joystick</a></td></tr>
+<tr class="memdesc:structJoystick"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="joystick_8h.html#structJoystick" title="Joystick structure. ">Joystick</a> structure.  <a href="joystick_8h.html#structJoystick">More...</a><br /></td></tr>
+<tr class="separator:structJoystick"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a6a02aa5c938b511ffde7a43e8db031c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="joystick_8h.html#a6a02aa5c938b511ffde7a43e8db031c8">joystick_init</a> (void)</td></tr>
+<tr class="memdesc:a6a02aa5c938b511ffde7a43e8db031c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init function.  <a href="#a6a02aa5c938b511ffde7a43e8db031c8">More...</a><br /></td></tr>
+<tr class="separator:a6a02aa5c938b511ffde7a43e8db031c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a573cdbbbb3c9b0f6be055bb99fc5b978"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="joystick_8h.html#a573cdbbbb3c9b0f6be055bb99fc5b978">joystick_parse</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf)</td></tr>
+<tr class="memdesc:a573cdbbbb3c9b0f6be055bb99fc5b978"><td class="mdescLeft">&#160;</td><td class="mdescRight">JOYSTICK_RAW message parser if valid, send a JOYSTICK ABI message.  <a href="#a573cdbbbb3c9b0f6be055bb99fc5b978">More...</a><br /></td></tr>
+<tr class="separator:a573cdbbbb3c9b0f6be055bb99fc5b978"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a66c62dd4288ab52a75e6e7a524900ef3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="joystick_8h.html#a66c62dd4288ab52a75e6e7a524900ef3">joystick_block</a></td></tr>
-<tr class="separator:a66c62dd4288ab52a75e6e7a524900ef3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23b18d268c4c1956a1f97b1949412023"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="joystick_8h.html#structJoystick">Joystick</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="joystick_8h.html#a23b18d268c4c1956a1f97b1949412023">joystick</a></td></tr>
+<tr class="separator:a23b18d268c4c1956a1f97b1949412023"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Variable Documentation</h2>
-<a class="anchor" id="a66c62dd4288ab52a75e6e7a524900ef3"></a>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><dl class="section author"><dt>Author</dt><dd>Gautier Hattenberger Handle JOYSTICK_RAW messages </dd></dl>
+
+<p>Definition in file <a class="el" href="joystick_8h_source.html">joystick.h</a>.</p>
+</div><hr/><h2 class="groupheader">Data Structure Documentation</h2>
+<a name="structJoystick" id="structJoystick"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> joystick_block</td>
+          <td class="memname">struct Joystick</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<div class="textblock"><p><a class="el" href="joystick_8h.html#structJoystick" title="Joystick structure. ">Joystick</a> structure. </p>
+
+<p>Definition at line <a class="el" href="joystick_8h_source.html#l00034">34</a> of file <a class="el" href="joystick_8h_source.html">joystick.h</a>.</p>
+</div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a8d9fa8066faf2a00111d1d755ad77039"></a><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a></td>
+<td class="fieldname">
+pitch</td>
+<td class="fielddoc">
+pitch command </td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a37d738c05aca156b3f7b12fc5a3a2b4c"></a><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a></td>
+<td class="fieldname">
+roll</td>
+<td class="fielddoc">
+roll command </td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a74e6b46c490d7f83a315fdf0cbed5e98"></a><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a></td>
+<td class="fieldname">
+throttle</td>
+<td class="fielddoc">
+throttle command </td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a96ef4a24cdb1f844b2d263536e6283a8"></a><a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a></td>
+<td class="fieldname">
+yaw</td>
+<td class="fielddoc">
+yaw command </td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a6a02aa5c938b511ffde7a43e8db031c8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void joystick_init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Init function. </p>
+
+<p>Definition at line <a class="el" href="joystick_8c_source.html#l00034">34</a> of file <a class="el" href="joystick_8c_source.html">joystick.c</a>.</p>
+
+<p>References <a class="el" href="joystick_8c_source.html#l00032">joystick</a>, <a class="el" href="joystick_8h_source.html#l00036">Joystick::pitch</a>, <a class="el" href="joystick_8h_source.html#l00035">Joystick::roll</a>, <a class="el" href="joystick_8h_source.html#l00038">Joystick::throttle</a>, and <a class="el" href="joystick_8h_source.html#l00037">Joystick::yaw</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a573cdbbbb3c9b0f6be055bb99fc5b978"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void joystick_parse </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
+          <td class="paramname"><em>buf</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>JOYSTICK_RAW message parser if valid, send a JOYSTICK ABI message. </p>
+
+<p>Definition at line <a class="el" href="joystick_8c_source.html#l00042">42</a> of file <a class="el" href="joystick_8c_source.html">joystick.c</a>.</p>
+
+<p>References <a class="el" href="joystick_8c_source.html#l00032">joystick</a>, <a class="el" href="abi__sender__ids_8h_source.html#l00479">JOYSTICK_ID</a>, <a class="el" href="joystick_8h_source.html#l00036">Joystick::pitch</a>, <a class="el" href="joystick_8h_source.html#l00035">Joystick::roll</a>, <a class="el" href="joystick_8h_source.html#l00038">Joystick::throttle</a>, and <a class="el" href="joystick_8h_source.html#l00037">Joystick::yaw</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a class="anchor" id="a23b18d268c4c1956a1f97b1949412023"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="joystick_8h.html#structJoystick">Joystick</a> joystick</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="joystick_8c_source.html#l00032">32</a> of file <a class="el" href="joystick_8c_source.html">joystick.c</a>.</p>
+
+<p>Referenced by <a class="el" href="joystick_8c_source.html#l00034">joystick_init()</a>, and <a class="el" href="joystick_8c_source.html#l00042">joystick_parse()</a>.</p>
 
 </div>
 </div>
@@ -137,8 +269,8 @@ Variables</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_cb1b347b64b61ba7f369ccfe68448b26.html">fixedwing</a></li><li class="navelem"><a class="el" href="joystick_8h.html">joystick.h</a></li>
-    <li class="footer">Generated on Wed Sep 12 2018 02:03:17 for Paparazzi UAS by
+    <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_bd315249509f9387de8b396532230b31.html">joystick</a></li><li class="navelem"><a class="el" href="joystick_8h.html">joystick.h</a></li>
+    <li class="footer">Generated on Fri May 15 2020 04:03:17 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

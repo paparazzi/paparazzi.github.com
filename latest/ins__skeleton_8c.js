@@ -5,7 +5,7 @@ var ins__skeleton_8c =
     [ "INS_MODULE_IMU_ID", "ins__skeleton_8c.html#acf6b847616efc2341aca5f1703eed9f8", null ],
     [ "USE_INS_NAV_INIT", "ins__skeleton_8c.html#a54f7a3292fefa355dd014ce5bc2df65a", null ],
     [ "accel_cb", "ins__skeleton_8c.html#aacd6b1869f263f90a6f1fbe777a87793", null ],
-    [ "baro_cb", "ins__skeleton_8c.html#a7fdc16072298b2db800864d08d72945a", null ],
+    [ "baro_cb", "ins__skeleton_8c.html#a92209191a3ecc53fc4adaafd0fe82933", null ],
     [ "body_to_imu_cb", "ins__skeleton_8c.html#ab5f6300c213088a4ea0598baafb5e736", null ],
     [ "gps_cb", "ins__skeleton_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8", null ],
     [ "ins_module_init", "ins__skeleton_8c.html#aa56482e32e97c2e358ca2cdd9293f5c0", null ],

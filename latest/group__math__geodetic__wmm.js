@@ -16,7 +16,7 @@ var group__math__geodetic__wmm =
     [ "NMAX_2", "group__math__geodetic__wmm.html#ga27c719d328a05f8348ccf8d1961565d0", null ],
     [ "SECS_IN_YEAR", "group__math__geodetic__wmm.html#gaedaabe5005511ea2e021e6dda4712276", null ],
     [ "WEEKS_IN_YEAR", "group__math__geodetic__wmm.html#gac2bdc89e52c860bf7f849b81fe4e5db2", null ],
-    [ "WMM2015_FRAC", "group__math__geodetic__wmm.html#gaff1ae2e3ec5aff1f63189e3ce6a9e6dc", null ],
+    [ "WMM2020_FRAC", "group__math__geodetic__wmm.html#ga2e3e98dc4c9e45cb8f87715d22080e91", null ],
     [ "YR_MAX", "group__math__geodetic__wmm.html#gac1e70266a00e37b2aafa6fcde7de47e3", null ],
     [ "YR_MIN", "group__math__geodetic__wmm.html#ga2d093208ab0191f4e8d97959f47868e1", null ],
     [ "extrapsh", "group__math__geodetic__wmm.html#ga57f76a5e5afe004c3b985f11b4f1b13e", null ],

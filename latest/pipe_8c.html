@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -133,9 +133,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a40e90c4a2dde2443236abd52917eec9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pipe_8c.html#a40e90c4a2dde2443236abd52917eec9c">pipe_periph_init</a> (struct <a class="el" href="pipe_8h.html#structpipe__periph">pipe_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, char *read_name, char *write_name)</td></tr>
 <tr class="memdesc:a40e90c4a2dde2443236abd52917eec9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the PIPE peripheral.  <a href="#a40e90c4a2dde2443236abd52917eec9c">More...</a><br /></td></tr>
 <tr class="separator:a40e90c4a2dde2443236abd52917eec9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec8a5a0556776cfc31af4255d5b72559"><td class="memItemLeft" align="right" valign="top">bool WEAK&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pipe_8c.html#aec8a5a0556776cfc31af4255d5b72559">pipe_check_free_space</a> (struct <a class="el" href="pipe_8h.html#structpipe__periph">pipe_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, long *<a class="el" href="bat__voltage__ardrone2_8c.html#a6f8059414f0228f0256115e024eeed4b">fd</a>, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> len)</td></tr>
-<tr class="memdesc:aec8a5a0556776cfc31af4255d5b72559"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if there is enough free space in the transmit buffer.  <a href="#aec8a5a0556776cfc31af4255d5b72559">More...</a><br /></td></tr>
-<tr class="separator:aec8a5a0556776cfc31af4255d5b72559"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a684edf11ecce1ddc81c2f502d0157fb0"><td class="memItemLeft" align="right" valign="top">int WEAK&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pipe_8c.html#a684edf11ecce1ddc81c2f502d0157fb0">pipe_check_free_space</a> (struct <a class="el" href="pipe_8h.html#structpipe__periph">pipe_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, long *<a class="el" href="bat__voltage__ardrone2_8c.html#a6f8059414f0228f0256115e024eeed4b">fd</a>, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> len)</td></tr>
+<tr class="memdesc:a684edf11ecce1ddc81c2f502d0157fb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if there is enough free space in the transmit buffer.  <a href="#a684edf11ecce1ddc81c2f502d0157fb0">More...</a><br /></td></tr>
+<tr class="separator:a684edf11ecce1ddc81c2f502d0157fb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a1e1d8557ee5800f8902cdc16d6c2cb"><td class="memItemLeft" align="right" valign="top">void WEAK&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pipe_8c.html#a0a1e1d8557ee5800f8902cdc16d6c2cb">pipe_put_byte</a> (struct <a class="el" href="pipe_8h.html#structpipe__periph">pipe_periph</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, long <a class="el" href="bat__voltage__ardrone2_8c.html#a6f8059414f0228f0256115e024eeed4b">fd</a>, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> data)</td></tr>
 <tr class="memdesc:a0a1e1d8557ee5800f8902cdc16d6c2cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add one data byte to the tx buffer.  <a href="#a0a1e1d8557ee5800f8902cdc16d6c2cb">More...</a><br /></td></tr>
 <tr class="separator:a0a1e1d8557ee5800f8902cdc16d6c2cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -147,12 +147,12 @@ Functions</h2></td></tr>
 
 <p>Definition in file <a class="el" href="pipe_8c_source.html">pipe.c</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="aec8a5a0556776cfc31af4255d5b72559"></a>
+<a class="anchor" id="a684edf11ecce1ddc81c2f502d0157fb0"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool WEAK pipe_check_free_space </td>
+          <td class="memname">int WEAK pipe_check_free_space </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="pipe_8h.html#structpipe__periph">pipe_periph</a> *&#160;</td>
           <td class="paramname"><em>p</em>, </td>
@@ -185,7 +185,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>TRUE if enough space for len bytes </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>number of bytes available or 0 if not enough </dd></dl>
 
 <p>Definition at line <a class="el" href="pipe_8c_source.html#l00094">94</a> of file <a class="el" href="pipe_8c_source.html">pipe.c</a>.</p>
 
@@ -198,8 +198,8 @@ Functions</h2></td></tr>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="pipe_8c_aec8a5a0556776cfc31af4255d5b72559_icgraph.png" border="0" usemap="#pipe_8c_aec8a5a0556776cfc31af4255d5b72559_icgraph" alt=""/></div>
-<map name="pipe_8c_aec8a5a0556776cfc31af4255d5b72559_icgraph" id="pipe_8c_aec8a5a0556776cfc31af4255d5b72559_icgraph">
+<div class="center"><img src="pipe_8c_a684edf11ecce1ddc81c2f502d0157fb0_icgraph.png" border="0" usemap="#pipe_8c_a684edf11ecce1ddc81c2f502d0157fb0_icgraph" alt=""/></div>
+<map name="pipe_8c_a684edf11ecce1ddc81c2f502d0157fb0_icgraph" id="pipe_8c_a684edf11ecce1ddc81c2f502d0157fb0_icgraph">
 <area shape="rect" id="node2" href="pipe_8h.html#a5f5f9bef9c717900a74e9cfa367d70b4" title="Initialize the PIPE peripheral. " alt="" coords="224,5,347,32"/></map>
 </div>
 </p>
@@ -240,7 +240,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="pipe_8c_source.html#l00072">72</a> of file <a class="el" href="pipe_8c_source.html">pipe.c</a>.</p>
 
-<p>References <a class="el" href="pipe_8h_source.html#l00047">pipe_periph::device</a>, <a class="el" href="linux_2mcu__periph_2pipe__arch_8c_source.html#l00076">pipe_arch_periph_init()</a>, <a class="el" href="linux_2mcu__periph_2pipe__arch_8c_source.html#l00104">pipe_char_available()</a>, <a class="el" href="pipe_8c_source.html#l00094">pipe_check_free_space()</a>, <a class="el" href="linux_2mcu__periph_2pipe__arch_8c_source.html#l00120">pipe_getch()</a>, <a class="el" href="pipe_8c_source.html#l00114">pipe_put_buffer()</a>, <a class="el" href="pipe_8c_source.html#l00104">pipe_put_byte()</a>, <a class="el" href="linux_2mcu__periph_2pipe__arch_8c_source.html#l00160">pipe_send_message()</a>, <a class="el" href="pipe_8h_source.html#l00039">pipe_periph::rx_extract_idx</a>, <a class="el" href="pipe_8h_source.html#l00038">pipe_periph::rx_insert_idx</a>, and <a class="el" href="pipe_8h_source.html#l00042">pipe_periph::tx_insert_idx</a>.</p>
+<p>References <a class="el" href="pipe_8h_source.html#l00047">pipe_periph::device</a>, <a class="el" href="linux_2mcu__periph_2pipe__arch_8c_source.html#l00076">pipe_arch_periph_init()</a>, <a class="el" href="linux_2mcu__periph_2pipe__arch_8c_source.html#l00104">pipe_char_available()</a>, <a class="el" href="pipe_8c_source.html#l00094">pipe_check_free_space()</a>, <a class="el" href="linux_2mcu__periph_2pipe__arch_8c_source.html#l00120">pipe_getch()</a>, <a class="el" href="pipe_8c_source.html#l00115">pipe_put_buffer()</a>, <a class="el" href="pipe_8c_source.html#l00105">pipe_put_byte()</a>, <a class="el" href="linux_2mcu__periph_2pipe__arch_8c_source.html#l00160">pipe_send_message()</a>, <a class="el" href="pipe_8h_source.html#l00039">pipe_periph::rx_extract_idx</a>, <a class="el" href="pipe_8h_source.html#l00038">pipe_periph::rx_insert_idx</a>, and <a class="el" href="pipe_8h_source.html#l00042">pipe_periph::tx_insert_idx</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -249,7 +249,7 @@ Functions</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="pipe_8c_a40e90c4a2dde2443236abd52917eec9c_cgraph.png" border="0" usemap="#pipe_8c_a40e90c4a2dde2443236abd52917eec9c_cgraph" alt=""/></div>
 <map name="pipe_8c_a40e90c4a2dde2443236abd52917eec9c_cgraph" id="pipe_8c_a40e90c4a2dde2443236abd52917eec9c_cgraph">
-<area shape="rect" id="node2" href="linux_2mcu__periph_2pipe__arch_8c.html#a9a552cafb117e80a56acc9e51e4f1def" title="Initialize the PIPE peripheral. " alt="" coords="183,5,340,32"/><area shape="rect" id="node3" href="linux_2mcu__periph_2pipe__arch_8c.html#af31a0e96cc21ae4e2e4a2b5cf63c4316" title="Get number of bytes available in receive buffer. " alt="" coords="188,56,335,83"/><area shape="rect" id="node4" href="pipe_8c.html#aec8a5a0556776cfc31af4255d5b72559" title="Check if there is enough free space in the transmit buffer. " alt="" coords="176,107,347,133"/><area shape="rect" id="node5" href="linux_2mcu__periph_2pipe__arch_8c.html#a97d6c27da74c8a17a29d7148fa60f0b1" title="Get the last character from the receive buffer. " alt="" coords="215,157,307,184"/><area shape="rect" id="node6" href="pipe_8c.html#a626ccada048c39838bef85aa05447378" title="pipe_put_buffer" alt="" coords="201,208,322,235"/><area shape="rect" id="node7" href="pipe_8c.html#a0a1e1d8557ee5800f8902cdc16d6c2cb" title="Add one data byte to the tx buffer. " alt="" coords="205,259,317,285"/><area shape="rect" id="node8" href="linux_2mcu__periph_2pipe__arch_8c.html#ad32c37b53788cd4215e6bdec33d4c631" title="Send a message. " alt="" coords="185,309,338,336"/></map>
+<area shape="rect" id="node2" href="linux_2mcu__periph_2pipe__arch_8c.html#a9a552cafb117e80a56acc9e51e4f1def" title="Initialize the PIPE peripheral. " alt="" coords="183,5,340,32"/><area shape="rect" id="node3" href="linux_2mcu__periph_2pipe__arch_8c.html#a9321cb9d258dc7cf5d63c1a826cb4da8" title="Get number of bytes available in receive buffer. " alt="" coords="188,56,335,83"/><area shape="rect" id="node4" href="pipe_8c.html#a684edf11ecce1ddc81c2f502d0157fb0" title="Check if there is enough free space in the transmit buffer. " alt="" coords="176,107,347,133"/><area shape="rect" id="node5" href="linux_2mcu__periph_2pipe__arch_8c.html#a97d6c27da74c8a17a29d7148fa60f0b1" title="Get the last character from the receive buffer. " alt="" coords="215,157,307,184"/><area shape="rect" id="node6" href="pipe_8c.html#a626ccada048c39838bef85aa05447378" title="pipe_put_buffer" alt="" coords="201,208,322,235"/><area shape="rect" id="node7" href="pipe_8c.html#a0a1e1d8557ee5800f8902cdc16d6c2cb" title="Add one data byte to the tx buffer. " alt="" coords="205,259,317,285"/><area shape="rect" id="node8" href="linux_2mcu__periph_2pipe__arch_8c.html#ad32c37b53788cd4215e6bdec33d4c631" title="Send a message. " alt="" coords="185,309,338,336"/></map>
 </div>
 </p>
 
@@ -291,7 +291,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pipe_8c_source.html#l00114">114</a> of file <a class="el" href="pipe_8c_source.html">pipe.c</a>.</p>
+<p>Definition at line <a class="el" href="pipe_8c_source.html#l00115">115</a> of file <a class="el" href="pipe_8c_source.html">pipe.c</a>.</p>
 
 <p>References <a class="el" href="linux_2mcu__periph_2pipe__arch_8h_source.html#l00034">PIPE_TX_BUFFER_SIZE</a>, <a class="el" href="pipe_8h_source.html#l00041">pipe_periph::tx_buf</a>, and <a class="el" href="pipe_8h_source.html#l00042">pipe_periph::tx_insert_idx</a>.</p>
 
@@ -349,7 +349,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="pipe_8c_source.html#l00104">104</a> of file <a class="el" href="pipe_8c_source.html">pipe.c</a>.</p>
+<p>Definition at line <a class="el" href="pipe_8c_source.html#l00105">105</a> of file <a class="el" href="pipe_8c_source.html">pipe.c</a>.</p>
 
 <p>References <a class="el" href="linux_2mcu__periph_2pipe__arch_8h_source.html#l00034">PIPE_TX_BUFFER_SIZE</a>, <a class="el" href="pipe_8h_source.html#l00041">pipe_periph::tx_buf</a>, and <a class="el" href="pipe_8h_source.html#l00042">pipe_periph::tx_insert_idx</a>.</p>
 
@@ -374,7 +374,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_1ca43f6a116d741d80fb1d0555a2b198.html">mcu_periph</a></li><li class="navelem"><a class="el" href="pipe_8c.html">pipe.c</a></li>
-    <li class="footer">Generated on Wed Sep 12 2018 02:03:24 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:03:05 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

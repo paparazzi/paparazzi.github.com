@@ -11,7 +11,7 @@ var ins__mekf__wind__wrapper_8c =
     [ "accel_cb", "ins__mekf__wind__wrapper_8c.html#aacd6b1869f263f90a6f1fbe777a87793", null ],
     [ "airspeed_cb", "ins__mekf__wind__wrapper_8c.html#a01f1ac7a540ba839e6b5773c93418970", null ],
     [ "aligner_cb", "ins__mekf__wind__wrapper_8c.html#abb508f672663ab1485eae5b9e1799f21", null ],
-    [ "baro_cb", "ins__mekf__wind__wrapper_8c.html#a7fdc16072298b2db800864d08d72945a", null ],
+    [ "baro_cb", "ins__mekf__wind__wrapper_8c.html#a92209191a3ecc53fc4adaafd0fe82933", null ],
     [ "body_to_imu_cb", "ins__mekf__wind__wrapper_8c.html#aebafed20ba923acb949adb335ab7a793", null ],
     [ "geo_mag_cb", "ins__mekf__wind__wrapper_8c.html#ab4e8744a32b22245ff10f367b2b7c6b3", null ],
     [ "gps_cb", "ins__mekf__wind__wrapper_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8", null ],

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -138,7 +138,7 @@ $(document).ready(function(){initNavTree('uart__print_8h.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:af958f96d5fb8818724ccb9454d973113"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uart__print_8h.html#af958f96d5fb8818724ccb9454d973113">_PrintString</a>(out_fun, s)</td></tr>
+<tr class="memitem:af958f96d5fb8818724ccb9454d973113"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uart__print_8h.html#af958f96d5fb8818724ccb9454d973113">_PrintString</a>(out_fun, <a class="el" href="light__scheduler_8c.html#a2dee666f0c1fe072c549ff86b1d0a8ab">s</a>)</td></tr>
 <tr class="separator:af958f96d5fb8818724ccb9454d973113"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff81ddae4ecb821b8988bc67f85c9bfb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uart__print_8h.html#aff81ddae4ecb821b8988bc67f85c9bfb">_PrintHex</a>(out_fun, c)</td></tr>
 <tr class="separator:aff81ddae4ecb821b8988bc67f85c9bfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -150,18 +150,18 @@ Macros</h2></td></tr>
 <tr class="separator:a78cf9d2602675e25cd30b748b0db6815"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a377e6addcadb04d6b444b87b4f0a46a8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uart__print_8h.html#a377e6addcadb04d6b444b87b4f0a46a8">UsbSPrintHex16</a>(c)&#160;&#160;&#160;<a class="el" href="uart__print_8h.html#a365f5d82398aad5b7adbafa68e59017a">_PrintHex16</a>(<a class="el" href="usb__serial_8h.html#a19a213d00cf249a4d4d60dbf1a9907d3">VCOM_putchar</a>, c)</td></tr>
 <tr class="separator:a377e6addcadb04d6b444b87b4f0a46a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51d92bac330e91e4fb2273c92c345b5a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uart__print_8h.html#a51d92bac330e91e4fb2273c92c345b5a">UsbSPrintString</a>(s)&#160;&#160;&#160;<a class="el" href="uart__print_8h.html#af958f96d5fb8818724ccb9454d973113">_PrintString</a>(<a class="el" href="usb__serial_8h.html#a19a213d00cf249a4d4d60dbf1a9907d3">VCOM_putchar</a>, s)</td></tr>
+<tr class="memitem:a51d92bac330e91e4fb2273c92c345b5a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uart__print_8h.html#a51d92bac330e91e4fb2273c92c345b5a">UsbSPrintString</a>(<a class="el" href="light__scheduler_8c.html#a2dee666f0c1fe072c549ff86b1d0a8ab">s</a>)&#160;&#160;&#160;<a class="el" href="uart__print_8h.html#af958f96d5fb8818724ccb9454d973113">_PrintString</a>(<a class="el" href="usb__serial_8h.html#a19a213d00cf249a4d4d60dbf1a9907d3">VCOM_putchar</a>, <a class="el" href="light__scheduler_8c.html#a2dee666f0c1fe072c549ff86b1d0a8ab">s</a>)</td></tr>
 <tr class="separator:a51d92bac330e91e4fb2273c92c345b5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a62d9500eeb38ea57c6beab7e759e1f9d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uart__print_8h.html#a62d9500eeb38ea57c6beab7e759e1f9d">print_string</a> (struct link_device *<a class="el" href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a>, char *s)</td></tr>
+<tr class="memitem:a62d9500eeb38ea57c6beab7e759e1f9d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uart__print_8h.html#a62d9500eeb38ea57c6beab7e759e1f9d">print_string</a> (struct link_device *<a class="el" href="e__identification__fr_8c.html#aebd4a92b0e1e5a4d507f1674f09fcc2b">dev</a>, char *<a class="el" href="light__scheduler_8c.html#a2dee666f0c1fe072c549ff86b1d0a8ab">s</a>)</td></tr>
 <tr class="separator:a62d9500eeb38ea57c6beab7e759e1f9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a998b602b98b830cacf55324653d0f6a2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uart__print_8h.html#a998b602b98b830cacf55324653d0f6a2">print_hex</a> (struct link_device *<a class="el" href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a>, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> c)</td></tr>
+<tr class="memitem:a998b602b98b830cacf55324653d0f6a2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uart__print_8h.html#a998b602b98b830cacf55324653d0f6a2">print_hex</a> (struct link_device *<a class="el" href="e__identification__fr_8c.html#aebd4a92b0e1e5a4d507f1674f09fcc2b">dev</a>, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> c)</td></tr>
 <tr class="separator:a998b602b98b830cacf55324653d0f6a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f025990adb319673a9ead808c8ff478"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uart__print_8h.html#a2f025990adb319673a9ead808c8ff478">print_hex16</a> (struct link_device *<a class="el" href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a>, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> c)</td></tr>
+<tr class="memitem:a2f025990adb319673a9ead808c8ff478"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uart__print_8h.html#a2f025990adb319673a9ead808c8ff478">print_hex16</a> (struct link_device *<a class="el" href="e__identification__fr_8c.html#aebd4a92b0e1e5a4d507f1674f09fcc2b">dev</a>, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> c)</td></tr>
 <tr class="separator:a2f025990adb319673a9ead808c8ff478"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ed064767a1d6d97a2f159cc86fcb4d8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uart__print_8h.html#a2ed064767a1d6d97a2f159cc86fcb4d8">print_hex32</a> (struct link_device *<a class="el" href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a>, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> c)</td></tr>
+<tr class="memitem:a2ed064767a1d6d97a2f159cc86fcb4d8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uart__print_8h.html#a2ed064767a1d6d97a2f159cc86fcb4d8">print_hex32</a> (struct link_device *<a class="el" href="e__identification__fr_8c.html#aebd4a92b0e1e5a4d507f1674f09fcc2b">dev</a>, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> c)</td></tr>
 <tr class="separator:a2ed064767a1d6d97a2f159cc86fcb4d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -288,7 +288,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">s&#160;</td>
+          <td class="paramname"><a class="el" href="light__scheduler_8c.html#a2dee666f0c1fe072c549ff86b1d0a8ab">s</a>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -299,11 +299,12 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">{  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">\</a></div>
 <div class="line"><a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">    uint8_t</a> i = 0;                  \</div>
-<div class="line">    while (s[i]) {                  \</div>
-<div class="line">      out_fun(s[i]);                \</div>
+<div class="line">    while (<a class="code" href="light__scheduler_8c.html#a2dee666f0c1fe072c549ff86b1d0a8ab">s</a>[i]) {                  \</div>
+<div class="line">      out_fun(<a class="code" href="light__scheduler_8c.html#a2dee666f0c1fe072c549ff86b1d0a8ab">s</a>[i]);                \</div>
 <div class="line">      i++;                          \</div>
 <div class="line">    }                               \</div>
 <div class="line">  }</div>
+<div class="ttc" id="light__scheduler_8c_html_a2dee666f0c1fe072c549ff86b1d0a8ab"><div class="ttname"><a href="light__scheduler_8c.html#a2dee666f0c1fe072c549ff86b1d0a8ab">s</a></div><div class="ttdeci">static uint32_t s</div><div class="ttdef"><b>Definition:</b> <a href="light__scheduler_8c_source.html#l00033">light_scheduler.c:33</a></div></div>
 <div class="ttc" id="types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00014">types.h:14</a></div></div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="uart__print_8h_source.html#l00030">30</a> of file <a class="el" href="uart__print_8h_source.html">uart_print.h</a>.</p>
@@ -354,8 +355,8 @@ Functions</h2></td></tr>
           <td class="memname">#define UsbSPrintString</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">s</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="uart__print_8h.html#af958f96d5fb8818724ccb9454d973113">_PrintString</a>(<a class="el" href="usb__serial_8h.html#a19a213d00cf249a4d4d60dbf1a9907d3">VCOM_putchar</a>, s)</td>
+          <td class="paramname"><a class="el" href="light__scheduler_8c.html#a2dee666f0c1fe072c549ff86b1d0a8ab">s</a></td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="uart__print_8h.html#af958f96d5fb8818724ccb9454d973113">_PrintString</a>(<a class="el" href="usb__serial_8h.html#a19a213d00cf249a4d4d60dbf1a9907d3">VCOM_putchar</a>, <a class="el" href="light__scheduler_8c.html#a2dee666f0c1fe072c549ff86b1d0a8ab">s</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -567,7 +568,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_6567a5a7be991f15b7628b3b0eb084bd.html">datalink</a></li><li class="navelem"><a class="el" href="uart__print_8h.html">uart_print.h</a></li>
-    <li class="footer">Generated on Wed Sep 12 2018 02:03:48 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:03:32 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

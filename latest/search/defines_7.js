@@ -10,6 +10,7 @@ var searchData=
   ['gain_5fprescaler_5fff',['GAIN_PRESCALER_FF',['../stabilization__attitude__quat__float_8c.html#a9482d04d6374c8e58ddcd65e9b89d028',1,'GAIN_PRESCALER_FF():&#160;stabilization_attitude_quat_float.c'],['../stabilization__attitude__quat__int_8c.html#a9482d04d6374c8e58ddcd65e9b89d028',1,'GAIN_PRESCALER_FF():&#160;stabilization_attitude_quat_int.c']]],
   ['gain_5fprescaler_5fi',['GAIN_PRESCALER_I',['../stabilization__attitude__quat__float_8c.html#ac66f764f58e6484be051c4c0214bc60d',1,'GAIN_PRESCALER_I():&#160;stabilization_attitude_quat_float.c'],['../stabilization__attitude__quat__int_8c.html#ac66f764f58e6484be051c4c0214bc60d',1,'GAIN_PRESCALER_I():&#160;stabilization_attitude_quat_int.c']]],
   ['gain_5fprescaler_5fp',['GAIN_PRESCALER_P',['../stabilization__attitude__quat__float_8c.html#ac2de1e0726914060b8a76cc50e10b666',1,'GAIN_PRESCALER_P():&#160;stabilization_attitude_quat_float.c'],['../stabilization__attitude__quat__int_8c.html#ac2de1e0726914060b8a76cc50e10b666',1,'GAIN_PRESCALER_P():&#160;stabilization_attitude_quat_int.c']]],
+  ['gec_5fupdate_5fdl',['GEC_UPDATE_DL',['../gec__dl_8c.html#a5552d1dd4576f275184c864bb183fa1e',1,'gec_dl.c']]],
   ['geiger_5fcnt_5fdev',['GEIGER_CNT_DEV',['../geiger__counter_8c.html#a0b1fac16331bf94c39da0007dfe6fb45',1,'geiger_counter.c']]],
   ['geiger_5fcnt_5fi2c_5faddr',['GEIGER_CNT_I2C_ADDR',['../geiger__counter_8c.html#ad4c962a60e154907ac96d50a12d9527b',1,'geiger_counter.c']]],
   ['generic_5fcom_5fi2c_5fdev',['GENERIC_COM_I2C_DEV',['../generic__com_8c.html#a0834a23b3f10ab714acb0a90ce47d55d',1,'generic_com.c']]],
@@ -110,6 +111,7 @@ var searchData=
   ['gpio7',['GPIO7',['../gpio__def_8h.html#a3820cacb614277004870fc37b33ad084',1,'GPIO7():&#160;gpio_def.h'],['../lpc21_2mcu__periph_2gpio__arch_8h.html#a3820cacb614277004870fc37b33ad084',1,'GPIO7():&#160;gpio_arch.h'],['../sim_2mcu__periph_2gpio__arch_8h.html#a3820cacb614277004870fc37b33ad084',1,'GPIO7():&#160;gpio_arch.h']]],
   ['gpio8',['GPIO8',['../gpio__def_8h.html#aa951be0ce26f788049a86e407a70ae20',1,'GPIO8():&#160;gpio_def.h'],['../lpc21_2mcu__periph_2gpio__arch_8h.html#aa951be0ce26f788049a86e407a70ae20',1,'GPIO8():&#160;gpio_arch.h'],['../sim_2mcu__periph_2gpio__arch_8h.html#aa951be0ce26f788049a86e407a70ae20',1,'GPIO8():&#160;gpio_arch.h']]],
   ['gpio9',['GPIO9',['../gpio__def_8h.html#ae2a4c4d28729daf18e1923a1878e7352',1,'GPIO9():&#160;gpio_def.h'],['../lpc21_2mcu__periph_2gpio__arch_8h.html#ae2a4c4d28729daf18e1923a1878e7352',1,'GPIO9():&#160;gpio_arch.h'],['../sim_2mcu__periph_2gpio__arch_8h.html#ae2a4c4d28729daf18e1923a1878e7352',1,'GPIO9():&#160;gpio_arch.h']]],
+  ['gpio_5f_5ftio_5fhv_5fstatus',['GPIO__TIO_HV_STATUS',['../vl53l1x__api_8h.html#a2806961b4373aaf95b11489324e8f84b',1,'vl53l1x_api.h']]],
   ['gpio_5faf0',['GPIO_AF0',['../gpio__def_8h.html#ab9c7d5d4b56cea62509068bee1395bd2',1,'gpio_def.h']]],
   ['gpio_5faf1',['GPIO_AF1',['../gpio__def_8h.html#af9203749b609546ef5b3358ac744afc0',1,'gpio_def.h']]],
   ['gpio_5faf10',['GPIO_AF10',['../gpio__def_8h.html#abd7cde73c21830dd54cb87884091e19f',1,'gpio_def.h']]],
@@ -127,6 +129,7 @@ var searchData=
   ['gpio_5faf8',['GPIO_AF8',['../gpio__def_8h.html#ac832d890950c1e5e99e8090829303ac5',1,'gpio_def.h']]],
   ['gpio_5faf9',['GPIO_AF9',['../gpio__def_8h.html#a5976a97cba5848fba316456534fbd555',1,'gpio_def.h']]],
   ['gpio_5fdirection',['GPIO_DIRECTION',['../gpio__ardrone_8c.html#a76674bd82007b2ceec9a2e60e3f53d62',1,'gpio_ardrone.c']]],
+  ['gpio_5fhv_5fmux_5f_5fctrl',['GPIO_HV_MUX__CTRL',['../vl53l1x__api_8h.html#ac2b6c32911c2c553477f19bb3c25ce89',1,'vl53l1x_api.h']]],
   ['gpio_5fmagic',['GPIO_MAGIC',['../gpio__ardrone_8c.html#af1dc914dcbc1031f3939c41aa15ba7dd',1,'gpio_ardrone.c']]],
   ['gpio_5fread',['GPIO_READ',['../gpio__ardrone_8c.html#a1a5b0b764215bbcab9c8c675ef55deea',1,'gpio_ardrone.c']]],
   ['gpio_5fwrite',['GPIO_WRITE',['../gpio__ardrone_8c.html#a504d13ed192a0d97cb4eb9452a8e142c',1,'gpio_ardrone.c']]],
@@ -432,7 +435,7 @@ var searchData=
   ['gps_5fxsens_5fid',['GPS_XSENS_ID',['../abi__sender__ids_8h.html#af5c1f50114824e6e85e397861b810512',1,'abi_sender_ids.h']]],
   ['gpsconfigure',['GpsConfigure',['../gps__mtk_8h.html#a77b55df2c6f75d662e50502ddfa5f5c5',1,'gps_mtk.h']]],
   ['gpsfixvalid',['GpsFixValid',['../gps_8h.html#aae01b53fbd555bc8954b7ba297cb2cae',1,'gps.h']]],
-  ['gpsid',['GpsId',['../gps_8c.html#a43f1fa070e4a5ab9c05f5e8d34eaa4fd',1,'gps.c']]],
+  ['gpsid',['GpsId',['../gps_8h.html#a43f1fa070e4a5ab9c05f5e8d34eaa4fd',1,'gps.h']]],
   ['gpsislost',['GpsIsLost',['../gps_8h.html#a3081afe8b82d023c748c40dfc49ff2f7',1,'gps.h']]],
   ['gpslinkdevice',['GpsLinkDevice',['../gps__furuno_8c.html#af1acf1db93b8ed0add6615e60d210c20',1,'gps_furuno.c']]],
   ['gravity',['GRAVITY',['../ahrs__float__dcm_8h.html#a6801baa546c6112d19eb095111d24720',1,'ahrs_float_dcm.h']]],
@@ -486,6 +489,7 @@ var searchData=
   ['guidance_5fv_5fguided_5fmode_5fclimb',['GUIDANCE_V_GUIDED_MODE_CLIMB',['../rotorcraft_2guidance_2guidance__v_8c.html#aa77ce317ea072d6adb5d00143d3eec83',1,'guidance_v.c']]],
   ['guidance_5fv_5fguided_5fmode_5fthrottle',['GUIDANCE_V_GUIDED_MODE_THROTTLE',['../rotorcraft_2guidance_2guidance__v_8c.html#a7a87adb0bc88e2d3c224701418f0f81a',1,'guidance_v.c']]],
   ['guidance_5fv_5fguided_5fmode_5fzhold',['GUIDANCE_V_GUIDED_MODE_ZHOLD',['../rotorcraft_2guidance_2guidance__v_8c.html#a61ff7500b379fb45da4f72f1a3fb759f',1,'guidance_v.c']]],
+  ['guidance_5fv_5fmax_5fcmd',['GUIDANCE_V_MAX_CMD',['../rotorcraft_2guidance_2guidance__v_8c.html#a74d1f5dd06cb4d38b0a29d5d6eeb4469',1,'guidance_v.c']]],
   ['guidance_5fv_5fmax_5ferr_5fz',['GUIDANCE_V_MAX_ERR_Z',['../rotorcraft_2guidance_2guidance__v_8c.html#af43d0b57dbb152a5c6ea22b497d9555e',1,'guidance_v.c']]],
   ['guidance_5fv_5fmax_5ferr_5fzd',['GUIDANCE_V_MAX_ERR_ZD',['../rotorcraft_2guidance_2guidance__v_8c.html#ab91e6cdc9d234545f763994ed537fef3',1,'guidance_v.c']]],
   ['guidance_5fv_5fmax_5frc_5fclimb_5fspeed',['GUIDANCE_V_MAX_RC_CLIMB_SPEED',['../rotorcraft_2guidance_2guidance__v_8c.html#a3c2c6e4cdeee3d72c1bea4a4eb99cddc',1,'guidance_v.c']]],
@@ -568,5 +572,6 @@ var searchData=
   ['gx3_5fheader',['GX3_HEADER',['../ahrs__gx3_8h.html#ac39d76eb440bfbb8f2d7e07b653b58f9',1,'ahrs_gx3.h']]],
   ['gx3_5fmax_5fpayload',['GX3_MAX_PAYLOAD',['../ahrs__gx3_8h.html#a2a6d9d65a796bf968d3ac8798bb5e296',1,'ahrs_gx3.h']]],
   ['gx3_5fmin_5ffreq',['GX3_MIN_FREQ',['../ahrs__gx3_8h.html#adfcf5ec2371b2fa3f18cb415993f70a5',1,'ahrs_gx3.h']]],
-  ['gx3_5fmsg_5flen',['GX3_MSG_LEN',['../ahrs__gx3_8h.html#ab865a6ade8de8adc9b977277e4d285d3',1,'ahrs_gx3.h']]]
+  ['gx3_5fmsg_5flen',['GX3_MSG_LEN',['../ahrs__gx3_8h.html#ab865a6ade8de8adc9b977277e4d285d3',1,'ahrs_gx3.h']]],
+  ['gyro_5fsens_5fh',['GYRO_SENS_H',['../lsm6ds33_8h.html#aba8d97ccc3b83e3cc78e3f5b30bbaba1',1,'lsm6ds33.h']]]
 ];

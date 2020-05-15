@@ -14,8 +14,8 @@ var tcas_8h =
       [ "RA_DESCEND", "tcas_8h.html#a07deba9c3568731e07896ae2612e46a1a2e54857a4a34ea4d0041136523235b2d", null ]
     ] ],
     [ "callTCAS", "tcas_8h.html#a8a506736e0d5a76d185e828786c76f78", null ],
-    [ "parseTcasRA", "tcas_8h.html#ae02e782b9aca4703f8fb2c8aeaca9441", null ],
-    [ "parseTcasResolve", "tcas_8h.html#a0e9cda68611380b1a78840531b999609", null ],
+    [ "parseTcasRA", "tcas_8h.html#ae185ce235daae4473e5d90bab57684ad", null ],
+    [ "parseTcasResolve", "tcas_8h.html#a8afd38814e2cb73ac9d9356a5ed01abf", null ],
     [ "tcas_init", "tcas_8h.html#a625ef1c941fe293b480bf7032a212a38", null ],
     [ "tcas_periodic_task_1Hz", "tcas_8h.html#adb2f00821358ed6ad0f366e6a2422558", null ],
     [ "tcas_periodic_task_4Hz", "tcas_8h.html#aa520d855e76e58f77855603fde040497", null ],

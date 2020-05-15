@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -186,18 +186,19 @@ $(document).ready(function(){initNavTree('ardrone_2baro__board_8c_source.html','
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="navdata_8c.html#a6fdcf19526b8d0e0fb74565a9de96fc3">navdata</a>.<a class="code" href="navdata_8h.html#aa9dc36cf6dd4c2c4d09b6b680e92cbf4">baro_available</a>) {</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="navdata_8c.html#a6fdcf19526b8d0e0fb74565a9de96fc3">navdata</a>.<a class="code" href="navdata_8h.html#a6435345ad995ab0b63fec1770b6f5784">baro_calibrated</a>) {</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;      <span class="comment">// first read temperature because pressure calibration depends on temperature</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;      <span class="keywordtype">float</span> temp_deg = 0.1 * <a class="code" href="ardrone_2baro__board_8c.html#a84855eebddeb9c1cbdad203028037fe8">baro_apply_calibration_temp</a>(<a class="code" href="navdata_8c.html#a6fdcf19526b8d0e0fb74565a9de96fc3">navdata</a>.<a class="code" href="navdata_8h.html#a2b45754e3e3b73bce18030bc6d2f453b">measure</a>.<a class="code" href="navdata_8h.html#af77eb675618a5b8f4419d5aa8badc94b">temperature_pressure</a>);</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      AbiSendMsgTEMPERATURE(<a class="code" href="abi__sender__ids_8h.html#a5bb669cab223b9398b897303b2aae001">BARO_BOARD_SENDER_ID</a>, temp_deg);</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;      <a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> press_pascal = <a class="code" href="ardrone_2baro__board_8c.html#a324cbe14bc8cfd2eb549bdd524dfb56d">baro_apply_calibration</a>(<a class="code" href="navdata_8c.html#a6fdcf19526b8d0e0fb74565a9de96fc3">navdata</a>.<a class="code" href="navdata_8h.html#a2b45754e3e3b73bce18030bc6d2f453b">measure</a>.<a class="code" href="navdata_8h.html#a02d5dbeef498a746da5090852395648f">pressure</a>);</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">#if USE_BARO_MEDIAN_FILTER</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;      press_pascal = <a class="code" href="median__filter_8h.html#a87c4aea132190eff249c7eebe4c9e730">update_median_filter_i</a>(&amp;baro_median, press_pascal);</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;      <span class="keywordtype">float</span> pressure = (float)press_pascal;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;      AbiSendMsgBARO_ABS(<a class="code" href="abi__sender__ids_8h.html#a5bb669cab223b9398b897303b2aae001">BARO_BOARD_SENDER_ID</a>, pressure);</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    }</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <a class="code" href="navdata_8c.html#a6fdcf19526b8d0e0fb74565a9de96fc3">navdata</a>.<a class="code" href="navdata_8h.html#aa9dc36cf6dd4c2c4d09b6b680e92cbf4">baro_available</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  }</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;}</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;      <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> now_ts = <a class="code" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb">get_sys_time_usec</a>();</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      <span class="keywordtype">float</span> temp_deg = 0.1 * <a class="code" href="ardrone_2baro__board_8c.html#a84855eebddeb9c1cbdad203028037fe8">baro_apply_calibration_temp</a>(<a class="code" href="navdata_8c.html#a6fdcf19526b8d0e0fb74565a9de96fc3">navdata</a>.<a class="code" href="navdata_8h.html#a2b45754e3e3b73bce18030bc6d2f453b">measure</a>.<a class="code" href="navdata_8h.html#af77eb675618a5b8f4419d5aa8badc94b">temperature_pressure</a>);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;      AbiSendMsgTEMPERATURE(<a class="code" href="abi__sender__ids_8h.html#a5bb669cab223b9398b897303b2aae001">BARO_BOARD_SENDER_ID</a>, temp_deg);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;      <a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> press_pascal = <a class="code" href="ardrone_2baro__board_8c.html#a324cbe14bc8cfd2eb549bdd524dfb56d">baro_apply_calibration</a>(<a class="code" href="navdata_8c.html#a6fdcf19526b8d0e0fb74565a9de96fc3">navdata</a>.<a class="code" href="navdata_8h.html#a2b45754e3e3b73bce18030bc6d2f453b">measure</a>.<a class="code" href="navdata_8h.html#a02d5dbeef498a746da5090852395648f">pressure</a>);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#if USE_BARO_MEDIAN_FILTER</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;      press_pascal = <a class="code" href="median__filter_8h.html#a87c4aea132190eff249c7eebe4c9e730">update_median_filter_i</a>(&amp;baro_median, press_pascal);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;      <span class="keywordtype">float</span> pressure = (float)press_pascal;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;      AbiSendMsgBARO_ABS(<a class="code" href="abi__sender__ids_8h.html#a5bb669cab223b9398b897303b2aae001">BARO_BOARD_SENDER_ID</a>, now_ts, pressure);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    }</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <a class="code" href="navdata_8c.html#a6fdcf19526b8d0e0fb74565a9de96fc3">navdata</a>.<a class="code" href="navdata_8h.html#aa9dc36cf6dd4c2c4d09b6b680e92cbf4">baro_available</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  }</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;}</div>
 <div class="ttc" id="navdata_8h_html_a91f2bc62e2870a3ff47fd198e3782950"><div class="ttname"><a href="navdata_8h.html#a91f2bc62e2870a3ff47fd198e3782950">bmp180_calib_t::b1</a></div><div class="ttdeci">int16_t b1</div><div class="ttdef"><b>Definition:</b> <a href="navdata_8h_source.html#l00094">navdata.h:94</a></div></div>
 <div class="ttc" id="navdata_8h_html_a46570f5f42e9a7f148c69a6497fde45d"><div class="ttname"><a href="navdata_8h.html#a46570f5f42e9a7f148c69a6497fde45d">bmp180_calib_t::ac6</a></div><div class="ttdeci">uint16_t ac6</div><div class="ttdef"><b>Definition:</b> <a href="navdata_8h_source.html#l00093">navdata.h:93</a></div></div>
 <div class="ttc" id="baro_8h_html"><div class="ttname"><a href="baro_8h.html">baro.h</a></div><div class="ttdoc">Common barometric sensor implementation. </div></div>
@@ -234,6 +235,7 @@ $(document).ready(function(){initNavTree('ardrone_2baro__board_8c_source.html','
 <div class="ttc" id="ins__alt__float_8c_html_a9d3f100c4375da4d957dbe599d494905"><div class="ttname"><a href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a></div><div class="ttdeci">static float p[2][2]</div><div class="ttdef"><b>Definition:</b> <a href="ins__alt__float_8c_source.html#l00268">ins_alt_float.c:268</a></div></div>
 <div class="ttc" id="navdata_8h_html_a05823cb2df3ae051ed91a1b694dbca4e"><div class="ttname"><a href="navdata_8h.html#a05823cb2df3ae051ed91a1b694dbca4e">bmp180_calib_t::ac2</a></div><div class="ttdeci">int16_t ac2</div><div class="ttdef"><b>Definition:</b> <a href="navdata_8h_source.html#l00089">navdata.h:89</a></div></div>
 <div class="ttc" id="navdata_8h_html_aa9dc36cf6dd4c2c4d09b6b680e92cbf4"><div class="ttname"><a href="navdata_8h.html#aa9dc36cf6dd4c2c4d09b6b680e92cbf4">navdata_t::baro_available</a></div><div class="ttdeci">bool baro_available</div><div class="ttdoc">Whenever the baro is available. </div><div class="ttdef"><b>Definition:</b> <a href="navdata_8h_source.html#l00129">navdata.h:129</a></div></div>
+<div class="ttc" id="chibios_2mcu__periph_2sys__time__arch_8c_html_a7ddfef1f78a56c6b4c4c536b5d670bfb"><div class="ttname"><a href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb">get_sys_time_usec</a></div><div class="ttdeci">uint32_t get_sys_time_usec(void)</div><div class="ttdoc">Get the time in microseconds since startup. </div><div class="ttdef"><b>Definition:</b> <a href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00068">sys_time_arch.c:68</a></div></div>
 <div class="ttc" id="navdata_8h_html_ae6ba52596c31548315e99c80c226c572"><div class="ttname"><a href="navdata_8h.html#ae6ba52596c31548315e99c80c226c572">bmp180_calib_t::ac5</a></div><div class="ttdeci">uint16_t ac5</div><div class="ttdef"><b>Definition:</b> <a href="navdata_8h_source.html#l00092">navdata.h:92</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -241,7 +243,7 @@ $(document).ready(function(){initNavTree('ardrone_2baro__board_8c_source.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e030268cd18297cf6282390f76bfcf7f.html">boards</a></li><li class="navelem"><a class="el" href="dir_93997fa94db05292d114fcb1dd488916.html">ardrone</a></li><li class="navelem"><a class="el" href="ardrone_2baro__board_8c.html">baro_board.c</a></li>
-    <li class="footer">Generated on Wed Sep 12 2018 02:02:33 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:02:10 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -1,15 +1,14 @@
 var gps_8c =
 [
-    [ "__GpsId", "gps_8c.html#abd879364f7117b6105b1ed65d6a3d3e8", null ],
-    [ "_GpsId", "gps_8c.html#ab91d045f7db5c7a42a180037818885b4", null ],
-    [ "GpsId", "gps_8c.html#a43f1fa070e4a5ab9c05f5e8d34eaa4fd", null ],
     [ "MSEC_PER_WEEK", "gps_8c.html#afb214dd6709e7dc32173499a040c80e5", null ],
     [ "TIME_TO_SWITCH", "gps_8c.html#ac4630bfb6206a2643378e4a829a33bb7", null ],
     [ "gps_cb", "gps_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8", null ],
+    [ "gps_day_number", "gps_8c.html#ad7cc952bdfa486da28aa1ec51a0940e7", null ],
     [ "gps_init", "gps_8c.html#ab37f7040b9efd19fdd3f92b1df77e771", null ],
     [ "gps_inject_data", "gps_8c.html#a95067acaf0b8b646abb5d9ec7e98b0cb", null ],
     [ "gps_periodic_check", "gps_8c.html#ae631bcedc95daefc88cba7e639b38f19", null ],
     [ "gps_tow_from_sys_ticks", "gps_8c.html#ad68ada7274989a4c9f08bc06d74ee5bd", null ],
+    [ "gps_week_number", "gps_8c.html#a5904be2de6c3e1e04d7789b135bc0f6b", null ],
     [ "send_gps", "gps_8c.html#ac803c4ab4fb8dc92a4c4463c07da1600", null ],
     [ "send_gps_int", "gps_8c.html#a6d23eecfe781f0c056b6168f2c9d79cd", null ],
     [ "send_gps_lla", "gps_8c.html#a759fae606fdb1c49a324d700e29282ff", null ],
@@ -25,6 +24,7 @@ var gps_8c =
     [ "gps_ev", "gps_8c.html#af8c616627ecbb4860e359944c97dc718", null ],
     [ "gps_relposned", "gps_8c.html#aef81e629eb219c35b87a62b95e93fbf1", null ],
     [ "gps_time_sync", "gps_8c.html#a4cd3856a89c7a6a56135788fa9f33922", null ],
+    [ "month_days", "gps_8c.html#a53b5fc3ccb3b489527e585cc6d8a1878", null ],
     [ "multi_gps_mode", "gps_8c.html#a00bcdc4a49e0e8f7ac48f2d77113f4bd", null ],
     [ "rtcm_man", "gps_8c.html#ae9ccee2c335081dd63a37c05fc63c9a8", null ]
 ];

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -147,18 +147,19 @@ $(document).ready(function(){initNavTree('gps__datalink_8h_source.html','');});
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
 <div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="gps__datalink_8h.html#ab0b9af870e1279630618bc5e76fc810e">   45</a></span>&#160;<span class="preprocessor">#define gps_datalink_periodic_check() gps_periodic_check(&amp;gps_datalink)</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="gps__datalink_8h.html#abb144fb2a2da32322d34bb775715c6d8">gps_datalink_parse_REMOTE_GPS</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="gps__datalink_8h.html#a72af93d10391b6dae5f47999a9e90c2d">gps_datalink_parse_REMOTE_GPS_SMALL</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="gps__datalink_8h.html#a15713f768997b47fa44afe6913f8a6ae">gps_datalink_parse_REMOTE_GPS_LOCAL</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="gps__datalink_8h.html#a217a35f230e3154843b789ea864ac86c">gps_datalink_parse_REMOTE_GPS</a>(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="gps__datalink_8h.html#ac7bc5db77d4658562ccbc897069a1251">gps_datalink_parse_REMOTE_GPS_SMALL</a>(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="gps__datalink_8h.html#a22e6a1eebb70356993012b6353da9cc2">gps_datalink_parse_REMOTE_GPS_LOCAL</a>(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf);</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* GPS_DATALINK_H */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="gps__datalink_8h_html_a72af93d10391b6dae5f47999a9e90c2d"><div class="ttname"><a href="gps__datalink_8h.html#a72af93d10391b6dae5f47999a9e90c2d">gps_datalink_parse_REMOTE_GPS_SMALL</a></div><div class="ttdeci">void gps_datalink_parse_REMOTE_GPS_SMALL(void)</div><div class="ttdef"><b>Definition:</b> <a href="gps__datalink_8c_source.html#l00250">gps_datalink.c:250</a></div></div>
-<div class="ttc" id="gps__datalink_8h_html_a15713f768997b47fa44afe6913f8a6ae"><div class="ttname"><a href="gps__datalink_8h.html#a15713f768997b47fa44afe6913f8a6ae">gps_datalink_parse_REMOTE_GPS_LOCAL</a></div><div class="ttdeci">void gps_datalink_parse_REMOTE_GPS_LOCAL(void)</div><div class="ttdef"><b>Definition:</b> <a href="gps__datalink_8c_source.html#l00260">gps_datalink.c:260</a></div></div>
-<div class="ttc" id="gps_8h_html_structGpsState"><div class="ttname"><a href="gps_8h.html#structGpsState">GpsState</a></div><div class="ttdoc">data structure for GPS information </div><div class="ttdef"><b>Definition:</b> <a href="gps_8h_source.html#l00081">gps.h:81</a></div></div>
+<div class="ttc" id="gps__datalink_8h_html_a22e6a1eebb70356993012b6353da9cc2"><div class="ttname"><a href="gps__datalink_8h.html#a22e6a1eebb70356993012b6353da9cc2">gps_datalink_parse_REMOTE_GPS_LOCAL</a></div><div class="ttdeci">void gps_datalink_parse_REMOTE_GPS_LOCAL(uint8_t *buf)</div><div class="ttdef"><b>Definition:</b> <a href="gps__datalink_8c_source.html#l00260">gps_datalink.c:260</a></div></div>
+<div class="ttc" id="gps__datalink_8h_html_ac7bc5db77d4658562ccbc897069a1251"><div class="ttname"><a href="gps__datalink_8h.html#ac7bc5db77d4658562ccbc897069a1251">gps_datalink_parse_REMOTE_GPS_SMALL</a></div><div class="ttdeci">void gps_datalink_parse_REMOTE_GPS_SMALL(uint8_t *buf)</div><div class="ttdef"><b>Definition:</b> <a href="gps__datalink_8c_source.html#l00250">gps_datalink.c:250</a></div></div>
+<div class="ttc" id="gps__datalink_8h_html_a217a35f230e3154843b789ea864ac86c"><div class="ttname"><a href="gps__datalink_8h.html#a217a35f230e3154843b789ea864ac86c">gps_datalink_parse_REMOTE_GPS</a></div><div class="ttdeci">void gps_datalink_parse_REMOTE_GPS(uint8_t *buf)</div><div class="ttdef"><b>Definition:</b> <a href="gps__datalink_8c_source.html#l00231">gps_datalink.c:231</a></div></div>
+<div class="ttc" id="gps_8h_html_structGpsState"><div class="ttname"><a href="gps_8h.html#structGpsState">GpsState</a></div><div class="ttdoc">data structure for GPS information </div><div class="ttdef"><b>Definition:</b> <a href="gps_8h_source.html#l00087">gps.h:87</a></div></div>
 <div class="ttc" id="gps_8h_html"><div class="ttname"><a href="gps_8h.html">gps.h</a></div><div class="ttdoc">Device independent GPS code (interface) </div></div>
 <div class="ttc" id="gps__datalink_8h_html_a2454f9173636f105da3b60752f958ec3"><div class="ttname"><a href="gps__datalink_8h.html#a2454f9173636f105da3b60752f958ec3">gps_datalink_init</a></div><div class="ttdeci">void gps_datalink_init(void)</div><div class="ttdoc">GPS initialization. </div><div class="ttdef"><b>Definition:</b> <a href="gps__datalink_8c_source.html#l00041">gps_datalink.c:41</a></div></div>
 <div class="ttc" id="std_8h_html"><div class="ttname"><a href="std_8h.html">std.h</a></div></div>
-<div class="ttc" id="gps__datalink_8h_html_abb144fb2a2da32322d34bb775715c6d8"><div class="ttname"><a href="gps__datalink_8h.html#abb144fb2a2da32322d34bb775715c6d8">gps_datalink_parse_REMOTE_GPS</a></div><div class="ttdeci">void gps_datalink_parse_REMOTE_GPS(void)</div><div class="ttdef"><b>Definition:</b> <a href="gps__datalink_8c_source.html#l00231">gps_datalink.c:231</a></div></div>
+<div class="ttc" id="types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00014">types.h:14</a></div></div>
 <div class="ttc" id="gps__datalink_8h_html_a8298a7540884fbcc0cea89224dd2cc25"><div class="ttname"><a href="gps__datalink_8h.html#a8298a7540884fbcc0cea89224dd2cc25">gps_datalink</a></div><div class="ttdeci">struct GpsState gps_datalink</div><div class="ttdef"><b>Definition:</b> <a href="gps__datalink_8c_source.html#l00038">gps_datalink.c:38</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -166,7 +167,7 @@ $(document).ready(function(){initNavTree('gps__datalink_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_8c4cbb881db224ddaf0756e79ed706ce.html">gps</a></li><li class="navelem"><a class="el" href="gps__datalink_8h.html">gps_datalink.h</a></li>
-    <li class="footer">Generated on Wed Sep 12 2018 02:02:57 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:02:34 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

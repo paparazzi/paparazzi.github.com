@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -107,9 +107,18 @@ $(document).ready(function(){initNavTree('module__stabilization_indi.html','');}
 <p>No detailed description...</p>
 <h1><a class="anchor" id="module_load_example__stabilization_indi"></a>
 Example for airframe file</h1>
-<p>Add to your firmware section: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;module name=&quot;stabilization_indi&quot;/&gt;</div>
+<p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;module name=&quot;stabilization_indi&quot;&gt;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;  &lt;configure default=&quot;4&quot; name=&quot;INDI_OUTPUTS&quot; /&gt;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;  &lt;configure default=&quot;4&quot; name=&quot;INDI_NUM_ACT&quot; /&gt;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;&lt;/module&gt;</div>
 </div><!-- fragment --> <h1><a class="anchor" id="configuration__stabilization_indi"></a>
 Module configuration options</h1>
+<h2><a class="anchor" id="configure"></a>
+Configure Options</h2>
+<ul>
+<li><b>name:</b> <code>INDI_OUTPUTS</code> <b>value:</b> <em>None</em></li>
+<li><b>name:</b> <code>INDI_NUM_ACT</code> <b>value:</b> <em>None</em></li>
+</ul>
 <h2><a class="anchor" id="af_section"></a>
 Airframe file section</h2>
 <ul>
@@ -209,6 +218,10 @@ Raw stabilization_indi.xml file:</h2>
 <div class="line">    &lt;description&gt;</div>
 <div class="line">      Full INDI stabilization controller for rotorcraft</div>
 <div class="line">    &lt;/description&gt;</div>
+<div class="line"></div>
+<div class="line">    &lt;configure name=&quot;INDI_OUTPUTS&quot; default=&quot;4&quot;/&gt;</div>
+<div class="line">    &lt;configure name=&quot;INDI_NUM_ACT&quot; default=&quot;4&quot;/&gt;</div>
+<div class="line"></div>
 <div class="line">    &lt;section name=&quot;RC_SETPOINT&quot; prefix=&quot;STABILIZATION_ATTITUDE_&quot;&gt;</div>
 <div class="line">      &lt;define name=&quot;SP_MAX_PHI&quot;   value=&quot;45.&quot; description=&quot;max setpoint for roll angle&quot; unit=&quot;deg&quot;/&gt;</div>
 <div class="line">      &lt;define name=&quot;SP_MAX_THETA&quot; value=&quot;45.&quot; description=&quot;max setpoint for pitch angle&quot; unit=&quot;deg&quot;/&gt;</div>
@@ -264,6 +277,12 @@ Raw stabilization_indi.xml file:</h2>
 <div class="line">    &lt;file name=&quot;wls_alloc.c&quot; dir=&quot;$(SRC_FIRMWARE)/stabilization/wls&quot;/&gt;</div>
 <div class="line">    &lt;file name=&quot;qr_solve.c&quot; dir=&quot;math/qr_solve&quot;/&gt;</div>
 <div class="line">    &lt;file name=&quot;r8lib_min.c&quot; dir=&quot;math/qr_solve&quot;/&gt;</div>
+<div class="line">    &lt;configure name=&quot;INDI_OUTPUTS&quot; default=&quot;4&quot;/&gt;</div>
+<div class="line">    &lt;configure name=&quot;INDI_NUM_ACT&quot; default=&quot;4&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;INDI_OUTPUTS&quot; value=&quot;$(INDI_OUTPUTS)&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;INDI_NUM_ACT&quot; value=&quot;$(INDI_NUM_ACT)&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;CA_N_V&quot; value=&quot;$(INDI_OUTPUTS)&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;CA_N_U&quot; value=&quot;$(INDI_NUM_ACT)&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;STABILIZATION_ATTITUDE_TYPE_INT&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;STABILIZATION_ATTITUDE_TYPE_H&quot; value=&quot;stabilization/stabilization_attitude_quat_indi.h&quot; type=&quot;string&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;STABILIZATION_ATTITUDE_INDI_FULL&quot; value=&quot;true&quot;/&gt;</div>
@@ -275,7 +294,7 @@ Raw stabilization_indi.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Wed Sep 12 2018 02:03:56 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:03:40 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

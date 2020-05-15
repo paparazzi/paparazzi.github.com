@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -168,6 +168,9 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 <li>SAFETY_MARGIN
 : <a class="el" href="nav__poles_8c.html#af12741cc685a5533fe2ed100d91649c4">nav_poles.c</a>
 </li>
+<li>SAFETY_SW_IN
+: <a class="el" href="px4fmu_2chibios_2v4_80_2board_8h.html#a1aacf0cbbfb91424655fda39314f1608">board.h</a>
+</li>
 <li>SATURATE_SPEED_TRIM_ACCEL
 : <a class="el" href="attitude__ref__saturate__naive_8h.html#a8c2e99f4eba16db4bdbaa2e7a28a0913">attitude_ref_saturate_naive.h</a>
 </li>
@@ -190,8 +193,8 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 : <a class="el" href="sbus__common_8c.html#afe0a3f4fe29d043cdacd59b03e123678">sbus_common.c</a>
 </li>
 <li>SBUS_BIT_PER_CHANNEL
-: <a class="el" href="actuators__sbus_8c.html#af410d706508c510446b23150520e81b4">actuators_sbus.c</a>
-, <a class="el" href="sbus__common_8c.html#af410d706508c510446b23150520e81b4">sbus_common.c</a>
+: <a class="el" href="sbus__common_8c.html#af410d706508c510446b23150520e81b4">sbus_common.c</a>
+, <a class="el" href="actuators__sbus_8c.html#af410d706508c510446b23150520e81b4">actuators_sbus.c</a>
 </li>
 <li>SBUS_BUF_LENGTH
 : <a class="el" href="sbus__common_8h.html#ab8f86c137438a99b0143cc90312ee571">sbus_common.h</a>
@@ -223,6 +226,9 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 <li>SBUS_FRAME_LOST_BIT
 : <a class="el" href="sbus__common_8c.html#aea1648f19d6579c0c6834a453fc4c779">sbus_common.c</a>
 </li>
+<li>SBUS_INV
+: <a class="el" href="px4fmu_2chibios_2v4_80_2board_8h.html#a02b43aa9cdea47db5d68cf9ff15a5442">board.h</a>
+</li>
 <li>SBUS_NB_CHANNEL
 : <a class="el" href="sbus__common_8h.html#afb790236a604cd21678b157b429e16fa">sbus_common.h</a>
 </li>
@@ -233,14 +239,17 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 : <a class="el" href="sbus__common_8c.html#a20366ad7a6b48e4b2128333c030b7820">sbus_common.c</a>
 </li>
 <li>SBUS_START_BYTE
-: <a class="el" href="actuators__sbus_8c.html#a2886bfcf0b1cc50fbcd80c207f74131f">actuators_sbus.c</a>
-, <a class="el" href="sbus__common_8c.html#a2886bfcf0b1cc50fbcd80c207f74131f">sbus_common.c</a>
+: <a class="el" href="sbus__common_8c.html#a2886bfcf0b1cc50fbcd80c207f74131f">sbus_common.c</a>
+, <a class="el" href="actuators__sbus_8c.html#a2886bfcf0b1cc50fbcd80c207f74131f">actuators_sbus.c</a>
 </li>
 <li>SBUS_STATUS_GOT_START
 : <a class="el" href="sbus__common_8c.html#a78bd8c830e8bf9a58f90b63b44bb9826">sbus_common.c</a>
 </li>
 <li>SBUS_STATUS_UNINIT
 : <a class="el" href="sbus__common_8c.html#a60a5f13624f378d1e691872cb5533481">sbus_common.c</a>
+</li>
+<li>SBUS_TIMEOUT_MS
+: <a class="el" href="sbus__common_8c.html#ae4612970da8fd3d022dee31d4795c508">sbus_common.c</a>
 </li>
 <li>SC18IS600_BUF_LEN
 : <a class="el" href="sc18i600_8h.html#a3b9fd83a2eebe1db2c2ec031b71fa42f">sc18i600.h</a>
@@ -473,6 +482,12 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 <li>SD_BLOCK_SIZE
 : <a class="el" href="sdcard__spi_8h.html#a451aeffb68f3ecfb82eae03c88e9e48c">sdcard_spi.h</a>
 </li>
+<li>SD_CONFIG__INITIAL_PHASE_SD0
+: <a class="el" href="vl53l1x__api_8h.html#aea5e68cc5ce6336be7979caf62305db2">vl53l1x_api.h</a>
+</li>
+<li>SD_CONFIG__WOI_SD0
+: <a class="el" href="vl53l1x__api_8h.html#a6a16e9c2ee589cd21957f1302d6654f1">vl53l1x_api.h</a>
+</li>
 <li>SD_DETECT
 : <a class="el" href="chimera_2chibios_2v1_80_2board_8h.html#a44a22deca5a2da5b2d7d8cadf9fbfe15">board.h</a>
 </li>
@@ -488,23 +503,29 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 <li>SDIO_AF
 : <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#aea0d4879d704dd9b28e0e0f78eaed9bf">board.h</a>
 , <a class="el" href="chimera_8h.html#aea0d4879d704dd9b28e0e0f78eaed9bf">chimera.h</a>
+, <a class="el" href="v4_80_2px4fmu_8h.html#aea0d4879d704dd9b28e0e0f78eaed9bf">px4fmu.h</a>
 , <a class="el" href="px4fmu__4_80_8h.html#aea0d4879d704dd9b28e0e0f78eaed9bf">px4fmu_4.0.h</a>
 , <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#aea0d4879d704dd9b28e0e0f78eaed9bf">board.h</a>
+, <a class="el" href="tawaki_8h.html#aea0d4879d704dd9b28e0e0f78eaed9bf">tawaki.h</a>
 </li>
 <li>SDIO_CK
 : <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#ae3522571ed27b31fd4d2e7bdeb84ba6c">board.h</a>
 </li>
 <li>SDIO_CK_PIN
-: <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a7306050aa843659659499bde3429b417">board.h</a>
-, <a class="el" href="chimera_8h.html#a7306050aa843659659499bde3429b417">chimera.h</a>
+: <a class="el" href="v4_80_2px4fmu_8h.html#a7306050aa843659659499bde3429b417">px4fmu.h</a>
 , <a class="el" href="px4fmu__4_80_8h.html#a7306050aa843659659499bde3429b417">px4fmu_4.0.h</a>
 , <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a7306050aa843659659499bde3429b417">board.h</a>
+, <a class="el" href="tawaki_8h.html#a7306050aa843659659499bde3429b417">tawaki.h</a>
+, <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a7306050aa843659659499bde3429b417">board.h</a>
+, <a class="el" href="chimera_8h.html#a7306050aa843659659499bde3429b417">chimera.h</a>
 </li>
 <li>SDIO_CK_PORT
 : <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a8faef81f6f3f71405b3f2351cef48ab2">board.h</a>
 , <a class="el" href="chimera_8h.html#a8faef81f6f3f71405b3f2351cef48ab2">chimera.h</a>
+, <a class="el" href="v4_80_2px4fmu_8h.html#a8faef81f6f3f71405b3f2351cef48ab2">px4fmu.h</a>
 , <a class="el" href="px4fmu__4_80_8h.html#a8faef81f6f3f71405b3f2351cef48ab2">px4fmu_4.0.h</a>
 , <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a8faef81f6f3f71405b3f2351cef48ab2">board.h</a>
+, <a class="el" href="tawaki_8h.html#a8faef81f6f3f71405b3f2351cef48ab2">tawaki.h</a>
 </li>
 <li>SDIO_CMD
 : <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#add81ac85147ce712606b5bd7b83b8bb1">board.h</a>
@@ -512,14 +533,18 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 <li>SDIO_CMD_PIN
 : <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a9fbc674ce2e0b67af3e150f79033dd75">board.h</a>
 , <a class="el" href="chimera_8h.html#a9fbc674ce2e0b67af3e150f79033dd75">chimera.h</a>
+, <a class="el" href="v4_80_2px4fmu_8h.html#a9fbc674ce2e0b67af3e150f79033dd75">px4fmu.h</a>
 , <a class="el" href="px4fmu__4_80_8h.html#a9fbc674ce2e0b67af3e150f79033dd75">px4fmu_4.0.h</a>
 , <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a9fbc674ce2e0b67af3e150f79033dd75">board.h</a>
+, <a class="el" href="tawaki_8h.html#a9fbc674ce2e0b67af3e150f79033dd75">tawaki.h</a>
 </li>
 <li>SDIO_CMD_PORT
 : <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a2f973750f9134ee2fa55e004db3c6edc">board.h</a>
 , <a class="el" href="chimera_8h.html#a2f973750f9134ee2fa55e004db3c6edc">chimera.h</a>
+, <a class="el" href="v4_80_2px4fmu_8h.html#a2f973750f9134ee2fa55e004db3c6edc">px4fmu.h</a>
 , <a class="el" href="px4fmu__4_80_8h.html#a2f973750f9134ee2fa55e004db3c6edc">px4fmu_4.0.h</a>
 , <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a2f973750f9134ee2fa55e004db3c6edc">board.h</a>
+, <a class="el" href="tawaki_8h.html#a2f973750f9134ee2fa55e004db3c6edc">tawaki.h</a>
 </li>
 <li>SDIO_D0
 : <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a262ca2e9cc5cb144dd6d7d79ba8d4576">board.h</a>
@@ -527,14 +552,18 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 <li>SDIO_D0_PIN
 : <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a4f939402a3adf6008ed5ca06dbd030b9">board.h</a>
 , <a class="el" href="chimera_8h.html#a4f939402a3adf6008ed5ca06dbd030b9">chimera.h</a>
+, <a class="el" href="v4_80_2px4fmu_8h.html#a4f939402a3adf6008ed5ca06dbd030b9">px4fmu.h</a>
 , <a class="el" href="px4fmu__4_80_8h.html#a4f939402a3adf6008ed5ca06dbd030b9">px4fmu_4.0.h</a>
 , <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a4f939402a3adf6008ed5ca06dbd030b9">board.h</a>
+, <a class="el" href="tawaki_8h.html#a4f939402a3adf6008ed5ca06dbd030b9">tawaki.h</a>
 </li>
 <li>SDIO_D0_PORT
 : <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#aead66bc65b8e434c97f28429baeb2800">board.h</a>
 , <a class="el" href="chimera_8h.html#aead66bc65b8e434c97f28429baeb2800">chimera.h</a>
+, <a class="el" href="v4_80_2px4fmu_8h.html#aead66bc65b8e434c97f28429baeb2800">px4fmu.h</a>
 , <a class="el" href="px4fmu__4_80_8h.html#aead66bc65b8e434c97f28429baeb2800">px4fmu_4.0.h</a>
 , <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#aead66bc65b8e434c97f28429baeb2800">board.h</a>
+, <a class="el" href="tawaki_8h.html#aead66bc65b8e434c97f28429baeb2800">tawaki.h</a>
 </li>
 <li>SDIO_D1
 : <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a042553469c3e9a76c7319c6a9c51ea75">board.h</a>
@@ -542,14 +571,18 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 <li>SDIO_D1_PIN
 : <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a7769af3a5d7785eb756c5d0378ed7051">board.h</a>
 , <a class="el" href="chimera_8h.html#a7769af3a5d7785eb756c5d0378ed7051">chimera.h</a>
+, <a class="el" href="v4_80_2px4fmu_8h.html#a7769af3a5d7785eb756c5d0378ed7051">px4fmu.h</a>
 , <a class="el" href="px4fmu__4_80_8h.html#a7769af3a5d7785eb756c5d0378ed7051">px4fmu_4.0.h</a>
 , <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a7769af3a5d7785eb756c5d0378ed7051">board.h</a>
+, <a class="el" href="tawaki_8h.html#a7769af3a5d7785eb756c5d0378ed7051">tawaki.h</a>
 </li>
 <li>SDIO_D1_PORT
 : <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#abf25aa536f76d47dc6dc73da99210ac7">board.h</a>
 , <a class="el" href="chimera_8h.html#abf25aa536f76d47dc6dc73da99210ac7">chimera.h</a>
+, <a class="el" href="v4_80_2px4fmu_8h.html#abf25aa536f76d47dc6dc73da99210ac7">px4fmu.h</a>
 , <a class="el" href="px4fmu__4_80_8h.html#abf25aa536f76d47dc6dc73da99210ac7">px4fmu_4.0.h</a>
 , <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#abf25aa536f76d47dc6dc73da99210ac7">board.h</a>
+, <a class="el" href="tawaki_8h.html#abf25aa536f76d47dc6dc73da99210ac7">tawaki.h</a>
 </li>
 <li>SDIO_D2
 : <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a42cae49c31ad3cbcbdd2ab2cd69b7b5e">board.h</a>
@@ -557,14 +590,18 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 <li>SDIO_D2_PIN
 : <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a9f35b196f10e4942483d526f7f25df31">board.h</a>
 , <a class="el" href="chimera_8h.html#a9f35b196f10e4942483d526f7f25df31">chimera.h</a>
+, <a class="el" href="v4_80_2px4fmu_8h.html#a9f35b196f10e4942483d526f7f25df31">px4fmu.h</a>
 , <a class="el" href="px4fmu__4_80_8h.html#a9f35b196f10e4942483d526f7f25df31">px4fmu_4.0.h</a>
 , <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a9f35b196f10e4942483d526f7f25df31">board.h</a>
+, <a class="el" href="tawaki_8h.html#a9f35b196f10e4942483d526f7f25df31">tawaki.h</a>
 </li>
 <li>SDIO_D2_PORT
 : <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a719da4653e9f8f406b223235e09bf853">board.h</a>
 , <a class="el" href="chimera_8h.html#a719da4653e9f8f406b223235e09bf853">chimera.h</a>
+, <a class="el" href="v4_80_2px4fmu_8h.html#a719da4653e9f8f406b223235e09bf853">px4fmu.h</a>
 , <a class="el" href="px4fmu__4_80_8h.html#a719da4653e9f8f406b223235e09bf853">px4fmu_4.0.h</a>
 , <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a719da4653e9f8f406b223235e09bf853">board.h</a>
+, <a class="el" href="tawaki_8h.html#a719da4653e9f8f406b223235e09bf853">tawaki.h</a>
 </li>
 <li>SDIO_D3
 : <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#af5dcd7156fc129a5794e5c56096a0801">board.h</a>
@@ -572,14 +609,18 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 <li>SDIO_D3_PIN
 : <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#ad62e199253d055f0de7aa50ee2492263">board.h</a>
 , <a class="el" href="chimera_8h.html#ad62e199253d055f0de7aa50ee2492263">chimera.h</a>
+, <a class="el" href="v4_80_2px4fmu_8h.html#ad62e199253d055f0de7aa50ee2492263">px4fmu.h</a>
 , <a class="el" href="px4fmu__4_80_8h.html#ad62e199253d055f0de7aa50ee2492263">px4fmu_4.0.h</a>
 , <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#ad62e199253d055f0de7aa50ee2492263">board.h</a>
+, <a class="el" href="tawaki_8h.html#ad62e199253d055f0de7aa50ee2492263">tawaki.h</a>
 </li>
 <li>SDIO_D3_PORT
 : <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a1307338bc6abca9bbc5a1b217eee257e">board.h</a>
 , <a class="el" href="chimera_8h.html#a1307338bc6abca9bbc5a1b217eee257e">chimera.h</a>
+, <a class="el" href="v4_80_2px4fmu_8h.html#a1307338bc6abca9bbc5a1b217eee257e">px4fmu.h</a>
 , <a class="el" href="px4fmu__4_80_8h.html#a1307338bc6abca9bbc5a1b217eee257e">px4fmu_4.0.h</a>
 , <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a1307338bc6abca9bbc5a1b217eee257e">board.h</a>
+, <a class="el" href="tawaki_8h.html#a1307338bc6abca9bbc5a1b217eee257e">tawaki.h</a>
 </li>
 <li>SDIO_DETECT
 : <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#aca26efad677c1bc2519d3e33b5474cb5">board.h</a>
@@ -593,12 +634,16 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 <li>SDLOG_BAT_ADC
 : <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a10df201a6a0340fdb61816a617b6bab9">board.h</a>
 , <a class="el" href="chimera_8h.html#a10df201a6a0340fdb61816a617b6bab9">chimera.h</a>
+, <a class="el" href="v4_80_2px4fmu_8h.html#a10df201a6a0340fdb61816a617b6bab9">px4fmu.h</a>
 , <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a10df201a6a0340fdb61816a617b6bab9">board.h</a>
+, <a class="el" href="tawaki_8h.html#a10df201a6a0340fdb61816a617b6bab9">tawaki.h</a>
 </li>
 <li>SDLOG_BAT_CHAN
 : <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#afa171425c899787769e5d3612c80acd2">board.h</a>
 , <a class="el" href="chimera_8h.html#afa171425c899787769e5d3612c80acd2">chimera.h</a>
+, <a class="el" href="v4_80_2px4fmu_8h.html#afa171425c899787769e5d3612c80acd2">px4fmu.h</a>
 , <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#afa171425c899787769e5d3612c80acd2">board.h</a>
+, <a class="el" href="tawaki_8h.html#afa171425c899787769e5d3612c80acd2">tawaki.h</a>
 </li>
 <li>SDLOG_CONTIGUOUS_STORAGE_MEM
 : <a class="el" href="sdlog__chibios_8c.html#ad046b524185790197e59a701e851d8d6">sdlog_chibios.c</a>
@@ -618,17 +663,23 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 <li>SDLOG_USB_LED
 : <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a3eca81ff4917508b17002a96844e0904">board.h</a>
 , <a class="el" href="chimera_8h.html#a3eca81ff4917508b17002a96844e0904">chimera.h</a>
+, <a class="el" href="v4_80_2px4fmu_8h.html#a3eca81ff4917508b17002a96844e0904">px4fmu.h</a>
 , <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a3eca81ff4917508b17002a96844e0904">board.h</a>
+, <a class="el" href="tawaki_8h.html#a3eca81ff4917508b17002a96844e0904">tawaki.h</a>
 </li>
 <li>SDLOG_USB_VBUS_PIN
-: <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a22e2edaeffd24afc57074815c42628d7">board.h</a>
+: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a22e2edaeffd24afc57074815c42628d7">board.h</a>
+, <a class="el" href="tawaki_8h.html#a22e2edaeffd24afc57074815c42628d7">tawaki.h</a>
+, <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a22e2edaeffd24afc57074815c42628d7">board.h</a>
 , <a class="el" href="chimera_8h.html#a22e2edaeffd24afc57074815c42628d7">chimera.h</a>
-, <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a22e2edaeffd24afc57074815c42628d7">board.h</a>
+, <a class="el" href="v4_80_2px4fmu_8h.html#a22e2edaeffd24afc57074815c42628d7">px4fmu.h</a>
 </li>
 <li>SDLOG_USB_VBUS_PORT
 : <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a9ed04c344aae38b6ee690c98e609d2d1">board.h</a>
 , <a class="el" href="chimera_8h.html#a9ed04c344aae38b6ee690c98e609d2d1">chimera.h</a>
+, <a class="el" href="v4_80_2px4fmu_8h.html#a9ed04c344aae38b6ee690c98e609d2d1">px4fmu.h</a>
 , <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a9ed04c344aae38b6ee690c98e609d2d1">board.h</a>
+, <a class="el" href="tawaki_8h.html#a9ed04c344aae38b6ee690c98e609d2d1">tawaki.h</a>
 </li>
 <li>SDLOG_WRITE_BUFFER_SIZE
 : <a class="el" href="sdLog_8c.html#af1cf68ce7e74ae0b79f57bbc3f7d2b77">sdLog.c</a>
@@ -654,6 +705,54 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 <li>SDMMC1_D3
 : <a class="el" href="chimera_2chibios_2v1_80_2board_8h.html#ad47137b50eafbbd4e59f85341f7cad9a">board.h</a>
 </li>
+<li>SDP3X_AIRSPEED_SCALE
+: <a class="el" href="airspeed__sdp3x_8c.html#a4a633039af690a6b98e9b725453ee97a">airspeed_sdp3x.c</a>
+</li>
+<li>SDP3X_CONT_MEAS_AVG_MODE
+: <a class="el" href="airspeed__sdp3x_8c.html#a57a46648a9b92543db296c224081926d">airspeed_sdp3x.c</a>
+</li>
+<li>SDP3X_CONT_NONE_MODE
+: <a class="el" href="airspeed__sdp3x_8c.html#a4628c457e8b69ebcb958337b55a1d301">airspeed_sdp3x.c</a>
+</li>
+<li>SDP3X_I2C_ADDR
+: <a class="el" href="airspeed__sdp3x_8c.html#abfe93fd2fba2b194e9979e77e04491e6">airspeed_sdp3x.c</a>
+</li>
+<li>SDP3X_LOWPASS_TAU
+: <a class="el" href="airspeed__sdp3x_8c.html#a28228ce22354884381af09dd0ab67990">airspeed_sdp3x.c</a>
+</li>
+<li>SDP3X_MODE
+: <a class="el" href="airspeed__sdp3x_8c.html#a302057fb4415f733d144efdf81b35042">airspeed_sdp3x.c</a>
+</li>
+<li>SDP3X_PRESSURE_OFFSET
+: <a class="el" href="airspeed__sdp3x_8c.html#a53dcb4b0c6201cc62fa5c2a418099885">airspeed_sdp3x.c</a>
+</li>
+<li>SDP3X_PRESSURE_SCALE
+: <a class="el" href="airspeed__sdp3x_8c.html#a833247ff92e503c30c5fac5865f29d4a">airspeed_sdp3x.c</a>
+</li>
+<li>SDP3X_RESET_ADDR
+: <a class="el" href="airspeed__sdp3x_8c.html#a001677d008cba396d1b19ccc43b44e58">airspeed_sdp3x.c</a>
+</li>
+<li>SDP3X_RESET_CMD
+: <a class="el" href="airspeed__sdp3x_8c.html#a00b0173a2e315ee9d91ef49e7e35092c">airspeed_sdp3x.c</a>
+</li>
+<li>SDP3X_SCALE_PRESSURE_SDP31
+: <a class="el" href="airspeed__sdp3x_8c.html#a0e691948896a6ac348ccaa6095d9a303">airspeed_sdp3x.c</a>
+</li>
+<li>SDP3X_SCALE_PRESSURE_SDP32
+: <a class="el" href="airspeed__sdp3x_8c.html#ad04b448f2d0276b2fb575c8f4037ca9f">airspeed_sdp3x.c</a>
+</li>
+<li>SDP3X_SCALE_PRESSURE_SDP33
+: <a class="el" href="airspeed__sdp3x_8c.html#aa816123b7f9d35bdab9aa955f0ca8cb1">airspeed_sdp3x.c</a>
+</li>
+<li>SDP3X_SCALE_TEMPERATURE
+: <a class="el" href="airspeed__sdp3x_8c.html#a04cd452c7ad7145bfe78fbda387fceab">airspeed_sdp3x.c</a>
+</li>
+<li>SDP3X_SENDER_ID
+: <a class="el" href="abi__sender__ids_8h.html#aaa3985b6f3b689ca90203cb1f3a7e627">abi_sender_ids.h</a>
+</li>
+<li>SDP3X_SYNC_SEND
+: <a class="el" href="airspeed__sdp3x_8c.html#ab736878963b3a735a8de5a719ed3e49b">airspeed_sdp3x.c</a>
+</li>
 <li>SEARCH_COMMAND
 : <a class="el" href="esc32_8c.html#a4be300a2f5f31c7b53d19af10cbcfb02">esc32.c</a>
 </li>
@@ -664,7 +763,7 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 : <a class="el" href="gps__mtk_8c.html#a29dced533d54747a92c5f1d2e08a85dd">gps_mtk.c</a>
 </li>
 <li>SECS_IN_YEAR
-: <a class="el" href="group__math__geodetic__wmm.html#gaedaabe5005511ea2e021e6dda4712276">pprz_geodetic_wmm2015.h</a>
+: <a class="el" href="group__math__geodetic__wmm.html#gaedaabe5005511ea2e021e6dda4712276">pprz_geodetic_wmm2020.h</a>
 </li>
 <li>SECS_MINUTE
 : <a class="el" href="gps__mtk_8c.html#a8a6b7f393a1d898727558c8513abeffd">gps_mtk.c</a>
@@ -701,6 +800,9 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 </li>
 <li>SERIAL_DEFAULT_BITRATE
 : <a class="el" href="group__HAL__CONF.html#gacb4c08ac23f83ac9d58c50ff840de516">halconf.h</a>
+</li>
+<li>SERIAL_INIT_NULL
+: <a class="el" href="chibios_2mcu__periph_2uart__arch_8c.html#a48ed0f7a7c1539c82b41b1d634fcd10f">uart_arch.c</a>
 </li>
 <li>SERIAL_USB_BUFFERS_NUMBER
 : <a class="el" href="group__HAL__CONF.html#ga0c332b2493fd2106beb13425549120fe">halconf.h</a>
@@ -837,6 +939,9 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 <li>SET_LINE_CODING
 : <a class="el" href="lpc21_2usb__ser__hw_8c.html#a91a9c047339a1a5918b6a923af6d1af6">usb_ser_hw.c</a>
 </li>
+<li>SetAPThrottleFromCommands
+: <a class="el" href="rover__guidance__holonomic_8h.html#aa6996cf4052f6cc4c16f58646a9fe942">rover_guidance_holonomic.h</a>
+</li>
 <li>SetCommands
 : <a class="el" href="commands_8h.html#a75054f73ea928d6ec314b745bf672106">commands.h</a>
 </li>
@@ -857,6 +962,36 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 </li>
 <li>SHELL
 : <a class="el" href="chdk__pipe_8c.html#a0db8a9b5ad5a66e4adc36d0ba68735c8">chdk_pipe.c</a>
+</li>
+<li>SHIFT_TRACKING_DEBUG
+: <a class="el" href="shift__tracking_8c.html#abdd8d901844d4d65bd1ca7902bc94117">shift_tracking.c</a>
+</li>
+<li>SHIFT_TRACKING_DIR
+: <a class="el" href="shift__tracking_8c.html#a073a4c33a4fa3246e5c2e730831a363b">shift_tracking.c</a>
+</li>
+<li>SHIFT_TRACKING_ID
+: <a class="el" href="shift__tracking_8c.html#a5461cfe6e718352c7fcf8ddfba230e7d">shift_tracking.c</a>
+</li>
+<li>SHIFT_TRACKING_KD
+: <a class="el" href="shift__tracking_8c.html#a4b6b1ab04dc30681420b53bef4771513">shift_tracking.c</a>
+</li>
+<li>SHIFT_TRACKING_KI
+: <a class="el" href="shift__tracking_8c.html#a1945b402048a9ca7216df45f5a36a7df">shift_tracking.c</a>
+</li>
+<li>SHIFT_TRACKING_KP
+: <a class="el" href="shift__tracking_8c.html#aa018238f695179badada15bf5ad08947">shift_tracking.c</a>
+</li>
+<li>SHIFT_TRACKING_MAXSHIFT
+: <a class="el" href="shift__tracking_8c.html#ae23582dd450b44d2d92fd703054d0dee">shift_tracking.c</a>
+</li>
+<li>shift_tracking_SetKd
+: <a class="el" href="shift__tracking_8h.html#a6793152391f8f5a948376cc7ec7e7b02">shift_tracking.h</a>
+</li>
+<li>shift_tracking_SetKi
+: <a class="el" href="shift__tracking_8h.html#ac818725e18e4a585f5e2305def0171a7">shift_tracking.h</a>
+</li>
+<li>shift_tracking_SetKp
+: <a class="el" href="shift__tracking_8h.html#ac5821af4b82d8f01720a640155542f7f">shift_tracking.h</a>
 </li>
 <li>ShortOfBuf
 : <a class="el" href="nps__fdm__crrcsim_8c.html#a1ba00773850fa820dc9157bcdf94d25b">nps_fdm_crrcsim.c</a>
@@ -908,6 +1043,9 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 </li>
 <li>SIM_DT
 : <a class="el" href="nps__main_8h.html#aae9dac26905ad0476f41c25a333f0839">nps_main.h</a>
+</li>
+<li>SIM_UPDATE_DL
+: <a class="el" href="sim__ap_8c.html#a0a55c04d25c5857e49e149e3b4b6a8d0">sim_ap.c</a>
 </li>
 <li>SIRF_GPS_NB_CHANNELS
 : <a class="el" href="gps__sirf_8h.html#ae3d01e20e4ac3b3430068a83841a1b47">gps_sirf.h</a>
@@ -1089,6 +1227,15 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 <li>SODA
 : <a class="el" href="catia_8c.html#aefdeaeeb24cae31c70526111f308fe8d">catia.c</a>
 </li>
+<li>SOFT_RESET
+: <a class="el" href="vl53l1x__api_8h.html#a74625341a79e3484830c401d8947443c">vl53l1x_api.h</a>
+</li>
+<li>SOFTI2C0_DIVIDER
+: <a class="el" href="softi2c_8c.html#a367b2681b98027c46232ad58bf2fb230">softi2c.c</a>
+</li>
+<li>SOFTI2C1_DIVIDER
+: <a class="el" href="softi2c_8c.html#a09fda89a588b6b9fd2ba9a703f3c12ba">softi2c.c</a>
+</li>
 <li>SONAR_BEBOP_ADC_BUFFER_SIZE
 : <a class="el" href="sonar__bebop_8c.html#a4e8a10619b7218be47016114a501e943">sonar_bebop.c</a>
 </li>
@@ -1105,16 +1252,20 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 : <a class="el" href="sonar__bebop_8c.html#a5e6595e3723dd6cb79c4c5d658493c7e">sonar_bebop.c</a>
 </li>
 <li>SONAR_BEBOP_PEAK_THRESHOLD
-: <a class="el" href="sonar__bebop_8c.html#ad38ba37e0445c0f57ef79e1c154ca7a3">sonar_bebop.c</a>
+: <a class="el" href="disco_8h.html#ad38ba37e0445c0f57ef79e1c154ca7a3">disco.h</a>
+, <a class="el" href="sonar__bebop_8c.html#ad38ba37e0445c0f57ef79e1c154ca7a3">sonar_bebop.c</a>
 </li>
 <li>SONAR_BEBOP_TRANSITION_COUNT
-: <a class="el" href="sonar__bebop_8c.html#a6017153886b228ceea828e5d7333a20b">sonar_bebop.c</a>
+: <a class="el" href="disco_8h.html#a6017153886b228ceea828e5d7333a20b">disco.h</a>
+, <a class="el" href="sonar__bebop_8c.html#a6017153886b228ceea828e5d7333a20b">sonar_bebop.c</a>
 </li>
 <li>SONAR_BEBOP_TRANSITION_HIGH_TO_LOW
-: <a class="el" href="sonar__bebop_8c.html#ab5d4a93ccc6b9424f012526922b6344c">sonar_bebop.c</a>
+: <a class="el" href="disco_8h.html#ab5d4a93ccc6b9424f012526922b6344c">disco.h</a>
+, <a class="el" href="sonar__bebop_8c.html#ab5d4a93ccc6b9424f012526922b6344c">sonar_bebop.c</a>
 </li>
 <li>SONAR_BEBOP_TRANSITION_LOW_TO_HIGH
-: <a class="el" href="sonar__bebop_8c.html#aa1a2721b9d1a8086bff14fb86548bc7c">sonar_bebop.c</a>
+: <a class="el" href="disco_8h.html#aa1a2721b9d1a8086bff14fb86548bc7c">disco.h</a>
+, <a class="el" href="sonar__bebop_8c.html#aa1a2721b9d1a8086bff14fb86548bc7c">sonar_bebop.c</a>
 </li>
 <li>SONAR_OFFSET
 : <a class="el" href="navdata_8c.html#aca20e740d4b26997993c313e7142666e">navdata.c</a>
@@ -1123,6 +1274,21 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 <li>SONAR_SCALE
 : <a class="el" href="navdata_8c.html#a67fe971f4124b4a3b331e7b812e88a58">navdata.c</a>
 , <a class="el" href="sonar__adc_8c.html#a67fe971f4124b4a3b331e7b812e88a58">sonar_adc.c</a>
+</li>
+<li>SONAR_VL53L1X_DISTANCEMODE
+: <a class="el" href="sonar__vl53l1x_8c.html#a101c0b1279c31a7eed82beea322aa5a8">sonar_vl53l1x.c</a>
+</li>
+<li>SONAR_VL53L1X_I2C_ADDR
+: <a class="el" href="sonar__vl53l1x_8c.html#a9dd7932ee8a123c5e77e09bf70f530d0">sonar_vl53l1x.c</a>
+</li>
+<li>SONAR_VL53L1X_INTERMEASUREMENT_MS
+: <a class="el" href="sonar__vl53l1x_8c.html#a88b50d9590a0982b7a280947dc36cc4c">sonar_vl53l1x.c</a>
+</li>
+<li>SONAR_VL53L1X_OFFSET
+: <a class="el" href="sonar__vl53l1x_8c.html#a64ad1f96e33c174b99733b091bea3d6a">sonar_vl53l1x.c</a>
+</li>
+<li>SONAR_VL53L1X_TIMINGBUDGET_MS
+: <a class="el" href="sonar__vl53l1x_8c.html#ae665ecf28ffce54d39a79fb01e7878ab">sonar_vl53l1x.c</a>
 </li>
 <li>SPB_FIX_MODE_FIXED
 : <a class="el" href="gps__piksi_8c.html#a3eae2ac77a5a6fd15447e3dec0bc37e4">gps_piksi.c</a>
@@ -1141,6 +1307,9 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 </li>
 <li>SPEED_ENU_I
 : <a class="el" href="group__state__velocity.html#ga288e35e2fd85eed077f067a8a05b73a6">state.h</a>
+</li>
+<li>SPEED_FACTOR
+: <a class="el" href="actuators__ostrich_8c.html#a5a469920b16bb69d617be8fca7a2f1de">actuators_ostrich.c</a>
 </li>
 <li>SPEED_FLOAT_OF_BFP
 : <a class="el" href="group__math__algebra__int.html#ga9f07d3d363b34da9e458e342f7453cc4">pprz_algebra_int.h</a>
@@ -1165,6 +1334,12 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 </li>
 <li>SPEED_NED_I
 : <a class="el" href="group__state__velocity.html#gad2f40b29920e3d9e602cdb3012db6210">state.h</a>
+</li>
+<li>SPEED_NEUTRAL
+: <a class="el" href="actuators__ostrich_8c.html#ac97aa38bc289025d330e52a66b4a39cb">actuators_ostrich.c</a>
+</li>
+<li>SPEED_OF_CMD
+: <a class="el" href="actuators__ostrich_8c.html#a07ea92874bea8ab24e571098434000a5">actuators_ostrich.c</a>
 </li>
 <li>SPEEDS_BFP_OF_REAL
 : <a class="el" href="group__math__algebra__generic.html#gab2e4a9721f74470ea3cbd5078067dc2b">pprz_algebra.h</a>
@@ -1194,6 +1369,7 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 , <a class="el" href="openpilot__revo__nano_8h.html#a787b5d0dff7658e5e923331317635545">openpilot_revo_nano.h</a>
 , <a class="el" href="px4fmu__1_87_8h.html#a787b5d0dff7658e5e923331317635545">px4fmu_1.7.h</a>
 , <a class="el" href="stm32f4__discovery_8h.html#a787b5d0dff7658e5e923331317635545">stm32f4_discovery.h</a>
+, <a class="el" href="tawaki_8h.html#a787b5d0dff7658e5e923331317635545">tawaki.h</a>
 </li>
 <li>SPEKTRUM_BIND_PIN_HIGH
 : <a class="el" href="navstik__1_80_8h.html#a5b4e3d1fb511752e779e98de40ef417a">navstik_1.0.h</a>
@@ -1220,10 +1396,12 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 , <a class="el" href="openpilot__revo__nano_8h.html#a61f9ceb054741c177baac8a8b0282628">openpilot_revo_nano.h</a>
 , <a class="el" href="px4fmu__1_87_8h.html#a61f9ceb054741c177baac8a8b0282628">px4fmu_1.7.h</a>
 , <a class="el" href="stm32f4__discovery_8h.html#a61f9ceb054741c177baac8a8b0282628">stm32f4_discovery.h</a>
+, <a class="el" href="tawaki_8h.html#a61f9ceb054741c177baac8a8b0282628">tawaki.h</a>
 </li>
 <li>SPEKTRUM_BIND_WAIT
 : <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#ad9c6fda612b8ff7f3ea808c9ee297b29">board.h</a>
 , <a class="el" href="chimera_8h.html#ad9c6fda612b8ff7f3ea808c9ee297b29">chimera.h</a>
+, <a class="el" href="tawaki_8h.html#ad9c6fda612b8ff7f3ea808c9ee297b29">tawaki.h</a>
 , <a class="el" href="spektrum_8c.html#ad9c6fda612b8ff7f3ea808c9ee297b29">spektrum.c</a>
 </li>
 <li>SPEKTRUM_CHANNELS_PER_FRAME
@@ -1243,6 +1421,9 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 </li>
 <li>SPEKTRUM_MIN_FRAME_SPACE
 : <a class="el" href="spektrum_8h.html#aeba71735c6fa0a3d00c6c36d8036fc76">spektrum.h</a>
+</li>
+<li>SPEKTRUM_POWER
+: <a class="el" href="px4fmu_2chibios_2v4_80_2board_8h.html#a2451e03da4f45d25da4c77d69ccff285">board.h</a>
 </li>
 <li>SPEKTRUM_PRIMARY_BIND_CONF_PIN
 : <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a6c01b610a4ef6d66079fcbdc464e6208">board.h</a>
@@ -1278,6 +1459,9 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 <li>SPEKTRUM_SYS_22_2048_X
 : <a class="el" href="spektrum_8c.html#a783071753b1d879ae721860496446d0d">spektrum.c</a>
 </li>
+<li>SPEKTRUM_SYS_TYPE
+: <a class="el" href="spektrum_8c.html#a2d7a180e0a45f48412c5ba871d08f4df">spektrum.c</a>
+</li>
 <li>SPEKTRUM_TIMER
 : <a class="el" href="px4io__2_84_8h.html#a084a3cbe1706c7384ece389f60361d48">px4io_2.4.h</a>
 </li>
@@ -1295,10 +1479,7 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 , <a class="el" href="stm32f4__discovery_8h.html#a5a46615f5192bb2619f0515ac0a230e9">stm32f4_discovery.h</a>
 </li>
 <li>SPEKTRUM_UART1_BANK
-: <a class="el" href="openpilot__revo__1_80_8h.html#adea36357b1c0c2ae4214bd55056e9f9f">openpilot_revo_1.0.h</a>
-, <a class="el" href="px4io__2_84_8h.html#adea36357b1c0c2ae4214bd55056e9f9f">px4io_2.4.h</a>
-, <a class="el" href="stm32f4__discovery_8h.html#adea36357b1c0c2ae4214bd55056e9f9f">stm32f4_discovery.h</a>
-, <a class="el" href="cc3d_8h.html#adea36357b1c0c2ae4214bd55056e9f9f">cc3d.h</a>
+: <a class="el" href="cc3d_8h.html#adea36357b1c0c2ae4214bd55056e9f9f">cc3d.h</a>
 , <a class="el" href="krooz__sd_8h.html#adea36357b1c0c2ae4214bd55056e9f9f">krooz_sd.h</a>
 , <a class="el" href="lisa__l__1_80_8h.html#adea36357b1c0c2ae4214bd55056e9f9f">lisa_l_1.0.h</a>
 , <a class="el" href="lisa__m__common_8h.html#adea36357b1c0c2ae4214bd55056e9f9f">lisa_m_common.h</a>
@@ -1306,6 +1487,9 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 , <a class="el" href="lisa__s__1_80_8h.html#adea36357b1c0c2ae4214bd55056e9f9f">lisa_s_1.0.h</a>
 , <a class="el" href="naze32__common_8h.html#adea36357b1c0c2ae4214bd55056e9f9f">naze32_common.h</a>
 , <a class="el" href="opa__ftd__1_80_8h.html#adea36357b1c0c2ae4214bd55056e9f9f">opa_ftd_1.0.h</a>
+, <a class="el" href="openpilot__revo__1_80_8h.html#adea36357b1c0c2ae4214bd55056e9f9f">openpilot_revo_1.0.h</a>
+, <a class="el" href="px4io__2_84_8h.html#adea36357b1c0c2ae4214bd55056e9f9f">px4io_2.4.h</a>
+, <a class="el" href="stm32f4__discovery_8h.html#adea36357b1c0c2ae4214bd55056e9f9f">stm32f4_discovery.h</a>
 </li>
 <li>SPEKTRUM_UART1_DEV
 : <a class="el" href="cc3d_8h.html#acdfc946654870dc7013b6f8b9d9e5a24">cc3d.h</a>
@@ -1637,12 +1821,14 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 : <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a4409cac3bdec2cfc7d7ce95c1ef4b002">board.h</a>
 , <a class="el" href="apogee__1_80_8h.html#a4409cac3bdec2cfc7d7ce95c1ef4b002">apogee_1.0.h</a>
 , <a class="el" href="chimera_8h.html#a4409cac3bdec2cfc7d7ce95c1ef4b002">chimera.h</a>
+, <a class="el" href="crazyflie_8h.html#a4409cac3bdec2cfc7d7ce95c1ef4b002">crazyflie.h</a>
 , <a class="el" href="elle0__common_8h.html#a4409cac3bdec2cfc7d7ce95c1ef4b002">elle0_common.h</a>
 , <a class="el" href="krooz__sd_8h.html#a4409cac3bdec2cfc7d7ce95c1ef4b002">krooz_sd.h</a>
 , <a class="el" href="lisa__mx__common_8h.html#a4409cac3bdec2cfc7d7ce95c1ef4b002">lisa_mx_common.h</a>
 , <a class="el" href="opa__ap__1_80_8h.html#a4409cac3bdec2cfc7d7ce95c1ef4b002">opa_ap_1.0.h</a>
 , <a class="el" href="opa__ftd__1_80_8h.html#a4409cac3bdec2cfc7d7ce95c1ef4b002">opa_ftd_1.0.h</a>
 , <a class="el" href="openpilot__revo__1_80_8h.html#a4409cac3bdec2cfc7d7ce95c1ef4b002">openpilot_revo_1.0.h</a>
+, <a class="el" href="v4_80_2px4fmu_8h.html#a4409cac3bdec2cfc7d7ce95c1ef4b002">px4fmu.h</a>
 , <a class="el" href="px4fmu__1_87_8h.html#a4409cac3bdec2cfc7d7ce95c1ef4b002">px4fmu_1.7.h</a>
 , <a class="el" href="px4fmu__2_84_8h.html#a4409cac3bdec2cfc7d7ce95c1ef4b002">px4fmu_2.4.h</a>
 , <a class="el" href="px4fmu__4_80_8h.html#a4409cac3bdec2cfc7d7ce95c1ef4b002">px4fmu_4.0.h</a>
@@ -1653,12 +1839,14 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 : <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#ada248ea908ea4ee30983b56d29af8380">board.h</a>
 , <a class="el" href="apogee__1_80_8h.html#ada248ea908ea4ee30983b56d29af8380">apogee_1.0.h</a>
 , <a class="el" href="chimera_8h.html#ada248ea908ea4ee30983b56d29af8380">chimera.h</a>
+, <a class="el" href="crazyflie_8h.html#ada248ea908ea4ee30983b56d29af8380">crazyflie.h</a>
 , <a class="el" href="elle0__common_8h.html#ada248ea908ea4ee30983b56d29af8380">elle0_common.h</a>
 , <a class="el" href="krooz__sd_8h.html#ada248ea908ea4ee30983b56d29af8380">krooz_sd.h</a>
 , <a class="el" href="lisa__mx__common_8h.html#ada248ea908ea4ee30983b56d29af8380">lisa_mx_common.h</a>
 , <a class="el" href="opa__ap__1_80_8h.html#ada248ea908ea4ee30983b56d29af8380">opa_ap_1.0.h</a>
 , <a class="el" href="opa__ftd__1_80_8h.html#ada248ea908ea4ee30983b56d29af8380">opa_ftd_1.0.h</a>
 , <a class="el" href="openpilot__revo__1_80_8h.html#ada248ea908ea4ee30983b56d29af8380">openpilot_revo_1.0.h</a>
+, <a class="el" href="v4_80_2px4fmu_8h.html#ada248ea908ea4ee30983b56d29af8380">px4fmu.h</a>
 , <a class="el" href="px4fmu__1_87_8h.html#ada248ea908ea4ee30983b56d29af8380">px4fmu_1.7.h</a>
 , <a class="el" href="px4fmu__2_84_8h.html#ada248ea908ea4ee30983b56d29af8380">px4fmu_2.4.h</a>
 , <a class="el" href="px4fmu__4_80_8h.html#ada248ea908ea4ee30983b56d29af8380">px4fmu_4.0.h</a>
@@ -1669,12 +1857,14 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 : <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a7ea27a1248fdb7ecc776cc16d56d52b8">board.h</a>
 , <a class="el" href="apogee__1_80_8h.html#a7ea27a1248fdb7ecc776cc16d56d52b8">apogee_1.0.h</a>
 , <a class="el" href="chimera_8h.html#a7ea27a1248fdb7ecc776cc16d56d52b8">chimera.h</a>
+, <a class="el" href="crazyflie_8h.html#a7ea27a1248fdb7ecc776cc16d56d52b8">crazyflie.h</a>
 , <a class="el" href="elle0__common_8h.html#a7ea27a1248fdb7ecc776cc16d56d52b8">elle0_common.h</a>
 , <a class="el" href="krooz__sd_8h.html#a7ea27a1248fdb7ecc776cc16d56d52b8">krooz_sd.h</a>
 , <a class="el" href="lisa__mx__common_8h.html#a7ea27a1248fdb7ecc776cc16d56d52b8">lisa_mx_common.h</a>
 , <a class="el" href="opa__ap__1_80_8h.html#a7ea27a1248fdb7ecc776cc16d56d52b8">opa_ap_1.0.h</a>
 , <a class="el" href="opa__ftd__1_80_8h.html#a7ea27a1248fdb7ecc776cc16d56d52b8">opa_ftd_1.0.h</a>
 , <a class="el" href="openpilot__revo__1_80_8h.html#a7ea27a1248fdb7ecc776cc16d56d52b8">openpilot_revo_1.0.h</a>
+, <a class="el" href="v4_80_2px4fmu_8h.html#a7ea27a1248fdb7ecc776cc16d56d52b8">px4fmu.h</a>
 , <a class="el" href="px4fmu__1_87_8h.html#a7ea27a1248fdb7ecc776cc16d56d52b8">px4fmu_1.7.h</a>
 , <a class="el" href="px4fmu__2_84_8h.html#a7ea27a1248fdb7ecc776cc16d56d52b8">px4fmu_2.4.h</a>
 , <a class="el" href="px4fmu__4_80_8h.html#a7ea27a1248fdb7ecc776cc16d56d52b8">px4fmu_4.0.h</a>
@@ -1694,12 +1884,14 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 : <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a871d43c3d2837b5d0719389e347aa300">board.h</a>
 , <a class="el" href="apogee__1_80_8h.html#a871d43c3d2837b5d0719389e347aa300">apogee_1.0.h</a>
 , <a class="el" href="chimera_8h.html#a871d43c3d2837b5d0719389e347aa300">chimera.h</a>
+, <a class="el" href="crazyflie_8h.html#a871d43c3d2837b5d0719389e347aa300">crazyflie.h</a>
 , <a class="el" href="elle0__common_8h.html#a871d43c3d2837b5d0719389e347aa300">elle0_common.h</a>
 , <a class="el" href="krooz__sd_8h.html#a871d43c3d2837b5d0719389e347aa300">krooz_sd.h</a>
 , <a class="el" href="lisa__mx__common_8h.html#a871d43c3d2837b5d0719389e347aa300">lisa_mx_common.h</a>
 , <a class="el" href="opa__ap__1_80_8h.html#a871d43c3d2837b5d0719389e347aa300">opa_ap_1.0.h</a>
 , <a class="el" href="opa__ftd__1_80_8h.html#a871d43c3d2837b5d0719389e347aa300">opa_ftd_1.0.h</a>
 , <a class="el" href="openpilot__revo__1_80_8h.html#a871d43c3d2837b5d0719389e347aa300">openpilot_revo_1.0.h</a>
+, <a class="el" href="v4_80_2px4fmu_8h.html#a871d43c3d2837b5d0719389e347aa300">px4fmu.h</a>
 , <a class="el" href="px4fmu__1_87_8h.html#a871d43c3d2837b5d0719389e347aa300">px4fmu_1.7.h</a>
 , <a class="el" href="px4fmu__2_84_8h.html#a871d43c3d2837b5d0719389e347aa300">px4fmu_2.4.h</a>
 , <a class="el" href="px4fmu__4_80_8h.html#a871d43c3d2837b5d0719389e347aa300">px4fmu_4.0.h</a>
@@ -1710,12 +1902,14 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 : <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#afe67bca9eb8da8654288c02124683016">board.h</a>
 , <a class="el" href="apogee__1_80_8h.html#afe67bca9eb8da8654288c02124683016">apogee_1.0.h</a>
 , <a class="el" href="chimera_8h.html#afe67bca9eb8da8654288c02124683016">chimera.h</a>
+, <a class="el" href="crazyflie_8h.html#afe67bca9eb8da8654288c02124683016">crazyflie.h</a>
 , <a class="el" href="elle0__common_8h.html#afe67bca9eb8da8654288c02124683016">elle0_common.h</a>
 , <a class="el" href="krooz__sd_8h.html#afe67bca9eb8da8654288c02124683016">krooz_sd.h</a>
 , <a class="el" href="lisa__mx__common_8h.html#afe67bca9eb8da8654288c02124683016">lisa_mx_common.h</a>
 , <a class="el" href="opa__ap__1_80_8h.html#afe67bca9eb8da8654288c02124683016">opa_ap_1.0.h</a>
 , <a class="el" href="opa__ftd__1_80_8h.html#afe67bca9eb8da8654288c02124683016">opa_ftd_1.0.h</a>
 , <a class="el" href="openpilot__revo__1_80_8h.html#afe67bca9eb8da8654288c02124683016">openpilot_revo_1.0.h</a>
+, <a class="el" href="v4_80_2px4fmu_8h.html#afe67bca9eb8da8654288c02124683016">px4fmu.h</a>
 , <a class="el" href="px4fmu__1_87_8h.html#afe67bca9eb8da8654288c02124683016">px4fmu_1.7.h</a>
 , <a class="el" href="px4fmu__2_84_8h.html#afe67bca9eb8da8654288c02124683016">px4fmu_2.4.h</a>
 , <a class="el" href="px4fmu__4_80_8h.html#afe67bca9eb8da8654288c02124683016">px4fmu_4.0.h</a>
@@ -1735,12 +1929,14 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 : <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a5e12991f1c0aedb1a09cf8ef3b8206fe">board.h</a>
 , <a class="el" href="apogee__1_80_8h.html#a5e12991f1c0aedb1a09cf8ef3b8206fe">apogee_1.0.h</a>
 , <a class="el" href="chimera_8h.html#a5e12991f1c0aedb1a09cf8ef3b8206fe">chimera.h</a>
+, <a class="el" href="crazyflie_8h.html#a5e12991f1c0aedb1a09cf8ef3b8206fe">crazyflie.h</a>
 , <a class="el" href="elle0__common_8h.html#a5e12991f1c0aedb1a09cf8ef3b8206fe">elle0_common.h</a>
 , <a class="el" href="krooz__sd_8h.html#a5e12991f1c0aedb1a09cf8ef3b8206fe">krooz_sd.h</a>
 , <a class="el" href="lisa__mx__common_8h.html#a5e12991f1c0aedb1a09cf8ef3b8206fe">lisa_mx_common.h</a>
 , <a class="el" href="opa__ap__1_80_8h.html#a5e12991f1c0aedb1a09cf8ef3b8206fe">opa_ap_1.0.h</a>
 , <a class="el" href="opa__ftd__1_80_8h.html#a5e12991f1c0aedb1a09cf8ef3b8206fe">opa_ftd_1.0.h</a>
 , <a class="el" href="openpilot__revo__1_80_8h.html#a5e12991f1c0aedb1a09cf8ef3b8206fe">openpilot_revo_1.0.h</a>
+, <a class="el" href="v4_80_2px4fmu_8h.html#a5e12991f1c0aedb1a09cf8ef3b8206fe">px4fmu.h</a>
 , <a class="el" href="px4fmu__1_87_8h.html#a5e12991f1c0aedb1a09cf8ef3b8206fe">px4fmu_1.7.h</a>
 , <a class="el" href="px4fmu__2_84_8h.html#a5e12991f1c0aedb1a09cf8ef3b8206fe">px4fmu_2.4.h</a>
 , <a class="el" href="px4fmu__4_80_8h.html#a5e12991f1c0aedb1a09cf8ef3b8206fe">px4fmu_4.0.h</a>
@@ -1751,12 +1947,14 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 : <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a09bc02b7a8383e70a06ebdc7aa25f750">board.h</a>
 , <a class="el" href="apogee__1_80_8h.html#a09bc02b7a8383e70a06ebdc7aa25f750">apogee_1.0.h</a>
 , <a class="el" href="chimera_8h.html#a09bc02b7a8383e70a06ebdc7aa25f750">chimera.h</a>
+, <a class="el" href="crazyflie_8h.html#a09bc02b7a8383e70a06ebdc7aa25f750">crazyflie.h</a>
 , <a class="el" href="elle0__common_8h.html#a09bc02b7a8383e70a06ebdc7aa25f750">elle0_common.h</a>
 , <a class="el" href="krooz__sd_8h.html#a09bc02b7a8383e70a06ebdc7aa25f750">krooz_sd.h</a>
 , <a class="el" href="lisa__mx__common_8h.html#a09bc02b7a8383e70a06ebdc7aa25f750">lisa_mx_common.h</a>
 , <a class="el" href="opa__ap__1_80_8h.html#a09bc02b7a8383e70a06ebdc7aa25f750">opa_ap_1.0.h</a>
 , <a class="el" href="opa__ftd__1_80_8h.html#a09bc02b7a8383e70a06ebdc7aa25f750">opa_ftd_1.0.h</a>
 , <a class="el" href="openpilot__revo__1_80_8h.html#a09bc02b7a8383e70a06ebdc7aa25f750">openpilot_revo_1.0.h</a>
+, <a class="el" href="v4_80_2px4fmu_8h.html#a09bc02b7a8383e70a06ebdc7aa25f750">px4fmu.h</a>
 , <a class="el" href="px4fmu__1_87_8h.html#a09bc02b7a8383e70a06ebdc7aa25f750">px4fmu_1.7.h</a>
 , <a class="el" href="px4fmu__2_84_8h.html#a09bc02b7a8383e70a06ebdc7aa25f750">px4fmu_2.4.h</a>
 , <a class="el" href="px4fmu__4_80_8h.html#a09bc02b7a8383e70a06ebdc7aa25f750">px4fmu_4.0.h</a>
@@ -1800,20 +1998,24 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 , <a class="el" href="navstik__1_80_8h.html#a7177258266354e8bfdaa446881db27e1">navstik_1.0.h</a>
 , <a class="el" href="opa__ap__1_80_8h.html#a7177258266354e8bfdaa446881db27e1">opa_ap_1.0.h</a>
 , <a class="el" href="openpilot__revo__nano_8h.html#a7177258266354e8bfdaa446881db27e1">openpilot_revo_nano.h</a>
+, <a class="el" href="v4_80_2px4fmu_8h.html#a7177258266354e8bfdaa446881db27e1">px4fmu.h</a>
 , <a class="el" href="px4fmu__2_84_8h.html#a7177258266354e8bfdaa446881db27e1">px4fmu_2.4.h</a>
 , <a class="el" href="px4fmu__4_80_8h.html#a7177258266354e8bfdaa446881db27e1">px4fmu_4.0.h</a>
 , <a class="el" href="stm32f4__discovery_8h.html#a7177258266354e8bfdaa446881db27e1">stm32f4_discovery.h</a>
+, <a class="el" href="tawaki_8h.html#a7177258266354e8bfdaa446881db27e1">tawaki.h</a>
 </li>
 <li>SPI2_GPIO_MISO
-: <a class="el" href="elle0__common_8h.html#a68386681137ae699e3b594ade89408c1">elle0_common.h</a>
+: <a class="el" href="openpilot__revo__nano_8h.html#a68386681137ae699e3b594ade89408c1">openpilot_revo_nano.h</a>
+, <a class="el" href="v4_80_2px4fmu_8h.html#a68386681137ae699e3b594ade89408c1">px4fmu.h</a>
+, <a class="el" href="px4fmu__2_84_8h.html#a68386681137ae699e3b594ade89408c1">px4fmu_2.4.h</a>
+, <a class="el" href="px4fmu__4_80_8h.html#a68386681137ae699e3b594ade89408c1">px4fmu_4.0.h</a>
+, <a class="el" href="stm32f4__discovery_8h.html#a68386681137ae699e3b594ade89408c1">stm32f4_discovery.h</a>
+, <a class="el" href="tawaki_8h.html#a68386681137ae699e3b594ade89408c1">tawaki.h</a>
+, <a class="el" href="elle0__common_8h.html#a68386681137ae699e3b594ade89408c1">elle0_common.h</a>
 , <a class="el" href="krooz__sd_8h.html#a68386681137ae699e3b594ade89408c1">krooz_sd.h</a>
 , <a class="el" href="lisa__mx__common_8h.html#a68386681137ae699e3b594ade89408c1">lisa_mx_common.h</a>
 , <a class="el" href="navstik__1_80_8h.html#a68386681137ae699e3b594ade89408c1">navstik_1.0.h</a>
 , <a class="el" href="opa__ap__1_80_8h.html#a68386681137ae699e3b594ade89408c1">opa_ap_1.0.h</a>
-, <a class="el" href="openpilot__revo__nano_8h.html#a68386681137ae699e3b594ade89408c1">openpilot_revo_nano.h</a>
-, <a class="el" href="px4fmu__2_84_8h.html#a68386681137ae699e3b594ade89408c1">px4fmu_2.4.h</a>
-, <a class="el" href="px4fmu__4_80_8h.html#a68386681137ae699e3b594ade89408c1">px4fmu_4.0.h</a>
-, <a class="el" href="stm32f4__discovery_8h.html#a68386681137ae699e3b594ade89408c1">stm32f4_discovery.h</a>
 </li>
 <li>SPI2_GPIO_MOSI
 : <a class="el" href="elle0__common_8h.html#a1102abe6725b0ff8c4c4a248dd46e976">elle0_common.h</a>
@@ -1822,9 +2024,11 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 , <a class="el" href="navstik__1_80_8h.html#a1102abe6725b0ff8c4c4a248dd46e976">navstik_1.0.h</a>
 , <a class="el" href="opa__ap__1_80_8h.html#a1102abe6725b0ff8c4c4a248dd46e976">opa_ap_1.0.h</a>
 , <a class="el" href="openpilot__revo__nano_8h.html#a1102abe6725b0ff8c4c4a248dd46e976">openpilot_revo_nano.h</a>
+, <a class="el" href="v4_80_2px4fmu_8h.html#a1102abe6725b0ff8c4c4a248dd46e976">px4fmu.h</a>
 , <a class="el" href="px4fmu__2_84_8h.html#a1102abe6725b0ff8c4c4a248dd46e976">px4fmu_2.4.h</a>
 , <a class="el" href="px4fmu__4_80_8h.html#a1102abe6725b0ff8c4c4a248dd46e976">px4fmu_4.0.h</a>
 , <a class="el" href="stm32f4__discovery_8h.html#a1102abe6725b0ff8c4c4a248dd46e976">stm32f4_discovery.h</a>
+, <a class="el" href="tawaki_8h.html#a1102abe6725b0ff8c4c4a248dd46e976">tawaki.h</a>
 </li>
 <li>SPI2_GPIO_NSS
 : <a class="el" href="elle0__common_8h.html#a75623f9270b0dc2e890eefb7033282be">elle0_common.h</a>
@@ -1841,9 +2045,11 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 , <a class="el" href="navstik__1_80_8h.html#ac76e332864ead609bed1dff4f04092c9">navstik_1.0.h</a>
 , <a class="el" href="opa__ap__1_80_8h.html#ac76e332864ead609bed1dff4f04092c9">opa_ap_1.0.h</a>
 , <a class="el" href="openpilot__revo__nano_8h.html#ac76e332864ead609bed1dff4f04092c9">openpilot_revo_nano.h</a>
+, <a class="el" href="v4_80_2px4fmu_8h.html#ac76e332864ead609bed1dff4f04092c9">px4fmu.h</a>
 , <a class="el" href="px4fmu__2_84_8h.html#ac76e332864ead609bed1dff4f04092c9">px4fmu_2.4.h</a>
 , <a class="el" href="px4fmu__4_80_8h.html#ac76e332864ead609bed1dff4f04092c9">px4fmu_4.0.h</a>
 , <a class="el" href="stm32f4__discovery_8h.html#ac76e332864ead609bed1dff4f04092c9">stm32f4_discovery.h</a>
+, <a class="el" href="tawaki_8h.html#ac76e332864ead609bed1dff4f04092c9">tawaki.h</a>
 </li>
 <li>SPI2_GPIO_PORT_MOSI
 : <a class="el" href="elle0__common_8h.html#a8498429e77239ef33e38cf77eeafdb02">elle0_common.h</a>
@@ -1852,9 +2058,11 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 , <a class="el" href="navstik__1_80_8h.html#a8498429e77239ef33e38cf77eeafdb02">navstik_1.0.h</a>
 , <a class="el" href="opa__ap__1_80_8h.html#a8498429e77239ef33e38cf77eeafdb02">opa_ap_1.0.h</a>
 , <a class="el" href="openpilot__revo__nano_8h.html#a8498429e77239ef33e38cf77eeafdb02">openpilot_revo_nano.h</a>
+, <a class="el" href="v4_80_2px4fmu_8h.html#a8498429e77239ef33e38cf77eeafdb02">px4fmu.h</a>
 , <a class="el" href="px4fmu__2_84_8h.html#a8498429e77239ef33e38cf77eeafdb02">px4fmu_2.4.h</a>
 , <a class="el" href="px4fmu__4_80_8h.html#a8498429e77239ef33e38cf77eeafdb02">px4fmu_4.0.h</a>
 , <a class="el" href="stm32f4__discovery_8h.html#a8498429e77239ef33e38cf77eeafdb02">stm32f4_discovery.h</a>
+, <a class="el" href="tawaki_8h.html#a8498429e77239ef33e38cf77eeafdb02">tawaki.h</a>
 </li>
 <li>SPI2_GPIO_PORT_NSS
 : <a class="el" href="elle0__common_8h.html#a9d66c24ba631c924123fe12d89aae695">elle0_common.h</a>
@@ -1871,9 +2079,11 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 , <a class="el" href="navstik__1_80_8h.html#a0d5b57671b99c1c787bce7ea23b44133">navstik_1.0.h</a>
 , <a class="el" href="opa__ap__1_80_8h.html#a0d5b57671b99c1c787bce7ea23b44133">opa_ap_1.0.h</a>
 , <a class="el" href="openpilot__revo__nano_8h.html#a0d5b57671b99c1c787bce7ea23b44133">openpilot_revo_nano.h</a>
+, <a class="el" href="v4_80_2px4fmu_8h.html#a0d5b57671b99c1c787bce7ea23b44133">px4fmu.h</a>
 , <a class="el" href="px4fmu__2_84_8h.html#a0d5b57671b99c1c787bce7ea23b44133">px4fmu_2.4.h</a>
 , <a class="el" href="px4fmu__4_80_8h.html#a0d5b57671b99c1c787bce7ea23b44133">px4fmu_4.0.h</a>
 , <a class="el" href="stm32f4__discovery_8h.html#a0d5b57671b99c1c787bce7ea23b44133">stm32f4_discovery.h</a>
+, <a class="el" href="tawaki_8h.html#a0d5b57671b99c1c787bce7ea23b44133">tawaki.h</a>
 </li>
 <li>SPI2_GPIO_SCK
 : <a class="el" href="elle0__common_8h.html#a0bbce43be56577bdd23c83ec945fb44c">elle0_common.h</a>
@@ -1882,9 +2092,11 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 , <a class="el" href="navstik__1_80_8h.html#a0bbce43be56577bdd23c83ec945fb44c">navstik_1.0.h</a>
 , <a class="el" href="opa__ap__1_80_8h.html#a0bbce43be56577bdd23c83ec945fb44c">opa_ap_1.0.h</a>
 , <a class="el" href="openpilot__revo__nano_8h.html#a0bbce43be56577bdd23c83ec945fb44c">openpilot_revo_nano.h</a>
+, <a class="el" href="v4_80_2px4fmu_8h.html#a0bbce43be56577bdd23c83ec945fb44c">px4fmu.h</a>
 , <a class="el" href="px4fmu__2_84_8h.html#a0bbce43be56577bdd23c83ec945fb44c">px4fmu_2.4.h</a>
 , <a class="el" href="px4fmu__4_80_8h.html#a0bbce43be56577bdd23c83ec945fb44c">px4fmu_4.0.h</a>
 , <a class="el" href="stm32f4__discovery_8h.html#a0bbce43be56577bdd23c83ec945fb44c">stm32f4_discovery.h</a>
+, <a class="el" href="tawaki_8h.html#a0bbce43be56577bdd23c83ec945fb44c">tawaki.h</a>
 </li>
 <li>SPI3_GPIO_AF
 : <a class="el" href="openpilot__revo__1_80_8h.html#a434c62a645a2b9d9761d14d24c3f4c9a">openpilot_revo_1.0.h</a>
@@ -1934,24 +2146,37 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 </li>
 <li>SPI4_GPIO_AF
 : <a class="el" href="px4fmu__2_84_8h.html#ab4ddd4336732d6fef737a65dada838fc">px4fmu_2.4.h</a>
+, <a class="el" href="tawaki_8h.html#ab4ddd4336732d6fef737a65dada838fc">tawaki.h</a>
 </li>
 <li>SPI4_GPIO_MISO
 : <a class="el" href="px4fmu__2_84_8h.html#ab692c93371d232ee70eb8266b0792877">px4fmu_2.4.h</a>
+, <a class="el" href="tawaki_8h.html#ab692c93371d232ee70eb8266b0792877">tawaki.h</a>
 </li>
 <li>SPI4_GPIO_MOSI
 : <a class="el" href="px4fmu__2_84_8h.html#a04c5c824d2e42577ce405f8126d5d3f3">px4fmu_2.4.h</a>
+, <a class="el" href="tawaki_8h.html#a04c5c824d2e42577ce405f8126d5d3f3">tawaki.h</a>
 </li>
 <li>SPI4_GPIO_PORT_MISO
 : <a class="el" href="px4fmu__2_84_8h.html#ac3ebb32b7670cbdd2d1e64f058087d10">px4fmu_2.4.h</a>
+, <a class="el" href="tawaki_8h.html#ac3ebb32b7670cbdd2d1e64f058087d10">tawaki.h</a>
 </li>
 <li>SPI4_GPIO_PORT_MOSI
 : <a class="el" href="px4fmu__2_84_8h.html#ad7d30e739218a940b26c49e6df016ae3">px4fmu_2.4.h</a>
+, <a class="el" href="tawaki_8h.html#ad7d30e739218a940b26c49e6df016ae3">tawaki.h</a>
 </li>
 <li>SPI4_GPIO_PORT_SCK
 : <a class="el" href="px4fmu__2_84_8h.html#ada253c26021992bf094cc1ca313e5039">px4fmu_2.4.h</a>
+, <a class="el" href="tawaki_8h.html#ada253c26021992bf094cc1ca313e5039">tawaki.h</a>
 </li>
 <li>SPI4_GPIO_SCK
 : <a class="el" href="px4fmu__2_84_8h.html#a2f55c30ea2b2bb8a0c85f87c9274d84f">px4fmu_2.4.h</a>
+, <a class="el" href="tawaki_8h.html#a2f55c30ea2b2bb8a0c85f87c9274d84f">tawaki.h</a>
+</li>
+<li>SPI_BLOCKING_TIMEOUT
+: <a class="el" href="spi_8h.html#aeff80f00f6c7ef00aeb93fd95c78ced0">spi.h</a>
+</li>
+<li>SPI_BUFFER_SIZE
+: <a class="el" href="pmw3901_8h.html#a97f9f5cc546b1896703fe63289b4fd3d">pmw3901.h</a>
 </li>
 <li>SPI_CHANNEL
 : <a class="el" href="logom__2_86_8h.html#aa8cbb3355883e35c18820bfa63c4ce3a">logom_2.6.h</a>
@@ -1970,19 +2195,12 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 : <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c.html#a1354efbc27aa57be50028df297684e0b">spi_arch.c</a>
 </li>
 <li>SPI_SELECT_SLAVE0_PIN
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a697b8e633c428bd167844542c8c1453f">board.h</a>
-, <a class="el" href="stm32f4__discovery_8h.html#a697b8e633c428bd167844542c8c1453f">stm32f4_discovery.h</a>
-, <a class="el" href="tiny__0_899_8h.html#a697b8e633c428bd167844542c8c1453f">tiny_0.99.h</a>
-, <a class="el" href="tiny__1_81_8h.html#a697b8e633c428bd167844542c8c1453f">tiny_1.1.h</a>
-, <a class="el" href="tiny__2_80_8h.html#a697b8e633c428bd167844542c8c1453f">tiny_2.0.h</a>
-, <a class="el" href="tiny__2_81_8h.html#a697b8e633c428bd167844542c8c1453f">tiny_2.1.h</a>
-, <a class="el" href="umarim__1_80_8h.html#a697b8e633c428bd167844542c8c1453f">umarim_1.0.h</a>
-, <a class="el" href="umarim__lite__2_80_8h.html#a697b8e633c428bd167844542c8c1453f">umarim_lite_2.0.h</a>
-, <a class="el" href="vms__ecu_2chibios_2v1_80_2board_8h.html#a697b8e633c428bd167844542c8c1453f">board.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a697b8e633c428bd167844542c8c1453f">board.h</a>
 , <a class="el" href="apogee__1_80_8h.html#a697b8e633c428bd167844542c8c1453f">apogee_1.0.h</a>
 , <a class="el" href="booz__1_80_8h.html#a697b8e633c428bd167844542c8c1453f">booz_1.0.h</a>
 , <a class="el" href="cc3d_8h.html#a697b8e633c428bd167844542c8c1453f">cc3d.h</a>
 , <a class="el" href="chimera_8h.html#a697b8e633c428bd167844542c8c1453f">chimera.h</a>
+, <a class="el" href="crazyflie_8h.html#a697b8e633c428bd167844542c8c1453f">crazyflie.h</a>
 , <a class="el" href="elle0__common_8h.html#a697b8e633c428bd167844542c8c1453f">elle0_common.h</a>
 , <a class="el" href="hbmini__1_80_8h.html#a697b8e633c428bd167844542c8c1453f">hbmini_1.0.h</a>
 , <a class="el" href="krooz__sd_8h.html#a697b8e633c428bd167844542c8c1453f">krooz_sd.h</a>
@@ -2000,10 +2218,21 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 , <a class="el" href="openpilot__revo__1_80_8h.html#a697b8e633c428bd167844542c8c1453f">openpilot_revo_1.0.h</a>
 , <a class="el" href="openpilot__revo__nano_8h.html#a697b8e633c428bd167844542c8c1453f">openpilot_revo_nano.h</a>
 , <a class="el" href="px4fmu_2chibios_2v2_84_2board_8h.html#a697b8e633c428bd167844542c8c1453f">board.h</a>
+, <a class="el" href="v4_80_2px4fmu_8h.html#a697b8e633c428bd167844542c8c1453f">px4fmu.h</a>
 , <a class="el" href="px4fmu__1_87_8h.html#a697b8e633c428bd167844542c8c1453f">px4fmu_1.7.h</a>
 , <a class="el" href="px4fmu__2_84_8h.html#a697b8e633c428bd167844542c8c1453f">px4fmu_2.4.h</a>
 , <a class="el" href="px4fmu__4_80_8h.html#a697b8e633c428bd167844542c8c1453f">px4fmu_4.0.h</a>
 , <a class="el" href="sdlog__1_80_8h.html#a697b8e633c428bd167844542c8c1453f">sdlog_1.0.h</a>
+, <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a697b8e633c428bd167844542c8c1453f">board.h</a>
+, <a class="el" href="stm32f4__discovery_8h.html#a697b8e633c428bd167844542c8c1453f">stm32f4_discovery.h</a>
+, <a class="el" href="tawaki_8h.html#a697b8e633c428bd167844542c8c1453f">tawaki.h</a>
+, <a class="el" href="tiny__0_899_8h.html#a697b8e633c428bd167844542c8c1453f">tiny_0.99.h</a>
+, <a class="el" href="tiny__1_81_8h.html#a697b8e633c428bd167844542c8c1453f">tiny_1.1.h</a>
+, <a class="el" href="tiny__2_80_8h.html#a697b8e633c428bd167844542c8c1453f">tiny_2.0.h</a>
+, <a class="el" href="tiny__2_81_8h.html#a697b8e633c428bd167844542c8c1453f">tiny_2.1.h</a>
+, <a class="el" href="umarim__1_80_8h.html#a697b8e633c428bd167844542c8c1453f">umarim_1.0.h</a>
+, <a class="el" href="umarim__lite__2_80_8h.html#a697b8e633c428bd167844542c8c1453f">umarim_lite_2.0.h</a>
+, <a class="el" href="vms__ecu_2chibios_2v1_80_2board_8h.html#a697b8e633c428bd167844542c8c1453f">board.h</a>
 </li>
 <li>SPI_SELECT_SLAVE0_PINSEL
 : <a class="el" href="booz__1_80_8h.html#a4b145b7a3f8f184e22eb317cf231eb28">booz_1.0.h</a>
@@ -2044,6 +2273,7 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 , <a class="el" href="booz__1_80_8h.html#a62cb06db3908015c7305ca6833f90159">booz_1.0.h</a>
 , <a class="el" href="cc3d_8h.html#a62cb06db3908015c7305ca6833f90159">cc3d.h</a>
 , <a class="el" href="chimera_8h.html#a62cb06db3908015c7305ca6833f90159">chimera.h</a>
+, <a class="el" href="crazyflie_8h.html#a62cb06db3908015c7305ca6833f90159">crazyflie.h</a>
 , <a class="el" href="elle0__common_8h.html#a62cb06db3908015c7305ca6833f90159">elle0_common.h</a>
 , <a class="el" href="hbmini__1_80_8h.html#a62cb06db3908015c7305ca6833f90159">hbmini_1.0.h</a>
 , <a class="el" href="krooz__sd_8h.html#a62cb06db3908015c7305ca6833f90159">krooz_sd.h</a>
@@ -2061,12 +2291,14 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 , <a class="el" href="openpilot__revo__1_80_8h.html#a62cb06db3908015c7305ca6833f90159">openpilot_revo_1.0.h</a>
 , <a class="el" href="openpilot__revo__nano_8h.html#a62cb06db3908015c7305ca6833f90159">openpilot_revo_nano.h</a>
 , <a class="el" href="px4fmu_2chibios_2v2_84_2board_8h.html#a62cb06db3908015c7305ca6833f90159">board.h</a>
+, <a class="el" href="v4_80_2px4fmu_8h.html#a62cb06db3908015c7305ca6833f90159">px4fmu.h</a>
 , <a class="el" href="px4fmu__1_87_8h.html#a62cb06db3908015c7305ca6833f90159">px4fmu_1.7.h</a>
 , <a class="el" href="px4fmu__2_84_8h.html#a62cb06db3908015c7305ca6833f90159">px4fmu_2.4.h</a>
 , <a class="el" href="px4fmu__4_80_8h.html#a62cb06db3908015c7305ca6833f90159">px4fmu_4.0.h</a>
 , <a class="el" href="sdlog__1_80_8h.html#a62cb06db3908015c7305ca6833f90159">sdlog_1.0.h</a>
 , <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a62cb06db3908015c7305ca6833f90159">board.h</a>
 , <a class="el" href="stm32f4__discovery_8h.html#a62cb06db3908015c7305ca6833f90159">stm32f4_discovery.h</a>
+, <a class="el" href="tawaki_8h.html#a62cb06db3908015c7305ca6833f90159">tawaki.h</a>
 , <a class="el" href="tiny__0_899_8h.html#a62cb06db3908015c7305ca6833f90159">tiny_0.99.h</a>
 , <a class="el" href="tiny__1_81_8h.html#a62cb06db3908015c7305ca6833f90159">tiny_1.1.h</a>
 , <a class="el" href="tiny__2_80_8h.html#a62cb06db3908015c7305ca6833f90159">tiny_2.0.h</a>
@@ -2090,6 +2322,7 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 , <a class="el" href="booz__1_80_8h.html#a6391f9c6d48eca04803022ab073df01a">booz_1.0.h</a>
 , <a class="el" href="cc3d_8h.html#a6391f9c6d48eca04803022ab073df01a">cc3d.h</a>
 , <a class="el" href="chimera_8h.html#a6391f9c6d48eca04803022ab073df01a">chimera.h</a>
+, <a class="el" href="crazyflie_8h.html#a6391f9c6d48eca04803022ab073df01a">crazyflie.h</a>
 , <a class="el" href="elle0__common_8h.html#a6391f9c6d48eca04803022ab073df01a">elle0_common.h</a>
 , <a class="el" href="krooz__sd_8h.html#a6391f9c6d48eca04803022ab073df01a">krooz_sd.h</a>
 , <a class="el" href="lia_2chibios_2v1_81_2board_8h.html#a6391f9c6d48eca04803022ab073df01a">board.h</a>
@@ -2103,11 +2336,13 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 , <a class="el" href="opa__ap__1_80_8h.html#a6391f9c6d48eca04803022ab073df01a">opa_ap_1.0.h</a>
 , <a class="el" href="openpilot__revo__1_80_8h.html#a6391f9c6d48eca04803022ab073df01a">openpilot_revo_1.0.h</a>
 , <a class="el" href="px4fmu_2chibios_2v2_84_2board_8h.html#a6391f9c6d48eca04803022ab073df01a">board.h</a>
+, <a class="el" href="v4_80_2px4fmu_8h.html#a6391f9c6d48eca04803022ab073df01a">px4fmu.h</a>
 , <a class="el" href="px4fmu__1_87_8h.html#a6391f9c6d48eca04803022ab073df01a">px4fmu_1.7.h</a>
 , <a class="el" href="px4fmu__2_84_8h.html#a6391f9c6d48eca04803022ab073df01a">px4fmu_2.4.h</a>
 , <a class="el" href="px4fmu__4_80_8h.html#a6391f9c6d48eca04803022ab073df01a">px4fmu_4.0.h</a>
 , <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a6391f9c6d48eca04803022ab073df01a">board.h</a>
 , <a class="el" href="stm32f4__discovery_8h.html#a6391f9c6d48eca04803022ab073df01a">stm32f4_discovery.h</a>
+, <a class="el" href="tawaki_8h.html#a6391f9c6d48eca04803022ab073df01a">tawaki.h</a>
 , <a class="el" href="vms__ecu_2chibios_2v1_80_2board_8h.html#a6391f9c6d48eca04803022ab073df01a">board.h</a>
 </li>
 <li>SPI_SELECT_SLAVE1_PINSEL
@@ -2125,6 +2360,7 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 , <a class="el" href="booz__1_80_8h.html#abed465f8e9387dc4c034b1d71989043c">booz_1.0.h</a>
 , <a class="el" href="cc3d_8h.html#abed465f8e9387dc4c034b1d71989043c">cc3d.h</a>
 , <a class="el" href="chimera_8h.html#abed465f8e9387dc4c034b1d71989043c">chimera.h</a>
+, <a class="el" href="crazyflie_8h.html#abed465f8e9387dc4c034b1d71989043c">crazyflie.h</a>
 , <a class="el" href="elle0__common_8h.html#abed465f8e9387dc4c034b1d71989043c">elle0_common.h</a>
 , <a class="el" href="krooz__sd_8h.html#abed465f8e9387dc4c034b1d71989043c">krooz_sd.h</a>
 , <a class="el" href="lia_2chibios_2v1_81_2board_8h.html#abed465f8e9387dc4c034b1d71989043c">board.h</a>
@@ -2138,17 +2374,20 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 , <a class="el" href="opa__ap__1_80_8h.html#abed465f8e9387dc4c034b1d71989043c">opa_ap_1.0.h</a>
 , <a class="el" href="openpilot__revo__1_80_8h.html#abed465f8e9387dc4c034b1d71989043c">openpilot_revo_1.0.h</a>
 , <a class="el" href="px4fmu_2chibios_2v2_84_2board_8h.html#abed465f8e9387dc4c034b1d71989043c">board.h</a>
+, <a class="el" href="v4_80_2px4fmu_8h.html#abed465f8e9387dc4c034b1d71989043c">px4fmu.h</a>
 , <a class="el" href="px4fmu__1_87_8h.html#abed465f8e9387dc4c034b1d71989043c">px4fmu_1.7.h</a>
 , <a class="el" href="px4fmu__2_84_8h.html#abed465f8e9387dc4c034b1d71989043c">px4fmu_2.4.h</a>
 , <a class="el" href="px4fmu__4_80_8h.html#abed465f8e9387dc4c034b1d71989043c">px4fmu_4.0.h</a>
 , <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#abed465f8e9387dc4c034b1d71989043c">board.h</a>
 , <a class="el" href="stm32f4__discovery_8h.html#abed465f8e9387dc4c034b1d71989043c">stm32f4_discovery.h</a>
+, <a class="el" href="tawaki_8h.html#abed465f8e9387dc4c034b1d71989043c">tawaki.h</a>
 , <a class="el" href="vms__ecu_2chibios_2v1_80_2board_8h.html#abed465f8e9387dc4c034b1d71989043c">board.h</a>
 </li>
 <li>SPI_SELECT_SLAVE2_PIN
 : <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#ae006e4c20f82ac5d2104debcd8615f06">board.h</a>
 , <a class="el" href="apogee__1_80_8h.html#ae006e4c20f82ac5d2104debcd8615f06">apogee_1.0.h</a>
 , <a class="el" href="chimera_8h.html#ae006e4c20f82ac5d2104debcd8615f06">chimera.h</a>
+, <a class="el" href="crazyflie_8h.html#ae006e4c20f82ac5d2104debcd8615f06">crazyflie.h</a>
 , <a class="el" href="elle0__common_8h.html#ae006e4c20f82ac5d2104debcd8615f06">elle0_common.h</a>
 , <a class="el" href="krooz__sd_8h.html#ae006e4c20f82ac5d2104debcd8615f06">krooz_sd.h</a>
 , <a class="el" href="lia_2chibios_2v1_81_2board_8h.html#ae006e4c20f82ac5d2104debcd8615f06">board.h</a>
@@ -2159,17 +2398,20 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 , <a class="el" href="lisa__s__1_80_8h.html#ae006e4c20f82ac5d2104debcd8615f06">lisa_s_1.0.h</a>
 , <a class="el" href="opa__ap__1_80_8h.html#ae006e4c20f82ac5d2104debcd8615f06">opa_ap_1.0.h</a>
 , <a class="el" href="openpilot__revo__1_80_8h.html#ae006e4c20f82ac5d2104debcd8615f06">openpilot_revo_1.0.h</a>
+, <a class="el" href="v4_80_2px4fmu_8h.html#ae006e4c20f82ac5d2104debcd8615f06">px4fmu.h</a>
 , <a class="el" href="px4fmu__1_87_8h.html#ae006e4c20f82ac5d2104debcd8615f06">px4fmu_1.7.h</a>
 , <a class="el" href="px4fmu__2_84_8h.html#ae006e4c20f82ac5d2104debcd8615f06">px4fmu_2.4.h</a>
 , <a class="el" href="px4fmu__4_80_8h.html#ae006e4c20f82ac5d2104debcd8615f06">px4fmu_4.0.h</a>
 , <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#ae006e4c20f82ac5d2104debcd8615f06">board.h</a>
 , <a class="el" href="stm32f4__discovery_8h.html#ae006e4c20f82ac5d2104debcd8615f06">stm32f4_discovery.h</a>
+, <a class="el" href="tawaki_8h.html#ae006e4c20f82ac5d2104debcd8615f06">tawaki.h</a>
 , <a class="el" href="vms__ecu_2chibios_2v1_80_2board_8h.html#ae006e4c20f82ac5d2104debcd8615f06">board.h</a>
 </li>
 <li>SPI_SELECT_SLAVE2_PORT
 : <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#ad1fce2206d522b24623e9b742b1f2988">board.h</a>
 , <a class="el" href="apogee__1_80_8h.html#ad1fce2206d522b24623e9b742b1f2988">apogee_1.0.h</a>
 , <a class="el" href="chimera_8h.html#ad1fce2206d522b24623e9b742b1f2988">chimera.h</a>
+, <a class="el" href="crazyflie_8h.html#ad1fce2206d522b24623e9b742b1f2988">crazyflie.h</a>
 , <a class="el" href="elle0__common_8h.html#ad1fce2206d522b24623e9b742b1f2988">elle0_common.h</a>
 , <a class="el" href="krooz__sd_8h.html#ad1fce2206d522b24623e9b742b1f2988">krooz_sd.h</a>
 , <a class="el" href="lia_2chibios_2v1_81_2board_8h.html#ad1fce2206d522b24623e9b742b1f2988">board.h</a>
@@ -2180,17 +2422,20 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 , <a class="el" href="lisa__s__1_80_8h.html#ad1fce2206d522b24623e9b742b1f2988">lisa_s_1.0.h</a>
 , <a class="el" href="opa__ap__1_80_8h.html#ad1fce2206d522b24623e9b742b1f2988">opa_ap_1.0.h</a>
 , <a class="el" href="openpilot__revo__1_80_8h.html#ad1fce2206d522b24623e9b742b1f2988">openpilot_revo_1.0.h</a>
+, <a class="el" href="v4_80_2px4fmu_8h.html#ad1fce2206d522b24623e9b742b1f2988">px4fmu.h</a>
 , <a class="el" href="px4fmu__1_87_8h.html#ad1fce2206d522b24623e9b742b1f2988">px4fmu_1.7.h</a>
 , <a class="el" href="px4fmu__2_84_8h.html#ad1fce2206d522b24623e9b742b1f2988">px4fmu_2.4.h</a>
 , <a class="el" href="px4fmu__4_80_8h.html#ad1fce2206d522b24623e9b742b1f2988">px4fmu_4.0.h</a>
 , <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#ad1fce2206d522b24623e9b742b1f2988">board.h</a>
 , <a class="el" href="stm32f4__discovery_8h.html#ad1fce2206d522b24623e9b742b1f2988">stm32f4_discovery.h</a>
+, <a class="el" href="tawaki_8h.html#ad1fce2206d522b24623e9b742b1f2988">tawaki.h</a>
 , <a class="el" href="vms__ecu_2chibios_2v1_80_2board_8h.html#ad1fce2206d522b24623e9b742b1f2988">board.h</a>
 </li>
 <li>SPI_SELECT_SLAVE3_PIN
 : <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a43f488034394a3e0c0749b96fdbdd08f">board.h</a>
 , <a class="el" href="apogee__1_80_8h.html#a43f488034394a3e0c0749b96fdbdd08f">apogee_1.0.h</a>
 , <a class="el" href="chimera_8h.html#a43f488034394a3e0c0749b96fdbdd08f">chimera.h</a>
+, <a class="el" href="crazyflie_8h.html#a43f488034394a3e0c0749b96fdbdd08f">crazyflie.h</a>
 , <a class="el" href="elle0__common_8h.html#a43f488034394a3e0c0749b96fdbdd08f">elle0_common.h</a>
 , <a class="el" href="lia_2chibios_2v1_81_2board_8h.html#a43f488034394a3e0c0749b96fdbdd08f">board.h</a>
 , <a class="el" href="lisa__l__1_80_8h.html#a43f488034394a3e0c0749b96fdbdd08f">lisa_l_1.0.h</a>
@@ -2198,15 +2443,19 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 , <a class="el" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a43f488034394a3e0c0749b96fdbdd08f">board.h</a>
 , <a class="el" href="lisa__mx__common_8h.html#a43f488034394a3e0c0749b96fdbdd08f">lisa_mx_common.h</a>
 , <a class="el" href="px4fmu_2chibios_2v2_84_2board_8h.html#a43f488034394a3e0c0749b96fdbdd08f">board.h</a>
+, <a class="el" href="v4_80_2px4fmu_8h.html#a43f488034394a3e0c0749b96fdbdd08f">px4fmu.h</a>
 , <a class="el" href="px4fmu__1_87_8h.html#a43f488034394a3e0c0749b96fdbdd08f">px4fmu_1.7.h</a>
 , <a class="el" href="px4fmu__2_84_8h.html#a43f488034394a3e0c0749b96fdbdd08f">px4fmu_2.4.h</a>
 , <a class="el" href="px4fmu__4_80_8h.html#a43f488034394a3e0c0749b96fdbdd08f">px4fmu_4.0.h</a>
 , <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a43f488034394a3e0c0749b96fdbdd08f">board.h</a>
+, <a class="el" href="tawaki_8h.html#a43f488034394a3e0c0749b96fdbdd08f">tawaki.h</a>
+, <a class="el" href="vms__ecu_2chibios_2v1_80_2board_8h.html#a43f488034394a3e0c0749b96fdbdd08f">board.h</a>
 </li>
 <li>SPI_SELECT_SLAVE3_PORT
 : <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#aaf1f83e1cd34b94de35fbbaaa7f6cb46">board.h</a>
 , <a class="el" href="apogee__1_80_8h.html#aaf1f83e1cd34b94de35fbbaaa7f6cb46">apogee_1.0.h</a>
 , <a class="el" href="chimera_8h.html#aaf1f83e1cd34b94de35fbbaaa7f6cb46">chimera.h</a>
+, <a class="el" href="crazyflie_8h.html#aaf1f83e1cd34b94de35fbbaaa7f6cb46">crazyflie.h</a>
 , <a class="el" href="elle0__common_8h.html#aaf1f83e1cd34b94de35fbbaaa7f6cb46">elle0_common.h</a>
 , <a class="el" href="lia_2chibios_2v1_81_2board_8h.html#aaf1f83e1cd34b94de35fbbaaa7f6cb46">board.h</a>
 , <a class="el" href="lisa__l__1_80_8h.html#aaf1f83e1cd34b94de35fbbaaa7f6cb46">lisa_l_1.0.h</a>
@@ -2214,10 +2463,13 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 , <a class="el" href="lisa__mx_2chibios_2v2_81_2board_8h.html#aaf1f83e1cd34b94de35fbbaaa7f6cb46">board.h</a>
 , <a class="el" href="lisa__mx__common_8h.html#aaf1f83e1cd34b94de35fbbaaa7f6cb46">lisa_mx_common.h</a>
 , <a class="el" href="px4fmu_2chibios_2v2_84_2board_8h.html#aaf1f83e1cd34b94de35fbbaaa7f6cb46">board.h</a>
+, <a class="el" href="v4_80_2px4fmu_8h.html#aaf1f83e1cd34b94de35fbbaaa7f6cb46">px4fmu.h</a>
 , <a class="el" href="px4fmu__1_87_8h.html#aaf1f83e1cd34b94de35fbbaaa7f6cb46">px4fmu_1.7.h</a>
 , <a class="el" href="px4fmu__2_84_8h.html#aaf1f83e1cd34b94de35fbbaaa7f6cb46">px4fmu_2.4.h</a>
 , <a class="el" href="px4fmu__4_80_8h.html#aaf1f83e1cd34b94de35fbbaaa7f6cb46">px4fmu_4.0.h</a>
 , <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#aaf1f83e1cd34b94de35fbbaaa7f6cb46">board.h</a>
+, <a class="el" href="tawaki_8h.html#aaf1f83e1cd34b94de35fbbaaa7f6cb46">tawaki.h</a>
+, <a class="el" href="vms__ecu_2chibios_2v1_80_2board_8h.html#aaf1f83e1cd34b94de35fbbaaa7f6cb46">board.h</a>
 </li>
 <li>SPI_SELECT_SLAVE4_PIN
 : <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#aaaf3b422873946314dfec6703a3a5580">board.h</a>
@@ -2229,9 +2481,12 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 , <a class="el" href="lisa__m__common_8h.html#aaaf3b422873946314dfec6703a3a5580">lisa_m_common.h</a>
 , <a class="el" href="lisa__mx_2chibios_2v2_81_2board_8h.html#aaaf3b422873946314dfec6703a3a5580">board.h</a>
 , <a class="el" href="lisa__mx__common_8h.html#aaaf3b422873946314dfec6703a3a5580">lisa_mx_common.h</a>
+, <a class="el" href="v4_80_2px4fmu_8h.html#aaaf3b422873946314dfec6703a3a5580">px4fmu.h</a>
 , <a class="el" href="px4fmu__2_84_8h.html#aaaf3b422873946314dfec6703a3a5580">px4fmu_2.4.h</a>
 , <a class="el" href="px4fmu__4_80_8h.html#aaaf3b422873946314dfec6703a3a5580">px4fmu_4.0.h</a>
 , <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#aaaf3b422873946314dfec6703a3a5580">board.h</a>
+, <a class="el" href="tawaki_8h.html#aaaf3b422873946314dfec6703a3a5580">tawaki.h</a>
+, <a class="el" href="vms__ecu_2chibios_2v1_80_2board_8h.html#aaaf3b422873946314dfec6703a3a5580">board.h</a>
 </li>
 <li>SPI_SELECT_SLAVE4_PORT
 : <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a68d301edae4fbbd1f4a7e9de1a9252b1">board.h</a>
@@ -2243,9 +2498,12 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 , <a class="el" href="lisa__m__common_8h.html#a68d301edae4fbbd1f4a7e9de1a9252b1">lisa_m_common.h</a>
 , <a class="el" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a68d301edae4fbbd1f4a7e9de1a9252b1">board.h</a>
 , <a class="el" href="lisa__mx__common_8h.html#a68d301edae4fbbd1f4a7e9de1a9252b1">lisa_mx_common.h</a>
+, <a class="el" href="v4_80_2px4fmu_8h.html#a68d301edae4fbbd1f4a7e9de1a9252b1">px4fmu.h</a>
 , <a class="el" href="px4fmu__2_84_8h.html#a68d301edae4fbbd1f4a7e9de1a9252b1">px4fmu_2.4.h</a>
 , <a class="el" href="px4fmu__4_80_8h.html#a68d301edae4fbbd1f4a7e9de1a9252b1">px4fmu_4.0.h</a>
 , <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a68d301edae4fbbd1f4a7e9de1a9252b1">board.h</a>
+, <a class="el" href="tawaki_8h.html#a68d301edae4fbbd1f4a7e9de1a9252b1">tawaki.h</a>
+, <a class="el" href="vms__ecu_2chibios_2v1_80_2board_8h.html#a68d301edae4fbbd1f4a7e9de1a9252b1">board.h</a>
 </li>
 <li>SPI_SELECT_SLAVE5_PIN
 : <a class="el" href="chimera_8h.html#a045b009e33c6c53c43c8ff352a2fd507">chimera.h</a>
@@ -2254,6 +2512,8 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 , <a class="el" href="lisa__m__common_8h.html#a045b009e33c6c53c43c8ff352a2fd507">lisa_m_common.h</a>
 , <a class="el" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a045b009e33c6c53c43c8ff352a2fd507">board.h</a>
 , <a class="el" href="lisa__mx__common_8h.html#a045b009e33c6c53c43c8ff352a2fd507">lisa_mx_common.h</a>
+, <a class="el" href="px4fmu__2_84_8h.html#a045b009e33c6c53c43c8ff352a2fd507">px4fmu_2.4.h</a>
+, <a class="el" href="tawaki_8h.html#a045b009e33c6c53c43c8ff352a2fd507">tawaki.h</a>
 </li>
 <li>SPI_SELECT_SLAVE5_PORT
 : <a class="el" href="chimera_8h.html#a0bb8407cbad582149d6c82588b77f100">chimera.h</a>
@@ -2262,6 +2522,8 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 , <a class="el" href="lisa__m__common_8h.html#a0bb8407cbad582149d6c82588b77f100">lisa_m_common.h</a>
 , <a class="el" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a0bb8407cbad582149d6c82588b77f100">board.h</a>
 , <a class="el" href="lisa__mx__common_8h.html#a0bb8407cbad582149d6c82588b77f100">lisa_mx_common.h</a>
+, <a class="el" href="px4fmu__2_84_8h.html#a0bb8407cbad582149d6c82588b77f100">px4fmu_2.4.h</a>
+, <a class="el" href="tawaki_8h.html#a0bb8407cbad582149d6c82588b77f100">tawaki.h</a>
 </li>
 <li>SPI_SELECT_SLAVE_IO_
 : <a class="el" href="lpc21_2mcu__periph_2spi__arch_8c.html#a6666aed242e8cbfb24bb3c9bc99d13da">spi_arch.c</a>
@@ -2292,6 +2554,9 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 </li>
 <li>SPI_SLAVE_HS_TX_BUFFER_SIZE
 : <a class="el" href="spi__slave__hs__arch_8h.html#a1790663fc6b4e0f377df583d45b38801">spi_slave_hs_arch.h</a>
+</li>
+<li>SPI_THREAD_STACK_SIZE
+: <a class="el" href="chibios_2mcu__periph_2spi__arch_8c.html#a0a1a8f8b428ced27265cbd6ba785172f">spi_arch.c</a>
 </li>
 <li>SPI_TRANSACTION_QUEUE_LEN
 : <a class="el" href="group__spi.html#ga8ae4597a9e237b75a108cdde49c302a6">spi.h</a>
@@ -2452,14 +2717,26 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 <li>SRV0_TIM3_CH1
 : <a class="el" href="chimera_2chibios_2v1_80_2board_8h.html#a40edd710cd4c2f41e290e839ed035c19">board.h</a>
 </li>
+<li>SRV1_TIM1_CH4
+: <a class="el" href="px4fmu_2chibios_2v4_80_2board_8h.html#aac827d4b89a8c8ab4293ba850eb605ca">board.h</a>
+</li>
 <li>SRV1_TIM3_CH2
 : <a class="el" href="chimera_2chibios_2v1_80_2board_8h.html#a856695b5a15a0415bb742d92ddc97059">board.h</a>
+</li>
+<li>SRV2_TIM1_CH3
+: <a class="el" href="px4fmu_2chibios_2v4_80_2board_8h.html#a2bf28a60504d32b6783d51c7db7b02ea">board.h</a>
 </li>
 <li>SRV2_TIM3_CH3
 : <a class="el" href="chimera_2chibios_2v1_80_2board_8h.html#ad7a2287757ad6dea20af945a94a53525">board.h</a>
 </li>
+<li>SRV3_TIM1_CH2
+: <a class="el" href="px4fmu_2chibios_2v4_80_2board_8h.html#affb7a5884cf6a7a315a6af75beb70e40">board.h</a>
+</li>
 <li>SRV3_TIM3_CH4
 : <a class="el" href="chimera_2chibios_2v1_80_2board_8h.html#a082869925283706a876e6c78fb1dc4d0">board.h</a>
+</li>
+<li>SRV4_TIM1_CH1
+: <a class="el" href="px4fmu_2chibios_2v4_80_2board_8h.html#a14d5751606126347ee27ace7a0c10e3c">board.h</a>
 </li>
 <li>SRV4_TIM4_CH1
 : <a class="el" href="chimera_2chibios_2v1_80_2board_8h.html#aae14cf88133516a71bd7c8c76c4ff61d">board.h</a>
@@ -2871,6 +3148,14 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 <li>STABILIZATION_ATTITUDE_HELI_INDI_YAW_P
 : <a class="el" href="stabilization__attitude__heli__indi_8c.html#a87e55125a258440d4ef3ec5eb501d0e8">stabilization_attitude_heli_indi.c</a>
 </li>
+<li>STABILIZATION_ATTITUDE_PHI_FFDGAIN
+: <a class="el" href="stabilization__attitude__euler__int_8c.html#ab531e0d0e576516780e8d8e6dd44e78e">stabilization_attitude_euler_int.c</a>
+, <a class="el" href="stabilization__attitude__quat__int_8c.html#ab531e0d0e576516780e8d8e6dd44e78e">stabilization_attitude_quat_int.c</a>
+</li>
+<li>STABILIZATION_ATTITUDE_PSI_FFDGAIN
+: <a class="el" href="stabilization__attitude__euler__int_8c.html#a4706f4ac6871f6a031332d22ad0ebf75">stabilization_attitude_euler_int.c</a>
+, <a class="el" href="stabilization__attitude__quat__int_8c.html#a4706f4ac6871f6a031332d22ad0ebf75">stabilization_attitude_quat_int.c</a>
+</li>
 <li>stabilization_attitude_quat_float_SetOmegaP
 : <a class="el" href="stabilization__attitude__quat__float_8h.html#aa264f6ed208212c749b8237a1422484f">stabilization_attitude_quat_float.h</a>
 </li>
@@ -2919,6 +3204,10 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 <li>STABILIZATION_ATTITUDE_REF_QUAT_INFINITESIMAL_STEP
 : <a class="el" href="stabilization__attitude__ref__quat__float_8c.html#a8006732cb1b5351f1643fce797ab4fe0">stabilization_attitude_ref_quat_float.c</a>
 </li>
+<li>STABILIZATION_ATTITUDE_THETA_FFDGAIN
+: <a class="el" href="stabilization__attitude__euler__int_8c.html#a9755a824baec79745ca56d9f15c97baf">stabilization_attitude_euler_int.c</a>
+, <a class="el" href="stabilization__attitude__quat__int_8c.html#a9755a824baec79745ca56d9f15c97baf">stabilization_attitude_quat_int.c</a>
+</li>
 <li>STABILIZATION_INDI_ESTIMATION_FILT_CUTOFF
 : <a class="el" href="stabilization__indi__simple_8c.html#a3c41519cb45ffcbf35b6f6228603e5cc">stabilization_indi_simple.c</a>
 </li>
@@ -2961,6 +3250,9 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 </li>
 <li>STALL_AIRSPEED
 : <a class="el" href="energy__ctrl_8c.html#aa56870347fa24cdb4c6356c21dfa3111">energy_ctrl.c</a>
+</li>
+<li>START_BYTE
+: <a class="el" href="actuators__ostrich_8c.html#a30d2043ca397843e08c43ade3aaee5b2">actuators_ostrich.c</a>
 </li>
 <li>START_TIMEOUT
 : <a class="el" href="servos__4015__MAT__hw_8c.html#a0525bb869371e594a31064887054b8ef">servos_4015_MAT_hw.c</a>
@@ -3127,25 +3419,25 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 : <a class="el" href="lia_2chibios_2v1_81_2mcuconf_8h.html#a204f1110ffb3db498a3b85127d1ca4da">mcuconf.h</a>
 </li>
 <li>STM32_ADC_ADC2_DMA_IRQ_PRIORITY
-: <a class="el" href="vms__ecu_2chibios_2v1_80_2mcuconf_8h.html#a6d5f6197c12d2a74a041b54d6e1b80a2">mcuconf.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a6d5f6197c12d2a74a041b54d6e1b80a2">mcuconf.h</a>
 </li>
 <li>STM32_ADC_ADC2_DMA_PRIORITY
-: <a class="el" href="px4fmu_2chibios_2v2_84_2mcuconf_8h.html#a65cadd46c1d4b5739f1ef3a623faf196">mcuconf.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a65cadd46c1d4b5739f1ef3a623faf196">mcuconf.h</a>
 </li>
 <li>STM32_ADC_ADC2_DMA_STREAM
-: <a class="el" href="vms__ecu_2chibios_2v1_80_2mcuconf_8h.html#a14406df3e82b63f96a67959b5dbff667">mcuconf.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a14406df3e82b63f96a67959b5dbff667">mcuconf.h</a>
 </li>
 <li>STM32_ADC_ADC34_CLOCK_MODE
 : <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2mcuconf_8h.html#a9a3b7926a68a03e1b00564e5b36f2626">mcuconf.h</a>
 </li>
 <li>STM32_ADC_ADC3_DMA_IRQ_PRIORITY
-: <a class="el" href="lisa__mx_2chibios_2v2_81_2mcuconf_8h.html#a45424a47f5a33df11692d9763b72aa48">mcuconf.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a45424a47f5a33df11692d9763b72aa48">mcuconf.h</a>
 </li>
 <li>STM32_ADC_ADC3_DMA_PRIORITY
 : <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#aba49d4d898766a690874ccc9e072e4e4">mcuconf.h</a>
 </li>
 <li>STM32_ADC_ADC3_DMA_STREAM
-: <a class="el" href="lisa__mx_2chibios_2v2_81_2mcuconf_8h.html#ab34182c029cd8f6e924f1b449e3bae0e">mcuconf.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#ab34182c029cd8f6e924f1b449e3bae0e">mcuconf.h</a>
 </li>
 <li>STM32_ADC_ADC3_IRQ_PRIORITY
 : <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2mcuconf_8h.html#a0b37c60fb995e1499b3edd84f3b08d5a">mcuconf.h</a>
@@ -3172,7 +3464,7 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 : <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2mcuconf_8h.html#ad53d21da794b6149ea7825a9634acf02">mcuconf.h</a>
 </li>
 <li>STM32_ADC_IRQ_PRIORITY
-: <a class="el" href="vms__ecu_2chibios_2v1_80_2mcuconf_8h.html#a58e21948e78c6cf50c04e64363637dd4">mcuconf.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a58e21948e78c6cf50c04e64363637dd4">mcuconf.h</a>
 </li>
 <li>STM32_ADC_SDADC1_DMA_IRQ_PRIORITY
 : <a class="el" href="xvert_2chibios_2v1_80_2mcuconf_8h.html#a857fb68b86127e08c58a1dc9d2dc32f9">mcuconf.h</a>
@@ -3202,13 +3494,13 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 : <a class="el" href="xvert_2chibios_2v1_80_2mcuconf_8h.html#ac56d468a78fd48d2f60f62c89f2f773b">mcuconf.h</a>
 </li>
 <li>STM32_ADC_USE_ADC1
-: <a class="el" href="vms__ecu_2chibios_2v1_80_2mcuconf_8h.html#a7256aa7c13b88f877cfb8d4913dcec0a">mcuconf.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a7256aa7c13b88f877cfb8d4913dcec0a">mcuconf.h</a>
 </li>
 <li>STM32_ADC_USE_ADC2
-: <a class="el" href="lisa__mx_2chibios_2v2_81_2mcuconf_8h.html#a0324f80d5775896053a81432c0475ac3">mcuconf.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a0324f80d5775896053a81432c0475ac3">mcuconf.h</a>
 </li>
 <li>STM32_ADC_USE_ADC3
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2mcuconf_8h.html#abdbb6a582b057e5065023d7b0fb27821">mcuconf.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#abdbb6a582b057e5065023d7b0fb27821">mcuconf.h</a>
 </li>
 <li>STM32_ADC_USE_ADC4
 : <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2mcuconf_8h.html#a324fda2086dd2ae06bb750f2a0c2d861">mcuconf.h</a>
@@ -3229,16 +3521,19 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 : <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a2fc47be2589d2a861f2a7e94048d7035">mcuconf.h</a>
 </li>
 <li>STM32_CAN_CAN1_IRQ_PRIORITY
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2mcuconf_8h.html#abe8dc2c331e59b626884d0b40433bfab">mcuconf.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#abe8dc2c331e59b626884d0b40433bfab">mcuconf.h</a>
 </li>
 <li>STM32_CAN_CAN2_IRQ_PRIORITY
-: <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#aea17e07d4f22e7757ac6193ab9d72a15">mcuconf.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#aea17e07d4f22e7757ac6193ab9d72a15">mcuconf.h</a>
 </li>
 <li>STM32_CAN_USE_CAN1
 : <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a89f37b0b924eaabb6185f95446eed1dd">mcuconf.h</a>
 </li>
 <li>STM32_CAN_USE_CAN2
-: <a class="el" href="vms__ecu_2chibios_2v1_80_2mcuconf_8h.html#a00b873df699111f00e6093ed5759e08e">mcuconf.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a00b873df699111f00e6093ed5759e08e">mcuconf.h</a>
+</li>
+<li>STM32_CAN_USE_CAN3
+: <a class="el" href="tawaki_2chibios_2v1_80_2mcuconf_8h.html#a6f98734dec400e9829474c6a9ad607be">mcuconf.h</a>
 </li>
 <li>STM32_CECSEL
 : <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a46c6aa95fe5c9d31021a454c0ceeb1e7">mcuconf.h</a>
@@ -3247,58 +3542,70 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 : <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a37a20a773e7abb09096b89faa85e8897">mcuconf.h</a>
 </li>
 <li>STM32_CLOCK48_REQUIRED
-: <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#ab61440cd331858b31458b3ce72abf906">mcuconf.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#ab61440cd331858b31458b3ce72abf906">mcuconf.h</a>
 </li>
 <li>STM32_CR1_DNF
 : <a class="el" href="chimera_8h.html#a73180441e4e94e67eac7d518dc8958a6">chimera.h</a>
+, <a class="el" href="crazyflie_8h.html#a73180441e4e94e67eac7d518dc8958a6">crazyflie.h</a>
+, <a class="el" href="v5_80_2px4fmu_8h.html#a73180441e4e94e67eac7d518dc8958a6">px4fmu.h</a>
+, <a class="el" href="tawaki_8h.html#a73180441e4e94e67eac7d518dc8958a6">tawaki.h</a>
 </li>
 <li>STM32_DAC_DAC1_CH1_DMA_PRIORITY
-: <a class="el" href="px4fmu_2chibios_2v2_84_2mcuconf_8h.html#a97e3b10a8ba64b330697293890ae9dfe">mcuconf.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a97e3b10a8ba64b330697293890ae9dfe">mcuconf.h</a>
 </li>
 <li>STM32_DAC_DAC1_CH1_DMA_STREAM
-: <a class="el" href="lisa__mx_2chibios_2v2_81_2mcuconf_8h.html#a1d984652edc3d0045750f20e2094fe15">mcuconf.h</a>
+: <a class="el" href="vms__ecu_2chibios_2v1_80_2mcuconf_8h.html#a1d984652edc3d0045750f20e2094fe15">mcuconf.h</a>
 </li>
 <li>STM32_DAC_DAC1_CH1_IRQ_PRIORITY
-: <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a0f4f7b6d6f81c3776c89d829bf32f318">mcuconf.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a0f4f7b6d6f81c3776c89d829bf32f318">mcuconf.h</a>
 </li>
 <li>STM32_DAC_DAC1_CH2_DMA_PRIORITY
-: <a class="el" href="px4fmu_2chibios_2v2_84_2mcuconf_8h.html#af5e7dd5c5bd6b91423c84da0f38b7821">mcuconf.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#af5e7dd5c5bd6b91423c84da0f38b7821">mcuconf.h</a>
 </li>
 <li>STM32_DAC_DAC1_CH2_DMA_STREAM
-: <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a730e1cfbd99b7f3a0e6cdf03b224c9f4">mcuconf.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a730e1cfbd99b7f3a0e6cdf03b224c9f4">mcuconf.h</a>
 </li>
 <li>STM32_DAC_DAC1_CH2_IRQ_PRIORITY
 : <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#aa2f70df5cf087cd6960d96a88fa9a8dc">mcuconf.h</a>
 </li>
 <li>STM32_DAC_DUAL_MODE
-: <a class="el" href="lisa__mx_2chibios_2v2_81_2mcuconf_8h.html#aede2afbb11fd84b6db4e101664b4b722">mcuconf.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#aede2afbb11fd84b6db4e101664b4b722">mcuconf.h</a>
 </li>
 <li>STM32_DAC_USE_DAC1_CH1
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2mcuconf_8h.html#a44a9902eb911602a3e113a64907cc051">mcuconf.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a44a9902eb911602a3e113a64907cc051">mcuconf.h</a>
 </li>
 <li>STM32_DAC_USE_DAC1_CH2
 : <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a50529a6ef0b6920d19203b8dd5473aa9">mcuconf.h</a>
 </li>
+<li>STM32_DMA_SUPPORTS_CSELR
+: <a class="el" href="hal__stm32__dma_8h.html#a8f430e28139985cf70ecc9033e236474">hal_stm32_dma.h</a>
+</li>
+<li>STM32_DMA_USE_MUTUAL_EXCLUSION
+: <a class="el" href="hal__stm32__dma_8h.html#adab05ea9473647d746e27e5846c0109f">hal_stm32_dma.h</a>
+</li>
+<li>STM32_DMA_USE_WAIT
+: <a class="el" href="hal__stm32__dma_8h.html#a951186f351c4c543b5b79dec5a64559f">hal_stm32_dma.h</a>
+</li>
 <li>STM32_EXT_EXTI0_IRQ_PRIORITY
-: <a class="el" href="px4fmu_2chibios_2v2_84_2mcuconf_8h.html#aa6279da05e644a4bd3bc531159ad34e6">mcuconf.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#aa6279da05e644a4bd3bc531159ad34e6">mcuconf.h</a>
 </li>
 <li>STM32_EXT_EXTI10_15_IRQ_PRIORITY
 : <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a3c45031ace768dff11d3791a466a7ad1">mcuconf.h</a>
 </li>
 <li>STM32_EXT_EXTI16_IRQ_PRIORITY
-: <a class="el" href="px4fmu_2chibios_2v2_84_2mcuconf_8h.html#abd53222576d825b8a23d1d9fd6d78a6a">mcuconf.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#abd53222576d825b8a23d1d9fd6d78a6a">mcuconf.h</a>
 </li>
 <li>STM32_EXT_EXTI17_IRQ_PRIORITY
 : <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#aff4ce61159313e9c4b43dd1c0f61fd47">mcuconf.h</a>
 </li>
 <li>STM32_EXT_EXTI18_IRQ_PRIORITY
-: <a class="el" href="px4fmu_2chibios_2v2_84_2mcuconf_8h.html#a12385bdf4411e5e3f9df2d0fc03f9873">mcuconf.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a12385bdf4411e5e3f9df2d0fc03f9873">mcuconf.h</a>
 </li>
 <li>STM32_EXT_EXTI19_IRQ_PRIORITY
 : <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a22b733cbda9a4d21a53651971aa06372">mcuconf.h</a>
 </li>
 <li>STM32_EXT_EXTI1_IRQ_PRIORITY
-: <a class="el" href="px4fmu_2chibios_2v2_84_2mcuconf_8h.html#ac582474e7199168a6fb09792124d6546">mcuconf.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#ac582474e7199168a6fb09792124d6546">mcuconf.h</a>
 </li>
 <li>STM32_EXT_EXTI20_23_IRQ_PRIORITY
 : <a class="el" href="xvert_2chibios_2v1_80_2mcuconf_8h.html#a39d624b253691f6c41a1a421e5874017">mcuconf.h</a>
@@ -3310,13 +3617,13 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 : <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2mcuconf_8h.html#a34bf46924b6d9446721c6dd3b5c09ea7">mcuconf.h</a>
 </li>
 <li>STM32_EXT_EXTI21_IRQ_PRIORITY
-: <a class="el" href="vms__ecu_2chibios_2v1_80_2mcuconf_8h.html#aec9a95278305e7db267347988f442947">mcuconf.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#aec9a95278305e7db267347988f442947">mcuconf.h</a>
 </li>
 <li>STM32_EXT_EXTI22_IRQ_PRIORITY
-: <a class="el" href="px4fmu_2chibios_2v2_84_2mcuconf_8h.html#ac1360f0e97a4f7df89fd715f42ebaea7">mcuconf.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#ac1360f0e97a4f7df89fd715f42ebaea7">mcuconf.h</a>
 </li>
 <li>STM32_EXT_EXTI2_IRQ_PRIORITY
-: <a class="el" href="vms__ecu_2chibios_2v1_80_2mcuconf_8h.html#a32a5323ec55bfb3e6590c8346ee76dc4">mcuconf.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a32a5323ec55bfb3e6590c8346ee76dc4">mcuconf.h</a>
 </li>
 <li>STM32_EXT_EXTI30_32_IRQ_PRIORITY
 : <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2mcuconf_8h.html#af172c422c6aeaa11a0a6ff0227b4637a">mcuconf.h</a>
@@ -3325,76 +3632,76 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 : <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2mcuconf_8h.html#a4566e8af2932b4c596780be65c722d58">mcuconf.h</a>
 </li>
 <li>STM32_EXT_EXTI3_IRQ_PRIORITY
-: <a class="el" href="lia_2chibios_2v1_81_2mcuconf_8h.html#a360ce89f2744ed7e4ec5789201f557c3">mcuconf.h</a>
+: <a class="el" href="px4fmu_2chibios_2v5_80_2mcuconf_8h.html#a360ce89f2744ed7e4ec5789201f557c3">mcuconf.h</a>
 </li>
 <li>STM32_EXT_EXTI4_IRQ_PRIORITY
-: <a class="el" href="vms__ecu_2chibios_2v1_80_2mcuconf_8h.html#a09f92055e4901d4dc7613422ff8ca83e">mcuconf.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a09f92055e4901d4dc7613422ff8ca83e">mcuconf.h</a>
 </li>
 <li>STM32_EXT_EXTI5_9_IRQ_PRIORITY
-: <a class="el" href="lia_2chibios_2v1_81_2mcuconf_8h.html#afb8ec40127fee7c2c398e9e2ec096a71">mcuconf.h</a>
+: <a class="el" href="px4fmu_2chibios_2v2_84_2mcuconf_8h.html#afb8ec40127fee7c2c398e9e2ec096a71">mcuconf.h</a>
 </li>
 <li>STM32_GPT_TIM11_IRQ_PRIORITY
-: <a class="el" href="lisa__mx_2chibios_2v2_81_2mcuconf_8h.html#aa4b3131ca12f2d5a12047abb987961a4">mcuconf.h</a>
+: <a class="el" href="px4fmu_2chibios_2v5_80_2mcuconf_8h.html#aa4b3131ca12f2d5a12047abb987961a4">mcuconf.h</a>
 </li>
 <li>STM32_GPT_TIM12_IRQ_PRIORITY
-: <a class="el" href="xvert_2chibios_2v1_80_2mcuconf_8h.html#acbf13880831c81c27d5c7f65c737f70f">mcuconf.h</a>
+: <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#acbf13880831c81c27d5c7f65c737f70f">mcuconf.h</a>
 </li>
 <li>STM32_GPT_TIM14_IRQ_PRIORITY
-: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a42381c2949b271a74c562c3502403881">mcuconf.h</a>
+: <a class="el" href="tawaki_2chibios_2v1_80_2mcuconf_8h.html#a42381c2949b271a74c562c3502403881">mcuconf.h</a>
 </li>
 <li>STM32_GPT_TIM1_IRQ_PRIORITY
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2mcuconf_8h.html#a1e249eb52e9aafc7325e6cfde76db4cf">mcuconf.h</a>
+: <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a1e249eb52e9aafc7325e6cfde76db4cf">mcuconf.h</a>
 </li>
 <li>STM32_GPT_TIM2_IRQ_PRIORITY
-: <a class="el" href="lia_2chibios_2v1_81_2mcuconf_8h.html#a314cec15b23670096752964ec5caf3ce">mcuconf.h</a>
+: <a class="el" href="crazyflie_2chibios_2v2_81_2mcuconf_8h.html#a314cec15b23670096752964ec5caf3ce">mcuconf.h</a>
 </li>
 <li>STM32_GPT_TIM3_IRQ_PRIORITY
-: <a class="el" href="vms__ecu_2chibios_2v1_80_2mcuconf_8h.html#aa0e96044581d47cc827e2cbeb0227a8e">mcuconf.h</a>
+: <a class="el" href="px4fmu_2chibios_2v4_80_2mcuconf_8h.html#aa0e96044581d47cc827e2cbeb0227a8e">mcuconf.h</a>
 </li>
 <li>STM32_GPT_TIM4_IRQ_PRIORITY
-: <a class="el" href="lia_2chibios_2v1_81_2mcuconf_8h.html#a3f29be9a3823107fef0db45e685c21c8">mcuconf.h</a>
+: <a class="el" href="vms__ecu_2chibios_2v1_80_2mcuconf_8h.html#a3f29be9a3823107fef0db45e685c21c8">mcuconf.h</a>
 </li>
 <li>STM32_GPT_TIM5_IRQ_PRIORITY
 : <a class="el" href="xvert_2chibios_2v1_80_2mcuconf_8h.html#a7dd2cd16d440c306ca4078c26c6b32a1">mcuconf.h</a>
 </li>
 <li>STM32_GPT_TIM6_IRQ_PRIORITY
-: <a class="el" href="px4fmu_2chibios_2v2_84_2mcuconf_8h.html#a7fe3dc866ef2fdf7f3280ff2a81a0206">mcuconf.h</a>
+: <a class="el" href="lisa__mx_2chibios_2v2_81_2mcuconf_8h.html#a7fe3dc866ef2fdf7f3280ff2a81a0206">mcuconf.h</a>
 </li>
 <li>STM32_GPT_TIM7_IRQ_PRIORITY
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2mcuconf_8h.html#a39e918aab997f42ca310524e74dc44ae">mcuconf.h</a>
+: <a class="el" href="tawaki_2chibios_2v1_80_2mcuconf_8h.html#a39e918aab997f42ca310524e74dc44ae">mcuconf.h</a>
 </li>
 <li>STM32_GPT_TIM8_IRQ_PRIORITY
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2mcuconf_8h.html#a93f570ee0efe3af8c1584d66c00b99ad">mcuconf.h</a>
+: <a class="el" href="tawaki_2chibios_2v1_80_2mcuconf_8h.html#a93f570ee0efe3af8c1584d66c00b99ad">mcuconf.h</a>
 </li>
 <li>STM32_GPT_TIM9_IRQ_PRIORITY
-: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a7ec15e13e1cd4f876f8a4408e5cb1ed1">mcuconf.h</a>
+: <a class="el" href="crazyflie_2chibios_2v2_81_2mcuconf_8h.html#a7ec15e13e1cd4f876f8a4408e5cb1ed1">mcuconf.h</a>
 </li>
 <li>STM32_GPT_USE_TIM1
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2mcuconf_8h.html#a44c0e5a4a20e05dbb598a408cf1ebee7">mcuconf.h</a>
+: <a class="el" href="tawaki_2chibios_2v1_80_2mcuconf_8h.html#a44c0e5a4a20e05dbb598a408cf1ebee7">mcuconf.h</a>
 </li>
 <li>STM32_GPT_USE_TIM11
-: <a class="el" href="lisa__mx_2chibios_2v2_81_2mcuconf_8h.html#aa2b58d4e2c9e019ecd077794231a0a17">mcuconf.h</a>
+: <a class="el" href="crazyflie_2chibios_2v2_81_2mcuconf_8h.html#aa2b58d4e2c9e019ecd077794231a0a17">mcuconf.h</a>
 </li>
 <li>STM32_GPT_USE_TIM12
-: <a class="el" href="xvert_2chibios_2v1_80_2mcuconf_8h.html#ad9cad374b91eaa3e5ff2a68319d1721a">mcuconf.h</a>
+: <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#ad9cad374b91eaa3e5ff2a68319d1721a">mcuconf.h</a>
 </li>
 <li>STM32_GPT_USE_TIM14
-: <a class="el" href="px4fmu_2chibios_2v2_84_2mcuconf_8h.html#a690972d52bfd04ed8051b61a661f2f53">mcuconf.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a690972d52bfd04ed8051b61a661f2f53">mcuconf.h</a>
 </li>
 <li>STM32_GPT_USE_TIM2
-: <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a87dac50603730367a564c5ba63c6e9a1">mcuconf.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a87dac50603730367a564c5ba63c6e9a1">mcuconf.h</a>
 </li>
 <li>STM32_GPT_USE_TIM3
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2mcuconf_8h.html#a13e83c85f2c204e9302199f07dfc982e">mcuconf.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a13e83c85f2c204e9302199f07dfc982e">mcuconf.h</a>
 </li>
 <li>STM32_GPT_USE_TIM4
-: <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a8433ca3b26de12e90ad85d24ddc146ae">mcuconf.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a8433ca3b26de12e90ad85d24ddc146ae">mcuconf.h</a>
 </li>
 <li>STM32_GPT_USE_TIM5
-: <a class="el" href="vms__ecu_2chibios_2v1_80_2mcuconf_8h.html#a742ec02fd96ff66ed1de33aef54f0707">mcuconf.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a742ec02fd96ff66ed1de33aef54f0707">mcuconf.h</a>
 </li>
 <li>STM32_GPT_USE_TIM6
-: <a class="el" href="px4fmu_2chibios_2v2_84_2mcuconf_8h.html#aab9d5547752dc673dc08c01b257bbc5e">mcuconf.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#aab9d5547752dc673dc08c01b257bbc5e">mcuconf.h</a>
 </li>
 <li>STM32_GPT_USE_TIM7
 : <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a841def6dae41ef14c28273dc71c917df">mcuconf.h</a>
@@ -3406,7 +3713,7 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 : <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a2ae899fce9dc050c533cf90d97599d27">mcuconf.h</a>
 </li>
 <li>STM32_HPRE
-: <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a035ea0d8259c0f89306c6a7d344705f2">mcuconf.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a035ea0d8259c0f89306c6a7d344705f2">mcuconf.h</a>
 </li>
 <li>STM32_HSE_BYPASS
 : <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a1db400d06e42524f5e7f6da6888eb056">board.h</a>
@@ -3454,37 +3761,43 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 : <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#adae68423fc725ae1da125e4929e6de73">mcuconf.h</a>
 </li>
 <li>STM32_I2C_I2C1_TX_DMA_STREAM
-: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#aaad3d45e3630b5efb746260aedba2bd2">mcuconf.h</a>
+: <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#aaad3d45e3630b5efb746260aedba2bd2">mcuconf.h</a>
 </li>
 <li>STM32_I2C_I2C2_DMA_PRIORITY
-: <a class="el" href="lisa__mx_2chibios_2v2_81_2mcuconf_8h.html#a6b4a662792401dae73ae072183bd8e02">mcuconf.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a6b4a662792401dae73ae072183bd8e02">mcuconf.h</a>
 </li>
 <li>STM32_I2C_I2C2_IRQ_PRIORITY
-: <a class="el" href="px4fmu_2chibios_2v2_84_2mcuconf_8h.html#ace43c4d497b0be3dbe8c28836fafd0a5">mcuconf.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#ace43c4d497b0be3dbe8c28836fafd0a5">mcuconf.h</a>
 </li>
 <li>STM32_I2C_I2C2_RX_DMA_STREAM
-: <a class="el" href="lisa__mx_2chibios_2v2_81_2mcuconf_8h.html#a2b4cea50a1c9434b330a6a6f13432e00">mcuconf.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a2b4cea50a1c9434b330a6a6f13432e00">mcuconf.h</a>
 </li>
 <li>STM32_I2C_I2C2_TX_DMA_STREAM
-: <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a3170ef2ff695720e55d0957eb1951a99">mcuconf.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a3170ef2ff695720e55d0957eb1951a99">mcuconf.h</a>
 </li>
 <li>STM32_I2C_I2C3_DMA_PRIORITY
-: <a class="el" href="vms__ecu_2chibios_2v1_80_2mcuconf_8h.html#a43838b989448ecf9013b0e07e8bba565">mcuconf.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a43838b989448ecf9013b0e07e8bba565">mcuconf.h</a>
 </li>
 <li>STM32_I2C_I2C3_IRQ_PRIORITY
-: <a class="el" href="vms__ecu_2chibios_2v1_80_2mcuconf_8h.html#a978ffaebe063c8a9f64525ed2f13bd09">mcuconf.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a978ffaebe063c8a9f64525ed2f13bd09">mcuconf.h</a>
 </li>
 <li>STM32_I2C_I2C3_RX_DMA_STREAM
-: <a class="el" href="px4fmu_2chibios_2v2_84_2mcuconf_8h.html#a39873d5a932294ccab14f1bdd766fffb">mcuconf.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a39873d5a932294ccab14f1bdd766fffb">mcuconf.h</a>
 </li>
 <li>STM32_I2C_I2C3_TX_DMA_STREAM
-: <a class="el" href="px4fmu_2chibios_2v2_84_2mcuconf_8h.html#a9ac12a927168fe9a90122b0a54110e24">mcuconf.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a9ac12a927168fe9a90122b0a54110e24">mcuconf.h</a>
 </li>
 <li>STM32_I2C_I2C4_DMA_PRIORITY
 : <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a2a6e5217b0e9043cee7e9ba71f61b04c">mcuconf.h</a>
 </li>
 <li>STM32_I2C_I2C4_IRQ_PRIORITY
 : <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a3f392ae1e653d31a009e08067694b626">mcuconf.h</a>
+</li>
+<li>STM32_I2C_I2C4_RX_DMA_STREAM
+: <a class="el" href="px4fmu_2chibios_2v5_80_2mcuconf_8h.html#aae32ee41e66ceec86838a5d976148ee5">mcuconf.h</a>
+</li>
+<li>STM32_I2C_I2C4_TX_DMA_STREAM
+: <a class="el" href="px4fmu_2chibios_2v5_80_2mcuconf_8h.html#a6ae4ea20f26b15bc7ed3b122cc5edd73">mcuconf.h</a>
 </li>
 <li>STM32_I2C_USE_DMA
 : <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2mcuconf_8h.html#ab1566fe3aef27a80b09bbe82fae7eb16">mcuconf.h</a>
@@ -3493,7 +3806,7 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 : <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#ad73fb3ae5b2aca05e0f5155cff7a8b2d">mcuconf.h</a>
 </li>
 <li>STM32_I2C_USE_I2C2
-: <a class="el" href="lia_2chibios_2v1_81_2mcuconf_8h.html#a58845293676556a52d2046a00bcfbf9c">mcuconf.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a58845293676556a52d2046a00bcfbf9c">mcuconf.h</a>
 </li>
 <li>STM32_I2C_USE_I2C3
 : <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a086d8965c7249503bdce6f9b4a7352cb">mcuconf.h</a>
@@ -3502,16 +3815,16 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 : <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a97dafa0062dd2c7bad21469ea36f8418">mcuconf.h</a>
 </li>
 <li>STM32_I2SSRC
-: <a class="el" href="vms__ecu_2chibios_2v1_80_2mcuconf_8h.html#a54203015c2973969adee1dd719010d3a">mcuconf.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a54203015c2973969adee1dd719010d3a">mcuconf.h</a>
 </li>
 <li>STM32_ICU_TIM1_IRQ_PRIORITY
-: <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a51083eefd4e7d0303f11081df496d2ed">mcuconf.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a51083eefd4e7d0303f11081df496d2ed">mcuconf.h</a>
 </li>
 <li>STM32_ICU_TIM2_IRQ_PRIORITY
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2mcuconf_8h.html#a639272943cb5b9bdcbd78e5ced2b52a0">mcuconf.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a639272943cb5b9bdcbd78e5ced2b52a0">mcuconf.h</a>
 </li>
 <li>STM32_ICU_TIM3_IRQ_PRIORITY
-: <a class="el" href="lisa__mx_2chibios_2v2_81_2mcuconf_8h.html#a5a90d9b62fd7b1a0180c2aec7d00089d">mcuconf.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a5a90d9b62fd7b1a0180c2aec7d00089d">mcuconf.h</a>
 </li>
 <li>STM32_ICU_TIM4_IRQ_PRIORITY
 : <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a5c9e95d0806fd4faa34694d2f7ed8099">mcuconf.h</a>
@@ -3523,28 +3836,73 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 : <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a11ecef34dc3af18a62f81e90b34dde00">mcuconf.h</a>
 </li>
 <li>STM32_ICU_TIM9_IRQ_PRIORITY
-: <a class="el" href="lisa__mx_2chibios_2v2_81_2mcuconf_8h.html#aa1f8569a392f522faadcc52ec0e71b83">mcuconf.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#aa1f8569a392f522faadcc52ec0e71b83">mcuconf.h</a>
 </li>
 <li>STM32_ICU_USE_TIM1
 : <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a5f5e9b802c24ad1637cd2aaee14606ed">mcuconf.h</a>
 </li>
 <li>STM32_ICU_USE_TIM2
-: <a class="el" href="vms__ecu_2chibios_2v1_80_2mcuconf_8h.html#a9d125141e8f301e2b6d590067fd7890e">mcuconf.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a9d125141e8f301e2b6d590067fd7890e">mcuconf.h</a>
 </li>
 <li>STM32_ICU_USE_TIM3
-: <a class="el" href="vms__ecu_2chibios_2v1_80_2mcuconf_8h.html#a877fa83cee0173d5f451b77e59180725">mcuconf.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a877fa83cee0173d5f451b77e59180725">mcuconf.h</a>
 </li>
 <li>STM32_ICU_USE_TIM4
 : <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a91c55b2ce77da8f5c236bc960b30beed">mcuconf.h</a>
 </li>
 <li>STM32_ICU_USE_TIM5
-: <a class="el" href="xvert_2chibios_2v1_80_2mcuconf_8h.html#afbb5ae4322aab0bda8084bd23f3eeb56">mcuconf.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#afbb5ae4322aab0bda8084bd23f3eeb56">mcuconf.h</a>
 </li>
 <li>STM32_ICU_USE_TIM8
-: <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a2b5d34aeac1b12c901e2fed5952ae29d">mcuconf.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a2b5d34aeac1b12c901e2fed5952ae29d">mcuconf.h</a>
 </li>
 <li>STM32_ICU_USE_TIM9
 : <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#ac08fa5f6e6f65e2c919ffd636fc888eb">mcuconf.h</a>
+</li>
+<li>STM32_IRQ_EXTI0_PRIORITY
+: <a class="el" href="tawaki_2chibios_2v1_80_2mcuconf_8h.html#a41843060367f2e2b20468f1a5769948b">mcuconf.h</a>
+</li>
+<li>STM32_IRQ_EXTI10_15_PRIORITY
+: <a class="el" href="tawaki_2chibios_2v1_80_2mcuconf_8h.html#a2f21ba8c5368006a26a3e5e1d7e60fdb">mcuconf.h</a>
+</li>
+<li>STM32_IRQ_EXTI16_PRIORITY
+: <a class="el" href="tawaki_2chibios_2v1_80_2mcuconf_8h.html#a0a7f425a6497d9bc92b54a3c420731fe">mcuconf.h</a>
+</li>
+<li>STM32_IRQ_EXTI17_PRIORITY
+: <a class="el" href="tawaki_2chibios_2v1_80_2mcuconf_8h.html#a9d2286ff5fc5fdf03b469795a704619e">mcuconf.h</a>
+</li>
+<li>STM32_IRQ_EXTI18_PRIORITY
+: <a class="el" href="tawaki_2chibios_2v1_80_2mcuconf_8h.html#a15b7522f34798df184f9e8d5024881df">mcuconf.h</a>
+</li>
+<li>STM32_IRQ_EXTI19_PRIORITY
+: <a class="el" href="tawaki_2chibios_2v1_80_2mcuconf_8h.html#a2c23ca2f86fdf0dee176c1f762d2b2dc">mcuconf.h</a>
+</li>
+<li>STM32_IRQ_EXTI1_PRIORITY
+: <a class="el" href="tawaki_2chibios_2v1_80_2mcuconf_8h.html#a6f5e4469d6bb2263c760f685f9ce86ef">mcuconf.h</a>
+</li>
+<li>STM32_IRQ_EXTI20_PRIORITY
+: <a class="el" href="tawaki_2chibios_2v1_80_2mcuconf_8h.html#a3d47540519839760fa98c1b07e38a15e">mcuconf.h</a>
+</li>
+<li>STM32_IRQ_EXTI21_PRIORITY
+: <a class="el" href="tawaki_2chibios_2v1_80_2mcuconf_8h.html#a71fda7273ead6331f250642d18e55b25">mcuconf.h</a>
+</li>
+<li>STM32_IRQ_EXTI22_PRIORITY
+: <a class="el" href="tawaki_2chibios_2v1_80_2mcuconf_8h.html#a4331268b38458a2ad2cb4ff49021e371">mcuconf.h</a>
+</li>
+<li>STM32_IRQ_EXTI2_PRIORITY
+: <a class="el" href="tawaki_2chibios_2v1_80_2mcuconf_8h.html#ae4ffb9c3ba8d88b6367b675054e3c710">mcuconf.h</a>
+</li>
+<li>STM32_IRQ_EXTI3_PRIORITY
+: <a class="el" href="tawaki_2chibios_2v1_80_2mcuconf_8h.html#a38fe6fb696c105d6e048bde844db0224">mcuconf.h</a>
+</li>
+<li>STM32_IRQ_EXTI4_PRIORITY
+: <a class="el" href="tawaki_2chibios_2v1_80_2mcuconf_8h.html#a366b4f70dd30f409ad8c14e609e4bbaa">mcuconf.h</a>
+</li>
+<li>STM32_IRQ_EXTI5_9_PRIORITY
+: <a class="el" href="tawaki_2chibios_2v1_80_2mcuconf_8h.html#a129d06108ea8829ba174e33ff73e7e67">mcuconf.h</a>
+</li>
+<li>STM32_LCDTFT_REQUIRED
+: <a class="el" href="tawaki_2chibios_2v1_80_2mcuconf_8h.html#a6f9959597acb4c16ff17df3e7529020f">mcuconf.h</a>
 </li>
 <li>STM32_LPTIM1SEL
 : <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a4f813225df0ad5553219db6d5d9694da">mcuconf.h</a>
@@ -3553,52 +3911,52 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 : <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a05b49e91f478558d33b2b862718758fa">mcuconf.h</a>
 </li>
 <li>STM32_LSECLK
-: <a class="el" href="lia_2chibios_2v1_81_2board_8h.html#a9498f8f4ae2badbe39c078555ca9c793">board.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a9498f8f4ae2badbe39c078555ca9c793">board.h</a>
 </li>
 <li>STM32_LSEDRV
-: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#a744a10171d8d258a2459deafb6d08ce2">board.h</a>
+: <a class="el" href="chimera_2chibios_2v1_80_2board_8h.html#a744a10171d8d258a2459deafb6d08ce2">board.h</a>
 </li>
 <li>STM32_LSI_ENABLED
-: <a class="el" href="xvert_2chibios_2v1_80_2mcuconf_8h.html#a02b4e3e6222baab7ee448cbbb2273370">mcuconf.h</a>
+: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2mcuconf_8h.html#a02b4e3e6222baab7ee448cbbb2273370">mcuconf.h</a>
 </li>
 <li>STM32_MAC_BUFFERS_SIZE
-: <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#af1635e93ba4b8de905dfc7558fc043a3">mcuconf.h</a>
+: <a class="el" href="vms__ecu_2chibios_2v1_80_2mcuconf_8h.html#af1635e93ba4b8de905dfc7558fc043a3">mcuconf.h</a>
 </li>
 <li>STM32_MAC_ETH1_CHANGE_PHY_STATE
-: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#afd42d4db3b7dfc7e12f68466ccf55f15">mcuconf.h</a>
+: <a class="el" href="tawaki_2chibios_2v1_80_2mcuconf_8h.html#afd42d4db3b7dfc7e12f68466ccf55f15">mcuconf.h</a>
 </li>
 <li>STM32_MAC_ETH1_IRQ_PRIORITY
-: <a class="el" href="px4fmu_2chibios_2v2_84_2mcuconf_8h.html#addcd7b72b6811260a2a9a6ce03756b29">mcuconf.h</a>
+: <a class="el" href="px4fmu_2chibios_2v5_80_2mcuconf_8h.html#addcd7b72b6811260a2a9a6ce03756b29">mcuconf.h</a>
 </li>
 <li>STM32_MAC_IP_CHECKSUM_OFFLOAD
-: <a class="el" href="px4fmu_2chibios_2v2_84_2mcuconf_8h.html#a1a241d0b75f05fe97673e1bd71bff136">mcuconf.h</a>
+: <a class="el" href="px4fmu_2chibios_2v4_80_2mcuconf_8h.html#a1a241d0b75f05fe97673e1bd71bff136">mcuconf.h</a>
 </li>
 <li>STM32_MAC_PHY_TIMEOUT
-: <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a7607417f985da8e638c7871afc61003a">mcuconf.h</a>
+: <a class="el" href="vms__ecu_2chibios_2v1_80_2mcuconf_8h.html#a7607417f985da8e638c7871afc61003a">mcuconf.h</a>
 </li>
 <li>STM32_MAC_RECEIVE_BUFFERS
-: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a836b06331ed123d7742dd7aba7db02fd">mcuconf.h</a>
+: <a class="el" href="tawaki_2chibios_2v1_80_2mcuconf_8h.html#a836b06331ed123d7742dd7aba7db02fd">mcuconf.h</a>
 </li>
 <li>STM32_MAC_TRANSMIT_BUFFERS
-: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a00ad81d320aaeb3ca4899228c4155848">mcuconf.h</a>
+: <a class="el" href="px4fmu_2chibios_2v5_80_2mcuconf_8h.html#a00ad81d320aaeb3ca4899228c4155848">mcuconf.h</a>
 </li>
 <li>STM32_MCO1PRE
-: <a class="el" href="lisa__mx_2chibios_2v2_81_2mcuconf_8h.html#aeadb80a063dd3d4975ca3947a18ff995">mcuconf.h</a>
+: <a class="el" href="vms__ecu_2chibios_2v1_80_2mcuconf_8h.html#aeadb80a063dd3d4975ca3947a18ff995">mcuconf.h</a>
 </li>
 <li>STM32_MCO1SEL
-: <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a66f4dea2ca69a6afdc2a05593ddb4999">mcuconf.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a66f4dea2ca69a6afdc2a05593ddb4999">mcuconf.h</a>
 </li>
 <li>STM32_MCO2PRE
-: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a7625378f7bf7e1a50a58739742839619">mcuconf.h</a>
+: <a class="el" href="tawaki_2chibios_2v1_80_2mcuconf_8h.html#a7625378f7bf7e1a50a58739742839619">mcuconf.h</a>
 </li>
 <li>STM32_MCO2SEL
-: <a class="el" href="px4fmu_2chibios_2v2_84_2mcuconf_8h.html#ada1164056ea271b26c923140f69ace87">mcuconf.h</a>
+: <a class="el" href="px4fmu_2chibios_2v5_80_2mcuconf_8h.html#ada1164056ea271b26c923140f69ace87">mcuconf.h</a>
 </li>
 <li>STM32_MCOSEL
-: <a class="el" href="lia_2chibios_2v1_81_2mcuconf_8h.html#ab395c2abfb2e6fd501ce4529bf09a05f">mcuconf.h</a>
+: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2mcuconf_8h.html#ab395c2abfb2e6fd501ce4529bf09a05f">mcuconf.h</a>
 </li>
 <li>STM32_NO_INIT
-: <a class="el" href="lisa__mx_2chibios_2v2_81_2mcuconf_8h.html#affb519ca907542b6bff9104700c0009d">mcuconf.h</a>
+: <a class="el" href="vms__ecu_2chibios_2v1_80_2mcuconf_8h.html#affb519ca907542b6bff9104700c0009d">mcuconf.h</a>
 </li>
 <li>STM32_PLL2MUL_VALUE
 : <a class="el" href="lia_2chibios_2v1_81_2mcuconf_8h.html#aa203a24b063db3b89deefe370fcca6c9">mcuconf.h</a>
@@ -3606,8 +3964,11 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 <li>STM32_PLL3MUL_VALUE
 : <a class="el" href="lia_2chibios_2v1_81_2mcuconf_8h.html#a46e4ff65179ddd52641c366865b6cfa6">mcuconf.h</a>
 </li>
+<li>STM32_PLLI2SDIVQ_VALUE
+: <a class="el" href="tawaki_2chibios_2v1_80_2mcuconf_8h.html#aabfa36b9db553bd0fec3aecc3cc9a54a">mcuconf.h</a>
+</li>
 <li>STM32_PLLI2SN_VALUE
-: <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#aa2179285dbf70d5d5a370c3353737813">mcuconf.h</a>
+: <a class="el" href="tawaki_2chibios_2v1_80_2mcuconf_8h.html#aa2179285dbf70d5d5a370c3353737813">mcuconf.h</a>
 </li>
 <li>STM32_PLLI2SP_VALUE
 : <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a7b6200cd60fa224e90d495714e3b8fef">mcuconf.h</a>
@@ -3616,52 +3977,55 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 : <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#adef65938285beae9672cebaafe1fc00a">mcuconf.h</a>
 </li>
 <li>STM32_PLLI2SR_VALUE
-: <a class="el" href="lisa__mx_2chibios_2v2_81_2mcuconf_8h.html#aa6385bafac509e5ef0926a722fc54adb">mcuconf.h</a>
+: <a class="el" href="px4fmu_2chibios_2v5_80_2mcuconf_8h.html#aa6385bafac509e5ef0926a722fc54adb">mcuconf.h</a>
 </li>
 <li>STM32_PLLM_VALUE
-: <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#acba56aaa8c0bd717ad217771ee8300c2">mcuconf.h</a>
+: <a class="el" href="px4fmu_2chibios_2v4_80_2mcuconf_8h.html#acba56aaa8c0bd717ad217771ee8300c2">mcuconf.h</a>
 </li>
 <li>STM32_PLLMUL_VALUE
 : <a class="el" href="lia_2chibios_2v1_81_2mcuconf_8h.html#a0015fc8f73017358a7025ba57a265a11">mcuconf.h</a>
 </li>
 <li>STM32_PLLN_VALUE
-: <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a42a8bb439be9c6c643c7ab48f02ee662">mcuconf.h</a>
+: <a class="el" href="px4fmu_2chibios_2v4_80_2mcuconf_8h.html#a42a8bb439be9c6c643c7ab48f02ee662">mcuconf.h</a>
 </li>
 <li>STM32_PLLP_VALUE
-: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a0a2a10496ad437bb1bf6bf23892148e4">mcuconf.h</a>
+: <a class="el" href="vms__ecu_2chibios_2v1_80_2mcuconf_8h.html#a0a2a10496ad437bb1bf6bf23892148e4">mcuconf.h</a>
 </li>
 <li>STM32_PLLQ_VALUE
-: <a class="el" href="px4fmu_2chibios_2v2_84_2mcuconf_8h.html#adc27d1e2fcdedcb56fc15a41e5f43d91">mcuconf.h</a>
+: <a class="el" href="tawaki_2chibios_2v1_80_2mcuconf_8h.html#adc27d1e2fcdedcb56fc15a41e5f43d91">mcuconf.h</a>
+</li>
+<li>STM32_PLLSAIDIVQ_VALUE
+: <a class="el" href="tawaki_2chibios_2v1_80_2mcuconf_8h.html#ae2ca237e2d8b40cf029e4cfc5156539d">mcuconf.h</a>
 </li>
 <li>STM32_PLLSAIDIVR_VALUE
-: <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a9bd8243c565cf0d8128ca9cc00bc1a4d">mcuconf.h</a>
+: <a class="el" href="tawaki_2chibios_2v1_80_2mcuconf_8h.html#a9bd8243c565cf0d8128ca9cc00bc1a4d">mcuconf.h</a>
 </li>
 <li>STM32_PLLSAIN_VALUE
 : <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#adad1367e1eb26c3a6df6a358f44ce98e">mcuconf.h</a>
 </li>
 <li>STM32_PLLSAIP_VALUE
-: <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#aacacec5795cca34be3ff692ffb8f1a13">mcuconf.h</a>
+: <a class="el" href="tawaki_2chibios_2v1_80_2mcuconf_8h.html#aacacec5795cca34be3ff692ffb8f1a13">mcuconf.h</a>
 </li>
 <li>STM32_PLLSAIQ_VALUE
 : <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a33922bdd7e2781286b82d9e778c98b3f">mcuconf.h</a>
 </li>
 <li>STM32_PLLSAIR_VALUE
-: <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a0af6595a246fb86838a9c212d2451f23">mcuconf.h</a>
+: <a class="el" href="tawaki_2chibios_2v1_80_2mcuconf_8h.html#a0af6595a246fb86838a9c212d2451f23">mcuconf.h</a>
 </li>
 <li>STM32_PLLSRC
-: <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a811cfbd049f0ab00976def9593849d32">mcuconf.h</a>
+: <a class="el" href="tawaki_2chibios_2v1_80_2mcuconf_8h.html#a811cfbd049f0ab00976def9593849d32">mcuconf.h</a>
 </li>
 <li>STM32_PLLXTPRE
 : <a class="el" href="lia_2chibios_2v1_81_2mcuconf_8h.html#ad7443fb89c1569f264a218209fbe8ddd">mcuconf.h</a>
 </li>
 <li>STM32_PLS
-: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a6f4f9c19c6b1a1c3694278a542e3c60d">mcuconf.h</a>
+: <a class="el" href="vms__ecu_2chibios_2v1_80_2mcuconf_8h.html#a6f4f9c19c6b1a1c3694278a542e3c60d">mcuconf.h</a>
 </li>
 <li>STM32_PPRE1
-: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a5f9c3734d5d06c9ccd5214af5c78c4f8">mcuconf.h</a>
+: <a class="el" href="vms__ecu_2chibios_2v1_80_2mcuconf_8h.html#a5f9c3734d5d06c9ccd5214af5c78c4f8">mcuconf.h</a>
 </li>
 <li>STM32_PPRE2
-: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a3670f3886d02bb3010016bbf0db0db83">mcuconf.h</a>
+: <a class="el" href="vms__ecu_2chibios_2v1_80_2mcuconf_8h.html#a3670f3886d02bb3010016bbf0db0db83">mcuconf.h</a>
 </li>
 <li>STM32_PREDIV1_VALUE
 : <a class="el" href="lia_2chibios_2v1_81_2mcuconf_8h.html#a698d65e5cf1da8551890221a2189bc88">mcuconf.h</a>
@@ -3673,7 +4037,67 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 : <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2mcuconf_8h.html#a6a1dc0d1f404db00250eee320ee70b60">mcuconf.h</a>
 </li>
 <li>STM32_PVD_ENABLE
-: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#ab70d9b5c3764aac6282d594d8f6a88ec">mcuconf.h</a>
+: <a class="el" href="vms__ecu_2chibios_2v1_80_2mcuconf_8h.html#ab70d9b5c3764aac6282d594d8f6a88ec">mcuconf.h</a>
+</li>
+<li>STM32_PWM1_UP_DMA_CHANNEL
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a8ebd9e3a6e9fdcccbb6cec60289d7969">mcuconf.h</a>
+</li>
+<li>STM32_PWM1_UP_DMA_IRQ_PRIORITY
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#afdcca99bb25db402521d082866c475dc">mcuconf.h</a>
+</li>
+<li>STM32_PWM1_UP_DMA_PRIORITY
+: <a class="el" href="tawaki_2chibios_2v1_80_2mcuconf_8h.html#a699a58eeecb8a32a946149cffca4ea60">mcuconf.h</a>
+</li>
+<li>STM32_PWM1_UP_DMA_STREAM
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#ad724435f50c9e308e2e1e2d5ed28c35b">mcuconf.h</a>
+</li>
+<li>STM32_PWM2_UP_DMA_CHANNEL
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a56072c3bbd9eeb03098d4292ed9fc333">mcuconf.h</a>
+</li>
+<li>STM32_PWM2_UP_DMA_IRQ_PRIORITY
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a4c0cec5ff42dcec11dc13afb18b6ebeb">mcuconf.h</a>
+</li>
+<li>STM32_PWM2_UP_DMA_PRIORITY
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#aad1835f50ae3c8c73b1a2be002f01ee0">mcuconf.h</a>
+</li>
+<li>STM32_PWM2_UP_DMA_STREAM
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a95c08221b219e9d2ad283df9b9bbebfc">mcuconf.h</a>
+</li>
+<li>STM32_PWM3_UP_DMA_CHANNEL
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#aaf24f3f33f4f0f2ba0d40652f38ed90e">mcuconf.h</a>
+</li>
+<li>STM32_PWM3_UP_DMA_IRQ_PRIORITY
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a2fbc5ed5cd75144530b7836fb9efcd4b">mcuconf.h</a>
+</li>
+<li>STM32_PWM3_UP_DMA_PRIORITY
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a479bf443874403f9d9bc03de81e4a8ca">mcuconf.h</a>
+</li>
+<li>STM32_PWM3_UP_DMA_STREAM
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a983e561c629ff2403922535f44719022">mcuconf.h</a>
+</li>
+<li>STM32_PWM4_UP_DMA_CHANNEL
+: <a class="el" href="tawaki_2chibios_2v1_80_2mcuconf_8h.html#ab45a03dcc02472a1396215ff9ebacb05">mcuconf.h</a>
+</li>
+<li>STM32_PWM4_UP_DMA_IRQ_PRIORITY
+: <a class="el" href="tawaki_2chibios_2v1_80_2mcuconf_8h.html#af71391a59a86d9f05906087b3a129bd1">mcuconf.h</a>
+</li>
+<li>STM32_PWM4_UP_DMA_PRIORITY
+: <a class="el" href="tawaki_2chibios_2v1_80_2mcuconf_8h.html#a51957076b17929c86a187d6fac517e3c">mcuconf.h</a>
+</li>
+<li>STM32_PWM4_UP_DMA_STREAM
+: <a class="el" href="tawaki_2chibios_2v1_80_2mcuconf_8h.html#a124a3e8f65455671ec8628a2a3ba82f1">mcuconf.h</a>
+</li>
+<li>STM32_PWM5_UP_DMA_CHANNEL
+: <a class="el" href="tawaki_2chibios_2v1_80_2mcuconf_8h.html#aa9c132d9844ec9b7c9cc3edc17876fd1">mcuconf.h</a>
+</li>
+<li>STM32_PWM5_UP_DMA_IRQ_PRIORITY
+: <a class="el" href="tawaki_2chibios_2v1_80_2mcuconf_8h.html#a56e78c2fbb0a28ac4fe4609cf9fa09e9">mcuconf.h</a>
+</li>
+<li>STM32_PWM5_UP_DMA_PRIORITY
+: <a class="el" href="tawaki_2chibios_2v1_80_2mcuconf_8h.html#aefb53d657a406bbbfd6451ccd106c6e6">mcuconf.h</a>
+</li>
+<li>STM32_PWM5_UP_DMA_STREAM
+: <a class="el" href="tawaki_2chibios_2v1_80_2mcuconf_8h.html#a4e74fd9bd21a36f03e26e0ea1e264561">mcuconf.h</a>
 </li>
 <li>STM32_PWM_TIM1_IRQ_PRIORITY
 : <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#ae631e1c4b6541c9d67de9d009196b770">mcuconf.h</a>
@@ -3685,49 +4109,49 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 : <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a8b4f8d9d4308f0503738704437284592">mcuconf.h</a>
 </li>
 <li>STM32_PWM_TIM4_IRQ_PRIORITY
-: <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a072aabc3f06ec1702c1fc5eb3c6b01f8">mcuconf.h</a>
+: <a class="el" href="px4fmu_2chibios_2v2_84_2mcuconf_8h.html#a072aabc3f06ec1702c1fc5eb3c6b01f8">mcuconf.h</a>
 </li>
 <li>STM32_PWM_TIM5_IRQ_PRIORITY
-: <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#ab5e7265edffef2f0b796b755ca4cfbad">mcuconf.h</a>
+: <a class="el" href="crazyflie_2chibios_2v2_81_2mcuconf_8h.html#ab5e7265edffef2f0b796b755ca4cfbad">mcuconf.h</a>
 </li>
 <li>STM32_PWM_TIM8_IRQ_PRIORITY
-: <a class="el" href="lia_2chibios_2v1_81_2mcuconf_8h.html#ab879e56e8632bb4beb029c28133cc504">mcuconf.h</a>
+: <a class="el" href="px4fmu_2chibios_2v4_80_2mcuconf_8h.html#ab879e56e8632bb4beb029c28133cc504">mcuconf.h</a>
 </li>
 <li>STM32_PWM_TIM9_IRQ_PRIORITY
-: <a class="el" href="px4fmu_2chibios_2v2_84_2mcuconf_8h.html#a6f416a1eac8b8cea90cc80535a8269dd">mcuconf.h</a>
+: <a class="el" href="lisa__mx_2chibios_2v2_81_2mcuconf_8h.html#a6f416a1eac8b8cea90cc80535a8269dd">mcuconf.h</a>
 </li>
 <li>STM32_PWM_USE_ADVANCED
-: <a class="el" href="lia_2chibios_2v1_81_2mcuconf_8h.html#a554728f749ad9aca0102d189cc6bb9e7">mcuconf.h</a>
+: <a class="el" href="crazyflie_2chibios_2v2_81_2mcuconf_8h.html#a554728f749ad9aca0102d189cc6bb9e7">mcuconf.h</a>
 </li>
 <li>STM32_PWM_USE_TIM1
-: <a class="el" href="lisa__mx_2chibios_2v2_81_2mcuconf_8h.html#a6f066eafb341c481f419dc609e1cd147">mcuconf.h</a>
+: <a class="el" href="tawaki_2chibios_2v1_80_2mcuconf_8h.html#a6f066eafb341c481f419dc609e1cd147">mcuconf.h</a>
 </li>
 <li>STM32_PWM_USE_TIM2
-: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a061e9a31faab6d787c73d7f21893e483">mcuconf.h</a>
+: <a class="el" href="vms__ecu_2chibios_2v1_80_2mcuconf_8h.html#a061e9a31faab6d787c73d7f21893e483">mcuconf.h</a>
 </li>
 <li>STM32_PWM_USE_TIM3
-: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a3f108deab28dba83858c5a6d5089a322">mcuconf.h</a>
+: <a class="el" href="crazyflie_2chibios_2v2_81_2mcuconf_8h.html#a3f108deab28dba83858c5a6d5089a322">mcuconf.h</a>
 </li>
 <li>STM32_PWM_USE_TIM4
-: <a class="el" href="lisa__mx_2chibios_2v2_81_2mcuconf_8h.html#aa4ecf8f03432b8aabf2f96ca370310d6">mcuconf.h</a>
+: <a class="el" href="vms__ecu_2chibios_2v1_80_2mcuconf_8h.html#aa4ecf8f03432b8aabf2f96ca370310d6">mcuconf.h</a>
 </li>
 <li>STM32_PWM_USE_TIM5
 : <a class="el" href="xvert_2chibios_2v1_80_2mcuconf_8h.html#ae98fcb3612d26b3cf74c2d28e4994249">mcuconf.h</a>
 </li>
 <li>STM32_PWM_USE_TIM8
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2mcuconf_8h.html#af9be48d9e825a860764b4a928124f046">mcuconf.h</a>
+: <a class="el" href="px4fmu_2chibios_2v5_80_2mcuconf_8h.html#af9be48d9e825a860764b4a928124f046">mcuconf.h</a>
 </li>
 <li>STM32_PWM_USE_TIM9
-: <a class="el" href="lisa__mx_2chibios_2v2_81_2mcuconf_8h.html#a78c57d64b293ef3b265175e2a2f9004a">mcuconf.h</a>
+: <a class="el" href="vms__ecu_2chibios_2v1_80_2mcuconf_8h.html#a78c57d64b293ef3b265175e2a2f9004a">mcuconf.h</a>
 </li>
 <li>STM32_RTC_IRQ_PRIORITY
 : <a class="el" href="lia_2chibios_2v1_81_2mcuconf_8h.html#a6845ff948db833347326e2faf808ac76">mcuconf.h</a>
 </li>
 <li>STM32_RTCPRE_VALUE
-: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#aea50a21db71009ebc7951180dc0d29ea">mcuconf.h</a>
+: <a class="el" href="vms__ecu_2chibios_2v1_80_2mcuconf_8h.html#aea50a21db71009ebc7951180dc0d29ea">mcuconf.h</a>
 </li>
 <li>STM32_RTCSEL
-: <a class="el" href="xvert_2chibios_2v1_80_2mcuconf_8h.html#a945eb1f70822303bd0191ef633e5eaca">mcuconf.h</a>
+: <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a945eb1f70822303bd0191ef633e5eaca">mcuconf.h</a>
 </li>
 <li>STM32_SAI1SEL
 : <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a7fafd3288056818d61ea1f1bcade3e76">mcuconf.h</a>
@@ -3739,46 +4163,52 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 : <a class="el" href="px4fmu_2chibios_2v2_84_2mcuconf_8h.html#a76aeddaeff614e55e90337ca86e33e70">mcuconf.h</a>
 </li>
 <li>STM32_SDC_READ_TIMEOUT_MS
-: <a class="el" href="px4fmu_2chibios_2v2_84_2mcuconf_8h.html#a5498cae29922990f276ed50f25b90884">mcuconf.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a5498cae29922990f276ed50f25b90884">mcuconf.h</a>
 </li>
 <li>STM32_SDC_SDIO_DMA_PRIORITY
 : <a class="el" href="px4fmu_2chibios_2v2_84_2mcuconf_8h.html#ada8dcd788c90fb949c1c103d85eb2113">mcuconf.h</a>
 </li>
 <li>STM32_SDC_SDIO_DMA_STREAM
-: <a class="el" href="px4fmu_2chibios_2v2_84_2mcuconf_8h.html#aaae4f606c65a38ec13692b57895e2399">mcuconf.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#aaae4f606c65a38ec13692b57895e2399">mcuconf.h</a>
 </li>
 <li>STM32_SDC_SDIO_IRQ_PRIORITY
 : <a class="el" href="px4fmu_2chibios_2v2_84_2mcuconf_8h.html#af7e466a98c91762b5ef81caa63b4d745">mcuconf.h</a>
 </li>
 <li>STM32_SDC_SDIO_UNALIGNED_SUPPORT
-: <a class="el" href="px4fmu_2chibios_2v2_84_2mcuconf_8h.html#a19c8e2d64659c3d56a23647ac8c4e992">mcuconf.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a19c8e2d64659c3d56a23647ac8c4e992">mcuconf.h</a>
 </li>
 <li>STM32_SDC_SDMMC1_DMA_PRIORITY
 : <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a88c6094436973474db53e155b3ebfe74">mcuconf.h</a>
 </li>
 <li>STM32_SDC_SDMMC1_DMA_STREAM
-: <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a679be1e536703334fe15be63f0a32ef8">mcuconf.h</a>
+: <a class="el" href="px4fmu_2chibios_2v5_80_2mcuconf_8h.html#a679be1e536703334fe15be63f0a32ef8">mcuconf.h</a>
 </li>
 <li>STM32_SDC_SDMMC1_IRQ_PRIORITY
 : <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a5f27dd3fc497bc38fc695c705ed1bb6a">mcuconf.h</a>
 </li>
 <li>STM32_SDC_SDMMC_CLOCK_DELAY
-: <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a39152e644ea1cbe066a9ea6df3be7f73">mcuconf.h</a>
+: <a class="el" href="px4fmu_2chibios_2v5_80_2mcuconf_8h.html#a39152e644ea1cbe066a9ea6df3be7f73">mcuconf.h</a>
 </li>
 <li>STM32_SDC_SDMMC_READ_TIMEOUT
 : <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a1eeaffb87c5b75bdf0ec6ff5149bebde">mcuconf.h</a>
 </li>
 <li>STM32_SDC_SDMMC_UNALIGNED_SUPPORT
-: <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a876384340e8cf5cdd01d4292fa89e8c9">mcuconf.h</a>
+: <a class="el" href="px4fmu_2chibios_2v5_80_2mcuconf_8h.html#a876384340e8cf5cdd01d4292fa89e8c9">mcuconf.h</a>
 </li>
 <li>STM32_SDC_SDMMC_WRITE_TIMEOUT
 : <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#abc31e984ff8585698be0665539a55a79">mcuconf.h</a>
 </li>
 <li>STM32_SDC_USE_SDMMC1
-: <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a9945bfeb81c6b7c9a87e8e204ea57f35">mcuconf.h</a>
+: <a class="el" href="px4fmu_2chibios_2v5_80_2mcuconf_8h.html#a9945bfeb81c6b7c9a87e8e204ea57f35">mcuconf.h</a>
 </li>
 <li>STM32_SDC_WRITE_TIMEOUT_MS
 : <a class="el" href="px4fmu_2chibios_2v2_84_2mcuconf_8h.html#a20eafd1cb6f83cbd057dab18c2a6462d">mcuconf.h</a>
+</li>
+<li>STM32_SDMMC1SEL
+: <a class="el" href="tawaki_2chibios_2v1_80_2mcuconf_8h.html#a08cd4ff363c42b2b7398bdc0e4309ffd">mcuconf.h</a>
+</li>
+<li>STM32_SDMMC2SEL
+: <a class="el" href="tawaki_2chibios_2v1_80_2mcuconf_8h.html#a43b03312203b934df769cffd02f33f63">mcuconf.h</a>
 </li>
 <li>STM32_SDMMCSEL
 : <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a1a7f3b366143d851323d251689599542">mcuconf.h</a>
@@ -3787,34 +4217,34 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 : <a class="el" href="xvert_2chibios_2v1_80_2mcuconf_8h.html#a34ea45aad57a22631a2f8a4ff144d14c">mcuconf.h</a>
 </li>
 <li>STM32_SERIAL_UART4_PRIORITY
-: <a class="el" href="lisa__mx_2chibios_2v2_81_2mcuconf_8h.html#a2bc2adc3f0b24eadf5705b40f03b7648">mcuconf.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a2bc2adc3f0b24eadf5705b40f03b7648">mcuconf.h</a>
 </li>
 <li>STM32_SERIAL_UART5_PRIORITY
-: <a class="el" href="lia_2chibios_2v1_81_2mcuconf_8h.html#a868d30e39ec6441e34b33a9db1028d60">mcuconf.h</a>
+: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2mcuconf_8h.html#a868d30e39ec6441e34b33a9db1028d60">mcuconf.h</a>
 </li>
 <li>STM32_SERIAL_UART7_PRIORITY
-: <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a4445b3a75a0fc5d7f3db9b459eeed083">mcuconf.h</a>
+: <a class="el" href="px4fmu_2chibios_2v5_80_2mcuconf_8h.html#a4445b3a75a0fc5d7f3db9b459eeed083">mcuconf.h</a>
 </li>
 <li>STM32_SERIAL_UART8_PRIORITY
 : <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a361713b1a67a20593d97b6b898307115">mcuconf.h</a>
 </li>
 <li>STM32_SERIAL_USART1_PRIORITY
-: <a class="el" href="lia_2chibios_2v1_81_2mcuconf_8h.html#a7509c7a01a83276aa7768474357ec61d">mcuconf.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a7509c7a01a83276aa7768474357ec61d">mcuconf.h</a>
 </li>
 <li>STM32_SERIAL_USART2_PRIORITY
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2mcuconf_8h.html#a562945e4ccd2bca4a4277eaa05ae70a0">mcuconf.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a562945e4ccd2bca4a4277eaa05ae70a0">mcuconf.h</a>
 </li>
 <li>STM32_SERIAL_USART3_PRIORITY
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2mcuconf_8h.html#a228a6b5e5aed69db051dcea1ef58232a">mcuconf.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a228a6b5e5aed69db051dcea1ef58232a">mcuconf.h</a>
 </li>
 <li>STM32_SERIAL_USART6_PRIORITY
-: <a class="el" href="lisa__mx_2chibios_2v2_81_2mcuconf_8h.html#ad4450f9b0b7a50cdf4f86c67a67d030b">mcuconf.h</a>
+: <a class="el" href="vms__ecu_2chibios_2v1_80_2mcuconf_8h.html#ad4450f9b0b7a50cdf4f86c67a67d030b">mcuconf.h</a>
 </li>
 <li>STM32_SERIAL_USE_UART4
-: <a class="el" href="px4fmu_2chibios_2v2_84_2mcuconf_8h.html#a9863e1adf0d2aab7bf31b61fe4a6118e">mcuconf.h</a>
+: <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a9863e1adf0d2aab7bf31b61fe4a6118e">mcuconf.h</a>
 </li>
 <li>STM32_SERIAL_USE_UART5
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2mcuconf_8h.html#a6366c26f605ce31e89deee1af686f5e6">mcuconf.h</a>
+: <a class="el" href="px4fmu_2chibios_2v2_84_2mcuconf_8h.html#a6366c26f605ce31e89deee1af686f5e6">mcuconf.h</a>
 </li>
 <li>STM32_SERIAL_USE_UART7
 : <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a10817b18623c26f1f8893b643bf4a2f4">mcuconf.h</a>
@@ -3823,70 +4253,73 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 : <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#ad6490250ce5cb87946f86aa6abdc00b5">mcuconf.h</a>
 </li>
 <li>STM32_SERIAL_USE_USART1
-: <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a7f657adda8b7f6aa955f0806a29b0b9d">mcuconf.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a7f657adda8b7f6aa955f0806a29b0b9d">mcuconf.h</a>
 </li>
 <li>STM32_SERIAL_USE_USART2
-: <a class="el" href="px4fmu_2chibios_2v2_84_2mcuconf_8h.html#acf6b4949732fac0a1ded862174aabba7">mcuconf.h</a>
+: <a class="el" href="vms__ecu_2chibios_2v1_80_2mcuconf_8h.html#acf6b4949732fac0a1ded862174aabba7">mcuconf.h</a>
 </li>
 <li>STM32_SERIAL_USE_USART3
-: <a class="el" href="lia_2chibios_2v1_81_2mcuconf_8h.html#a59976b6c28b2561d2b6bd7e3940ea377">mcuconf.h</a>
+: <a class="el" href="lisa__mx_2chibios_2v2_81_2mcuconf_8h.html#a59976b6c28b2561d2b6bd7e3940ea377">mcuconf.h</a>
 </li>
 <li>STM32_SERIAL_USE_USART6
-: <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a5fa35e1fea5f5813af76c2d2b9c03215">mcuconf.h</a>
+: <a class="el" href="lisa__mx_2chibios_2v2_81_2mcuconf_8h.html#a5fa35e1fea5f5813af76c2d2b9c03215">mcuconf.h</a>
 </li>
 <li>STM32_SPI_DMA_ERROR_HOOK
-: <a class="el" href="vms__ecu_2chibios_2v1_80_2mcuconf_8h.html#afda450bd11b4c1408739367b23c9f852">mcuconf.h</a>
+: <a class="el" href="lia_2chibios_2v1_81_2mcuconf_8h.html#afda450bd11b4c1408739367b23c9f852">mcuconf.h</a>
 </li>
 <li>STM32_SPI_SPI1_DMA_PRIORITY
-: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a22d3ce19419dc8bbc47f94c065f3271c">mcuconf.h</a>
+: <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a22d3ce19419dc8bbc47f94c065f3271c">mcuconf.h</a>
 </li>
 <li>STM32_SPI_SPI1_IRQ_PRIORITY
 : <a class="el" href="lisa__mx_2chibios_2v2_81_2mcuconf_8h.html#a0b3f4734d9855324ef89b57cb9858e49">mcuconf.h</a>
 </li>
 <li>STM32_SPI_SPI1_RX_DMA_STREAM
-: <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a620b74e1fca03c6e11c054d137c56524">mcuconf.h</a>
+: <a class="el" href="lisa__mx_2chibios_2v2_81_2mcuconf_8h.html#a620b74e1fca03c6e11c054d137c56524">mcuconf.h</a>
 </li>
 <li>STM32_SPI_SPI1_TX_DMA_STREAM
-: <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a9f72e7206a6300a9d86bccf73f85279a">mcuconf.h</a>
+: <a class="el" href="px4fmu_2chibios_2v2_84_2mcuconf_8h.html#a9f72e7206a6300a9d86bccf73f85279a">mcuconf.h</a>
 </li>
 <li>STM32_SPI_SPI2_DMA_PRIORITY
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2mcuconf_8h.html#a90bd623120d1e54038094fba54ba05c0">mcuconf.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a90bd623120d1e54038094fba54ba05c0">mcuconf.h</a>
 </li>
 <li>STM32_SPI_SPI2_IRQ_PRIORITY
-: <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a47d90eaca23f3eea99d74d1bb3539541">mcuconf.h</a>
+: <a class="el" href="lisa__mx_2chibios_2v2_81_2mcuconf_8h.html#a47d90eaca23f3eea99d74d1bb3539541">mcuconf.h</a>
 </li>
 <li>STM32_SPI_SPI2_RX_DMA_STREAM
-: <a class="el" href="lisa__mx_2chibios_2v2_81_2mcuconf_8h.html#aa499e5a7c6352b58178e0651483d88ee">mcuconf.h</a>
+: <a class="el" href="px4fmu_2chibios_2v2_84_2mcuconf_8h.html#aa499e5a7c6352b58178e0651483d88ee">mcuconf.h</a>
 </li>
 <li>STM32_SPI_SPI2_TX_DMA_STREAM
-: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a9aefcd7246075d08426d5bc833e86b97">mcuconf.h</a>
+: <a class="el" href="lisa__mx_2chibios_2v2_81_2mcuconf_8h.html#a9aefcd7246075d08426d5bc833e86b97">mcuconf.h</a>
 </li>
 <li>STM32_SPI_SPI3_DMA_PRIORITY
-: <a class="el" href="xvert_2chibios_2v1_80_2mcuconf_8h.html#a0330335b8223bb2fd7b30a8bf6748a25">mcuconf.h</a>
+: <a class="el" href="lisa__mx_2chibios_2v2_81_2mcuconf_8h.html#a0330335b8223bb2fd7b30a8bf6748a25">mcuconf.h</a>
 </li>
 <li>STM32_SPI_SPI3_IRQ_PRIORITY
-: <a class="el" href="xvert_2chibios_2v1_80_2mcuconf_8h.html#a311306228435a4ddb879e8f0d80e3c10">mcuconf.h</a>
+: <a class="el" href="px4fmu_2chibios_2v4_80_2mcuconf_8h.html#a311306228435a4ddb879e8f0d80e3c10">mcuconf.h</a>
 </li>
 <li>STM32_SPI_SPI3_RX_DMA_STREAM
-: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#acb9e4ecbe8f121a049306536fa66542c">mcuconf.h</a>
+: <a class="el" href="crazyflie_2chibios_2v2_81_2mcuconf_8h.html#acb9e4ecbe8f121a049306536fa66542c">mcuconf.h</a>
 </li>
 <li>STM32_SPI_SPI3_TX_DMA_STREAM
-: <a class="el" href="lisa__mx_2chibios_2v2_81_2mcuconf_8h.html#a4d7890ef7b4b607b90eb9eafae504f0d">mcuconf.h</a>
+: <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a4d7890ef7b4b607b90eb9eafae504f0d">mcuconf.h</a>
 </li>
 <li>STM32_SPI_SPI4_DMA_PRIORITY
-: <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#ad78cc1c7409d2dbb6ebf63da1b2330cf">mcuconf.h</a>
+: <a class="el" href="px4fmu_2chibios_2v5_80_2mcuconf_8h.html#ad78cc1c7409d2dbb6ebf63da1b2330cf">mcuconf.h</a>
 </li>
 <li>STM32_SPI_SPI4_IRQ_PRIORITY
-: <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a2617c2198da4fd10839e0745b85e3905">mcuconf.h</a>
+: <a class="el" href="px4fmu_2chibios_2v5_80_2mcuconf_8h.html#a2617c2198da4fd10839e0745b85e3905">mcuconf.h</a>
 </li>
 <li>STM32_SPI_SPI4_RX_DMA_STREAM
-: <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a40edb7a64c15734c18ac7cbd31151b77">mcuconf.h</a>
+: <a class="el" href="px4fmu_2chibios_2v5_80_2mcuconf_8h.html#a40edb7a64c15734c18ac7cbd31151b77">mcuconf.h</a>
 </li>
 <li>STM32_SPI_SPI4_TX_DMA_STREAM
 : <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a2720108beeba657b309f9537bb33cbdb">mcuconf.h</a>
 </li>
+<li>STM32_SPI_SPI5_DMA_PRIORITY
+: <a class="el" href="tawaki_2chibios_2v1_80_2mcuconf_8h.html#a0881a27411d4bee4fa3a15042cf22c13">mcuconf.h</a>
+</li>
 <li>STM32_SPI_SPI5_IRQ_PRIORITY
-: <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#ad747ea34a7a17673701fedb4b441bf6c">mcuconf.h</a>
+: <a class="el" href="tawaki_2chibios_2v1_80_2mcuconf_8h.html#ad747ea34a7a17673701fedb4b441bf6c">mcuconf.h</a>
 </li>
 <li>STM32_SPI_SPI5_RX_DMA_STREAM
 : <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#ad6fda9b29002dd22717082e65542c940">mcuconf.h</a>
@@ -3894,41 +4327,44 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 <li>STM32_SPI_SPI5_TX_DMA_STREAM
 : <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#adfcd2fc6dcb56cd4ed66b2308d4b58e3">mcuconf.h</a>
 </li>
+<li>STM32_SPI_SPI6_DMA_PRIORITY
+: <a class="el" href="tawaki_2chibios_2v1_80_2mcuconf_8h.html#a7570f6862f2950a7fee73f18bb9358d5">mcuconf.h</a>
+</li>
 <li>STM32_SPI_SPI6_IRQ_PRIORITY
-: <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a50966593f2981b405801d73dda3283f8">mcuconf.h</a>
+: <a class="el" href="tawaki_2chibios_2v1_80_2mcuconf_8h.html#a50966593f2981b405801d73dda3283f8">mcuconf.h</a>
 </li>
 <li>STM32_SPI_SPI6_TX_DMA_STREAM
 : <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#ae84e1a989b1da284186186a43b5d9c2c">mcuconf.h</a>
 </li>
 <li>STM32_SPI_USE_SPI1
-: <a class="el" href="vms__ecu_2chibios_2v1_80_2mcuconf_8h.html#af105fbdfb7b9076472b373ed0c7b3fef">mcuconf.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#af105fbdfb7b9076472b373ed0c7b3fef">mcuconf.h</a>
 </li>
 <li>STM32_SPI_USE_SPI2
-: <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a626416dc22cf5f3deff2a8c7d8efa5b2">mcuconf.h</a>
+: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2mcuconf_8h.html#a626416dc22cf5f3deff2a8c7d8efa5b2">mcuconf.h</a>
 </li>
 <li>STM32_SPI_USE_SPI3
-: <a class="el" href="vms__ecu_2chibios_2v1_80_2mcuconf_8h.html#afe588bf112fc8f8a22c767aa3d3bcbb7">mcuconf.h</a>
+: <a class="el" href="tawaki_2chibios_2v1_80_2mcuconf_8h.html#afe588bf112fc8f8a22c767aa3d3bcbb7">mcuconf.h</a>
 </li>
 <li>STM32_SPI_USE_SPI4
-: <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a14ecd24dab91af848b23f257e383999b">mcuconf.h</a>
+: <a class="el" href="tawaki_2chibios_2v1_80_2mcuconf_8h.html#a14ecd24dab91af848b23f257e383999b">mcuconf.h</a>
 </li>
 <li>STM32_SPI_USE_SPI5
-: <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#aaac58290bec7444ae54e9f0f74000a1e">mcuconf.h</a>
+: <a class="el" href="tawaki_2chibios_2v1_80_2mcuconf_8h.html#aaac58290bec7444ae54e9f0f74000a1e">mcuconf.h</a>
 </li>
 <li>STM32_SPI_USE_SPI6
-: <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a3bb57107ccd4836ae9070ba3000341f2">mcuconf.h</a>
+: <a class="el" href="tawaki_2chibios_2v1_80_2mcuconf_8h.html#a3bb57107ccd4836ae9070ba3000341f2">mcuconf.h</a>
 </li>
 <li>STM32_SRAM2_NOCACHE
-: <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a41936b81e5fd08241408ac46193ae51a">mcuconf.h</a>
+: <a class="el" href="tawaki_2chibios_2v1_80_2mcuconf_8h.html#a41936b81e5fd08241408ac46193ae51a">mcuconf.h</a>
 </li>
 <li>STM32_ST_IRQ_PRIORITY
-: <a class="el" href="lia_2chibios_2v1_81_2mcuconf_8h.html#a0086a7a701003e795861e93bd2c7a7fd">mcuconf.h</a>
+: <a class="el" href="crazyflie_2chibios_2v2_81_2mcuconf_8h.html#a0086a7a701003e795861e93bd2c7a7fd">mcuconf.h</a>
 </li>
 <li>STM32_ST_USE_TIMER
-: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a607a901e51e89bc6f1a2a1051a3cf359">mcuconf.h</a>
+: <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a607a901e51e89bc6f1a2a1051a3cf359">mcuconf.h</a>
 </li>
 <li>STM32_SW
-: <a class="el" href="px4fmu_2chibios_2v2_84_2mcuconf_8h.html#a29204b81c265dd6e124fbcf12a2c8d6f">mcuconf.h</a>
+: <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a29204b81c265dd6e124fbcf12a2c8d6f">mcuconf.h</a>
 </li>
 <li>STM32_TIM1SW
 : <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2mcuconf_8h.html#a27fd8ee5368f1d18800f60f190b53d44">mcuconf.h</a>
@@ -3937,7 +4373,7 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 : <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2mcuconf_8h.html#a185fbb756bdb2d64582625c10ebff0b8">mcuconf.h</a>
 </li>
 <li>STM32_UART4SEL
-: <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a6c796c55e8372456e4079f57656ee22c">mcuconf.h</a>
+: <a class="el" href="tawaki_2chibios_2v1_80_2mcuconf_8h.html#a6c796c55e8372456e4079f57656ee22c">mcuconf.h</a>
 </li>
 <li>STM32_UART4SW
 : <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2mcuconf_8h.html#a0e5267b0f1122de3238914c8299877b4">mcuconf.h</a>
@@ -3949,121 +4385,121 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 : <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2mcuconf_8h.html#a9df33431b70cb65966b572320509c4e8">mcuconf.h</a>
 </li>
 <li>STM32_UART7SEL
-: <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a58c9741fced167f2693ce50699d8e170">mcuconf.h</a>
+: <a class="el" href="tawaki_2chibios_2v1_80_2mcuconf_8h.html#a58c9741fced167f2693ce50699d8e170">mcuconf.h</a>
 </li>
 <li>STM32_UART8SEL
-: <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a624c2f45087a89671d281a4a6a97f0b5">mcuconf.h</a>
+: <a class="el" href="tawaki_2chibios_2v1_80_2mcuconf_8h.html#a624c2f45087a89671d281a4a6a97f0b5">mcuconf.h</a>
 </li>
 <li>STM32_UART_DMA_ERROR_HOOK
-: <a class="el" href="lisa__mx_2chibios_2v2_81_2mcuconf_8h.html#a9a4cb321d74c57b544a1628faaae1569">mcuconf.h</a>
+: <a class="el" href="tawaki_2chibios_2v1_80_2mcuconf_8h.html#a9a4cb321d74c57b544a1628faaae1569">mcuconf.h</a>
 </li>
 <li>STM32_UART_UART4_DMA_PRIORITY
-: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a02086c51746a93818f7b50d8d184bdfc">mcuconf.h</a>
+: <a class="el" href="px4fmu_2chibios_2v4_80_2mcuconf_8h.html#a02086c51746a93818f7b50d8d184bdfc">mcuconf.h</a>
 </li>
 <li>STM32_UART_UART4_IRQ_PRIORITY
-: <a class="el" href="px4fmu_2chibios_2v2_84_2mcuconf_8h.html#a13318059ca6faaff587992e69e22a7e0">mcuconf.h</a>
+: <a class="el" href="px4fmu_2chibios_2v5_80_2mcuconf_8h.html#a13318059ca6faaff587992e69e22a7e0">mcuconf.h</a>
 </li>
 <li>STM32_UART_UART4_RX_DMA_STREAM
-: <a class="el" href="px4fmu_2chibios_2v2_84_2mcuconf_8h.html#afb98861d06d9f4145f01c9d4d0fa09dd">mcuconf.h</a>
+: <a class="el" href="px4fmu_2chibios_2v4_80_2mcuconf_8h.html#afb98861d06d9f4145f01c9d4d0fa09dd">mcuconf.h</a>
 </li>
 <li>STM32_UART_UART4_TX_DMA_STREAM
-: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#ae4258a650515c19e5df92b5917399195">mcuconf.h</a>
+: <a class="el" href="px4fmu_2chibios_2v5_80_2mcuconf_8h.html#ae4258a650515c19e5df92b5917399195">mcuconf.h</a>
 </li>
 <li>STM32_UART_UART5_DMA_PRIORITY
-: <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a1b30eda5a6f930b068db7bc108e0478d">mcuconf.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a1b30eda5a6f930b068db7bc108e0478d">mcuconf.h</a>
 </li>
 <li>STM32_UART_UART5_IRQ_PRIORITY
-: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a5df333941ca2fb9dec26a569e802dd57">mcuconf.h</a>
+: <a class="el" href="tawaki_2chibios_2v1_80_2mcuconf_8h.html#a5df333941ca2fb9dec26a569e802dd57">mcuconf.h</a>
 </li>
 <li>STM32_UART_UART5_RX_DMA_STREAM
-: <a class="el" href="px4fmu_2chibios_2v2_84_2mcuconf_8h.html#a25122dae8d088e5f5a12926e43d78efb">mcuconf.h</a>
+: <a class="el" href="px4fmu_2chibios_2v4_80_2mcuconf_8h.html#a25122dae8d088e5f5a12926e43d78efb">mcuconf.h</a>
 </li>
 <li>STM32_UART_UART5_TX_DMA_STREAM
-: <a class="el" href="px4fmu_2chibios_2v2_84_2mcuconf_8h.html#a9b92c8345705d855f58f3cc0a3610175">mcuconf.h</a>
+: <a class="el" href="px4fmu_2chibios_2v5_80_2mcuconf_8h.html#a9b92c8345705d855f58f3cc0a3610175">mcuconf.h</a>
 </li>
 <li>STM32_UART_UART7_DMA_PRIORITY
-: <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a211c00f541d67a32c55d0f47f1297db5">mcuconf.h</a>
+: <a class="el" href="tawaki_2chibios_2v1_80_2mcuconf_8h.html#a211c00f541d67a32c55d0f47f1297db5">mcuconf.h</a>
 </li>
 <li>STM32_UART_UART8_DMA_PRIORITY
 : <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#ae56e2de32e00c7684a6996f14b2be348">mcuconf.h</a>
 </li>
 <li>STM32_UART_USART1_DMA_PRIORITY
-: <a class="el" href="lisa__mx_2chibios_2v2_81_2mcuconf_8h.html#a8307c6c43bf456405efe19e5908d5a25">mcuconf.h</a>
+: <a class="el" href="crazyflie_2chibios_2v2_81_2mcuconf_8h.html#a8307c6c43bf456405efe19e5908d5a25">mcuconf.h</a>
 </li>
 <li>STM32_UART_USART1_IRQ_PRIORITY
-: <a class="el" href="vms__ecu_2chibios_2v1_80_2mcuconf_8h.html#a050fc59913309402f34dd2ea6ab3cdf8">mcuconf.h</a>
+: <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a050fc59913309402f34dd2ea6ab3cdf8">mcuconf.h</a>
 </li>
 <li>STM32_UART_USART1_RX_DMA_STREAM
-: <a class="el" href="px4fmu_2chibios_2v2_84_2mcuconf_8h.html#a969b79cb637b8b69cec9257705d74484">mcuconf.h</a>
+: <a class="el" href="tawaki_2chibios_2v1_80_2mcuconf_8h.html#a969b79cb637b8b69cec9257705d74484">mcuconf.h</a>
 </li>
 <li>STM32_UART_USART1_TX_DMA_STREAM
-: <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a02c568ae2c758034cdf478f81b447af3">mcuconf.h</a>
+: <a class="el" href="lisa__mx_2chibios_2v2_81_2mcuconf_8h.html#a02c568ae2c758034cdf478f81b447af3">mcuconf.h</a>
 </li>
 <li>STM32_UART_USART2_DMA_PRIORITY
-: <a class="el" href="xvert_2chibios_2v1_80_2mcuconf_8h.html#a02ab064f32c429288dce0b15b2e443a1">mcuconf.h</a>
+: <a class="el" href="lisa__mx_2chibios_2v2_81_2mcuconf_8h.html#a02ab064f32c429288dce0b15b2e443a1">mcuconf.h</a>
 </li>
 <li>STM32_UART_USART2_IRQ_PRIORITY
-: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#ad1d292d78abf8f0b5a9e210d217a1cfe">mcuconf.h</a>
+: <a class="el" href="lia_2chibios_2v1_81_2mcuconf_8h.html#ad1d292d78abf8f0b5a9e210d217a1cfe">mcuconf.h</a>
 </li>
 <li>STM32_UART_USART2_RX_DMA_STREAM
-: <a class="el" href="lisa__mx_2chibios_2v2_81_2mcuconf_8h.html#af80e6c340ebc738f24275329c32db853">mcuconf.h</a>
+: <a class="el" href="px4fmu_2chibios_2v2_84_2mcuconf_8h.html#af80e6c340ebc738f24275329c32db853">mcuconf.h</a>
 </li>
 <li>STM32_UART_USART2_TX_DMA_STREAM
-: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#aacb71b8fee4d07ab0317ac8cc6ee9856">mcuconf.h</a>
+: <a class="el" href="px4fmu_2chibios_2v2_84_2mcuconf_8h.html#aacb71b8fee4d07ab0317ac8cc6ee9856">mcuconf.h</a>
 </li>
 <li>STM32_UART_USART3_DMA_PRIORITY
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2mcuconf_8h.html#a4f49346cf0c36ac85466517ceff6299b">mcuconf.h</a>
+: <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a4f49346cf0c36ac85466517ceff6299b">mcuconf.h</a>
 </li>
 <li>STM32_UART_USART3_IRQ_PRIORITY
 : <a class="el" href="vms__ecu_2chibios_2v1_80_2mcuconf_8h.html#a9c9553fdd3fc1f7790cbcbd784d54d54">mcuconf.h</a>
 </li>
 <li>STM32_UART_USART3_RX_DMA_STREAM
-: <a class="el" href="vms__ecu_2chibios_2v1_80_2mcuconf_8h.html#ad5644ee22605eb7f136b390dba9f9725">mcuconf.h</a>
+: <a class="el" href="px4fmu_2chibios_2v2_84_2mcuconf_8h.html#ad5644ee22605eb7f136b390dba9f9725">mcuconf.h</a>
 </li>
 <li>STM32_UART_USART3_TX_DMA_STREAM
-: <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a5339fe32096faad20bbcf31d2d5b45d1">mcuconf.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a5339fe32096faad20bbcf31d2d5b45d1">mcuconf.h</a>
 </li>
 <li>STM32_UART_USART6_DMA_PRIORITY
-: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a7e58662e757ecd7f20e8135c82393312">mcuconf.h</a>
+: <a class="el" href="px4fmu_2chibios_2v2_84_2mcuconf_8h.html#a7e58662e757ecd7f20e8135c82393312">mcuconf.h</a>
 </li>
 <li>STM32_UART_USART6_IRQ_PRIORITY
-: <a class="el" href="px4fmu_2chibios_2v2_84_2mcuconf_8h.html#aebae084c5d2daf88c58efd5a9c1d52af">mcuconf.h</a>
+: <a class="el" href="px4fmu_2chibios_2v4_80_2mcuconf_8h.html#aebae084c5d2daf88c58efd5a9c1d52af">mcuconf.h</a>
 </li>
 <li>STM32_UART_USART6_RX_DMA_STREAM
 : <a class="el" href="vms__ecu_2chibios_2v1_80_2mcuconf_8h.html#a0cf68b359bf671f56cd200677a8496a5">mcuconf.h</a>
 </li>
 <li>STM32_UART_USART6_TX_DMA_STREAM
-: <a class="el" href="lisa__mx_2chibios_2v2_81_2mcuconf_8h.html#ae32ac88b3b64552f9ecec5a038dfc544">mcuconf.h</a>
+: <a class="el" href="px4fmu_2chibios_2v5_80_2mcuconf_8h.html#ae32ac88b3b64552f9ecec5a038dfc544">mcuconf.h</a>
 </li>
 <li>STM32_UART_USE_UART4
-: <a class="el" href="px4fmu_2chibios_2v2_84_2mcuconf_8h.html#a2bf6f75268559ffdb5d7f9b53a319267">mcuconf.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a2bf6f75268559ffdb5d7f9b53a319267">mcuconf.h</a>
 </li>
 <li>STM32_UART_USE_UART5
-: <a class="el" href="px4fmu_2chibios_2v2_84_2mcuconf_8h.html#a51645272d956b6e1ec578bdcd88c88b0">mcuconf.h</a>
+: <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a51645272d956b6e1ec578bdcd88c88b0">mcuconf.h</a>
 </li>
 <li>STM32_UART_USE_UART7
-: <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#ab99e09e5d7cf617d243ad4e19bacf778">mcuconf.h</a>
+: <a class="el" href="tawaki_2chibios_2v1_80_2mcuconf_8h.html#ab99e09e5d7cf617d243ad4e19bacf778">mcuconf.h</a>
 </li>
 <li>STM32_UART_USE_UART8
 : <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a2669d1e2fc1b5dfeb3625ab795c3b07b">mcuconf.h</a>
 </li>
 <li>STM32_UART_USE_USART1
-: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a7b366b1eb660467c7ef9667705ad8308">mcuconf.h</a>
+: <a class="el" href="px4fmu_2chibios_2v4_80_2mcuconf_8h.html#a7b366b1eb660467c7ef9667705ad8308">mcuconf.h</a>
 </li>
 <li>STM32_UART_USE_USART2
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2mcuconf_8h.html#ad9f8b9dcf8dd01e163b8d47c56cee1aa">mcuconf.h</a>
+: <a class="el" href="crazyflie_2chibios_2v2_81_2mcuconf_8h.html#ad9f8b9dcf8dd01e163b8d47c56cee1aa">mcuconf.h</a>
 </li>
 <li>STM32_UART_USE_USART3
-: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a42b1761cd3b7e70eb3c5c90d9b92f52c">mcuconf.h</a>
+: <a class="el" href="px4fmu_2chibios_2v4_80_2mcuconf_8h.html#a42b1761cd3b7e70eb3c5c90d9b92f52c">mcuconf.h</a>
 </li>
 <li>STM32_UART_USE_USART6
-: <a class="el" href="lisa__mx_2chibios_2v2_81_2mcuconf_8h.html#a6f5d3dfc7539503f8639d4be5b81928d">mcuconf.h</a>
+: <a class="el" href="px4fmu_2chibios_2v5_80_2mcuconf_8h.html#a6f5d3dfc7539503f8639d4be5b81928d">mcuconf.h</a>
 </li>
 <li>STM32_USART1SEL
-: <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a88ed161000188baad76db684cf751f17">mcuconf.h</a>
+: <a class="el" href="tawaki_2chibios_2v1_80_2mcuconf_8h.html#a88ed161000188baad76db684cf751f17">mcuconf.h</a>
 </li>
 <li>STM32_USART1SW
-: <a class="el" href="xvert_2chibios_2v1_80_2mcuconf_8h.html#ade0c8b4992afc59bd1256c66c794bdeb">mcuconf.h</a>
+: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2mcuconf_8h.html#ade0c8b4992afc59bd1256c66c794bdeb">mcuconf.h</a>
 </li>
 <li>STM32_USART2SEL
 : <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#ac61edaa8b7ad1604d18591de6c66a744">mcuconf.h</a>
@@ -4081,31 +4517,31 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 : <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#ac264f36c9e98409724821a0c7d93151d">mcuconf.h</a>
 </li>
 <li>STM32_USB_CLOCK_REQUIRED
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2mcuconf_8h.html#a0b209febf2d61ba32600c35654ba1bfc">mcuconf.h</a>
+: <a class="el" href="lia_2chibios_2v1_81_2mcuconf_8h.html#a0b209febf2d61ba32600c35654ba1bfc">mcuconf.h</a>
 </li>
 <li>STM32_USB_LOW_POWER_ON_SUSPEND
 : <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2mcuconf_8h.html#a6f90f2ca5b1d3aab2686d2ad2c02ab3a">mcuconf.h</a>
 </li>
 <li>STM32_USB_OTG1_IRQ_PRIORITY
-: <a class="el" href="px4fmu_2chibios_2v2_84_2mcuconf_8h.html#aa6f3292830116ce88ed2268f15f45448">mcuconf.h</a>
+: <a class="el" href="tawaki_2chibios_2v1_80_2mcuconf_8h.html#aa6f3292830116ce88ed2268f15f45448">mcuconf.h</a>
 </li>
 <li>STM32_USB_OTG1_RX_FIFO_SIZE
-: <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h.html#a3bef70abed53b8df90c5edb807077e37">mcuconf.h</a>
+: <a class="el" href="vms__ecu_2chibios_2v1_80_2mcuconf_8h.html#a3bef70abed53b8df90c5edb807077e37">mcuconf.h</a>
 </li>
 <li>STM32_USB_OTG2_IRQ_PRIORITY
-: <a class="el" href="px4fmu_2chibios_2v2_84_2mcuconf_8h.html#a4026ae95617bb7ee1cbc32248e97e263">mcuconf.h</a>
+: <a class="el" href="px4fmu_2chibios_2v5_80_2mcuconf_8h.html#a4026ae95617bb7ee1cbc32248e97e263">mcuconf.h</a>
 </li>
 <li>STM32_USB_OTG2_RX_FIFO_SIZE
-: <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a7c6ca71505c504cbd011d772af8cf665">mcuconf.h</a>
+: <a class="el" href="vms__ecu_2chibios_2v1_80_2mcuconf_8h.html#a7c6ca71505c504cbd011d772af8cf665">mcuconf.h</a>
 </li>
 <li>STM32_USB_OTG_THREAD_PRIO
-: <a class="el" href="lisa__mx_2chibios_2v2_81_2mcuconf_8h.html#a4d2cdf3f4db17ba5a02b3ceaa26d95d2">mcuconf.h</a>
+: <a class="el" href="px4fmu_2chibios_2v2_84_2mcuconf_8h.html#a4d2cdf3f4db17ba5a02b3ceaa26d95d2">mcuconf.h</a>
 </li>
 <li>STM32_USB_OTG_THREAD_STACK_SIZE
-: <a class="el" href="px4fmu_2chibios_2v2_84_2mcuconf_8h.html#a312189ef5ee80551c65c5655dcd16edf">mcuconf.h</a>
+: <a class="el" href="px4fmu_2chibios_2v5_80_2mcuconf_8h.html#a312189ef5ee80551c65c5655dcd16edf">mcuconf.h</a>
 </li>
 <li>STM32_USB_OTGFIFO_FILL_BASEPRI
-: <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a9ccd82d55af1633658db54858378c277">mcuconf.h</a>
+: <a class="el" href="px4fmu_2chibios_2v2_84_2mcuconf_8h.html#a9ccd82d55af1633658db54858378c277">mcuconf.h</a>
 </li>
 <li>STM32_USB_USB1_HP_IRQ_PRIORITY
 : <a class="el" href="xvert_2chibios_2v1_80_2mcuconf_8h.html#a5a54e2f2f452568276faa96392039e10">mcuconf.h</a>
@@ -4114,13 +4550,13 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 : <a class="el" href="xvert_2chibios_2v1_80_2mcuconf_8h.html#a9464b56116f282eee1fb597fe62f9f7c">mcuconf.h</a>
 </li>
 <li>STM32_USB_USE_OTG1
-: <a class="el" href="vms__ecu_2chibios_2v1_80_2mcuconf_8h.html#ac7d6b8123d2eacf524927fc68f70baa1">mcuconf.h</a>
+: <a class="el" href="tawaki_2chibios_2v1_80_2mcuconf_8h.html#ac7d6b8123d2eacf524927fc68f70baa1">mcuconf.h</a>
 </li>
 <li>STM32_USB_USE_OTG2
-: <a class="el" href="px4fmu_2chibios_2v2_84_2mcuconf_8h.html#a56a0c40fe1260ca2265cc01d42668ca7">mcuconf.h</a>
+: <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a56a0c40fe1260ca2265cc01d42668ca7">mcuconf.h</a>
 </li>
 <li>STM32_USB_USE_USB1
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2mcuconf_8h.html#a9a1f666e68948aec51fec38353e872c4">mcuconf.h</a>
+: <a class="el" href="xvert_2chibios_2v1_80_2mcuconf_8h.html#a9a1f666e68948aec51fec38353e872c4">mcuconf.h</a>
 </li>
 <li>STM32_USBPRE
 : <a class="el" href="xvert_2chibios_2v1_80_2mcuconf_8h.html#a09841e6566ed7d5a9a925b4dbacc80a1">mcuconf.h</a>
@@ -4129,10 +4565,10 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 : <a class="el" href="px4fmu_2chibios_2v2_84_2mcuconf_8h.html#ac1e6c000166aa17097273030c190e27b">mcuconf.h</a>
 </li>
 <li>STM32_VDD
-: <a class="el" href="px4fmu_2chibios_2v2_84_2board_8h.html#a839559aab882ed0a1b6d46aa9c228378">board.h</a>
+: <a class="el" href="px4fmu_2chibios_2v4_80_2board_8h.html#a839559aab882ed0a1b6d46aa9c228378">board.h</a>
 </li>
 <li>STM32_WDG_USE_IWDG
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2mcuconf_8h.html#a3d89a31bf8ff315d8c13102cea1284ac">mcuconf.h</a>
+: <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a3d89a31bf8ff315d8c13102cea1284ac">mcuconf.h</a>
 </li>
 <li>STM32F105xC
 : <a class="el" href="lia_2chibios_2v1_81_2board_8h.html#ad2f9b639de2f6acbba2124a980768f9b">board.h</a>
@@ -4152,17 +4588,38 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 <li>STM32F3xx_MCUCONF
 : <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2mcuconf_8h.html#ab267f5da87116d29eefb716ca7b16d38">mcuconf.h</a>
 </li>
+<li>STM32F405xx
+: <a class="el" href="crazyflie_2chibios_2v2_81_2board_8h.html#a075ace0177a31ebf73c74fdcc42b9037">board.h</a>
+</li>
 <li>STM32F407xx
-: <a class="el" href="px4fmu_2chibios_2v2_84_2board_8h.html#a50c9eef9a46dd72bc1e487791702f09c">board.h</a>
+: <a class="el" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a50c9eef9a46dd72bc1e487791702f09c">board.h</a>
+</li>
+<li>STM32F427xx
+: <a class="el" href="px4fmu_2chibios_2v4_80_2board_8h.html#a92349e2b4765fc34d3a394e78ad0f6a1">board.h</a>
 </li>
 <li>STM32F4xx_MCUCONF
-: <a class="el" href="lisa__mx_2chibios_2v2_81_2mcuconf_8h.html#a6c41ac9534659a9a1d50d6772bdb7c91">mcuconf.h</a>
+: <a class="el" href="px4fmu_2chibios_2v4_80_2mcuconf_8h.html#a6c41ac9534659a9a1d50d6772bdb7c91">mcuconf.h</a>
 </li>
 <li>STM32F767xx
-: <a class="el" href="chimera_2chibios_2v1_80_2board_8h.html#a8291360b9adbfcbccfe2751a5c723357">board.h</a>
+: <a class="el" href="px4fmu_2chibios_2v5_80_2board_8h.html#a8291360b9adbfcbccfe2751a5c723357">board.h</a>
+</li>
+<li>STM32F777xx
+: <a class="el" href="tawaki_2chibios_2v1_80_2board_8h.html#a2d980b497be2909bdeac7bfeb4e5cee5">board.h</a>
 </li>
 <li>STM32F7xx_MCUCONF
-: <a class="el" href="chimera_2chibios_2v1_80_2mcuconf_8h.html#a06ca1a72f6a4d636477b4bcfba7ca07e">mcuconf.h</a>
+: <a class="el" href="tawaki_2chibios_2v1_80_2mcuconf_8h.html#a06ca1a72f6a4d636477b4bcfba7ca07e">mcuconf.h</a>
+</li>
+<li>STM_SWCLK
+: <a class="el" href="crazyflie_2chibios_2v2_81_2board_8h.html#af75fca439a13c1c2f7176bfb80850c68">board.h</a>
+</li>
+<li>STM_SWCLK_PORT
+: <a class="el" href="crazyflie_2chibios_2v2_81_2board_8h.html#a48086b4e143db19a1a3a6b203a49f4fd">board.h</a>
+</li>
+<li>STM_SWIO
+: <a class="el" href="crazyflie_2chibios_2v2_81_2board_8h.html#a73a823f953c180cc8f05351c2dbe343d">board.h</a>
+</li>
+<li>STM_SWIO_PORT
+: <a class="el" href="crazyflie_2chibios_2v2_81_2board_8h.html#a623d2cea856a95e5748cecbe4e53d4c0">board.h</a>
 </li>
 <li>STO
 : <a class="el" href="LPC21xx_8h.html#ac8ab1f93e383f229ff0cdcd3f4053e7c">LPC21xx.h</a>
@@ -4183,11 +4640,14 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 : <a class="el" href="light_8c.html#a7b7eb7f40d7931b786762fd4a1fbcb04">light.c</a>
 </li>
 <li>STX
-: <a class="el" href="gps__udp_8c.html#aacd744a917e61146ec8b7175b4761683">gps_udp.c</a>
-, <a class="el" href="digital__cam_2catia_2protocol_8h.html#aacd744a917e61146ec8b7175b4761683">protocol.h</a>
+: <a class="el" href="digital__cam_2catia_2protocol_8h.html#aacd744a917e61146ec8b7175b4761683">protocol.h</a>
+, <a class="el" href="gps__udp_8c.html#aacd744a917e61146ec8b7175b4761683">gps_udp.c</a>
 </li>
 <li>STXMAV
 : <a class="el" href="mavlink__decoder_8h.html#a3667c7fc3d2f47c463c1062e49c7e972">mavlink_decoder.h</a>
+</li>
+<li>SUCCESS_DETECT
+: <a class="el" href="snake__gate__detection_8c.html#a80623b87b2a8a4430c0bb894bb4c709c">snake_gate_detection.c</a>
 </li>
 <li>SUPERBITRF
 : <a class="el" href="datalink_8h.html#a69402663cfd97c88416baa167e62c5ab">datalink.h</a>
@@ -4210,8 +4670,8 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 , <a class="el" href="lisa__s__1_80_8h.html#a099e591914a4f6d65cdaa9b55fea1193">lisa_s_1.0.h</a>
 </li>
 <li>SUPERBITRF_FORCE_DSM2
-: <a class="el" href="lisa__s__1_80_8h.html#a3a9e5f574332d7a10a4fa95fde4467c9">lisa_s_1.0.h</a>
-, <a class="el" href="subsystems_2datalink_2superbitrf_8c.html#a3a9e5f574332d7a10a4fa95fde4467c9">superbitrf.c</a>
+: <a class="el" href="subsystems_2datalink_2superbitrf_8c.html#a3a9e5f574332d7a10a4fa95fde4467c9">superbitrf.c</a>
+, <a class="el" href="lisa__s__1_80_8h.html#a3a9e5f574332d7a10a4fa95fde4467c9">lisa_s_1.0.h</a>
 </li>
 <li>SUPERBITRF_RECV_SHORT_TIME
 : <a class="el" href="subsystems_2datalink_2superbitrf_8h.html#a60752b418cec96550bc0dc27a2644f57">superbitrf.h</a>
@@ -4220,16 +4680,16 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 : <a class="el" href="subsystems_2datalink_2superbitrf_8h.html#a954444ad0f32f41c06c53ac38e4cf06e">superbitrf.h</a>
 </li>
 <li>SUPERBITRF_RST_PIN
-: <a class="el" href="lisa__s__1_80_8h.html#a9a69ba9efc00c1aff78c3e51f3898ba7">lisa_s_1.0.h</a>
-, <a class="el" href="subsystems_2datalink_2superbitrf_8c.html#a9a69ba9efc00c1aff78c3e51f3898ba7">superbitrf.c</a>
+: <a class="el" href="subsystems_2datalink_2superbitrf_8c.html#a9a69ba9efc00c1aff78c3e51f3898ba7">superbitrf.c</a>
+, <a class="el" href="lisa__s__1_80_8h.html#a9a69ba9efc00c1aff78c3e51f3898ba7">lisa_s_1.0.h</a>
 </li>
 <li>SUPERBITRF_RST_PORT
-: <a class="el" href="lisa__s__1_80_8h.html#ad74826717a490f03c9e5a1fa9a221755">lisa_s_1.0.h</a>
-, <a class="el" href="subsystems_2datalink_2superbitrf_8c.html#ad74826717a490f03c9e5a1fa9a221755">superbitrf.c</a>
+: <a class="el" href="subsystems_2datalink_2superbitrf_8c.html#ad74826717a490f03c9e5a1fa9a221755">superbitrf.c</a>
+, <a class="el" href="lisa__s__1_80_8h.html#ad74826717a490f03c9e5a1fa9a221755">lisa_s_1.0.h</a>
 </li>
 <li>SUPERBITRF_SPI_DEV
-: <a class="el" href="subsystems_2datalink_2superbitrf_8c.html#a7a9e3d569526ef39c81a34a4d6f54b82">superbitrf.c</a>
-, <a class="el" href="lisa__s__1_80_8h.html#a7a9e3d569526ef39c81a34a4d6f54b82">lisa_s_1.0.h</a>
+: <a class="el" href="lisa__s__1_80_8h.html#a7a9e3d569526ef39c81a34a4d6f54b82">lisa_s_1.0.h</a>
+, <a class="el" href="subsystems_2datalink_2superbitrf_8c.html#a7a9e3d569526ef39c81a34a4d6f54b82">superbitrf.c</a>
 </li>
 <li>SUPERBITRF_SYNC_RECV_TIME
 : <a class="el" href="subsystems_2datalink_2superbitrf_8h.html#ae6fdf2460ffaf5330e8a9fffd465d4f1">superbitrf.h</a>
@@ -4237,9 +4697,12 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 <li>SUPERBITRF_TX_BUFFER_SIZE
 : <a class="el" href="subsystems_2datalink_2superbitrf_8h.html#a57ebae970a132e79970b3214a70a959b">superbitrf.h</a>
 </li>
+<li>SUPERBITRF_UPDATE_DL
+: <a class="el" href="subsystems_2datalink_2superbitrf_8c.html#a4ebe8f9346a2a1ad32c2b2e7e8215f63">superbitrf.c</a>
+</li>
 <li>SurveyGoingEast
-: <a class="el" href="nav__survey__rectangle_8c.html#a89a1c981b6ac2e85f914e256ec7551d2">nav_survey_rectangle.c</a>
-, <a class="el" href="nav__survey__rectangle__rotorcraft_8c.html#a89a1c981b6ac2e85f914e256ec7551d2">nav_survey_rectangle_rotorcraft.c</a>
+: <a class="el" href="nav__survey__rectangle__rotorcraft_8c.html#a89a1c981b6ac2e85f914e256ec7551d2">nav_survey_rectangle_rotorcraft.c</a>
+, <a class="el" href="nav__survey__rectangle_8c.html#a89a1c981b6ac2e85f914e256ec7551d2">nav_survey_rectangle.c</a>
 </li>
 <li>SurveyGoingNorth
 : <a class="el" href="nav__survey__rectangle__rotorcraft_8c.html#a7418679b973bb034d9a4d4d0a094cfce">nav_survey_rectangle_rotorcraft.c</a>
@@ -4250,8 +4713,8 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 , <a class="el" href="nav__survey__rectangle_8c.html#ae6757fd74bd5bccad11bb489e1565f89">nav_survey_rectangle.c</a>
 </li>
 <li>SurveyGoingWest
-: <a class="el" href="nav__survey__rectangle_8c.html#aae07f56c3c0841977987a7a8f4e46713">nav_survey_rectangle.c</a>
-, <a class="el" href="nav__survey__rectangle__rotorcraft_8c.html#aae07f56c3c0841977987a7a8f4e46713">nav_survey_rectangle_rotorcraft.c</a>
+: <a class="el" href="nav__survey__rectangle__rotorcraft_8c.html#aae07f56c3c0841977987a7a8f4e46713">nav_survey_rectangle_rotorcraft.c</a>
+, <a class="el" href="nav__survey__rectangle_8c.html#aae07f56c3c0841977987a7a8f4e46713">nav_survey_rectangle.c</a>
 </li>
 <li>SW_COLL
 : <a class="el" href="swashplate__mixing_8h.html#a43d96d040389076c6e61d72d65f83fc5">swashplate_mixing.h</a>
@@ -4287,10 +4750,10 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 : <a class="el" href="swashplate__mixing_8h.html#a2cc8559702e048c339f68d72a94a5fa8">swashplate_mixing.h</a>
 </li>
 <li>SWCLK
-: <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a4f6f5eebe5c0ed0dfd19b15d6c26f2d1">board.h</a>
+: <a class="el" href="chimera_2chibios_2v1_80_2board_8h.html#a4f6f5eebe5c0ed0dfd19b15d6c26f2d1">board.h</a>
 </li>
 <li>SWDIO
-: <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#ae3e6490ba8c82ac7f0be86128d0aa67a">board.h</a>
+: <a class="el" href="px4fmu_2chibios_2v4_80_2board_8h.html#ae3e6490ba8c82ac7f0be86128d0aa67a">board.h</a>
 </li>
 <li>SWING_ACCEL_RANGE
 : <a class="el" href="imu__swing_8h.html#a26062207eaf7f693e9d70ad1a48ef705">imu_swing.h</a>
@@ -4340,6 +4803,96 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 <li>SYS_TIME_THREAD_PRIO
 : <a class="el" href="linux_2mcu__periph_2sys__time__arch_8c.html#a195a9652982563d8da2941ddc6e2ea11">sys_time_arch.c</a>
 </li>
+<li>SYSLINK_GROUP
+: <a class="el" href="syslink_8h.html#afdd7ed7e6b1662ec6319ed5a6bd51fc1">syslink.h</a>
+</li>
+<li>SYSLINK_MAX_DATA_LEN
+: <a class="el" href="syslink_8h.html#a50d37de86b9cf9ec1daeaf29bd00cabf">syslink.h</a>
+</li>
+<li>SYSLINK_OW
+: <a class="el" href="syslink_8h.html#a63c36b25aad805fe85c60e9865d22f45">syslink.h</a>
+</li>
+<li>SYSLINK_OW_GETINFO
+: <a class="el" href="syslink_8h.html#ac95ffba57e9aefcab4c13ebeac2ebd75">syslink.h</a>
+</li>
+<li>SYSLINK_OW_READ
+: <a class="el" href="syslink_8h.html#abf7c9ce4070354a8774358f698e41d3f">syslink.h</a>
+</li>
+<li>SYSLINK_OW_SCAN
+: <a class="el" href="syslink_8h.html#a956baaee02de4cc54c06851c785d09ed">syslink.h</a>
+</li>
+<li>SYSLINK_OW_WRITE
+: <a class="el" href="syslink_8h.html#a8f053a6b95851c5b7cd15949be34bf97">syslink.h</a>
+</li>
+<li>SYSLINK_PM
+: <a class="el" href="syslink_8h.html#a7cd637fd43d9a746159a731ffe76591a">syslink.h</a>
+</li>
+<li>SYSLINK_PM_BATTERY_AUTOUPDATE
+: <a class="el" href="syslink_8h.html#a6705912b067e3a4917d2169611705f13">syslink.h</a>
+</li>
+<li>SYSLINK_PM_BATTERY_STATE
+: <a class="el" href="syslink_8h.html#afee71c7c7ed2d5cfa58abd1daccb9606">syslink.h</a>
+</li>
+<li>SYSLINK_PM_BATTERY_VOLTAGE
+: <a class="el" href="syslink_8h.html#a556a2987a1fc96d989656594f8622b74">syslink.h</a>
+</li>
+<li>SYSLINK_PM_ONOFF_SWITCHOFF
+: <a class="el" href="syslink_8h.html#a73eb2bb4f63b5e67cccd04d7e41d0482">syslink.h</a>
+</li>
+<li>SYSLINK_PM_SOURCE
+: <a class="el" href="syslink_8h.html#a1a0421a13cf4f2f0ad25c632ae69c83b">syslink.h</a>
+</li>
+<li>SYSLINK_RADIO
+: <a class="el" href="syslink_8h.html#a646004fa7b4b29b1baddb68230044d66">syslink.h</a>
+</li>
+<li>SYSLINK_RADIO_ADDRESS
+: <a class="el" href="syslink_8h.html#af2ceac55a620f2cd05b7fd410ff8c802">syslink.h</a>
+</li>
+<li>SYSLINK_RADIO_CHANNEL
+: <a class="el" href="syslink_8h.html#a63682bf2c6a6179c8b1e31519e9b1de7">syslink.h</a>
+</li>
+<li>SYSLINK_RADIO_CONTWAVE
+: <a class="el" href="syslink_8h.html#af8f613e7d1be697a31c342220fc194d5">syslink.h</a>
+</li>
+<li>SYSLINK_RADIO_DATARATE
+: <a class="el" href="syslink_8h.html#a1f80214a44dc20422b6e23c7265c3055">syslink.h</a>
+</li>
+<li>SYSLINK_RADIO_RATE_1M
+: <a class="el" href="syslink_8h.html#a4365debc384de3bb8602faa41012dbd8">syslink.h</a>
+</li>
+<li>SYSLINK_RADIO_RATE_250K
+: <a class="el" href="syslink_8h.html#a48de9e88e6dcbaa0ced6d9d18ad0c884">syslink.h</a>
+</li>
+<li>SYSLINK_RADIO_RATE_2M
+: <a class="el" href="syslink_8h.html#a73651bce7b57ed65e422302e7435c758">syslink.h</a>
+</li>
+<li>SYSLINK_RADIO_RAW
+: <a class="el" href="syslink_8h.html#ab619dd32aa76f4fe54bed2577342232f">syslink.h</a>
+</li>
+<li>SYSLINK_RADIO_RSSI
+: <a class="el" href="syslink_8h.html#a0b0438186e94d5d4e59bd5afc7f2649a">syslink.h</a>
+</li>
+<li>SYSLINK_RX_BUF_LEN
+: <a class="el" href="syslink__dl_8h.html#abc988f98a8310ba50e96399e94dcfae0">syslink_dl.h</a>
+</li>
+<li>SYSTEM__INTERRUPT_CLEAR
+: <a class="el" href="vl53l1x__api_8h.html#a0151356cafc31665554f71d408c248a0">vl53l1x_api.h</a>
+</li>
+<li>SYSTEM__INTERRUPT_CONFIG_GPIO
+: <a class="el" href="vl53l1x__api_8h.html#a97207a2ee20535cd0102a4bb05779127">vl53l1x_api.h</a>
+</li>
+<li>SYSTEM__MODE_START
+: <a class="el" href="vl53l1x__api_8h.html#aa430923f7d8ebfb9281163d17df1cc1e">vl53l1x_api.h</a>
+</li>
+<li>SYSTEM__SEQUENCE_CONFIG
+: <a class="el" href="vl53l1x__api_8h.html#ae05b913fc1e0f18186c4a2bd44ff49b2">vl53l1x_api.h</a>
+</li>
+<li>SYSTEM__THRESH_HIGH
+: <a class="el" href="vl53l1x__api_8h.html#aa430f8d2f8ee1a40476f5202f16807ae">vl53l1x_api.h</a>
+</li>
+<li>SYSTEM__THRESH_LOW
+: <a class="el" href="vl53l1x__api_8h.html#a9ff4642b47201d4d821fecc72ff8513c">vl53l1x_api.h</a>
+</li>
 <li>SysTickTimer
 : <a class="el" href="lpc21_2mcu__periph_2sys__time__arch_8h.html#a2338b70923884b9aaf945713898d991a">sys_time_arch.h</a>
 </li>
@@ -4364,7 +4917,7 @@ $(document).ready(function(){initNavTree('globals_defs_s.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Sep 12 2018 02:04:34 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:04:12 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

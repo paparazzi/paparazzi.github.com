@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -113,7 +113,8 @@ Example for airframe file</h1>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;  &lt;define name=&quot;POLYSURVEY_DEFAULT_SIZE&quot; value=&quot;5&quot; /&gt;</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;  &lt;define name=&quot;POLYSURVEY_DEFAULT_DISTANCE&quot; value=&quot;120&quot; /&gt;</div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;  &lt;define name=&quot;POLYSURVEY_ENTRY_DISTANCE&quot; value=&quot;4&quot; /&gt;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;&lt;/module&gt;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;  &lt;define name=&quot;NAV_SURVEY_POLY_DYNAMIC&quot; value=&quot;FALSE|TRUE&quot; /&gt;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;&lt;/module&gt;</div>
 </div><!-- fragment --> <h1><a class="anchor" id="configuration__nav_survey_poly_rotorcraft"></a>
 Module configuration options</h1>
 <h2><a class="anchor" id="define"></a>
@@ -127,6 +128,8 @@ Define Options</h2>
  Description: default distance in m between lines. Can be changed by telemetry</li>
 <li><b>name:</b> <code>POLYSURVEY_ENTRY_DISTANCE</code> <b>value:</b> <em>4</em> <br />
  Description: distante between the polygon border and first line.If 0 the distance well be equal to half sweep</li>
+<li><b>name:</b> <code>NAV_SURVEY_POLY_DYNAMIC</code> <b>value:</b> <em>FALSE|TRUE</em> <br />
+ Description: Set to true to allow changing sweep distance mid polygon survey</li>
 </ul>
 <h1><a class="anchor" id="files"></a>
 Files</h1>
@@ -157,6 +160,7 @@ Raw nav_survey_poly_rotorcraft.xml file:</h2>
 <div class="line">    &lt;define name=&quot;POLYSURVEY_DEFAULT_SIZE&quot; value=&quot;5&quot; description=&quot;default number of waypoints/corners used in polygon survey. Can be changed by telemetry&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;POLYSURVEY_DEFAULT_DISTANCE&quot; value=&quot;120&quot; description=&quot;default distance in m between lines. Can be changed by telemetry&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;POLYSURVEY_ENTRY_DISTANCE&quot; value=&quot;4&quot; description=&quot;distante between the polygon border and first line.If 0 the distance well be equal to half sweep&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;NAV_SURVEY_POLY_DYNAMIC&quot; value=&quot;FALSE|TRUE&quot; description=&quot;Set to true to allow changing sweep distance mid polygon survey&quot;/&gt;</div>
 <div class="line">  &lt;/doc&gt;</div>
 <div class="line"></div>
 <div class="line">  &lt;settings&gt;</div>
@@ -181,7 +185,7 @@ Raw nav_survey_poly_rotorcraft.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Wed Sep 12 2018 02:03:57 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:03:41 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

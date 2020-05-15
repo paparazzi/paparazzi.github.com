@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -139,16 +139,18 @@ $(document).ready(function(){initNavTree('trilateration_8h_source.html','');});
 <div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="trilateration_8h.html#a90622a7aea193c3547c3d96eb31cf1ab">   36</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="trilateration_8h.html#a90622a7aea193c3547c3d96eb31cf1ab">time</a>;           </div>
 <div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="trilateration_8h.html#a46dfac8baee4f5b498b88af5da2257c8">   37</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="pprz__geodetic__float_8h.html#structEnuCoor__f">EnuCoor_f</a> <a class="code" href="trilateration_8h.html#a46dfac8baee4f5b498b88af5da2257c8">pos</a>; </div>
 <div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="trilateration_8h.html#a6a90e75ff5d51f03a7cdfad635fe55bc">   38</a></span>&#160;  <a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> <a class="code" href="trilateration_8h.html#a6a90e75ff5d51f03a7cdfad635fe55bc">id</a>;          </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;};</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">int</span> <a class="code" href="trilateration_8h.html#a75efebbc2c0e7a954e0dde46bf4978d5">trilateration_init</a>(<span class="keyword">struct</span> <a class="code" href="trilateration_8h.html#structAnchor">Anchor</a> *anchors);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">int</span> <a class="code" href="trilateration_8h.html#a97f0436650276f98507bed287f66f0c6">trilateration_compute</a>(<span class="keyword">struct</span> <a class="code" href="trilateration_8h.html#structAnchor">Anchor</a> *anchors, <span class="keyword">struct</span> <a class="code" href="pprz__geodetic__float_8h.html#structEnuCoor__f">EnuCoor_f</a> *pos);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="trilateration_8h.html#a6c0b49fe194c565fdac58b2bb373ff7d">   39</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="trilateration_8h.html#a6c0b49fe194c565fdac58b2bb373ff7d">updated</a>;         </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;};</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">int</span> <a class="code" href="trilateration_8h.html#a75efebbc2c0e7a954e0dde46bf4978d5">trilateration_init</a>(<span class="keyword">struct</span> <a class="code" href="trilateration_8h.html#structAnchor">Anchor</a> *anchors);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">int</span> <a class="code" href="trilateration_8h.html#a97f0436650276f98507bed287f66f0c6">trilateration_compute</a>(<span class="keyword">struct</span> <a class="code" href="trilateration_8h.html#structAnchor">Anchor</a> *anchors, <span class="keyword">struct</span> <a class="code" href="pprz__geodetic__float_8h.html#structEnuCoor__f">EnuCoor_f</a> *pos);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
 <div class="ttc" id="types_8h_html_a273cf69d639a59973b6019625df33e30"><div class="ttname"><a href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></div><div class="ttdeci">unsigned short uint16_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00016">types.h:16</a></div></div>
+<div class="ttc" id="trilateration_8h_html_a6c0b49fe194c565fdac58b2bb373ff7d"><div class="ttname"><a href="trilateration_8h.html#a6c0b49fe194c565fdac58b2bb373ff7d">Anchor::updated</a></div><div class="ttdeci">bool updated</div><div class="ttdoc">new data available </div><div class="ttdef"><b>Definition:</b> <a href="trilateration_8h_source.html#l00039">trilateration.h:39</a></div></div>
 <div class="ttc" id="trilateration_8h_html_a6a90e75ff5d51f03a7cdfad635fe55bc"><div class="ttname"><a href="trilateration_8h.html#a6a90e75ff5d51f03a7cdfad635fe55bc">Anchor::id</a></div><div class="ttdeci">uint16_t id</div><div class="ttdoc">anchor ID </div><div class="ttdef"><b>Definition:</b> <a href="trilateration_8h_source.html#l00038">trilateration.h:38</a></div></div>
 <div class="ttc" id="pprz__geodetic__float_8h_html_structEnuCoor__f"><div class="ttname"><a href="pprz__geodetic__float_8h.html#structEnuCoor__f">EnuCoor_f</a></div><div class="ttdoc">vector in East North Up coordinates Units: meters </div><div class="ttdef"><b>Definition:</b> <a href="pprz__geodetic__float_8h_source.html#l00072">pprz_geodetic_float.h:72</a></div></div>
 <div class="ttc" id="trilateration_8h_html_a75efebbc2c0e7a954e0dde46bf4978d5"><div class="ttname"><a href="trilateration_8h.html#a75efebbc2c0e7a954e0dde46bf4978d5">trilateration_init</a></div><div class="ttdeci">int trilateration_init(struct Anchor *anchors)</div><div class="ttdoc">Init internal trilateration structures. </div><div class="ttdef"><b>Definition:</b> <a href="trilateration_8c_source.html#l00039">trilateration.c:39</a></div></div>
@@ -165,7 +167,7 @@ $(document).ready(function(){initNavTree('trilateration_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_0052b60a5651ac9f93ab63c946b53cbf.html">decawave</a></li><li class="navelem"><a class="el" href="trilateration_8h.html">trilateration.h</a></li>
-    <li class="footer">Generated on Wed Sep 12 2018 02:02:45 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:02:22 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

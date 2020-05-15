@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -148,6 +148,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a48edc646a1de1ba488bbe7d786df9bae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee_2chibios_2v1_80_2board_8c.html#a48edc646a1de1ba488bbe7d786df9bae">boardInit</a> (void)</td></tr>
 <tr class="memdesc:a48edc646a1de1ba488bbe7d786df9bae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Board-specific initialization code.  <a href="#a48edc646a1de1ba488bbe7d786df9bae">More...</a><br /></td></tr>
 <tr class="separator:a48edc646a1de1ba488bbe7d786df9bae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a551c9306f64635b52d9827b1065a11c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="apogee_2chibios_2v1_80_2board_8c.html#a551c9306f64635b52d9827b1065a11c1">mcu_periph_energy_save</a> (void)</td></tr>
+<tr class="memdesc:a551c9306f64635b52d9827b1065a11c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Energy saving procedure for SD log closing.  <a href="#a551c9306f64635b52d9827b1065a11c1">More...</a><br /></td></tr>
+<tr class="separator:a551c9306f64635b52d9827b1065a11c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -339,6 +342,29 @@ pupdr</td>
 
 </div>
 </div>
+<a class="anchor" id="a551c9306f64635b52d9827b1065a11c1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mcu_periph_energy_save </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Energy saving procedure for SD log closing. </p>
+<p>Call board specific energy saving Can be necessary for closing on power off. </p>
+
+<p>Definition at line <a class="el" href="apogee_2chibios_2v1_80_2board_8c_source.html#l00266">266</a> of file <a class="el" href="apogee_2chibios_2v1_80_2board_8c_source.html">board.c</a>.</p>
+
+<p>References <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00811">LINE_AUX1</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00831">LINE_AUX2</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00830">LINE_AUX3</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00825">LINE_AUX4</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00827">LINE_LED1</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00839">LINE_LED2</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00828">LINE_LED3</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00829">LINE_LED4</a>, and <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00819">LINE_SPI1_CS</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a6642d60b72ede530ac245de7b42c1322"></a>
 <div class="memitem">
 <div class="memproto">
@@ -363,7 +389,7 @@ pupdr</td>
 
 <p>Definition at line <a class="el" href="apogee_2chibios_2v1_80_2board_8c_source.html#l00154">154</a> of file <a class="el" href="apogee_2chibios_2v1_80_2board_8c_source.html">board.c</a>.</p>
 
-<p>References <a class="el" href="apogee_2chibios_2v1_80_2board_8c_source.html#l00143">gpio_init()</a>, <a class="el" href="lpc21_2mcu__periph_2gpio__arch_8h_source.html#l00034">GPIOA</a>, <a class="el" href="lpc21_2mcu__periph_2gpio__arch_8h_source.html#l00035">GPIOB</a>, <a class="el" href="sim_2mcu__periph_2gpio__arch_8h_source.html#l00034">GPIOC</a>, <a class="el" href="sim_2mcu__periph_2gpio__arch_8h_source.html#l00035">GPIOD</a>, <a class="el" href="sim_2mcu__periph_2gpio__arch_8h_source.html#l00036">GPIOE</a>, <a class="el" href="sim_2mcu__periph_2gpio__arch_8h_source.html#l00037">GPIOF</a>, <a class="el" href="sim_2mcu__periph_2gpio__arch_8h_source.html#l00038">GPIOG</a>, and <a class="el" href="sim_2mcu__periph_2gpio__arch_8h_source.html#l00039">GPIOH</a>.</p>
+<p>References <a class="el" href="apogee_2chibios_2v1_80_2board_8c_source.html#l00143">gpio_init()</a>, <a class="el" href="lpc21_2mcu__periph_2gpio__arch_8h_source.html#l00036">GPIOA</a>, <a class="el" href="lpc21_2mcu__periph_2gpio__arch_8h_source.html#l00037">GPIOB</a>, <a class="el" href="sim_2mcu__periph_2gpio__arch_8h_source.html#l00036">GPIOC</a>, <a class="el" href="sim_2mcu__periph_2gpio__arch_8h_source.html#l00037">GPIOD</a>, <a class="el" href="sim_2mcu__periph_2gpio__arch_8h_source.html#l00038">GPIOE</a>, <a class="el" href="sim_2mcu__periph_2gpio__arch_8h_source.html#l00039">GPIOF</a>, <a class="el" href="sim_2mcu__periph_2gpio__arch_8h_source.html#l00040">GPIOG</a>, and <a class="el" href="sim_2mcu__periph_2gpio__arch_8h_source.html#l00041">GPIOH</a>.</p>
 
 <p>Referenced by <a class="el" href="apogee_2chibios_2v1_80_2board_8c_source.html#l00210">__early_init()</a>.</p>
 
@@ -422,7 +448,7 @@ pupdr</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e030268cd18297cf6282390f76bfcf7f.html">boards</a></li><li class="navelem"><a class="el" href="dir_906fcced062b34dea0e143ec53b4cca3.html">apogee</a></li><li class="navelem"><a class="el" href="dir_d80e81afc648ccfe0c5d0ba6bef93947.html">chibios</a></li><li class="navelem"><a class="el" href="dir_ac30925fa52d2a539368a9111fda4132.html">v1.0</a></li><li class="navelem"><a class="el" href="apogee_2chibios_2v1_80_2board_8c.html">board.c</a></li>
-    <li class="footer">Generated on Wed Sep 12 2018 02:03:06 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:02:44 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

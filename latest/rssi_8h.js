@@ -6,7 +6,7 @@ var rssi_8h =
       [ "tx_strength", "rssi_8h.html#adc960214e5a68957566004da4eba9eb2", null ]
     ] ],
     [ "get_rssi", "rssi_8h.html#a36542a9ee32c8daa1fe6cc69720ec462", null ],
-    [ "parse_rssi_dl", "rssi_8h.html#a1d77ada4aa56f69ef17114b756f721b0", null ],
+    [ "parse_rssi_dl", "rssi_8h.html#a919690aaad3f7fefd2914a243294db59", null ],
     [ "rssi_init", "rssi_8h.html#a004b14a419fab767d20132bdfc3fbc02", null ],
     [ "set_rssi", "rssi_8h.html#ae10c3fbe1fa8c77765a3c3775cf55e0e", null ],
     [ "rssi_acs", "rssi_8h.html#ad63506dd44ca6d130f519dae09a5b0e0", null ],

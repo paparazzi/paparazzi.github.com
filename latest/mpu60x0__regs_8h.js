@@ -1,5 +1,9 @@
 var mpu60x0__regs_8h =
 [
+    [ "ICM20600_WHOAMI_REPLY", "mpu60x0__regs_8h.html#a3ae4d20b0c363bac8994bf4c091a6cf7", null ],
+    [ "ICM20602_WHOAMI_REPLY", "mpu60x0__regs_8h.html#aad60e46a0442ee2cd11ce8628d6a88c0", null ],
+    [ "ICM20608_WHOAMI_REPLY", "mpu60x0__regs_8h.html#acc394e5cfdd500149afa448dc34f9166", null ],
+    [ "ICM20689_WHOAMI_REPLY", "mpu60x0__regs_8h.html#a53d05822ae47e970ffb6669e46974f25", null ],
     [ "MPU60X0_ADDR", "mpu60x0__regs_8h.html#a90ef447074cb5203d9e9556e89f39cca", null ],
     [ "MPU60X0_ADDR_ALT", "mpu60x0__regs_8h.html#ace7e3e1e303b603f39e69d3c64e270bd", null ],
     [ "MPU60X0_EXT_SENS_DATA", "mpu60x0__regs_8h.html#a91309260b3e0204570dd8205f6678fb9", null ],
@@ -12,6 +16,7 @@ var mpu60x0__regs_8h =
     [ "MPU60X0_I2C_MST_RESET", "mpu60x0__regs_8h.html#aff5f53b96d0f1def0cd2b88cc6c976c2", null ],
     [ "MPU60X0_I2C_SLV4_DONE", "mpu60x0__regs_8h.html#a1c42d5d77077b7ddbbee56535bb41c6a", null ],
     [ "MPU60X0_REG_ACCEL_CONFIG", "mpu60x0__regs_8h.html#a83dd394cafdbc08b8afc3dafe80c6d15", null ],
+    [ "MPU60X0_REG_ACCEL_CONFIG2", "mpu60x0__regs_8h.html#a568a7bd12b0c2e3da34c8e376547b75f", null ],
     [ "MPU60X0_REG_ACCEL_XOUT_H", "mpu60x0__regs_8h.html#a3333b4a606189db9ffba13a099231023", null ],
     [ "MPU60X0_REG_ACCEL_XOUT_L", "mpu60x0__regs_8h.html#a8a38d81d5ffb79319a2b4a5df5b6aed0", null ],
     [ "MPU60X0_REG_ACCEL_YOUT_H", "mpu60x0__regs_8h.html#af7a3b97438ce6d2d1c6c67d39257a4e8", null ],
@@ -63,11 +68,22 @@ var mpu60x0__regs_8h =
     [ "MPU60X0_REG_SMPLRT_DIV", "mpu60x0__regs_8h.html#aaa8b385c8d2539602ded2330fb3bcc57", null ],
     [ "MPU60X0_REG_TEMP_OUT_H", "mpu60x0__regs_8h.html#afe0e99e187d8f7f85e70845bd8dd9a19", null ],
     [ "MPU60X0_REG_TEMP_OUT_L", "mpu60x0__regs_8h.html#a945a12d2256053edc401abb0086364af", null ],
+    [ "MPU60X0_REG_UNDOC1", "mpu60x0__regs_8h.html#a9e31e0a676a348a358b100c4c31b256e", null ],
     [ "MPU60X0_REG_USER_CTRL", "mpu60x0__regs_8h.html#a013de3f9f2adc6db252ae7f4ae379d7e", null ],
     [ "MPU60X0_REG_WHO_AM_I", "mpu60x0__regs_8h.html#a3ca608ea59fe8d027e6b2df46546443a", null ],
     [ "MPU60X0_SIG_COND_RESET", "mpu60x0__regs_8h.html#a728170e530b6994de25d18357f6980f2", null ],
     [ "MPU60X0_SPI_READ", "mpu60x0__regs_8h.html#a663b819552fd9a7c35ebb937cabdb9f1", null ],
     [ "MPU60X0_WHOAMI_REPLY", "mpu60x0__regs_8h.html#a110bb08b8f156e231f790434d8c06a3d", null ],
+    [ "Mpu60x0ACCDLPF", "mpu60x0__regs_8h.html#abb96ca602f0a2bce80cf5df018343786", [
+      [ "MPU60X0_DLPF_ACC_1046HZ", "mpu60x0__regs_8h.html#abb96ca602f0a2bce80cf5df018343786a36f4afcf6314d5f5513b611ad2cbe739", null ],
+      [ "MPU60X0_DLPF_ACC_218HZ", "mpu60x0__regs_8h.html#abb96ca602f0a2bce80cf5df018343786adb15736092f0a3458047c36d3ee8a2ac", null ],
+      [ "MPU60X0_DLPF_ACC_99HZ", "mpu60x0__regs_8h.html#abb96ca602f0a2bce80cf5df018343786a1731ccd220fbc9512c9a2223f25fca50", null ],
+      [ "MPU60X0_DLPF_ACC_44HZ", "mpu60x0__regs_8h.html#abb96ca602f0a2bce80cf5df018343786a8cf39f8dee855364fbd84bf231c1c049", null ],
+      [ "MPU60X0_DLPF_ACC_21HZ", "mpu60x0__regs_8h.html#abb96ca602f0a2bce80cf5df018343786a7f04a4bd50a6d041030bf9d597970e96", null ],
+      [ "MPU60X0_DLPF_ACC_10HZ", "mpu60x0__regs_8h.html#abb96ca602f0a2bce80cf5df018343786ad2684a8a9def8dc1e5d53a7945bae26d", null ],
+      [ "MPU60X0_DLPF_ACC_05HZ", "mpu60x0__regs_8h.html#abb96ca602f0a2bce80cf5df018343786a7f7b36b5067e079becb6d74dd74e7d8b", null ],
+      [ "MPU60X0_DLPF_ACC_420HZ", "mpu60x0__regs_8h.html#abb96ca602f0a2bce80cf5df018343786a2b9a9607ff52acdfcd1a7f19b3e99d88", null ]
+    ] ],
     [ "Mpu60x0AccelRanges", "mpu60x0__regs_8h.html#aa0e4bc4500df7264d9752fdf9bcb6727", [
       [ "MPU60X0_ACCEL_RANGE_2G", "mpu60x0__regs_8h.html#aa0e4bc4500df7264d9752fdf9bcb6727a121e3d5e14d3ed2e55716a181c537867", null ],
       [ "MPU60X0_ACCEL_RANGE_4G", "mpu60x0__regs_8h.html#aa0e4bc4500df7264d9752fdf9bcb6727a141127b2ac79bbc13e3ce07bfa58941d", null ],

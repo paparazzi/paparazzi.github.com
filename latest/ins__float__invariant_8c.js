@@ -1,6 +1,7 @@
 var ins__float__invariant_8c =
 [
     [ "B", "ins__float__invariant_8c.html#a111da81ae5883147168bbb8366377b10", null ],
+    [ "INS_INV_HEADING_UPDATE_GPS_MIN_SPEED", "ins__float__invariant_8c.html#a9fe9086f408adfb94eb014d6d610f1b0", null ],
     [ "INS_INV_LB", "ins__float__invariant_8c.html#a154f513c1439635845a845d89de32e6e", null ],
     [ "INS_INV_LV", "ins__float__invariant_8c.html#a4cf1c3aa07a7577d2e986b9e2249e3c9", null ],
     [ "INS_INV_MH", "ins__float__invariant_8c.html#a75e99510f4568a5767efb5b9b055231b", null ],

@@ -17,5 +17,6 @@ var sonar__bebop_8c =
     [ "sonar_bebop", "sonar__bebop_8c.html#ae92b287267fb78103aead4947bceb2e7", null ],
     [ "sonar_bebop_spi_d", "sonar__bebop_8c.html#a0ccbb2cc5950621f61f55dae4d43ed67", null ],
     [ "sonar_bebop_spi_t", "sonar__bebop_8c.html#a7ba2b0245503312b971d86da22c40897", null ],
+    [ "sonar_bebop_spike_timer", "sonar__bebop_8c.html#a4b68c7c64a460ae1cf5e4d479ee4bdbc", null ],
     [ "sonar_filt", "sonar__bebop_8c.html#abd34fc7a6186364fcafd5199f924ee68", null ]
 ];

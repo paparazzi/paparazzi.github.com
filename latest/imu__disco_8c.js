@@ -1,5 +1,6 @@
 var imu__disco_8c =
 [
+    [ "AK8963_HZ", "imu__disco_8c.html#a710a0493a2faef8cb759a62796746075", null ],
     [ "DISCO_MAG_I2C_DEV", "imu__disco_8c.html#aed640dc2852751e008ec3c1d69b5a479", null ],
     [ "DISCO_MPU_I2C_DEV", "imu__disco_8c.html#a8a970805b3bac79408ecb7ac41bb75a8", null ],
     [ "imu_disco_event", "imu__disco_8c.html#af4556078aa1856220d57e9f6d92c6e28", null ],

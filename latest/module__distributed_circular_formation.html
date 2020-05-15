@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -146,8 +146,8 @@ Init Functions</h2>
 Datalink Functions</h1>
 <p>Whenever the specified datalink message is received, the corresponing handler function is called.</p>
 <ul>
-<li>on message <b>DCF_REG_TABLE</b> call <a class="el" href="dcf_8c.html#a1b21643ffc1d37916ad7e831546cff90">parseRegTable()</a></li>
-<li>on message <b>DCF_THETA</b> call <a class="el" href="dcf_8c.html#acf7594649ecd68bdebf02e4f3330d80a">parseThetaTable()</a> </li>
+<li>on message <b>DCF_REG_TABLE</b> call parseRegTable(buf)</li>
+<li>on message <b>DCF_THETA</b> call parseThetaTable(buf) </li>
 </ul>
 <h1><a class="anchor" id="files"></a>
 Files</h1>
@@ -160,13 +160,13 @@ Header Files</h2>
 <h2><a class="anchor" id="sources"></a>
 Source Files</h2>
 <ul>
-<li><a class="el" href="dcf_8c.html">modules/dcf/dcf.c</a></li>
+<li><a class="el" href="dcf_8c.html">modules/multi/dcf/dcf.c</a></li>
 </ul>
 <h2><a class="anchor" id="module_xml__distributed_circular_formation"></a>
 Raw distributed_circular_formation.xml file:</h2>
 <div class="fragment"><div class="line">&lt;!DOCTYPE module SYSTEM &quot;module.dtd&quot;&gt;</div>
 <div class="line"></div>
-<div class="line">&lt;module name=&quot;distributed_circular_formation&quot; dir=&quot;dcf&quot;&gt;</div>
+<div class="line">&lt;module name=&quot;distributed_circular_formation&quot; dir=&quot;multi/dcf&quot;&gt;</div>
 <div class="line">  &lt;doc&gt;</div>
 <div class="line">    &lt;description&gt;Distributed algorithm for circular formations with air-to-air communications.</div>
 <div class="line">    For more details we refer to https://wiki.paparazziuav.org/wiki/Module/guidance_vector_field </div>
@@ -201,8 +201,8 @@ Raw distributed_circular_formation.xml file:</h2>
 <div class="line"></div>
 <div class="line">  &lt;init fun=&quot;dcf_init()&quot;/&gt;</div>
 <div class="line"></div>
-<div class="line">  &lt;datalink message=&quot;DCF_REG_TABLE&quot; fun=&quot;parseRegTable()&quot;/&gt;</div>
-<div class="line">  &lt;datalink message=&quot;DCF_THETA&quot; fun=&quot;parseThetaTable()&quot;/&gt;</div>
+<div class="line">  &lt;datalink message=&quot;DCF_REG_TABLE&quot; fun=&quot;parseRegTable(buf)&quot;/&gt;</div>
+<div class="line">  &lt;datalink message=&quot;DCF_THETA&quot; fun=&quot;parseThetaTable(buf)&quot;/&gt;</div>
 <div class="line"></div>
 <div class="line">  &lt;makefile firmware=&quot;fixedwing&quot;&gt;</div>
 <div class="line">    &lt;file name=&quot;dcf.c&quot;/&gt;</div>
@@ -216,7 +216,7 @@ Raw distributed_circular_formation.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Wed Sep 12 2018 02:04:00 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:03:43 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

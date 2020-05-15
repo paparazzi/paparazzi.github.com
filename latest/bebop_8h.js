@@ -16,6 +16,5 @@ var bebop_8h =
     [ "UART6_DEV", "bebop_8h.html#ae435a1a8306a4acbe00ef9f980abc9b2", null ],
     [ "USE_BARO_BOARD", "bebop_8h.html#a3f7278cf218a92fa0a1514dea823cd9d", null ],
     [ "bottom_camera", "bebop_8h.html#aebe228d13ad2e4e0c8528d945ad76a82", null ],
-    [ "front_camera", "bebop_8h.html#abe211b229633c3f39cbfb50c5765b4b4", null ],
-    [ "mt9f002", "bebop_8h.html#a0a67664fafa1d9cbcc7deaa1352d1673", null ]
+    [ "front_camera", "bebop_8h.html#abe211b229633c3f39cbfb50c5765b4b4", null ]
 ];

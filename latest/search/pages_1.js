@@ -3,6 +3,7 @@ var searchData=
   ['bibliography',['Bibliography',['../citelist.html',1,'']]],
   ['baro_5famsys_20module',['baro_amsys module',['../module__baro_amsys.html',1,'onboard_modules']]],
   ['baro_5fbmp_20module',['baro_bmp module',['../module__baro_bmp.html',1,'onboard_modules']]],
+  ['baro_5fbmp3_20module',['baro_bmp3 module',['../module__baro_bmp3.html',1,'onboard_modules']]],
   ['baro_5fets_20module',['baro_ets module',['../module__baro_ets.html',1,'onboard_modules']]],
   ['baro_5fhca_20module',['baro_hca module',['../module__baro_hca.html',1,'onboard_modules']]],
   ['baro_5fmpl3115_20module',['baro_mpl3115 module',['../module__baro_mpl3115.html',1,'onboard_modules']]],
@@ -15,5 +16,6 @@ var searchData=
   ['bat_5fchecker_20module',['bat_checker module',['../module__bat_checker.html',1,'onboard_modules']]],
   ['bat_5fvoltage_5fardrone2_20module',['bat_voltage_ardrone2 module',['../module__bat_voltage_ardrone2.html',1,'onboard_modules']]],
   ['battery_5fmonitor_20module',['battery_monitor module',['../module__battery_monitor.html',1,'onboard_modules']]],
-  ['bebop_5fae_5fawb_20module',['bebop_ae_awb module',['../module__bebop_ae_awb.html',1,'onboard_modules']]]
+  ['bebop_5fae_5fawb_20module',['bebop_ae_awb module',['../module__bebop_ae_awb.html',1,'onboard_modules']]],
+  ['board_5ftawaki_20module',['board_tawaki module',['../module__board_tawaki.html',1,'onboard_modules']]]
 ];

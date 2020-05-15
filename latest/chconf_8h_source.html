@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -321,30 +321,32 @@ $(document).ready(function(){initNavTree('chconf_8h_source.html','');});
 <div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;<span class="preprocessor">#define CORTEX_VTOR_INIT                    0x00200000U</span></div>
 <div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;</div>
 <div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;<span class="preprocessor">#elif LUFTBOOT // using LUFTBOOT bootloader</span></div>
-<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;<span class="preprocessor">#if defined STM32F4</span></div>
+<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;<span class="preprocessor">#if defined(STM32F4)</span></div>
 <div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;<span class="preprocessor">#define CORTEX_VTOR_INIT                    0x00004000U</span></div>
-<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;<span class="preprocessor">#define CORTEX_VTOR_INIT                    0x00002000U</span></div>
-<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;</div>
-<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;<span class="preprocessor">#else // default value</span></div>
-<div class="line"><a name="l00636"></a><span class="lineno"><a class="line" href="group__config.html#ga7ed3022f929b0ef250c4aa8cda44c0be">  636</a></span>&#160;<span class="preprocessor">#define CORTEX_VTOR_INIT                    0x08000000U</span></div>
-<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;</div>
-<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;<span class="preprocessor">#endif // CORTEX_VTOR_INIT</span></div>
+<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;<span class="preprocessor">#elif defined(STM32F7)</span></div>
+<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;<span class="preprocessor">#define CORTEX_VTOR_INIT                    0x08008000U</span></div>
+<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;<span class="preprocessor">#define CORTEX_VTOR_INIT                    0x00002000U</span></div>
+<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;</div>
+<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;<span class="preprocessor">#else // default value</span></div>
+<div class="line"><a name="l00638"></a><span class="lineno"><a class="line" href="group__config.html#ga7ed3022f929b0ef250c4aa8cda44c0be">  638</a></span>&#160;<span class="preprocessor">#define CORTEX_VTOR_INIT                    0x08000000U</span></div>
+<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;</div>
-<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;<span class="comment">// allow float for the ChibiOS print function (used with logger)</span></div>
-<div class="line"><a name="l00642"></a><span class="lineno"><a class="line" href="group__config.html#ga92e0819075bd91dc380cc86a20186960">  642</a></span>&#160;<span class="preprocessor">#define CHPRINTF_USE_FLOAT 1</span></div>
-<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;</div>
-<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* _CHCONF_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;<span class="preprocessor">#endif // CORTEX_VTOR_INIT</span></div>
+<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;</div>
+<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;<span class="comment">// allow float for the ChibiOS print function (used with logger)</span></div>
+<div class="line"><a name="l00644"></a><span class="lineno"><a class="line" href="group__config.html#ga92e0819075bd91dc380cc86a20186960">  644</a></span>&#160;<span class="preprocessor">#define CHPRINTF_USE_FLOAT 1</span></div>
 <div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;</div>
+<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* _CHCONF_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_975986b9e0eb299e77243bf822f828ce.html">chibios</a></li><li class="navelem"><a class="el" href="chconf_8h.html">chconf.h</a></li>
-    <li class="footer">Generated on Wed Sep 12 2018 02:02:29 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:02:06 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

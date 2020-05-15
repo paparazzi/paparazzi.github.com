@@ -10,7 +10,7 @@ var ins__alt__float_8c =
     [ "alt_kalman", "ins__alt__float_8c.html#a8a4893f91c1e9a09038c5d69541a6d75", null ],
     [ "alt_kalman_init", "ins__alt__float_8c.html#a4ae7c5f09f78408cfce9731778a82494", null ],
     [ "alt_kalman_reset", "ins__alt__float_8c.html#ae9b929985ac97a4adb5f6f3385485132", null ],
-    [ "baro_cb", "ins__alt__float_8c.html#a7fdc16072298b2db800864d08d72945a", null ],
+    [ "baro_cb", "ins__alt__float_8c.html#a92209191a3ecc53fc4adaafd0fe82933", null ],
     [ "body_to_imu_cb", "ins__alt__float_8c.html#ab5f6300c213088a4ea0598baafb5e736", null ],
     [ "gps_cb", "ins__alt__float_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8", null ],
     [ "ins_alt_float_init", "ins__alt__float_8c.html#addae4691b18806ce2db90c10ef8d7274", null ],

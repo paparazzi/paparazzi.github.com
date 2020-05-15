@@ -5,8 +5,8 @@
 <area shape="rect" id="node5" href="$stm32_2uart__tunnel_8c.html#a319a645047f275499aa30b0bc08c6e10" title="main_event" alt="" coords="147,95,245,121"/>
 <area shape="rect" id="node8" href="$stm32_2uart__tunnel_8c.html#a433218491d8e51ae032540c2c00d263f" title="main_periodic" alt="" coords="141,613,251,640"/>
 <area shape="rect" id="node9" href="$group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b" title="Microcontroller peripherals initialization. " alt="" coords="158,512,234,539"/>
-<area shape="rect" id="node48" href="$sys__time_8h.html#a51e98e20394934c8db19022ab2adc4c1" title="Check if timer has elapsed. " alt="" coords="119,665,273,706"/>
-<area shape="rect" id="node49" href="$sys__time_8c.html#a3ababed8b6819006aaf919a663efe8cd" title="Register a new system timer. " alt="" coords="108,900,284,927"/>
+<area shape="rect" id="node40" href="$sys__time_8h.html#a51e98e20394934c8db19022ab2adc4c1" title="Check if timer has elapsed. " alt="" coords="119,665,273,706"/>
+<area shape="rect" id="node41" href="$sys__time_8c.html#a3ababed8b6819006aaf919a663efe8cd" title="Register a new system timer. " alt="" coords="108,900,284,927"/>
 <area shape="rect" id="node6" href="$chibios_2mcu__periph_2gpio__arch_8h.html#a0da8ef247730680b4ffa595d11069051" title="Set a gpio output to high level. " alt="" coords="375,56,451,83"/>
 <area shape="rect" id="node7" href="$chibios_2mcu__periph_2gpio__arch_8h.html#afd6403990094d8cd6010b2e641a977da" title="Get level of a gpio. " alt="" coords="375,107,452,133"/>
 <area shape="rect" id="node10" href="$group__mcu__periph.html#ga916f2adc2080b4fe88034086d107a8dc" title="Optional board init function called at the start of mcu_init(). " alt="" coords="371,968,456,995"/>
@@ -26,26 +26,18 @@
 <area shape="rect" id="node37" href="$linux_2mcu__periph_2udp__arch_8c.html#a665732768aad2a0f4b0a396d96485cc2" title="udp_arch_init" alt="" coords="360,816,467,843"/>
 <area shape="rect" id="node38" href="$sim_2mcu__periph_2rng__arch_8c.html#ad5a3df3d0092f55f6ea54ccaa7daf3dc" title="rng_init" alt="" coords="379,867,448,893"/>
 <area shape="rect" id="node39" href="$group__mcu__periph.html#gaf8669c6ba2d12460cf1172edd1a5e4a3" title="Optional board init function called at the end of mcu_init(). " alt="" coords="367,917,460,944"/>
-<area shape="rect" id="node11" href="$ardrone_2board_8c.html#a646b7f375c14d15f1aa843bbe058634f" title="KillGracefully" alt="" coords="591,1123,694,1149"/>
+<area shape="rect" id="node11" href="$ardrone_2board_8c.html#a646b7f375c14d15f1aa843bbe058634f" title="KillGracefully" alt="" coords="591,1017,694,1044"/>
 <area shape="rect" id="node15" href="$chibios_2mcu__periph_2sys__time__arch_8c.html#a9b31c2feb846b96205ae20ea6883e1c4" title="sys_time_arch_init" alt="" coords="573,259,713,285"/>
-<area shape="rect" id="node21" href="$group__spi.html#ga6c0861f0c2184cab82f883ca29312011" title="Initialize a spi peripheral. " alt="" coords="609,483,676,509"/>
-<area shape="rect" id="node22" href="$group__spi.html#gab8cb9f918fae47c201bf233a0b3b282f" title="Architecture dependent SPI0 initialization. " alt="" coords="588,533,697,560"/>
-<area shape="rect" id="node24" href="$group__spi.html#gaaba00866ddaf960c0c761e61f81e5216" title="Architecture dependent SPI1 initialization. " alt="" coords="588,432,697,459"/>
-<area shape="rect" id="node26" href="$group__spi.html#gae6c7e2bb3fb354f3b98282386b41bf70" title="Architecture dependent SPI2 initialization. " alt="" coords="588,584,697,611"/>
-<area shape="rect" id="node29" href="$spi__slave__hs__arch_8c.html#a3eb5625306bbd0528404bdbec1fe2cd2" title="spi_slave_hs_char_available" alt="" coords="543,904,743,931"/>
-<area shape="rect" id="node30" href="$spi__slave__hs__arch_8c.html#a1fbf621e4a85b6c6293bcf41fe40aabc" title="spi_slave_hs_check\l_free_space" alt="" coords="569,955,716,997"/>
-<area shape="rect" id="node31" href="$spi__slave__hs__arch_8c.html#a26f8e1cbe59fb380e629b47643ed5a1e" title="spi_slave_hs_getch" alt="" coords="570,635,715,661"/>
-<area shape="rect" id="node32" href="$spi__slave__hs__arch_8c.html#a764936204b755d8bb7208f60debf35e4" title="spi_slave_hs_send" alt="" coords="573,685,713,712"/>
-<area shape="rect" id="node33" href="$spi__slave__hs__arch_8c.html#a033ab4abb6640b043dabebdb27e37692" title="spi_slave_hs_transmit" alt="" coords="791,773,953,800"/>
-<area shape="rect" id="node34" href="$spi__slave__hs__arch_8c.html#a28ebd1dea5d9de43e2f65023083dded2" title="spi_slave_hs_transmit\l_buffer" alt="" coords="561,737,724,778"/>
-<area shape="rect" id="node35" href="$spi__slave__hs__arch_8c.html#aa105625a4ec7ecf95c0802c3edfade05" title="SSP_ISR" alt="" coords="605,853,680,880"/>
-<area shape="rect" id="node40" href="$mt9v117_8c.html#aa6ecb42ade7b40f50bc3cf8f306583a7" title="Initialisation of the Aptina MT9V117 CMOS sensor (1/6 inch VGA, bottom camera) " alt="" coords="590,1021,695,1048"/>
-<area shape="rect" id="node47" href="$mt9f002_8c.html#a8f43c3ad8d5ff841d1203ab6c760c8f0" title="Initialisation of the Aptina MT9F002 CMOS sensor (front camera) " alt="" coords="591,1072,694,1099"/>
-<area shape="rect" id="node41" href="$mt9v117_8c.html#aa371a374d0c17594e7eed5c751c2df08" title="Read multiple bytes from a register. " alt="" coords="1001,1097,1080,1124"/>
-<area shape="rect" id="node42" href="$mt9v117_8c.html#a930a08d54ce09662cbac826ff7a052bf" title="Write multiple bytes to a single register. " alt="" coords="1128,971,1208,997"/>
-<area shape="rect" id="node43" href="$mt9v117_8c.html#aef8703a6aee9810c99eaa79ca4adad8a" title="mt9v117_write_patch" alt="" coords="793,1047,951,1073"/>
-<area shape="rect" id="node44" href="$mt9v117_8c.html#acd33743f2f52bd5711b8c978e7cf3df2" title="write_var" alt="" coords="1001,996,1080,1023"/>
-<area shape="rect" id="node45" href="$mt9v117_8c.html#ab5e11208a0a26679e535aaef6e6043ad" title="mt9v117_config" alt="" coords="810,945,934,972"/>
-<area shape="rect" id="node46" href="$mt9v117_8c.html#affb04605c4916694762cf7744dd5e744" title="read_var" alt="" coords="833,1097,911,1124"/>
-<area shape="rect" id="node50" href="$sys__time_8h.html#a2894f16d75a4d3c6ad1449d7bba85406" title="sys_time_ticks_of_sec" alt="" coords="332,1069,495,1096"/>
+<area shape="rect" id="node21" href="$group__spi.html#ga6c0861f0c2184cab82f883ca29312011" title="Initialize a spi peripheral. " alt="" coords="609,529,676,556"/>
+<area shape="rect" id="node22" href="$group__spi.html#gab8cb9f918fae47c201bf233a0b3b282f" title="Architecture dependent SPI0 initialization. " alt="" coords="588,479,697,505"/>
+<area shape="rect" id="node24" href="$group__spi.html#gaaba00866ddaf960c0c761e61f81e5216" title="Architecture dependent SPI1 initialization. " alt="" coords="588,428,697,455"/>
+<area shape="rect" id="node26" href="$group__spi.html#gae6c7e2bb3fb354f3b98282386b41bf70" title="Architecture dependent SPI2 initialization. " alt="" coords="588,580,697,607"/>
+<area shape="rect" id="node29" href="$spi__slave__hs__arch_8c.html#a3eb5625306bbd0528404bdbec1fe2cd2" title="spi_slave_hs_char_available" alt="" coords="543,967,743,993"/>
+<area shape="rect" id="node30" href="$spi__slave__hs__arch_8c.html#a1fbf621e4a85b6c6293bcf41fe40aabc" title="spi_slave_hs_check\l_free_space" alt="" coords="569,631,716,673"/>
+<area shape="rect" id="node31" href="$spi__slave__hs__arch_8c.html#a26f8e1cbe59fb380e629b47643ed5a1e" title="spi_slave_hs_getch" alt="" coords="570,697,715,724"/>
+<area shape="rect" id="node32" href="$spi__slave__hs__arch_8c.html#a764936204b755d8bb7208f60debf35e4" title="spi_slave_hs_send" alt="" coords="573,748,713,775"/>
+<area shape="rect" id="node33" href="$spi__slave__hs__arch_8c.html#a033ab4abb6640b043dabebdb27e37692" title="spi_slave_hs_transmit" alt="" coords="791,836,953,863"/>
+<area shape="rect" id="node34" href="$spi__slave__hs__arch_8c.html#a28ebd1dea5d9de43e2f65023083dded2" title="spi_slave_hs_transmit\l_buffer" alt="" coords="561,799,724,841"/>
+<area shape="rect" id="node35" href="$spi__slave__hs__arch_8c.html#aa105625a4ec7ecf95c0802c3edfade05" title="SSP_ISR" alt="" coords="605,916,680,943"/>
+<area shape="rect" id="node42" href="$sys__time_8h.html#a2894f16d75a4d3c6ad1449d7bba85406" title="sys_time_ticks_of_sec" alt="" coords="332,1069,495,1096"/>
 </map>

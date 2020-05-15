@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.13_devel-280-g10fc3aa-dirty</span>
+   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -188,18 +188,19 @@ $(document).ready(function(){initNavTree('umarim_2baro__board_8c_source.html',''
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <a class="code" href="ads1114_8h.html#a95351e73a4dfe90ea157b044127f5756">Ads1114Event</a>();</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="umarim_2baro__board_8c.html#a0517c88c49fb20a5ed40593ed9a8a5e8">BARO_ABS_ADS</a>.data_available) {</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="apogee_2baro__board_8c.html#ab17815d8a13766bc85542dab3def429b">startup_cnt</a> == 0) {</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      <span class="keywordtype">float</span> pressure = <a class="code" href="umarim_2baro__board_8c.html#a5e2b3ce307311e1bc84a8ce9890d9c06">UMARIM_BARO_SENS</a> * <a class="code" href="ads1114_8h.html#ab935e23c858967df52590b3b1e06ce06">Ads1114GetValue</a>(<a class="code" href="umarim_2baro__board_8c.html#a0517c88c49fb20a5ed40593ed9a8a5e8">BARO_ABS_ADS</a>);</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      AbiSendMsgBARO_ABS(<a class="code" href="abi__sender__ids_8h.html#a5bb669cab223b9398b897303b2aae001">BARO_BOARD_SENDER_ID</a>, pressure);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    }</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <a class="code" href="umarim_2baro__board_8c.html#a0517c88c49fb20a5ed40593ed9a8a5e8">BARO_ABS_ADS</a>.data_available = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  }</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;}</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> now_ts = <a class="code" href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb">get_sys_time_usec</a>();</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      <span class="keywordtype">float</span> pressure = <a class="code" href="umarim_2baro__board_8c.html#a5e2b3ce307311e1bc84a8ce9890d9c06">UMARIM_BARO_SENS</a> * <a class="code" href="ads1114_8h.html#ab935e23c858967df52590b3b1e06ce06">Ads1114GetValue</a>(<a class="code" href="umarim_2baro__board_8c.html#a0517c88c49fb20a5ed40593ed9a8a5e8">BARO_ABS_ADS</a>);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      AbiSendMsgBARO_ABS(<a class="code" href="abi__sender__ids_8h.html#a5bb669cab223b9398b897303b2aae001">BARO_BOARD_SENDER_ID</a>, now_ts, pressure);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <a class="code" href="umarim_2baro__board_8c.html#a0517c88c49fb20a5ed40593ed9a8a5e8">BARO_ABS_ADS</a>.data_available = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  }</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;}</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
 <div class="ttc" id="types_8h_html_a273cf69d639a59973b6019625df33e30"><div class="ttname"><a href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></div><div class="ttdeci">unsigned short uint16_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00016">types.h:16</a></div></div>
 <div class="ttc" id="apogee_2baro__board_8c_html_ab17815d8a13766bc85542dab3def429b"><div class="ttname"><a href="apogee_2baro__board_8c.html#ab17815d8a13766bc85542dab3def429b">startup_cnt</a></div><div class="ttdeci">uint16_t startup_cnt</div><div class="ttdef"><b>Definition:</b> <a href="apogee_2baro__board_8c_source.html#l00072">baro_board.c:72</a></div></div>
 <div class="ttc" id="baro_8h_html"><div class="ttname"><a href="baro_8h.html">baro.h</a></div><div class="ttdoc">Common barometric sensor implementation. </div></div>
 <div class="ttc" id="umarim_2baro__board_8c_html_a914c4e243d7b930161444d5fb3829f5a"><div class="ttname"><a href="umarim_2baro__board_8c.html#a914c4e243d7b930161444d5fb3829f5a">BARO_STARTUP_COUNTER</a></div><div class="ttdeci">#define BARO_STARTUP_COUNTER</div><div class="ttdef"><b>Definition:</b> <a href="umarim_2baro__board_8c_source.html#l00046">baro_board.c:46</a></div></div>
-<div class="ttc" id="chibios_2led__hw_8h_html_a76c86a9c700e32e68f48f85271970b7f"><div class="ttname"><a href="chibios_2led__hw_8h.html#a76c86a9c700e32e68f48f85271970b7f">LED_OFF</a></div><div class="ttdeci">#define LED_OFF(i)</div><div class="ttdef"><b>Definition:</b> <a href="chibios_2led__hw_8h_source.html#l00051">led_hw.h:51</a></div></div>
+<div class="ttc" id="chibios_2led__hw_8h_html_a76c86a9c700e32e68f48f85271970b7f"><div class="ttname"><a href="chibios_2led__hw_8h.html#a76c86a9c700e32e68f48f85271970b7f">LED_OFF</a></div><div class="ttdeci">#define LED_OFF(i)</div><div class="ttdef"><b>Definition:</b> <a href="chibios_2led__hw_8h_source.html#l00052">led_hw.h:52</a></div></div>
 <div class="ttc" id="abi_8h_html"><div class="ttname"><a href="abi_8h.html">abi.h</a></div><div class="ttdoc">Main include for ABI (AirBorneInterface). </div></div>
 <div class="ttc" id="apogee_2baro__board_8c_html_a9b25546908842f1d38fc56e438d46e21"><div class="ttname"><a href="apogee_2baro__board_8c.html#a9b25546908842f1d38fc56e438d46e21">baro_init</a></div><div class="ttdeci">void baro_init(void)</div><div class="ttdef"><b>Definition:</b> <a href="apogee_2baro__board_8c_source.html#l00076">baro_board.c:76</a></div></div>
 <div class="ttc" id="ads1114_8h_html"><div class="ttname"><a href="ads1114_8h.html">ads1114.h</a></div></div>
@@ -208,14 +209,16 @@ $(document).ready(function(){initNavTree('umarim_2baro__board_8c_source.html',''
 <div class="ttc" id="ads1114_8c_html_a4ba628257d14fc3773ddfc484a18e199"><div class="ttname"><a href="ads1114_8c.html#a4ba628257d14fc3773ddfc484a18e199">ads1114_read</a></div><div class="ttdeci">void ads1114_read(struct ads1114_periph *p)</div><div class="ttdef"><b>Definition:</b> <a href="ads1114_8c_source.html#l00063">ads1114.c:63</a></div></div>
 <div class="ttc" id="apogee_2baro__board_8c_html_a23ed77c56ba44b3ed3cc3b8e378bdb00"><div class="ttname"><a href="apogee_2baro__board_8c.html#a23ed77c56ba44b3ed3cc3b8e378bdb00">baro_periodic</a></div><div class="ttdeci">void baro_periodic(void)</div><div class="ttdef"><b>Definition:</b> <a href="apogee_2baro__board_8c_source.html#l00090">baro_board.c:90</a></div></div>
 <div class="ttc" id="ads1114_8c_html_a663d281bebd9216206400b2277496baf"><div class="ttname"><a href="ads1114_8c.html#a663d281bebd9216206400b2277496baf">ads1114_init</a></div><div class="ttdeci">void ads1114_init(void)</div><div class="ttdef"><b>Definition:</b> <a href="ads1114_8c_source.html#l00037">ads1114.c:37</a></div></div>
+<div class="ttc" id="types_8h_html_a06896e8c53f721507066c079052171f8"><div class="ttname"><a href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a></div><div class="ttdeci">unsigned long uint32_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00018">types.h:18</a></div></div>
 <div class="ttc" id="ads1114_8h_html_ab935e23c858967df52590b3b1e06ce06"><div class="ttname"><a href="ads1114_8h.html#ab935e23c858967df52590b3b1e06ce06">Ads1114GetValue</a></div><div class="ttdeci">#define Ads1114GetValue(_p)</div><div class="ttdef"><b>Definition:</b> <a href="ads1114_8h_source.html#l00165">ads1114.h:165</a></div></div>
 <div class="ttc" id="abi__sender__ids_8h_html_a5bb669cab223b9398b897303b2aae001"><div class="ttname"><a href="abi__sender__ids_8h.html#a5bb669cab223b9398b897303b2aae001">BARO_BOARD_SENDER_ID</a></div><div class="ttdeci">#define BARO_BOARD_SENDER_ID</div><div class="ttdoc">default onboard baro </div><div class="ttdef"><b>Definition:</b> <a href="abi__sender__ids_8h_source.html#l00033">abi_sender_ids.h:33</a></div></div>
 <div class="ttc" id="std_8h_html"><div class="ttname"><a href="std_8h.html">std.h</a></div></div>
-<div class="ttc" id="chibios_2led__hw_8h_html_afd0bf6b0eebb00641365dc389a9fc449"><div class="ttname"><a href="chibios_2led__hw_8h.html#afd0bf6b0eebb00641365dc389a9fc449">LED_TOGGLE</a></div><div class="ttdeci">#define LED_TOGGLE(i)</div><div class="ttdef"><b>Definition:</b> <a href="chibios_2led__hw_8h_source.html#l00052">led_hw.h:52</a></div></div>
+<div class="ttc" id="chibios_2led__hw_8h_html_afd0bf6b0eebb00641365dc389a9fc449"><div class="ttname"><a href="chibios_2led__hw_8h.html#afd0bf6b0eebb00641365dc389a9fc449">LED_TOGGLE</a></div><div class="ttdeci">#define LED_TOGGLE(i)</div><div class="ttdef"><b>Definition:</b> <a href="chibios_2led__hw_8h_source.html#l00053">led_hw.h:53</a></div></div>
 <div class="ttc" id="umarim_2baro__board_8c_html_aa1f86f3ff4d588de0fa1237151e66adf"><div class="ttname"><a href="umarim_2baro__board_8c.html#aa1f86f3ff4d588de0fa1237151e66adf">umarim_baro_event</a></div><div class="ttdeci">void umarim_baro_event(void)</div><div class="ttdef"><b>Definition:</b> <a href="umarim_2baro__board_8c_source.html#l00075">baro_board.c:75</a></div></div>
 <div class="ttc" id="umarim_2baro__board_8h_html"><div class="ttname"><a href="umarim_2baro__board_8h.html">baro_board.h</a></div></div>
 <div class="ttc" id="led_8h_html"><div class="ttname"><a href="led_8h.html">led.h</a></div><div class="ttdoc">arch independent LED (Light Emitting Diodes) API </div></div>
-<div class="ttc" id="chibios_2led__hw_8h_html_a3ab823c4004d96d154dfb8f69d18c47a"><div class="ttname"><a href="chibios_2led__hw_8h.html#a3ab823c4004d96d154dfb8f69d18c47a">LED_ON</a></div><div class="ttdeci">#define LED_ON(i)</div><div class="ttdef"><b>Definition:</b> <a href="chibios_2led__hw_8h_source.html#l00050">led_hw.h:50</a></div></div>
+<div class="ttc" id="chibios_2led__hw_8h_html_a3ab823c4004d96d154dfb8f69d18c47a"><div class="ttname"><a href="chibios_2led__hw_8h.html#a3ab823c4004d96d154dfb8f69d18c47a">LED_ON</a></div><div class="ttdeci">#define LED_ON(i)</div><div class="ttdef"><b>Definition:</b> <a href="chibios_2led__hw_8h_source.html#l00051">led_hw.h:51</a></div></div>
+<div class="ttc" id="chibios_2mcu__periph_2sys__time__arch_8c_html_a7ddfef1f78a56c6b4c4c536b5d670bfb"><div class="ttname"><a href="chibios_2mcu__periph_2sys__time__arch_8c.html#a7ddfef1f78a56c6b4c4c536b5d670bfb">get_sys_time_usec</a></div><div class="ttdeci">uint32_t get_sys_time_usec(void)</div><div class="ttdoc">Get the time in microseconds since startup. </div><div class="ttdef"><b>Definition:</b> <a href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00068">sys_time_arch.c:68</a></div></div>
 <div class="ttc" id="ads1114_8h_html_a95351e73a4dfe90ea157b044127f5756"><div class="ttname"><a href="ads1114_8h.html#a95351e73a4dfe90ea157b044127f5756">Ads1114Event</a></div><div class="ttdeci">#define Ads1114Event()</div><div class="ttdef"><b>Definition:</b> <a href="ads1114_8h_source.html#l00158">ads1114.h:158</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -223,7 +226,7 @@ $(document).ready(function(){initNavTree('umarim_2baro__board_8c_source.html',''
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e030268cd18297cf6282390f76bfcf7f.html">boards</a></li><li class="navelem"><a class="el" href="dir_414104448893b1ba2b157e67b87d5a33.html">umarim</a></li><li class="navelem"><a class="el" href="umarim_2baro__board_8c.html">baro_board.c</a></li>
-    <li class="footer">Generated on Wed Sep 12 2018 02:02:33 for Paparazzi UAS by
+    <li class="footer">Generated on Fri May 15 2020 04:02:10 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>
