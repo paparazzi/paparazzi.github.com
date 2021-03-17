@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -340,6 +340,9 @@ $(document).ready(function(){initNavTree('globals_func_i.html','');});
 <li>icuperiodcb()
 : <a class="el" href="chibios_2subsystems_2radio__control_2ppm__arch_8c.html#a7c1b7aa681b472c1019639c2c0a8ce47">ppm_arch.c</a>
 </li>
+<li>if()
+: <a class="el" href="e__identification__fr_8c.html#a92cffae21318c1d983c63f3afa2a8d87">e_identification_fr.c</a>
+</li>
 <li>image_add_border()
 : <a class="el" href="image_8c.html#af8fc6003afdb4b14bd2f8112491f2dc4">image.c</a>
 , <a class="el" href="image_8h.html#af8fc6003afdb4b14bd2f8112491f2dc4">image.h</a>
@@ -445,8 +448,8 @@ $(document).ready(function(){initNavTree('globals_func_i.html','');});
 , <a class="el" href="imu__apogee_8h.html#a1262a50ea34da37d89d68b295310a0fd">imu_apogee.h</a>
 </li>
 <li>imu_apogee_event()
-: <a class="el" href="imu__apogee_8h.html#a60395d55d1c3bbb3773a3bc79f210884">imu_apogee.h</a>
-, <a class="el" href="imu__apogee_8c.html#a60395d55d1c3bbb3773a3bc79f210884">imu_apogee.c</a>
+: <a class="el" href="imu__apogee_8c.html#a60395d55d1c3bbb3773a3bc79f210884">imu_apogee.c</a>
+, <a class="el" href="imu__apogee_8h.html#a60395d55d1c3bbb3773a3bc79f210884">imu_apogee.h</a>
 </li>
 <li>imu_apogee_init()
 : <a class="el" href="imu__apogee_8c.html#a5ddbbf57488228a97e3d607bac33d837">imu_apogee.c</a>
@@ -678,12 +681,12 @@ $(document).ready(function(){initNavTree('globals_func_i.html','');});
 , <a class="el" href="imu__mpu9250__spi_8h.html#af140d4e8a775be026073e67fd3080aa2">imu_mpu9250_spi.h</a>
 </li>
 <li>imu_mpu9250_init()
-: <a class="el" href="imu__mpu9250__i2c_8h.html#a9a9bb6c468d388d1688b2b35e94633d3">imu_mpu9250_i2c.h</a>
+: <a class="el" href="imu__mpu9250__i2c_8c.html#a9a9bb6c468d388d1688b2b35e94633d3">imu_mpu9250_i2c.c</a>
+, <a class="el" href="imu__mpu9250__i2c_8h.html#a9a9bb6c468d388d1688b2b35e94633d3">imu_mpu9250_i2c.h</a>
 , <a class="el" href="imu__mpu9250__spi_8c.html#a9a9bb6c468d388d1688b2b35e94633d3">imu_mpu9250_spi.c</a>
 , <a class="el" href="imu__mpu9250__spi_8h.html#a9a9bb6c468d388d1688b2b35e94633d3">imu_mpu9250_spi.h</a>
 , <a class="el" href="imu__mpu9250_8c.html#a9a9bb6c468d388d1688b2b35e94633d3">imu_mpu9250.c</a>
 , <a class="el" href="imu__mpu9250_8h.html#a9a9bb6c468d388d1688b2b35e94633d3">imu_mpu9250.h</a>
-, <a class="el" href="imu__mpu9250__i2c_8c.html#a9a9bb6c468d388d1688b2b35e94633d3">imu_mpu9250_i2c.c</a>
 </li>
 <li>imu_mpu9250_periodic()
 : <a class="el" href="imu__mpu9250_8c.html#a38ba54b488a6adbea2dfb5a060d5d8b5">imu_mpu9250.c</a>
@@ -972,6 +975,15 @@ $(document).ready(function(){initNavTree('globals_func_i.html','');});
 <li>indi_init_filters()
 : <a class="el" href="stabilization__indi__simple_8c.html#af24d268c1d84323103fb53b25edae209">stabilization_indi_simple.c</a>
 </li>
+<li>indx1d_a()
+: <a class="el" href="wedgebug_8c.html#a4756971f63deed4709003a0b7b21c793">wedgebug.c</a>
+</li>
+<li>indx1d_b()
+: <a class="el" href="wedgebug_8c.html#ae728c09d5286022f75f93813923bfe45">wedgebug.c</a>
+</li>
+<li>indx1d_c()
+: <a class="el" href="wedgebug_8c.html#ae049bce7926e6e7b28445fa2026220e2">wedgebug.c</a>
+</li>
 <li>infrared_adc_init()
 : <a class="el" href="infrared__adc_8c.html#afd9b914e78df4722702ab0113752a2b0">infrared_adc.c</a>
 , <a class="el" href="subsystems_2sensors_2infrared__adc_8h.html#afd9b914e78df4722702ab0113752a2b0">infrared_adc.h</a>
@@ -1052,12 +1064,9 @@ $(document).ready(function(){initNavTree('globals_func_i.html','');});
 : <a class="el" href="cartography_8c.html#a8a3ba9e357ce33b86c23aa001f430698">cartography.c</a>
 , <a class="el" href="cartography_8h.html#a8a3ba9e357ce33b86c23aa001f430698">cartography.h</a>
 </li>
-<li>init_crc8()
-: <a class="el" href="actuators__xvert_8c.html#ab111bf1bec99b05da04c50ccd1895080">actuators_xvert.c</a>
-</li>
 <li>init_demo()
-: <a class="el" href="demo__module_8c.html#abd8f6ed0cbc5b988ab7fe8eccd00895e">demo_module.c</a>
-, <a class="el" href="demo__module_8h.html#abd8f6ed0cbc5b988ab7fe8eccd00895e">demo_module.h</a>
+: <a class="el" href="demo__module_8h.html#abd8f6ed0cbc5b988ab7fe8eccd00895e">demo_module.h</a>
+, <a class="el" href="demo__module_8c.html#abd8f6ed0cbc5b988ab7fe8eccd00895e">demo_module.c</a>
 </li>
 <li>init_fbw()
 : <a class="el" href="fixedwing_2main__fbw_8c.html#ad86b7fe577a2414df2c7a5a9222aa45a">main_fbw.c</a>
@@ -1083,8 +1092,8 @@ $(document).ready(function(){initNavTree('globals_func_i.html','');});
 , <a class="el" href="i2c__abuse__test_8h.html#a07cb2ccbbdae8be6ce199a62ac1a6702">i2c_abuse_test.h</a>
 </li>
 <li>init_invariant_state()
-: <a class="el" href="ins__float__invariant_8c.html#a5be5e848a4326763bf2bf0ab5ec053b5">ins_float_invariant.c</a>
-, <a class="el" href="ahrs__float__invariant_8c.html#a5be5e848a4326763bf2bf0ab5ec053b5">ahrs_float_invariant.c</a>
+: <a class="el" href="ahrs__float__invariant_8c.html#a5be5e848a4326763bf2bf0ab5ec053b5">ahrs_float_invariant.c</a>
+, <a class="el" href="ins__float__invariant_8c.html#a5be5e848a4326763bf2bf0ab5ec053b5">ins_float_invariant.c</a>
 </li>
 <li>init_jsbsim()
 : <a class="el" href="nps__fdm__jsbsim_8cpp.html#a22e629dc0a3ec62417e2a4e820d85244">nps_fdm_jsbsim.cpp</a>
@@ -1094,8 +1103,8 @@ $(document).ready(function(){initNavTree('globals_func_i.html','');});
 , <a class="el" href="light_8h.html#a819dc9b7f65e708978374f3065c7a6ef">light.h</a>
 </li>
 <li>init_ltp()
-: <a class="el" href="nps__fdm__crrcsim_8c.html#a3836be75ba868b34cd08503e2f242ab5">nps_fdm_crrcsim.c</a>
-, <a class="el" href="nps__fdm__jsbsim_8cpp.html#a3836be75ba868b34cd08503e2f242ab5">nps_fdm_jsbsim.cpp</a>
+: <a class="el" href="nps__fdm__jsbsim_8cpp.html#a3836be75ba868b34cd08503e2f242ab5">nps_fdm_jsbsim.cpp</a>
+, <a class="el" href="nps__fdm__crrcsim_8c.html#a3836be75ba868b34cd08503e2f242ab5">nps_fdm_crrcsim.c</a>
 </li>
 <li>init_median_filter_f()
 : <a class="el" href="median__filter_8h.html#a96f8e995febe47e892b65f0e6ea0bf3c">median_filter.h</a>
@@ -1127,6 +1136,10 @@ $(document).ready(function(){initNavTree('globals_func_i.html','');});
 <li>init_pid_f()
 : <a class="el" href="pid_8h.html#adb3596254d64d6ac10f4690607e97c15">pid.h</a>
 </li>
+<li>init_random()
+: <a class="el" href="pprz__random_8c.html#a694be11ffe08b609fe1b268a9e469aa2">pprz_random.c</a>
+, <a class="el" href="pprz__random_8h.html#a694be11ffe08b609fe1b268a9e469aa2">pprz_random.h</a>
+</li>
 <li>init_second_order_low_pass()
 : <a class="el" href="low__pass__filter_8h.html#a96c76dd5aaa4bc076a2ffc6fc7f1ae37">low_pass_filter.h</a>
 </li>
@@ -1145,9 +1158,19 @@ $(document).ready(function(){initNavTree('globals_func_i.html','');});
 : <a class="el" href="exif__module_8c.html#a76556aceaec9700c7267093b6d4fa99f">exif_module.c</a>
 </li>
 <li>init_usb_serial()
-: <a class="el" href="usb__serial__stm32_8h.html#ac73c5eebbfb361dcbf74a648eda5e007">usb_serial_stm32.h</a>
+: <a class="el" href="usb__serial__stm32__example2_8c.html#ac73c5eebbfb361dcbf74a648eda5e007">usb_serial_stm32_example2.c</a>
+, <a class="el" href="usb__serial__stm32_8h.html#ac73c5eebbfb361dcbf74a648eda5e007">usb_serial_stm32.h</a>
 , <a class="el" href="usb__serial__stm32__example1_8c.html#ac73c5eebbfb361dcbf74a648eda5e007">usb_serial_stm32_example1.c</a>
-, <a class="el" href="usb__serial__stm32__example2_8c.html#ac73c5eebbfb361dcbf74a648eda5e007">usb_serial_stm32_example2.c</a>
+</li>
+<li>initGetBind()
+: <a class="el" href="cc2500__frsky__shared_8c.html#a528b38863b0d5694139f9c97b03b3de2">cc2500_frsky_shared.c</a>
+</li>
+<li>initialise()
+: <a class="el" href="cc2500__frsky__shared_8c.html#a803f76032aeda59a1a0e707ee9256894">cc2500_frsky_shared.c</a>
+</li>
+<li>initialiseData()
+: <a class="el" href="cc2500__frsky__shared_8h.html#aeb0e66b7e7d77f928e122ea1dfab26fb">cc2500_frsky_shared.h</a>
+, <a class="el" href="cc2500__frsky__shared_8c.html#aeb0e66b7e7d77f928e122ea1dfab26fb">cc2500_frsky_shared.c</a>
 </li>
 <li>initialize_camera()
 : <a class="el" href="video__thread_8c.html#acc71ed66abdc3fa0cecd95cc408c670e">video_thread.c</a>
@@ -1155,12 +1178,22 @@ $(document).ready(function(){initNavTree('globals_func_i.html','');});
 <li>initializeSensor()
 : <a class="el" href="pmw3901_8c.html#ae2b9a24b30aaf6bc58ee3cdd98f769bc">pmw3901.c</a>
 </li>
+<li>initSmartPortSensors()
+: <a class="el" href="cc2500__smartport_8c.html#af96c106b53f8cc26baeb4bb27cc5e5f9">cc2500_smartport.c</a>
+</li>
+<li>initSmartPortTelemetryExternal()
+: <a class="el" href="cc2500__smartport_8c.html#a25c89eefa21629f2aa404974b8bd67ad">cc2500_smartport.c</a>
+, <a class="el" href="cc2500__smartport_8h.html#a25c89eefa21629f2aa404974b8bd67ad">cc2500_smartport.h</a>
+</li>
+<li>initTuneRx()
+: <a class="el" href="cc2500__frsky__shared_8c.html#acd78ab0f584bb8800c35994a51aa78a9">cc2500_frsky_shared.c</a>
+</li>
 <li>inputbuf_init()
 : <a class="el" href="nps__fdm__crrcsim_8c.html#a6e4ed6bd24dbdcac38f21624a3ff6e21">nps_fdm_crrcsim.c</a>
 </li>
 <li>ins_alt_float_init()
-: <a class="el" href="ins__alt__float_8h.html#addae4691b18806ce2db90c10ef8d7274">ins_alt_float.h</a>
-, <a class="el" href="ins__alt__float_8c.html#addae4691b18806ce2db90c10ef8d7274">ins_alt_float.c</a>
+: <a class="el" href="ins__alt__float_8c.html#addae4691b18806ce2db90c10ef8d7274">ins_alt_float.c</a>
+, <a class="el" href="ins__alt__float_8h.html#addae4691b18806ce2db90c10ef8d7274">ins_alt_float.h</a>
 </li>
 <li>ins_alt_float_update_baro()
 : <a class="el" href="ins__alt__float_8c.html#afb6a5cd07b6574dfb93f023aecfcec5d">ins_alt_float.c</a>
@@ -1177,15 +1210,15 @@ $(document).ready(function(){initNavTree('globals_func_i.html','');});
 , <a class="el" href="ins__ekf2_8h.html#a9b0c0a22f0f6677accb2ae4b27f3cd16">ins_ekf2.h</a>
 </li>
 <li>ins_ekf2_init()
-: <a class="el" href="ins__ekf2_8h.html#a81ce9235d9748d33355fc0018197f4c4">ins_ekf2.h</a>
-, <a class="el" href="ins__ekf2_8cpp.html#a81ce9235d9748d33355fc0018197f4c4">ins_ekf2.cpp</a>
+: <a class="el" href="ins__ekf2_8cpp.html#a81ce9235d9748d33355fc0018197f4c4">ins_ekf2.cpp</a>
+, <a class="el" href="ins__ekf2_8h.html#a81ce9235d9748d33355fc0018197f4c4">ins_ekf2.h</a>
 </li>
 <li>ins_ekf2_publish_attitude()
 : <a class="el" href="ins__ekf2_8cpp.html#ad0d967646b2cb048323e8545662428ed">ins_ekf2.cpp</a>
 </li>
 <li>ins_ekf2_update()
-: <a class="el" href="ins__ekf2_8cpp.html#a21a6903ad1b06c310ac73f7598d4306b">ins_ekf2.cpp</a>
-, <a class="el" href="ins__ekf2_8h.html#a21a6903ad1b06c310ac73f7598d4306b">ins_ekf2.h</a>
+: <a class="el" href="ins__ekf2_8h.html#a21a6903ad1b06c310ac73f7598d4306b">ins_ekf2.h</a>
+, <a class="el" href="ins__ekf2_8cpp.html#a21a6903ad1b06c310ac73f7598d4306b">ins_ekf2.cpp</a>
 </li>
 <li>ins_event_check_and_handle()
 : <a class="el" href="ins__module_8h.html#ac34266139fe4658afe3bd0992441431a">ins_module.h</a>
@@ -1195,8 +1228,8 @@ $(document).ready(function(){initNavTree('globals_func_i.html','');});
 , <a class="el" href="ins__float__invariant_8h.html#ad770f4835ea32cfbb8c9ae96100a05e2">ins_float_invariant.h</a>
 </li>
 <li>ins_float_invariant_align()
-: <a class="el" href="ins__float__invariant_8h.html#a20f38b74cafe0e2f82412fe7a66dc806">ins_float_invariant.h</a>
-, <a class="el" href="ins__float__invariant_8c.html#a20f38b74cafe0e2f82412fe7a66dc806">ins_float_invariant.c</a>
+: <a class="el" href="ins__float__invariant_8c.html#a20f38b74cafe0e2f82412fe7a66dc806">ins_float_invariant.c</a>
+, <a class="el" href="ins__float__invariant_8h.html#a20f38b74cafe0e2f82412fe7a66dc806">ins_float_invariant.h</a>
 </li>
 <li>ins_float_invariant_init()
 : <a class="el" href="ins__float__invariant_8c.html#a337aa9b464c923af97d19ec0bfdb6f02">ins_float_invariant.c</a>
@@ -1219,8 +1252,8 @@ $(document).ready(function(){initNavTree('globals_func_i.html','');});
 , <a class="el" href="ins__float__invariant_8h.html#a8b37e7cd344aafd9ed124a7775a9a92e">ins_float_invariant.h</a>
 </li>
 <li>ins_float_invariant_wrapper_init()
-: <a class="el" href="ins__float__invariant__wrapper_8c.html#abd4f3b0fcceec4de92a1ad9a7653c6f3">ins_float_invariant_wrapper.c</a>
-, <a class="el" href="ins__float__invariant__wrapper_8h.html#abd4f3b0fcceec4de92a1ad9a7653c6f3">ins_float_invariant_wrapper.h</a>
+: <a class="el" href="ins__float__invariant__wrapper_8h.html#abd4f3b0fcceec4de92a1ad9a7653c6f3">ins_float_invariant_wrapper.h</a>
+, <a class="el" href="ins__float__invariant__wrapper_8c.html#abd4f3b0fcceec4de92a1ad9a7653c6f3">ins_float_invariant_wrapper.c</a>
 </li>
 <li>ins_gps_passthrough_init()
 : <a class="el" href="ins__gps__passthrough_8c.html#a65b4389487e1468dd9245eacf2ce07b3">ins_gps_passthrough.c</a>
@@ -1228,36 +1261,36 @@ $(document).ready(function(){initNavTree('globals_func_i.html','');});
 , <a class="el" href="ins__gps__passthrough__utm_8c.html#a65b4389487e1468dd9245eacf2ce07b3">ins_gps_passthrough_utm.c</a>
 </li>
 <li>ins_init_origin_i_from_flightplan()
-: <a class="el" href="ins_8h.html#ac9ba03cf9d41e4536c73f218d3439e76">ins.h</a>
-, <a class="el" href="ins_8c.html#ac9ba03cf9d41e4536c73f218d3439e76">ins.c</a>
+: <a class="el" href="ins_8c.html#ac9ba03cf9d41e4536c73f218d3439e76">ins.c</a>
+, <a class="el" href="ins_8h.html#ac9ba03cf9d41e4536c73f218d3439e76">ins.h</a>
 </li>
 <li>ins_int_init()
 : <a class="el" href="ins__int_8c.html#a6f47e4e65f9697a961c3bef79e9029e4">ins_int.c</a>
 , <a class="el" href="ins__int_8h.html#a6f47e4e65f9697a961c3bef79e9029e4">ins_int.h</a>
 </li>
 <li>ins_int_propagate()
-: <a class="el" href="ins__int_8h.html#a51c0c3198d953f37ad8340875e9f0c29">ins_int.h</a>
-, <a class="el" href="ins__int_8c.html#a51c0c3198d953f37ad8340875e9f0c29">ins_int.c</a>
+: <a class="el" href="ins__int_8c.html#a51c0c3198d953f37ad8340875e9f0c29">ins_int.c</a>
+, <a class="el" href="ins__int_8h.html#a51c0c3198d953f37ad8340875e9f0c29">ins_int.h</a>
 </li>
 <li>ins_int_update_gps()
 : <a class="el" href="ins__int_8c.html#a54df8c17ccf7a20d6ca09ad0b8f45db3">ins_int.c</a>
 , <a class="el" href="ins__int_8h.html#a54df8c17ccf7a20d6ca09ad0b8f45db3">ins_int.h</a>
 </li>
 <li>ins_mekf_wind_align()
-: <a class="el" href="ins__mekf__wind_8h.html#ab4cbd170e2e0bac6be3ca231bc403f47">ins_mekf_wind.h</a>
-, <a class="el" href="ins__mekf__wind_8cpp.html#ab4cbd170e2e0bac6be3ca231bc403f47">ins_mekf_wind.cpp</a>
+: <a class="el" href="ins__mekf__wind_8cpp.html#ab4cbd170e2e0bac6be3ca231bc403f47">ins_mekf_wind.cpp</a>
+, <a class="el" href="ins__mekf__wind_8h.html#ab4cbd170e2e0bac6be3ca231bc403f47">ins_mekf_wind.h</a>
 </li>
 <li>ins_mekf_wind_get_accel_bias()
 : <a class="el" href="ins__mekf__wind_8cpp.html#a97c326d2469d2f8191845f7195340f8b">ins_mekf_wind.cpp</a>
 , <a class="el" href="ins__mekf__wind_8h.html#a97c326d2469d2f8191845f7195340f8b">ins_mekf_wind.h</a>
 </li>
 <li>ins_mekf_wind_get_accel_ned()
-: <a class="el" href="ins__mekf__wind_8h.html#a54b93af569c5a2f17f80cd2087ad45eb">ins_mekf_wind.h</a>
-, <a class="el" href="ins__mekf__wind_8cpp.html#a54b93af569c5a2f17f80cd2087ad45eb">ins_mekf_wind.cpp</a>
+: <a class="el" href="ins__mekf__wind_8cpp.html#a54b93af569c5a2f17f80cd2087ad45eb">ins_mekf_wind.cpp</a>
+, <a class="el" href="ins__mekf__wind_8h.html#a54b93af569c5a2f17f80cd2087ad45eb">ins_mekf_wind.h</a>
 </li>
 <li>ins_mekf_wind_get_airspeed_body()
-: <a class="el" href="ins__mekf__wind_8cpp.html#aa15f1c6db5ed9cea1999f3b13a06adef">ins_mekf_wind.cpp</a>
-, <a class="el" href="ins__mekf__wind_8h.html#aa15f1c6db5ed9cea1999f3b13a06adef">ins_mekf_wind.h</a>
+: <a class="el" href="ins__mekf__wind_8h.html#aa15f1c6db5ed9cea1999f3b13a06adef">ins_mekf_wind.h</a>
+, <a class="el" href="ins__mekf__wind_8cpp.html#aa15f1c6db5ed9cea1999f3b13a06adef">ins_mekf_wind.cpp</a>
 </li>
 <li>ins_mekf_wind_get_airspeed_norm()
 : <a class="el" href="ins__mekf__wind_8cpp.html#a29aee26e8a86eda3fe5b456c9ef21d5d">ins_mekf_wind.cpp</a>
@@ -1268,137 +1301,137 @@ $(document).ready(function(){initNavTree('globals_func_i.html','');});
 , <a class="el" href="ins__mekf__wind_8cpp.html#a11d98aae49d3fb42dc2d55ba17b02c79">ins_mekf_wind.cpp</a>
 </li>
 <li>ins_mekf_wind_get_body_rates()
-: <a class="el" href="ins__mekf__wind_8h.html#a7f99f03cf34c8949e0cb048ab0e1c640">ins_mekf_wind.h</a>
-, <a class="el" href="ins__mekf__wind_8cpp.html#a7f99f03cf34c8949e0cb048ab0e1c640">ins_mekf_wind.cpp</a>
+: <a class="el" href="ins__mekf__wind_8cpp.html#a7f99f03cf34c8949e0cb048ab0e1c640">ins_mekf_wind.cpp</a>
+, <a class="el" href="ins__mekf__wind_8h.html#a7f99f03cf34c8949e0cb048ab0e1c640">ins_mekf_wind.h</a>
 </li>
 <li>ins_mekf_wind_get_pos_ned()
-: <a class="el" href="ins__mekf__wind_8h.html#a64ab6d7f656b1e5275a77ccc6330bb93">ins_mekf_wind.h</a>
-, <a class="el" href="ins__mekf__wind_8cpp.html#a64ab6d7f656b1e5275a77ccc6330bb93">ins_mekf_wind.cpp</a>
+: <a class="el" href="ins__mekf__wind_8cpp.html#a64ab6d7f656b1e5275a77ccc6330bb93">ins_mekf_wind.cpp</a>
+, <a class="el" href="ins__mekf__wind_8h.html#a64ab6d7f656b1e5275a77ccc6330bb93">ins_mekf_wind.h</a>
 </li>
 <li>ins_mekf_wind_get_quat()
 : <a class="el" href="ins__mekf__wind_8h.html#aa6187c0d117fa7c8c0d791af3ffd5e86">ins_mekf_wind.h</a>
 , <a class="el" href="ins__mekf__wind_8cpp.html#aa6187c0d117fa7c8c0d791af3ffd5e86">ins_mekf_wind.cpp</a>
 </li>
 <li>ins_mekf_wind_get_rates_bias()
-: <a class="el" href="ins__mekf__wind_8cpp.html#ae36994fcfa9fd90bd0e10529383c8cd9">ins_mekf_wind.cpp</a>
-, <a class="el" href="ins__mekf__wind_8h.html#ae36994fcfa9fd90bd0e10529383c8cd9">ins_mekf_wind.h</a>
+: <a class="el" href="ins__mekf__wind_8h.html#ae36994fcfa9fd90bd0e10529383c8cd9">ins_mekf_wind.h</a>
+, <a class="el" href="ins__mekf__wind_8cpp.html#ae36994fcfa9fd90bd0e10529383c8cd9">ins_mekf_wind.cpp</a>
 </li>
 <li>ins_mekf_wind_get_speed_ned()
-: <a class="el" href="ins__mekf__wind_8h.html#af7842fba65bc5bafcb9b37c6693e2469">ins_mekf_wind.h</a>
-, <a class="el" href="ins__mekf__wind_8cpp.html#af7842fba65bc5bafcb9b37c6693e2469">ins_mekf_wind.cpp</a>
+: <a class="el" href="ins__mekf__wind_8cpp.html#af7842fba65bc5bafcb9b37c6693e2469">ins_mekf_wind.cpp</a>
+, <a class="el" href="ins__mekf__wind_8h.html#af7842fba65bc5bafcb9b37c6693e2469">ins_mekf_wind.h</a>
 </li>
 <li>ins_mekf_wind_get_wind_ned()
-: <a class="el" href="ins__mekf__wind_8h.html#a13015274cdcd2f4d84a0a86ee8124314">ins_mekf_wind.h</a>
-, <a class="el" href="ins__mekf__wind_8cpp.html#a13015274cdcd2f4d84a0a86ee8124314">ins_mekf_wind.cpp</a>
+: <a class="el" href="ins__mekf__wind_8cpp.html#a13015274cdcd2f4d84a0a86ee8124314">ins_mekf_wind.cpp</a>
+, <a class="el" href="ins__mekf__wind_8h.html#a13015274cdcd2f4d84a0a86ee8124314">ins_mekf_wind.h</a>
 </li>
 <li>ins_mekf_wind_init()
-: <a class="el" href="ins__mekf__wind_8h.html#a6109cbb049735b4c93f75357e329bdc9">ins_mekf_wind.h</a>
-, <a class="el" href="ins__mekf__wind_8cpp.html#a6109cbb049735b4c93f75357e329bdc9">ins_mekf_wind.cpp</a>
+: <a class="el" href="ins__mekf__wind_8cpp.html#a6109cbb049735b4c93f75357e329bdc9">ins_mekf_wind.cpp</a>
+, <a class="el" href="ins__mekf__wind_8h.html#a6109cbb049735b4c93f75357e329bdc9">ins_mekf_wind.h</a>
 </li>
 <li>ins_mekf_wind_propagate()
 : <a class="el" href="ins__mekf__wind_8h.html#a81c2c896970bbb2edecd7912c450ef76">ins_mekf_wind.h</a>
 , <a class="el" href="ins__mekf__wind_8cpp.html#aaa16d94e2b75f45e46bb9ea30550ce7a">ins_mekf_wind.cpp</a>
 </li>
 <li>ins_mekf_wind_propagate_ahrs()
-: <a class="el" href="ins__mekf__wind_8h.html#a2dafde8b5020fda952485d22d7286651">ins_mekf_wind.h</a>
-, <a class="el" href="ins__mekf__wind_8cpp.html#ad2070932e126ed066640e4a6bad6075d">ins_mekf_wind.cpp</a>
+: <a class="el" href="ins__mekf__wind_8cpp.html#ad2070932e126ed066640e4a6bad6075d">ins_mekf_wind.cpp</a>
+, <a class="el" href="ins__mekf__wind_8h.html#a2dafde8b5020fda952485d22d7286651">ins_mekf_wind.h</a>
 </li>
 <li>ins_mekf_wind_reset()
-: <a class="el" href="ins__mekf__wind_8h.html#ab69ff964e0f9cfb64fd898339e5eb304">ins_mekf_wind.h</a>
-, <a class="el" href="ins__mekf__wind_8cpp.html#ab69ff964e0f9cfb64fd898339e5eb304">ins_mekf_wind.cpp</a>
+: <a class="el" href="ins__mekf__wind_8cpp.html#ab69ff964e0f9cfb64fd898339e5eb304">ins_mekf_wind.cpp</a>
+, <a class="el" href="ins__mekf__wind_8h.html#ab69ff964e0f9cfb64fd898339e5eb304">ins_mekf_wind.h</a>
 </li>
 <li>ins_mekf_wind_set_mag_h()
-: <a class="el" href="ins__mekf__wind_8h.html#a62f16ef9a4913e28416a0f3117426f58">ins_mekf_wind.h</a>
-, <a class="el" href="ins__mekf__wind_8cpp.html#a62f16ef9a4913e28416a0f3117426f58">ins_mekf_wind.cpp</a>
+: <a class="el" href="ins__mekf__wind_8cpp.html#a62f16ef9a4913e28416a0f3117426f58">ins_mekf_wind.cpp</a>
+, <a class="el" href="ins__mekf__wind_8h.html#a62f16ef9a4913e28416a0f3117426f58">ins_mekf_wind.h</a>
 </li>
 <li>ins_mekf_wind_set_pos_ned()
-: <a class="el" href="ins__mekf__wind_8cpp.html#a2745aa4fd0279fe32dde79c0214dfd88">ins_mekf_wind.cpp</a>
-, <a class="el" href="ins__mekf__wind_8h.html#a2745aa4fd0279fe32dde79c0214dfd88">ins_mekf_wind.h</a>
+: <a class="el" href="ins__mekf__wind_8h.html#a2745aa4fd0279fe32dde79c0214dfd88">ins_mekf_wind.h</a>
+, <a class="el" href="ins__mekf__wind_8cpp.html#a2745aa4fd0279fe32dde79c0214dfd88">ins_mekf_wind.cpp</a>
 </li>
 <li>ins_mekf_wind_set_quat()
-: <a class="el" href="ins__mekf__wind_8h.html#a1205f7d0c733f2d8814be1d184ff22b8">ins_mekf_wind.h</a>
-, <a class="el" href="ins__mekf__wind_8cpp.html#a1205f7d0c733f2d8814be1d184ff22b8">ins_mekf_wind.cpp</a>
+: <a class="el" href="ins__mekf__wind_8cpp.html#a1205f7d0c733f2d8814be1d184ff22b8">ins_mekf_wind.cpp</a>
+, <a class="el" href="ins__mekf__wind_8h.html#a1205f7d0c733f2d8814be1d184ff22b8">ins_mekf_wind.h</a>
 </li>
 <li>ins_mekf_wind_set_speed_ned()
-: <a class="el" href="ins__mekf__wind_8h.html#a8de8f707089e1cb5dff858e667528b53">ins_mekf_wind.h</a>
-, <a class="el" href="ins__mekf__wind_8cpp.html#a8de8f707089e1cb5dff858e667528b53">ins_mekf_wind.cpp</a>
+: <a class="el" href="ins__mekf__wind_8cpp.html#a8de8f707089e1cb5dff858e667528b53">ins_mekf_wind.cpp</a>
+, <a class="el" href="ins__mekf__wind_8h.html#a8de8f707089e1cb5dff858e667528b53">ins_mekf_wind.h</a>
 </li>
 <li>ins_mekf_wind_update_airspeed()
 : <a class="el" href="ins__mekf__wind_8h.html#afdfdf88a99480e39d083b91293d5f59d">ins_mekf_wind.h</a>
 , <a class="el" href="ins__mekf__wind_8cpp.html#afdfdf88a99480e39d083b91293d5f59d">ins_mekf_wind.cpp</a>
 </li>
 <li>ins_mekf_wind_update_baro()
-: <a class="el" href="ins__mekf__wind_8h.html#a3148df145b5d66ffe5d4a944193e56ff">ins_mekf_wind.h</a>
-, <a class="el" href="ins__mekf__wind_8cpp.html#a3148df145b5d66ffe5d4a944193e56ff">ins_mekf_wind.cpp</a>
+: <a class="el" href="ins__mekf__wind_8cpp.html#a3148df145b5d66ffe5d4a944193e56ff">ins_mekf_wind.cpp</a>
+, <a class="el" href="ins__mekf__wind_8h.html#a3148df145b5d66ffe5d4a944193e56ff">ins_mekf_wind.h</a>
 </li>
 <li>ins_mekf_wind_update_incidence()
-: <a class="el" href="ins__mekf__wind_8h.html#a167ccc0370fc717d81220ec42ea19bf0">ins_mekf_wind.h</a>
-, <a class="el" href="ins__mekf__wind_8cpp.html#a167ccc0370fc717d81220ec42ea19bf0">ins_mekf_wind.cpp</a>
+: <a class="el" href="ins__mekf__wind_8cpp.html#a167ccc0370fc717d81220ec42ea19bf0">ins_mekf_wind.cpp</a>
+, <a class="el" href="ins__mekf__wind_8h.html#a167ccc0370fc717d81220ec42ea19bf0">ins_mekf_wind.h</a>
 </li>
 <li>ins_mekf_wind_update_mag()
-: <a class="el" href="ins__mekf__wind_8h.html#a922f115426eed533b257656573e39bfb">ins_mekf_wind.h</a>
-, <a class="el" href="ins__mekf__wind_8cpp.html#a922f115426eed533b257656573e39bfb">ins_mekf_wind.cpp</a>
+: <a class="el" href="ins__mekf__wind_8cpp.html#a922f115426eed533b257656573e39bfb">ins_mekf_wind.cpp</a>
+, <a class="el" href="ins__mekf__wind_8h.html#a922f115426eed533b257656573e39bfb">ins_mekf_wind.h</a>
 </li>
 <li>ins_mekf_wind_update_params()
-: <a class="el" href="ins__mekf__wind_8h.html#a5d5fb8d480ffcf01a121b3ba21d7e303">ins_mekf_wind.h</a>
-, <a class="el" href="ins__mekf__wind_8cpp.html#a5d5fb8d480ffcf01a121b3ba21d7e303">ins_mekf_wind.cpp</a>
+: <a class="el" href="ins__mekf__wind_8cpp.html#a5d5fb8d480ffcf01a121b3ba21d7e303">ins_mekf_wind.cpp</a>
+, <a class="el" href="ins__mekf__wind_8h.html#a5d5fb8d480ffcf01a121b3ba21d7e303">ins_mekf_wind.h</a>
 </li>
 <li>ins_mekf_wind_update_pos_speed()
-: <a class="el" href="ins__mekf__wind_8cpp.html#aff984846bfac2db36c89b764e9ed9f11">ins_mekf_wind.cpp</a>
-, <a class="el" href="ins__mekf__wind_8h.html#aff984846bfac2db36c89b764e9ed9f11">ins_mekf_wind.h</a>
+: <a class="el" href="ins__mekf__wind_8h.html#aff984846bfac2db36c89b764e9ed9f11">ins_mekf_wind.h</a>
+, <a class="el" href="ins__mekf__wind_8cpp.html#aff984846bfac2db36c89b764e9ed9f11">ins_mekf_wind.cpp</a>
 </li>
 <li>ins_mekf_wind_wrapper_init()
-: <a class="el" href="ins__mekf__wind__wrapper_8h.html#a7b3c1fefc89ec1a4ff25484626a02deb">ins_mekf_wind_wrapper.h</a>
-, <a class="el" href="ins__mekf__wind__wrapper_8c.html#a7b3c1fefc89ec1a4ff25484626a02deb">ins_mekf_wind_wrapper.c</a>
+: <a class="el" href="ins__mekf__wind__wrapper_8c.html#a7b3c1fefc89ec1a4ff25484626a02deb">ins_mekf_wind_wrapper.c</a>
+, <a class="el" href="ins__mekf__wind__wrapper_8h.html#a7b3c1fefc89ec1a4ff25484626a02deb">ins_mekf_wind_wrapper.h</a>
 </li>
 <li>ins_module_init()
-: <a class="el" href="ins__skeleton_8h.html#aa3ead89d81a382d54f8ead28804d4731">ins_skeleton.h</a>
-, <a class="el" href="ins__skeleton_8c.html#aa56482e32e97c2e358ca2cdd9293f5c0">ins_skeleton.c</a>
+: <a class="el" href="ins__skeleton_8c.html#aa56482e32e97c2e358ca2cdd9293f5c0">ins_skeleton.c</a>
+, <a class="el" href="ins__skeleton_8h.html#aa3ead89d81a382d54f8ead28804d4731">ins_skeleton.h</a>
 </li>
 <li>ins_module_propagate()
-: <a class="el" href="ins__skeleton_8h.html#af8f4d5bc7fb727602a67c65891f0cdd3">ins_skeleton.h</a>
-, <a class="el" href="ins__skeleton_8c.html#a0beee2dfe3232be75bafb5f5dbd4d3ef">ins_skeleton.c</a>
+: <a class="el" href="ins__skeleton_8c.html#a0beee2dfe3232be75bafb5f5dbd4d3ef">ins_skeleton.c</a>
+, <a class="el" href="ins__skeleton_8h.html#af8f4d5bc7fb727602a67c65891f0cdd3">ins_skeleton.h</a>
 </li>
 <li>ins_module_reset_local_origin()
 : <a class="el" href="ins__skeleton_8h.html#a6c6c7bda654669bba26d4ac11c0b0554">ins_skeleton.h</a>
 , <a class="el" href="ins__skeleton_8c.html#a2bd55249dfa83c5c38b83adb0d581697">ins_skeleton.c</a>
 </li>
 <li>ins_module_update_baro()
-: <a class="el" href="ins__skeleton_8h.html#a93da9ac2475400296cdb4f86fef2961f">ins_skeleton.h</a>
-, <a class="el" href="ins__skeleton_8c.html#a5a13ebcd773aea5e000360c190f06606">ins_skeleton.c</a>
+: <a class="el" href="ins__skeleton_8c.html#a5a13ebcd773aea5e000360c190f06606">ins_skeleton.c</a>
+, <a class="el" href="ins__skeleton_8h.html#a93da9ac2475400296cdb4f86fef2961f">ins_skeleton.h</a>
 </li>
 <li>ins_module_update_gps()
-: <a class="el" href="ins__skeleton_8h.html#a100e42fb6d9efadca6cf81fbd5d57103">ins_skeleton.h</a>
-, <a class="el" href="ins__skeleton_8c.html#ac73bf250ba772215adbe88d71bec0a8f">ins_skeleton.c</a>
+: <a class="el" href="ins__skeleton_8c.html#ac73bf250ba772215adbe88d71bec0a8f">ins_skeleton.c</a>
+, <a class="el" href="ins__skeleton_8h.html#a100e42fb6d9efadca6cf81fbd5d57103">ins_skeleton.h</a>
 </li>
 <li>ins_module_wrapper_init()
-: <a class="el" href="ins__skeleton_8h.html#a36545e3f7b1233bb331ff0952d01a9bc">ins_skeleton.h</a>
-, <a class="el" href="ins__skeleton_8c.html#a36545e3f7b1233bb331ff0952d01a9bc">ins_skeleton.c</a>
+: <a class="el" href="ins__skeleton_8c.html#a36545e3f7b1233bb331ff0952d01a9bc">ins_skeleton.c</a>
+, <a class="el" href="ins__skeleton_8h.html#a36545e3f7b1233bb331ff0952d01a9bc">ins_skeleton.h</a>
 </li>
 <li>ins_ned_to_state()
-: <a class="el" href="ins__skeleton_8c.html#a906e42c3bdc95d6fa78d129fbf20719e">ins_skeleton.c</a>
-, <a class="el" href="ins__int_8c.html#a906e42c3bdc95d6fa78d129fbf20719e">ins_int.c</a>
+: <a class="el" href="ins__int_8c.html#a906e42c3bdc95d6fa78d129fbf20719e">ins_int.c</a>
+, <a class="el" href="ins__skeleton_8c.html#a906e42c3bdc95d6fa78d129fbf20719e">ins_skeleton.c</a>
 </li>
 <li>ins_reset_altitude_ref()
-: <a class="el" href="ins__alt__float_8c.html#aa389e650ab7aa5a7f4650afde6358d86">ins_alt_float.c</a>
-, <a class="el" href="ins__int_8c.html#aa389e650ab7aa5a7f4650afde6358d86">ins_int.c</a>
-, <a class="el" href="ins_8h.html#aa389e650ab7aa5a7f4650afde6358d86">ins.h</a>
-, <a class="el" href="ins_8c.html#ae5812d701519ce3ab06eb1a7315cf4c3">ins.c</a>
-, <a class="el" href="ins__mekf__wind__wrapper_8c.html#aa389e650ab7aa5a7f4650afde6358d86">ins_mekf_wind_wrapper.c</a>
-, <a class="el" href="ins__gps__passthrough__utm_8c.html#aa389e650ab7aa5a7f4650afde6358d86">ins_gps_passthrough_utm.c</a>
-, <a class="el" href="ins__gps__passthrough_8c.html#aa389e650ab7aa5a7f4650afde6358d86">ins_gps_passthrough.c</a>
+: <a class="el" href="ins__mekf__wind__wrapper_8c.html#aa389e650ab7aa5a7f4650afde6358d86">ins_mekf_wind_wrapper.c</a>
+, <a class="el" href="ins__alt__float_8c.html#aa389e650ab7aa5a7f4650afde6358d86">ins_alt_float.c</a>
 , <a class="el" href="ins__float__invariant_8c.html#aa389e650ab7aa5a7f4650afde6358d86">ins_float_invariant.c</a>
+, <a class="el" href="ins__gps__passthrough__utm_8c.html#aa389e650ab7aa5a7f4650afde6358d86">ins_gps_passthrough_utm.c</a>
+, <a class="el" href="ins_8h.html#aa389e650ab7aa5a7f4650afde6358d86">ins.h</a>
+, <a class="el" href="ins__gps__passthrough_8c.html#aa389e650ab7aa5a7f4650afde6358d86">ins_gps_passthrough.c</a>
+, <a class="el" href="ins__int_8c.html#aa389e650ab7aa5a7f4650afde6358d86">ins_int.c</a>
+, <a class="el" href="ins_8c.html#ae5812d701519ce3ab06eb1a7315cf4c3">ins.c</a>
 </li>
 <li>ins_reset_local_origin()
-: <a class="el" href="ins__float__invariant_8c.html#a14cb66a86c67d8b9216a8c12f58c311b">ins_float_invariant.c</a>
-, <a class="el" href="ins__skeleton_8c.html#a14cb66a86c67d8b9216a8c12f58c311b">ins_skeleton.c</a>
-, <a class="el" href="ins__gps__passthrough__utm_8c.html#a14cb66a86c67d8b9216a8c12f58c311b">ins_gps_passthrough_utm.c</a>
-, <a class="el" href="ins__int_8c.html#a14cb66a86c67d8b9216a8c12f58c311b">ins_int.c</a>
+: <a class="el" href="ins__int_8c.html#a14cb66a86c67d8b9216a8c12f58c311b">ins_int.c</a>
+, <a class="el" href="ins__mekf__wind__wrapper_8c.html#a14cb66a86c67d8b9216a8c12f58c311b">ins_mekf_wind_wrapper.c</a>
+, <a class="el" href="ins__alt__float_8c.html#a14cb66a86c67d8b9216a8c12f58c311b">ins_alt_float.c</a>
 , <a class="el" href="ins__gps__passthrough_8c.html#a14cb66a86c67d8b9216a8c12f58c311b">ins_gps_passthrough.c</a>
 , <a class="el" href="ins_8h.html#a14cb66a86c67d8b9216a8c12f58c311b">ins.h</a>
-, <a class="el" href="ins__alt__float_8c.html#a14cb66a86c67d8b9216a8c12f58c311b">ins_alt_float.c</a>
-, <a class="el" href="ins__mekf__wind__wrapper_8c.html#a14cb66a86c67d8b9216a8c12f58c311b">ins_mekf_wind_wrapper.c</a>
 , <a class="el" href="ins_8c.html#a85e5ab8dd68db02c9d4120a1151a0c34">ins.c</a>
+, <a class="el" href="ins__skeleton_8c.html#a14cb66a86c67d8b9216a8c12f58c311b">ins_skeleton.c</a>
+, <a class="el" href="ins__gps__passthrough__utm_8c.html#a14cb66a86c67d8b9216a8c12f58c311b">ins_gps_passthrough_utm.c</a>
+, <a class="el" href="ins__float__invariant_8c.html#a14cb66a86c67d8b9216a8c12f58c311b">ins_float_invariant.c</a>
 </li>
 <li>ins_reset_utm_zone()
 : <a class="el" href="ins_8c.html#af108226ec7957a145cb2c57ab14e6da7">ins.c</a>
@@ -1408,46 +1441,46 @@ $(document).ready(function(){initNavTree('globals_func_i.html','');});
 : <a class="el" href="ins__int_8c.html#a1c58640eca6d3495200de79b4daf134c">ins_int.c</a>
 </li>
 <li>ins_vectornav_event()
-: <a class="el" href="ins__vectornav_8h.html#abcd265b9bfefa88327260439223dba81">ins_vectornav.h</a>
+: <a class="el" href="ins__vectornav_8c.html#abcd265b9bfefa88327260439223dba81">ins_vectornav.c</a>
 , <a class="el" href="nps__ins__vectornav_8c.html#abcd265b9bfefa88327260439223dba81">nps_ins_vectornav.c</a>
-, <a class="el" href="ins__vectornav_8c.html#abcd265b9bfefa88327260439223dba81">ins_vectornav.c</a>
+, <a class="el" href="ins__vectornav_8h.html#abcd265b9bfefa88327260439223dba81">ins_vectornav.h</a>
 </li>
 <li>ins_vectornav_init()
-: <a class="el" href="ins__vectornav_8c.html#abccde82fac73ee723125e1173db630c0">ins_vectornav.c</a>
+: <a class="el" href="ins__vectornav_8h.html#abccde82fac73ee723125e1173db630c0">ins_vectornav.h</a>
 , <a class="el" href="nps__ins__vectornav_8c.html#abccde82fac73ee723125e1173db630c0">nps_ins_vectornav.c</a>
-, <a class="el" href="ins__vectornav_8h.html#abccde82fac73ee723125e1173db630c0">ins_vectornav.h</a>
+, <a class="el" href="ins__vectornav_8c.html#abccde82fac73ee723125e1173db630c0">ins_vectornav.c</a>
 </li>
 <li>ins_vectornav_monitor()
-: <a class="el" href="ins__vectornav_8h.html#a25be2b67f35841f9acc152964a014471">ins_vectornav.h</a>
-, <a class="el" href="ins__vectornav_8c.html#a25be2b67f35841f9acc152964a014471">ins_vectornav.c</a>
+: <a class="el" href="ins__vectornav_8c.html#a25be2b67f35841f9acc152964a014471">ins_vectornav.c</a>
+, <a class="el" href="ins__vectornav_8h.html#a25be2b67f35841f9acc152964a014471">ins_vectornav.h</a>
 </li>
 <li>ins_vectornav_propagate()
-: <a class="el" href="ins__vectornav_8h.html#a5e1e0a3cd2eead4dc89bec75e33e5618">ins_vectornav.h</a>
-, <a class="el" href="ins__vectornav_8c.html#ae1d4d184cac70cb0b57f1c291fbacb04">ins_vectornav.c</a>
+: <a class="el" href="ins__vectornav_8c.html#ae1d4d184cac70cb0b57f1c291fbacb04">ins_vectornav.c</a>
+, <a class="el" href="ins__vectornav_8h.html#a5e1e0a3cd2eead4dc89bec75e33e5618">ins_vectornav.h</a>
 </li>
 <li>ins_vectornav_set_pacc()
 : <a class="el" href="ins__vectornav_8c.html#a48605f7fd6e8e6f51c0bc9afc2121ce8">ins_vectornav.c</a>
 , <a class="el" href="ins__vectornav_8h.html#a48605f7fd6e8e6f51c0bc9afc2121ce8">ins_vectornav.h</a>
 </li>
 <li>ins_vectornav_set_sacc()
-: <a class="el" href="ins__vectornav_8h.html#a7bf18e5ab81e5a59a5e68c19fe375f72">ins_vectornav.h</a>
-, <a class="el" href="ins__vectornav_8c.html#a7bf18e5ab81e5a59a5e68c19fe375f72">ins_vectornav.c</a>
+: <a class="el" href="ins__vectornav_8c.html#a7bf18e5ab81e5a59a5e68c19fe375f72">ins_vectornav.c</a>
+, <a class="el" href="ins__vectornav_8h.html#a7bf18e5ab81e5a59a5e68c19fe375f72">ins_vectornav.h</a>
 </li>
 <li>ins_xsens700_event()
-: <a class="el" href="ins__xsens700_8h.html#af5b103447ab6c24b2ad38714d258b262">ins_xsens700.h</a>
-, <a class="el" href="ins__xsens700_8c.html#af5b103447ab6c24b2ad38714d258b262">ins_xsens700.c</a>
+: <a class="el" href="ins__xsens700_8c.html#af5b103447ab6c24b2ad38714d258b262">ins_xsens700.c</a>
+, <a class="el" href="ins__xsens700_8h.html#af5b103447ab6c24b2ad38714d258b262">ins_xsens700.h</a>
 </li>
 <li>ins_xsens700_init()
-: <a class="el" href="ins__xsens700_8h.html#a64e4b82474cd276233aa574b26c41443">ins_xsens700.h</a>
-, <a class="el" href="ins__xsens700_8c.html#a64e4b82474cd276233aa574b26c41443">ins_xsens700.c</a>
+: <a class="el" href="ins__xsens700_8c.html#a64e4b82474cd276233aa574b26c41443">ins_xsens700.c</a>
+, <a class="el" href="ins__xsens700_8h.html#a64e4b82474cd276233aa574b26c41443">ins_xsens700.h</a>
 </li>
 <li>ins_xsens_event()
 : <a class="el" href="ins__xsens_8h.html#a8bfad9d883f0f0c3b3f3ae57a0d8e775">ins_xsens.h</a>
 , <a class="el" href="ins__xsens_8c.html#a8bfad9d883f0f0c3b3f3ae57a0d8e775">ins_xsens.c</a>
 </li>
 <li>ins_xsens_init()
-: <a class="el" href="ins__xsens_8h.html#a20c9835f49df2ea11e85e95c53d8ab2c">ins_xsens.h</a>
-, <a class="el" href="ins__xsens_8c.html#a20c9835f49df2ea11e85e95c53d8ab2c">ins_xsens.c</a>
+: <a class="el" href="ins__xsens_8c.html#a20c9835f49df2ea11e85e95c53d8ab2c">ins_xsens.c</a>
+, <a class="el" href="ins__xsens_8h.html#a20c9835f49df2ea11e85e95c53d8ab2c">ins_xsens.h</a>
 </li>
 <li>insert_byte()
 : <a class="el" href="gec__dl_8c.html#ad77bf8d1a98ce4634bfe6abdc621e8c7">gec_dl.c</a>
@@ -1461,12 +1494,12 @@ $(document).ready(function(){initNavTree('globals_func_i.html','');});
 , <a class="el" href="pprz__trig__int_8h.html#a819fd8c37d7553e4ad43e32acbe43ea5">pprz_trig_int.h</a>
 </li>
 <li>int32_eulers_dot_321_of_rates()
-: <a class="el" href="group__math__algebra__int.html#ga4dc3d6b30a0f375edc5b47bd0a952d8f">pprz_algebra_int.h</a>
-, <a class="el" href="group__math__algebra__int.html#ga4dc3d6b30a0f375edc5b47bd0a952d8f">pprz_algebra_int.c</a>
+: <a class="el" href="group__math__algebra__int.html#ga4dc3d6b30a0f375edc5b47bd0a952d8f">pprz_algebra_int.c</a>
+, <a class="el" href="group__math__algebra__int.html#ga4dc3d6b30a0f375edc5b47bd0a952d8f">pprz_algebra_int.h</a>
 </li>
 <li>int32_eulers_of_quat()
-: <a class="el" href="group__math__algebra__int.html#ga02ccc32cb7b533e0c7cf18140fb7104e">pprz_algebra_int.c</a>
-, <a class="el" href="group__math__algebra__int.html#ga02ccc32cb7b533e0c7cf18140fb7104e">pprz_algebra_int.h</a>
+: <a class="el" href="group__math__algebra__int.html#ga02ccc32cb7b533e0c7cf18140fb7104e">pprz_algebra_int.h</a>
+, <a class="el" href="group__math__algebra__int.html#ga02ccc32cb7b533e0c7cf18140fb7104e">pprz_algebra_int.c</a>
 </li>
 <li>int32_eulers_of_rmat()
 : <a class="el" href="group__math__algebra__int.html#gaf2f61a27841c68cefbd27a8614fcd90e">pprz_algebra_int.h</a>
@@ -1480,20 +1513,20 @@ $(document).ready(function(){initNavTree('globals_func_i.html','');});
 : <a class="el" href="group__math__algebra__int.html#ga1b8a96d2bc110a02687e8f044394431d">pprz_algebra_int.h</a>
 </li>
 <li>int32_quat_comp()
-: <a class="el" href="group__math__algebra__int.html#ga04fe6ffb1b86afc85f91b2a07e224739">pprz_algebra_int.h</a>
-, <a class="el" href="group__math__algebra__int.html#ga04fe6ffb1b86afc85f91b2a07e224739">pprz_algebra_int.c</a>
+: <a class="el" href="group__math__algebra__int.html#ga04fe6ffb1b86afc85f91b2a07e224739">pprz_algebra_int.c</a>
+, <a class="el" href="group__math__algebra__int.html#ga04fe6ffb1b86afc85f91b2a07e224739">pprz_algebra_int.h</a>
 </li>
 <li>int32_quat_comp_inv()
-: <a class="el" href="group__math__algebra__int.html#ga6102185fc581099e1e256c3df37fd08d">pprz_algebra_int.h</a>
-, <a class="el" href="group__math__algebra__int.html#ga6102185fc581099e1e256c3df37fd08d">pprz_algebra_int.c</a>
+: <a class="el" href="group__math__algebra__int.html#ga6102185fc581099e1e256c3df37fd08d">pprz_algebra_int.c</a>
+, <a class="el" href="group__math__algebra__int.html#ga6102185fc581099e1e256c3df37fd08d">pprz_algebra_int.h</a>
 </li>
 <li>int32_quat_comp_inv_norm_shortest()
 : <a class="el" href="group__math__algebra__int.html#ga6690b9bed5e7eb9f5c3ee6db7951e09b">pprz_algebra_int.c</a>
 , <a class="el" href="group__math__algebra__int.html#ga6690b9bed5e7eb9f5c3ee6db7951e09b">pprz_algebra_int.h</a>
 </li>
 <li>int32_quat_comp_norm_shortest()
-: <a class="el" href="group__math__algebra__int.html#ga375ede60f5f4419d92fa4cb901c6691a">pprz_algebra_int.h</a>
-, <a class="el" href="group__math__algebra__int.html#ga375ede60f5f4419d92fa4cb901c6691a">pprz_algebra_int.c</a>
+: <a class="el" href="group__math__algebra__int.html#ga375ede60f5f4419d92fa4cb901c6691a">pprz_algebra_int.c</a>
+, <a class="el" href="group__math__algebra__int.html#ga375ede60f5f4419d92fa4cb901c6691a">pprz_algebra_int.h</a>
 </li>
 <li>int32_quat_derivative()
 : <a class="el" href="group__math__algebra__int.html#ga90e7e0443a18285afae399ee6fdfe29e">pprz_algebra_int.h</a>
@@ -1503,8 +1536,8 @@ $(document).ready(function(){initNavTree('globals_func_i.html','');});
 : <a class="el" href="group__math__algebra__int.html#ga698f3fc474f66517868238f6f6b08fca">pprz_algebra_int.h</a>
 </li>
 <li>int32_quat_integrate_fi()
-: <a class="el" href="group__math__algebra__int.html#ga8d5b932f03cb090e7a2cee0e977887cf">pprz_algebra_int.h</a>
-, <a class="el" href="group__math__algebra__int.html#ga8d5b932f03cb090e7a2cee0e977887cf">pprz_algebra_int.c</a>
+: <a class="el" href="group__math__algebra__int.html#ga8d5b932f03cb090e7a2cee0e977887cf">pprz_algebra_int.c</a>
+, <a class="el" href="group__math__algebra__int.html#ga8d5b932f03cb090e7a2cee0e977887cf">pprz_algebra_int.h</a>
 </li>
 <li>int32_quat_inv_comp()
 : <a class="el" href="group__math__algebra__int.html#gae4cd7dd8ca63cfe3aed0eb7c3857ac9a">pprz_algebra_int.h</a>
@@ -1525,27 +1558,27 @@ $(document).ready(function(){initNavTree('globals_func_i.html','');});
 , <a class="el" href="group__math__algebra__int.html#ga06f4bef8def41e152f6f7bacaf3b99c7">pprz_algebra_int.h</a>
 </li>
 <li>int32_quat_of_eulers()
-: <a class="el" href="group__math__algebra__int.html#gab3d8478211bf7da23d2345e8eae43fc8">pprz_algebra_int.h</a>
-, <a class="el" href="group__math__algebra__int.html#gab3d8478211bf7da23d2345e8eae43fc8">pprz_algebra_int.c</a>
+: <a class="el" href="group__math__algebra__int.html#gab3d8478211bf7da23d2345e8eae43fc8">pprz_algebra_int.c</a>
+, <a class="el" href="group__math__algebra__int.html#gab3d8478211bf7da23d2345e8eae43fc8">pprz_algebra_int.h</a>
 </li>
 <li>int32_quat_of_rmat()
 : <a class="el" href="group__math__algebra__int.html#ga492c7dfcb9089c8bdb0d20d89089b542">pprz_algebra_int.h</a>
 , <a class="el" href="group__math__algebra__int.html#ga492c7dfcb9089c8bdb0d20d89089b542">pprz_algebra_int.c</a>
 </li>
 <li>int32_quat_vmult()
-: <a class="el" href="group__math__algebra__int.html#gaaff21c8123f18d9cc35a508791489263">pprz_algebra_int.c</a>
-, <a class="el" href="group__math__algebra__int.html#gaaff21c8123f18d9cc35a508791489263">pprz_algebra_int.h</a>
+: <a class="el" href="group__math__algebra__int.html#gaaff21c8123f18d9cc35a508791489263">pprz_algebra_int.h</a>
+, <a class="el" href="group__math__algebra__int.html#gaaff21c8123f18d9cc35a508791489263">pprz_algebra_int.c</a>
 </li>
 <li>int32_quat_wrap_shortest()
 : <a class="el" href="group__math__algebra__int.html#ga7af214127cdc156466db26fd3497ce84">pprz_algebra_int.h</a>
 </li>
 <li>int32_rates_of_eulers_dot_321()
-: <a class="el" href="group__math__algebra__int.html#gac46fece6cf53295de12eb798670b72ee">pprz_algebra_int.h</a>
-, <a class="el" href="group__math__algebra__int.html#gac46fece6cf53295de12eb798670b72ee">pprz_algebra_int.c</a>
+: <a class="el" href="group__math__algebra__int.html#gac46fece6cf53295de12eb798670b72ee">pprz_algebra_int.c</a>
+, <a class="el" href="group__math__algebra__int.html#gac46fece6cf53295de12eb798670b72ee">pprz_algebra_int.h</a>
 </li>
 <li>int32_rmat_comp()
-: <a class="el" href="group__math__algebra__int.html#ga80cce14dbe330898e413a22b93aef001">pprz_algebra_int.c</a>
-, <a class="el" href="group__math__algebra__int.html#ga80cce14dbe330898e413a22b93aef001">pprz_algebra_int.h</a>
+: <a class="el" href="group__math__algebra__int.html#ga80cce14dbe330898e413a22b93aef001">pprz_algebra_int.h</a>
+, <a class="el" href="group__math__algebra__int.html#ga80cce14dbe330898e413a22b93aef001">pprz_algebra_int.c</a>
 </li>
 <li>int32_rmat_comp_inv()
 : <a class="el" href="group__math__algebra__int.html#gadbf4a084e251dce16dccb5df6afa384d">pprz_algebra_int.h</a>
@@ -1559,32 +1592,32 @@ $(document).ready(function(){initNavTree('globals_func_i.html','');});
 , <a class="el" href="group__math__algebra__int.html#ga8196df28de9df908603851124170e2f0">pprz_algebra_int.c</a>
 </li>
 <li>int32_rmat_of_eulers_321()
-: <a class="el" href="group__math__algebra__int.html#gad4cbdc80c8904b9311665840799e31c0">pprz_algebra_int.h</a>
-, <a class="el" href="group__math__algebra__int.html#gad4cbdc80c8904b9311665840799e31c0">pprz_algebra_int.c</a>
+: <a class="el" href="group__math__algebra__int.html#gad4cbdc80c8904b9311665840799e31c0">pprz_algebra_int.c</a>
+, <a class="el" href="group__math__algebra__int.html#gad4cbdc80c8904b9311665840799e31c0">pprz_algebra_int.h</a>
 </li>
 <li>int32_rmat_of_quat()
-: <a class="el" href="group__math__algebra__int.html#ga3cee8bb86ebb6befea5e2b4a97b3326f">pprz_algebra_int.c</a>
-, <a class="el" href="group__math__algebra__int.html#ga3cee8bb86ebb6befea5e2b4a97b3326f">pprz_algebra_int.h</a>
+: <a class="el" href="group__math__algebra__int.html#ga3cee8bb86ebb6befea5e2b4a97b3326f">pprz_algebra_int.h</a>
+, <a class="el" href="group__math__algebra__int.html#ga3cee8bb86ebb6befea5e2b4a97b3326f">pprz_algebra_int.c</a>
 </li>
 <li>int32_rmat_ratemult()
 : <a class="el" href="group__math__algebra__int.html#ga096a77a63bed82d66dbf3aa73b947dd5">pprz_algebra_int.h</a>
 , <a class="el" href="group__math__algebra__int.html#ga096a77a63bed82d66dbf3aa73b947dd5">pprz_algebra_int.c</a>
 </li>
 <li>int32_rmat_transp_ratemult()
-: <a class="el" href="group__math__algebra__int.html#ga7d9bca983887baf028c121876125efcf">pprz_algebra_int.c</a>
-, <a class="el" href="group__math__algebra__int.html#ga7d9bca983887baf028c121876125efcf">pprz_algebra_int.h</a>
+: <a class="el" href="group__math__algebra__int.html#ga7d9bca983887baf028c121876125efcf">pprz_algebra_int.h</a>
+, <a class="el" href="group__math__algebra__int.html#ga7d9bca983887baf028c121876125efcf">pprz_algebra_int.c</a>
 </li>
 <li>int32_rmat_transp_vmult()
-: <a class="el" href="group__math__algebra__int.html#gac992f3c60c036759941405f6e754b55b">pprz_algebra_int.c</a>
-, <a class="el" href="group__math__algebra__int.html#gac992f3c60c036759941405f6e754b55b">pprz_algebra_int.h</a>
+: <a class="el" href="group__math__algebra__int.html#gac992f3c60c036759941405f6e754b55b">pprz_algebra_int.h</a>
+, <a class="el" href="group__math__algebra__int.html#gac992f3c60c036759941405f6e754b55b">pprz_algebra_int.c</a>
 </li>
 <li>int32_rmat_vmult()
-: <a class="el" href="group__math__algebra__int.html#ga6298f55d272675b9b71dcb3fcbcf4a8a">pprz_algebra_int.c</a>
-, <a class="el" href="group__math__algebra__int.html#ga6298f55d272675b9b71dcb3fcbcf4a8a">pprz_algebra_int.h</a>
+: <a class="el" href="group__math__algebra__int.html#ga6298f55d272675b9b71dcb3fcbcf4a8a">pprz_algebra_int.h</a>
+, <a class="el" href="group__math__algebra__int.html#ga6298f55d272675b9b71dcb3fcbcf4a8a">pprz_algebra_int.c</a>
 </li>
 <li>int32_sqrt()
-: <a class="el" href="group__math__algebra__int.html#ga4f101a6e0a22ac1b90f36fe8bf97d702">pprz_algebra_int.h</a>
-, <a class="el" href="group__math__algebra__int.html#ga4f101a6e0a22ac1b90f36fe8bf97d702">pprz_algebra_int.c</a>
+: <a class="el" href="group__math__algebra__int.html#ga4f101a6e0a22ac1b90f36fe8bf97d702">pprz_algebra_int.c</a>
+, <a class="el" href="group__math__algebra__int.html#ga4f101a6e0a22ac1b90f36fe8bf97d702">pprz_algebra_int.h</a>
 </li>
 <li>int32_vect2_norm()
 : <a class="el" href="group__math__algebra__int.html#ga7e0cea5a49210d843282259d0a40d8e0">pprz_algebra_int.h</a>
@@ -1626,8 +1659,8 @@ $(document).ready(function(){initNavTree('globals_func_i.html','');});
 : <a class="el" href="group__math__algebra__int.html#ga848db4ffefdcaad9fe4d6fe50df6e983">pprz_algebra_int.h</a>
 </li>
 <li>inter_mcu_event_handle()
-: <a class="el" href="fixedwing_2main__fbw_8h.html#ade69c0df0a2e17f01e5d7e86e34253f7">main_fbw.h</a>
-, <a class="el" href="fixedwing_2main__fbw_8c.html#ade69c0df0a2e17f01e5d7e86e34253f7">main_fbw.c</a>
+: <a class="el" href="fixedwing_2main__fbw_8c.html#ade69c0df0a2e17f01e5d7e86e34253f7">main_fbw.c</a>
+, <a class="el" href="fixedwing_2main__fbw_8h.html#ade69c0df0a2e17f01e5d7e86e34253f7">main_fbw.h</a>
 </li>
 <li>inter_mcu_periodic_handle()
 : <a class="el" href="fixedwing_2main__fbw_8c.html#add259a09eae92eaeb0742bd6ea25ab12">main_fbw.c</a>
@@ -1637,53 +1670,53 @@ $(document).ready(function(){initNavTree('globals_func_i.html','');});
 : <a class="el" href="nav__survey__polygon_8c.html#a934f329cc92cf420cdc235ce4e33795e">nav_survey_polygon.c</a>
 </li>
 <li>intermcu_init()
-: <a class="el" href="intermcu__fbw_8c.html#af5ff84589199efa9195c642a64024b40">intermcu_fbw.c</a>
+: <a class="el" href="intermcu_8h.html#af5ff84589199efa9195c642a64024b40">intermcu.h</a>
+, <a class="el" href="intermcu__fbw_8c.html#af5ff84589199efa9195c642a64024b40">intermcu_fbw.c</a>
 , <a class="el" href="intermcu__ap_8c.html#af5ff84589199efa9195c642a64024b40">intermcu_ap.c</a>
-, <a class="el" href="intermcu_8h.html#af5ff84589199efa9195c642a64024b40">intermcu.h</a>
 </li>
 <li>intermcu_on_rc_frame()
-: <a class="el" href="intermcu__fbw_8h.html#aa60e278348807df613abfa9ba8663503">intermcu_fbw.h</a>
-, <a class="el" href="intermcu__fbw_8c.html#aa60e278348807df613abfa9ba8663503">intermcu_fbw.c</a>
+: <a class="el" href="intermcu__fbw_8c.html#aa60e278348807df613abfa9ba8663503">intermcu_fbw.c</a>
+, <a class="el" href="intermcu__fbw_8h.html#aa60e278348807df613abfa9ba8663503">intermcu_fbw.h</a>
 </li>
 <li>intermcu_parse()
 : <a class="el" href="link__mcu__usart_8c.html#a59e225c41b5535caabbc56b987632f66">link_mcu_usart.c</a>
 </li>
 <li>intermcu_parse_msg()
-: <a class="el" href="intermcu__fbw_8c.html#a335ac55e41c48ae94a03a8a17c0af5d8">intermcu_fbw.c</a>
-, <a class="el" href="intermcu__ap_8c.html#a604cff1ebc93899fae5ce75bc77ae7e9">intermcu_ap.c</a>
+: <a class="el" href="intermcu__ap_8c.html#a604cff1ebc93899fae5ce75bc77ae7e9">intermcu_ap.c</a>
+, <a class="el" href="intermcu__fbw_8c.html#a335ac55e41c48ae94a03a8a17c0af5d8">intermcu_fbw.c</a>
 </li>
 <li>intermcu_periodic()
 : <a class="el" href="intermcu__ap_8c.html#a0bb20e4869889dcee9e118f83957f92a">intermcu_ap.c</a>
-, <a class="el" href="intermcu_8h.html#a0bb20e4869889dcee9e118f83957f92a">intermcu.h</a>
 , <a class="el" href="intermcu__fbw_8c.html#a0bb20e4869889dcee9e118f83957f92a">intermcu_fbw.c</a>
+, <a class="el" href="intermcu_8h.html#a0bb20e4869889dcee9e118f83957f92a">intermcu.h</a>
 </li>
 <li>intermcu_send_spektrum_bind()
 : <a class="el" href="intermcu__ap_8h.html#a609bd43c94c68e55513f2c65cf8447cd">intermcu_ap.h</a>
 , <a class="el" href="intermcu__ap_8c.html#a609bd43c94c68e55513f2c65cf8447cd">intermcu_ap.c</a>
 </li>
 <li>intermcu_send_status()
-: <a class="el" href="intermcu__fbw_8c.html#abbadcd4c86e9907fc3f28610b0ef6de1">intermcu_fbw.c</a>
-, <a class="el" href="intermcu__fbw_8h.html#abbadcd4c86e9907fc3f28610b0ef6de1">intermcu_fbw.h</a>
+: <a class="el" href="intermcu__fbw_8h.html#abbadcd4c86e9907fc3f28610b0ef6de1">intermcu_fbw.h</a>
+, <a class="el" href="intermcu__fbw_8c.html#abbadcd4c86e9907fc3f28610b0ef6de1">intermcu_fbw.c</a>
 </li>
 <li>intermcu_set_actuators()
-: <a class="el" href="intermcu__ap_8c.html#ac22ebae188091108a7882dfebceb1c6c">intermcu_ap.c</a>
-, <a class="el" href="intermcu__ap_8h.html#ac22ebae188091108a7882dfebceb1c6c">intermcu_ap.h</a>
+: <a class="el" href="intermcu__ap_8h.html#ac22ebae188091108a7882dfebceb1c6c">intermcu_ap.h</a>
+, <a class="el" href="intermcu__ap_8c.html#ac22ebae188091108a7882dfebceb1c6c">intermcu_ap.c</a>
 </li>
 <li>intermcu_set_enabled()
 : <a class="el" href="intermcu__ap_8h.html#a93c1caa54aaade98a45ffc18f7406a6f">intermcu_ap.h</a>
 , <a class="el" href="intermcu__ap_8c.html#a93c1caa54aaade98a45ffc18f7406a6f">intermcu_ap.c</a>
 </li>
 <li>InterMcuEvent()
-: <a class="el" href="intermcu__fbw_8c.html#a33141c0ab91bcac2e0d5862739d728aa">intermcu_fbw.c</a>
-, <a class="el" href="intermcu__fbw_8h.html#a33141c0ab91bcac2e0d5862739d728aa">intermcu_fbw.h</a>
+: <a class="el" href="intermcu__fbw_8h.html#a33141c0ab91bcac2e0d5862739d728aa">intermcu_fbw.h</a>
+, <a class="el" href="intermcu__fbw_8c.html#a33141c0ab91bcac2e0d5862739d728aa">intermcu_fbw.c</a>
 </li>
 <li>intersection_boxes()
-: <a class="el" href="snake__gate__detection_8c.html#a1dc48b4673a3131cf83a0d0692c95183">snake_gate_detection.c</a>
-, <a class="el" href="snake__gate__detection_8h.html#a1dc48b4673a3131cf83a0d0692c95183">snake_gate_detection.h</a>
+: <a class="el" href="snake__gate__detection_8h.html#a1dc48b4673a3131cf83a0d0692c95183">snake_gate_detection.h</a>
+, <a class="el" href="snake__gate__detection_8c.html#a1dc48b4673a3131cf83a0d0692c95183">snake_gate_detection.c</a>
 </li>
 <li>intersection_over_union()
-: <a class="el" href="snake__gate__detection_8c.html#aebc98e80a4263c1220b508a0a3ca975a">snake_gate_detection.c</a>
-, <a class="el" href="snake__gate__detection_8h.html#aebc98e80a4263c1220b508a0a3ca975a">snake_gate_detection.h</a>
+: <a class="el" href="snake__gate__detection_8h.html#aebc98e80a4263c1220b508a0a3ca975a">snake_gate_detection.h</a>
+, <a class="el" href="snake__gate__detection_8c.html#aebc98e80a4263c1220b508a0a3ca975a">snake_gate_detection.c</a>
 </li>
 <li>invariant_model()
 : <a class="el" href="ahrs__float__invariant_8c.html#a8f6d3b43296e7262f60dbe9083ff92f1">ahrs_float_invariant.c</a>
@@ -1699,28 +1732,34 @@ $(document).ready(function(){initNavTree('globals_func_i.html','');});
 : <a class="el" href="sim__ir_8c.html#a81e0ed18d453a87b0260260516565713">sim_ir.c</a>
 </li>
 <li>ir_mlx_crc()
-: <a class="el" href="ir__mlx_8c.html#abec14daa20f3cc4623a14a5a3d9d67f0">ir_mlx.c</a>
-, <a class="el" href="ir__mlx_8h.html#abec14daa20f3cc4623a14a5a3d9d67f0">ir_mlx.h</a>
+: <a class="el" href="ir__mlx_8h.html#abec14daa20f3cc4623a14a5a3d9d67f0">ir_mlx.h</a>
+, <a class="el" href="ir__mlx_8c.html#abec14daa20f3cc4623a14a5a3d9d67f0">ir_mlx.c</a>
 </li>
 <li>ir_mlx_event()
-: <a class="el" href="ir__mlx_8h.html#a0097058c5ba263b0ba9c61611ab05b65">ir_mlx.h</a>
-, <a class="el" href="ir__mlx_8c.html#a0097058c5ba263b0ba9c61611ab05b65">ir_mlx.c</a>
+: <a class="el" href="ir__mlx_8c.html#a0097058c5ba263b0ba9c61611ab05b65">ir_mlx.c</a>
+, <a class="el" href="ir__mlx_8h.html#a0097058c5ba263b0ba9c61611ab05b65">ir_mlx.h</a>
 </li>
 <li>ir_mlx_init()
 : <a class="el" href="ir__mlx_8c.html#a49e78943609681665f3b25d276746fba">ir_mlx.c</a>
 , <a class="el" href="ir__mlx_8h.html#a49e78943609681665f3b25d276746fba">ir_mlx.h</a>
 </li>
 <li>ir_mlx_periodic()
-: <a class="el" href="ir__mlx_8c.html#a04ee1c3eac1d77cc60f05955f5f4e5f2">ir_mlx.c</a>
-, <a class="el" href="ir__mlx_8h.html#a04ee1c3eac1d77cc60f05955f5f4e5f2">ir_mlx.h</a>
+: <a class="el" href="ir__mlx_8h.html#a04ee1c3eac1d77cc60f05955f5f4e5f2">ir_mlx.h</a>
+, <a class="el" href="ir__mlx_8c.html#a04ee1c3eac1d77cc60f05955f5f4e5f2">ir_mlx.c</a>
 </li>
 <li>is_card_inserted()
 : <a class="el" href="sdio_8h.html#a46b5eac7cb18806fb22adf89e65141e1">sdio.h</a>
 , <a class="el" href="sdio__arch_8c.html#a46b5eac7cb18806fb22adf89e65141e1">sdio_arch.c</a>
 </li>
+<li>is_heading_reached()
+: <a class="el" href="wedgebug_8c.html#a1975332f6276948cb0992ca7e646303c">wedgebug.c</a>
+</li>
 <li>is_sequence_in_array()
-: <a class="el" href="high__speed__logger__direct__memory_8c.html#ac6e29eff80626c1009b7f6634e468cd6">high_speed_logger_direct_memory.c</a>
-, <a class="el" href="high__speed__logger__direct__memory_8h.html#ac6e29eff80626c1009b7f6634e468cd6">high_speed_logger_direct_memory.h</a>
+: <a class="el" href="high__speed__logger__direct__memory_8h.html#ac6e29eff80626c1009b7f6634e468cd6">high_speed_logger_direct_memory.h</a>
+, <a class="el" href="high__speed__logger__direct__memory_8c.html#ac6e29eff80626c1009b7f6634e468cd6">high_speed_logger_direct_memory.c</a>
+</li>
+<li>is_setpoint_reached()
+: <a class="el" href="wedgebug_8c.html#a0e2b9eecc290f6306468701ad0668821">wedgebug.c</a>
 </li>
 <li>isometric_latitude_d()
 : <a class="el" href="pprz__geodetic__double_8c.html#a4e6981a579464b9dcb9a7ea51bd184b0">pprz_geodetic_double.c</a>
@@ -1735,8 +1774,8 @@ $(document).ready(function(){initNavTree('globals_func_i.html','');});
 : <a class="el" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24">pprz_geodetic_float.c</a>
 </li>
 <li>isp_get_statistics_yuv()
-: <a class="el" href="libisp_8c.html#a5421e059846fd80e5f6bf1bd3ae1bb45">libisp.c</a>
-, <a class="el" href="libisp_8h.html#a5421e059846fd80e5f6bf1bd3ae1bb45">libisp.h</a>
+: <a class="el" href="libisp_8h.html#a5421e059846fd80e5f6bf1bd3ae1bb45">libisp.h</a>
+, <a class="el" href="libisp_8c.html#a5421e059846fd80e5f6bf1bd3ae1bb45">libisp.c</a>
 </li>
 <li>isp_request_statistics_yuv_window()
 : <a class="el" href="libisp_8c.html#aac3aeb2b663a02fd97e27007bbfbb95e">libisp.c</a>
@@ -1746,23 +1785,26 @@ $(document).ready(function(){initNavTree('globals_func_i.html','');});
 : <a class="el" href="libisp_8c.html#a6a238c4b9844e41ce7a5f26f7725d5ee">libisp.c</a>
 </li>
 <li>ist8310_configure()
-: <a class="el" href="ist8310_8h.html#aa1737e8d057bc690430200d38515de8a">ist8310.h</a>
-, <a class="el" href="ist8310_8c.html#aa1737e8d057bc690430200d38515de8a">ist8310.c</a>
+: <a class="el" href="ist8310_8c.html#aa1737e8d057bc690430200d38515de8a">ist8310.c</a>
+, <a class="el" href="ist8310_8h.html#aa1737e8d057bc690430200d38515de8a">ist8310.h</a>
 </li>
 <li>ist8310_event()
-: <a class="el" href="ist8310_8c.html#a2aed8b7258efe7bf5f10f185ab25e626">ist8310.c</a>
-, <a class="el" href="ist8310_8h.html#a2aed8b7258efe7bf5f10f185ab25e626">ist8310.h</a>
+: <a class="el" href="ist8310_8h.html#a2aed8b7258efe7bf5f10f185ab25e626">ist8310.h</a>
+, <a class="el" href="ist8310_8c.html#a2aed8b7258efe7bf5f10f185ab25e626">ist8310.c</a>
 </li>
 <li>ist8310_init()
-: <a class="el" href="ist8310_8h.html#a76b3c327cb4ede66f19e41764caad5b5">ist8310.h</a>
-, <a class="el" href="ist8310_8c.html#a76b3c327cb4ede66f19e41764caad5b5">ist8310.c</a>
+: <a class="el" href="ist8310_8c.html#a76b3c327cb4ede66f19e41764caad5b5">ist8310.c</a>
+, <a class="el" href="ist8310_8h.html#a76b3c327cb4ede66f19e41764caad5b5">ist8310.h</a>
 </li>
 <li>ist8310_periodic()
 : <a class="el" href="ist8310_8h.html#abf9bf3e2d984271b92bc8a5e4b2579a8">ist8310.h</a>
 </li>
 <li>ist8310_read()
-: <a class="el" href="ist8310_8h.html#a14c46bbc515b0cdd91b921d78ba88e6c">ist8310.h</a>
-, <a class="el" href="ist8310_8c.html#a14c46bbc515b0cdd91b921d78ba88e6c">ist8310.c</a>
+: <a class="el" href="ist8310_8c.html#a14c46bbc515b0cdd91b921d78ba88e6c">ist8310.c</a>
+, <a class="el" href="ist8310_8h.html#a14c46bbc515b0cdd91b921d78ba88e6c">ist8310.h</a>
+</li>
+<li>isValidPacket()
+: <a class="el" href="cc2500__frsky__x_8c.html#ab87853b69b609ffb3e401989b389335f">cc2500_frsky_x.c</a>
 </li>
 <li>itg3200_event()
 : <a class="el" href="itg3200_8c.html#aaa9c768fbf93b62e8c6f74ebcc07cf45">itg3200.c</a>
@@ -1772,15 +1814,15 @@ $(document).ready(function(){initNavTree('globals_func_i.html','');});
 : <a class="el" href="itg3200_8c.html#a7b349504704c56277b218842850b117c">itg3200.c</a>
 </li>
 <li>itg3200_init()
-: <a class="el" href="itg3200_8h.html#a0cce475e76197e5ec00589884656a7ff">itg3200.h</a>
-, <a class="el" href="itg3200_8c.html#a240c1ab04d15bb3f556189887939765f">itg3200.c</a>
+: <a class="el" href="itg3200_8c.html#a240c1ab04d15bb3f556189887939765f">itg3200.c</a>
+, <a class="el" href="itg3200_8h.html#a0cce475e76197e5ec00589884656a7ff">itg3200.h</a>
 </li>
 <li>itg3200_periodic()
 : <a class="el" href="itg3200_8h.html#a2e5bd5bfe60106c8c05d1a26bcce2263">itg3200.h</a>
 </li>
 <li>itg3200_read()
-: <a class="el" href="itg3200_8c.html#afc931399829e2d90c671d326e016329a">itg3200.c</a>
-, <a class="el" href="itg3200_8h.html#afc931399829e2d90c671d326e016329a">itg3200.h</a>
+: <a class="el" href="itg3200_8h.html#afc931399829e2d90c671d326e016329a">itg3200.h</a>
+, <a class="el" href="itg3200_8c.html#afc931399829e2d90c671d326e016329a">itg3200.c</a>
 </li>
 <li>itg3200_send_config()
 : <a class="el" href="itg3200_8c.html#afe8ddf75a27aa350a6270539e5fabd0c">itg3200.c</a>
@@ -1806,7 +1848,7 @@ $(document).ready(function(){initNavTree('globals_func_i.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri May 15 2020 04:04:11 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:04:30 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

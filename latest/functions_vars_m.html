@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -337,7 +337,8 @@ $(document).ready(function(){initNavTree('functions_vars_m.html','');});
 : <a class="el" href="px4flow_8h.html#ac3033126ff988e765032033b4a5e705f">mavlink_heartbeat</a>
 </li>
 <li>max
-: <a class="el" href="nps__sensor__accel_8h.html#a043fd6d64ff5ebe4509e2e70c43e5a03">NpsSensorAccel</a>
+: <a class="el" href="ctrl__windtunnel_8h.html#ae01065d305a106092b053080f7e6397a">min_max_ctrl_t</a>
+, <a class="el" href="nps__sensor__accel_8h.html#a043fd6d64ff5ebe4509e2e70c43e5a03">NpsSensorAccel</a>
 , <a class="el" href="nps__sensor__gyro_8h.html#ab7e92e7373b3cf0a6c858a14d09e352c">NpsSensorGyro</a>
 , <a class="el" href="nps__sensor__mag_8h.html#ab8f0ab3583195c0e680780deb2a2f769">NpsSensorMag</a>
 </li>
@@ -348,6 +349,9 @@ $(document).ready(function(){initNavTree('functions_vars_m.html','');});
 </li>
 <li>max_ang_momentum
 : <a class="el" href="nps__fdm__gazebo_8cpp.html#a72e31f68945bafa99608f9a60031f674">gazebo_actuators_t</a>
+</li>
+<li>max_aux_channel
+: <a class="el" href="cc2500__settings_8h.html#acace729ffe13225077853ffd1ab4d3b7">rxConfig_s</a>
 </li>
 <li>max_inc
 : <a class="el" href="delayed__first__order__lowpass__filter_8h.html#ac753192adc4c86378b001e3f6948e565">delayed_first_order_lowpass_filter_t</a>
@@ -396,6 +400,9 @@ $(document).ready(function(){initNavTree('functions_vars_m.html','');});
 <li>max_vel
 : <a class="el" href="guidance__h__ref_8h.html#a6d2d1893856e1559f89ce2f447c7488a">GuidanceHRef</a>
 , <a class="el" href="range__forcefield_8h.html#acd8295bac35b1ab129336de483f2881c">range_forcefield_param_t</a>
+</li>
+<li>max_velocity
+: <a class="el" href="nav__fish_8h.html#a37f116adc4286ecd756f8d974546db75">NavFishParams</a>
 </li>
 <li>maximum_fps
 : <a class="el" href="cv_8h.html#a22e4df5da59119462b390cdf5a003e4d">video_listener</a>
@@ -502,8 +509,12 @@ $(document).ready(function(){initNavTree('functions_vars_m.html','');});
 <li>middle_index
 : <a class="el" href="bebop__ae__awb_8h.html#a6378a7a55ce941bcbc5ed222ae091d82">ae_setting_t</a>
 </li>
+<li>midrc
+: <a class="el" href="cc2500__settings_8h.html#a413e18afb030caffe6cead58c8736145">rxConfig_s</a>
+</li>
 <li>min
-: <a class="el" href="nps__sensor__accel_8h.html#a32d598f4a3855ded38582ef84937c060">NpsSensorAccel</a>
+: <a class="el" href="ctrl__windtunnel_8h.html#a74e7e352da8f1263e7310d57983acad4">min_max_ctrl_t</a>
+, <a class="el" href="nps__sensor__accel_8h.html#a32d598f4a3855ded38582ef84937c060">NpsSensorAccel</a>
 , <a class="el" href="nps__sensor__gyro_8h.html#a50efda6e74898f022ddee7faa8af3914">NpsSensorGyro</a>
 , <a class="el" href="nps__sensor__mag_8h.html#af7dea97cbbaa9d06a4eec7daef65e26e">NpsSensorMag</a>
 , <a class="el" href="lpcRTC_8h.html#a39ca16985c3275f831aa53b895de67a6">rtcRegs_t</a>
@@ -514,6 +525,9 @@ $(document).ready(function(){initNavTree('functions_vars_m.html','');});
 </li>
 <li>min_cell_volt_num
 : <a class="el" href="hott__gam_8h.html#aa88d991678ea676294642f4d2df101cb">HOTT_GAM_MSG</a>
+</li>
+<li>min_d2d
+: <a class="el" href="nav__fish_8h.html#a29fb44b005b47265d3c839dc90c96f83">NavFishParams</a>
 </li>
 <li>min_line_blanking_pck
 : <a class="el" href="mt9f002_8c.html#a20620d1ff666e31e7807744f813644f9">blanking_t</a>
@@ -526,6 +540,9 @@ $(document).ready(function(){initNavTree('functions_vars_m.html','');});
 </li>
 <li>min_vel
 : <a class="el" href="range__forcefield_8h.html#abf9f1880d0d52f09d86065e527f5558e">range_forcefield_param_t</a>
+</li>
+<li>min_velocity
+: <a class="el" href="nav__fish_8h.html#a32eea9039e0c1f4e60ccd695fb5c6ce4">NavFishParams</a>
 </li>
 <li>mincutoff
 : <a class="el" href="1e__filter_8h.html#a05e1491ab9fe44241b6d851efc27babf">OneEuroFilter</a>
@@ -581,7 +598,7 @@ $(document).ready(function(){initNavTree('functions_vars_m.html','');});
 , <a class="el" href="stabilization__attitude__ref__quat__int_8h.html#a0b5f449e2660b4bf5253f1502c181dac">AttRefQuatInt</a>
 </li>
 <li>moder
-: <a class="el" href="xvert_2chibios_2v1_80_2board_8c.html#a821ef61d24a11aa0a6f44fa0d6fa1183">gpio_setup_t</a>
+: <a class="el" href="tawaki_2chibios_2common_2board_8c.html#a821ef61d24a11aa0a6f44fa0d6fa1183">gpio_setup_t</a>
 </li>
 <li>module_bypass
 : <a class="el" href="avi__isp__chain__bayer__inter_8h.html#affd20067f5adc139500f038669832de6">avi_isp_chain_bayer_inter_regs</a>
@@ -591,6 +608,21 @@ $(document).ready(function(){initNavTree('functions_vars_m.html','');});
 : <a class="el" href="lpcRTC_8h.html#a94538e214f8c74b6f65115221340e6e2">rtcRegs_t</a>
 , <a class="el" href="gps__sirf_8c.html#a4044e918bfc49999f0f7964d91c1401a">sirf_msg_41</a>
 , <a class="el" href="xsens700_8h.html#a929428e8300dc3a1a40679be7e38e6c4">XsensTime</a>
+</li>
+<li>motion_quality
+: <a class="el" href="mateksys__3901__l0x_8h.html#a05ab3a5c259340fa0995f1f7247190a4">Mateksys3901l0X</a>
+</li>
+<li>motionX
+: <a class="el" href="mateksys__3901__l0x_8h.html#a8a32e6da280fbff714a5f037e1a01bf0">Mateksys3901l0X</a>
+</li>
+<li>motionX_clean
+: <a class="el" href="mateksys__3901__l0x_8h.html#ade94184a49ff797408439d7b8430d00e">Mateksys3901l0X</a>
+</li>
+<li>motionY
+: <a class="el" href="mateksys__3901__l0x_8h.html#adcf40d3f0150a204a3ed705f09e9a23e">Mateksys3901l0X</a>
+</li>
+<li>motionY_clean
+: <a class="el" href="mateksys__3901__l0x_8h.html#a06e6c5ce465e76d84567108bbf58957c">Mateksys3901l0X</a>
 </li>
 <li>motor_delay
 : <a class="el" href="nav__catapult_8h.html#a7909f649542c8b90ff718edbff7db33a">nav_catapult_struct</a>
@@ -805,7 +837,7 @@ $(document).ready(function(){initNavTree('functions_vars_m.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri May 15 2020 04:04:08 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:04:27 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

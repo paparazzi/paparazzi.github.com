@@ -20,7 +20,7 @@ var hal__stm32__dma_8h =
       [ "dmastream", "hal__stm32__dma_8h.html#accbfcb0c8446563460ac414050ce6d55", null ],
       [ "mem0p", "hal__stm32__dma_8h.html#a7dc5ac969f764c9b0178d51e2c93c50b", null ],
       [ "size", "hal__stm32__dma_8h.html#a1fa9f6f14bd74a1cefc57a37d3ad2f4d", null ],
-      [ "state", "hal__stm32__dma_8h.html#aaa59bfd877cfcbbe5127ad3b7c4b7b77", null ]
+      [ "state", "hal__stm32__dma_8h.html#accc7379a4c08699bbcfe7320ca241064", null ]
     ] ],
     [ "_dma_reset_i", "hal__stm32__dma_8h.html#a2c78738b2e4c669ca336468263b36ea7", null ],
     [ "_dma_reset_s", "hal__stm32__dma_8h.html#a3560aac43b81c2486f2fc49bc21d7e8d", null ],
@@ -40,7 +40,9 @@ var hal__stm32__dma_8h =
     [ "dmaerrormask_t", "hal__stm32__dma_8h.html#a7d33ade9b0f16e0567045516507eb47b", [
       [ "DMA_ERR_TRANSFER_ERROR", "hal__stm32__dma_8h.html#a7d33ade9b0f16e0567045516507eb47ba6a6501443497cd46337033b71ca1b1ec", null ],
       [ "DMA_ERR_DIRECTMODE_ERROR", "hal__stm32__dma_8h.html#a7d33ade9b0f16e0567045516507eb47ba86839092843c581c0d517865cf2f6d19", null ],
-      [ "DMA_ERR_FIFO_ERROR", "hal__stm32__dma_8h.html#a7d33ade9b0f16e0567045516507eb47bab0d1afae9df022cd6b5a1ea5a0186d65", null ]
+      [ "DMA_ERR_FIFO_ERROR", "hal__stm32__dma_8h.html#a7d33ade9b0f16e0567045516507eb47bab0d1afae9df022cd6b5a1ea5a0186d65", null ],
+      [ "DMA_ERR_FIFO_FULL", "hal__stm32__dma_8h.html#a7d33ade9b0f16e0567045516507eb47ba3e09d80941009c22b15fc0e7174e7cb0", null ],
+      [ "DMA_ERR_FIFO_EMPTY", "hal__stm32__dma_8h.html#a7d33ade9b0f16e0567045516507eb47ba147793830adf14c3870a64099ce950b6", null ]
     ] ],
     [ "dmastate_t", "hal__stm32__dma_8h.html#aafa629edee3e18077e1f9fe62ccd170e", [
       [ "DMA_UNINIT", "hal__stm32__dma_8h.html#aafa629edee3e18077e1f9fe62ccd170eab564041dcfafe8d80d9fc571d9b1d436", null ],
@@ -58,6 +60,7 @@ var hal__stm32__dma_8h =
     [ "dma_lld_stop", "hal__stm32__dma_8h.html#a704b8cd98d0823960e5e3048ee5dfbba", null ],
     [ "dma_lld_stop_transfert", "hal__stm32__dma_8h.html#ab2d180e5adb10579b0b032987f338d33", null ],
     [ "dmaAcquireBus", "hal__stm32__dma_8h.html#aa559dd826c4b296b5f01f6e2dd2fb730", null ],
+    [ "dmaGetState", "hal__stm32__dma_8h.html#a5013a1cd3b6c9bdcd2a1fac85ac4f06c", null ],
     [ "dmaObjectInit", "hal__stm32__dma_8h.html#a0eeaca4a9d0494d44986bc443aa6c80c", null ],
     [ "dmaReleaseBus", "hal__stm32__dma_8h.html#aa6857c2342fc30ddd643f028d25b908c", null ],
     [ "dmaStart", "hal__stm32__dma_8h.html#ad255236c42982a3368342bbfeee0c783", null ],

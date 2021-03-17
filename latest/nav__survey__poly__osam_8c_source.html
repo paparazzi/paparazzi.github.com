@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -184,7 +184,7 @@ $(document).ready(function(){initNavTree('nav__survey__poly__osam_8c_source.html
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;{</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keywordtype">float</span> dx = <a class="code" href="common__nav_8c.html#a94e2a3864e1c0746e69eb9cda1061c62">waypoints</a>[SecondWP].<a class="code" href="common__nav_8h.html#a8293fd2de3ce739deb6d53691fd21fcf">x</a> - <a class="code" href="common__nav_8c.html#a94e2a3864e1c0746e69eb9cda1061c62">waypoints</a>[FirstWP].<a class="code" href="common__nav_8h.html#a8293fd2de3ce739deb6d53691fd21fcf">x</a>;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keywordtype">float</span> dy = <a class="code" href="common__nav_8c.html#a94e2a3864e1c0746e69eb9cda1061c62">waypoints</a>[SecondWP].<a class="code" href="common__nav_8h.html#a616ad85a2096d1566f5971666bbc3b3f">y</a> - <a class="code" href="common__nav_8c.html#a94e2a3864e1c0746e69eb9cda1061c62">waypoints</a>[FirstWP].<a class="code" href="common__nav_8h.html#a616ad85a2096d1566f5971666bbc3b3f">y</a>;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keywordflow">if</span> (dx == 0.0f) { dx = 0.000000001; }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keywordflow">if</span> (dx == 0.0<a class="code" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a>) { dx = 0.000000001; }</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keywordtype">float</span> ang = atan(dy / dx);</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="comment">//if values passed, use it.</span></div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keywordflow">if</span> (Size == 0) {Size = <a class="code" href="nav__survey__poly__osam_8c.html#a87e6b6976c96aca909f18ce387100fdd">Poly_Size</a>;}</div>
@@ -753,6 +753,7 @@ $(document).ready(function(){initNavTree('nav__survey__poly__osam_8c_source.html
 <div class="ttc" id="nav__survey__poly__osam_8c_html_ab3e62926a091b20a976b93647db35644"><div class="ttname"><a href="nav__survey__poly__osam_8c.html#ab3e62926a091b20a976b93647db35644">PolySurveySweepBackNum</a></div><div class="ttdeci">uint16_t PolySurveySweepBackNum</div><div class="ttdef"><b>Definition:</b> <a href="nav__survey__poly__osam_8c_source.html#l00142">nav_survey_poly_osam.c:142</a></div></div>
 <div class="ttc" id="nav__survey__poly__osam_8c_html_af4df827a192e1995fcb53a13f15bea93"><div class="ttname"><a href="nav__survey__poly__osam_8c.html#af4df827a192e1995fcb53a13f15bea93">SurveyToWP</a></div><div class="ttdeci">static struct Point2D SurveyToWP</div><div class="ttdef"><b>Definition:</b> <a href="nav__survey__poly__osam_8c_source.html#l00134">nav_survey_poly_osam.c:134</a></div></div>
 <div class="ttc" id="nav__survey__poly__osam_8c_html_a5a6904dba2d8a4c35b19da1a0b765ad9"><div class="ttname"><a href="nav__survey__poly__osam_8c.html#a5a6904dba2d8a4c35b19da1a0b765ad9">SmallestCorner</a></div><div class="ttdeci">static struct Point2D SmallestCorner</div><div class="ttdef"><b>Definition:</b> <a href="nav__survey__poly__osam_8c_source.html#l00127">nav_survey_poly_osam.c:127</a></div></div>
+<div class="ttc" id="wedgebug_8c_html_a05fd2dba3354a98f1a00b7c7ffc12b13"><div class="ttname"><a href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a></div><div class="ttdeci">uint16_t f</div><div class="ttdoc">Camera baseline, in meters (i.e. horizontal distance between the two cameras of the stereo setup) ...</div><div class="ttdef"><b>Definition:</b> <a href="wedgebug_8c_source.html#l00204">wedgebug.c:204</a></div></div>
 <div class="ttc" id="nav__survey__poly__osam_8c_html_a8c59693bfb0c154698979de6e77bb0c5ac555870e8a5a6176a7a76bd11a66065c"><div class="ttname"><a href="nav__survey__poly__osam_8c.html#a8c59693bfb0c154698979de6e77bb0c5ac555870e8a5a6176a7a76bd11a66065c">SweepCircle</a></div><div class="ttdef"><b>Definition:</b> <a href="nav__survey__poly__osam_8c_source.html#l00125">nav_survey_poly_osam.c:125</a></div></div>
 <div class="ttc" id="nav__survey__poly__osam_8c_html_a438773f6f66a4fe62199819d41698455"><div class="ttname"><a href="nav__survey__poly__osam_8c.html#a438773f6f66a4fe62199819d41698455">PolySurveySweepNum</a></div><div class="ttdeci">uint16_t PolySurveySweepNum</div><div class="ttdef"><b>Definition:</b> <a href="nav__survey__poly__osam_8c_source.html#l00141">nav_survey_poly_osam.c:141</a></div></div>
 <div class="ttc" id="nav_8h_html_a86794d1bb2e4a1386114d81522e14925"><div class="ttname"><a href="nav_8h.html#a86794d1bb2e4a1386114d81522e14925">NavCircleCountNoRewind</a></div><div class="ttdeci">#define NavCircleCountNoRewind()</div><div class="ttdef"><b>Definition:</b> <a href="nav_8h_source.html#l00148">nav.h:148</a></div></div>
@@ -802,7 +803,7 @@ $(document).ready(function(){initNavTree('nav__survey__poly__osam_8c_source.html
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_984e899df90dd104b2eabcdbb76ec71f.html">nav</a></li><li class="navelem"><a class="el" href="nav__survey__poly__osam_8c.html">nav_survey_poly_osam.c</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:02:28 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:02:39 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

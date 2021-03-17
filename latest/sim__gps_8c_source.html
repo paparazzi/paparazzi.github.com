@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -184,7 +184,7 @@ $(document).ready(function(){initNavTree('sim__gps_8c_source.html','');});
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="sim__gps_8c.html#a07f63734731109c0ed43e4f4dbcb98f2">sim_use_gps_pos</a>(a[0], a[1], a[2], a[3], a[4], a[5], a[6], a[7], a[8], a[9], a[10]);</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="sim__gps_8c.html#a05f70ae561aee3dbb2745771d44bf422">   78</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="sim__gps_8c.html#a05f70ae561aee3dbb2745771d44bf422">ubxsend_cfg_rst</a>(<a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> a __attribute__((unused)), <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> b __attribute__((unused)))</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="sim__gps_8c.html#a05f70ae561aee3dbb2745771d44bf422">   78</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="sim__gps_8c.html#a05f70ae561aee3dbb2745771d44bf422">ubxsend_cfg_rst</a>(<a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> a __attribute__((unused)), <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="wedgebug_8c.html#a83fc1af92e29717b4513d121b0c72c7d">b</a> __attribute__((unused)))</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;{</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
@@ -221,6 +221,7 @@ $(document).ready(function(){initNavTree('sim__gps_8c_source.html','');});
 <div class="ttc" id="group__math__geodetic__int_html_adafb8b35c7dbb285cfc4e60ff0a789aa"><div class="ttname"><a href="group__math__geodetic__int.html#adafb8b35c7dbb285cfc4e60ff0a789aa">NedCoor_i::x</a></div><div class="ttdeci">int32_t x</div><div class="ttdoc">North. </div><div class="ttdef"><b>Definition:</b> <a href="pprz__geodetic__int_8h_source.html#l00069">pprz_geodetic_int.h:69</a></div></div>
 <div class="ttc" id="gps_8h_html_a8b875bead4dd17451916e12dd62e80bc"><div class="ttname"><a href="gps_8h.html#a8b875bead4dd17451916e12dd62e80bc">GPS_VALID_HMSL_BIT</a></div><div class="ttdeci">#define GPS_VALID_HMSL_BIT</div><div class="ttdef"><b>Definition:</b> <a href="gps_8h_source.html#l00053">gps.h:53</a></div></div>
 <div class="ttc" id="pprz__geodetic__int_8h_html"><div class="ttname"><a href="pprz__geodetic__int_8h.html">pprz_geodetic_int.h</a></div><div class="ttdoc">Paparazzi fixed point math for geodetic calculations. </div></div>
+<div class="ttc" id="wedgebug_8c_html_a83fc1af92e29717b4513d121b0c72c7d"><div class="ttname"><a href="wedgebug_8c.html#a83fc1af92e29717b4513d121b0c72c7d">b</a></div><div class="ttdeci">float b</div><div class="ttdef"><b>Definition:</b> <a href="wedgebug_8c_source.html#l00202">wedgebug.c:202</a></div></div>
 <div class="ttc" id="gps__sim_8h_html"><div class="ttname"><a href="gps__sim_8h.html">gps_sim.h</a></div></div>
 <div class="ttc" id="sim__gps_8c_html_a07f63734731109c0ed43e4f4dbcb98f2"><div class="ttname"><a href="sim__gps_8c.html#a07f63734731109c0ed43e4f4dbcb98f2">sim_use_gps_pos</a></div><div class="ttdeci">value sim_use_gps_pos(value x, value y, value z, value c, value a, value s, value cl, value t, value m, value lat, value lon)</div><div class="ttdoc">From airborne/autopilot/. </div><div class="ttdef"><b>Definition:</b> <a href="sim__gps_8c_source.html#l00020">sim_gps.c:20</a></div></div>
 <div class="ttc" id="inttypes_8h_html"><div class="ttname"><a href="inttypes_8h.html">inttypes.h</a></div></div>
@@ -247,7 +248,7 @@ $(document).ready(function(){initNavTree('sim__gps_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_c87a6d12365ead88e0b90ddbc1b3c9bb.html">sim</a></li><li class="navelem"><a class="el" href="sim__gps_8c.html">sim_gps.c</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:02:09 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:02:20 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

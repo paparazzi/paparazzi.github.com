@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -150,7 +150,7 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Driver for the accelerometer ADXL345 from Analog Devices using SPI. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000032">Todo:</a></b></dt><dd>Use SPICallback to copy data from rx_buf when transaction is successful, instead of checking transaction status for SPITransSuccess in event loop. Problem is that in the callback we don't have a reference to the <a class="el" href="adxl345__spi_8h.html#structAdxl345__Spi">Adxl345_Spi</a> struct. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000031">Todo:</a></b></dt><dd>Use SPICallback to copy data from rx_buf when transaction is successful, instead of checking transaction status for SPITransSuccess in event loop. Problem is that in the callback we don't have a reference to the <a class="el" href="adxl345__spi_8h.html#structAdxl345__Spi">Adxl345_Spi</a> struct. </dd></dl>
 
 <p>Definition in file <a class="el" href="adxl345__spi_8c_source.html">adxl345_spi.c</a>.</p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
@@ -201,7 +201,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="adxl345__spi_8c_source.html#l00131">131</a> of file <a class="el" href="adxl345__spi_8c_source.html">adxl345_spi.c</a>.</p>
 
-<p>References <a class="el" href="adxl345__spi_8c_source.html#l00079">adxl345_spi_send_config()</a>, <a class="el" href="adxl345_8h_source.html#l00037">ADXL_CONF_UNINIT</a>, <a class="el" href="adxl345__spi_8h.html#a1fe95e94382c31359e01d512e3464810">Adxl345_Spi::data</a>, <a class="el" href="adxl345__spi_8h_source.html#l00046">Adxl345_Spi::data_available</a>, <a class="el" href="adxl345__spi_8h_source.html#l00044">Adxl345_Spi::init_status</a>, <a class="el" href="adxl345__spi_8h_source.html#l00045">Adxl345_Spi::initialized</a>, <a class="el" href="adxl345__spi_8c_source.html#l00129">Int16FromBuf</a>, <a class="el" href="adxl345__spi_8h_source.html#l00043">Adxl345_Spi::rx_buf</a>, <a class="el" href="adxl345__spi_8h_source.html#l00041">Adxl345_Spi::spi_trans</a>, <a class="el" href="spi_8h_source.html#l00101">SPITransDone</a>, <a class="el" href="spi_8h_source.html#l00100">SPITransFailed</a>, <a class="el" href="spi_8h_source.html#l00099">SPITransSuccess</a>, and <a class="el" href="spi_8h_source.html#l00162">spi_transaction::status</a>.</p>
+<p>References <a class="el" href="adxl345__spi_8c_source.html#l00079">adxl345_spi_send_config()</a>, <a class="el" href="adxl345_8h_source.html#l00037">ADXL_CONF_UNINIT</a>, <a class="el" href="adxl345__spi_8h.html#accdce845d35cee415dc96e51a45cd993">Adxl345_Spi::data</a>, <a class="el" href="adxl345__spi_8h_source.html#l00046">Adxl345_Spi::data_available</a>, <a class="el" href="adxl345__spi_8h_source.html#l00044">Adxl345_Spi::init_status</a>, <a class="el" href="adxl345__spi_8h_source.html#l00045">Adxl345_Spi::initialized</a>, <a class="el" href="adxl345__spi_8c_source.html#l00129">Int16FromBuf</a>, <a class="el" href="adxl345__spi_8h_source.html#l00043">Adxl345_Spi::rx_buf</a>, <a class="el" href="adxl345__spi_8h_source.html#l00041">Adxl345_Spi::spi_trans</a>, <a class="el" href="spi_8h_source.html#l00101">SPITransDone</a>, <a class="el" href="spi_8h_source.html#l00100">SPITransFailed</a>, <a class="el" href="spi_8h_source.html#l00099">SPITransSuccess</a>, and <a class="el" href="spi_8h_source.html#l00162">spi_transaction::status</a>.</p>
 
 <p>Referenced by <a class="el" href="imu__aspirin_8c_source.html#l00118">imu_aspirin_event()</a>.</p>
 
@@ -503,7 +503,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_0a48ba2c0a76794adfddddc873522f67.html">peripherals</a></li><li class="navelem"><a class="el" href="adxl345__spi_8c.html">adxl345_spi.c</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:03:25 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:03:41 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

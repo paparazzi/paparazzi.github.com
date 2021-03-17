@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -107,19 +107,8 @@ $(document).ready(function(){initNavTree('module__stabilization_rate_indi.html',
 <p>No detailed description...</p>
 <h1><a class="anchor" id="module_load_example__stabilization_rate_indi"></a>
 Example for airframe file</h1>
-<p>Add to your firmware section: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;module name=&quot;stabilization_indi|stabilization_indi_simple&quot;/&gt;</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;&lt;module name=&quot;stabilization_rate_indi&quot;/&gt;</div>
-</div><!-- fragment --> <h1><a class="anchor" id="autoloads__stabilization_rate_indi"></a>
-Auto-loaded modules</h1>
-<p>The following modules are automatically loaded (just as if you had added them in the airframe file)</p><ul>
-<li>module__stabilizationrotorcraft </li>
-</ul>
-<h1><a class="anchor" id="dependencies__stabilization_rate_indi"></a>
-Dependencies</h1>
-<ul>
-<li><a class="el" href="module__stabilization_indi.html">stabilization_indi module</a>|stabilization_indi_simple </li>
-</ul>
-<h1><a class="anchor" id="functions__stabilization_rate_indi"></a>
+<p>Add to your firmware section: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;module name=&quot;stabilization_rate_indi&quot;/&gt;</div>
+</div><!-- fragment --> <h1><a class="anchor" id="functions__stabilization_rate_indi"></a>
 Module functions</h1>
 <h2><a class="anchor" id="init_functions"></a>
 Init Functions</h2>
@@ -133,7 +122,7 @@ Files</h1>
 Header Files</h2>
 <p>The following headers are automatically included in modules.h</p>
 <ul>
-<li><a class="el" href="stabilization__rate_8h.html">stabilization_rate.h</a></li>
+<li><a class="el" href="stabilization__rate__indi_8h.html">stabilization_rate_indi.h</a></li>
 </ul>
 <h2><a class="anchor" id="sources"></a>
 Source Files</h2>
@@ -150,16 +139,17 @@ Raw stabilization_rate_indi.xml file:</h2>
 <div class="line">      Rate INDI controller for rotorcraft</div>
 <div class="line">    &lt;/description&gt;</div>
 <div class="line">  &lt;/doc&gt;</div>
-<div class="line">  &lt;depends&gt;stabilization_indi|stabilization_indi_simple&lt;/depends&gt;</div>
-<div class="line">  &lt;autoload name=&quot;stabilization&quot; type=&quot;rotorcraft&quot;/&gt;</div>
+<div class="line">  &lt;dep&gt;</div>
+<div class="line">    &lt;depends&gt;stabilization_indi|stabilization_indi_simple,stabilization_rotorcraft&lt;/depends&gt;</div>
+<div class="line">  &lt;/dep&gt;</div>
 <div class="line">  &lt;header&gt;</div>
-<div class="line">    &lt;file name=&quot;stabilization_rate.h&quot;/&gt;</div>
+<div class="line">    &lt;file name=&quot;stabilization_rate_indi.h&quot;/&gt;</div>
 <div class="line">  &lt;/header&gt;</div>
 <div class="line">  &lt;init fun=&quot;stabilization_rate_init()&quot;/&gt;</div>
 <div class="line">  &lt;makefile target=&quot;ap|nps&quot; firmware=&quot;rotorcraft&quot;&gt;</div>
 <div class="line">    &lt;file name=&quot;stabilization_rate_indi.c&quot; dir=&quot;$(SRC_FIRMWARE)/stabilization&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;USE_STABILIZATION_RATE&quot;/&gt;</div>
-<div class="line">    &lt;define name=&quot;STABILIZATION_RATE_INDI&quot; value=&quot;true&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;USE_STABILIZATION_RATE_INDI&quot; value=&quot;true&quot;/&gt;</div>
 <div class="line">  &lt;/makefile&gt;</div>
 <div class="line">&lt;/module&gt;</div>
 </div><!-- fragment --> </div></div><!-- contents -->
@@ -168,7 +158,7 @@ Raw stabilization_rate_indi.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:03:39 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:03:56 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

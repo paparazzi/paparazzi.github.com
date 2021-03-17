@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -107,10 +107,9 @@ $(document).ready(function(){initNavTree('module__gps_ubx_i2c.html','');});
 <p>Extends the gps_ublox to provide I2C connectivity.</p>
 <h1><a class="anchor" id="module_load_example__gps_ubx_i2c"></a>
 Example for airframe file</h1>
-<p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;module name=&quot;gps_ublox&quot;/&gt;</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;&lt;module name=&quot;gps_ubx_i2c&quot;&gt;</div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;  &lt;configure name=&quot;GPS_UBX_I2C_DEV&quot; value=&quot;i2cX&quot; /&gt;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;&lt;/module&gt;</div>
+<p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;module name=&quot;gps_ubx_i2c&quot;&gt;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;  &lt;configure name=&quot;GPS_UBX_I2C_DEV&quot; value=&quot;i2cX&quot; /&gt;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;&lt;/module&gt;</div>
 </div><!-- fragment --> <h1><a class="anchor" id="configuration__gps_ubx_i2c"></a>
 Module configuration options</h1>
 <h2><a class="anchor" id="configure"></a>
@@ -122,11 +121,6 @@ Configure Options</h2>
 <h1><a class="anchor" id="autoloads__gps_ubx_i2c"></a>
 Auto-loaded modules</h1>
 <p>The following modules are automatically loaded (just as if you had added them in the airframe file)</p><ul>
-<li><a class="el" href="module__gps_ublox.html">gps_ublox module</a> </li>
-</ul>
-<h1><a class="anchor" id="dependencies__gps_ubx_i2c"></a>
-Dependencies</h1>
-<ul>
 <li><a class="el" href="module__gps_ublox.html">gps_ublox module</a> </li>
 </ul>
 <h1><a class="anchor" id="functions__gps_ubx_i2c"></a>
@@ -180,7 +174,9 @@ Raw gps_ubx_i2c.xml file:</h2>
 <div class="line">    &lt;configure name=&quot;GPS_UBX_I2C_DEV&quot; value=&quot;i2cX&quot; description=&quot;set i2c peripheral (default: i2c1)&quot;/&gt;</div>
 <div class="line">  &lt;/doc&gt;</div>
 <div class="line"></div>
-<div class="line">  &lt;depends&gt;gps_ublox&lt;/depends&gt;</div>
+<div class="line">  &lt;dep&gt;</div>
+<div class="line">    &lt;depends&gt;gps_ublox&lt;/depends&gt;</div>
+<div class="line">  &lt;/dep&gt;</div>
 <div class="line">  &lt;autoload name=&quot;gps_ublox&quot;/&gt;</div>
 <div class="line">  &lt;header&gt;</div>
 <div class="line">    &lt;file name=&quot;gps_ubx_i2c.h&quot;/&gt;</div>
@@ -197,6 +193,14 @@ Raw gps_ubx_i2c.xml file:</h2>
 <div class="line">    &lt;define name=&quot;GPS_I2C&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;I2C_BUF_LEN&quot; value=&quot;255&quot;/&gt;</div>
 <div class="line">    &lt;file name=&quot;gps_ubx_i2c.c&quot;/&gt;</div>
+<div class="line">    &lt;test&gt;</div>
+<div class="line">      &lt;!--define name=&quot;PRIMARY_GPS&quot; value=&quot;GPS_UBX&quot;/--&gt;</div>
+<div class="line">      &lt;define name=&quot;GPS_UBX_I2C_DEV&quot; value=&quot;i2c1&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;USE_I2C1&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;GPS_I2C&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;UBX_GPS_PORT&quot; value=&quot;GPS_I2C&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;I2C_BUF_LEN&quot; value=&quot;255&quot;/&gt;</div>
+<div class="line">    &lt;/test&gt;</div>
 <div class="line">  &lt;/makefile&gt;</div>
 <div class="line"></div>
 <div class="line">&lt;/module&gt;</div>
@@ -207,7 +211,7 @@ Raw gps_ubx_i2c.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:03:40 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:03:58 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

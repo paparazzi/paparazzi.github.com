@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -211,7 +211,7 @@ $(document).ready(function(){initNavTree('link__mcu__can_8c_source.html','');});
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <a class="code" href="inter__mcu_8c.html#a1a4da5ac6e76b01f83b00facee8f3dbf">fbw_state</a>-&gt;ppm_cpt = data[0];</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <a class="code" href="inter__mcu_8c.html#a1a4da5ac6e76b01f83b00facee8f3dbf">fbw_state</a>-&gt;status = data[1];</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <a class="code" href="inter__mcu_8c.html#a1a4da5ac6e76b01f83b00facee8f3dbf">fbw_state</a>-&gt;nb_err = data[2];</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <a class="code" href="inter__mcu_8c.html#a1a4da5ac6e76b01f83b00facee8f3dbf">fbw_state</a>-&gt;electrical.vsupply = (float)(data[3] + (data[4] &lt;&lt; 8))/10.f;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <a class="code" href="inter__mcu_8c.html#a1a4da5ac6e76b01f83b00facee8f3dbf">fbw_state</a>-&gt;electrical.vsupply = (float)(data[3] + (data[4] &lt;&lt; 8))/10.<a class="code" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a>;</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <a class="code" href="inter__mcu_8c.html#a1a4da5ac6e76b01f83b00facee8f3dbf">fbw_state</a>-&gt;electrical.current = 0;</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor">#ifdef LINK_MCU_LED</span></div>
@@ -368,10 +368,11 @@ $(document).ready(function(){initNavTree('link__mcu__can_8c_source.html','');});
 <div class="ttc" id="telemetry_8h_html_a1912e51b2e63ae9b0d41d91e073cfefd"><div class="ttname"><a href="telemetry_8h.html#a1912e51b2e63ae9b0d41d91e073cfefd">DefaultPeriodic</a></div><div class="ttdeci">#define DefaultPeriodic</div><div class="ttdoc">Set default periodic telemetry. </div><div class="ttdef"><b>Definition:</b> <a href="telemetry_8h_source.html#l00066">telemetry.h:66</a></div></div>
 <div class="ttc" id="commands_8h_html"><div class="ttname"><a href="commands_8h.html">commands.h</a></div><div class="ttdoc">Hardware independent code for commands handling. </div></div>
 <div class="ttc" id="link__mcu__can_8h_html"><div class="ttname"><a href="link__mcu__can_8h.html">link_mcu_can.h</a></div><div class="ttdoc">Transport for the communication between FBW and AP via CAN. </div></div>
+<div class="ttc" id="wedgebug_8c_html_a05fd2dba3354a98f1a00b7c7ffc12b13"><div class="ttname"><a href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a></div><div class="ttdeci">uint16_t f</div><div class="ttdoc">Camera baseline, in meters (i.e. horizontal distance between the two cameras of the stereo setup) ...</div><div class="ttdef"><b>Definition:</b> <a href="wedgebug_8c_source.html#l00204">wedgebug.c:204</a></div></div>
 <div class="ttc" id="chibios_2led__hw_8h_html_afd0bf6b0eebb00641365dc389a9fc449"><div class="ttname"><a href="chibios_2led__hw_8h.html#afd0bf6b0eebb00641365dc389a9fc449">LED_TOGGLE</a></div><div class="ttdeci">#define LED_TOGGLE(i)</div><div class="ttdef"><b>Definition:</b> <a href="chibios_2led__hw_8h_source.html#l00053">led_hw.h:53</a></div></div>
 <div class="ttc" id="radio__control_8h_html_a49d0c23f0651ada64ce2cfb001f7c47c"><div class="ttname"><a href="radio__control_8h.html#a49d0c23f0651ada64ce2cfb001f7c47c">RC_REALLY_LOST</a></div><div class="ttdeci">#define RC_REALLY_LOST</div><div class="ttdef"><b>Definition:</b> <a href="radio__control_8h_source.html#l00058">radio_control.h:58</a></div></div>
 <div class="ttc" id="radio__control_8h_html_ac96a9e3f6c17299d532eb572ef0ea415"><div class="ttname"><a href="radio__control_8h.html#ac96a9e3f6c17299d532eb572ef0ea415">RC_OK</a></div><div class="ttdeci">#define RC_OK</div><div class="ttdef"><b>Definition:</b> <a href="radio__control_8h_source.html#l00056">radio_control.h:56</a></div></div>
-<div class="ttc" id="stm32_2usb__ser__hw_8c_html_af2dab4ea4560c93acc64b4418db49f84"><div class="ttname"><a href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a></div><div class="ttdeci">static const struct usb_device_descriptor dev</div><div class="ttdef"><b>Definition:</b> <a href="stm32_2usb__ser__hw_8c_source.html#l00073">usb_ser_hw.c:73</a></div></div>
+<div class="ttc" id="stm32_2usb__ser__hw_8c_html_af2dab4ea4560c93acc64b4418db49f84"><div class="ttname"><a href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a></div><div class="ttdeci">static const struct usb_device_descriptor dev</div><div class="ttdef"><b>Definition:</b> <a href="stm32_2usb__ser__hw_8c_source.html#l00074">usb_ser_hw.c:74</a></div></div>
 <div class="ttc" id="inter__mcu_8c_html_a98e2645d2aa8d12280b26af8b51320da"><div class="ttname"><a href="inter__mcu_8c.html#a98e2645d2aa8d12280b26af8b51320da">inter_mcu_received_fbw</a></div><div class="ttdeci">volatile bool inter_mcu_received_fbw</div><div class="ttdef"><b>Definition:</b> <a href="inter__mcu_8c_source.html#l00040">inter_mcu.c:40</a></div></div>
 <div class="ttc" id="link__mcu__can_8c_html_a1bbe6a10de58275654f4510d5fae72a2"><div class="ttname"><a href="link__mcu__can_8c.html#a1bbe6a10de58275654f4510d5fae72a2">MSG_INTERMCU_COMMAND_MASTER_ID</a></div><div class="ttdeci">#define MSG_INTERMCU_COMMAND_MASTER_ID</div><div class="ttdef"><b>Definition:</b> <a href="link__mcu__can_8c_source.html#l00034">link_mcu_can.c:34</a></div></div>
 <div class="ttc" id="types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00014">types.h:14</a></div></div>
@@ -392,7 +393,7 @@ $(document).ready(function(){initNavTree('link__mcu__can_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="link__mcu__can_8c.html">link_mcu_can.c</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:02:16 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:02:27 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -107,12 +107,11 @@ $(document).ready(function(){initNavTree('module__digital_cam_video.html','');})
 <p>This module controls triggering of an embedded digital camera on a linux based autopilot. This particular version triggers the video_rtp_stream.xml module to store jpeg images. It can trigger photos based on GPS distance, time or circle radius in both fixedwings and rotorcraft.</p>
 <h1><a class="anchor" id="module_load_example__digital_cam_video"></a>
 Example for airframe file</h1>
-<p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;module name=&quot;video_capture&quot;/&gt;</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;&lt;module name=&quot;digital_cam_video&quot;&gt;</div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;  &lt;define name=&quot;DC_AUTOSHOOT_PERIOD&quot; value=&quot;0.5&quot; /&gt;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;  &lt;define name=&quot;DC_AUTOSHOOT_DISTANCE_INTERVAL&quot; value=&quot;50&quot; /&gt;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;  &lt;define name=&quot;DC_SHOT_SYNC_SEND&quot; value=&quot;TRUE|FALSE&quot; /&gt;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;&lt;/module&gt;</div>
+<p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;module name=&quot;digital_cam_video&quot;&gt;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;  &lt;define name=&quot;DC_AUTOSHOOT_PERIOD&quot; value=&quot;0.5&quot; /&gt;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;  &lt;define name=&quot;DC_AUTOSHOOT_DISTANCE_INTERVAL&quot; value=&quot;50&quot; /&gt;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;  &lt;define name=&quot;DC_SHOT_SYNC_SEND&quot; value=&quot;TRUE|FALSE&quot; /&gt;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;&lt;/module&gt;</div>
 </div><!-- fragment --> <h1><a class="anchor" id="configuration__digital_cam_video"></a>
 Module configuration options</h1>
 <h2><a class="anchor" id="define"></a>
@@ -124,19 +123,6 @@ Define Options</h2>
  Description: grid in meters</li>
 <li><b>name:</b> <code>DC_SHOT_SYNC_SEND</code> <b>value:</b> <em>TRUE|FALSE</em> <br />
  Description: send DC_SHOT message when photo was taken (default: TRUE)</li>
-</ul>
-<h1><a class="anchor" id="dependencies__digital_cam_video"></a>
-Dependencies</h1>
-<ul>
-<li><a class="el" href="module__video_capture.html">video_capture module</a> </li>
-</ul>
-<h1><a class="anchor" id="conflicts__digital_cam_video"></a>
-Conflicts</h1>
-<ul>
-<li><a class="el" href="module__digital_cam.html">digital_cam module</a></li>
-<li><a class="el" href="module__digital_cam_servo.html">digital_cam_servo module</a></li>
-<li><a class="el" href="module__digital_cam_i2c.html">digital_cam_i2c module</a></li>
-<li><a class="el" href="module__digital_cam_uart.html">digital_cam_uart module</a> </li>
 </ul>
 <h1><a class="anchor" id="functions__digital_cam_video"></a>
 Module functions</h1>
@@ -175,7 +161,7 @@ Source Files</h2>
 <h2><a class="anchor" id="module_xml__digital_cam_video"></a>
 Raw digital_cam_video.xml file:</h2>
 <div class="fragment"><div class="line">&lt;!DOCTYPE module SYSTEM &quot;module.dtd&quot;&gt;</div>
-<div class="line">&lt;module name=&quot;video_cam_ctrl&quot; dir=&quot;digital_cam&quot;&gt;</div>
+<div class="line">&lt;module name=&quot;digital_cam_video&quot; dir=&quot;digital_cam&quot;&gt;</div>
 <div class="line">  &lt;doc&gt;</div>
 <div class="line">    &lt;description&gt;</div>
 <div class="line">      Digital Photo Camera Triggering (using embedded video)</div>
@@ -210,9 +196,10 @@ Raw digital_cam_video.xml file:</h2>
 <div class="line">    &lt;/dl_settings&gt;</div>
 <div class="line">  &lt;/settings&gt;</div>
 <div class="line"></div>
-<div class="line">  &lt;depends&gt;video_capture&lt;/depends&gt;</div>
-<div class="line"></div>
-<div class="line">  &lt;conflicts&gt;digital_cam,digital_cam_servo,digital_cam_i2c,digital_cam_uart&lt;/conflicts&gt;</div>
+<div class="line">  &lt;dep&gt;</div>
+<div class="line">    &lt;depends&gt;video_capture&lt;/depends&gt;</div>
+<div class="line">    &lt;conflicts&gt;digital_cam,digital_cam_servo,digital_cam_i2c,digital_cam_uart&lt;/conflicts&gt;</div>
+<div class="line">  &lt;/dep&gt;</div>
 <div class="line"></div>
 <div class="line">  &lt;header&gt;</div>
 <div class="line">    &lt;file name=&quot;video_cam_ctrl.h&quot;/&gt;</div>
@@ -237,7 +224,7 @@ Raw digital_cam_video.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:03:42 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:03:59 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

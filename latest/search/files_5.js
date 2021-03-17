@@ -25,6 +25,8 @@ var searchData=
   ['detect_5fgate_2eh',['detect_gate.h',['../detect__gate_8h.html',1,'']]],
   ['detect_5fwindow_2ec',['detect_window.c',['../detect__window_8c.html',1,'']]],
   ['detect_5fwindow_2eh',['detect_window.h',['../detect__window_8h.html',1,'']]],
+  ['dfu_5fcommand_2ec',['dfu_command.c',['../dfu__command_8c.html',1,'']]],
+  ['dfu_5fcommand_2eh',['dfu_command.h',['../dfu__command_8h.html',1,'']]],
   ['direct_5fmemory_5flogger_2ec',['direct_memory_logger.c',['../direct__memory__logger_8c.html',1,'']]],
   ['direct_5fmemory_5flogger_2eh',['direct_memory_logger.h',['../direct__memory__logger_8h.html',1,'']]],
   ['disco_2eh',['disco.h',['../disco_8h.html',1,'']]],

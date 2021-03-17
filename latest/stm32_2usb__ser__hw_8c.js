@@ -1,9 +1,10 @@
 var stm32_2usb__ser__hw_8c =
 [
-    [ "fifo_t", "stm32_2usb__ser__hw_8c.html#structfifo__t", [
-      [ "buf", "stm32_2usb__ser__hw_8c.html#af6872113b054f3bed2382adf6919e4f5", null ],
-      [ "head", "stm32_2usb__ser__hw_8c.html#ae93028e986799fceacecbd153729f855", null ],
-      [ "tail", "stm32_2usb__ser__hw_8c.html#abe914ae9dd92644d8a53a4b99d89b487", null ]
+    [ "fifo_t", "frsky__x_8h.html#structfifo__t", [
+      [ "buf", "frsky__x_8h.html#af6872113b054f3bed2382adf6919e4f5", null ],
+      [ "head", "frsky__x_8h.html#ae93028e986799fceacecbd153729f855", null ],
+      [ "size", "frsky__x_8h.html#a93dce475a14e4b394637e13b4d30374f", null ],
+      [ "tail", "frsky__x_8h.html#abe914ae9dd92644d8a53a4b99d89b487", null ]
     ] ],
     [ "MAX_PACKET_SIZE", "stm32_2usb__ser__hw_8c.html#a879456c3b8e2853f7044d764e9c180d4", null ],
     [ "TX_TIMEOUT_CNT", "stm32_2usb__ser__hw_8c.html#ae608f21143f9de6b9d8ffec85681e81f", null ],
@@ -13,9 +14,10 @@ var stm32_2usb__ser__hw_8c =
     [ "cdcacm_set_config", "stm32_2usb__ser__hw_8c.html#a6059acbec27d178fd89f46eac5538e7f", null ],
     [ "fifo_avail", "stm32_2usb__ser__hw_8c.html#a14ec031da793cb08aa5e3e3b5d551431", null ],
     [ "fifo_free", "stm32_2usb__ser__hw_8c.html#adfd6ebb4b8039e06d214b227db30e3b2", null ],
-    [ "fifo_get", "stm32_2usb__ser__hw_8c.html#a724635e870c5f5f4344c09beb3c7aa32", null ],
+    [ "fifo_get", "stm32_2usb__ser__hw_8c.html#af7c4a574284a673dbccf3346e072ba50", null ],
     [ "fifo_init", "stm32_2usb__ser__hw_8c.html#a1330c98d9b3b1ac7e86b04b86ec99548", null ],
-    [ "fifo_put", "stm32_2usb__ser__hw_8c.html#a012e003cec3a81a71e9598d1c9e94f97", null ],
+    [ "fifo_peek", "stm32_2usb__ser__hw_8c.html#a081c07a88a2108ff93ef4cae8a08806a", null ],
+    [ "fifo_put", "stm32_2usb__ser__hw_8c.html#ae3001fd8504f8ad30ee40a958da7bf0c", null ],
     [ "suspend_cb", "stm32_2usb__ser__hw_8c.html#a249c372d4216cf6de5a346625850ec63", null ],
     [ "usb_serial_char_available", "stm32_2usb__ser__hw_8c.html#adaa435f6235136b75de97d7efa7387d1", null ],
     [ "usb_serial_check_free_space", "stm32_2usb__ser__hw_8c.html#a1ce3208f7bb3a93361d7d3fd6d6949e4", null ],
@@ -28,6 +30,7 @@ var stm32_2usb__ser__hw_8c =
     [ "VCOM_event", "stm32_2usb__ser__hw_8c.html#a15c895e4456578b3ca2818c1e17c832a", null ],
     [ "VCOM_getchar", "stm32_2usb__ser__hw_8c.html#a184633f63ad351d8e70857d9e5ba4a3e", null ],
     [ "VCOM_init", "stm32_2usb__ser__hw_8c.html#a96a54f28bfc8bc28963cd2fac74609cd", null ],
+    [ "VCOM_peekchar", "stm32_2usb__ser__hw_8c.html#a5908a732fe8698361cd95e37322aba63", null ],
     [ "VCOM_putchar", "stm32_2usb__ser__hw_8c.html#a19a213d00cf249a4d4d60dbf1a9907d3", null ],
     [ "VCOM_send_message", "stm32_2usb__ser__hw_8c.html#aad17c325b3e7623c13d24b25fc42fe3b", null ],
     [ "cdcacm_functional_descriptors", "stm32_2usb__ser__hw_8c.html#a9753b7603c6cb48484089d484f9441b6", null ],

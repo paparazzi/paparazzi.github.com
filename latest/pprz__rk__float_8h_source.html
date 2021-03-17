@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -142,12 +142,12 @@ $(document).ready(function(){initNavTree('pprz__rk__float_8h_source.html','');})
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordtype">float</span> *xo,</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">float</span> *x, <span class="keyword">const</span> <span class="keywordtype">int</span> n,</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">float</span> *u, <span class="keyword">const</span> <span class="keywordtype">int</span> m,</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordtype">void</span> (*f)(<span class="keywordtype">float</span> *o, <span class="keyword">const</span> <span class="keywordtype">float</span> *x, <span class="keyword">const</span> <span class="keywordtype">int</span> n, <span class="keyword">const</span> <span class="keywordtype">float</span> *u, <span class="keyword">const</span> <span class="keywordtype">int</span> m),</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordtype">void</span> (*<a class="code" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a>)(<span class="keywordtype">float</span> *o, <span class="keyword">const</span> <span class="keywordtype">float</span> *x, <span class="keyword">const</span> <span class="keywordtype">int</span> n, <span class="keyword">const</span> <span class="keywordtype">float</span> *u, <span class="keyword">const</span> <span class="keywordtype">int</span> m),</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">float</span> dt)</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;{</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordtype">float</span> dx[n];</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  f(dx, x, n, u, m);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <a class="code" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a>(dx, x, n, u, m);</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <a class="code" href="group__math__algebra__float.html#ga2a16655dc0d98a40ff17c6728fa1e4fb">float_vect_smul</a>(xo, dx, dt, n);</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <a class="code" href="group__math__algebra__float.html#ga054c0afdf1c4c9316dffe8763363a1b8">float_vect_add</a>(xo, x, n);</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
@@ -156,17 +156,17 @@ $(document).ready(function(){initNavTree('pprz__rk__float_8h_source.html','');})
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keywordtype">float</span> *xo,</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">float</span> *x, <span class="keyword">const</span> <span class="keywordtype">int</span> n,</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">float</span> *u, <span class="keyword">const</span> <span class="keywordtype">int</span> m,</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keywordtype">void</span> (*f)(<span class="keywordtype">float</span> *o, <span class="keyword">const</span> <span class="keywordtype">float</span> *x, <span class="keyword">const</span> <span class="keywordtype">int</span> n, <span class="keyword">const</span> <span class="keywordtype">float</span> *u, <span class="keyword">const</span> <span class="keywordtype">int</span> m),</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keywordtype">void</span> (*<a class="code" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a>)(<span class="keywordtype">float</span> *o, <span class="keyword">const</span> <span class="keywordtype">float</span> *x, <span class="keyword">const</span> <span class="keywordtype">int</span> n, <span class="keyword">const</span> <span class="keywordtype">float</span> *u, <span class="keyword">const</span> <span class="keywordtype">int</span> m),</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">float</span> dt)</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;{</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keywordtype">float</span> mid_point[n];</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="comment">// mid_point = x + (dt/2)*f(x, u)</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  f(mid_point, x, n, u, m);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <a class="code" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a>(mid_point, x, n, u, m);</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <a class="code" href="group__math__algebra__float.html#ga2a16655dc0d98a40ff17c6728fa1e4fb">float_vect_smul</a>(mid_point, mid_point, dt / 2., n);</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <a class="code" href="group__math__algebra__float.html#ga054c0afdf1c4c9316dffe8763363a1b8">float_vect_add</a>(mid_point, x, n);</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="comment">// xo = x + dt * f(mid_point, u)</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  f(xo, mid_point, n, u, m);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <a class="code" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a>(xo, mid_point, n, u, m);</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <a class="code" href="group__math__algebra__float.html#ga2a16655dc0d98a40ff17c6728fa1e4fb">float_vect_smul</a>(xo, xo, dt, n);</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <a class="code" href="group__math__algebra__float.html#ga054c0afdf1c4c9316dffe8763363a1b8">float_vect_add</a>(xo, x, n);</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;}</div>
@@ -175,28 +175,28 @@ $(document).ready(function(){initNavTree('pprz__rk__float_8h_source.html','');})
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  <span class="keywordtype">float</span> *xo,</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">float</span> *x, <span class="keyword">const</span> <span class="keywordtype">int</span> n,</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">float</span> *u, <span class="keyword">const</span> <span class="keywordtype">int</span> m,</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  <span class="keywordtype">void</span> (*f)(<span class="keywordtype">float</span> *o, <span class="keyword">const</span> <span class="keywordtype">float</span> *x, <span class="keyword">const</span> <span class="keywordtype">int</span> n, <span class="keyword">const</span> <span class="keywordtype">float</span> *u, <span class="keyword">const</span> <span class="keywordtype">int</span> m),</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  <span class="keywordtype">void</span> (*<a class="code" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a>)(<span class="keywordtype">float</span> *o, <span class="keyword">const</span> <span class="keywordtype">float</span> *x, <span class="keyword">const</span> <span class="keywordtype">int</span> n, <span class="keyword">const</span> <span class="keywordtype">float</span> *u, <span class="keyword">const</span> <span class="keywordtype">int</span> m),</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">float</span> dt)</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;{</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  <span class="keywordtype">float</span> k1[n], k2[n], k3[n], k4[n], ktmp[n];</div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;  <span class="comment">// k1 = f(x, u)</span></div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;  f(k1, x, n, u, m);</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;  <a class="code" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a>(k1, x, n, u, m);</div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  <span class="comment">// k2 = f(x + dt * (k1 / 2), u)</span></div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;  <a class="code" href="group__math__algebra__float.html#ga2a16655dc0d98a40ff17c6728fa1e4fb">float_vect_smul</a>(ktmp, k1, dt / 2., n);</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  <a class="code" href="group__math__algebra__float.html#ga054c0afdf1c4c9316dffe8763363a1b8">float_vect_add</a>(ktmp, x, n);</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  f(k2, ktmp, n, u, m);</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  <a class="code" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a>(k2, ktmp, n, u, m);</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;  <span class="comment">// k3 = f(x + dt * (k2 / 2), u)</span></div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  <a class="code" href="group__math__algebra__float.html#ga2a16655dc0d98a40ff17c6728fa1e4fb">float_vect_smul</a>(ktmp, k2, dt / 2., n);</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  <a class="code" href="group__math__algebra__float.html#ga054c0afdf1c4c9316dffe8763363a1b8">float_vect_add</a>(ktmp, x, n);</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  f(k3, ktmp, n, u, m);</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  <a class="code" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a>(k3, ktmp, n, u, m);</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  <span class="comment">// k4 = f(x + dt * k3, u)</span></div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  <a class="code" href="group__math__algebra__float.html#ga2a16655dc0d98a40ff17c6728fa1e4fb">float_vect_smul</a>(ktmp, k3, dt, n);</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  <a class="code" href="group__math__algebra__float.html#ga054c0afdf1c4c9316dffe8763363a1b8">float_vect_add</a>(ktmp, x, n);</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  f(k4, ktmp, n, u, m);</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  <a class="code" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a>(k4, ktmp, n, u, m);</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  <span class="comment">// xo = x + (dt / 6) * (k1 + 2 * (k2 + k3) + k4)</span></div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  <a class="code" href="group__math__algebra__float.html#ga054c0afdf1c4c9316dffe8763363a1b8">float_vect_add</a>(k2, k3, n);</div>
@@ -216,6 +216,7 @@ $(document).ready(function(){initNavTree('pprz__rk__float_8h_source.html','');})
 <div class="ttc" id="group__math__algebra__float_html_ga054c0afdf1c4c9316dffe8763363a1b8"><div class="ttname"><a href="group__math__algebra__float.html#ga054c0afdf1c4c9316dffe8763363a1b8">float_vect_add</a></div><div class="ttdeci">static void float_vect_add(float *a, const float *b, const int n)</div><div class="ttdoc">a += b </div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__float_8h_source.html#l00574">pprz_algebra_float.h:574</a></div></div>
 <div class="ttc" id="pprz__rk__float_8h_html_adf59a02242f08eba730c793cd28fd826"><div class="ttname"><a href="pprz__rk__float_8h.html#adf59a02242f08eba730c793cd28fd826">runge_kutta_1_float</a></div><div class="ttdeci">static void runge_kutta_1_float(float *xo, const float *x, const int n, const float *u, const int m, void(*f)(float *o, const float *x, const int n, const float *u, const int m), const float dt)</div><div class="ttdoc">First-Order Runge-Kutta. </div><div class="ttdef"><b>Definition:</b> <a href="pprz__rk__float_8h_source.html#l00055">pprz_rk_float.h:55</a></div></div>
 <div class="ttc" id="pprz__algebra__float_8h_html"><div class="ttname"><a href="pprz__algebra__float_8h.html">pprz_algebra_float.h</a></div><div class="ttdoc">Paparazzi floating point algebra. </div></div>
+<div class="ttc" id="wedgebug_8c_html_a05fd2dba3354a98f1a00b7c7ffc12b13"><div class="ttname"><a href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a></div><div class="ttdeci">uint16_t f</div><div class="ttdoc">Camera baseline, in meters (i.e. horizontal distance between the two cameras of the stereo setup) ...</div><div class="ttdef"><b>Definition:</b> <a href="wedgebug_8c_source.html#l00204">wedgebug.c:204</a></div></div>
 <div class="ttc" id="group__math__algebra__float_html_ga2a16655dc0d98a40ff17c6728fa1e4fb"><div class="ttname"><a href="group__math__algebra__float.html#ga2a16655dc0d98a40ff17c6728fa1e4fb">float_vect_smul</a></div><div class="ttdeci">static void float_vect_smul(float *o, const float *a, const float s, const int n)</div><div class="ttdoc">o = a * s </div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__float_8h_source.html#l00588">pprz_algebra_float.h:588</a></div></div>
 <div class="ttc" id="pprz__rk__float_8h_html_aec82ad92b63bfd3f0b29d2c2b9e926a5"><div class="ttname"><a href="pprz__rk__float_8h.html#aec82ad92b63bfd3f0b29d2c2b9e926a5">runge_kutta_4_float</a></div><div class="ttdeci">static void runge_kutta_4_float(float *xo, const float *x, const int n, const float *u, const int m, void(*f)(float *o, const float *x, const int n, const float *u, const int m), const float dt)</div><div class="ttdoc">Fourth-Order Runge-Kutta. </div><div class="ttdef"><b>Definition:</b> <a href="pprz__rk__float_8h_source.html#l00132">pprz_rk_float.h:132</a></div></div>
 <div class="ttc" id="pprz__rk__float_8h_html_a9c77effa76d4e4713cbc671a128afe61"><div class="ttname"><a href="pprz__rk__float_8h.html#a9c77effa76d4e4713cbc671a128afe61">runge_kutta_2_float</a></div><div class="ttdeci">static void runge_kutta_2_float(float *xo, const float *x, const int n, const float *u, const int m, void(*f)(float *o, const float *x, const int n, const float *u, const int m), const float dt)</div><div class="ttdoc">Second-Order Runge-Kutta. </div><div class="ttdef"><b>Definition:</b> <a href="pprz__rk__float_8h_source.html#l00089">pprz_rk_float.h:89</a></div></div>
@@ -225,7 +226,7 @@ $(document).ready(function(){initNavTree('pprz__rk__float_8h_source.html','');})
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_29343b6f5fcd4b75a5dfbb985ff56864.html">math</a></li><li class="navelem"><a class="el" href="pprz__rk__float_8h.html">pprz_rk_float.h</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:02:17 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:02:28 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -217,6 +217,13 @@ Raw gps_furuno.xml file:</h2>
 <div class="line">      $(TARGET).CFLAGS += -DGPS_TYPE_H=\&quot;subsystems/gps/gps_nmea.h\&quot;</div>
 <div class="line">      endif</div>
 <div class="line">    &lt;/raw&gt;</div>
+<div class="line">    &lt;test&gt;</div>
+<div class="line">      &lt;define name=&quot;PRIMARY_GPS&quot; value=&quot;GPS_NMEA&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;FURUNO_GPS_PORT&quot; value=&quot;uart2&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;FURUNO_GPS_BAUD&quot; value=&quot;115200&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;USE_UART2&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;NMEA_GPS_LINK&quot; value=&quot;uart2&quot;/&gt;</div>
+<div class="line">    &lt;/test&gt;</div>
 <div class="line">  &lt;/makefile&gt;</div>
 <div class="line">  &lt;makefile target=&quot;fbw&quot;&gt;</div>
 <div class="line">    &lt;define name=&quot;USE_GPS&quot;/&gt;</div>
@@ -228,7 +235,7 @@ Raw gps_furuno.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:03:42 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:04:00 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

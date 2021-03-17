@@ -1,9 +1,10 @@
 var lpc21_2usb__ser__hw_8c =
 [
-    [ "fifo_t", "stm32_2usb__ser__hw_8c.html#structfifo__t", [
-      [ "buf", "stm32_2usb__ser__hw_8c.html#af6872113b054f3bed2382adf6919e4f5", null ],
-      [ "head", "stm32_2usb__ser__hw_8c.html#ae93028e986799fceacecbd153729f855", null ],
-      [ "tail", "stm32_2usb__ser__hw_8c.html#abe914ae9dd92644d8a53a4b99d89b487", null ]
+    [ "fifo_t", "frsky__x_8h.html#structfifo__t", [
+      [ "buf", "frsky__x_8h.html#af6872113b054f3bed2382adf6919e4f5", null ],
+      [ "head", "frsky__x_8h.html#ae93028e986799fceacecbd153729f855", null ],
+      [ "size", "frsky__x_8h.html#a93dce475a14e4b394637e13b4d30374f", null ],
+      [ "tail", "frsky__x_8h.html#abe914ae9dd92644d8a53a4b99d89b487", null ]
     ] ],
     [ "TLineCoding", "lpc21_2usb__ser__hw_8c.html#structTLineCoding", [
       [ "bCharFormat", "lpc21_2usb__ser__hw_8c.html#aa0fcfb0c5f6c24305311a9750eaa53aa", null ],
@@ -27,8 +28,8 @@ var lpc21_2usb__ser__hw_8c =
     [ "VCOM_FIFO_SIZE", "lpc21_2usb__ser__hw_8c.html#a8c7c58c5dba905e6348263134f6b4fbd", null ],
     [ "BulkIn", "lpc21_2usb__ser__hw_8c.html#a3bc9a7209871c1543612c00253c0d060", null ],
     [ "BulkOut", "lpc21_2usb__ser__hw_8c.html#a23baeb57e01ecb41d700cca080b35309", null ],
-    [ "fifo_avail", "lpc21_2usb__ser__hw_8c.html#a14ec031da793cb08aa5e3e3b5d551431", null ],
-    [ "fifo_free", "lpc21_2usb__ser__hw_8c.html#adfd6ebb4b8039e06d214b227db30e3b2", null ],
+    [ "fifo_avail", "lpc21_2usb__ser__hw_8c.html#a84f023b865546e5a8433a00db4f06972", null ],
+    [ "fifo_free", "lpc21_2usb__ser__hw_8c.html#a1907098db4b59dda72fd85bfbef50248", null ],
     [ "fifo_get", "lpc21_2usb__ser__hw_8c.html#ae9e700bbf9ad6ed809b2879eeda18417", null ],
     [ "fifo_init", "lpc21_2usb__ser__hw_8c.html#a62c1c3a993bb7e76089279dd5bf6e206", null ],
     [ "fifo_put", "lpc21_2usb__ser__hw_8c.html#a60cebaa767a05f06a7b66c751c12318a", null ],

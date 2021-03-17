@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -188,6 +188,9 @@ Source Files</h2>
 <div class="line">    &lt;define name=&quot;PX4FMU_GYRO_RANGE&quot; value=&quot;MPU60X0_GYRO_RANGE_2000&quot; description=&quot;gyroscope range setting of the MPU&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;PX4FMU_ACCEL_RANGE&quot; value=&quot;MPU60X0_ACCEL_RANGE_16G&quot; description=&quot;accelerometer range setting of the MPU&quot;/&gt;</div>
 <div class="line">  &lt;/doc&gt;</div>
+<div class="line">  &lt;dep&gt;</div>
+<div class="line">    &lt;depends&gt;spi_master&lt;/depends&gt;</div>
+<div class="line">  &lt;/dep&gt;</div>
 <div class="line">  &lt;autoload name=&quot;imu_common&quot;/&gt;</div>
 <div class="line">  &lt;autoload name=&quot;imu_nps&quot;/&gt;</div>
 <div class="line">  &lt;header&gt;</div>
@@ -209,9 +212,16 @@ Source Files</h2>
 <div class="line">    &lt;file name=&quot;mpu60x0_spi.c&quot; dir=&quot;peripherals&quot;/&gt;</div>
 <div class="line">    &lt;file name=&quot;hmc58xx.c&quot; dir=&quot;peripherals&quot;/&gt;</div>
 <div class="line">    &lt;file name=&quot;imu_px4fmu.c&quot; dir=&quot;subsystems/imu&quot;/&gt;</div>
-<div class="line">    &lt;raw&gt;</div>
-<div class="line">      include $(CFG_SHARED)/spi_master.makefile</div>
-<div class="line">    &lt;/raw&gt;</div>
+<div class="line">    &lt;test&gt;</div>
+<div class="line">      &lt;define name=&quot;IMU_TYPE_H&quot; value=&quot;imu/imu_px4fmu.h&quot; type=&quot;string&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;SPI_MASTER&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;USE_SPI1&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;USE_SPI_SLAVE0&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;USE_SPI_SLAVE1&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;USE_SPI_SLAVE2&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;USE_I2C2&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;PERIODIC_FREQUENCY&quot; value=&quot;512&quot;/&gt;</div>
+<div class="line">    &lt;/test&gt;</div>
 <div class="line">  &lt;/makefile&gt;</div>
 <div class="line">&lt;/module&gt;</div>
 </div><!-- fragment --> </div></div><!-- contents -->
@@ -220,7 +230,7 @@ Source Files</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:03:40 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:03:58 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

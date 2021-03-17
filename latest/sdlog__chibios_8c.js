@@ -25,6 +25,7 @@ var sdlog__chibios_8c =
     [ "chibios_sdlog", "sdlog__chibios_8c.html#a6d6d6039a7d735ec71df91793397de63", null ],
     [ "chibios_sdlog_filenames", "sdlog__chibios_8c.html#ae10f69027b3fe9dc11978cbb6039f038", null ],
     [ "chibios_sdlog_status", "sdlog__chibios_8c.html#a78e53045b09de8ad88685194468aba15", null ],
+    [ "NO_FILE_NAME", "sdlog__chibios_8c.html#ac4906480516463672f35682ae66f139b", null ],
     [ "powerOutageListener", "sdlog__chibios_8c.html#aa1f82d465033fcb9e099049cb9bdc785", null ],
     [ "powerOutageSource", "sdlog__chibios_8c.html#a7d247e5ccfb8b9a4bb1eb4fe13c8fd53", null ],
     [ "PPRZ_LOG_DIR", "sdlog__chibios_8c.html#a9988fa9164781fcdba3d62a105567140", null ],

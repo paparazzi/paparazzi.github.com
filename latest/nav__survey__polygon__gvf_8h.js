@@ -31,6 +31,5 @@ var nav__survey__polygon__gvf_8h =
     ] ],
     [ "gvf_nav_direction_circle", "nav__survey__polygon__gvf_8h.html#a6533adf7c5ea5e0653ddc673fffa1db9", null ],
     [ "gvf_nav_survey_polygon_run", "nav__survey__polygon__gvf_8h.html#aa3432a5ccfee6c60fa8cb0b7b3e4a6e8", null ],
-    [ "gvf_nav_survey_polygon_setup", "nav__survey__polygon__gvf_8h.html#a90d454e9b138c8d61f930edc166f73e3", null ],
-    [ "gvf_nav_survey_sweep", "nav__survey__polygon__gvf_8h.html#a7c38723926bc05cd8839213bcb450381", null ]
+    [ "gvf_nav_survey_polygon_setup", "nav__survey__polygon__gvf_8h.html#a90d454e9b138c8d61f930edc166f73e3", null ]
 ];

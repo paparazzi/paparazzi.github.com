@@ -98,5 +98,7 @@ var searchData=
   ['ak_5fstatus_5fmeas',['AK_STATUS_MEAS',['../ak8975_8h.html#a583c1693d6d13b50f2ee54f6b46ada49a3277c43b264f2b8dcd52c67b7212be5f',1,'ak8975.h']]],
   ['ak_5fstatus_5fread',['AK_STATUS_READ',['../ak8963_8h.html#a17716d364ee924bf509a99715208137aadbd9a8610986900f4a5d9d5a41dd45a3',1,'AK_STATUS_READ():&#160;ak8963.h'],['../ak8975_8h.html#a583c1693d6d13b50f2ee54f6b46ada49adbd9a8610986900f4a5d9d5a41dd45a3',1,'AK_STATUS_READ():&#160;ak8975.h']]],
   ['append',['Append',['../mission__common_8h.html#add225f937fa97e4f76900b7f5e73872ea71f30510b076569dd2830e348fb77a13',1,'mission_common.h']]],
-  ['approach',['Approach',['../nav__skid__landing_8c.html#a61a75394da51ededcb57cd59a9e3cefeaa19b7b7f6eb8f8eedb2055bf1050f81f',1,'nav_skid_landing.c']]]
+  ['approach',['Approach',['../nav__skid__landing_8c.html#a61a75394da51ededcb57cd59a9e3cefeaa19b7b7f6eb8f8eedb2055bf1050f81f',1,'nav_skid_landing.c']]],
+  ['autonomous_5fguided',['AUTONOMOUS_GUIDED',['../wedgebug_8c.html#aacc2ed6154766d07165e8e8e06aeb3d3afd21c176c3f3cf44137b576cc4113f2f',1,'wedgebug.c']]],
+  ['autonomous_5fnav',['AUTONOMOUS_NAV',['../wedgebug_8c.html#aacc2ed6154766d07165e8e8e06aeb3d3afc7c12510171811dcbf1d221978f1976',1,'wedgebug.c']]]
 ];

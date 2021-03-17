@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -238,10 +238,10 @@ $(document).ready(function(){initNavTree('sim__ap_8c_source.html','');});
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  <span class="keywordtype">int</span> i;</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  <span class="keywordflow">for</span> (i = 0; i &lt; COMMANDS_NB; i++) {</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    Store_field(val_commands, i, Val_int(<a class="code" href="commands_8c.html#a929b1098e1af3f34ee056eeed9227136">commands</a>[i]));</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    Store_field(val_commands, i, Val_int(<a class="code" href="shell__arch_8c.html#a33466362cf73cff51e1c6a7b8b3a1b12">commands</a>[i]));</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  }</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  <span class="keywordflow">return</span> Val_int(<a class="code" href="commands_8c.html#a929b1098e1af3f34ee056eeed9227136">commands</a>[COMMAND_THROTTLE]);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  <span class="keywordflow">return</span> Val_int(<a class="code" href="shell__arch_8c.html#a33466362cf73cff51e1c6a7b8b3a1b12">commands</a>[COMMAND_THROTTLE]);</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;}</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div>
 <div class="line"><a name="l00137"></a><span class="lineno"><a class="line" href="sim__ap_8c.html#ad664061534694a2babfff03cfc5977f7">  137</a></span>&#160;value <a class="code" href="sim__ap_8c.html#ad664061534694a2babfff03cfc5977f7">set_datalink_message</a>(value <a class="code" href="light__scheduler_8c.html#a2dee666f0c1fe072c549ff86b1d0a8ab">s</a>)</div>
@@ -262,7 +262,7 @@ $(document).ready(function(){initNavTree('sim__ap_8c_source.html','');});
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;}</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
 <div class="line"><a name="l00155"></a><span class="lineno"><a class="line" href="sim__ap_8c.html#a89f4f8d26f26d00385ef45a5bc445fb9">  155</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="sim__ap_8c.html#a89f4f8d26f26d00385ef45a5bc445fb9">adc_buf_channel</a>(<span class="keywordtype">void</span> *a __attribute__((unused)),</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                     <span class="keywordtype">void</span> *b __attribute__((unused)),</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                     <span class="keywordtype">void</span> *<a class="code" href="wedgebug_8c.html#a83fc1af92e29717b4513d121b0c72c7d">b</a> __attribute__((unused)),</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;                     <span class="keywordtype">void</span> *c __attribute__((unused)))</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;{</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;}</div>
@@ -303,6 +303,7 @@ $(document).ready(function(){initNavTree('sim__ap_8c_source.html','');});
 <div class="ttc" id="sim__ap_8c_html_a739fbef2e03619a863b4d7fd8d0da157"><div class="ttname"><a href="sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157">sim_init</a></div><div class="ttdeci">value sim_init(value unit)</div><div class="ttdef"><b>Definition:</b> <a href="sim__ap_8c_source.html#l00105">sim_ap.c:105</a></div></div>
 <div class="ttc" id="commands_8h_html"><div class="ttname"><a href="commands_8h.html">commands.h</a></div><div class="ttdoc">Hardware independent code for commands handling. </div></div>
 <div class="ttc" id="sim__ap_8c_html_a6f93a5bd7f409f85e455deb40b9e7b44"><div class="ttname"><a href="sim__ap_8c.html#a6f93a5bd7f409f85e455deb40b9e7b44">ir_estim_mode</a></div><div class="ttdeci">uint8_t ir_estim_mode</div><div class="ttdef"><b>Definition:</b> <a href="sim__ap_8c_source.html#l00034">sim_ap.c:34</a></div></div>
+<div class="ttc" id="wedgebug_8c_html_a83fc1af92e29717b4513d121b0c72c7d"><div class="ttname"><a href="wedgebug_8c.html#a83fc1af92e29717b4513d121b0c72c7d">b</a></div><div class="ttdeci">float b</div><div class="ttdef"><b>Definition:</b> <a href="wedgebug_8c_source.html#l00202">wedgebug.c:202</a></div></div>
 <div class="ttc" id="ivy__dl_8c_html_a1f85674103d97e5e86374583269e4e41"><div class="ttname"><a href="ivy__dl_8c.html#a1f85674103d97e5e86374583269e4e41">ivy_tp</a></div><div class="ttdeci">struct ivy_transport ivy_tp</div><div class="ttdoc">IVY transport structure. </div><div class="ttdef"><b>Definition:</b> <a href="ivy__dl_8c_source.html#l00029">ivy_dl.c:29</a></div></div>
 <div class="ttc" id="std_8h_html"><div class="ttname"><a href="std_8h.html">std.h</a></div></div>
 <div class="ttc" id="electrical_8c_html_aeef6ce2fb40e76ed52df5a1d45646ba1"><div class="ttname"><a href="electrical_8c.html#aeef6ce2fb40e76ed52df5a1d45646ba1">electrical_periodic</a></div><div class="ttdeci">void electrical_periodic(void)</div><div class="ttdef"><b>Definition:</b> <a href="electrical_8c_source.html#l00123">electrical.c:123</a></div></div>
@@ -310,7 +311,6 @@ $(document).ready(function(){initNavTree('sim__ap_8c_source.html','');});
 <div class="ttc" id="autopilot_8h_html"><div class="ttname"><a href="autopilot_8h.html">autopilot.h</a></div><div class="ttdoc">Core autopilot interface common to all firmwares. </div></div>
 <div class="ttc" id="datalink_8h_html_aa9106add8d47671f6ebb3d8321813611"><div class="ttname"><a href="datalink_8h.html#aa9106add8d47671f6ebb3d8321813611">DlCheckAndParse</a></div><div class="ttdeci">static void DlCheckAndParse(struct link_device *dev, struct transport_tx *trans, uint8_t *buf, bool *msg_available, bool update_dl)</div><div class="ttdoc">Check for new message and parse. </div><div class="ttdef"><b>Definition:</b> <a href="datalink_8h_source.html#l00079">datalink.h:79</a></div></div>
 <div class="ttc" id="types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00014">types.h:14</a></div></div>
-<div class="ttc" id="commands_8c_html_a929b1098e1af3f34ee056eeed9227136"><div class="ttname"><a href="commands_8c.html#a929b1098e1af3f34ee056eeed9227136">commands</a></div><div class="ttdeci">pprz_t commands[COMMANDS_NB]</div><div class="ttdoc">Storage of intermediate command values. </div><div class="ttdef"><b>Definition:</b> <a href="commands_8c_source.html#l00030">commands.c:30</a></div></div>
 <div class="ttc" id="sim__ap_8c_html_a9037ef79ac8d270ab46865ea3c7e66d6"><div class="ttname"><a href="sim__ap_8c.html#a9037ef79ac8d270ab46865ea3c7e66d6">ftimeofday</a></div><div class="ttdeci">float ftimeofday(void)</div><div class="ttdef"><b>Definition:</b> <a href="sim__ap_8c_source.html#l00097">sim_ap.c:97</a></div></div>
 <div class="ttc" id="autopilot_8c_html_a1914661233fbbed6c2ee653b99757652"><div class="ttname"><a href="autopilot_8c.html#a1914661233fbbed6c2ee653b99757652">autopilot_periodic</a></div><div class="ttdeci">void autopilot_periodic(void)</div><div class="ttdoc">AP periodic call. </div><div class="ttdef"><b>Definition:</b> <a href="autopilot_8c_source.html#l00135">autopilot.c:135</a></div></div>
 <div class="ttc" id="main__demo5_8c_html_a41ca1f0c42c768e235066d83071b1ed9"><div class="ttname"><a href="main__demo5_8c.html#a41ca1f0c42c768e235066d83071b1ed9">dl_buffer</a></div><div class="ttdeci">uint8_t dl_buffer[MSG_SIZE]</div><div class="ttdef"><b>Definition:</b> <a href="main__demo5_8c_source.html#l00064">main_demo5.c:64</a></div></div>
@@ -323,6 +323,7 @@ $(document).ready(function(){initNavTree('sim__ap_8c_source.html','');});
 <div class="ttc" id="nav_8h_html"><div class="ttname"><a href="nav_8h.html">nav.h</a></div><div class="ttdoc">Fixedwing Navigation library. </div></div>
 <div class="ttc" id="fixedwing_2main__ap_8c_html_a2b4e383f6a21da5bad019df0b3891508"><div class="ttname"><a href="fixedwing_2main__ap_8c.html#a2b4e383f6a21da5bad019df0b3891508">event_task_ap</a></div><div class="ttdeci">void event_task_ap(void)</div><div class="ttdef"><b>Definition:</b> <a href="fixedwing_2main__ap_8c_source.html#l00369">main_ap.c:369</a></div></div>
 <div class="ttc" id="sim__ap_8c_html_af752145e6cd167ae0146e1a957f2e9e3"><div class="ttname"><a href="sim__ap_8c.html#af752145e6cd167ae0146e1a957f2e9e3">vertical_mode</a></div><div class="ttdeci">uint8_t vertical_mode</div><div class="ttdef"><b>Definition:</b> <a href="sim__ap_8c_source.html#l00035">sim_ap.c:35</a></div></div>
+<div class="ttc" id="shell__arch_8c_html_a33466362cf73cff51e1c6a7b8b3a1b12"><div class="ttname"><a href="shell__arch_8c.html#a33466362cf73cff51e1c6a7b8b3a1b12">commands</a></div><div class="ttdeci">static const ShellCommand commands[]</div><div class="ttdef"><b>Definition:</b> <a href="shell__arch_8c_source.html#l00071">shell_arch.c:71</a></div></div>
 <div class="ttc" id="sim__ap_8c_html_a89f4f8d26f26d00385ef45a5bc445fb9"><div class="ttname"><a href="sim__ap_8c.html#a89f4f8d26f26d00385ef45a5bc445fb9">adc_buf_channel</a></div><div class="ttdeci">void adc_buf_channel(void *a, void *b, void *c)</div><div class="ttdoc">Required by electrical. </div><div class="ttdef"><b>Definition:</b> <a href="sim__ap_8c_source.html#l00155">sim_ap.c:155</a></div></div>
 <div class="ttc" id="nav_8c_html_a04b783250b1673126fa3f4729cb2078e"><div class="ttname"><a href="nav_8c.html#a04b783250b1673126fa3f4729cb2078e">unit</a></div><div class="ttdeci">static unit_t unit</div><div class="ttdef"><b>Definition:</b> <a href="nav_8c_source.html#l00031">nav.c:31</a></div></div>
 <div class="ttc" id="fixedwing_2main__ap_8h_html"><div class="ttname"><a href="fixedwing_2main__ap_8h.html">main_ap.h</a></div><div class="ttdoc">AP ( AutoPilot ) process API. </div></div>
@@ -334,7 +335,7 @@ $(document).ready(function(){initNavTree('sim__ap_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_c87a6d12365ead88e0b90ddbc1b3c9bb.html">sim</a></li><li class="navelem"><a class="el" href="sim__ap_8c.html">sim_ap.c</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:02:09 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:02:20 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

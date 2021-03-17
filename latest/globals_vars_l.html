@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -162,6 +162,9 @@ $(document).ready(function(){initNavTree('globals_vars_l.html','');});
 <li>land_circle_quadrant
 : <a class="el" href="nav__skid__landing_8c.html#acf3f808e25d5e8edeb49cf1493872331">nav_skid_landing.c</a>
 </li>
+<li>land_direction
+: <a class="el" href="uav__recovery_8c.html#a870be29565fbce5402f808b2569317ff">uav_recovery.c</a>
+</li>
 <li>land_radius
 : <a class="el" href="nav__skid__landing_8c.html#a00482fea2c462875ddc3ac2be10e1eda">nav_skid_landing.c</a>
 </li>
@@ -226,13 +229,16 @@ $(document).ready(function(){initNavTree('globals_vars_l.html','');});
 : <a class="el" href="common__flight__plan_8c.html#a731227193d590af31f6ab76fcd4f6543">common_flight_plan.c</a>
 , <a class="el" href="common__flight__plan_8h.html#a731227193d590af31f6ab76fcd4f6543">common_flight_plan.h</a>
 </li>
+<li>last_time
+: <a class="el" href="ctrl__windtunnel_8c.html#aa5604a41c0823948eaa1488c4c9b3220">ctrl_windtunnel.c</a>
+</li>
 <li>last_transmision
-: <a class="el" href="ctc_8c.html#a2c808fb51be63b31ff1bd655c5803729">ctc.c</a>
-, <a class="el" href="dcf_8c.html#a2c808fb51be63b31ff1bd655c5803729">dcf.c</a>
+: <a class="el" href="dcf_8c.html#a2c808fb51be63b31ff1bd655c5803729">dcf.c</a>
+, <a class="el" href="ctc_8c.html#a2c808fb51be63b31ff1bd655c5803729">ctc.c</a>
 </li>
 <li>last_ts
-: <a class="el" href="downlink_8c.html#a072136fa8b5895314bb8878bf907f3e6">downlink.c</a>
-, <a class="el" href="bluegiga_8c.html#a072136fa8b5895314bb8878bf907f3e6">bluegiga.c</a>
+: <a class="el" href="bluegiga_8c.html#a072136fa8b5895314bb8878bf907f3e6">bluegiga.c</a>
+, <a class="el" href="downlink_8c.html#a072136fa8b5895314bb8878bf907f3e6">downlink.c</a>
 </li>
 <li>last_up_nb_msgs
 : <a class="el" href="downlink_8c.html#af8f7657742e859f75c32afee8971e1fe">downlink.c</a>
@@ -254,6 +260,9 @@ $(document).ready(function(){initNavTree('globals_vars_l.html','');});
 <li>last_y
 : <a class="el" href="nav_8c.html#a38c13a13ef3e5a3b6480f71bf244e668">nav.c</a>
 , <a class="el" href="nav_8h.html#a38c13a13ef3e5a3b6480f71bf244e668">nav.h</a>
+</li>
+<li>lastBindPinStatus
+: <a class="el" href="cc2500__rx__spi__common_8c.html#a335ab3e720a592b192c50938acc890fb">cc2500_rx_spi_common.c</a>
 </li>
 <li>lat_em7deg
 : <a class="el" href="exif__module_8c.html#aa7aba60a4704a0699c27e2c1d7d67224">exif_module.c</a>
@@ -305,7 +314,16 @@ $(document).ready(function(){initNavTree('globals_vars_l.html','');});
 , <a class="el" href="sim_2led__hw_8h.html#a64c76e6560c3cce05e312eb542f1c6cd">led_hw.h</a>
 </li>
 <li>led_hw_values
-: <a class="el" href="boards_2bebop_2actuators_8c.html#a7628ab56ea2153f536f4f32074053ae2">actuators.c</a>
+: <a class="el" href="boards_2ardrone_2actuators_8c.html#a7628ab56ea2153f536f4f32074053ae2">actuators.c</a>
+</li>
+<li>ledInversion
+: <a class="el" href="cc2500__rx__spi__common_8c.html#a4f14745c7a8cab6e1554391973e8ee44">cc2500_rx_spi_common.c</a>
+</li>
+<li>ledIo
+: <a class="el" href="cc2500__settings_8c.html#a2b6ac40feb8de8c0408a4ce8a58293de">cc2500_settings.c</a>
+</li>
+<li>ledPin
+: <a class="el" href="cc2500__rx__spi__common_8c.html#a5bfe3e8ec4e8766bf505b15c8a30a3d8">cc2500_rx_spi_common.c</a>
 </li>
 <li>leds_closure
 : <a class="el" href="sim_2led__hw_8c.html#ae292f9d2a858553831b8f8934ba4d2fd">led_hw.c</a>
@@ -324,6 +342,9 @@ $(document).ready(function(){initNavTree('globals_vars_l.html','');});
 </li>
 <li>lidar_sf11_filter
 : <a class="el" href="lidar__sf11_8c.html#a83cdc7778927363d2ecd608f465865d5">lidar_sf11.c</a>
+</li>
+<li>lift_pitch_eff
+: <a class="el" href="guidance__indi__hybrid_8c.html#a85e490052ea8af5799268c5884159bab">guidance_indi_hybrid.c</a>
 </li>
 <li>light_cnt
 : <a class="el" href="light__solar_8c.html#a831ddfb4155fdd57df9ff70f0df6033b">light_solar.c</a>
@@ -346,35 +367,39 @@ $(document).ready(function(){initNavTree('globals_vars_l.html','');});
 : <a class="el" href="sim__ap_8c.html#ac3614ddc1d6b6d3c72f8088bcf8aede4">sim_ap.c</a>
 </li>
 <li>link_mcu_from_ap_msg
-: <a class="el" href="link__mcu__can_8c.html#a4d130fa66a5074c64197b7cd4bf535de">link_mcu_can.c</a>
-, <a class="el" href="link__mcu__can_8h.html#a4d130fa66a5074c64197b7cd4bf535de">link_mcu_can.h</a>
-, <a class="el" href="link__mcu__spi_8h.html#a4d130fa66a5074c64197b7cd4bf535de">link_mcu_spi.h</a>
-, <a class="el" href="link__mcu__usart_8c.html#a4d130fa66a5074c64197b7cd4bf535de">link_mcu_usart.c</a>
+: <a class="el" href="link__mcu__spi_8h.html#a4d130fa66a5074c64197b7cd4bf535de">link_mcu_spi.h</a>
 , <a class="el" href="link__mcu__usart_8h.html#a4d130fa66a5074c64197b7cd4bf535de">link_mcu_usart.h</a>
+, <a class="el" href="link__mcu__can_8c.html#a4d130fa66a5074c64197b7cd4bf535de">link_mcu_can.c</a>
+, <a class="el" href="link__mcu__can_8h.html#a4d130fa66a5074c64197b7cd4bf535de">link_mcu_can.h</a>
 , <a class="el" href="link__mcu__spi_8c.html#a4d130fa66a5074c64197b7cd4bf535de">link_mcu_spi.c</a>
+, <a class="el" href="link__mcu__usart_8c.html#a4d130fa66a5074c64197b7cd4bf535de">link_mcu_usart.c</a>
 </li>
 <li>link_mcu_from_fbw_msg
-: <a class="el" href="link__mcu__spi_8c.html#a86deade5843ab146c47083104cf8f3cd">link_mcu_spi.c</a>
-, <a class="el" href="link__mcu__can_8c.html#a86deade5843ab146c47083104cf8f3cd">link_mcu_can.c</a>
-, <a class="el" href="link__mcu__spi_8h.html#a86deade5843ab146c47083104cf8f3cd">link_mcu_spi.h</a>
-, <a class="el" href="link__mcu__can_8h.html#a86deade5843ab146c47083104cf8f3cd">link_mcu_can.h</a>
+: <a class="el" href="link__mcu__can_8c.html#a86deade5843ab146c47083104cf8f3cd">link_mcu_can.c</a>
 , <a class="el" href="link__mcu__usart_8h.html#a86deade5843ab146c47083104cf8f3cd">link_mcu_usart.h</a>
+, <a class="el" href="link__mcu__can_8h.html#a86deade5843ab146c47083104cf8f3cd">link_mcu_can.h</a>
+, <a class="el" href="link__mcu__spi_8c.html#a86deade5843ab146c47083104cf8f3cd">link_mcu_spi.c</a>
+, <a class="el" href="link__mcu__spi_8h.html#a86deade5843ab146c47083104cf8f3cd">link_mcu_spi.h</a>
 , <a class="el" href="link__mcu__usart_8c.html#a86deade5843ab146c47083104cf8f3cd">link_mcu_usart.c</a>
 </li>
 <li>link_mcu_received
-: <a class="el" href="link__mcu__can_8h.html#aac1e8852c1f12dced678eaa675f0d408">link_mcu_can.h</a>
-, <a class="el" href="link__mcu__usart_8h.html#aac1e8852c1f12dced678eaa675f0d408">link_mcu_usart.h</a>
-, <a class="el" href="link__mcu__spi_8c.html#aac1e8852c1f12dced678eaa675f0d408">link_mcu_spi.c</a>
+: <a class="el" href="link__mcu__usart_8h.html#aac1e8852c1f12dced678eaa675f0d408">link_mcu_usart.h</a>
 , <a class="el" href="link__mcu__spi_8h.html#aac1e8852c1f12dced678eaa675f0d408">link_mcu_spi.h</a>
+, <a class="el" href="link__mcu__can_8h.html#aac1e8852c1f12dced678eaa675f0d408">link_mcu_can.h</a>
+, <a class="el" href="link__mcu__spi_8c.html#aac1e8852c1f12dced678eaa675f0d408">link_mcu_spi.c</a>
 </li>
 <li>link_mcu_trans
 : <a class="el" href="link__mcu__spi_8h.html#aaddeb28c81e4b264b71c0fefb60c17f5">link_mcu_spi.h</a>
 , <a class="el" href="link__mcu__spi_8c.html#aaddeb28c81e4b264b71c0fefb60c17f5">link_mcu_spi.c</a>
 </li>
 <li>listener
-: <a class="el" href="undistort__image_8c.html#a1cd78b5508e71a82956808eba675122b">undistort_image.c</a>
+: <a class="el" href="colorfilter_8c.html#a1cd78b5508e71a82956808eba675122b">colorfilter.c</a>
 , <a class="el" href="undistort__image_8h.html#a1cd78b5508e71a82956808eba675122b">undistort_image.h</a>
-, <a class="el" href="colorfilter_8c.html#a1cd78b5508e71a82956808eba675122b">colorfilter.c</a>
+, <a class="el" href="undistort__image_8c.html#a1cd78b5508e71a82956808eba675122b">undistort_image.c</a>
+</li>
+<li>listLength
+: <a class="el" href="cc2500__frsky__shared_8h.html#a790301d7eb5a957ad3e0b2125ce25c18">cc2500_frsky_shared.h</a>
+, <a class="el" href="cc2500__frsky__shared_8c.html#a790301d7eb5a957ad3e0b2125ce25c18">cc2500_frsky_shared.c</a>
 </li>
 <li>lm75_meas_started
 : <a class="el" href="temp__lm75_8c.html#a4327916d5a9c8446727f20306e83d4b7">temp_lm75.c</a>
@@ -383,8 +408,11 @@ $(document).ready(function(){initNavTree('globals_vars_l.html','');});
 : <a class="el" href="temp__lm75_8c.html#af289820de9c9290cb24d527fe95876da">temp_lm75.c</a>
 </li>
 <li>load_dictionary
-: <a class="el" href="textons_8h.html#a6d2b99999b3e2213453a8050abaedb18">textons.h</a>
-, <a class="el" href="textons_8c.html#a6d2b99999b3e2213453a8050abaedb18">textons.c</a>
+: <a class="el" href="textons_8c.html#a6d2b99999b3e2213453a8050abaedb18">textons.c</a>
+, <a class="el" href="textons_8h.html#a6d2b99999b3e2213453a8050abaedb18">textons.h</a>
+</li>
+<li>localCommands
+: <a class="el" href="group__SHELL.html#ga1251a50680cc73bf72e5f9f428113773">microrlShell.c</a>
 </li>
 <li>location_history
 : <a class="el" href="pose__history_8c.html#aaa45ee71dbb61fe8b5675693f6811efc">pose_history.c</a>
@@ -421,8 +449,8 @@ $(document).ready(function(){initNavTree('globals_vars_l.html','');});
 : <a class="el" href="gps__datalink_8c.html#ae45b690c21285f18321b1a319823e7a6">gps_datalink.c</a>
 </li>
 <li>ltpdef
-: <a class="el" href="nps__fdm__jsbsim_8cpp.html#af8e3cbce42455407e0f3461515ee62b2">nps_fdm_jsbsim.cpp</a>
-, <a class="el" href="nps__fdm__crrcsim_8c.html#af8e3cbce42455407e0f3461515ee62b2">nps_fdm_crrcsim.c</a>
+: <a class="el" href="nps__fdm__crrcsim_8c.html#af8e3cbce42455407e0f3461515ee62b2">nps_fdm_crrcsim.c</a>
+, <a class="el" href="nps__fdm__jsbsim_8cpp.html#af8e3cbce42455407e0f3461515ee62b2">nps_fdm_jsbsim.cpp</a>
 </li>
 <li>luminance_ac_code_table
 : <a class="el" href="jpeg_8c.html#a4bc20fd5bce35a0ee506c75e5cb00a33">jpeg.c</a>
@@ -445,7 +473,7 @@ $(document).ready(function(){initNavTree('globals_vars_l.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri May 15 2020 04:04:11 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:04:30 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

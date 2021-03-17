@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -197,6 +197,9 @@ $(document).ready(function(){initNavTree('globals_vars_o.html','');});
 <li>obs_data
 : <a class="el" href="boards_2disco_2actuators_8c.html#a5745d25d53f3624956015ed3e4c0e7c7">actuators.c</a>
 </li>
+<li>obstacle_confidence
+: <a class="el" href="wedgebug_8c.html#ae334bebf9b2a045e286d873c65235d3a">wedgebug.c</a>
+</li>
 <li>obstacle_detected
 : <a class="el" href="avoid__navigation_8c.html#a845d6487ece3094af3ea210a11490ecd">avoid_navigation.c</a>
 , <a class="el" href="avoid__navigation_8h.html#a845d6487ece3094af3ea210a11490ecd">avoid_navigation.h</a>
@@ -218,8 +221,8 @@ $(document).ready(function(){initNavTree('globals_vars_o.html','');});
 : <a class="el" href="optical__flow__hover_8c.html#a39b21b2778a205465ba69128e87b956b">optical_flow_hover.c</a>
 </li>
 <li>of_hover_ctrl_X
-: <a class="el" href="optical__flow__hover_8c.html#ad42a4bac1359323e5cf599345ca0a513">optical_flow_hover.c</a>
-, <a class="el" href="optical__flow__hover_8h.html#ad42a4bac1359323e5cf599345ca0a513">optical_flow_hover.h</a>
+: <a class="el" href="optical__flow__hover_8h.html#ad42a4bac1359323e5cf599345ca0a513">optical_flow_hover.h</a>
+, <a class="el" href="optical__flow__hover_8c.html#ad42a4bac1359323e5cf599345ca0a513">optical_flow_hover.c</a>
 </li>
 <li>of_hover_ctrl_Y
 : <a class="el" href="optical__flow__hover_8c.html#a2be8f0456c6abfab0f0594ee5c9f0219">optical_flow_hover.c</a>
@@ -271,11 +274,11 @@ $(document).ready(function(){initNavTree('globals_vars_o.html','');});
 <li>Omega_I
 : <a class="el" href="ahrs__float__dcm_8c.html#a2984dc102d0f60e5682814c3a9738c2c">ahrs_float_dcm.c</a>
 </li>
-<li>omega_p
-: <a class="el" href="stabilization__attitude__ref__quat__float_8c.html#a8ec51aaf6ea47adf2e3c2d23bce1672b">stabilization_attitude_ref_quat_float.c</a>
-</li>
 <li>Omega_P
 : <a class="el" href="ahrs__float__dcm_8c.html#adb86d0beb8f30f0a135862055394de26">ahrs_float_dcm.c</a>
+</li>
+<li>omega_p
+: <a class="el" href="stabilization__attitude__ref__quat__float_8c.html#a8ec51aaf6ea47adf2e3c2d23bce1672b">stabilization_attitude_ref_quat_float.c</a>
 </li>
 <li>omega_q
 : <a class="el" href="stabilization__attitude__ref__quat__float_8c.html#a7ec471088a22f4eeba7ababa9c2cc84f">stabilization_attitude_ref_quat_float.c</a>
@@ -287,53 +290,53 @@ $(document).ready(function(){initNavTree('globals_vars_o.html','');});
 : <a class="el" href="ahrs__float__dcm_8c.html#a10d46c1ca1a95938f94c6be161c259bb">ahrs_float_dcm.c</a>
 </li>
 <li>opa_controller_disarm
-: <a class="el" href="opa__controller__fbw_8c.html#af97682f01fadf4058fc79034f39f0ba4">opa_controller_fbw.c</a>
-, <a class="el" href="opa__controller__fbw_8h.html#af97682f01fadf4058fc79034f39f0ba4">opa_controller_fbw.h</a>
+: <a class="el" href="opa__controller__fbw_8h.html#af97682f01fadf4058fc79034f39f0ba4">opa_controller_fbw.h</a>
+, <a class="el" href="opa__controller__fbw_8c.html#af97682f01fadf4058fc79034f39f0ba4">opa_controller_fbw.c</a>
 </li>
 <li>opa_controller_ftd_disarm
 : <a class="el" href="opa__controller__ap_8c.html#a44fb70febc6a3d9507206333fc130dd8">opa_controller_ap.c</a>
 , <a class="el" href="opa__controller__ap_8h.html#a44fb70febc6a3d9507206333fc130dd8">opa_controller_ap.h</a>
 </li>
 <li>opa_controller_vision_power
-: <a class="el" href="opa__controller__ap_8c.html#ac0e70303d73420a7627e03b30191a9de">opa_controller_ap.c</a>
-, <a class="el" href="opa__controller__ap_8h.html#ac0e70303d73420a7627e03b30191a9de">opa_controller_ap.h</a>
+: <a class="el" href="opa__controller__ap_8h.html#ac0e70303d73420a7627e03b30191a9de">opa_controller_ap.h</a>
+, <a class="el" href="opa__controller__ap_8c.html#ac0e70303d73420a7627e03b30191a9de">opa_controller_ap.c</a>
 </li>
 <li>opti_speed_flag
-: <a class="el" href="guidance__OA_8h.html#a9786659531a5d633c613102d189a1f60">guidance_OA.h</a>
-, <a class="el" href="guidance__OA_8c.html#a9786659531a5d633c613102d189a1f60">guidance_OA.c</a>
+: <a class="el" href="guidance__OA_8c.html#a9786659531a5d633c613102d189a1f60">guidance_OA.c</a>
+, <a class="el" href="guidance__OA_8h.html#a9786659531a5d633c613102d189a1f60">guidance_OA.h</a>
 </li>
 <li>opti_speed_read
 : <a class="el" href="guidance__OA_8c.html#a18f56e913649bc868a2343b867739d16">guidance_OA.c</a>
 </li>
 <li>optical_flow
-: <a class="el" href="px4flow_8h.html#a7f647c5002ceac1107af4247a2567f16">px4flow.h</a>
-, <a class="el" href="px4flow_8c.html#a7f647c5002ceac1107af4247a2567f16">px4flow.c</a>
+: <a class="el" href="px4flow_8c.html#a7f647c5002ceac1107af4247a2567f16">px4flow.c</a>
+, <a class="el" href="px4flow_8h.html#a7f647c5002ceac1107af4247a2567f16">px4flow.h</a>
 </li>
 <li>optical_flow_ev
 : <a class="el" href="optical__flow__hover_8c.html#a141009974fbc44658bdd3334ff2e1d62">optical_flow_hover.c</a>
 , <a class="el" href="optical__flow__landing_8c.html#a141009974fbc44658bdd3334ff2e1d62">optical_flow_landing.c</a>
 </li>
 <li>optical_flow_rad
-: <a class="el" href="px4flow_8c.html#aebdde20baee74ef4fd474f26d3c91b86">px4flow.c</a>
-, <a class="el" href="px4flow_8h.html#aebdde20baee74ef4fd474f26d3c91b86">px4flow.h</a>
+: <a class="el" href="px4flow_8h.html#aebdde20baee74ef4fd474f26d3c91b86">px4flow.h</a>
+, <a class="el" href="px4flow_8c.html#aebdde20baee74ef4fd474f26d3c91b86">px4flow.c</a>
 </li>
 <li>opticflow
-: <a class="el" href="opticflow__module_8c.html#a4ed7d8828611f3355617fb6745ade2a0">opticflow_module.c</a>
-, <a class="el" href="opticflow__module_8h.html#a4ed7d8828611f3355617fb6745ade2a0">opticflow_module.h</a>
+: <a class="el" href="opticflow__module_8c.html#a82a571b4f979b955128f710d3525a5b6">opticflow_module.c</a>
+, <a class="el" href="opticflow__module_8h.html#adc2fe8181950b9f3825b0ec86a1190fb">opticflow_module.h</a>
 </li>
 <li>opticflow_got_result
-: <a class="el" href="opticflow__module_8c.html#ae1acaec08dfe270994d26e0fb51736d7">opticflow_module.c</a>
+: <a class="el" href="opticflow__module_8c.html#ad57aa4b9c052359f9679ccb6d84422a0">opticflow_module.c</a>
 </li>
 <li>opticflow_mutex
 : <a class="el" href="opticflow__module_8c.html#a23808153add26099f13bbecfa1f293ae">opticflow_module.c</a>
 </li>
 <li>opticflow_result
-: <a class="el" href="opticflow__module_8c.html#a331dc0e40d027156d699ff51bd7dd605">opticflow_module.c</a>
+: <a class="el" href="opticflow__module_8c.html#a1f5ae3d75266b03458664a26e7185ef9">opticflow_module.c</a>
 </li>
 <li>opticflow_stab
-: <a class="el" href="guidance__OA_8h.html#a20c98e89ac4c2f80fdd841992ec3053c">guidance_OA.h</a>
+: <a class="el" href="guidance__OA_8c.html#a20c98e89ac4c2f80fdd841992ec3053c">guidance_OA.c</a>
+, <a class="el" href="guidance__OA_8h.html#a20c98e89ac4c2f80fdd841992ec3053c">guidance_OA.h</a>
 , <a class="el" href="guidance__opticflow__hover_8c.html#a20c98e89ac4c2f80fdd841992ec3053c">guidance_opticflow_hover.c</a>
-, <a class="el" href="guidance__OA_8c.html#a20c98e89ac4c2f80fdd841992ec3053c">guidance_OA.c</a>
 , <a class="el" href="guidance__opticflow__hover_8h.html#a20c98e89ac4c2f80fdd841992ec3053c">guidance_opticflow_hover.h</a>
 </li>
 <li>origin
@@ -349,8 +352,8 @@ $(document).ready(function(){initNavTree('globals_vars_o.html','');});
 : <a class="el" href="optical__flow__hover_8c.html#aa4136ae46ae8a9cad627b74a706a0e1b">optical_flow_hover.c</a>
 </li>
 <li>oscphi
-: <a class="el" href="optical__flow__hover_8h.html#a4b519ab7a08649a68757a282777d5d68">optical_flow_hover.h</a>
-, <a class="el" href="optical__flow__hover_8c.html#a4b519ab7a08649a68757a282777d5d68">optical_flow_hover.c</a>
+: <a class="el" href="optical__flow__hover_8c.html#a4b519ab7a08649a68757a282777d5d68">optical_flow_hover.c</a>
+, <a class="el" href="optical__flow__hover_8h.html#a4b519ab7a08649a68757a282777d5d68">optical_flow_hover.h</a>
 </li>
 <li>osctheta
 : <a class="el" href="optical__flow__hover_8c.html#ae22aa394a903bb7f26b7bc5c60931153">optical_flow_hover.c</a>
@@ -366,8 +369,8 @@ $(document).ready(function(){initNavTree('globals_vars_o.html','');});
 : <a class="el" href="max7456_8c.html#ad65fea792b2227069e8c05acedab1849">max7456.c</a>
 </li>
 <li>osd_enable
-: <a class="el" href="max7456_8h.html#aced31f57be7c424c3c56f09970a42812">max7456.h</a>
-, <a class="el" href="max7456_8c.html#aced31f57be7c424c3c56f09970a42812">max7456.c</a>
+: <a class="el" href="max7456_8c.html#aced31f57be7c424c3c56f09970a42812">max7456.c</a>
+, <a class="el" href="max7456_8h.html#aced31f57be7c424c3c56f09970a42812">max7456.h</a>
 </li>
 <li>osd_enable_val
 : <a class="el" href="max7456_8c.html#a874f20c9edb2852bd19b2db700401daf">max7456.c</a>
@@ -381,9 +384,6 @@ $(document).ready(function(){initNavTree('globals_vars_o.html','');});
 <li>osd_stat_reg
 : <a class="el" href="max7456_8c.html#aa88b79ed6d70c87f302762836b19c2a3">max7456.c</a>
 </li>
-<li>osd_stat_reg_valid
-: <a class="el" href="max7456_8c.html#a700c37442b224ae303b633ac0c02c73c">max7456.c</a>
-</li>
 <li>osd_str_buf
 : <a class="el" href="max7456_8c.html#a9066777e2c60d23d0177a42eab2abdb9">max7456.c</a>
 </li>
@@ -394,8 +394,9 @@ $(document).ready(function(){initNavTree('globals_vars_o.html','');});
 : <a class="el" href="actuators__ostrich_8c.html#afa68a5358ea5615806c9a010d9a970c3">actuators_ostrich.c</a>
 </li>
 <li>oval_status
-: <a class="el" href="rotorcraft_2navigation_8c.html#a80cf41be180b9c15f127bcbee731fb9b">navigation.c</a>
-, <a class="el" href="nav_8c.html#a80cf41be180b9c15f127bcbee731fb9b">nav.c</a>
+: <a class="el" href="nav_8c.html#a80cf41be180b9c15f127bcbee731fb9b">nav.c</a>
+, <a class="el" href="nav_8h.html#a80cf41be180b9c15f127bcbee731fb9b">nav.h</a>
+, <a class="el" href="rotorcraft_2navigation_8c.html#a80cf41be180b9c15f127bcbee731fb9b">navigation.c</a>
 </li>
 </ul>
 </div><!-- contents -->
@@ -403,7 +404,7 @@ $(document).ready(function(){initNavTree('globals_vars_o.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri May 15 2020 04:04:12 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:04:30 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

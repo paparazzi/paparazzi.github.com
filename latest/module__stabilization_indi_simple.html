@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -161,17 +161,17 @@ Airframe file section</h2>
 <li><b>name</b> <code>G2_R</code> <b>value:</b> <em>0.1450</em> <br />
  Description: control effectiveness G2 gain on yaw rate</li>
 <li><b>name</b> <code>REF_ERR_P</code> <b>value:</b> <em>600.0</em> <br />
- Description: reference acceleration</li>
+ Description: linear gains for INDI reference</li>
 <li><b>name</b> <code>REF_ERR_Q</code> <b>value:</b> <em>600.0</em> <br />
- Description: reference acceleration</li>
+ Description: linear gains for INDI reference</li>
 <li><b>name</b> <code>REF_ERR_R</code> <b>value:</b> <em>600.0</em> <br />
- Description: reference acceleration</li>
+ Description: linear gains for INDI reference</li>
 <li><b>name</b> <code>REF_RATE_P</code> <b>value:</b> <em>28.0</em> <br />
- Description: reference acceleration</li>
+ Description: linear gains for INDI reference</li>
 <li><b>name</b> <code>REF_RATE_Q</code> <b>value:</b> <em>28.0</em> <br />
- Description: reference acceleration</li>
+ Description: linear gains for INDI reference</li>
 <li><b>name</b> <code>REF_RATE_R</code> <b>value:</b> <em>28.0</em> <br />
- Description: reference acceleration</li>
+ Description: linear gains for INDI reference</li>
 <li><b>name</b> <code>MAX_R</code> <b>value:</b> <em>120.0</em> <br />
  Description: max yaw rate</li>
 <li><b>name</b> <code>FILT_CUTOFF</code> <b>value:</b> <em>8.0</em> <br />
@@ -192,11 +192,6 @@ Airframe file section</h2>
  Description: Enable full control authority</li>
 </ul>
 </li>
-</ul>
-<h1><a class="anchor" id="autoloads__stabilization_indi_simple"></a>
-Auto-loaded modules</h1>
-<p>The following modules are automatically loaded (just as if you had added them in the airframe file)</p><ul>
-<li>module__stabilizationrotorcraft </li>
 </ul>
 <h1><a class="anchor" id="functions__stabilization_indi_simple"></a>
 Module functions</h1>
@@ -256,12 +251,12 @@ Raw stabilization_indi_simple.xml file:</h2>
 <div class="line">      &lt;define name=&quot;G1_Q&quot; value=&quot;0.0361&quot; description=&quot;control effectiveness G1 gain on pitch rate&quot;/&gt;</div>
 <div class="line">      &lt;define name=&quot;G1_R&quot; value=&quot;0.0022&quot; description=&quot;control effectiveness G1 gain on yaw rate&quot;/&gt;</div>
 <div class="line">      &lt;define name=&quot;G2_R&quot; value=&quot;0.1450&quot; description=&quot;control effectiveness G2 gain on yaw rate&quot;/&gt;</div>
-<div class="line">      &lt;define name=&quot;REF_ERR_P&quot; value=&quot;600.0&quot; description=&quot;reference acceleration&quot;/&gt;</div>
-<div class="line">      &lt;define name=&quot;REF_ERR_Q&quot; value=&quot;600.0&quot; description=&quot;reference acceleration&quot;/&gt;</div>
-<div class="line">      &lt;define name=&quot;REF_ERR_R&quot; value=&quot;600.0&quot; description=&quot;reference acceleration&quot;/&gt;</div>
-<div class="line">      &lt;define name=&quot;REF_RATE_P&quot; value=&quot;28.0&quot; description=&quot;reference acceleration&quot;/&gt;</div>
-<div class="line">      &lt;define name=&quot;REF_RATE_Q&quot; value=&quot;28.0&quot; description=&quot;reference acceleration&quot;/&gt;</div>
-<div class="line">      &lt;define name=&quot;REF_RATE_R&quot; value=&quot;28.0&quot; description=&quot;reference acceleration&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;REF_ERR_P&quot; value=&quot;600.0&quot; description=&quot;linear gains for INDI reference&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;REF_ERR_Q&quot; value=&quot;600.0&quot; description=&quot;linear gains for INDI reference&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;REF_ERR_R&quot; value=&quot;600.0&quot; description=&quot;linear gains for INDI reference&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;REF_RATE_P&quot; value=&quot;28.0&quot; description=&quot;linear gains for INDI reference&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;REF_RATE_Q&quot; value=&quot;28.0&quot; description=&quot;linear gains for INDI reference&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;REF_RATE_R&quot; value=&quot;28.0&quot; description=&quot;linear gains for INDI reference&quot;/&gt;</div>
 <div class="line">      &lt;define name=&quot;MAX_R&quot; value=&quot;120.0&quot; description=&quot;max yaw rate&quot; unit=&quot;deg/s&quot;/&gt;</div>
 <div class="line">      &lt;define name=&quot;FILT_CUTOFF&quot; value=&quot;8.0&quot; description=&quot;second order cutoff parameter&quot;/&gt;</div>
 <div class="line">      &lt;define name=&quot;ESTIMATION_FILT_CUTOFF&quot; value=&quot;8.0&quot; description=&quot;second order cutoff parameter&quot;/&gt;</div>
@@ -276,14 +271,14 @@ Raw stabilization_indi_simple.xml file:</h2>
 <div class="line">  &lt;settings&gt;</div>
 <div class="line">    &lt;dl_settings&gt;</div>
 <div class="line">      &lt;dl_settings NAME=&quot;indi&quot;&gt;</div>
-<div class="line">        &lt;dl_setting var=&quot;indi.reference_acceleration.err_p&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;2500&quot; shortname=&quot;kp_p&quot; param=&quot;STABILIZATION_INDI_REF_ERR_P&quot; persistent=&quot;true&quot; module=&quot;stabilization/stabilization_indi_simple&quot;/&gt;</div>
-<div class="line">        &lt;dl_setting var=&quot;indi.reference_acceleration.rate_p&quot; min=&quot;0&quot; step=&quot;0.1&quot; max=&quot;100&quot; shortname=&quot;kd_p&quot; param=&quot;STABILIZATION_INDI_REF_RATE_P&quot; persistent=&quot;true&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting var=&quot;indi.gains.att.p&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;2500&quot; shortname=&quot;kp_p&quot; param=&quot;STABILIZATION_INDI_REF_ERR_P&quot; persistent=&quot;true&quot; module=&quot;stabilization/stabilization_indi_simple&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting var=&quot;indi.gains.rate.p&quot; min=&quot;0&quot; step=&quot;0.1&quot; max=&quot;100&quot; shortname=&quot;kd_p&quot; param=&quot;STABILIZATION_INDI_REF_RATE_P&quot; persistent=&quot;true&quot;/&gt;</div>
 <div class="line">        &lt;dl_setting var=&quot;indi.g1.p&quot; min=&quot;0&quot; step=&quot;0.001&quot; max=&quot;10&quot; shortname=&quot;ctl_eff_p&quot; param=&quot;STABILIZATION_INDI_G1_P&quot; persistent=&quot;true&quot;/&gt;</div>
-<div class="line">        &lt;dl_setting var=&quot;indi.reference_acceleration.err_q&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;2500&quot; shortname=&quot;kp_q&quot; param=&quot;STABILIZATION_INDI_REF_ERR_Q&quot; persistent=&quot;true&quot;/&gt;</div>
-<div class="line">        &lt;dl_setting var=&quot;indi.reference_acceleration.rate_q&quot; min=&quot;0&quot; step=&quot;0.1&quot; max=&quot;100&quot; shortname=&quot;kd_q&quot; param=&quot;STABILIZATION_INDI_REF_RATE_P&quot; persistent=&quot;true&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting var=&quot;indi.gains.att.q&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;2500&quot; shortname=&quot;kp_q&quot; param=&quot;STABILIZATION_INDI_REF_ERR_Q&quot; persistent=&quot;true&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting var=&quot;indi.gains.rate.q&quot; min=&quot;0&quot; step=&quot;0.1&quot; max=&quot;100&quot; shortname=&quot;kd_q&quot; param=&quot;STABILIZATION_INDI_REF_RATE_P&quot; persistent=&quot;true&quot;/&gt;</div>
 <div class="line">        &lt;dl_setting var=&quot;indi.g1.q&quot; min=&quot;0&quot; step=&quot;0.001&quot; max=&quot;10&quot; shortname=&quot;ctl_eff_q&quot; param=&quot;STABILIZATION_INDI_G1_Q&quot; persistent=&quot;true&quot;/&gt;</div>
-<div class="line">        &lt;dl_setting var=&quot;indi.reference_acceleration.err_r&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;2500&quot; shortname=&quot;kp_r&quot; param=&quot;STABILIZATION_INDI_REF_ERR_R&quot; persistent=&quot;true&quot;/&gt;</div>
-<div class="line">        &lt;dl_setting var=&quot;indi.reference_acceleration.rate_r&quot; min=&quot;0&quot; step=&quot;0.1&quot; max=&quot;100&quot; shortname=&quot;kd_r&quot; param=&quot;STABILIZATION_INDI_REF_RATE_P&quot; persistent=&quot;true&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting var=&quot;indi.gains.att.r&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;2500&quot; shortname=&quot;kp_r&quot; param=&quot;STABILIZATION_INDI_REF_ERR_R&quot; persistent=&quot;true&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting var=&quot;indi.gains.rate.r&quot; min=&quot;0&quot; step=&quot;0.1&quot; max=&quot;100&quot; shortname=&quot;kd_r&quot; param=&quot;STABILIZATION_INDI_REF_RATE_P&quot; persistent=&quot;true&quot;/&gt;</div>
 <div class="line">        &lt;dl_setting var=&quot;indi.g1.r&quot; min=&quot;0&quot; step=&quot;0.001&quot; max=&quot;10&quot; shortname=&quot;ctl_eff_r&quot; param=&quot;STABILIZATION_INDI_G1_R&quot; persistent=&quot;true&quot;/&gt;</div>
 <div class="line">        &lt;dl_setting var=&quot;indi.g2&quot; min=&quot;0&quot; step=&quot;0.01&quot; max=&quot;10&quot; shortname=&quot;g2&quot; param=&quot;STABILIZATION_INDI_G2_R&quot; persistent=&quot;true&quot;/&gt;</div>
 <div class="line">        &lt;dl_setting var=&quot;indi.adaptive&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;1&quot; shortname=&quot;use_adaptive&quot; values=&quot;FALSE|TRUE&quot; param=&quot;STABILIZATION_INDI_USE_ADAPTIVE&quot; type=&quot;uint8&quot; persistent=&quot;true&quot;/&gt;</div>
@@ -292,7 +287,9 @@ Raw stabilization_indi_simple.xml file:</h2>
 <div class="line">      &lt;/dl_settings&gt;</div>
 <div class="line">    &lt;/dl_settings&gt;</div>
 <div class="line">  &lt;/settings&gt;</div>
-<div class="line">  &lt;autoload name=&quot;stabilization&quot; type=&quot;rotorcraft&quot;/&gt;</div>
+<div class="line">  &lt;dep&gt;</div>
+<div class="line">    &lt;depends&gt;stabilization_rotorcraft&lt;/depends&gt;</div>
+<div class="line">  &lt;/dep&gt;</div>
 <div class="line">  &lt;header&gt;</div>
 <div class="line">    &lt;file name=&quot;stabilization_indi_simple.h&quot;/&gt;</div>
 <div class="line">  &lt;/header&gt;</div>
@@ -313,7 +310,7 @@ Raw stabilization_indi_simple.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:03:41 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:03:59 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

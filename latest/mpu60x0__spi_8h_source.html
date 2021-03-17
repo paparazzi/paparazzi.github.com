@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -162,11 +162,11 @@ $(document).ready(function(){initNavTree('mpu60x0__spi_8h_source.html','');});
 <div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="mpu60x0__spi_8h.html">   57</a></span>&#160;  <span class="keyword">union </span>{</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">struct </span><a class="code" href="group__math__algebra__int.html#structInt16Vect3">Int16Vect3</a> vect;           </div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> value[3];                 </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  } <a class="code" href="mpu60x0__spi_8h.html#af580ea4addf5dbf9aeccd2cfba1a93c3">data_accel</a>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  } <a class="code" href="mpu60x0__spi_8h.html#a54233b9b772bfa95ec498a81ccd753a2">data_accel</a>;</div>
 <div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="mpu60x0__spi_8h.html">   61</a></span>&#160;  <span class="keyword">union </span>{</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">struct </span><a class="code" href="group__math__algebra__int.html#structInt16Rates">Int16Rates</a> rates;          </div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> value[3];                 </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  } <a class="code" href="mpu60x0__spi_8h.html#ae34c33d90474903f2eae4d0767f1a303">data_rates</a>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  } <a class="code" href="mpu60x0__spi_8h.html#a455df5f4dbc3c16d4354e9b82d85a1a5">data_rates</a>;</div>
 <div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="mpu60x0__spi_8h.html#a42e73d0161d82e691de36ed8be0a0bbf">   65</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="mpu60x0__spi_8h.html#a42e73d0161d82e691de36ed8be0a0bbf">temp</a>;                         </div>
 <div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="mpu60x0__spi_8h.html#a20028497bd8f071099b0f020462ac3f6">   66</a></span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="mpu60x0__spi_8h.html#a20028497bd8f071099b0f020462ac3f6">data_ext</a>[<a class="code" href="mpu60x0__spi_8h.html#a6b700f6c51b798ceb4ba491922f6531e">MPU60X0_BUFFER_EXT_LEN</a>];</div>
 <div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="mpu60x0__spi_8h.html#a312df0b73091e56a69d246626955974a">   67</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="mpu60x0_8h.html#structMpu60x0Config">Mpu60x0Config</a> <a class="code" href="mpu60x0__spi_8h.html#a312df0b73091e56a69d246626955974a">config</a>;</div>
@@ -189,9 +189,11 @@ $(document).ready(function(){initNavTree('mpu60x0__spi_8h_source.html','');});
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;}</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#endif // MPU60X0_SPI_H</span></div>
+<div class="ttc" id="mpu60x0__spi_8h_html_a455df5f4dbc3c16d4354e9b82d85a1a5"><div class="ttname"><a href="mpu60x0__spi_8h.html#a455df5f4dbc3c16d4354e9b82d85a1a5">Mpu60x0_Spi::data_rates</a></div><div class="ttdeci">union Mpu60x0_Spi::@334 data_rates</div></div>
 <div class="ttc" id="mpu60x0__spi_8h_html_a20028497bd8f071099b0f020462ac3f6"><div class="ttname"><a href="mpu60x0__spi_8h.html#a20028497bd8f071099b0f020462ac3f6">Mpu60x0_Spi::data_ext</a></div><div class="ttdeci">uint8_t data_ext[MPU60X0_BUFFER_EXT_LEN]</div><div class="ttdef"><b>Definition:</b> <a href="mpu60x0__spi_8h_source.html#l00066">mpu60x0_spi.h:66</a></div></div>
 <div class="ttc" id="mpu60x0__spi_8h_html_aa2cbe17783d82d3f1ccf6661da0fd8eda7dfcb13e518cebdb63c2e13fbeea2227"><div class="ttname"><a href="mpu60x0__spi_8h.html#aa2cbe17783d82d3f1ccf6661da0fd8eda7dfcb13e518cebdb63c2e13fbeea2227">MPU60X0_SPI_CONF_I2C_MST_CLK</a></div><div class="ttdef"><b>Definition:</b> <a href="mpu60x0__spi_8h_source.html#l00044">mpu60x0_spi.h:44</a></div></div>
 <div class="ttc" id="mpu60x0_8h_html_a3fc60a7dce9a9526f7ac5feab119c5ae"><div class="ttname"><a href="mpu60x0_8h.html#a3fc60a7dce9a9526f7ac5feab119c5ae">Mpu60x0Config::initialized</a></div><div class="ttdeci">bool initialized</div><div class="ttdoc">config done flag </div><div class="ttdef"><b>Definition:</b> <a href="mpu60x0_8h_source.html#l00149">mpu60x0.h:149</a></div></div>
+<div class="ttc" id="mpu60x0__spi_8h_html_a54233b9b772bfa95ec498a81ccd753a2"><div class="ttname"><a href="mpu60x0__spi_8h.html#a54233b9b772bfa95ec498a81ccd753a2">Mpu60x0_Spi::data_accel</a></div><div class="ttdeci">union Mpu60x0_Spi::@333 data_accel</div></div>
 <div class="ttc" id="mpu60x0__spi_8h_html_a312df0b73091e56a69d246626955974a"><div class="ttname"><a href="mpu60x0__spi_8h.html#a312df0b73091e56a69d246626955974a">Mpu60x0_Spi::config</a></div><div class="ttdeci">struct Mpu60x0Config config</div><div class="ttdef"><b>Definition:</b> <a href="mpu60x0__spi_8h_source.html#l00067">mpu60x0_spi.h:67</a></div></div>
 <div class="ttc" id="group__math__algebra__int_html_structInt16Vect3"><div class="ttname"><a href="group__math__algebra__int.html#structInt16Vect3">Int16Vect3</a></div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__int_8h_source.html#l00062">pprz_algebra_int.h:62</a></div></div>
 <div class="ttc" id="mpu60x0_8h_html_structMpu60x0Config"><div class="ttname"><a href="mpu60x0_8h.html#structMpu60x0Config">Mpu60x0Config</a></div><div class="ttdef"><b>Definition:</b> <a href="mpu60x0_8h_source.html#l00138">mpu60x0.h:138</a></div></div>
@@ -205,7 +207,6 @@ $(document).ready(function(){initNavTree('mpu60x0__spi_8h_source.html','');});
 <div class="ttc" id="mpu60x0__spi_8h_html_ab3afb083a7e2aebe259e155720138e4f"><div class="ttname"><a href="mpu60x0__spi_8h.html#ab3afb083a7e2aebe259e155720138e4f">mpu60x0_spi_periodic</a></div><div class="ttdeci">static void mpu60x0_spi_periodic(struct Mpu60x0_Spi *mpu)</div><div class="ttdoc">convenience function: read or start configuration if not already initialized </div><div class="ttdef"><b>Definition:</b> <a href="mpu60x0__spi_8h_source.html#l00078">mpu60x0_spi.h:78</a></div></div>
 <div class="ttc" id="mpu60x0__spi_8h_html_a9beb9ee594db50aaa29bb140cb0ac68c"><div class="ttname"><a href="mpu60x0__spi_8h.html#a9beb9ee594db50aaa29bb140cb0ac68c">Mpu60x0_Spi::slave_init_status</a></div><div class="ttdeci">enum Mpu60x0SpiSlaveInitStatus slave_init_status</div><div class="ttdef"><b>Definition:</b> <a href="mpu60x0__spi_8h_source.html#l00068">mpu60x0_spi.h:68</a></div></div>
 <div class="ttc" id="mpu60x0__spi_8h_html_aa2cbe17783d82d3f1ccf6661da0fd8edae0a348d3d96053d7dc168bc3dd588b62"><div class="ttname"><a href="mpu60x0__spi_8h.html#aa2cbe17783d82d3f1ccf6661da0fd8edae0a348d3d96053d7dc168bc3dd588b62">MPU60X0_SPI_CONF_I2C_MST_EN</a></div><div class="ttdef"><b>Definition:</b> <a href="mpu60x0__spi_8h_source.html#l00046">mpu60x0_spi.h:46</a></div></div>
-<div class="ttc" id="mpu60x0__spi_8h_html_af580ea4addf5dbf9aeccd2cfba1a93c3"><div class="ttname"><a href="mpu60x0__spi_8h.html#af580ea4addf5dbf9aeccd2cfba1a93c3">Mpu60x0_Spi::data_accel</a></div><div class="ttdeci">union Mpu60x0_Spi::@331 data_accel</div></div>
 <div class="ttc" id="mpu60x0__spi_8h_html_a38db2021ec4d907253fef18636ebaa19"><div class="ttname"><a href="mpu60x0__spi_8h.html#a38db2021ec4d907253fef18636ebaa19">Mpu60x0_Spi::spi_trans</a></div><div class="ttdeci">struct spi_transaction spi_trans</div><div class="ttdef"><b>Definition:</b> <a href="mpu60x0__spi_8h_source.html#l00053">mpu60x0_spi.h:53</a></div></div>
 <div class="ttc" id="mpu60x0__spi_8h_html_aa2cbe17783d82d3f1ccf6661da0fd8eda82fcc785fe8b006f0096a0ea26b34e80"><div class="ttname"><a href="mpu60x0__spi_8h.html#aa2cbe17783d82d3f1ccf6661da0fd8eda82fcc785fe8b006f0096a0ea26b34e80">MPU60X0_SPI_CONF_DONE</a></div><div class="ttdef"><b>Definition:</b> <a href="mpu60x0__spi_8h_source.html#l00048">mpu60x0_spi.h:48</a></div></div>
 <div class="ttc" id="types_8h_html_a269259c924dce846340ddbb810db2e3c"><div class="ttname"><a href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a></div><div class="ttdeci">signed short int16_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00017">types.h:17</a></div></div>
@@ -226,14 +227,13 @@ $(document).ready(function(){initNavTree('mpu60x0__spi_8h_source.html','');});
 <div class="ttc" id="mpu60x0__spi_8h_html_a352dbef3019f057741cf1494e4b6f36d"><div class="ttname"><a href="mpu60x0__spi_8h.html#a352dbef3019f057741cf1494e4b6f36d">mpu60x0_spi_event</a></div><div class="ttdeci">void mpu60x0_spi_event(struct Mpu60x0_Spi *mpu)</div><div class="ttdef"><b>Definition:</b> <a href="mpu60x0__spi_8c_source.html#l00128">mpu60x0_spi.c:128</a></div></div>
 <div class="ttc" id="pprz__algebra__int_8h_html"><div class="ttname"><a href="pprz__algebra__int_8h.html">pprz_algebra_int.h</a></div><div class="ttdoc">Paparazzi fixed point algebra. </div></div>
 <div class="ttc" id="mpu60x0__spi_8h_html_aa2cbe17783d82d3f1ccf6661da0fd8eda6fd6e45784e95c8bf03789a045c42a17"><div class="ttname"><a href="mpu60x0__spi_8h.html#aa2cbe17783d82d3f1ccf6661da0fd8eda6fd6e45784e95c8bf03789a045c42a17">MPU60X0_SPI_CONF_UNINIT</a></div><div class="ttdef"><b>Definition:</b> <a href="mpu60x0__spi_8h_source.html#l00043">mpu60x0_spi.h:43</a></div></div>
-<div class="ttc" id="mpu60x0__spi_8h_html_ae34c33d90474903f2eae4d0767f1a303"><div class="ttname"><a href="mpu60x0__spi_8h.html#ae34c33d90474903f2eae4d0767f1a303">Mpu60x0_Spi::data_rates</a></div><div class="ttdeci">union Mpu60x0_Spi::@332 data_rates</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_0a48ba2c0a76794adfddddc873522f67.html">peripherals</a></li><li class="navelem"><a class="el" href="mpu60x0__spi_8h.html">mpu60x0_spi.h</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:02:31 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:02:44 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

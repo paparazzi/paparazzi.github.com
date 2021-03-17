@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -395,7 +395,7 @@ $(document).ready(function(){initNavTree('meteo__stick__calib_8c_source.html',''
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;          <span class="keyword">const</span> <span class="keywordtype">float</span> <a class="code" href="discrete__ekf__no__north_8c.html#ae4ce3408adfdc26332e4271426728dc2a0aa2f691294ad7a0afdbb8f6f2323868">v2</a> = <a class="code" href="meteo__stick__calib_8c.html#a4b62e9f35fe630d5dfcb12122ac69ff4">mtostk_apply_polynomial</a>(params-&gt;<a class="code" href="meteo__stick__calib_8h.html#a2630ba55062dc29a41e39133fd295c1a">coeffs</a>[i + 1], params-&gt;<a class="code" href="meteo__stick__calib_8h.html#a0fbc0156125550d13d6414ae381a4950">num_coeff</a>, value);</div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;          <span class="comment">// Linear interpolation</span></div>
 <div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;          <span class="keyword">const</span> <span class="keywordtype">float</span> <a class="code" href="textons_8c.html#ab1551d8043c2aa4410fb7dbb1fe3be7b">alpha</a> = (t2 - temp) / (t2 - t1);</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;          <span class="keywordflow">return</span> (alpha * v1 + (1.0f - alpha) * <a class="code" href="discrete__ekf__no__north_8c.html#ae4ce3408adfdc26332e4271426728dc2a0aa2f691294ad7a0afdbb8f6f2323868">v2</a>);</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;          <span class="keywordflow">return</span> (alpha * v1 + (1.0<a class="code" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a> - alpha) * <a class="code" href="discrete__ekf__no__north_8c.html#ae4ce3408adfdc26332e4271426728dc2a0aa2f691294ad7a0afdbb8f6f2323868">v2</a>);</div>
 <div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        }</div>
 <div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;      }</div>
 <div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;      <span class="keywordflow">return</span> value; <span class="comment">// This should never append</span></div>
@@ -431,6 +431,7 @@ $(document).ready(function(){initNavTree('meteo__stick__calib_8c_source.html',''
 <div class="ttc" id="meteo__stick__calib_8c_html_ad24976b3062e9d136dedf967aa0cd455"><div class="ttname"><a href="meteo__stick__calib_8c.html#ad24976b3062e9d136dedf967aa0cd455">CalibrationPoint::value</a></div><div class="ttdeci">float value</div><div class="ttdef"><b>Definition:</b> <a href="meteo__stick__calib_8c_source.html#l00035">meteo_stick_calib.c:35</a></div></div>
 <div class="ttc" id="meteo__stick__calib_8c_html_a04e560e6f749743678197a9da1c782e9"><div class="ttname"><a href="meteo__stick__calib_8c.html#a04e560e6f749743678197a9da1c782e9">mtostk_populate_uuid_from_buffer</a></div><div class="ttdeci">static bool mtostk_populate_uuid_from_buffer(char *str, uint32_t **eeprom_buffer)</div><div class="ttdef"><b>Definition:</b> <a href="meteo__stick__calib_8c_source.html#l00176">meteo_stick_calib.c:176</a></div></div>
 <div class="ttc" id="meteo__stick__calib_8h_html_structCalibration__params"><div class="ttname"><a href="meteo__stick__calib_8h.html#structCalibration__params">Calibration_params</a></div><div class="ttdef"><b>Definition:</b> <a href="meteo__stick__calib_8h_source.html#l00081">meteo_stick_calib.h:81</a></div></div>
+<div class="ttc" id="wedgebug_8c_html_a05fd2dba3354a98f1a00b7c7ffc12b13"><div class="ttname"><a href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a></div><div class="ttdeci">uint16_t f</div><div class="ttdoc">Camera baseline, in meters (i.e. horizontal distance between the two cameras of the stereo setup) ...</div><div class="ttdef"><b>Definition:</b> <a href="wedgebug_8c_source.html#l00204">wedgebug.c:204</a></div></div>
 <div class="ttc" id="meteo__stick__calib_8h_html_a5a5b4608f0c18d4779b2dd69376dd41d"><div class="ttname"><a href="meteo__stick__calib_8h.html#a5a5b4608f0c18d4779b2dd69376dd41d">MTOSTK_MAX_TEMP_ARRAY_SIZE</a></div><div class="ttdeci">#define MTOSTK_MAX_TEMP_ARRAY_SIZE</div><div class="ttdef"><b>Definition:</b> <a href="meteo__stick__calib_8h_source.html#l00040">meteo_stick_calib.h:40</a></div></div>
 <div class="ttc" id="types_8h_html_a2ba621978a511250f7250fb10e05ffbe"><div class="ttname"><a href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a></div><div class="ttdeci">signed long int32_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00019">types.h:19</a></div></div>
 <div class="ttc" id="meteo__stick__calib_8h_html_structSensors__params"><div class="ttname"><a href="meteo__stick__calib_8h.html#structSensors__params">Sensors_params</a></div><div class="ttdoc">Calibration_params structure initialized with calibvration data read from meteostick eeprom...</div><div class="ttdef"><b>Definition:</b> <a href="meteo__stick__calib_8h_source.html#l00073">meteo_stick_calib.h:73</a></div></div>
@@ -452,7 +453,7 @@ $(document).ready(function(){initNavTree('meteo__stick__calib_8c_source.html',''
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_dcc9af59dc35b42e32db80b18066e136.html">meteo</a></li><li class="navelem"><a class="el" href="meteo__stick__calib_8c.html">meteo_stick_calib.c</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:02:26 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:02:38 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

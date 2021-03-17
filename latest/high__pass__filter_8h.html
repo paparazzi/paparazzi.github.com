@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -133,7 +133,7 @@ $(document).ready(function(){initNavTree('high__pass__filter_8h.html','');});
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="high__pass__filter_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2filters_2high__pass__filter_8hdep" alt=""/></div>
 <map name="sw_2airborne_2filters_2high__pass__filter_8hdep" id="sw_2airborne_2filters_2high__pass__filter_8hdep">
-<area shape="rect" id="node2" href="nps__fdm__gazebo_8cpp.html" title="Flight Dynamics Model (FDM) for NPS using Gazebo. " alt="" coords="5,95,161,136"/></map>
+<area shape="rect" id="node2" href="guidance__indi__hybrid_8h.html" title="A guidance mode based on Incremental Nonlinear Dynamic Inversion Come to ICRA2016 to learn more! ..." alt="" coords="5,95,176,151"/><area shape="rect" id="node4" href="nps__fdm__gazebo_8cpp.html" title="Flight Dynamics Model (FDM) for NPS using Gazebo. " alt="" coords="201,102,357,143"/><area shape="rect" id="node3" href="guidance__indi__hybrid_8c.html" title="A guidance mode based on Incremental Nonlinear Dynamic Inversion Come to IROS2016 to learn more! ..." alt="" coords="5,199,176,255"/></map>
 </div>
 </div>
 <p><a href="high__pass__filter_8h_source.html">Go to the source code of this file.</a></p>
@@ -158,7 +158,7 @@ Functions</h2></td></tr>
 <tr class="memitem:abde8c8ff9b42623f6ca935ec25a04268"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="high__pass__filter_8h.html#abde8c8ff9b42623f6ca935ec25a04268">get_first_order_high_pass</a> (struct <a class="el" href="high__pass__filter_8h.html#structFirstOrderHighPass">FirstOrderHighPass</a> *filter)</td></tr>
 <tr class="memdesc:abde8c8ff9b42623f6ca935ec25a04268"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current value of the first order high pass filter.  <a href="#abde8c8ff9b42623f6ca935ec25a04268">More...</a><br /></td></tr>
 <tr class="separator:abde8c8ff9b42623f6ca935ec25a04268"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a457ae193ef3786a2e14421befe115ba7"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="high__pass__filter_8h.html#a457ae193ef3786a2e14421befe115ba7">init_fourth_order_high_pass</a> (struct <a class="el" href="high__pass__filter_8h.html#structFourthOrderHighPass">FourthOrderHighPass</a> *filter, double *a, double *b, double value)</td></tr>
+<tr class="memitem:a457ae193ef3786a2e14421befe115ba7"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="high__pass__filter_8h.html#a457ae193ef3786a2e14421befe115ba7">init_fourth_order_high_pass</a> (struct <a class="el" href="high__pass__filter_8h.html#structFourthOrderHighPass">FourthOrderHighPass</a> *filter, double *a, double *<a class="el" href="wedgebug_8c.html#a83fc1af92e29717b4513d121b0c72c7d">b</a>, double value)</td></tr>
 <tr class="memdesc:a457ae193ef3786a2e14421befe115ba7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init fourth order high pass filter.  <a href="#a457ae193ef3786a2e14421befe115ba7">More...</a><br /></td></tr>
 <tr class="separator:a457ae193ef3786a2e14421befe115ba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e6c0e5e4f866a8fa2f580d4c4b1d626"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="high__pass__filter_8h.html#a2e6c0e5e4f866a8fa2f580d4c4b1d626">update_fourth_order_high_pass</a> (struct <a class="el" href="high__pass__filter_8h.html#structFourthOrderHighPass">FourthOrderHighPass</a> *filter, double value)</td></tr>
@@ -507,7 +507,7 @@ output history </td></tr>
 
 <p>Definition at line <a class="el" href="high__pass__filter_8h_source.html#l00070">70</a> of file <a class="el" href="high__pass__filter_8h_source.html">high_pass_filter.h</a>.</p>
 
-<p>References <a class="el" href="high__pass__filter_8h_source.html#l00040">FirstOrderHighPass::last_in</a>, <a class="el" href="high__pass__filter_8h_source.html#l00041">FirstOrderHighPass::last_out</a>, and <a class="el" href="high__pass__filter_8h_source.html#l00039">FirstOrderHighPass::time_const</a>.</p>
+<p>References <a class="el" href="wedgebug_8c_source.html#l00204">f</a>, <a class="el" href="high__pass__filter_8h_source.html#l00040">FirstOrderHighPass::last_in</a>, <a class="el" href="high__pass__filter_8h_source.html#l00041">FirstOrderHighPass::last_out</a>, and <a class="el" href="high__pass__filter_8h_source.html#l00039">FirstOrderHighPass::time_const</a>.</p>
 
 <p>Referenced by <a class="el" href="nps__fdm__gazebo_8cpp_source.html#l00637">gazebo_write()</a>.</p>
 
@@ -578,7 +578,7 @@ output history </td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_1444106569909aede49a887d28257b90.html">filters</a></li><li class="navelem"><a class="el" href="high__pass__filter_8h.html">high_pass_filter.h</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:02:55 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:03:10 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

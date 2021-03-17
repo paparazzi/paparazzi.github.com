@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -179,7 +179,7 @@ $(document).ready(function(){initNavTree('lis3mdl_8h_source.html','');});
 <div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="lis3mdl_8h.html">   75</a></span>&#160;  <span class="keyword">union </span>{</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">struct </span><a class="code" href="group__math__algebra__int.html#structInt16Vect3">Int16Vect3</a> vect;           </div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> value[3];                 </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  } <a class="code" href="lis3mdl_8h.html#a83a88dfcf41ac94c5013bb70f5f8b40b">data</a>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  } <a class="code" href="lis3mdl_8h.html#a508572687ecc7ab81467d12c49e63450">data</a>;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;};</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">// Functions</span></div>
@@ -219,9 +219,9 @@ $(document).ready(function(){initNavTree('lis3mdl_8h_source.html','');});
 <div class="ttc" id="sonar__bebop_8c_html_a37e90f5e3bd99fac2021fb3a326607d4"><div class="ttname"><a href="sonar__bebop_8c.html#a37e90f5e3bd99fac2021fb3a326607d4">mode</a></div><div class="ttdeci">static uint8_t mode</div><div class="ttdoc">mode holds the current sonar mode mode = 0 used at high altitude, uses 16 wave patterns mode = 1 used...</div><div class="ttdef"><b>Definition:</b> <a href="sonar__bebop_8c_source.html#l00069">sonar_bebop.c:69</a></div></div>
 <div class="ttc" id="lis3mdl_8h_html_a175c6c0dacdf50a6efba75d61652488c"><div class="ttname"><a href="lis3mdl_8h.html#a175c6c0dacdf50a6efba75d61652488c">Lis3mdl::status</a></div><div class="ttdeci">enum Lis3mdlStatus status</div><div class="ttdoc">init status </div><div class="ttdef"><b>Definition:</b> <a href="lis3mdl_8h_source.html#l00073">lis3mdl.h:73</a></div></div>
 <div class="ttc" id="lis3mdl_8h_html_ac9bc501edf81be7fe225feabca69af21"><div class="ttname"><a href="lis3mdl_8h.html#ac9bc501edf81be7fe225feabca69af21">lis3mdl_periodic</a></div><div class="ttdeci">static void lis3mdl_periodic(struct Lis3mdl *mag)</div><div class="ttdoc">convenience function: read or start configuration if not already initialized </div><div class="ttdef"><b>Definition:</b> <a href="lis3mdl_8h_source.html#l00088">lis3mdl.h:88</a></div></div>
+<div class="ttc" id="lis3mdl_8h_html_a508572687ecc7ab81467d12c49e63450"><div class="ttname"><a href="lis3mdl_8h.html#a508572687ecc7ab81467d12c49e63450">Lis3mdl::data</a></div><div class="ttdeci">union Lis3mdl::@323 data</div></div>
 <div class="ttc" id="lis3mdl_8h_html_a4d1112c9c72730961df618e5d64f3c5c"><div class="ttname"><a href="lis3mdl_8h.html#a4d1112c9c72730961df618e5d64f3c5c">Lis3mdl::data_available</a></div><div class="ttdeci">volatile bool data_available</div><div class="ttdoc">data ready flag </div><div class="ttdef"><b>Definition:</b> <a href="lis3mdl_8h_source.html#l00074">lis3mdl.h:74</a></div></div>
 <div class="ttc" id="lis3mdl_8h_html_a2d89a1941c5e7ef54d8c382b67b01932"><div class="ttname"><a href="lis3mdl_8h.html#a2d89a1941c5e7ef54d8c382b67b01932">Lis3mdl::initialized</a></div><div class="ttdeci">bool initialized</div><div class="ttdoc">config done flag </div><div class="ttdef"><b>Definition:</b> <a href="lis3mdl_8h_source.html#l00072">lis3mdl.h:72</a></div></div>
-<div class="ttc" id="lis3mdl_8h_html_a83a88dfcf41ac94c5013bb70f5f8b40b"><div class="ttname"><a href="lis3mdl_8h.html#a83a88dfcf41ac94c5013bb70f5f8b40b">Lis3mdl::data</a></div><div class="ttdeci">union Lis3mdl::@321 data</div></div>
 <div class="ttc" id="lis3mdl_8h_html_af00752ab8b60a2dc96c19c54901412b1"><div class="ttname"><a href="lis3mdl_8h.html#af00752ab8b60a2dc96c19c54901412b1">lis3mdl_event</a></div><div class="ttdeci">void lis3mdl_event(struct Lis3mdl *mag)</div><div class="ttdef"><b>Definition:</b> <a href="lis3mdl_8c_source.html#l00127">lis3mdl.c:127</a></div></div>
 <div class="ttc" id="pprz__algebra__int_8h_html"><div class="ttname"><a href="pprz__algebra__int_8h.html">pprz_algebra_int.h</a></div><div class="ttdoc">Paparazzi fixed point algebra. </div></div>
 <div class="ttc" id="i2c_8h_html"><div class="ttname"><a href="i2c_8h.html">i2c.h</a></div><div class="ttdoc">Architecture independent I2C (Inter-Integrated Circuit Bus) API. </div></div>
@@ -231,7 +231,7 @@ $(document).ready(function(){initNavTree('lis3mdl_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_0a48ba2c0a76794adfddddc873522f67.html">peripherals</a></li><li class="navelem"><a class="el" href="lis3mdl_8h.html">lis3mdl.h</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:02:31 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:02:43 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

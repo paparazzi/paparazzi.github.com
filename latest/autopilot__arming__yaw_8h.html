@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -117,9 +117,10 @@ $(document).ready(function(){initNavTree('autopilot__arming__yaw_8h.html','');})
 
 <p>Arm the motors by with max yaw stick.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="rotorcraft_2autopilot__rc__helpers_8h_source.html">autopilot_rc_helpers.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="autopilot__arming__common_8h_source.html">autopilot_arming_common.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="rotorcraft_2autopilot__firmware_8h_source.html">autopilot_firmware.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="autopilot_8h_source.html">autopilot.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="sys__time_8h_source.html">mcu_periph/sys_time.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for autopilot_arming_yaw.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -127,7 +128,7 @@ $(document).ready(function(){initNavTree('autopilot__arming__yaw_8h.html','');})
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="autopilot__arming__yaw_8h__incl.png" border="0" usemap="#sw_2airborne_2firmwares_2rotorcraft_2autopilot__arming__yaw_8h" alt=""/></div>
 <map name="sw_2airborne_2firmwares_2rotorcraft_2autopilot__arming__yaw_8h" id="sw_2airborne_2firmwares_2rotorcraft_2autopilot__arming__yaw_8h">
-<area shape="rect" id="node2" href="rotorcraft_2autopilot__rc__helpers_8h.html" title="Some helper functions to check RC sticks. " alt="" coords="327,109,490,136"/><area shape="rect" id="node10" href="rotorcraft_2autopilot__firmware_8h.html" title="Rotorcraft specific autopilot interface and initialization. " alt="" coords="542,109,694,136"/><area shape="rect" id="node12" href="autopilot_8h.html" title="Core autopilot interface common to all firmwares. " alt="" coords="686,184,777,211"/><area shape="rect" id="node4" href="radio__control_8h.html" title="subsystems/radio_control.h" alt="" coords="173,184,372,211"/><area shape="rect" id="node5" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API " alt="" coords="17,259,70,285"/><area shape="rect" id="node7" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="485,259,581,285"/><area shape="rect" id="node8" href="inttypes_8h.html" title="inttypes.h" alt="" coords="490,341,575,367"/><area shape="rect" id="node13" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="923,259,990,285"/><area shape="rect" id="node14" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="1031,423,1210,449"/><area shape="rect" id="node21" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="1304,423,1495,449"/><area shape="rect" id="node23" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="707,333,857,375"/><area shape="rect" id="node25" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="881,333,1032,375"/><area shape="rect" id="node26" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="1172,333,1336,375"/><area shape="rect" id="node15" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="1303,497,1458,524"/><area shape="rect" id="node19" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="1027,497,1177,524"/><area shape="rect" id="node24" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="757,423,881,449"/></map>
+<area shape="rect" id="node2" href="autopilot__arming__common_8h.html" title="Arming procedure for rotorcraft, common definitions. " alt="" coords="336,109,543,136"/><area shape="rect" id="node11" href="rotorcraft_2autopilot__firmware_8h.html" title="Rotorcraft specific autopilot interface and initialization. " alt="" coords="679,109,831,136"/><area shape="rect" id="node13" href="autopilot_8h.html" title="Core autopilot interface common to all firmwares. " alt="" coords="823,184,914,211"/><area shape="rect" id="node31" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="485,341,655,367"/><area shape="rect" id="node3" href="rotorcraft_2autopilot__rc__helpers_8h.html" title="Some helper functions to check RC sticks. " alt="" coords="334,184,497,211"/><area shape="rect" id="node5" href="radio__control_8h.html" title="subsystems/radio_control.h" alt="" coords="180,259,379,285"/><area shape="rect" id="node6" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API " alt="" coords="17,341,70,367"/><area shape="rect" id="node8" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="679,341,775,367"/><area shape="rect" id="node9" href="inttypes_8h.html" title="inttypes.h" alt="" coords="687,430,773,457"/><area shape="rect" id="node14" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="1381,259,1447,285"/><area shape="rect" id="node15" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="1219,430,1398,457"/><area shape="rect" id="node22" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="1473,430,1664,457"/><area shape="rect" id="node24" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="901,333,1052,375"/><area shape="rect" id="node26" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="1076,333,1227,375"/><area shape="rect" id="node27" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="1353,333,1517,375"/><area shape="rect" id="node16" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="1473,512,1627,539"/><area shape="rect" id="node20" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="1247,512,1397,539"/><area shape="rect" id="node25" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="952,430,1076,457"/></map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
@@ -136,7 +137,7 @@ $(document).ready(function(){initNavTree('autopilot__arming__yaw_8h.html','');})
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="autopilot__arming__yaw_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2firmwares_2rotorcraft_2autopilot__arming__yaw_8hdep" alt=""/></div>
 <map name="sw_2airborne_2firmwares_2rotorcraft_2autopilot__arming__yaw_8hdep" id="sw_2airborne_2firmwares_2rotorcraft_2autopilot__arming__yaw_8hdep">
-<area shape="rect" id="node2" href="rotorcraft_2autopilot__generated_8c.html" title="Generated autopilot implementation. " alt="" coords="5,109,167,165"/><area shape="rect" id="node3" href="rotorcraft_2autopilot__static_8c.html" title="Static autopilot implementation. " alt="" coords="191,109,352,165"/></map>
+<area shape="rect" id="node2" href="autopilot__arming_8h.html" title="Arming procedure for rotorcraft Several options can be selected: " alt="" coords="97,109,259,165"/><area shape="rect" id="node3" href="rotorcraft_2autopilot__generated_8c.html" title="Generated autopilot implementation. " alt="" coords="5,213,167,269"/><area shape="rect" id="node4" href="rotorcraft_2autopilot__static_8c.html" title="Static autopilot implementation. " alt="" coords="191,213,352,269"/></map>
 </div>
 </div>
 <p><a href="autopilot__arming__yaw_8h_source.html">Go to the source code of this file.</a></p>
@@ -146,6 +147,8 @@ Macros</h2></td></tr>
 <tr class="memitem:a2ac6665da7b4202f8acb8c81e491e051"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="autopilot__arming__yaw_8h.html#a2ac6665da7b4202f8acb8c81e491e051">MOTOR_ARMING_DELAY</a>&#160;&#160;&#160;40</td></tr>
 <tr class="memdesc:a2ac6665da7b4202f8acb8c81e491e051"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delay until motors are armed/disarmed.  <a href="#a2ac6665da7b4202f8acb8c81e491e051">More...</a><br /></td></tr>
 <tr class="separator:a2ac6665da7b4202f8acb8c81e491e051"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2f55be9cfe5afe254e323737f93fa46"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="autopilot__arming__yaw_8h.html#ad2f55be9cfe5afe254e323737f93fa46">MOTOR_RE_ARM_TIME</a>&#160;&#160;&#160;10.0</td></tr>
+<tr class="separator:ad2f55be9cfe5afe254e323737f93fa46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1420d02e762bc62f5c261705752df798"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="autopilot__arming__yaw_8h.html#a1420d02e762bc62f5c261705752df798">YAW_MUST_BE_CENTERED</a>&#160;&#160;&#160;<a class="el" href="rtwtypes_8h.html#a41f9c5fb8b08eb5dc3edce4dcb37fee7">true</a></td></tr>
 <tr class="separator:a1420d02e762bc62f5c261705752df798"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a985af152303a23c900222c385d70bbc0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="autopilot__arming__yaw_8h.html#a985af152303a23c900222c385d70bbc0">YAW_MUST_BE_PUSHED</a>&#160;&#160;&#160;<a class="el" href="rtwtypes_8h.html#a65e9886d74aaee76545e83dd09011727">false</a></td></tr>
@@ -160,16 +163,17 @@ Enumerations</h2></td></tr>
 <a class="el" href="autopilot__arming__switch_8h.html#abd7b974a7084669ffc2893dd65db427ea5d9b03165b6d8bb49b125baa065bdc39">STATE_MOTORS_ON</a>, 
 <br />
 &#160;&#160;<a class="el" href="autopilot__arming__yaw_8h.html#abd7b974a7084669ffc2893dd65db427eac871e06c093989b5a0c4ae9a86d2c7c3">STATUS_INITIALISE_RC</a>, 
+<a class="el" href="autopilot__arming__yaw_8h.html#abd7b974a7084669ffc2893dd65db427ea12b582789a09bb23f5ee317a1b70ee62">STATUS_MOTORS_RC_KILLED</a>, 
 <a class="el" href="autopilot__arming__yaw_8h.html#abd7b974a7084669ffc2893dd65db427ea2303f080c0faeba87f42132d8f1ee8e3">STATUS_MOTORS_AUTOMATICALLY_OFF</a>, 
 <a class="el" href="autopilot__arming__yaw_8h.html#abd7b974a7084669ffc2893dd65db427ea3c67e7916fb25db63abc69e018731041">STATUS_MOTORS_AUTOMATICALLY_OFF_SAFETY_WAIT</a>, 
-<a class="el" href="autopilot__arming__yaw_8h.html#abd7b974a7084669ffc2893dd65db427ea1c5e91f9fda59f697904e5c62a36b50a">STATUS_MOTORS_OFF</a>, 
 <br />
-&#160;&#160;<a class="el" href="autopilot__arming__yaw_8h.html#abd7b974a7084669ffc2893dd65db427ea982690d535e212fc9b0fb62fba9cbe0c">STATUS_M_OFF_STICK_PUSHED</a>, 
+&#160;&#160;<a class="el" href="autopilot__arming__yaw_8h.html#abd7b974a7084669ffc2893dd65db427ea1c5e91f9fda59f697904e5c62a36b50a">STATUS_MOTORS_OFF</a>, 
+<a class="el" href="autopilot__arming__yaw_8h.html#abd7b974a7084669ffc2893dd65db427ea982690d535e212fc9b0fb62fba9cbe0c">STATUS_M_OFF_STICK_PUSHED</a>, 
 <a class="el" href="autopilot__arming__yaw_8h.html#abd7b974a7084669ffc2893dd65db427ea1038e5b4ad0d377703cc65cd88a6c150">STATUS_START_MOTORS</a>, 
 <a class="el" href="autopilot__arming__yaw_8h.html#abd7b974a7084669ffc2893dd65db427ea23b30718108ca8b16c6bac74aefb8312">STATUS_MOTORS_ON</a>, 
-<a class="el" href="autopilot__arming__yaw_8h.html#abd7b974a7084669ffc2893dd65db427eaa5e278d981c08f826c3e9c94a939567e">STATUS_M_ON_STICK_PUSHED</a>, 
 <br />
-&#160;&#160;<a class="el" href="autopilot__arming__yaw_8h.html#abd7b974a7084669ffc2893dd65db427ea3813a977c5b6604a17fd1c0f54893226">STATUS_STOP_MOTORS</a>
+&#160;&#160;<a class="el" href="autopilot__arming__yaw_8h.html#abd7b974a7084669ffc2893dd65db427eaa5e278d981c08f826c3e9c94a939567e">STATUS_M_ON_STICK_PUSHED</a>, 
+<a class="el" href="autopilot__arming__yaw_8h.html#abd7b974a7084669ffc2893dd65db427ea3813a977c5b6604a17fd1c0f54893226">STATUS_STOP_MOTORS</a>
 <br />
  }</td></tr>
 <tr class="memdesc:abd7b974a7084669ffc2893dd65db427e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Motors ON check state machine states.  <a href="autopilot__arming__yaw_8h.html#abd7b974a7084669ffc2893dd65db427e">More...</a><br /></td></tr>
@@ -195,6 +199,8 @@ Variables</h2></td></tr>
 <tr class="separator:afa4555e2285a10ca7a4e4b8a47948bac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeafb63fe9261ae6c6d4fd61514b4af07"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="autopilot__arming__switch_8h.html#abd7b974a7084669ffc2893dd65db427e">arming_state</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="autopilot__arming__yaw_8h.html#aeafb63fe9261ae6c6d4fd61514b4af07">autopilot_check_motor_status</a></td></tr>
 <tr class="separator:aeafb63fe9261ae6c6d4fd61514b4af07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51218ce0d5e9d1e121a258c66d8bc028"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="autopilot__arming__yaw_8h.html#a51218ce0d5e9d1e121a258c66d8bc028">motor_kill_time</a></td></tr>
+<tr class="separator:a51218ce0d5e9d1e121a258c66d8bc028"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Arm the motors by with max yaw stick. </p>
@@ -214,9 +220,25 @@ Variables</h2></td></tr>
 <p>Delay until motors are armed/disarmed. </p>
 <p>In number of rc frames received. So 40 is usually ~1s. </p>
 
-<p>Definition at line <a class="el" href="autopilot__arming__yaw_8h_source.html#l00041">41</a> of file <a class="el" href="autopilot__arming__yaw_8h_source.html">autopilot_arming_yaw.h</a>.</p>
+<p>Definition at line <a class="el" href="autopilot__arming__yaw_8h_source.html#l00042">42</a> of file <a class="el" href="autopilot__arming__yaw_8h_source.html">autopilot_arming_yaw.h</a>.</p>
 
-<p>Referenced by <a class="el" href="autopilot__arming__yaw_8h_source.html#l00113">autopilot_arming_check_motors_on()</a>.</p>
+<p>Referenced by <a class="el" href="autopilot__arming__yaw_8h_source.html#l00122">autopilot_arming_check_motors_on()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad2f55be9cfe5afe254e323737f93fa46"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MOTOR_RE_ARM_TIME&#160;&#160;&#160;10.0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="autopilot__arming__yaw_8h_source.html#l00046">46</a> of file <a class="el" href="autopilot__arming__yaw_8h_source.html">autopilot_arming_yaw.h</a>.</p>
+
+<p>Referenced by <a class="el" href="autopilot__arming__yaw_8h_source.html#l00122">autopilot_arming_check_motors_on()</a>.</p>
 
 </div>
 </div>
@@ -230,9 +252,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="autopilot__arming__yaw_8h_source.html#l00079">79</a> of file <a class="el" href="autopilot__arming__yaw_8h_source.html">autopilot_arming_yaw.h</a>.</p>
+<p>Definition at line <a class="el" href="autopilot__arming__yaw_8h_source.html#l00088">88</a> of file <a class="el" href="autopilot__arming__yaw_8h_source.html">autopilot_arming_yaw.h</a>.</p>
 
-<p>Referenced by <a class="el" href="autopilot__arming__yaw_8h_source.html#l00113">autopilot_arming_check_motors_on()</a>.</p>
+<p>Referenced by <a class="el" href="autopilot__arming__yaw_8h_source.html#l00122">autopilot_arming_check_motors_on()</a>.</p>
 
 </div>
 </div>
@@ -246,9 +268,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="autopilot__arming__yaw_8h_source.html#l00080">80</a> of file <a class="el" href="autopilot__arming__yaw_8h_source.html">autopilot_arming_yaw.h</a>.</p>
+<p>Definition at line <a class="el" href="autopilot__arming__yaw_8h_source.html#l00089">89</a> of file <a class="el" href="autopilot__arming__yaw_8h_source.html">autopilot_arming_yaw.h</a>.</p>
 
-<p>Referenced by <a class="el" href="autopilot__arming__yaw_8h_source.html#l00113">autopilot_arming_check_motors_on()</a>.</p>
+<p>Referenced by <a class="el" href="autopilot__arming__yaw_8h_source.html#l00122">autopilot_arming_check_motors_on()</a>.</p>
 
 </div>
 </div>
@@ -275,6 +297,8 @@ Variables</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="abd7b974a7084669ffc2893dd65db427eac871e06c093989b5a0c4ae9a86d2c7c3"></a>STATUS_INITIALISE_RC&#160;</td><td class="fielddoc">
 </td></tr>
+<tr><td class="fieldname"><a class="anchor" id="abd7b974a7084669ffc2893dd65db427ea12b582789a09bb23f5ee317a1b70ee62"></a>STATUS_MOTORS_RC_KILLED&#160;</td><td class="fielddoc">
+</td></tr>
 <tr><td class="fieldname"><a class="anchor" id="abd7b974a7084669ffc2893dd65db427ea2303f080c0faeba87f42132d8f1ee8e3"></a>STATUS_MOTORS_AUTOMATICALLY_OFF&#160;</td><td class="fielddoc">
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="abd7b974a7084669ffc2893dd65db427ea3c67e7916fb25db63abc69e018731041"></a>STATUS_MOTORS_AUTOMATICALLY_OFF_SAFETY_WAIT&#160;</td><td class="fielddoc">
@@ -293,7 +317,7 @@ Variables</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="autopilot__arming__yaw_8h_source.html#l00045">45</a> of file <a class="el" href="autopilot__arming__yaw_8h_source.html">autopilot_arming_yaw.h</a>.</p>
+<p>Definition at line <a class="el" href="autopilot__arming__yaw_8h_source.html#l00049">49</a> of file <a class="el" href="autopilot__arming__yaw_8h_source.html">autopilot_arming_yaw.h</a>.</p>
 
 </div>
 </div>
@@ -323,9 +347,9 @@ Variables</h2></td></tr>
 <p><a class="el" href="group__state__interface.html#structState" title="Structure holding vehicle state data. ">State</a> machine to check if motors should be turned ON or OFF. </p>
 <p>The motors start/stop when pushing the yaw stick without throttle until <a class="el" href="autopilot__arming__yaw_8h.html#a2ac6665da7b4202f8acb8c81e491e051" title="Delay until motors are armed/disarmed. ">MOTOR_ARMING_DELAY</a> is reached. An intermediate state prevents oscillating between ON and OFF while keeping the stick pushed. The stick must return to a neutral position before starting/stoping again. </p>
 
-<p>Definition at line <a class="el" href="autopilot__arming__yaw_8h_source.html#l00113">113</a> of file <a class="el" href="autopilot__arming__yaw_8h_source.html">autopilot_arming_yaw.h</a>.</p>
+<p>Definition at line <a class="el" href="autopilot__arming__yaw_8h_source.html#l00122">122</a> of file <a class="el" href="autopilot__arming__yaw_8h_source.html">autopilot_arming_yaw.h</a>.</p>
 
-<p>References <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00061">AP_ARMING_STATUS_ARMED</a>, <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00062">AP_ARMING_STATUS_DISARMING</a>, <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00063">AP_ARMING_STATUS_KILLED</a>, <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00059">AP_ARMING_STATUS_WAITING</a>, <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00035">AP_MODE_KILL</a>, <a class="el" href="autopilot_8h_source.html#l00067">pprz_autopilot::arming_status</a>, <a class="el" href="autopilot_8c_source.html#l00050">autopilot</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00087">autopilot_arming_check_valid()</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00058">autopilot_check_motor_status</a>, <a class="el" href="autopilot_8c_source.html#l00184">autopilot_get_mode()</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00057">autopilot_motors_on_counter</a>, <a class="el" href="autopilot_8c_source.html#l00247">autopilot_set_in_flight()</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00041">MOTOR_ARMING_DELAY</a>, <a class="el" href="autopilot_8h_source.html#l00068">pprz_autopilot::motors_on</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00046">STATUS_INITIALISE_RC</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00050">STATUS_M_OFF_STICK_PUSHED</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00053">STATUS_M_ON_STICK_PUSHED</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00047">STATUS_MOTORS_AUTOMATICALLY_OFF</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00048">STATUS_MOTORS_AUTOMATICALLY_OFF_SAFETY_WAIT</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00049">STATUS_MOTORS_OFF</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00052">STATUS_MOTORS_ON</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00051">STATUS_START_MOTORS</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00054">STATUS_STOP_MOTORS</a>, <a class="el" href="rotorcraft_2autopilot__rc__helpers_8h_source.html#l00040">THROTTLE_STICK_DOWN</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00079">YAW_MUST_BE_CENTERED</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00080">YAW_MUST_BE_PUSHED</a>, <a class="el" href="rotorcraft_2autopilot__rc__helpers_8h_source.html#l00045">YAW_STICK_CENTERED</a>, and <a class="el" href="rotorcraft_2autopilot__rc__helpers_8h_source.html#l00042">YAW_STICK_PUSHED</a>.</p>
+<p>References <a class="el" href="autopilot__arming__common_8h_source.html#l00036">AP_ARMING_STATUS_ARMED</a>, <a class="el" href="autopilot__arming__common_8h_source.html#l00037">AP_ARMING_STATUS_DISARMING</a>, <a class="el" href="autopilot__arming__common_8h_source.html#l00038">AP_ARMING_STATUS_KILLED</a>, <a class="el" href="autopilot__arming__common_8h_source.html#l00034">AP_ARMING_STATUS_WAITING</a>, <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00035">AP_MODE_KILL</a>, <a class="el" href="autopilot_8h_source.html#l00067">pprz_autopilot::arming_status</a>, <a class="el" href="autopilot_8c_source.html#l00050">autopilot</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00096">autopilot_arming_check_valid()</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00063">autopilot_check_motor_status</a>, <a class="el" href="autopilot_8c_source.html#l00184">autopilot_get_mode()</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00062">autopilot_motors_on_counter</a>, <a class="el" href="autopilot_8c_source.html#l00247">autopilot_set_in_flight()</a>, <a class="el" href="sys__time_8h_source.html#l00129">get_sys_time_float()</a>, <a class="el" href="rotorcraft_2autopilot__rc__helpers_8h_source.html#l00097">kill_switch_is_on()</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00042">MOTOR_ARMING_DELAY</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00064">motor_kill_time</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00046">MOTOR_RE_ARM_TIME</a>, <a class="el" href="autopilot_8h_source.html#l00068">pprz_autopilot::motors_on</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00050">STATUS_INITIALISE_RC</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00055">STATUS_M_OFF_STICK_PUSHED</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00058">STATUS_M_ON_STICK_PUSHED</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00052">STATUS_MOTORS_AUTOMATICALLY_OFF</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00053">STATUS_MOTORS_AUTOMATICALLY_OFF_SAFETY_WAIT</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00054">STATUS_MOTORS_OFF</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00057">STATUS_MOTORS_ON</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00051">STATUS_MOTORS_RC_KILLED</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00056">STATUS_START_MOTORS</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00059">STATUS_STOP_MOTORS</a>, <a class="el" href="rotorcraft_2autopilot__rc__helpers_8h_source.html#l00040">THROTTLE_STICK_DOWN</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00088">YAW_MUST_BE_CENTERED</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00089">YAW_MUST_BE_PUSHED</a>, <a class="el" href="rotorcraft_2autopilot__rc__helpers_8h_source.html#l00045">YAW_STICK_CENTERED</a>, and <a class="el" href="rotorcraft_2autopilot__rc__helpers_8h_source.html#l00042">YAW_STICK_PUSHED</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -334,7 +358,7 @@ Variables</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="autopilot__arming__yaw_8h_abbbe9ccad851ff6d7ef88e298059b6ce_cgraph.png" border="0" usemap="#autopilot__arming__yaw_8h_abbbe9ccad851ff6d7ef88e298059b6ce_cgraph" alt=""/></div>
 <map name="autopilot__arming__yaw_8h_abbbe9ccad851ff6d7ef88e298059b6ce_cgraph" id="autopilot__arming__yaw_8h_abbbe9ccad851ff6d7ef88e298059b6ce_cgraph">
-<area shape="rect" id="node2" href="autopilot__arming__yaw_8h.html#a9a3f76ba0d3ace35cce5ed473bad8284" title="Checks all arm requirements and returns true if OK and false otherwise. " alt="" coords="228,5,403,47"/><area shape="rect" id="node3" href="autopilot_8c.html#a23af2ac2d4bcb9b71c869a409de61cc4" title="get autopilot mode " alt="" coords="240,71,391,98"/><area shape="rect" id="node4" href="autopilot_8c.html#a26de92899cae6ff28c3420315f10802d" title="set in_flight flag " alt="" coords="235,122,396,149"/><area shape="rect" id="node5" href="autopilot_8c.html#ac76c95ffcdfff623308f6075e3fb1018" title="reset in_flight counter actual implementation is firmware dependent " alt="" coords="451,115,587,156"/></map>
+<area shape="rect" id="node2" href="autopilot__arming__yaw_8h.html#a9a3f76ba0d3ace35cce5ed473bad8284" title="Checks all arm requirements and returns true if OK and false otherwise. " alt="" coords="228,5,403,47"/><area shape="rect" id="node3" href="autopilot_8c.html#a23af2ac2d4bcb9b71c869a409de61cc4" title="get autopilot mode " alt="" coords="240,71,391,98"/><area shape="rect" id="node4" href="autopilot_8c.html#a26de92899cae6ff28c3420315f10802d" title="set in_flight flag " alt="" coords="235,122,396,149"/><area shape="rect" id="node6" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup. " alt="" coords="244,173,387,199"/><area shape="rect" id="node7" href="rotorcraft_2autopilot__rc__helpers_8h.html#ac0cad24ec4c286be4262417eb5823094" title="kill_switch_is_on" alt="" coords="253,223,377,250"/><area shape="rect" id="node5" href="autopilot_8c.html#ac76c95ffcdfff623308f6075e3fb1018" title="reset in_flight counter actual implementation is firmware dependent " alt="" coords="451,115,587,156"/></map>
 </div>
 </p>
 
@@ -372,11 +396,11 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if arming checks are all valid </dd></dl>
 
-<p>Definition at line <a class="el" href="autopilot__arming__yaw_8h_source.html#l00087">87</a> of file <a class="el" href="autopilot__arming__yaw_8h_source.html">autopilot_arming_yaw.h</a>.</p>
+<p>Definition at line <a class="el" href="autopilot__arming__yaw_8h_source.html#l00096">96</a> of file <a class="el" href="autopilot__arming__yaw_8h_source.html">autopilot_arming_yaw.h</a>.</p>
 
-<p>References <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00070">AP_ARMING_STATUS_PITCH_NOT_CENTERED</a>, <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00071">AP_ARMING_STATUS_ROLL_NOT_CENTERED</a>, <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00068">AP_ARMING_STATUS_THROTTLE_NOT_DOWN</a>, <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00064">AP_ARMING_STATUS_YAW_CENTERED</a>, <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00072">AP_ARMING_STATUS_YAW_NOT_CENTERED</a>, <a class="el" href="autopilot_8h_source.html#l00067">pprz_autopilot::arming_status</a>, <a class="el" href="autopilot_8c_source.html#l00050">autopilot</a>, <a class="el" href="rotorcraft_2autopilot__rc__helpers_8h_source.html#l00048">PITCH_STICK_CENTERED</a>, <a class="el" href="rotorcraft_2autopilot__rc__helpers_8h_source.html#l00051">ROLL_STICK_CENTERED</a>, <a class="el" href="rotorcraft_2autopilot__rc__helpers_8h_source.html#l00040">THROTTLE_STICK_DOWN</a>, and <a class="el" href="rotorcraft_2autopilot__rc__helpers_8h_source.html#l00045">YAW_STICK_CENTERED</a>.</p>
+<p>References <a class="el" href="autopilot__arming__common_8h_source.html#l00045">AP_ARMING_STATUS_PITCH_NOT_CENTERED</a>, <a class="el" href="autopilot__arming__common_8h_source.html#l00046">AP_ARMING_STATUS_ROLL_NOT_CENTERED</a>, <a class="el" href="autopilot__arming__common_8h_source.html#l00043">AP_ARMING_STATUS_THROTTLE_NOT_DOWN</a>, <a class="el" href="autopilot__arming__common_8h_source.html#l00039">AP_ARMING_STATUS_YAW_CENTERED</a>, <a class="el" href="autopilot__arming__common_8h_source.html#l00047">AP_ARMING_STATUS_YAW_NOT_CENTERED</a>, <a class="el" href="autopilot_8h_source.html#l00067">pprz_autopilot::arming_status</a>, <a class="el" href="autopilot_8c_source.html#l00050">autopilot</a>, <a class="el" href="rotorcraft_2autopilot__rc__helpers_8h_source.html#l00048">PITCH_STICK_CENTERED</a>, <a class="el" href="rotorcraft_2autopilot__rc__helpers_8h_source.html#l00051">ROLL_STICK_CENTERED</a>, <a class="el" href="rotorcraft_2autopilot__rc__helpers_8h_source.html#l00040">THROTTLE_STICK_DOWN</a>, and <a class="el" href="rotorcraft_2autopilot__rc__helpers_8h_source.html#l00045">YAW_STICK_CENTERED</a>.</p>
 
-<p>Referenced by <a class="el" href="autopilot__arming__yaw_8h_source.html#l00113">autopilot_arming_check_motors_on()</a>.</p>
+<p>Referenced by <a class="el" href="autopilot__arming__yaw_8h_source.html#l00122">autopilot_arming_check_motors_on()</a>.</p>
 
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -413,9 +437,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="autopilot__arming__yaw_8h_source.html#l00061">61</a> of file <a class="el" href="autopilot__arming__yaw_8h_source.html">autopilot_arming_yaw.h</a>.</p>
+<p>Definition at line <a class="el" href="autopilot__arming__yaw_8h_source.html#l00067">67</a> of file <a class="el" href="autopilot__arming__yaw_8h_source.html">autopilot_arming_yaw.h</a>.</p>
 
-<p>References <a class="el" href="autopilot__arming__yaw_8h_source.html#l00058">autopilot_check_motor_status</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00057">autopilot_motors_on_counter</a>, and <a class="el" href="autopilot__arming__yaw_8h_source.html#l00046">STATUS_INITIALISE_RC</a>.</p>
+<p>References <a class="el" href="autopilot__arming__yaw_8h_source.html#l00063">autopilot_check_motor_status</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00062">autopilot_motors_on_counter</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00064">motor_kill_time</a>, and <a class="el" href="autopilot__arming__yaw_8h_source.html#l00050">STATUS_INITIALISE_RC</a>.</p>
 
 </div>
 </div>
@@ -443,9 +467,20 @@ Variables</h2></td></tr>
 
 <p>Update the status of the check_motors state machine. </p>
 
-<p>Definition at line <a class="el" href="autopilot__arming__yaw_8h_source.html#l00070">70</a> of file <a class="el" href="autopilot__arming__yaw_8h_source.html">autopilot_arming_yaw.h</a>.</p>
+<p>Definition at line <a class="el" href="autopilot__arming__yaw_8h_source.html#l00076">76</a> of file <a class="el" href="autopilot__arming__yaw_8h_source.html">autopilot_arming_yaw.h</a>.</p>
 
-<p>References <a class="el" href="autopilot__arming__yaw_8h_source.html#l00058">autopilot_check_motor_status</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00047">STATUS_MOTORS_AUTOMATICALLY_OFF</a>, and <a class="el" href="autopilot__arming__yaw_8h_source.html#l00052">STATUS_MOTORS_ON</a>.</p>
+<p>References <a class="el" href="autopilot__arming__yaw_8h_source.html#l00063">autopilot_check_motor_status</a>, <a class="el" href="sys__time_8h_source.html#l00129">get_sys_time_float()</a>, <a class="el" href="rotorcraft_2autopilot__rc__helpers_8h_source.html#l00097">kill_switch_is_on()</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00064">motor_kill_time</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00052">STATUS_MOTORS_AUTOMATICALLY_OFF</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00057">STATUS_MOTORS_ON</a>, and <a class="el" href="autopilot__arming__yaw_8h_source.html#l00051">STATUS_MOTORS_RC_KILLED</a>.</p>
+
+<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="autopilot__arming__yaw_8h_a644c6a09c2081595c4dbc608fd7ed163_cgraph.png" border="0" usemap="#autopilot__arming__yaw_8h_a644c6a09c2081595c4dbc608fd7ed163_cgraph" alt=""/></div>
+<map name="autopilot__arming__yaw_8h_a644c6a09c2081595c4dbc608fd7ed163_cgraph" id="autopilot__arming__yaw_8h_a644c6a09c2081595c4dbc608fd7ed163_cgraph">
+<area shape="rect" id="node2" href="sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup. " alt="" coords="211,5,353,32"/><area shape="rect" id="node3" href="rotorcraft_2autopilot__rc__helpers_8h.html#ac0cad24ec4c286be4262417eb5823094" title="kill_switch_is_on" alt="" coords="220,56,344,83"/></map>
+</div>
+</p>
 
 </div>
 </div>
@@ -460,9 +495,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="autopilot__arming__yaw_8h_source.html#l00058">58</a> of file <a class="el" href="autopilot__arming__yaw_8h_source.html">autopilot_arming_yaw.h</a>.</p>
+<p>Definition at line <a class="el" href="autopilot__arming__yaw_8h_source.html#l00063">63</a> of file <a class="el" href="autopilot__arming__yaw_8h_source.html">autopilot_arming_yaw.h</a>.</p>
 
-<p>Referenced by <a class="el" href="autopilot__arming__yaw_8h_source.html#l00113">autopilot_arming_check_motors_on()</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00061">autopilot_arming_init()</a>, and <a class="el" href="autopilot__arming__yaw_8h_source.html#l00070">autopilot_arming_set()</a>.</p>
+<p>Referenced by <a class="el" href="autopilot__arming__yaw_8h_source.html#l00122">autopilot_arming_check_motors_on()</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00067">autopilot_arming_init()</a>, and <a class="el" href="autopilot__arming__yaw_8h_source.html#l00076">autopilot_arming_set()</a>.</p>
 
 </div>
 </div>
@@ -476,9 +511,25 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="autopilot__arming__yaw_8h_source.html#l00057">57</a> of file <a class="el" href="autopilot__arming__yaw_8h_source.html">autopilot_arming_yaw.h</a>.</p>
+<p>Definition at line <a class="el" href="autopilot__arming__yaw_8h_source.html#l00062">62</a> of file <a class="el" href="autopilot__arming__yaw_8h_source.html">autopilot_arming_yaw.h</a>.</p>
 
-<p>Referenced by <a class="el" href="autopilot__arming__yaw_8h_source.html#l00113">autopilot_arming_check_motors_on()</a>, and <a class="el" href="autopilot__arming__yaw_8h_source.html#l00061">autopilot_arming_init()</a>.</p>
+<p>Referenced by <a class="el" href="autopilot__arming__yaw_8h_source.html#l00122">autopilot_arming_check_motors_on()</a>, and <a class="el" href="autopilot__arming__yaw_8h_source.html#l00067">autopilot_arming_init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a51218ce0d5e9d1e121a258c66d8bc028"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float motor_kill_time</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="autopilot__arming__yaw_8h_source.html#l00064">64</a> of file <a class="el" href="autopilot__arming__yaw_8h_source.html">autopilot_arming_yaw.h</a>.</p>
+
+<p>Referenced by <a class="el" href="autopilot__arming__yaw_8h_source.html#l00122">autopilot_arming_check_motors_on()</a>, <a class="el" href="autopilot__arming__yaw_8h_source.html#l00067">autopilot_arming_init()</a>, and <a class="el" href="autopilot__arming__yaw_8h_source.html#l00076">autopilot_arming_set()</a>.</p>
 
 </div>
 </div>
@@ -488,7 +539,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_e37d355c72eb7c8e5b43c34bdea5a24b.html">rotorcraft</a></li><li class="navelem"><a class="el" href="autopilot__arming__yaw_8h.html">autopilot_arming_yaw.h</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:03:00 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:03:15 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

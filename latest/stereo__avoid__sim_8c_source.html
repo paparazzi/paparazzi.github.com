@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -184,8 +184,8 @@ $(document).ready(function(){initNavTree('stereo__avoid__sim_8c_source.html','')
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="comment">// Horizontal</span></div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">float</span> bearing = atan2(- <a class="code" href="group__state__position.html#ga545d479db45e1a9711e59736b6d1309b">stateGetPositionEnu_f</a>()-&gt;x, - <a class="code" href="group__state__position.html#ga545d479db45e1a9711e59736b6d1309b">stateGetPositionEnu_f</a>()-&gt;y);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="ahrs__infrared_8c.html#ac5682e48513a771560df50e3b213e61a">heading</a> = <a class="code" href="group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b">stateGetNedToBodyEulers_f</a>()-&gt;<a class="code" href="group__math__algebra__float.html#adafcac96d547392e830b872ac4dcdc75">psi</a>;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">float</span> diff = bearing - <a class="code" href="ahrs__infrared_8c.html#ac5682e48513a771560df50e3b213e61a">heading</a>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="wedgebug_8c.html#ac5682e48513a771560df50e3b213e61a">heading</a> = <a class="code" href="group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b">stateGetNedToBodyEulers_f</a>()-&gt;<a class="code" href="group__math__algebra__float.html#adafcac96d547392e830b872ac4dcdc75">psi</a>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">float</span> diff = bearing - <a class="code" href="wedgebug_8c.html#ac5682e48513a771560df50e3b213e61a">heading</a>;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <a class="code" href="stereo__avoid__sim_8c.html#aa8a30b33178414e6d1c8d872781cb7b5">NormAngleRad</a>(diff);</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    diff = DegOfRad(diff);</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
@@ -229,6 +229,7 @@ $(document).ready(function(){initNavTree('stereo__avoid__sim_8c_source.html','')
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;}</div>
 <div class="ttc" id="avoid__navigation_8c_html_afbb250f65364e84c51f0df86da67eb05"><div class="ttname"><a href="avoid__navigation_8c.html#afbb250f65364e84c51f0df86da67eb05">run_avoid_navigation_onvision</a></div><div class="ttdeci">void run_avoid_navigation_onvision(void)</div><div class="ttdef"><b>Definition:</b> <a href="avoid__navigation_8c_source.html#l00065">avoid_navigation.c:65</a></div></div>
 <div class="ttc" id="avoid__navigation_8h_html"><div class="ttname"><a href="avoid__navigation_8h.html">avoid_navigation.h</a></div></div>
+<div class="ttc" id="wedgebug_8c_html_ac5682e48513a771560df50e3b213e61a"><div class="ttname"><a href="wedgebug_8c.html#ac5682e48513a771560df50e3b213e61a">heading</a></div><div class="ttdeci">float heading</div><div class="ttdef"><b>Definition:</b> <a href="wedgebug_8c_source.html#l00258">wedgebug.c:258</a></div></div>
 <div class="ttc" id="stereo__avoid__sim_8c_html_ace7b98c58ff30c23353ae3d546f69475"><div class="ttname"><a href="stereo__avoid__sim_8c.html#ace7b98c58ff30c23353ae3d546f69475">stereo_avoid_run</a></div><div class="ttdeci">void stereo_avoid_run(void)</div><div class="ttdef"><b>Definition:</b> <a href="stereo__avoid__sim_8c_source.html#l00053">stereo_avoid_sim.c:53</a></div></div>
 <div class="ttc" id="group__state__attitude_html_ga9a5e6bac6e7d78e1b33430e73344615b"><div class="ttname"><a href="group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b">stateGetNedToBodyEulers_f</a></div><div class="ttdeci">static struct FloatEulers * stateGetNedToBodyEulers_f(void)</div><div class="ttdoc">Get vehicle body attitude euler angles (float). </div><div class="ttdef"><b>Definition:</b> <a href="state_8h_source.html#l01143">state.h:1143</a></div></div>
 <div class="ttc" id="stereocam__droplet_8c_html_accc9df079cb6cc4f7679e6c0d576d465"><div class="ttname"><a href="stereocam__droplet_8c.html#accc9df079cb6cc4f7679e6c0d576d465">avoid_navigation_data</a></div><div class="ttdeci">struct AvoidNavigationStruct avoid_navigation_data</div><div class="ttdoc">global VIDEO state </div><div class="ttdef"><b>Definition:</b> <a href="stereocam__droplet_8c_source.html#l00075">stereocam_droplet.c:75</a></div></div>
@@ -238,7 +239,6 @@ $(document).ready(function(){initNavTree('stereo__avoid__sim_8c_source.html','')
 <div class="ttc" id="stereo__avoid__sim_8c_html_a81acc927c75d3362ae3aea50358180c8"><div class="ttname"><a href="stereo__avoid__sim_8c.html#a81acc927c75d3362ae3aea50358180c8">stereo_avoid_stop</a></div><div class="ttdeci">void stereo_avoid_stop(void)</div><div class="ttdef"><b>Definition:</b> <a href="stereo__avoid__sim_8c_source.html#l00117">stereo_avoid_sim.c:117</a></div></div>
 <div class="ttc" id="group__state__position_html_ga545d479db45e1a9711e59736b6d1309b"><div class="ttname"><a href="group__state__position.html#ga545d479db45e1a9711e59736b6d1309b">stateGetPositionEnu_f</a></div><div class="ttdeci">static struct EnuCoor_f * stateGetPositionEnu_f(void)</div><div class="ttdoc">Get position in local ENU coordinates (float). </div><div class="ttdef"><b>Definition:</b> <a href="state_8h_source.html#l00719">state.h:719</a></div></div>
 <div class="ttc" id="stereo__avoid__sim_8c_html_abc56b22c4aea28b46faeb1ba3cd3a718"><div class="ttname"><a href="stereo__avoid__sim_8c.html#abc56b22c4aea28b46faeb1ba3cd3a718">stereo_avoid_start</a></div><div class="ttdeci">void stereo_avoid_start(void)</div><div class="ttdef"><b>Definition:</b> <a href="stereo__avoid__sim_8c_source.html#l00112">stereo_avoid_sim.c:112</a></div></div>
-<div class="ttc" id="ahrs__infrared_8c_html_ac5682e48513a771560df50e3b213e61a"><div class="ttname"><a href="ahrs__infrared_8c.html#ac5682e48513a771560df50e3b213e61a">heading</a></div><div class="ttdeci">static float heading</div><div class="ttdef"><b>Definition:</b> <a href="ahrs__infrared_8c_source.html#l00045">ahrs_infrared.c:45</a></div></div>
 <div class="ttc" id="avoid__navigation_8c_html_aaec3cd97712876a5e9ff70559b1fca26"><div class="ttname"><a href="avoid__navigation_8c.html#aaec3cd97712876a5e9ff70559b1fca26">counter</a></div><div class="ttdeci">int32_t counter</div><div class="ttdef"><b>Definition:</b> <a href="avoid__navigation_8c_source.html#l00055">avoid_navigation.c:55</a></div></div>
 <div class="ttc" id="std_8h_html"><div class="ttname"><a href="std_8h.html">std.h</a></div></div>
 <div class="ttc" id="state_8h_html"><div class="ttname"><a href="state_8h.html">state.h</a></div><div class="ttdoc">API to get/set the generic vehicle states. </div></div>
@@ -251,7 +251,7 @@ $(document).ready(function(){initNavTree('stereo__avoid__sim_8c_source.html','')
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_3df9ff4d3eb13d31d58a513ba3c4e4bb.html">stereocam</a></li><li class="navelem"><a class="el" href="dir_227931f8886fc6a6dfaec1c2d3d7d81a.html">nav_line_avoid</a></li><li class="navelem"><a class="el" href="stereo__avoid__sim_8c.html">stereo_avoid_sim.c</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:02:30 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:02:42 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

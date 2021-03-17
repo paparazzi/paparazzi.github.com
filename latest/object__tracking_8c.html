@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -145,7 +145,7 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ac9393406e390c63825c5279693a2a99e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="object__tracking_8c.html#ac9393406e390c63825c5279693a2a99e">get_object</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> sender_id, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> id, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> frame, float bearing, float height, float distance)</td></tr>
+<tr class="memitem:ac9393406e390c63825c5279693a2a99e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="object__tracking_8c.html#ac9393406e390c63825c5279693a2a99e">get_object</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> sender_id, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> id, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="el" href="cc2500__frsky__x_8c.html#a2a15531abd888c17572e7aa917fdf6fe">frame</a>, float bearing, float height, float distance)</td></tr>
 <tr class="separator:ac9393406e390c63825c5279693a2a99e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e87f406f1aed8f1fe83ee7c909dfb17"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="object__tracking_8c.html#a0e87f406f1aed8f1fe83ee7c909dfb17">object_tracking_init</a> (void)</td></tr>
 <tr class="memdesc:a0e87f406f1aed8f1fe83ee7c909dfb17"><td class="mdescLeft">&#160;</td><td class="mdescRight">init function  <a href="#a0e87f406f1aed8f1fe83ee7c909dfb17">More...</a><br /></td></tr>
@@ -172,7 +172,7 @@ Variables</h2></td></tr>
 <tr class="separator:a0847d1b93c790eaa08315d68e786ae14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2175dce18fe49b295731d08f13ef101"><td class="memItemLeft" align="right" valign="top"><a class="el" href="abi__common_8h.html#a60f71f1b8ca24759458ed4f700f02814">abi_event</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="object__tracking_8c.html#ab2175dce18fe49b295731d08f13ef101">object_ev</a></td></tr>
 <tr class="separator:ab2175dce18fe49b295731d08f13ef101"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd2eed9d21325682d7b568db5264ec55"><td class="memItemLeft" align="right" valign="top">static const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="object__tracking_8c.html#abd2eed9d21325682d7b568db5264ec55">nav_dt</a> = 1.f / <a class="el" href="rover_2navigation_8h.html#a97a2f145e0de563497130b15333db788">NAV_FREQ</a></td></tr>
+<tr class="memitem:abd2eed9d21325682d7b568db5264ec55"><td class="memItemLeft" align="right" valign="top">static const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="object__tracking_8c.html#abd2eed9d21325682d7b568db5264ec55">nav_dt</a> = 1.<a class="el" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a> / <a class="el" href="rover_2navigation_8h.html#a97a2f145e0de563497130b15333db788">NAV_FREQ</a></td></tr>
 <tr class="separator:abd2eed9d21325682d7b568db5264ec55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -317,7 +317,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="object__tracking_8c_source.html#l00077">77</a> of file <a class="el" href="object__tracking_8c_source.html">object_tracking.c</a>.</p>
 
-<p>References <a class="el" href="object__tracking_8c_source.html#l00068">object_bearing</a>, <a class="el" href="object__tracking_8c_source.html#l00067">object_frame</a>, <a class="el" href="object__tracking_8c_source.html#l00069">object_height</a>, and <a class="el" href="object__tracking_8c_source.html#l00070">timeout</a>.</p>
+<p>References <a class="el" href="cc2500__frsky__x_8c_source.html#l00163">frame</a>, <a class="el" href="object__tracking_8c_source.html#l00068">object_bearing</a>, <a class="el" href="object__tracking_8c_source.html#l00067">object_frame</a>, <a class="el" href="object__tracking_8c_source.html#l00069">object_height</a>, and <a class="el" href="object__tracking_8c_source.html#l00070">timeout</a>.</p>
 
 <p>Referenced by <a class="el" href="object__tracking_8c_source.html#l00088">object_tracking_init()</a>.</p>
 
@@ -387,7 +387,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="object__tracking_8c_source.html#l00102">102</a> of file <a class="el" href="object__tracking_8c_source.html">object_tracking.c</a>.</p>
 
-<p>References <a class="el" href="pprz__algebra__int_8h_source.html#l00210">ANGLE_BFP_OF_REAL</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00211">ANGLE_FLOAT_OF_BFP</a>, <a class="el" href="downlink_8h_source.html#l00042">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00046">DefaultDevice</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00099">FLOAT_ANGLE_NORMALIZE</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00131">INT32_COURSE_NORMALIZE</a>, <a class="el" href="high__speed__logger__direct__memory_8c_source.html#l00134">msg</a>, <a class="el" href="object__tracking_8c_source.html#l00074">nav_dt</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00104">nav_heading</a>, <a class="el" href="object__tracking_8c_source.html#l00068">object_bearing</a>, <a class="el" href="object__tracking_8c_source.html#l00067">object_frame</a>, <a class="el" href="object__tracking_8c_source.html#l00069">object_height</a>, <a class="el" href="object__tracking_8c_source.html#l00064">object_tracking_rate</a>, <a class="el" href="object__tracking_8c_source.html#l00065">object_tracking_search_rate</a>, <a class="el" href="object__tracking_8c_source.html#l00040">OBJECT_TRACKING_TIMEOUT</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00087">FloatEulers::psi</a>, <a class="el" href="state_8h_source.html#l01143">stateGetNedToBodyEulers_f()</a>, and <a class="el" href="object__tracking_8c_source.html#l00070">timeout</a>.</p>
+<p>References <a class="el" href="pprz__algebra__int_8h_source.html#l00210">ANGLE_BFP_OF_REAL</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00211">ANGLE_FLOAT_OF_BFP</a>, <a class="el" href="downlink_8h_source.html#l00042">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00046">DefaultDevice</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00099">FLOAT_ANGLE_NORMALIZE</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00131">INT32_COURSE_NORMALIZE</a>, <a class="el" href="high__speed__logger__direct__memory_8c_source.html#l00134">msg</a>, <a class="el" href="object__tracking_8c_source.html#l00074">nav_dt</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00108">nav_heading</a>, <a class="el" href="object__tracking_8c_source.html#l00068">object_bearing</a>, <a class="el" href="object__tracking_8c_source.html#l00067">object_frame</a>, <a class="el" href="object__tracking_8c_source.html#l00069">object_height</a>, <a class="el" href="object__tracking_8c_source.html#l00064">object_tracking_rate</a>, <a class="el" href="object__tracking_8c_source.html#l00065">object_tracking_search_rate</a>, <a class="el" href="object__tracking_8c_source.html#l00040">OBJECT_TRACKING_TIMEOUT</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00087">FloatEulers::psi</a>, <a class="el" href="state_8h_source.html#l01143">stateGetNedToBodyEulers_f()</a>, and <a class="el" href="object__tracking_8c_source.html#l00070">timeout</a>.</p>
 
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -411,7 +411,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const float nav_dt = 1.f / <a class="el" href="rover_2navigation_8h.html#a97a2f145e0de563497130b15333db788">NAV_FREQ</a></td>
+          <td class="memname">const float nav_dt = 1.<a class="el" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a> / <a class="el" href="rover_2navigation_8h.html#a97a2f145e0de563497130b15333db788">NAV_FREQ</a></td>
         </tr>
       </table>
   </td>
@@ -579,7 +579,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_94757629c544be2d6d24b01569be56e6.html">ctrl</a></li><li class="navelem"><a class="el" href="object__tracking_8c.html">object_tracking.c</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:03:11 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:03:26 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

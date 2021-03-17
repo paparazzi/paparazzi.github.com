@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -203,14 +203,14 @@ $(document).ready(function(){initNavTree('imu__chimu_8h_source.html','');});
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor">#ifdef CHIMU_BIG_ENDIAN</span></div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">float</span> <a class="code" href="imu__chimu_8h.html#a5bff2dac690c44d95339377f2074cf31">FloatSwap</a>(<span class="keywordtype">float</span> f)</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">float</span> <a class="code" href="imu__chimu_8h.html#a5bff2dac690c44d95339377f2074cf31">FloatSwap</a>(<span class="keywordtype">float</span> <a class="code" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a>)</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;{</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keyword">union </span>{</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">float</span> f;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> b[4];</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a>;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code" href="wedgebug_8c.html#a83fc1af92e29717b4513d121b0c72c7d">b</a>[4];</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  } dat1, dat2;</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  dat1.f = f;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  dat1.f = <a class="code" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a>;</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  dat2.b[0] = dat1.b[3];</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  dat2.b[1] = dat1.b[2];</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  dat2.b[2] = dat1.b[1];</div>
@@ -337,6 +337,8 @@ $(document).ready(function(){initNavTree('imu__chimu_8h_source.html','');});
 <div class="ttc" id="imu__chimu_8h_html_ae4341b0de3991b9ed967e637f1ccd2a8"><div class="ttname"><a href="imu__chimu_8h.html#ae4341b0de3991b9ed967e637f1ccd2a8">CHIMU_PARSER_DATA::gCHIMU_BIT</a></div><div class="ttdeci">uint8_t gCHIMU_BIT</div><div class="ttdef"><b>Definition:</b> <a href="imu__chimu_8h_source.html#l00180">imu_chimu.h:180</a></div></div>
 <div class="ttc" id="imu__chimu_8h_html_a64304b3efe76f0981112416b26c3bff3"><div class="ttname"><a href="imu__chimu_8h.html#a64304b3efe76f0981112416b26c3bff3">CHIMU_PARSER_DATA::m_sensor</a></div><div class="ttdeci">CHIMU_sensor_data m_sensor</div><div class="ttdef"><b>Definition:</b> <a href="imu__chimu_8h_source.html#l00170">imu_chimu.h:170</a></div></div>
 <div class="ttc" id="imu__chimu_8h_html_a92f3c547f23a8232079a90b179476e06"><div class="ttname"><a href="imu__chimu_8h.html#a92f3c547f23a8232079a90b179476e06">CHIMU_PARSER_DATA::m_DeviceID</a></div><div class="ttdeci">unsigned char m_DeviceID</div><div class="ttdef"><b>Definition:</b> <a href="imu__chimu_8h_source.html#l00165">imu_chimu.h:165</a></div></div>
+<div class="ttc" id="wedgebug_8c_html_a05fd2dba3354a98f1a00b7c7ffc12b13"><div class="ttname"><a href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a></div><div class="ttdeci">uint16_t f</div><div class="ttdoc">Camera baseline, in meters (i.e. horizontal distance between the two cameras of the stereo setup) ...</div><div class="ttdef"><b>Definition:</b> <a href="wedgebug_8c_source.html#l00204">wedgebug.c:204</a></div></div>
+<div class="ttc" id="wedgebug_8c_html_a83fc1af92e29717b4513d121b0c72c7d"><div class="ttname"><a href="wedgebug_8c.html#a83fc1af92e29717b4513d121b0c72c7d">b</a></div><div class="ttdeci">float b</div><div class="ttdef"><b>Definition:</b> <a href="wedgebug_8c_source.html#l00202">wedgebug.c:202</a></div></div>
 <div class="ttc" id="imu__chimu_8h_html_af97745483775ecdd33ba5611397840ad"><div class="ttname"><a href="imu__chimu_8h.html#af97745483775ecdd33ba5611397840ad">CHIMU_PARSER_DATA::gCHIMU_SW_SerialNumber</a></div><div class="ttdeci">uint16_t gCHIMU_SW_SerialNumber</div><div class="ttdef"><b>Definition:</b> <a href="imu__chimu_8h_source.html#l00176">imu_chimu.h:176</a></div></div>
 <div class="ttc" id="imu__chimu_8h_html_af0e910c2b81bc5141dd9a8222ea50b51"><div class="ttname"><a href="imu__chimu_8h.html#af0e910c2b81bc5141dd9a8222ea50b51">CHIMU_PARSER_DATA::gCHIMU_SW_Exclaim</a></div><div class="ttdeci">uint8_t gCHIMU_SW_Exclaim</div><div class="ttdef"><b>Definition:</b> <a href="imu__chimu_8h_source.html#l00173">imu_chimu.h:173</a></div></div>
 <div class="ttc" id="imu__chimu_8h_html_a18b09515aee60d52a79df0c4b05d934d"><div class="ttname"><a href="imu__chimu_8h.html#a18b09515aee60d52a79df0c4b05d934d">CHIMU_ProcessMessage</a></div><div class="ttdeci">unsigned char CHIMU_ProcessMessage(unsigned char *pMsgID, unsigned char *pPayloadData, CHIMU_PARSER_DATA *pstData)</div><div class="ttdef"><b>Definition:</b> <a href="imu__chimu_8c_source.html#l00288">imu_chimu.c:288</a></div></div>
@@ -361,7 +363,7 @@ $(document).ready(function(){initNavTree('imu__chimu_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_12fb52dac4e3837dec02c6544f4d82f8.html">ins</a></li><li class="navelem"><a class="el" href="imu__chimu_8h.html">imu_chimu.h</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:02:24 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:02:35 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

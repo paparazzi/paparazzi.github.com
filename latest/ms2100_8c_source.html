@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -192,7 +192,7 @@ $(document).ready(function(){initNavTree('ms2100_8c_source.html','');});
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <a class="code" href="lpc21_2peripherals_2ms2100__arch_8c.html#a6c42c614481a60c538d48f9ceef25132">ms2100_arch_init</a>();</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <a class="code" href="group__math__algebra__int.html#ga90bb29d3030f1bba0535b9369ee0e462">INT_VECT3_ZERO</a>(ms-&gt;<a class="code" href="ms2100_8h.html#aadeb243f18cf5688969e10580c530518">data</a>.vect);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <a class="code" href="group__math__algebra__int.html#ga90bb29d3030f1bba0535b9369ee0e462">INT_VECT3_ZERO</a>(ms-&gt;<a class="code" href="ms2100_8h.html#a6b32f96e5c74156c281d054419d40828">data</a>.vect);</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  ms-&gt;<a class="code" href="ms2100_8h.html#a4d319566f8fbdb099371b09cca78b647">cur_axe</a> = 0;</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  ms-&gt;<a class="code" href="ms2100_8h.html#a24720217f6739c591031e5b0837d9c9d">status</a> = <a class="code" href="ms2100_8h.html#a0c113d47eb67dc9e6881cb9b4c8bca65a355c2f9f789b75ae75a06f8ea97f1a06">MS2100_IDLE</a>;</div>
@@ -231,7 +231,7 @@ $(document).ready(function(){initNavTree('ms2100_8c_source.html','');});
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;      <a class="code" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> new_val = <a class="code" href="ms2100_8c.html#ae7e949d1dd6f5a5a814fac0cd6936966">Int16FromBuf</a>(ms-&gt;<a class="code" href="ms2100_8h.html#a7ca306c6e7eb338624be4edd50efa062">read_buf</a>, 0);</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;      <span class="comment">// what is this check about?</span></div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;      <span class="keywordflow">if</span> (abs(new_val) &lt; 2000) {</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        ms-&gt;<a class="code" href="ms2100_8h.html#aadeb243f18cf5688969e10580c530518">data</a>.value[ms-&gt;<a class="code" href="ms2100_8h.html#a4d319566f8fbdb099371b09cca78b647">cur_axe</a>] = new_val;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        ms-&gt;<a class="code" href="ms2100_8h.html#a6b32f96e5c74156c281d054419d40828">data</a>.value[ms-&gt;<a class="code" href="ms2100_8h.html#a4d319566f8fbdb099371b09cca78b647">cur_axe</a>] = new_val;</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;      }</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;      ms-&gt;<a class="code" href="ms2100_8h.html#a4d319566f8fbdb099371b09cca78b647">cur_axe</a>++;</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;      <span class="keywordflow">if</span> (ms-&gt;<a class="code" href="ms2100_8h.html#a4d319566f8fbdb099371b09cca78b647">cur_axe</a> &gt; 2) {</div>
@@ -268,6 +268,7 @@ $(document).ready(function(){initNavTree('ms2100_8c_source.html','');});
 <div class="ttc" id="ms2100_8h_html_a7ca306c6e7eb338624be4edd50efa062"><div class="ttname"><a href="ms2100_8h.html#a7ca306c6e7eb338624be4edd50efa062">Ms2100::read_buf</a></div><div class="ttdeci">volatile uint8_t read_buf[2]</div><div class="ttdoc">SPI buffer for reading a single axis. </div><div class="ttdef"><b>Definition:</b> <a href="ms2100_8h_source.html#l00049">ms2100.h:49</a></div></div>
 <div class="ttc" id="ms2100_8h_html_a0c113d47eb67dc9e6881cb9b4c8bca65a4ad5362b0c20e07806d91555bc9a0218"><div class="ttname"><a href="ms2100_8h.html#a0c113d47eb67dc9e6881cb9b4c8bca65a4ad5362b0c20e07806d91555bc9a0218">MS2100_SENDING_REQ</a></div><div class="ttdef"><b>Definition:</b> <a href="ms2100_8h_source.html#l00038">ms2100.h:38</a></div></div>
 <div class="ttc" id="group__spi_html_a81b75a5eca2a775f4dcf89e8f1c519eb"><div class="ttname"><a href="group__spi.html#a81b75a5eca2a775f4dcf89e8f1c519eb">spi_transaction::output_buf</a></div><div class="ttdeci">volatile uint8_t * output_buf</div><div class="ttdoc">pointer to transmit buffer for DMA </div><div class="ttdef"><b>Definition:</b> <a href="spi_8h_source.html#l00150">spi.h:150</a></div></div>
+<div class="ttc" id="ms2100_8h_html_a6b32f96e5c74156c281d054419d40828"><div class="ttname"><a href="ms2100_8h.html#a6b32f96e5c74156c281d054419d40828">Ms2100::data</a></div><div class="ttdeci">union Ms2100::@339 data</div></div>
 <div class="ttc" id="group__spi_html_a2716d9d8e12e4b02d9093bfbe01346ba"><div class="ttname"><a href="group__spi.html#a2716d9d8e12e4b02d9093bfbe01346ba">spi_transaction::select</a></div><div class="ttdeci">enum SPISlaveSelect select</div><div class="ttdoc">slave selection behavior </div><div class="ttdef"><b>Definition:</b> <a href="spi_8h_source.html#l00154">spi.h:154</a></div></div>
 <div class="ttc" id="spi_8h_html"><div class="ttname"><a href="spi_8h.html">spi.h</a></div><div class="ttdoc">Architecture independent SPI (Serial Peripheral Interface) API. </div></div>
 <div class="ttc" id="ms2100_8h_html_a0c113d47eb67dc9e6881cb9b4c8bca65a355c2f9f789b75ae75a06f8ea97f1a06"><div class="ttname"><a href="ms2100_8h.html#a0c113d47eb67dc9e6881cb9b4c8bca65a355c2f9f789b75ae75a06f8ea97f1a06">MS2100_IDLE</a></div><div class="ttdef"><b>Definition:</b> <a href="ms2100_8h_source.html#l00037">ms2100.h:37</a></div></div>
@@ -295,7 +296,6 @@ $(document).ready(function(){initNavTree('ms2100_8c_source.html','');});
 <div class="ttc" id="group__spi_html_ad172d82768bb46939cb4e6ffbd230e77"><div class="ttname"><a href="group__spi.html#ad172d82768bb46939cb4e6ffbd230e77">spi_transaction::slave_idx</a></div><div class="ttdeci">uint8_t slave_idx</div><div class="ttdoc">slave id: SPI_SLAVE0 to SPI_SLAVE4 </div><div class="ttdef"><b>Definition:</b> <a href="spi_8h_source.html#l00153">spi.h:153</a></div></div>
 <div class="ttc" id="group__spi_html_ggaaabe4f085d398b1dabe6526437d0069baedf1306791ecf55a11a2a37dbbd6b1b1"><div class="ttname"><a href="group__spi.html#ggaaabe4f085d398b1dabe6526437d0069baedf1306791ecf55a11a2a37dbbd6b1b1">SPIDiv64</a></div><div class="ttdef"><b>Definition:</b> <a href="spi_8h_source.html#l00125">spi.h:125</a></div></div>
 <div class="ttc" id="group__spi_html_ab7151a300fa12304ed1f32fbe135c143"><div class="ttname"><a href="group__spi.html#ab7151a300fa12304ed1f32fbe135c143">spi_transaction::input_buf</a></div><div class="ttdeci">volatile uint8_t * input_buf</div><div class="ttdoc">pointer to receive buffer for DMA </div><div class="ttdef"><b>Definition:</b> <a href="spi_8h_source.html#l00149">spi.h:149</a></div></div>
-<div class="ttc" id="ms2100_8h_html_aadeb243f18cf5688969e10580c530518"><div class="ttname"><a href="ms2100_8h.html#aadeb243f18cf5688969e10580c530518">Ms2100::data</a></div><div class="ttdeci">union Ms2100::@337 data</div></div>
 <div class="ttc" id="group__spi_html_a34d366d59c97ab1993da279ec6c19658"><div class="ttname"><a href="group__spi.html#a34d366d59c97ab1993da279ec6c19658">spi_transaction::before_cb</a></div><div class="ttdeci">SPICallback before_cb</div><div class="ttdoc">NULL or function called before the transaction. </div><div class="ttdef"><b>Definition:</b> <a href="spi_8h_source.html#l00160">spi.h:160</a></div></div>
 <div class="ttc" id="ms2100_8h_html_a24720217f6739c591031e5b0837d9c9d"><div class="ttname"><a href="ms2100_8h.html#a24720217f6739c591031e5b0837d9c9d">Ms2100::status</a></div><div class="ttdeci">enum Ms2100Status status</div><div class="ttdef"><b>Definition:</b> <a href="ms2100_8h_source.html#l00050">ms2100.h:50</a></div></div>
 <div class="ttc" id="group__spi_html_gga52e70c55efc6a9b04903157a0965baacaf68ce6dfcd0fd5b2210ce03c86bb4580"><div class="ttname"><a href="group__spi.html#gga52e70c55efc6a9b04903157a0965baacaf68ce6dfcd0fd5b2210ce03c86bb4580">SPITransDone</a></div><div class="ttdef"><b>Definition:</b> <a href="spi_8h_source.html#l00101">spi.h:101</a></div></div>
@@ -307,7 +307,7 @@ $(document).ready(function(){initNavTree('ms2100_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_0a48ba2c0a76794adfddddc873522f67.html">peripherals</a></li><li class="navelem"><a class="el" href="ms2100_8c.html">ms2100.c</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:02:32 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:02:44 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

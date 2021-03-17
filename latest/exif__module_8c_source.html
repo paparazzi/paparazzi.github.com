@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -255,7 +255,7 @@ $(document).ready(function(){initNavTree('exif__module_8c_source.html','');});
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;                    <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> image_jpg_x, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> image_jpg_y)</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;{</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;  <span class="keywordtype">int</span> rc = 1;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  FILE *f;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  FILE *<a class="code" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a>;</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *exif_data;</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> exif_data_len;</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  ExifEntry *entry;</div>
@@ -472,6 +472,7 @@ $(document).ready(function(){initNavTree('exif__module_8c_source.html','');});
 <div class="ttc" id="gps_8h_html"><div class="ttname"><a href="gps_8h.html">gps.h</a></div><div class="ttdoc">Device independent GPS code (interface) </div></div>
 <div class="ttc" id="types_8h_html_a06896e8c53f721507066c079052171f8"><div class="ttname"><a href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a></div><div class="ttdeci">unsigned long uint32_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00018">types.h:18</a></div></div>
 <div class="ttc" id="group__math__geodetic__int_html_ad6a02c197a16ad76cf794e6e4935f5c9"><div class="ttname"><a href="group__math__geodetic__int.html#ad6a02c197a16ad76cf794e6e4935f5c9">LlaCoor_i::lon</a></div><div class="ttdeci">int32_t lon</div><div class="ttdoc">in degrees*1e7 </div><div class="ttdef"><b>Definition:</b> <a href="pprz__geodetic__int_8h_source.html#l00061">pprz_geodetic_int.h:61</a></div></div>
+<div class="ttc" id="wedgebug_8c_html_a05fd2dba3354a98f1a00b7c7ffc12b13"><div class="ttname"><a href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a></div><div class="ttdeci">uint16_t f</div><div class="ttdoc">Camera baseline, in meters (i.e. horizontal distance between the two cameras of the stereo setup) ...</div><div class="ttdef"><b>Definition:</b> <a href="wedgebug_8c_source.html#l00204">wedgebug.c:204</a></div></div>
 <div class="ttc" id="exif__module_8c_html_a33f666eb1ed715055dc63e475f2e754e"><div class="ttname"><a href="exif__module_8c.html#a33f666eb1ed715055dc63e475f2e754e">alt_mm</a></div><div class="ttdeci">volatile int32_t alt_mm</div><div class="ttdef"><b>Definition:</b> <a href="exif__module_8c_source.html#l00033">exif_module.c:33</a></div></div>
 <div class="ttc" id="types_8h_html_a2ba621978a511250f7250fb10e05ffbe"><div class="ttname"><a href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a></div><div class="ttdeci">signed long int32_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00019">types.h:19</a></div></div>
 <div class="ttc" id="exif__module_8c_html_a4f8a19ec0c9a1af5b68b3d4daba768db"><div class="ttname"><a href="exif__module_8c.html#a4f8a19ec0c9a1af5b68b3d4daba768db">ASCII_COMMENT</a></div><div class="ttdeci">#define ASCII_COMMENT</div><div class="ttdef"><b>Definition:</b> <a href="exif__module_8c_source.html#l00141">exif_module.c:141</a></div></div>
@@ -490,7 +491,7 @@ $(document).ready(function(){initNavTree('exif__module_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_304e79c9f5d09ea65a2f55aafb6a6b9d.html">computer_vision</a></li><li class="navelem"><a class="el" href="dir_9adc125244b74c64b95124778e5b932a.html">lib</a></li><li class="navelem"><a class="el" href="dir_7cd4eedfd8330380119ebc1708ec2b0a.html">exif</a></li><li class="navelem"><a class="el" href="exif__module_8c.html">exif_module.c</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:02:19 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:02:30 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

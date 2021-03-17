@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -133,8 +133,8 @@ $(document).ready(function(){initNavTree('esc__dshot_8c.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a1586956e63b9b9944c887c8b9b3ccd4d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="esc__dshot_8c.html#a1586956e63b9b9944c887c8b9b3ccd4d">DSHOT_SPEED</a>&#160;&#160;&#160;600</td></tr>
-<tr class="memdesc:a1586956e63b9b9944c887c8b9b3ccd4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base freq of DSHOT signal (in kHz) Possible values are: 150, 300, 600, 1200.  <a href="#a1586956e63b9b9944c887c8b9b3ccd4d">More...</a><br /></td></tr>
+<tr class="memitem:a1586956e63b9b9944c887c8b9b3ccd4d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="esc__dshot_8c.html#a1586956e63b9b9944c887c8b9b3ccd4d">DSHOT_SPEED</a>&#160;&#160;&#160;300</td></tr>
+<tr class="memdesc:a1586956e63b9b9944c887c8b9b3ccd4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base freq of DSHOT signal (in kHz) Possible values are: 150, 300, 600.  <a href="#a1586956e63b9b9944c887c8b9b3ccd4d">More...</a><br /></td></tr>
 <tr class="separator:a1586956e63b9b9944c887c8b9b3ccd4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac02af40326a26f8a2cf2be12a60afd89"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="esc__dshot_8c.html#ac02af40326a26f8a2cf2be12a60afd89">DSHOT_TELEMETRY_BAUD</a>&#160;&#160;&#160;115200</td></tr>
 <tr class="memdesc:ac02af40326a26f8a2cf2be12a60afd89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Baudrate of the serial link used for telemetry data Can depend on the ESC, but only 115k have been used so far.  <a href="#ac02af40326a26f8a2cf2be12a60afd89">More...</a><br /></td></tr>
@@ -283,7 +283,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="esc__dshot_8c_source.html#l00079">79</a> of file <a class="el" href="esc__dshot_8c_source.html">esc_dshot.c</a>.</p>
 
-<p>Referenced by <a class="el" href="esc__dshot_8c_source.html#l00386">buildDshotDmaBuffer()</a>.</p>
+<p>Referenced by <a class="el" href="esc__dshot_8c_source.html#l00385">buildDshotDmaBuffer()</a>.</p>
 
 </div>
 </div>
@@ -299,7 +299,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="esc__dshot_8c_source.html#l00080">80</a> of file <a class="el" href="esc__dshot_8c_source.html">esc_dshot.c</a>.</p>
 
-<p>Referenced by <a class="el" href="esc__dshot_8c_source.html#l00386">buildDshotDmaBuffer()</a>.</p>
+<p>Referenced by <a class="el" href="esc__dshot_8c_source.html#l00385">buildDshotDmaBuffer()</a>.</p>
 
 </div>
 </div>
@@ -329,7 +329,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="esc__dshot_8c_source.html#l00087">87</a> of file <a class="el" href="esc__dshot_8c_source.html">esc_dshot.c</a>.</p>
 
-<p>Referenced by <a class="el" href="esc__dshot_8c_source.html#l00215">dshotSetThrottle()</a>.</p>
+<p>Referenced by <a class="el" href="esc__dshot_8c_source.html#l00210">dshotSetThrottle()</a>.</p>
 
 </div>
 </div>
@@ -354,12 +354,12 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define DSHOT_SPEED&#160;&#160;&#160;600</td>
+          <td class="memname">#define DSHOT_SPEED&#160;&#160;&#160;300</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Base freq of DSHOT signal (in kHz) Possible values are: 150, 300, 600, 1200. </p>
+<p>Base freq of DSHOT signal (in kHz) Possible values are: 150, 300, 600. </p>
 
 <p>Definition at line <a class="el" href="esc__dshot_8c_source.html#l00048">48</a> of file <a class="el" href="esc__dshot_8c_source.html">esc_dshot.c</a>.</p>
 
@@ -397,7 +397,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="esc__dshot_8c_source.html#l00061">61</a> of file <a class="el" href="esc__dshot_8c_source.html">esc_dshot.c</a>.</p>
 
-<p>Referenced by <a class="el" href="esc__dshot_8c_source.html#l00463">dshotTlmRec()</a>.</p>
+<p>Referenced by <a class="el" href="esc__dshot_8c_source.html#l00462">dshotTlmRec()</a>.</p>
 
 </div>
 </div>
@@ -427,7 +427,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="esc__dshot_8c_source.html#l00085">85</a> of file <a class="el" href="esc__dshot_8c_source.html">esc_dshot.c</a>.</p>
 
-<p>Referenced by <a class="el" href="optical__flow__hover_8c_source.html#l00684">computeOptiTrack()</a>, <a class="el" href="esc__dshot_8c_source.html#l00215">dshotSetThrottle()</a>, <a class="el" href="e__identification__fr_8c_source.html#l00145">e_identification_fr_init()</a>, <a class="el" href="generic__com_8c_source.html#l00070">generic_com_periodic()</a>, <a class="el" href="guidance__h__ref_8c_source.html#l00073">gh_set_max_speed()</a>, <a class="el" href="gps__ubx_8c_source.html#l00315">gps_ubx_parse_nav_sat()</a>, <a class="el" href="gps__ubx_8c_source.html#l00299">gps_ubx_parse_nav_svinfo()</a>, <a class="el" href="gps__ubx_8c_source.html#l00386">gps_ubx_parse_rxm_raw()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00462">guidance_h_traj_run()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00473">guidance_v_from_nav()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00519">guidance_v_guided_run()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00299">guidance_v_run()</a>, <a class="el" href="stabilization__attitude_8c_source.html#l00201">h_ctl_course_loop()</a>, <a class="el" href="nps__fdm__gazebo_8cpp_source.html#l00333">init_gazebo()</a>, <a class="el" href="mavlink_8c_source.html#l00697">mavlink_send_gps_status()</a>, <a class="el" href="mt9f002_8c_source.html#l00914">mt9f002_calc_resolution()</a>, <a class="el" href="mt9f002_8c_source.html#l01000">mt9f002_set_resolution()</a>, <a class="el" href="nav__rover__base_8c_source.html#l00103">nav_circle()</a>, <a class="el" href="nav_8c_source.html#l00109">nav_circle_XY()</a>, <a class="el" href="nav__survey__rectangle_8c_source.html#l00092">nav_survey_rectangle()</a>, <a class="el" href="nav__survey__rectangle_8c_source.html#l00055">nav_survey_rectangle_init()</a>, <a class="el" href="nav__survey__rectangle__rotorcraft_8c_source.html#l00165">nav_survey_rectangle_rotorcraft_run()</a>, <a class="el" href="nav__survey__rectangle__rotorcraft_8c_source.html#l00107">nav_survey_rectangle_rotorcraft_setup()</a>, <a class="el" href="xsens700_8c_source.html#l00141">parse_xsens700_msg()</a>, <a class="el" href="xsens_8c_source.html#l00184">parse_xsens_msg()</a>, <a class="el" href="syslink__dl_8c_source.html#l00303">syslink_put_buffer()</a>, and <a class="el" href="tcas_8c_source.html#l00236">tcas_periodic_task_4Hz()</a>.</p>
+<p>Referenced by <a class="el" href="pprz__chirp_8c_source.html#l00071">chirp_update()</a>, <a class="el" href="optical__flow__hover_8c_source.html#l00684">computeOptiTrack()</a>, <a class="el" href="esc__dshot_8c_source.html#l00210">dshotSetThrottle()</a>, <a class="el" href="generic__com_8c_source.html#l00070">generic_com_periodic()</a>, <a class="el" href="guidance__h__ref_8c_source.html#l00073">gh_set_max_speed()</a>, <a class="el" href="gps__ubx_8c_source.html#l00315">gps_ubx_parse_nav_sat()</a>, <a class="el" href="gps__ubx_8c_source.html#l00299">gps_ubx_parse_nav_svinfo()</a>, <a class="el" href="gps__ubx_8c_source.html#l00386">gps_ubx_parse_rxm_raw()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__h_8c_source.html#l00472">guidance_h_traj_run()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00176">guidance_indi_run()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00473">guidance_v_from_nav()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00519">guidance_v_guided_run()</a>, <a class="el" href="rotorcraft_2guidance_2guidance__v_8c_source.html#l00299">guidance_v_run()</a>, <a class="el" href="stabilization__attitude_8c_source.html#l00201">h_ctl_course_loop()</a>, <a class="el" href="nps__fdm__gazebo_8cpp_source.html#l00333">init_gazebo()</a>, <a class="el" href="mavlink_8c_source.html#l00697">mavlink_send_gps_status()</a>, <a class="el" href="mt9f002_8c_source.html#l00914">mt9f002_calc_resolution()</a>, <a class="el" href="mt9f002_8c_source.html#l01000">mt9f002_set_resolution()</a>, <a class="el" href="nav__rover__base_8c_source.html#l00103">nav_circle()</a>, <a class="el" href="nav_8c_source.html#l00109">nav_circle_XY()</a>, <a class="el" href="guidance__indi__hybrid_8c_source.html#l00611">nav_get_speed_sp_from_go()</a>, <a class="el" href="nav__survey__rectangle_8c_source.html#l00092">nav_survey_rectangle()</a>, <a class="el" href="nav__survey__rectangle_8c_source.html#l00055">nav_survey_rectangle_init()</a>, <a class="el" href="nav__survey__rectangle__rotorcraft_8c_source.html#l00165">nav_survey_rectangle_rotorcraft_run()</a>, <a class="el" href="nav__survey__rectangle__rotorcraft_8c_source.html#l00107">nav_survey_rectangle_rotorcraft_setup()</a>, <a class="el" href="xsens700_8c_source.html#l00141">parse_xsens700_msg()</a>, <a class="el" href="xsens_8c_source.html#l00184">parse_xsens_msg()</a>, <a class="el" href="syslink__dl_8c_source.html#l00303">syslink_put_buffer()</a>, and <a class="el" href="tcas_8c_source.html#l00236">tcas_periodic_task_4Hz()</a>.</p>
 
 </div>
 </div>
@@ -520,11 +520,11 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="esc__dshot_8c_source.html#l00386">386</a> of file <a class="el" href="esc__dshot_8c_source.html">esc_dshot.c</a>.</p>
+<p>Definition at line <a class="el" href="esc__dshot_8c_source.html#l00385">385</a> of file <a class="el" href="esc__dshot_8c_source.html">esc_dshot.c</a>.</p>
 
-<p>References <a class="el" href="esc__dshot_8h_source.html#l00192">DshotPackets::dp</a>, <a class="el" href="esc__dshot_8c_source.html#l00079">DSHOT_BIT0_DUTY</a>, <a class="el" href="esc__dshot_8c_source.html#l00080">DSHOT_BIT1_DUTY</a>, <a class="el" href="esc__dshot_8h_source.html#l00045">DSHOT_BIT_WIDTHS</a>, <a class="el" href="esc__dshot_8h_source.html#l00048">DSHOT_CHANNELS</a>, <a class="el" href="esc__dshot_8h_source.html#l00188">DshotPacket::rawFrame</a>, and <a class="el" href="esc__dshot_8h_source.html#l00199">DshotDmaBuffer::widths16</a>.</p>
+<p>References <a class="el" href="esc__dshot_8h_source.html#l00218">DshotPackets::dp</a>, <a class="el" href="esc__dshot_8c_source.html#l00079">DSHOT_BIT0_DUTY</a>, <a class="el" href="esc__dshot_8c_source.html#l00080">DSHOT_BIT1_DUTY</a>, <a class="el" href="esc__dshot_8h_source.html#l00049">DSHOT_BIT_WIDTHS</a>, <a class="el" href="esc__dshot_8h_source.html#l00056">DSHOT_CHANNELS</a>, <a class="el" href="esc__dshot_8h_source.html#l00050">DSHOT_PRE_FRAME_SILENT_SYNC_BITS</a>, <a class="el" href="esc__dshot_8h_source.html#l00214">DshotPacket::rawFrame</a>, and <a class="el" href="esc__dshot_8h_source.html#l00143">DshotDmaBuffer::widths16</a>.</p>
 
-<p>Referenced by <a class="el" href="esc__dshot_8c_source.html#l00303">dshotSendFrame()</a>.</p>
+<p>Referenced by <a class="el" href="esc__dshot_8c_source.html#l00302">dshotSendFrame()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -571,11 +571,11 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="esc__dshot_8c_source.html#l00428">428</a> of file <a class="el" href="esc__dshot_8c_source.html">esc_dshot.c</a>.</p>
+<p>Definition at line <a class="el" href="esc__dshot_8c_source.html#l00427">427</a> of file <a class="el" href="esc__dshot_8c_source.html">esc_dshot.c</a>.</p>
 
-<p>References <a class="el" href="link__mcu__spi_8c_source.html#l00036">crc</a>, and <a class="el" href="esc__dshot_8c_source.html#l00416">updateCrc8()</a>.</p>
+<p>References <a class="el" href="link__mcu__spi_8c_source.html#l00036">crc</a>, and <a class="el" href="esc__dshot_8c_source.html#l00415">updateCrc8()</a>.</p>
 
-<p>Referenced by <a class="el" href="esc__dshot_8c_source.html#l00463">dshotTlmRec()</a>.</p>
+<p>Referenced by <a class="el" href="esc__dshot_8c_source.html#l00462">dshotTlmRec()</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -624,9 +624,9 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>number of CRC errors  </dd></dl>
 
-<p>Definition at line <a class="el" href="esc__dshot_8c_source.html#l00330">330</a> of file <a class="el" href="esc__dshot_8c_source.html">esc_dshot.c</a>.</p>
+<p>Definition at line <a class="el" href="esc__dshot_8c_source.html#l00329">329</a> of file <a class="el" href="esc__dshot_8c_source.html">esc_dshot.c</a>.</p>
 
-<p>References <a class="el" href="esc__dshot_8h_source.html#l00242">DSHOTDriver::crc_errors</a>.</p>
+<p>References <a class="el" href="esc__dshot_8h_source.html#l00262">DSHOTDriver::crc_errors</a>.</p>
 
 </div>
 </div>
@@ -664,9 +664,9 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pointer on a telemetry structure  </dd></dl>
 
-<p>Definition at line <a class="el" href="esc__dshot_8c_source.html#l00343">343</a> of file <a class="el" href="esc__dshot_8c_source.html">esc_dshot.c</a>.</p>
+<p>Definition at line <a class="el" href="esc__dshot_8c_source.html#l00342">342</a> of file <a class="el" href="esc__dshot_8c_source.html">esc_dshot.c</a>.</p>
 
-<p>References <a class="el" href="esc__dshot_8h_source.html#l00249">DSHOTDriver::dshotMotors</a>, and <a class="el" href="esc__dshot_8h_source.html#l00193">DshotPackets::dt</a>.</p>
+<p>References <a class="el" href="esc__dshot_8h_source.html#l00269">DSHOTDriver::dshotMotors</a>, and <a class="el" href="esc__dshot_8h_source.html#l00219">DshotPackets::dt</a>.</p>
 
 </div>
 </div>
@@ -693,11 +693,11 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>dshotSetXXX api should be called prior to this function  </dd></dl>
 
-<p>Definition at line <a class="el" href="esc__dshot_8c_source.html#l00303">303</a> of file <a class="el" href="esc__dshot_8c_source.html">esc_dshot.c</a>.</p>
+<p>Definition at line <a class="el" href="esc__dshot_8c_source.html#l00302">302</a> of file <a class="el" href="esc__dshot_8c_source.html">esc_dshot.c</a>.</p>
 
-<p>References <a class="el" href="esc__dshot_8c_source.html#l00386">buildDshotDmaBuffer()</a>, <a class="el" href="esc__dshot_8h_source.html#l00212">DSHOTDriver::config</a>, <a class="el" href="esc__dshot_8h_source.html#l00194">DshotPackets::currentTlmQry</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00062">DMA_READY</a>, <a class="el" href="esc__dshot_8h_source.html#l00227">DSHOTDriver::dmap</a>, <a class="el" href="hal__stm32__dma_8c_source.html#l00142">dmaStartTransfert()</a>, <a class="el" href="esc__dshot_8h_source.html#l00192">DshotPackets::dp</a>, <a class="el" href="esc__dshot_8h_source.html#l00250">DSHOTDriver::dsdb</a>, <a class="el" href="esc__dshot_8h_source.html#l00048">DSHOT_CHANNELS</a>, <a class="el" href="esc__dshot_8h_source.html#l00047">DSHOT_DMA_BUFFER_SIZE</a>, <a class="el" href="esc__dshot_8h_source.html#l00249">DSHOTDriver::dshotMotors</a>, <a class="el" href="esc__dshot_8c_source.html#l00439">getTimerWidth()</a>, <a class="el" href="esc__dshot_8h_source.html#l00237">DSHOTDriver::mb</a>, <a class="el" href="esc__dshot_8h_source.html#l00195">DshotPackets::onGoingQry</a>, <a class="el" href="esc__dshot_8h_source.html#l00155">DSHOTConfig::pwmp</a>, <a class="el" href="esc__dshot_8c_source.html#l00381">setDshotPacketTlm()</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00408">DMADriver::state</a>, and <a class="el" href="esc__dshot_8h_source.html#l00160">DSHOTConfig::tlm_sd</a>.</p>
+<p>References <a class="el" href="esc__dshot_8c_source.html#l00385">buildDshotDmaBuffer()</a>, <a class="el" href="esc__dshot_8h_source.html#l00232">DSHOTDriver::config</a>, <a class="el" href="esc__dshot_8h_source.html#l00220">DshotPackets::currentTlmQry</a>, <a class="el" href="esc__dshot_8h_source.html#l00179">DSHOTConfig::dma_buf</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00065">DMA_READY</a>, <a class="el" href="esc__dshot_8h_source.html#l00247">DSHOTDriver::dmap</a>, <a class="el" href="hal__stm32__dma_8c_source.html#l00149">dmaStartTransfert()</a>, <a class="el" href="esc__dshot_8h_source.html#l00218">DshotPackets::dp</a>, <a class="el" href="esc__dshot_8h_source.html#l00056">DSHOT_CHANNELS</a>, <a class="el" href="esc__dshot_8h_source.html#l00052">DSHOT_DMA_BUFFER_SIZE</a>, <a class="el" href="esc__dshot_8h_source.html#l00269">DSHOTDriver::dshotMotors</a>, <a class="el" href="esc__dshot_8c_source.html#l00438">getTimerWidth()</a>, <a class="el" href="esc__dshot_8h_source.html#l00257">DSHOTDriver::mb</a>, <a class="el" href="esc__dshot_8h_source.html#l00221">DshotPackets::onGoingQry</a>, <a class="el" href="esc__dshot_8h_source.html#l00169">DSHOTConfig::pwmp</a>, <a class="el" href="esc__dshot_8c_source.html#l00380">setDshotPacketTlm()</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00441">DMADriver::state</a>, and <a class="el" href="esc__dshot_8h_source.html#l00174">DSHOTConfig::tlm_sd</a>.</p>
 
-<p>Referenced by <a class="el" href="actuators__dshot__arch_8c_source.html#l00134">actuators_dshot_arch_commit()</a>, <a class="el" href="esc__dshot_8c_source.html#l00240">dshotSendSpecialCommand()</a>, and <a class="el" href="esc__dshot_8c_source.html#l00287">dshotSendThrottles()</a>.</p>
+<p>Referenced by <a class="el" href="chibios_2modules_2actuators_2actuators__dshot__arch_8c_source.html#l00142">actuators_dshot_arch_commit()</a>, <a class="el" href="esc__dshot_8c_source.html#l00239">dshotSendSpecialCommand()</a>, and <a class="el" href="esc__dshot_8c_source.html#l00286">dshotSendThrottles()</a>.</p>
 
 <p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -763,9 +763,9 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="esc__dshot_8c_source.html#l00240">240</a> of file <a class="el" href="esc__dshot_8c_source.html">esc_dshot.c</a>.</p>
+<p>Definition at line <a class="el" href="esc__dshot_8c_source.html#l00239">239</a> of file <a class="el" href="esc__dshot_8c_source.html">esc_dshot.c</a>.</p>
 
-<p>References <a class="el" href="esc__dshot_8h_source.html#l00212">DSHOTDriver::config</a>, <a class="el" href="esc__dshot_8h_source.html#l00192">DshotPackets::dp</a>, <a class="el" href="esc__dshot_8h_source.html#l00055">DSHOT_ALL_MOTORS</a>, <a class="el" href="esc__dshot_8h_source.html#l00048">DSHOT_CHANNELS</a>, <a class="el" href="esc__dshot_8h_source.html#l00093">DSHOT_CMD_3D_MODE_OFF</a>, <a class="el" href="esc__dshot_8h_source.html#l00094">DSHOT_CMD_3D_MODE_ON</a>, <a class="el" href="esc__dshot_8h_source.html#l00107">DSHOT_CMD_AUDIO_STREAM_MODE_ON_OFF</a>, <a class="el" href="esc__dshot_8h_source.html#l00109">DSHOT_CMD_MAX</a>, <a class="el" href="esc__dshot_8h_source.html#l00096">DSHOT_CMD_SAVE_SETTINGS</a>, <a class="el" href="esc__dshot_8h_source.html#l00095">DSHOT_CMD_SETTINGS_REQUEST</a>, <a class="el" href="esc__dshot_8h_source.html#l00108">DSHOT_CMD_SILENT_MODE_ON_OFF</a>, <a class="el" href="esc__dshot_8h_source.html#l00091">DSHOT_CMD_SPIN_DIRECTION_1</a>, <a class="el" href="esc__dshot_8h_source.html#l00092">DSHOT_CMD_SPIN_DIRECTION_2</a>, <a class="el" href="esc__dshot_8h_source.html#l00249">DSHOTDriver::dshotMotors</a>, <a class="el" href="esc__dshot_8c_source.html#l00303">dshotSendFrame()</a>, <a class="el" href="esc__dshot_8c_source.html#l00375">setDshotPacketThrottle()</a>, <a class="el" href="esc__dshot_8c_source.html#l00381">setDshotPacketTlm()</a>, and <a class="el" href="esc__dshot_8h_source.html#l00160">DSHOTConfig::tlm_sd</a>.</p>
+<p>References <a class="el" href="esc__dshot_8h_source.html#l00232">DSHOTDriver::config</a>, <a class="el" href="esc__dshot_8h_source.html#l00218">DshotPackets::dp</a>, <a class="el" href="esc__dshot_8h_source.html#l00063">DSHOT_ALL_MOTORS</a>, <a class="el" href="esc__dshot_8h_source.html#l00056">DSHOT_CHANNELS</a>, <a class="el" href="esc__dshot_8h_source.html#l00101">DSHOT_CMD_3D_MODE_OFF</a>, <a class="el" href="esc__dshot_8h_source.html#l00102">DSHOT_CMD_3D_MODE_ON</a>, <a class="el" href="esc__dshot_8h_source.html#l00115">DSHOT_CMD_AUDIO_STREAM_MODE_ON_OFF</a>, <a class="el" href="esc__dshot_8h_source.html#l00117">DSHOT_CMD_MAX</a>, <a class="el" href="esc__dshot_8h_source.html#l00104">DSHOT_CMD_SAVE_SETTINGS</a>, <a class="el" href="esc__dshot_8h_source.html#l00103">DSHOT_CMD_SETTINGS_REQUEST</a>, <a class="el" href="esc__dshot_8h_source.html#l00116">DSHOT_CMD_SILENT_MODE_ON_OFF</a>, <a class="el" href="esc__dshot_8h_source.html#l00099">DSHOT_CMD_SPIN_DIRECTION_1</a>, <a class="el" href="esc__dshot_8h_source.html#l00100">DSHOT_CMD_SPIN_DIRECTION_2</a>, <a class="el" href="esc__dshot_8h_source.html#l00269">DSHOTDriver::dshotMotors</a>, <a class="el" href="esc__dshot_8c_source.html#l00302">dshotSendFrame()</a>, <a class="el" href="esc__dshot_8c_source.html#l00374">setDshotPacketThrottle()</a>, <a class="el" href="esc__dshot_8c_source.html#l00380">setDshotPacketTlm()</a>, and <a class="el" href="esc__dshot_8h_source.html#l00174">DSHOTConfig::tlm_sd</a>.</p>
 
 <p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -816,9 +816,9 @@ Functions</h2></td></tr>
 <dd>
 telemetry bit is set in turn for each ESC of the ESCs  </dd></dl>
 
-<p>Definition at line <a class="el" href="esc__dshot_8c_source.html#l00287">287</a> of file <a class="el" href="esc__dshot_8c_source.html">esc_dshot.c</a>.</p>
+<p>Definition at line <a class="el" href="esc__dshot_8c_source.html#l00286">286</a> of file <a class="el" href="esc__dshot_8c_source.html">esc_dshot.c</a>.</p>
 
-<p>References <a class="el" href="esc__dshot_8h_source.html#l00192">DshotPackets::dp</a>, <a class="el" href="esc__dshot_8h_source.html#l00048">DSHOT_CHANNELS</a>, <a class="el" href="esc__dshot_8h_source.html#l00249">DSHOTDriver::dshotMotors</a>, <a class="el" href="esc__dshot_8c_source.html#l00303">dshotSendFrame()</a>, and <a class="el" href="esc__dshot_8c_source.html#l00375">setDshotPacketThrottle()</a>.</p>
+<p>References <a class="el" href="esc__dshot_8h_source.html#l00218">DshotPackets::dp</a>, <a class="el" href="esc__dshot_8h_source.html#l00056">DSHOT_CHANNELS</a>, <a class="el" href="esc__dshot_8h_source.html#l00269">DSHOTDriver::dshotMotors</a>, <a class="el" href="esc__dshot_8c_source.html#l00302">dshotSendFrame()</a>, and <a class="el" href="esc__dshot_8c_source.html#l00374">setDshotPacketThrottle()</a>.</p>
 
 <p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -876,11 +876,11 @@ telemetry bit is set in turn for each ESC of the ESCs  </dd></dl>
 <dd>
 see also dshotSendThrottles  </dd></dl>
 
-<p>Definition at line <a class="el" href="esc__dshot_8c_source.html#l00215">215</a> of file <a class="el" href="esc__dshot_8c_source.html">esc_dshot.c</a>.</p>
+<p>Definition at line <a class="el" href="esc__dshot_8c_source.html#l00210">210</a> of file <a class="el" href="esc__dshot_8c_source.html">esc_dshot.c</a>.</p>
 
-<p>References <a class="el" href="esc__dshot_8h_source.html#l00192">DshotPackets::dp</a>, <a class="el" href="esc__dshot_8h_source.html#l00055">DSHOT_ALL_MOTORS</a>, <a class="el" href="esc__dshot_8h_source.html#l00048">DSHOT_CHANNELS</a>, <a class="el" href="esc__dshot_8h_source.html#l00109">DSHOT_CMD_MAX</a>, <a class="el" href="esc__dshot_8c_source.html#l00087">DSHOT_MAX_VALUE</a>, <a class="el" href="esc__dshot_8h_source.html#l00249">DSHOTDriver::dshotMotors</a>, <a class="el" href="esc__dshot_8c_source.html#l00085">Min</a>, and <a class="el" href="esc__dshot_8c_source.html#l00375">setDshotPacketThrottle()</a>.</p>
+<p>References <a class="el" href="esc__dshot_8h_source.html#l00218">DshotPackets::dp</a>, <a class="el" href="esc__dshot_8h_source.html#l00063">DSHOT_ALL_MOTORS</a>, <a class="el" href="esc__dshot_8h_source.html#l00044">DSHOT_CHANNEL_FIRST_INDEX</a>, <a class="el" href="esc__dshot_8h_source.html#l00056">DSHOT_CHANNELS</a>, <a class="el" href="esc__dshot_8h_source.html#l00117">DSHOT_CMD_MAX</a>, <a class="el" href="esc__dshot_8c_source.html#l00087">DSHOT_MAX_VALUE</a>, <a class="el" href="esc__dshot_8h_source.html#l00269">DSHOTDriver::dshotMotors</a>, <a class="el" href="esc__dshot_8c_source.html#l00085">Min</a>, and <a class="el" href="esc__dshot_8c_source.html#l00374">setDshotPacketThrottle()</a>.</p>
 
-<p>Referenced by <a class="el" href="actuators__dshot__arch_8c_source.html#l00134">actuators_dshot_arch_commit()</a>.</p>
+<p>Referenced by <a class="el" href="chibios_2modules_2actuators_2actuators__dshot__arch_8c_source.html#l00142">actuators_dshot_arch_commit()</a>.</p>
 
 <p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -941,9 +941,9 @@ see also dshotSendThrottles  </dd></dl>
 
 <p>Definition at line <a class="el" href="esc__dshot_8c_source.html#l00122">122</a> of file <a class="el" href="esc__dshot_8c_source.html">esc_dshot.c</a>.</p>
 
-<p>References <a class="el" href="esc__dshot_8h_source.html#l00232">DSHOTDriver::_mbBuf</a>, <a class="el" href="esc__dshot_8c_source.html#l00084">ARRAY_LEN</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00199">config</a>, <a class="el" href="esc__dshot_8h_source.html#l00212">DSHOTDriver::config</a>, <a class="el" href="esc__dshot_8h_source.html#l00242">DSHOTDriver::crc_errors</a>, <a class="el" href="esc__dshot_8c_source.html#l00082">DCR_DBA</a>, <a class="el" href="esc__dshot_8c_source.html#l00081">DCR_DBL</a>, <a class="el" href="esc__dshot_8h_source.html#l00150">DSHOTConfig::dma_channel</a>, <a class="el" href="esc__dshot_8h_source.html#l00217">DSHOTDriver::dma_conf</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00084">DMA_DIR_M2P</a>, <a class="el" href="esc__dshot_8h_source.html#l00145">DSHOTConfig::dma_stream</a>, <a class="el" href="hal__stm32__dma_8c_source.html#l00053">dmaObjectInit()</a>, <a class="el" href="esc__dshot_8h_source.html#l00227">DSHOTDriver::dmap</a>, <a class="el" href="hal__stm32__dma_8c_source.html#l00085">dmaStart()</a>, <a class="el" href="esc__dshot_8h_source.html#l00192">DshotPackets::dp</a>, <a class="el" href="esc__dshot_8h_source.html#l00250">DSHOTDriver::dsdb</a>, <a class="el" href="esc__dshot_8h_source.html#l00048">DSHOT_CHANNELS</a>, <a class="el" href="esc__dshot_8h_source.html#l00047">DSHOT_DMA_BUFFER_SIZE</a>, <a class="el" href="esc__dshot_8c_source.html#l00078">DSHOT_PWM_PERIOD</a>, <a class="el" href="esc__dshot_8c_source.html#l00055">DSHOT_TELEMETRY_BAUD</a>, <a class="el" href="esc__dshot_8h_source.html#l00249">DSHOTDriver::dshotMotors</a>, <a class="el" href="esc__dshot_8c_source.html#l00463">dshotTlmRec()</a>, <a class="el" href="esc__dshot_8c_source.html#l00439">getTimerWidth()</a>, <a class="el" href="esc__dshot_8c_source.html#l00358">makeDshotPacket()</a>, <a class="el" href="esc__dshot_8h_source.html#l00237">DSHOTDriver::mb</a>, <a class="el" href="esc__dshot_8h_source.html#l00222">DSHOTDriver::pwm_conf</a>, <a class="el" href="esc__dshot_8h_source.html#l00155">DSHOTConfig::pwmp</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00244">DMAConfig::stream</a>, <a class="el" href="esc__dshot_8c_source.html#l00077">TICK_FREQ</a>, <a class="el" href="esc__dshot_8c_source.html#l00073">TICKS_PER_PERIOD</a>, and <a class="el" href="esc__dshot_8h_source.html#l00160">DSHOTConfig::tlm_sd</a>.</p>
+<p>References <a class="el" href="esc__dshot_8h_source.html#l00252">DSHOTDriver::_mbBuf</a>, <a class="el" href="esc__dshot_8c_source.html#l00084">ARRAY_LEN</a>, <a class="el" href="stm32_2usb__ser__hw_8c_source.html#l00200">config</a>, <a class="el" href="esc__dshot_8h_source.html#l00232">DSHOTDriver::config</a>, <a class="el" href="esc__dshot_8h_source.html#l00262">DSHOTDriver::crc_errors</a>, <a class="el" href="esc__dshot_8h_source.html#l00220">DshotPackets::currentTlmQry</a>, <a class="el" href="esc__dshot_8c_source.html#l00082">DCR_DBA</a>, <a class="el" href="esc__dshot_8c_source.html#l00081">DCR_DBL</a>, <a class="el" href="esc__dshot_8h_source.html#l00179">DSHOTConfig::dma_buf</a>, <a class="el" href="esc__dshot_8h_source.html#l00164">DSHOTConfig::dma_channel</a>, <a class="el" href="esc__dshot_8h_source.html#l00237">DSHOTDriver::dma_conf</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00089">DMA_DIR_M2P</a>, <a class="el" href="esc__dshot_8h_source.html#l00159">DSHOTConfig::dma_stream</a>, <a class="el" href="hal__stm32__dma_8c_source.html#l00056">dmaObjectInit()</a>, <a class="el" href="esc__dshot_8h_source.html#l00247">DSHOTDriver::dmap</a>, <a class="el" href="hal__stm32__dma_8c_source.html#l00092">dmaStart()</a>, <a class="el" href="esc__dshot_8h_source.html#l00218">DshotPackets::dp</a>, <a class="el" href="esc__dshot_8h_source.html#l00056">DSHOT_CHANNELS</a>, <a class="el" href="esc__dshot_8c_source.html#l00078">DSHOT_PWM_PERIOD</a>, <a class="el" href="esc__dshot_8c_source.html#l00055">DSHOT_TELEMETRY_BAUD</a>, <a class="el" href="esc__dshot_8h_source.html#l00269">DSHOTDriver::dshotMotors</a>, <a class="el" href="esc__dshot_8c_source.html#l00462">dshotTlmRec()</a>, <a class="el" href="esc__dshot_8c_source.html#l00438">getTimerWidth()</a>, <a class="el" href="esc__dshot_8c_source.html#l00357">makeDshotPacket()</a>, <a class="el" href="esc__dshot_8h_source.html#l00257">DSHOTDriver::mb</a>, <a class="el" href="esc__dshot_8h_source.html#l00221">DshotPackets::onGoingQry</a>, <a class="el" href="esc__dshot_8h_source.html#l00242">DSHOTDriver::pwm_conf</a>, <a class="el" href="esc__dshot_8h_source.html#l00169">DSHOTConfig::pwmp</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00246">DMAConfig::stream</a>, <a class="el" href="esc__dshot_8c_source.html#l00077">TICK_FREQ</a>, <a class="el" href="esc__dshot_8c_source.html#l00073">TICKS_PER_PERIOD</a>, and <a class="el" href="esc__dshot_8h_source.html#l00174">DSHOTConfig::tlm_sd</a>.</p>
 
-<p>Referenced by <a class="el" href="actuators__dshot__arch_8c_source.html#l00065">actuators_dshot_arch_init()</a>.</p>
+<p>Referenced by <a class="el" href="chibios_2modules_2actuators_2actuators__dshot__arch_8c_source.html#l00073">actuators_dshot_arch_init()</a>.</p>
 
 <p><div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -952,7 +952,7 @@ see also dshotSendThrottles  </dd></dl>
 <div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="esc__dshot_8c_a016263bbfd016452191cd9e4e345b1dc_cgraph.png" border="0" usemap="#esc__dshot_8c_a016263bbfd016452191cd9e4e345b1dc_cgraph" alt=""/></div>
 <map name="esc__dshot_8c_a016263bbfd016452191cd9e4e345b1dc_cgraph" id="esc__dshot_8c_a016263bbfd016452191cd9e4e345b1dc_cgraph">
-<area shape="rect" id="node2" href="hal__stm32__dma_8c.html#a0eeaca4a9d0494d44986bc443aa6c80c" title="dmaObjectInit" alt="" coords="158,5,269,32"/><area shape="rect" id="node3" href="hal__stm32__dma_8c.html#ad255236c42982a3368342bbfeee0c783" title="Configures and activates the DMA peripheral. " alt="" coords="172,56,255,83"/><area shape="rect" id="node10" href="esc__dshot_8c.html#ab33d9ca67899cf25bb7306d076b6e0fa" title="dshotTlmRec" alt="" coords="162,107,265,133"/><area shape="rect" id="node13" href="esc__dshot_8c.html#a07f476e006400858ea955505b6db7557" title="getTimerWidth" alt="" coords="156,157,271,184"/><area shape="rect" id="node14" href="esc__dshot_8c.html#ad6b10d799e249f91b8d9bec6bd4cf0ec" title="makeDshotPacket" alt="" coords="144,208,283,235"/><area shape="rect" id="node4" href="hal__stm32__dma_8c.html#a991ade7a6254eabbe74489fa7c8f366a" title="Configures and activates the DMA peripheral. " alt="" coords="331,56,440,83"/><area shape="rect" id="node5" href="hal__stm32__dma_8c.html#af19ab796ea3d6054e7401cfaf0bfeefe" title="DMA ISR service routine. " alt="" coords="488,56,664,83"/><area shape="rect" id="node6" href="hal__stm32__dma_8h.html#a754932a38627dd6a86ecc88253dc6687" title="Common ISR code, error event. " alt="" coords="712,5,868,32"/><area shape="rect" id="node8" href="hal__stm32__dma_8h.html#aa5d22761474681d44a4d69141336a04c" title="Common ISR code, full buffer event. " alt="" coords="719,56,861,83"/><area shape="rect" id="node9" href="hal__stm32__dma_8h.html#ac9cf607ddf63798249b67ed248411b12" title="Common ISR code, half buffer event. " alt="" coords="716,107,864,133"/><area shape="rect" id="node7" href="hal__stm32__dma_8h.html#ab2d180e5adb10579b0b032987f338d33" title="Stops an ongoing transaction. " alt="" coords="916,31,1085,57"/><area shape="rect" id="node11" href="esc__dshot_8c.html#a2e417dbd1839a8efbf515ea7315b80d4" title="calculateCrc8" alt="" coords="331,107,439,133"/><area shape="rect" id="node12" href="esc__dshot_8c.html#aea595f27e51665e32b06116f9965c856" title="updateCrc8" alt="" coords="528,107,624,133"/></map>
+<area shape="rect" id="node2" href="hal__stm32__dma_8c.html#a0eeaca4a9d0494d44986bc443aa6c80c" title="dmaObjectInit" alt="" coords="158,31,269,57"/><area shape="rect" id="node3" href="hal__stm32__dma_8c.html#ad255236c42982a3368342bbfeee0c783" title="Configures and activates the DMA peripheral. " alt="" coords="172,81,255,108"/><area shape="rect" id="node11" href="esc__dshot_8c.html#ab33d9ca67899cf25bb7306d076b6e0fa" title="dshotTlmRec" alt="" coords="162,132,265,159"/><area shape="rect" id="node14" href="esc__dshot_8c.html#a07f476e006400858ea955505b6db7557" title="getTimerWidth" alt="" coords="156,183,271,209"/><area shape="rect" id="node15" href="esc__dshot_8c.html#ad6b10d799e249f91b8d9bec6bd4cf0ec" title="makeDshotPacket" alt="" coords="144,233,283,260"/><area shape="rect" id="node4" href="hal__stm32__dma_8c.html#a991ade7a6254eabbe74489fa7c8f366a" title="Configures and activates the DMA peripheral. " alt="" coords="331,81,440,108"/><area shape="rect" id="node5" href="hal__stm32__dma_8c.html#af19ab796ea3d6054e7401cfaf0bfeefe" title="DMA ISR service routine. " alt="" coords="488,81,664,108"/><area shape="rect" id="node6" href="hal__stm32__dma_8h.html#a754932a38627dd6a86ecc88253dc6687" title="Common ISR code, error event. " alt="" coords="712,5,868,32"/><area shape="rect" id="node8" href="hal__stm32__dma_8h.html#aa5d22761474681d44a4d69141336a04c" title="Common ISR code, full buffer event. " alt="" coords="719,56,861,83"/><area shape="rect" id="node9" href="hal__stm32__dma_8h.html#ac9cf607ddf63798249b67ed248411b12" title="Common ISR code, half buffer event. " alt="" coords="716,107,864,133"/><area shape="rect" id="node10" href="hal__stm32__dma_8c.html#a5c6eaa4da527eb2499e3831069eb1ab3" title="getFCR_FS" alt="" coords="745,157,835,184"/><area shape="rect" id="node7" href="hal__stm32__dma_8h.html#ab2d180e5adb10579b0b032987f338d33" title="Stops an ongoing transaction. " alt="" coords="916,31,1085,57"/><area shape="rect" id="node12" href="esc__dshot_8c.html#a2e417dbd1839a8efbf515ea7315b80d4" title="calculateCrc8" alt="" coords="331,132,439,159"/><area shape="rect" id="node13" href="esc__dshot_8c.html#aea595f27e51665e32b06116f9965c856" title="updateCrc8" alt="" coords="528,132,624,159"/></map>
 </div>
 </p>
 
@@ -991,9 +991,9 @@ see also dshotSendThrottles  </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="esc__dshot_8c_source.html#l00463">463</a> of file <a class="el" href="esc__dshot_8c_source.html">esc_dshot.c</a>.</p>
+<p>Definition at line <a class="el" href="esc__dshot_8c_source.html#l00462">462</a> of file <a class="el" href="esc__dshot_8c_source.html">esc_dshot.c</a>.</p>
 
-<p>References <a class="el" href="esc__dshot_8c_source.html#l00428">calculateCrc8()</a>, <a class="el" href="esc__dshot_8h_source.html#l00212">DSHOTDriver::config</a>, <a class="el" href="esc__dshot_8h_source.html#l00128">DshotTelemetry::crc8</a>, <a class="el" href="esc__dshot_8h_source.html#l00242">DSHOTDriver::crc_errors</a>, <a class="el" href="esc__dshot_8c_source.html#l00061">DSHOT_TELEMETRY_TIMEOUT_MS</a>, <a class="el" href="esc__dshot_8h_source.html#l00249">DSHOTDriver::dshotMotors</a>, <a class="el" href="esc__dshot_8h_source.html#l00193">DshotPackets::dt</a>, <a class="el" href="nps__radio__control__spektrum_8c_source.html#l00105">idx</a>, <a class="el" href="esc__dshot_8h_source.html#l00237">DSHOTDriver::mb</a>, <a class="el" href="esc__dshot_8h_source.html#l00195">DshotPackets::onGoingQry</a>, and <a class="el" href="esc__dshot_8h_source.html#l00160">DSHOTConfig::tlm_sd</a>.</p>
+<p>References <a class="el" href="esc__dshot_8c_source.html#l00427">calculateCrc8()</a>, <a class="el" href="esc__dshot_8h_source.html#l00232">DSHOTDriver::config</a>, <a class="el" href="esc__dshot_8h_source.html#l00136">DshotTelemetry::crc8</a>, <a class="el" href="esc__dshot_8h_source.html#l00262">DSHOTDriver::crc_errors</a>, <a class="el" href="esc__dshot_8c_source.html#l00061">DSHOT_TELEMETRY_TIMEOUT_MS</a>, <a class="el" href="esc__dshot_8h_source.html#l00269">DSHOTDriver::dshotMotors</a>, <a class="el" href="esc__dshot_8h_source.html#l00219">DshotPackets::dt</a>, <a class="el" href="nps__radio__control__spektrum_8c_source.html#l00105">idx</a>, <a class="el" href="esc__dshot_8h_source.html#l00257">DSHOTDriver::mb</a>, <a class="el" href="esc__dshot_8h_source.html#l00221">DshotPackets::onGoingQry</a>, and <a class="el" href="esc__dshot_8h_source.html#l00174">DSHOTConfig::tlm_sd</a>.</p>
 
 <p>Referenced by <a class="el" href="esc__dshot_8c_source.html#l00122">dshotStart()</a>.</p>
 
@@ -1043,11 +1043,11 @@ see also dshotSendThrottles  </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="esc__dshot_8c_source.html#l00439">439</a> of file <a class="el" href="esc__dshot_8c_source.html">esc_dshot.c</a>.</p>
+<p>Definition at line <a class="el" href="esc__dshot_8c_source.html#l00438">438</a> of file <a class="el" href="esc__dshot_8c_source.html">esc_dshot.c</a>.</p>
 
-<p>References <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h_source.html#l00230">STM32_PWM_USE_TIM2</a>.</p>
+<p>References <a class="el" href="apogee_2chibios_2v1_80_2mcuconf_8h_source.html#l00249">STM32_PWM_USE_TIM2</a>.</p>
 
-<p>Referenced by <a class="el" href="esc__dshot_8c_source.html#l00303">dshotSendFrame()</a>, and <a class="el" href="esc__dshot_8c_source.html#l00122">dshotStart()</a>.</p>
+<p>Referenced by <a class="el" href="esc__dshot_8c_source.html#l00302">dshotSendFrame()</a>, and <a class="el" href="esc__dshot_8c_source.html#l00122">dshotStart()</a>.</p>
 
 <p><div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -1094,7 +1094,7 @@ see also dshotSendThrottles  </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="esc__dshot_8c_source.html#l00358">358</a> of file <a class="el" href="esc__dshot_8c_source.html">esc_dshot.c</a>.</p>
+<p>Definition at line <a class="el" href="esc__dshot_8c_source.html#l00357">357</a> of file <a class="el" href="esc__dshot_8c_source.html">esc_dshot.c</a>.</p>
 
 <p>References <a class="el" href="link__mcu__spi_8c_source.html#l00036">crc</a>.</p>
 
@@ -1145,9 +1145,9 @@ see also dshotSendThrottles  </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="esc__dshot_8c_source.html#l00375">375</a> of file <a class="el" href="esc__dshot_8c_source.html">esc_dshot.c</a>.</p>
+<p>Definition at line <a class="el" href="esc__dshot_8c_source.html#l00374">374</a> of file <a class="el" href="esc__dshot_8c_source.html">esc_dshot.c</a>.</p>
 
-<p>Referenced by <a class="el" href="esc__dshot_8c_source.html#l00240">dshotSendSpecialCommand()</a>, <a class="el" href="esc__dshot_8c_source.html#l00287">dshotSendThrottles()</a>, and <a class="el" href="esc__dshot_8c_source.html#l00215">dshotSetThrottle()</a>.</p>
+<p>Referenced by <a class="el" href="esc__dshot_8c_source.html#l00239">dshotSendSpecialCommand()</a>, <a class="el" href="esc__dshot_8c_source.html#l00286">dshotSendThrottles()</a>, and <a class="el" href="esc__dshot_8c_source.html#l00210">dshotSetThrottle()</a>.</p>
 
 <p><div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -1194,9 +1194,9 @@ see also dshotSendThrottles  </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="esc__dshot_8c_source.html#l00381">381</a> of file <a class="el" href="esc__dshot_8c_source.html">esc_dshot.c</a>.</p>
+<p>Definition at line <a class="el" href="esc__dshot_8c_source.html#l00380">380</a> of file <a class="el" href="esc__dshot_8c_source.html">esc_dshot.c</a>.</p>
 
-<p>Referenced by <a class="el" href="esc__dshot_8c_source.html#l00303">dshotSendFrame()</a>, and <a class="el" href="esc__dshot_8c_source.html#l00240">dshotSendSpecialCommand()</a>.</p>
+<p>Referenced by <a class="el" href="esc__dshot_8c_source.html#l00302">dshotSendFrame()</a>, and <a class="el" href="esc__dshot_8c_source.html#l00239">dshotSendSpecialCommand()</a>.</p>
 
 <p><div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -1243,11 +1243,11 @@ see also dshotSendThrottles  </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="esc__dshot_8c_source.html#l00416">416</a> of file <a class="el" href="esc__dshot_8c_source.html">esc_dshot.c</a>.</p>
+<p>Definition at line <a class="el" href="esc__dshot_8c_source.html#l00415">415</a> of file <a class="el" href="esc__dshot_8c_source.html">esc_dshot.c</a>.</p>
 
 <p>References <a class="el" href="link__mcu__spi_8c_source.html#l00036">crc</a>.</p>
 
-<p>Referenced by <a class="el" href="esc__dshot_8c_source.html#l00428">calculateCrc8()</a>.</p>
+<p>Referenced by <a class="el" href="esc__dshot_8c_source.html#l00427">calculateCrc8()</a>.</p>
 
 <p><div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -1268,7 +1268,7 @@ see also dshotSendThrottles  </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_975986b9e0eb299e77243bf822f828ce.html">chibios</a></li><li class="navelem"><a class="el" href="dir_b90ea24ba107b1eee04b94e35b69f47b.html">modules</a></li><li class="navelem"><a class="el" href="dir_417c512ab95a5e7f032e969652234298.html">actuators</a></li><li class="navelem"><a class="el" href="esc__dshot_8c.html">esc_dshot.c</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:02:41 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:02:54 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

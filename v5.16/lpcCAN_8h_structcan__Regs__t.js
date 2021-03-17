@@ -1,0 +1,27 @@
+var lpcCAN_8h_structcan__Regs__t =
+[
+    [ "can_btr", "lpcCAN_8h.html#a01fc52b096afd8ca9b97dd936534d71b", null ],
+    [ "can_cmr", "lpcCAN_8h.html#a3855a682f601e4daf6349e66cbee3f68", null ],
+    [ "can_ewl", "lpcCAN_8h.html#a60673e1aa9ce266e8b78b45bc66b88f9", null ],
+    [ "can_gsr", "lpcCAN_8h.html#a4768033ef788baf575db94b8d257c2dc", null ],
+    [ "can_icr", "lpcCAN_8h.html#ab07dc8d5a463060a43d2b3b3ef4c89a2", null ],
+    [ "can_ier", "lpcCAN_8h.html#a9d974bf7149002d06c087c1dcab4cf68", null ],
+    [ "can_mod", "lpcCAN_8h.html#ac90d3467850efc0b94e477bea2c5a390", null ],
+    [ "can_rda", "lpcCAN_8h.html#a3150d13c0d1fa1f1fdc6126b3903b480", null ],
+    [ "can_rdb", "lpcCAN_8h.html#a12edcd53d91179a4a5f6d1794b63dbad", null ],
+    [ "can_rfs", "lpcCAN_8h.html#ab78fde3c81d3184c310fb3f6712d9ea4", null ],
+    [ "can_rid", "lpcCAN_8h.html#ae39007e2a9afe0dee6c64dc12ca1f92a", null ],
+    [ "can_sr", "lpcCAN_8h.html#adb267f4dffa77a99872391e3eb0213a4", null ],
+    [ "can_tda1", "lpcCAN_8h.html#a0365bb34c95e72b403d13f2921b7c34f", null ],
+    [ "can_tda2", "lpcCAN_8h.html#a4f42d6d174d1f8f87ef1e5635ca5bdce", null ],
+    [ "can_tda3", "lpcCAN_8h.html#a76f3ad19b852dce48e934880da22442b", null ],
+    [ "can_tdb1", "lpcCAN_8h.html#a908f9d204f7270e756b66dbeefcbd8b8", null ],
+    [ "can_tdb2", "lpcCAN_8h.html#a7ae1e37f1df27e35de19777d4398c592", null ],
+    [ "can_tdb3", "lpcCAN_8h.html#a74968bcdbf86d2074c7f58107a6ad937", null ],
+    [ "can_tfi1", "lpcCAN_8h.html#a1e225dc14b3502bf49ee2f4df797c6eb", null ],
+    [ "can_tfi2", "lpcCAN_8h.html#a56148cc56e96ecc4ba393e8964df4cce", null ],
+    [ "can_tfi3", "lpcCAN_8h.html#a63da2877be8e0473b6e87b5aea17e940", null ],
+    [ "can_tid1", "lpcCAN_8h.html#ab2642af9bd4e92e9579f29374ee49b3a", null ],
+    [ "can_tid2", "lpcCAN_8h.html#a10a2ad5936fed040e9e15351999b9805", null ],
+    [ "can_tid3", "lpcCAN_8h.html#a868a9801d87172fca523708142ef4c9e", null ]
+];

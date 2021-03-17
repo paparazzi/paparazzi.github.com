@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -154,6 +154,9 @@ $(document).ready(function(){initNavTree('globals_vars_r.html','');});
 : <a class="el" href="guidance__OA_8c.html#a264f6ffe326bde98f4a7ae552179f758">guidance_OA.c</a>
 , <a class="el" href="guidance__OA_8h.html#a264f6ffe326bde98f4a7ae552179f758">guidance_OA.h</a>
 </li>
+<li>r_filt
+: <a class="el" href="stabilization__indi_8c.html#a4ac9ff1a86e6ed214eb20621f830265c">stabilization_indi.c</a>
+</li>
 <li>R_kal
 : <a class="el" href="obstacle__avoidance_8c.html#afe030233882d14003e15fba4b0d13719">obstacle_avoidance.c</a>
 </li>
@@ -162,8 +165,8 @@ $(document).ready(function(){initNavTree('globals_vars_r.html','');});
 , <a class="el" href="radio__control_8h.html#a8fe61a8aa3f1859efec4bb06bc1134dc">radio_control.h</a>
 </li>
 <li>radio_control_tid
-: <a class="el" href="rover_2main__ap_8c.html#a642adb8e14e348b49a460cadebe6608b">main_ap.c</a>
-, <a class="el" href="rotorcraft_2main__fbw_8c.html#a642adb8e14e348b49a460cadebe6608b">main_fbw.c</a>
+: <a class="el" href="rotorcraft_2main__fbw_8c.html#a642adb8e14e348b49a460cadebe6608b">main_fbw.c</a>
+, <a class="el" href="rover_2main__ap_8c.html#a642adb8e14e348b49a460cadebe6608b">main_ap.c</a>
 </li>
 <li>railnumber
 : <a class="el" href="cartography_8c.html#acc8576eed4bd78ffeb5b48ab9fe51753">cartography.c</a>
@@ -180,6 +183,9 @@ $(document).ready(function(){initNavTree('globals_vars_r.html','');});
 <li>range_forcefield_param
 : <a class="el" href="range__forcefield_8c.html#a28dcc8462610711f2652f63d5ef85ff3">range_forcefield.c</a>
 , <a class="el" href="range__forcefield_8h.html#a28dcc8462610711f2652f63d5ef85ff3">range_forcefield.h</a>
+</li>
+<li>rates_filt_fo
+: <a class="el" href="stabilization__indi__simple_8c.html#a8307db92f1398ffb8d7cd3527c43f491">stabilization_indi_simple.c</a>
 </li>
 <li>ratio_16ms
 : <a class="el" href="stm32_2subsystems_2actuators_2actuators__dualpwm__arch_8c.html#a0f03cc6b22f1cb80e9cdf8fbe342d8e3">actuators_dualpwm_arch.c</a>
@@ -214,6 +220,18 @@ $(document).ready(function(){initNavTree('globals_vars_r.html','');});
 <li>rc_settings_mode
 : <a class="el" href="fixedwing_2autopilot__firmware_8c.html#a3349e614a926a99c63c8b9f2935a29f3">autopilot_firmware.c</a>
 , <a class="el" href="rc__settings_8c.html#a3349e614a926a99c63c8b9f2935a29f3">rc_settings.c</a>
+</li>
+<li>rcData
+: <a class="el" href="cc2500__rx_8c.html#abfcd8aa775c6829c0e3791b2a16d6482">cc2500_rx.c</a>
+</li>
+<li>rcInvalidPulsPeriod
+: <a class="el" href="cc2500__rx_8c.html#a4343400da5a0d374470e5e3e385e3e31">cc2500_rx.c</a>
+</li>
+<li>Rcr
+: <a class="el" href="wedgebug_8c.html#a4eddbe46542a9a7d326b5ff0ad2d4b0b">wedgebug.c</a>
+</li>
+<li>rcSampleIndex
+: <a class="el" href="cc2500__rx_8c.html#a88db92816c701d877c5637ce8f84a8b4">cc2500_rx.c</a>
 </li>
 <li>rd_msg_len
 : <a class="el" href="rtcm3_8h.html#a521b552b352123fdf083508bfcdceeed">rtcm3.h</a>
@@ -263,10 +281,6 @@ $(document).ready(function(){initNavTree('globals_vars_r.html','');});
 <li>ref_yaw
 : <a class="el" href="obstacle__avoidance_8c.html#a0862abd562be2475e7e0e31766c18528">obstacle_avoidance.c</a>
 </li>
-<li>reference_acceleration
-: <a class="el" href="stabilization__indi_8c.html#a6be6232124313cc99a13ce5c9f453b6a">stabilization_indi.c</a>
-, <a class="el" href="stabilization__indi_8h.html#a6be6232124313cc99a13ce5c9f453b6a">stabilization_indi.h</a>
-</li>
 <li>reference_pitch
 : <a class="el" href="obstacle__avoidance_8c.html#ae078454b01eeea1d1a0e431c5f04fd33">obstacle_avoidance.c</a>
 </li>
@@ -276,6 +290,12 @@ $(document).ready(function(){initNavTree('globals_vars_r.html','');});
 <li>relaunch_reading_memory
 : <a class="el" href="high__speed__logger__direct__memory_8c.html#ab998d0a08b382adc864f654d3f576195">high_speed_logger_direct_memory.c</a>
 </li>
+<li>remoteToProcessId
+: <a class="el" href="cc2500__frsky__x_8c.html#af99b33aa0fccb95d790cf31e47e3fd66">cc2500_frsky_x.c</a>
+</li>
+<li>remoteToProcessIndex
+: <a class="el" href="cc2500__frsky__x_8c.html#a78e29406b6cccc6fd830f7684a55e383">cc2500_frsky_x.c</a>
+</li>
 <li>renorm_blowup_count
 : <a class="el" href="ahrs__float__dcm_8h.html#ab0d3aa1869bc70eb2b0190c3912690e7">ahrs_float_dcm.h</a>
 </li>
@@ -283,8 +303,8 @@ $(document).ready(function(){initNavTree('globals_vars_r.html','');});
 : <a class="el" href="ahrs__float__dcm_8h.html#a1814455019292840abf28c91a27f2080">ahrs_float_dcm.h</a>
 </li>
 <li>repulsionforce_filter_flag
-: <a class="el" href="guidance__OA_8h.html#a8fd84e5f3905fb563d8e23bc56fc68e0">guidance_OA.h</a>
-, <a class="el" href="guidance__OA_8c.html#a8fd84e5f3905fb563d8e23bc56fc68e0">guidance_OA.c</a>
+: <a class="el" href="guidance__OA_8c.html#a8fd84e5f3905fb563d8e23bc56fc68e0">guidance_OA.c</a>
+, <a class="el" href="guidance__OA_8h.html#a8fd84e5f3905fb563d8e23bc56fc68e0">guidance_OA.h</a>
 </li>
 <li>Repulsionforce_Kan
 : <a class="el" href="obstacle__avoidance_8c.html#a4f3a8d7368e59228403cdb7991e3cf74">obstacle_avoidance.c</a>
@@ -314,8 +334,11 @@ $(document).ready(function(){initNavTree('globals_vars_r.html','');});
 : <a class="el" href="baro__MS5534A_8c.html#ae9f68c6af70342cbaad9f8500d0b6f23">baro_MS5534A.c</a>
 </li>
 <li>Reset_Sweep
-: <a class="el" href="nav__survey__poly__osam_8c.html#a458e606e37e191e79d098b28a4d730e3">nav_survey_poly_osam.c</a>
-, <a class="el" href="nav__survey__poly__osam_8h.html#a458e606e37e191e79d098b28a4d730e3">nav_survey_poly_osam.h</a>
+: <a class="el" href="nav__survey__poly__osam_8h.html#a458e606e37e191e79d098b28a4d730e3">nav_survey_poly_osam.h</a>
+, <a class="el" href="nav__survey__poly__osam_8c.html#a458e606e37e191e79d098b28a4d730e3">nav_survey_poly_osam.c</a>
+</li>
+<li>responseToSend
+: <a class="el" href="cc2500__frsky__x_8c.html#a4c9d6b35b5dff281156d9a276eb7bcb0">cc2500_frsky_x.c</a>
 </li>
 <li>Rgps_pos
 : <a class="el" href="hf__float_8c.html#af6333ef44fbaf7aaf25c27a56429144f">hf_float.c</a>
@@ -323,12 +346,16 @@ $(document).ready(function(){initNavTree('globals_vars_r.html','');});
 <li>Rgps_vel
 : <a class="el" href="hf__float_8c.html#afec83e3697675c3915f9d3b46f040fe1">hf_float.c</a>
 </li>
+<li>rl
+: <a class="el" href="group__SHELL.html#ga1211643c6541c99d9dc7ffcbc72bb47f">microrlShell.c</a>
+</li>
 <li>roll_coef
 : <a class="el" href="swashplate__mixing_8c.html#ae9314a09d7bb1225dea109c1c7985e1c">swashplate_mixing.c</a>
 , <a class="el" href="motor__mixing_8c.html#ac24face7eff523838a17e0706583464a">motor_mixing.c</a>
 </li>
 <li>roll_filt
 : <a class="el" href="guidance__indi_8c.html#a19dc03ef4234ea423340bcc0c249e1cf">guidance_indi.c</a>
+, <a class="el" href="guidance__indi__hybrid_8c.html#a19dc03ef4234ea423340bcc0c249e1cf">guidance_indi_hybrid.c</a>
 </li>
 <li>roll_rate_pgain
 : <a class="el" href="sim__ap_8c.html#a95c46e0fbd85e6d4bc68cf7dff52395b">sim_ap.c</a>
@@ -346,51 +373,60 @@ $(document).ready(function(){initNavTree('globals_vars_r.html','');});
 , <a class="el" href="rotorcraft__cam_8c.html#a6565dd8f5371a7c2509896667262fbea">rotorcraft_cam.c</a>
 </li>
 <li>rotorcraft_cam_tilt_pwm
-: <a class="el" href="rotorcraft__cam_8h.html#adda457c04709dca302b7342870c93dc8">rotorcraft_cam.h</a>
-, <a class="el" href="rotorcraft__cam_8c.html#adda457c04709dca302b7342870c93dc8">rotorcraft_cam.c</a>
+: <a class="el" href="rotorcraft__cam_8c.html#adda457c04709dca302b7342870c93dc8">rotorcraft_cam.c</a>
+, <a class="el" href="rotorcraft__cam_8h.html#adda457c04709dca302b7342870c93dc8">rotorcraft_cam.h</a>
 </li>
 <li>rover_guidance
-: <a class="el" href="rover__guidance_8h.html#a89757d7e561b48965a8d23ae858501f8">rover_guidance.h</a>
-, <a class="el" href="rover__guidance_8c.html#a89757d7e561b48965a8d23ae858501f8">rover_guidance.c</a>
+: <a class="el" href="rover__guidance_8c.html#a89757d7e561b48965a8d23ae858501f8">rover_guidance.c</a>
+, <a class="el" href="rover__guidance_8h.html#a89757d7e561b48965a8d23ae858501f8">rover_guidance.h</a>
 </li>
 <li>rover_holo_guidance
-: <a class="el" href="rover__guidance__holonomic_8h.html#a357215bdd91bbe359e3ba80f64d54cd9">rover_guidance_holonomic.h</a>
-, <a class="el" href="rover__guidance__holonomic_8c.html#a357215bdd91bbe359e3ba80f64d54cd9">rover_guidance_holonomic.c</a>
+: <a class="el" href="rover__guidance__holonomic_8c.html#a357215bdd91bbe359e3ba80f64d54cd9">rover_guidance_holonomic.c</a>
+, <a class="el" href="rover__guidance__holonomic_8h.html#a357215bdd91bbe359e3ba80f64d54cd9">rover_guidance_holonomic.h</a>
 </li>
 <li>rpm
 : <a class="el" href="rpm__sensor_8c.html#a7e8977f1a58204edfd9b2514f29dfd47">rpm_sensor.c</a>
 </li>
 <li>rpm_ev
-: <a class="el" href="throttle__curve_8c.html#a4a88952668a3d8ce232c443ed5bb18b4">throttle_curve.c</a>
-, <a class="el" href="stabilization__indi_8c.html#a4a88952668a3d8ce232c443ed5bb18b4">stabilization_indi.c</a>
+: <a class="el" href="stabilization__indi_8c.html#a4a88952668a3d8ce232c443ed5bb18b4">stabilization_indi.c</a>
+, <a class="el" href="throttle__curve_8c.html#a4a88952668a3d8ce232c443ed5bb18b4">throttle_curve.c</a>
 </li>
 <li>rpm_lp
 : <a class="el" href="rpm__sensor_8c.html#a09dbb2c803d9e4ebd250fdb8c1341634">rpm_sensor.c</a>
 </li>
+<li>Rrwned
+: <a class="el" href="wedgebug_8c.html#a873cef8771922f03d0394b29b94dac0a">wedgebug.c</a>
+</li>
 <li>RSIZE
 : <a class="el" href="w5100_8c.html#a80a9583c56581301cc2877a18176b654">w5100.c</a>
+</li>
+<li>rssi
+: <a class="el" href="cc2500__rx_8c.html#afb0dc2ef1295b6bbe7a561d3d8552dda">cc2500_rx.c</a>
 </li>
 <li>rssi_acs
 : <a class="el" href="rssi_8h.html#ad63506dd44ca6d130f519dae09a5b0e0">rssi.h</a>
 , <a class="el" href="rssi_8c.html#a9176ffe23cd39ffcb2a57c35d5b2281d">rssi.c</a>
 </li>
 <li>rssi_acs_id
-: <a class="el" href="rssi_8h.html#a56cde70d7a6a02da543ac20d24edeac6">rssi.h</a>
-, <a class="el" href="rssi_8c.html#a79f9361dfe4b220f78a80a69678b5108">rssi.c</a>
+: <a class="el" href="rssi_8c.html#a79f9361dfe4b220f78a80a69678b5108">rssi.c</a>
+, <a class="el" href="rssi_8h.html#a56cde70d7a6a02da543ac20d24edeac6">rssi.h</a>
 </li>
 <li>rssi_acs_idx
 : <a class="el" href="rssi_8h.html#a8525f713d3364a389ae96aced974e7f3">rssi.h</a>
 , <a class="el" href="rssi_8c.html#a8525f713d3364a389ae96aced974e7f3">rssi.c</a>
+</li>
+<li>rssiDbm
+: <a class="el" href="cc2500__common_8c.html#a63b8e4555c41c1a22355110cb4c6f3ad">cc2500_common.c</a>
+</li>
+<li>rssiSource
+: <a class="el" href="cc2500__rx_8h.html#ac205ed213ca5e97d85dd6e8bd77efdd0">cc2500_rx.h</a>
+, <a class="el" href="cc2500__rx_8c.html#ac205ed213ca5e97d85dd6e8bd77efdd0">cc2500_rx.c</a>
 </li>
 <li>RST
 : <a class="el" href="w5100_8c.html#a627f213804256ddcafeb943052fa63e5">w5100.c</a>
 </li>
 <li>rtcm_man
 : <a class="el" href="gps_8c.html#ae9ccee2c335081dd63a37c05fc63c9a8">gps.c</a>
-</li>
-<li>rtds
-: <a class="el" href="vms__ecu__demo_8c.html#a435f9ffcd0dd591d09891b7b36a26be6">vms_ecu_demo.c</a>
-, <a class="el" href="vms__ecu__demo_8h.html#a435f9ffcd0dd591d09891b7b36a26be6">vms_ecu_demo.h</a>
 </li>
 <li>rtos_mon
 : <a class="el" href="sys__mon__rtos_8h.html#a183fa429fa3abf007df40b5af125f481">sys_mon_rtos.h</a>
@@ -399,11 +435,33 @@ $(document).ready(function(){initNavTree('globals_vars_r.html','');});
 <li>run
 : <a class="el" href="usb__serial__stm32__example2_8c.html#aa90bc2b9950a6a9a3144876047f8bee2">usb_serial_stm32_example2.c</a>
 </li>
+<li>Rwnedwenu
+: <a class="el" href="wedgebug_8c.html#af7f237d957a7353cf201300e525287aa">wedgebug.c</a>
+</li>
+<li>rxChannelCount
+: <a class="el" href="cc2500__rx_8c.html#a3257da7b0b86faaad412287db96548e1">cc2500_rx.c</a>
+</li>
+<li>rxconfig
+: <a class="el" href="cc2500__settings_8c.html#abcec7bcb442b20891fa9277c18c5d9ea">cc2500_settings.c</a>
+</li>
 <li>rxdata
-: <a class="el" href="stm32_2usb__ser__hw_8c.html#a90b28b942423439806a256e9eac0dea3">usb_ser_hw.c</a>
+: <a class="el" href="lpc21_2usb__ser__hw_8c.html#a90b28b942423439806a256e9eac0dea3">usb_ser_hw.c</a>
 </li>
 <li>rxfifo
-: <a class="el" href="lpc21_2usb__ser__hw_8c.html#a5de2491cb8694adb40dfe18df1da27d8">usb_ser_hw.c</a>
+: <a class="el" href="stm32_2usb__ser__hw_8c.html#a5de2491cb8694adb40dfe18df1da27d8">usb_ser_hw.c</a>
+</li>
+<li>rxRuntimeConfig
+: <a class="el" href="cc2500__rx_8h.html#ad2cdcbc37cc6ee54cae648c06acdd0eb">cc2500_rx.h</a>
+, <a class="el" href="cc2500__rx_8c.html#ad2cdcbc37cc6ee54cae648c06acdd0eb">cc2500_rx.c</a>
+</li>
+<li>rxSpiNewPacketAvailable
+: <a class="el" href="cc2500__rx__spi_8c.html#ab5bfa73a1f97148780b806f0c950cffa">cc2500_rx_spi.c</a>
+</li>
+<li>rxSpiPayload
+: <a class="el" href="cc2500__rx__spi_8c.html#a927e8faae8326f784287acef0c33b09b">cc2500_rx_spi.c</a>
+</li>
+<li>rxSpiRcData
+: <a class="el" href="cc2500__rx__spi_8c.html#a57795c2d012012ef79ba32ef7f2441f3">cc2500_rx_spi.c</a>
 </li>
 </ul>
 </div><!-- contents -->
@@ -411,7 +469,7 @@ $(document).ready(function(){initNavTree('globals_vars_r.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri May 15 2020 04:04:12 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:04:30 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

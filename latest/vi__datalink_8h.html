@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -150,7 +150,7 @@ Macros</h2></td></tr>
 <tr class="separator:ad5f9e48f4805aa2a6e8ca7caeacb2b11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac52d5d149ce3d3679343467500ae3e5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vi__datalink_8h.html#aac52d5d149ce3d3679343467500ae3e5">VI_NAV_STICK_PARSE_DL</a>(_dl_buffer)</td></tr>
 <tr class="separator:aac52d5d149ce3d3679343467500ae3e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09c48ef29dd611b40d1d1fe6443bdcea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vi__datalink_8h.html#a09c48ef29dd611b40d1d1fe6443bdcea">NavUpdateWPFromVI</a>(_wp)&#160;&#160;&#160;{ if (vi.enabled) { <a class="el" href="vi__datalink_8h.html#a98544ed71f6a4b6b68b448cdcc6d83f9">vi_update_wp</a>(<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> _wp); } }</td></tr>
+<tr class="memitem:a09c48ef29dd611b40d1d1fe6443bdcea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vi__datalink_8h.html#a09c48ef29dd611b40d1d1fe6443bdcea">NavUpdateWPFromVI</a>(_wp)&#160;&#160;&#160;{ <a class="el" href="e__identification__fr_8c.html#a92cffae21318c1d983c63f3afa2a8d87">if</a> (vi.enabled) { <a class="el" href="vi__datalink_8h.html#a98544ed71f6a4b6b68b448cdcc6d83f9">vi_update_wp</a>(<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> _wp); } }</td></tr>
 <tr class="separator:a09c48ef29dd611b40d1d1fe6443bdcea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -168,7 +168,7 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">_wp</td><td>)</td>
-          <td>&#160;&#160;&#160;{ if (vi.enabled) { <a class="el" href="vi__datalink_8h.html#a98544ed71f6a4b6b68b448cdcc6d83f9">vi_update_wp</a>(<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> _wp); } }</td>
+          <td>&#160;&#160;&#160;{ <a class="el" href="e__identification__fr_8c.html#a92cffae21318c1d983c63f3afa2a8d87">if</a> (vi.enabled) { <a class="el" href="vi__datalink_8h.html#a98544ed71f6a4b6b68b448cdcc6d83f9">vi_update_wp</a>(<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> _wp); } }</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -254,20 +254,20 @@ Functions</h2></td></tr>
 <div class="line"><a class="code" href="vi_8c.html#aabb8e0aff2e1b128575804c32ea1f4d0">    vi</a>.<a class="code" href="vi_8h.html#a1bfd15310f8c8127120cad9efcdb05ed">last_msg</a> = 0; <a class="code" href="vi_8c.html#aabb8e0aff2e1b128575804c32ea1f4d0">\</a></div>
 <div class="line"><a class="code" href="vi_8c.html#aabb8e0aff2e1b128575804c32ea1f4d0">    vi</a>.<a class="code" href="vi_8h.html#a63dca4642131593d26db22a363a88693">input</a>.<a class="code" href="vi_8h.html#a162939a96b3aa3f484ac56972b3ed848">h_mode</a> = <a class="code" href="rotorcraft_2guidance_2guidance__h_8h.html#a0695fb38a9f3b93b7be3484568e0be1a">GUIDANCE_H_MODE_NAV</a>;  <a class="code" href="vi_8c.html#aabb8e0aff2e1b128575804c32ea1f4d0">\</a></div>
 <div class="line"><a class="code" href="vi_8c.html#aabb8e0aff2e1b128575804c32ea1f4d0">    vi</a>.<a class="code" href="vi_8h.html#a63dca4642131593d26db22a363a88693">input</a>.<a class="code" href="vi_8h.html#a674114cf71c612f56690f88da76d7e21">v_mode</a> = <a class="code" href="rotorcraft_2guidance_2guidance__v_8h.html#acf327c70e058c173f8a006360068759f">GUIDANCE_V_MODE_NAV</a>;  <a class="code" href="vi_8c.html#aabb8e0aff2e1b128575804c32ea1f4d0">\</a></div>
-<div class="line"><a class="code" href="vi_8c.html#aabb8e0aff2e1b128575804c32ea1f4d0">    vi</a>.<a class="code" href="vi_8h.html#a63dca4642131593d26db22a363a88693">input</a>.<a class="code" href="vi_8h.html#ab539abd4d3aa18929e44cd1efc8b0203">h_sp</a>.speed.x = DL_BOOZ_NAV_STICK_vx_sp(_dl_buffer); <a class="code" href="vi_8c.html#aabb8e0aff2e1b128575804c32ea1f4d0">\</a></div>
-<div class="line"><a class="code" href="vi_8c.html#aabb8e0aff2e1b128575804c32ea1f4d0">    vi</a>.<a class="code" href="vi_8h.html#a63dca4642131593d26db22a363a88693">input</a>.<a class="code" href="vi_8h.html#ab539abd4d3aa18929e44cd1efc8b0203">h_sp</a>.speed.y = DL_BOOZ_NAV_STICK_vy_sp(_dl_buffer); <a class="code" href="vi_8c.html#aabb8e0aff2e1b128575804c32ea1f4d0">\</a></div>
-<div class="line"><a class="code" href="vi_8c.html#aabb8e0aff2e1b128575804c32ea1f4d0">    vi</a>.<a class="code" href="vi_8h.html#a63dca4642131593d26db22a363a88693">input</a>.<a class="code" href="vi_8h.html#ab539abd4d3aa18929e44cd1efc8b0203">h_sp</a>.speed.z = DL_BOOZ_NAV_STICK_r_sp(_dl_buffer); <a class="code" href="vi_8c.html#aabb8e0aff2e1b128575804c32ea1f4d0">\</a></div>
-<div class="line"><a class="code" href="vi_8c.html#aabb8e0aff2e1b128575804c32ea1f4d0">    vi</a>.<a class="code" href="vi_8h.html#a63dca4642131593d26db22a363a88693">input</a>.<a class="code" href="vi_8h.html#af59568af1069daf690bdbb4b8db1ddf8">v_sp</a>.climb   = DL_BOOZ_NAV_STICK_vz_sp(_dl_buffer); \</div>
+<div class="line"><a class="code" href="vi_8c.html#aabb8e0aff2e1b128575804c32ea1f4d0">    vi</a>.<a class="code" href="vi_8h.html#a63dca4642131593d26db22a363a88693">input</a>.<a class="code" href="vi_8h.html#ab05c294a193db477180b591cefe90161">h_sp</a>.speed.x = DL_BOOZ_NAV_STICK_vx_sp(_dl_buffer); <a class="code" href="vi_8c.html#aabb8e0aff2e1b128575804c32ea1f4d0">\</a></div>
+<div class="line"><a class="code" href="vi_8c.html#aabb8e0aff2e1b128575804c32ea1f4d0">    vi</a>.<a class="code" href="vi_8h.html#a63dca4642131593d26db22a363a88693">input</a>.<a class="code" href="vi_8h.html#ab05c294a193db477180b591cefe90161">h_sp</a>.speed.y = DL_BOOZ_NAV_STICK_vy_sp(_dl_buffer); <a class="code" href="vi_8c.html#aabb8e0aff2e1b128575804c32ea1f4d0">\</a></div>
+<div class="line"><a class="code" href="vi_8c.html#aabb8e0aff2e1b128575804c32ea1f4d0">    vi</a>.<a class="code" href="vi_8h.html#a63dca4642131593d26db22a363a88693">input</a>.<a class="code" href="vi_8h.html#ab05c294a193db477180b591cefe90161">h_sp</a>.speed.z = DL_BOOZ_NAV_STICK_r_sp(_dl_buffer); <a class="code" href="vi_8c.html#aabb8e0aff2e1b128575804c32ea1f4d0">\</a></div>
+<div class="line"><a class="code" href="vi_8c.html#aabb8e0aff2e1b128575804c32ea1f4d0">    vi</a>.<a class="code" href="vi_8h.html#a63dca4642131593d26db22a363a88693">input</a>.<a class="code" href="vi_8h.html#a4ac2b2a35ea513c6a657a70326b20c61">v_sp</a>.climb   = DL_BOOZ_NAV_STICK_vz_sp(_dl_buffer); \</div>
 <div class="line">  }</div>
 <div class="ttc" id="vi_8c_html_aabb8e0aff2e1b128575804c32ea1f4d0"><div class="ttname"><a href="vi_8c.html#aabb8e0aff2e1b128575804c32ea1f4d0">vi</a></div><div class="ttdeci">struct VehicleInterface vi</div><div class="ttdef"><b>Definition:</b> <a href="vi_8c_source.html#l00030">vi.c:30</a></div></div>
 <div class="ttc" id="rotorcraft_2guidance_2guidance__v_8h_html_acf327c70e058c173f8a006360068759f"><div class="ttname"><a href="rotorcraft_2guidance_2guidance__v_8h.html#acf327c70e058c173f8a006360068759f">GUIDANCE_V_MODE_NAV</a></div><div class="ttdeci">#define GUIDANCE_V_MODE_NAV</div><div class="ttdef"><b>Definition:</b> <a href="rotorcraft_2guidance_2guidance__v_8h_source.html#l00040">guidance_v.h:40</a></div></div>
+<div class="ttc" id="vi_8h_html_a4ac2b2a35ea513c6a657a70326b20c61"><div class="ttname"><a href="vi_8h.html#a4ac2b2a35ea513c6a657a70326b20c61">Vi_command::v_sp</a></div><div class="ttdeci">union Vi_command::@303 v_sp</div></div>
 <div class="ttc" id="vi_8h_html_a674114cf71c612f56690f88da76d7e21"><div class="ttname"><a href="vi_8h.html#a674114cf71c612f56690f88da76d7e21">Vi_command::v_mode</a></div><div class="ttdeci">uint8_t v_mode</div><div class="ttdef"><b>Definition:</b> <a href="vi_8h_source.html#l00074">vi.h:74</a></div></div>
-<div class="ttc" id="vi_8h_html_ab539abd4d3aa18929e44cd1efc8b0203"><div class="ttname"><a href="vi_8h.html#ab539abd4d3aa18929e44cd1efc8b0203">Vi_command::h_sp</a></div><div class="ttdeci">union Vi_command::@301 h_sp</div></div>
 <div class="ttc" id="rotorcraft_2guidance_2guidance__h_8h_html_a0695fb38a9f3b93b7be3484568e0be1a"><div class="ttname"><a href="rotorcraft_2guidance_2guidance__h_8h.html#a0695fb38a9f3b93b7be3484568e0be1a">GUIDANCE_H_MODE_NAV</a></div><div class="ttdeci">#define GUIDANCE_H_MODE_NAV</div><div class="ttdef"><b>Definition:</b> <a href="rotorcraft_2guidance_2guidance__h_8h_source.html#l00060">guidance_h.h:60</a></div></div>
 <div class="ttc" id="vi_8h_html_a1bfd15310f8c8127120cad9efcdb05ed"><div class="ttname"><a href="vi_8h.html#a1bfd15310f8c8127120cad9efcdb05ed">VehicleInterface::last_msg</a></div><div class="ttdeci">uint8_t last_msg</div><div class="ttdef"><b>Definition:</b> <a href="vi_8h_source.html#l00080">vi.h:80</a></div></div>
 <div class="ttc" id="vi_8h_html_a63dca4642131593d26db22a363a88693"><div class="ttname"><a href="vi_8h.html#a63dca4642131593d26db22a363a88693">VehicleInterface::input</a></div><div class="ttdeci">struct Vi_command input</div><div class="ttdef"><b>Definition:</b> <a href="vi_8h_source.html#l00082">vi.h:82</a></div></div>
 <div class="ttc" id="vi_8h_html_a162939a96b3aa3f484ac56972b3ed848"><div class="ttname"><a href="vi_8h.html#a162939a96b3aa3f484ac56972b3ed848">Vi_command::h_mode</a></div><div class="ttdeci">uint8_t h_mode</div><div class="ttdef"><b>Definition:</b> <a href="vi_8h_source.html#l00073">vi.h:73</a></div></div>
-<div class="ttc" id="vi_8h_html_af59568af1069daf690bdbb4b8db1ddf8"><div class="ttname"><a href="vi_8h.html#af59568af1069daf690bdbb4b8db1ddf8">Vi_command::v_sp</a></div><div class="ttdeci">union Vi_command::@302 v_sp</div></div>
+<div class="ttc" id="vi_8h_html_ab05c294a193db477180b591cefe90161"><div class="ttname"><a href="vi_8h.html#ab05c294a193db477180b591cefe90161">Vi_command::h_sp</a></div><div class="ttdeci">union Vi_command::@302 h_sp</div></div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="vi__datalink_8h_source.html#l00104">104</a> of file <a class="el" href="vi__datalink_8h_source.html">vi_datalink.h</a>.</p>
 
@@ -308,7 +308,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="vi__datalink_8c_source.html#l00042">42</a> of file <a class="el" href="vi__datalink_8c_source.html">vi_datalink.c</a>.</p>
 
-<p>References <a class="el" href="vi_8h.html#ab539abd4d3aa18929e44cd1efc8b0203">Vi_command::h_sp</a>, <a class="el" href="vi_8h_source.html#l00082">VehicleInterface::input</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00384">navigation_update_wp_from_speed()</a>, <a class="el" href="vi_8h.html#af59568af1069daf690bdbb4b8db1ddf8">Vi_command::v_sp</a>, <a class="el" href="pprz__algebra_8h_source.html#l00231">VECT3_BOUND_BOX</a>, <a class="el" href="vi_8c_source.html#l00030">vi</a>, <a class="el" href="vi__datalink_8c_source.html#l00038">ViMaxHeadingRate</a>, <a class="el" href="vi__datalink_8c_source.html#l00036">ViMaxHSpeed</a>, <a class="el" href="vi__datalink_8c_source.html#l00037">ViMaxVSpeed</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00063">Int16Vect3::x</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00064">Int16Vect3::y</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00065">Int16Vect3::z</a>.</p>
+<p>References <a class="el" href="vi_8h.html#ab05c294a193db477180b591cefe90161">Vi_command::h_sp</a>, <a class="el" href="vi_8h_source.html#l00082">VehicleInterface::input</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00389">navigation_update_wp_from_speed()</a>, <a class="el" href="vi_8h.html#a4ac2b2a35ea513c6a657a70326b20c61">Vi_command::v_sp</a>, <a class="el" href="pprz__algebra_8h_source.html#l00231">VECT3_BOUND_BOX</a>, <a class="el" href="vi_8c_source.html#l00030">vi</a>, <a class="el" href="vi__datalink_8c_source.html#l00038">ViMaxHeadingRate</a>, <a class="el" href="vi__datalink_8c_source.html#l00036">ViMaxHSpeed</a>, <a class="el" href="vi__datalink_8c_source.html#l00037">ViMaxVSpeed</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00063">Int16Vect3::x</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00064">Int16Vect3::y</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00065">Int16Vect3::z</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -329,7 +329,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_372c0c9a1fec4794716fe8f0e2a7607d.html">vehicle_interface</a></li><li class="navelem"><a class="el" href="vi__datalink_8h.html">vi_datalink.h</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:03:25 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:03:40 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

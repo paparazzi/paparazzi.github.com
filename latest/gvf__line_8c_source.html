@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -166,11 +166,11 @@ $(document).ready(function(){initNavTree('gvf__line_8c_source.html','');});
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordtype">float</span> px = p-&gt;<a class="code" href="pprz__geodetic__float_8h.html#a1477647029e175947a6bd860322c98ff">x</a>;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordtype">float</span> py = p-&gt;<a class="code" href="pprz__geodetic__float_8h.html#a03a1d7fc5e459dd6cbdb7893ef631dde">y</a>;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordtype">float</span> a = <a class="code" href="gvf_8c.html#aae566ae882cd2fac5d8335b0a7ea5297">gvf_trajectory</a>.<a class="code" href="gvf_8h.html#a3114f8536f3f94e52b4fce682938e9a2">p</a>[0];</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordtype">float</span> b = <a class="code" href="gvf_8c.html#aae566ae882cd2fac5d8335b0a7ea5297">gvf_trajectory</a>.<a class="code" href="gvf_8h.html#a3114f8536f3f94e52b4fce682938e9a2">p</a>[1];</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordtype">float</span> <a class="code" href="wedgebug_8c.html#a83fc1af92e29717b4513d121b0c72c7d">b</a> = <a class="code" href="gvf_8c.html#aae566ae882cd2fac5d8335b0a7ea5297">gvf_trajectory</a>.<a class="code" href="gvf_8h.html#a3114f8536f3f94e52b4fce682938e9a2">p</a>[1];</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordtype">float</span> <a class="code" href="textons_8c.html#ab1551d8043c2aa4410fb7dbb1fe3be7b">alpha</a> = <a class="code" href="gvf_8c.html#aae566ae882cd2fac5d8335b0a7ea5297">gvf_trajectory</a>.<a class="code" href="gvf_8h.html#a3114f8536f3f94e52b4fce682938e9a2">p</a>[2];</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="comment">// Phi(x,y)</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  *phi = -(px - a) * cosf(alpha) + (py - b) * sinf(alpha);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  *phi = -(px - a) * cosf(alpha) + (py - <a class="code" href="wedgebug_8c.html#a83fc1af92e29717b4513d121b0c72c7d">b</a>) * sinf(alpha);</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="comment">// grad Phi</span></div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  grad-&gt;<a class="code" href="gvf_8h.html#a782b4507f1306a861e2567a078cbdaa7">nx</a> =  -cosf(alpha);</div>
@@ -202,6 +202,7 @@ $(document).ready(function(){initNavTree('gvf__line_8c_source.html','');});
 <div class="ttc" id="gvf_8h_html_a5eeb29fcf0612f91940d94881f71f7a4"><div class="ttname"><a href="gvf_8h.html#a5eeb29fcf0612f91940d94881f71f7a4">gvf_grad::ny</a></div><div class="ttdeci">float ny</div><div class="ttdef"><b>Definition:</b> <a href="gvf_8h_source.html#l00083">gvf.h:83</a></div></div>
 <div class="ttc" id="gvf_8h_html_a782b4507f1306a861e2567a078cbdaa7"><div class="ttname"><a href="gvf_8h.html#a782b4507f1306a861e2567a078cbdaa7">gvf_grad::nx</a></div><div class="ttdeci">float nx</div><div class="ttdef"><b>Definition:</b> <a href="gvf_8h_source.html#l00082">gvf.h:82</a></div></div>
 <div class="ttc" id="common__nav_8h_html"><div class="ttname"><a href="common__nav_8h.html">common_nav.h</a></div></div>
+<div class="ttc" id="wedgebug_8c_html_a83fc1af92e29717b4513d121b0c72c7d"><div class="ttname"><a href="wedgebug_8c.html#a83fc1af92e29717b4513d121b0c72c7d">b</a></div><div class="ttdeci">float b</div><div class="ttdef"><b>Definition:</b> <a href="wedgebug_8c_source.html#l00202">wedgebug.c:202</a></div></div>
 <div class="ttc" id="gvf_8h_html_structgvf__grad"><div class="ttname"><a href="gvf_8h.html#structgvf__grad">gvf_grad</a></div><div class="ttdef"><b>Definition:</b> <a href="gvf_8h_source.html#l00081">gvf.h:81</a></div></div>
 <div class="ttc" id="gvf__line_8c_html_acc68e87325b5a6d91e31453dee7d2c23"><div class="ttname"><a href="gvf__line_8c.html#acc68e87325b5a6d91e31453dee7d2c23">gvf_segment_par</a></div><div class="ttdeci">gvf_seg_par gvf_segment_par</div><div class="ttdef"><b>Definition:</b> <a href="gvf__line_8c_source.html#l00060">gvf_line.c:60</a></div></div>
 <div class="ttc" id="gvf__line_8h_html_structgvf__li__par"><div class="ttname"><a href="gvf__line_8h.html#structgvf__li__par">gvf_li_par</a></div><div class="ttdef"><b>Definition:</b> <a href="gvf__line_8h_source.html#l00040">gvf_line.h:40</a></div></div>
@@ -216,7 +217,7 @@ $(document).ready(function(){initNavTree('gvf__line_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_4ee91589357a83ed771c51844e853db2.html">guidance</a></li><li class="navelem"><a class="el" href="dir_f11651931491444d54c9510df68bbdd5.html">gvf</a></li><li class="navelem"><a class="el" href="dir_cf5aedeca686884ae121bc37e7581570.html">trajectories</a></li><li class="navelem"><a class="el" href="gvf__line_8c.html">gvf_line.c</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:02:23 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:02:35 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -1,0 +1,48 @@
+var l3gd20__regs_8h =
+[
+    [ "L3GD20_BDU", "l3gd20__regs_8h.html#ac12f0d3fd287cb34ba2ac07a20d7a080", null ],
+    [ "L3GD20_BW_MASK", "l3gd20__regs_8h.html#aa02dd5c9fa7b332d76ae4d765153d3c7", null ],
+    [ "L3GD20_DR_MASK", "l3gd20__regs_8h.html#a005975e2e9d98e1abd9021c08b8dcd6a", null ],
+    [ "L3GD20_FS_MASK", "l3gd20__regs_8h.html#a604d9d505798fde5d4e813b7806edac3", null ],
+    [ "L3GD20_PD", "l3gd20__regs_8h.html#a3f3d1384d68f4552c3df4ab2b1c5edb1", null ],
+    [ "L3GD20_REG_CTRL_REG1", "l3gd20__regs_8h.html#ab86dccfe04d4b052bfc5b0da32938633", null ],
+    [ "L3GD20_REG_CTRL_REG2", "l3gd20__regs_8h.html#a053382966fe4c1b365d3ba8ff4e76176", null ],
+    [ "L3GD20_REG_CTRL_REG3", "l3gd20__regs_8h.html#ab4c1c38afc272d9591303287f3000a23", null ],
+    [ "L3GD20_REG_CTRL_REG4", "l3gd20__regs_8h.html#ab42d51f0c1eed0c46aba66ef3d6b8ec5", null ],
+    [ "L3GD20_REG_OUT_X_H", "l3gd20__regs_8h.html#a87a89304e5c7d2ab96ac31929460ea1d", null ],
+    [ "L3GD20_REG_OUT_X_L", "l3gd20__regs_8h.html#a92d7e85ccd8046f757da09e4e249ba16", null ],
+    [ "L3GD20_REG_OUT_Y_H", "l3gd20__regs_8h.html#a1649f8bfea4c643c0ec56ef79f1c32a6", null ],
+    [ "L3GD20_REG_OUT_Y_L", "l3gd20__regs_8h.html#a937c75515803d2e7cc9364d5c34aee18", null ],
+    [ "L3GD20_REG_OUT_Z_H", "l3gd20__regs_8h.html#a4c4ecd795b11cfad121f3473aadd59b2", null ],
+    [ "L3GD20_REG_OUT_Z_L", "l3gd20__regs_8h.html#afcdcc06c194213e1b2cc11c1fdf97c8f", null ],
+    [ "L3GD20_REG_STATUS_REG", "l3gd20__regs_8h.html#acfbb29a7264ec8eca6d675b933f3c7a6", null ],
+    [ "L3GD20_REG_WHO_AM_I", "l3gd20__regs_8h.html#a1e33544ec25e4074bd01a0344a234893", null ],
+    [ "L3GD20_WHO_AM_I", "l3gd20__regs_8h.html#a6581544c2103b660dd16c39bcfbaa742", null ],
+    [ "L3GD20_Xen", "l3gd20__regs_8h.html#a7e2abf758b00293ef11c24b6a6ecc463", null ],
+    [ "L3GD20_Yen", "l3gd20__regs_8h.html#aa9d220165568ee83bdfad959495b888a", null ],
+    [ "L3GD20_Zen", "l3gd20__regs_8h.html#a1033395cdc16d10563a32d2f324fe7da", null ],
+    [ "L3gd20DRBW", "l3gd20__regs_8h.html#ade5c6aef23b3965a767c99d5cef71ee0", [
+      [ "L3GD20_DRBW_95Hz_12_5BW", "l3gd20__regs_8h.html#ade5c6aef23b3965a767c99d5cef71ee0aa7e602497067bdbbb69ebef39b9fa0d1", null ],
+      [ "L3GD20_DRBW_95Hz_25BW", "l3gd20__regs_8h.html#ade5c6aef23b3965a767c99d5cef71ee0ad777a823250306c466fd2f01cca802ec", null ],
+      [ "L3GD20_DRBW_95Hz_25BW2", "l3gd20__regs_8h.html#ade5c6aef23b3965a767c99d5cef71ee0a52d8691a6b410783b180933e1f1077c4", null ],
+      [ "L3GD20_DRBW_95Hz_25BW3", "l3gd20__regs_8h.html#ade5c6aef23b3965a767c99d5cef71ee0a2fbc7a83d5af799769461465cfac60e9", null ],
+      [ "L3GD20_DRBW_190Hz_12_5BW", "l3gd20__regs_8h.html#ade5c6aef23b3965a767c99d5cef71ee0aab0e1198f84c1ba81ff85c9f54b042c5", null ],
+      [ "L3GD20_DRBW_190Hz_25BW", "l3gd20__regs_8h.html#ade5c6aef23b3965a767c99d5cef71ee0a903ac47018234d403bccc708e7c03270", null ],
+      [ "L3GD20_DRBW_190Hz_50BW", "l3gd20__regs_8h.html#ade5c6aef23b3965a767c99d5cef71ee0ad8881c116fae084ca5600f2c875c2a12", null ],
+      [ "L3GD20_DRBW_190Hz_70BW", "l3gd20__regs_8h.html#ade5c6aef23b3965a767c99d5cef71ee0abdbf0f44f1291375208200cdd530ad35", null ],
+      [ "L3GD20_DRBW_380Hz_20BW", "l3gd20__regs_8h.html#ade5c6aef23b3965a767c99d5cef71ee0a63d888bccc20a986e860a556ed27378a", null ],
+      [ "L3GD20_DRBW_380Hz_25BW", "l3gd20__regs_8h.html#ade5c6aef23b3965a767c99d5cef71ee0ad1ca318525b4ddc0fb3dbae403b9bb52", null ],
+      [ "L3GD20_DRBW_380Hz_50BW", "l3gd20__regs_8h.html#ade5c6aef23b3965a767c99d5cef71ee0a6d2842dcee0bd1f5e0dc97ec7eb86bad", null ],
+      [ "L3GD20_DRBW_380Hz_100BW", "l3gd20__regs_8h.html#ade5c6aef23b3965a767c99d5cef71ee0a8df910bcef1a2f649bd534dc907d6bc2", null ],
+      [ "L3GD20_DRBW_760Hz_30BW", "l3gd20__regs_8h.html#ade5c6aef23b3965a767c99d5cef71ee0a52cea4e60455ee779ac1aeac917fb0c1", null ],
+      [ "L3GD20_DRBW_760Hz_35BW", "l3gd20__regs_8h.html#ade5c6aef23b3965a767c99d5cef71ee0aaf3947871d3d81fe284a20b63b5822a5", null ],
+      [ "L3GD20_DRBW_760Hz_50BW", "l3gd20__regs_8h.html#ade5c6aef23b3965a767c99d5cef71ee0adf77651e19b54b4a8d1688cb0b3cf172", null ],
+      [ "L3GD20_DRBW_760Hz_100BW", "l3gd20__regs_8h.html#ade5c6aef23b3965a767c99d5cef71ee0a95594e6783916718e10fd6fa80bba186", null ]
+    ] ],
+    [ "L3gd20FullScale", "l3gd20__regs_8h.html#a39ee63b5793799c6d330bfbe80ef6848", [
+      [ "L3GD20_FS_250dps", "l3gd20__regs_8h.html#a39ee63b5793799c6d330bfbe80ef6848ad6fa85673154f93fc092ae485e941edd", null ],
+      [ "L3GD20_FS_500dps", "l3gd20__regs_8h.html#a39ee63b5793799c6d330bfbe80ef6848a95a7dea4a3cee0e5577b7836b6349981", null ],
+      [ "L3GD20_FS_2000dps", "l3gd20__regs_8h.html#a39ee63b5793799c6d330bfbe80ef6848a523f3ebd97f61d44ea798905b41644dd", null ],
+      [ "L3GD20_FS_2000dps2", "l3gd20__regs_8h.html#a39ee63b5793799c6d330bfbe80ef6848a31c6083d2462a77982aaf126e1ef999f", null ]
+    ] ]
+];

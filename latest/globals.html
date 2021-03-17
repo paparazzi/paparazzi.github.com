@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -232,6 +232,24 @@ $(document).ready(function(){initNavTree('globals.html','');});
 <li>__LED_SET
 : <a class="el" href="lpc21_2led__hw_8h.html#ab01c31ebb8fe2e7eacec0b5c982f18b4">led_hw.h</a>
 </li>
+<li>__real_gpio_clear()
+: <a class="el" href="gpio__ext__common_8c.html#abfacfb77b7ec97c101b77ca3fb10dbe0">gpio_ext_common.c</a>
+</li>
+<li>__real_gpio_get()
+: <a class="el" href="gpio__ext__common_8c.html#a8b389506f205d40bf3ca8a6f67044326">gpio_ext_common.c</a>
+</li>
+<li>__real_gpio_set()
+: <a class="el" href="gpio__ext__common_8c.html#a4c1c419a83a246803f2c8cbe49a82a62">gpio_ext_common.c</a>
+</li>
+<li>__real_gpio_setup_input()
+: <a class="el" href="gpio__ext__common_8c.html#ad49f7690d9a9f2883ad253cb02e93d9e">gpio_ext_common.c</a>
+</li>
+<li>__real_gpio_setup_output()
+: <a class="el" href="gpio__ext__common_8c.html#ac318f7f437fe7d11af1fae3052d20ce3">gpio_ext_common.c</a>
+</li>
+<li>__real_gpio_toggle()
+: <a class="el" href="gpio__ext__common_8c.html#ad03603a15c1185abe32e2bf0f278f082">gpio_ext_common.c</a>
+</li>
 <li>__RegisterAhrs
 : <a class="el" href="ahrs_8c.html#a769b2fb50d45f52c9bcc46600509b80b">ahrs.c</a>
 </li>
@@ -253,24 +271,65 @@ $(document).ready(function(){initNavTree('globals.html','');});
 <li>__VIC_CNTL
 : <a class="el" href="armVIC_8h.html#a738db3cc9142f5ccd7934bf9a7ed5efe">armVIC.h</a>
 </li>
+<li>__wrap_gpio_clear()
+: <a class="el" href="gpio__ext__common_8c.html#af08b697f3babbbe6da3dd0e369db962c">gpio_ext_common.c</a>
+</li>
+<li>__wrap_gpio_get()
+: <a class="el" href="gpio__ext__common_8c.html#a0bc4c692cc5680155ef69f2c194c4684">gpio_ext_common.c</a>
+</li>
+<li>__wrap_gpio_set()
+: <a class="el" href="gpio__ext__common_8c.html#a09a217db9f074e9a34e7bcf7e86f9ada">gpio_ext_common.c</a>
+</li>
+<li>__wrap_gpio_setup_input()
+: <a class="el" href="gpio__ext__common_8c.html#a5cd4c26ee36e74bb1e58a671e27ba951">gpio_ext_common.c</a>
+</li>
+<li>__wrap_gpio_setup_output()
+: <a class="el" href="gpio__ext__common_8c.html#af3db6b024208ab753137a4510d92e599">gpio_ext_common.c</a>
+</li>
+<li>__wrap_gpio_toggle()
+: <a class="el" href="gpio__ext__common_8c.html#a311ac96cea5dda529289063168901abb">gpio_ext_common.c</a>
+</li>
 <li>_Ads1114Event
 : <a class="el" href="ads1114_8h.html#a15684b2aef9bf39de5a2644f9b872370">ads1114.h</a>
+</li>
+<li>_BUTTON_GPIO
+: <a class="el" href="cc2500__settings_8c.html#aa6359e5317602a703c40b73c2ea177c4">cc2500_settings.c</a>
+</li>
+<li>_BUTTON_PIN
+: <a class="el" href="cc2500__settings_8c.html#a551d743103b59b83409b006d5ca458d7">cc2500_settings.c</a>
 </li>
 <li>_can_run_rx_callback()
 : <a class="el" href="can__arch_8c.html#a29e5282665581fc7533fb24eb96bf30c">can_arch.c</a>
 , <a class="el" href="can_8c.html#a29e5282665581fc7533fb24eb96bf30c">can.c</a>
 </li>
+<li>_CHIBIOS_HAL_CONF_
+: <a class="el" href="group__HAL__CONF.html#ga0c6e082281a64ec7ff64672f81580f84">halconf.h</a>
+</li>
+<li>_CHIBIOS_HAL_CONF_VER_7_1_
+: <a class="el" href="group__HAL__CONF.html#gafcb5987e4a7612507d74d78d044b955d">halconf.h</a>
+</li>
 <li>_CHIBIOS_RT_CONF_
 : <a class="el" href="group__config.html#gaf96117860ce3ac9637e7b0fb3f1eac1f">chconf.h</a>
 </li>
-<li>_CHIBIOS_RT_CONF_VER_5_1_
-: <a class="el" href="group__config.html#ga041edf4a73fd382bfa00df5e97fe4b48">chconf.h</a>
+<li>_CHIBIOS_RT_CONF_VER_6_1_
+: <a class="el" href="group__config.html#gad3efaf863d1c80976f5e49026edade1d">chconf.h</a>
 </li>
 <li>_chvsnprintf()
 : <a class="el" href="group__chprintf.html#gaa4e64308af46238224f455c00a4fcf26">printf.c</a>
 </li>
 <li>_close_r()
 : <a class="el" href="pprz__syscalls_8c.html#a63a33220ea91df5a24013c492698baf8">pprz_syscalls.c</a>
+</li>
+<li>_COMMAND_LINE_LEN
+: <a class="el" href="microrlConfig_8h.html#abe4a3ed8c181049cd7e6f99bbf1b04f9">microrlConfig.h</a>
+</li>
+<li>_COMMAND_TOKEN_NMB
+: <a class="el" href="microrlConfig_8h.html#aa78af196e1d04c2c8a263aa5304887ce">microrlConfig.h</a>
+</li>
+<li>_CONCAT_BOARD_PARAM
+: <a class="el" href="matekF765-WING_8h.html#a00cbc08b2249df24b1d43d5ca62df28e">matekF765-WING.h</a>
+, <a class="el" href="nucleo144__f767zi_8h.html#a00cbc08b2249df24b1d43d5ca62df28e">nucleo144_f767zi.h</a>
+, <a class="el" href="tawaki_8h.html#a00cbc08b2249df24b1d43d5ca62df28e">tawaki.h</a>
 </li>
 <li>_dma_isr_error_code()
 : <a class="el" href="hal__stm32__dma_8h.html#a754932a38627dd6a86ecc88253dc6687">hal_stm32_dma.h</a>
@@ -302,6 +361,18 @@ $(document).ready(function(){initNavTree('globals.html','');});
 <li>_EnableRise
 : <a class="el" href="lpc21_2modules_2core_2trigger__ext__hw_8h.html#acbfb89aed48eb98daa6d70801eb7f9d2">trigger_ext_hw.h</a>
 </li>
+<li>_ENDL_CR
+: <a class="el" href="microrlConfig_8h.html#a26127bed3c8c9fa96f38043e8dc099d4">microrlConfig.h</a>
+</li>
+<li>_ESC_BRACKET
+: <a class="el" href="microrl_8h.html#a3a581cfa4b054601d8d98c189b33d767">microrl.h</a>
+</li>
+<li>_ESC_END
+: <a class="el" href="microrl_8h.html#a69310e4e582fc8600774d1beb367262e">microrl.h</a>
+</li>
+<li>_ESC_HOME
+: <a class="el" href="microrl_8h.html#a26d7ba3fdc34461320f3f3f6484a3a82">microrl.h</a>
+</li>
 <li>_exit()
 : <a class="el" href="pprz__syscalls_8c.html#a5c0ffd90e1eb0dfd1f4e927142c6d844">pprz_syscalls.c</a>
 </li>
@@ -316,6 +387,12 @@ $(document).ready(function(){initNavTree('globals.html','');});
 </li>
 <li>_GpsId
 : <a class="el" href="gps_8h.html#ab91d045f7db5c7a42a180037818885b4">gps.h</a>
+</li>
+<li>_HIST_DOWN
+: <a class="el" href="microrl_8h.html#ae124f974b4c751c5385e82de23215ceb">microrl.h</a>
+</li>
+<li>_HIST_UP
+: <a class="el" href="microrl_8h.html#aa64a1174b55ce1d1a39eb1ecaaa9f1cf">microrl.h</a>
 </li>
 <li>_isatty_r()
 : <a class="el" href="pprz__syscalls_8c.html#a36d822ac47597188f2a27b2c759ae271">pprz_syscalls.c</a>
@@ -337,6 +414,18 @@ $(document).ready(function(){initNavTree('globals.html','');});
 </li>
 <li>_LED_EVAL
 : <a class="el" href="stm32_2led__hw_8h.html#a5f0b98407430e3501fbb04d8c5c0c23d">led_hw.h</a>
+</li>
+<li>_LED_GPIO
+: <a class="el" href="cc2500__settings_8c.html#af0503848c9870803c62f35fe0d23374b">cc2500_settings.c</a>
+</li>
+<li>_LED_GPIO_OFF
+: <a class="el" href="cc2500__settings_8c.html#ac95865ffc2bff779b21b69369e4a649f">cc2500_settings.c</a>
+</li>
+<li>_LED_GPIO_ON
+: <a class="el" href="cc2500__settings_8c.html#a0836754c8a9e94613ba26b5ac4fcda74">cc2500_settings.c</a>
+</li>
+<li>_LED_GPIO_PIN
+: <a class="el" href="cc2500__settings_8c.html#a28c26d9c297218059d2815bd5d9f9eb9">cc2500_settings.c</a>
 </li>
 <li>_LED_PIN_REG
 : <a class="el" href="lpc21_2led__hw_8h.html#ac92e58f7fe23258be1ca2c06f6800f6e">led_hw.h</a>
@@ -368,6 +457,12 @@ $(document).ready(function(){initNavTree('globals.html','');});
 <li>_PrintString
 : <a class="el" href="uart__print_8h.html#af958f96d5fb8818724ccb9454d973113">uart_print.h</a>
 </li>
+<li>_PROMPT_DEFAUTL
+: <a class="el" href="microrlConfig_8h.html#aec827b7d22cf34ae218af5b0dfc5a062">microrlConfig.h</a>
+</li>
+<li>_PROMPT_LEN
+: <a class="el" href="microrlConfig_8h.html#a94753fbcc9d0c1370be4333f2509ff9a">microrlConfig.h</a>
+</li>
 <li>_RC_INPUT
 : <a class="el" href="px4fmu_2chibios_2v4_80_2board_8h.html#aa1d7ec122897a2a9507bd63235e7a4c4">board.h</a>
 </li>
@@ -376,6 +471,9 @@ $(document).ready(function(){initNavTree('globals.html','');});
 </li>
 <li>_RegisterAhrs
 : <a class="el" href="ahrs_8c.html#a1dd101e4c2720da90d2af1bd046dd637">ahrs.c</a>
+</li>
+<li>_RING_HISTORY_LEN
+: <a class="el" href="microrlConfig_8h.html#abb0c4215b3e4ed980f6a5b6a7858d9f3">microrlConfig.h</a>
 </li>
 <li>_sbrk()
 : <a class="el" href="airspeed__otf_8c.html#a50d0541bd42367bb4b26013ff383318d">airspeed_otf.c</a>
@@ -407,6 +505,18 @@ $(document).ready(function(){initNavTree('globals.html','');});
 <li>_UART_RX_PORT
 : <a class="el" href="spektrum_8c.html#ac4376ac13cfd518cafce76c360afe556">spektrum.c</a>
 </li>
+<li>_USE_COMPLETE
+: <a class="el" href="microrlConfig_8h.html#aaaaca3a397a6b2b525a8002bc910983c">microrlConfig.h</a>
+</li>
+<li>_USE_CTLR_C
+: <a class="el" href="microrlConfig_8h.html#a4ae3170a1ee9c80482e6b49c7568c420">microrlConfig.h</a>
+</li>
+<li>_USE_ESC_SEQ
+: <a class="el" href="microrlConfig_8h.html#a3cd8d98c5ae36fa960810b38b559ea13">microrlConfig.h</a>
+</li>
+<li>_USE_HISTORY
+: <a class="el" href="microrlConfig_8h.html#acc7cec1c17ec0d77cfe2d2e4852ba74d">microrlConfig.h</a>
+</li>
 <li>_VIC_ADDR
 : <a class="el" href="armVIC_8h.html#a9981283e4fb9cc3322368f2aa07e3256">armVIC.h</a>
 </li>
@@ -422,7 +532,7 @@ $(document).ready(function(){initNavTree('globals.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri May 15 2020 04:04:10 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:04:29 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

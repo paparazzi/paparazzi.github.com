@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -112,10 +112,9 @@ $(document).ready(function(){initNavTree('module__xtend_rssi.html','');});
 <p>Currently only available on LPC21xx arch. You must also load the module pwm_meas.xml</p>
 <h1><a class="anchor" id="module_load_example__xtend_rssi"></a>
 Example for airframe file</h1>
-<p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;module name=&quot;pwm_meas&quot;/&gt;</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;&lt;module name=&quot;xtend_rssi&quot;&gt;</div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;  &lt;configure name=&quot;XTEND_RSSI_PWM_INPUT_CHANNEL&quot; value=&quot;input&quot; /&gt;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;&lt;/module&gt;</div>
+<p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;module name=&quot;xtend_rssi&quot;&gt;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;  &lt;configure name=&quot;XTEND_RSSI_PWM_INPUT_CHANNEL&quot; value=&quot;input&quot; /&gt;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;&lt;/module&gt;</div>
 </div><!-- fragment --> <h1><a class="anchor" id="configuration__xtend_rssi"></a>
 Module configuration options</h1>
 <h2><a class="anchor" id="configure"></a>
@@ -123,11 +122,6 @@ Configure Options</h2>
 <ul>
 <li><b>name:</b> <code>XTEND_RSSI_PWM_INPUT_CHANNEL</code> <b>value:</b> <em>input</em> <br />
  Description: select on which arch dep input the pwm line is connected</li>
-</ul>
-<h1><a class="anchor" id="dependencies__xtend_rssi"></a>
-Dependencies</h1>
-<ul>
-<li><a class="el" href="module__pwm_meas.html">pwm_meas module</a> </li>
 </ul>
 <h1><a class="anchor" id="functions__xtend_rssi"></a>
 Module functions</h1>
@@ -172,7 +166,9 @@ Raw xtend_rssi.xml file:</h2>
 <div class="line">    &lt;/description&gt;</div>
 <div class="line">    &lt;configure name=&quot;XTEND_RSSI_PWM_INPUT_CHANNEL&quot; value=&quot;input&quot; description=&quot;select on which arch dep input the pwm line is connected&quot;/&gt;</div>
 <div class="line">  &lt;/doc&gt;</div>
-<div class="line">  &lt;depends&gt;pwm_meas&lt;/depends&gt;</div>
+<div class="line">  &lt;dep&gt;</div>
+<div class="line">    &lt;depends&gt;pwm_meas&lt;/depends&gt;</div>
+<div class="line">  &lt;/dep&gt;</div>
 <div class="line">  &lt;header&gt;</div>
 <div class="line">    &lt;file name=&quot;xtend_rssi.h&quot;/&gt;</div>
 <div class="line">  &lt;/header&gt;</div>
@@ -190,7 +186,7 @@ Raw xtend_rssi.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:03:43 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:04:01 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

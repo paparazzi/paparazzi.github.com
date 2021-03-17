@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -154,10 +154,13 @@ $(document).ready(function(){initNavTree('globals_b.html','');});
 : <a class="el" href="ahrs__float__invariant_8c.html#a111da81ae5883147168bbb8366377b10">ahrs_float_invariant.c</a>
 , <a class="el" href="ins__float__invariant_8c.html#a111da81ae5883147168bbb8366377b10">ins_float_invariant.c</a>
 </li>
+<li>b
+: <a class="el" href="wedgebug_8c.html#a83fc1af92e29717b4513d121b0c72c7d">wedgebug.c</a>
+</li>
 <li>B100000
-: <a class="el" href="linux_2mcu__periph_2uart__arch_8h.html#a82fce4c6435c1524dd934d40c26330bf">uart_arch.h</a>
+: <a class="el" href="chibios_2mcu__periph_2uart__arch_8h.html#a82fce4c6435c1524dd934d40c26330bf">uart_arch.h</a>
 , <a class="el" href="serial__port_8c.html#a82fce4c6435c1524dd934d40c26330bf">serial_port.c</a>
-, <a class="el" href="chibios_2mcu__periph_2uart__arch_8h.html#a82fce4c6435c1524dd934d40c26330bf">uart_arch.h</a>
+, <a class="el" href="lpc21_2mcu__periph_2uart__arch_8h.html#a82fce4c6435c1524dd934d40c26330bf">uart_arch.h</a>
 </li>
 <li>B1000000
 : <a class="el" href="chibios_2mcu__periph_2uart__arch_8h.html#a32dc4578657dac59f79f0bc7ffc9416f">uart_arch.h</a>
@@ -166,7 +169,7 @@ $(document).ready(function(){initNavTree('globals_b.html','');});
 : <a class="el" href="chibios_2mcu__periph_2uart__arch_8h.html#aef3a1340ea0fba1573691a9e74a43d11">uart_arch.h</a>
 </li>
 <li>B1200
-: <a class="el" href="chibios_2mcu__periph_2uart__arch_8h.html#a36fdf3b468aa37c932c5feb0f3a9d7d7">uart_arch.h</a>
+: <a class="el" href="stm32_2mcu__periph_2uart__arch_8h.html#a36fdf3b468aa37c932c5feb0f3a9d7d7">uart_arch.h</a>
 </li>
 <li>B1500000
 : <a class="el" href="chibios_2mcu__periph_2uart__arch_8h.html#a9ea600f5048d4b2b1dfa1249521701bd">uart_arch.h</a>
@@ -184,7 +187,7 @@ $(document).ready(function(){initNavTree('globals_b.html','');});
 : <a class="el" href="chibios_2mcu__periph_2uart__arch_8h.html#acb80c15451346a6ae479344124cea120">uart_arch.h</a>
 </li>
 <li>B38400
-: <a class="el" href="chibios_2mcu__periph_2uart__arch_8h.html#ab282ae5b7fb59155ee42d1b6c9a80683">uart_arch.h</a>
+: <a class="el" href="stm32_2mcu__periph_2uart__arch_8h.html#ab282ae5b7fb59155ee42d1b6c9a80683">uart_arch.h</a>
 </li>
 <li>B460800
 : <a class="el" href="stm32_2mcu__periph_2uart__arch_8h.html#a644a0912fa1e82fd24c0516b4723ee59">uart_arch.h</a>
@@ -228,6 +231,12 @@ $(document).ready(function(){initNavTree('globals_b.html','');});
 , <a class="el" href="actuators__asctec__v2_8h.html#a6a84074f57bc5110d7e301d4662c4899ac921ff2cfc571c1d19b0485d7f6926ee">actuators_asctec_v2.h</a>
 , <a class="el" href="actuators__asctec__v2__new_8h.html#a6a84074f57bc5110d7e301d4662c4899ac921ff2cfc571c1d19b0485d7f6926ee">actuators_asctec_v2_new.h</a>
 </li>
+<li>background_processes()
+: <a class="el" href="wedgebug_8c.html#a37483dcff9c407f382e82b9e0a0a4729">wedgebug.c</a>
+</li>
+<li>background_processes_16bit()
+: <a class="el" href="wedgebug_8c.html#a9a5954363d7056e77bafd4e67866c47c">wedgebug.c</a>
+</li>
 <li>BAD_DETECTS_DISARM
 : <a class="el" href="esc32_8h.html#a7d7ff77147834c43663d3dfd1f263610a5b4332a67c30b628d6209b861c448459">esc32.h</a>
 </li>
@@ -249,12 +258,20 @@ $(document).ready(function(){initNavTree('globals_b.html','');});
 <li>BARO_ABS_ADS
 : <a class="el" href="umarim_2baro__board_8c.html#a0517c88c49fb20a5ed40593ed9a8a5e8">baro_board.c</a>
 </li>
+<li>baro_alt
+: <a class="el" href="baro__bmp280__i2c_8c.html#a67176009749d07b3d9a4045a35aad016">baro_bmp280_i2c.c</a>
+, <a class="el" href="baro__bmp280__i2c_8h.html#a67176009749d07b3d9a4045a35aad016">baro_bmp280_i2c.h</a>
+</li>
+<li>baro_alt_valid
+: <a class="el" href="baro__bmp280__i2c_8c.html#a46031cc63c3ee8f316628419ba9e25fe">baro_bmp280_i2c.c</a>
+, <a class="el" href="baro__bmp280__i2c_8h.html#a46031cc63c3ee8f316628419ba9e25fe">baro_bmp280_i2c.h</a>
+</li>
 <li>baro_amsys_abs_altitude
 : <a class="el" href="baro__amsys_8c.html#a4edb74c5341948135306b7e08a4b7666">baro_amsys.c</a>
 </li>
 <li>baro_amsys_adc
-: <a class="el" href="baro__amsys_8h.html#af6682252f422f77b702a0e4e315e82c9">baro_amsys.h</a>
-, <a class="el" href="baro__amsys_8c.html#af6682252f422f77b702a0e4e315e82c9">baro_amsys.c</a>
+: <a class="el" href="baro__amsys_8c.html#af6682252f422f77b702a0e4e315e82c9">baro_amsys.c</a>
+, <a class="el" href="baro__amsys_8h.html#af6682252f422f77b702a0e4e315e82c9">baro_amsys.h</a>
 </li>
 <li>BARO_AMSYS_ADDR
 : <a class="el" href="baro__amsys_8c.html#ae97d5440a6015931a421f899ba1ff7e7">baro_amsys.c</a>
@@ -367,6 +384,22 @@ $(document).ready(function(){initNavTree('globals_b.html','');});
 </li>
 <li>baro_bmp085
 : <a class="el" href="hbmini_2baro__board_8c.html#acefc6db83b8dc325514608a766413bc1">baro_board.c</a>
+</li>
+<li>baro_bmp280
+: <a class="el" href="baro__bmp280__i2c_8c.html#a30f2cb8de49f9b2fe03069ac866d6470">baro_bmp280_i2c.c</a>
+, <a class="el" href="baro__bmp280__i2c_8h.html#a30f2cb8de49f9b2fe03069ac866d6470">baro_bmp280_i2c.h</a>
+</li>
+<li>baro_bmp280_event()
+: <a class="el" href="baro__bmp280__i2c_8c.html#af54cb2d222ce142b39a34c7c777c6be0">baro_bmp280_i2c.c</a>
+, <a class="el" href="baro__bmp280__i2c_8h.html#af54cb2d222ce142b39a34c7c777c6be0">baro_bmp280_i2c.h</a>
+</li>
+<li>baro_bmp280_init()
+: <a class="el" href="baro__bmp280__i2c_8c.html#a56a1810f9a1561f66ef4ea248a1eac87">baro_bmp280_i2c.c</a>
+, <a class="el" href="baro__bmp280__i2c_8h.html#a56a1810f9a1561f66ef4ea248a1eac87">baro_bmp280_i2c.h</a>
+</li>
+<li>baro_bmp280_periodic()
+: <a class="el" href="baro__bmp280__i2c_8h.html#a4502d13651216544e7d39c3142094972">baro_bmp280_i2c.h</a>
+, <a class="el" href="baro__bmp280__i2c_8c.html#a4502d13651216544e7d39c3142094972">baro_bmp280_i2c.c</a>
 </li>
 <li>baro_bmp3
 : <a class="el" href="baro__bmp3_8c.html#aec661d066132bf644018e6a9e5d8d003">baro_bmp3.c</a>
@@ -599,12 +632,7 @@ $(document).ready(function(){initNavTree('globals_b.html','');});
 , <a class="el" href="ins__int_8c.html#a7e2e4e9787ce7895e880fe4eb5dc0702">ins_int.c</a>
 </li>
 <li>baro_event()
-: <a class="el" href="naze32_2baro__board_8h.html#a35cf6cc4a308999840a583900a3d35ff">baro_board.h</a>
-, <a class="el" href="swing_2baro__board_8c.html#a35cf6cc4a308999840a583900a3d35ff">baro_board.c</a>
-, <a class="el" href="swing_2baro__board_8h.html#a35cf6cc4a308999840a583900a3d35ff">baro_board.h</a>
-, <a class="el" href="baro__board__ms5611__i2c_8c.html#a35cf6cc4a308999840a583900a3d35ff">baro_board_ms5611_i2c.c</a>
-, <a class="el" href="baro__board__ms5611__spi_8c.html#a35cf6cc4a308999840a583900a3d35ff">baro_board_ms5611_spi.c</a>
-, <a class="el" href="bebop_2baro__board_8h.html#a35cf6cc4a308999840a583900a3d35ff">baro_board.h</a>
+: <a class="el" href="disco_2baro__board_8h.html#a35cf6cc4a308999840a583900a3d35ff">baro_board.h</a>
 , <a class="el" href="lia_2baro__board_8c.html#a35cf6cc4a308999840a583900a3d35ff">baro_board.c</a>
 , <a class="el" href="lia_2baro__board_8h.html#a35cf6cc4a308999840a583900a3d35ff">baro_board.h</a>
 , <a class="el" href="lisa__m_2baro__board_8c.html#a35cf6cc4a308999840a583900a3d35ff">baro_board.c</a>
@@ -615,6 +643,11 @@ $(document).ready(function(){initNavTree('globals_b.html','');});
 , <a class="el" href="lisa__mxs_2baro__board_8h.html#a35cf6cc4a308999840a583900a3d35ff">baro_board.h</a>
 , <a class="el" href="navstik_2baro__board_8c.html#a35cf6cc4a308999840a583900a3d35ff">baro_board.c</a>
 , <a class="el" href="navstik_2baro__board_8h.html#a35cf6cc4a308999840a583900a3d35ff">baro_board.h</a>
+, <a class="el" href="swing_2baro__board_8c.html#a35cf6cc4a308999840a583900a3d35ff">baro_board.c</a>
+, <a class="el" href="swing_2baro__board_8h.html#a35cf6cc4a308999840a583900a3d35ff">baro_board.h</a>
+, <a class="el" href="baro__board__ms5611__i2c_8c.html#a35cf6cc4a308999840a583900a3d35ff">baro_board_ms5611_i2c.c</a>
+, <a class="el" href="baro__board__ms5611__spi_8c.html#a35cf6cc4a308999840a583900a3d35ff">baro_board_ms5611_spi.c</a>
+, <a class="el" href="bebop_2baro__board_8h.html#a35cf6cc4a308999840a583900a3d35ff">baro_board.h</a>
 </li>
 <li>baro_filter
 : <a class="el" href="baro__amsys_8c.html#ad316117bb50ae37e1b71c678af09f9a6">baro_amsys.c</a>
@@ -839,6 +872,9 @@ $(document).ready(function(){initNavTree('globals_b.html','');});
 <li>BARO_PERIODIC_FREQUENCY
 : <a class="el" href="rover_2main__ap_8c.html#a124e8be962a54f3f7a0957fa34ec5876">main_ap.c</a>
 </li>
+<li>baro_press
+: <a class="el" href="baro__bmp280__i2c_8c.html#a33f607079a687dcc674326572d5bdfdd">baro_bmp280_i2c.c</a>
+</li>
 <li>baro_read()
 : <a class="el" href="swing_2baro__board_8c.html#ac92a0c0517ee3a8c9d5eeb7a31fdc316">baro_board.c</a>
 </li>
@@ -936,6 +972,9 @@ $(document).ready(function(){initNavTree('globals_b.html','');});
 <li>baro_swing_raw
 : <a class="el" href="swing_2baro__board_8c.html#aaba6f5f436c2d8d877ca3822059fcd11">baro_board.c</a>
 </li>
+<li>baro_temp
+: <a class="el" href="baro__bmp280__i2c_8c.html#ac83782b3be7ea4b8fc27a1a91b85f2f8">baro_bmp280_i2c.c</a>
+</li>
 <li>baro_trans
 : <a class="el" href="lisa__l_2baro__board_8c.html#ad28e1bf56a33915c0590f3bbb7e32e28">baro_board.c</a>
 </li>
@@ -966,6 +1005,9 @@ $(document).ready(function(){initNavTree('globals_b.html','');});
 </li>
 <li>baseline
 : <a class="el" href="obstacle__avoidance_8c.html#a81d9f165b1e496d7ee3acfc4dffe61f5">obstacle_avoidance.c</a>
+</li>
+<li>BAT_CAPACITY
+: <a class="el" href="max7456_8c.html#a19d307ae8a48054d98ca46ac50048d93">max7456.c</a>
 </li>
 <li>BAT_CHECKER_DELAY
 : <a class="el" href="electrical_8c.html#a122d018ddd148a99f19e44723b6c7c49">electrical.c</a>
@@ -1256,6 +1298,106 @@ $(document).ready(function(){initNavTree('globals_b.html','');});
 <li>best_quality
 : <a class="el" href="snake__gate__detection_8c.html#a7c57ce6e2713cf42378f4509e80faef1">snake_gate_detection.c</a>
 </li>
+<li>bf_adcGetChannel()
+: <a class="el" href="cc2500__compat_8c.html#a906da9184cd901d0de323f1546b61910">cc2500_compat.c</a>
+, <a class="el" href="cc2500__compat_8h.html#a906da9184cd901d0de323f1546b61910">cc2500_compat.h</a>
+</li>
+<li>bf_attitude
+: <a class="el" href="cc2500__compat_8c.html#a7637e1c71bc9fe7b914cd2b971524152">cc2500_compat.c</a>
+, <a class="el" href="cc2500__compat_8h.html#a7637e1c71bc9fe7b914cd2b971524152">cc2500_compat.h</a>
+</li>
+<li>bf_delay()
+: <a class="el" href="cc2500__compat_8c.html#addb30534411fed2d3dca3f7f8d9a6b5a">cc2500_compat.c</a>
+, <a class="el" href="cc2500__compat_8h.html#addb30534411fed2d3dca3f7f8d9a6b5a">cc2500_compat.h</a>
+</li>
+<li>bf_delayMicroseconds()
+: <a class="el" href="cc2500__compat_8c.html#a1c2dbcae01e25bbe4f49ed0dd9623111">cc2500_compat.c</a>
+, <a class="el" href="cc2500__compat_8h.html#a1c2dbcae01e25bbe4f49ed0dd9623111">cc2500_compat.h</a>
+</li>
+<li>bf_featureIsEnabled()
+: <a class="el" href="cc2500__compat_8c.html#afc9797e5e9c3c85f61acfb05ef3a69e0">cc2500_compat.c</a>
+, <a class="el" href="cc2500__compat_8h.html#afc9797e5e9c3c85f61acfb05ef3a69e0">cc2500_compat.h</a>
+</li>
+<li>bf_getAmperage()
+: <a class="el" href="cc2500__compat_8c.html#a8623411fac0525a429424b98a13cc30d">cc2500_compat.c</a>
+, <a class="el" href="cc2500__compat_8h.html#a8623411fac0525a429424b98a13cc30d">cc2500_compat.h</a>
+</li>
+<li>bf_getBatteryCellCount()
+: <a class="el" href="cc2500__compat_8c.html#aad53e8f9cb509cdb849ba07cffd52ca6">cc2500_compat.c</a>
+, <a class="el" href="cc2500__compat_8h.html#aad53e8f9cb509cdb849ba07cffd52ca6">cc2500_compat.h</a>
+</li>
+<li>bf_getBatteryVoltage()
+: <a class="el" href="cc2500__compat_8c.html#a22ec2d90c8be903a5c8946a5e8c2cb4f">cc2500_compat.c</a>
+, <a class="el" href="cc2500__compat_8h.html#a22ec2d90c8be903a5c8946a5e8c2cb4f">cc2500_compat.h</a>
+</li>
+<li>bf_getEstimatedAltitudeCm()
+: <a class="el" href="cc2500__compat_8c.html#a1fe351263605d7f4869b80c5e60abe3e">cc2500_compat.c</a>
+, <a class="el" href="cc2500__compat_8h.html#a1fe351263605d7f4869b80c5e60abe3e">cc2500_compat.h</a>
+</li>
+<li>bf_getEstimatedVario()
+: <a class="el" href="cc2500__compat_8c.html#acd79985136a05b258fa9585116a23f3c">cc2500_compat.c</a>
+, <a class="el" href="cc2500__compat_8h.html#acd79985136a05b258fa9585116a23f3c">cc2500_compat.h</a>
+</li>
+<li>bf_getLegacyBatteryVoltage()
+: <a class="el" href="cc2500__compat_8c.html#aea8aeb9534d8bc8aa76eb53007dfcb8a">cc2500_compat.c</a>
+, <a class="el" href="cc2500__compat_8h.html#aea8aeb9534d8bc8aa76eb53007dfcb8a">cc2500_compat.h</a>
+</li>
+<li>bf_getMAhDrawn()
+: <a class="el" href="cc2500__compat_8c.html#a9e3f6983e2b3e67c9423d4396a530051">cc2500_compat.c</a>
+, <a class="el" href="cc2500__compat_8h.html#a9e3f6983e2b3e67c9423d4396a530051">cc2500_compat.h</a>
+</li>
+<li>bf_IOConfigGPIO()
+: <a class="el" href="cc2500__compat_8c.html#af26fe9c3dc6864698f8999825d63cb18">cc2500_compat.c</a>
+, <a class="el" href="cc2500__compat_8h.html#af26fe9c3dc6864698f8999825d63cb18">cc2500_compat.h</a>
+</li>
+<li>bf_IOGetByTag()
+: <a class="el" href="cc2500__compat_8c.html#ab83337d972e5d33b9adbe4c06ffc642b">cc2500_compat.c</a>
+, <a class="el" href="cc2500__compat_8h.html#ab83337d972e5d33b9adbe4c06ffc642b">cc2500_compat.h</a>
+</li>
+<li>bf_IOHi()
+: <a class="el" href="cc2500__compat_8c.html#ae056691019449acd93551413144617cc">cc2500_compat.c</a>
+, <a class="el" href="cc2500__compat_8h.html#ae056691019449acd93551413144617cc">cc2500_compat.h</a>
+</li>
+<li>bf_IOInit()
+: <a class="el" href="cc2500__compat_8c.html#ad4c71641946465d236a9acdbeccb79d4">cc2500_compat.c</a>
+, <a class="el" href="cc2500__compat_8h.html#ad4c71641946465d236a9acdbeccb79d4">cc2500_compat.h</a>
+</li>
+<li>bf_IOLo()
+: <a class="el" href="cc2500__compat_8c.html#a21625f74706a3ed3e549b3b1399de9c2">cc2500_compat.c</a>
+, <a class="el" href="cc2500__compat_8h.html#a21625f74706a3ed3e549b3b1399de9c2">cc2500_compat.h</a>
+</li>
+<li>bf_IORead()
+: <a class="el" href="cc2500__compat_8c.html#acc61717cfc2498f47df604de3f0278e9">cc2500_compat.c</a>
+, <a class="el" href="cc2500__compat_8h.html#acc61717cfc2498f47df604de3f0278e9">cc2500_compat.h</a>
+</li>
+<li>bf_IOToggle()
+: <a class="el" href="cc2500__compat_8c.html#ae97a0bb0f6cab9aca87bfb796b8125cc">cc2500_compat.c</a>
+, <a class="el" href="cc2500__compat_8h.html#ae97a0bb0f6cab9aca87bfb796b8125cc">cc2500_compat.h</a>
+</li>
+<li>bf_isAmperageConfigured()
+: <a class="el" href="cc2500__compat_8c.html#a15899e69d5973de55b9d0f8cfb5af483">cc2500_compat.c</a>
+, <a class="el" href="cc2500__compat_8h.html#a15899e69d5973de55b9d0f8cfb5af483">cc2500_compat.h</a>
+</li>
+<li>bf_isBatteryVoltageConfigured()
+: <a class="el" href="cc2500__compat_8c.html#a1c1e94e84c8bf07878d97cc37b54911d">cc2500_compat.c</a>
+, <a class="el" href="cc2500__compat_8h.html#a1c1e94e84c8bf07878d97cc37b54911d">cc2500_compat.h</a>
+</li>
+<li>bf_micros()
+: <a class="el" href="cc2500__compat_8c.html#a737ca543bb2fc13efb3ec636ec3d00b2">cc2500_compat.c</a>
+, <a class="el" href="cc2500__compat_8h.html#a737ca543bb2fc13efb3ec636ec3d00b2">cc2500_compat.h</a>
+</li>
+<li>bf_millis()
+: <a class="el" href="cc2500__compat_8c.html#aa2dc70526e6d3d2eb6c4c392835bdcd7">cc2500_compat.c</a>
+, <a class="el" href="cc2500__compat_8h.html#aa2dc70526e6d3d2eb6c4c392835bdcd7">cc2500_compat.h</a>
+</li>
+<li>bf_rxSpiDeviceInit()
+: <a class="el" href="cc2500__compat_8c.html#a5980e36e92fe0169d239a2fe053ea68a">cc2500_compat.c</a>
+, <a class="el" href="cc2500__compat_8h.html#a5980e36e92fe0169d239a2fe053ea68a">cc2500_compat.h</a>
+</li>
+<li>bf_writeEEPROM()
+: <a class="el" href="cc2500__settings_8c.html#aa6de72ae6e9b2ff994305c59286cd281">cc2500_settings.c</a>
+, <a class="el" href="cc2500__settings_8h.html#aa6de72ae6e9b2ff994305c59286cd281">cc2500_settings.h</a>
+</li>
 <li>BFP_OF_REAL
 : <a class="el" href="group__math__algebra__int.html#gaa6bb9343d0a10947a0824bc67cf4a47d">pprz_algebra_int.h</a>
 </li>
@@ -1373,9 +1515,30 @@ $(document).ready(function(){initNavTree('globals_b.html','');});
 <li>binaryValues
 : <a class="el" href="esc32_8h.html#ab012f41c17e9ede81accd6af9e1eb577">esc32.h</a>
 </li>
+<li>BIND_BUTTON_GPIO
+: <a class="el" href="crazybee__f4__1_80_8h.html#ae3fd1c36837ff07c284af91d9fdd6883">crazybee_f4_1.0.h</a>
+</li>
+<li>BIND_BUTTON_PIN
+: <a class="el" href="crazybee__f4__1_80_8h.html#a9f58619cdc635ccfe20f1945d4385857">crazybee_f4_1.0.h</a>
+</li>
 <li>bind_soft_value
 : <a class="el" href="spektrum__soft__bind__ap_8c.html#afa6263c88719c5877209b3aa106e66d1">spektrum_soft_bind_ap.c</a>
 , <a class="el" href="spektrum__soft__bind__ap_8h.html#afa6263c88719c5877209b3aa106e66d1">spektrum_soft_bind_ap.h</a>
+</li>
+<li>bindIdx
+: <a class="el" href="cc2500__frsky__shared_8c.html#aee4662d8fdeceaad3f0f2395eb120b43">cc2500_frsky_shared.c</a>
+</li>
+<li>bindIo
+: <a class="el" href="cc2500__settings_8c.html#a6d3fd2bb719800de8d45fcda83ed139d">cc2500_settings.c</a>
+</li>
+<li>bindOffset
+: <a class="el" href="cc2500__frsky__shared_8c.html#adfdeab9cdc3f41732175f3253829965a">cc2500_frsky_shared.c</a>
+</li>
+<li>bindPin
+: <a class="el" href="cc2500__rx__spi__common_8c.html#add505c7908ded49127d574f317c65dba">cc2500_rx_spi_common.c</a>
+</li>
+<li>bindRequested
+: <a class="el" href="cc2500__rx__spi__common_8c.html#a473a46cbd9ec990730a4c8593888ac6a">cc2500_rx_spi_common.c</a>
 </li>
 <li>BIT
 : <a class="el" href="virt2phys_8c.html#a4af0eb308fa447e114c2839fb9fdec68">virt2phys.c</a>
@@ -1419,9 +1582,16 @@ $(document).ready(function(){initNavTree('globals_b.html','');});
 <li>Block
 : <a class="el" href="common__flight__plan_8h.html#a3e749f8fe41a97ef62de0dd622dbe3e9">common_flight_plan.h</a>
 </li>
+<li>block_size_disparities
+: <a class="el" href="wedgebug_8c.html#aaa9722f1aa9f990912c955cd52e655cb">wedgebug.c</a>
+, <a class="el" href="wedgebug_8h.html#aaa9722f1aa9f990912c955cd52e655cb">wedgebug.h</a>
+</li>
 <li>block_time
 : <a class="el" href="common__flight__plan_8c.html#ae3eebf6396d9b2539b27b9477c46724d">common_flight_plan.c</a>
 , <a class="el" href="common__flight__plan_8h.html#ae3eebf6396d9b2539b27b9477c46724d">common_flight_plan.h</a>
+</li>
+<li>blocking
+: <a class="el" href="gpio__ext__pca95xx_8c.html#aee5d44979cb9bfdb94b8161ee58a0d60">gpio_ext_pca95xx.c</a>
 </li>
 <li>blue_color
 : <a class="el" href="snake__gate__detection_8c.html#a0776567269795baa33da86545b9561b1">snake_gate_detection.c</a>
@@ -1467,12 +1637,12 @@ $(document).ready(function(){initNavTree('globals_b.html','');});
 : <a class="el" href="bluegiga_8h.html#a077afb68eb6fcef8be74ea0f01c8b098a789289d566b3336332d0e67e6e00ecf2">bluegiga.h</a>
 </li>
 <li>bluegiga_increment_buf()
-: <a class="el" href="bluegiga_8h.html#ad59d5db2be5ea429bc32bddfab4f39f3">bluegiga.h</a>
-, <a class="el" href="bluegiga_8c.html#ad59d5db2be5ea429bc32bddfab4f39f3">bluegiga.c</a>
+: <a class="el" href="bluegiga_8c.html#ad59d5db2be5ea429bc32bddfab4f39f3">bluegiga.c</a>
+, <a class="el" href="bluegiga_8h.html#ad59d5db2be5ea429bc32bddfab4f39f3">bluegiga.h</a>
 </li>
 <li>bluegiga_init()
-: <a class="el" href="bluegiga_8c.html#ac8a60ccee96fbe718a27b6194f3f14e0">bluegiga.c</a>
-, <a class="el" href="bluegiga_8h.html#ac8a60ccee96fbe718a27b6194f3f14e0">bluegiga.h</a>
+: <a class="el" href="bluegiga_8h.html#ac8a60ccee96fbe718a27b6194f3f14e0">bluegiga.h</a>
+, <a class="el" href="bluegiga_8c.html#ac8a60ccee96fbe718a27b6194f3f14e0">bluegiga.c</a>
 </li>
 <li>bluegiga_load_tx()
 : <a class="el" href="bluegiga_8c.html#a95be3ef04141e5037bfd21e88d87d3ef">bluegiga.c</a>
@@ -1608,8 +1778,8 @@ $(document).ready(function(){initNavTree('globals_b.html','');});
 : <a class="el" href="bmi088__regs_8h.html#a6103be2e9e5fa53ec1dad5fb621ee370">bmi088_regs.h</a>
 </li>
 <li>BMI088_ACCEL_SENS
-: <a class="el" href="bmi088_8h.html#a204cd9d13497f8b2ecefa26ee3a934f8">bmi088.h</a>
-, <a class="el" href="bmi088_8c.html#a204cd9d13497f8b2ecefa26ee3a934f8">bmi088.c</a>
+: <a class="el" href="bmi088_8c.html#a204cd9d13497f8b2ecefa26ee3a934f8">bmi088.c</a>
+, <a class="el" href="bmi088_8h.html#a204cd9d13497f8b2ecefa26ee3a934f8">bmi088.h</a>
 </li>
 <li>BMI088_ACCEL_SENS_12G
 : <a class="el" href="bmi088_8h.html#a141f18820ce1d4e9b4b347ec7342d389">bmi088.h</a>
@@ -1887,8 +2057,8 @@ $(document).ready(function(){initNavTree('globals_b.html','');});
 : <a class="el" href="bmi088_8h.html#abf2726bb3bc6514646221047a478fed2">bmi088.h</a>
 </li>
 <li>BMI088_GYRO_SENS_FRAC
-: <a class="el" href="bmi088_8h.html#a8ea5f457b020296ad97446e22aefce6f">bmi088.h</a>
-, <a class="el" href="bmi088_8c.html#a8ea5f457b020296ad97446e22aefce6f">bmi088.c</a>
+: <a class="el" href="bmi088_8c.html#a8ea5f457b020296ad97446e22aefce6f">bmi088.c</a>
+, <a class="el" href="bmi088_8h.html#a8ea5f457b020296ad97446e22aefce6f">bmi088.h</a>
 </li>
 <li>BMI088_GYRO_SOFT_RESET
 : <a class="el" href="bmi088__regs_8h.html#a0533ea9415878b8378721a3e8963ff55">bmi088_regs.h</a>
@@ -1897,8 +2067,8 @@ $(document).ready(function(){initNavTree('globals_b.html','');});
 : <a class="el" href="bmi088__regs_8h.html#aedc8851a2661a418cbd73135d3516556a4190057a4ab70408f03390dbaa1e0c40">bmi088_regs.h</a>
 </li>
 <li>bmi088_i2c_event()
-: <a class="el" href="bmi088__i2c_8h.html#abfa0649b89202681ccbf3f75f3aa1565">bmi088_i2c.h</a>
-, <a class="el" href="bmi088__i2c_8c.html#abfa0649b89202681ccbf3f75f3aa1565">bmi088_i2c.c</a>
+: <a class="el" href="bmi088__i2c_8c.html#abfa0649b89202681ccbf3f75f3aa1565">bmi088_i2c.c</a>
+, <a class="el" href="bmi088__i2c_8h.html#abfa0649b89202681ccbf3f75f3aa1565">bmi088_i2c.h</a>
 </li>
 <li>bmi088_i2c_init()
 : <a class="el" href="bmi088__i2c_8c.html#a4e11caa2425e0e7de019c26041f30f22">bmi088_i2c.c</a>
@@ -1908,12 +2078,12 @@ $(document).ready(function(){initNavTree('globals_b.html','');});
 : <a class="el" href="bmi088__i2c_8h.html#a318cf6522926f01e4f1b01c9eed98db3">bmi088_i2c.h</a>
 </li>
 <li>bmi088_i2c_read()
-: <a class="el" href="bmi088__i2c_8h.html#aa5b51ce0c76da793600e92a784e262cb">bmi088_i2c.h</a>
-, <a class="el" href="bmi088__i2c_8c.html#aa5b51ce0c76da793600e92a784e262cb">bmi088_i2c.c</a>
+: <a class="el" href="bmi088__i2c_8c.html#aa5b51ce0c76da793600e92a784e262cb">bmi088_i2c.c</a>
+, <a class="el" href="bmi088__i2c_8h.html#aa5b51ce0c76da793600e92a784e262cb">bmi088_i2c.h</a>
 </li>
 <li>bmi088_i2c_start_configure()
-: <a class="el" href="bmi088__i2c_8h.html#ad90e7d47b72b999e8915527178429943">bmi088_i2c.h</a>
-, <a class="el" href="bmi088__i2c_8c.html#ad90e7d47b72b999e8915527178429943">bmi088_i2c.c</a>
+: <a class="el" href="bmi088__i2c_8c.html#ad90e7d47b72b999e8915527178429943">bmi088_i2c.c</a>
+, <a class="el" href="bmi088__i2c_8h.html#ad90e7d47b72b999e8915527178429943">bmi088_i2c.h</a>
 </li>
 <li>bmi088_i2c_write_to_reg()
 : <a class="el" href="bmi088__i2c_8c.html#a44f569c92565900c76e5bec26cb054ae">bmi088_i2c.c</a>
@@ -2011,12 +2181,12 @@ $(document).ready(function(){initNavTree('globals_b.html','');});
 : <a class="el" href="bmp085_8c.html#ab92381db9dcd63fc57502f7ed1b91678">bmp085.c</a>
 </li>
 <li>bmp085_event()
-: <a class="el" href="bmp085_8h.html#a378f5eb4f4ed5e17c6f13e3dc4629842">bmp085.h</a>
-, <a class="el" href="bmp085_8c.html#a378f5eb4f4ed5e17c6f13e3dc4629842">bmp085.c</a>
+: <a class="el" href="bmp085_8c.html#a378f5eb4f4ed5e17c6f13e3dc4629842">bmp085.c</a>
+, <a class="el" href="bmp085_8h.html#a378f5eb4f4ed5e17c6f13e3dc4629842">bmp085.h</a>
 </li>
 <li>bmp085_init()
-: <a class="el" href="bmp085_8c.html#a0408131d52b918456c36b07d13d6a90f">bmp085.c</a>
-, <a class="el" href="bmp085_8h.html#a0408131d52b918456c36b07d13d6a90f">bmp085.h</a>
+: <a class="el" href="bmp085_8h.html#a0408131d52b918456c36b07d13d6a90f">bmp085.h</a>
+, <a class="el" href="bmp085_8c.html#a0408131d52b918456c36b07d13d6a90f">bmp085.c</a>
 </li>
 <li>BMP085_OSS
 : <a class="el" href="bmp085__regs_8h.html#ac2a8c8494bc9512f6d11fe223736995e">bmp085_regs.h</a>
@@ -2026,8 +2196,8 @@ $(document).ready(function(){initNavTree('globals_b.html','');});
 , <a class="el" href="bmp085_8c.html#ad6fe03b188457ab22e7e81f0712c9afb">bmp085.c</a>
 </li>
 <li>bmp085_read_eeprom_calib()
-: <a class="el" href="bmp085_8c.html#a96cbcc561ed98d124a49fcd60b701fb6">bmp085.c</a>
-, <a class="el" href="bmp085_8h.html#a96cbcc561ed98d124a49fcd60b701fb6">bmp085.h</a>
+: <a class="el" href="bmp085_8h.html#a96cbcc561ed98d124a49fcd60b701fb6">bmp085.h</a>
+, <a class="el" href="bmp085_8c.html#a96cbcc561ed98d124a49fcd60b701fb6">bmp085.c</a>
 </li>
 <li>BMP085_SLAVE_ADDR
 : <a class="el" href="bmp085__regs_8h.html#a4f535b5a3b3138b16ab8f04fe6dcb0c4">bmp085_regs.h</a>
@@ -2073,6 +2243,270 @@ $(document).ready(function(){initNavTree('globals_b.html','');});
 </li>
 <li>BMP180_OSS
 : <a class="el" href="ardrone_2baro__board_8c.html#a0b8ffa9cd76fa9a3bf11035c1734c5ec">baro_board.c</a>
+</li>
+<li>BMP280_ALL
+: <a class="el" href="bmp280__regs_8h.html#a3df97b01a90f1339449838597f426870">bmp280_regs.h</a>
+</li>
+<li>BMP280_CALIB_DATA_LEN
+: <a class="el" href="bmp280__regs_8h.html#a8f9c1d5f63a452553947af8e5d16895f">bmp280_regs.h</a>
+</li>
+<li>BMP280_CALIB_LSB_DATA_ADDR
+: <a class="el" href="bmp280__regs_8h.html#a59137702b89594b36a4698bf0fbbe8c7">bmp280_regs.h</a>
+</li>
+<li>BMP280_CHIP_ID
+: <a class="el" href="bmp280__regs_8h.html#aa29aaafdd798a1593a4b536f0ed7c9c2">bmp280_regs.h</a>
+</li>
+<li>BMP280_CHIP_ID_REG_ADDR
+: <a class="el" href="bmp280__regs_8h.html#a53724c33dbc35237090f5d341eb8d206">bmp280_regs.h</a>
+</li>
+<li>BMP280_COMPENSATION
+: <a class="el" href="bmp280__regs_8h.html#a6743a82c0e6b2732510b9def022477fa">bmp280_regs.h</a>
+</li>
+<li>BMP280_CONCAT_BYTES
+: <a class="el" href="bmp280__regs_8h.html#ab127cf1fefbcc8cd7990510c9cb574dd">bmp280_regs.h</a>
+</li>
+<li>BMP280_CONFIG_ADDR
+: <a class="el" href="bmp280__regs_8h.html#ae525d7799bfe7907844c4da8cd2357b9">bmp280_regs.h</a>
+</li>
+<li>BMP280_CONFIG_LEN
+: <a class="el" href="bmp280__regs_8h.html#a344ede7da020437317592afc3223a861">bmp280_regs.h</a>
+</li>
+<li>BMP280_CONFIG_REG_ADDR
+: <a class="el" href="bmp280__regs_8h.html#a6ea6de39358f0cdf65dc943349c9b759">bmp280_regs.h</a>
+</li>
+<li>BMP280_CTRL_MEAS_REG_ADDR
+: <a class="el" href="bmp280__regs_8h.html#a4f38dc24c0b8fe0c9c125a5b2798f525">bmp280_regs.h</a>
+</li>
+<li>BMP280_DATA_START_REG_ADDR
+: <a class="el" href="bmp280__regs_8h.html#a2a1a7ce8e3ab69edf43c9a33aea4b19e">bmp280_regs.h</a>
+</li>
+<li>BMP280_DIG_P1_UINT
+: <a class="el" href="bmp280__regs_8h.html#a1ce8f68299d29e9f0107750a7cdc9a7c">bmp280_regs.h</a>
+</li>
+<li>BMP280_DIG_P2_INT
+: <a class="el" href="bmp280__regs_8h.html#a905abda605d2e89dffd370dd0337f948">bmp280_regs.h</a>
+</li>
+<li>BMP280_DIG_P3_INT
+: <a class="el" href="bmp280__regs_8h.html#a1e71f679ca1fc0c94addaf0355825532">bmp280_regs.h</a>
+</li>
+<li>BMP280_DIG_P4_INT
+: <a class="el" href="bmp280__regs_8h.html#a7b3d5a80de24c00f2d871b15f941ad82">bmp280_regs.h</a>
+</li>
+<li>BMP280_DIG_P5_INT
+: <a class="el" href="bmp280__regs_8h.html#a46e1a375d12a385a8e53b31009bfef46">bmp280_regs.h</a>
+</li>
+<li>BMP280_DIG_P6_INT
+: <a class="el" href="bmp280__regs_8h.html#ab600821252d8287db3a2d62626e1345e">bmp280_regs.h</a>
+</li>
+<li>BMP280_DIG_P7_INT
+: <a class="el" href="bmp280__regs_8h.html#a54af3fcd6c6d852ad69d3773ef9f4380">bmp280_regs.h</a>
+</li>
+<li>BMP280_DIG_P8_INT
+: <a class="el" href="bmp280__regs_8h.html#a8fd8af1e632915ef76f11bf2e43bc34e">bmp280_regs.h</a>
+</li>
+<li>BMP280_DIG_P9_INT
+: <a class="el" href="bmp280__regs_8h.html#abd058279182445e01616f6b8fd90a096">bmp280_regs.h</a>
+</li>
+<li>BMP280_DIG_T1_UINT
+: <a class="el" href="bmp280__regs_8h.html#a4f095d9d8f92efef2f304353bd64b503">bmp280_regs.h</a>
+</li>
+<li>BMP280_DIG_T2_INT
+: <a class="el" href="bmp280__regs_8h.html#a60467e80efcedeb2a8108c7dad6c0771">bmp280_regs.h</a>
+</li>
+<li>BMP280_DIG_T3_INT
+: <a class="el" href="bmp280__regs_8h.html#a837b67edc58cc1775339c347c4d1779d">bmp280_regs.h</a>
+</li>
+<li>BMP280_DISABLE_SPI_IF
+: <a class="el" href="bmp280__regs_8h.html#a21c4ccba6ec5bf2309a3c15447214dfb">bmp280_regs.h</a>
+</li>
+<li>BMP280_ENABLE_SPI_IF
+: <a class="el" href="bmp280__regs_8h.html#a1eb9b09b6f591112dbc22a6328c35e47">bmp280_regs.h</a>
+</li>
+<li>BMP280_EOC_BIT
+: <a class="el" href="bmp280__regs_8h.html#a90e2c7a75f6c3589dcace96b0f0c1459">bmp280_regs.h</a>
+</li>
+<li>BMP280_FORCED_MODE
+: <a class="el" href="bmp280__regs_8h.html#ac8bf60935bb1223191290b73f046dc72">bmp280_regs.h</a>
+</li>
+<li>BMP280_I2C_ADDR
+: <a class="el" href="bmp280__regs_8h.html#aa58a90f8c2ec9ac45d8b345f91fdfab1">bmp280_regs.h</a>
+</li>
+<li>BMP280_I2C_ADDR_ALT
+: <a class="el" href="bmp280__regs_8h.html#a20b706d242bb4db2efe001d76042dc03">bmp280_regs.h</a>
+</li>
+<li>bmp280_i2c_event()
+: <a class="el" href="bmp280__i2c_8h.html#a0bf25b8fdcaf97cc1fa848c8ad154c1f">bmp280_i2c.h</a>
+, <a class="el" href="bmp280__i2c_8c.html#a0bf25b8fdcaf97cc1fa848c8ad154c1f">bmp280_i2c.c</a>
+</li>
+<li>bmp280_i2c_init()
+: <a class="el" href="bmp280__i2c_8c.html#adf20463416e18af3aee2731ca0482754">bmp280_i2c.c</a>
+, <a class="el" href="bmp280__i2c_8h.html#adf20463416e18af3aee2731ca0482754">bmp280_i2c.h</a>
+</li>
+<li>bmp280_i2c_periodic()
+: <a class="el" href="bmp280__i2c_8c.html#a1f96ff1b8b127db0e4e4a683d28e2f4e">bmp280_i2c.c</a>
+, <a class="el" href="bmp280__i2c_8h.html#a1f96ff1b8b127db0e4e4a683d28e2f4e">bmp280_i2c.h</a>
+</li>
+<li>bmp280_i2c_read_eeprom_calib()
+: <a class="el" href="bmp280__i2c_8h.html#ae39ba85c2cc4e3bbd4f807231f2dbd5e">bmp280_i2c.h</a>
+</li>
+<li>BMP280_ID_NB
+: <a class="el" href="bmp280__regs_8h.html#ad0da59256415ecd4f284c87b80ad770f">bmp280_regs.h</a>
+</li>
+<li>BMP280_IIR_FILTER_COEFF_1
+: <a class="el" href="bmp280__regs_8h.html#af13d07ce0734177d7ffcf744d4c26c55">bmp280_regs.h</a>
+</li>
+<li>BMP280_IIR_FILTER_COEFF_16
+: <a class="el" href="bmp280__regs_8h.html#a3889aed8b488702178c2baf65c4dcf8d">bmp280_regs.h</a>
+</li>
+<li>BMP280_IIR_FILTER_COEFF_2
+: <a class="el" href="bmp280__regs_8h.html#abe7ab4e84bfa9e8a864a7998ac60fbd1">bmp280_regs.h</a>
+</li>
+<li>BMP280_IIR_FILTER_COEFF_4
+: <a class="el" href="bmp280__regs_8h.html#a0fdcd205077caeacc2400a542f5db7f4">bmp280_regs.h</a>
+</li>
+<li>BMP280_IIR_FILTER_COEFF_8
+: <a class="el" href="bmp280__regs_8h.html#a79607bffccd31b1890ae90c27bf65336">bmp280_regs.h</a>
+</li>
+<li>BMP280_INACTIVITY_1000_MS
+: <a class="el" href="bmp280__regs_8h.html#a8c50da7e47417ea3338d84ad1b48d62a">bmp280_regs.h</a>
+</li>
+<li>BMP280_INACTIVITY_125_MS
+: <a class="el" href="bmp280__regs_8h.html#a8406389d0574d29d9f84012566043cec">bmp280_regs.h</a>
+</li>
+<li>BMP280_INACTIVITY_2000_MS
+: <a class="el" href="bmp280__regs_8h.html#a1591941ec466dbbafed3bacaeeb9f311">bmp280_regs.h</a>
+</li>
+<li>BMP280_INACTIVITY_250_MS
+: <a class="el" href="bmp280__regs_8h.html#ac326da4c7d49da3822ddbeb32876a507">bmp280_regs.h</a>
+</li>
+<li>BMP280_INACTIVITY_4000_MS
+: <a class="el" href="bmp280__regs_8h.html#a48ceec3ce7dd2047cc37974e954499b6">bmp280_regs.h</a>
+</li>
+<li>BMP280_INACTIVITY_500_MS
+: <a class="el" href="bmp280__regs_8h.html#a7240c1d3ff778ef94047918b67d63cd6">bmp280_regs.h</a>
+</li>
+<li>BMP280_INACTIVITY_62_5_MS
+: <a class="el" href="bmp280__regs_8h.html#a5f00e9f4e0207cdfd33f41382b2d3332">bmp280_regs.h</a>
+</li>
+<li>BMP280_INACTIVITY_HALF_MS
+: <a class="el" href="bmp280__regs_8h.html#a8e0708a4c1e04d7c39a7385d57bbd42f">bmp280_regs.h</a>
+</li>
+<li>BMP280_NO_OVERSAMPLING_P
+: <a class="el" href="bmp280__regs_8h.html#a6c2ec70110017922c75127cd20d36f4a">bmp280_regs.h</a>
+</li>
+<li>BMP280_NO_OVERSAMPLING_T
+: <a class="el" href="bmp280__regs_8h.html#ac8689e09ea8b70b7b627120472f79b91">bmp280_regs.h</a>
+</li>
+<li>BMP280_NORMAL_MODE
+: <a class="el" href="bmp280__regs_8h.html#ab02b05fc4b72013ebe1f16dc7a7266a7">bmp280_regs.h</a>
+</li>
+<li>BMP280_NVRAM_COPY_BIT
+: <a class="el" href="bmp280__regs_8h.html#a8fc4da822a320c628eacee8907145c0a">bmp280_regs.h</a>
+</li>
+<li>BMP280_OVERSAMPLING_16X_P
+: <a class="el" href="bmp280__regs_8h.html#afb4f2547685f44c7c4847bf7b9e63f2e">bmp280_regs.h</a>
+</li>
+<li>BMP280_OVERSAMPLING_16X_T
+: <a class="el" href="bmp280__regs_8h.html#af7b2649ef900e3f04fd5f26e9c3a2d2b">bmp280_regs.h</a>
+</li>
+<li>BMP280_OVERSAMPLING_1X_P
+: <a class="el" href="bmp280__regs_8h.html#a88831fe2ef2e8377ddcecff5524fd515">bmp280_regs.h</a>
+</li>
+<li>BMP280_OVERSAMPLING_1X_T
+: <a class="el" href="bmp280__regs_8h.html#a033d2699d725d19ecffcc3d294921322">bmp280_regs.h</a>
+</li>
+<li>BMP280_OVERSAMPLING_2X_P
+: <a class="el" href="bmp280__regs_8h.html#aacd580da2820900133f876bbf71dd148">bmp280_regs.h</a>
+</li>
+<li>BMP280_OVERSAMPLING_2X_T
+: <a class="el" href="bmp280__regs_8h.html#af93a8a4abb4bb1039e7106fac7ef3130">bmp280_regs.h</a>
+</li>
+<li>BMP280_OVERSAMPLING_4X_P
+: <a class="el" href="bmp280__regs_8h.html#a97a5de2e6731d3ffb35d05ef5477df03">bmp280_regs.h</a>
+</li>
+<li>BMP280_OVERSAMPLING_4X_T
+: <a class="el" href="bmp280__regs_8h.html#aacd9c347a3c0e3c645f208d7383b29a8">bmp280_regs.h</a>
+</li>
+<li>BMP280_OVERSAMPLING_8X_P
+: <a class="el" href="bmp280__regs_8h.html#a5c479e19a8f2392f84b0e9cadfb9726d">bmp280_regs.h</a>
+</li>
+<li>BMP280_OVERSAMPLING_8X_T
+: <a class="el" href="bmp280__regs_8h.html#a881fc1ef841ab6d4f9ca06774a9ab73d">bmp280_regs.h</a>
+</li>
+<li>BMP280_P_DATA_LEN
+: <a class="el" href="bmp280__regs_8h.html#a197c5160c4e368a7bf12589d02ee63a0">bmp280_regs.h</a>
+</li>
+<li>BMP280_P_LSB_REG_ADDR
+: <a class="el" href="bmp280__regs_8h.html#a78001b9cdde31594f99b1c0e5e4f03b4">bmp280_regs.h</a>
+</li>
+<li>BMP280_P_MSB_REG_ADDR
+: <a class="el" href="bmp280__regs_8h.html#a1147390b35b754db99f1699bac185794">bmp280_regs.h</a>
+</li>
+<li>BMP280_P_T_DATA_LEN
+: <a class="el" href="bmp280__regs_8h.html#aaa13b707629e3d675901a0d9b595d3e4">bmp280_regs.h</a>
+</li>
+<li>BMP280_P_XLSB_REG_ADDR
+: <a class="el" href="bmp280__regs_8h.html#a90f876b21c1da5505428b5ad98661669">bmp280_regs.h</a>
+</li>
+<li>BMP280_POWER_FORCED_MODE
+: <a class="el" href="bmp280__regs_8h.html#a34a0af1d0d70effa8de379737696e6d6">bmp280_regs.h</a>
+</li>
+<li>BMP280_POWER_NORMAL_MODE
+: <a class="el" href="bmp280__regs_8h.html#afcc7ce11f38e10e85066c8ac1447cb2c">bmp280_regs.h</a>
+</li>
+<li>BMP280_POWER_SLEEP_MODE
+: <a class="el" href="bmp280__regs_8h.html#a65097220f460f55a7ae50fdca7b805e6">bmp280_regs.h</a>
+</li>
+<li>BMP280_PRESS
+: <a class="el" href="bmp280__regs_8h.html#a79b7d118d1e032c80454240a751567b1">bmp280_regs.h</a>
+</li>
+<li>BMP280_RESET_REG_ADDR
+: <a class="el" href="bmp280__regs_8h.html#a8f3d1fbe4bbb38860687f081f0a3d214">bmp280_regs.h</a>
+</li>
+<li>BMP280_RESET_VAL
+: <a class="el" href="bmp280__regs_8h.html#a5c0bf19206c3fac48ca0dc28dd58ad16">bmp280_regs.h</a>
+</li>
+<li>BMP280_SLAVE_ADDR
+: <a class="el" href="baro__bmp280__i2c_8c.html#a017bdb603b1bfe335d71dda7775143ff">baro_bmp280_i2c.c</a>
+</li>
+<li>BMP280_SLEEP_MODE
+: <a class="el" href="bmp280__regs_8h.html#a7250f5095499e8f2ea850e785b69c083">bmp280_regs.h</a>
+</li>
+<li>BMP280_STATUS_CONFIGURE
+: <a class="el" href="bmp280__regs_8h.html#ac60204587a3d91102e594fa2496e1a7bac837fb6d26b67ae3b98dabb2d4d1bce0">bmp280_regs.h</a>
+</li>
+<li>BMP280_STATUS_GET_CALIB
+: <a class="el" href="bmp280__regs_8h.html#ac60204587a3d91102e594fa2496e1a7ba530fb563928463f3ab417ada171a2986">bmp280_regs.h</a>
+</li>
+<li>BMP280_STATUS_READ_DATA_REGS
+: <a class="el" href="bmp280__regs_8h.html#ac60204587a3d91102e594fa2496e1a7ba02d11bde0b8ca80e2916c7cd542cbc20">bmp280_regs.h</a>
+</li>
+<li>BMP280_STATUS_READ_STATUS_REG
+: <a class="el" href="bmp280__regs_8h.html#ac60204587a3d91102e594fa2496e1a7ba4cd22c1c42fc85c12cb390326ea17704">bmp280_regs.h</a>
+</li>
+<li>BMP280_STATUS_REG_ADDR
+: <a class="el" href="bmp280__regs_8h.html#ae321be660cf2e7db376c7d3df295df2b">bmp280_regs.h</a>
+</li>
+<li>BMP280_STATUS_UNINIT
+: <a class="el" href="bmp280__regs_8h.html#ac60204587a3d91102e594fa2496e1a7ba80877d3b7c7024970d2304e33cd344a3">bmp280_regs.h</a>
+</li>
+<li>BMP280_T_DATA_LEN
+: <a class="el" href="bmp280__regs_8h.html#a4a79954dae3bfa0e9405970f1e476803">bmp280_regs.h</a>
+</li>
+<li>BMP280_T_LSB_REG_ADDR
+: <a class="el" href="bmp280__regs_8h.html#a184fb54990017dd691a6c9a93c4e2e78">bmp280_regs.h</a>
+</li>
+<li>BMP280_T_MSB_REG_ADDR
+: <a class="el" href="bmp280__regs_8h.html#a6d27497e0dc707db3d98ad0dd849bf72">bmp280_regs.h</a>
+</li>
+<li>BMP280_T_XLSB_REG_ADDR
+: <a class="el" href="bmp280__regs_8h.html#a95f48e4d52664d8eec40e6a364a704fe">bmp280_regs.h</a>
+</li>
+<li>BMP280_TEMP
+: <a class="el" href="bmp280__regs_8h.html#af8138932cfa78536e6580796d6a4de10">bmp280_regs.h</a>
+</li>
+<li>Bmp280Status
+: <a class="el" href="bmp280__regs_8h.html#ac60204587a3d91102e594fa2496e1a7b">bmp280_regs.h</a>
 </li>
 <li>BMP3_ALL
 : <a class="el" href="bmp3__regs_8h.html#a8a9c33df65676b97da834864a63dd1f9">bmp3_regs.h</a>
@@ -2142,8 +2576,8 @@ $(document).ready(function(){initNavTree('globals_b.html','');});
 , <a class="el" href="bmp3__i2c_8h.html#a2d07788e11215a1993e7247f8da1bc18">bmp3_i2c.h</a>
 </li>
 <li>bmp3_i2c_init()
-: <a class="el" href="bmp3__i2c_8c.html#a86c922df4dd57ae7307de359c1d8bfb9">bmp3_i2c.c</a>
-, <a class="el" href="bmp3__i2c_8h.html#a86c922df4dd57ae7307de359c1d8bfb9">bmp3_i2c.h</a>
+: <a class="el" href="bmp3__i2c_8h.html#a86c922df4dd57ae7307de359c1d8bfb9">bmp3_i2c.h</a>
+, <a class="el" href="bmp3__i2c_8c.html#a86c922df4dd57ae7307de359c1d8bfb9">bmp3_i2c.c</a>
 </li>
 <li>bmp3_i2c_periodic()
 : <a class="el" href="bmp3__i2c_8c.html#a7d28435e54d38c62a58d078c08eed5bf">bmp3_i2c.c</a>
@@ -2355,11 +2789,14 @@ $(document).ready(function(){initNavTree('globals_b.html','');});
 : <a class="el" href="bebop_8h.html#a318522acd53f9093b0b51553ac2cd96c">bebop.h</a>
 </li>
 <li>BOARD_CHIMERA
-: <a class="el" href="chimera_8h.html#a380bee891ec2d53ab42ee637b0d9aa47">chimera.h</a>
-, <a class="el" href="chimera_2chibios_2v1_80_2board_8h.html#a380bee891ec2d53ab42ee637b0d9aa47">board.h</a>
+: <a class="el" href="chimera_2chibios_2v1_80_2board_8h.html#a380bee891ec2d53ab42ee637b0d9aa47">board.h</a>
+, <a class="el" href="chimera_8h.html#a380bee891ec2d53ab42ee637b0d9aa47">chimera.h</a>
 </li>
 <li>BOARD_CJMCU
 : <a class="el" href="cjmcu_8h.html#ac0317b07ed4e221518a953468e8595df">cjmcu.h</a>
+</li>
+<li>BOARD_CRAZYBEE_F4_V1
+: <a class="el" href="crazybee__f4__1_80_8h.html#a3b1677288e2547d76434eeeed3d55378">crazybee_f4_1.0.h</a>
 </li>
 <li>BOARD_CRAZYFLIE
 : <a class="el" href="crazyflie_8h.html#aeb333eacf2917ece1d40450c2d3a7068">crazyflie.h</a>
@@ -2371,14 +2808,12 @@ $(document).ready(function(){initNavTree('globals_b.html','');});
 : <a class="el" href="elle0__common_8h.html#a090abba46e4f2f928311741c330230a3">elle0_common.h</a>
 </li>
 <li>board_init()
-: <a class="el" href="group__mcu__periph.html#ga916f2adc2080b4fe88034086d107a8dc">board.c</a>
+: <a class="el" href="group__mcu__periph.html#ga916f2adc2080b4fe88034086d107a8dc">mcu.c</a>
 , <a class="el" href="group__mcu__periph.html#ga916f2adc2080b4fe88034086d107a8dc">mcu.h</a>
-, <a class="el" href="group__mcu__periph.html#ga916f2adc2080b4fe88034086d107a8dc">mcu.c</a>
 , <a class="el" href="group__mcu__periph.html#ga916f2adc2080b4fe88034086d107a8dc">board.c</a>
 </li>
 <li>board_init2()
 : <a class="el" href="group__mcu__periph.html#gaf8669c6ba2d12460cf1172edd1a5e4a3">mcu.c</a>
-, <a class="el" href="group__mcu__periph.html#gaf8669c6ba2d12460cf1172edd1a5e4a3">board.c</a>
 , <a class="el" href="group__mcu__periph.html#gaf8669c6ba2d12460cf1172edd1a5e4a3">mcu.h</a>
 , <a class="el" href="group__mcu__periph.html#gaf8669c6ba2d12460cf1172edd1a5e4a3">board.c</a>
 </li>
@@ -2405,11 +2840,24 @@ $(document).ready(function(){initNavTree('globals_b.html','');});
 <li>BOARD_LISA_S
 : <a class="el" href="lisa__s__1_80_8h.html#a09c38bb059efc5446b99a7160bb92254">lisa_s_1.0.h</a>
 </li>
+<li>BOARD_MATEK_F405_WING
+: <a class="el" href="matek__f405__wing__v1_8h.html#a79e8ee0f49a5c6d33ee53128d2c64fdb">matek_f405_wing_v1.h</a>
+</li>
+<li>BOARD_MATEK_F765_WING
+: <a class="el" href="matekF765-WING_8h.html#adcd14aca92d7d5616a190e1c363c29bd">matekF765-WING.h</a>
+</li>
+<li>BOARD_MATEKF765_WING
+: <a class="el" href="mateksys_2F765-WING_2board_8h.html#aaa1cbbc0a7574c614aef0f3b8c5400cc">board.h</a>
+</li>
 <li>BOARD_NAME
-: <a class="el" href="px4fmu_2chibios_2v5_80_2board_8h.html#a02581754b212d533d96cde56c8145c9b">board.h</a>
+: <a class="el" href="nucleo_2144__f767zi_2board_8h.html#a02581754b212d533d96cde56c8145c9b">board.h</a>
 </li>
 <li>BOARD_NAZE32
 : <a class="el" href="naze32__common_8h.html#aa154494d57f96a56b05a33d4af8ea132">naze32_common.h</a>
+</li>
+<li>BOARD_NUCLEO144_F767ZI
+: <a class="el" href="nucleo144__f767zi_8h.html#aa2cba51a641c42207ffeab4679d63cbe">nucleo144_f767zi.h</a>
+, <a class="el" href="nucleo_2144__f767zi_2board_8h.html#aa2cba51a641c42207ffeab4679d63cbe">board.h</a>
 </li>
 <li>BOARD_OPA_AP
 : <a class="el" href="opa__ap__1_80_8h.html#a79346b769e18041fe740272f7e71f7b9">opa_ap_1.0.h</a>
@@ -2418,15 +2866,13 @@ $(document).ready(function(){initNavTree('globals_b.html','');});
 : <a class="el" href="opa__ftd__1_80_8h.html#a53a97ed7cf029107941f36f5b233edf9">opa_ftd_1.0.h</a>
 </li>
 <li>BOARD_PX4FMU
-: <a class="el" href="px4fmu_2chibios_2v5_80_2board_8h.html#a5f22007b228fd82094127a698cd0f243">board.h</a>
-, <a class="el" href="v4_80_2px4fmu_8h.html#a5f22007b228fd82094127a698cd0f243">px4fmu.h</a>
-, <a class="el" href="px4fmu__1_87_8h.html#a5f22007b228fd82094127a698cd0f243">px4fmu_1.7.h</a>
-, <a class="el" href="v5_80_2px4fmu_8h.html#a5f22007b228fd82094127a698cd0f243">px4fmu.h</a>
+: <a class="el" href="px4fmu__1_87_8h.html#a5f22007b228fd82094127a698cd0f243">px4fmu_1.7.h</a>
 , <a class="el" href="px4fmu_2chibios_2v4_80_2board_8h.html#a5f22007b228fd82094127a698cd0f243">board.h</a>
+, <a class="el" href="v4_80_2px4fmu_8h.html#a5f22007b228fd82094127a698cd0f243">px4fmu.h</a>
 </li>
 <li>BOARD_PX4FMU_v2
-: <a class="el" href="px4fmu__2_84_8h.html#a1d9414f7945382146f40ebd4f406b373">px4fmu_2.4.h</a>
-, <a class="el" href="px4fmu_2chibios_2v2_84_2board_8h.html#a1d9414f7945382146f40ebd4f406b373">board.h</a>
+: <a class="el" href="px4fmu_2chibios_2v2_84_2board_8h.html#a1d9414f7945382146f40ebd4f406b373">board.h</a>
+, <a class="el" href="px4fmu__2_84_8h.html#a1d9414f7945382146f40ebd4f406b373">px4fmu_2.4.h</a>
 </li>
 <li>BOARD_PX4FMU_V4
 : <a class="el" href="px4fmu__4_80_8h.html#a726d74adb2ac8c58c975fb1ff6322ea1">px4fmu_4.0.h</a>
@@ -2443,44 +2889,32 @@ $(document).ready(function(){initNavTree('globals_b.html','');});
 <li>BOARD_ST_CRAZYFLIE
 : <a class="el" href="crazyflie_2chibios_2v2_81_2board_8h.html#ae15d10244b0f0882fafb4fc44868e027">board.h</a>
 </li>
-<li>BOARD_ST_STM32373C_XVERT
-: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#a0308d86678f4f22813b1071174530641">board.h</a>
-</li>
-<li>BOARD_ST_STM32F3_DISCOVERY
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a562f661426f4df26f62ddf1d9d799b21">board.h</a>
-</li>
-<li>BOARD_ST_STM32F4_ECU
-: <a class="el" href="vms__ecu_2chibios_2v1_80_2board_8h.html#a861760e8fe95d0e4f360d53c2956fdd9">board.h</a>
-</li>
 <li>BOARD_ST_STM32F4_LISA
 : <a class="el" href="lisa__mx_2chibios_2v2_81_2board_8h.html#ab07241acda4581e4445d8c3ed1903c4e">board.h</a>
-</li>
-<li>BOARD_STM32F4_DISCOVERY
-: <a class="el" href="stm32f4__discovery_8h.html#a31e89368715b7c18ef4f4dfb6cf5f0ba">stm32f4_discovery.h</a>
 </li>
 <li>BOARD_SWING
 : <a class="el" href="swing_8h.html#a76ebf5bbee85d331327408c3da20838a">swing.h</a>
 </li>
 <li>BOARD_TAWAKI
-: <a class="el" href="tawaki_8h.html#af1e83b5f5dd84246b52f12166fc0db83">tawaki.h</a>
-, <a class="el" href="tawaki_2chibios_2v1_80_2board_8h.html#af1e83b5f5dd84246b52f12166fc0db83">board.h</a>
+: <a class="el" href="tawaki_2chibios_2v1_80_2board_8h.html#af1e83b5f5dd84246b52f12166fc0db83">board.h</a>
+, <a class="el" href="tawaki_8h.html#af1e83b5f5dd84246b52f12166fc0db83">tawaki.h</a>
 </li>
 <li>boardInit()
-: <a class="el" href="lia_2chibios_2v1_81_2board_8h.html#a48edc646a1de1ba488bbe7d786df9bae">board.h</a>
-, <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8c.html#a48edc646a1de1ba488bbe7d786df9bae">board.c</a>
-, <a class="el" href="px4fmu_2chibios_2v2_84_2board_8h.html#a48edc646a1de1ba488bbe7d786df9bae">board.h</a>
+: <a class="el" href="px4fmu_2chibios_2v2_84_2board_8h.html#a48edc646a1de1ba488bbe7d786df9bae">board.h</a>
 , <a class="el" href="lia_2chibios_2v1_81_2board_8c.html#a48edc646a1de1ba488bbe7d786df9bae">board.c</a>
-, <a class="el" href="crazyflie_2chibios_2v2_81_2board_8h.html#a48edc646a1de1ba488bbe7d786df9bae">board.h</a>
-, <a class="el" href="apogee_2chibios_2v1_80_2board_8c.html#a48edc646a1de1ba488bbe7d786df9bae">board.c</a>
-, <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a48edc646a1de1ba488bbe7d786df9bae">board.h</a>
-, <a class="el" href="lisa__mx_2chibios_2v2_81_2board_8c.html#a48edc646a1de1ba488bbe7d786df9bae">board.c</a>
 , <a class="el" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a48edc646a1de1ba488bbe7d786df9bae">board.h</a>
+, <a class="el" href="tawaki_2chibios_2common_2board_8c.html#a48edc646a1de1ba488bbe7d786df9bae">board.c</a>
+, <a class="el" href="crazyflie_2chibios_2v2_81_2board_8h.html#a48edc646a1de1ba488bbe7d786df9bae">board.h</a>
+, <a class="el" href="crazyflie_2chibios_2v2_81_2board_8c.html#a48edc646a1de1ba488bbe7d786df9bae">board.c</a>
+, <a class="el" href="mateksys_2F765-WING_2board_8h.html#a48edc646a1de1ba488bbe7d786df9bae">board.h</a>
+, <a class="el" href="nucleo_2144__f767zi_2board_8c.html#a48edc646a1de1ba488bbe7d786df9bae">board.c</a>
+, <a class="el" href="px4fmu_2chibios_2v4_80_2board_8h.html#a48edc646a1de1ba488bbe7d786df9bae">board.h</a>
 , <a class="el" href="px4fmu_2chibios_2v4_80_2board_8c.html#a48edc646a1de1ba488bbe7d786df9bae">board.c</a>
-, <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a48edc646a1de1ba488bbe7d786df9bae">board.h</a>
-, <a class="el" href="xvert_2chibios_2v1_80_2board_8c.html#a48edc646a1de1ba488bbe7d786df9bae">board.c</a>
 , <a class="el" href="tawaki_2chibios_2v1_80_2board_8h.html#a48edc646a1de1ba488bbe7d786df9bae">board.h</a>
-, <a class="el" href="tawaki_2chibios_2v1_80_2board_8c.html#a48edc646a1de1ba488bbe7d786df9bae">board.c</a>
-, <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#a48edc646a1de1ba488bbe7d786df9bae">board.h</a>
+, <a class="el" href="apogee_2chibios_2v1_80_2board_8c.html#a48edc646a1de1ba488bbe7d786df9bae">board.c</a>
+, <a class="el" href="nucleo_2144__f767zi_2board_8h.html#a48edc646a1de1ba488bbe7d786df9bae">board.h</a>
+, <a class="el" href="px4fmu_2chibios_2v2_84_2board_8c.html#a48edc646a1de1ba488bbe7d786df9bae">board.c</a>
+, <a class="el" href="tawaki_2chibios_2v1_81_2board_8h.html#a48edc646a1de1ba488bbe7d786df9bae">board.h</a>
 </li>
 <li>body_accel_f
 : <a class="el" href="stabilization__indi_8c.html#a8681b79f205fa4744fcc2dbb1903703f">stabilization_indi.c</a>
@@ -2489,53 +2923,53 @@ $(document).ready(function(){initNavTree('globals_b.html','');});
 : <a class="el" href="stabilization__attitude__quat__float_8c.html#ac090c83a4f182c5061606cfbe13ff623">stabilization_attitude_quat_float.c</a>
 </li>
 <li>body_to_cam
-: <a class="el" href="opticflow__calculator_8c.html#a8ad74d62eb78612bfe023e762991f32a">opticflow_calculator.c</a>
+: <a class="el" href="opticflow__calculator_8c.html#a2e97303f21ad28dac214d307037572bb">opticflow_calculator.c</a>
 </li>
 <li>body_to_imu
 : <a class="el" href="ins__alt__float_8c.html#a755effd49991d996e4703451d0edc293">ins_alt_float.c</a>
 , <a class="el" href="ins__gps__passthrough_8c.html#a755effd49991d996e4703451d0edc293">ins_gps_passthrough.c</a>
 </li>
 <li>body_to_imu_cb()
-: <a class="el" href="ins__mekf__wind__wrapper_8c.html#aebafed20ba923acb949adb335ab7a793">ins_mekf_wind_wrapper.c</a>
-, <a class="el" href="ins__alt__float_8c.html#ab5f6300c213088a4ea0598baafb5e736">ins_alt_float.c</a>
+: <a class="el" href="ins__skeleton_8c.html#ab5f6300c213088a4ea0598baafb5e736">ins_skeleton.c</a>
+, <a class="el" href="ins__mekf__wind__wrapper_8c.html#aebafed20ba923acb949adb335ab7a793">ins_mekf_wind_wrapper.c</a>
+, <a class="el" href="ins__float__invariant__wrapper_8c.html#ab5f6300c213088a4ea0598baafb5e736">ins_float_invariant_wrapper.c</a>
+, <a class="el" href="energy__ctrl_8c.html#ab5f6300c213088a4ea0598baafb5e736">energy_ctrl.c</a>
+, <a class="el" href="ahrs__madgwick__wrapper_8c.html#ab5f6300c213088a4ea0598baafb5e736">ahrs_madgwick_wrapper.c</a>
 , <a class="el" href="ahrs__float__cmpl__wrapper_8c.html#ab5f6300c213088a4ea0598baafb5e736">ahrs_float_cmpl_wrapper.c</a>
 , <a class="el" href="ahrs__float__dcm__wrapper_8c.html#ab5f6300c213088a4ea0598baafb5e736">ahrs_float_dcm_wrapper.c</a>
-, <a class="el" href="energy__ctrl_8c.html#ab5f6300c213088a4ea0598baafb5e736">energy_ctrl.c</a>
+, <a class="el" href="ins__gps__passthrough_8c.html#ab5f6300c213088a4ea0598baafb5e736">ins_gps_passthrough.c</a>
 , <a class="el" href="ahrs__int__cmpl__euler__wrapper_8c.html#ab5f6300c213088a4ea0598baafb5e736">ahrs_int_cmpl_euler_wrapper.c</a>
+, <a class="el" href="ahrs__int__cmpl__quat__wrapper_8c.html#ab5f6300c213088a4ea0598baafb5e736">ahrs_int_cmpl_quat_wrapper.c</a>
 , <a class="el" href="ins__ekf2_8cpp.html#ab5f6300c213088a4ea0598baafb5e736">ins_ekf2.cpp</a>
 , <a class="el" href="ahrs__float__invariant__wrapper_8c.html#ab5f6300c213088a4ea0598baafb5e736">ahrs_float_invariant_wrapper.c</a>
-, <a class="el" href="ins__float__invariant__wrapper_8c.html#ab5f6300c213088a4ea0598baafb5e736">ins_float_invariant_wrapper.c</a>
-, <a class="el" href="ins__gps__passthrough_8c.html#ab5f6300c213088a4ea0598baafb5e736">ins_gps_passthrough.c</a>
+, <a class="el" href="ins__alt__float_8c.html#ab5f6300c213088a4ea0598baafb5e736">ins_alt_float.c</a>
 , <a class="el" href="ahrs__float__mlkf__wrapper_8c.html#ab5f6300c213088a4ea0598baafb5e736">ahrs_float_mlkf_wrapper.c</a>
-, <a class="el" href="ahrs__int__cmpl__quat__wrapper_8c.html#ab5f6300c213088a4ea0598baafb5e736">ahrs_int_cmpl_quat_wrapper.c</a>
-, <a class="el" href="ins__skeleton_8c.html#ab5f6300c213088a4ea0598baafb5e736">ins_skeleton.c</a>
-, <a class="el" href="ahrs__madgwick__wrapper_8c.html#ab5f6300c213088a4ea0598baafb5e736">ahrs_madgwick_wrapper.c</a>
 </li>
 <li>body_to_imu_ev
-: <a class="el" href="ahrs__int__cmpl__euler__wrapper_8c.html#a1f7208107f1a5edfea2b32e570ad602d">ahrs_int_cmpl_euler_wrapper.c</a>
+: <a class="el" href="ins__alt__float_8c.html#a1f7208107f1a5edfea2b32e570ad602d">ins_alt_float.c</a>
+, <a class="el" href="ahrs__int__cmpl__quat__wrapper_8c.html#a1f7208107f1a5edfea2b32e570ad602d">ahrs_int_cmpl_quat_wrapper.c</a>
+, <a class="el" href="ins__ekf2_8cpp.html#a1f7208107f1a5edfea2b32e570ad602d">ins_ekf2.cpp</a>
+, <a class="el" href="ins__skeleton_8c.html#a1f7208107f1a5edfea2b32e570ad602d">ins_skeleton.c</a>
+, <a class="el" href="ins__float__invariant__wrapper_8c.html#a1f7208107f1a5edfea2b32e570ad602d">ins_float_invariant_wrapper.c</a>
+, <a class="el" href="ahrs__float__invariant__wrapper_8c.html#a1f7208107f1a5edfea2b32e570ad602d">ahrs_float_invariant_wrapper.c</a>
+, <a class="el" href="ahrs__float__cmpl__wrapper_8c.html#a1f7208107f1a5edfea2b32e570ad602d">ahrs_float_cmpl_wrapper.c</a>
+, <a class="el" href="ins__mekf__wind__wrapper_8c.html#a1f7208107f1a5edfea2b32e570ad602d">ins_mekf_wind_wrapper.c</a>
+, <a class="el" href="ahrs__int__cmpl__euler__wrapper_8c.html#a1f7208107f1a5edfea2b32e570ad602d">ahrs_int_cmpl_euler_wrapper.c</a>
+, <a class="el" href="ins__gps__passthrough_8c.html#a1f7208107f1a5edfea2b32e570ad602d">ins_gps_passthrough.c</a>
 , <a class="el" href="ahrs__float__dcm__wrapper_8c.html#a1f7208107f1a5edfea2b32e570ad602d">ahrs_float_dcm_wrapper.c</a>
 , <a class="el" href="energy__ctrl_8c.html#a1f7208107f1a5edfea2b32e570ad602d">energy_ctrl.c</a>
-, <a class="el" href="ahrs__float__cmpl__wrapper_8c.html#a1f7208107f1a5edfea2b32e570ad602d">ahrs_float_cmpl_wrapper.c</a>
 , <a class="el" href="ahrs__float__mlkf__wrapper_8c.html#a1f7208107f1a5edfea2b32e570ad602d">ahrs_float_mlkf_wrapper.c</a>
-, <a class="el" href="ahrs__float__invariant__wrapper_8c.html#a1f7208107f1a5edfea2b32e570ad602d">ahrs_float_invariant_wrapper.c</a>
-, <a class="el" href="ins__ekf2_8cpp.html#a1f7208107f1a5edfea2b32e570ad602d">ins_ekf2.cpp</a>
 , <a class="el" href="ahrs__madgwick__wrapper_8c.html#a1f7208107f1a5edfea2b32e570ad602d">ahrs_madgwick_wrapper.c</a>
-, <a class="el" href="ins__mekf__wind__wrapper_8c.html#a1f7208107f1a5edfea2b32e570ad602d">ins_mekf_wind_wrapper.c</a>
-, <a class="el" href="ins__gps__passthrough_8c.html#a1f7208107f1a5edfea2b32e570ad602d">ins_gps_passthrough.c</a>
-, <a class="el" href="ins__skeleton_8c.html#a1f7208107f1a5edfea2b32e570ad602d">ins_skeleton.c</a>
-, <a class="el" href="ahrs__int__cmpl__quat__wrapper_8c.html#a1f7208107f1a5edfea2b32e570ad602d">ahrs_int_cmpl_quat_wrapper.c</a>
-, <a class="el" href="ins__alt__float_8c.html#a1f7208107f1a5edfea2b32e570ad602d">ins_alt_float.c</a>
-, <a class="el" href="ins__float__invariant__wrapper_8c.html#a1f7208107f1a5edfea2b32e570ad602d">ins_float_invariant_wrapper.c</a>
 </li>
 <li>boolean
-: <a class="el" href="inttypes_8h.html#a7c6368b321bd9acd0149b030bb8275ed">inttypes.h</a>
-, <a class="el" href="types_8h.html#a7c6368b321bd9acd0149b030bb8275ed">types.h</a>
+: <a class="el" href="types_8h.html#a7c6368b321bd9acd0149b030bb8275ed">types.h</a>
+, <a class="el" href="inttypes_8h.html#a7c6368b321bd9acd0149b030bb8275ed">inttypes.h</a>
 </li>
 <li>boolean_T
 : <a class="el" href="rtwtypes_8h.html#a3f14692b9a04d8211058e2bfc777a9fc">rtwtypes.h</a>
 </li>
 <li>BOOT1
-: <a class="el" href="px4fmu_2chibios_2v4_80_2board_8h.html#acb03234966d1b045245e028326d2e0b3">board.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#acb03234966d1b045245e028326d2e0b3">board.h</a>
 </li>
 <li>BOOT1_PORT
 : <a class="el" href="crazyflie_2chibios_2v2_81_2board_8h.html#acefc565e5e08c7bc9387a49bbfc29715">board.h</a>
@@ -2575,22 +3009,22 @@ $(document).ready(function(){initNavTree('globals_b.html','');});
 : <a class="el" href="booz__pwm__arch_8h.html#a67bd835310f6970a88ede1324e0ac585">booz_pwm_arch.h</a>
 </li>
 <li>border_height
-: <a class="el" href="textons_8c.html#ad239f51eb3b581eb4c76a6fcb7f92e2f">textons.c</a>
-, <a class="el" href="textons_8h.html#ad239f51eb3b581eb4c76a6fcb7f92e2f">textons.h</a>
+: <a class="el" href="textons_8h.html#ad239f51eb3b581eb4c76a6fcb7f92e2f">textons.h</a>
+, <a class="el" href="textons_8c.html#ad239f51eb3b581eb4c76a6fcb7f92e2f">textons.c</a>
 </li>
 <li>border_width
-: <a class="el" href="textons_8c.html#acc84bbf7292bdc04ee8fc730f6276d2a">textons.c</a>
-, <a class="el" href="textons_8h.html#acc84bbf7292bdc04ee8fc730f6276d2a">textons.h</a>
+: <a class="el" href="textons_8h.html#acc84bbf7292bdc04ee8fc730f6276d2a">textons.h</a>
+, <a class="el" href="textons_8c.html#acc84bbf7292bdc04ee8fc730f6276d2a">textons.c</a>
 </li>
 <li>bottom_camera
-: <a class="el" href="mt9v117_8c.html#aebe228d13ad2e4e0c8528d945ad76a82">mt9v117.c</a>
-, <a class="el" href="bebop_8h.html#aebe228d13ad2e4e0c8528d945ad76a82">bebop.h</a>
+: <a class="el" href="disco_8h.html#aebe228d13ad2e4e0c8528d945ad76a82">disco.h</a>
 , <a class="el" href="video__thread__nps_8c.html#aebe228d13ad2e4e0c8528d945ad76a82">video_thread_nps.c</a>
-, <a class="el" href="pc__sim_8h.html#aebe228d13ad2e4e0c8528d945ad76a82">pc_sim.h</a>
 , <a class="el" href="mt9v117__nps_8c.html#a4f6ec70cccb53c205de6b69c246637c3">mt9v117_nps.c</a>
+, <a class="el" href="mt9v117_8c.html#aebe228d13ad2e4e0c8528d945ad76a82">mt9v117.c</a>
 , <a class="el" href="ardrone2_8h.html#aebe228d13ad2e4e0c8528d945ad76a82">ardrone2.h</a>
+, <a class="el" href="pc__sim_8h.html#aebe228d13ad2e4e0c8528d945ad76a82">pc_sim.h</a>
+, <a class="el" href="bebop_8h.html#aebe228d13ad2e4e0c8528d945ad76a82">bebop.h</a>
 , <a class="el" href="ardrone_2board_8c.html#aebe228d13ad2e4e0c8528d945ad76a82">board.c</a>
-, <a class="el" href="disco_8h.html#aebe228d13ad2e4e0c8528d945ad76a82">disco.h</a>
 </li>
 <li>BOUND
 : <a class="el" href="lpc21_2subsystems_2settings__arch_8c.html#aa3d3687532e25854c63dca906abf1032">settings_arch.c</a>
@@ -2633,6 +3067,9 @@ $(document).ready(function(){initNavTree('globals_b.html','');});
 </li>
 <li>BTN_ON_PIN
 : <a class="el" href="opa__ftd__1_80_8h.html#a4621a9598a17b5c9991140dce7a5508c">opa_ftd_1.0.h</a>
+</li>
+<li>BUF2INT
+: <a class="el" href="pca9685__i2c_8c.html#aef170f8765cb2f7edbb06af7856d1c3f">pca9685_i2c.c</a>
 </li>
 <li>buf_airspeed
 : <a class="el" href="airspeed__adc_8c.html#a5d4e0cd55e47c1b7572c5907d8e17da9">airspeed_adc.c</a>
@@ -2700,6 +3137,9 @@ $(document).ready(function(){initNavTree('globals_b.html','');});
 <li>buildDshotDmaBuffer()
 : <a class="el" href="esc__dshot_8c.html#aa50c8775d5f23ed2632d9e400885f731">esc_dshot.c</a>
 </li>
+<li>buildTelemetryFrame()
+: <a class="el" href="cc2500__frsky__x_8c.html#a9a6f7720d833f05ecb33317f516f1e7c">cc2500_frsky_x.c</a>
+</li>
 <li>BULK_IN_EP
 : <a class="el" href="lpc21_2usb__ser__hw_8c.html#a2b14747c794ad7a348cd918e9df57d36">usb_ser_hw.c</a>
 </li>
@@ -2742,14 +3182,27 @@ $(document).ready(function(){initNavTree('globals_b.html','');});
 <li>Butterworth2LowPass_int
 : <a class="el" href="low__pass__filter_8h.html#a95c2f4c4aad6babb08101b2950fc1917">low_pass_filter.h</a>
 </li>
+<li>BUTTON_GPIO
+: <a class="el" href="cc2500__settings_8c.html#adda64705ed47e4f6f43a72618e92282e">cc2500_settings.c</a>
+</li>
+<li>BUTTON_PIN
+: <a class="el" href="cc2500__settings_8c.html#a360fb747440d05085fc88e9268bb7b76">cc2500_settings.c</a>
+</li>
 <li>button_read()
 : <a class="el" href="swing_2board_8c.html#a3c9554b9bd623c5d98b6acbfb5ea0e5b">board.c</a>
+</li>
+<li>BUTTON_SAFETY_GPIO_PIN
+: <a class="el" href="px4fmu__4_80_8h.html#ab46537cf07579fcfdee659198ced22e5">px4fmu_4.0.h</a>
+</li>
+<li>BUTTON_SAFETY_GPIO_PORT
+: <a class="el" href="px4fmu__4_80_8h.html#ae8060b845988457d08a18c8efb24eb80">px4fmu_4.0.h</a>
 </li>
 <li>BUZZER_GPIO
 : <a class="el" href="hb__1_81_8h.html#a08a0ee9cbc67f32d977b57cfa32dab5a">hb_1.1.h</a>
 </li>
 <li>Bwls
-: <a class="el" href="stabilization__indi_8c.html#a1953a1d7093d5fe41c2a4361577a837a">stabilization_indi.c</a>
+: <a class="el" href="stabilization__indi_8h.html#a1953a1d7093d5fe41c2a4361577a837a">stabilization_indi.h</a>
+, <a class="el" href="stabilization__indi_8c.html#a1953a1d7093d5fe41c2a4361577a837a">stabilization_indi.c</a>
 </li>
 <li>byte
 : <a class="el" href="nps__fdm__crrcsim_8c.html#a71809484a26cd96c6abe839a0a8a289d">nps_fdm_crrcsim.c</a>
@@ -2766,7 +3219,7 @@ $(document).ready(function(){initNavTree('globals_b.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri May 15 2020 04:04:10 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:04:29 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -154,6 +154,8 @@ $(document).ready(function(){initNavTree('functions_vars_r.html','');});
 <li>r
 : <a class="el" href="group__math__algebra__double.html#a7900fc423e0731a60ec3b3a502cef75a">DoubleRates</a>
 , <a class="el" href="group__math__algebra__float.html#a75e3090314c4ad6edf12f7c08d9c5c0a">FloatRates</a>
+, <a class="el" href="gvf__parametric__2d__trefoil_8h.html#a9407248c017f7c195aebdd9e8ddaedb6">gvf_par_2d_tre_par</a>
+, <a class="el" href="gvf__parametric__3d__ellipse_8h.html#ac94af2817e4a5dceaec9f758914ef004">gvf_par_3d_ell_par</a>
 </li>
 <li>R
 : <a class="el" href="ins__mekf__wind_8cpp.html#aff8e057cd3b2ec30713a9cbbd6dc09be">InsMekfWindPrivate</a>
@@ -222,6 +224,9 @@ $(document).ready(function(){initNavTree('functions_vars_r.html','');});
 <li>r_va
 : <a class="el" href="wind__estimator_8h.html#a30d4140a84279d04c9d9d8c78ece4ab7">WindEstimator</a>
 </li>
+<li>r_w
+: <a class="el" href="nav__fish_8c.html#a0385c4a90d661f430d0ecaee1f6c61f1">NavFish</a>
+</li>
 <li>rad_per_px
 : <a class="el" href="pmw3901_8h.html#a5671dbc434443fd63baec641a5bdfd77">pmw3901_t</a>
 </li>
@@ -280,6 +285,7 @@ $(document).ready(function(){initNavTree('functions_vars_r.html','');});
 , <a class="el" href="stabilization__attitude__ref__quat__int_8h.html#a8a353ef8749316bf4378fc977eaec663">AttRefQuatInt</a>
 , <a class="el" href="imu__chimu_8h.html#a0a62dec0f8bc2b7633ba0699fac00510">CHIMU_sensor_data</a>
 , <a class="el" href="hmc58xx_8h.html#ac94b92110a59b8e349bc0e6fdee2e6c9">Hmc58xxConfig</a>
+, <a class="el" href="stabilization__indi__simple_8h.html#a84840ad49206401fc1f5ee95ba064f21">Indi_gains</a>
 , <a class="el" href="stabilization__indi__simple_8h.html#a161bb48f9d4f57f226f8c63b6b70a6f0">IndiEstimation</a>
 , <a class="el" href="stabilization__indi__simple_8h.html#ae552bb950f5f19036dd04b3b3b7509e6">IndiVariables</a>
 , <a class="el" href="lis302dl_8h.html#a93e37ac2c058099170f9fb09ab10388b">Lis302dlConfig</a>
@@ -300,20 +306,12 @@ $(document).ready(function(){initNavTree('functions_vars_r.html','');});
 <li>rate_dd
 : <a class="el" href="stabilization__indi__simple_8h.html#a701c67af1ddf7f0a80a22e6719c993a1">IndiEstimation</a>
 </li>
-<li>rate_p
-: <a class="el" href="stabilization__indi__simple_8h.html#a4c7ac4bace5ea8cef365d6f7572599e7">ReferenceSystem</a>
-</li>
-<li>rate_q
-: <a class="el" href="stabilization__indi__simple_8h.html#a7e76006f9551acfaada8b67bad046143">ReferenceSystem</a>
-</li>
-<li>rate_r
-: <a class="el" href="stabilization__indi__simple_8h.html#ab1290bd9adaf14c8fe53a7aa6430ca6f">ReferenceSystem</a>
-</li>
 <li>rate_status
 : <a class="el" href="group__state__rate.html#gaeae71089ee6e103c1f8ca1211cfaf039">State</a>
 </li>
 <li>rates
 : <a class="el" href="ahrs__madgwick_8h.html#a7a7cc12e020fe99d43c452dc36cd2432">AhrsMadgwick</a>
+, <a class="el" href="cc2500__compat_8h.html#a62973496fd2e12fa43aded63038b18dc">controlRateConfig_t</a>
 , <a class="el" href="UKF__Wind__Estimator_8h.html#abe9dd0551a1db9152024ce5d7afa70f7">ExtU</a>
 , <a class="el" href="ins__float__invariant_8h.html#ac8379cd7f1ff242335392e03c0926f19">inv_command</a>
 , <a class="el" href="ins__mekf__wind_8cpp.html#a6068edc217bb281f14b6f78e3b4a4263">MekfWindInputs</a>
@@ -328,9 +326,14 @@ $(document).ready(function(){initNavTree('functions_vars_r.html','');});
 <li>rates_sum
 : <a class="el" href="imu__krooz__memsic_8h.html#ae1d9ac5755161bf36144fff9ac2ebea9">ImuKrooz</a>
 </li>
+<li>ratio
+: <a class="el" href="gvf__parametric__2d__trefoil_8h.html#a420c1f7a829d214e74cb00c3d73a0154">gvf_par_2d_tre_par</a>
+</li>
 <li>raw
 : <a class="el" href="aoa__adc_8h.html#a70be9550d39e7ec42ce29760b6482762">Aoa_Adc</a>
 , <a class="el" href="aoa__pwm_8h.html#ae4402220d13d53d3ef4072ed99ffc49d">Aoa_Pwm</a>
+, <a class="el" href="sonar__pwm_8h.html#a8eff01fa758c171d1ac71e160552a1ff">SonarPwm</a>
+, <a class="el" href="cc2500__frsky__x_8c.html#a460953104b940716d790c8125e08e590">telemetrySequenceMarker_s</a>
 , <a class="el" href="teraranger__one_8h.html#aaa2a3aad8c5ec635e6c08ed410f5220a">TeraRanger</a>
 </li>
 <li>raw_data
@@ -339,19 +342,22 @@ $(document).ready(function(){initNavTree('functions_vars_r.html','');});
 <li>raw_dist
 : <a class="el" href="dw1000__arduino_8c.html#ae414ba62b7912d1fc39e18fed97326a3">DW1000</a>
 , <a class="el" href="tfmini_8h.html#a728227207b9ff0fef5272d0052e5c2f8">TFMini</a>
+, <a class="el" href="tfmini__i2c_8h.html#a87e06c515f4f2858ed821deef6595394">TFMiniI2C</a>
 </li>
 <li>raw_mode
 : <a class="el" href="mpl3115_8h.html#a810209da510549a841e257a24bb78f88">Mpl3115</a>
 , <a class="el" href="tfmini_8h.html#a6c9ddb41b27b666bc8327414c995a90b">TFMini</a>
 </li>
 <li>raw_pressure
-: <a class="el" href="bmp3__i2c_8h.html#ad3b29b4edab8feee9a651ae3c3330745">Bmp3_I2c</a>
+: <a class="el" href="bmp280__i2c_8h.html#afeaeb62f77c88edfed5f4de641a5026a">Bmp280_I2c</a>
+, <a class="el" href="bmp3__i2c_8h.html#ad3b29b4edab8feee9a651ae3c3330745">Bmp3_I2c</a>
 </li>
 <li>raw_strength
 : <a class="el" href="tfmini_8h.html#a8d5e95adc5af3bedd9b218d98a1e0a67">TFMini</a>
 </li>
 <li>raw_temperature
-: <a class="el" href="bmp3__i2c_8h.html#ad26f8e75b4b06a1ab031644d6e7c497a">Bmp3_I2c</a>
+: <a class="el" href="bmp280__i2c_8h.html#a3cdbb59147ea981c282767fe2d75a668">Bmp280_I2c</a>
+, <a class="el" href="bmp3__i2c_8h.html#ad26f8e75b4b06a1ab031644d6e7c497a">Bmp3_I2c</a>
 </li>
 <li>rawFrame
 : <a class="el" href="esc__dshot_8h.html#aa3ecaaae4a4c4a3ca6d5bbcf8771fe34">DshotPacket</a>
@@ -374,6 +380,12 @@ $(document).ready(function(){initNavTree('functions_vars_r.html','');});
 <li>rc_lost
 : <a class="el" href="sbus__common_8h.html#a69739eacc3b10dd9881e82bacf2770ba">Sbus</a>
 </li>
+<li>rc_pitch
+: <a class="el" href="ctrl__windtunnel_8c.html#a65036d24b101d0adebe8b55e84a2863c">ctrl_windtunnel_struct</a>
+</li>
+<li>rc_roll
+: <a class="el" href="ctrl__windtunnel_8c.html#a66d59d34d1455dd607190ca60ffe21e4">ctrl_windtunnel_struct</a>
+</li>
 <li>rc_script
 : <a class="el" href="nps__main_8h.html#a322863eb6efbf43868d3b3f3fa178d98">NpsMain</a>
 </li>
@@ -387,6 +399,9 @@ $(document).ready(function(){initNavTree('functions_vars_r.html','');});
 <li>rc_t
 : <a class="el" href="ctrl__module__outerloop__demo_8c.html#a456c94c12816e888ec7c301022ef3a17">ctrl_module_demo_struct</a>
 </li>
+<li>rc_throttle
+: <a class="el" href="ctrl__windtunnel_8c.html#aa61c1cb6efae778dd08b68198ff876c6">ctrl_windtunnel_struct</a>
+</li>
 <li>rc_values
 : <a class="el" href="subsystems_2datalink_2superbitrf_8h.html#af8aa7f7c28b40a25c912b5a020525957">SuperbitRF</a>
 </li>
@@ -396,11 +411,23 @@ $(document).ready(function(){initNavTree('functions_vars_r.html','');});
 <li>rc_y
 : <a class="el" href="ctrl__module__outerloop__demo_8c.html#a688f27f954aba5ac11aa294c7ee1e5cf">ctrl_module_demo_struct</a>
 </li>
+<li>rc_yaw
+: <a class="el" href="ctrl__windtunnel_8c.html#a2fc082d7df07b4fc4ff4481851a92150">ctrl_windtunnel_struct</a>
+</li>
 <li>rc_z
 : <a class="el" href="ctrl__module__outerloop__demo_8c.html#a86f8d5ff39d4d80c8ed85eff8cd9a502">ctrl_module_demo_struct</a>
 </li>
 <li>rcc_dma
 : <a class="el" href="stm32_2mcu__periph_2spi__arch_8c.html#ade736a9c1803485b22b5b004d08dfb6c">spi_periph_dma</a>
+</li>
+<li>rcFrameStatusFn
+: <a class="el" href="cc2500__rx_8h.html#a63edbb1fefc5cccea142d4be33d2a287">rxRuntimeConfig_s</a>
+</li>
+<li>rcProcessFrameFn
+: <a class="el" href="cc2500__rx_8h.html#ab767b137834b7596a79ce164a5b4c663">rxRuntimeConfig_s</a>
+</li>
+<li>rcReadRawFn
+: <a class="el" href="cc2500__rx_8h.html#ad9793138247af4fd9552f8170c5ed66b">rxRuntimeConfig_s</a>
 </li>
 <li>re
 : <a class="el" href="pprz__geodetic__float_8c.html#a77a6e028ddaf37c540fe22dad47f61c1">complex</a>
@@ -486,9 +513,6 @@ $(document).ready(function(){initNavTree('functions_vars_r.html','');});
 <li>reference
 : <a class="el" href="structIndiController__int.html#a053595e6dba820bac8537d74ed7c6a3a">IndiController_int</a>
 </li>
-<li>reference_acceleration
-: <a class="el" href="stabilization__indi__simple_8h.html#a05192c5a13ce84dd0ebf04ac349dd9cf">IndiVariables</a>
-</li>
 <li>RefStation
 : <a class="el" href="gps_8h.html#a6a5c8e5b6995940dbf460753aca9d68e">RtcmMan</a>
 </li>
@@ -561,6 +585,9 @@ $(document).ready(function(){initNavTree('functions_vars_r.html','');});
 <li>reply
 : <a class="el" href="gps__ubx__ucenter_8h.html#a6db8ada1beaedc227466750037aa6cf7">gps_ubx_ucenter_struct</a>
 </li>
+<li>report_cell_voltage
+: <a class="el" href="cc2500__settings_8h.html#aec1cdb4c445595b014f103f656f6f101">telemetryConfig_s</a>
+</li>
 <li>req
 : <a class="el" href="mavlink__decoder_8h.html#af380484caf041a7723bb17f04178f586">mavlink_transport</a>
 </li>
@@ -630,6 +657,9 @@ $(document).ready(function(){initNavTree('functions_vars_r.html','');});
 , <a class="el" href="nav__survey__polygon_8h.html#aa81c1d767c2a93400f3df8cf01f26b93">SurveyPolyAdv</a>
 , <a class="el" href="nav__survey__zamboni_8h.html#a750f3b25518c60fc654372bc2e0ef7ef">ZamboniSurvey</a>
 </li>
+<li>retransmissionRequested
+: <a class="el" href="cc2500__frsky__x_8c.html#a709f7b2376d9fd6a71b20d9fb360d86e">telemetrySequenceMarkerData_s</a>
+</li>
 <li>return_angle
 : <a class="el" href="nav__survey__polygon__gvf_8h.html#a493cdac06ff1f95bb8fdfffb4b0ea8dd">gvf_SurveyPolyAdv</a>
 , <a class="el" href="nav__survey__polygon_8h.html#a0ac83f7d8227575d91cece0a9b574518">SurveyPolyAdv</a>
@@ -658,8 +688,14 @@ $(document).ready(function(){initNavTree('functions_vars_r.html','');});
 <li>right_flap
 : <a class="el" href="flight__gear_8h.html#ac725935bd880986b53aa1efed3307240">FGNetFDM</a>
 </li>
+<li>ring_buf
+: <a class="el" href="microrl_8h.html#ac0135099e93540cd99172e2c2293ba7f">ring_history_t</a>
+</li>
 <li>ring_data
 : <a class="el" href="pose__history_8c.html#a4d07a41b516de0cf519f9ba73b7fd5b7">rotation_history_ring_buffer_t</a>
+</li>
+<li>ring_hist
+: <a class="el" href="structmicrorl__t.html#a3fe2afffc2bdb16e168fcacdc192e5e2">microrl_t</a>
 </li>
 <li>ring_index
 : <a class="el" href="pose__history_8c.html#ad68620a77d8a3d467094ae4f114182b2">rotation_history_ring_buffer_t</a>
@@ -680,7 +716,8 @@ $(document).ready(function(){initNavTree('functions_vars_r.html','');});
 : <a class="el" href="group__math__orientation__representation.html#ac3014e532f5ca710919668e1dd48c791">OrientationReps</a>
 </li>
 <li>roll
-: <a class="el" href="crtp_8h.html#a10f598910fe22691187653dbda03bd2c">crtp_commander</a>
+: <a class="el" href="cc2500__compat_8h.html#a996a214ef001d77bc7485641932954a0">attitude_values_t</a>
+, <a class="el" href="crtp_8h.html#a10f598910fe22691187653dbda03bd2c">crtp_commander</a>
 , <a class="el" href="infrared_8h.html#a14240b7cc3650b62e82d45af3082ed78">Infrared</a>
 , <a class="el" href="joystick_8h.html#a37d738c05aca156b3f7b12fc5a3a2b4c">Joystick</a>
 , <a class="el" href="nps__radio__control__joystick_8h.html#ae292d822bc3c21ee30006df37d7e225e">NpsJoystick</a>
@@ -706,6 +743,9 @@ $(document).ready(function(){initNavTree('functions_vars_r.html','');});
 </li>
 <li>rollback
 : <a class="el" href="hf__float_8h.html#a6042a5580f73a9e69d21573324255978">HfilterFloat</a>
+</li>
+<li>rotation
+: <a class="el" href="ctrl__windtunnel_8c.html#ad2000381b5e6e2e8f6f08d11ca189a54">ctrl_windtunnel_struct</a>
 </li>
 <li>route_ref
 : <a class="el" href="guidance__h__ref_8h.html#a3bf413150a2fcf3f4bdd2f82185eea88">GuidanceHRef</a>
@@ -773,6 +813,15 @@ $(document).ready(function(){initNavTree('functions_vars_r.html','');});
 <li>rssi
 : <a class="el" href="rssi_8h.html#a3350b1b148515a8749e174ba50a7123d">rssi_info_</a>
 , <a class="el" href="syslink__dl_8h.html#a166e1226c31bb09d5d0da8240e767c63">syslink_dl</a>
+</li>
+<li>rssi_channel
+: <a class="el" href="cc2500__settings_8h.html#a50bbac4beb27d371543e0ecab9bb7e24">rxConfig_s</a>
+</li>
+<li>rssi_src_frame_lpf_period
+: <a class="el" href="cc2500__settings_8h.html#a10e677159c55765cec6a006a8d551b7b">rxConfig_s</a>
+</li>
+<li>rssiA1
+: <a class="el" href="cc2500__frsky__x_8c.html#a382669dcbac08baa6c8fc401b7ccd06f">telemetryPayload_s</a>
 </li>
 <li>rtcm3_msg_callbacks_head
 : <a class="el" href="rtcm3_8h.html#ae5e507b1eaf9ee31bf431d5b4f550229">msg_state_t</a>
@@ -879,6 +928,9 @@ $(document).ready(function(){initNavTree('functions_vars_r.html','');});
 <li>rx_sem
 : <a class="el" href="chibios_2mcu__periph_2uart__arch_8c.html#a3111eb4617bafc0ca3984d501e60f277">SerialInit</a>
 </li>
+<li>rx_spi_protocol
+: <a class="el" href="cc2500__settings_8h.html#aa859953d232e7ac04da589f8924609c8">rxSpiConfig_s</a>
+</li>
 <li>rx_sr
 : <a class="el" href="lpcCAN_8h.html#a189ee653181bd6ddbe4da52544ad6b99">can_central_Regs_t</a>
 </li>
@@ -891,6 +943,15 @@ $(document).ready(function(){initNavTree('functions_vars_r.html','');});
 <li>rx_transport
 : <a class="el" href="subsystems_2datalink_2superbitrf_8h.html#ad381d21a499dac11cb3949a51605a8d5">SuperbitRF</a>
 </li>
+<li>rxNum
+: <a class="el" href="cc2500__settings_8h.html#af4fe8593717280e77ee0e1c56717c5ee">rxCc2500SpiConfig_s</a>
+</li>
+<li>rxProvider
+: <a class="el" href="cc2500__rx_8h.html#a2db527d839b2cbc3c4bfd97ccf6d6c31">rxRuntimeConfig_s</a>
+</li>
+<li>rxRefreshRate
+: <a class="el" href="cc2500__rx_8h.html#aa973d4a076ebeb1d616cb557c36fa9a0">rxRuntimeConfig_s</a>
+</li>
 <li>ry_lut
 : <a class="el" href="avi__isp__gamma__corrector_8h.html#ab6385c920bc65a25ccb6946ff760b7c9">avi_isp_gamma_corrector_ry_lut_regs</a>
 </li>
@@ -900,7 +961,7 @@ $(document).ready(function(){initNavTree('functions_vars_r.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri May 15 2020 04:04:08 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:04:27 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

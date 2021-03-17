@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -294,7 +294,7 @@ $(document).ready(function(){initNavTree('ms5611__spi_8c_source.html','');});
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;          <span class="comment">/* read prom data */</span></div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;          ms-&gt;<a class="code" href="ms5611__spi_8h.html#a203c6917d405615711f60245a0410086">data</a>.<a class="code" href="ms5611_8h.html#a9339741b3228b645469da793bd8ed717">c</a>[ms-&gt;<a class="code" href="ms5611__spi_8h.html#aa6993cfd83f06693c6cc58a2b6dd1342">prom_cnt</a>++] = (ms-&gt;<a class="code" href="ms5611__spi_8h.html#a5e59eb056cb6beebe8ef0c9c4ef8ff97">rx_buf</a>[1] &lt;&lt; 8) |</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;                                       ms-&gt;<a class="code" href="ms5611__spi_8h.html#a5e59eb056cb6beebe8ef0c9c4ef8ff97">rx_buf</a>[2];</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;          if (ms-&gt;<a class="code" href="ms5611__spi_8h.html#aa6993cfd83f06693c6cc58a2b6dd1342">prom_cnt</a> &lt; <a class="code" href="ms5611__regs_8h.html#a22f63e90af0ec7d29bff584215f56a8a">PROM_NB</a>) {</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;          <a class="code" href="e__identification__fr_8c.html#a92cffae21318c1d983c63f3afa2a8d87">if</a> (ms-&gt;<a class="code" href="ms5611__spi_8h.html#aa6993cfd83f06693c6cc58a2b6dd1342">prom_cnt</a> &lt; <a class="code" href="ms5611__regs_8h.html#a22f63e90af0ec7d29bff584215f56a8a">PROM_NB</a>) {</div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;            <span class="comment">/* get next prom data */</span></div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;            ms-&gt;<a class="code" href="ms5611__spi_8h.html#a091824db413eb26c20ea3c7f6aaff694">tx_buf</a>[0] = <a class="code" href="ms5611__regs_8h.html#ad807836603b80bcc5fe4d518d2a9e86b">MS5611_PROM_READ</a> | (ms-&gt;<a class="code" href="ms5611__spi_8h.html#aa6993cfd83f06693c6cc58a2b6dd1342">prom_cnt</a> &lt;&lt; 1);</div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;            <a class="code" href="group__spi.html#ga5d383931766cb373ebad0b8bc26d439d">spi_submit</a>(ms-&gt;<a class="code" href="ms5611__spi_8h.html#ac381942933d86255a7abe38fcef1ce28">spi_p</a>, &amp;(ms-&gt;<a class="code" href="ms5611__spi_8h.html#ac9198d857286e8fd2fbdfac49d492481">spi_trans</a>));</div>
@@ -331,6 +331,7 @@ $(document).ready(function(){initNavTree('ms5611__spi_8c_source.html','');});
 <div class="ttc" id="ms5611__spi_8h_html_ab4c6c2de49c518a7232c9a28e5cfaaae"><div class="ttname"><a href="ms5611__spi_8h.html#ab4c6c2de49c518a7232c9a28e5cfaaae">Ms5611_Spi::data_available</a></div><div class="ttdeci">volatile bool data_available</div><div class="ttdoc">data ready flag </div><div class="ttdef"><b>Definition:</b> <a href="ms5611__spi_8h_source.html#l00044">ms5611_spi.h:44</a></div></div>
 <div class="ttc" id="ms5611__spi_8h_html_a5e59eb056cb6beebe8ef0c9c4ef8ff97"><div class="ttname"><a href="ms5611__spi_8h.html#a5e59eb056cb6beebe8ef0c9c4ef8ff97">Ms5611_Spi::rx_buf</a></div><div class="ttdeci">volatile uint8_t rx_buf[4]</div><div class="ttdef"><b>Definition:</b> <a href="ms5611__spi_8h_source.html#l00040">ms5611_spi.h:40</a></div></div>
 <div class="ttc" id="group__spi_html_gga133152bd9fd803ef729bdfb9dc488baaa0819b3eda26f2666ff69ced98db281ce"><div class="ttname"><a href="group__spi.html#gga133152bd9fd803ef729bdfb9dc488baaa0819b3eda26f2666ff69ced98db281ce">SPICphaEdge2</a></div><div class="ttdoc">CPHA = 1. </div><div class="ttdef"><b>Definition:</b> <a href="spi_8h_source.html#l00075">spi.h:75</a></div></div>
+<div class="ttc" id="e__identification__fr_8c_html_a92cffae21318c1d983c63f3afa2a8d87"><div class="ttname"><a href="e__identification__fr_8c.html#a92cffae21318c1d983c63f3afa2a8d87">if</a></div><div class="ttdeci">if(GpsFixValid()&amp;&amp;e_identification_started)</div><div class="ttdef"><b>Definition:</b> <a href="e__identification__fr_8c_source.html#l00159">e_identification_fr.c:159</a></div></div>
 <div class="ttc" id="ms5611__spi_8h_html_a203c6917d405615711f60245a0410086"><div class="ttname"><a href="ms5611__spi_8h.html#a203c6917d405615711f60245a0410086">Ms5611_Spi::data</a></div><div class="ttdeci">struct Ms5611Data data</div><div class="ttdef"><b>Definition:</b> <a href="ms5611__spi_8h_source.html#l00045">ms5611_spi.h:45</a></div></div>
 <div class="ttc" id="ms5611__spi_8h_html_a091824db413eb26c20ea3c7f6aaff694"><div class="ttname"><a href="ms5611__spi_8h.html#a091824db413eb26c20ea3c7f6aaff694">Ms5611_Spi::tx_buf</a></div><div class="ttdeci">volatile uint8_t tx_buf[1]</div><div class="ttdef"><b>Definition:</b> <a href="ms5611__spi_8h_source.html#l00039">ms5611_spi.h:39</a></div></div>
 <div class="ttc" id="group__spi_html_ga5d383931766cb373ebad0b8bc26d439d"><div class="ttname"><a href="group__spi.html#ga5d383931766cb373ebad0b8bc26d439d">spi_submit</a></div><div class="ttdeci">bool spi_submit(struct spi_periph *p, struct spi_transaction *t)</div><div class="ttdoc">Submit SPI transaction. </div><div class="ttdef"><b>Definition:</b> <a href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00511">spi_arch.c:511</a></div></div>
@@ -389,7 +390,7 @@ $(document).ready(function(){initNavTree('ms5611__spi_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_0a48ba2c0a76794adfddddc873522f67.html">peripherals</a></li><li class="navelem"><a class="el" href="ms5611__spi_8c.html">ms5611_spi.c</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:02:32 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:02:44 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

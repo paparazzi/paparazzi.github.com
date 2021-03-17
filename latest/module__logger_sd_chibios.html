@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -108,13 +108,12 @@ $(document).ready(function(){initNavTree('module__logger_sd_chibios.html','');})
 <p>Based on ChibiOS HAL and Threads. If board allows it (ex: Apogee), the log file is automatically closed on power down. Files are written on a FAT file system using the FatFS library and can be accessed by using the autopilot as a mass storage (plug USB while the board is running).</p>
 <h1><a class="anchor" id="module_load_example__logger_sd_chibios"></a>
 Example for airframe file</h1>
-<p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;module name=&quot;tlsf&quot;/&gt;</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;&lt;module name=&quot;logger_sd_chibios&quot;&gt;</div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;  &lt;define name=&quot;SDLOG_START_DELAY&quot; unit=&quot;s&quot; value=&quot;30&quot; /&gt;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;  &lt;define name=&quot;SDLOG_AUTO_FLUSH_PERIOD&quot; unit=&quot;s&quot; value=&quot;10&quot; /&gt;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;  &lt;define name=&quot;SDLOG_CONTIGUOUS_STORAGE_MEM&quot; unit=&quot;Mo&quot; value=&quot;50&quot; /&gt;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;  &lt;configure name=&quot;SDLOG_LED&quot; value=&quot;none|num&quot; /&gt;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;&lt;/module&gt;</div>
+<p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;module name=&quot;logger_sd_chibios&quot;&gt;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;  &lt;define name=&quot;SDLOG_START_DELAY&quot; unit=&quot;s&quot; value=&quot;30&quot; /&gt;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;  &lt;define name=&quot;SDLOG_AUTO_FLUSH_PERIOD&quot; unit=&quot;s&quot; value=&quot;10&quot; /&gt;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;  &lt;define name=&quot;SDLOG_CONTIGUOUS_STORAGE_MEM&quot; unit=&quot;Mo&quot; value=&quot;50&quot; /&gt;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;  &lt;configure name=&quot;SDLOG_LED&quot; value=&quot;none|num&quot; /&gt;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;&lt;/module&gt;</div>
 </div><!-- fragment --> <h1><a class="anchor" id="configuration__logger_sd_chibios"></a>
 Module configuration options</h1>
 <h2><a class="anchor" id="configure"></a>
@@ -132,11 +131,6 @@ Define Options</h2>
  Description: Data flush period. Shorter period may decrease performances. Default: 10s</li>
 <li><b>name:</b> <code>SDLOG_CONTIGUOUS_STORAGE_MEM</code> <b>value:</b> <em>50</em> <br />
  Description: Try to reserve a given contiguous mass storage memory. Default: 50Mo</li>
-</ul>
-<h1><a class="anchor" id="dependencies__logger_sd_chibios"></a>
-Dependencies</h1>
-<ul>
-<li><a class="el" href="module__tlsf.html">tlsf module</a> </li>
 </ul>
 <h1><a class="anchor" id="functions__logger_sd_chibios"></a>
 Module functions</h1>
@@ -184,7 +178,9 @@ Raw logger_sd_chibios.xml file:</h2>
 <div class="line">    &lt;define name=&quot;SDLOG_AUTO_FLUSH_PERIOD&quot; value=&quot;10&quot; unit=&quot;s&quot; description=&quot;Data flush period. Shorter period may decrease performances. Default: 10s&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;SDLOG_CONTIGUOUS_STORAGE_MEM&quot; value=&quot;50&quot; unit=&quot;Mo&quot; description=&quot;Try to reserve a given contiguous mass storage memory. Default: 50Mo&quot;/&gt;</div>
 <div class="line">  &lt;/doc&gt;</div>
-<div class="line">  &lt;depends&gt;tlsf&lt;/depends&gt;</div>
+<div class="line">  &lt;dep&gt;</div>
+<div class="line">    &lt;depends&gt;tlsf&lt;/depends&gt;</div>
+<div class="line">  &lt;/dep&gt;</div>
 <div class="line">  &lt;header&gt;</div>
 <div class="line">    &lt;file name=&quot;sdlog_chibios.h&quot; /&gt;</div>
 <div class="line">  &lt;/header&gt;</div>
@@ -205,6 +201,20 @@ Raw logger_sd_chibios.xml file:</h2>
 <div class="line">    &lt;define name=&quot;HAL_USE_RTC&quot; value=&quot;TRUE&quot; cond=&quot;ifeq (,$(findstring $(SDLOG_USE_RTC),0 FALSE))&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;HAL_USE_SDC&quot; value=&quot;TRUE&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;HAL_USE_USB&quot; value=&quot;TRUE&quot;/&gt;</div>
+<div class="line">    &lt;!--test&gt;</div>
+<div class="line">      &lt;include name=&quot;arch/chibios&quot;/&gt;</div>
+<div class="line">      &lt;include name=&quot;../ext/chibios/os/hal/include&quot;/&gt;</div>
+<div class="line">      &lt;include name=&quot;../ext/chibios/os/rt/include&quot;/&gt;</div>
+<div class="line">      &lt;include name=&quot;../ext/chibios/os/license&quot;/&gt;</div>
+<div class="line">      &lt;include name=&quot;../ext/chibios/os/common/ports/ARM/compilers/GCC&quot;/&gt;</div>
+<div class="line">      &lt;include name=&quot;../ext/chibios/os/common/ports/ARM&quot;/&gt;</div>
+<div class="line">      &lt;include name=&quot;../ext/chibios/os/common/startup/ARM/devices/LPC214x&quot;/&gt;</div>
+<div class="line">      &lt;include name=&quot;../ext/chibios/os/common/oslib/include&quot;/&gt;</div>
+<div class="line">      &lt;include name=&quot;../ext/chibios/os/hal/osal/rt&quot;/&gt;</div>
+<div class="line">      &lt;include name=&quot;boards/apogee/chibios/v1.0&quot;/&gt;</div>
+<div class="line">      &lt;include name=&quot;../ext/chibios/os/hal/ports/STM32/STM32F4xx&quot;/&gt;</div>
+<div class="line">      &lt;include name=&quot;../ext/chibios/os/hal/ports/common/ARMCMx&quot;/&gt;</div>
+<div class="line">    &lt;/test--&gt;</div>
 <div class="line">  &lt;/makefile&gt;</div>
 <div class="line">&lt;/module&gt;</div>
 </div><!-- fragment --> </div></div><!-- contents -->
@@ -213,7 +223,7 @@ Raw logger_sd_chibios.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:03:40 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:03:57 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

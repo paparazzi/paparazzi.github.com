@@ -3,10 +3,12 @@ var searchData=
   ['send_5fimu_5fmag_5fcurrent_20module',['send_imu_mag_current module',['../module__send_imu_mag_current.html',1,'onboard_modules']]],
   ['servo_5ftester_20module',['servo_tester module',['../module__servo_tester.html',1,'onboard_modules']]],
   ['settings_5frc_20module',['settings_rc module',['../module__settings_rc.html',1,'onboard_modules']]],
+  ['shell_20module',['shell module',['../module__shell.html',1,'onboard_modules']]],
   ['shift_5ftracking_20module',['shift_tracking module',['../module__shift_tracking.html',1,'onboard_modules']]],
   ['sim_20module',['sim module',['../module__sim.html',1,'onboard_modules']]],
   ['sonar_5fadc_20module',['sonar_adc module',['../module__sonar_adc.html',1,'onboard_modules']]],
   ['sonar_5fbebop_20module',['sonar_bebop module',['../module__sonar_bebop.html',1,'onboard_modules']]],
+  ['sonar_5fpwm_20module',['sonar_pwm module',['../module__sonar_pwm.html',1,'onboard_modules']]],
   ['sonar_5fvl53l1x_20module',['sonar_vl53l1x module',['../module__sonar_vl53l1x.html',1,'onboard_modules']]],
   ['spektrum_5fsoft_5fbind_20module',['spektrum_soft_bind module',['../module__spektrum_soft_bind.html',1,'onboard_modules']]],
   ['spi_5fmaster_20module',['spi_master module',['../module__spi_master.html',1,'onboard_modules']]],
@@ -30,7 +32,9 @@ var searchData=
   ['stereocam_5fnav_5fline_5favoid_20module',['stereocam_nav_line_avoid module',['../module__stereocam_nav_line_avoid.html',1,'onboard_modules']]],
   ['switch_5fservo_20module',['switch_servo module',['../module__switch_servo.html',1,'onboard_modules']]],
   ['switch_5fuart_20module',['switch_uart module',['../module__switch_uart.html',1,'onboard_modules']]],
+  ['sys_5fid_5fchirp_20module',['sys_id_chirp module',['../module__sys_id_chirp.html',1,'onboard_modules']]],
   ['sys_5fmon_20module',['sys_mon module',['../module__sys_mon.html',1,'onboard_modules']]],
+  ['sys_5ftime_20module',['sys_time module',['../module__sys_time.html',1,'onboard_modules']]],
   ['syslink_5fdl_20module',['syslink_dl module',['../module__syslink_dl.html',1,'onboard_modules']]],
   ['style_20guides',['Style Guides',['../styleguide.html',1,'index']]]
 ];

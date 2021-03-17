@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -128,7 +128,7 @@ Periodic Functions</h2>
 <ul>
 <li><a class="el" href="gsm_8c.html#a39c5977ea034110b997a2602f939026e">gsm_init_report()</a><ul>
 <li>Period in seconds: <em>60</em>.</li>
-<li>Delay: <em>3599</em> <br />
+<li>Delay: <em>0.95</em> <br />
  Integer to impose a sequence (between 0 and main_freq/function_freq)</li>
 <li>Autorun: <em>TRUE</em> <br />
  Periodic function automatically starts after init.</li>
@@ -166,7 +166,7 @@ Raw gsm.xml file:</h2>
 <div class="line">    &lt;file name=&quot;gsm.h&quot;/&gt;</div>
 <div class="line">  &lt;/header&gt;</div>
 <div class="line">  &lt;init fun=&quot;gsm_init()&quot;/&gt;</div>
-<div class="line">  &lt;periodic fun=&quot;gsm_init_report()&quot; period=&quot;60.&quot; delay=&quot;3599&quot; autorun=&quot;TRUE&quot;/&gt;</div>
+<div class="line">  &lt;periodic fun=&quot;gsm_init_report()&quot; period=&quot;60.&quot; delay=&quot;0.95&quot; autorun=&quot;TRUE&quot;/&gt;</div>
 <div class="line">  &lt;periodic fun=&quot;gsm_send_report()&quot; period=&quot;60.&quot; autorun=&quot;FALSE&quot;/&gt;</div>
 <div class="line">  &lt;event fun=&quot;gsm_event()&quot;/&gt;</div>
 <div class="line">  &lt;makefile&gt;</div>
@@ -180,7 +180,7 @@ Raw gsm.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:03:43 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:04:01 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

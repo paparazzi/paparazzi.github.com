@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -106,6 +106,7 @@ $(document).ready(function(){initNavTree('max7456_8c.html','');});
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a> &#124;
@@ -118,6 +119,7 @@ $(document).ready(function(){initNavTree('max7456_8c.html','');});
 <p>Maxim MAX7456 single-channel monochrome on-screen display driver.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;std.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="inter__mcu_8h_source.html">inter_mcu.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="sys__time_8h_source.html">mcu_periph/sys_time.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="gpio_8h_source.html">mcu_periph/gpio.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="spi_8h_source.html">mcu_periph/spi.h</a>&quot;</code><br />
@@ -127,6 +129,7 @@ $(document).ready(function(){initNavTree('max7456_8c.html','');});
 <code>#include &quot;<a class="el" href="electrical_8h_source.html">subsystems/electrical.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="state_8h_source.html">state.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="rotorcraft_2navigation_8h_source.html">firmwares/rotorcraft/navigation.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="telemetry_8h_source.html">subsystems/datalink/telemetry.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="max7456_8h_source.html">modules/display/max7456.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="max7456__regs_8h_source.html">modules/display/max7456_regs.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -136,17 +139,34 @@ $(document).ready(function(){initNavTree('max7456_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="max7456_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2display_2max7456_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2display_2max7456_8c" id="sw_2airborne_2modules_2display_2max7456_8c">
-<area shape="rect" id="node3" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="206,266,377,293"/><area shape="rect" id="node8" href="gpio_8h.html" title="Some architecture independent helper functions for GPIOs. " alt="" coords="1860,102,2000,129"/><area shape="rect" id="node10" href="spi_8h.html" title="Architecture independent SPI (Serial Peripheral Interface) API. " alt="" coords="487,184,618,211"/><area shape="rect" id="node14" href="autopilot_8h.html" title="Core autopilot interface common to all firmwares. " alt="" coords="1182,184,1273,211"/><area shape="rect" id="node16" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="783,266,850,293"/><area shape="rect" id="node32" href="electrical_8h.html" title="Interface for electrical status: supply voltage, current, battery status, etc. " alt="" coords="985,184,1157,211"/><area shape="rect" id="node33" href="rotorcraft_2navigation_8h.html" title="Rotorcraft navigation functions. " alt="" coords="1604,95,1752,136"/><area shape="rect" id="node36" href="max7456_8h.html" title="Maxim MAX7456 single&#45;channel monochrome on&#45;screen display driver. " alt="" coords="2093,184,2295,211"/><area shape="rect" id="node37" href="max7456__regs_8h.html" title="Maxim MAX7456 single&#45;channel monochrome on&#45;screen display driver. " alt="" coords="2370,95,2559,136"/><area shape="rect" id="node4" href="inttypes_8h.html" title="inttypes.h" alt="" coords="643,355,729,382"/><area shape="rect" id="node15" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="654,266,750,293"/><area shape="rect" id="node17" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="910,445,1089,471"/><area shape="rect" id="node23" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="593,445,784,471"/><area shape="rect" id="node25" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="1443,348,1593,389"/><area shape="rect" id="node27" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="1268,348,1419,389"/><area shape="rect" id="node28" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="855,348,1019,389"/><area shape="rect" id="node18" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="347,527,502,553"/><area shape="rect" id="node22" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="961,527,1112,553"/><area shape="rect" id="node26" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="1343,445,1467,471"/><area shape="rect" id="node34" href="subsystems_2navigation_2waypoints_8h.html" title="subsystems/navigation\l/waypoints.h" alt="" coords="1691,259,1860,300"/><area shape="rect" id="node35" href="common__flight__plan_8h.html" title="Common flight_plan functions shared between fixedwing and rotorcraft. " alt="" coords="1724,437,1893,479"/></map>
+<area shape="rect" id="node3" href="inter__mcu_8h.html" title="Communication between fbw and ap processes. " alt="" coords="2290,102,2389,129"/><area shape="rect" id="node4" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="74,281,245,307"/><area shape="rect" id="node9" href="gpio_8h.html" title="Some architecture independent helper functions for GPIOs. " alt="" coords="868,102,1008,129"/><area shape="rect" id="node11" href="spi_8h.html" title="Architecture independent SPI (Serial Peripheral Interface) API. " alt="" coords="322,191,453,218"/><area shape="rect" id="node15" href="autopilot_8h.html" title="Core autopilot interface common to all firmwares. " alt="" coords="1795,191,1886,218"/><area shape="rect" id="node17" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="1094,281,1161,307"/><area shape="rect" id="node33" href="electrical_8h.html" title="Interface for electrical status: supply voltage, current, battery status, etc. " alt="" coords="1532,281,1704,307"/><area shape="rect" id="node34" href="rotorcraft_2navigation_8h.html" title="Rotorcraft navigation functions. " alt="" coords="1359,95,1507,136"/><area shape="rect" id="node37" href="telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code). " alt="" coords="2681,184,2835,225"/><area shape="rect" id="node49" href="max7456_8h.html" title="Maxim MAX7456 single&#45;channel monochrome on&#45;screen display driver. " alt="" coords="2335,191,2536,218"/><area shape="rect" id="node50" href="max7456__regs_8h.html" title="Maxim MAX7456 single&#45;channel monochrome on&#45;screen display driver. " alt="" coords="2607,95,2797,136"/><area shape="rect" id="node5" href="inttypes_8h.html" title="inttypes.h" alt="" coords="2187,370,2273,397"/><area shape="rect" id="node16" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="2259,281,2355,307"/><area shape="rect" id="node18" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="930,452,1109,479"/><area shape="rect" id="node24" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="563,452,753,479"/><area shape="rect" id="node26" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="1171,363,1321,404"/><area shape="rect" id="node28" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="1345,363,1496,404"/><area shape="rect" id="node29" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="931,363,1095,404"/><area shape="rect" id="node19" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="231,527,386,553"/><area shape="rect" id="node23" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="1024,527,1175,553"/><area shape="rect" id="node27" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="1321,452,1445,479"/><area shape="rect" id="node35" href="subsystems_2navigation_2waypoints_8h.html" title="subsystems/navigation\l/waypoints.h" alt="" coords="1236,273,1405,315"/><area shape="rect" id="node36" href="common__flight__plan_8h.html" title="Common flight_plan functions shared between fixedwing and rotorcraft. " alt="" coords="1287,184,1456,225"/><area shape="rect" id="node38" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="3019,452,3158,479"/><area shape="rect" id="node42" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="2681,273,2835,315"/><area shape="rect" id="node45" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="2583,363,2736,404"/><area shape="rect" id="node47" href="pprz__dl_8h.html" title="Datalink using PPRZ protocol. " alt="" coords="2760,370,2953,397"/></map>
 </div>
 </div>
 <p><a href="max7456_8c_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:structVECTOR"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="max7456_8c.html#structVECTOR">VECTOR</a></td></tr>
+<tr class="separator:structVECTOR"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structMATRIX"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="max7456_8c.html#structMATRIX">MATRIX</a></td></tr>
+<tr class="separator:structMATRIX"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a6eb10be1ada9e27107d48bb7e4227380"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="max7456_8c.html#a6eb10be1ada9e27107d48bb7e4227380">OSD_STRING_SIZE</a>&#160;&#160;&#160;31</td></tr>
 <tr class="separator:a6eb10be1ada9e27107d48bb7e4227380"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b7275cab37dd537285bbf23be2ef850"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="max7456_8c.html#a8b7275cab37dd537285bbf23be2ef850">osd_sprintf</a>&#160;&#160;&#160;<a class="el" href="max7456_8c.html#a257eaf8b3e2576c806cd402e398795e0">_osd_sprintf</a></td></tr>
 <tr class="separator:a8b7275cab37dd537285bbf23be2ef850"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5b10155f7136bcffe3c9ff1972b5a39"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="max7456_8c.html#ab5b10155f7136bcffe3c9ff1972b5a39">OSD_USE_FLOAT_LOW_PASS_FILTERING</a></td></tr>
+<tr class="separator:ab5b10155f7136bcffe3c9ff1972b5a39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8a76f064c0e39cef9d4ea96951da912"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="max7456_8c.html#ad8a76f064c0e39cef9d4ea96951da912">AMPS_LOW_PASS_FILTER_STRENGTH</a>&#160;&#160;&#160;6</td></tr>
+<tr class="separator:ad8a76f064c0e39cef9d4ea96951da912"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11e24ed7e83765bba020d8f4e1c6a83e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="max7456_8c.html#a11e24ed7e83765bba020d8f4e1c6a83e">SPEED_LOW_PASS_FILTER_STRENGTH</a>&#160;&#160;&#160;6</td></tr>
+<tr class="separator:a11e24ed7e83765bba020d8f4e1c6a83e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19d307ae8a48054d98ca46ac50048d93"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="max7456_8c.html#a19d307ae8a48054d98ca46ac50048d93">BAT_CAPACITY</a>&#160;&#160;&#160;5000.0</td></tr>
+<tr class="separator:a19d307ae8a48054d98ca46ac50048d93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34ef05992d74a9dc07c6a20feffd6eef"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="max7456_8c.html#a34ef05992d74a9dc07c6a20feffd6eef">IMU_MAG_X_SIGN</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a34ef05992d74a9dc07c6a20feffd6eef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -167,15 +187,33 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a9df37033e964a8027eab3e650e7aea6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3dd6ed7cc7d01ada4ce3180d50150cd"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="max7456_8c.html#ac3dd6ed7cc7d01ada4ce3180d50150cd">osd_attributes</a> { <a class="el" href="max7456_8c.html#ac3dd6ed7cc7d01ada4ce3180d50150cda43e7c26b8df0104b9f389e32ac3f72c7">BLINK</a> = OSD_BLINK_CHAR, 
-<a class="el" href="max7456_8c.html#ac3dd6ed7cc7d01ada4ce3180d50150cdab5f95af56a0f14f0032750594b523c95">INVERT</a> = OSD_INVERT_PIXELS
+<tr class="memitem:ac3dd6ed7cc7d01ada4ce3180d50150cd"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="max7456_8c.html#ac3dd6ed7cc7d01ada4ce3180d50150cd">osd_attributes</a> { <br />
+&#160;&#160;<a class="el" href="max7456_8c.html#ac3dd6ed7cc7d01ada4ce3180d50150cda43e7c26b8df0104b9f389e32ac3f72c7">BLINK</a> = OSD_BLINK_CHAR, 
+<a class="el" href="max7456_8c.html#ac3dd6ed7cc7d01ada4ce3180d50150cdab5f95af56a0f14f0032750594b523c95">INVERT</a> = OSD_INVERT_PIXELS, 
+<a class="el" href="max7456_8c.html#ac3dd6ed7cc7d01ada4ce3180d50150cda5adae9cfe9a4ad2ca2452a1718c9ebd5">L_JUST</a> = 0x00, 
+<a class="el" href="max7456_8c.html#ac3dd6ed7cc7d01ada4ce3180d50150cda9ec438a612d07a605bfa00a62b2ca485">R_JUST</a> = 0x01, 
+<br />
+&#160;&#160;<a class="el" href="max7456_8c.html#ac3dd6ed7cc7d01ada4ce3180d50150cda3bf421e589163ab40526b2b873b18f62">C_JUST</a> = 0x02
+<br />
  }</td></tr>
 <tr class="separator:ac3dd6ed7cc7d01ada4ce3180d50150cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:aba26765d16e0ca9259a11d78a6bfec3f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="max7456_8c.html#aba26765d16e0ca9259a11d78a6bfec3f">send_mag_heading</a> (struct transport_tx *trans, struct link_device *<a class="el" href="e__identification__fr_8c.html#aebd4a92b0e1e5a4d507f1674f09fcc2b">dev</a>)</td></tr>
+<tr class="separator:aba26765d16e0ca9259a11d78a6bfec3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31893a86d66bebf3f735a51b2bcdb80c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="max7456_8c.html#a31893a86d66bebf3f735a51b2bcdb80c">vSubtractVectors</a> (<a class="el" href="max7456_8c.html#structVECTOR">VECTOR</a> *svA, <a class="el" href="max7456_8c.html#structVECTOR">VECTOR</a> svB, <a class="el" href="max7456_8c.html#structVECTOR">VECTOR</a> svC)</td></tr>
+<tr class="separator:a31893a86d66bebf3f735a51b2bcdb80c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35c6a2d16d309f11f32712b4116155f6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="max7456_8c.html#a35c6a2d16d309f11f32712b4116155f6">vMultiplyMatrixByVector</a> (<a class="el" href="max7456_8c.html#structVECTOR">VECTOR</a> *svA, <a class="el" href="max7456_8c.html#structMATRIX">MATRIX</a> smB, <a class="el" href="max7456_8c.html#structVECTOR">VECTOR</a> svC)</td></tr>
+<tr class="separator:a35c6a2d16d309f11f32712b4116155f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af647f85cf21dab23d18ac36c8beadd20"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="max7456_8c.html#af647f85cf21dab23d18ac36c8beadd20">home_direction</a> (void)</td></tr>
+<tr class="separator:af647f85cf21dab23d18ac36c8beadd20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6589475b928e58fdf044d03783fcb54"><td class="memItemLeft" align="right" valign="top">static char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="max7456_8c.html#ab6589475b928e58fdf044d03783fcb54">ascii_to_osd_c</a> (char c)</td></tr>
 <tr class="separator:ab6589475b928e58fdf044d03783fcb54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e383d26ae071a8ae13f7b02f975f4ea"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="max7456_8c.html#a2e383d26ae071a8ae13f7b02f975f4ea">calc_flight_time_left</a> (void)</td></tr>
+<tr class="separator:a2e383d26ae071a8ae13f7b02f975f4ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a079837dac11983fe67050e136b0080e4"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="max7456_8c.html#a079837dac11983fe67050e136b0080e4">draw_osd</a> (void)</td></tr>
+<tr class="separator:a079837dac11983fe67050e136b0080e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b5efe546809c5c4b7d6470ba879d9fa"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="max7456_8c.html#a2b5efe546809c5c4b7d6470ba879d9fa">osd_put_s</a> (char *string, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> attributes, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> char_nb, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> row, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> column)</td></tr>
 <tr class="separator:a2b5efe546809c5c4b7d6470ba879d9fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a257eaf8b3e2576c806cd402e398795e0"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="max7456_8c.html#a257eaf8b3e2576c806cd402e398795e0">_osd_sprintf</a> (char *buffer, char *string, float value)</td></tr>
@@ -215,14 +253,175 @@ Variables</h2></td></tr>
 <tr class="separator:a874f20c9edb2852bd19b2db700401daf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa88b79ed6d70c87f302762836b19c2a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="max7456_8c.html#aa88b79ed6d70c87f302762836b19c2a3">osd_stat_reg</a> = 0</td></tr>
 <tr class="separator:aa88b79ed6d70c87f302762836b19c2a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a700c37442b224ae303b633ac0c02c73c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="max7456_8c.html#a700c37442b224ae303b633ac0c02c73c">osd_stat_reg_valid</a> = <a class="el" href="rtwtypes_8h.html#a65e9886d74aaee76545e83dd09011727">false</a></td></tr>
-<tr class="separator:a700c37442b224ae303b633ac0c02c73c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6be6884027e9a7012c49a401b3f83cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="max7456_8c.html#aa6be6884027e9a7012c49a401b3f83cf">max_flyable_distance_left</a> = 0</td></tr>
+<tr class="separator:aa6be6884027e9a7012c49a401b3f83cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b8eb5fd734424d9b1acb486f42bb2f3"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="max7456_8c.html#a7b8eb5fd734424d9b1acb486f42bb2f3">mag_course_deg</a> = 0</td></tr>
+<tr class="separator:a7b8eb5fd734424d9b1acb486f42bb2f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa34d54866a11595ed5dcb12a5ebf59cc"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="max7456_8c.html#aa34d54866a11595ed5dcb12a5ebf59cc">mag_heading_rad</a> = 0</td></tr>
+<tr class="separator:aa34d54866a11595ed5dcb12a5ebf59cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3792b559a9c286ce1d23a5e8fbc71403"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="max7456_8c.html#a3792b559a9c286ce1d23a5e8fbc71403">gps_course_deg</a> = 0</td></tr>
+<tr class="separator:a3792b559a9c286ce1d23a5e8fbc71403"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6448fcf9ae22d27c05ce676582075dc"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="max7456_8c.html#ab6448fcf9ae22d27c05ce676582075dc">home_dir_deg</a> = 0</td></tr>
+<tr class="separator:ab6448fcf9ae22d27c05ce676582075dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Maxim MAX7456 single-channel monochrome on-screen display driver. </p>
 
 <p>Definition in file <a class="el" href="max7456_8c_source.html">max7456.c</a>.</p>
-</div><h2 class="groupheader">Macro Definition Documentation</h2>
+</div><hr/><h2 class="groupheader">Data Structure Documentation</h2>
+<a name="structVECTOR" id="structVECTOR"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct VECTOR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock">
+<p>Definition at line <a class="el" href="point_8c_source.html#l00084">84</a> of file <a class="el" href="point_8c_source.html">point.c</a>.</p>
+</div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a8e735ff9578a0cfb24ce83935e0128cb"></a>float</td>
+<td class="fieldname">
+fx</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="abf0b5d78cfcb2b66cb05cfc74f18e7ac"></a>float</td>
+<td class="fieldname">
+fy</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="af2cd1aafbb7c19268a9715b5aa72dddb"></a>float</td>
+<td class="fieldname">
+fz</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structMATRIX" id="structMATRIX"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct MATRIX</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock">
+<p>Definition at line <a class="el" href="point_8c_source.html#l00090">90</a> of file <a class="el" href="point_8c_source.html">point.c</a>.</p>
+</div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a248961470ca16203383c44096a3d9ea4"></a>float</td>
+<td class="fieldname">
+fx1</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="ada5936d0bdc850493f79abb3fd2ea360"></a>float</td>
+<td class="fieldname">
+fx2</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a224a62a77023da329f51213bf6acfc31"></a>float</td>
+<td class="fieldname">
+fx3</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a654c9b1a254603fd1219b71de281d17f"></a>float</td>
+<td class="fieldname">
+fy1</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a4806c71a150f9288af0fef5978bd3f87"></a>float</td>
+<td class="fieldname">
+fy2</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a78d01f95dd801e0e6844b1c75da953d3"></a>float</td>
+<td class="fieldname">
+fy3</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a0c718c9636453759c23cff7592af712b"></a>float</td>
+<td class="fieldname">
+fz1</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a48b502d58a61ced8e9a7c150da79d788"></a>float</td>
+<td class="fieldname">
+fz2</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a99e2572b9e06d8a2877e921c15ecdae5"></a>float</td>
+<td class="fieldname">
+fz3</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="ad8a76f064c0e39cef9d4ea96951da912"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define AMPS_LOW_PASS_FILTER_STRENGTH&#160;&#160;&#160;6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="max7456_8c_source.html#l00067">67</a> of file <a class="el" href="max7456_8c_source.html">max7456.c</a>.</p>
+
+<p>Referenced by <a class="el" href="max7456_8c_source.html#l00414">calc_flight_time_left()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a19d307ae8a48054d98ca46ac50048d93"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BAT_CAPACITY&#160;&#160;&#160;5000.0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="max7456_8c_source.html#l00076">76</a> of file <a class="el" href="max7456_8c_source.html">max7456.c</a>.</p>
+
+<p>Referenced by <a class="el" href="max7456_8c_source.html#l00414">calc_flight_time_left()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a34ef05992d74a9dc07c6a20feffd6eef"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IMU_MAG_X_SIGN&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="max7456_8c_source.html#l00099">99</a> of file <a class="el" href="max7456_8c_source.html">max7456.c</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a8b7275cab37dd537285bbf23be2ef850"></a>
 <div class="memitem">
 <div class="memproto">
@@ -233,9 +432,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="max7456_8c_source.html#l00053">53</a> of file <a class="el" href="max7456_8c_source.html">max7456.c</a>.</p>
+<p>Definition at line <a class="el" href="max7456_8c_source.html#l00059">59</a> of file <a class="el" href="max7456_8c_source.html">max7456.c</a>.</p>
 
-<p>Referenced by <a class="el" href="max7456_8c_source.html#l00119">max7456_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="max7456_8c_source.html#l00667">draw_osd()</a>.</p>
 
 </div>
 </div>
@@ -249,9 +448,39 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="max7456_8c_source.html#l00052">52</a> of file <a class="el" href="max7456_8c_source.html">max7456.c</a>.</p>
+<p>Definition at line <a class="el" href="max7456_8c_source.html#l00058">58</a> of file <a class="el" href="max7456_8c_source.html">max7456.c</a>.</p>
 
-<p>Referenced by <a class="el" href="max7456_8c_source.html#l00317">osd_put_s()</a>.</p>
+<p>Referenced by <a class="el" href="max7456_8c_source.html#l00548">_osd_sprintf()</a>, and <a class="el" href="max7456_8c_source.html#l00485">osd_put_s()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab5b10155f7136bcffe3c9ff1972b5a39"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OSD_USE_FLOAT_LOW_PASS_FILTERING</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="max7456_8c_source.html#l00062">62</a> of file <a class="el" href="max7456_8c_source.html">max7456.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a11e24ed7e83765bba020d8f4e1c6a83e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SPEED_LOW_PASS_FILTER_STRENGTH&#160;&#160;&#160;6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="max7456_8c_source.html#l00071">71</a> of file <a class="el" href="max7456_8c_source.html">max7456.c</a>.</p>
+
+<p>Referenced by <a class="el" href="max7456_8c_source.html#l00414">calc_flight_time_left()</a>.</p>
 
 </div>
 </div>
@@ -290,7 +519,7 @@ Variables</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="max7456_8c_source.html#l00070">70</a> of file <a class="el" href="max7456_8c_source.html">max7456.c</a>.</p>
+<p>Definition at line <a class="el" href="max7456_8c_source.html#l00145">145</a> of file <a class="el" href="max7456_8c_source.html">max7456.c</a>.</p>
 
 </div>
 </div>
@@ -308,9 +537,15 @@ Variables</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ac3dd6ed7cc7d01ada4ce3180d50150cdab5f95af56a0f14f0032750594b523c95"></a>INVERT&#160;</td><td class="fielddoc">
 </td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ac3dd6ed7cc7d01ada4ce3180d50150cda5adae9cfe9a4ad2ca2452a1718c9ebd5"></a>L_JUST&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ac3dd6ed7cc7d01ada4ce3180d50150cda9ec438a612d07a605bfa00a62b2ca485"></a>R_JUST&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ac3dd6ed7cc7d01ada4ce3180d50150cda3bf421e589163ab40526b2b873b18f62"></a>C_JUST&#160;</td><td class="fielddoc">
+</td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="max7456_8c_source.html#l00084">84</a> of file <a class="el" href="max7456_8c_source.html">max7456.c</a>.</p>
+<p>Definition at line <a class="el" href="max7456_8c_source.html#l00159">159</a> of file <a class="el" href="max7456_8c_source.html">max7456.c</a>.</p>
 
 </div>
 </div>
@@ -353,9 +588,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="max7456_8c_source.html#l00368">368</a> of file <a class="el" href="max7456_8c_source.html">max7456.c</a>.</p>
+<p>Definition at line <a class="el" href="max7456_8c_source.html#l00548">548</a> of file <a class="el" href="max7456_8c_source.html">max7456.c</a>.</p>
 
-<p>References <a class="el" href="max7456_8c_source.html#l00063">osd_string</a>.</p>
+<p>References <a class="el" href="max7456_8c_source.html#l00138">osd_string</a>, <a class="el" href="max7456_8c_source.html#l00058">OSD_STRING_SIZE</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00089">Int32Vect3::x</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00090">Int32Vect3::y</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00091">Int32Vect3::z</a>.</p>
 
 </div>
 </div>
@@ -381,18 +616,187 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="max7456_8c_source.html#l00276">276</a> of file <a class="el" href="max7456_8c_source.html">max7456.c</a>.</p>
+<p>Definition at line <a class="el" href="max7456_8c_source.html#l00369">369</a> of file <a class="el" href="max7456_8c_source.html">max7456.c</a>.</p>
 
-<p>Referenced by <a class="el" href="max7456_8c_source.html#l00317">osd_put_s()</a>.</p>
+<p>References <a class="el" href="ins__vectornav_8c.html#aa01d3425df2eb0f33ced38c9d8fa8f05">PRINT_CONFIG_MSG()</a>.</p>
+
+<p>Referenced by <a class="el" href="max7456_8c_source.html#l00485">osd_put_s()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="max7456_8c_ab6589475b928e58fdf044d03783fcb54_cgraph.png" border="0" usemap="#max7456_8c_ab6589475b928e58fdf044d03783fcb54_cgraph" alt=""/></div>
+<map name="max7456_8c_ab6589475b928e58fdf044d03783fcb54_cgraph" id="max7456_8c_ab6589475b928e58fdf044d03783fcb54_cgraph">
+<area shape="rect" id="node2" href="ins__vectornav_8c.html#aa01d3425df2eb0f33ced38c9d8fa8f05" title="PRINT_CONFIG_MSG" alt="" coords="168,5,319,32"/></map>
+</div>
+</p>
+
+<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="max7456_8c_ab6589475b928e58fdf044d03783fcb54_icgraph.png" border="0" usemap="#max7456_8c_ab6589475b928e58fdf044d03783fcb54_icgraph" alt=""/></div>
 <map name="max7456_8c_ab6589475b928e58fdf044d03783fcb54_icgraph" id="max7456_8c_ab6589475b928e58fdf044d03783fcb54_icgraph">
-<area shape="rect" id="node2" href="max7456_8c.html#a2b5efe546809c5c4b7d6470ba879d9fa" title="osd_put_s" alt="" coords="168,5,255,32"/><area shape="rect" id="node3" href="max7456_8h.html#a1d6d4401863cba472802654472781050" title="max7456_periodic" alt="" coords="303,5,441,32"/></map>
+<area shape="rect" id="node2" href="max7456_8c.html#a2b5efe546809c5c4b7d6470ba879d9fa" title="osd_put_s" alt="" coords="168,5,255,32"/><area shape="rect" id="node3" href="max7456_8c.html#a079837dac11983fe67050e136b0080e4" title="draw_osd" alt="" coords="303,5,385,32"/><area shape="rect" id="node4" href="max7456_8h.html#a1d6d4401863cba472802654472781050" title="max7456_periodic" alt="" coords="433,5,572,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a2e383d26ae071a8ae13f7b02f975f4ea"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void calc_flight_time_left </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="max7456_8c_source.html#l00414">414</a> of file <a class="el" href="max7456_8c_source.html">max7456.c</a>.</p>
+
+<p>References <a class="el" href="max7456_8c_source.html#l00067">AMPS_LOW_PASS_FILTER_STRENGTH</a>, <a class="el" href="autopilot_8c_source.html#l00050">autopilot</a>, <a class="el" href="max7456_8c_source.html#l00076">BAT_CAPACITY</a>, <a class="el" href="electrical_8h_source.html#l00046">Electrical::current</a>, <a class="el" href="electrical_8c_source.html#l00066">electrical</a>, <a class="el" href="autopilot_8h_source.html#l00071">pprz_autopilot::launch</a>, <a class="el" href="max7456_8c_source.html#l00172">max_flyable_distance_left</a>, <a class="el" href="max7456_8c_source.html#l00071">SPEED_LOW_PASS_FILTER_STRENGTH</a>, and <a class="el" href="state_8h_source.html#l00935">stateGetHorizontalSpeedNorm_f()</a>.</p>
+
+<p>Referenced by <a class="el" href="max7456_8c_source.html#l00667">draw_osd()</a>.</p>
+
+<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="max7456_8c_a2e383d26ae071a8ae13f7b02f975f4ea_cgraph.png" border="0" usemap="#max7456_8c_a2e383d26ae071a8ae13f7b02f975f4ea_cgraph" alt=""/></div>
+<map name="max7456_8c_a2e383d26ae071a8ae13f7b02f975f4ea_cgraph" id="max7456_8c_a2e383d26ae071a8ae13f7b02f975f4ea_cgraph">
+<area shape="rect" id="node2" href="group__state__velocity.html#ga1396b84069296dc0353f25281a472c08" title="Get norm of horizontal ground speed (float). " alt="" coords="201,13,432,39"/><area shape="rect" id="node3" href="group__state__velocity.html#ga990849172b82f2e3bc1ab9da2395c9c4" title="stateCalcHorizontalSpeed\lNorm_f" alt="" coords="480,5,668,47"/></map>
+</div>
+</p>
+
+<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="max7456_8c_a2e383d26ae071a8ae13f7b02f975f4ea_icgraph.png" border="0" usemap="#max7456_8c_a2e383d26ae071a8ae13f7b02f975f4ea_icgraph" alt=""/></div>
+<map name="max7456_8c_a2e383d26ae071a8ae13f7b02f975f4ea_icgraph" id="max7456_8c_a2e383d26ae071a8ae13f7b02f975f4ea_icgraph">
+<area shape="rect" id="node2" href="max7456_8c.html#a079837dac11983fe67050e136b0080e4" title="draw_osd" alt="" coords="201,5,284,32"/><area shape="rect" id="node3" href="max7456_8h.html#a1d6d4401863cba472802654472781050" title="max7456_periodic" alt="" coords="332,5,471,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a079837dac11983fe67050e136b0080e4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void draw_osd </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="max7456_8c_source.html#l00667">667</a> of file <a class="el" href="max7456_8c_source.html">max7456.c</a>.</p>
+
+<p>References <a class="el" href="airspeed__uADC_8c_source.html#l00059">altitude</a>, <a class="el" href="fixedwing_2autopilot__static_8h_source.html#l00037">AP_MODE_AUTO1</a>, <a class="el" href="fixedwing_2autopilot__static_8h_source.html#l00038">AP_MODE_AUTO2</a>, <a class="el" href="inter__mcu_8c_source.html#l00037">ap_state</a>, <a class="el" href="autopilot_8c_source.html#l00050">autopilot</a>, <a class="el" href="max7456_8c_source.html#l00160">BLINK</a>, <a class="el" href="max7456_8c_source.html#l00164">C_JUST</a>, <a class="el" href="max7456_8c_source.html#l00414">calc_flight_time_left()</a>, <a class="el" href="gps_8h_source.html#l00099">GpsState::course</a>, <a class="el" href="electrical_8c_source.html#l00066">electrical</a>, <a class="el" href="gps_8h_source.html#l00107">GpsState::fix</a>, <a class="el" href="nav_8h_source.html#l00228">GetPosAlt</a>, <a class="el" href="gps_8c_source.html#l00069">gps</a>, <a class="el" href="max7456_8c_source.html#l00176">gps_course_deg</a>, <a class="el" href="gps_8h_source.html#l00039">GPS_FIX_3D</a>, <a class="el" href="max7456_8c_source.html#l00287">home_direction()</a>, <a class="el" href="max7456_8c_source.html#l00161">INVERT</a>, <a class="el" href="max7456_8c_source.html#l00162">L_JUST</a>, <a class="el" href="electrical_8h_source.html#l00036">LOW_BAT_LEVEL</a>, <a class="el" href="max7456_8c_source.html#l00174">mag_course_deg</a>, <a class="el" href="max7456_8c_source.html#l00172">max_flyable_distance_left</a>, <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="autopilot_8h_source.html#l00063">pprz_autopilot::mode</a>, <a class="el" href="max7456_8c_source.html#l00485">osd_put_s()</a>, <a class="el" href="max7456_8c_source.html#l00059">osd_sprintf</a>, <a class="el" href="max7456_8c_source.html#l00138">osd_string</a>, <a class="el" href="gps_8h_source.html#l00105">GpsState::pdop</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00085">FloatEulers::phi</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00087">FloatEulers::psi</a>, <a class="el" href="max7456_8c_source.html#l00163">R_JUST</a>, <a class="el" href="stabilization_8c_source.html#l00032">stabilization_cmd</a>, <a class="el" href="energy__ctrl_8c_source.html#l00151">STALL_AIRSPEED</a>, <a class="el" href="state_8h_source.html#l00935">stateGetHorizontalSpeedNorm_f()</a>, <a class="el" href="state_8h_source.html#l01143">stateGetNedToBodyEulers_f()</a>, <a class="el" href="state_8h_source.html#l00719">stateGetPositionEnu_f()</a>, <a class="el" href="state_8h_source.html#l00917">stateGetSpeedEnu_f()</a>, <a class="el" href="max7456_8c_source.html#l00141">step</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00086">FloatEulers::theta</a>, <a class="el" href="electrical_8h_source.html#l00045">Electrical::vsupply</a>, <a class="el" href="subsystems_2navigation_2waypoints_8c_source.html#l00077">waypoint_get_x()</a>, <a class="el" href="subsystems_2navigation_2waypoints_8c_source.html#l00085">waypoint_get_y()</a>, <a class="el" href="common__nav_8c_source.html#l00038">waypoints</a>, <a class="el" href="common__nav_8h_source.html#l00040">point::x</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00073">EnuCoor_f::x</a>, <a class="el" href="common__nav_8h_source.html#l00041">point::y</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00074">EnuCoor_f::y</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00075">EnuCoor_f::z</a>.</p>
+
+<p>Referenced by <a class="el" href="max7456_8c_source.html#l00966">max7456_periodic()</a>.</p>
+
+<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="max7456_8c_a079837dac11983fe67050e136b0080e4_cgraph.png" border="0" usemap="#max7456_8c_a079837dac11983fe67050e136b0080e4_cgraph" alt=""/></div>
+<map name="max7456_8c_a079837dac11983fe67050e136b0080e4_cgraph" id="max7456_8c_a079837dac11983fe67050e136b0080e4_cgraph">
+<area shape="rect" id="node2" href="max7456_8c.html#a2e383d26ae071a8ae13f7b02f975f4ea" title="calc_flight_time_left" alt="" coords="161,77,309,104"/><area shape="rect" id="node3" href="group__state__velocity.html#ga1396b84069296dc0353f25281a472c08" title="Get norm of horizontal ground speed (float). " alt="" coords="383,71,613,97"/><area shape="rect" id="node5" href="max7456_8c.html#af647f85cf21dab23d18ac36c8beadd20" title="home_direction" alt="" coords="175,273,296,300"/><area shape="rect" id="node6" href="group__state__position.html#ga545d479db45e1a9711e59736b6d1309b" title="Get position in local ENU coordinates (float). " alt="" coords="417,121,579,148"/><area shape="rect" id="node20" href="subsystems_2navigation_2waypoints_8c.html#a62061108340141e0fda55b7c0d8f0145" title="Get X/East coordinate of waypoint in meters. " alt="" coords="438,375,558,401"/><area shape="rect" id="node21" href="subsystems_2navigation_2waypoints_8c.html#ab6dc3af2d184a91218a1fe7f02b858bc" title="Get Y/North coordinate of waypoint in meters. " alt="" coords="438,425,558,452"/><area shape="rect" id="node26" href="max7456_8c.html#a2b5efe546809c5c4b7d6470ba879d9fa" title="osd_put_s" alt="" coords="192,476,279,503"/><area shape="rect" id="node30" href="group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float). " alt="" coords="136,552,335,579"/><area shape="rect" id="node35" href="group__state__velocity.html#ga8e7f86fe83bd1b767f9c5016ed245822" title="Get ground speed in local ENU coordinates (float). " alt="" coords="158,615,313,641"/><area shape="rect" id="node4" href="group__state__velocity.html#ga990849172b82f2e3bc1ab9da2395c9c4" title="stateCalcHorizontalSpeed\lNorm_f" alt="" coords="661,55,849,97"/><area shape="rect" id="node18" href="group__state__position.html#ga7488f3b1e3afa9515541c0130278bdac" title="Get position in UTM coordinates (float). " alt="" coords="415,172,581,199"/><area shape="rect" id="node22" href="max7456_8c.html#a31893a86d66bebf3f735a51b2bcdb80c" title="vSubtractVectors" alt="" coords="432,223,564,249"/><area shape="rect" id="node23" href="group__state__velocity.html#ga6f8b83126a235daea584aa9ce97f7fac" title="Get dir of horizontal ground speed (float). " alt="" coords="391,273,605,300"/><area shape="rect" id="node25" href="max7456_8c.html#a35c6a2d16d309f11f32712b4116155f6" title="vMultiplyMatrixByVector" alt="" coords="411,324,585,351"/><area shape="rect" id="node7" href="group__state__position.html#ga718066acd9581365ca5c2aacb29130fd" title="stateCalcPositionEnu_f" alt="" coords="672,121,839,148"/><area shape="rect" id="node8" href="pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title="enu_of_ecef_point_f" alt="" coords="1099,107,1248,133"/><area shape="rect" id="node9" href="group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU. " alt="" coords="905,157,1043,184"/><area shape="rect" id="node11" href="pprz__geodetic__float_8c.html#ab8d5cb7292ea74802e7a94e265c0703a" title="enu_of_lla_point_f" alt="" coords="906,56,1042,83"/><area shape="rect" id="node13" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF. " alt="" coords="925,5,1023,32"/><area shape="rect" id="node15" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="925,208,1023,235"/><area shape="rect" id="node10" href="group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU. " alt="" coords="1099,157,1247,184"/><area shape="rect" id="node12" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title="ecef_of_lla_f" alt="" coords="1123,56,1223,83"/><area shape="rect" id="node14" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title="ecef_of_lla_d" alt="" coords="1121,5,1225,32"/><area shape="rect" id="node16" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="1100,208,1247,235"/><area shape="rect" id="node17" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="1105,259,1241,301"/><area shape="rect" id="node19" href="group__state__position.html#ga6893f5e3d84e0464d2bc6fc86a08f16d" title="stateCalcPositionUtm_f" alt="" coords="670,193,841,220"/><area shape="rect" id="node24" href="group__state__velocity.html#gad9b7b6ea39d5a4ee3e824f97204c4bb5" title="stateCalcHorizontalSpeed\lDir_f" alt="" coords="661,266,849,307"/><area shape="rect" id="node27" href="max7456_8c.html#ab6589475b928e58fdf044d03783fcb54" title="ascii_to_osd_c" alt="" coords="441,476,555,503"/><area shape="rect" id="node29" href="group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction. " alt="" coords="453,527,543,553"/><area shape="rect" id="node28" href="ins__vectornav_8c.html#aa01d3425df2eb0f33ced38c9d8fa8f05" title="PRINT_CONFIG_MSG" alt="" coords="680,476,831,503"/><area shape="rect" id="node31" href="group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float). " alt="" coords="416,577,580,604"/><area shape="rect" id="node32" href="group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title="orientationCalcEulers_f" alt="" coords="671,577,839,604"/><area shape="rect" id="node33" href="group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76" title="float_eulers_of_rmat" alt="" coords="897,603,1051,629"/><area shape="rect" id="node34" href="group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="euler rotation &#39;ZYX&#39; " alt="" coords="899,552,1049,579"/><area shape="rect" id="node36" href="group__state__velocity.html#ga2f7eff6a1ac5d75adf7f70803be06483" title="stateCalcSpeedEnu_f" alt="" coords="419,628,577,655"/><area shape="rect" id="node37" href="pprz__geodetic__float_8c.html#ac44c5ea35811dcd7f50fb3741d0c12ad" title="enu_of_ecef_vect_f" alt="" coords="683,628,827,655"/></map>
+</div>
+</p>
+
+<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="max7456_8c_a079837dac11983fe67050e136b0080e4_icgraph.png" border="0" usemap="#max7456_8c_a079837dac11983fe67050e136b0080e4_icgraph" alt=""/></div>
+<map name="max7456_8c_a079837dac11983fe67050e136b0080e4_icgraph" id="max7456_8c_a079837dac11983fe67050e136b0080e4_icgraph">
+<area shape="rect" id="node2" href="max7456_8h.html#a1d6d4401863cba472802654472781050" title="max7456_periodic" alt="" coords="136,5,275,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="af647f85cf21dab23d18ac36c8beadd20"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static float home_direction </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="max7456_8c_source.html#l00287">287</a> of file <a class="el" href="max7456_8c_source.html">max7456.c</a>.</p>
+
+<p>References <a class="el" href="pprz__geodetic__float_8h_source.html#l00084">UtmCoor_f::alt</a>, <a class="el" href="gps_8h_source.html#l00107">GpsState::fix</a>, <a class="el" href="point_8c_source.html#l00085">VECTOR::fx</a>, <a class="el" href="point_8c_source.html#l00091">MATRIX::fx1</a>, <a class="el" href="point_8c_source.html#l00091">MATRIX::fx2</a>, <a class="el" href="point_8c_source.html#l00091">MATRIX::fx3</a>, <a class="el" href="point_8c_source.html#l00086">VECTOR::fy</a>, <a class="el" href="point_8c_source.html#l00092">MATRIX::fy1</a>, <a class="el" href="point_8c_source.html#l00092">MATRIX::fy2</a>, <a class="el" href="point_8c_source.html#l00092">MATRIX::fy3</a>, <a class="el" href="point_8c_source.html#l00087">VECTOR::fz</a>, <a class="el" href="point_8c_source.html#l00093">MATRIX::fz1</a>, <a class="el" href="point_8c_source.html#l00093">MATRIX::fz2</a>, <a class="el" href="point_8c_source.html#l00093">MATRIX::fz3</a>, <a class="el" href="nav_8h_source.html#l00235">GetAltRef</a>, <a class="el" href="gps_8c_source.html#l00069">gps</a>, <a class="el" href="gps_8h_source.html#l00039">GPS_FIX_3D</a>, <a class="el" href="max7456_8c_source.html#l00177">home_dir_deg</a>, <a class="el" href="state_8h_source.html#l00944">stateGetHorizontalSpeedDir_f()</a>, <a class="el" href="state_8h_source.html#l00935">stateGetHorizontalSpeedNorm_f()</a>, <a class="el" href="state_8h_source.html#l00719">stateGetPositionEnu_f()</a>, <a class="el" href="state_8h_source.html#l00692">stateGetPositionUtm_f()</a>, <a class="el" href="max7456_8c_source.html#l00279">vMultiplyMatrixByVector()</a>, <a class="el" href="max7456_8c_source.html#l00267">vSubtractVectors()</a>, <a class="el" href="subsystems_2navigation_2waypoints_8c_source.html#l00077">waypoint_get_x()</a>, <a class="el" href="subsystems_2navigation_2waypoints_8c_source.html#l00085">waypoint_get_y()</a>, <a class="el" href="common__nav_8h_source.html#l00045">WaypointX</a>, <a class="el" href="common__nav_8h_source.html#l00046">WaypointY</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00073">EnuCoor_f::x</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00074">EnuCoor_f::y</a>.</p>
+
+<p>Referenced by <a class="el" href="max7456_8c_source.html#l00667">draw_osd()</a>, and <a class="el" href="max7456_8c_source.html#l00937">max7456_init()</a>.</p>
+
+<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="max7456_8c_af647f85cf21dab23d18ac36c8beadd20_cgraph.png" border="0" usemap="#max7456_8c_af647f85cf21dab23d18ac36c8beadd20_cgraph" alt=""/></div>
+<map name="max7456_8c_af647f85cf21dab23d18ac36c8beadd20_cgraph" id="max7456_8c_af647f85cf21dab23d18ac36c8beadd20_cgraph">
+<area shape="rect" id="node2" href="group__state__velocity.html#ga6f8b83126a235daea584aa9ce97f7fac" title="Get dir of horizontal ground speed (float). " alt="" coords="183,22,397,49"/><area shape="rect" id="node4" href="group__state__velocity.html#ga1396b84069296dc0353f25281a472c08" title="Get norm of horizontal ground speed (float). " alt="" coords="175,79,405,106"/><area shape="rect" id="node6" href="group__state__position.html#ga545d479db45e1a9711e59736b6d1309b" title="Get position in local ENU coordinates (float). " alt="" coords="209,134,371,161"/><area shape="rect" id="node18" href="group__state__position.html#ga7488f3b1e3afa9515541c0130278bdac" title="Get position in UTM coordinates (float). " alt="" coords="207,185,373,211"/><area shape="rect" id="node20" href="max7456_8c.html#a35c6a2d16d309f11f32712b4116155f6" title="vMultiplyMatrixByVector" alt="" coords="203,235,377,262"/><area shape="rect" id="node21" href="max7456_8c.html#a31893a86d66bebf3f735a51b2bcdb80c" title="vSubtractVectors" alt="" coords="224,286,356,313"/><area shape="rect" id="node22" href="subsystems_2navigation_2waypoints_8c.html#a62061108340141e0fda55b7c0d8f0145" title="Get X/East coordinate of waypoint in meters. " alt="" coords="230,337,350,363"/><area shape="rect" id="node23" href="subsystems_2navigation_2waypoints_8c.html#ab6dc3af2d184a91218a1fe7f02b858bc" title="Get Y/North coordinate of waypoint in meters. " alt="" coords="230,387,350,414"/><area shape="rect" id="node3" href="group__state__velocity.html#gad9b7b6ea39d5a4ee3e824f97204c4bb5" title="stateCalcHorizontalSpeed\lDir_f" alt="" coords="453,5,641,47"/><area shape="rect" id="node5" href="group__state__velocity.html#ga990849172b82f2e3bc1ab9da2395c9c4" title="stateCalcHorizontalSpeed\lNorm_f" alt="" coords="453,71,641,112"/><area shape="rect" id="node7" href="group__state__position.html#ga718066acd9581365ca5c2aacb29130fd" title="stateCalcPositionEnu_f" alt="" coords="464,137,631,163"/><area shape="rect" id="node8" href="pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title="enu_of_ecef_point_f" alt="" coords="876,111,1025,138"/><area shape="rect" id="node9" href="group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU. " alt="" coords="689,162,828,189"/><area shape="rect" id="node11" href="pprz__geodetic__float_8c.html#ab8d5cb7292ea74802e7a94e265c0703a" title="enu_of_lla_point_f" alt="" coords="691,61,827,87"/><area shape="rect" id="node13" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF. " alt="" coords="709,10,808,37"/><area shape="rect" id="node15" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="709,213,808,239"/><area shape="rect" id="node10" href="group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU. " alt="" coords="877,162,1025,189"/><area shape="rect" id="node12" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title="ecef_of_lla_f" alt="" coords="901,61,1001,87"/><area shape="rect" id="node14" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title="ecef_of_lla_d" alt="" coords="899,10,1003,37"/><area shape="rect" id="node16" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="877,213,1024,239"/><area shape="rect" id="node17" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="883,264,1019,305"/><area shape="rect" id="node19" href="group__state__position.html#ga6893f5e3d84e0464d2bc6fc86a08f16d" title="stateCalcPositionUtm_f" alt="" coords="462,187,633,214"/></map>
+</div>
+</p>
+
+<p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="max7456_8c_af647f85cf21dab23d18ac36c8beadd20_icgraph.png" border="0" usemap="#max7456_8c_af647f85cf21dab23d18ac36c8beadd20_icgraph" alt=""/></div>
+<map name="max7456_8c_af647f85cf21dab23d18ac36c8beadd20_icgraph" id="max7456_8c_af647f85cf21dab23d18ac36c8beadd20_icgraph">
+<area shape="rect" id="node2" href="max7456_8c.html#a079837dac11983fe67050e136b0080e4" title="draw_osd" alt="" coords="187,5,270,32"/><area shape="rect" id="node4" href="max7456_8h.html#a945116b36ac06fdbb6f4aef0c5e7f7ca" title="max7456_init" alt="" coords="175,56,283,83"/><area shape="rect" id="node3" href="max7456_8h.html#a1d6d4401863cba472802654472781050" title="max7456_periodic" alt="" coords="331,5,469,32"/></map>
 </div>
 </p>
 
@@ -412,15 +816,15 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="max7456_8c_source.html#l00204">204</a> of file <a class="el" href="max7456_8c_source.html">max7456.c</a>.</p>
+<p>Definition at line <a class="el" href="max7456_8c_source.html#l01007">1007</a> of file <a class="el" href="max7456_8c_source.html">max7456.c</a>.</p>
 
-<p>References <a class="el" href="spi_8h_source.html#l00149">spi_transaction::input_buf</a>, <a class="el" href="spi_8h_source.html#l00151">spi_transaction::input_length</a>, <a class="el" href="max7456_8c_source.html#l00089">max7456_osd_status</a>, <a class="el" href="max7456_8c_source.html#l00059">max7456_trans</a>, <a class="el" href="max7456_8c_source.html#l00068">osd_attr</a>, <a class="el" href="max7456__regs_8h_source.html#l00056">OSD_AUTO_INCREMENT_MODE</a>, <a class="el" href="max7456_8c_source.html#l00067">osd_char_address</a>, <a class="el" href="max7456__regs_8h_source.html#l00038">OSD_DMAL_REG</a>, <a class="el" href="max7456__regs_8h_source.html#l00036">OSD_DMM_REG</a>, <a class="el" href="max7456_8c_source.html#l00091">osd_enable_val</a>, <a class="el" href="max7456_8c_source.html#l00081">OSD_FINISHED</a>, <a class="el" href="max7456_8c_source.html#l00077">OSD_IDLE</a>, <a class="el" href="max7456_8c_source.html#l00072">OSD_INIT1</a>, <a class="el" href="max7456_8c_source.html#l00073">OSD_INIT2</a>, <a class="el" href="max7456_8c_source.html#l00074">OSD_INIT3</a>, <a class="el" href="max7456_8c_source.html#l00075">OSD_INIT4</a>, <a class="el" href="max7456__regs_8h_source.html#l00040">OSD_OSDBL_REG</a>, <a class="el" href="max7456_8c_source.html#l00076">OSD_READ_STATUS</a>, <a class="el" href="max7456_8c_source.html#l00078">OSD_S_STEP1</a>, <a class="el" href="max7456_8c_source.html#l00079">OSD_S_STEP2</a>, <a class="el" href="max7456_8c_source.html#l00080">OSD_S_STEP3</a>, <a class="el" href="max7456_8c_source.html#l00092">osd_stat_reg</a>, <a class="el" href="max7456_8c_source.html#l00093">osd_stat_reg_valid</a>, <a class="el" href="max7456_8c_source.html#l00063">osd_string</a>, <a class="el" href="max7456__regs_8h_source.html#l00045">OSD_VIDEO_MODE_PAL</a>, <a class="el" href="max7456__regs_8h_source.html#l00034">OSD_VM0_REG</a>, <a class="el" href="spi_8h_source.html#l00150">spi_transaction::output_buf</a>, <a class="el" href="spi_8h_source.html#l00152">spi_transaction::output_length</a>, <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00511">spi_submit()</a>, <a class="el" href="spi_8h_source.html#l00101">SPITransDone</a>, <a class="el" href="spi_8h_source.html#l00099">SPITransSuccess</a>, and <a class="el" href="spi_8h_source.html#l00162">spi_transaction::status</a>.</p>
+<p>References <a class="el" href="spi_8h_source.html#l00149">spi_transaction::input_buf</a>, <a class="el" href="spi_8h_source.html#l00151">spi_transaction::input_length</a>, <a class="el" href="max7456_8c_source.html#l00168">max7456_osd_status</a>, <a class="el" href="max7456_8c_source.html#l00134">max7456_trans</a>, <a class="el" href="max7456_8c_source.html#l00143">osd_attr</a>, <a class="el" href="max7456__regs_8h_source.html#l00056">OSD_AUTO_INCREMENT_MODE</a>, <a class="el" href="max7456_8c_source.html#l00142">osd_char_address</a>, <a class="el" href="max7456__regs_8h_source.html#l00038">OSD_DMAL_REG</a>, <a class="el" href="max7456__regs_8h_source.html#l00036">OSD_DMM_REG</a>, <a class="el" href="max7456_8c_source.html#l00170">osd_enable_val</a>, <a class="el" href="max7456_8c_source.html#l00156">OSD_FINISHED</a>, <a class="el" href="max7456_8c_source.html#l00152">OSD_IDLE</a>, <a class="el" href="max7456_8c_source.html#l00147">OSD_INIT1</a>, <a class="el" href="max7456_8c_source.html#l00148">OSD_INIT2</a>, <a class="el" href="max7456_8c_source.html#l00149">OSD_INIT3</a>, <a class="el" href="max7456_8c_source.html#l00150">OSD_INIT4</a>, <a class="el" href="max7456__regs_8h_source.html#l00061">OSD_NVRAM_BUSY_FLAG</a>, <a class="el" href="max7456__regs_8h_source.html#l00040">OSD_OSDBL_REG</a>, <a class="el" href="max7456_8c_source.html#l00151">OSD_READ_STATUS</a>, <a class="el" href="max7456__regs_8h_source.html#l00060">OSD_RESET_BUSY_FLAG</a>, <a class="el" href="max7456_8c_source.html#l00153">OSD_S_STEP1</a>, <a class="el" href="max7456_8c_source.html#l00154">OSD_S_STEP2</a>, <a class="el" href="max7456_8c_source.html#l00155">OSD_S_STEP3</a>, <a class="el" href="max7456__regs_8h_source.html#l00042">OSD_STAT_REG</a>, <a class="el" href="max7456_8c_source.html#l00171">osd_stat_reg</a>, <a class="el" href="max7456_8c_source.html#l00138">osd_string</a>, <a class="el" href="max7456__regs_8h_source.html#l00045">OSD_VIDEO_MODE_PAL</a>, <a class="el" href="max7456__regs_8h_source.html#l00034">OSD_VM0_REG</a>, <a class="el" href="spi_8h_source.html#l00150">spi_transaction::output_buf</a>, <a class="el" href="spi_8h_source.html#l00152">spi_transaction::output_length</a>, <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00511">spi_submit()</a>, <a class="el" href="spi_8h_source.html#l00101">SPITransDone</a>, <a class="el" href="spi_8h_source.html#l00099">SPITransSuccess</a>, and <a class="el" href="spi_8h_source.html#l00162">spi_transaction::status</a>.</p>
 
-<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="max7456_8c_a9e352b8c2d17bfc367c3a4e1165deee6_cgraph.png" border="0" usemap="#max7456_8c_a9e352b8c2d17bfc367c3a4e1165deee6_cgraph" alt=""/></div>
 <map name="max7456_8c_a9e352b8c2d17bfc367c3a4e1165deee6_cgraph" id="max7456_8c_a9e352b8c2d17bfc367c3a4e1165deee6_cgraph">
 <area shape="rect" id="node2" href="group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction. " alt="" coords="179,5,269,32"/></map>
@@ -443,9 +847,20 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="max7456_8c_source.html#l00095">95</a> of file <a class="el" href="max7456_8c_source.html">max7456.c</a>.</p>
+<p>Definition at line <a class="el" href="max7456_8c_source.html#l00937">937</a> of file <a class="el" href="max7456_8c_source.html">max7456.c</a>.</p>
 
-<p>References <a class="el" href="spi_8h_source.html#l00161">spi_transaction::after_cb</a>, <a class="el" href="spi_8h_source.html#l00160">spi_transaction::before_cb</a>, <a class="el" href="spi_8h_source.html#l00158">spi_transaction::bitorder</a>, <a class="el" href="spi_8h_source.html#l00159">spi_transaction::cdiv</a>, <a class="el" href="spi_8h_source.html#l00156">spi_transaction::cpha</a>, <a class="el" href="spi_8h_source.html#l00155">spi_transaction::cpol</a>, <a class="el" href="spi_8h_source.html#l00157">spi_transaction::dss</a>, <a class="el" href="spi_8h_source.html#l00149">spi_transaction::input_buf</a>, <a class="el" href="spi_8h_source.html#l00151">spi_transaction::input_length</a>, <a class="el" href="max7456_8c_source.html#l00089">max7456_osd_status</a>, <a class="el" href="max7456_8c_source.html#l00059">max7456_trans</a>, <a class="el" href="max7456_8c_source.html#l00090">osd_enable</a>, <a class="el" href="max7456_8c_source.html#l00091">osd_enable_val</a>, <a class="el" href="max7456__regs_8h_source.html#l00048">OSD_IMAGE_ENABLE</a>, <a class="el" href="max7456_8c_source.html#l00062">osd_spi_rx_buffer</a>, <a class="el" href="max7456_8c_source.html#l00061">osd_spi_tx_buffer</a>, <a class="el" href="max7456_8c_source.html#l00071">OSD_UNINIT</a>, <a class="el" href="spi_8h_source.html#l00150">spi_transaction::output_buf</a>, <a class="el" href="spi_8h_source.html#l00152">spi_transaction::output_length</a>, <a class="el" href="spi_8h_source.html#l00154">spi_transaction::select</a>, <a class="el" href="spi_8h_source.html#l00153">spi_transaction::slave_idx</a>, <a class="el" href="spi_8h_source.html#l00074">SPICphaEdge1</a>, <a class="el" href="spi_8h_source.html#l00083">SPICpolIdleLow</a>, <a class="el" href="spi_8h_source.html#l00125">SPIDiv64</a>, <a class="el" href="spi_8h_source.html#l00090">SPIDss8bit</a>, <a class="el" href="spi_8h_source.html#l00112">SPIMSBFirst</a>, and <a class="el" href="spi_8h_source.html#l00063">SPISelectUnselect</a>.</p>
+<p>References <a class="el" href="spi_8h_source.html#l00161">spi_transaction::after_cb</a>, <a class="el" href="spi_8h_source.html#l00160">spi_transaction::before_cb</a>, <a class="el" href="spi_8h_source.html#l00158">spi_transaction::bitorder</a>, <a class="el" href="spi_8h_source.html#l00159">spi_transaction::cdiv</a>, <a class="el" href="spi_8h_source.html#l00156">spi_transaction::cpha</a>, <a class="el" href="spi_8h_source.html#l00155">spi_transaction::cpol</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="spi_8h_source.html#l00157">spi_transaction::dss</a>, <a class="el" href="max7456_8c_source.html#l00287">home_direction()</a>, <a class="el" href="spi_8h_source.html#l00149">spi_transaction::input_buf</a>, <a class="el" href="spi_8h_source.html#l00151">spi_transaction::input_length</a>, <a class="el" href="max7456_8c_source.html#l00168">max7456_osd_status</a>, <a class="el" href="max7456_8c_source.html#l00134">max7456_trans</a>, <a class="el" href="max7456_8c_source.html#l00169">osd_enable</a>, <a class="el" href="max7456_8c_source.html#l00170">osd_enable_val</a>, <a class="el" href="max7456__regs_8h_source.html#l00048">OSD_IMAGE_ENABLE</a>, <a class="el" href="max7456_8c_source.html#l00137">osd_spi_rx_buffer</a>, <a class="el" href="max7456_8c_source.html#l00136">osd_spi_tx_buffer</a>, <a class="el" href="max7456_8c_source.html#l00146">OSD_UNINIT</a>, <a class="el" href="spi_8h_source.html#l00150">spi_transaction::output_buf</a>, <a class="el" href="spi_8h_source.html#l00152">spi_transaction::output_length</a>, <a class="el" href="telemetry_8c_source.html#l00046">register_periodic_telemetry()</a>, <a class="el" href="spi_8h_source.html#l00154">spi_transaction::select</a>, <a class="el" href="max7456_8c_source.html#l00252">send_mag_heading()</a>, <a class="el" href="spi_8h_source.html#l00153">spi_transaction::slave_idx</a>, <a class="el" href="spi_8h_source.html#l00074">SPICphaEdge1</a>, <a class="el" href="spi_8h_source.html#l00083">SPICpolIdleLow</a>, <a class="el" href="spi_8h_source.html#l00125">SPIDiv64</a>, <a class="el" href="spi_8h_source.html#l00090">SPIDss8bit</a>, <a class="el" href="spi_8h_source.html#l00112">SPIMSBFirst</a>, and <a class="el" href="spi_8h_source.html#l00063">SPISelectUnselect</a>.</p>
+
+<p><div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="max7456_8c_a945116b36ac06fdbb6f4aef0c5e7f7ca_cgraph.png" border="0" usemap="#max7456_8c_a945116b36ac06fdbb6f4aef0c5e7f7ca_cgraph" alt=""/></div>
+<map name="max7456_8c_a945116b36ac06fdbb6f4aef0c5e7f7ca_cgraph" id="max7456_8c_a945116b36ac06fdbb6f4aef0c5e7f7ca_cgraph">
+<area shape="rect" id="node2" href="max7456_8c.html#af647f85cf21dab23d18ac36c8beadd20" title="home_direction" alt="" coords="199,210,321,237"/><area shape="rect" id="node25" href="telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function. " alt="" coords="161,261,359,287"/><area shape="rect" id="node26" href="max7456_8c.html#aba26765d16e0ca9259a11d78a6bfec3f" title="send_mag_heading" alt="" coords="187,311,333,338"/><area shape="rect" id="node3" href="group__state__velocity.html#ga6f8b83126a235daea584aa9ce97f7fac" title="Get dir of horizontal ground speed (float). " alt="" coords="415,22,629,49"/><area shape="rect" id="node5" href="group__state__velocity.html#ga1396b84069296dc0353f25281a472c08" title="Get norm of horizontal ground speed (float). " alt="" coords="407,79,637,106"/><area shape="rect" id="node7" href="group__state__position.html#ga545d479db45e1a9711e59736b6d1309b" title="Get position in local ENU coordinates (float). " alt="" coords="441,134,603,161"/><area shape="rect" id="node19" href="group__state__position.html#ga7488f3b1e3afa9515541c0130278bdac" title="Get position in UTM coordinates (float). " alt="" coords="439,185,605,211"/><area shape="rect" id="node21" href="max7456_8c.html#a35c6a2d16d309f11f32712b4116155f6" title="vMultiplyMatrixByVector" alt="" coords="435,235,609,262"/><area shape="rect" id="node22" href="max7456_8c.html#a31893a86d66bebf3f735a51b2bcdb80c" title="vSubtractVectors" alt="" coords="456,286,588,313"/><area shape="rect" id="node23" href="subsystems_2navigation_2waypoints_8c.html#a62061108340141e0fda55b7c0d8f0145" title="Get X/East coordinate of waypoint in meters. " alt="" coords="462,337,582,363"/><area shape="rect" id="node24" href="subsystems_2navigation_2waypoints_8c.html#ab6dc3af2d184a91218a1fe7f02b858bc" title="Get Y/North coordinate of waypoint in meters. " alt="" coords="462,387,582,414"/><area shape="rect" id="node4" href="group__state__velocity.html#gad9b7b6ea39d5a4ee3e824f97204c4bb5" title="stateCalcHorizontalSpeed\lDir_f" alt="" coords="685,5,873,47"/><area shape="rect" id="node6" href="group__state__velocity.html#ga990849172b82f2e3bc1ab9da2395c9c4" title="stateCalcHorizontalSpeed\lNorm_f" alt="" coords="685,71,873,112"/><area shape="rect" id="node8" href="group__state__position.html#ga718066acd9581365ca5c2aacb29130fd" title="stateCalcPositionEnu_f" alt="" coords="696,137,863,163"/><area shape="rect" id="node9" href="pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title="enu_of_ecef_point_f" alt="" coords="1108,111,1257,138"/><area shape="rect" id="node10" href="group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU. " alt="" coords="921,162,1060,189"/><area shape="rect" id="node12" href="pprz__geodetic__float_8c.html#ab8d5cb7292ea74802e7a94e265c0703a" title="enu_of_lla_point_f" alt="" coords="923,61,1059,87"/><area shape="rect" id="node14" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF. " alt="" coords="941,10,1040,37"/><area shape="rect" id="node16" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="941,213,1040,239"/><area shape="rect" id="node11" href="group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU. " alt="" coords="1109,162,1257,189"/><area shape="rect" id="node13" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title="ecef_of_lla_f" alt="" coords="1133,61,1233,87"/><area shape="rect" id="node15" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title="ecef_of_lla_d" alt="" coords="1131,10,1235,37"/><area shape="rect" id="node17" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="1109,213,1256,239"/><area shape="rect" id="node18" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="1115,264,1251,305"/><area shape="rect" id="node20" href="group__state__position.html#ga6893f5e3d84e0464d2bc6fc86a08f16d" title="stateCalcPositionUtm_f" alt="" coords="694,187,865,214"/></map>
+</div>
+</p>
 
 </div>
 </div>
@@ -463,18 +878,18 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="max7456_8c_source.html#l00119">119</a> of file <a class="el" href="max7456_8c_source.html">max7456.c</a>.</p>
+<p>Definition at line <a class="el" href="max7456_8c_source.html#l00966">966</a> of file <a class="el" href="max7456_8c_source.html">max7456.c</a>.</p>
 
-<p>References <a class="el" href="max7456_8c_source.html#l00085">BLINK</a>, <a class="el" href="electrical_8c_source.html#l00066">electrical</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="nav_8h_source.html#l00228">GetPosAlt</a>, <a class="el" href="state_8h_source.html#l00321">State::h_speed_dir_f</a>, <a class="el" href="state_8h_source.html#l00315">State::h_speed_norm_f</a>, <a class="el" href="spi_8h_source.html#l00151">spi_transaction::input_length</a>, <a class="el" href="max7456_8c_source.html#l00086">INVERT</a>, <a class="el" href="electrical_8h_source.html#l00036">LOW_BAT_LEVEL</a>, <a class="el" href="max7456_8c_source.html#l00089">max7456_osd_status</a>, <a class="el" href="max7456_8c_source.html#l00059">max7456_trans</a>, <a class="el" href="max7456_8c_source.html#l00090">osd_enable</a>, <a class="el" href="max7456_8c_source.html#l00091">osd_enable_val</a>, <a class="el" href="max7456_8c_source.html#l00077">OSD_IDLE</a>, <a class="el" href="max7456_8c_source.html#l00072">OSD_INIT1</a>, <a class="el" href="max7456_8c_source.html#l00073">OSD_INIT2</a>, <a class="el" href="max7456_8c_source.html#l00074">OSD_INIT3</a>, <a class="el" href="max7456__regs_8h_source.html#l00041">OSD_OSDBL_REG_R</a>, <a class="el" href="max7456_8c_source.html#l00317">osd_put_s()</a>, <a class="el" href="max7456__regs_8h_source.html#l00050">OSD_RESET</a>, <a class="el" href="max7456_8c_source.html#l00053">osd_sprintf</a>, <a class="el" href="max7456_8c_source.html#l00063">osd_string</a>, <a class="el" href="max7456_8c_source.html#l00071">OSD_UNINIT</a>, <a class="el" href="max7456__regs_8h_source.html#l00034">OSD_VM0_REG</a>, <a class="el" href="spi_8h_source.html#l00150">spi_transaction::output_buf</a>, <a class="el" href="spi_8h_source.html#l00152">spi_transaction::output_length</a>, <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00511">spi_submit()</a>, <a class="el" href="spi_8h_source.html#l00101">SPITransDone</a>, <a class="el" href="state_8c_source.html#l00036">state</a>, <a class="el" href="state_8h_source.html#l00917">stateGetSpeedEnu_f()</a>, <a class="el" href="spi_8h_source.html#l00162">spi_transaction::status</a>, <a class="el" href="max7456_8c_source.html#l00066">step</a>, and <a class="el" href="electrical_8h_source.html#l00045">Electrical::vsupply</a>.</p>
+<p>References <a class="el" href="max7456_8c_source.html#l00667">draw_osd()</a>, <a class="el" href="spi_8h_source.html#l00151">spi_transaction::input_length</a>, <a class="el" href="max7456_8c_source.html#l00168">max7456_osd_status</a>, <a class="el" href="max7456_8c_source.html#l00134">max7456_trans</a>, <a class="el" href="max7456_8c_source.html#l00169">osd_enable</a>, <a class="el" href="max7456_8c_source.html#l00170">osd_enable_val</a>, <a class="el" href="max7456_8c_source.html#l00152">OSD_IDLE</a>, <a class="el" href="max7456_8c_source.html#l00147">OSD_INIT1</a>, <a class="el" href="max7456_8c_source.html#l00148">OSD_INIT2</a>, <a class="el" href="max7456_8c_source.html#l00149">OSD_INIT3</a>, <a class="el" href="max7456__regs_8h_source.html#l00041">OSD_OSDBL_REG_R</a>, <a class="el" href="max7456__regs_8h_source.html#l00050">OSD_RESET</a>, <a class="el" href="max7456_8c_source.html#l00146">OSD_UNINIT</a>, <a class="el" href="max7456__regs_8h_source.html#l00034">OSD_VM0_REG</a>, <a class="el" href="spi_8h_source.html#l00150">spi_transaction::output_buf</a>, <a class="el" href="spi_8h_source.html#l00152">spi_transaction::output_length</a>, <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00511">spi_submit()</a>, <a class="el" href="spi_8h_source.html#l00101">SPITransDone</a>, <a class="el" href="spi_8h_source.html#l00162">spi_transaction::status</a>, and <a class="el" href="max7456_8c_source.html#l00141">step</a>.</p>
 
-<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="max7456_8c_a1d6d4401863cba472802654472781050_cgraph.png" border="0" usemap="#max7456_8c_a1d6d4401863cba472802654472781050_cgraph" alt=""/></div>
 <map name="max7456_8c_a1d6d4401863cba472802654472781050_cgraph" id="max7456_8c_a1d6d4401863cba472802654472781050_cgraph">
-<area shape="rect" id="node2" href="max7456_8c.html#a2b5efe546809c5c4b7d6470ba879d9fa" title="osd_put_s" alt="" coords="226,5,313,32"/><area shape="rect" id="node4" href="group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction. " alt="" coords="429,56,519,83"/><area shape="rect" id="node5" href="group__state__velocity.html#ga8e7f86fe83bd1b767f9c5016ed245822" title="Get ground speed in local ENU coordinates (float). " alt="" coords="192,107,347,133"/><area shape="rect" id="node3" href="max7456_8c.html#ab6589475b928e58fdf044d03783fcb54" title="ascii_to_osd_c" alt="" coords="417,5,531,32"/><area shape="rect" id="node6" href="group__state__velocity.html#ga2f7eff6a1ac5d75adf7f70803be06483" title="stateCalcSpeedEnu_f" alt="" coords="395,107,553,133"/><area shape="rect" id="node7" href="pprz__geodetic__float_8c.html#ac44c5ea35811dcd7f50fb3741d0c12ad" title="enu_of_ecef_vect_f" alt="" coords="601,107,745,133"/></map>
+<area shape="rect" id="node2" href="max7456_8c.html#a079837dac11983fe67050e136b0080e4" title="draw_osd" alt="" coords="192,233,275,260"/><area shape="rect" id="node30" href="group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction. " alt="" coords="639,5,730,32"/><area shape="rect" id="node3" href="max7456_8c.html#a2e383d26ae071a8ae13f7b02f975f4ea" title="calc_flight_time_left" alt="" coords="348,259,496,285"/><area shape="rect" id="node4" href="group__state__velocity.html#ga1396b84069296dc0353f25281a472c08" title="Get norm of horizontal ground speed (float). " alt="" coords="569,216,800,243"/><area shape="rect" id="node6" href="max7456_8c.html#af647f85cf21dab23d18ac36c8beadd20" title="home_direction" alt="" coords="361,368,483,395"/><area shape="rect" id="node9" href="group__state__position.html#ga545d479db45e1a9711e59736b6d1309b" title="Get position in local ENU coordinates (float). " alt="" coords="603,267,766,293"/><area shape="rect" id="node25" href="subsystems_2navigation_2waypoints_8c.html#a62061108340141e0fda55b7c0d8f0145" title="Get X/East coordinate of waypoint in meters. " alt="" coords="625,520,745,547"/><area shape="rect" id="node26" href="subsystems_2navigation_2waypoints_8c.html#ab6dc3af2d184a91218a1fe7f02b858bc" title="Get Y/North coordinate of waypoint in meters. " alt="" coords="625,571,745,597"/><area shape="rect" id="node27" href="max7456_8c.html#a2b5efe546809c5c4b7d6470ba879d9fa" title="osd_put_s" alt="" coords="379,56,465,83"/><area shape="rect" id="node31" href="group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float). " alt="" coords="323,107,521,133"/><area shape="rect" id="node36" href="group__state__velocity.html#ga8e7f86fe83bd1b767f9c5016ed245822" title="Get ground speed in local ENU coordinates (float). " alt="" coords="345,157,499,184"/><area shape="rect" id="node5" href="group__state__velocity.html#ga990849172b82f2e3bc1ab9da2395c9c4" title="stateCalcHorizontalSpeed\lNorm_f" alt="" coords="848,209,1036,250"/><area shape="rect" id="node7" href="group__state__velocity.html#ga6f8b83126a235daea584aa9ce97f7fac" title="Get dir of horizontal ground speed (float). " alt="" coords="578,469,791,496"/><area shape="rect" id="node21" href="group__state__position.html#ga7488f3b1e3afa9515541c0130278bdac" title="Get position in UTM coordinates (float). " alt="" coords="601,368,768,395"/><area shape="rect" id="node23" href="max7456_8c.html#a35c6a2d16d309f11f32712b4116155f6" title="vMultiplyMatrixByVector" alt="" coords="598,419,771,445"/><area shape="rect" id="node24" href="max7456_8c.html#a31893a86d66bebf3f735a51b2bcdb80c" title="vSubtractVectors" alt="" coords="619,317,751,344"/><area shape="rect" id="node8" href="group__state__velocity.html#gad9b7b6ea39d5a4ee3e824f97204c4bb5" title="stateCalcHorizontalSpeed\lDir_f" alt="" coords="848,462,1036,503"/><area shape="rect" id="node10" href="group__state__position.html#ga718066acd9581365ca5c2aacb29130fd" title="stateCalcPositionEnu_f" alt="" coords="859,275,1025,301"/><area shape="rect" id="node11" href="pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title="enu_of_ecef_point_f" alt="" coords="1285,220,1435,247"/><area shape="rect" id="node12" href="group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU. " alt="" coords="1091,169,1230,196"/><area shape="rect" id="node14" href="pprz__geodetic__float_8c.html#ab8d5cb7292ea74802e7a94e265c0703a" title="enu_of_lla_point_f" alt="" coords="1093,271,1229,297"/><area shape="rect" id="node16" href="group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF. " alt="" coords="1111,321,1210,348"/><area shape="rect" id="node18" href="pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="1111,372,1210,399"/><area shape="rect" id="node13" href="group__math__geodetic__int.html#ga85bcbfc73a43b120465422ec55647573" title="Convert a point from ECEF to local ENU. " alt="" coords="1286,169,1434,196"/><area shape="rect" id="node15" href="pprz__geodetic__float_8c.html#a65bc5ba8b61d014ca659035759cc001c" title="ecef_of_lla_f" alt="" coords="1310,271,1410,297"/><area shape="rect" id="node17" href="group__math__geodetic__double.html#gae6608c48696daebf3382f08e655028d9" title="ecef_of_lla_d" alt="" coords="1308,321,1412,348"/><area shape="rect" id="node19" href="pprz__geodetic__float_8c.html#a25c5bd31de0ea0d0caf14a0d217ad3ea" title="isometric_latitude_f" alt="" coords="1287,372,1433,399"/><area shape="rect" id="node20" href="pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="1292,423,1428,465"/><area shape="rect" id="node22" href="group__state__position.html#ga6893f5e3d84e0464d2bc6fc86a08f16d" title="stateCalcPositionUtm_f" alt="" coords="857,371,1027,397"/><area shape="rect" id="node28" href="max7456_8c.html#ab6589475b928e58fdf044d03783fcb54" title="ascii_to_osd_c" alt="" coords="627,56,742,83"/><area shape="rect" id="node29" href="ins__vectornav_8c.html#aa01d3425df2eb0f33ced38c9d8fa8f05" title="PRINT_CONFIG_MSG" alt="" coords="867,56,1017,83"/><area shape="rect" id="node32" href="group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float). " alt="" coords="603,107,767,133"/><area shape="rect" id="node33" href="group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title="orientationCalcEulers_f" alt="" coords="858,107,1026,133"/><area shape="rect" id="node34" href="group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76" title="float_eulers_of_rmat" alt="" coords="1084,113,1237,140"/><area shape="rect" id="node35" href="group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="euler rotation &#39;ZYX&#39; " alt="" coords="1085,63,1236,89"/><area shape="rect" id="node37" href="group__state__velocity.html#ga2f7eff6a1ac5d75adf7f70803be06483" title="stateCalcSpeedEnu_f" alt="" coords="605,157,764,184"/><area shape="rect" id="node38" href="pprz__geodetic__float_8c.html#ac44c5ea35811dcd7f50fb3741d0c12ad" title="enu_of_ecef_vect_f" alt="" coords="870,157,1014,184"/></map>
 </div>
 </p>
 
@@ -530,37 +945,264 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="max7456_8c_source.html#l00317">317</a> of file <a class="el" href="max7456_8c_source.html">max7456.c</a>.</p>
+<p>Definition at line <a class="el" href="max7456_8c_source.html#l00485">485</a> of file <a class="el" href="max7456_8c_source.html">max7456.c</a>.</p>
 
-<p>References <a class="el" href="max7456_8c_source.html#l00276">ascii_to_osd_c()</a>, <a class="el" href="max7456_8c_source.html#l00089">max7456_osd_status</a>, <a class="el" href="max7456_8c_source.html#l00059">max7456_trans</a>, <a class="el" href="max7456_8c_source.html#l00068">osd_attr</a>, <a class="el" href="max7456_8c_source.html#l00067">osd_char_address</a>, <a class="el" href="max7456__regs_8h_source.html#l00037">OSD_DMAH_REG</a>, <a class="el" href="max7456_8c_source.html#l00077">OSD_IDLE</a>, <a class="el" href="max7456_8c_source.html#l00078">OSD_S_STEP1</a>, <a class="el" href="max7456_8c_source.html#l00063">osd_string</a>, <a class="el" href="max7456_8c_source.html#l00052">OSD_STRING_SIZE</a>, <a class="el" href="spi_8h_source.html#l00150">spi_transaction::output_buf</a>, <a class="el" href="spi_8h_source.html#l00152">spi_transaction::output_length</a>, and <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00511">spi_submit()</a>.</p>
+<p>References <a class="el" href="max7456_8c_source.html#l00369">ascii_to_osd_c()</a>, <a class="el" href="max7456_8c_source.html#l00160">BLINK</a>, <a class="el" href="max7456_8c_source.html#l00164">C_JUST</a>, <a class="el" href="nps__radio__control__spektrum_8c_source.html#l00105">idx</a>, <a class="el" href="max7456_8c_source.html#l00161">INVERT</a>, <a class="el" href="max7456_8c_source.html#l00168">max7456_osd_status</a>, <a class="el" href="max7456_8c_source.html#l00134">max7456_trans</a>, <a class="el" href="max7456_8c_source.html#l00143">osd_attr</a>, <a class="el" href="max7456_8c_source.html#l00142">osd_char_address</a>, <a class="el" href="max7456__regs_8h_source.html#l00037">OSD_DMAH_REG</a>, <a class="el" href="max7456_8c_source.html#l00152">OSD_IDLE</a>, <a class="el" href="max7456_8c_source.html#l00153">OSD_S_STEP1</a>, <a class="el" href="max7456_8c_source.html#l00138">osd_string</a>, <a class="el" href="max7456_8c_source.html#l00058">OSD_STRING_SIZE</a>, <a class="el" href="spi_8h_source.html#l00150">spi_transaction::output_buf</a>, <a class="el" href="spi_8h_source.html#l00152">spi_transaction::output_length</a>, <a class="el" href="max7456_8c_source.html#l00163">R_JUST</a>, <a class="el" href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00511">spi_submit()</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00089">Int32Vect3::x</a>.</p>
 
-<p>Referenced by <a class="el" href="max7456_8c_source.html#l00119">max7456_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="max7456_8c_source.html#l00667">draw_osd()</a>.</p>
 
-<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="max7456_8c_a2b5efe546809c5c4b7d6470ba879d9fa_cgraph.png" border="0" usemap="#max7456_8c_a2b5efe546809c5c4b7d6470ba879d9fa_cgraph" alt=""/></div>
 <map name="max7456_8c_a2b5efe546809c5c4b7d6470ba879d9fa_cgraph" id="max7456_8c_a2b5efe546809c5c4b7d6470ba879d9fa_cgraph">
-<area shape="rect" id="node2" href="max7456_8c.html#ab6589475b928e58fdf044d03783fcb54" title="ascii_to_osd_c" alt="" coords="140,5,255,32"/><area shape="rect" id="node3" href="group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction. " alt="" coords="152,56,243,83"/></map>
+<area shape="rect" id="node2" href="max7456_8c.html#ab6589475b928e58fdf044d03783fcb54" title="ascii_to_osd_c" alt="" coords="140,5,255,32"/><area shape="rect" id="node4" href="group__spi.html#ga5d383931766cb373ebad0b8bc26d439d" title="Submit SPI transaction. " alt="" coords="152,56,243,83"/><area shape="rect" id="node3" href="ins__vectornav_8c.html#aa01d3425df2eb0f33ced38c9d8fa8f05" title="PRINT_CONFIG_MSG" alt="" coords="303,5,453,32"/></map>
 </div>
 </p>
 
-<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="max7456_8c_a2b5efe546809c5c4b7d6470ba879d9fa_icgraph.png" border="0" usemap="#max7456_8c_a2b5efe546809c5c4b7d6470ba879d9fa_icgraph" alt=""/></div>
 <map name="max7456_8c_a2b5efe546809c5c4b7d6470ba879d9fa_icgraph" id="max7456_8c_a2b5efe546809c5c4b7d6470ba879d9fa_icgraph">
-<area shape="rect" id="node2" href="max7456_8h.html#a1d6d4401863cba472802654472781050" title="max7456_periodic" alt="" coords="140,5,279,32"/></map>
+<area shape="rect" id="node2" href="max7456_8c.html#a079837dac11983fe67050e136b0080e4" title="draw_osd" alt="" coords="140,5,223,32"/><area shape="rect" id="node3" href="max7456_8h.html#a1d6d4401863cba472802654472781050" title="max7456_periodic" alt="" coords="271,5,409,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aba26765d16e0ca9259a11d78a6bfec3f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void send_mag_heading </td>
+          <td>(</td>
+          <td class="paramtype">struct transport_tx *&#160;</td>
+          <td class="paramname"><em>trans</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct link_device *&#160;</td>
+          <td class="paramname"><em>dev</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="max7456_8c_source.html#l00252">252</a> of file <a class="el" href="max7456_8c_source.html">max7456.c</a>.</p>
+
+<p>References <a class="el" href="max7456_8c_source.html#l00176">gps_course_deg</a>, <a class="el" href="max7456_8c_source.html#l00177">home_dir_deg</a>, and <a class="el" href="max7456_8c_source.html#l00174">mag_course_deg</a>.</p>
+
+<p>Referenced by <a class="el" href="max7456_8c_source.html#l00937">max7456_init()</a>.</p>
+
+<p><div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="max7456_8c_aba26765d16e0ca9259a11d78a6bfec3f_icgraph.png" border="0" usemap="#max7456_8c_aba26765d16e0ca9259a11d78a6bfec3f_icgraph" alt=""/></div>
+<map name="max7456_8c_aba26765d16e0ca9259a11d78a6bfec3f_icgraph" id="max7456_8c_aba26765d16e0ca9259a11d78a6bfec3f_icgraph">
+<area shape="rect" id="node2" href="max7456_8h.html#a945116b36ac06fdbb6f4aef0c5e7f7ca" title="max7456_init" alt="" coords="200,5,308,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a35c6a2d16d309f11f32712b4116155f6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void vMultiplyMatrixByVector </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="max7456_8c.html#structVECTOR">VECTOR</a> *&#160;</td>
+          <td class="paramname"><em>svA</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="max7456_8c.html#structMATRIX">MATRIX</a>&#160;</td>
+          <td class="paramname"><em>smB</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="max7456_8c.html#structVECTOR">VECTOR</a>&#160;</td>
+          <td class="paramname"><em>svC</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="max7456_8c_source.html#l00279">279</a> of file <a class="el" href="max7456_8c_source.html">max7456.c</a>.</p>
+
+<p>References <a class="el" href="point_8c_source.html#l00085">VECTOR::fx</a>, <a class="el" href="point_8c_source.html#l00091">MATRIX::fx1</a>, <a class="el" href="point_8c_source.html#l00091">MATRIX::fx2</a>, <a class="el" href="point_8c_source.html#l00091">MATRIX::fx3</a>, <a class="el" href="point_8c_source.html#l00086">VECTOR::fy</a>, <a class="el" href="point_8c_source.html#l00092">MATRIX::fy1</a>, <a class="el" href="point_8c_source.html#l00092">MATRIX::fy2</a>, <a class="el" href="point_8c_source.html#l00092">MATRIX::fy3</a>, <a class="el" href="point_8c_source.html#l00087">VECTOR::fz</a>, <a class="el" href="point_8c_source.html#l00093">MATRIX::fz1</a>, <a class="el" href="point_8c_source.html#l00093">MATRIX::fz2</a>, and <a class="el" href="point_8c_source.html#l00093">MATRIX::fz3</a>.</p>
+
+<p>Referenced by <a class="el" href="max7456_8c_source.html#l00287">home_direction()</a>.</p>
+
+<p><div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="max7456_8c_a35c6a2d16d309f11f32712b4116155f6_icgraph.png" border="0" usemap="#max7456_8c_a35c6a2d16d309f11f32712b4116155f6_icgraph" alt=""/></div>
+<map name="max7456_8c_a35c6a2d16d309f11f32712b4116155f6_icgraph" id="max7456_8c_a35c6a2d16d309f11f32712b4116155f6_icgraph">
+<area shape="rect" id="node2" href="max7456_8c.html#af647f85cf21dab23d18ac36c8beadd20" title="home_direction" alt="" coords="227,31,348,57"/><area shape="rect" id="node3" href="max7456_8c.html#a079837dac11983fe67050e136b0080e4" title="draw_osd" alt="" coords="409,5,491,32"/><area shape="rect" id="node5" href="max7456_8h.html#a945116b36ac06fdbb6f4aef0c5e7f7ca" title="max7456_init" alt="" coords="396,56,504,83"/><area shape="rect" id="node4" href="max7456_8h.html#a1d6d4401863cba472802654472781050" title="max7456_periodic" alt="" coords="552,5,691,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a31893a86d66bebf3f735a51b2bcdb80c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void vSubtractVectors </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="max7456_8c.html#structVECTOR">VECTOR</a> *&#160;</td>
+          <td class="paramname"><em>svA</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="max7456_8c.html#structVECTOR">VECTOR</a>&#160;</td>
+          <td class="paramname"><em>svB</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="max7456_8c.html#structVECTOR">VECTOR</a>&#160;</td>
+          <td class="paramname"><em>svC</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="max7456_8c_source.html#l00267">267</a> of file <a class="el" href="max7456_8c_source.html">max7456.c</a>.</p>
+
+<p>References <a class="el" href="point_8c_source.html#l00085">VECTOR::fx</a>, <a class="el" href="point_8c_source.html#l00086">VECTOR::fy</a>, and <a class="el" href="point_8c_source.html#l00087">VECTOR::fz</a>.</p>
+
+<p>Referenced by <a class="el" href="max7456_8c_source.html#l00287">home_direction()</a>.</p>
+
+<p><div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="max7456_8c_a31893a86d66bebf3f735a51b2bcdb80c_icgraph.png" border="0" usemap="#max7456_8c_a31893a86d66bebf3f735a51b2bcdb80c_icgraph" alt=""/></div>
+<map name="max7456_8c_a31893a86d66bebf3f735a51b2bcdb80c_icgraph" id="max7456_8c_a31893a86d66bebf3f735a51b2bcdb80c_icgraph">
+<area shape="rect" id="node2" href="max7456_8c.html#af647f85cf21dab23d18ac36c8beadd20" title="home_direction" alt="" coords="185,31,307,57"/><area shape="rect" id="node3" href="max7456_8c.html#a079837dac11983fe67050e136b0080e4" title="draw_osd" alt="" coords="367,5,450,32"/><area shape="rect" id="node5" href="max7456_8h.html#a945116b36ac06fdbb6f4aef0c5e7f7ca" title="max7456_init" alt="" coords="355,56,463,83"/><area shape="rect" id="node4" href="max7456_8h.html#a1d6d4401863cba472802654472781050" title="max7456_periodic" alt="" coords="511,5,649,32"/></map>
 </div>
 </p>
 
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
+<a class="anchor" id="a3792b559a9c286ce1d23a5e8fbc71403"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float gps_course_deg = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="max7456_8c_source.html#l00176">176</a> of file <a class="el" href="max7456_8c_source.html">max7456.c</a>.</p>
+
+<p>Referenced by <a class="el" href="max7456_8c_source.html#l00667">draw_osd()</a>, and <a class="el" href="max7456_8c_source.html#l00252">send_mag_heading()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab6448fcf9ae22d27c05ce676582075dc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float home_dir_deg = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="max7456_8c_source.html#l00177">177</a> of file <a class="el" href="max7456_8c_source.html">max7456.c</a>.</p>
+
+<p>Referenced by <a class="el" href="max7456_8c_source.html#l00287">home_direction()</a>, and <a class="el" href="max7456_8c_source.html#l00252">send_mag_heading()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7b8eb5fd734424d9b1acb486f42bb2f3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float mag_course_deg = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="max7456_8c_source.html#l00174">174</a> of file <a class="el" href="max7456_8c_source.html">max7456.c</a>.</p>
+
+<p>Referenced by <a class="el" href="max7456_8c_source.html#l00667">draw_osd()</a>, and <a class="el" href="max7456_8c_source.html#l00252">send_mag_heading()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa34d54866a11595ed5dcb12a5ebf59cc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float mag_heading_rad = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="max7456_8c_source.html#l00175">175</a> of file <a class="el" href="max7456_8c_source.html">max7456.c</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a1a2e7353726577174986f047eb2da00a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -571,9 +1213,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="max7456_8c_source.html#l00089">89</a> of file <a class="el" href="max7456_8c_source.html">max7456.c</a>.</p>
+<p>Definition at line <a class="el" href="max7456_8c_source.html#l00168">168</a> of file <a class="el" href="max7456_8c_source.html">max7456.c</a>.</p>
 
-<p>Referenced by <a class="el" href="max7456_8c_source.html#l00204">max7456_event()</a>, <a class="el" href="max7456_8c_source.html#l00095">max7456_init()</a>, <a class="el" href="max7456_8c_source.html#l00119">max7456_periodic()</a>, and <a class="el" href="max7456_8c_source.html#l00317">osd_put_s()</a>.</p>
+<p>Referenced by <a class="el" href="max7456_8c_source.html#l01007">max7456_event()</a>, <a class="el" href="max7456_8c_source.html#l00937">max7456_init()</a>, <a class="el" href="max7456_8c_source.html#l00966">max7456_periodic()</a>, and <a class="el" href="max7456_8c_source.html#l00485">osd_put_s()</a>.</p>
 
 </div>
 </div>
@@ -587,9 +1229,25 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="max7456_8c_source.html#l00059">59</a> of file <a class="el" href="max7456_8c_source.html">max7456.c</a>.</p>
+<p>Definition at line <a class="el" href="max7456_8c_source.html#l00134">134</a> of file <a class="el" href="max7456_8c_source.html">max7456.c</a>.</p>
 
-<p>Referenced by <a class="el" href="max7456_8c_source.html#l00204">max7456_event()</a>, <a class="el" href="max7456_8c_source.html#l00095">max7456_init()</a>, <a class="el" href="max7456_8c_source.html#l00119">max7456_periodic()</a>, and <a class="el" href="max7456_8c_source.html#l00317">osd_put_s()</a>.</p>
+<p>Referenced by <a class="el" href="max7456_8c_source.html#l01007">max7456_event()</a>, <a class="el" href="max7456_8c_source.html#l00937">max7456_init()</a>, <a class="el" href="max7456_8c_source.html#l00966">max7456_periodic()</a>, and <a class="el" href="max7456_8c_source.html#l00485">osd_put_s()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa6be6884027e9a7012c49a401b3f83cf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> max_flyable_distance_left = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="max7456_8c_source.html#l00172">172</a> of file <a class="el" href="max7456_8c_source.html">max7456.c</a>.</p>
+
+<p>Referenced by <a class="el" href="max7456_8c_source.html#l00414">calc_flight_time_left()</a>, and <a class="el" href="max7456_8c_source.html#l00667">draw_osd()</a>.</p>
 
 </div>
 </div>
@@ -603,9 +1261,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="max7456_8c_source.html#l00068">68</a> of file <a class="el" href="max7456_8c_source.html">max7456.c</a>.</p>
+<p>Definition at line <a class="el" href="max7456_8c_source.html#l00143">143</a> of file <a class="el" href="max7456_8c_source.html">max7456.c</a>.</p>
 
-<p>Referenced by <a class="el" href="max7456_8c_source.html#l00204">max7456_event()</a>, and <a class="el" href="max7456_8c_source.html#l00317">osd_put_s()</a>.</p>
+<p>Referenced by <a class="el" href="max7456_8c_source.html#l01007">max7456_event()</a>, and <a class="el" href="max7456_8c_source.html#l00485">osd_put_s()</a>.</p>
 
 </div>
 </div>
@@ -619,7 +1277,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="max7456_8c_source.html#l00065">65</a> of file <a class="el" href="max7456_8c_source.html">max7456.c</a>.</p>
+<p>Definition at line <a class="el" href="max7456_8c_source.html#l00140">140</a> of file <a class="el" href="max7456_8c_source.html">max7456.c</a>.</p>
 
 </div>
 </div>
@@ -633,9 +1291,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="max7456_8c_source.html#l00067">67</a> of file <a class="el" href="max7456_8c_source.html">max7456.c</a>.</p>
+<p>Definition at line <a class="el" href="max7456_8c_source.html#l00142">142</a> of file <a class="el" href="max7456_8c_source.html">max7456.c</a>.</p>
 
-<p>Referenced by <a class="el" href="max7456_8c_source.html#l00204">max7456_event()</a>, and <a class="el" href="max7456_8c_source.html#l00317">osd_put_s()</a>.</p>
+<p>Referenced by <a class="el" href="max7456_8c_source.html#l01007">max7456_event()</a>, and <a class="el" href="max7456_8c_source.html#l00485">osd_put_s()</a>.</p>
 
 </div>
 </div>
@@ -649,9 +1307,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="max7456_8c_source.html#l00090">90</a> of file <a class="el" href="max7456_8c_source.html">max7456.c</a>.</p>
+<p>Definition at line <a class="el" href="max7456_8c_source.html#l00169">169</a> of file <a class="el" href="max7456_8c_source.html">max7456.c</a>.</p>
 
-<p>Referenced by <a class="el" href="max7456_8c_source.html#l00095">max7456_init()</a>, and <a class="el" href="max7456_8c_source.html#l00119">max7456_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="max7456_8c_source.html#l00937">max7456_init()</a>, and <a class="el" href="max7456_8c_source.html#l00966">max7456_periodic()</a>.</p>
 
 </div>
 </div>
@@ -665,9 +1323,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="max7456_8c_source.html#l00091">91</a> of file <a class="el" href="max7456_8c_source.html">max7456.c</a>.</p>
+<p>Definition at line <a class="el" href="max7456_8c_source.html#l00170">170</a> of file <a class="el" href="max7456_8c_source.html">max7456.c</a>.</p>
 
-<p>Referenced by <a class="el" href="max7456_8c_source.html#l00204">max7456_event()</a>, <a class="el" href="max7456_8c_source.html#l00095">max7456_init()</a>, and <a class="el" href="max7456_8c_source.html#l00119">max7456_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="max7456_8c_source.html#l01007">max7456_event()</a>, <a class="el" href="max7456_8c_source.html#l00937">max7456_init()</a>, and <a class="el" href="max7456_8c_source.html#l00966">max7456_periodic()</a>.</p>
 
 </div>
 </div>
@@ -681,9 +1339,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="max7456_8c_source.html#l00062">62</a> of file <a class="el" href="max7456_8c_source.html">max7456.c</a>.</p>
+<p>Definition at line <a class="el" href="max7456_8c_source.html#l00137">137</a> of file <a class="el" href="max7456_8c_source.html">max7456.c</a>.</p>
 
-<p>Referenced by <a class="el" href="max7456_8c_source.html#l00095">max7456_init()</a>.</p>
+<p>Referenced by <a class="el" href="max7456_8c_source.html#l00937">max7456_init()</a>.</p>
 
 </div>
 </div>
@@ -697,9 +1355,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="max7456_8c_source.html#l00061">61</a> of file <a class="el" href="max7456_8c_source.html">max7456.c</a>.</p>
+<p>Definition at line <a class="el" href="max7456_8c_source.html#l00136">136</a> of file <a class="el" href="max7456_8c_source.html">max7456.c</a>.</p>
 
-<p>Referenced by <a class="el" href="max7456_8c_source.html#l00095">max7456_init()</a>.</p>
+<p>Referenced by <a class="el" href="max7456_8c_source.html#l00937">max7456_init()</a>.</p>
 
 </div>
 </div>
@@ -713,25 +1371,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="max7456_8c_source.html#l00092">92</a> of file <a class="el" href="max7456_8c_source.html">max7456.c</a>.</p>
+<p>Definition at line <a class="el" href="max7456_8c_source.html#l00171">171</a> of file <a class="el" href="max7456_8c_source.html">max7456.c</a>.</p>
 
-<p>Referenced by <a class="el" href="max7456_8c_source.html#l00204">max7456_event()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a700c37442b224ae303b633ac0c02c73c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool osd_stat_reg_valid = <a class="el" href="rtwtypes_8h.html#a65e9886d74aaee76545e83dd09011727">false</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="max7456_8c_source.html#l00093">93</a> of file <a class="el" href="max7456_8c_source.html">max7456.c</a>.</p>
-
-<p>Referenced by <a class="el" href="max7456_8c_source.html#l00204">max7456_event()</a>.</p>
+<p>Referenced by <a class="el" href="max7456_8c_source.html#l01007">max7456_event()</a>.</p>
 
 </div>
 </div>
@@ -745,7 +1387,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="max7456_8c_source.html#l00064">64</a> of file <a class="el" href="max7456_8c_source.html">max7456.c</a>.</p>
+<p>Definition at line <a class="el" href="max7456_8c_source.html#l00139">139</a> of file <a class="el" href="max7456_8c_source.html">max7456.c</a>.</p>
 
 </div>
 </div>
@@ -759,9 +1401,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="max7456_8c_source.html#l00063">63</a> of file <a class="el" href="max7456_8c_source.html">max7456.c</a>.</p>
+<p>Definition at line <a class="el" href="max7456_8c_source.html#l00138">138</a> of file <a class="el" href="max7456_8c_source.html">max7456.c</a>.</p>
 
-<p>Referenced by <a class="el" href="max7456_8c_source.html#l00368">_osd_sprintf()</a>, <a class="el" href="max7456_8c_source.html#l00204">max7456_event()</a>, <a class="el" href="max7456_8c_source.html#l00119">max7456_periodic()</a>, and <a class="el" href="max7456_8c_source.html#l00317">osd_put_s()</a>.</p>
+<p>Referenced by <a class="el" href="max7456_8c_source.html#l00548">_osd_sprintf()</a>, <a class="el" href="max7456_8c_source.html#l00667">draw_osd()</a>, <a class="el" href="max7456_8c_source.html#l01007">max7456_event()</a>, and <a class="el" href="max7456_8c_source.html#l00485">osd_put_s()</a>.</p>
 
 </div>
 </div>
@@ -775,9 +1417,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="max7456_8c_source.html#l00066">66</a> of file <a class="el" href="max7456_8c_source.html">max7456.c</a>.</p>
+<p>Definition at line <a class="el" href="max7456_8c_source.html#l00141">141</a> of file <a class="el" href="max7456_8c_source.html">max7456.c</a>.</p>
 
-<p>Referenced by <a class="el" href="max7456_8c_source.html#l00119">max7456_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="max7456_8c_source.html#l00667">draw_osd()</a>, and <a class="el" href="max7456_8c_source.html#l00966">max7456_periodic()</a>.</p>
 
 </div>
 </div>
@@ -787,7 +1429,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_ba28e41237872f6268f6dbae3db26982.html">display</a></li><li class="navelem"><a class="el" href="max7456_8c.html">max7456.c</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:03:14 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:03:29 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

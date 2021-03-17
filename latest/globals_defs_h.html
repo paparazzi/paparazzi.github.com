@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -255,17 +255,26 @@ $(document).ready(function(){initNavTree('globals_defs_h.html','');});
 <li>HACKHD_TIMER_OF_DELAY
 : <a class="el" href="hackhd_8c.html#a3148e6ea5394c8f8f5dd669c72d27f8e">hackhd.c</a>
 </li>
+<li>HAL_CRY_ENFORCE_FALLBACK
+: <a class="el" href="group__HAL__CONF.html#ga398a24db3d6c21e660212176cce2bc97">halconf.h</a>
+</li>
+<li>HAL_CRY_USE_FALLBACK
+: <a class="el" href="group__HAL__CONF.html#gaf928366a58646214378d8eef8263a453">halconf.h</a>
+</li>
 <li>HAL_USE_ADC
 : <a class="el" href="group__HAL__CONF.html#ga413a1b6c0ca2c9e524df50ceac1275fd">halconf.h</a>
 </li>
 <li>HAL_USE_CAN
 : <a class="el" href="group__HAL__CONF.html#ga2e351185eace5acfd90b65c9fe796355">halconf.h</a>
 </li>
+<li>HAL_USE_CRY
+: <a class="el" href="group__HAL__CONF.html#ga6afc9d1e6be6098bf66d1b9b1914ac51">halconf.h</a>
+</li>
 <li>HAL_USE_DAC
 : <a class="el" href="group__HAL__CONF.html#gafa9dbe1932df28930e9cfff6000b43d6">halconf.h</a>
 </li>
-<li>HAL_USE_EXT
-: <a class="el" href="group__HAL__CONF.html#ga2dd40c0fdd833b861f9241f6d282fe34">halconf.h</a>
+<li>HAL_USE_EFL
+: <a class="el" href="group__HAL__CONF.html#ga3dce30ad876a7395110beee8c9a5bcf4">halconf.h</a>
 </li>
 <li>HAL_USE_GPT
 : <a class="el" href="group__HAL__CONF.html#gab4702b9e1b6fa2869e26c274fccd53f0">halconf.h</a>
@@ -303,11 +312,14 @@ $(document).ready(function(){initNavTree('globals_defs_h.html','');});
 <li>HAL_USE_SERIAL_USB
 : <a class="el" href="group__HAL__CONF.html#ga79c970fb20565143ad8b65720c0b2d0e">halconf.h</a>
 </li>
+<li>HAL_USE_SIO
+: <a class="el" href="group__HAL__CONF.html#ga5f39dcdca49f804a5bbce108da17e54e">halconf.h</a>
+</li>
 <li>HAL_USE_SPI
 : <a class="el" href="group__HAL__CONF.html#ga33a3c5bee9ed1f665aace8b88fed9b2b">halconf.h</a>
 </li>
-<li>HAL_USE_TM
-: <a class="el" href="group__HAL__CONF.html#ga989811956a40f9270a092212a8570632">halconf.h</a>
+<li>HAL_USE_TRNG
+: <a class="el" href="group__HAL__CONF.html#ga11f5ecf9adab30d9a0cea8fe306ae76e">halconf.h</a>
 </li>
 <li>HAL_USE_UART
 : <a class="el" href="group__HAL__CONF.html#ga73220cad2edf2aee77b7ce1b53cacff0">halconf.h</a>
@@ -317,6 +329,9 @@ $(document).ready(function(){initNavTree('globals_defs_h.html','');});
 </li>
 <li>HAL_USE_WDG
 : <a class="el" href="group__HAL__CONF.html#gac3be0803223f25a5edeed87f56b526c3">halconf.h</a>
+</li>
+<li>HAL_USE_WSPI
+: <a class="el" href="group__HAL__CONF.html#ga8667460a7b5c6e318d510722d7d0e900">halconf.h</a>
 </li>
 <li>HEADING_CHANGE_PER_MEASUREMENT
 : <a class="el" href="follow__me_8c.html#ad6473a1570a2f1860b6cb3c95a18738f">follow_me.c</a>
@@ -431,16 +446,16 @@ $(document).ready(function(){initNavTree('globals_defs_h.html','');});
 : <a class="el" href="hmc5843_8h.html#a853c9c92301a2b4e4c08f7cac93acb28">hmc5843.h</a>
 </li>
 <li>HMC5843_REG_DATYL
-: <a class="el" href="hmc5843_8h.html#abaf986305d697bfed06441a0816180a4">hmc5843.h</a>
-, <a class="el" href="hmc58xx__regs_8h.html#abaf986305d697bfed06441a0816180a4">hmc58xx_regs.h</a>
+: <a class="el" href="hmc58xx__regs_8h.html#abaf986305d697bfed06441a0816180a4">hmc58xx_regs.h</a>
+, <a class="el" href="hmc5843_8h.html#abaf986305d697bfed06441a0816180a4">hmc5843.h</a>
 </li>
 <li>HMC5843_REG_DATYM
 : <a class="el" href="hmc5843_8h.html#aeb3165cec9ee79ed2d0a1fa8c45d849a">hmc5843.h</a>
 , <a class="el" href="hmc58xx__regs_8h.html#aeb3165cec9ee79ed2d0a1fa8c45d849a">hmc58xx_regs.h</a>
 </li>
 <li>HMC5843_REG_DATZL
-: <a class="el" href="hmc5843_8h.html#a7f2383021e390fe3f478281f5c49755f">hmc5843.h</a>
-, <a class="el" href="hmc58xx__regs_8h.html#a7f2383021e390fe3f478281f5c49755f">hmc58xx_regs.h</a>
+: <a class="el" href="hmc58xx__regs_8h.html#a7f2383021e390fe3f478281f5c49755f">hmc58xx_regs.h</a>
+, <a class="el" href="hmc5843_8h.html#a7f2383021e390fe3f478281f5c49755f">hmc5843.h</a>
 </li>
 <li>HMC5843_REG_DATZM
 : <a class="el" href="hmc5843_8h.html#a059b2d3f6a79da34e90955c1d3bf79b5">hmc5843.h</a>
@@ -644,7 +659,7 @@ $(document).ready(function(){initNavTree('globals_defs_h.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri May 15 2020 04:04:12 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:04:31 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -176,7 +176,7 @@ $(document).ready(function(){initNavTree('alt__filter_8c_source.html','');});
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="comment">// update on new data</span></div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordtype">float</span> ga = (float)<a class="code" href="gps_8c.html#a5cf954024f8e0433b21db7439c5bee9d">gps</a>.<a class="code" href="gps_8h.html#a10af95f7fdab3171a789866838b0c8c3">hmsl</a> / 1000.;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  if (<a class="code" href="baro__ets_8c.html#ac4f69540a5b1417a3717dafb1a983b06">baro_ets_altitude</a> != <a class="code" href="alt__filter_8c.html#ae05d497e598d27cd712567d1eef7ac77">last_baro_alt</a>) {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <a class="code" href="e__identification__fr_8c.html#a92cffae21318c1d983c63f3afa2a8d87">if</a> (<a class="code" href="baro__ets_8c.html#ac4f69540a5b1417a3717dafb1a983b06">baro_ets_altitude</a> != <a class="code" href="alt__filter_8c.html#ae05d497e598d27cd712567d1eef7ac77">last_baro_alt</a>) {</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <a class="code" href="alt__filter_8c.html#a446427f1d5f99795159127ce06e57fea">kalmanCorrectionAltimetre</a>(&amp;alt_filter, <a class="code" href="baro__ets_8c.html#ac4f69540a5b1417a3717dafb1a983b06">baro_ets_altitude</a>);</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <a class="code" href="alt__filter_8c.html#ae05d497e598d27cd712567d1eef7ac77">last_baro_alt</a> = <a class="code" href="baro__ets_8c.html#ac4f69540a5b1417a3717dafb1a983b06">baro_ets_altitude</a>;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  }</div>
@@ -377,6 +377,7 @@ $(document).ready(function(){initNavTree('alt__filter_8c_source.html','');});
 <div class="ttc" id="alt__filter_8c_html_ae0241fff0e300279b4f4e6123c40f9e3"><div class="ttname"><a href="alt__filter_8c.html#ae0241fff0e300279b4f4e6123c40f9e3">kalmanCorrectionGPS</a></div><div class="ttdeci">void kalmanCorrectionGPS(TypeKalman *k, float altitude_gps)</div><div class="ttdef"><b>Definition:</b> <a href="alt__filter_8c_source.html#l00178">alt_filter.c:178</a></div></div>
 <div class="ttc" id="uart_8h_html"><div class="ttname"><a href="uart_8h.html">uart.h</a></div><div class="ttdoc">arch independent UART (Universal Asynchronous Receiver/Transmitter) API </div></div>
 <div class="ttc" id="alt__filter_8h_html_structTypeKalman"><div class="ttname"><a href="alt__filter_8h.html#structTypeKalman">TypeKalman</a></div><div class="ttdef"><b>Definition:</b> <a href="alt__filter_8h_source.html#l00038">alt_filter.h:38</a></div></div>
+<div class="ttc" id="e__identification__fr_8c_html_a92cffae21318c1d983c63f3afa2a8d87"><div class="ttname"><a href="e__identification__fr_8c.html#a92cffae21318c1d983c63f3afa2a8d87">if</a></div><div class="ttdeci">if(GpsFixValid()&amp;&amp;e_identification_started)</div><div class="ttdef"><b>Definition:</b> <a href="e__identification__fr_8c_source.html#l00159">e_identification_fr.c:159</a></div></div>
 <div class="ttc" id="alt__filter_8h_html_aabe02ce61fa97a22da91e8f102d13b7a"><div class="ttname"><a href="alt__filter_8h.html#aabe02ce61fa97a22da91e8f102d13b7a">TypeKalman::W</a></div><div class="ttdeci">float W[KALT_N_ETAT-1][KALT_N_ETAT-1]</div><div class="ttdef"><b>Definition:</b> <a href="alt__filter_8h_source.html#l00041">alt_filter.h:41</a></div></div>
 <div class="ttc" id="trilateration_8c_html_a145f61de888f096c52a2945234a407b0"><div class="ttname"><a href="trilateration_8c.html#a145f61de888f096c52a2945234a407b0">I</a></div><div class="ttdeci">static float I</div><div class="ttdef"><b>Definition:</b> <a href="trilateration_8c_source.html#l00035">trilateration.c:35</a></div></div>
 <div class="ttc" id="alt__filter_8c_html_a276a4fc3a21783d1c7ccbc3e21f1a485"><div class="ttname"><a href="alt__filter_8c.html#a276a4fc3a21783d1c7ccbc3e21f1a485">MarcheAleaBiaisAltimetre</a></div><div class="ttdeci">float MarcheAleaBiaisAltimetre</div><div class="ttdef"><b>Definition:</b> <a href="alt__filter_8c_source.html#l00036">alt_filter.c:36</a></div></div>
@@ -414,7 +415,7 @@ $(document).ready(function(){initNavTree('alt__filter_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_12fb52dac4e3837dec02c6544f4d82f8.html">ins</a></li><li class="navelem"><a class="el" href="alt__filter_8c.html">alt_filter.c</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:02:24 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:02:35 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

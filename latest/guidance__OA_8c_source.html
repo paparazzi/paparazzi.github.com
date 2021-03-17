@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -397,7 +397,7 @@ $(document).ready(function(){initNavTree('guidance__OA_8c_source.html','');});
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;</div>
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;  }</div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;  <span class="keywordflow">if</span> (OA_method_flag == <a class="code" href="point_8c.html#structVECTOR">VECTOR</a> || OA_method_flag == <a class="code" href="guidance__OA_8h.html#a4dac0a956aca3da3fa670abc875414d2a14d823d6fb434922e5bfa2399e5ed1e7">SAFETYZONE</a> || OA_method_flag == <a class="code" href="guidance__OA_8h.html#a4dac0a956aca3da3fa670abc875414d2a28efa0e77bfeccb51b3e25bc4a4f32cb">LOGICBASED</a>) {</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;  <span class="keywordflow">if</span> (OA_method_flag == <a class="code" href="max7456_8c.html#structVECTOR">VECTOR</a> || OA_method_flag == <a class="code" href="guidance__OA_8h.html#a4dac0a956aca3da3fa670abc875414d2a14d823d6fb434922e5bfa2399e5ed1e7">SAFETYZONE</a> || OA_method_flag == <a class="code" href="guidance__OA_8h.html#a4dac0a956aca3da3fa670abc875414d2a28efa0e77bfeccb51b3e25bc4a4f32cb">LOGICBASED</a>) {</div>
 <div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    <span class="comment">//vector field method</span></div>
 <div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    <span class="keywordtype">float</span> v_desired_total;</div>
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;</div>
@@ -474,7 +474,6 @@ $(document).ready(function(){initNavTree('guidance__OA_8c_source.html','');});
 <div class="ttc" id="guidance__OA_8c_html_ab2a8d16810dcb25d786c42a2b9a1b936"><div class="ttname"><a href="guidance__OA_8c.html#ab2a8d16810dcb25d786c42a2b9a1b936">yaw_rate_write</a></div><div class="ttdeci">float yaw_rate_write</div><div class="ttdef"><b>Definition:</b> <a href="guidance__OA_8c_source.html#l00118">guidance_OA.c:118</a></div></div>
 <div class="ttc" id="guidance__OA_8h_html"><div class="ttname"><a href="guidance__OA_8h.html">guidance_OA.h</a></div><div class="ttdoc">Guidance for the obstacle avoidance methods. </div></div>
 <div class="ttc" id="guidance__OA_8c_html_af0a3b4e238d064326406719e8244e92d"><div class="ttname"><a href="guidance__OA_8c.html#af0a3b4e238d064326406719e8244e92d">guidance_h_module_enter</a></div><div class="ttdeci">void guidance_h_module_enter(void)</div><div class="ttdoc">Horizontal guidance mode enter resets the errors and starts the controller. </div><div class="ttdef"><b>Definition:</b> <a href="guidance__OA_8c_source.html#l00147">guidance_OA.c:147</a></div></div>
-<div class="ttc" id="point_8c_html_structVECTOR"><div class="ttname"><a href="point_8c.html#structVECTOR">VECTOR</a></div><div class="ttdef"><b>Definition:</b> <a href="point_8c_source.html#l00084">point.c:84</a></div></div>
 <div class="ttc" id="pprz__geodetic__float_8h_html_structNedCoor__f"><div class="ttname"><a href="pprz__geodetic__float_8h.html#structNedCoor__f">NedCoor_f</a></div><div class="ttdoc">vector in North East Down coordinates Units: meters </div><div class="ttdef"><b>Definition:</b> <a href="pprz__geodetic__float_8h_source.html#l00063">pprz_geodetic_float.h:63</a></div></div>
 <div class="ttc" id="group__state__velocity_html_ga50a44ddecd4b2517b549549e953ffea2"><div class="ttname"><a href="group__state__velocity.html#ga50a44ddecd4b2517b549549e953ffea2">stateGetSpeedNed_f</a></div><div class="ttdeci">static struct NedCoor_f * stateGetSpeedNed_f(void)</div><div class="ttdoc">Get ground speed in local NED coordinates (float). </div><div class="ttdef"><b>Definition:</b> <a href="state_8h_source.html#l00908">state.h:908</a></div></div>
 <div class="ttc" id="electrical_8h_html"><div class="ttname"><a href="electrical_8h.html">electrical.h</a></div><div class="ttdoc">Interface for electrical status: supply voltage, current, battery status, etc. </div></div>
@@ -488,6 +487,7 @@ $(document).ready(function(){initNavTree('guidance__OA_8c_source.html','');});
 <div class="ttc" id="group__math__algebra__int_html_gafafafd344e879ac5e7177086414524f3"><div class="ttname"><a href="group__math__algebra__int.html#gafafafd344e879ac5e7177086414524f3">INT32_ANGLE_NORMALIZE</a></div><div class="ttdeci">#define INT32_ANGLE_NORMALIZE(_a)</div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__int_8h_source.html#l00126">pprz_algebra_int.h:126</a></div></div>
 <div class="ttc" id="guidance__OA_8h_html_a4dac0a956aca3da3fa670abc875414d2a14d823d6fb434922e5bfa2399e5ed1e7"><div class="ttname"><a href="guidance__OA_8h.html#a4dac0a956aca3da3fa670abc875414d2a14d823d6fb434922e5bfa2399e5ed1e7">SAFETYZONE</a></div><div class="ttdef"><b>Definition:</b> <a href="guidance__OA_8h_source.html#l00052">guidance_OA.h:52</a></div></div>
 <div class="ttc" id="guidance__OA_8c_html_ab4af8bdf430b952587612105d52dd7c4"><div class="ttname"><a href="guidance__OA_8c.html#ab4af8bdf430b952587612105d52dd7c4">VISION_DESIRED_VX</a></div><div class="ttdeci">#define VISION_DESIRED_VX</div><div class="ttdef"><b>Definition:</b> <a href="guidance__OA_8c_source.html#l00065">guidance_OA.c:65</a></div></div>
+<div class="ttc" id="max7456_8c_html_structVECTOR"><div class="ttname"><a href="max7456_8c.html#structVECTOR">VECTOR</a></div><div class="ttdef"><b>Definition:</b> <a href="point_8c_source.html#l00084">point.c:84</a></div></div>
 <div class="ttc" id="guidance__OA_8c_html_a20c98e89ac4c2f80fdd841992ec3053c"><div class="ttname"><a href="guidance__OA_8c.html#a20c98e89ac4c2f80fdd841992ec3053c">opticflow_stab</a></div><div class="ttdeci">struct opticflow_stab_t opticflow_stab</div><div class="ttdef"><b>Definition:</b> <a href="guidance__OA_8c_source.html#l00083">guidance_OA.c:83</a></div></div>
 <div class="ttc" id="guidance__OA_8c_html_a1c92c176477b26cde71bf5f88916674c"><div class="ttname"><a href="guidance__OA_8c.html#a1c92c176477b26cde71bf5f88916674c">alpha_fil</a></div><div class="ttdeci">float alpha_fil</div><div class="ttdef"><b>Definition:</b> <a href="guidance__OA_8c_source.html#l00112">guidance_OA.c:112</a></div></div>
 <div class="ttc" id="guidance__OA_8h_html_a2a16bb7fb5c1842f8b8a280f3cf6a491"><div class="ttname"><a href="guidance__OA_8h.html#a2a16bb7fb5c1842f8b8a280f3cf6a491">opticflow_stab_t::cmd</a></div><div class="ttdeci">struct Int32Eulers cmd</div><div class="ttdoc">The commands that are send to the hover loop. </div><div class="ttdef"><b>Definition:</b> <a href="guidance__opticflow__hover_8h_source.html#l00047">guidance_opticflow_hover.h:47</a></div></div>
@@ -530,7 +530,7 @@ $(document).ready(function(){initNavTree('guidance__OA_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_e1bb5e76ffaaafe6f13f5c4932daceba.html">obstacle_avoidance</a></li><li class="navelem"><a class="el" href="guidance__OA_8c.html">guidance_OA.c</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:02:28 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:02:40 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -158,7 +158,7 @@ $(document).ready(function(){initNavTree('inter__mcu_8h_source.html','');});
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;};</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">struct </span><a class="code" href="inter__mcu_8c.html#ac13671906f2663b39fde033f4cb4a410">ap_state</a> {</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <a class="code" href="paparazzi_8h.html#a3fd988f23519b41e9aea4d38bfb45e1c">pprz_t</a> <a class="code" href="commands_8c.html#a929b1098e1af3f34ee056eeed9227136">commands</a>[COMMANDS_NB];</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <a class="code" href="paparazzi_8h.html#a3fd988f23519b41e9aea4d38bfb45e1c">pprz_t</a> <a class="code" href="shell__arch_8c.html#a33466362cf73cff51e1c6a7b8b3a1b12">commands</a>[COMMANDS_NB];</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <a class="code" href="paparazzi_8h.html#a3fd988f23519b41e9aea4d38bfb45e1c">pprz_t</a> <a class="code" href="fixedwing_2main__fbw_8c.html#a9aa55e047af522d7df3a329d39a08ac4">command_roll_trim</a>;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <a class="code" href="paparazzi_8h.html#a3fd988f23519b41e9aea4d38bfb45e1c">pprz_t</a> <a class="code" href="fixedwing_2main__fbw_8c.html#a2bd7d4068b07bb952c488cff7cf7c933">command_pitch_trim</a>;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <a class="code" href="paparazzi_8h.html#a3fd988f23519b41e9aea4d38bfb45e1c">pprz_t</a> <a class="code" href="fixedwing_2main__fbw_8c.html#ad3d42178a77e1d084ffad1faa32c7505">command_yaw_trim</a>;</div>
@@ -409,11 +409,11 @@ $(document).ready(function(){initNavTree('inter__mcu_8h_source.html','');});
 <div class="ttc" id="fixedwing_2main__fbw_8c_html_ac72590ceb6632f7874a3240836537857"><div class="ttname"><a href="fixedwing_2main__fbw_8c.html#ac72590ceb6632f7874a3240836537857">fbw_mode</a></div><div class="ttdeci">uint8_t fbw_mode</div><div class="ttdef"><b>Definition:</b> <a href="fixedwing_2main__fbw_8c_source.html#l00063">main_fbw.c:63</a></div></div>
 <div class="ttc" id="pprz__mutex_8h_html"><div class="ttname"><a href="pprz__mutex_8h.html">pprz_mutex.h</a></div><div class="ttdoc">Utility functions and macros to abstract some RTOS functionalities such as mutexes. </div></div>
 <div class="ttc" id="types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00014">types.h:14</a></div></div>
-<div class="ttc" id="commands_8c_html_a929b1098e1af3f34ee056eeed9227136"><div class="ttname"><a href="commands_8c.html#a929b1098e1af3f34ee056eeed9227136">commands</a></div><div class="ttdeci">pprz_t commands[COMMANDS_NB]</div><div class="ttdoc">Storage of intermediate command values. </div><div class="ttdef"><b>Definition:</b> <a href="commands_8c_source.html#l00030">commands.c:30</a></div></div>
 <div class="ttc" id="rotorcraft_2main__fbw_8h_html_af4086243bdaea71d4dfd3c03883cab31a4e63082d699becdd9584190688c5a691"><div class="ttname"><a href="rotorcraft_2main__fbw_8h.html#af4086243bdaea71d4dfd3c03883cab31a4e63082d699becdd9584190688c5a691">FBW_MODE_AUTO</a></div><div class="ttdef"><b>Definition:</b> <a href="rotorcraft_2main__fbw_8h_source.html#l00064">main_fbw.h:64</a></div></div>
 <div class="ttc" id="electrical_8c_html_a935f74638cd658e7dac75915bcb63bde"><div class="ttname"><a href="electrical_8c.html#a935f74638cd658e7dac75915bcb63bde">electrical</a></div><div class="ttdeci">struct Electrical electrical</div><div class="ttdef"><b>Definition:</b> <a href="electrical_8c_source.html#l00066">electrical.c:66</a></div></div>
 <div class="ttc" id="fixedwing_2main__fbw_8h_html"><div class="ttname"><a href="fixedwing_2main__fbw_8h.html">main_fbw.h</a></div><div class="ttdoc">FBW ( FlyByWire ) process API. </div></div>
 <div class="ttc" id="usb__serial__stm32__example1_8c_html_a490fff18dca5119efb767860fbeb5ddb"><div class="ttname"><a href="usb__serial__stm32__example1_8c.html#a490fff18dca5119efb767860fbeb5ddb">cmd_idx</a></div><div class="ttdeci">uint8_t cmd_idx</div><div class="ttdef"><b>Definition:</b> <a href="usb__serial__stm32__example1_8c_source.html#l00037">usb_serial_stm32_example1.c:37</a></div></div>
+<div class="ttc" id="shell__arch_8c_html_a33466362cf73cff51e1c6a7b8b3a1b12"><div class="ttname"><a href="shell__arch_8c.html#a33466362cf73cff51e1c6a7b8b3a1b12">commands</a></div><div class="ttdeci">static const ShellCommand commands[]</div><div class="ttdef"><b>Definition:</b> <a href="shell__arch_8c_source.html#l00071">shell_arch.c:71</a></div></div>
 <div class="ttc" id="paparazzi_8h_html"><div class="ttname"><a href="paparazzi_8h.html">paparazzi.h</a></div></div>
 <div class="ttc" id="pprz__mutex_8h_html_a4bdd0a645d5bfed3992e8bafa3c27b48"><div class="ttname"><a href="pprz__mutex_8h.html#a4bdd0a645d5bfed3992e8bafa3c27b48">PPRZ_MUTEX_UNLOCK</a></div><div class="ttdeci">#define PPRZ_MUTEX_UNLOCK(_mtx)</div><div class="ttdef"><b>Definition:</b> <a href="pprz__mutex_8h_source.html#l00047">pprz_mutex.h:47</a></div></div>
 <div class="ttc" id="radio__control_8h_html_aa6eb017ab6023648e26cedd9de0c6c8c"><div class="ttname"><a href="radio__control_8h.html#aa6eb017ab6023648e26cedd9de0c6c8c">RadioControl::frame_rate</a></div><div class="ttdeci">uint8_t frame_rate</div><div class="ttdef"><b>Definition:</b> <a href="radio__control_8h_source.html#l00067">radio_control.h:67</a></div></div>
@@ -423,7 +423,7 @@ $(document).ready(function(){initNavTree('inter__mcu_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="inter__mcu_8h.html">inter_mcu.h</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:02:16 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:02:27 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -139,25 +139,27 @@ $(document).ready(function(){initNavTree('airspeed__ads1114_8c_source.html','');
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="airspeed__ads1114_8h.html">modules/sensors/airspeed_ads1114.h</a>&quot;</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="baro_8h.html">subsystems/sensors/baro.h</a>&quot;</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;baro_board.h&quot;</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="airspeed__ads1114_8h.html#abc1ef85820f6067126dc796a05dac64b">   32</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="airspeed__ads1114_8c.html#abc1ef85820f6067126dc796a05dac64b">airspeed_periodic</a>(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <a class="code" href="ads1114_8c.html#a4ba628257d14fc3773ddfc484a18e199">ads1114_read</a>(&amp;BARO_DIFF_ADS);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ads1114_8h.html">peripherals/ads1114.h</a>&quot;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="airspeed__ads1114_8h.html#abc1ef85820f6067126dc796a05dac64b">   33</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="airspeed__ads1114_8c.html#abc1ef85820f6067126dc796a05dac64b">airspeed_periodic</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <a class="code" href="ads1114_8c.html#a4ba628257d14fc3773ddfc484a18e199">ads1114_read</a>(&amp;BARO_DIFF_ADS);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
 <div class="ttc" id="baro_8h_html"><div class="ttname"><a href="baro_8h.html">baro.h</a></div><div class="ttdoc">Common barometric sensor implementation. </div></div>
 <div class="ttc" id="airspeed__ads1114_8h_html"><div class="ttname"><a href="airspeed__ads1114_8h.html">airspeed_ads1114.h</a></div></div>
+<div class="ttc" id="ads1114_8h_html"><div class="ttname"><a href="ads1114_8h.html">ads1114.h</a></div></div>
 <div class="ttc" id="ads1114_8c_html_a4ba628257d14fc3773ddfc484a18e199"><div class="ttname"><a href="ads1114_8c.html#a4ba628257d14fc3773ddfc484a18e199">ads1114_read</a></div><div class="ttdeci">void ads1114_read(struct ads1114_periph *p)</div><div class="ttdef"><b>Definition:</b> <a href="ads1114_8c_source.html#l00063">ads1114.c:63</a></div></div>
-<div class="ttc" id="airspeed__ads1114_8c_html_abc1ef85820f6067126dc796a05dac64b"><div class="ttname"><a href="airspeed__ads1114_8c.html#abc1ef85820f6067126dc796a05dac64b">airspeed_periodic</a></div><div class="ttdeci">void airspeed_periodic(void)</div><div class="ttdef"><b>Definition:</b> <a href="airspeed__ads1114_8c_source.html#l00032">airspeed_ads1114.c:32</a></div></div>
+<div class="ttc" id="airspeed__ads1114_8c_html_abc1ef85820f6067126dc796a05dac64b"><div class="ttname"><a href="airspeed__ads1114_8c.html#abc1ef85820f6067126dc796a05dac64b">airspeed_periodic</a></div><div class="ttdeci">void airspeed_periodic(void)</div><div class="ttdef"><b>Definition:</b> <a href="airspeed__ads1114_8c_source.html#l00033">airspeed_ads1114.c:33</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_2f48bbb566df394f79dcf8fe0631584a.html">sensors</a></li><li class="navelem"><a class="el" href="airspeed__ads1114_8c.html">airspeed_ads1114.c</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:02:29 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:02:40 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -158,6 +158,7 @@ $(document).ready(function(){initNavTree('functions_vars_h.html','');});
 <li>h
 : <a class="el" href="image_8h.html#a8bcdc857e2b3c08194113808ca2af345">image_t</a>
 , <a class="el" href="image_8h.html#a2d0ef72360af768d9f092c30a9b27cde">img_size_t</a>
+, <a class="el" href="wedgebug_8h.html#aebe1277c3a74c907f2f6da339df54042">kernel_C1</a>
 , <a class="el" href="v4l2_8h.html#a5e0811e2fc67026489c4df52143e502e">v4l2_device</a>
 , <a class="el" href="jevois__mavlink_8c.html#a789434a901eb0c80d2e5936b56cf177f">visual_target_struct</a>
 </li>
@@ -192,7 +193,7 @@ $(document).ready(function(){initNavTree('functions_vars_h.html','');});
 : <a class="el" href="vi_8h.html#a162939a96b3aa3f484ac56972b3ed848">Vi_command</a>
 </li>
 <li>h_sp
-: <a class="el" href="vi_8h.html#ab539abd4d3aa18929e44cd1efc8b0203">Vi_command</a>
+: <a class="el" href="vi_8h.html#ab05c294a193db477180b591cefe90161">Vi_command</a>
 </li>
 <li>h_speed_dir_f
 : <a class="el" href="group__state__velocity.html#ga97af69f9c2d848327057cc3217686459">State</a>
@@ -235,11 +236,12 @@ $(document).ready(function(){initNavTree('functions_vars_h.html','');});
 </li>
 <li>head
 : <a class="el" href="adc_8h.html#a16c2adc67586f7762c266a0be7671bc3">adc_buf</a>
-, <a class="el" href="stm32_2usb__ser__hw_8c.html#ae93028e986799fceacecbd153729f855">fifo_t</a>
+, <a class="el" href="frsky__x_8h.html#ae93028e986799fceacecbd153729f855">fifo_t</a>
 </li>
 <li>heading
 : <a class="el" href="gvf__line_8h.html#a77a6037f5222793c0cd5728b00da269b">gvf_li_par</a>
 , <a class="el" href="rotorcraft_2guidance_2guidance__h_8h.html#a902dfeb0c0690d6b80c472b1ae695f61">HorizontalGuidanceSetpoint</a>
+, <a class="el" href="nav__fish_8c.html#ab9a8bb00a06dbafb592bff25bd036b7b">NavFish</a>
 , <a class="el" href="rover__guidance_8h.html#a7247860f15a50036841fc55eee654b25">RoverGuidanceSetpoint</a>
 , <a class="el" href="rover__guidance__holonomic_8h.html#a8a6e4c9345d49c35cd6285cc3f2cbf58">RoverHoloGuidanceSetpoint</a>
 , <a class="el" href="rover_2navigation_8h.html#aa94f83fda4e627ae4f187501e5cfa6af">RoverNavigation</a>
@@ -253,6 +255,15 @@ $(document).ready(function(){initNavTree('functions_vars_h.html','');});
 </li>
 <li>heading_err
 : <a class="el" href="gps__sirf_8c.html#a964c9a4b73e63ec2f77309dde33826c1">sirf_msg_41</a>
+</li>
+<li>heading_initial
+: <a class="el" href="wedgebug_8c.html#ac19928b73303aaab100445e045dd3954">ES_angles</a>
+</li>
+<li>heading_max_left
+: <a class="el" href="wedgebug_8c.html#a4f54611d62046797edd37aaad232b3f6">ES_angles</a>
+</li>
+<li>heading_max_right
+: <a class="el" href="wedgebug_8c.html#a7aa302925e4b9a35459b9460179afbff">ES_angles</a>
 </li>
 <li>heading_rate
 : <a class="el" href="rotorcraft_2guidance_2guidance__h_8h.html#a75b6a5ffd5e710cfe2f935778b19e210">HorizontalGuidanceSetpoint</a>
@@ -278,6 +289,9 @@ $(document).ready(function(){initNavTree('functions_vars_h.html','');});
 </li>
 <li>hground
 : <a class="el" href="flight__gear_8h.html#a85cbeff6e26b8cf5bfd6f0b1c65170dc">FGNetCtrls</a>
+</li>
+<li>hi
+: <a class="el" href="cc2500__compat_8h.html#a86ba001ec99f593c02803b7442b7c972">gpio_t</a>
 </li>
 <li>hi_res_euler
 : <a class="el" href="ahrs__int__cmpl__euler_8h.html#ae9bf815ee507229b24307a97fa1ce5f2">AhrsIntCmplEuler</a>
@@ -350,7 +364,7 @@ $(document).ready(function(){initNavTree('functions_vars_h.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri May 15 2020 04:04:08 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:04:26 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

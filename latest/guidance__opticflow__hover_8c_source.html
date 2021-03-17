@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -241,7 +241,7 @@ $(document).ready(function(){initNavTree('guidance__opticflow__hover_8c_source.h
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  }</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  <span class="keywordflow">if</span> (noise_x &gt;= 0.f)</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  <span class="keywordflow">if</span> (noise_x &gt;= 0.<a class="code" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a>)</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  {</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="comment">/* Calculate the error */</span></div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="guidance__OA_8c.html#ae993dfb915e6ce4e61fb9e9a2c87b3c3">err_vx</a> = opticflow_stab.<a class="code" href="guidance__OA_8h.html#ab7d1f24c1707f2592cb09a44107481fd">desired_vx</a> - vel_x;</div>
@@ -257,7 +257,7 @@ $(document).ready(function(){initNavTree('guidance__opticflow__hover_8c_source.h
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    BoundAbs(opticflow_stab.<a class="code" href="guidance__OA_8h.html#a2a16bb7fb5c1842f8b8a280f3cf6a491">cmd</a>.<a class="code" href="group__math__algebra__int.html#aba4fffb8281e9d4523f10bb9646e76a0">theta</a>, <a class="code" href="guidance__opticflow__hover_8c.html#ac9a8cd4525614f871188949b70d9f9cc">CMD_OF_SAT</a>);</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;  }</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  <span class="keywordflow">if</span> (noise_y &gt;= 0.f)</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  <span class="keywordflow">if</span> (noise_y &gt;= 0.<a class="code" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a>)</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  {</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="comment">/* Calculate the error */</span></div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="guidance__OA_8c.html#a0fa36c4cea1433e305abaefb00c777aa">err_vy</a> = opticflow_stab.<a class="code" href="guidance__OA_8h.html#a57aeb4b56bd0480b1036f41691a06544">desired_vy</a> - vel_y;</div>
@@ -295,6 +295,7 @@ $(document).ready(function(){initNavTree('guidance__opticflow__hover_8c_source.h
 <div class="ttc" id="guidance__opticflow__hover_8c_html_a20c98e89ac4c2f80fdd841992ec3053c"><div class="ttname"><a href="guidance__opticflow__hover_8c.html#a20c98e89ac4c2f80fdd841992ec3053c">opticflow_stab</a></div><div class="ttdeci">struct opticflow_stab_t opticflow_stab</div><div class="ttdef"><b>Definition:</b> <a href="guidance__opticflow__hover_8c_source.html#l00090">guidance_opticflow_hover.c:90</a></div></div>
 <div class="ttc" id="rotorcraft_2stabilization_2stabilization__attitude_8h_html_ac064607f64988793cadfe5ed346b269f"><div class="ttname"><a href="rotorcraft_2stabilization_2stabilization__attitude_8h.html#ac064607f64988793cadfe5ed346b269f">stabilization_attitude_set_rpy_setpoint_i</a></div><div class="ttdeci">void stabilization_attitude_set_rpy_setpoint_i(struct Int32Eulers *rpy)</div><div class="ttdef"><b>Definition:</b> <a href="stabilization__attitude__euler__float_8c_source.html#l00154">stabilization_attitude_euler_float.c:154</a></div></div>
 <div class="ttc" id="types_8h_html_a06896e8c53f721507066c079052171f8"><div class="ttname"><a href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a></div><div class="ttdeci">unsigned long uint32_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00018">types.h:18</a></div></div>
+<div class="ttc" id="wedgebug_8c_html_a05fd2dba3354a98f1a00b7c7ffc12b13"><div class="ttname"><a href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a></div><div class="ttdeci">uint16_t f</div><div class="ttdoc">Camera baseline, in meters (i.e. horizontal distance between the two cameras of the stereo setup) ...</div><div class="ttdef"><b>Definition:</b> <a href="wedgebug_8c_source.html#l00204">wedgebug.c:204</a></div></div>
 <div class="ttc" id="guidance__OA_8h_html_a2a16bb7fb5c1842f8b8a280f3cf6a491"><div class="ttname"><a href="guidance__OA_8h.html#a2a16bb7fb5c1842f8b8a280f3cf6a491">opticflow_stab_t::cmd</a></div><div class="ttdeci">struct Int32Eulers cmd</div><div class="ttdoc">The commands that are send to the hover loop. </div><div class="ttdef"><b>Definition:</b> <a href="guidance__opticflow__hover_8h_source.html#l00047">guidance_opticflow_hover.h:47</a></div></div>
 <div class="ttc" id="guidance__opticflow__hover_8c_html_ab39ce31e4173de7b9aefa839324ec9a2"><div class="ttname"><a href="guidance__opticflow__hover_8c.html#ab39ce31e4173de7b9aefa839324ec9a2">guidance_h_module_init</a></div><div class="ttdeci">void guidance_h_module_init(void)</div><div class="ttdoc">Initialization of horizontal guidance module. </div><div class="ttdef"><b>Definition:</b> <a href="guidance__opticflow__hover_8c_source.html#l00105">guidance_opticflow_hover.c:105</a></div></div>
 <div class="ttc" id="guidance__OA_8h_html_ae4420e24e336fa99cfa5e9e2e5b6e381"><div class="ttname"><a href="guidance__OA_8h.html#ae4420e24e336fa99cfa5e9e2e5b6e381">opticflow_stab_t::phi_igain</a></div><div class="ttdeci">int32_t phi_igain</div><div class="ttdoc">The roll I gain on the err_vx_int. </div><div class="ttdef"><b>Definition:</b> <a href="guidance__opticflow__hover_8h_source.html#l00039">guidance_opticflow_hover.h:39</a></div></div>
@@ -323,7 +324,7 @@ $(document).ready(function(){initNavTree('guidance__opticflow__hover_8c_source.h
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_2e381a947b440f56a5ef50f02a80163b.html">guidance_opticflow</a></li><li class="navelem"><a class="el" href="guidance__opticflow__hover_8c.html">guidance_opticflow_hover.c</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:02:23 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:02:35 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -110,11 +110,10 @@ $(document).ready(function(){initNavTree('module__orange_avoider_guided.html',''
 <p>Here we also need to use our onboard sensors to stay inside of the cyberzoo and not collide with the nets. For this we employ a simple color detector, similar to the orange poles but for green to detect the floor. When the total amount of green drops below a given threshold (given by floor_count_frac) we assume we are near the edge of the zoo and turn around. The color detection is done by the cv_detect_color_object module, use the FLOOR_VISUAL_DETECTION_ID setting to define which filter to use.</p>
 <h1><a class="anchor" id="module_load_example__orange_avoider_guided"></a>
 Example for airframe file</h1>
-<p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;module name=&quot;cv_detect_color_object&quot;/&gt;</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;&lt;module name=&quot;orange_avoider_guided&quot;&gt;</div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;  &lt;define name=&quot;ORANGE_AVOIDER_VISUAL_DETECTION_ID&quot; value=&quot;ABI_BROADCAST&quot; /&gt;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;  &lt;define name=&quot;FLOOR_VISUAL_DETECTION_ID&quot; value=&quot;ABI_BROADCAST&quot; /&gt;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;&lt;/module&gt;</div>
+<p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;module name=&quot;orange_avoider_guided&quot;&gt;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;  &lt;define name=&quot;ORANGE_AVOIDER_VISUAL_DETECTION_ID&quot; value=&quot;ABI_BROADCAST&quot; /&gt;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;  &lt;define name=&quot;FLOOR_VISUAL_DETECTION_ID&quot; value=&quot;ABI_BROADCAST&quot; /&gt;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;&lt;/module&gt;</div>
 </div><!-- fragment --> <h1><a class="anchor" id="configuration__orange_avoider_guided"></a>
 Module configuration options</h1>
 <h2><a class="anchor" id="define"></a>
@@ -124,11 +123,6 @@ Define Options</h2>
  Description: which VISUAL_DETECTION message to recieve for orange pole detection.</li>
 <li><b>name:</b> <code>FLOOR_VISUAL_DETECTION_ID</code> <b>value:</b> <em>ABI_BROADCAST</em> <br />
  Description: which VISUAL_DETECTION message to recieve for floor detection.</li>
-</ul>
-<h1><a class="anchor" id="dependencies__orange_avoider_guided"></a>
-Dependencies</h1>
-<ul>
-<li><a class="el" href="module__cv_detect_color_object.html">cv_detect_color_object module</a> </li>
 </ul>
 <h1><a class="anchor" id="functions__orange_avoider_guided"></a>
 Module functions</h1>
@@ -200,7 +194,9 @@ Raw orange_avoider_guided.xml file:</h2>
 <div class="line">    &lt;/dl_settings&gt;</div>
 <div class="line">  &lt;/settings&gt;</div>
 <div class="line">  </div>
-<div class="line">  &lt;depends&gt;cv_detect_color_object&lt;/depends&gt;</div>
+<div class="line">  &lt;dep&gt;</div>
+<div class="line">    &lt;depends&gt;cv_detect_color_object&lt;/depends&gt;</div>
+<div class="line">  &lt;/dep&gt;</div>
 <div class="line">  &lt;header&gt;</div>
 <div class="line">    &lt;file name=&quot;orange_avoider_guided.h&quot;/&gt;</div>
 <div class="line">  &lt;/header&gt;</div>
@@ -216,7 +212,7 @@ Raw orange_avoider_guided.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:03:40 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:03:57 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

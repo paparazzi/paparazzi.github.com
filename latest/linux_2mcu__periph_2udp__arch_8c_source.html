@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -208,7 +208,7 @@ $(document).ready(function(){initNavTree('linux_2mcu__periph_2udp__arch_8c_sourc
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> buf[<a class="code" href="udp_8h.html#acb5db365c85bb56ce099438238e01648">UDP_RX_BUFFER_SIZE</a>];</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="keyword">struct </span><a class="code" href="udp__socket_8h.html#structUdpSocket">UdpSocket</a> *sock = (<span class="keyword">struct </span><a class="code" href="udp__socket_8h.html#structUdpSocket">UdpSocket</a> *) p-&gt;<a class="code" href="udp_8h.html#af7b93aa0ee7a5a155dd4e76dcade118f">network</a>;</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  if (available &lt;= 0) {</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  <a class="code" href="e__identification__fr_8c.html#a92cffae21318c1d983c63f3afa2a8d87">if</a> (available &lt;= 0) {</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordflow">return</span>;  <span class="comment">// No space</span></div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  }</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
@@ -235,7 +235,7 @@ $(document).ready(function(){initNavTree('linux_2mcu__periph_2udp__arch_8c_sourc
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;  <span class="keyword">struct </span><a class="code" href="udp__socket_8h.html#structUdpSocket">UdpSocket</a> *sock = (<span class="keyword">struct </span><a class="code" href="udp__socket_8h.html#structUdpSocket">UdpSocket</a> *) p-&gt;<a class="code" href="udp_8h.html#af7b93aa0ee7a5a155dd4e76dcade118f">network</a>;</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  if (p-&gt;<a class="code" href="udp_8h.html#a034d941f9c0c618c4c36a5263d104c76">tx_insert_idx</a> &gt; 0) {</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  <a class="code" href="e__identification__fr_8c.html#a92cffae21318c1d983c63f3afa2a8d87">if</a> (p-&gt;<a class="code" href="udp_8h.html#a034d941f9c0c618c4c36a5263d104c76">tx_insert_idx</a> &gt; 0) {</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    ssize_t bytes_sent = sendto(sock-&gt;<a class="code" href="udp__socket_8h.html#ae43d337e2019a39084d467a37a9b32e1">sockfd</a>, p-&gt;<a class="code" href="udp_8h.html#a1a4ea9946a5c121fba2ec442db3a901c">tx_buf</a>, p-&gt;<a class="code" href="udp_8h.html#a034d941f9c0c618c4c36a5263d104c76">tx_insert_idx</a>, MSG_DONTWAIT,</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;                                (<span class="keyword">struct</span> sockaddr *)&amp;sock-&gt;<a class="code" href="udp__socket_8h.html#abb49855d3808c060eb3f3093309217bf">addr_out</a>, <span class="keyword">sizeof</span>(sock-&gt;<a class="code" href="udp__socket_8h.html#abb49855d3808c060eb3f3093309217bf">addr_out</a>));</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keywordflow">if</span> (bytes_sent != p-&gt;<a class="code" href="udp_8h.html#a034d941f9c0c618c4c36a5263d104c76">tx_insert_idx</a>) {</div>
@@ -329,6 +329,7 @@ $(document).ready(function(){initNavTree('linux_2mcu__periph_2udp__arch_8c_sourc
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;}</div>
 <div class="ttc" id="types_8h_html_a273cf69d639a59973b6019625df33e30"><div class="ttname"><a href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></div><div class="ttdeci">unsigned short uint16_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00016">types.h:16</a></div></div>
 <div class="ttc" id="udp__socket_8h_html_structUdpSocket"><div class="ttname"><a href="udp__socket_8h.html#structUdpSocket">UdpSocket</a></div><div class="ttdef"><b>Definition:</b> <a href="udp__socket_8h_source.html#l00034">udp_socket.h:34</a></div></div>
+<div class="ttc" id="e__identification__fr_8c_html_a92cffae21318c1d983c63f3afa2a8d87"><div class="ttname"><a href="e__identification__fr_8c.html#a92cffae21318c1d983c63f3afa2a8d87">if</a></div><div class="ttdeci">if(GpsFixValid()&amp;&amp;e_identification_started)</div><div class="ttdef"><b>Definition:</b> <a href="e__identification__fr_8c_source.html#l00159">e_identification_fr.c:159</a></div></div>
 <div class="ttc" id="udp_8h_html_a1a4ea9946a5c121fba2ec442db3a901c"><div class="ttname"><a href="udp_8h.html#a1a4ea9946a5c121fba2ec442db3a901c">udp_periph::tx_buf</a></div><div class="ttdeci">uint8_t tx_buf[UDP_TX_BUFFER_SIZE]</div><div class="ttdoc">Transmit buffer. </div><div class="ttdef"><b>Definition:</b> <a href="udp_8h_source.html#l00044">udp.h:44</a></div></div>
 <div class="ttc" id="udp__socket_8h_html"><div class="ttname"><a href="udp__socket_8h.html">udp_socket.h</a></div><div class="ttdoc">Easily create and use UDP sockets. </div></div>
 <div class="ttc" id="linux_2mcu__periph_2udp__arch_8c_html_acd1365113847d9c844e256228443af2d"><div class="ttname"><a href="linux_2mcu__periph_2udp__arch_8c.html#acd1365113847d9c844e256228443af2d">udp_send_message</a></div><div class="ttdeci">void udp_send_message(struct udp_periph *p, long fd)</div><div class="ttdoc">Send a message. </div><div class="ttdef"><b>Definition:</b> <a href="linux_2mcu__periph_2udp__arch_8c_source.html#l00144">udp_arch.c:144</a></div></div>
@@ -365,7 +366,7 @@ $(document).ready(function(){initNavTree('linux_2mcu__periph_2udp__arch_8c_sourc
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_92fbf38b8c893a0928a3445a75d0ac01.html">linux</a></li><li class="navelem"><a class="el" href="dir_7cedabfb4d36d0fdf06823c7fd9084fc.html">mcu_periph</a></li><li class="navelem"><a class="el" href="linux_2mcu__periph_2udp__arch_8c.html">udp_arch.c</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:02:08 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:02:19 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

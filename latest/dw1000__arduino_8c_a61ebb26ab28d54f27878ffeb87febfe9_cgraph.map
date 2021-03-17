@@ -1,9 +1,35 @@
 <map id="check_and_compute_data" name="check_and_compute_data">
-<area shape="rect" id="node2" href="$dw1000__arduino_8c.html#ac69c33f1afdbddc93f4606fc40376644" title="check timeout for each anchor " alt="" coords="244,5,411,32"/>
-<area shape="rect" id="node4" href="$ekf__range_8c.html#ad8541ea62f847f412b776bc09f925007" title="Get current pos. " alt="" coords="256,56,399,83"/>
-<area shape="rect" id="node5" href="$ekf__range_8c.html#a28c4ed56eb77d0de14cfa54c94e1fd6e" title="Get current speed. " alt="" coords="248,107,407,133"/>
-<area shape="rect" id="node6" href="$ekf__range_8c.html#a05763c5cfa939dd7f360c86169223abf" title="Set initial state vector. " alt="" coords="251,157,403,184"/>
-<area shape="rect" id="node7" href="$ekf__range_8c.html#a6778974be3a678696790a30c04315a72" title="correction step " alt="" coords="244,208,411,235"/>
-<area shape="rect" id="node8" href="$trilateration_8c.html#a97f0436650276f98507bed287f66f0c6" title="Compute trilateration based on the latest measurments. " alt="" coords="247,259,407,285"/>
-<area shape="rect" id="node3" href="$sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup. " alt="" coords="459,5,601,32"/>
+<area shape="rect" id="node2" href="$dw1000__arduino_8c.html#ac69c33f1afdbddc93f4606fc40376644" title="check timeout for each anchor " alt="" coords="244,47,411,73"/>
+<area shape="rect" id="node4" href="$ekf__range_8c.html#ad8541ea62f847f412b776bc09f925007" title="Get current pos. " alt="" coords="256,97,399,124"/>
+<area shape="rect" id="node5" href="$ekf__range_8c.html#a28c4ed56eb77d0de14cfa54c94e1fd6e" title="Get current speed. " alt="" coords="248,148,407,175"/>
+<area shape="rect" id="node6" href="$ekf__range_8c.html#a05763c5cfa939dd7f360c86169223abf" title="Set initial state vector. " alt="" coords="251,199,403,225"/>
+<area shape="rect" id="node7" href="$ekf__range_8c.html#a6778974be3a678696790a30c04315a72" title="correction step " alt="" coords="244,249,411,276"/>
+<area shape="rect" id="node34" href="$trilateration_8c.html#a97f0436650276f98507bed287f66f0c6" title="Compute trilateration based on the latest measurments. " alt="" coords="247,300,407,327"/>
+<area shape="rect" id="node3" href="$sys__time_8h.html#af486c2fb33d8d33645256a9970eb056e" title="Get the time in seconds since startup. " alt="" coords="459,47,601,73"/>
+<area shape="rect" id="node8" href="$e__identification__fr_8c.html#a92cffae21318c1d983c63f3afa2a8d87" title="if" alt="" coords="511,249,549,276"/>
+<area shape="rect" id="node9" href="$e__identification__fr_8c.html#abe4d49e345383266eb45de2d01dc9998" title="put_lat" alt="" coords="695,148,762,175"/>
+<area shape="rect" id="node21" href="$e__identification__fr_8c.html#a58d75f9f286ae788eb5a93131c69b9cf" title="put_lon" alt="" coords="694,249,763,276"/>
+<area shape="rect" id="node22" href="$e__identification__fr_8c.html#af46aee3f4ea5943261ce0a748645d5ab" title="put_alt" alt="" coords="695,199,762,225"/>
+<area shape="rect" id="node23" href="$e__identification__fr_8c.html#ab86f66c5c2a551aabe930fff3a5120d3" title="put_lat_lon_home" alt="" coords="661,97,797,124"/>
+<area shape="rect" id="node27" href="$e__identification__fr_8c.html#ad697ac22d1fafd997a6033c81aac40c9" title="put_route" alt="" coords="687,300,771,327"/>
+<area shape="rect" id="node30" href="$e__identification__fr_8c.html#ad38b113b8c749a0ad70f3226ce4be6c8" title="put_horizontal_speed" alt="" coords="649,351,808,377"/>
+<area shape="rect" id="node33" href="$chibios_2mcu__periph_2uart__arch_8c.html#aafe5af02ef8bf915fcd76d39896174a3" title="Uart transmit buffer implementation. " alt="" coords="669,401,789,428"/>
+<area shape="rect" id="node10" href="$group__state__position.html#ga99473409b740a26c0e2b9a5bd8e9defb" title="Get position in LLA coordinates (int). " alt="" coords="893,220,1049,247"/>
+<area shape="rect" id="node11" href="$group__state__position.html#gad0fedf046f198eace06305e56fc7a0f8" title="Calculate LLA (int) from any other available representation. " alt="" coords="1149,220,1309,247"/>
+<area shape="rect" id="node12" href="$group__math__geodetic__int.html#gaea47a32071c2427f895fcb1df32c4e23" title="Convert a ECEF to LLA. " alt="" coords="1391,123,1489,149"/>
+<area shape="rect" id="node15" href="$pprz__geodetic__float_8c.html#a30c2e47ec9a898079c04e8b08496b455" title="lla_of_utm_f" alt="" coords="1391,64,1489,91"/>
+<area shape="rect" id="node18" href="$group__math__geodetic__int.html#gaf92579b72a2adb1aaac73fae89553fca" title="Convert a local NED position to ECEF. " alt="" coords="1371,224,1509,251"/>
+<area shape="rect" id="node19" href="$group__math__geodetic__int.html#gaaeff7441301129ca712e828b9b4f474e" title="Convert a local ENU position to ECEF. " alt="" coords="1588,224,1727,251"/>
+<area shape="rect" id="node13" href="$pprz__geodetic__float_8c.html#adecd186d51b41b09f0cad928c0d2f68e" title="lla_of_ecef_f" alt="" coords="1607,123,1707,149"/>
+<area shape="rect" id="node14" href="$group__math__geodetic__double.html#ga9d3464ccabcd97db9fb4e1c7d25dfe16" title="lla_of_ecef_d" alt="" coords="1605,173,1709,200"/>
+<area shape="rect" id="node16" href="$pprz__geodetic__float_8c.html#a28b6e05c87f50f1e5290e36407095fb6" title="inverse_isometric_latitude_f" alt="" coords="1557,5,1757,32"/>
+<area shape="rect" id="node17" href="$pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="1589,57,1725,98"/>
+<area shape="rect" id="node20" href="$group__math__geodetic__int.html#gaabe6e63048c95afdffdd4a581dc5f2b8" title="Rotate a vector from ENU to ECEF. " alt="" coords="1805,224,1948,251"/>
+<area shape="rect" id="node24" href="$subsystems_2navigation_2waypoints_8c.html#a2ed9112b04893275873729d03176f490" title="Get LLA coordinates of waypoint. " alt="" coords="908,115,1035,141"/>
+<area shape="rect" id="node25" href="$subsystems_2navigation_2waypoints_8c.html#a10acece8582506367e9e9df3694bf31b" title="update global LLA coordinates from its ENU coordinates " alt="" coords="1158,165,1299,192"/>
+<area shape="rect" id="node26" href="$subsystems_2navigation_2waypoints_8c.html#a4f584367219ec09db0e1df24c85e7a1b" title="waypoint_is_global" alt="" coords="1159,115,1299,141"/>
+<area shape="rect" id="node28" href="$group__state__velocity.html#ga6f8b83126a235daea584aa9ce97f7fac" title="Get dir of horizontal ground speed (float). " alt="" coords="865,296,1078,323"/>
+<area shape="rect" id="node29" href="$group__state__velocity.html#gad9b7b6ea39d5a4ee3e824f97204c4bb5" title="stateCalcHorizontalSpeed\lDir_f" alt="" coords="1135,285,1323,326"/>
+<area shape="rect" id="node31" href="$group__state__velocity.html#ga1396b84069296dc0353f25281a472c08" title="Get norm of horizontal ground speed (float). " alt="" coords="856,353,1087,380"/>
+<area shape="rect" id="node32" href="$group__state__velocity.html#ga990849172b82f2e3bc1ab9da2395c9c4" title="stateCalcHorizontalSpeed\lNorm_f" alt="" coords="1135,350,1323,391"/>
 </map>

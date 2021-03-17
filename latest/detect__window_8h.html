@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -148,8 +148,8 @@ Macros</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:acd7643219a35e96f1dbd1a28a2c2237e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="detect__window_8h.html#acd7643219a35e96f1dbd1a28a2c2237e">detect_window_init</a> (void)</td></tr>
 <tr class="separator:acd7643219a35e96f1dbd1a28a2c2237e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60d7aea06e4cdd5d5718514b22263e72"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="image_8h.html#structimage__t">image_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="detect__window_8h.html#a60d7aea06e4cdd5d5718514b22263e72">detect_window</a> (struct <a class="el" href="image_8h.html#structimage__t">image_t</a> *img)</td></tr>
-<tr class="separator:a60d7aea06e4cdd5d5718514b22263e72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f18f9a50ab020e641435c1c5d1c1833"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="image_8h.html#structimage__t">image_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="detect__window_8h.html#a5f18f9a50ab020e641435c1c5d1c1833">detect_window</a> (struct <a class="el" href="image_8h.html#structimage__t">image_t</a> *img, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> camera_id)</td></tr>
+<tr class="separator:a5f18f9a50ab020e641435c1c5d1c1833"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7aa027192382c57d36c563c050324fcb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="detect__window_8h.html#a7aa027192382c57d36c563c050324fcb">detect_window_sizes</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *in, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> image_width, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> image_height, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *coordinate, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> *integral_image, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> MODE)</td></tr>
 <tr class="separator:a7aa027192382c57d36c563c050324fcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4768d05b0fbd586efc9d66d4e6713724"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="detect__window_8h.html#a4768d05b0fbd586efc9d66d4e6713724">detect_window_one_size</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *in, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> image_width, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> image_height, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *coordinate, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> *size, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> calculate_integral_image, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> *integral_image, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> MODE)</td></tr>
@@ -274,7 +274,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a60d7aea06e4cdd5d5718514b22263e72"></a>
+<a class="anchor" id="a5f18f9a50ab020e641435c1c5d1c1833"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -282,15 +282,25 @@ Functions</h2></td></tr>
           <td class="memname">struct <a class="el" href="image_8h.html#structimage__t">image_t</a>* detect_window </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="image_8h.html#structimage__t">image_t</a> *&#160;</td>
-          <td class="paramname"><em>img</em></td><td>)</td>
+          <td class="paramname"><em>img</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>camera_id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="detect__window_8c_source.html#l00048">48</a> of file <a class="el" href="detect__window_8c_source.html">detect_window.c</a>.</p>
 
-<p>References <a class="el" href="image_8h_source.html#l00053">image_t::buf</a>, <a class="el" href="detect__window_8c_source.html#l00069">detect_window_sizes()</a>, <a class="el" href="image_8h_source.html#l00046">image_t::h</a>, <a class="el" href="image_8c_source.html#l00043">image_create()</a>, <a class="el" href="image_8c_source.html#l00069">image_free()</a>, <a class="el" href="image_8h_source.html#l00037">IMAGE_GRAYSCALE</a>, <a class="el" href="image_8c_source.html#l00125">image_to_grayscale()</a>, <a class="el" href="detect__window_8h_source.html#l00033">MODE_BRIGHT</a>, and <a class="el" href="image_8h_source.html#l00045">image_t::w</a>.</p>
+<p>References <a class="el" href="image_8h_source.html#l00054">image_t::buf</a>, <a class="el" href="detect__window_8c_source.html#l00069">detect_window_sizes()</a>, <a class="el" href="image_8h_source.html#l00047">image_t::h</a>, <a class="el" href="image_8c_source.html#l00043">image_create()</a>, <a class="el" href="image_8c_source.html#l00075">image_free()</a>, <a class="el" href="image_8h_source.html#l00037">IMAGE_GRAYSCALE</a>, <a class="el" href="image_8c_source.html#l00131">image_to_grayscale()</a>, <a class="el" href="detect__window_8h_source.html#l00033">MODE_BRIGHT</a>, and <a class="el" href="image_8h_source.html#l00046">image_t::w</a>.</p>
 
 <p>Referenced by <a class="el" href="detect__window_8c_source.html#l00039">detect_window_init()</a>.</p>
 
@@ -299,8 +309,8 @@ Functions</h2></td></tr>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="detect__window_8h_a60d7aea06e4cdd5d5718514b22263e72_cgraph.png" border="0" usemap="#detect__window_8h_a60d7aea06e4cdd5d5718514b22263e72_cgraph" alt=""/></div>
-<map name="detect__window_8h_a60d7aea06e4cdd5d5718514b22263e72_cgraph" id="detect__window_8h_a60d7aea06e4cdd5d5718514b22263e72_cgraph">
+<div class="center"><img src="detect__window_8h_a5f18f9a50ab020e641435c1c5d1c1833_cgraph.png" border="0" usemap="#detect__window_8h_a5f18f9a50ab020e641435c1c5d1c1833_cgraph" alt=""/></div>
+<map name="detect__window_8h_a5f18f9a50ab020e641435c1c5d1c1833_cgraph" id="detect__window_8h_a5f18f9a50ab020e641435c1c5d1c1833_cgraph">
 <area shape="rect" id="node2" href="detect__window_8c.html#a7aa027192382c57d36c563c050324fcb" title="detect_window_sizes" alt="" coords="168,56,323,83"/><area shape="rect" id="node8" href="image_8c.html#ab5cc0250c461b9d2f043e4884f6b9a53" title="Create a new image. " alt="" coords="190,107,301,133"/><area shape="rect" id="node9" href="image_8c.html#aa09d6434519478ba26eab12a96d600ba" title="Free the image. " alt="" coords="198,157,293,184"/><area shape="rect" id="node10" href="image_8c.html#a74a32006a620503a7ca62e5b2a86abd1" title="Convert an image to grayscale. " alt="" coords="170,208,321,235"/><area shape="rect" id="node3" href="detect__window_8c.html#a4768d05b0fbd586efc9d66d4e6713724" title="detect_window_one_size" alt="" coords="371,56,549,83"/><area shape="rect" id="node4" href="detect__window_8c.html#a44b1391d6d18f1408ab9a17ebebd6687" title="get_border_response" alt="" coords="599,5,757,32"/><area shape="rect" id="node6" href="detect__window_8c.html#aa749b2471e961c6b426b030ebc9a278d" title="get_integral_image" alt="" coords="605,56,751,83"/><area shape="rect" id="node7" href="detect__window_8c.html#ae7f2c9f25beb12d41e3169a2785d794a" title="get_window_response" alt="" coords="597,107,759,133"/><area shape="rect" id="node5" href="detect__window_8c.html#a43d41976f62300cb900a8a43e0e1947e" title="get_sum_disparities" alt="" coords="807,56,957,83"/></map>
 </div>
 </p>
@@ -310,8 +320,8 @@ Functions</h2></td></tr>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="detect__window_8h_a60d7aea06e4cdd5d5718514b22263e72_icgraph.png" border="0" usemap="#detect__window_8h_a60d7aea06e4cdd5d5718514b22263e72_icgraph" alt=""/></div>
-<map name="detect__window_8h_a60d7aea06e4cdd5d5718514b22263e72_icgraph" id="detect__window_8h_a60d7aea06e4cdd5d5718514b22263e72_icgraph">
+<div class="center"><img src="detect__window_8h_a5f18f9a50ab020e641435c1c5d1c1833_icgraph.png" border="0" usemap="#detect__window_8h_a5f18f9a50ab020e641435c1c5d1c1833_icgraph" alt=""/></div>
+<map name="detect__window_8h_a5f18f9a50ab020e641435c1c5d1c1833_icgraph" id="detect__window_8h_a5f18f9a50ab020e641435c1c5d1c1833_icgraph">
 <area shape="rect" id="node2" href="detect__window_8h.html#acd7643219a35e96f1dbd1a28a2c2237e" title="detect_window_init" alt="" coords="168,5,309,32"/></map>
 </div>
 </p>
@@ -343,7 +353,7 @@ Functions</h2></td></tr>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="detect__window_8h_acd7643219a35e96f1dbd1a28a2c2237e_cgraph.png" border="0" usemap="#detect__window_8h_acd7643219a35e96f1dbd1a28a2c2237e_cgraph" alt=""/></div>
 <map name="detect__window_8h_acd7643219a35e96f1dbd1a28a2c2237e_cgraph" id="detect__window_8h_acd7643219a35e96f1dbd1a28a2c2237e_cgraph">
-<area shape="rect" id="node2" href="cv_8c.html#aee4ecc7b59c1526a024f91a46a34ff45" title="cv_add_to_device" alt="" coords="195,101,329,128"/><area shape="rect" id="node10" href="detect__window_8c.html#a60d7aea06e4cdd5d5718514b22263e72" title="detect_window" alt="" coords="205,189,319,216"/><area shape="rect" id="node3" href="cv_8h.html#a9e0afd727457cecc0e207aa03c4d48a5" title="Keep track of video devices added by modules. " alt="" coords="387,63,522,89"/><area shape="rect" id="node4" href="video__thread_8c.html#acc71ed66abdc3fa0cecd95cc408c670e" title="initialize_camera" alt="" coords="605,56,734,83"/><area shape="rect" id="node5" href="v4l2_8c.html#a3798643b3e99cd32ef724fc928d92e51" title="Initialize a V4L2 subdevice. " alt="" coords="824,5,951,32"/><area shape="rect" id="node6" href="v4l2_8c.html#a1f683e79a4639d4e189f059f6c4ae268" title="Initialize a V4L2(Video for Linux 2) device. " alt="" coords="850,56,925,83"/><area shape="rect" id="node7" href="virt2phys_8c.html#ac0b66a5b5e335c413a78b5e9f677ba83" title="check_contiguity" alt="" coords="1027,56,1155,83"/><area shape="rect" id="node8" href="virt2phys_8c.html#ac4c8df40f3a8bc1086f2637b1c78b101" title="open_pagemap" alt="" coords="1215,31,1337,57"/><area shape="rect" id="node9" href="virt2phys_8c.html#a4c9379905f0c688e828e6e1a23d18153" title="virt2phys" alt="" coords="1236,81,1316,108"/><area shape="rect" id="node11" href="detect__window_8c.html#a7aa027192382c57d36c563c050324fcb" title="detect_window_sizes" alt="" coords="377,139,532,165"/><area shape="rect" id="node17" href="image_8c.html#ab5cc0250c461b9d2f043e4884f6b9a53" title="Create a new image. " alt="" coords="399,189,510,216"/><area shape="rect" id="node18" href="image_8c.html#aa09d6434519478ba26eab12a96d600ba" title="Free the image. " alt="" coords="407,240,502,267"/><area shape="rect" id="node19" href="image_8c.html#a74a32006a620503a7ca62e5b2a86abd1" title="Convert an image to grayscale. " alt="" coords="379,291,530,317"/><area shape="rect" id="node12" href="detect__window_8c.html#a4768d05b0fbd586efc9d66d4e6713724" title="detect_window_one_size" alt="" coords="580,151,759,177"/><area shape="rect" id="node13" href="detect__window_8c.html#a44b1391d6d18f1408ab9a17ebebd6687" title="get_border_response" alt="" coords="808,107,967,133"/><area shape="rect" id="node15" href="detect__window_8c.html#aa749b2471e961c6b426b030ebc9a278d" title="get_integral_image" alt="" coords="815,157,960,184"/><area shape="rect" id="node16" href="detect__window_8c.html#ae7f2c9f25beb12d41e3169a2785d794a" title="get_window_response" alt="" coords="807,208,968,235"/><area shape="rect" id="node14" href="detect__window_8c.html#a43d41976f62300cb900a8a43e0e1947e" title="get_sum_disparities" alt="" coords="1016,157,1167,184"/></map>
+<area shape="rect" id="node2" href="cv_8c.html#a27c5a4c16f124cdc564d637fcc733b97" title="cv_add_to_device" alt="" coords="195,101,329,128"/><area shape="rect" id="node10" href="detect__window_8c.html#a5f18f9a50ab020e641435c1c5d1c1833" title="detect_window" alt="" coords="205,189,319,216"/><area shape="rect" id="node3" href="cv_8h.html#a9e0afd727457cecc0e207aa03c4d48a5" title="Keep track of video devices added by modules. " alt="" coords="387,63,522,89"/><area shape="rect" id="node4" href="video__thread_8c.html#acc71ed66abdc3fa0cecd95cc408c670e" title="initialize_camera" alt="" coords="605,56,734,83"/><area shape="rect" id="node5" href="v4l2_8c.html#a3798643b3e99cd32ef724fc928d92e51" title="Initialize a V4L2 subdevice. " alt="" coords="824,5,951,32"/><area shape="rect" id="node6" href="v4l2_8c.html#a1f683e79a4639d4e189f059f6c4ae268" title="Initialize a V4L2(Video for Linux 2) device. " alt="" coords="850,56,925,83"/><area shape="rect" id="node7" href="virt2phys_8c.html#ac0b66a5b5e335c413a78b5e9f677ba83" title="check_contiguity" alt="" coords="1027,56,1155,83"/><area shape="rect" id="node8" href="virt2phys_8c.html#ac4c8df40f3a8bc1086f2637b1c78b101" title="open_pagemap" alt="" coords="1215,31,1337,57"/><area shape="rect" id="node9" href="virt2phys_8c.html#a4c9379905f0c688e828e6e1a23d18153" title="virt2phys" alt="" coords="1236,81,1316,108"/><area shape="rect" id="node11" href="detect__window_8c.html#a7aa027192382c57d36c563c050324fcb" title="detect_window_sizes" alt="" coords="377,139,532,165"/><area shape="rect" id="node17" href="image_8c.html#ab5cc0250c461b9d2f043e4884f6b9a53" title="Create a new image. " alt="" coords="399,189,510,216"/><area shape="rect" id="node18" href="image_8c.html#aa09d6434519478ba26eab12a96d600ba" title="Free the image. " alt="" coords="407,240,502,267"/><area shape="rect" id="node19" href="image_8c.html#a74a32006a620503a7ca62e5b2a86abd1" title="Convert an image to grayscale. " alt="" coords="379,291,530,317"/><area shape="rect" id="node12" href="detect__window_8c.html#a4768d05b0fbd586efc9d66d4e6713724" title="detect_window_one_size" alt="" coords="580,151,759,177"/><area shape="rect" id="node13" href="detect__window_8c.html#a44b1391d6d18f1408ab9a17ebebd6687" title="get_border_response" alt="" coords="808,107,967,133"/><area shape="rect" id="node15" href="detect__window_8c.html#aa749b2471e961c6b426b030ebc9a278d" title="get_integral_image" alt="" coords="815,157,960,184"/><area shape="rect" id="node16" href="detect__window_8c.html#ae7f2c9f25beb12d41e3169a2785d794a" title="get_window_response" alt="" coords="807,208,968,235"/><area shape="rect" id="node14" href="detect__window_8c.html#a43d41976f62300cb900a8a43e0e1947e" title="get_sum_disparities" alt="" coords="1016,157,1167,184"/></map>
 </div>
 </p>
 
@@ -433,7 +443,7 @@ Functions</h2></td></tr>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="detect__window_8h_a4768d05b0fbd586efc9d66d4e6713724_icgraph.png" border="0" usemap="#detect__window_8h_a4768d05b0fbd586efc9d66d4e6713724_icgraph" alt=""/></div>
 <map name="detect__window_8h_a4768d05b0fbd586efc9d66d4e6713724_icgraph" id="detect__window_8h_a4768d05b0fbd586efc9d66d4e6713724_icgraph">
-<area shape="rect" id="node2" href="detect__window_8h.html#a7aa027192382c57d36c563c050324fcb" title="detect_window_sizes" alt="" coords="232,31,387,57"/><area shape="rect" id="node3" href="cv__blob__locator_8c.html#aa46d070d93f91a7f2399fe13aafab1bd" title="cv_window_func" alt="" coords="435,5,557,32"/><area shape="rect" id="node5" href="detect__window_8h.html#a60d7aea06e4cdd5d5718514b22263e72" title="detect_window" alt="" coords="439,56,553,83"/><area shape="rect" id="node4" href="cv__blob__locator_8h.html#a03040f93fee504200fd409c45f488e4d" title="cv_blob_locator_init" alt="" coords="605,5,752,32"/><area shape="rect" id="node6" href="detect__window_8h.html#acd7643219a35e96f1dbd1a28a2c2237e" title="detect_window_init" alt="" coords="608,56,749,83"/></map>
+<area shape="rect" id="node2" href="detect__window_8h.html#a7aa027192382c57d36c563c050324fcb" title="detect_window_sizes" alt="" coords="232,31,387,57"/><area shape="rect" id="node3" href="cv__blob__locator_8c.html#a8a8fe89100e06413aa2d6ac8fe864904" title="cv_window_func" alt="" coords="435,5,557,32"/><area shape="rect" id="node5" href="detect__window_8h.html#a5f18f9a50ab020e641435c1c5d1c1833" title="detect_window" alt="" coords="439,56,553,83"/><area shape="rect" id="node4" href="cv__blob__locator_8h.html#a03040f93fee504200fd409c45f488e4d" title="cv_blob_locator_init" alt="" coords="605,5,752,32"/><area shape="rect" id="node6" href="detect__window_8h.html#acd7643219a35e96f1dbd1a28a2c2237e" title="detect_window_init" alt="" coords="608,56,749,83"/></map>
 </div>
 </p>
 
@@ -511,7 +521,7 @@ Functions</h2></td></tr>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="detect__window_8h_a7aa027192382c57d36c563c050324fcb_icgraph.png" border="0" usemap="#detect__window_8h_a7aa027192382c57d36c563c050324fcb_icgraph" alt=""/></div>
 <map name="detect__window_8h_a7aa027192382c57d36c563c050324fcb_icgraph" id="detect__window_8h_a7aa027192382c57d36c563c050324fcb_icgraph">
-<area shape="rect" id="node2" href="cv__blob__locator_8c.html#aa46d070d93f91a7f2399fe13aafab1bd" title="cv_window_func" alt="" coords="208,5,331,32"/><area shape="rect" id="node4" href="detect__window_8h.html#a60d7aea06e4cdd5d5718514b22263e72" title="detect_window" alt="" coords="212,56,327,83"/><area shape="rect" id="node3" href="cv__blob__locator_8h.html#a03040f93fee504200fd409c45f488e4d" title="cv_blob_locator_init" alt="" coords="379,5,525,32"/><area shape="rect" id="node5" href="detect__window_8h.html#acd7643219a35e96f1dbd1a28a2c2237e" title="detect_window_init" alt="" coords="381,56,523,83"/></map>
+<area shape="rect" id="node2" href="cv__blob__locator_8c.html#a8a8fe89100e06413aa2d6ac8fe864904" title="cv_window_func" alt="" coords="208,5,331,32"/><area shape="rect" id="node4" href="detect__window_8h.html#a5f18f9a50ab020e641435c1c5d1c1833" title="detect_window" alt="" coords="212,56,327,83"/><area shape="rect" id="node3" href="cv__blob__locator_8h.html#a03040f93fee504200fd409c45f488e4d" title="cv_blob_locator_init" alt="" coords="379,5,525,32"/><area shape="rect" id="node5" href="detect__window_8h.html#acd7643219a35e96f1dbd1a28a2c2237e" title="detect_window_init" alt="" coords="381,56,523,83"/></map>
 </div>
 </p>
 
@@ -607,7 +617,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="detect__window_8c_source.html#l00237">237</a> of file <a class="el" href="detect__window_8c_source.html">detect_window.c</a>.</p>
 
-<p>References <a class="el" href="UKF__Wind__Estimator_8c_source.html#l00821">h()</a>, <a class="el" href="detect__window_8c_source.html#l00027">RES</a>, and <a class="el" href="image_8h_source.html#l00045">image_t::w</a>.</p>
+<p>References <a class="el" href="UKF__Wind__Estimator_8c_source.html#l00821">h()</a>, <a class="el" href="detect__window_8c_source.html#l00027">RES</a>, and <a class="el" href="image_8h_source.html#l00046">image_t::w</a>.</p>
 
 <p>Referenced by <a class="el" href="detect__window_8c_source.html#l00172">detect_escape()</a>.</p>
 
@@ -731,7 +741,7 @@ Functions</h2></td></tr>
 <div id="dynsection-13-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="detect__window_8h_a9cd79a0870cdc82e0d61c9a90a396e8a_icgraph.png" border="0" usemap="#detect__window_8h_a9cd79a0870cdc82e0d61c9a90a396e8a_icgraph" alt=""/></div>
 <map name="detect__window_8h_a9cd79a0870cdc82e0d61c9a90a396e8a_icgraph" id="detect__window_8h_a9cd79a0870cdc82e0d61c9a90a396e8a_icgraph">
-<area shape="rect" id="node2" href="detect__window_8h.html#a4768d05b0fbd586efc9d66d4e6713724" title="detect_window_one_size" alt="" coords="212,31,391,57"/><area shape="rect" id="node3" href="detect__window_8h.html#a7aa027192382c57d36c563c050324fcb" title="detect_window_sizes" alt="" coords="439,31,593,57"/><area shape="rect" id="node4" href="cv__blob__locator_8c.html#aa46d070d93f91a7f2399fe13aafab1bd" title="cv_window_func" alt="" coords="641,5,764,32"/><area shape="rect" id="node6" href="detect__window_8h.html#a60d7aea06e4cdd5d5718514b22263e72" title="detect_window" alt="" coords="645,56,760,83"/><area shape="rect" id="node5" href="cv__blob__locator_8h.html#a03040f93fee504200fd409c45f488e4d" title="cv_blob_locator_init" alt="" coords="812,5,959,32"/><area shape="rect" id="node7" href="detect__window_8h.html#acd7643219a35e96f1dbd1a28a2c2237e" title="detect_window_init" alt="" coords="815,56,956,83"/></map>
+<area shape="rect" id="node2" href="detect__window_8h.html#a4768d05b0fbd586efc9d66d4e6713724" title="detect_window_one_size" alt="" coords="212,31,391,57"/><area shape="rect" id="node3" href="detect__window_8h.html#a7aa027192382c57d36c563c050324fcb" title="detect_window_sizes" alt="" coords="439,31,593,57"/><area shape="rect" id="node4" href="cv__blob__locator_8c.html#a8a8fe89100e06413aa2d6ac8fe864904" title="cv_window_func" alt="" coords="641,5,764,32"/><area shape="rect" id="node6" href="detect__window_8h.html#a5f18f9a50ab020e641435c1c5d1c1833" title="detect_window" alt="" coords="645,56,760,83"/><area shape="rect" id="node5" href="cv__blob__locator_8h.html#a03040f93fee504200fd409c45f488e4d" title="cv_blob_locator_init" alt="" coords="812,5,959,32"/><area shape="rect" id="node7" href="detect__window_8h.html#acd7643219a35e96f1dbd1a28a2c2237e" title="detect_window_init" alt="" coords="815,56,956,83"/></map>
 </div>
 </p>
 
@@ -784,7 +794,7 @@ Functions</h2></td></tr>
 <div id="dynsection-14-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="detect__window_8h_aa749b2471e961c6b426b030ebc9a278d_icgraph.png" border="0" usemap="#detect__window_8h_aa749b2471e961c6b426b030ebc9a278d_icgraph" alt=""/></div>
 <map name="detect__window_8h_aa749b2471e961c6b426b030ebc9a278d_icgraph" id="detect__window_8h_aa749b2471e961c6b426b030ebc9a278d_icgraph">
-<area shape="rect" id="node2" href="detect__window_8h.html#a4768d05b0fbd586efc9d66d4e6713724" title="detect_window_one_size" alt="" coords="199,31,377,57"/><area shape="rect" id="node3" href="detect__window_8h.html#a7aa027192382c57d36c563c050324fcb" title="detect_window_sizes" alt="" coords="425,31,580,57"/><area shape="rect" id="node4" href="cv__blob__locator_8c.html#aa46d070d93f91a7f2399fe13aafab1bd" title="cv_window_func" alt="" coords="628,5,751,32"/><area shape="rect" id="node6" href="detect__window_8h.html#a60d7aea06e4cdd5d5718514b22263e72" title="detect_window" alt="" coords="632,56,747,83"/><area shape="rect" id="node5" href="cv__blob__locator_8h.html#a03040f93fee504200fd409c45f488e4d" title="cv_blob_locator_init" alt="" coords="799,5,945,32"/><area shape="rect" id="node7" href="detect__window_8h.html#acd7643219a35e96f1dbd1a28a2c2237e" title="detect_window_init" alt="" coords="801,56,943,83"/></map>
+<area shape="rect" id="node2" href="detect__window_8h.html#a4768d05b0fbd586efc9d66d4e6713724" title="detect_window_one_size" alt="" coords="199,31,377,57"/><area shape="rect" id="node3" href="detect__window_8h.html#a7aa027192382c57d36c563c050324fcb" title="detect_window_sizes" alt="" coords="425,31,580,57"/><area shape="rect" id="node4" href="cv__blob__locator_8c.html#a8a8fe89100e06413aa2d6ac8fe864904" title="cv_window_func" alt="" coords="628,5,751,32"/><area shape="rect" id="node6" href="detect__window_8h.html#a5f18f9a50ab020e641435c1c5d1c1833" title="detect_window" alt="" coords="632,56,747,83"/><area shape="rect" id="node5" href="cv__blob__locator_8h.html#a03040f93fee504200fd409c45f488e4d" title="cv_blob_locator_init" alt="" coords="799,5,945,32"/><area shape="rect" id="node7" href="detect__window_8h.html#acd7643219a35e96f1dbd1a28a2c2237e" title="detect_window_init" alt="" coords="801,56,943,83"/></map>
 </div>
 </p>
 
@@ -855,7 +865,7 @@ Functions</h2></td></tr>
 <div id="dynsection-15-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="detect__window_8h_a43d41976f62300cb900a8a43e0e1947e_icgraph.png" border="0" usemap="#detect__window_8h_a43d41976f62300cb900a8a43e0e1947e_icgraph" alt=""/></div>
 <map name="detect__window_8h_a43d41976f62300cb900a8a43e0e1947e_icgraph" id="detect__window_8h_a43d41976f62300cb900a8a43e0e1947e_icgraph">
-<area shape="rect" id="node2" href="detect__window_8h.html#a9cd79a0870cdc82e0d61c9a90a396e8a" title="get_border_response" alt="" coords="205,5,364,32"/><area shape="rect" id="node9" href="detect__window_8h.html#ae7f2c9f25beb12d41e3169a2785d794a" title="get_window_response" alt="" coords="204,56,365,83"/><area shape="rect" id="node3" href="detect__window_8h.html#a4768d05b0fbd586efc9d66d4e6713724" title="detect_window_one_size" alt="" coords="413,31,592,57"/><area shape="rect" id="node4" href="detect__window_8h.html#a7aa027192382c57d36c563c050324fcb" title="detect_window_sizes" alt="" coords="640,31,795,57"/><area shape="rect" id="node5" href="cv__blob__locator_8c.html#aa46d070d93f91a7f2399fe13aafab1bd" title="cv_window_func" alt="" coords="843,5,965,32"/><area shape="rect" id="node7" href="detect__window_8h.html#a60d7aea06e4cdd5d5718514b22263e72" title="detect_window" alt="" coords="847,56,961,83"/><area shape="rect" id="node6" href="cv__blob__locator_8h.html#a03040f93fee504200fd409c45f488e4d" title="cv_blob_locator_init" alt="" coords="1013,5,1160,32"/><area shape="rect" id="node8" href="detect__window_8h.html#acd7643219a35e96f1dbd1a28a2c2237e" title="detect_window_init" alt="" coords="1016,56,1157,83"/></map>
+<area shape="rect" id="node2" href="detect__window_8h.html#a9cd79a0870cdc82e0d61c9a90a396e8a" title="get_border_response" alt="" coords="205,5,364,32"/><area shape="rect" id="node9" href="detect__window_8h.html#ae7f2c9f25beb12d41e3169a2785d794a" title="get_window_response" alt="" coords="204,56,365,83"/><area shape="rect" id="node3" href="detect__window_8h.html#a4768d05b0fbd586efc9d66d4e6713724" title="detect_window_one_size" alt="" coords="413,31,592,57"/><area shape="rect" id="node4" href="detect__window_8h.html#a7aa027192382c57d36c563c050324fcb" title="detect_window_sizes" alt="" coords="640,31,795,57"/><area shape="rect" id="node5" href="cv__blob__locator_8c.html#a8a8fe89100e06413aa2d6ac8fe864904" title="cv_window_func" alt="" coords="843,5,965,32"/><area shape="rect" id="node7" href="detect__window_8h.html#a5f18f9a50ab020e641435c1c5d1c1833" title="detect_window" alt="" coords="847,56,961,83"/><area shape="rect" id="node6" href="cv__blob__locator_8h.html#a03040f93fee504200fd409c45f488e4d" title="cv_blob_locator_init" alt="" coords="1013,5,1160,32"/><area shape="rect" id="node8" href="detect__window_8h.html#acd7643219a35e96f1dbd1a28a2c2237e" title="detect_window_init" alt="" coords="1016,56,1157,83"/></map>
 </div>
 </p>
 
@@ -957,7 +967,7 @@ Functions</h2></td></tr>
 <div id="dynsection-17-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="detect__window_8h_ae7f2c9f25beb12d41e3169a2785d794a_icgraph.png" border="0" usemap="#detect__window_8h_ae7f2c9f25beb12d41e3169a2785d794a_icgraph" alt=""/></div>
 <map name="detect__window_8h_ae7f2c9f25beb12d41e3169a2785d794a_icgraph" id="detect__window_8h_ae7f2c9f25beb12d41e3169a2785d794a_icgraph">
-<area shape="rect" id="node2" href="detect__window_8h.html#a4768d05b0fbd586efc9d66d4e6713724" title="detect_window_one_size" alt="" coords="215,31,393,57"/><area shape="rect" id="node3" href="detect__window_8h.html#a7aa027192382c57d36c563c050324fcb" title="detect_window_sizes" alt="" coords="441,31,596,57"/><area shape="rect" id="node4" href="cv__blob__locator_8c.html#aa46d070d93f91a7f2399fe13aafab1bd" title="cv_window_func" alt="" coords="644,5,767,32"/><area shape="rect" id="node6" href="detect__window_8h.html#a60d7aea06e4cdd5d5718514b22263e72" title="detect_window" alt="" coords="648,56,763,83"/><area shape="rect" id="node5" href="cv__blob__locator_8h.html#a03040f93fee504200fd409c45f488e4d" title="cv_blob_locator_init" alt="" coords="815,5,961,32"/><area shape="rect" id="node7" href="detect__window_8h.html#acd7643219a35e96f1dbd1a28a2c2237e" title="detect_window_init" alt="" coords="817,56,959,83"/></map>
+<area shape="rect" id="node2" href="detect__window_8h.html#a4768d05b0fbd586efc9d66d4e6713724" title="detect_window_one_size" alt="" coords="215,31,393,57"/><area shape="rect" id="node3" href="detect__window_8h.html#a7aa027192382c57d36c563c050324fcb" title="detect_window_sizes" alt="" coords="441,31,596,57"/><area shape="rect" id="node4" href="cv__blob__locator_8c.html#a8a8fe89100e06413aa2d6ac8fe864904" title="cv_window_func" alt="" coords="644,5,767,32"/><area shape="rect" id="node6" href="detect__window_8h.html#a5f18f9a50ab020e641435c1c5d1c1833" title="detect_window" alt="" coords="648,56,763,83"/><area shape="rect" id="node5" href="cv__blob__locator_8h.html#a03040f93fee504200fd409c45f488e4d" title="cv_blob_locator_init" alt="" coords="815,5,961,32"/><area shape="rect" id="node7" href="detect__window_8h.html#acd7643219a35e96f1dbd1a28a2c2237e" title="detect_window_init" alt="" coords="817,56,959,83"/></map>
 </div>
 </p>
 
@@ -1021,7 +1031,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_304e79c9f5d09ea65a2f55aafb6a6b9d.html">computer_vision</a></li><li class="navelem"><a class="el" href="detect__window_8h.html">detect_window.h</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:03:08 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:03:23 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

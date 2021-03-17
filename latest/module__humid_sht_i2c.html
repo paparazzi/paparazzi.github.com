@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -138,7 +138,7 @@ Periodic Functions</h2>
 <ul>
 <li><a class="el" href="humid__sht__i2c_8c.html#a1ee81659bc27e2a5d7e769639a5503f7">humid_sht_periodic_i2c()</a><ul>
 <li>Frequency in Hz: <em>4</em> </li>
-<li>Delay: <em>0</em> <br />
+<li>Delay: <em>0</em>. <br />
  Integer to impose a sequence (between 0 and main_freq/function_freq)</li>
 <li>Autorun: <em>LOCK</em> <br />
  Periodic function automatically starts after init and can't be stopped.</li>
@@ -146,7 +146,7 @@ Periodic Functions</h2>
 </li>
 <li><a class="el" href="humid__sht__i2c_8c.html#a3c574dcb10c81020630db2286edbeaad">humid_sht_p_temp()</a><ul>
 <li>Frequency in Hz: <em>4</em> </li>
-<li>Delay: <em>6</em> <br />
+<li>Delay: <em>0.4</em> <br />
  Integer to impose a sequence (between 0 and main_freq/function_freq)</li>
 <li>Autorun: <em>LOCK</em> <br />
  Periodic function automatically starts after init and can't be stopped.</li>
@@ -154,7 +154,7 @@ Periodic Functions</h2>
 </li>
 <li><a class="el" href="humid__sht__i2c_8c.html#a69b6ec0fe918280602fd52013d39e212">humid_sht_p_humid()</a><ul>
 <li>Frequency in Hz: <em>4</em> </li>
-<li>Delay: <em>9</em> <br />
+<li>Delay: <em>0.6</em> <br />
  Integer to impose a sequence (between 0 and main_freq/function_freq)</li>
 <li>Autorun: <em>LOCK</em> <br />
  Periodic function automatically starts after init and can't be stopped.</li>
@@ -187,9 +187,9 @@ Raw humid_sht_i2c.xml file:</h2>
 <div class="line">    &lt;file name=&quot;humid_sht_i2c.h&quot;/&gt;</div>
 <div class="line">  &lt;/header&gt;</div>
 <div class="line">  &lt;init fun=&quot;humid_sht_init_i2c()&quot;/&gt;</div>
-<div class="line">  &lt;periodic fun=&quot;humid_sht_periodic_i2c()&quot; freq=&quot;4&quot; delay=&quot;0&quot;/&gt;</div>
-<div class="line">  &lt;periodic fun=&quot;humid_sht_p_temp()&quot; freq=&quot;4&quot; delay=&quot;6&quot;/&gt;</div>
-<div class="line">  &lt;periodic fun=&quot;humid_sht_p_humid()&quot;  freq=&quot;4&quot; delay=&quot;9&quot;/&gt;</div>
+<div class="line">  &lt;periodic fun=&quot;humid_sht_periodic_i2c()&quot; freq=&quot;4&quot; delay=&quot;0.&quot;/&gt;</div>
+<div class="line">  &lt;periodic fun=&quot;humid_sht_p_temp()&quot; freq=&quot;4&quot; delay=&quot;0.4&quot;/&gt;</div>
+<div class="line">  &lt;periodic fun=&quot;humid_sht_p_humid()&quot;  freq=&quot;4&quot; delay=&quot;0.6&quot;/&gt;</div>
 <div class="line">  &lt;event fun=&quot;humid_sht_event_i2c()&quot;/&gt;</div>
 <div class="line">  &lt;makefile target=&quot;ap&quot;&gt;</div>
 <div class="line">    &lt;file name=&quot;humid_sht_i2c.c&quot;/&gt;</div>
@@ -202,7 +202,7 @@ Raw humid_sht_i2c.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:03:42 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:04:00 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

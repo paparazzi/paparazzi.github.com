@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -146,7 +146,7 @@ Macros</h2></td></tr>
 <tr class="separator:a3e749f8fe41a97ef62de0dd622dbe3e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abed83dcae2c09eb0d09f0b279bad1d8b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common__flight__plan_8h.html#abed83dcae2c09eb0d09f0b279bad1d8b">NextBlock</a>()&#160;&#160;&#160;<a class="el" href="common__flight__plan_8h.html#ac8f874fffc6c3c549774e84eaabeac0d">nav_goto_block</a>(<a class="el" href="common__flight__plan_8h.html#a9bac2a1702848ebb785b932741bfa4be">nav_block</a> + 1)</td></tr>
 <tr class="separator:abed83dcae2c09eb0d09f0b279bad1d8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac90fac1cee5a86d0b7c434516f85dd98"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common__flight__plan_8h.html#ac90fac1cee5a86d0b7c434516f85dd98">GotoBlock</a>(b)&#160;&#160;&#160;<a class="el" href="common__flight__plan_8h.html#ac8f874fffc6c3c549774e84eaabeac0d">nav_goto_block</a>(b)</td></tr>
+<tr class="memitem:ac90fac1cee5a86d0b7c434516f85dd98"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common__flight__plan_8h.html#ac90fac1cee5a86d0b7c434516f85dd98">GotoBlock</a>(<a class="el" href="wedgebug_8c.html#a83fc1af92e29717b4513d121b0c72c7d">b</a>)&#160;&#160;&#160;<a class="el" href="common__flight__plan_8h.html#ac8f874fffc6c3c549774e84eaabeac0d">nav_goto_block</a>(<a class="el" href="wedgebug_8c.html#a83fc1af92e29717b4513d121b0c72c7d">b</a>)</td></tr>
 <tr class="separator:ac90fac1cee5a86d0b7c434516f85dd98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73a31daf5fd187893268389b0cf07d32"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common__flight__plan_8h.html#a73a31daf5fd187893268389b0cf07d32">Stage</a>(<a class="el" href="light__scheduler_8c.html#a2dee666f0c1fe072c549ff86b1d0a8ab">s</a>)&#160;&#160;&#160;case s: <a class="el" href="common__flight__plan_8h.html#a0a51b60cbd4b84900c8898cfb1f25d49">nav_stage</a>=<a class="el" href="light__scheduler_8c.html#a2dee666f0c1fe072c549ff86b1d0a8ab">s</a>;</td></tr>
 <tr class="separator:a73a31daf5fd187893268389b0cf07d32"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -160,7 +160,7 @@ Macros</h2></td></tr>
 <tr class="separator:a5b96743d43411bd82912a80f4d491de2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a010478bef118b0b6d9271708bb7797f7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common__flight__plan_8h.html#a010478bef118b0b6d9271708bb7797f7">Goto</a>(x)&#160;&#160;&#160;{ goto label_ ## x; }</td></tr>
 <tr class="separator:a010478bef118b0b6d9271708bb7797f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10c727164f85d4aacc4c83e1cb0152e2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common__flight__plan_8h.html#a10c727164f85d4aacc4c83e1cb0152e2">Return</a>(x)&#160;&#160;&#160;{ <a class="el" href="common__flight__plan_8h.html#a9bac2a1702848ebb785b932741bfa4be">nav_block</a>=<a class="el" href="common__flight__plan_8h.html#a5d3ddba0962294e6c33573f86c4b1eec">last_block</a>; if (x==1) {<a class="el" href="common__flight__plan_8h.html#a0a51b60cbd4b84900c8898cfb1f25d49">nav_stage</a>=0;} else {<a class="el" href="common__flight__plan_8h.html#a0a51b60cbd4b84900c8898cfb1f25d49">nav_stage</a>=<a class="el" href="common__flight__plan_8h.html#a731227193d590af31f6ab76fcd4f6543">last_stage</a>;} <a class="el" href="common__flight__plan_8h.html#ae3eebf6396d9b2539b27b9477c46724d">block_time</a>=0;}</td></tr>
+<tr class="memitem:a10c727164f85d4aacc4c83e1cb0152e2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common__flight__plan_8h.html#a10c727164f85d4aacc4c83e1cb0152e2">Return</a>(x)&#160;&#160;&#160;{ <a class="el" href="common__flight__plan_8h.html#a9bac2a1702848ebb785b932741bfa4be">nav_block</a>=<a class="el" href="common__flight__plan_8h.html#a5d3ddba0962294e6c33573f86c4b1eec">last_block</a>; <a class="el" href="e__identification__fr_8c.html#a92cffae21318c1d983c63f3afa2a8d87">if</a> (x==1) {<a class="el" href="common__flight__plan_8h.html#a0a51b60cbd4b84900c8898cfb1f25d49">nav_stage</a>=0;} else {<a class="el" href="common__flight__plan_8h.html#a0a51b60cbd4b84900c8898cfb1f25d49">nav_stage</a>=<a class="el" href="common__flight__plan_8h.html#a731227193d590af31f6ab76fcd4f6543">last_stage</a>;} <a class="el" href="common__flight__plan_8h.html#ae3eebf6396d9b2539b27b9477c46724d">block_time</a>=0;}</td></tr>
 <tr class="separator:a10c727164f85d4aacc4c83e1cb0152e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7d017fbba81f09f955d27d59df57acc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common__flight__plan_8h.html#af7d017fbba81f09f955d27d59df57acc">And</a>(x, y)&#160;&#160;&#160;((x) &amp;&amp; (y))</td></tr>
 <tr class="separator:af7d017fbba81f09f955d27d59df57acc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -282,8 +282,8 @@ Variables</h2></td></tr>
           <td class="memname">#define GotoBlock</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">b</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="common__flight__plan_8h.html#ac8f874fffc6c3c549774e84eaabeac0d">nav_goto_block</a>(b)</td>
+          <td class="paramname"><a class="el" href="wedgebug_8c.html#a83fc1af92e29717b4513d121b0c72c7d">b</a></td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="common__flight__plan_8h.html#ac8f874fffc6c3c549774e84eaabeac0d">nav_goto_block</a>(<a class="el" href="wedgebug_8c.html#a83fc1af92e29717b4513d121b0c72c7d">b</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -566,7 +566,7 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">x</td><td>)</td>
-          <td>&#160;&#160;&#160;{ <a class="el" href="common__flight__plan_8h.html#a9bac2a1702848ebb785b932741bfa4be">nav_block</a>=<a class="el" href="common__flight__plan_8h.html#a5d3ddba0962294e6c33573f86c4b1eec">last_block</a>; if (x==1) {<a class="el" href="common__flight__plan_8h.html#a0a51b60cbd4b84900c8898cfb1f25d49">nav_stage</a>=0;} else {<a class="el" href="common__flight__plan_8h.html#a0a51b60cbd4b84900c8898cfb1f25d49">nav_stage</a>=<a class="el" href="common__flight__plan_8h.html#a731227193d590af31f6ab76fcd4f6543">last_stage</a>;} <a class="el" href="common__flight__plan_8h.html#ae3eebf6396d9b2539b27b9477c46724d">block_time</a>=0;}</td>
+          <td>&#160;&#160;&#160;{ <a class="el" href="common__flight__plan_8h.html#a9bac2a1702848ebb785b932741bfa4be">nav_block</a>=<a class="el" href="common__flight__plan_8h.html#a5d3ddba0962294e6c33573f86c4b1eec">last_block</a>; <a class="el" href="e__identification__fr_8c.html#a92cffae21318c1d983c63f3afa2a8d87">if</a> (x==1) {<a class="el" href="common__flight__plan_8h.html#a0a51b60cbd4b84900c8898cfb1f25d49">nav_stage</a>=0;} else {<a class="el" href="common__flight__plan_8h.html#a0a51b60cbd4b84900c8898cfb1f25d49">nav_stage</a>=<a class="el" href="common__flight__plan_8h.html#a731227193d590af31f6ab76fcd4f6543">last_stage</a>;} <a class="el" href="common__flight__plan_8h.html#ae3eebf6396d9b2539b27b9477c46724d">block_time</a>=0;}</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -610,9 +610,9 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="common__flight__plan_8c_source.html#l00051">51</a> of file <a class="el" href="common__flight__plan_8c_source.html">common_flight_plan.c</a>.</p>
 
-<p>References <a class="el" href="common__flight__plan_8c_source.html#l00038">last_block</a>, <a class="el" href="common__flight__plan_8c_source.html#l00038">last_stage</a>, <a class="el" href="common__flight__plan_8c_source.html#l00035">nav_block</a>, <a class="el" href="common__flight__plan_8c_source.html#l00041">nav_init_block()</a>, and <a class="el" href="common__flight__plan_8c_source.html#l00035">nav_stage</a>.</p>
+<p>References <a class="el" href="wedgebug_8c_source.html#l00202">b</a>, <a class="el" href="common__flight__plan_8c_source.html#l00038">last_block</a>, <a class="el" href="common__flight__plan_8c_source.html#l00038">last_stage</a>, <a class="el" href="common__flight__plan_8c_source.html#l00035">nav_block</a>, <a class="el" href="common__flight__plan_8c_source.html#l00041">nav_init_block()</a>, and <a class="el" href="common__flight__plan_8c_source.html#l00035">nav_stage</a>.</p>
 
-<p>Referenced by <a class="el" href="fixedwing__datalink_8c_source.html#l00050">firmware_parse_msg()</a>, <a class="el" href="gsm_8c_source.html#l00287">gsm_receive_content()</a>, and <a class="el" href="blocks_8c_source.html#l00064">mavlink_block_message_handler()</a>.</p>
+<p>Referenced by <a class="el" href="fixedwing__datalink_8c_source.html#l00050">firmware_parse_msg()</a>, <a class="el" href="gsm_8c_source.html#l00288">gsm_receive_content()</a>, and <a class="el" href="blocks_8c_source.html#l00064">mavlink_block_message_handler()</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -689,9 +689,9 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="nav_8c_source.html#l00093">93</a> of file <a class="el" href="nav_8c_source.html">nav.c</a>.</p>
 
-<p>References <a class="el" href="rover_2navigation_8h_source.html#l00101">RoverNavigation::last_pos</a>, <a class="el" href="rover_2navigation_8c_source.html#l00049">nav</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00116">nav_circle_radians</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00090">nav_last_point</a>, <a class="el" href="common__flight__plan_8c_source.html#l00033">stage_time</a>, <a class="el" href="state_8h_source.html#l00719">stateGetPositionEnu_f()</a>, <a class="el" href="state_8h_source.html#l00674">stateGetPositionEnu_i()</a>, <a class="el" href="pprz__algebra_8h_source.html#l00140">VECT3_COPY</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00073">EnuCoor_f::x</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00074">EnuCoor_f::y</a>.</p>
+<p>References <a class="el" href="rover_2navigation_8h_source.html#l00101">RoverNavigation::last_pos</a>, <a class="el" href="rover_2navigation_8c_source.html#l00049">nav</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00120">nav_circle_radians</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00094">nav_last_point</a>, <a class="el" href="common__flight__plan_8c_source.html#l00033">stage_time</a>, <a class="el" href="state_8h_source.html#l00719">stateGetPositionEnu_f()</a>, <a class="el" href="state_8h_source.html#l00674">stateGetPositionEnu_i()</a>, <a class="el" href="pprz__algebra_8h_source.html#l00140">VECT3_COPY</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00073">EnuCoor_f::x</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00074">EnuCoor_f::y</a>.</p>
 
-<p>Referenced by <a class="el" href="nav__survey__polygon__gvf_8c_source.html#l00250">gvf_nav_survey_polygon_run()</a>, <a class="el" href="nav__bungee__takeoff_8c_source.html#l00158">nav_bungee_takeoff_run()</a>, <a class="el" href="nav__flower_8c_source.html#l00115">nav_flower_run()</a>, <a class="el" href="nav__line__border_8c_source.html#l00045">nav_line_border_run()</a>, <a class="el" href="nav__line__osam_8c_source.html#l00071">nav_line_osam_run()</a>, <a class="el" href="nav__line_8c_source.html#l00041">nav_line_run()</a>, <a class="el" href="nav__skid__landing_8c_source.html#l00127">nav_skid_landing_run()</a>, <a class="el" href="nav__survey__disc_8c_source.html#l00058">nav_survey_disc_run()</a>, <a class="el" href="nav__survey__poly__osam_8c_source.html#l00349">nav_survey_poly_osam_run()</a>, <a class="el" href="nav__survey__poly__rotorcraft_8c_source.html#l00307">nav_survey_poly_run()</a>, <a class="el" href="nav__survey__polygon_8c_source.html#l00232">nav_survey_polygon_run()</a>, <a class="el" href="nav__survey__zamboni_8c_source.html#l00129">nav_survey_zamboni_run()</a>, and <a class="el" href="nav__vertical__raster_8c_source.html#l00048">nav_vertical_raster_run()</a>.</p>
+<p>Referenced by <a class="el" href="nav__survey__polygon__gvf_8c_source.html#l00245">gvf_nav_survey_polygon_run()</a>, <a class="el" href="nav__bungee__takeoff_8c_source.html#l00158">nav_bungee_takeoff_run()</a>, <a class="el" href="nav__flower_8c_source.html#l00115">nav_flower_run()</a>, <a class="el" href="nav__line__border_8c_source.html#l00045">nav_line_border_run()</a>, <a class="el" href="nav__line__osam_8c_source.html#l00071">nav_line_osam_run()</a>, <a class="el" href="nav__line_8c_source.html#l00041">nav_line_run()</a>, <a class="el" href="nav__skid__landing_8c_source.html#l00127">nav_skid_landing_run()</a>, <a class="el" href="nav__survey__disc_8c_source.html#l00058">nav_survey_disc_run()</a>, <a class="el" href="nav__survey__poly__osam_8c_source.html#l00349">nav_survey_poly_osam_run()</a>, <a class="el" href="nav__survey__poly__rotorcraft_8c_source.html#l00307">nav_survey_poly_run()</a>, <a class="el" href="nav__survey__polygon_8c_source.html#l00232">nav_survey_polygon_run()</a>, <a class="el" href="nav__survey__zamboni_8c_source.html#l00129">nav_survey_zamboni_run()</a>, and <a class="el" href="nav__vertical__raster_8c_source.html#l00048">nav_vertical_raster_run()</a>.</p>
 
 <p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -730,7 +730,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="common__flight__plan_8c_source.html#l00033">33</a> of file <a class="el" href="common__flight__plan_8c_source.html">common_flight_plan.c</a>.</p>
 
-<p>Referenced by <a class="el" href="common__nav_8c_source.html#l00152">common_nav_periodic_task_4Hz()</a>, <a class="el" href="common__flight__plan_8c_source.html#l00041">nav_init_block()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00369">nav_periodic_task()</a>, and <a class="el" href="rotorcraft_2navigation_8c_source.html#l00150">send_nav_status()</a>.</p>
+<p>Referenced by <a class="el" href="common__nav_8c_source.html#l00152">common_nav_periodic_task_4Hz()</a>, <a class="el" href="common__flight__plan_8c_source.html#l00041">nav_init_block()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00374">nav_periodic_task()</a>, and <a class="el" href="rotorcraft_2navigation_8c_source.html#l00152">send_nav_status()</a>.</p>
 
 </div>
 </div>
@@ -780,7 +780,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="common__flight__plan_8c_source.html#l00035">35</a> of file <a class="el" href="common__flight__plan_8c_source.html">common_flight_plan.c</a>.</p>
 
-<p>Referenced by <a class="el" href="generic__com_8c_source.html#l00070">generic_com_periodic()</a>, <a class="el" href="mission__manager_8c_source.html#l00090">mavlink_mission_periodic()</a>, <a class="el" href="common__flight__plan_8c_source.html#l00051">nav_goto_block()</a>, <a class="el" href="nav_8c_source.html#l00530">nav_init()</a>, <a class="el" href="common__flight__plan_8c_source.html#l00041">nav_init_block()</a>, and <a class="el" href="rotorcraft_2navigation_8c_source.html#l00150">send_nav_status()</a>.</p>
+<p>Referenced by <a class="el" href="generic__com_8c_source.html#l00070">generic_com_periodic()</a>, <a class="el" href="mission__manager_8c_source.html#l00090">mavlink_mission_periodic()</a>, <a class="el" href="common__flight__plan_8c_source.html#l00051">nav_goto_block()</a>, <a class="el" href="nav_8c_source.html#l00530">nav_init()</a>, <a class="el" href="common__flight__plan_8c_source.html#l00041">nav_init_block()</a>, and <a class="el" href="rotorcraft_2navigation_8c_source.html#l00152">send_nav_status()</a>.</p>
 
 </div>
 </div>
@@ -796,7 +796,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="common__flight__plan_8c_source.html#l00035">35</a> of file <a class="el" href="common__flight__plan_8c_source.html">common_flight_plan.c</a>.</p>
 
-<p>Referenced by <a class="el" href="common__flight__plan_8c_source.html#l00051">nav_goto_block()</a>, <a class="el" href="nav_8c_source.html#l00530">nav_init()</a>, <a class="el" href="common__flight__plan_8c_source.html#l00041">nav_init_block()</a>, and <a class="el" href="rotorcraft_2navigation_8c_source.html#l00150">send_nav_status()</a>.</p>
+<p>Referenced by <a class="el" href="common__flight__plan_8c_source.html#l00051">nav_goto_block()</a>, <a class="el" href="nav_8c_source.html#l00530">nav_init()</a>, <a class="el" href="common__flight__plan_8c_source.html#l00041">nav_init_block()</a>, and <a class="el" href="rotorcraft_2navigation_8c_source.html#l00152">send_nav_status()</a>.</p>
 
 </div>
 </div>
@@ -814,7 +814,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="common__flight__plan_8c_source.html#l00033">33</a> of file <a class="el" href="common__flight__plan_8c_source.html">common_flight_plan.c</a>.</p>
 
-<p>Referenced by <a class="el" href="common__nav_8c_source.html#l00152">common_nav_periodic_task_4Hz()</a>, <a class="el" href="nav__heli__spinup_8c_source.html#l00056">nav_heli_spinup_run()</a>, <a class="el" href="nav_8c_source.html#l00093">nav_init_stage()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00369">nav_periodic_task()</a>, and <a class="el" href="rotorcraft_2navigation_8c_source.html#l00150">send_nav_status()</a>.</p>
+<p>Referenced by <a class="el" href="common__nav_8c_source.html#l00152">common_nav_periodic_task_4Hz()</a>, <a class="el" href="nav__heli__spinup_8c_source.html#l00056">nav_heli_spinup_run()</a>, <a class="el" href="nav_8c_source.html#l00093">nav_init_stage()</a>, <a class="el" href="rotorcraft_2navigation_8c_source.html#l00374">nav_periodic_task()</a>, and <a class="el" href="rotorcraft_2navigation_8c_source.html#l00152">send_nav_status()</a>.</p>
 
 </div>
 </div>
@@ -824,7 +824,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_8a28edc49a666abb23d4888eaf71220c.html">navigation</a></li><li class="navelem"><a class="el" href="common__flight__plan_8h.html">common_flight_plan.h</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:03:36 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:03:52 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

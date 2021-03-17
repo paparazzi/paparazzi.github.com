@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -185,7 +185,7 @@ $(document).ready(function(){initNavTree('linux_2mcu__periph_2spi__arch_8c_sourc
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="comment">/* fixed speed of 1Mhz for now, use SPIClockDiv?? */</span></div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  xfer.speed_hz = (<a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>)p-&gt;<a class="code" href="group__spi.html#a8b32489ec5498094c97fd4d31209ab47">init_struct</a>;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  xfer.delay_usecs = 0;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  if (t-&gt;<a class="code" href="group__spi.html#a815b95697425c9e24fb81e83f4a13385">dss</a> == <a class="code" href="group__spi.html#ggab7f6befabf036cdd2fcc73e688d17f92af211626475dc974e0c1a2256c7ff4de9">SPIDss16bit</a>) {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <a class="code" href="e__identification__fr_8c.html#a92cffae21318c1d983c63f3afa2a8d87">if</a> (t-&gt;<a class="code" href="group__spi.html#a815b95697425c9e24fb81e83f4a13385">dss</a> == <a class="code" href="group__spi.html#ggab7f6befabf036cdd2fcc73e688d17f92af211626475dc974e0c1a2256c7ff4de9">SPIDss16bit</a>) {</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    xfer.bits_per_word = 16;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    xfer.bits_per_word = 8;</div>
@@ -340,6 +340,7 @@ $(document).ready(function(){initNavTree('linux_2mcu__periph_2spi__arch_8c_sourc
 <div class="ttc" id="group__spi_html_a655488ef6fbcef7c997285db2ac03b4d"><div class="ttname"><a href="group__spi.html#a655488ef6fbcef7c997285db2ac03b4d">spi_periph::reg_addr</a></div><div class="ttdeci">void * reg_addr</div><div class="ttdef"><b>Definition:</b> <a href="spi_8h_source.html#l00183">spi.h:183</a></div></div>
 <div class="ttc" id="group__spi_html_gaaba00866ddaf960c0c761e61f81e5216"><div class="ttname"><a href="group__spi.html#gaaba00866ddaf960c0c761e61f81e5216">spi1_arch_init</a></div><div class="ttdeci">void spi1_arch_init(void)</div><div class="ttdoc">Architecture dependent SPI1 initialization. </div><div class="ttdef"><b>Definition:</b> <a href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00366">spi_arch.c:366</a></div></div>
 <div class="ttc" id="group__spi_html_gga7a54d65ebae5c91cb0b5f28cd7111ae3acfd3336d9cd80d7a1b9eb7582848def5"><div class="ttname"><a href="group__spi.html#gga7a54d65ebae5c91cb0b5f28cd7111ae3acfd3336d9cd80d7a1b9eb7582848def5">SPIUnselect</a></div><div class="ttdoc">slave is not selected but unselected after transaction </div><div class="ttdef"><b>Definition:</b> <a href="spi_8h_source.html#l00065">spi.h:65</a></div></div>
+<div class="ttc" id="e__identification__fr_8c_html_a92cffae21318c1d983c63f3afa2a8d87"><div class="ttname"><a href="e__identification__fr_8c.html#a92cffae21318c1d983c63f3afa2a8d87">if</a></div><div class="ttdeci">if(GpsFixValid()&amp;&amp;e_identification_started)</div><div class="ttdef"><b>Definition:</b> <a href="e__identification__fr_8c_source.html#l00159">e_identification_fr.c:159</a></div></div>
 <div class="ttc" id="group__spi_html_structspi__transaction"><div class="ttname"><a href="group__spi.html#structspi__transaction">spi_transaction</a></div><div class="ttdoc">SPI transaction structure. </div><div class="ttdef"><b>Definition:</b> <a href="spi_8h_source.html#l00148">spi.h:148</a></div></div>
 <div class="ttc" id="group__spi_html_ga5d383931766cb373ebad0b8bc26d439d"><div class="ttname"><a href="group__spi.html#ga5d383931766cb373ebad0b8bc26d439d">spi_submit</a></div><div class="ttdeci">bool spi_submit(struct spi_periph *p, struct spi_transaction *t)</div><div class="ttdoc">Submit SPI transaction. </div><div class="ttdef"><b>Definition:</b> <a href="chibios_2mcu__periph_2spi__arch_8c_source.html#l00511">spi_arch.c:511</a></div></div>
 <div class="ttc" id="linux_2mcu__periph_2spi__arch_8c_html_ac0c17180c00e0862f0dd0eaea546c19a"><div class="ttname"><a href="linux_2mcu__periph_2spi__arch_8c.html#ac0c17180c00e0862f0dd0eaea546c19a">SPI0_BITS_PER_WORD</a></div><div class="ttdeci">#define SPI0_BITS_PER_WORD</div><div class="ttdef"><b>Definition:</b> <a href="linux_2mcu__periph_2spi__arch_8c_source.html#l00130">spi_arch.c:130</a></div></div>
@@ -378,7 +379,7 @@ $(document).ready(function(){initNavTree('linux_2mcu__periph_2spi__arch_8c_sourc
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_92fbf38b8c893a0928a3445a75d0ac01.html">linux</a></li><li class="navelem"><a class="el" href="dir_7cedabfb4d36d0fdf06823c7fd9084fc.html">mcu_periph</a></li><li class="navelem"><a class="el" href="linux_2mcu__periph_2spi__arch_8c.html">spi_arch.c</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:02:07 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:02:18 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

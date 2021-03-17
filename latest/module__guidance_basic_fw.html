@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -170,7 +170,7 @@ Source Files</h2>
 Raw guidance_basic_fw.xml file:</h2>
 <div class="fragment"><div class="line">&lt;!DOCTYPE module SYSTEM &quot;module.dtd&quot;&gt;</div>
 <div class="line"></div>
-<div class="line">&lt;module name=&quot;guidance_basic&quot; dir=&quot;guidance&quot;&gt;</div>
+<div class="line">&lt;module name=&quot;guidance_basic_fw&quot; dir=&quot;guidance&quot;&gt;</div>
 <div class="line">  &lt;doc&gt;</div>
 <div class="line">    &lt;description&gt;</div>
 <div class="line">      Legacy vertical control for fixedwing aircraft based on throttle (default) or pitch</div>
@@ -224,6 +224,17 @@ Raw guidance_basic_fw.xml file:</h2>
 <div class="line">    &lt;file name=&quot;guidance_v.c&quot; dir=&quot;$(SRC_FIRMWARE)/guidance&quot;/&gt;</div>
 <div class="line">    &lt;file name=&quot;guidance_h.c&quot; dir=&quot;$(SRC_FIRMWARE)/guidance&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;CTRL_TYPE_H&quot; value=&quot;firmwares/fixedwing/guidance/guidance_v.h&quot; type=&quot;string&quot;/&gt;</div>
+<div class="line">    &lt;test firmware=&quot;fixedwing&quot;&gt;</div>
+<div class="line">      &lt;configure name=&quot;SRC_FIRMWARE&quot; value=&quot;firmwares/fixedwing&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;V_CTL_ALTITUDE_PGAIN&quot; value=&quot;1&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;V_CTL_ALTITUDE_MAX_CLIMB&quot; value=&quot;1&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;V_CTL_AUTO_THROTTLE_MIN_CRUISE_THROTTLE&quot; value=&quot;0.5&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;V_CTL_AUTO_THROTTLE_MAX_CRUISE_THROTTLE&quot; value=&quot;0.5&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;V_CTL_AUTO_THROTTLE_CLIMB_THROTTLE_INCREMENT&quot; value=&quot;0.05&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;V_CTL_AUTO_THROTTLE_PGAIN&quot; value=&quot;1&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;V_CTL_AUTO_THROTTLE_IGAIN&quot; value=&quot;0&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;V_CTL_AUTO_THROTTLE_PITCH_OF_VZ_PGAIN&quot; value=&quot;0&quot;/&gt;</div>
+<div class="line">    &lt;/test&gt;</div>
 <div class="line">  &lt;/makefile&gt;</div>
 <div class="line">&lt;/module&gt;</div>
 </div><!-- fragment --> </div></div><!-- contents -->
@@ -232,7 +243,7 @@ Raw guidance_basic_fw.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:03:42 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:04:00 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

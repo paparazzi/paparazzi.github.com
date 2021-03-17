@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -188,7 +188,7 @@ $(document).ready(function(){initNavTree('spektrum_8h_source.html','');});
 <div class="ttc" id="spektrum_8h_html_ab9bf022e044a90934da22d4f817e546c"><div class="ttname"><a href="spektrum_8h.html#ab9bf022e044a90934da22d4f817e546c">SPEKTRUM_FRAME_LEN</a></div><div class="ttdeci">#define SPEKTRUM_FRAME_LEN</div><div class="ttdoc">16 bytes in a standard frame </div><div class="ttdef"><b>Definition:</b> <a href="spektrum_8h_source.html#l00041">spektrum.h:41</a></div></div>
 <div class="ttc" id="spektrum_8h_html_a4a214855d33381ed304a4d435f20fda6"><div class="ttname"><a href="spektrum_8h.html#a4a214855d33381ed304a4d435f20fda6">spektrum_sat_t::lost_frame_cnt</a></div><div class="ttdeci">uint8_t lost_frame_cnt</div><div class="ttdoc">Amount of RC frames lost. </div><div class="ttdef"><b>Definition:</b> <a href="spektrum_8h_source.html#l00054">spektrum.h:54</a></div></div>
 <div class="ttc" id="spektrum_8h_html_afe0095f891267e9e13e4265606e4b200"><div class="ttname"><a href="spektrum_8h.html#afe0095f891267e9e13e4265606e4b200">spektrum_t::tx_type</a></div><div class="ttdeci">uint8_t tx_type</div><div class="ttdoc">Transmitter type encoded (see wiki) </div><div class="ttdef"><b>Definition:</b> <a href="spektrum_8h_source.html#l00063">spektrum.h:63</a></div></div>
-<div class="ttc" id="spektrum_8h_html_aff8033ce4ec3eca45caafb45d2ba6760"><div class="ttname"><a href="spektrum_8h.html#aff8033ce4ec3eca45caafb45d2ba6760">spektrum_try_bind</a></div><div class="ttdeci">void spektrum_try_bind(void)</div><div class="ttdef"><b>Definition:</b> <a href="spektrum__arch_8c_source.html#l00057">spektrum_arch.c:57</a></div></div>
+<div class="ttc" id="spektrum_8h_html_aff8033ce4ec3eca45caafb45d2ba6760"><div class="ttname"><a href="spektrum_8h.html#aff8033ce4ec3eca45caafb45d2ba6760">spektrum_try_bind</a></div><div class="ttdeci">void spektrum_try_bind(void)</div><div class="ttdef"><b>Definition:</b> <a href="spektrum__arch_8c_source.html#l00058">spektrum_arch.c:58</a></div></div>
 <div class="ttc" id="std_8h_html"><div class="ttname"><a href="std_8h.html">std.h</a></div></div>
 <div class="ttc" id="spektrum_8h_html_a517052ed84ee3572639cd687fab897d4"><div class="ttname"><a href="spektrum_8h.html#a517052ed84ee3572639cd687fab897d4">SPEKTRUM_SATELLITES_NB</a></div><div class="ttdeci">#define SPEKTRUM_SATELLITES_NB</div><div class="ttdef"><b>Definition:</b> <a href="spektrum_8h_source.html#l00038">spektrum.h:38</a></div></div>
 <div class="ttc" id="spektrum_8h_html_a99a3b63fd9e89bb8b94ab45510e21cc3"><div class="ttname"><a href="spektrum_8h.html#a99a3b63fd9e89bb8b94ab45510e21cc3">spektrum_t::signs</a></div><div class="ttdeci">int8_t signs[RADIO_CONTROL_NB_CHANNEL]</div><div class="ttdoc">Signs for the RC channels. </div><div class="ttdef"><b>Definition:</b> <a href="spektrum_8h_source.html#l00064">spektrum.h:64</a></div></div>
@@ -196,7 +196,7 @@ $(document).ready(function(){initNavTree('spektrum_8h_source.html','');});
 <div class="ttc" id="spektrum_8h_html_aeb104958549da0e42a3edcb56790949b"><div class="ttname"><a href="spektrum_8h.html#aeb104958549da0e42a3edcb56790949b">spektrum_sat_t::values</a></div><div class="ttdeci">int16_t values[SPEKTRUM_MAX_CHANNELS]</div><div class="ttdoc">RC channel values. </div><div class="ttdef"><b>Definition:</b> <a href="spektrum_8h_source.html#l00057">spektrum.h:57</a></div></div>
 <div class="ttc" id="spektrum_8h_html_ad71bdb402076ab07a67a93d18bda37b4"><div class="ttname"><a href="spektrum_8h.html#ad71bdb402076ab07a67a93d18bda37b4">spektrum_sat_t::valid</a></div><div class="ttdeci">bool valid</div><div class="ttdoc">True when we received a packet else false. </div><div class="ttdef"><b>Definition:</b> <a href="spektrum_8h_source.html#l00052">spektrum.h:52</a></div></div>
 <div class="ttc" id="spektrum_8h_html_a6985e4f13e0b837ab788bd20daacb693"><div class="ttname"><a href="spektrum_8h.html#a6985e4f13e0b837ab788bd20daacb693">spektrum_sat_t::idx</a></div><div class="ttdeci">uint8_t idx</div><div class="ttdoc">input buffer index </div><div class="ttdef"><b>Definition:</b> <a href="spektrum_8h_source.html#l00056">spektrum.h:56</a></div></div>
-<div class="ttc" id="spektrum_8h_html_a12084c04bb3f98fad19d7067eb32eed5"><div class="ttname"><a href="spektrum_8h.html#a12084c04bb3f98fad19d7067eb32eed5">spektrum_event</a></div><div class="ttdeci">void spektrum_event(void(*_received_frame_handler)(void))</div><div class="ttdoc">Checks if there is one valid satellite and sets the radio_control structure. </div><div class="ttdef"><b>Definition:</b> <a href="spektrum__arch_8c_source.html#l00046">spektrum_arch.c:46</a></div></div>
+<div class="ttc" id="spektrum_8h_html_a12084c04bb3f98fad19d7067eb32eed5"><div class="ttname"><a href="spektrum_8h.html#a12084c04bb3f98fad19d7067eb32eed5">spektrum_event</a></div><div class="ttdeci">void spektrum_event(void(*_received_frame_handler)(void))</div><div class="ttdoc">Checks if there is one valid satellite and sets the radio_control structure. </div><div class="ttdef"><b>Definition:</b> <a href="spektrum__arch_8c_source.html#l00047">spektrum_arch.c:47</a></div></div>
 <div class="ttc" id="types_8h_html_aef44329758059c91c76d334e8fc09700"><div class="ttname"><a href="types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a></div><div class="ttdeci">signed char int8_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00015">types.h:15</a></div></div>
 <div class="ttc" id="spektrum__radio_8h_html"><div class="ttname"><a href="spektrum__radio_8h.html">spektrum_radio.h</a></div><div class="ttdoc">Radio control channels defaults, because they are digital. </div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -205,7 +205,7 @@ $(document).ready(function(){initNavTree('spektrum_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_a146ed466020daad33793c9994e8ab3e.html">radio_control</a></li><li class="navelem"><a class="el" href="spektrum_8h.html">spektrum.h</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:02:37 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:02:50 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

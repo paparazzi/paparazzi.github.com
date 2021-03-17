@@ -1,0 +1,55 @@
+var cc2500__rx__spi_8h =
+[
+    [ "RC_CHANNEL_FLIP", "cc2500__rx__spi_8h.html#ab005fdbd7818fbc2482a4c31ee5ebad6", null ],
+    [ "RC_CHANNEL_HEADLESS", "cc2500__rx__spi_8h.html#a9fcf0cc628f3db8a2819d160267dc01e", null ],
+    [ "RC_CHANNEL_PICTURE", "cc2500__rx__spi_8h.html#ac5af184507bc7f9355439407719ea818", null ],
+    [ "RC_CHANNEL_RATE", "cc2500__rx__spi_8h.html#a1a11aed6c7fd79d1d6c2f95f3760ad96", null ],
+    [ "RC_CHANNEL_RTH", "cc2500__rx__spi_8h.html#ab0a858c32338b705a2205e441e5d6678", null ],
+    [ "RC_CHANNEL_VIDEO", "cc2500__rx__spi_8h.html#aac8f85fbbebac3d884dd4c164596679e", null ],
+    [ "rc_spi_aetr_e", "cc2500__rx__spi_8h.html#aad4e4a00aaebe2084fea31d8ede84d64", [
+      [ "RC_SPI_ROLL", "cc2500__rx__spi_8h.html#aad4e4a00aaebe2084fea31d8ede84d64a700c3bd63d372080fa2eb5e5257095f4", null ],
+      [ "RC_SPI_PITCH", "cc2500__rx__spi_8h.html#aad4e4a00aaebe2084fea31d8ede84d64ae5fad853ae29f0a404b8dcaf5dfd5daa", null ],
+      [ "RC_SPI_THROTTLE", "cc2500__rx__spi_8h.html#aad4e4a00aaebe2084fea31d8ede84d64a38315e562af81f65f8d30f3f7c0a9c8c", null ],
+      [ "RC_SPI_YAW", "cc2500__rx__spi_8h.html#aad4e4a00aaebe2084fea31d8ede84d64a46cdbec29b7f361b45360589a3e68366", null ],
+      [ "RC_SPI_AUX1", "cc2500__rx__spi_8h.html#aad4e4a00aaebe2084fea31d8ede84d64ae47397881c6fd7fe46ebf565f1e3e5e3", null ],
+      [ "RC_SPI_AUX2", "cc2500__rx__spi_8h.html#aad4e4a00aaebe2084fea31d8ede84d64a5e98fe50438b78a0d1ec6e74abd8cf63", null ],
+      [ "RC_SPI_AUX3", "cc2500__rx__spi_8h.html#aad4e4a00aaebe2084fea31d8ede84d64a2ef394ae18dc1753061f0984ca1bac3f", null ],
+      [ "RC_SPI_AUX4", "cc2500__rx__spi_8h.html#aad4e4a00aaebe2084fea31d8ede84d64a22cadf5d8d772ca27900cb224d19820d", null ],
+      [ "RC_SPI_AUX5", "cc2500__rx__spi_8h.html#aad4e4a00aaebe2084fea31d8ede84d64ae1909d73990cc8de643d0de97da6dc92", null ],
+      [ "RC_SPI_AUX6", "cc2500__rx__spi_8h.html#aad4e4a00aaebe2084fea31d8ede84d64a487c4498818f736641cc8edc2b3f72f7", null ],
+      [ "RC_SPI_AUX7", "cc2500__rx__spi_8h.html#aad4e4a00aaebe2084fea31d8ede84d64a36c542f818351b48dbc1c4a49c13625f", null ],
+      [ "RC_SPI_AUX8", "cc2500__rx__spi_8h.html#aad4e4a00aaebe2084fea31d8ede84d64a91291395e2745c3d083ed52a65ef7389", null ],
+      [ "RC_SPI_AUX9", "cc2500__rx__spi_8h.html#aad4e4a00aaebe2084fea31d8ede84d64a97ce96fbb80fa1a3197200005e278218", null ],
+      [ "RC_SPI_AUX10", "cc2500__rx__spi_8h.html#aad4e4a00aaebe2084fea31d8ede84d64ae22074d60bb17435f72c1be60977c05f", null ],
+      [ "RC_SPI_AUX11", "cc2500__rx__spi_8h.html#aad4e4a00aaebe2084fea31d8ede84d64a36587207c94f836a7054b1fc8edb23a3", null ],
+      [ "RC_SPI_AUX12", "cc2500__rx__spi_8h.html#aad4e4a00aaebe2084fea31d8ede84d64a3ff7c5298bc4548e3b4c310ce009c03d", null ],
+      [ "RC_SPI_AUX13", "cc2500__rx__spi_8h.html#aad4e4a00aaebe2084fea31d8ede84d64a6f49e391a1bd7e17812f077931e91438", null ],
+      [ "RC_SPI_AUX14", "cc2500__rx__spi_8h.html#aad4e4a00aaebe2084fea31d8ede84d64a53874e9762cd3385b7b6cb7a39879c4b", null ]
+    ] ],
+    [ "rx_spi_protocol_e", "cc2500__rx__spi_8h.html#a314e09adc7556419a4030a5581ba89ec", [
+      [ "RX_SPI_NRF24_V202_250K", "cc2500__rx__spi_8h.html#a314e09adc7556419a4030a5581ba89ecaf5033cd34799599cef79345f56876add", null ],
+      [ "RX_SPI_NRF24_V202_1M", "cc2500__rx__spi_8h.html#a314e09adc7556419a4030a5581ba89ecac6c23a6b3eddbf4b12cc8e0b3297a62b", null ],
+      [ "RX_SPI_NRF24_SYMA_X", "cc2500__rx__spi_8h.html#a314e09adc7556419a4030a5581ba89eca8626adbd1f2277dc0b2ed1bfa424bd9f", null ],
+      [ "RX_SPI_NRF24_SYMA_X5C", "cc2500__rx__spi_8h.html#a314e09adc7556419a4030a5581ba89ecab94d48ded1c14491f61c8a13ec04064b", null ],
+      [ "RX_SPI_NRF24_CX10", "cc2500__rx__spi_8h.html#a314e09adc7556419a4030a5581ba89ecabc883783c04f9e03c876c1d24f25e2e2", null ],
+      [ "RX_SPI_NRF24_CX10A", "cc2500__rx__spi_8h.html#a314e09adc7556419a4030a5581ba89eca9198b1b88ecdbb7edc41b4c0024b4079", null ],
+      [ "RX_SPI_NRF24_H8_3D", "cc2500__rx__spi_8h.html#a314e09adc7556419a4030a5581ba89ecabcf66a449cc551550cf1c6ebe2e66dec", null ],
+      [ "RX_SPI_NRF24_INAV", "cc2500__rx__spi_8h.html#a314e09adc7556419a4030a5581ba89eca07b557a2dff71dd867431865b4ee15eb", null ],
+      [ "RX_SPI_FRSKY_D", "cc2500__rx__spi_8h.html#a314e09adc7556419a4030a5581ba89ecae28cb5a6c919637f7aa2285952767f7f", null ],
+      [ "RX_SPI_FRSKY_X", "cc2500__rx__spi_8h.html#a314e09adc7556419a4030a5581ba89eca9e29f1884e931098b7f2b82395556804", null ],
+      [ "RX_SPI_A7105_FLYSKY", "cc2500__rx__spi_8h.html#a314e09adc7556419a4030a5581ba89ecaf08aa9a97000be3b2f81f5994c9cdb24", null ],
+      [ "RX_SPI_A7105_FLYSKY_2A", "cc2500__rx__spi_8h.html#a314e09adc7556419a4030a5581ba89eca0a06c79697b2f96a76cc298cdf88bf06", null ],
+      [ "RX_SPI_NRF24_KN", "cc2500__rx__spi_8h.html#a314e09adc7556419a4030a5581ba89eca11db65707cb418a20b01b5816e5904e5", null ],
+      [ "RX_SPI_SFHSS", "cc2500__rx__spi_8h.html#a314e09adc7556419a4030a5581ba89ecaae273c95ae24e82005c5944c82d26032", null ],
+      [ "RX_SPI_CYRF6936_DSM", "cc2500__rx__spi_8h.html#a314e09adc7556419a4030a5581ba89eca403788072c738b7321f3532f0534ec11", null ],
+      [ "RX_SPI_FRSKY_X_LBT", "cc2500__rx__spi_8h.html#a314e09adc7556419a4030a5581ba89ecaed0bc69ccaf9c648562551e3553b67c8", null ],
+      [ "RX_SPI_PROTOCOL_COUNT", "cc2500__rx__spi_8h.html#a314e09adc7556419a4030a5581ba89ecae2c48fcb50663ca40f95ac32f2aadc1e", null ]
+    ] ],
+    [ "rx_spi_received_e", "cc2500__rx__spi_8h.html#ae762e48ba5ed309f3196601e6c0900aa", [
+      [ "RX_SPI_RECEIVED_NONE", "cc2500__rx__spi_8h.html#ae762e48ba5ed309f3196601e6c0900aaa037926346f1c2157ec4e10dfb8d4cb29", null ],
+      [ "RX_SPI_RECEIVED_BIND", "cc2500__rx__spi_8h.html#ae762e48ba5ed309f3196601e6c0900aaaf100e8972d0d5c5c078316685ff38590", null ],
+      [ "RX_SPI_RECEIVED_DATA", "cc2500__rx__spi_8h.html#ae762e48ba5ed309f3196601e6c0900aaa84e2c09a32da31342d2c27d1a46ccf72", null ],
+      [ "RX_SPI_ROCESSING_REQUIRED", "cc2500__rx__spi_8h.html#ae762e48ba5ed309f3196601e6c0900aaa4e9d95e853b7440d283b137b1141cf68", null ]
+    ] ],
+    [ "rxSpiInit", "cc2500__rx__spi_8h.html#a69c86568ea4d5d0b6b27d470946083c5", null ]
+];

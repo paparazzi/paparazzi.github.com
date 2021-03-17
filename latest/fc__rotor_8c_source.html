@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -131,7 +131,7 @@ $(document).ready(function(){initNavTree('fc__rotor_8c_source.html','');});
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pprz__algebra__float_8h.html">math/pprz_algebra_float.h</a>&quot;</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="abi_8h.html">subsystems/abi.h</a>&quot;</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">//#include &quot;subsystems/datalink/datalink.h&quot; // dl_buffer</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="datalink_8h.html">subsystems/datalink/datalink.h</a>&quot;</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="autopilot_8h.html">autopilot.h</a>&quot;</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="fc__rotor_8h.html">modules/multi/fc_rotor/fc_rotor.h</a>&quot;</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="rotorcraft_2navigation_8h.html">firmwares/rotorcraft/navigation.h</a>&quot;</span></div>
@@ -143,7 +143,7 @@ $(document).ready(function(){initNavTree('fc__rotor_8c_source.html','');});
 <div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="fc__rotor_8h.html#afaa212af1dfb43b000d29781ea68cb15">   32</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="fc__rotor_8c.html#afaa212af1dfb43b000d29781ea68cb15">fc_read_msg</a>(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf)</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keyword">struct </span><a class="code" href="group__math__algebra__float.html#structFloatVect3">FloatVect3</a> u;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="sim__ap_8c.html#ae48dcb18ba9b663b88a344e66536aa14">ac_id</a> = DL_DESIRED_SETPOINT_ac_id();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="sim__ap_8c.html#ae48dcb18ba9b663b88a344e66536aa14">ac_id</a> = DL_DESIRED_SETPOINT_ac_id(buf);</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keywordflow">if</span> (ac_id == AC_ID) {</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="comment">// 0: 2D control, 1: 3D control</span></div>
@@ -165,10 +165,11 @@ $(document).ready(function(){initNavTree('fc__rotor_8c_source.html','');});
 <div class="ttc" id="sim__ap_8c_html_ae48dcb18ba9b663b88a344e66536aa14"><div class="ttname"><a href="sim__ap_8c.html#ae48dcb18ba9b663b88a344e66536aa14">ac_id</a></div><div class="ttdeci">uint8_t ac_id</div><div class="ttdef"><b>Definition:</b> <a href="sim__ap_8c_source.html#l00048">sim_ap.c:48</a></div></div>
 <div class="ttc" id="group__math__algebra__float_html_adeaa53529844ee1fa7df48e61c3994f7"><div class="ttname"><a href="group__math__algebra__float.html#adeaa53529844ee1fa7df48e61c3994f7">FloatVect3::z</a></div><div class="ttdeci">float z</div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__float_8h_source.html#l00057">pprz_algebra_float.h:57</a></div></div>
 <div class="ttc" id="group__math__algebra__int_html_gadf322ab1574f7999563eaaedce920522"><div class="ttname"><a href="group__math__algebra__int.html#gadf322ab1574f7999563eaaedce920522">POS_BFP_OF_REAL</a></div><div class="ttdeci">#define POS_BFP_OF_REAL(_af)</div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__int_8h_source.html#l00216">pprz_algebra_int.h:216</a></div></div>
-<div class="ttc" id="abi__sender__ids_8h_html_a1048a5bb86fd2926327b1e13844b1279"><div class="ttname"><a href="abi__sender__ids_8h.html#a1048a5bb86fd2926327b1e13844b1279">ACCEL_SP_FCR_ID</a></div><div class="ttdeci">#define ACCEL_SP_FCR_ID</div><div class="ttdef"><b>Definition:</b> <a href="abi__sender__ids_8h_source.html#l00450">abi_sender_ids.h:450</a></div></div>
+<div class="ttc" id="abi__sender__ids_8h_html_a1048a5bb86fd2926327b1e13844b1279"><div class="ttname"><a href="abi__sender__ids_8h.html#a1048a5bb86fd2926327b1e13844b1279">ACCEL_SP_FCR_ID</a></div><div class="ttdeci">#define ACCEL_SP_FCR_ID</div><div class="ttdef"><b>Definition:</b> <a href="abi__sender__ids_8h_source.html#l00482">abi_sender_ids.h:482</a></div></div>
 <div class="ttc" id="fc__rotor_8h_html"><div class="ttname"><a href="fc__rotor_8h.html">fc_rotor.h</a></div><div class="ttdoc">Formation control algorithm for rotorcrafts. </div></div>
+<div class="ttc" id="datalink_8h_html"><div class="ttname"><a href="datalink_8h.html">datalink.h</a></div><div class="ttdoc">Handling of messages coming from ground and other A/Cs. </div></div>
 <div class="ttc" id="abi_8h_html"><div class="ttname"><a href="abi_8h.html">abi.h</a></div><div class="ttdoc">Main include for ABI (AirBorneInterface). </div></div>
-<div class="ttc" id="rotorcraft_2navigation_8c_html_a67ec89768eb885ae27ba8002e2fa386a"><div class="ttname"><a href="rotorcraft_2navigation_8c.html#a67ec89768eb885ae27ba8002e2fa386a">nav_flight_altitude</a></div><div class="ttdeci">int32_t nav_flight_altitude</div><div class="ttdef"><b>Definition:</b> <a href="rotorcraft_2navigation_8c_source.html#l00111">navigation.c:111</a></div></div>
+<div class="ttc" id="rotorcraft_2navigation_8c_html_a67ec89768eb885ae27ba8002e2fa386a"><div class="ttname"><a href="rotorcraft_2navigation_8c.html#a67ec89768eb885ae27ba8002e2fa386a">nav_flight_altitude</a></div><div class="ttdeci">int32_t nav_flight_altitude</div><div class="ttdef"><b>Definition:</b> <a href="rotorcraft_2navigation_8c_source.html#l00115">navigation.c:115</a></div></div>
 <div class="ttc" id="group__math__algebra__float_html_structFloatVect3"><div class="ttname"><a href="group__math__algebra__float.html#structFloatVect3">FloatVect3</a></div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__float_8h_source.html#l00054">pprz_algebra_float.h:54</a></div></div>
 <div class="ttc" id="pprz__algebra__float_8h_html"><div class="ttname"><a href="pprz__algebra__float_8h.html">pprz_algebra_float.h</a></div><div class="ttdoc">Paparazzi floating point algebra. </div></div>
 <div class="ttc" id="group__math__algebra__float_html_aa44c74404cf8ef0b143066e970352adb"><div class="ttname"><a href="group__math__algebra__float.html#aa44c74404cf8ef0b143066e970352adb">FloatVect3::x</a></div><div class="ttdeci">float x</div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__float_8h_source.html#l00055">pprz_algebra_float.h:55</a></div></div>
@@ -184,7 +185,7 @@ $(document).ready(function(){initNavTree('fc__rotor_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_280ddc4eab531a6a77fbd73e72656568.html">multi</a></li><li class="navelem"><a class="el" href="dir_1ebbe115f258296c1edf748937894bd6.html">fc_rotor</a></li><li class="navelem"><a class="el" href="fc__rotor_8c.html">fc_rotor.c</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:02:27 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:02:38 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

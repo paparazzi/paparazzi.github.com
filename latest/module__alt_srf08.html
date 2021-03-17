@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -128,13 +128,15 @@ Periodic Functions</h2>
 <ul>
 <li><a class="el" href="alt__srf08_8c.html#a416da092feaad98fcf2bae00034c21a1">srf08_initiate_ranging()</a><ul>
 <li>Frequency in Hz: <em>1</em> </li>
+<li>Delay: <em>0</em>. <br />
+ Integer to impose a sequence (between 0 and main_freq/function_freq)</li>
 <li>Autorun: <em>LOCK</em> <br />
  Periodic function automatically starts after init and can't be stopped.</li>
 </ul>
 </li>
 <li><a class="el" href="alt__srf08_8c.html#a6f923c4979345945f33e6c927fcdf3b1" title="Ask the value to the device. ">srf08_receive()</a><ul>
 <li>Frequency in Hz: <em>1</em> </li>
-<li>Delay: <em>4</em> <br />
+<li>Delay: <em>0.07</em> <br />
  Integer to impose a sequence (between 0 and main_freq/function_freq)</li>
 <li>Autorun: <em>LOCK</em> <br />
  Periodic function automatically starts after init and can't be stopped.</li>
@@ -166,10 +168,10 @@ Raw alt_srf08.xml file:</h2>
 <div class="line">    &lt;file name=&quot;alt_srf08.h&quot;/&gt;</div>
 <div class="line">  &lt;/header&gt;</div>
 <div class="line">  &lt;init fun=&quot;srf08_init()&quot;/&gt;</div>
-<div class="line">  &lt;periodic fun=&quot;srf08_initiate_ranging()&quot; freq=&quot;1&quot;/&gt;</div>
-<div class="line">  &lt;!-- 65ms since initiate_ranging() (the spec ask for 65ms),</div>
-<div class="line">       delay=&quot;4&quot;, 60Hz, 4x 16.7ms = 66.7ms --&gt;</div>
-<div class="line">  &lt;periodic fun=&quot;srf08_receive()&quot; freq=&quot;1&quot; delay=&quot;4&quot;/&gt;</div>
+<div class="line">  &lt;periodic fun=&quot;srf08_initiate_ranging()&quot; freq=&quot;1&quot; delay=&quot;0.&quot;/&gt;</div>
+<div class="line">  &lt;!-- 70ms (delay 0.7 with freq = 1Hz since initiate_ranging()</div>
+<div class="line">       (the spec ask for 65ms) --&gt;</div>
+<div class="line">  &lt;periodic fun=&quot;srf08_receive()&quot; freq=&quot;1&quot; delay=&quot;0.07&quot;/&gt;</div>
 <div class="line">  &lt;event fun=&quot;srf08_event()&quot;/&gt;</div>
 <div class="line">  &lt;makefile&gt;</div>
 <div class="line">    &lt;file name=&quot;alt_srf08.c&quot;/&gt;</div>
@@ -182,7 +184,7 @@ Raw alt_srf08.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:03:40 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:03:57 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

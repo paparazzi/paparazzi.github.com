@@ -27,6 +27,8 @@ var dir_2f48bbb566df394f79dcf8fe0631584a =
     [ "baro_amsys.h", "baro__amsys_8h.html", "baro__amsys_8h" ],
     [ "baro_bmp.c", "baro__bmp_8c.html", "baro__bmp_8c" ],
     [ "baro_bmp.h", "baro__bmp_8h.html", "baro__bmp_8h" ],
+    [ "baro_bmp280_i2c.c", "baro__bmp280__i2c_8c.html", "baro__bmp280__i2c_8c" ],
+    [ "baro_bmp280_i2c.h", "baro__bmp280__i2c_8h.html", "baro__bmp280__i2c_8h" ],
     [ "baro_bmp3.c", "baro__bmp3_8c.html", "baro__bmp3_8c" ],
     [ "baro_bmp3.h", "baro__bmp3_8h.html", "baro__bmp3_8h" ],
     [ "baro_ets.c", "baro__ets_8c.html", "baro__ets_8c" ],

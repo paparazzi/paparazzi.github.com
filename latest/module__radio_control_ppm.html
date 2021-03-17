@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -134,10 +134,10 @@ Source Files</h2>
 <ul>
 <li><a class="el" href="radio__control_8c.html">subsystems/radio_control.c</a></li>
 <li><a class="el" href="ppm_8c.html">subsystems/radio_control/ppm.c</a></li>
-<li>/subsystems/radio_control/ppm_arch.c</li>
 <li><a class="el" href="radio__control_8c.html">subsystems/radio_control.c</a></li>
 <li><a class="el" href="ppm_8c.html">subsystems/radio_control/ppm.c</a></li>
-<li>/subsystems/radio_control/ppm_arch.c</li>
+<li>arch dependent: subsystems/radio_control/ppm_arch.c</li>
+<li>arch dependent: subsystems/radio_control/ppm_arch.c</li>
 </ul>
 <h2><a class="anchor" id="module_xml__radio_control_ppm"></a>
 Raw radio_control_ppm.xml file:</h2>
@@ -170,14 +170,19 @@ Raw radio_control_ppm.xml file:</h2>
 <div class="line">    &lt;define name=&quot;RADIO_CONTROL_TYPE_PPM&quot;/&gt;</div>
 <div class="line">    &lt;file name=&quot;radio_control.c&quot; dir=&quot;subsystems&quot;/&gt;</div>
 <div class="line">    &lt;file name=&quot;ppm.c&quot; dir=&quot;subsystems/radio_control&quot;/&gt;</div>
-<div class="line">    &lt;file name=&quot;ppm_arch.c&quot; dir=&quot;$(SRC_ARCH)/subsystems/radio_control&quot;/&gt;</div>
+<div class="line">    &lt;file_arch name=&quot;ppm_arch.c&quot; dir=&quot;subsystems/radio_control&quot;/&gt;</div>
 <div class="line">  &lt;/makefile&gt;</div>
 <div class="line">  &lt;makefile target=&quot;ap&quot; cond=&quot;ifeq (,$(findstring $(SEPARATE_FBW),1 TRUE))&quot;&gt;</div>
 <div class="line">    &lt;define name=&quot;RADIO_CONTROL&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;RADIO_CONTROL_TYPE_PPM&quot;/&gt;</div>
 <div class="line">    &lt;file name=&quot;radio_control.c&quot; dir=&quot;subsystems&quot;/&gt;</div>
 <div class="line">    &lt;file name=&quot;ppm.c&quot; dir=&quot;subsystems/radio_control&quot;/&gt;</div>
-<div class="line">    &lt;file name=&quot;ppm_arch.c&quot; dir=&quot;$(SRC_ARCH)/subsystems/radio_control&quot;/&gt;</div>
+<div class="line">    &lt;file_arch name=&quot;ppm_arch.c&quot; dir=&quot;subsystems/radio_control&quot;/&gt;</div>
+<div class="line">    &lt;test&gt;</div>
+<div class="line">      &lt;define name=&quot;RADIO_CONTROL&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;RADIO_CONTROL_TYPE_PPM&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;RADIO_CONTROL_TYPE_H&quot; value=&quot;subsystems/radio_control/ppm.h&quot; type=&quot;string&quot;/&gt;</div>
+<div class="line">    &lt;/test&gt;</div>
 <div class="line">  &lt;/makefile&gt;</div>
 <div class="line">&lt;/module&gt;</div>
 <div class="line"></div>
@@ -187,7 +192,7 @@ Raw radio_control_ppm.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:03:43 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:04:01 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

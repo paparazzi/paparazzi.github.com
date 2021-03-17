@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -312,7 +312,7 @@ $(document).ready(function(){initNavTree('obstacle__avoidance_8c_source.html',''
 <div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;      <a class="code" href="obstacle__avoidance_8c.html#a310adf7eac35923617e12182c1c75fea">CN_potential_velocity</a>();</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    }</div>
 <div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="guidance__OA_8c.html#a7d1d6db717ff7b9a6930693f66f630d6">OA_method_flag</a> == <a class="code" href="point_8c.html#structVECTOR">VECTOR</a>) {</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="guidance__OA_8c.html#a7d1d6db717ff7b9a6930693f66f630d6">OA_method_flag</a> == <a class="code" href="max7456_8c.html#structVECTOR">VECTOR</a>) {</div>
 <div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;      <a class="code" href="obstacle__avoidance_8c.html#afb4f90a66f93fdb70da178189b76b6a2">CN_calculate_target</a>();</div>
 <div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;      <a class="code" href="obstacle__avoidance_8c.html#a53290242178aea1256bfde6beba0d989">CN_vector_velocity</a>();</div>
 <div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    }</div>
@@ -523,7 +523,7 @@ $(document).ready(function(){initNavTree('obstacle__avoidance_8c_source.html',''
 <div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;</div>
 <div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;  <span class="comment">//Tune</span></div>
 <div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;  <span class="comment">//float dt = 0.5;  //define delta t for integration! check response under 0.1 and 1</span></div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;  <a class="code" href="types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> min_disparity = 40;</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;  <a class="code" href="types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> <a class="code" href="wedgebug_8c.html#a701601dc3a02d4f8f04590a5d9ee81f0">min_disparity</a> = 40;</div>
 <div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;</div>
 <div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;  <span class="comment">//Current state of system;</span></div>
 <div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;  <span class="keywordtype">float</span> r_old = <a class="code" href="group__state__rate.html#ga086f10e8804f8e95ace9a2b1cd26a66c">stateGetBodyRates_f</a>()-&gt;<a class="code" href="group__math__algebra__float.html#a75e3090314c4ad6edf12f7c08d9c5c0a">r</a>;</div>
@@ -627,7 +627,7 @@ $(document).ready(function(){initNavTree('obstacle__avoidance_8c_source.html',''
 <div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;</div>
 <div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;  <span class="comment">//Tune</span></div>
 <div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;  <span class="comment">//float dt = 0.5;  //define delta t for integration! check response under 0.1 and 1</span></div>
-<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;  <a class="code" href="types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> min_disparity = 40;</div>
+<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;  <a class="code" href="types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> <a class="code" href="wedgebug_8c.html#a701601dc3a02d4f8f04590a5d9ee81f0">min_disparity</a> = 40;</div>
 <div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;</div>
 <div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;  <span class="comment">//Current state of system;</span></div>
 <div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;  <span class="keywordtype">float</span> r_old = <a class="code" href="group__state__rate.html#ga086f10e8804f8e95ace9a2b1cd26a66c">stateGetBodyRates_f</a>()-&gt;<a class="code" href="group__math__algebra__float.html#a75e3090314c4ad6edf12f7c08d9c5c0a">r</a>;</div>
@@ -720,7 +720,7 @@ $(document).ready(function(){initNavTree('obstacle__avoidance_8c_source.html',''
 <div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;  <span class="keyword">struct </span><a class="code" href="group__math__algebra__float.html#structFloatVect3">FloatVect3</a> Total_Kan = {0, 0, 0};</div>
 <div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;  <span class="comment">//Tuning variables</span></div>
 <div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;  <span class="comment">//float force_max = 200;</span></div>
-<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;  <a class="code" href="types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> min_disparity = 45;</div>
+<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;  <a class="code" href="types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> <a class="code" href="wedgebug_8c.html#a701601dc3a02d4f8f04590a5d9ee81f0">min_disparity</a> = 45;</div>
 <div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;</div>
 <div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;  <span class="comment">//Flight plath angle calculation</span></div>
 <div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;  <span class="comment">// TODO make algorithm dependent on angle of obstacle.....</span></div>
@@ -902,7 +902,7 @@ $(document).ready(function(){initNavTree('obstacle__avoidance_8c_source.html',''
 <div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;  <span class="comment">//float force_max = 200;</span></div>
 <div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;</div>
 <div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;  <span class="comment">//Constants</span></div>
-<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;  <a class="code" href="types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> min_disparity = 45;</div>
+<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;  <a class="code" href="types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> <a class="code" href="wedgebug_8c.html#a701601dc3a02d4f8f04590a5d9ee81f0">min_disparity</a> = 45;</div>
 <div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;  <a class="code" href="types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> number_of_buffer = 20;</div>
 <div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;  <span class="keywordtype">float</span> bias = 2 * M_PI;</div>
 <div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;  <a class="code" href="guidance__OA_8c.html#a54454538a2936ac08af8cbf250e5c3dc">vref_max</a> = 0.1; <span class="comment">//CHECK!</span></div>
@@ -1132,7 +1132,7 @@ $(document).ready(function(){initNavTree('obstacle__avoidance_8c_source.html',''
 <div class="line"><a name="l01033"></a><span class="lineno"> 1033</span>&#160;{</div>
 <div class="line"><a name="l01034"></a><span class="lineno"> 1034</span>&#160;</div>
 <div class="line"><a name="l01035"></a><span class="lineno"> 1035</span>&#160;  <span class="comment">//Constants</span></div>
-<div class="line"><a name="l01036"></a><span class="lineno"> 1036</span>&#160;  <a class="code" href="types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> min_disparity = 45;</div>
+<div class="line"><a name="l01036"></a><span class="lineno"> 1036</span>&#160;  <a class="code" href="types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> <a class="code" href="wedgebug_8c.html#a701601dc3a02d4f8f04590a5d9ee81f0">min_disparity</a> = 45;</div>
 <div class="line"><a name="l01037"></a><span class="lineno"> 1037</span>&#160;  <a class="code" href="types_8h.html#aef44329758059c91c76d334e8fc09700">int8_t</a> number_of_buffer = 20;</div>
 <div class="line"><a name="l01038"></a><span class="lineno"> 1038</span>&#160;  <span class="keywordtype">float</span> bias = 2 * M_PI;</div>
 <div class="line"><a name="l01039"></a><span class="lineno"> 1039</span>&#160;  <a class="code" href="guidance__OA_8c.html#a54454538a2936ac08af8cbf250e5c3dc">vref_max</a> = 0.1; <span class="comment">//CHECK!</span></div>
@@ -1323,7 +1323,6 @@ $(document).ready(function(){initNavTree('obstacle__avoidance_8c_source.html',''
 <div class="ttc" id="obstacle__avoidance_8c_html_a323218194c24af766edc3bbc13be01df"><div class="ttname"><a href="obstacle__avoidance_8c.html#a323218194c24af766edc3bbc13be01df">dx_ref</a></div><div class="ttdeci">float dx_ref</div><div class="ttdef"><b>Definition:</b> <a href="obstacle__avoidance_8c_source.html#l00080">obstacle_avoidance.c:80</a></div></div>
 <div class="ttc" id="guidance__OA_8h_html"><div class="ttname"><a href="guidance__OA_8h.html">guidance_OA.h</a></div><div class="ttdoc">Guidance for the obstacle avoidance methods. </div></div>
 <div class="ttc" id="obstacle__avoidance_8c_html_ae300e554cb529ecf303fa34a382f3428"><div class="ttname"><a href="obstacle__avoidance_8c.html#ae300e554cb529ecf303fa34a382f3428">Dist_offset</a></div><div class="ttdeci">float Dist_offset</div><div class="ttdef"><b>Definition:</b> <a href="obstacle__avoidance_8c_source.html#l00104">obstacle_avoidance.c:104</a></div></div>
-<div class="ttc" id="point_8c_html_structVECTOR"><div class="ttname"><a href="point_8c.html#structVECTOR">VECTOR</a></div><div class="ttdef"><b>Definition:</b> <a href="point_8c_source.html#l00084">point.c:84</a></div></div>
 <div class="ttc" id="pprz__geodetic__float_8h_html_structNedCoor__f"><div class="ttname"><a href="pprz__geodetic__float_8h.html#structNedCoor__f">NedCoor_f</a></div><div class="ttdoc">vector in North East Down coordinates Units: meters </div><div class="ttdef"><b>Definition:</b> <a href="pprz__geodetic__float_8h_source.html#l00063">pprz_geodetic_float.h:63</a></div></div>
 <div class="ttc" id="pprz__algebra__float_8h_html"><div class="ttname"><a href="pprz__algebra__float_8h.html">pprz_algebra_float.h</a></div><div class="ttdoc">Paparazzi floating point algebra. </div></div>
 <div class="ttc" id="obstacle__avoidance_8c_html_ae078454b01eeea1d1a0e431c5f04fd33"><div class="ttname"><a href="obstacle__avoidance_8c.html#ae078454b01eeea1d1a0e431c5f04fd33">reference_pitch</a></div><div class="ttdeci">float reference_pitch</div><div class="ttdef"><b>Definition:</b> <a href="obstacle__avoidance_8c_source.html#l00064">obstacle_avoidance.c:64</a></div></div>
@@ -1344,6 +1343,7 @@ $(document).ready(function(){initNavTree('obstacle__avoidance_8c_source.html',''
 <div class="ttc" id="group__math__algebra__generic_html_gae19adf45dc166c946b9771d1496e402c"><div class="ttname"><a href="group__math__algebra__generic.html#gae19adf45dc166c946b9771d1496e402c">VECT2_NORM2</a></div><div class="ttdeci">#define VECT2_NORM2(_v)</div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra_8h_source.html#l00118">pprz_algebra.h:118</a></div></div>
 <div class="ttc" id="obstacle__avoidance_8c_html_a4144134b2b8c085bfcce8a476c589fef"><div class="ttname"><a href="obstacle__avoidance_8c.html#a4144134b2b8c085bfcce8a476c589fef">waypoint_rot</a></div><div class="ttdeci">float waypoint_rot</div><div class="ttdef"><b>Definition:</b> <a href="obstacle__avoidance_8c_source.html#l00126">obstacle_avoidance.c:126</a></div></div>
 <div class="ttc" id="obstacle__avoidance_8c_html_a90c32c96d7f78e4ee0e91d398fd301dc"><div class="ttname"><a href="obstacle__avoidance_8c.html#a90c32c96d7f78e4ee0e91d398fd301dc">V_hys_low</a></div><div class="ttdeci">float V_hys_low</div><div class="ttdef"><b>Definition:</b> <a href="obstacle__avoidance_8c_source.html#l00132">obstacle_avoidance.c:132</a></div></div>
+<div class="ttc" id="max7456_8c_html_structVECTOR"><div class="ttname"><a href="max7456_8c.html#structVECTOR">VECTOR</a></div><div class="ttdef"><b>Definition:</b> <a href="point_8c_source.html#l00084">point.c:84</a></div></div>
 <div class="ttc" id="obstacle__avoidance_8c_html_ad3cf05ec4b8dab2014f1d1a5f1400a5f"><div class="ttname"><a href="obstacle__avoidance_8c.html#ad3cf05ec4b8dab2014f1d1a5f1400a5f">AVOIDANCE_HEIGHT_IN_MEASUREMENT_VALUES</a></div><div class="ttdeci">#define AVOIDANCE_HEIGHT_IN_MEASUREMENT_VALUES</div><div class="ttdef"><b>Definition:</b> <a href="obstacle__avoidance_8c_source.html#l00049">obstacle_avoidance.c:49</a></div></div>
 <div class="ttc" id="obstacle__avoidance_8h_html"><div class="ttname"><a href="obstacle__avoidance_8h.html">obstacle_avoidance.h</a></div><div class="ttdoc">Obstacle avoidance methods. </div></div>
 <div class="ttc" id="guidance__OA_8c_html_a1c92c176477b26cde71bf5f88916674c"><div class="ttname"><a href="guidance__OA_8c.html#a1c92c176477b26cde71bf5f88916674c">alpha_fil</a></div><div class="ttdeci">float alpha_fil</div><div class="ttdef"><b>Definition:</b> <a href="guidance__OA_8c_source.html#l00112">guidance_OA.c:112</a></div></div>
@@ -1373,6 +1373,7 @@ $(document).ready(function(){initNavTree('obstacle__avoidance_8c_source.html',''
 <div class="ttc" id="obstacle__avoidance_8c_html_a6fe57a4456543113123b011fcf97c76d"><div class="ttname"><a href="obstacle__avoidance_8c.html#a6fe57a4456543113123b011fcf97c76d">AVOIDANCE_WIDTH_IN_MEASUREMENT_VALUES</a></div><div class="ttdeci">#define AVOIDANCE_WIDTH_IN_MEASUREMENT_VALUES</div><div class="ttdef"><b>Definition:</b> <a href="obstacle__avoidance_8c_source.html#l00053">obstacle_avoidance.c:53</a></div></div>
 <div class="ttc" id="downlink_8h_html_a028b405f95cecb4af565b17c8ee71d80"><div class="ttname"><a href="downlink_8h.html#a028b405f95cecb4af565b17c8ee71d80">DefaultDevice</a></div><div class="ttdeci">#define DefaultDevice</div><div class="ttdef"><b>Definition:</b> <a href="downlink_8h_source.html#l00046">downlink.h:46</a></div></div>
 <div class="ttc" id="state_8h_html"><div class="ttname"><a href="state_8h.html">state.h</a></div><div class="ttdoc">API to get/set the generic vehicle states. </div></div>
+<div class="ttc" id="wedgebug_8c_html_a701601dc3a02d4f8f04590a5d9ee81f0"><div class="ttname"><a href="wedgebug_8c.html#a701601dc3a02d4f8f04590a5d9ee81f0">min_disparity</a></div><div class="ttdeci">int min_disparity</div><div class="ttdoc">Block size used for the block matching (SBM) function. </div><div class="ttdef"><b>Definition:</b> <a href="wedgebug_8c_source.html#l00257">wedgebug.c:257</a></div></div>
 <div class="ttc" id="obstacle__avoidance_8c_html_ac6116d5235e13e059e591879c46d7174"><div class="ttname"><a href="obstacle__avoidance_8c.html#ac6116d5235e13e059e591879c46d7174">direction</a></div><div class="ttdeci">uint8_t direction</div><div class="ttdef"><b>Definition:</b> <a href="obstacle__avoidance_8c_source.html#l00125">obstacle_avoidance.c:125</a></div></div>
 <div class="ttc" id="obstacle__avoidance_8c_html_aaf5394cb86c03b1b49c938b1aa634c94"><div class="ttname"><a href="obstacle__avoidance_8c.html#aaf5394cb86c03b1b49c938b1aa634c94">c2_oa</a></div><div class="ttdeci">float c2_oa</div><div class="ttdef"><b>Definition:</b> <a href="obstacle__avoidance_8c_source.html#l00114">obstacle_avoidance.c:114</a></div></div>
 <div class="ttc" id="obstacle__avoidance_8c_html_aa17ba05b116733c09182e54a1457f8f9"><div class="ttname"><a href="obstacle__avoidance_8c.html#aa17ba05b116733c09182e54a1457f8f9">kv</a></div><div class="ttdeci">float kv</div><div class="ttdef"><b>Definition:</b> <a href="obstacle__avoidance_8c_source.html#l00118">obstacle_avoidance.c:118</a></div></div>
@@ -1409,7 +1410,7 @@ $(document).ready(function(){initNavTree('obstacle__avoidance_8c_source.html',''
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_e1bb5e76ffaaafe6f13f5c4932daceba.html">obstacle_avoidance</a></li><li class="navelem"><a class="el" href="obstacle__avoidance_8c.html">obstacle_avoidance.c</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:02:28 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:02:40 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

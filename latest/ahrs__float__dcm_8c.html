@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -141,7 +141,7 @@ $(document).ready(function(){initNavTree('ahrs__float__dcm_8c.html','');});
 Macros</h2></td></tr>
 <tr class="memitem:ab320166f60135defa2bcc392025ac5d5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__float__dcm_8c.html#ab320166f60135defa2bcc392025ac5d5">ACCEL_WEIGHT_FILTER</a>&#160;&#160;&#160;8</td></tr>
 <tr class="separator:ab320166f60135defa2bcc392025ac5d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3c51dcbd49ca0b36f5759f96d232b64"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__float__dcm_8c.html#ac3c51dcbd49ca0b36f5759f96d232b64">ACCEL_WEIGHT_BAND</a>&#160;&#160;&#160;1.f</td></tr>
+<tr class="memitem:ac3c51dcbd49ca0b36f5759f96d232b64"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__float__dcm_8c.html#ac3c51dcbd49ca0b36f5759f96d232b64">ACCEL_WEIGHT_BAND</a>&#160;&#160;&#160;1.<a class="el" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a></td></tr>
 <tr class="separator:ac3c51dcbd49ca0b36f5759f96d232b64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -162,8 +162,8 @@ Functions</h2></td></tr>
 <tr class="separator:ac19ef4cf9dfcc61561addd93a8c41a5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a085ad70d62a69cf92b8e08b27b9e60d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__float__dcm_8c.html#a085ad70d62a69cf92b8e08b27b9e60d1">ahrs_dcm_propagate</a> (struct <a class="el" href="group__math__algebra__float.html#structFloatRates">FloatRates</a> *gyro, float dt)</td></tr>
 <tr class="separator:a085ad70d62a69cf92b8e08b27b9e60d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6ae5229becb1414fbef533329174466"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__float__dcm_8c.html#af6ae5229becb1414fbef533329174466">ahrs_dcm_update_gps</a> (struct <a class="el" href="gps_8h.html#structGpsState">GpsState</a> *gps_s)</td></tr>
-<tr class="separator:af6ae5229becb1414fbef533329174466"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f32021d658bbed74d6392cadc4577a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__float__dcm_8c.html#a0f32021d658bbed74d6392cadc4577a2">ahrs_dcm_update_gps</a> (struct <a class="el" href="gps_8h.html#structGpsState">GpsState</a> *gps_s <a class="el" href="rotorcraft_2navigation_8c.html#a9314d7061c454ecf2111d3965db8f23f">UNUSED</a>)</td></tr>
+<tr class="separator:a0f32021d658bbed74d6392cadc4577a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e8f7f86867387eac6081a8b23ea9533"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__float__dcm_8c.html#a9e8f7f86867387eac6081a8b23ea9533">ahrs_dcm_update_accel</a> (struct <a class="el" href="group__math__algebra__float.html#structFloatVect3">FloatVect3</a> *accel)</td></tr>
 <tr class="separator:a9e8f7f86867387eac6081a8b23ea9533"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28f19eadfba62ddde0404977ec9b808a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__float__dcm_8c.html#a28f19eadfba62ddde0404977ec9b808a">ahrs_dcm_update_mag</a> (struct <a class="el" href="group__math__algebra__float.html#structFloatVect3">FloatVect3</a> *mag)</td></tr>
@@ -215,14 +215,14 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ACCEL_WEIGHT_BAND&#160;&#160;&#160;1.f</td>
+          <td class="memname">#define ACCEL_WEIGHT_BAND&#160;&#160;&#160;1.<a class="el" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ahrs__float__dcm_8c_source.html#l00370">370</a> of file <a class="el" href="ahrs__float__dcm_8c_source.html">ahrs_float_dcm.c</a>.</p>
+<p>Definition at line <a class="el" href="ahrs__float__dcm_8c_source.html#l00376">376</a> of file <a class="el" href="ahrs__float__dcm_8c_source.html">ahrs_float_dcm.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ahrs__float__dcm_8c_source.html#l00373">Drift_correction()</a>.</p>
+<p>Referenced by <a class="el" href="ahrs__float__dcm_8c_source.html#l00379">Drift_correction()</a>.</p>
 
 </div>
 </div>
@@ -236,9 +236,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ahrs__float__dcm_8c_source.html#l00363">363</a> of file <a class="el" href="ahrs__float__dcm_8c_source.html">ahrs_float_dcm.c</a>.</p>
+<p>Definition at line <a class="el" href="ahrs__float__dcm_8c_source.html#l00369">369</a> of file <a class="el" href="ahrs__float__dcm_8c_source.html">ahrs_float_dcm.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ahrs__float__dcm_8c_source.html#l00373">Drift_correction()</a>.</p>
+<p>Referenced by <a class="el" href="ahrs__float__dcm_8c_source.html#l00379">Drift_correction()</a>.</p>
 
 </div>
 </div>
@@ -275,7 +275,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ahrs__float__dcm_8c_source.html#l00119">119</a> of file <a class="el" href="ahrs__float__dcm_8c_source.html">ahrs_float_dcm.c</a>.</p>
 
-<p>References <a class="el" href="ahrs__float__dcm_8c_source.html#l00052">ahrs_dcm</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00034">AHRS_DCM_RUNNING</a>, <a class="el" href="ahrs__float__utils_8h_source.html#l00038">ahrs_float_get_euler_from_accel_mag()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00333">float_rmat_of_eulers</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00038">AhrsFloatDCM::gyro_bias</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00053">AhrsFloatDCM::is_aligned</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00041">AhrsFloatDCM::ltp_to_imu_euler</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00090">set_dcm_matrix_from_rmat()</a>, and <a class="el" href="ahrs__float__dcm_8h_source.html#l00052">AhrsFloatDCM::status</a>.</p>
+<p>References <a class="el" href="ahrs__float__dcm_8c_source.html#l00052">ahrs_dcm</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00034">AHRS_DCM_RUNNING</a>, <a class="el" href="ahrs__float__utils_8h_source.html#l00061">ahrs_float_get_quat_from_accel()</a>, <a class="el" href="ahrs__float__utils_8h_source.html#l00085">ahrs_float_get_quat_from_accel_mag()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00650">float_eulers_of_quat()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00236">float_rmat_of_quat()</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00038">AhrsFloatDCM::gyro_bias</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00053">AhrsFloatDCM::is_aligned</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00041">AhrsFloatDCM::ltp_to_imu_euler</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00090">set_dcm_matrix_from_rmat()</a>, and <a class="el" href="ahrs__float__dcm_8h_source.html#l00052">AhrsFloatDCM::status</a>.</p>
 
 <p>Referenced by <a class="el" href="ahrs__float__dcm__wrapper_8c_source.html#l00139">aligner_cb()</a>.</p>
 
@@ -286,7 +286,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ahrs__float__dcm_8c_ac19ef4cf9dfcc61561addd93a8c41a5e_cgraph.png" border="0" usemap="#ahrs__float__dcm_8c_ac19ef4cf9dfcc61561addd93a8c41a5e_cgraph" alt=""/></div>
 <map name="ahrs__float__dcm_8c_ac19ef4cf9dfcc61561addd93a8c41a5e_cgraph" id="ahrs__float__dcm_8c_ac19ef4cf9dfcc61561addd93a8c41a5e_cgraph">
-<area shape="rect" id="node2" href="ahrs__float__utils_8h.html#a7b4996acf75e49ac6d2249e96949307e" title="ahrs_float_get_euler\l_from_accel_mag" alt="" coords="200,5,352,47"/><area shape="rect" id="node3" href="ahrs__float__dcm_8c.html#aae3abaa3b95367596d2fe07e62b59dfe" title="set_dcm_matrix_from_rmat" alt="" coords="176,71,376,98"/></map>
+<area shape="rect" id="node2" href="ahrs__float__utils_8h.html#ab9b9f47127bec250cb42814794dda184" title="Compute a quaternion representing roll and pitch from an accelerometer measurement. " alt="" coords="439,5,588,47"/><area shape="rect" id="node8" href="ahrs__float__utils_8h.html#a417a9a4e580b992140640e70992a2a01" title="ahrs_float_get_quat\l_from_accel_mag" alt="" coords="201,115,351,156"/><area shape="rect" id="node9" href="group__math__algebra__float.html#ga4f32e245bb37ef9fdf43872080f63fbc" title="float_rmat_of_quat" alt="" coords="442,239,585,266"/><area shape="rect" id="node14" href="group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="euler rotation &#39;ZYX&#39; " alt="" coords="201,231,351,258"/><area shape="rect" id="node15" href="ahrs__float__dcm_8c.html#aae3abaa3b95367596d2fe07e62b59dfe" title="set_dcm_matrix_from_rmat" alt="" coords="176,282,376,309"/><area shape="rect" id="node3" href="group__math__algebra__float.html#gaf08320455a290ed351f2a516473a89db" title="normalize 3D vector in place " alt="" coords="661,13,823,39"/><area shape="rect" id="node6" href="group__math__algebra__float.html#ga010393da7c94f197d0161a0071862041" title="float_quat_normalize" alt="" coords="664,71,820,98"/><area shape="rect" id="node4" href="group__math__algebra__float.html#gad33d6e2c6bf00d660031e57fb3675666" title="float_vect3_norm" alt="" coords="881,13,1015,39"/><area shape="rect" id="node5" href="group__math__algebra__float.html#gaf0812637c58834d3baff5cd82fa220d2" title="float_vect3_norm2" alt="" coords="1063,13,1204,39"/><area shape="rect" id="node7" href="group__math__algebra__float.html#gaf58947a2590837aa85077d42d99fb112" title="float_quat_norm" alt="" coords="885,71,1011,98"/><area shape="rect" id="node10" href="group__math__algebra__float.html#gac852ba0c3ec48acfd8abaefbf933d4b6" title="rotate 3D vector by transposed rotation matrix. " alt="" coords="424,122,603,149"/><area shape="rect" id="node11" href="group__math__algebra__float.html#ga1046209eec005141af05e1098b559487" title="Composition (multiplication) of two quaternions with normalization. " alt="" coords="428,173,599,215"/><area shape="rect" id="node12" href="group__math__algebra__float.html#gaf182e4cea0a80278a3b2856331095ff6" title="Composition (multiplication) of two quaternions. " alt="" coords="677,155,807,182"/><area shape="rect" id="node13" href="group__math__algebra__float.html#ga8c87c4af5df3d13c6eb0bd8b8e97721a" title="float_quat_wrap_shortest" alt="" coords="651,206,833,233"/></map>
 </div>
 </p>
 
@@ -371,9 +371,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ahrs__float__dcm_8c_source.html#l00142">142</a> of file <a class="el" href="ahrs__float__dcm_8c_source.html">ahrs_float_dcm.c</a>.</p>
+<p>Definition at line <a class="el" href="ahrs__float__dcm_8c_source.html#l00148">148</a> of file <a class="el" href="ahrs__float__dcm_8c_source.html">ahrs_float_dcm.c</a>.</p>
 
-<p>References <a class="el" href="ahrs__float__dcm_8c_source.html#l00052">ahrs_dcm</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00516">compute_ahrs_representations()</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00038">AhrsFloatDCM::gyro_bias</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00042">AhrsFloatDCM::imu_rate</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00480">Matrix_update()</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00280">Normalize()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00094">FloatRates::p</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00095">FloatRates::q</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00096">FloatRates::r</a>, and <a class="el" href="pprz__algebra_8h_source.html#l00372">RATES_DIFF</a>.</p>
+<p>References <a class="el" href="ahrs__float__dcm_8c_source.html#l00052">ahrs_dcm</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00522">compute_ahrs_representations()</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00038">AhrsFloatDCM::gyro_bias</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00042">AhrsFloatDCM::imu_rate</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00486">Matrix_update()</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00286">Normalize()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00094">FloatRates::p</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00095">FloatRates::q</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00096">FloatRates::r</a>, and <a class="el" href="pprz__algebra_8h_source.html#l00372">RATES_DIFF</a>.</p>
 
 <p>Referenced by <a class="el" href="ahrs__float__dcm__wrapper_8c_source.html#l00089">gyro_cb()</a>.</p>
 
@@ -415,9 +415,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ahrs__float__dcm_8c_source.html#l00530">530</a> of file <a class="el" href="ahrs__float__dcm_8c_source.html">ahrs_float_dcm.c</a>.</p>
+<p>Definition at line <a class="el" href="ahrs__float__dcm_8c_source.html#l00536">536</a> of file <a class="el" href="ahrs__float__dcm_8c_source.html">ahrs_float_dcm.c</a>.</p>
 
-<p>References <a class="el" href="ahrs__float__dcm_8c_source.html#l00535">ahrs_dcm_set_body_to_imu_quat()</a>, and <a class="el" href="pprz__orientation__conversion_8h_source.html#l00225">orientationGetQuat_f()</a>.</p>
+<p>References <a class="el" href="ahrs__float__dcm_8c_source.html#l00541">ahrs_dcm_set_body_to_imu_quat()</a>, and <a class="el" href="pprz__orientation__conversion_8h_source.html#l00225">orientationGetQuat_f()</a>.</p>
 
 <p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -446,11 +446,11 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ahrs__float__dcm_8c_source.html#l00535">535</a> of file <a class="el" href="ahrs__float__dcm_8c_source.html">ahrs_float_dcm.c</a>.</p>
+<p>Definition at line <a class="el" href="ahrs__float__dcm_8c_source.html#l00541">541</a> of file <a class="el" href="ahrs__float__dcm_8c_source.html">ahrs_float_dcm.c</a>.</p>
 
 <p>References <a class="el" href="ahrs__float__dcm_8c_source.html#l00052">ahrs_dcm</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00050">AhrsFloatDCM::body_to_imu</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00053">AhrsFloatDCM::is_aligned</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00041">AhrsFloatDCM::ltp_to_imu_euler</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00243">orientationGetEulers_f()</a>, and <a class="el" href="pprz__orientation__conversion_8h_source.html#l00173">orientationSetQuat_f()</a>.</p>
 
-<p>Referenced by <a class="el" href="ahrs__float__dcm_8c_source.html#l00530">ahrs_dcm_set_body_to_imu()</a>, and <a class="el" href="ahrs__float__dcm__wrapper_8c_source.html#l00159">body_to_imu_cb()</a>.</p>
+<p>Referenced by <a class="el" href="ahrs__float__dcm_8c_source.html#l00536">ahrs_dcm_set_body_to_imu()</a>, and <a class="el" href="ahrs__float__dcm__wrapper_8c_source.html#l00159">body_to_imu_cb()</a>.</p>
 
 <p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -490,9 +490,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ahrs__float__dcm_8c_source.html#l00194">194</a> of file <a class="el" href="ahrs__float__dcm_8c_source.html">ahrs_float_dcm.c</a>.</p>
+<p>Definition at line <a class="el" href="ahrs__float__dcm_8c_source.html#l00200">200</a> of file <a class="el" href="ahrs__float__dcm_8c_source.html">ahrs_float_dcm.c</a>.</p>
 
-<p>References <a class="el" href="ahrs__float__dcm_8c_source.html#l00052">ahrs_dcm</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00373">Drift_correction()</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00045">AhrsFloatDCM::gps_acceleration</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00048">AhrsFloatDCM::gps_age</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00044">AhrsFloatDCM::gps_speed</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00065">Omega</a>, <a class="el" href="ins__vectornav_8c.html#aa01d3425df2eb0f33ced38c9d8fa8f05">PRINT_CONFIG_MSG()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>.</p>
+<p>References <a class="el" href="ahrs__float__dcm_8c_source.html#l00052">ahrs_dcm</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00379">Drift_correction()</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00045">AhrsFloatDCM::gps_acceleration</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00048">AhrsFloatDCM::gps_age</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00044">AhrsFloatDCM::gps_speed</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00065">Omega</a>, <a class="el" href="ins__vectornav_8c.html#aa01d3425df2eb0f33ced38c9d8fa8f05">PRINT_CONFIG_MSG()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>.</p>
 
 <p>Referenced by <a class="el" href="ahrs__float__dcm__wrapper_8c_source.html#l00117">accel_cb()</a>.</p>
 
@@ -520,23 +520,23 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="af6ae5229becb1414fbef533329174466"></a>
+<a class="anchor" id="a0f32021d658bbed74d6392cadc4577a2"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void ahrs_dcm_update_gps </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="gps_8h.html#structGpsState">GpsState</a> *&#160;</td>
-          <td class="paramname"><em>gps_s</em></td><td>)</td>
+          <td class="paramtype">struct <a class="el" href="gps_8h.html#structGpsState">GpsState</a> *gps_s&#160;</td>
+          <td class="paramname"><em>UNUSED</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ahrs__float__dcm_8c_source.html#l00169">169</a> of file <a class="el" href="ahrs__float__dcm_8c_source.html">ahrs_float_dcm.c</a>.</p>
+<p>Definition at line <a class="el" href="ahrs__float__dcm_8c_source.html#l00175">175</a> of file <a class="el" href="ahrs__float__dcm_8c_source.html">ahrs_float_dcm.c</a>.</p>
 
-<p>References <a class="el" href="ahrs__float__dcm_8c_source.html#l00052">ahrs_dcm</a>, <a class="el" href="gps_8h_source.html#l00099">GpsState::course</a>, <a class="el" href="gps_8h_source.html#l00107">GpsState::fix</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00045">AhrsFloatDCM::gps_acceleration</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00048">AhrsFloatDCM::gps_age</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00046">AhrsFloatDCM::gps_course</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00047">AhrsFloatDCM::gps_course_valid</a>, <a class="el" href="gps_8h_source.html#l00039">GPS_FIX_3D</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00044">AhrsFloatDCM::gps_speed</a>, <a class="el" href="gps_8h_source.html#l00097">GpsState::gspeed</a>, and <a class="el" href="gps_8h_source.html#l00098">GpsState::speed_3d</a>.</p>
+<p>References <a class="el" href="ahrs__float__dcm_8c_source.html#l00052">ahrs_dcm</a>, <a class="el" href="wedgebug_8c_source.html#l00204">f</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00045">AhrsFloatDCM::gps_acceleration</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00048">AhrsFloatDCM::gps_age</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00046">AhrsFloatDCM::gps_course</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00047">AhrsFloatDCM::gps_course_valid</a>, <a class="el" href="gps_8h_source.html#l00039">GPS_FIX_3D</a>, and <a class="el" href="ahrs__float__dcm_8h_source.html#l00044">AhrsFloatDCM::gps_speed</a>.</p>
 
 <p>Referenced by <a class="el" href="ahrs__float__dcm__wrapper_8c_source.html#l00165">gps_cb()</a>.</p>
 
@@ -545,8 +545,8 @@ Variables</h2></td></tr>
 <div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-12-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="ahrs__float__dcm_8c_af6ae5229becb1414fbef533329174466_icgraph.png" border="0" usemap="#ahrs__float__dcm_8c_af6ae5229becb1414fbef533329174466_icgraph" alt=""/></div>
-<map name="ahrs__float__dcm_8c_af6ae5229becb1414fbef533329174466_icgraph" id="ahrs__float__dcm_8c_af6ae5229becb1414fbef533329174466_icgraph">
+<div class="center"><img src="ahrs__float__dcm_8c_a0f32021d658bbed74d6392cadc4577a2_icgraph.png" border="0" usemap="#ahrs__float__dcm_8c_a0f32021d658bbed74d6392cadc4577a2_icgraph" alt=""/></div>
+<map name="ahrs__float__dcm_8c_a0f32021d658bbed74d6392cadc4577a2_icgraph" id="ahrs__float__dcm_8c_a0f32021d658bbed74d6392cadc4577a2_icgraph">
 <area shape="rect" id="node2" href="ahrs__float__dcm__wrapper_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8" title="gps_cb" alt="" coords="220,5,287,32"/><area shape="rect" id="node3" href="ahrs__float__dcm__wrapper_8h.html#a18235ffdb70868861d5424fe8c4bafa5" title="ahrs_dcm_register" alt="" coords="335,5,476,32"/></map>
 </div>
 </p>
@@ -567,7 +567,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ahrs__float__dcm_8c_source.html#l00221">221</a> of file <a class="el" href="ahrs__float__dcm_8c_source.html">ahrs_float_dcm.c</a>.</p>
+<p>Definition at line <a class="el" href="ahrs__float__dcm_8c_source.html#l00227">227</a> of file <a class="el" href="ahrs__float__dcm_8c_source.html">ahrs_float_dcm.c</a>.</p>
 
 <p>References <a class="el" href="ahrs__float__dcm_8c_source.html#l00052">ahrs_dcm</a>, <a class="el" href="downlink_8h_source.html#l00042">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00046">DefaultDevice</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00041">AhrsFloatDCM::ltp_to_imu_euler</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00072">MAG_Heading_X</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00073">MAG_Heading_Y</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00085">FloatEulers::phi</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00086">FloatEulers::theta</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>.</p>
 
@@ -608,11 +608,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ahrs__float__dcm_8c_source.html#l00516">516</a> of file <a class="el" href="ahrs__float__dcm_8c_source.html">ahrs_float_dcm.c</a>.</p>
+<p>Definition at line <a class="el" href="ahrs__float__dcm_8c_source.html#l00522">522</a> of file <a class="el" href="ahrs__float__dcm_8c_source.html">ahrs_float_dcm.c</a>.</p>
 
 <p>References <a class="el" href="ahrs__float__dcm_8c_source.html#l00052">ahrs_dcm</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00067">DCM_Matrix</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00065">GRAVITY</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00041">AhrsFloatDCM::ltp_to_imu_euler</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00085">FloatEulers::phi</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00087">FloatEulers::psi</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00086">FloatEulers::theta</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>.</p>
 
-<p>Referenced by <a class="el" href="ahrs__float__dcm_8c_source.html#l00142">ahrs_dcm_propagate()</a>.</p>
+<p>Referenced by <a class="el" href="ahrs__float__dcm_8c_source.html#l00148">ahrs_dcm_propagate()</a>.</p>
 
 <p><div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -641,11 +641,11 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ahrs__float__dcm_8c_source.html#l00373">373</a> of file <a class="el" href="ahrs__float__dcm_8c_source.html">ahrs_float_dcm.c</a>.</p>
+<p>Definition at line <a class="el" href="ahrs__float__dcm_8c_source.html#l00379">379</a> of file <a class="el" href="ahrs__float__dcm_8c_source.html">ahrs_float_dcm.c</a>.</p>
 
-<p>References <a class="el" href="ahrs__float__dcm_8c_source.html#l00370">ACCEL_WEIGHT_BAND</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00363">ACCEL_WEIGHT_FILTER</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00052">ahrs_dcm</a>, <a class="el" href="autopilot_8c_source.html#l00050">autopilot</a>, <a class="el" href="airspeed__uADC_8c_source.html#l00057">course</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00067">DCM_Matrix</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00046">AhrsFloatDCM::gps_course</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00047">AhrsFloatDCM::gps_course_valid</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00065">GRAVITY</a>, <a class="el" href="ahrs__float__dcm_8h.html#a0ccfe632303e7d147366d3d714b1537e">imu_health</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00061">Ki_ROLLPITCH</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00063">Ki_YAW</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00060">Kp_ROLLPITCH</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00062">Kp_YAW</a>, <a class="el" href="autopilot_8h_source.html#l00071">pprz_autopilot::launch</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00072">MAG_Heading_X</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00073">MAG_Heading_Y</a>, <a class="el" href="rotorcraft_2main__fbw_8c_source.html#l00053">Max</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00064">Omega_I</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00063">Omega_P</a>, <a class="el" href="ins__vectornav_8c.html#aa01d3425df2eb0f33ced38c9d8fa8f05">PRINT_CONFIG_MSG()</a>, <a class="el" href="ahrs__float__dcm__algebra_8h_source.html#l00043">Vector_Add()</a>, <a class="el" href="ahrs__float__dcm__algebra_8h_source.html#l00029">Vector_Cross_Product()</a>, <a class="el" href="ahrs__float__dcm__algebra_8h_source.html#l00024">Vector_Dot_Product()</a>, <a class="el" href="ahrs__float__dcm__algebra_8h_source.html#l00036">Vector_Scale()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>.</p>
+<p>References <a class="el" href="ahrs__float__dcm_8c_source.html#l00376">ACCEL_WEIGHT_BAND</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00369">ACCEL_WEIGHT_FILTER</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00052">ahrs_dcm</a>, <a class="el" href="autopilot_8c_source.html#l00050">autopilot</a>, <a class="el" href="airspeed__uADC_8c_source.html#l00058">course</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00067">DCM_Matrix</a>, <a class="el" href="wedgebug_8c_source.html#l00204">f</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00046">AhrsFloatDCM::gps_course</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00047">AhrsFloatDCM::gps_course_valid</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00065">GRAVITY</a>, <a class="el" href="ahrs__float__dcm_8h.html#a0ccfe632303e7d147366d3d714b1537e">imu_health</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00061">Ki_ROLLPITCH</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00063">Ki_YAW</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00060">Kp_ROLLPITCH</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00062">Kp_YAW</a>, <a class="el" href="autopilot_8h_source.html#l00071">pprz_autopilot::launch</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00072">MAG_Heading_X</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00073">MAG_Heading_Y</a>, <a class="el" href="rotorcraft_2main__fbw_8c_source.html#l00053">Max</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00064">Omega_I</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00063">Omega_P</a>, <a class="el" href="ins__vectornav_8c.html#aa01d3425df2eb0f33ced38c9d8fa8f05">PRINT_CONFIG_MSG()</a>, <a class="el" href="ahrs__float__dcm__algebra_8h_source.html#l00043">Vector_Add()</a>, <a class="el" href="ahrs__float__dcm__algebra_8h_source.html#l00029">Vector_Cross_Product()</a>, <a class="el" href="ahrs__float__dcm__algebra_8h_source.html#l00024">Vector_Dot_Product()</a>, <a class="el" href="ahrs__float__dcm__algebra_8h_source.html#l00036">Vector_Scale()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>.</p>
 
-<p>Referenced by <a class="el" href="ahrs__float__dcm_8c_source.html#l00194">ahrs_dcm_update_accel()</a>.</p>
+<p>Referenced by <a class="el" href="ahrs__float__dcm_8c_source.html#l00200">ahrs_dcm_update_accel()</a>.</p>
 
 <p><div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -685,11 +685,11 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ahrs__float__dcm_8c_source.html#l00480">480</a> of file <a class="el" href="ahrs__float__dcm_8c_source.html">ahrs_float_dcm.c</a>.</p>
+<p>Definition at line <a class="el" href="ahrs__float__dcm_8c_source.html#l00486">486</a> of file <a class="el" href="ahrs__float__dcm_8c_source.html">ahrs_float_dcm.c</a>.</p>
 
 <p>References <a class="el" href="ahrs__float__dcm_8c_source.html#l00052">ahrs_dcm</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00067">DCM_Matrix</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00042">AhrsFloatDCM::imu_rate</a>, <a class="el" href="ahrs__float__dcm__algebra_8h_source.html#l00064">Matrix_Multiply()</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00065">Omega</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00064">Omega_I</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00063">Omega_P</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00062">Omega_Vector</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00094">FloatRates::p</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00095">FloatRates::q</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00096">FloatRates::r</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00069">Temporary_Matrix</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00068">Update_Matrix</a>, <a class="el" href="ahrs__float__dcm__algebra_8h_source.html#l00043">Vector_Add()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>.</p>
 
-<p>Referenced by <a class="el" href="ahrs__float__dcm_8c_source.html#l00142">ahrs_dcm_propagate()</a>.</p>
+<p>Referenced by <a class="el" href="ahrs__float__dcm_8c_source.html#l00148">ahrs_dcm_propagate()</a>.</p>
 
 <p><div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -729,11 +729,11 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ahrs__float__dcm_8c_source.html#l00280">280</a> of file <a class="el" href="ahrs__float__dcm_8c_source.html">ahrs_float_dcm.c</a>.</p>
+<p>Definition at line <a class="el" href="ahrs__float__dcm_8c_source.html#l00286">286</a> of file <a class="el" href="ahrs__float__dcm_8c_source.html">ahrs_float_dcm.c</a>.</p>
 
-<p>References <a class="el" href="ahrs__float__dcm_8c_source.html#l00052">ahrs_dcm</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00050">AhrsFloatDCM::body_to_imu</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00067">DCM_Matrix</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00234">orientationGetRMat_f()</a>, <a class="el" href="ahrs__float__dcm_8h.html#ab0d3aa1869bc70eb2b0190c3912690e7">renorm_blowup_count</a>, <a class="el" href="ahrs__float__dcm_8h.html#a1814455019292840abf28c91a27f2080">renorm_sqrt_count</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00090">set_dcm_matrix_from_rmat()</a>, <a class="el" href="ahrs__float__dcm__algebra_8h_source.html#l00043">Vector_Add()</a>, <a class="el" href="ahrs__float__dcm__algebra_8h_source.html#l00029">Vector_Cross_Product()</a>, <a class="el" href="ahrs__float__dcm__algebra_8h_source.html#l00024">Vector_Dot_Product()</a>, and <a class="el" href="ahrs__float__dcm__algebra_8h_source.html#l00036">Vector_Scale()</a>.</p>
+<p>References <a class="el" href="ahrs__float__dcm_8c_source.html#l00052">ahrs_dcm</a>, <a class="el" href="ahrs__float__dcm_8h_source.html#l00050">AhrsFloatDCM::body_to_imu</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00067">DCM_Matrix</a>, <a class="el" href="wedgebug_8c_source.html#l00204">f</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00234">orientationGetRMat_f()</a>, <a class="el" href="ahrs__float__dcm_8h.html#ab0d3aa1869bc70eb2b0190c3912690e7">renorm_blowup_count</a>, <a class="el" href="ahrs__float__dcm_8h.html#a1814455019292840abf28c91a27f2080">renorm_sqrt_count</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00090">set_dcm_matrix_from_rmat()</a>, <a class="el" href="ahrs__float__dcm__algebra_8h_source.html#l00043">Vector_Add()</a>, <a class="el" href="ahrs__float__dcm__algebra_8h_source.html#l00029">Vector_Cross_Product()</a>, <a class="el" href="ahrs__float__dcm__algebra_8h_source.html#l00024">Vector_Dot_Product()</a>, and <a class="el" href="ahrs__float__dcm__algebra_8h_source.html#l00036">Vector_Scale()</a>.</p>
 
-<p>Referenced by <a class="el" href="ahrs__float__dcm_8c_source.html#l00142">ahrs_dcm_propagate()</a>.</p>
+<p>Referenced by <a class="el" href="ahrs__float__dcm_8c_source.html#l00148">ahrs_dcm_propagate()</a>.</p>
 
 <p><div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -785,7 +785,7 @@ Variables</h2></td></tr>
 
 <p>References <a class="el" href="ahrs__float__dcm_8c_source.html#l00067">DCM_Matrix</a>, and <a class="el" href="pprz__algebra_8h_source.html#l00660">RMAT_ELMT</a>.</p>
 
-<p>Referenced by <a class="el" href="ahrs__float__dcm_8c_source.html#l00119">ahrs_dcm_align()</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00099">ahrs_dcm_init()</a>, and <a class="el" href="ahrs__float__dcm_8c_source.html#l00280">Normalize()</a>.</p>
+<p>Referenced by <a class="el" href="ahrs__float__dcm_8c_source.html#l00119">ahrs_dcm_align()</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00099">ahrs_dcm_init()</a>, and <a class="el" href="ahrs__float__dcm_8c_source.html#l00286">Normalize()</a>.</p>
 
 <p><div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -827,7 +827,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ahrs__float__dcm_8c_source.html#l00052">52</a> of file <a class="el" href="ahrs__float__dcm_8c_source.html">ahrs_float_dcm.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ahrs__float__dcm__wrapper_8c_source.html#l00117">accel_cb()</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00119">ahrs_dcm_align()</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00099">ahrs_dcm_init()</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00142">ahrs_dcm_propagate()</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00535">ahrs_dcm_set_body_to_imu_quat()</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00194">ahrs_dcm_update_accel()</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00169">ahrs_dcm_update_gps()</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00221">ahrs_dcm_update_mag()</a>, <a class="el" href="ahrs__float__dcm__wrapper_8c_source.html#l00139">aligner_cb()</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00516">compute_ahrs_representations()</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00373">Drift_correction()</a>, <a class="el" href="ahrs__float__dcm__wrapper_8c_source.html#l00089">gyro_cb()</a>, <a class="el" href="ahrs__float__dcm__wrapper_8c_source.html#l00128">mag_cb()</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00480">Matrix_update()</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00280">Normalize()</a>, <a class="el" href="ahrs__float__dcm__wrapper_8c_source.html#l00048">send_filter_status()</a>, and <a class="el" href="ahrs__float__dcm__wrapper_8c_source.html#l00181">set_body_orientation_and_rates()</a>.</p>
+<p>Referenced by <a class="el" href="ahrs__float__dcm__wrapper_8c_source.html#l00117">accel_cb()</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00119">ahrs_dcm_align()</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00099">ahrs_dcm_init()</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00148">ahrs_dcm_propagate()</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00541">ahrs_dcm_set_body_to_imu_quat()</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00200">ahrs_dcm_update_accel()</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00175">ahrs_dcm_update_gps()</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00227">ahrs_dcm_update_mag()</a>, <a class="el" href="ahrs__float__dcm__wrapper_8c_source.html#l00139">aligner_cb()</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00522">compute_ahrs_representations()</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00379">Drift_correction()</a>, <a class="el" href="ahrs__float__dcm__wrapper_8c_source.html#l00089">gyro_cb()</a>, <a class="el" href="ahrs__float__dcm__wrapper_8c_source.html#l00128">mag_cb()</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00486">Matrix_update()</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00286">Normalize()</a>, <a class="el" href="ahrs__float__dcm__wrapper_8c_source.html#l00048">send_filter_status()</a>, and <a class="el" href="ahrs__float__dcm__wrapper_8c_source.html#l00181">set_body_orientation_and_rates()</a>.</p>
 
 </div>
 </div>
@@ -843,7 +843,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ahrs__float__dcm_8c_source.html#l00067">67</a> of file <a class="el" href="ahrs__float__dcm_8c_source.html">ahrs_float_dcm.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ahrs__float__dcm_8c_source.html#l00516">compute_ahrs_representations()</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00373">Drift_correction()</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00480">Matrix_update()</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00280">Normalize()</a>, and <a class="el" href="ahrs__float__dcm_8c_source.html#l00090">set_dcm_matrix_from_rmat()</a>.</p>
+<p>Referenced by <a class="el" href="ahrs__float__dcm_8c_source.html#l00522">compute_ahrs_representations()</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00379">Drift_correction()</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00486">Matrix_update()</a>, <a class="el" href="ahrs__float__dcm_8c_source.html#l00286">Normalize()</a>, and <a class="el" href="ahrs__float__dcm_8c_source.html#l00090">set_dcm_matrix_from_rmat()</a>.</p>
 
 </div>
 </div>
@@ -873,7 +873,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ahrs__float__dcm_8c_source.html#l00072">72</a> of file <a class="el" href="ahrs__float__dcm_8c_source.html">ahrs_float_dcm.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ahrs__float__dcm_8c_source.html#l00221">ahrs_dcm_update_mag()</a>, and <a class="el" href="ahrs__float__dcm_8c_source.html#l00373">Drift_correction()</a>.</p>
+<p>Referenced by <a class="el" href="ahrs__float__dcm_8c_source.html#l00227">ahrs_dcm_update_mag()</a>, and <a class="el" href="ahrs__float__dcm_8c_source.html#l00379">Drift_correction()</a>.</p>
 
 </div>
 </div>
@@ -889,7 +889,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ahrs__float__dcm_8c_source.html#l00073">73</a> of file <a class="el" href="ahrs__float__dcm_8c_source.html">ahrs_float_dcm.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ahrs__float__dcm_8c_source.html#l00221">ahrs_dcm_update_mag()</a>, and <a class="el" href="ahrs__float__dcm_8c_source.html#l00373">Drift_correction()</a>.</p>
+<p>Referenced by <a class="el" href="ahrs__float__dcm_8c_source.html#l00227">ahrs_dcm_update_mag()</a>, and <a class="el" href="ahrs__float__dcm_8c_source.html#l00379">Drift_correction()</a>.</p>
 
 </div>
 </div>
@@ -905,7 +905,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ahrs__float__dcm_8c_source.html#l00065">65</a> of file <a class="el" href="ahrs__float__dcm_8c_source.html">ahrs_float_dcm.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ahrs__float__dcm_8c_source.html#l00194">ahrs_dcm_update_accel()</a>, and <a class="el" href="ahrs__float__dcm_8c_source.html#l00480">Matrix_update()</a>.</p>
+<p>Referenced by <a class="el" href="ahrs__float__dcm_8c_source.html#l00200">ahrs_dcm_update_accel()</a>, and <a class="el" href="ahrs__float__dcm_8c_source.html#l00486">Matrix_update()</a>.</p>
 
 </div>
 </div>
@@ -921,7 +921,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ahrs__float__dcm_8c_source.html#l00064">64</a> of file <a class="el" href="ahrs__float__dcm_8c_source.html">ahrs_float_dcm.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ahrs__float__dcm_8c_source.html#l00373">Drift_correction()</a>, and <a class="el" href="ahrs__float__dcm_8c_source.html#l00480">Matrix_update()</a>.</p>
+<p>Referenced by <a class="el" href="ahrs__float__dcm_8c_source.html#l00379">Drift_correction()</a>, and <a class="el" href="ahrs__float__dcm_8c_source.html#l00486">Matrix_update()</a>.</p>
 
 </div>
 </div>
@@ -937,7 +937,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ahrs__float__dcm_8c_source.html#l00063">63</a> of file <a class="el" href="ahrs__float__dcm_8c_source.html">ahrs_float_dcm.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ahrs__float__dcm_8c_source.html#l00373">Drift_correction()</a>, and <a class="el" href="ahrs__float__dcm_8c_source.html#l00480">Matrix_update()</a>.</p>
+<p>Referenced by <a class="el" href="ahrs__float__dcm_8c_source.html#l00379">Drift_correction()</a>, and <a class="el" href="ahrs__float__dcm_8c_source.html#l00486">Matrix_update()</a>.</p>
 
 </div>
 </div>
@@ -953,7 +953,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ahrs__float__dcm_8c_source.html#l00062">62</a> of file <a class="el" href="ahrs__float__dcm_8c_source.html">ahrs_float_dcm.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ahrs__float__dcm_8c_source.html#l00480">Matrix_update()</a>.</p>
+<p>Referenced by <a class="el" href="ahrs__float__dcm_8c_source.html#l00486">Matrix_update()</a>.</p>
 
 </div>
 </div>
@@ -969,7 +969,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ahrs__float__dcm_8c_source.html#l00069">69</a> of file <a class="el" href="ahrs__float__dcm_8c_source.html">ahrs_float_dcm.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ahrs__float__dcm_8c_source.html#l00480">Matrix_update()</a>.</p>
+<p>Referenced by <a class="el" href="ahrs__float__dcm_8c_source.html#l00486">Matrix_update()</a>.</p>
 
 </div>
 </div>
@@ -985,7 +985,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ahrs__float__dcm_8c_source.html#l00068">68</a> of file <a class="el" href="ahrs__float__dcm_8c_source.html">ahrs_float_dcm.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ahrs__float__dcm_8c_source.html#l00480">Matrix_update()</a>.</p>
+<p>Referenced by <a class="el" href="ahrs__float__dcm_8c_source.html#l00486">Matrix_update()</a>.</p>
 
 </div>
 </div>
@@ -995,7 +995,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_46fef683200e96ccf1a2f608d90c4a2d.html">ahrs</a></li><li class="navelem"><a class="el" href="ahrs__float__dcm_8c.html">ahrs_float_dcm.c</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:03:30 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:03:47 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

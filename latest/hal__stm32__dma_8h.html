@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -135,7 +135,7 @@ $(document).ready(function(){initNavTree('hal__stm32__dma_8h.html','');});
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="hal__stm32__dma_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2arch_2chibios_2mcu__periph_2hal__stm32__dma_8hdep" alt=""/></div>
 <map name="sw_2airborne_2arch_2chibios_2mcu__periph_2hal__stm32__dma_8hdep" id="sw_2airborne_2arch_2chibios_2mcu__periph_2hal__stm32__dma_8hdep">
-<area shape="rect" id="node2" href="hal__stm32__dma_8c.html" title="STM32 DMA subsystem driver header. " alt="" coords="5,102,224,143"/><area shape="rect" id="node3" href="esc__dshot_8h.html" title="DSHOT driver based on ChibiOS. " alt="" coords="249,95,423,151"/><area shape="rect" id="node6" href="light__ws2812__arch_8c.html" title="sw/airborne/arch/chibios\l/modules/light/light_ws2812_arch.c" alt="" coords="447,102,691,143"/><area shape="rect" id="node4" href="actuators__dshot__arch_8c.html" title="sw/airborne/arch/chibios\l/modules/actuators/actuators\l_dshot_arch.c" alt="" coords="121,199,332,255"/><area shape="rect" id="node5" href="esc__dshot_8c.html" title="DSHOT driver based on ChibiOS. " alt="" coords="357,199,531,255"/></map>
+<area shape="rect" id="node2" href="hal__stm32__dma_8c.html" title="STM32 DMA subsystem driver header. " alt="" coords="5,102,224,143"/><area shape="rect" id="node3" href="esc__dshot_8h.html" title="DSHOT driver based on ChibiOS. " alt="" coords="249,95,423,151"/><area shape="rect" id="node6" href="light__ws2812__arch_8c.html" title="sw/airborne/arch/chibios\l/modules/light/light_ws2812_arch.c" alt="" coords="447,102,691,143"/><area shape="rect" id="node4" href="chibios_2modules_2actuators_2actuators__dshot__arch_8c.html" title="sw/airborne/arch/chibios\l/modules/actuators/actuators\l_dshot_arch.c" alt="" coords="121,199,332,255"/><area shape="rect" id="node5" href="esc__dshot_8c.html" title="DSHOT driver based on ChibiOS. " alt="" coords="357,199,531,255"/></map>
 </div>
 </div>
 <p><a href="hal__stm32__dma_8h_source.html">Go to the source code of this file.</a></p>
@@ -186,9 +186,14 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:aafa629edee3e18077e1f9fe62ccd170e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Driver state machine possible states.  <a href="hal__stm32__dma_8h.html#aafa629edee3e18077e1f9fe62ccd170e">More...</a><br /></td></tr>
 <tr class="separator:aafa629edee3e18077e1f9fe62ccd170e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d33ade9b0f16e0567045516507eb47b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hal__stm32__dma_8h.html#a7d33ade9b0f16e0567045516507eb47b">dmaerrormask_t</a> { <a class="el" href="hal__stm32__dma_8h.html#a7d33ade9b0f16e0567045516507eb47ba6a6501443497cd46337033b71ca1b1ec">DMA_ERR_TRANSFER_ERROR</a> = 1 &lt;&lt; 0, 
-<a class="el" href="hal__stm32__dma_8h.html#a7d33ade9b0f16e0567045516507eb47ba86839092843c581c0d517865cf2f6d19">DMA_ERR_DIRECTMODE_ERROR</a> = 1 &lt;&lt; 1, 
-<a class="el" href="hal__stm32__dma_8h.html#a7d33ade9b0f16e0567045516507eb47bab0d1afae9df022cd6b5a1ea5a0186d65">DMA_ERR_FIFO_ERROR</a> = 1 &lt;&lt; 2
+<tr class="memitem:a7d33ade9b0f16e0567045516507eb47b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hal__stm32__dma_8h.html#a7d33ade9b0f16e0567045516507eb47b">dmaerrormask_t</a> { <br />
+&#160;&#160;<a class="el" href="hal__stm32__dma_8h.html#a7d33ade9b0f16e0567045516507eb47ba6a6501443497cd46337033b71ca1b1ec">DMA_ERR_TRANSFER_ERROR</a> = 1U &lt;&lt; 0U, 
+<a class="el" href="hal__stm32__dma_8h.html#a7d33ade9b0f16e0567045516507eb47ba86839092843c581c0d517865cf2f6d19">DMA_ERR_DIRECTMODE_ERROR</a> = 1U &lt;&lt; 1U, 
+<a class="el" href="hal__stm32__dma_8h.html#a7d33ade9b0f16e0567045516507eb47bab0d1afae9df022cd6b5a1ea5a0186d65">DMA_ERR_FIFO_ERROR</a> = 1U &lt;&lt; 2U, 
+<a class="el" href="hal__stm32__dma_8h.html#a7d33ade9b0f16e0567045516507eb47ba3e09d80941009c22b15fc0e7174e7cb0">DMA_ERR_FIFO_FULL</a> = 1U &lt;&lt; 3U, 
+<br />
+&#160;&#160;<a class="el" href="hal__stm32__dma_8h.html#a7d33ade9b0f16e0567045516507eb47ba147793830adf14c3870a64099ce950b6">DMA_ERR_FIFO_EMPTY</a> = 1U &lt;&lt; 4U
+<br />
  }</td></tr>
 <tr class="memdesc:a7d33ade9b0f16e0567045516507eb47b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Possible DMA failure causes.  <a href="hal__stm32__dma_8h.html#a7d33ade9b0f16e0567045516507eb47b">More...</a><br /></td></tr>
 <tr class="separator:a7d33ade9b0f16e0567045516507eb47b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -253,6 +258,8 @@ Low level driver helper macros</h2></td></tr>
 <tr class="memitem:ac2bef3d2e495afefdd5fb7585e9ebf81"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hal__stm32__dma_8h.html#ac2bef3d2e495afefdd5fb7585e9ebf81">dmaStopTransfertI</a> (<a class="el" href="hal__stm32__dma_8h.html#structDMADriver">DMADriver</a> *dmap)</td></tr>
 <tr class="memdesc:ac2bef3d2e495afefdd5fb7585e9ebf81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops an ongoing transaction.  <a href="#ac2bef3d2e495afefdd5fb7585e9ebf81">More...</a><br /></td></tr>
 <tr class="separator:ac2bef3d2e495afefdd5fb7585e9ebf81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5013a1cd3b6c9bdcd2a1fac85ac4f06c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="hal__stm32__dma_8h.html#aafa629edee3e18077e1f9fe62ccd170e">dmastate_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hal__stm32__dma_8h.html#a5013a1cd3b6c9bdcd2a1fac85ac4f06c">dmaGetState</a> (<a class="el" href="hal__stm32__dma_8h.html#structDMADriver">DMADriver</a> *dmap)</td></tr>
+<tr class="separator:a5013a1cd3b6c9bdcd2a1fac85ac4f06c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a991ade7a6254eabbe74489fa7c8f366a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hal__stm32__dma_8h.html#a991ade7a6254eabbe74489fa7c8f366a">dma_lld_start</a> (<a class="el" href="hal__stm32__dma_8h.html#structDMADriver">DMADriver</a> *dmap)</td></tr>
 <tr class="memdesc:a991ade7a6254eabbe74489fa7c8f366a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures and activates the DMA peripheral.  <a href="#a991ade7a6254eabbe74489fa7c8f366a">More...</a><br /></td></tr>
 <tr class="separator:a991ade7a6254eabbe74489fa7c8f366a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -284,7 +291,7 @@ Low level driver helper macros</h2></td></tr>
 <div class="textblock"><p>DMA stream configuration structure. </p>
 <p>This implementation-dependent structure describes a DMA operation. </p><dl class="section note"><dt>Note</dt><dd>The use of this configuration structure requires knowledge of STM32 DMA registers interface, please refer to the STM32 reference manual for details. </dd></dl>
 
-<p>Definition at line <a class="el" href="hal__stm32__dma_8h_source.html#l00239">239</a> of file <a class="el" href="hal__stm32__dma_8h_source.html">hal_stm32_dma.h</a>.</p>
+<p>Definition at line <a class="el" href="hal__stm32__dma_8h_source.html#l00241">241</a> of file <a class="el" href="hal__stm32__dma_8h_source.html">hal_stm32_dma.h</a>.</p>
 </div><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Collaboration diagram for DMAConfig:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -380,7 +387,7 @@ stream associated with transaction <dl class="section note"><dt>Note</dt><dd>use
 </div><div class="memdoc">
 <div class="textblock"><p>Structure representing a DMA driver. </p>
 
-<p>Definition at line <a class="el" href="hal__stm32__dma_8h_source.html#l00354">354</a> of file <a class="el" href="hal__stm32__dma_8h_source.html">hal_stm32_dma.h</a>.</p>
+<p>Definition at line <a class="el" href="hal__stm32__dma_8h_source.html#l00365">365</a> of file <a class="el" href="hal__stm32__dma_8h_source.html">hal_stm32_dma.h</a>.</p>
 </div><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Collaboration diagram for DMADriver:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -430,7 +437,7 @@ size</td>
 <td class="fielddoc">
 hold size of current transaction </td></tr>
 <tr><td class="fieldtype">
-<a class="anchor" id="aaa59bfd877cfcbbe5127ad3b7c4b7b77"></a><a class="el" href="hal__stm32__dma_8h.html#aafa629edee3e18077e1f9fe62ccd170e">dmastate_t</a></td>
+<a class="anchor" id="accc7379a4c08699bbcfe7320ca241064"></a>volatile <a class="el" href="hal__stm32__dma_8h.html#aafa629edee3e18077e1f9fe62ccd170e">dmastate_t</a></td>
 <td class="fieldname">
 state</td>
 <td class="fielddoc">
@@ -462,9 +469,9 @@ Driver state. </td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="hal__stm32__dma_8h_source.html#l00131">131</a> of file <a class="el" href="hal__stm32__dma_8h_source.html">hal_stm32_dma.h</a>.</p>
+<p>Definition at line <a class="el" href="hal__stm32__dma_8h_source.html#l00136">136</a> of file <a class="el" href="hal__stm32__dma_8h_source.html">hal_stm32_dma.h</a>.</p>
 
-<p>Referenced by <a class="el" href="hal__stm32__dma_8c_source.html#l00260">dmaStopTransfertI()</a>.</p>
+<p>Referenced by <a class="el" href="hal__stm32__dma_8c_source.html#l00285">dmaStopTransfertI()</a>.</p>
 
 </div>
 </div>
@@ -490,9 +497,9 @@ Driver state. </td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="hal__stm32__dma_8h_source.html#l00141">141</a> of file <a class="el" href="hal__stm32__dma_8h_source.html">hal_stm32_dma.h</a>.</p>
+<p>Definition at line <a class="el" href="hal__stm32__dma_8h_source.html#l00146">146</a> of file <a class="el" href="hal__stm32__dma_8h_source.html">hal_stm32_dma.h</a>.</p>
 
-<p>Referenced by <a class="el" href="hal__stm32__dma_8c_source.html#l00232">dmaStopTransfert()</a>.</p>
+<p>Referenced by <a class="el" href="hal__stm32__dma_8c_source.html#l00257">dmaStopTransfert()</a>.</p>
 
 </div>
 </div>
@@ -523,9 +530,9 @@ Driver state. </td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="hal__stm32__dma_8h_source.html#l00164">164</a> of file <a class="el" href="hal__stm32__dma_8h_source.html">hal_stm32_dma.h</a>.</p>
+<p>Definition at line <a class="el" href="hal__stm32__dma_8h_source.html#l00169">169</a> of file <a class="el" href="hal__stm32__dma_8h_source.html">hal_stm32_dma.h</a>.</p>
 
-<p>Referenced by <a class="el" href="hal__stm32__dma_8h_source.html#l00577">_dma_isr_error_code()</a>.</p>
+<p>Referenced by <a class="el" href="hal__stm32__dma_8h_source.html#l00611">_dma_isr_error_code()</a>.</p>
 
 </div>
 </div>
@@ -556,9 +563,9 @@ Driver state. </td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="hal__stm32__dma_8h_source.html#l00151">151</a> of file <a class="el" href="hal__stm32__dma_8h_source.html">hal_stm32_dma.h</a>.</p>
+<p>Definition at line <a class="el" href="hal__stm32__dma_8h_source.html#l00156">156</a> of file <a class="el" href="hal__stm32__dma_8h_source.html">hal_stm32_dma.h</a>.</p>
 
-<p>Referenced by <a class="el" href="hal__stm32__dma_8h_source.html#l00523">_dma_isr_full_code()</a>.</p>
+<p>Referenced by <a class="el" href="hal__stm32__dma_8h_source.html#l00557">_dma_isr_full_code()</a>.</p>
 
 </div>
 </div>
@@ -572,9 +579,9 @@ Driver state. </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="hal__stm32__dma_8h_source.html#l00052">52</a> of file <a class="el" href="hal__stm32__dma_8h_source.html">hal_stm32_dma.h</a>.</p>
+<p>Definition at line <a class="el" href="hal__stm32__dma_8h_source.html#l00055">55</a> of file <a class="el" href="hal__stm32__dma_8h_source.html">hal_stm32_dma.h</a>.</p>
 
-<p>Referenced by <a class="el" href="hal__stm32__dma_8c_source.html#l00383">dma_lld_start()</a>.</p>
+<p>Referenced by <a class="el" href="hal__stm32__dma_8c_source.html#l00409">dma_lld_start()</a>.</p>
 
 </div>
 </div>
@@ -591,7 +598,7 @@ Driver state. </td></tr>
 <p>Enables the <code><a class="el" href="hal__stm32__dma_8h.html#aa559dd826c4b296b5f01f6e2dd2fb730" title="Gains exclusive access to the DMA peripheral. ">dmaAcquireBus()</a></code> and <code><a class="el" href="hal__stm32__dma_8h.html#aa6857c2342fc30ddd643f028d25b908c" title="Releases exclusive access to the DMA peripheral. ">dmaReleaseBus()</a></code> APIs. </p>
 <dl class="section note"><dt>Note</dt><dd>Disabling this option saves both code and data space. </dd></dl>
 
-<p>Definition at line <a class="el" href="hal__stm32__dma_8h_source.html#l00048">48</a> of file <a class="el" href="hal__stm32__dma_8h_source.html">hal_stm32_dma.h</a>.</p>
+<p>Definition at line <a class="el" href="hal__stm32__dma_8h_source.html#l00051">51</a> of file <a class="el" href="hal__stm32__dma_8h_source.html">hal_stm32_dma.h</a>.</p>
 
 </div>
 </div>
@@ -608,7 +615,7 @@ Driver state. </td></tr>
 <p>Enables synchronous APIs. </p>
 <dl class="section note"><dt>Note</dt><dd>Disabling this option saves both code and data space. </dd></dl>
 
-<p>Definition at line <a class="el" href="hal__stm32__dma_8h_source.html#l00040">40</a> of file <a class="el" href="hal__stm32__dma_8h_source.html">hal_stm32_dma.h</a>.</p>
+<p>Definition at line <a class="el" href="hal__stm32__dma_8h_source.html#l00043">43</a> of file <a class="el" href="hal__stm32__dma_8h_source.html">hal_stm32_dma.h</a>.</p>
 
 </div>
 </div>
@@ -633,7 +640,7 @@ Driver state. </td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="hal__stm32__dma_8h_source.html#l00101">101</a> of file <a class="el" href="hal__stm32__dma_8h_source.html">hal_stm32_dma.h</a>.</p>
+<p>Definition at line <a class="el" href="hal__stm32__dma_8h_source.html#l00106">106</a> of file <a class="el" href="hal__stm32__dma_8h_source.html">hal_stm32_dma.h</a>.</p>
 
 </div>
 </div>
@@ -649,7 +656,7 @@ Driver state. </td></tr>
 
 <p>Type of a structure representing an DMA driver. </p>
 
-<p>Definition at line <a class="el" href="hal__stm32__dma_8h_source.html#l00091">91</a> of file <a class="el" href="hal__stm32__dma_8h_source.html">hal_stm32_dma.h</a>.</p>
+<p>Definition at line <a class="el" href="hal__stm32__dma_8h_source.html#l00096">96</a> of file <a class="el" href="hal__stm32__dma_8h_source.html">hal_stm32_dma.h</a>.</p>
 
 </div>
 </div>
@@ -672,7 +679,7 @@ Driver state. </td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="hal__stm32__dma_8h_source.html#l00111">111</a> of file <a class="el" href="hal__stm32__dma_8h_source.html">hal_stm32_dma.h</a>.</p>
+<p>Definition at line <a class="el" href="hal__stm32__dma_8h_source.html#l00116">116</a> of file <a class="el" href="hal__stm32__dma_8h_source.html">hal_stm32_dma.h</a>.</p>
 
 </div>
 </div>
@@ -700,7 +707,7 @@ Driver state. </td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="hal__stm32__dma_8h_source.html#l00082">82</a> of file <a class="el" href="hal__stm32__dma_8h_source.html">hal_stm32_dma.h</a>.</p>
+<p>Definition at line <a class="el" href="hal__stm32__dma_8h_source.html#l00087">87</a> of file <a class="el" href="hal__stm32__dma_8h_source.html">hal_stm32_dma.h</a>.</p>
 
 </div>
 </div>
@@ -724,11 +731,17 @@ Driver state. </td></tr>
 <p>DMA Direct Mode failure. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a7d33ade9b0f16e0567045516507eb47bab0d1afae9df022cd6b5a1ea5a0186d65"></a>DMA_ERR_FIFO_ERROR&#160;</td><td class="fielddoc">
-<p>DMA FIFO overrun or underrun. </p>
+<p>DMA FIFO error. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a7d33ade9b0f16e0567045516507eb47ba3e09d80941009c22b15fc0e7174e7cb0"></a>DMA_ERR_FIFO_FULL&#160;</td><td class="fielddoc">
+<p>DMA FIFO overrun. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a7d33ade9b0f16e0567045516507eb47ba147793830adf14c3870a64099ce950b6"></a>DMA_ERR_FIFO_EMPTY&#160;</td><td class="fielddoc">
+<p>DMA FIFO underrun. </p>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="hal__stm32__dma_8h_source.html#l00073">73</a> of file <a class="el" href="hal__stm32__dma_8h_source.html">hal_stm32_dma.h</a>.</p>
+<p>Definition at line <a class="el" href="hal__stm32__dma_8h_source.html#l00076">76</a> of file <a class="el" href="hal__stm32__dma_8h_source.html">hal_stm32_dma.h</a>.</p>
 
 </div>
 </div>
@@ -764,7 +777,7 @@ Driver state. </td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="hal__stm32__dma_8h_source.html#l00059">59</a> of file <a class="el" href="hal__stm32__dma_8h_source.html">hal_stm32_dma.h</a>.</p>
+<p>Definition at line <a class="el" href="hal__stm32__dma_8h_source.html#l00062">62</a> of file <a class="el" href="hal__stm32__dma_8h_source.html">hal_stm32_dma.h</a>.</p>
 
 </div>
 </div>
@@ -816,11 +829,11 @@ Driver state. </td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="hal__stm32__dma_8h_source.html#l00577">577</a> of file <a class="el" href="hal__stm32__dma_8h_source.html">hal_stm32_dma.h</a>.</p>
+<p>Definition at line <a class="el" href="hal__stm32__dma_8h_source.html#l00611">611</a> of file <a class="el" href="hal__stm32__dma_8h_source.html">hal_stm32_dma.h</a>.</p>
 
-<p>References <a class="el" href="hal__stm32__dma_8h_source.html#l00164">_dma_timeout_isr</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00363">DMADriver::config</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00065">DMA_ERROR</a>, <a class="el" href="hal__stm32__dma_8c_source.html#l00676">dma_lld_stop_transfert()</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00062">DMA_READY</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00285">DMAConfig::error_cb</a>, and <a class="el" href="hal__stm32__dma_8h_source.html#l00408">DMADriver::state</a>.</p>
+<p>References <a class="el" href="hal__stm32__dma_8h_source.html#l00169">_dma_timeout_isr</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00374">DMADriver::config</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00078">DMA_ERR_DIRECTMODE_ERROR</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00081">DMA_ERR_FIFO_EMPTY</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00079">DMA_ERR_FIFO_ERROR</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00080">DMA_ERR_FIFO_FULL</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00077">DMA_ERR_TRANSFER_ERROR</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00068">DMA_ERROR</a>, <a class="el" href="hal__stm32__dma_8c_source.html#l00723">dma_lld_stop_transfert()</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00065">DMA_READY</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00287">DMAConfig::error_cb</a>, and <a class="el" href="hal__stm32__dma_8h_source.html#l00441">DMADriver::state</a>.</p>
 
-<p>Referenced by <a class="el" href="hal__stm32__dma_8c_source.html#l00704">dma_lld_serve_interrupt()</a>.</p>
+<p>Referenced by <a class="el" href="hal__stm32__dma_8c_source.html#l00755">dma_lld_serve_interrupt()</a>.</p>
 
 <p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -882,11 +895,11 @@ Driver state. </td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="hal__stm32__dma_8h_source.html#l00523">523</a> of file <a class="el" href="hal__stm32__dma_8h_source.html">hal_stm32_dma.h</a>.</p>
+<p>Definition at line <a class="el" href="hal__stm32__dma_8h_source.html#l00557">557</a> of file <a class="el" href="hal__stm32__dma_8h_source.html">hal_stm32_dma.h</a>.</p>
 
-<p>References <a class="el" href="hal__stm32__dma_8h_source.html#l00151">_dma_wakeup_isr</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00274">DMAConfig::circular</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00363">DMADriver::config</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00064">DMA_COMPLETE</a>, <a class="el" href="hal__stm32__dma_8c_source.html#l00676">dma_lld_stop_transfert()</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00062">DMA_READY</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00280">DMAConfig::end_cb</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00393">DMADriver::mem0p</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00319">DMAConfig::msize</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00403">DMADriver::size</a>, and <a class="el" href="hal__stm32__dma_8h_source.html#l00408">DMADriver::state</a>.</p>
+<p>References <a class="el" href="hal__stm32__dma_8h_source.html#l00156">_dma_wakeup_isr</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00276">DMAConfig::circular</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00374">DMADriver::config</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00067">DMA_COMPLETE</a>, <a class="el" href="hal__stm32__dma_8c_source.html#l00723">dma_lld_stop_transfert()</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00065">DMA_READY</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00282">DMAConfig::end_cb</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00404">DMADriver::mem0p</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00321">DMAConfig::msize</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00428">DMADriver::size</a>, and <a class="el" href="hal__stm32__dma_8h_source.html#l00441">DMADriver::state</a>.</p>
 
-<p>Referenced by <a class="el" href="hal__stm32__dma_8c_source.html#l00704">dma_lld_serve_interrupt()</a>.</p>
+<p>Referenced by <a class="el" href="hal__stm32__dma_8c_source.html#l00755">dma_lld_serve_interrupt()</a>.</p>
 
 <p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -946,11 +959,11 @@ Driver state. </td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="hal__stm32__dma_8h_source.html#l00506">506</a> of file <a class="el" href="hal__stm32__dma_8h_source.html">hal_stm32_dma.h</a>.</p>
+<p>Definition at line <a class="el" href="hal__stm32__dma_8h_source.html#l00540">540</a> of file <a class="el" href="hal__stm32__dma_8h_source.html">hal_stm32_dma.h</a>.</p>
 
-<p>References <a class="el" href="hal__stm32__dma_8h_source.html#l00363">DMADriver::config</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00280">DMAConfig::end_cb</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00393">DMADriver::mem0p</a>, and <a class="el" href="hal__stm32__dma_8h_source.html#l00403">DMADriver::size</a>.</p>
+<p>References <a class="el" href="hal__stm32__dma_8h_source.html#l00374">DMADriver::config</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00282">DMAConfig::end_cb</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00404">DMADriver::mem0p</a>, and <a class="el" href="hal__stm32__dma_8h_source.html#l00428">DMADriver::size</a>.</p>
 
-<p>Referenced by <a class="el" href="hal__stm32__dma_8c_source.html#l00704">dma_lld_serve_interrupt()</a>.</p>
+<p>Referenced by <a class="el" href="hal__stm32__dma_8c_source.html#l00755">dma_lld_serve_interrupt()</a>.</p>
 
 <p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -987,11 +1000,11 @@ Driver state. </td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="hal__stm32__dma_8c_source.html#l00383">383</a> of file <a class="el" href="hal__stm32__dma_8c_source.html">hal_stm32_dma.c</a>.</p>
+<p>Definition at line <a class="el" href="hal__stm32__dma_8c_source.html#l00409">409</a> of file <a class="el" href="hal__stm32__dma_8c_source.html">hal_stm32_dma.c</a>.</p>
 
-<p>References <a class="el" href="hal__stm32__dma_8h_source.html#l00274">DMAConfig::circular</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00363">DMADriver::config</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00414">DMADriver::controller</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00298">DMAConfig::direction</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00085">DMA_DIR_M2M</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00084">DMA_DIR_M2P</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00083">DMA_DIR_P2M</a>, <a class="el" href="hal__stm32__dma_8c_source.html#l00704">dma_lld_serve_interrupt()</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00304">DMAConfig::dma_priority</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00398">DMADriver::dmamode</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00358">DMADriver::dmastream</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00280">DMAConfig::end_cb</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00285">DMAConfig::error_cb</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00268">DMAConfig::inc_memory_addr</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00262">DMAConfig::inc_peripheral_addr</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00309">DMAConfig::irq_priority</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00319">DMAConfig::msize</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00314">DMAConfig::psize</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00052">STM32_DMA_SUPPORTS_CSELR</a>, and <a class="el" href="hal__stm32__dma_8h_source.html#l00244">DMAConfig::stream</a>.</p>
+<p>References <a class="el" href="hal__stm32__dma_8h_source.html#l00276">DMAConfig::circular</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00374">DMADriver::config</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00447">DMADriver::controller</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00300">DMAConfig::direction</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00090">DMA_DIR_M2M</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00089">DMA_DIR_M2P</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00088">DMA_DIR_P2M</a>, <a class="el" href="hal__stm32__dma_8c_source.html#l00755">dma_lld_serve_interrupt()</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00306">DMAConfig::dma_priority</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00409">DMADriver::dmamode</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00369">DMADriver::dmastream</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00282">DMAConfig::end_cb</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00287">DMAConfig::error_cb</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00270">DMAConfig::inc_memory_addr</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00264">DMAConfig::inc_peripheral_addr</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00311">DMAConfig::irq_priority</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00321">DMAConfig::msize</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00316">DMAConfig::psize</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00055">STM32_DMA_SUPPORTS_CSELR</a>, and <a class="el" href="hal__stm32__dma_8h_source.html#l00246">DMAConfig::stream</a>.</p>
 
-<p>Referenced by <a class="el" href="hal__stm32__dma_8c_source.html#l00085">dmaStart()</a>.</p>
+<p>Referenced by <a class="el" href="hal__stm32__dma_8c_source.html#l00092">dmaStart()</a>.</p>
 
 <p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -1000,7 +1013,7 @@ Driver state. </td></tr>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="hal__stm32__dma_8h_a991ade7a6254eabbe74489fa7c8f366a_cgraph.png" border="0" usemap="#hal__stm32__dma_8h_a991ade7a6254eabbe74489fa7c8f366a_cgraph" alt=""/></div>
 <map name="hal__stm32__dma_8h_a991ade7a6254eabbe74489fa7c8f366a_cgraph" id="hal__stm32__dma_8h_a991ade7a6254eabbe74489fa7c8f366a_cgraph">
-<area shape="rect" id="node2" href="hal__stm32__dma_8c.html#af19ab796ea3d6054e7401cfaf0bfeefe" title="DMA ISR service routine. " alt="" coords="163,56,339,83"/><area shape="rect" id="node3" href="hal__stm32__dma_8h.html#a754932a38627dd6a86ecc88253dc6687" title="Common ISR code, error event. " alt="" coords="387,5,543,32"/><area shape="rect" id="node5" href="hal__stm32__dma_8h.html#aa5d22761474681d44a4d69141336a04c" title="Common ISR code, full buffer event. " alt="" coords="393,56,536,83"/><area shape="rect" id="node6" href="hal__stm32__dma_8h.html#ac9cf607ddf63798249b67ed248411b12" title="Common ISR code, half buffer event. " alt="" coords="391,107,539,133"/><area shape="rect" id="node4" href="hal__stm32__dma_8h.html#ab2d180e5adb10579b0b032987f338d33" title="Stops an ongoing transaction. " alt="" coords="591,31,760,57"/></map>
+<area shape="rect" id="node2" href="hal__stm32__dma_8c.html#af19ab796ea3d6054e7401cfaf0bfeefe" title="DMA ISR service routine. " alt="" coords="163,81,339,108"/><area shape="rect" id="node3" href="hal__stm32__dma_8h.html#a754932a38627dd6a86ecc88253dc6687" title="Common ISR code, error event. " alt="" coords="387,5,543,32"/><area shape="rect" id="node5" href="hal__stm32__dma_8h.html#aa5d22761474681d44a4d69141336a04c" title="Common ISR code, full buffer event. " alt="" coords="393,56,536,83"/><area shape="rect" id="node6" href="hal__stm32__dma_8h.html#ac9cf607ddf63798249b67ed248411b12" title="Common ISR code, half buffer event. " alt="" coords="391,107,539,133"/><area shape="rect" id="node7" href="hal__stm32__dma_8c.html#a5c6eaa4da527eb2499e3831069eb1ab3" title="getFCR_FS" alt="" coords="419,157,510,184"/><area shape="rect" id="node4" href="hal__stm32__dma_8h.html#ab2d180e5adb10579b0b032987f338d33" title="Stops an ongoing transaction. " alt="" coords="591,31,760,57"/></map>
 </div>
 </p>
 
@@ -1061,11 +1074,11 @@ Driver state. </td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="hal__stm32__dma_8c_source.html#l00656">656</a> of file <a class="el" href="hal__stm32__dma_8c_source.html">hal_stm32_dma.c</a>.</p>
+<p>Definition at line <a class="el" href="hal__stm32__dma_8c_source.html#l00691">691</a> of file <a class="el" href="hal__stm32__dma_8c_source.html">hal_stm32_dma.c</a>.</p>
 
-<p>References <a class="el" href="hal__stm32__dma_8h_source.html#l00398">DMADriver::dmamode</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00358">DMADriver::dmastream</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00393">DMADriver::mem0p</a>, and <a class="el" href="hal__stm32__dma_8h_source.html#l00403">DMADriver::size</a>.</p>
+<p>References <a class="el" href="hal__stm32__dma_8h_source.html#l00374">DMADriver::config</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00300">DMAConfig::direction</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00088">DMA_DIR_P2M</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00409">DMADriver::dmamode</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00369">DMADriver::dmastream</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00404">DMADriver::mem0p</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00321">DMAConfig::msize</a>, and <a class="el" href="hal__stm32__dma_8h_source.html#l00428">DMADriver::size</a>.</p>
 
-<p>Referenced by <a class="el" href="hal__stm32__dma_8c_source.html#l00167">dmaStartTransfertI()</a>.</p>
+<p>Referenced by <a class="el" href="hal__stm32__dma_8c_source.html#l00174">dmaStartTransfertI()</a>.</p>
 
 <p><div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -1102,11 +1115,11 @@ Driver state. </td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="hal__stm32__dma_8c_source.html#l00688">688</a> of file <a class="el" href="hal__stm32__dma_8c_source.html">hal_stm32_dma.c</a>.</p>
+<p>Definition at line <a class="el" href="hal__stm32__dma_8c_source.html#l00735">735</a> of file <a class="el" href="hal__stm32__dma_8c_source.html">hal_stm32_dma.c</a>.</p>
 
-<p>References <a class="el" href="hal__stm32__dma_8h_source.html#l00358">DMADriver::dmastream</a>.</p>
+<p>References <a class="el" href="hal__stm32__dma_8h_source.html#l00369">DMADriver::dmastream</a>.</p>
 
-<p>Referenced by <a class="el" href="hal__stm32__dma_8c_source.html#l00107">dmaStop()</a>.</p>
+<p>Referenced by <a class="el" href="hal__stm32__dma_8c_source.html#l00114">dmaStop()</a>.</p>
 
 <p><div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -1143,11 +1156,11 @@ Driver state. </td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="hal__stm32__dma_8c_source.html#l00676">676</a> of file <a class="el" href="hal__stm32__dma_8c_source.html">hal_stm32_dma.c</a>.</p>
+<p>Definition at line <a class="el" href="hal__stm32__dma_8c_source.html#l00723">723</a> of file <a class="el" href="hal__stm32__dma_8c_source.html">hal_stm32_dma.c</a>.</p>
 
-<p>References <a class="el" href="hal__stm32__dma_8h_source.html#l00358">DMADriver::dmastream</a>.</p>
+<p>References <a class="el" href="hal__stm32__dma_8h_source.html#l00369">DMADriver::dmastream</a>.</p>
 
-<p>Referenced by <a class="el" href="hal__stm32__dma_8h_source.html#l00577">_dma_isr_error_code()</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00523">_dma_isr_full_code()</a>, <a class="el" href="hal__stm32__dma_8c_source.html#l00232">dmaStopTransfert()</a>, and <a class="el" href="hal__stm32__dma_8c_source.html#l00260">dmaStopTransfertI()</a>.</p>
+<p>Referenced by <a class="el" href="hal__stm32__dma_8h_source.html#l00611">_dma_isr_error_code()</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00557">_dma_isr_full_code()</a>, <a class="el" href="hal__stm32__dma_8c_source.html#l00257">dmaStopTransfert()</a>, and <a class="el" href="hal__stm32__dma_8c_source.html#l00285">dmaStopTransfertI()</a>.</p>
 
 <p><div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -1185,7 +1198,35 @@ Driver state. </td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="hal__stm32__dma_8c_source.html#l00332">332</a> of file <a class="el" href="hal__stm32__dma_8c_source.html">hal_stm32_dma.c</a>.</p>
+<p>Definition at line <a class="el" href="hal__stm32__dma_8c_source.html#l00358">358</a> of file <a class="el" href="hal__stm32__dma_8c_source.html">hal_stm32_dma.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5013a1cd3b6c9bdcd2a1fac85ac4f06c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="hal__stm32__dma_8h.html#aafa629edee3e18077e1f9fe62ccd170e">dmastate_t</a> dmaGetState </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="hal__stm32__dma_8h.html#structDMADriver">DMADriver</a> *&#160;</td>
+          <td class="paramname"><em>dmap</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="hal__stm32__dma_8h_source.html#l00475">475</a> of file <a class="el" href="hal__stm32__dma_8h_source.html">hal_stm32_dma.h</a>.</p>
+
+<p>References <a class="el" href="hal__stm32__dma_8h_source.html#l00441">DMADriver::state</a>.</p>
 
 </div>
 </div>
@@ -1203,9 +1244,9 @@ Driver state. </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="hal__stm32__dma_8c_source.html#l00053">53</a> of file <a class="el" href="hal__stm32__dma_8c_source.html">hal_stm32_dma.c</a>.</p>
+<p>Definition at line <a class="el" href="hal__stm32__dma_8c_source.html#l00056">56</a> of file <a class="el" href="hal__stm32__dma_8c_source.html">hal_stm32_dma.c</a>.</p>
 
-<p>References <a class="el" href="hal__stm32__dma_8h_source.html#l00363">DMADriver::config</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00061">DMA_STOP</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00393">DMADriver::mem0p</a>, and <a class="el" href="hal__stm32__dma_8h_source.html#l00408">DMADriver::state</a>.</p>
+<p>References <a class="el" href="hal__stm32__dma_8h_source.html#l00374">DMADriver::config</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00064">DMA_STOP</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00404">DMADriver::mem0p</a>, and <a class="el" href="hal__stm32__dma_8h_source.html#l00441">DMADriver::state</a>.</p>
 
 <p>Referenced by <a class="el" href="esc__dshot_8c_source.html#l00122">dshotStart()</a>, and <a class="el" href="light__ws2812__arch_8c_source.html#l00088">light_ws2812_arch_init()</a>.</p>
 
@@ -1245,7 +1286,7 @@ Driver state. </td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="hal__stm32__dma_8c_source.html#l00349">349</a> of file <a class="el" href="hal__stm32__dma_8c_source.html">hal_stm32_dma.c</a>.</p>
+<p>Definition at line <a class="el" href="hal__stm32__dma_8c_source.html#l00375">375</a> of file <a class="el" href="hal__stm32__dma_8c_source.html">hal_stm32_dma.c</a>.</p>
 
 </div>
 </div>
@@ -1290,9 +1331,9 @@ Driver state. </td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="hal__stm32__dma_8c_source.html#l00085">85</a> of file <a class="el" href="hal__stm32__dma_8c_source.html">hal_stm32_dma.c</a>.</p>
+<p>Definition at line <a class="el" href="hal__stm32__dma_8c_source.html#l00092">92</a> of file <a class="el" href="hal__stm32__dma_8c_source.html">hal_stm32_dma.c</a>.</p>
 
-<p>References <a class="el" href="hal__stm32__dma_8h_source.html#l00363">DMADriver::config</a>, <a class="el" href="hal__stm32__dma_8c_source.html#l00383">dma_lld_start()</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00062">DMA_READY</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00061">DMA_STOP</a>, and <a class="el" href="hal__stm32__dma_8h_source.html#l00408">DMADriver::state</a>.</p>
+<p>References <a class="el" href="hal__stm32__dma_8h_source.html#l00374">DMADriver::config</a>, <a class="el" href="hal__stm32__dma_8c_source.html#l00409">dma_lld_start()</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00065">DMA_READY</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00064">DMA_STOP</a>, and <a class="el" href="hal__stm32__dma_8h_source.html#l00441">DMADriver::state</a>.</p>
 
 <p>Referenced by <a class="el" href="esc__dshot_8c_source.html#l00122">dshotStart()</a>, and <a class="el" href="light__ws2812__arch_8c_source.html#l00088">light_ws2812_arch_init()</a>.</p>
 
@@ -1303,7 +1344,7 @@ Driver state. </td></tr>
 <div id="dynsection-15-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="hal__stm32__dma_8h_ad255236c42982a3368342bbfeee0c783_cgraph.png" border="0" usemap="#hal__stm32__dma_8h_ad255236c42982a3368342bbfeee0c783_cgraph" alt=""/></div>
 <map name="hal__stm32__dma_8h_ad255236c42982a3368342bbfeee0c783_cgraph" id="hal__stm32__dma_8h_ad255236c42982a3368342bbfeee0c783_cgraph">
-<area shape="rect" id="node2" href="hal__stm32__dma_8c.html#a991ade7a6254eabbe74489fa7c8f366a" title="Configures and activates the DMA peripheral. " alt="" coords="136,56,245,83"/><area shape="rect" id="node3" href="hal__stm32__dma_8c.html#af19ab796ea3d6054e7401cfaf0bfeefe" title="DMA ISR service routine. " alt="" coords="293,56,469,83"/><area shape="rect" id="node4" href="hal__stm32__dma_8h.html#a754932a38627dd6a86ecc88253dc6687" title="Common ISR code, error event. " alt="" coords="517,5,673,32"/><area shape="rect" id="node6" href="hal__stm32__dma_8h.html#aa5d22761474681d44a4d69141336a04c" title="Common ISR code, full buffer event. " alt="" coords="524,56,667,83"/><area shape="rect" id="node7" href="hal__stm32__dma_8h.html#ac9cf607ddf63798249b67ed248411b12" title="Common ISR code, half buffer event. " alt="" coords="521,107,669,133"/><area shape="rect" id="node5" href="hal__stm32__dma_8h.html#ab2d180e5adb10579b0b032987f338d33" title="Stops an ongoing transaction. " alt="" coords="721,31,891,57"/></map>
+<area shape="rect" id="node2" href="hal__stm32__dma_8c.html#a991ade7a6254eabbe74489fa7c8f366a" title="Configures and activates the DMA peripheral. " alt="" coords="136,81,245,108"/><area shape="rect" id="node3" href="hal__stm32__dma_8c.html#af19ab796ea3d6054e7401cfaf0bfeefe" title="DMA ISR service routine. " alt="" coords="293,81,469,108"/><area shape="rect" id="node4" href="hal__stm32__dma_8h.html#a754932a38627dd6a86ecc88253dc6687" title="Common ISR code, error event. " alt="" coords="517,5,673,32"/><area shape="rect" id="node6" href="hal__stm32__dma_8h.html#aa5d22761474681d44a4d69141336a04c" title="Common ISR code, full buffer event. " alt="" coords="524,56,667,83"/><area shape="rect" id="node7" href="hal__stm32__dma_8h.html#ac9cf607ddf63798249b67ed248411b12" title="Common ISR code, half buffer event. " alt="" coords="521,107,669,133"/><area shape="rect" id="node8" href="hal__stm32__dma_8c.html#a5c6eaa4da527eb2499e3831069eb1ab3" title="getFCR_FS" alt="" coords="550,157,641,184"/><area shape="rect" id="node5" href="hal__stm32__dma_8h.html#ab2d180e5adb10579b0b032987f338d33" title="Stops an ongoing transaction. " alt="" coords="721,31,891,57"/></map>
 </div>
 </p>
 
@@ -1369,11 +1410,11 @@ Driver state. </td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="hal__stm32__dma_8c_source.html#l00142">142</a> of file <a class="el" href="hal__stm32__dma_8c_source.html">hal_stm32_dma.c</a>.</p>
+<p>Definition at line <a class="el" href="hal__stm32__dma_8c_source.html#l00149">149</a> of file <a class="el" href="hal__stm32__dma_8c_source.html">hal_stm32_dma.c</a>.</p>
 
-<p>References <a class="el" href="hal__stm32__dma_8c_source.html#l00167">dmaStartTransfertI()</a>.</p>
+<p>References <a class="el" href="hal__stm32__dma_8c_source.html#l00174">dmaStartTransfertI()</a>.</p>
 
-<p>Referenced by <a class="el" href="esc__dshot_8c_source.html#l00303">dshotSendFrame()</a>, and <a class="el" href="light__ws2812__arch_8c_source.html#l00088">light_ws2812_arch_init()</a>.</p>
+<p>Referenced by <a class="el" href="esc__dshot_8c_source.html#l00302">dshotSendFrame()</a>, and <a class="el" href="light__ws2812__arch_8c_source.html#l00088">light_ws2812_arch_init()</a>.</p>
 
 <p><div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -1448,11 +1489,11 @@ Driver state. </td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="hal__stm32__dma_8c_source.html#l00167">167</a> of file <a class="el" href="hal__stm32__dma_8c_source.html">hal_stm32_dma.c</a>.</p>
+<p>Definition at line <a class="el" href="hal__stm32__dma_8c_source.html#l00174">174</a> of file <a class="el" href="hal__stm32__dma_8c_source.html">hal_stm32_dma.c</a>.</p>
 
-<p>References <a class="el" href="hal__stm32__dma_8h_source.html#l00363">DMADriver::config</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00063">DMA_ACTIVE</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00064">DMA_COMPLETE</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00065">DMA_ERROR</a>, <a class="el" href="hal__stm32__dma_8c_source.html#l00656">dma_lld_start_transfert()</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00062">DMA_READY</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00319">DMAConfig::msize</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00314">DMAConfig::psize</a>, and <a class="el" href="hal__stm32__dma_8h_source.html#l00408">DMADriver::state</a>.</p>
+<p>References <a class="el" href="hal__stm32__dma_8h_source.html#l00374">DMADriver::config</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00066">DMA_ACTIVE</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00067">DMA_COMPLETE</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00068">DMA_ERROR</a>, <a class="el" href="hal__stm32__dma_8c_source.html#l00691">dma_lld_start_transfert()</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00065">DMA_READY</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00321">DMAConfig::msize</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00316">DMAConfig::psize</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00428">DMADriver::size</a>, and <a class="el" href="hal__stm32__dma_8h_source.html#l00441">DMADriver::state</a>.</p>
 
-<p>Referenced by <a class="el" href="hal__stm32__dma_8c_source.html#l00142">dmaStartTransfert()</a>, and <a class="el" href="hal__stm32__dma_8c_source.html#l00303">dmaTransfertTimeout()</a>.</p>
+<p>Referenced by <a class="el" href="hal__stm32__dma_8c_source.html#l00149">dmaStartTransfert()</a>, and <a class="el" href="hal__stm32__dma_8c_source.html#l00328">dmaTransfertTimeout()</a>.</p>
 
 <p><div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -1500,9 +1541,9 @@ Driver state. </td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="hal__stm32__dma_8c_source.html#l00107">107</a> of file <a class="el" href="hal__stm32__dma_8c_source.html">hal_stm32_dma.c</a>.</p>
+<p>Definition at line <a class="el" href="hal__stm32__dma_8c_source.html#l00114">114</a> of file <a class="el" href="hal__stm32__dma_8c_source.html">hal_stm32_dma.c</a>.</p>
 
-<p>References <a class="el" href="hal__stm32__dma_8h_source.html#l00363">DMADriver::config</a>, <a class="el" href="hal__stm32__dma_8c_source.html#l00688">dma_lld_stop()</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00062">DMA_READY</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00061">DMA_STOP</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00393">DMADriver::mem0p</a>, and <a class="el" href="hal__stm32__dma_8h_source.html#l00408">DMADriver::state</a>.</p>
+<p>References <a class="el" href="hal__stm32__dma_8h_source.html#l00374">DMADriver::config</a>, <a class="el" href="hal__stm32__dma_8c_source.html#l00735">dma_lld_stop()</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00065">DMA_READY</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00064">DMA_STOP</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00404">DMADriver::mem0p</a>, and <a class="el" href="hal__stm32__dma_8h_source.html#l00441">DMADriver::state</a>.</p>
 
 <p><div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -1540,9 +1581,9 @@ Driver state. </td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="hal__stm32__dma_8c_source.html#l00232">232</a> of file <a class="el" href="hal__stm32__dma_8c_source.html">hal_stm32_dma.c</a>.</p>
+<p>Definition at line <a class="el" href="hal__stm32__dma_8c_source.html#l00257">257</a> of file <a class="el" href="hal__stm32__dma_8c_source.html">hal_stm32_dma.c</a>.</p>
 
-<p>References <a class="el" href="hal__stm32__dma_8h_source.html#l00141">_dma_reset_s</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00063">DMA_ACTIVE</a>, <a class="el" href="hal__stm32__dma_8c_source.html#l00676">dma_lld_stop_transfert()</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00062">DMA_READY</a>, and <a class="el" href="hal__stm32__dma_8h_source.html#l00408">DMADriver::state</a>.</p>
+<p>References <a class="el" href="hal__stm32__dma_8h_source.html#l00146">_dma_reset_s</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00066">DMA_ACTIVE</a>, <a class="el" href="hal__stm32__dma_8c_source.html#l00723">dma_lld_stop_transfert()</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00065">DMA_READY</a>, and <a class="el" href="hal__stm32__dma_8h_source.html#l00441">DMADriver::state</a>.</p>
 
 <p><div id="dynsection-22" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-22-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -1580,11 +1621,11 @@ Driver state. </td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="hal__stm32__dma_8c_source.html#l00260">260</a> of file <a class="el" href="hal__stm32__dma_8c_source.html">hal_stm32_dma.c</a>.</p>
+<p>Definition at line <a class="el" href="hal__stm32__dma_8c_source.html#l00285">285</a> of file <a class="el" href="hal__stm32__dma_8c_source.html">hal_stm32_dma.c</a>.</p>
 
-<p>References <a class="el" href="hal__stm32__dma_8h_source.html#l00131">_dma_reset_i</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00063">DMA_ACTIVE</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00064">DMA_COMPLETE</a>, <a class="el" href="hal__stm32__dma_8c_source.html#l00676">dma_lld_stop_transfert()</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00062">DMA_READY</a>, and <a class="el" href="hal__stm32__dma_8h_source.html#l00408">DMADriver::state</a>.</p>
+<p>References <a class="el" href="hal__stm32__dma_8h_source.html#l00136">_dma_reset_i</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00066">DMA_ACTIVE</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00067">DMA_COMPLETE</a>, <a class="el" href="hal__stm32__dma_8c_source.html#l00723">dma_lld_stop_transfert()</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00065">DMA_READY</a>, and <a class="el" href="hal__stm32__dma_8h_source.html#l00441">DMADriver::state</a>.</p>
 
-<p>Referenced by <a class="el" href="hal__stm32__dma_8c_source.html#l00303">dmaTransfertTimeout()</a>.</p>
+<p>Referenced by <a class="el" href="hal__stm32__dma_8c_source.html#l00328">dmaTransfertTimeout()</a>.</p>
 
 <p><div id="dynsection-23" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-23-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -1654,9 +1695,9 @@ Driver state. </td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="hal__stm32__dma_8h_source.html#l00427">427</a> of file <a class="el" href="hal__stm32__dma_8h_source.html">hal_stm32_dma.h</a>.</p>
+<p>Definition at line <a class="el" href="hal__stm32__dma_8h_source.html#l00460">460</a> of file <a class="el" href="hal__stm32__dma_8h_source.html">hal_stm32_dma.h</a>.</p>
 
-<p>References <a class="el" href="hal__stm32__dma_8c_source.html#l00303">dmaTransfertTimeout()</a>.</p>
+<p>References <a class="el" href="hal__stm32__dma_8c_source.html#l00328">dmaTransfertTimeout()</a>.</p>
 
 <p><div id="dynsection-25" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-25-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -1735,11 +1776,11 @@ Driver state. </td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="hal__stm32__dma_8c_source.html#l00303">303</a> of file <a class="el" href="hal__stm32__dma_8c_source.html">hal_stm32_dma.c</a>.</p>
+<p>Definition at line <a class="el" href="hal__stm32__dma_8c_source.html#l00328">328</a> of file <a class="el" href="hal__stm32__dma_8c_source.html">hal_stm32_dma.c</a>.</p>
 
-<p>References <a class="el" href="hal__stm32__dma_8c_source.html#l00167">dmaStartTransfertI()</a>, <a class="el" href="hal__stm32__dma_8c_source.html#l00260">dmaStopTransfertI()</a>, and <a class="el" href="high__speed__logger__direct__memory_8c_source.html#l00134">msg</a>.</p>
+<p>References <a class="el" href="hal__stm32__dma_8h_source.html#l00276">DMAConfig::circular</a>, <a class="el" href="hal__stm32__dma_8h_source.html#l00374">DMADriver::config</a>, <a class="el" href="hal__stm32__dma_8c_source.html#l00174">dmaStartTransfertI()</a>, <a class="el" href="hal__stm32__dma_8c_source.html#l00285">dmaStopTransfertI()</a>, and <a class="el" href="high__speed__logger__direct__memory_8c_source.html#l00134">msg</a>.</p>
 
-<p>Referenced by <a class="el" href="hal__stm32__dma_8h_source.html#l00427">dmaTransfert()</a>.</p>
+<p>Referenced by <a class="el" href="hal__stm32__dma_8h_source.html#l00460">dmaTransfert()</a>.</p>
 
 <p><div id="dynsection-26" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-26-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -1771,7 +1812,7 @@ Driver state. </td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_975986b9e0eb299e77243bf822f828ce.html">chibios</a></li><li class="navelem"><a class="el" href="dir_b82140776176b28f52d7ab660bc0e8ab.html">mcu_periph</a></li><li class="navelem"><a class="el" href="hal__stm32__dma_8h.html">hal_stm32_dma.h</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:02:39 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:02:52 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

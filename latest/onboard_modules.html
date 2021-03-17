@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -123,6 +123,7 @@ $(document).ready(function(){initNavTree('onboard_modules.html','');});
 <li class="level2"><a href="#modules_category_display">Display modules</a></li>
 <li class="level2"><a href="#modules_category_energy">Energy modules</a></li>
 <li class="level2"><a href="#modules_category_fdm">Fdm modules</a></li>
+<li class="level2"><a href="#modules_category_gpio_ext">Gpio_Ext modules</a></li>
 <li class="level2"><a href="#modules_category_gps">Gps modules</a></li>
 <li class="level2"><a href="#modules_category_guidance">Guidance modules</a></li>
 <li class="level2"><a href="#modules_category_helicopter">Helicopter modules</a></li>
@@ -181,7 +182,6 @@ Actuators modules</h2>
 <li><a class="el" href="module__actuators_skiron.html">actuators_skiron module</a> : Actuators Driver for Skiron ESC</li>
 <li><a class="el" href="module__actuators_spektrum.html">actuators_spektrum module</a> : Actuators Driver with Spektrum output</li>
 <li><a class="el" href="module__actuators_swing.html">actuators_swing module</a> : Actuators Driver for Swing</li>
-<li><a class="el" href="module__actuators_xvert.html">actuators_xvert module</a> : Actuators Driver for x-vert vtol escs</li>
 <li><a class="el" href="module__motor_mixing.html">motor_mixing module</a> : Motor mixing for multi-rotor systems</li>
 </ul>
 <h2><a class="anchor" id="modules_category_adcs"></a>
@@ -212,12 +212,14 @@ Ahrs modules</h2>
 Benchmark modules</h2>
 <ul>
 <li><a class="el" href="module__flight_benchmark.html">flight_benchmark module</a> : Flight benchmark for fixedwing.</li>
-<li><a class="el" href="module__i2c_abuse_test.html">i2c_abuse_test module</a> : Benchmark</li>
+<li><a class="el" href="module__i2c_abuse_test.html">i2c_abuse_test module</a> : I2C Abuse Test</li>
 <li><a class="el" href="module__imu_quality_assessment.html">imu_quality_assessment module</a> : Give comparable with IMU Health information.</li>
 </ul>
 <h2><a class="anchor" id="modules_category_boards"></a>
 Boards modules</h2>
 <ul>
+<li><a class="el" href="module__board_matek_f405_wing.html">board_matek_f405_wing module</a> : Autoload several onboard sensors and subsystems</li>
+<li><a class="el" href="module__board_matek_f765_wing.html">board_matek_f765_wing module</a> : Autoload several onboard sensors and subsystems</li>
 <li><a class="el" href="module__board_tawaki.html">board_tawaki module</a> : Autoload several onboard sensors for the Tawaki board with proper configuration</li>
 <li><a class="el" href="module__opa_controller.html">opa_controller module</a> : Controller for OPA board functionalities</li>
 </ul>
@@ -284,8 +286,9 @@ Control modules</h2>
 Core modules</h2>
 <ul>
 <li><a class="el" href="module__pwm_meas.html">pwm_meas module</a> : PWM measurement.</li>
+<li><a class="el" href="module__shell.html">shell module</a> : Simple debug shell</li>
 <li><a class="el" href="module__sys_mon.html">sys_mon module</a> : System monitor.</li>
-<li><a class="el" href="module__trig_test.html">trig_test module</a> : Trigger Ext</li>
+<li><a class="el" href="module__trig_test.html">trig_test module</a> : Trig Test</li>
 </ul>
 <h2><a class="anchor" id="modules_category_ctrl"></a>
 Ctrl modules</h2>
@@ -293,6 +296,7 @@ Ctrl modules</h2>
 <li><a class="el" href="module__ctrl_effectiveness_scheduling.html">ctrl_effectiveness_scheduling module</a> : Interpolation of control effectivenss matrix.</li>
 <li><a class="el" href="module__ctrl_module_innerloop_demo.html">ctrl_module_innerloop_demo module</a> : Demo Control Module.</li>
 <li><a class="el" href="module__ctrl_module_outerloop_demo.html">ctrl_module_outerloop_demo module</a> : Demo Control Module.</li>
+<li><a class="el" href="module__ctrl_windtunnel.html">ctrl_windtunnel module</a> : Windtunnel controller for performing step inputs on flaps and throttle.</li>
 <li><a class="el" href="module__gain_scheduling.html">gain_scheduling module</a> : Gain set interpolation.</li>
 <li><a class="el" href="module__object_tracking.html">object_tracking module</a> : Control a rotorcraft heading to track an object detected by a camera</li>
 <li><a class="el" href="module__optical_flow_hover.html">optical_flow_hover module</a> : This module implements monocular vision height estimation and uses this</li>
@@ -316,6 +320,7 @@ Datalink modules</h2>
 <li><a class="el" href="module__telemetry_sim.html">telemetry_sim module</a> : Telemetry using IVY for basic FW simulator</li>
 <li><a class="el" href="module__telemetry_superbitrf.html">telemetry_superbitrf module</a> : Telemetry using PPRZ protocol over <a class="el" href="subsystems_2datalink_2superbitrf_8h.html#structSuperbitRF">SuperbitRF</a> module</li>
 <li><a class="el" href="module__telemetry_transparent.html">telemetry_transparent module</a> : Telemetry using PPRZ protocol over UART</li>
+<li><a class="el" href="module__telemetry_transparent_frsky_x.html">telemetry_transparent_frsky_x module</a> : Telemetry using pprzlink protocol over FrSky X SmartPort serial link</li>
 <li><a class="el" href="module__telemetry_transparent_gec.html">telemetry_transparent_gec module</a> : Galois Embedded Crypto over transparent datalink</li>
 <li><a class="el" href="module__telemetry_transparent_udp.html">telemetry_transparent_udp module</a> : Telemetry using PPRZ protocol over UDP</li>
 <li><a class="el" href="module__telemetry_transparent_usb.html">telemetry_transparent_usb module</a> : Telemetry using PPRZ protocol over serial USB (e.g</li>
@@ -358,6 +363,13 @@ Fdm modules</h2>
 <ul>
 <li><a class="el" href="module__fdm_crrcsim.html">fdm_crrcsim module</a> : CRRCSIM FDM backend for NPS simulator</li>
 <li><a class="el" href="module__fdm_gazebo.html">fdm_gazebo module</a> : Gazebo backend for NPS simulator</li>
+<li><a class="el" href="module__fdm_jsbsim.html">fdm_jsbsim module</a> : JSBSim FDM backend for NPS simulator</li>
+</ul>
+<h2><a class="anchor" id="modules_category_gpio_ext"></a>
+Gpio_Ext modules</h2>
+<ul>
+<li><a class="el" href="module__gpio_ext_common.html">gpio_ext_common module</a> : Common functions for external GPIO</li>
+<li><a class="el" href="module__gpio_ext_pca95xx.html">gpio_ext_pca95xx module</a> : PCA95XX external GPIO peripheral</li>
 </ul>
 <h2><a class="anchor" id="modules_category_gps"></a>
 Gps modules</h2>
@@ -372,6 +384,7 @@ Gps modules</h2>
 <li><a class="el" href="module__gps_piksi.html">gps_piksi module</a> : Swift-Nav Piksi RTK GPS.</li>
 <li><a class="el" href="module__gps_sim.html">gps_sim module</a> : Simulated GPS</li>
 <li><a class="el" href="module__gps_sim_hitl.html">gps_sim_hitl module</a> : Sim HITL GPS</li>
+<li><a class="el" href="module__gps_sirf.html">gps_sirf module</a> : Sirf GPS (UART)</li>
 <li><a class="el" href="module__gps_skytraq.html">gps_skytraq module</a> : Skytraq GPS (UART)</li>
 <li><a class="el" href="module__gps_ublox.html">gps_ublox module</a> : U-blox GPS (UART)</li>
 <li><a class="el" href="module__gps_ubx_i2c.html">gps_ubx_i2c module</a> : U-blox GPS (I2C)</li>
@@ -386,6 +399,7 @@ Guidance modules</h2>
 <li><a class="el" href="module__guidance_full_pid_fw.html">guidance_full_pid_fw module</a> : Vertical control for fixedwing aircraft based on PID</li>
 <li><a class="el" href="module__guidance_hybrid.html">guidance_hybrid module</a> : Guidance controller for hybrid vehicles</li>
 <li><a class="el" href="module__guidance_indi.html">guidance_indi module</a> : Guidance controller for rotorcraft using INDI</li>
+<li><a class="el" href="module__guidance_indi_hybrid.html">guidance_indi_hybrid module</a> : Guidance controller for hybrids using INDI</li>
 <li><a class="el" href="module__guidance_rotorcraft.html">guidance_rotorcraft module</a> : Base guidance code for rotorcraft</li>
 <li><a class="el" href="module__guidance_rover.html">guidance_rover module</a> : Base guidance code for rover</li>
 <li><a class="el" href="module__guidance_rover_holonomic.html">guidance_rover_holonomic module</a> : Holonomic guidance for rover</li>
@@ -484,6 +498,7 @@ Lidar modules</h2>
 <li><a class="el" href="module__lidar_lite.html">lidar_lite module</a> : Lidar-Lite v1-3 (all labels) from PulsedLight3D (now Garmin) connected over i2c bus.</li>
 <li><a class="el" href="module__lidar_sf11.html">lidar_sf11 module</a> : Parallax SF11-A/B/C Laser Rangefinder connected over i2c bus.</li>
 <li><a class="el" href="module__lidar_tfmini.html">lidar_tfmini module</a> : <a class="el" href="tfmini_8h.html#structTFMini">TFMini</a> Lidar using a single UART for communication</li>
+<li><a class="el" href="module__lidar_tfmini_i2c.html">lidar_tfmini_i2c module</a> : The TF Mini LiDAR is an unidirectional range finder based on time-of-flight (ToF) via IR LED technology</li>
 </ul>
 <h2><a class="anchor" id="modules_category_light"></a>
 Light modules</h2>
@@ -497,6 +512,7 @@ Loggers modules</h2>
 <ul>
 <li><a class="el" href="module__direct_memory_logger.html">direct_memory_logger module</a> : Directly log values to memory for flash chips.</li>
 <li><a class="el" href="module__flight_recorder.html">flight_recorder module</a> : Record flight data according to your telemetry file.</li>
+<li><a class="el" href="module__logger_control_effectiveness.html">logger_control_effectiveness module</a> : Logs to a csv file data required to compute control effectiveness</li>
 <li><a class="el" href="module__logger_dataflash.html">logger_dataflash module</a> : SPI logger</li>
 <li><a class="el" href="module__logger_file.html">logger_file module</a> : Logs to a csv file.</li>
 <li><a class="el" href="module__logger_sd_chibios.html">logger_sd_chibios module</a> : Log on a SD card, either text or binary data.</li>
@@ -517,6 +533,7 @@ Mcu_Periph modules</h2>
 <li><a class="el" href="module__rng.html">rng module</a> : Random Number Generator</li>
 <li><a class="el" href="module__spi_master.html">spi_master module</a> : General SPI driver (master mode)</li>
 <li><a class="el" href="module__spi_slave_hs.html">spi_slave_hs module</a> : General SPI driver (high speed slave mode)</li>
+<li><a class="el" href="module__sys_time.html">sys_time module</a> : Sys-time peripheral</li>
 <li><a class="el" href="module__uart.html">uart module</a> : General UART driver</li>
 <li><a class="el" href="module__udp.html">udp module</a> : General UDP driver</li>
 </ul>
@@ -574,6 +591,7 @@ Nav modules</h2>
 <li><a class="el" href="module__nav_catapult.html">nav_catapult module</a> : Catapult launch timing system.</li>
 <li><a class="el" href="module__nav_cube.html">nav_cube module</a> : Fixedwing Navigation in a cube towards a center.</li>
 <li><a class="el" href="module__nav_drop.html">nav_drop module</a> : Compute the dropping point for a fixedwing aircraft.</li>
+<li><a class="el" href="module__nav_fish.html">nav_fish module</a> : Bio-inspired swarm navigation</li>
 <li><a class="el" href="module__nav_flower.html">nav_flower module</a> : Make a flower navigation pattern</li>
 <li><a class="el" href="module__nav_gls.html">nav_gls module</a> : gps landing system</li>
 <li><a class="el" href="module__nav_heli_spinup.html">nav_heli_spinup module</a> : Helicopter Rotor spinup</li>
@@ -600,6 +618,7 @@ Nav modules</h2>
 <h2><a class="anchor" id="modules_category_optical_flow"></a>
 Optical_Flow modules</h2>
 <ul>
+<li><a class="el" href="module__optical_flow_mateksys_3901_l0x.html">optical_flow_mateksys_3901_l0x module</a> : Transfers flow X and Y and range data of the Mateksys3901-l0X sensor to the autopilot</li>
 <li><a class="el" href="module__px4flow.html">px4flow module</a> : PX4FLOW optical flow sensor</li>
 <li><a class="el" href="module__px4flow_i2c.html">px4flow_i2c module</a> : PX4FLOW optical flow sensor connected over i2c bus</li>
 </ul>
@@ -644,6 +663,7 @@ Sensors modules</h2>
 <li><a class="el" href="module__baro_ms5534a.html">baro_ms5534a module</a> : MS5534a barometer (SPI)</li>
 <li><a class="el" href="module__baro_amsys.html">baro_amsys module</a> : Baro AMSYS (I2C).</li>
 <li><a class="el" href="module__baro_bmp.html">baro_bmp module</a> : Bosch BMP085 pressure sensor</li>
+<li><a class="el" href="module__baro_bmp280_i2c.html">baro_bmp280_i2c module</a> : Bosch-Sensortech BMP280xx pressure sensor</li>
 <li><a class="el" href="module__baro_bmp3.html">baro_bmp3 module</a> : Bosch-Sensortech BMP3xx pressure sensor</li>
 <li><a class="el" href="module__baro_ets.html">baro_ets module</a> : Baro ETS (I2C).</li>
 <li><a class="el" href="module__baro_hca.html">baro_hca module</a> : Baro sensortechnics HCA (I2C)</li>
@@ -689,6 +709,7 @@ Sonar modules</h2>
 <li><a class="el" href="module__agl_dist.html">agl_dist module</a> : Get sonar values from ABI and store last and filtered values</li>
 <li><a class="el" href="module__sonar_adc.html">sonar_adc module</a> : Sonar ADC driver.</li>
 <li><a class="el" href="module__sonar_bebop.html">sonar_bebop module</a> : Bebop Sonar driver.</li>
+<li><a class="el" href="module__sonar_pwm.html">sonar_pwm module</a> : Driver for a PWM based sonar range sensor</li>
 <li><a class="el" href="module__sonar_vl53l1x.html">sonar_vl53l1x module</a> : VL53L1X laser ranger AGL driver</li>
 </ul>
 <h2><a class="anchor" id="modules_category_stabilization"></a>
@@ -728,12 +749,14 @@ Misc modules</h2>
 <ul>
 <li><a class="el" href="module__air_data.html">air_data module</a> : <a class="el" href="air__data_8h.html#structAirData" title="Air Data strucute. ">AirData</a> interface.</li>
 <li><a class="el" href="module__airborne_ant_track.html">airborne_ant_track module</a> : Airborne Antenna tracker</li>
+<li><a class="el" href="module__bebop_cam.html">bebop_cam module</a> : Compile and control the settings of the Bebop front and bottom cameras.</li>
 <li><a class="el" href="module__collective_tracking_control.html">collective_tracking_control module</a> : Algorithm that makes the centroid of a team of aircraft (with different speeds) to track a (possibly moving) target/waypoint.</li>
 <li><a class="el" href="module__collective_tracking_control_target.html">collective_tracking_control_target module</a> : Distributed algorithm for tracking a velocity/position reference signal</li>
 <li><a class="el" href="module__configure_actuators_mkk_v2.html">configure_actuators_mkk_v2 module</a> : Configure Mikrokopter MKK v2.0 BLDC motor controllers (requires subsystem actuators_mkk_v2)</li>
 <li><a class="el" href="module__current_sensor.html">current_sensor module</a> : Current sensor via onboard ADC.</li>
 <li><a class="el" href="module__cv_qrcode.html">cv_qrcode module</a> : QR code reader using ZBAR library</li>
 <li><a class="el" href="module__demo_module.html">demo_module module</a> : Demo module</li>
+<li><a class="el" href="module__dfu_command.html">dfu_command module</a> : THIS MODULE MUST BE PLACED ABOVE ANY USB SERIAL CONSUMERS IN THE AIRFRAME!</li>
 <li><a class="el" href="module__distributed_circular_formation.html">distributed_circular_formation module</a> : Distributed algorithm for circular formations with air-to-air communications.</li>
 <li><a class="el" href="module__dragspeed.html">dragspeed module</a> : Estimate the velocity/airspeed of rotorcraft by measuring the drag force.</li>
 <li><a class="el" href="module__e_identification_fr.html">e_identification_fr module</a> : Format and send via UART tracking data according to French regulation.</li>
@@ -745,6 +768,7 @@ Misc modules</h2>
 <li><a class="el" href="module__gsm.html">gsm module</a> : GSM module</li>
 <li><a class="el" href="module__gumstix_qr_code_spi_link.html">gumstix_qr_code_spi_link module</a> : QR code gumstix interface</li>
 <li><a class="el" href="module__gvf_module.html">gvf_module module</a> : Guidance algorithm for tracking smooth trajectories</li>
+<li><a class="el" href="module__gvf_parametric.html">gvf_parametric module</a> : Guidance algorithm for tracking 2D and 3D smooth trajectories that are defined by a parametric equation.</li>
 <li><a class="el" href="module__haclc.html">haclc module</a> : HACL* verified cryptographic library</li>
 <li><a class="el" href="module__hott_telemetry.html">hott_telemetry module</a> : Graupner HOTT telemetry control module.</li>
 <li><a class="el" href="module__imu_aspirin_common.html">imu_aspirin_common module</a> : Common functionality of Aspirin IMUs.</li>
@@ -756,28 +780,32 @@ Misc modules</h2>
 <li><a class="el" href="module__obstacle_avoidance.html">obstacle_avoidance module</a> : Obstacle avoidance module</li>
 <li><a class="el" href="module__opticflow_hover.html">opticflow_hover module</a> : Hovers the drone based on optical flow made for Linux video Devices.</li>
 <li><a class="el" href="module__pano_unwrap.html">pano_unwrap module</a> : Unwrap images taken through a panoramic lens</li>
+<li><a class="el" href="module__pca9685.html">pca9685 module</a> : pca9685 additional servo driver</li>
 <li><a class="el" href="module__pose_history.html">pose_history module</a> : Ask this module for the pose the drone had closest to a given timestamp</li>
 <li><a class="el" href="module__px4_flash.html">px4_flash module</a> : Flash Pixhawk via PX4 bootloader.</li>
 <li><a class="el" href="module__px4_gimbal.html">px4_gimbal module</a> : Control gimbal camera axis through px4 from rc</li>
+<li><a class="el" href="module__radio_control_cc2500_frsky.html">radio_control_cc2500_frsky module</a> : Software implementation of Frsky radio control protocol for onboard CC2500 receiver.</li>
 <li><a class="el" href="module__range_forcefield.html">range_forcefield module</a> : This module generates a forcefield based on range sensor measurements the use of single point range sensor</li>
 <li><a class="el" href="module__relative_localization_filter.html">relative_localization_filter module</a> : Relative Localization Filter based on UWB range measurements + Communication between drones.</li>
 <li><a class="el" href="module__rust_demo_module.html">rust_demo_module module</a> : Simple rust module</li>
 <li><a class="el" href="module__servo_tester.html">servo_tester module</a> : Servo tester</li>
 <li><a class="el" href="module__settings_rc.html">settings_rc module</a> : Change settings via Remote Control, e.g</li>
 <li><a class="el" href="module__spektrum_soft_bind.html">spektrum_soft_bind module</a> : Puts Spektrum in binding mode through software</li>
+<li><a class="el" href="module__sys_id_chirp.html">sys_id_chirp module</a> : Chirp maneuver for system itentification.</li>
 <li><a class="el" href="module__syslink_dl.html">syslink_dl module</a> : Bitcraze syslink module</li>
 <li><a class="el" href="module__telemetry_intermcu.html">telemetry_intermcu module</a> : Telemetry over InterMCU</li>
 <li><a class="el" href="module__time_countdown.html">time_countdown module</a> : Count down time.</li>
 <li><a class="el" href="module__tlsf.html">tlsf module</a> : Dynamic memory allocator</li>
+<li><a class="el" href="module__uav_recovery.html">uav_recovery module</a> : Parachute</li>
 <li><a class="el" href="module__vehicle_interface_datalink.html">vehicle_interface_datalink module</a> : Vehicule Interface over Datalink</li>
-<li><a class="el" href="module__vms_ecu_demo.html">vms_ecu_demo module</a> : A simple module for Viking Motorsports Engine Control Unit demonstration, </li>
+<li><a class="el" href="module__wedgebug.html">wedgebug module</a> : An integration of the WegdeBug algorithm (Laubach 1999) for path finding, for drones with stereo vision. </li>
 </ul>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri May 15 2020 04:03:38 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:03:56 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -271,7 +271,7 @@ $(document).ready(function(){initNavTree('nps__main__common_8c_source.html','');
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  <a class="code" href="nps__main_8h.html#a6e14a89c4cddf8dccc6355a220d0257d">nps_main</a>.<a class="code" href="nps__main_8h.html#a742be269960e8023b0d5f9ff292a6e52">fg_fdm</a> = 0;</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  <a class="code" href="nps__main_8h.html#a6e14a89c4cddf8dccc6355a220d0257d">nps_main</a>.<a class="code" href="nps__main_8h.html#a68aed38f06b7c11c3ee04855d0ba910a">nodisplay</a> = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span> *usage =</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="group__SHELL.html#gacb01942f228e0914fe22cd064d78a2ab">usage</a> =</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="stringliteral">&quot;Usage: %s [options]\n&quot;</span></div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="stringliteral">&quot; Options :\n&quot;</span></div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="stringliteral">&quot;   -h                                     Display this help\n&quot;</span></div>
@@ -434,7 +434,7 @@ $(document).ready(function(){initNavTree('nps__main__common_8c_source.html','');
 <div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;</div>
 <div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;      pthread_mutex_lock(&amp;<a class="code" href="nps__main_8h.html#abfdfe512dfaedb25e9c8d0206830cbec">fdm_mutex</a>);</div>
 <div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;      memcpy(&amp;fdm_ivy, &amp;<a class="code" href="nps__fdm_8h.html#ae64a4e3a8d8202a279b0d36c7a415c84">fdm</a>, <span class="keyword">sizeof</span>(<a class="code" href="nps__fdm_8h.html#ae64a4e3a8d8202a279b0d36c7a415c84">fdm</a>));</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;      memcpy(&amp;sensors_ivy, &amp;<a class="code" href="nps__sensors_8c.html#a11a29c2b4957ab1fb998c5e40b4f96d7">sensors</a>, <span class="keyword">sizeof</span>(<a class="code" href="nps__sensors_8c.html#a11a29c2b4957ab1fb998c5e40b4f96d7">sensors</a>));</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;      memcpy(&amp;sensors_ivy, &amp;<a class="code" href="cc2500__compat_8h.html#a1cbedac78341a4fe7beff91fe370b9de">sensors</a>, <span class="keyword">sizeof</span>(<a class="code" href="cc2500__compat_8h.html#a1cbedac78341a4fe7beff91fe370b9de">sensors</a>));</div>
 <div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;      pthread_mutex_unlock(&amp;<a class="code" href="nps__main_8h.html#abfdfe512dfaedb25e9c8d0206830cbec">fdm_mutex</a>);</div>
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;</div>
 <div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;      <a class="code" href="nps__ivy_8c.html#ac8dd2616306bc17a53526c762dc08ee5">nps_ivy_display</a>(&amp;fdm_ivy, &amp;sensors_ivy);</div>
@@ -476,6 +476,7 @@ $(document).ready(function(){initNavTree('nps__main__common_8c_source.html','');
 <div class="ttc" id="nps__main_8h_html_aae9dac26905ad0476f41c25a333f0839"><div class="ttname"><a href="nps__main_8h.html#aae9dac26905ad0476f41c25a333f0839">SIM_DT</a></div><div class="ttdeci">#define SIM_DT</div><div class="ttdef"><b>Definition:</b> <a href="nps__main_8h_source.html#l00020">nps_main.h:20</a></div></div>
 <div class="ttc" id="nps__main__common_8c_html_a92aad3720fb482042b695d66e633699a"><div class="ttname"><a href="nps__main__common_8c.html#a92aad3720fb482042b695d66e633699a">nps_main_init</a></div><div class="ttdeci">int nps_main_init(int argc, char **argv)</div><div class="ttdef"><b>Definition:</b> <a href="nps__main__common_8c_source.html#l00079">nps_main_common.c:79</a></div></div>
 <div class="ttc" id="nps__fdm_8h_html_structNpsFdm"><div class="ttname"><a href="nps__fdm_8h.html#structNpsFdm">NpsFdm</a></div><div class="ttdef"><b>Definition:</b> <a href="nps__fdm_8h_source.html#l00044">nps_fdm.h:44</a></div></div>
+<div class="ttc" id="group__SHELL_html_gacb01942f228e0914fe22cd064d78a2ab"><div class="ttname"><a href="group__SHELL.html#gacb01942f228e0914fe22cd064d78a2ab">usage</a></div><div class="ttdeci">static void usage(BaseSequentialStream *lchp, char *p)</div><div class="ttdef"><b>Definition:</b> <a href="microrlShell_8c_source.html#l00137">microrlShell.c:137</a></div></div>
 <div class="ttc" id="nps__main__common_8c_html_a9e2370130aa6e869a0ed56a22117cf3b"><div class="ttname"><a href="nps__main__common_8c.html#a9e2370130aa6e869a0ed56a22117cf3b">nps_main_parse_options</a></div><div class="ttdeci">bool nps_main_parse_options(int argc, char **argv)</div><div class="ttdef"><b>Definition:</b> <a href="nps__main__common_8c_source.html#l00147">nps_main_common.c:147</a></div></div>
 <div class="ttc" id="nps__main_8h_html_aa6c6cc2a080030733ecf2314d8887462"><div class="ttname"><a href="nps__main_8h.html#aa6c6cc2a080030733ecf2314d8887462">pauseSignal</a></div><div class="ttdeci">int pauseSignal</div><div class="ttdef"><b>Definition:</b> <a href="nps__main_8h_source.html#l00030">nps_main.h:30</a></div></div>
 <div class="ttc" id="nps__main_8h_html_ad980c3b0bbe0eb7e69836f7882ac2e7d"><div class="ttname"><a href="nps__main_8h.html#ad980c3b0bbe0eb7e69836f7882ac2e7d">NpsMain::fg_port</a></div><div class="ttdeci">unsigned int fg_port</div><div class="ttdef"><b>Definition:</b> <a href="nps__main_8h_source.html#l00058">nps_main.h:58</a></div></div>
@@ -490,8 +491,8 @@ $(document).ready(function(){initNavTree('nps__main__common_8c_source.html','');
 <div class="ttc" id="nps__main_8h_html_ad8a78b460395201176c833c18e16992a"><div class="ttname"><a href="nps__main_8h.html#ad8a78b460395201176c833c18e16992a">NpsMain::fg_time_offset</a></div><div class="ttdeci">unsigned int fg_time_offset</div><div class="ttdef"><b>Definition:</b> <a href="nps__main_8h_source.html#l00060">nps_main.h:60</a></div></div>
 <div class="ttc" id="nps__ivy_8c_html_ac8dd2616306bc17a53526c762dc08ee5"><div class="ttname"><a href="nps__ivy_8c.html#ac8dd2616306bc17a53526c762dc08ee5">nps_ivy_display</a></div><div class="ttdeci">void nps_ivy_display(struct NpsFdm *fdm_data, struct NpsSensors *sensors_data)</div><div class="ttdef"><b>Definition:</b> <a href="nps__ivy_8c_source.html#l00205">nps_ivy.c:205</a></div></div>
 <div class="ttc" id="nps__flightgear_8c_html_a3798773d8563d36ad60ab2314a3c6feb"><div class="ttname"><a href="nps__flightgear_8c.html#a3798773d8563d36ad60ab2314a3c6feb">nps_flightgear_init</a></div><div class="ttdeci">void nps_flightgear_init(const char *host, unsigned int port, unsigned int port_in, unsigned int time_offset)</div><div class="ttdef"><b>Definition:</b> <a href="nps__flightgear_8c_source.html#l00052">nps_flightgear.c:52</a></div></div>
-<div class="ttc" id="nps__sensors_8c_html_a11a29c2b4957ab1fb998c5e40b4f96d7"><div class="ttname"><a href="nps__sensors_8c.html#a11a29c2b4957ab1fb998c5e40b4f96d7">sensors</a></div><div class="ttdeci">struct NpsSensors sensors</div><div class="ttdef"><b>Definition:</b> <a href="nps__sensors_8c_source.html#l00006">nps_sensors.c:6</a></div></div>
 <div class="ttc" id="nps__main_8h_html"><div class="ttname"><a href="nps__main_8h.html">nps_main.h</a></div></div>
+<div class="ttc" id="cc2500__compat_8h_html_a1cbedac78341a4fe7beff91fe370b9de"><div class="ttname"><a href="cc2500__compat_8h.html#a1cbedac78341a4fe7beff91fe370b9de">sensors</a></div><div class="ttdeci">#define sensors(...)</div><div class="ttdef"><b>Definition:</b> <a href="cc2500__compat_8h_source.html#l00068">cc2500_compat.h:68</a></div></div>
 <div class="ttc" id="nps__fdm_8h_html_a17ec5b69b110d046f9db5b67d2b08779"><div class="ttname"><a href="nps__fdm_8h.html#a17ec5b69b110d046f9db5b67d2b08779">nps_fdm_init</a></div><div class="ttdeci">void nps_fdm_init(double dt)</div><div class="ttdoc">Initialize actuator dynamics, set unused fields in fdm. </div><div class="ttdef"><b>Definition:</b> <a href="nps__fdm__crrcsim_8c_source.html#l00119">nps_fdm_crrcsim.c:119</a></div></div>
 <div class="ttc" id="nps__main_8h_html_a84e7af65cf43b1fd0effc9e7344070b3"><div class="ttname"><a href="nps__main_8h.html#a84e7af65cf43b1fd0effc9e7344070b3">NpsMain::sim_time</a></div><div class="ttdeci">double sim_time</div><div class="ttdef"><b>Definition:</b> <a href="nps__main_8h_source.html#l00055">nps_main.h:55</a></div></div>
 <div class="ttc" id="nps__main_8h_html_a6bb2995b72c8441d79ca14c4b5c0617e"><div class="ttname"><a href="nps__main_8h.html#a6bb2995b72c8441d79ca14c4b5c0617e">NpsMain::host_time_factor</a></div><div class="ttdeci">double host_time_factor</div><div class="ttdef"><b>Definition:</b> <a href="nps__main_8h_source.html#l00054">nps_main.h:54</a></div></div>
@@ -514,7 +515,7 @@ $(document).ready(function(){initNavTree('nps__main__common_8c_source.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_57152efd0242905f7c5d6768e6b65e41.html">simulator</a></li><li class="navelem"><a class="el" href="dir_19bdda89d6219119fa616a46fa62e86b.html">nps</a></li><li class="navelem"><a class="el" href="nps__main__common_8c.html">nps_main_common.c</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:02:38 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:02:51 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

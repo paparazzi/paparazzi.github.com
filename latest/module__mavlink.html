@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -146,7 +146,7 @@ Periodic Functions</h2>
 </ul>
 </li>
 <li><a class="el" href="mavlink_8c.html#ac7325f73108d5d100d6f6b633f90cd40" title="Send periodic mavlink messages as defined in Mavlink process of telemetry xml file. ">mavlink_periodic_telemetry()</a><ul>
-<li>Frequency in Hz: <em>$TELEMETRY_FREQUENCY</em> </li>
+<li>Frequency in Hz: <em>TELEMETRY_FREQUENCY</em> </li>
 <li>Autorun: <em>TRUE</em> <br />
  Periodic function automatically starts after init.</li>
 </ul>
@@ -172,7 +172,7 @@ Source Files</h2>
 Raw mavlink.xml file:</h2>
 <div class="fragment"><div class="line">&lt;!DOCTYPE module SYSTEM &quot;module.dtd&quot;&gt;</div>
 <div class="line"></div>
-<div class="line">&lt;module name=&quot;datalink&quot;&gt;</div>
+<div class="line">&lt;module name=&quot;mavlink&quot; dir=&quot;datalink&quot;&gt;</div>
 <div class="line">  &lt;doc&gt;</div>
 <div class="line">    &lt;description&gt;Basic MAVLink implementation&lt;/description&gt;</div>
 <div class="line">    &lt;configure name=&quot;MAVLINK_PORT&quot; value=&quot;UARTx|UDPx|UsbS&quot; description=&quot;The port device to use for mavlink (default: UART1)&quot;/&gt;</div>
@@ -184,7 +184,7 @@ Raw mavlink.xml file:</h2>
 <div class="line"></div>
 <div class="line">  &lt;init fun=&quot;mavlink_init()&quot;/&gt;</div>
 <div class="line">  &lt;periodic fun=&quot;mavlink_periodic()&quot; freq=&quot;10&quot; autorun=&quot;TRUE&quot;/&gt;</div>
-<div class="line">  &lt;periodic fun=&quot;mavlink_periodic_telemetry()&quot; freq=&quot;$TELEMETRY_FREQUENCY&quot; autorun=&quot;TRUE&quot;/&gt;</div>
+<div class="line">  &lt;periodic fun=&quot;mavlink_periodic_telemetry()&quot; freq=&quot;TELEMETRY_FREQUENCY&quot; autorun=&quot;TRUE&quot;/&gt;</div>
 <div class="line">  &lt;event fun=&quot;mavlink_event()&quot;/&gt;</div>
 <div class="line"></div>
 <div class="line">  &lt;makefile&gt;</div>
@@ -193,6 +193,8 @@ Raw mavlink.xml file:</h2>
 <div class="line">    &lt;file name=&quot;waypoints.c&quot; dir=&quot;modules/datalink/missionlib&quot;/&gt;</div>
 <div class="line">    &lt;file name=&quot;blocks.c&quot; dir=&quot;modules/datalink/missionlib&quot;/&gt;</div>
 <div class="line">    &lt;configure name=&quot;MAVLINK_PORT&quot; default=&quot;uart1&quot; case=&quot;upper|lower&quot;/&gt;</div>
+<div class="line">    &lt;configure name=&quot;TELEMETRY_FREQUENCY&quot; default=&quot;$(PERIODIC_FREQUENCY)&quot;/&gt;</div>
+<div class="line">    &lt;define name=&quot;TELEMETRY_FREQUENCY&quot; value=&quot;$(TELEMETRY_FREQUENCY)&quot;/&gt;</div>
 <div class="line">    &lt;raw&gt;</div>
 <div class="line">      ifneq (,$(findstring usb,$(MAVLINK_PORT_LOWER)))</div>
 <div class="line">      ap.CFLAGS += -DUSE_USB_SERIAL</div>
@@ -219,7 +221,7 @@ Raw mavlink.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:03:41 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:03:59 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

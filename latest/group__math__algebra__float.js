@@ -177,5 +177,7 @@ var group__math__algebra__float =
     [ "float_vect_smul", "group__math__algebra__float.html#ga2a16655dc0d98a40ff17c6728fa1e4fb", null ],
     [ "float_vect_sub", "group__math__algebra__float.html#ga03ad700d1b32902c199a841eb3f7e5c9", null ],
     [ "float_vect_sum", "group__math__algebra__float.html#ga0c9a0d18305c582cf58a79771919c1e9", null ],
-    [ "float_vect_zero", "group__math__algebra__float.html#ga132a789820c2d2610906e87120af9d18", null ]
+    [ "float_vect_zero", "group__math__algebra__float.html#ga132a789820c2d2610906e87120af9d18", null ],
+    [ "vect_bound_in_2d", "group__math__algebra__float.html#gaee1f02031703a4aca27bc7b9df996a55", null ],
+    [ "vect_scale", "group__math__algebra__float.html#ga205aa96a656e1c7197f0121a127710d1", null ]
 ];

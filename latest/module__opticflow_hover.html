@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -112,8 +112,7 @@ $(document).ready(function(){initNavTree('module__opticflow_hover.html','');});
 </ul>
 <h1><a class="anchor" id="module_load_example__opticflow_hover"></a>
 Example for airframe file</h1>
-<p>Add to your firmware section: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;module name=&quot;cv_opticflow|px4flow&quot;/&gt;</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;&lt;module name=&quot;opticflow_hover&quot;/&gt;</div>
+<p>Add to your firmware section: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;module name=&quot;opticflow_hover&quot;/&gt;</div>
 </div><!-- fragment --> <h1><a class="anchor" id="configuration__opticflow_hover"></a>
 Module configuration options</h1>
 <h2><a class="anchor" id="af_section"></a>
@@ -134,11 +133,6 @@ Airframe file section</h2>
  Description: The desired velocity in the body frame y direction</li>
 </ul>
 </li>
-</ul>
-<h1><a class="anchor" id="dependencies__opticflow_hover"></a>
-Dependencies</h1>
-<ul>
-<li><a class="el" href="module__cv_opticflow.html">cv_opticflow module</a>|px4flow </li>
 </ul>
 <h1><a class="anchor" id="files"></a>
 Files</h1>
@@ -193,7 +187,9 @@ Raw opticflow_hover.xml file:</h2>
 <div class="line">    &lt;/dl_settings&gt;</div>
 <div class="line">  &lt;/settings&gt;</div>
 <div class="line"></div>
-<div class="line">  &lt;depends&gt;cv_opticflow|px4flow&lt;/depends&gt;</div>
+<div class="line">  &lt;dep&gt;</div>
+<div class="line">    &lt;depends&gt;cv_opticflow|px4flow&lt;/depends&gt;</div>
+<div class="line">  &lt;/dep&gt;</div>
 <div class="line"></div>
 <div class="line">  &lt;header&gt;</div>
 <div class="line">    &lt;file name=&quot;guidance_opticflow_hover.h&quot;/&gt;</div>
@@ -214,7 +210,7 @@ Raw opticflow_hover.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:03:40 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:03:58 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

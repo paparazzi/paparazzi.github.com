@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -153,6 +153,24 @@ $(document).ready(function(){initNavTree('globals_eval_p.html','');});
 <li>P_BE
 : <a class="el" href="gec_8h.html#a6d13a1c88cfb3c15be159f325f869404a087dde6638f221ec823378b7ac065a59">gec.h</a>
 </li>
+<li>PCA9685_I2C_STATUS_INITIALIZED
+: <a class="el" href="pca9685__i2c_8c.html#a3ee4e9f70475f3c684c23241163781aba113756fefb514fbf37000d7fffef5895">pca9685_i2c.c</a>
+</li>
+<li>PCA9685_I2C_STATUS_UNINIT
+: <a class="el" href="pca9685__i2c_8c.html#a3ee4e9f70475f3c684c23241163781abaa0dda72123b84658bed5a7b1d2460b0a">pca9685_i2c.c</a>
+</li>
+<li>PCA9865_I2C_STATUS_CHANGE_LED_REG_FINISHED
+: <a class="el" href="pca9685__i2c_8c.html#a3ee4e9f70475f3c684c23241163781aba0a702392681c8169f625a4c231e936d4">pca9685_i2c.c</a>
+</li>
+<li>PCA9865_I2C_STATUS_READ_LED_REG_BUSY
+: <a class="el" href="pca9685__i2c_8c.html#a3ee4e9f70475f3c684c23241163781aba3e2171fa6d297200d141120946e1dadc">pca9685_i2c.c</a>
+</li>
+<li>PCA9865_I2C_STATUS_WRITE_LED_REG_BUSY
+: <a class="el" href="pca9685__i2c_8c.html#a3ee4e9f70475f3c684c23241163781abab60b4820fe36ed88c47eef27dbbd3237">pca9685_i2c.c</a>
+</li>
+<li>PCA9865_I2C_STATUS_WRITE_LED_REG_READY
+: <a class="el" href="pca9685__i2c_8c.html#a3ee4e9f70475f3c684c23241163781aba6685fd8f01885488fbd31eb974800a33">pca9685_i2c.c</a>
+</li>
 <li>PCF_IDLE
 : <a class="el" href="wind__gfi_8h.html#a28af1f1f55de3fbdf348c7f76dee2ccca738254db5cfe4ab5ef5afbf0fe551902">wind_gfi.h</a>
 </li>
@@ -195,6 +213,12 @@ $(document).ready(function(){initNavTree('globals_eval_p.html','');});
 <li>PNFAC
 : <a class="el" href="esc32_8h.html#a7d7ff77147834c43663d3dfd1f263610a0198c167311a51538ac261b60f2c3f05">esc32.h</a>
 </li>
+<li>POSITION_EDGE
+: <a class="el" href="wedgebug_8c.html#a17e419311a44de1996fd19462767ff73aa14f2633c708d0d27656e6ea0561e8d1">wedgebug.c</a>
+</li>
+<li>POSITION_GOAL
+: <a class="el" href="wedgebug_8c.html#a17e419311a44de1996fd19462767ff73a998b887ac451d124211bdebdbc8f399b">wedgebug.c</a>
+</li>
 <li>POT_HEADING
 : <a class="el" href="guidance__OA_8h.html#a4dac0a956aca3da3fa670abc875414d2aa93f4f82cd7469ed71867b865b38374e">guidance_OA.h</a>
 </li>
@@ -214,10 +238,10 @@ $(document).ready(function(){initNavTree('globals_eval_p.html','');});
 : <a class="el" href="esc32_8h.html#a7d7ff77147834c43663d3dfd1f263610a2a6a02cec30875a84a3ddd7a526ef811">esc32.h</a>
 </li>
 <li>PWM_INPUT1
-: <a class="el" href="chibios_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89a32b12a036871c7af7e058b004d913c4e">pwm_input_arch.h</a>
+: <a class="el" href="lpc21_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89a32b12a036871c7af7e058b004d913c4e">pwm_input_arch.h</a>
 </li>
 <li>PWM_INPUT2
-: <a class="el" href="lpc21_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89a9111b96e9eb0797d88775081ee4fd89a">pwm_input_arch.h</a>
+: <a class="el" href="chibios_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89a9111b96e9eb0797d88775081ee4fd89a">pwm_input_arch.h</a>
 </li>
 <li>PWM_INPUT_NB
 : <a class="el" href="stm32_2mcu__periph_2pwm__input__arch_8h.html#a24e1244ece1163b0554a800e5cf2fe89a64615989b58d9c05b43316402ec94502">pwm_input_arch.h</a>
@@ -270,7 +294,7 @@ $(document).ready(function(){initNavTree('globals_eval_p.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri May 15 2020 04:04:12 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:04:31 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

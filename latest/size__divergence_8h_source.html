@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -138,17 +138,16 @@ $(document).ready(function(){initNavTree('size__divergence_8h_source.html','');}
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#ifndef SIZE_DIVERGENCE</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#define SIZE_DIVERGENCE</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keywordtype">float</span> <a class="code" href="size__divergence_8h.html#a5bd0d30766d4538c9b64fccc7826b12a">get_size_divergence</a>(<span class="keyword">struct</span> <a class="code" href="image_8h.html#structflow__t">flow_t</a> *vectors, <span class="keywordtype">int</span> <a class="code" href="image_8h.html#aaa4259997b28b4d757f7bf42928e4ca6">count</a>, <span class="keywordtype">int</span> <a class="code" href="detect__gate_8c.html#a0aa1d80a7fddb8ff76eb4347b72d2b28">n_samples</a>);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keywordtype">float</span> <a class="code" href="size__divergence_8h.html#a5bd0d30766d4538c9b64fccc7826b12a">get_size_divergence</a>(<span class="keyword">struct</span> <a class="code" href="image_8h.html#structflow__t">flow_t</a> *vectors, <span class="keywordtype">int</span> count, <span class="keywordtype">int</span> <a class="code" href="detect__gate_8c.html#a0aa1d80a7fddb8ff76eb4347b72d2b28">n_samples</a>);</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keywordtype">float</span> <a class="code" href="size__divergence_8h.html#ae48ba4f34bd6f955e2c21ffbe7baea08">get_mean</a>(<span class="keywordtype">float</span> *numbers, <span class="keywordtype">int</span> n_elements);</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="ttc" id="image_8h_html_structflow__t"><div class="ttname"><a href="image_8h.html#structflow__t">flow_t</a></div><div class="ttdef"><b>Definition:</b> <a href="image_8h_source.html#l00066">image.h:66</a></div></div>
+<div class="ttc" id="image_8h_html_structflow__t"><div class="ttname"><a href="image_8h.html#structflow__t">flow_t</a></div><div class="ttdef"><b>Definition:</b> <a href="image_8h_source.html#l00078">image.h:78</a></div></div>
 <div class="ttc" id="detect__gate_8c_html_a0aa1d80a7fddb8ff76eb4347b72d2b28"><div class="ttname"><a href="detect__gate_8c.html#a0aa1d80a7fddb8ff76eb4347b72d2b28">n_samples</a></div><div class="ttdeci">int n_samples</div><div class="ttdef"><b>Definition:</b> <a href="detect__gate_8c_source.html#l00085">detect_gate.c:85</a></div></div>
 <div class="ttc" id="size__divergence_8h_html_ae48ba4f34bd6f955e2c21ffbe7baea08"><div class="ttname"><a href="size__divergence_8h.html#ae48ba4f34bd6f955e2c21ffbe7baea08">get_mean</a></div><div class="ttdeci">float get_mean(float *numbers, int n_elements)</div></div>
 <div class="ttc" id="image_8h_html"><div class="ttname"><a href="image_8h.html">image.h</a></div><div class="ttdoc">Image helper functions like resizing, color filter, converters... </div></div>
-<div class="ttc" id="image_8h_html_aaa4259997b28b4d757f7bf42928e4ca6"><div class="ttname"><a href="image_8h.html#aaa4259997b28b4d757f7bf42928e4ca6">point_t::count</a></div><div class="ttdeci">uint16_t count</div><div class="ttdoc">Number of times the point has been tracked successfully. </div><div class="ttdef"><b>Definition:</b> <a href="image_8h_source.html#l00060">image.h:60</a></div></div>
 <div class="ttc" id="size__divergence_8h_html_a5bd0d30766d4538c9b64fccc7826b12a"><div class="ttname"><a href="size__divergence_8h.html#a5bd0d30766d4538c9b64fccc7826b12a">get_size_divergence</a></div><div class="ttdeci">float get_size_divergence(struct flow_t *vectors, int count, int n_samples)</div><div class="ttdoc">Get divergence from optical flow vectors based on line sizes between corners. </div><div class="ttdef"><b>Definition:</b> <a href="size__divergence_8c_source.html#l00042">size_divergence.c:42</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -156,7 +155,7 @@ $(document).ready(function(){initNavTree('size__divergence_8h_source.html','');}
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_304e79c9f5d09ea65a2f55aafb6a6b9d.html">computer_vision</a></li><li class="navelem"><a class="el" href="dir_737909cdc08fae475c12e10cc4efa3fe.html">opticflow</a></li><li class="navelem"><a class="el" href="size__divergence_8h.html">size_divergence.h</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:02:21 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:02:32 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

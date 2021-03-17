@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -116,7 +116,7 @@ $(document).ready(function(){initNavTree('autopilot__arming__switch_8h.html','')
 
 <p>Arm the motors using a switch.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="rotorcraft_2autopilot__rc__helpers_8h_source.html">autopilot_rc_helpers.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="autopilot__arming__common_8h_source.html">autopilot_arming_common.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for autopilot_arming_switch.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -124,7 +124,7 @@ $(document).ready(function(){initNavTree('autopilot__arming__switch_8h.html','')
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="autopilot__arming__switch_8h__incl.png" border="0" usemap="#sw_2airborne_2firmwares_2rotorcraft_2autopilot__arming__switch_8h" alt=""/></div>
 <map name="sw_2airborne_2firmwares_2rotorcraft_2autopilot__arming__switch_8h" id="sw_2airborne_2firmwares_2rotorcraft_2autopilot__arming__switch_8h">
-<area shape="rect" id="node2" href="rotorcraft_2autopilot__rc__helpers_8h.html" title="Some helper functions to check RC sticks. " alt="" coords="71,109,234,136"/><area shape="rect" id="node4" href="radio__control_8h.html" title="subsystems/radio_control.h" alt="" coords="121,184,320,211"/><area shape="rect" id="node5" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API " alt="" coords="189,259,242,285"/><area shape="rect" id="node7" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="266,259,362,285"/><area shape="rect" id="node8" href="inttypes_8h.html" title="inttypes.h" alt="" coords="274,333,359,360"/></map>
+<area shape="rect" id="node2" href="autopilot__arming__common_8h.html" title="Arming procedure for rotorcraft, common definitions. " alt="" coords="49,109,256,136"/><area shape="rect" id="node3" href="rotorcraft_2autopilot__rc__helpers_8h.html" title="Some helper functions to check RC sticks. " alt="" coords="71,184,234,211"/><area shape="rect" id="node5" href="radio__control_8h.html" title="subsystems/radio_control.h" alt="" coords="121,259,320,285"/><area shape="rect" id="node6" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API " alt="" coords="189,333,242,360"/><area shape="rect" id="node8" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="266,333,362,360"/><area shape="rect" id="node9" href="inttypes_8h.html" title="inttypes.h" alt="" coords="274,408,359,435"/></map>
 </div>
 </div>
 <p><a href="autopilot__arming__switch_8h_source.html">Go to the source code of this file.</a></p>
@@ -138,16 +138,17 @@ Enumerations</h2></td></tr>
 <a class="el" href="autopilot__arming__switch_8h.html#abd7b974a7084669ffc2893dd65db427ea5d9b03165b6d8bb49b125baa065bdc39">STATE_MOTORS_ON</a>, 
 <br />
 &#160;&#160;<a class="el" href="autopilot__arming__yaw_8h.html#abd7b974a7084669ffc2893dd65db427eac871e06c093989b5a0c4ae9a86d2c7c3">STATUS_INITIALISE_RC</a>, 
+<a class="el" href="autopilot__arming__yaw_8h.html#abd7b974a7084669ffc2893dd65db427ea12b582789a09bb23f5ee317a1b70ee62">STATUS_MOTORS_RC_KILLED</a>, 
 <a class="el" href="autopilot__arming__yaw_8h.html#abd7b974a7084669ffc2893dd65db427ea2303f080c0faeba87f42132d8f1ee8e3">STATUS_MOTORS_AUTOMATICALLY_OFF</a>, 
 <a class="el" href="autopilot__arming__yaw_8h.html#abd7b974a7084669ffc2893dd65db427ea3c67e7916fb25db63abc69e018731041">STATUS_MOTORS_AUTOMATICALLY_OFF_SAFETY_WAIT</a>, 
-<a class="el" href="autopilot__arming__yaw_8h.html#abd7b974a7084669ffc2893dd65db427ea1c5e91f9fda59f697904e5c62a36b50a">STATUS_MOTORS_OFF</a>, 
 <br />
-&#160;&#160;<a class="el" href="autopilot__arming__yaw_8h.html#abd7b974a7084669ffc2893dd65db427ea982690d535e212fc9b0fb62fba9cbe0c">STATUS_M_OFF_STICK_PUSHED</a>, 
+&#160;&#160;<a class="el" href="autopilot__arming__yaw_8h.html#abd7b974a7084669ffc2893dd65db427ea1c5e91f9fda59f697904e5c62a36b50a">STATUS_MOTORS_OFF</a>, 
+<a class="el" href="autopilot__arming__yaw_8h.html#abd7b974a7084669ffc2893dd65db427ea982690d535e212fc9b0fb62fba9cbe0c">STATUS_M_OFF_STICK_PUSHED</a>, 
 <a class="el" href="autopilot__arming__yaw_8h.html#abd7b974a7084669ffc2893dd65db427ea1038e5b4ad0d377703cc65cd88a6c150">STATUS_START_MOTORS</a>, 
 <a class="el" href="autopilot__arming__yaw_8h.html#abd7b974a7084669ffc2893dd65db427ea23b30718108ca8b16c6bac74aefb8312">STATUS_MOTORS_ON</a>, 
-<a class="el" href="autopilot__arming__yaw_8h.html#abd7b974a7084669ffc2893dd65db427eaa5e278d981c08f826c3e9c94a939567e">STATUS_M_ON_STICK_PUSHED</a>, 
 <br />
-&#160;&#160;<a class="el" href="autopilot__arming__yaw_8h.html#abd7b974a7084669ffc2893dd65db427ea3813a977c5b6604a17fd1c0f54893226">STATUS_STOP_MOTORS</a>
+&#160;&#160;<a class="el" href="autopilot__arming__yaw_8h.html#abd7b974a7084669ffc2893dd65db427eaa5e278d981c08f826c3e9c94a939567e">STATUS_M_ON_STICK_PUSHED</a>, 
+<a class="el" href="autopilot__arming__yaw_8h.html#abd7b974a7084669ffc2893dd65db427ea3813a977c5b6604a17fd1c0f54893226">STATUS_STOP_MOTORS</a>
 <br />
  }</td></tr>
 <tr class="separator:abd7b974a7084669ffc2893dd65db427e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -193,6 +194,8 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a class="anchor" id="abd7b974a7084669ffc2893dd65db427ea5d9b03165b6d8bb49b125baa065bdc39"></a>STATE_MOTORS_ON&#160;</td><td class="fielddoc">
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="abd7b974a7084669ffc2893dd65db427eac871e06c093989b5a0c4ae9a86d2c7c3"></a>STATUS_INITIALISE_RC&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="abd7b974a7084669ffc2893dd65db427ea12b582789a09bb23f5ee317a1b70ee62"></a>STATUS_MOTORS_RC_KILLED&#160;</td><td class="fielddoc">
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="abd7b974a7084669ffc2893dd65db427ea2303f080c0faeba87f42132d8f1ee8e3"></a>STATUS_MOTORS_AUTOMATICALLY_OFF&#160;</td><td class="fielddoc">
 </td></tr>
@@ -244,9 +247,9 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="autopilot__arming__switch_8h_source.html#l00079">79</a> of file <a class="el" href="autopilot__arming__switch_8h_source.html">autopilot_arming_switch.h</a>.</p>
 
-<p>References <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00036">AP_MODE_FAILSAFE</a>, <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00035">AP_MODE_KILL</a>, <a class="el" href="autopilot_8c_source.html#l00050">autopilot</a>, <a class="el" href="autopilot__arming__switch_8h_source.html#l00045">autopilot_arming_state</a>, <a class="el" href="autopilot_8c_source.html#l00184">autopilot_get_mode()</a>, <a class="el" href="autopilot__arming__switch_8h_source.html#l00046">autopilot_unarmed_in_auto</a>, <a class="el" href="rotorcraft_2autopilot__rc__helpers_8h_source.html#l00097">kill_switch_is_on()</a>, <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00080">MODE_MANUAL</a>, <a class="el" href="autopilot_8h_source.html#l00068">pprz_autopilot::motors_on</a>, <a class="el" href="rotorcraft_2autopilot__rc__helpers_8h_source.html#l00082">rc_attitude_sticks_centered()</a>, <a class="el" href="autopilot__arming__switch_8h_source.html#l00042">STATE_MOTORS_ON</a>, <a class="el" href="autopilot__arming__switch_8h_source.html#l00041">STATE_STARTABLE</a>, <a class="el" href="autopilot__arming__switch_8h_source.html#l00039">STATE_UNINIT</a>, <a class="el" href="autopilot__arming__switch_8h_source.html#l00040">STATE_WAITING</a>, and <a class="el" href="rotorcraft_2autopilot__rc__helpers_8h_source.html#l00040">THROTTLE_STICK_DOWN</a>.</p>
+<p>References <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00036">AP_MODE_FAILSAFE</a>, <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00035">AP_MODE_KILL</a>, <a class="el" href="autopilot_8c_source.html#l00050">autopilot</a>, <a class="el" href="autopilot__arming__switch_8h_source.html#l00045">autopilot_arming_state</a>, <a class="el" href="autopilot_8c_source.html#l00184">autopilot_get_mode()</a>, <a class="el" href="autopilot__arming__switch_8h_source.html#l00046">autopilot_unarmed_in_auto</a>, <a class="el" href="rotorcraft_2autopilot__rc__helpers_8h_source.html#l00097">kill_switch_is_on()</a>, <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00060">MODE_MANUAL</a>, <a class="el" href="autopilot_8h_source.html#l00068">pprz_autopilot::motors_on</a>, <a class="el" href="rotorcraft_2autopilot__rc__helpers_8h_source.html#l00082">rc_attitude_sticks_centered()</a>, <a class="el" href="autopilot__arming__switch_8h_source.html#l00042">STATE_MOTORS_ON</a>, <a class="el" href="autopilot__arming__switch_8h_source.html#l00041">STATE_STARTABLE</a>, <a class="el" href="autopilot__arming__switch_8h_source.html#l00039">STATE_UNINIT</a>, <a class="el" href="autopilot__arming__switch_8h_source.html#l00040">STATE_WAITING</a>, and <a class="el" href="rotorcraft_2autopilot__rc__helpers_8h_source.html#l00040">THROTTLE_STICK_DOWN</a>.</p>
 
-<p>Referenced by <a class="el" href="rotorcraft_2autopilot__generated_8c_source.html#l00114">autopilot_generated_on_rc_frame()</a>, and <a class="el" href="rotorcraft_2autopilot__static_8c_source.html#l00339">autopilot_static_on_rc_frame()</a>.</p>
+<p>Referenced by <a class="el" href="rotorcraft_2autopilot__generated_8c_source.html#l00104">autopilot_generated_on_rc_frame()</a>, and <a class="el" href="rotorcraft_2autopilot__static_8c_source.html#l00328">autopilot_static_on_rc_frame()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -298,7 +301,7 @@ Variables</h2></td></tr>
 
 <p>References <a class="el" href="autopilot__arming__switch_8h_source.html#l00045">autopilot_arming_state</a>, <a class="el" href="autopilot__arming__switch_8h_source.html#l00046">autopilot_unarmed_in_auto</a>, and <a class="el" href="autopilot__arming__switch_8h_source.html#l00039">STATE_UNINIT</a>.</p>
 
-<p>Referenced by <a class="el" href="rotorcraft_2autopilot__generated_8c_source.html#l00052">autopilot_generated_init()</a>, and <a class="el" href="rotorcraft_2autopilot__static_8c_source.html#l00105">autopilot_static_init()</a>.</p>
+<p>Referenced by <a class="el" href="rotorcraft_2autopilot__generated_8c_source.html#l00042">autopilot_generated_init()</a>, and <a class="el" href="rotorcraft_2autopilot__static_8c_source.html#l00094">autopilot_static_init()</a>.</p>
 
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -337,9 +340,9 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="autopilot__arming__switch_8h_source.html#l00054">54</a> of file <a class="el" href="autopilot__arming__switch_8h_source.html">autopilot_arming_switch.h</a>.</p>
 
-<p>References <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00036">AP_MODE_FAILSAFE</a>, <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00035">AP_MODE_KILL</a>, <a class="el" href="autopilot__arming__switch_8h_source.html#l00045">autopilot_arming_state</a>, <a class="el" href="autopilot_8c_source.html#l00184">autopilot_get_mode()</a>, <a class="el" href="autopilot__arming__switch_8h_source.html#l00046">autopilot_unarmed_in_auto</a>, <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00080">MODE_MANUAL</a>, <a class="el" href="autopilot__arming__switch_8h_source.html#l00042">STATE_MOTORS_ON</a>, and <a class="el" href="autopilot__arming__switch_8h_source.html#l00041">STATE_STARTABLE</a>.</p>
+<p>References <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00036">AP_MODE_FAILSAFE</a>, <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00035">AP_MODE_KILL</a>, <a class="el" href="autopilot__arming__switch_8h_source.html#l00045">autopilot_arming_state</a>, <a class="el" href="autopilot_8c_source.html#l00184">autopilot_get_mode()</a>, <a class="el" href="autopilot__arming__switch_8h_source.html#l00046">autopilot_unarmed_in_auto</a>, <a class="el" href="rotorcraft_2autopilot__static_8h_source.html#l00060">MODE_MANUAL</a>, <a class="el" href="autopilot__arming__switch_8h_source.html#l00042">STATE_MOTORS_ON</a>, and <a class="el" href="autopilot__arming__switch_8h_source.html#l00041">STATE_STARTABLE</a>.</p>
 
-<p>Referenced by <a class="el" href="rotorcraft_2autopilot__generated_8c_source.html#l00099">autopilot_generated_set_motors_on()</a>, and <a class="el" href="rotorcraft_2autopilot__static_8c_source.html#l00329">autopilot_static_set_motors_on()</a>.</p>
+<p>Referenced by <a class="el" href="rotorcraft_2autopilot__generated_8c_source.html#l00089">autopilot_generated_set_motors_on()</a>, and <a class="el" href="rotorcraft_2autopilot__static_8c_source.html#l00318">autopilot_static_set_motors_on()</a>.</p>
 
 <p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -404,7 +407,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_e37d355c72eb7c8e5b43c34bdea5a24b.html">rotorcraft</a></li><li class="navelem"><a class="el" href="autopilot__arming__switch_8h.html">autopilot_arming_switch.h</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:03:00 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:03:15 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

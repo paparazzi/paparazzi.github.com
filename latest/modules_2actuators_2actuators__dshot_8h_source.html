@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -133,7 +133,7 @@ $(document).ready(function(){initNavTree('modules_2actuators_2actuators__dshot_8
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#define ACTUATORS_DSHOT_H</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="std_8h.html">std.h</a>&quot;</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="actuators__dshot__arch_8h.html">modules/actuators/actuators_dshot_arch.h</a>&quot;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;modules/actuators/actuators_dshot_arch.h&quot;</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#ifndef ACTUATORS_DSHOT_OFFSET</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="modules_2actuators_2actuators__dshot_8h.html#af356023b6d10daaf341c5d524f411781">   38</a></span>&#160;<span class="preprocessor">#define ACTUATORS_DSHOT_OFFSET 48</span></div>
@@ -159,19 +159,18 @@ $(document).ready(function(){initNavTree('modules_2actuators_2actuators__dshot_8
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
 <div class="ttc" id="types_8h_html_a273cf69d639a59973b6019625df33e30"><div class="ttname"><a href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></div><div class="ttdeci">unsigned short uint16_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00016">types.h:16</a></div></div>
-<div class="ttc" id="modules_2actuators_2actuators__dshot_8h_html_a1d673a4808cd523c8c47d82ef0c56f29"><div class="ttname"><a href="modules_2actuators_2actuators__dshot_8h.html#a1d673a4808cd523c8c47d82ef0c56f29">actuators_dshot_arch_init</a></div><div class="ttdeci">void actuators_dshot_arch_init(void)</div><div class="ttdoc">Arch dependent init. </div><div class="ttdef"><b>Definition:</b> <a href="actuators__dshot__arch_8c_source.html#l00065">actuators_dshot_arch.c:65</a></div></div>
-<div class="ttc" id="modules_2actuators_2actuators__dshot_8h_html_ac3a9e4d1e6b36deb0e3f6a26773e1bb2"><div class="ttname"><a href="modules_2actuators_2actuators__dshot_8h.html#ac3a9e4d1e6b36deb0e3f6a26773e1bb2">actuators_dshot_values</a></div><div class="ttdeci">uint16_t actuators_dshot_values[ACTUATORS_DSHOT_NB]</div><div class="ttdef"><b>Definition:</b> <a href="actuators__dshot__arch_8c_source.html#l00033">actuators_dshot_arch.c:33</a></div></div>
-<div class="ttc" id="modules_2actuators_2actuators__dshot_8h_html_ae19151c72d42b6c277faf5da1962d3b3"><div class="ttname"><a href="modules_2actuators_2actuators__dshot_8h.html#ae19151c72d42b6c277faf5da1962d3b3">actuators_dshot_arch_commit</a></div><div class="ttdeci">void actuators_dshot_arch_commit(void)</div><div class="ttdef"><b>Definition:</b> <a href="actuators__dshot__arch_8c_source.html#l00134">actuators_dshot_arch.c:134</a></div></div>
+<div class="ttc" id="modules_2actuators_2actuators__dshot_8h_html_a1d673a4808cd523c8c47d82ef0c56f29"><div class="ttname"><a href="modules_2actuators_2actuators__dshot_8h.html#a1d673a4808cd523c8c47d82ef0c56f29">actuators_dshot_arch_init</a></div><div class="ttdeci">void actuators_dshot_arch_init(void)</div><div class="ttdoc">Arch dependent init. </div><div class="ttdef"><b>Definition:</b> <a href="chibios_2modules_2actuators_2actuators__dshot__arch_8c_source.html#l00073">actuators_dshot_arch.c:73</a></div></div>
+<div class="ttc" id="modules_2actuators_2actuators__dshot_8h_html_ac3a9e4d1e6b36deb0e3f6a26773e1bb2"><div class="ttname"><a href="modules_2actuators_2actuators__dshot_8h.html#ac3a9e4d1e6b36deb0e3f6a26773e1bb2">actuators_dshot_values</a></div><div class="ttdeci">uint16_t actuators_dshot_values[ACTUATORS_DSHOT_NB]</div><div class="ttdef"><b>Definition:</b> <a href="chibios_2modules_2actuators_2actuators__dshot__arch_8c_source.html#l00034">actuators_dshot_arch.c:34</a></div></div>
+<div class="ttc" id="modules_2actuators_2actuators__dshot_8h_html_ae19151c72d42b6c277faf5da1962d3b3"><div class="ttname"><a href="modules_2actuators_2actuators__dshot_8h.html#ae19151c72d42b6c277faf5da1962d3b3">actuators_dshot_arch_commit</a></div><div class="ttdeci">void actuators_dshot_arch_commit(void)</div><div class="ttdef"><b>Definition:</b> <a href="chibios_2modules_2actuators_2actuators__dshot__arch_8c_source.html#l00142">actuators_dshot_arch.c:142</a></div></div>
 <div class="ttc" id="std_8h_html"><div class="ttname"><a href="std_8h.html">std.h</a></div></div>
 <div class="ttc" id="modules_2actuators_2actuators__dshot_8h_html_a981f2b4fe90cef64cb2049d2ea203e2c"><div class="ttname"><a href="modules_2actuators_2actuators__dshot_8h.html#a981f2b4fe90cef64cb2049d2ea203e2c">ACTUATORS_DSHOT_NB</a></div><div class="ttdeci">#define ACTUATORS_DSHOT_NB</div><div class="ttdoc">Maxnum number of DSHOT commands This should be large enough for max applications: 8 motors +1 in case...</div><div class="ttdef"><b>Definition:</b> <a href="modules_2actuators_2actuators__dshot_8h_source.html#l00046">actuators_dshot.h:46</a></div></div>
-<div class="ttc" id="actuators__dshot__arch_8h_html"><div class="ttname"><a href="actuators__dshot__arch_8h.html">actuators_dshot_arch.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_70fcbe4bfac1daf70a9a1cc8a4943db9.html">actuators</a></li><li class="navelem"><a class="el" href="modules_2actuators_2actuators__dshot_8h.html">actuators_dshot.h</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:02:18 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:02:29 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

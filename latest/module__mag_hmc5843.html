@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -161,7 +161,7 @@ Source Files</h2>
 Raw mag_hmc5843.xml file:</h2>
 <div class="fragment"><div class="line">&lt;!DOCTYPE module SYSTEM &quot;module.dtd&quot;&gt;</div>
 <div class="line"></div>
-<div class="line">&lt;module name=&quot;sensors&quot;&gt;</div>
+<div class="line">&lt;module name=&quot;mag_hmc5843&quot; dir=&quot;sensors&quot;&gt;</div>
 <div class="line">  &lt;doc&gt;</div>
 <div class="line">    &lt;description&gt;hmc5843 magnetometer&lt;/description&gt;</div>
 <div class="line">    &lt;configure name=&quot;HMC5843_I2C_DEV&quot; value=&quot;i2cX&quot; description=&quot;select which i2c peripheral to use (default i2c0)&quot;/&gt;</div>
@@ -179,6 +179,14 @@ Raw mag_hmc5843.xml file:</h2>
 <div class="line">    &lt;file name=&quot;mag_hmc5843.c&quot;/&gt;</div>
 <div class="line">    &lt;file name=&quot;hmc5843.c&quot; dir=&quot;peripherals&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;HMC5843_NO_IRQ&quot;/&gt;</div>
+<div class="line">    &lt;test&gt;</div>
+<div class="line">      &lt;define name=&quot;HMC5843_I2C_DEV&quot; value=&quot;i2c1&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;USE_I2C1&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;DOWNLINK_TRANSPORT&quot; value=&quot;pprz_tp&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;DOWNLINK_DEVICE&quot; value=&quot;uart0&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;USE_UART0&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;HMC5843_NO_IRQ&quot;/&gt;</div>
+<div class="line">    &lt;/test&gt;</div>
 <div class="line">  &lt;/makefile&gt;</div>
 <div class="line">&lt;/module&gt;</div>
 </div><!-- fragment --> </div></div><!-- contents -->
@@ -187,7 +195,7 @@ Raw mag_hmc5843.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:03:41 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:03:58 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

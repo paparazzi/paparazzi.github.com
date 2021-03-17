@@ -23,5 +23,6 @@ var gvf_8c =
     [ "send_segment", "gvf_8c.html#aba649a025aa04b4a2ed1a655b1aa8cbc", null ],
     [ "gvf_control", "gvf_8c.html#a5f5e9220214385223a75b05a35bcc012", null ],
     [ "gvf_segment", "gvf_8c.html#a67ba061ae20dfd1706c123e9136ec175", null ],
+    [ "gvf_t0", "gvf_8c.html#af49a661079a79710b0b3a4a3844c180c", null ],
     [ "gvf_trajectory", "gvf_8c.html#aae566ae882cd2fac5d8335b0a7ea5297", null ]
 ];

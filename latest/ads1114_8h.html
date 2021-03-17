@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -131,7 +131,7 @@ $(document).ready(function(){initNavTree('ads1114_8h.html','');});
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ads1114_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2peripherals_2ads1114_8hdep" alt=""/></div>
 <map name="sw_2airborne_2peripherals_2ads1114_8hdep" id="sw_2airborne_2peripherals_2ads1114_8hdep">
-<area shape="rect" id="node2" href="umarim_2baro__board_8c.html" title="sw/airborne/boards\l/umarim/baro_board.c" alt="" coords="5,95,169,136"/><area shape="rect" id="node3" href="ads1114_8c.html" title="sw/airborne/peripherals\l/ads1114.c" alt="" coords="194,95,365,136"/></map>
+<area shape="rect" id="node2" href="umarim_2baro__board_8c.html" title="sw/airborne/boards\l/umarim/baro_board.c" alt="" coords="5,95,169,136"/><area shape="rect" id="node3" href="airspeed__ads1114_8c.html" title="sw/airborne/modules\l/sensors/airspeed_ads1114.c" alt="" coords="194,95,402,136"/><area shape="rect" id="node4" href="ads1114_8c.html" title="sw/airborne/peripherals\l/ads1114.c" alt="" coords="426,95,597,136"/></map>
 </div>
 </div>
 <p><a href="ads1114_8h_source.html">Go to the source code of this file.</a></p>
@@ -280,16 +280,17 @@ trans</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{\</div>
-<div class="line">    if (!_p.config_done) { \</div>
-<div class="line">      if (_p.trans.status == <a class="code" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a2884da616ec2ff9183e649f8fab1073b">I2CTransSuccess</a>) { _p.config_done = <span class="keyword">true</span>; _p.trans.status = <a class="code" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a6d2d46dfea9ba1457201928eabeccace">I2CTransDone</a>; } \</div>
-<div class="line">      if (_p.trans.status == <a class="code" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a4a8906d81bf97d49da468e6c6b9f39e9">I2CTransFailed</a>) { _p.trans.status = <a class="code" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a6d2d46dfea9ba1457201928eabeccace">I2CTransDone</a>; } \</div>
-<div class="line">    } <span class="keywordflow">else</span> { \</div>
-<div class="line">      if (_p.trans.status == <a class="code" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a2884da616ec2ff9183e649f8fab1073b">I2CTransSuccess</a>) { _p.data_available = <span class="keyword">true</span>; _p.trans.status = <a class="code" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a6d2d46dfea9ba1457201928eabeccace">I2CTransDone</a>; } \</div>
-<div class="line">      if (_p.trans.status == <a class="code" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a4a8906d81bf97d49da468e6c6b9f39e9">I2CTransFailed</a>) { _p.trans.status = <a class="code" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a6d2d46dfea9ba1457201928eabeccace">I2CTransDone</a>; } \</div>
+<b>Value:</b><div class="fragment"><div class="line">{<a class="code" href="e__identification__fr_8c.html#a92cffae21318c1d983c63f3afa2a8d87">\</a></div>
+<div class="line"><a class="code" href="e__identification__fr_8c.html#a92cffae21318c1d983c63f3afa2a8d87">    if</a> (!_p.config_done) { <a class="code" href="e__identification__fr_8c.html#a92cffae21318c1d983c63f3afa2a8d87">\</a></div>
+<div class="line"><a class="code" href="e__identification__fr_8c.html#a92cffae21318c1d983c63f3afa2a8d87">      if</a> (_p.trans.status == <a class="code" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a2884da616ec2ff9183e649f8fab1073b">I2CTransSuccess</a>) { _p.config_done = <span class="keyword">true</span>; _p.trans.status = <a class="code" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a6d2d46dfea9ba1457201928eabeccace">I2CTransDone</a>; } <a class="code" href="e__identification__fr_8c.html#a92cffae21318c1d983c63f3afa2a8d87">\</a></div>
+<div class="line"><a class="code" href="e__identification__fr_8c.html#a92cffae21318c1d983c63f3afa2a8d87">      if</a> (_p.trans.status == <a class="code" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a4a8906d81bf97d49da468e6c6b9f39e9">I2CTransFailed</a>) { _p.trans.status = <a class="code" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a6d2d46dfea9ba1457201928eabeccace">I2CTransDone</a>; } \</div>
+<div class="line">    } <span class="keywordflow">else</span> { <a class="code" href="e__identification__fr_8c.html#a92cffae21318c1d983c63f3afa2a8d87">\</a></div>
+<div class="line"><a class="code" href="e__identification__fr_8c.html#a92cffae21318c1d983c63f3afa2a8d87">      if</a> (_p.trans.status == <a class="code" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a2884da616ec2ff9183e649f8fab1073b">I2CTransSuccess</a>) { _p.data_available = <span class="keyword">true</span>; _p.trans.status = <a class="code" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a6d2d46dfea9ba1457201928eabeccace">I2CTransDone</a>; } <a class="code" href="e__identification__fr_8c.html#a92cffae21318c1d983c63f3afa2a8d87">\</a></div>
+<div class="line"><a class="code" href="e__identification__fr_8c.html#a92cffae21318c1d983c63f3afa2a8d87">      if</a> (_p.trans.status == <a class="code" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a4a8906d81bf97d49da468e6c6b9f39e9">I2CTransFailed</a>) { _p.trans.status = <a class="code" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a6d2d46dfea9ba1457201928eabeccace">I2CTransDone</a>; } \</div>
 <div class="line">    } \</div>
 <div class="line">  }</div>
 <div class="ttc" id="group__i2c_html_ggab31a87ef6e90ddd08be846de32e8a442a2884da616ec2ff9183e649f8fab1073b"><div class="ttname"><a href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a2884da616ec2ff9183e649f8fab1073b">I2CTransSuccess</a></div><div class="ttdoc">transaction successfully finished by I2C driver </div><div class="ttdef"><b>Definition:</b> <a href="i2c_8h_source.html#l00057">i2c.h:57</a></div></div>
+<div class="ttc" id="e__identification__fr_8c_html_a92cffae21318c1d983c63f3afa2a8d87"><div class="ttname"><a href="e__identification__fr_8c.html#a92cffae21318c1d983c63f3afa2a8d87">if</a></div><div class="ttdeci">if(GpsFixValid()&amp;&amp;e_identification_started)</div><div class="ttdef"><b>Definition:</b> <a href="e__identification__fr_8c_source.html#l00159">e_identification_fr.c:159</a></div></div>
 <div class="ttc" id="group__i2c_html_ggab31a87ef6e90ddd08be846de32e8a442a6d2d46dfea9ba1457201928eabeccace"><div class="ttname"><a href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a6d2d46dfea9ba1457201928eabeccace">I2CTransDone</a></div><div class="ttdoc">transaction set to done by user level </div><div class="ttdef"><b>Definition:</b> <a href="i2c_8h_source.html#l00059">i2c.h:59</a></div></div>
 <div class="ttc" id="group__i2c_html_ggab31a87ef6e90ddd08be846de32e8a442a4a8906d81bf97d49da468e6c6b9f39e9"><div class="ttname"><a href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a4a8906d81bf97d49da468e6c6b9f39e9">I2CTransFailed</a></div><div class="ttdoc">transaction failed </div><div class="ttdef"><b>Definition:</b> <a href="i2c_8h_source.html#l00058">i2c.h:58</a></div></div>
 </div><!-- fragment -->
@@ -835,7 +836,7 @@ trans</td>
 
 <p>References <a class="el" href="ads1114_8h_source.html#l00113">ADS1114_I2C_DEV</a>, <a class="el" href="ads1114_8h_source.html#l00043">ADS1114_POINTER_CONV_REG</a>, <a class="el" href="i2c_8h_source.html#l00122">i2c_transaction::buf</a>, <a class="el" href="ads1114_8h_source.html#l00119">ads1114_periph::config_done</a>, <a class="el" href="ads1114_8h_source.html#l00118">ads1114_periph::i2c_addr</a>, <a class="el" href="i2c_8c_source.html#l00344">i2c_transceive()</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>, and <a class="el" href="ads1114_8h_source.html#l00117">ads1114_periph::trans</a>.</p>
 
-<p>Referenced by <a class="el" href="airspeed__ads1114_8c_source.html#l00032">airspeed_periodic()</a>, and <a class="el" href="umarim_2baro__board_8c_source.html#l00058">baro_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="airspeed__ads1114_8c_source.html#l00033">airspeed_periodic()</a>, and <a class="el" href="umarim_2baro__board_8c_source.html#l00058">baro_periodic()</a>.</p>
 
 <p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -867,7 +868,7 @@ trans</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_0a48ba2c0a76794adfddddc873522f67.html">peripherals</a></li><li class="navelem"><a class="el" href="ads1114_8h.html">ads1114.h</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:03:25 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:03:41 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

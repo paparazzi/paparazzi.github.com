@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -201,8 +201,8 @@ Variables</h2></td></tr>
 <div class="textblock"><p>|STX|length|... </p>
 <p>payload=(length-4) bytes ...|Checksum A|Checksum B|</p>
 <p>where checksum is computed over length and payload: </p><div class="fragment"><div class="line"><a class="code" href="protocol_8c.html#a3fbc907850570278741b05bf678b41cf">mora_ck_a</a> = <a class="code" href="protocol_8c.html#a6fd8c7c2c92e8dd110bf60fed5305eaf">mora_ck_b</a> = length</div>
-<div class="line"><span class="keywordflow">for each</span> <a class="code" href="nps__fdm__crrcsim_8c.html#a71809484a26cd96c6abe839a0a8a289d">byte</a> b in payload</div>
-<div class="line">    <a class="code" href="protocol_8c.html#a3fbc907850570278741b05bf678b41cf">mora_ck_a</a> += b;</div>
+<div class="line"><span class="keywordflow">for each</span> <a class="code" href="nps__fdm__crrcsim_8c.html#a71809484a26cd96c6abe839a0a8a289d">byte</a> <a class="code" href="wedgebug_8c.html#a83fc1af92e29717b4513d121b0c72c7d">b</a> in payload</div>
+<div class="line">    <a class="code" href="protocol_8c.html#a3fbc907850570278741b05bf678b41cf">mora_ck_a</a> += <a class="code" href="wedgebug_8c.html#a83fc1af92e29717b4513d121b0c72c7d">b</a>;</div>
 <div class="line">    <a class="code" href="protocol_8c.html#a6fd8c7c2c92e8dd110bf60fed5305eaf">mora_ck_b</a> += <a class="code" href="protocol_8c.html#a3fbc907850570278741b05bf678b41cf">mora_ck_a</a>;</div>
 </div><!-- fragment --> 
 <p>Definition in file <a class="el" href="digital__cam_2catia_2protocol_8h_source.html">protocol.h</a>.</p>
@@ -842,7 +842,7 @@ vground</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_9cd42eb44f1e76fa7c8c7cd9c9a53863.html">digital_cam</a></li><li class="navelem"><a class="el" href="dir_8d52ef0129d8a0d69e51e902d77cc0c9.html">catia</a></li><li class="navelem"><a class="el" href="digital__cam_2catia_2protocol_8h.html">protocol.h</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:03:13 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:03:28 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

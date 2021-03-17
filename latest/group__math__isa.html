@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -354,7 +354,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="pprz__isa_8h_source.html#l00050">50</a> of file <a class="el" href="pprz__isa_8h_source.html">pprz_isa.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00213">baro_cb()</a>, <a class="el" href="air__data_8c_source.html#l00319">get_tas_factor()</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00491">ins_float_invariant_update_baro()</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00119">nps_fdm_init()</a>, <a class="el" href="pprz__isa_8h_source.html#l00082">pprz_isa_altitude_of_pressure()</a>, and <a class="el" href="pprz__isa_8h_source.html#l00117">pprz_isa_pressure_of_altitude()</a>.</p>
+<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00214">baro_cb()</a>, <a class="el" href="air__data_8c_source.html#l00319">get_tas_factor()</a>, <a class="el" href="ins__float__invariant_8c_source.html#l00491">ins_float_invariant_update_baro()</a>, <a class="el" href="nps__fdm__crrcsim_8c_source.html#l00119">nps_fdm_init()</a>, <a class="el" href="pprz__isa_8h_source.html#l00082">pprz_isa_altitude_of_pressure()</a>, and <a class="el" href="pprz__isa_8h_source.html#l00117">pprz_isa_pressure_of_altitude()</a>.</p>
 
 </div>
 </div>
@@ -431,7 +431,7 @@ Variables</h2></td></tr>
 
 <p>References <a class="el" href="pprz__isa_8h_source.html#l00050">PPRZ_ISA_SEA_LEVEL_PRESSURE</a>.</p>
 
-<p>Referenced by <a class="el" href="baro__ms5611__i2c_8c_source.html#l00090">baro_ms5611_event()</a>.</p>
+<p>Referenced by <a class="el" href="baro__bmp280__i2c_8c_source.html#l00082">baro_bmp280_event()</a>, and <a class="el" href="baro__ms5611__i2c_8c_source.html#l00090">baro_ms5611_event()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -440,7 +440,7 @@ Variables</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="group__math__isa_gaf2f78a2a7a0e583d11bb5727e0e99d45_icgraph.png" border="0" usemap="#group__math__isa_gaf2f78a2a7a0e583d11bb5727e0e99d45_icgraph" alt=""/></div>
 <map name="group__math__isa_gaf2f78a2a7a0e583d11bb5727e0e99d45_icgraph" id="group__math__isa_gaf2f78a2a7a0e583d11bb5727e0e99d45_icgraph">
-<area shape="rect" id="node2" href="baro__ms5611__spi_8h.html#afd15b3c514cb6c7763b0db2788665185" title="baro_ms5611_event" alt="" coords="203,13,356,39"/></map>
+<area shape="rect" id="node2" href="baro__bmp280__i2c_8h.html#af54cb2d222ce142b39a34c7c777c6be0" title="baro_bmp280_event" alt="" coords="203,5,357,32"/><area shape="rect" id="node3" href="baro__ms5611__spi_8h.html#afd15b3c514cb6c7763b0db2788665185" title="baro_ms5611_event" alt="" coords="203,56,357,83"/></map>
 </div>
 </p>
 
@@ -552,7 +552,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="pprz__isa_8h_source.html#l00102">102</a> of file <a class="el" href="pprz__isa_8h_source.html">pprz_isa.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00213">baro_cb()</a>, <a class="el" href="ins__alt__float_8c_source.html#l00165">ins_alt_float_update_baro()</a>, and <a class="el" href="ins__float__invariant_8c_source.html#l00491">ins_float_invariant_update_baro()</a>.</p>
+<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00214">baro_cb()</a>, <a class="el" href="ins__alt__float_8c_source.html#l00165">ins_alt_float_update_baro()</a>, and <a class="el" href="ins__float__invariant_8c_source.html#l00491">ins_float_invariant_update_baro()</a>.</p>
 
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -878,7 +878,7 @@ Variables</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri May 15 2020 04:03:48 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:04:06 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

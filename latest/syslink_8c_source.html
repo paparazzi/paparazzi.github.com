@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -214,17 +214,17 @@ $(document).ready(function(){initNavTree('syslink_8c_source.html','');});
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment">*/</span></div>
 <div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="syslink_8h.html#acb5b03f84db2a11b296e3f1afe5d5ed7">  112</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="syslink_8c.html#acb5b03f84db2a11b296e3f1afe5d5ed7">syslink_compute_cksum</a>(<a class="code" href="syslink_8h.html#structsyslink__message__t">syslink_message_t</a> *<a class="code" href="high__speed__logger__direct__memory_8c.html#a32b52374003c5d7911e540c6a1c53488">msg</a>)</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;{</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> a = 0, b = 0;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> a = 0, <a class="code" href="wedgebug_8c.html#a83fc1af92e29717b4513d121b0c72c7d">b</a> = 0;</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *Di = (<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *)msg, *end = Di + (2 + msg-&gt;<a class="code" href="syslink_8h.html#a2c7cccf1d1a0e8349123c8321d9088cc">length</a>) * <span class="keyword">sizeof</span>(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>);</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <span class="keywordflow">while</span> (Di &lt; end) {</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    a = a + *Di;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    b = b + a;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <a class="code" href="wedgebug_8c.html#a83fc1af92e29717b4513d121b0c72c7d">b</a> = <a class="code" href="wedgebug_8c.html#a83fc1af92e29717b4513d121b0c72c7d">b</a> + a;</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    ++Di;</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  }</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  msg-&gt;<a class="code" href="syslink_8h.html#a11dbb5d44baf70401bf28defe5202b20">cksum</a>[0] = a;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  msg-&gt;<a class="code" href="syslink_8h.html#a11dbb5d44baf70401bf28defe5202b20">cksum</a>[1] = b;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  msg-&gt;<a class="code" href="syslink_8h.html#a11dbb5d44baf70401bf28defe5202b20">cksum</a>[1] = <a class="code" href="wedgebug_8c.html#a83fc1af92e29717b4513d121b0c72c7d">b</a>;</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;}</div>
 <div class="ttc" id="syslink_8h_html_afd1c05ad68debcbc1e04c0e34602881a"><div class="ttname"><a href="syslink_8h.html#afd1c05ad68debcbc1e04c0e34602881a">syslink_message_t::data</a></div><div class="ttdeci">uint8_t data[SYSLINK_MAX_DATA_LEN]</div><div class="ttdef"><b>Definition:</b> <a href="syslink_8h_source.html#l00069">syslink.h:69</a></div></div>
 <div class="ttc" id="syslink_8c_html_ad9519dcc771a4e5d764b168f476c9cd1"><div class="ttname"><a href="syslink_8c.html#ad9519dcc771a4e5d764b168f476c9cd1">syslink_parse_init</a></div><div class="ttdeci">void syslink_parse_init(syslink_parse_state *state)</div><div class="ttdoc">Init syslink parser. </div><div class="ttdef"><b>Definition:</b> <a href="syslink_8c_source.html#l00033">syslink.c:33</a></div></div>
@@ -236,6 +236,7 @@ $(document).ready(function(){initNavTree('syslink_8c_source.html','');});
 <div class="ttc" id="syslink_8h_html_structsyslink__message__t"><div class="ttname"><a href="syslink_8h.html#structsyslink__message__t">syslink_message_t</a></div><div class="ttdef"><b>Definition:</b> <a href="syslink_8h_source.html#l00066">syslink.h:66</a></div></div>
 <div class="ttc" id="syslink_8h_html_a11dbb5d44baf70401bf28defe5202b20"><div class="ttname"><a href="syslink_8h.html#a11dbb5d44baf70401bf28defe5202b20">syslink_message_t::cksum</a></div><div class="ttdeci">uint8_t cksum[2]</div><div class="ttdef"><b>Definition:</b> <a href="syslink_8h_source.html#l00070">syslink.h:70</a></div></div>
 <div class="ttc" id="syslink_8c_html_acb5b03f84db2a11b296e3f1afe5d5ed7"><div class="ttname"><a href="syslink_8c.html#acb5b03f84db2a11b296e3f1afe5d5ed7">syslink_compute_cksum</a></div><div class="ttdeci">void syslink_compute_cksum(syslink_message_t *msg)</div><div class="ttdoc">Compute syslink checksum. </div><div class="ttdef"><b>Definition:</b> <a href="syslink_8c_source.html#l00112">syslink.c:112</a></div></div>
+<div class="ttc" id="wedgebug_8c_html_a83fc1af92e29717b4513d121b0c72c7d"><div class="ttname"><a href="wedgebug_8c.html#a83fc1af92e29717b4513d121b0c72c7d">b</a></div><div class="ttdeci">float b</div><div class="ttdef"><b>Definition:</b> <a href="wedgebug_8c_source.html#l00202">wedgebug.c:202</a></div></div>
 <div class="ttc" id="syslink_8h_html_ab5ee859a8212974e338863022272b30cafd8d00400d99ae0e29fbece3b37449e8"><div class="ttname"><a href="syslink_8h.html#ab5ee859a8212974e338863022272b30cafd8d00400d99ae0e29fbece3b37449e8">SYSLINK_STATE_START</a></div><div class="ttdef"><b>Definition:</b> <a href="syslink_8h_source.html#l00075">syslink.h:75</a></div></div>
 <div class="ttc" id="types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00014">types.h:14</a></div></div>
 <div class="ttc" id="syslink_8c_html_a84f1b8a7c817eb6516f9d4578cb7e381"><div class="ttname"><a href="syslink_8c.html#a84f1b8a7c817eb6516f9d4578cb7e381">syslink_parse_char</a></div><div class="ttdeci">bool syslink_parse_char(syslink_parse_state *state, uint8_t c, syslink_message_t *msg)</div><div class="ttdoc">Parse one byte. </div><div class="ttdef"><b>Definition:</b> <a href="syslink_8c_source.html#l00039">syslink.c:39</a></div></div>
@@ -254,7 +255,7 @@ $(document).ready(function(){initNavTree('syslink_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_164c7aa663179b26059278e7f36078da.html">datalink</a></li><li class="navelem"><a class="el" href="dir_847ced2633402d6448f9e1bf487c2d45.html">bitcraze</a></li><li class="navelem"><a class="el" href="syslink_8c.html">syslink.c</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:02:22 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:02:33 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

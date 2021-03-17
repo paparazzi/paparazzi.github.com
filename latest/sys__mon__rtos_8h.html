@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -266,7 +266,7 @@ string of thread names / identifiers </td></tr>
 
 <p>Definition at line <a class="el" href="sys__mon__rtos_8h_source.html#l00036">36</a> of file <a class="el" href="sys__mon__rtos_8h_source.html">sys_mon_rtos.h</a>.</p>
 
-<p>Referenced by <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c_source.html#l00046">rtos_mon_periodic_arch()</a>.</p>
+<p>Referenced by <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c_source.html#l00156">rtos_mon_periodic_arch()</a>.</p>
 
 </div>
 </div>
@@ -282,7 +282,7 @@ string of thread names / identifiers </td></tr>
 
 <p>Definition at line <a class="el" href="sys__mon__rtos_8h_source.html#l00040">40</a> of file <a class="el" href="sys__mon__rtos_8h_source.html">sys_mon_rtos.h</a>.</p>
 
-<p>Referenced by <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c_source.html#l00046">rtos_mon_periodic_arch()</a>.</p>
+<p>Referenced by <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c_source.html#l00156">rtos_mon_periodic_arch()</a>.</p>
 
 </div>
 </div>
@@ -315,17 +315,28 @@ string of thread names / identifiers </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c_source.html#l00039">39</a> of file <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c_source.html">rtos_mon_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c_source.html#l00144">144</a> of file <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c_source.html">rtos_mon_arch.c</a>.</p>
 
-<p>References <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c_source.html#l00035">idle_counter</a>, and <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c_source.html#l00035">last_idle_counter</a>.</p>
+<p>References <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c_source.html#l00036">idle_counter</a>, <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c_source.html#l00036">last_idle_counter</a>, and <a class="el" href="shell__arch_8c_source.html#l00085">shell_add_entry()</a>.</p>
 
 <p>Referenced by <a class="el" href="rtos__mon_8c_source.html#l00032">init_sysmon()</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="sys__mon__rtos_8h_a1b64b82ab870e30ee1f72178d3f16f74_cgraph.png" border="0" usemap="#sys__mon__rtos_8h_a1b64b82ab870e30ee1f72178d3f16f74_cgraph" alt=""/></div>
+<map name="sys__mon__rtos_8h_a1b64b82ab870e30ee1f72178d3f16f74_cgraph" id="sys__mon__rtos_8h_a1b64b82ab870e30ee1f72178d3f16f74_cgraph">
+<area shape="rect" id="node2" href="shell__arch_8c.html#a61cf879e2e341903b7e751694e94b491" title="Add dynamic entry. " alt="" coords="197,5,320,32"/></map>
+</div>
+</p>
+
+<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="sys__mon__rtos_8h_a1b64b82ab870e30ee1f72178d3f16f74_icgraph.png" border="0" usemap="#sys__mon__rtos_8h_a1b64b82ab870e30ee1f72178d3f16f74_icgraph" alt=""/></div>
 <map name="sys__mon__rtos_8h_a1b64b82ab870e30ee1f72178d3f16f74_icgraph" id="sys__mon__rtos_8h_a1b64b82ab870e30ee1f72178d3f16f74_icgraph">
 <area shape="rect" id="node2" href="sys__mon_8h.html#acb5edde6b801b04f23b2c89bd0117cde" title="Init system monitoring. " alt="" coords="197,5,296,32"/></map>
@@ -348,28 +359,28 @@ string of thread names / identifiers </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c_source.html#l00046">46</a> of file <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c_source.html">rtos_mon_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c_source.html#l00156">156</a> of file <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c_source.html">rtos_mon_arch.c</a>.</p>
 
-<p>References <a class="el" href="chconf_8h_source.html#l00052">CH_CFG_ST_FREQUENCY</a>, <a class="el" href="sys__mon__rtos_8h_source.html#l00047">rtos_monitoring::core_free_memory</a>, <a class="el" href="sys__mon__rtos_8h_source.html#l00051">rtos_monitoring::cpu_load</a>, <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c_source.html#l00100">get_stack_free()</a>, <a class="el" href="sys__mon__rtos_8h_source.html#l00049">rtos_monitoring::heap_fragments</a>, <a class="el" href="sys__mon__rtos_8h_source.html#l00048">rtos_monitoring::heap_free_memory</a>, <a class="el" href="sys__mon__rtos_8h_source.html#l00050">rtos_monitoring::heap_largest</a>, <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c_source.html#l00035">idle_counter</a>, <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c_source.html#l00035">last_idle_counter</a>, <a class="el" href="rtos__mon_8c_source.html#l00030">rtos_mon</a>, <a class="el" href="sys__mon__rtos_8h_source.html#l00036">RTOS_MON_MAX_THREADS</a>, <a class="el" href="sys__mon__rtos_8h_source.html#l00040">RTOS_MON_NAME_LEN</a>, <a class="el" href="sys__mon__rtos_8h_source.html#l00052">rtos_monitoring::thread_counter</a>, <a class="el" href="sys__mon__rtos_8h_source.html#l00054">rtos_monitoring::thread_free_stack</a>, <a class="el" href="sys__mon__rtos_8h_source.html#l00053">rtos_monitoring::thread_load</a>, <a class="el" href="sys__mon__rtos_8h_source.html#l00056">rtos_monitoring::thread_name_idx</a>, <a class="el" href="sys__mon__rtos_8h_source.html#l00055">rtos_monitoring::thread_names</a>, and <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c_source.html#l00034">thread_p_time</a>.</p>
+<p>References <a class="el" href="sys__mon__rtos_8h_source.html#l00047">rtos_monitoring::core_free_memory</a>, <a class="el" href="sys__mon__rtos_8h_source.html#l00051">rtos_monitoring::cpu_load</a>, <a class="el" href="wedgebug_8c_source.html#l00204">f</a>, <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c_source.html#l00210">get_stack_free()</a>, <a class="el" href="sys__mon__rtos_8h_source.html#l00049">rtos_monitoring::heap_fragments</a>, <a class="el" href="sys__mon__rtos_8h_source.html#l00048">rtos_monitoring::heap_free_memory</a>, <a class="el" href="sys__mon__rtos_8h_source.html#l00050">rtos_monitoring::heap_largest</a>, <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c_source.html#l00036">idle_counter</a>, <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c_source.html#l00036">last_idle_counter</a>, <a class="el" href="rtos__mon_8c_source.html#l00030">rtos_mon</a>, <a class="el" href="sys__mon__rtos_8h_source.html#l00036">RTOS_MON_MAX_THREADS</a>, <a class="el" href="sys__mon__rtos_8h_source.html#l00040">RTOS_MON_NAME_LEN</a>, <a class="el" href="sys__mon__rtos_8h_source.html#l00052">rtos_monitoring::thread_counter</a>, <a class="el" href="sys__mon__rtos_8h_source.html#l00054">rtos_monitoring::thread_free_stack</a>, <a class="el" href="sys__mon__rtos_8h_source.html#l00053">rtos_monitoring::thread_load</a>, <a class="el" href="sys__mon__rtos_8h_source.html#l00056">rtos_monitoring::thread_name_idx</a>, <a class="el" href="sys__mon__rtos_8h_source.html#l00055">rtos_monitoring::thread_names</a>, and <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c_source.html#l00035">thread_p_time</a>.</p>
 
 <p>Referenced by <a class="el" href="rtos__mon_8c_source.html#l00043">periodic_report_sysmon()</a>.</p>
 
-<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="sys__mon__rtos_8h_a145651dfc10decbb4b6cda9b5876854b_cgraph.png" border="0" usemap="#sys__mon__rtos_8h_a145651dfc10decbb4b6cda9b5876854b_cgraph" alt=""/></div>
 <map name="sys__mon__rtos_8h_a145651dfc10decbb4b6cda9b5876854b_cgraph" id="sys__mon__rtos_8h_a145651dfc10decbb4b6cda9b5876854b_cgraph">
 <area shape="rect" id="node2" href="chibios_2modules_2core_2rtos__mon__arch_8c.html#a5837f98f14d1dd47e1dc966abe9a9632" title="get_stack_free" alt="" coords="228,5,344,32"/></map>
 </div>
 </p>
 
-<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="sys__mon__rtos_8h_a145651dfc10decbb4b6cda9b5876854b_icgraph.png" border="0" usemap="#sys__mon__rtos_8h_a145651dfc10decbb4b6cda9b5876854b_icgraph" alt=""/></div>
 <map name="sys__mon__rtos_8h_a145651dfc10decbb4b6cda9b5876854b_icgraph" id="sys__mon__rtos_8h_a145651dfc10decbb4b6cda9b5876854b_icgraph">
 <area shape="rect" id="node2" href="sys__mon_8h.html#ac92d4ce59d619452e70fd3a3a53fb7a0" title="Report system status. " alt="" coords="228,5,403,32"/></map>
@@ -391,7 +402,7 @@ string of thread names / identifiers </td></tr>
 
 <p>Definition at line <a class="el" href="rtos__mon_8c_source.html#l00030">30</a> of file <a class="el" href="rtos__mon_8c_source.html">rtos_mon.c</a>.</p>
 
-<p>Referenced by <a class="el" href="rtos__mon_8c_source.html#l00032">init_sysmon()</a>, <a class="el" href="rtos__mon_8c_source.html#l00043">periodic_report_sysmon()</a>, and <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c_source.html#l00046">rtos_mon_periodic_arch()</a>.</p>
+<p>Referenced by <a class="el" href="rtos__mon_8c_source.html#l00032">init_sysmon()</a>, <a class="el" href="rtos__mon_8c_source.html#l00043">periodic_report_sysmon()</a>, and <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c_source.html#l00156">rtos_mon_periodic_arch()</a>.</p>
 
 </div>
 </div>
@@ -401,7 +412,7 @@ string of thread names / identifiers </td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_0e703de7e76e38c62de795c957434487.html">core</a></li><li class="navelem"><a class="el" href="sys__mon__rtos_8h.html">sys_mon_rtos.h</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:03:10 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:03:25 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

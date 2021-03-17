@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -176,7 +176,7 @@ $(document).ready(function(){initNavTree('low__pass__filter_8h_source.html','');
 <div class="line"><a name="l00141"></a><span class="lineno"><a class="line" href="low__pass__filter_8h.html#a96c76dd5aaa4bc076a2ffc6fc7f1ae37">  141</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="low__pass__filter_8h.html#a96c76dd5aaa4bc076a2ffc6fc7f1ae37">init_second_order_low_pass</a>(<span class="keyword">struct</span> <a class="code" href="low__pass__filter_8h.html#structSecondOrderLowPass">SecondOrderLowPass</a> *filter, <span class="keywordtype">float</span> tau, <span class="keywordtype">float</span> Q, <span class="keywordtype">float</span> sample_time,</div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="keywordtype">float</span> value)</div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;{</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  <span class="keywordtype">float</span> <a class="code" href="undistort__image_8c.html#a29a532ec52354ee7571487245359a066">K</a> = tanf(sample_time / (2.0f * tau));</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  <span class="keywordtype">float</span> <a class="code" href="undistort__image_8c.html#a29a532ec52354ee7571487245359a066">K</a> = tanf(sample_time / (2.0<a class="code" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a> * tau));</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;  <span class="keywordtype">float</span> poly = K * K + K / Q + 1.0f;</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  filter-&gt;<a class="code" href="low__pass__filter_8h.html#a86634a959db6a792bb43f58d58595155">a</a>[0] = 2.0f * (K * K - 1.0f) / poly;</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  filter-&gt;<a class="code" href="low__pass__filter_8h.html#a86634a959db6a792bb43f58d58595155">a</a>[1] = (K * K - K / Q + 1.0f) / poly;</div>
@@ -361,6 +361,7 @@ $(document).ready(function(){initNavTree('low__pass__filter_8h_source.html','');
 <div class="ttc" id="low__pass__filter_8h_html_a33317d546e99a444dfe12b0e8438a9c3"><div class="ttname"><a href="low__pass__filter_8h.html#a33317d546e99a444dfe12b0e8438a9c3">get_second_order_low_pass_int</a></div><div class="ttdeci">static int32_t get_second_order_low_pass_int(struct SecondOrderLowPass_int *filter)</div><div class="ttdoc">Get current value of the second order low pass filter(fixed point version). </div><div class="ttdef"><b>Definition:</b> <a href="low__pass__filter_8h_source.html#l00248">low_pass_filter.h:248</a></div></div>
 <div class="ttc" id="low__pass__filter_8h_html_a93b9c1290a8db1f57f92da352d940489"><div class="ttname"><a href="low__pass__filter_8h.html#a93b9c1290a8db1f57f92da352d940489">Butterworth4LowPass_int::lp1</a></div><div class="ttdeci">struct SecondOrderLowPass_int lp1</div><div class="ttdef"><b>Definition:</b> <a href="low__pass__filter_8h_source.html#l00395">low_pass_filter.h:395</a></div></div>
 <div class="ttc" id="low__pass__filter_8h_html_a2f2143b974670872a03cc02fa29ed066"><div class="ttname"><a href="low__pass__filter_8h.html#a2f2143b974670872a03cc02fa29ed066">update_butterworth_2_low_pass_int</a></div><div class="ttdeci">static int32_t update_butterworth_2_low_pass_int(Butterworth2LowPass_int *filter, int32_t value)</div><div class="ttdoc">Update second order Butterworth low pass filter state with a new value(fixed point version)...</div><div class="ttdef"><b>Definition:</b> <a href="low__pass__filter_8h_source.html#l00323">low_pass_filter.h:323</a></div></div>
+<div class="ttc" id="wedgebug_8c_html_a05fd2dba3354a98f1a00b7c7ffc12b13"><div class="ttname"><a href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a></div><div class="ttdeci">uint16_t f</div><div class="ttdoc">Camera baseline, in meters (i.e. horizontal distance between the two cameras of the stereo setup) ...</div><div class="ttdef"><b>Definition:</b> <a href="wedgebug_8c_source.html#l00204">wedgebug.c:204</a></div></div>
 <div class="ttc" id="low__pass__filter_8h_html_a3810bed549d1ed49264d45db0ef0a415"><div class="ttname"><a href="low__pass__filter_8h.html#a3810bed549d1ed49264d45db0ef0a415">get_butterworth_2_low_pass</a></div><div class="ttdeci">static float get_butterworth_2_low_pass(Butterworth2LowPass *filter)</div><div class="ttdoc">Get current value of the second order Butterworth low pass filter. </div><div class="ttdef"><b>Definition:</b> <a href="low__pass__filter_8h_source.html#l00290">low_pass_filter.h:290</a></div></div>
 <div class="ttc" id="low__pass__filter_8h_html_afc97054362b9d9e2c255b0193498bbe5"><div class="ttname"><a href="low__pass__filter_8h.html#afc97054362b9d9e2c255b0193498bbe5">get_first_order_low_pass</a></div><div class="ttdeci">static float get_first_order_low_pass(struct FirstOrderLowPass *filter)</div><div class="ttdoc">Get current value of the first order low pass filter. </div><div class="ttdef"><b>Definition:</b> <a href="low__pass__filter_8h_source.html#l00084">low_pass_filter.h:84</a></div></div>
 <div class="ttc" id="std_8h_html"><div class="ttname"><a href="std_8h.html">std.h</a></div></div>
@@ -391,7 +392,7 @@ $(document).ready(function(){initNavTree('low__pass__filter_8h_source.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_1444106569909aede49a887d28257b90.html">filters</a></li><li class="navelem"><a class="el" href="low__pass__filter_8h.html">low_pass_filter.h</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:02:13 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:02:24 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -177,7 +177,7 @@ $(document).ready(function(){initNavTree('printf_8c_source.html','');});
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#if CHPRINTF_USE_FLOAT</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keyword">static</span> <span class="keywordtype">int</span> intPow(<span class="keywordtype">int</span> a, <span class="keywordtype">int</span> b)</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keyword">static</span> <span class="keywordtype">int</span> intPow(<span class="keywordtype">int</span> a, <span class="keywordtype">int</span> <a class="code" href="wedgebug_8c.html#a83fc1af92e29717b4513d121b0c72c7d">b</a>)</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;{</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> c = a;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keywordflow">for</span> (<a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> n = b; n &gt; 1; n--) { c *= a; }</div>
@@ -561,6 +561,7 @@ $(document).ready(function(){initNavTree('printf_8c_source.html','');});
 <div class="ttc" id="group__chprintf_html_gad8b1843bc1a848126a7633f4aa1add5c"><div class="ttname"><a href="group__chprintf.html#gad8b1843bc1a848126a7633f4aa1add5c">serialPrint</a></div><div class="ttdeci">static noreturn void serialPrint(void *arg)</div><div class="ttdef"><b>Definition:</b> <a href="printf_8c_source.html#l00057">printf.c:57</a></div></div>
 <div class="ttc" id="types_8h_html_a06896e8c53f721507066c079052171f8"><div class="ttname"><a href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a></div><div class="ttdeci">unsigned long uint32_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00018">types.h:18</a></div></div>
 <div class="ttc" id="group__chprintf_html_gad88171c5e97371e1da27a5cc1a735285"><div class="ttname"><a href="group__chprintf.html#gad88171c5e97371e1da27a5cc1a735285">chvprintf</a></div><div class="ttdeci">void chvprintf(BaseSequentialStream *lchp, const char *fmt, va_list ap)</div><div class="ttdef"><b>Definition:</b> <a href="printf_8c_source.html#l00415">printf.c:415</a></div></div>
+<div class="ttc" id="wedgebug_8c_html_a83fc1af92e29717b4513d121b0c72c7d"><div class="ttname"><a href="wedgebug_8c.html#a83fc1af92e29717b4513d121b0c72c7d">b</a></div><div class="ttdeci">float b</div><div class="ttdef"><b>Definition:</b> <a href="wedgebug_8c_source.html#l00202">wedgebug.c:202</a></div></div>
 <div class="ttc" id="group__chprintf_html_aff9004a9588d7b04f9a4151ed5d4624b"><div class="ttname"><a href="group__chprintf.html#aff9004a9588d7b04f9a4151ed5d4624b">synchronous_print_arg_t::ap</a></div><div class="ttdeci">va_list ap</div><div class="ttdef"><b>Definition:</b> <a href="printf_8c_source.html#l00050">printf.c:50</a></div></div>
 <div class="ttc" id="group__chprintf_html_ga561a2515db27520c8a995f2f2213aed4"><div class="ttname"><a href="group__chprintf.html#ga561a2515db27520c8a995f2f2213aed4">chvsnprintf</a></div><div class="ttdeci">void chvsnprintf(char *buffer, size_t size, const char *fmt, va_list ap)</div><div class="ttdef"><b>Definition:</b> <a href="printf_8c_source.html#l00372">printf.c:372</a></div></div>
 <div class="ttc" id="types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00014">types.h:14</a></div></div>
@@ -574,7 +575,7 @@ $(document).ready(function(){initNavTree('printf_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_cbf4be70f5fb954ea1d2a546dd70b40e.html">loggers</a></li><li class="navelem"><a class="el" href="dir_c27662836f6a804eadd3e3b5df5506a4.html">sdlog_chibios</a></li><li class="navelem"><a class="el" href="printf_8c.html">printf.c</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:02:25 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:02:37 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

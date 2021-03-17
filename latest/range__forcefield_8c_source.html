@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -256,7 +256,7 @@ $(document).ready(function(){initNavTree('range__forcefield_8c_source.html','');
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;{</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  <span class="keywordtype">float</span> ff_vel = 0.f;</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  <span class="comment">// Calculate avoidance velocity</span></div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  <span class="keywordflow">if</span> (range &lt; 0.001f) {</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  <span class="keywordflow">if</span> (range &lt; 0.001<a class="code" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a>) {</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="comment">//do nothing</span></div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (range &lt; <a class="code" href="range__forcefield_8c.html#a28dcc8462610711f2652f63d5ef85ff3">range_forcefield_param</a>.<a class="code" href="range__forcefield_8h.html#a1175459d31a49a18edcf31c74bd2f28a">inner_limit</a>) {</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    ff_vel = -<a class="code" href="range__forcefield_8c.html#a28dcc8462610711f2652f63d5ef85ff3">range_forcefield_param</a>.<a class="code" href="range__forcefield_8h.html#acd8295bac35b1ab129336de483f2881c">max_vel</a>;</div>
@@ -277,10 +277,10 @@ $(document).ready(function(){initNavTree('range__forcefield_8c_source.html','');
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;{</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  <span class="comment">// check if obstacle in range for this axis</span></div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  <span class="comment">// 1/2 of total distance vector relates to an angle of 60deg in plane</span></div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  <span class="keywordflow">if</span> (fabsf(pos) &gt;= range / 2.f)</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  <span class="keywordflow">if</span> (fabsf(pos) &gt;= range / 2.<a class="code" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a>)</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  {</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="comment">// if obstacle should be considered in x axis, remember extremum in either direction</span></div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="keywordflow">if</span> (pos &gt; 0.f &amp;&amp; pos &lt; *nearest_pos)</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="keywordflow">if</span> (pos &gt; 0.<a class="code" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a> &amp;&amp; pos &lt; *nearest_pos)</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    {</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;      *nearest_pos = pos;</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (pos &lt; 0.f &amp;&amp; pos &gt; *nearest_pos)</div>
@@ -307,6 +307,7 @@ $(document).ready(function(){initNavTree('range__forcefield_8c_source.html','');
 <div class="ttc" id="range__forcefield_8c_html_ae7c08a04700a3886d8cd8c10101ef595"><div class="ttname"><a href="range__forcefield_8c.html#ae7c08a04700a3886d8cd8c10101ef595">ff_nearest_obs_neg</a></div><div class="ttdeci">static struct FloatVect3 ff_nearest_obs_neg</div><div class="ttdef"><b>Definition:</b> <a href="range__forcefield_8c_source.html#l00058">range_forcefield.c:58</a></div></div>
 <div class="ttc" id="range__forcefield_8c_html_a5fd193e119a7a58a69e0fd85407799a4"><div class="ttname"><a href="range__forcefield_8c.html#a5fd193e119a7a58a69e0fd85407799a4">RANGE_FORCEFIELD_MAX_VEL</a></div><div class="ttdeci">#define RANGE_FORCEFIELD_MAX_VEL</div><div class="ttdef"><b>Definition:</b> <a href="range__forcefield_8c_source.html#l00052">range_forcefield.c:52</a></div></div>
 <div class="ttc" id="range__forcefield_8h_html_ac0c6cd2d43660ccced3313a227a56a1e"><div class="ttname"><a href="range__forcefield_8h.html#ac0c6cd2d43660ccced3313a227a56a1e">range_forcefield_param_t::outer_limit</a></div><div class="ttdeci">float outer_limit</div><div class="ttdef"><b>Definition:</b> <a href="range__forcefield_8h_source.html#l00034">range_forcefield.h:34</a></div></div>
+<div class="ttc" id="wedgebug_8c_html_a05fd2dba3354a98f1a00b7c7ffc12b13"><div class="ttname"><a href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a></div><div class="ttdeci">uint16_t f</div><div class="ttdoc">Camera baseline, in meters (i.e. horizontal distance between the two cameras of the stereo setup) ...</div><div class="ttdef"><b>Definition:</b> <a href="wedgebug_8c_source.html#l00204">wedgebug.c:204</a></div></div>
 <div class="ttc" id="group__math__algebra__float_html_aa44c74404cf8ef0b143066e970352adb"><div class="ttname"><a href="group__math__algebra__float.html#aa44c74404cf8ef0b143066e970352adb">FloatVect3::x</a></div><div class="ttdeci">float x</div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__float_8h_source.html#l00055">pprz_algebra_float.h:55</a></div></div>
 <div class="ttc" id="range__forcefield_8h_html_structrange__forcefield__param__t"><div class="ttname"><a href="range__forcefield_8h.html#structrange__forcefield__param__t">range_forcefield_param_t</a></div><div class="ttdef"><b>Definition:</b> <a href="range__forcefield_8h_source.html#l00032">range_forcefield.h:32</a></div></div>
 <div class="ttc" id="range__forcefield_8h_html_abf9f1880d0d52f09d86065e527f5558e"><div class="ttname"><a href="range__forcefield_8h.html#abf9f1880d0d52f09d86065e527f5558e">range_forcefield_param_t::min_vel</a></div><div class="ttdeci">float min_vel</div><div class="ttdef"><b>Definition:</b> <a href="range__forcefield_8h_source.html#l00035">range_forcefield.h:35</a></div></div>
@@ -316,7 +317,7 @@ $(document).ready(function(){initNavTree('range__forcefield_8c_source.html','');
 <div class="ttc" id="range__forcefield_8c_html_ab38648e8813bfd7d402cbff3a8f0953a"><div class="ttname"><a href="range__forcefield_8c.html#ab38648e8813bfd7d402cbff3a8f0953a">RANGE_FORCEFIELD_MIN_VEL</a></div><div class="ttdeci">#define RANGE_FORCEFIELD_MIN_VEL</div><div class="ttdef"><b>Definition:</b> <a href="range__forcefield_8c_source.html#l00047">range_forcefield.c:47</a></div></div>
 <div class="ttc" id="range__forcefield_8c_html_a28dcc8462610711f2652f63d5ef85ff3"><div class="ttname"><a href="range__forcefield_8c.html#a28dcc8462610711f2652f63d5ef85ff3">range_forcefield_param</a></div><div class="ttdeci">struct range_forcefield_param_t range_forcefield_param</div><div class="ttdef"><b>Definition:</b> <a href="range__forcefield_8c_source.html#l00056">range_forcefield.c:56</a></div></div>
 <div class="ttc" id="group__math__algebra__float_html_structFloatRMat"><div class="ttname"><a href="group__math__algebra__float.html#structFloatRMat">FloatRMat</a></div><div class="ttdoc">rotation matrix </div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__float_8h_source.html#l00077">pprz_algebra_float.h:77</a></div></div>
-<div class="ttc" id="abi__sender__ids_8h_html_aaed040930aab51aeb612aba936c5d748"><div class="ttname"><a href="abi__sender__ids_8h.html#aaed040930aab51aeb612aba936c5d748">RANGE_FORCEFIELD_ID</a></div><div class="ttdeci">#define RANGE_FORCEFIELD_ID</div><div class="ttdef"><b>Definition:</b> <a href="abi__sender__ids_8h_source.html#l00434">abi_sender_ids.h:434</a></div></div>
+<div class="ttc" id="abi__sender__ids_8h_html_aaed040930aab51aeb612aba936c5d748"><div class="ttname"><a href="abi__sender__ids_8h.html#aaed040930aab51aeb612aba936c5d748">RANGE_FORCEFIELD_ID</a></div><div class="ttdeci">#define RANGE_FORCEFIELD_ID</div><div class="ttdef"><b>Definition:</b> <a href="abi__sender__ids_8h_source.html#l00466">abi_sender_ids.h:466</a></div></div>
 <div class="ttc" id="range__forcefield_8c_html_a8be158d737dc3d0e423dd0807e89a7aa"><div class="ttname"><a href="range__forcefield_8c.html#a8be158d737dc3d0e423dd0807e89a7aa">obstacle_cb</a></div><div class="ttdeci">static void obstacle_cb(uint8_t sender_id, float range, float azimuth, float bearing)</div><div class="ttdef"><b>Definition:</b> <a href="range__forcefield_8c_source.html#l00064">range_forcefield.c:64</a></div></div>
 <div class="ttc" id="range__forcefield_8c_html_aaa44bb55d92a2c3cee6b6fb32a8f30ac"><div class="ttname"><a href="range__forcefield_8c.html#aaa44bb55d92a2c3cee6b6fb32a8f30ac">store_min_dist</a></div><div class="ttdeci">static void store_min_dist(float pos, float *nearest_pos, float range)</div><div class="ttdef"><b>Definition:</b> <a href="range__forcefield_8c_source.html#l00165">range_forcefield.c:165</a></div></div>
 <div class="ttc" id="group__math__algebra__float_html_ac5e44e02fe71768bf56eb39a14f3cc5b"><div class="ttname"><a href="group__math__algebra__float.html#ac5e44e02fe71768bf56eb39a14f3cc5b">FloatVect3::y</a></div><div class="ttdeci">float y</div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__float_8h_source.html#l00056">pprz_algebra_float.h:56</a></div></div>
@@ -331,7 +332,7 @@ $(document).ready(function(){initNavTree('range__forcefield_8c_source.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_383aa5ecfbb15f18bd0448126dc1b607.html">range_forcefield</a></li><li class="navelem"><a class="el" href="range__forcefield_8c.html">range_forcefield.c</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:02:29 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:02:40 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

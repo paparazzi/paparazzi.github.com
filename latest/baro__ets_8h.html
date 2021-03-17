@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -144,7 +144,7 @@ Macros</h2></td></tr>
 <tr class="memitem:a1cd246b7f290cedbc05e6ad1abdad2e0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="baro__ets_8h.html#a1cd246b7f290cedbc05e6ad1abdad2e0">BARO_ETS_DT</a>&#160;&#160;&#160;BARO_ETS_READ_PERIODIC_PERIOD</td></tr>
 <tr class="memdesc:a1cd246b7f290cedbc05e6ad1abdad2e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">new measurement every baro_ets_read_periodic  <a href="#a1cd246b7f290cedbc05e6ad1abdad2e0">More...</a><br /></td></tr>
 <tr class="separator:a1cd246b7f290cedbc05e6ad1abdad2e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8593684bb1be9bea4a2541091926e973"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="baro__ets_8h.html#a8593684bb1be9bea4a2541091926e973">BaroEtsEvent</a>()&#160;&#160;&#160;{ if (<a class="el" href="nps__radio__control__spektrum_8c.html#ade818037fd6c985038ff29656089758d">baro_ets_i2c_trans.status</a> == <a class="el" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a2884da616ec2ff9183e649f8fab1073b">I2CTransSuccess</a>) <a class="el" href="baro__ets_8h.html#a96839d4b74df9e3c49695989b344bac1">baro_ets_read_event</a>(); }</td></tr>
+<tr class="memitem:a8593684bb1be9bea4a2541091926e973"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="baro__ets_8h.html#a8593684bb1be9bea4a2541091926e973">BaroEtsEvent</a>()&#160;&#160;&#160;{ <a class="el" href="e__identification__fr_8c.html#a92cffae21318c1d983c63f3afa2a8d87">if</a> (<a class="el" href="nps__radio__control__spektrum_8c.html#ade818037fd6c985038ff29656089758d">baro_ets_i2c_trans.status</a> == <a class="el" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a2884da616ec2ff9183e649f8fab1073b">I2CTransSuccess</a>) <a class="el" href="baro__ets_8h.html#a96839d4b74df9e3c49695989b344bac1">baro_ets_read_event</a>(); }</td></tr>
 <tr class="separator:a8593684bb1be9bea4a2541091926e973"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -207,7 +207,7 @@ Variables</h2></td></tr>
           <td class="memname">#define BaroEtsEvent</td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td>&#160;&#160;&#160;{ if (<a class="el" href="nps__radio__control__spektrum_8c.html#ade818037fd6c985038ff29656089758d">baro_ets_i2c_trans.status</a> == <a class="el" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a2884da616ec2ff9183e649f8fab1073b">I2CTransSuccess</a>) <a class="el" href="baro__ets_8h.html#a96839d4b74df9e3c49695989b344bac1">baro_ets_read_event</a>(); }</td>
+          <td>&#160;&#160;&#160;{ <a class="el" href="e__identification__fr_8c.html#a92cffae21318c1d983c63f3afa2a8d87">if</a> (<a class="el" href="nps__radio__control__spektrum_8c.html#ade818037fd6c985038ff29656089758d">baro_ets_i2c_trans.status</a> == <a class="el" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a2884da616ec2ff9183e649f8fab1073b">I2CTransSuccess</a>) <a class="el" href="baro__ets_8h.html#a96839d4b74df9e3c49695989b344bac1">baro_ets_read_event</a>(); }</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -434,7 +434,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_2f48bbb566df394f79dcf8fe0631584a.html">sensors</a></li><li class="navelem"><a class="el" href="baro__ets_8h.html">baro_ets.h</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:03:23 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:03:39 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

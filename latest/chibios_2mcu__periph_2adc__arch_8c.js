@@ -2,7 +2,7 @@ var chibios_2mcu__periph_2adc__arch_8c =
 [
     [ "ADC_BUF_DEPTH", "chibios_2mcu__periph_2adc__arch_8c.html#a6e829897b1929e18c1413dd484408d4a", null ],
     [ "USE_AD1", "chibios_2mcu__periph_2adc__arch_8c.html#a2934d6c02a6319444fb3e892c72cb8f6", null ],
-    [ "adc1callback", "chibios_2mcu__periph_2adc__arch_8c.html#a0c618f185daded30a24ca6ca8a5b9f90", null ],
+    [ "adc1callback", "chibios_2mcu__periph_2adc__arch_8c.html#a26596acde147dd47078caaeefd0b502d", null ],
     [ "adc_buf_channel", "chibios_2mcu__periph_2adc__arch_8c.html#a289883844d6749adab1cee5aabe41824", null ],
     [ "adc_init", "chibios_2mcu__periph_2adc__arch_8c.html#a2b815e6730e8723a6d1d06d9ef8f31c0", null ],
     [ "adc_regular_sequence", "chibios_2mcu__periph_2adc__arch_8c.html#ab20565c2f3d25af97a62849647c4cd71", null ],

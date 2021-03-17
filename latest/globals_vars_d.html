@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -162,26 +162,6 @@ $(document).ready(function(){initNavTree('globals_vars_d.html','');});
 <li>d_radius
 : <a class="el" href="nav__smooth_8c.html#aad9cde020f86248f197056a4abedbff2">nav_smooth.c</a>
 </li>
-<li>dac1cfg1
-: <a class="el" href="vms__ecu__demo_8c.html#a43519755d2ae7b93d3c1a66d0982f714">vms_ecu_demo.c</a>
-</li>
-<li>dac1cfg2
-: <a class="el" href="vms__ecu__demo_8c.html#a17467aaf60648a5b516fa9ee777a3083">vms_ecu_demo.c</a>
-</li>
-<li>dac_1
-: <a class="el" href="vms__ecu__demo_8h.html#ac980a7301b46c80d918aad4c70de7e94">vms_ecu_demo.h</a>
-, <a class="el" href="vms__ecu__demo_8c.html#ac980a7301b46c80d918aad4c70de7e94">vms_ecu_demo.c</a>
-</li>
-<li>dac_2
-: <a class="el" href="vms__ecu__demo_8c.html#a89e57157075c5e6a8938e95a12d6f6cf">vms_ecu_demo.c</a>
-, <a class="el" href="vms__ecu__demo_8h.html#a89e57157075c5e6a8938e95a12d6f6cf">vms_ecu_demo.h</a>
-</li>
-<li>dac_ref1
-: <a class="el" href="vms__ecu__demo_8c.html#a8290e7005ab434daab0053ed83af6b91">vms_ecu_demo.c</a>
-</li>
-<li>dac_ref2
-: <a class="el" href="vms__ecu__demo_8c.html#a077fd27480e70c7aa38e4c3b3ea81392">vms_ecu_demo.c</a>
-</li>
 <li>data_chk
 : <a class="el" href="imu__um6_8c.html#a004d9fd363b52aa0d92a3b14d366180f">imu_um6.c</a>
 </li>
@@ -300,12 +280,19 @@ $(document).ready(function(){initNavTree('globals_vars_d.html','');});
 : <a class="el" href="trig__ext__hw_8c.html#a1475a5d212043e635accd9b651da5163">trig_ext_hw.c</a>
 , <a class="el" href="trig__ext__hw_8h.html#a1475a5d212043e635accd9b651da5163">trig_ext_hw.h</a>
 </li>
+<li>deploy_parachute_var
+: <a class="el" href="uav__recovery_8c.html#ae522f8da76f9ca209cc57fed0df3a7b7">uav_recovery.c</a>
+, <a class="el" href="uav__recovery_8h.html#ae522f8da76f9ca209cc57fed0df3a7b7">uav_recovery.h</a>
+</li>
 <li>derotated
 : <a class="el" href="optical__flow__hover_8c.html#a2b3f1268d3aa2dd01613e45ccea85bc1">optical_flow_hover.c</a>
 , <a class="el" href="optical__flow__hover_8h.html#a2b3f1268d3aa2dd01613e45ccea85bc1">optical_flow_hover.h</a>
 </li>
 <li>des_inputs
 : <a class="el" href="optical__flow__hover_8c.html#a429aab4b5eb53fd1a3b4e8b1e468224a">optical_flow_hover.c</a>
+</li>
+<li>desired_airspeed
+: <a class="el" href="guidance__indi__hybrid_8c.html#afe53f56d0e04394c4cbe6046ea0f9769">guidance_indi_hybrid.c</a>
 </li>
 <li>desired_vx
 : <a class="el" href="guidance__OA_8c.html#ac60a805c018ce3995fdcc36367f6f658">guidance_OA.c</a>
@@ -355,6 +342,12 @@ $(document).ready(function(){initNavTree('globals_vars_d.html','');});
 <li>deviceDescriptorData
 : <a class="el" href="usb__msd_8c.html#aa59bb17f23365bf16f6329a6308211da">usb_msd.c</a>
 </li>
+<li>dfu_command_state
+: <a class="el" href="dfu__command_8c.html#a78381f36390b81a4121b85e1da68e4a3">dfu_command.c</a>
+</li>
+<li>dfu_command_str
+: <a class="el" href="dfu__command_8c.html#ae599677ab5e039ea5ce9e77f26b052cd">dfu_command.c</a>
+</li>
 <li>dictionary
 : <a class="el" href="textons_8c.html#aa001b0d3ed88b85389ec8728067ee093">textons.c</a>
 , <a class="el" href="textons_8h.html#aa001b0d3ed88b85389ec8728067ee093">textons.h</a>
@@ -399,16 +392,16 @@ $(document).ready(function(){initNavTree('globals_vars_d.html','');});
 : <a class="el" href="boards_2disco_2actuators_8c.html#ae7f7db15e6ce95dfaee72acf95d2b660">actuators.c</a>
 </li>
 <li>dist2_to_home
-: <a class="el" href="rotorcraft_2navigation_8c.html#aaa0755e7078e30953f14178d3dcd90ee">navigation.c</a>
+: <a class="el" href="common__nav_8h.html#aaa0755e7078e30953f14178d3dcd90ee">common_nav.h</a>
+, <a class="el" href="rotorcraft_2navigation_8c.html#aaa0755e7078e30953f14178d3dcd90ee">navigation.c</a>
 , <a class="el" href="rotorcraft_2navigation_8h.html#aaa0755e7078e30953f14178d3dcd90ee">navigation.h</a>
 , <a class="el" href="common__nav_8c.html#aaa0755e7078e30953f14178d3dcd90ee">common_nav.c</a>
-, <a class="el" href="common__nav_8h.html#aaa0755e7078e30953f14178d3dcd90ee">common_nav.h</a>
 </li>
 <li>dist2_to_wp
-: <a class="el" href="rotorcraft_2navigation_8c.html#a1ea7c4cd1046a57c3444b89a1dce6250">navigation.c</a>
+: <a class="el" href="common__nav_8h.html#a1ea7c4cd1046a57c3444b89a1dce6250">common_nav.h</a>
+, <a class="el" href="rotorcraft_2navigation_8c.html#a1ea7c4cd1046a57c3444b89a1dce6250">navigation.c</a>
 , <a class="el" href="rotorcraft_2navigation_8h.html#a1ea7c4cd1046a57c3444b89a1dce6250">navigation.h</a>
 , <a class="el" href="common__nav_8c.html#a1ea7c4cd1046a57c3444b89a1dce6250">common_nav.c</a>
-, <a class="el" href="common__nav_8h.html#a1ea7c4cd1046a57c3444b89a1dce6250">common_nav.h</a>
 </li>
 <li>Dist_offset
 : <a class="el" href="obstacle__avoidance_8c.html#ae300e554cb529ecf303fa34a382f3428">obstacle_avoidance.c</a>
@@ -416,6 +409,15 @@ $(document).ready(function(){initNavTree('globals_vars_d.html','');});
 </li>
 <li>dist_treshold
 : <a class="el" href="obstacle__avoidance_8c.html#aeaa1545f2bd5eb0a0bfdea9e1419be01">obstacle_avoidance.c</a>
+</li>
+<li>distance_robot_edge_goal
+: <a class="el" href="wedgebug_8c.html#a493dbf7dc56ed17255d8363b876d7655">wedgebug.c</a>
+</li>
+<li>distance_traveled
+: <a class="el" href="wedgebug_8c.html#ac59b242bab7846c8e4b6039d86829817">wedgebug.c</a>
+</li>
+<li>distance_wall
+: <a class="el" href="nav__fish_8c.html#a1a95e485c401827910c6778b75ccf767">nav_fish.c</a>
 </li>
 <li>DistanceFromCenter
 : <a class="el" href="nav__flower_8c.html#a6327730ac29ad3556b8ccb0380b8b368">nav_flower.c</a>
@@ -556,28 +558,28 @@ $(document).ready(function(){initNavTree('globals_vars_d.html','');});
 : <a class="el" href="dw1000__arduino_8c.html#af3891630638703e550f2d4484c0d3814">dw1000_arduino.c</a>
 </li>
 <li>dw1000_ekf_q
-: <a class="el" href="dw1000__arduino_8h.html#a37e2fd71813aace68c504e7931e16f71">dw1000_arduino.h</a>
-, <a class="el" href="dw1000__arduino_8c.html#a37e2fd71813aace68c504e7931e16f71">dw1000_arduino.c</a>
+: <a class="el" href="dw1000__arduino_8c.html#a37e2fd71813aace68c504e7931e16f71">dw1000_arduino.c</a>
+, <a class="el" href="dw1000__arduino_8h.html#a37e2fd71813aace68c504e7931e16f71">dw1000_arduino.h</a>
 </li>
 <li>dw1000_ekf_r_dist
-: <a class="el" href="dw1000__arduino_8h.html#a4e4f4c241711c42805c55e1b6dda8abf">dw1000_arduino.h</a>
-, <a class="el" href="dw1000__arduino_8c.html#a4e4f4c241711c42805c55e1b6dda8abf">dw1000_arduino.c</a>
+: <a class="el" href="dw1000__arduino_8c.html#a4e4f4c241711c42805c55e1b6dda8abf">dw1000_arduino.c</a>
+, <a class="el" href="dw1000__arduino_8h.html#a4e4f4c241711c42805c55e1b6dda8abf">dw1000_arduino.h</a>
 </li>
 <li>dw1000_ekf_r_speed
 : <a class="el" href="dw1000__arduino_8h.html#a4854998281c6c0ee64472ac72b4715e3">dw1000_arduino.h</a>
 , <a class="el" href="dw1000__arduino_8c.html#a4854998281c6c0ee64472ac72b4715e3">dw1000_arduino.c</a>
 </li>
 <li>dw1000_use_ekf
-: <a class="el" href="dw1000__arduino_8c.html#a37cdd8c98109e6f3af0664ffd9041e19">dw1000_arduino.c</a>
-, <a class="el" href="dw1000__arduino_8h.html#a37cdd8c98109e6f3af0664ffd9041e19">dw1000_arduino.h</a>
+: <a class="el" href="dw1000__arduino_8h.html#a37cdd8c98109e6f3af0664ffd9041e19">dw1000_arduino.h</a>
+, <a class="el" href="dw1000__arduino_8c.html#a37cdd8c98109e6f3af0664ffd9041e19">dw1000_arduino.c</a>
 </li>
 <li>dx_ref
 : <a class="el" href="obstacle__avoidance_8c.html#a323218194c24af766edc3bbc13be01df">obstacle_avoidance.c</a>
 , <a class="el" href="obstacle__avoidance_8h.html#a323218194c24af766edc3bbc13be01df">obstacle_avoidance.h</a>
 </li>
 <li>dy_ref
-: <a class="el" href="obstacle__avoidance_8h.html#a3fb2dfb571f5a53b2b83f95588ff8ad7">obstacle_avoidance.h</a>
-, <a class="el" href="obstacle__avoidance_8c.html#a3fb2dfb571f5a53b2b83f95588ff8ad7">obstacle_avoidance.c</a>
+: <a class="el" href="obstacle__avoidance_8c.html#a3fb2dfb571f5a53b2b83f95588ff8ad7">obstacle_avoidance.c</a>
+, <a class="el" href="obstacle__avoidance_8h.html#a3fb2dfb571f5a53b2b83f95588ff8ad7">obstacle_avoidance.h</a>
 </li>
 </ul>
 </div><!-- contents -->
@@ -585,7 +587,7 @@ $(document).ready(function(){initNavTree('globals_vars_d.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri May 15 2020 04:04:11 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:04:30 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

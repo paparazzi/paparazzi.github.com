@@ -6,7 +6,6 @@ var structDSHOTDriver =
     [ "crc_errors", "structDSHOTDriver.html#a2d919233183b582c8e5b0159a7a72f88", null ],
     [ "dma_conf", "structDSHOTDriver.html#ac1147bd28c2d0290b8528a55b7a4bacb", null ],
     [ "dmap", "structDSHOTDriver.html#a46537453cfb72dbafb999399c52dfbb1", null ],
-    [ "dsdb", "structDSHOTDriver.html#ab37969b6e27ee1dc6199d9aeff63d3c9", null ],
     [ "dshotMotors", "structDSHOTDriver.html#a3760849831455c2dc6a5e1e229286f2a", null ],
     [ "mb", "structDSHOTDriver.html#a3b35fde29418ecbf8e38120484c2b058", null ],
     [ "pwm_conf", "structDSHOTDriver.html#a7daea2f55abfadd7969e78a714bbed61", null ]

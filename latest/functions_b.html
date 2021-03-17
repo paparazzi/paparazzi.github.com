@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -293,10 +293,14 @@ $(document).ready(function(){initNavTree('functions_b.html','');});
 <li>before_cb
 : <a class="el" href="group__spi.html#a34d366d59c97ab1993da279ec6c19658">spi_transaction</a>
 </li>
+<li>begin
+: <a class="el" href="microrl_8h.html#a9a40d7394542a4e58274ba086119204d">ring_history_t</a>
+</li>
 <li>beta
 : <a class="el" href="avi__isp__green__imbalance_8h.html#a6280fab309c9db7777263dd5cafdf673">avi_isp_green_imbalance_regs</a>
 , <a class="el" href="avi__isp__lens__shading__correction_8h.html#a588e4856c8492e3bde0ebf1b3b5600a2">avi_isp_lens_shading_correction_regs</a>
 , <a class="el" href="flight__gear_8h.html#a8e0b1597eaf2aa887c76328a7080e22f">FGNetFDM</a>
+, <a class="el" href="gvf__parametric_8h.html#ac2e57e27360aea0c56bbd39c99a94c26">gvf_parametric_con</a>
 , <a class="el" href="1e__filter_8h.html#aad11a5969e1eb7cbfd9d020cc7929fad">OneEuroFilter</a>
 , <a class="el" href="UKF__Wind__Estimator_8h.html#aedebbab717c9a2c8c6038861e5ba6068">ukf_init_tag</a>
 </li>
@@ -325,6 +329,22 @@ $(document).ready(function(){initNavTree('functions_b.html','');});
 </li>
 <li>bind_mfg_id32
 : <a class="el" href="subsystems_2datalink_2superbitrf_8h.html#a0028d05d0053a49089b8380425ce3d2f">SuperbitRF</a>
+</li>
+<li>bindHopData
+: <a class="el" href="cc2500__settings_8h.html#a62fddcf0df11b8e0a26349ad92a088fc">cc2500_settings_persistent_s</a>
+, <a class="el" href="cc2500__settings_8h.html#a6685b6f2f7a8813373bc72c852be34a4">rxCc2500SpiConfig_s</a>
+</li>
+<li>bindIoTag
+: <a class="el" href="cc2500__settings_8h.html#aa77f9a254acb5ae520fd963654facd72">rxSpiConfig_s</a>
+</li>
+<li>bindOffset
+: <a class="el" href="cc2500__settings_8h.html#a75a98539cac6b5ab2edac6021115d430">rxCc2500SpiConfig_s</a>
+</li>
+<li>bindTxId
+: <a class="el" href="cc2500__settings_8h.html#ac0ce480ecaca53215c34048342c09ffe">rxCc2500SpiConfig_s</a>
+</li>
+<li>bindVars
+: <a class="el" href="cc2500__settings_8h.html#ac7777839eb99c3e8d7a4cdb16dcaf495">cc2500_settings_persistent_s</a>
 </li>
 <li>bit_state
 : <a class="el" href="softi2c_8c.html#ab869dd47e98b55836a1306b35d04c031">softi2c_device</a>
@@ -459,7 +479,7 @@ $(document).ready(function(){initNavTree('functions_b.html','');});
 , <a class="el" href="aoa__adc_8h.html#aafa95cd077dfe80481bc0f89e88687cb">Aoa_Adc</a>
 , <a class="el" href="lisa__l_2baro__board_8c.html#ae0641a99787ef38d44a1b429e584d6fe">BaroBoard</a>
 , <a class="el" href="dw1000__arduino_8c.html#a42f2e4815d846e5082acc53259294277">DW1000</a>
-, <a class="el" href="stm32_2usb__ser__hw_8c.html#af6872113b054f3bed2382adf6919e4f5">fifo_t</a>
+, <a class="el" href="frsky__x_8h.html#af6872113b054f3bed2382adf6919e4f5">fifo_t</a>
 , <a class="el" href="i2c__smbus_8h.html#a18a0ec0f4f45577ea2b751b984b00762">i2c_msg</a>
 , <a class="el" href="group__i2c.html#a295b2671835ae06b28905433cd1096ee">i2c_transaction</a>
 , <a class="el" href="image_8h.html#a4af7d619f8367a3e68fbfad265546011">image_t</a>
@@ -488,6 +508,13 @@ $(document).ready(function(){initNavTree('functions_b.html','');});
 </li>
 <li>buf_size
 : <a class="el" href="image_8h.html#a42e8d87861c2a899bd4090bacf58c9dd">image_t</a>
+, <a class="el" href="wedgebug_8h.html#a5723fd33c6b7b2cd536979263f4c92c4">kernel_C1</a>
+</li>
+<li>buf_values
+: <a class="el" href="wedgebug_8h.html#adc075b747797febb903aced2deeae2b8">kernel_C1</a>
+</li>
+<li>buf_weights
+: <a class="el" href="wedgebug_8h.html#a4ea132f93c38741c3fab165ca65f722d">kernel_C1</a>
 </li>
 <li>buffer
 : <a class="el" href="cyrf6936_8h.html#a8f8ad7b672b42a6f2c272c8316bd2102">Cyrf6936</a>
@@ -569,7 +596,7 @@ $(document).ready(function(){initNavTree('functions_b.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri May 15 2020 04:04:08 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:04:26 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

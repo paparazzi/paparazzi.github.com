@@ -64,6 +64,7 @@ var rotorcraft_2navigation_8c =
     [ "exception_flag", "rotorcraft_2navigation_8c.html#adeee457a987f1cfcc2e8373d24dab99a", null ],
     [ "failsafe_mode_dist2", "rotorcraft_2navigation_8c.html#a7369d742619e7cbb1b71ec46f845f06e", null ],
     [ "flight_altitude", "rotorcraft_2navigation_8c.html#a1612ea0e1474e49b800cb3f497096523", null ],
+    [ "force_forward", "rotorcraft_2navigation_8c.html#a0975dd5198f47a9c645f2716ae848235", null ],
     [ "horizontal_mode", "rotorcraft_2navigation_8c.html#ad2a5195a657a7961bfb54e3c2da48a21", null ],
     [ "max_dist2_from_home", "rotorcraft_2navigation_8c.html#ab0ed2ee7b3192c24e5386a15a2b28d86", null ],
     [ "max_dist_from_home", "rotorcraft_2navigation_8c.html#a39e68d4d623ea9227c80c01203ce97b5", null ],
@@ -93,6 +94,7 @@ var rotorcraft_2navigation_8c =
     [ "navigation_carrot", "rotorcraft_2navigation_8c.html#a38461a74b0c87b0940a728140e2be361", null ],
     [ "navigation_target", "rotorcraft_2navigation_8c.html#a8441e260eaf698f39ec52124f0b31154", null ],
     [ "oval_status", "rotorcraft_2navigation_8c.html#a80cf41be180b9c15f127bcbee731fb9b", null ],
+    [ "to_end_vect", "rotorcraft_2navigation_8c.html#a6b57e8ad91fa849c094d1f9f37058e87", null ],
     [ "too_far_from_home", "rotorcraft_2navigation_8c.html#a40345348447d2bf9b3462286f0b95a4f", null ],
     [ "UNUSED", "rotorcraft_2navigation_8c.html#a9314d7061c454ecf2111d3965db8f23f", null ],
     [ "vertical_mode", "rotorcraft_2navigation_8c.html#af752145e6cd167ae0146e1a957f2e9e3", null ]

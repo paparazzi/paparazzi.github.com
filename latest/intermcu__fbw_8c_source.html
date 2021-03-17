@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -172,7 +172,7 @@ $(document).ready(function(){initNavTree('intermcu__fbw_8c_source.html','');});
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="intermcu__fbw_8c.html#a335ac55e41c48ae94a03a8a17c0af5d8">intermcu_parse_msg</a>(<span class="keywordtype">void</span> (*commands_frame_handler)(<span class="keywordtype">void</span>));</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#ifdef BOARD_PX4IO</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> checkPx4RebootCommand(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> b);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> checkPx4RebootCommand(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code" href="wedgebug_8c.html#a83fc1af92e29717b4513d121b0c72c7d">b</a>);</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#ifdef USE_GPS</span></div>
@@ -360,7 +360,7 @@ $(document).ready(function(){initNavTree('intermcu__fbw_8c_source.html','');});
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;<span class="comment">/* SOME STUFF FOR PX4IO BOOTLOADER (TODO: move this code) */</span></div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;<span class="preprocessor">#ifdef BOARD_PX4IO</span></div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> checkPx4RebootCommand(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> b)</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> checkPx4RebootCommand(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="wedgebug_8c.html#a83fc1af92e29717b4513d121b0c72c7d">b</a>)</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;{</div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;  <span class="keywordflow">if</span> (intermcu.stable_px4_baud == <a class="code" href="intermcu_8h.html#a692b0f0e24d84c328657634259b6cc2ca36ee2d0f06e011ba8141b65ee0ed3a09">CHANGING_BAUD</a> &amp;&amp; <a class="code" href="sys__time_8h.html#a51e98e20394934c8db19022ab2adc4c1">sys_time_check_and_ack_timer</a>(px4bl_tid)) {</div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <span class="comment">//to prevent a short intermcu comm loss, give some time to changing the baud</span></div>
@@ -426,7 +426,7 @@ $(document).ready(function(){initNavTree('intermcu__fbw_8c_source.html','');});
 <div class="ttc" id="intermcu__ap_8h_html_ae59b042496b1debe96e1d98fbc3e4b1f"><div class="ttname"><a href="intermcu__ap_8h.html#ae59b042496b1debe96e1d98fbc3e4b1f">RADIO_ROLL</a></div><div class="ttdeci">#define RADIO_ROLL</div><div class="ttdef"><b>Definition:</b> <a href="intermcu__ap_8h_source.html#l00041">intermcu_ap.h:41</a></div></div>
 <div class="ttc" id="uart_8h_html"><div class="ttname"><a href="uart_8h.html">uart.h</a></div><div class="ttdoc">arch independent UART (Universal Asynchronous Receiver/Transmitter) API </div></div>
 <div class="ttc" id="intermcu__ap_8h_html_a9fd86154b023cbc8a9981059db36497b"><div class="ttname"><a href="intermcu__ap_8h.html#a9fd86154b023cbc8a9981059db36497b">RADIO_AUX2</a></div><div class="ttdeci">#define RADIO_AUX2</div><div class="ttdef"><b>Definition:</b> <a href="intermcu__ap_8h_source.html#l00047">intermcu_ap.h:47</a></div></div>
-<div class="ttc" id="chibios_2mcu__periph_2uart__arch_8c_html_a3eff2a82ddc632e5626c04ad4e717e3b"><div class="ttname"><a href="chibios_2mcu__periph_2uart__arch_8c.html#a3eff2a82ddc632e5626c04ad4e717e3b">uart_periph_set_baudrate</a></div><div class="ttdeci">void uart_periph_set_baudrate(struct uart_periph *p, uint32_t baud)</div><div class="ttdoc">Set baudrate. </div><div class="ttdef"><b>Definition:</b> <a href="chibios_2mcu__periph_2uart__arch_8c_source.html#l00883">uart_arch.c:883</a></div></div>
+<div class="ttc" id="chibios_2mcu__periph_2uart__arch_8c_html_a3eff2a82ddc632e5626c04ad4e717e3b"><div class="ttname"><a href="chibios_2mcu__periph_2uart__arch_8c.html#a3eff2a82ddc632e5626c04ad4e717e3b">uart_periph_set_baudrate</a></div><div class="ttdeci">void uart_periph_set_baudrate(struct uart_periph *p, uint32_t baud)</div><div class="ttdoc">Set baudrate. </div><div class="ttdef"><b>Definition:</b> <a href="chibios_2mcu__periph_2uart__arch_8c_source.html#l00984">uart_arch.c:984</a></div></div>
 <div class="ttc" id="intermcu_8h_html_a27272b8dd8e385cb24f0d40b6883a388"><div class="ttname"><a href="intermcu_8h.html#a27272b8dd8e385cb24f0d40b6883a388">INTERMCU_LOST_CNT</a></div><div class="ttdeci">#define INTERMCU_LOST_CNT</div><div class="ttdef"><b>Definition:</b> <a href="intermcu_8h_source.html#l00038">intermcu.h:38</a></div></div>
 <div class="ttc" id="intermcu__fbw_8c_html_adcdc6b9f50a18ffb752601fadb90dded"><div class="ttname"><a href="intermcu__fbw_8c.html#adcdc6b9f50a18ffb752601fadb90dded">imcu_msg_buf</a></div><div class="ttdeci">uint8_t imcu_msg_buf[128]</div><div class="ttdoc">The InterMCU message buffer. </div><div class="ttdef"><b>Definition:</b> <a href="intermcu__fbw_8c_source.html#l00061">intermcu_fbw.c:61</a></div></div>
 <div class="ttc" id="intermcu__fbw_8c_html_a33141c0ab91bcac2e0d5862739d728aa"><div class="ttname"><a href="intermcu__fbw_8c.html#a33141c0ab91bcac2e0d5862739d728aa">InterMcuEvent</a></div><div class="ttdeci">void InterMcuEvent(void(*frame_handler)(void))</div><div class="ttdef"><b>Definition:</b> <a href="intermcu__fbw_8c_source.html#l00199">intermcu_fbw.c:199</a></div></div>
@@ -479,6 +479,7 @@ $(document).ready(function(){initNavTree('intermcu__fbw_8c_source.html','');});
 <div class="ttc" id="intermcu_8h_html_a692b0f0e24d84c328657634259b6cc2ca8c7ae7ded482185743b329698d8e0b68"><div class="ttname"><a href="intermcu_8h.html#a692b0f0e24d84c328657634259b6cc2ca8c7ae7ded482185743b329698d8e0b68">PX4_BAUD</a></div><div class="ttdef"><b>Definition:</b> <a href="intermcu_8h_source.html#l00051">intermcu.h:51</a></div></div>
 <div class="ttc" id="radio__control_8c_html_a8fe61a8aa3f1859efec4bb06bc1134dc"><div class="ttname"><a href="radio__control_8c.html#a8fe61a8aa3f1859efec4bb06bc1134dc">radio_control</a></div><div class="ttdeci">struct RadioControl radio_control</div><div class="ttdef"><b>Definition:</b> <a href="radio__control_8c_source.html#l00030">radio_control.c:30</a></div></div>
 <div class="ttc" id="intermcu_8h_html_af2296d5bf29fac2f4061605b175fc0c9"><div class="ttname"><a href="intermcu_8h.html#af2296d5bf29fac2f4061605b175fc0c9">intermcu_t::transport</a></div><div class="ttdeci">struct pprz_transport transport</div><div class="ttdoc">Transport over communication line (PPRZ) </div><div class="ttdef"><b>Definition:</b> <a href="intermcu_8h_source.html#l00072">intermcu.h:72</a></div></div>
+<div class="ttc" id="wedgebug_8c_html_a83fc1af92e29717b4513d121b0c72c7d"><div class="ttname"><a href="wedgebug_8c.html#a83fc1af92e29717b4513d121b0c72c7d">b</a></div><div class="ttdeci">float b</div><div class="ttdef"><b>Definition:</b> <a href="wedgebug_8c_source.html#l00202">wedgebug.c:202</a></div></div>
 <div class="ttc" id="intermcu__ap_8h_html_a393c67e7c336f4e58413e3cb07378511"><div class="ttname"><a href="intermcu__ap_8h.html#a393c67e7c336f4e58413e3cb07378511">RADIO_THROTTLE</a></div><div class="ttdeci">#define RADIO_THROTTLE</div><div class="ttdef"><b>Definition:</b> <a href="intermcu__ap_8h_source.html#l00040">intermcu_ap.h:40</a></div></div>
 <div class="ttc" id="intermcu__fbw_8c_html_aa60e278348807df613abfa9ba8663503"><div class="ttname"><a href="intermcu__fbw_8c.html#aa60e278348807df613abfa9ba8663503">intermcu_on_rc_frame</a></div><div class="ttdeci">void intermcu_on_rc_frame(uint8_t fbw_mode)</div><div class="ttdef"><b>Definition:</b> <a href="intermcu__fbw_8c_source.html#l00106">intermcu_fbw.c:106</a></div></div>
 <div class="ttc" id="chibios_2led__hw_8h_html_afd0bf6b0eebb00641365dc389a9fc449"><div class="ttname"><a href="chibios_2led__hw_8h.html#afd0bf6b0eebb00641365dc389a9fc449">LED_TOGGLE</a></div><div class="ttdeci">#define LED_TOGGLE(i)</div><div class="ttdef"><b>Definition:</b> <a href="chibios_2led__hw_8h_source.html#l00053">led_hw.h:53</a></div></div>
@@ -526,7 +527,7 @@ $(document).ready(function(){initNavTree('intermcu__fbw_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_20e4859fd0a482048af55ed36cbc5ed3.html">intermcu</a></li><li class="navelem"><a class="el" href="intermcu__fbw_8c.html">intermcu_fbw.c</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:02:37 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:02:49 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

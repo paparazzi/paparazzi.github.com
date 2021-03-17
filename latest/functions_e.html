@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -151,6 +151,12 @@ $(document).ready(function(){initNavTree('functions_e.html','');});
 : <a class="el" href="pid_8h.html#a3cb546f521b92368a7bf68d53226fc7e">PI_D_df</a>
 , <a class="el" href="pid_8h.html#a462f6821e6a2c283670d19a4942ba18a">PID_df</a>
 , <a class="el" href="pid_8h.html#a86fa7a0d50355d67994f8175c868aa36">PID_f</a>
+</li>
+<li>e_w1
+: <a class="el" href="nav__fish_8h.html#a14b03976b4e33928225398bd8ef471bf">NavFishParams</a>
+</li>
+<li>e_w2
+: <a class="el" href="nav__fish_8h.html#ac83786c739d47946b8acbdb1511c0782">NavFishParams</a>
 </li>
 <li>eam_sensor_id
 : <a class="el" href="hott__eam_8h.html#ab303039744dc90235f6ded4f7f683f84">HOTT_EAM_MSG</a>
@@ -301,6 +307,9 @@ $(document).ready(function(){initNavTree('functions_e.html','');});
 <li>encrypt_err
 : <a class="el" href="gec_8h.html#a4635c96dbba6424f8892b1063fcb9944">gec_sts_ctx</a>
 </li>
+<li>end
+: <a class="el" href="microrl_8h.html#afa4785c842d2eac082ae32466c561f1f">ring_history_t</a>
+</li>
 <li>end_cb
 : <a class="el" href="hal__stm32__dma_8h.html#ac24f6bd4206c68541acb512ccbab74a9">DMAConfig</a>
 </li>
@@ -365,15 +374,6 @@ $(document).ready(function(){initNavTree('functions_e.html','');});
 , <a class="el" href="rover__guidance_8h.html#a13fc097c3e6cd95ef10a4114f44f59fe">RoverGuidancePID</a>
 , <a class="el" href="rover__guidance__holonomic_8h.html#a0fd000389964352ac58d2d83928f12fe">RoverHoloGuidancePID</a>
 , <a class="el" href="vn200__serial_8h.html#a196b28e68e247eda38280e6f8cd1d27d">VNData</a>
-</li>
-<li>err_p
-: <a class="el" href="stabilization__indi__simple_8h.html#a0dc6797444c341f2c0109825a5b3586e">ReferenceSystem</a>
-</li>
-<li>err_q
-: <a class="el" href="stabilization__indi__simple_8h.html#a5562cf3de0126686db3da4bc5cd92055">ReferenceSystem</a>
-</li>
-<li>err_r
-: <a class="el" href="stabilization__indi__simple_8h.html#a34a3123d619960eb27ed60aedab3202f">ReferenceSystem</a>
 </li>
 <li>err_vx_int
 : <a class="el" href="guidance__OA_8h.html#a0d7976f41569ae2a67cfe8d1f350a9e9">opticflow_stab_t</a>
@@ -467,8 +467,14 @@ $(document).ready(function(){initNavTree('functions_e.html','');});
 <li>exception_flag
 : <a class="el" href="rover_2navigation_8h.html#af0badc6a1c9f5463f3b35044e2483a36">RoverNavigation</a>
 </li>
+<li>execute
+: <a class="el" href="structmicrorl__t.html#a8bd204baa50cfb2214d6b9fc44740607">microrl_t</a>
+</li>
 <li>expected_channels
 : <a class="el" href="hott__common_8h.html#adfef764ff81d451b48bb0612aa71a448">SHott</a>
+</li>
+<li>exponential_chirp
+: <a class="el" href="pprz__chirp_8h.html#a8931b5f697141910c8cdafe7a16f1396">chirp_t</a>
 </li>
 <li>exposure_gain
 : <a class="el" href="bebop__ae__awb_8h.html#a811d3b1219bd98f990275380e486a342">ae_setting_t</a>
@@ -481,6 +487,9 @@ $(document).ready(function(){initNavTree('functions_e.html','');});
 </li>
 <li>external_callback
 : <a class="el" href="sdcard__spi_8h.html#ae821a7c8984a3ce3080980d664d5090d">SDCard</a>
+</li>
+<li>extiIoTag
+: <a class="el" href="cc2500__settings_8h.html#a46a3401c9047425fdcfe639aae6f0ade">rxSpiConfig_s</a>
 </li>
 <li>extra
 : <a class="el" href="jevois_8c.html#a20e24cf7a2f6e89336bb12fa5069901e">jevois_msg_t</a>
@@ -501,7 +510,7 @@ $(document).ready(function(){initNavTree('functions_e.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri May 15 2020 04:04:08 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:04:26 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

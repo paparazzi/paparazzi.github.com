@@ -1,51 +1,51 @@
 <map id="ins_ekf2_init" name="ins_ekf2_init">
-<area shape="rect" id="node2" href="$ins__ekf2_8cpp.html#aacd6b1869f263f90a6f1fbe777a87793" title="accel_cb" alt="" coords="213,525,291,552"/>
-<area shape="rect" id="node35" href="$ins__ekf2_8cpp.html#a7266d71f926f1ff406cde1f6067177ac" title="agl_cb" alt="" coords="221,424,283,451"/>
-<area shape="rect" id="node36" href="$ins__ekf2_8cpp.html#a92209191a3ecc53fc4adaafd0fe82933" title="baro_cb" alt="" coords="215,373,289,400"/>
-<area shape="rect" id="node39" href="$ins__ekf2_8cpp.html#ab5f6300c213088a4ea0598baafb5e736" title="body_to_imu_cb" alt="" coords="435,728,561,755"/>
-<area shape="rect" id="node40" href="$ins__ekf2_8cpp.html#a1c1656ce80fe1f1ad49fea691164dbf8" title="gps_cb" alt="" coords="219,576,285,603"/>
-<area shape="rect" id="node41" href="$ins__ekf2_8cpp.html#a47e1ea35fdb43af72537c6c9f38b889d" title="gyro_cb" alt="" coords="216,627,288,653"/>
-<area shape="rect" id="node43" href="$ins__ekf2_8cpp.html#a49cc1e545848b85016af530049991c02" title="mag_cb" alt="" coords="215,475,289,501"/>
-<area shape="rect" id="node44" href="$telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function. " alt="" coords="153,728,351,755"/>
-<area shape="rect" id="node45" href="$ins__ekf2_8cpp.html#afcaf83e494c099d08de45255037c3769" title="send_ahrs_bias" alt="" coords="191,779,313,805"/>
-<area shape="rect" id="node46" href="$ins__ekf2_8cpp.html#a85585514fc863f0407a3f5e85ad9d398" title="send_filter_status" alt="" coords="185,829,319,856"/>
-<area shape="rect" id="node47" href="$ins__ekf2_8cpp.html#a30d9ada33d7b018cc4b2447c4d7ba155" title="send_ins_ekf2" alt="" coords="196,880,308,907"/>
-<area shape="rect" id="node48" href="$ins__ekf2_8cpp.html#a35fe77bf44c50dfd7f7d4e332fc525a8" title="send_ins_ekf2_ext" alt="" coords="183,931,321,957"/>
-<area shape="rect" id="node49" href="$ins__ekf2_8cpp.html#a6f4ee4900038e15bf441a679acfa913a" title="send_ins_ref" alt="" coords="201,981,303,1008"/>
-<area shape="rect" id="node50" href="$ins__ekf2_8cpp.html#a9c47b470f3d0e28b4119708b5b106306" title="send_wind_info_ret" alt="" coords="181,1032,323,1059"/>
-<area shape="rect" id="node3" href="$group__math__algebra__float.html#gac852ba0c3ec48acfd8abaefbf933d4b6" title="rotate 3D vector by transposed rotation matrix. " alt="" coords="409,475,587,501"/>
-<area shape="rect" id="node4" href="$ins__ekf2_8cpp.html#ad0d967646b2cb048323e8545662428ed" title="Publish the attitude and get the new state Directly called after a succeslfull gyro+accel reading..." alt="" coords="407,576,589,603"/>
-<area shape="rect" id="node32" href="$group__math__orientation__representation.html#gadad1660d6ec48c67423b76622ce80b51" title="Get vehicle body attitude rotation matrix (float). " alt="" coords="419,525,577,552"/>
-<area shape="rect" id="node5" href="$group__state__attitude.html#ga08c015e6feca07c5c0976f1d2d28c31e" title="Set vehicle body attitude from quaternion (float). " alt="" coords="645,551,836,577"/>
-<area shape="rect" id="node7" href="$rotorcraft_2guidance_2guidance__h_8c.html#a1ad9b20a107ab0ded48adde7adb6fed0" title="guidance_h_read_rc" alt="" coords="665,279,816,305"/>
-<area shape="rect" id="node21" href="$autopilot_8c.html#aa0968d46fbee148348a7e062afac69a6" title="get in_flight flag " alt="" coords="673,601,808,628"/>
-<area shape="rect" id="node22" href="$rotorcraft_2stabilization_2stabilization__attitude_8h.html#a23f862ca823e6fd23fc9c111178be077" title="stabilization_attitude\l_enter" alt="" coords="1390,493,1545,534"/>
-<area shape="rect" id="node30" href="$group__state__rate.html#ga81d506386a5e2842d7e37cb6e1dbf252" title="Set vehicle body angular rate (float). " alt="" coords="663,652,819,679"/>
-<area shape="rect" id="node31" href="$group__state__velocity.html#ga20df8dd6eb07f3e70051e3b9809b1e60" title="Set acceleration in Body coordinates (int). " alt="" coords="664,703,817,729"/>
-<area shape="rect" id="node6" href="$group__math__orientation__representation.html#ga35d21d17eb2d2ef8352f0aceb8ad7001" title="Set vehicle body attitude from quaternion (float). " alt="" coords="909,652,1064,679"/>
-<area shape="rect" id="node8" href="$ctrl__module__innerloop__demo_8c.html#a4c33bfc7d07ffb6d33a1af63799da082" title="guidance_h_module_read_rc" alt="" coords="884,253,1089,280"/>
-<area shape="rect" id="node9" href="$rotorcraft_2guidance_2guidance__h_8c.html#a964e1aa38b15b12daa52eb67aa1e9648" title="read speed setpoint from RC " alt="" coords="1137,152,1323,179"/>
-<area shape="rect" id="node11" href="$rotorcraft_2stabilization_2stabilization__attitude_8h.html#ad17347abf36f7dfc4abb0218f10b5f09" title="stabilization_attitude\l_read_rc" alt="" coords="909,355,1064,397"/>
-<area shape="rect" id="node14" href="$stabilization__attitude__rc__setpoint_8c.html#af0d1b8fcfd61727710cae059e8581fb1" title="stabilization_attitude\l_read_rc_setpoint_eulers_f" alt="" coords="1371,326,1564,367"/>
-<area shape="rect" id="node18" href="$stabilization__none_8c.html#a39657270c342b5a7f44894f10b5ad946" title="stabilization_none\l_read_rc" alt="" coords="918,57,1055,98"/>
-<area shape="rect" id="node19" href="$stabilization__rate_8c.html#a007715357d8063fa371fb07433a1e3d7" title="stabilization_rate\l_read_rc" alt="" coords="921,122,1052,163"/>
-<area shape="rect" id="node20" href="$stabilization__rate_8c.html#aa74f5f2b4c549269f6ca18638acd8c5e" title="stabilization_rate\l_read_rc_switched_sticks" alt="" coords="895,187,1078,229"/>
-<area shape="rect" id="node10" href="$group__state__attitude.html#ga5ae8778366c1fad669189cb2def40792" title="Get vehicle body attitude euler angles (int). " alt="" coords="1839,236,2037,263"/>
-<area shape="rect" id="node12" href="$stabilization__attitude__rc__setpoint_8c.html#a03c89c0dcb17fa02d3caabf86acf82bc" title="Read attitude setpoint from RC as euler angles. " alt="" coords="1376,254,1559,295"/>
-<area shape="rect" id="node16" href="$stabilization__attitude__rc__setpoint_8c.html#a67c7c9ce5526222ceb3f422269fc8f47" title="stabilization_attitude\l_read_rc_setpoint_quat\l_earth_bound_f" alt="" coords="1144,319,1316,375"/>
-<area shape="rect" id="node17" href="$stabilization__attitude__rc__setpoint_8c.html#a7e0d148d1e5210bb1b299163d77daa4a" title="Read attitude setpoint from RC as quaternion Interprets the stick positions as axes. " alt="" coords="1139,254,1321,295"/>
-<area shape="rect" id="node13" href="$stabilization__attitude__rc__setpoint_8c.html#a1270210b635f040b5bdd7d974f29c71f" title="stabilization_attitude\l_get_heading_i" alt="" coords="1624,258,1779,299"/>
-<area shape="rect" id="node15" href="$stabilization__attitude__rc__setpoint_8c.html#aef31d05722347c8213ef503f5c6f1113" title="stabilization_attitude\l_get_heading_f" alt="" coords="1624,323,1779,365"/>
-<area shape="rect" id="node23" href="$stabilization__attitude__ref__euler__float_8c.html#a7fcefe5e6328d89221e00a1c285d018a" title="attitude_ref_euler\l_float_enter" alt="" coords="1634,659,1769,701"/>
-<area shape="rect" id="node24" href="$stabilization__attitude__ref__quat__float_8c.html#a64a18d12f7fbb46c79790b1f141204e2" title="attitude_ref_quat_float\l_enter" alt="" coords="1618,725,1785,766"/>
-<area shape="rect" id="node25" href="$stabilization__attitude__ref__quat__int_8c.html#a43134b9502b1b59a68e214221e011fb8" title="attitude_ref_quat_int\l_enter" alt="" coords="1624,790,1779,831"/>
-<area shape="rect" id="node26" href="$group__math__algebra__float.html#ga0f036208343a764a0c1616264dbe31ca" title="initialises a quaternion to identity " alt="" coords="1631,389,1771,416"/>
-<area shape="rect" id="node27" href="$group__math__algebra__int.html#ga698f3fc474f66517868238f6f6b08fca" title="initialises a quaternion to identity " alt="" coords="1629,440,1773,467"/>
-<area shape="rect" id="node28" href="$stabilization__attitude__euler__int_8c.html#a60f842edfa8dd98a227f18def04a0b55" title="reset_psi_ref_from_body" alt="" coords="1612,491,1791,517"/>
-<area shape="rect" id="node29" href="$stabilization__indi_8c.html#a121fd732c65156adade05ffb27fbaf52" title="Function that resets important values upon engaging INDI. " alt="" coords="1638,542,1765,583"/>
-<area shape="rect" id="node33" href="$group__math__orientation__representation.html#ga3394d93b976378bb5c9ddea8d7960eeb" title="orientationCalcRMat_f" alt="" coords="660,129,821,156"/>
+<area shape="rect" id="node2" href="$ins__ekf2_8cpp.html#aacd6b1869f263f90a6f1fbe777a87793" title="accel_cb" alt="" coords="213,347,291,373"/>
+<area shape="rect" id="node35" href="$ins__ekf2_8cpp.html#a7266d71f926f1ff406cde1f6067177ac" title="agl_cb" alt="" coords="221,499,283,525"/>
+<area shape="rect" id="node36" href="$ins__ekf2_8cpp.html#a92209191a3ecc53fc4adaafd0fe82933" title="baro_cb" alt="" coords="215,549,289,576"/>
+<area shape="rect" id="node39" href="$ins__ekf2_8cpp.html#ab5f6300c213088a4ea0598baafb5e736" title="body_to_imu_cb" alt="" coords="435,491,561,517"/>
+<area shape="rect" id="node40" href="$ins__ekf2_8cpp.html#a1c1656ce80fe1f1ad49fea691164dbf8" title="gps_cb" alt="" coords="219,600,285,627"/>
+<area shape="rect" id="node41" href="$ins__ekf2_8cpp.html#a47e1ea35fdb43af72537c6c9f38b889d" title="gyro_cb" alt="" coords="216,397,288,424"/>
+<area shape="rect" id="node43" href="$ins__ekf2_8cpp.html#a49cc1e545848b85016af530049991c02" title="mag_cb" alt="" coords="215,296,289,323"/>
+<area shape="rect" id="node44" href="$telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function. " alt="" coords="153,651,351,677"/>
+<area shape="rect" id="node45" href="$ins__ekf2_8cpp.html#afcaf83e494c099d08de45255037c3769" title="send_ahrs_bias" alt="" coords="191,701,313,728"/>
+<area shape="rect" id="node46" href="$ins__ekf2_8cpp.html#a85585514fc863f0407a3f5e85ad9d398" title="send_filter_status" alt="" coords="185,752,319,779"/>
+<area shape="rect" id="node47" href="$ins__ekf2_8cpp.html#a30d9ada33d7b018cc4b2447c4d7ba155" title="send_ins_ekf2" alt="" coords="196,803,308,829"/>
+<area shape="rect" id="node48" href="$ins__ekf2_8cpp.html#a35fe77bf44c50dfd7f7d4e332fc525a8" title="send_ins_ekf2_ext" alt="" coords="183,853,321,880"/>
+<area shape="rect" id="node49" href="$ins__ekf2_8cpp.html#a6f4ee4900038e15bf441a679acfa913a" title="send_ins_ref" alt="" coords="201,904,303,931"/>
+<area shape="rect" id="node50" href="$ins__ekf2_8cpp.html#a9c47b470f3d0e28b4119708b5b106306" title="send_wind_info_ret" alt="" coords="181,955,323,981"/>
+<area shape="rect" id="node3" href="$group__math__algebra__float.html#gac852ba0c3ec48acfd8abaefbf933d4b6" title="rotate 3D vector by transposed rotation matrix. " alt="" coords="409,288,587,315"/>
+<area shape="rect" id="node4" href="$ins__ekf2_8cpp.html#ad0d967646b2cb048323e8545662428ed" title="Publish the attitude and get the new state Directly called after a succeslfull gyro+accel reading..." alt="" coords="407,389,589,416"/>
+<area shape="rect" id="node32" href="$group__math__orientation__representation.html#gadad1660d6ec48c67423b76622ce80b51" title="Get vehicle body attitude rotation matrix (float). " alt="" coords="419,339,577,365"/>
+<area shape="rect" id="node5" href="$group__state__attitude.html#ga08c015e6feca07c5c0976f1d2d28c31e" title="Set vehicle body attitude from quaternion (float). " alt="" coords="645,524,836,551"/>
+<area shape="rect" id="node7" href="$rotorcraft_2guidance_2guidance__h_8c.html#a1ad9b20a107ab0ded48adde7adb6fed0" title="guidance_h_read_rc" alt="" coords="665,305,816,332"/>
+<area shape="rect" id="node19" href="$autopilot_8c.html#aa0968d46fbee148348a7e062afac69a6" title="get in_flight flag " alt="" coords="673,255,808,281"/>
+<area shape="rect" id="node20" href="$rotorcraft_2stabilization_2stabilization__attitude_8h.html#a23f862ca823e6fd23fc9c111178be077" title="stabilization_attitude\l_enter" alt="" coords="1157,550,1311,591"/>
+<area shape="rect" id="node30" href="$group__state__rate.html#ga81d506386a5e2842d7e37cb6e1dbf252" title="Set vehicle body angular rate (float). " alt="" coords="663,364,819,391"/>
+<area shape="rect" id="node31" href="$group__state__velocity.html#ga20df8dd6eb07f3e70051e3b9809b1e60" title="Set acceleration in Body coordinates (int). " alt="" coords="664,415,817,441"/>
+<area shape="rect" id="node6" href="$group__math__orientation__representation.html#ga35d21d17eb2d2ef8352f0aceb8ad7001" title="Set vehicle body attitude from quaternion (float). " alt="" coords="909,549,1064,576"/>
+<area shape="rect" id="node8" href="$ctrl__module__innerloop__demo_8c.html#a4c33bfc7d07ffb6d33a1af63799da082" title="guidance_h_module_read_rc" alt="" coords="884,305,1089,332"/>
+<area shape="rect" id="node9" href="$rotorcraft_2guidance_2guidance__h_8c.html#a964e1aa38b15b12daa52eb67aa1e9648" title="read speed setpoint from RC " alt="" coords="1141,132,1327,159"/>
+<area shape="rect" id="node11" href="$rotorcraft_2stabilization_2stabilization__attitude_8h.html#ad17347abf36f7dfc4abb0218f10b5f09" title="stabilization_attitude\l_read_rc" alt="" coords="909,357,1064,398"/>
+<area shape="rect" id="node14" href="$stabilization__attitude__rc__setpoint_8c.html#af0d1b8fcfd61727710cae059e8581fb1" title="stabilization_attitude\l_read_rc_setpoint_eulers_f" alt="" coords="1137,357,1331,398"/>
+<area shape="rect" id="node16" href="$stabilization__none_8c.html#a39657270c342b5a7f44894f10b5ad946" title="stabilization_none\l_read_rc" alt="" coords="918,174,1055,215"/>
+<area shape="rect" id="node17" href="$stabilization__rate_8c.html#a007715357d8063fa371fb07433a1e3d7" title="stabilization_rate\l_read_rc" alt="" coords="921,239,1052,281"/>
+<area shape="rect" id="node18" href="$stabilization__rate_8c.html#aa74f5f2b4c549269f6ca18638acd8c5e" title="stabilization_rate\l_read_rc_switched_sticks" alt="" coords="895,57,1078,98"/>
+<area shape="rect" id="node10" href="$group__state__attitude.html#ga5ae8778366c1fad669189cb2def40792" title="Get vehicle body attitude euler angles (int). " alt="" coords="1617,236,1816,263"/>
+<area shape="rect" id="node12" href="$stabilization__attitude__rc__setpoint_8c.html#a03c89c0dcb17fa02d3caabf86acf82bc" title="Read attitude setpoint from RC as euler angles. " alt="" coords="1143,258,1325,299"/>
+<area shape="rect" id="node13" href="$stabilization__attitude__rc__setpoint_8c.html#a1270210b635f040b5bdd7d974f29c71f" title="stabilization_attitude\l_get_heading_i" alt="" coords="1397,258,1551,299"/>
+<area shape="rect" id="node15" href="$stabilization__attitude__rc__setpoint_8c.html#aef31d05722347c8213ef503f5c6f1113" title="stabilization_attitude\l_get_heading_f" alt="" coords="1397,323,1551,365"/>
+<area shape="rect" id="node21" href="$stabilization__attitude__ref__euler__float_8c.html#a7fcefe5e6328d89221e00a1c285d018a" title="attitude_ref_euler\l_float_enter" alt="" coords="1407,609,1541,650"/>
+<area shape="rect" id="node22" href="$stabilization__attitude__ref__quat__float_8c.html#a7db3c49e65e9d2d4d273b1eaf4a7243b" title="attitude_ref_quat_float\l_enter" alt="" coords="1391,674,1557,715"/>
+<area shape="rect" id="node23" href="$stabilization__attitude__ref__quat__int_8c.html#a56fb443fa60679e83c39b986a94810dc" title="attitude_ref_quat_int\l_enter" alt="" coords="1397,739,1551,781"/>
+<area shape="rect" id="node24" href="$group__math__algebra__float.html#ga0f036208343a764a0c1616264dbe31ca" title="initialises a quaternion to identity " alt="" coords="1404,805,1544,832"/>
+<area shape="rect" id="node25" href="$group__math__algebra__int.html#ga698f3fc474f66517868238f6f6b08fca" title="initialises a quaternion to identity " alt="" coords="1402,856,1546,883"/>
+<area shape="rect" id="node26" href="$stabilization__attitude__euler__int_8c.html#a60f842edfa8dd98a227f18def04a0b55" title="reset_psi_ref_from_body" alt="" coords="1385,389,1563,416"/>
+<area shape="rect" id="node27" href="$stabilization__indi_8c.html#a121fd732c65156adade05ffb27fbaf52" title="Function that resets important values upon engaging INDI. " alt="" coords="1411,441,1537,482"/>
+<area shape="rect" id="node28" href="$group__state__attitude.html#gae03bd8f94b7150506835b77060b73311" title="Get vehicle body attitude quaternion (float). " alt="" coords="1379,507,1569,533"/>
+<area shape="rect" id="node29" href="$group__state__attitude.html#ga28e5de0a4822cabcfe8350e2343111ce" title="Get vehicle body attitude quaternion (int). " alt="" coords="1379,557,1569,584"/>
+<area shape="rect" id="node33" href="$group__math__orientation__representation.html#ga3394d93b976378bb5c9ddea8d7960eeb" title="orientationCalcRMat_f" alt="" coords="660,105,821,132"/>
 <area shape="rect" id="node34" href="$group__math__algebra__float.html#ga4f32e245bb37ef9fdf43872080f63fbc" title="float_rmat_of_quat" alt="" coords="915,5,1058,32"/>
-<area shape="rect" id="node37" href="$group__math__isa.html#ga32d12d97de86914bf958b090da30f6e5" title="Get the air density (rho) from a given pressure and temperature. " alt="" coords="425,322,571,363"/>
-<area shape="rect" id="node38" href="$group__math__isa.html#gaf1eda8b09fa91ba53444be5c8e009994" title="Get relative altitude from pressure (using full equation). " alt="" coords="427,387,569,429"/>
-<area shape="rect" id="node42" href="$group__math__algebra__float.html#gaaf793c59eaba758a63cf467c377ea532" title="rotate anglular rates by transposed rotation matrix. " alt="" coords="399,627,597,653"/>
+<area shape="rect" id="node37" href="$group__math__isa.html#ga32d12d97de86914bf958b090da30f6e5" title="Get the air density (rho) from a given pressure and temperature. " alt="" coords="425,542,571,583"/>
+<area shape="rect" id="node38" href="$group__math__isa.html#gaf1eda8b09fa91ba53444be5c8e009994" title="Get relative altitude from pressure (using full equation). " alt="" coords="427,607,569,649"/>
+<area shape="rect" id="node42" href="$group__math__algebra__float.html#gaaf793c59eaba758a63cf467c377ea532" title="rotate anglular rates by transposed rotation matrix. " alt="" coords="399,440,597,467"/>
 </map>

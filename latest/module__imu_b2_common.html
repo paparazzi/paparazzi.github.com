@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -248,6 +248,9 @@ Raw imu_b2_common.xml file:</h2>
 <div class="line">      &lt;define name=&quot;MAG_45_HACK&quot; value=&quot;1&quot;/&gt;</div>
 <div class="line">    &lt;/section&gt;</div>
 <div class="line">  &lt;/doc&gt;</div>
+<div class="line">  &lt;dep&gt;</div>
+<div class="line">    &lt;depends&gt;spi_master&lt;/depends&gt;</div>
+<div class="line">  &lt;/dep&gt;</div>
 <div class="line">  &lt;autoload name=&quot;imu_common&quot;/&gt;</div>
 <div class="line">  &lt;autoload name=&quot;imu_nps&quot;/&gt;</div>
 <div class="line">  &lt;header&gt;</div>
@@ -264,8 +267,6 @@ Raw imu_b2_common.xml file:</h2>
 <div class="line">    &lt;file name=&quot;max1168.c&quot; dir=&quot;peripherals&quot;/&gt;</div>
 <div class="line">    &lt;file name=&quot;max1168_arch.c&quot; dir=&quot;$(SRC_ARCH)/peripherals&quot;/&gt;</div>
 <div class="line">    &lt;raw&gt;</div>
-<div class="line">include $(CFG_SHARED)/spi_master.makefile</div>
-<div class="line"></div>
 <div class="line">ifeq ($(ARCH), lpc21)</div>
 <div class="line">$(TARGET).CFLAGS += -DUSE_SPI_SLAVE0</div>
 <div class="line">$(TARGET).CFLAGS += -DUSE_SPI1</div>
@@ -288,7 +289,7 @@ Raw imu_b2_common.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:03:39 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:03:56 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

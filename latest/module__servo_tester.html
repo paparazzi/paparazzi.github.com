@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -107,6 +107,7 @@ $(document).ready(function(){initNavTree('module__servo_tester.html','');});
 <p>Has a setting to change the input to the servo in millisecond units.</p>
 <p>You have to give the servo you want to test the name SERVO_TEST, and don't use it in the command laws.</p>
 <p>Additionally, you can make the servo do a series of step maneuvers, with increasing amplitude. Tip: Open up the servo and measure the voltage on the potmeter with a high speed recorder device (like a saleae Logic analyzer with analog inputs). This will let you model the response of the servo.</p>
+<p>If you set the boolean "is_servo" to False, the programm will NOT use negative deflections.</p>
 <h1><a class="anchor" id="module_load_example__servo_tester"></a>
 Example for airframe file</h1>
 <p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;module name=&quot;servo_tester&quot;&gt;</div>
@@ -169,6 +170,8 @@ Raw servo_tester.xml file:</h2>
 <div class="line">      amplitude. Tip: Open up the servo and measure the voltage on the potmeter with</div>
 <div class="line">      a high speed recorder device (like a saleae Logic analyzer with analog inputs). This </div>
 <div class="line">      will let you model the response of the servo.</div>
+<div class="line">    </div>
+<div class="line">      If you set the boolean &quot;is_servo&quot; to False, the programm will NOT use negative deflections.</div>
 <div class="line">    &lt;/description&gt;</div>
 <div class="line">    &lt;define name=&quot;TIME_PER_DEFLECTION&quot; value=&quot;0.8&quot; description=&quot;Time between servo steps for the &#39;servo_run&#39; feature&quot;/&gt;</div>
 <div class="line">  &lt;/doc&gt;</div>
@@ -176,6 +179,7 @@ Raw servo_tester.xml file:</h2>
 <div class="line">    &lt;dl_settings NAME=&quot;Servo test&quot;&gt;</div>
 <div class="line">      &lt;dl_settings NAME=&quot;Servo tester&quot;&gt;</div>
 <div class="line">        &lt;dl_setting var=&quot;servo_test_val&quot; min=&quot;1000&quot; step=&quot;1&quot; max=&quot;2000&quot; module=&quot;modules/servo_tester/servo_tester&quot; shortname=&quot;servo_input&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting var=&quot;is_servo&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;1&quot; module=&quot;modules/servo_tester/servo_tester&quot; values=&quot;False|True&quot; shortname=&quot;is_servo&quot;/&gt;</div>
 <div class="line">        &lt;dl_setting var=&quot;do_servo_run&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;1&quot; module=&quot;modules/servo_tester/servo_tester&quot; values=&quot;Off|On&quot; shortname=&quot;servo_run&quot;/&gt;</div>
 <div class="line">      &lt;/dl_settings&gt;</div>
 <div class="line">    &lt;/dl_settings&gt;</div>
@@ -196,7 +200,7 @@ Raw servo_tester.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:03:42 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:04:00 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

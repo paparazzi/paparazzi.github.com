@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -150,12 +150,23 @@ $(document).ready(function(){initNavTree('globals_vars_b.html','');});
 &#160;
 
 <h3><a class="anchor" id="index_b"></a>- b -</h3><ul>
+<li>b
+: <a class="el" href="wedgebug_8c.html#a83fc1af92e29717b4513d121b0c72c7d">wedgebug.c</a>
+</li>
 <li>b_damp
 : <a class="el" href="obstacle__avoidance_8c.html#a2029df2883c895fdf319c16ba6d26632">obstacle_avoidance.c</a>
 , <a class="el" href="obstacle__avoidance_8h.html#a2029df2883c895fdf319c16ba6d26632">obstacle_avoidance.h</a>
 </li>
 <li>B_kal
 : <a class="el" href="obstacle__avoidance_8c.html#a267e9dd01145b64094f910207a381664">obstacle_avoidance.c</a>
+</li>
+<li>baro_alt
+: <a class="el" href="baro__bmp280__i2c_8c.html#a67176009749d07b3d9a4045a35aad016">baro_bmp280_i2c.c</a>
+, <a class="el" href="baro__bmp280__i2c_8h.html#a67176009749d07b3d9a4045a35aad016">baro_bmp280_i2c.h</a>
+</li>
+<li>baro_alt_valid
+: <a class="el" href="baro__bmp280__i2c_8h.html#a46031cc63c3ee8f316628419ba9e25fe">baro_bmp280_i2c.h</a>
+, <a class="el" href="baro__bmp280__i2c_8c.html#a46031cc63c3ee8f316628419ba9e25fe">baro_bmp280_i2c.c</a>
 </li>
 <li>baro_amsys_abs_altitude
 : <a class="el" href="baro__amsys_8c.html#a4edb74c5341948135306b7e08a4b7666">baro_amsys.c</a>
@@ -165,15 +176,15 @@ $(document).ready(function(){initNavTree('globals_vars_b.html','');});
 , <a class="el" href="baro__amsys_8h.html#af6682252f422f77b702a0e4e315e82c9">baro_amsys.h</a>
 </li>
 <li>baro_amsys_altitude
-: <a class="el" href="baro__amsys_8h.html#a8263a36d664ed3718b7fd17ed8293ddc">baro_amsys.h</a>
-, <a class="el" href="baro__amsys_8c.html#a8263a36d664ed3718b7fd17ed8293ddc">baro_amsys.c</a>
+: <a class="el" href="baro__amsys_8c.html#a8263a36d664ed3718b7fd17ed8293ddc">baro_amsys.c</a>
+, <a class="el" href="baro__amsys_8h.html#a8263a36d664ed3718b7fd17ed8293ddc">baro_amsys.h</a>
 </li>
 <li>baro_amsys_cnt
 : <a class="el" href="baro__amsys_8c.html#a07585aae8d32bfecf7f20e969c0cb86e">baro_amsys.c</a>
 </li>
 <li>baro_amsys_enabled
-: <a class="el" href="baro__amsys_8c.html#abeda67f1e61defea3752c11294ea6060">baro_amsys.c</a>
-, <a class="el" href="baro__amsys_8h.html#abeda67f1e61defea3752c11294ea6060">baro_amsys.h</a>
+: <a class="el" href="baro__amsys_8h.html#abeda67f1e61defea3752c11294ea6060">baro_amsys.h</a>
+, <a class="el" href="baro__amsys_8c.html#abeda67f1e61defea3752c11294ea6060">baro_amsys.c</a>
 </li>
 <li>baro_amsys_i2c_trans
 : <a class="el" href="baro__amsys_8c.html#af6eb8af499cf166571cbcc48dec1d0f4">baro_amsys.c</a>
@@ -210,11 +221,15 @@ $(document).ready(function(){initNavTree('globals_vars_b.html','');});
 , <a class="el" href="baro__amsys_8h.html#a9777adde615fa063805e57cf673687a0">baro_amsys.h</a>
 </li>
 <li>baro_bmp
-: <a class="el" href="baro__bmp_8c.html#a09ccc68d1ef4027c7cb6c348ffb99cad">baro_bmp.c</a>
-, <a class="el" href="baro__bmp_8h.html#a09ccc68d1ef4027c7cb6c348ffb99cad">baro_bmp.h</a>
+: <a class="el" href="baro__bmp_8h.html#a09ccc68d1ef4027c7cb6c348ffb99cad">baro_bmp.h</a>
+, <a class="el" href="baro__bmp_8c.html#a09ccc68d1ef4027c7cb6c348ffb99cad">baro_bmp.c</a>
 </li>
 <li>baro_bmp085
-: <a class="el" href="lisa__mxs_2baro__board_8c.html#acefc6db83b8dc325514608a766413bc1">baro_board.c</a>
+: <a class="el" href="hbmini_2baro__board_8c.html#acefc6db83b8dc325514608a766413bc1">baro_board.c</a>
+</li>
+<li>baro_bmp280
+: <a class="el" href="baro__bmp280__i2c_8c.html#a30f2cb8de49f9b2fe03069ac866d6470">baro_bmp280_i2c.c</a>
+, <a class="el" href="baro__bmp280__i2c_8h.html#a30f2cb8de49f9b2fe03069ac866d6470">baro_bmp280_i2c.h</a>
 </li>
 <li>baro_bmp3
 : <a class="el" href="baro__bmp3_8c.html#aec661d066132bf644018e6a9e5d8d003">baro_bmp3.c</a>
@@ -263,8 +278,8 @@ $(document).ready(function(){initNavTree('globals_vars_b.html','');});
 , <a class="el" href="baro__ets_8h.html#a71d4e11bc8c15965a7ed9b919d52d249">baro_ets.h</a>
 </li>
 <li>baro_ets_i2c_trans
-: <a class="el" href="baro__ets_8c.html#a4ddf405039552176e251f37d10213d4f">baro_ets.c</a>
-, <a class="el" href="baro__ets_8h.html#a4ddf405039552176e251f37d10213d4f">baro_ets.h</a>
+: <a class="el" href="baro__ets_8h.html#a4ddf405039552176e251f37d10213d4f">baro_ets.h</a>
+, <a class="el" href="baro__ets_8c.html#a4ddf405039552176e251f37d10213d4f">baro_ets.c</a>
 </li>
 <li>baro_ets_offset
 : <a class="el" href="baro__ets_8c.html#ab555328369f0264c4182eff10220a57c">baro_ets.c</a>
@@ -379,6 +394,9 @@ $(document).ready(function(){initNavTree('globals_vars_b.html','');});
 <li>baro_old
 : <a class="el" href="baro__amsys_8c.html#a86bddb27827bd655f82b5b26d1e6a568">baro_amsys.c</a>
 </li>
+<li>baro_press
+: <a class="el" href="baro__bmp280__i2c_8c.html#a33f607079a687dcc674326572d5bdfdd">baro_bmp280_i2c.c</a>
+</li>
 <li>baro_scale
 : <a class="el" href="baro__amsys_8c.html#a009ba18be34113ede7a70edec121ae9e">baro_amsys.c</a>
 </li>
@@ -387,10 +405,10 @@ $(document).ready(function(){initNavTree('globals_vars_b.html','');});
 , <a class="el" href="baro__scp_8h.html#a8776cbecbf4f35a343275117724a3261">baro_scp.h</a>
 </li>
 <li>baro_scp_pressure
-: <a class="el" href="baro__scp_8c.html#a2686105e872eba82758010dbb3c91c99">baro_scp.c</a>
-, <a class="el" href="baro__scp_8h.html#a2686105e872eba82758010dbb3c91c99">baro_scp.h</a>
-, <a class="el" href="baro__scp__i2c_8c.html#a2686105e872eba82758010dbb3c91c99">baro_scp_i2c.c</a>
+: <a class="el" href="baro__scp__i2c_8c.html#a2686105e872eba82758010dbb3c91c99">baro_scp_i2c.c</a>
 , <a class="el" href="baro__scp__i2c_8h.html#a2686105e872eba82758010dbb3c91c99">baro_scp_i2c.h</a>
+, <a class="el" href="baro__scp_8c.html#a2686105e872eba82758010dbb3c91c99">baro_scp.c</a>
+, <a class="el" href="baro__scp_8h.html#a2686105e872eba82758010dbb3c91c99">baro_scp.h</a>
 </li>
 <li>baro_scp_status
 : <a class="el" href="baro__scp_8c.html#a2fe023fc4063f461db08521dd732f13a">baro_scp.c</a>
@@ -399,10 +417,10 @@ $(document).ready(function(){initNavTree('globals_vars_b.html','');});
 , <a class="el" href="baro__scp__i2c_8h.html#a2fe023fc4063f461db08521dd732f13a">baro_scp_i2c.h</a>
 </li>
 <li>baro_scp_temperature
-: <a class="el" href="baro__scp__i2c_8c.html#afc76d1091765349f7cc77bef8db5b95b">baro_scp_i2c.c</a>
-, <a class="el" href="baro__scp__i2c_8h.html#afc76d1091765349f7cc77bef8db5b95b">baro_scp_i2c.h</a>
+: <a class="el" href="baro__scp_8c.html#afc76d1091765349f7cc77bef8db5b95b">baro_scp.c</a>
 , <a class="el" href="baro__scp_8h.html#afc76d1091765349f7cc77bef8db5b95b">baro_scp.h</a>
-, <a class="el" href="baro__scp_8c.html#afc76d1091765349f7cc77bef8db5b95b">baro_scp.c</a>
+, <a class="el" href="baro__scp__i2c_8c.html#afc76d1091765349f7cc77bef8db5b95b">baro_scp_i2c.c</a>
+, <a class="el" href="baro__scp__i2c_8h.html#afc76d1091765349f7cc77bef8db5b95b">baro_scp_i2c.h</a>
 </li>
 <li>baro_swing_available
 : <a class="el" href="swing_2baro__board_8c.html#a8a3fc33f58532f0749533d93d460117a">baro_board.c</a>
@@ -413,12 +431,15 @@ $(document).ready(function(){initNavTree('globals_vars_b.html','');});
 <li>baro_swing_raw
 : <a class="el" href="swing_2baro__board_8c.html#aaba6f5f436c2d8d877ca3822059fcd11">baro_board.c</a>
 </li>
+<li>baro_temp
+: <a class="el" href="baro__bmp280__i2c_8c.html#ac83782b3be7ea4b8fc27a1a91b85f2f8">baro_bmp280_i2c.c</a>
+</li>
 <li>baro_trans
 : <a class="el" href="lisa__l_2baro__board_8c.html#ad28e1bf56a33915c0590f3bbb7e32e28">baro_board.c</a>
 </li>
 <li>baseleg_out_qdr
-: <a class="el" href="nav_8c.html#a09096c05260cf7f225d988b6297168c0">nav.c</a>
-, <a class="el" href="nav_8h.html#a09096c05260cf7f225d988b6297168c0">nav.h</a>
+: <a class="el" href="nav_8h.html#a09096c05260cf7f225d988b6297168c0">nav.h</a>
+, <a class="el" href="nav_8c.html#a09096c05260cf7f225d988b6297168c0">nav.c</a>
 </li>
 <li>baseline
 : <a class="el" href="obstacle__avoidance_8c.html#a81d9f165b1e496d7ee3acfc4dffe61f5">obstacle_avoidance.c</a>
@@ -428,16 +449,16 @@ $(document).ready(function(){initNavTree('globals_vars_b.html','');});
 , <a class="el" href="battery__monitor_8h.html#a14abcaedde7d798d8fc0274e1eb5ba20">battery_monitor.h</a>
 </li>
 <li>batmon_current_sensitivity
-: <a class="el" href="battery__monitor_8h.html#a6236657284c59ea5eaa053c739f429a4">battery_monitor.h</a>
-, <a class="el" href="battery__monitor_8c.html#a6236657284c59ea5eaa053c739f429a4">battery_monitor.c</a>
+: <a class="el" href="battery__monitor_8c.html#a6236657284c59ea5eaa053c739f429a4">battery_monitor.c</a>
+, <a class="el" href="battery__monitor_8h.html#a6236657284c59ea5eaa053c739f429a4">battery_monitor.h</a>
 </li>
 <li>batmon_temp_offset
 : <a class="el" href="battery__monitor_8c.html#abc0f782aa705ed8224c158891d23642a">battery_monitor.c</a>
 , <a class="el" href="battery__monitor_8h.html#abc0f782aa705ed8224c158891d23642a">battery_monitor.h</a>
 </li>
 <li>batmon_temp_sensitivity
-: <a class="el" href="battery__monitor_8h.html#a6a7c4a65e54f9929aaacdea3f50a9901">battery_monitor.h</a>
-, <a class="el" href="battery__monitor_8c.html#a6a7c4a65e54f9929aaacdea3f50a9901">battery_monitor.c</a>
+: <a class="el" href="battery__monitor_8c.html#a6a7c4a65e54f9929aaacdea3f50a9901">battery_monitor.c</a>
+, <a class="el" href="battery__monitor_8h.html#a6a7c4a65e54f9929aaacdea3f50a9901">battery_monitor.h</a>
 </li>
 <li>batmonbal1
 : <a class="el" href="battery__monitor_8c.html#adee0aebd61dd74ed266c93ad31f15b24">battery_monitor.c</a>
@@ -464,8 +485,8 @@ $(document).ready(function(){initNavTree('globals_vars_b.html','');});
 : <a class="el" href="battery__monitor_8h.html#a88dd63c85f94e70b669e2759dad8260c">battery_monitor.h</a>
 </li>
 <li>bb_ms5611
-: <a class="el" href="baro__board__ms5611__spi_8c.html#a53ac887327ecb2d370071b62748388d3">baro_board_ms5611_spi.c</a>
-, <a class="el" href="baro__board__ms5611__i2c_8c.html#a54223cd96d37f2a235ffe717bf5b4423">baro_board_ms5611_i2c.c</a>
+: <a class="el" href="baro__board__ms5611__i2c_8c.html#a54223cd96d37f2a235ffe717bf5b4423">baro_board_ms5611_i2c.c</a>
+, <a class="el" href="baro__board__ms5611__spi_8c.html#a53ac887327ecb2d370071b62748388d3">baro_board_ms5611_spi.c</a>
 </li>
 <li>bb_ms5611_filt
 : <a class="el" href="baro__board__ms5611__i2c_8c.html#a57f69ffb30e0a221a46d5292b9b7808f">baro_board_ms5611_i2c.c</a>
@@ -492,12 +513,31 @@ $(document).ready(function(){initNavTree('globals_vars_b.html','');});
 <li>best_quality
 : <a class="el" href="snake__gate__detection_8c.html#a7c57ce6e2713cf42378f4509e80faef1">snake_gate_detection.c</a>
 </li>
+<li>bf_attitude
+: <a class="el" href="cc2500__compat_8c.html#a7637e1c71bc9fe7b914cd2b971524152">cc2500_compat.c</a>
+, <a class="el" href="cc2500__compat_8h.html#a7637e1c71bc9fe7b914cd2b971524152">cc2500_compat.h</a>
+</li>
 <li>big_buffer
 : <a class="el" href="usb__serial__stm32__example2_8c.html#a93af7e09b2dca01ecec46ab4d0380a78">usb_serial_stm32_example2.c</a>
 </li>
 <li>bind_soft_value
-: <a class="el" href="spektrum__soft__bind__ap_8h.html#afa6263c88719c5877209b3aa106e66d1">spektrum_soft_bind_ap.h</a>
-, <a class="el" href="spektrum__soft__bind__ap_8c.html#afa6263c88719c5877209b3aa106e66d1">spektrum_soft_bind_ap.c</a>
+: <a class="el" href="spektrum__soft__bind__ap_8c.html#afa6263c88719c5877209b3aa106e66d1">spektrum_soft_bind_ap.c</a>
+, <a class="el" href="spektrum__soft__bind__ap_8h.html#afa6263c88719c5877209b3aa106e66d1">spektrum_soft_bind_ap.h</a>
+</li>
+<li>bindIdx
+: <a class="el" href="cc2500__frsky__shared_8c.html#aee4662d8fdeceaad3f0f2395eb120b43">cc2500_frsky_shared.c</a>
+</li>
+<li>bindIo
+: <a class="el" href="cc2500__settings_8c.html#a6d3fd2bb719800de8d45fcda83ed139d">cc2500_settings.c</a>
+</li>
+<li>bindOffset
+: <a class="el" href="cc2500__frsky__shared_8c.html#adfdeab9cdc3f41732175f3253829965a">cc2500_frsky_shared.c</a>
+</li>
+<li>bindPin
+: <a class="el" href="cc2500__rx__spi__common_8c.html#add505c7908ded49127d574f317c65dba">cc2500_rx_spi_common.c</a>
+</li>
+<li>bindRequested
+: <a class="el" href="cc2500__rx__spi__common_8c.html#a473a46cbd9ec990730a4c8593888ac6a">cc2500_rx_spi_common.c</a>
 </li>
 <li>bitsize
 : <a class="el" href="jpeg_8c.html#a838342a9369211fba0109c9b15002dc0">jpeg.c</a>
@@ -508,9 +548,16 @@ $(document).ready(function(){initNavTree('globals_vars_b.html','');});
 <li>blob_locator
 : <a class="el" href="cv__blob__locator_8c.html#a541e9a2e37276895d71dfbba183cffc2">cv_blob_locator.c</a>
 </li>
+<li>block_size_disparities
+: <a class="el" href="wedgebug_8h.html#aaa9722f1aa9f990912c955cd52e655cb">wedgebug.h</a>
+, <a class="el" href="wedgebug_8c.html#aaa9722f1aa9f990912c955cd52e655cb">wedgebug.c</a>
+</li>
 <li>block_time
 : <a class="el" href="common__flight__plan_8c.html#ae3eebf6396d9b2539b27b9477c46724d">common_flight_plan.c</a>
 , <a class="el" href="common__flight__plan_8h.html#ae3eebf6396d9b2539b27b9477c46724d">common_flight_plan.h</a>
+</li>
+<li>blocking
+: <a class="el" href="gpio__ext__pca95xx_8c.html#aee5d44979cb9bfdb94b8161ee58a0d60">gpio_ext_pca95xx.c</a>
 </li>
 <li>blue_color
 : <a class="el" href="snake__gate__detection_8c.html#a0776567269795baa33da86545b9561b1">snake_gate_detection.c</a>
@@ -530,16 +577,16 @@ $(document).ready(function(){initNavTree('globals_vars_b.html','');});
 , <a class="el" href="bmi088_8h.html#a204cd9d13497f8b2ecefa26ee3a934f8">bmi088.h</a>
 </li>
 <li>BMI088_ACCEL_SENS_FRAC
-: <a class="el" href="bmi088_8h.html#ae39f86176d11b3a960028c2d5b1ed8ee">bmi088.h</a>
-, <a class="el" href="bmi088_8c.html#ae39f86176d11b3a960028c2d5b1ed8ee">bmi088.c</a>
+: <a class="el" href="bmi088_8c.html#ae39f86176d11b3a960028c2d5b1ed8ee">bmi088.c</a>
+, <a class="el" href="bmi088_8h.html#ae39f86176d11b3a960028c2d5b1ed8ee">bmi088.h</a>
 </li>
 <li>BMI088_GYRO_SENS
-: <a class="el" href="bmi088_8h.html#addcce42ce13cf7b00585ee7ef9cc1936">bmi088.h</a>
-, <a class="el" href="bmi088_8c.html#addcce42ce13cf7b00585ee7ef9cc1936">bmi088.c</a>
+: <a class="el" href="bmi088_8c.html#addcce42ce13cf7b00585ee7ef9cc1936">bmi088.c</a>
+, <a class="el" href="bmi088_8h.html#addcce42ce13cf7b00585ee7ef9cc1936">bmi088.h</a>
 </li>
 <li>BMI088_GYRO_SENS_FRAC
-: <a class="el" href="bmi088_8h.html#a8ea5f457b020296ad97446e22aefce6f">bmi088.h</a>
-, <a class="el" href="bmi088_8c.html#a8ea5f457b020296ad97446e22aefce6f">bmi088.c</a>
+: <a class="el" href="bmi088_8c.html#a8ea5f457b020296ad97446e22aefce6f">bmi088.c</a>
+, <a class="el" href="bmi088_8h.html#a8ea5f457b020296ad97446e22aefce6f">bmi088.h</a>
 </li>
 <li>body_accel_f
 : <a class="el" href="stabilization__indi_8c.html#a8681b79f205fa4744fcc2dbb1903703f">stabilization_indi.c</a>
@@ -548,44 +595,44 @@ $(document).ready(function(){initNavTree('globals_vars_b.html','');});
 : <a class="el" href="stabilization__attitude__quat__float_8c.html#ac090c83a4f182c5061606cfbe13ff623">stabilization_attitude_quat_float.c</a>
 </li>
 <li>body_to_cam
-: <a class="el" href="opticflow__calculator_8c.html#a8ad74d62eb78612bfe023e762991f32a">opticflow_calculator.c</a>
+: <a class="el" href="opticflow__calculator_8c.html#a2e97303f21ad28dac214d307037572bb">opticflow_calculator.c</a>
 </li>
 <li>body_to_imu
-: <a class="el" href="ins__alt__float_8c.html#a755effd49991d996e4703451d0edc293">ins_alt_float.c</a>
-, <a class="el" href="ins__gps__passthrough_8c.html#a755effd49991d996e4703451d0edc293">ins_gps_passthrough.c</a>
+: <a class="el" href="ins__gps__passthrough_8c.html#a755effd49991d996e4703451d0edc293">ins_gps_passthrough.c</a>
+, <a class="el" href="ins__alt__float_8c.html#a755effd49991d996e4703451d0edc293">ins_alt_float.c</a>
 </li>
 <li>body_to_imu_ev
-: <a class="el" href="ahrs__madgwick__wrapper_8c.html#a1f7208107f1a5edfea2b32e570ad602d">ahrs_madgwick_wrapper.c</a>
-, <a class="el" href="energy__ctrl_8c.html#a1f7208107f1a5edfea2b32e570ad602d">energy_ctrl.c</a>
+: <a class="el" href="energy__ctrl_8c.html#a1f7208107f1a5edfea2b32e570ad602d">energy_ctrl.c</a>
+, <a class="el" href="ahrs__madgwick__wrapper_8c.html#a1f7208107f1a5edfea2b32e570ad602d">ahrs_madgwick_wrapper.c</a>
 , <a class="el" href="ahrs__int__cmpl__quat__wrapper_8c.html#a1f7208107f1a5edfea2b32e570ad602d">ahrs_int_cmpl_quat_wrapper.c</a>
-, <a class="el" href="ahrs__int__cmpl__euler__wrapper_8c.html#a1f7208107f1a5edfea2b32e570ad602d">ahrs_int_cmpl_euler_wrapper.c</a>
 , <a class="el" href="ins__gps__passthrough_8c.html#a1f7208107f1a5edfea2b32e570ad602d">ins_gps_passthrough.c</a>
-, <a class="el" href="ins__mekf__wind__wrapper_8c.html#a1f7208107f1a5edfea2b32e570ad602d">ins_mekf_wind_wrapper.c</a>
-, <a class="el" href="ahrs__float__invariant__wrapper_8c.html#a1f7208107f1a5edfea2b32e570ad602d">ahrs_float_invariant_wrapper.c</a>
-, <a class="el" href="ins__alt__float_8c.html#a1f7208107f1a5edfea2b32e570ad602d">ins_alt_float.c</a>
-, <a class="el" href="ins__float__invariant__wrapper_8c.html#a1f7208107f1a5edfea2b32e570ad602d">ins_float_invariant_wrapper.c</a>
-, <a class="el" href="ins__skeleton_8c.html#a1f7208107f1a5edfea2b32e570ad602d">ins_skeleton.c</a>
 , <a class="el" href="ahrs__float__cmpl__wrapper_8c.html#a1f7208107f1a5edfea2b32e570ad602d">ahrs_float_cmpl_wrapper.c</a>
-, <a class="el" href="ins__ekf2_8cpp.html#a1f7208107f1a5edfea2b32e570ad602d">ins_ekf2.cpp</a>
-, <a class="el" href="ahrs__float__mlkf__wrapper_8c.html#a1f7208107f1a5edfea2b32e570ad602d">ahrs_float_mlkf_wrapper.c</a>
+, <a class="el" href="ahrs__int__cmpl__euler__wrapper_8c.html#a1f7208107f1a5edfea2b32e570ad602d">ahrs_int_cmpl_euler_wrapper.c</a>
 , <a class="el" href="ahrs__float__dcm__wrapper_8c.html#a1f7208107f1a5edfea2b32e570ad602d">ahrs_float_dcm_wrapper.c</a>
+, <a class="el" href="ins__alt__float_8c.html#a1f7208107f1a5edfea2b32e570ad602d">ins_alt_float.c</a>
+, <a class="el" href="ins__skeleton_8c.html#a1f7208107f1a5edfea2b32e570ad602d">ins_skeleton.c</a>
+, <a class="el" href="ahrs__float__mlkf__wrapper_8c.html#a1f7208107f1a5edfea2b32e570ad602d">ahrs_float_mlkf_wrapper.c</a>
+, <a class="el" href="ins__ekf2_8cpp.html#a1f7208107f1a5edfea2b32e570ad602d">ins_ekf2.cpp</a>
+, <a class="el" href="ahrs__float__invariant__wrapper_8c.html#a1f7208107f1a5edfea2b32e570ad602d">ahrs_float_invariant_wrapper.c</a>
+, <a class="el" href="ins__mekf__wind__wrapper_8c.html#a1f7208107f1a5edfea2b32e570ad602d">ins_mekf_wind_wrapper.c</a>
+, <a class="el" href="ins__float__invariant__wrapper_8c.html#a1f7208107f1a5edfea2b32e570ad602d">ins_float_invariant_wrapper.c</a>
 </li>
 <li>border_height
-: <a class="el" href="textons_8h.html#ad239f51eb3b581eb4c76a6fcb7f92e2f">textons.h</a>
-, <a class="el" href="textons_8c.html#ad239f51eb3b581eb4c76a6fcb7f92e2f">textons.c</a>
+: <a class="el" href="textons_8c.html#ad239f51eb3b581eb4c76a6fcb7f92e2f">textons.c</a>
+, <a class="el" href="textons_8h.html#ad239f51eb3b581eb4c76a6fcb7f92e2f">textons.h</a>
 </li>
 <li>border_width
-: <a class="el" href="textons_8c.html#acc84bbf7292bdc04ee8fc730f6276d2a">textons.c</a>
-, <a class="el" href="textons_8h.html#acc84bbf7292bdc04ee8fc730f6276d2a">textons.h</a>
+: <a class="el" href="textons_8h.html#acc84bbf7292bdc04ee8fc730f6276d2a">textons.h</a>
+, <a class="el" href="textons_8c.html#acc84bbf7292bdc04ee8fc730f6276d2a">textons.c</a>
 </li>
 <li>bottom_camera
-: <a class="el" href="bebop_8h.html#aebe228d13ad2e4e0c8528d945ad76a82">bebop.h</a>
-, <a class="el" href="disco_8h.html#aebe228d13ad2e4e0c8528d945ad76a82">disco.h</a>
-, <a class="el" href="video__thread__nps_8c.html#aebe228d13ad2e4e0c8528d945ad76a82">video_thread_nps.c</a>
+: <a class="el" href="video__thread__nps_8c.html#aebe228d13ad2e4e0c8528d945ad76a82">video_thread_nps.c</a>
+, <a class="el" href="mt9v117_8c.html#aebe228d13ad2e4e0c8528d945ad76a82">mt9v117.c</a>
 , <a class="el" href="ardrone2_8h.html#aebe228d13ad2e4e0c8528d945ad76a82">ardrone2.h</a>
 , <a class="el" href="pc__sim_8h.html#aebe228d13ad2e4e0c8528d945ad76a82">pc_sim.h</a>
-, <a class="el" href="mt9v117_8c.html#aebe228d13ad2e4e0c8528d945ad76a82">mt9v117.c</a>
+, <a class="el" href="disco_8h.html#aebe228d13ad2e4e0c8528d945ad76a82">disco.h</a>
 , <a class="el" href="ardrone_2board_8c.html#aebe228d13ad2e4e0c8528d945ad76a82">board.c</a>
+, <a class="el" href="bebop_8h.html#aebe228d13ad2e4e0c8528d945ad76a82">bebop.h</a>
 </li>
 <li>broadcast_msg
 : <a class="el" href="bluegiga_8c.html#a876337cc7116d327068525c915f302e1">bluegiga.c</a>
@@ -652,6 +699,7 @@ $(document).ready(function(){initNavTree('globals_vars_b.html','');});
 </li>
 <li>Bwls
 : <a class="el" href="stabilization__indi_8c.html#a1953a1d7093d5fe41c2a4361577a837a">stabilization_indi.c</a>
+, <a class="el" href="stabilization__indi_8h.html#a1953a1d7093d5fe41c2a4361577a837a">stabilization_indi.h</a>
 </li>
 <li>byteIndex
 : <a class="el" href="rtcm3_8h.html#ae0c7fea868a8f1cfc4e7d2a84bc0fd4c">rtcm3.h</a>
@@ -662,7 +710,7 @@ $(document).ready(function(){initNavTree('globals_vars_b.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri May 15 2020 04:04:11 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:04:30 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

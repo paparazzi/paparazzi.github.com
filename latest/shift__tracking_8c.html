@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -150,9 +150,9 @@ Macros</h2></td></tr>
 <tr class="separator:aa018238f695179badada15bf5ad08947"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1945b402048a9ca7216df45f5a36a7df"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shift__tracking_8c.html#a1945b402048a9ca7216df45f5a36a7df">SHIFT_TRACKING_KI</a>&#160;&#160;&#160;0.5f</td></tr>
 <tr class="separator:a1945b402048a9ca7216df45f5a36a7df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b6b1ab04dc30681420b53bef4771513"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shift__tracking_8c.html#a4b6b1ab04dc30681420b53bef4771513">SHIFT_TRACKING_KD</a>&#160;&#160;&#160;1.f</td></tr>
+<tr class="memitem:a4b6b1ab04dc30681420b53bef4771513"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shift__tracking_8c.html#a4b6b1ab04dc30681420b53bef4771513">SHIFT_TRACKING_KD</a>&#160;&#160;&#160;1.<a class="el" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a></td></tr>
 <tr class="separator:a4b6b1ab04dc30681420b53bef4771513"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae23582dd450b44d2d92fd703054d0dee"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shift__tracking_8c.html#ae23582dd450b44d2d92fd703054d0dee">SHIFT_TRACKING_MAXSHIFT</a>&#160;&#160;&#160;30.f</td></tr>
+<tr class="memitem:ae23582dd450b44d2d92fd703054d0dee"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shift__tracking_8c.html#ae23582dd450b44d2d92fd703054d0dee">SHIFT_TRACKING_MAXSHIFT</a>&#160;&#160;&#160;30.<a class="el" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a></td></tr>
 <tr class="separator:ae23582dd450b44d2d92fd703054d0dee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -175,7 +175,7 @@ Functions</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:a50f07a57d7dd51deb1b5249360abe4e5"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="shift__tracking_8h.html#structshift__tracking__t">shift_tracking_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shift__tracking_8c.html#a50f07a57d7dd51deb1b5249360abe4e5">shift_tracking</a></td></tr>
 <tr class="separator:a50f07a57d7dd51deb1b5249360abe4e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd2eed9d21325682d7b568db5264ec55"><td class="memItemLeft" align="right" valign="top">static const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shift__tracking_8c.html#abd2eed9d21325682d7b568db5264ec55">nav_dt</a> = 1.f / <a class="el" href="fixedwing_2autopilot__static_8h.html#aba17f9ac72f7e9dd1dcd95457bf5c87f">NAVIGATION_FREQUENCY</a></td></tr>
+<tr class="memitem:abd2eed9d21325682d7b568db5264ec55"><td class="memItemLeft" align="right" valign="top">static const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shift__tracking_8c.html#abd2eed9d21325682d7b568db5264ec55">nav_dt</a> = 1.<a class="el" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a> / <a class="el" href="fixedwing_2autopilot__static_8h.html#aba17f9ac72f7e9dd1dcd95457bf5c87f">NAVIGATION_FREQUENCY</a></td></tr>
 <tr class="separator:abd2eed9d21325682d7b568db5264ec55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a443524dd0e8edb1fbb5ef0014a30ba09"><td class="memItemLeft" align="right" valign="top">static struct <br class="typebreak" />
 <a class="el" href="shift__tracking_8c.html#structshift__tracking__private">shift_tracking_private</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="shift__tracking_8c.html#a443524dd0e8edb1fbb5ef0014a30ba09">stp</a></td></tr>
@@ -290,7 +290,7 @@ keep track of the shift variable to change </td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define SHIFT_TRACKING_KD&#160;&#160;&#160;1.f</td>
+          <td class="memname">#define SHIFT_TRACKING_KD&#160;&#160;&#160;1.<a class="el" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -338,7 +338,7 @@ keep track of the shift variable to change </td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define SHIFT_TRACKING_MAXSHIFT&#160;&#160;&#160;30.f</td>
+          <td class="memname">#define SHIFT_TRACKING_MAXSHIFT&#160;&#160;&#160;30.<a class="el" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -596,7 +596,7 @@ keep track of the shift variable to change </td></tr>
 
 <p>Definition at line <a class="el" href="shift__tracking_8c_source.html#l00091">91</a> of file <a class="el" href="shift__tracking_8c_source.html">shift_tracking.c</a>.</p>
 
-<p>Referenced by <a class="el" href="sdLog_8c_source.html#l00730">getFileName()</a>, <a class="el" href="nps__atmosphere_8c_source.html#l00071">nps_atmosphere_set_wind_dir()</a>, <a class="el" href="nps__atmosphere_8c_source.html#l00083">nps_atmosphere_set_wind_ned()</a>, <a class="el" href="sdLog_8c_source.html#l00791">removeEmptyLogs()</a>, and <a class="el" href="shift__tracking_8c_source.html#l00108">shift_tracking_init()</a>.</p>
+<p>Referenced by <a class="el" href="nav__fish_8c_source.html#l00273">angle_to_wall()</a>, <a class="el" href="sdLog_8c_source.html#l00730">getFileName()</a>, <a class="el" href="nps__atmosphere_8c_source.html#l00071">nps_atmosphere_set_wind_dir()</a>, <a class="el" href="nps__atmosphere_8c_source.html#l00083">nps_atmosphere_set_wind_ned()</a>, <a class="el" href="sdLog_8c_source.html#l00791">removeEmptyLogs()</a>, <a class="el" href="shift__tracking_8c_source.html#l00108">shift_tracking_init()</a>, and <a class="el" href="nav__fish_8c_source.html#l00301">viewing_angle()</a>.</p>
 
 </div>
 </div>
@@ -608,7 +608,7 @@ keep track of the shift variable to change </td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const float nav_dt = 1.f / <a class="el" href="fixedwing_2autopilot__static_8h.html#aba17f9ac72f7e9dd1dcd95457bf5c87f">NAVIGATION_FREQUENCY</a></td>
+          <td class="memname">const float nav_dt = 1.<a class="el" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a> / <a class="el" href="fixedwing_2autopilot__static_8h.html#aba17f9ac72f7e9dd1dcd95457bf5c87f">NAVIGATION_FREQUENCY</a></td>
         </tr>
       </table>
   </td>
@@ -670,7 +670,7 @@ keep track of the shift variable to change </td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_94757629c544be2d6d24b01569be56e6.html">ctrl</a></li><li class="navelem"><a class="el" href="shift__tracking_8c.html">shift_tracking.c</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:03:11 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:03:26 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

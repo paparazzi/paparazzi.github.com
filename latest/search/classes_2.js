@@ -12,6 +12,8 @@ var searchData=
   ['bmp085',['Bmp085',['../bmp085_8h.html#structBmp085',1,'']]],
   ['bmp085calib',['Bmp085Calib',['../bmp085_8h.html#structBmp085Calib',1,'']]],
   ['bmp180_5fcalib_5ft',['bmp180_calib_t',['../navdata_8h.html#structbmp180__calib__t',1,'']]],
+  ['bmp280_5fi2c',['Bmp280_I2c',['../bmp280__i2c_8h.html#structBmp280__I2c',1,'']]],
+  ['bmp280_5freg_5fcalib_5fdata',['bmp280_reg_calib_data',['../bmp280__regs_8h.html#structbmp280__reg__calib__data',1,'']]],
   ['bmp3_5fi2c',['Bmp3_I2c',['../bmp3__i2c_8h.html#structBmp3__I2c',1,'']]],
   ['bmp3_5fquantized_5fcalib_5fdata',['bmp3_quantized_calib_data',['../bmp3__regs_8h.html#structbmp3__quantized__calib__data',1,'']]],
   ['bmp3_5freg_5fcalib_5fdata',['bmp3_reg_calib_data',['../bmp3__regs_8h.html#structbmp3__reg__calib__data',1,'']]],

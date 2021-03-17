@@ -1,28 +1,51 @@
 <map id="spi_submit" name="spi_submit">
-<area shape="rect" id="node2" href="$armVIC_8c.html#a495b577a0ad5c4dc620339b2edff1ac5" title="disableIRQ" alt="" coords="196,5,284,32"/>
-<area shape="rect" id="node5" href="$armVIC_8c.html#adf9d98445ae51a2278cbe9e719f579f1" title="enableIRQ" alt="" coords="197,56,283,83"/>
-<area shape="rect" id="node6" href="$stm32_2mcu__periph_2spi__arch_8c.html#a42f17f52b327c1192801fc39493f43c5" title="Disable DMA channel interrupts. " alt="" coords="165,107,315,133"/>
-<area shape="rect" id="node7" href="$stm32_2mcu__periph_2spi__arch_8c.html#a92d285e5b860130426aa3ce1369df0c9" title="Enable DMA channel interrupts. " alt="" coords="166,157,314,184"/>
-<area shape="rect" id="node8" href="$stm32_2mcu__periph_2spi__arch_8c.html#a87e230295cb1339876faa6f6986a44e9" title="Start a new transaction with DMA. " alt="" coords="144,208,336,235"/>
-<area shape="rect" id="node14" href="$lpc21_2mcu__periph_2spi__arch_8c.html#abcda020ad14ec4732c4ffff453060fff" title="SpiStart" alt="" coords="203,512,277,539"/>
+<area shape="rect" id="node2" href="$armVIC_8c.html#a495b577a0ad5c4dc620339b2edff1ac5" title="disableIRQ" alt="" coords="196,31,284,57"/>
+<area shape="rect" id="node5" href="$armVIC_8c.html#adf9d98445ae51a2278cbe9e719f579f1" title="enableIRQ" alt="" coords="197,81,283,108"/>
+<area shape="rect" id="node6" href="$e__identification__fr_8c.html#a92cffae21318c1d983c63f3afa2a8d87" title="if" alt="" coords="221,259,259,285"/>
+<area shape="rect" id="node29" href="$stm32_2mcu__periph_2spi__arch_8c.html#a42f17f52b327c1192801fc39493f43c5" title="Disable DMA channel interrupts. " alt="" coords="165,309,315,336"/>
+<area shape="rect" id="node30" href="$stm32_2mcu__periph_2spi__arch_8c.html#a92d285e5b860130426aa3ce1369df0c9" title="Enable DMA channel interrupts. " alt="" coords="166,360,314,387"/>
+<area shape="rect" id="node31" href="$stm32_2mcu__periph_2spi__arch_8c.html#a87e230295cb1339876faa6f6986a44e9" title="Start a new transaction with DMA. " alt="" coords="144,512,336,539"/>
+<area shape="rect" id="node37" href="$lpc21_2mcu__periph_2spi__arch_8c.html#abcda020ad14ec4732c4ffff453060fff" title="SpiStart" alt="" coords="203,867,277,893"/>
 <area shape="rect" id="node3" href="$armVIC_8c.html#a07a90dd2662e1a51c45600eccd2661c4" title="__get_cpsr" alt="" coords="442,5,533,32"/>
 <area shape="rect" id="node4" href="$armVIC_8c.html#a2695574f2b9c353bb88ce1239a0ab9ec" title="__set_cpsr" alt="" coords="442,56,533,83"/>
-<area shape="rect" id="node9" href="$stm32_2mcu__periph_2spi__arch_8c.html#a0c1bcbefaf569036eb191e18ea849a7a" title="get_transaction_signature" alt="" coords="393,107,582,133"/>
-<area shape="rect" id="node10" href="$stm32_2mcu__periph_2spi__arch_8c.html#af29aa7d9b5af1ef2b42450937767535f" title="Update SPI communication conf from generic paparazzi SPI transaction. " alt="" coords="384,157,591,184"/>
-<area shape="rect" id="node11" href="$stm32_2mcu__periph_2spi__arch_8c.html#a9678da2cc27199851a80fcf27a2761a3" title="spi_configure_dma" alt="" coords="416,208,559,235"/>
-<area shape="rect" id="node12" href="$stm32_2mcu__periph_2spi__arch_8c.html#ab639bd461acc9159f2a8566bfe1ebdd0" title="SpiSlaveSelect" alt="" coords="429,259,546,285"/>
-<area shape="rect" id="node13" href="$chibios_2mcu__periph_2gpio__arch_8h.html#a302a5c9e7203669d0b9db8a2952fe009" title="Clear a gpio output to low level. " alt="" coords="643,259,730,285"/>
-<area shape="rect" id="node15" href="$lpc21_2mcu__periph_2spi__arch_8c.html#ac8a1011a8423019c3b94e3a1a9744b6b" title="SpiClearCPHA" alt="" coords="432,715,543,741"/>
-<area shape="rect" id="node16" href="$lpc21_2mcu__periph_2spi__arch_8c.html#afddc6318837a832e08ac2096474632f8" title="SpiClearCPOL" alt="" coords="433,765,542,792"/>
-<area shape="rect" id="node17" href="$lpc21_2mcu__periph_2spi__arch_8c.html#a4bb68d5cebfe43c482fc48ca2a1ed6de" title="SpiEnable" alt="" coords="445,309,530,336"/>
-<area shape="rect" id="node18" href="$lpc21_2mcu__periph_2spi__arch_8c.html#a2f597567924a3000e5afb340e4aa5592" title="SpiEnableRti" alt="" coords="437,360,538,387"/>
-<area shape="rect" id="node19" href="$lpc21_2mcu__periph_2spi__arch_8c.html#acb7e2c245885f1b82d6791148172e592" title="SpiEnableTxi" alt="" coords="436,411,539,437"/>
-<area shape="rect" id="node20" href="$lpc21_2mcu__periph_2spi__arch_8c.html#a5c38f72da3e7ef54561ec617cdde67e5" title="SpiInitBuf" alt="" coords="446,461,529,488"/>
-<area shape="rect" id="node24" href="$lpc21_2mcu__periph_2spi__arch_8c.html#a3f8c8db30e82381d4d60a444f1708517" title="SpiSetCPHA" alt="" coords="437,512,537,539"/>
-<area shape="rect" id="node25" href="$lpc21_2mcu__periph_2spi__arch_8c.html#a1126b0a8388d4a8eb8ded8bbe8ab940e" title="SpiSetCPOL" alt="" coords="438,563,537,589"/>
-<area shape="rect" id="node26" href="$lpc21_2mcu__periph_2spi__arch_8c.html#ad816c76c7fe692f51942efa74bdb1d86" title="Set the SPI data size to 8 or 16bit. " alt="" coords="426,613,549,640"/>
-<area shape="rect" id="node27" href="$lpc21_2mcu__periph_2spi__arch_8c.html#ab639bd461acc9159f2a8566bfe1ebdd0" title="SpiSlaveSelect" alt="" coords="429,664,546,691"/>
-<area shape="rect" id="node21" href="$lpc21_2mcu__periph_2spi__arch_8c.html#a3e9017646922bf67dc34451d35696314" title="SpiTransmit" alt="" coords="639,461,735,488"/>
-<area shape="rect" id="node22" href="$lpc21_2mcu__periph_2spi__arch_8c.html#a945eb366ac13567f396285aaa6381cec" title="SpiDisableTxi" alt="" coords="783,436,889,463"/>
-<area shape="rect" id="node23" href="$lpc21_2mcu__periph_2spi__arch_8c.html#af00370ab8f8ea4fe1ac8bf434230a398" title="SpiSend" alt="" coords="799,487,873,513"/>
+<area shape="rect" id="node7" href="$e__identification__fr_8c.html#af46aee3f4ea5943261ce0a748645d5ab" title="put_alt" alt="" coords="454,411,521,437"/>
+<area shape="rect" id="node8" href="$e__identification__fr_8c.html#ad38b113b8c749a0ad70f3226ce4be6c8" title="put_horizontal_speed" alt="" coords="408,157,567,184"/>
+<area shape="rect" id="node11" href="$e__identification__fr_8c.html#abe4d49e345383266eb45de2d01dc9998" title="put_lat" alt="" coords="454,259,521,285"/>
+<area shape="rect" id="node20" href="$e__identification__fr_8c.html#ab86f66c5c2a551aabe930fff3a5120d3" title="put_lat_lon_home" alt="" coords="419,309,555,336"/>
+<area shape="rect" id="node24" href="$e__identification__fr_8c.html#a58d75f9f286ae788eb5a93131c69b9cf" title="put_lon" alt="" coords="453,208,522,235"/>
+<area shape="rect" id="node25" href="$e__identification__fr_8c.html#ad697ac22d1fafd997a6033c81aac40c9" title="put_route" alt="" coords="445,107,529,133"/>
+<area shape="rect" id="node28" href="$chibios_2mcu__periph_2uart__arch_8c.html#aafe5af02ef8bf915fcd76d39896174a3" title="Uart transmit buffer implementation. " alt="" coords="427,360,547,387"/>
+<area shape="rect" id="node9" href="$group__state__velocity.html#ga1396b84069296dc0353f25281a472c08" title="Get norm of horizontal ground speed (float). " alt="" coords="639,153,869,180"/>
+<area shape="rect" id="node10" href="$group__state__velocity.html#ga990849172b82f2e3bc1ab9da2395c9c4" title="stateCalcHorizontalSpeed\lNorm_f" alt="" coords="917,145,1105,186"/>
+<area shape="rect" id="node12" href="$group__state__position.html#ga99473409b740a26c0e2b9a5bd8e9defb" title="Get position in LLA coordinates (int). " alt="" coords="676,259,832,285"/>
+<area shape="rect" id="node13" href="$group__state__position.html#gad0fedf046f198eace06305e56fc7a0f8" title="Calculate LLA (int) from any other available representation. " alt="" coords="931,261,1091,288"/>
+<area shape="rect" id="node14" href="$group__math__geodetic__int.html#gaea47a32071c2427f895fcb1df32c4e23" title="Convert a ECEF to LLA. " alt="" coords="1173,211,1272,237"/>
+<area shape="rect" id="node15" href="$pprz__geodetic__float_8c.html#a30c2e47ec9a898079c04e8b08496b455" title="lla_of_utm_f" alt="" coords="1173,363,1272,389"/>
+<area shape="rect" id="node18" href="$group__math__geodetic__int.html#gaf92579b72a2adb1aaac73fae89553fca" title="Convert a local NED position to ECEF. " alt="" coords="1153,312,1292,339"/>
+<area shape="rect" id="node19" href="$group__math__geodetic__int.html#gaaeff7441301129ca712e828b9b4f474e" title="Convert a local ENU position to ECEF. " alt="" coords="1371,261,1509,288"/>
+<area shape="rect" id="node16" href="$pprz__geodetic__float_8c.html#a28b6e05c87f50f1e5290e36407095fb6" title="inverse_isometric_latitude_f" alt="" coords="1340,400,1540,427"/>
+<area shape="rect" id="node17" href="$pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="1372,334,1508,375"/>
+<area shape="rect" id="node21" href="$subsystems_2navigation_2waypoints_8c.html#a2ed9112b04893275873729d03176f490" title="Get LLA coordinates of waypoint. " alt="" coords="691,309,817,336"/>
+<area shape="rect" id="node22" href="$subsystems_2navigation_2waypoints_8c.html#a10acece8582506367e9e9df3694bf31b" title="update global LLA coordinates from its ENU coordinates " alt="" coords="941,211,1082,237"/>
+<area shape="rect" id="node23" href="$subsystems_2navigation_2waypoints_8c.html#a4f584367219ec09db0e1df24c85e7a1b" title="waypoint_is_global" alt="" coords="941,312,1081,339"/>
+<area shape="rect" id="node26" href="$group__state__velocity.html#ga6f8b83126a235daea584aa9ce97f7fac" title="Get dir of horizontal ground speed (float). " alt="" coords="647,96,861,123"/>
+<area shape="rect" id="node27" href="$group__state__velocity.html#gad9b7b6ea39d5a4ee3e824f97204c4bb5" title="stateCalcHorizontalSpeed\lDir_f" alt="" coords="917,79,1105,121"/>
+<area shape="rect" id="node32" href="$stm32_2mcu__periph_2spi__arch_8c.html#a0c1bcbefaf569036eb191e18ea849a7a" title="get_transaction_signature" alt="" coords="393,512,582,539"/>
+<area shape="rect" id="node33" href="$stm32_2mcu__periph_2spi__arch_8c.html#af29aa7d9b5af1ef2b42450937767535f" title="Update SPI communication conf from generic paparazzi SPI transaction. " alt="" coords="384,563,591,589"/>
+<area shape="rect" id="node34" href="$stm32_2mcu__periph_2spi__arch_8c.html#a9678da2cc27199851a80fcf27a2761a3" title="spi_configure_dma" alt="" coords="416,613,559,640"/>
+<area shape="rect" id="node35" href="$stm32_2mcu__periph_2spi__arch_8c.html#ab639bd461acc9159f2a8566bfe1ebdd0" title="SpiSlaveSelect" alt="" coords="429,461,546,488"/>
+<area shape="rect" id="node36" href="$chibios_2mcu__periph_2gpio__arch_8h.html#a302a5c9e7203669d0b9db8a2952fe009" title="Clear a gpio output to low level. " alt="" coords="711,461,797,488"/>
+<area shape="rect" id="node38" href="$lpc21_2mcu__periph_2spi__arch_8c.html#ac8a1011a8423019c3b94e3a1a9744b6b" title="SpiClearCPHA" alt="" coords="432,1120,543,1147"/>
+<area shape="rect" id="node39" href="$lpc21_2mcu__periph_2spi__arch_8c.html#afddc6318837a832e08ac2096474632f8" title="SpiClearCPOL" alt="" coords="433,664,542,691"/>
+<area shape="rect" id="node40" href="$lpc21_2mcu__periph_2spi__arch_8c.html#a4bb68d5cebfe43c482fc48ca2a1ed6de" title="SpiEnable" alt="" coords="445,715,530,741"/>
+<area shape="rect" id="node41" href="$lpc21_2mcu__periph_2spi__arch_8c.html#a2f597567924a3000e5afb340e4aa5592" title="SpiEnableRti" alt="" coords="437,765,538,792"/>
+<area shape="rect" id="node42" href="$lpc21_2mcu__periph_2spi__arch_8c.html#acb7e2c245885f1b82d6791148172e592" title="SpiEnableTxi" alt="" coords="436,816,539,843"/>
+<area shape="rect" id="node43" href="$lpc21_2mcu__periph_2spi__arch_8c.html#a5c38f72da3e7ef54561ec617cdde67e5" title="SpiInitBuf" alt="" coords="446,867,529,893"/>
+<area shape="rect" id="node47" href="$lpc21_2mcu__periph_2spi__arch_8c.html#a3f8c8db30e82381d4d60a444f1708517" title="SpiSetCPHA" alt="" coords="437,917,537,944"/>
+<area shape="rect" id="node48" href="$lpc21_2mcu__periph_2spi__arch_8c.html#a1126b0a8388d4a8eb8ded8bbe8ab940e" title="SpiSetCPOL" alt="" coords="438,968,537,995"/>
+<area shape="rect" id="node49" href="$lpc21_2mcu__periph_2spi__arch_8c.html#ad816c76c7fe692f51942efa74bdb1d86" title="Set the SPI data size to 8 or 16bit. " alt="" coords="426,1019,549,1045"/>
+<area shape="rect" id="node50" href="$lpc21_2mcu__periph_2spi__arch_8c.html#ab639bd461acc9159f2a8566bfe1ebdd0" title="SpiSlaveSelect" alt="" coords="429,1069,546,1096"/>
+<area shape="rect" id="node44" href="$lpc21_2mcu__periph_2spi__arch_8c.html#a3e9017646922bf67dc34451d35696314" title="SpiTransmit" alt="" coords="706,867,802,893"/>
+<area shape="rect" id="node45" href="$lpc21_2mcu__periph_2spi__arch_8c.html#a945eb366ac13567f396285aaa6381cec" title="SpiDisableTxi" alt="" coords="958,841,1065,868"/>
+<area shape="rect" id="node46" href="$lpc21_2mcu__periph_2spi__arch_8c.html#af00370ab8f8ea4fe1ac8bf434230a398" title="SpiSend" alt="" coords="974,892,1049,919"/>
 </map>

@@ -23,7 +23,5 @@ var searchData=
   ['xsensupdatechecksum',['XsensUpdateChecksum',['../xsens__parser_8h.html#af174d6cd94fda273df23563c16e21b57',1,'xsens_parser.h']]],
   ['xtend_5frssi_5fpwm_5farray_5findex',['XTEND_RSSI_PWM_ARRAY_INDEX',['../xtend__rssi_8c.html#ac1a8e8fba0278c75b157856120bdbe12',1,'xtend_rssi.c']]],
   ['xtend_5frssi_5fpwm_5fperiod_5fusec',['XTEND_RSSI_PWM_PERIOD_USEC',['../xtend__rssi_8c.html#a5939b041a4e8ee6044d5ccde8feee330',1,'xtend_rssi.c']]],
-  ['xvert_5fesc_5f0',['XVERT_ESC_0',['../xvert_2chibios_2v1_80_2board_8h.html#a22810d64dc406f2f56a3b8b83666534d',1,'board.h']]],
-  ['xvert_5fesc_5f1',['XVERT_ESC_1',['../xvert_2chibios_2v1_80_2board_8h.html#aa0bf7a53d525ea5923480be05f5707d7',1,'board.h']]],
   ['xy_5fsymmetrical',['XY_SYMMETRICAL',['../optical__flow__hover_8c.html#a4025ed0fe863a0578edece6934dd1fbd',1,'optical_flow_hover.c']]]
 ];

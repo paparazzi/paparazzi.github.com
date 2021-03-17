@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -125,9 +125,7 @@ Configure Options</h2>
 <h1><a class="anchor" id="autoloads__board_tawaki"></a>
 Auto-loaded modules</h1>
 <p>The following modules are automatically loaded (just as if you had added them in the airframe file)</p><ul>
-<li>module__imumpu6000</li>
-<li>module__barobmp3</li>
-<li>module__maglis3mdl </li>
+<li>module__imumpu6000 </li>
 </ul>
 <h1><a class="anchor" id="files"></a>
 Files</h1>
@@ -147,9 +145,10 @@ Raw board_tawaki.xml file:</h2>
 <div class="line">    &lt;/description&gt;</div>
 <div class="line">    &lt;configure name=&quot;BOARD_TAWAKI_ROTATED&quot; value=&quot;FALSE|TRUE&quot; description=&quot;if TRUE, the board is not using is default orientation and axis can be redefined by hand&quot;/&gt;</div>
 <div class="line">  &lt;/doc&gt;</div>
+<div class="line">  &lt;dep&gt;</div>
+<div class="line">    &lt;depends&gt;baro_bmp3,mag_lis3mdl&lt;/depends&gt;</div>
+<div class="line">  &lt;/dep&gt;</div>
 <div class="line">  &lt;autoload name=&quot;imu&quot; type=&quot;mpu6000&quot;/&gt;</div>
-<div class="line">  &lt;autoload name=&quot;baro&quot; type=&quot;bmp3&quot;/&gt;</div>
-<div class="line">  &lt;autoload name=&quot;mag&quot; type=&quot;lis3mdl&quot;/&gt;</div>
 <div class="line">  &lt;makefile target=&quot;!sim|nps|fbw&quot;&gt;</div>
 <div class="line">    &lt;define name=&quot;IMU_MPU_GYRO_RANGE&quot; value=&quot;MPU60X0_GYRO_RANGE_1000&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;IMU_MPU_ACCEL_RANGE&quot; value=&quot;MPU60X0_ACCEL_RANGE_8G&quot;/&gt;</div>
@@ -173,7 +172,7 @@ Raw board_tawaki.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:03:39 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:03:57 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

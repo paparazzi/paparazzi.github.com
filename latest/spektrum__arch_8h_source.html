@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -136,17 +136,13 @@ $(document).ready(function(){initNavTree('spektrum__arch_8h_source.html','');});
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="spektrum__radio_8h.html">subsystems/radio_control/spektrum_radio.h</a>&quot;</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="spektrum__arch_8h.html#a12084c04bb3f98fad19d7067eb32eed5">spektrum_event</a>(<span class="keywordtype">void</span> (*_received_frame_handler)(<span class="keywordtype">void</span>));</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="spektrum__arch_8h.html#afdde98823a1f4ee0a8be9a3c6f01036a">   29</a></span>&#160;<span class="preprocessor">#define RadioControlEventImp spektrum_event</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="spektrum__arch_8h.html#aff8033ce4ec3eca45caafb45d2ba6760">spektrum_try_bind</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#if USE_NPS</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> radio_control_feed(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* RADIO_CONTROL_SPEKTRUM_ARCH_H */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="spektrum__arch_8h_html_aff8033ce4ec3eca45caafb45d2ba6760"><div class="ttname"><a href="spektrum__arch_8h.html#aff8033ce4ec3eca45caafb45d2ba6760">spektrum_try_bind</a></div><div class="ttdeci">void spektrum_try_bind(void)</div><div class="ttdef"><b>Definition:</b> <a href="spektrum__arch_8c_source.html#l00057">spektrum_arch.c:57</a></div></div>
-<div class="ttc" id="spektrum__arch_8h_html_a12084c04bb3f98fad19d7067eb32eed5"><div class="ttname"><a href="spektrum__arch_8h.html#a12084c04bb3f98fad19d7067eb32eed5">spektrum_event</a></div><div class="ttdeci">void spektrum_event(void(*_received_frame_handler)(void))</div><div class="ttdoc">Checks if there is one valid satellite and sets the radio_control structure. </div><div class="ttdef"><b>Definition:</b> <a href="spektrum__arch_8c_source.html#l00046">spektrum_arch.c:46</a></div></div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="spektrum__arch_8h.html#afdde98823a1f4ee0a8be9a3c6f01036a">   28</a></span>&#160;<span class="preprocessor">#define RadioControlEventImp spektrum_event</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#if USE_NPS</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> radio_control_feed(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* RADIO_CONTROL_SPEKTRUM_ARCH_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="spektrum__radio_8h_html"><div class="ttname"><a href="spektrum__radio_8h.html">spektrum_radio.h</a></div><div class="ttdoc">Radio control channels defaults, because they are digital. </div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -154,7 +150,7 @@ $(document).ready(function(){initNavTree('spektrum__arch_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_c87a6d12365ead88e0b90ddbc1b3c9bb.html">sim</a></li><li class="navelem"><a class="el" href="dir_666d3c43b9df888d27617864b1f0db99.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_6b148c25f427ac62159d4ea5931aeff5.html">radio_control</a></li><li class="navelem"><a class="el" href="spektrum__arch_8h.html">spektrum_arch.h</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:02:10 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:02:20 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

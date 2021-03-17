@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -125,6 +125,7 @@ $(document).ready(function(){initNavTree('gsm_8c.html','');});
 <code>#include &quot;<a class="el" href="autopilot_8h_source.html">autopilot.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="electrical_8h_source.html">subsystems/electrical.h</a>&quot;</code><br />
 <code>#include &quot;generated/settings.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="led_8h_source.html">led.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for gsm.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -132,7 +133,7 @@ $(document).ready(function(){initNavTree('gsm_8c.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gsm_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2gsm_2gsm_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2gsm_2gsm_8c" id="sw_2airborne_2modules_2gsm_2gsm_8c">
-<area shape="rect" id="node6" href="gsm_8h.html" title="Communications through GSM. " alt="" coords="2589,102,2652,129"/><area shape="rect" id="node7" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="2419,281,2558,307"/><area shape="rect" id="node11" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="1983,95,2136,136"/><area shape="rect" id="node20" href="gps_8h.html" title="Device independent GPS code (interface) " alt="" coords="1483,191,1622,218"/><area shape="rect" id="node34" href="autopilot_8h.html" title="Core autopilot interface common to all firmwares. " alt="" coords="1079,102,1170,129"/><area shape="rect" id="node41" href="electrical_8h.html" title="Interface for electrical status: supply voltage, current, battery status, etc. " alt="" coords="1691,102,1863,129"/><area shape="rect" id="node12" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1822,370,1907,397"/><area shape="rect" id="node16" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="1983,184,2136,225"/><area shape="rect" id="node18" href="pprz__dl_8h.html" title="Datalink using PPRZ protocol. " alt="" coords="2160,191,2353,218"/><area shape="rect" id="node21" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="1112,273,1263,315"/><area shape="rect" id="node28" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="1287,273,1437,315"/><area shape="rect" id="node31" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="1491,281,1662,307"/><area shape="rect" id="node22" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="1139,370,1263,397"/><area shape="rect" id="node23" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="872,370,1012,397"/><area shape="rect" id="node24" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="263,452,418,479"/><area shape="rect" id="node27" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="877,452,1028,479"/><area shape="rect" id="node29" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="594,370,746,397"/><area shape="rect" id="node35" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="1761,281,1857,307"/><area shape="rect" id="node36" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="1154,191,1221,218"/><area shape="rect" id="node37" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="821,273,985,315"/></map>
+<area shape="rect" id="node6" href="gsm_8h.html" title="Communications through GSM. " alt="" coords="2712,102,2775,129"/><area shape="rect" id="node7" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="2578,281,2717,307"/><area shape="rect" id="node11" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="1855,95,2008,136"/><area shape="rect" id="node20" href="gps_8h.html" title="Device independent GPS code (interface) " alt="" coords="1215,191,1354,218"/><area shape="rect" id="node34" href="autopilot_8h.html" title="Core autopilot interface common to all firmwares. " alt="" coords="1081,102,1171,129"/><area shape="rect" id="node41" href="electrical_8h.html" title="Interface for electrical status: supply voltage, current, battery status, etc. " alt="" coords="1517,102,1689,129"/><area shape="rect" id="node43" href="led_8h.html" title="arch independent LED (Light Emitting Diodes) API " alt="" coords="2978,102,3031,129"/><area shape="rect" id="node12" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1602,370,1687,397"/><area shape="rect" id="node16" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="2125,184,2279,225"/><area shape="rect" id="node18" href="pprz__dl_8h.html" title="Datalink using PPRZ protocol. " alt="" coords="2303,191,2496,218"/><area shape="rect" id="node21" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="989,273,1140,315"/><area shape="rect" id="node28" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="815,273,965,315"/><area shape="rect" id="node31" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="1262,281,1433,307"/><area shape="rect" id="node22" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="868,370,992,397"/><area shape="rect" id="node23" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="601,370,741,397"/><area shape="rect" id="node24" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="243,452,398,479"/><area shape="rect" id="node27" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="575,452,725,479"/><area shape="rect" id="node29" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="245,370,397,397"/><area shape="rect" id="node35" href="paparazzi_8h.html" title="paparazzi.h" alt="" coords="1509,281,1605,307"/><area shape="rect" id="node36" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="594,191,661,218"/><area shape="rect" id="node37" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="524,273,688,315"/></map>
 </div>
 </div>
 <p><a href="gsm_8c_source.html">Go to the source code of this file.</a></p>
@@ -275,9 +276,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gsm_8c_source.html#l00086">86</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
+<p>Definition at line <a class="el" href="gsm_8c_source.html#l00087">87</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gsm_8c_source.html#l00197">gsm_got_line()</a>.</p>
+<p>Referenced by <a class="el" href="gsm_8c_source.html#l00198">gsm_got_line()</a>.</p>
 
 </div>
 </div>
@@ -291,9 +292,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gsm_8c_source.html#l00082">82</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
+<p>Definition at line <a class="el" href="gsm_8c_source.html#l00083">83</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gsm_8c_source.html#l00352">gsm_got_prompt()</a>.</p>
+<p>Referenced by <a class="el" href="gsm_8c_source.html#l00353">gsm_got_prompt()</a>.</p>
 
 </div>
 </div>
@@ -307,7 +308,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gsm_8c_source.html#l00084">84</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
+<p>Definition at line <a class="el" href="gsm_8c_source.html#l00085">85</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
 
 </div>
 </div>
@@ -321,7 +322,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gsm_8c_source.html#l00069">69</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
+<p>Definition at line <a class="el" href="gsm_8c_source.html#l00070">70</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
 
 </div>
 </div>
@@ -335,9 +336,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gsm_8c_source.html#l00072">72</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
+<p>Definition at line <a class="el" href="gsm_8c_source.html#l00073">73</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gsm_8c_source.html#l00472">gsm_parse()</a>.</p>
+<p>Referenced by <a class="el" href="gsm_8c_source.html#l00473">gsm_parse()</a>.</p>
 
 </div>
 </div>
@@ -351,7 +352,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gsm_8c_source.html#l00083">83</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
+<p>Definition at line <a class="el" href="gsm_8c_source.html#l00084">84</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
 
 </div>
 </div>
@@ -368,9 +369,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gsm_8c_source.html#l00076">76</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
+<p>Definition at line <a class="el" href="gsm_8c_source.html#l00077">77</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gsm_8c_source.html#l00178">gsm_event()</a>.</p>
+<p>Referenced by <a class="el" href="gsm_8c_source.html#l00179">gsm_event()</a>.</p>
 
 </div>
 </div>
@@ -384,7 +385,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gsm_8c_source.html#l00074">74</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
+<p>Definition at line <a class="el" href="gsm_8c_source.html#l00075">75</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
 
 </div>
 </div>
@@ -401,7 +402,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gsm_8c_source.html#l00078">78</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
+<p>Definition at line <a class="el" href="gsm_8c_source.html#l00079">79</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
 
 </div>
 </div>
@@ -419,7 +420,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gsm_8c_source.html#l00077">77</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
+<p>Definition at line <a class="el" href="gsm_8c_source.html#l00078">78</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
 
 </div>
 </div>
@@ -433,9 +434,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gsm_8c_source.html#l00087">87</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
+<p>Definition at line <a class="el" href="gsm_8c_source.html#l00088">88</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gsm_8c_source.html#l00197">gsm_got_line()</a>.</p>
+<p>Referenced by <a class="el" href="gsm_8c_source.html#l00198">gsm_got_line()</a>.</p>
 
 </div>
 </div>
@@ -449,9 +450,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gsm_8c_source.html#l00088">88</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
+<p>Definition at line <a class="el" href="gsm_8c_source.html#l00089">89</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gsm_8c_source.html#l00287">gsm_receive_content()</a>.</p>
+<p>Referenced by <a class="el" href="gsm_8c_source.html#l00288">gsm_receive_content()</a>.</p>
 
 </div>
 </div>
@@ -468,9 +469,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gsm_8c_source.html#l00079">79</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
+<p>Definition at line <a class="el" href="gsm_8c_source.html#l00080">80</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gsm_8c_source.html#l00178">gsm_event()</a>.</p>
+<p>Referenced by <a class="el" href="gsm_8c_source.html#l00179">gsm_event()</a>.</p>
 
 </div>
 </div>
@@ -484,9 +485,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gsm_8c_source.html#l00104">104</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
+<p>Definition at line <a class="el" href="gsm_8c_source.html#l00105">105</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gsm_8c_source.html#l00197">gsm_got_line()</a>, and <a class="el" href="gsm_8c_source.html#l00384">gsm_send_report()</a>.</p>
+<p>Referenced by <a class="el" href="gsm_8c_source.html#l00198">gsm_got_line()</a>, and <a class="el" href="gsm_8c_source.html#l00385">gsm_send_report()</a>.</p>
 
 </div>
 </div>
@@ -500,9 +501,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gsm_8c_source.html#l00114">114</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
+<p>Definition at line <a class="el" href="gsm_8c_source.html#l00115">115</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gsm_8c_source.html#l00197">gsm_got_line()</a>.</p>
+<p>Referenced by <a class="el" href="gsm_8c_source.html#l00198">gsm_got_line()</a>.</p>
 
 </div>
 </div>
@@ -516,9 +517,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gsm_8c_source.html#l00112">112</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
+<p>Definition at line <a class="el" href="gsm_8c_source.html#l00113">113</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gsm_8c_source.html#l00197">gsm_got_line()</a>, <a class="el" href="gsm_8c_source.html#l00352">gsm_got_prompt()</a>, and <a class="el" href="gsm_8c_source.html#l00384">gsm_send_report()</a>.</p>
+<p>Referenced by <a class="el" href="gsm_8c_source.html#l00198">gsm_got_line()</a>, <a class="el" href="gsm_8c_source.html#l00353">gsm_got_prompt()</a>, and <a class="el" href="gsm_8c_source.html#l00385">gsm_send_report()</a>.</p>
 
 </div>
 </div>
@@ -532,9 +533,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gsm_8c_source.html#l00103">103</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
+<p>Definition at line <a class="el" href="gsm_8c_source.html#l00104">104</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gsm_8c_source.html#l00143">gsm_init()</a>, and <a class="el" href="gsm_8c_source.html#l00166">gsm_init_report()</a>.</p>
+<p>Referenced by <a class="el" href="gsm_8c_source.html#l00144">gsm_init()</a>, and <a class="el" href="gsm_8c_source.html#l00167">gsm_init_report()</a>.</p>
 
 </div>
 </div>
@@ -548,9 +549,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gsm_8c_source.html#l00115">115</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
+<p>Definition at line <a class="el" href="gsm_8c_source.html#l00116">116</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gsm_8c_source.html#l00143">gsm_init()</a>.</p>
+<p>Referenced by <a class="el" href="gsm_8c_source.html#l00144">gsm_init()</a>.</p>
 
 </div>
 </div>
@@ -564,7 +565,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gsm_8c_source.html#l00110">110</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
+<p>Definition at line <a class="el" href="gsm_8c_source.html#l00111">111</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
 
 </div>
 </div>
@@ -578,9 +579,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gsm_8c_source.html#l00105">105</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
+<p>Definition at line <a class="el" href="gsm_8c_source.html#l00106">106</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gsm_8c_source.html#l00197">gsm_got_line()</a>.</p>
+<p>Referenced by <a class="el" href="gsm_8c_source.html#l00198">gsm_got_line()</a>.</p>
 
 </div>
 </div>
@@ -594,9 +595,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gsm_8c_source.html#l00106">106</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
+<p>Definition at line <a class="el" href="gsm_8c_source.html#l00107">107</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gsm_8c_source.html#l00197">gsm_got_line()</a>, and <a class="el" href="gsm_8c_source.html#l00166">gsm_init_report()</a>.</p>
+<p>Referenced by <a class="el" href="gsm_8c_source.html#l00198">gsm_got_line()</a>, and <a class="el" href="gsm_8c_source.html#l00167">gsm_init_report()</a>.</p>
 
 </div>
 </div>
@@ -610,9 +611,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gsm_8c_source.html#l00107">107</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
+<p>Definition at line <a class="el" href="gsm_8c_source.html#l00108">108</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gsm_8c_source.html#l00197">gsm_got_line()</a>.</p>
+<p>Referenced by <a class="el" href="gsm_8c_source.html#l00198">gsm_got_line()</a>.</p>
 
 </div>
 </div>
@@ -626,9 +627,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gsm_8c_source.html#l00108">108</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
+<p>Definition at line <a class="el" href="gsm_8c_source.html#l00109">109</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gsm_8c_source.html#l00197">gsm_got_line()</a>.</p>
+<p>Referenced by <a class="el" href="gsm_8c_source.html#l00198">gsm_got_line()</a>.</p>
 
 </div>
 </div>
@@ -642,9 +643,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gsm_8c_source.html#l00109">109</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
+<p>Definition at line <a class="el" href="gsm_8c_source.html#l00110">110</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gsm_8c_source.html#l00197">gsm_got_line()</a>.</p>
+<p>Referenced by <a class="el" href="gsm_8c_source.html#l00198">gsm_got_line()</a>.</p>
 
 </div>
 </div>
@@ -658,9 +659,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gsm_8c_source.html#l00111">111</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
+<p>Definition at line <a class="el" href="gsm_8c_source.html#l00112">112</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gsm_8c_source.html#l00197">gsm_got_line()</a>.</p>
+<p>Referenced by <a class="el" href="gsm_8c_source.html#l00198">gsm_got_line()</a>.</p>
 
 </div>
 </div>
@@ -674,9 +675,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gsm_8c_source.html#l00113">113</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
+<p>Definition at line <a class="el" href="gsm_8c_source.html#l00114">114</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gsm_8c_source.html#l00197">gsm_got_line()</a>, and <a class="el" href="gsm_8c_source.html#l00352">gsm_got_prompt()</a>.</p>
+<p>Referenced by <a class="el" href="gsm_8c_source.html#l00198">gsm_got_line()</a>, and <a class="el" href="gsm_8c_source.html#l00353">gsm_got_prompt()</a>.</p>
 
 </div>
 </div>
@@ -695,9 +696,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gsm_8c_source.html#l00178">178</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
+<p>Definition at line <a class="el" href="gsm_8c_source.html#l00179">179</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
 
-<p>References <a class="el" href="downlink_8h_source.html#l00042">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00046">DefaultDevice</a>, <a class="el" href="gsm_8c_source.html#l00098">gsm_buf</a>, <a class="el" href="gsm_8c_source.html#l00197">gsm_got_line()</a>, <a class="el" href="gsm_8c_source.html#l00352">gsm_got_prompt()</a>, <a class="el" href="gsm_8c_source.html#l00090">gsm_line_received</a>, <a class="el" href="gsm_8c_source.html#l00076">GSMLinkChAvailable</a>, <a class="el" href="gsm_8c_source.html#l00091">prompt_received</a>, and <a class="el" href="gsm_8c_source.html#l00079">ReadGSMBuffer</a>.</p>
+<p>References <a class="el" href="downlink_8h_source.html#l00042">DefaultChannel</a>, <a class="el" href="downlink_8h_source.html#l00046">DefaultDevice</a>, <a class="el" href="gsm_8c_source.html#l00099">gsm_buf</a>, <a class="el" href="gsm_8c_source.html#l00198">gsm_got_line()</a>, <a class="el" href="gsm_8c_source.html#l00353">gsm_got_prompt()</a>, <a class="el" href="gsm_8c_source.html#l00091">gsm_line_received</a>, <a class="el" href="gsm_8c_source.html#l00077">GSMLinkChAvailable</a>, <a class="el" href="gsm_8c_source.html#l00092">prompt_received</a>, and <a class="el" href="gsm_8c_source.html#l00080">ReadGSMBuffer</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -736,11 +737,11 @@ Variables</h2></td></tr>
 <p>Start reporting</p>
 <p>We did not get the expected answer </p>
 
-<p>Definition at line <a class="el" href="gsm_8c_source.html#l00197">197</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
+<p>Definition at line <a class="el" href="gsm_8c_source.html#l00198">198</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
 
-<p>References <a class="el" href="gsm_8c_source.html#l00086">CMTI</a>, <a class="el" href="gsm_8c_source.html#l00097">expected_ack</a>, <a class="el" href="gsm_8c_source.html#l00098">gsm_buf</a>, <a class="el" href="gsm_8c_source.html#l00287">gsm_receive_content()</a>, <a class="el" href="gsm_8c_source.html#l00396">gsm_send_report_continue()</a>, <a class="el" href="gsm_8c_source.html#l00511">indexn()</a>, <a class="el" href="gsm_8c_source.html#l00087">MAXLEN_CMTI_ANSWER</a>, <a class="el" href="gsm_8c_source.html#l00366">parse_msg_header()</a>, <a class="el" href="gsm_8c_source.html#l00271">request_for_msg()</a>, <a class="el" href="gsm_8c_source.html#l00442">Send_CMGF()</a>, <a class="el" href="gsm_8c_source.html#l00457">Send_CNMI()</a>, <a class="el" href="gsm_8c_source.html#l00464">Send_CPMS()</a>, <a class="el" href="gsm_8c_source.html#l00104">STATUS_CSQ</a>, <a class="el" href="gsm_8c_source.html#l00114">STATUS_DELETE_SMS</a>, <a class="el" href="gsm_8c_source.html#l00112">STATUS_IDLE</a>, <a class="el" href="gsm_8c_source.html#l00105">STATUS_REQUESTING_MESSAGE</a>, <a class="el" href="gsm_8c_source.html#l00106">STATUS_SEND_AT</a>, <a class="el" href="gsm_8c_source.html#l00107">STATUS_SEND_CMGF</a>, <a class="el" href="gsm_8c_source.html#l00108">STATUS_SEND_CNMI</a>, <a class="el" href="gsm_8c_source.html#l00109">STATUS_SEND_CPMS</a>, <a class="el" href="gsm_8c_source.html#l00111">STATUS_WAITING_DATA</a>, <a class="el" href="gsm_8c_source.html#l00113">STATUS_WAITING_PROMPT</a>, <a class="el" href="gsm_8c_source.html#l00340">Suppr_SMS()</a>, and <a class="el" href="gsm_8c_source.html#l00092">waiting_for_reply</a>.</p>
+<p>References <a class="el" href="gsm_8c_source.html#l00087">CMTI</a>, <a class="el" href="gsm_8c_source.html#l00098">expected_ack</a>, <a class="el" href="gsm_8c_source.html#l00099">gsm_buf</a>, <a class="el" href="gsm_8c_source.html#l00288">gsm_receive_content()</a>, <a class="el" href="gsm_8c_source.html#l00397">gsm_send_report_continue()</a>, <a class="el" href="gsm_8c_source.html#l00512">indexn()</a>, <a class="el" href="gsm_8c_source.html#l00088">MAXLEN_CMTI_ANSWER</a>, <a class="el" href="gsm_8c_source.html#l00367">parse_msg_header()</a>, <a class="el" href="gsm_8c_source.html#l00272">request_for_msg()</a>, <a class="el" href="gsm_8c_source.html#l00443">Send_CMGF()</a>, <a class="el" href="gsm_8c_source.html#l00458">Send_CNMI()</a>, <a class="el" href="gsm_8c_source.html#l00465">Send_CPMS()</a>, <a class="el" href="gsm_8c_source.html#l00105">STATUS_CSQ</a>, <a class="el" href="gsm_8c_source.html#l00115">STATUS_DELETE_SMS</a>, <a class="el" href="gsm_8c_source.html#l00113">STATUS_IDLE</a>, <a class="el" href="gsm_8c_source.html#l00106">STATUS_REQUESTING_MESSAGE</a>, <a class="el" href="gsm_8c_source.html#l00107">STATUS_SEND_AT</a>, <a class="el" href="gsm_8c_source.html#l00108">STATUS_SEND_CMGF</a>, <a class="el" href="gsm_8c_source.html#l00109">STATUS_SEND_CNMI</a>, <a class="el" href="gsm_8c_source.html#l00110">STATUS_SEND_CPMS</a>, <a class="el" href="gsm_8c_source.html#l00112">STATUS_WAITING_DATA</a>, <a class="el" href="gsm_8c_source.html#l00114">STATUS_WAITING_PROMPT</a>, <a class="el" href="gsm_8c_source.html#l00341">Suppr_SMS()</a>, and <a class="el" href="gsm_8c_source.html#l00093">waiting_for_reply</a>.</p>
 
-<p>Referenced by <a class="el" href="gsm_8c_source.html#l00178">gsm_event()</a>.</p>
+<p>Referenced by <a class="el" href="gsm_8c_source.html#l00179">gsm_event()</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -788,11 +789,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gsm_8c_source.html#l00352">352</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
+<p>Definition at line <a class="el" href="gsm_8c_source.html#l00353">353</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
 
-<p>References <a class="el" href="gsm_8c_source.html#l00082">CTRLZ</a>, <a class="el" href="gsm_8c_source.html#l00497">Send()</a>, <a class="el" href="gsm_8c_source.html#l00112">STATUS_IDLE</a>, and <a class="el" href="gsm_8c_source.html#l00113">STATUS_WAITING_PROMPT</a>.</p>
+<p>References <a class="el" href="gsm_8c_source.html#l00083">CTRLZ</a>, <a class="el" href="gsm_8c_source.html#l00498">Send()</a>, <a class="el" href="gsm_8c_source.html#l00113">STATUS_IDLE</a>, and <a class="el" href="gsm_8c_source.html#l00114">STATUS_WAITING_PROMPT</a>.</p>
 
-<p>Referenced by <a class="el" href="gsm_8c_source.html#l00178">gsm_event()</a>.</p>
+<p>Referenced by <a class="el" href="gsm_8c_source.html#l00179">gsm_event()</a>.</p>
 
 <p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -832,9 +833,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gsm_8c_source.html#l00143">143</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
+<p>Definition at line <a class="el" href="gsm_8c_source.html#l00144">144</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
 
-<p>References <a class="el" href="chibios_2led__hw_8h_source.html#l00051">LED_ON</a>, <a class="el" href="gsm_8c_source.html#l00103">STATUS_NONE</a>, and <a class="el" href="gsm_8c_source.html#l00115">STATUS_POWERON</a>.</p>
+<p>References <a class="el" href="chibios_2led__hw_8h_source.html#l00051">LED_ON</a>, <a class="el" href="gsm_8c_source.html#l00104">STATUS_NONE</a>, and <a class="el" href="gsm_8c_source.html#l00116">STATUS_POWERON</a>.</p>
 
 </div>
 </div>
@@ -852,9 +853,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gsm_8c_source.html#l00166">166</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
+<p>Definition at line <a class="el" href="gsm_8c_source.html#l00167">167</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
 
-<p>References <a class="el" href="gsm_8c_source.html#l00090">gsm_line_received</a>, <a class="el" href="gsm_8c_source.html#l00434">Send_AT()</a>, <a class="el" href="gsm_8c_source.html#l00103">STATUS_NONE</a>, and <a class="el" href="gsm_8c_source.html#l00106">STATUS_SEND_AT</a>.</p>
+<p>References <a class="el" href="gsm_8c_source.html#l00091">gsm_line_received</a>, <a class="el" href="gsm_8c_source.html#l00435">Send_AT()</a>, <a class="el" href="gsm_8c_source.html#l00104">STATUS_NONE</a>, and <a class="el" href="gsm_8c_source.html#l00107">STATUS_SEND_AT</a>.</p>
 
 <p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -891,9 +892,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gsm_8c_source.html#l00472">472</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
+<p>Definition at line <a class="el" href="gsm_8c_source.html#l00473">473</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
 
-<p>References <a class="el" href="gsm_8c_source.html#l00098">gsm_buf</a>, <a class="el" href="gsm_8c_source.html#l00099">gsm_buf_idx</a>, <a class="el" href="gsm_8c_source.html#l00090">gsm_line_received</a>, <a class="el" href="gsm_8c_source.html#l00072">GSM_MAX_PAYLOAD</a>, and <a class="el" href="gsm_8c_source.html#l00091">prompt_received</a>.</p>
+<p>References <a class="el" href="gsm_8c_source.html#l00099">gsm_buf</a>, <a class="el" href="gsm_8c_source.html#l00100">gsm_buf_idx</a>, <a class="el" href="gsm_8c_source.html#l00091">gsm_line_received</a>, <a class="el" href="gsm_8c_source.html#l00073">GSM_MAX_PAYLOAD</a>, and <a class="el" href="gsm_8c_source.html#l00092">prompt_received</a>.</p>
 
 </div>
 </div>
@@ -922,11 +923,11 @@ Variables</h2></td></tr>
 <p>Receiving a SMS, third step, content in gsm_buf Message can be Bdd where dd is a block index on two digits. </p>
 <p>WARNING: dd &gt; 0 Sdd value where dd&gt;0 is a var index on two digits and value is a float </p>
 
-<p>Definition at line <a class="el" href="gsm_8c_source.html#l00287">287</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
+<p>Definition at line <a class="el" href="gsm_8c_source.html#l00288">288</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
 
-<p>References <a class="el" href="gsm_8c_source.html#l00098">gsm_buf</a>, <a class="el" href="gsm_8c_source.html#l00511">indexn()</a>, <a class="el" href="gsm_8c_source.html#l00088">MAXLEN_SMS_CONTENT</a>, and <a class="el" href="common__flight__plan_8c_source.html#l00051">nav_goto_block()</a>.</p>
+<p>References <a class="el" href="gsm_8c_source.html#l00099">gsm_buf</a>, <a class="el" href="gsm_8c_source.html#l00512">indexn()</a>, <a class="el" href="gsm_8c_source.html#l00089">MAXLEN_SMS_CONTENT</a>, and <a class="el" href="common__flight__plan_8c_source.html#l00051">nav_goto_block()</a>.</p>
 
-<p>Referenced by <a class="el" href="gsm_8c_source.html#l00197">gsm_got_line()</a>.</p>
+<p>Referenced by <a class="el" href="gsm_8c_source.html#l00198">gsm_got_line()</a>.</p>
 
 <p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -966,9 +967,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gsm_8c_source.html#l00384">384</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
+<p>Definition at line <a class="el" href="gsm_8c_source.html#l00385">385</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
 
-<p>References <a class="el" href="gsm_8c_source.html#l00449">Send_CSQ()</a>, <a class="el" href="gsm_8c_source.html#l00104">STATUS_CSQ</a>, and <a class="el" href="gsm_8c_source.html#l00112">STATUS_IDLE</a>.</p>
+<p>References <a class="el" href="gsm_8c_source.html#l00450">Send_CSQ()</a>, <a class="el" href="gsm_8c_source.html#l00105">STATUS_CSQ</a>, and <a class="el" href="gsm_8c_source.html#l00113">STATUS_IDLE</a>.</p>
 
 <p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -1005,11 +1006,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gsm_8c_source.html#l00396">396</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
+<p>Definition at line <a class="el" href="gsm_8c_source.html#l00397">397</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
 
-<p>References <a class="el" href="autopilot_8c_source.html#l00050">autopilot</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00088">UtmCoor_i::east</a>, <a class="el" href="electrical_8c_source.html#l00066">electrical</a>, <a class="el" href="autopilot_8h_source.html#l00065">pprz_autopilot::flight_time</a>, <a class="el" href="gps_8c_source.html#l00069">gps</a>, <a class="el" href="gsm_8c_source.html#l00098">gsm_buf</a>, <a class="el" href="gps_8h_source.html#l00097">GpsState::gspeed</a>, <a class="el" href="gps_8h_source.html#l00094">GpsState::hmsl</a>, <a class="el" href="gps_8h_source.html#l00096">GpsState::ned_vel</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00087">UtmCoor_i::north</a>, <a class="el" href="gsm_8c_source.html#l00497">Send()</a>, <a class="el" href="gps_8h_source.html#l00093">GpsState::utm_pos</a>, <a class="el" href="electrical_8h_source.html#l00045">Electrical::vsupply</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00071">NedCoor_i::z</a>.</p>
+<p>References <a class="el" href="autopilot_8c_source.html#l00050">autopilot</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00088">UtmCoor_i::east</a>, <a class="el" href="electrical_8c_source.html#l00066">electrical</a>, <a class="el" href="autopilot_8h_source.html#l00065">pprz_autopilot::flight_time</a>, <a class="el" href="gps_8c_source.html#l00069">gps</a>, <a class="el" href="gsm_8c_source.html#l00099">gsm_buf</a>, <a class="el" href="gps_8h_source.html#l00097">GpsState::gspeed</a>, <a class="el" href="gps_8h_source.html#l00094">GpsState::hmsl</a>, <a class="el" href="gps_8h_source.html#l00096">GpsState::ned_vel</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00087">UtmCoor_i::north</a>, <a class="el" href="cc2500__rx_8c_source.html#l00085">rssi</a>, <a class="el" href="gsm_8c_source.html#l00498">Send()</a>, <a class="el" href="gps_8h_source.html#l00093">GpsState::utm_pos</a>, <a class="el" href="electrical_8h_source.html#l00045">Electrical::vsupply</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00071">NedCoor_i::z</a>.</p>
 
-<p>Referenced by <a class="el" href="gsm_8c_source.html#l00197">gsm_got_line()</a>.</p>
+<p>Referenced by <a class="el" href="gsm_8c_source.html#l00198">gsm_got_line()</a>.</p>
 
 <p><div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -1073,9 +1074,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gsm_8c_source.html#l00511">511</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
+<p>Definition at line <a class="el" href="gsm_8c_source.html#l00512">512</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gsm_8c_source.html#l00197">gsm_got_line()</a>, and <a class="el" href="gsm_8c_source.html#l00287">gsm_receive_content()</a>.</p>
+<p>Referenced by <a class="el" href="gsm_8c_source.html#l00198">gsm_got_line()</a>, and <a class="el" href="gsm_8c_source.html#l00288">gsm_receive_content()</a>.</p>
 
 <p><div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -1115,9 +1116,9 @@ Variables</h2></td></tr>
 <p>Message header in gsm_bug. </p>
 <p>Extraction(buffer2, '"', 1, 1, '"', 1, 0, msg_status); </p>
 
-<p>Definition at line <a class="el" href="gsm_8c_source.html#l00366">366</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
+<p>Definition at line <a class="el" href="gsm_8c_source.html#l00367">367</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gsm_8c_source.html#l00197">gsm_got_line()</a>.</p>
+<p>Referenced by <a class="el" href="gsm_8c_source.html#l00198">gsm_got_line()</a>.</p>
 
 <p><div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -1154,11 +1155,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gsm_8c_source.html#l00271">271</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
+<p>Definition at line <a class="el" href="gsm_8c_source.html#l00272">272</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
 
-<p>References <a class="el" href="gsm_8c_source.html#l00097">expected_ack</a>, <a class="el" href="gsm_8c_source.html#l00497">Send()</a>, and <a class="el" href="gsm_8c_source.html#l00092">waiting_for_reply</a>.</p>
+<p>References <a class="el" href="gsm_8c_source.html#l00098">expected_ack</a>, <a class="el" href="gsm_8c_source.html#l00498">Send()</a>, and <a class="el" href="gsm_8c_source.html#l00093">waiting_for_reply</a>.</p>
 
-<p>Referenced by <a class="el" href="gsm_8c_source.html#l00197">gsm_got_line()</a>.</p>
+<p>Referenced by <a class="el" href="gsm_8c_source.html#l00198">gsm_got_line()</a>.</p>
 
 <p><div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -1206,11 +1207,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gsm_8c_source.html#l00497">497</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
+<p>Definition at line <a class="el" href="gsm_8c_source.html#l00498">498</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
 
 <p>References <a class="el" href="downlink_8h_source.html#l00042">DefaultChannel</a>, and <a class="el" href="downlink_8h_source.html#l00046">DefaultDevice</a>.</p>
 
-<p>Referenced by <a class="el" href="gsm_8c_source.html#l00352">gsm_got_prompt()</a>, <a class="el" href="gsm_8c_source.html#l00396">gsm_send_report_continue()</a>, <a class="el" href="gsm_8c_source.html#l00271">request_for_msg()</a>, <a class="el" href="gsm_8c_source.html#l00434">Send_AT()</a>, <a class="el" href="gsm_8c_source.html#l00442">Send_CMGF()</a>, <a class="el" href="gsm_8c_source.html#l00457">Send_CNMI()</a>, <a class="el" href="gsm_8c_source.html#l00464">Send_CPMS()</a>, <a class="el" href="gsm_8c_source.html#l00449">Send_CSQ()</a>, and <a class="el" href="gsm_8c_source.html#l00340">Suppr_SMS()</a>.</p>
+<p>Referenced by <a class="el" href="gsm_8c_source.html#l00353">gsm_got_prompt()</a>, <a class="el" href="gsm_8c_source.html#l00397">gsm_send_report_continue()</a>, <a class="el" href="gsm_8c_source.html#l00272">request_for_msg()</a>, <a class="el" href="gsm_8c_source.html#l00435">Send_AT()</a>, <a class="el" href="gsm_8c_source.html#l00443">Send_CMGF()</a>, <a class="el" href="gsm_8c_source.html#l00458">Send_CNMI()</a>, <a class="el" href="gsm_8c_source.html#l00465">Send_CPMS()</a>, <a class="el" href="gsm_8c_source.html#l00450">Send_CSQ()</a>, and <a class="el" href="gsm_8c_source.html#l00341">Suppr_SMS()</a>.</p>
 
 <p><div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -1247,11 +1248,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gsm_8c_source.html#l00434">434</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
+<p>Definition at line <a class="el" href="gsm_8c_source.html#l00435">435</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
 
-<p>References <a class="el" href="gsm_8c_source.html#l00097">expected_ack</a>, <a class="el" href="gsm_8c_source.html#l00497">Send()</a>, and <a class="el" href="gsm_8c_source.html#l00092">waiting_for_reply</a>.</p>
+<p>References <a class="el" href="gsm_8c_source.html#l00098">expected_ack</a>, <a class="el" href="gsm_8c_source.html#l00498">Send()</a>, and <a class="el" href="gsm_8c_source.html#l00093">waiting_for_reply</a>.</p>
 
-<p>Referenced by <a class="el" href="gsm_8c_source.html#l00166">gsm_init_report()</a>.</p>
+<p>Referenced by <a class="el" href="gsm_8c_source.html#l00167">gsm_init_report()</a>.</p>
 
 <p><div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -1299,11 +1300,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gsm_8c_source.html#l00442">442</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
+<p>Definition at line <a class="el" href="gsm_8c_source.html#l00443">443</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
 
-<p>References <a class="el" href="gsm_8c_source.html#l00097">expected_ack</a>, <a class="el" href="gsm_8c_source.html#l00497">Send()</a>, and <a class="el" href="gsm_8c_source.html#l00092">waiting_for_reply</a>.</p>
+<p>References <a class="el" href="gsm_8c_source.html#l00098">expected_ack</a>, <a class="el" href="gsm_8c_source.html#l00498">Send()</a>, and <a class="el" href="gsm_8c_source.html#l00093">waiting_for_reply</a>.</p>
 
-<p>Referenced by <a class="el" href="gsm_8c_source.html#l00197">gsm_got_line()</a>.</p>
+<p>Referenced by <a class="el" href="gsm_8c_source.html#l00198">gsm_got_line()</a>.</p>
 
 <p><div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -1351,11 +1352,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gsm_8c_source.html#l00457">457</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
+<p>Definition at line <a class="el" href="gsm_8c_source.html#l00458">458</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
 
-<p>References <a class="el" href="gsm_8c_source.html#l00097">expected_ack</a>, <a class="el" href="gsm_8c_source.html#l00497">Send()</a>, and <a class="el" href="gsm_8c_source.html#l00092">waiting_for_reply</a>.</p>
+<p>References <a class="el" href="gsm_8c_source.html#l00098">expected_ack</a>, <a class="el" href="gsm_8c_source.html#l00498">Send()</a>, and <a class="el" href="gsm_8c_source.html#l00093">waiting_for_reply</a>.</p>
 
-<p>Referenced by <a class="el" href="gsm_8c_source.html#l00197">gsm_got_line()</a>.</p>
+<p>Referenced by <a class="el" href="gsm_8c_source.html#l00198">gsm_got_line()</a>.</p>
 
 <p><div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -1403,11 +1404,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gsm_8c_source.html#l00464">464</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
+<p>Definition at line <a class="el" href="gsm_8c_source.html#l00465">465</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
 
-<p>References <a class="el" href="gsm_8c_source.html#l00097">expected_ack</a>, <a class="el" href="gsm_8c_source.html#l00497">Send()</a>, and <a class="el" href="gsm_8c_source.html#l00092">waiting_for_reply</a>.</p>
+<p>References <a class="el" href="gsm_8c_source.html#l00098">expected_ack</a>, <a class="el" href="gsm_8c_source.html#l00498">Send()</a>, and <a class="el" href="gsm_8c_source.html#l00093">waiting_for_reply</a>.</p>
 
-<p>Referenced by <a class="el" href="gsm_8c_source.html#l00197">gsm_got_line()</a>.</p>
+<p>Referenced by <a class="el" href="gsm_8c_source.html#l00198">gsm_got_line()</a>.</p>
 
 <p><div id="dynsection-23" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-23-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -1455,11 +1456,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gsm_8c_source.html#l00449">449</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
+<p>Definition at line <a class="el" href="gsm_8c_source.html#l00450">450</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
 
-<p>References <a class="el" href="gsm_8c_source.html#l00097">expected_ack</a>, <a class="el" href="gsm_8c_source.html#l00497">Send()</a>, and <a class="el" href="gsm_8c_source.html#l00092">waiting_for_reply</a>.</p>
+<p>References <a class="el" href="gsm_8c_source.html#l00098">expected_ack</a>, <a class="el" href="gsm_8c_source.html#l00498">Send()</a>, and <a class="el" href="gsm_8c_source.html#l00093">waiting_for_reply</a>.</p>
 
-<p>Referenced by <a class="el" href="gsm_8c_source.html#l00384">gsm_send_report()</a>.</p>
+<p>Referenced by <a class="el" href="gsm_8c_source.html#l00385">gsm_send_report()</a>.</p>
 
 <p><div id="dynsection-25" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-25-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -1507,11 +1508,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gsm_8c_source.html#l00340">340</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
+<p>Definition at line <a class="el" href="gsm_8c_source.html#l00341">341</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
 
-<p>References <a class="el" href="gsm_8c_source.html#l00097">expected_ack</a>, <a class="el" href="gsm_8c_source.html#l00497">Send()</a>, and <a class="el" href="gsm_8c_source.html#l00092">waiting_for_reply</a>.</p>
+<p>References <a class="el" href="gsm_8c_source.html#l00098">expected_ack</a>, <a class="el" href="gsm_8c_source.html#l00498">Send()</a>, and <a class="el" href="gsm_8c_source.html#l00093">waiting_for_reply</a>.</p>
 
-<p>Referenced by <a class="el" href="gsm_8c_source.html#l00197">gsm_got_line()</a>.</p>
+<p>Referenced by <a class="el" href="gsm_8c_source.html#l00198">gsm_got_line()</a>.</p>
 
 <p><div id="dynsection-27" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-27-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -1556,7 +1557,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gsm_8c_source.html#l00101">101</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
+<p>Definition at line <a class="el" href="gsm_8c_source.html#l00102">102</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
 
 </div>
 </div>
@@ -1578,9 +1579,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gsm_8c_source.html#l00097">97</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
+<p>Definition at line <a class="el" href="gsm_8c_source.html#l00098">98</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gsm_8c_source.html#l00197">gsm_got_line()</a>, <a class="el" href="gsm_8c_source.html#l00271">request_for_msg()</a>, <a class="el" href="gsm_8c_source.html#l00434">Send_AT()</a>, <a class="el" href="gsm_8c_source.html#l00442">Send_CMGF()</a>, <a class="el" href="gsm_8c_source.html#l00457">Send_CNMI()</a>, <a class="el" href="gsm_8c_source.html#l00464">Send_CPMS()</a>, <a class="el" href="gsm_8c_source.html#l00449">Send_CSQ()</a>, and <a class="el" href="gsm_8c_source.html#l00340">Suppr_SMS()</a>.</p>
+<p>Referenced by <a class="el" href="gsm_8c_source.html#l00198">gsm_got_line()</a>, <a class="el" href="gsm_8c_source.html#l00272">request_for_msg()</a>, <a class="el" href="gsm_8c_source.html#l00435">Send_AT()</a>, <a class="el" href="gsm_8c_source.html#l00443">Send_CMGF()</a>, <a class="el" href="gsm_8c_source.html#l00458">Send_CNMI()</a>, <a class="el" href="gsm_8c_source.html#l00465">Send_CPMS()</a>, <a class="el" href="gsm_8c_source.html#l00450">Send_CSQ()</a>, and <a class="el" href="gsm_8c_source.html#l00341">Suppr_SMS()</a>.</p>
 
 </div>
 </div>
@@ -1602,7 +1603,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gsm_8c_source.html#l00138">138</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
+<p>Definition at line <a class="el" href="gsm_8c_source.html#l00139">139</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
 
 </div>
 </div>
@@ -1624,7 +1625,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gsm_8c_source.html#l00139">139</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
+<p>Definition at line <a class="el" href="gsm_8c_source.html#l00140">140</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
 
 </div>
 </div>
@@ -1646,9 +1647,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gsm_8c_source.html#l00098">98</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
+<p>Definition at line <a class="el" href="gsm_8c_source.html#l00099">99</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gsm_8c_source.html#l00178">gsm_event()</a>, <a class="el" href="gsm_8c_source.html#l00197">gsm_got_line()</a>, <a class="el" href="gsm_8c_source.html#l00472">gsm_parse()</a>, <a class="el" href="gsm_8c_source.html#l00287">gsm_receive_content()</a>, and <a class="el" href="gsm_8c_source.html#l00396">gsm_send_report_continue()</a>.</p>
+<p>Referenced by <a class="el" href="gsm_8c_source.html#l00179">gsm_event()</a>, <a class="el" href="gsm_8c_source.html#l00198">gsm_got_line()</a>, <a class="el" href="gsm_8c_source.html#l00473">gsm_parse()</a>, <a class="el" href="gsm_8c_source.html#l00288">gsm_receive_content()</a>, and <a class="el" href="gsm_8c_source.html#l00397">gsm_send_report_continue()</a>.</p>
 
 </div>
 </div>
@@ -1670,9 +1671,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gsm_8c_source.html#l00099">99</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
+<p>Definition at line <a class="el" href="gsm_8c_source.html#l00100">100</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gsm_8c_source.html#l00472">gsm_parse()</a>.</p>
+<p>Referenced by <a class="el" href="gsm_8c_source.html#l00473">gsm_parse()</a>.</p>
 
 </div>
 </div>
@@ -1694,7 +1695,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gsm_8c_source.html#l00099">99</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
+<p>Definition at line <a class="el" href="gsm_8c_source.html#l00100">100</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
 
 </div>
 </div>
@@ -1716,9 +1717,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gsm_8c_source.html#l00090">90</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
+<p>Definition at line <a class="el" href="gsm_8c_source.html#l00091">91</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gsm_8c_source.html#l00178">gsm_event()</a>, <a class="el" href="gsm_8c_source.html#l00166">gsm_init_report()</a>, and <a class="el" href="gsm_8c_source.html#l00472">gsm_parse()</a>.</p>
+<p>Referenced by <a class="el" href="gsm_8c_source.html#l00179">gsm_event()</a>, <a class="el" href="gsm_8c_source.html#l00167">gsm_init_report()</a>, and <a class="el" href="gsm_8c_source.html#l00473">gsm_parse()</a>.</p>
 
 </div>
 </div>
@@ -1740,7 +1741,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gsm_8c_source.html#l00117">117</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
+<p>Definition at line <a class="el" href="gsm_8c_source.html#l00118">118</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
 
 </div>
 </div>
@@ -1762,7 +1763,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gsm_8c_source.html#l00119">119</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
+<p>Definition at line <a class="el" href="gsm_8c_source.html#l00120">120</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
 
 </div>
 </div>
@@ -1784,7 +1785,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gsm_8c_source.html#l00100">100</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
+<p>Definition at line <a class="el" href="gsm_8c_source.html#l00101">101</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
 
 </div>
 </div>
@@ -1806,9 +1807,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gsm_8c_source.html#l00091">91</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
+<p>Definition at line <a class="el" href="gsm_8c_source.html#l00092">92</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gsm_8c_source.html#l00178">gsm_event()</a>, and <a class="el" href="gsm_8c_source.html#l00472">gsm_parse()</a>.</p>
+<p>Referenced by <a class="el" href="gsm_8c_source.html#l00179">gsm_event()</a>, and <a class="el" href="gsm_8c_source.html#l00473">gsm_parse()</a>.</p>
 
 </div>
 </div>
@@ -1830,9 +1831,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gsm_8c_source.html#l00092">92</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
+<p>Definition at line <a class="el" href="gsm_8c_source.html#l00093">93</a> of file <a class="el" href="gsm_8c_source.html">gsm.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gsm_8c_source.html#l00197">gsm_got_line()</a>, <a class="el" href="gsm_8c_source.html#l00271">request_for_msg()</a>, <a class="el" href="gsm_8c_source.html#l00434">Send_AT()</a>, <a class="el" href="gsm_8c_source.html#l00442">Send_CMGF()</a>, <a class="el" href="gsm_8c_source.html#l00457">Send_CNMI()</a>, <a class="el" href="gsm_8c_source.html#l00464">Send_CPMS()</a>, <a class="el" href="gsm_8c_source.html#l00449">Send_CSQ()</a>, and <a class="el" href="gsm_8c_source.html#l00340">Suppr_SMS()</a>.</p>
+<p>Referenced by <a class="el" href="gsm_8c_source.html#l00198">gsm_got_line()</a>, <a class="el" href="gsm_8c_source.html#l00272">request_for_msg()</a>, <a class="el" href="gsm_8c_source.html#l00435">Send_AT()</a>, <a class="el" href="gsm_8c_source.html#l00443">Send_CMGF()</a>, <a class="el" href="gsm_8c_source.html#l00458">Send_CNMI()</a>, <a class="el" href="gsm_8c_source.html#l00465">Send_CPMS()</a>, <a class="el" href="gsm_8c_source.html#l00450">Send_CSQ()</a>, and <a class="el" href="gsm_8c_source.html#l00341">Suppr_SMS()</a>.</p>
 
 </div>
 </div>
@@ -1842,7 +1843,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_6a22c778aa9d007fbd268b0dbbe385cb.html">gsm</a></li><li class="navelem"><a class="el" href="gsm_8c.html">gsm.c</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:03:14 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:03:29 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

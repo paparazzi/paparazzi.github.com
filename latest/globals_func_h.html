@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -261,6 +261,12 @@ $(document).ready(function(){initNavTree('globals_func_h.html','');});
 <li>handleNewStateValue()
 : <a class="el" href="decawave__anchorless__communication_8c.html#a910d30be78da3d9d74bfaeedfb27aaf8">decawave_anchorless_communication.c</a>
 </li>
+<li>heading_towards_setpoint_WNED()
+: <a class="el" href="wedgebug_8c.html#a510c53576b4bea1c112c032cd831275f">wedgebug.c</a>
+</li>
+<li>heading_towards_waypoint()
+: <a class="el" href="wedgebug_8c.html#aed261b284630c66772a9582f15ec134a">wedgebug.c</a>
+</li>
 <li>hff_init()
 : <a class="el" href="hf__float_8c.html#a1ad0e0d6066d9ff6c02c42ef09cdd65d">hf_float.c</a>
 , <a class="el" href="hf__float_8h.html#a1ad0e0d6066d9ff6c02c42ef09cdd65d">hf_float.h</a>
@@ -282,8 +288,8 @@ $(document).ready(function(){initNavTree('globals_func_h.html','');});
 : <a class="el" href="hf__float_8c.html#a864cdfaee047ac005988be39e270b2d5">hf_float.c</a>
 </li>
 <li>hff_realign()
-: <a class="el" href="hf__float_8h.html#acb140c9500b7043677ca01d5ffa184df">hf_float.h</a>
-, <a class="el" href="hf__float_8c.html#acb140c9500b7043677ca01d5ffa184df">hf_float.c</a>
+: <a class="el" href="hf__float_8c.html#acb140c9500b7043677ca01d5ffa184df">hf_float.c</a>
+, <a class="el" href="hf__float_8h.html#acb140c9500b7043677ca01d5ffa184df">hf_float.h</a>
 </li>
 <li>hff_update_gps()
 : <a class="el" href="hf__float_8c.html#a72f310874029d3bec298c7161601a57e">hf_float.c</a>
@@ -335,6 +341,21 @@ $(document).ready(function(){initNavTree('globals_func_h.html','');});
 <li>higher_than_max_altitude()
 : <a class="el" href="nav__geofence_8h.html#a57c518618655d66ccd5f0dbbca309921">nav_geofence.h</a>
 </li>
+<li>hist_erase_older()
+: <a class="el" href="microrl_8c.html#a4da0cd747e34a7e7f149279eef5e7632">microrl.c</a>
+</li>
+<li>hist_is_space_for_new()
+: <a class="el" href="microrl_8c.html#a3053e85a1f91595c578fc2173f0a4f68">microrl.c</a>
+</li>
+<li>hist_restore_line()
+: <a class="el" href="microrl_8c.html#a89b0b337fd6d860193b8f457e0e9b11c">microrl.c</a>
+</li>
+<li>hist_save_line()
+: <a class="el" href="microrl_8c.html#a0bf1a06d92693a88ee0e8f3361094e8c">microrl.c</a>
+</li>
+<li>hist_search()
+: <a class="el" href="microrl_8c.html#a707cd52f8d3fff6cc752c92aa9cc8751">microrl.c</a>
+</li>
 <li>hmc5843_arch_init()
 : <a class="el" href="sim_2peripherals_2hmc5843__arch_8c.html#ac346fa452f9a5c3412581aba7e5af4e7">hmc5843_arch.c</a>
 , <a class="el" href="hmc5843_8h.html#ac346fa452f9a5c3412581aba7e5af4e7">hmc5843.h</a>
@@ -348,8 +369,8 @@ $(document).ready(function(){initNavTree('globals_func_h.html','');});
 , <a class="el" href="hmc5843_8h.html#a46613c2c46ce03746f184a11df775d6a">hmc5843.h</a>
 </li>
 <li>hmc5843_init()
-: <a class="el" href="hmc5843_8h.html#af07ba9764727d8692eb33cd271080cdc">hmc5843.h</a>
-, <a class="el" href="hmc5843_8c.html#af07ba9764727d8692eb33cd271080cdc">hmc5843.c</a>
+: <a class="el" href="hmc5843_8c.html#af07ba9764727d8692eb33cd271080cdc">hmc5843.c</a>
+, <a class="el" href="hmc5843_8h.html#af07ba9764727d8692eb33cd271080cdc">hmc5843.h</a>
 </li>
 <li>hmc5843_module_event()
 : <a class="el" href="mag__hmc5843_8c.html#a880fdee482292937a14f6aee33208f22">mag_hmc5843.c</a>
@@ -364,8 +385,8 @@ $(document).ready(function(){initNavTree('globals_func_h.html','');});
 , <a class="el" href="mag__hmc5843_8h.html#a73430e5bacbce50ebd8b9acf682c82aa">mag_hmc5843.h</a>
 </li>
 <li>hmc5843_periodic()
-: <a class="el" href="hmc5843_8h.html#ab17f5e43fbd1dcadea20ede30e06568b">hmc5843.h</a>
-, <a class="el" href="hmc5843_8c.html#ab17f5e43fbd1dcadea20ede30e06568b">hmc5843.c</a>
+: <a class="el" href="hmc5843_8c.html#ab17f5e43fbd1dcadea20ede30e06568b">hmc5843.c</a>
+, <a class="el" href="hmc5843_8h.html#ab17f5e43fbd1dcadea20ede30e06568b">hmc5843.h</a>
 </li>
 <li>hmc5843_read()
 : <a class="el" href="sim_2peripherals_2hmc5843__arch_8c.html#a9343a138dd5cd683a2771415f2140d9c">hmc5843_arch.c</a>
@@ -385,8 +406,8 @@ $(document).ready(function(){initNavTree('globals_func_h.html','');});
 : <a class="el" href="hmc58xx_8h.html#a353064a5a9c6b47a14f4b9543545b4ec">hmc58xx.h</a>
 </li>
 <li>hmc58xx_read()
-: <a class="el" href="hmc58xx_8c.html#a883e49acd3049ead17c6c29a3b020c72">hmc58xx.c</a>
-, <a class="el" href="hmc58xx_8h.html#a883e49acd3049ead17c6c29a3b020c72">hmc58xx.h</a>
+: <a class="el" href="hmc58xx_8h.html#a883e49acd3049ead17c6c29a3b020c72">hmc58xx.h</a>
+, <a class="el" href="hmc58xx_8c.html#a883e49acd3049ead17c6c29a3b020c72">hmc58xx.c</a>
 </li>
 <li>hmc58xx_send_config()
 : <a class="el" href="hmc58xx_8c.html#a2eff0c407b139d17a73bf75a611c32cb">hmc58xx.c</a>
@@ -395,8 +416,11 @@ $(document).ready(function(){initNavTree('globals_func_h.html','');});
 : <a class="el" href="hmc58xx_8c.html#a2165794d296c28b9d22eb0490ec3049b">hmc58xx.c</a>
 </li>
 <li>hmc58xx_start_configure()
-: <a class="el" href="hmc58xx_8c.html#a89a7b5456b1a87c83aef85779c4fc5e9">hmc58xx.c</a>
-, <a class="el" href="hmc58xx_8h.html#a89a7b5456b1a87c83aef85779c4fc5e9">hmc58xx.h</a>
+: <a class="el" href="hmc58xx_8h.html#a89a7b5456b1a87c83aef85779c4fc5e9">hmc58xx.h</a>
+, <a class="el" href="hmc58xx_8c.html#a89a7b5456b1a87c83aef85779c4fc5e9">hmc58xx.c</a>
+</li>
+<li>home_direction()
+: <a class="el" href="max7456_8c.html#af647f85cf21dab23d18ac36c8beadd20">max7456.c</a>
 </li>
 <li>horizontal_ctrl_module_init()
 : <a class="el" href="optical__flow__hover_8c.html#ab10a886e73d13b8c525a5bdee70a19af">optical_flow_hover.c</a>
@@ -474,16 +498,16 @@ $(document).ready(function(){initNavTree('globals_func_h.html','');});
 , <a class="el" href="humid__hih_8h.html#acb068afb2e3c2f0e3c6c1a7c3abeaddf">humid_hih.h</a>
 </li>
 <li>humid_hih_periodic()
-: <a class="el" href="humid__hih_8h.html#a08aae8974ca70fb46b6b9792c27ddbc0">humid_hih.h</a>
-, <a class="el" href="humid__hih_8c.html#a08aae8974ca70fb46b6b9792c27ddbc0">humid_hih.c</a>
+: <a class="el" href="humid__hih_8c.html#a08aae8974ca70fb46b6b9792c27ddbc0">humid_hih.c</a>
+, <a class="el" href="humid__hih_8h.html#a08aae8974ca70fb46b6b9792c27ddbc0">humid_hih.h</a>
 </li>
 <li>humid_htm_event()
-: <a class="el" href="humid__htm__b71_8c.html#a089b37a7abd3baeeaeb95620ff6979cd">humid_htm_b71.c</a>
-, <a class="el" href="humid__htm__b71_8h.html#a089b37a7abd3baeeaeb95620ff6979cd">humid_htm_b71.h</a>
+: <a class="el" href="humid__htm__b71_8h.html#a089b37a7abd3baeeaeb95620ff6979cd">humid_htm_b71.h</a>
+, <a class="el" href="humid__htm__b71_8c.html#a089b37a7abd3baeeaeb95620ff6979cd">humid_htm_b71.c</a>
 </li>
 <li>humid_htm_init()
-: <a class="el" href="humid__htm__b71_8c.html#ac531f832c77d5d108415782b233b16da">humid_htm_b71.c</a>
-, <a class="el" href="humid__htm__b71_8h.html#ac531f832c77d5d108415782b233b16da">humid_htm_b71.h</a>
+: <a class="el" href="humid__htm__b71_8h.html#ac531f832c77d5d108415782b233b16da">humid_htm_b71.h</a>
+, <a class="el" href="humid__htm__b71_8c.html#ac531f832c77d5d108415782b233b16da">humid_htm_b71.c</a>
 </li>
 <li>humid_htm_read()
 : <a class="el" href="humid__htm__b71_8c.html#adc8b5696cc69625e28589f815279d51f">humid_htm_b71.c</a>
@@ -494,32 +518,32 @@ $(document).ready(function(){initNavTree('globals_func_h.html','');});
 , <a class="el" href="humid__htm__b71_8h.html#aef985345300849c33368b867ae5691ba">humid_htm_b71.h</a>
 </li>
 <li>humid_sht_crc()
-: <a class="el" href="humid__sht__i2c_8c.html#a51ca48f45944e4d28691592760d796c9">humid_sht_i2c.c</a>
-, <a class="el" href="humid__sht__i2c_8h.html#a51ca48f45944e4d28691592760d796c9">humid_sht_i2c.h</a>
+: <a class="el" href="humid__sht__i2c_8h.html#a51ca48f45944e4d28691592760d796c9">humid_sht_i2c.h</a>
+, <a class="el" href="humid__sht__i2c_8c.html#a51ca48f45944e4d28691592760d796c9">humid_sht_i2c.c</a>
 </li>
 <li>humid_sht_event_i2c()
-: <a class="el" href="humid__sht__i2c_8c.html#a9250bbec811cdbcc7c024e084dacc33f">humid_sht_i2c.c</a>
-, <a class="el" href="humid__sht__i2c_8h.html#a9250bbec811cdbcc7c024e084dacc33f">humid_sht_i2c.h</a>
+: <a class="el" href="humid__sht__i2c_8h.html#a9250bbec811cdbcc7c024e084dacc33f">humid_sht_i2c.h</a>
+, <a class="el" href="humid__sht__i2c_8c.html#a9250bbec811cdbcc7c024e084dacc33f">humid_sht_i2c.c</a>
 </li>
 <li>humid_sht_init()
 : <a class="el" href="humid__sht_8h.html#a5228e7530912bfa410d5e701ebb7a18b">humid_sht.h</a>
 , <a class="el" href="humid__sht_8c.html#a5228e7530912bfa410d5e701ebb7a18b">humid_sht.c</a>
 </li>
 <li>humid_sht_init_i2c()
-: <a class="el" href="humid__sht__i2c_8h.html#ab7360b54e1d1d8f2f4a8219461c1ba74">humid_sht_i2c.h</a>
-, <a class="el" href="humid__sht__i2c_8c.html#ab7360b54e1d1d8f2f4a8219461c1ba74">humid_sht_i2c.c</a>
+: <a class="el" href="humid__sht__i2c_8c.html#ab7360b54e1d1d8f2f4a8219461c1ba74">humid_sht_i2c.c</a>
+, <a class="el" href="humid__sht__i2c_8h.html#ab7360b54e1d1d8f2f4a8219461c1ba74">humid_sht_i2c.h</a>
 </li>
 <li>humid_sht_p_humid()
 : <a class="el" href="humid__sht__i2c_8h.html#a69b6ec0fe918280602fd52013d39e212">humid_sht_i2c.h</a>
 , <a class="el" href="humid__sht__i2c_8c.html#a69b6ec0fe918280602fd52013d39e212">humid_sht_i2c.c</a>
 </li>
 <li>humid_sht_p_temp()
-: <a class="el" href="humid__sht__i2c_8h.html#a3c574dcb10c81020630db2286edbeaad">humid_sht_i2c.h</a>
-, <a class="el" href="humid__sht__i2c_8c.html#a3c574dcb10c81020630db2286edbeaad">humid_sht_i2c.c</a>
+: <a class="el" href="humid__sht__i2c_8c.html#a3c574dcb10c81020630db2286edbeaad">humid_sht_i2c.c</a>
+, <a class="el" href="humid__sht__i2c_8h.html#a3c574dcb10c81020630db2286edbeaad">humid_sht_i2c.h</a>
 </li>
 <li>humid_sht_periodic()
-: <a class="el" href="humid__sht_8c.html#ad715aaca3766d169ac2ea69bd0ead2d7">humid_sht.c</a>
-, <a class="el" href="humid__sht_8h.html#ad715aaca3766d169ac2ea69bd0ead2d7">humid_sht.h</a>
+: <a class="el" href="humid__sht_8h.html#ad715aaca3766d169ac2ea69bd0ead2d7">humid_sht.h</a>
+, <a class="el" href="humid__sht_8c.html#ad715aaca3766d169ac2ea69bd0ead2d7">humid_sht.c</a>
 </li>
 <li>humid_sht_periodic_i2c()
 : <a class="el" href="humid__sht__i2c_8c.html#a1ee81659bc27e2a5d7e769639a5503f7">humid_sht_i2c.c</a>
@@ -540,8 +564,8 @@ $(document).ready(function(){initNavTree('globals_func_h.html','');});
 : <a class="el" href="humid__sht__uart_8c.html#a7ce307830abca21533be9d925655064e">humid_sht_uart.c</a>
 </li>
 <li>humid_sht_uart_periodic()
-: <a class="el" href="humid__sht__uart_8c.html#a2346a61d0dfc1512f95f350d4f6d858c">humid_sht_uart.c</a>
-, <a class="el" href="humid__sht__uart_8h.html#a2346a61d0dfc1512f95f350d4f6d858c">humid_sht_uart.h</a>
+: <a class="el" href="humid__sht__uart_8h.html#a2346a61d0dfc1512f95f350d4f6d858c">humid_sht_uart.h</a>
+, <a class="el" href="humid__sht__uart_8c.html#a2346a61d0dfc1512f95f350d4f6d858c">humid_sht_uart.c</a>
 </li>
 </ul>
 </div><!-- contents -->
@@ -549,7 +573,7 @@ $(document).ready(function(){initNavTree('globals_func_h.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri May 15 2020 04:04:11 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:04:30 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

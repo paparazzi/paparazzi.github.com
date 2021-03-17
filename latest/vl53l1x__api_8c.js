@@ -1,5 +1,8 @@
 var vl53l1x__api_8c =
 [
+    [ "I2C_1V8", "vl53l1x__api_8c.html#a641026e19652245f6079572919acf488", null ],
+    [ "I2C_2V8", "vl53l1x__api_8c.html#a78741fca2b7c316d9cf03300df0290df", null ],
+    [ "VL53L1X_I2C_LEVEL", "vl53l1x__api_8c.html#a04ae449f74447596300383ce20870300", null ],
     [ "VL53L1X_BootDevice", "vl53l1x__api_8c.html#a4f5f0ac3cdbbcbc565f0babde7db4588", null ],
     [ "VL53L1X_BootState", "vl53l1x__api_8c.html#a2c2712e30ef7022410a78af61ee64770", null ],
     [ "VL53L1X_CheckForDataReady", "vl53l1x__api_8c.html#a4d37ff28a4c3996805e1fe3fd4fe0206", null ],

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -232,11 +232,12 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{ \</div>
-<div class="line">    if (irh_trans.status == <a class="code" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a2884da616ec2ff9183e649f8fab1073b">I2CTransSuccess</a>) <a class="code" href="subsystems_2sensors_2infrared__i2c_8h.html#ad7dde081ca03601c0fb01ee054af974b">infrared_i2c_hor_event</a>(); \</div>
-<div class="line">    if (<a class="code" href="subsystems_2sensors_2infrared__i2c_8h.html#a5020c256b621d606b42254062af9fbe6">irv_trans</a>.<a class="code" href="nps__radio__control__spektrum_8c.html#ade818037fd6c985038ff29656089758d">status</a> == <a class="code" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a2884da616ec2ff9183e649f8fab1073b">I2CTransSuccess</a>) <a class="code" href="subsystems_2sensors_2infrared__i2c_8h.html#ab7aba3256c7414ae390fcb4c0b67d700">infrared_i2c_ver_event</a>(); \</div>
+<b>Value:</b><div class="fragment"><div class="line">{ <a class="code" href="e__identification__fr_8c.html#a92cffae21318c1d983c63f3afa2a8d87">\</a></div>
+<div class="line"><a class="code" href="e__identification__fr_8c.html#a92cffae21318c1d983c63f3afa2a8d87">    if</a> (irh_trans.status == <a class="code" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a2884da616ec2ff9183e649f8fab1073b">I2CTransSuccess</a>) <a class="code" href="subsystems_2sensors_2infrared__i2c_8h.html#ad7dde081ca03601c0fb01ee054af974b">infrared_i2c_hor_event</a>(); \</div>
+<div class="line">    <a class="code" href="e__identification__fr_8c.html#a92cffae21318c1d983c63f3afa2a8d87">if</a> (<a class="code" href="subsystems_2sensors_2infrared__i2c_8h.html#a5020c256b621d606b42254062af9fbe6">irv_trans</a>.<a class="code" href="nps__radio__control__spektrum_8c.html#ade818037fd6c985038ff29656089758d">status</a> == <a class="code" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a2884da616ec2ff9183e649f8fab1073b">I2CTransSuccess</a>) <a class="code" href="subsystems_2sensors_2infrared__i2c_8h.html#ab7aba3256c7414ae390fcb4c0b67d700">infrared_i2c_ver_event</a>(); \</div>
 <div class="line">  }</div>
 <div class="ttc" id="group__i2c_html_ggab31a87ef6e90ddd08be846de32e8a442a2884da616ec2ff9183e649f8fab1073b"><div class="ttname"><a href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a2884da616ec2ff9183e649f8fab1073b">I2CTransSuccess</a></div><div class="ttdoc">transaction successfully finished by I2C driver </div><div class="ttdef"><b>Definition:</b> <a href="i2c_8h_source.html#l00057">i2c.h:57</a></div></div>
+<div class="ttc" id="e__identification__fr_8c_html_a92cffae21318c1d983c63f3afa2a8d87"><div class="ttname"><a href="e__identification__fr_8c.html#a92cffae21318c1d983c63f3afa2a8d87">if</a></div><div class="ttdeci">if(GpsFixValid()&amp;&amp;e_identification_started)</div><div class="ttdef"><b>Definition:</b> <a href="e__identification__fr_8c_source.html#l00159">e_identification_fr.c:159</a></div></div>
 <div class="ttc" id="subsystems_2sensors_2infrared__i2c_8h_html_ad7dde081ca03601c0fb01ee054af974b"><div class="ttname"><a href="subsystems_2sensors_2infrared__i2c_8h.html#ad7dde081ca03601c0fb01ee054af974b">infrared_i2c_hor_event</a></div><div class="ttdeci">void infrared_i2c_hor_event(void)</div><div class="ttdef"><b>Definition:</b> <a href="infrared__i2c_8c_source.html#l00133">infrared_i2c.c:133</a></div></div>
 <div class="ttc" id="subsystems_2sensors_2infrared__i2c_8h_html_a5020c256b621d606b42254062af9fbe6"><div class="ttname"><a href="subsystems_2sensors_2infrared__i2c_8h.html#a5020c256b621d606b42254062af9fbe6">irv_trans</a></div><div class="ttdeci">struct i2c_transaction irh_trans irv_trans</div><div class="ttdef"><b>Definition:</b> <a href="infrared__i2c_8c_source.html#l00067">infrared_i2c.c:67</a></div></div>
 <div class="ttc" id="nps__radio__control__spektrum_8c_html_ade818037fd6c985038ff29656089758d"><div class="ttname"><a href="nps__radio__control__spektrum_8c.html#ade818037fd6c985038ff29656089758d">status</a></div><div class="ttdeci">uint8_t status</div><div class="ttdef"><b>Definition:</b> <a href="nps__radio__control__spektrum_8c_source.html#l00101">nps_radio_control_spektrum.c:101</a></div></div>
@@ -509,7 +510,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_e01cf89a864aaa577ca086acf087ca29.html">sensors</a></li><li class="navelem"><a class="el" href="subsystems_2sensors_2infrared__i2c_8h.html">infrared_i2c.h</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:03:24 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:03:39 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

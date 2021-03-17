@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -142,7 +142,7 @@ $(document).ready(function(){initNavTree('lpc21_2link__mcu__hw_8h_source.html','
 <div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="lpc21_2link__mcu__hw_8h.html#a1e52d32bc856d1a2afdd4b20b5294e43">   35</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> <a class="code" href="lpc21_2link__mcu__hw_8h.html#a1e52d32bc856d1a2afdd4b20b5294e43">CrcUpdate</a>(<a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> <a class="code" href="link__mcu__spi_8c.html#aa60093a9a5d5d17864cfda66c47733e3">crc</a>, <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> data)</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> a = ((<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>)<a class="code" href="lpc21_2link__mcu__hw_8h.html#a653d2ce62628ed8a24b986b1c9107833">CrcHigh</a>(crc)) + data;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> b = ((<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>)<a class="code" href="lpc21_2link__mcu__hw_8h.html#adb19201fe1d4dccfe72271bbdc0626e6">CrcLow</a>(crc)) + a;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="wedgebug_8c.html#a83fc1af92e29717b4513d121b0c72c7d">b</a> = ((<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>)<a class="code" href="lpc21_2link__mcu__hw_8h.html#adb19201fe1d4dccfe72271bbdc0626e6">CrcLow</a>(crc)) + a;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  crc = b | a &lt;&lt; 8;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="link__mcu__spi_8c.html#aa60093a9a5d5d17864cfda66c47733e3">crc</a>;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
@@ -151,6 +151,7 @@ $(document).ready(function(){initNavTree('lpc21_2link__mcu__hw_8h_source.html','
 <div class="ttc" id="types_8h_html_a273cf69d639a59973b6019625df33e30"><div class="ttname"><a href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></div><div class="ttdeci">unsigned short uint16_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00016">types.h:16</a></div></div>
 <div class="ttc" id="lpc21_2link__mcu__hw_8h_html_a1e52d32bc856d1a2afdd4b20b5294e43"><div class="ttname"><a href="lpc21_2link__mcu__hw_8h.html#a1e52d32bc856d1a2afdd4b20b5294e43">CrcUpdate</a></div><div class="ttdeci">static uint16_t CrcUpdate(uint16_t crc, uint8_t data)</div><div class="ttdef"><b>Definition:</b> <a href="lpc21_2link__mcu__hw_8h_source.html#l00035">link_mcu_hw.h:35</a></div></div>
 <div class="ttc" id="lpc21_2link__mcu__hw_8h_html_adb19201fe1d4dccfe72271bbdc0626e6"><div class="ttname"><a href="lpc21_2link__mcu__hw_8h.html#adb19201fe1d4dccfe72271bbdc0626e6">CrcLow</a></div><div class="ttdeci">#define CrcLow(x)</div><div class="ttdef"><b>Definition:</b> <a href="lpc21_2link__mcu__hw_8h_source.html#l00032">link_mcu_hw.h:32</a></div></div>
+<div class="ttc" id="wedgebug_8c_html_a83fc1af92e29717b4513d121b0c72c7d"><div class="ttname"><a href="wedgebug_8c.html#a83fc1af92e29717b4513d121b0c72c7d">b</a></div><div class="ttdeci">float b</div><div class="ttdef"><b>Definition:</b> <a href="wedgebug_8c_source.html#l00202">wedgebug.c:202</a></div></div>
 <div class="ttc" id="link__mcu__spi_8c_html_aa60093a9a5d5d17864cfda66c47733e3"><div class="ttname"><a href="link__mcu__spi_8c.html#aa60093a9a5d5d17864cfda66c47733e3">crc</a></div><div class="ttdeci">static uint16_t crc</div><div class="ttdef"><b>Definition:</b> <a href="link__mcu__spi_8c_source.html#l00036">link_mcu_spi.c:36</a></div></div>
 <div class="ttc" id="types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00014">types.h:14</a></div></div>
 <div class="ttc" id="lpc21_2link__mcu__hw_8h_html_a653d2ce62628ed8a24b986b1c9107833"><div class="ttname"><a href="lpc21_2link__mcu__hw_8h.html#a653d2ce62628ed8a24b986b1c9107833">CrcHigh</a></div><div class="ttdeci">#define CrcHigh(x)</div><div class="ttdef"><b>Definition:</b> <a href="lpc21_2link__mcu__hw_8h_source.html#l00033">link_mcu_hw.h:33</a></div></div>
@@ -160,7 +161,7 @@ $(document).ready(function(){initNavTree('lpc21_2link__mcu__hw_8h_source.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_3f7617cb4a5e4fe5cc816b7b3bbdea3a.html">lpc21</a></li><li class="navelem"><a class="el" href="lpc21_2link__mcu__hw_8h.html">link_mcu_hw.h</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:02:09 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:02:19 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

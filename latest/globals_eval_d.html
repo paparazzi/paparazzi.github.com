@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -234,6 +234,9 @@ $(document).ready(function(){initNavTree('globals_eval_d.html','');});
 <li>DC_WIDER
 : <a class="el" href="dc_8h.html#a5bcad6137b0e9f54ae973b52e8a94d34a6f7a704df22428ad15570dee4f1337b8">dc.h</a>
 </li>
+<li>DIRECT_CONTROL
+: <a class="el" href="wedgebug_8c.html#aacc2ed6154766d07165e8e8e06aeb3d3ad90f991f9b4af00575990799f9dd80e6">wedgebug.c</a>
+</li>
 <li>DIRECTION
 : <a class="el" href="esc32_8h.html#a7d7ff77147834c43663d3dfd1f263610a29e2c300ecd12ceecf4ab3fb87bbdafc">esc32.h</a>
 </li>
@@ -255,8 +258,14 @@ $(document).ready(function(){initNavTree('globals_eval_d.html','');});
 <li>DMA_ERR_DIRECTMODE_ERROR
 : <a class="el" href="hal__stm32__dma_8h.html#a7d33ade9b0f16e0567045516507eb47ba86839092843c581c0d517865cf2f6d19">hal_stm32_dma.h</a>
 </li>
+<li>DMA_ERR_FIFO_EMPTY
+: <a class="el" href="hal__stm32__dma_8h.html#a7d33ade9b0f16e0567045516507eb47ba147793830adf14c3870a64099ce950b6">hal_stm32_dma.h</a>
+</li>
 <li>DMA_ERR_FIFO_ERROR
 : <a class="el" href="hal__stm32__dma_8h.html#a7d33ade9b0f16e0567045516507eb47bab0d1afae9df022cd6b5a1ea5a0186d65">hal_stm32_dma.h</a>
+</li>
+<li>DMA_ERR_FIFO_FULL
+: <a class="el" href="hal__stm32__dma_8h.html#a7d33ade9b0f16e0567045516507eb47ba3e09d80941009c22b15fc0e7174e7cb0">hal_stm32_dma.h</a>
 </li>
 <li>DMA_ERR_TRANSFER_ERROR
 : <a class="el" href="hal__stm32__dma_8h.html#a7d33ade9b0f16e0567045516507eb47ba6a6501443497cd46337033b71ca1b1ec">hal_stm32_dma.h</a>
@@ -394,19 +403,19 @@ $(document).ready(function(){initNavTree('globals_eval_d.html','');});
 : <a class="el" href="esc__dshot_8h.html#a4009747aee92bff90d44021394b37d02a586c8457215cd39dc081a2d90cd0a436">esc_dshot.h</a>
 </li>
 <li>dsm_bind_power_down
-: <a class="el" href="px4__flash_2protocol_8h.html#a3ee4e9f70475f3c684c23241163781abacd0be2ab890f11bd03ef8820861b54af">protocol.h</a>
+: <a class="el" href="px4__flash_2protocol_8h.html#a91208fef98a8e6a0f21eddcb9c5a8b78acd0be2ab890f11bd03ef8820861b54af">protocol.h</a>
 </li>
 <li>dsm_bind_power_up
-: <a class="el" href="px4__flash_2protocol_8h.html#a3ee4e9f70475f3c684c23241163781aba47721f970fade779b2775fbcee17e833">protocol.h</a>
+: <a class="el" href="px4__flash_2protocol_8h.html#a91208fef98a8e6a0f21eddcb9c5a8b78a47721f970fade779b2775fbcee17e833">protocol.h</a>
 </li>
 <li>dsm_bind_reinit_uart
-: <a class="el" href="px4__flash_2protocol_8h.html#a3ee4e9f70475f3c684c23241163781abafd99415839ad8ab6ece72a524c8f7b93">protocol.h</a>
+: <a class="el" href="px4__flash_2protocol_8h.html#a91208fef98a8e6a0f21eddcb9c5a8b78afd99415839ad8ab6ece72a524c8f7b93">protocol.h</a>
 </li>
 <li>dsm_bind_send_pulses
-: <a class="el" href="px4__flash_2protocol_8h.html#a3ee4e9f70475f3c684c23241163781aba0c614985bee2ec5b6f6b7dd58dc70dd5">protocol.h</a>
+: <a class="el" href="px4__flash_2protocol_8h.html#a91208fef98a8e6a0f21eddcb9c5a8b78a0c614985bee2ec5b6f6b7dd58dc70dd5">protocol.h</a>
 </li>
 <li>dsm_bind_set_rx_out
-: <a class="el" href="px4__flash_2protocol_8h.html#a3ee4e9f70475f3c684c23241163781aba8639e825e90551222744b3f4f645a721">protocol.h</a>
+: <a class="el" href="px4__flash_2protocol_8h.html#a91208fef98a8e6a0f21eddcb9c5a8b78a8639e825e90551222744b3f4f645a721">protocol.h</a>
 </li>
 <li>DSM_DSM2_1
 : <a class="el" href="subsystems_2datalink_2superbitrf_8h.html#a3ca1d4bb343a741879bdec84939ee4f3abe130355db41b6aa76a4e96a471a4635">superbitrf.h</a>
@@ -415,16 +424,16 @@ $(document).ready(function(){initNavTree('globals_eval_d.html','');});
 : <a class="el" href="subsystems_2datalink_2superbitrf_8h.html#a3ca1d4bb343a741879bdec84939ee4f3a9b1ed02c342b713e72b3c987646e5dfb">superbitrf.h</a>
 </li>
 <li>DSM_DSM2P
-: <a class="el" href="arch_2sim_2subsystems_2datalink_2superbitrf_8h.html#a3ca1d4bb343a741879bdec84939ee4f3ae5c1ce540e84f7ffb80ee444c0f95902">superbitrf.h</a>
+: <a class="el" href="subsystems_2datalink_2superbitrf_8h.html#a3ca1d4bb343a741879bdec84939ee4f3ae5c1ce540e84f7ffb80ee444c0f95902">superbitrf.h</a>
 </li>
 <li>DSM_DSMX_1
 : <a class="el" href="subsystems_2datalink_2superbitrf_8h.html#a3ca1d4bb343a741879bdec84939ee4f3ad50815fefeb8e69fa4c70dd71edd41d7">superbitrf.h</a>
 </li>
 <li>DSM_DSMX_2
-: <a class="el" href="arch_2sim_2subsystems_2datalink_2superbitrf_8h.html#a3ca1d4bb343a741879bdec84939ee4f3a5cd0551830ddc354286ad97f736b144a">superbitrf.h</a>
+: <a class="el" href="subsystems_2datalink_2superbitrf_8h.html#a3ca1d4bb343a741879bdec84939ee4f3a5cd0551830ddc354286ad97f736b144a">superbitrf.h</a>
 </li>
 <li>DSM_DSMXP
-: <a class="el" href="arch_2sim_2subsystems_2datalink_2superbitrf_8h.html#a3ca1d4bb343a741879bdec84939ee4f3a3b0611e833c531c97d5c0e3f48ebe1ed">superbitrf.h</a>
+: <a class="el" href="subsystems_2datalink_2superbitrf_8h.html#a3ca1d4bb343a741879bdec84939ee4f3a3b0611e833c531c97d5c0e3f48ebe1ed">superbitrf.h</a>
 </li>
 </ul>
 </div><!-- contents -->
@@ -432,7 +441,7 @@ $(document).ready(function(){initNavTree('globals_eval_d.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri May 15 2020 04:04:12 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:04:30 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

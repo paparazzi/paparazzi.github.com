@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -120,6 +120,7 @@ $(document).ready(function(){initNavTree('gps__ubx__i2c_8c.html','');});
 <code>#include &quot;<a class="el" href="gps__ubx__i2c_8h_source.html">modules/gps/gps_ubx_i2c.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="downlink_8h_source.html">subsystems/datalink/downlink.h</a>&quot;</code><br />
 <code>#include &lt;math.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for gps_ubx_i2c.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -145,9 +146,9 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aa8ff83704bd79d6e40b35b7d9d9769e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__i2c_8c.html#aa8ff83704bd79d6e40b35b7d9d9769e5">null_function</a> (struct <a class="el" href="gps__ubx__i2c_8h.html#structGpsUbxI2C">GpsUbxI2C</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>)</td></tr>
-<tr class="memdesc:aa8ff83704bd79d6e40b35b7d9d9769e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">null function  <a href="#aa8ff83704bd79d6e40b35b7d9d9769e5">More...</a><br /></td></tr>
-<tr class="separator:aa8ff83704bd79d6e40b35b7d9d9769e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb78ffee07cb1190a736971f18eb17d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__i2c_8c.html#afb78ffee07cb1190a736971f18eb17d1">null_function</a> (struct <a class="el" href="gps__ubx__i2c_8h.html#structGpsUbxI2C">GpsUbxI2C</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> baudrate)</td></tr>
+<tr class="memdesc:afb78ffee07cb1190a736971f18eb17d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">null function  <a href="#afb78ffee07cb1190a736971f18eb17d1">More...</a><br /></td></tr>
+<tr class="separator:afb78ffee07cb1190a736971f18eb17d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a201e7f484b96faa23d7a9506d7442bc9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gps__ubx__i2c_8c.html#a201e7f484b96faa23d7a9506d7442bc9">gps_i2c_check_free_space</a> (struct <a class="el" href="gps__ubx__i2c_8h.html#structGpsUbxI2C">GpsUbxI2C</a> *<a class="el" href="ins__alt__float_8c.html#a9d3f100c4375da4d957dbe599d494905">p</a>, long *<a class="el" href="bat__voltage__ardrone2_8c.html#a6f8059414f0228f0256115e024eeed4b">fd</a>, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> len)</td></tr>
 <tr class="memdesc:a201e7f484b96faa23d7a9506d7442bc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check available space in transmit buffer.  <a href="#a201e7f484b96faa23d7a9506d7442bc9">More...</a><br /></td></tr>
 <tr class="separator:a201e7f484b96faa23d7a9506d7442bc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -211,9 +212,9 @@ Variables</h2></td></tr>
 
 <p>data stream register </p>
 
-<p>Definition at line <a class="el" href="gps__ubx__i2c_8c_source.html#l00046">46</a> of file <a class="el" href="gps__ubx__i2c_8c_source.html">gps_ubx_i2c.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__i2c_8c_source.html#l00047">47</a> of file <a class="el" href="gps__ubx__i2c_8c_source.html">gps_ubx_i2c.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__ubx__i2c_8c_source.html#l00208">gps_ubx_i2c_read_event()</a>.</p>
+<p>Referenced by <a class="el" href="gps__ubx__i2c_8c_source.html#l00209">gps_ubx_i2c_read_event()</a>.</p>
 
 </div>
 </div>
@@ -229,9 +230,9 @@ Variables</h2></td></tr>
 
 <p>number of bytes available register </p>
 
-<p>Definition at line <a class="el" href="gps__ubx__i2c_8c_source.html#l00045">45</a> of file <a class="el" href="gps__ubx__i2c_8c_source.html">gps_ubx_i2c.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__i2c_8c_source.html#l00046">46</a> of file <a class="el" href="gps__ubx__i2c_8c_source.html">gps_ubx_i2c.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__ubx__i2c_8c_source.html#l00169">gps_ubx_i2c_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="gps__ubx__i2c_8c_source.html#l00170">gps_ubx_i2c_periodic()</a>.</p>
 
 </div>
 </div>
@@ -245,9 +246,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__ubx__i2c_8c_source.html#l00038">38</a> of file <a class="el" href="gps__ubx__i2c_8c_source.html">gps_ubx_i2c.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__i2c_8c_source.html#l00039">39</a> of file <a class="el" href="gps__ubx__i2c_8c_source.html">gps_ubx_i2c.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__ubx__i2c_8c_source.html#l00169">gps_ubx_i2c_periodic()</a>, and <a class="el" href="gps__ubx__i2c_8c_source.html#l00208">gps_ubx_i2c_read_event()</a>.</p>
+<p>Referenced by <a class="el" href="gps__ubx__i2c_8c_source.html#l00170">gps_ubx_i2c_periodic()</a>, and <a class="el" href="gps__ubx__i2c_8c_source.html#l00209">gps_ubx_i2c_read_event()</a>.</p>
 
 </div>
 </div>
@@ -268,7 +269,7 @@ Variables</h2></td></tr>
 
 <p>config is done, begin reading messages </p>
 
-<p>Definition at line <a class="el" href="gps__ubx__i2c_8c_source.html#l00159">159</a> of file <a class="el" href="gps__ubx__i2c_8c_source.html">gps_ubx_i2c.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__i2c_8c_source.html#l00160">160</a> of file <a class="el" href="gps__ubx__i2c_8c_source.html">gps_ubx_i2c.c</a>.</p>
 
 <p>References <a class="el" href="std_8h_source.html#l00004">TRUE</a>.</p>
 
@@ -309,11 +310,11 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="gps__ubx__i2c_8c_source.html#l00149">149</a> of file <a class="el" href="gps__ubx__i2c_8c_source.html">gps_ubx_i2c.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__i2c_8c_source.html#l00150">150</a> of file <a class="el" href="gps__ubx__i2c_8c_source.html">gps_ubx_i2c.c</a>.</p>
 
-<p>References <a class="el" href="gps__ubx__i2c_8c_source.html#l00049">gps_i2c</a>, <a class="el" href="gps__ubx__i2c_8h_source.html#l00069">GpsUbxI2C::rx_buf_avail</a>, and <a class="el" href="gps__ubx__i2c_8h_source.html#l00070">GpsUbxI2C::rx_buf_idx</a>.</p>
+<p>References <a class="el" href="gps__ubx__i2c_8c_source.html#l00050">gps_i2c</a>, <a class="el" href="gps__ubx__i2c_8h_source.html#l00069">GpsUbxI2C::rx_buf_avail</a>, and <a class="el" href="gps__ubx__i2c_8h_source.html#l00070">GpsUbxI2C::rx_buf_idx</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__ubx__i2c_8c_source.html#l00096">gps_ubx_i2c_init()</a>, and <a class="el" href="gps__ubx__i2c_8c_source.html#l00169">gps_ubx_i2c_periodic()</a>.</p>
+<p>Referenced by <a class="el" href="gps__ubx__i2c_8c_source.html#l00097">gps_ubx_i2c_init()</a>, and <a class="el" href="gps__ubx__i2c_8c_source.html#l00170">gps_ubx_i2c_periodic()</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -368,11 +369,11 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="gps__ubx__i2c_8c_source.html#l00125">125</a> of file <a class="el" href="gps__ubx__i2c_8c_source.html">gps_ubx_i2c.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__i2c_8c_source.html#l00126">126</a> of file <a class="el" href="gps__ubx__i2c_8c_source.html">gps_ubx_i2c.c</a>.</p>
 
-<p>References <a class="el" href="gps__ubx__i2c_8c_source.html#l00049">gps_i2c</a>, <a class="el" href="gps__ubx__i2c_8h_source.html#l00039">GPS_I2C_BUF_SIZE</a>, and <a class="el" href="gps__ubx__i2c_8h_source.html#l00071">GpsUbxI2C::tx_buf_idx</a>.</p>
+<p>References <a class="el" href="gps__ubx__i2c_8c_source.html#l00050">gps_i2c</a>, <a class="el" href="gps__ubx__i2c_8h_source.html#l00039">GPS_I2C_BUF_SIZE</a>, and <a class="el" href="gps__ubx__i2c_8h_source.html#l00071">GpsUbxI2C::tx_buf_idx</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__ubx__i2c_8c_source.html#l00096">gps_ubx_i2c_init()</a>.</p>
+<p>Referenced by <a class="el" href="gps__ubx__i2c_8c_source.html#l00097">gps_ubx_i2c_init()</a>.</p>
 
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -409,11 +410,11 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="gps__ubx__i2c_8c_source.html#l00164">164</a> of file <a class="el" href="gps__ubx__i2c_8c_source.html">gps_ubx_i2c.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__i2c_8c_source.html#l00165">165</a> of file <a class="el" href="gps__ubx__i2c_8c_source.html">gps_ubx_i2c.c</a>.</p>
 
-<p>References <a class="el" href="gps__ubx__i2c_8c_source.html#l00049">gps_i2c</a>, <a class="el" href="gps__ubx__i2c_8h_source.html#l00066">GpsUbxI2C::rx_buf</a>, and <a class="el" href="gps__ubx__i2c_8h_source.html#l00070">GpsUbxI2C::rx_buf_idx</a>.</p>
+<p>References <a class="el" href="gps__ubx__i2c_8c_source.html#l00050">gps_i2c</a>, <a class="el" href="gps__ubx__i2c_8h_source.html#l00066">GpsUbxI2C::rx_buf</a>, and <a class="el" href="gps__ubx__i2c_8h_source.html#l00070">GpsUbxI2C::rx_buf_idx</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__ubx__i2c_8c_source.html#l00096">gps_ubx_i2c_init()</a>.</p>
+<p>Referenced by <a class="el" href="gps__ubx__i2c_8c_source.html#l00097">gps_ubx_i2c_init()</a>.</p>
 
 <p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -460,11 +461,11 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="gps__ubx__i2c_8c_source.html#l00143">143</a> of file <a class="el" href="gps__ubx__i2c_8c_source.html">gps_ubx_i2c.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__i2c_8c_source.html#l00144">144</a> of file <a class="el" href="gps__ubx__i2c_8c_source.html">gps_ubx_i2c.c</a>.</p>
 
-<p>References <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="gps__ubx__i2c_8c_source.html#l00049">gps_i2c</a>, <a class="el" href="gps__ubx__i2c_8h_source.html#l00056">gps_i2c_write_cfg</a>, <a class="el" href="gps__ubx__i2c_8h_source.html#l00073">GpsUbxI2C::tx_rdy</a>, and <a class="el" href="gps__ubx__i2c_8h_source.html#l00064">GpsUbxI2C::write_state</a>.</p>
+<p>References <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="gps__ubx__i2c_8c_source.html#l00050">gps_i2c</a>, <a class="el" href="gps__ubx__i2c_8h_source.html#l00056">gps_i2c_write_cfg</a>, <a class="el" href="gps__ubx__i2c_8h_source.html#l00073">GpsUbxI2C::tx_rdy</a>, and <a class="el" href="gps__ubx__i2c_8h_source.html#l00064">GpsUbxI2C::write_state</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__ubx__i2c_8c_source.html#l00096">gps_ubx_i2c_init()</a>.</p>
+<p>Referenced by <a class="el" href="gps__ubx__i2c_8c_source.html#l00097">gps_ubx_i2c_init()</a>.</p>
 
 <p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -525,11 +526,11 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="gps__ubx__i2c_8c_source.html#l00130">130</a> of file <a class="el" href="gps__ubx__i2c_8c_source.html">gps_ubx_i2c.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__i2c_8c_source.html#l00131">131</a> of file <a class="el" href="gps__ubx__i2c_8c_source.html">gps_ubx_i2c.c</a>.</p>
 
-<p>References <a class="el" href="gps__ubx__i2c_8c_source.html#l00138">gps_i2c_put_byte()</a>.</p>
+<p>References <a class="el" href="gps__ubx__i2c_8c_source.html#l00139">gps_i2c_put_byte()</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__ubx__i2c_8c_source.html#l00096">gps_ubx_i2c_init()</a>.</p>
+<p>Referenced by <a class="el" href="gps__ubx__i2c_8c_source.html#l00097">gps_ubx_i2c_init()</a>.</p>
 
 <p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -595,11 +596,11 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="gps__ubx__i2c_8c_source.html#l00138">138</a> of file <a class="el" href="gps__ubx__i2c_8c_source.html">gps_ubx_i2c.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__i2c_8c_source.html#l00139">139</a> of file <a class="el" href="gps__ubx__i2c_8c_source.html">gps_ubx_i2c.c</a>.</p>
 
-<p>References <a class="el" href="gps__ubx__i2c_8c_source.html#l00049">gps_i2c</a>, <a class="el" href="gps__ubx__i2c_8h_source.html#l00067">GpsUbxI2C::tx_buf</a>, and <a class="el" href="gps__ubx__i2c_8h_source.html#l00071">GpsUbxI2C::tx_buf_idx</a>.</p>
+<p>References <a class="el" href="gps__ubx__i2c_8c_source.html#l00050">gps_i2c</a>, <a class="el" href="gps__ubx__i2c_8h_source.html#l00067">GpsUbxI2C::tx_buf</a>, and <a class="el" href="gps__ubx__i2c_8h_source.html#l00071">GpsUbxI2C::tx_buf_idx</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__ubx__i2c_8c_source.html#l00130">gps_i2c_put_buffer()</a>, and <a class="el" href="gps__ubx__i2c_8c_source.html#l00096">gps_ubx_i2c_init()</a>.</p>
+<p>Referenced by <a class="el" href="gps__ubx__i2c_8c_source.html#l00131">gps_i2c_put_buffer()</a>, and <a class="el" href="gps__ubx__i2c_8c_source.html#l00097">gps_ubx_i2c_init()</a>.</p>
 
 <p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -630,9 +631,9 @@ Variables</h2></td></tr>
 
 <p>is driver ready to send a message </p>
 
-<p>Definition at line <a class="el" href="gps__ubx__i2c_8c_source.html#l00154">154</a> of file <a class="el" href="gps__ubx__i2c_8c_source.html">gps_ubx_i2c.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__i2c_8c_source.html#l00155">155</a> of file <a class="el" href="gps__ubx__i2c_8c_source.html">gps_ubx_i2c.c</a>.</p>
 
-<p>References <a class="el" href="gps__ubx__i2c_8c_source.html#l00049">gps_i2c</a>, and <a class="el" href="gps__ubx__i2c_8h_source.html#l00073">GpsUbxI2C::tx_rdy</a>.</p>
+<p>References <a class="el" href="gps__ubx__i2c_8c_source.html#l00050">gps_i2c</a>, and <a class="el" href="gps__ubx__i2c_8h_source.html#l00073">GpsUbxI2C::tx_rdy</a>.</p>
 
 <p>Referenced by <a class="el" href="gps__ubx__ucenter_8c_source.html#l00100">gps_ubx_ucenter_periodic()</a>.</p>
 
@@ -672,9 +673,9 @@ Variables</h2></td></tr>
 <p>&lt; get a new char</p>
 <p>&lt; set device baudrate </p>
 
-<p>Definition at line <a class="el" href="gps__ubx__i2c_8c_source.html#l00096">96</a> of file <a class="el" href="gps__ubx__i2c_8c_source.html">gps_ubx_i2c.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__i2c_8c_source.html#l00097">97</a> of file <a class="el" href="gps__ubx__i2c_8c_source.html">gps_ubx_i2c.c</a>.</p>
 
-<p>References <a class="el" href="gps__ubx__i2c_8h_source.html#l00079">GpsUbxI2C::device</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="gps__ubx__i2c_8c_source.html#l00049">gps_i2c</a>, <a class="el" href="gps__ubx__i2c_8c_source.html#l00149">gps_i2c_char_available()</a>, <a class="el" href="gps__ubx__i2c_8c_source.html#l00125">gps_i2c_check_free_space()</a>, <a class="el" href="gps__ubx__i2c_8c_source.html#l00164">gps_i2c_getch()</a>, <a class="el" href="gps__ubx__i2c_8c_source.html#l00143">gps_i2c_msg_ready()</a>, <a class="el" href="gps__ubx__i2c_8c_source.html#l00130">gps_i2c_put_buffer()</a>, <a class="el" href="gps__ubx__i2c_8c_source.html#l00138">gps_i2c_put_byte()</a>, <a class="el" href="gps__ubx__i2c_8h_source.html#l00045">gps_i2c_read_standby</a>, <a class="el" href="gps__ubx__i2c_8h_source.html#l00054">gps_i2c_write_standby</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="gps__ubx__i2c_8c_source.html#l00123">null_function()</a>, <a class="el" href="gps__ubx__i2c_8h_source.html#l00063">GpsUbxI2C::read_state</a>, <a class="el" href="gps__ubx__i2c_8h_source.html#l00069">GpsUbxI2C::rx_buf_avail</a>, <a class="el" href="gps__ubx__i2c_8h_source.html#l00070">GpsUbxI2C::rx_buf_idx</a>, <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>, <a class="el" href="gps__ubx__i2c_8h_source.html#l00075">GpsUbxI2C::trans</a>, <a class="el" href="std_8h_source.html#l00004">TRUE</a>, <a class="el" href="gps__ubx__i2c_8h_source.html#l00071">GpsUbxI2C::tx_buf_idx</a>, <a class="el" href="gps__ubx__i2c_8h_source.html#l00073">GpsUbxI2C::tx_rdy</a>, and <a class="el" href="gps__ubx__i2c_8h_source.html#l00064">GpsUbxI2C::write_state</a>.</p>
+<p>References <a class="el" href="gps__ubx__i2c_8h_source.html#l00079">GpsUbxI2C::device</a>, <a class="el" href="std_8h_source.html#l00005">FALSE</a>, <a class="el" href="gps__ubx__i2c_8c_source.html#l00050">gps_i2c</a>, <a class="el" href="gps__ubx__i2c_8c_source.html#l00150">gps_i2c_char_available()</a>, <a class="el" href="gps__ubx__i2c_8c_source.html#l00126">gps_i2c_check_free_space()</a>, <a class="el" href="gps__ubx__i2c_8c_source.html#l00165">gps_i2c_getch()</a>, <a class="el" href="gps__ubx__i2c_8c_source.html#l00144">gps_i2c_msg_ready()</a>, <a class="el" href="gps__ubx__i2c_8c_source.html#l00131">gps_i2c_put_buffer()</a>, <a class="el" href="gps__ubx__i2c_8c_source.html#l00139">gps_i2c_put_byte()</a>, <a class="el" href="gps__ubx__i2c_8h_source.html#l00045">gps_i2c_read_standby</a>, <a class="el" href="gps__ubx__i2c_8h_source.html#l00054">gps_i2c_write_standby</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="gps__ubx__i2c_8c_source.html#l00124">null_function()</a>, <a class="el" href="gps__ubx__i2c_8h_source.html#l00063">GpsUbxI2C::read_state</a>, <a class="el" href="gps__ubx__i2c_8h_source.html#l00069">GpsUbxI2C::rx_buf_avail</a>, <a class="el" href="gps__ubx__i2c_8h_source.html#l00070">GpsUbxI2C::rx_buf_idx</a>, <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>, <a class="el" href="gps__ubx__i2c_8h_source.html#l00075">GpsUbxI2C::trans</a>, <a class="el" href="std_8h_source.html#l00004">TRUE</a>, <a class="el" href="gps__ubx__i2c_8h_source.html#l00071">GpsUbxI2C::tx_buf_idx</a>, <a class="el" href="gps__ubx__i2c_8h_source.html#l00073">GpsUbxI2C::tx_rdy</a>, and <a class="el" href="gps__ubx__i2c_8h_source.html#l00064">GpsUbxI2C::write_state</a>.</p>
 
 <p><div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -683,7 +684,7 @@ Variables</h2></td></tr>
 <div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="gps__ubx__i2c_8c_a02ccc0087dc23753c79b16f60f859b56_cgraph.png" border="0" usemap="#gps__ubx__i2c_8c_a02ccc0087dc23753c79b16f60f859b56_cgraph" alt=""/></div>
 <map name="gps__ubx__i2c_8c_a02ccc0087dc23753c79b16f60f859b56_cgraph" id="gps__ubx__i2c_8c_a02ccc0087dc23753c79b16f60f859b56_cgraph">
-<area shape="rect" id="node2" href="gps__ubx__i2c_8c.html#a4e9375743ce0fb16c3a4892eb0f823bd" title="check if a new character is available " alt="" coords="180,5,348,32"/><area shape="rect" id="node3" href="gps__ubx__i2c_8c.html#a201e7f484b96faa23d7a9506d7442bc9" title="Check available space in transmit buffer. " alt="" coords="191,57,337,98"/><area shape="rect" id="node4" href="gps__ubx__i2c_8c.html#a241634e6c8b878f03d15aa698baf0fe4" title="get a new char " alt="" coords="207,123,321,149"/><area shape="rect" id="node5" href="gps__ubx__i2c_8c.html#af038668157161a873a764a7edc0a367b" title="send buffer when ready " alt="" coords="190,173,338,200"/><area shape="rect" id="node6" href="gps__ubx__i2c_8c.html#afb47044db85e0eb5ea321cfb97f48059" title="Put bytes into transmit buffer. " alt="" coords="193,224,335,251"/><area shape="rect" id="node7" href="gps__ubx__i2c_8c.html#aee916f88f710ec46463e53d9350df177" title="Put byte into transmit buffer. " alt="" coords="396,249,529,276"/><area shape="rect" id="node8" href="gps__ubx__i2c_8c.html#aa8ff83704bd79d6e40b35b7d9d9769e5" title="null function " alt="" coords="213,325,315,352"/></map>
+<area shape="rect" id="node2" href="gps__ubx__i2c_8c.html#a4e9375743ce0fb16c3a4892eb0f823bd" title="check if a new character is available " alt="" coords="180,5,348,32"/><area shape="rect" id="node3" href="gps__ubx__i2c_8c.html#a201e7f484b96faa23d7a9506d7442bc9" title="Check available space in transmit buffer. " alt="" coords="191,57,337,98"/><area shape="rect" id="node4" href="gps__ubx__i2c_8c.html#a241634e6c8b878f03d15aa698baf0fe4" title="get a new char " alt="" coords="207,123,321,149"/><area shape="rect" id="node5" href="gps__ubx__i2c_8c.html#af038668157161a873a764a7edc0a367b" title="send buffer when ready " alt="" coords="190,173,338,200"/><area shape="rect" id="node6" href="gps__ubx__i2c_8c.html#afb47044db85e0eb5ea321cfb97f48059" title="Put bytes into transmit buffer. " alt="" coords="193,224,335,251"/><area shape="rect" id="node7" href="gps__ubx__i2c_8c.html#aee916f88f710ec46463e53d9350df177" title="Put byte into transmit buffer. " alt="" coords="396,249,529,276"/><area shape="rect" id="node8" href="gps__ubx__i2c_8c.html#afb78ffee07cb1190a736971f18eb17d1" title="null function " alt="" coords="213,325,315,352"/></map>
 </div>
 </p>
 
@@ -705,9 +706,9 @@ Variables</h2></td></tr>
 
 <p>handle message sending </p>
 
-<p>Definition at line <a class="el" href="gps__ubx__i2c_8c_source.html#l00169">169</a> of file <a class="el" href="gps__ubx__i2c_8c_source.html">gps_ubx_i2c.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__i2c_8c_source.html#l00170">170</a> of file <a class="el" href="gps__ubx__i2c_8c_source.html">gps_ubx_i2c.c</a>.</p>
 
-<p>References <a class="el" href="i2c_8h_source.html#l00122">i2c_transaction::buf</a>, <a class="el" href="gps__ubx__i2c_8c_source.html#l00049">gps_i2c</a>, <a class="el" href="gps__ubx__i2c_8c_source.html#l00045">GPS_I2C_ADDR_NB_AVAIL_BYTES</a>, <a class="el" href="gps__ubx__i2c_8h_source.html#l00039">GPS_I2C_BUF_SIZE</a>, <a class="el" href="gps__ubx__i2c_8c_source.html#l00149">gps_i2c_char_available()</a>, <a class="el" href="gps__ubx__i2c_8h_source.html#l00046">gps_i2c_read_sizeof</a>, <a class="el" href="gps__ubx__i2c_8h_source.html#l00045">gps_i2c_read_standby</a>, <a class="el" href="gps__ubx__i2c_8c_source.html#l00038">GPS_I2C_SLAVE_ADDR</a>, <a class="el" href="gps__ubx__i2c_8h_source.html#l00056">gps_i2c_write_cfg</a>, <a class="el" href="gps__ubx__i2c_8h_source.html#l00055">gps_i2c_write_request_size</a>, <a class="el" href="gps__ubx__i2c_8h_source.html#l00054">gps_i2c_write_standby</a>, <a class="el" href="i2c_8c_source.html#l00344">i2c_transceive()</a>, <a class="el" href="i2c_8c_source.html#l00324">i2c_transmit()</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="gps__ubx__i2c_8h_source.html#l00063">GpsUbxI2C::read_state</a>, <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>, <a class="el" href="gps__ubx__i2c_8h_source.html#l00075">GpsUbxI2C::trans</a>, <a class="el" href="std_8h_source.html#l00004">TRUE</a>, <a class="el" href="gps__ubx__i2c_8h_source.html#l00067">GpsUbxI2C::tx_buf</a>, <a class="el" href="gps__ubx__i2c_8h_source.html#l00071">GpsUbxI2C::tx_buf_idx</a>, <a class="el" href="gps__ubx__i2c_8h_source.html#l00073">GpsUbxI2C::tx_rdy</a>, and <a class="el" href="gps__ubx__i2c_8h_source.html#l00064">GpsUbxI2C::write_state</a>.</p>
+<p>References <a class="el" href="i2c_8h_source.html#l00122">i2c_transaction::buf</a>, <a class="el" href="gps__ubx__i2c_8c_source.html#l00050">gps_i2c</a>, <a class="el" href="gps__ubx__i2c_8c_source.html#l00046">GPS_I2C_ADDR_NB_AVAIL_BYTES</a>, <a class="el" href="gps__ubx__i2c_8h_source.html#l00039">GPS_I2C_BUF_SIZE</a>, <a class="el" href="gps__ubx__i2c_8c_source.html#l00150">gps_i2c_char_available()</a>, <a class="el" href="gps__ubx__i2c_8h_source.html#l00046">gps_i2c_read_sizeof</a>, <a class="el" href="gps__ubx__i2c_8h_source.html#l00045">gps_i2c_read_standby</a>, <a class="el" href="gps__ubx__i2c_8c_source.html#l00039">GPS_I2C_SLAVE_ADDR</a>, <a class="el" href="gps__ubx__i2c_8h_source.html#l00056">gps_i2c_write_cfg</a>, <a class="el" href="gps__ubx__i2c_8h_source.html#l00055">gps_i2c_write_request_size</a>, <a class="el" href="gps__ubx__i2c_8h_source.html#l00054">gps_i2c_write_standby</a>, <a class="el" href="i2c_8c_source.html#l00344">i2c_transceive()</a>, <a class="el" href="i2c_8c_source.html#l00324">i2c_transmit()</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="gps__ubx__i2c_8h_source.html#l00063">GpsUbxI2C::read_state</a>, <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>, <a class="el" href="gps__ubx__i2c_8h_source.html#l00075">GpsUbxI2C::trans</a>, <a class="el" href="std_8h_source.html#l00004">TRUE</a>, <a class="el" href="gps__ubx__i2c_8h_source.html#l00067">GpsUbxI2C::tx_buf</a>, <a class="el" href="gps__ubx__i2c_8h_source.html#l00071">GpsUbxI2C::tx_buf_idx</a>, <a class="el" href="gps__ubx__i2c_8h_source.html#l00073">GpsUbxI2C::tx_rdy</a>, and <a class="el" href="gps__ubx__i2c_8h_source.html#l00064">GpsUbxI2C::write_state</a>.</p>
 
 <p><div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -738,9 +739,9 @@ Variables</h2></td></tr>
 
 <p>handle message reception </p>
 
-<p>Definition at line <a class="el" href="gps__ubx__i2c_8c_source.html#l00208">208</a> of file <a class="el" href="gps__ubx__i2c_8c_source.html">gps_ubx_i2c.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__i2c_8c_source.html#l00209">209</a> of file <a class="el" href="gps__ubx__i2c_8c_source.html">gps_ubx_i2c.c</a>.</p>
 
-<p>References <a class="el" href="i2c_8h_source.html#l00122">i2c_transaction::buf</a>, <a class="el" href="gps__ubx__i2c_8c_source.html#l00049">gps_i2c</a>, <a class="el" href="gps__ubx__i2c_8c_source.html#l00046">GPS_I2C_ADDR_DATA</a>, <a class="el" href="gps__ubx__i2c_8h_source.html#l00039">GPS_I2C_BUF_SIZE</a>, <a class="el" href="gps__ubx__i2c_8h_source.html#l00047">gps_i2c_read_data</a>, <a class="el" href="gps__ubx__i2c_8h_source.html#l00046">gps_i2c_read_sizeof</a>, <a class="el" href="gps__ubx__i2c_8h_source.html#l00045">gps_i2c_read_standby</a>, <a class="el" href="gps__ubx__i2c_8c_source.html#l00038">GPS_I2C_SLAVE_ADDR</a>, <a class="el" href="gps__ubx__i2c_8h_source.html#l00055">gps_i2c_write_request_size</a>, <a class="el" href="gps__ubx__i2c_8h_source.html#l00054">gps_i2c_write_standby</a>, <a class="el" href="gps__ubx__i2c_8c_source.html#l00053">gps_ubx_i2c_bytes_to_read</a>, <a class="el" href="i2c_8c_source.html#l00344">i2c_transceive()</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="gps__ubx__i2c_8h_source.html#l00063">GpsUbxI2C::read_state</a>, <a class="el" href="gps__ubx__i2c_8h_source.html#l00066">GpsUbxI2C::rx_buf</a>, <a class="el" href="gps__ubx__i2c_8h_source.html#l00069">GpsUbxI2C::rx_buf_avail</a>, <a class="el" href="gps__ubx__i2c_8h_source.html#l00070">GpsUbxI2C::rx_buf_idx</a>, <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>, <a class="el" href="gps__ubx__i2c_8h_source.html#l00075">GpsUbxI2C::trans</a>, and <a class="el" href="gps__ubx__i2c_8h_source.html#l00064">GpsUbxI2C::write_state</a>.</p>
+<p>References <a class="el" href="i2c_8h_source.html#l00122">i2c_transaction::buf</a>, <a class="el" href="gps__ubx__i2c_8c_source.html#l00050">gps_i2c</a>, <a class="el" href="gps__ubx__i2c_8c_source.html#l00047">GPS_I2C_ADDR_DATA</a>, <a class="el" href="gps__ubx__i2c_8h_source.html#l00039">GPS_I2C_BUF_SIZE</a>, <a class="el" href="gps__ubx__i2c_8h_source.html#l00047">gps_i2c_read_data</a>, <a class="el" href="gps__ubx__i2c_8h_source.html#l00046">gps_i2c_read_sizeof</a>, <a class="el" href="gps__ubx__i2c_8h_source.html#l00045">gps_i2c_read_standby</a>, <a class="el" href="gps__ubx__i2c_8c_source.html#l00039">GPS_I2C_SLAVE_ADDR</a>, <a class="el" href="gps__ubx__i2c_8h_source.html#l00055">gps_i2c_write_request_size</a>, <a class="el" href="gps__ubx__i2c_8h_source.html#l00054">gps_i2c_write_standby</a>, <a class="el" href="gps__ubx__i2c_8c_source.html#l00054">gps_ubx_i2c_bytes_to_read</a>, <a class="el" href="i2c_8c_source.html#l00344">i2c_transceive()</a>, <a class="el" href="i2c_8h_source.html#l00059">I2CTransDone</a>, <a class="el" href="gps__ubx__i2c_8h_source.html#l00063">GpsUbxI2C::read_state</a>, <a class="el" href="gps__ubx__i2c_8h_source.html#l00066">GpsUbxI2C::rx_buf</a>, <a class="el" href="gps__ubx__i2c_8h_source.html#l00069">GpsUbxI2C::rx_buf_avail</a>, <a class="el" href="gps__ubx__i2c_8h_source.html#l00070">GpsUbxI2C::rx_buf_idx</a>, <a class="el" href="i2c_8h_source.html#l00126">i2c_transaction::status</a>, <a class="el" href="gps__ubx__i2c_8h_source.html#l00075">GpsUbxI2C::trans</a>, and <a class="el" href="gps__ubx__i2c_8h_source.html#l00064">GpsUbxI2C::write_state</a>.</p>
 
 <p>Referenced by <a class="el" href="gps__ubx__i2c_8h_source.html#l00101">GpsUbxi2cEvent()</a>.</p>
 
@@ -768,7 +769,7 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aa8ff83704bd79d6e40b35b7d9d9769e5"></a>
+<a class="anchor" id="afb78ffee07cb1190a736971f18eb17d1"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -776,8 +777,18 @@ Variables</h2></td></tr>
           <td class="memname">void null_function </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="gps__ubx__i2c_8h.html#structGpsUbxI2C">GpsUbxI2C</a> *&#160;</td>
-          <td class="paramname"><em>p</em></td><td>)</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a>&#160;</td>
+          <td class="paramname"><em>baudrate</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -790,17 +801,17 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="gps__ubx__i2c_8c_source.html#l00123">123</a> of file <a class="el" href="gps__ubx__i2c_8c_source.html">gps_ubx_i2c.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__i2c_8c_source.html#l00124">124</a> of file <a class="el" href="gps__ubx__i2c_8c_source.html">gps_ubx_i2c.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__ubx__i2c_8c_source.html#l00096">gps_ubx_i2c_init()</a>.</p>
+<p>Referenced by <a class="el" href="gps__ubx__i2c_8c_source.html#l00097">gps_ubx_i2c_init()</a>.</p>
 
 <p><div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-14-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-14-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="gps__ubx__i2c_8c_aa8ff83704bd79d6e40b35b7d9d9769e5_icgraph.png" border="0" usemap="#gps__ubx__i2c_8c_aa8ff83704bd79d6e40b35b7d9d9769e5_icgraph" alt=""/></div>
-<map name="gps__ubx__i2c_8c_aa8ff83704bd79d6e40b35b7d9d9769e5_icgraph" id="gps__ubx__i2c_8c_aa8ff83704bd79d6e40b35b7d9d9769e5_icgraph">
+<div class="center"><img src="gps__ubx__i2c_8c_afb78ffee07cb1190a736971f18eb17d1_icgraph.png" border="0" usemap="#gps__ubx__i2c_8c_afb78ffee07cb1190a736971f18eb17d1_icgraph" alt=""/></div>
+<map name="gps__ubx__i2c_8c_afb78ffee07cb1190a736971f18eb17d1_icgraph" id="gps__ubx__i2c_8c_afb78ffee07cb1190a736971f18eb17d1_icgraph">
 <area shape="rect" id="node2" href="gps__ubx__i2c_8h.html#a02ccc0087dc23753c79b16f60f859b56" title="init function " alt="" coords="156,5,283,32"/></map>
 </div>
 </p>
@@ -818,9 +829,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="gps__ubx__i2c_8c_source.html#l00049">49</a> of file <a class="el" href="gps__ubx__i2c_8c_source.html">gps_ubx_i2c.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__i2c_8c_source.html#l00050">50</a> of file <a class="el" href="gps__ubx__i2c_8c_source.html">gps_ubx_i2c.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__ubx__i2c_8c_source.html#l00149">gps_i2c_char_available()</a>, <a class="el" href="gps__ubx__i2c_8c_source.html#l00125">gps_i2c_check_free_space()</a>, <a class="el" href="gps__ubx__i2c_8c_source.html#l00164">gps_i2c_getch()</a>, <a class="el" href="gps__ubx__i2c_8c_source.html#l00143">gps_i2c_msg_ready()</a>, <a class="el" href="gps__ubx__i2c_8c_source.html#l00138">gps_i2c_put_byte()</a>, <a class="el" href="gps__ubx__i2c_8c_source.html#l00154">gps_i2c_tx_is_ready()</a>, <a class="el" href="gps__ubx__i2c_8c_source.html#l00096">gps_ubx_i2c_init()</a>, <a class="el" href="gps__ubx__i2c_8c_source.html#l00169">gps_ubx_i2c_periodic()</a>, <a class="el" href="gps__ubx__i2c_8c_source.html#l00208">gps_ubx_i2c_read_event()</a>, and <a class="el" href="gps__ubx__i2c_8h_source.html#l00101">GpsUbxi2cEvent()</a>.</p>
+<p>Referenced by <a class="el" href="gps__ubx__i2c_8c_source.html#l00150">gps_i2c_char_available()</a>, <a class="el" href="gps__ubx__i2c_8c_source.html#l00126">gps_i2c_check_free_space()</a>, <a class="el" href="gps__ubx__i2c_8c_source.html#l00165">gps_i2c_getch()</a>, <a class="el" href="gps__ubx__i2c_8c_source.html#l00144">gps_i2c_msg_ready()</a>, <a class="el" href="gps__ubx__i2c_8c_source.html#l00139">gps_i2c_put_byte()</a>, <a class="el" href="gps__ubx__i2c_8c_source.html#l00155">gps_i2c_tx_is_ready()</a>, <a class="el" href="gps__ubx__i2c_8c_source.html#l00097">gps_ubx_i2c_init()</a>, <a class="el" href="gps__ubx__i2c_8c_source.html#l00170">gps_ubx_i2c_periodic()</a>, <a class="el" href="gps__ubx__i2c_8c_source.html#l00209">gps_ubx_i2c_read_event()</a>, and <a class="el" href="gps__ubx__i2c_8h_source.html#l00101">GpsUbxi2cEvent()</a>.</p>
 
 </div>
 </div>
@@ -836,9 +847,9 @@ Variables</h2></td></tr>
 
 <p>ublox bytes to read </p>
 
-<p>Definition at line <a class="el" href="gps__ubx__i2c_8c_source.html#l00053">53</a> of file <a class="el" href="gps__ubx__i2c_8c_source.html">gps_ubx_i2c.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__i2c_8c_source.html#l00054">54</a> of file <a class="el" href="gps__ubx__i2c_8c_source.html">gps_ubx_i2c.c</a>.</p>
 
-<p>Referenced by <a class="el" href="gps__ubx__i2c_8c_source.html#l00208">gps_ubx_i2c_read_event()</a>.</p>
+<p>Referenced by <a class="el" href="gps__ubx__i2c_8c_source.html#l00209">gps_ubx_i2c_read_event()</a>.</p>
 
 </div>
 </div>
@@ -854,7 +865,7 @@ Variables</h2></td></tr>
 
 <p>ucenter finished configuring flag </p>
 
-<p>Definition at line <a class="el" href="gps__ubx__i2c_8c_source.html#l00052">52</a> of file <a class="el" href="gps__ubx__i2c_8c_source.html">gps_ubx_i2c.c</a>.</p>
+<p>Definition at line <a class="el" href="gps__ubx__i2c_8c_source.html#l00053">53</a> of file <a class="el" href="gps__ubx__i2c_8c_source.html">gps_ubx_i2c.c</a>.</p>
 
 </div>
 </div>
@@ -864,7 +875,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_5e5c455c6cc9b4955752fc2ddd0b9fff.html">gps</a></li><li class="navelem"><a class="el" href="gps__ubx__i2c_8c.html">gps_ubx_i2c.c</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:03:14 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:03:29 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -165,9 +165,9 @@ $(document).ready(function(){initNavTree('pprz__geodetic__wgs84_8h_source.html',
 <div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="group__math__geodetic__wgs84.html#ga8a5f4f94c58a37c5d62b6d80ed0653c6">   81</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> <a class="code" href="group__math__geodetic__wgs84.html#ga8a5f4f94c58a37c5d62b6d80ed0653c6">wgs84_ellipsoid_to_geoid_i</a>(<a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> lat, <a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> lon)</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;{</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keywordtype">float</span> x = (180.0f + (float)lon / 1e7) / 10.0f;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  Bound(x, 0.0f, 35.99999f);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  Bound(x, 0.0<a class="code" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a>, 35.99999<a class="code" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a>);</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keywordtype">float</span> y = (90.0f - (float)lat / 1e7) / 10.0f;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  Bound(y, 0.0f, 17.99999f);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  Bound(y, 0.0<a class="code" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a>, 17.99999<a class="code" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a>);</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> ex1 = (<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>) x;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> ex2 = ex1 + 1;</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keywordflow">if</span> (ex2 &gt;= 36) { ex2 = 0; }</div>
@@ -175,7 +175,7 @@ $(document).ready(function(){initNavTree('pprz__geodetic__wgs84_8h_source.html',
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> ey2 = ey1 + 1;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keywordtype">float</span> lin_x = x - ((float) ex1);</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keywordtype">float</span> lin_y = y - ((float) ey1);</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="keywordtype">float</span> h11 = (1.0f - lin_x) * (1.0f - lin_y) * <a class="code" href="group__math__geodetic__wgs84.html#ga308d77871a261ab445d3d5b1501e35eb">WGS84_H</a>(ex1, ey1);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="keywordtype">float</span> h11 = (1.0f - lin_x) * (1.0<a class="code" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a> - lin_y) * <a class="code" href="group__math__geodetic__wgs84.html#ga308d77871a261ab445d3d5b1501e35eb">WGS84_H</a>(ex1, ey1);</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keywordtype">float</span> h12 = lin_x * (1.0f - lin_y) * <a class="code" href="group__math__geodetic__wgs84.html#ga308d77871a261ab445d3d5b1501e35eb">WGS84_H</a>(ex2, ey1);</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keywordtype">float</span> h21 = (1.0f - lin_x) * lin_y * <a class="code" href="group__math__geodetic__wgs84.html#ga308d77871a261ab445d3d5b1501e35eb">WGS84_H</a>(ex1, ey2);</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keywordtype">float</span> h22 = lin_x * lin_y * <a class="code" href="group__math__geodetic__wgs84.html#ga308d77871a261ab445d3d5b1501e35eb">WGS84_H</a>(ex2, ey2);</div>
@@ -184,10 +184,10 @@ $(document).ready(function(){initNavTree('pprz__geodetic__wgs84_8h_source.html',
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
 <div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="group__math__geodetic__wgs84.html#ga982ac769d3c18ca65b364e0588874100">  106</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">float</span> <a class="code" href="group__math__geodetic__wgs84.html#ga982ac769d3c18ca65b364e0588874100">wgs84_ellipsoid_to_geoid_f</a>(<span class="keywordtype">float</span> lat, <span class="keywordtype">float</span> lon)</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;{</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <span class="keywordtype">float</span> x = (180.0f + DegOfRad(lon)) / 10.0f;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  Bound(x, 0.0f, 35.99999f);</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <span class="keywordtype">float</span> y = (90.0f - DegOfRad(lat)) / 10.0f;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  Bound(y, 0.0f, 17.99999f);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <span class="keywordtype">float</span> x = (180.0f + DegOfRad(lon)) / 10.0<a class="code" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a>;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  Bound(x, 0.0<a class="code" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a>, 35.99999<a class="code" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a>);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <span class="keywordtype">float</span> y = (90.0f - DegOfRad(lat)) / 10.0<a class="code" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a>;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  Bound(y, 0.0<a class="code" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a>, 17.99999<a class="code" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a>);</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> ex1 = (<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>) x;</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> ex2 = ex1 + 1;</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  <span class="keywordflow">if</span> (ex2 &gt;= 36) { ex2 = 0; }</div>
@@ -195,7 +195,7 @@ $(document).ready(function(){initNavTree('pprz__geodetic__wgs84_8h_source.html',
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> ey2 = ey1 + 1;</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <span class="keywordtype">float</span> lin_x = x - ((float) ex1);</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <span class="keywordtype">float</span> lin_y = y - ((float) ey1);</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="keywordtype">float</span> h11 = (1.0f - lin_x) * (1.0f - lin_y) * <a class="code" href="group__math__geodetic__wgs84.html#ga308d77871a261ab445d3d5b1501e35eb">WGS84_H</a>(ex1, ey1);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="keywordtype">float</span> h11 = (1.0f - lin_x) * (1.0<a class="code" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a> - lin_y) * <a class="code" href="group__math__geodetic__wgs84.html#ga308d77871a261ab445d3d5b1501e35eb">WGS84_H</a>(ex1, ey1);</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <span class="keywordtype">float</span> h12 = lin_x * (1.0f - lin_y) * <a class="code" href="group__math__geodetic__wgs84.html#ga308d77871a261ab445d3d5b1501e35eb">WGS84_H</a>(ex2, ey1);</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  <span class="keywordtype">float</span> h21 = (1.0f - lin_x) * lin_y * <a class="code" href="group__math__geodetic__wgs84.html#ga308d77871a261ab445d3d5b1501e35eb">WGS84_H</a>(ex1, ey2);</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  <span class="keywordtype">float</span> h22 = lin_x * lin_y * <a class="code" href="group__math__geodetic__wgs84.html#ga308d77871a261ab445d3d5b1501e35eb">WGS84_H</a>(ex2, ey2);</div>
@@ -211,6 +211,7 @@ $(document).ready(function(){initNavTree('pprz__geodetic__wgs84_8h_source.html',
 <div class="ttc" id="group__math__geodetic__wgs84_html_ga982ac769d3c18ca65b364e0588874100"><div class="ttname"><a href="group__math__geodetic__wgs84.html#ga982ac769d3c18ca65b364e0588874100">wgs84_ellipsoid_to_geoid_f</a></div><div class="ttdeci">static float wgs84_ellipsoid_to_geoid_f(float lat, float lon)</div><div class="ttdoc">Get WGS84 ellipsoid/geoid separation. </div><div class="ttdef"><b>Definition:</b> <a href="pprz__geodetic__wgs84_8h_source.html#l00106">pprz_geodetic_wgs84.h:106</a></div></div>
 <div class="ttc" id="group__math__geodetic__wgs84_html_ga32f71112e2ee2079c23de69bd1476f6d"><div class="ttname"><a href="group__math__geodetic__wgs84.html#ga32f71112e2ee2079c23de69bd1476f6d">pprz_geodetic_wgs84_int</a></div><div class="ttdeci">static const int8_t pprz_geodetic_wgs84_int[19][36]</div><div class="ttdef"><b>Definition:</b> <a href="pprz__geodetic__wgs84_8h_source.html#l00052">pprz_geodetic_wgs84.h:52</a></div></div>
 <div class="ttc" id="types_8h_html_a06896e8c53f721507066c079052171f8"><div class="ttname"><a href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a></div><div class="ttdeci">unsigned long uint32_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00018">types.h:18</a></div></div>
+<div class="ttc" id="wedgebug_8c_html_a05fd2dba3354a98f1a00b7c7ffc12b13"><div class="ttname"><a href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a></div><div class="ttdeci">uint16_t f</div><div class="ttdoc">Camera baseline, in meters (i.e. horizontal distance between the two cameras of the stereo setup) ...</div><div class="ttdef"><b>Definition:</b> <a href="wedgebug_8c_source.html#l00204">wedgebug.c:204</a></div></div>
 <div class="ttc" id="std_8h_html"><div class="ttname"><a href="std_8h.html">std.h</a></div></div>
 <div class="ttc" id="types_8h_html_a2ba621978a511250f7250fb10e05ffbe"><div class="ttname"><a href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a></div><div class="ttdeci">signed long int32_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00019">types.h:19</a></div></div>
 <div class="ttc" id="group__math__geodetic__wgs84_html_ga308d77871a261ab445d3d5b1501e35eb"><div class="ttname"><a href="group__math__geodetic__wgs84.html#ga308d77871a261ab445d3d5b1501e35eb">WGS84_H</a></div><div class="ttdeci">#define WGS84_H(x, y)</div><div class="ttdef"><b>Definition:</b> <a href="pprz__geodetic__wgs84_8h_source.html#l00074">pprz_geodetic_wgs84.h:74</a></div></div>
@@ -223,7 +224,7 @@ $(document).ready(function(){initNavTree('pprz__geodetic__wgs84_8h_source.html',
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_29343b6f5fcd4b75a5dfbb985ff56864.html">math</a></li><li class="navelem"><a class="el" href="pprz__geodetic__wgs84_8h.html">pprz_geodetic_wgs84.h</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:02:17 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:02:28 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

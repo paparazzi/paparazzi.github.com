@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -152,13 +152,13 @@ $(document).ready(function(){initNavTree('common__flight__plan_8c_source.html','
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <a class="code" href="common__flight__plan_8h.html#a9f3e30fbd9ad4c0bdc20d1dee3e43eb0">InitStage</a>();</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="common__flight__plan_8h.html#ac8f874fffc6c3c549774e84eaabeac0d">   51</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="common__flight__plan_8c.html#ad5b3972efdfb4b34574a534615be3db2">nav_goto_block</a>(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> b)</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="common__flight__plan_8h.html#ac8f874fffc6c3c549774e84eaabeac0d">   51</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="common__flight__plan_8c.html#ad5b3972efdfb4b34574a534615be3db2">nav_goto_block</a>(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="code" href="wedgebug_8c.html#a83fc1af92e29717b4513d121b0c72c7d">b</a>)</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordflow">if</span> (b != <a class="code" href="common__flight__plan_8c.html#a9bac2a1702848ebb785b932741bfa4be">nav_block</a>) { <span class="comment">/* To avoid a loop in a the current block */</span></div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="common__flight__plan_8c.html#a5d3ddba0962294e6c33573f86c4b1eec">last_block</a> = <a class="code" href="common__flight__plan_8c.html#a9bac2a1702848ebb785b932741bfa4be">nav_block</a>;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="common__flight__plan_8c.html#a731227193d590af31f6ab76fcd4f6543">last_stage</a> = <a class="code" href="common__flight__plan_8c.html#a0a51b60cbd4b84900c8898cfb1f25d49">nav_stage</a>;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  }</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <a class="code" href="common__flight__plan_8c.html#a9bac2a1702848ebb785b932741bfa4be">nav_block</a> = b;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <a class="code" href="common__flight__plan_8c.html#a9bac2a1702848ebb785b932741bfa4be">nav_block</a> = <a class="code" href="wedgebug_8c.html#a83fc1af92e29717b4513d121b0c72c7d">b</a>;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <a class="code" href="common__flight__plan_8c.html#aa3cbfa3c23e459645a8e67b1bb4a1bef">nav_init_block</a>();</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
 <div class="ttc" id="common__flight__plan_8c_html_ae3eebf6396d9b2539b27b9477c46724d"><div class="ttname"><a href="common__flight__plan_8c.html#ae3eebf6396d9b2539b27b9477c46724d">block_time</a></div><div class="ttdeci">uint16_t block_time</div><div class="ttdef"><b>Definition:</b> <a href="common__flight__plan_8c_source.html#l00033">common_flight_plan.c:33</a></div></div>
@@ -167,6 +167,7 @@ $(document).ready(function(){initNavTree('common__flight__plan_8c_source.html','
 <div class="ttc" id="common__flight__plan_8h_html_a9f3e30fbd9ad4c0bdc20d1dee3e43eb0"><div class="ttname"><a href="common__flight__plan_8h.html#a9f3e30fbd9ad4c0bdc20d1dee3e43eb0">InitStage</a></div><div class="ttdeci">#define InitStage()</div><div class="ttdef"><b>Definition:</b> <a href="common__flight__plan_8h_source.html#l00044">common_flight_plan.h:44</a></div></div>
 <div class="ttc" id="common__flight__plan_8c_html_a9bac2a1702848ebb785b932741bfa4be"><div class="ttname"><a href="common__flight__plan_8c.html#a9bac2a1702848ebb785b932741bfa4be">nav_block</a></div><div class="ttdeci">uint8_t nav_block</div><div class="ttdef"><b>Definition:</b> <a href="common__flight__plan_8c_source.html#l00035">common_flight_plan.c:35</a></div></div>
 <div class="ttc" id="common__flight__plan_8c_html_aa3cbfa3c23e459645a8e67b1bb4a1bef"><div class="ttname"><a href="common__flight__plan_8c.html#aa3cbfa3c23e459645a8e67b1bb4a1bef">nav_init_block</a></div><div class="ttdeci">void nav_init_block(void)</div><div class="ttdef"><b>Definition:</b> <a href="common__flight__plan_8c_source.html#l00041">common_flight_plan.c:41</a></div></div>
+<div class="ttc" id="wedgebug_8c_html_a83fc1af92e29717b4513d121b0c72c7d"><div class="ttname"><a href="wedgebug_8c.html#a83fc1af92e29717b4513d121b0c72c7d">b</a></div><div class="ttdeci">float b</div><div class="ttdef"><b>Definition:</b> <a href="wedgebug_8c_source.html#l00202">wedgebug.c:202</a></div></div>
 <div class="ttc" id="common__flight__plan_8c_html_ac9b0a7aa731d9b8755a79251720cf9e0"><div class="ttname"><a href="common__flight__plan_8c.html#ac9b0a7aa731d9b8755a79251720cf9e0">stage_time</a></div><div class="ttdeci">uint16_t stage_time</div><div class="ttdoc">In s. </div><div class="ttdef"><b>Definition:</b> <a href="common__flight__plan_8c_source.html#l00033">common_flight_plan.c:33</a></div></div>
 <div class="ttc" id="common__flight__plan_8c_html_a0a51b60cbd4b84900c8898cfb1f25d49"><div class="ttname"><a href="common__flight__plan_8c.html#a0a51b60cbd4b84900c8898cfb1f25d49">nav_stage</a></div><div class="ttdeci">uint8_t nav_stage</div><div class="ttdef"><b>Definition:</b> <a href="common__flight__plan_8c_source.html#l00035">common_flight_plan.c:35</a></div></div>
 <div class="ttc" id="types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00014">types.h:14</a></div></div>
@@ -179,7 +180,7 @@ $(document).ready(function(){initNavTree('common__flight__plan_8c_source.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_8a28edc49a666abb23d4888eaf71220c.html">navigation</a></li><li class="navelem"><a class="el" href="common__flight__plan_8c.html">common_flight_plan.c</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:02:37 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:02:49 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

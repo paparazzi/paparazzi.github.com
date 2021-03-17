@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -178,7 +178,7 @@ $(document).ready(function(){initNavTree('l3g4200_8h_source.html','');});
 <div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="l3g4200_8h.html">   73</a></span>&#160;  <span class="keyword">union </span>{</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">struct </span><a class="code" href="group__math__algebra__int.html#structInt32Rates">Int32Rates</a> rates;          </div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> value[3];                 </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  } <a class="code" href="l3g4200_8h.html#aa2b0e5514b7a6b82362f083ba1fe6e39">data</a>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  } <a class="code" href="l3g4200_8h.html#a7ca7302f8cbb05cc226756c04f21a91e">data</a>;</div>
 <div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="l3g4200_8h.html#a5e676045bac453aa30e0c2072bc252a9">   77</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="l3g4200_8h.html#structL3g4200Config">L3g4200Config</a> <a class="code" href="l3g4200_8h.html#a5e676045bac453aa30e0c2072bc252a9">config</a>;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;};</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
@@ -205,12 +205,12 @@ $(document).ready(function(){initNavTree('l3g4200_8h_source.html','');});
 <div class="ttc" id="l3g4200_8h_html_aa227b9026f3d2693889a27a753f5d5d1a046143b5ae5413b4b9a6891bf4d0936d"><div class="ttname"><a href="l3g4200_8h.html#aa227b9026f3d2693889a27a753f5d5d1a046143b5ae5413b4b9a6891bf4d0936d">L3G_CONF_REG1</a></div><div class="ttdef"><b>Definition:</b> <a href="l3g4200_8h_source.html#l00061">l3g4200.h:61</a></div></div>
 <div class="ttc" id="l3g4200_8h_html_aa78509836bbf5a035172dc6da198b26d"><div class="ttname"><a href="l3g4200_8h.html#aa78509836bbf5a035172dc6da198b26d">l3g4200_init</a></div><div class="ttdeci">void l3g4200_init(struct L3g4200 *l3g, struct i2c_periph *i2c_p, uint8_t i2c_address)</div><div class="ttdoc">Initialize L3g4200 struct and set default config options. </div><div class="ttdef"><b>Definition:</b> <a href="l3g4200_8c_source.html#l00047">l3g4200.c:47</a></div></div>
 <div class="ttc" id="l3g4200_8h_html_a04567c5211452c8a7be46d598b33aa84"><div class="ttname"><a href="l3g4200_8h.html#a04567c5211452c8a7be46d598b33aa84">l3g4200_start_configure</a></div><div class="ttdeci">void l3g4200_start_configure(struct L3g4200 *l3g)</div><div class="ttdef"><b>Definition:</b> <a href="l3g4200_8c_source.html#l00093">l3g4200.c:93</a></div></div>
-<div class="ttc" id="l3g4200_8h_html_aa2b0e5514b7a6b82362f083ba1fe6e39"><div class="ttname"><a href="l3g4200_8h.html#aa2b0e5514b7a6b82362f083ba1fe6e39">L3g4200::data</a></div><div class="ttdeci">union L3g4200::@318 data</div></div>
 <div class="ttc" id="l3g4200_8h_html_aa227b9026f3d2693889a27a753f5d5d1a14098b8966fafd71e8b1578c3de2f562"><div class="ttname"><a href="l3g4200_8h.html#aa227b9026f3d2693889a27a753f5d5d1a14098b8966fafd71e8b1578c3de2f562">L3G_CONF_DONE</a></div><div class="ttdef"><b>Definition:</b> <a href="l3g4200_8h_source.html#l00064">l3g4200.h:64</a></div></div>
 <div class="ttc" id="l3g4200_8h_html_a5e676045bac453aa30e0c2072bc252a9"><div class="ttname"><a href="l3g4200_8h.html#a5e676045bac453aa30e0c2072bc252a9">L3g4200::config</a></div><div class="ttdeci">struct L3g4200Config config</div><div class="ttdef"><b>Definition:</b> <a href="l3g4200_8h_source.html#l00077">l3g4200.h:77</a></div></div>
 <div class="ttc" id="l3g4200_8h_html_a0bc770c43c3438d6ddf25a05aa2cc572"><div class="ttname"><a href="l3g4200_8h.html#a0bc770c43c3438d6ddf25a05aa2cc572">l3g4200_periodic</a></div><div class="ttdeci">static void l3g4200_periodic(struct L3g4200 *l3g)</div><div class="ttdoc">convenience function: read or start configuration if not already initialized </div><div class="ttdef"><b>Definition:</b> <a href="l3g4200_8h_source.html#l00088">l3g4200.h:88</a></div></div>
 <div class="ttc" id="l3g4200_8h_html_structL3g4200Config"><div class="ttname"><a href="l3g4200_8h.html#structL3g4200Config">L3g4200Config</a></div><div class="ttdef"><b>Definition:</b> <a href="l3g4200_8h_source.html#l00052">l3g4200.h:52</a></div></div>
 <div class="ttc" id="l3g4200_8h_html_aa227b9026f3d2693889a27a753f5d5d1a0d6decaf2e866985fa08a185a5da4c65"><div class="ttname"><a href="l3g4200_8h.html#aa227b9026f3d2693889a27a753f5d5d1a0d6decaf2e866985fa08a185a5da4c65">L3G_CONF_UNINIT</a></div><div class="ttdef"><b>Definition:</b> <a href="l3g4200_8h_source.html#l00060">l3g4200.h:60</a></div></div>
+<div class="ttc" id="l3g4200_8h_html_a7ca7302f8cbb05cc226756c04f21a91e"><div class="ttname"><a href="l3g4200_8h.html#a7ca7302f8cbb05cc226756c04f21a91e">L3g4200::data</a></div><div class="ttdeci">union L3g4200::@320 data</div></div>
 <div class="ttc" id="l3g4200_8h_html_a98a6955be50d60c5afde8a6e87dd8373"><div class="ttname"><a href="l3g4200_8h.html#a98a6955be50d60c5afde8a6e87dd8373">l3g4200_read</a></div><div class="ttdeci">void l3g4200_read(struct L3g4200 *l3g)</div><div class="ttdef"><b>Definition:</b> <a href="l3g4200_8c_source.html#l00104">l3g4200.c:104</a></div></div>
 <div class="ttc" id="l3g4200_8h_html_a19ef67fd6d9b2fa9697972356746f902"><div class="ttname"><a href="l3g4200_8h.html#a19ef67fd6d9b2fa9697972356746f902">L3g4200::initialized</a></div><div class="ttdeci">bool initialized</div><div class="ttdoc">config done flag </div><div class="ttdef"><b>Definition:</b> <a href="l3g4200_8h_source.html#l00070">l3g4200.h:70</a></div></div>
 <div class="ttc" id="l3g4200_8h_html_a7e995b22d36842f87bb9f027df8d09b4"><div class="ttname"><a href="l3g4200_8h.html#a7e995b22d36842f87bb9f027df8d09b4">L3g4200::init_status</a></div><div class="ttdeci">enum L3g4200ConfStatus init_status</div><div class="ttdoc">init status </div><div class="ttdef"><b>Definition:</b> <a href="l3g4200_8h_source.html#l00071">l3g4200.h:71</a></div></div>
@@ -238,7 +238,7 @@ $(document).ready(function(){initNavTree('l3g4200_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_0a48ba2c0a76794adfddddc873522f67.html">peripherals</a></li><li class="navelem"><a class="el" href="l3g4200_8h.html">l3g4200.h</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:02:31 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:02:43 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

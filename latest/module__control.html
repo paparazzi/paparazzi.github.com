@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -112,13 +112,7 @@ $(document).ready(function(){initNavTree('module__control.html','');});
 <h1><a class="anchor" id="module_load_example__control"></a>
 Example for airframe file</h1>
 <p>Add to your firmware section: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;module name=&quot;control&quot;/&gt;</div>
-</div><!-- fragment --> <h1><a class="anchor" id="autoloads__control"></a>
-Auto-loaded modules</h1>
-<p>The following modules are automatically loaded (just as if you had added them in the airframe file)</p><ul>
-<li><a class="el" href="module__stabilization_attitude_fw.html">stabilization_attitude_fw module</a></li>
-<li><a class="el" href="module__guidance_basic_fw.html">guidance_basic_fw module</a> </li>
-</ul>
-<h1><a class="anchor" id="files"></a>
+</div><!-- fragment --> <h1><a class="anchor" id="files"></a>
 Files</h1>
 <h2><a class="anchor" id="module_xml__control"></a>
 Raw control.xml file:</h2>
@@ -133,9 +127,10 @@ Raw control.xml file:</h2>
 <div class="line">      - guidance_basic_fw</div>
 <div class="line">    &lt;/description&gt;</div>
 <div class="line">  &lt;/doc&gt;</div>
-<div class="line">  &lt;autoload name=&quot;stabilization_attitude_fw&quot;/&gt;</div>
-<div class="line">  &lt;autoload name=&quot;guidance_basic_fw&quot;/&gt;</div>
-<div class="line">  &lt;makefile target=&quot;ap|sim|nps&quot; firmware=&quot;fixedwing&quot;/&gt;</div>
+<div class="line">  &lt;dep&gt;</div>
+<div class="line">    &lt;depends&gt;stabilization_attitude_fw,guidance_basic_fw&lt;/depends&gt;</div>
+<div class="line">  &lt;/dep&gt;</div>
+<div class="line">  &lt;makefile target=&quot;ap|sim|nps|hitl&quot; firmware=&quot;fixedwing&quot;/&gt;</div>
 <div class="line">&lt;/module&gt;</div>
 </div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- doc-content -->
@@ -143,7 +138,7 @@ Raw control.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:03:41 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:03:59 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

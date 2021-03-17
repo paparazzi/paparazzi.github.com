@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -208,13 +208,14 @@ $(document).ready(function(){initNavTree('globals_defs_r.html','');});
 : <a class="el" href="nps__radio__control_8c.html#aeeb05a7b9bdc76eaf2dcdec93e57f61b">nps_radio_control.c</a>
 </li>
 <li>RADIO_CONTROL_NB_CHANNEL
-: <a class="el" href="sbus__common_8h.html#a1beed9c63b07301d72b3516543545652">sbus_common.h</a>
+: <a class="el" href="rc__datalink_8h.html#a1beed9c63b07301d72b3516543545652">rc_datalink.h</a>
+, <a class="el" href="sbus__common_8h.html#a1beed9c63b07301d72b3516543545652">sbus_common.h</a>
 , <a class="el" href="spektrum__radio_8h.html#a1beed9c63b07301d72b3516543545652">spektrum_radio.h</a>
 , <a class="el" href="superbitrf__rc_8h.html#a1beed9c63b07301d72b3516543545652">superbitrf_rc.h</a>
 , <a class="el" href="intermcu__ap_8h.html#a1beed9c63b07301d72b3516543545652">intermcu_ap.h</a>
+, <a class="el" href="cc2500__paparazzi_8h.html#a1beed9c63b07301d72b3516543545652">cc2500_paparazzi.h</a>
 , <a class="el" href="hott__common_8h.html#a1beed9c63b07301d72b3516543545652">hott_common.h</a>
 , <a class="el" href="ppm_8h.html#a1beed9c63b07301d72b3516543545652">ppm.h</a>
-, <a class="el" href="rc__datalink_8h.html#a1beed9c63b07301d72b3516543545652">rc_datalink.h</a>
 </li>
 <li>RADIO_CONTROL_POWER_OFF
 : <a class="el" href="opa__ftd__1_80_8h.html#ac3a85dd998d6a9692605087f79413899">opa_ftd_1.0.h</a>
@@ -267,10 +268,10 @@ $(document).ready(function(){initNavTree('globals_defs_r.html','');});
 , <a class="el" href="superbitrf__rc_8h.html#a2fab1464ab1748edb2a45a08cf7c422a">superbitrf_rc.h</a>
 </li>
 <li>RADIO_PITCH
-: <a class="el" href="rc__datalink_8h.html#a8e61ffe584bf24170117b9fcb2da4023">rc_datalink.h</a>
+: <a class="el" href="intermcu__ap_8h.html#a8e61ffe584bf24170117b9fcb2da4023">intermcu_ap.h</a>
+, <a class="el" href="rc__datalink_8h.html#a8e61ffe584bf24170117b9fcb2da4023">rc_datalink.h</a>
 , <a class="el" href="spektrum__radio_8h.html#a8e61ffe584bf24170117b9fcb2da4023">spektrum_radio.h</a>
 , <a class="el" href="superbitrf__rc_8h.html#a8e61ffe584bf24170117b9fcb2da4023">superbitrf_rc.h</a>
-, <a class="el" href="intermcu__ap_8h.html#a8e61ffe584bf24170117b9fcb2da4023">intermcu_ap.h</a>
 </li>
 <li>RADIO_ROLL
 : <a class="el" href="intermcu__ap_8h.html#ae59b042496b1debe96e1d98fbc3e4b1f">intermcu_ap.h</a>
@@ -291,7 +292,8 @@ $(document).ready(function(){initNavTree('globals_defs_r.html','');});
 , <a class="el" href="superbitrf__rc_8h.html#a0a504ca751f60fabf7900b13916561a6">superbitrf_rc.h</a>
 </li>
 <li>RadioControlEvent
-: <a class="el" href="dummy_8h.html#a48c5aff514f8ac1ab891bb12b748922b">dummy.h</a>
+: <a class="el" href="cc2500__paparazzi_8h.html#a48c5aff514f8ac1ab891bb12b748922b">cc2500_paparazzi.h</a>
+, <a class="el" href="dummy_8h.html#a48c5aff514f8ac1ab891bb12b748922b">dummy.h</a>
 , <a class="el" href="hott__common_8h.html#a48c5aff514f8ac1ab891bb12b748922b">hott_common.h</a>
 , <a class="el" href="ppm_8h.html#a48c5aff514f8ac1ab891bb12b748922b">ppm.h</a>
 , <a class="el" href="rc__datalink_8h.html#a48c5aff514f8ac1ab891bb12b748922b">rc_datalink.h</a>
@@ -346,6 +348,18 @@ $(document).ready(function(){initNavTree('globals_defs_r.html','');});
 </li>
 <li>RANGE_FORCEFIELD_RECIEVE_ID
 : <a class="el" href="range__forcefield_8c.html#a448a88eefeb3bcd5769b299cb4a6c1e3">range_forcefield.c</a>
+</li>
+<li>RANGE_LIMIT_DISABLED
+: <a class="el" href="tfmini__i2c_8c.html#a4109f92df2764650a22bf2f7d57fea1e">tfmini_i2c.c</a>
+</li>
+<li>RANGE_LIMIT_ENABLED
+: <a class="el" href="tfmini__i2c_8c.html#aaf4b1acabe65273b36d473e9a27eee62">tfmini_i2c.c</a>
+</li>
+<li>RANGE_OUTPUT_LIMIT_THRESHOLD_REG_ADDR_H
+: <a class="el" href="tfmini__i2c_8c.html#a70e3553d47a5e60309951f3ee4c574cb">tfmini_i2c.c</a>
+</li>
+<li>RANGE_OUTPUT_LIMIT_THRESHOLD_REG_ADDR_L
+: <a class="el" href="tfmini__i2c_8c.html#a80f1f37141285ab5337e57792dabe084">tfmini_i2c.c</a>
 </li>
 <li>RATE_BFP_OF_REAL
 : <a class="el" href="group__math__algebra__int.html#ga986eabb558dbd92f341c7e26480f1124">pprz_algebra_int.h</a>
@@ -413,8 +427,41 @@ $(document).ready(function(){initNavTree('globals_defs_r.html','');});
 <li>RC1
 : <a class="el" href="chimera_2chibios_2v1_80_2board_8h.html#a66957649eb1a6390fa591764c8532e15">board.h</a>
 </li>
+<li>RC1_TIM
+: <a class="el" href="mateksys_2F765-WING_2board_8h.html#a88d1c1c3d98a3f83d6873f92df815b12">board.h</a>
+</li>
+<li>RC1_TIM_AF
+: <a class="el" href="mateksys_2F765-WING_2board_8h.html#af948e9a8a4ea701909bf4f274aecc476">board.h</a>
+</li>
+<li>RC1_TIM_CH
+: <a class="el" href="mateksys_2F765-WING_2board_8h.html#a22ed7c69fe5b268a3ff5156aeea95cba">board.h</a>
+</li>
+<li>RC1_TIM_FN
+: <a class="el" href="mateksys_2F765-WING_2board_8h.html#a6f142d5682fd8430bac1a72eec6bf4e4">board.h</a>
+</li>
+<li>RC1_UART
+: <a class="el" href="nucleo_2144__f767zi_2board_8h.html#a47e9c29f39fd317e89b9fb05d0b4eae5">board.h</a>
+</li>
 <li>RC1_UART4_RX
 : <a class="el" href="chimera_2chibios_2v1_80_2board_8h.html#a09e19504f72d0db3c726a7b731349a6a">board.h</a>
+</li>
+<li>RC1_UART_AF
+: <a class="el" href="nucleo_2144__f767zi_2board_8h.html#ab85a39682cb6dad2e631dc3ab923891e">board.h</a>
+</li>
+<li>RC1_UART_FN
+: <a class="el" href="nucleo_2144__f767zi_2board_8h.html#a0b48fb055b827f15fe3b2ffec125f655">board.h</a>
+</li>
+<li>RC1_USART
+: <a class="el" href="mateksys_2F765-WING_2board_8h.html#a6e37ddf090e84b240e7b7bf2bc612021">board.h</a>
+</li>
+<li>RC1_USART_AF
+: <a class="el" href="mateksys_2F765-WING_2board_8h.html#af12a289bc3044c0f1e5532a584a23ee7">board.h</a>
+</li>
+<li>RC1_USART_FN
+: <a class="el" href="mateksys_2F765-WING_2board_8h.html#ac293326e1dd58fb587b3d587442ee447">board.h</a>
+</li>
+<li>RC2
+: <a class="el" href="mateksys_2F765-WING_2board_8h.html#af8ba42765acb4065b99df6a29ad65cf2">board.h</a>
 </li>
 <li>RC2_POLARITY_GPIO_PIN
 : <a class="el" href="sbus__dual_8c.html#a644ff95fa518be1d525f8f1b40e23282">sbus_dual.c</a>
@@ -422,11 +469,56 @@ $(document).ready(function(){initNavTree('globals_defs_r.html','');});
 <li>RC2_POLARITY_GPIO_PORT
 : <a class="el" href="sbus__dual_8c.html#aaa01bd454b74583dd08f4a33b8b35506">sbus_dual.c</a>
 </li>
+<li>RC2_TIM
+: <a class="el" href="mateksys_2F765-WING_2board_8h.html#a7d99384533cc8c08f565a5f2a1bbf080">board.h</a>
+</li>
+<li>RC2_TIM_AF
+: <a class="el" href="mateksys_2F765-WING_2board_8h.html#a641a34a51cc1047965fe9e5034f42b1c">board.h</a>
+</li>
+<li>RC2_TIM_CH
+: <a class="el" href="mateksys_2F765-WING_2board_8h.html#a1cfcf23e0586934d96ce0835f9b19fe2">board.h</a>
+</li>
+<li>RC2_TIM_FN
+: <a class="el" href="mateksys_2F765-WING_2board_8h.html#a8d86645bb402a2a114f10a39ca2b356d">board.h</a>
+</li>
 <li>RC2_UART7_RX
 : <a class="el" href="chimera_2chibios_2v1_80_2board_8h.html#a4e0073c8980959c86b42de4d6df199ff">board.h</a>
 </li>
+<li>RC2_USART
+: <a class="el" href="mateksys_2F765-WING_2board_8h.html#a3a9c140fe6c1ad026b8d02f2c7096225">board.h</a>
+</li>
+<li>RC2_USART_AF
+: <a class="el" href="mateksys_2F765-WING_2board_8h.html#ab4552635e623b5b517015493eecb1bb4">board.h</a>
+</li>
+<li>RC2_USART_FN
+: <a class="el" href="mateksys_2F765-WING_2board_8h.html#a22f1b2491b95c7b324b29da93d87f4e9">board.h</a>
+</li>
 <li>RC_AVG_PERIOD
 : <a class="el" href="radio__control_8h.html#adb1604ef051d981df6de90b770a9ef19">radio_control.h</a>
+</li>
+<li>RC_CHANNEL_COUNT_FRSKY_D
+: <a class="el" href="cc2500__frsky__d_8h.html#a824fb8130d9a96293957b22db08713f2">cc2500_frsky_d.h</a>
+</li>
+<li>RC_CHANNEL_COUNT_FRSKY_X
+: <a class="el" href="cc2500__frsky__x_8h.html#a0a92ce2d56739c0fa719bf7bbe5f0594">cc2500_frsky_x.h</a>
+</li>
+<li>RC_CHANNEL_FLIP
+: <a class="el" href="cc2500__rx__spi_8h.html#ab005fdbd7818fbc2482a4c31ee5ebad6">cc2500_rx_spi.h</a>
+</li>
+<li>RC_CHANNEL_HEADLESS
+: <a class="el" href="cc2500__rx__spi_8h.html#a9fcf0cc628f3db8a2819d160267dc01e">cc2500_rx_spi.h</a>
+</li>
+<li>RC_CHANNEL_PICTURE
+: <a class="el" href="cc2500__rx__spi_8h.html#ac5af184507bc7f9355439407719ea818">cc2500_rx_spi.h</a>
+</li>
+<li>RC_CHANNEL_RATE
+: <a class="el" href="cc2500__rx__spi_8h.html#a1a11aed6c7fd79d1d6c2f95f3760ad96">cc2500_rx_spi.h</a>
+</li>
+<li>RC_CHANNEL_RTH
+: <a class="el" href="cc2500__rx__spi_8h.html#ab0a858c32338b705a2205e441e5d6678">cc2500_rx_spi.h</a>
+</li>
+<li>RC_CHANNEL_VIDEO
+: <a class="el" href="cc2500__rx__spi_8h.html#aac8f85fbbebac3d884dd4c164596679e">cc2500_rx_spi.h</a>
 </li>
 <li>RC_CHANNELS
 : <a class="el" href="mavlink_8c.html#aad403df27c4671b0787f75525ee666ad">mavlink.c</a>
@@ -468,37 +560,41 @@ $(document).ready(function(){initNavTree('globals_defs_r.html','');});
 , <a class="el" href="cc3d_8h.html#a462afa775c7f9b0844c9c1933976efe0">cc3d.h</a>
 , <a class="el" href="openpilot__revo__nano_8h.html#a462afa775c7f9b0844c9c1933976efe0">openpilot_revo_nano.h</a>
 , <a class="el" href="px4fmu__4_80_8h.html#a462afa775c7f9b0844c9c1933976efe0">px4fmu_4.0.h</a>
-, <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a462afa775c7f9b0844c9c1933976efe0">board.h</a>
 , <a class="el" href="sbus_8c.html#a462afa775c7f9b0844c9c1933976efe0">sbus.c</a>
 , <a class="el" href="sbus__dual_8c.html#a462afa775c7f9b0844c9c1933976efe0">sbus_dual.c</a>
 </li>
 <li>RC_POLARITY_GPIO_PORT
-: <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a0391a78ae3f30e6308e3bef30963823b">board.h</a>
+: <a class="el" href="px4fmu__4_80_8h.html#a0391a78ae3f30e6308e3bef30963823b">px4fmu_4.0.h</a>
+, <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a0391a78ae3f30e6308e3bef30963823b">board.h</a>
 , <a class="el" href="apogee__1_80_8h.html#a0391a78ae3f30e6308e3bef30963823b">apogee_1.0.h</a>
 , <a class="el" href="cc3d_8h.html#a0391a78ae3f30e6308e3bef30963823b">cc3d.h</a>
 , <a class="el" href="openpilot__revo__nano_8h.html#a0391a78ae3f30e6308e3bef30963823b">openpilot_revo_nano.h</a>
-, <a class="el" href="px4fmu__4_80_8h.html#a0391a78ae3f30e6308e3bef30963823b">px4fmu_4.0.h</a>
-, <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a0391a78ae3f30e6308e3bef30963823b">board.h</a>
 , <a class="el" href="sbus_8c.html#a0391a78ae3f30e6308e3bef30963823b">sbus.c</a>
 , <a class="el" href="sbus__dual_8c.html#a0391a78ae3f30e6308e3bef30963823b">sbus_dual.c</a>
 </li>
 <li>RC_PPM_SIGNED_TICKS_OF_USEC
-: <a class="el" href="chibios_2subsystems_2radio__control_2ppm__arch_8h.html#a89dbcbaebdf3485e1fdecc29fb6f16db">ppm_arch.h</a>
+: <a class="el" href="lpc21_2subsystems_2radio__control_2ppm__arch_8h.html#a89dbcbaebdf3485e1fdecc29fb6f16db">ppm_arch.h</a>
+, <a class="el" href="cc2500__paparazzi_8h.html#ab60f6bbc326addf63715d164966694ce">cc2500_paparazzi.h</a>
 , <a class="el" href="hott__common_8h.html#a89dbcbaebdf3485e1fdecc29fb6f16db">hott_common.h</a>
 , <a class="el" href="sbus__common_8h.html#a89dbcbaebdf3485e1fdecc29fb6f16db">sbus_common.h</a>
 </li>
 <li>RC_PPM_TICKS_OF_USEC
-: <a class="el" href="chibios_2subsystems_2radio__control_2ppm__arch_8h.html#aad33b862bb6166593e16a30779799b51">ppm_arch.h</a>
-, <a class="el" href="hott__common_8h.html#aad33b862bb6166593e16a30779799b51">hott_common.h</a>
+: <a class="el" href="sim_2subsystems_2radio__control_2ppm__arch_8h.html#a401eb5530d1ad24e91318ed96e0dfbbe">ppm_arch.h</a>
 , <a class="el" href="sbus__common_8h.html#aad33b862bb6166593e16a30779799b51">sbus_common.h</a>
+, <a class="el" href="chibios_2subsystems_2radio__control_2ppm__arch_8h.html#aad33b862bb6166593e16a30779799b51">ppm_arch.h</a>
+, <a class="el" href="cc2500__paparazzi_8h.html#a401eb5530d1ad24e91318ed96e0dfbbe">cc2500_paparazzi.h</a>
+, <a class="el" href="hott__common_8h.html#aad33b862bb6166593e16a30779799b51">hott_common.h</a>
 </li>
 <li>RC_PPM_TICKS_PER_USEC
-: <a class="el" href="stm32_2subsystems_2radio__control_2ppm__arch_8h.html#a80e7b8968c15db17c6f362802e0cce05">ppm_arch.h</a>
+: <a class="el" href="lia_2chibios_2v1_81_2board_8h.html#a80e7b8968c15db17c6f362802e0cce05">board.h</a>
+, <a class="el" href="stm32_2subsystems_2radio__control_2ppm__arch_8h.html#a80e7b8968c15db17c6f362802e0cce05">ppm_arch.h</a>
 , <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a80e7b8968c15db17c6f362802e0cce05">board.h</a>
 , <a class="el" href="chimera_8h.html#a80e7b8968c15db17c6f362802e0cce05">chimera.h</a>
-, <a class="el" href="lia_2chibios_2v1_81_2board_8h.html#a80e7b8968c15db17c6f362802e0cce05">board.h</a>
+, <a class="el" href="lisa__mx_2chibios_2v2_81_2board_8h.html#a80e7b8968c15db17c6f362802e0cce05">board.h</a>
+, <a class="el" href="matekF765-WING_8h.html#a80e7b8968c15db17c6f362802e0cce05">matekF765-WING.h</a>
+, <a class="el" href="nucleo144__f767zi_8h.html#a80e7b8968c15db17c6f362802e0cce05">nucleo144_f767zi.h</a>
+, <a class="el" href="px4fmu_2chibios_2v2_84_2board_8h.html#a80e7b8968c15db17c6f362802e0cce05">board.h</a>
 , <a class="el" href="tawaki_8h.html#a80e7b8968c15db17c6f362802e0cce05">tawaki.h</a>
-, <a class="el" href="vms__ecu_2chibios_2v1_80_2board_8h.html#a80e7b8968c15db17c6f362802e0cce05">board.h</a>
 </li>
 <li>RC_REALLY_LOST
 : <a class="el" href="radio__control_8h.html#a49d0c23f0651ada64ce2cfb001f7c47c">radio_control.h</a>
@@ -740,7 +836,8 @@ $(document).ready(function(){initNavTree('globals_defs_r.html','');});
 : <a class="el" href="vl53l1x__api_8h.html#a279ad59723f100caf9bf056bbde528fa">vl53l1x_api.h</a>
 </li>
 <li>ROLL_RATE_DEADBAND_EXCEEDED
-: <a class="el" href="stabilization__rate_8c.html#aa6b12451b039befdc1fce7c6b5fd10cb">stabilization_rate.c</a>
+: <a class="el" href="stabilization__rate__indi_8c.html#aa6b12451b039befdc1fce7c6b5fd10cb">stabilization_rate_indi.c</a>
+, <a class="el" href="stabilization__rate_8c.html#aa6b12451b039befdc1fce7c6b5fd10cb">stabilization_rate.c</a>
 </li>
 <li>ROLL_STICK_CENTERED
 : <a class="el" href="rotorcraft_2autopilot__rc__helpers_8h.html#a4283b5e77477e4c499cfba6c902cdea7">autopilot_rc_helpers.h</a>
@@ -811,11 +908,26 @@ $(document).ready(function(){initNavTree('globals_defs_r.html','');});
 <li>RPM_SENSOR_ID
 : <a class="el" href="abi__sender__ids_8h.html#a366120cccd504b29f24896cee4cccf57">abi_sender_ids.h</a>
 </li>
+<li>RSSI
+: <a class="el" href="mateksys_2F765-WING_2board_8h.html#a91888bdc573835ec5a22972f6c7d69ba">board.h</a>
+</li>
+<li>RSSI_ADC
+: <a class="el" href="mateksys_2F765-WING_2board_8h.html#abd636939af0d0f352271334fb41fcee0">board.h</a>
+</li>
+<li>RSSI_ADC_FN
+: <a class="el" href="mateksys_2F765-WING_2board_8h.html#a4efea25c5ff57847018a5a35522094b4">board.h</a>
+</li>
+<li>RSSI_ADC_IN
+: <a class="el" href="mateksys_2F765-WING_2board_8h.html#ae565127d9386fb94bdaa27c5e6856a72">board.h</a>
+</li>
 <li>RSSI_BLUEGIGA_ID
 : <a class="el" href="abi__sender__ids_8h.html#af646ed1faa469ec469c3fd37b354b7db">abi_sender_ids.h</a>
 </li>
 <li>RSSI_IN
 : <a class="el" href="px4fmu_2chibios_2v4_80_2board_8h.html#a29bbdfc9ae03b588e7b6508364ea674e">board.h</a>
+</li>
+<li>RSSI_SAMPLE_COUNT
+: <a class="el" href="cc2500__rx_8c.html#a2d251852a6c559c527cb2ccd6b83287f">cc2500_rx.c</a>
 </li>
 <li>RssiOfSender
 : <a class="el" href="bluegiga_8c.html#acbfc9b1d908a27ff68790bdc6f271742">bluegiga.c</a>
@@ -976,6 +1088,12 @@ $(document).ready(function(){initNavTree('globals_defs_r.html','');});
 <li>RX2_POL
 : <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a6aba486a472846ed9ad7015860cd8ca3">board.h</a>
 </li>
+<li>RX_LOSS_COUNT
+: <a class="el" href="cc2500__rx__spi__common_8h.html#ac02ee80bf21b16bd87573251b5273db6">cc2500_rx_spi_common.h</a>
+</li>
+<li>RX_SPI_MAX_PAYLOAD_SIZE
+: <a class="el" href="cc2500__compat_8h.html#aa166e502e3b7569b8f32f71d9ad29203">cc2500_compat.h</a>
+</li>
 <li>RXBUF_BASE
 : <a class="el" href="w5100_8c.html#a0b61d617d075e2e171480bd2839bf93f">w5100.c</a>
 </li>
@@ -994,13 +1112,16 @@ $(document).ready(function(){initNavTree('globals_defs_r.html','');});
 <li>RXMIS
 : <a class="el" href="LPC21xx_8h.html#a373a1d7e0664d5db1827932f93229140">LPC21xx.h</a>
 </li>
+<li>rxSpiDeviceInit
+: <a class="el" href="cc2500__compat_8h.html#a185259e40dc735bc1b5b790b529cd052">cc2500_compat.h</a>
+</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri May 15 2020 04:04:12 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:04:31 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

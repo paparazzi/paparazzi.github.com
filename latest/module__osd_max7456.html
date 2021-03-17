@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -163,12 +163,15 @@ Source Files</h2>
 Raw osd_max7456.xml file:</h2>
 <div class="fragment"><div class="line">&lt;!DOCTYPE module SYSTEM &quot;module.dtd&quot;&gt;</div>
 <div class="line"></div>
-<div class="line">&lt;module name=&quot;max7456&quot; dir=&quot;display&quot;&gt;</div>
+<div class="line">&lt;module name=&quot;osd_max7456&quot; dir=&quot;display&quot;&gt;</div>
 <div class="line">  &lt;doc&gt;</div>
 <div class="line">    &lt;description&gt;MAX7456 driver (SPI)&lt;/description&gt;</div>
 <div class="line">    &lt;configure name=&quot;MAX7456_SPI_DEV&quot; value=&quot;spiX&quot; description=&quot;select spi peripheral to use (default spi2)&quot;/&gt;</div>
 <div class="line">    &lt;configure name=&quot;MAX7456_SLAVE_IDX&quot; value=&quot;SPI_SLAVE0&quot; description=&quot;SPI slave select index&quot;/&gt;</div>
 <div class="line">  &lt;/doc&gt;</div>
+<div class="line">  &lt;dep&gt;</div>
+<div class="line">    &lt;depends&gt;spi_master&lt;/depends&gt;</div>
+<div class="line">  &lt;/dep&gt;</div>
 <div class="line">  &lt;header&gt;</div>
 <div class="line">    &lt;file name=&quot;max7456.h&quot;/&gt;</div>
 <div class="line">  &lt;/header&gt;</div>
@@ -178,15 +181,11 @@ Raw osd_max7456.xml file:</h2>
 <div class="line">  &lt;makefile target=&quot;ap&quot;&gt;</div>
 <div class="line">    &lt;configure name=&quot;MAX7456_SPI_DEV&quot; default=&quot;spi2&quot; case=&quot;upper|lower&quot;/&gt;</div>
 <div class="line">    &lt;configure name=&quot;MAX7456_SLAVE_IDX&quot; default=&quot;spi_slave2&quot; case=&quot;upper|lower&quot;/&gt;</div>
-<div class="line">    &lt;raw&gt;</div>
-<div class="line">      include $(CFG_SHARED)/spi_master.makefile</div>
-<div class="line">    &lt;/raw&gt;</div>
 <div class="line">    &lt;define name=&quot;USE_$(MAX7456_SPI_DEV_UPPER)&quot; /&gt;</div>
 <div class="line">    &lt;define name=&quot;USE_$(MAX7456_SLAVE_IDX_UPPER)&quot; /&gt;</div>
 <div class="line">    &lt;define name=&quot;MAX7456_SPI_DEV&quot; value=&quot;$(MAX7456_SPI_DEV_LOWER)&quot; /&gt;</div>
 <div class="line">    &lt;define name=&quot;MAX7456_SLAVE_IDX&quot; value=&quot;$(MAX7456_SLAVE_IDX_UPPER)&quot; /&gt;</div>
 <div class="line">    &lt;file name=&quot;max7456.c&quot; /&gt;</div>
-<div class="line">    &lt;define name=&quot;USE_PAL_FOR_OSD_VIDEO&quot; value=&quot;1&quot; /&gt;</div>
 <div class="line">    &lt;define name=&quot;OSD_USE_EXTERNAL_SPRINTF&quot; value=&quot;0&quot; /&gt;</div>
 <div class="line">  &lt;/makefile&gt;</div>
 <div class="line">&lt;/module&gt;</div>
@@ -198,7 +197,7 @@ Raw osd_max7456.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:03:43 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:04:01 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

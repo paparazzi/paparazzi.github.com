@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['radio_5fcontrol_5fcc2500_5ffrsky_20module',['radio_control_cc2500_frsky module',['../module__radio_control_cc2500_frsky.html',1,'onboard_modules']]],
   ['radio_5fcontrol_5fdatalink_20module',['radio_control_datalink module',['../module__radio_control_datalink.html',1,'onboard_modules']]],
   ['radio_5fcontrol_5fhott_20module',['radio_control_hott module',['../module__radio_control_hott.html',1,'onboard_modules']]],
   ['radio_5fcontrol_5fppm_20module',['radio_control_ppm module',['../module__radio_control_ppm.html',1,'onboard_modules']]],

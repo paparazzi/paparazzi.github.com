@@ -1,0 +1,47 @@
+var sdlogger__spi__direct_8h =
+[
+    [ "sdlogger_spi_periph", "sdlogger__spi__direct_8h.html#structsdlogger__spi__periph", [
+      [ "buffer", "sdlogger__spi__direct_8h.html#a10f08ce058c55a41818221d16d636fdb", null ],
+      [ "command", "sdlogger__spi__direct_8h.html#a6f11b95174b38b15bd0a9cafb471daa2", null ],
+      [ "device", "sdlogger__spi__direct_8h.html#a42d14ead579c74bd724f8f1cff4a0aa7", null ],
+      [ "do_log", "sdlogger__spi__direct_8h.html#a73bad85291c740ad30c2d675b8157c33", null ],
+      [ "download_address", "sdlogger__spi__direct_8h.html#abe74802cee9cd40b07227b0f0f68f37f", null ],
+      [ "download_id", "sdlogger__spi__direct_8h.html#a1dab1288cbd62cdc46c22a196c3c63db", null ],
+      [ "download_length", "sdlogger__spi__direct_8h.html#ac7d745eefd4d0a2bcfc1c73f726b3920", null ],
+      [ "idx", "sdlogger__spi__direct_8h.html#a87128fdb4e3130609732b402ca3dd8ae", null ],
+      [ "last_completed", "sdlogger__spi__direct_8h.html#a537927fb600f61bf476ad690883ce83a", null ],
+      [ "log_len", "sdlogger__spi__direct_8h.html#ad15740b25e247b1005602395c3566e2c", null ],
+      [ "next_available_address", "sdlogger__spi__direct_8h.html#ac4fad7da68a9d6f8d91e397ef6cefd51", null ],
+      [ "sdcard_buf_idx", "sdlogger__spi__direct_8h.html#a3af215165428120de038149f0b0cda6f", null ],
+      [ "status", "sdlogger__spi__direct_8h.html#a6639aaaf95233c065d96b92ed905c3ab", null ]
+    ] ],
+    [ "SDLOGGER_BUFFER_SIZE", "sdlogger__spi__direct_8h.html#a8c6f86e005e7052bdd22b62166cc3582", null ],
+    [ "SDLoggerStatus", "sdlogger__spi__direct_8h.html#a32710ecfeb8ce229568e2e193c5d206e", [
+      [ "SDLogger_UnInit", "sdlogger__spi__direct_8h.html#a32710ecfeb8ce229568e2e193c5d206ea74bb0669dc4e3796e798b4a2e9101abd", null ],
+      [ "SDLogger_Error", "sdlogger__spi__direct_8h.html#a32710ecfeb8ce229568e2e193c5d206ea750dee6209001691e689f7ae44f90e5c", null ],
+      [ "SDLogger_Initializing", "sdlogger__spi__direct_8h.html#a32710ecfeb8ce229568e2e193c5d206ea01d0758908fdadf2715ae9812d79f05a", null ],
+      [ "SDLogger_RetreivingIndex", "sdlogger__spi__direct_8h.html#a32710ecfeb8ce229568e2e193c5d206ea3de1dcb36ca036f0e578dce287a9348b", null ],
+      [ "SDLogger_Ready", "sdlogger__spi__direct_8h.html#a32710ecfeb8ce229568e2e193c5d206ea51f3f5fe0ad980c1f16bf8e1e9cd8833", null ],
+      [ "SDLogger_Logging", "sdlogger__spi__direct_8h.html#a32710ecfeb8ce229568e2e193c5d206eaa5f30fe93b6c182c6f297c748e0790dd", null ],
+      [ "SDLogger_LoggingFinalBlock", "sdlogger__spi__direct_8h.html#a32710ecfeb8ce229568e2e193c5d206ead22befe2f6efdc7eaa56d241a6de3abc", null ],
+      [ "SDLogger_StoppedLogging", "sdlogger__spi__direct_8h.html#a32710ecfeb8ce229568e2e193c5d206ea10771513c3baf20eadd77f0bac8b138a", null ],
+      [ "SDLogger_GettingIndexForUpdate", "sdlogger__spi__direct_8h.html#a32710ecfeb8ce229568e2e193c5d206ea8a6f12c5f06b8f10e6407766c972e7c5", null ],
+      [ "SDLogger_UpdatingIndex", "sdlogger__spi__direct_8h.html#a32710ecfeb8ce229568e2e193c5d206ea4eb028a007f2f0f71384cf3962aa2325", null ],
+      [ "SDLogger_GettingIndexForDownload", "sdlogger__spi__direct_8h.html#a32710ecfeb8ce229568e2e193c5d206ea44aa44a41e9c4e5fa55fdd13f3cb7414", null ],
+      [ "SDLogger_Downloading", "sdlogger__spi__direct_8h.html#a32710ecfeb8ce229568e2e193c5d206eada0e86f7cac1607283af6f5929c0eff3", null ]
+    ] ],
+    [ "sdlogger_spi_direct_char_available", "sdlogger__spi__direct_8h.html#abc6d2500b749f6ff8456837da4160f75", null ],
+    [ "sdlogger_spi_direct_check_free_space", "sdlogger__spi__direct_8h.html#ad47b2b2958d9f06fc41d92792519964d", null ],
+    [ "sdlogger_spi_direct_command", "sdlogger__spi__direct_8h.html#a2e3b354ac6d0e173e051be713c63c161", null ],
+    [ "sdlogger_spi_direct_get_byte", "sdlogger__spi__direct_8h.html#a27cacdeeddf341b8dc27c52c942f53fb", null ],
+    [ "sdlogger_spi_direct_index_received", "sdlogger__spi__direct_8h.html#a229b523a75d655fdb55fac8e715a13c5", null ],
+    [ "sdlogger_spi_direct_init", "sdlogger__spi__direct_8h.html#a583b0f3d27ef3f54ca4d1263ebc0a884", null ],
+    [ "sdlogger_spi_direct_multiwrite_written", "sdlogger__spi__direct_8h.html#a8ba172956b3686b7a8ccb47bb9215bf8", null ],
+    [ "sdlogger_spi_direct_periodic", "sdlogger__spi__direct_8h.html#ab4a462e9899f9283db5be8ab3a3da922", null ],
+    [ "sdlogger_spi_direct_put_buffer", "sdlogger__spi__direct_8h.html#a2e870bbf55447f42c241d8f66c4a3397", null ],
+    [ "sdlogger_spi_direct_put_byte", "sdlogger__spi__direct_8h.html#a76e9185c1183478c02cf5be47cf0da93", null ],
+    [ "sdlogger_spi_direct_send_message", "sdlogger__spi__direct_8h.html#a8fda3c5fcc96943f1b50619170389a5b", null ],
+    [ "sdlogger_spi_direct_start", "sdlogger__spi__direct_8h.html#af24019c9a3de0374a1f3d5ea33bc5bf9", null ],
+    [ "sdlogger_spi_direct_stop", "sdlogger__spi__direct_8h.html#a80b30cf3301be1f5ad63d0343df44266", null ],
+    [ "sdlogger_spi", "sdlogger__spi__direct_8h.html#a480941021a777a6ff59962058b88a00b", null ]
+];

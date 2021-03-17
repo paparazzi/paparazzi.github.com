@@ -1,6 +1,7 @@
 var searchData=
 [
   ['pano_5funwrap_20module',['pano_unwrap module',['../module__pano_unwrap.html',1,'onboard_modules']]],
+  ['pca9685_20module',['pca9685 module',['../module__pca9685.html',1,'onboard_modules']]],
   ['photogrammetry_5fcalculator_20module',['photogrammetry_calculator module',['../module__photogrammetry_calculator.html',1,'onboard_modules']]],
   ['pipe_20module',['pipe module',['../module__pipe.html',1,'onboard_modules']]],
   ['pose_5fhistory_20module',['pose_history module',['../module__pose_history.html',1,'onboard_modules']]],

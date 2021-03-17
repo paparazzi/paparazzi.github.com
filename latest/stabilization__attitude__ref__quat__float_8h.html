@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -158,8 +158,8 @@ Macros</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:adccafd4cbec2fdd89325b6077aab281f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__attitude__ref__quat__float_8h.html#adccafd4cbec2fdd89325b6077aab281f">attitude_ref_quat_float_init</a> (struct <a class="el" href="stabilization__attitude__ref__quat__float_8h.html#structAttRefQuatFloat">AttRefQuatFloat</a> *<a class="el" href="temp__tcouple__adc_8c.html#a241f0aa542718c2480a4fa6ce56070f7">ref</a>)</td></tr>
 <tr class="separator:adccafd4cbec2fdd89325b6077aab281f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64a18d12f7fbb46c79790b1f141204e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__attitude__ref__quat__float_8h.html#a64a18d12f7fbb46c79790b1f141204e2">attitude_ref_quat_float_enter</a> (struct <a class="el" href="stabilization__attitude__ref__quat__float_8h.html#structAttRefQuatFloat">AttRefQuatFloat</a> *<a class="el" href="temp__tcouple__adc_8c.html#a241f0aa542718c2480a4fa6ce56070f7">ref</a>, float psi)</td></tr>
-<tr class="separator:a64a18d12f7fbb46c79790b1f141204e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7db3c49e65e9d2d4d273b1eaf4a7243b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__attitude__ref__quat__float_8h.html#a7db3c49e65e9d2d4d273b1eaf4a7243b">attitude_ref_quat_float_enter</a> (struct <a class="el" href="stabilization__attitude__ref__quat__float_8h.html#structAttRefQuatFloat">AttRefQuatFloat</a> *<a class="el" href="temp__tcouple__adc_8c.html#a241f0aa542718c2480a4fa6ce56070f7">ref</a>, struct <a class="el" href="group__math__algebra__float.html#structFloatQuat">FloatQuat</a> *state_quat)</td></tr>
+<tr class="separator:a7db3c49e65e9d2d4d273b1eaf4a7243b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6246617981d4269af34291dafdd9f1e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__attitude__ref__quat__float_8h.html#a6246617981d4269af34291dafdd9f1e3">attitude_ref_quat_float_update</a> (struct <a class="el" href="stabilization__attitude__ref__quat__float_8h.html#structAttRefQuatFloat">AttRefQuatFloat</a> *<a class="el" href="temp__tcouple__adc_8c.html#a241f0aa542718c2480a4fa6ce56070f7">ref</a>, struct <a class="el" href="group__math__algebra__float.html#structFloatQuat">FloatQuat</a> *sp_quat, float dt)</td></tr>
 <tr class="separator:a6246617981d4269af34291dafdd9f1e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0710fdba982ba2ba559c3346894b5fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stabilization__attitude__ref__quat__float_8h.html#af0710fdba982ba2ba559c3346894b5fc">attitude_ref_quat_float_schedule</a> (struct <a class="el" href="stabilization__attitude__ref__quat__float_8h.html#structAttRefQuatFloat">AttRefQuatFloat</a> *<a class="el" href="temp__tcouple__adc_8c.html#a241f0aa542718c2480a4fa6ce56070f7">ref</a>, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="el" href="nps__radio__control__spektrum_8c.html#a1f658a7d21dc9b85b8009cedb0a1aef6">idx</a>)</td></tr>
@@ -313,7 +313,7 @@ saturation</td>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a64a18d12f7fbb46c79790b1f141204e2"></a>
+<a class="anchor" id="a7db3c49e65e9d2d4d273b1eaf4a7243b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -326,8 +326,8 @@ saturation</td>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>psi</em>&#160;</td>
+          <td class="paramtype">struct <a class="el" href="group__math__algebra__float.html#structFloatQuat">FloatQuat</a> *&#160;</td>
+          <td class="paramname"><em>state_quat</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -337,30 +337,19 @@ saturation</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__attitude__ref__quat__float_8c_source.html#l00080">80</a> of file <a class="el" href="stabilization__attitude__ref__quat__float_8c_source.html">stabilization_attitude_ref_quat_float.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__attitude__ref__quat__float_8c_source.html#l00078">78</a> of file <a class="el" href="stabilization__attitude__ref__quat__float_8c_source.html">stabilization_attitude_ref_quat_float.c</a>.</p>
 
-<p>References <a class="el" href="stabilization__attitude__ref__quat__float_8c_source.html#l00139">reset_psi_ref()</a>.</p>
+<p>References <a class="el" href="stabilization__attitude__ref__quat__float_8h_source.html#l00054">AttRefQuatFloat::accel</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00191">FLOAT_RATES_ZERO</a>, <a class="el" href="stabilization__attitude__ref__quat__float_8h_source.html#l00052">AttRefQuatFloat::quat</a>, <a class="el" href="pprz__algebra_8h_source.html#l00596">QUAT_COPY</a>, and <a class="el" href="stabilization__attitude__ref__quat__float_8h_source.html#l00053">AttRefQuatFloat::rate</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__attitude__quat__float_8c_source.html#l00189">stabilization_attitude_enter()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__attitude__quat__float_8c_source.html#l00206">stabilization_attitude_enter()</a>.</p>
 
 <p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="stabilization__attitude__ref__quat__float_8h_a64a18d12f7fbb46c79790b1f141204e2_cgraph.png" border="0" usemap="#stabilization__attitude__ref__quat__float_8h_a64a18d12f7fbb46c79790b1f141204e2_cgraph" alt=""/></div>
-<map name="stabilization__attitude__ref__quat__float_8h_a64a18d12f7fbb46c79790b1f141204e2_cgraph" id="stabilization__attitude__ref__quat__float_8h_a64a18d12f7fbb46c79790b1f141204e2_cgraph">
-<area shape="rect" id="node2" href="stabilization__attitude__ref__quat__float_8c.html#ab694ffc68ccd095d3641670ad7d272a7" title="reset_psi_ref" alt="" coords="220,31,324,57"/><area shape="rect" id="node3" href="group__math__algebra__float.html#ga99c8f1ff70a5b638cf87ea816f1756a2" title="quat of euler roation &#39;ZYX&#39; " alt="" coords="388,5,539,32"/><area shape="rect" id="node4" href="group__math__algebra__float.html#ga8c87c4af5df3d13c6eb0bd8b8e97721a" title="float_quat_wrap_shortest" alt="" coords="372,56,555,83"/></map>
-</div>
-</p>
-
-<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="stabilization__attitude__ref__quat__float_8h_a64a18d12f7fbb46c79790b1f141204e2_icgraph.png" border="0" usemap="#stabilization__attitude__ref__quat__float_8h_a64a18d12f7fbb46c79790b1f141204e2_icgraph" alt=""/></div>
-<map name="stabilization__attitude__ref__quat__float_8h_a64a18d12f7fbb46c79790b1f141204e2_icgraph" id="stabilization__attitude__ref__quat__float_8h_a64a18d12f7fbb46c79790b1f141204e2_icgraph">
+<div class="center"><img src="stabilization__attitude__ref__quat__float_8h_a7db3c49e65e9d2d4d273b1eaf4a7243b_icgraph.png" border="0" usemap="#stabilization__attitude__ref__quat__float_8h_a7db3c49e65e9d2d4d273b1eaf4a7243b_icgraph" alt=""/></div>
+<map name="stabilization__attitude__ref__quat__float_8h_a7db3c49e65e9d2d4d273b1eaf4a7243b_icgraph" id="stabilization__attitude__ref__quat__float_8h_a7db3c49e65e9d2d4d273b1eaf4a7243b_icgraph">
 <area shape="rect" id="node2" href="stabilization__attitude__quat__float_8c.html#a23f862ca823e6fd23fc9c111178be077" title="stabilization_attitude\l_enter" alt="" coords="220,5,375,47"/></map>
 </div>
 </p>
@@ -397,17 +386,17 @@ saturation</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__attitude__ref__quat__float_8c_source.html#l00156">156</a> of file <a class="el" href="stabilization__attitude__ref__quat__float_8c_source.html">stabilization_attitude_ref_quat_float.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__attitude__ref__quat__float_8c_source.html#l00140">140</a> of file <a class="el" href="stabilization__attitude__ref__quat__float_8c_source.html">stabilization_attitude_ref_quat_float.c</a>.</p>
 
 <p>References <a class="el" href="nps__radio__control__spektrum_8c_source.html#l00105">idx</a>, <a class="el" href="stabilization__attitude__ref__quat__float_8h_source.html#l00056">AttRefQuatFloat::model</a>, <a class="el" href="stabilization__attitude__ref__euler__float_8h_source.html#l00030">FloatRefModel::omega</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00094">FloatRates::p</a>, and <a class="el" href="stabilization__attitude__ref__quat__float_8h_source.html#l00046">FloatRefModel::two_omega2</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__attitude__ref__quat__float_8c_source.html#l00174">attitude_ref_quat_float_set_omega_p()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__attitude__ref__quat__float_8c_source.html#l00158">attitude_ref_quat_float_set_omega_p()</a>.</p>
 
-<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__attitude__ref__quat__float_8h_a62d305e55fd4d335266cf18cb5af6525_icgraph.png" border="0" usemap="#stabilization__attitude__ref__quat__float_8h_a62d305e55fd4d335266cf18cb5af6525_icgraph" alt=""/></div>
 <map name="stabilization__attitude__ref__quat__float_8h_a62d305e55fd4d335266cf18cb5af6525_icgraph" id="stabilization__attitude__ref__quat__float_8h_a62d305e55fd4d335266cf18cb5af6525_icgraph">
 <area shape="rect" id="node2" href="stabilization__attitude__ref__quat__float_8h.html#ad110adfe64ec52e2ac69a8770ba861d1" title="attitude_ref_quat_float\l_set_omega_p" alt="" coords="220,5,387,47"/></map>
@@ -446,17 +435,17 @@ saturation</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__attitude__ref__quat__float_8c_source.html#l00162">162</a> of file <a class="el" href="stabilization__attitude__ref__quat__float_8c_source.html">stabilization_attitude_ref_quat_float.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__attitude__ref__quat__float_8c_source.html#l00146">146</a> of file <a class="el" href="stabilization__attitude__ref__quat__float_8c_source.html">stabilization_attitude_ref_quat_float.c</a>.</p>
 
 <p>References <a class="el" href="nps__radio__control__spektrum_8c_source.html#l00105">idx</a>, <a class="el" href="stabilization__attitude__ref__quat__float_8h_source.html#l00056">AttRefQuatFloat::model</a>, <a class="el" href="stabilization__attitude__ref__euler__float_8h_source.html#l00030">FloatRefModel::omega</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00095">FloatRates::q</a>, and <a class="el" href="stabilization__attitude__ref__quat__float_8h_source.html#l00046">FloatRefModel::two_omega2</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__attitude__ref__quat__float_8c_source.html#l00179">attitude_ref_quat_float_set_omega_q()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__attitude__ref__quat__float_8c_source.html#l00163">attitude_ref_quat_float_set_omega_q()</a>.</p>
 
-<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__attitude__ref__quat__float_8h_aa719423d614df48557e9cd8583d3eaa9_icgraph.png" border="0" usemap="#stabilization__attitude__ref__quat__float_8h_aa719423d614df48557e9cd8583d3eaa9_icgraph" alt=""/></div>
 <map name="stabilization__attitude__ref__quat__float_8h_aa719423d614df48557e9cd8583d3eaa9_icgraph" id="stabilization__attitude__ref__quat__float_8h_aa719423d614df48557e9cd8583d3eaa9_icgraph">
 <area shape="rect" id="node2" href="stabilization__attitude__ref__quat__float_8h.html#a50bda25261915c325a17f95f74d33707" title="attitude_ref_quat_float\l_set_omega_q" alt="" coords="220,5,387,47"/></map>
@@ -495,17 +484,17 @@ saturation</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__attitude__ref__quat__float_8c_source.html#l00168">168</a> of file <a class="el" href="stabilization__attitude__ref__quat__float_8c_source.html">stabilization_attitude_ref_quat_float.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__attitude__ref__quat__float_8c_source.html#l00152">152</a> of file <a class="el" href="stabilization__attitude__ref__quat__float_8c_source.html">stabilization_attitude_ref_quat_float.c</a>.</p>
 
 <p>References <a class="el" href="nps__radio__control__spektrum_8c_source.html#l00105">idx</a>, <a class="el" href="stabilization__attitude__ref__quat__float_8h_source.html#l00056">AttRefQuatFloat::model</a>, <a class="el" href="stabilization__attitude__ref__euler__float_8h_source.html#l00030">FloatRefModel::omega</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00096">FloatRates::r</a>, and <a class="el" href="stabilization__attitude__ref__quat__float_8h_source.html#l00046">FloatRefModel::two_omega2</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__attitude__ref__quat__float_8c_source.html#l00184">attitude_ref_quat_float_set_omega_r()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__attitude__ref__quat__float_8c_source.html#l00168">attitude_ref_quat_float_set_omega_r()</a>.</p>
 
-<p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__attitude__ref__quat__float_8h_ac7ea07c42ec7d44433d2d17cd90a15d3_icgraph.png" border="0" usemap="#stabilization__attitude__ref__quat__float_8h_ac7ea07c42ec7d44433d2d17cd90a15d3_icgraph" alt=""/></div>
 <map name="stabilization__attitude__ref__quat__float_8h_ac7ea07c42ec7d44433d2d17cd90a15d3_icgraph" id="stabilization__attitude__ref__quat__float_8h_ac7ea07c42ec7d44433d2d17cd90a15d3_icgraph">
 <area shape="rect" id="node2" href="stabilization__attitude__ref__quat__float_8h.html#a8ecae63302893cfddabac6f3ac1d3aeb" title="attitude_ref_quat_float\l_set_omega_r" alt="" coords="220,5,387,47"/></map>
@@ -528,28 +517,28 @@ saturation</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__attitude__ref__quat__float_8c_source.html#l00057">57</a> of file <a class="el" href="stabilization__attitude__ref__quat__float_8c_source.html">stabilization_attitude_ref_quat_float.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__attitude__ref__quat__float_8c_source.html#l00055">55</a> of file <a class="el" href="stabilization__attitude__ref__quat__float_8c_source.html">stabilization_attitude_ref_quat_float.c</a>.</p>
 
 <p>References <a class="el" href="stabilization__attitude__ref__quat__float_8h_source.html#l00054">AttRefQuatFloat::accel</a>, <a class="el" href="stabilization__attitude__ref__quat__float_8h_source.html#l00055">AttRefQuatFloat::cur_idx</a>, <a class="el" href="stabilization__attitude__ref__quat__float_8h_source.html#l00051">AttRefQuatFloat::euler</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00516">FLOAT_EULERS_ZERO</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00365">float_quat_identity()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00191">FLOAT_RATES_ZERO</a>, <a class="el" href="attitude__ref__saturate__naive_8h_source.html#l00034">FloatRefSat::max_accel</a>, <a class="el" href="attitude__ref__saturate__naive_8h_source.html#l00033">FloatRefSat::max_rate</a>, <a class="el" href="stabilization__attitude__ref__quat__float_8h_source.html#l00056">AttRefQuatFloat::model</a>, <a class="el" href="stabilization__attitude__ref__euler__float_8h_source.html#l00030">FloatRefModel::omega</a>, <a class="el" href="stabilization__attitude__ref__quat__float_8c_source.html#l00042">omega_p</a>, <a class="el" href="stabilization__attitude__ref__quat__float_8c_source.html#l00044">omega_q</a>, <a class="el" href="stabilization__attitude__ref__quat__float_8c_source.html#l00046">omega_r</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00094">FloatRates::p</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00095">FloatRates::q</a>, <a class="el" href="stabilization__attitude__ref__quat__float_8h_source.html#l00052">AttRefQuatFloat::quat</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00096">FloatRates::r</a>, <a class="el" href="stabilization__attitude__ref__quat__float_8h_source.html#l00053">AttRefQuatFloat::rate</a>, <a class="el" href="pprz__algebra_8h_source.html#l00330">RATES_ASSIGN</a>, <a class="el" href="stabilization__attitude__ref__quat__float_8h_source.html#l00057">AttRefQuatFloat::saturation</a>, <a class="el" href="stabilization__attitude__quat__float_8h_source.html#l00037">STABILIZATION_ATTITUDE_GAIN_NB</a>, <a class="el" href="stabilization__attitude__ref__defaults_8h_source.html#l00030">STABILIZATION_ATTITUDE_REF_MAX_P</a>, <a class="el" href="stabilization__attitude__ref__defaults_8h_source.html#l00040">STABILIZATION_ATTITUDE_REF_MAX_PDOT</a>, <a class="el" href="stabilization__attitude__ref__defaults_8h_source.html#l00033">STABILIZATION_ATTITUDE_REF_MAX_Q</a>, <a class="el" href="stabilization__attitude__ref__defaults_8h_source.html#l00043">STABILIZATION_ATTITUDE_REF_MAX_QDOT</a>, <a class="el" href="stabilization__attitude__ref__defaults_8h_source.html#l00036">STABILIZATION_ATTITUDE_REF_MAX_R</a>, <a class="el" href="stabilization__attitude__ref__defaults_8h_source.html#l00046">STABILIZATION_ATTITUDE_REF_MAX_RDOT</a>, <a class="el" href="stabilization__attitude__ref__quat__float_8h_source.html#l00046">FloatRefModel::two_omega2</a>, <a class="el" href="stabilization__attitude__ref__euler__float_8h_source.html#l00031">FloatRefModel::zeta</a>, <a class="el" href="stabilization__attitude__ref__quat__float_8c_source.html#l00043">zeta_p</a>, <a class="el" href="stabilization__attitude__ref__quat__float_8c_source.html#l00045">zeta_q</a>, and <a class="el" href="stabilization__attitude__ref__quat__float_8c_source.html#l00047">zeta_r</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__attitude__quat__float_8c_source.html#l00146">stabilization_attitude_init()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__attitude__quat__float_8c_source.html#l00162">stabilization_attitude_init()</a>.</p>
 
-<p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__attitude__ref__quat__float_8h_adccafd4cbec2fdd89325b6077aab281f_cgraph.png" border="0" usemap="#stabilization__attitude__ref__quat__float_8h_adccafd4cbec2fdd89325b6077aab281f_cgraph" alt=""/></div>
 <map name="stabilization__attitude__ref__quat__float_8h_adccafd4cbec2fdd89325b6077aab281f_cgraph" id="stabilization__attitude__ref__quat__float_8h_adccafd4cbec2fdd89325b6077aab281f_cgraph">
 <area shape="rect" id="node2" href="group__math__algebra__float.html#ga0f036208343a764a0c1616264dbe31ca" title="initialises a quaternion to identity " alt="" coords="247,5,387,32"/></map>
 </div>
 </p>
 
-<p><div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__attitude__ref__quat__float_8h_adccafd4cbec2fdd89325b6077aab281f_icgraph.png" border="0" usemap="#stabilization__attitude__ref__quat__float_8h_adccafd4cbec2fdd89325b6077aab281f_icgraph" alt=""/></div>
 <map name="stabilization__attitude__ref__quat__float_8h_adccafd4cbec2fdd89325b6077aab281f_icgraph" id="stabilization__attitude__ref__quat__float_8h_adccafd4cbec2fdd89325b6077aab281f_icgraph">
 <area shape="rect" id="node2" href="stabilization__attitude__quat__float_8c.html#a03d27593d891182c04fc5337766733d1" title="stabilization_attitude_init " alt="" coords="247,5,428,32"/></map>
@@ -582,17 +571,17 @@ saturation</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__attitude__ref__quat__float_8c_source.html#l00193">193</a> of file <a class="el" href="stabilization__attitude__ref__quat__float_8c_source.html">stabilization_attitude_ref_quat_float.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__attitude__ref__quat__float_8c_source.html#l00177">177</a> of file <a class="el" href="stabilization__attitude__ref__quat__float_8c_source.html">stabilization_attitude_ref_quat_float.c</a>.</p>
 
 <p>References <a class="el" href="stabilization__attitude__ref__quat__float_8h_source.html#l00055">AttRefQuatFloat::cur_idx</a>, and <a class="el" href="nps__radio__control__spektrum_8c_source.html#l00105">idx</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__attitude__quat__float_8c_source.html#l00179">stabilization_attitude_gain_schedule()</a>, and <a class="el" href="stabilization__attitude__quat__float_8c_source.html#l00146">stabilization_attitude_init()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__attitude__quat__float_8c_source.html#l00196">stabilization_attitude_gain_schedule()</a>, and <a class="el" href="stabilization__attitude__quat__float_8c_source.html#l00162">stabilization_attitude_init()</a>.</p>
 
-<p><div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__attitude__ref__quat__float_8h_af0710fdba982ba2ba559c3346894b5fc_icgraph.png" border="0" usemap="#stabilization__attitude__ref__quat__float_8h_af0710fdba982ba2ba559c3346894b5fc_icgraph" alt=""/></div>
 <map name="stabilization__attitude__ref__quat__float_8h_af0710fdba982ba2ba559c3346894b5fc_icgraph" id="stabilization__attitude__ref__quat__float_8h_af0710fdba982ba2ba559c3346894b5fc_icgraph">
 <area shape="rect" id="node2" href="stabilization__attitude__quat__float_8h.html#ad56ee50f489feb63a2af75f0024d892c" title="stabilization_attitude\l_gain_schedule" alt="" coords="233,5,388,47"/><area shape="rect" id="node3" href="stabilization__attitude__quat__float_8c.html#a03d27593d891182c04fc5337766733d1" title="stabilization_attitude_init " alt="" coords="220,71,401,98"/></map>
@@ -625,15 +614,15 @@ saturation</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__attitude__ref__quat__float_8c_source.html#l00174">174</a> of file <a class="el" href="stabilization__attitude__ref__quat__float_8c_source.html">stabilization_attitude_ref_quat_float.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__attitude__ref__quat__float_8c_source.html#l00158">158</a> of file <a class="el" href="stabilization__attitude__ref__quat__float_8c_source.html">stabilization_attitude_ref_quat_float.c</a>.</p>
 
-<p>References <a class="el" href="stabilization__attitude__ref__quat__float_8c_source.html#l00156">attitude_ref_quat_float_idx_set_omega_p()</a>, and <a class="el" href="stabilization__attitude__ref__quat__float_8h_source.html#l00055">AttRefQuatFloat::cur_idx</a>.</p>
+<p>References <a class="el" href="stabilization__attitude__ref__quat__float_8c_source.html#l00140">attitude_ref_quat_float_idx_set_omega_p()</a>, and <a class="el" href="stabilization__attitude__ref__quat__float_8h_source.html#l00055">AttRefQuatFloat::cur_idx</a>.</p>
 
-<p><div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__attitude__ref__quat__float_8h_ad110adfe64ec52e2ac69a8770ba861d1_cgraph.png" border="0" usemap="#stabilization__attitude__ref__quat__float_8h_ad110adfe64ec52e2ac69a8770ba861d1_cgraph" alt=""/></div>
 <map name="stabilization__attitude__ref__quat__float_8h_ad110adfe64ec52e2ac69a8770ba861d1_cgraph" id="stabilization__attitude__ref__quat__float_8h_ad110adfe64ec52e2ac69a8770ba861d1_cgraph">
 <area shape="rect" id="node2" href="stabilization__attitude__ref__quat__float_8c.html#a62d305e55fd4d335266cf18cb5af6525" title="attitude_ref_quat_float\l_idx_set_omega_p" alt="" coords="220,5,387,47"/></map>
@@ -666,15 +655,15 @@ saturation</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__attitude__ref__quat__float_8c_source.html#l00179">179</a> of file <a class="el" href="stabilization__attitude__ref__quat__float_8c_source.html">stabilization_attitude_ref_quat_float.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__attitude__ref__quat__float_8c_source.html#l00163">163</a> of file <a class="el" href="stabilization__attitude__ref__quat__float_8c_source.html">stabilization_attitude_ref_quat_float.c</a>.</p>
 
-<p>References <a class="el" href="stabilization__attitude__ref__quat__float_8c_source.html#l00162">attitude_ref_quat_float_idx_set_omega_q()</a>, and <a class="el" href="stabilization__attitude__ref__quat__float_8h_source.html#l00055">AttRefQuatFloat::cur_idx</a>.</p>
+<p>References <a class="el" href="stabilization__attitude__ref__quat__float_8c_source.html#l00146">attitude_ref_quat_float_idx_set_omega_q()</a>, and <a class="el" href="stabilization__attitude__ref__quat__float_8h_source.html#l00055">AttRefQuatFloat::cur_idx</a>.</p>
 
-<p><div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__attitude__ref__quat__float_8h_a50bda25261915c325a17f95f74d33707_cgraph.png" border="0" usemap="#stabilization__attitude__ref__quat__float_8h_a50bda25261915c325a17f95f74d33707_cgraph" alt=""/></div>
 <map name="stabilization__attitude__ref__quat__float_8h_a50bda25261915c325a17f95f74d33707_cgraph" id="stabilization__attitude__ref__quat__float_8h_a50bda25261915c325a17f95f74d33707_cgraph">
 <area shape="rect" id="node2" href="stabilization__attitude__ref__quat__float_8c.html#aa719423d614df48557e9cd8583d3eaa9" title="attitude_ref_quat_float\l_idx_set_omega_q" alt="" coords="220,5,387,47"/></map>
@@ -707,15 +696,15 @@ saturation</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__attitude__ref__quat__float_8c_source.html#l00184">184</a> of file <a class="el" href="stabilization__attitude__ref__quat__float_8c_source.html">stabilization_attitude_ref_quat_float.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__attitude__ref__quat__float_8c_source.html#l00168">168</a> of file <a class="el" href="stabilization__attitude__ref__quat__float_8c_source.html">stabilization_attitude_ref_quat_float.c</a>.</p>
 
-<p>References <a class="el" href="stabilization__attitude__ref__quat__float_8c_source.html#l00168">attitude_ref_quat_float_idx_set_omega_r()</a>, and <a class="el" href="stabilization__attitude__ref__quat__float_8h_source.html#l00055">AttRefQuatFloat::cur_idx</a>.</p>
+<p>References <a class="el" href="stabilization__attitude__ref__quat__float_8c_source.html#l00152">attitude_ref_quat_float_idx_set_omega_r()</a>, and <a class="el" href="stabilization__attitude__ref__quat__float_8h_source.html#l00055">AttRefQuatFloat::cur_idx</a>.</p>
 
-<p><div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__attitude__ref__quat__float_8h_a8ecae63302893cfddabac6f3ac1d3aeb_cgraph.png" border="0" usemap="#stabilization__attitude__ref__quat__float_8h_a8ecae63302893cfddabac6f3ac1d3aeb_cgraph" alt=""/></div>
 <map name="stabilization__attitude__ref__quat__float_8h_a8ecae63302893cfddabac6f3ac1d3aeb_cgraph" id="stabilization__attitude__ref__quat__float_8h_a8ecae63302893cfddabac6f3ac1d3aeb_cgraph">
 <area shape="rect" id="node2" href="stabilization__attitude__ref__quat__float_8c.html#ac7ea07c42ec7d44433d2d17cd90a15d3" title="attitude_ref_quat_float\l_idx_set_omega_r" alt="" coords="220,5,387,47"/></map>
@@ -754,28 +743,28 @@ saturation</td>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stabilization__attitude__ref__quat__float_8c_source.html#l00086">86</a> of file <a class="el" href="stabilization__attitude__ref__quat__float_8c_source.html">stabilization_attitude_ref_quat_float.c</a>.</p>
+<p>Definition at line <a class="el" href="stabilization__attitude__ref__quat__float_8c_source.html#l00088">88</a> of file <a class="el" href="stabilization__attitude__ref__quat__float_8c_source.html">stabilization_attitude_ref_quat_float.c</a>.</p>
 
-<p>References <a class="el" href="stabilization__attitude__ref__quat__float_8h_source.html#l00054">AttRefQuatFloat::accel</a>, <a class="el" href="attitude__ref__saturate__naive_8h_source.html#l00058">attitude_ref_float_saturate_naive()</a>, <a class="el" href="stabilization__attitude__ref__quat__float_8h_source.html#l00055">AttRefQuatFloat::cur_idx</a>, <a class="el" href="stabilization__attitude__ref__quat__float_8h_source.html#l00051">AttRefQuatFloat::euler</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00646">float_eulers_of_quat()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00320">float_quat_comp()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00450">float_quat_derivative()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00365">float_quat_differential()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00336">float_quat_inv_comp()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00380">float_quat_normalize()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00396">float_quat_wrap_shortest()</a>, <a class="el" href="stabilization__attitude__ref__quat__float_8h_source.html#l00056">AttRefQuatFloat::model</a>, <a class="el" href="stabilization__attitude__ref__euler__float_8h_source.html#l00030">FloatRefModel::omega</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00094">FloatRates::p</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00095">FloatRates::q</a>, <a class="el" href="stabilization__attitude__ref__quat__float_8h_source.html#l00052">AttRefQuatFloat::quat</a>, <a class="el" href="pprz__algebra_8h_source.html#l00619">QUAT_ADD</a>, <a class="el" href="pprz__algebra_8h_source.html#l00596">QUAT_COPY</a>, <a class="el" href="pprz__algebra_8h_source.html#l00611">QUAT_SMUL</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00065">FloatQuat::qx</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00066">FloatQuat::qy</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00067">FloatQuat::qz</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00096">FloatRates::r</a>, <a class="el" href="stabilization__attitude__ref__quat__float_8h_source.html#l00053">AttRefQuatFloat::rate</a>, <a class="el" href="pprz__algebra_8h_source.html#l00344">RATES_ADD</a>, <a class="el" href="pprz__algebra_8h_source.html#l00379">RATES_SMUL</a>, <a class="el" href="stabilization__attitude__ref__quat__float_8h_source.html#l00057">AttRefQuatFloat::saturation</a>, <a class="el" href="stabilization__attitude__ref__quat__float_8h_source.html#l00046">FloatRefModel::two_omega2</a>, and <a class="el" href="stabilization__attitude__ref__euler__float_8h_source.html#l00031">FloatRefModel::zeta</a>.</p>
+<p>References <a class="el" href="stabilization__attitude__ref__quat__float_8h_source.html#l00054">AttRefQuatFloat::accel</a>, <a class="el" href="attitude__ref__saturate__naive_8h_source.html#l00058">attitude_ref_float_saturate_naive()</a>, <a class="el" href="stabilization__attitude__ref__quat__float_8h_source.html#l00055">AttRefQuatFloat::cur_idx</a>, <a class="el" href="stabilization__attitude__ref__quat__float_8h_source.html#l00051">AttRefQuatFloat::euler</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00650">float_eulers_of_quat()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00320">float_quat_comp()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00450">float_quat_derivative()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00365">float_quat_differential()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00336">float_quat_inv_comp()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00380">float_quat_normalize()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00396">float_quat_wrap_shortest()</a>, <a class="el" href="stabilization__attitude__ref__quat__float_8h_source.html#l00056">AttRefQuatFloat::model</a>, <a class="el" href="stabilization__attitude__ref__euler__float_8h_source.html#l00030">FloatRefModel::omega</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00094">FloatRates::p</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00095">FloatRates::q</a>, <a class="el" href="stabilization__attitude__ref__quat__float_8h_source.html#l00052">AttRefQuatFloat::quat</a>, <a class="el" href="pprz__algebra_8h_source.html#l00619">QUAT_ADD</a>, <a class="el" href="pprz__algebra_8h_source.html#l00596">QUAT_COPY</a>, <a class="el" href="pprz__algebra_8h_source.html#l00611">QUAT_SMUL</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00065">FloatQuat::qx</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00066">FloatQuat::qy</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00067">FloatQuat::qz</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00096">FloatRates::r</a>, <a class="el" href="stabilization__attitude__ref__quat__float_8h_source.html#l00053">AttRefQuatFloat::rate</a>, <a class="el" href="pprz__algebra_8h_source.html#l00344">RATES_ADD</a>, <a class="el" href="pprz__algebra_8h_source.html#l00379">RATES_SMUL</a>, <a class="el" href="stabilization__attitude__ref__quat__float_8h_source.html#l00057">AttRefQuatFloat::saturation</a>, <a class="el" href="stabilization__attitude__ref__quat__float_8h_source.html#l00046">FloatRefModel::two_omega2</a>, and <a class="el" href="stabilization__attitude__ref__euler__float_8h_source.html#l00031">FloatRefModel::zeta</a>.</p>
 
-<p>Referenced by <a class="el" href="stabilization__attitude__quat__float_8c_source.html#l00295">stabilization_attitude_run()</a>.</p>
+<p>Referenced by <a class="el" href="stabilization__attitude__quat__float_8c_source.html#l00314">stabilization_attitude_run()</a>.</p>
 
-<p><div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__attitude__ref__quat__float_8h_a6246617981d4269af34291dafdd9f1e3_cgraph.png" border="0" usemap="#stabilization__attitude__ref__quat__float_8h_a6246617981d4269af34291dafdd9f1e3_cgraph" alt=""/></div>
 <map name="stabilization__attitude__ref__quat__float_8h_a6246617981d4269af34291dafdd9f1e3_cgraph" id="stabilization__attitude__ref__quat__float_8h_a6246617981d4269af34291dafdd9f1e3_cgraph">
 <area shape="rect" id="node2" href="attitude__ref__saturate__naive_8h.html#aa0f93b3e44169518f24759b497a97275" title="attitude_ref_float\l_saturate_naive" alt="" coords="246,5,377,47"/><area shape="rect" id="node3" href="group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="euler rotation &#39;ZYX&#39; " alt="" coords="236,71,387,98"/><area shape="rect" id="node4" href="group__math__algebra__float.html#gaf182e4cea0a80278a3b2856331095ff6" title="Composition (multiplication) of two quaternions. " alt="" coords="247,122,376,149"/><area shape="rect" id="node5" href="group__math__algebra__float.html#gaf9863ba4e0718dd826af1bf1bf891aaa" title="Quaternion derivative from rotational velocity. " alt="" coords="234,173,389,199"/><area shape="rect" id="node6" href="group__math__algebra__float.html#gaf1db25a69e0a8c04c7a9987a4455d164" title="Delta rotation quaternion with constant angular rates. " alt="" coords="231,223,391,250"/><area shape="rect" id="node7" href="group__math__algebra__float.html#ga2784b8b78ffff045ebb867a4198eb349" title="Composition (multiplication) of two quaternions. " alt="" coords="234,274,389,301"/><area shape="rect" id="node8" href="group__math__algebra__float.html#ga010393da7c94f197d0161a0071862041" title="float_quat_normalize" alt="" coords="233,325,389,351"/><area shape="rect" id="node10" href="group__math__algebra__float.html#ga8c87c4af5df3d13c6eb0bd8b8e97721a" title="float_quat_wrap_shortest" alt="" coords="220,375,403,402"/><area shape="rect" id="node9" href="group__math__algebra__float.html#gaf58947a2590837aa85077d42d99fb112" title="float_quat_norm" alt="" coords="451,325,577,351"/></map>
 </div>
 </p>
 
-<p><div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-16-content" class="dyncontent" style="display:none;">
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="stabilization__attitude__ref__quat__float_8h_a6246617981d4269af34291dafdd9f1e3_icgraph.png" border="0" usemap="#stabilization__attitude__ref__quat__float_8h_a6246617981d4269af34291dafdd9f1e3_icgraph" alt=""/></div>
 <map name="stabilization__attitude__ref__quat__float_8h_a6246617981d4269af34291dafdd9f1e3_icgraph" id="stabilization__attitude__ref__quat__float_8h_a6246617981d4269af34291dafdd9f1e3_icgraph">
 <area shape="rect" id="node2" href="stabilization__attitude__quat__float_8c.html#a18a45e70bf2fae908ece863a764f777b" title="stabilization_attitude_run" alt="" coords="220,13,403,39"/></map>
@@ -790,7 +779,7 @@ saturation</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_e37d355c72eb7c8e5b43c34bdea5a24b.html">rotorcraft</a></li><li class="navelem"><a class="el" href="dir_d1b81cc433edb6118e3c3e3bc7700be0.html">stabilization</a></li><li class="navelem"><a class="el" href="stabilization__attitude__ref__quat__float_8h.html">stabilization_attitude_ref_quat_float.h</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:03:02 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:03:17 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

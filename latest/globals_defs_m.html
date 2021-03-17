@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -156,6 +156,9 @@ $(document).ready(function(){initNavTree('globals_defs_m.html','');});
 <li>M_OF_MM
 : <a class="el" href="group__math__geodetic__int.html#gad03183a10a0abd52538f3c4fc943519a">pprz_geodetic_int.h</a>
 </li>
+<li>M_PI_FLOAT
+: <a class="el" href="cc2500__compat_8c.html#a20eab1a4c8e87ffa87b9e2fc52945c39">cc2500_compat.c</a>
+</li>
 <li>M_SQRT2
 : <a class="el" href="group__math__algebra__float.html#ga66b3ab30f1332874326ed93969e496e0">pprz_algebra_float.h</a>
 </li>
@@ -193,8 +196,8 @@ $(document).ready(function(){initNavTree('globals_defs_m.html','');});
 : <a class="el" href="group__math__algebra__int.html#gaeee9cfe0a5a7a8bdc1103e32b472e3c8">pprz_algebra_int.h</a>
 </li>
 <li>MAG_FROZEN_COUNT
-: <a class="el" href="ins__float__invariant_8c.html#ad7ae60851002ff485abaf4835191f9de">ins_float_invariant.c</a>
-, <a class="el" href="ahrs__float__invariant_8c.html#ad7ae60851002ff485abaf4835191f9de">ahrs_float_invariant.c</a>
+: <a class="el" href="ahrs__float__invariant_8c.html#ad7ae60851002ff485abaf4835191f9de">ahrs_float_invariant.c</a>
+, <a class="el" href="ins__float__invariant_8c.html#ad7ae60851002ff485abaf4835191f9de">ins_float_invariant.c</a>
 </li>
 <li>MAG_HMC58XX_SENDER_ID
 : <a class="el" href="abi__sender__ids_8h.html#a74c06df7637c15f4e997f94e38270b97">abi_sender_ids.h</a>
@@ -330,6 +333,15 @@ $(document).ready(function(){initNavTree('globals_defs_m.html','');});
 </li>
 <li>MAT_SUM_c
 : <a class="el" href="pprz__simple__matrix_8h.html#a5124ce74d7efcd92da2068cea53908a7">pprz_simple_matrix.h</a>
+</li>
+<li>MATEKSYS_3901_L0X_COMPENSATE_ROTATION
+: <a class="el" href="mateksys__3901__l0x_8c.html#acbb3561371e5e1ce0dd23f2d8fc88f39">mateksys_3901_l0x.c</a>
+</li>
+<li>MATEKSYS_3901_L0X_DISTANCE_THRES
+: <a class="el" href="mateksys__3901__l0x_8c.html#a6bcdb3daeb7ad1de31525971bcfa080a">mateksys_3901_l0x.c</a>
+</li>
+<li>MATEKSYS_3901_L0X_MOTION_THRES
+: <a class="el" href="mateksys__3901__l0x_8c.html#a988b306761adb7fc541795fae520fc36">mateksys_3901_l0x.c</a>
 </li>
 <li>MAVLINK_ALIGNED_FIELDS
 : <a class="el" href="mavlink_8h.html#a66ac6e7995651b5a5cb317194c1f46e0">mavlink.h</a>
@@ -471,20 +483,20 @@ $(document).ready(function(){initNavTree('globals_defs_m.html','');});
 , <a class="el" href="tiny__2_81_8h.html#a0bcba718f0d39a93820b2691de8c1ea3">tiny_2.1.h</a>
 </li>
 <li>MAX1168_EOC_PINSEL
-: <a class="el" href="booz__1_80_8h.html#aaa37fe060b308c5808f70b01dda594af">booz_1.0.h</a>
-, <a class="el" href="hbmini__1_80_8h.html#aaa37fe060b308c5808f70b01dda594af">hbmini_1.0.h</a>
-, <a class="el" href="tiny__0_899_8h.html#aaa37fe060b308c5808f70b01dda594af">tiny_0.99.h</a>
-, <a class="el" href="tiny__1_81_8h.html#aaa37fe060b308c5808f70b01dda594af">tiny_1.1.h</a>
+: <a class="el" href="tiny__1_81_8h.html#aaa37fe060b308c5808f70b01dda594af">tiny_1.1.h</a>
 , <a class="el" href="tiny__2_80_8h.html#aaa37fe060b308c5808f70b01dda594af">tiny_2.0.h</a>
 , <a class="el" href="tiny__2_81_8h.html#aaa37fe060b308c5808f70b01dda594af">tiny_2.1.h</a>
+, <a class="el" href="booz__1_80_8h.html#aaa37fe060b308c5808f70b01dda594af">booz_1.0.h</a>
+, <a class="el" href="hbmini__1_80_8h.html#aaa37fe060b308c5808f70b01dda594af">hbmini_1.0.h</a>
+, <a class="el" href="tiny__0_899_8h.html#aaa37fe060b308c5808f70b01dda594af">tiny_0.99.h</a>
 </li>
 <li>MAX1168_EOC_PINSEL_BIT
-: <a class="el" href="hbmini__1_80_8h.html#a71c3b1fdd7659914d02a8bf6264be3eb">hbmini_1.0.h</a>
+: <a class="el" href="booz__1_80_8h.html#a71c3b1fdd7659914d02a8bf6264be3eb">booz_1.0.h</a>
+, <a class="el" href="hbmini__1_80_8h.html#a71c3b1fdd7659914d02a8bf6264be3eb">hbmini_1.0.h</a>
 , <a class="el" href="tiny__0_899_8h.html#a71c3b1fdd7659914d02a8bf6264be3eb">tiny_0.99.h</a>
 , <a class="el" href="tiny__1_81_8h.html#a71c3b1fdd7659914d02a8bf6264be3eb">tiny_1.1.h</a>
 , <a class="el" href="tiny__2_80_8h.html#a71c3b1fdd7659914d02a8bf6264be3eb">tiny_2.0.h</a>
 , <a class="el" href="tiny__2_81_8h.html#a71c3b1fdd7659914d02a8bf6264be3eb">tiny_2.1.h</a>
-, <a class="el" href="booz__1_80_8h.html#a71c3b1fdd7659914d02a8bf6264be3eb">booz_1.0.h</a>
 </li>
 <li>MAX1168_EOC_PINSEL_VAL
 : <a class="el" href="booz__1_80_8h.html#a1347ad37483e68bb377d42aa75d93cd4">booz_1.0.h</a>
@@ -541,6 +553,9 @@ $(document).ready(function(){initNavTree('globals_defs_m.html','');});
 <li>MAX_AIRSPEED
 : <a class="el" href="guidance__hybrid_8c.html#a2f33a76a9b4666dd67e1640c684b7956">guidance_hybrid.c</a>
 </li>
+<li>MAX_AUX_CHANNEL_COUNT
+: <a class="el" href="cc2500__rx_8h.html#a3f1b98913c712a9aeabc0a8c7e01da43">cc2500_rx.h</a>
+</li>
 <li>MAX_AV_NB_SAMPLE
 : <a class="el" href="adc_8h.html#a66ebc63de71cc36b02ef080d9e990bac">adc.h</a>
 </li>
@@ -549,6 +564,12 @@ $(document).ready(function(){initNavTree('globals_defs_m.html','');});
 </li>
 <li>MAX_COUNT_PT
 : <a class="el" href="linear__flow__fit_8c.html#af78a3f26a6a8035bc0ca9cedebf02dfb">linear_flow_fit.c</a>
+</li>
+<li>MAX_DATAIDS
+: <a class="el" href="cc2500__smartport_8c.html#ac764c4e40811f21bedbf0e744463362b">cc2500_smartport.c</a>
+</li>
+<li>MAX_DECELERATION
+: <a class="el" href="guidance__indi__hybrid_8c.html#a02fa83ca0d6013b25e7f577f5e13d4d8">guidance_indi_hybrid.c</a>
 </li>
 <li>MAX_DIST_CARROT
 : <a class="el" href="nav_8c.html#ab1ea324968aaab7cb5e252bd5f22e76c">nav.c</a>
@@ -591,11 +612,17 @@ $(document).ready(function(){initNavTree('globals_defs_m.html','');});
 : <a class="el" href="rover__guidance_8c.html#aa0cd35f1088f9e822fc414e23e02cab6">rover_guidance.c</a>
 , <a class="el" href="rover__guidance__holonomic_8c.html#aa0cd35f1088f9e822fc414e23e02cab6">rover_guidance_holonomic.c</a>
 </li>
+<li>MAX_INVALID_PULS_TIME
+: <a class="el" href="cc2500__rx_8c.html#abd3cc4350cc26f6fa704228259c1bfd5">cc2500_rx.c</a>
+</li>
 <li>MAX_LINES_X
 : <a class="el" href="nav__cube_8c.html#a4b68381ec1530ae49c1149b5948ec1b5">nav_cube.c</a>
 </li>
 <li>MAX_MEDIAN_DATASIZE
 : <a class="el" href="median__filter_8h.html#aa15766e94ec3e4f43219b9884d7307ed">median_filter.h</a>
+</li>
+<li>MAX_MISSING_PKT
+: <a class="el" href="cc2500__frsky__shared_8h.html#a78be210adf8a347a51e26bd626463046">cc2500_frsky_shared.h</a>
 </li>
 <li>MAX_PACKET_SIZE
 : <a class="el" href="usb__msc__hw_8c.html#a879456c3b8e2853f7044d764e9c180d4">usb_msc_hw.c</a>
@@ -624,6 +651,9 @@ $(document).ready(function(){initNavTree('globals_defs_m.html','');});
 : <a class="el" href="stabilization__attitude__euler__float_8c.html#a5b0a3448308cccbf6109d3cb2f00c40a">stabilization_attitude_euler_float.c</a>
 , <a class="el" href="stabilization__attitude__euler__int_8c.html#a5b0a3448308cccbf6109d3cb2f00c40a">stabilization_attitude_euler_int.c</a>
 , <a class="el" href="stabilization__rate_8c.html#a5b0a3448308cccbf6109d3cb2f00c40a">stabilization_rate.c</a>
+</li>
+<li>MAX_SUPPORTED_RC_CHANNEL_COUNT
+: <a class="el" href="cc2500__rx_8h.html#a23a4b36772ae532226741133369ee211">cc2500_rx.h</a>
 </li>
 <li>MAX_uint16_T
 : <a class="el" href="rtwtypes_8h.html#a5f69d019adce227ecfb104b7139aa52a">rtwtypes.h</a>
@@ -853,19 +883,29 @@ $(document).ready(function(){initNavTree('globals_defs_m.html','');});
 <li>MF_DAQ_SIZE
 : <a class="el" href="meteo__france__DAQ_8h.html#a5b714423089337cc0badeb175cd27caf">meteo_france_DAQ.h</a>
 </li>
+<li>MICRORL_LIB_VER
+: <a class="el" href="microrlConfig_8h.html#a4f2a2ecac3f5047d62b666381beca344">microrlConfig.h</a>
+</li>
+<li>micros
+: <a class="el" href="cc2500__compat_8h.html#af04b03ecd784400b6957697f7584ec58">cc2500_compat.h</a>
+</li>
 <li>MilliAmpereOfAdc
-: <a class="el" href="v4_80_2px4fmu_8h.html#a4d130fa14265d4aefded214285df4915">px4fmu.h</a>
+: <a class="el" href="crazybee__f4__1_80_8h.html#a4d130fa14265d4aefded214285df4915">crazybee_f4_1.0.h</a>
+, <a class="el" href="v4_80_2px4fmu_8h.html#a4d130fa14265d4aefded214285df4915">px4fmu.h</a>
 , <a class="el" href="px4fmu__2_84_8h.html#a4d130fa14265d4aefded214285df4915">px4fmu_2.4.h</a>
-, <a class="el" href="px4fmu__4_80_8h.html#a4d130fa14265d4aefded214285df4915">px4fmu_4.0.h</a>
 , <a class="el" href="electrical_8c.html#a4d130fa14265d4aefded214285df4915">electrical.c</a>
+</li>
+<li>millis
+: <a class="el" href="cc2500__compat_8h.html#ad5b3ec1ce839fa1c4337a7d0312e9749">cc2500_compat.h</a>
+</li>
+<li>MIN
+: <a class="el" href="sdLog_8c.html#a74e75242132eaabbc1c512488a135926">sdLog.c</a>
+, <a class="el" href="cc2500__compat_8h.html#a3acffbd305ee72dcd4593c0d8af64a4f">cc2500_compat.h</a>
 </li>
 <li>Min
 : <a class="el" href="esc__dshot_8c.html#a202767af7f06cef8e1c69d9771f157c3">esc_dshot.c</a>
 , <a class="el" href="rotorcraft_2main__fbw_8c.html#a202767af7f06cef8e1c69d9771f157c3">main_fbw.c</a>
 , <a class="el" href="common__flight__plan_8h.html#a202767af7f06cef8e1c69d9771f157c3">common_flight_plan.h</a>
-</li>
-<li>MIN
-: <a class="el" href="sdLog_8c.html#a74e75242132eaabbc1c512488a135926">sdLog.c</a>
 </li>
 <li>MIN_ARMING_TRIG
 : <a class="el" href="opa__controller__fbw_8c.html#ac1731ef682faababe7582977463d3b3e">opa_controller_fbw.c</a>
@@ -1176,6 +1216,9 @@ $(document).ready(function(){initNavTree('globals_defs_m.html','');});
 </li>
 <li>MOTOR_MIXING_TRIM_YAW
 : <a class="el" href="motor__mixing_8c.html#a39beb241f4c1584e6a0e73a0a6048cdc">motor_mixing.c</a>
+</li>
+<li>MOTOR_RE_ARM_TIME
+: <a class="el" href="autopilot__arming__yaw_8h.html#ad2f55be9cfe5afe254e323737f93fa46">autopilot_arming_yaw.h</a>
 </li>
 <li>MOTOR_YAW_SIGN
 : <a class="el" href="motor__mixing__types_8h.html#afab49a83c7c75338e61f7fd6503e0c0c">motor_mixing_types.h</a>
@@ -2295,6 +2338,15 @@ $(document).ready(function(){initNavTree('globals_defs_m.html','');});
 </li>
 <li>MSGQ_HEAP
 : <a class="el" href="msg__queue_8c.html#afe3984fe4fa160d5aa65e531e83e5b04">msg_queue.c</a>
+</li>
+<li>MSP2_IS_SENSOR_MESSAGE
+: <a class="el" href="mateksys__3901__l0x_8h.html#a0d4fcc2a2663c85012a6d9774fabf569">mateksys_3901_l0x.h</a>
+</li>
+<li>MSP2_SENSOR_OPTIC_FLOW
+: <a class="el" href="mateksys__3901__l0x_8h.html#afe6b1b0239a05d057a8744367c8b3836">mateksys_3901_l0x.h</a>
+</li>
+<li>MSP2_SENSOR_RANGEFINDER
+: <a class="el" href="mateksys__3901__l0x_8h.html#ae0b2563e88ff04369dc17ed76416b072">mateksys_3901_l0x.h</a>
 </li>
 <li>MT9F002_ADDRESS
 : <a class="el" href="mt9f002__regs_8h.html#a85bdf24d1dbc1602a80a236cb32aad56">mt9f002_regs.h</a>
@@ -4576,9 +4628,12 @@ $(document).ready(function(){initNavTree('globals_defs_m.html','');});
 <li>MY_ASSERT
 : <a class="el" href="pprz__debug_8h.html#a78ad58d87261accf641b594aed279329">pprz_debug.h</a>
 </li>
+<li>MY_PARACHUTE_RADIUS
+: <a class="el" href="uav__recovery_8h.html#abee20da471a3dc60ee688b214e8510c1">uav_recovery.h</a>
+</li>
 <li>MyByteSwap16
-: <a class="el" href="test__bswap_8c.html#a642f54a19ece780e662177a07d007fbf">test_bswap.c</a>
-, <a class="el" href="stm32_2mcu__arch_8h.html#a8cbdb764f8f91c3316423d59485f3a13">mcu_arch.h</a>
+: <a class="el" href="stm32_2mcu__arch_8h.html#a8cbdb764f8f91c3316423d59485f3a13">mcu_arch.h</a>
+, <a class="el" href="test__bswap_8c.html#a642f54a19ece780e662177a07d007fbf">test_bswap.c</a>
 </li>
 <li>MyByteSwap16_1
 : <a class="el" href="test__bswap_8c.html#a8d1da4990e0811523a1fc2bf0c2248bc">test_bswap.c</a>
@@ -4595,7 +4650,7 @@ $(document).ready(function(){initNavTree('globals_defs_m.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri May 15 2020 04:04:12 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:04:31 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

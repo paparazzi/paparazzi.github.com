@@ -1,48 +1,49 @@
 <map id="gpio_get" name="gpio_get">
 <area shape="rect" id="node2" href="$boards_2ardrone_2actuators_8c.html#ad8d796514edd55dd0f4a2134fd83f691" title="actuators_ardrone_motor\l_status" alt="" coords="131,5,317,47"/>
 <area shape="rect" id="node4" href="$lia_2baro__board_8c.html#a4f551582db51f22b12e4d07b3fcb600f" title="baro_eoc" alt="" coords="183,82,265,109"/>
-<area shape="rect" id="node6" href="$chibios_2mcu__periph_2uart__arch_8c.html#a23bf3e40bbfbb4a53c546fc158086f9f" title="TX handler. " alt="" coords="165,154,283,181"/>
-<area shape="rect" id="node7" href="$stm32_2subsystems_2imu_2imu__aspirin__arch_8h.html#aa848c00f7d5b5143b7db5b6337d1e230" title="imu_aspirin_eoc" alt="" coords="161,205,287,231"/>
-<area shape="rect" id="node8" href="$stm32_2peripherals_2hmc5843__arch_8h.html#acd369327ebe1b867cebf4b3dc17bd37d" title="mag_eoc" alt="" coords="183,255,265,282"/>
-<area shape="rect" id="node11" href="$stm32_2uart__tunnel_8c.html#a319a645047f275499aa30b0bc08c6e10" title="main_event" alt="" coords="175,306,273,333"/>
-<area shape="rect" id="node19" href="$group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b" title="Microcontroller peripherals initialization. " alt="" coords="186,362,262,389"/>
-<area shape="rect" id="node27" href="$opa__controller__fbw_8c.html#aba9670bd5ed3cc4bac2fd2e8caeb050b" title="opa_controller_periodic" alt="" coords="139,666,309,693"/>
-<area shape="rect" id="node28" href="$softi2c_8c.html#a9e7492d54676bfe31b964f2430dcbf58" title="softi2c_gpio_read" alt="" coords="157,514,291,541"/>
-<area shape="rect" id="node29" href="$softi2c_8c.html#a688954bbf22651068611c16ffd44abb1" title="softi2c_read_bit" alt="" coords="402,565,525,591"/>
-<area shape="rect" id="node42" href="$softi2c_8c.html#aadbee361430868c06c776b2f2e5ad29f" title="softi2c_write_bit" alt="" coords="401,615,525,642"/>
-<area shape="rect" id="node43" href="$softi2c_8c.html#a0a290bb3e426004548796dc35f433b39" title="softi2c_write_restart" alt="" coords="624,463,775,490"/>
-<area shape="rect" id="node44" href="$softi2c_8c.html#aec892d5f421d666723fb58c9132e7088" title="softi2c_write_stop" alt="" coords="631,514,767,541"/>
-<area shape="rect" id="node45" href="$spektrum_8c.html#aff8033ce4ec3eca45caafb45d2ba6760" title="spektrum_try_bind" alt="" coords="153,717,295,743"/>
-<area shape="rect" id="node46" href="$subsystems_2datalink_2superbitrf_8h.html#a3dba487ecc02fb6e7bdde994032fd795" title="The superbitrf on event call. " alt="" coords="161,767,287,794"/>
+<area shape="rect" id="node6" href="$cc2500__compat_8h.html#acc61717cfc2498f47df604de3f0278e9" title="bf_IORead" alt="" coords="181,154,267,181"/>
+<area shape="rect" id="node7" href="$chibios_2mcu__periph_2uart__arch_8c.html#a23bf3e40bbfbb4a53c546fc158086f9f" title="TX handler. " alt="" coords="165,205,283,231"/>
+<area shape="rect" id="node8" href="$stm32_2subsystems_2imu_2imu__aspirin__arch_8h.html#aa848c00f7d5b5143b7db5b6337d1e230" title="imu_aspirin_eoc" alt="" coords="161,255,287,282"/>
+<area shape="rect" id="node9" href="$stm32_2peripherals_2hmc5843__arch_8h.html#acd369327ebe1b867cebf4b3dc17bd37d" title="mag_eoc" alt="" coords="183,306,265,333"/>
+<area shape="rect" id="node12" href="$stm32_2uart__tunnel_8c.html#a319a645047f275499aa30b0bc08c6e10" title="main_event" alt="" coords="175,357,273,383"/>
+<area shape="rect" id="node20" href="$group__mcu__periph.html#ga9af744358ff4b1e3e33d7dd170862f9b" title="Microcontroller peripherals initialization. " alt="" coords="186,407,262,434"/>
+<area shape="rect" id="node28" href="$opa__controller__fbw_8c.html#aba9670bd5ed3cc4bac2fd2e8caeb050b" title="opa_controller_periodic" alt="" coords="139,711,309,738"/>
+<area shape="rect" id="node29" href="$softi2c_8c.html#a9e7492d54676bfe31b964f2430dcbf58" title="softi2c_gpio_read" alt="" coords="157,610,291,637"/>
+<area shape="rect" id="node30" href="$softi2c_8c.html#a688954bbf22651068611c16ffd44abb1" title="softi2c_read_bit" alt="" coords="402,565,525,591"/>
+<area shape="rect" id="node43" href="$softi2c_8c.html#aadbee361430868c06c776b2f2e5ad29f" title="softi2c_write_bit" alt="" coords="401,615,525,642"/>
+<area shape="rect" id="node44" href="$softi2c_8c.html#a0a290bb3e426004548796dc35f433b39" title="softi2c_write_restart" alt="" coords="624,463,775,490"/>
+<area shape="rect" id="node45" href="$softi2c_8c.html#aec892d5f421d666723fb58c9132e7088" title="softi2c_write_stop" alt="" coords="631,514,767,541"/>
+<area shape="rect" id="node46" href="$spektrum_8c.html#aff8033ce4ec3eca45caafb45d2ba6760" title="spektrum_try_bind" alt="" coords="153,762,295,789"/>
+<area shape="rect" id="node47" href="$subsystems_2datalink_2superbitrf_8h.html#a3dba487ecc02fb6e7bdde994032fd795" title="The superbitrf on event call. " alt="" coords="161,813,287,839"/>
 <area shape="rect" id="node3" href="$boards_2ardrone_2actuators_8h.html#a1e5faec000e4e1602bba080db2aec27c" title="actuators_ardrone_commit" alt="" coords="365,7,561,34"/>
 <area shape="rect" id="node5" href="$lia_2baro__board_8c.html#a9b25546908842f1d38fc56e438d46e21" title="baro_init" alt="" coords="425,58,502,85"/>
-<area shape="rect" id="node9" href="$hmc5843_8h.html#a46613c2c46ce03746f184a11df775d6a" title="hmc5843_idle_task" alt="" coords="391,109,536,135"/>
-<area shape="rect" id="node10" href="$mag__hmc5843_8h.html#a880fdee482292937a14f6aee33208f22" title="hmc5843_module_event" alt="" coords="609,109,789,135"/>
-<area shape="rect" id="node12" href="$stm32_2uart__tunnel_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="436,159,491,186"/>
-<area shape="rect" id="node13" href="$rotorcraft_2main__chibios_8c.html#a1bd1ec0fdc597d88ee659889cda25c0a" title="thd_ap" alt="" coords="430,210,497,237"/>
-<area shape="rect" id="node15" href="$nps__autopilot__rotorcraft_8c.html#a12870aaa609d4860004be3cec4c8cf2a" title="nps_autopilot_run_step" alt="" coords="378,261,549,287"/>
-<area shape="rect" id="node14" href="$rotorcraft_2main__chibios_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Main function. " alt="" coords="672,210,727,237"/>
-<area shape="rect" id="node16" href="$nps__main__sitl_8c.html#a9a080385e191a932860731e6f511c775" title="nps_main_run_sim_step" alt="" coords="611,261,788,287"/>
-<area shape="rect" id="node17" href="$nps__main__sitl_8c.html#afa201657c19f3eac2d07487bb11a261d" title="nps_main_loop" alt="" coords="880,261,999,287"/>
-<area shape="rect" id="node18" href="$nps__main__sitl_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="1139,261,1194,287"/>
-<area shape="rect" id="node20" href="$lpc21_2uart__tunnel_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="436,311,491,338"/>
-<area shape="rect" id="node21" href="$demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="423,362,503,389"/>
-<area shape="rect" id="node25" href="$fixedwing_2main__fbw_8h.html#ad86b7fe577a2414df2c7a5a9222aa45a" title="init_fbw" alt="" coords="429,413,498,439"/>
-<area shape="rect" id="node22" href="$demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1807,401,1862,427"/>
-<area shape="rect" id="node23" href="$nps__autopilot__rotorcraft_8c.html#a3348493e992edd2442581c1d09446b4b" title="nps_autopilot_init" alt="" coords="632,311,767,338"/>
-<area shape="rect" id="node24" href="$nps__main__hitl_8c.html#a72ef549ee35deec8c017e83d9de38f66" title="nps_radio_and_autopilot_init" alt="" coords="837,311,1041,338"/>
-<area shape="rect" id="node26" href="$sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="664,413,735,439"/>
-<area shape="rect" id="node30" href="$softi2c_8c.html#aa20d39b61646e34b1eacfa85d092524e" title="softi2c_write_byte" alt="" coords="631,565,767,591"/>
-<area shape="rect" id="node41" href="$softi2c_8c.html#af53603cab17d074df7f2daea8826e423" title="softi2c_read_byte" alt="" coords="632,615,767,642"/>
-<area shape="rect" id="node31" href="$softi2c_8c.html#ad94e633dd55968bdb12b7289d2e85d0f" title="softi2c_process_transaction" alt="" coords="839,514,1039,541"/>
-<area shape="rect" id="node32" href="$softi2c_8c.html#a25e9e1f40150fe875f3f75fd2b079618" title="softi2c_device_event" alt="" coords="1089,514,1244,541"/>
-<area shape="rect" id="node33" href="$softi2c_8h.html#a00f14c5101231479a8ceab61ae4cad7c" title="softi2c_event" alt="" coords="1292,514,1399,541"/>
-<area shape="rect" id="node40" href="$softi2c_8c.html#aed568f0595bee56e4e90ef070ba0a5c9" title="softi2c_spin" alt="" coords="1297,463,1394,490"/>
-<area shape="rect" id="node34" href="$group__mcu__periph.html#gaf44fd3e4d3d56943e4d0e89100974b07" title="MCU event functions. " alt="" coords="1447,514,1540,541"/>
-<area shape="rect" id="node35" href="$demo__ahrs__actuators_8c.html#a1cd23e45d5c51116ae1e3096912ea1d1" title="main_event_task" alt="" coords="1588,413,1719,439"/>
-<area shape="rect" id="node36" href="$fixedwing_2main__ap_8h.html#a2b4e383f6a21da5bad019df0b3891508" title="event_task_ap" alt="" coords="1596,514,1711,541"/>
-<area shape="rect" id="node38" href="$rover_2main__ap_8h.html#ad0fb4f12833cb2f0b4c69fa317ea24d9" title="main_event" alt="" coords="1605,565,1702,591"/>
-<area shape="rect" id="node39" href="$fixedwing_2main__fbw_8h.html#ae1f060d6fcf56653e3db62e402c8701a" title="event_task_fbw" alt="" coords="1593,463,1713,490"/>
-<area shape="rect" id="node37" href="$sim__ap_8c.html#a4f982dacbb35ccfc3e0fcaa64156a2a0" title="sim_periodic_task" alt="" coords="1767,477,1903,503"/>
-<area shape="rect" id="node47" href="$superbitrf__rc_8c.html#a760dbd4fa3f62cc43524fc420c2a9e5f" title="RC event function with handler callback. " alt="" coords="394,760,533,801"/>
+<area shape="rect" id="node10" href="$hmc5843_8h.html#a46613c2c46ce03746f184a11df775d6a" title="hmc5843_idle_task" alt="" coords="391,109,536,135"/>
+<area shape="rect" id="node11" href="$mag__hmc5843_8h.html#a880fdee482292937a14f6aee33208f22" title="hmc5843_module_event" alt="" coords="609,109,789,135"/>
+<area shape="rect" id="node13" href="$stm32_2uart__tunnel_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="436,159,491,186"/>
+<area shape="rect" id="node14" href="$rotorcraft_2main__chibios_8c.html#a1bd1ec0fdc597d88ee659889cda25c0a" title="thd_ap" alt="" coords="430,210,497,237"/>
+<area shape="rect" id="node16" href="$nps__autopilot__rotorcraft_8c.html#a12870aaa609d4860004be3cec4c8cf2a" title="nps_autopilot_run_step" alt="" coords="378,261,549,287"/>
+<area shape="rect" id="node15" href="$rotorcraft_2main__chibios_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Main function. " alt="" coords="672,210,727,237"/>
+<area shape="rect" id="node17" href="$nps__main__sitl_8c.html#a9a080385e191a932860731e6f511c775" title="nps_main_run_sim_step" alt="" coords="611,261,788,287"/>
+<area shape="rect" id="node18" href="$nps__main__sitl_8c.html#afa201657c19f3eac2d07487bb11a261d" title="nps_main_loop" alt="" coords="880,261,999,287"/>
+<area shape="rect" id="node19" href="$nps__main__sitl_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="1139,261,1194,287"/>
+<area shape="rect" id="node21" href="$lpc21_2uart__tunnel_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="436,311,491,338"/>
+<area shape="rect" id="node22" href="$demo__ahrs__actuators_8c.html#afaa8374e20b79aaf7cfcea5ad9467ab1" title="main_init" alt="" coords="423,362,503,389"/>
+<area shape="rect" id="node26" href="$fixedwing_2main__fbw_8h.html#ad86b7fe577a2414df2c7a5a9222aa45a" title="init_fbw" alt="" coords="429,413,498,439"/>
+<area shape="rect" id="node23" href="$demo__ahrs__actuators_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1807,401,1862,427"/>
+<area shape="rect" id="node24" href="$nps__autopilot__rotorcraft_8c.html#a3348493e992edd2442581c1d09446b4b" title="nps_autopilot_init" alt="" coords="632,311,767,338"/>
+<area shape="rect" id="node25" href="$nps__main__hitl_8c.html#a72ef549ee35deec8c017e83d9de38f66" title="nps_radio_and_autopilot_init" alt="" coords="837,311,1041,338"/>
+<area shape="rect" id="node27" href="$sim__ap_8c.html#a739fbef2e03619a863b4d7fd8d0da157" title="sim_init" alt="" coords="664,413,735,439"/>
+<area shape="rect" id="node31" href="$softi2c_8c.html#aa20d39b61646e34b1eacfa85d092524e" title="softi2c_write_byte" alt="" coords="631,565,767,591"/>
+<area shape="rect" id="node42" href="$softi2c_8c.html#af53603cab17d074df7f2daea8826e423" title="softi2c_read_byte" alt="" coords="632,615,767,642"/>
+<area shape="rect" id="node32" href="$softi2c_8c.html#ad94e633dd55968bdb12b7289d2e85d0f" title="softi2c_process_transaction" alt="" coords="839,514,1039,541"/>
+<area shape="rect" id="node33" href="$softi2c_8c.html#a25e9e1f40150fe875f3f75fd2b079618" title="softi2c_device_event" alt="" coords="1089,514,1244,541"/>
+<area shape="rect" id="node34" href="$softi2c_8h.html#a00f14c5101231479a8ceab61ae4cad7c" title="softi2c_event" alt="" coords="1292,514,1399,541"/>
+<area shape="rect" id="node41" href="$softi2c_8c.html#aed568f0595bee56e4e90ef070ba0a5c9" title="softi2c_spin" alt="" coords="1297,463,1394,490"/>
+<area shape="rect" id="node35" href="$group__mcu__periph.html#gaf44fd3e4d3d56943e4d0e89100974b07" title="MCU event functions. " alt="" coords="1447,514,1540,541"/>
+<area shape="rect" id="node36" href="$demo__ahrs__actuators_8c.html#a1cd23e45d5c51116ae1e3096912ea1d1" title="main_event_task" alt="" coords="1588,413,1719,439"/>
+<area shape="rect" id="node37" href="$fixedwing_2main__ap_8h.html#a2b4e383f6a21da5bad019df0b3891508" title="event_task_ap" alt="" coords="1596,514,1711,541"/>
+<area shape="rect" id="node39" href="$rover_2main__ap_8h.html#ad0fb4f12833cb2f0b4c69fa317ea24d9" title="main_event" alt="" coords="1605,565,1702,591"/>
+<area shape="rect" id="node40" href="$fixedwing_2main__fbw_8h.html#ae1f060d6fcf56653e3db62e402c8701a" title="event_task_fbw" alt="" coords="1593,463,1713,490"/>
+<area shape="rect" id="node38" href="$sim__ap_8c.html#a4f982dacbb35ccfc3e0fcaa64156a2a0" title="sim_periodic_task" alt="" coords="1767,477,1903,503"/>
+<area shape="rect" id="node48" href="$superbitrf__rc_8c.html#a760dbd4fa3f62cc43524fc420c2a9e5f" title="RC event function with handler callback. " alt="" coords="394,805,533,847"/>
 </map>

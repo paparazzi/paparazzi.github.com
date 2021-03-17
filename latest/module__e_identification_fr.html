@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -136,8 +136,8 @@ Periodic Functions</h2>
 <ul>
 <li><a class="el" href="e__identification__fr_8c.html#adee1fc2c32943b008809e72689e4db90">e_identification_fr_periodic()</a><ul>
 <li>Frequency in Hz: <em>4</em> </li>
-<li>Autorun: <em>FALSE</em> <br />
- Periodic function is started by user command.</li>
+<li>Autorun: <em>TRUE</em> <br />
+ Periodic function automatically starts after init.</li>
 </ul>
 </li>
 </ul>
@@ -164,11 +164,18 @@ Raw e_identification_fr.xml file:</h2>
 <div class="line">    &lt;configure name=&quot;E_ID_PORT&quot; value=&quot;UARTx&quot; description=&quot;UART where the e-id device is connected to (UART1, UART2, etc&quot;/&gt;</div>
 <div class="line">    &lt;configure name=&quot;E_ID_BAUD&quot; value=&quot;B115200&quot; description=&quot;UART baud rate&quot;/&gt;</div>
 <div class="line">  &lt;/doc&gt;</div>
+<div class="line">  &lt;settings&gt;</div>
+<div class="line">    &lt;dl_settings&gt;</div>
+<div class="line">      &lt;dl_settings name=&quot;eID&quot;&gt;</div>
+<div class="line">        &lt;dl_setting shortname=&quot;e_id_running&quot; var=&quot;e_identification_started&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;1&quot; values=&quot;STOPPED|RUNNING&quot;/&gt;</div>
+<div class="line">      &lt;/dl_settings&gt;</div>
+<div class="line">    &lt;/dl_settings&gt;</div>
+<div class="line">  &lt;/settings&gt;</div>
 <div class="line">  &lt;header&gt;</div>
 <div class="line">    &lt;file name=&quot;e_identification_fr.h&quot;/&gt;</div>
 <div class="line">  &lt;/header&gt;</div>
 <div class="line">  &lt;init fun=&quot;e_identification_fr_init()&quot;/&gt;</div>
-<div class="line">  &lt;periodic fun=&quot;e_identification_fr_periodic()&quot; freq=&quot;4&quot; autorun=&quot;FALSE&quot;/&gt;</div>
+<div class="line">  &lt;periodic fun=&quot;e_identification_fr_periodic()&quot; freq=&quot;4&quot; autorun=&quot;TRUE&quot;/&gt;</div>
 <div class="line">  &lt;makefile target=&quot;ap&quot;&gt;</div>
 <div class="line">    &lt;configure name=&quot;E_ID_PORT&quot;  case=&quot;upper|lower&quot;/&gt;</div>
 <div class="line">    &lt;configure name=&quot;E_ID_BAUD&quot; default=&quot;B115200&quot;/&gt;</div>
@@ -186,7 +193,7 @@ Raw e_identification_fr.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:03:41 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:03:59 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

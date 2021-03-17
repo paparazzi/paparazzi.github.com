@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -107,14 +107,8 @@ $(document).ready(function(){initNavTree('module__formation_flight.html','');});
 <p>No detailed description...</p>
 <h1><a class="anchor" id="module_load_example__formation_flight"></a>
 Example for airframe file</h1>
-<p>Add to your firmware section: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;module name=&quot;traffic_info&quot;/&gt;</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;&lt;module name=&quot;formation_flight&quot;/&gt;</div>
-</div><!-- fragment --> <h1><a class="anchor" id="dependencies__formation_flight"></a>
-Dependencies</h1>
-<ul>
-<li><a class="el" href="module__traffic_info.html">traffic_info module</a> </li>
-</ul>
-<h1><a class="anchor" id="functions__formation_flight"></a>
+<p>Add to your firmware section: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;module name=&quot;formation_flight&quot;/&gt;</div>
+</div><!-- fragment --> <h1><a class="anchor" id="functions__formation_flight"></a>
 Module functions</h1>
 <h2><a class="anchor" id="init_functions"></a>
 Init Functions</h2>
@@ -162,7 +156,9 @@ Raw formation_flight.xml file:</h2>
 <div class="line">      &lt;/dl_settings&gt;</div>
 <div class="line">    &lt;/dl_settings&gt;</div>
 <div class="line">  &lt;/settings&gt;</div>
-<div class="line">  &lt;depends&gt;traffic_info&lt;/depends&gt;</div>
+<div class="line">  &lt;dep&gt;</div>
+<div class="line">    &lt;depends&gt;traffic_info&lt;/depends&gt;</div>
+<div class="line">  &lt;/dep&gt;</div>
 <div class="line">  &lt;header&gt;</div>
 <div class="line">    &lt;file name=&quot;formation.h&quot;/&gt;</div>
 <div class="line">  &lt;/header&gt;</div>
@@ -180,7 +176,7 @@ Raw formation_flight.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:03:42 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:04:00 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

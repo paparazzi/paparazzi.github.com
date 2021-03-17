@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -107,12 +107,11 @@ $(document).ready(function(){initNavTree('module__rpm_sensor.html','');});
 <p>It uses an PWM input to measure the period between pulses.</p>
 <h1><a class="anchor" id="module_load_example__rpm_sensor"></a>
 Example for airframe file</h1>
-<p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;module name=&quot;pwm_meas&quot;/&gt;</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;&lt;module name=&quot;rpm_sensor&quot;&gt;</div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;  &lt;define name=&quot;RPM_PULSE_PER_RND&quot; value=&quot;14&quot; /&gt;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;  &lt;define name=&quot;RPM_FILTER_TAU&quot; value=&quot;0.3&quot; /&gt;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;  &lt;configure name=&quot;RPM_PWM_CHANNEL&quot; value=&quot;PWM_INPUTX&quot; /&gt;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;&lt;/module&gt;</div>
+<p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;module name=&quot;rpm_sensor&quot;&gt;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;  &lt;define name=&quot;RPM_PULSE_PER_RND&quot; value=&quot;14&quot; /&gt;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;  &lt;define name=&quot;RPM_FILTER_TAU&quot; value=&quot;0.3&quot; /&gt;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;  &lt;configure name=&quot;RPM_PWM_CHANNEL&quot; value=&quot;PWM_INPUTX&quot; /&gt;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;&lt;/module&gt;</div>
 </div><!-- fragment --> <h1><a class="anchor" id="configuration__rpm_sensor"></a>
 Module configuration options</h1>
 <h2><a class="anchor" id="configure"></a>
@@ -128,11 +127,6 @@ Define Options</h2>
  Description: Amount of pulses per round</li>
 <li><b>name:</b> <code>RPM_FILTER_TAU</code> <b>value:</b> <em>0.3</em> <br />
  Description: 1/cut-off-frequency = filter time</li>
-</ul>
-<h1><a class="anchor" id="dependencies__rpm_sensor"></a>
-Dependencies</h1>
-<ul>
-<li><a class="el" href="module__pwm_meas.html">pwm_meas module</a> </li>
 </ul>
 <h1><a class="anchor" id="functions__rpm_sensor"></a>
 Module functions</h1>
@@ -179,7 +173,9 @@ Raw rpm_sensor.xml file:</h2>
 <div class="line">    &lt;define name=&quot;RPM_PULSE_PER_RND&quot; value=&quot;14&quot; description=&quot;Amount of pulses per round&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;RPM_FILTER_TAU&quot; value=&quot;0.3&quot; description=&quot;1/cut-off-frequency = filter time&quot;/&gt;</div>
 <div class="line">  &lt;/doc&gt;</div>
-<div class="line">  &lt;depends&gt;pwm_meas&lt;/depends&gt;</div>
+<div class="line">  &lt;dep&gt;</div>
+<div class="line">    &lt;depends&gt;pwm_meas&lt;/depends&gt;</div>
+<div class="line">  &lt;/dep&gt;</div>
 <div class="line">  &lt;header&gt;</div>
 <div class="line">    &lt;file name=&quot;rpm_sensor.h&quot;/&gt;</div>
 <div class="line">  &lt;/header&gt;</div>
@@ -201,7 +197,7 @@ Raw rpm_sensor.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:03:39 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:03:57 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -147,7 +147,7 @@ Macros</h2></td></tr>
 <tr class="separator:a3a634f62950d9948fe7be4560b8253fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5fa13ddcc126f97c90ca68526e7c771"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="video__thread_8c.html#ae5fa13ddcc126f97c90ca68526e7c771">VIDEO_THREAD_VERBOSE</a>&#160;&#160;&#160;0</td></tr>
 <tr class="separator:ae5fa13ddcc126f97c90ca68526e7c771"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada5dbe07b293da66f28dd1fb2c4f48e9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="video__thread_8c.html#ada5dbe07b293da66f28dd1fb2c4f48e9">printf_debug</a>&#160;&#160;&#160;if(<a class="el" href="video__thread_8c.html#ae5fa13ddcc126f97c90ca68526e7c771">VIDEO_THREAD_VERBOSE</a> &gt; 0) printf</td></tr>
+<tr class="memitem:ada5dbe07b293da66f28dd1fb2c4f48e9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="video__thread_8c.html#ada5dbe07b293da66f28dd1fb2c4f48e9">printf_debug</a>&#160;&#160;&#160;<a class="el" href="e__identification__fr_8c.html#a92cffae21318c1d983c63f3afa2a8d87">if</a>(<a class="el" href="video__thread_8c.html#ae5fa13ddcc126f97c90ca68526e7c771">VIDEO_THREAD_VERBOSE</a> &gt; 0) printf</td></tr>
 <tr class="separator:ada5dbe07b293da66f28dd1fb2c4f48e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0f21f9e77da0895e31da6d6497b9d09"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="video__thread_8c.html#ab0f21f9e77da0895e31da6d6497b9d09">IMG_FLT_SIZE</a>&#160;&#160;&#160;272</td></tr>
 <tr class="separator:ab0f21f9e77da0895e31da6d6497b9d09"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -203,7 +203,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define printf_debug&#160;&#160;&#160;if(<a class="el" href="video__thread_8c.html#ae5fa13ddcc126f97c90ca68526e7c771">VIDEO_THREAD_VERBOSE</a> &gt; 0) printf</td>
+          <td class="memname">#define printf_debug&#160;&#160;&#160;<a class="el" href="e__identification__fr_8c.html#a92cffae21318c1d983c63f3afa2a8d87">if</a>(<a class="el" href="video__thread_8c.html#ae5fa13ddcc126f97c90ca68526e7c771">VIDEO_THREAD_VERBOSE</a> &gt; 0) printf</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -474,7 +474,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="video__thread_8c_source.html#l00090">90</a> of file <a class="el" href="video__thread_8c_source.html">video_thread.c</a>.</p>
 
-<p>References <a class="el" href="bayer_8h_source.html#l00039">BayerToYUV()</a>, <a class="el" href="libisp_8c_source.html#l00177">configure_isp()</a>, <a class="el" href="cv_8c_source.html#l00177">cv_run_device()</a>, <a class="el" href="video__device_8h_source.html#l00040">video_thread_t::dev</a>, <a class="el" href="video__device_8h_source.html#l00059">video_config_t::dev_name</a>, <a class="el" href="video__device_8h_source.html#l00064">video_config_t::filters</a>, <a class="el" href="video__device_8h_source.html#l00067">video_config_t::fps</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00068">get_sys_time_usec()</a>, <a class="el" href="image_8c_source.html#l00043">image_create()</a>, <a class="el" href="image_8c_source.html#l00069">image_free()</a>, <a class="el" href="image_8h_source.html#l00036">IMAGE_YUV422</a>, <a class="el" href="video__thread_8c.html#ab0f21f9e77da0895e31da6d6497b9d09">IMG_FLT_SIZE</a>, <a class="el" href="video__device_8h_source.html#l00039">video_thread_t::is_running</a>, <a class="el" href="rt__priority_8h_source.html#l00069">set_nice_level()</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00095">sys_time_usleep()</a>, <a class="el" href="video__device_8h_source.html#l00065">video_config_t::thread</a>, <a class="el" href="v4l2_8c_source.html#l00418">v4l2_image_free()</a>, <a class="el" href="v4l2_8c_source.html#l00344">v4l2_image_get()</a>, <a class="el" href="v4l2_8c_source.html#l00439">v4l2_start_capture()</a>, <a class="el" href="video__device_8h_source.html#l00034">VIDEO_FILTER_DEBAYER</a>, <a class="el" href="video__device_8h_source.html#l00035">VIDEO_FILTER_ISP</a>, and <a class="el" href="video__thread_8c_source.html#l00057">VIDEO_THREAD_NICE_LEVEL</a>.</p>
+<p>References <a class="el" href="bayer_8h_source.html#l00039">BayerToYUV()</a>, <a class="el" href="libisp_8c_source.html#l00177">configure_isp()</a>, <a class="el" href="cv_8c_source.html#l00178">cv_run_device()</a>, <a class="el" href="video__device_8h_source.html#l00040">video_thread_t::dev</a>, <a class="el" href="video__device_8h_source.html#l00059">video_config_t::dev_name</a>, <a class="el" href="video__device_8h_source.html#l00064">video_config_t::filters</a>, <a class="el" href="video__device_8h_source.html#l00067">video_config_t::fps</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00068">get_sys_time_usec()</a>, <a class="el" href="image_8c_source.html#l00043">image_create()</a>, <a class="el" href="image_8c_source.html#l00075">image_free()</a>, <a class="el" href="image_8h_source.html#l00036">IMAGE_YUV422</a>, <a class="el" href="video__thread_8c.html#ab0f21f9e77da0895e31da6d6497b9d09">IMG_FLT_SIZE</a>, <a class="el" href="video__device_8h_source.html#l00039">video_thread_t::is_running</a>, <a class="el" href="rt__priority_8h_source.html#l00069">set_nice_level()</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00095">sys_time_usleep()</a>, <a class="el" href="video__device_8h_source.html#l00065">video_config_t::thread</a>, <a class="el" href="v4l2_8c_source.html#l00418">v4l2_image_free()</a>, <a class="el" href="v4l2_8c_source.html#l00344">v4l2_image_get()</a>, <a class="el" href="v4l2_8c_source.html#l00439">v4l2_start_capture()</a>, <a class="el" href="video__device_8h_source.html#l00034">VIDEO_FILTER_DEBAYER</a>, <a class="el" href="video__device_8h_source.html#l00035">VIDEO_FILTER_ISP</a>, and <a class="el" href="video__thread_8c_source.html#l00057">VIDEO_THREAD_NICE_LEVEL</a>.</p>
 
 <p>Referenced by <a class="el" href="video__thread_8c_source.html#l00233">start_video_thread()</a>.</p>
 
@@ -611,7 +611,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_304e79c9f5d09ea65a2f55aafb6a6b9d.html">computer_vision</a></li><li class="navelem"><a class="el" href="video__thread_8c.html">video_thread.c</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:03:10 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:03:25 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

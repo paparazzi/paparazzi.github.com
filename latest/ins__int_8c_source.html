@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -429,7 +429,7 @@ $(document).ready(function(){initNavTree('ins__int_8c_source.html','');});
 <div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;</div>
 <div class="line"><a name="l00337"></a><span class="lineno"><a class="line" href="ins__int_8c.html#a92209191a3ecc53fc4adaafd0fe82933">  337</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="ins__int_8c.html#a92209191a3ecc53fc4adaafd0fe82933">baro_cb</a>(<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> __attribute__((unused)) sender_id, __attribute__((unused)) <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> stamp, <span class="keywordtype">float</span> pressure)</div>
 <div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;{</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;  <span class="keywordflow">if</span> (pressure &lt; 1.f)</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;  <span class="keywordflow">if</span> (pressure &lt; 1.<a class="code" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a>)</div>
 <div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;  {</div>
 <div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    <span class="comment">// bad baro pressure, don&#39;t use</span></div>
 <div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    <span class="keywordflow">return</span>;</div>
@@ -531,11 +531,11 @@ $(document).ready(function(){initNavTree('ins__int_8c_source.html','');});
 <div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;  <span class="comment">/* horizontal gps transformed to NED in meters as float */</span></div>
 <div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;  <span class="keyword">struct </span><a class="code" href="group__math__algebra__float.html#structFloatVect2">FloatVect2</a> gps_pos_m_ned;</div>
 <div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;  <a class="code" href="group__math__algebra__generic.html#gae66e6252850359fedeb491ae52ae2b92">VECT2_ASSIGN</a>(gps_pos_m_ned, gps_pos_cm_ned.<a class="code" href="group__math__geodetic__int.html#adafb8b35c7dbb285cfc4e60ff0a789aa">x</a>, gps_pos_cm_ned.<a class="code" href="group__math__geodetic__int.html#a77400e63c3818f1e638d15355675e356">y</a>);</div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;  <a class="code" href="group__math__algebra__generic.html#ga8c085b8a08dc01ca2728946f371e6d2e">VECT2_SDIV</a>(gps_pos_m_ned, gps_pos_m_ned, 100.0f);</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;  <a class="code" href="group__math__algebra__generic.html#ga8c085b8a08dc01ca2728946f371e6d2e">VECT2_SDIV</a>(gps_pos_m_ned, gps_pos_m_ned, 100.0<a class="code" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a>);</div>
 <div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;</div>
 <div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;  <span class="keyword">struct </span><a class="code" href="group__math__algebra__float.html#structFloatVect2">FloatVect2</a> gps_speed_m_s_ned;</div>
 <div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;  <a class="code" href="group__math__algebra__generic.html#gae66e6252850359fedeb491ae52ae2b92">VECT2_ASSIGN</a>(gps_speed_m_s_ned, gps_speed_cm_s_ned.<a class="code" href="group__math__geodetic__int.html#adafb8b35c7dbb285cfc4e60ff0a789aa">x</a>, gps_speed_cm_s_ned.<a class="code" href="group__math__geodetic__int.html#a77400e63c3818f1e638d15355675e356">y</a>);</div>
-<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;  <a class="code" href="group__math__algebra__generic.html#ga8c085b8a08dc01ca2728946f371e6d2e">VECT2_SDIV</a>(gps_speed_m_s_ned, gps_speed_m_s_ned, 100.f);</div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;  <a class="code" href="group__math__algebra__generic.html#ga8c085b8a08dc01ca2728946f371e6d2e">VECT2_SDIV</a>(gps_speed_m_s_ned, gps_speed_m_s_ned, 100.<a class="code" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a>);</div>
 <div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;</div>
 <div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="ins__int_8c.html#a01b85d3295bc283aac03af14d8e481de">ins_int</a>.<a class="code" href="ins__int_8h.html#ac45d0fd27c15171b6040b7163054db5c">hf_realign</a>) {</div>
 <div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;    <a class="code" href="ins__int_8c.html#a01b85d3295bc283aac03af14d8e481de">ins_int</a>.<a class="code" href="ins__int_8h.html#ac45d0fd27c15171b6040b7163054db5c">hf_realign</a> = <span class="keyword">false</span>;</div>
@@ -677,17 +677,17 @@ $(document).ready(function(){initNavTree('ins__int_8c_source.html','');});
 <div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;  <a class="code" href="hf__float_8c.html#a9ff927aa8ccc5c01b188bf11e728ae33">hff_update_vel</a>(vel,  Rvel);</div>
 <div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;  ins_update_from_hff();</div>
 <div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;  <span class="keywordflow">if</span> (noise_x &gt;= 0.f)</div>
+<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;  <span class="keywordflow">if</span> (noise_x &gt;= 0.<a class="code" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a>)</div>
 <div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;  {</div>
 <div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;    <a class="code" href="ins__int_8c.html#a01b85d3295bc283aac03af14d8e481de">ins_int</a>.<a class="code" href="ins__int_8h.html#a926aac03155fa6277ecb06540e034314">ltp_speed</a>.<a class="code" href="group__math__geodetic__int.html#adafb8b35c7dbb285cfc4e60ff0a789aa">x</a> = <a class="code" href="group__math__algebra__int.html#gaf665ad3da6b5c3589c19d7bdc66e8fc4">SPEED_BFP_OF_REAL</a>(vel_ned.<a class="code" href="group__math__algebra__float.html#aa44c74404cf8ef0b143066e970352adb">x</a>);</div>
 <div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;  }</div>
-<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;  <span class="keywordflow">if</span> (noise_y &gt;= 0.f)</div>
+<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;  <span class="keywordflow">if</span> (noise_y &gt;= 0.<a class="code" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a>)</div>
 <div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;  {</div>
 <div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;    <a class="code" href="ins__int_8c.html#a01b85d3295bc283aac03af14d8e481de">ins_int</a>.<a class="code" href="ins__int_8h.html#a926aac03155fa6277ecb06540e034314">ltp_speed</a>.<a class="code" href="group__math__geodetic__int.html#a77400e63c3818f1e638d15355675e356">y</a> = <a class="code" href="group__math__algebra__int.html#gaf665ad3da6b5c3589c19d7bdc66e8fc4">SPEED_BFP_OF_REAL</a>(vel_ned.<a class="code" href="group__math__algebra__float.html#ac5e44e02fe71768bf56eb39a14f3cc5b">y</a>);</div>
 <div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;  }</div>
 <div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;</div>
 <div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;  <span class="keyword">static</span> <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> last_stamp_x = 0, last_stamp_y = 0;</div>
-<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;  <span class="keywordflow">if</span> (noise_x &gt;= 0.f) {</div>
+<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;  <span class="keywordflow">if</span> (noise_x &gt;= 0.<a class="code" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a>) {</div>
 <div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;    <span class="keywordflow">if</span> (last_stamp_x &gt; 0)</div>
 <div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;    {</div>
 <div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;      <span class="keywordtype">float</span> dt = (float)(stamp - last_stamp_x) * 1e-6;</div>
@@ -696,7 +696,7 @@ $(document).ready(function(){initNavTree('ins__int_8c_source.html','');});
 <div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;    last_stamp_x = stamp;</div>
 <div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;  }</div>
 <div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;</div>
-<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;  <span class="keywordflow">if</span> (noise_y &gt;= 0.f)</div>
+<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;  <span class="keywordflow">if</span> (noise_y &gt;= 0.<a class="code" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a>)</div>
 <div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;  {</div>
 <div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;    <span class="keywordflow">if</span> (last_stamp_y &gt; 0)</div>
 <div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;    {</div>
@@ -731,11 +731,11 @@ $(document).ready(function(){initNavTree('ins__int_8c_source.html','');});
 <div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;  <a class="code" href="hf__float_8c.html#aebc6ad05bcec6d17a462c427ac9a07a0">hff_update_pos</a>(pos, Rpos);</div>
 <div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;  ins_update_from_hff();</div>
 <div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;  <span class="keywordflow">if</span> (noise_x &gt;= 0.f)</div>
+<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;  <span class="keywordflow">if</span> (noise_x &gt;= 0.<a class="code" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a>)</div>
 <div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;  {</div>
 <div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;    <a class="code" href="ins__int_8c.html#a01b85d3295bc283aac03af14d8e481de">ins_int</a>.<a class="code" href="ins__int_8h.html#a8c79f80a571473ffebea9409c9eb044e">ltp_pos</a>.<a class="code" href="group__math__geodetic__int.html#adafb8b35c7dbb285cfc4e60ff0a789aa">x</a> = <a class="code" href="group__math__algebra__int.html#gadf322ab1574f7999563eaaedce920522">POS_BFP_OF_REAL</a>(x);</div>
 <div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;  }</div>
-<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;  <span class="keywordflow">if</span> (noise_y &gt;= 0.f)</div>
+<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;  <span class="keywordflow">if</span> (noise_y &gt;= 0.<a class="code" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a>)</div>
 <div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;  {</div>
 <div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;    <a class="code" href="ins__int_8c.html#a01b85d3295bc283aac03af14d8e481de">ins_int</a>.<a class="code" href="ins__int_8h.html#a8c79f80a571473ffebea9409c9eb044e">ltp_pos</a>.<a class="code" href="group__math__geodetic__int.html#a77400e63c3818f1e638d15355675e356">y</a> = <a class="code" href="group__math__algebra__int.html#gadf322ab1574f7999563eaaedce920522">POS_BFP_OF_REAL</a>(y);</div>
 <div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;  }</div>
@@ -844,6 +844,7 @@ $(document).ready(function(){initNavTree('ins__int_8c_source.html','');});
 <div class="ttc" id="ins_8c_html_ac9ba03cf9d41e4536c73f218d3439e76"><div class="ttname"><a href="ins_8c.html#ac9ba03cf9d41e4536c73f218d3439e76">ins_init_origin_i_from_flightplan</a></div><div class="ttdeci">void ins_init_origin_i_from_flightplan(struct LtpDef_i *ltp_def)</div><div class="ttdoc">initialize the local origin (ltp_def in fixed point) from flight plan position </div><div class="ttdef"><b>Definition:</b> <a href="ins_8c_source.html#l00039">ins.c:39</a></div></div>
 <div class="ttc" id="group__math__algebra__float_html_gaba11f83e0b801a4b10a5f4b417eca171"><div class="ttname"><a href="group__math__algebra__float.html#gaba11f83e0b801a4b10a5f4b417eca171">float_quat_vmult</a></div><div class="ttdeci">void float_quat_vmult(struct FloatVect3 *v_out, struct FloatQuat *q, const struct FloatVect3 *v_in)</div><div class="ttdoc">rotate 3D vector by quaternion. </div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__float_8c_source.html#l00421">pprz_algebra_float.c:421</a></div></div>
 <div class="ttc" id="ins__int_8c_html_aacd6b1869f263f90a6f1fbe777a87793"><div class="ttname"><a href="ins__int_8c.html#aacd6b1869f263f90a6f1fbe777a87793">accel_cb</a></div><div class="ttdeci">static void accel_cb(uint8_t sender_id, uint32_t stamp, struct Int32Vect3 *accel)</div><div class="ttdef"><b>Definition:</b> <a href="ins__int_8c_source.html#l00549">ins_int.c:549</a></div></div>
+<div class="ttc" id="wedgebug_8c_html_a05fd2dba3354a98f1a00b7c7ffc12b13"><div class="ttname"><a href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a></div><div class="ttdeci">uint16_t f</div><div class="ttdoc">Camera baseline, in meters (i.e. horizontal distance between the two cameras of the stereo setup) ...</div><div class="ttdef"><b>Definition:</b> <a href="wedgebug_8c_source.html#l00204">wedgebug.c:204</a></div></div>
 <div class="ttc" id="pprz__geodetic__int_8h_html"><div class="ttname"><a href="pprz__geodetic__int_8h.html">pprz_geodetic_int.h</a></div><div class="ttdoc">Paparazzi fixed point math for geodetic calculations. </div></div>
 <div class="ttc" id="group__math__algebra__int_html_gaaff21c8123f18d9cc35a508791489263"><div class="ttname"><a href="group__math__algebra__int.html#gaaff21c8123f18d9cc35a508791489263">int32_quat_vmult</a></div><div class="ttdeci">void int32_quat_vmult(struct Int32Vect3 *v_out, struct Int32Quat *q, struct Int32Vect3 *v_in)</div><div class="ttdoc">rotate 3D vector by quaternion. </div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__int_8c_source.html#l00353">pprz_algebra_int.c:353</a></div></div>
 <div class="ttc" id="vf__extended__float_8c_html_a2358072559748851df8c44c975c43ebb"><div class="ttname"><a href="vf__extended__float_8c.html#a2358072559748851df8c44c975c43ebb">vff_init_zero</a></div><div class="ttdeci">void vff_init_zero(void)</div><div class="ttdef"><b>Definition:</b> <a href="vf__extended__float_8c_source.html#l00107">vf_extended_float.c:107</a></div></div>
@@ -862,7 +863,7 @@ $(document).ready(function(){initNavTree('ins__int_8c_source.html','');});
 <div class="ttc" id="ins__int_8h_html_ae19fc5aab05a383cb10c89ad6da2840a"><div class="ttname"><a href="ins__int_8h.html#ae19fc5aab05a383cb10c89ad6da2840a">InsInt::ltp_accel</a></div><div class="ttdeci">struct NedCoor_i ltp_accel</div><div class="ttdef"><b>Definition:</b> <a href="ins__int_8h_source.html#l00058">ins_int.h:58</a></div></div>
 <div class="ttc" id="ins__int_8c_html_a4b10a2b22edd0fa141f15558eef71b17"><div class="ttname"><a href="ins__int_8c.html#a4b10a2b22edd0fa141f15558eef71b17">INS_BARO_MAX_INIT_VAR</a></div><div class="ttdeci">#define INS_BARO_MAX_INIT_VAR</div><div class="ttdoc">default barometer to use in INS </div><div class="ttdef"><b>Definition:</b> <a href="ins__int_8c_source.html#l00110">ins_int.c:110</a></div></div>
 <div class="ttc" id="ins__int_8h_html_a1d12a85b7661adba1fd8c1662f05aa2b"><div class="ttname"><a href="ins__int_8h.html#a1d12a85b7661adba1fd8c1662f05aa2b">InsInt::baro_z</a></div><div class="ttdeci">float baro_z</div><div class="ttdoc">z-position calculated from baro in meters (z-down) </div><div class="ttdef"><b>Definition:</b> <a href="ins__int_8h_source.html#l00061">ins_int.h:61</a></div></div>
-<div class="ttc" id="stm32_2usb__ser__hw_8c_html_af2dab4ea4560c93acc64b4418db49f84"><div class="ttname"><a href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a></div><div class="ttdeci">static const struct usb_device_descriptor dev</div><div class="ttdef"><b>Definition:</b> <a href="stm32_2usb__ser__hw_8c_source.html#l00073">usb_ser_hw.c:73</a></div></div>
+<div class="ttc" id="stm32_2usb__ser__hw_8c_html_af2dab4ea4560c93acc64b4418db49f84"><div class="ttname"><a href="stm32_2usb__ser__hw_8c.html#af2dab4ea4560c93acc64b4418db49f84">dev</a></div><div class="ttdeci">static const struct usb_device_descriptor dev</div><div class="ttdef"><b>Definition:</b> <a href="stm32_2usb__ser__hw_8c_source.html#l00074">usb_ser_hw.c:74</a></div></div>
 <div class="ttc" id="group__state__position_html_ga5938a2d96030881a6cc7534247857dc4"><div class="ttname"><a href="group__state__position.html#ga5938a2d96030881a6cc7534247857dc4">State::ned_origin_i</a></div><div class="ttdeci">struct LtpDef_i ned_origin_i</div><div class="ttdoc">Definition of the local (flat earth) coordinate system. </div><div class="ttdef"><b>Definition:</b> <a href="state_8h_source.html#l00166">state.h:166</a></div></div>
 <div class="ttc" id="group__math__algebra__generic_html_ga8c085b8a08dc01ca2728946f371e6d2e"><div class="ttname"><a href="group__math__algebra__generic.html#ga8c085b8a08dc01ca2728946f371e6d2e">VECT2_SDIV</a></div><div class="ttdeci">#define VECT2_SDIV(_vo, _vi, _s)</div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra_8h_source.html#l00104">pprz_algebra.h:104</a></div></div>
 <div class="ttc" id="ins__int_8h_html_ac8dd8a7c3a9513989faa54bda906405a"><div class="ttname"><a href="ins__int_8h.html#ac8dd8a7c3a9513989faa54bda906405a">InsInt::propagation_cnt</a></div><div class="ttdeci">uint32_t propagation_cnt</div><div class="ttdoc">number of propagation steps since the last measurement update </div><div class="ttdef"><b>Definition:</b> <a href="ins__int_8h_source.html#l00043">ins_int.h:43</a></div></div>
@@ -930,7 +931,7 @@ $(document).ready(function(){initNavTree('ins__int_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_800f0b451dc44a2b86d16d857cea778d.html">ins</a></li><li class="navelem"><a class="el" href="ins__int_8c.html">ins_int.c</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:02:36 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:02:49 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

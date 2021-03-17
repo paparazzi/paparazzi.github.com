@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -151,6 +151,17 @@ Macros</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a36545e3f7b1233bb331ff0952d01a9bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__skeleton_8c.html#a36545e3f7b1233bb331ff0952d01a9bc">ins_module_wrapper_init</a> (void)</td></tr>
 <tr class="separator:a36545e3f7b1233bb331ff0952d01a9bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a906e42c3bdc95d6fa78d129fbf20719e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__skeleton_8c.html#a906e42c3bdc95d6fa78d129fbf20719e">ins_ned_to_state</a> (void)</td></tr>
+<tr class="memdesc:a906e42c3bdc95d6fa78d129fbf20719e"><td class="mdescLeft">&#160;</td><td class="mdescRight">copy position and speed to state interface  <a href="#a906e42c3bdc95d6fa78d129fbf20719e">More...</a><br /></td></tr>
+<tr class="separator:a906e42c3bdc95d6fa78d129fbf20719e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92209191a3ecc53fc4adaafd0fe82933"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__skeleton_8c.html#a92209191a3ecc53fc4adaafd0fe82933">baro_cb</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> sender_id, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> stamp, float pressure)</td></tr>
+<tr class="separator:a92209191a3ecc53fc4adaafd0fe82933"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacd6b1869f263f90a6f1fbe777a87793"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__skeleton_8c.html#aacd6b1869f263f90a6f1fbe777a87793">accel_cb</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> sender_id, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> stamp, struct <a class="el" href="group__math__algebra__int.html#structInt32Vect3">Int32Vect3</a> *accel)</td></tr>
+<tr class="separator:aacd6b1869f263f90a6f1fbe777a87793"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c1656ce80fe1f1ad49fea691164dbf8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__skeleton_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8">gps_cb</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> sender_id, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> stamp, struct <a class="el" href="gps_8h.html#structGpsState">GpsState</a> *gps_s)</td></tr>
+<tr class="separator:a1c1656ce80fe1f1ad49fea691164dbf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5f6300c213088a4ea0598baafb5e736"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__skeleton_8c.html#ab5f6300c213088a4ea0598baafb5e736">body_to_imu_cb</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> sender_id, struct <a class="el" href="group__math__algebra__float.html#structFloatQuat">FloatQuat</a> *q_b2i_f)</td></tr>
+<tr class="separator:ab5f6300c213088a4ea0598baafb5e736"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa56482e32e97c2e358ca2cdd9293f5c0"><td class="memItemLeft" align="right" valign="top">void WEAK&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__skeleton_8c.html#aa56482e32e97c2e358ca2cdd9293f5c0">ins_module_init</a> (void)</td></tr>
 <tr class="separator:aa56482e32e97c2e358ca2cdd9293f5c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a13ebcd773aea5e000360c190f06606"><td class="memItemLeft" align="right" valign="top">void WEAK&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__skeleton_8c.html#a5a13ebcd773aea5e000360c190f06606">ins_module_update_baro</a> (float pressure)</td></tr>
@@ -164,17 +175,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a14cb66a86c67d8b9216a8c12f58c311b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__skeleton_8c.html#a14cb66a86c67d8b9216a8c12f58c311b">ins_reset_local_origin</a> (void)</td></tr>
 <tr class="memdesc:a14cb66a86c67d8b9216a8c12f58c311b"><td class="mdescLeft">&#160;</td><td class="mdescRight">INS local origin reset.  <a href="#a14cb66a86c67d8b9216a8c12f58c311b">More...</a><br /></td></tr>
 <tr class="separator:a14cb66a86c67d8b9216a8c12f58c311b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a906e42c3bdc95d6fa78d129fbf20719e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__skeleton_8c.html#a906e42c3bdc95d6fa78d129fbf20719e">ins_ned_to_state</a> (void)</td></tr>
-<tr class="memdesc:a906e42c3bdc95d6fa78d129fbf20719e"><td class="mdescLeft">&#160;</td><td class="mdescRight">copy position and speed to state interface  <a href="#a906e42c3bdc95d6fa78d129fbf20719e">More...</a><br /></td></tr>
-<tr class="separator:a906e42c3bdc95d6fa78d129fbf20719e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92209191a3ecc53fc4adaafd0fe82933"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__skeleton_8c.html#a92209191a3ecc53fc4adaafd0fe82933">baro_cb</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> sender_id, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> stamp, float pressure)</td></tr>
-<tr class="separator:a92209191a3ecc53fc4adaafd0fe82933"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aacd6b1869f263f90a6f1fbe777a87793"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__skeleton_8c.html#aacd6b1869f263f90a6f1fbe777a87793">accel_cb</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> sender_id, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> stamp, struct <a class="el" href="group__math__algebra__int.html#structInt32Vect3">Int32Vect3</a> *accel)</td></tr>
-<tr class="separator:aacd6b1869f263f90a6f1fbe777a87793"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c1656ce80fe1f1ad49fea691164dbf8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__skeleton_8c.html#a1c1656ce80fe1f1ad49fea691164dbf8">gps_cb</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> sender_id, <a class="el" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> stamp, struct <a class="el" href="gps_8h.html#structGpsState">GpsState</a> *gps_s)</td></tr>
-<tr class="separator:a1c1656ce80fe1f1ad49fea691164dbf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5f6300c213088a4ea0598baafb5e736"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ins__skeleton_8c.html#ab5f6300c213088a4ea0598baafb5e736">body_to_imu_cb</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> sender_id, struct <a class="el" href="group__math__algebra__float.html#structFloatQuat">FloatQuat</a> *q_b2i_f)</td></tr>
-<tr class="separator:ab5f6300c213088a4ea0598baafb5e736"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -209,7 +209,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ins__skeleton_8c_source.html#l00047">47</a> of file <a class="el" href="ins__skeleton_8c_source.html">ins_skeleton.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__skeleton_8c_source.html#l00153">ins_module_wrapper_init()</a>.</p>
+<p>Referenced by <a class="el" href="ins__skeleton_8c_source.html#l00223">ins_module_wrapper_init()</a>.</p>
 
 </div>
 </div>
@@ -228,7 +228,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ins__skeleton_8c_source.html#l00062">62</a> of file <a class="el" href="ins__skeleton_8c_source.html">ins_skeleton.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__skeleton_8c_source.html#l00153">ins_module_wrapper_init()</a>.</p>
+<p>Referenced by <a class="el" href="ins__skeleton_8c_source.html#l00223">ins_module_wrapper_init()</a>.</p>
 
 </div>
 </div>
@@ -246,7 +246,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ins__skeleton_8c_source.html#l00054">54</a> of file <a class="el" href="ins__skeleton_8c_source.html">ins_skeleton.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__skeleton_8c_source.html#l00153">ins_module_wrapper_init()</a>.</p>
+<p>Referenced by <a class="el" href="ins__skeleton_8c_source.html#l00223">ins_module_wrapper_init()</a>.</p>
 
 </div>
 </div>
@@ -303,11 +303,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__skeleton_8c_source.html#l00200">200</a> of file <a class="el" href="ins__skeleton_8c_source.html">ins_skeleton.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__skeleton_8c_source.html#l00100">100</a> of file <a class="el" href="ins__skeleton_8c_source.html">ins_skeleton.c</a>.</p>
 
-<p>References <a class="el" href="ins__skeleton_8c_source.html#l00115">ins_module_propagate()</a>, and <a class="el" href="ins__skeleton_8c_source.html#l00176">ins_ned_to_state()</a>.</p>
+<p>References <a class="el" href="ins__skeleton_8c_source.html#l00185">ins_module_propagate()</a>, and <a class="el" href="ins__skeleton_8c_source.html#l00076">ins_ned_to_state()</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__skeleton_8c_source.html#l00153">ins_module_wrapper_init()</a>.</p>
+<p>Referenced by <a class="el" href="ins__skeleton_8c_source.html#l00223">ins_module_wrapper_init()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -371,11 +371,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__skeleton_8c_source.html#l00193">193</a> of file <a class="el" href="ins__skeleton_8c_source.html">ins_skeleton.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__skeleton_8c_source.html#l00093">93</a> of file <a class="el" href="ins__skeleton_8c_source.html">ins_skeleton.c</a>.</p>
 
-<p>References <a class="el" href="ins__skeleton_8c_source.html#l00083">ins_module_update_baro()</a>, and <a class="el" href="ins__skeleton_8c_source.html#l00176">ins_ned_to_state()</a>.</p>
+<p>References <a class="el" href="ins__skeleton_8c_source.html#l00153">ins_module_update_baro()</a>, and <a class="el" href="ins__skeleton_8c_source.html#l00076">ins_ned_to_state()</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__skeleton_8c_source.html#l00153">ins_module_wrapper_init()</a>.</p>
+<p>Referenced by <a class="el" href="ins__skeleton_8c_source.html#l00223">ins_module_wrapper_init()</a>.</p>
 
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -433,11 +433,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__skeleton_8c_source.html#l00240">240</a> of file <a class="el" href="ins__skeleton_8c_source.html">ins_skeleton.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__skeleton_8c_source.html#l00140">140</a> of file <a class="el" href="ins__skeleton_8c_source.html">ins_skeleton.c</a>.</p>
 
 <p>References <a class="el" href="ins__skeleton_8h_source.html#l00053">InsModuleInt::body_to_imu</a>, <a class="el" href="ins__skeleton_8c_source.html#l00071">ins_module</a>, and <a class="el" href="pprz__orientation__conversion_8h_source.html#l00173">orientationSetQuat_f()</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__skeleton_8c_source.html#l00153">ins_module_wrapper_init()</a>.</p>
+<p>Referenced by <a class="el" href="ins__skeleton_8c_source.html#l00223">ins_module_wrapper_init()</a>.</p>
 
 <p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -501,11 +501,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__skeleton_8c_source.html#l00215">215</a> of file <a class="el" href="ins__skeleton_8c_source.html">ins_skeleton.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__skeleton_8c_source.html#l00115">115</a> of file <a class="el" href="ins__skeleton_8c_source.html">ins_skeleton.c</a>.</p>
 
-<p>References <a class="el" href="gps_8h_source.html#l00107">GpsState::fix</a>, <a class="el" href="ins__skeleton_8h_source.html#l00050">InsModuleInt::gps</a>, <a class="el" href="gps_8h_source.html#l00039">GPS_FIX_3D</a>, <a class="el" href="ins__skeleton_8c_source.html#l00071">ins_module</a>, <a class="el" href="ins__skeleton_8c_source.html#l00087">ins_module_update_gps()</a>, <a class="el" href="ins__skeleton_8c_source.html#l00176">ins_ned_to_state()</a>, <a class="el" href="ins__skeleton_8c_source.html#l00137">ins_reset_local_origin()</a>, and <a class="el" href="ins__skeleton_8h_source.html#l00042">InsModuleInt::ltp_initialized</a>.</p>
+<p>References <a class="el" href="gps_8h_source.html#l00107">GpsState::fix</a>, <a class="el" href="ins__skeleton_8h_source.html#l00050">InsModuleInt::gps</a>, <a class="el" href="gps_8h_source.html#l00039">GPS_FIX_3D</a>, <a class="el" href="ins__skeleton_8c_source.html#l00071">ins_module</a>, <a class="el" href="ins__skeleton_8c_source.html#l00157">ins_module_update_gps()</a>, <a class="el" href="ins__skeleton_8c_source.html#l00076">ins_ned_to_state()</a>, <a class="el" href="ins__skeleton_8c_source.html#l00207">ins_reset_local_origin()</a>, and <a class="el" href="ins__skeleton_8h_source.html#l00042">InsModuleInt::ltp_initialized</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__skeleton_8c_source.html#l00153">ins_module_wrapper_init()</a>.</p>
+<p>Referenced by <a class="el" href="ins__skeleton_8c_source.html#l00223">ins_module_wrapper_init()</a>.</p>
 
 <p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -545,9 +545,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__skeleton_8c_source.html#l00079">79</a> of file <a class="el" href="ins__skeleton_8c_source.html">ins_skeleton.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__skeleton_8c_source.html#l00149">149</a> of file <a class="el" href="ins__skeleton_8c_source.html">ins_skeleton.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__skeleton_8c_source.html#l00153">ins_module_wrapper_init()</a>.</p>
+<p>Referenced by <a class="el" href="ins__skeleton_8c_source.html#l00223">ins_module_wrapper_init()</a>.</p>
 
 <p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -586,11 +586,11 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__skeleton_8c_source.html#l00115">115</a> of file <a class="el" href="ins__skeleton_8c_source.html">ins_skeleton.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__skeleton_8c_source.html#l00185">185</a> of file <a class="el" href="ins__skeleton_8c_source.html">ins_skeleton.c</a>.</p>
 
 <p>References <a class="el" href="ins__skeleton_8h_source.html#l00053">InsModuleInt::body_to_imu</a>, <a class="el" href="ins__skeleton_8c_source.html#l00071">ins_module</a>, <a class="el" href="pprz__algebra__int_8c_source.html#l00117">int32_rmat_transp_vmult()</a>, <a class="el" href="ins__skeleton_8h_source.html#l00047">InsModuleInt::ltp_accel</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00207">orientationGetRMat_i()</a>, <a class="el" href="state_8h_source.html#l01119">stateGetNedToBodyRMat_i()</a>, <a class="el" href="state_8h_source.html#l00855">stateSetAccelBody_i()</a>, and <a class="el" href="pprz__algebra_8h_source.html#l00140">VECT3_COPY</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__skeleton_8c_source.html#l00200">accel_cb()</a>.</p>
+<p>Referenced by <a class="el" href="ins__skeleton_8c_source.html#l00100">accel_cb()</a>.</p>
 
 <p><div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -630,9 +630,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__skeleton_8c_source.html#l00128">128</a> of file <a class="el" href="ins__skeleton_8c_source.html">ins_skeleton.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__skeleton_8c_source.html#l00198">198</a> of file <a class="el" href="ins__skeleton_8c_source.html">ins_skeleton.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__skeleton_8c_source.html#l00137">ins_reset_local_origin()</a>.</p>
+<p>Referenced by <a class="el" href="ins__skeleton_8c_source.html#l00207">ins_reset_local_origin()</a>.</p>
 
 <p><div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -661,9 +661,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__skeleton_8c_source.html#l00083">83</a> of file <a class="el" href="ins__skeleton_8c_source.html">ins_skeleton.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__skeleton_8c_source.html#l00153">153</a> of file <a class="el" href="ins__skeleton_8c_source.html">ins_skeleton.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__skeleton_8c_source.html#l00193">baro_cb()</a>.</p>
+<p>Referenced by <a class="el" href="ins__skeleton_8c_source.html#l00093">baro_cb()</a>.</p>
 
 <p><div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -702,11 +702,11 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__skeleton_8c_source.html#l00087">87</a> of file <a class="el" href="ins__skeleton_8c_source.html">ins_skeleton.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__skeleton_8c_source.html#l00157">157</a> of file <a class="el" href="ins__skeleton_8c_source.html">ins_skeleton.c</a>.</p>
 
 <p>References <a class="el" href="gps_8h_source.html#l00091">GpsState::ecef_pos</a>, <a class="el" href="gps_8h_source.html#l00095">GpsState::ecef_vel</a>, <a class="el" href="gps_8h_source.html#l00048">GPS_VALID_POS_ECEF_BIT</a>, <a class="el" href="gps_8h_source.html#l00051">GPS_VALID_VEL_ECEF_BIT</a>, <a class="el" href="gps_8h_source.html#l00052">GPS_VALID_VEL_NED_BIT</a>, <a class="el" href="ins__skeleton_8c_source.html#l00071">ins_module</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00071">INT32_POS_OF_CM_DEN</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00070">INT32_POS_OF_CM_NUM</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00076">INT32_SPEED_OF_CM_S_DEN</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00075">INT32_SPEED_OF_CM_S_NUM</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00290">INT32_VECT3_SCALE_2</a>, <a class="el" href="ins__skeleton_8h_source.html#l00041">InsModuleInt::ltp_def</a>, <a class="el" href="ins__skeleton_8h_source.html#l00045">InsModuleInt::ltp_pos</a>, <a class="el" href="ins__skeleton_8h_source.html#l00046">InsModuleInt::ltp_speed</a>, <a class="el" href="pprz__geodetic__int_8c_source.html#l00116">ned_of_ecef_point_i()</a>, <a class="el" href="pprz__geodetic__int_8c_source.html#l00186">ned_of_ecef_vect_i()</a>, <a class="el" href="gps_8h_source.html#l00096">GpsState::ned_vel</a>, and <a class="el" href="gps_8h_source.html#l00088">GpsState::valid_fields</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__skeleton_8c_source.html#l00215">gps_cb()</a>.</p>
+<p>Referenced by <a class="el" href="ins__skeleton_8c_source.html#l00115">gps_cb()</a>.</p>
 
 <p><div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -746,9 +746,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__skeleton_8c_source.html#l00153">153</a> of file <a class="el" href="ins__skeleton_8c_source.html">ins_skeleton.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__skeleton_8c_source.html#l00223">223</a> of file <a class="el" href="ins__skeleton_8c_source.html">ins_skeleton.c</a>.</p>
 
-<p>References <a class="el" href="ins__skeleton_8c_source.html#l00200">accel_cb()</a>, <a class="el" href="ins__skeleton_8c_source.html#l00067">accel_ev</a>, <a class="el" href="ins__skeleton_8c_source.html#l00193">baro_cb()</a>, <a class="el" href="ins__skeleton_8c_source.html#l00066">baro_ev</a>, <a class="el" href="ins__skeleton_8c_source.html#l00240">body_to_imu_cb()</a>, <a class="el" href="ins__skeleton_8c_source.html#l00069">body_to_imu_ev</a>, <a class="el" href="ins__skeleton_8c_source.html#l00215">gps_cb()</a>, <a class="el" href="ins__skeleton_8c_source.html#l00068">gps_ev</a>, <a class="el" href="ins_8c_source.html#l00039">ins_init_origin_i_from_flightplan()</a>, <a class="el" href="ins__skeleton_8c_source.html#l00071">ins_module</a>, <a class="el" href="ins__skeleton_8c_source.html#l00047">INS_MODULE_BARO_ID</a>, <a class="el" href="ins__skeleton_8c_source.html#l00062">INS_MODULE_GPS_ID</a>, <a class="el" href="ins__skeleton_8c_source.html#l00054">INS_MODULE_IMU_ID</a>, <a class="el" href="ins__skeleton_8c_source.html#l00079">ins_module_init()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00288">INT32_VECT3_ZERO</a>, <a class="el" href="ins__skeleton_8h_source.html#l00047">InsModuleInt::ltp_accel</a>, <a class="el" href="ins__skeleton_8h_source.html#l00041">InsModuleInt::ltp_def</a>, <a class="el" href="ins__skeleton_8h_source.html#l00042">InsModuleInt::ltp_initialized</a>, <a class="el" href="ins__skeleton_8h_source.html#l00045">InsModuleInt::ltp_pos</a>, and <a class="el" href="ins__skeleton_8h_source.html#l00046">InsModuleInt::ltp_speed</a>.</p>
+<p>References <a class="el" href="ins__skeleton_8c_source.html#l00100">accel_cb()</a>, <a class="el" href="ins__skeleton_8c_source.html#l00067">accel_ev</a>, <a class="el" href="ins__skeleton_8c_source.html#l00093">baro_cb()</a>, <a class="el" href="ins__skeleton_8c_source.html#l00066">baro_ev</a>, <a class="el" href="ins__skeleton_8c_source.html#l00140">body_to_imu_cb()</a>, <a class="el" href="ins__skeleton_8c_source.html#l00069">body_to_imu_ev</a>, <a class="el" href="ins__skeleton_8c_source.html#l00115">gps_cb()</a>, <a class="el" href="ins__skeleton_8c_source.html#l00068">gps_ev</a>, <a class="el" href="ins_8c_source.html#l00039">ins_init_origin_i_from_flightplan()</a>, <a class="el" href="ins__skeleton_8c_source.html#l00071">ins_module</a>, <a class="el" href="ins__skeleton_8c_source.html#l00047">INS_MODULE_BARO_ID</a>, <a class="el" href="ins__skeleton_8c_source.html#l00062">INS_MODULE_GPS_ID</a>, <a class="el" href="ins__skeleton_8c_source.html#l00054">INS_MODULE_IMU_ID</a>, <a class="el" href="ins__skeleton_8c_source.html#l00149">ins_module_init()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00288">INT32_VECT3_ZERO</a>, <a class="el" href="ins__skeleton_8h_source.html#l00047">InsModuleInt::ltp_accel</a>, <a class="el" href="ins__skeleton_8h_source.html#l00041">InsModuleInt::ltp_def</a>, <a class="el" href="ins__skeleton_8h_source.html#l00042">InsModuleInt::ltp_initialized</a>, <a class="el" href="ins__skeleton_8h_source.html#l00045">InsModuleInt::ltp_pos</a>, and <a class="el" href="ins__skeleton_8h_source.html#l00046">InsModuleInt::ltp_speed</a>.</p>
 
 <p><div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -787,11 +787,11 @@ Variables</h2></td></tr>
 
 <p>copy position and speed to state interface </p>
 
-<p>Definition at line <a class="el" href="ins__skeleton_8c_source.html#l00176">176</a> of file <a class="el" href="ins__skeleton_8c_source.html">ins_skeleton.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__skeleton_8c_source.html#l00076">76</a> of file <a class="el" href="ins__skeleton_8c_source.html">ins_skeleton.c</a>.</p>
 
-<p>References <a class="el" href="ins__skeleton_8c_source.html#l00071">ins_module</a>, <a class="el" href="ins__skeleton_8h_source.html#l00047">InsModuleInt::ltp_accel</a>, <a class="el" href="ins__skeleton_8h_source.html#l00045">InsModuleInt::ltp_pos</a>, <a class="el" href="ins__skeleton_8h_source.html#l00046">InsModuleInt::ltp_speed</a>, <a class="el" href="nps__autopilot__fixedwing_8c_source.html#l00065">nps_bypass_ins</a>, <a class="el" href="nps__autopilot__fixedwing_8c_source.html#l00268">sim_overwrite_ins()</a>, <a class="el" href="state_8h_source.html#l00986">stateSetAccelNed_i()</a>, <a class="el" href="state_8h_source.html#l00531">stateSetPositionNed_i()</a>, and <a class="el" href="state_8h_source.html#l00763">stateSetSpeedNed_i()</a>.</p>
+<p>References <a class="el" href="ins__skeleton_8h_source.html#l00047">InsModuleInt::ltp_accel</a>, <a class="el" href="ins__skeleton_8h_source.html#l00045">InsModuleInt::ltp_pos</a>, <a class="el" href="ins__skeleton_8h_source.html#l00046">InsModuleInt::ltp_speed</a>, <a class="el" href="nps__autopilot__fixedwing_8c_source.html#l00065">nps_bypass_ins</a>, <a class="el" href="nps__autopilot__fixedwing_8c_source.html#l00268">sim_overwrite_ins()</a>, <a class="el" href="state_8h_source.html#l00986">stateSetAccelNed_i()</a>, <a class="el" href="state_8h_source.html#l00531">stateSetPositionNed_i()</a>, and <a class="el" href="state_8h_source.html#l00763">stateSetSpeedNed_i()</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__skeleton_8c_source.html#l00200">accel_cb()</a>, <a class="el" href="ins__skeleton_8c_source.html#l00193">baro_cb()</a>, and <a class="el" href="ins__skeleton_8c_source.html#l00215">gps_cb()</a>.</p>
+<p>Referenced by <a class="el" href="ins__skeleton_8c_source.html#l00100">accel_cb()</a>, <a class="el" href="ins__skeleton_8c_source.html#l00093">baro_cb()</a>, and <a class="el" href="ins__skeleton_8c_source.html#l00115">gps_cb()</a>.</p>
 
 <p><div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -835,11 +835,11 @@ Variables</h2></td></tr>
 <p>Reset horizontal and vertical reference to the current position. Does nothing if not implemented by specific INS algorithm.</p>
 <p>INS local origin reset. </p>
 
-<p>Definition at line <a class="el" href="ins__skeleton_8c_source.html#l00137">137</a> of file <a class="el" href="ins__skeleton_8c_source.html">ins_skeleton.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__skeleton_8c_source.html#l00207">207</a> of file <a class="el" href="ins__skeleton_8c_source.html">ins_skeleton.c</a>.</p>
 
-<p>References <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="gps_8h_source.html#l00091">GpsState::ecef_pos</a>, <a class="el" href="gps_8h_source.html#l00107">GpsState::fix</a>, <a class="el" href="ins__skeleton_8h_source.html#l00050">InsModuleInt::gps</a>, <a class="el" href="gps_8h_source.html#l00039">GPS_FIX_3D</a>, <a class="el" href="gps_8h_source.html#l00094">GpsState::hmsl</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00102">LtpDef_i::hmsl</a>, <a class="el" href="ins__skeleton_8c_source.html#l00071">ins_module</a>, <a class="el" href="ins__skeleton_8c_source.html#l00128">ins_module_reset_local_origin()</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00100">LtpDef_i::lla</a>, <a class="el" href="gps_8h_source.html#l00092">GpsState::lla_pos</a>, <a class="el" href="ins__skeleton_8h_source.html#l00041">InsModuleInt::ltp_def</a>, <a class="el" href="pprz__geodetic__int_8c_source.html#l00060">ltp_def_from_ecef_i()</a>, <a class="el" href="ins__skeleton_8h_source.html#l00042">InsModuleInt::ltp_initialized</a>, and <a class="el" href="state_8h_source.html#l00457">stateSetLocalOrigin_i()</a>.</p>
+<p>References <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="gps_8h_source.html#l00091">GpsState::ecef_pos</a>, <a class="el" href="gps_8h_source.html#l00107">GpsState::fix</a>, <a class="el" href="ins__skeleton_8h_source.html#l00050">InsModuleInt::gps</a>, <a class="el" href="gps_8h_source.html#l00039">GPS_FIX_3D</a>, <a class="el" href="gps_8h_source.html#l00094">GpsState::hmsl</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00102">LtpDef_i::hmsl</a>, <a class="el" href="ins__skeleton_8c_source.html#l00071">ins_module</a>, <a class="el" href="ins__skeleton_8c_source.html#l00198">ins_module_reset_local_origin()</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00100">LtpDef_i::lla</a>, <a class="el" href="gps_8h_source.html#l00092">GpsState::lla_pos</a>, <a class="el" href="ins__skeleton_8h_source.html#l00041">InsModuleInt::ltp_def</a>, <a class="el" href="pprz__geodetic__int_8c_source.html#l00060">ltp_def_from_ecef_i()</a>, <a class="el" href="ins__skeleton_8h_source.html#l00042">InsModuleInt::ltp_initialized</a>, and <a class="el" href="state_8h_source.html#l00457">stateSetLocalOrigin_i()</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__skeleton_8c_source.html#l00215">gps_cb()</a>.</p>
+<p>Referenced by <a class="el" href="ins__skeleton_8c_source.html#l00115">gps_cb()</a>.</p>
 
 <p><div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -886,7 +886,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ins__skeleton_8c_source.html#l00067">67</a> of file <a class="el" href="ins__skeleton_8c_source.html">ins_skeleton.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__skeleton_8c_source.html#l00153">ins_module_wrapper_init()</a>.</p>
+<p>Referenced by <a class="el" href="ins__skeleton_8c_source.html#l00223">ins_module_wrapper_init()</a>.</p>
 
 </div>
 </div>
@@ -910,7 +910,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ins__skeleton_8c_source.html#l00066">66</a> of file <a class="el" href="ins__skeleton_8c_source.html">ins_skeleton.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__skeleton_8c_source.html#l00153">ins_module_wrapper_init()</a>.</p>
+<p>Referenced by <a class="el" href="ins__skeleton_8c_source.html#l00223">ins_module_wrapper_init()</a>.</p>
 
 </div>
 </div>
@@ -934,7 +934,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ins__skeleton_8c_source.html#l00069">69</a> of file <a class="el" href="ins__skeleton_8c_source.html">ins_skeleton.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__skeleton_8c_source.html#l00153">ins_module_wrapper_init()</a>.</p>
+<p>Referenced by <a class="el" href="ins__skeleton_8c_source.html#l00223">ins_module_wrapper_init()</a>.</p>
 
 </div>
 </div>
@@ -958,7 +958,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ins__skeleton_8c_source.html#l00068">68</a> of file <a class="el" href="ins__skeleton_8c_source.html">ins_skeleton.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__skeleton_8c_source.html#l00153">ins_module_wrapper_init()</a>.</p>
+<p>Referenced by <a class="el" href="ins__skeleton_8c_source.html#l00223">ins_module_wrapper_init()</a>.</p>
 
 </div>
 </div>
@@ -976,7 +976,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ins__skeleton_8c_source.html#l00071">71</a> of file <a class="el" href="ins__skeleton_8c_source.html">ins_skeleton.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__skeleton_8c_source.html#l00240">body_to_imu_cb()</a>, <a class="el" href="ins__skeleton_8c_source.html#l00215">gps_cb()</a>, <a class="el" href="ins__skeleton_8c_source.html#l00115">ins_module_propagate()</a>, <a class="el" href="ins__skeleton_8c_source.html#l00087">ins_module_update_gps()</a>, <a class="el" href="ins__skeleton_8c_source.html#l00153">ins_module_wrapper_init()</a>, <a class="el" href="ins__skeleton_8c_source.html#l00176">ins_ned_to_state()</a>, and <a class="el" href="ins__skeleton_8c_source.html#l00137">ins_reset_local_origin()</a>.</p>
+<p>Referenced by <a class="el" href="ins__skeleton_8c_source.html#l00140">body_to_imu_cb()</a>, <a class="el" href="ins__skeleton_8c_source.html#l00115">gps_cb()</a>, <a class="el" href="ins__skeleton_8c_source.html#l00185">ins_module_propagate()</a>, <a class="el" href="ins__skeleton_8c_source.html#l00157">ins_module_update_gps()</a>, <a class="el" href="ins__skeleton_8c_source.html#l00223">ins_module_wrapper_init()</a>, and <a class="el" href="ins__skeleton_8c_source.html#l00207">ins_reset_local_origin()</a>.</p>
 
 </div>
 </div>
@@ -986,7 +986,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_12fb52dac4e3837dec02c6544f4d82f8.html">ins</a></li><li class="navelem"><a class="el" href="ins__skeleton_8c.html">ins_skeleton.c</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:03:16 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:03:31 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

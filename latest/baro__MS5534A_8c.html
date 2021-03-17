@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -413,12 +413,13 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{ \</div>
-<div class="line">    if (<a class="code" href="baro__MS5534A_8c.html#adb089738f21dfd53058d83bc522cce13">status_read_data</a>) { <a class="code" href="baro__MS5534A_8c.html#ade818037fd6c985038ff29656089758d">\</a></div>
+<b>Value:</b><div class="fragment"><div class="line">{ <a class="code" href="e__identification__fr_8c.html#a92cffae21318c1d983c63f3afa2a8d87">\</a></div>
+<div class="line"><a class="code" href="e__identification__fr_8c.html#a92cffae21318c1d983c63f3afa2a8d87">    if</a> (<a class="code" href="baro__MS5534A_8c.html#adb089738f21dfd53058d83bc522cce13">status_read_data</a>) { <a class="code" href="baro__MS5534A_8c.html#ade818037fd6c985038ff29656089758d">\</a></div>
 <div class="line"><a class="code" href="baro__MS5534A_8c.html#ade818037fd6c985038ff29656089758d">      status</a>++; <span class="keywordflow">if</span> (<a class="code" href="baro__MS5534A_8c.html#ade818037fd6c985038ff29656089758d">status</a> &gt; <a class="code" href="baro__MS5534A_8c.html#a5ca677b18f24bcd4fae08dfe856a8217">STATUS_MEASURE_TEMPERATURE</a>) <a class="code" href="baro__MS5534A_8c.html#ade818037fd6c985038ff29656089758d">status</a> = <a class="code" href="baro__MS5534A_8c.html#ae848505bf31d7639b2bb91ac2e45dc9a">STATUS_MEASURE_PRESSURE</a>; \</div>
 <div class="line">    }; <a class="code" href="baro__MS5534A_8c.html#adb089738f21dfd53058d83bc522cce13">\</a></div>
 <div class="line"><a class="code" href="baro__MS5534A_8c.html#adb089738f21dfd53058d83bc522cce13">    status_read_data</a> = !<a class="code" href="baro__MS5534A_8c.html#adb089738f21dfd53058d83bc522cce13">status_read_data</a>; \</div>
 <div class="line">  }</div>
+<div class="ttc" id="e__identification__fr_8c_html_a92cffae21318c1d983c63f3afa2a8d87"><div class="ttname"><a href="e__identification__fr_8c.html#a92cffae21318c1d983c63f3afa2a8d87">if</a></div><div class="ttdeci">if(GpsFixValid()&amp;&amp;e_identification_started)</div><div class="ttdef"><b>Definition:</b> <a href="e__identification__fr_8c_source.html#l00159">e_identification_fr.c:159</a></div></div>
 <div class="ttc" id="baro__MS5534A_8c_html_a5ca677b18f24bcd4fae08dfe856a8217"><div class="ttname"><a href="baro__MS5534A_8c.html#a5ca677b18f24bcd4fae08dfe856a8217">STATUS_MEASURE_TEMPERATURE</a></div><div class="ttdeci">#define STATUS_MEASURE_TEMPERATURE</div><div class="ttdef"><b>Definition:</b> <a href="baro__MS5534A_8c_source.html#l00057">baro_MS5534A.c:57</a></div></div>
 <div class="ttc" id="baro__MS5534A_8c_html_ae848505bf31d7639b2bb91ac2e45dc9a"><div class="ttname"><a href="baro__MS5534A_8c.html#ae848505bf31d7639b2bb91ac2e45dc9a">STATUS_MEASURE_PRESSURE</a></div><div class="ttdeci">#define STATUS_MEASURE_PRESSURE</div><div class="ttdef"><b>Definition:</b> <a href="baro__MS5534A_8c_source.html#l00056">baro_MS5534A.c:56</a></div></div>
 <div class="ttc" id="baro__MS5534A_8c_html_adb089738f21dfd53058d83bc522cce13"><div class="ttname"><a href="baro__MS5534A_8c.html#adb089738f21dfd53058d83bc522cce13">status_read_data</a></div><div class="ttdeci">static bool status_read_data</div><div class="ttdef"><b>Definition:</b> <a href="baro__MS5534A_8c_source.html#l00061">baro_MS5534A.c:61</a></div></div>
@@ -1015,7 +1016,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="baro__MS5534A_8c_source.html#l00203">203</a> of file <a class="el" href="baro__MS5534A_8c_source.html">baro_MS5534A.c</a>.</p>
 
-<p>Referenced by <a class="el" href="baro__MS5534A_8c_source.html#l00226">baro_MS5534A_event_task()</a>, <a class="el" href="baro__MS5534A_8c_source.html#l00206">calibration()</a>, <a class="el" href="dcf_8c_source.html#l00075">distributed_circular()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00770">float_mat_minor_4d()</a>, <a class="el" href="pprz__trig__int_8c_source.html#l00899">int32_atan2()</a>, <a class="el" href="pprz__trig__int_8c_source.html#l00921">int32_atan2_2()</a>, <a class="el" href="jpeg_8c_source.html#l00509">jpeg_DCT()</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00701">manage_flow_features()</a>, and <a class="el" href="nav_8c_source.html#l00604">nav_eight()</a>.</p>
+<p>Referenced by <a class="el" href="baro__MS5534A_8c_source.html#l00226">baro_MS5534A_event_task()</a>, <a class="el" href="baro__MS5534A_8c_source.html#l00206">calibration()</a>, <a class="el" href="dcf_8c_source.html#l00075">distributed_circular()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00783">float_mat_minor_4d()</a>, <a class="el" href="pprz__trig__int_8c_source.html#l00899">int32_atan2()</a>, <a class="el" href="pprz__trig__int_8c_source.html#l00921">int32_atan2_2()</a>, <a class="el" href="jpeg_8c_source.html#l00509">jpeg_DCT()</a>, <a class="el" href="opticflow__calculator_8c_source.html#l00892">manage_flow_features()</a>, and <a class="el" href="nav_8c_source.html#l00604">nav_eight()</a>.</p>
 
 </div>
 </div>
@@ -1039,7 +1040,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="baro__MS5534A_8c_source.html#l00203">203</a> of file <a class="el" href="baro__MS5534A_8c_source.html">baro_MS5534A.c</a>.</p>
 
-<p>Referenced by <a class="el" href="baro__MS5534A_8c_source.html#l00226">baro_MS5534A_event_task()</a>, <a class="el" href="baro__MS5534A_8c_source.html#l00206">calibration()</a>, <a class="el" href="dcf_8c_source.html#l00075">distributed_circular()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00770">float_mat_minor_4d()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00365">float_quat_differential()</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00210">gc_of_gd_lat_d()</a>, <a class="el" href="pprz__trig__int_8c_source.html#l00899">int32_atan2()</a>, <a class="el" href="pprz__trig__int_8c_source.html#l00921">int32_atan2_2()</a>, and <a class="el" href="jpeg_8c_source.html#l00509">jpeg_DCT()</a>.</p>
+<p>Referenced by <a class="el" href="baro__MS5534A_8c_source.html#l00226">baro_MS5534A_event_task()</a>, <a class="el" href="baro__MS5534A_8c_source.html#l00206">calibration()</a>, <a class="el" href="dcf_8c_source.html#l00075">distributed_circular()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00783">float_mat_minor_4d()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00365">float_quat_differential()</a>, <a class="el" href="pprz__geodetic__double_8c_source.html#l00210">gc_of_gd_lat_d()</a>, <a class="el" href="pprz__trig__int_8c_source.html#l00899">int32_atan2()</a>, <a class="el" href="pprz__trig__int_8c_source.html#l00921">int32_atan2_2()</a>, and <a class="el" href="jpeg_8c_source.html#l00509">jpeg_DCT()</a>.</p>
 
 </div>
 </div>
@@ -1313,7 +1314,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_2f48bbb566df394f79dcf8fe0631584a.html">sensors</a></li><li class="navelem"><a class="el" href="baro__MS5534A_8c.html">baro_MS5534A.c</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:03:23 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:03:39 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

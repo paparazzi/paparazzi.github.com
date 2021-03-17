@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -134,7 +134,7 @@ $(document).ready(function(){initNavTree('lpc21_2subsystems_2actuators_2servos__
 Macros</h2></td></tr>
 <tr class="memitem:a3f3dc2facc39f9d40f3fae4b4c9f3d93"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lpc21_2subsystems_2actuators_2servos__4017__hw_8h.html#a3f3dc2facc39f9d40f3fae4b4c9f3d93">SERVOS_TICS_OF_USEC</a>(<a class="el" href="light__scheduler_8c.html#a2dee666f0c1fe072c549ff86b1d0a8ab">s</a>)&#160;&#160;&#160;<a class="el" href="sys__time_8h.html#a8ef407ab9dc5065c7e7768da22bd2ab7">cpu_ticks_of_usec</a>(<a class="el" href="light__scheduler_8c.html#a2dee666f0c1fe072c549ff86b1d0a8ab">s</a>)</td></tr>
 <tr class="separator:a3f3dc2facc39f9d40f3fae4b4c9f3d93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a186df72c413a002896efc22a0d70662b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lpc21_2subsystems_2actuators_2servos__4017__hw_8h.html#a186df72c413a002896efc22a0d70662b">ClipServo</a>(x, a, b)&#160;&#160;&#160;Clip(x, a, b)</td></tr>
+<tr class="memitem:a186df72c413a002896efc22a0d70662b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lpc21_2subsystems_2actuators_2servos__4017__hw_8h.html#a186df72c413a002896efc22a0d70662b">ClipServo</a>(x, a, <a class="el" href="wedgebug_8c.html#a83fc1af92e29717b4513d121b0c72c7d">b</a>)&#160;&#160;&#160;Clip(x, a, <a class="el" href="wedgebug_8c.html#a83fc1af92e29717b4513d121b0c72c7d">b</a>)</td></tr>
 <tr class="separator:a186df72c413a002896efc22a0d70662b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa12c1955cf1acfb8495f5d63faf8e54d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lpc21_2subsystems_2actuators_2servos__4017__hw_8h.html#aa12c1955cf1acfb8495f5d63faf8e54d">_4017_NB_CHANNELS</a>&#160;&#160;&#160;10</td></tr>
 <tr class="separator:aa12c1955cf1acfb8495f5d63faf8e54d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -274,12 +274,12 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">b&#160;</td>
+          <td class="paramname"><a class="el" href="wedgebug_8c.html#a83fc1af92e29717b4513d121b0c72c7d">b</a>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;Clip(x, a, b)</td>
+          <td></td><td>&#160;&#160;&#160;Clip(x, a, <a class="el" href="wedgebug_8c.html#a83fc1af92e29717b4513d121b0c72c7d">b</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -300,8 +300,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{         \</div>
-<div class="line">    if (<a class="code" href="lpc21_2subsystems_2actuators_2servos__4017__hw_8h.html#aab972a01c91c91e95e1232b7d0baaf65">servos_4017_idx</a> &gt;= <a class="code" href="lpc21_2subsystems_2actuators_2servos__4017__hw_8h.html#aa12c1955cf1acfb8495f5d63faf8e54d">_4017_NB_CHANNELS</a>) {     \</div>
+<b>Value:</b><div class="fragment"><div class="line">{         <a class="code" href="e__identification__fr_8c.html#a92cffae21318c1d983c63f3afa2a8d87">\</a></div>
+<div class="line"><a class="code" href="e__identification__fr_8c.html#a92cffae21318c1d983c63f3afa2a8d87">    if</a> (<a class="code" href="lpc21_2subsystems_2actuators_2servos__4017__hw_8h.html#aab972a01c91c91e95e1232b7d0baaf65">servos_4017_idx</a> &gt;= <a class="code" href="lpc21_2subsystems_2actuators_2servos__4017__hw_8h.html#aa12c1955cf1acfb8495f5d63faf8e54d">_4017_NB_CHANNELS</a>) {     \</div>
 <div class="line">      SetBit(<a class="code" href="LPC21xx_8h.html#ac128251b4ae8d958ce27236ad9dd2a0d">IO1SET</a>, <a class="code" href="hb__1_81_8h.html#ab679c594bd3ee3e3d8c488143e9476ed">SERVO_RESET_PIN</a>);        <a class="code" href="lpc21_2subsystems_2actuators_2servos__4017__hw_8h.html#aab972a01c91c91e95e1232b7d0baaf65">\</a></div>
 <div class="line"><a class="code" href="lpc21_2subsystems_2actuators_2servos__4017__hw_8h.html#aab972a01c91c91e95e1232b7d0baaf65">      servos_4017_idx</a> = 0;          \</div>
 <div class="line">      SetBit(<a class="code" href="LPC21xx_8h.html#a2ebbd9fce18e5ae73751ed93d0b2f70b">IO1CLR</a>, <a class="code" href="hb__1_81_8h.html#ab679c594bd3ee3e3d8c488143e9476ed">SERVO_RESET_PIN</a>);        \</div>
@@ -314,6 +314,7 @@ Variables</h2></td></tr>
 <div class="line"><a class="code" href="lpc21_2subsystems_2actuators_2servos__4017__hw_8h.html#aab972a01c91c91e95e1232b7d0baaf65">    servos_4017_idx</a>++;            \</div>
 <div class="line">  }</div>
 <div class="ttc" id="LPC21xx_8h_html_ac128251b4ae8d958ce27236ad9dd2a0d"><div class="ttname"><a href="LPC21xx_8h.html#ac128251b4ae8d958ce27236ad9dd2a0d">IO1SET</a></div><div class="ttdeci">#define IO1SET</div><div class="ttdef"><b>Definition:</b> <a href="LPC21xx_8h_source.html#l00338">LPC21xx.h:338</a></div></div>
+<div class="ttc" id="e__identification__fr_8c_html_a92cffae21318c1d983c63f3afa2a8d87"><div class="ttname"><a href="e__identification__fr_8c.html#a92cffae21318c1d983c63f3afa2a8d87">if</a></div><div class="ttdeci">if(GpsFixValid()&amp;&amp;e_identification_started)</div><div class="ttdef"><b>Definition:</b> <a href="e__identification__fr_8c_source.html#l00159">e_identification_fr.c:159</a></div></div>
 <div class="ttc" id="lpc21_2subsystems_2actuators_2servos__4017__hw_8h_html_ad25276250fa015dc9b161fac008f899d"><div class="ttname"><a href="lpc21_2subsystems_2actuators_2servos__4017__hw_8h.html#ad25276250fa015dc9b161fac008f899d">servos_values</a></div><div class="ttdeci">uint16_t servos_values[_4017_NB_CHANNELS]</div><div class="ttdef"><b>Definition:</b> <a href="servos__4015__hw_8c_source.html#l00029">servos_4015_hw.c:29</a></div></div>
 <div class="ttc" id="LPC21xx_8h_html_a3f7bfa7a4ec72334b5628f6f0b2276fa"><div class="ttname"><a href="LPC21xx_8h.html#a3f7bfa7a4ec72334b5628f6f0b2276fa">T0EMR</a></div><div class="ttdeci">#define T0EMR</div><div class="ttdef"><b>Definition:</b> <a href="LPC21xx_8h_source.html#l00065">LPC21xx.h:65</a></div></div>
 <div class="ttc" id="LPC21xx_8h_html_afcda6dd57c1f5114f0574f9a8c668636"><div class="ttname"><a href="LPC21xx_8h.html#afcda6dd57c1f5114f0574f9a8c668636">T0MR1</a></div><div class="ttdeci">#define T0MR1</div><div class="ttdef"><b>Definition:</b> <a href="LPC21xx_8h_source.html#l00057">LPC21xx.h:57</a></div></div>
@@ -405,7 +406,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_3f7617cb4a5e4fe5cc816b7b3bbdea3a.html">lpc21</a></li><li class="navelem"><a class="el" href="dir_49e3baf8e4d0208391e8a23720cf4bc3.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_80cb3fc769cdc36e6ce40c9587f936a1.html">actuators</a></li><li class="navelem"><a class="el" href="lpc21_2subsystems_2actuators_2servos__4017__hw_8h.html">servos_4017_hw.h</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:02:43 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:02:56 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

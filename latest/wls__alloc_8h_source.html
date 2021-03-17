@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -131,7 +131,7 @@ $(document).ready(function(){initNavTree('wls__alloc_8h_source.html','');});
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> * Boston, MA 02111-1307, USA.</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keywordtype">void</span> <a class="code" href="wls__alloc_8h.html#ae96dd388138c3a7830cafe5eec5a0708">qr_solve_wrapper</a>(<span class="keywordtype">int</span> m, <span class="keywordtype">int</span> n, <span class="keywordtype">float</span>** <a class="code" href="group__math__geodetic__utm.html#ga955f504eccf76b4eb2489c0adab03121">A</a>, <span class="keywordtype">float</span>* b, <span class="keywordtype">float</span>* x);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keywordtype">void</span> <a class="code" href="wls__alloc_8h.html#ae96dd388138c3a7830cafe5eec5a0708">qr_solve_wrapper</a>(<span class="keywordtype">int</span> m, <span class="keywordtype">int</span> n, <span class="keywordtype">float</span>** <a class="code" href="group__math__geodetic__utm.html#ga955f504eccf76b4eb2489c0adab03121">A</a>, <span class="keywordtype">float</span>* <a class="code" href="wedgebug_8c.html#a83fc1af92e29717b4513d121b0c72c7d">b</a>, <span class="keywordtype">float</span>* x);</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keywordtype">int</span> <a class="code" href="wls__alloc_8h.html#a8053b1e79e1b0395d86c381aa786434d">wls_alloc</a>(<span class="keywordtype">float</span>* u, <span class="keywordtype">float</span>* v, <span class="keywordtype">float</span>* umin, <span class="keywordtype">float</span>* umax, <span class="keywordtype">float</span>** <a class="code" href="ahrs__float__invariant_8c.html#a111da81ae5883147168bbb8366377b10">B</a>,</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;              <span class="keywordtype">float</span>* u_guess, <span class="keywordtype">float</span>* W_init, <span class="keywordtype">float</span>* <a class="code" href="stabilization__indi_8c.html#a135981fcec0a59310c170cfdb95e491d">Wv</a>, <span class="keywordtype">float</span>* Wu,</div>
@@ -139,15 +139,16 @@ $(document).ready(function(){initNavTree('wls__alloc_8h_source.html','');});
 <div class="ttc" id="wls__alloc_8h_html_a8053b1e79e1b0395d86c381aa786434d"><div class="ttname"><a href="wls__alloc_8h.html#a8053b1e79e1b0395d86c381aa786434d">wls_alloc</a></div><div class="ttdeci">int wls_alloc(float *u, float *v, float *umin, float *umax, float **B, float *u_guess, float *W_init, float *Wv, float *Wu, float *ud, float gamma, int imax)</div><div class="ttdoc">active set algorithm for control allocation </div><div class="ttdef"><b>Definition:</b> <a href="wls__alloc_8c_source.html#l00112">wls_alloc.c:112</a></div></div>
 <div class="ttc" id="ahrs__float__invariant_8c_html_a111da81ae5883147168bbb8366377b10"><div class="ttname"><a href="ahrs__float__invariant_8c.html#a111da81ae5883147168bbb8366377b10">B</a></div><div class="ttdeci">#define B</div><div class="ttdef"><b>Definition:</b> <a href="ahrs__float__invariant_8c_source.html#l00101">ahrs_float_invariant.c:101</a></div></div>
 <div class="ttc" id="wls__alloc_8h_html_ae96dd388138c3a7830cafe5eec5a0708"><div class="ttname"><a href="wls__alloc_8h.html#ae96dd388138c3a7830cafe5eec5a0708">qr_solve_wrapper</a></div><div class="ttdeci">void qr_solve_wrapper(int m, int n, float **A, float *b, float *x)</div><div class="ttdoc">Wrapper for qr solve. </div><div class="ttdef"><b>Definition:</b> <a href="wls__alloc_8c_source.html#l00074">wls_alloc.c:74</a></div></div>
+<div class="ttc" id="wedgebug_8c_html_a83fc1af92e29717b4513d121b0c72c7d"><div class="ttname"><a href="wedgebug_8c.html#a83fc1af92e29717b4513d121b0c72c7d">b</a></div><div class="ttdeci">float b</div><div class="ttdef"><b>Definition:</b> <a href="wedgebug_8c_source.html#l00202">wedgebug.c:202</a></div></div>
 <div class="ttc" id="group__math__geodetic__utm_html_ga955f504eccf76b4eb2489c0adab03121"><div class="ttname"><a href="group__math__geodetic__utm.html#ga955f504eccf76b4eb2489c0adab03121">A</a></div><div class="ttdeci">#define A</div><div class="ttdef"><b>Definition:</b> <a href="pprz__geodetic__utm_8h_source.html#l00044">pprz_geodetic_utm.h:44</a></div></div>
-<div class="ttc" id="stabilization__indi_8c_html_a135981fcec0a59310c170cfdb95e491d"><div class="ttname"><a href="stabilization__indi_8c.html#a135981fcec0a59310c170cfdb95e491d">Wv</a></div><div class="ttdeci">static float Wv[INDI_OUTPUTS]</div><div class="ttdef"><b>Definition:</b> <a href="stabilization__indi_8c_source.html#l00110">stabilization_indi.c:110</a></div></div>
+<div class="ttc" id="stabilization__indi_8c_html_a135981fcec0a59310c170cfdb95e491d"><div class="ttname"><a href="stabilization__indi_8c.html#a135981fcec0a59310c170cfdb95e491d">Wv</a></div><div class="ttdeci">static float Wv[INDI_OUTPUTS]</div><div class="ttdef"><b>Definition:</b> <a href="stabilization__indi_8c_source.html#l00109">stabilization_indi.c:109</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e7d2494544042a787a6ee70a779a5e07.html">firmwares</a></li><li class="navelem"><a class="el" href="dir_e37d355c72eb7c8e5b43c34bdea5a24b.html">rotorcraft</a></li><li class="navelem"><a class="el" href="dir_d1b81cc433edb6118e3c3e3bc7700be0.html">stabilization</a></li><li class="navelem"><a class="el" href="dir_a7f27d6d8047fe7c2fb437aa87b5222b.html">wls</a></li><li class="navelem"><a class="el" href="wls__alloc_8h.html">wls_alloc.h</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:02:16 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:02:27 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

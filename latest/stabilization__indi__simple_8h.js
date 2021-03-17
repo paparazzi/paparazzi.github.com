@@ -1,12 +1,8 @@
 var stabilization__indi__simple_8h =
 [
-    [ "ReferenceSystem", "stabilization__indi__simple_8h.html#structReferenceSystem", [
-      [ "err_p", "stabilization__indi__simple_8h.html#a0dc6797444c341f2c0109825a5b3586e", null ],
-      [ "err_q", "stabilization__indi__simple_8h.html#a5562cf3de0126686db3da4bc5cd92055", null ],
-      [ "err_r", "stabilization__indi__simple_8h.html#a34a3123d619960eb27ed60aedab3202f", null ],
-      [ "rate_p", "stabilization__indi__simple_8h.html#a4c7ac4bace5ea8cef365d6f7572599e7", null ],
-      [ "rate_q", "stabilization__indi__simple_8h.html#a7e76006f9551acfaada8b67bad046143", null ],
-      [ "rate_r", "stabilization__indi__simple_8h.html#ab1290bd9adaf14c8fe53a7aa6430ca6f", null ]
+    [ "Indi_gains", "stabilization__indi__simple_8h.html#structIndi__gains", [
+      [ "att", "stabilization__indi__simple_8h.html#a996be9c371d3d00b4ba410c18a665a7a", null ],
+      [ "rate", "stabilization__indi__simple_8h.html#a84840ad49206401fc1f5ee95ba064f21", null ]
     ] ],
     [ "IndiEstimation", "stabilization__indi__simple_8h.html#structIndiEstimation", [
       [ "g1", "stabilization__indi__simple_8h.html#ad855728941014914e87de5b636ad1a7b", null ],
@@ -27,18 +23,19 @@ var stabilization__indi__simple_8h =
       [ "est", "stabilization__indi__simple_8h.html#a25c3237e5e06e294741eca5ee3266173", null ],
       [ "g1", "stabilization__indi__simple_8h.html#aa2fe003618b3cfe72fb27e370b7ac6df", null ],
       [ "g2", "stabilization__indi__simple_8h.html#abd520cccf7a02ac228329fc554c67fa2", null ],
+      [ "gains", "stabilization__indi__simple_8h.html#a04e32086db8b69689ef7ccc663ffece3", null ],
       [ "max_rate", "stabilization__indi__simple_8h.html#a034060dfe3a6abc3ac62a019a5197582", null ],
       [ "rate", "stabilization__indi__simple_8h.html#ae552bb950f5f19036dd04b3b3b7509e6", null ],
       [ "rate_d", "stabilization__indi__simple_8h.html#aa69c49fd27efda8cdffa87087f0f0dd4", null ],
-      [ "reference_acceleration", "stabilization__indi__simple_8h.html#a05192c5a13ce84dd0ebf04ac349dd9cf", null ],
       [ "u", "stabilization__indi__simple_8h.html#a41d571f736d9038e1a716b1680d2c130", null ],
       [ "u_act_dyn", "stabilization__indi__simple_8h.html#a6935e7142a2fa9983288318f1d5ccf20", null ],
       [ "u_in", "stabilization__indi__simple_8h.html#a7ae0596af4c69ce99a6fff644f966ac4", null ]
     ] ],
+    [ "stabilization_indi_attitude_run", "stabilization__indi__simple_8h.html#a32497fd2d2c56c87a83bddb1f7b62fa8", null ],
     [ "stabilization_indi_enter", "stabilization__indi__simple_8h.html#a121fd732c65156adade05ffb27fbaf52", null ],
     [ "stabilization_indi_init", "stabilization__indi__simple_8h.html#a9b355db7dd60fd053f3fff04eccdc11b", null ],
+    [ "stabilization_indi_rate_run", "stabilization__indi__simple_8h.html#abb616d415224721c6dbb6cc648b696c2", null ],
     [ "stabilization_indi_read_rc", "stabilization__indi__simple_8h.html#a12143cafcad8c2db6f07b2cc072851d5", null ],
-    [ "stabilization_indi_run", "stabilization__indi__simple_8h.html#a1bd35992373c5eed91852cc9f20680b0", null ],
     [ "stabilization_indi_set_earth_cmd_i", "stabilization__indi__simple_8h.html#a487bd4ac66f844d9d1adfb696f950604", null ],
     [ "stabilization_indi_set_failsafe_setpoint", "stabilization__indi__simple_8h.html#a2d7051eac973a8507897f6753deaf818", null ],
     [ "stabilization_indi_set_rpy_setpoint_i", "stabilization__indi__simple_8h.html#aac24f92be2dd7af42e3e7906a1324fe9", null ],

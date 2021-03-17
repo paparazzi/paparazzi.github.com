@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -197,7 +197,7 @@ $(document).ready(function(){initNavTree('dc_8c_source.html','');});
 <div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="dc_8h.html#aaf0625fed2e489322c40c4b2a1904e9a">  104</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="dc_8c.html#aaf0625fed2e489322c40c4b2a1904e9a">dc_send_shot_position</a>(<span class="keywordtype">void</span>)</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;{</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <span class="comment">// angles in decideg</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <a class="code" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> phi = DegOfRad(<a class="code" href="group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b">stateGetNedToBodyEulers_f</a>()-&gt;phi * 10.0f);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <a class="code" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> phi = DegOfRad(<a class="code" href="group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b">stateGetNedToBodyEulers_f</a>()-&gt;phi * 10.0<a class="code" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a>);</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <a class="code" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> theta = DegOfRad(<a class="code" href="group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b">stateGetNedToBodyEulers_f</a>()-&gt;theta * 10.0f);</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <a class="code" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> psi = DegOfRad(<a class="code" href="group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b">stateGetNedToBodyEulers_f</a>()-&gt;psi * 10.0f);</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <span class="comment">// course in decideg</span></div>
@@ -353,11 +353,11 @@ $(document).ready(function(){initNavTree('dc_8c_source.html','');});
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;  <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;}</div>
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;</div>
-<div class="line"><a name="l00263"></a><span class="lineno"><a class="line" href="dc_8c.html#a86a10378746828e01845db892616829e">  263</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">float</span> <a class="code" href="dc_8c.html#a86a10378746828e01845db892616829e">dim_mod</a>(<span class="keywordtype">float</span> a, <span class="keywordtype">float</span> b, <span class="keywordtype">float</span> m)</div>
+<div class="line"><a name="l00263"></a><span class="lineno"><a class="line" href="dc_8c.html#a86a10378746828e01845db892616829e">  263</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">float</span> <a class="code" href="dc_8c.html#a86a10378746828e01845db892616829e">dim_mod</a>(<span class="keywordtype">float</span> a, <span class="keywordtype">float</span> <a class="code" href="wedgebug_8c.html#a83fc1af92e29717b4513d121b0c72c7d">b</a>, <span class="keywordtype">float</span> m)</div>
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;{</div>
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;  <span class="keywordflow">if</span> (a &lt; b) {</div>
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    <span class="keywordtype">float</span> tmp = a;</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    a = b;</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    a = <a class="code" href="wedgebug_8c.html#a83fc1af92e29717b4513d121b0c72c7d">b</a>;</div>
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    b = tmp;</div>
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;  }</div>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;  <span class="keywordflow">return</span> fminf(a - b, b + m - a);</div>
@@ -468,7 +468,9 @@ $(document).ready(function(){initNavTree('dc_8c_source.html','');});
 <div class="ttc" id="dc_8c_html_a8f906f7bd2443e49061e9b5fe087d21f"><div class="ttname"><a href="dc_8c.html#a8f906f7bd2443e49061e9b5fe087d21f">dc_gps_x</a></div><div class="ttdeci">float dc_gps_x</div><div class="ttdoc">point of reference for the survey mode </div><div class="ttdef"><b>Definition:</b> <a href="dc_8c_source.html#l00079">dc.c:79</a></div></div>
 <div class="ttc" id="types_8h_html_a269259c924dce846340ddbb810db2e3c"><div class="ttname"><a href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a></div><div class="ttdeci">signed short int16_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00017">types.h:17</a></div></div>
 <div class="ttc" id="dc_8c_html_a8b59d197298255517ce7b63d4c9ee81a"><div class="ttname"><a href="dc_8c.html#a8b59d197298255517ce7b63d4c9ee81a">dc_gps_next_dist</a></div><div class="ttdeci">float dc_gps_next_dist</div><div class="ttdef"><b>Definition:</b> <a href="dc_8c_source.html#l00078">dc.c:78</a></div></div>
+<div class="ttc" id="wedgebug_8c_html_a05fd2dba3354a98f1a00b7c7ffc12b13"><div class="ttname"><a href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a></div><div class="ttdeci">uint16_t f</div><div class="ttdoc">Camera baseline, in meters (i.e. horizontal distance between the two cameras of the stereo setup) ...</div><div class="ttdef"><b>Definition:</b> <a href="wedgebug_8c_source.html#l00204">wedgebug.c:204</a></div></div>
 <div class="ttc" id="dc_8c_html_a0780b2bb0201d5099b0193f10f9a824f"><div class="ttname"><a href="dc_8c.html#a0780b2bb0201d5099b0193f10f9a824f">DC_AUTOSHOOT_PERIOD</a></div><div class="ttdeci">#define DC_AUTOSHOOT_PERIOD</div><div class="ttdoc">default time interval for periodic mode: 1sec </div><div class="ttdef"><b>Definition:</b> <a href="dc_8c_source.html#l00048">dc.c:48</a></div></div>
+<div class="ttc" id="wedgebug_8c_html_a83fc1af92e29717b4513d121b0c72c7d"><div class="ttname"><a href="wedgebug_8c.html#a83fc1af92e29717b4513d121b0c72c7d">b</a></div><div class="ttdeci">float b</div><div class="ttdef"><b>Definition:</b> <a href="wedgebug_8c_source.html#l00202">wedgebug.c:202</a></div></div>
 <div class="ttc" id="dc_8c_html_acef7e1ef22d955a5cbe420a80434f23e"><div class="ttname"><a href="dc_8c.html#acef7e1ef22d955a5cbe420a80434f23e">last_shot_pos</a></div><div class="ttdeci">static struct FloatVect2 last_shot_pos</div><div class="ttdef"><b>Definition:</b> <a href="dc_8c_source.html#l00082">dc.c:82</a></div></div>
 <div class="ttc" id="common__nav_8h_html_a983349c9ccc3f390fafe929d3c9fdd16"><div class="ttname"><a href="common__nav_8h.html#a983349c9ccc3f390fafe929d3c9fdd16">WaypointY</a></div><div class="ttdeci">#define WaypointY(_wp)</div><div class="ttdef"><b>Definition:</b> <a href="common__nav_8h_source.html#l00046">common_nav.h:46</a></div></div>
 <div class="ttc" id="downlink_8h_html_a891b19a3eba08208d4e550aa6c6188dd"><div class="ttname"><a href="downlink_8h.html#a891b19a3eba08208d4e550aa6c6188dd">DefaultChannel</a></div><div class="ttdeci">#define DefaultChannel</div><div class="ttdef"><b>Definition:</b> <a href="downlink_8h_source.html#l00042">downlink.h:42</a></div></div>
@@ -482,7 +484,7 @@ $(document).ready(function(){initNavTree('dc_8c_source.html','');});
 <div class="ttc" id="dc_8c_html_a2a976ddc273dfdd99eb8638c364e9305"><div class="ttname"><a href="dc_8c.html#a2a976ddc273dfdd99eb8638c364e9305">dc_periodic</a></div><div class="ttdeci">void dc_periodic(void)</div><div class="ttdoc">periodic function </div><div class="ttdef"><b>Definition:</b> <a href="dc_8c_source.html#l00273">dc.c:273</a></div></div>
 <div class="ttc" id="sonar__bebop_8c_html_a37e90f5e3bd99fac2021fb3a326607d4"><div class="ttname"><a href="sonar__bebop_8c.html#a37e90f5e3bd99fac2021fb3a326607d4">mode</a></div><div class="ttdeci">static uint8_t mode</div><div class="ttdoc">mode holds the current sonar mode mode = 0 used at high altitude, uses 16 wave patterns mode = 1 used...</div><div class="ttdef"><b>Definition:</b> <a href="sonar__bebop_8c_source.html#l00069">sonar_bebop.c:69</a></div></div>
 <div class="ttc" id="dc_8c_html_a47c625a53743f8ad41baaf54a6fcf144"><div class="ttname"><a href="dc_8c.html#a47c625a53743f8ad41baaf54a6fcf144">dc_stop</a></div><div class="ttdeci">uint8_t dc_stop(void)</div><div class="ttdoc">Stop dc control. </div><div class="ttdef"><b>Definition:</b> <a href="dc_8c_source.html#l00256">dc.c:256</a></div></div>
-<div class="ttc" id="airspeed__uADC_8c_html_a07e858c64561f8f3465da2ba434ccd1f"><div class="ttname"><a href="airspeed__uADC_8c.html#a07e858c64561f8f3465da2ba434ccd1f">course</a></div><div class="ttdeci">static int16_t course[3]</div><div class="ttdef"><b>Definition:</b> <a href="airspeed__uADC_8c_source.html#l00057">airspeed_uADC.c:57</a></div></div>
+<div class="ttc" id="airspeed__uADC_8c_html_a07e858c64561f8f3465da2ba434ccd1f"><div class="ttname"><a href="airspeed__uADC_8c.html#a07e858c64561f8f3465da2ba434ccd1f">course</a></div><div class="ttdeci">static int16_t course[3]</div><div class="ttdef"><b>Definition:</b> <a href="airspeed__uADC_8c_source.html#l00058">airspeed_uADC.c:58</a></div></div>
 <div class="ttc" id="dc_8h_html_ad2b9a0aaeabb230dc5e972d96593cc09abbc4481a9fea7f61a50c46bd0c9152db"><div class="ttname"><a href="dc_8h.html#ad2b9a0aaeabb230dc5e972d96593cc09abbc4481a9fea7f61a50c46bd0c9152db">DC_AUTOSHOOT_STOP</a></div><div class="ttdef"><b>Definition:</b> <a href="dc_8h_source.html#l00128">dc.h:128</a></div></div>
 <div class="ttc" id="dc_8c_html_a1d08f1a0a510dbd2b15071322e56449a"><div class="ttname"><a href="dc_8c.html#a1d08f1a0a510dbd2b15071322e56449a">dc_survey_interval</a></div><div class="ttdeci">float dc_survey_interval</div><div class="ttdoc">distance between dc shots in meters </div><div class="ttdef"><b>Definition:</b> <a href="dc_8c_source.html#l00077">dc.c:77</a></div></div>
 <div class="ttc" id="downlink_8h_html"><div class="ttname"><a href="downlink_8h.html">downlink.h</a></div><div class="ttdoc">Common code for AP and FBW telemetry. </div></div>
@@ -506,7 +508,7 @@ $(document).ready(function(){initNavTree('dc_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_9cd42eb44f1e76fa7c8c7cd9c9a53863.html">digital_cam</a></li><li class="navelem"><a class="el" href="dc_8c.html">dc.c</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:02:23 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:02:34 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -1,0 +1,28 @@
+var lpc21_2modules_2core_2trigger__ext__hw_8h =
+[
+    [ "__EnableFall", "lpc21_2modules_2core_2trigger__ext__hw_8h.html#a10d8b57f93e85abf7f1099c711ae270e", null ],
+    [ "__EnableInt", "lpc21_2modules_2core_2trigger__ext__hw_8h.html#a2b51651b87481409b2b46af51fb34681", null ],
+    [ "__EnableRise", "lpc21_2modules_2core_2trigger__ext__hw_8h.html#abc48dcb930778a82539f7444dffbae92", null ],
+    [ "__SelectCapReg", "lpc21_2modules_2core_2trigger__ext__hw_8h.html#a6db2d2cf9bbbd456a7815e6c97707531", null ],
+    [ "__SetIntFlag", "lpc21_2modules_2core_2trigger__ext__hw_8h.html#a6c500043393b6b4f4fee22f5d7935941", null ],
+    [ "_EnableFall", "lpc21_2modules_2core_2trigger__ext__hw_8h.html#a9200f407d77b9f48efb4258cce79003d", null ],
+    [ "_EnableInt", "lpc21_2modules_2core_2trigger__ext__hw_8h.html#a868037b97424798cb40136043a950ec4", null ],
+    [ "_EnableRise", "lpc21_2modules_2core_2trigger__ext__hw_8h.html#acbfb89aed48eb98daa6d70801eb7f9d2", null ],
+    [ "_SelectCapReg", "lpc21_2modules_2core_2trigger__ext__hw_8h.html#ab3e364ee7d92f36afd92c199b64bb65c", null ],
+    [ "_SetIntFlag", "lpc21_2modules_2core_2trigger__ext__hw_8h.html#a8dac7fdc11c02e79638603980a8f12b0", null ],
+    [ "EnableFall", "lpc21_2modules_2core_2trigger__ext__hw_8h.html#a1d678859b8b58a1b7d6596177edf79fd", null ],
+    [ "EnableInt", "lpc21_2modules_2core_2trigger__ext__hw_8h.html#adcc9d5bd438223bd783bc7fb9f98fc67", null ],
+    [ "EnableRise", "lpc21_2modules_2core_2trigger__ext__hw_8h.html#a927a42b11dde0e0eab30e26b50616e5a", null ],
+    [ "SelectCapReg", "lpc21_2modules_2core_2trigger__ext__hw_8h.html#ad9334386ea943c2441d51e59a0add6c4", null ],
+    [ "SetIntFlag", "lpc21_2modules_2core_2trigger__ext__hw_8h.html#a5658c774b5ef4bc5375472a1beba9ddc", null ],
+    [ "TRIG_EXT_CHANNEL", "lpc21_2modules_2core_2trigger__ext__hw_8h.html#a33405bb22d1ef9e3253824ab4b6ac6ed", null ],
+    [ "TRIG_EXT_PINSEL", "lpc21_2modules_2core_2trigger__ext__hw_8h.html#a651b72487f8a491b294cdc86f22fae6c", null ],
+    [ "TRIG_EXT_PINSEL_BIT", "lpc21_2modules_2core_2trigger__ext__hw_8h.html#a819fd0a2ed0446d3f4a5aa428c8f63bd", null ],
+    [ "TRIG_EXT_PINSEL_VAL", "lpc21_2modules_2core_2trigger__ext__hw_8h.html#abdf9d68bc747e1ed8ce3fe39d530a02f", null ],
+    [ "TRIGGER_CR", "lpc21_2modules_2core_2trigger__ext__hw_8h.html#a892454c548a6af3cf47c1aef3c8ff438", null ],
+    [ "TRIGGER_CRF", "lpc21_2modules_2core_2trigger__ext__hw_8h.html#a885e6c4f65e82c735c0e6f3711731c02", null ],
+    [ "TRIGGER_CRI", "lpc21_2modules_2core_2trigger__ext__hw_8h.html#a2f096d99be83a27b53d1c8af8a703f9d", null ],
+    [ "TRIGGER_CRR", "lpc21_2modules_2core_2trigger__ext__hw_8h.html#a8879dc54d4d1b9f44a368d284f8bad33", null ],
+    [ "TRIGGER_IT", "lpc21_2modules_2core_2trigger__ext__hw_8h.html#a0003e5ff9c1eecd4cdc1aa1a67c24785", null ],
+    [ "TRIG_ISR", "lpc21_2modules_2core_2trigger__ext__hw_8h.html#a80ce25041c38ee2a1bb26b18549e8423", null ]
+];

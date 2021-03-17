@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -149,16 +149,16 @@ $(document).ready(function(){initNavTree('lsm303dlhc__i2c_8h_source.html','');})
 <div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="lsm303dlhc__i2c_8h.html">   45</a></span>&#160;  <span class="keyword">union </span>{</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">enum</span> Lsm303dlhcAccConfStatus acc; </div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">enum</span> Lsm303dlhcMagConfStatus mag; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  } <a class="code" href="lsm303dlhc__i2c_8h.html#af450422406a080d22123a89c47e4159e">init_status</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  } <a class="code" href="lsm303dlhc__i2c_8h.html#a4821177be7c20a184205ede0d3dc6974">init_status</a>;</div>
 <div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="lsm303dlhc__i2c_8h.html#a1860e64a60d63a98969f293cf20f8c83">   49</a></span>&#160;  <span class="keyword">volatile</span> <span class="keywordtype">bool</span> <a class="code" href="lsm303dlhc__i2c_8h.html#a1860e64a60d63a98969f293cf20f8c83">data_available</a>;     </div>
 <div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="lsm303dlhc__i2c_8h.html">   50</a></span>&#160;  <span class="keyword">union </span>{</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">struct </span><a class="code" href="group__math__algebra__int.html#structInt16Vect3">Int16Vect3</a> vect;           </div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> value[3];                 </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  } <a class="code" href="lsm303dlhc__i2c_8h.html#a0d270e789e320bbc995c39080741b092">data_accel</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  } <a class="code" href="lsm303dlhc__i2c_8h.html#ac575c3302ad06c44fe11e30e6ce2bb38">data_accel</a>;</div>
 <div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="lsm303dlhc__i2c_8h.html">   54</a></span>&#160;  <span class="keyword">union </span>{</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">struct </span><a class="code" href="lsm303dlhc_8h.html#structLsm303dlhcAccConfig">Lsm303dlhcAccConfig</a> acc;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">struct </span><a class="code" href="lsm303dlhc_8h.html#structLsm303dlhcMagConfig">Lsm303dlhcMagConfig</a> mag;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  } <a class="code" href="lsm303dlhc__i2c_8h.html#af0eef4a1f2a07360f7e00971c5872dd7">config</a>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  } <a class="code" href="lsm303dlhc__i2c_8h.html#a78004cfad4961fc2e090c35869773e77">config</a>;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;};</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">// TODO IRQ handling</span></div>
@@ -182,13 +182,12 @@ $(document).ready(function(){initNavTree('lsm303dlhc__i2c_8h_source.html','');})
 <div class="ttc" id="lsm303dlhc_8h_html_structLsm303dlhcAccConfig"><div class="ttname"><a href="lsm303dlhc_8h.html#structLsm303dlhcAccConfig">Lsm303dlhcAccConfig</a></div><div class="ttdef"><b>Definition:</b> <a href="lsm303dlhc_8h_source.html#l00056">lsm303dlhc.h:56</a></div></div>
 <div class="ttc" id="lsm303dlhc__i2c_8h_html_a691472da21e2d52aac3e32823184c7b3"><div class="ttname"><a href="lsm303dlhc__i2c_8h.html#a691472da21e2d52aac3e32823184c7b3">Lsm303dlhc_i2c::i2c_trans</a></div><div class="ttdeci">struct i2c_transaction i2c_trans</div><div class="ttdef"><b>Definition:</b> <a href="lsm303dlhc__i2c_8h_source.html#l00043">lsm303dlhc_i2c.h:43</a></div></div>
 <div class="ttc" id="lsm303dlhc__i2c_8h_html_a77e16e80a2f36277b41270fa3d620225"><div class="ttname"><a href="lsm303dlhc__i2c_8h.html#a77e16e80a2f36277b41270fa3d620225">Lsm303dlhc_i2c::i2c_p</a></div><div class="ttdeci">struct i2c_periph * i2c_p</div><div class="ttdef"><b>Definition:</b> <a href="lsm303dlhc__i2c_8h_source.html#l00042">lsm303dlhc_i2c.h:42</a></div></div>
-<div class="ttc" id="lsm303dlhc__i2c_8h_html_a0d270e789e320bbc995c39080741b092"><div class="ttname"><a href="lsm303dlhc__i2c_8h.html#a0d270e789e320bbc995c39080741b092">Lsm303dlhc_i2c::data_accel</a></div><div class="ttdeci">union Lsm303dlhc_i2c::@325 data_accel</div></div>
 <div class="ttc" id="group__math__algebra__int_html_structInt16Vect3"><div class="ttname"><a href="group__math__algebra__int.html#structInt16Vect3">Int16Vect3</a></div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__int_8h_source.html#l00062">pprz_algebra_int.h:62</a></div></div>
 <div class="ttc" id="lsm303dlhc__i2c_8h_html_abf84e0af8f7bbeead508991aef060c0c"><div class="ttname"><a href="lsm303dlhc__i2c_8h.html#abf84e0af8f7bbeead508991aef060c0c">lsm303dlhc_i2c_event</a></div><div class="ttdeci">void lsm303dlhc_i2c_event(struct Lsm303dlhc_i2c *lsm)</div></div>
 <div class="ttc" id="lsm303dlhc__i2c_8h_html_a8c1c3c8e4597f906ad88c3c869828ee2"><div class="ttname"><a href="lsm303dlhc__i2c_8h.html#a8c1c3c8e4597f906ad88c3c869828ee2">Lsm303dlhc_i2c::initialized</a></div><div class="ttdeci">bool initialized</div><div class="ttdoc">config done flag </div><div class="ttdef"><b>Definition:</b> <a href="lsm303dlhc__i2c_8h_source.html#l00044">lsm303dlhc_i2c.h:44</a></div></div>
 <div class="ttc" id="lsm303dlhc_8h_html_structLsm303dlhcMagConfig"><div class="ttname"><a href="lsm303dlhc_8h.html#structLsm303dlhcMagConfig">Lsm303dlhcMagConfig</a></div><div class="ttdef"><b>Definition:</b> <a href="lsm303dlhc_8h_source.html#l00061">lsm303dlhc.h:61</a></div></div>
-<div class="ttc" id="lsm303dlhc__i2c_8h_html_af450422406a080d22123a89c47e4159e"><div class="ttname"><a href="lsm303dlhc__i2c_8h.html#af450422406a080d22123a89c47e4159e">Lsm303dlhc_i2c::init_status</a></div><div class="ttdeci">union Lsm303dlhc_i2c::@324 init_status</div></div>
-<div class="ttc" id="lsm303dlhc__i2c_8h_html_af0eef4a1f2a07360f7e00971c5872dd7"><div class="ttname"><a href="lsm303dlhc__i2c_8h.html#af0eef4a1f2a07360f7e00971c5872dd7">Lsm303dlhc_i2c::config</a></div><div class="ttdeci">union Lsm303dlhc_i2c::@326 config</div></div>
+<div class="ttc" id="lsm303dlhc__i2c_8h_html_a4821177be7c20a184205ede0d3dc6974"><div class="ttname"><a href="lsm303dlhc__i2c_8h.html#a4821177be7c20a184205ede0d3dc6974">Lsm303dlhc_i2c::init_status</a></div><div class="ttdeci">union Lsm303dlhc_i2c::@326 init_status</div></div>
+<div class="ttc" id="lsm303dlhc__i2c_8h_html_ac575c3302ad06c44fe11e30e6ce2bb38"><div class="ttname"><a href="lsm303dlhc__i2c_8h.html#ac575c3302ad06c44fe11e30e6ce2bb38">Lsm303dlhc_i2c::data_accel</a></div><div class="ttdeci">union Lsm303dlhc_i2c::@327 data_accel</div></div>
 <div class="ttc" id="types_8h_html_a269259c924dce846340ddbb810db2e3c"><div class="ttname"><a href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a></div><div class="ttdeci">signed short int16_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00017">types.h:17</a></div></div>
 <div class="ttc" id="std_8h_html"><div class="ttname"><a href="std_8h.html">std.h</a></div></div>
 <div class="ttc" id="group__i2c_html_structi2c__transaction"><div class="ttname"><a href="group__i2c.html#structi2c__transaction">i2c_transaction</a></div><div class="ttdoc">I2C transaction structure. </div><div class="ttdef"><b>Definition:</b> <a href="i2c_8h_source.html#l00093">i2c.h:93</a></div></div>
@@ -196,6 +195,7 @@ $(document).ready(function(){initNavTree('lsm303dlhc__i2c_8h_source.html','');})
 <div class="ttc" id="group__i2c_html_structi2c__periph"><div class="ttname"><a href="group__i2c.html#structi2c__periph">i2c_periph</a></div><div class="ttdef"><b>Definition:</b> <a href="i2c_8h_source.html#l00144">i2c.h:144</a></div></div>
 <div class="ttc" id="types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00014">types.h:14</a></div></div>
 <div class="ttc" id="lsm303dlhc__i2c_8h_html_a1860e64a60d63a98969f293cf20f8c83"><div class="ttname"><a href="lsm303dlhc__i2c_8h.html#a1860e64a60d63a98969f293cf20f8c83">Lsm303dlhc_i2c::data_available</a></div><div class="ttdeci">volatile bool data_available</div><div class="ttdoc">data ready flag </div><div class="ttdef"><b>Definition:</b> <a href="lsm303dlhc__i2c_8h_source.html#l00049">lsm303dlhc_i2c.h:49</a></div></div>
+<div class="ttc" id="lsm303dlhc__i2c_8h_html_a78004cfad4961fc2e090c35869773e77"><div class="ttname"><a href="lsm303dlhc__i2c_8h.html#a78004cfad4961fc2e090c35869773e77">Lsm303dlhc_i2c::config</a></div><div class="ttdeci">union Lsm303dlhc_i2c::@328 config</div></div>
 <div class="ttc" id="lsm303dlhc__i2c_8h_html_a2f600ac276e7ed6eb74c55228e96ce11"><div class="ttname"><a href="lsm303dlhc__i2c_8h.html#a2f600ac276e7ed6eb74c55228e96ce11">lsm303dlhc_i2c_periodic</a></div><div class="ttdeci">static void lsm303dlhc_i2c_periodic(struct Lsm303dlhc_i2c *lsm)</div><div class="ttdoc">convenience function: read or start configuration if not already initialized </div><div class="ttdef"><b>Definition:</b> <a href="lsm303dlhc__i2c_8h_source.html#l00069">lsm303dlhc_i2c.h:69</a></div></div>
 <div class="ttc" id="lsm303dlhc__i2c_8h_html_ae6e73decebcc1a4c327e12cb9cd82be6"><div class="ttname"><a href="lsm303dlhc__i2c_8h.html#ae6e73decebcc1a4c327e12cb9cd82be6">lsm303dlhc_i2c_start_configure</a></div><div class="ttdeci">void lsm303dlhc_i2c_start_configure(struct Lsm303dlhc_i2c *lsm)</div></div>
 <div class="ttc" id="lsm303dlhc__i2c_8h_html_a2b4ad59cad2d1657c4adbcf815eb78e6"><div class="ttname"><a href="lsm303dlhc__i2c_8h.html#a2b4ad59cad2d1657c4adbcf815eb78e6">lsm303dlhc_i2c_read</a></div><div class="ttdeci">void lsm303dlhc_i2c_read(struct Lsm303dlhc_i2c *lsm)</div></div>
@@ -209,7 +209,7 @@ $(document).ready(function(){initNavTree('lsm303dlhc__i2c_8h_source.html','');})
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_0a48ba2c0a76794adfddddc873522f67.html">peripherals</a></li><li class="navelem"><a class="el" href="lsm303dlhc__i2c_8h.html">lsm303dlhc_i2c.h</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:02:31 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:02:43 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

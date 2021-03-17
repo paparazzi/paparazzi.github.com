@@ -32,7 +32,7 @@ var pano__unwrap_8c =
     [ "RED_U", "pano__unwrap_8c.html#ad7ececf38c8975107e7a13ab74d9e95e", null ],
     [ "RED_V", "pano__unwrap_8c.html#a0a6298fb82bef927b8088951c386f833", null ],
     [ "RED_Y", "pano__unwrap_8c.html#a7989608711b7dbc393bc1a07737c13b5", null ],
-    [ "camera_cb", "pano__unwrap_8c.html#ace21ffee8c5243defa67b741282f29fe", null ],
+    [ "camera_cb", "pano__unwrap_8c.html#a710b27b04793f5a2412ab67f7eb0bb54", null ],
     [ "pano_unwrap_init", "pano__unwrap_8c.html#a2038ddd6c9204939f22d0879640b52e6", null ],
     [ "set_output_image_size", "pano__unwrap_8c.html#a30fd9eed01039f2c0f6375c224a051d2", null ],
     [ "unwrap_LUT", "pano__unwrap_8c.html#a7749a199c15590f0007e9976535686c5", null ],

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -150,8 +150,11 @@ $(document).ready(function(){initNavTree('globals_defs_d.html','');});
 &#160;
 
 <h3><a class="anchor" id="index_d"></a>- d -</h3><ul>
-<li>DAC_BUFFER_SIZE
-: <a class="el" href="vms__ecu__demo_8c.html#adbc56624baf87c2ce71edcc12cc0e537">vms_ecu_demo.c</a>
+<li>DAC_USE_MUTUAL_EXCLUSION
+: <a class="el" href="group__HAL__CONF.html#gaa5ef252d5060d6a917775b8f5faefc51">halconf.h</a>
+</li>
+<li>DAC_USE_WAIT
+: <a class="el" href="group__HAL__CONF.html#ga6d9d70d609613cedfc4fa271c5acc184">halconf.h</a>
 </li>
 <li>DACR
 : <a class="el" href="LPC21xx_8h.html#af8a4c578c83b8420c7ec010f84f3f0eb">LPC21xx.h</a>
@@ -169,8 +172,8 @@ $(document).ready(function(){initNavTree('globals_defs_d.html','');});
 : <a class="el" href="humid__sht_8c.html#aef3aa4f1e874ae5df12e180d51dfc73b">humid_sht.c</a>
 </li>
 <li>DATALINK_C
-: <a class="el" href="datalink_8c.html#ace2f20f3712314ddd9e83035468ab745">datalink.c</a>
-, <a class="el" href="setup__actuators_8c.html#ace2f20f3712314ddd9e83035468ab745">setup_actuators.c</a>
+: <a class="el" href="setup__actuators_8c.html#ace2f20f3712314ddd9e83035468ab745">setup_actuators.c</a>
+, <a class="el" href="datalink_8c.html#ace2f20f3712314ddd9e83035468ab745">datalink.c</a>
 </li>
 <li>DatalinkFillDlBuffer
 : <a class="el" href="datalink_8h.html#a9e0c3a54e92c618bc28aaa322229646c">datalink.h</a>
@@ -232,8 +235,8 @@ $(document).ready(function(){initNavTree('globals_defs_d.html','');});
 : <a class="el" href="dc_8c.html#ab6895f24c7fbbecdf643ba240e287fb5">dc.c</a>
 </li>
 <li>DC_SHUTTER_DELAY
-: <a class="el" href="gpio__cam__ctrl_8c.html#a9642f48627a6517582c38e3593939e28">gpio_cam_ctrl.c</a>
-, <a class="el" href="servo__cam__ctrl_8c.html#a9642f48627a6517582c38e3593939e28">servo_cam_ctrl.c</a>
+: <a class="el" href="servo__cam__ctrl_8c.html#a9642f48627a6517582c38e3593939e28">servo_cam_ctrl.c</a>
+, <a class="el" href="gpio__cam__ctrl_8c.html#a9642f48627a6517582c38e3593939e28">gpio_cam_ctrl.c</a>
 </li>
 <li>dc_Stop
 : <a class="el" href="dc_8h.html#a9fa3be838c4c15559b76805ff40adae8">dc.h</a>
@@ -261,6 +264,15 @@ $(document).ready(function(){initNavTree('globals_defs_d.html','');});
 </li>
 <li>DCR_DBL
 : <a class="el" href="esc__dshot_8c.html#ae28959e44bfeb6d94e2c4c57012b379a">esc_dshot.c</a>
+</li>
+<li>DEBUG_DATA_BAD_FRAME
+: <a class="el" href="cc2500__frsky__shared_8h.html#af81acf1d2ecfa9e4a1ec2e85bf902c27">cc2500_frsky_shared.h</a>
+</li>
+<li>DEBUG_DATA_ERROR_COUNT
+: <a class="el" href="cc2500__frsky__shared_8h.html#a08484161bfc8fc25f6587deed5438215">cc2500_frsky_shared.h</a>
+</li>
+<li>DEBUG_DATA_MISSING_PACKETS
+: <a class="el" href="cc2500__frsky__shared_8h.html#a9edc11533b4625815af2ca31c562061e">cc2500_frsky_shared.h</a>
 </li>
 <li>DEBUG_EXIT
 : <a class="el" href="qr__solve_8c.html#a7883ddd0091da126f0e986854130c0c1">qr_solve.c</a>
@@ -340,6 +352,9 @@ $(document).ready(function(){initNavTree('globals_defs_d.html','');});
 <li>DEBUG_SERVO2_INIT
 : <a class="el" href="my__debug__servo_8h.html#a46708ae8b17b722c2c57f0c4de10d75a">my_debug_servo.h</a>
 </li>
+<li>DEBUG_SET
+: <a class="el" href="cc2500__compat_8h.html#a8a580eabbface299c261fee098497849">cc2500_compat.h</a>
+</li>
 <li>DEBUG_VFF_EXTENDED
 : <a class="el" href="vf__extended__float_8c.html#ab64c7f71460096eb6bed6963d617ea49">vf_extended_float.c</a>
 </li>
@@ -351,6 +366,7 @@ $(document).ready(function(){initNavTree('globals_defs_d.html','');});
 , <a class="el" href="cc3d_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">cc3d.h</a>
 , <a class="el" href="chimera_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">chimera.h</a>
 , <a class="el" href="cjmcu_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">cjmcu.h</a>
+, <a class="el" href="crazybee__f4__1_80_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">crazybee_f4_1.0.h</a>
 , <a class="el" href="crazyflie_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">crazyflie.h</a>
 , <a class="el" href="disco_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">disco.h</a>
 , <a class="el" href="elle0__common_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">elle0_common.h</a>
@@ -364,8 +380,11 @@ $(document).ready(function(){initNavTree('globals_defs_d.html','');});
 , <a class="el" href="lisa__mx_2chibios_2v2_81_2board_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">board.h</a>
 , <a class="el" href="lisa__mx__common_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">lisa_mx_common.h</a>
 , <a class="el" href="lisa__s__1_80_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">lisa_s_1.0.h</a>
+, <a class="el" href="matek__f405__wing__v1_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">matek_f405_wing_v1.h</a>
+, <a class="el" href="matekF765-WING_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">matekF765-WING.h</a>
 , <a class="el" href="navstik__1_80_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">navstik_1.0.h</a>
 , <a class="el" href="naze32__common_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">naze32_common.h</a>
+, <a class="el" href="nucleo144__f767zi_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">nucleo144_f767zi.h</a>
 , <a class="el" href="opa__ftd__1_80_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">opa_ftd_1.0.h</a>
 , <a class="el" href="openpilot__revo__1_80_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">openpilot_revo_1.0.h</a>
 , <a class="el" href="openpilot__revo__nano_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">openpilot_revo_nano.h</a>
@@ -376,8 +395,6 @@ $(document).ready(function(){initNavTree('globals_defs_d.html','');});
 , <a class="el" href="px4fmu__2_84_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">px4fmu_2.4.h</a>
 , <a class="el" href="px4fmu__4_80_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">px4fmu_4.0.h</a>
 , <a class="el" href="px4io__2_84_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">px4io_2.4.h</a>
-, <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">board.h</a>
-, <a class="el" href="stm32f4__discovery_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">stm32f4_discovery.h</a>
 , <a class="el" href="swing_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">swing.h</a>
 , <a class="el" href="tawaki_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">tawaki.h</a>
 , <a class="el" href="tiny__0_899_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">tiny_0.99.h</a>
@@ -386,7 +403,6 @@ $(document).ready(function(){initNavTree('globals_defs_d.html','');});
 , <a class="el" href="tiny__2_81_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">tiny_2.1.h</a>
 , <a class="el" href="umarim__1_80_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">umarim_1.0.h</a>
 , <a class="el" href="umarim__lite__2_80_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">umarim_lite_2.0.h</a>
-, <a class="el" href="vms__ecu_2chibios_2v1_80_2board_8h.html#aa7699f41fbe105c8f5061cc48a5f6307">board.h</a>
 </li>
 <li>DEFAULT_AV_NB_SAMPLE
 : <a class="el" href="adc_8h.html#a926cfe25c54a1c6ac36923aeac21223a">adc.h</a>
@@ -405,19 +421,23 @@ $(document).ready(function(){initNavTree('globals_defs_d.html','');});
 : <a class="el" href="downlink_8h.html#a028b405f95cecb4af565b17c8ee71d80">downlink.h</a>
 </li>
 <li>DefaultMilliAmpereOfAdc
-: <a class="el" href="navstik__1_80_8h.html#ae66588cc87259ee96c9b794f74bc6e0d">navstik_1.0.h</a>
+: <a class="el" href="matek__f405__wing__v1_8h.html#ae66588cc87259ee96c9b794f74bc6e0d">matek_f405_wing_v1.h</a>
+, <a class="el" href="matekF765-WING_8h.html#ae66588cc87259ee96c9b794f74bc6e0d">matekF765-WING.h</a>
+, <a class="el" href="navstik__1_80_8h.html#ae66588cc87259ee96c9b794f74bc6e0d">navstik_1.0.h</a>
 , <a class="el" href="opa__ap__1_80_8h.html#ae66588cc87259ee96c9b794f74bc6e0d">opa_ap_1.0.h</a>
-, <a class="el" href="vms__ecu_2chibios_2v1_80_2board_8h.html#ae66588cc87259ee96c9b794f74bc6e0d">board.h</a>
+, <a class="el" href="px4fmu__4_80_8h.html#ae66588cc87259ee96c9b794f74bc6e0d">px4fmu_4.0.h</a>
 </li>
 <li>DefaultPeriodic
 : <a class="el" href="telemetry_8h.html#a1912e51b2e63ae9b0d41d91e073cfefd">telemetry.h</a>
 </li>
 <li>DefaultVoltageOfAdc
-: <a class="el" href="apogee__1_80_8h.html#a94fa241ceca04635f282e09bdd829f5f">apogee_1.0.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a94fa241ceca04635f282e09bdd829f5f">board.h</a>
+, <a class="el" href="apogee__1_80_8h.html#a94fa241ceca04635f282e09bdd829f5f">apogee_1.0.h</a>
 , <a class="el" href="booz__1_80_8h.html#a94fa241ceca04635f282e09bdd829f5f">booz_1.0.h</a>
 , <a class="el" href="cc3d_8h.html#a94fa241ceca04635f282e09bdd829f5f">cc3d.h</a>
 , <a class="el" href="chimera_8h.html#a94fa241ceca04635f282e09bdd829f5f">chimera.h</a>
 , <a class="el" href="cjmcu_8h.html#a94fa241ceca04635f282e09bdd829f5f">cjmcu.h</a>
+, <a class="el" href="crazybee__f4__1_80_8h.html#a94fa241ceca04635f282e09bdd829f5f">crazybee_f4_1.0.h</a>
 , <a class="el" href="elle0__common_8h.html#a94fa241ceca04635f282e09bdd829f5f">elle0_common.h</a>
 , <a class="el" href="hb__1_81_8h.html#a94fa241ceca04635f282e09bdd829f5f">hb_1.1.h</a>
 , <a class="el" href="hbmini__1_80_8h.html#a94fa241ceca04635f282e09bdd829f5f">hbmini_1.0.h</a>
@@ -432,9 +452,12 @@ $(document).ready(function(){initNavTree('globals_defs_d.html','');});
 , <a class="el" href="lisa__mx__common_8h.html#a94fa241ceca04635f282e09bdd829f5f">lisa_mx_common.h</a>
 , <a class="el" href="lisa__s__1_80_8h.html#a94fa241ceca04635f282e09bdd829f5f">lisa_s_1.0.h</a>
 , <a class="el" href="logom__2_86_8h.html#a94fa241ceca04635f282e09bdd829f5f">logom_2.6.h</a>
+, <a class="el" href="matek__f405__wing__v1_8h.html#a94fa241ceca04635f282e09bdd829f5f">matek_f405_wing_v1.h</a>
+, <a class="el" href="matekF765-WING_8h.html#a94fa241ceca04635f282e09bdd829f5f">matekF765-WING.h</a>
 , <a class="el" href="navgo__1_80_8h.html#a94fa241ceca04635f282e09bdd829f5f">navgo_1.0.h</a>
 , <a class="el" href="navstik__1_80_8h.html#a94fa241ceca04635f282e09bdd829f5f">navstik_1.0.h</a>
 , <a class="el" href="naze32__common_8h.html#a94fa241ceca04635f282e09bdd829f5f">naze32_common.h</a>
+, <a class="el" href="nucleo144__f767zi_8h.html#a94fa241ceca04635f282e09bdd829f5f">nucleo144_f767zi.h</a>
 , <a class="el" href="opa__ap__1_80_8h.html#a94fa241ceca04635f282e09bdd829f5f">opa_ap_1.0.h</a>
 , <a class="el" href="opa__ftd__1_80_8h.html#a94fa241ceca04635f282e09bdd829f5f">opa_ftd_1.0.h</a>
 , <a class="el" href="openpilot__revo__1_80_8h.html#a94fa241ceca04635f282e09bdd829f5f">openpilot_revo_1.0.h</a>
@@ -446,8 +469,6 @@ $(document).ready(function(){initNavTree('globals_defs_d.html','');});
 , <a class="el" href="px4fmu__2_84_8h.html#a94fa241ceca04635f282e09bdd829f5f">px4fmu_2.4.h</a>
 , <a class="el" href="px4fmu__4_80_8h.html#a94fa241ceca04635f282e09bdd829f5f">px4fmu_4.0.h</a>
 , <a class="el" href="sdlog__1_80_8h.html#a94fa241ceca04635f282e09bdd829f5f">sdlog_1.0.h</a>
-, <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a94fa241ceca04635f282e09bdd829f5f">board.h</a>
-, <a class="el" href="stm32f4__discovery_8h.html#a94fa241ceca04635f282e09bdd829f5f">stm32f4_discovery.h</a>
 , <a class="el" href="tawaki_8h.html#a94fa241ceca04635f282e09bdd829f5f">tawaki.h</a>
 , <a class="el" href="tiny__0_899_8h.html#a94fa241ceca04635f282e09bdd829f5f">tiny_0.99.h</a>
 , <a class="el" href="tiny__1_81_8h.html#a94fa241ceca04635f282e09bdd829f5f">tiny_1.1.h</a>
@@ -457,9 +478,7 @@ $(document).ready(function(){initNavTree('globals_defs_d.html','');});
 , <a class="el" href="twog__1_80_8h.html#a94fa241ceca04635f282e09bdd829f5f">twog_1.0.h</a>
 , <a class="el" href="umarim__1_80_8h.html#a94fa241ceca04635f282e09bdd829f5f">umarim_1.0.h</a>
 , <a class="el" href="umarim__lite__2_80_8h.html#a94fa241ceca04635f282e09bdd829f5f">umarim_lite_2.0.h</a>
-, <a class="el" href="vms__ecu_2chibios_2v1_80_2board_8h.html#a94fa241ceca04635f282e09bdd829f5f">board.h</a>
 , <a class="el" href="yapa__2_80_8h.html#a94fa241ceca04635f282e09bdd829f5f">yapa_2.0.h</a>
-, <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a94fa241ceca04635f282e09bdd829f5f">board.h</a>
 </li>
 <li>DEG2RAD
 : <a class="el" href="nps__fdm__jsbsim_8cpp.html#af7e8592d0a634bd3642e9fd508ea8022">nps_fdm_jsbsim.cpp</a>
@@ -467,11 +486,21 @@ $(document).ready(function(){initNavTree('globals_defs_d.html','');});
 <li>DEG_OF_EM7DEG
 : <a class="el" href="group__math__geodetic__int.html#gaac4c67337721ee42a199ad45da6108bf">pprz_geodetic_int.h</a>
 </li>
+<li>delay
+: <a class="el" href="cc2500__compat_8h.html#ae0bb1e8f5c7d1e9924982bdc9f9dc792">cc2500_compat.h</a>
+</li>
+<li>DELAY_10_HZ
+: <a class="el" href="cc2500__rx_8c.html#aa9537b980a8aca5c5f37fed825b33e37">cc2500_rx.c</a>
+</li>
 <li>DELAYED_FIRST_ORDER_LOWPASS_FILTER_BUFFER_SIZE
 : <a class="el" href="delayed__first__order__lowpass__filter_8h.html#ab843d5ca5b0fb4332535e80812a91248">delayed_first_order_lowpass_filter.h</a>
 </li>
 <li>DELAYED_FIRST_ORDER_LOWPASS_FILTER_FILTER_ALPHA_SHIFT
 : <a class="el" href="delayed__first__order__lowpass__filter_8h.html#a99b05a7b2c731340ec0f16c33f451dcb">delayed_first_order_lowpass_filter.h</a>
+</li>
+<li>delayMicroseconds
+: <a class="el" href="cc2500_8c.html#a4b534dc22648d7f7eaa5213e6af265b7">cc2500.c</a>
+, <a class="el" href="cc2500__compat_8h.html#a4b534dc22648d7f7eaa5213e6af265b7">cc2500_compat.h</a>
 </li>
 <li>DELTA_EAST
 : <a class="el" href="group__math__geodetic__utm.html#ga84f493cc544c5ccd1fd9be8653e4f974">pprz_geodetic_utm.h</a>
@@ -530,8 +559,11 @@ $(document).ready(function(){initNavTree('globals_defs_d.html','');});
 <li>DETECT_WINDOW_FPS
 : <a class="el" href="detect__window_8c.html#a69e9aed1c4dd021e51d9cfc84c07f157">detect_window.c</a>
 </li>
-<li>DI
-: <a class="el" href="actuators__xvert_8c.html#acabe1ee3d11be6214c678bf4dabda3c9">actuators_xvert.c</a>
+<li>DETECTION_PATTERN_REG_ADDR
+: <a class="el" href="tfmini__i2c_8c.html#a7e3b4d95b8069dfbe8592487f1e5cc1a">tfmini_i2c.c</a>
+</li>
+<li>DEVICE_RESET_ADDR
+: <a class="el" href="tfmini__i2c_8c.html#ac987479fd14af3ce9d021f994df55846">tfmini_i2c.c</a>
 </li>
 <li>DICTIONARY_PATH
 : <a class="el" href="textons_8c.html#a056e00a57f2fab0c13915e86baa18823">textons.c</a>
@@ -592,6 +624,18 @@ $(document).ready(function(){initNavTree('globals_defs_d.html','');});
 </li>
 <li>DISPLAY_DT
 : <a class="el" href="nps__main_8h.html#a1dcc865606709dc28027aa1d20aca8b6">nps_main.h</a>
+</li>
+<li>DISTANCE_MODE_LONG
+: <a class="el" href="tfmini__i2c_8c.html#a8170710ca0546d4b1ac63986adc24a54">tfmini_i2c.c</a>
+</li>
+<li>DISTANCE_MODE_MIDDLE
+: <a class="el" href="tfmini__i2c_8c.html#ab6e05ae6b53b8e184a6c097dd524844c">tfmini_i2c.c</a>
+</li>
+<li>DISTANCE_MODE_REG_ADDR
+: <a class="el" href="tfmini__i2c_8c.html#a9fdedf3b64fa88f159a2b3044683a31e">tfmini_i2c.c</a>
+</li>
+<li>DISTANCE_MODE_SHORT
+: <a class="el" href="tfmini__i2c_8c.html#ad930ea415d470c44863e4eaaa30fef8d">tfmini_i2c.c</a>
 </li>
 <li>DistanceSquare
 : <a class="el" href="nav_8h.html#ac72e29d6c97b6ae1fcf957fa59c69215">nav.h</a>
@@ -683,6 +727,9 @@ $(document).ready(function(){initNavTree('globals_defs_d.html','');});
 <li>DOUBLE_VECT3_ROUND
 : <a class="el" href="group__math__algebra__double.html#ga57f944678cda3405c13b3c2623e8cffe">pprz_algebra_double.h</a>
 </li>
+<li>DOWNLINK_BUFFER_SIZE
+: <a class="el" href="frsky__x_8h.html#a4846bb3b4508d4210c8f8192ca2aa55b">frsky_x.h</a>
+</li>
 <li>DOWNLINK_DEVICE
 : <a class="el" href="avoid__navigation_8c.html#a2978a46b47cbc9d17a0924014ff9658b">avoid_navigation.c</a>
 , <a class="el" href="stereocam__droplet_8c.html#a2978a46b47cbc9d17a0924014ff9658b">stereocam_droplet.c</a>
@@ -765,6 +812,9 @@ $(document).ready(function(){initNavTree('globals_defs_d.html','');});
 <li>DSHOT_BIT_WIDTHS
 : <a class="el" href="esc__dshot_8h.html#a29035737910ed42cd0b02b86ffd0489c">esc_dshot.h</a>
 </li>
+<li>DSHOT_CHANNEL_FIRST_INDEX
+: <a class="el" href="esc__dshot_8h.html#a675c4be910953a77c3462714e3a7a6b4">esc_dshot.h</a>
+</li>
 <li>DSHOT_CHANNELS
 : <a class="el" href="esc__dshot_8h.html#a111562bc351f4a19293c98094cf1fd2d">esc_dshot.h</a>
 </li>
@@ -775,7 +825,9 @@ $(document).ready(function(){initNavTree('globals_defs_d.html','');});
 : <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a7f204e908d02613dc19b8df5f9c3feed">board.h</a>
 </li>
 <li>DSHOT_CONF4_DEF
-: <a class="el" href="tawaki_8h.html#a98254443629620eef091f4ac556bcb56">tawaki.h</a>
+: <a class="el" href="nucleo144__f767zi_8h.html#a98254443629620eef091f4ac556bcb56">nucleo144_f767zi.h</a>
+, <a class="el" href="tawaki_8h.html#a98254443629620eef091f4ac556bcb56">tawaki.h</a>
+, <a class="el" href="matekF765-WING_8h.html#a98254443629620eef091f4ac556bcb56">matekF765-WING.h</a>
 </li>
 <li>DSHOT_CONF_TIM2
 : <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#ae399eee3d9c2b5510892289732106fca">board.h</a>
@@ -784,13 +836,12 @@ $(document).ready(function(){initNavTree('globals_defs_d.html','');});
 : <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#ab17386f4bee4b23fdb7aba1f0a53ba89">board.h</a>
 </li>
 <li>DSHOT_CONF_TIM4
-: <a class="el" href="tawaki_8h.html#a82b3f4cc0eca04e2c77af7218dac5f80">tawaki.h</a>
+: <a class="el" href="matekF765-WING_8h.html#a82b3f4cc0eca04e2c77af7218dac5f80">matekF765-WING.h</a>
+, <a class="el" href="nucleo144__f767zi_8h.html#a82b3f4cc0eca04e2c77af7218dac5f80">nucleo144_f767zi.h</a>
+, <a class="el" href="tawaki_8h.html#a82b3f4cc0eca04e2c77af7218dac5f80">tawaki.h</a>
 </li>
 <li>DSHOT_DMA_BUFFER_SIZE
 : <a class="el" href="esc__dshot_8h.html#a42f7d6070cbff87fb88786e7cdb644e1">esc_dshot.h</a>
-</li>
-<li>DSHOT_FRAME_SILENT_SYNC_BITS
-: <a class="el" href="esc__dshot_8h.html#af91dfbc1b5b691a4370bd6e13b186867">esc_dshot.h</a>
 </li>
 <li>DSHOT_FREQ
 : <a class="el" href="esc__dshot_8c.html#a36bdba10cfe02df997b2122301364ccd">esc_dshot.c</a>
@@ -798,8 +849,17 @@ $(document).ready(function(){initNavTree('globals_defs_d.html','');});
 <li>DSHOT_MAX_VALUE
 : <a class="el" href="esc__dshot_8c.html#a3c52b51bce8669ab42437677f7f7bbfb">esc_dshot.c</a>
 </li>
+<li>DSHOT_POST_FRAME_SILENT_SYNC_BITS
+: <a class="el" href="esc__dshot_8h.html#a68a168051008bf17fb04e3c222273f2a">esc_dshot.h</a>
+</li>
+<li>DSHOT_PRE_FRAME_SILENT_SYNC_BITS
+: <a class="el" href="esc__dshot_8h.html#a095138f75fff056771471310e0a4b7af">esc_dshot.h</a>
+</li>
 <li>DSHOT_PWM_PERIOD
 : <a class="el" href="esc__dshot_8c.html#acfe4c7cf5b8ec609811df6a1d51b3839">esc_dshot.c</a>
+</li>
+<li>DSHOT_RX
+: <a class="el" href="tawaki_2chibios_2v1_81_2board_8h.html#a85cca75632ad679c9b4a2183354bef74">board.h</a>
 </li>
 <li>DSHOT_SERVO_0
 : <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#af594147c2d8c4201c247733c37ee06f6">board.h</a>
@@ -820,100 +880,142 @@ $(document).ready(function(){initNavTree('globals_defs_d.html','');});
 : <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a5c2054cb849499a5dca2c283e8451461">board.h</a>
 </li>
 <li>DSHOT_SERVO_1
-: <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a963a0cc2bef521f25be4098b1c7057ca">board.h</a>
+: <a class="el" href="nucleo144__f767zi_8h.html#a963a0cc2bef521f25be4098b1c7057ca">nucleo144_f767zi.h</a>
+, <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a963a0cc2bef521f25be4098b1c7057ca">board.h</a>
 , <a class="el" href="tawaki_8h.html#a963a0cc2bef521f25be4098b1c7057ca">tawaki.h</a>
+</li>
+<li>DSHOT_SERVO_10
+: <a class="el" href="matekF765-WING_8h.html#aaa55a24c89ca64b3243dc70173bf6ecd">matekF765-WING.h</a>
+</li>
+<li>DSHOT_SERVO_10_AF
+: <a class="el" href="matekF765-WING_8h.html#a13771386d1462ff59a5d000939a081b8">matekF765-WING.h</a>
+</li>
+<li>DSHOT_SERVO_10_CHANNEL
+: <a class="el" href="matekF765-WING_8h.html#aaf2a8f773ed1c59180c6414ab152d1be">matekF765-WING.h</a>
+</li>
+<li>DSHOT_SERVO_10_DRIVER
+: <a class="el" href="matekF765-WING_8h.html#adbe58b248025cfc16575feefb9e58c50">matekF765-WING.h</a>
+</li>
+<li>DSHOT_SERVO_10_GPIO
+: <a class="el" href="matekF765-WING_8h.html#a8afd3f50e217b2d1f31ff1f25814dc4f">matekF765-WING.h</a>
+</li>
+<li>DSHOT_SERVO_10_PIN
+: <a class="el" href="matekF765-WING_8h.html#a787d6af5a7dd849edac74955b74a2919">matekF765-WING.h</a>
 </li>
 <li>DSHOT_SERVO_1_AF
 : <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a72aaa5ff57bebbf74353da1a06c5485c">board.h</a>
+, <a class="el" href="nucleo144__f767zi_8h.html#a72aaa5ff57bebbf74353da1a06c5485c">nucleo144_f767zi.h</a>
 , <a class="el" href="tawaki_8h.html#a72aaa5ff57bebbf74353da1a06c5485c">tawaki.h</a>
 </li>
 <li>DSHOT_SERVO_1_CHANNEL
-: <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#abf3af166846aed5b309b9719a38e57d1">board.h</a>
+: <a class="el" href="nucleo144__f767zi_8h.html#abf3af166846aed5b309b9719a38e57d1">nucleo144_f767zi.h</a>
 , <a class="el" href="tawaki_8h.html#abf3af166846aed5b309b9719a38e57d1">tawaki.h</a>
+, <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#abf3af166846aed5b309b9719a38e57d1">board.h</a>
 </li>
 <li>DSHOT_SERVO_1_DRIVER
 : <a class="el" href="tawaki_8h.html#a571b5273cd7bb21a63e68f5dab15be05">tawaki.h</a>
 , <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a571b5273cd7bb21a63e68f5dab15be05">board.h</a>
+, <a class="el" href="nucleo144__f767zi_8h.html#a571b5273cd7bb21a63e68f5dab15be05">nucleo144_f767zi.h</a>
 </li>
 <li>DSHOT_SERVO_1_GPIO
 : <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a9ebea810838167f4873e2184dfcc1688">board.h</a>
+, <a class="el" href="nucleo144__f767zi_8h.html#a9ebea810838167f4873e2184dfcc1688">nucleo144_f767zi.h</a>
 , <a class="el" href="tawaki_8h.html#a9ebea810838167f4873e2184dfcc1688">tawaki.h</a>
 </li>
 <li>DSHOT_SERVO_1_PIN
-: <a class="el" href="tawaki_8h.html#a5d92f941612bf5543a55cc34c75a2c6b">tawaki.h</a>
+: <a class="el" href="nucleo144__f767zi_8h.html#a5d92f941612bf5543a55cc34c75a2c6b">nucleo144_f767zi.h</a>
+, <a class="el" href="tawaki_8h.html#a5d92f941612bf5543a55cc34c75a2c6b">tawaki.h</a>
 , <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a5d92f941612bf5543a55cc34c75a2c6b">board.h</a>
 </li>
 <li>DSHOT_SERVO_2
 : <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a3373bdfaf48f78e35b649b4402be2dd6">board.h</a>
 , <a class="el" href="tawaki_8h.html#a3373bdfaf48f78e35b649b4402be2dd6">tawaki.h</a>
+, <a class="el" href="nucleo144__f767zi_8h.html#a3373bdfaf48f78e35b649b4402be2dd6">nucleo144_f767zi.h</a>
 </li>
 <li>DSHOT_SERVO_2_AF
-: <a class="el" href="tawaki_8h.html#a14091e57c944da21cf62bec605990ffb">tawaki.h</a>
-, <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a14091e57c944da21cf62bec605990ffb">board.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a14091e57c944da21cf62bec605990ffb">board.h</a>
+, <a class="el" href="nucleo144__f767zi_8h.html#a14091e57c944da21cf62bec605990ffb">nucleo144_f767zi.h</a>
+, <a class="el" href="tawaki_8h.html#a14091e57c944da21cf62bec605990ffb">tawaki.h</a>
 </li>
 <li>DSHOT_SERVO_2_CHANNEL
-: <a class="el" href="tawaki_8h.html#a13a95e62d30dea176454c55ef830586a">tawaki.h</a>
-, <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a13a95e62d30dea176454c55ef830586a">board.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a13a95e62d30dea176454c55ef830586a">board.h</a>
+, <a class="el" href="nucleo144__f767zi_8h.html#a13a95e62d30dea176454c55ef830586a">nucleo144_f767zi.h</a>
+, <a class="el" href="tawaki_8h.html#a13a95e62d30dea176454c55ef830586a">tawaki.h</a>
 </li>
 <li>DSHOT_SERVO_2_DRIVER
-: <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#ae38e9ec70c5cc25cd94ee6fdee56c640">board.h</a>
+: <a class="el" href="nucleo144__f767zi_8h.html#ae38e9ec70c5cc25cd94ee6fdee56c640">nucleo144_f767zi.h</a>
 , <a class="el" href="tawaki_8h.html#ae38e9ec70c5cc25cd94ee6fdee56c640">tawaki.h</a>
+, <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#ae38e9ec70c5cc25cd94ee6fdee56c640">board.h</a>
 </li>
 <li>DSHOT_SERVO_2_GPIO
-: <a class="el" href="tawaki_8h.html#a0aad8f4da19255c299bbea3ac6fb6723">tawaki.h</a>
-, <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a0aad8f4da19255c299bbea3ac6fb6723">board.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a0aad8f4da19255c299bbea3ac6fb6723">board.h</a>
+, <a class="el" href="tawaki_8h.html#a0aad8f4da19255c299bbea3ac6fb6723">tawaki.h</a>
+, <a class="el" href="nucleo144__f767zi_8h.html#a0aad8f4da19255c299bbea3ac6fb6723">nucleo144_f767zi.h</a>
 </li>
 <li>DSHOT_SERVO_2_PIN
-: <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#ab7bd2a31afc7c8fd38b24511bd1c073c">board.h</a>
+: <a class="el" href="nucleo144__f767zi_8h.html#ab7bd2a31afc7c8fd38b24511bd1c073c">nucleo144_f767zi.h</a>
 , <a class="el" href="tawaki_8h.html#ab7bd2a31afc7c8fd38b24511bd1c073c">tawaki.h</a>
+, <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#ab7bd2a31afc7c8fd38b24511bd1c073c">board.h</a>
 </li>
 <li>DSHOT_SERVO_3
-: <a class="el" href="tawaki_8h.html#aad3d1b85cc949c91426497a482eef33c">tawaki.h</a>
-, <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#aad3d1b85cc949c91426497a482eef33c">board.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#aad3d1b85cc949c91426497a482eef33c">board.h</a>
+, <a class="el" href="tawaki_8h.html#aad3d1b85cc949c91426497a482eef33c">tawaki.h</a>
+, <a class="el" href="nucleo144__f767zi_8h.html#aad3d1b85cc949c91426497a482eef33c">nucleo144_f767zi.h</a>
 </li>
 <li>DSHOT_SERVO_3_AF
-: <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#ac27a956f889eb2bd2bfd3b3bee4ca4ae">board.h</a>
-, <a class="el" href="tawaki_8h.html#ac27a956f889eb2bd2bfd3b3bee4ca4ae">tawaki.h</a>
+: <a class="el" href="tawaki_8h.html#ac27a956f889eb2bd2bfd3b3bee4ca4ae">tawaki.h</a>
+, <a class="el" href="nucleo144__f767zi_8h.html#ac27a956f889eb2bd2bfd3b3bee4ca4ae">nucleo144_f767zi.h</a>
+, <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#ac27a956f889eb2bd2bfd3b3bee4ca4ae">board.h</a>
 </li>
 <li>DSHOT_SERVO_3_CHANNEL
-: <a class="el" href="tawaki_8h.html#aa678ac896b751ceebec5b735eaf47f9f">tawaki.h</a>
-, <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#aa678ac896b751ceebec5b735eaf47f9f">board.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#aa678ac896b751ceebec5b735eaf47f9f">board.h</a>
+, <a class="el" href="tawaki_8h.html#aa678ac896b751ceebec5b735eaf47f9f">tawaki.h</a>
+, <a class="el" href="nucleo144__f767zi_8h.html#aa678ac896b751ceebec5b735eaf47f9f">nucleo144_f767zi.h</a>
 </li>
 <li>DSHOT_SERVO_3_DRIVER
-: <a class="el" href="tawaki_8h.html#adf12004d57f8a8238e2a2a7e809cbf8b">tawaki.h</a>
-, <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#adf12004d57f8a8238e2a2a7e809cbf8b">board.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#adf12004d57f8a8238e2a2a7e809cbf8b">board.h</a>
+, <a class="el" href="tawaki_8h.html#adf12004d57f8a8238e2a2a7e809cbf8b">tawaki.h</a>
+, <a class="el" href="nucleo144__f767zi_8h.html#adf12004d57f8a8238e2a2a7e809cbf8b">nucleo144_f767zi.h</a>
 </li>
 <li>DSHOT_SERVO_3_GPIO
 : <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a21a2670587c1ec2d9ae2c19c90024bd2">board.h</a>
+, <a class="el" href="nucleo144__f767zi_8h.html#a21a2670587c1ec2d9ae2c19c90024bd2">nucleo144_f767zi.h</a>
 , <a class="el" href="tawaki_8h.html#a21a2670587c1ec2d9ae2c19c90024bd2">tawaki.h</a>
 </li>
 <li>DSHOT_SERVO_3_PIN
-: <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a678c1093263b0645488de5a1a5f35e1a">board.h</a>
-, <a class="el" href="tawaki_8h.html#a678c1093263b0645488de5a1a5f35e1a">tawaki.h</a>
+: <a class="el" href="tawaki_8h.html#a678c1093263b0645488de5a1a5f35e1a">tawaki.h</a>
+, <a class="el" href="nucleo144__f767zi_8h.html#a678c1093263b0645488de5a1a5f35e1a">nucleo144_f767zi.h</a>
+, <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a678c1093263b0645488de5a1a5f35e1a">board.h</a>
 </li>
 <li>DSHOT_SERVO_4
 : <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#accaba79782d8a97b19beaff2110cfa22">board.h</a>
 , <a class="el" href="tawaki_8h.html#accaba79782d8a97b19beaff2110cfa22">tawaki.h</a>
+, <a class="el" href="nucleo144__f767zi_8h.html#accaba79782d8a97b19beaff2110cfa22">nucleo144_f767zi.h</a>
 </li>
 <li>DSHOT_SERVO_4_AF
-: <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#ae9aa038e4d4911598529f87bce46c082">board.h</a>
+: <a class="el" href="nucleo144__f767zi_8h.html#ae9aa038e4d4911598529f87bce46c082">nucleo144_f767zi.h</a>
 , <a class="el" href="tawaki_8h.html#ae9aa038e4d4911598529f87bce46c082">tawaki.h</a>
+, <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#ae9aa038e4d4911598529f87bce46c082">board.h</a>
 </li>
 <li>DSHOT_SERVO_4_CHANNEL
-: <a class="el" href="tawaki_8h.html#ae195dcd60fc388e78a8d7073cc7c7060">tawaki.h</a>
+: <a class="el" href="nucleo144__f767zi_8h.html#ae195dcd60fc388e78a8d7073cc7c7060">nucleo144_f767zi.h</a>
+, <a class="el" href="tawaki_8h.html#ae195dcd60fc388e78a8d7073cc7c7060">tawaki.h</a>
 , <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#ae195dcd60fc388e78a8d7073cc7c7060">board.h</a>
 </li>
 <li>DSHOT_SERVO_4_DRIVER
 : <a class="el" href="tawaki_8h.html#a0cc8b8646368660f85306ed5d16e5557">tawaki.h</a>
 , <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a0cc8b8646368660f85306ed5d16e5557">board.h</a>
+, <a class="el" href="nucleo144__f767zi_8h.html#a0cc8b8646368660f85306ed5d16e5557">nucleo144_f767zi.h</a>
 </li>
 <li>DSHOT_SERVO_4_GPIO
 : <a class="el" href="tawaki_8h.html#af372d54ff8fac647c0bac289b30e8cdb">tawaki.h</a>
+, <a class="el" href="nucleo144__f767zi_8h.html#af372d54ff8fac647c0bac289b30e8cdb">nucleo144_f767zi.h</a>
 , <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#af372d54ff8fac647c0bac289b30e8cdb">board.h</a>
 </li>
 <li>DSHOT_SERVO_4_PIN
-: <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#aacb25658dac32427d98a3c7b5449c1a5">board.h</a>
-, <a class="el" href="tawaki_8h.html#aacb25658dac32427d98a3c7b5449c1a5">tawaki.h</a>
+: <a class="el" href="tawaki_8h.html#aacb25658dac32427d98a3c7b5449c1a5">tawaki.h</a>
+, <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#aacb25658dac32427d98a3c7b5449c1a5">board.h</a>
+, <a class="el" href="nucleo144__f767zi_8h.html#aacb25658dac32427d98a3c7b5449c1a5">nucleo144_f767zi.h</a>
 </li>
 <li>DSHOT_SERVO_5
 : <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a56f76f396a70acf27b8f1b82ebd04d9a">board.h</a>
@@ -933,6 +1035,60 @@ $(document).ready(function(){initNavTree('globals_defs_d.html','');});
 <li>DSHOT_SERVO_5_PIN
 : <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#ac53709a5e03bdc0386f2bce5d35c713c">board.h</a>
 </li>
+<li>DSHOT_SERVO_7
+: <a class="el" href="matekF765-WING_8h.html#ae8a4f94a5940ec4410010267cf3638e9">matekF765-WING.h</a>
+</li>
+<li>DSHOT_SERVO_7_AF
+: <a class="el" href="matekF765-WING_8h.html#a645c134345001f16dd0db77ed7e777f7">matekF765-WING.h</a>
+</li>
+<li>DSHOT_SERVO_7_CHANNEL
+: <a class="el" href="matekF765-WING_8h.html#a87c8f01357c575ed5f9c89ca2df5c31f">matekF765-WING.h</a>
+</li>
+<li>DSHOT_SERVO_7_DRIVER
+: <a class="el" href="matekF765-WING_8h.html#ace0d764df858a921df20849672d327a5">matekF765-WING.h</a>
+</li>
+<li>DSHOT_SERVO_7_GPIO
+: <a class="el" href="matekF765-WING_8h.html#a33961333f6ecb2a3210bf55fad8dc296">matekF765-WING.h</a>
+</li>
+<li>DSHOT_SERVO_7_PIN
+: <a class="el" href="matekF765-WING_8h.html#a74fb430720681a82b01e57b0a8a3d1fb">matekF765-WING.h</a>
+</li>
+<li>DSHOT_SERVO_8
+: <a class="el" href="matekF765-WING_8h.html#a1f54de15eb5e8033da2da9daa8bbb15d">matekF765-WING.h</a>
+</li>
+<li>DSHOT_SERVO_8_AF
+: <a class="el" href="matekF765-WING_8h.html#a43b6293145907a7764a4848afe266f26">matekF765-WING.h</a>
+</li>
+<li>DSHOT_SERVO_8_CHANNEL
+: <a class="el" href="matekF765-WING_8h.html#a3834b69e7e557d9a0640553a2accd090">matekF765-WING.h</a>
+</li>
+<li>DSHOT_SERVO_8_DRIVER
+: <a class="el" href="matekF765-WING_8h.html#ab3cc30bd4dd77f4300ce812f48701674">matekF765-WING.h</a>
+</li>
+<li>DSHOT_SERVO_8_GPIO
+: <a class="el" href="matekF765-WING_8h.html#abca88307eb95d2d45ca72902b59550e8">matekF765-WING.h</a>
+</li>
+<li>DSHOT_SERVO_8_PIN
+: <a class="el" href="matekF765-WING_8h.html#a5d5c9165fec3c4a9c63759f194b0b89f">matekF765-WING.h</a>
+</li>
+<li>DSHOT_SERVO_9
+: <a class="el" href="matekF765-WING_8h.html#acd62ae81fc9ac1c2dd9219d50f0224ef">matekF765-WING.h</a>
+</li>
+<li>DSHOT_SERVO_9_AF
+: <a class="el" href="matekF765-WING_8h.html#a66e853e5d6dcc2582a4b5a551fc33e2e">matekF765-WING.h</a>
+</li>
+<li>DSHOT_SERVO_9_CHANNEL
+: <a class="el" href="matekF765-WING_8h.html#a965646ae8f407569144ea2bed5e80653">matekF765-WING.h</a>
+</li>
+<li>DSHOT_SERVO_9_DRIVER
+: <a class="el" href="matekF765-WING_8h.html#a15daa714fd980498acdbd191d3f9f190">matekF765-WING.h</a>
+</li>
+<li>DSHOT_SERVO_9_GPIO
+: <a class="el" href="matekF765-WING_8h.html#aa127eecbe94f69d2adfda428e4478533">matekF765-WING.h</a>
+</li>
+<li>DSHOT_SERVO_9_PIN
+: <a class="el" href="matekF765-WING_8h.html#a148f50694b7250e720ae4ec8ad298b4d">matekF765-WING.h</a>
+</li>
 <li>DSHOT_SPEED
 : <a class="el" href="esc__dshot_8c.html#a1586956e63b9b9944c887c8b9b3ccd4d">esc_dshot.c</a>
 </li>
@@ -940,8 +1096,10 @@ $(document).ready(function(){initNavTree('globals_defs_d.html','');});
 : <a class="el" href="esc__dshot_8c.html#ac02af40326a26f8a2cf2be12a60afd89">esc_dshot.c</a>
 </li>
 <li>DSHOT_TELEMETRY_DEV
-: <a class="el" href="tawaki_8h.html#a66fbf34a19f891d5d6b5ce86b8cf993d">tawaki.h</a>
-, <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a66fbf34a19f891d5d6b5ce86b8cf993d">board.h</a>
+: <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a66fbf34a19f891d5d6b5ce86b8cf993d">board.h</a>
+, <a class="el" href="matekF765-WING_8h.html#a66fbf34a19f891d5d6b5ce86b8cf993d">matekF765-WING.h</a>
+, <a class="el" href="tawaki_8h.html#a66fbf34a19f891d5d6b5ce86b8cf993d">tawaki.h</a>
+, <a class="el" href="nucleo144__f767zi_8h.html#a66fbf34a19f891d5d6b5ce86b8cf993d">nucleo144_f767zi.h</a>
 </li>
 <li>DSHOT_TELEMETRY_TIMEOUT_MS
 : <a class="el" href="esc__dshot_8c.html#aa9f084d1c2ec09c1ff9eea9a926f6364">esc_dshot.c</a>
@@ -1057,7 +1215,7 @@ $(document).ready(function(){initNavTree('globals_defs_d.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri May 15 2020 04:04:12 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:04:31 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

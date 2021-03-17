@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -147,7 +147,7 @@ Macros</h2></td></tr>
 <tr class="separator:a02c0ae5fb437280749638994286c902a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2de61f4f66043eb03434ee1967c1426"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pprz__simple__matrix_8h.html#ac2de61f4f66043eb03434ee1967c1426">MAT_SUB</a>(_i, _j, C, <a class="el" href="ins__float__invariant_8c.html#a66c12beb10a03abecd6d5893b821e166">A</a>, <a class="el" href="ins__float__invariant_8c.html#a111da81ae5883147168bbb8366377b10">B</a>)</td></tr>
 <tr class="separator:ac2de61f4f66043eb03434ee1967c1426"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54bfd1eda8fb7d326219c855825b8263"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pprz__simple__matrix_8h.html#a54bfd1eda8fb7d326219c855825b8263">MAT_MUL_VECT</a>(_n, o, a, b)</td></tr>
+<tr class="memitem:a54bfd1eda8fb7d326219c855825b8263"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pprz__simple__matrix_8h.html#a54bfd1eda8fb7d326219c855825b8263">MAT_MUL_VECT</a>(_n, o, a, <a class="el" href="wedgebug_8c.html#a83fc1af92e29717b4513d121b0c72c7d">b</a>)</td></tr>
 <tr class="memdesc:a54bfd1eda8fb7d326219c855825b8263"><td class="mdescLeft">&#160;</td><td class="mdescRight">o = a * b  <a href="#a54bfd1eda8fb7d326219c855825b8263">More...</a><br /></td></tr>
 <tr class="separator:a54bfd1eda8fb7d326219c855825b8263"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7a13444cdd63ef7b4f6e246dc46ab6e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pprz__simple__matrix_8h.html#ae7a13444cdd63ef7b4f6e246dc46ab6e">MAT_INV33</a>(_invS, _S)</td></tr>
@@ -199,8 +199,8 @@ Macros</h2></td></tr>
 <div class="line">    const <span class="keywordtype">float</span> m02 = _S[1][0]*_S[2][1] - _S[1][1]*_S[2][0];            \</div>
 <div class="line">    const <span class="keywordtype">float</span> m12 = _S[0][0]*_S[2][1] - _S[0][1]*_S[2][0];            \</div>
 <div class="line">    const <span class="keywordtype">float</span> m22 = _S[0][0]*_S[1][1] - _S[0][1]*_S[1][0];            \</div>
-<div class="line">    float det = _S[0][0]*m00 - _S[1][0]*m10 + _S[2][0]*m20;             \</div>
-<div class="line">    if (fabs(det) &lt; FLT_EPSILON) {                                      \</div>
+<div class="line">    float det = _S[0][0]*m00 - _S[1][0]*m10 + _S[2][0]*m20;             <a class="code" href="e__identification__fr_8c.html#a92cffae21318c1d983c63f3afa2a8d87">\</a></div>
+<div class="line"><a class="code" href="e__identification__fr_8c.html#a92cffae21318c1d983c63f3afa2a8d87">    if</a> (fabs(det) &lt; FLT_EPSILON) {                                      \</div>
 <div class="line">      <span class="comment">/* If the determinant is too small then set it to epsilon preserving sign. */</span> <a class="code" href="pprz__simple__matrix_8h.html#a09eb14a8c70b8473c12388ce49e7cb0d">\</a></div>
 <div class="line"><a class="code" href="pprz__simple__matrix_8h.html#a09eb14a8c70b8473c12388ce49e7cb0d">      warn_message</a>(<span class="stringliteral">&quot;warning: %s:%d MAT_INV33 trying to invert non-invertable matrix &#39;%s&#39; and put result in &#39;%s&#39;.\n&quot;</span>, __FILE__, __LINE__, #_S, #_invS); \</div>
 <div class="line">      det = copysignf(FLT_EPSILON, det);                                \</div>
@@ -215,6 +215,7 @@ Macros</h2></td></tr>
 <div class="line">    _invS[1][2] = -m21 / det;                                           \</div>
 <div class="line">    _invS[2][2] =  m22 / det;                                           \</div>
 <div class="line">  }</div>
+<div class="ttc" id="e__identification__fr_8c_html_a92cffae21318c1d983c63f3afa2a8d87"><div class="ttname"><a href="e__identification__fr_8c.html#a92cffae21318c1d983c63f3afa2a8d87">if</a></div><div class="ttdeci">if(GpsFixValid()&amp;&amp;e_identification_started)</div><div class="ttdef"><b>Definition:</b> <a href="e__identification__fr_8c_source.html#l00159">e_identification_fr.c:159</a></div></div>
 <div class="ttc" id="pprz__simple__matrix_8h_html_a09eb14a8c70b8473c12388ce49e7cb0d"><div class="ttname"><a href="pprz__simple__matrix_8h.html#a09eb14a8c70b8473c12388ce49e7cb0d">warn_message</a></div><div class="ttdeci">#define warn_message(...)</div><div class="ttdef"><b>Definition:</b> <a href="pprz__simple__matrix_8h_source.html#l00040">pprz_simple_matrix.h:40</a></div></div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="pprz__simple__matrix_8h_source.html#l00099">99</a> of file <a class="el" href="pprz__simple__matrix_8h_source.html">pprz_simple_matrix.h</a>.</p>
@@ -448,7 +449,7 @@ Macros</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">b&#160;</td>
+          <td class="paramname"><a class="el" href="wedgebug_8c.html#a83fc1af92e29717b4513d121b0c72c7d">b</a>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -462,10 +463,11 @@ Macros</h2></td></tr>
 <div class="line">    for (l = 0; l &lt; _n; l++) {                  \</div>
 <div class="line">      o[l] = 0;                               \</div>
 <div class="line">      for (m = 0; m &lt; _n; m++) {              \</div>
-<div class="line">        o[l] += a[l][m] * b[m];               \</div>
+<div class="line">        o[l] += a[l][m] * <a class="code" href="wedgebug_8c.html#a83fc1af92e29717b4513d121b0c72c7d">b</a>[m];               \</div>
 <div class="line">      }                                       \</div>
 <div class="line">    }                                         \</div>
 <div class="line">  }</div>
+<div class="ttc" id="wedgebug_8c_html_a83fc1af92e29717b4513d121b0c72c7d"><div class="ttname"><a href="wedgebug_8c.html#a83fc1af92e29717b4513d121b0c72c7d">b</a></div><div class="ttdeci">float b</div><div class="ttdef"><b>Definition:</b> <a href="wedgebug_8c_source.html#l00202">wedgebug.c:202</a></div></div>
 </div><!-- fragment -->
 <p>o = a * b </p>
 <p>a: [n x n] b: [n x 1] o: [n x 1] </p>
@@ -512,16 +514,17 @@ Macros</h2></td></tr>
 <div class="line">    printf(<span class="stringliteral">&quot; = {\n&quot;</span>);                          \</div>
 <div class="line">    for (l=0; l&lt;_i; l++){                      \</div>
 <div class="line">      printf(<span class="stringliteral">&quot;{&quot;</span>);                             \</div>
-<div class="line">      for (c=0; c&lt;_j; c++){                    \</div>
-<div class="line">        if(c&lt;(_j-1)){printf(<span class="stringliteral">&quot;%f,&quot;</span>,<a class="code" href="group__math__geodetic__utm.html#ga955f504eccf76b4eb2489c0adab03121">A</a>[l][c]);}   \</div>
+<div class="line">      for (c=0; c&lt;_j; c++){                    <a class="code" href="e__identification__fr_8c.html#a92cffae21318c1d983c63f3afa2a8d87">\</a></div>
+<div class="line"><a class="code" href="e__identification__fr_8c.html#a92cffae21318c1d983c63f3afa2a8d87">        if</a>(c&lt;(_j-1)){printf(<span class="stringliteral">&quot;%f,&quot;</span>,<a class="code" href="group__math__geodetic__utm.html#ga955f504eccf76b4eb2489c0adab03121">A</a>[l][c]);}   \</div>
 <div class="line">        else{printf(<span class="stringliteral">&quot;%f&quot;</span>,<a class="code" href="group__math__geodetic__utm.html#ga955f504eccf76b4eb2489c0adab03121">A</a>[l][c]);}            \</div>
-<div class="line">      }                                        \</div>
-<div class="line">      if(l&lt;(_i-1)){                            \</div>
+<div class="line">      }                                        <a class="code" href="e__identification__fr_8c.html#a92cffae21318c1d983c63f3afa2a8d87">\</a></div>
+<div class="line"><a class="code" href="e__identification__fr_8c.html#a92cffae21318c1d983c63f3afa2a8d87">      if</a>(l&lt;(_i-1)){                            \</div>
 <div class="line">        printf(<span class="stringliteral">&quot;} ,\n&quot;</span>);}                      \</div>
 <div class="line">      else{printf(<span class="stringliteral">&quot;}\n&quot;</span>);}                     \</div>
 <div class="line">    }                                          \</div>
 <div class="line">    printf(<span class="stringliteral">&quot;}\n&quot;</span>);                             \</div>
 <div class="line">  }</div>
+<div class="ttc" id="e__identification__fr_8c_html_a92cffae21318c1d983c63f3afa2a8d87"><div class="ttname"><a href="e__identification__fr_8c.html#a92cffae21318c1d983c63f3afa2a8d87">if</a></div><div class="ttdeci">if(GpsFixValid()&amp;&amp;e_identification_started)</div><div class="ttdef"><b>Definition:</b> <a href="e__identification__fr_8c_source.html#l00159">e_identification_fr.c:159</a></div></div>
 <div class="ttc" id="group__math__geodetic__utm_html_ga955f504eccf76b4eb2489c0adab03121"><div class="ttname"><a href="group__math__geodetic__utm.html#ga955f504eccf76b4eb2489c0adab03121">A</a></div><div class="ttdeci">#define A</div><div class="ttdef"><b>Definition:</b> <a href="pprz__geodetic__utm_8h_source.html#l00044">pprz_geodetic_utm.h:44</a></div></div>
 </div><!-- fragment -->
 <p>Definition at line <a class="el" href="pprz__simple__matrix_8h_source.html#l00161">161</a> of file <a class="el" href="pprz__simple__matrix_8h_source.html">pprz_simple_matrix.h</a>.</p>
@@ -722,7 +725,7 @@ Macros</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_29343b6f5fcd4b75a5dfbb985ff56864.html">math</a></li><li class="navelem"><a class="el" href="pprz__simple__matrix_8h.html">pprz_simple_matrix.h</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:03:05 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:03:20 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

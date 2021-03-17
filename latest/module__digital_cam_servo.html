@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -136,14 +136,6 @@ Define Options</h2>
 <li><b>name:</b> <code>DC_AUTOSHOOT_DISTANCE_INTERVAL</code> <b>value:</b> <em>50</em> <br />
  Description: grid in meters</li>
 </ul>
-<h1><a class="anchor" id="conflicts__digital_cam_servo"></a>
-Conflicts</h1>
-<ul>
-<li><a class="el" href="module__digital_cam.html">digital_cam module</a></li>
-<li><a class="el" href="module__digital_cam_i2c.html">digital_cam_i2c module</a></li>
-<li><a class="el" href="module__digital_cam_uart.html">digital_cam_uart module</a></li>
-<li><a class="el" href="module__digital_cam_video.html">digital_cam_video module</a> </li>
-</ul>
 <h1><a class="anchor" id="functions__digital_cam_servo"></a>
 Module functions</h1>
 <h2><a class="anchor" id="init_functions"></a>
@@ -199,7 +191,9 @@ Raw digital_cam_servo.xml file:</h2>
 <div class="line">    &lt;define name=&quot;DC_AUTOSHOOT_DISTANCE_INTERVAL&quot; value=&quot;50&quot; description=&quot;grid in meters&quot;/&gt;</div>
 <div class="line">  &lt;/doc&gt;</div>
 <div class="line"></div>
-<div class="line">  &lt;conflicts&gt;digital_cam,digital_cam_i2c,digital_cam_uart,digital_cam_video&lt;/conflicts&gt;</div>
+<div class="line">  &lt;dep&gt;</div>
+<div class="line">    &lt;conflicts&gt;digital_cam,digital_cam_i2c,digital_cam_uart,digital_cam_video&lt;/conflicts&gt;</div>
+<div class="line">  &lt;/dep&gt;</div>
 <div class="line"></div>
 <div class="line">  &lt;header&gt;</div>
 <div class="line">    &lt;file name=&quot;servo_cam_ctrl.h&quot;/&gt;</div>
@@ -224,7 +218,7 @@ Raw digital_cam_servo.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:03:39 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:03:57 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

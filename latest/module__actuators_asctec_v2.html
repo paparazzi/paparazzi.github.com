@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -166,6 +166,14 @@ Raw actuators_asctec_v2.xml file:</h2>
 <div class="line">    &lt;define name=&quot;$(ACTUATORS_ASCTEC_V2_I2C_DEV_UPPER)_SCLL&quot; value=&quot;$(ACTUATORS_ASCTEC_V2_I2C_SCL_TIME)&quot; cond=&quot;ifeq ($(ARCH), lpc21)&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;$(ACTUATORS_ASCTEC_V2_I2C_DEV_UPPER)_SCLH&quot; value=&quot;$(ACTUATORS_ASCTEC_V2_I2C_SCL_TIME)&quot; cond=&quot;ifeq ($(ARCH), lpc21)&quot;/&gt;</div>
 <div class="line">    &lt;file name=&quot;actuators_asctec_v2.c&quot; dir=&quot;subsystems/actuators&quot;/&gt;</div>
+<div class="line">    &lt;test&gt;</div>
+<div class="line">        &lt;define name=&quot;SERVO_FRONT&quot; value=&quot;0&quot;/&gt;</div>
+<div class="line">        &lt;define name=&quot;SERVO_BACK&quot; value=&quot;1&quot;/&gt;</div>
+<div class="line">        &lt;define name=&quot;SERVO_LEFT&quot; value=&quot;2&quot;/&gt;</div>
+<div class="line">        &lt;define name=&quot;SERVO_RIGHT&quot; value=&quot;3&quot;/&gt;</div>
+<div class="line">        &lt;define name=&quot;USE_I2C1&quot;/&gt;</div>
+<div class="line">        &lt;define name=&quot;ACTUATORS_ASCTEC_V2_I2C_DEV&quot; value=&quot;i2c1&quot;/&gt;</div>
+<div class="line">    &lt;/test&gt;</div>
 <div class="line">  &lt;/makefile&gt;</div>
 <div class="line">  &lt;makefile target=&quot;nps&quot;&gt;</div>
 <div class="line">    &lt;define name=&quot;USE_I2C0&quot;/&gt;</div>
@@ -180,7 +188,7 @@ Raw actuators_asctec_v2.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:03:39 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:03:57 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

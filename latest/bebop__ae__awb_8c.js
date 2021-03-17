@@ -23,7 +23,7 @@ var bebop__ae__awb_8c =
     [ "PRINT", "bebop__ae__awb_8c.html#aee52c6162d4b084290ed778856a1ded4", null ],
     [ "VERBOSE_PRINT", "bebop__ae__awb_8c.html#a01535af7e50005fd099fe06f94865e54", null ],
     [ "bebop_ae_awb_init", "bebop__ae__awb_8c.html#a488d91f59b9036f352ebc7fcafdedf7b", null ],
-    [ "update_ae_awb", "bebop__ae__awb_8c.html#a98dd41d74e2aed7f79d733e5c554701b", null ],
+    [ "update_ae_awb", "bebop__ae__awb_8c.html#a8c0fd60f86284b6fea7ce86d81efcc04", null ],
     [ "ae_set", "bebop__ae__awb_8c.html#a59c5ab043c16221c42ac40f1244e323e", null ],
     [ "awb_set", "bebop__ae__awb_8c.html#a8ca8bb5f3e3abe4795ae2a3b08026dbd", null ]
 ];

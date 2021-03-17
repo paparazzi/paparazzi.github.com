@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -203,7 +203,7 @@ $(document).ready(function(){initNavTree('UKF__Wind__Estimator_8c_source.html','
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <a class="code" href="rtwtypes_8h.html#a9609106d9819cc5902186f03b8c49508">int32_T</a> ix;</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <a class="code" href="rtwtypes_8h.html#a4681caa479b0bdadb029f609112eaa71">real32_T</a> b_c;</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <a class="code" href="rtwtypes_8h.html#a9609106d9819cc5902186f03b8c49508">int32_T</a> iy;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <a class="code" href="rtwtypes_8h.html#a9609106d9819cc5902186f03b8c49508">int32_T</a> f;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <a class="code" href="rtwtypes_8h.html#a9609106d9819cc5902186f03b8c49508">int32_T</a> <a class="code" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a>;</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <a class="code" href="rtwtypes_8h.html#a9609106d9819cc5902186f03b8c49508">int32_T</a> g;</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <a class="code" href="rtwtypes_8h.html#a9609106d9819cc5902186f03b8c49508">int32_T</a> b_ia;</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <a class="code" href="rtwtypes_8h.html#a9609106d9819cc5902186f03b8c49508">int32_T</a> b_ix;</div>
@@ -316,7 +316,7 @@ $(document).ready(function(){initNavTree('UKF__Wind__Estimator_8c_source.html','
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;          iy = 0;</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;          f = ((lastc - 1) * 21 + knt) + 1;</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;          <span class="keywordflow">for</span> (b_ix = knt + 1; b_ix &lt;= f; b_ix += 21) {</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;          <span class="keywordflow">for</span> (b_ix = knt + 1; b_ix &lt;= <a class="code" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a>; b_ix += 21) {</div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;            ix = i_i;</div>
 <div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;            b_c = 0.0F;</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;            g = (b_ix + lastv) - 1;</div>
@@ -532,7 +532,7 @@ $(document).ready(function(){initNavTree('UKF__Wind__Estimator_8c_source.html','
 <div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;  <a class="code" href="rtwtypes_8h.html#a9609106d9819cc5902186f03b8c49508">int32_T</a> ix;</div>
 <div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;  <a class="code" href="rtwtypes_8h.html#a4681caa479b0bdadb029f609112eaa71">real32_T</a> b_c;</div>
 <div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;  <a class="code" href="rtwtypes_8h.html#a9609106d9819cc5902186f03b8c49508">int32_T</a> iy;</div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;  <a class="code" href="rtwtypes_8h.html#a9609106d9819cc5902186f03b8c49508">int32_T</a> f;</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;  <a class="code" href="rtwtypes_8h.html#a9609106d9819cc5902186f03b8c49508">int32_T</a> <a class="code" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a>;</div>
 <div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;  <a class="code" href="rtwtypes_8h.html#a9609106d9819cc5902186f03b8c49508">int32_T</a> g;</div>
 <div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;  <a class="code" href="rtwtypes_8h.html#a9609106d9819cc5902186f03b8c49508">int32_T</a> b_ia;</div>
 <div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;  <a class="code" href="rtwtypes_8h.html#a9609106d9819cc5902186f03b8c49508">int32_T</a> b_ix;</div>
@@ -645,7 +645,7 @@ $(document).ready(function(){initNavTree('UKF__Wind__Estimator_8c_source.html','
 <div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;</div>
 <div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;          iy = 0;</div>
 <div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;          f = ((lastc - 1) * 20 + knt) + 1;</div>
-<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;          <span class="keywordflow">for</span> (b_ix = knt + 1; b_ix &lt;= f; b_ix += 20) {</div>
+<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;          <span class="keywordflow">for</span> (b_ix = knt + 1; b_ix &lt;= <a class="code" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a>; b_ix += 20) {</div>
 <div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;            ix = i_i;</div>
 <div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;            b_c = 0.0F;</div>
 <div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;            g = (b_ix + lastv) - 1;</div>
@@ -2242,6 +2242,7 @@ $(document).ready(function(){initNavTree('UKF__Wind__Estimator_8c_source.html','
 <div class="ttc" id="UKF__Wind__Estimator_8h_html_a343b67dba1681f6208293717f5ce2f63"><div class="ttname"><a href="UKF__Wind__Estimator_8h.html#a343b67dba1681f6208293717f5ce2f63">ukf_params_tag::Q</a></div><div class="ttdeci">real32_T Q[49]</div><div class="ttdef"><b>Definition:</b> <a href="UKF__Wind__Estimator_8h_source.html#l00064">UKF_Wind_Estimator.h:64</a></div></div>
 <div class="ttc" id="UKF__Wind__Estimator_8h_html_ad75ee6978fb4153630cd9ceb07ffb284"><div class="ttname"><a href="UKF__Wind__Estimator_8h.html#ad75ee6978fb4153630cd9ceb07ffb284">ExtU::vk</a></div><div class="ttdeci">real32_T vk[3]</div><div class="ttdef"><b>Definition:</b> <a href="UKF__Wind__Estimator_8h_source.html#l00042">UKF_Wind_Estimator.h:42</a></div></div>
 <div class="ttc" id="namespacemesonh_1_1mesonh__atmosphere_html_a5689687c9a17e62dee1f9631987ed82e"><div class="ttname"><a href="namespacemesonh_1_1mesonh__atmosphere.html#a5689687c9a17e62dee1f9631987ed82e">mesonh.mesonh_atmosphere.Y</a></div><div class="ttdeci">int Y</div><div class="ttdef"><b>Definition:</b> <a href="mesonh__atmosphere_8py_source.html#l00044">mesonh_atmosphere.py:44</a></div></div>
+<div class="ttc" id="wedgebug_8c_html_a05fd2dba3354a98f1a00b7c7ffc12b13"><div class="ttname"><a href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a></div><div class="ttdeci">uint16_t f</div><div class="ttdoc">Camera baseline, in meters (i.e. horizontal distance between the two cameras of the stereo setup) ...</div><div class="ttdef"><b>Definition:</b> <a href="wedgebug_8c_source.html#l00204">wedgebug.c:204</a></div></div>
 <div class="ttc" id="UKF__Wind__Estimator_8h_html_a61c996bf85b231478aaffa544d045733"><div class="ttname"><a href="UKF__Wind__Estimator_8h.html#a61c996bf85b231478aaffa544d045733">ExtU::q</a></div><div class="ttdeci">real32_T q[4]</div><div class="ttdef"><b>Definition:</b> <a href="UKF__Wind__Estimator_8h_source.html#l00041">UKF_Wind_Estimator.h:41</a></div></div>
 <div class="ttc" id="rtwtypes_8h_html_a4681caa479b0bdadb029f609112eaa71"><div class="ttname"><a href="rtwtypes_8h.html#a4681caa479b0bdadb029f609112eaa71">real32_T</a></div><div class="ttdeci">float real32_T</div><div class="ttdef"><b>Definition:</b> <a href="rtwtypes_8h_source.html#l00055">rtwtypes.h:55</a></div></div>
 <div class="ttc" id="UKF__Wind__Estimator_8h_html_afdebddd88e20d6299769fe94c33f0314"><div class="ttname"><a href="UKF__Wind__Estimator_8h.html#afdebddd88e20d6299769fe94c33f0314">DW::P_not_empty</a></div><div class="ttdeci">boolean_T P_not_empty</div><div class="ttdef"><b>Definition:</b> <a href="UKF__Wind__Estimator_8h_source.html#l00034">UKF_Wind_Estimator.h:34</a></div></div>
@@ -2276,7 +2277,7 @@ $(document).ready(function(){initNavTree('UKF__Wind__Estimator_8c_source.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_dcc9af59dc35b42e32db80b18066e136.html">meteo</a></li><li class="navelem"><a class="el" href="dir_52cf33ca6ff4e1b7a3968aed8ced90c8.html">lib_ukf_wind_estimator</a></li><li class="navelem"><a class="el" href="UKF__Wind__Estimator_8c.html">UKF_Wind_Estimator.c</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:02:26 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:02:37 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

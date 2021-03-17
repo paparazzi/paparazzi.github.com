@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -239,7 +239,7 @@ $(document).ready(function(){initNavTree('alt__srf08_8c_source.html','');});
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
 <div class="line"><a name="l00139"></a><span class="lineno"><a class="line" href="alt__srf08_8h.html#a36297d9e254256754d5217ebc596c840">  139</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="alt__srf08_8c.html#a36297d9e254256754d5217ebc596c840">srf08_event</a>(<span class="keywordtype">void</span>)</div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;{</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;  <span class="keywordtype">float</span> f = 0;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;  <span class="keywordtype">float</span> <a class="code" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a> = 0;</div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> i = 0;</div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="alt__srf08_8c.html#aaa86fa4e14a90dbda8f426e3cc1caf97">srf_trans</a>.<a class="code" href="group__i2c.html#ac4f80563bab524eee997c5c27ef570a4">status</a> == <a class="code" href="group__i2c.html#ggab31a87ef6e90ddd08be846de32e8a442a2884da616ec2ff9183e649f8fab1073b">I2CTransSuccess</a>) {</div>
@@ -270,6 +270,7 @@ $(document).ready(function(){initNavTree('alt__srf08_8c_source.html','');});
 <div class="ttc" id="alt__srf08_8c_html_aaa86fa4e14a90dbda8f426e3cc1caf97"><div class="ttname"><a href="alt__srf08_8c.html#aaa86fa4e14a90dbda8f426e3cc1caf97">srf_trans</a></div><div class="ttdeci">struct i2c_transaction srf_trans</div><div class="ttdef"><b>Definition:</b> <a href="alt__srf08_8c_source.html#l00044">alt_srf08.c:44</a></div></div>
 <div class="ttc" id="types_8h_html_a06896e8c53f721507066c079052171f8"><div class="ttname"><a href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a></div><div class="ttdeci">unsigned long uint32_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00018">types.h:18</a></div></div>
 <div class="ttc" id="alt__srf08_8h_html_ad69be3bf5be18d3f3cc276d3565419ea"><div class="ttname"><a href="alt__srf08_8h.html#ad69be3bf5be18d3f3cc276d3565419ea">SRF08_UNIT_0</a></div><div class="ttdeci">#define SRF08_UNIT_0</div><div class="ttdef"><b>Definition:</b> <a href="alt__srf08_8h_source.html#l00039">alt_srf08.h:39</a></div></div>
+<div class="ttc" id="wedgebug_8c_html_a05fd2dba3354a98f1a00b7c7ffc12b13"><div class="ttname"><a href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a></div><div class="ttdeci">uint16_t f</div><div class="ttdoc">Camera baseline, in meters (i.e. horizontal distance between the two cameras of the stereo setup) ...</div><div class="ttdef"><b>Definition:</b> <a href="wedgebug_8c_source.html#l00204">wedgebug.c:204</a></div></div>
 <div class="ttc" id="group__i2c_html_gafb731922c9fb73255aa4cc11e34bfbd6"><div class="ttname"><a href="group__i2c.html#gafb731922c9fb73255aa4cc11e34bfbd6">i2c_transceive</a></div><div class="ttdeci">bool i2c_transceive(struct i2c_periph *p, struct i2c_transaction *t, uint8_t s_addr, uint8_t len_w, uint16_t len_r)</div><div class="ttdoc">Submit a write/read transaction. </div><div class="ttdef"><b>Definition:</b> <a href="i2c_8c_source.html#l00344">i2c.c:344</a></div></div>
 <div class="ttc" id="group__i2c_html_structi2c__transaction"><div class="ttname"><a href="group__i2c.html#structi2c__transaction">i2c_transaction</a></div><div class="ttdoc">I2C transaction structure. </div><div class="ttdef"><b>Definition:</b> <a href="i2c_8h_source.html#l00093">i2c.h:93</a></div></div>
 <div class="ttc" id="alt__srf08_8c_html_a643c85c0c68ae638652791bd6635065c"><div class="ttname"><a href="alt__srf08_8c.html#a643c85c0c68ae638652791bd6635065c">srf08_got</a></div><div class="ttdeci">bool srf08_got</div><div class="ttdef"><b>Definition:</b> <a href="alt__srf08_8c_source.html#l00043">alt_srf08.c:43</a></div></div>
@@ -297,7 +298,7 @@ $(document).ready(function(){initNavTree('alt__srf08_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_2f48bbb566df394f79dcf8fe0631584a.html">sensors</a></li><li class="navelem"><a class="el" href="alt__srf08_8c.html">alt_srf08.c</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:02:29 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:02:41 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

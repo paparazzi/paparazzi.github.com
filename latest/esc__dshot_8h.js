@@ -3,7 +3,11 @@ var esc__dshot_8h =
     [ "DshotTelemetry", "esc__dshot_8h.html#structDshotTelemetry", [
       [ "crc8", "esc__dshot_8h.html#aace3b7bbd6ac541ba88e49a204e1d251", null ]
     ] ],
+    [ "DshotDmaBuffer", "esc__dshot_8h.html#unionDshotDmaBuffer", [
+      [ "widths16", "esc__dshot_8h.html#a624f7d7dedd1824df6c24bac66052fef", null ]
+    ] ],
     [ "DSHOTConfig", "esc__dshot_8h.html#structDSHOTConfig", [
+      [ "dma_buf", "esc__dshot_8h.html#ac9ae9080f226eec7923fbe53401ef65f", null ],
       [ "dma_channel", "esc__dshot_8h.html#a5052de7d190aa95a33159bb873029583", null ],
       [ "dma_stream", "esc__dshot_8h.html#a8e7b891b8dfadf15d3d99fa7b5fdb1ea", null ],
       [ "pwmp", "esc__dshot_8h.html#a3107cd958472a8fd5430f0220513bf25", null ],
@@ -17,9 +21,6 @@ var esc__dshot_8h =
       [ "dp", "esc__dshot_8h.html#aff22042f3c4824cd587fecc310f1a6d9", null ],
       [ "dt", "esc__dshot_8h.html#a6a8a20cc4424983f8d476924e3a5d424", null ],
       [ "onGoingQry", "esc__dshot_8h.html#a30d0d5d59890cd401ff4ba9aa141d7d7", null ]
-    ] ],
-    [ "DshotDmaBuffer", "esc__dshot_8h.html#unionDshotDmaBuffer", [
-      [ "widths16", "esc__dshot_8h.html#a624f7d7dedd1824df6c24bac66052fef", null ]
     ] ],
     [ "DSHOTDriver", "structDSHOTDriver.html", "structDSHOTDriver" ],
     [ "DshotTelemetry.__unnamed__", "esc__dshot_8h.html#unionDshotTelemetry_8____unnamed____", [
@@ -40,9 +41,11 @@ var esc__dshot_8h =
     [ "DSHOT_ALL_MOTORS", "esc__dshot_8h.html#aa4fc9395d0bfeb49d2dfa6a991315f5b", null ],
     [ "DSHOT_AT_LEAST_ONE_32B_TIMER", "esc__dshot_8h.html#a6986481680dca25d45f58e339b8b1fec", null ],
     [ "DSHOT_BIT_WIDTHS", "esc__dshot_8h.html#a29035737910ed42cd0b02b86ffd0489c", null ],
+    [ "DSHOT_CHANNEL_FIRST_INDEX", "esc__dshot_8h.html#a675c4be910953a77c3462714e3a7a6b4", null ],
     [ "DSHOT_CHANNELS", "esc__dshot_8h.html#a111562bc351f4a19293c98094cf1fd2d", null ],
     [ "DSHOT_DMA_BUFFER_SIZE", "esc__dshot_8h.html#a42f7d6070cbff87fb88786e7cdb644e1", null ],
-    [ "DSHOT_FRAME_SILENT_SYNC_BITS", "esc__dshot_8h.html#af91dfbc1b5b691a4370bd6e13b186867", null ],
+    [ "DSHOT_POST_FRAME_SILENT_SYNC_BITS", "esc__dshot_8h.html#a68a168051008bf17fb04e3c222273f2a", null ],
+    [ "DSHOT_PRE_FRAME_SILENT_SYNC_BITS", "esc__dshot_8h.html#a095138f75fff056771471310e0a4b7af", null ],
     [ "DSHOTDriver", "esc__dshot_8h.html#aaa2d3b91bca65a52b00c814b2ae80ed4", null ],
     [ "dshot_special_commands_t", "esc__dshot_8h.html#ae8e98535a8d2595a944f4164ae37ecde", [
       [ "DSHOT_CMD_MOTOR_STOP", "esc__dshot_8h.html#ae8e98535a8d2595a944f4164ae37ecdeab0c3021655f17e6b4bfee1ec7b5fe3ad", null ],

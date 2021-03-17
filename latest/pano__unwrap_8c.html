@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -196,8 +196,8 @@ Functions</h2></td></tr>
 <tr class="separator:ab8cfdd94ca198ffad976368529b78510"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7749a199c15590f0007e9976535686c5"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pano__unwrap_8c.html#a7749a199c15590f0007e9976535686c5">unwrap_LUT</a> (struct <a class="el" href="image_8h.html#structimage__t">image_t</a> *img_raw, struct <a class="el" href="image_8h.html#structimage__t">image_t</a> *img)</td></tr>
 <tr class="separator:a7749a199c15590f0007e9976535686c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace21ffee8c5243defa67b741282f29fe"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="image_8h.html#structimage__t">image_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pano__unwrap_8c.html#ace21ffee8c5243defa67b741282f29fe">camera_cb</a> (struct <a class="el" href="image_8h.html#structimage__t">image_t</a> *img)</td></tr>
-<tr class="separator:ace21ffee8c5243defa67b741282f29fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a710b27b04793f5a2412ab67f7eb0bb54"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="image_8h.html#structimage__t">image_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pano__unwrap_8c.html#a710b27b04793f5a2412ab67f7eb0bb54">camera_cb</a> (struct <a class="el" href="image_8h.html#structimage__t">image_t</a> *img, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> camera_id)</td></tr>
+<tr class="separator:a710b27b04793f5a2412ab67f7eb0bb54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2038ddd6c9204939f22d0879640b52e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pano__unwrap_8c.html#a2038ddd6c9204939f22d0879640b52e6">pano_unwrap_init</a> ()</td></tr>
 <tr class="separator:a2038ddd6c9204939f22d0879640b52e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -712,7 +712,7 @@ y</td>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="ace21ffee8c5243defa67b741282f29fe"></a>
+<a class="anchor" id="a710b27b04793f5a2412ab67f7eb0bb54"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -723,8 +723,18 @@ y</td>
           <td class="memname">static struct <a class="el" href="image_8h.html#structimage__t">image_t</a>* camera_cb </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="image_8h.html#structimage__t">image_t</a> *&#160;</td>
-          <td class="paramname"><em>img</em></td><td>)</td>
+          <td class="paramname"><em>img</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a>&#160;</td>
+          <td class="paramname"><em>camera_id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -736,7 +746,7 @@ y</td>
 
 <p>Definition at line <a class="el" href="pano__unwrap_8c_source.html#l00303">303</a> of file <a class="el" href="pano__unwrap_8c_source.html">pano_unwrap.c</a>.</p>
 
-<p>References <a class="el" href="pano__unwrap_8h_source.html#l00045">pano_unwrap_t::overwrite_video_thread</a>, <a class="el" href="pano__unwrap_8c_source.html#l00099">pano_unwrapped_image</a>, <a class="el" href="image_8h_source.html#l00049">image_t::pprz_ts</a>, <a class="el" href="pano__unwrap_8c_source.html#l00132">set_output_image_size()</a>, <a class="el" href="image_8h_source.html#l00047">image_t::ts</a>, <a class="el" href="pano__unwrap_8c_source.html#l00230">unwrap_LUT()</a>, and <a class="el" href="pano__unwrap_8c_source.html#l00153">update_LUT()</a>.</p>
+<p>References <a class="el" href="pano__unwrap_8h_source.html#l00045">pano_unwrap_t::overwrite_video_thread</a>, <a class="el" href="pano__unwrap_8c_source.html#l00099">pano_unwrapped_image</a>, <a class="el" href="image_8h_source.html#l00050">image_t::pprz_ts</a>, <a class="el" href="pano__unwrap_8c_source.html#l00132">set_output_image_size()</a>, <a class="el" href="image_8h_source.html#l00048">image_t::ts</a>, <a class="el" href="pano__unwrap_8c_source.html#l00230">unwrap_LUT()</a>, and <a class="el" href="pano__unwrap_8c_source.html#l00153">update_LUT()</a>.</p>
 
 <p>Referenced by <a class="el" href="pano__unwrap_8c_source.html#l00313">pano_unwrap_init()</a>.</p>
 
@@ -745,8 +755,8 @@ y</td>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="pano__unwrap_8c_ace21ffee8c5243defa67b741282f29fe_cgraph.png" border="0" usemap="#pano__unwrap_8c_ace21ffee8c5243defa67b741282f29fe_cgraph" alt=""/></div>
-<map name="pano__unwrap_8c_ace21ffee8c5243defa67b741282f29fe_cgraph" id="pano__unwrap_8c_ace21ffee8c5243defa67b741282f29fe_cgraph">
+<div class="center"><img src="pano__unwrap_8c_a710b27b04793f5a2412ab67f7eb0bb54_cgraph.png" border="0" usemap="#pano__unwrap_8c_a710b27b04793f5a2412ab67f7eb0bb54_cgraph" alt=""/></div>
+<map name="pano__unwrap_8c_a710b27b04793f5a2412ab67f7eb0bb54_cgraph" id="pano__unwrap_8c_a710b27b04793f5a2412ab67f7eb0bb54_cgraph">
 <area shape="rect" id="node2" href="pano__unwrap_8c.html#a30fd9eed01039f2c0f6375c224a051d2" title="set_output_image_size" alt="" coords="147,56,317,83"/><area shape="rect" id="node5" href="pano__unwrap_8c.html#a7749a199c15590f0007e9976535686c5" title="unwrap_LUT" alt="" coords="183,107,281,133"/><area shape="rect" id="node10" href="pano__unwrap_8c.html#ab8cfdd94ca198ffad976368529b78510" title="update_LUT" alt="" coords="183,157,281,184"/><area shape="rect" id="node3" href="image_8c.html#aa09d6434519478ba26eab12a96d600ba" title="Free the image. " alt="" coords="414,5,509,32"/><area shape="rect" id="node4" href="image_8c.html#ab5cc0250c461b9d2f043e4884f6b9a53" title="Create a new image. " alt="" coords="406,56,517,83"/><area shape="rect" id="node6" href="group__state__attitude.html#ga6eb4f715759518e5703890eca116ce8d" title="Get vehicle body attitude rotation matrix (float). " alt="" coords="365,107,557,133"/><area shape="rect" id="node7" href="group__math__orientation__representation.html#gadad1660d6ec48c67423b76622ce80b51" title="Get vehicle body attitude rotation matrix (float). " alt="" coords="605,107,763,133"/><area shape="rect" id="node8" href="group__math__orientation__representation.html#ga3394d93b976378bb5c9ddea8d7960eeb" title="orientationCalcRMat_f" alt="" coords="811,107,972,133"/><area shape="rect" id="node9" href="group__math__algebra__float.html#ga4f32e245bb37ef9fdf43872080f63fbc" title="float_rmat_of_quat" alt="" coords="1020,107,1163,133"/></map>
 </div>
 </p>
@@ -756,8 +766,8 @@ y</td>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="pano__unwrap_8c_ace21ffee8c5243defa67b741282f29fe_icgraph.png" border="0" usemap="#pano__unwrap_8c_ace21ffee8c5243defa67b741282f29fe_icgraph" alt=""/></div>
-<map name="pano__unwrap_8c_ace21ffee8c5243defa67b741282f29fe_icgraph" id="pano__unwrap_8c_ace21ffee8c5243defa67b741282f29fe_icgraph">
+<div class="center"><img src="pano__unwrap_8c_a710b27b04793f5a2412ab67f7eb0bb54_icgraph.png" border="0" usemap="#pano__unwrap_8c_a710b27b04793f5a2412ab67f7eb0bb54_icgraph" alt=""/></div>
+<map name="pano__unwrap_8c_a710b27b04793f5a2412ab67f7eb0bb54_icgraph" id="pano__unwrap_8c_a710b27b04793f5a2412ab67f7eb0bb54_icgraph">
 <area shape="rect" id="node2" href="pano__unwrap_8h.html#a03d0332c435b1307c5961073eaa4ff63" title="pano_unwrap_init" alt="" coords="147,5,280,32"/></map>
 </div>
 </p>
@@ -789,7 +799,7 @@ y</td>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="pano__unwrap_8c_a2038ddd6c9204939f22d0879640b52e6_cgraph.png" border="0" usemap="#pano__unwrap_8c_a2038ddd6c9204939f22d0879640b52e6_cgraph" alt=""/></div>
 <map name="pano__unwrap_8c_a2038ddd6c9204939f22d0879640b52e6_cgraph" id="pano__unwrap_8c_a2038ddd6c9204939f22d0879640b52e6_cgraph">
-<area shape="rect" id="node2" href="pano__unwrap_8c.html#ace21ffee8c5243defa67b741282f29fe" title="camera_cb" alt="" coords="207,107,301,133"/><area shape="rect" id="node3" href="pano__unwrap_8c.html#a30fd9eed01039f2c0f6375c224a051d2" title="set_output_image_size" alt="" coords="369,56,540,83"/><area shape="rect" id="node5" href="image_8c.html#ab5cc0250c461b9d2f043e4884f6b9a53" title="Create a new image. " alt="" coords="629,5,739,32"/><area shape="rect" id="node12" href="cv_8c.html#aee4ecc7b59c1526a024f91a46a34ff45" title="cv_add_to_device" alt="" coords="187,183,321,209"/><area shape="rect" id="node6" href="pano__unwrap_8c.html#a7749a199c15590f0007e9976535686c5" title="unwrap_LUT" alt="" coords="405,157,504,184"/><area shape="rect" id="node11" href="pano__unwrap_8c.html#ab8cfdd94ca198ffad976368529b78510" title="update_LUT" alt="" coords="406,107,503,133"/><area shape="rect" id="node4" href="image_8c.html#aa09d6434519478ba26eab12a96d600ba" title="Free the image. " alt="" coords="637,56,731,83"/><area shape="rect" id="node7" href="group__state__attitude.html#ga6eb4f715759518e5703890eca116ce8d" title="Get vehicle body attitude rotation matrix (float). " alt="" coords="588,157,780,184"/><area shape="rect" id="node8" href="group__math__orientation__representation.html#gadad1660d6ec48c67423b76622ce80b51" title="Get vehicle body attitude rotation matrix (float). " alt="" coords="828,157,985,184"/><area shape="rect" id="node9" href="group__math__orientation__representation.html#ga3394d93b976378bb5c9ddea8d7960eeb" title="orientationCalcRMat_f" alt="" coords="1033,157,1195,184"/><area shape="rect" id="node10" href="group__math__algebra__float.html#ga4f32e245bb37ef9fdf43872080f63fbc" title="float_rmat_of_quat" alt="" coords="1243,157,1385,184"/><area shape="rect" id="node13" href="cv_8h.html#a9e0afd727457cecc0e207aa03c4d48a5" title="Keep track of video devices added by modules. " alt="" coords="387,208,522,235"/><area shape="rect" id="node14" href="video__thread_8c.html#acc71ed66abdc3fa0cecd95cc408c670e" title="initialize_camera" alt="" coords="619,208,749,235"/><area shape="rect" id="node15" href="v4l2_8c.html#a1f683e79a4639d4e189f059f6c4ae268" title="Initialize a V4L2(Video for Linux 2) device. " alt="" coords="869,259,944,285"/><area shape="rect" id="node19" href="v4l2_8c.html#a3798643b3e99cd32ef724fc928d92e51" title="Initialize a V4L2 subdevice. " alt="" coords="843,208,970,235"/><area shape="rect" id="node16" href="virt2phys_8c.html#ac0b66a5b5e335c413a78b5e9f677ba83" title="check_contiguity" alt="" coords="1050,259,1178,285"/><area shape="rect" id="node17" href="virt2phys_8c.html#ac4c8df40f3a8bc1086f2637b1c78b101" title="open_pagemap" alt="" coords="1253,284,1375,311"/><area shape="rect" id="node18" href="virt2phys_8c.html#a4c9379905f0c688e828e6e1a23d18153" title="virt2phys" alt="" coords="1274,233,1354,260"/></map>
+<area shape="rect" id="node2" href="pano__unwrap_8c.html#a710b27b04793f5a2412ab67f7eb0bb54" title="camera_cb" alt="" coords="207,107,301,133"/><area shape="rect" id="node3" href="pano__unwrap_8c.html#a30fd9eed01039f2c0f6375c224a051d2" title="set_output_image_size" alt="" coords="369,56,540,83"/><area shape="rect" id="node5" href="image_8c.html#ab5cc0250c461b9d2f043e4884f6b9a53" title="Create a new image. " alt="" coords="629,5,739,32"/><area shape="rect" id="node12" href="cv_8c.html#a27c5a4c16f124cdc564d637fcc733b97" title="cv_add_to_device" alt="" coords="187,183,321,209"/><area shape="rect" id="node6" href="pano__unwrap_8c.html#a7749a199c15590f0007e9976535686c5" title="unwrap_LUT" alt="" coords="405,157,504,184"/><area shape="rect" id="node11" href="pano__unwrap_8c.html#ab8cfdd94ca198ffad976368529b78510" title="update_LUT" alt="" coords="406,107,503,133"/><area shape="rect" id="node4" href="image_8c.html#aa09d6434519478ba26eab12a96d600ba" title="Free the image. " alt="" coords="637,56,731,83"/><area shape="rect" id="node7" href="group__state__attitude.html#ga6eb4f715759518e5703890eca116ce8d" title="Get vehicle body attitude rotation matrix (float). " alt="" coords="588,157,780,184"/><area shape="rect" id="node8" href="group__math__orientation__representation.html#gadad1660d6ec48c67423b76622ce80b51" title="Get vehicle body attitude rotation matrix (float). " alt="" coords="828,157,985,184"/><area shape="rect" id="node9" href="group__math__orientation__representation.html#ga3394d93b976378bb5c9ddea8d7960eeb" title="orientationCalcRMat_f" alt="" coords="1033,157,1195,184"/><area shape="rect" id="node10" href="group__math__algebra__float.html#ga4f32e245bb37ef9fdf43872080f63fbc" title="float_rmat_of_quat" alt="" coords="1243,157,1385,184"/><area shape="rect" id="node13" href="cv_8h.html#a9e0afd727457cecc0e207aa03c4d48a5" title="Keep track of video devices added by modules. " alt="" coords="387,208,522,235"/><area shape="rect" id="node14" href="video__thread_8c.html#acc71ed66abdc3fa0cecd95cc408c670e" title="initialize_camera" alt="" coords="619,208,749,235"/><area shape="rect" id="node15" href="v4l2_8c.html#a1f683e79a4639d4e189f059f6c4ae268" title="Initialize a V4L2(Video for Linux 2) device. " alt="" coords="869,259,944,285"/><area shape="rect" id="node19" href="v4l2_8c.html#a3798643b3e99cd32ef724fc928d92e51" title="Initialize a V4L2 subdevice. " alt="" coords="843,208,970,235"/><area shape="rect" id="node16" href="virt2phys_8c.html#ac0b66a5b5e335c413a78b5e9f677ba83" title="check_contiguity" alt="" coords="1050,259,1178,285"/><area shape="rect" id="node17" href="virt2phys_8c.html#ac4c8df40f3a8bc1086f2637b1c78b101" title="open_pagemap" alt="" coords="1253,284,1375,311"/><area shape="rect" id="node18" href="virt2phys_8c.html#a4c9379905f0c688e828e6e1a23d18153" title="virt2phys" alt="" coords="1274,233,1354,260"/></map>
 </div>
 </p>
 
@@ -819,7 +829,7 @@ y</td>
 
 <p>Definition at line <a class="el" href="pano__unwrap_8c_source.html#l00132">132</a> of file <a class="el" href="pano__unwrap_8c_source.html">pano_unwrap.c</a>.</p>
 
-<p>References <a class="el" href="image_8h_source.html#l00046">image_t::h</a>, <a class="el" href="pano__unwrap_8h_source.html#l00043">pano_unwrap_t::height</a>, <a class="el" href="image_8c_source.html#l00043">image_create()</a>, <a class="el" href="image_8c_source.html#l00069">image_free()</a>, <a class="el" href="image_8h_source.html#l00036">IMAGE_YUV422</a>, <a class="el" href="pano__unwrap_8c_source.html#l00099">pano_unwrapped_image</a>, <a class="el" href="pano__unwrap_8h_source.html#l00034">pano_unwrap_t::radius_bottom</a>, <a class="el" href="pano__unwrap_8h_source.html#l00035">pano_unwrap_t::radius_top</a>, <a class="el" href="pano__unwrap_8h_source.html#l00039">pano_unwrap_t::vertical_resolution</a>, <a class="el" href="image_8h_source.html#l00045">image_t::w</a>, and <a class="el" href="pano__unwrap_8h_source.html#l00042">pano_unwrap_t::width</a>.</p>
+<p>References <a class="el" href="image_8h_source.html#l00047">image_t::h</a>, <a class="el" href="pano__unwrap_8h_source.html#l00043">pano_unwrap_t::height</a>, <a class="el" href="image_8c_source.html#l00043">image_create()</a>, <a class="el" href="image_8c_source.html#l00075">image_free()</a>, <a class="el" href="image_8h_source.html#l00036">IMAGE_YUV422</a>, <a class="el" href="pano__unwrap_8c_source.html#l00099">pano_unwrapped_image</a>, <a class="el" href="pano__unwrap_8h_source.html#l00034">pano_unwrap_t::radius_bottom</a>, <a class="el" href="pano__unwrap_8h_source.html#l00035">pano_unwrap_t::radius_top</a>, <a class="el" href="pano__unwrap_8h_source.html#l00039">pano_unwrap_t::vertical_resolution</a>, <a class="el" href="image_8h_source.html#l00046">image_t::w</a>, and <a class="el" href="pano__unwrap_8h_source.html#l00042">pano_unwrap_t::width</a>.</p>
 
 <p>Referenced by <a class="el" href="pano__unwrap_8c_source.html#l00303">camera_cb()</a>, and <a class="el" href="pano__unwrap_8c_source.html#l00313">pano_unwrap_init()</a>.</p>
 
@@ -841,7 +851,7 @@ y</td>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="pano__unwrap_8c_a30fd9eed01039f2c0f6375c224a051d2_icgraph.png" border="0" usemap="#pano__unwrap_8c_a30fd9eed01039f2c0f6375c224a051d2_icgraph" alt=""/></div>
 <map name="pano__unwrap_8c_a30fd9eed01039f2c0f6375c224a051d2_icgraph" id="pano__unwrap_8c_a30fd9eed01039f2c0f6375c224a051d2_icgraph">
-<area shape="rect" id="node2" href="pano__unwrap_8c.html#ace21ffee8c5243defa67b741282f29fe" title="camera_cb" alt="" coords="224,5,317,32"/><area shape="rect" id="node3" href="pano__unwrap_8h.html#a03d0332c435b1307c5961073eaa4ff63" title="pano_unwrap_init" alt="" coords="365,31,499,57"/></map>
+<area shape="rect" id="node2" href="pano__unwrap_8c.html#a710b27b04793f5a2412ab67f7eb0bb54" title="camera_cb" alt="" coords="224,5,317,32"/><area shape="rect" id="node3" href="pano__unwrap_8h.html#a03d0332c435b1307c5961073eaa4ff63" title="pano_unwrap_init" alt="" coords="365,31,499,57"/></map>
 </div>
 </p>
 
@@ -881,7 +891,7 @@ y</td>
 
 <p>Definition at line <a class="el" href="pano__unwrap_8c_source.html#l00230">230</a> of file <a class="el" href="pano__unwrap_8c_source.html">pano_unwrap.c</a>.</p>
 
-<p>References <a class="el" href="pano__unwrap_8c_source.html#l00112">BLUE_U</a>, <a class="el" href="pano__unwrap_8c_source.html#l00113">BLUE_V</a>, <a class="el" href="pano__unwrap_8c_source.html#l00111">BLUE_Y</a>, <a class="el" href="pano__unwrap_8h_source.html#l00033">pano_unwrap_t::center</a>, <a class="el" href="pano__unwrap_8h_source.html#l00040">pano_unwrap_t::derotate_attitude</a>, <a class="el" href="pano__unwrap_8c_source.html#l00125">LUT_t::dphi</a>, <a class="el" href="pano__unwrap_8c_source.html#l00126">LUT_t::dtheta</a>, <a class="el" href="pano__unwrap_8c_source.html#l00109">GREEN_U</a>, <a class="el" href="pano__unwrap_8c_source.html#l00110">GREEN_V</a>, <a class="el" href="pano__unwrap_8c_source.html#l00108">GREEN_Y</a>, <a class="el" href="image_8h_source.html#l00046">image_t::h</a>, <a class="el" href="pano__unwrap_8h_source.html#l00043">pano_unwrap_t::height</a>, <a class="el" href="pano__unwrap_8c_source.html#l00130">LUT</a>, <a class="el" href="pprz__algebra_8h_source.html#l00436">MAT33_ELMT</a>, <a class="el" href="pano__unwrap_8c_source.html#l00101">PIXEL_U</a>, <a class="el" href="pano__unwrap_8c_source.html#l00102">PIXEL_V</a>, <a class="el" href="pano__unwrap_8c_source.html#l00103">PIXEL_Y</a>, <a class="el" href="pano__unwrap_8c_source.html#l00106">RED_U</a>, <a class="el" href="pano__unwrap_8c_source.html#l00107">RED_V</a>, <a class="el" href="pano__unwrap_8c_source.html#l00105">RED_Y</a>, <a class="el" href="pano__unwrap_8h_source.html#l00047">pano_unwrap_t::show_calibration</a>, <a class="el" href="state_8h_source.html#l01137">stateGetNedToBodyRMat_f()</a>, <a class="el" href="pano__unwrap_8h_source.html#l00039">pano_unwrap_t::vertical_resolution</a>, <a class="el" href="image_8h_source.html#l00045">image_t::w</a>, <a class="el" href="pano__unwrap_8h_source.html#l00042">pano_unwrap_t::width</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00050">FloatVect2::x</a>, <a class="el" href="pano__unwrap_8c_source.html#l00120">LUT_t::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00051">FloatVect2::y</a>, and <a class="el" href="pano__unwrap_8c_source.html#l00121">LUT_t::y</a>.</p>
+<p>References <a class="el" href="pano__unwrap_8c_source.html#l00112">BLUE_U</a>, <a class="el" href="pano__unwrap_8c_source.html#l00113">BLUE_V</a>, <a class="el" href="pano__unwrap_8c_source.html#l00111">BLUE_Y</a>, <a class="el" href="pano__unwrap_8h_source.html#l00033">pano_unwrap_t::center</a>, <a class="el" href="pano__unwrap_8h_source.html#l00040">pano_unwrap_t::derotate_attitude</a>, <a class="el" href="pano__unwrap_8c_source.html#l00125">LUT_t::dphi</a>, <a class="el" href="pano__unwrap_8c_source.html#l00126">LUT_t::dtheta</a>, <a class="el" href="pano__unwrap_8c_source.html#l00109">GREEN_U</a>, <a class="el" href="pano__unwrap_8c_source.html#l00110">GREEN_V</a>, <a class="el" href="pano__unwrap_8c_source.html#l00108">GREEN_Y</a>, <a class="el" href="image_8h_source.html#l00047">image_t::h</a>, <a class="el" href="pano__unwrap_8h_source.html#l00043">pano_unwrap_t::height</a>, <a class="el" href="pano__unwrap_8c_source.html#l00130">LUT</a>, <a class="el" href="pprz__algebra_8h_source.html#l00436">MAT33_ELMT</a>, <a class="el" href="pano__unwrap_8c_source.html#l00101">PIXEL_U</a>, <a class="el" href="pano__unwrap_8c_source.html#l00102">PIXEL_V</a>, <a class="el" href="pano__unwrap_8c_source.html#l00103">PIXEL_Y</a>, <a class="el" href="pano__unwrap_8c_source.html#l00106">RED_U</a>, <a class="el" href="pano__unwrap_8c_source.html#l00107">RED_V</a>, <a class="el" href="pano__unwrap_8c_source.html#l00105">RED_Y</a>, <a class="el" href="pano__unwrap_8h_source.html#l00047">pano_unwrap_t::show_calibration</a>, <a class="el" href="state_8h_source.html#l01137">stateGetNedToBodyRMat_f()</a>, <a class="el" href="pano__unwrap_8h_source.html#l00039">pano_unwrap_t::vertical_resolution</a>, <a class="el" href="image_8h_source.html#l00046">image_t::w</a>, <a class="el" href="pano__unwrap_8h_source.html#l00042">pano_unwrap_t::width</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00050">FloatVect2::x</a>, <a class="el" href="pano__unwrap_8c_source.html#l00120">LUT_t::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00051">FloatVect2::y</a>, and <a class="el" href="pano__unwrap_8c_source.html#l00121">LUT_t::y</a>.</p>
 
 <p>Referenced by <a class="el" href="pano__unwrap_8c_source.html#l00303">camera_cb()</a>.</p>
 
@@ -903,7 +913,7 @@ y</td>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="pano__unwrap_8c_a7749a199c15590f0007e9976535686c5_icgraph.png" border="0" usemap="#pano__unwrap_8c_a7749a199c15590f0007e9976535686c5_icgraph" alt=""/></div>
 <map name="pano__unwrap_8c_a7749a199c15590f0007e9976535686c5_icgraph" id="pano__unwrap_8c_a7749a199c15590f0007e9976535686c5_icgraph">
-<area shape="rect" id="node2" href="pano__unwrap_8c.html#ace21ffee8c5243defa67b741282f29fe" title="camera_cb" alt="" coords="152,5,245,32"/><area shape="rect" id="node3" href="pano__unwrap_8h.html#a03d0332c435b1307c5961073eaa4ff63" title="pano_unwrap_init" alt="" coords="293,5,427,32"/></map>
+<area shape="rect" id="node2" href="pano__unwrap_8c.html#a710b27b04793f5a2412ab67f7eb0bb54" title="camera_cb" alt="" coords="152,5,245,32"/><area shape="rect" id="node3" href="pano__unwrap_8h.html#a03d0332c435b1307c5961073eaa4ff63" title="pano_unwrap_init" alt="" coords="293,5,427,32"/></map>
 </div>
 </p>
 
@@ -933,7 +943,7 @@ y</td>
 
 <p>Definition at line <a class="el" href="pano__unwrap_8c_source.html#l00153">153</a> of file <a class="el" href="pano__unwrap_8c_source.html">pano_unwrap.c</a>.</p>
 
-<p>References <a class="el" href="pano__unwrap_8h_source.html#l00033">pano_unwrap_t::center</a>, <a class="el" href="pano__unwrap_8c_source.html#l00125">LUT_t::dphi</a>, <a class="el" href="pano__unwrap_8c_source.html#l00126">LUT_t::dtheta</a>, <a class="el" href="pano__unwrap_8h_source.html#l00037">pano_unwrap_t::flip_horizontal</a>, <a class="el" href="pano__unwrap_8h_source.html#l00036">pano_unwrap_t::forward_direction</a>, <a class="el" href="image_8h_source.html#l00046">image_t::h</a>, <a class="el" href="pano__unwrap_8h_source.html#l00043">pano_unwrap_t::height</a>, <a class="el" href="pano__unwrap_8c_source.html#l00130">LUT</a>, <a class="el" href="pano__unwrap_8c_source.html#l00078">pano_unwrap</a>, <a class="el" href="pano__unwrap_8c_source.html#l00099">pano_unwrapped_image</a>, <a class="el" href="pano__unwrap_8h_source.html#l00034">pano_unwrap_t::radius_bottom</a>, <a class="el" href="pano__unwrap_8h_source.html#l00035">pano_unwrap_t::radius_top</a>, <a class="el" href="light__scheduler_8c_source.html#l00033">s</a>, <a class="el" href="pano__unwrap_8c_source.html#l00128">LUT_t::settings</a>, <a class="el" href="image_8h_source.html#l00045">image_t::w</a>, <a class="el" href="pano__unwrap_8h_source.html#l00042">pano_unwrap_t::width</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00050">FloatVect2::x</a>, <a class="el" href="pano__unwrap_8c_source.html#l00120">LUT_t::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00051">FloatVect2::y</a>, and <a class="el" href="pano__unwrap_8c_source.html#l00121">LUT_t::y</a>.</p>
+<p>References <a class="el" href="pano__unwrap_8h_source.html#l00033">pano_unwrap_t::center</a>, <a class="el" href="pano__unwrap_8c_source.html#l00125">LUT_t::dphi</a>, <a class="el" href="pano__unwrap_8c_source.html#l00126">LUT_t::dtheta</a>, <a class="el" href="pano__unwrap_8h_source.html#l00037">pano_unwrap_t::flip_horizontal</a>, <a class="el" href="pano__unwrap_8h_source.html#l00036">pano_unwrap_t::forward_direction</a>, <a class="el" href="image_8h_source.html#l00047">image_t::h</a>, <a class="el" href="pano__unwrap_8h_source.html#l00043">pano_unwrap_t::height</a>, <a class="el" href="pano__unwrap_8c_source.html#l00130">LUT</a>, <a class="el" href="pano__unwrap_8c_source.html#l00078">pano_unwrap</a>, <a class="el" href="pano__unwrap_8c_source.html#l00099">pano_unwrapped_image</a>, <a class="el" href="pano__unwrap_8h_source.html#l00034">pano_unwrap_t::radius_bottom</a>, <a class="el" href="pano__unwrap_8h_source.html#l00035">pano_unwrap_t::radius_top</a>, <a class="el" href="light__scheduler_8c_source.html#l00033">s</a>, <a class="el" href="pano__unwrap_8c_source.html#l00128">LUT_t::settings</a>, <a class="el" href="image_8h_source.html#l00046">image_t::w</a>, <a class="el" href="pano__unwrap_8h_source.html#l00042">pano_unwrap_t::width</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00050">FloatVect2::x</a>, <a class="el" href="pano__unwrap_8c_source.html#l00120">LUT_t::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00051">FloatVect2::y</a>, and <a class="el" href="pano__unwrap_8c_source.html#l00121">LUT_t::y</a>.</p>
 
 <p>Referenced by <a class="el" href="pano__unwrap_8c_source.html#l00303">camera_cb()</a>.</p>
 
@@ -944,7 +954,7 @@ y</td>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="pano__unwrap_8c_ab8cfdd94ca198ffad976368529b78510_icgraph.png" border="0" usemap="#pano__unwrap_8c_ab8cfdd94ca198ffad976368529b78510_icgraph" alt=""/></div>
 <map name="pano__unwrap_8c_ab8cfdd94ca198ffad976368529b78510_icgraph" id="pano__unwrap_8c_ab8cfdd94ca198ffad976368529b78510_icgraph">
-<area shape="rect" id="node2" href="pano__unwrap_8c.html#ace21ffee8c5243defa67b741282f29fe" title="camera_cb" alt="" coords="151,5,244,32"/><area shape="rect" id="node3" href="pano__unwrap_8h.html#a03d0332c435b1307c5961073eaa4ff63" title="pano_unwrap_init" alt="" coords="292,5,425,32"/></map>
+<area shape="rect" id="node2" href="pano__unwrap_8c.html#a710b27b04793f5a2412ab67f7eb0bb54" title="camera_cb" alt="" coords="151,5,244,32"/><area shape="rect" id="node3" href="pano__unwrap_8h.html#a03d0332c435b1307c5961073eaa4ff63" title="pano_unwrap_init" alt="" coords="292,5,425,32"/></map>
 </div>
 </p>
 
@@ -1047,7 +1057,7 @@ y</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_051d73f15ec2effa2186b6ce7fd3cd5a.html">pano_unwrap</a></li><li class="navelem"><a class="el" href="pano__unwrap_8c.html">pano_unwrap.c</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:03:22 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:03:37 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

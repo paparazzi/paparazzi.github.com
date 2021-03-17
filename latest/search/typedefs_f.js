@@ -1,16 +1,17 @@
 var searchData=
 [
-  ['u16',['u16',['../group__common__inttypes.html#gace9d960e74685e2cd84b36132dbbf8aa',1,'common.h']]],
-  ['u32',['u32',['../group__common__inttypes.html#gafaa62991928fb9fb18ff0db62a040aba',1,'common.h']]],
-  ['u64',['u64',['../group__common__inttypes.html#ga3f7e2bcbb0b4c338f3c4f6c937cd4234',1,'common.h']]],
-  ['u8',['u8',['../group__common__inttypes.html#ga92c50087ca0e64fa93fc59402c55f8ca',1,'common.h']]],
-  ['uchar_5ft',['uchar_T',['../rtwtypes_8h.html#a2a3d79bdfc1d71f98235f70e68914302',1,'rtwtypes.h']]],
-  ['uint16_5ft',['uint16_T',['../rtwtypes_8h.html#a10de142b55c8bcd07329b4e92f612528',1,'uint16_T():&#160;rtwtypes.h'],['../types_8h.html#a273cf69d639a59973b6019625df33e30',1,'uint16_t():&#160;types.h'],['../inttypes_8h.html#a273cf69d639a59973b6019625df33e30',1,'uint16_t():&#160;inttypes.h'],['../vl53l1__types_8h.html#a273cf69d639a59973b6019625df33e30',1,'uint16_t():&#160;vl53l1_types.h']]],
-  ['uint32_5ft',['uint32_t',['../types_8h.html#a06896e8c53f721507066c079052171f8',1,'uint32_t():&#160;types.h'],['../inttypes_8h.html#a06896e8c53f721507066c079052171f8',1,'uint32_t():&#160;inttypes.h'],['../vl53l1__types_8h.html#a435d1572bf3f880d55459d9805097f62',1,'uint32_t():&#160;vl53l1_types.h'],['../rtwtypes_8h.html#a03761f68219fb1602eeda97bd628da43',1,'uint32_T():&#160;rtwtypes.h']]],
-  ['uint64_5ft',['uint64_t',['../types_8h.html#aaa5d1cd013383c889537491c3cfd9aad',1,'uint64_t():&#160;types.h'],['../inttypes_8h.html#aaa5d1cd013383c889537491c3cfd9aad',1,'uint64_t():&#160;inttypes.h'],['../vl53l1__types_8h.html#aaa5d1cd013383c889537491c3cfd9aad',1,'uint64_t():&#160;vl53l1_types.h']]],
-  ['uint8_5ft',['uint8_t',['../types_8h.html#aba7bc1797add20fe3efdf37ced1182c5',1,'uint8_t():&#160;types.h'],['../inttypes_8h.html#aba7bc1797add20fe3efdf37ced1182c5',1,'uint8_t():&#160;inttypes.h'],['../vl53l1__types_8h.html#aba7bc1797add20fe3efdf37ced1182c5',1,'uint8_t():&#160;vl53l1_types.h'],['../rtwtypes_8h.html#a2532a6244e023eee49f315c10f1f7c53',1,'uint8_T():&#160;rtwtypes.h']]],
-  ['uint_5ft',['uint_T',['../rtwtypes_8h.html#a812dbe96020cf6b5c4a14e9339fc0d11',1,'rtwtypes.h']]],
-  ['ukf_5finit_5ftype',['ukf_init_type',['../UKF__Wind__Estimator_8h.html#a9106bcb499113fb6d4fa92d977ffff27',1,'UKF_Wind_Estimator.h']]],
-  ['ukf_5fparams_5ftype',['ukf_params_type',['../UKF__Wind__Estimator_8h.html#ae5f767271e7ae4e5277d3e2c94c08ec2',1,'UKF_Wind_Estimator.h']]],
-  ['ulong_5ft',['ulong_T',['../rtwtypes_8h.html#a990999404045826a6e03f9b7d89bdf0e',1,'rtwtypes.h']]]
+  ['telemetry_5fcb',['telemetry_cb',['../telemetry__common_8h.html#a5ce68bb3b13fda90c00109c1defe5d40',1,'telemetry_common.h']]],
+  ['telemetry_5fmsg',['telemetry_msg',['../telemetry__common_8h.html#a32d09d3f902d4049b297558a9849e0f4',1,'telemetry_common.h']]],
+  ['telemetrybuffer_5ft',['telemetryBuffer_t',['../cc2500__frsky__x_8c.html#a4f5672380eb7a5ce61291d2c29b43745',1,'cc2500_frsky_x.c']]],
+  ['telemetryconfig_5ft',['telemetryConfig_t',['../cc2500__settings_8h.html#af0ec0672b95b4a37c449048d201a8bfb',1,'cc2500_settings.h']]],
+  ['telemetrydata_5ft',['telemetryData_t',['../cc2500__frsky__x_8c.html#afd4982dd8e405b71b8a6cd799538ac91',1,'cc2500_frsky_x.c']]],
+  ['telemetrypayload_5ft',['telemetryPayload_t',['../cc2500__frsky__x_8c.html#a8c416d2e3e8a4ee6ecf02ade3277afc6',1,'cc2500_frsky_x.c']]],
+  ['telemetrysequencemarker_5ft',['telemetrySequenceMarker_t',['../cc2500__frsky__x_8c.html#a6bc9fb608d32ef1c64c12f409871a188',1,'cc2500_frsky_x.c']]],
+  ['telemetrysequencemarkerdata_5ft',['telemetrySequenceMarkerData_t',['../cc2500__frsky__x_8c.html#a1cfe24c1d8b116075fea76e5f6f7e4bf',1,'cc2500_frsky_x.c']]],
+  ['tid_5ft',['tid_t',['../sys__time_8h.html#afd62afa1c6cefa443f9c9f6aa1e03dae',1,'sys_time.h']]],
+  ['time_5ft',['time_T',['../rtwtypes_8h.html#a6119cb5e27c4b0eb506f88f1346570de',1,'rtwtypes.h']]],
+  ['timedelta_5ft',['timeDelta_t',['../cc2500__compat_8h.html#a54d43431e98e7238c826e3cd984410aa',1,'cc2500_compat.h']]],
+  ['timems_5ft',['timeMs_t',['../cc2500__compat_8h.html#a3b6aa526d6e57d4b09c062816045644c',1,'cc2500_compat.h']]],
+  ['timeus_5ft',['timeUs_t',['../cc2500__compat_8h.html#ac12de3804aa3b0af2499ee09ead1603b',1,'cc2500_compat.h']]],
+  ['tlsf_5fmemory_5fheap_5ft',['tlsf_memory_heap_t',['../tlsf__malloc_8h.html#a44a4f63f07dd3c75f42ae32629036283',1,'tlsf_malloc.h']]]
 ];

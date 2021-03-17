@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -107,12 +107,11 @@ $(document).ready(function(){initNavTree('module__px4flow.html','');});
 <p>No detailed description...</p>
 <h1><a class="anchor" id="module_load_example__px4flow"></a>
 Example for airframe file</h1>
-<p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;module name=&quot;mavlink_decoder&quot;/&gt;</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;&lt;module name=&quot;px4flow&quot;&gt;</div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;  &lt;configure name=&quot;PX4FLOW_NOISE_STDDEV&quot; value=&quot;1.0&quot; /&gt;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;  &lt;configure name=&quot;USE_PX4FLOW_AGL&quot; value=&quot;1&quot; /&gt;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;  &lt;configure name=&quot;PX4FLOW_COMPENSATE_ROTATION&quot; value=&quot;1&quot; /&gt;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;&lt;/module&gt;</div>
+<p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;module name=&quot;px4flow&quot;&gt;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;  &lt;configure name=&quot;PX4FLOW_NOISE_STDDEV&quot; value=&quot;1.0&quot; /&gt;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;  &lt;configure name=&quot;USE_PX4FLOW_AGL&quot; value=&quot;1&quot; /&gt;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;  &lt;configure name=&quot;PX4FLOW_COMPENSATE_ROTATION&quot; value=&quot;1&quot; /&gt;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;&lt;/module&gt;</div>
 </div><!-- fragment --> <h1><a class="anchor" id="configuration__px4flow"></a>
 Module configuration options</h1>
 <h2><a class="anchor" id="configure"></a>
@@ -124,11 +123,6 @@ Configure Options</h2>
  Description: update AGL measurements from onboard sonar</li>
 <li><b>name:</b> <code>PX4FLOW_COMPENSATE_ROTATION</code> <b>value:</b> <em>1</em> <br />
  Description: compensate AGL measurements for body rotation</li>
-</ul>
-<h1><a class="anchor" id="dependencies__px4flow"></a>
-Dependencies</h1>
-<ul>
-<li><a class="el" href="module__mavlink_decoder.html">mavlink_decoder module</a> </li>
 </ul>
 <h1><a class="anchor" id="functions__px4flow"></a>
 Module functions</h1>
@@ -184,7 +178,9 @@ Raw px4flow.xml file:</h2>
 <div class="line">    &lt;/dl_settings&gt;</div>
 <div class="line">  &lt;/settings&gt;</div>
 <div class="line"></div>
-<div class="line">  &lt;depends&gt;mavlink_decoder&lt;/depends&gt;</div>
+<div class="line">  &lt;dep&gt;</div>
+<div class="line">    &lt;depends&gt;mavlink_decoder&lt;/depends&gt;</div>
+<div class="line">  &lt;/dep&gt;</div>
 <div class="line">  &lt;header&gt;</div>
 <div class="line">    &lt;file name=&quot;px4flow.h&quot;/&gt;</div>
 <div class="line">  &lt;/header&gt;</div>
@@ -208,7 +204,7 @@ Raw px4flow.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:03:40 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:03:57 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

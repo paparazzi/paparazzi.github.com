@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -252,6 +252,12 @@ $(document).ready(function(){initNavTree('globals_defs_w.html','');});
 <li>WE_UKF_R_VA
 : <a class="el" href="wind__estimator_8c.html#abf7bf11f3a1e04f899cffcde1c8812bb">wind_estimator.c</a>
 </li>
+<li>WEDGEBUG_CAMERA_LEFT_FPS
+: <a class="el" href="wedgebug_8c.html#a0ce49e1065825a3ff143788ff9eb4444">wedgebug.c</a>
+</li>
+<li>WEDGEBUG_CAMERA_RIGHT_FPS
+: <a class="el" href="wedgebug_8c.html#abfcbe47ea53a7105f2b0448420f2a340">wedgebug.c</a>
+</li>
 <li>WEEKS_IN_YEAR
 : <a class="el" href="group__math__geodetic__wmm.html#gac2bdc89e52c860bf7f849b81fe4e5db2">pprz_geodetic_wmm2020.h</a>
 </li>
@@ -266,6 +272,15 @@ $(document).ready(function(){initNavTree('globals_defs_w.html','');});
 </li>
 <li>WINDSPEED_I
 : <a class="el" href="group__state__wind__airspeed.html#ga09ac60b282bbb163ee76778d6b9c6323">state.h</a>
+</li>
+<li>WINDTUNNEL_TO_BODY_PHI
+: <a class="el" href="ctrl__windtunnel_8c.html#a2f518e4889cae2760cf5ffa78cb3314d">ctrl_windtunnel.c</a>
+</li>
+<li>WINDTUNNEL_TO_BODY_PSI
+: <a class="el" href="ctrl__windtunnel_8c.html#ad0fd4e2d57ab5e2bb5da9b918a98ee5b">ctrl_windtunnel.c</a>
+</li>
+<li>WINDTUNNEL_TO_BODY_THETA
+: <a class="el" href="ctrl__windtunnel_8c.html#a1d0697e0bf29145bbc1c20b06f2f857f">ctrl_windtunnel.c</a>
 </li>
 <li>WING_POS_DOWN_THRESH
 : <a class="el" href="glide__wing__lock_8c.html#ac8aeb305f0c7abfa9b418edb2448db24">glide_wing_lock.c</a>
@@ -305,6 +320,9 @@ $(document).ready(function(){initNavTree('globals_defs_w.html','');});
 </li>
 <li>WRITE
 : <a class="el" href="chdk__pipe_8c.html#aa10f470e996d0f51210d24f442d25e1e">chdk_pipe.c</a>
+</li>
+<li>writeEEPROM
+: <a class="el" href="cc2500__settings_8h.html#a43f65945db04e82ec7f7cf605933d0ae">cc2500_settings.h</a>
 </li>
 <li>writel
 : <a class="el" href="libisp_8c.html#a9b78127e4ff19f19c9fb86d66e3c4ee1">libisp.c</a>
@@ -364,20 +382,34 @@ $(document).ready(function(){initNavTree('globals_defs_w.html','');});
 : <a class="el" href="light__ws2812__arch_8c.html#a4a8614ef3f68261ebfbed384cbc42bbf">light_ws2812_arch.c</a>
 </li>
 <li>WS2812D1_AF
-: <a class="el" href="tawaki_8h.html#afd8cee2fb7cfce1b91317be24260b39c">tawaki.h</a>
+: <a class="el" href="matekF765-WING_8h.html#afd8cee2fb7cfce1b91317be24260b39c">matekF765-WING.h</a>
 , <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#afd8cee2fb7cfce1b91317be24260b39c">board.h</a>
+, <a class="el" href="nucleo144__f767zi_8h.html#afd8cee2fb7cfce1b91317be24260b39c">nucleo144_f767zi.h</a>
+, <a class="el" href="tawaki_8h.html#afd8cee2fb7cfce1b91317be24260b39c">tawaki.h</a>
 </li>
 <li>WS2812D1_CFG_DEF
 : <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a1c00198c3a1c3fabc5af8eb5b763dac5">board.h</a>
+, <a class="el" href="matekF765-WING_8h.html#a1c00198c3a1c3fabc5af8eb5b763dac5">matekF765-WING.h</a>
 , <a class="el" href="tawaki_8h.html#a1c00198c3a1c3fabc5af8eb5b763dac5">tawaki.h</a>
+, <a class="el" href="nucleo144__f767zi_8h.html#a1c00198c3a1c3fabc5af8eb5b763dac5">nucleo144_f767zi.h</a>
 </li>
 <li>WS2812D1_GPIO
 : <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#a17e208399ce330289bcaef37bd2e9b08">board.h</a>
+, <a class="el" href="matekF765-WING_8h.html#a17e208399ce330289bcaef37bd2e9b08">matekF765-WING.h</a>
+, <a class="el" href="nucleo144__f767zi_8h.html#a17e208399ce330289bcaef37bd2e9b08">nucleo144_f767zi.h</a>
 , <a class="el" href="tawaki_8h.html#a17e208399ce330289bcaef37bd2e9b08">tawaki.h</a>
 </li>
 <li>WS2812D1_PIN
-: <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#aec52babc287e1d061dec870b9f43b083">board.h</a>
+: <a class="el" href="matekF765-WING_8h.html#aec52babc287e1d061dec870b9f43b083">matekF765-WING.h</a>
 , <a class="el" href="tawaki_8h.html#aec52babc287e1d061dec870b9f43b083">tawaki.h</a>
+, <a class="el" href="nucleo144__f767zi_8h.html#aec52babc287e1d061dec870b9f43b083">nucleo144_f767zi.h</a>
+, <a class="el" href="apogee_2chibios_2v1_80_2board_8h.html#aec52babc287e1d061dec870b9f43b083">board.h</a>
+</li>
+<li>WSPI_USE_MUTUAL_EXCLUSION
+: <a class="el" href="group__HAL__CONF.html#gadf61573774e030f18f903fce854f7b1a">halconf.h</a>
+</li>
+<li>WSPI_USE_WAIT
+: <a class="el" href="group__HAL__CONF.html#gabe2ef47cbdd6357300f07a8f534b525d">halconf.h</a>
 </li>
 </ul>
 </div><!-- contents -->
@@ -385,7 +417,7 @@ $(document).ready(function(){initNavTree('globals_defs_w.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri May 15 2020 04:04:12 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:04:31 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

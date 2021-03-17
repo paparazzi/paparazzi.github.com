@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -166,7 +166,7 @@ $(document).ready(function(){initNavTree('boards_2ardrone_2actuators_8c_source.h
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;{</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <a class="code" href="chibios_2mcu__periph_2gpio__arch_8c.html#a614c4a447f1e43381d92c682ac3b953f">gpio_setup_output</a>(<a class="code" href="boards_2ardrone_2actuators_8c.html#a88d571d86aaeb214fc8d3d4e44c6ce24">ARDRONE_GPIO_PORT</a>, <a class="code" href="boards_2ardrone_2actuators_8c.html#ab87e7e9379479ee7dc84a2009e2fff5d">ARDRONE_GPIO_PIN_IRQ_FLIPFLOP</a>);</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <a class="code" href="chibios_2mcu__periph_2gpio__arch_8h.html#a302a5c9e7203669d0b9db8a2952fe009">gpio_clear</a>(<a class="code" href="boards_2ardrone_2actuators_8c.html#a88d571d86aaeb214fc8d3d4e44c6ce24">ARDRONE_GPIO_PORT</a>, <a class="code" href="boards_2ardrone_2actuators_8c.html#ab87e7e9379479ee7dc84a2009e2fff5d">ARDRONE_GPIO_PIN_IRQ_FLIPFLOP</a>);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <a class="code" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> stop = <a class="code" href="sys__time_8h.html#structsys__time">sys_time</a>.<a class="code" href="sys__time_8h.html#a2e86fdabba99a0ac8f6409e0d1e694a3">nb_sec</a> + 2;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <a class="code" href="types_8h.html#a06896e8c53f721507066c079052171f8">uint32_t</a> stop = <a class="code" href="sys__time_8h.html#structsys__time">sys_time</a>.<a class="code" href="sys__time_8h.html#a2e86fdabba99a0ac8f6409e0d1e694a3">nb_sec</a> + 2;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordflow">while</span> (<a class="code" href="sys__time_8h.html#structsys__time">sys_time</a>.<a class="code" href="sys__time_8h.html#a2e86fdabba99a0ac8f6409e0d1e694a3">nb_sec</a> &lt; stop);</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <a class="code" href="chibios_2mcu__periph_2gpio__arch_8h.html#a0da8ef247730680b4ffa595d11069051">gpio_set</a>(<a class="code" href="boards_2ardrone_2actuators_8c.html#a88d571d86aaeb214fc8d3d4e44c6ce24">ARDRONE_GPIO_PORT</a>, <a class="code" href="boards_2ardrone_2actuators_8c.html#ab87e7e9379479ee7dc84a2009e2fff5d">ARDRONE_GPIO_PIN_IRQ_FLIPFLOP</a>);</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
@@ -376,7 +376,6 @@ $(document).ready(function(){initNavTree('boards_2ardrone_2actuators_8c_source.h
 <div class="ttc" id="navdata_8h_html"><div class="ttname"><a href="navdata_8h.html">navdata.h</a></div><div class="ttdoc">ardrone2 navdata aquisition driver. </div></div>
 <div class="ttc" id="boards_2ardrone_2actuators_8h_html_afbdec8a79aa471d3f13f7dfcf2e4ea28"><div class="ttname"><a href="boards_2ardrone_2actuators_8h.html#afbdec8a79aa471d3f13f7dfcf2e4ea28">MOT_LEDRED</a></div><div class="ttdeci">#define MOT_LEDRED</div><div class="ttdef"><b>Definition:</b> <a href="boards_2ardrone_2actuators_8h_source.html#l00047">actuators.h:47</a></div></div>
 <div class="ttc" id="boards_2ardrone_2actuators_8c_html_ad8d796514edd55dd0f4a2134fd83f691"><div class="ttname"><a href="boards_2ardrone_2actuators_8c.html#ad8d796514edd55dd0f4a2134fd83f691">actuators_ardrone_motor_status</a></div><div class="ttdeci">void actuators_ardrone_motor_status(void)</div><div class="ttdef"><b>Definition:</b> <a href="boards_2ardrone_2actuators_8c_source.html#l00170">actuators.c:170</a></div></div>
-<div class="ttc" id="types_8h_html_a2ba621978a511250f7250fb10e05ffbe"><div class="ttname"><a href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a></div><div class="ttdeci">signed long int32_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00019">types.h:19</a></div></div>
 <div class="ttc" id="boards_2ardrone_2actuators_8c_html_ac368b5507cb23d37751e6f88041393c1"><div class="ttname"><a href="boards_2ardrone_2actuators_8c.html#ac368b5507cb23d37751e6f88041393c1">ARDRONE_GPIO_PIN_MOTOR3</a></div><div class="ttdeci">#define ARDRONE_GPIO_PIN_MOTOR3</div><div class="ttdef"><b>Definition:</b> <a href="boards_2ardrone_2actuators_8c_source.html#l00062">actuators.c:62</a></div></div>
 <div class="ttc" id="autopilot_8h_html"><div class="ttname"><a href="autopilot_8h.html">autopilot.h</a></div><div class="ttdoc">Core autopilot interface common to all firmwares. </div></div>
 <div class="ttc" id="chibios_2mcu__periph_2gpio__arch_8h_html_afd6403990094d8cd6010b2e641a977da"><div class="ttname"><a href="chibios_2mcu__periph_2gpio__arch_8h.html#afd6403990094d8cd6010b2e641a977da">gpio_get</a></div><div class="ttdeci">static uint8_t gpio_get(ioportid_t port, uint16_t pin)</div><div class="ttdoc">Get level of a gpio. </div><div class="ttdef"><b>Definition:</b> <a href="chibios_2mcu__periph_2gpio__arch_8h_source.html#l00088">gpio_arch.h:88</a></div></div>
@@ -403,7 +402,7 @@ $(document).ready(function(){initNavTree('boards_2ardrone_2actuators_8c_source.h
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e030268cd18297cf6282390f76bfcf7f.html">boards</a></li><li class="navelem"><a class="el" href="dir_93997fa94db05292d114fcb1dd488916.html">ardrone</a></li><li class="navelem"><a class="el" href="boards_2ardrone_2actuators_8c.html">actuators.c</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:02:11 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:02:22 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

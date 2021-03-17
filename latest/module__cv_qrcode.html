@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -107,12 +107,11 @@ $(document).ready(function(){initNavTree('module__cv_qrcode.html','');});
 <p>A telemetry message with the code content is sent when a QR code is detected when qrscan is called.</p>
 <h1><a class="anchor" id="module_load_example__cv_qrcode"></a>
 Example for airframe file</h1>
-<p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;module name=&quot;video_thread&quot;/&gt;</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;&lt;module name=&quot;cv_qrcode&quot;&gt;</div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;  &lt;define name=&quot;QRCODE_CAMERA&quot; value=&quot;front_camera|bottom_camera&quot; /&gt;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;  &lt;define name=&quot;QRCODE_FPS&quot; value=&quot;0&quot; /&gt;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;  &lt;define name=&quot;QRCODE_DRAW_RECTANGLE&quot; value=&quot;TRUE|FALSE&quot; /&gt;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;&lt;/module&gt;</div>
+<p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;module name=&quot;cv_qrcode&quot;&gt;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;  &lt;define name=&quot;QRCODE_CAMERA&quot; value=&quot;front_camera|bottom_camera&quot; /&gt;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;  &lt;define name=&quot;QRCODE_FPS&quot; value=&quot;0&quot; /&gt;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;  &lt;define name=&quot;QRCODE_DRAW_RECTANGLE&quot; value=&quot;TRUE|FALSE&quot; /&gt;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;&lt;/module&gt;</div>
 </div><!-- fragment --> <h1><a class="anchor" id="configuration__cv_qrcode"></a>
 Module configuration options</h1>
 <h2><a class="anchor" id="define"></a>
@@ -124,11 +123,6 @@ Define Options</h2>
  Description: The (maximum) frequency to run the calculations at. If zero, it will max out at the camera frame rate</li>
 <li><b>name:</b> <code>QRCODE_DRAW_RECTANGLE</code> <b>value:</b> <em>TRUE|FALSE</em> <br />
  Description: Whether or not to draw a rectangle around a found QR code</li>
-</ul>
-<h1><a class="anchor" id="dependencies__cv_qrcode"></a>
-Dependencies</h1>
-<ul>
-<li><a class="el" href="module__video_thread.html">video_thread module</a> </li>
 </ul>
 <h1><a class="anchor" id="functions__cv_qrcode"></a>
 Module functions</h1>
@@ -171,7 +165,7 @@ Source Files</h2>
 Raw cv_qrcode.xml file:</h2>
 <div class="fragment"><div class="line">&lt;!DOCTYPE module SYSTEM &quot;module.dtd&quot;&gt;</div>
 <div class="line"></div>
-<div class="line">&lt;module name=&quot;qrcode&quot; dir=&quot;computer_vision/qrcode&quot;&gt;</div>
+<div class="line">&lt;module name=&quot;cv_qrcode&quot; dir=&quot;computer_vision/qrcode&quot;&gt;</div>
 <div class="line">  &lt;doc&gt;</div>
 <div class="line">    &lt;description&gt;</div>
 <div class="line">      QR code reader using ZBAR library</div>
@@ -181,9 +175,11 @@ Raw cv_qrcode.xml file:</h2>
 <div class="line">    &lt;define name=&quot;QRCODE_CAMERA&quot; value=&quot;front_camera|bottom_camera&quot; description=&quot;The V4L2 camera device that is used for searching a QR code&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;QRCODE_FPS&quot; value=&quot;0&quot; description=&quot;The (maximum) frequency to run the calculations at. If zero, it will max out at the camera frame rate&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;QRCODE_DRAW_RECTANGLE&quot; value=&quot;TRUE|FALSE&quot; description=&quot;Whether or not to draw a rectangle around a found QR code&quot;/&gt;</div>
-<div class="line"> &lt;/doc&gt;</div>
+<div class="line">  &lt;/doc&gt;</div>
 <div class="line"></div>
-<div class="line">  &lt;depends&gt;video_thread&lt;/depends&gt;</div>
+<div class="line">  &lt;dep&gt;</div>
+<div class="line">    &lt;depends&gt;video_thread&lt;/depends&gt;</div>
+<div class="line">  &lt;/dep&gt;</div>
 <div class="line"></div>
 <div class="line">  &lt;header&gt;</div>
 <div class="line">    &lt;file name=&quot;qr_code.h&quot;/&gt;</div>
@@ -237,7 +233,7 @@ Raw cv_qrcode.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:03:39 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:03:57 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

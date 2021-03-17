@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -111,14 +111,8 @@ $(document).ready(function(){initNavTree('module__ahrs_infrared.html','');});
 </ul>
 <h1><a class="anchor" id="module_load_example__ahrs_infrared"></a>
 Example for airframe file</h1>
-<p>Add to your firmware section: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;module name=&quot;infrared_adc&quot;/&gt;</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;&lt;module name=&quot;ahrs_infrared&quot;/&gt;</div>
-</div><!-- fragment --> <h1><a class="anchor" id="dependencies__ahrs_infrared"></a>
-Dependencies</h1>
-<ul>
-<li><a class="el" href="module__infrared_adc.html">infrared_adc module</a> </li>
-</ul>
-<h1><a class="anchor" id="functions__ahrs_infrared"></a>
+<p>Add to your firmware section: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;module name=&quot;ahrs_infrared&quot;/&gt;</div>
+</div><!-- fragment --> <h1><a class="anchor" id="functions__ahrs_infrared"></a>
 Module functions</h1>
 <h2><a class="anchor" id="init_functions"></a>
 Init Functions</h2>
@@ -164,7 +158,9 @@ Raw ahrs_infrared.xml file:</h2>
 <div class="line">    - ADC channels can be used for gyros.</div>
 <div class="line">    &lt;/description&gt;</div>
 <div class="line">  &lt;/doc&gt;</div>
-<div class="line">  &lt;depends&gt;infrared_adc&lt;/depends&gt;</div>
+<div class="line">  &lt;dep&gt;</div>
+<div class="line">    &lt;depends&gt;infrared_adc&lt;/depends&gt;</div>
+<div class="line">  &lt;/dep&gt;</div>
 <div class="line">  &lt;header&gt;</div>
 <div class="line">    &lt;file name=&quot;ahrs_infrared.h&quot;/&gt;</div>
 <div class="line">  &lt;/header&gt;</div>
@@ -172,6 +168,9 @@ Raw ahrs_infrared.xml file:</h2>
 <div class="line">  &lt;periodic fun=&quot;ahrs_infrared_periodic()&quot; freq=&quot;60&quot;/&gt;</div>
 <div class="line">  &lt;makefile&gt;</div>
 <div class="line">    &lt;file name=&quot;ahrs_infrared.c&quot;/&gt;</div>
+<div class="line">    &lt;test&gt;</div>
+<div class="line">        &lt;define name=&quot;IR_HORIZ_SENSOR_ALIGNED&quot;/&gt;</div>
+<div class="line">    &lt;/test&gt;</div>
 <div class="line">  &lt;/makefile&gt;</div>
 <div class="line">&lt;/module&gt;</div>
 </div><!-- fragment --> </div></div><!-- contents -->
@@ -180,7 +179,7 @@ Raw ahrs_infrared.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:03:41 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:03:59 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

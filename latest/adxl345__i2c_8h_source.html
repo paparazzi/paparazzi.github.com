@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -150,7 +150,7 @@ $(document).ready(function(){initNavTree('adxl345__i2c_8h_source.html','');});
 <div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="adxl345__i2c_8h.html">   45</a></span>&#160;  <span class="keyword">union </span>{</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">struct </span><a class="code" href="group__math__algebra__int.html#structInt16Vect3">Int16Vect3</a> vect;           </div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> value[3];                 </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  } <a class="code" href="adxl345__i2c_8h.html#a5f764434a117efe63f8791638fb08d7b">data</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  } <a class="code" href="adxl345__i2c_8h.html#a675c5f17e7dcd554fb5a68b8fd70f50a">data</a>;</div>
 <div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="adxl345__i2c_8h.html#a1452312b7893660c3ab1a1d6b1ecb16d">   49</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="adxl345_8h.html#structAdxl345Config">Adxl345Config</a> <a class="code" href="adxl345__i2c_8h.html#a1452312b7893660c3ab1a1d6b1ecb16d">config</a>;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;};</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
@@ -172,6 +172,7 @@ $(document).ready(function(){initNavTree('adxl345__i2c_8h_source.html','');});
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#endif // ADXL345_I2C_H</span></div>
 <div class="ttc" id="adxl345_8h_html_structAdxl345Config"><div class="ttname"><a href="adxl345_8h.html#structAdxl345Config">Adxl345Config</a></div><div class="ttdef"><b>Definition:</b> <a href="adxl345_8h_source.html#l00045">adxl345.h:45</a></div></div>
 <div class="ttc" id="adxl345__i2c_8h_html_ad3a91ed9ff763d88416c0ed443960a3d"><div class="ttname"><a href="adxl345__i2c_8h.html#ad3a91ed9ff763d88416c0ed443960a3d">adxl345_i2c_event</a></div><div class="ttdeci">void adxl345_i2c_event(struct Adxl345_I2c *adxl)</div><div class="ttdef"><b>Definition:</b> <a href="adxl345__i2c_8c_source.html#l00114">adxl345_i2c.c:114</a></div></div>
+<div class="ttc" id="adxl345__i2c_8h_html_a675c5f17e7dcd554fb5a68b8fd70f50a"><div class="ttname"><a href="adxl345__i2c_8h.html#a675c5f17e7dcd554fb5a68b8fd70f50a">Adxl345_I2c::data</a></div><div class="ttdeci">union Adxl345_I2c::@304 data</div></div>
 <div class="ttc" id="group__math__algebra__int_html_structInt16Vect3"><div class="ttname"><a href="group__math__algebra__int.html#structInt16Vect3">Int16Vect3</a></div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__int_8h_source.html#l00062">pprz_algebra_int.h:62</a></div></div>
 <div class="ttc" id="adxl345__i2c_8h_html_structAdxl345__I2c"><div class="ttname"><a href="adxl345__i2c_8h.html#structAdxl345__I2c">Adxl345_I2c</a></div><div class="ttdef"><b>Definition:</b> <a href="adxl345__i2c_8h_source.html#l00039">adxl345_i2c.h:39</a></div></div>
 <div class="ttc" id="adxl345__i2c_8h_html_a8d4cfcfb4d533b36f9a60cd9cc5d6632"><div class="ttname"><a href="adxl345__i2c_8h.html#a8d4cfcfb4d533b36f9a60cd9cc5d6632">adxl345_i2c_init</a></div><div class="ttdeci">void adxl345_i2c_init(struct Adxl345_I2c *adxl, struct i2c_periph *i2c_p, uint8_t addr)</div><div class="ttdef"><b>Definition:</b> <a href="adxl345__i2c_8c_source.html#l00036">adxl345_i2c.c:36</a></div></div>
@@ -182,7 +183,6 @@ $(document).ready(function(){initNavTree('adxl345__i2c_8h_source.html','');});
 <div class="ttc" id="adxl345__i2c_8h_html_a1452312b7893660c3ab1a1d6b1ecb16d"><div class="ttname"><a href="adxl345__i2c_8h.html#a1452312b7893660c3ab1a1d6b1ecb16d">Adxl345_I2c::config</a></div><div class="ttdeci">struct Adxl345Config config</div><div class="ttdef"><b>Definition:</b> <a href="adxl345__i2c_8h_source.html#l00049">adxl345_i2c.h:49</a></div></div>
 <div class="ttc" id="adxl345__i2c_8h_html_a6c19aa3cb79c5fb9405cd7fb1e803b3c"><div class="ttname"><a href="adxl345__i2c_8h.html#a6c19aa3cb79c5fb9405cd7fb1e803b3c">adxl345_i2c_periodic</a></div><div class="ttdeci">static void adxl345_i2c_periodic(struct Adxl345_I2c *adxl)</div><div class="ttdoc">convenience function: read or start configuration if not already initialized </div><div class="ttdef"><b>Definition:</b> <a href="adxl345__i2c_8h_source.html#l00059">adxl345_i2c.h:59</a></div></div>
 <div class="ttc" id="types_8h_html_a269259c924dce846340ddbb810db2e3c"><div class="ttname"><a href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a></div><div class="ttdeci">signed short int16_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00017">types.h:17</a></div></div>
-<div class="ttc" id="adxl345__i2c_8h_html_a5f764434a117efe63f8791638fb08d7b"><div class="ttname"><a href="adxl345__i2c_8h.html#a5f764434a117efe63f8791638fb08d7b">Adxl345_I2c::data</a></div><div class="ttdeci">union Adxl345_I2c::@303 data</div></div>
 <div class="ttc" id="std_8h_html"><div class="ttname"><a href="std_8h.html">std.h</a></div></div>
 <div class="ttc" id="group__i2c_html_structi2c__transaction"><div class="ttname"><a href="group__i2c.html#structi2c__transaction">i2c_transaction</a></div><div class="ttdoc">I2C transaction structure. </div><div class="ttdef"><b>Definition:</b> <a href="i2c_8h_source.html#l00093">i2c.h:93</a></div></div>
 <div class="ttc" id="adxl345__i2c_8h_html_a428a0ceb8df2c18d62aa93a31eef816c"><div class="ttname"><a href="adxl345__i2c_8h.html#a428a0ceb8df2c18d62aa93a31eef816c">Adxl345_I2c::i2c_p</a></div><div class="ttdeci">struct i2c_periph * i2c_p</div><div class="ttdef"><b>Definition:</b> <a href="adxl345__i2c_8h_source.html#l00040">adxl345_i2c.h:40</a></div></div>
@@ -200,7 +200,7 @@ $(document).ready(function(){initNavTree('adxl345__i2c_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_0a48ba2c0a76794adfddddc873522f67.html">peripherals</a></li><li class="navelem"><a class="el" href="adxl345__i2c_8h.html">adxl345_i2c.h</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:02:30 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:02:42 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

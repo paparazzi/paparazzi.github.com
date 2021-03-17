@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -250,7 +250,7 @@ $(document).ready(function(){initNavTree('ekf__range_8c_source.html','');});
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    Hi[0] * Hi[4] * (ekf_range-&gt;<a class="code" href="ekf__range_8h.html#a7e191ee8efc902bcb8a30359ea5ef3df">P</a>[0][4] + ekf_range-&gt;<a class="code" href="ekf__range_8h.html#a7e191ee8efc902bcb8a30359ea5ef3df">P</a>[4][0]) +</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    Hi[2] * Hi[4] * (ekf_range-&gt;<a class="code" href="ekf__range_8h.html#a7e191ee8efc902bcb8a30359ea5ef3df">P</a>[2][4] + ekf_range-&gt;<a class="code" href="ekf__range_8h.html#a7e191ee8efc902bcb8a30359ea5ef3df">P</a>[4][2]) +</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    ekf_range-&gt;<a class="code" href="ekf__range_8h.html#a560a013eb6551e3645066048454b6bcf">R_dist</a>;</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;  if (fabsf(S) &lt; 1e-5) {</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;  <a class="code" href="e__identification__fr_8c.html#a92cffae21318c1d983c63f3afa2a8d87">if</a> (fabsf(S) &lt; 1e-5) {</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="keywordflow">return</span>; <span class="comment">// don&#39;t inverse S if it is too small</span></div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  }</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  <span class="comment">// finally compute gain and correct state</span></div>
@@ -289,6 +289,7 @@ $(document).ready(function(){initNavTree('ekf__range_8c_source.html','');});
 <div class="ttc" id="ekf__range_8c_html_aa22bbdb54887a0a5acd3f6b4b8b7cc71"><div class="ttname"><a href="ekf__range_8c.html#aa22bbdb54887a0a5acd3f6b4b8b7cc71">ekf_range_update_speed</a></div><div class="ttdeci">void ekf_range_update_speed(struct EKFRange *ekf_range, float speed, uint8_t type)</div><div class="ttdoc">Update step based on speed measure. </div><div class="ttdef"><b>Definition:</b> <a href="ekf__range_8c_source.html#l00191">ekf_range.c:191</a></div></div>
 <div class="ttc" id="ekf__range_8h_html_a560a013eb6551e3645066048454b6bcf"><div class="ttname"><a href="ekf__range_8h.html#a560a013eb6551e3645066048454b6bcf">EKFRange::R_dist</a></div><div class="ttdeci">float R_dist</div><div class="ttdoc">measurement noise on distances (assumed the same for all anchors) </div><div class="ttdef"><b>Definition:</b> <a href="ekf__range_8h_source.html#l00047">ekf_range.h:47</a></div></div>
 <div class="ttc" id="undistort__image_8c_html_a29a532ec52354ee7571487245359a066"><div class="ttname"><a href="undistort__image_8c.html#a29a532ec52354ee7571487245359a066">K</a></div><div class="ttdeci">static float K[9]</div><div class="ttdef"><b>Definition:</b> <a href="undistort__image_8c_source.html#l00041">undistort_image.c:41</a></div></div>
+<div class="ttc" id="e__identification__fr_8c_html_a92cffae21318c1d983c63f3afa2a8d87"><div class="ttname"><a href="e__identification__fr_8c.html#a92cffae21318c1d983c63f3afa2a8d87">if</a></div><div class="ttdeci">if(GpsFixValid()&amp;&amp;e_identification_started)</div><div class="ttdef"><b>Definition:</b> <a href="e__identification__fr_8c_source.html#l00159">e_identification_fr.c:159</a></div></div>
 <div class="ttc" id="ekf__range_8c_html_a28c4ed56eb77d0de14cfa54c94e1fd6e"><div class="ttname"><a href="ekf__range_8c.html#a28c4ed56eb77d0de14cfa54c94e1fd6e">ekf_range_get_speed</a></div><div class="ttdeci">struct EnuCoor_f ekf_range_get_speed(struct EKFRange *ekf_range)</div><div class="ttdoc">Get current speed. </div><div class="ttdef"><b>Definition:</b> <a href="ekf__range_8c_source.html#l00084">ekf_range.c:84</a></div></div>
 <div class="ttc" id="pprz__geodetic__float_8h_html_structEnuCoor__f"><div class="ttname"><a href="pprz__geodetic__float_8h.html#structEnuCoor__f">EnuCoor_f</a></div><div class="ttdoc">vector in East North Up coordinates Units: meters </div><div class="ttdef"><b>Definition:</b> <a href="pprz__geodetic__float_8h_source.html#l00072">pprz_geodetic_float.h:72</a></div></div>
 <div class="ttc" id="ekf__range_8h_html"><div class="ttname"><a href="ekf__range_8h.html">ekf_range.h</a></div></div>
@@ -316,7 +317,7 @@ $(document).ready(function(){initNavTree('ekf__range_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_0052b60a5651ac9f93ab63c946b53cbf.html">decawave</a></li><li class="navelem"><a class="el" href="ekf__range_8c.html">ekf_range.c</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:02:22 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:02:34 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

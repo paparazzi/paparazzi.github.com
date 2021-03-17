@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -129,7 +129,7 @@ $(document).ready(function(){initNavTree('edge__flow_8c.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a79cdb2523f43871785a1808f5d3dc260"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edge__flow_8c.html#a79cdb2523f43871785a1808f5d3dc260">calc_previous_frame_nr</a> (struct <a class="el" href="inter__thread__data_8h.html#structopticflow__result__t">opticflow_result_t</a> *result, struct <a class="el" href="opticflow__calculator_8h.html#structopticflow__t">opticflow_t</a> *<a class="el" href="opticflow__module_8h.html#a4ed7d8828611f3355617fb6745ade2a0">opticflow</a>, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> current_frame_nr, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *previous_frame_offset, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *previous_frame_nr)</td></tr>
+<tr class="memitem:a79cdb2523f43871785a1808f5d3dc260"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edge__flow_8c.html#a79cdb2523f43871785a1808f5d3dc260">calc_previous_frame_nr</a> (struct <a class="el" href="inter__thread__data_8h.html#structopticflow__result__t">opticflow_result_t</a> *result, struct <a class="el" href="opticflow__calculator_8h.html#structopticflow__t">opticflow_t</a> *<a class="el" href="opticflow__module_8h.html#adc2fe8181950b9f3825b0ec86a1190fb">opticflow</a>, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> current_frame_nr, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *previous_frame_offset, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *previous_frame_nr)</td></tr>
 <tr class="memdesc:a79cdb2523f43871785a1808f5d3dc260"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calc_previous_frame_nr; adaptive Time Horizon.  <a href="#a79cdb2523f43871785a1808f5d3dc260">More...</a><br /></td></tr>
 <tr class="separator:a79cdb2523f43871785a1808f5d3dc260"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3dacd96582561f6f436df853e4ce0d63"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="edge__flow_8c.html#a3dacd96582561f6f436df853e4ce0d63">calculate_edge_histogram</a> (struct <a class="el" href="image_8h.html#structimage__t">image_t</a> *img, <a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> edge_histogram[], char <a class="el" href="obstacle__avoidance_8c.html#ac6116d5235e13e059e591879c46d7174">direction</a>, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> edge_threshold)</td></tr>
@@ -215,7 +215,7 @@ Functions</h2></td></tr>
 
 <p>References <a class="el" href="inter__thread__data_8h_source.html#l00043">opticflow_result_t::flow_x</a>, <a class="el" href="inter__thread__data_8h_source.html#l00044">opticflow_result_t::flow_y</a>, <a class="el" href="edge__flow_8h_source.html#l00045">MAX_HORIZON</a>, and <a class="el" href="opticflow__calculator_8h_source.html#l00049">opticflow_t::search_distance</a>.</p>
 
-<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00815">calc_edgeflow_tot()</a>.</p>
+<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l01006">calc_edgeflow_tot()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -224,7 +224,7 @@ Functions</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="edge__flow_8c_a79cdb2523f43871785a1808f5d3dc260_icgraph.png" border="0" usemap="#edge__flow_8c_a79cdb2523f43871785a1808f5d3dc260_icgraph" alt=""/></div>
 <map name="edge__flow_8c_a79cdb2523f43871785a1808f5d3dc260_icgraph" id="edge__flow_8c_a79cdb2523f43871785a1808f5d3dc260_icgraph">
-<area shape="rect" id="node2" href="opticflow__calculator_8h.html#ab57bd1ab7d50982c7f9494e40e6da3ca" title="Run the optical flow with EDGEFLOW on a new image frame. " alt="" coords="227,5,361,32"/><area shape="rect" id="node3" href="opticflow__calculator_8h.html#a89e51af8fe5a0f534193635d181a2086" title="Run the optical flow on a new image frame. " alt="" coords="409,5,564,32"/><area shape="rect" id="node4" href="opticflow__module_8c.html#a36b69a7ec255d2d20bb31b6d13e3e567" title="The main optical flow calculation thread. " alt="" coords="612,5,776,32"/><area shape="rect" id="node5" href="opticflow__module_8h.html#a6026660ee86fbb1f72bada581386e6d9" title="Initialize the optical flow module for the bottom camera. " alt="" coords="824,5,983,32"/></map>
+<area shape="rect" id="node2" href="opticflow__calculator_8h.html#ab57bd1ab7d50982c7f9494e40e6da3ca" title="Run the optical flow with EDGEFLOW on a new image frame. " alt="" coords="227,5,361,32"/><area shape="rect" id="node3" href="opticflow__calculator_8h.html#a89e51af8fe5a0f534193635d181a2086" title="Run the optical flow on a new image frame. " alt="" coords="409,5,564,32"/><area shape="rect" id="node4" href="opticflow__module_8c.html#adb417544fc559b45532524416ce59953" title="The main optical flow calculation thread. " alt="" coords="612,5,776,32"/><area shape="rect" id="node5" href="opticflow__module_8h.html#a6026660ee86fbb1f72bada581386e6d9" title="Initialize the optical flow module for the bottom camera. " alt="" coords="824,5,983,32"/></map>
 </div>
 </p>
 
@@ -302,7 +302,7 @@ Functions</h2></td></tr>
 
 <p>References <a class="el" href="trilateration_8c_source.html#l00035">D</a>, <a class="el" href="edge__flow_8h_source.html#l00052">DISP_RANGE_MAX</a>, and <a class="el" href="edge__flow_8c_source.html#l00220">getMinimum()</a>.</p>
 
-<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00815">calc_edgeflow_tot()</a>.</p>
+<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l01006">calc_edgeflow_tot()</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -322,7 +322,7 @@ Functions</h2></td></tr>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="edge__flow_8c_a362f7ce14089a9e1bf93464ef5731714_icgraph.png" border="0" usemap="#edge__flow_8c_a362f7ce14089a9e1bf93464ef5731714_icgraph" alt=""/></div>
 <map name="edge__flow_8c_a362f7ce14089a9e1bf93464ef5731714_icgraph" id="edge__flow_8c_a362f7ce14089a9e1bf93464ef5731714_icgraph">
-<area shape="rect" id="node2" href="opticflow__calculator_8h.html#ab57bd1ab7d50982c7f9494e40e6da3ca" title="Run the optical flow with EDGEFLOW on a new image frame. " alt="" coords="264,5,399,32"/><area shape="rect" id="node3" href="opticflow__calculator_8h.html#a89e51af8fe5a0f534193635d181a2086" title="Run the optical flow on a new image frame. " alt="" coords="447,5,601,32"/><area shape="rect" id="node4" href="opticflow__module_8c.html#a36b69a7ec255d2d20bb31b6d13e3e567" title="The main optical flow calculation thread. " alt="" coords="649,5,813,32"/><area shape="rect" id="node5" href="opticflow__module_8h.html#a6026660ee86fbb1f72bada581386e6d9" title="Initialize the optical flow module for the bottom camera. " alt="" coords="861,5,1020,32"/></map>
+<area shape="rect" id="node2" href="opticflow__calculator_8h.html#ab57bd1ab7d50982c7f9494e40e6da3ca" title="Run the optical flow with EDGEFLOW on a new image frame. " alt="" coords="264,5,399,32"/><area shape="rect" id="node3" href="opticflow__calculator_8h.html#a89e51af8fe5a0f534193635d181a2086" title="Run the optical flow on a new image frame. " alt="" coords="447,5,601,32"/><area shape="rect" id="node4" href="opticflow__module_8c.html#adb417544fc559b45532524416ce59953" title="The main optical flow calculation thread. " alt="" coords="649,5,813,32"/><area shape="rect" id="node5" href="opticflow__module_8h.html#a6026660ee86fbb1f72bada581386e6d9" title="Initialize the optical flow module for the bottom camera. " alt="" coords="861,5,1020,32"/></map>
 </div>
 </p>
 
@@ -377,9 +377,9 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="edge__flow_8c_source.html#l00088">88</a> of file <a class="el" href="edge__flow_8c_source.html">edge_flow.c</a>.</p>
 
-<p>References <a class="el" href="image_8h_source.html#l00053">image_t::buf</a>.</p>
+<p>References <a class="el" href="image_8h_source.html#l00054">image_t::buf</a>.</p>
 
-<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00815">calc_edgeflow_tot()</a>.</p>
+<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l01006">calc_edgeflow_tot()</a>.</p>
 
 <p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -388,7 +388,7 @@ Functions</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="edge__flow_8c_a3dacd96582561f6f436df853e4ce0d63_icgraph.png" border="0" usemap="#edge__flow_8c_a3dacd96582561f6f436df853e4ce0d63_icgraph" alt=""/></div>
 <map name="edge__flow_8c_a3dacd96582561f6f436df853e4ce0d63_icgraph" id="edge__flow_8c_a3dacd96582561f6f436df853e4ce0d63_icgraph">
-<area shape="rect" id="node2" href="opticflow__calculator_8h.html#ab57bd1ab7d50982c7f9494e40e6da3ca" title="Run the optical flow with EDGEFLOW on a new image frame. " alt="" coords="244,5,379,32"/><area shape="rect" id="node3" href="opticflow__calculator_8h.html#a89e51af8fe5a0f534193635d181a2086" title="Run the optical flow on a new image frame. " alt="" coords="427,5,581,32"/><area shape="rect" id="node4" href="opticflow__module_8c.html#a36b69a7ec255d2d20bb31b6d13e3e567" title="The main optical flow calculation thread. " alt="" coords="629,5,793,32"/><area shape="rect" id="node5" href="opticflow__module_8h.html#a6026660ee86fbb1f72bada581386e6d9" title="Initialize the optical flow module for the bottom camera. " alt="" coords="841,5,1000,32"/></map>
+<area shape="rect" id="node2" href="opticflow__calculator_8h.html#ab57bd1ab7d50982c7f9494e40e6da3ca" title="Run the optical flow with EDGEFLOW on a new image frame. " alt="" coords="244,5,379,32"/><area shape="rect" id="node3" href="opticflow__calculator_8h.html#a89e51af8fe5a0f534193635d181a2086" title="Run the optical flow on a new image frame. " alt="" coords="427,5,581,32"/><area shape="rect" id="node4" href="opticflow__module_8c.html#adb417544fc559b45532524416ce59953" title="The main optical flow calculation thread. " alt="" coords="629,5,793,32"/><area shape="rect" id="node5" href="opticflow__module_8h.html#a6026660ee86fbb1f72bada581386e6d9" title="Initialize the optical flow module for the bottom camera. " alt="" coords="841,5,1000,32"/></map>
 </div>
 </p>
 
@@ -443,9 +443,9 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="edge__flow_8c_source.html#l00297">297</a> of file <a class="el" href="edge__flow_8c_source.html">edge_flow.c</a>.</p>
 
-<p>References <a class="el" href="edge__flow_8h_source.html#l00078">edge_flow_t::div_x</a>, <a class="el" href="edge__flow_8h_source.html#l00077">edge_flow_t::flow_x</a>, <a class="el" href="image_8h_source.html#l00046">image_t::h</a>, <a class="el" href="image_8c_source.html#l00900">image_draw_line()</a>, <a class="el" href="image_8h_source.html#l00045">image_t::w</a>, <a class="el" href="image_8h_source.html#l00058">point_t::x</a>, and <a class="el" href="image_8h_source.html#l00059">point_t::y</a>.</p>
+<p>References <a class="el" href="edge__flow_8h_source.html#l00078">edge_flow_t::div_x</a>, <a class="el" href="edge__flow_8h_source.html#l00077">edge_flow_t::flow_x</a>, <a class="el" href="image_8h_source.html#l00047">image_t::h</a>, <a class="el" href="image_8c_source.html#l00906">image_draw_line()</a>, <a class="el" href="image_8h_source.html#l00046">image_t::w</a>, <a class="el" href="image_8h_source.html#l00059">point_t::x</a>, and <a class="el" href="image_8h_source.html#l00060">point_t::y</a>.</p>
 
-<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00815">calc_edgeflow_tot()</a>.</p>
+<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l01006">calc_edgeflow_tot()</a>.</p>
 
 <p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -465,7 +465,7 @@ Functions</h2></td></tr>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="edge__flow_8c_a3b033920386bfd9bd702b743b16d6339_icgraph.png" border="0" usemap="#edge__flow_8c_a3b033920386bfd9bd702b743b16d6339_icgraph" alt=""/></div>
 <map name="edge__flow_8c_a3b033920386bfd9bd702b743b16d6339_icgraph" id="edge__flow_8c_a3b033920386bfd9bd702b743b16d6339_icgraph">
-<area shape="rect" id="node2" href="opticflow__calculator_8h.html#ab57bd1ab7d50982c7f9494e40e6da3ca" title="Run the optical flow with EDGEFLOW on a new image frame. " alt="" coords="200,5,335,32"/><area shape="rect" id="node3" href="opticflow__calculator_8h.html#a89e51af8fe5a0f534193635d181a2086" title="Run the optical flow on a new image frame. " alt="" coords="383,5,537,32"/><area shape="rect" id="node4" href="opticflow__module_8c.html#a36b69a7ec255d2d20bb31b6d13e3e567" title="The main optical flow calculation thread. " alt="" coords="585,5,749,32"/><area shape="rect" id="node5" href="opticflow__module_8h.html#a6026660ee86fbb1f72bada581386e6d9" title="Initialize the optical flow module for the bottom camera. " alt="" coords="797,5,956,32"/></map>
+<area shape="rect" id="node2" href="opticflow__calculator_8h.html#ab57bd1ab7d50982c7f9494e40e6da3ca" title="Run the optical flow with EDGEFLOW on a new image frame. " alt="" coords="200,5,335,32"/><area shape="rect" id="node3" href="opticflow__calculator_8h.html#a89e51af8fe5a0f534193635d181a2086" title="Run the optical flow on a new image frame. " alt="" coords="383,5,537,32"/><area shape="rect" id="node4" href="opticflow__module_8c.html#adb417544fc559b45532524416ce59953" title="The main optical flow calculation thread. " alt="" coords="585,5,749,32"/><area shape="rect" id="node5" href="opticflow__module_8h.html#a6026660ee86fbb1f72bada581386e6d9" title="Initialize the optical flow module for the bottom camera. " alt="" coords="797,5,956,32"/></map>
 </div>
 </p>
 
@@ -514,7 +514,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="edge__flow_8c_source.html#l00337">337</a> of file <a class="el" href="edge__flow_8c_source.html">edge_flow.c</a>.</p>
 
-<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00815">calc_edgeflow_tot()</a>.</p>
+<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l01006">calc_edgeflow_tot()</a>.</p>
 
 <p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -523,7 +523,7 @@ Functions</h2></td></tr>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="edge__flow_8c_a36266096493b2aae14a6aefc01e5c0db_icgraph.png" border="0" usemap="#edge__flow_8c_a36266096493b2aae14a6aefc01e5c0db_icgraph" alt=""/></div>
 <map name="edge__flow_8c_a36266096493b2aae14a6aefc01e5c0db_icgraph" id="edge__flow_8c_a36266096493b2aae14a6aefc01e5c0db_icgraph">
-<area shape="rect" id="node2" href="opticflow__calculator_8h.html#ab57bd1ab7d50982c7f9494e40e6da3ca" title="Run the optical flow with EDGEFLOW on a new image frame. " alt="" coords="185,5,320,32"/><area shape="rect" id="node3" href="opticflow__calculator_8h.html#a89e51af8fe5a0f534193635d181a2086" title="Run the optical flow on a new image frame. " alt="" coords="368,5,523,32"/><area shape="rect" id="node4" href="opticflow__module_8c.html#a36b69a7ec255d2d20bb31b6d13e3e567" title="The main optical flow calculation thread. " alt="" coords="571,5,735,32"/><area shape="rect" id="node5" href="opticflow__module_8h.html#a6026660ee86fbb1f72bada581386e6d9" title="Initialize the optical flow module for the bottom camera. " alt="" coords="783,5,941,32"/></map>
+<area shape="rect" id="node2" href="opticflow__calculator_8h.html#ab57bd1ab7d50982c7f9494e40e6da3ca" title="Run the optical flow with EDGEFLOW on a new image frame. " alt="" coords="185,5,320,32"/><area shape="rect" id="node3" href="opticflow__calculator_8h.html#a89e51af8fe5a0f534193635d181a2086" title="Run the optical flow on a new image frame. " alt="" coords="368,5,523,32"/><area shape="rect" id="node4" href="opticflow__module_8c.html#adb417544fc559b45532524416ce59953" title="The main optical flow calculation thread. " alt="" coords="571,5,735,32"/><area shape="rect" id="node5" href="opticflow__module_8h.html#a6026660ee86fbb1f72bada581386e6d9" title="Initialize the optical flow module for the bottom camera. " alt="" coords="783,5,941,32"/></map>
 </div>
 </p>
 
@@ -574,7 +574,7 @@ Functions</h2></td></tr>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="edge__flow_8c_a24125fbc0c941963c0e3a2ab55a97e6e_icgraph.png" border="0" usemap="#edge__flow_8c_a24125fbc0c941963c0e3a2ab55a97e6e_icgraph" alt=""/></div>
 <map name="edge__flow_8c_a24125fbc0c941963c0e3a2ab55a97e6e_icgraph" id="edge__flow_8c_a24125fbc0c941963c0e3a2ab55a97e6e_icgraph">
-<area shape="rect" id="node2" href="edge__flow_8h.html#a362f7ce14089a9e1bf93464ef5731714" title="Calculate_displacement calculates the displacement between two histograms. " alt="" coords="156,5,367,32"/><area shape="rect" id="node3" href="opticflow__calculator_8h.html#ab57bd1ab7d50982c7f9494e40e6da3ca" title="Run the optical flow with EDGEFLOW on a new image frame. " alt="" coords="415,5,549,32"/><area shape="rect" id="node4" href="opticflow__calculator_8h.html#a89e51af8fe5a0f534193635d181a2086" title="Run the optical flow on a new image frame. " alt="" coords="597,5,752,32"/><area shape="rect" id="node5" href="opticflow__module_8c.html#a36b69a7ec255d2d20bb31b6d13e3e567" title="The main optical flow calculation thread. " alt="" coords="800,5,964,32"/><area shape="rect" id="node6" href="opticflow__module_8h.html#a6026660ee86fbb1f72bada581386e6d9" title="Initialize the optical flow module for the bottom camera. " alt="" coords="1012,5,1171,32"/></map>
+<area shape="rect" id="node2" href="edge__flow_8h.html#a362f7ce14089a9e1bf93464ef5731714" title="Calculate_displacement calculates the displacement between two histograms. " alt="" coords="156,5,367,32"/><area shape="rect" id="node3" href="opticflow__calculator_8h.html#ab57bd1ab7d50982c7f9494e40e6da3ca" title="Run the optical flow with EDGEFLOW on a new image frame. " alt="" coords="415,5,549,32"/><area shape="rect" id="node4" href="opticflow__calculator_8h.html#a89e51af8fe5a0f534193635d181a2086" title="Run the optical flow on a new image frame. " alt="" coords="597,5,752,32"/><area shape="rect" id="node5" href="opticflow__module_8c.html#adb417544fc559b45532524416ce59953" title="The main optical flow calculation thread. " alt="" coords="800,5,964,32"/><area shape="rect" id="node6" href="opticflow__module_8h.html#a6026660ee86fbb1f72bada581386e6d9" title="Initialize the optical flow module for the bottom camera. " alt="" coords="1012,5,1171,32"/></map>
 </div>
 </p>
 
@@ -643,7 +643,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="edge__flow_8c_source.html#l00247">247</a> of file <a class="el" href="edge__flow_8c_source.html">edge_flow.c</a>.</p>
 
-<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l00815">calc_edgeflow_tot()</a>.</p>
+<p>Referenced by <a class="el" href="opticflow__calculator_8c_source.html#l01006">calc_edgeflow_tot()</a>.</p>
 
 <p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -652,7 +652,7 @@ Functions</h2></td></tr>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="edge__flow_8c_a57885c6d0cf61ad61c6e6113b2573c88_icgraph.png" border="0" usemap="#edge__flow_8c_a57885c6d0cf61ad61c6e6113b2573c88_icgraph" alt=""/></div>
 <map name="edge__flow_8c_a57885c6d0cf61ad61c6e6113b2573c88_icgraph" id="edge__flow_8c_a57885c6d0cf61ad61c6e6113b2573c88_icgraph">
-<area shape="rect" id="node2" href="opticflow__calculator_8h.html#ab57bd1ab7d50982c7f9494e40e6da3ca" title="Run the optical flow with EDGEFLOW on a new image frame. " alt="" coords="116,5,251,32"/><area shape="rect" id="node3" href="opticflow__calculator_8h.html#a89e51af8fe5a0f534193635d181a2086" title="Run the optical flow on a new image frame. " alt="" coords="299,5,453,32"/><area shape="rect" id="node4" href="opticflow__module_8c.html#a36b69a7ec255d2d20bb31b6d13e3e567" title="The main optical flow calculation thread. " alt="" coords="501,5,665,32"/><area shape="rect" id="node5" href="opticflow__module_8h.html#a6026660ee86fbb1f72bada581386e6d9" title="Initialize the optical flow module for the bottom camera. " alt="" coords="713,5,872,32"/></map>
+<area shape="rect" id="node2" href="opticflow__calculator_8h.html#ab57bd1ab7d50982c7f9494e40e6da3ca" title="Run the optical flow with EDGEFLOW on a new image frame. " alt="" coords="116,5,251,32"/><area shape="rect" id="node3" href="opticflow__calculator_8h.html#a89e51af8fe5a0f534193635d181a2086" title="Run the optical flow on a new image frame. " alt="" coords="299,5,453,32"/><area shape="rect" id="node4" href="opticflow__module_8c.html#adb417544fc559b45532524416ce59953" title="The main optical flow calculation thread. " alt="" coords="501,5,665,32"/><area shape="rect" id="node5" href="opticflow__module_8h.html#a6026660ee86fbb1f72bada581386e6d9" title="Initialize the optical flow module for the bottom camera. " alt="" coords="713,5,872,32"/></map>
 </div>
 </p>
 
@@ -664,7 +664,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_304e79c9f5d09ea65a2f55aafb6a6b9d.html">computer_vision</a></li><li class="navelem"><a class="el" href="dir_9adc125244b74c64b95124778e5b932a.html">lib</a></li><li class="navelem"><a class="el" href="dir_02b33bf6f772461f444923131a9a8dda.html">vision</a></li><li class="navelem"><a class="el" href="edge__flow_8c.html">edge_flow.c</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:03:08 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:03:23 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

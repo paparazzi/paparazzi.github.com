@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -227,7 +227,7 @@ $(document).ready(function(){initNavTree('ins__alt__float_8c_source.html','');})
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  <a class="code" href="ins__alt__float_8c.html#aa856711c8028cde137345c4d9ebd83fa">ins_altf</a>.<a class="code" href="ins__alt__float_8h.html#a15ad588759b4797cbcebd879cb49dbbc">reset_alt_ref</a> = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <span class="comment">// why do we have this here?</span></div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  <a class="code" href="ins__alt__float_8c.html#a8a4893f91c1e9a09038c5d69541a6d75">alt_kalman</a>(0.0f, 0.1);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  <a class="code" href="ins__alt__float_8c.html#a8a4893f91c1e9a09038c5d69541a6d75">alt_kalman</a>(0.0<a class="code" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a>, 0.1);</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="preprocessor">#if USE_BAROMETER</span></div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  <span class="comment">// Bind to BARO_ABS message</span></div>
@@ -549,6 +549,7 @@ $(document).ready(function(){initNavTree('ins__alt__float_8c_source.html','');})
 <div class="ttc" id="ins__alt__float_8h_html_a6c6f02c433156a3eaaa8d3228efc3165"><div class="ttname"><a href="ins__alt__float_8h.html#a6c6f02c433156a3eaaa8d3228efc3165">InsAltFloat::baro_initialized</a></div><div class="ttdeci">bool baro_initialized</div><div class="ttdef"><b>Definition:</b> <a href="ins__alt__float_8h_source.html#l00047">ins_alt_float.h:47</a></div></div>
 <div class="ttc" id="baro__bmp_8c_html_a075628427eb8ce860c727b298b01173c"><div class="ttname"><a href="baro__bmp_8c.html#a075628427eb8ce860c727b298b01173c">baro_bmp_enabled</a></div><div class="ttdeci">bool baro_bmp_enabled</div><div class="ttdef"><b>Definition:</b> <a href="baro__bmp_8c_source.html#l00054">baro_bmp.c:54</a></div></div>
 <div class="ttc" id="bluegiga_8c_html_a072136fa8b5895314bb8878bf907f3e6"><div class="ttname"><a href="bluegiga_8c.html#a072136fa8b5895314bb8878bf907f3e6">last_ts</a></div><div class="ttdeci">uint32_t last_ts</div><div class="ttdef"><b>Definition:</b> <a href="bluegiga_8c_source.html#l00131">bluegiga.c:131</a></div></div>
+<div class="ttc" id="wedgebug_8c_html_a05fd2dba3354a98f1a00b7c7ffc12b13"><div class="ttname"><a href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a></div><div class="ttdeci">uint16_t f</div><div class="ttdoc">Camera baseline, in meters (i.e. horizontal distance between the two cameras of the stereo setup) ...</div><div class="ttdef"><b>Definition:</b> <a href="wedgebug_8c_source.html#l00204">wedgebug.c:204</a></div></div>
 <div class="ttc" id="baro__bmp_8c_html_acb0831c824befa3750689297f62d4024"><div class="ttname"><a href="baro__bmp_8c.html#acb0831c824befa3750689297f62d4024">baro_bmp_sigma2</a></div><div class="ttdeci">float baro_bmp_sigma2</div><div class="ttdef"><b>Definition:</b> <a href="baro__bmp_8c_source.html#l00056">baro_bmp.c:56</a></div></div>
 <div class="ttc" id="ins__alt__float_8c_html_af8c616627ecbb4860e359944c97dc718"><div class="ttname"><a href="ins__alt__float_8c.html#af8c616627ecbb4860e359944c97dc718">gps_ev</a></div><div class="ttdeci">static abi_event gps_ev</div><div class="ttdef"><b>Definition:</b> <a href="ins__alt__float_8c_source.html#l00082">ins_alt_float.c:82</a></div></div>
 <div class="ttc" id="baro__bmp_8c_html_a715ab4e2838f0af7be8d7d55b82a1ac9"><div class="ttname"><a href="baro__bmp_8c.html#a715ab4e2838f0af7be8d7d55b82a1ac9">baro_bmp_r</a></div><div class="ttdeci">float baro_bmp_r</div><div class="ttdef"><b>Definition:</b> <a href="baro__bmp_8c_source.html#l00055">baro_bmp.c:55</a></div></div>
@@ -597,7 +598,7 @@ $(document).ready(function(){initNavTree('ins__alt__float_8c_source.html','');})
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_800f0b451dc44a2b86d16d857cea778d.html">ins</a></li><li class="navelem"><a class="el" href="ins__alt__float_8c.html">ins_alt_float.c</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:02:36 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:02:48 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -1,0 +1,25 @@
+var flight__gear_8h_structFGNetGUI =
+[
+    [ "agl", "flight__gear_8h.html#ab65cb49f6d8ae2ece0d9a678983b36ba", null ],
+    [ "altitude", "flight__gear_8h.html#a970d60e28568866223bb1b0f1cac7231", null ],
+    [ "climb_rate", "flight__gear_8h.html#a0299b8cbdb09a7041cef259ce9ff3c9f", null ],
+    [ "course_deviation_deg", "flight__gear_8h.html#a420fb72f208a81b35b1defc4837c3f0e", null ],
+    [ "cur_time", "flight__gear_8h.html#adac964e00a13b7d442f1ec85f956afc2", null ],
+    [ "dist_nm", "flight__gear_8h.html#a94415bee1b6d170d4bb9a00a43e2d861", null ],
+    [ "fuel_quantity", "flight__gear_8h.html#ab78da6b0b571657235d5c8db6f3ab3a5", null ],
+    [ "ground_elev", "flight__gear_8h.html#a65672b13c87b4306e8f6ac3c48017e3e", null ],
+    [ "gs_deviation_deg", "flight__gear_8h.html#ae5f49680364313cfa8e5f315e5935281", null ],
+    [ "in_range", "flight__gear_8h.html#af4bf8f4fcfe8cfab1cfa875b0f0b92f8", null ],
+    [ "latitude", "flight__gear_8h.html#a01fbcd7d0f2a1ec0fd1361a380dca452", null ],
+    [ "longitude", "flight__gear_8h.html#a977d11d209af216033db55ed39f17902", null ],
+    [ "nav_radial", "flight__gear_8h.html#ac9636722fe2f8ec3df6f305ebb6113c9", null ],
+    [ "num_tanks", "flight__gear_8h.html#a6ac15222d878862888ab9f25aa330eaf", null ],
+    [ "padding1", "flight__gear_8h.html#a78daa73384adbc5ba4d71fea959ce26b", null ],
+    [ "phi", "flight__gear_8h.html#a29fdf3000b0991749978a944004209b1", null ],
+    [ "psi", "flight__gear_8h.html#a95433b0b0677dbf67909402329c5713b", null ],
+    [ "theta", "flight__gear_8h.html#aba85afb28db9d6925dda0a545fde29b9", null ],
+    [ "tuned_freq", "flight__gear_8h.html#aec2968b955a4aafa3e8c437fff0e6acb", null ],
+    [ "vcas", "flight__gear_8h.html#abc00fb56db57c9e92d4739deadaa19d6", null ],
+    [ "version", "flight__gear_8h.html#a726c5cad3c29b38be1f4cc1a9f0bd3c7", null ],
+    [ "warp", "flight__gear_8h.html#a61b74b74087377d7eb17f5d13d99a685", null ]
+];

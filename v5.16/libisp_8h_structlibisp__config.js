@@ -1,0 +1,28 @@
+var libisp_8h_structlibisp__config =
+[
+    [ "bayer", "libisp_8h.html#aaefea1069afe9af0e58c9bc0271b59c0", null ],
+    [ "bayer_inter", "libisp_8h.html#ab6c506400f2d4782b9b86e2ba50b66e7", null ],
+    [ "chain_yuv_inter", "libisp_8h.html#a76d32b23dbb1954fd0f899915e540c89", null ],
+    [ "chroma", "libisp_8h.html#aae4b0912ee496962915aba2d6b90b2e8", null ],
+    [ "color_correction", "libisp_8h.html#a51ae7eff8a39d31622a9dbb4766dec59", null ],
+    [ "dead_pixel_correction", "libisp_8h.html#ac78fea27472d197b123ca3a5b88c4ab4", null ],
+    [ "denoising", "libisp_8h.html#ac9101121ff519dc1de32a58126b71f26", null ],
+    [ "eecrf", "libisp_8h.html#a65bc7a67f78b901d5527e9eb0b13b90f", null ],
+    [ "eecrf_lut", "libisp_8h.html#a19d4173cee455df026320f6355c78dcc", null ],
+    [ "gamma_corrector", "libisp_8h.html#aaafc30868139cfec3d89327714eafd5b", null ],
+    [ "gc_bv_lut", "libisp_8h.html#a61a015045883beae4fd081ff32654acf", null ],
+    [ "gc_gu_lut", "libisp_8h.html#a0c449a50a7c3628b637ce661472dd82a", null ],
+    [ "gc_ry_lut", "libisp_8h.html#a20a209b2b0998aaa33a94593388b97e4", null ],
+    [ "green_imbalance", "libisp_8h.html#ab5375c71f36ddb0b933a8490b399f64d", null ],
+    [ "grim_gb", "libisp_8h.html#aca12d83f56fae57a1d380c61ef385972", null ],
+    [ "grim_gr", "libisp_8h.html#a228b5300e977a0897d8db230a5147713", null ],
+    [ "lens_shading_correction", "libisp_8h.html#a19f2ca49d17a006f3b922af3313dd2a6", null ],
+    [ "lsc_blue_coeffs", "libisp_8h.html#a7a19175f858554c68b95736ca23e2067", null ],
+    [ "lsc_green_coeffs", "libisp_8h.html#ac8c79526726969b35e4564a5a357d5c6", null ],
+    [ "lsc_red_coeffs", "libisp_8h.html#a548f66a1bc6e178f583ca4b19b9d6ef6", null ],
+    [ "pedestal", "libisp_8h.html#ad3f506579ebe7fe0a9ef66afa5703fb3", null ],
+    [ "statistics_bayer", "libisp_8h.html#a79d507da60cf3ea96a2f26e3c11b69c7", null ],
+    [ "statistics_yuv", "libisp_8h.html#a7024fe9127619b84cf70640e776448fa", null ],
+    [ "vlformat_32to40", "libisp_8h.html#ae3267ae2e08561756de44dbee0be4d05", null ],
+    [ "vlformat_40to32", "libisp_8h.html#a554d8016691b74f685b03aa68bc644d2", null ]
+];

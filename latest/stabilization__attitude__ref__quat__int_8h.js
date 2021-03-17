@@ -14,7 +14,7 @@ var stabilization__attitude__ref__quat__int_8h =
       [ "rate", "stabilization__attitude__ref__quat__int_8h.html#a8a353ef8749316bf4378fc977eaec663", null ],
       [ "saturation", "stabilization__attitude__ref__quat__int_8h.html#a02273e0f3571facf59a24d27dcb7f606", null ]
     ] ],
-    [ "attitude_ref_quat_int_enter", "stabilization__attitude__ref__quat__int_8h.html#a43134b9502b1b59a68e214221e011fb8", null ],
+    [ "attitude_ref_quat_int_enter", "stabilization__attitude__ref__quat__int_8h.html#a56fb443fa60679e83c39b986a94810dc", null ],
     [ "attitude_ref_quat_int_init", "stabilization__attitude__ref__quat__int_8h.html#a7944325a332759a00c54a72a263d9a92", null ],
     [ "attitude_ref_quat_int_set_max_p", "stabilization__attitude__ref__quat__int_8h.html#af9101a0dcd8fd3223114ad1734939c29", null ],
     [ "attitude_ref_quat_int_set_max_pdot", "stabilization__attitude__ref__quat__int_8h.html#ac63087e767f20e8f8e12bbb43a5dcd63", null ],

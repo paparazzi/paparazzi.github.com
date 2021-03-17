@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -172,7 +172,7 @@ $(document).ready(function(){initNavTree('ak8975_8h_source.html','');});
 <div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="ak8975_8h.html">   69</a></span>&#160;  <span class="keyword">union </span>{</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">struct </span><a class="code" href="group__math__algebra__int.html#structInt16Vect3">Int16Vect3</a> vect;           </div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <a class="code" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> value[3];                 </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  } <a class="code" href="ak8975_8h.html#a5f5aa4570c78a9d8dee33fa420203cd8">data</a>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  } <a class="code" href="ak8975_8h.html#a75806e2950f14dcbb76d53396e30df79">data</a>;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;};</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
@@ -213,6 +213,7 @@ $(document).ready(function(){initNavTree('ak8975_8h_source.html','');});
 <div class="ttc" id="std_8h_html"><div class="ttname"><a href="std_8h.html">std.h</a></div></div>
 <div class="ttc" id="group__i2c_html_structi2c__transaction"><div class="ttname"><a href="group__i2c.html#structi2c__transaction">i2c_transaction</a></div><div class="ttdoc">I2C transaction structure. </div><div class="ttdef"><b>Definition:</b> <a href="i2c_8h_source.html#l00093">i2c.h:93</a></div></div>
 <div class="ttc" id="ak8975_8h_html_a28e52220eeec86e6f8cce258436abe61a80f5667c449032377050a560d47b5cdf"><div class="ttname"><a href="ak8975_8h.html#a28e52220eeec86e6f8cce258436abe61a80f5667c449032377050a560d47b5cdf">AK_CONF_REQUESTED</a></div><div class="ttdef"><b>Definition:</b> <a href="ak8975_8h_source.html#l00048">ak8975.h:48</a></div></div>
+<div class="ttc" id="ak8975_8h_html_a75806e2950f14dcbb76d53396e30df79"><div class="ttname"><a href="ak8975_8h.html#a75806e2950f14dcbb76d53396e30df79">Ak8975::data</a></div><div class="ttdeci">union Ak8975::@307 data</div></div>
 <div class="ttc" id="ak8975_8h_html_a9b1bc2058970c375dc5bbf4244369d67"><div class="ttname"><a href="ak8975_8h.html#a9b1bc2058970c375dc5bbf4244369d67">Ak8975::initialized</a></div><div class="ttdeci">bool initialized</div><div class="ttdoc">config done flag </div><div class="ttdef"><b>Definition:</b> <a href="ak8975_8h_source.html#l00062">ak8975.h:62</a></div></div>
 <div class="ttc" id="group__i2c_html_structi2c__periph"><div class="ttname"><a href="group__i2c.html#structi2c__periph">i2c_periph</a></div><div class="ttdef"><b>Definition:</b> <a href="i2c_8h_source.html#l00144">i2c.h:144</a></div></div>
 <div class="ttc" id="ak8975_8h_html_a3aa64b9184ae1467cb537db281e97bb9"><div class="ttname"><a href="ak8975_8h.html#a3aa64b9184ae1467cb537db281e97bb9">ak8975_init</a></div><div class="ttdeci">void ak8975_init(struct Ak8975 *ak, struct i2c_periph *i2c_p, uint8_t addr)</div><div class="ttdef"><b>Definition:</b> <a href="ak8975_8c_source.html#l00047">ak8975.c:47</a></div></div>
@@ -221,7 +222,6 @@ $(document).ready(function(){initNavTree('ak8975_8h_source.html','');});
 <div class="ttc" id="ak8975_8h_html_a29db3aa6f7536342c5faf3df6daf575e"><div class="ttname"><a href="ak8975_8h.html#a29db3aa6f7536342c5faf3df6daf575e">Ak8975::i2c_trans</a></div><div class="ttdeci">struct i2c_transaction i2c_trans</div><div class="ttdoc">i2c transaction used for communication with the ak8936 </div><div class="ttdef"><b>Definition:</b> <a href="ak8975_8h_source.html#l00061">ak8975.h:61</a></div></div>
 <div class="ttc" id="ak8975_8h_html_a25e38416f60c0c4259422d2a6fc48ebc"><div class="ttname"><a href="ak8975_8h.html#a25e38416f60c0c4259422d2a6fc48ebc">ak8975_read</a></div><div class="ttdeci">void ak8975_read(struct Ak8975 *ak)</div><div class="ttdef"><b>Definition:</b> <a href="ak8975_8c_source.html#l00113">ak8975.c:113</a></div></div>
 <div class="ttc" id="ak8975_8h_html_a9c3c2e79c50af6fedc845b48da28ab35"><div class="ttname"><a href="ak8975_8h.html#a9c3c2e79c50af6fedc845b48da28ab35">Ak8975::i2c_p</a></div><div class="ttdeci">struct i2c_periph * i2c_p</div><div class="ttdoc">peripheral used for communcation </div><div class="ttdef"><b>Definition:</b> <a href="ak8975_8h_source.html#l00060">ak8975.h:60</a></div></div>
-<div class="ttc" id="ak8975_8h_html_a5f5aa4570c78a9d8dee33fa420203cd8"><div class="ttname"><a href="ak8975_8h.html#a5f5aa4570c78a9d8dee33fa420203cd8">Ak8975::data</a></div><div class="ttdeci">union Ak8975::@306 data</div></div>
 <div class="ttc" id="ak8975_8h_html_a583c1693d6d13b50f2ee54f6b46ada49a3277c43b264f2b8dcd52c67b7212be5f"><div class="ttname"><a href="ak8975_8h.html#a583c1693d6d13b50f2ee54f6b46ada49a3277c43b264f2b8dcd52c67b7212be5f">AK_STATUS_MEAS</a></div><div class="ttdef"><b>Definition:</b> <a href="ak8975_8h_source.html#l00054">ak8975.h:54</a></div></div>
 <div class="ttc" id="pprz__algebra__int_8h_html"><div class="ttname"><a href="pprz__algebra__int_8h.html">pprz_algebra_int.h</a></div><div class="ttdoc">Paparazzi fixed point algebra. </div></div>
 <div class="ttc" id="i2c_8h_html"><div class="ttname"><a href="i2c_8h.html">i2c.h</a></div><div class="ttdoc">Architecture independent I2C (Inter-Integrated Circuit Bus) API. </div></div>
@@ -231,7 +231,7 @@ $(document).ready(function(){initNavTree('ak8975_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_0a48ba2c0a76794adfddddc873522f67.html">peripherals</a></li><li class="navelem"><a class="el" href="ak8975_8h.html">ak8975.h</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:02:30 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:02:42 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

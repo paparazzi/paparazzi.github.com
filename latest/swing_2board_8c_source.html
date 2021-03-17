@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -155,7 +155,7 @@ $(document).ready(function(){initNavTree('swing_2board_8c_source.html','');});
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      <span class="keywordflow">while</span> (fgets(path, <span class="keyword">sizeof</span>(path) - 1, fp) != NULL) {</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordtype">int</span> raw_bat = atoi(path);</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="comment">// from /bin/mcu_vbat.sh: MILLIVOLTS_VALUE=$(( ($RAW_VALUE * 4250) / 1023 ))</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <a class="code" href="electrical_8c.html#a935f74638cd658e7dac75915bcb63bde">electrical</a>.<a class="code" href="electrical_8h.html#ad5e535e39613e6ec89d498019ef62030">vsupply</a> = (float)((raw_bat * 4250) / 1023) / 1000.f;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <a class="code" href="electrical_8c.html#a935f74638cd658e7dac75915bcb63bde">electrical</a>.<a class="code" href="electrical_8h.html#ad5e535e39613e6ec89d498019ef62030">vsupply</a> = (float)((raw_bat * 4250) / 1023) / 1000.<a class="code" href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a>;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      }</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      <span class="comment">/* close */</span></div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      pclose(fp);</div>
@@ -233,6 +233,7 @@ $(document).ready(function(){initNavTree('swing_2board_8c_source.html','');});
 <div class="ttc" id="group__mcu__periph_html_gaf8669c6ba2d12460cf1172edd1a5e4a3"><div class="ttname"><a href="group__mcu__periph.html#gaf8669c6ba2d12460cf1172edd1a5e4a3">board_init2</a></div><div class="ttdeci">void board_init2(void)</div><div class="ttdoc">Optional board init function called at the end of mcu_init(). </div><div class="ttdef"><b>Definition:</b> <a href="bebop_2board_8c_source.html#l00092">board.c:92</a></div></div>
 <div class="ttc" id="electrical_8h_html"><div class="ttname"><a href="electrical_8h.html">electrical.h</a></div><div class="ttdoc">Interface for electrical status: supply voltage, current, battery status, etc. </div></div>
 <div class="ttc" id="swing_2board_8c_html_a3c9554b9bd623c5d98b6acbfb5ea0e5b"><div class="ttname"><a href="swing_2board_8c.html#a3c9554b9bd623c5d98b6acbfb5ea0e5b">button_read</a></div><div class="ttdeci">static void * button_read(void *data)</div><div class="ttdoc">Check button thread. </div><div class="ttdef"><b>Definition:</b> <a href="swing_2board_8c_source.html#l00074">board.c:74</a></div></div>
+<div class="ttc" id="wedgebug_8c_html_a05fd2dba3354a98f1a00b7c7ffc12b13"><div class="ttname"><a href="wedgebug_8c.html#a05fd2dba3354a98f1a00b7c7ffc12b13">f</a></div><div class="ttdeci">uint16_t f</div><div class="ttdoc">Camera baseline, in meters (i.e. horizontal distance between the two cameras of the stereo setup) ...</div><div class="ttdef"><b>Definition:</b> <a href="wedgebug_8c_source.html#l00204">wedgebug.c:204</a></div></div>
 <div class="ttc" id="group__mcu__periph_html_ga916f2adc2080b4fe88034086d107a8dc"><div class="ttname"><a href="group__mcu__periph.html#ga916f2adc2080b4fe88034086d107a8dc">board_init</a></div><div class="ttdeci">void board_init(void)</div><div class="ttdoc">Optional board init function called at the start of mcu_init(). </div><div class="ttdef"><b>Definition:</b> <a href="ardrone_2board_8c_source.html#l00130">board.c:130</a></div></div>
 <div class="ttc" id="mcu_8h_html"><div class="ttname"><a href="mcu_8h.html">mcu.h</a></div><div class="ttdoc">Arch independent mcu ( Micro Controller Unit ) utilities. </div></div>
 <div class="ttc" id="swing_8h_html"><div class="ttname"><a href="swing_8h.html">swing.h</a></div></div>
@@ -243,7 +244,7 @@ $(document).ready(function(){initNavTree('swing_2board_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_e030268cd18297cf6282390f76bfcf7f.html">boards</a></li><li class="navelem"><a class="el" href="dir_ac03d41c96f56bce96151277973f6cb5.html">swing</a></li><li class="navelem"><a class="el" href="swing_2board_8c.html">board.c</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:02:10 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:02:21 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

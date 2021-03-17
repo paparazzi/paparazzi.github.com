@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -118,6 +118,7 @@ $(document).ready(function(){initNavTree('ins__mekf__wind__wrapper_8c.html','');
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="ins__mekf__wind__wrapper_8h_source.html">modules/ins/ins_mekf_wind_wrapper.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ins__mekf__wind_8h_source.html">modules/ins/ins_mekf_wind.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="air__data_8h_source.html">modules/air_data/air_data.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ahrs__float__utils_8h_source.html">subsystems/ahrs/ahrs_float_utils.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ahrs__aligner_8h_source.html">subsystems/ahrs/ahrs_aligner.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ins_8h_source.html">subsystems/ins.h</a>&quot;</code><br />
@@ -135,7 +136,7 @@ $(document).ready(function(){initNavTree('ins__mekf__wind__wrapper_8c.html','');
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ins__mekf__wind__wrapper_8c__incl.png" border="0" usemap="#sw_2airborne_2modules_2ins_2ins__mekf__wind__wrapper_8c" alt=""/></div>
 <map name="sw_2airborne_2modules_2ins_2ins__mekf__wind__wrapper_8c" id="sw_2airborne_2modules_2ins_2ins__mekf__wind__wrapper_8c">
-<area shape="rect" id="node2" href="ins__mekf__wind__wrapper_8h.html" title="Paparazzi specific wrapper to run MEKF&#45;Wind INS filter. " alt="" coords="1010,169,1170,211"/><area shape="rect" id="node14" href="ins__mekf__wind_8h.html" title="Multiplicative Extended Kalman Filter in rotation matrix formulation. " alt="" coords="698,169,858,211"/><area shape="rect" id="node17" href="ahrs__float__utils_8h.html" title="Utility functions for floating point AHRS implementations. " alt="" coords="123,169,286,211"/><area shape="rect" id="node20" href="ahrs__aligner_8h.html" title="Interface to align the AHRS via low&#45;passed measurements at startup. " alt="" coords="1494,259,1657,300"/><area shape="rect" id="node21" href="ins_8h.html" title="Integrated Navigation System interface. " alt="" coords="1253,95,1386,121"/><area shape="rect" id="node23" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="1194,177,1261,203"/><area shape="rect" id="node24" href="abi_8h.html" title="Main include for ABI (AirBorneInterface). " alt="" coords="1461,95,1596,121"/><area shape="rect" id="node26" href="pprz__isa_8h.html" title="Paparazzi atmospheric pressure conversion utilities. " alt="" coords="23,437,149,464"/><area shape="rect" id="node28" href="telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code). " alt="" coords="2207,169,2360,211"/><area shape="rect" id="node41" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="1735,266,1906,293"/><area shape="rect" id="node4" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="1028,259,1192,300"/><area shape="rect" id="node5" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="1221,355,1399,382"/><area shape="rect" id="node12" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="208,355,399,382"/><area shape="rect" id="node6" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="405,437,559,464"/><area shape="rect" id="node10" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="1244,437,1395,464"/><area shape="rect" id="node15" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="801,259,952,300"/><area shape="rect" id="node16" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="929,355,1053,382"/><area shape="rect" id="node18" href="ahrs__magnetic__field__model_8h.html" title="subsystems/ahrs/ahrs\l_magnetic_field_model.h" alt="" coords="342,259,523,300"/><area shape="rect" id="node22" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="1319,259,1469,300"/><area shape="rect" id="node29" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="2838,437,2977,464"/><area shape="rect" id="node33" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="2207,259,2360,300"/><area shape="rect" id="node34" href="inttypes_8h.html" title="inttypes.h" alt="" coords="2046,355,2131,382"/><area shape="rect" id="node37" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="2207,348,2360,389"/><area shape="rect" id="node39" href="pprz__dl_8h.html" title="Datalink using PPRZ protocol. " alt="" coords="2744,355,2937,382"/></map>
+<area shape="rect" id="node2" href="ins__mekf__wind__wrapper_8h.html" title="Paparazzi specific wrapper to run MEKF&#45;Wind INS filter. " alt="" coords="1319,184,1479,225"/><area shape="rect" id="node14" href="ins__mekf__wind_8h.html" title="Multiplicative Extended Kalman Filter in rotation matrix formulation. " alt="" coords="427,184,587,225"/><area shape="rect" id="node17" href="air__data_8h.html" title="Air Data interface. " alt="" coords="843,95,997,136"/><area shape="rect" id="node18" href="ahrs__float__utils_8h.html" title="Utility functions for floating point AHRS implementations. " alt="" coords="611,184,773,225"/><area shape="rect" id="node21" href="ahrs__aligner_8h.html" title="Interface to align the AHRS via low&#45;passed measurements at startup. " alt="" coords="1525,273,1688,315"/><area shape="rect" id="node22" href="ins_8h.html" title="Integrated Navigation System interface. " alt="" coords="1021,102,1155,129"/><area shape="rect" id="node24" href="state_8h.html" title="API to get/set the generic vehicle states. " alt="" coords="1121,191,1188,218"/><area shape="rect" id="node25" href="abi_8h.html" title="Main include for ABI (AirBorneInterface). " alt="" coords="2070,102,2205,129"/><area shape="rect" id="node27" href="pprz__isa_8h.html" title="Paparazzi atmospheric pressure conversion utilities. " alt="" coords="5,452,131,479"/><area shape="rect" id="node29" href="telemetry_8h.html" title="Periodic telemetry system header (includes downlink utility and generated code). " alt="" coords="2365,184,2518,225"/><area shape="rect" id="node42" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="1968,281,2139,307"/><area shape="rect" id="node4" href="pprz__orientation__conversion_8h.html" title="Generic orientation representation and conversions. " alt="" coords="1286,273,1450,315"/><area shape="rect" id="node5" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="1221,370,1400,397"/><area shape="rect" id="node12" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="370,370,561,397"/><area shape="rect" id="node6" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="437,452,592,479"/><area shape="rect" id="node10" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="1249,452,1399,479"/><area shape="rect" id="node15" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="731,273,882,315"/><area shape="rect" id="node16" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="971,370,1095,397"/><area shape="rect" id="node19" href="ahrs__magnetic__field__model_8h.html" title="subsystems/ahrs/ahrs\l_magnetic_field_model.h" alt="" coords="1712,273,1893,315"/><area shape="rect" id="node23" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="1009,273,1159,315"/><area shape="rect" id="node30" href="uart_8h.html" title="arch independent UART (Universal Asynchronous Receiver/Transmitter) API " alt="" coords="3053,452,3192,479"/><area shape="rect" id="node34" href="downlink_8h.html" title="Common code for AP and FBW telemetry. " alt="" coords="2422,273,2575,315"/><area shape="rect" id="node35" href="inttypes_8h.html" title="inttypes.h" alt="" coords="2261,370,2347,397"/><area shape="rect" id="node38" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="2422,363,2575,404"/><area shape="rect" id="node40" href="pprz__dl_8h.html" title="Datalink using PPRZ protocol. " alt="" coords="2959,370,3153,397"/></map>
 </div>
 </div>
 <p><a href="ins__mekf__wind__wrapper_8c_source.html">Go to the source code of this file.</a></p>
@@ -261,9 +262,9 @@ Variables</h2></td></tr>
 
 <p>airspeed (Pitot tube) </p>
 
-<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00160">160</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00161">161</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00546">ins_mekf_wind_wrapper_init()</a>.</p>
+<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00547">ins_mekf_wind_wrapper_init()</a>.</p>
 
 </div>
 </div>
@@ -279,9 +280,9 @@ Variables</h2></td></tr>
 
 <p>baro </p>
 
-<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00175">175</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00176">176</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00546">ins_mekf_wind_wrapper_init()</a>.</p>
+<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00547">ins_mekf_wind_wrapper_init()</a>.</p>
 
 </div>
 </div>
@@ -295,9 +296,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00047">47</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00048">48</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00078">send_euler()</a>, and <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00102">send_filter_status()</a>.</p>
+<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00079">send_euler()</a>, and <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00103">send_filter_status()</a>.</p>
 
 </div>
 </div>
@@ -314,9 +315,9 @@ Variables</h2></td></tr>
 <p>ABI binding for gps data. </p>
 <p>Used for GPS ABI messages. </p>
 
-<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00196">196</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00197">197</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00546">ins_mekf_wind_wrapper_init()</a>.</p>
+<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00547">ins_mekf_wind_wrapper_init()</a>.</p>
 
 </div>
 </div>
@@ -332,9 +333,9 @@ Variables</h2></td></tr>
 
 <p>IMU (gyro, accel) </p>
 
-<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00182">182</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00183">183</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00546">ins_mekf_wind_wrapper_init()</a>.</p>
+<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00547">ins_mekf_wind_wrapper_init()</a>.</p>
 
 </div>
 </div>
@@ -350,9 +351,9 @@ Variables</h2></td></tr>
 
 <p>incidence angles </p>
 
-<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00166">166</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00167">167</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00546">ins_mekf_wind_wrapper_init()</a>.</p>
+<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00547">ins_mekf_wind_wrapper_init()</a>.</p>
 
 </div>
 </div>
@@ -368,9 +369,9 @@ Variables</h2></td></tr>
 
 <p>magnetometer </p>
 
-<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00188">188</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00189">189</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00546">ins_mekf_wind_wrapper_init()</a>.</p>
+<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00547">ins_mekf_wind_wrapper_init()</a>.</p>
 
 </div>
 </div>
@@ -384,7 +385,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00041">41</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00042">42</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
 
 </div>
 </div>
@@ -427,11 +428,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00381">381</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00382">382</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
 
-<p>References <a class="el" href="pprz__algebra_8h_source.html#l00795">ACCELS_FLOAT_OF_BFP</a>, <a class="el" href="ins__mekf__wind__wrapper_8h_source.html#l00036">InsMekfWind::body_to_imu</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00120">float_rmat_transp_vmult()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00050">ins_mekf_wind</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00053">ins_mekf_wind_accel</a>, and <a class="el" href="pprz__orientation__conversion_8h_source.html#l00234">orientationGetRMat_f()</a>.</p>
+<p>References <a class="el" href="pprz__algebra_8h_source.html#l00795">ACCELS_FLOAT_OF_BFP</a>, <a class="el" href="ins__mekf__wind__wrapper_8h_source.html#l00036">InsMekfWind::body_to_imu</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00120">float_rmat_transp_vmult()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00051">ins_mekf_wind</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00054">ins_mekf_wind_accel</a>, and <a class="el" href="pprz__orientation__conversion_8h_source.html#l00234">orientationGetRMat_f()</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00546">ins_mekf_wind_wrapper_init()</a>.</p>
+<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00547">ins_mekf_wind_wrapper_init()</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -489,11 +490,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00269">269</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00270">270</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
 
-<p>References <a class="el" href="sys__time_8h_source.html#l00129">get_sys_time_float()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00050">ins_mekf_wind</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00614">ins_mekf_wind_update_airspeed()</a>, <a class="el" href="ins__mekf__wind__wrapper_8h_source.html#l00037">InsMekfWind::is_aligned</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00086">pprzLogFile</a>, and <a class="el" href="air__data_8c_source.html#l00338">tas_from_eas()</a>.</p>
+<p>References <a class="el" href="sys__time_8h_source.html#l00129">get_sys_time_float()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00051">ins_mekf_wind</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00614">ins_mekf_wind_update_airspeed()</a>, <a class="el" href="ins__mekf__wind__wrapper_8h_source.html#l00037">InsMekfWind::is_aligned</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00086">pprzLogFile</a>, and <a class="el" href="air__data_8c_source.html#l00338">tas_from_eas()</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00546">ins_mekf_wind_wrapper_init()</a>.</p>
+<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00547">ins_mekf_wind_wrapper_init()</a>.</p>
 
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -569,11 +570,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00416">416</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00417">417</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
 
-<p>References <a class="el" href="pprz__algebra_8h_source.html#l00795">ACCELS_FLOAT_OF_BFP</a>, <a class="el" href="ahrs__float__utils_8h_source.html#l00083">ahrs_float_get_quat_from_accel_mag()</a>, <a class="el" href="ins__mekf__wind__wrapper_8h_source.html#l00036">InsMekfWind::body_to_imu</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00160">float_rmat_transp_ratemult()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00120">float_rmat_transp_vmult()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00050">ins_mekf_wind</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00487">ins_mekf_wind_align()</a>, <a class="el" href="ins__mekf__wind__wrapper_8h_source.html#l00037">InsMekfWind::is_aligned</a>, <a class="el" href="pprz__algebra_8h_source.html#l00807">MAGS_FLOAT_OF_BFP</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00234">orientationGetRMat_f()</a>, <a class="el" href="pprz__algebra_8h_source.html#l00759">RATES_FLOAT_OF_BFP</a>, and <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00525">set_state_from_ins()</a>.</p>
+<p>References <a class="el" href="pprz__algebra_8h_source.html#l00795">ACCELS_FLOAT_OF_BFP</a>, <a class="el" href="ahrs__float__utils_8h_source.html#l00085">ahrs_float_get_quat_from_accel_mag()</a>, <a class="el" href="ins__mekf__wind__wrapper_8h_source.html#l00036">InsMekfWind::body_to_imu</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00160">float_rmat_transp_ratemult()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00120">float_rmat_transp_vmult()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00051">ins_mekf_wind</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00487">ins_mekf_wind_align()</a>, <a class="el" href="ins__mekf__wind__wrapper_8h_source.html#l00037">InsMekfWind::is_aligned</a>, <a class="el" href="pprz__algebra_8h_source.html#l00807">MAGS_FLOAT_OF_BFP</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00234">orientationGetRMat_f()</a>, <a class="el" href="pprz__algebra_8h_source.html#l00759">RATES_FLOAT_OF_BFP</a>, and <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00526">set_state_from_ins()</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00546">ins_mekf_wind_wrapper_init()</a>.</p>
+<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00547">ins_mekf_wind_wrapper_init()</a>.</p>
 
 <p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -637,11 +638,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00213">213</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00214">214</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
 
-<p>References <a class="el" href="textons_8c_source.html#l00107">alpha</a>, <a class="el" href="ins__mekf__wind__wrapper_8h_source.html#l00038">InsMekfWind::baro_initialized</a>, <a class="el" href="sys__time_8h_source.html#l00129">get_sys_time_float()</a>, <a class="el" href="ins__mekf__wind__wrapper_8h_source.html#l00039">InsMekfWind::gps_initialized</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00050">ins_mekf_wind</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00541">ins_mekf_wind_update_baro()</a>, <a class="el" href="ins__mekf__wind__wrapper_8h_source.html#l00037">InsMekfWind::is_aligned</a>, <a class="el" href="pprz__isa_8h_source.html#l00102">pprz_isa_height_of_pressure()</a>, <a class="el" href="pprz__isa_8h_source.html#l00050">PPRZ_ISA_SEA_LEVEL_PRESSURE</a>, and <a class="el" href="sdlog__chibios_8c_source.html#l00086">pprzLogFile</a>.</p>
+<p>References <a class="el" href="textons_8c_source.html#l00107">alpha</a>, <a class="el" href="baro__bmp280__i2c_8c_source.html#l00046">baro_alt</a>, <a class="el" href="ins__mekf__wind__wrapper_8h_source.html#l00038">InsMekfWind::baro_initialized</a>, <a class="el" href="sys__time_8h_source.html#l00129">get_sys_time_float()</a>, <a class="el" href="ins__mekf__wind__wrapper_8h_source.html#l00039">InsMekfWind::gps_initialized</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00051">ins_mekf_wind</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00541">ins_mekf_wind_update_baro()</a>, <a class="el" href="ins__mekf__wind__wrapper_8h_source.html#l00037">InsMekfWind::is_aligned</a>, <a class="el" href="pprz__isa_8h_source.html#l00102">pprz_isa_height_of_pressure()</a>, <a class="el" href="pprz__isa_8h_source.html#l00050">PPRZ_ISA_SEA_LEVEL_PRESSURE</a>, and <a class="el" href="sdlog__chibios_8c_source.html#l00086">pprzLogFile</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00546">ins_mekf_wind_wrapper_init()</a>.</p>
+<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00547">ins_mekf_wind_wrapper_init()</a>.</p>
 
 <p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -699,11 +700,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00447">447</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00448">448</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
 
-<p>References <a class="el" href="ins__mekf__wind__wrapper_8h_source.html#l00036">InsMekfWind::body_to_imu</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00050">ins_mekf_wind</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00776">ins_mekf_wind_set_quat()</a>, <a class="el" href="ins__mekf__wind__wrapper_8h_source.html#l00037">InsMekfWind::is_aligned</a>, and <a class="el" href="pprz__orientation__conversion_8h_source.html#l00173">orientationSetQuat_f()</a>.</p>
+<p>References <a class="el" href="ins__mekf__wind__wrapper_8h_source.html#l00036">InsMekfWind::body_to_imu</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00051">ins_mekf_wind</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00776">ins_mekf_wind_set_quat()</a>, <a class="el" href="ins__mekf__wind__wrapper_8h_source.html#l00037">InsMekfWind::is_aligned</a>, and <a class="el" href="pprz__orientation__conversion_8h_source.html#l00173">orientationSetQuat_f()</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00546">ins_mekf_wind_wrapper_init()</a>.</p>
+<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00547">ins_mekf_wind_wrapper_init()</a>.</p>
 
 <p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -761,11 +762,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00457">457</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00458">458</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
 
 <p>References <a class="el" href="ins__mekf__wind_8cpp_source.html#l00335">ins_mekf_wind_set_mag_h()</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00546">ins_mekf_wind_wrapper_init()</a>.</p>
+<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00547">ins_mekf_wind_wrapper_init()</a>.</p>
 
 <p><div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -829,11 +830,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00462">462</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00463">463</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
 
-<p>References <a class="el" href="pprz__geodetic__float_8h_source.html#l00084">UtmCoor_f::alt</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00083">UtmCoor_f::east</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00160">ECEF_FLOAT_OF_BFP</a>, <a class="el" href="gps_8h_source.html#l00091">GpsState::ecef_pos</a>, <a class="el" href="gps_8h_source.html#l00095">GpsState::ecef_vel</a>, <a class="el" href="gps_8h_source.html#l00107">GpsState::fix</a>, <a class="el" href="sys__time_8h_source.html#l00129">get_sys_time_float()</a>, <a class="el" href="gps_8h_source.html#l00039">GPS_FIX_3D</a>, <a class="el" href="ins__mekf__wind__wrapper_8h_source.html#l00039">InsMekfWind::gps_initialized</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00050">ins_mekf_wind</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00731">ins_mekf_wind_set_pos_ned()</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00748">ins_mekf_wind_set_speed_ned()</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00575">ins_mekf_wind_update_pos_speed()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00071">INT32_POS_OF_CM_DEN</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00070">INT32_POS_OF_CM_NUM</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00290">INT32_VECT3_SCALE_2</a>, <a class="el" href="ins__mekf__wind__wrapper_8h_source.html#l00037">InsMekfWind::is_aligned</a>, <a class="el" href="common__nav_8c_source.html#l00044">nav_utm_zone0</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00196">NED_FLOAT_OF_BFP</a>, <a class="el" href="state_8h_source.html#l00223">State::ned_initialized_f</a>, <a class="el" href="pprz__geodetic__int_8c_source.html#l00116">ned_of_ecef_point_i()</a>, <a class="el" href="pprz__geodetic__float_8c_source.html#l00105">ned_of_ecef_vect_f()</a>, <a class="el" href="state_8h_source.html#l00220">State::ned_origin_f</a>, <a class="el" href="state_8h_source.html#l00166">State::ned_origin_i</a>, <a class="el" href="gps_8h_source.html#l00096">GpsState::ned_vel</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00082">UtmCoor_f::north</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00086">pprzLogFile</a>, <a class="el" href="state_8c_source.html#l00036">state</a>, <a class="el" href="gps_8c_source.html#l00390">utm_float_from_gps()</a>, <a class="el" href="state_8h_source.html#l00236">State::utm_initialized_f</a>, <a class="el" href="state_8h_source.html#l00233">State::utm_origin_f</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00069">NedCoor_i::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00070">NedCoor_i::y</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00071">NedCoor_i::z</a>.</p>
+<p>References <a class="el" href="pprz__geodetic__float_8h_source.html#l00084">UtmCoor_f::alt</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00083">UtmCoor_f::east</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00160">ECEF_FLOAT_OF_BFP</a>, <a class="el" href="gps_8h_source.html#l00091">GpsState::ecef_pos</a>, <a class="el" href="gps_8h_source.html#l00095">GpsState::ecef_vel</a>, <a class="el" href="gps_8h_source.html#l00107">GpsState::fix</a>, <a class="el" href="sys__time_8h_source.html#l00129">get_sys_time_float()</a>, <a class="el" href="gps_8h_source.html#l00039">GPS_FIX_3D</a>, <a class="el" href="ins__mekf__wind__wrapper_8h_source.html#l00039">InsMekfWind::gps_initialized</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00051">ins_mekf_wind</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00731">ins_mekf_wind_set_pos_ned()</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00748">ins_mekf_wind_set_speed_ned()</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00575">ins_mekf_wind_update_pos_speed()</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00071">INT32_POS_OF_CM_DEN</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00070">INT32_POS_OF_CM_NUM</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00290">INT32_VECT3_SCALE_2</a>, <a class="el" href="ins__mekf__wind__wrapper_8h_source.html#l00037">InsMekfWind::is_aligned</a>, <a class="el" href="common__nav_8c_source.html#l00044">nav_utm_zone0</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00196">NED_FLOAT_OF_BFP</a>, <a class="el" href="state_8h_source.html#l00223">State::ned_initialized_f</a>, <a class="el" href="pprz__geodetic__int_8c_source.html#l00116">ned_of_ecef_point_i()</a>, <a class="el" href="pprz__geodetic__float_8c_source.html#l00105">ned_of_ecef_vect_f()</a>, <a class="el" href="state_8h_source.html#l00220">State::ned_origin_f</a>, <a class="el" href="state_8h_source.html#l00166">State::ned_origin_i</a>, <a class="el" href="gps_8h_source.html#l00096">GpsState::ned_vel</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00082">UtmCoor_f::north</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00086">pprzLogFile</a>, <a class="el" href="state_8c_source.html#l00036">state</a>, <a class="el" href="gps_8c_source.html#l00390">utm_float_from_gps()</a>, <a class="el" href="state_8h_source.html#l00236">State::utm_initialized_f</a>, <a class="el" href="state_8h_source.html#l00233">State::utm_origin_f</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00069">NedCoor_i::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00070">NedCoor_i::y</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>, and <a class="el" href="pprz__geodetic__int_8h_source.html#l00071">NedCoor_i::z</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00546">ins_mekf_wind_wrapper_init()</a>.</p>
+<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00547">ins_mekf_wind_wrapper_init()</a>.</p>
 
 <p><div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -900,11 +901,11 @@ Variables</h2></td></tr>
 <p>Call ins_mekf_wind_propagate on new gyro measurements. </p>
 <p>Since acceleration measurement is also needed for propagation, use the last stored accel from #ins_mekfw_accel. </p>
 
-<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00300">300</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00301">301</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
 
-<p>References <a class="el" href="ins__mekf__wind__wrapper_8h_source.html#l00036">InsMekfWind::body_to_imu</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00646">float_eulers_of_quat()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00160">float_rmat_transp_ratemult()</a>, <a class="el" href="sys__time_8h_source.html#l00129">get_sys_time_float()</a>, <a class="el" href="ins__mekf__wind__wrapper_8h_source.html#l00039">InsMekfWind::gps_initialized</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00050">ins_mekf_wind</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00053">ins_mekf_wind_accel</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00821">ins_mekf_wind_get_accel_bias()</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00755">ins_mekf_wind_get_accel_ned()</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00816">ins_mekf_wind_get_airspeed_norm()</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00841">ins_mekf_wind_get_baro_bias()</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00784">ins_mekf_wind_get_body_rates()</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00721">ins_mekf_wind_get_pos_ned()</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00765">ins_mekf_wind_get_quat()</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00831">ins_mekf_wind_get_rates_bias()</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00738">ins_mekf_wind_get_speed_ned()</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00794">ins_mekf_wind_get_wind_ned()</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00350">ins_mekf_wind_propagate()</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00422">ins_mekf_wind_propagate_ahrs()</a>, <a class="el" href="ins__mekf__wind__wrapper_8h_source.html#l00037">InsMekfWind::is_aligned</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00054">last_imu_stamp</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00234">orientationGetRMat_f()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00094">FloatRates::p</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00085">FloatEulers::phi</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00086">pprzLogFile</a>, <a class="el" href="ins__vectornav_8c.html#aa01d3425df2eb0f33ced38c9d8fa8f05">PRINT_CONFIG_MSG()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00087">FloatEulers::psi</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00095">FloatRates::q</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00096">FloatRates::r</a>, <a class="el" href="pprz__algebra_8h_source.html#l00759">RATES_FLOAT_OF_BFP</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00525">set_state_from_ins()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00086">FloatEulers::theta</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00064">NedCoor_f::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00065">NedCoor_f::y</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00066">NedCoor_f::z</a>.</p>
+<p>References <a class="el" href="ins__mekf__wind__wrapper_8h_source.html#l00036">InsMekfWind::body_to_imu</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00650">float_eulers_of_quat()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00160">float_rmat_transp_ratemult()</a>, <a class="el" href="sys__time_8h_source.html#l00129">get_sys_time_float()</a>, <a class="el" href="ins__mekf__wind__wrapper_8h_source.html#l00039">InsMekfWind::gps_initialized</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00051">ins_mekf_wind</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00054">ins_mekf_wind_accel</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00821">ins_mekf_wind_get_accel_bias()</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00755">ins_mekf_wind_get_accel_ned()</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00816">ins_mekf_wind_get_airspeed_norm()</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00841">ins_mekf_wind_get_baro_bias()</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00784">ins_mekf_wind_get_body_rates()</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00721">ins_mekf_wind_get_pos_ned()</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00765">ins_mekf_wind_get_quat()</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00831">ins_mekf_wind_get_rates_bias()</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00738">ins_mekf_wind_get_speed_ned()</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00794">ins_mekf_wind_get_wind_ned()</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00350">ins_mekf_wind_propagate()</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00422">ins_mekf_wind_propagate_ahrs()</a>, <a class="el" href="ins__mekf__wind__wrapper_8h_source.html#l00037">InsMekfWind::is_aligned</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00055">last_imu_stamp</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00234">orientationGetRMat_f()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00094">FloatRates::p</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00085">FloatEulers::phi</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00086">pprzLogFile</a>, <a class="el" href="ins__vectornav_8c.html#aa01d3425df2eb0f33ced38c9d8fa8f05">PRINT_CONFIG_MSG()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00087">FloatEulers::psi</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00095">FloatRates::q</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00096">FloatRates::r</a>, <a class="el" href="pprz__algebra_8h_source.html#l00759">RATES_FLOAT_OF_BFP</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00526">set_state_from_ins()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00086">FloatEulers::theta</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00064">NedCoor_f::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00065">NedCoor_f::y</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00066">NedCoor_f::z</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00546">ins_mekf_wind_wrapper_init()</a>.</p>
+<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00547">ins_mekf_wind_wrapper_init()</a>.</p>
 
 <p><div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -974,11 +975,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00282">282</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00283">283</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
 
-<p>References <a class="el" href="sys__time_8h_source.html#l00129">get_sys_time_float()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00050">ins_mekf_wind</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00652">ins_mekf_wind_update_incidence()</a>, <a class="el" href="ins__mekf__wind__wrapper_8h_source.html#l00037">InsMekfWind::is_aligned</a>, and <a class="el" href="sdlog__chibios_8c_source.html#l00086">pprzLogFile</a>.</p>
+<p>References <a class="el" href="sys__time_8h_source.html#l00129">get_sys_time_float()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00051">ins_mekf_wind</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00652">ins_mekf_wind_update_incidence()</a>, <a class="el" href="ins__mekf__wind__wrapper_8h_source.html#l00037">InsMekfWind::is_aligned</a>, and <a class="el" href="sdlog__chibios_8c_source.html#l00086">pprzLogFile</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00546">ins_mekf_wind_wrapper_init()</a>.</p>
+<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00547">ins_mekf_wind_wrapper_init()</a>.</p>
 
 <p><div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -1020,9 +1021,9 @@ Variables</h2></td></tr>
 
 <p>Init function. </p>
 
-<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00546">546</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00547">547</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
 
-<p>References <a class="el" href="abi__common_8h_source.html#l00056">ABI_BROADCAST</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00381">accel_cb()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00206">accel_ev</a>, <a class="el" href="ahrs__aligner_8c_source.html#l00081">ahrs_aligner_init()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00269">airspeed_cb()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00201">airspeed_ev</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00416">aligner_cb()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00207">aligner_ev</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00084">UtmCoor_f::alt</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00213">baro_cb()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00203">baro_ev</a>, <a class="el" href="ins__mekf__wind__wrapper_8h_source.html#l00038">InsMekfWind::baro_initialized</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00447">body_to_imu_cb()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00208">body_to_imu_ev</a>, <a class="el" href="avoid__navigation_8c_source.html#l00055">counter</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00083">UtmCoor_f::east</a>, <a class="el" href="pprz__geodetic__int_8c_source.html#l00392">ecef_of_lla_i()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00457">geo_mag_cb()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00209">geo_mag_ev</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00462">gps_cb()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00210">gps_ev</a>, <a class="el" href="ins__mekf__wind__wrapper_8h_source.html#l00039">InsMekfWind::gps_initialized</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00300">gyro_cb()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00205">gyro_ev</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00102">LtpDef_i::hmsl</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00282">incidence_cb()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00202">incidence_ev</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00050">ins_mekf_wind</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00160">INS_MEKF_WIND_AIRSPEED_ID</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00175">INS_MEKF_WIND_BARO_ID</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00196">INS_MEKF_WIND_GPS_ID</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00182">INS_MEKF_WIND_IMU_ID</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00166">INS_MEKF_WIND_INCIDENCE_ID</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00308">ins_mekf_wind_init()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00188">INS_MEKF_WIND_MAG_ID</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00335">ins_mekf_wind_set_mag_h()</a>, <a class="el" href="ins__mekf__wind__wrapper_8h_source.html#l00037">InsMekfWind::is_aligned</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00060">LlaCoor_i::lat</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00061">LlaCoor_i::lon</a>, <a class="el" href="pprz__geodetic__int_8c_source.html#l00060">ltp_def_from_ecef_i()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00392">mag_cb()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00204">mag_ev</a>, <a class="el" href="common__nav_8c_source.html#l00042">nav_utm_east0</a>, <a class="el" href="common__nav_8c_source.html#l00043">nav_utm_north0</a>, <a class="el" href="common__nav_8c_source.html#l00044">nav_utm_zone0</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00082">UtmCoor_f::north</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00086">pprzLogFile</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00255">pressure_diff_cb()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00200">pressure_diff_ev</a>, <a class="el" href="telemetry_8c_source.html#l00046">register_periodic_telemetry()</a>, <a class="el" href="ins__mekf__wind__wrapper_8h_source.html#l00040">InsMekfWind::reset</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00078">send_euler()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00102">send_filter_status()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00120">send_inv_filter()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00091">send_wind()</a>, <a class="el" href="state_8h_source.html#l00457">stateSetLocalOrigin_i()</a>, <a class="el" href="state_8h_source.html#l00477">stateSetLocalUtmOrigin_f()</a>, <a class="el" href="state_8h_source.html#l00582">stateSetPositionUtm_f()</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00085">UtmCoor_f::zone</a>.</p>
+<p>References <a class="el" href="abi__common_8h_source.html#l00056">ABI_BROADCAST</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00382">accel_cb()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00207">accel_ev</a>, <a class="el" href="ahrs__aligner_8c_source.html#l00081">ahrs_aligner_init()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00270">airspeed_cb()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00202">airspeed_ev</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00417">aligner_cb()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00208">aligner_ev</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00062">LlaCoor_i::alt</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00084">UtmCoor_f::alt</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00214">baro_cb()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00204">baro_ev</a>, <a class="el" href="ins__mekf__wind__wrapper_8h_source.html#l00038">InsMekfWind::baro_initialized</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00448">body_to_imu_cb()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00209">body_to_imu_ev</a>, <a class="el" href="avoid__navigation_8c_source.html#l00055">counter</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00083">UtmCoor_f::east</a>, <a class="el" href="pprz__geodetic__int_8c_source.html#l00392">ecef_of_lla_i()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00458">geo_mag_cb()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00210">geo_mag_ev</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00463">gps_cb()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00211">gps_ev</a>, <a class="el" href="ins__mekf__wind__wrapper_8h_source.html#l00039">InsMekfWind::gps_initialized</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00301">gyro_cb()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00206">gyro_ev</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00102">LtpDef_i::hmsl</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00283">incidence_cb()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00203">incidence_ev</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00051">ins_mekf_wind</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00161">INS_MEKF_WIND_AIRSPEED_ID</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00176">INS_MEKF_WIND_BARO_ID</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00197">INS_MEKF_WIND_GPS_ID</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00183">INS_MEKF_WIND_IMU_ID</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00167">INS_MEKF_WIND_INCIDENCE_ID</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00308">ins_mekf_wind_init()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00189">INS_MEKF_WIND_MAG_ID</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00335">ins_mekf_wind_set_mag_h()</a>, <a class="el" href="ins__mekf__wind__wrapper_8h_source.html#l00037">InsMekfWind::is_aligned</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00060">LlaCoor_i::lat</a>, <a class="el" href="pprz__geodetic__int_8h_source.html#l00061">LlaCoor_i::lon</a>, <a class="el" href="pprz__geodetic__int_8c_source.html#l00060">ltp_def_from_ecef_i()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00393">mag_cb()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00205">mag_ev</a>, <a class="el" href="common__nav_8c_source.html#l00042">nav_utm_east0</a>, <a class="el" href="common__nav_8c_source.html#l00043">nav_utm_north0</a>, <a class="el" href="common__nav_8c_source.html#l00044">nav_utm_zone0</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00082">UtmCoor_f::north</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00086">pprzLogFile</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00256">pressure_diff_cb()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00201">pressure_diff_ev</a>, <a class="el" href="telemetry_8c_source.html#l00046">register_periodic_telemetry()</a>, <a class="el" href="ins__mekf__wind__wrapper_8h_source.html#l00040">InsMekfWind::reset</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00079">send_euler()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00103">send_filter_status()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00121">send_inv_filter()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00092">send_wind()</a>, <a class="el" href="state_8h_source.html#l00457">stateSetLocalOrigin_i()</a>, <a class="el" href="state_8h_source.html#l00477">stateSetLocalUtmOrigin_f()</a>, <a class="el" href="state_8h_source.html#l00582">stateSetPositionUtm_f()</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00085">UtmCoor_f::zone</a>.</p>
 
 <p><div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -1054,9 +1055,9 @@ Variables</h2></td></tr>
 <p>INS altitude reference reset. </p>
 <p>Reset only vertical reference to the current altitude. Does nothing if not implemented by specific INS algorithm. </p>
 
-<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00648">648</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00649">649</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
 
-<p>Referenced by <a class="el" href="rotorcraft_2navigation_8c_source.html#l00355">nav_reset_alt()</a>.</p>
+<p>Referenced by <a class="el" href="rotorcraft_2navigation_8c_source.html#l00360">nav_reset_alt()</a>.</p>
 
 <p><div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -1088,9 +1089,9 @@ Variables</h2></td></tr>
 <p>local implemetation of the ins_reset functions </p>
 <p>INS local origin reset. </p>
 
-<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00632">632</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00633">633</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
 
-<p>Referenced by <a class="el" href="rotorcraft_2navigation_8c_source.html#l00348">nav_reset_reference()</a>.</p>
+<p>Referenced by <a class="el" href="rotorcraft_2navigation_8c_source.html#l00353">nav_reset_reference()</a>.</p>
 
 <p><div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -1143,11 +1144,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00392">392</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00393">393</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
 
-<p>References <a class="el" href="ins__mekf__wind__wrapper_8h_source.html#l00036">InsMekfWind::body_to_imu</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00120">float_rmat_transp_vmult()</a>, <a class="el" href="sys__time_8h_source.html#l00129">get_sys_time_float()</a>, <a class="el" href="ins__mekf__wind__wrapper_8h_source.html#l00039">InsMekfWind::gps_initialized</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00050">ins_mekf_wind</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00501">ins_mekf_wind_update_mag()</a>, <a class="el" href="ins__mekf__wind__wrapper_8h_source.html#l00037">InsMekfWind::is_aligned</a>, <a class="el" href="pprz__algebra_8h_source.html#l00807">MAGS_FLOAT_OF_BFP</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00234">orientationGetRMat_f()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00086">pprzLogFile</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>.</p>
+<p>References <a class="el" href="ins__mekf__wind__wrapper_8h_source.html#l00036">InsMekfWind::body_to_imu</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00120">float_rmat_transp_vmult()</a>, <a class="el" href="sys__time_8h_source.html#l00129">get_sys_time_float()</a>, <a class="el" href="ins__mekf__wind__wrapper_8h_source.html#l00039">InsMekfWind::gps_initialized</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00051">ins_mekf_wind</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00501">ins_mekf_wind_update_mag()</a>, <a class="el" href="ins__mekf__wind__wrapper_8h_source.html#l00037">InsMekfWind::is_aligned</a>, <a class="el" href="pprz__algebra_8h_source.html#l00807">MAGS_FLOAT_OF_BFP</a>, <a class="el" href="pprz__orientation__conversion_8h_source.html#l00234">orientationGetRMat_f()</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00086">pprzLogFile</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00546">ins_mekf_wind_wrapper_init()</a>.</p>
+<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00547">ins_mekf_wind_wrapper_init()</a>.</p>
 
 <p><div id="dynsection-22" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-22-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -1205,11 +1206,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00255">255</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00256">256</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
 
-<p>References <a class="el" href="sys__time_8h_source.html#l00129">get_sys_time_float()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00050">ins_mekf_wind</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00614">ins_mekf_wind_update_airspeed()</a>, <a class="el" href="ins__mekf__wind__wrapper_8h_source.html#l00037">InsMekfWind::is_aligned</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00086">pprzLogFile</a>, and <a class="el" href="air__data_8c_source.html#l00365">tas_from_dynamic_pressure()</a>.</p>
+<p>References <a class="el" href="sys__time_8h_source.html#l00129">get_sys_time_float()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00051">ins_mekf_wind</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00614">ins_mekf_wind_update_airspeed()</a>, <a class="el" href="ins__mekf__wind__wrapper_8h_source.html#l00037">InsMekfWind::is_aligned</a>, <a class="el" href="sdlog__chibios_8c_source.html#l00086">pprzLogFile</a>, and <a class="el" href="air__data_8c_source.html#l00365">tas_from_dynamic_pressure()</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00546">ins_mekf_wind_wrapper_init()</a>.</p>
+<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00547">ins_mekf_wind_wrapper_init()</a>.</p>
 
 <p><div id="dynsection-24" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-24-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -1270,11 +1271,11 @@ Variables</h2></td></tr>
 <p>logging functions </p>
 <p>telemetry functions </p>
 
-<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00078">78</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00079">79</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
 
-<p>References <a class="el" href="pprz__algebra__float_8c_source.html#l00646">float_eulers_of_quat()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00047">INS_MEKF_WIND_FILTER_ID</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00765">ins_mekf_wind_get_quat()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00085">FloatEulers::phi</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00087">FloatEulers::psi</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00086">FloatEulers::theta</a>.</p>
+<p>References <a class="el" href="pprz__algebra__float_8c_source.html#l00650">float_eulers_of_quat()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00048">INS_MEKF_WIND_FILTER_ID</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00765">ins_mekf_wind_get_quat()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00085">FloatEulers::phi</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00087">FloatEulers::psi</a>, and <a class="el" href="pprz__algebra__float_8h_source.html#l00086">FloatEulers::theta</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00546">ins_mekf_wind_wrapper_init()</a>.</p>
+<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00547">ins_mekf_wind_wrapper_init()</a>.</p>
 
 <p><div id="dynsection-26" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-26-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -1332,11 +1333,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00102">102</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00103">103</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
 
-<p>References <a class="el" href="ins__mekf__wind__wrapper_8h_source.html#l00038">InsMekfWind::baro_initialized</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00068">get_sys_time_usec()</a>, <a class="el" href="ins__mekf__wind__wrapper_8h_source.html#l00039">InsMekfWind::gps_initialized</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00050">ins_mekf_wind</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00047">INS_MEKF_WIND_FILTER_ID</a>, <a class="el" href="ins__mekf__wind__wrapper_8h_source.html#l00037">InsMekfWind::is_aligned</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00054">last_imu_stamp</a>, and <a class="el" href="temp__tcouple__adc_8c_source.html#l00049">val</a>.</p>
+<p>References <a class="el" href="ins__mekf__wind__wrapper_8h_source.html#l00038">InsMekfWind::baro_initialized</a>, <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00068">get_sys_time_usec()</a>, <a class="el" href="ins__mekf__wind__wrapper_8h_source.html#l00039">InsMekfWind::gps_initialized</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00051">ins_mekf_wind</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00048">INS_MEKF_WIND_FILTER_ID</a>, <a class="el" href="ins__mekf__wind__wrapper_8h_source.html#l00037">InsMekfWind::is_aligned</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00055">last_imu_stamp</a>, and <a class="el" href="temp__tcouple__adc_8c_source.html#l00049">val</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00546">ins_mekf_wind_wrapper_init()</a>.</p>
+<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00547">ins_mekf_wind_wrapper_init()</a>.</p>
 
 <p><div id="dynsection-28" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-28-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -1394,11 +1395,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00120">120</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00121">121</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
 
-<p>References <a class="el" href="pprz__algebra__float_8c_source.html#l00646">float_eulers_of_quat()</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00821">ins_mekf_wind_get_accel_bias()</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00816">ins_mekf_wind_get_airspeed_norm()</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00721">ins_mekf_wind_get_pos_ned()</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00765">ins_mekf_wind_get_quat()</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00831">ins_mekf_wind_get_rates_bias()</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00738">ins_mekf_wind_get_speed_ned()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00094">FloatRates::p</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00085">FloatEulers::phi</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00087">FloatEulers::psi</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00095">FloatRates::q</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00064">FloatQuat::qi</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00096">FloatRates::r</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00086">FloatEulers::theta</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00064">NedCoor_f::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00065">NedCoor_f::y</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00066">NedCoor_f::z</a>.</p>
+<p>References <a class="el" href="pprz__algebra__float_8c_source.html#l00650">float_eulers_of_quat()</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00821">ins_mekf_wind_get_accel_bias()</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00816">ins_mekf_wind_get_airspeed_norm()</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00721">ins_mekf_wind_get_pos_ned()</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00765">ins_mekf_wind_get_quat()</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00831">ins_mekf_wind_get_rates_bias()</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00738">ins_mekf_wind_get_speed_ned()</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00094">FloatRates::p</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00085">FloatEulers::phi</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00087">FloatEulers::psi</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00095">FloatRates::q</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00064">FloatQuat::qi</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00096">FloatRates::r</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00086">FloatEulers::theta</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00055">FloatVect3::x</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00064">NedCoor_f::x</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00056">FloatVect3::y</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00065">NedCoor_f::y</a>, <a class="el" href="pprz__algebra__float_8h_source.html#l00057">FloatVect3::z</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00066">NedCoor_f::z</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00546">ins_mekf_wind_wrapper_init()</a>.</p>
+<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00547">ins_mekf_wind_wrapper_init()</a>.</p>
 
 <p><div id="dynsection-30" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-30-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -1456,11 +1457,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00091">91</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00092">92</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
 
 <p>References <a class="el" href="pprz__geodetic_8h_source.html#l00041">ENU_OF_TO_NED</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00816">ins_mekf_wind_get_airspeed_norm()</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00794">ins_mekf_wind_get_wind_ned()</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00073">EnuCoor_f::x</a>, <a class="el" href="pprz__geodetic__float_8h_source.html#l00074">EnuCoor_f::y</a>, and <a class="el" href="pprz__geodetic__float_8h_source.html#l00075">EnuCoor_f::z</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00546">ins_mekf_wind_wrapper_init()</a>.</p>
+<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00547">ins_mekf_wind_wrapper_init()</a>.</p>
 
 <p><div id="dynsection-32" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-32-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -1511,11 +1512,11 @@ Variables</h2></td></tr>
 <p>update state interface </p>
 <p>Set current state (ltp to body orientation/rates and ned pos/speed/accel. </p>
 
-<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00525">525</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00526">526</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
 
 <p>References <a class="el" href="ins__mekf__wind_8cpp_source.html#l00755">ins_mekf_wind_get_accel_ned()</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00784">ins_mekf_wind_get_body_rates()</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00721">ins_mekf_wind_get_pos_ned()</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00765">ins_mekf_wind_get_quat()</a>, <a class="el" href="ins__mekf__wind_8cpp_source.html#l00738">ins_mekf_wind_get_speed_ned()</a>, <a class="el" href="state_8h_source.html#l01002">stateSetAccelNed_f()</a>, <a class="el" href="state_8h_source.html#l01181">stateSetBodyRates_f()</a>, <a class="el" href="state_8h_source.html#l01093">stateSetNedToBodyQuat_f()</a>, <a class="el" href="state_8h_source.html#l00598">stateSetPositionNed_f()</a>, and <a class="el" href="state_8h_source.html#l00809">stateSetSpeedNed_f()</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00416">aligner_cb()</a>, and <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00300">gyro_cb()</a>.</p>
+<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00417">aligner_cb()</a>, and <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00301">gyro_cb()</a>.</p>
 
 <p><div id="dynsection-34" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-34-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -1560,9 +1561,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00206">206</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00207">207</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00546">ins_mekf_wind_wrapper_init()</a>.</p>
+<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00547">ins_mekf_wind_wrapper_init()</a>.</p>
 
 </div>
 </div>
@@ -1584,9 +1585,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00201">201</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00202">202</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00546">ins_mekf_wind_wrapper_init()</a>.</p>
+<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00547">ins_mekf_wind_wrapper_init()</a>.</p>
 
 </div>
 </div>
@@ -1608,9 +1609,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00207">207</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00208">208</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00546">ins_mekf_wind_wrapper_init()</a>.</p>
+<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00547">ins_mekf_wind_wrapper_init()</a>.</p>
 
 </div>
 </div>
@@ -1632,9 +1633,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00203">203</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00204">204</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00546">ins_mekf_wind_wrapper_init()</a>.</p>
+<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00547">ins_mekf_wind_wrapper_init()</a>.</p>
 
 </div>
 </div>
@@ -1656,9 +1657,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00208">208</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00209">209</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00546">ins_mekf_wind_wrapper_init()</a>.</p>
+<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00547">ins_mekf_wind_wrapper_init()</a>.</p>
 
 </div>
 </div>
@@ -1680,9 +1681,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00209">209</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00210">210</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00546">ins_mekf_wind_wrapper_init()</a>.</p>
+<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00547">ins_mekf_wind_wrapper_init()</a>.</p>
 
 </div>
 </div>
@@ -1704,9 +1705,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00210">210</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00211">211</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00546">ins_mekf_wind_wrapper_init()</a>.</p>
+<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00547">ins_mekf_wind_wrapper_init()</a>.</p>
 
 </div>
 </div>
@@ -1728,9 +1729,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00205">205</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00206">206</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00546">ins_mekf_wind_wrapper_init()</a>.</p>
+<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00547">ins_mekf_wind_wrapper_init()</a>.</p>
 
 </div>
 </div>
@@ -1752,9 +1753,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00202">202</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00203">203</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00546">ins_mekf_wind_wrapper_init()</a>.</p>
+<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00547">ins_mekf_wind_wrapper_init()</a>.</p>
 
 </div>
 </div>
@@ -1768,9 +1769,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00050">50</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00051">51</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00381">accel_cb()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00269">airspeed_cb()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00416">aligner_cb()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00213">baro_cb()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00447">body_to_imu_cb()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00462">gps_cb()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00300">gyro_cb()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00282">incidence_cb()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00546">ins_mekf_wind_wrapper_init()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00392">mag_cb()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00255">pressure_diff_cb()</a>, and <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00102">send_filter_status()</a>.</p>
+<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00382">accel_cb()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00270">airspeed_cb()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00417">aligner_cb()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00214">baro_cb()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00448">body_to_imu_cb()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00463">gps_cb()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00301">gyro_cb()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00283">incidence_cb()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00547">ins_mekf_wind_wrapper_init()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00393">mag_cb()</a>, <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00256">pressure_diff_cb()</a>, and <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00103">send_filter_status()</a>.</p>
 
 </div>
 </div>
@@ -1794,9 +1795,9 @@ Variables</h2></td></tr>
 
 <p>last accel measurement </p>
 
-<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00053">53</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00054">54</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00381">accel_cb()</a>, and <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00300">gyro_cb()</a>.</p>
+<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00382">accel_cb()</a>, and <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00301">gyro_cb()</a>.</p>
 
 </div>
 </div>
@@ -1818,9 +1819,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00054">54</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00055">55</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00300">gyro_cb()</a>, and <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00102">send_filter_status()</a>.</p>
+<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00301">gyro_cb()</a>, and <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00103">send_filter_status()</a>.</p>
 
 </div>
 </div>
@@ -1842,9 +1843,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00204">204</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00205">205</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00546">ins_mekf_wind_wrapper_init()</a>.</p>
+<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00547">ins_mekf_wind_wrapper_init()</a>.</p>
 
 </div>
 </div>
@@ -1866,9 +1867,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00200">200</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
+<p>Definition at line <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00201">201</a> of file <a class="el" href="ins__mekf__wind__wrapper_8c_source.html">ins_mekf_wind_wrapper.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00546">ins_mekf_wind_wrapper_init()</a>.</p>
+<p>Referenced by <a class="el" href="ins__mekf__wind__wrapper_8c_source.html#l00547">ins_mekf_wind_wrapper_init()</a>.</p>
 
 </div>
 </div>
@@ -1878,7 +1879,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_12fb52dac4e3837dec02c6544f4d82f8.html">ins</a></li><li class="navelem"><a class="el" href="ins__mekf__wind__wrapper_8c.html">ins_mekf_wind_wrapper.c</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:03:16 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:03:31 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

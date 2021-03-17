@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -214,12 +214,36 @@ $(document).ready(function(){initNavTree('globals_defs_g.html','');});
 <li>GET_COMMAND
 : <a class="el" href="esc32_8c.html#a73baaa9b97c700c08c8ba4b923b0d854">esc32.c</a>
 </li>
+<li>GET_FRAME_ERR_LPF_FREQUENCY
+: <a class="el" href="cc2500__settings_8h.html#ab7a39220c2b9f664d599259f1d5a8cb7">cc2500_settings.h</a>
+</li>
 <li>GET_LINE_CODING
 : <a class="el" href="lpc21_2usb__ser__hw_8c.html#a6698d8d2ca56fafdc943aec2cede1daf">usb_ser_hw.c</a>
 </li>
 <li>GetAltRef
 : <a class="el" href="nav_8h.html#a24891072dad1936c21f884d623bda8b4">nav.h</a>
 , <a class="el" href="rotorcraft_2navigation_8h.html#a24891072dad1936c21f884d623bda8b4">navigation.h</a>
+</li>
+<li>getAmperage
+: <a class="el" href="cc2500__compat_8h.html#a01817905acb43331ed4bc62ad18dab60">cc2500_compat.h</a>
+</li>
+<li>getBatteryCellCount
+: <a class="el" href="cc2500__compat_8h.html#aa8f342b114a3abf9246f529031337fbc">cc2500_compat.h</a>
+</li>
+<li>getBatteryVoltage
+: <a class="el" href="cc2500__compat_8h.html#ab4922b5eb5f8bddf7090a4227577ed08">cc2500_compat.h</a>
+</li>
+<li>getEstimatedAltitudeCm
+: <a class="el" href="cc2500__compat_8h.html#a2466c970f71c0de7767a50d73b561929">cc2500_compat.h</a>
+</li>
+<li>getEstimatedVario
+: <a class="el" href="cc2500__compat_8h.html#ad973c202918f2d4cd341446dc9e0cce2">cc2500_compat.h</a>
+</li>
+<li>getLegacyBatteryVoltage
+: <a class="el" href="cc2500__compat_8h.html#a8d7f73e78bc1f79f2ddbceeeb1c2b6cc">cc2500_compat.h</a>
+</li>
+<li>getMAhDrawn
+: <a class="el" href="cc2500__compat_8h.html#a521ced966fb10ea2764fe080fb03660c">cc2500_compat.h</a>
 </li>
 <li>GetMedianFilterEulerFloat
 : <a class="el" href="median__filter_8h.html#a089783cdacc2b6e0bcfb34d2b73a4af4">median_filter.h</a>
@@ -304,9 +328,9 @@ $(document).ready(function(){initNavTree('globals_defs_g.html','');});
 : <a class="el" href="xsens__parser_8h.html#a50f2d2d7acbe051094fd37b71ce583e2">xsens_parser.h</a>
 </li>
 <li>GOT_CHECKSUM
-: <a class="el" href="gps__skytraq_8c.html#a174938824d754f469eba1dfc241ec170">gps_skytraq.c</a>
-, <a class="el" href="xsens__parser_8h.html#a174938824d754f469eba1dfc241ec170">xsens_parser.h</a>
+: <a class="el" href="xsens__parser_8h.html#a174938824d754f469eba1dfc241ec170">xsens_parser.h</a>
 , <a class="el" href="gps__nmea_8c.html#a174938824d754f469eba1dfc241ec170">gps_nmea.c</a>
+, <a class="el" href="gps__skytraq_8c.html#a174938824d754f469eba1dfc241ec170">gps_skytraq.c</a>
 </li>
 <li>GOT_CHECKSUM1
 : <a class="el" href="gps__mtk_8c.html#a7a53eb7b7d725c83beee8dd21cb9f74f">gps_mtk.c</a>
@@ -408,9 +432,6 @@ $(document).ready(function(){initNavTree('globals_defs_g.html','');});
 <li>GotoBlock
 : <a class="el" href="common__flight__plan_8h.html#ac90fac1cee5a86d0b7c434516f85dd98">common_flight_plan.h</a>
 </li>
-<li>GP
-: <a class="el" href="actuators__xvert_8c.html#a80632065e2dcaae1447ea73103f4ad4f">actuators_xvert.c</a>
-</li>
 <li>GP2Y_I2C_DEV
 : <a class="el" href="dust__gp2y_8c.html#a75de50813622e1696c13f6fdb17bc37a">dust_gp2y.c</a>
 </li>
@@ -437,8 +458,8 @@ $(document).ready(function(){initNavTree('globals_defs_g.html','');});
 , <a class="el" href="lpc21_2mcu__periph_2gpio__arch_8h.html#ac376b1c124378935df7b3c171b2bef35">gpio_arch.h</a>
 </li>
 <li>GPIO12
-: <a class="el" href="lpc21_2mcu__periph_2gpio__arch_8h.html#a1dfa6e5489489f2797d3d80c718716ce">gpio_arch.h</a>
-, <a class="el" href="gpio__def_8h.html#a1dfa6e5489489f2797d3d80c718716ce">gpio_def.h</a>
+: <a class="el" href="gpio__def_8h.html#a1dfa6e5489489f2797d3d80c718716ce">gpio_def.h</a>
+, <a class="el" href="lpc21_2mcu__periph_2gpio__arch_8h.html#a1dfa6e5489489f2797d3d80c718716ce">gpio_arch.h</a>
 </li>
 <li>GPIO13
 : <a class="el" href="gpio__def_8h.html#a4b7d9a3961712ddd2a58532f4dcedc1d">gpio_def.h</a>
@@ -602,6 +623,60 @@ $(document).ready(function(){initNavTree('globals_defs_g.html','');});
 <li>GPIO_DIRECTION
 : <a class="el" href="gpio__ardrone_8c.html#a76674bd82007b2ceec9a2e60e3f53d62">gpio_ardrone.c</a>
 </li>
+<li>GPIO_EXT_NOT_PROVIDED
+: <a class="el" href="gpio__ext__common_8c.html#add995d829f2cbebba39a9b974e23cf83">gpio_ext_common.c</a>
+</li>
+<li>GPIO_EXT_PCA95XX
+: <a class="el" href="gpio__ext__pca95xx_8h.html#a758753d3bce467c654d58c48ebe9185d">gpio_ext_pca95xx.h</a>
+</li>
+<li>GPIO_EXT_PCA95XX_BLOCKING1
+: <a class="el" href="gpio__ext__pca95xx_8c.html#ac0ceabaa8eb0166693151aa5c6c58fb4">gpio_ext_pca95xx.c</a>
+</li>
+<li>GPIO_EXT_PCA95XX_BLOCKING2
+: <a class="el" href="gpio__ext__pca95xx_8c.html#a59372f9ec245a91772885abfa66263a1">gpio_ext_pca95xx.c</a>
+</li>
+<li>GPIO_EXT_PCA95XX_BLOCKING3
+: <a class="el" href="gpio__ext__pca95xx_8c.html#a6ada0f1c97835d893626d1630ff96927">gpio_ext_pca95xx.c</a>
+</li>
+<li>GPIO_EXT_PCA95XX_BLOCKING4
+: <a class="el" href="gpio__ext__pca95xx_8c.html#a4ed6d3536b1a1f1c369247a8584e7a52">gpio_ext_pca95xx.c</a>
+</li>
+<li>GPIO_EXT_PCA95XX_I2C_ADDRESS1
+: <a class="el" href="gpio__ext__pca95xx_8c.html#a10a5b13fa068d10d9472b85d30d8d69d">gpio_ext_pca95xx.c</a>
+</li>
+<li>GPIO_EXT_PCA95XX_I2C_ADDRESS2
+: <a class="el" href="gpio__ext__pca95xx_8c.html#a43fdc4b78da20c061f39a6444d9cefa9">gpio_ext_pca95xx.c</a>
+</li>
+<li>GPIO_EXT_PCA95XX_I2C_ADDRESS3
+: <a class="el" href="gpio__ext__pca95xx_8c.html#a2fa43652cf7874a234864b9264bec4ae">gpio_ext_pca95xx.c</a>
+</li>
+<li>GPIO_EXT_PCA95XX_I2C_ADDRESS4
+: <a class="el" href="gpio__ext__pca95xx_8c.html#a7b28424614187b0633eb018aebe89da9">gpio_ext_pca95xx.c</a>
+</li>
+<li>GPIO_EXT_PCA95XX_I2C_PERIPH1_PTR
+: <a class="el" href="gpio__ext__pca95xx_8c.html#a2c8d2786824a4eed468e49e9deebcc91">gpio_ext_pca95xx.c</a>
+</li>
+<li>GPIO_EXT_PCA95XX_I2C_PERIPH2_PTR
+: <a class="el" href="gpio__ext__pca95xx_8c.html#a428825949d1879f14a80dd0f64b87573">gpio_ext_pca95xx.c</a>
+</li>
+<li>GPIO_EXT_PCA95XX_I2C_PERIPH3_PTR
+: <a class="el" href="gpio__ext__pca95xx_8c.html#a805c820b879c6a70d37c7679ba3629ae">gpio_ext_pca95xx.c</a>
+</li>
+<li>GPIO_EXT_PCA95XX_I2C_PERIPH4_PTR
+: <a class="el" href="gpio__ext__pca95xx_8c.html#af931f5d7f45c1155d2ecb72f25525039">gpio_ext_pca95xx.c</a>
+</li>
+<li>GPIO_EXT_PROVIDER1
+: <a class="el" href="gpio__ext__common_8c.html#a3a2c2fdd49b260d3171f9ae1e8266d4b">gpio_ext_common.c</a>
+</li>
+<li>GPIO_EXT_PROVIDER2
+: <a class="el" href="gpio__ext__common_8c.html#a2cb7ae7c310070cc9b119825954bce1b">gpio_ext_common.c</a>
+</li>
+<li>GPIO_EXT_PROVIDER3
+: <a class="el" href="gpio__ext__common_8c.html#a55920ec968d9dcd1973529c15cbdf5b1">gpio_ext_common.c</a>
+</li>
+<li>GPIO_EXT_PROVIDER4
+: <a class="el" href="gpio__ext__common_8c.html#a7c0c49b21f41cf7acd1070f7f61c7fae">gpio_ext_common.c</a>
+</li>
 <li>GPIO_HV_MUX__CTRL
 : <a class="el" href="vl53l1x__api_8h.html#ac2b6c32911c2c553477f19bb3c25ce89">vl53l1x_api.h</a>
 </li>
@@ -617,233 +692,14 @@ $(document).ready(function(){initNavTree('globals_defs_g.html','');});
 <li>GPIOA
 : <a class="el" href="lpc21_2mcu__periph_2gpio__arch_8h.html#ac485358099728ddae050db37924dd6b7">gpio_arch.h</a>
 </li>
-<li>GPIOA_ADC1
-: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#a437aa5ab8ae09063cbfc81c95f04d100">board.h</a>
-</li>
-<li>GPIOA_ADC2
-: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#aed4bf24a6bd7e2be4f03adfa66226aea">board.h</a>
-</li>
-<li>GPIOA_ADC_VDD
-: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#aafee004a54b08f06ea24d46242fd4fd1">board.h</a>
-</li>
-<li>GPIOA_BUTTON
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a9d92bdb4790a24e31bd7412b0160daff">board.h</a>
-</li>
-<li>GPIOA_L3GD20_SCL
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a606603004203064ba945ca3f20e5f6ec">board.h</a>
-</li>
-<li>GPIOA_L3GD20_SDI
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a21af3fff9222df5b9efff552c51c3dd5">board.h</a>
-</li>
-<li>GPIOA_L3GD20_SDO
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#ab4b62c7f0bf84ba235544198069bd1c3">board.h</a>
-</li>
-<li>GPIOA_LED_RED
-: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#a82edbd9843beb277852bb89bc9f3b131">board.h</a>
-</li>
 <li>GPIOA_OTG_FS_VBUS
 : <a class="el" href="px4fmu_2chibios_2v2_84_2board_8h.html#a4e308bd7d224ffaf526840b7b74d84cc">board.h</a>
-</li>
-<li>GPIOA_PIN0
-: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#a0cb7818746275b6c492563094ef3eb9b">board.h</a>
-</li>
-<li>GPIOA_PIN1
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#afb7901bdd81cbaf63a77adccc953bd24">board.h</a>
-</li>
-<li>GPIOA_PIN10
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#aca3f2776220dbbb15e9e5924db3f3a16">board.h</a>
-</li>
-<li>GPIOA_PIN15
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a46acb855fad231790f79e54bc4d0af66">board.h</a>
-</li>
-<li>GPIOA_PIN2
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#ae03444a6c3c41902b6a3d58721fa5448">board.h</a>
-</li>
-<li>GPIOA_PIN3
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#aa490e796204d6758822cd11ac39c854a">board.h</a>
-</li>
-<li>GPIOA_PIN4
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a3828c7b468e32f2b175b13aa3f490baf">board.h</a>
-</li>
-<li>GPIOA_PIN7
-: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#a4325a1ee7a8e8db35ea0d2f41659d56b">board.h</a>
-</li>
-<li>GPIOA_PIN8
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a3525ad5aadd0473e6330234105bf2b65">board.h</a>
-</li>
-<li>GPIOA_PIN9
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#aa0f0a69047cd9277bb4dff4d834b7c2e">board.h</a>
-</li>
-<li>GPIOA_PWM_PIN11
-: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#a37516f937ee8f8273492b53008fb36f6">board.h</a>
-</li>
-<li>GPIOA_PWM_PIN12
-: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#ac6beae1a304923ae7dbbe99e64f635e3">board.h</a>
-</li>
-<li>GPIOA_SPI1_MISO
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a2476b5b30f5c152a9f136f799f52e153">board.h</a>
-</li>
-<li>GPIOA_SPI1_MOSI
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a0e7c958fc6f1c9c1da99879f54654784">board.h</a>
-</li>
-<li>GPIOA_SPI1_SCK
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#ac767ed1ddab7cee6ad679d61baef4302">board.h</a>
-</li>
-<li>GPIOA_SWCLK
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#abe6c5d2162f9314024eed9ff196fb31c">board.h</a>
-</li>
-<li>GPIOA_SWD
-: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#a8b7bef873152f72546cc3aeb8015fbf1">board.h</a>
-</li>
-<li>GPIOA_SWDIO
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a7a4a4670b4ed5f90d7e9cd36879fda28">board.h</a>
-</li>
-<li>GPIOA_UART1RX
-: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#adb3979c10681f03b799c389913db72a6">board.h</a>
-</li>
-<li>GPIOA_UART1TX
-: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#ad02745fc0d927d5d816933483404f300">board.h</a>
-</li>
-<li>GPIOA_UART2RX
-: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#a8456d2b3d1abd01a66ac8817904da6bb">board.h</a>
-</li>
-<li>GPIOA_UART2TX
-: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#acc81e83633e7b52b545e512a33841c90">board.h</a>
-</li>
-<li>GPIOA_USB_DM
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a21e06d15599efbfb02b41107a8544dab">board.h</a>
-</li>
-<li>GPIOA_USB_DP
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a87dbad6df76adcd1ece649b79b134224">board.h</a>
 </li>
 <li>GPIOB
 : <a class="el" href="lpc21_2mcu__periph_2gpio__arch_8h.html#a68b66ac73be4c836db878a42e1fea3cd">gpio_arch.h</a>
 </li>
-<li>GPIOB_ADC_POT_IN
-: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#a2df29a119ba21e41c47420470caff607">board.h</a>
-</li>
-<li>GPIOB_I2C1_SCL
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a49dcef36151d69f414886038dc4f4745">board.h</a>
-</li>
-<li>GPIOB_I2C1_SDA
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#af550dbaab5e1d908e03f8820da4a56b7">board.h</a>
-</li>
-<li>GPIOB_JTRST
-: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#a70ee936912bc7c0761b0841ceff9d64a">board.h</a>
-</li>
-<li>GPIOB_LSM303DLHC_SCL
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a329226c80e0147dd5653162f8d27bf74">board.h</a>
-</li>
-<li>GPIOB_LSM303DLHC_SDA
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#aed15622fd4e743b7301fdd5827bdcbdd">board.h</a>
-</li>
-<li>GPIOB_MIC_IN
-: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#aa2e4a22116beaee8b93e44d1ece2d6ce">board.h</a>
-</li>
-<li>GPIOB_PIN0
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#aa2648d812dd7ac5db4a369d99cb39e15">board.h</a>
-</li>
-<li>GPIOB_PIN1
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a79706be65d1a3914b4c074cc4935c2fa">board.h</a>
-</li>
-<li>GPIOB_PIN10
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#aafa39eeaae4d88d728d7799660b531ba">board.h</a>
-</li>
-<li>GPIOB_PIN11
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#afaa9f0a32c40d42f9038b2dd27cc6515">board.h</a>
-</li>
-<li>GPIOB_PIN12
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#ad917392d3554e6029bee8ee9caa87288">board.h</a>
-</li>
-<li>GPIOB_PIN13
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#aae560d0aa8ac8f4b5e173ea8c9ef2218">board.h</a>
-</li>
-<li>GPIOB_PIN14
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#ac6887c163fe7ed0e4b8e0039bf4def54">board.h</a>
-</li>
-<li>GPIOB_PIN15
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a519934496e901bcefd1a410aee97296e">board.h</a>
-</li>
-<li>GPIOB_PIN2
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a90a35cfe7293f74466cf46350954ee29">board.h</a>
-</li>
-<li>GPIOB_PIN4
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a3c06c0eacd36c5e8f9a0472270f3028f">board.h</a>
-</li>
-<li>GPIOB_PIN5
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#ab97b53c5beccd57c325d53b8a67babed">board.h</a>
-</li>
-<li>GPIOB_PIN8
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a56e8e833acac2dbe2d4638f176be6282">board.h</a>
-</li>
-<li>GPIOB_PIN9
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a8175ccdd8ac896e4d38c570f7c72457e">board.h</a>
-</li>
-<li>GPIOB_SWO
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a7d69859e8fef7f0870ad58e5f64edd99">board.h</a>
-</li>
 <li>GPIOC
 : <a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#a2dca03332d620196ba943bc2346eaa08">gpio_arch.h</a>
-</li>
-<li>GPIOC_LED1
-: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#a30362df15a2c32b3b91b76a79fdfa29a">board.h</a>
-</li>
-<li>GPIOC_LED2
-: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#a754a7519022791a3594476b4ad1371f5">board.h</a>
-</li>
-<li>GPIOC_LED3
-: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#a3166c438e70da9bed58c39f8a8115629">board.h</a>
-</li>
-<li>GPIOC_LED4
-: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#ad9fe774508289be007b794b1fb1b5ff8">board.h</a>
-</li>
-<li>GPIOC_OSC32_IN
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#accb1a04f064d9bca930eafbb2cf5d164">board.h</a>
-</li>
-<li>GPIOC_OSC32_OUT
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a5d89739c0a188c15b2b9223a967202cb">board.h</a>
-</li>
-<li>GPIOC_PIN0
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a8b29a35d463fdeb98936223be420d2bf">board.h</a>
-</li>
-<li>GPIOC_PIN1
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#adc5846e2b81349872902580d656e31b8">board.h</a>
-</li>
-<li>GPIOC_PIN10
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a5f503674d5ffd4d979b274f334c7b33c">board.h</a>
-</li>
-<li>GPIOC_PIN11
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a7dbcb5cb4aeb0305b1fd76488ab19623">board.h</a>
-</li>
-<li>GPIOC_PIN12
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a765dd7ddae838722db9e064c52f7de36">board.h</a>
-</li>
-<li>GPIOC_PIN13
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#abbcf570d3ec04d2ad8a100ecff190307">board.h</a>
-</li>
-<li>GPIOC_PIN2
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a39dbe2e967d2c39d9ca7a282b2f3941e">board.h</a>
-</li>
-<li>GPIOC_PIN3
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#aa2859ba835b7a77417bc9e068760972f">board.h</a>
-</li>
-<li>GPIOC_PIN4
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a776541f2373108c806a0ce6f473a423f">board.h</a>
-</li>
-<li>GPIOC_PIN5
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a3f83a6b3e683f60b62b44c132e400bb0">board.h</a>
-</li>
-<li>GPIOC_PIN6
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#ac80128596e60c1d26a710f5049b74cec">board.h</a>
-</li>
-<li>GPIOC_PIN7
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a2c95e0b14a122f9f958ec02f33621f9c">board.h</a>
-</li>
-<li>GPIOC_PIN8
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a5ed332dbc1df87d98cb9587bf2929f17">board.h</a>
-</li>
-<li>GPIOC_PIN9
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a3c1e10fac9537225857c33cd8b1c64ce">board.h</a>
 </li>
 <li>GPIOC_SDIO_CK
 : <a class="el" href="px4fmu_2chibios_2v2_84_2board_8h.html#aeae57c071dc04e3848d7e638a79c5f62">board.h</a>
@@ -860,362 +716,23 @@ $(document).ready(function(){initNavTree('globals_defs_g.html','');});
 <li>GPIOC_SDIO_D3
 : <a class="el" href="px4fmu_2chibios_2v2_84_2board_8h.html#ab4e55722a0dc0589797a3888be9e8e4a">board.h</a>
 </li>
-<li>GPIOC_USB_DISCONNECT
-: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#aa089f9117912c32fd678f2d7e253e3ba">board.h</a>
-</li>
 <li>GPIOD
 : <a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#a7580b1a929ea9df59725ba9c18eba6ac">gpio_arch.h</a>
-</li>
-<li>GPIOD_AUDIO_RST
-: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#a7b2e18e0a37d80efac89f387acc61afa">board.h</a>
-</li>
-<li>GPIOD_CAN_RX
-: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#a03ad1cc83841a7b1acffa2425ebf174d">board.h</a>
-</li>
-<li>GPIOD_CAN_TX
-: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#a80687241cb228ec79c0be978d2251588">board.h</a>
-</li>
-<li>GPIOD_LCD_CS
-: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#afef21d12def1e40460c93311f1752eca">board.h</a>
-</li>
-<li>GPIOD_LED_GREEN
-: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#a6d0fc36b4a803db09c8110706a18f425">board.h</a>
-</li>
-<li>GPIOD_PIN0
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#ae1f88f2730f5b5b8ab4be7fd6314a8c5">board.h</a>
-</li>
-<li>GPIOD_PIN1
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a7c54bd32ae300d1d46959ebdc46f34aa">board.h</a>
-</li>
-<li>GPIOD_PIN10
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a0b17e4d4764ddf7e6887f0fd7620963f">board.h</a>
-</li>
-<li>GPIOD_PIN11
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#ad58a63e083e9ec87180f80eeecf06d71">board.h</a>
-</li>
-<li>GPIOD_PIN12
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#af43c34a2ee6d9d7fea94ee467d81326a">board.h</a>
-</li>
-<li>GPIOD_PIN13
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a72af035c720f005e7b2c0910d9999131">board.h</a>
-</li>
-<li>GPIOD_PIN14
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#afe33dc8ec33be45027b4b60dfde94937">board.h</a>
-</li>
-<li>GPIOD_PIN15
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a4a9a03e830c7740cc37ca0399b428f7b">board.h</a>
-</li>
-<li>GPIOD_PIN2
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#aa092f1c9dfa61758c392c9f189697758">board.h</a>
-</li>
-<li>GPIOD_PIN3
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a51b2ae7279cfda50b2431ddd15c00725">board.h</a>
-</li>
-<li>GPIOD_PIN4
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a96e14e372f407accefb5563d057efd56">board.h</a>
-</li>
-<li>GPIOD_PIN5
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#ac4ec3c0ea3218a417389b25a819e1e95">board.h</a>
-</li>
-<li>GPIOD_PIN6
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a49c6597923441b5602345d7ef0a3d487">board.h</a>
-</li>
-<li>GPIOD_PIN7
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a49a7ba6997764f87e1234e72483c1742">board.h</a>
-</li>
-<li>GPIOD_PIN8
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a3dff47578248473ce282b44fc66da128">board.h</a>
-</li>
-<li>GPIOD_PIN9
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a8a679b93e90892693e8d6c33d807ffe7">board.h</a>
 </li>
 <li>GPIOD_SDIO_CMD
 : <a class="el" href="px4fmu_2chibios_2v2_84_2board_8h.html#a8c7be1566e85f84c47e4a96db80c34af">board.h</a>
 </li>
-<li>GPIOD_USART2_CTS
-: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#a6fc6028fc3d3bad57edc965c39ba44f8">board.h</a>
-</li>
-<li>GPIOD_USART2_RST
-: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#abd861ff0202061be3cd8d874a97eb927">board.h</a>
-</li>
-<li>GPIOD_USART2_RX
-: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#aad9a350db8111e71b913acee6a83bb56">board.h</a>
-</li>
-<li>GPIOD_USART2_TX
-: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#ad82f50c4b203407d9f569bb96d42328c">board.h</a>
-</li>
 <li>GPIOE
 : <a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#ae04bdb5e8acc47cab1d0532e6b0d0763">gpio_arch.h</a>
-</li>
-<li>GPIOE_JOY_SEL
-: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#ad70022e2d6f064bcd3de35f71ccf4933">board.h</a>
-</li>
-<li>GPIOE_L3GD20_CS
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a6d1f48d11fdf8888cb4ce32eb7121809">board.h</a>
-</li>
-<li>GPIOE_L3GD20_INT1
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#ae3329b0ca3ab1a517748dcf572313ee2">board.h</a>
-</li>
-<li>GPIOE_L3GD20_INT2
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a1745e6a0b1d785db3203fc1f03fecf4e">board.h</a>
-</li>
-<li>GPIOE_LED10_RED
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#aed2fe443065abb37270d5d447db7cf03">board.h</a>
-</li>
-<li>GPIOE_LED3_RED
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a02b47da521104cbfdee39615438018d1">board.h</a>
-</li>
-<li>GPIOE_LED4_BLUE
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a1662b8a2cd08f49b6dba95104c65cc3f">board.h</a>
-</li>
-<li>GPIOE_LED5_ORANGE
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#aa8a76d8063dc5ae4ac7cbbe8c68ef76a">board.h</a>
-</li>
-<li>GPIOE_LED6_GREEN
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a46026b4d4e79167af9c63a00050e4a5e">board.h</a>
-</li>
-<li>GPIOE_LED7_GREEN
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#aa4e9e7a39665374a88bd20b5e3f98c88">board.h</a>
-</li>
-<li>GPIOE_LED8_ORANGE
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a6f27a3c1027d9482b537fba28183c06a">board.h</a>
-</li>
-<li>GPIOE_LED9_BLUE
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#ab1c060288f332cdbeb00c19d9ecc5459">board.h</a>
-</li>
-<li>GPIOE_LSM303DLHC_DRDY
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a7cd86697605b8fe4f3ec3029d4d974bc">board.h</a>
-</li>
-<li>GPIOE_LSM303DLHC_INT1
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a7d97c6ddfdaabd8d56ecdc6c1238f046">board.h</a>
-</li>
-<li>GPIOE_LSM303DLHC_INT2
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#ad9c83f9734fa25970234db9744281a22">board.h</a>
-</li>
-<li>GPIOE_PIN0
-: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#a414db3baae5c9f6cda4ff02f27e09082">board.h</a>
-</li>
-<li>GPIOE_PIN1
-: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#a82f1b58519913fa011f655e21aadb39c">board.h</a>
-</li>
-<li>GPIOE_PIN10
-: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#ab0bd41806d6017bddfc592235661c692">board.h</a>
-</li>
-<li>GPIOE_PIN11
-: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#a00e10917000794b6290eaa4204bc017c">board.h</a>
-</li>
-<li>GPIOE_PIN12
-: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#a1a88b3db66772216bc56f1c6537604e8">board.h</a>
-</li>
-<li>GPIOE_PIN13
-: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#a9e98badf51e9fa0659044083d4c5ca29">board.h</a>
-</li>
-<li>GPIOE_PIN15
-: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#a3af5286b414c87ecc2bed2a57acc20c9">board.h</a>
-</li>
-<li>GPIOE_PIN4
-: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#a86ed5ebcec238c72ac2e304d70b977d1">board.h</a>
-</li>
-<li>GPIOE_PIN5
-: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#a79cbf467121c4cd86deca78488b2b86c">board.h</a>
-</li>
-<li>GPIOE_PIN6
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a90e1b02dafb6e14175b7a0b6bd094037">board.h</a>
-</li>
-<li>GPIOE_PIN7
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a0909222741d18192949804093daf0d14">board.h</a>
-</li>
-<li>GPIOE_PRESSURE_TEPM
-: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#a03f5b3d14a6e3f1b070c6c1be9d2f3c4">board.h</a>
-</li>
-<li>GPIOE_PRESSUREN
-: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#af9e766d74a6f79a34cc4c8d3a3e7f433">board.h</a>
-</li>
-<li>GPIOE_PRESSUREP
-: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#a366767aba3a41fb7766e7193feb792f6">board.h</a>
-</li>
-<li>GPIOE_RTD_IN
-: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#aceab91ae1414e3dd8507cfd62737698f">board.h</a>
-</li>
-<li>GPIOE_SD_CS
-: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#a1f5da5d96444d8eeaef87450edb84e81">board.h</a>
-</li>
-<li>GPIOE_SD_DETECT
-: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#a589dd8a151a48c9624779c97e12a958b">board.h</a>
-</li>
-<li>GPIOE_SPI1_CS
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a36a684ad1292fd65d822c63f8d4cdfdf">board.h</a>
 </li>
 <li>GPIOF
 : <a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#a43c3022dede7c9db7a58d3c3409dbc8d">gpio_arch.h</a>
 </li>
-<li>GPIOF_I2C2_SCL
-: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#adcf7e2a1a065f22bd5a30317485645fb">board.h</a>
-</li>
-<li>GPIOF_I2C2_SDA
-: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#a747585c81f10ef9e39b041ed68594c35">board.h</a>
-</li>
-<li>GPIOF_JOY_DOWN
-: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#afdf3f36f82eb2eadd271da60bb147f4f">board.h</a>
-</li>
-<li>GPIOF_JOY_LEFT
-: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#a37704fe0c96d5e6ef1b84b5cf4464467">board.h</a>
-</li>
-<li>GPIOF_JOY_RIGHT
-: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#af834816949d1cb5cd0f49ce3099d1b19">board.h</a>
-</li>
-<li>GPIOF_JOY_UP
-: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#a083dffa29fdc8fb843d2ec74bfb4b77c">board.h</a>
-</li>
-<li>GPIOF_OSC_IN
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a92b46be684a8a8d5c9df37bdacfbd3cd">board.h</a>
-</li>
-<li>GPIOF_OSC_OUT
-: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#aec513bdecf3e822b2600bb57d558d626">board.h</a>
-</li>
-<li>GPIOF_PIN10
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#afba4cb2bb39470b14fe1728f2a346aa3">board.h</a>
-</li>
-<li>GPIOF_PIN11
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a5d323ee66fff2a1afea9f737bde228fc">board.h</a>
-</li>
-<li>GPIOF_PIN12
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#aeb4ff76a72ed2f309fe97fd0cc3be7d1">board.h</a>
-</li>
-<li>GPIOF_PIN13
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a07fa1211d10bce0ff89491bdcdade32a">board.h</a>
-</li>
-<li>GPIOF_PIN14
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a94ff90d268a3db4eb6308a1d19a0d395">board.h</a>
-</li>
-<li>GPIOF_PIN15
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a9900e46acf3f24185b1f7b6540c539d4">board.h</a>
-</li>
-<li>GPIOF_PIN2
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a45842066fab4f6092931c9ee4f91beb5">board.h</a>
-</li>
-<li>GPIOF_PIN3
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#ab59221761c5c2c3cebc2c125913fc597">board.h</a>
-</li>
-<li>GPIOF_PIN4
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a52e4eeac08327c1f4fdf205568232261">board.h</a>
-</li>
-<li>GPIOF_PIN5
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a64e15aca55d67ef49db056db45aa0402">board.h</a>
-</li>
-<li>GPIOF_PIN6
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a2ebc06cfd0a848322553162f73867e7b">board.h</a>
-</li>
-<li>GPIOF_PIN7
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a13caa0719f4c1187dfc685f649d4d7d6">board.h</a>
-</li>
-<li>GPIOF_PIN8
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a3ee59a45d7232b995b95173a7e7a56bd">board.h</a>
-</li>
-<li>GPIOF_PIN9
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#ac899e857b33dbcacca7d56b1f751ce28">board.h</a>
-</li>
 <li>GPIOG
 : <a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#a02a2a23a32f9b02166a8c64012842414">gpio_arch.h</a>
 </li>
-<li>GPIOG_PIN0
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#afbcb152e63448087072ce9c2b0a1e95d">board.h</a>
-</li>
-<li>GPIOG_PIN1
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a0d2ff4bc7a839045f1572eef9e9730e3">board.h</a>
-</li>
-<li>GPIOG_PIN10
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a82f128d8569e31065f2d192b8960010b">board.h</a>
-</li>
-<li>GPIOG_PIN11
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a49f726ccc50608a5a5b5fe673a3d1091">board.h</a>
-</li>
-<li>GPIOG_PIN12
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#abf8e3f893bf57f1a549ecfd499504ecc">board.h</a>
-</li>
-<li>GPIOG_PIN13
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a813d83250ddde21beaa001b52e2dda3f">board.h</a>
-</li>
-<li>GPIOG_PIN14
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a5ac75b9b685bd906fcae9a701bf79dd4">board.h</a>
-</li>
-<li>GPIOG_PIN15
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#aea113b61fcd6b74d29a9922dc76a0111">board.h</a>
-</li>
-<li>GPIOG_PIN2
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a232d9d141544b6fe19b4330e2de7ae01">board.h</a>
-</li>
-<li>GPIOG_PIN3
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#adabf52dc50da31a4590ca7f9f1876213">board.h</a>
-</li>
-<li>GPIOG_PIN4
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a39b317c2cfbd19fe3397542a610705a4">board.h</a>
-</li>
-<li>GPIOG_PIN5
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a85bb69687db1ff8c597b50fa6504e0a9">board.h</a>
-</li>
-<li>GPIOG_PIN6
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#afca3c8f3562c4d1c2f6cda329a76a911">board.h</a>
-</li>
-<li>GPIOG_PIN7
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a188b7f96c11d8be3e81e19de3bc2ed8b">board.h</a>
-</li>
-<li>GPIOG_PIN8
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a5ec95eed12b8b0215fecb9c5a23d6927">board.h</a>
-</li>
-<li>GPIOG_PIN9
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a47913ea083a8ecb55a2bdb8483d220a4">board.h</a>
-</li>
 <li>GPIOH
 : <a class="el" href="sim_2mcu__periph_2gpio__arch_8h.html#adeacbb43ae86c879945afe98c679b285">gpio_arch.h</a>
-</li>
-<li>GPIOH_PIN0
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#aed1f892d7081dbeca1aaa8f78fa65cdc">board.h</a>
-</li>
-<li>GPIOH_PIN1
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a4bd6c9dad4dee694a06b013fcdc0aaaa">board.h</a>
-</li>
-<li>GPIOH_PIN10
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a63ab98b9632d8f0243baf905ea16215f">board.h</a>
-</li>
-<li>GPIOH_PIN11
-: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#aa8dcfc054640bf2172a9b4eaf8a6dfdb">board.h</a>
-</li>
-<li>GPIOH_PIN12
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a031d9b903404b280675918d76c04a2a2">board.h</a>
-</li>
-<li>GPIOH_PIN13
-: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#a35687aeddfc40b29b30855d1ecbb6ba2">board.h</a>
-</li>
-<li>GPIOH_PIN14
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#ac0549b8a13632c46bb758b20da0d112a">board.h</a>
-</li>
-<li>GPIOH_PIN15
-: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#a62978e558c51ab97538eff6819751832">board.h</a>
-</li>
-<li>GPIOH_PIN2
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a4b786724bf2f9fae66f93ab754624f91">board.h</a>
-</li>
-<li>GPIOH_PIN3
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a5b8260ee0b4c0b185a544c5a39e88f54">board.h</a>
-</li>
-<li>GPIOH_PIN4
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#a1f738a9bd369d0705d9790e05dd9a4bd">board.h</a>
-</li>
-<li>GPIOH_PIN5
-: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#a422980a0bb0d929c6f5f6bd830e13756">board.h</a>
-</li>
-<li>GPIOH_PIN6
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#acffa05a8468ff48b56a6ffea3f57c039">board.h</a>
-</li>
-<li>GPIOH_PIN7
-: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#a6e0d4b68e35b3aa70dec486c014f10b9">board.h</a>
-</li>
-<li>GPIOH_PIN8
-: <a class="el" href="stm32f3__discovery_2chibios_2v1_80_2board_8h.html#af7b3c5c14e7e87da74f6b9218761ad42">board.h</a>
-</li>
-<li>GPIOH_PIN9
-: <a class="el" href="xvert_2chibios_2v1_80_2board_8h.html#a21b72d04e9883f826c9b5a9851fc37a5">board.h</a>
 </li>
 <li>GPS_ARDRONE2_ID
 : <a class="el" href="abi__sender__ids_8h.html#a89ee30b4159982f2c1f7a14b7cad3a04">abi_sender_ids.h</a>
@@ -1415,30 +932,30 @@ $(document).ready(function(){initNavTree('globals_defs_g.html','');});
 : <a class="el" href="gps_8h.html#a75e36ec8607f707f480ac824c7f793ef">gps.h</a>
 </li>
 <li>GPS_UBX_ENABLE_NMEA_DATA_MASK
-: <a class="el" href="disco_8h.html#a795637c038061d50a428834973f875ef">disco.h</a>
-, <a class="el" href="bebop_8h.html#a795637c038061d50a428834973f875ef">bebop.h</a>
+: <a class="el" href="bebop_8h.html#a795637c038061d50a428834973f875ef">bebop.h</a>
 , <a class="el" href="swing_8h.html#a795637c038061d50a428834973f875ef">swing.h</a>
 , <a class="el" href="gps__ubx__ucenter_8c.html#a795637c038061d50a428834973f875ef">gps_ubx_ucenter.c</a>
+, <a class="el" href="disco_8h.html#a795637c038061d50a428834973f875ef">disco.h</a>
 </li>
 <li>GPS_UBX_ERR_CHECKSUM
-: <a class="el" href="rtcm3_8h.html#a8af86e1c457538b935baacc381f422dc">rtcm3.h</a>
-, <a class="el" href="gps__ubx_8c.html#a8af86e1c457538b935baacc381f422dc">gps_ubx.c</a>
+: <a class="el" href="gps__ubx_8c.html#a8af86e1c457538b935baacc381f422dc">gps_ubx.c</a>
+, <a class="el" href="rtcm3_8h.html#a8af86e1c457538b935baacc381f422dc">rtcm3.h</a>
 </li>
 <li>GPS_UBX_ERR_MSG_TOO_LONG
-: <a class="el" href="rtcm3_8h.html#a6c7dd4d0942f7ec06c99e4f5b0c85982">rtcm3.h</a>
-, <a class="el" href="gps__ubx_8c.html#a6c7dd4d0942f7ec06c99e4f5b0c85982">gps_ubx.c</a>
+: <a class="el" href="gps__ubx_8c.html#a6c7dd4d0942f7ec06c99e4f5b0c85982">gps_ubx.c</a>
+, <a class="el" href="rtcm3_8h.html#a6c7dd4d0942f7ec06c99e4f5b0c85982">rtcm3.h</a>
 </li>
 <li>GPS_UBX_ERR_NONE
-: <a class="el" href="rtcm3_8h.html#a4b19958cbccbc8c2c91ce9828f59721e">rtcm3.h</a>
-, <a class="el" href="gps__ubx_8c.html#a4b19958cbccbc8c2c91ce9828f59721e">gps_ubx.c</a>
+: <a class="el" href="gps__ubx_8c.html#a4b19958cbccbc8c2c91ce9828f59721e">gps_ubx.c</a>
+, <a class="el" href="rtcm3_8h.html#a4b19958cbccbc8c2c91ce9828f59721e">rtcm3.h</a>
 </li>
 <li>GPS_UBX_ERR_OUT_OF_SYNC
 : <a class="el" href="gps__ubx_8c.html#af2686e059a3acebbbe398e9bd7fb155c">gps_ubx.c</a>
 , <a class="el" href="rtcm3_8h.html#af2686e059a3acebbbe398e9bd7fb155c">rtcm3.h</a>
 </li>
 <li>GPS_UBX_ERR_OVERRUN
-: <a class="el" href="rtcm3_8h.html#a31567a4e7127d2caff45ae4a3c8f57b3">rtcm3.h</a>
-, <a class="el" href="gps__ubx_8c.html#a31567a4e7127d2caff45ae4a3c8f57b3">gps_ubx.c</a>
+: <a class="el" href="gps__ubx_8c.html#a31567a4e7127d2caff45ae4a3c8f57b3">gps_ubx.c</a>
+, <a class="el" href="rtcm3_8h.html#a31567a4e7127d2caff45ae4a3c8f57b3">rtcm3.h</a>
 </li>
 <li>GPS_UBX_ERR_UNEXPECTED
 : <a class="el" href="gps__ubx_8c.html#a2a445739849feb8372c804feacf01ee5">gps_ubx.c</a>
@@ -1448,8 +965,8 @@ $(document).ready(function(){initNavTree('globals_defs_g.html','');});
 : <a class="el" href="abi__sender__ids_8h.html#acf3cb8ecc014c5b1d2224b6ff412eeff">abi_sender_ids.h</a>
 </li>
 <li>GPS_UBX_MAX_PAYLOAD
-: <a class="el" href="gps__ubx_8h.html#ae492c405c3e7a1b93c91507b2aab2538">gps_ubx.h</a>
-, <a class="el" href="rtcm3_8h.html#ae492c405c3e7a1b93c91507b2aab2538">rtcm3.h</a>
+: <a class="el" href="rtcm3_8h.html#ae492c405c3e7a1b93c91507b2aab2538">rtcm3.h</a>
+, <a class="el" href="gps__ubx_8h.html#ae492c405c3e7a1b93c91507b2aab2538">gps_ubx.h</a>
 </li>
 <li>GPS_UBX_NAV5_DYNAMICS
 : <a class="el" href="gps__ubx__ucenter_8c.html#aebbf8779525abb9e3be454022b86cb8e">gps_ubx_ucenter.c</a>
@@ -1620,11 +1137,11 @@ $(document).ready(function(){initNavTree('globals_defs_g.html','');});
 : <a class="el" href="rotorcraft_2guidance_2guidance__h_8h.html#afde85d56c5c5d37ece2c4bfb640e72b5">guidance_h.h</a>
 </li>
 <li>GUIDANCE_H_MODE_MODULE_SETTING
-: <a class="el" href="ctrl__module__outerloop__demo_8h.html#ad1204ab358ff89918b7365faa943bcbd">ctrl_module_outerloop_demo.h</a>
-, <a class="el" href="optical__flow__hover_8h.html#ad1204ab358ff89918b7365faa943bcbd">optical_flow_hover.h</a>
-, <a class="el" href="optical__flow__landing_8h.html#ad1204ab358ff89918b7365faa943bcbd">optical_flow_landing.h</a>
-, <a class="el" href="vertical__ctrl__module__demo_8h.html#ad1204ab358ff89918b7365faa943bcbd">vertical_ctrl_module_demo.h</a>
+: <a class="el" href="vertical__ctrl__module__demo_8h.html#ad1204ab358ff89918b7365faa943bcbd">vertical_ctrl_module_demo.h</a>
+, <a class="el" href="ctrl__module__outerloop__demo_8h.html#ad1204ab358ff89918b7365faa943bcbd">ctrl_module_outerloop_demo.h</a>
 , <a class="el" href="ctrl__module__innerloop__demo_8h.html#ad1204ab358ff89918b7365faa943bcbd">ctrl_module_innerloop_demo.h</a>
+, <a class="el" href="optical__flow__landing_8h.html#ad1204ab358ff89918b7365faa943bcbd">optical_flow_landing.h</a>
+, <a class="el" href="optical__flow__hover_8h.html#ad1204ab358ff89918b7365faa943bcbd">optical_flow_hover.h</a>
 </li>
 <li>GUIDANCE_H_MODE_NAV
 : <a class="el" href="rotorcraft_2guidance_2guidance__h_8h.html#a0695fb38a9f3b93b7be3484568e0be1a">guidance_h.h</a>
@@ -1665,6 +1182,9 @@ $(document).ready(function(){initNavTree('globals_defs_g.html','');});
 <li>GUIDANCE_H_VGAIN
 : <a class="el" href="rotorcraft_2guidance_2guidance__h_8c.html#a155cf8631cb4b34c36378228b5eebd7e">guidance_h.c</a>
 </li>
+<li>GUIDANCE_HEADING_IS_FREE
+: <a class="el" href="rotorcraft_2guidance_2guidance__h_8c.html#ad813e085ab8c71e077ee1b1185667170">guidance_h.c</a>
+</li>
 <li>GUIDANCE_INDI
 : <a class="el" href="rotorcraft_2guidance_2guidance__h_8c.html#a7fa3b32cec001ff76758875b19183cd4">guidance_h.c</a>
 </li>
@@ -1672,7 +1192,23 @@ $(document).ready(function(){initNavTree('globals_defs_g.html','');});
 : <a class="el" href="guidance__indi_8c.html#a020db8e65be95b4dfa61423391d20434">guidance_indi.c</a>
 </li>
 <li>GUIDANCE_INDI_FILTER_CUTOFF
-: <a class="el" href="guidance__indi_8c.html#aabdf5197f9c3258629ccee0bed08645b">guidance_indi.c</a>
+: <a class="el" href="guidance__indi__hybrid_8c.html#aabdf5197f9c3258629ccee0bed08645b">guidance_indi_hybrid.c</a>
+, <a class="el" href="guidance__indi_8c.html#aabdf5197f9c3258629ccee0bed08645b">guidance_indi.c</a>
+</li>
+<li>GUIDANCE_INDI_PITCH_EFF_SCALING
+: <a class="el" href="guidance__indi__hybrid_8c.html#acedb2156e6867b5b21a2b938b5e09728">guidance_indi_hybrid.c</a>
+</li>
+<li>GUIDANCE_INDI_POS_GAIN
+: <a class="el" href="guidance__indi__hybrid_8c.html#a69f0c186c919cfa3160c6f58370142bb">guidance_indi_hybrid.c</a>
+</li>
+<li>GUIDANCE_INDI_POS_GAINZ
+: <a class="el" href="guidance__indi__hybrid_8c.html#ad6f52208c55c4a6966691272b84887c0">guidance_indi_hybrid.c</a>
+</li>
+<li>GUIDANCE_INDI_SPEED_GAIN
+: <a class="el" href="guidance__indi__hybrid_8c.html#af97bf00bfb251541ea611bac98d9f92f">guidance_indi_hybrid.c</a>
+</li>
+<li>GUIDANCE_INDI_SPEED_GAINZ
+: <a class="el" href="guidance__indi__hybrid_8c.html#a1dd904caf75df70108fbf333279f5ee6">guidance_indi_hybrid.c</a>
 </li>
 <li>GUIDANCE_V_ADAPT_INITIAL_HOVER_THROTTLE
 : <a class="el" href="guidance__v__adapt_8c.html#a491f930739b79d2e901c22ff7bf6b255">guidance_v_adapt.c</a>
@@ -1753,11 +1289,11 @@ $(document).ready(function(){initNavTree('globals_defs_g.html','');});
 : <a class="el" href="rotorcraft_2guidance_2guidance__v_8h.html#ae0541af6ebdc6c4021a2bb5922663a6e">guidance_v.h</a>
 </li>
 <li>GUIDANCE_V_MODE_MODULE_SETTING
-: <a class="el" href="optical__flow__hover_8h.html#a530e2bc7468050db21efc20f40ec79f5">optical_flow_hover.h</a>
-, <a class="el" href="ctrl__module__outerloop__demo_8h.html#a530e2bc7468050db21efc20f40ec79f5">ctrl_module_outerloop_demo.h</a>
+: <a class="el" href="ctrl__module__innerloop__demo_8h.html#a530e2bc7468050db21efc20f40ec79f5">ctrl_module_innerloop_demo.h</a>
 , <a class="el" href="optical__flow__landing_8h.html#a530e2bc7468050db21efc20f40ec79f5">optical_flow_landing.h</a>
-, <a class="el" href="ctrl__module__innerloop__demo_8h.html#a530e2bc7468050db21efc20f40ec79f5">ctrl_module_innerloop_demo.h</a>
 , <a class="el" href="vertical__ctrl__module__demo_8h.html#a530e2bc7468050db21efc20f40ec79f5">vertical_ctrl_module_demo.h</a>
+, <a class="el" href="optical__flow__hover_8h.html#a530e2bc7468050db21efc20f40ec79f5">optical_flow_hover.h</a>
+, <a class="el" href="ctrl__module__outerloop__demo_8h.html#a530e2bc7468050db21efc20f40ec79f5">ctrl_module_outerloop_demo.h</a>
 </li>
 <li>GUIDANCE_V_MODE_NAV
 : <a class="el" href="rotorcraft_2guidance_2guidance__v_8h.html#acf327c70e058c173f8a006360068759f">guidance_v.h</a>
@@ -1927,6 +1463,105 @@ $(document).ready(function(){initNavTree('globals_defs_g.html','');});
 <li>GVF_LINE_KN
 : <a class="el" href="gvf__line_8c.html#ac6ef4d77f03d9a1615d4abc56d23a6d0">gvf_line.c</a>
 </li>
+<li>GVF_PARAMETRIC_2D_TREFOIL_ALPHA
+: <a class="el" href="gvf__parametric__2d__trefoil_8c.html#a015bff889b48464d7e789752d4914ec4">gvf_parametric_2d_trefoil.c</a>
+</li>
+<li>GVF_PARAMETRIC_2D_TREFOIL_KX
+: <a class="el" href="gvf__parametric__2d__trefoil_8c.html#a906fd34f4dec8d25a6505ce8d36f4c2c">gvf_parametric_2d_trefoil.c</a>
+</li>
+<li>GVF_PARAMETRIC_2D_TREFOIL_KY
+: <a class="el" href="gvf__parametric__2d__trefoil_8c.html#a2e907f18b75a6e1ac5b9c547d3bea9dc">gvf_parametric_2d_trefoil.c</a>
+</li>
+<li>GVF_PARAMETRIC_2D_TREFOIL_R
+: <a class="el" href="gvf__parametric__2d__trefoil_8c.html#a65faa7b7b87fe1275b4c6723acf96b24">gvf_parametric_2d_trefoil.c</a>
+</li>
+<li>GVF_PARAMETRIC_2D_TREFOIL_RATIO
+: <a class="el" href="gvf__parametric__2d__trefoil_8c.html#acded6b0d4636ed58faf3bd507d490123">gvf_parametric_2d_trefoil.c</a>
+</li>
+<li>GVF_PARAMETRIC_2D_TREFOIL_W1
+: <a class="el" href="gvf__parametric__2d__trefoil_8c.html#aee0db973d1d529c3b3aa506525aaf02c">gvf_parametric_2d_trefoil.c</a>
+</li>
+<li>GVF_PARAMETRIC_2D_TREFOIL_W2
+: <a class="el" href="gvf__parametric__2d__trefoil_8c.html#aba8ec7f724c753ae030c2a5521d44c7d">gvf_parametric_2d_trefoil.c</a>
+</li>
+<li>GVF_PARAMETRIC_3D_ELLIPSE_ALPHA
+: <a class="el" href="gvf__parametric__3d__ellipse_8c.html#a8eb239b143e2c861f83c48d3ffa669c1">gvf_parametric_3d_ellipse.c</a>
+</li>
+<li>GVF_PARAMETRIC_3D_ELLIPSE_KX
+: <a class="el" href="gvf__parametric__3d__ellipse_8c.html#a09adefb842c66b6f9359dbfbba815bb1">gvf_parametric_3d_ellipse.c</a>
+</li>
+<li>GVF_PARAMETRIC_3D_ELLIPSE_KY
+: <a class="el" href="gvf__parametric__3d__ellipse_8c.html#a844b560b5e054c01e8f52b15600dc8dc">gvf_parametric_3d_ellipse.c</a>
+</li>
+<li>GVF_PARAMETRIC_3D_ELLIPSE_KZ
+: <a class="el" href="gvf__parametric__3d__ellipse_8c.html#aa40b372ddd62570f03e03e574cabacba">gvf_parametric_3d_ellipse.c</a>
+</li>
+<li>GVF_PARAMETRIC_3D_ELLIPSE_R
+: <a class="el" href="gvf__parametric__3d__ellipse_8c.html#ade814613b8be6838793cc40b6df01daf">gvf_parametric_3d_ellipse.c</a>
+</li>
+<li>GVF_PARAMETRIC_3D_ELLIPSE_ZH
+: <a class="el" href="gvf__parametric__3d__ellipse_8c.html#a8e6ded4f6b547948e3811803887cd279">gvf_parametric_3d_ellipse.c</a>
+</li>
+<li>GVF_PARAMETRIC_3D_ELLIPSE_ZL
+: <a class="el" href="gvf__parametric__3d__ellipse_8c.html#ac5c13c30df8acbe43c456bec3878b5a7">gvf_parametric_3d_ellipse.c</a>
+</li>
+<li>GVF_PARAMETRIC_3D_LISSAJOUS_ALPHA
+: <a class="el" href="gvf__parametric__3d__lissajous_8c.html#a39354f42026a015781031bbc2475f83c">gvf_parametric_3d_lissajous.c</a>
+</li>
+<li>GVF_PARAMETRIC_3D_LISSAJOUS_CX
+: <a class="el" href="gvf__parametric__3d__lissajous_8c.html#a1b4975f89bfa8511a6d8a39144dd6f8a">gvf_parametric_3d_lissajous.c</a>
+</li>
+<li>GVF_PARAMETRIC_3D_LISSAJOUS_CY
+: <a class="el" href="gvf__parametric__3d__lissajous_8c.html#aaacbfd1f5d2caa072088c6ec2bd4527a">gvf_parametric_3d_lissajous.c</a>
+</li>
+<li>GVF_PARAMETRIC_3D_LISSAJOUS_CZ
+: <a class="el" href="gvf__parametric__3d__lissajous_8c.html#abb3f1244d33755e20501da6454f5070f">gvf_parametric_3d_lissajous.c</a>
+</li>
+<li>GVF_PARAMETRIC_3D_LISSAJOUS_DX
+: <a class="el" href="gvf__parametric__3d__lissajous_8c.html#a966d019abdd7801a1ef2e3af40b0b140">gvf_parametric_3d_lissajous.c</a>
+</li>
+<li>GVF_PARAMETRIC_3D_LISSAJOUS_DY
+: <a class="el" href="gvf__parametric__3d__lissajous_8c.html#adeda95d853b8693ea32f77c68e6a435e">gvf_parametric_3d_lissajous.c</a>
+</li>
+<li>GVF_PARAMETRIC_3D_LISSAJOUS_DZ
+: <a class="el" href="gvf__parametric__3d__lissajous_8c.html#a9d195c027289b9c9fd9bb2154693617a">gvf_parametric_3d_lissajous.c</a>
+</li>
+<li>GVF_PARAMETRIC_3D_LISSAJOUS_KX
+: <a class="el" href="gvf__parametric__3d__lissajous_8c.html#a48067d060868180355e419f37eacbedb">gvf_parametric_3d_lissajous.c</a>
+</li>
+<li>GVF_PARAMETRIC_3D_LISSAJOUS_KY
+: <a class="el" href="gvf__parametric__3d__lissajous_8c.html#a947e5f0334c64b657237fb5b76498642">gvf_parametric_3d_lissajous.c</a>
+</li>
+<li>GVF_PARAMETRIC_3D_LISSAJOUS_KZ
+: <a class="el" href="gvf__parametric__3d__lissajous_8c.html#af7665df6eec67780b30594de91cebfee">gvf_parametric_3d_lissajous.c</a>
+</li>
+<li>GVF_PARAMETRIC_3D_LISSAJOUS_WX
+: <a class="el" href="gvf__parametric__3d__lissajous_8c.html#afce6552237ca7f7de90d40cac165b974">gvf_parametric_3d_lissajous.c</a>
+</li>
+<li>GVF_PARAMETRIC_3D_LISSAJOUS_WY
+: <a class="el" href="gvf__parametric__3d__lissajous_8c.html#a69b3fb0eb724ef8710ea45d821dca58e">gvf_parametric_3d_lissajous.c</a>
+</li>
+<li>GVF_PARAMETRIC_3D_LISSAJOUS_WZ
+: <a class="el" href="gvf__parametric__3d__lissajous_8c.html#a61d9094767475d47610720f7d6880317">gvf_parametric_3d_lissajous.c</a>
+</li>
+<li>GVF_PARAMETRIC_CONTROL_BETA
+: <a class="el" href="gvf__parametric_8h.html#a40e3b333228aca20ecfacc7f55af2816">gvf_parametric.h</a>
+</li>
+<li>GVF_PARAMETRIC_CONTROL_KCLIMB
+: <a class="el" href="gvf__parametric_8h.html#a2d70aff4fb4b008e98062fda4558a742">gvf_parametric.h</a>
+</li>
+<li>GVF_PARAMETRIC_CONTROL_KPSI
+: <a class="el" href="gvf__parametric_8h.html#a8e66ed35dc9cdaf0a69b81c3ddb80308">gvf_parametric.h</a>
+</li>
+<li>GVF_PARAMETRIC_CONTROL_KROLL
+: <a class="el" href="gvf__parametric_8h.html#a6e0131e826d8c330c72d30dc15899705">gvf_parametric.h</a>
+</li>
+<li>GVF_PARAMETRIC_CONTROL_L
+: <a class="el" href="gvf__parametric_8h.html#a39ca6d926dda3273c2eec68c562ba424">gvf_parametric.h</a>
+</li>
+<li>GVF_PARAMETRIC_GRAVITY
+: <a class="el" href="gvf__parametric_8h.html#a8c1b5cc5997a503ce3c4c34562ac66cc">gvf_parametric.h</a>
+</li>
 <li>GVF_SEGMENT_D1
 : <a class="el" href="gvf__line_8c.html#aa787325b236d36315c071676da2c44b1">gvf_line.c</a>
 </li>
@@ -1975,7 +1610,7 @@ $(document).ready(function(){initNavTree('globals_defs_g.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri May 15 2020 04:04:12 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:04:31 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

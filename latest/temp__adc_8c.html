@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -152,7 +152,7 @@ Macros</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:ac90f8f853caa5cf987dfeda71ae3a44b"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="temp__adc_8c.html#ac90f8f853caa5cf987dfeda71ae3a44b">get_temp</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> nr)</td></tr>
 <tr class="separator:ac90f8f853caa5cf987dfeda71ae3a44b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7d46c34d9cc451a4abac31cf37fb54c"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="temp__adc_8c.html#ad7d46c34d9cc451a4abac31cf37fb54c">calc_ntc</a> (<a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> raw_adc, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> pull_up_r, float a, float b, float c)</td></tr>
+<tr class="memitem:ad7d46c34d9cc451a4abac31cf37fb54c"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="temp__adc_8c.html#ad7d46c34d9cc451a4abac31cf37fb54c">calc_ntc</a> (<a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> raw_adc, <a class="el" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> pull_up_r, float a, float <a class="el" href="wedgebug_8c.html#a83fc1af92e29717b4513d121b0c72c7d">b</a>, float c)</td></tr>
 <tr class="memdesc:ad7d46c34d9cc451a4abac31cf37fb54c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the NTC tempreature in celcius based on the Steinhart equation.  <a href="#ad7d46c34d9cc451a4abac31cf37fb54c">More...</a><br /></td></tr>
 <tr class="separator:ad7d46c34d9cc451a4abac31cf37fb54c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5929b5b9a76cc7b8e5254ab2c9ebcf51"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="temp__adc_8c.html#a5929b5b9a76cc7b8e5254ab2c9ebcf51">calc_lm35</a> (<a class="el" href="types_8h.html#a269259c924dce846340ddbb810db2e3c">int16_t</a> raw_temp)</td></tr>
@@ -268,6 +268,8 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="temp__adc_8c_source.html#l00116">116</a> of file <a class="el" href="temp__adc_8c_source.html">temp_adc.c</a>.</p>
+
+<p>References <a class="el" href="wedgebug_8c_source.html#l00204">f</a>.</p>
 
 <p>Referenced by <a class="el" href="temp__adc_8c_source.html#l00151">temp_adc_periodic()</a>.</p>
 
@@ -444,7 +446,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="temp__adc_8c_source.html#l00129">129</a> of file <a class="el" href="temp__adc_8c_source.html">temp_adc.c</a>.</p>
 
-<p>References <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00281">adc_buf_channel()</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="telemetry_8c_source.html#l00046">register_periodic_telemetry()</a>, <a class="el" href="opa__ap__1_80_8h_source.html#l00212">TEMP_ADC_CHANNEL1</a>, <a class="el" href="opa__ap__1_80_8h_source.html#l00226">TEMP_ADC_CHANNEL2</a>, <a class="el" href="temp__adc_8c_source.html#l00121">temp_adc_downlink()</a>, <a class="el" href="temp__adc_8c_source.html#l00091">TEMP_ADC_NB_SAMPLES</a>, <a class="el" href="temp__adc_8c_source.html#l00034">temp_adc_sync_send</a>, and <a class="el" href="temp__adc_8c_source.html#l00098">TEMP_ADC_SYNC_SEND</a>.</p>
+<p>References <a class="el" href="chibios_2mcu__periph_2adc__arch_8c_source.html#l00289">adc_buf_channel()</a>, <a class="el" href="telemetry_8h_source.html#l00066">DefaultPeriodic</a>, <a class="el" href="telemetry_8c_source.html#l00046">register_periodic_telemetry()</a>, <a class="el" href="opa__ap__1_80_8h_source.html#l00212">TEMP_ADC_CHANNEL1</a>, <a class="el" href="opa__ap__1_80_8h_source.html#l00226">TEMP_ADC_CHANNEL2</a>, <a class="el" href="temp__adc_8c_source.html#l00121">temp_adc_downlink()</a>, <a class="el" href="temp__adc_8c_source.html#l00091">TEMP_ADC_NB_SAMPLES</a>, <a class="el" href="temp__adc_8c_source.html#l00034">temp_adc_sync_send</a>, and <a class="el" href="temp__adc_8c_source.html#l00098">TEMP_ADC_SYNC_SEND</a>.</p>
 
 <p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -585,7 +587,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_2f48bbb566df394f79dcf8fe0631584a.html">sensors</a></li><li class="navelem"><a class="el" href="temp__adc_8c.html">temp_adc.c</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:03:24 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:03:39 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

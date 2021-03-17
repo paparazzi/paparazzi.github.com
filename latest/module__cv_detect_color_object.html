@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -107,27 +107,26 @@ $(document).ready(function(){initNavTree('module__cv_detect_color_object.html','
 <p>Detects an object by a continuous color. Optionally draws on image.</p>
 <h1><a class="anchor" id="module_load_example__cv_detect_color_object"></a>
 Example for airframe file</h1>
-<p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;module name=&quot;video_thread&quot;/&gt;</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;&lt;module name=&quot;cv_detect_color_object&quot;&gt;</div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;  &lt;define name=&quot;COLOR_OBJECT_DETECTOR_CAMERA1&quot; value=&quot;front_camera|bottom_camera&quot; /&gt;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;  &lt;define name=&quot;COLOR_OBJECT_DETECTOR_FPS1&quot; value=&quot;0&quot; /&gt;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;  &lt;define name=&quot;COLOR_OBJECT_DETECTOR_LUM_MIN1&quot; value=&quot;0&quot; /&gt;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;  &lt;define name=&quot;COLOR_OBJECT_DETECTOR_LUM_MAX1&quot; value=&quot;0&quot; /&gt;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;  &lt;define name=&quot;COLOR_OBJECT_DETECTOR_CB_MIN1&quot; value=&quot;0&quot; /&gt;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  &lt;define name=&quot;COLOR_OBJECT_DETECTOR_CB_MAX1&quot; value=&quot;0&quot; /&gt;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  &lt;define name=&quot;COLOR_OBJECT_DETECTOR_CR_MIN1&quot; value=&quot;0&quot; /&gt;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  &lt;define name=&quot;COLOR_OBJECT_DETECTOR_CR_MAX1&quot; value=&quot;0&quot; /&gt;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  &lt;define name=&quot;COLOR_OBJECT_DETECTOR_DRAW1&quot; value=&quot;FALSE|TRUE&quot; /&gt;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  &lt;define name=&quot;COLOR_OBJECT_DETECTOR_CAMERA2&quot; value=&quot;front_camera|bottom_camera&quot; /&gt;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  &lt;define name=&quot;COLOR_OBJECT_DETECTOR_FPS2&quot; value=&quot;0&quot; /&gt;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  &lt;define name=&quot;COLOR_OBJECT_DETECTOR_LUM_MIN2&quot; value=&quot;0&quot; /&gt;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  &lt;define name=&quot;COLOR_OBJECT_DETECTOR_LUM_MAX2&quot; value=&quot;0&quot; /&gt;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  &lt;define name=&quot;COLOR_OBJECT_DETECTOR_CB_MIN2&quot; value=&quot;0&quot; /&gt;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  &lt;define name=&quot;COLOR_OBJECT_DETECTOR_CB_MAX2&quot; value=&quot;0&quot; /&gt;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  &lt;define name=&quot;COLOR_OBJECT_DETECTOR_CR_MIN2&quot; value=&quot;0&quot; /&gt;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  &lt;define name=&quot;COLOR_OBJECT_DETECTOR_CR_MAX2&quot; value=&quot;0&quot; /&gt;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  &lt;define name=&quot;COLOR_OBJECT_DETECTOR_DRAW2&quot; value=&quot;FALSE|TRUE&quot; /&gt;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;&lt;/module&gt;</div>
+<p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;module name=&quot;cv_detect_color_object&quot;&gt;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;  &lt;define name=&quot;COLOR_OBJECT_DETECTOR_CAMERA1&quot; value=&quot;front_camera|bottom_camera&quot; /&gt;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;  &lt;define name=&quot;COLOR_OBJECT_DETECTOR_FPS1&quot; value=&quot;0&quot; /&gt;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;  &lt;define name=&quot;COLOR_OBJECT_DETECTOR_LUM_MIN1&quot; value=&quot;0&quot; /&gt;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;  &lt;define name=&quot;COLOR_OBJECT_DETECTOR_LUM_MAX1&quot; value=&quot;0&quot; /&gt;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;  &lt;define name=&quot;COLOR_OBJECT_DETECTOR_CB_MIN1&quot; value=&quot;0&quot; /&gt;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;  &lt;define name=&quot;COLOR_OBJECT_DETECTOR_CB_MAX1&quot; value=&quot;0&quot; /&gt;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  &lt;define name=&quot;COLOR_OBJECT_DETECTOR_CR_MIN1&quot; value=&quot;0&quot; /&gt;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  &lt;define name=&quot;COLOR_OBJECT_DETECTOR_CR_MAX1&quot; value=&quot;0&quot; /&gt;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  &lt;define name=&quot;COLOR_OBJECT_DETECTOR_DRAW1&quot; value=&quot;FALSE|TRUE&quot; /&gt;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  &lt;define name=&quot;COLOR_OBJECT_DETECTOR_CAMERA2&quot; value=&quot;front_camera|bottom_camera&quot; /&gt;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  &lt;define name=&quot;COLOR_OBJECT_DETECTOR_FPS2&quot; value=&quot;0&quot; /&gt;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  &lt;define name=&quot;COLOR_OBJECT_DETECTOR_LUM_MIN2&quot; value=&quot;0&quot; /&gt;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  &lt;define name=&quot;COLOR_OBJECT_DETECTOR_LUM_MAX2&quot; value=&quot;0&quot; /&gt;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  &lt;define name=&quot;COLOR_OBJECT_DETECTOR_CB_MIN2&quot; value=&quot;0&quot; /&gt;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  &lt;define name=&quot;COLOR_OBJECT_DETECTOR_CB_MAX2&quot; value=&quot;0&quot; /&gt;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  &lt;define name=&quot;COLOR_OBJECT_DETECTOR_CR_MIN2&quot; value=&quot;0&quot; /&gt;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  &lt;define name=&quot;COLOR_OBJECT_DETECTOR_CR_MAX2&quot; value=&quot;0&quot; /&gt;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  &lt;define name=&quot;COLOR_OBJECT_DETECTOR_DRAW2&quot; value=&quot;FALSE|TRUE&quot; /&gt;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;&lt;/module&gt;</div>
 </div><!-- fragment --> <h1><a class="anchor" id="configuration__cv_detect_color_object"></a>
 Module configuration options</h1>
 <h2><a class="anchor" id="define"></a>
@@ -169,11 +168,6 @@ Define Options</h2>
  Description: Filter 2 max red chroma</li>
 <li><b>name:</b> <code>COLOR_OBJECT_DETECTOR_DRAW2</code> <b>value:</b> <em>FALSE|TRUE</em> <br />
  Description: Whether or not to draw on image</li>
-</ul>
-<h1><a class="anchor" id="dependencies__cv_detect_color_object"></a>
-Dependencies</h1>
-<ul>
-<li><a class="el" href="module__video_thread.html">video_thread module</a> </li>
 </ul>
 <h1><a class="anchor" id="functions__cv_detect_color_object"></a>
 Module functions</h1>
@@ -259,7 +253,9 @@ Raw cv_detect_color_object.xml file:</h2>
 <div class="line">    &lt;/dl_settings&gt;</div>
 <div class="line">  &lt;/settings&gt;</div>
 <div class="line"></div>
-<div class="line">  &lt;depends&gt;video_thread&lt;/depends&gt;</div>
+<div class="line">  &lt;dep&gt;</div>
+<div class="line">    &lt;depends&gt;video_thread&lt;/depends&gt;</div>
+<div class="line">  &lt;/dep&gt;</div>
 <div class="line"></div>
 <div class="line">  &lt;header&gt;</div>
 <div class="line">    &lt;file name=&quot;cv_detect_color_object.h&quot;/&gt;</div>
@@ -278,7 +274,7 @@ Raw cv_detect_color_object.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:03:39 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:03:56 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

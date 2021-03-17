@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -171,10 +171,10 @@ Functions</h2></td></tr>
 <tr class="separator:a7aa5809987d1552bb3089262270d4deb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad866a4c74ddf87b458a8cadc7a002ef2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__float__cmpl_8c.html#ad866a4c74ddf87b458a8cadc7a002ef2">ahrs_fc_update_gps</a> (struct <a class="el" href="gps_8h.html#structGpsState">GpsState</a> *gps_s)</td></tr>
 <tr class="separator:ad866a4c74ddf87b458a8cadc7a002ef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aebdc25e0d7025b98b96153d54e2b29c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__float__cmpl_8c.html#aebdc25e0d7025b98b96153d54e2b29c1">ahrs_fc_update_heading</a> (float <a class="el" href="ahrs__infrared_8c.html#ac5682e48513a771560df50e3b213e61a">heading</a>)</td></tr>
+<tr class="memitem:aebdc25e0d7025b98b96153d54e2b29c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__float__cmpl_8c.html#aebdc25e0d7025b98b96153d54e2b29c1">ahrs_fc_update_heading</a> (float <a class="el" href="wedgebug_8c.html#ac5682e48513a771560df50e3b213e61a">heading</a>)</td></tr>
 <tr class="memdesc:aebdc25e0d7025b98b96153d54e2b29c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update yaw based on a heading measurement.  <a href="#aebdc25e0d7025b98b96153d54e2b29c1">More...</a><br /></td></tr>
 <tr class="separator:aebdc25e0d7025b98b96153d54e2b29c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaabc7dc5bd1a6623dfd6b6642badcb1c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__float__cmpl_8c.html#aaabc7dc5bd1a6623dfd6b6642badcb1c">ahrs_fc_realign_heading</a> (float <a class="el" href="ahrs__infrared_8c.html#ac5682e48513a771560df50e3b213e61a">heading</a>)</td></tr>
+<tr class="memitem:aaabc7dc5bd1a6623dfd6b6642badcb1c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__float__cmpl_8c.html#aaabc7dc5bd1a6623dfd6b6642badcb1c">ahrs_fc_realign_heading</a> (float <a class="el" href="wedgebug_8c.html#ac5682e48513a771560df50e3b213e61a">heading</a>)</td></tr>
 <tr class="memdesc:aaabc7dc5bd1a6623dfd6b6642badcb1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hard reset yaw to a heading.  <a href="#aaabc7dc5bd1a6623dfd6b6642badcb1c">More...</a><br /></td></tr>
 <tr class="separator:aaabc7dc5bd1a6623dfd6b6642badcb1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcc12ae7ea66597015282905a669d8e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__float__cmpl_8c.html#abcc12ae7ea66597015282905a669d8e6">ahrs_fc_set_body_to_imu</a> (struct <a class="el" href="group__math__orientation__representation.html#structOrientationReps">OrientationReps</a> *<a class="el" href="ins__gps__passthrough_8c.html#a755effd49991d996e4703451d0edc293">body_to_imu</a>)</td></tr>
@@ -324,7 +324,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ahrs__float__cmpl_8c_source.html#l00118">118</a> of file <a class="el" href="ahrs__float__cmpl_8c_source.html">ahrs_float_cmpl.c</a>.</p>
 
-<p>References <a class="el" href="ahrs__float__cmpl_8c_source.html#l00080">ahrs_fc</a>, <a class="el" href="ahrs__float__cmpl_8h_source.html#l00040">AHRS_FC_RUNNING</a>, <a class="el" href="ahrs__float__utils_8h_source.html#l00059">ahrs_float_get_quat_from_accel()</a>, <a class="el" href="ahrs__float__utils_8h_source.html#l00083">ahrs_float_get_quat_from_accel_mag()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00236">float_rmat_of_quat()</a>, <a class="el" href="ahrs__float__cmpl_8h_source.html#l00044">AhrsFloatCmpl::gyro_bias</a>, <a class="el" href="ahrs__float__cmpl_8h_source.html#l00065">AhrsFloatCmpl::heading_aligned</a>, <a class="el" href="ahrs__float__cmpl_8h_source.html#l00076">AhrsFloatCmpl::is_aligned</a>, <a class="el" href="ahrs__float__cmpl_8h_source.html#l00047">AhrsFloatCmpl::ltp_to_imu_quat</a>, <a class="el" href="ahrs__float__cmpl_8h_source.html#l00048">AhrsFloatCmpl::ltp_to_imu_rmat</a>, and <a class="el" href="ahrs__float__cmpl_8h_source.html#l00075">AhrsFloatCmpl::status</a>.</p>
+<p>References <a class="el" href="ahrs__float__cmpl_8c_source.html#l00080">ahrs_fc</a>, <a class="el" href="ahrs__float__cmpl_8h_source.html#l00040">AHRS_FC_RUNNING</a>, <a class="el" href="ahrs__float__utils_8h_source.html#l00061">ahrs_float_get_quat_from_accel()</a>, <a class="el" href="ahrs__float__utils_8h_source.html#l00085">ahrs_float_get_quat_from_accel_mag()</a>, <a class="el" href="pprz__algebra__float_8c_source.html#l00236">float_rmat_of_quat()</a>, <a class="el" href="ahrs__float__cmpl_8h_source.html#l00044">AhrsFloatCmpl::gyro_bias</a>, <a class="el" href="ahrs__float__cmpl_8h_source.html#l00065">AhrsFloatCmpl::heading_aligned</a>, <a class="el" href="ahrs__float__cmpl_8h_source.html#l00076">AhrsFloatCmpl::is_aligned</a>, <a class="el" href="ahrs__float__cmpl_8h_source.html#l00047">AhrsFloatCmpl::ltp_to_imu_quat</a>, <a class="el" href="ahrs__float__cmpl_8h_source.html#l00048">AhrsFloatCmpl::ltp_to_imu_rmat</a>, and <a class="el" href="ahrs__float__cmpl_8h_source.html#l00075">AhrsFloatCmpl::status</a>.</p>
 
 <p>Referenced by <a class="el" href="ahrs__float__cmpl__wrapper_8c_source.html#l00218">aligner_cb()</a>.</p>
 
@@ -691,7 +691,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ahrs__float__cmpl_8c_source.html#l00398">398</a> of file <a class="el" href="ahrs__float__cmpl_8c_source.html">ahrs_float_cmpl.c</a>.</p>
 
-<p>References <a class="el" href="ahrs__float__cmpl_8c_source.html#l00080">ahrs_fc</a>, <a class="el" href="ahrs__float__cmpl_8c_source.html#l00473">ahrs_fc_realign_heading()</a>, <a class="el" href="ahrs__float__cmpl_8c_source.html#l00429">ahrs_fc_update_heading()</a>, <a class="el" href="airspeed__uADC_8c_source.html#l00057">course</a>, <a class="el" href="gps_8h_source.html#l00039">GPS_FIX_3D</a>, <a class="el" href="ahrs__float__cmpl_8h_source.html#l00065">AhrsFloatCmpl::heading_aligned</a>, <a class="el" href="ahrs__float__cmpl_8h_source.html#l00051">AhrsFloatCmpl::ltp_vel_norm</a>, and <a class="el" href="ahrs__float__cmpl_8h_source.html#l00052">AhrsFloatCmpl::ltp_vel_norm_valid</a>.</p>
+<p>References <a class="el" href="ahrs__float__cmpl_8c_source.html#l00080">ahrs_fc</a>, <a class="el" href="ahrs__float__cmpl_8c_source.html#l00473">ahrs_fc_realign_heading()</a>, <a class="el" href="ahrs__float__cmpl_8c_source.html#l00429">ahrs_fc_update_heading()</a>, <a class="el" href="airspeed__uADC_8c_source.html#l00058">course</a>, <a class="el" href="gps_8h_source.html#l00039">GPS_FIX_3D</a>, <a class="el" href="ahrs__float__cmpl_8h_source.html#l00065">AhrsFloatCmpl::heading_aligned</a>, <a class="el" href="ahrs__float__cmpl_8h_source.html#l00051">AhrsFloatCmpl::ltp_vel_norm</a>, and <a class="el" href="ahrs__float__cmpl_8h_source.html#l00052">AhrsFloatCmpl::ltp_vel_norm_valid</a>.</p>
 
 <p>Referenced by <a class="el" href="ahrs__float__cmpl__wrapper_8c_source.html#l00249">gps_cb()</a>.</p>
 
@@ -987,7 +987,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_46fef683200e96ccf1a2f608d90c4a2d.html">ahrs</a></li><li class="navelem"><a class="el" href="ahrs__float__cmpl_8c.html">ahrs_float_cmpl.c</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:03:30 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:03:46 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

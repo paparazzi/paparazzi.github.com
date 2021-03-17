@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -138,8 +138,8 @@ $(document).ready(function(){initNavTree('cv__opencvdemo_8c_source.html','');});
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;PRINT_CONFIG_VAR(<a class="code" href="cv__opencvdemo_8c.html#a6cb7d776ea092a7f1a777cdb42f7219b">OPENCVDEMO_FPS</a>)</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">// Function</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;struct <a class="code" href="image_8h.html#structimage__t">image_t</a> *<a class="code" href="cv__opencvdemo_8c.html#a5effea43b9cdfb2509b018a4d31da0f2">opencv_func</a>(struct <a class="code" href="image_8h.html#structimage__t">image_t</a> *img);</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="cv__opencvdemo_8c.html#a5effea43b9cdfb2509b018a4d31da0f2">   37</a></span>&#160;struct <a class="code" href="image_8h.html#structimage__t">image_t</a> *<a class="code" href="cv__opencvdemo_8c.html#a5effea43b9cdfb2509b018a4d31da0f2">opencv_func</a>(struct <a class="code" href="image_8h.html#structimage__t">image_t</a> *img)</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;struct <a class="code" href="image_8h.html#structimage__t">image_t</a> *<a class="code" href="cv__opencvdemo_8c.html#a8784b3fc20a615728bcc08abbad1d215">opencv_func</a>(struct <a class="code" href="image_8h.html#structimage__t">image_t</a> *img, <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> camera_id);</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="cv__opencvdemo_8c.html#a8784b3fc20a615728bcc08abbad1d215">   37</a></span>&#160;struct <a class="code" href="image_8h.html#structimage__t">image_t</a> *<a class="code" href="cv__opencvdemo_8c.html#a8784b3fc20a615728bcc08abbad1d215">opencv_func</a>(struct <a class="code" href="image_8h.html#structimage__t">image_t</a> *img, <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> camera_id)</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordflow">if</span> (img-&gt;type == <a class="code" href="image_8h.html#af039c7afe08a5eb2cff06e357227cdb8a704e82d01278e82c17283882911f9dfc">IMAGE_YUV422</a>) {</div>
@@ -154,26 +154,27 @@ $(document).ready(function(){initNavTree('cv__opencvdemo_8c_source.html','');});
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
 <div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="cv__opencvdemo_8h.html#ad6b89073e490f7f45751cf66f4b97c4b">   50</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="cv__opencvdemo_8c.html#ad6b89073e490f7f45751cf66f4b97c4b">opencvdemo_init</a>(<span class="keywordtype">void</span>)</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <a class="code" href="cv_8c.html#aee4ecc7b59c1526a024f91a46a34ff45">cv_add_to_device</a>(&amp;OPENCVDEMO_CAMERA, <a class="code" href="cv__opencvdemo_8c.html#a5effea43b9cdfb2509b018a4d31da0f2">opencv_func</a>, <a class="code" href="cv__opencvdemo_8c.html#a6cb7d776ea092a7f1a777cdb42f7219b">OPENCVDEMO_FPS</a>);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <a class="code" href="cv_8c.html#a27c5a4c16f124cdc564d637fcc733b97">cv_add_to_device</a>(&amp;OPENCVDEMO_CAMERA, <a class="code" href="cv__opencvdemo_8c.html#a8784b3fc20a615728bcc08abbad1d215">opencv_func</a>, <a class="code" href="cv__opencvdemo_8c.html#a6cb7d776ea092a7f1a777cdb42f7219b">OPENCVDEMO_FPS</a>, 0);</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
 <div class="ttc" id="opencv__example_8cpp_html_a6e9d13abcf561943ebba60b0b5f43565"><div class="ttname"><a href="opencv__example_8cpp.html#a6e9d13abcf561943ebba60b0b5f43565">opencv_example</a></div><div class="ttdeci">int opencv_example(char *img, int width, int height)</div><div class="ttdef"><b>Definition:</b> <a href="opencv__example_8cpp_source.html#l00038">opencv_example.cpp:38</a></div></div>
 <div class="ttc" id="cv__opencvdemo_8c_html_ad6b89073e490f7f45751cf66f4b97c4b"><div class="ttname"><a href="cv__opencvdemo_8c.html#ad6b89073e490f7f45751cf66f4b97c4b">opencvdemo_init</a></div><div class="ttdeci">void opencvdemo_init(void)</div><div class="ttdef"><b>Definition:</b> <a href="cv__opencvdemo_8c_source.html#l00050">cv_opencvdemo.c:50</a></div></div>
-<div class="ttc" id="image_8h_html_structimage__t"><div class="ttname"><a href="image_8h.html#structimage__t">image_t</a></div><div class="ttdef"><b>Definition:</b> <a href="image_8h_source.html#l00043">image.h:43</a></div></div>
+<div class="ttc" id="image_8h_html_structimage__t"><div class="ttname"><a href="image_8h.html#structimage__t">image_t</a></div><div class="ttdef"><b>Definition:</b> <a href="image_8h_source.html#l00044">image.h:44</a></div></div>
 <div class="ttc" id="cv__opencvdemo_8h_html"><div class="ttname"><a href="cv__opencvdemo_8h.html">cv_opencvdemo.h</a></div></div>
 <div class="ttc" id="cv__opencvdemo_8c_html_a6cb7d776ea092a7f1a777cdb42f7219b"><div class="ttname"><a href="cv__opencvdemo_8c.html#a6cb7d776ea092a7f1a777cdb42f7219b">OPENCVDEMO_FPS</a></div><div class="ttdeci">#define OPENCVDEMO_FPS</div><div class="ttdoc">Default FPS (zero means run at camera fps) </div><div class="ttdef"><b>Definition:</b> <a href="cv__opencvdemo_8c_source.html#l00031">cv_opencvdemo.c:31</a></div></div>
-<div class="ttc" id="cv_8c_html_aee4ecc7b59c1526a024f91a46a34ff45"><div class="ttname"><a href="cv_8c.html#aee4ecc7b59c1526a024f91a46a34ff45">cv_add_to_device</a></div><div class="ttdeci">struct video_listener * cv_add_to_device(struct video_config_t *device, cv_function func, uint16_t fps)</div><div class="ttdef"><b>Definition:</b> <a href="cv_8c_source.html#l00046">cv.c:46</a></div></div>
 <div class="ttc" id="opencv__example_8h_html"><div class="ttname"><a href="opencv__example_8h.html">opencv_example.h</a></div></div>
 <div class="ttc" id="cv_8h_html"><div class="ttname"><a href="cv_8h.html">cv.h</a></div><div class="ttdoc">Computer vision framework for onboard processing. </div></div>
+<div class="ttc" id="cv__opencvdemo_8c_html_a8784b3fc20a615728bcc08abbad1d215"><div class="ttname"><a href="cv__opencvdemo_8c.html#a8784b3fc20a615728bcc08abbad1d215">opencv_func</a></div><div class="ttdeci">struct image_t * opencv_func(struct image_t *img, uint8_t camera_id)</div><div class="ttdef"><b>Definition:</b> <a href="cv__opencvdemo_8c_source.html#l00037">cv_opencvdemo.c:37</a></div></div>
+<div class="ttc" id="cv_8c_html_a27c5a4c16f124cdc564d637fcc733b97"><div class="ttname"><a href="cv_8c.html#a27c5a4c16f124cdc564d637fcc733b97">cv_add_to_device</a></div><div class="ttdeci">struct video_listener * cv_add_to_device(struct video_config_t *device, cv_function func, uint16_t fps, uint8_t id)</div><div class="ttdef"><b>Definition:</b> <a href="cv_8c_source.html#l00046">cv.c:46</a></div></div>
+<div class="ttc" id="types_8h_html_aba7bc1797add20fe3efdf37ced1182c5"><div class="ttname"><a href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a></div><div class="ttdeci">unsigned char uint8_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00014">types.h:14</a></div></div>
 <div class="ttc" id="image_8h_html_af039c7afe08a5eb2cff06e357227cdb8a704e82d01278e82c17283882911f9dfc"><div class="ttname"><a href="image_8h.html#af039c7afe08a5eb2cff06e357227cdb8a704e82d01278e82c17283882911f9dfc">IMAGE_YUV422</a></div><div class="ttdoc">UYVY format (uint16 per pixel) </div><div class="ttdef"><b>Definition:</b> <a href="image_8h_source.html#l00036">image.h:36</a></div></div>
-<div class="ttc" id="cv__opencvdemo_8c_html_a5effea43b9cdfb2509b018a4d31da0f2"><div class="ttname"><a href="cv__opencvdemo_8c.html#a5effea43b9cdfb2509b018a4d31da0f2">opencv_func</a></div><div class="ttdeci">struct image_t * opencv_func(struct image_t *img)</div><div class="ttdef"><b>Definition:</b> <a href="cv__opencvdemo_8c_source.html#l00037">cv_opencvdemo.c:37</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_304e79c9f5d09ea65a2f55aafb6a6b9d.html">computer_vision</a></li><li class="navelem"><a class="el" href="cv__opencvdemo_8c.html">cv_opencvdemo.c</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:02:19 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:02:30 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

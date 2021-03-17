@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -153,7 +153,7 @@ Source Files</h2>
 Raw sonar_bebop.xml file:</h2>
 <div class="fragment"><div class="line">&lt;!DOCTYPE module SYSTEM &quot;module.dtd&quot;&gt;</div>
 <div class="line"></div>
-<div class="line">&lt;module name=&quot;sonar&quot;&gt;</div>
+<div class="line">&lt;module name=&quot;sonar_bebop&quot; dir=&quot;sonar&quot;&gt;</div>
 <div class="line">  &lt;doc&gt;</div>
 <div class="line">    &lt;description&gt;</div>
 <div class="line">     Bebop Sonar driver.</div>
@@ -164,6 +164,9 @@ Raw sonar_bebop.xml file:</h2>
 <div class="line">    &lt;define name=&quot;SONAR_BEBOP_FILTER_NARROW_OBSTACLES_JUMP&quot; value=&quot;0.4&quot; description=&quot;Sudden changes in sonar height larger than this value are neglected [unit: meters]&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;SONAR_BEBOP_FILTER_NARROW_OBSTACLES_TIME&quot; value=&quot;1.0&quot; description=&quot;Sudden changes in sonar height shorter than this value are neglected [unit: seconds]&quot;/&gt;</div>
 <div class="line">  &lt;/doc&gt;</div>
+<div class="line">  &lt;dep&gt;</div>
+<div class="line">    &lt;depends&gt;spi_master&lt;/depends&gt;</div>
+<div class="line">  &lt;/dep&gt;</div>
 <div class="line"></div>
 <div class="line">  &lt;header&gt;</div>
 <div class="line">    &lt;file name=&quot;sonar_bebop.h&quot;/&gt;</div>
@@ -177,9 +180,6 @@ Raw sonar_bebop.xml file:</h2>
 <div class="line">  &lt;makefile target=&quot;ap&quot;&gt;</div>
 <div class="line">    &lt;define name=&quot;USE_SPI0&quot; value=&quot;1&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;USE_ADC0&quot; value=&quot;1&quot;/&gt;</div>
-<div class="line">    &lt;raw&gt;</div>
-<div class="line">      include $(CFG_SHARED)/spi_master.makefile</div>
-<div class="line">    &lt;/raw&gt;</div>
 <div class="line">  &lt;/makefile&gt;</div>
 <div class="line"></div>
 <div class="line">&lt;/module&gt;</div>
@@ -189,7 +189,7 @@ Raw sonar_bebop.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:03:40 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:03:58 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

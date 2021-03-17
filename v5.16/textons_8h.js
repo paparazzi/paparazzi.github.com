@@ -1,0 +1,25 @@
+var textons_8h =
+[
+    [ "DictionaryTrainingYUV", "textons_8h.html#a89ba1b117446ed4075635e5d26107819", null ],
+    [ "DistributionExtraction", "textons_8h.html#acb1474caf9ec86b1856a974728be4a60", null ],
+    [ "load_texton_dictionary", "textons_8h.html#a21c316a603e6af19c1b7c42f5eabb16c", null ],
+    [ "save_texton_dictionary", "textons_8h.html#a078d928dcb614af8cba4d1eefe4aa12d", null ],
+    [ "textons_init", "textons_8h.html#ac363e3fda520a9cc84e35d929f01d62d", null ],
+    [ "textons_stop", "textons_8h.html#aba987c616eb0f83d63d1689238f4f7b6", null ],
+    [ "alpha", "textons_8h.html#ab1551d8043c2aa4410fb7dbb1fe3be7b", null ],
+    [ "alpha_uint", "textons_8h.html#aa7caf54cafbee8dab97e2c6a5ddf1c2e", null ],
+    [ "border_height", "textons_8h.html#ad239f51eb3b581eb4c76a6fcb7f92e2f", null ],
+    [ "border_width", "textons_8h.html#acc84bbf7292bdc04ee8fc730f6276d2a", null ],
+    [ "dictionary", "textons_8h.html#aa001b0d3ed88b85389ec8728067ee093", null ],
+    [ "dictionary_initialized", "textons_8h.html#a9ebc1bb4a6672dda6bd59f6ddf59b879", null ],
+    [ "dictionary_number", "textons_8h.html#ad9f4684e873bdf99de13d33c89db8efa", null ],
+    [ "dictionary_ready", "textons_8h.html#a8c8eda34950f8de3c4a9e02f8b68faad", null ],
+    [ "FULL_SAMPLING", "textons_8h.html#a73515c3cec3be7f534b5c2af9f191d12", null ],
+    [ "learned_samples", "textons_8h.html#a934c7714e1c12aa027f5b26430ae6976", null ],
+    [ "load_dictionary", "textons_8h.html#a6d2b99999b3e2213453a8050abaedb18", null ],
+    [ "n_learning_samples", "textons_8h.html#a637e42f623ef0ee9ebd5a45a21c54e56", null ],
+    [ "n_samples_image", "textons_8h.html#a91386c15d9ad570b03fc0f33a10de703", null ],
+    [ "n_textons", "textons_8h.html#a6da202ca26862bd404352c44f08b19b9", null ],
+    [ "patch_size", "textons_8h.html#a625ffd62a5d55f4e8fcf4e4af8ee23f7", null ],
+    [ "texton_distribution", "textons_8h.html#a37c1f9ffc95bdb92779d73f088750028", null ]
+];

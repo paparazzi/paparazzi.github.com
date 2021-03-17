@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -155,7 +155,7 @@ $(document).ready(function(){initNavTree('imavmarker_8c_source.html','');});
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *source = (<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *) input-&gt;buf;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <a class="code" href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> <a class="code" href="imavmarker_8h.html#ae1b23610248f940c28a2a76b6bea3e4f">x</a>, <a class="code" href="imavmarker_8h.html#a02d3035b637c12e06a34afa8e3d26e3e">y</a>, i, j, k;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  if (M &lt; 1) { M = 1; }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <a class="code" href="e__identification__fr_8c.html#a92cffae21318c1d983c63f3afa2a8d87">if</a> (M &lt; 1) { M = 1; }</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  source = (<a class="code" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *) input-&gt;buf;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordtype">int</span> maxx = 160;</div>
@@ -229,7 +229,8 @@ $(document).ready(function(){initNavTree('imavmarker_8c_source.html','');});
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;}</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
 <div class="ttc" id="types_8h_html_a273cf69d639a59973b6019625df33e30"><div class="ttname"><a href="types_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a></div><div class="ttdeci">unsigned short uint16_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00016">types.h:16</a></div></div>
-<div class="ttc" id="image_8h_html_structimage__t"><div class="ttname"><a href="image_8h.html#structimage__t">image_t</a></div><div class="ttdef"><b>Definition:</b> <a href="image_8h_source.html#l00043">image.h:43</a></div></div>
+<div class="ttc" id="e__identification__fr_8c_html_a92cffae21318c1d983c63f3afa2a8d87"><div class="ttname"><a href="e__identification__fr_8c.html#a92cffae21318c1d983c63f3afa2a8d87">if</a></div><div class="ttdeci">if(GpsFixValid()&amp;&amp;e_identification_started)</div><div class="ttdef"><b>Definition:</b> <a href="e__identification__fr_8c_source.html#l00159">e_identification_fr.c:159</a></div></div>
+<div class="ttc" id="image_8h_html_structimage__t"><div class="ttname"><a href="image_8h.html#structimage__t">image_t</a></div><div class="ttdef"><b>Definition:</b> <a href="image_8h_source.html#l00044">image.h:44</a></div></div>
 <div class="ttc" id="imavmarker_8h_html_a02d3035b637c12e06a34afa8e3d26e3e"><div class="ttname"><a href="imavmarker_8h.html#a02d3035b637c12e06a34afa8e3d26e3e">marker_deviation_t::y</a></div><div class="ttdeci">int32_t y</div><div class="ttdef"><b>Definition:</b> <a href="imavmarker_8h_source.html#l00034">imavmarker.h:34</a></div></div>
 <div class="ttc" id="ahrs__float__invariant_8c_html_a111da81ae5883147168bbb8366377b10"><div class="ttname"><a href="ahrs__float__invariant_8c.html#a111da81ae5883147168bbb8366377b10">B</a></div><div class="ttdeci">#define B</div><div class="ttdef"><b>Definition:</b> <a href="ahrs__float__invariant_8c_source.html#l00101">ahrs_float_invariant.c:101</a></div></div>
 <div class="ttc" id="imavmarker_8c_html_a25cbded05b3bc9af4935fd3effb98524"><div class="ttname"><a href="imavmarker_8c.html#a25cbded05b3bc9af4935fd3effb98524">Out</a></div><div class="ttdeci">#define Out(X, Y)</div><div class="ttdef"><b>Definition:</b> <a href="imavmarker_8c_source.html#l00040">imavmarker.c:40</a></div></div>
@@ -248,7 +249,7 @@ $(document).ready(function(){initNavTree('imavmarker_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_304e79c9f5d09ea65a2f55aafb6a6b9d.html">computer_vision</a></li><li class="navelem"><a class="el" href="dir_085e957c53d1527bb97919405ff6f1e3.html">blob</a></li><li class="navelem"><a class="el" href="imavmarker_8c.html">imavmarker.c</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:02:19 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:02:30 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

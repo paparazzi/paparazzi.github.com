@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -110,14 +110,8 @@ $(document).ready(function(){initNavTree('module__video_exif.html','');});
 </ul>
 <h1><a class="anchor" id="module_load_example__video_exif"></a>
 Example for airframe file</h1>
-<p>Add to your firmware section: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;module name=&quot;video_thread&quot;/&gt;</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;&lt;module name=&quot;video_exif&quot;/&gt;</div>
-</div><!-- fragment --> <h1><a class="anchor" id="dependencies__video_exif"></a>
-Dependencies</h1>
-<ul>
-<li><a class="el" href="module__video_thread.html">video_thread module</a> </li>
-</ul>
-<h1><a class="anchor" id="functions__video_exif"></a>
+<p>Add to your firmware section: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;module name=&quot;video_exif&quot;/&gt;</div>
+</div><!-- fragment --> <h1><a class="anchor" id="functions__video_exif"></a>
 Module functions</h1>
 <h2><a class="anchor" id="periodic_functions"></a>
 Periodic Functions</h2>
@@ -168,7 +162,9 @@ Raw video_exif.xml file:</h2>
 <div class="line">    &lt;/description&gt;</div>
 <div class="line">  &lt;/doc&gt;</div>
 <div class="line"></div>
-<div class="line">  &lt;depends&gt;video_thread&lt;/depends&gt;</div>
+<div class="line">  &lt;dep&gt;</div>
+<div class="line">    &lt;depends&gt;video_thread&lt;/depends&gt;</div>
+<div class="line">  &lt;/dep&gt;</div>
 <div class="line"></div>
 <div class="line">  &lt;header&gt;</div>
 <div class="line">    &lt;file name=&quot;lib/exif/exif_module.h&quot;/&gt;</div>
@@ -209,7 +205,7 @@ Raw video_exif.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:03:40 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:03:58 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

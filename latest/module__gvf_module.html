@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -107,17 +107,9 @@ $(document).ready(function(){initNavTree('module__gvf_module.html','');});
 <p>The algorithm is based on the idea of stearing the vehicle to a vector field that smoothly converges to the desired trajectory. For more details we refer to <a href="https://wiki.paparazziuav.org/wiki/Module/guidance_vector_field">https://wiki.paparazziuav.org/wiki/Module/guidance_vector_field</a> .</p>
 <h1><a class="anchor" id="module_load_example__gvf_module"></a>
 Example for airframe file</h1>
-<p>Add to your firmware section: This example contains all possible configuration options, not all of them are mandatory! </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;module name=&quot;gvf_module&quot;&gt;</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;  &lt;define name=&quot;NAV_SURVEY_POLY_GVF_DYNAMIC&quot; value=&quot;FALSE|TRUE&quot; /&gt;</div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;&lt;/module&gt;</div>
+<p>Add to your firmware section: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;module name=&quot;gvf_module&quot;/&gt;</div>
 </div><!-- fragment --> <h1><a class="anchor" id="configuration__gvf_module"></a>
 Module configuration options</h1>
-<h2><a class="anchor" id="define"></a>
-Define Options</h2>
-<ul>
-<li><b>name:</b> <code>NAV_SURVEY_POLY_GVF_DYNAMIC</code> <b>value:</b> <em>FALSE|TRUE</em> <br />
- Description: Set to true to allow changing sweep distance mid polygon survey</li>
-</ul>
 <h2><a class="anchor" id="af_section"></a>
 Airframe file section</h2>
 <ul>
@@ -196,7 +188,7 @@ Source Files</h2>
 Raw gvf_module.xml file:</h2>
 <div class="fragment"><div class="line">&lt;!DOCTYPE module SYSTEM &quot;module.dtd&quot;&gt;</div>
 <div class="line"></div>
-<div class="line">&lt;module name=&quot;gvf&quot; dir=&quot;guidance/gvf&quot;&gt;</div>
+<div class="line">&lt;module name=&quot;gvf_module&quot; dir=&quot;guidance/gvf&quot;&gt;</div>
 <div class="line">  &lt;doc&gt;</div>
 <div class="line">    &lt;description&gt;Guidance algorithm for tracking smooth trajectories. The algorithm is based on the idea of stearing the vehicle to a vector field that smoothly converges to the desired trajectory.</div>
 <div class="line">For more details we refer to https://wiki.paparazziuav.org/wiki/Module/guidance_vector_field .</div>
@@ -223,15 +215,12 @@ Raw gvf_module.xml file:</h2>
 <div class="line">      &lt;define name=&quot;OFF&quot; value=&quot;0&quot; description=&quot;Offset for the sinusoidal y=Asin(Wx + OFF)&quot; unit=&quot;rad&quot;/&gt;</div>
 <div class="line">      &lt;define name=&quot;A&quot; value=&quot;0&quot; description=&quot;Amplitude for the sinusoidal y=Asin(Wx + OFF)&quot; unit=&quot;m&quot;/&gt;</div>
 <div class="line">    &lt;/section&gt;</div>
-<div class="line"></div>
-<div class="line">    &lt;define name=&quot;NAV_SURVEY_POLY_GVF_DYNAMIC&quot; value=&quot;FALSE|TRUE&quot; description=&quot;Set to true to allow changing sweep distance mid polygon survey&quot;/&gt;</div>
 <div class="line">  &lt;/doc&gt;</div>
 <div class="line">  &lt;settings name=&quot;GVF&quot;&gt;</div>
 <div class="line">    &lt;dl_settings&gt;</div>
 <div class="line">      &lt;dl_settings NAME=&quot;GVF&quot;&gt;</div>
 <div class="line">        &lt;dl_settings NAME=&quot;Control&quot;&gt;</div>
 <div class="line">          &lt;dl_setting MAX=&quot;1&quot; MIN=&quot;-1&quot; STEP=&quot;2&quot; VAR=&quot;gvf_control.s&quot; shortname = &quot;direction&quot;/&gt;</div>
-<div class="line">          &lt;dl_setting min=&quot;0&quot; max=&quot;500&quot; step=&quot;1&quot; var=&quot;gvf_nav_survey_sweep&quot; type=&quot;float&quot; shortname=&quot;sweep&quot;/&gt;</div>
 <div class="line">        &lt;/dl_settings&gt;</div>
 <div class="line">        &lt;dl_settings NAME=&quot;Ellipse&quot;&gt;</div>
 <div class="line">          &lt;dl_setting MAX=&quot;5&quot; MIN=&quot;0.0&quot; STEP=&quot;0.01&quot; VAR=&quot;gvf_ellipse_par.ke&quot; shortname=&quot;ell_ke&quot; param=&quot;GVF_ELLIPSE_KE&quot;/&gt;</div>
@@ -285,7 +274,7 @@ Raw gvf_module.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:03:43 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:04:01 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -151,9 +151,9 @@ $(document).ready(function(){initNavTree('mag__hmc5843_8c_source.html','');});
 <div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="mag__hmc5843_8h.html#a73430e5bacbce50ebd8b9acf682c82aa">   40</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="mag__hmc5843_8c.html#a73430e5bacbce50ebd8b9acf682c82aa">hmc5843_module_periodic</a>(<span class="keywordtype">void</span>)</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <a class="code" href="hmc5843_8c.html#ab17f5e43fbd1dcadea20ede30e06568b">hmc5843_periodic</a>();</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <a class="code" href="mag__hmc5843_8c.html#ab4a98865f9a38e801fad6328688f3879">mag_x</a> = <a class="code" href="hmc5843_8c.html#a0d9d6f319b2ad8e47637ad83bb04dbe2">hmc5843</a>.<a class="code" href="hmc5843_8h.html#a02067906a833f5365c2e5a739c63b90b">data</a>.value[0];</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <a class="code" href="mag__hmc5843_8c.html#a8c9c4ce6f472a571bf1c748f07b77d28">mag_y</a> = <a class="code" href="hmc5843_8c.html#a0d9d6f319b2ad8e47637ad83bb04dbe2">hmc5843</a>.<a class="code" href="hmc5843_8h.html#a02067906a833f5365c2e5a739c63b90b">data</a>.value[1];</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <a class="code" href="mag__hmc5843_8c.html#a41b8debdd1aa236fdfa517d1860e26f8">mag_z</a> = <a class="code" href="hmc5843_8c.html#a0d9d6f319b2ad8e47637ad83bb04dbe2">hmc5843</a>.<a class="code" href="hmc5843_8h.html#a02067906a833f5365c2e5a739c63b90b">data</a>.value[2];</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <a class="code" href="mag__hmc5843_8c.html#ab4a98865f9a38e801fad6328688f3879">mag_x</a> = <a class="code" href="hmc5843_8c.html#a0d9d6f319b2ad8e47637ad83bb04dbe2">hmc5843</a>.<a class="code" href="hmc5843_8h.html#a31d576ec407f77614be145ed481f0acf">data</a>.value[0];</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <a class="code" href="mag__hmc5843_8c.html#a8c9c4ce6f472a571bf1c748f07b77d28">mag_y</a> = <a class="code" href="hmc5843_8c.html#a0d9d6f319b2ad8e47637ad83bb04dbe2">hmc5843</a>.<a class="code" href="hmc5843_8h.html#a31d576ec407f77614be145ed481f0acf">data</a>.value[1];</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <a class="code" href="mag__hmc5843_8c.html#a41b8debdd1aa236fdfa517d1860e26f8">mag_z</a> = <a class="code" href="hmc5843_8c.html#a0d9d6f319b2ad8e47637ad83bb04dbe2">hmc5843</a>.<a class="code" href="hmc5843_8h.html#a31d576ec407f77614be145ed481f0acf">data</a>.value[2];</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  RunOnceEvery(30, DOWNLINK_SEND_IMU_MAG_RAW(<a class="code" href="downlink_8h.html#a891b19a3eba08208d4e550aa6c6188dd">DefaultChannel</a>, <a class="code" href="downlink_8h.html#a028b405f95cecb4af565b17c8ee71d80">DefaultDevice</a>, &amp;<a class="code" href="mag__hmc5843_8c.html#ab4a98865f9a38e801fad6328688f3879">mag_x</a>, &amp;<a class="code" href="mag__hmc5843_8c.html#a8c9c4ce6f472a571bf1c748f07b77d28">mag_y</a>, &amp;<a class="code" href="mag__hmc5843_8c.html#a41b8debdd1aa236fdfa517d1860e26f8">mag_z</a>));</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
@@ -172,11 +172,11 @@ $(document).ready(function(){initNavTree('mag__hmc5843_8c_source.html','');});
 <div class="ttc" id="types_8h_html_a2ba621978a511250f7250fb10e05ffbe"><div class="ttname"><a href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a></div><div class="ttdeci">signed long int32_t</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00019">types.h:19</a></div></div>
 <div class="ttc" id="downlink_8h_html_a891b19a3eba08208d4e550aa6c6188dd"><div class="ttname"><a href="downlink_8h.html#a891b19a3eba08208d4e550aa6c6188dd">DefaultChannel</a></div><div class="ttdeci">#define DefaultChannel</div><div class="ttdef"><b>Definition:</b> <a href="downlink_8h_source.html#l00042">downlink.h:42</a></div></div>
 <div class="ttc" id="downlink_8h_html_a028b405f95cecb4af565b17c8ee71d80"><div class="ttname"><a href="downlink_8h.html#a028b405f95cecb4af565b17c8ee71d80">DefaultDevice</a></div><div class="ttdeci">#define DefaultDevice</div><div class="ttdef"><b>Definition:</b> <a href="downlink_8h_source.html#l00046">downlink.h:46</a></div></div>
-<div class="ttc" id="hmc5843_8h_html_a02067906a833f5365c2e5a739c63b90b"><div class="ttname"><a href="hmc5843_8h.html#a02067906a833f5365c2e5a739c63b90b">Hmc5843::data</a></div><div class="ttdeci">union Hmc5843::@314 data</div></div>
 <div class="ttc" id="downlink_8h_html"><div class="ttname"><a href="downlink_8h.html">downlink.h</a></div><div class="ttdoc">Common code for AP and FBW telemetry. </div></div>
 <div class="ttc" id="hmc5843_8c_html_ab17f5e43fbd1dcadea20ede30e06568b"><div class="ttname"><a href="hmc5843_8c.html#ab17f5e43fbd1dcadea20ede30e06568b">hmc5843_periodic</a></div><div class="ttdeci">void hmc5843_periodic(void)</div><div class="ttdef"><b>Definition:</b> <a href="hmc5843_8c_source.html#l00103">hmc5843.c:103</a></div></div>
 <div class="ttc" id="mag__hmc5843_8c_html_a8c9c4ce6f472a571bf1c748f07b77d28"><div class="ttname"><a href="mag__hmc5843_8c.html#a8c9c4ce6f472a571bf1c748f07b77d28">mag_y</a></div><div class="ttdeci">int32_t mag_y</div><div class="ttdef"><b>Definition:</b> <a href="mag__hmc5843_8c_source.html#l00029">mag_hmc5843.c:29</a></div></div>
 <div class="ttc" id="mag__hmc5843_8c_html_ab4a98865f9a38e801fad6328688f3879"><div class="ttname"><a href="mag__hmc5843_8c.html#ab4a98865f9a38e801fad6328688f3879">mag_x</a></div><div class="ttdeci">int32_t mag_x</div><div class="ttdef"><b>Definition:</b> <a href="mag__hmc5843_8c_source.html#l00029">mag_hmc5843.c:29</a></div></div>
+<div class="ttc" id="hmc5843_8h_html_a31d576ec407f77614be145ed481f0acf"><div class="ttname"><a href="hmc5843_8h.html#a31d576ec407f77614be145ed481f0acf">Hmc5843::data</a></div><div class="ttdeci">union Hmc5843::@316 data</div></div>
 <div class="ttc" id="hmc5843_8c_html_a0d9d6f319b2ad8e47637ad83bb04dbe2"><div class="ttname"><a href="hmc5843_8c.html#a0d9d6f319b2ad8e47637ad83bb04dbe2">hmc5843</a></div><div class="ttdeci">struct Hmc5843 hmc5843</div><div class="ttdef"><b>Definition:</b> <a href="hmc5843_8c_source.html#l00009">hmc5843.c:9</a></div></div>
 <div class="ttc" id="i2c_8h_html"><div class="ttname"><a href="i2c_8h.html">i2c.h</a></div><div class="ttdoc">Architecture independent I2C (Inter-Integrated Circuit Bus) API. </div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -185,7 +185,7 @@ $(document).ready(function(){initNavTree('mag__hmc5843_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_2f48bbb566df394f79dcf8fe0631584a.html">sensors</a></li><li class="navelem"><a class="el" href="mag__hmc5843_8c.html">mag_hmc5843.c</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:02:29 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:02:41 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -150,8 +150,18 @@ $(document).ready(function(){initNavTree('globals_vars_e.html','');});
 &#160;
 
 <h3><a class="anchor" id="index_e"></a>- e -</h3><ul>
+<li>e_identification_started
+: <a class="el" href="e__identification__fr_8c.html#ad7263c7800b269540bf18918c086e36d">e_identification_fr.c</a>
+, <a class="el" href="e__identification__fr_8h.html#ad7263c7800b269540bf18918c086e36d">e_identification_fr.h</a>
+</li>
 <li>Edge
 : <a class="el" href="nav__flower_8c.html#a59421ade3220a836f39ba4cd350853a2">nav_flower.c</a>
+</li>
+<li>edge_found_macro_confidence
+: <a class="el" href="wedgebug_8c.html#ab3c8aa37e53e1ded0be9539c454fb392">wedgebug.c</a>
+</li>
+<li>edge_search_area
+: <a class="el" href="wedgebug_8c.html#a9bcefccd0d7c555eac052989016cdfce">wedgebug.c</a>
 </li>
 <li>EdgeCurrentX
 : <a class="el" href="nav__flower_8c.html#aaf0b19fbdbcfdd8ab019e8e7eec83aa2">nav_flower.c</a>
@@ -260,6 +270,12 @@ $(document).ready(function(){initNavTree('globals_vars_e.html','');});
 <li>estimation_rate_dd
 : <a class="el" href="stabilization__indi_8c.html#a8ac3f45076fdd827f9abf74c955c1a51">stabilization_indi.c</a>
 </li>
+<li>euler_cmd
+: <a class="el" href="guidance__indi__hybrid_8c.html#abbf0d721f775293cc953c71dc69be5b7">guidance_indi_hybrid.c</a>
+</li>
+<li>eulers_zxy
+: <a class="el" href="guidance__indi__hybrid_8c.html#acc726e0c657cfeaae1f81dc88d0fbdba">guidance_indi_hybrid.c</a>
+</li>
 <li>ev
 : <a class="el" href="rssi_8c.html#a00b69071e42e110770211eea7f181cb3">rssi.c</a>
 </li>
@@ -270,12 +286,12 @@ $(document).ready(function(){initNavTree('globals_vars_e.html','');});
 : <a class="el" href="trilateration_8c.html#aaef81a3faa663f230c98c897fbec6a3d">trilateration.c</a>
 </li>
 <li>exception_flag
-: <a class="el" href="rotorcraft_2navigation_8c.html#adeee457a987f1cfcc2e8373d24dab99a">navigation.c</a>
-, <a class="el" href="rotorcraft_2navigation_8h.html#adeee457a987f1cfcc2e8373d24dab99a">navigation.h</a>
+: <a class="el" href="rotorcraft_2navigation_8h.html#adeee457a987f1cfcc2e8373d24dab99a">navigation.h</a>
+, <a class="el" href="rotorcraft_2navigation_8c.html#adeee457a987f1cfcc2e8373d24dab99a">navigation.c</a>
 </li>
 <li>exclude_bottom
-: <a class="el" href="detect__gate_8c.html#ae53e4d7c46dde5e5f8975c2e7c3cf868">detect_gate.c</a>
-, <a class="el" href="detect__gate_8h.html#ae53e4d7c46dde5e5f8975c2e7c3cf868">detect_gate.h</a>
+: <a class="el" href="detect__gate_8h.html#ae53e4d7c46dde5e5f8975c2e7c3cf868">detect_gate.h</a>
+, <a class="el" href="detect__gate_8c.html#ae53e4d7c46dde5e5f8975c2e7c3cf868">detect_gate.c</a>
 </li>
 <li>exclude_top
 : <a class="el" href="detect__gate_8c.html#ad6498d58fc8ce79a34c4e4f5bc544d90">detect_gate.c</a>
@@ -292,6 +308,9 @@ $(document).ready(function(){initNavTree('globals_vars_e.html','');});
 </li>
 <li>external_device
 : <a class="el" href="decawave__anchorless__communication_8c.html#a7e958d13be89b25b7812f105fa4c44b7">decawave_anchorless_communication.c</a>
+</li>
+<li>extiIo
+: <a class="el" href="cc2500__settings_8c.html#aa049a862a7363fc394cfe7a8adcea389">cc2500_settings.c</a>
 </li>
 <li>extra_dl_buffer
 : <a class="el" href="extra__pprz__dl_8c.html#a6b4b905f67b3133492603b5040e51768">extra_pprz_dl.c</a>
@@ -319,7 +338,7 @@ $(document).ready(function(){initNavTree('globals_vars_e.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri May 15 2020 04:04:11 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:04:30 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

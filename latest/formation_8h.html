@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -118,7 +118,8 @@ $(document).ready(function(){initNavTree('formation_8h.html','');});
 
 <p>Formation flight library.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;generated/airframe.h&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="datalink_8h_source.html">subsystems/datalink/datalink.h</a>&quot;</code><br />
+<code>#include &quot;generated/airframe.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="traffic__info_8h_source.html">modules/multi/traffic_info.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for formation.h:</div>
@@ -127,7 +128,7 @@ $(document).ready(function(){initNavTree('formation_8h.html','');});
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="formation_8h__incl.png" border="0" usemap="#sw_2airborne_2modules_2multi_2formation_8h" alt=""/></div>
 <map name="sw_2airborne_2modules_2multi_2formation_8h" id="sw_2airborne_2modules_2multi_2formation_8h">
-<area shape="rect" id="node3" href="traffic__info_8h.html" title="modules/multi/traffic\l_info.h" alt="" coords="572,95,725,136"/><area shape="rect" id="node4" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="180,266,351,293"/><area shape="rect" id="node10" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="520,259,670,300"/><area shape="rect" id="node18" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="746,259,897,300"/><area shape="rect" id="node21" href="gps_8h.html" title="Device independent GPS code (interface) " alt="" coords="632,184,771,211"/><area shape="rect" id="node5" href="inttypes_8h.html" title="inttypes.h" alt="" coords="370,355,455,382"/><area shape="rect" id="node11" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="746,355,870,382"/><area shape="rect" id="node12" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="480,355,620,382"/><area shape="rect" id="node13" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="871,437,1026,464"/><area shape="rect" id="node17" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="469,437,620,464"/><area shape="rect" id="node19" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="1052,355,1204,382"/></map>
+<area shape="rect" id="node2" href="datalink_8h.html" title="Handling of messages coming from ground and other A/Cs. " alt="" coords="369,95,523,136"/><area shape="rect" id="node6" href="traffic__info_8h.html" title="modules/multi/traffic\l_info.h" alt="" coords="729,95,883,136"/><area shape="rect" id="node7" href="sys__time_8h.html" title="Architecture independent timing functions. " alt="" coords="967,266,1138,293"/><area shape="rect" id="node12" href="pprz__geodetic__int_8h.html" title="Paparazzi fixed point math for geodetic calculations. " alt="" coords="720,259,871,300"/><area shape="rect" id="node20" href="pprz__geodetic__float_8h.html" title="Paparazzi floating point math for geodetic calculations. " alt="" coords="532,259,683,300"/><area shape="rect" id="node23" href="gps_8h.html" title="Device independent GPS code (interface) " alt="" coords="833,184,971,211"/><area shape="rect" id="node8" href="inttypes_8h.html" title="inttypes.h" alt="" coords="1010,355,1095,382"/><area shape="rect" id="node13" href="pprz__geodetic_8h.html" title="Paparazzi generic macros for geodetic calculations. " alt="" coords="545,355,669,382"/><area shape="rect" id="node14" href="pprz__algebra__int_8h.html" title="Paparazzi fixed point algebra. " alt="" coords="693,355,833,382"/><area shape="rect" id="node15" href="pprz__algebra_8h.html" title="Paparazzi generic algebra macros. " alt="" coords="265,437,419,464"/><area shape="rect" id="node19" href="pprz__trig__int_8h.html" title="Paparazzi fixed point trig functions. " alt="" coords="639,437,789,464"/><area shape="rect" id="node21" href="pprz__algebra__float_8h.html" title="Paparazzi floating point algebra. " alt="" coords="86,355,238,382"/></map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
@@ -172,8 +173,8 @@ Functions</h2></td></tr>
 <tr class="separator:a6827e5dcc339fa55b8c8d49bc3de0617"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaddb36dfcfa5356d7599cef8a7092c46"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="formation_8h.html#aaddb36dfcfa5356d7599cef8a7092c46">updateFormationStatus</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> id, <a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> <a class="el" href="nps__radio__control__spektrum_8c.html#ade818037fd6c985038ff29656089758d">status</a>)</td></tr>
 <tr class="separator:aaddb36dfcfa5356d7599cef8a7092c46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18d4015f5321ed70e9e074d637de4d20"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="formation_8h.html#a18d4015f5321ed70e9e074d637de4d20">parseFormationStatus</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *<a class="el" href="high__speed__logger__direct__memory_8c.html#a8ec495ebdeeb9cb5d6a1df0d6e728b28">buff</a>)</td></tr>
-<tr class="separator:a18d4015f5321ed70e9e074d637de4d20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7ddcb2371d4005235160016ce08d32d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="formation_8h.html#ab7ddcb2371d4005235160016ce08d32d">parseFormationStatus</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf)</td></tr>
+<tr class="separator:ab7ddcb2371d4005235160016ce08d32d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0466b00ca4b30a5c4a56e031ccd0beeb"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="formation_8h.html#a0466b00ca4b30a5c4a56e031ccd0beeb">parseFormationSlot</a> (<a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *buf)</td></tr>
 <tr class="separator:a0466b00ca4b30a5c4a56e031ccd0beeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f570279c6840dc962733dbac2b46413"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="formation_8h.html#a7f570279c6840dc962733dbac2b46413">start_formation</a> (void)</td></tr>
@@ -470,7 +471,7 @@ status</td>
 
 </div>
 </div>
-<a class="anchor" id="a18d4015f5321ed70e9e074d637de4d20"></a>
+<a class="anchor" id="ab7ddcb2371d4005235160016ce08d32d"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -481,7 +482,7 @@ status</td>
           <td class="memname">static void parseFormationStatus </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="types_8h.html#aba7bc1797add20fe3efdf37ced1182c5">uint8_t</a> *&#160;</td>
-          <td class="paramname"><em>buff</em></td><td>)</td>
+          <td class="paramname"><em>buf</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -501,8 +502,8 @@ status</td>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="formation_8h_a18d4015f5321ed70e9e074d637de4d20_cgraph.png" border="0" usemap="#formation_8h_a18d4015f5321ed70e9e074d637de4d20_cgraph" alt=""/></div>
-<map name="formation_8h_a18d4015f5321ed70e9e074d637de4d20_cgraph" id="formation_8h_a18d4015f5321ed70e9e074d637de4d20_cgraph">
+<div class="center"><img src="formation_8h_ab7ddcb2371d4005235160016ce08d32d_cgraph.png" border="0" usemap="#formation_8h_ab7ddcb2371d4005235160016ce08d32d_cgraph" alt=""/></div>
+<map name="formation_8h_ab7ddcb2371d4005235160016ce08d32d_cgraph" id="formation_8h_ab7ddcb2371d4005235160016ce08d32d_cgraph">
 <area shape="rect" id="node2" href="formation_8h.html#aaddb36dfcfa5356d7599cef8a7092c46" title="updateFormationStatus" alt="" coords="219,5,393,32"/></map>
 </div>
 </p>
@@ -594,7 +595,7 @@ status</td>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="formation_8h_aaddb36dfcfa5356d7599cef8a7092c46_icgraph.png" border="0" usemap="#formation_8h_aaddb36dfcfa5356d7599cef8a7092c46_icgraph" alt=""/></div>
 <map name="formation_8h_aaddb36dfcfa5356d7599cef8a7092c46_icgraph" id="formation_8h_aaddb36dfcfa5356d7599cef8a7092c46_icgraph">
-<area shape="rect" id="node2" href="formation_8h.html#a18d4015f5321ed70e9e074d637de4d20" title="parseFormationStatus" alt="" coords="228,5,393,32"/></map>
+<area shape="rect" id="node2" href="formation_8h.html#ab7ddcb2371d4005235160016ce08d32d" title="parseFormationStatus" alt="" coords="228,5,393,32"/></map>
 </div>
 </p>
 
@@ -798,7 +799,7 @@ status</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_280ddc4eab531a6a77fbd73e72656568.html">multi</a></li><li class="navelem"><a class="el" href="formation_8h.html">formation.h</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:03:20 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:03:35 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

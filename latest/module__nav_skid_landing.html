@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -185,7 +185,7 @@ Raw nav_skid_landing.xml file:</h2>
 <div class="line">  &lt;settings&gt;</div>
 <div class="line">    &lt;dl_settings&gt;</div>
 <div class="line">      &lt;dl_settings NAME=&quot;NavSkidLanding&quot;&gt;</div>
-<div class="line">        &lt;dl_setting var=&quot;v_ctl_landing_throttle_pgain&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;1000&quot; shortname=&quot;throttle_pgain&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting var=&quot;v_ctl_landing_throttle_pgain&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;1000&quot; shortname=&quot;throttle_pgain&quot; module=&quot;guidance/guidance_v&quot;/&gt;</div>
 <div class="line">        &lt;dl_setting var=&quot;v_ctl_landing_throttle_igain&quot; min=&quot;0&quot; step=&quot;0.1&quot; max=&quot;100&quot; shortname=&quot;throttle_igain&quot;/&gt;</div>
 <div class="line">        &lt;dl_setting var=&quot;v_ctl_landing_throttle_max&quot; min=&quot;0&quot; step=&quot;0.01&quot; max=&quot;1&quot; shortname=&quot;throttle_max&quot;/&gt;</div>
 <div class="line">        &lt;dl_setting var=&quot;v_ctl_landing_desired_speed&quot; min=&quot;1&quot; step=&quot;1&quot; max=&quot;50&quot; shortname=&quot;landing_speed&quot;/&gt;</div>
@@ -205,6 +205,10 @@ Raw nav_skid_landing.xml file:</h2>
 <div class="line">  &lt;makefile target=&quot;ap|sim|nps|hitl&quot;&gt;</div>
 <div class="line">    &lt;file name=&quot;nav_skid_landing.c&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;CTRL_VERTICAL_LANDING&quot; value=&quot;1&quot;/&gt;</div>
+<div class="line">    &lt;test firmware=&quot;fixedwing&quot;&gt;</div>
+<div class="line">      &lt;define name=&quot;CTRL_TYPE_H&quot; value=&quot;firmwares/fixedwing/guidance/guidance_v.h&quot; type=&quot;string&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;CTRL_VERTICAL_LANDING&quot;/&gt;</div>
+<div class="line">    &lt;/test&gt;</div>
 <div class="line">  &lt;/makefile&gt;</div>
 <div class="line">&lt;/module&gt;</div>
 <div class="line"></div>
@@ -214,7 +218,7 @@ Raw nav_skid_landing.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:03:40 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:03:57 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

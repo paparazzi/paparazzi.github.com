@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -164,7 +164,7 @@ $(document).ready(function(){initNavTree('ahrs__float__dcm__algebra_8h_source.ht
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">  }</span></div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">*/</span></div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="ahrs__float__dcm__algebra_8h.html#a89c3fa9a640f3ef92ae88f204d734ab3">   64</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="ahrs__float__dcm__algebra_8h.html#a89c3fa9a640f3ef92ae88f204d734ab3">Matrix_Multiply</a>(<span class="keywordtype">float</span> a[3][3], <span class="keywordtype">float</span> b[3][3], <span class="keywordtype">float</span> mat[3][3])</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="ahrs__float__dcm__algebra_8h.html#a89c3fa9a640f3ef92ae88f204d734ab3">   64</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="ahrs__float__dcm__algebra_8h.html#a89c3fa9a640f3ef92ae88f204d734ab3">Matrix_Multiply</a>(<span class="keywordtype">float</span> a[3][3], <span class="keywordtype">float</span> <a class="code" href="wedgebug_8c.html#a83fc1af92e29717b4513d121b0c72c7d">b</a>[3][3], <span class="keywordtype">float</span> mat[3][3])</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;{</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordtype">float</span> op[3];</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x = 0; x &lt; 3; x++) {</div>
@@ -182,6 +182,7 @@ $(document).ready(function(){initNavTree('ahrs__float__dcm__algebra_8h_source.ht
 <div class="ttc" id="discrete__ekf__no__north_8c_html_ae4ce3408adfdc26332e4271426728dc2ac8df954f7552d1072c2658e10df4f3a3"><div class="ttname"><a href="discrete__ekf__no__north_8c.html#ae4ce3408adfdc26332e4271426728dc2ac8df954f7552d1072c2658e10df4f3a3">v1</a></div><div class="ttdef"><b>Definition:</b> <a href="discrete__ekf__no__north_8c_source.html#l00034">discrete_ekf_no_north.c:34</a></div></div>
 <div class="ttc" id="ahrs__float__dcm__algebra_8h_html_a36658a6299aa7c59f8935b3b4c303124"><div class="ttname"><a href="ahrs__float__dcm__algebra_8h.html#a36658a6299aa7c59f8935b3b4c303124">Vector_Add</a></div><div class="ttdeci">static void Vector_Add(float vectorOut[3], float vectorIn1[3], float vectorIn2[3])</div><div class="ttdef"><b>Definition:</b> <a href="ahrs__float__dcm__algebra_8h_source.html#l00043">ahrs_float_dcm_algebra.h:43</a></div></div>
 <div class="ttc" id="ahrs__float__dcm__algebra_8h_html_abbc7df880bf45106d0b2fcc0f9ad7fde"><div class="ttname"><a href="ahrs__float__dcm__algebra_8h.html#abbc7df880bf45106d0b2fcc0f9ad7fde">Vector_Dot_Product</a></div><div class="ttdeci">static float Vector_Dot_Product(float vector1[3], float vector2[3])</div><div class="ttdef"><b>Definition:</b> <a href="ahrs__float__dcm__algebra_8h_source.html#l00024">ahrs_float_dcm_algebra.h:24</a></div></div>
+<div class="ttc" id="wedgebug_8c_html_a83fc1af92e29717b4513d121b0c72c7d"><div class="ttname"><a href="wedgebug_8c.html#a83fc1af92e29717b4513d121b0c72c7d">b</a></div><div class="ttdeci">float b</div><div class="ttdef"><b>Definition:</b> <a href="wedgebug_8c_source.html#l00202">wedgebug.c:202</a></div></div>
 <div class="ttc" id="ahrs__float__dcm__algebra_8h_html_acfdef0ee13b70a857c5b98cf98072fa3"><div class="ttname"><a href="ahrs__float__dcm__algebra_8h.html#acfdef0ee13b70a857c5b98cf98072fa3">Vector_Cross_Product</a></div><div class="ttdeci">static void Vector_Cross_Product(float vectorOut[3], float v1[3], float v2[3])</div><div class="ttdef"><b>Definition:</b> <a href="ahrs__float__dcm__algebra_8h_source.html#l00029">ahrs_float_dcm_algebra.h:29</a></div></div>
 <div class="ttc" id="ahrs__float__dcm__algebra_8h_html_aa2ea17a2b7db25753df083f03cff1a33"><div class="ttname"><a href="ahrs__float__dcm__algebra_8h.html#aa2ea17a2b7db25753df083f03cff1a33">Vector_Scale</a></div><div class="ttdeci">static void Vector_Scale(float vectorOut[3], float vectorIn[3], float scale2)</div><div class="ttdef"><b>Definition:</b> <a href="ahrs__float__dcm__algebra_8h_source.html#l00036">ahrs_float_dcm_algebra.h:36</a></div></div>
 <div class="ttc" id="discrete__ekf__no__north_8c_html_ae4ce3408adfdc26332e4271426728dc2a0aa2f691294ad7a0afdbb8f6f2323868"><div class="ttname"><a href="discrete__ekf__no__north_8c.html#ae4ce3408adfdc26332e4271426728dc2a0aa2f691294ad7a0afdbb8f6f2323868">v2</a></div><div class="ttdef"><b>Definition:</b> <a href="discrete__ekf__no__north_8c_source.html#l00034">discrete_ekf_no_north.c:34</a></div></div>
@@ -191,7 +192,7 @@ $(document).ready(function(){initNavTree('ahrs__float__dcm__algebra_8h_source.ht
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_46fef683200e96ccf1a2f608d90c4a2d.html">ahrs</a></li><li class="navelem"><a class="el" href="ahrs__float__dcm__algebra_8h.html">ahrs_float_dcm_algebra.h</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:02:33 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:02:46 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

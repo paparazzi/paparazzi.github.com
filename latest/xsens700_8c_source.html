@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -260,7 +260,7 @@ $(document).ready(function(){initNavTree('xsens700_8c_source.html','');});
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;      <span class="keywordtype">int</span> subpacklen = (int)<a class="code" href="xsens700_8c.html#adb52dd34dbd27ec4fd1d3386935aa42d">xsens700</a>.<a class="code" href="xsens700_8h.html#a66065057ea49121f8cc8b2ff01f490d6">parser</a>.<a class="code" href="xsens__parser_8h.html#a4a33c03d6cb7b32aab03a7177784eb01">msg_buf</a>[offset + 2];</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;      offset += 3;</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;      if (code1 == 0x10) {</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;      <a class="code" href="e__identification__fr_8c.html#a92cffae21318c1d983c63f3afa2a8d87">if</a> (code1 == 0x10) {</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <span class="keywordflow">if</span> (code2 == 0x10) {</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;          <span class="comment">// UTC</span></div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (code2 == 0x20) {</div>
@@ -398,6 +398,7 @@ $(document).ready(function(){initNavTree('xsens700_8c_source.html','');});
 <div class="ttc" id="xsens__parser_8h_html_af887fa0d4f09868b11edbf01356683e2"><div class="ttname"><a href="xsens__parser_8h.html#af887fa0d4f09868b11edbf01356683e2">XsensSend1ByAddr</a></div><div class="ttdeci">#define XsensSend1ByAddr(x)</div><div class="ttdef"><b>Definition:</b> <a href="xsens__parser_8h_source.html#l00067">xsens_parser.h:67</a></div></div>
 <div class="ttc" id="xsens700_8c_html_ab6203d489d4b6244e59ce3f8238f5c6f"><div class="ttname"><a href="xsens700_8c.html#ab6203d489d4b6244e59ce3f8238f5c6f">xsens_output_mode</a></div><div class="ttdeci">uint16_t xsens_output_mode</div><div class="ttdef"><b>Definition:</b> <a href="xsens700_8c_source.html#l00042">xsens700.c:42</a></div></div>
 <div class="ttc" id="gps_8h_html_a4531ee774c9d527018070ea34331b6ca"><div class="ttname"><a href="gps_8h.html#a4531ee774c9d527018070ea34331b6ca">GPS_VALID_VEL_NED_BIT</a></div><div class="ttdeci">#define GPS_VALID_VEL_NED_BIT</div><div class="ttdef"><b>Definition:</b> <a href="gps_8h_source.html#l00052">gps.h:52</a></div></div>
+<div class="ttc" id="e__identification__fr_8c_html_a92cffae21318c1d983c63f3afa2a8d87"><div class="ttname"><a href="e__identification__fr_8c.html#a92cffae21318c1d983c63f3afa2a8d87">if</a></div><div class="ttdeci">if(GpsFixValid()&amp;&amp;e_identification_started)</div><div class="ttdef"><b>Definition:</b> <a href="e__identification__fr_8c_source.html#l00159">e_identification_fr.c:159</a></div></div>
 <div class="ttc" id="xsens700_8c_html_a9bc5e834a5f045e6a5aa1ef5dee81055"><div class="ttname"><a href="xsens700_8c.html#a9bc5e834a5f045e6a5aa1ef5dee81055">xsens_output_settings</a></div><div class="ttdeci">uint32_t xsens_output_settings</div><div class="ttdef"><b>Definition:</b> <a href="xsens700_8c_source.html#l00043">xsens700.c:43</a></div></div>
 <div class="ttc" id="gps_8h_html_a63f1b81cf4a1e8e0fe80f065224826fe"><div class="ttname"><a href="gps_8h.html#a63f1b81cf4a1e8e0fe80f065224826fe">GPS_NB_CHANNELS</a></div><div class="ttdeci">#define GPS_NB_CHANNELS</div><div class="ttdef"><b>Definition:</b> <a href="gps_8h_source.html#l00057">gps.h:57</a></div></div>
 <div class="ttc" id="group__math__algebra__float_html_a75e3090314c4ad6edf12f7c08d9c5c0a"><div class="ttname"><a href="group__math__algebra__float.html#a75e3090314c4ad6edf12f7c08d9c5c0a">FloatRates::r</a></div><div class="ttdeci">float r</div><div class="ttdoc">in rad/s </div><div class="ttdef"><b>Definition:</b> <a href="pprz__algebra__float_8h_source.html#l00096">pprz_algebra_float.h:96</a></div></div>
@@ -456,7 +457,7 @@ $(document).ready(function(){initNavTree('xsens700_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_12fb52dac4e3837dec02c6544f4d82f8.html">ins</a></li><li class="navelem"><a class="el" href="xsens700_8c.html">xsens700.c</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:02:25 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:02:36 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

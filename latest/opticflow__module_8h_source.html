@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -136,7 +136,7 @@ $(document).ready(function(){initNavTree('opticflow__module_8h_source.html','');
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="opticflow__calculator_8h.html">opticflow/opticflow_calculator.h</a>&quot;</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">// Needed for settings</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">extern</span> <span class="keyword">struct </span><a class="code" href="opticflow__calculator_8h.html#structopticflow__t">opticflow_t</a> <a class="code" href="opticflow__module_8h.html#a4ed7d8828611f3355617fb6745ade2a0">opticflow</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">extern</span> <span class="keyword">struct </span><a class="code" href="opticflow__calculator_8h.html#structopticflow__t">opticflow_t</a> <a class="code" href="opticflow__module_8h.html#adc2fe8181950b9f3825b0ec86a1190fb">opticflow</a>[];</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">// Module functions</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="opticflow__module_8h.html#a6026660ee86fbb1f72bada581386e6d9">opticflow_module_init</a>(<span class="keywordtype">void</span>);</div>
@@ -145,20 +145,20 @@ $(document).ready(function(){initNavTree('opticflow__module_8h_source.html','');
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="opticflow__module_8h.html#a1670bbe4cd0b2ab998879be875925cef">opticflow_module_stop</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* OPTICFLOW_MODULE_H */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="opticflow__module_8h_html_a4ed7d8828611f3355617fb6745ade2a0"><div class="ttname"><a href="opticflow__module_8h.html#a4ed7d8828611f3355617fb6745ade2a0">opticflow</a></div><div class="ttdeci">struct opticflow_t opticflow</div><div class="ttdoc">Opticflow calculations. </div><div class="ttdef"><b>Definition:</b> <a href="opticflow__module_8c_source.html#l00054">opticflow_module.c:54</a></div></div>
 <div class="ttc" id="opticflow__module_8h_html_a1670bbe4cd0b2ab998879be875925cef"><div class="ttname"><a href="opticflow__module_8h.html#a1670bbe4cd0b2ab998879be875925cef">opticflow_module_stop</a></div><div class="ttdeci">void opticflow_module_stop(void)</div></div>
 <div class="ttc" id="opticflow__calculator_8h_html"><div class="ttname"><a href="opticflow__calculator_8h.html">opticflow_calculator.h</a></div><div class="ttdoc">Calculate velocity from optic flow. </div></div>
 <div class="ttc" id="opticflow__calculator_8h_html_structopticflow__t"><div class="ttname"><a href="opticflow__calculator_8h.html#structopticflow__t">opticflow_t</a></div><div class="ttdef"><b>Definition:</b> <a href="opticflow__calculator_8h_source.html#l00040">opticflow_calculator.h:40</a></div></div>
-<div class="ttc" id="opticflow__module_8h_html_abf53d072984591ae6710a65682d6bedb"><div class="ttname"><a href="opticflow__module_8h.html#abf53d072984591ae6710a65682d6bedb">opticflow_module_run</a></div><div class="ttdeci">void opticflow_module_run(void)</div><div class="ttdoc">Update the optical flow state for the calculation thread and update the stabilization loops with the ...</div><div class="ttdef"><b>Definition:</b> <a href="opticflow__module_8c_source.html#l00108">opticflow_module.c:108</a></div></div>
-<div class="ttc" id="opticflow__module_8h_html_a6026660ee86fbb1f72bada581386e6d9"><div class="ttname"><a href="opticflow__module_8h.html#a6026660ee86fbb1f72bada581386e6d9">opticflow_module_init</a></div><div class="ttdeci">void opticflow_module_init(void)</div><div class="ttdoc">Initialize the optical flow module for the bottom camera. </div><div class="ttdef"><b>Definition:</b> <a href="opticflow__module_8c_source.html#l00090">opticflow_module.c:90</a></div></div>
+<div class="ttc" id="opticflow__module_8h_html_abf53d072984591ae6710a65682d6bedb"><div class="ttname"><a href="opticflow__module_8h.html#abf53d072984591ae6710a65682d6bedb">opticflow_module_run</a></div><div class="ttdeci">void opticflow_module_run(void)</div><div class="ttdoc">Update the optical flow state for the calculation thread and update the stabilization loops with the ...</div><div class="ttdef"><b>Definition:</b> <a href="opticflow__module_8c_source.html#l00128">opticflow_module.c:128</a></div></div>
+<div class="ttc" id="opticflow__module_8h_html_a6026660ee86fbb1f72bada581386e6d9"><div class="ttname"><a href="opticflow__module_8h.html#a6026660ee86fbb1f72bada581386e6d9">opticflow_module_init</a></div><div class="ttdeci">void opticflow_module_init(void)</div><div class="ttdoc">Initialize the optical flow module for the bottom camera. </div><div class="ttdef"><b>Definition:</b> <a href="opticflow__module_8c_source.html#l00105">opticflow_module.c:105</a></div></div>
 <div class="ttc" id="opticflow__module_8h_html_a74f8b561efed21509627b8ebacc72eea"><div class="ttname"><a href="opticflow__module_8h.html#a74f8b561efed21509627b8ebacc72eea">opticflow_module_start</a></div><div class="ttdeci">void opticflow_module_start(void)</div></div>
+<div class="ttc" id="opticflow__module_8h_html_adc2fe8181950b9f3825b0ec86a1190fb"><div class="ttname"><a href="opticflow__module_8h.html#adc2fe8181950b9f3825b0ec86a1190fb">opticflow</a></div><div class="ttdeci">struct opticflow_t opticflow[]</div><div class="ttdoc">Opticflow calculations. </div><div class="ttdef"><b>Definition:</b> <a href="opticflow__module_8c_source.html#l00065">opticflow_module.c:65</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_c2abcdd6ccb39c3582929c0e3f5651c2.html">modules</a></li><li class="navelem"><a class="el" href="dir_304e79c9f5d09ea65a2f55aafb6a6b9d.html">computer_vision</a></li><li class="navelem"><a class="el" href="opticflow__module_8h.html">opticflow_module.h</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:02:21 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:02:32 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

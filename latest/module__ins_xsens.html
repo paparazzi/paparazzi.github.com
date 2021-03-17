@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -212,6 +212,17 @@ Raw ins_xsens.xml file:</h2>
 <div class="line">    &lt;define name=&quot;USE_GPS_XSENS_RAW_DATA&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;GPS_NB_CHANNELS&quot; value=&quot;16&quot;/&gt;</div>
 <div class="line">    &lt;define name=&quot;GPS_TYPE_H&quot; value=&quot;modules/ins/ins_xsens.h&quot; type=&quot;string&quot;/&gt;</div>
+<div class="line">    &lt;test firmware=&quot;fixedwing&quot;&gt;</div>
+<div class="line">      &lt;include name=&quot;../../var/include&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;PRIMARY_GPS&quot; value=&quot;GPS_XSENS&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;USE_GPS_XSENS&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;USE_GPS&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;XSENS_LINK&quot; value=&quot;uart0&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;DOWNLINK_TRANSPORT&quot; value=&quot;pprz_tp&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;DOWNLINK_DEVICE&quot; value=&quot;uart0&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;USE_UART0&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;AHRS_TRIGGERED_ATTITUDE_LOOP&quot;/&gt;</div>
+<div class="line">    &lt;/test&gt;</div>
 <div class="line">  &lt;/makefile&gt;</div>
 <div class="line">&lt;/module&gt;</div>
 <div class="line"></div>
@@ -221,7 +232,7 @@ Raw ins_xsens.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:03:43 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:04:01 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

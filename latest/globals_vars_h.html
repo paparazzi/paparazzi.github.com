@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -304,8 +304,8 @@ $(document).ready(function(){initNavTree('globals_vars_h.html','');});
 : <a class="el" href="obstacle__avoidance_8c.html#a7ce7d93af69d9792dc416d88726fa0d5">obstacle_avoidance.c</a>
 </li>
 <li>hackhd
-: <a class="el" href="hackhd_8h.html#a8e7fc00c07a56d7d59bc85281d9e01bc">hackhd.h</a>
-, <a class="el" href="hackhd_8c.html#a8e7fc00c07a56d7d59bc85281d9e01bc">hackhd.c</a>
+: <a class="el" href="hackhd_8c.html#a8e7fc00c07a56d7d59bc85281d9e01bc">hackhd.c</a>
+, <a class="el" href="hackhd_8h.html#a8e7fc00c07a56d7d59bc85281d9e01bc">hackhd.h</a>
 </li>
 <li>Half_Sweep_Enabled
 : <a class="el" href="nav__survey__poly__rotorcraft_8h.html#a0732c4cd3ad453af9b741c7a52bcdbeb">nav_survey_poly_rotorcraft.h</a>
@@ -313,8 +313,15 @@ $(document).ready(function(){initNavTree('globals_vars_h.html','');});
 , <a class="el" href="nav__survey__poly__osam_8h.html#a0732c4cd3ad453af9b741c7a52bcdbeb">nav_survey_poly_osam.h</a>
 , <a class="el" href="nav__survey__poly__rotorcraft_8c.html#a0732c4cd3ad453af9b741c7a52bcdbeb">nav_survey_poly_rotorcraft.c</a>
 </li>
+<li>handlePacket
+: <a class="el" href="cc2500__frsky__shared_8c.html#ae0d011639c1e452a3a066d2eb803f81d">cc2500_frsky_shared.c</a>
+</li>
 <li>heading
 : <a class="el" href="ahrs__infrared_8c.html#ac5682e48513a771560df50e3b213e61a">ahrs_infrared.c</a>
+, <a class="el" href="wedgebug_8c.html#ac5682e48513a771560df50e3b213e61a">wedgebug.c</a>
+</li>
+<li>heading_confidence
+: <a class="el" href="wedgebug_8c.html#a5755d526c0024d578017a8f2f23dea76">wedgebug.c</a>
 </li>
 <li>heading_diff_disp
 : <a class="el" href="guidance__hybrid_8c.html#a9253879364e6adf0ab14dbd3f53d045b">guidance_hybrid.c</a>
@@ -344,6 +351,10 @@ $(document).ready(function(){initNavTree('globals_vars_h.html','');});
 <li>heartbeat_node
 : <a class="el" href="gps__piksi_8c.html#aed29eb97b1842d8f42fba0a848211ea3">gps_piksi.c</a>
 </li>
+<li>heat_map_type
+: <a class="el" href="wedgebug_8h.html#a26bf5265cbc2dc04f839381633e051a3">wedgebug.h</a>
+, <a class="el" href="wedgebug_8c.html#a26bf5265cbc2dc04f839381633e051a3">wedgebug.c</a>
+</li>
 <li>heli_indi_ctl
 : <a class="el" href="stabilization__attitude__heli__indi_8c.html#a7cdb60c6e3c59307776836aec85c50cc">stabilization_attitude_heli_indi.c</a>
 </li>
@@ -352,8 +363,8 @@ $(document).ready(function(){initNavTree('globals_vars_h.html','');});
 , <a class="el" href="stabilization__attitude__heli__indi_8h.html#ab2b95b36439327dbf4f413b555f62f53">stabilization_attitude_heli_indi.h</a>
 </li>
 <li>hff
-: <a class="el" href="hf__float_8c.html#a22e2b42c2da9e519e3e4cbd127eef171">hf_float.c</a>
-, <a class="el" href="hf__float_8h.html#a22e2b42c2da9e519e3e4cbd127eef171">hf_float.h</a>
+: <a class="el" href="hf__float_8h.html#a22e2b42c2da9e519e3e4cbd127eef171">hf_float.h</a>
+, <a class="el" href="hf__float_8c.html#a22e2b42c2da9e519e3e4cbd127eef171">hf_float.c</a>
 </li>
 <li>hff_lost_counter
 : <a class="el" href="hf__float_8c.html#abaf805d46cd1360ef0c4a24b5251d350">hf_float.c</a>
@@ -419,18 +430,22 @@ $(document).ready(function(){initNavTree('globals_vars_h.html','');});
 : <a class="el" href="optical__flow__hover_8c.html#a62b0d3ee483ee571cd93e97dbbea2792">optical_flow_hover.c</a>
 </li>
 <li>hmc5843
-: <a class="el" href="hmc5843_8c.html#a0d9d6f319b2ad8e47637ad83bb04dbe2">hmc5843.c</a>
-, <a class="el" href="hmc5843_8h.html#a0d9d6f319b2ad8e47637ad83bb04dbe2">hmc5843.h</a>
+: <a class="el" href="hmc5843_8h.html#a0d9d6f319b2ad8e47637ad83bb04dbe2">hmc5843.h</a>
+, <a class="el" href="hmc5843_8c.html#a0d9d6f319b2ad8e47637ad83bb04dbe2">hmc5843.c</a>
+</li>
+<li>home_dir_deg
+: <a class="el" href="max7456_8c.html#ab6448fcf9ae22d27c05ce676582075dc">max7456.c</a>
+, <a class="el" href="max7456_8h.html#ab6448fcf9ae22d27c05ce676582075dc">max7456.h</a>
 </li>
 <li>horizontal_mode
-: <a class="el" href="nav_8h.html#ad2a5195a657a7961bfb54e3c2da48a21">nav.h</a>
+: <a class="el" href="nav_8c.html#ad2a5195a657a7961bfb54e3c2da48a21">nav.c</a>
 , <a class="el" href="rotorcraft_2navigation_8c.html#ad2a5195a657a7961bfb54e3c2da48a21">navigation.c</a>
-, <a class="el" href="nav_8c.html#ad2a5195a657a7961bfb54e3c2da48a21">nav.c</a>
+, <a class="el" href="nav_8h.html#ad2a5195a657a7961bfb54e3c2da48a21">nav.h</a>
 , <a class="el" href="rotorcraft_2navigation_8h.html#ad2a5195a657a7961bfb54e3c2da48a21">navigation.h</a>
 </li>
 <li>horizontal_speed_gain
-: <a class="el" href="guidance__hybrid_8h.html#ac60f1fe72b2977b65de347d7ef00ab0f">guidance_hybrid.h</a>
-, <a class="el" href="guidance__hybrid_8c.html#ac60f1fe72b2977b65de347d7ef00ab0f">guidance_hybrid.c</a>
+: <a class="el" href="guidance__hybrid_8c.html#ac60f1fe72b2977b65de347d7ef00ab0f">guidance_hybrid.c</a>
+, <a class="el" href="guidance__hybrid_8h.html#ac60f1fe72b2977b65de347d7ef00ab0f">guidance_hybrid.h</a>
 </li>
 <li>hott
 : <a class="el" href="subsystems_2radio__control_2hott_8c.html#a2cf66d3953ef0ced047f0c9c3f2acfb2">hott.c</a>
@@ -452,8 +467,8 @@ $(document).ready(function(){initNavTree('globals_vars_h.html','');});
 : <a class="el" href="modules_2hott_2hott_8c.html#af76591cac2841a77b64b4b4fde66b64c">hott.c</a>
 </li>
 <li>hover_method
-: <a class="el" href="optical__flow__hover_8h.html#a4654f3a0c133a1b377a628e9a58c1462">optical_flow_hover.h</a>
-, <a class="el" href="optical__flow__hover_8c.html#a4654f3a0c133a1b377a628e9a58c1462">optical_flow_hover.c</a>
+: <a class="el" href="optical__flow__hover_8c.html#a4654f3a0c133a1b377a628e9a58c1462">optical_flow_hover.c</a>
+, <a class="el" href="optical__flow__hover_8h.html#a4654f3a0c133a1b377a628e9a58c1462">optical_flow_hover.h</a>
 </li>
 <li>htm_status
 : <a class="el" href="humid__htm__b71_8c.html#a1a42209c238d5ad940c7d0fb8bed0633">humid_htm_b71.c</a>
@@ -465,28 +480,28 @@ $(document).ready(function(){initNavTree('globals_vars_h.html','');});
 : <a class="el" href="mf__ptu_8c.html#a0ca8f7b87de9bf822fecd5f571b4f294">mf_ptu.c</a>
 </li>
 <li>humid_sht_available
-: <a class="el" href="humid__sht__uart_8c.html#a8675393909571b5504905409b7e1c990">humid_sht_uart.c</a>
-, <a class="el" href="humid__sht__uart_8h.html#a8675393909571b5504905409b7e1c990">humid_sht_uart.h</a>
+: <a class="el" href="humid__sht__uart_8h.html#a8675393909571b5504905409b7e1c990">humid_sht_uart.h</a>
 , <a class="el" href="humid__sht_8c.html#a8675393909571b5504905409b7e1c990">humid_sht.c</a>
+, <a class="el" href="humid__sht__uart_8c.html#a8675393909571b5504905409b7e1c990">humid_sht_uart.c</a>
 , <a class="el" href="humid__sht_8h.html#a8675393909571b5504905409b7e1c990">humid_sht.h</a>
 </li>
 <li>humid_sht_status
-: <a class="el" href="humid__sht_8c.html#a04351042aaba6e2b67dc2aaab9ded946">humid_sht.c</a>
-, <a class="el" href="humid__sht__uart_8h.html#a04351042aaba6e2b67dc2aaab9ded946">humid_sht_uart.h</a>
+: <a class="el" href="humid__sht__uart_8h.html#a04351042aaba6e2b67dc2aaab9ded946">humid_sht_uart.h</a>
 , <a class="el" href="humid__sht_8h.html#a04351042aaba6e2b67dc2aaab9ded946">humid_sht.h</a>
+, <a class="el" href="humid__sht_8c.html#a04351042aaba6e2b67dc2aaab9ded946">humid_sht.c</a>
 </li>
 <li>humidhtm
 : <a class="el" href="humid__htm__b71_8c.html#ac59566e59062a875450e1230e7b03826">humid_htm_b71.c</a>
 </li>
 <li>humidsht
-: <a class="el" href="humid__sht_8c.html#a24ccb0d3307ade52bfb1c68cf4b4bad6">humid_sht.c</a>
-, <a class="el" href="humid__sht_8h.html#a24ccb0d3307ade52bfb1c68cf4b4bad6">humid_sht.h</a>
-, <a class="el" href="humid__sht__uart_8h.html#a24ccb0d3307ade52bfb1c68cf4b4bad6">humid_sht_uart.h</a>
+: <a class="el" href="humid__sht_8h.html#a24ccb0d3307ade52bfb1c68cf4b4bad6">humid_sht.h</a>
 , <a class="el" href="humid__sht__uart_8c.html#a24ccb0d3307ade52bfb1c68cf4b4bad6">humid_sht_uart.c</a>
+, <a class="el" href="humid__sht_8c.html#a24ccb0d3307ade52bfb1c68cf4b4bad6">humid_sht.c</a>
+, <a class="el" href="humid__sht__uart_8h.html#a24ccb0d3307ade52bfb1c68cf4b4bad6">humid_sht_uart.h</a>
 </li>
 <li>humidsht_i2c
-: <a class="el" href="humid__sht__i2c_8h.html#aebb59623691f8f575810941203d0557b">humid_sht_i2c.h</a>
-, <a class="el" href="humid__sht__i2c_8c.html#aebb59623691f8f575810941203d0557b">humid_sht_i2c.c</a>
+: <a class="el" href="humid__sht__i2c_8c.html#aebb59623691f8f575810941203d0557b">humid_sht_i2c.c</a>
+, <a class="el" href="humid__sht__i2c_8h.html#aebb59623691f8f575810941203d0557b">humid_sht_i2c.h</a>
 </li>
 <li>hysteris_flag
 : <a class="el" href="obstacle__avoidance_8c.html#a8656f47ecae049bd6f79b6d3e642ef7b">obstacle_avoidance.c</a>
@@ -497,7 +512,7 @@ $(document).ready(function(){initNavTree('globals_vars_h.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri May 15 2020 04:04:11 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:04:30 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

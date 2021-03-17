@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -134,7 +134,7 @@ $(document).ready(function(){initNavTree('spektrum_8h.html','');});
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="spektrum_8h__dep__incl.png" border="0" usemap="#sw_2airborne_2subsystems_2radio__control_2spektrum_8hdep" alt=""/></div>
 <map name="sw_2airborne_2subsystems_2radio__control_2spektrum_8hdep" id="sw_2airborne_2subsystems_2radio__control_2spektrum_8hdep">
-<area shape="rect" id="node2" href="spektrum_8c.html" title="Spektrum sattelite receiver implementation. " alt="" coords="6,95,191,136"/></map>
+<area shape="rect" id="node2" href="spektrum__arch_8c.html" title="Simulator implementation for spektrum radio control. " alt="" coords="5,95,196,151"/><area shape="rect" id="node3" href="spektrum_8c.html" title="Spektrum sattelite receiver implementation. " alt="" coords="220,102,405,143"/></map>
 </div>
 </div>
 <p><a href="spektrum_8h_source.html">Go to the source code of this file.</a></p>
@@ -316,7 +316,7 @@ True when we received a packet else false. </td></tr>
 
 <p>Definition at line <a class="el" href="spektrum_8h_source.html#l00042">42</a> of file <a class="el" href="spektrum_8h_source.html">spektrum.h</a>.</p>
 
-<p>Referenced by <a class="el" href="spektrum_8c_source.html#l00231">spektrum_parser()</a>.</p>
+<p>Referenced by <a class="el" href="spektrum_8c_source.html#l00228">spektrum_parser()</a>.</p>
 
 </div>
 </div>
@@ -334,7 +334,7 @@ True when we received a packet else false. </td></tr>
 
 <p>Definition at line <a class="el" href="spektrum_8h_source.html#l00041">41</a> of file <a class="el" href="spektrum_8h_source.html">spektrum.h</a>.</p>
 
-<p>Referenced by <a class="el" href="spektrum_8c_source.html#l00257">spektrum_uart_check()</a>.</p>
+<p>Referenced by <a class="el" href="spektrum_8c_source.html#l00254">spektrum_uart_check()</a>.</p>
 
 </div>
 </div>
@@ -350,7 +350,7 @@ True when we received a packet else false. </td></tr>
 
 <p>Definition at line <a class="el" href="spektrum_8h_source.html#l00044">44</a> of file <a class="el" href="spektrum_8h_source.html">spektrum.h</a>.</p>
 
-<p>Referenced by <a class="el" href="spektrum_8c_source.html#l00106">spektrum_init_sat()</a>.</p>
+<p>Referenced by <a class="el" href="spektrum_8c_source.html#l00103">spektrum_init_sat()</a>.</p>
 
 </div>
 </div>
@@ -384,7 +384,7 @@ True when we received a packet else false. </td></tr>
 
 <p>Definition at line <a class="el" href="spektrum_8h_source.html#l00045">45</a> of file <a class="el" href="spektrum_8h_source.html">spektrum.h</a>.</p>
 
-<p>Referenced by <a class="el" href="spektrum_8c_source.html#l00257">spektrum_uart_check()</a>.</p>
+<p>Referenced by <a class="el" href="spektrum_8c_source.html#l00254">spektrum_uart_check()</a>.</p>
 
 </div>
 </div>
@@ -400,7 +400,7 @@ True when we received a packet else false. </td></tr>
 
 <p>Definition at line <a class="el" href="spektrum_8h_source.html#l00038">38</a> of file <a class="el" href="spektrum_8h_source.html">spektrum.h</a>.</p>
 
-<p>Referenced by <a class="el" href="spektrum_8c_source.html#l00285">spektrum_event()</a>.</p>
+<p>Referenced by <a class="el" href="spektrum_8c_source.html#l00282">spektrum_event()</a>.</p>
 
 </div>
 </div>
@@ -421,9 +421,9 @@ True when we received a packet else false. </td></tr>
 
 <p>Checks if there is one valid satellite and sets the radio_control structure. </p>
 
-<p>Definition at line <a class="el" href="spektrum__arch_8c_source.html#l00046">46</a> of file <a class="el" href="spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="spektrum__arch_8c_source.html#l00047">47</a> of file <a class="el" href="spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
 
-<p>References <a class="el" href="radio__control_8h_source.html#l00068">RadioControl::frame_cpt</a>, <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="radio__control_8c_source.html#l00030">radio_control</a>, <a class="el" href="intermcu__ap_8h_source.html#l00049">RADIO_CONTROL_NB_CHANNEL</a>, <a class="el" href="radio__control_8h_source.html#l00056">RC_OK</a>, <a class="el" href="spektrum_8h_source.html#l00065">spektrum_t::satellites</a>, <a class="el" href="spektrum_8h_source.html#l00064">spektrum_t::signs</a>, <a class="el" href="spektrum__arch_8c_source.html#l00040">spektrum_available</a>, <a class="el" href="spektrum_8h_source.html#l00038">SPEKTRUM_SATELLITES_NB</a>, <a class="el" href="spektrum_8c_source.html#l00257">spektrum_uart_check()</a>, <a class="el" href="radio__control_8h_source.html#l00064">RadioControl::status</a>, <a class="el" href="radio__control_8h_source.html#l00065">RadioControl::time_since_last_frame</a>, <a class="el" href="spektrum_8h_source.html#l00052">spektrum_sat_t::valid</a>, <a class="el" href="spektrum_8h_source.html#l00062">spektrum_t::valid</a>, <a class="el" href="spektrum_8h_source.html#l00057">spektrum_sat_t::values</a>, and <a class="el" href="radio__control_8h_source.html#l00069">RadioControl::values</a>.</p>
+<p>References <a class="el" href="radio__control_8h_source.html#l00068">RadioControl::frame_cpt</a>, <a class="el" href="paparazzi_8h_source.html#l00008">MAX_PPRZ</a>, <a class="el" href="radio__control_8c_source.html#l00030">radio_control</a>, <a class="el" href="intermcu__ap_8h_source.html#l00049">RADIO_CONTROL_NB_CHANNEL</a>, <a class="el" href="radio__control_8h_source.html#l00056">RC_OK</a>, <a class="el" href="spektrum_8h_source.html#l00065">spektrum_t::satellites</a>, <a class="el" href="spektrum_8h_source.html#l00064">spektrum_t::signs</a>, <a class="el" href="spektrum__arch_8c_source.html#l00041">spektrum_available</a>, <a class="el" href="spektrum_8h_source.html#l00038">SPEKTRUM_SATELLITES_NB</a>, <a class="el" href="spektrum_8c_source.html#l00254">spektrum_uart_check()</a>, <a class="el" href="radio__control_8h_source.html#l00064">RadioControl::status</a>, <a class="el" href="radio__control_8h_source.html#l00065">RadioControl::time_since_last_frame</a>, <a class="el" href="spektrum_8h_source.html#l00052">spektrum_sat_t::valid</a>, <a class="el" href="spektrum_8h_source.html#l00062">spektrum_t::valid</a>, <a class="el" href="spektrum_8h_source.html#l00057">spektrum_sat_t::values</a>, and <a class="el" href="radio__control_8h_source.html#l00069">RadioControl::values</a>.</p>
 
 <p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -452,9 +452,9 @@ True when we received a packet else false. </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="spektrum__arch_8c_source.html#l00057">57</a> of file <a class="el" href="spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
+<p>Definition at line <a class="el" href="spektrum__arch_8c_source.html#l00058">58</a> of file <a class="el" href="spektrum__arch_8c_source.html">spektrum_arch.c</a>.</p>
 
-<p>References <a class="el" href="chibios_2mcu__periph_2gpio__arch_8h_source.html#l00088">gpio_get()</a>, <a class="el" href="chibios_2mcu__periph_2gpio__arch_8c_source.html#l00054">gpio_setup_input_pulldown()</a>, <a class="el" href="chibios_2mcu__periph_2gpio__arch_8c_source.html#l00047">gpio_setup_input_pullup()</a>, <a class="el" href="spektrum_8c_source.html#l00355">spektrum_bind()</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00442">SPEKTRUM_BIND_PIN</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00443">SPEKTRUM_BIND_PIN_PORT</a>, and <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00095">sys_time_usleep()</a>.</p>
+<p>References <a class="el" href="chibios_2mcu__periph_2gpio__arch_8h_source.html#l00088">gpio_get()</a>, <a class="el" href="chibios_2mcu__periph_2gpio__arch_8c_source.html#l00054">gpio_setup_input_pulldown()</a>, <a class="el" href="chibios_2mcu__periph_2gpio__arch_8c_source.html#l00047">gpio_setup_input_pullup()</a>, <a class="el" href="spektrum_8c_source.html#l00352">spektrum_bind()</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00460">SPEKTRUM_BIND_PIN</a>, <a class="el" href="apogee_2chibios_2v1_80_2board_8h_source.html#l00461">SPEKTRUM_BIND_PIN_PORT</a>, and <a class="el" href="chibios_2mcu__periph_2sys__time__arch_8c_source.html#l00095">sys_time_usleep()</a>.</p>
 
 <p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -475,7 +475,7 @@ True when we received a packet else false. </td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_a146ed466020daad33793c9994e8ab3e.html">radio_control</a></li><li class="navelem"><a class="el" href="spektrum_8h.html">spektrum.h</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:03:36 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:03:54 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

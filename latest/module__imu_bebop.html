@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -217,6 +217,14 @@ Raw imu_bebop.xml file:</h2>
 <div class="line">    &lt;file name=&quot;mpu60x0_i2c.c&quot; dir=&quot;peripherals&quot;/&gt;</div>
 <div class="line">    &lt;file name=&quot;ak8963.c&quot; dir=&quot;peripherals&quot;/&gt;</div>
 <div class="line">    &lt;file name=&quot;imu_bebop.c&quot; dir=&quot;subsystems/imu&quot;/&gt;</div>
+<div class="line">    &lt;test&gt;</div>
+<div class="line">      &lt;define name=&quot;BEBOP_MAG_I2C_DEV&quot; value=&quot;i2c1&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;USE_I2C1&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;BEBOP_MPU_I2C_DEV&quot; value=&quot;i2c2&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;USE_I2C2&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;IMU_TYPE_H&quot; value=&quot;subsystems/imu/imu_bebop.h&quot; type=&quot;string&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;PERIODIC_FREQUENCY&quot; value=&quot;512&quot;/&gt;</div>
+<div class="line">    &lt;/test&gt;</div>
 <div class="line">  &lt;/makefile&gt;</div>
 <div class="line">&lt;/module&gt;</div>
 </div><!-- fragment --> </div></div><!-- contents -->
@@ -225,7 +233,7 @@ Raw imu_bebop.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:03:43 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:04:01 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

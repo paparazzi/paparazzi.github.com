@@ -8,7 +8,7 @@ var ahrs__float__dcm_8c =
     [ "ahrs_dcm_set_body_to_imu", "ahrs__float__dcm_8c.html#a7f3247a388db0709627a935f09a7b406", null ],
     [ "ahrs_dcm_set_body_to_imu_quat", "ahrs__float__dcm_8c.html#afe8393fd937ef9065e871dc5623510f2", null ],
     [ "ahrs_dcm_update_accel", "ahrs__float__dcm_8c.html#a9e8f7f86867387eac6081a8b23ea9533", null ],
-    [ "ahrs_dcm_update_gps", "ahrs__float__dcm_8c.html#af6ae5229becb1414fbef533329174466", null ],
+    [ "ahrs_dcm_update_gps", "ahrs__float__dcm_8c.html#a0f32021d658bbed74d6392cadc4577a2", null ],
     [ "ahrs_dcm_update_mag", "ahrs__float__dcm_8c.html#a28f19eadfba62ddde0404977ec9b808a", null ],
     [ "compute_ahrs_representations", "ahrs__float__dcm_8c.html#a682bd53351651a47152def7839ecdbd2", null ],
     [ "Drift_correction", "ahrs__float__dcm_8c.html#a0983667a3515b42c82ce0b23d0007439", null ],

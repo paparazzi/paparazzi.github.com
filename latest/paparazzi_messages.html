@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -175,6 +175,8 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html','');});
 <li class="level2"><a href="#SUPERBITRF">SUPERBITRF (ID 72)</a></li>
 <li class="level2"><a href="#GX3_INFO">GX3_INFO (ID 73)</a></li>
 <li class="level2"><a href="#UBLOX_INFO">UBLOX_INFO (ID 74)</a></li>
+<li class="level2"><a href="#GVF_PARAMETRIC">GVF_PARAMETRIC (ID 75)</a></li>
+<li class="level2"><a href="#SWARM_FISH">SWARM_FISH (ID 77)</a></li>
 <li class="level2"><a href="#INV_FILTER">INV_FILTER (ID 78)</a></li>
 <li class="level2"><a href="#MISSION_STATUS">MISSION_STATUS (ID 79)</a></li>
 <li class="level2"><a href="#JEVOIS">JEVOIS (ID 80)</a></li>
@@ -307,7 +309,7 @@ $(document).ready(function(){initNavTree('paparazzi_messages.html','');});
 <li class="level2"><a href="#ROVER_STATUS">ROVER_STATUS (ID 230)</a></li>
 <li class="level2"><a href="#ROTORCRAFT_STATUS">ROTORCRAFT_STATUS (ID 231)</a></li>
 <li class="level2"><a href="#STATE_FILTER_STATUS">STATE_FILTER_STATUS (ID 232)</a></li>
-<li class="level2"><a href="#PX4FLOW">PX4FLOW (ID 233)</a></li>
+<li class="level2"><a href="#OPTICAL_FLOW">OPTICAL_FLOW (ID 233)</a></li>
 <li class="level2"><a href="#LIDAR">LIDAR (ID 234)</a></li>
 <li class="level2"><a href="#VISUALTARGET">VISUALTARGET (ID 235)</a></li>
 <li class="level2"><a href="#SONAR">SONAR (ID 236)</a></li>
@@ -1667,6 +1669,48 @@ UBLOX_INFO (ID 74)</h2>
 <td>sbas </td><td>uint8 </td><td></td><td></td></tr>
 <tr>
 <td>gnss </td><td>uint8 </td><td>NONE, GPS, GLONAS, GPS+GLONAS, BEIDOU, GPS+BEIDOU, GLONAS+BEIDOU, GPS+GLONAS+BEIDOU, GALILEO </td><td></td></tr>
+</table>
+<h2><a class="anchor" id="GVF_PARAMETRIC"></a>
+GVF_PARAMETRIC (ID 75)</h2>
+<p>Information about the parametric trajectory followed by the Guidance Vector Field algorithm.</p>
+<table class="doxtable">
+<tr>
+<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
+<tr>
+<td>traj </td><td>uint8 </td><td></td><td>Kind of trajectory </td></tr>
+<tr>
+<td>s </td><td>int8 </td><td>1, -1 </td><td>Direction to be followed </td></tr>
+<tr>
+<td>w </td><td>float </td><td></td><td>Virtual coordinate of the algorithm </td></tr>
+<tr>
+<td>p </td><td>float[] </td><td></td><td>Parameters describing the trajectory </td></tr>
+<tr>
+<td>phi </td><td>float[] </td><td>m </td><td>Error signals </td></tr>
+</table>
+<h2><a class="anchor" id="SWARM_FISH"></a>
+SWARM_FISH (ID 77)</h2>
+<p><a class="el" href="group__state__interface.html#structState" title="Structure holding vehicle state data. ">State</a> of the swarm fish navigation</p>
+<table class="doxtable">
+<tr>
+<th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
+<tr>
+<td>heading </td><td>float </td><td>rad </td><td>Current Heading </td></tr>
+<tr>
+<td>step_size </td><td>float </td><td>m </td><td>Current step size </td></tr>
+<tr>
+<td>rw </td><td>float </td><td>m </td><td>Distance to wall </td></tr>
+<tr>
+<td>fw </td><td>float </td><td></td><td>Wall interaction coef </td></tr>
+<tr>
+<td>theta_w </td><td>float </td><td>rad </td><td>Angle to wall </td></tr>
+<tr>
+<td>f_fluct </td><td>float </td><td></td><td>Fluctation effect </td></tr>
+<tr>
+<td>f_wall </td><td>float </td><td></td><td>Wall effect </td></tr>
+<tr>
+<td>f_ali </td><td>float </td><td></td><td>Alignement effect </td></tr>
+<tr>
+<td>f_att </td><td>float </td><td></td><td>Attraction effect </td></tr>
 </table>
 <h2><a class="anchor" id="INV_FILTER"></a>
 INV_FILTER (ID 78)</h2>
@@ -3966,6 +4010,8 @@ OPTIC_FLOW_EST (ID 228)</h2>
 <td>surface_roughness </td><td>float </td><td>1/s </td><td></td></tr>
 <tr>
 <td>divergence </td><td>float </td><td>1/s </td><td></td></tr>
+<tr>
+<td>camera_id </td><td>uint8 </td><td></td><td></td></tr>
 </table>
 <h2><a class="anchor" id="STEREO_IMG"></a>
 STEREO_IMG (ID 229)</h2>
@@ -4048,8 +4094,8 @@ STATE_FILTER_STATUS (ID 232)</h2>
 <tr>
 <td>value </td><td>uint16 </td><td></td><td></td></tr>
 </table>
-<h2><a class="anchor" id="PX4FLOW"></a>
-PX4FLOW (ID 233)</h2>
+<h2><a class="anchor" id="OPTICAL_FLOW"></a>
+OPTICAL_FLOW (ID 233)</h2>
 <table class="doxtable">
 <tr>
 <th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
@@ -4058,17 +4104,19 @@ PX4FLOW (ID 233)</h2>
 <tr>
 <td>sensor_id </td><td>uint8 </td><td></td><td></td></tr>
 <tr>
-<td>flow_x </td><td>int16 </td><td></td><td></td></tr>
+<td>flow_x </td><td>int32 </td><td></td><td></td></tr>
 <tr>
-<td>flow_y </td><td>int16 </td><td></td><td></td></tr>
+<td>flow_y </td><td>int32 </td><td></td><td></td></tr>
 <tr>
 <td>flow_comp_m_x </td><td>float </td><td>m </td><td></td></tr>
 <tr>
 <td>flow_comp_m_y </td><td>float </td><td>m </td><td></td></tr>
 <tr>
-<td>quality </td><td>uint8 </td><td></td><td></td></tr>
+<td>flow_quality </td><td>uint8 </td><td></td><td></td></tr>
 <tr>
 <td>ground_distance </td><td>float </td><td>m </td><td></td></tr>
+<tr>
+<td>distance_quality </td><td>uint8 </td><td></td><td></td></tr>
 </table>
 <h2><a class="anchor" id="LIDAR"></a>
 LIDAR (ID 234)</h2>
@@ -5647,25 +5695,26 @@ ENGINE_STATUS (ID 15)</h2>
 </table>
 <h2><a class="anchor" id="SVSINFO"></a>
 SVSINFO (ID 16)</h2>
+<p>Space Vehicle Information Mainly based on the NAV-SVINFO and NAV-SOL messages of the Ublox UBX protocol.</p>
 <table class="doxtable">
 <tr>
 <th>Field name </th><th>Type </th><th>Unit/Values </th><th>Description  </th></tr>
 <tr>
 <td>ac_id </td><td>string </td><td></td><td></td></tr>
 <tr>
-<td>pacc </td><td>uint16 </td><td>cm </td><td></td></tr>
+<td>pacc </td><td>uint16 </td><td>cm </td><td>3D Position Accuracy Estimate </td></tr>
 <tr>
-<td>svid </td><td>string </td><td></td><td></td></tr>
+<td>svid </td><td>string </td><td></td><td>Satellite ID </td></tr>
 <tr>
-<td>flags </td><td>string </td><td></td><td></td></tr>
+<td>flags </td><td>string </td><td></td><td>"flags" field of the UBX NAV-SVINFO message </td></tr>
 <tr>
-<td>qi </td><td>string </td><td>IDLE, SEARCH, SEARCH, UNUSABLE, CODELOCK, CARRIERLOCK, CARRIERLOCK, RECEIVING </td><td></td></tr>
+<td>qi </td><td>string </td><td>IDLE, SEARCH, SEARCH, UNUSABLE, CODELOCK, CARRIERLOCK, CARRIERLOCK, RECEIVING </td><td>Quality indicator </td></tr>
 <tr>
-<td>cno </td><td>string </td><td>dbHz </td><td></td></tr>
+<td>cno </td><td>string </td><td>dbHz </td><td>Carrier to Noise Ratio (Signal Strength) </td></tr>
 <tr>
-<td>elev </td><td>string </td><td>deg </td><td></td></tr>
+<td>elev </td><td>string </td><td>deg </td><td>Elevation </td></tr>
 <tr>
-<td>azim </td><td>string </td><td>deg </td><td></td></tr>
+<td>azim </td><td>string </td><td>deg </td><td>Azimut </td></tr>
 <tr>
 <td>msg_age </td><td>string </td><td>s </td><td></td></tr>
 </table>
@@ -6346,7 +6395,7 @@ IMCU_PAYLOAD (ID 116)</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri May 15 2020 04:03:44 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:04:02 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

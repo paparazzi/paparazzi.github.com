@@ -7,5 +7,5 @@ var act__fast_8h =
       [ "x", "act__fast_8h.html#ac6004dd4d97a330f12d57a569b59efd9", null ],
       [ "y", "act__fast_8h.html#ac4fe755c23d4f91746dac3f69f160bf9", null ]
     ] ],
-    [ "act_fast", "act__fast_8h.html#a3fd4992d91035835158a2b8c044377bd", null ]
+    [ "act_fast", "act__fast_8h.html#ac19c04b1275447322d4739824fa76d42", null ]
 ];

@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -155,7 +155,18 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="sim_2modules_2core_2rtos__mon__arch_8c_source.html#l00033">33</a> of file <a class="el" href="sim_2modules_2core_2rtos__mon__arch_8c_source.html">rtos_mon_arch.c</a>.</p>
 
-<p>References <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c_source.html#l00035">idle_counter</a>, and <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c_source.html#l00035">last_idle_counter</a>.</p>
+<p>References <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c_source.html#l00036">idle_counter</a>, <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c_source.html#l00036">last_idle_counter</a>, and <a class="el" href="shell__arch_8c_source.html#l00085">shell_add_entry()</a>.</p>
+
+<p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="sim_2modules_2core_2rtos__mon__arch_8c_a1b64b82ab870e30ee1f72178d3f16f74_cgraph.png" border="0" usemap="#sim_2modules_2core_2rtos__mon__arch_8c_a1b64b82ab870e30ee1f72178d3f16f74_cgraph" alt=""/></div>
+<map name="sim_2modules_2core_2rtos__mon__arch_8c_a1b64b82ab870e30ee1f72178d3f16f74_cgraph" id="sim_2modules_2core_2rtos__mon__arch_8c_a1b64b82ab870e30ee1f72178d3f16f74_cgraph">
+<area shape="rect" id="node2" href="shell__arch_8c.html#a61cf879e2e341903b7e751694e94b491" title="Add dynamic entry. " alt="" coords="197,5,320,32"/></map>
+</div>
+</p>
 
 </div>
 </div>
@@ -175,13 +186,13 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="sim_2modules_2core_2rtos__mon__arch_8c_source.html#l00036">36</a> of file <a class="el" href="sim_2modules_2core_2rtos__mon__arch_8c_source.html">rtos_mon_arch.c</a>.</p>
 
-<p>References <a class="el" href="chconf_8h_source.html#l00052">CH_CFG_ST_FREQUENCY</a>, <a class="el" href="sys__mon__rtos_8h_source.html#l00047">rtos_monitoring::core_free_memory</a>, <a class="el" href="sys__mon__rtos_8h_source.html#l00051">rtos_monitoring::cpu_load</a>, <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c_source.html#l00100">get_stack_free()</a>, <a class="el" href="sys__mon__rtos_8h_source.html#l00049">rtos_monitoring::heap_fragments</a>, <a class="el" href="sys__mon__rtos_8h_source.html#l00048">rtos_monitoring::heap_free_memory</a>, <a class="el" href="sys__mon__rtos_8h_source.html#l00050">rtos_monitoring::heap_largest</a>, <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c_source.html#l00035">idle_counter</a>, <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c_source.html#l00035">last_idle_counter</a>, <a class="el" href="rtos__mon_8c_source.html#l00030">rtos_mon</a>, <a class="el" href="sys__mon__rtos_8h_source.html#l00036">RTOS_MON_MAX_THREADS</a>, <a class="el" href="sys__mon__rtos_8h_source.html#l00040">RTOS_MON_NAME_LEN</a>, <a class="el" href="sys__mon__rtos_8h_source.html#l00052">rtos_monitoring::thread_counter</a>, <a class="el" href="sys__mon__rtos_8h_source.html#l00054">rtos_monitoring::thread_free_stack</a>, <a class="el" href="sys__mon__rtos_8h_source.html#l00053">rtos_monitoring::thread_load</a>, <a class="el" href="sys__mon__rtos_8h_source.html#l00056">rtos_monitoring::thread_name_idx</a>, <a class="el" href="sys__mon__rtos_8h_source.html#l00055">rtos_monitoring::thread_names</a>, and <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c_source.html#l00034">thread_p_time</a>.</p>
+<p>References <a class="el" href="sys__mon__rtos_8h_source.html#l00047">rtos_monitoring::core_free_memory</a>, <a class="el" href="sys__mon__rtos_8h_source.html#l00051">rtos_monitoring::cpu_load</a>, <a class="el" href="wedgebug_8c_source.html#l00204">f</a>, <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c_source.html#l00210">get_stack_free()</a>, <a class="el" href="sys__mon__rtos_8h_source.html#l00049">rtos_monitoring::heap_fragments</a>, <a class="el" href="sys__mon__rtos_8h_source.html#l00048">rtos_monitoring::heap_free_memory</a>, <a class="el" href="sys__mon__rtos_8h_source.html#l00050">rtos_monitoring::heap_largest</a>, <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c_source.html#l00036">idle_counter</a>, <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c_source.html#l00036">last_idle_counter</a>, <a class="el" href="rtos__mon_8c_source.html#l00030">rtos_mon</a>, <a class="el" href="sys__mon__rtos_8h_source.html#l00036">RTOS_MON_MAX_THREADS</a>, <a class="el" href="sys__mon__rtos_8h_source.html#l00040">RTOS_MON_NAME_LEN</a>, <a class="el" href="sys__mon__rtos_8h_source.html#l00052">rtos_monitoring::thread_counter</a>, <a class="el" href="sys__mon__rtos_8h_source.html#l00054">rtos_monitoring::thread_free_stack</a>, <a class="el" href="sys__mon__rtos_8h_source.html#l00053">rtos_monitoring::thread_load</a>, <a class="el" href="sys__mon__rtos_8h_source.html#l00056">rtos_monitoring::thread_name_idx</a>, <a class="el" href="sys__mon__rtos_8h_source.html#l00055">rtos_monitoring::thread_names</a>, and <a class="el" href="chibios_2modules_2core_2rtos__mon__arch_8c_source.html#l00035">thread_p_time</a>.</p>
 
-<p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="sim_2modules_2core_2rtos__mon__arch_8c_a145651dfc10decbb4b6cda9b5876854b_cgraph.png" border="0" usemap="#sim_2modules_2core_2rtos__mon__arch_8c_a145651dfc10decbb4b6cda9b5876854b_cgraph" alt=""/></div>
 <map name="sim_2modules_2core_2rtos__mon__arch_8c_a145651dfc10decbb4b6cda9b5876854b_cgraph" id="sim_2modules_2core_2rtos__mon__arch_8c_a145651dfc10decbb4b6cda9b5876854b_cgraph">
 <area shape="rect" id="node2" href="chibios_2modules_2core_2rtos__mon__arch_8c.html#a5837f98f14d1dd47e1dc966abe9a9632" title="get_stack_free" alt="" coords="228,5,344,32"/></map>
@@ -196,7 +207,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_fc6475eb39ea0144fb6697b809fd11a9.html">arch</a></li><li class="navelem"><a class="el" href="dir_c87a6d12365ead88e0b90ddbc1b3c9bb.html">sim</a></li><li class="navelem"><a class="el" href="dir_2b8fc0b1e96b9ae5b3950580235b3cc9.html">modules</a></li><li class="navelem"><a class="el" href="dir_728b6e6938d3ba805b8180649000508b.html">core</a></li><li class="navelem"><a class="el" href="sim_2modules_2core_2rtos__mon__arch_8c.html">rtos_mon_arch.c</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:02:41 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:02:54 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

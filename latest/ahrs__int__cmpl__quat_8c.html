@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -184,10 +184,10 @@ Functions</h2></td></tr>
 <tr class="separator:ac7ceba3dd76d68435d752209115992d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75015adf5b7c98bd9eb6b588850d8449"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__int__cmpl__quat_8c.html#a75015adf5b7c98bd9eb6b588850d8449">ahrs_icq_update_gps</a> (struct <a class="el" href="gps_8h.html#structGpsState">GpsState</a> *gps_s)</td></tr>
 <tr class="separator:a75015adf5b7c98bd9eb6b588850d8449"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7fb1fae4a1f5b6b1a12173486312b73d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__int__cmpl__quat_8c.html#a7fb1fae4a1f5b6b1a12173486312b73d">ahrs_icq_update_heading</a> (<a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> <a class="el" href="ahrs__infrared_8c.html#ac5682e48513a771560df50e3b213e61a">heading</a>)</td></tr>
+<tr class="memitem:a7fb1fae4a1f5b6b1a12173486312b73d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__int__cmpl__quat_8c.html#a7fb1fae4a1f5b6b1a12173486312b73d">ahrs_icq_update_heading</a> (<a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> <a class="el" href="wedgebug_8c.html#ac5682e48513a771560df50e3b213e61a">heading</a>)</td></tr>
 <tr class="memdesc:a7fb1fae4a1f5b6b1a12173486312b73d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update yaw based on a heading measurement.  <a href="#a7fb1fae4a1f5b6b1a12173486312b73d">More...</a><br /></td></tr>
 <tr class="separator:a7fb1fae4a1f5b6b1a12173486312b73d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a954df43f45ac2f8c6e59319c25ce607a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__int__cmpl__quat_8c.html#a954df43f45ac2f8c6e59319c25ce607a">ahrs_icq_realign_heading</a> (<a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> <a class="el" href="ahrs__infrared_8c.html#ac5682e48513a771560df50e3b213e61a">heading</a>)</td></tr>
+<tr class="memitem:a954df43f45ac2f8c6e59319c25ce607a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__int__cmpl__quat_8c.html#a954df43f45ac2f8c6e59319c25ce607a">ahrs_icq_realign_heading</a> (<a class="el" href="types_8h.html#a2ba621978a511250f7250fb10e05ffbe">int32_t</a> <a class="el" href="wedgebug_8c.html#ac5682e48513a771560df50e3b213e61a">heading</a>)</td></tr>
 <tr class="memdesc:a954df43f45ac2f8c6e59319c25ce607a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hard reset yaw to a heading.  <a href="#a954df43f45ac2f8c6e59319c25ce607a">More...</a><br /></td></tr>
 <tr class="separator:a954df43f45ac2f8c6e59319c25ce607a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e3ef1cad28d70b692c4fce45d291ae8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ahrs__int__cmpl__quat_8c.html#a8e3ef1cad28d70b692c4fce45d291ae8">ahrs_icq_set_body_to_imu</a> (struct <a class="el" href="group__math__orientation__representation.html#structOrientationReps">OrientationReps</a> *<a class="el" href="ins__gps__passthrough_8c.html#a755effd49991d996e4703451d0edc293">body_to_imu</a>)</td></tr>
@@ -794,7 +794,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00529">529</a> of file <a class="el" href="ahrs__int__cmpl__quat_8c_source.html">ahrs_int_cmpl_quat.c</a>.</p>
 
-<p>References <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00096">AHRS_HEADING_UPDATE_GPS_MIN_SPEED</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00110">ahrs_icq</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00627">ahrs_icq_realign_heading()</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00565">ahrs_icq_update_heading()</a>, <a class="el" href="airspeed__uADC_8c_source.html#l00057">course</a>, <a class="el" href="gps_8h_source.html#l00039">GPS_FIX_3D</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00059">AhrsIntCmplQuat::heading_aligned</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00116">INT32_ANGLE_FRAC</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00057">AhrsIntCmplQuat::ltp_vel_norm</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00058">AhrsIntCmplQuat::ltp_vel_norm_valid</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00218">SPEED_BFP_OF_REAL</a>.</p>
+<p>References <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00096">AHRS_HEADING_UPDATE_GPS_MIN_SPEED</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00110">ahrs_icq</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00627">ahrs_icq_realign_heading()</a>, <a class="el" href="ahrs__int__cmpl__quat_8c_source.html#l00565">ahrs_icq_update_heading()</a>, <a class="el" href="airspeed__uADC_8c_source.html#l00058">course</a>, <a class="el" href="gps_8h_source.html#l00039">GPS_FIX_3D</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00059">AhrsIntCmplQuat::heading_aligned</a>, <a class="el" href="pprz__algebra__int_8h_source.html#l00116">INT32_ANGLE_FRAC</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00057">AhrsIntCmplQuat::ltp_vel_norm</a>, <a class="el" href="ahrs__int__cmpl__quat_8h_source.html#l00058">AhrsIntCmplQuat::ltp_vel_norm_valid</a>, and <a class="el" href="pprz__algebra__int_8h_source.html#l00218">SPEED_BFP_OF_REAL</a>.</p>
 
 <p>Referenced by <a class="el" href="ahrs__int__cmpl__quat__wrapper_8c_source.html#l00238">gps_cb()</a>.</p>
 
@@ -1077,7 +1077,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_5e9153041680afc3c016fd52fa730b56.html">airborne</a></li><li class="navelem"><a class="el" href="dir_12d6ec7aac5a4a9b8cee17e35022d7c7.html">subsystems</a></li><li class="navelem"><a class="el" href="dir_46fef683200e96ccf1a2f608d90c4a2d.html">ahrs</a></li><li class="navelem"><a class="el" href="ahrs__int__cmpl__quat_8c.html">ahrs_int_cmpl_quat.c</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:03:31 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:03:48 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

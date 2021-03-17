@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="penguin_icon.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Paparazzi UAS
-   &#160;<span id="projectnumber">v5.17_devel-0-g9d9a0d1</span>
+   &#160;<span id="projectnumber">v5.17_devel-149-g7afb1b7-dirty</span>
    </div>
    <div id="projectbrief">Paparazzi is a free software Unmanned Aircraft System.</div>
   </td>
@@ -105,7 +105,7 @@ $(document).ready(function(){initNavTree('module__cv_opticflow.html','');});
 <div class="contents">
 <div class="textblock"><p><b>Compute optical flow.</b></p>
 <p><b></b></p>
-<p>Made for Linux video Devices. Computes x and y velocity using optical flow and distance to ground (using sonar).</p>
+<p>Made for Linux video Devices. Computes x and y velocity using optical flow and distance to ground (using sonar). Cannot define CAMERA2 without first defining CAMERA.</p>
 <h1><a class="anchor" id="module_load_example__cv_opticflow"></a>
 Example for airframe file</h1>
 <p>Add to your firmware section: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;module name=&quot;cv_opticflow&quot;/&gt;</div>
@@ -152,7 +152,7 @@ Airframe file section</h2>
 <li><b>name</b> <code>MAX_ITERATIONS</code> <b>value:</b> <em>10</em> <br />
  Description: Maximum number of iterations the Lucas Kanade algorithm should take</li>
 <li><b>name</b> <code>THRESHOLD_VEC</code> <b>value:</b> <em>2</em> <br />
- Description: TThreshold in subpixels when the iterations of Lucas Kanade should stop</li>
+ Description: Threshold in subpixels when the iterations of Lucas Kanade should stop</li>
 <li><b>name</b> <code>CORNER_METHOD</code> <b>value:</b> <em>1</em> <br />
  Description: Method used to look for corners, exhaustive FAST (0) or ACT-FAST (1).</li>
 <li><b>name</b> <code>FAST9_ADAPTIVE</code> <b>value:</b> <em>TRUE</em> <br />
@@ -175,15 +175,64 @@ Airframe file section</h2>
  Description: Threshold that decides when there is sufficient texture for edge following</li>
 <li><b>name</b> <code>ACTFAST_GRADIENT_METHOD</code> <b>value:</b> <em>1</em> <br />
  Description: Whether to use a simple (0) or Sobel (1) filter</li>
+<li><b>name</b> <code>CAMERA2</code> <b>value:</b> <em>bottom_camera|front_camera</em> <br />
+ Description: The V4L2 camera device that is used for the calculations</li>
+<li><b>name</b> <code>DEROTATION_CORRECTION_FACTOR_X_CAMERA2</code> <b>value:</b> <em>1.0</em> <br />
+ Description: Correction factor for derotation (in x direction), estimated from a fit between the gyro's rates and the resulting flow (caused by the camera not being exactly in the middle (Defaults are from an ARDrone 2)</li>
+<li><b>name</b> <code>DEROTATION_CORRECTION_FACTOR_Y_CAMERA2</code> <b>value:</b> <em>1.0</em> <br />
+ Description: Correction factor for derotation (in y direction), estimated from a fit between the gyro's rates and the resulting flow (caused by the camera not being exactly in the middle (Defaults are from an ARDrone 2)</li>
+<li><b>name</b> <code>METHOD_CAMERA2</code> <b>value:</b> <em>0</em> <br />
+ Description: Method used to calculate optical flow</li>
+<li><b>name</b> <code>WINDOW_SIZE_CAMERA2</code> <b>value:</b> <em>10</em> <br />
+ Description: Window size used for block matching (pixels)</li>
+<li><b>name</b> <code>SEARCH_DISTANCE_CAMERA2</code> <b>value:</b> <em>10</em> <br />
+ Description: Maximum search distance for blockmatching (pixels)</li>
+<li><b>name</b> <code>SUBPIXEL_FACTOR_CAMERA2</code> <b>value:</b> <em>10</em> <br />
+ Description: Amount of subpixels per pixel, used for more precise (subpixel) calculations of the flow</li>
+<li><b>name</b> <code>RESOLUTION_FACTOR_CAMERA2</code> <b>value:</b> <em>1000</em> <br />
+ Description: The resolution factor needed to calculate the divergence without floats</li>
+<li><b>name</b> <code>DEROTATION_CAMERA2</code> <b>value:</b> <em>1</em> <br />
+ Description: Derotation either turned on or off (depended on gyroscope measurements)</li>
+<li><b>name</b> <code>MEDIAN_FILTER_CAMERA2</code> <b>value:</b> <em>0</em> <br />
+ Description: A median filter on the resulting velocities to be turned on or off (last 5 measurements)</li>
+<li><b>name</b> <code>FEATURE_MANAGEMENT_CAMERA2</code> <b>value:</b> <em>1</em> <br />
+ Description: Whether to keep already tracked corners in memory for the next frame or re-detect new ones every time</li>
+<li><b>name</b> <code>FPS_CAMERA2</code> <b>value:</b> <em>0</em> <br />
+ Description: The (maximum) frequency to run the calculations at. If zero, it will max out at the camera frame rate</li>
+<li><b>name</b> <code>TRACK_BACK_CAMERA2</code> <b>value:</b> <em>TRUE</em> <br />
+ Description: Whether flow vectors are tracked back to the previous image and only kept if they end up close to the original point.</li>
+<li><b>name</b> <code>SHOW_FLOW_CAMERA2</code> <b>value:</b> <em>TRUE</em> <br />
+ Description: Whether to draw the flow vectors in the image.</li>
+<li><b>name</b> <code>MAX_TRACK_CORNERS_CAMERA2</code> <b>value:</b> <em>25</em> <br />
+ Description: The maximum amount of corners the Lucas Kanade algorithm is tracking between two frames</li>
+<li><b>name</b> <code>MAX_ITERATIONS_CAMERA2</code> <b>value:</b> <em>10</em> <br />
+ Description: Maximum number of iterations the Lucas Kanade algorithm should take</li>
+<li><b>name</b> <code>THRESHOLD_VEC_CAMERA2</code> <b>value:</b> <em>2</em> <br />
+ Description: Threshold in subpixels when the iterations of Lucas Kanade should stop</li>
+<li><b>name</b> <code>CORNER_METHOD_CAMERA2</code> <b>value:</b> <em>1</em> <br />
+ Description: Method used to look for corners, exhaustive FAST (0) or ACT-FAST (1).</li>
+<li><b>name</b> <code>FAST9_ADAPTIVE_CAMERA2</code> <b>value:</b> <em>TRUE</em> <br />
+ Description: Whether we should use and adapative FAST9 crner detection threshold</li>
+<li><b>name</b> <code>FAST9_THRESHOLD_CAMERA2</code> <b>value:</b> <em>20</em> <br />
+ Description: FAST9 default threshold</li>
+<li><b>name</b> <code>FAST9_MIN_DISTANCE_CAMERA2</code> <b>value:</b> <em>10</em> <br />
+ Description: The amount of pixels between corners that should be detected</li>
+<li><b>name</b> <code>FAST9_PADDING_CAMERA2</code> <b>value:</b> <em>20</em> <br />
+ Description: The outer border in which no corners will be searched</li>
+<li><b>name</b> <code>FAST9_REGION_DETECT_CAMERA2</code> <b>value:</b> <em>1</em> <br />
+ Description: Whether to detect fast9 corners in regions of interest or the whole image (only works with feature management)</li>
+<li><b>name</b> <code>FAST9_NUM_REGIONS_CAMERA2</code> <b>value:</b> <em>9</em> <br />
+ Description: The number of regions of interest to split the image into</li>
+<li><b>name</b> <code>ACTFAST_LONG_STEP_CAMERA2</code> <b>value:</b> <em>10</em> <br />
+ Description: Step size to take when there is no texture</li>
+<li><b>name</b> <code>ACTFAST_SHORT_STEP_CAMERA2</code> <b>value:</b> <em>2</em> <br />
+ Description: Step size to take when there is an edge to be followed</li>
+<li><b>name</b> <code>ACTFAST_MIN_GRADIENT_CAMERA2</code> <b>value:</b> <em>10</em> <br />
+ Description: Threshold that decides when there is sufficient texture for edge following</li>
+<li><b>name</b> <code>ACTFAST_GRADIENT_METHOD_CAMERA2</code> <b>value:</b> <em>1</em> <br />
+ Description: Whether to use a simple (0) or Sobel (1) filter</li>
 </ul>
 </li>
-</ul>
-<h1><a class="anchor" id="autoloads__cv_opticflow"></a>
-Auto-loaded modules</h1>
-<p>The following modules are automatically loaded (just as if you had added them in the airframe file)</p><ul>
-<li><a class="el" href="module__agl_dist.html">agl_dist module</a></li>
-<li><a class="el" href="module__video_thread.html">video_thread module</a></li>
-<li><a class="el" href="module__pose_history.html">pose_history module</a> </li>
 </ul>
 <h1><a class="anchor" id="functions__cv_opticflow"></a>
 Module functions</h1>
@@ -240,6 +289,7 @@ Raw cv_opticflow.xml file:</h2>
 <div class="line">      Compute optical flow.</div>
 <div class="line">      Made for Linux video Devices.</div>
 <div class="line">      Computes x and y velocity using optical flow and distance to ground (using sonar).</div>
+<div class="line">      Cannot define CAMERA2 without first defining CAMERA.</div>
 <div class="line">    &lt;/description&gt;</div>
 <div class="line"></div>
 <div class="line">    &lt;!-- Optical flow calculation parameters --&gt;</div>
@@ -273,7 +323,7 @@ Raw cv_opticflow.xml file:</h2>
 <div class="line">      &lt;!-- Lucas Kanade optical flow calculation parameters --&gt;</div>
 <div class="line">      &lt;define name=&quot;MAX_TRACK_CORNERS&quot; value=&quot;25&quot; description=&quot;The maximum amount of corners the Lucas Kanade algorithm is tracking between two frames&quot;/&gt;</div>
 <div class="line">      &lt;define name=&quot;MAX_ITERATIONS&quot; value=&quot;10&quot; description=&quot;Maximum number of iterations the Lucas Kanade algorithm should take&quot;/&gt;</div>
-<div class="line">      &lt;define name=&quot;THRESHOLD_VEC&quot; value=&quot;2&quot; description=&quot;TThreshold in subpixels when the iterations of Lucas Kanade should stop&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;THRESHOLD_VEC&quot; value=&quot;2&quot; description=&quot;Threshold in subpixels when the iterations of Lucas Kanade should stop&quot;/&gt;</div>
 <div class="line"></div>
 <div class="line">      &lt;define name=&quot;CORNER_METHOD&quot; value=&quot;1&quot; description=&quot;Method used to look for corners, exhaustive FAST (0) or ACT-FAST (1).&quot;/&gt;</div>
 <div class="line"></div>
@@ -291,52 +341,131 @@ Raw cv_opticflow.xml file:</h2>
 <div class="line">      &lt;define name=&quot;ACTFAST_MIN_GRADIENT&quot; value=&quot;10&quot; description=&quot;Threshold that decides when there is sufficient texture for edge following&quot;/&gt;</div>
 <div class="line">      &lt;define name=&quot;ACTFAST_GRADIENT_METHOD&quot; value=&quot;1&quot; description=&quot;Whether to use a simple (0) or Sobel (1) filter&quot;/&gt;</div>
 <div class="line"></div>
+<div class="line">      &lt;!-- =========== CAMERA 2 SETTINGS ============ --&gt;</div>
+<div class="line"></div>
+<div class="line">      &lt;!-- Video device parameters for camera 2 --&gt;</div>
+<div class="line">      &lt;define name=&quot;CAMERA2&quot; value=&quot;bottom_camera|front_camera&quot; description=&quot;The V4L2 camera device that is used for the calculations&quot;/&gt;</div>
+<div class="line"></div>
+<div class="line">      &lt;!-- Camera 2 parameters --&gt;</div>
+<div class="line">      &lt;define name=&quot;DEROTATION_CORRECTION_FACTOR_X_CAMERA2&quot; value=&quot;1.0&quot; description=&quot;Correction factor for derotation (in x direction), estimated from a fit between the gyro&#39;s rates and the resulting flow (caused by the camera not being exactly in the middle (Defaults are from an ARDrone 2)&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;DEROTATION_CORRECTION_FACTOR_Y_CAMERA2&quot; value=&quot;1.0&quot; description=&quot;Correction factor for derotation (in y direction), estimated from a fit between the gyro&#39;s rates and the resulting flow (caused by the camera not being exactly in the middle (Defaults are from an ARDrone 2)&quot;/&gt;</div>
+<div class="line">      &lt;configure name=&quot;BODY_TO_CAM_PHI_CAMERA2&quot; value=&quot;0&quot; description=&quot;Rotation from body frame to camera frame around x axis&quot;/&gt;</div>
+<div class="line">      &lt;configure name=&quot;BODY_TO_CAM_THETA_CAMERA2&quot; value=&quot;0&quot; description=&quot;Rotation from body frame to camera frame around y axis&quot;/&gt;</div>
+<div class="line">      &lt;configure name=&quot;BODY_TO_CAM_PSI_CAMERA2&quot; value=&quot;0&quot; description=&quot;Rotation from body frame to camera frame around z axis&quot;/&gt;</div>
+<div class="line"></div>
+<div class="line">      &lt;!-- General optical flow calculation parameters for camera 2--&gt;</div>
+<div class="line">      &lt;define name=&quot;METHOD_CAMERA2&quot; value=&quot;0&quot; description=&quot;Method used to calculate optical flow&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;WINDOW_SIZE_CAMERA2&quot; value=&quot;10&quot; description=&quot;Window size used for block matching (pixels)&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;SEARCH_DISTANCE_CAMERA2&quot; value=&quot;10&quot; description=&quot;Maximum search distance for blockmatching (pixels)&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;SUBPIXEL_FACTOR_CAMERA2&quot; value=&quot;10&quot; description=&quot;Amount of subpixels per pixel, used for more precise (subpixel) calculations of the flow&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;RESOLUTION_FACTOR_CAMERA2&quot; value=&quot;1000&quot; description=&quot;The resolution factor needed to calculate the divergence without floats&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;DEROTATION_CAMERA2&quot; value=&quot;1&quot; description=&quot;Derotation either turned on or off (depended on gyroscope measurements)&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;MEDIAN_FILTER_CAMERA2&quot; value=&quot;0&quot; description=&quot;A median filter on the resulting velocities to be turned on or off (last 5 measurements)&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;FEATURE_MANAGEMENT_CAMERA2&quot; value=&quot;1&quot; description=&quot;Whether to keep already tracked corners in memory for the next frame or re-detect new ones every time&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;FPS_CAMERA2&quot; value=&quot;0&quot; description=&quot;The (maximum) frequency to run the calculations at. If zero, it will max out at the camera frame rate&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;TRACK_BACK_CAMERA2&quot; value=&quot;TRUE&quot; description=&quot;Whether flow vectors are tracked back to the previous image and only kept if they end up close to the original point.&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;SHOW_FLOW_CAMERA2&quot; value=&quot;TRUE&quot; description=&quot;Whether to draw the flow vectors in the image.&quot;/&gt;</div>
+<div class="line"></div>
+<div class="line">      &lt;!-- Lucas Kanade optical flow calculation parameters --&gt;</div>
+<div class="line">      &lt;define name=&quot;MAX_TRACK_CORNERS_CAMERA2&quot; value=&quot;25&quot; description=&quot;The maximum amount of corners the Lucas Kanade algorithm is tracking between two frames&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;MAX_ITERATIONS_CAMERA2&quot; value=&quot;10&quot; description=&quot;Maximum number of iterations the Lucas Kanade algorithm should take&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;THRESHOLD_VEC_CAMERA2&quot; value=&quot;2&quot; description=&quot;Threshold in subpixels when the iterations of Lucas Kanade should stop&quot;/&gt;</div>
+<div class="line"></div>
+<div class="line">      &lt;define name=&quot;CORNER_METHOD_CAMERA2&quot; value=&quot;1&quot; description=&quot;Method used to look for corners, exhaustive FAST (0) or ACT-FAST (1).&quot;/&gt;</div>
+<div class="line"></div>
+<div class="line">      &lt;!-- FAST9 corner detection parameters --&gt;</div>
+<div class="line">      &lt;define name=&quot;FAST9_ADAPTIVE_CAMERA2&quot; value=&quot;TRUE&quot; description=&quot;Whether we should use and adapative FAST9 crner detection threshold&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;FAST9_THRESHOLD_CAMERA2&quot; value=&quot;20&quot; description=&quot;FAST9 default threshold&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;FAST9_MIN_DISTANCE_CAMERA2&quot; value=&quot;10&quot; description=&quot;The amount of pixels between corners that should be detected&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;FAST9_PADDING_CAMERA2&quot; value=&quot;20&quot; description=&quot;The outer border in which no corners will be searched&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;FAST9_REGION_DETECT_CAMERA2&quot; value=&quot;1&quot; description=&quot;Whether to detect fast9 corners in regions of interest or the whole image (only works with feature management)&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;FAST9_NUM_REGIONS_CAMERA2&quot; value=&quot;9&quot; description=&quot;The number of regions of interest to split the image into&quot;/&gt;</div>
+<div class="line"></div>
+<div class="line">      &lt;!-- ACT-FAST parameters --&gt;</div>
+<div class="line">      &lt;define name=&quot;ACTFAST_LONG_STEP_CAMERA2&quot; value=&quot;10&quot; description=&quot;Step size to take when there is no texture&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;ACTFAST_SHORT_STEP_CAMERA2&quot; value=&quot;2&quot; description=&quot;Step size to take when there is an edge to be followed&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;ACTFAST_MIN_GRADIENT_CAMERA2&quot; value=&quot;10&quot; description=&quot;Threshold that decides when there is sufficient texture for edge following&quot;/&gt;</div>
+<div class="line">      &lt;define name=&quot;ACTFAST_GRADIENT_METHOD_CAMERA2&quot; value=&quot;1&quot; description=&quot;Whether to use a simple (0) or Sobel (1) filter&quot;/&gt;</div>
+<div class="line"></div>
 <div class="line">    &lt;/section&gt;</div>
 <div class="line">  &lt;/doc&gt;</div>
 <div class="line"></div>
 <div class="line">  &lt;settings&gt;</div>
-<div class="line">  &lt;dl_settings NAME=&quot;Vision stabilization&quot;&gt;</div>
+<div class="line">  &lt;dl_settings name=&quot;Vision stabilization&quot;&gt;</div>
 <div class="line">      &lt;!-- Optical flow calculations parameters --&gt;</div>
-<div class="line">      &lt;dl_settings name=&quot;vision_calc&quot;&gt;</div>
-<div class="line">      &lt;dl_setting var=&quot;opticflow.method&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;1&quot; module=&quot;computer_vision/opticflow_module&quot; shortname=&quot;method&quot; values=&quot;LK_Fast9|EdgeFlow&quot; param=&quot;METHOD&quot;/&gt;</div>
-<div class="line">      &lt;dl_setting var=&quot;opticflow.corner_method&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;1&quot; module=&quot;computer_vision/opticflow_module&quot; shortname=&quot;corner_method&quot; values=&quot;exhaustive-FAST|ACT-FAST&quot; param=&quot;CORNER_METHOD&quot;/&gt;</div>
-<div class="line">        &lt;dl_setting var=&quot;opticflow.window_size&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;20&quot; shortname=&quot;window_size&quot; param=&quot;OPTICFLOW_WINDOW_SIZE&quot;/&gt;</div>
-<div class="line">        &lt;dl_setting var=&quot;opticflow.search_distance&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;50&quot; shortname=&quot;search_distance&quot; param=&quot;SEARCH_DISTANCE&quot;/&gt;</div>
-<div class="line">        &lt;dl_setting var=&quot;opticflow.subpixel_factor&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;0&quot; step=&quot;10&quot; max=&quot;1000&quot; shortname=&quot;subpixel_factor&quot; param=&quot;OPTICFLOW_SUBPIXEL_FACTOR&quot;/&gt;</div>
-<div class="line">        &lt;dl_setting var=&quot;opticflow.resolution_factor&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;10&quot; step=&quot;10&quot; max=&quot;10000&quot; shortname=&quot;resolution_factor&quot; param=&quot;OPTICFLOW_RESOLUTION_FACTOR&quot;/&gt;</div>
-<div class="line">        &lt;dl_setting var=&quot;opticflow.derotation&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;1&quot; module=&quot;computer_vision/opticflow_module&quot; values=&quot;OFF|ON&quot; shortname=&quot;derotation&quot; param=&quot;OPTICFLOW_DEROTATION&quot;/&gt;</div>
-<div class="line">        &lt;dl_setting var=&quot;opticflow.median_filter&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;1&quot; values=&quot;OFF|ON&quot; shortname=&quot;median_filter&quot; param=&quot;OPTICFLOW_MEDIAN_FILTER&quot;/&gt;</div>
-<div class="line">        &lt;dl_setting var=&quot;opticflow.feature_management&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;1&quot; values=&quot;OFF|ON&quot; shortname=&quot;feature_management&quot; param=&quot;OPTICFLOW_FEATURE_MANAGEMENT&quot;/&gt;</div>
-<div class="line">        &lt;dl_setting var=&quot;opticflow.track_back&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;1&quot; values=&quot;FALSE|TRUE&quot; shortname=&quot;track_back&quot; param=&quot;OPTICFLOW_TRACK_BACK&quot;/&gt;</div>
-<div class="line">        &lt;dl_setting var=&quot;opticflow.show_flow&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;1&quot; values=&quot;FALSE|TRUE&quot; shortname=&quot;show_flow&quot; param=&quot;OPTICFLOW_SHOW_FLOW&quot;/&gt;</div>
-<div class="line"></div>
+<div class="line">      &lt;dl_settings name=&quot;vision_calc camera1&quot;&gt;</div>
+<div class="line">        &lt;dl_setting var=&quot;opticflow[0].method&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;1&quot; module=&quot;computer_vision/opticflow_module&quot; shortname=&quot;method&quot; values=&quot;LK_Fast9|EdgeFlow&quot; param=&quot;METHOD&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting var=&quot;opticflow[0].corner_method&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;1&quot; module=&quot;computer_vision/opticflow_module&quot; shortname=&quot;corner_method&quot; values=&quot;exhaustive-FAST|ACT-FAST&quot; param=&quot;CORNER_METHOD&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting var=&quot;opticflow[0].window_size&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;20&quot; shortname=&quot;window_size&quot; param=&quot;OPTICFLOW_WINDOW_SIZE&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting var=&quot;opticflow[0].search_distance&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;50&quot; shortname=&quot;search_distance&quot; param=&quot;SEARCH_DISTANCE&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting var=&quot;opticflow[0].subpixel_factor&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;0&quot; step=&quot;10&quot; max=&quot;1000&quot; shortname=&quot;subpixel_factor&quot; param=&quot;OPTICFLOW_SUBPIXEL_FACTOR&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting var=&quot;opticflow[0].resolution_factor&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;10&quot; step=&quot;10&quot; max=&quot;10000&quot; shortname=&quot;resolution_factor&quot; param=&quot;OPTICFLOW_RESOLUTION_FACTOR&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting var=&quot;opticflow[0].derotation&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;1&quot; module=&quot;computer_vision/opticflow_module&quot; values=&quot;OFF|ON&quot; shortname=&quot;derotation&quot; param=&quot;OPTICFLOW_DEROTATION&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting var=&quot;opticflow[0].median_filter&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;1&quot; values=&quot;OFF|ON&quot; shortname=&quot;median_filter&quot; param=&quot;OPTICFLOW_MEDIAN_FILTER&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting var=&quot;opticflow[0].feature_management&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;1&quot; values=&quot;OFF|ON&quot; shortname=&quot;feature_management&quot; param=&quot;OPTICFLOW_FEATURE_MANAGEMENT&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting var=&quot;opticflow[0].track_back&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;1&quot; values=&quot;FALSE|TRUE&quot; shortname=&quot;track_back&quot; param=&quot;OPTICFLOW_TRACK_BACK&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting var=&quot;opticflow[0].show_flow&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;1&quot; values=&quot;FALSE|TRUE&quot; shortname=&quot;show_flow&quot; param=&quot;OPTICFLOW_SHOW_FLOW&quot;/&gt;</div>
 <div class="line"></div>
 <div class="line">        &lt;!-- Specifically for Lucas Kanade and FAST9 --&gt;</div>
-<div class="line">        &lt;dl_setting var=&quot;opticflow.max_track_corners&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;500&quot; shortname=&quot;max_trck_corners&quot; param=&quot;OPTICFLOW_MAX_TRACK_CORNERS&quot;/&gt;</div>
-<div class="line">        &lt;dl_setting var=&quot;opticflow.max_iterations&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;100&quot; shortname=&quot;max_iterations&quot; param=&quot;OPTICFLOW_MAX_ITERATIONS&quot;/&gt;</div>
-<div class="line">        &lt;dl_setting var=&quot;opticflow.threshold_vec&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;100&quot; shortname=&quot;threshold_vec&quot; param=&quot;OPTICFLOW_THRESHOLD_VEC&quot;/&gt;</div>
-<div class="line">        &lt;dl_setting var=&quot;opticflow.fast9_adaptive&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;1&quot; values=&quot;FALSE|TRUE&quot; shortname=&quot;fast9_adaptive&quot; param=&quot;OPTICFLOW_FAST9_ADAPTIVE&quot;/&gt;</div>
-<div class="line">        &lt;dl_setting var=&quot;opticflow.fast9_threshold&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;255&quot; shortname=&quot;fast9_threshold&quot; param=&quot;OPTICFLOW_FAST9_THRESHOLD&quot;/&gt;</div>
-<div class="line">        &lt;dl_setting var=&quot;opticflow.fast9_min_distance&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;500&quot; shortname=&quot;fast9_min_distance&quot; param=&quot;OPTICFLOW_FAST9_MIN_DISTANCE&quot;/&gt;</div>
-<div class="line">        &lt;dl_setting var=&quot;opticflow.fast9_padding&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;50&quot; shortname=&quot;fast9_padding&quot; param=&quot;OPTICFLOW_FAST9_PADDING&quot;/&gt;</div>
-<div class="line">        &lt;dl_setting var=&quot;opticflow.fast9_region_detect&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;1&quot; values=&quot;OFF|ON&quot; shortname=&quot;fast9_region_detect&quot; param=&quot;OPTICFLOW_FAST9_REGION_DETECT&quot;/&gt;</div>
-<div class="line">        &lt;dl_setting var=&quot;opticflow.fast9_num_regions&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;1&quot; step=&quot;1&quot; max=&quot;25&quot; shortname=&quot;fast9_num_regions&quot; param=&quot;OPTICFLOW_FAST9_NUM_REGIONS&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting var=&quot;opticflow[0].max_track_corners&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;500&quot; shortname=&quot;max_trck_corners&quot; param=&quot;OPTICFLOW_MAX_TRACK_CORNERS&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting var=&quot;opticflow[0].max_iterations&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;100&quot; shortname=&quot;max_iterations&quot; param=&quot;OPTICFLOW_MAX_ITERATIONS&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting var=&quot;opticflow[0].threshold_vec&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;100&quot; shortname=&quot;threshold_vec&quot; param=&quot;OPTICFLOW_THRESHOLD_VEC&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting var=&quot;opticflow[0].fast9_adaptive&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;1&quot; values=&quot;FALSE|TRUE&quot; shortname=&quot;fast9_adaptive&quot; param=&quot;OPTICFLOW_FAST9_ADAPTIVE&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting var=&quot;opticflow[0].fast9_threshold&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;255&quot; shortname=&quot;fast9_threshold&quot; param=&quot;OPTICFLOW_FAST9_THRESHOLD&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting var=&quot;opticflow[0].fast9_min_distance&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;500&quot; shortname=&quot;fast9_min_distance&quot; param=&quot;OPTICFLOW_FAST9_MIN_DISTANCE&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting var=&quot;opticflow[0].fast9_padding&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;50&quot; shortname=&quot;fast9_padding&quot; param=&quot;OPTICFLOW_FAST9_PADDING&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting var=&quot;opticflow[0].fast9_region_detect&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;1&quot; values=&quot;OFF|ON&quot; shortname=&quot;fast9_region_detect&quot; param=&quot;OPTICFLOW_FAST9_REGION_DETECT&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting var=&quot;opticflow[0].fast9_num_regions&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;1&quot; step=&quot;1&quot; max=&quot;25&quot; shortname=&quot;fast9_num_regions&quot; param=&quot;OPTICFLOW_FAST9_NUM_REGIONS&quot;/&gt;</div>
 <div class="line"></div>
 <div class="line">        &lt;!-- ACT-FAST settings --&gt;</div>
-<div class="line">        &lt;dl_setting var=&quot;opticflow.actfast_long_step&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;1&quot; step=&quot;1&quot; max=&quot;100&quot; shortname=&quot;actfast_long_step&quot; param=&quot;OPTICFLOW_ACTFAST_LONG_STEP&quot;/&gt;</div>
-<div class="line">        &lt;dl_setting var=&quot;opticflow.actfast_short_step&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;1&quot; step=&quot;1&quot; max=&quot;10&quot; shortname=&quot;actfast_short_step&quot; param=&quot;OPTICFLOW_ACTFAST_SHORT_STEP&quot;/&gt;</div>
-<div class="line">        &lt;dl_setting var=&quot;opticflow.actfast_min_gradient&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;1&quot; step=&quot;1&quot; max=&quot;255&quot; shortname=&quot;actfast_min_gradient&quot; param=&quot;OPTICFLOW_ACTFAST_MIN_GRADIENT&quot;/&gt;</div>
-<div class="line">        &lt;dl_setting var=&quot;opticflow.actfast_gradient_method&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;1&quot;  values=&quot;SIMPLE|SOBEL&quot; shortname=&quot;actfast_gradient_method&quot; param=&quot;OPTICFLOW_ACTFAST_GRADIENT_METHOD&quot;/&gt;        </div>
+<div class="line">        &lt;dl_setting var=&quot;opticflow[0].actfast_long_step&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;1&quot; step=&quot;1&quot; max=&quot;100&quot; shortname=&quot;actfast_long_step&quot; param=&quot;OPTICFLOW_ACTFAST_LONG_STEP&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting var=&quot;opticflow[0].actfast_short_step&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;1&quot; step=&quot;1&quot; max=&quot;10&quot; shortname=&quot;actfast_short_step&quot; param=&quot;OPTICFLOW_ACTFAST_SHORT_STEP&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting var=&quot;opticflow[0].actfast_min_gradient&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;1&quot; step=&quot;1&quot; max=&quot;255&quot; shortname=&quot;actfast_min_gradient&quot; param=&quot;OPTICFLOW_ACTFAST_MIN_GRADIENT&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting var=&quot;opticflow[0].actfast_gradient_method&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;1&quot;  values=&quot;SIMPLE|SOBEL&quot; shortname=&quot;actfast_gradient_method&quot; param=&quot;OPTICFLOW_ACTFAST_GRADIENT_METHOD&quot;/&gt;</div>
 <div class="line"></div>
 <div class="line">        &lt;!-- Changes pyramid level of lucas kanade optical flow. --&gt;</div>
-<div class="line">        &lt;dl_setting var=&quot;opticflow.pyramid_level&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;10&quot; shortname=&quot;pyramid_level&quot; param=&quot;OPTICFLOW_PYRAMID_LEVEL&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting var=&quot;opticflow[0].pyramid_level&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;10&quot; shortname=&quot;pyramid_level&quot; param=&quot;OPTICFLOW_PYRAMID_LEVEL&quot;/&gt;</div>
+<div class="line">      &lt;/dl_settings&gt;</div>
+<div class="line"></div>
+<div class="line">      &lt;dl_settings name=&quot;vision_calc camera2&quot;&gt;</div>
+<div class="line">        &lt;dl_setting var=&quot;opticflow[1].method&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;1&quot; module=&quot;computer_vision/opticflow_module&quot; shortname=&quot;method&quot; values=&quot;LK_Fast9|EdgeFlow&quot; param=&quot;METHOD_CAMERA2&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting var=&quot;opticflow[1].corner_method&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;1&quot; module=&quot;computer_vision/opticflow_module&quot; shortname=&quot;corner_method&quot; values=&quot;exhaustive-FAST|ACT-FAST&quot; param=&quot;CORNER_METHOD_CAMERA2&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting var=&quot;opticflow[1].window_size&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;20&quot; shortname=&quot;window_size&quot; param=&quot;OPTICFLOW_WINDOW_SIZE_CAMERA2&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting var=&quot;opticflow[1].search_distance&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;50&quot; shortname=&quot;search_distance&quot; param=&quot;SEARCH_DISTANCE_CAMERA2&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting var=&quot;opticflow[1].subpixel_factor&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;0&quot; step=&quot;10&quot; max=&quot;1000&quot; shortname=&quot;subpixel_factor&quot; param=&quot;OPTICFLOW_SUBPIXEL_FACTOR_CAMERA2&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting var=&quot;opticflow[1].resolution_factor&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;10&quot; step=&quot;10&quot; max=&quot;10000&quot; shortname=&quot;resolution_factor&quot; param=&quot;OPTICFLOW_RESOLUTION_FACTOR_CAMERA2&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting var=&quot;opticflow[1].derotation&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;1&quot; module=&quot;computer_vision/opticflow_module&quot; values=&quot;OFF|ON&quot; shortname=&quot;derotation&quot; param=&quot;OPTICFLOW_DEROTATION_CAMERA2&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting var=&quot;opticflow[1].median_filter&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;1&quot; values=&quot;OFF|ON&quot; shortname=&quot;median_filter&quot; param=&quot;OPTICFLOW_MEDIAN_FILTER_CAMERA2&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting var=&quot;opticflow[1].feature_management&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;1&quot; values=&quot;OFF|ON&quot; shortname=&quot;feature_management&quot; param=&quot;OPTICFLOW_FEATURE_MANAGEMENT_CAMERA2&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting var=&quot;opticflow[1].track_back&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;1&quot; values=&quot;FALSE|TRUE&quot; shortname=&quot;track_back&quot; param=&quot;OPTICFLOW_TRACK_BACK_CAMERA2&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting var=&quot;opticflow[1].show_flow&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;1&quot; values=&quot;FALSE|TRUE&quot; shortname=&quot;show_flow&quot; param=&quot;OPTICFLOW_SHOW_FLOW_CAMERA2&quot;/&gt;</div>
+<div class="line"></div>
+<div class="line">        &lt;!-- Specifically for Lucas Kanade and FAST9 --&gt;</div>
+<div class="line">        &lt;dl_setting var=&quot;opticflow[1].max_track_corners&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;500&quot; shortname=&quot;max_trck_corners&quot; param=&quot;OPTICFLOW_MAX_TRACK_CORNERS_CAMERA2&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting var=&quot;opticflow[1].max_iterations&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;100&quot; shortname=&quot;max_iterations&quot; param=&quot;OPTICFLOW_MAX_ITERATIONS_CAMERA2&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting var=&quot;opticflow[1].threshold_vec&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;100&quot; shortname=&quot;threshold_vec&quot; param=&quot;OPTICFLOW_THRESHOLD_VEC_CAMERA2&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting var=&quot;opticflow[1].fast9_adaptive&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;1&quot; values=&quot;FALSE|TRUE&quot; shortname=&quot;fast9_adaptive&quot; param=&quot;OPTICFLOW_FAST9_ADAPTIVE_CAMERA2&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting var=&quot;opticflow[1].fast9_threshold&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;255&quot; shortname=&quot;fast9_threshold&quot; param=&quot;OPTICFLOW_FAST9_THRESHOLD_CAMERA2&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting var=&quot;opticflow[1].fast9_min_distance&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;500&quot; shortname=&quot;fast9_min_distance&quot; param=&quot;OPTICFLOW_FAST9_MIN_DISTANCE_CAMERA2&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting var=&quot;opticflow[1].fast9_padding&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;50&quot; shortname=&quot;fast9_padding&quot; param=&quot;OPTICFLOW_FAST9_PADDING_CAMERA2&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting var=&quot;opticflow[1].fast9_region_detect&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;1&quot; values=&quot;OFF|ON&quot; shortname=&quot;fast9_region_detect&quot; param=&quot;OPTICFLOW_FAST9_REGION_DETECT_CAMERA2&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting var=&quot;opticflow[1].fast9_num_regions&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;1&quot; step=&quot;1&quot; max=&quot;25&quot; shortname=&quot;fast9_num_regions&quot; param=&quot;OPTICFLOW_FAST9_NUM_REGIONS_CAMERA2&quot;/&gt;</div>
+<div class="line"></div>
+<div class="line">        &lt;!-- ACT-FAST settings --&gt;</div>
+<div class="line">        &lt;dl_setting var=&quot;opticflow[1].actfast_long_step&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;1&quot; step=&quot;1&quot; max=&quot;100&quot; shortname=&quot;actfast_long_step&quot; param=&quot;OPTICFLOW_ACTFAST_LONG_STEP_CAMERA2&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting var=&quot;opticflow[1].actfast_short_step&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;1&quot; step=&quot;1&quot; max=&quot;10&quot; shortname=&quot;actfast_short_step&quot; param=&quot;OPTICFLOW_ACTFAST_SHORT_STEP_CAMERA2&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting var=&quot;opticflow[1].actfast_min_gradient&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;1&quot; step=&quot;1&quot; max=&quot;255&quot; shortname=&quot;actfast_min_gradient&quot; param=&quot;OPTICFLOW_ACTFAST_MIN_GRADIENT_CAMERA2&quot;/&gt;</div>
+<div class="line">        &lt;dl_setting var=&quot;opticflow[1].actfast_gradient_method&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;1&quot;  values=&quot;SIMPLE|SOBEL&quot; shortname=&quot;actfast_gradient_method&quot; param=&quot;OPTICFLOW_ACTFAST_GRADIENT_METHOD_CAMERA2&quot;/&gt;</div>
+<div class="line"></div>
+<div class="line">        &lt;!-- Changes pyramid level of lucas kanade optical flow. --&gt;</div>
+<div class="line">        &lt;dl_setting var=&quot;opticflow[1].pyramid_level&quot; module=&quot;computer_vision/opticflow_module&quot; min=&quot;0&quot; step=&quot;1&quot; max=&quot;10&quot; shortname=&quot;pyramid_level&quot; param=&quot;OPTICFLOW_PYRAMID_LEVEL_CAMERA2&quot;/&gt;</div>
 <div class="line">      &lt;/dl_settings&gt;</div>
 <div class="line">    &lt;/dl_settings&gt;</div>
 <div class="line">  &lt;/settings&gt;</div>
 <div class="line"></div>
-<div class="line">  &lt;autoload name=&quot;agl_dist&quot;/&gt;</div>
-<div class="line">  &lt;autoload name=&quot;video_thread&quot;/&gt;</div>
-<div class="line">  &lt;autoload name=&quot;pose_history&quot;/&gt;</div>
+<div class="line">  &lt;dep&gt;</div>
+<div class="line">    &lt;depends&gt;video_thread,agl_dist,pose_history&lt;/depends&gt;</div>
+<div class="line">  &lt;/dep&gt;</div>
 <div class="line"></div>
 <div class="line">  &lt;header&gt;</div>
 <div class="line">    &lt;file name=&quot;opticflow_module.h&quot;/&gt;</div>
@@ -374,7 +503,7 @@ Raw cv_opticflow.xml file:</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="onboard_modules.html">Onboard Modules</a></li>
-    <li class="footer">Generated on Fri May 15 2020 04:03:40 for Paparazzi UAS by
+    <li class="footer">Generated on Wed Mar 17 2021 08:03:58 for Paparazzi UAS by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>
