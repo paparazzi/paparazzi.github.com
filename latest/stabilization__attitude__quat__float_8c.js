@@ -8,6 +8,7 @@ var stabilization__attitude__quat__float_8c =
     [ "INTEGRATOR_BOUND", "stabilization__attitude__quat__float_8c.html#ae29afb89dc76a5696eaa52d215e44107", null ],
     [ "attitude_run_fb", "stabilization__attitude__quat__float_8c.html#abcf3f74ddd37dcf51e0df255d22c4a23", null ],
     [ "attitude_run_ff", "stabilization__attitude__quat__float_8c.html#a112d2235c054e7eadd1659fa0a78e4f4", null ],
+    [ "send_ahrs_ref_quat", "stabilization__attitude__quat__float_8c.html#a0b0a909dbd9646ea76aa4e91b1e52474", null ],
     [ "send_att", "stabilization__attitude__quat__float_8c.html#ae9244e1c3c685a32cc7ac97134ea6f6d", null ],
     [ "send_att_ref", "stabilization__attitude__quat__float_8c.html#a457dc37242ecee10254c28cb14d56ba7", null ],
     [ "stabilization_attitude_enter", "stabilization__attitude__quat__float_8c.html#a23f862ca823e6fd23fc9c111178be077", null ],

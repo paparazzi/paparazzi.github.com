@@ -53,6 +53,9 @@ var rotorcraft_2navigation_8h =
     [ "nav_circle", "rotorcraft_2navigation_8h.html#a36cb2df1c3d4dfeee909f2ebc8b38d64", null ],
     [ "nav_detect_ground", "rotorcraft_2navigation_8h.html#ac12153ea3a4b59b5d0b3b711495dd4ff", null ],
     [ "nav_follow", "rotorcraft_2navigation_8h.html#a6a2fff76f7a3054dedd033f8d681e3c9", null ],
+    [ "nav_get_speed_setpoint", "rotorcraft_2navigation_8h.html#afa53b47b30072d2b7b564d30b0583a9d", null ],
+    [ "nav_get_speed_sp_from_go", "rotorcraft_2navigation_8h.html#acc610b7246ea6f3650c33f5af6e26936", null ],
+    [ "nav_get_speed_sp_from_line", "rotorcraft_2navigation_8h.html#abbb0868de30a33c4a9dc5c0a723fd726", null ],
     [ "nav_home", "rotorcraft_2navigation_8h.html#a069e6b8f68b2e117cbbe03f29e30a2e3", null ],
     [ "nav_init", "rotorcraft_2navigation_8h.html#a64a3814d1672e69989f80701a0ff5749", null ],
     [ "nav_is_in_flight", "rotorcraft_2navigation_8h.html#a46063efd4dae5efe23d6c018af1917d1", null ],
@@ -85,6 +88,7 @@ var rotorcraft_2navigation_8h =
     [ "exception_flag", "rotorcraft_2navigation_8h.html#adeee457a987f1cfcc2e8373d24dab99a", null ],
     [ "failsafe_mode_dist2", "rotorcraft_2navigation_8h.html#a7369d742619e7cbb1b71ec46f845f06e", null ],
     [ "flight_altitude", "rotorcraft_2navigation_8h.html#a1612ea0e1474e49b800cb3f497096523", null ],
+    [ "force_forward", "rotorcraft_2navigation_8h.html#a0975dd5198f47a9c645f2716ae848235", null ],
     [ "horizontal_mode", "rotorcraft_2navigation_8h.html#ad2a5195a657a7961bfb54e3c2da48a21", null ],
     [ "last_wp", "rotorcraft_2navigation_8h.html#a280519e0d643e2e7ec41137b887d0b31", null ],
     [ "nav_altitude", "rotorcraft_2navigation_8h.html#af0e2e459664ed595f936a2a9d5852286", null ],
@@ -101,6 +105,7 @@ var rotorcraft_2navigation_8h =
     [ "nav_heading", "rotorcraft_2navigation_8h.html#acf3b5510f0b07816b1b93a0412f67d8f", null ],
     [ "nav_leg_length", "rotorcraft_2navigation_8h.html#a6be9ffc11dbc15e70354d551684067a8", null ],
     [ "nav_leg_progress", "rotorcraft_2navigation_8h.html#a42b0e2bd8bd15dbe64c4591a1f2e1f05", null ],
+    [ "nav_max_speed", "rotorcraft_2navigation_8h.html#a4b690e8c1727436ef525302049b1e823", null ],
     [ "nav_oval_count", "rotorcraft_2navigation_8h.html#a3f8eab6736191ca3d1cb16738cbcf97f", null ],
     [ "nav_pitch", "rotorcraft_2navigation_8h.html#acfa0f83e076f79c30ed7042e429b7ae0", null ],
     [ "nav_radius", "rotorcraft_2navigation_8h.html#a4e73a18879f679277a72ef00250e359e", null ],
@@ -109,6 +114,7 @@ var rotorcraft_2navigation_8h =
     [ "nav_throttle", "rotorcraft_2navigation_8h.html#a6f265609aee15b9f0c1861cba83f6ef7", null ],
     [ "navigation_carrot", "rotorcraft_2navigation_8h.html#a38461a74b0c87b0940a728140e2be361", null ],
     [ "navigation_target", "rotorcraft_2navigation_8h.html#a8441e260eaf698f39ec52124f0b31154", null ],
+    [ "to_end_vect", "rotorcraft_2navigation_8h.html#a6b57e8ad91fa849c094d1f9f37058e87", null ],
     [ "too_far_from_home", "rotorcraft_2navigation_8h.html#a40345348447d2bf9b3462286f0b95a4f", null ],
     [ "vertical_mode", "rotorcraft_2navigation_8h.html#af752145e6cd167ae0146e1a957f2e9e3", null ]
 ];

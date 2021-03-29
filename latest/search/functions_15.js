@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['u16bit_5fto_5fstr',['u16bit_to_str',['../microrl_8c.html#affa9b5e304f9ccbf148182fad193f7f5',1,'microrl.c']]],
   ['uart_5farch_5finit',['uart_arch_init',['../linux_2mcu__periph_2uart__arch_8c.html#a7e440684a8b6a4088b2f1d5b4dc47587',1,'uart_arch_init(void):&#160;uart_arch.c'],['../sim_2mcu__periph_2uart__arch_8c.html#a7e440684a8b6a4088b2f1d5b4dc47587',1,'uart_arch_init(void):&#160;uart_arch.c'],['../uart_8c.html#ae9ffb2e3ffbac1a594bc42e60f15a33d',1,'uart_arch_init(void):&#160;uart.c'],['../uart_8h.html#a7e440684a8b6a4088b2f1d5b4dc47587',1,'uart_arch_init(void):&#160;uart_arch.c']]],
   ['uart_5fchar_5favailable',['uart_char_available',['../linux_2mcu__periph_2uart__arch_8c.html#a663f41657d0ad8e115fc7709b071d749',1,'uart_char_available(struct uart_periph *p):&#160;uart_arch.c'],['../sim_2mcu__periph_2uart__arch_8c.html#a663f41657d0ad8e115fc7709b071d749',1,'uart_char_available(struct uart_periph *p):&#160;uart_arch.c'],['../uart_8c.html#a09c2a7abffc384d32d47fe4c24482d8e',1,'uart_char_available(struct uart_periph *p):&#160;uart.c'],['../uart_8h.html#a663f41657d0ad8e115fc7709b071d749',1,'uart_char_available(struct uart_periph *p):&#160;uart_arch.c']]],
   ['uart_5fcheck_5ffree_5fspace',['uart_check_free_space',['../chibios_2mcu__periph_2uart__arch_8c.html#a84e0ba332e04b6e93ac83a1f9874dc40',1,'uart_check_free_space(struct uart_periph *p, long *fd, uint16_t len):&#160;uart_arch.c'],['../uart_8c.html#ae8f64b02e6cc8b052d1d29321b7224de',1,'uart_check_free_space(struct uart_periph *p, long *fd, uint16_t len):&#160;uart.c'],['../uart_8h.html#a84e0ba332e04b6e93ac83a1f9874dc40',1,'uart_check_free_space(struct uart_periph *p, long *fd, uint16_t len):&#160;uart_arch.c']]],
@@ -20,6 +21,8 @@ var searchData=
   ['uart_5fset_5fbaudrate',['uart_set_baudrate',['../lpc21_2mcu__periph_2uart__arch_8c.html#a8af8009489a4355fe25541d5dc6f3c5b',1,'uart_arch.c']]],
   ['uart_5fspeed',['uart_speed',['../linux_2mcu__periph_2uart__arch_8h.html#a5bffc785e3d573a3d06ea17334623162',1,'uart_speed(int def):&#160;uart_arch.h'],['../serial__port_8c.html#a5bffc785e3d573a3d06ea17334623162',1,'uart_speed(int def):&#160;serial_port.c'],['../sim_2mcu__periph_2uart__arch_8h.html#a5bffc785e3d573a3d06ea17334623162',1,'uart_speed(int def):&#160;uart_arch.h']]],
   ['uart_5fthread',['uart_thread',['../linux_2mcu__periph_2uart__arch_8c.html#a6b084c97b4239a33b72ed3c2f5b26da5',1,'uart_thread(void *data):&#160;uart_arch.c'],['../sim_2mcu__periph_2uart__arch_8c.html#a6b084c97b4239a33b72ed3c2f5b26da5',1,'uart_thread(void *data):&#160;uart_arch.c']]],
+  ['uav_5frecovery_5finit',['uav_recovery_init',['../uav__recovery_8c.html#afb56afa9b03686836acfe9297191647f',1,'uav_recovery_init(void):&#160;uav_recovery.c'],['../uav__recovery_8h.html#afb56afa9b03686836acfe9297191647f',1,'uav_recovery_init(void):&#160;uav_recovery.c']]],
+  ['uav_5frecovery_5fperiodic',['uav_recovery_periodic',['../uav__recovery_8c.html#a4522492e3e1f40a73ba5fa47e1e07590',1,'uav_recovery_periodic(void):&#160;uav_recovery.c'],['../uav__recovery_8h.html#a4522492e3e1f40a73ba5fa47e1e07590',1,'uav_recovery_periodic(void):&#160;uav_recovery.c']]],
   ['ubx_5fheader',['ubx_header',['../gps__ubx_8c.html#a2318a808b3f3f117741ab7d86e4eaf78',1,'ubx_header(struct link_device *dev, uint8_t nav_id, uint8_t msg_id, uint16_t len):&#160;gps_ubx.c'],['../gps__ubx_8h.html#a2318a808b3f3f117741ab7d86e4eaf78',1,'ubx_header(struct link_device *dev, uint8_t nav_id, uint8_t msg_id, uint16_t len):&#160;gps_ubx.c']]],
   ['ubx_5fprocess',['ubx_process',['../rtcm3_8h.html#a514685aeca259c33684a0143524e6ed9',1,'rtcm3.h']]],
   ['ubx_5fsend_5f1byte',['ubx_send_1byte',['../gps__ubx_8c.html#a49426a97f05e80adcc0ad14fba8ce5b5',1,'gps_ubx.c']]],
@@ -58,14 +61,14 @@ var searchData=
   ['um6_5fsend_5fpacket',['UM6_send_packet',['../imu__um6_8c.html#abd766713dd3a7b205c16c8e2bfc539eb',1,'imu_um6.c']]],
   ['um6_5fverify_5fchk',['UM6_verify_chk',['../imu__um6_8c.html#a033110c36d24455d12bfe0fd8ffb9acc',1,'imu_um6.c']]],
   ['umarim_5fbaro_5fevent',['umarim_baro_event',['../umarim_2baro__board_8c.html#aa1f86f3ff4d588de0fa1237151e66adf',1,'umarim_baro_event(void):&#160;baro_board.c'],['../umarim_2baro__board_8h.html#aa1f86f3ff4d588de0fa1237151e66adf',1,'umarim_baro_event(void):&#160;baro_board.c']]],
-  ['undistort_5fimage_5ffunc',['undistort_image_func',['../undistort__image_8c.html#a9dc008caa002db709ede677afab23d1c',1,'undistort_image.c']]],
+  ['undistort_5fimage_5ffunc',['undistort_image_func',['../undistort__image_8c.html#a2cd16878ee59ab414a6efac1f717f060',1,'undistort_image.c']]],
   ['undistort_5fimage_5finit',['undistort_image_init',['../undistort__image_8c.html#a2fe19ff135bf0c4edca40d4f630b973f',1,'undistort_image_init(void):&#160;undistort_image.c'],['../undistort__image_8h.html#a2fe19ff135bf0c4edca40d4f630b973f',1,'undistort_image_init(void):&#160;undistort_image.c']]],
   ['unwrap_5flut',['unwrap_LUT',['../pano__unwrap_8c.html#a7749a199c15590f0007e9976535686c5',1,'pano_unwrap.c']]],
   ['update_5f1e_5ffilter',['update_1e_filter',['../1e__filter_8h.html#aab2ef7a5d4de10a6cdf1603c914e321d',1,'1e_filter.h']]],
   ['update_5f1e_5ffilter_5fat_5ftime',['update_1e_filter_at_time',['../1e__filter_8h.html#a44707fb8b1604846ccdb71333a02b51e',1,'1e_filter.h']]],
   ['update_5factuators',['update_actuators',['../fixedwing_2main__fbw_8c.html#a54895a0ba113424b583caacfdce6ef13',1,'main_fbw.c']]],
   ['update_5fadc1',['update_adc1',['../sim__adc__generic_8c.html#a3c780b3b2aa18a20129e19e4f2d4cab9',1,'sim_adc_generic.c']]],
-  ['update_5fae_5fawb',['update_ae_awb',['../bebop__ae__awb_8c.html#a98dd41d74e2aed7f79d733e5c554701b',1,'bebop_ae_awb.c']]],
+  ['update_5fae_5fawb',['update_ae_awb',['../bebop__ae__awb_8c.html#a8c0fd60f86284b6fea7ce86d81efcc04',1,'bebop_ae_awb.c']]],
   ['update_5fahrs_5ffrom_5fsim',['update_ahrs_from_sim',['../ahrs__sim_8c.html#a631ce4de5e99850af24482335a960acf',1,'update_ahrs_from_sim(void):&#160;ahrs_sim.c'],['../ahrs__sim_8h.html#a631ce4de5e99850af24482335a960acf',1,'update_ahrs_from_sim(void):&#160;ahrs_sim.c']]],
   ['update_5falt_5fconf',['update_alt_conf',['../vf__extended__float_8c.html#a8cf6550aed7ee0fab93545ce283d183c',1,'vf_extended_float.c']]],
   ['update_5fbat',['update_bat',['../sim__ap_8c.html#a7e41927f9c350afbed960e8c407f8f82',1,'sim_ap.c']]],
@@ -102,9 +105,11 @@ var searchData=
   ['updatecrc',['UpdateCRC',['../imu__chimu_8c.html#a2c788af1398c314b3985546d7177df54',1,'imu_chimu.c']]],
   ['updatecrc8',['updateCrc8',['../esc__dshot_8c.html#aea595f27e51665e32b06116f9965c856',1,'esc_dshot.c']]],
   ['updateformationstatus',['updateFormationStatus',['../formation_8h.html#aaddb36dfcfa5356d7599cef8a7092c46',1,'formation.h']]],
+  ['updaterssisamples',['updateRssiSamples',['../cc2500__rx_8c.html#a507446e9f231754816f61219ee50da4f',1,'cc2500_rx.c']]],
   ['updatesensorlatency',['UpdateSensorLatency',['../nps__sensors__utils_8c.html#a3161ab2cb241afbcb27234e69fd1528f',1,'UpdateSensorLatency(double time, gpointer cur_reading, GSList **history, double latency, gpointer sensor_reading):&#160;nps_sensors_utils.c'],['../nps__sensors__utils_8h.html#a3161ab2cb241afbcb27234e69fd1528f',1,'UpdateSensorLatency(double time, gpointer cur_reading, GSList **history, double latency, gpointer sensor_reading):&#160;nps_sensors_utils.c']]],
   ['updatesensorlatency_5fsingle',['UpdateSensorLatency_Single',['../nps__sensors__utils_8c.html#ae79b4a67a1de0346dab12bba1bf3b6bb',1,'UpdateSensorLatency_Single(double time, gpointer cur_reading, GSList **history, double latency, gpointer sensor_reading):&#160;nps_sensors_utils.c'],['../nps__sensors__utils_8h.html#ae79b4a67a1de0346dab12bba1bf3b6bb',1,'UpdateSensorLatency_Single(double time, gpointer cur_reading, GSList **history, double latency, gpointer sensor_reading):&#160;nps_sensors_utils.c']]],
   ['updateslot',['updateSlot',['../formation_8h.html#a6827e5dcc339fa55b8c8d49bc3de0617',1,'formation.h']]],
+  ['usage',['usage',['../group__SHELL.html#gacb01942f228e0914fe22cd064d78a2ab',1,'microrlShell.c']]],
   ['usart_5fenable_5firq',['usart_enable_irq',['../stm32_2mcu__periph_2uart__arch_8c.html#a12913f1f383441182dfc9427872ab27c',1,'uart_arch.c']]],
   ['usart_5fisr',['usart_isr',['../stm32_2mcu__periph_2uart__arch_8c.html#ad0ce3e25719e0b3fc9b7b71fc1685625',1,'uart_arch.c']]],
   ['usb_5fserial_5fchar_5favailable',['usb_serial_char_available',['../lpc21_2usb__ser__hw_8c.html#adaa435f6235136b75de97d7efa7387d1',1,'usb_serial_char_available(struct usb_serial_periph *p):&#160;usb_ser_hw.c'],['../stm32_2usb__ser__hw_8c.html#adaa435f6235136b75de97d7efa7387d1',1,'usb_serial_char_available(struct usb_serial_periph *p):&#160;usb_ser_hw.c']]],
@@ -129,5 +134,7 @@ var searchData=
   ['utm_5fof_5flla_5fd',['utm_of_lla_d',['../group__math__geodetic__double.html#ga9d76a215409f6f6bfcfe8214d6398250',1,'utm_of_lla_d(struct UtmCoor_d *utm, struct LlaCoor_d *lla):&#160;pprz_geodetic_double.c'],['../group__math__geodetic__double.html#ga9d76a215409f6f6bfcfe8214d6398250',1,'utm_of_lla_d(struct UtmCoor_d *utm, struct LlaCoor_d *lla):&#160;pprz_geodetic_double.c']]],
   ['utm_5fof_5flla_5ff',['utm_of_lla_f',['../pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd',1,'utm_of_lla_f(struct UtmCoor_f *utm, struct LlaCoor_f *lla):&#160;pprz_geodetic_float.c'],['../pprz__geodetic__float_8h.html#af99d4775df518f30b741b49c26eceedd',1,'utm_of_lla_f(struct UtmCoor_f *utm, struct LlaCoor_f *lla):&#160;pprz_geodetic_float.c']]],
   ['utm_5fof_5flla_5fi',['utm_of_lla_i',['../group__math__geodetic__int.html#gad84470d73cce3f4d1c54bf579239849c',1,'utm_of_lla_i(struct UtmCoor_i *utm, struct LlaCoor_i *lla):&#160;pprz_geodetic_int.c'],['../group__math__geodetic__int.html#gad84470d73cce3f4d1c54bf579239849c',1,'utm_of_lla_i(struct UtmCoor_i *utm, struct LlaCoor_i *lla):&#160;pprz_geodetic_int.c']]],
-  ['uyvy_5fopencv_5fto_5fyuv_5fopencv',['uyvy_opencv_to_yuv_opencv',['../opencv__contour_8cpp.html#aacf010d9af0df1a976e9c56bbe6a3dcd',1,'opencv_contour.cpp']]]
+  ['uyvy_5fopencv_5fto_5fyuv_5fopencv',['uyvy_opencv_to_yuv_opencv',['../opencv__contour_8cpp.html#aacf010d9af0df1a976e9c56bbe6a3dcd',1,'opencv_contour.cpp']]],
+  ['uyvys_5finterlacing_5fh',['UYVYs_interlacing_H',['../wedgebug_8c.html#aee36e064af7c672ddeb8e9ccd5cbe7e6',1,'wedgebug.c']]],
+  ['uyvys_5finterlacing_5fv',['UYVYs_interlacing_V',['../wedgebug_8c.html#a94ee40c89cb54968c8c4424eb38e9c27',1,'wedgebug.c']]]
 ];

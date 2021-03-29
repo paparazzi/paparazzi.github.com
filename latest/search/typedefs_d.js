@@ -1,11 +1,16 @@
 var searchData=
 [
-  ['s16',['s16',['../group__common__inttypes.html#gaa980e2c02ba2305e0f489d5650655425',1,'common.h']]],
-  ['s32',['s32',['../group__common__inttypes.html#gae9b1af5c037e57a98884758875d3a7c4',1,'common.h']]],
-  ['s64',['s64',['../group__common__inttypes.html#ga350c6fc928e3bdc6c6486268ac8fb269',1,'common.h']]],
-  ['s8',['s8',['../group__common__inttypes.html#ga9e382f207c65ca13ab4ae98363aeda80',1,'common.h']]],
-  ['sdcardcallback',['SDCardCallback',['../sdcard__spi_8h.html#a58e5b897a3881502acaf7427482789cb',1,'sdcard_spi.h']]],
-  ['sdlogbuffer',['SdLogBuffer',['../sdLog_8h.html#a0e787f1aae89ff3c1ee8ce8431208d5a',1,'sdLog.h']]],
-  ['spicallback',['SPICallback',['../group__spi.html#gaa52d88d236eb343ac78b3192a5c9c4c3',1,'spi.h']]],
-  ['sys_5ftime_5fcb',['sys_time_cb',['../sys__time_8h.html#a7c75e80c3211af63abc57efa18647726',1,'sys_time.h']]]
+  ['rc_5fscript',['rc_script',['../nps__radio__control_8c.html#af7482dd8008ea128505e53b89dde34fb',1,'nps_radio_control.c']]],
+  ['rcframestatusfnptr',['rcFrameStatusFnPtr',['../cc2500__rx_8h.html#adc24ae9335ea51c7d93de5259980743a',1,'cc2500_rx.h']]],
+  ['rcprocessframefnptr',['rcProcessFrameFnPtr',['../cc2500__rx_8h.html#acbe035b363c4ce3bfb5ee2bce5f8dcff',1,'cc2500_rx.h']]],
+  ['rcreadrawdatafnptr',['rcReadRawDataFnPtr',['../cc2500__rx_8h.html#ad9d255429669a80ceb447111187e6d42',1,'cc2500_rx.h']]],
+  ['real32_5ft',['real32_T',['../rtwtypes_8h.html#a4681caa479b0bdadb029f609112eaa71',1,'rtwtypes.h']]],
+  ['real64_5ft',['real64_T',['../rtwtypes_8h.html#a46f68e0764d0db500e202f001b0ee370',1,'rtwtypes.h']]],
+  ['real_5ft',['real_T',['../rtwtypes_8h.html#a2e4078fe4daba4fe064f5c7614b361a2',1,'rtwtypes.h']]],
+  ['rtcm3_5fmsg_5fcallback_5ft',['rtcm3_msg_callback_t',['../rtcm3_8h.html#a7545c65469f551eca78549cd77abc741',1,'rtcm3.h']]],
+  ['rtcm3_5fmsg_5fcallbacks_5fnode_5ft',['rtcm3_msg_callbacks_node_t',['../rtcm3_8h.html#a8002e8812bc76bec6d3ca05b05b3ba4f',1,'rtcm3.h']]],
+  ['rxcc2500spiconfig_5ft',['rxCc2500SpiConfig_t',['../cc2500__settings_8h.html#a2e833ed604e565e61029253442c3ee2a',1,'cc2500_settings.h']]],
+  ['rxconfig_5ft',['rxConfig_t',['../cc2500__settings_8h.html#ae639b1b3514e76b8b10cf50db947df25',1,'cc2500_settings.h']]],
+  ['rxruntimeconfig_5ft',['rxRuntimeConfig_t',['../cc2500__rx_8h.html#a42f050b55773f3d2df861b5860040fe8',1,'cc2500_rx.h']]],
+  ['rxspiconfig_5ft',['rxSpiConfig_t',['../cc2500__settings_8h.html#a07ac6528949c2a793be79a2cfaf3ad19',1,'cc2500_settings.h']]]
 ];

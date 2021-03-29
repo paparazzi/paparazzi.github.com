@@ -15,6 +15,7 @@ var searchData=
   ['bmi088gyropowertype',['Bmi088GyroPowerType',['../bmi088__regs_8h.html#aedc8851a2661a418cbd73135d3516556',1,'bmi088_regs.h']]],
   ['bmi088gyroranges',['Bmi088GyroRanges',['../bmi088__regs_8h.html#a89d31896f298f79fb1003d5aa59791dd',1,'bmi088_regs.h']]],
   ['bmp085status',['Bmp085Status',['../bmp085_8h.html#ae7b86dc36a1e35afe6f8135a199f559d',1,'bmp085.h']]],
+  ['bmp280status',['Bmp280Status',['../bmp280__regs_8h.html#ac60204587a3d91102e594fa2496e1a7b',1,'bmp280_regs.h']]],
   ['bmp3status',['Bmp3Status',['../bmp3__regs_8h.html#ae48cbf815266a843270261557ba7f45c',1,'bmp3_regs.h']]],
   ['boolean',['boolean',['../types_8h.html#a7c6368b321bd9acd0149b030bb8275ed',1,'boolean():&#160;types.h'],['../inttypes_8h.html#a7c6368b321bd9acd0149b030bb8275ed',1,'boolean():&#160;inttypes.h']]]
 ];

@@ -1,0 +1,33 @@
+<map id="air_data_init" name="air_data_init">
+<area shape="rect" id="node2" href="$air__data_8c.html#af4b6a37d862e72a427f405e18fe3a5f5" title="airspeed_cb" alt="" coords="203,157,301,184"/>
+<area shape="rect" id="node17" href="$air__data_8c.html#a896330e2da292c75ca65a644566050ad" title="incidence_cb" alt="" coords="200,383,304,409"/>
+<area shape="rect" id="node20" href="$air__data_8c.html#aca0d080f4ac927cd0096741f520e68bf" title="pressure_abs_cb" alt="" coords="187,332,317,359"/>
+<area shape="rect" id="node26" href="$air__data_8c.html#a4ecdb280f61e36c777ce134bac0d140a" title="pressure_diff_cb" alt="" coords="189,107,315,133"/>
+<area shape="rect" id="node28" href="$telemetry_8c.html#a8b8cf43739f06c54d16370c141b541a0" title="Register a telemetry callback function. " alt="" coords="153,433,351,460"/>
+<area shape="rect" id="node29" href="$air__data_8c.html#a5b68222903f8ba22950ff21c78b231c2" title="send_air_data" alt="" coords="196,484,308,511"/>
+<area shape="rect" id="node30" href="$air__data_8c.html#aae97369dd0a4cdc549c69a2767b9c76b" title="send_amsl" alt="" coords="707,239,798,265"/>
+<area shape="rect" id="node31" href="$air__data_8c.html#add8d02d7ec9c33ea1f26ad858e7f56f2" title="send_baro_raw" alt="" coords="193,535,311,561"/>
+<area shape="rect" id="node32" href="$air__data_8c.html#a704d8592956cc0ab315cbe37f9967cf6" title="temperature_cb" alt="" coords="189,31,315,57"/>
+<area shape="rect" id="node3" href="$air__data_8c.html#aecf73d89654409d574b551a23e3807ad" title="Calculate true airspeed from equivalent airspeed. " alt="" coords="447,107,557,133"/>
+<area shape="rect" id="node16" href="$group__state__wind__airspeed.html#ga2ede5795eaec38206e25b8850ee40f63" title="Set airspeed (float). " alt="" coords="430,157,574,184"/>
+<area shape="rect" id="node4" href="$air__data_8c.html#ae9803888a95a6268efcb76c8adc5cff4" title="Calculate true airspeed (TAS) factor. " alt="" coords="695,5,810,32"/>
+<area shape="rect" id="node5" href="$air__data_8c.html#a4691b05fed5487ddf708464110926d4d" title="Return AMSL (altitude AboveSeaLevel). " alt="" coords="683,188,823,215"/>
+<area shape="rect" id="node14" href="$group__math__isa.html#ga64a5320121c2e4fcd276a8434fa18c7b" title="Get pressure in Pa from absolute altitude (using simplified equation). " alt="" coords="674,122,831,163"/>
+<area shape="rect" id="node15" href="$group__math__isa.html#ga889c38e2942d13f6bd92deeb331f63a0" title="Get ISA temperature from a MSL altitude. " alt="" coords="671,57,834,98"/>
+<area shape="rect" id="node6" href="$group__state__position.html#gabd04faa28d1792450eaa4a3f22066055" title="Get position in LLA coordinates (float). " alt="" coords="900,239,1057,265"/>
+<area shape="rect" id="node7" href="$group__state__position.html#gaac3f376669ccf9575fb91e78ae4954f7" title="stateCalcPositionLla_f" alt="" coords="1105,239,1267,265"/>
+<area shape="rect" id="node8" href="$pprz__geodetic__float_8c.html#adecd186d51b41b09f0cad928c0d2f68e" title="lla_of_ecef_f" alt="" coords="1339,163,1439,189"/>
+<area shape="rect" id="node9" href="$pprz__geodetic__float_8c.html#a30c2e47ec9a898079c04e8b08496b455" title="lla_of_utm_f" alt="" coords="1340,213,1439,240"/>
+<area shape="rect" id="node12" href="$pprz__geodetic__float_8c.html#a9703caac26c4b1272c010037fd661956" title="ecef_of_ned_point_f" alt="" coords="1315,315,1464,341"/>
+<area shape="rect" id="node13" href="$pprz__geodetic__float_8c.html#a197187e7b04018beddfcd6a7a4ab3972" title="ecef_of_enu_point_f" alt="" coords="1537,289,1687,316"/>
+<area shape="rect" id="node10" href="$pprz__geodetic__float_8c.html#a28b6e05c87f50f1e5290e36407095fb6" title="inverse_isometric_latitude_f" alt="" coords="1512,227,1712,253"/>
+<area shape="rect" id="node11" href="$pprz__geodetic__float_8c.html#a21ea1b369f7d4abd984fb89c488dde24" title="isometric_latitude\l_fast_f" alt="" coords="1544,161,1680,202"/>
+<area shape="rect" id="node18" href="$group__state__wind__airspeed.html#ga1a540eaf41fceb101d2c7403f1e9ba06" title="Set angle of attack in radians (float). " alt="" coords="413,543,591,569"/>
+<area shape="rect" id="node19" href="$group__state__wind__airspeed.html#ga6198f76153003e86df9bbac3ed892ed1" title="Set sideslip angle in radians (float). " alt="" coords="433,593,571,620"/>
+<area shape="rect" id="node21" href="$group__state__position.html#gaa448f4b7a818b669a03eaf0fc7b9f218" title="Test if global coordinates are valid. " alt="" coords="399,391,605,417"/>
+<area shape="rect" id="node23" href="$UKF__Wind__Estimator_8c.html#a1b540e52aff26922bc43ff126fa35270" title="h" alt="" coords="483,441,521,468"/>
+<area shape="rect" id="node24" href="$group__math__isa.html#gafdec5e2681fb1665fc5c6da7ed86e0a7" title="Get reference pressure (QFE or QNH) from current pressure and height. " alt="" coords="421,259,583,301"/>
+<area shape="rect" id="node25" href="$group__math__isa.html#gaf1eda8b09fa91ba53444be5c8e009994" title="Get relative altitude from pressure (using full equation). " alt="" coords="431,325,573,366"/>
+<area shape="rect" id="node22" href="$group__state__position.html#gad1490e1d9825a698db02787701f99f6f" title="Test if local coordinates are valid. " alt="" coords="653,391,852,417"/>
+<area shape="rect" id="node27" href="$air__data_8c.html#a0767fbd26611c68f1d1259567a6dfe50" title="Calculate equivalent airspeed from dynamic pressure. " alt="" coords="399,56,605,83"/>
+</map>

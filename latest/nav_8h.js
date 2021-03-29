@@ -119,5 +119,6 @@ var nav_8h =
     [ "nav_survey_south", "nav_8h.html#a5bd732618e35c5a855ef4e0549f733f0", null ],
     [ "nav_survey_west", "nav_8h.html#aeb19008e34a80086cfcb00ae5ae32fdd", null ],
     [ "nav_throttle_setpoint", "nav_8h.html#a5eb16c9d058ba78537ddf42c2ace1075", null ],
+    [ "oval_status", "nav_8h.html#a80cf41be180b9c15f127bcbee731fb9b", null ],
     [ "rc_pitch", "nav_8h.html#ad1a9450df5c62410ea50a3e36aa963f1", null ]
 ];

@@ -68,6 +68,8 @@ var searchData=
   ['lisa_5fmx_5fcommon_2eh',['lisa_mx_common.h',['../lisa__mx__common_8h.html',1,'']]],
   ['lisa_5fmxs_5f1_2e0_2eh',['lisa_mxs_1.0.h',['../lisa__mxs__1_80_8h.html',1,'']]],
   ['lisa_5fs_5f1_2e0_2eh',['lisa_s_1.0.h',['../lisa__s__1_80_8h.html',1,'']]],
+  ['logger_5fcontrol_5feffectiveness_2ec',['logger_control_effectiveness.c',['../logger__control__effectiveness_8c.html',1,'']]],
+  ['logger_5fcontrol_5feffectiveness_2eh',['logger_control_effectiveness.h',['../logger__control__effectiveness_8h.html',1,'']]],
   ['logger_5fuart_2ec',['logger_uart.c',['../logger__uart_8c.html',1,'']]],
   ['logger_5fuart_2eh',['logger_uart.h',['../logger__uart_8h.html',1,'']]],
   ['logger_5fuart_5fparse_2epy',['logger_uart_parse.py',['../logger__uart__parse_8py.html',1,'']]],

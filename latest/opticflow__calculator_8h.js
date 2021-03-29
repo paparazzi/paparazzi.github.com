@@ -5,6 +5,7 @@ var opticflow__calculator_8h =
       [ "actfast_long_step", "opticflow__calculator_8h.html#a93e090c235282f0ea3adfb90f5df6fb8", null ],
       [ "actfast_min_gradient", "opticflow__calculator_8h.html#abb24128e6ff419613175073b90217f94", null ],
       [ "actfast_short_step", "opticflow__calculator_8h.html#af2b68acbdbead102649264f6830e7c3e", null ],
+      [ "camera", "opticflow__calculator_8h.html#a74e9f391f9e9b0d66049bb0b172558c0", null ],
       [ "corner_method", "opticflow__calculator_8h.html#a4967bac1deb26cf5ddc9af53918d6e0d", null ],
       [ "derotation", "opticflow__calculator_8h.html#a69eee269a375bf38f5165e3babbacb37", null ],
       [ "derotation_correction_factor_x", "opticflow__calculator_8h.html#a1e4ae6d4816b337a16747a2c072572ec", null ],
@@ -19,6 +20,7 @@ var opticflow__calculator_8h =
       [ "fast9_threshold", "opticflow__calculator_8h.html#ab85fa885515cb68118e90cc57d846708", null ],
       [ "feature_management", "opticflow__calculator_8h.html#ad458a766df7f0952e880fdfdadad0a3b", null ],
       [ "got_first_img", "opticflow__calculator_8h.html#a50177a5e749edc0bdc8ea6a33fee44ac", null ],
+      [ "id", "opticflow__calculator_8h.html#af2e32767b08ec68164d72904d3ff50ea", null ],
       [ "img_gray", "opticflow__calculator_8h.html#a48090cfda015ecd52f82d6b72c8052fd", null ],
       [ "just_switched_method", "opticflow__calculator_8h.html#ad00cecd0d37a2da50d7e52907e316045", null ],
       [ "max_iterations", "opticflow__calculator_8h.html#a7b0e7579d3f7448cf883fbadef8cf13f", null ],
@@ -40,5 +42,5 @@ var opticflow__calculator_8h =
     [ "calc_fast9_lukas_kanade", "opticflow__calculator_8h.html#a3edff14cc7f95b5202ba6841a12dfed3", null ],
     [ "kalman_filter_opticflow_velocity", "opticflow__calculator_8h.html#a0b04e288db8c4c22a0354161df3e7873", null ],
     [ "opticflow_calc_frame", "opticflow__calculator_8h.html#a89e51af8fe5a0f534193635d181a2086", null ],
-    [ "opticflow_calc_init", "opticflow__calculator_8h.html#a519453dc5509bc6d489b2b5aeb94f915", null ]
+    [ "opticflow_calc_init", "opticflow__calculator_8h.html#a7d03c46f201e48777ef9d612fe73fc51", null ]
 ];

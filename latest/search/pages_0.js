@@ -22,7 +22,6 @@ var searchData=
   ['actuators_5fskiron_20module',['actuators_skiron module',['../module__actuators_skiron.html',1,'onboard_modules']]],
   ['actuators_5fspektrum_20module',['actuators_spektrum module',['../module__actuators_spektrum.html',1,'onboard_modules']]],
   ['actuators_5fswing_20module',['actuators_swing module',['../module__actuators_swing.html',1,'onboard_modules']]],
-  ['actuators_5fxvert_20module',['actuators_xvert module',['../module__actuators_xvert.html',1,'onboard_modules']]],
   ['adc_20module',['adc module',['../module__adc.html',1,'onboard_modules']]],
   ['adc_5fgeneric_20module',['adc_generic module',['../module__adc_generic.html',1,'onboard_modules']]],
   ['agl_5fdist_20module',['agl_dist module',['../module__agl_dist.html',1,'onboard_modules']]],

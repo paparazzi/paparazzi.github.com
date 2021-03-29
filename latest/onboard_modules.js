@@ -20,6 +20,7 @@ var onboard_modules =
       [ "Display modules", "onboard_modules.html#modules_category_display", null ],
       [ "Energy modules", "onboard_modules.html#modules_category_energy", null ],
       [ "Fdm modules", "onboard_modules.html#modules_category_fdm", null ],
+      [ "Gpio_Ext modules", "onboard_modules.html#modules_category_gpio_ext", null ],
       [ "Gps modules", "onboard_modules.html#modules_category_gps", null ],
       [ "Guidance modules", "onboard_modules.html#modules_category_guidance", null ],
       [ "Helicopter modules", "onboard_modules.html#modules_category_helicopter", null ],
@@ -173,12 +174,6 @@ var onboard_modules =
         [ "Raw actuators_swing.xml file:", "module__actuators_swing.html#module_xml__actuators_swing", null ]
       ] ]
     ] ],
-    [ "actuators_xvert module", "module__actuators_xvert.html", [
-      [ "Example for airframe file", "module__actuators_xvert.html#module_load_example__actuators_xvert", null ],
-      [ "Module configuration options", "module__actuators_xvert.html#configuration__actuators_xvert", [
-        [ "Raw actuators_xvert.xml file:", "module__actuators_xvert.html#module_xml__actuators_xvert", null ]
-      ] ]
-    ] ],
     [ "motor_mixing module", "module__motor_mixing.html", [
       [ "Example for airframe file", "module__motor_mixing.html#module_load_example__motor_mixing", null ],
       [ "Module configuration options", "module__motor_mixing.html#configuration__motor_mixing", null ],
@@ -255,7 +250,6 @@ var onboard_modules =
     ] ],
     [ "ahrs_infrared module", "module__ahrs_infrared.html", [
       [ "Example for airframe file", "module__ahrs_infrared.html#module_load_example__ahrs_infrared", null ],
-      [ "Dependencies", "module__ahrs_infrared.html#dependencies__ahrs_infrared", null ],
       [ "Module functions", "module__ahrs_infrared.html#functions__ahrs_infrared", [
         [ "Raw ahrs_infrared.xml file:", "module__ahrs_infrared.html#module_xml__ahrs_infrared", null ]
       ] ]
@@ -312,6 +306,19 @@ var onboard_modules =
         [ "Raw imu_quality_assessment.xml file:", "module__imu_quality_assessment.html#module_xml__imu_quality_assessment", null ]
       ] ]
     ] ],
+    [ "board_matek_f405_wing module", "module__board_matek_f405_wing.html", [
+      [ "Example for airframe file", "module__board_matek_f405_wing.html#module_load_example__board_matek_f405_wing", null ],
+      [ "Auto-loaded modules", "module__board_matek_f405_wing.html#autoloads__board_matek_f405_wing", [
+        [ "Raw board_matek_f405_wing.xml file:", "module__board_matek_f405_wing.html#module_xml__board_matek_f405_wing", null ]
+      ] ]
+    ] ],
+    [ "board_matek_f765_wing module", "module__board_matek_f765_wing.html", [
+      [ "Example for airframe file", "module__board_matek_f765_wing.html#module_load_example__board_matek_f765_wing", null ],
+      [ "Module configuration options", "module__board_matek_f765_wing.html#configuration__board_matek_f765_wing", null ],
+      [ "Auto-loaded modules", "module__board_matek_f765_wing.html#autoloads__board_matek_f765_wing", [
+        [ "Raw board_matek_f765_wing.xml file:", "module__board_matek_f765_wing.html#module_xml__board_matek_f765_wing", null ]
+      ] ]
+    ] ],
     [ "board_tawaki module", "module__board_tawaki.html", [
       [ "Example for airframe file", "module__board_tawaki.html#module_load_example__board_tawaki", null ],
       [ "Module configuration options", "module__board_tawaki.html#configuration__board_tawaki", null ],
@@ -352,7 +359,6 @@ var onboard_modules =
     ] ],
     [ "cam_segment module", "module__cam_segment.html", [
       [ "Example for airframe file", "module__cam_segment.html#module_load_example__cam_segment", null ],
-      [ "Dependencies", "module__cam_segment.html#dependencies__cam_segment", null ],
       [ "Module functions", "module__cam_segment.html#functions__cam_segment", [
         [ "Raw cam_segment.xml file:", "module__cam_segment.html#module_xml__cam_segment", null ]
       ] ]
@@ -411,7 +417,6 @@ var onboard_modules =
     [ "cv_blob_locator module", "module__cv_blob_locator.html", [
       [ "Example for airframe file", "module__cv_blob_locator.html#module_load_example__cv_blob_locator", null ],
       [ "Module configuration options", "module__cv_blob_locator.html#configuration__cv_blob_locator", null ],
-      [ "Dependencies", "module__cv_blob_locator.html#dependencies__cv_blob_locator", null ],
       [ "Module functions", "module__cv_blob_locator.html#functions__cv_blob_locator", [
         [ "Raw cv_blob_locator.xml file:", "module__cv_blob_locator.html#module_xml__cv_blob_locator", null ]
       ] ]
@@ -419,7 +424,6 @@ var onboard_modules =
     [ "cv_colorfilter module", "module__cv_colorfilter.html", [
       [ "Example for airframe file", "module__cv_colorfilter.html#module_load_example__cv_colorfilter", null ],
       [ "Module configuration options", "module__cv_colorfilter.html#configuration__cv_colorfilter", null ],
-      [ "Dependencies", "module__cv_colorfilter.html#dependencies__cv_colorfilter", null ],
       [ "Module functions", "module__cv_colorfilter.html#functions__cv_colorfilter", [
         [ "Raw cv_colorfilter.xml file:", "module__cv_colorfilter.html#module_xml__cv_colorfilter", null ]
       ] ]
@@ -427,7 +431,6 @@ var onboard_modules =
     [ "cv_detect_color_object module", "module__cv_detect_color_object.html", [
       [ "Example for airframe file", "module__cv_detect_color_object.html#module_load_example__cv_detect_color_object", null ],
       [ "Module configuration options", "module__cv_detect_color_object.html#configuration__cv_detect_color_object", null ],
-      [ "Dependencies", "module__cv_detect_color_object.html#dependencies__cv_detect_color_object", null ],
       [ "Module functions", "module__cv_detect_color_object.html#functions__cv_detect_color_object", [
         [ "Raw cv_detect_color_object.xml file:", "module__cv_detect_color_object.html#module_xml__cv_detect_color_object", null ]
       ] ]
@@ -442,7 +445,6 @@ var onboard_modules =
     [ "cv_detect_gate module", "module__cv_detect_gate.html", [
       [ "Example for airframe file", "module__cv_detect_gate.html#module_load_example__cv_detect_gate", null ],
       [ "Module configuration options", "module__cv_detect_gate.html#configuration__cv_detect_gate", null ],
-      [ "Dependencies", "module__cv_detect_gate.html#dependencies__cv_detect_gate", null ],
       [ "Module functions", "module__cv_detect_gate.html#functions__cv_detect_gate", [
         [ "Raw cv_detect_gate.xml file:", "module__cv_detect_gate.html#module_xml__cv_detect_gate", null ]
       ] ]
@@ -470,7 +472,6 @@ var onboard_modules =
     [ "cv_opticflow module", "module__cv_opticflow.html", [
       [ "Example for airframe file", "module__cv_opticflow.html#module_load_example__cv_opticflow", null ],
       [ "Module configuration options", "module__cv_opticflow.html#configuration__cv_opticflow", null ],
-      [ "Auto-loaded modules", "module__cv_opticflow.html#autoloads__cv_opticflow", null ],
       [ "Module functions", "module__cv_opticflow.html#functions__cv_opticflow", [
         [ "Raw cv_opticflow.xml file:", "module__cv_opticflow.html#module_xml__cv_opticflow", null ]
       ] ]
@@ -492,7 +493,6 @@ var onboard_modules =
     [ "cv_undistort_image module", "module__cv_undistort_image.html", [
       [ "Example for airframe file", "module__cv_undistort_image.html#module_load_example__cv_undistort_image", null ],
       [ "Module configuration options", "module__cv_undistort_image.html#configuration__cv_undistort_image", null ],
-      [ "Dependencies", "module__cv_undistort_image.html#dependencies__cv_undistort_image", null ],
       [ "Module functions", "module__cv_undistort_image.html#functions__cv_undistort_image", [
         [ "Raw cv_undistort_image.xml file:", "module__cv_undistort_image.html#module_xml__cv_undistort_image", null ]
       ] ]
@@ -500,14 +500,12 @@ var onboard_modules =
     [ "video_capture module", "module__video_capture.html", [
       [ "Example for airframe file", "module__video_capture.html#module_load_example__video_capture", null ],
       [ "Module configuration options", "module__video_capture.html#configuration__video_capture", null ],
-      [ "Dependencies", "module__video_capture.html#dependencies__video_capture", null ],
       [ "Module functions", "module__video_capture.html#functions__video_capture", [
         [ "Raw video_capture.xml file:", "module__video_capture.html#module_xml__video_capture", null ]
       ] ]
     ] ],
     [ "video_exif module", "module__video_exif.html", [
       [ "Example for airframe file", "module__video_exif.html#module_load_example__video_exif", null ],
-      [ "Dependencies", "module__video_exif.html#dependencies__video_exif", null ],
       [ "Module functions", "module__video_exif.html#functions__video_exif", [
         [ "Raw video_exif.xml file:", "module__video_exif.html#module_xml__video_exif", null ]
       ] ]
@@ -515,7 +513,6 @@ var onboard_modules =
     [ "video_rtp_stream module", "module__video_rtp_stream.html", [
       [ "Example for airframe file", "module__video_rtp_stream.html#module_load_example__video_rtp_stream", null ],
       [ "Module configuration options", "module__video_rtp_stream.html#configuration__video_rtp_stream", null ],
-      [ "Dependencies", "module__video_rtp_stream.html#dependencies__video_rtp_stream", null ],
       [ "Module functions", "module__video_rtp_stream.html#functions__video_rtp_stream", [
         [ "Raw video_rtp_stream.xml file:", "module__video_rtp_stream.html#module_xml__video_rtp_stream", null ]
       ] ]
@@ -530,38 +527,32 @@ var onboard_modules =
     [ "video_usb_logger module", "module__video_usb_logger.html", [
       [ "Example for airframe file", "module__video_usb_logger.html#module_load_example__video_usb_logger", null ],
       [ "Module configuration options", "module__video_usb_logger.html#configuration__video_usb_logger", null ],
-      [ "Dependencies", "module__video_usb_logger.html#dependencies__video_usb_logger", null ],
       [ "Module functions", "module__video_usb_logger.html#functions__video_usb_logger", [
         [ "Raw video_usb_logger.xml file:", "module__video_usb_logger.html#module_xml__video_usb_logger", null ]
       ] ]
     ] ],
     [ "control module", "module__control.html", [
-      [ "Example for airframe file", "module__control.html#module_load_example__control", null ],
-      [ "Auto-loaded modules", "module__control.html#autoloads__control", [
+      [ "Example for airframe file", "module__control.html#module_load_example__control", [
         [ "Raw control.xml file:", "module__control.html#module_xml__control", null ]
       ] ]
     ] ],
     [ "control_adaptive module", "module__control_adaptive.html", [
-      [ "Example for airframe file", "module__control_adaptive.html#module_load_example__control_adaptive", null ],
-      [ "Auto-loaded modules", "module__control_adaptive.html#autoloads__control_adaptive", [
+      [ "Example for airframe file", "module__control_adaptive.html#module_load_example__control_adaptive", [
         [ "Raw control_adaptive.xml file:", "module__control_adaptive.html#module_xml__control_adaptive", null ]
       ] ]
     ] ],
     [ "control_energy module", "module__control_energy.html", [
-      [ "Example for airframe file", "module__control_energy.html#module_load_example__control_energy", null ],
-      [ "Auto-loaded modules", "module__control_energy.html#autoloads__control_energy", [
+      [ "Example for airframe file", "module__control_energy.html#module_load_example__control_energy", [
         [ "Raw control_energy.xml file:", "module__control_energy.html#module_xml__control_energy", null ]
       ] ]
     ] ],
     [ "control_energyadaptive module", "module__control_energyadaptive.html", [
-      [ "Example for airframe file", "module__control_energyadaptive.html#module_load_example__control_energyadaptive", null ],
-      [ "Auto-loaded modules", "module__control_energyadaptive.html#autoloads__control_energyadaptive", [
+      [ "Example for airframe file", "module__control_energyadaptive.html#module_load_example__control_energyadaptive", [
         [ "Raw control_energyadaptive.xml file:", "module__control_energyadaptive.html#module_xml__control_energyadaptive", null ]
       ] ]
     ] ],
     [ "control_new module", "module__control_new.html", [
-      [ "Example for airframe file", "module__control_new.html#module_load_example__control_new", null ],
-      [ "Auto-loaded modules", "module__control_new.html#autoloads__control_new", [
+      [ "Example for airframe file", "module__control_new.html#module_load_example__control_new", [
         [ "Raw control_new.xml file:", "module__control_new.html#module_xml__control_new", null ]
       ] ]
     ] ],
@@ -570,6 +561,13 @@ var onboard_modules =
       [ "Module configuration options", "module__pwm_meas.html#configuration__pwm_meas", null ],
       [ "Module functions", "module__pwm_meas.html#functions__pwm_meas", [
         [ "Raw pwm_meas.xml file:", "module__pwm_meas.html#module_xml__pwm_meas", null ]
+      ] ]
+    ] ],
+    [ "shell module", "module__shell.html", [
+      [ "Example for airframe file", "module__shell.html#module_load_example__shell", null ],
+      [ "Module configuration options", "module__shell.html#configuration__shell", null ],
+      [ "Module functions", "module__shell.html#functions__shell", [
+        [ "Raw shell.xml file:", "module__shell.html#module_xml__shell", null ]
       ] ]
     ] ],
     [ "sys_mon module", "module__sys_mon.html", [
@@ -598,6 +596,12 @@ var onboard_modules =
     [ "ctrl_module_outerloop_demo module", "module__ctrl_module_outerloop_demo.html", [
       [ "Example for airframe file", "module__ctrl_module_outerloop_demo.html#module_load_example__ctrl_module_outerloop_demo", [
         [ "Raw ctrl_module_outerloop_demo.xml file:", "module__ctrl_module_outerloop_demo.html#module_xml__ctrl_module_outerloop_demo", null ]
+      ] ]
+    ] ],
+    [ "ctrl_windtunnel module", "module__ctrl_windtunnel.html", [
+      [ "Example for airframe file", "module__ctrl_windtunnel.html#module_load_example__ctrl_windtunnel", null ],
+      [ "Module configuration options", "module__ctrl_windtunnel.html#configuration__ctrl_windtunnel", [
+        [ "Raw ctrl_windtunnel.xml file:", "module__ctrl_windtunnel.html#module_xml__ctrl_windtunnel", null ]
       ] ]
     ] ],
     [ "gain_scheduling module", "module__gain_scheduling.html", [
@@ -726,6 +730,13 @@ var onboard_modules =
         [ "Raw telemetry_transparent.xml file:", "module__telemetry_transparent.html#module_xml__telemetry_transparent", null ]
       ] ]
     ] ],
+    [ "telemetry_transparent_frsky_x module", "module__telemetry_transparent_frsky_x.html", [
+      [ "Example for airframe file", "module__telemetry_transparent_frsky_x.html#module_load_example__telemetry_transparent_frsky_x", null ],
+      [ "Auto-loaded modules", "module__telemetry_transparent_frsky_x.html#autoloads__telemetry_transparent_frsky_x", null ],
+      [ "Module functions", "module__telemetry_transparent_frsky_x.html#functions__telemetry_transparent_frsky_x", [
+        [ "Raw telemetry_transparent_frsky_x.xml file:", "module__telemetry_transparent_frsky_x.html#module_xml__telemetry_transparent_frsky_x", null ]
+      ] ]
+    ] ],
     [ "telemetry_transparent_gec module", "module__telemetry_transparent_gec.html", [
       [ "Example for airframe file", "module__telemetry_transparent_gec.html#module_load_example__telemetry_transparent_gec", null ],
       [ "Auto-loaded modules", "module__telemetry_transparent_gec.html#autoloads__telemetry_transparent_gec", null ],
@@ -767,7 +778,6 @@ var onboard_modules =
     [ "xtend_rssi module", "module__xtend_rssi.html", [
       [ "Example for airframe file", "module__xtend_rssi.html#module_load_example__xtend_rssi", null ],
       [ "Module configuration options", "module__xtend_rssi.html#configuration__xtend_rssi", null ],
-      [ "Dependencies", "module__xtend_rssi.html#dependencies__xtend_rssi", null ],
       [ "Module functions", "module__xtend_rssi.html#functions__xtend_rssi", [
         [ "Raw xtend_rssi.xml file:", "module__xtend_rssi.html#module_xml__xtend_rssi", null ]
       ] ]
@@ -788,7 +798,6 @@ var onboard_modules =
     [ "dc_ctrl_parrot_mykonos module", "module__dc_ctrl_parrot_mykonos.html", [
       [ "Example for airframe file", "module__dc_ctrl_parrot_mykonos.html#module_load_example__dc_ctrl_parrot_mykonos", null ],
       [ "Module configuration options", "module__dc_ctrl_parrot_mykonos.html#configuration__dc_ctrl_parrot_mykonos", null ],
-      [ "Conflicts", "module__dc_ctrl_parrot_mykonos.html#conflicts__dc_ctrl_parrot_mykonos", null ],
       [ "Module functions", "module__dc_ctrl_parrot_mykonos.html#functions__dc_ctrl_parrot_mykonos", [
         [ "Raw dc_ctrl_parrot_mykonos.xml file:", "module__dc_ctrl_parrot_mykonos.html#module_xml__dc_ctrl_parrot_mykonos", null ]
       ] ]
@@ -796,7 +805,6 @@ var onboard_modules =
     [ "digital_cam module", "module__digital_cam.html", [
       [ "Example for airframe file", "module__digital_cam.html#module_load_example__digital_cam", null ],
       [ "Module configuration options", "module__digital_cam.html#configuration__digital_cam", null ],
-      [ "Conflicts", "module__digital_cam.html#conflicts__digital_cam", null ],
       [ "Module functions", "module__digital_cam.html#functions__digital_cam", [
         [ "Raw digital_cam.xml file:", "module__digital_cam.html#module_xml__digital_cam", null ]
       ] ]
@@ -804,7 +812,6 @@ var onboard_modules =
     [ "digital_cam_i2c module", "module__digital_cam_i2c.html", [
       [ "Example for airframe file", "module__digital_cam_i2c.html#module_load_example__digital_cam_i2c", null ],
       [ "Module configuration options", "module__digital_cam_i2c.html#configuration__digital_cam_i2c", null ],
-      [ "Conflicts", "module__digital_cam_i2c.html#conflicts__digital_cam_i2c", null ],
       [ "Module functions", "module__digital_cam_i2c.html#functions__digital_cam_i2c", null ],
       [ "Datalink Functions", "module__digital_cam_i2c.html#datalink_functions__digital_cam_i2c", [
         [ "Raw digital_cam_i2c.xml file:", "module__digital_cam_i2c.html#module_xml__digital_cam_i2c", null ]
@@ -813,7 +820,6 @@ var onboard_modules =
     [ "digital_cam_servo module", "module__digital_cam_servo.html", [
       [ "Example for airframe file", "module__digital_cam_servo.html#module_load_example__digital_cam_servo", null ],
       [ "Module configuration options", "module__digital_cam_servo.html#configuration__digital_cam_servo", null ],
-      [ "Conflicts", "module__digital_cam_servo.html#conflicts__digital_cam_servo", null ],
       [ "Module functions", "module__digital_cam_servo.html#functions__digital_cam_servo", [
         [ "Raw digital_cam_servo.xml file:", "module__digital_cam_servo.html#module_xml__digital_cam_servo", null ]
       ] ]
@@ -821,7 +827,6 @@ var onboard_modules =
     [ "digital_cam_shoot_rc module", "module__digital_cam_shoot_rc.html", [
       [ "Example for airframe file", "module__digital_cam_shoot_rc.html#module_load_example__digital_cam_shoot_rc", null ],
       [ "Module configuration options", "module__digital_cam_shoot_rc.html#configuration__digital_cam_shoot_rc", null ],
-      [ "Dependencies", "module__digital_cam_shoot_rc.html#dependencies__digital_cam_shoot_rc", null ],
       [ "Module functions", "module__digital_cam_shoot_rc.html#functions__digital_cam_shoot_rc", [
         [ "Raw digital_cam_shoot_rc.xml file:", "module__digital_cam_shoot_rc.html#module_xml__digital_cam_shoot_rc", null ]
       ] ]
@@ -829,7 +834,6 @@ var onboard_modules =
     [ "digital_cam_uart module", "module__digital_cam_uart.html", [
       [ "Example for airframe file", "module__digital_cam_uart.html#module_load_example__digital_cam_uart", null ],
       [ "Module configuration options", "module__digital_cam_uart.html#configuration__digital_cam_uart", null ],
-      [ "Conflicts", "module__digital_cam_uart.html#conflicts__digital_cam_uart", null ],
       [ "Module functions", "module__digital_cam_uart.html#functions__digital_cam_uart", [
         [ "Raw digital_cam_uart.xml file:", "module__digital_cam_uart.html#module_xml__digital_cam_uart", null ]
       ] ]
@@ -837,8 +841,6 @@ var onboard_modules =
     [ "digital_cam_video module", "module__digital_cam_video.html", [
       [ "Example for airframe file", "module__digital_cam_video.html#module_load_example__digital_cam_video", null ],
       [ "Module configuration options", "module__digital_cam_video.html#configuration__digital_cam_video", null ],
-      [ "Dependencies", "module__digital_cam_video.html#dependencies__digital_cam_video", null ],
-      [ "Conflicts", "module__digital_cam_video.html#conflicts__digital_cam_video", null ],
       [ "Module functions", "module__digital_cam_video.html#functions__digital_cam_video", [
         [ "Raw digital_cam_video.xml file:", "module__digital_cam_video.html#module_xml__digital_cam_video", null ]
       ] ]
@@ -885,6 +887,23 @@ var onboard_modules =
       [ "Example for airframe file", "module__fdm_gazebo.html#module_load_example__fdm_gazebo", null ],
       [ "Module configuration options", "module__fdm_gazebo.html#configuration__fdm_gazebo", [
         [ "Raw fdm_gazebo.xml file:", "module__fdm_gazebo.html#module_xml__fdm_gazebo", null ]
+      ] ]
+    ] ],
+    [ "fdm_jsbsim module", "module__fdm_jsbsim.html", [
+      [ "Example for airframe file", "module__fdm_jsbsim.html#module_load_example__fdm_jsbsim", null ],
+      [ "Module configuration options", "module__fdm_jsbsim.html#configuration__fdm_jsbsim", [
+        [ "Raw fdm_jsbsim.xml file:", "module__fdm_jsbsim.html#module_xml__fdm_jsbsim", null ]
+      ] ]
+    ] ],
+    [ "gpio_ext_common module", "module__gpio_ext_common.html", [
+      [ "Example for airframe file", "module__gpio_ext_common.html#module_load_example__gpio_ext_common", [
+        [ "Raw gpio_ext_common.xml file:", "module__gpio_ext_common.html#module_xml__gpio_ext_common", null ]
+      ] ]
+    ] ],
+    [ "gpio_ext_pca95xx module", "module__gpio_ext_pca95xx.html", [
+      [ "Example for airframe file", "module__gpio_ext_pca95xx.html#module_load_example__gpio_ext_pca95xx", null ],
+      [ "Module configuration options", "module__gpio_ext_pca95xx.html#configuration__gpio_ext_pca95xx", [
+        [ "Raw gpio_ext_pca95xx.xml file:", "module__gpio_ext_pca95xx.html#module_xml__gpio_ext_pca95xx", null ]
       ] ]
     ] ],
     [ "gps module", "module__gps.html", [
@@ -961,6 +980,14 @@ var onboard_modules =
         [ "Raw gps_sim_hitl.xml file:", "module__gps_sim_hitl.html#module_xml__gps_sim_hitl", null ]
       ] ]
     ] ],
+    [ "gps_sirf module", "module__gps_sirf.html", [
+      [ "Example for airframe file", "module__gps_sirf.html#module_load_example__gps_sirf", null ],
+      [ "Module configuration options", "module__gps_sirf.html#configuration__gps_sirf", null ],
+      [ "Auto-loaded modules", "module__gps_sirf.html#autoloads__gps_sirf", null ],
+      [ "Module functions", "module__gps_sirf.html#functions__gps_sirf", [
+        [ "Raw gps_sirf.xml file:", "module__gps_sirf.html#module_xml__gps_sirf", null ]
+      ] ]
+    ] ],
     [ "gps_skytraq module", "module__gps_skytraq.html", [
       [ "Example for airframe file", "module__gps_skytraq.html#module_load_example__gps_skytraq", null ],
       [ "Module configuration options", "module__gps_skytraq.html#configuration__gps_skytraq", null ],
@@ -981,7 +1008,6 @@ var onboard_modules =
       [ "Example for airframe file", "module__gps_ubx_i2c.html#module_load_example__gps_ubx_i2c", null ],
       [ "Module configuration options", "module__gps_ubx_i2c.html#configuration__gps_ubx_i2c", null ],
       [ "Auto-loaded modules", "module__gps_ubx_i2c.html#autoloads__gps_ubx_i2c", null ],
-      [ "Dependencies", "module__gps_ubx_i2c.html#dependencies__gps_ubx_i2c", null ],
       [ "Module functions", "module__gps_ubx_i2c.html#functions__gps_ubx_i2c", [
         [ "Raw gps_ubx_i2c.xml file:", "module__gps_ubx_i2c.html#module_xml__gps_ubx_i2c", null ]
       ] ]
@@ -989,7 +1015,6 @@ var onboard_modules =
     [ "gps_ubx_ucenter module", "module__gps_ubx_ucenter.html", [
       [ "Example for airframe file", "module__gps_ubx_ucenter.html#module_load_example__gps_ubx_ucenter", null ],
       [ "Module configuration options", "module__gps_ubx_ucenter.html#configuration__gps_ubx_ucenter", null ],
-      [ "Dependencies", "module__gps_ubx_ucenter.html#dependencies__gps_ubx_ucenter", null ],
       [ "Module functions", "module__gps_ubx_ucenter.html#functions__gps_ubx_ucenter", [
         [ "Raw gps_ubx_ucenter.xml file:", "module__gps_ubx_ucenter.html#module_xml__gps_ubx_ucenter", null ]
       ] ]
@@ -1033,6 +1058,12 @@ var onboard_modules =
       [ "Example for airframe file", "module__guidance_indi.html#module_load_example__guidance_indi", null ],
       [ "Module functions", "module__guidance_indi.html#functions__guidance_indi", [
         [ "Raw guidance_indi.xml file:", "module__guidance_indi.html#module_xml__guidance_indi", null ]
+      ] ]
+    ] ],
+    [ "guidance_indi_hybrid module", "module__guidance_indi_hybrid.html", [
+      [ "Example for airframe file", "module__guidance_indi_hybrid.html#module_load_example__guidance_indi_hybrid", null ],
+      [ "Module functions", "module__guidance_indi_hybrid.html#functions__guidance_indi_hybrid", [
+        [ "Raw guidance_indi_hybrid.xml file:", "module__guidance_indi_hybrid.html#module_xml__guidance_indi_hybrid", null ]
       ] ]
     ] ],
     [ "guidance_rotorcraft module", "module__guidance_rotorcraft.html", [
@@ -1581,6 +1612,13 @@ var onboard_modules =
         [ "Raw lidar_tfmini.xml file:", "module__lidar_tfmini.html#module_xml__lidar_tfmini", null ]
       ] ]
     ] ],
+    [ "lidar_tfmini_i2c module", "module__lidar_tfmini_i2c.html", [
+      [ "Example for airframe file", "module__lidar_tfmini_i2c.html#module_load_example__lidar_tfmini_i2c", null ],
+      [ "Module configuration options", "module__lidar_tfmini_i2c.html#configuration__lidar_tfmini_i2c", null ],
+      [ "Module functions", "module__lidar_tfmini_i2c.html#functions__lidar_tfmini_i2c", [
+        [ "Raw lidar_tfmini_i2c.xml file:", "module__lidar_tfmini_i2c.html#module_xml__lidar_tfmini_i2c", null ]
+      ] ]
+    ] ],
     [ "led_safety_status module", "module__led_safety_status.html", [
       [ "Example for airframe file", "module__led_safety_status.html#module_load_example__led_safety_status", null ],
       [ "Module functions", "module__led_safety_status.html#functions__led_safety_status", [
@@ -1615,6 +1653,13 @@ var onboard_modules =
         [ "Raw flight_recorder.xml file:", "module__flight_recorder.html#module_xml__flight_recorder", null ]
       ] ]
     ] ],
+    [ "logger_control_effectiveness module", "module__logger_control_effectiveness.html", [
+      [ "Example for airframe file", "module__logger_control_effectiveness.html#module_load_example__logger_control_effectiveness", null ],
+      [ "Module configuration options", "module__logger_control_effectiveness.html#configuration__logger_control_effectiveness", null ],
+      [ "Module functions", "module__logger_control_effectiveness.html#functions__logger_control_effectiveness", [
+        [ "Raw logger_control_effectiveness.xml file:", "module__logger_control_effectiveness.html#module_xml__logger_control_effectiveness", null ]
+      ] ]
+    ] ],
     [ "logger_dataflash module", "module__logger_dataflash.html", [
       [ "Example for airframe file", "module__logger_dataflash.html#module_load_example__logger_dataflash", null ],
       [ "Module configuration options", "module__logger_dataflash.html#configuration__logger_dataflash", null ],
@@ -1632,7 +1677,6 @@ var onboard_modules =
     [ "logger_sd_chibios module", "module__logger_sd_chibios.html", [
       [ "Example for airframe file", "module__logger_sd_chibios.html#module_load_example__logger_sd_chibios", null ],
       [ "Module configuration options", "module__logger_sd_chibios.html#configuration__logger_sd_chibios", null ],
-      [ "Dependencies", "module__logger_sd_chibios.html#dependencies__logger_sd_chibios", null ],
       [ "Module functions", "module__logger_sd_chibios.html#functions__logger_sd_chibios", [
         [ "Raw logger_sd_chibios.xml file:", "module__logger_sd_chibios.html#module_xml__logger_sd_chibios", null ]
       ] ]
@@ -1640,7 +1684,6 @@ var onboard_modules =
     [ "logger_sd_spi_direct module", "module__logger_sd_spi_direct.html", [
       [ "Example for airframe file", "module__logger_sd_spi_direct.html#module_load_example__logger_sd_spi_direct", null ],
       [ "Module configuration options", "module__logger_sd_spi_direct.html#configuration__logger_sd_spi_direct", null ],
-      [ "Auto-loaded modules", "module__logger_sd_spi_direct.html#autoloads__logger_sd_spi_direct", null ],
       [ "Module functions", "module__logger_sd_spi_direct.html#functions__logger_sd_spi_direct", null ],
       [ "Datalink Functions", "module__logger_sd_spi_direct.html#datalink_functions__logger_sd_spi_direct", [
         [ "Raw logger_sd_spi_direct.xml file:", "module__logger_sd_spi_direct.html#module_xml__logger_sd_spi_direct", null ]
@@ -1711,6 +1754,12 @@ var onboard_modules =
     [ "spi_slave_hs module", "module__spi_slave_hs.html", [
       [ "Example for airframe file", "module__spi_slave_hs.html#module_load_example__spi_slave_hs", [
         [ "Raw spi_slave_hs.xml file:", "module__spi_slave_hs.html#module_xml__spi_slave_hs", null ]
+      ] ]
+    ] ],
+    [ "sys_time module", "module__sys_time.html", [
+      [ "Example for airframe file", "module__sys_time.html#module_load_example__sys_time", null ],
+      [ "Module configuration options", "module__sys_time.html#configuration__sys_time", [
+        [ "Raw sys_time.xml file:", "module__sys_time.html#module_xml__sys_time", null ]
       ] ]
     ] ],
     [ "uart module", "module__uart.html", [
@@ -1820,7 +1869,6 @@ var onboard_modules =
     [ "meteo_stick module", "module__meteo_stick.html", [
       [ "Example for airframe file", "module__meteo_stick.html#module_load_example__meteo_stick", null ],
       [ "Module configuration options", "module__meteo_stick.html#configuration__meteo_stick", null ],
-      [ "Dependencies", "module__meteo_stick.html#dependencies__meteo_stick", null ],
       [ "Module functions", "module__meteo_stick.html#functions__meteo_stick", [
         [ "Raw meteo_stick.xml file:", "module__meteo_stick.html#module_xml__meteo_stick", null ]
       ] ]
@@ -1828,7 +1876,6 @@ var onboard_modules =
     [ "mf_ptu module", "module__mf_ptu.html", [
       [ "Example for airframe file", "module__mf_ptu.html#module_load_example__mf_ptu", null ],
       [ "Module configuration options", "module__mf_ptu.html#configuration__mf_ptu", null ],
-      [ "Dependencies", "module__mf_ptu.html#dependencies__mf_ptu", null ],
       [ "Module functions", "module__mf_ptu.html#functions__mf_ptu", [
         [ "Raw mf_ptu.xml file:", "module__mf_ptu.html#module_xml__mf_ptu", null ]
       ] ]
@@ -1872,14 +1919,12 @@ var onboard_modules =
     ] ],
     [ "windturbine module", "module__windturbine.html", [
       [ "Example for airframe file", "module__windturbine.html#module_load_example__windturbine", null ],
-      [ "Dependencies", "module__windturbine.html#dependencies__windturbine", null ],
       [ "Module functions", "module__windturbine.html#functions__windturbine", [
         [ "Raw windturbine.xml file:", "module__windturbine.html#module_xml__windturbine", null ]
       ] ]
     ] ],
     [ "copilot module", "module__copilot.html", [
       [ "Example for airframe file", "module__copilot.html#module_load_example__copilot", null ],
-      [ "Dependencies", "module__copilot.html#dependencies__copilot", null ],
       [ "Module functions", "module__copilot.html#functions__copilot", null ],
       [ "Datalink Functions", "module__copilot.html#datalink_functions__copilot", [
         [ "Raw copilot.xml file:", "module__copilot.html#module_xml__copilot", null ]
@@ -1907,14 +1952,12 @@ var onboard_modules =
     [ "follow module", "module__follow.html", [
       [ "Example for airframe file", "module__follow.html#module_load_example__follow", null ],
       [ "Module configuration options", "module__follow.html#configuration__follow", null ],
-      [ "Dependencies", "module__follow.html#dependencies__follow", null ],
       [ "Module functions", "module__follow.html#functions__follow", [
         [ "Raw follow.xml file:", "module__follow.html#module_xml__follow", null ]
       ] ]
     ] ],
     [ "formation_flight module", "module__formation_flight.html", [
       [ "Example for airframe file", "module__formation_flight.html#module_load_example__formation_flight", null ],
-      [ "Dependencies", "module__formation_flight.html#dependencies__formation_flight", null ],
       [ "Module functions", "module__formation_flight.html#functions__formation_flight", null ],
       [ "Datalink Functions", "module__formation_flight.html#datalink_functions__formation_flight", [
         [ "Raw formation_flight.xml file:", "module__formation_flight.html#module_xml__formation_flight", null ]
@@ -1935,7 +1978,6 @@ var onboard_modules =
     ] ],
     [ "tcas module", "module__tcas.html", [
       [ "Example for airframe file", "module__tcas.html#module_load_example__tcas", null ],
-      [ "Dependencies", "module__tcas.html#dependencies__tcas", null ],
       [ "Module functions", "module__tcas.html#functions__tcas", null ],
       [ "Datalink Functions", "module__tcas.html#datalink_functions__tcas", [
         [ "Raw tcas.xml file:", "module__tcas.html#module_xml__tcas", null ]
@@ -1957,7 +1999,6 @@ var onboard_modules =
     ] ],
     [ "nav_basic_rotorcraft module", "module__nav_basic_rotorcraft.html", [
       [ "Example for airframe file", "module__nav_basic_rotorcraft.html#module_load_example__nav_basic_rotorcraft", null ],
-      [ "Auto-loaded modules", "module__nav_basic_rotorcraft.html#autoloads__nav_basic_rotorcraft", null ],
       [ "Module functions", "module__nav_basic_rotorcraft.html#functions__nav_basic_rotorcraft", [
         [ "Raw nav_basic_rotorcraft.xml file:", "module__nav_basic_rotorcraft.html#module_xml__nav_basic_rotorcraft", null ]
       ] ]
@@ -1983,6 +2024,13 @@ var onboard_modules =
     [ "nav_drop module", "module__nav_drop.html", [
       [ "Example for airframe file", "module__nav_drop.html#module_load_example__nav_drop", [
         [ "Raw nav_drop.xml file:", "module__nav_drop.html#module_xml__nav_drop", null ]
+      ] ]
+    ] ],
+    [ "nav_fish module", "module__nav_fish.html", [
+      [ "Example for airframe file", "module__nav_fish.html#module_load_example__nav_fish", null ],
+      [ "Module configuration options", "module__nav_fish.html#configuration__nav_fish", null ],
+      [ "Module functions", "module__nav_fish.html#functions__nav_fish", [
+        [ "Raw nav_fish.xml file:", "module__nav_fish.html#module_xml__nav_fish", null ]
       ] ]
     ] ],
     [ "nav_flower module", "module__nav_flower.html", [
@@ -2089,8 +2137,7 @@ var onboard_modules =
       ] ]
     ] ],
     [ "navigation module", "module__navigation.html", [
-      [ "Example for airframe file", "module__navigation.html#module_load_example__navigation", null ],
-      [ "Auto-loaded modules", "module__navigation.html#autoloads__navigation", [
+      [ "Example for airframe file", "module__navigation.html#module_load_example__navigation", [
         [ "Raw navigation.xml file:", "module__navigation.html#module_xml__navigation", null ]
       ] ]
     ] ],
@@ -2107,10 +2154,16 @@ var onboard_modules =
         [ "Raw tune_airspeed.xml file:", "module__tune_airspeed.html#module_xml__tune_airspeed", null ]
       ] ]
     ] ],
+    [ "optical_flow_mateksys_3901_l0x module", "module__optical_flow_mateksys_3901_l0x.html", [
+      [ "Example for airframe file", "module__optical_flow_mateksys_3901_l0x.html#module_load_example__optical_flow_mateksys_3901_l0x", null ],
+      [ "Module configuration options", "module__optical_flow_mateksys_3901_l0x.html#configuration__optical_flow_mateksys_3901_l0x", null ],
+      [ "Module functions", "module__optical_flow_mateksys_3901_l0x.html#functions__optical_flow_mateksys_3901_l0x", [
+        [ "Raw optical_flow_mateksys_3901_l0x.xml file:", "module__optical_flow_mateksys_3901_l0x.html#module_xml__optical_flow_mateksys_3901_l0x", null ]
+      ] ]
+    ] ],
     [ "px4flow module", "module__px4flow.html", [
       [ "Example for airframe file", "module__px4flow.html#module_load_example__px4flow", null ],
       [ "Module configuration options", "module__px4flow.html#configuration__px4flow", null ],
-      [ "Dependencies", "module__px4flow.html#dependencies__px4flow", null ],
       [ "Module functions", "module__px4flow.html#functions__px4flow", [
         [ "Raw px4flow.xml file:", "module__px4flow.html#module_xml__px4flow", null ]
       ] ]
@@ -2125,7 +2178,6 @@ var onboard_modules =
     [ "orange_avoider module", "module__orange_avoider.html", [
       [ "Example for airframe file", "module__orange_avoider.html#module_load_example__orange_avoider", null ],
       [ "Module configuration options", "module__orange_avoider.html#configuration__orange_avoider", null ],
-      [ "Dependencies", "module__orange_avoider.html#dependencies__orange_avoider", null ],
       [ "Module functions", "module__orange_avoider.html#functions__orange_avoider", [
         [ "Raw orange_avoider.xml file:", "module__orange_avoider.html#module_xml__orange_avoider", null ]
       ] ]
@@ -2133,7 +2185,6 @@ var onboard_modules =
     [ "orange_avoider_guided module", "module__orange_avoider_guided.html", [
       [ "Example for airframe file", "module__orange_avoider_guided.html#module_load_example__orange_avoider_guided", null ],
       [ "Module configuration options", "module__orange_avoider_guided.html#configuration__orange_avoider_guided", null ],
-      [ "Dependencies", "module__orange_avoider_guided.html#dependencies__orange_avoider_guided", null ],
       [ "Module functions", "module__orange_avoider_guided.html#functions__orange_avoider_guided", [
         [ "Raw orange_avoider_guided.xml file:", "module__orange_avoider_guided.html#module_xml__orange_avoider_guided", null ]
       ] ]
@@ -2211,7 +2262,6 @@ var onboard_modules =
     [ "aoa_pwm module", "module__aoa_pwm.html", [
       [ "Example for airframe file", "module__aoa_pwm.html#module_load_example__aoa_pwm", null ],
       [ "Module configuration options", "module__aoa_pwm.html#configuration__aoa_pwm", null ],
-      [ "Dependencies", "module__aoa_pwm.html#dependencies__aoa_pwm", null ],
       [ "Module functions", "module__aoa_pwm.html#functions__aoa_pwm", [
         [ "Raw AOA_pwm.xml file:", "module__aoa_pwm.html#module_xml__aoa_pwm", null ]
       ] ]
@@ -2297,6 +2347,13 @@ var onboard_modules =
       [ "Module configuration options", "module__baro_bmp.html#configuration__baro_bmp", null ],
       [ "Module functions", "module__baro_bmp.html#functions__baro_bmp", [
         [ "Raw baro_bmp.xml file:", "module__baro_bmp.html#module_xml__baro_bmp", null ]
+      ] ]
+    ] ],
+    [ "baro_bmp280_i2c module", "module__baro_bmp280_i2c.html", [
+      [ "Example for airframe file", "module__baro_bmp280_i2c.html#module_load_example__baro_bmp280_i2c", null ],
+      [ "Module configuration options", "module__baro_bmp280_i2c.html#configuration__baro_bmp280_i2c", null ],
+      [ "Module functions", "module__baro_bmp280_i2c.html#functions__baro_bmp280_i2c", [
+        [ "Raw baro_bmp280_i2c.xml file:", "module__baro_bmp280_i2c.html#module_xml__baro_bmp280_i2c", null ]
       ] ]
     ] ],
     [ "baro_bmp3 module", "module__baro_bmp3.html", [
@@ -2456,7 +2513,6 @@ var onboard_modules =
     [ "rpm_sensor module", "module__rpm_sensor.html", [
       [ "Example for airframe file", "module__rpm_sensor.html#module_load_example__rpm_sensor", null ],
       [ "Module configuration options", "module__rpm_sensor.html#configuration__rpm_sensor", null ],
-      [ "Dependencies", "module__rpm_sensor.html#dependencies__rpm_sensor", null ],
       [ "Module functions", "module__rpm_sensor.html#functions__rpm_sensor", [
         [ "Raw rpm_sensor.xml file:", "module__rpm_sensor.html#module_xml__rpm_sensor", null ]
       ] ]
@@ -2519,6 +2575,13 @@ var onboard_modules =
         [ "Raw sonar_bebop.xml file:", "module__sonar_bebop.html#module_xml__sonar_bebop", null ]
       ] ]
     ] ],
+    [ "sonar_pwm module", "module__sonar_pwm.html", [
+      [ "Example for airframe file", "module__sonar_pwm.html#module_load_example__sonar_pwm", null ],
+      [ "Module configuration options", "module__sonar_pwm.html#configuration__sonar_pwm", null ],
+      [ "Module functions", "module__sonar_pwm.html#functions__sonar_pwm", [
+        [ "Raw sonar_pwm.xml file:", "module__sonar_pwm.html#module_xml__sonar_pwm", null ]
+      ] ]
+    ] ],
     [ "sonar_vl53l1x module", "module__sonar_vl53l1x.html", [
       [ "Example for airframe file", "module__sonar_vl53l1x.html#module_load_example__sonar_vl53l1x", null ],
       [ "Module configuration options", "module__sonar_vl53l1x.html#configuration__sonar_vl53l1x", null ],
@@ -2543,7 +2606,6 @@ var onboard_modules =
     [ "stabilization_float_euler module", "module__stabilization_float_euler.html", [
       [ "Example for airframe file", "module__stabilization_float_euler.html#module_load_example__stabilization_float_euler", null ],
       [ "Module configuration options", "module__stabilization_float_euler.html#configuration__stabilization_float_euler", null ],
-      [ "Auto-loaded modules", "module__stabilization_float_euler.html#autoloads__stabilization_float_euler", null ],
       [ "Module functions", "module__stabilization_float_euler.html#functions__stabilization_float_euler", [
         [ "Raw stabilization_float_euler.xml file:", "module__stabilization_float_euler.html#module_xml__stabilization_float_euler", null ]
       ] ]
@@ -2551,7 +2613,6 @@ var onboard_modules =
     [ "stabilization_float_quat module", "module__stabilization_float_quat.html", [
       [ "Example for airframe file", "module__stabilization_float_quat.html#module_load_example__stabilization_float_quat", null ],
       [ "Module configuration options", "module__stabilization_float_quat.html#configuration__stabilization_float_quat", null ],
-      [ "Auto-loaded modules", "module__stabilization_float_quat.html#autoloads__stabilization_float_quat", null ],
       [ "Module functions", "module__stabilization_float_quat.html#functions__stabilization_float_quat", [
         [ "Raw stabilization_float_quat.xml file:", "module__stabilization_float_quat.html#module_xml__stabilization_float_quat", null ]
       ] ]
@@ -2559,7 +2620,6 @@ var onboard_modules =
     [ "stabilization_heli_indi module", "module__stabilization_heli_indi.html", [
       [ "Example for airframe file", "module__stabilization_heli_indi.html#module_load_example__stabilization_heli_indi", null ],
       [ "Module configuration options", "module__stabilization_heli_indi.html#configuration__stabilization_heli_indi", null ],
-      [ "Auto-loaded modules", "module__stabilization_heli_indi.html#autoloads__stabilization_heli_indi", null ],
       [ "Module functions", "module__stabilization_heli_indi.html#functions__stabilization_heli_indi", [
         [ "Raw stabilization_heli_indi.xml file:", "module__stabilization_heli_indi.html#module_xml__stabilization_heli_indi", null ]
       ] ]
@@ -2567,7 +2627,6 @@ var onboard_modules =
     [ "stabilization_indi module", "module__stabilization_indi.html", [
       [ "Example for airframe file", "module__stabilization_indi.html#module_load_example__stabilization_indi", null ],
       [ "Module configuration options", "module__stabilization_indi.html#configuration__stabilization_indi", null ],
-      [ "Auto-loaded modules", "module__stabilization_indi.html#autoloads__stabilization_indi", null ],
       [ "Module functions", "module__stabilization_indi.html#functions__stabilization_indi", [
         [ "Raw stabilization_indi.xml file:", "module__stabilization_indi.html#module_xml__stabilization_indi", null ]
       ] ]
@@ -2575,7 +2634,6 @@ var onboard_modules =
     [ "stabilization_indi_simple module", "module__stabilization_indi_simple.html", [
       [ "Example for airframe file", "module__stabilization_indi_simple.html#module_load_example__stabilization_indi_simple", null ],
       [ "Module configuration options", "module__stabilization_indi_simple.html#configuration__stabilization_indi_simple", null ],
-      [ "Auto-loaded modules", "module__stabilization_indi_simple.html#autoloads__stabilization_indi_simple", null ],
       [ "Module functions", "module__stabilization_indi_simple.html#functions__stabilization_indi_simple", [
         [ "Raw stabilization_indi_simple.xml file:", "module__stabilization_indi_simple.html#module_xml__stabilization_indi_simple", null ]
       ] ]
@@ -2583,7 +2641,6 @@ var onboard_modules =
     [ "stabilization_int_euler module", "module__stabilization_int_euler.html", [
       [ "Example for airframe file", "module__stabilization_int_euler.html#module_load_example__stabilization_int_euler", null ],
       [ "Module configuration options", "module__stabilization_int_euler.html#configuration__stabilization_int_euler", null ],
-      [ "Auto-loaded modules", "module__stabilization_int_euler.html#autoloads__stabilization_int_euler", null ],
       [ "Module functions", "module__stabilization_int_euler.html#functions__stabilization_int_euler", [
         [ "Raw stabilization_int_euler.xml file:", "module__stabilization_int_euler.html#module_xml__stabilization_int_euler", null ]
       ] ]
@@ -2591,14 +2648,12 @@ var onboard_modules =
     [ "stabilization_int_quat module", "module__stabilization_int_quat.html", [
       [ "Example for airframe file", "module__stabilization_int_quat.html#module_load_example__stabilization_int_quat", null ],
       [ "Module configuration options", "module__stabilization_int_quat.html#configuration__stabilization_int_quat", null ],
-      [ "Auto-loaded modules", "module__stabilization_int_quat.html#autoloads__stabilization_int_quat", null ],
       [ "Module functions", "module__stabilization_int_quat.html#functions__stabilization_int_quat", [
         [ "Raw stabilization_int_quat.xml file:", "module__stabilization_int_quat.html#module_xml__stabilization_int_quat", null ]
       ] ]
     ] ],
     [ "stabilization_passthrough module", "module__stabilization_passthrough.html", [
       [ "Example for airframe file", "module__stabilization_passthrough.html#module_load_example__stabilization_passthrough", null ],
-      [ "Auto-loaded modules", "module__stabilization_passthrough.html#autoloads__stabilization_passthrough", null ],
       [ "Module functions", "module__stabilization_passthrough.html#functions__stabilization_passthrough", [
         [ "Raw stabilization_passthrough.xml file:", "module__stabilization_passthrough.html#module_xml__stabilization_passthrough", null ]
       ] ]
@@ -2606,15 +2661,12 @@ var onboard_modules =
     [ "stabilization_rate module", "module__stabilization_rate.html", [
       [ "Example for airframe file", "module__stabilization_rate.html#module_load_example__stabilization_rate", null ],
       [ "Module configuration options", "module__stabilization_rate.html#configuration__stabilization_rate", null ],
-      [ "Auto-loaded modules", "module__stabilization_rate.html#autoloads__stabilization_rate", null ],
       [ "Module functions", "module__stabilization_rate.html#functions__stabilization_rate", [
         [ "Raw stabilization_rate.xml file:", "module__stabilization_rate.html#module_xml__stabilization_rate", null ]
       ] ]
     ] ],
     [ "stabilization_rate_indi module", "module__stabilization_rate_indi.html", [
       [ "Example for airframe file", "module__stabilization_rate_indi.html#module_load_example__stabilization_rate_indi", null ],
-      [ "Auto-loaded modules", "module__stabilization_rate_indi.html#autoloads__stabilization_rate_indi", null ],
-      [ "Dependencies", "module__stabilization_rate_indi.html#dependencies__stabilization_rate_indi", null ],
       [ "Module functions", "module__stabilization_rate_indi.html#functions__stabilization_rate_indi", [
         [ "Raw stabilization_rate_indi.xml file:", "module__stabilization_rate_indi.html#module_xml__stabilization_rate_indi", null ]
       ] ]
@@ -2622,7 +2674,6 @@ var onboard_modules =
     [ "stabilization_rotorcraft module", "module__stabilization_rotorcraft.html", [
       [ "Example for airframe file", "module__stabilization_rotorcraft.html#module_load_example__stabilization_rotorcraft", null ],
       [ "Module configuration options", "module__stabilization_rotorcraft.html#configuration__stabilization_rotorcraft", null ],
-      [ "Auto-loaded modules", "module__stabilization_rotorcraft.html#autoloads__stabilization_rotorcraft", null ],
       [ "Module functions", "module__stabilization_rotorcraft.html#functions__stabilization_rotorcraft", [
         [ "Raw stabilization_rotorcraft.xml file:", "module__stabilization_rotorcraft.html#module_xml__stabilization_rotorcraft", null ]
       ] ]
@@ -2684,6 +2735,13 @@ var onboard_modules =
         [ "Raw airborne_ant_track.xml file:", "module__airborne_ant_track.html#module_xml__airborne_ant_track", null ]
       ] ]
     ] ],
+    [ "bebop_cam module", "module__bebop_cam.html", [
+      [ "Example for airframe file", "module__bebop_cam.html#module_load_example__bebop_cam", null ],
+      [ "Module configuration options", "module__bebop_cam.html#configuration__bebop_cam", null ],
+      [ "Module functions", "module__bebop_cam.html#functions__bebop_cam", [
+        [ "Raw bebop_cam.xml file:", "module__bebop_cam.html#module_xml__bebop_cam", null ]
+      ] ]
+    ] ],
     [ "collective_tracking_control module", "module__collective_tracking_control.html", [
       [ "Example for airframe file", "module__collective_tracking_control.html#module_load_example__collective_tracking_control", null ],
       [ "Module configuration options", "module__collective_tracking_control.html#configuration__collective_tracking_control", null ],
@@ -2715,7 +2773,6 @@ var onboard_modules =
     [ "cv_qrcode module", "module__cv_qrcode.html", [
       [ "Example for airframe file", "module__cv_qrcode.html#module_load_example__cv_qrcode", null ],
       [ "Module configuration options", "module__cv_qrcode.html#configuration__cv_qrcode", null ],
-      [ "Dependencies", "module__cv_qrcode.html#dependencies__cv_qrcode", null ],
       [ "Module functions", "module__cv_qrcode.html#functions__cv_qrcode", [
         [ "Raw cv_qrcode.xml file:", "module__cv_qrcode.html#module_xml__cv_qrcode", null ]
       ] ]
@@ -2726,10 +2783,15 @@ var onboard_modules =
         [ "Raw demo_module.xml file:", "module__demo_module.html#module_xml__demo_module", null ]
       ] ]
     ] ],
+    [ "dfu_command module", "module__dfu_command.html", [
+      [ "Example for airframe file", "module__dfu_command.html#module_load_example__dfu_command", null ],
+      [ "Module functions", "module__dfu_command.html#functions__dfu_command", [
+        [ "Raw dfu_command.xml file:", "module__dfu_command.html#module_xml__dfu_command", null ]
+      ] ]
+    ] ],
     [ "distributed_circular_formation module", "module__distributed_circular_formation.html", [
       [ "Example for airframe file", "module__distributed_circular_formation.html#module_load_example__distributed_circular_formation", null ],
       [ "Module configuration options", "module__distributed_circular_formation.html#configuration__distributed_circular_formation", null ],
-      [ "Dependencies", "module__distributed_circular_formation.html#dependencies__distributed_circular_formation", null ],
       [ "Module functions", "module__distributed_circular_formation.html#functions__distributed_circular_formation", null ],
       [ "Datalink Functions", "module__distributed_circular_formation.html#datalink_functions__distributed_circular_formation", [
         [ "Raw distributed_circular_formation.xml file:", "module__distributed_circular_formation.html#module_xml__distributed_circular_formation", null ]
@@ -2801,6 +2863,12 @@ var onboard_modules =
         [ "Raw gvf_module.xml file:", "module__gvf_module.html#module_xml__gvf_module", null ]
       ] ]
     ] ],
+    [ "gvf_parametric module", "module__gvf_parametric.html", [
+      [ "Example for airframe file", "module__gvf_parametric.html#module_load_example__gvf_parametric", null ],
+      [ "Module functions", "module__gvf_parametric.html#functions__gvf_parametric", [
+        [ "Raw gvf_parametric.xml file:", "module__gvf_parametric.html#module_xml__gvf_parametric", null ]
+      ] ]
+    ] ],
     [ "haclc module", "module__haclc.html", [
       [ "Example for airframe file", "module__haclc.html#module_load_example__haclc", [
         [ "Raw haclc.xml file:", "module__haclc.html#module_xml__haclc", null ]
@@ -2868,17 +2936,21 @@ var onboard_modules =
     ] ],
     [ "opticflow_hover module", "module__opticflow_hover.html", [
       [ "Example for airframe file", "module__opticflow_hover.html#module_load_example__opticflow_hover", null ],
-      [ "Module configuration options", "module__opticflow_hover.html#configuration__opticflow_hover", null ],
-      [ "Dependencies", "module__opticflow_hover.html#dependencies__opticflow_hover", [
+      [ "Module configuration options", "module__opticflow_hover.html#configuration__opticflow_hover", [
         [ "Raw opticflow_hover.xml file:", "module__opticflow_hover.html#module_xml__opticflow_hover", null ]
       ] ]
     ] ],
     [ "pano_unwrap module", "module__pano_unwrap.html", [
       [ "Example for airframe file", "module__pano_unwrap.html#module_load_example__pano_unwrap", null ],
       [ "Module configuration options", "module__pano_unwrap.html#configuration__pano_unwrap", null ],
-      [ "Dependencies", "module__pano_unwrap.html#dependencies__pano_unwrap", null ],
       [ "Module functions", "module__pano_unwrap.html#functions__pano_unwrap", [
         [ "Raw pano_unwrap.xml file:", "module__pano_unwrap.html#module_xml__pano_unwrap", null ]
+      ] ]
+    ] ],
+    [ "pca9685 module", "module__pca9685.html", [
+      [ "Example for airframe file", "module__pca9685.html#module_load_example__pca9685", null ],
+      [ "Module functions", "module__pca9685.html#functions__pca9685", [
+        [ "Raw pca9685.xml file:", "module__pca9685.html#module_xml__pca9685", null ]
       ] ]
     ] ],
     [ "pose_history module", "module__pose_history.html", [
@@ -2902,10 +2974,16 @@ var onboard_modules =
         [ "Raw px4_gimbal.xml file:", "module__px4_gimbal.html#module_xml__px4_gimbal", null ]
       ] ]
     ] ],
+    [ "radio_control_cc2500_frsky module", "module__radio_control_cc2500_frsky.html", [
+      [ "Example for airframe file", "module__radio_control_cc2500_frsky.html#module_load_example__radio_control_cc2500_frsky", null ],
+      [ "Module configuration options", "module__radio_control_cc2500_frsky.html#configuration__radio_control_cc2500_frsky", null ],
+      [ "Module functions", "module__radio_control_cc2500_frsky.html#functions__radio_control_cc2500_frsky", [
+        [ "Raw radio_control_cc2500_frsky.xml file:", "module__radio_control_cc2500_frsky.html#module_xml__radio_control_cc2500_frsky", null ]
+      ] ]
+    ] ],
     [ "range_forcefield module", "module__range_forcefield.html", [
       [ "Example for airframe file", "module__range_forcefield.html#module_load_example__range_forcefield", null ],
       [ "Module configuration options", "module__range_forcefield.html#configuration__range_forcefield", null ],
-      [ "Dependencies", "module__range_forcefield.html#dependencies__range_forcefield", null ],
       [ "Module functions", "module__range_forcefield.html#functions__range_forcefield", [
         [ "Raw range_forcefield.xml file:", "module__range_forcefield.html#module_xml__range_forcefield", null ]
       ] ]
@@ -2940,6 +3018,13 @@ var onboard_modules =
         [ "Raw spektrum_soft_bind.xml file:", "module__spektrum_soft_bind.html#module_xml__spektrum_soft_bind", null ]
       ] ]
     ] ],
+    [ "sys_id_chirp module", "module__sys_id_chirp.html", [
+      [ "Example for airframe file", "module__sys_id_chirp.html#module_load_example__sys_id_chirp", null ],
+      [ "Module configuration options", "module__sys_id_chirp.html#configuration__sys_id_chirp", null ],
+      [ "Module functions", "module__sys_id_chirp.html#functions__sys_id_chirp", [
+        [ "Raw sys_id_chirp.xml file:", "module__sys_id_chirp.html#module_xml__sys_id_chirp", null ]
+      ] ]
+    ] ],
     [ "syslink_dl module", "module__syslink_dl.html", [
       [ "Example for airframe file", "module__syslink_dl.html#module_load_example__syslink_dl", null ],
       [ "Module configuration options", "module__syslink_dl.html#configuration__syslink_dl", null ],
@@ -2969,6 +3054,13 @@ var onboard_modules =
         [ "Raw tlsf.xml file:", "module__tlsf.html#module_xml__tlsf", null ]
       ] ]
     ] ],
+    [ "uav_recovery module", "module__uav_recovery.html", [
+      [ "Example for airframe file", "module__uav_recovery.html#module_load_example__uav_recovery", null ],
+      [ "Module configuration options", "module__uav_recovery.html#configuration__uav_recovery", null ],
+      [ "Module functions", "module__uav_recovery.html#functions__uav_recovery", [
+        [ "Raw uav_recovery.xml file:", "module__uav_recovery.html#module_xml__uav_recovery", null ]
+      ] ]
+    ] ],
     [ "vehicle_interface_datalink module", "module__vehicle_interface_datalink.html", [
       [ "Example for airframe file", "module__vehicle_interface_datalink.html#module_load_example__vehicle_interface_datalink", null ],
       [ "Module functions", "module__vehicle_interface_datalink.html#functions__vehicle_interface_datalink", null ],
@@ -2976,11 +3068,11 @@ var onboard_modules =
         [ "Raw vehicle_interface_datalink.xml file:", "module__vehicle_interface_datalink.html#module_xml__vehicle_interface_datalink", null ]
       ] ]
     ] ],
-    [ "vms_ecu_demo module", "module__vms_ecu_demo.html", [
-      [ "Example for airframe file", "module__vms_ecu_demo.html#module_load_example__vms_ecu_demo", null ],
-      [ "Module configuration options", "module__vms_ecu_demo.html#configuration__vms_ecu_demo", null ],
-      [ "Module functions", "module__vms_ecu_demo.html#functions__vms_ecu_demo", [
-        [ "Raw vms_ecu_demo.xml file:", "module__vms_ecu_demo.html#module_xml__vms_ecu_demo", null ]
+    [ "wedgebug module", "module__wedgebug.html", [
+      [ "Example for airframe file", "module__wedgebug.html#module_load_example__wedgebug", null ],
+      [ "Module configuration options", "module__wedgebug.html#configuration__wedgebug", null ],
+      [ "Module functions", "module__wedgebug.html#functions__wedgebug", [
+        [ "Raw wedgebug.xml file:", "module__wedgebug.html#module_xml__wedgebug", null ]
       ] ]
     ] ]
 ];

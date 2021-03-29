@@ -1,0 +1,26 @@
+var guidance__h__ref_8c =
+[
+    [ "GH_MAX_SPEED_REF_FRAC", "guidance__h__ref_8c.html#aaa75f5677ac8aa1f24930d566a4df383", null ],
+    [ "GH_OMEGA_2_FRAC", "guidance__h__ref_8c.html#a27d3b9006dc1394438f9e7f534355969", null ],
+    [ "GH_REF_INV_TAU_FRAC", "guidance__h__ref_8c.html#aa4e7163f2ec5bf3b250e29e5cd5b4397", null ],
+    [ "GH_ZETA_OMEGA_FRAC", "guidance__h__ref_8c.html#a5d88ba308b6d12447790293cee25fbc8", null ],
+    [ "GUIDANCE_H_REF_OMEGA", "guidance__h__ref_8c.html#acadd2aad2ba12371589c9c19dfe1a3fa", null ],
+    [ "GUIDANCE_H_REF_TAU", "guidance__h__ref_8c.html#a78e139d3dfc8eff109d2818da978e290", null ],
+    [ "GUIDANCE_H_REF_ZETA", "guidance__h__ref_8c.html#af4b4f6285bfed906e481741b3afca1af", null ],
+    [ "gh_compute_ref_max", "guidance__h__ref_8c.html#aa11856a73c7810dae75c9637901ffd4a", null ],
+    [ "gh_compute_ref_max_accel", "guidance__h__ref_8c.html#a97ad465cad323d47e8b5b45d0ccc9757", null ],
+    [ "gh_compute_ref_max_speed", "guidance__h__ref_8c.html#acf5816ca9ff37cb448ccb83b6c2e26dc", null ],
+    [ "gh_compute_route_ref", "guidance__h__ref_8c.html#a5cdaebf6e35a50cce7d6fe28b17fc068", null ],
+    [ "gh_ref_init", "guidance__h__ref_8c.html#ab43076682d75aa4cf6c47394c2e90c9e", null ],
+    [ "gh_saturate_ref_accel", "guidance__h__ref_8c.html#a65e4335a92b2ecdf2ee5701bad274a88", null ],
+    [ "gh_saturate_ref_speed", "guidance__h__ref_8c.html#aa059d50ab0248ebab041e78596c858c9", null ],
+    [ "gh_set_max_speed", "guidance__h__ref_8c.html#ad3454b142df1ca67626c65cc2431bae2", null ],
+    [ "gh_set_omega", "guidance__h__ref_8c.html#ab61ba5b66e8177ec0cf42178537fb63e", null ],
+    [ "gh_set_ref", "guidance__h__ref_8c.html#a6aa584c95b0d6b7f797ae073069a78f0", null ],
+    [ "gh_set_tau", "guidance__h__ref_8c.html#a90318751b9bb56e087a74ed0c7c54b5b", null ],
+    [ "gh_set_zeta", "guidance__h__ref_8c.html#a18d391215a4644b94009241b5c161cc9", null ],
+    [ "gh_update_ref_from_pos_sp", "guidance__h__ref_8c.html#ab81c55cf71ee8fc94433f9584c159710", null ],
+    [ "gh_update_ref_from_speed_sp", "guidance__h__ref_8c.html#ac8675e1f8ea25de7508d42a955ba8f8c", null ],
+    [ "gh_max_accel", "guidance__h__ref_8c.html#a05f3b8d2d4e577edde72e464f128e71b", null ],
+    [ "gh_ref", "guidance__h__ref_8c.html#ad1c81ab118dd232ccbfbd728684f533d", null ]
+];

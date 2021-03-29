@@ -4,6 +4,7 @@ var searchData=
   ['dc_5fctrl_5fparrot_5fmykonos_20module',['dc_ctrl_parrot_mykonos module',['../module__dc_ctrl_parrot_mykonos.html',1,'onboard_modules']]],
   ['decawave_5fanchorless_5fcommunication_20module',['decawave_anchorless_communication module',['../module__decawave_anchorless_communication.html',1,'onboard_modules']]],
   ['demo_5fmodule_20module',['demo_module module',['../module__demo_module.html',1,'onboard_modules']]],
+  ['dfu_5fcommand_20module',['dfu_command module',['../module__dfu_command.html',1,'onboard_modules']]],
   ['digital_5fcam_20module',['digital_cam module',['../module__digital_cam.html',1,'onboard_modules']]],
   ['digital_5fcam_5fi2c_20module',['digital_cam_i2c module',['../module__digital_cam_i2c.html',1,'onboard_modules']]],
   ['digital_5fcam_5fservo_20module',['digital_cam_servo module',['../module__digital_cam_servo.html',1,'onboard_modules']]],

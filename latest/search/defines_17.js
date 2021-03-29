@@ -33,7 +33,12 @@ var searchData=
   ['we_5fukf_5fr_5fgs',['WE_UKF_R_GS',['../wind__estimator_8c.html#afe5ad97c48defa2cbe70c2aa8ebfe2c0',1,'wind_estimator.c']]],
   ['we_5fukf_5fr_5fssa',['WE_UKF_R_SSA',['../wind__estimator_8c.html#a34a4bbfaaf4ecab48d45db88f3d122a0',1,'wind_estimator.c']]],
   ['we_5fukf_5fr_5fva',['WE_UKF_R_VA',['../wind__estimator_8c.html#abf7bf11f3a1e04f899cffcde1c8812bb',1,'wind_estimator.c']]],
+  ['wedgebug_5fcamera_5fleft_5ffps',['WEDGEBUG_CAMERA_LEFT_FPS',['../wedgebug_8c.html#a0ce49e1065825a3ff143788ff9eb4444',1,'wedgebug.c']]],
+  ['wedgebug_5fcamera_5fright_5ffps',['WEDGEBUG_CAMERA_RIGHT_FPS',['../wedgebug_8c.html#abfcbe47ea53a7105f2b0448420f2a340',1,'wedgebug.c']]],
   ['whitelist_5flen',['WHITELIST_LEN',['../gec__dl_8h.html#aef0f56c8f498b45106bcc3280e391397',1,'gec_dl.h']]],
+  ['windtunnel_5fto_5fbody_5fphi',['WINDTUNNEL_TO_BODY_PHI',['../ctrl__windtunnel_8c.html#a2f518e4889cae2760cf5ffa78cb3314d',1,'ctrl_windtunnel.c']]],
+  ['windtunnel_5fto_5fbody_5fpsi',['WINDTUNNEL_TO_BODY_PSI',['../ctrl__windtunnel_8c.html#ad0fd4e2d57ab5e2bb5da9b918a98ee5b',1,'ctrl_windtunnel.c']]],
+  ['windtunnel_5fto_5fbody_5ftheta',['WINDTUNNEL_TO_BODY_THETA',['../ctrl__windtunnel_8c.html#a1d0697e0bf29145bbc1c20b06f2f857f',1,'ctrl_windtunnel.c']]],
   ['wing_5fpos_5fdown_5fthresh',['WING_POS_DOWN_THRESH',['../glide__wing__lock_8c.html#ac8aeb305f0c7abfa9b418edb2448db24',1,'glide_wing_lock.c']]],
   ['wing_5fpos_5flock_5fmax_5fthresh',['WING_POS_LOCK_MAX_THRESH',['../glide__wing__lock_8c.html#acb27f86ae3e5cb7cad3669b0b3cc7501',1,'glide_wing_lock.c']]],
   ['wing_5fpos_5flock_5fmin_5fthresh',['WING_POS_LOCK_MIN_THRESH',['../glide__wing__lock_8c.html#a14bf7a1cf2995c9a0c27fbff4fa628e2',1,'glide_wing_lock.c']]],
@@ -46,6 +51,7 @@ var searchData=
   ['wp_5fflag_5fglobal',['WP_FLAG_GLOBAL',['../subsystems_2navigation_2waypoints_8h.html#a6d3bf34bfccfa41b0cd28ba7f25d1dbe',1,'waypoints.h']]],
   ['wp_5fflag_5flla_5fi',['WP_FLAG_LLA_I',['../subsystems_2navigation_2waypoints_8h.html#ae05f10ec786062ecd4781183842abd10',1,'waypoints.h']]],
   ['write',['WRITE',['../chdk__pipe_8c.html#aa10f470e996d0f51210d24f442d25e1e',1,'chdk_pipe.c']]],
+  ['writeeeprom',['writeEEPROM',['../cc2500__settings_8h.html#a43f65945db04e82ec7f7cf605933d0ae',1,'cc2500_settings.h']]],
   ['writel',['writel',['../libisp_8c.html#a9b78127e4ff19f19c9fb86d66e3c4ee1',1,'libisp.c']]],
   ['writeregister',['writeRegister',['../pmw3901_8c.html#ab5a89d0bc9854fb3163e7e626d324dac',1,'pmw3901.c']]],
   ['ws2812_5faf',['WS2812_AF',['../light__ws2812__arch_8c.html#a453201cffe6ef4d2fd313954f666460d',1,'light_ws2812_arch.c']]],
@@ -65,8 +71,8 @@ var searchData=
   ['ws2812_5fred_5fbit',['WS2812_RED_BIT',['../light__ws2812__arch_8c.html#afbfd19ffd3de95e52e9485ae478f24c7',1,'light_ws2812_arch.c']]],
   ['ws2812_5freset_5fbit_5fn',['WS2812_RESET_BIT_N',['../light__ws2812__arch_8c.html#a45915de98e873e3e99c6c9b632a1df54',1,'light_ws2812_arch.c']]],
   ['ws2812_5fservo_5fhz',['WS2812_SERVO_HZ',['../light__ws2812__arch_8c.html#a4a8614ef3f68261ebfbed384cbc42bbf',1,'light_ws2812_arch.c']]],
-  ['ws2812d1_5faf',['WS2812D1_AF',['../apogee_2chibios_2v1_80_2board_8h.html#afd8cee2fb7cfce1b91317be24260b39c',1,'WS2812D1_AF():&#160;board.h'],['../tawaki_8h.html#afd8cee2fb7cfce1b91317be24260b39c',1,'WS2812D1_AF():&#160;tawaki.h']]],
-  ['ws2812d1_5fcfg_5fdef',['WS2812D1_CFG_DEF',['../apogee_2chibios_2v1_80_2board_8h.html#a1c00198c3a1c3fabc5af8eb5b763dac5',1,'WS2812D1_CFG_DEF():&#160;board.h'],['../tawaki_8h.html#a1c00198c3a1c3fabc5af8eb5b763dac5',1,'WS2812D1_CFG_DEF():&#160;tawaki.h']]],
-  ['ws2812d1_5fgpio',['WS2812D1_GPIO',['../apogee_2chibios_2v1_80_2board_8h.html#a17e208399ce330289bcaef37bd2e9b08',1,'WS2812D1_GPIO():&#160;board.h'],['../tawaki_8h.html#a17e208399ce330289bcaef37bd2e9b08',1,'WS2812D1_GPIO():&#160;tawaki.h']]],
-  ['ws2812d1_5fpin',['WS2812D1_PIN',['../apogee_2chibios_2v1_80_2board_8h.html#aec52babc287e1d061dec870b9f43b083',1,'WS2812D1_PIN():&#160;board.h'],['../tawaki_8h.html#aec52babc287e1d061dec870b9f43b083',1,'WS2812D1_PIN():&#160;tawaki.h']]]
+  ['ws2812d1_5faf',['WS2812D1_AF',['../apogee_2chibios_2v1_80_2board_8h.html#afd8cee2fb7cfce1b91317be24260b39c',1,'WS2812D1_AF():&#160;board.h'],['../matekF765-WING_8h.html#afd8cee2fb7cfce1b91317be24260b39c',1,'WS2812D1_AF():&#160;matekF765-WING.h'],['../nucleo144__f767zi_8h.html#afd8cee2fb7cfce1b91317be24260b39c',1,'WS2812D1_AF():&#160;nucleo144_f767zi.h'],['../tawaki_8h.html#afd8cee2fb7cfce1b91317be24260b39c',1,'WS2812D1_AF():&#160;tawaki.h']]],
+  ['ws2812d1_5fcfg_5fdef',['WS2812D1_CFG_DEF',['../apogee_2chibios_2v1_80_2board_8h.html#a1c00198c3a1c3fabc5af8eb5b763dac5',1,'WS2812D1_CFG_DEF():&#160;board.h'],['../matekF765-WING_8h.html#a1c00198c3a1c3fabc5af8eb5b763dac5',1,'WS2812D1_CFG_DEF():&#160;matekF765-WING.h'],['../nucleo144__f767zi_8h.html#a1c00198c3a1c3fabc5af8eb5b763dac5',1,'WS2812D1_CFG_DEF():&#160;nucleo144_f767zi.h'],['../tawaki_8h.html#a1c00198c3a1c3fabc5af8eb5b763dac5',1,'WS2812D1_CFG_DEF():&#160;tawaki.h']]],
+  ['ws2812d1_5fgpio',['WS2812D1_GPIO',['../apogee_2chibios_2v1_80_2board_8h.html#a17e208399ce330289bcaef37bd2e9b08',1,'WS2812D1_GPIO():&#160;board.h'],['../matekF765-WING_8h.html#a17e208399ce330289bcaef37bd2e9b08',1,'WS2812D1_GPIO():&#160;matekF765-WING.h'],['../nucleo144__f767zi_8h.html#a17e208399ce330289bcaef37bd2e9b08',1,'WS2812D1_GPIO():&#160;nucleo144_f767zi.h'],['../tawaki_8h.html#a17e208399ce330289bcaef37bd2e9b08',1,'WS2812D1_GPIO():&#160;tawaki.h']]],
+  ['ws2812d1_5fpin',['WS2812D1_PIN',['../apogee_2chibios_2v1_80_2board_8h.html#aec52babc287e1d061dec870b9f43b083',1,'WS2812D1_PIN():&#160;board.h'],['../matekF765-WING_8h.html#aec52babc287e1d061dec870b9f43b083',1,'WS2812D1_PIN():&#160;matekF765-WING.h'],['../nucleo144__f767zi_8h.html#aec52babc287e1d061dec870b9f43b083',1,'WS2812D1_PIN():&#160;nucleo144_f767zi.h'],['../tawaki_8h.html#aec52babc287e1d061dec870b9f43b083',1,'WS2812D1_PIN():&#160;tawaki.h']]]
 ];

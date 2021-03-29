@@ -10,6 +10,8 @@ var dir_984e899df90dd104b2eabcdbb76ec71f =
     [ "nav_cube.h", "nav__cube_8h.html", "nav__cube_8h" ],
     [ "nav_drop.c", "nav__drop_8c.html", null ],
     [ "nav_drop.h", "nav__drop_8h.html", "nav__drop_8h" ],
+    [ "nav_fish.c", "nav__fish_8c.html", "nav__fish_8c" ],
+    [ "nav_fish.h", "nav__fish_8h.html", "nav__fish_8h" ],
     [ "nav_flower.c", "nav__flower_8c.html", "nav__flower_8c" ],
     [ "nav_flower.h", "nav__flower_8h.html", "nav__flower_8h" ],
     [ "nav_geofence.h", "nav__geofence_8h.html", "nav__geofence_8h" ],

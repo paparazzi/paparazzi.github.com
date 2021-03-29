@@ -1,0 +1,51 @@
+<map id="i2c_blocking_transmit" name="i2c_blocking_transmit">
+<area shape="rect" id="node2" href="$boards_2bebop_2actuators_8h.html#ad8f645b7663a54e01ba60403a1e45645" title="actuators_bebop_commit" alt="" coords="213,42,400,68"/>
+<area shape="rect" id="node3" href="$boards_2disco_2actuators_8h.html#a0181db6b0eea7688d52e6b73b141549b" title="actuators_disco_commit" alt="" coords="217,92,396,119"/>
+<area shape="rect" id="node4" href="$mt9v117_8c.html#aef8703a6aee9810c99eaa79ca4adad8a" title="mt9v117_write_patch" alt="" coords="227,143,386,170"/>
+<area shape="rect" id="node6" href="$pca95x4_8h.html#a982b2139be26f808ffc1e11b6d85e188" title="Configure PCA95X4. " alt="" coords="235,244,378,271"/>
+<area shape="rect" id="node9" href="$pca95x4_8h.html#ad98a0051084f96a959d3ae4fa237098b" title="Set output value. " alt="" coords="231,194,383,220"/>
+<area shape="rect" id="node10" href="$vl53l1__platform_8h.html#a2c6c0aa7ad6ede0cf21eadb10ca3801e" title="VL53L1_WriteMulti() definition. " alt="" coords="238,320,375,347"/>
+<area shape="rect" id="node32" href="$mt9f002_8c.html#ab00cad0726a874bbfacc6481624e7463" title="Write multiple bytes to a single register. " alt="" coords="267,954,347,980"/>
+<area shape="rect" id="node5" href="$mt9v117_8h.html#aa6ecb42ade7b40f50bc3cf8f306583a7" title="Initialisation of the Aptina MT9V117 CMOS sensor (1/6 inch VGA, bottom camera) " alt="" coords="485,143,591,170"/>
+<area shape="rect" id="node7" href="$cf__deck__multi__ranger_8h.html#a580f0b30e559460505edfb2c90dd8e8f" title="Module init. " alt="" coords="473,244,603,271"/>
+<area shape="rect" id="node8" href="$cf__deck__multi__ranger_8h.html#ab23c504c8c7175c03a791e85d8c721a6" title="Module periodic function. " alt="" coords="458,194,618,220"/>
+<area shape="rect" id="node11" href="$vl53l1__platform_8h.html#a6294ff6202e132dbf802617ba71ec5f8" title="VL53L1_WrByte() definition. " alt="" coords="478,346,598,372"/>
+<area shape="rect" id="node24" href="$vl53l1__platform_8h.html#aaf8f98b385ff1ea02ec04e27f0aaf9ed" title="VL53L1_WrDWord() definition. " alt="" coords="472,295,604,322"/>
+<area shape="rect" id="node26" href="$vl53l1__platform_8h.html#a1a8884f5596d0c5874f3ce00a49d997d" title="VL53L1_WrWord() definition. " alt="" coords="477,675,599,702"/>
+<area shape="rect" id="node12" href="$vl53l1x__api_8h.html#aea03678f2d93224975c90e79ab210bb2" title="This function clears the interrupt, to be called after a ranging data reading to arm the interrupt fo..." alt="" coords="702,320,874,347"/>
+<area shape="rect" id="node13" href="$vl53l1x__api_8h.html#a09f0e0407aa544559216b42f6745d5fa" title="This function loads the 135 bytes default values to initialize the sensor. " alt="" coords="1001,371,1149,398"/>
+<area shape="rect" id="node15" href="$vl53l1x__api_8h.html#afa096166165ff67887c9fd9f9dbdd691" title="This function performs the temperature calibration. " alt="" coords="976,284,1173,325"/>
+<area shape="rect" id="node16" href="$vl53l1x__api_8h.html#a1bed9923a29d7a7521d8c8e9a96cf97d" title="This function programs the distance mode (1=short, 2=long(default)). " alt="" coords="976,548,1173,575"/>
+<area shape="rect" id="node17" href="$vl53l1x__api_8h.html#aab8c6715dd0a1e694e1e92cbf3dd8d2a" title="This function programs the threshold detection mode Example: VL53L1X_SetDistanceThreshold(dev,100,300,0,1): Below 100 &#160;VL53L1X_SetDistanceThreshold(dev,100,300,1,1): Above 300 &#160;VL53L1X_SetDistanceThreshold(dev,100,300,2,1): Out of window &#160;VL53L1X_SetDistanceThreshold(dev,100,300,3,1): In window &#160;. " alt="" coords="676,574,900,600"/>
+<area shape="rect" id="node18" href="$vl53l1x__api_8h.html#a22490fbe5f4d08c51b1b420c3fd38341" title="This function sets the sensor I2C address used in case multiple devices application, default address 0x52. " alt="" coords="699,472,877,499"/>
+<area shape="rect" id="node19" href="$vl53l1x__api_8h.html#a97c366aa4aa567c752f1d1bb6fc56cd3" title="This function programs the interrupt polarity 1=active high (default), 0=active low. " alt="" coords="684,118,892,144"/>
+<area shape="rect" id="node20" href="$vl53l1x__api_8h.html#ae65432b46f39bf17ccbf560b19632a45" title="This function programs the ROI (Region of Interest) The ROI position is centered, only the ROI size c..." alt="" coords="725,168,851,195"/>
+<area shape="rect" id="node21" href="$vl53l1x__api_8h.html#a4e4ee95b70dcb375cdc9f63e8434e41f" title="This function programs the new user ROI center, please to be aware that there is no check in this fun..." alt="" coords="703,219,873,246"/>
+<area shape="rect" id="node22" href="$vl53l1x__api_8h.html#a5e8ca5c9b01cf3166f58495a93cd8358" title="This function starts the ranging distance operation The ranging operation is continuous. " alt="" coords="705,67,871,94"/>
+<area shape="rect" id="node23" href="$vl53l1x__api_8h.html#ac8080784997cc9a1c754998d1106715e" title="This function stops the ranging. " alt="" coords="705,371,871,398"/>
+<area shape="rect" id="node14" href="$vl53l1x__api_8h.html#a4f5f0ac3cdbbcbc565f0babde7db4588" title="Implement boot sequence of VL53L1 device as described in documentation See VL53L1X_SetTimingBudgetInM..." alt="" coords="1249,371,1407,398"/>
+<area shape="rect" id="node25" href="$vl53l1x__api_8h.html#a2f9dc21891cedff85ec8465c3c9b9d66" title="This function programs the Intermeasurement period in ms Intermeasurement period must be &gt;/= timing b..." alt="" coords="948,42,1201,68"/>
+<area shape="rect" id="node27" href="$vl53l1x__api_8h.html#a22c5366f94ec9329038f4690a9899b83" title="This function programs the offset correction in mm. " alt="" coords="716,776,860,803"/>
+<area shape="rect" id="node28" href="$vl53l1x__api_8h.html#a52c909723a48ef79bce7e734eddde337" title="This function programs a new sigma threshold in mm (default=15 mm) " alt="" coords="683,827,893,854"/>
+<area shape="rect" id="node29" href="$vl53l1x__api_8h.html#aba49416067e675aa734c1151b102b1f6" title="This function programs a new signal threshold in kcps (default=1024 kcps . " alt="" coords="685,878,891,904"/>
+<area shape="rect" id="node30" href="$vl53l1x__api_8h.html#a96416653f93aa7e5b8ed954c8b9cdd9f" title="This function programs the timing budget in ms. " alt="" coords="677,675,899,702"/>
+<area shape="rect" id="node31" href="$vl53l1x__api_8h.html#a4e2cf4bc7b754a7026cf5855d4147e79" title="This function programs the xtalk correction value in cps (Count Per Second). " alt="" coords="719,726,857,752"/>
+<area shape="rect" id="node33" href="$mt9f002_8h.html#a8f43c3ad8d5ff841d1203ab6c760c8f0" title="Initialisation of the Aptina MT9F002 CMOS sensor (front camera) " alt="" coords="737,979,839,1006"/>
+<area shape="rect" id="node34" href="$mt9f002_8c.html#a19a080f1261d2c93036a71229829f3bc" title="Configure stage 1 for both MiPi and HiSPi connection. " alt="" coords="457,776,619,803"/>
+<area shape="rect" id="node35" href="$mt9f002_8c.html#aa234e478df07549163df80e9d4fe3804" title="Configure stage 2 for both MiPi and HiSPi connection. " alt="" coords="457,827,619,854"/>
+<area shape="rect" id="node36" href="$mt9f002_8c.html#a3193ac4829fc656e72624e1969c60f7f" title="Configure stage 3 for both MiPi and HiSPi connection. " alt="" coords="457,878,619,904"/>
+<area shape="rect" id="node37" href="$mt9f002_8c.html#a0c50ad7b7330297658579bcf6e71def4" title="Configure stage 1 for parallel connection. " alt="" coords="448,928,628,955"/>
+<area shape="rect" id="node38" href="$mt9f002_8c.html#a31a2861994de30b4951549681c8586e4" title="Configure stage 2 for parallel connection. " alt="" coords="448,979,628,1006"/>
+<area shape="rect" id="node39" href="$mt9f002_8c.html#a36bbdbfc466a49d592b591d9d6a35b5f" title="mt9f002_set_blanking" alt="" coords="457,1080,619,1107"/>
+<area shape="rect" id="node41" href="$mt9f002_8h.html#abcc9f0f2484aa96a4c1cef0c563fd62e" title="Set the exposure configuration Depends on the blanking (and therefore the FPS) " alt="" coords="453,1182,623,1208"/>
+<area shape="rect" id="node46" href="$mt9f002_8h.html#a2b19e806c9c4331da2e4730dd6592e38" title="Sets the GreenR, Blue, Red and GreenB gains. " alt="" coords="466,1306,610,1332"/>
+<area shape="rect" id="node49" href="$mt9f002_8c.html#a938725d4136403996410307333abe9f7" title="Set the PLL registers based on config. " alt="" coords="476,1030,600,1056"/>
+<area shape="rect" id="node50" href="$mt9f002_8c.html#ae8f647b90deb6f61d57af6c5d0bb032f" title="mt9f002_set_resolution" alt="" coords="451,1131,625,1158"/>
+<area shape="rect" id="node40" href="$mt9f002_8h.html#aa1e09e3bbb34e6f084cf490573ca1f32" title="mt9f002_setting_update\l_resolution" alt="" coords="699,1065,877,1106"/>
+<area shape="rect" id="node42" href="$mt9f002_8h.html#a107e8b9a036f53944cf021efd09ca617" title="mt9f002_reset_exposure" alt="" coords="697,1182,879,1208"/>
+<area shape="rect" id="node43" href="$bebop__ae__awb_8c.html#a98dd41d74e2aed7f79d733e5c554701b" title="update_ae_awb" alt="" coords="1013,1274,1136,1300"/>
+<area shape="rect" id="node45" href="$mt9f002_8h.html#af63a6fbefe3f1f4b959f6b1610b0c9f1" title="mt9f002_setting_update\l_exposure" alt="" coords="699,1233,877,1274"/>
+<area shape="rect" id="node44" href="$bebop__ae__awb_8h.html#a488d91f59b9036f352ebc7fcafdedf7b" title="bebop_ae_awb_init" alt="" coords="1257,1274,1399,1300"/>
+<area shape="rect" id="node47" href="$mt9f002_8h.html#ad35111d4dbfb1bb69e2dcce789ba5e0b" title="mt9f002_reset_color" alt="" coords="711,1415,865,1442"/>
+<area shape="rect" id="node48" href="$mt9f002_8h.html#a2246079e693b6f43730bb618d5f52723" title="mt9f002_setting_update\l_color" alt="" coords="699,1298,877,1340"/>
+</map>

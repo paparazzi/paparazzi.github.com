@@ -38,6 +38,7 @@ var searchData=
   ['imuswing',['ImuSwing',['../imu__swing_8h.html#structImuSwing',1,'']]],
   ['imuumarim',['ImuUmarim',['../imu__umarim_8h.html#structImuUmarim',1,'']]],
   ['imuvectornav',['ImuVectornav',['../imu__vectornav_8h.html#structImuVectornav',1,'']]],
+  ['indi_5fgains',['Indi_gains',['../stabilization__indi__simple_8h.html#structIndi__gains',1,'']]],
   ['indicontroller_5fint',['IndiController_int',['../structIndiController__int.html',1,'']]],
   ['indiestimation',['IndiEstimation',['../stabilization__indi__simple_8h.html#structIndiEstimation',1,'']]],
   ['indivariables',['IndiVariables',['../stabilization__indi__simple_8h.html#structIndiVariables',1,'']]],

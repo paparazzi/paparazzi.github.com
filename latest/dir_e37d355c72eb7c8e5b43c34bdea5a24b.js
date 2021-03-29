@@ -2,6 +2,8 @@ var dir_e37d355c72eb7c8e5b43c34bdea5a24b =
 [
     [ "guidance", "dir_3d64810a495a8e63c02e8d4ee1418813.html", "dir_3d64810a495a8e63c02e8d4ee1418813" ],
     [ "stabilization", "dir_d1b81cc433edb6118e3c3e3bc7700be0.html", "dir_d1b81cc433edb6118e3c3e3bc7700be0" ],
+    [ "autopilot_arming.h", "autopilot__arming_8h.html", null ],
+    [ "autopilot_arming_common.h", "autopilot__arming__common_8h.html", "autopilot__arming__common_8h" ],
     [ "autopilot_arming_switch.h", "autopilot__arming__switch_8h.html", "autopilot__arming__switch_8h" ],
     [ "autopilot_arming_throttle.h", "autopilot__arming__throttle_8h.html", "autopilot__arming__throttle_8h" ],
     [ "autopilot_arming_yaw.h", "autopilot__arming__yaw_8h.html", "autopilot__arming__yaw_8h" ],

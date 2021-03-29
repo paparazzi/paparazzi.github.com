@@ -6,6 +6,8 @@ var dir_94757629c544be2d6d24b01569be56e6 =
     [ "ctrl_module_innerloop_demo.h", "ctrl__module__innerloop__demo_8h.html", "ctrl__module__innerloop__demo_8h" ],
     [ "ctrl_module_outerloop_demo.c", "ctrl__module__outerloop__demo_8c.html", "ctrl__module__outerloop__demo_8c" ],
     [ "ctrl_module_outerloop_demo.h", "ctrl__module__outerloop__demo_8h.html", "ctrl__module__outerloop__demo_8h" ],
+    [ "ctrl_windtunnel.c", "ctrl__windtunnel_8c.html", "ctrl__windtunnel_8c" ],
+    [ "ctrl_windtunnel.h", "ctrl__windtunnel_8h.html", "ctrl__windtunnel_8h" ],
     [ "gain_scheduling.c", "gain__scheduling_8c.html", "gain__scheduling_8c" ],
     [ "gain_scheduling.h", "gain__scheduling_8h.html", "gain__scheduling_8h" ],
     [ "object_tracking.c", "object__tracking_8c.html", "object__tracking_8c" ],

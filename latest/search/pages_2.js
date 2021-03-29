@@ -19,6 +19,7 @@ var searchData=
   ['ctrl_5feffectiveness_5fscheduling_20module',['ctrl_effectiveness_scheduling module',['../module__ctrl_effectiveness_scheduling.html',1,'onboard_modules']]],
   ['ctrl_5fmodule_5finnerloop_5fdemo_20module',['ctrl_module_innerloop_demo module',['../module__ctrl_module_innerloop_demo.html',1,'onboard_modules']]],
   ['ctrl_5fmodule_5fouterloop_5fdemo_20module',['ctrl_module_outerloop_demo module',['../module__ctrl_module_outerloop_demo.html',1,'onboard_modules']]],
+  ['ctrl_5fwindtunnel_20module',['ctrl_windtunnel module',['../module__ctrl_windtunnel.html',1,'onboard_modules']]],
   ['current_5fsensor_20module',['current_sensor module',['../module__current_sensor.html',1,'onboard_modules']]],
   ['cv_5fblob_5flocator_20module',['cv_blob_locator module',['../module__cv_blob_locator.html',1,'onboard_modules']]],
   ['cv_5fcolorfilter_20module',['cv_colorfilter module',['../module__cv_colorfilter.html',1,'onboard_modules']]],

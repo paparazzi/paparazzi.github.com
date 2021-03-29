@@ -6,6 +6,8 @@ var searchData=
   ['generic_5fcom_20module',['generic_com module',['../module__generic_com.html',1,'onboard_modules']]],
   ['geo_5fmag_20module',['geo_mag module',['../module__geo_mag.html',1,'onboard_modules']]],
   ['glide_5fwing_5flock_20module',['glide_wing_lock module',['../module__glide_wing_lock.html',1,'onboard_modules']]],
+  ['gpio_5fext_5fcommon_20module',['gpio_ext_common module',['../module__gpio_ext_common.html',1,'onboard_modules']]],
+  ['gpio_5fext_5fpca95xx_20module',['gpio_ext_pca95xx module',['../module__gpio_ext_pca95xx.html',1,'onboard_modules']]],
   ['gps_20module',['gps module',['../module__gps.html',1,'onboard_modules']]],
   ['gps_5fdatalink_20module',['gps_datalink module',['../module__gps_datalink.html',1,'onboard_modules']]],
   ['gps_5ffuruno_20module',['gps_furuno module',['../module__gps_furuno.html',1,'onboard_modules']]],
@@ -16,6 +18,7 @@ var searchData=
   ['gps_5fpiksi_20module',['gps_piksi module',['../module__gps_piksi.html',1,'onboard_modules']]],
   ['gps_5fsim_20module',['gps_sim module',['../module__gps_sim.html',1,'onboard_modules']]],
   ['gps_5fsim_5fhitl_20module',['gps_sim_hitl module',['../module__gps_sim_hitl.html',1,'onboard_modules']]],
+  ['gps_5fsirf_20module',['gps_sirf module',['../module__gps_sirf.html',1,'onboard_modules']]],
   ['gps_5fskytraq_20module',['gps_skytraq module',['../module__gps_skytraq.html',1,'onboard_modules']]],
   ['gps_5fublox_20module',['gps_ublox module',['../module__gps_ublox.html',1,'onboard_modules']]],
   ['gps_5fubx_5fi2c_20module',['gps_ubx_i2c module',['../module__gps_ubx_i2c.html',1,'onboard_modules']]],
@@ -27,9 +30,11 @@ var searchData=
   ['guidance_5ffull_5fpid_5ffw_20module',['guidance_full_pid_fw module',['../module__guidance_full_pid_fw.html',1,'onboard_modules']]],
   ['guidance_5fhybrid_20module',['guidance_hybrid module',['../module__guidance_hybrid.html',1,'onboard_modules']]],
   ['guidance_5findi_20module',['guidance_indi module',['../module__guidance_indi.html',1,'onboard_modules']]],
+  ['guidance_5findi_5fhybrid_20module',['guidance_indi_hybrid module',['../module__guidance_indi_hybrid.html',1,'onboard_modules']]],
   ['guidance_5frotorcraft_20module',['guidance_rotorcraft module',['../module__guidance_rotorcraft.html',1,'onboard_modules']]],
   ['guidance_5frover_20module',['guidance_rover module',['../module__guidance_rover.html',1,'onboard_modules']]],
   ['guidance_5frover_5fholonomic_20module',['guidance_rover_holonomic module',['../module__guidance_rover_holonomic.html',1,'onboard_modules']]],
   ['gumstix_5fqr_5fcode_5fspi_5flink_20module',['gumstix_qr_code_spi_link module',['../module__gumstix_qr_code_spi_link.html',1,'onboard_modules']]],
-  ['gvf_5fmodule_20module',['gvf_module module',['../module__gvf_module.html',1,'onboard_modules']]]
+  ['gvf_5fmodule_20module',['gvf_module module',['../module__gvf_module.html',1,'onboard_modules']]],
+  ['gvf_5fparametric_20module',['gvf_parametric module',['../module__gvf_parametric.html',1,'onboard_modules']]]
 ];

@@ -19,7 +19,7 @@ var formation_8h =
     [ "formation_init", "formation_8h.html#acf4b41c93bf9fcca41532eb8a22ec466", null ],
     [ "formation_pre_call", "formation_8h.html#ae22bbb9b0cbc9aa4e541ab47d5a42989", null ],
     [ "parseFormationSlot", "formation_8h.html#a0466b00ca4b30a5c4a56e031ccd0beeb", null ],
-    [ "parseFormationStatus", "formation_8h.html#a18d4015f5321ed70e9e074d637de4d20", null ],
+    [ "parseFormationStatus", "formation_8h.html#ab7ddcb2371d4005235160016ce08d32d", null ],
     [ "start_formation", "formation_8h.html#a7f570279c6840dc962733dbac2b46413", null ],
     [ "stop_formation", "formation_8h.html#ae8cee39c5a50b92149438d938cc0dd0c", null ],
     [ "updateFormationStatus", "formation_8h.html#aaddb36dfcfa5356d7599cef8a7092c46", null ],

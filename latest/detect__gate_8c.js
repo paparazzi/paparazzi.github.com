@@ -19,7 +19,7 @@ var detect__gate_8c =
     [ "DETECT_GATE_N_SAMPLES", "detect__gate_8c.html#a5d7f1e3246ecec1cac9073b6c2b9f98e", null ],
     [ "DETECT_GATE_SIMPLIFIED_PNP", "detect__gate_8c.html#af67c6416873db660d9a6a4aca8149c18", null ],
     [ "detect_gate_event", "detect__gate_8c.html#a31c10819cde7e0649fb2a208d89d8c68", null ],
-    [ "detect_gate_func", "detect__gate_8c.html#aa56e5511b713de2a38c715e96e879c33", null ],
+    [ "detect_gate_func", "detect__gate_8c.html#a33f5e6c0b684ec61feb65db935e01ff9", null ],
     [ "detect_gate_init", "detect__gate_8c.html#afad85937ed43b1d2963bec59f0031ec1", null ],
     [ "send_detect_gate_visual_position", "detect__gate_8c.html#a0ed115d365adec933afde8a8a926a1fb", null ],
     [ "best_gate", "detect__gate_8c.html#a84fd633edd36fac317c81ecb8a2e0361", null ],

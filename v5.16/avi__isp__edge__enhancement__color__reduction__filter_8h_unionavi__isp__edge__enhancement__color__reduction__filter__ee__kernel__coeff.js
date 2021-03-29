@@ -1,0 +1,4 @@
+var avi__isp__edge__enhancement__color__reduction__filter_8h_unionavi__isp__edge__enhancement__color__reduction__filter__ee__kernel__coeff =
+[
+    [ "_register", "avi__isp__edge__enhancement__color__reduction__filter_8h.html#a8654fa942da2df70392b4ff0e63c0a5b", null ]
+];

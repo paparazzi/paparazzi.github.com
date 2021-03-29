@@ -17,6 +17,8 @@ var searchData=
   ['uart_5fprint_2eh',['uart_print.h',['../uart__print_8h.html',1,'']]],
   ['uart_5ftunnel_2ec',['uart_tunnel.c',['../lpc21_2uart__tunnel_8c.html',1,'']]],
   ['uart_5ftunnel_2ec',['uart_tunnel.c',['../stm32_2uart__tunnel_8c.html',1,'']]],
+  ['uav_5frecovery_2ec',['uav_recovery.c',['../uav__recovery_8c.html',1,'']]],
+  ['uav_5frecovery_2eh',['uav_recovery.h',['../uav__recovery_8h.html',1,'']]],
   ['udp_2ec',['udp.c',['../udp_8c.html',1,'']]],
   ['udp_2eh',['udp.h',['../udp_8h.html',1,'']]],
   ['udp_5farch_2ec',['udp_arch.c',['../linux_2mcu__periph_2udp__arch_8c.html',1,'']]],

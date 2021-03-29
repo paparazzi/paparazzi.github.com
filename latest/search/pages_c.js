@@ -6,6 +6,7 @@ var searchData=
   ['nav_5fcatapult_20module',['nav_catapult module',['../module__nav_catapult.html',1,'onboard_modules']]],
   ['nav_5fcube_20module',['nav_cube module',['../module__nav_cube.html',1,'onboard_modules']]],
   ['nav_5fdrop_20module',['nav_drop module',['../module__nav_drop.html',1,'onboard_modules']]],
+  ['nav_5ffish_20module',['nav_fish module',['../module__nav_fish.html',1,'onboard_modules']]],
   ['nav_5fflower_20module',['nav_flower module',['../module__nav_flower.html',1,'onboard_modules']]],
   ['nav_5fgls_20module',['nav_gls module',['../module__nav_gls.html',1,'onboard_modules']]],
   ['nav_5fheli_5fspinup_20module',['nav_heli_spinup module',['../module__nav_heli_spinup.html',1,'onboard_modules']]],

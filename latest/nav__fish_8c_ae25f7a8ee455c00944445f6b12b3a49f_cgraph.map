@@ -1,0 +1,51 @@
+<map id="nav_fish_velocity_run" name="nav_fish_velocity_run">
+<area shape="rect" id="node2" href="$autopilot__guided_8c.html#a07ce763874e77faf62f5c9506bdad43d" title="Set guided setpoints using flag mask in GUIDED mode. " alt="" coords="211,316,391,343"/>
+<area shape="rect" id="node26" href="$nav__fish_8c.html#aabac53beb17b84ea4474a72fb85e2abb" title="calculates new variation of the heading for the uav based on current state " alt="" coords="455,653,625,680"/>
+<area shape="rect" id="node50" href="$nav__fish_8c.html#ac355d105d112168a520efe4e3458141a" title="send_swarm_message" alt="" coords="217,553,385,580"/>
+<area shape="rect" id="node3" href="$autopilot_8c.html#a23af2ac2d4bcb9b71c869a409de61cc4" title="get autopilot mode " alt="" coords="465,56,615,83"/>
+<area shape="rect" id="node4" href="$rotorcraft_2guidance_2guidance__h_8c.html#ae192e6147e70b8acc536020ece52714b" title="Set body relative horizontal velocity setpoint in GUIDED mode. " alt="" coords="454,158,626,199"/>
+<area shape="rect" id="node5" href="$rotorcraft_2guidance_2guidance__h_8c.html#a21a4387750aad0a127dfa928b8557a90" title="Set horizontal velocity setpoint in GUIDED mode. " alt="" coords="690,124,887,151"/>
+<area shape="rect" id="node6" href="$group__state__attitude.html#ga9a5e6bac6e7d78e1b33430e73344615b" title="Get vehicle body attitude euler angles (float). " alt="" coords="689,191,888,217"/>
+<area shape="rect" id="node11" href="$rotorcraft_2guidance_2guidance__h_8c.html#a326822b3cfdaaf76105134072212346c" title="Set heading setpoint in GUIDED mode. " alt="" coords="454,275,626,317"/>
+<area shape="rect" id="node12" href="$rotorcraft_2guidance_2guidance__h_8c.html#af1c1fe7554cfb835e5f674228cb3858b" title="Set heading rate setpoint in GUIDED mode. " alt="" coords="454,341,626,382"/>
+<area shape="rect" id="node13" href="$rotorcraft_2guidance_2guidance__h_8c.html#a4df96f9ee6b60d5df3ccfd2bd45dc6f2" title="Set horizontal position setpoint in GUIDED mode. " alt="" coords="439,407,641,433"/>
+<area shape="rect" id="node14" href="$rotorcraft_2guidance_2guidance__v_8c.html#acac5c328b4af288851a9ede4552381f8" title="Set z velocity setpoint in GUIDED mode. " alt="" coords="444,457,636,484"/>
+<area shape="rect" id="node15" href="$rotorcraft_2guidance_2guidance__v_8c.html#a37acdbbaffc177a9c200f95098d5b398" title="Set z setpoint in GUIDED mode. " alt="" coords="447,508,633,535"/>
+<area shape="rect" id="node16" href="$group__state__position.html#gac1b41866b307723e3ad8ddd566d4f627" title="Get position in local NED coordinates (float). " alt="" coords="457,559,623,585"/>
+<area shape="rect" id="node25" href="$group__state__position.html#gad1490e1d9825a698db02787701f99f6f" title="Test if local coordinates are valid. " alt="" coords="441,5,639,32"/>
+<area shape="rect" id="node7" href="$group__math__orientation__representation.html#gaaae3838d0b45682d48257d5dbfff3030" title="Get vehicle body attitude euler angles (float). " alt="" coords="946,147,1110,173"/>
+<area shape="rect" id="node8" href="$group__math__orientation__representation.html#ga8b8bf1c74adb971f399f0dd4f84d9388" title="orientationCalcEulers_f" alt="" coords="1170,147,1338,173"/>
+<area shape="rect" id="node9" href="$group__math__algebra__float.html#gac568e7074d2732d1237f80898c1dfb76" title="float_eulers_of_rmat" alt="" coords="1388,121,1541,148"/>
+<area shape="rect" id="node10" href="$group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="euler rotation &#39;ZYX&#39; " alt="" coords="1389,172,1540,199"/>
+<area shape="rect" id="node17" href="$group__state__position.html#ga480ea806b0ffe839df24d856b7ce0261" title="stateCalcPositionNed_f" alt="" coords="704,324,873,351"/>
+<area shape="rect" id="node18" href="$pprz__geodetic__float_8c.html#a3045a5a383aa4ebf5b8a9763773b9b6d" title="ned_of_ecef_point_f" alt="" coords="1179,273,1329,300"/>
+<area shape="rect" id="node20" href="$group__math__geodetic__int.html#ga55c109fccf11d3699553122869dfd38b" title="Convert a ECEF position to local NED. " alt="" coords="959,349,1097,376"/>
+<area shape="rect" id="node22" href="$pprz__geodetic__float_8c.html#aba90b4f88dce2d3eadce9c28fcde2d54" title="ned_of_lla_point_f" alt="" coords="960,299,1096,325"/>
+<area shape="rect" id="node23" href="$group__math__geodetic__int.html#ga386f7bf340618bf1454ca2a3b5086100" title="Convert a LLA to ECEF. " alt="" coords="1415,425,1514,452"/>
+<area shape="rect" id="node24" href="$pprz__geodetic__float_8c.html#af99d4775df518f30b741b49c26eceedd" title="utm_of_lla_f" alt="" coords="1205,375,1303,401"/>
+<area shape="rect" id="node19" href="$pprz__geodetic__float_8c.html#a2a82ebdce90a3e41d54f72c5e787fcd0" title="enu_of_ecef_point_f" alt="" coords="1390,527,1539,553"/>
+<area shape="rect" id="node21" href="$group__math__geodetic__int.html#ga710a45725431766f0a003ba93cb58a11" title="Convert a ECEF position to local ENU. " alt="" coords="1185,324,1323,351"/>
+<area shape="rect" id="node27" href="$group__ac__info.html#ga5c99bec43d11d7091e213e401d4a5733" title="Get vehicle course (float). " alt="" coords="725,603,853,629"/>
+<area shape="rect" id="node28" href="$group__ac__info.html#gaa35b881ac79b26e3504539214918c63f" title="Get time of week from latest message (ms). " alt="" coords="735,653,843,680"/>
+<area shape="rect" id="node29" href="$group__ac__info.html#ga525710b691b4f60d3e55c3c4b2cb092c" title="Get position in local ENU coordinates (float). " alt="" coords="705,552,873,579"/>
+<area shape="rect" id="node36" href="$nav__fish_8c.html#a6be52ce767bc23639f6140db166e18fc" title="calculates the relative orientation too the wall " alt="" coords="735,755,842,781"/>
+<area shape="rect" id="node37" href="$nav__fish_8c.html#a32e7c37a922432f684505b726d724051" title="calculates the distance between two uavs " alt="" coords="936,856,1120,883"/>
+<area shape="rect" id="node38" href="$nav__fish_8c.html#a73d46dd3746708693a4793f1fc047dfc" title="Calculates distance between the uav and wall. " alt="" coords="725,957,852,984"/>
+<area shape="rect" id="node41" href="$nav__fish_8c.html#a04d15699e98da660fe2dd5e4c435cbbb" title="calculates the alignement effect between two uavs " alt="" coords="710,856,867,883"/>
+<area shape="rect" id="node43" href="$nav__fish_8c.html#a79ca39ea4ea5646c25b0671360ff26b0" title="calculates the attraction effect between two uavs " alt="" coords="715,805,862,832"/>
+<area shape="rect" id="node46" href="$nav__fish_8c.html#a7468ae781e1d813fc3a6a672175e15b4" title="calculates the influence of a uav on a neighbor of his " alt="" coords="717,704,860,731"/>
+<area shape="rect" id="node47" href="$nav__fish_8c.html#ab79919b0725eedc17018a87fb450b62c" title="Gaussian random number generator with mean =0 and invariance =1 using Box&#45;Muller method. " alt="" coords="711,501,866,528"/>
+<area shape="rect" id="node48" href="$group__state__position.html#ga545d479db45e1a9711e59736b6d1309b" title="Get position in local ENU coordinates (float). " alt="" coords="707,451,870,477"/>
+<area shape="rect" id="node30" href="$group__ac__info.html#ga5f26bc7946ecd4d712ed0baa6cbe8dd1" title="acInfoCalcPositionEnu_f" alt="" coords="942,603,1114,629"/>
+<area shape="rect" id="node31" href="$pprz__geodetic__float_8c.html#ab8d5cb7292ea74802e7a94e265c0703a" title="enu_of_lla_point_f" alt="" coords="1186,577,1322,604"/>
+<area shape="rect" id="node32" href="$group__ac__info.html#ga9712309206b85d9fb005f0ba19553a04" title="Get position from LLA coordinates (float). " alt="" coords="1173,679,1335,705"/>
+<area shape="rect" id="node33" href="$group__math__geodetic__int.html#gab462d1e8278e0dd9cbc9ff463cde8f5e" title="Convert a point from LLA to local ENU. " alt="" coords="1187,476,1321,503"/>
+<area shape="rect" id="node34" href="$group__ac__info.html#gafc650e7d5bdaa36628912178842e55bd" title="Get position from LLA coordinates (int). " alt="" coords="1173,628,1335,655"/>
+<area shape="rect" id="node35" href="$group__ac__info.html#ga74acacb611beb144c68c7b41ef3e50a4" title="Get position from UTM coordinates (float). " alt="" coords="1168,729,1340,756"/>
+<area shape="rect" id="node39" href="$subsystems_2navigation_2waypoints_8c.html#a62061108340141e0fda55b7c0d8f0145" title="Get X/East coordinate of waypoint in meters. " alt="" coords="968,932,1088,959"/>
+<area shape="rect" id="node40" href="$subsystems_2navigation_2waypoints_8c.html#ab6dc3af2d184a91218a1fe7f02b858bc" title="Get Y/North coordinate of waypoint in meters. " alt="" coords="968,983,1088,1009"/>
+<area shape="rect" id="node42" href="$nav__fish_8c.html#ac7f5aa101851d1bc52e80625037a7fbd" title="calculates difference between two headings " alt="" coords="988,805,1068,832"/>
+<area shape="rect" id="node44" href="$nav__fish_8c.html#a7c7502a079a6db56c8e70fc5d8d18700" title="calculates a uav&#39;s viewing angle on another uav " alt="" coords="973,755,1083,781"/>
+<area shape="rect" id="node45" href="$nav__fish_8c.html#ab74daa0c9784c63e060bfb98cc06fbf5" title="sign function " alt="" coords="1230,780,1278,807"/>
+<area shape="rect" id="node49" href="$group__state__position.html#ga718066acd9581365ca5c2aacb29130fd" title="stateCalcPositionEnu_f" alt="" coords="945,451,1111,477"/>
+</map>

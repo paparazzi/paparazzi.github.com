@@ -7,6 +7,7 @@ var modules =
     [ "Integer types", "group__common__inttypes.html", "group__common__inttypes" ],
     [ "Config", "group__config.html", "group__config" ],
     [ "HAL_CONF", "group__HAL__CONF.html", "group__HAL__CONF" ],
+    [ "SHELL", "group__SHELL.html", "group__SHELL" ],
     [ "LPC21 architecture", "group__lpc21__arch.html", "group__lpc21__arch" ],
     [ "STM32 architecture", "group__stm32__arch.html", "group__stm32__arch" ],
     [ "Math", "group__math.html", "group__math" ],

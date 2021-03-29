@@ -47,7 +47,7 @@ var searchData=
   ['jevois_5fvfov',['JEVOIS_VFOV',['../jevois_8h.html#a3c94ffa744d6926deb0a13392cb00804',1,'jevois.h']]],
   ['jevois_5fvision_5fposition',['jevois_vision_position',['../jevois__mavlink_8c.html#acd77b249561a7121ca6e858613b38467',1,'jevois_mavlink.c']]],
   ['jevois_5fvisual_5ftarget',['jevois_visual_target',['../jevois__mavlink_8c.html#adc996a69f9c16930a86649539e15465d',1,'jevois_mavlink.c']]],
-  ['joystick',['Joystick',['../joystick_8h.html#structJoystick',1,'Joystick'],['../joystick_8c.html#a23b18d268c4c1956a1f97b1949412023',1,'joystick():&#160;joystick.c'],['../joystick_8h.html#a23b18d268c4c1956a1f97b1949412023',1,'joystick():&#160;joystick.c'],['../nps__radio__control_8h.html#a4185eb844c2becceef5585bb0175544aa9cdb4c7b3f2d3cd904160e767d3a4a2c',1,'JOYSTICK():&#160;nps_radio_control.h']]],
+  ['joystick',['Joystick',['../joystick_8h.html#structJoystick',1,'Joystick'],['../nps__radio__control_8h.html#a4185eb844c2becceef5585bb0175544aa9cdb4c7b3f2d3cd904160e767d3a4a2c',1,'JOYSTICK():&#160;nps_radio_control.h'],['../joystick_8c.html#a23b18d268c4c1956a1f97b1949412023',1,'joystick():&#160;joystick.c'],['../joystick_8h.html#a23b18d268c4c1956a1f97b1949412023',1,'joystick():&#160;joystick.c']]],
   ['joystick_2ec',['joystick.c',['../joystick_8c.html',1,'']]],
   ['joystick_2eh',['joystick.h',['../joystick_8h.html',1,'']]],
   ['joystick_5fid',['JOYSTICK_ID',['../abi__sender__ids_8h.html#a282ea2232aeb43e13a86a84c6cedd975',1,'abi_sender_ids.h']]],

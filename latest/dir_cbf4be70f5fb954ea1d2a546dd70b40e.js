@@ -11,6 +11,8 @@ var dir_cbf4be70f5fb954ea1d2a546dd70b40e =
     [ "high_speed_logger_direct_memory.h", "high__speed__logger__direct__memory_8h.html", "high__speed__logger__direct__memory_8h" ],
     [ "high_speed_logger_spi_link.c", "high__speed__logger__spi__link_8c.html", "high__speed__logger__spi__link_8c" ],
     [ "high_speed_logger_spi_link.h", "high__speed__logger__spi__link_8h.html", "high__speed__logger__spi__link_8h" ],
+    [ "logger_control_effectiveness.c", "logger__control__effectiveness_8c.html", "logger__control__effectiveness_8c" ],
+    [ "logger_control_effectiveness.h", "logger__control__effectiveness_8h.html", "logger__control__effectiveness_8h" ],
     [ "logger_uart.c", "logger__uart_8c.html", "logger__uart_8c" ],
     [ "logger_uart.h", "logger__uart_8h.html", "logger__uart_8h" ],
     [ "logger_uart_parse.py", "logger__uart__parse_8py.html", null ],

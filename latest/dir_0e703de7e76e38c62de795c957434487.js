@@ -3,6 +3,8 @@ var dir_0e703de7e76e38c62de795c957434487 =
     [ "pwm_meas.c", "pwm__meas_8c.html", "pwm__meas_8c" ],
     [ "pwm_meas.h", "pwm__meas_8h.html", "pwm__meas_8h" ],
     [ "rtos_mon.c", "rtos__mon_8c.html", "rtos__mon_8c" ],
+    [ "shell.c", "shell_8c.html", "shell_8c" ],
+    [ "shell.h", "shell_8h.html", "shell_8h" ],
     [ "sys_mon.c", "sys__mon_8c.html", "sys__mon_8c" ],
     [ "sys_mon.h", "sys__mon_8h.html", "sys__mon_8h" ],
     [ "sys_mon_bare_metal.h", "sys__mon__bare__metal_8h.html", "sys__mon__bare__metal_8h" ],

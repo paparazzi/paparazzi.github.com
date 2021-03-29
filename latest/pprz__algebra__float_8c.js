@@ -50,5 +50,7 @@ var pprz__algebra__float_8c =
     [ "float_rmat_transp_vmult", "group__math__algebra__float.html#gac852ba0c3ec48acfd8abaefbf933d4b6", null ],
     [ "float_rmat_vmult", "group__math__algebra__float.html#gaf2a4d7a67cf8cb6a8e382eef4a6f750e", null ],
     [ "float_vect3_integrate_fi", "group__math__algebra__float.html#ga077c85e5452c3bacee04b86ca9324850", null ],
-    [ "renorm_factor", "pprz__algebra__float_8c.html#a25ae277549c4186c3a29e6414b42f2e3", null ]
+    [ "renorm_factor", "pprz__algebra__float_8c.html#a25ae277549c4186c3a29e6414b42f2e3", null ],
+    [ "vect_bound_in_2d", "group__math__algebra__float.html#gaee1f02031703a4aca27bc7b9df996a55", null ],
+    [ "vect_scale", "group__math__algebra__float.html#ga205aa96a656e1c7197f0121a127710d1", null ]
 ];

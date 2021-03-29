@@ -4,7 +4,7 @@ var nav__smooth_8c =
     [ "NB_ANGLES", "nav__smooth_8c.html#aaaf4149e0c6f6cd045fc7eab557c0744", null ],
     [ "Norm2Pi", "nav__smooth_8c.html#a9d26b9a8d6e9b268e247f2d601b450c8", null ],
     [ "Sign", "nav__smooth_8c.html#a04f9ab35e2baf93187f05a576ee3ecde", null ],
-    [ "compute_ground_speed", "nav__smooth_8c.html#add6d6b9d4bd22e0c5991a31819811e94", null ],
+    [ "compute_ground_speed", "nav__smooth_8c.html#ad04050181008e86e9a0776b3eabc2812", null ],
     [ "ground_speed_of_course", "nav__smooth_8c.html#aba6783d74346f84a9f6b369bfee275d0", null ],
     [ "snav_circle1", "nav__smooth_8c.html#a9b0866de21fac3f41e0d41284d0beece", null ],
     [ "snav_circle2", "nav__smooth_8c.html#a03822cfb75944d9b4951d6172e17c6c6", null ],

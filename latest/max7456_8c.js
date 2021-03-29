@@ -1,7 +1,28 @@
 var max7456_8c =
 [
+    [ "VECTOR", "max7456_8c.html#structVECTOR", [
+      [ "fx", "max7456_8c.html#a8e735ff9578a0cfb24ce83935e0128cb", null ],
+      [ "fy", "max7456_8c.html#abf0b5d78cfcb2b66cb05cfc74f18e7ac", null ],
+      [ "fz", "max7456_8c.html#af2cd1aafbb7c19268a9715b5aa72dddb", null ]
+    ] ],
+    [ "MATRIX", "max7456_8c.html#structMATRIX", [
+      [ "fx1", "max7456_8c.html#a248961470ca16203383c44096a3d9ea4", null ],
+      [ "fx2", "max7456_8c.html#ada5936d0bdc850493f79abb3fd2ea360", null ],
+      [ "fx3", "max7456_8c.html#a224a62a77023da329f51213bf6acfc31", null ],
+      [ "fy1", "max7456_8c.html#a654c9b1a254603fd1219b71de281d17f", null ],
+      [ "fy2", "max7456_8c.html#a4806c71a150f9288af0fef5978bd3f87", null ],
+      [ "fy3", "max7456_8c.html#a78d01f95dd801e0e6844b1c75da953d3", null ],
+      [ "fz1", "max7456_8c.html#a0c718c9636453759c23cff7592af712b", null ],
+      [ "fz2", "max7456_8c.html#a48b502d58a61ced8e9a7c150da79d788", null ],
+      [ "fz3", "max7456_8c.html#a99e2572b9e06d8a2877e921c15ecdae5", null ]
+    ] ],
+    [ "AMPS_LOW_PASS_FILTER_STRENGTH", "max7456_8c.html#ad8a76f064c0e39cef9d4ea96951da912", null ],
+    [ "BAT_CAPACITY", "max7456_8c.html#a19d307ae8a48054d98ca46ac50048d93", null ],
+    [ "IMU_MAG_X_SIGN", "max7456_8c.html#a34ef05992d74a9dc07c6a20feffd6eef", null ],
     [ "osd_sprintf", "max7456_8c.html#a8b7275cab37dd537285bbf23be2ef850", null ],
     [ "OSD_STRING_SIZE", "max7456_8c.html#a6eb10be1ada9e27107d48bb7e4227380", null ],
+    [ "OSD_USE_FLOAT_LOW_PASS_FILTERING", "max7456_8c.html#ab5b10155f7136bcffe3c9ff1972b5a39", null ],
+    [ "SPEED_LOW_PASS_FILTER_STRENGTH", "max7456_8c.html#a11e24ed7e83765bba020d8f4e1c6a83e", null ],
     [ "max7456_osd_status_codes", "max7456_8c.html#a9df37033e964a8027eab3e650e7aea6e", [
       [ "OSD_UNINIT", "max7456_8c.html#a9df37033e964a8027eab3e650e7aea6ea7ea512690c92f844fa9e0623e4a08eb3", null ],
       [ "OSD_INIT1", "max7456_8c.html#a9df37033e964a8027eab3e650e7aea6ea985f8973f3e0e452c4fdbd42690fc39a", null ],
@@ -17,16 +38,30 @@ var max7456_8c =
     ] ],
     [ "osd_attributes", "max7456_8c.html#ac3dd6ed7cc7d01ada4ce3180d50150cd", [
       [ "BLINK", "max7456_8c.html#ac3dd6ed7cc7d01ada4ce3180d50150cda43e7c26b8df0104b9f389e32ac3f72c7", null ],
-      [ "INVERT", "max7456_8c.html#ac3dd6ed7cc7d01ada4ce3180d50150cdab5f95af56a0f14f0032750594b523c95", null ]
+      [ "INVERT", "max7456_8c.html#ac3dd6ed7cc7d01ada4ce3180d50150cdab5f95af56a0f14f0032750594b523c95", null ],
+      [ "L_JUST", "max7456_8c.html#ac3dd6ed7cc7d01ada4ce3180d50150cda5adae9cfe9a4ad2ca2452a1718c9ebd5", null ],
+      [ "R_JUST", "max7456_8c.html#ac3dd6ed7cc7d01ada4ce3180d50150cda9ec438a612d07a605bfa00a62b2ca485", null ],
+      [ "C_JUST", "max7456_8c.html#ac3dd6ed7cc7d01ada4ce3180d50150cda3bf421e589163ab40526b2b873b18f62", null ]
     ] ],
     [ "_osd_sprintf", "max7456_8c.html#a257eaf8b3e2576c806cd402e398795e0", null ],
     [ "ascii_to_osd_c", "max7456_8c.html#ab6589475b928e58fdf044d03783fcb54", null ],
+    [ "calc_flight_time_left", "max7456_8c.html#a2e383d26ae071a8ae13f7b02f975f4ea", null ],
+    [ "draw_osd", "max7456_8c.html#a079837dac11983fe67050e136b0080e4", null ],
+    [ "home_direction", "max7456_8c.html#af647f85cf21dab23d18ac36c8beadd20", null ],
     [ "max7456_event", "max7456_8c.html#a9e352b8c2d17bfc367c3a4e1165deee6", null ],
     [ "max7456_init", "max7456_8c.html#a945116b36ac06fdbb6f4aef0c5e7f7ca", null ],
     [ "max7456_periodic", "max7456_8c.html#a1d6d4401863cba472802654472781050", null ],
     [ "osd_put_s", "max7456_8c.html#a2b5efe546809c5c4b7d6470ba879d9fa", null ],
+    [ "send_mag_heading", "max7456_8c.html#aba26765d16e0ca9259a11d78a6bfec3f", null ],
+    [ "vMultiplyMatrixByVector", "max7456_8c.html#a35c6a2d16d309f11f32712b4116155f6", null ],
+    [ "vSubtractVectors", "max7456_8c.html#a31893a86d66bebf3f735a51b2bcdb80c", null ],
+    [ "gps_course_deg", "max7456_8c.html#a3792b559a9c286ce1d23a5e8fbc71403", null ],
+    [ "home_dir_deg", "max7456_8c.html#ab6448fcf9ae22d27c05ce676582075dc", null ],
+    [ "mag_course_deg", "max7456_8c.html#a7b8eb5fd734424d9b1acb486f42bb2f3", null ],
+    [ "mag_heading_rad", "max7456_8c.html#aa34d54866a11595ed5dcb12a5ebf59cc", null ],
     [ "max7456_osd_status", "max7456_8c.html#a1a2e7353726577174986f047eb2da00a", null ],
     [ "max7456_trans", "max7456_8c.html#a81da927f13f840f041a3315da1851753", null ],
+    [ "max_flyable_distance_left", "max7456_8c.html#aa6be6884027e9a7012c49a401b3f83cf", null ],
     [ "osd_attr", "max7456_8c.html#ab12c522f0d1c08e1e613dbb58c68b8e4", null ],
     [ "osd_char", "max7456_8c.html#adde21930790faec5566e34c25e7e95d6", null ],
     [ "osd_char_address", "max7456_8c.html#ad65fea792b2227069e8c05acedab1849", null ],
@@ -35,7 +70,6 @@ var max7456_8c =
     [ "osd_spi_rx_buffer", "max7456_8c.html#ae32c7c55a63dcd63a3e4182531bd56b7", null ],
     [ "osd_spi_tx_buffer", "max7456_8c.html#ae46cb108217d2126c9f484cf6b63c728", null ],
     [ "osd_stat_reg", "max7456_8c.html#aa88b79ed6d70c87f302762836b19c2a3", null ],
-    [ "osd_stat_reg_valid", "max7456_8c.html#a700c37442b224ae303b633ac0c02c73c", null ],
     [ "osd_str_buf", "max7456_8c.html#a9066777e2c60d23d0177a42eab2abdb9", null ],
     [ "osd_string", "max7456_8c.html#acdc4b849c0511672a323bbf18fc1edd0", null ],
     [ "step", "max7456_8c.html#a4a2eb71e89c989655301c2f2070e29b3", null ]

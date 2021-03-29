@@ -1,14 +1,25 @@
 <map id="aligner_cb" name="aligner_cb">
-<area shape="rect" id="node2" href="$ahrs__float__dcm_8c.html#ac19ef4cf9dfcc61561addd93a8c41a5e" title="ahrs_dcm_align" alt="" coords="157,71,279,98"/>
-<area shape="rect" id="node5" href="$ahrs__float__dcm__wrapper_8c.html#af37e584c40cc004e4db7af1151ff659e" title="Compute body orientation and rates from imu orientation and rates. " alt="" coords="140,191,296,232"/>
-<area shape="rect" id="node3" href="$ahrs__float__utils_8h.html#a7b4996acf75e49ac6d2249e96949307e" title="ahrs_float_get_euler\l_from_accel_mag" alt="" coords="368,5,520,47"/>
-<area shape="rect" id="node4" href="$ahrs__float__dcm_8c.html#aae3abaa3b95367596d2fe07e62b59dfe" title="set_dcm_matrix_from_rmat" alt="" coords="344,71,544,98"/>
-<area shape="rect" id="node6" href="$group__math__orientation__representation.html#gadad1660d6ec48c67423b76622ce80b51" title="Get vehicle body attitude rotation matrix (float). " alt="" coords="365,122,523,149"/>
-<area shape="rect" id="node9" href="$group__math__algebra__float.html#gaaf793c59eaba758a63cf467c377ea532" title="rotate anglular rates by transposed rotation matrix. " alt="" coords="345,173,543,199"/>
-<area shape="rect" id="node10" href="$group__state__rate.html#ga81d506386a5e2842d7e37cb6e1dbf252" title="Set vehicle body angular rate (float). " alt="" coords="366,223,522,250"/>
-<area shape="rect" id="node11" href="$group__math__algebra__float.html#ga333309a85225bdd3fe7b6960550acbc7" title="Composition (multiplication) of two rotation matrices. " alt="" coords="366,274,522,301"/>
-<area shape="rect" id="node12" href="$group__state__attitude.html#ga4d07df56be94afd0512e08fac961dbd3" title="Set vehicle body attitude from rotation matrix (float). " alt="" coords="349,325,539,351"/>
-<area shape="rect" id="node7" href="$group__math__orientation__representation.html#ga3394d93b976378bb5c9ddea8d7960eeb" title="orientationCalcRMat_f" alt="" coords="592,122,753,149"/>
-<area shape="rect" id="node8" href="$group__math__algebra__float.html#ga4f32e245bb37ef9fdf43872080f63fbc" title="float_rmat_of_quat" alt="" coords="801,122,944,149"/>
-<area shape="rect" id="node13" href="$group__math__orientation__representation.html#ga2c06304a23d68ae280c1cc5f4f01386a" title="Set vehicle body attitude from rotation matrix (float). " alt="" coords="595,325,751,351"/>
+<area shape="rect" id="node2" href="$ahrs__float__dcm_8c.html#ac19ef4cf9dfcc61561addd93a8c41a5e" title="ahrs_dcm_align" alt="" coords="382,193,505,219"/>
+<area shape="rect" id="node17" href="$ahrs__float__dcm__wrapper_8c.html#af37e584c40cc004e4db7af1151ff659e" title="Compute body orientation and rates from imu orientation and rates. " alt="" coords="140,349,296,391"/>
+<area shape="rect" id="node3" href="$ahrs__float__utils_8h.html#ab9b9f47127bec250cb42814794dda184" title="Compute a quaternion representing roll and pitch from an accelerometer measurement. " alt="" coords="853,5,1003,47"/>
+<area shape="rect" id="node9" href="$ahrs__float__utils_8h.html#a417a9a4e580b992140640e70992a2a01" title="ahrs_float_get_quat\l_from_accel_mag" alt="" coords="616,101,765,143"/>
+<area shape="rect" id="node10" href="$group__math__algebra__float.html#ga4f32e245bb37ef9fdf43872080f63fbc" title="float_rmat_of_quat" alt="" coords="857,239,999,266"/>
+<area shape="rect" id="node15" href="$group__math__algebra__float.html#gacd48accfe6eaac320b0d651d894e1db8" title="euler rotation &#39;ZYX&#39; " alt="" coords="615,218,766,245"/>
+<area shape="rect" id="node16" href="$ahrs__float__dcm_8c.html#aae3abaa3b95367596d2fe07e62b59dfe" title="set_dcm_matrix_from_rmat" alt="" coords="591,269,791,295"/>
+<area shape="rect" id="node4" href="$group__math__algebra__float.html#gaf08320455a290ed351f2a516473a89db" title="normalize 3D vector in place " alt="" coords="1075,13,1238,39"/>
+<area shape="rect" id="node7" href="$group__math__algebra__float.html#ga010393da7c94f197d0161a0071862041" title="float_quat_normalize" alt="" coords="1079,71,1235,98"/>
+<area shape="rect" id="node5" href="$group__math__algebra__float.html#gad33d6e2c6bf00d660031e57fb3675666" title="float_vect3_norm" alt="" coords="1296,13,1429,39"/>
+<area shape="rect" id="node6" href="$group__math__algebra__float.html#gaf0812637c58834d3baff5cd82fa220d2" title="float_vect3_norm2" alt="" coords="1477,13,1619,39"/>
+<area shape="rect" id="node8" href="$group__math__algebra__float.html#gaf58947a2590837aa85077d42d99fb112" title="float_quat_norm" alt="" coords="1299,71,1426,98"/>
+<area shape="rect" id="node11" href="$group__math__algebra__float.html#gac852ba0c3ec48acfd8abaefbf933d4b6" title="rotate 3D vector by transposed rotation matrix. " alt="" coords="839,122,1017,149"/>
+<area shape="rect" id="node12" href="$group__math__algebra__float.html#ga1046209eec005141af05e1098b559487" title="Composition (multiplication) of two quaternions with normalization. " alt="" coords="843,173,1013,215"/>
+<area shape="rect" id="node13" href="$group__math__algebra__float.html#gaf182e4cea0a80278a3b2856331095ff6" title="Composition (multiplication) of two quaternions. " alt="" coords="1092,155,1221,182"/>
+<area shape="rect" id="node14" href="$group__math__algebra__float.html#ga8c87c4af5df3d13c6eb0bd8b8e97721a" title="float_quat_wrap_shortest" alt="" coords="1065,206,1248,233"/>
+<area shape="rect" id="node18" href="$group__math__orientation__representation.html#gadad1660d6ec48c67423b76622ce80b51" title="Get vehicle body attitude rotation matrix (float). " alt="" coords="365,281,522,307"/>
+<area shape="rect" id="node20" href="$group__math__algebra__float.html#gaaf793c59eaba758a63cf467c377ea532" title="rotate anglular rates by transposed rotation matrix. " alt="" coords="344,331,543,358"/>
+<area shape="rect" id="node21" href="$group__state__rate.html#ga81d506386a5e2842d7e37cb6e1dbf252" title="Set vehicle body angular rate (float). " alt="" coords="365,382,521,409"/>
+<area shape="rect" id="node22" href="$group__math__algebra__float.html#ga333309a85225bdd3fe7b6960550acbc7" title="Composition (multiplication) of two rotation matrices. " alt="" coords="365,433,521,459"/>
+<area shape="rect" id="node23" href="$group__state__attitude.html#ga4d07df56be94afd0512e08fac961dbd3" title="Set vehicle body attitude from rotation matrix (float). " alt="" coords="348,483,539,510"/>
+<area shape="rect" id="node19" href="$group__math__orientation__representation.html#ga3394d93b976378bb5c9ddea8d7960eeb" title="orientationCalcRMat_f" alt="" coords="610,319,771,346"/>
+<area shape="rect" id="node24" href="$group__math__orientation__representation.html#ga2c06304a23d68ae280c1cc5f4f01386a" title="Set vehicle body attitude from rotation matrix (float). " alt="" coords="613,483,769,510"/>
 </map>

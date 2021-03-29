@@ -12,6 +12,7 @@ var dir_b82140776176b28f52d7ab660bc0e8ab =
     [ "pwm_input_arch.c", "chibios_2mcu__periph_2pwm__input__arch_8c.html", "chibios_2mcu__periph_2pwm__input__arch_8c" ],
     [ "pwm_input_arch.h", "chibios_2mcu__periph_2pwm__input__arch_8h.html", "chibios_2mcu__periph_2pwm__input__arch_8h" ],
     [ "ram_arch.h", "ram__arch_8h.html", "ram__arch_8h" ],
+    [ "rng_arch.c", "chibios_2mcu__periph_2rng__arch_8c.html", "chibios_2mcu__periph_2rng__arch_8c" ],
     [ "sdio_arch.c", "sdio__arch_8c.html", "sdio__arch_8c" ],
     [ "spi_arch.c", "chibios_2mcu__periph_2spi__arch_8c.html", "chibios_2mcu__periph_2spi__arch_8c" ],
     [ "spi_arch.h", "chibios_2mcu__periph_2spi__arch_8h.html", null ],

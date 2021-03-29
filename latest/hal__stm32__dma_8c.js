@@ -14,5 +14,6 @@ var hal__stm32__dma_8c =
     [ "dmaStop", "hal__stm32__dma_8c.html#a3cdd7c21084a213e24ed4d59f15bedfb", null ],
     [ "dmaStopTransfert", "hal__stm32__dma_8c.html#a9219d807ef245446ffc9a430d742d976", null ],
     [ "dmaStopTransfertI", "hal__stm32__dma_8c.html#ac2bef3d2e495afefdd5fb7585e9ebf81", null ],
-    [ "dmaTransfertTimeout", "hal__stm32__dma_8c.html#a3de6f4d870466df970d6c01201b6fdd7", null ]
+    [ "dmaTransfertTimeout", "hal__stm32__dma_8c.html#a3de6f4d870466df970d6c01201b6fdd7", null ],
+    [ "getFCR_FS", "hal__stm32__dma_8c.html#a5c6eaa4da527eb2499e3831069eb1ab3", null ]
 ];

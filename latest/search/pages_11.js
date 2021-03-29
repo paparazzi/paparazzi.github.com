@@ -11,6 +11,7 @@ var searchData=
   ['telemetry_5fsim_20module',['telemetry_sim module',['../module__telemetry_sim.html',1,'onboard_modules']]],
   ['telemetry_5fsuperbitrf_20module',['telemetry_superbitrf module',['../module__telemetry_superbitrf.html',1,'onboard_modules']]],
   ['telemetry_5ftransparent_20module',['telemetry_transparent module',['../module__telemetry_transparent.html',1,'onboard_modules']]],
+  ['telemetry_5ftransparent_5ffrsky_5fx_20module',['telemetry_transparent_frsky_x module',['../module__telemetry_transparent_frsky_x.html',1,'onboard_modules']]],
   ['telemetry_5ftransparent_5fgec_20module',['telemetry_transparent_gec module',['../module__telemetry_transparent_gec.html',1,'onboard_modules']]],
   ['telemetry_5ftransparent_5fudp_20module',['telemetry_transparent_udp module',['../module__telemetry_transparent_udp.html',1,'onboard_modules']]],
   ['telemetry_5ftransparent_5fusb_20module',['telemetry_transparent_usb module',['../module__telemetry_transparent_usb.html',1,'onboard_modules']]],
